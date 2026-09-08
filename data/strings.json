@@ -1,0 +1,584 @@
+[
+ {
+  "key": "app.tagline",
+  "hy": "Համեմատի՛ր և ընտրի՛ր քո հեռախոսը",
+  "ru": "Сравни смартфоны — выбери свой",
+  "en": "Compare phones. Choose smarter."
+ },
+ {
+  "key": "nav.catalog",
+  "hy": "Կատալոգ",
+  "ru": "Каталог",
+  "en": "Catalog"
+ },
+ {
+  "key": "nav.compare",
+  "hy": "Համեմատություն",
+  "ru": "Сравнение",
+  "en": "Compare"
+ },
+ {
+  "key": "nav.about",
+  "hy": "Կայքի մասին",
+  "ru": "О проекте",
+  "en": "About"
+ },
+ {
+  "key": "nav.search_placeholder",
+  "hy": "Փնտրել մոդել կամ բրենդ",
+  "ru": "Модель или бренд",
+  "en": "Search model or brand"
+ },
+ {
+  "key": "common.reset",
+  "hy": "Մաքրել",
+  "ru": "Сбросить",
+  "en": "Reset"
+ },
+ {
+  "key": "common.all",
+  "hy": "Բոլորը",
+  "ru": "Все",
+  "en": "All"
+ },
+ {
+  "key": "common.from",
+  "hy": "Սկսած",
+  "ru": "От",
+  "en": "From"
+ },
+ {
+  "key": "common.to",
+  "hy": "Մինչև",
+  "ru": "До",
+  "en": "To"
+ },
+ {
+  "key": "common.yes",
+  "hy": "Այո",
+  "ru": "Да",
+  "en": "Yes"
+ },
+ {
+  "key": "common.no",
+  "hy": "Ոչ",
+  "ru": "Нет",
+  "en": "No"
+ },
+ {
+  "key": "common.back",
+  "hy": "Հետ",
+  "ru": "Назад",
+  "en": "Back"
+ },
+ {
+  "key": "common.no_results",
+  "hy": "Ոչինչ չի գտնվել",
+  "ru": "Ничего не найдено",
+  "en": "No results"
+ },
+ {
+  "key": "common.results_count",
+  "hy": "{n} արդյունք",
+  "ru": "Результатов: {n}",
+  "en": "{n} results"
+ },
+ {
+  "key": "common.demo_prices_note",
+  "hy": "Գները ցուցադրական են և չեն թարմացվում խանութներից։",
+  "ru": "Цены примерные: это демо-данные, а не реальные предложения магазинов.",
+  "en": "Prices are indicative demo data, not a live shop feed."
+ },
+ {
+  "key": "common.theme",
+  "hy": "Թեմա",
+  "ru": "Тема",
+  "en": "Theme"
+ },
+ {
+  "key": "common.language",
+  "hy": "Լեզու",
+  "ru": "Язык",
+  "en": "Language"
+ },
+ {
+  "key": "common.filters",
+  "hy": "Զտիչներ",
+  "ru": "Фильтры",
+  "en": "Filters"
+ },
+ {
+  "key": "sort.label",
+  "hy": "Դասավորում",
+  "ru": "Сортировка",
+  "en": "Sort by"
+ },
+ {
+  "key": "sort.popular",
+  "hy": "Ամենապահանջված",
+  "ru": "Популярные",
+  "en": "Popular"
+ },
+ {
+  "key": "sort.price_asc",
+  "hy": "Գինը՝ աճող",
+  "ru": "Сначала дешёвые",
+  "en": "Price: low to high"
+ },
+ {
+  "key": "sort.price_desc",
+  "hy": "Գինը՝ նվազող",
+  "ru": "Сначала дорогие",
+  "en": "Price: high to low"
+ },
+ {
+  "key": "sort.newest",
+  "hy": "Նորույթներ",
+  "ru": "Новинки",
+  "en": "Newest"
+ },
+ {
+  "key": "sort.performance",
+  "hy": "Հզորություն",
+  "ru": "Производительность",
+  "en": "Performance"
+ },
+ {
+  "key": "filter.brand",
+  "hy": "Բրենդ",
+  "ru": "Бренд",
+  "en": "Brand"
+ },
+ {
+  "key": "filter.price",
+  "hy": "Գին",
+  "ru": "Цена",
+  "en": "Price"
+ },
+ {
+  "key": "filter.ram",
+  "hy": "RAM",
+  "ru": "ОЗУ",
+  "en": "RAM"
+ },
+ {
+  "key": "filter.storage",
+  "hy": "Հիշողություն",
+  "ru": "Память",
+  "en": "Storage"
+ },
+ {
+  "key": "filter.screen_size",
+  "hy": "Էկրանի չափ",
+  "ru": "Диагональ",
+  "en": "Screen size"
+ },
+ {
+  "key": "filter.battery",
+  "hy": "Մարտկոց",
+  "ru": "Батарея",
+  "en": "Battery"
+ },
+ {
+  "key": "filter.5g",
+  "hy": "5G",
+  "ru": "5G",
+  "en": "5G"
+ },
+ {
+  "key": "filter.nfc",
+  "hy": "NFC",
+  "ru": "NFC",
+  "en": "NFC"
+ },
+ {
+  "key": "filter.refresh_rate",
+  "hy": "Էկրանի թարմացում",
+  "ru": "Частота обновления",
+  "en": "Refresh rate"
+ },
+ {
+  "key": "sec.display",
+  "hy": "Էկրան",
+  "ru": "Экран",
+  "en": "Display"
+ },
+ {
+  "key": "sec.performance",
+  "hy": "Հզորություն",
+  "ru": "Производительность",
+  "en": "Performance"
+ },
+ {
+  "key": "sec.memory",
+  "hy": "Հիշողություն",
+  "ru": "Память",
+  "en": "Memory"
+ },
+ {
+  "key": "sec.camera",
+  "hy": "Տեսախցիկ",
+  "ru": "Камера",
+  "en": "Camera"
+ },
+ {
+  "key": "sec.battery",
+  "hy": "Մարտկոց",
+  "ru": "Батарея",
+  "en": "Battery"
+ },
+ {
+  "key": "sec.body",
+  "hy": "Կորպուս",
+  "ru": "Корпус",
+  "en": "Body"
+ },
+ {
+  "key": "sec.connectivity",
+  "hy": "Կապ",
+  "ru": "Связь",
+  "en": "Connectivity"
+ },
+ {
+  "key": "sec.software",
+  "hy": "Ծրագրակազմ",
+  "ru": "Софт",
+  "en": "Software"
+ },
+ {
+  "key": "sec.pros_cons",
+  "hy": "Դրական և բացասական կողմեր",
+  "ru": "Плюсы и минусы",
+  "en": "Pros & cons"
+ },
+ {
+  "key": "sec.variants",
+  "hy": "Տարբերակներ",
+  "ru": "Версии",
+  "en": "Variants"
+ },
+ {
+  "key": "sec.colors",
+  "hy": "Գույներ",
+  "ru": "Цвета",
+  "en": "Colors"
+ },
+ {
+  "key": "sec.price",
+  "hy": "Գին",
+  "ru": "Цена",
+  "en": "Price"
+ },
+ {
+  "key": "f.screen_size",
+  "hy": "Անկյունագիծ",
+  "ru": "Диагональ",
+  "en": "Screen size"
+ },
+ {
+  "key": "f.screen_type",
+  "hy": "Էկրանի տեսակ",
+  "ru": "Тип экрана",
+  "en": "Screen type"
+ },
+ {
+  "key": "f.resolution",
+  "hy": "Լուծաչափ",
+  "ru": "Разрешение",
+  "en": "Resolution"
+ },
+ {
+  "key": "f.refresh_rate",
+  "hy": "Թարմացման հաճախականություն",
+  "ru": "Частота обновления",
+  "en": "Refresh rate"
+ },
+ {
+  "key": "f.ppi",
+  "hy": "Խտություն, PPI",
+  "ru": "Плотность пикселей, PPI",
+  "en": "Pixel density"
+ },
+ {
+  "key": "f.brightness",
+  "hy": "Պայծառություն",
+  "ru": "Яркость",
+  "en": "Brightness"
+ },
+ {
+  "key": "f.protection",
+  "hy": "Էկրանի պաշտպանություն",
+  "ru": "Защита экрана",
+  "en": "Protection"
+ },
+ {
+  "key": "f.chipset",
+  "hy": "Չիպսեթ",
+  "ru": "Чипсет",
+  "en": "Chipset"
+ },
+ {
+  "key": "f.process",
+  "hy": "Տեխնոլոգիա, նմ",
+  "ru": "Техпроцесс, нм",
+  "en": "Process"
+ },
+ {
+  "key": "f.cpu",
+  "hy": "Պրոցեսոր",
+  "ru": "Процессор",
+  "en": "CPU"
+ },
+ {
+  "key": "f.gpu",
+  "hy": "Գրաֆիկա",
+  "ru": "Графика",
+  "en": "GPU"
+ },
+ {
+  "key": "f.antutu",
+  "hy": "AnTuTu միավոր",
+  "ru": "Баллы AnTuTu",
+  "en": "AnTuTu score"
+ },
+ {
+  "key": "f.ram",
+  "hy": "Օպերատիվ հիշողություն",
+  "ru": "Оперативная память",
+  "en": "RAM"
+ },
+ {
+  "key": "f.storage",
+  "hy": "Ներքին հիշողություն",
+  "ru": "Встроенная память",
+  "en": "Storage"
+ },
+ {
+  "key": "f.card_slot",
+  "hy": "Հիշողության քարտ",
+  "ru": "Слот для карты памяти",
+  "en": "Card slot"
+ },
+ {
+  "key": "f.main_cam",
+  "hy": "Հիմնական տեսախցիկ",
+  "ru": "Основная камера",
+  "en": "Main camera"
+ },
+ {
+  "key": "f.ultrawide",
+  "hy": "Գերլայն",
+  "ru": "Сверхширокоугольная",
+  "en": "Ultrawide"
+ },
+ {
+  "key": "f.telephoto",
+  "hy": "Տելեֆոտո",
+  "ru": "Телеобъектив",
+  "en": "Telephoto"
+ },
+ {
+  "key": "f.front_cam",
+  "hy": "Առջևի տեսախցիկ",
+  "ru": "Фронтальная камера",
+  "en": "Front camera"
+ },
+ {
+  "key": "f.video",
+  "hy": "Տեսանկարահանում",
+  "ru": "Видеосъёмка",
+  "en": "Video"
+ },
+ {
+  "key": "f.capacity",
+  "hy": "Տարողություն",
+  "ru": "Ёмкость",
+  "en": "Capacity"
+ },
+ {
+  "key": "f.charging",
+  "hy": "Լիցքավորում",
+  "ru": "Зарядка",
+  "en": "Charging"
+ },
+ {
+  "key": "f.wireless",
+  "hy": "Անլար լիցքավորում",
+  "ru": "Беспроводная зарядка",
+  "en": "Wireless charging"
+ },
+ {
+  "key": "f.dimensions",
+  "hy": "Չափսեր",
+  "ru": "Размеры",
+  "en": "Dimensions"
+ },
+ {
+  "key": "f.weight",
+  "hy": "Քաշ",
+  "ru": "Вес",
+  "en": "Weight"
+ },
+ {
+  "key": "f.materials",
+  "hy": "Նյութեր",
+  "ru": "Материалы",
+  "en": "Materials"
+ },
+ {
+  "key": "f.ip_rating",
+  "hy": "IP պաշտպանություն",
+  "ru": "Класс защиты IP",
+  "en": "IP rating"
+ },
+ {
+  "key": "f.network",
+  "hy": "Ցանցեր",
+  "ru": "Сети",
+  "en": "Network"
+ },
+ {
+  "key": "f.wifi",
+  "hy": "Wi-Fi",
+  "ru": "Wi-Fi",
+  "en": "Wi-Fi"
+ },
+ {
+  "key": "f.bluetooth",
+  "hy": "Bluetooth",
+  "ru": "Bluetooth",
+  "en": "Bluetooth"
+ },
+ {
+  "key": "f.nfc",
+  "hy": "NFC",
+  "ru": "NFC",
+  "en": "NFC"
+ },
+ {
+  "key": "f.sim",
+  "hy": "SIM քարտեր",
+  "ru": "SIM-карты",
+  "en": "SIM"
+ },
+ {
+  "key": "f.os",
+  "hy": "Օպերացիոն համակարգ",
+  "ru": "Операционная система",
+  "en": "OS"
+ },
+ {
+  "key": "f.updates",
+  "hy": "Թարմացումներ",
+  "ru": "Обновления",
+  "en": "Updates"
+ },
+ {
+  "key": "f.released",
+  "hy": "Թողարկում",
+  "ru": "Дата выхода",
+  "en": "Released"
+ },
+ {
+  "key": "detail.add_compare",
+  "hy": "Ավելացնել համեմատությանը",
+  "ru": "Добавить к сравнению",
+  "en": "Add to compare"
+ },
+ {
+  "key": "detail.in_compare",
+  "hy": "Ավելացված է",
+  "ru": "В сравнении",
+  "en": "In compare"
+ },
+ {
+  "key": "detail.full_specs",
+  "hy": "Բոլոր բնութագրերը",
+  "ru": "Все характеристики",
+  "en": "Full specs"
+ },
+ {
+  "key": "detail.overview",
+  "hy": "Ընդհանուր",
+  "ru": "Основное",
+  "en": "Overview"
+ },
+ {
+  "key": "detail.pros",
+  "hy": "Առավելություններ",
+  "ru": "Плюсы",
+  "en": "Pros"
+ },
+ {
+  "key": "detail.cons",
+  "hy": "Թերություններ",
+  "ru": "Минусы",
+  "en": "Cons"
+ },
+ {
+  "key": "detail.approx_price",
+  "hy": "Մոտավոր գին",
+  "ru": "Примерная цена",
+  "en": "Approx. price"
+ },
+ {
+  "key": "detail.similar",
+  "hy": "Նմանատիպ մոդելներ",
+  "ru": "Похожие модели",
+  "en": "Similar phones"
+ },
+ {
+  "key": "compare.title",
+  "hy": "Համեմատություն",
+  "ru": "Сравнение",
+  "en": "Compare"
+ },
+ {
+  "key": "compare.empty",
+  "hy": "Դեռ համեմատելու բան չկա",
+  "ru": "Пока нечего сравнивать",
+  "en": "Nothing to compare yet"
+ },
+ {
+  "key": "compare.add_phone",
+  "hy": "Ավելացնել հեռախոս",
+  "ru": "Добавить телефон",
+  "en": "Add phone"
+ },
+ {
+  "key": "compare.clear",
+  "hy": "Մաքրել բոլորը",
+  "ru": "Очистить",
+  "en": "Clear"
+ },
+ {
+  "key": "compare.diff_only",
+  "hy": "Միայն տարբերությունները",
+  "ru": "Только отличия",
+  "en": "Differences only"
+ },
+ {
+  "key": "compare.max_reached",
+  "hy": "Կարելի է համեմատել առավելագույնը 4 հեռախոս",
+  "ru": "Можно сравнить до 4 телефонов",
+  "en": "You can compare up to 4 phones"
+ },
+ {
+  "key": "catalog.title",
+  "hy": "Կատալոգ",
+  "ru": "Каталог",
+  "en": "Catalog"
+ },
+ {
+  "key": "catalog.featured",
+  "hy": "Առաջարկվող մոդելներ",
+  "ru": "Выбор редакции",
+  "en": "Featured"
+ },
+ {
+  "key": "catalog.count_label",
+  "hy": "{n} մոդել",
+  "ru": "Моделей: {n}",
+  "en": "{n} models"
+ }
+]

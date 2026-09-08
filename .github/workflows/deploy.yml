@@ -1,0 +1,61 @@
+name: MyCatalog — refresh prices and deploy
+
+on:
+  schedule:
+    - cron: '0 3 * * *'      # 07:00 Yerevan (UTC+4)
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write             # to commit the refreshed prices + history
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Matcher self-test (no network)
+        run: node scrape.mjs --selftest
+
+      - name: Refresh prices from the shops
+        run: node scrape.mjs
+        continue-on-error: true      # a shop being down must not block the deploy
+
+      - name: Build the site
+        run: node build.mjs
+
+      - name: Commit refreshed prices and history
+        run: |
+          git config user.name  "mycatalog-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/prices.json data/history.json index.html index.embedded.html artifact.html
+          git diff --staged --quiet || git commit -m "prices: $(date -u +%Y-%m-%d)"
+          git push
+        continue-on-error: true
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .                    # index.html + images/ are served as-is
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

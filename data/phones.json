@@ -1,0 +1,2128 @@
+[
+ {
+  "id": "apple-iphone-17",
+  "brand": "Apple",
+  "name": "iPhone 17",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 338000,
+  "priceAmdMax": 423000,
+  "popularity": 90,
+  "accent": "#C9BCE0",
+  "colors": [
+   "Black",
+   "White",
+   "Mist Blue",
+   "Sage",
+   "Lavender"
+  ],
+  "display": {
+   "size": 6.3,
+   "type": "Super Retina XDR OLED (LTPO)",
+   "resolution": "2622x1206",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3000,
+   "protection": "Ceramic Shield 2"
+  },
+  "chipset": {
+   "name": "Apple A19",
+   "process": "3 nm",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "5-core",
+   "antutu": 1800000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 338000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 423000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "48MP Fusion, 26mm, f/1.6, OIS",
+   "ultrawide": "48MP Fusion, 13mm, f/2.2, 120 degrees",
+   "front": "18MP Center Stage, f/1.9",
+   "video": "4K Dolby Vision up to 60 fps"
+  },
+  "battery": {
+   "capacity": 3692,
+   "wired": 40,
+   "wireless": 25
+  },
+  "body": {
+   "height": 149.6,
+   "width": 71.5,
+   "thickness": 7.95,
+   "weight": 177,
+   "materials": "Aluminum frame, Ceramic Shield 2 front, color-infused glass back with Ceramic Shield",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G (sub-6 GHz; mmWave on US models)",
+   "nfc": true,
+   "wifi": "Wi-Fi 7 (Apple N1)",
+   "bluetooth": "6",
+   "sim": "Nano-SIM + eSIM (US models are dual eSIM only)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
+  "pros": [
+   "120Hz ProMotion display on the non-Pro model",
+   "48MP ultra wide replaces the previous 12MP sensor",
+   "3000 nits peak outdoor brightness"
+  ],
+  "cons": [
+   "No dedicated telephoto lens",
+   "8GB RAM against 12GB on the Pro models",
+   "Video capped at 4K 60 fps"
+  ],
+  "summaryEn": "Base iPhone 17 adds a 120Hz display, 48MP ultra wide and 256GB starting storage at the same price.",
+  "unsure": [
+   "chipset.antutu",
+   "updates",
+   "priceAmd",
+   "variants[].priceAmd",
+   "priceAmdMax"
+  ]
+ },
+ {
+  "id": "apple-iphone-17-pro",
+  "brand": "Apple",
+  "name": "iPhone 17 Pro",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 465000,
+  "priceAmdMax": 635000,
+  "popularity": 88,
+  "accent": "#C8622A",
+  "colors": [
+   "Cosmic Orange",
+   "Deep Blue",
+   "Silver"
+  ],
+  "display": {
+   "size": 6.3,
+   "type": "Super Retina XDR OLED (LTPO)",
+   "resolution": "2622x1206",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3000,
+   "protection": "Ceramic Shield 2"
+  },
+  "chipset": {
+   "name": "Apple A19 Pro",
+   "process": "3 nm",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "6-core with Neural Accelerators",
+   "antutu": 2100000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 465000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 550000
+   },
+   {
+    "ram": 12,
+    "storage": 1024,
+    "priceAmd": 635000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "48MP Fusion, 24mm, f/1.78, OIS",
+   "ultrawide": "48MP Fusion, 13mm, f/2.2",
+   "telephoto": "48MP, 4x optical (100mm), f/2.8, 8x optical-quality crop (200mm)",
+   "front": "18MP Center Stage, f/1.9",
+   "video": "4K Dolby Vision up to 120 fps, ProRes RAW, Log 2, Genlock"
+  },
+  "battery": {
+   "capacity": 4252,
+   "wired": 40,
+   "wireless": 25
+  },
+  "body": {
+   "height": 150,
+   "width": 71.9,
+   "thickness": 8.75,
+   "weight": 204,
+   "materials": "Aluminum unibody with vapor chamber, Ceramic Shield 2 front, Ceramic Shield back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G (sub-6 GHz; mmWave on US models)",
+   "nfc": true,
+   "wifi": "Wi-Fi 7 (Apple N1), 2x2 MIMO",
+   "bluetooth": "6",
+   "sim": "Nano-SIM + eSIM (US models are dual eSIM only)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
+  "pros": [
+   "48MP telephoto with 4x optical and 8x optical-quality zoom",
+   "Largest battery Apple has put in a 6.3-inch iPhone",
+   "4K 120 fps Dolby Vision and ProRes RAW recording"
+  ],
+  "cons": [
+   "204 g, heavier than the 199 g iPhone 16 Pro",
+   "Full-width camera plateau adds bulk",
+   "Base price rose to 1,099 USD"
+  ],
+  "summaryEn": "Compact Pro with a 48MP triple camera, A19 Pro, 12GB RAM and the biggest battery in a 6.3-inch iPhone.",
+  "unsure": [
+   "chipset.antutu",
+   "updates",
+   "battery.capacity",
+   "priceAmd",
+   "variants[].priceAmd",
+   "priceAmdMax"
+  ]
+ },
+ {
+  "id": "apple-iphone-17-pro-max",
+  "brand": "Apple",
+  "name": "iPhone 17 Pro Max",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 508000,
+  "priceAmdMax": 847000,
+  "popularity": 94,
+  "accent": "#24405F",
+  "colors": [
+   "Cosmic Orange",
+   "Deep Blue",
+   "Silver"
+  ],
+  "display": {
+   "size": 6.9,
+   "type": "Super Retina XDR OLED (LTPO)",
+   "resolution": "2868x1320",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3000,
+   "protection": "Ceramic Shield 2"
+  },
+  "chipset": {
+   "name": "Apple A19 Pro",
+   "process": "3 nm",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "6-core with Neural Accelerators",
+   "antutu": 2150000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 508000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 592000
+   },
+   {
+    "ram": 12,
+    "storage": 1024,
+    "priceAmd": 677000
+   },
+   {
+    "ram": 12,
+    "storage": 2048,
+    "priceAmd": 847000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "48MP Fusion, 24mm, f/1.78, OIS",
+   "ultrawide": "48MP Fusion, 13mm, f/2.2",
+   "telephoto": "48MP, 4x optical (100mm), f/2.8, 8x optical-quality crop (200mm)",
+   "front": "18MP Center Stage, f/1.9",
+   "video": "4K Dolby Vision up to 120 fps, ProRes RAW, Log 2, Genlock"
+  },
+  "battery": {
+   "capacity": 5088,
+   "wired": 40,
+   "wireless": 25
+  },
+  "body": {
+   "height": 163.4,
+   "width": 78,
+   "thickness": 8.75,
+   "weight": 231,
+   "materials": "Aluminum unibody with vapor chamber, Ceramic Shield 2 front, Ceramic Shield back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G (sub-6 GHz; mmWave on US models)",
+   "nfc": true,
+   "wifi": "Wi-Fi 7 (Apple N1), 2x2 MIMO",
+   "bluetooth": "6",
+   "sim": "Nano-SIM + eSIM (US models are dual eSIM only)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
+  "pros": [
+   "Longest battery life of any iPhone to date",
+   "6.9-inch 120Hz display at 2868x1320",
+   "Only model offered with 2TB storage"
+  ],
+  "cons": [
+   "231 g and hard to use one-handed",
+   "2TB tier costs 1,999 USD",
+   "Same camera hardware as the smaller 17 Pro"
+  ],
+  "summaryEn": "Largest iPhone 17 Pro, with a 6.9-inch display, 2TB option and the longest battery life in the lineup.",
+  "unsure": [
+   "chipset.antutu",
+   "updates",
+   "battery.capacity",
+   "priceAmd",
+   "variants[].priceAmd",
+   "priceAmdMax"
+  ]
+ },
+ {
+  "id": "apple-iphone-air",
+  "brand": "Apple",
+  "name": "iPhone Air",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 423000,
+  "priceAmdMax": 592000,
+  "popularity": 55,
+  "accent": "#A9C4D9",
+  "colors": [
+   "Space Black",
+   "Cloud White",
+   "Light Gold",
+   "Sky Blue"
+  ],
+  "display": {
+   "size": 6.5,
+   "type": "Super Retina XDR OLED (LTPO)",
+   "resolution": "2736x1260",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3000,
+   "protection": "Ceramic Shield 2"
+  },
+  "chipset": {
+   "name": "Apple A19 Pro",
+   "process": "3 nm",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "5-core with Neural Accelerators",
+   "antutu": 1950000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 423000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 508000
+   },
+   {
+    "ram": 12,
+    "storage": 1024,
+    "priceAmd": 592000
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "48MP Fusion, 26mm, f/1.6, OIS, 2x optical-quality crop",
+   "front": "18MP Center Stage, f/1.9",
+   "video": "4K Dolby Vision up to 60 fps"
+  },
+  "battery": {
+   "capacity": 3149,
+   "wired": 20,
+   "wireless": 20
+  },
+  "body": {
+   "height": 156.2,
+   "width": 74.7,
+   "thickness": 5.64,
+   "weight": 165,
+   "materials": "Grade 5 titanium frame, Ceramic Shield 2 front, Ceramic Shield back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G sub-6 GHz only (Apple C1X modem, no mmWave)",
+   "nfc": true,
+   "wifi": "Wi-Fi 7 (Apple N1)",
+   "bluetooth": "6",
+   "sim": "Dual eSIM only, no physical SIM tray"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
+  "pros": [
+   "5.64 mm thick and 165 g, the thinnest iPhone made",
+   "A19 Pro chip with 12GB RAM",
+   "Titanium frame with Ceramic Shield 2 on the front"
+  ],
+  "cons": [
+   "Single rear camera, no ultra wide or telephoto",
+   "3149 mAh, the smallest battery in the lineup",
+   "No mmWave 5G and eSIM only in every market"
+  ],
+  "summaryEn": "Thinnest iPhone at 5.64 mm, with A19 Pro and a titanium frame, but one rear camera and a small battery.",
+  "unsure": [
+   "chipset.antutu",
+   "updates",
+   "battery.wired",
+   "priceAmd",
+   "variants[].priceAmd",
+   "priceAmdMax"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-s25-ultra",
+  "brand": "Samsung",
+  "name": "Galaxy S25 Ultra",
+  "tier": "flagship",
+  "released": "2025-02",
+  "priceAmd": 550000,
+  "priceAmdMax": 700000,
+  "popularity": 74,
+  "display": {
+   "size": 6.9,
+   "type": "LTPO AMOLED 2X",
+   "resolution": "1440x3120",
+   "refresh": 120,
+   "ppi": 498,
+   "brightness": 2600,
+   "protection": "Corning Gorilla Armor 2"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Phoenix M)",
+   "gpu": "Adreno 830",
+   "antutu": 2900000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 550000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 601000
+   },
+   {
+    "ram": 12,
+    "storage": 1024,
+    "priceAmd": 700000
+   }
+  ],
+  "camera": {
+   "modules": 4,
+   "main": "200 MP f/1.7 wide, OIS, 1/1.3\" sensor",
+   "ultrawide": "50 MP f/1.9, 120-degree",
+   "telephoto": "10 MP f/2.4 3x tele + 50 MP f/3.4 5x periscope",
+   "front": "12 MP f/2.2, autofocus",
+   "video": "8K at 30 fps, 4K at 120 fps, 10-bit HDR"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 45,
+   "wireless": 15
+  },
+  "body": {
+   "height": 162.8,
+   "width": 77.6,
+   "thickness": 8.2,
+   "weight": 218,
+   "ip": "IP68",
+   "materials": "Titanium frame, Gorilla Armor 2 front and back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "Android 15, One UI 7",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Titanium Silverblue",
+   "Titanium Black",
+   "Titanium Whitesilver",
+   "Titanium Gray",
+   "Titanium Jetblack",
+   "Titanium Jadegreen",
+   "Titanium Pinkgold"
+  ],
+  "accent": "#8fa0b8",
+  "pros": [
+   "Built-in S Pen and four rear cameras including two telephotos",
+   "Seven years of OS and security updates",
+   "Titanium frame with Gorilla Armor 2, low-reflection front glass"
+  ],
+  "cons": [
+   "Highest price of the four",
+   "45W charging is slower than rivals at this price",
+   "218 g and 6.9 inches make one-handed use hard"
+  ],
+  "summaryEn": "Samsung's largest flagship, with an S Pen, a four-camera rear array and seven years of software updates.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "variants[].priceAmd",
+   "popularity"
+  ]
+ },
+ {
+  "id": "google-pixel-10-pro",
+  "brand": "Google",
+  "name": "Pixel 10 Pro",
+  "tier": "flagship",
+  "released": "2025-08",
+  "priceAmd": 423000,
+  "priceAmdMax": 614000,
+  "popularity": 34,
+  "display": {
+   "size": 6.3,
+   "type": "LTPO OLED",
+   "resolution": "1280x2856",
+   "refresh": 120,
+   "ppi": 495,
+   "brightness": 3300,
+   "protection": "Corning Gorilla Glass Victus 2"
+  },
+  "chipset": {
+   "name": "Google Tensor G5",
+   "process": "3 nm",
+   "cpu": "Octa-core (1x3.78 GHz Cortex-X4 + 5x3.05 GHz Cortex-A725 + 2x2.25 GHz Cortex-A520)",
+   "gpu": "Imagination DXT",
+   "antutu": 1900000
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 128,
+    "priceAmd": 423000
+   },
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 465000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 516000
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 614000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP f/1.7 wide, OIS",
+   "ultrawide": "48 MP f/1.7, 123-degree, macro focus",
+   "telephoto": "48 MP f/2.8 5x periscope, OIS",
+   "front": "42 MP f/2.2, autofocus",
+   "video": "4K at 60 fps, 8K at 30 fps via Video Boost"
+  },
+  "battery": {
+   "capacity": 4870,
+   "wired": 30,
+   "wireless": 15
+  },
+  "body": {
+   "height": 152.8,
+   "width": 72,
+   "thickness": 8.6,
+   "weight": 207,
+   "ip": "IP68",
+   "materials": "Aluminium frame, Gorilla Glass Victus 2 front and back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16",
+  "updates": "7 years of OS, security and Pixel Drop updates",
+  "colors": [
+   "Moonstone",
+   "Jade",
+   "Porcelain",
+   "Obsidian"
+  ],
+  "accent": "#93b49f",
+  "pros": [
+   "Three 48 MP-class rear cameras including a 5x periscope",
+   "Seven years of OS and security updates from launch",
+   "Compact 6.3-inch body for a flagship with a telephoto"
+  ],
+  "cons": [
+   "Tensor G5 trails Snapdragon 8 Elite in sustained performance",
+   "30W wired charging is modest for the price",
+   "Limited official retail presence in Armenia"
+  ],
+  "summaryEn": "A compact Google flagship built around camera processing and seven years of Android updates.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "variants[].priceAmd",
+   "popularity"
+  ]
+ },
+ {
+  "id": "oneplus-13",
+  "brand": "OnePlus",
+  "name": "OnePlus 13",
+  "tier": "flagship",
+  "released": "2025-01",
+  "priceAmd": 381000,
+  "priceAmdMax": 423000,
+  "popularity": 42,
+  "display": {
+   "size": 6.82,
+   "type": "LTPO AMOLED",
+   "resolution": "1440x3168",
+   "refresh": 120,
+   "ppi": 510,
+   "brightness": 4500,
+   "protection": "Ceramic Guard"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Phoenix M)",
+   "gpu": "Adreno 830",
+   "antutu": 2950000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 381000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 423000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP f/1.6 wide, Sony LYT-808, OIS",
+   "ultrawide": "50 MP f/2.0, 120-degree",
+   "telephoto": "50 MP f/2.6 3x periscope, OIS",
+   "front": "32 MP f/2.4",
+   "video": "8K at 30 fps, 4K at 60 fps, Dolby Vision"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 100,
+   "wireless": 50
+  },
+  "body": {
+   "height": 162.9,
+   "width": 76.5,
+   "thickness": 8.5,
+   "weight": 213,
+   "ip": "IP68/IP69",
+   "materials": "Aluminium frame, Ceramic Guard front, glass or vegan leather back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Dual nano-SIM; no eSIM in most markets"
+  },
+  "cardSlot": false,
+  "os": "Android 15, OxygenOS 15",
+  "updates": "4 years of OS upgrades and 6 years of security updates",
+  "colors": [
+   "Black Eclipse",
+   "Arctic Dawn",
+   "Midnight Ocean"
+  ],
+  "accent": "#1e3f6b",
+  "pros": [
+   "6000 mAh battery with 100W wired and 50W wireless charging",
+   "Three 50 MP rear cameras including a 3x periscope",
+   "IP68 and IP69 rating and 4500-nit peak display brightness"
+  ],
+  "cons": [
+   "Four OS upgrades, fewer than Samsung and Google",
+   "No microSD slot and no eSIM in most markets",
+   "Limited official service network in Armenia"
+  ],
+  "summaryEn": "A Snapdragon 8 Elite flagship with a 6000 mAh battery, 100W charging and three 50 MP cameras.",
+  "unsure": [
+   "chipset.antutu",
+   "connectivity.sim",
+   "priceAmd",
+   "priceAmdMax",
+   "variants[].priceAmd",
+   "popularity"
+  ]
+ },
+ {
+  "id": "apple-iphone-16",
+  "brand": "Apple",
+  "name": "iPhone 16",
+  "tier": "flagship",
+  "released": "2024-09",
+  "priceAmd": 340000,
+  "priceAmdMax": 465000,
+  "popularity": 93,
+  "display": {
+   "size": 6.1,
+   "type": "Super Retina XDR OLED",
+   "resolution": "1179x2556",
+   "refresh": 60,
+   "ppi": 460,
+   "brightness": 2000,
+   "protection": "Ceramic Shield"
+  },
+  "chipset": {
+   "name": "Apple A18",
+   "process": "3 nm",
+   "cpu": "Hexa-core (2 performance + 4 efficiency)",
+   "gpu": "Apple 5-core GPU",
+   "antutu": 1650000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 340000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 381000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 465000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "48 MP f/1.6 Fusion wide, sensor-shift OIS",
+   "ultrawide": "12 MP f/2.2, 120-degree, autofocus macro",
+   "front": "12 MP f/1.9 TrueDepth, autofocus",
+   "video": "4K at 60 fps Dolby Vision, spatial video"
+  },
+  "battery": {
+   "capacity": 3561,
+   "wired": 30,
+   "wireless": 25
+  },
+  "body": {
+   "height": 147.6,
+   "width": 71.6,
+   "thickness": 7.8,
+   "weight": 170,
+   "ip": "IP68",
+   "materials": "Aluminium frame, Ceramic Shield front, colour-infused glass back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (eSIM only in the US)"
+  },
+  "cardSlot": false,
+  "os": "iOS 18, upgradable to iOS 26",
+  "updates": "At least 5 years of security updates; Apple typically ships 5-7 years of iOS upgrades",
+  "colors": [
+   "Ultramarine",
+   "Teal",
+   "Pink",
+   "White",
+   "Black"
+  ],
+  "accent": "#4c5ebf",
+  "pros": [
+   "A18 chip keeps pace with newer Android flagships",
+   "Lightest and most compact of the four at 170 g",
+   "Longest practical software support and strongest resale value in Armenia"
+  ],
+  "cons": [
+   "60 Hz display when rivals here run at 120 Hz",
+   "Two rear cameras with no telephoto lens",
+   "3561 mAh battery and 30W wired charging"
+  ],
+  "summaryEn": "Apple's standard 2024 model, compact and well supported, but limited by a 60 Hz screen and two cameras.",
+  "unsure": [
+   "chipset.antutu",
+   "updates",
+   "priceAmd",
+   "priceAmdMax",
+   "variants[].priceAmd"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-s25",
+  "brand": "Samsung",
+  "name": "Galaxy S25",
+  "tier": "flagship",
+  "released": "2025-02",
+  "priceAmd": 339000,
+  "priceAmdMax": 419000,
+  "popularity": 80,
+  "accent": "#a7c3d6",
+  "display": {
+   "size": 6.2,
+   "type": "Dynamic LTPO AMOLED 2X",
+   "resolution": "2340x1080",
+   "refresh": 120,
+   "ppi": 416,
+   "brightness": 2600,
+   "protection": "Corning Gorilla Glass Victus 2"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+   "gpu": "Adreno 830",
+   "antutu": 2550000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 128,
+    "priceAmd": 339000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 365000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 419000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, 24mm wide, OIS",
+   "ultrawide": "12 MP, f/2.2, 120-degree",
+   "telephoto": "10 MP, f/2.4, 3x optical zoom, OIS",
+   "front": "12 MP, f/2.2",
+   "video": "8K@30fps, 4K@60/120fps"
+  },
+  "battery": {
+   "capacity": 4000,
+   "wired": 25,
+   "wireless": 15
+  },
+  "body": {
+   "height": 146.9,
+   "width": 70.5,
+   "thickness": 7.2,
+   "weight": 162,
+   "materials": "Armor Aluminum frame, Gorilla Glass Victus 2 front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, One UI 7",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Icy Blue",
+   "Navy",
+   "Mint",
+   "Silver Shadow",
+   "Blue Black",
+   "Coral Red",
+   "Pink Gold"
+  ],
+  "pros": [
+   "Flagship Snapdragon 8 Elite performance in a compact body",
+   "Seven years of OS and security updates",
+   "162 g weight with a 7.2 mm frame"
+  ],
+  "cons": [
+   "4000 mAh battery and 25W charging are small for the class",
+   "No microSD slot",
+   "Telephoto is limited to 3x and 10 MP"
+  ],
+  "summaryEn": "Compact Samsung flagship with Snapdragon 8 Elite, a 6.2-inch 120Hz LTPO panel and seven years of updates.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a56",
+  "brand": "Samsung",
+  "name": "Galaxy A56 5G",
+  "tier": "upper-mid",
+  "released": "2025-03",
+  "priceAmd": 209000,
+  "priceAmdMax": 239000,
+  "popularity": 74,
+  "accent": "#6f7355",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "2340x1080",
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 1200,
+   "protection": "Corning Gorilla Glass Victus+"
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1580",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x2.9 GHz Cortex-A720 + 3x2.6 GHz Cortex-A720 + 4x1.95 GHz Cortex-A520)",
+   "gpu": "Xclipse 540",
+   "antutu": 850000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 209000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 225000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 239000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, 24mm wide, OIS",
+   "ultrawide": "12 MP, f/2.2, 123-degree",
+   "telephoto": "None (5 MP f/2.4 macro as third module)",
+   "front": "12 MP, f/2.2",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 45,
+   "wireless": 0
+  },
+  "body": {
+   "height": 162.2,
+   "width": 77.5,
+   "thickness": 7.4,
+   "weight": 198,
+   "materials": "Aluminum frame, Gorilla Glass Victus+ front and back",
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, One UI 7",
+  "updates": "6 years of OS and security updates",
+  "colors": [
+   "Awesome Graphite",
+   "Awesome Olive",
+   "Awesome Light Gray",
+   "Awesome Pink"
+  ],
+  "pros": [
+   "Six years of OS and security updates at a mid-range price",
+   "Metal frame with Gorilla Glass Victus+ on both sides",
+   "45W wired charging with a 5000 mAh battery"
+  ],
+  "cons": [
+   "No wireless charging and no microSD slot",
+   "No telephoto camera",
+   "IP67 rather than the IP68 of Samsung's flagships"
+  ],
+  "summaryEn": "Mid-range Samsung with a 6.7-inch 120Hz AMOLED, Exynos 1580 and six years of software updates.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-15t",
+  "brand": "Xiaomi",
+  "name": "15T",
+  "tier": "upper-mid",
+  "released": "2025-09",
+  "priceAmd": 279000,
+  "priceAmdMax": 305000,
+  "popularity": 58,
+  "accent": "#c49a82",
+  "display": {
+   "size": 6.83,
+   "type": "AMOLED",
+   "resolution": "2772x1280",
+   "refresh": 144,
+   "ppi": 447,
+   "brightness": 3200
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 8400-Ultra",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x3.25 GHz Cortex-A725 + 3x3.0 GHz Cortex-A725 + 4x2.1 GHz Cortex-A725)",
+   "gpu": "Mali-G720 MC7",
+   "antutu": 1600000
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 279000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 305000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.7, 23mm wide, Light Fusion 800 sensor, OIS",
+   "ultrawide": "12 MP, f/2.2, 15mm, 120-degree",
+   "telephoto": "50 MP, f/1.9, 46mm, 2x optical zoom",
+   "front": "32 MP, f/2.2",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 5500,
+   "wired": 67,
+   "wireless": 0
+  },
+  "body": {
+   "height": 163.2,
+   "width": 78,
+   "thickness": 7.5,
+   "weight": 194,
+   "materials": "Aluminum frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Dual nano-SIM (eSIM in some markets)"
+  },
+  "cardSlot": false,
+  "os": "Android 15, HyperOS 2",
+  "updates": "4 OS upgrades and 6 years of security updates",
+  "colors": [
+   "Black",
+   "Gray",
+   "Rose Gold"
+  ],
+  "pros": [
+   "5500 mAh battery with 67W wired charging",
+   "144Hz 1.5K panel with very high peak brightness",
+   "Leica-tuned 50 MP main and 50 MP 2x telephoto"
+  ],
+  "cons": [
+   "No wireless charging",
+   "Dimensity 8400-Ultra is upper-mid silicon, not flagship class",
+   "No microSD slot"
+  ],
+  "summaryEn": "Large-screen Xiaomi with Dimensity 8400-Ultra, Leica triple camera, 5500 mAh battery and 67W charging.",
+  "unsure": [
+   "chipset.antutu",
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "connectivity.sim",
+   "display.protection",
+   "body.materials",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "google-pixel-9a",
+  "brand": "Google",
+  "name": "Pixel 9a",
+  "tier": "upper-mid",
+  "released": "2025-04",
+  "priceAmd": 219000,
+  "priceAmdMax": 249000,
+  "popularity": 24,
+  "accent": "#9aa0d8",
+  "display": {
+   "size": 6.3,
+   "type": "Actua pOLED",
+   "resolution": "2424x1080",
+   "refresh": 120,
+   "ppi": 422,
+   "brightness": 2700,
+   "protection": "Corning Gorilla Glass 3"
+  },
+  "chipset": {
+   "name": "Google Tensor G4",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x3.1 GHz Cortex-X4 + 3x2.6 GHz Cortex-A720 + 4x1.92 GHz Cortex-A520)",
+   "gpu": "Mali-G715 MC7",
+   "antutu": 1050000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 219000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 249000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "48 MP, f/1.7, 26mm wide, OIS",
+   "ultrawide": "13 MP, f/2.2, 120-degree",
+   "front": "13 MP, f/2.2",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 23,
+   "wireless": 7.5
+  },
+  "body": {
+   "height": 154.7,
+   "width": 73.3,
+   "thickness": 8.9,
+   "weight": 186,
+   "materials": "Aluminum frame, composite (plastic) back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15",
+  "updates": "7 years of OS, security and feature updates",
+  "colors": [
+   "Obsidian",
+   "Porcelain",
+   "Iris",
+   "Peony"
+  ],
+  "pros": [
+   "Seven years of OS and security updates",
+   "5100 mAh battery, the largest in the Pixel A line",
+   "Google camera processing at a mid-range price"
+  ],
+  "cons": [
+   "Tensor G4 runs hotter and slower than rival silicon",
+   "23W wired charging is slow for a 5100 mAh cell",
+   "Gorilla Glass 3 only, and no official Armenian retail channel"
+  ],
+  "summaryEn": "Google mid-ranger with Tensor G4, a 6.3-inch 120Hz OLED, 5100 mAh battery and seven years of updates.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "apple-iphone-15",
+  "brand": "Apple",
+  "name": "iPhone 15",
+  "tier": "flagship",
+  "released": "2023-09",
+  "priceAmd": 255000,
+  "priceAmdMax": 345000,
+  "popularity": 90,
+  "accent": "#f0c8cb",
+  "colors": [
+   "Pink",
+   "Yellow",
+   "Green",
+   "Blue",
+   "Black"
+  ],
+  "cardSlot": false,
+  "os": "iOS 17, upgradable to iOS 26",
+  "updates": "About 5-6 years of iOS updates",
+  "display": {
+   "size": 6.1,
+   "type": "Super Retina XDR OLED",
+   "resolution": "2556x1179",
+   "refresh": 60,
+   "ppi": 460,
+   "brightness": 2000,
+   "protection": "Ceramic Shield"
+  },
+  "chipset": {
+   "name": "Apple A16 Bionic",
+   "process": "4 nm",
+   "cpu": "Hexa-core (2x3.46 GHz Everest + 4x2.02 GHz Sawtooth)",
+   "gpu": "Apple 5-core GPU",
+   "antutu": 1400000
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 255000
+   },
+   {
+    "ram": 6,
+    "storage": 256,
+    "priceAmd": 285000
+   },
+   {
+    "ram": 6,
+    "storage": 512,
+    "priceAmd": 345000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "48 MP f/1.6 wide, sensor-shift OIS, 2x in-sensor telephoto crop",
+   "ultrawide": "12 MP f/2.4, 120-degree",
+   "front": "12 MP f/1.9 with autofocus",
+   "video": "4K at 60 fps, Dolby Vision HDR, 1080p at 240 fps slow motion"
+  },
+  "battery": {
+   "capacity": 3349,
+   "wired": 20,
+   "wireless": 15
+  },
+  "body": {
+   "height": 147.6,
+   "width": 71.6,
+   "thickness": 7.8,
+   "weight": 171,
+   "ip": "IP68",
+   "materials": "Aluminium frame, Ceramic Shield front, colour-infused matte glass back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "sim": "Nano-SIM and eSIM, dual standby"
+  },
+  "pros": [
+   "A16 Bionic still outruns most Android phones at this price",
+   "Compact 6.1-inch body with IP68 rating",
+   "Long iOS support window and strong resale value"
+  ],
+  "cons": [
+   "Display stays at 60 Hz",
+   "Charging is slow at about 20 W",
+   "128 GB base storage with no card slot"
+  ],
+  "summaryEn": "Compact Apple phone with a 48 MP main camera and long software support, held back by a 60 Hz screen.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a36",
+  "brand": "Samsung",
+  "name": "Galaxy A36 5G",
+  "tier": "mid",
+  "released": "2025-03",
+  "priceAmd": 130000,
+  "priceAmdMax": 155000,
+  "popularity": 72,
+  "accent": "#b7a3d9",
+  "colors": [
+   "Awesome Lavender",
+   "Awesome Black",
+   "Awesome White",
+   "Awesome Lime"
+  ],
+  "cardSlot": false,
+  "os": "Android 15, One UI 7",
+  "updates": "6 major Android updates and 6 years of security patches",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "2340x1080",
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 1200,
+   "protection": "Corning Gorilla Glass Victus+"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen 3",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x2.4 GHz Cortex-A78 + 3x2.2 GHz Cortex-A78 + 4x1.8 GHz Cortex-A55)",
+   "gpu": "Adreno 710",
+   "antutu": 610000
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 130000
+   },
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 140000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 155000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP f/1.8 wide with OIS",
+   "ultrawide": "8 MP f/2.2, 123-degree",
+   "front": "12 MP f/2.2",
+   "video": "4K at 30 fps, 1080p at 60 fps"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 45,
+   "wireless": 0
+  },
+  "body": {
+   "height": 162.9,
+   "width": 78.2,
+   "thickness": 7.4,
+   "weight": 195,
+   "ip": "IP67",
+   "materials": "Plastic frame, Gorilla Glass Victus+ front and back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "sim": "Dual nano-SIM plus eSIM"
+  },
+  "pros": [
+   "Six years of Android and security updates",
+   "120 Hz AMOLED panel with 1200 nits peak brightness",
+   "45 W charging on a 5000 mAh battery"
+  ],
+  "cons": [
+   "Third rear camera is a low-value 5 MP macro",
+   "No microSD card slot",
+   "Performance is only mid-range for gaming"
+  ],
+  "summaryEn": "Mid-range Samsung with a 120 Hz AMOLED, IP67 rating and six years of updates, on modest Snapdragon 6 Gen 3 hardware.",
+  "unsure": [
+   "priceAmd",
+   "popularity",
+   "chipset.antutu"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a26",
+  "brand": "Samsung",
+  "name": "Galaxy A26 5G",
+  "tier": "mid",
+  "released": "2025-03",
+  "priceAmd": 105000,
+  "priceAmdMax": 125000,
+  "popularity": 64,
+  "accent": "#a9d6c4",
+  "colors": [
+   "Awesome Mint",
+   "Awesome Peach",
+   "Awesome White",
+   "Awesome Black"
+  ],
+  "cardSlot": true,
+  "os": "Android 15, One UI 7",
+  "updates": "6 major Android updates and 6 years of security patches",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "2340x1080",
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 1000,
+   "protection": "Corning Gorilla Glass Victus+"
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1380",
+   "process": "5 nm",
+   "cpu": "Octa-core (4x2.4 GHz Cortex-A78 + 4x2.0 GHz Cortex-A55)",
+   "gpu": "Mali-G68 MP5",
+   "antutu": 560000
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 105000
+   },
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 112000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 125000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP f/1.8 wide with OIS",
+   "ultrawide": "8 MP f/2.2, 123-degree",
+   "front": "13 MP f/2.0",
+   "video": "4K at 30 fps, 1080p at 30 fps"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25,
+   "wireless": 0
+  },
+  "body": {
+   "height": 164,
+   "width": 77.5,
+   "thickness": 7.7,
+   "weight": 200,
+   "ip": "IP67",
+   "materials": "Plastic frame, Gorilla Glass Victus+ front and back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.3",
+   "sim": "Dual nano-SIM plus a dedicated microSD slot"
+  },
+  "pros": [
+   "Six years of Android and security updates at a low price",
+   "120 Hz AMOLED display and IP67 rating",
+   "Keeps a dedicated microSD card slot"
+  ],
+  "cons": [
+   "25 W charging is slow for a 5000 mAh battery",
+   "Exynos 1380 is dated for demanding games",
+   "Peak brightness is lower than the A36"
+  ],
+  "summaryEn": "Entry mid-range Samsung offering a 120 Hz AMOLED, IP67 and six years of updates, with slow charging and older silicon.",
+  "unsure": [
+   "connectivity.wifi",
+   "priceAmd",
+   "chipset.antutu",
+   "body.weight"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-note-14-pro",
+  "brand": "Xiaomi",
+  "name": "Redmi Note 14 Pro 5G",
+  "tier": "mid",
+  "released": "2025-01",
+  "priceAmd": 145000,
+  "priceAmdMax": 175000,
+  "popularity": 69,
+  "accent": "#2e6fa3",
+  "colors": [
+   "Ocean Blue",
+   "Midnight Black",
+   "Coral Green",
+   "Aurora Purple"
+  ],
+  "cardSlot": false,
+  "os": "Android 14 with HyperOS 2",
+  "updates": "3 major Android updates and 4 years of security patches",
+  "display": {
+   "size": 6.67,
+   "type": "AMOLED",
+   "resolution": "2712x1220",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 3000,
+   "protection": "Corning Gorilla Glass Victus 2"
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 7300-Ultra",
+   "process": "4 nm",
+   "cpu": "Octa-core (4x2.5 GHz Cortex-A78 + 4x2.0 GHz Cortex-A55)",
+   "gpu": "Mali-G615 MC2",
+   "antutu": 640000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 145000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 175000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP f/1.5 wide with OIS",
+   "ultrawide": "8 MP f/2.2, 120-degree",
+   "front": "20 MP f/2.2",
+   "video": "4K at 30 fps, 1080p at 60 fps"
+  },
+  "battery": {
+   "capacity": 5500,
+   "wired": 45,
+   "wireless": 0
+  },
+  "body": {
+   "height": 162.3,
+   "width": 74.7,
+   "thickness": 8.2,
+   "weight": 190,
+   "ip": "IP68",
+   "materials": "Plastic frame, Gorilla Glass Victus 2 front, glass back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.4",
+   "sim": "Dual nano-SIM"
+  },
+  "pros": [
+   "1.5K AMOLED with 3000 nits peak brightness",
+   "5500 mAh battery with 45 W charging",
+   "IP68 rating, rare at this price"
+  ],
+  "cons": [
+   "Ultrawide and 2 MP macro cameras are weak",
+   "Only 3 Android version updates, shorter than Samsung's",
+   "No microSD expansion"
+  ],
+  "summaryEn": "Value mid-ranger with a bright 1.5K AMOLED, large battery, IP68 and fast charging, paired with basic secondary cameras.",
+  "unsure": [
+   "cardSlot",
+   "priceAmd",
+   "chipset.antutu",
+   "body.width"
+  ]
+ },
+ {
+  "id": "poco-x7-pro",
+  "brand": "POCO",
+  "name": "POCO X7 Pro",
+  "tier": "mid",
+  "released": "2025-01",
+  "priceAmd": 155000,
+  "priceAmdMax": 185000,
+  "popularity": 62,
+  "accent": "#f5cb00",
+  "display": {
+   "size": 6.67,
+   "type": "AMOLED",
+   "resolution": "1220x2712",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 3200,
+   "protection": "Corning Gorilla Glass 7i"
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 8400-Ultra",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x3.25 GHz Cortex-A725 & 3x3.0 GHz Cortex-A725 & 4x2.1 GHz Cortex-A725)",
+   "gpu": "Mali-G720 MC7",
+   "antutu": 1750000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 155000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 185000
+   }
+  ],
+  "camera": {
+   "main": "50 MP, f/1.5, OIS",
+   "ultrawide": "8 MP, f/2.2, 119-degree",
+   "front": "20 MP, f/2.2",
+   "video": "4K@30/60fps",
+   "modules": 2
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 90,
+   "wireless": 0
+  },
+  "body": {
+   "height": 160.8,
+   "width": 75.2,
+   "thickness": 8.3,
+   "weight": 195,
+   "materials": "Glass front (Gorilla Glass 7i), plastic frame, plastic back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.4",
+   "sim": "Dual Nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, HyperOS 2",
+  "updates": "3 Android version updates, 4 years of security patches",
+  "colors": [
+   "Nebula Green",
+   "Obsidian Black",
+   "Poco Yellow"
+  ],
+  "pros": [
+   "Dimensity 8400-Ultra performance well above its price class",
+   "6000 mAh battery with 90W wired charging",
+   "IP68 rating, rare at this price"
+  ],
+  "cons": [
+   "No telephoto camera and only an 8 MP ultrawide",
+   "No microSD slot",
+   "Software support window shorter than Samsung's"
+  ],
+  "summaryEn": "A performance-focused mid-ranger with a flagship-class Dimensity chip, 120Hz AMOLED, 6000 mAh battery and IP68.",
+  "unsure": [
+   "chipset.antutu",
+   "variants"
+  ]
+ },
+ {
+  "id": "honor-x9c",
+  "brand": "Honor",
+  "name": "Honor X9c",
+  "tier": "mid",
+  "released": "2024-11",
+  "priceAmd": 145000,
+  "priceAmdMax": 175000,
+  "popularity": 52,
+  "accent": "#3f9e93",
+  "display": {
+   "size": 6.78,
+   "type": "Curved AMOLED",
+   "resolution": "1224x2700",
+   "refresh": 120,
+   "ppi": 437,
+   "brightness": 4000
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen 1",
+   "process": "4 nm",
+   "cpu": "Octa-core (2x2.2 GHz Cortex-A78 & 6x1.8 GHz Cortex-A55)",
+   "gpu": "Adreno 710",
+   "antutu": 570000
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 145000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 155000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 175000
+   }
+  ],
+  "camera": {
+   "main": "108 MP, f/1.75, 1/1.67-inch, OIS",
+   "ultrawide": "5 MP, f/2.2",
+   "front": "16 MP, f/2.45",
+   "video": "4K@30fps",
+   "modules": 2
+  },
+  "battery": {
+   "capacity": 6600,
+   "wired": 66,
+   "wireless": 0
+  },
+  "body": {
+   "height": 163,
+   "width": 75.5,
+   "thickness": 8,
+   "weight": 189,
+   "ip": "IP65M"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "sim": "Dual Nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 14, MagicOS 8.0",
+  "colors": [
+   "Jade Cyan",
+   "Titanium Purple",
+   "Titanium Black",
+   "Moonlight White"
+  ],
+  "pros": [
+   "6600 mAh battery in a 189 g, 8 mm body",
+   "4000 nits peak brightness on a 120Hz AMOLED panel",
+   "Rated for drop resistance and IP65M water jets"
+  ],
+  "cons": [
+   "Snapdragon 6 Gen 1 is only mid-tier for gaming",
+   "5 MP ultrawide is weak next to the 108 MP main",
+   "No microSD expansion"
+  ],
+  "summaryEn": "A durability-oriented mid-ranger built around a very large battery, a bright curved AMOLED and a 108 MP main camera.",
+  "unsure": [
+   "chipset.antutu",
+   "camera.video",
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "display.protection",
+   "body.materials",
+   "updates",
+   "colors",
+   "os"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a16",
+  "brand": "Samsung",
+  "name": "Galaxy A16 5G",
+  "tier": "budget",
+  "released": "2024-10",
+  "priceAmd": 85000,
+  "priceAmdMax": 105000,
+  "popularity": 70,
+  "accent": "#33404f",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "1080x2340",
+   "refresh": 90,
+   "ppi": 385,
+   "protection": "Corning Gorilla Glass Victus"
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1330",
+   "process": "5 nm",
+   "cpu": "Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+   "gpu": "Mali-G68 MP2",
+   "antutu": 420000
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 85000
+   },
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 95000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 105000
+   }
+  ],
+  "camera": {
+   "main": "50 MP, f/1.8",
+   "ultrawide": "5 MP, f/2.2",
+   "front": "13 MP, f/2.0",
+   "video": "1080p@30fps",
+   "modules": 3
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25,
+   "wireless": 0
+  },
+  "body": {
+   "height": 164.4,
+   "width": 77.9,
+   "thickness": 7.9,
+   "weight": 200,
+   "materials": "Glass front (Gorilla Glass Victus), plastic frame, plastic back",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.3",
+   "sim": "Dual Nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, One UI 6.1",
+  "updates": "6 Android version updates, 6 years of security patches",
+  "colors": [
+   "Blue Black",
+   "Gray",
+   "Light Green",
+   "Light Gray"
+  ],
+  "pros": [
+   "Six years of OS and security updates",
+   "Super AMOLED 90Hz screen at a budget price",
+   "microSD expansion up to 1.5 TB"
+  ],
+  "cons": [
+   "Exynos 1330 handles only light gaming",
+   "Video capture limited to 1080p",
+   "2 MP macro camera adds little"
+  ],
+  "summaryEn": "A budget Samsung with an AMOLED 90Hz screen, 5G and an unusually long six-year update commitment.",
+  "unsure": [
+   "chipset.antutu",
+   "chipset.name",
+   "display.brightness",
+   "variants"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a06",
+  "brand": "Samsung",
+  "name": "Galaxy A06",
+  "tier": "budget",
+  "released": "2024-08",
+  "priceAmd": 47000,
+  "priceAmdMax": 58000,
+  "popularity": 58,
+  "accent": "#a9c6dd",
+  "display": {
+   "size": 6.7,
+   "type": "PLS LCD",
+   "resolution": "720x1600",
+   "refresh": 60,
+   "ppi": 262
+  },
+  "chipset": {
+   "name": "MediaTek Helio G85",
+   "process": "12 nm",
+   "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+   "gpu": "Mali-G52 MC2",
+   "antutu": 250000
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 47000
+   },
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 52000
+   },
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 58000
+   }
+  ],
+  "camera": {
+   "main": "50 MP, f/1.8",
+   "front": "8 MP, f/2.0",
+   "video": "1080p@30fps",
+   "modules": 2
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25,
+   "wireless": 0
+  },
+  "body": {
+   "height": 167.3,
+   "width": 77.3,
+   "thickness": 7.9,
+   "weight": 189,
+   "materials": "Plastic front, plastic frame, plastic back"
+  },
+  "connectivity": {
+   "network": "4G LTE",
+   "nfc": false,
+   "sim": "Dual Nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, One UI 6.1",
+  "colors": [
+   "Black",
+   "Light Blue",
+   "Gold"
+  ],
+  "pros": [
+   "50 MP main camera at an entry-level price",
+   "5000 mAh battery with 25W charging support",
+   "microSD expansion and a 3.5 mm jack"
+  ],
+  "cons": [
+   "720p 60Hz LCD screen",
+   "Helio G85 is slow for gaming and heavy multitasking",
+   "No NFC and no 5G"
+  ],
+  "summaryEn": "An entry-level Samsung with a large 720p LCD, 5000 mAh battery and a 50 MP camera, built for basic daily use.",
+  "unsure": [
+   "chipset.antutu",
+   "connectivity.nfc",
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "updates",
+   "variants"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-14c",
+  "brand": "Xiaomi",
+  "name": "Redmi 14C",
+  "tier": "budget",
+  "released": "2024-09",
+  "priceAmd": 57000,
+  "priceAmdMax": 75000,
+  "popularity": 62,
+  "accent": "#9cb08b",
+  "colors": [
+   "Midnight Black",
+   "Starry Blue",
+   "Sage Green",
+   "Dreamy Purple"
+  ],
+  "display": {
+   "size": 6.88,
+   "type": "IPS LCD",
+   "resolution": "720x1640",
+   "refresh": 120,
+   "ppi": 260,
+   "brightness": 600,
+   "protection": "Corning Gorilla Glass 3"
+  },
+  "chipset": {
+   "name": "MediaTek Helio G81 Ultra",
+   "process": "12 nm",
+   "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+   "gpu": "Mali-G52 MC2",
+   "antutu": 246000
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 57000
+   },
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 63000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 75000
+   }
+  ],
+  "camera": {
+   "main": "50 MP, f/1.8, 28mm wide, PDAF",
+   "front": "13 MP, f/2.0",
+   "video": "1080p@30fps",
+   "modules": 2
+  },
+  "battery": {
+   "capacity": 5160,
+   "wired": 18,
+   "wireless": 0
+  },
+  "body": {
+   "height": 171.9,
+   "width": 77.8,
+   "thickness": 8.2,
+   "weight": 211,
+   "materials": "Gorilla Glass 3 front, plastic frame, glass or eco-leather back",
+   "ip": "Dust and splash resistant (no official IP number published)"
+  },
+  "connectivity": {
+   "network": "4G LTE",
+   "nfc": true,
+   "wifi": "Wi-Fi 5 (802.11 a/b/g/n/ac), dual-band",
+   "bluetooth": "5.4",
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, HyperOS",
+  "updates": "2 major Android updates (Android 15 confirmed), about 4 years of security patches",
+  "pros": [
+   "Large 6.88-inch 120Hz screen",
+   "5160 mAh battery with 3.5mm jack",
+   "Dedicated microSD slot"
+  ],
+  "cons": [
+   "720p resolution on a very large panel",
+   "Helio G81 Ultra is entry-level for gaming",
+   "18W charging is slow for the capacity"
+  ],
+  "summaryEn": "Entry-level Xiaomi with a large 120Hz HD+ LCD, 5160 mAh battery, microSD slot and modest Helio G81 Ultra performance.",
+  "unsure": [
+   "updates",
+   "connectivity.nfc",
+   "body.ip",
+   "priceAmd",
+   "priceAmdMax",
+   "variants[].priceAmd"
+  ]
+ },
+ {
+  "id": "realme-c75",
+  "brand": "Realme",
+  "name": "C75",
+  "tier": "budget",
+  "released": "2024-11",
+  "priceAmd": 75000,
+  "priceAmdMax": 90000,
+  "popularity": 26,
+  "accent": "#d4a94a",
+  "colors": [
+   "Lightning Gold",
+   "Storm Black"
+  ],
+  "display": {
+   "size": 6.72,
+   "type": "IPS LCD",
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 392,
+   "brightness": 690,
+   "protection": "ArmorShell Glass"
+  },
+  "chipset": {
+   "name": "MediaTek Helio G92 Max",
+   "process": "12 nm",
+   "cpu": "Octa-core (2x2.05 GHz Cortex-A75 & 6x2.0 GHz Cortex-A55)",
+   "gpu": "Mali-G52 MC2",
+   "antutu": 240000
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 75000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 90000
+   }
+  ],
+  "camera": {
+   "main": "50 MP, f/1.8, PDAF",
+   "front": "8 MP, f/2.0",
+   "video": "1080p@30fps",
+   "modules": 2
+  },
+  "battery": {
+   "capacity": 5828,
+   "wired": 45,
+   "wireless": 0
+  },
+  "body": {
+   "height": 165.7,
+   "width": 76.2,
+   "thickness": 7.99,
+   "weight": 196,
+   "materials": "ArmorShell glass front, plastic frame and back",
+   "ip": "IP66/IP68/IP69"
+  },
+  "connectivity": {
+   "network": "4G LTE",
+   "nfc": false,
+   "wifi": "Wi-Fi 5 (802.11ac)",
+   "bluetooth": "5.0",
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, realme UI 5.0",
+  "updates": "2 major Android updates, about 3 years of security patches",
+  "pros": [
+   "5828 mAh battery with 45W charging",
+   "IP66/IP68/IP69 water and dust rating",
+   "1080p screen at this price"
+  ],
+  "cons": [
+   "Helio G92 Max is dated for gaming",
+   "90Hz LCD rather than OLED",
+   "No 5G and NFC is missing on most variants"
+  ],
+  "summaryEn": "Durable budget Realme with IP69 rating, a 5828 mAh battery, 45W charging and a 1080p 90Hz LCD.",
+  "unsure": [
+   "chipset.antutu",
+   "updates",
+   "connectivity.nfc",
+   "connectivity.bluetooth",
+   "priceAmd",
+   "priceAmdMax",
+   "variants[].priceAmd"
+  ]
+ }
+]

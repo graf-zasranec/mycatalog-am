@@ -1,0 +1,10 @@
+Product images in this folder were downloaded from GSMArena's CDN (fdn2.gsmarena.com/vv/bigpic/).
+They are manufacturer press renders and are COPYRIGHTED by the respective phone makers / GSMArena.
+
+Status: OK for an internal prototype or a client pitch.
+NOT OK for a public launch without licensing, or replace with:
+  - your own product photography, or
+  - images supplied by the distributor/retailer you partner with.
+
+Filenames match the phone `id` field in the catalog data (index.html -> DATA[].id).
+To swap an image, just overwrite <id>.jpg — no code change needed.
