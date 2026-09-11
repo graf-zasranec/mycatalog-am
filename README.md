@@ -45,13 +45,18 @@ just overwrite `images/<id>.jpg`.
 The product page shows a transparent cutout on a coloured panel, and swaps the photo when you
 pick a colour. Two steps produce those:
 
-    node tools/colors.mjs    # one photo per (phone, colour) from the shop that sells that colour
-    node tools/cutout.mjs    # then open http://127.0.0.1:8791/ and let it finish
+    node tools/colors.mjs                       # one photo per (phone, colour), from the shop that sells it
+    pip install "rembg[cpu]" onnxruntime pillow scipy
+    python tools/cutout.py                      # all of them, or pass ids to redo a few
 
-`cutout.mjs` serves a page that removes the white background on a canvas and POSTs the results
-back as transparent WebP. It uses the browser only because decoding JPEG in Node needs a
-dependency — nothing leaves the machine. The cutout is a **flood fill from the image border**,
-not a global "white to transparent" threshold, so white and silver phone bodies survive intact.
+`cutout.py` runs **isnet-general-use**, a segmentation model, locally — nothing leaves the
+machine. It replaced a hand-rolled flood fill that could only ask "is this pixel near the
+backdrop colour", which cannot tell a grey shadow plinth from a grey product, or a white watch
+strap from a white backdrop: it left podiums under half the catalogue and ate the straps of the
+other half. Three passes run on the model's mask: narrow column runs are dropped (the S Pen
+lying beside a Galaxy Ultra), small enclosed holes are filled (the model tears at a reflective
+folded screen) while large ones are kept (the gap inside a headphone headband), and the product
+is centred on a square canvas so every card frames alike.
 
 Colour photos come from the shops themselves (Vega, then iSpace) — the photo shown for a colour
 comes from a shop that actually sells it. The **main** photo is shop-sourced too for the products
@@ -73,8 +78,8 @@ photography before launch.
     Unregister-ScheduledTask -TaskName 'MyCatalog refresh' -Confirm:$false
 
 If a scrape fails, refresh.cmd stops and keeps the previous `data/prices.json` rather than
-publishing an empty catalogue. Photos are not refreshed by it — `tools/cutout.mjs` needs a
-browser, so re-run `tools/colors.mjs` + `tools/cutout.mjs` by hand when a shop adds colours.
+publishing an empty catalogue. Photos are not refreshed by it — re-run `tools/colors.mjs`
+and `python tools/cutout.py` by hand when a shop adds colours.
 
 ## Real prices
 

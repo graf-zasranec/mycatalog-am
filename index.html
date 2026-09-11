@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-Ut+bmb0Q8YuU2R4KxsxXO8dD5Wo/D7BMyext01SC8NU='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-m2KrN9ldE7VUAj76C3QCiaPrwDz+BHQFJJJZ+CU+GKk='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 111 մոդել, 11 խանութի գներ դրամով, համեմատում և զտիչներ։">
 <link rel="canonical" href="https://graf-zasranec.github.io/mycatalog-am/">
@@ -394,7 +394,10 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .pname{font-size:clamp(34px,8.5vw,96px);font-weight:800;letter-spacing:-.045em;line-height:.94;
   overflow-wrap:anywhere}
 .pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);gap:44px;align-items:stretch;margin-top:14px}
-.pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:340px}
+/* Capped: the left column grows with the window, and without a ceiling a 1200px cutout was
+   being blown up past its own resolution on a wide screen - big and soft. */
+.pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:340px;
+  max-width:min(100%,520px);margin-inline:auto}
 .pshotwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   filter:drop-shadow(0 30px 46px rgba(20,19,20,.20))}
 .pside{padding-top:8px}
@@ -502,6 +505,16 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
   max-width:calc(100vw - 32px);text-align:center}
 .toast.on{opacity:1}
 .addbtn{display:inline-flex;align-items:center;gap:7px}
+/* The comparison arrives rather than appearing: columns and rows fade up together. Opacity and
+   a small lift, so reduced motion keeps the fade and drops the movement. */
+.cwrap .cphotos,.cwrap .chead,.cwrap .ctable{animation:cmpIn .34s cubic-bezier(.2,.7,.3,1) both}
+.cwrap .chead{animation-delay:.04s}
+.cwrap .ctable{animation-delay:.08s}
+@keyframes cmpIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+/* the rule above is killed under reduced motion, which would leave opacity:0 forever */
+@media (prefers-reduced-motion:reduce){
+  .cwrap .cphotos,.cwrap .chead,.cwrap .ctable{animation:none;opacity:1;transform:none}
+}
 .addslot{width:100%;min-height:84px;border:1.5px dashed var(--line2);border-radius:var(--r-md);
   background:none;cursor:pointer;display:grid;place-items:center;transition:border-color .2s ease,background .2s ease}
 .addslot:hover{border-color:var(--brand);background:var(--brand-soft)}
@@ -547,7 +560,12 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
     padding-bottom:2px;padding-top:12px;font-weight:700;color:var(--body)}
   .ctable .c{font-size:0.8125rem;padding:6px 8px 11px}
 }
-.cbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px}
+.cbar{display:flex;align-items:center;justify-content:space-between;gap:10px 20px;flex-wrap:wrap;margin-top:20px}
+/* Two groups, not one row with a stretchy spacer: when the row ran out of width the spacer
+   collapsed and the title, the counters and the controls crowded into each other. Each group
+   wraps as a unit, so they stack instead of overlapping. */
+.cbar-l,.cbar-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
+.cbar-r{margin-left:auto}
 .sw{display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-size:0.875rem;font-weight:600;user-select:none}
 .sw input{position:absolute;opacity:0;pointer-events:none}
 .sw .tr{width:40px;height:23px;border-radius:999px;background:var(--line2);position:relative;transition:background .16s;flex:none}
@@ -1877,14 +1895,16 @@ function compareView() {
   }
   return `<div class="shell">
     <div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
-    <div class="cbar"><h1 class="sh" style="margin:0">${esc(t('compare.title'))}</h1>
-      <span class="dcount"><i></i>${nDiff} ${esc(x('diffs'))}</span>
-      <span class="scount">${nSame} ${esc(x('same'))}</span>
-      <span style="flex:1"></span>
-      <label class="sw"><input type="checkbox" id="diffonly"><span class="tr"></span>${esc(t('compare.diff_only'))}</label>
-      ${canAdd ? `<button class="btn ghost sm addbtn" data-act="openadd">
-        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
-      <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
+    <div class="cbar">
+      <div class="cbar-l"><h1 class="sh" style="margin:0">${esc(t('compare.title'))}</h1>
+        <span class="dcount"><i></i>${nDiff} ${esc(x('diffs'))}</span>
+        <span class="scount">${nSame} ${esc(x('same'))}</span></div>
+      <div class="cbar-r">
+        <label class="sw"><input type="checkbox" id="diffonly"><span class="tr"></span>${esc(t('compare.diff_only'))}</label>
+        ${canAdd ? `<button class="btn ghost sm addbtn" data-act="openadd">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
+        <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
+    </div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
         ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
@@ -2194,6 +2214,11 @@ addEventListener('keydown', e => { if (e.key === 'Escape') closeAdd(); });
 window.addEventListener('hashchange', e => {
   const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
   if (remembers(from)) scrollMem.set(from, window.scrollY);
+  const to = location.hash.replace(/^#/, '') || '/';
+  // Leaving the comparison ends it: the bar that used to carry the picks around is gone, so a
+  // list that outlived the page would be invisible state - you would return to the catalogue
+  // with slots silently used up and every other category dimmed for no reason you could see.
+  if (from === '/compare' && to !== '/compare' && st.cmp.length) { st.cmp = []; save(); }
   render(false);
 });
 render();

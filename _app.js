@@ -1102,14 +1102,16 @@ function compareView() {
   }
   return `<div class="shell">
     <div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
-    <div class="cbar"><h1 class="sh" style="margin:0">${esc(t('compare.title'))}</h1>
-      <span class="dcount"><i></i>${nDiff} ${esc(x('diffs'))}</span>
-      <span class="scount">${nSame} ${esc(x('same'))}</span>
-      <span style="flex:1"></span>
-      <label class="sw"><input type="checkbox" id="diffonly"><span class="tr"></span>${esc(t('compare.diff_only'))}</label>
-      ${canAdd ? `<button class="btn ghost sm addbtn" data-act="openadd">
-        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
-      <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
+    <div class="cbar">
+      <div class="cbar-l"><h1 class="sh" style="margin:0">${esc(t('compare.title'))}</h1>
+        <span class="dcount"><i></i>${nDiff} ${esc(x('diffs'))}</span>
+        <span class="scount">${nSame} ${esc(x('same'))}</span></div>
+      <div class="cbar-r">
+        <label class="sw"><input type="checkbox" id="diffonly"><span class="tr"></span>${esc(t('compare.diff_only'))}</label>
+        ${canAdd ? `<button class="btn ghost sm addbtn" data-act="openadd">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
+        <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
+    </div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
         ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
@@ -1419,6 +1421,11 @@ addEventListener('keydown', e => { if (e.key === 'Escape') closeAdd(); });
 window.addEventListener('hashchange', e => {
   const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
   if (remembers(from)) scrollMem.set(from, window.scrollY);
+  const to = location.hash.replace(/^#/, '') || '/';
+  // Leaving the comparison ends it: the bar that used to carry the picks around is gone, so a
+  // list that outlived the page would be invisible state - you would return to the catalogue
+  // with slots silently used up and every other category dimmed for no reason you could see.
+  if (from === '/compare' && to !== '/compare' && st.cmp.length) { st.cmp = []; save(); }
   render(false);
 });
 render();
