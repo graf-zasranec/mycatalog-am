@@ -58,6 +58,42 @@ function cutMap(inline) {
   console.log('terms self-test: ' + cases.length + ' checks pass');
 }
 
+// SEO. The router lives in the hash, so a crawler only ever sees ONE url - there is no point
+// emitting a sitemap of #/p/... fragments, because fragments are not indexed as separate pages.
+// What does carry weight on a single page: a real title and description, the social card, a
+// canonical, and an ItemList that names the products and their cheapest Armenian price.
+const SITE = 'https://graf-zasranec.github.io/mycatalog-am/';
+const bestOf = p => {
+  const offs = (PRICES.offers && PRICES.offers[p.id]) || [];
+  const live = offs.map(o => o.price).filter(Number.isFinite);
+  return live.length ? Math.min(...live) : p.priceAmd;
+};
+const SEO = {
+  url: SITE,
+  img: 'images/cut/' + (phones.find(p => fs.existsSync(`${CUT}/${p.id}__main.webp`)) || phones[0]).id + '__main.webp',
+  title: `MyCatalog — ${phones.length} սարքի գներ Հայաստանի խանութներում`,
+  desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
+      + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
+  ld: {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'MyCatalog',
+    numberOfItems: phones.length,
+    itemListElement: phones.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Product',
+        name: (p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name),
+        brand: { '@type': 'Brand', name: p.brand },
+        category: p.category || 'phone',
+        url: SITE + '#/p/' + p.id,
+        offers: { '@type': 'Offer', priceCurrency: 'AMD', price: bestOf(p), availability: 'https://schema.org/InStock' }
+      }
+    }))
+  }
+};
+
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
 
@@ -73,6 +109,22 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="${SEO.desc}">
+<link rel="canonical" href="${SEO.url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MyCatalog">
+<meta property="og:locale" content="hy_AM">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="${SEO.title}">
+<meta property="og:description" content="${SEO.desc}">
+<meta property="og:url" content="${SEO.url}">
+<meta property="og:image" content="${SEO.url}${SEO.img}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${SEO.title}">
+<meta name="twitter:description" content="${SEO.desc}">
+<meta name="twitter:image" content="${SEO.url}${SEO.img}">
+<script type="application/ld+json">${JSON.stringify(SEO.ld)}<\/script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>${THEME_JS}<\/script>
 `;
@@ -112,6 +164,15 @@ function build({ inline, standalone }) {
   return HEAD_OPEN(appJs) + head + HEAD_CLOSE + body + script + '\n</body></html>\n';
 }
 
+fs.writeFileSync('robots.txt', `User-agent: *
+Allow: /
+Sitemap: ${SITE}sitemap.xml
+`);
+fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url><loc>${SITE}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+</urlset>
+`);
 fs.writeFileSync('index.html', build({ inline: false, standalone: true }));
 fs.writeFileSync('index.embedded.html', build({ inline: true, standalone: true }));
 fs.writeFileSync('artifact.html', build({ inline: true, standalone: false }));
