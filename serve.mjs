@@ -9,7 +9,11 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 const TYPES = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json',
   '.jpg':'image/jpeg', '.png':'image/png', '.webp':'image/webp', '.txt':'text/plain', '.svg':'image/svg+xml' };
 http.createServer((req, res) => {
-  const rel = decodeURIComponent(req.url.split('?')[0]).replace(/^\/+/, '') || 'index.html';
+  // a bare % makes decodeURIComponent throw, the handler rejects and the request never gets a
+  // reply - the browser just hangs. Answer 400 instead.
+  let rel;
+  try { rel = decodeURIComponent(req.url.split('?')[0]).replace(/^\/+/, '') || 'index.html'; }
+  catch { res.writeHead(400); return res.end('bad url'); }
   const file = path.resolve(ROOT, rel);
   // ROOT + separator, or a sibling folder named MyCatalogSomething would pass the prefix test
   if (file !== ROOT && !file.startsWith(ROOT + path.sep)) { res.writeHead(403).end('no'); return; }

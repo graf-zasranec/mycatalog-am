@@ -96,25 +96,78 @@ function cutout(img){
   // which is the cheaper mistake by a wide margin.
   let lightN=0, opaqueN=0;
   for(let p=0;p<W*H;p++) if(!bg[p]){ opaqueN++; if((px[p*4]+px[p*4+1]+px[p*4+2])/3>=200) lightN++; }
-  const soft = opaqueN>0 && lightN/opaqueN < 0.62;
+  const soft = opaqueN>0 && lightN/opaqueN < 0.50;   // erring toward REFUSE: a kept plinth beats an eaten product
 
   if(!pre && soft){
-    const SOFT_MIN=150, SOFT_STEP=9, SOFT_SAT=12;
+    const SOFT_MIN=150, SOFT_SAT=12, SOFT_MAX=0.25;
     const lum=p=>(px[p*4]+px[p*4+1]+px[p*4+2])/3;
     const sat=p=>Math.max(px[p*4],px[p*4+1],px[p*4+2])-Math.min(px[p*4],px[p*4+1],px[p*4+2]);
-    const q=[];
-    for(let p=0;p<W*H;p++) if(bg[p]) q.push(p);
-    for(let h=0;h<q.length;h++){
-      const p=q[h], x=p%W, y=(p-x)/W, L=lum(p);
-      for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
-        const nx=x+dx, ny=y+dy;
-        if(nx<0||ny<0||nx>=W||ny>=H) continue;
-        const n=ny*W+nx;
-        if(bg[n]) continue;
-        const nl=lum(n);
-        if(nl<SOFT_MIN||sat(n)>SOFT_SAT||Math.abs(nl-L)>SOFT_STEP) continue;
-        bg[n]=1; px[n*4+3]=0; q.push(n);
+    // Walk into a scratch mask first. A plinth is a small fraction of the product's area; a
+    // strap the walk has escaped into is most of it. The Galaxy Watch 8 is white-on-white with
+    // a SOFT edge - 255 backdrop down to a 224 strap in steps of about 7 - so the walk crossed
+    // it a pixel at a time and ate the whole strap, leaving a chewed black watch face. Nothing
+    // is applied until the size of what it wants to remove says it stayed on the plinth.
+    const walk=step=>{
+      const take=new Uint8Array(W*H), q=[];
+      for(let p=0;p<W*H;p++) if(bg[p]) q.push(p);
+      for(let h=0;h<q.length;h++){
+        const p=q[h], x=p%W, y=(p-x)/W, L=lum(p);
+        for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
+          const nx=x+dx, ny=y+dy;
+          if(nx<0||ny<0||nx>=W||ny>=H) continue;
+          const n=ny*W+nx;
+          if(bg[n]||take[n]) continue;
+          const nl=lum(n);
+          if(nl<SOFT_MIN||sat(n)>SOFT_SAT||Math.abs(nl-L)>step) continue;
+          take[n]=1; q.push(n);
+        }
       }
+      let want=0; for(let p=0;p<W*H;p++) if(take[p]) want++;
+      return {take,want};
+    };
+    // A rendered shadow is far smoother than any product edge, so when the loose walk escapes
+    // into the product the same walk at a smaller step still follows the plinth and no longer
+    // crosses the edge. Take the first result that stays inside the cap.
+    for(const step of [9,5,3]){
+      const {take,want}=walk(step);
+      if(want>opaqueN*SOFT_MAX) continue;
+      for(let p=0;p<W*H;p++) if(take[p]){ bg[p]=1; px[p*4+3]=0; }
+      break;
+    }
+  }
+
+  // Background trapped INSIDE the product - the hole in a headphone's headband, the gap between
+  // a watch and its strap - is unreachable from the border, so the fill left it and it read as a
+  // white blob on the dark cards. Same near-white test as the border fill, so a product body
+  // (235-248) is never touched, and only regions big enough to be real holes are cleared, which
+  // leaves specular glints on glass alone.
+  if(!pre){
+    // The backdrop is a studio flat, almost always exactly 255. A hole must MATCH it, not merely
+    // be near-white: a glossy white phone back has blown highlights at 249-255 too, and clearing
+    // those punched ragged holes straight through the Realme and the OnePlus. So the test is the
+    // sampled backdrop colour within a couple of levels, and the region has to be flat.
+    let ref=255, n=0;
+    for(let x=0;x<W;x+=7){ ref+=(px[x*4]+px[x*4+1]+px[x*4+2])/3; n++; }
+    ref=Math.round(ref/(n+1));
+    const flat=i=>{const r=px[i],g=px[i+1],b=px[i+2];
+      return Math.abs(r-ref)<=2 && Math.abs(g-ref)<=2 && Math.abs(b-ref)<=2;};
+    const MINHOLE=Math.max(64,Math.round(W*H*0.015));   // a headband gap is several % of the frame; a blown highlight on a white back is not
+    const seen=new Uint8Array(W*H), q=new Int32Array(W*H);
+    for(let p0=0;p0<W*H;p0++){
+      if(bg[p0]||seen[p0]||!flat(p0*4)) continue;
+      let head=0,tail=0; q[tail++]=p0; seen[p0]=1;
+      const cell=[];
+      while(head<tail){
+        const p=q[head++], x=p%W, y=(p-x)/W; cell.push(p);
+        for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
+          const nx=x+dx, ny=y+dy;
+          if(nx<0||ny<0||nx>=W||ny>=H) continue;
+          const m=ny*W+nx;
+          if(seen[m]||bg[m]||!flat(m*4)) continue;
+          seen[m]=1; q[tail++]=m;
+        }
+      }
+      if(cell.length>=MINHOLE) for(const p of cell){ bg[p]=1; px[p*4+3]=0; }
     }
   }
 

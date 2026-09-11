@@ -8,7 +8,6 @@ const OFFER_PEEK = 5;   // offers shown before the list asks to be expanded
 // works when someone opens a product or offers link directly.
 const backLink = (href, label) =>
   `<a class="backbtn" href="${esc(href)}"><span aria-hidden="true">←</span> ${esc(label)}</a>`;
-const RATE = 385;
 // local build reads images/<id>.jpg; the published build injects IMGDATA with inline data URIs
 const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || 'images/cut/' + id + '__main.webp';
 
@@ -106,7 +105,6 @@ st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id)).slice(0, MAXCMP);
 
 const BRANDS = [...new Set(DATA.map(p => p.brand))].sort();
 if (st.cat && !DATA.some(p => (p.category || 'phone') === st.cat)) st.cat = '';
-st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id));   // drop compare entries for products that are gone
 const byId = id => DATA.find(p => p.id === id);
 
 /* ================= format ================= */
@@ -320,6 +318,10 @@ function paintChrome() {
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
 function paintTray() {
+  // opacity only, so it fades rather than blinks and survives the reduced-motion rule
+  const lock = st.cmp.length ? catOf(byId(st.cmp[0])) : '';
+  $$('[data-cat][data-cmp]').forEach(b =>
+    b.classList.toggle('off', !!lock && b.dataset.cat !== lock));
   const tray = $('#tray');
   if (!st.cmp.length) { tray.hidden = true; document.body.style.paddingBottom = ''; return; }
   tray.hidden = false;
@@ -346,10 +348,16 @@ function trayMsg(text) {
   clearTimeout(trayMsgT); trayMsgT = setTimeout(() => el.classList.remove('on'), 3200);
   setTimeout(() => { const el2 = $('#tray'); if (el2) document.body.style.paddingBottom = el2.offsetHeight + 'px'; }, 3450);
 }
+const catOf = p => (p.category || 'phone');
 function toggleCmp(id) {
   const i = st.cmp.indexOf(id);
   if (i >= 0) st.cmp.splice(i, 1);
   else if (st.cmp.length >= MAXCMP) { trayMsg(t('compare.max_reached')); return false; }
+  // A laptop beside a pair of earbuds compares nothing - every row of the table is blank on one
+  // side. The first pick sets the type and the rest of the grid dims to match.
+  else if (st.cmp.length && catOf(byId(st.cmp[0])) !== catOf(byId(id))) {
+    trayMsg(t('compare.same_category')); return false;
+  }
   else st.cmp.push(id);
   save(); paintTray();
   const on = st.cmp.includes(id), nm = fullName(byId(id));
@@ -484,7 +492,7 @@ function card(p) {
   return `<article class="pcard">
     <div class="pshot"${cycShots(p.id).length > 1 ? ` data-cyc="${esc(p.id)}"` : ''}>
       ${isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
-      <button class="fav" data-cmp="${esc(p.id)}" aria-pressed="${st.cmp.includes(p.id)}"
+      <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
       <img class="on" src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
@@ -730,8 +738,10 @@ const CYC_MIN = 4500, CYC_SPREAD = 4000;
 const cycDue = () => performance.now() + CYC_MIN + Math.random() * CYC_SPREAD;
 setInterval(() => {
   if (document.hidden) return;
+  const cards = $$('[data-cyc]');
+  if (!cards.length) return;          // compare, offers, privacy: nothing to cycle, read no layout
   const now = performance.now();
-  for (const el of $$('[data-cyc]')) {
+  for (const el of cards) {
     const r = el.getBoundingClientRect();
     if (r.bottom < 0 || r.top > innerHeight) continue;
     // first sight of a card: give it a random moment rather than the next tick
@@ -1075,15 +1085,19 @@ function compareView() {
       if (vals.every(v => v === '—')) continue;
       const same = vals.every(v => v === vals[0]);
       same ? nSame++ : nDiff++;
-      const cls = same ? 'row-same' : 'row-diff';
+      const cls = same ? 'row-same' : '';
       let bi = -1;
       if (num && dir && n > 1) {
         const nv = ps.map(p => { try { return num(p); } catch (e) { return null; } });
         const ok = nv.filter(v => typeof v === 'number' && isFinite(v));
         if (ok.length > 1 && new Set(ok).size > 1) bi = nv.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok));
       }
-      rows += `<div class="k ${cls}">${esc(t(k))}</div>` +
-        vals.map((v, i) => `<div class="c ${cls}${i === bi ? ' best' : ''}">${esc(v)}</div>`).join('');
+      // Only the value that is actually WORSE is marked. A row where the values merely differ
+      // without one being better - iOS against Android, one material against another - has no
+      // loser, so both sides read as fine and nothing turns red.
+      const mark = i => same || vals[i] === '—' ? '' : bi < 0 ? ' best' : vals[i] === vals[bi] ? ' best' : ' worse';
+      rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
+        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('');
     }
   }
   return `<div class="shell">
@@ -1155,6 +1169,7 @@ function render(keepScroll) {
   const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact'].includes(h) && !h.startsWith('/offers/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
+  if (home) heroTick(); else clearTimeout(heroT);   // no slides off the front page, no timer
   if (restoreY !== null) window.scrollTo(0, restoreY);
 }
 
@@ -1165,6 +1180,13 @@ document.addEventListener('click', e => {
     e.preventDefault();
     document.getElementById(anchor.getAttribute('href').slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     return;
+  }
+  // The whole card opens the product. The chevron in its corner had always been decoration
+  // (aria-hidden), so it looked like a button and did nothing when clicked.
+  const card = e.target.closest('.pcard');
+  if (card && !e.target.closest('a,button')) {
+    const link = card.querySelector('h3 a[href^="#/p/"]');
+    if (link) { location.hash = link.getAttribute('href'); return; }
   }
   const dot = e.target.closest('[data-hero]');
   if (dot) { heroGo(+dot.dataset.hero); heroTick(); return; }

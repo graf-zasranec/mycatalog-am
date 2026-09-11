@@ -10,7 +10,7 @@
   --brand:#9E2B25; --brand-ink:#FFFFFF; --brand-soft:#F6E4E1; --brand-2:#7E1F1B;
   --apricot:#B8443C; --apricot-soft:#F7E5E3;
   --plum:#3E6B8A; --plum-soft:#E7EEF3;
-  --good:#2F7A57; --good-soft:#E4F0EA;
+  --good:#2F7A57; --good-soft:#E4F0EA; --bad:#C0392B;
   --hot:#161C28; --hot-soft:#EFE9DF;
   /* masthead shares the page surface: nav, hero and catalogue are one field */
   --nav:transparent; --nav-ink:var(--text); --nav-muted:var(--muted);
@@ -33,7 +33,7 @@
     --brand:#E4574F; --brand-ink:#12151D; --brand-soft:#3A1E1C; --brand-2:#F0726A;
     --apricot:#D9736B; --apricot-soft:#3A2220;
     --plum:#8FB6CE; --plum-soft:#1E2836;
-    --good:#5FC79A; --good-soft:#16301F;
+    --good:#5FC79A; --good-soft:#16301F; --bad:#F08076;
     --hot:#F2EEE7; --hot-soft:#282D3B;
     --nav:transparent; --nav-ink:var(--text); --nav-muted:var(--muted);
     --shadow-s:0 1px 2px rgba(0,0,0,.4);
@@ -48,7 +48,7 @@
     --brand:#E4574F; --brand-ink:#12151D; --brand-soft:#3A1E1C; --brand-2:#F0726A;
     --apricot:#D9736B; --apricot-soft:#3A2220;
     --plum:#8FB6CE; --plum-soft:#1E2836;
-    --good:#5FC79A; --good-soft:#16301F;
+    --good:#5FC79A; --good-soft:#16301F; --bad:#F08076;
     --hot:#F2EEE7; --hot-soft:#282D3B;
     --nav:transparent; --nav-ink:var(--text); --nav-muted:var(--muted);
     --shadow-s:0 1px 2px rgba(0,0,0,.4);
@@ -312,6 +312,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .fav:hover svg{stroke:var(--brand)}
 .fav[aria-pressed="true"]{background:var(--brand);border-color:var(--brand)}
 .fav[aria-pressed="true"] svg{stroke:var(--brand-ink)}
+/* a card that cannot join the current comparison fades back rather than disappearing */
+.fav.off{opacity:.25;transition:opacity .35s ease}
+.fav{transition:opacity .35s ease}
 .badge{position:absolute;top:10px;left:10px;height:22px;padding:0 10px;border-radius:var(--pill);background:var(--text);
   color:var(--bg);font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;display:inline-flex;align-items:center;z-index:2;letter-spacing:.01em}
 .pbody{padding:12px 4px 2px;display:flex;flex-direction:column;flex:1}
@@ -465,6 +468,8 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .ctable .c:last-child{border-right:0}
 .ctable .c.best{color:var(--good);font-weight:800}
 .ctable .c.best::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good);margin-right:7px;flex:none}
+.ctable .c.worse{color:var(--bad);font-weight:700}
+.pcard{cursor:pointer}
 @media (max-width:760px){
   .chead,.ctable,.cphotos{grid-template-columns:repeat(var(--n),1fr)}
   .ctable .k{grid-column:1/-1;justify-content:flex-start;text-align:left;border-right:0;border-bottom:0;
@@ -570,7 +575,7 @@ a.store:hover .nm{color:var(--brand)}
 
 
 /* ---- compare: the differences are the whole point, so make them read first ---- */
-.ctable .row-diff{background:color-mix(in oklab,var(--brand) 7%,transparent)}
+/* the row is no longer tinted end to end - only the losing VALUE is marked */
 .ctable .k.row-diff{color:var(--text);font-weight:700}
 .ctable .k.row-diff::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand);
   margin-left:8px;flex:none}

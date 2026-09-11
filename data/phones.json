@@ -6973,8 +6973,8 @@
   ],
   "tier": "flagship",
   "released": "2020-11",
-  "priceAmd": 354500,
-  "priceAmdMax": 354500,
+  "priceAmd": 305000,
+  "priceAmdMax": 479000,
   "popularity": 53,
   "accent": "#2A2D33",
   "display": {},
@@ -6990,7 +6990,12 @@
    {
     "ram": 16,
     "storage": 1024,
-    "priceAmd": 354500
+    "priceAmd": 305000
+   },
+   {
+    "ram": 16,
+    "storage": 2048,
+    "priceAmd": 479000
    }
   ],
   "battery": {},
@@ -7005,13 +7010,239 @@
   "cardSlot": false,
   "os": "Xbox system software",
   "colors": [
-   "Black"
+   "Black",
+   "White"
   ],
   "summaryEn": "Microsoft’s full-size console: 4K at 120 fps, a 1 TB SSD and a disc drive.",
   "unsure": [
    "connectivity.wifi",
    "connectivity.bluetooth",
    "body.materials",
+   "popularity"
+  ]
+ },
+ {
+  "id": "xbox-series-s",
+  "category": "console",
+  "brand": "Microsoft",
+  "name": "Xbox Series S",
+  "aliases": [
+   "Microsoft Xbox Series S",
+   "Xbox Series S 512GB",
+   "Xbox Series S 1TB"
+  ],
+  "tier": "midrange",
+  "released": "2020-11",
+  "priceAmd": 199000,
+  "priceAmdMax": 215000,
+  "popularity": 49,
+  "accent": "#D9DBDE",
+  "display": {},
+  "chipset": {
+   "name": "AMD Zen 2 custom",
+   "cpu": "8-core"
+  },
+  "graphics": {
+   "name": "AMD RDNA 2, 4 teraflops",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 10,
+    "storage": 512,
+    "priceAmd": 199000
+   },
+   {
+    "ram": 10,
+    "storage": 1024,
+    "priceAmd": 215000
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Plastic box with a round top vent"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.0",
+   "ports": "HDMI 2.1, 3x USB-A, Gigabit Ethernet, storage expansion"
+  },
+  "cardSlot": false,
+  "os": "Xbox system software",
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "summaryEn": "The small all-digital Xbox: no disc drive, 1440p aimed at 120 fps, half the price of the X.",
+  "unsure": [
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "body.materials",
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ps5-pro",
+  "category": "console",
+  "brand": "Sony",
+  "name": "PlayStation 5 Pro",
+  "aliases": [
+   "Sony PS5 Pro",
+   "PS5 Pro",
+   "PlayStation 5 Pro",
+   "Playstation 5 Pro"
+  ],
+  "tier": "flagship",
+  "released": "2024-11",
+  "priceAmd": 529000,
+  "priceAmdMax": 529000,
+  "popularity": 57,
+  "accent": "#E4E6EA",
+  "display": {},
+  "chipset": {
+   "name": "AMD Zen 2 custom",
+   "cpu": "8-core"
+  },
+  "graphics": {
+   "name": "AMD RDNA custom, 16.7 teraflops with PSSR upscaling",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 2048,
+    "priceAmd": 529000
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Plastic tower with removable side panels"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.1",
+   "ports": "HDMI 2.1, 2x USB-C, 2x USB-A, Gigabit Ethernet"
+  },
+  "cardSlot": false,
+  "os": "PlayStation 5 system software",
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "The fastest PlayStation: a 2 TB SSD, a much larger GPU and machine-learning upscaling. Disc drive sold separately.",
+  "unsure": [
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "body.materials",
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ps5-slim",
+  "category": "console",
+  "brand": "Sony",
+  "name": "PlayStation 5 Slim",
+  "aliases": [
+   "Sony PS5 Slim",
+   "PS5 Slim",
+   "PlayStation 5 Slim",
+   "Playstation5 Slim",
+   "PlayStation5 Slim Digital"
+  ],
+  "tier": "upper-mid",
+  "released": "2023-11",
+  "priceAmd": 309000,
+  "priceAmdMax": 324900,
+  "popularity": 55,
+  "accent": "#E4E6EA",
+  "display": {},
+  "chipset": {
+   "name": "AMD Zen 2 custom",
+   "cpu": "8-core"
+  },
+  "graphics": {
+   "name": "AMD RDNA 2, 10.3 teraflops",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 309000
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Plastic tower with removable side panels"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.1",
+   "ports": "HDMI 2.1, 2x USB-C, 2x USB-A, Gigabit Ethernet"
+  },
+  "cardSlot": false,
+  "os": "PlayStation 5 system software",
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "The current PlayStation 5, smaller than the launch model, in disc and all-digital versions.",
+  "unsure": [
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "body.materials",
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-playstation-portal",
+  "category": "console",
+  "brand": "Sony",
+  "name": "PlayStation Portal",
+  "aliases": [
+   "Sony PlayStation Portal",
+   "PS5 Portal",
+   "PlayStation Portal Remote Player"
+  ],
+  "tier": "midrange",
+  "released": "2023-11",
+  "priceAmd": 125000,
+  "priceAmdMax": 125000,
+  "popularity": 44,
+  "accent": "#E4E6EA",
+  "display": {
+   "size": 8,
+   "type": "LCD",
+   "resolution": "1920x1080",
+   "refresh": 60
+  },
+  "chipset": {},
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 125000
+   }
+  ],
+  "battery": {
+   "capacity": 4370
+  },
+  "body": {
+   "materials": "Plastic, a DualSense split around the screen",
+   "weight": 529
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 5",
+   "ports": "USB-C, 3.5 mm jack"
+  },
+  "cardSlot": false,
+  "os": "PlayStation Portal system software",
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "A DualSense with a screen in the middle: it streams your own PS5 over Wi-Fi and plays nothing on its own.",
+  "unsure": [
+   "battery.capacity",
+   "body.weight",
+   "connectivity.wifi",
    "popularity"
   ]
  }

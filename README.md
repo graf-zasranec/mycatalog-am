@@ -1,7 +1,7 @@
 # MyCatalog
 
 Trilingual (hy / ru / en) smartphone catalogue for the Armenian market.
-22 handsets, prices in AMD, filters, product pages and side-by-side comparison.
+111 products, prices in AMD, filters, product pages and side-by-side comparison.
 
 ## Put it online
 

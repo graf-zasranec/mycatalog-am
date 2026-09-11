@@ -152,7 +152,12 @@ function capacitiesOf(text) {
     .map(m => +m[1] * (/tb|տբ/.test(m[2]) ? 1024 : 1));
 }
 // titles like "SM-S938B/DS 12GB 256GB" list RAM first, then storage -> larger is storage
-const storageOf = text => { const c = capacitiesOf(text); return c.length ? Math.max(...c) : null; };
+// A title that names ONE capacity is naming memory as often as storage: AllSell lists the
+// MacBook Air as "... M5 16GB" and that 16 was being published as a 16 GB SSD, which does not
+// exist. Nothing in this catalogue ships under 64 GB of storage, so a lone figure below that is
+// the RAM and there is no storage figure to report.
+const storageOf = text => { const c = capacitiesOf(text); if (!c.length) return null;
+  const m = Math.max(...c); return m >= 64 ? m : null; };
 // ...and the smaller one is RAM, but only when the title really lists both
 const ramOf = text => { const c = capacitiesOf(text); return c.length >= 2 ? Math.min(...c) : null; };
 // colour, matched against the colours we already know this phone ships in
@@ -264,7 +269,10 @@ if (process.argv[2] === '--selftest') {
   const st = [['iphone 17 pro 512 gb', 512], ['2tb', 2048], ['256gb', 256], ['1 ՏԲ', 1024], ['128 ԳԲ', 128],
     ['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 256],   // RAM listed first, storage is the larger
     ['ONEPLUS 13 16GB 512GB (Arctic Down)', 512],
-    ['Apple iPhone 17', null]];
+    ['Apple iPhone 17', null],
+    ['MacBook Air 13 M5 16GB', null],            // 16 is the memory, there is no 16 GB SSD
+    ['MacBook Air 13-inch M5 16GB/512GB', 512],
+    ['Xbox Series S 512 GB', 512]];
   const ramCases = [['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 12], ['XIAOMI POCO X7 Pro 5G 8GB 256GB (Black)', 8],
     ['iPhone 17 Pro, 256 ԳԲ, Silver', null]];
   for (const [txt, want] of ramCases) {
