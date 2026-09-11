@@ -4,6 +4,7 @@
 //   artifact.html        head-less fragment, images inlined        <- for publishing as an Artifact
 // Run: node build.mjs
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const STR = { hy: {}, ru: {}, en: {} };
@@ -57,11 +58,23 @@ function cutMap(inline) {
   console.log('terms self-test: ' + cases.length + ' checks pass');
 }
 
-const HEAD_OPEN = `<!doctype html>
+const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
+const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
+
+// GitHub Pages serves no custom headers, so the policy has to travel in the document. Both
+// inline scripts are named by HASH rather than allowed wholesale with 'unsafe-inline': the page
+// then cannot run a script this build did not produce, which is the point of having a CSP at all
+// on a page that renders scraped shop names. Styles still need 'unsafe-inline' - the colour
+// swatches carry a style attribute - and img-src keeps data: for the embedded build.
+// frame-ancestors is NOT here: a meta element cannot deliver it and the browser logs an error
+// on every load. Clickjacking cover would need a real header, which GitHub Pages does not serve.
+const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<script>try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}<\/script>
+<script>${THEME_JS}<\/script>
 `;
 const HEAD_CLOSE = `</head><body>
 `;
@@ -86,15 +99,17 @@ function build({ inline, standalone }) {
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
   const shell = rd('_shell.html');
-  const script = '\n<script>\n'
+  // the script BODY is hashed for the CSP, so it is built once and wrapped separately
+  const appJs = '\n'
     + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\nconst VERD=${JSON.stringify(VERD)};\n`
     + `const PRICES=${JSON.stringify(PRICES)};\n`
     + `const HISTORY=${JSON.stringify(HISTORY)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
-    + imgdata + rd('_app.js') + '\n<\/script>\n';
+    + imgdata + rd('_app.js') + '\n';
+  const script = '\n<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);
-  return HEAD_OPEN + head + HEAD_CLOSE + body + script + '\n</body></html>\n';
+  return HEAD_OPEN(appJs) + head + HEAD_CLOSE + body + script + '\n</body></html>\n';
 }
 
 fs.writeFileSync('index.html', build({ inline: false, standalone: true }));

@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-KQ3nLVhg1QgQTISjMP01uqweGoXRXNfdI70ht3HAuN8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
 <title>MyCatalog</title>
@@ -1076,7 +1078,11 @@ function toggleCmp(id) {
   else if (st.cmp.length && catOf(byId(st.cmp[0])) !== catOf(byId(id))) {
     trayMsg(t('compare.same_category')); return false;
   }
-  else st.cmp.push(id);
+  else {
+    st.cmp.push(id);
+    // one product compares with nothing, so the jump waits for the second pick
+    if (st.cmp.length === 2) setTimeout(() => { location.hash = '#/compare'; }, 160);
+  }
   save(); paintTray();
   const on = st.cmp.includes(id), nm = fullName(byId(id));
   $$(`[data-cmp="${id}"]`).forEach(b => {
@@ -1576,7 +1582,7 @@ function detailView(p) {
       </div>
       <h1 class="pname">${esc(fullName(p))}</h1>
       <div class="pgrid">
-        <div class="pshotwrap"><img src="${shot}" alt="${esc(fullName(p))}${SEL.color ? ' — ' + esc(SEL.color) : ''}" id="hpShot" fetchpriority="high"></div>
+        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}${SEL.color ? ' — ' + esc(SEL.color) : ''}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
           <p class="lede2">${esc(summary)}</p>
           ${cols.length ? `<div class="og"><label>${esc(t('sec.colors'))} <b id="colName">${esc(tr(SEL.color || '', st.lang))}</b></label>
@@ -2012,13 +2018,19 @@ document.addEventListener('change', e => {
   else st[f] = +el.value;
   refresh();
 });
+let qT;
 document.addEventListener('input', e => {
   const el = e.target;
   if (el.id === 'q') {
     st.q = el.value;
-    // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
-    // query had nowhere to land. Go to the catalogue and let render() draw the results.
-    if ($('#gridbox')) refresh(); else { save(); location.hash = '#/'; }
+    // A keystroke used to rebuild all 111 cards. Coalesce to one repaint per pause - short
+    // enough that it still feels immediate, long enough that typing never redraws mid-word.
+    clearTimeout(qT);
+    qT = setTimeout(() => {
+      // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
+      // query had nowhere to land. Go to the catalogue and let render() draw the results.
+      if ($('#gridbox')) refresh(); else { save(); location.hash = '#/'; }
+    }, 140);
     return;
   }
   if (el.dataset.f === 'pmin' || el.dataset.f === 'pmax') {

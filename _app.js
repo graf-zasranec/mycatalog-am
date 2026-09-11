@@ -358,7 +358,11 @@ function toggleCmp(id) {
   else if (st.cmp.length && catOf(byId(st.cmp[0])) !== catOf(byId(id))) {
     trayMsg(t('compare.same_category')); return false;
   }
-  else st.cmp.push(id);
+  else {
+    st.cmp.push(id);
+    // one product compares with nothing, so the jump waits for the second pick
+    if (st.cmp.length === 2) setTimeout(() => { location.hash = '#/compare'; }, 160);
+  }
   save(); paintTray();
   const on = st.cmp.includes(id), nm = fullName(byId(id));
   $$(`[data-cmp="${id}"]`).forEach(b => {
@@ -858,7 +862,7 @@ function detailView(p) {
       </div>
       <h1 class="pname">${esc(fullName(p))}</h1>
       <div class="pgrid">
-        <div class="pshotwrap"><img src="${shot}" alt="${esc(fullName(p))}${SEL.color ? ' — ' + esc(SEL.color) : ''}" id="hpShot" fetchpriority="high"></div>
+        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}${SEL.color ? ' — ' + esc(SEL.color) : ''}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
           <p class="lede2">${esc(summary)}</p>
           ${cols.length ? `<div class="og"><label>${esc(t('sec.colors'))} <b id="colName">${esc(tr(SEL.color || '', st.lang))}</b></label>
@@ -1294,13 +1298,19 @@ document.addEventListener('change', e => {
   else st[f] = +el.value;
   refresh();
 });
+let qT;
 document.addEventListener('input', e => {
   const el = e.target;
   if (el.id === 'q') {
     st.q = el.value;
-    // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
-    // query had nowhere to land. Go to the catalogue and let render() draw the results.
-    if ($('#gridbox')) refresh(); else { save(); location.hash = '#/'; }
+    // A keystroke used to rebuild all 111 cards. Coalesce to one repaint per pause - short
+    // enough that it still feels immediate, long enough that typing never redraws mid-word.
+    clearTimeout(qT);
+    qT = setTimeout(() => {
+      // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
+      // query had nowhere to land. Go to the catalogue and let render() draw the results.
+      if ($('#gridbox')) refresh(); else { save(); location.hash = '#/'; }
+    }, 140);
     return;
   }
   if (el.dataset.f === 'pmin' || el.dataset.f === 'pmax') {
