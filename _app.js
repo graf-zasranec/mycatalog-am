@@ -316,7 +316,8 @@ function paintChrome() {
   $('#hdrCmpLbl').textContent = t('nav.compare');
   $('#hdrConstructLbl').textContent = t('construct.title');
   $('#hdrCmpN').textContent = st.cmp.length;
-  $('#foot').innerHTML = `<b>MyCatalog</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`;
+  $('#foot').innerHTML = `<b>MyCatalog</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
+    + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
 function paintTray() {
   const tray = $('#tray');
@@ -844,6 +845,15 @@ function detailView(p) {
   </div>`;
 }
 
+// Privacy and contact are the same shape: a heading and a few paragraphs from strings.json.
+function docView(key, paras) {
+  return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
+    <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
+    ${paras.map(p => `<p>${esc(t(key + '.' + p))}</p>`).join('')}
+    ${key === 'contact' ? `<p><a href="mailto:${esc(t('contact.email'))}">${esc(t('contact.email'))}</a></p>` : ''}
+    </article></div>`;
+}
+
 /* ================= construct: the same filters, asked as questions =================
    Every question is derived from the items in the chosen category, so a new category needs
    no code here. A question with only one possible answer is not asked - it is reported as a
@@ -1038,6 +1048,7 @@ function compareView() {
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
+          <span class="t"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></span>
           <b>${esc(fullName(p))}</b></div>`).join('')}
       </div>
       <div class="ctable">${rows}</div>
@@ -1070,6 +1081,8 @@ function render(keepScroll) {
     document.title = x('allOffers') + ' — ' + fullName(byId(mo[1]));
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4']); document.title = t('privacy.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
+  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
   else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — MyCatalog'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
   else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
   else {
@@ -1083,7 +1096,7 @@ function render(keepScroll) {
   }
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && h !== '/construct' && h !== '/compare' && !h.startsWith('/offers/');
+  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact'].includes(h) && !h.startsWith('/offers/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
 }
@@ -1215,5 +1228,16 @@ document.addEventListener('input', e => {
     $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
   }
 });
+// The compare header shows the photos at the top of the table and collapses to the name-only bar
+// once it is actually stuck. CSS has no :stuck, so one passive listener flips a class, and it
+// touches the DOM only when the state changes.
+let cheadStuck = false;
+addEventListener('scroll', () => {
+  const w = $('#cwrap');
+  if (!w) { cheadStuck = false; return; }
+  const stuck = w.getBoundingClientRect().top <= 0;
+  if (stuck !== cheadStuck) { cheadStuck = stuck; w.classList.toggle('stuck', stuck); }
+}, { passive: true });
+
 window.addEventListener('hashchange', () => render(false));
 render();
