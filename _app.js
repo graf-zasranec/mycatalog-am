@@ -486,7 +486,7 @@ function card(p) {
       ${isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
-        <svg viewBox="0 0 24 24"><path d="M4 7h10M4 17h10M17 4v6M20 7h-6M20 17h-6M7 14v6"/></svg></button>
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
       <img src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
     </div>
     <div class="pbody">

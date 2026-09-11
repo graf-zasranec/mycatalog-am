@@ -283,7 +283,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (max-width:520px){.pshot{height:140px;padding:10px}}
 .fav{position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
   background:var(--surface);display:grid;place-items:center;cursor:pointer;z-index:2;box-shadow:var(--shadow-s)}
-.fav svg{width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round}
+.fav svg{width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;transition:transform .15s ease}
+/* already compared: the plus turns into the x that removes it */
+.fav[aria-pressed="true"] svg{transform:rotate(45deg)}
 .fav:hover svg{stroke:var(--brand)}
 .fav[aria-pressed="true"]{background:var(--brand);border-color:var(--brand)}
 .fav[aria-pressed="true"] svg{stroke:var(--brand-ink)}

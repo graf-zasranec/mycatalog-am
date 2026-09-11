@@ -288,7 +288,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (max-width:520px){.pshot{height:140px;padding:10px}}
 .fav{position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
   background:var(--surface);display:grid;place-items:center;cursor:pointer;z-index:2;box-shadow:var(--shadow-s)}
-.fav svg{width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round}
+.fav svg{width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;transition:transform .15s ease}
+/* already compared: the plus turns into the x that removes it */
+.fav[aria-pressed="true"] svg{transform:rotate(45deg)}
 .fav:hover svg{stroke:var(--brand)}
 .fav[aria-pressed="true"]{background:var(--brand);border-color:var(--brand)}
 .fav[aria-pressed="true"] svg{stroke:var(--brand-ink)}
@@ -1159,7 +1161,7 @@ function card(p) {
       ${isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
-        <svg viewBox="0 0 24 24"><path d="M4 7h10M4 17h10M17 4v6M20 7h-6M20 17h-6M7 14v6"/></svg></button>
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
       <img src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
     </div>
     <div class="pbody">
