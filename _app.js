@@ -499,7 +499,7 @@ function card(p) {
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
       <img class="on" src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
-      ${cycShots(p.id).length > 1 ? `<img alt="" aria-hidden="true" loading="lazy" decoding="async">` : ''}
+      ${cycShots(p.id).length > 1 ? `<img alt="" aria-hidden="true" decoding="async" src="${BLANK}">` : ''}
     </div>
     <div class="pbody">
       <span class="eyebrow">${esc(p.brand)}</span>
@@ -734,6 +734,10 @@ function swatch(name) {
 const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
 const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
 // 'main' is a copy of one of the colours under a different filename, so it would show twice
+// The second shot of a crossfading card starts empty and is filled on the first swap. An <img>
+// with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
+// them on the front page. A 1x1 transparent GIF is a valid, cached, 68-byte placeholder.
+const BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 const cycShots = id => [...new Set(Object.entries(CIMG[id] || {}).filter(([k]) => k !== 'main').map(([, v]) => v))];
 
 // Cards with more than one colour photo walk through them. One timer for the whole grid, and a
