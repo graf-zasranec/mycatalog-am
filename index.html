@@ -137,11 +137,12 @@ button,input,select,textarea{font:inherit;color:inherit}
   position:relative;z-index:2;max-width:13ch}
 .cv-h em{font-style:normal;color:var(--brand)}
 .cv-m{position:relative;z-index:1;display:grid;place-items:end center;margin-bottom:-8px}
-.cv-m img{grid-area:1/1;max-height:400px;width:auto;filter:drop-shadow(0 26px 44px rgba(22,28,40,.24))}
-/* several hero shots share one grid cell and take 4s each; a CSS animation means no JS timer */
-.cv-m img:not(:only-child){opacity:0;animation:heroCycle 20s infinite}   /* delay is inline, one per image */
-@keyframes heroCycle{0%{opacity:0}3%,17%{opacity:1}20%,100%{opacity:0}}
-@media (prefers-reduced-motion:reduce){.cv-m img:not(:only-child){animation:none;opacity:0}.cv-m img:first-child{opacity:1}}
+/* All hero shots share one grid cell; a timer moves the .on class and opacity does the rest.
+   Under reduced motion the global rule drops the transition, so the picture cuts instead of
+   fading - it still changes, which is the part that carries information. */
+.cv-m img{grid-area:1/1;max-height:400px;width:auto;filter:drop-shadow(0 26px 44px rgba(22,28,40,.24));
+  opacity:0;transition:opacity .5s ease}
+.cv-m img.on,.cv-m img:only-child{opacity:1}
 .cv-sub{grid-column:1;color:var(--body);font-size:1.03rem;max-width:44ch;margin-top:20px;position:relative;z-index:2}
 .cv-acts{grid-column:1;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative;z-index:2}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;
@@ -1211,8 +1212,20 @@ function biggestSavings(n = 3) {
 
 // The hero used to be one hardcoded iPhone. Five popular phones that actually have a photo,
 // crossfading; the rotation is a CSS animation, so there is no timer to cancel on route change.
-const heroPicks = () => DATA.filter(p => (p.category || 'phone') === 'phone' && IMG(p.id))
-  .sort((a, b) => b.popularity - a.popularity).slice(0, 5);
+// Popular phones that have a photo, but never two of the same accent colour in a row - the point
+// of the carousel is that the colour keeps changing.
+const heroPicks = () => {
+  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && IMG(p.id))
+    .sort((a, b) => b.popularity - a.popularity);
+  const out = [], used = new Set();
+  for (const p of pool) {
+    const c = (p.accent || '').toLowerCase();
+    if (used.has(c)) continue;
+    used.add(c); out.push(p);
+    if (out.length === 6) break;
+  }
+  return out.length > 1 ? out : pool.slice(0, 6);
+};
 function mastHero() {
   const picks = heroPicks();
   const f = picks[0] || byId('apple-iphone-17') || DATA[0];
@@ -1221,7 +1234,7 @@ function mastHero() {
   return `<div class="cv-eyebrow">${esc(x('priceMatters'))}</div>
     <div class="cv">
       <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
-      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<img src="${IMG(p.id)}" alt="${esc(fullName(p))}" style="animation-delay:${i * 4}s"${i ? ' loading="lazy"' : ' fetchpriority="high"'}>`).join('')}</div>
+      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<img src="${IMG(p.id)}" alt="${esc(fullName(p))}"${i ? '' : ' class="on" fetchpriority="high"'}>`).join('')}</div>
       <p class="cv-sub">${esc(x('heroSub'))}</p>
       <div class="cv-acts">
         <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
@@ -1905,6 +1918,18 @@ document.addEventListener('input', e => {
     $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
   }
 });
+// Hero carousel. A timer rather than a CSS animation: the global reduced-motion rule kills
+// animations, which froze the hero on one image. The swap still happens for everyone, and the
+// crossfade is what reduced motion drops.
+setInterval(() => {
+  if (document.hidden) return;
+  const im = $$('.cv-m img');
+  if (im.length < 2) return;
+  const i = im.findIndex(e => e.classList.contains('on'));
+  im[i < 0 ? 0 : i].classList.remove('on');
+  im[(i + 1) % im.length].classList.add('on');
+}, 1000);
+
 window.addEventListener('hashchange', () => render(false));
 render();
 

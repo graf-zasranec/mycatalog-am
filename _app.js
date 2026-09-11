@@ -536,8 +536,20 @@ function biggestSavings(n = 3) {
 
 // The hero used to be one hardcoded iPhone. Five popular phones that actually have a photo,
 // crossfading; the rotation is a CSS animation, so there is no timer to cancel on route change.
-const heroPicks = () => DATA.filter(p => (p.category || 'phone') === 'phone' && IMG(p.id))
-  .sort((a, b) => b.popularity - a.popularity).slice(0, 5);
+// Popular phones that have a photo, but never two of the same accent colour in a row - the point
+// of the carousel is that the colour keeps changing.
+const heroPicks = () => {
+  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && IMG(p.id))
+    .sort((a, b) => b.popularity - a.popularity);
+  const out = [], used = new Set();
+  for (const p of pool) {
+    const c = (p.accent || '').toLowerCase();
+    if (used.has(c)) continue;
+    used.add(c); out.push(p);
+    if (out.length === 6) break;
+  }
+  return out.length > 1 ? out : pool.slice(0, 6);
+};
 function mastHero() {
   const picks = heroPicks();
   const f = picks[0] || byId('apple-iphone-17') || DATA[0];
@@ -546,7 +558,7 @@ function mastHero() {
   return `<div class="cv-eyebrow">${esc(x('priceMatters'))}</div>
     <div class="cv">
       <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
-      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<img src="${IMG(p.id)}" alt="${esc(fullName(p))}" style="animation-delay:${i * 4}s"${i ? ' loading="lazy"' : ' fetchpriority="high"'}>`).join('')}</div>
+      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<img src="${IMG(p.id)}" alt="${esc(fullName(p))}"${i ? '' : ' class="on" fetchpriority="high"'}>`).join('')}</div>
       <p class="cv-sub">${esc(x('heroSub'))}</p>
       <div class="cv-acts">
         <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
@@ -1230,5 +1242,17 @@ document.addEventListener('input', e => {
     $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
   }
 });
+// Hero carousel. A timer rather than a CSS animation: the global reduced-motion rule kills
+// animations, which froze the hero on one image. The swap still happens for everyone, and the
+// crossfade is what reduced motion drops.
+setInterval(() => {
+  if (document.hidden) return;
+  const im = $$('.cv-m img');
+  if (im.length < 2) return;
+  const i = im.findIndex(e => e.classList.contains('on'));
+  im[i < 0 ? 0 : i].classList.remove('on');
+  im[(i + 1) % im.length].classList.add('on');
+}, 1000);
+
 window.addEventListener('hashchange', () => render(false));
 render();
