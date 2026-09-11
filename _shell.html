@@ -467,6 +467,42 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .ctable .c{font-weight:600;justify-content:center;text-align:center;border-right:1px solid var(--line)}
 .ctable .c:last-child{border-right:0}
 .ctable .c.worse{color:var(--bad);font-weight:700}
+
+/* ---- compare: the empty slot and the picker it opens ---- */
+.addslot{width:100%;min-height:84px;border:1.5px dashed var(--line2);border-radius:var(--r-md);
+  background:none;cursor:pointer;display:grid;place-items:center;transition:border-color .2s ease,background .2s ease}
+.addslot:hover{border-color:var(--brand);background:var(--brand-soft)}
+.addslot svg{width:30px;height:30px;stroke:var(--muted);fill:none;stroke-width:1.6;stroke-linecap:round}
+.addslot:hover svg{stroke:var(--brand)}
+.addlbl{color:var(--muted);font-weight:600}
+/* opacity only, so it fades in under the reduced-motion rule instead of being cut */
+.cmodal{position:fixed;inset:0;z-index:60;background:rgba(12,16,24,.55);
+  display:grid;place-items:center;padding:20px;animation:none}
+.cmbox{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
+  width:min(560px,100%);max-height:min(80vh,640px);overflow:auto;padding:22px;position:relative;
+  box-shadow:var(--shadow-m)}
+.cmbox h2{font-size:20px;font-weight:800;letter-spacing:-.03em;margin:0 0 14px}
+.cmx{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:0;
+  background:var(--surface2);color:var(--muted);font-size:19px;cursor:pointer}
+.cmx:hover{background:var(--brand);color:var(--brand-ink)}
+#cmq{width:100%;height:42px;padding:0 14px;border:1px solid var(--line);border-radius:var(--pill);
+  background:var(--bg);color:var(--text);margin-bottom:12px}
+.cmres{display:grid;gap:4px}
+.cmrow{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;
+  width:100%;text-align:left;padding:7px 9px;border:0;border-radius:var(--r-md);
+  background:none;color:inherit;cursor:pointer;transition:background .16s ease}
+.cmrow:hover{background:var(--surface2)}
+.cmrow img{width:44px;height:44px;object-fit:contain}
+.cmrow b{display:block;font-size:0.9375rem;font-weight:700}
+.cmrow i{font-style:normal;font-size:0.8125rem;color:var(--muted)}
+.cmnone{color:var(--muted);font-size:0.875rem;padding:10px 2px}
+.cmnow{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+.cmlbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cmnow .cmrow{cursor:default}
+.cmnow .cmrow:hover{background:none}
+.cmnow .x{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:none;
+  color:var(--muted);cursor:pointer;font-size:17px}
+.cmnow .x:hover{border-color:var(--bad);color:var(--bad)}
 .pcard{cursor:pointer}
 @media (max-width:760px){
   .chead,.ctable,.cphotos{grid-template-columns:repeat(var(--n),1fr)}

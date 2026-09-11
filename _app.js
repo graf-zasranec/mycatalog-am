@@ -360,8 +360,9 @@ function toggleCmp(id) {
   }
   else {
     st.cmp.push(id);
-    // one product compares with nothing, so the jump waits for the second pick
-    if (st.cmp.length === 2) setTimeout(() => { location.hash = '#/compare'; }, 160);
+    // the plus reads as "compare this", so it goes there - the compare page carries its own
+    // add slot, which is where the second and third picks come from
+    if (location.hash !== '#/compare') setTimeout(() => { location.hash = '#/compare'; }, 120);
   }
   save(); paintTray();
   const on = st.cmp.includes(id), nm = fullName(byId(id));
@@ -1079,7 +1080,8 @@ function compareView() {
   if (!ps.length) return `<div class="shell"><div class="empty" style="margin-top:40px">
     <b>${esc(t('compare.empty'))}</b><p style="margin-bottom:18px">${esc(x('emptyS'))}</p>
     <a class="btn" href="#/">${esc(t('compare.add_phone'))}</a></div></div>`;
-  const n = ps.length, cols = `200px repeat(${n},minmax(0,1fr))`;
+  const n = ps.length, slot = n < MAXCMP ? 1 : 0;
+  const cols = `200px repeat(${n + slot},minmax(0,1fr))`;
 
   let rows = '', nDiff = 0, nSame = 0;
   for (const [g, defs] of GROUPS) {
@@ -1101,7 +1103,8 @@ function compareView() {
       // value that is simply missing.
       const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
       rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
-        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('');
+        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
+        (slot ? `<div class="c ${cls}"></div>` : '');
     }
   }
   return `<div class="shell">
@@ -1115,15 +1118,56 @@ function compareView() {
       <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
-        ${ps.map(p => `<div class="c"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+        ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+        ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(t('detail.add_compare'))}">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
           <b>${esc(fullName(p))}</b></div>`).join('')}
+        ${slot ? `<div class="ccol"><b class="addlbl">${esc(t('detail.add_compare'))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
+    </div>
+    <div class="cmodal" id="cmodal" hidden>
+      <div class="cmbox" role="dialog" aria-modal="true" aria-label="${esc(t('detail.add_compare'))}">
+        <button class="cmx" data-act="closeadd" aria-label="${esc(t('compare.clear'))}">×</button>
+        <h2>${esc(t('detail.add_compare'))}</h2>
+        <input id="cmq" type="search" autocomplete="off" placeholder="${esc(t('nav.search_placeholder'))}"
+          aria-label="${esc(t('nav.search_placeholder'))}">
+        <div id="cmres" class="cmres"></div>
+        <div class="cmnow"><span class="cmlbl">${esc(t('compare.in_list'))}</span>
+          ${ps.map(p => `<div class="cmrow">
+            <img src="${esc(IMG(p.id))}" alt="" loading="lazy">
+            <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
+            <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
+          </div>`).join('')}
+        </div>
+      </div>
     </div></div>`;
+}
+
+// The picker only offers what can actually join this table: same product type, not already in
+// it. A query is optional - with the field empty it shows the most popular candidates.
+function cmpCandidates(q) {
+  const cur = st.cmp.map(byId).filter(Boolean);
+  const cat = cur.length ? catOf(cur[0]) : null;
+  // same haystack the catalogue search uses, so typing here behaves like typing up there
+  const n = (q || '').trim().toLowerCase();
+  return DATA
+    .filter(p => !st.cmp.includes(p.id) && (!cat || catOf(p) === cat))
+    .filter(p => !n || (p.brand + ' ' + fullName(p)).toLowerCase().includes(n))
+    .sort((a, b) => b.popularity - a.popularity)
+    .slice(0, 8);
+}
+function paintCmpRes() {
+  const box = $('#cmres'); if (!box) return;
+  const list = cmpCandidates($('#cmq') ? $('#cmq').value : '');
+  box.innerHTML = list.length ? list.map(p => `<button class="cmrow" data-add="${esc(p.id)}">
+      <img src="${esc(IMG(p.id))}" alt="" loading="lazy">
+      <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
+    </button>`).join('') : `<p class="cmnone">${esc(x('emptyT'))}</p>`;
 }
 
 /* ================= router ================= */
@@ -1192,6 +1236,15 @@ document.addEventListener('click', e => {
     const link = card.querySelector('h3 a[href^="#/p/"]');
     if (link) { location.hash = link.getAttribute('href'); return; }
   }
+  const act = e.target.closest('[data-act]');
+  if (act && act.dataset.act === 'openadd') {
+    const m = $('#cmodal'); if (m) { m.hidden = false; paintCmpRes(); $('#cmq')?.focus(); }
+    return;
+  }
+  if (act && act.dataset.act === 'closeadd') { const m = $('#cmodal'); if (m) m.hidden = true; return; }
+  if (e.target.id === 'cmodal') { e.target.hidden = true; return; }   // click the backdrop to close
+  const add = e.target.closest('[data-add]');
+  if (add) { if (toggleCmp(add.dataset.add)) render(true); return; }
   const dot = e.target.closest('[data-hero]');
   if (dot) { heroGo(+dot.dataset.hero); heroTick(); return; }
   const L = e.target.closest('[data-lang]');
@@ -1229,8 +1282,8 @@ document.addEventListener('click', e => {
     if (location.hash === '#/construct') { save(); $('#main').innerHTML = constructView(); return; }
     refresh(); return;
   }
-  const act = e.target.closest('[data-act="clearcmp"]');
-  if (act) { st.cmp = []; save(); paintTray(); render(); return; }
+  const clr = e.target.closest('[data-act="clearcmp"]');
+  if (clr) { st.cmp = []; save(); paintTray(); render(); return; }
   const fav = e.target.closest('[data-cmp]');
   if (fav) {
     e.preventDefault();
@@ -1313,6 +1366,7 @@ document.addEventListener('input', e => {
     }, 140);
     return;
   }
+  if (el.id === 'cmq') { paintCmpRes(); return; }
   if (el.dataset.f === 'pmin' || el.dataset.f === 'pmax') {
     const a = +$('[data-f="pmin"]').value, b = +$('[data-f="pmax"]').value;
     $('[data-rng="min"]').textContent = money(Math.min(a, b)) + ' ֏';
@@ -1349,6 +1403,10 @@ heroTick();
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 const scrollMem = new Map();
 const remembers = h => h === '/' || h.startsWith('/c/');
+addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  const m = $('#cmodal'); if (m && !m.hidden) { m.hidden = true; }
+});
 window.addEventListener('hashchange', e => {
   const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
   if (remembers(from)) scrollMem.set(from, window.scrollY);
