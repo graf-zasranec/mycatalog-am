@@ -105,7 +105,11 @@ function cutout(img){
   for(let x=0;x<W;x++){ if(colFull[x]){ if(run<0)run=x; } else if(run>=0){ segs.push([run,x-1]); run=-1; } }
   if(run>=0)segs.push([run,W-1]);
   let keepX0=0,keepX1=W-1;
-  if(segs.length>=3){
+  // >=2, not >=3: the Galaxy Ultras ship with the S Pen lying beside the phone, which is one
+  // extra narrow segment. Keeping it made the bounding box wider than the phone, so the phone
+  // sat off-centre in its frame. Two panels of a real front/back shot are a similar width and
+  // both survive the 45% test.
+  if(segs.length>=2){
     const widest=Math.max.apply(null,segs.map(g=>g[1]-g[0]+1));
     const keep=segs.filter(g=>(g[1]-g[0]+1)>=widest*0.45);
     if(keep.length){keepX0=keep[0][0];keepX1=keep[keep.length-1][1];}

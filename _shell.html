@@ -132,12 +132,19 @@ button,input,select,textarea{font:inherit;color:inherit}
   position:relative;z-index:2;max-width:13ch}
 .cv-h em{font-style:normal;color:var(--brand)}
 .cv-m{position:relative;z-index:1;display:grid;place-items:end center;margin-bottom:-8px}
-/* All hero shots share one grid cell; a timer moves the .on class and opacity does the rest.
+/* All hero slides share one grid cell; a timer moves the .on class and opacity does the rest.
    Under reduced motion the global rule drops the transition, so the picture cuts instead of
    fading - it still changes, which is the part that carries information. */
-.cv-m img{grid-area:1/1;max-height:400px;width:auto;filter:drop-shadow(0 26px 44px rgba(22,28,40,.24));
-  opacity:0;transition:opacity .5s ease}
-.cv-m img.on,.cv-m img:only-child{opacity:1}
+.cv-s{grid-area:1/1;display:grid;place-items:end center;opacity:0;pointer-events:none;
+  transition:opacity .8s ease}
+.cv-s.on{opacity:1;pointer-events:auto}
+.cv-m img{max-height:400px;width:auto;filter:drop-shadow(0 26px 44px rgba(22,28,40,.24))}
+.cv-dots{display:flex;justify-content:center;gap:2px;margin-top:10px}
+/* 8px dot, 24px target: the padding is the hit area, background-clip keeps the dot small */
+.cv-dots button{width:24px;height:24px;padding:8px;border:0;border-radius:50%;cursor:pointer;
+  background:var(--line2);background-clip:content-box;transition:background .2s ease,transform .2s ease}
+.cv-dots button:hover{background:var(--muted)}
+.cv-dots button.on{background:var(--brand);transform:scale(1.35)}
 .cv-sub{grid-column:1;color:var(--body);font-size:1.03rem;max-width:44ch;margin-top:20px;position:relative;z-index:2}
 .cv-acts{grid-column:1;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative;z-index:2}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;

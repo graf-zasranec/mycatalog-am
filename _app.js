@@ -558,7 +558,9 @@ function mastHero() {
   return `<div class="cv-eyebrow">${esc(x('priceMatters'))}</div>
     <div class="cv">
       <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
-      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<img src="${IMG(p.id)}" alt="${esc(fullName(p))}"${i ? '' : ' class="on" fetchpriority="high"'}>`).join('')}</div>
+      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<a class="cv-s${i ? '' : ' on'}" href="#/p/${esc(p.id)}" tabindex="${i ? -1 : 0}">
+        <img src="${IMG(p.id)}" alt="${esc(fullName(p))}"${i ? '' : ' fetchpriority="high"'}></a>`).join('')}</div>
+      ${(picks.length > 1) ? `<div class="cv-dots">${picks.map((p, i) => `<button data-hero="${i}" class="${i ? '' : 'on'}" aria-label="${esc(fullName(p))}"></button>`).join('')}</div>` : ''}
       <p class="cv-sub">${esc(x('heroSub'))}</p>
       <div class="cv-acts">
         <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
@@ -1123,6 +1125,8 @@ document.addEventListener('click', e => {
     document.getElementById(anchor.getAttribute('href').slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     return;
   }
+  const dot = e.target.closest('[data-hero]');
+  if (dot) { heroGo(+dot.dataset.hero); heroTick(); return; }
   const L = e.target.closest('[data-lang]');
   if (L) { st.lang = L.dataset.lang; save(); render(true); return; }
   if (e.target.closest('#themeBtn')) {
@@ -1245,14 +1249,24 @@ document.addEventListener('input', e => {
 // Hero carousel. A timer rather than a CSS animation: the global reduced-motion rule kills
 // animations, which froze the hero on one image. The swap still happens for everyone, and the
 // crossfade is what reduced motion drops.
-setInterval(() => {
-  if (document.hidden) return;
-  const im = $$('.cv-m img');
-  if (im.length < 2) return;
-  const i = im.findIndex(e => e.classList.contains('on'));
-  im[i < 0 ? 0 : i].classList.remove('on');
-  im[(i + 1) % im.length].classList.add('on');
-}, 1000);
+const HERO_MS = 2000;
+let heroT;
+function heroGo(n) {
+  const sl = $$('.cv-s'), dots = $$('[data-hero]');
+  if (sl.length < 2) return;
+  const i = ((n % sl.length) + sl.length) % sl.length;
+  sl.forEach((e, k) => { e.classList.toggle('on', k === i); e.tabIndex = k === i ? 0 : -1; });
+  dots.forEach((d, k) => d.classList.toggle('on', k === i));
+}
+function heroTick() {
+  clearTimeout(heroT);
+  heroT = setTimeout(() => {
+    const sl = $$('.cv-s');
+    if (sl.length > 1 && !document.hidden) heroGo(sl.findIndex(e => e.classList.contains('on')) + 1);
+    heroTick();
+  }, HERO_MS);
+}
+heroTick();
 
 window.addEventListener('hashchange', () => render(false));
 render();
