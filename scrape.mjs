@@ -686,6 +686,22 @@ const SHOPS = {
     }
   },
 
+  ibolit: {
+    name: 'iBolit', site: 'https://ibolit.mobi', note: 'audio and gadget retailer',
+    async run() {
+      // WooCommerce: the sitemap index names four product sitemaps, and every product page
+      // carries a schema.org Product inside an @graph, which crawlLd already reads.
+      const idx = await get('https://ibolit.mobi/wp-sitemap.xml'); await sleep(DELAY_MS);
+      const maps = [...idx.matchAll(/<loc>([^<]*wp-sitemap-posts-product[^<]*)<\/loc>/g)].map(m => m[1]);
+      const urls = [];
+      for (const m of maps) {
+        const xml = await get(m); await sleep(DELAY_MS);
+        urls.push(...[...xml.matchAll(/<loc>(https:\/\/ibolit\.mobi\/product\/[^<]+)<\/loc>/g)].map(a => a[1]));
+      }
+      return crawlLd(urls);
+    }
+  },
+
   zigzag: {
     name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer',
     // Their WAF answers 403 to any non-browser user agent. Spoofing a browser to get around

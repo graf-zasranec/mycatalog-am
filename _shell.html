@@ -151,10 +151,10 @@ button,input,select,textarea{font:inherit;color:inherit}
    "you are here" at a glance and still never gets taller than 4px. */
 .cv-dots button{width:20px;height:20px;padding:0;border:0;background:none;cursor:pointer;
   display:grid;place-items:center}
-.cv-dots button::before{content:"";width:4px;height:4px;border-radius:999px;background:var(--line2);
+.cv-dots button::before{content:"";width:3px;height:3px;border-radius:999px;background:var(--line2);
   transition:width .3s ease,background .3s ease}
 .cv-dots button:hover::before{background:var(--muted)}
-.cv-dots button.on::before{width:14px;background:var(--brand)}
+.cv-dots button.on::before{width:11px;background:var(--brand)}
 .cv-sub{grid-column:1;color:var(--body);font-size:1.03rem;max-width:44ch;margin-top:20px;position:relative;z-index:2}
 .cv-acts{grid-column:1;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative;z-index:2}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;

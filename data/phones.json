@@ -6637,5 +6637,215 @@
    "priceAmdMax",
    "popularity"
   ]
+ },
+ {
+  "id": "marshall-major-v",
+  "category": "headphones",
+  "brand": "Marshall",
+  "name": "Major V",
+  "tier": "midrange",
+  "released": "2024-05",
+  "priceAmd": 46900,
+  "priceAmdMax": 47900,
+  "popularity": 47,
+  "accent": "#2A2622",
+  "audio": {
+   "type": "On-ear, closed back",
+   "anc": false,
+   "transparency": false
+  },
+  "battery": {},
+  "body": {
+   "materials": "Textured vinyl headband, folding hinges",
+   "weight": 178
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "USB-C and Qi wireless charging, 3.5 mm jack"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 46900
+   }
+  ],
+  "colors": [
+   "Black",
+   "Brown",
+   "Cream"
+  ],
+  "summaryEn": "100+ hours on a charge and wireless charging, in the on-ear shape Marshall has kept for a decade.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "bo-beoplay-h95",
+  "category": "headphones",
+  "brand": "Bang & Olufsen",
+  "name": "Beoplay H95",
+  "tier": "flagship",
+  "released": "2020-09",
+  "priceAmd": 509000,
+  "priceAmdMax": 509000,
+  "popularity": 38,
+  "accent": "#B49A6A",
+  "audio": {
+   "type": "Over-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "materials": "Anodised aluminium, lambskin ear cushions",
+   "weight": 323
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wireless": "USB-C charging, 3.5 mm jack"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 509000
+   }
+  ],
+  "colors": [
+   "Black",
+   "Gold Tone",
+   "Navy",
+   "Chestnut"
+  ],
+  "summaryEn": "Lambskin and machined aluminium, 38 hours with noise cancelling, and a price to match.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "marshall-stanmore-3",
+  "category": "speaker",
+  "brand": "Marshall",
+  "name": "Stanmore III",
+  "tier": "upper-mid",
+  "released": "2022-09",
+  "priceAmd": 159900,
+  "priceAmdMax": 159900,
+  "popularity": 41,
+  "accent": "#2A2622",
+  "audio": {
+   "type": "Mains-powered stereo speaker",
+   "anc": false,
+   "transparency": false
+  },
+  "battery": {},
+  "body": {
+   "materials": "Textured vinyl, metal grille, analogue knobs",
+   "weight": 4250
+  },
+  "connectivity": {
+   "bluetooth": "5.2",
+   "wireless": "Mains powered, RCA and 3.5 mm inputs"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 159900
+   }
+  ],
+  "colors": [
+   "Black",
+   "Cream"
+  ],
+  "summaryEn": "A bookshelf amp that is actually a speaker: three analogue knobs and 50 watts of it.",
+  "unsure": [
+   "body.weight",
+   "colors",
+   "popularity"
+  ]
+ },
+ {
+  "id": "sonos-era-300",
+  "category": "speaker",
+  "brand": "Sonos",
+  "name": "Era 300",
+  "tier": "flagship",
+  "released": "2023-03",
+  "priceAmd": 219900,
+  "priceAmdMax": 219900,
+  "popularity": 42,
+  "accent": "#D8D6D2",
+  "audio": {
+   "type": "Spatial audio smart speaker",
+   "anc": false,
+   "transparency": false
+  },
+  "battery": {},
+  "body": {
+   "materials": "Moulded polycarbonate, hourglass body",
+   "weight": 4470
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wireless": "Mains powered, Wi-Fi 6, AirPlay 2"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 219900
+   }
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "Six drivers pointed up, out and sideways — Sonos built for Dolby Atmos music, not just stereo.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-partybox-1000",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "PartyBox 1000",
+  "tier": "midrange",
+  "released": "2019-09",
+  "priceAmd": 429900,
+  "priceAmdMax": 429900,
+  "popularity": 37,
+  "accent": "#2C2F36",
+  "audio": {
+   "type": "Party speaker with full light show",
+   "anc": false,
+   "transparency": false
+  },
+  "battery": {},
+  "body": {
+   "materials": "Plastic body, metal grille, wheels and a telescopic handle",
+   "weight": 34700
+  },
+  "connectivity": {
+   "bluetooth": "4.2",
+   "wireless": "Mains powered, RCA, guitar and microphone inputs"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 149900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "1100 watts on wheels: a light show, a DJ pad and inputs for a guitar and two microphones.",
+  "unsure": [
+   "connectivity.bluetooth",
+   "popularity"
+  ]
  }
 ]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T09:35:03.963Z",
+ "generated": "2026-09-11T11:22:49.079Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /"
  },
@@ -63,6 +63,12 @@
    "site": "https://redstore.am",
    "note": "electronics retailer",
    "warranty": "https://redstore.am/en/pages/warranty"
+  },
+  "ibolit": {
+   "name": "iBolit",
+   "site": "https://ibolit.mobi",
+   "note": "audio and gadget retailer",
+   "warranty": null
   }
  },
  "offers": {
@@ -148,42 +154,6 @@
    {
     "id": "apple-iphone-17-pro",
     "price": 522900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523) (MG8H4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-256gb-cosmic-orange-a3523-mg8h4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8H4AFA%20(2)-500x500.jpg",
-    "ram": null,
-    "color": "Cosmic Orange",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 522900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 256GB (Deep Blue) (A3523) (MG8J4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-256gb-deep-blue-a3523-mg8j4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8J4AFA%20(1)-500x500.jpg",
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 522900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 256GB (Silver) (A3523) (MG8G4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-256gb-silver-a3523-mg8g4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunis/Smartfon/(MG8G4AFA)%20(8)-500x500.jpg",
-    "ram": null,
-    "color": "Silver",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 522900,
     "storage": null,
     "title": "iPhone 17 Pro",
     "url": "https://shop.ucom.am/am/iphone-17-pro.html",
@@ -219,6 +189,42 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "price": 522900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523) (MG8H4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-256gb-cosmic-orange-a3523-mg8h4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8H4AFA%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 522900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 256GB (Deep Blue) (A3523) (MG8J4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-256gb-deep-blue-a3523-mg8j4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8J4AFA%20(1)-500x500.jpg",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 522900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 256GB (Silver) (A3523) (MG8G4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-256gb-silver-a3523-mg8g4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunis/Smartfon/(MG8G4AFA)%20(8)-500x500.jpg",
+    "ram": null,
+    "color": "Silver",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "price": 525000,
     "storage": null,
     "title": "iPhone 17 Pro",
@@ -231,6 +237,19 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "price": 529000,
+    "title": "iPHONE 17 PRO 256GB Silver 1SIM",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-256gb-silver-1sim/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t114216.718_1_1-1.png",
+    "sku": "IBL:80207",
+    "ram": null,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "price": 529900,
     "storage": 256,
     "title": "iPhone 17 Pro 256GB Dual eSIM (Deep Blue)",
@@ -240,6 +259,45 @@
     "ram": null,
     "color": "Deep Blue",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 588000,
+    "title": "iPhone 17 Pro 512GB Deep Blue ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-512gb-deep-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/95.gif",
+    "sku": "IBL:80912",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 588000,
+    "title": "iPhone 17 Pro 512GB Silver ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-512gb-silver/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/00.gif",
+    "sku": "IBL:80913",
+    "ram": null,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 599000,
+    "title": "iPHONE 17 PRO 256GB Cosmic Orange 1-SIM",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-256gb-cosmic-orange-1-sim/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t113712.409_1-1.jpg",
+    "sku": "IBL:80205",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-17-pro",
@@ -266,6 +324,42 @@
     "ram": null,
     "color": "Cosmic Orange",
     "shop": "ispace"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 619900,
+    "storage": 512,
+    "title": "iPhone 17 Pro , 512GB , Silver",
+    "url": "https://istore.am/product/iphone-17-pro-512gb-silver-2455",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2455/1757790200_d8422b2602cbbc808760.jpg",
+    "ram": null,
+    "color": "Silver",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 619900,
+    "storage": 512,
+    "title": "iPhone 17 Pro , 512GB , Cosmic Orange",
+    "url": "https://istore.am/product/iphone-17-pro-512gb-cosmic-orange-2458",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2458/1757790519_9d1d1446d92e55d20730.jpg",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 619900,
+    "storage": 512,
+    "title": "iPhone 17 Pro , 512GB , Deep Blue",
+    "url": "https://istore.am/product/iphone-17-pro-512gb-deep-blue-2461",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2461/1757790620_10c6c027228616a7c5f9.jpg",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "istore"
    },
    {
     "id": "apple-iphone-17-pro",
@@ -305,39 +399,29 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "price": 619900,
-    "storage": 512,
-    "title": "iPhone 17 Pro , 512GB , Silver",
-    "url": "https://istore.am/product/iphone-17-pro-512gb-silver-2455",
+    "price": 689000,
+    "title": "iPhone 17 Pro 1TB Cosmic Orange ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-1tb-cosmic-orange/",
+    "storage": 1024,
     "inStock": true,
-    "image": "https://istore.am/product_image/2455/1757790200_d8422b2602cbbc808760.jpg",
-    "ram": null,
-    "color": "Silver",
-    "shop": "istore"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 619900,
-    "storage": 512,
-    "title": "iPhone 17 Pro , 512GB , Cosmic Orange",
-    "url": "https://istore.am/product/iphone-17-pro-512gb-cosmic-orange-2458",
-    "inStock": true,
-    "image": "https://istore.am/product_image/2458/1757790519_9d1d1446d92e55d20730.jpg",
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/10/nor-11.gif",
+    "sku": "IBL:80914",
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "istore"
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-17-pro",
-    "price": 619900,
-    "storage": 512,
-    "title": "iPhone 17 Pro , 512GB , Deep Blue",
-    "url": "https://istore.am/product/iphone-17-pro-512gb-deep-blue-2461",
+    "price": 689000,
+    "title": "iPhone 17 Pro 1TB Deep Blue ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-1tb-deep-blue/",
+    "storage": 1024,
     "inStock": true,
-    "image": "https://istore.am/product_image/2461/1757790620_10c6c027228616a7c5f9.jpg",
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t114040.249_1-2.jpg",
+    "sku": "IBL:80915",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "istore"
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-17-pro",
@@ -382,42 +466,6 @@
     "id": "apple-iphone-17-pro",
     "price": 717900,
     "storage": 1024,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 1TB (Cosmic Orange) (A3523) (MG8Q4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-1tb-cosmic-orange-a3523-mg8q4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8Q4AFA%20(2)-500x500.jpg",
-    "ram": null,
-    "color": "Cosmic Orange",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 717900,
-    "storage": 1024,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 1TB (Deep Blue) (A3523) (MG8R4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-1tb-deep-blue-a3523-mg8r4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8R4AFA%20(1)-500x500.jpg",
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 717900,
-    "storage": 1024,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 1TB (Silver) (A3523) (MG8P4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-1tb-silver-a3523-mg8p4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8P4AFA%20(4)-500x500.jpg",
-    "ram": null,
-    "color": "Silver",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 717900,
-    "storage": 1024,
     "title": "iPhone 17 Pro , 1TB , Silver",
     "url": "https://istore.am/product/iphone-17-pro-1tb-silver-2456",
     "inStock": true,
@@ -449,6 +497,42 @@
     "ram": null,
     "color": "Deep Blue",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 717900,
+    "storage": 1024,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 1TB (Cosmic Orange) (A3523) (MG8Q4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-1tb-cosmic-orange-a3523-mg8q4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8Q4AFA%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 717900,
+    "storage": 1024,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 1TB (Deep Blue) (A3523) (MG8R4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-1tb-deep-blue-a3523-mg8r4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8R4AFA%20(1)-500x500.jpg",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 717900,
+    "storage": 1024,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro 1TB (Silver) (A3523) (MG8P4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-1tb-silver-a3523-mg8p4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG8P4AFA%20(4)-500x500.jpg",
+    "ram": null,
+    "color": "Silver",
+    "shop": "vega"
    }
   ],
   "apple-iphone-17-pro-max": [
@@ -559,42 +643,6 @@
     "id": "apple-iphone-17-pro-max",
     "price": 569900,
     "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 256GB (Cosmic Orange) (A3526) (MFYN4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-256gb-cosmic-orange-a3526-mfyn4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MFYN4AFA%20(2)-500x500.jpg",
-    "ram": null,
-    "color": "Cosmic Orange",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 569900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 256GB (Deep Blue) (A3526) (MFYP4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-256gb-deep-blue-a3526-mfyp4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunis/Smartfon/MFYP4AFA%20(10)-500x500.jpg",
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 569900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 256GB (Silver) (A3526) (MFYM4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-256gb-silver-a3526-mfym4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MFYM4AFA%20(2)-500x500.jpg",
-    "ram": null,
-    "color": "Silver",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 569900,
-    "storage": 256,
     "title": "iPhone 17 Pro Max 256GB Dual eSIM (Cosmic Orange)",
     "url": "https://mobilecentre.am/product/apple-iphone-17-pro-max/33163/",
     "image": "https://mobilecentre.am/img/prodpic/926a691eb757013a919bNew_Project_-_2025-09-19T104545.326.png",
@@ -638,6 +686,68 @@
     "ram": null,
     "color": "Cosmic Orange",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 569900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 256GB (Cosmic Orange) (A3526) (MFYN4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-256gb-cosmic-orange-a3526-mfyn4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MFYN4AFA%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 569900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 256GB (Deep Blue) (A3526) (MFYP4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-256gb-deep-blue-a3526-mfyp4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunis/Smartfon/MFYP4AFA%20(10)-500x500.jpg",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 569900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 256GB (Silver) (A3526) (MFYM4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-256gb-silver-a3526-mfym4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MFYM4AFA%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Silver",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 625000,
+    "title": "iPhone 17 Pro max 512GB Deep Blue Esim",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-512gb-deep-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t114040.249_1-2.jpg",
+    "sku": "IBL:80918",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 625000,
+    "title": "iPhone 17 Pro max 512GB Silver Esim",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-512gb-silver-esim/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t114216.718_1_1-2.png",
+    "sku": "IBL:80919",
+    "ram": null,
+    "color": "Silver",
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -694,6 +804,30 @@
     "id": "apple-iphone-17-pro-max",
     "price": 668900,
     "storage": 512,
+    "title": "iPhone 17 Pro Max , 512GB , Deep Blue",
+    "url": "https://istore.am/product/iphone-17-pro-max-512gb-deep-blue-2464",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2464/1757789240_edfced3b719ac7cff603.jpg",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 668900,
+    "storage": 512,
+    "title": "iPhone 17 Pro Max , 512GB , Cosmic Orange",
+    "url": "https://istore.am/product/iphone-17-pro-max-512gb-cosmic-orange-2469",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2469/1757789811_405d9905f414d601797f.jpg",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 668900,
+    "storage": 512,
     "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 512GB (Deep Blue) (A3526) (MFYU4AF/A)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-512gb-deep-blue-a3526-mfyu4afa.html",
     "inStock": true,
@@ -716,27 +850,16 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "price": 668900,
+    "price": 695000,
+    "title": "iPhone 17 Pro Max 512GB sim (Cosmic Orange)",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-512gb-1-sim-cosmic-orange/",
     "storage": 512,
-    "title": "iPhone 17 Pro Max , 512GB , Deep Blue",
-    "url": "https://istore.am/product/iphone-17-pro-max-512gb-deep-blue-2464",
     "inStock": true,
-    "image": "https://istore.am/product_image/2464/1757789240_edfced3b719ac7cff603.jpg",
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "istore"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 668900,
-    "storage": 512,
-    "title": "iPhone 17 Pro Max , 512GB , Cosmic Orange",
-    "url": "https://istore.am/product/iphone-17-pro-max-512gb-cosmic-orange-2469",
-    "inStock": true,
-    "image": "https://istore.am/product_image/2469/1757789811_405d9905f414d601797f.jpg",
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/10/nor-11.gif",
+    "sku": "IBL:80522",
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "istore"
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -813,15 +936,42 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "price": 962900,
+    "price": 849000,
+    "title": "iPhone 17 Pro Max 2TB ESIM(SILVER)",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-2tb-esimsilver/",
     "storage": 2048,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 2TB (Silver) (A3526) (MFYY4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-2tb-silver-a3526-mfyy4afa.html",
     "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunis/Smartfon/MFYY4AFA%20(4)-500x500.jpg",
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t113712.409_1.jpg",
+    "sku": "IBL:80202",
     "ram": null,
     "color": "Silver",
-    "shop": "vega"
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 849000,
+    "title": "iPhone 17 Pro Max 2TB ESIM (Deep Blue)",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-2tb-esim-deep-blue/",
+    "storage": 2048,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t114040.249_1.jpg",
+    "sku": "IBL:80204",
+    "ram": null,
+    "color": "Deep Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 949000,
+    "title": "iPhone 17 Pro Max 2TB ESIM (Cosmic Orange)",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-2tb-esim-cosmic-orange/",
+    "storage": 2048,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t114216.718_1_1.png",
+    "sku": "IBL:80203",
+    "ram": null,
+    "color": "Cosmic Orange",
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -846,9 +996,86 @@
     "ram": null,
     "color": "Cosmic Orange",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 962900,
+    "storage": 2048,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 2TB (Silver) (A3526) (MFYY4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-2tb-silver-a3526-mfyy4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunis/Smartfon/MFYY4AFA%20(4)-500x500.jpg",
+    "ram": null,
+    "color": "Silver",
+    "shop": "vega"
    }
   ],
   "apple-iphone-17": [
+   {
+    "id": "apple-iphone-17",
+    "price": 357000,
+    "title": "iPHONE 17 256 Lavander ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-256-lavander-esim/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_5_35_.png",
+    "sku": "IBL:80208",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 357000,
+    "title": "iPHONE 17 256 White esim",
+    "url": "https://ibolit.mobi/product/iphone-17-2/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_5_36_.png",
+    "sku": "IBL:80209",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 357000,
+    "title": "iPHONE 17 256 Mist Blue ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-3/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_5_37_.png",
+    "sku": "IBL:80210",
+    "ram": null,
+    "color": "Mist Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 357000,
+    "title": "iPHONE 17 256 Sage ESIM",
+    "url": "https://ibolit.mobi/product/iphone-17-4/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_5_38_.png",
+    "sku": "IBL:80211",
+    "ram": null,
+    "color": "Sage",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 357000,
+    "title": "IPHONE 17 256 BLACK eSIM",
+    "url": "https://ibolit.mobi/product/iphone-17-5/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_5_39_.png",
+    "sku": "IBL:80213",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
    {
     "id": "apple-iphone-17",
     "price": 359000,
@@ -989,6 +1216,19 @@
    },
    {
     "id": "apple-iphone-17",
+    "price": 384000,
+    "title": "iPhone 17 256GB (Lavender) 1 -SIM",
+    "url": "https://ibolit.mobi/product/iphone-17-256gb-lavender-1-sim/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_5_35_-1.png",
+    "sku": "IBL:80510",
+    "ram": null,
+    "color": "Lavender",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17",
     "price": 385900,
     "storage": 256,
     "title": "iPhone 17 256GB Dual eSIM (Sage)",
@@ -1037,18 +1277,6 @@
     "ram": null,
     "color": "White",
     "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 397900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520) (MG6M4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-lavender-a3520-mg6m4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG6M4AFA%20(8)-500x500.jpg",
-    "ram": null,
-    "color": "Lavender",
-    "shop": "vega"
    },
    {
     "id": "apple-iphone-17",
@@ -1121,6 +1349,18 @@
     "ram": null,
     "color": "Sage",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 397900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520) (MG6M4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-lavender-a3520-mg6m4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG6M4AFA%20(8)-500x500.jpg",
+    "ram": null,
+    "color": "Lavender",
+    "shop": "vega"
    },
    {
     "id": "apple-iphone-17",
@@ -1291,42 +1531,6 @@
    {
     "id": "apple-iphone-air",
     "price": 411900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone Air 256GB (Cloud White) (A3517) (MG2M4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-air-256gb-cloud-white-a3517-mg2m4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG2M4AFA)%20(2)-500x500.jpg",
-    "ram": null,
-    "color": "Cloud White",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 411900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone Air 256GB (Sky Blue) (A3517) (MG2P4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-air-256gb-sky-blue-a3517-mg2p4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG2P4AFA%20(2)-500x500.jpg",
-    "ram": null,
-    "color": "Sky Blue",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 411900,
-    "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone Air 256GB (Space Black) (A3517) (MG2L4AF/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-air-256gb-space-black-a3517-mg2l4afa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/(MG2L4AFA)%20(7)-500x500.jpg",
-    "ram": null,
-    "color": "Space Black",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 411900,
     "storage": null,
     "title": "iPhone Air",
     "url": "https://shop.ucom.am/am/iphone-air.html",
@@ -1374,6 +1578,42 @@
    },
    {
     "id": "apple-iphone-air",
+    "price": 411900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone Air 256GB (Cloud White) (A3517) (MG2M4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-air-256gb-cloud-white-a3517-mg2m4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG2M4AFA)%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Cloud White",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 411900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone Air 256GB (Sky Blue) (A3517) (MG2P4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-air-256gb-sky-blue-a3517-mg2p4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MG2P4AFA%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Sky Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 411900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone Air 256GB (Space Black) (A3517) (MG2L4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-air-256gb-space-black-a3517-mg2l4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/(MG2L4AFA)%20(7)-500x500.jpg",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-air",
     "price": 422000,
     "storage": null,
     "title": "iPhone Air",
@@ -1409,6 +1649,45 @@
     "ram": null,
     "color": "Sky Blue",
     "shop": "redstore"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 499000,
+    "title": "iPhone Air 512Gb Space Black ESIM",
+    "url": "https://ibolit.mobi/product/iphone-air-512gb-space-black/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t112238.814_1-1.png",
+    "sku": "IBL:80904",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 499000,
+    "title": "iPhone Air 512Gb Sky Blue ESIM",
+    "url": "https://ibolit.mobi/product/iphone-air-512gb-sky-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t110616.223_1-2.png",
+    "sku": "IBL:80902",
+    "ram": null,
+    "color": "Sky Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 499000,
+    "title": "iPhone Air 512GB Light Gold ESIM",
+    "url": "https://ibolit.mobi/product/iphone-air-512gb-light-gold/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t111518.368_1-1.png",
+    "sku": "IBL:80907",
+    "ram": null,
+    "color": "Light Gold",
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-air",
@@ -1469,9 +1748,87 @@
     "ram": null,
     "color": "Cloud White",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 692000,
+    "title": "iPhone Air 1TB Sky Blue",
+    "url": "https://ibolit.mobi/product/iphone-air/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/789.jpg",
+    "sku": "IBL:802015",
+    "ram": null,
+    "color": "Sky Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 692000,
+    "title": "iPhone Air 1TB Cloud White",
+    "url": "https://ibolit.mobi/product/iphone-air-2/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t111104.832_1.png",
+    "sku": 29795,
+    "ram": null,
+    "color": "Cloud White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 692000,
+    "title": "iPHONE AIR 1TB Light Gold",
+    "url": "https://ibolit.mobi/product/iphone-air-3/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/frame_2_-_2025-09-10t111518.368_1.png",
+    "sku": "IBL:802016",
+    "ram": null,
+    "color": "Light Gold",
+    "shop": "ibolit"
    }
   ],
   "apple-iphone-17e": [
+   {
+    "id": "apple-iphone-17e",
+    "price": 269000,
+    "title": "iPhone 17e 256gb Pink e-sim",
+    "url": "https://ibolit.mobi/product/iphone-17e-256gb-pink/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/61y6zvm2hbl._ac_sl1500_.jpg",
+    "sku": "IBL:901110",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 269000,
+    "title": "iPhone 17e 256gb White e-sim",
+    "url": "https://ibolit.mobi/product/iphone-17e-256gb-white/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/61jsnuo7ocl._ac_sl1500_.jpg",
+    "sku": "IBL:901109",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 269000,
+    "title": "iPhone 17e 256gb Black e-sim",
+    "url": "https://ibolit.mobi/product/iphone-17e-256gb-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/78.jpg",
+    "sku": "IBL:901108",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
    {
     "id": "apple-iphone-17e",
     "price": 279000,
@@ -1647,6 +2004,71 @@
    },
    {
     "id": "apple-iphone-16",
+    "price": 305000,
+    "title": "iPhone 16 128GB Black",
+    "url": "https://ibolit.mobi/product/iphone-16-128gb-black/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red213_1.jpg",
+    "sku": "IBL:2098",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16",
+    "price": 305000,
+    "title": "iPhone 16 128GB Pink",
+    "url": "https://ibolit.mobi/product/iphone-16-128gb-pink/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red215_1.jpg",
+    "sku": "IBL:2100",
+    "ram": null,
+    "color": "Pink",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16",
+    "price": 305000,
+    "title": "iPhone 16 128GB Teal",
+    "url": "https://ibolit.mobi/product/iphone-16-128gb-teal/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red217_1.jpg",
+    "sku": "IBL:2102",
+    "ram": null,
+    "color": "Teal",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16",
+    "price": 305000,
+    "title": "iPhone 16 128GB White",
+    "url": "https://ibolit.mobi/product/iphone-16-128gb-white/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red214_1.jpg",
+    "sku": "IBL:2099",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16",
+    "price": 305000,
+    "title": "iPhone 16 128GB Ultramarine",
+    "url": "https://ibolit.mobi/product/iphone-16-128gb-ultramarine/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_46.jpg",
+    "sku": "IBL:6380",
+    "ram": null,
+    "color": "Ultramarine",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16",
     "price": 324900,
     "storage": 128,
     "title": "Սմարթ հեռախոս APPLE iPhone 16 128GB (Pink) (A3287) (MYEA3HX/A)",
@@ -1760,6 +2182,19 @@
    },
    {
     "id": "apple-iphone-16",
+    "price": 345000,
+    "title": "iPhone 16 256GB Black",
+    "url": "https://ibolit.mobi/product/iphone-16-256gb-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red218_1.jpg",
+    "sku": "IBL:2103",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16",
     "price": 349900,
     "storage": 128,
     "title": "iPhone 16, 128 GB, Black",
@@ -1834,6 +2269,18 @@
    {
     "id": "apple-iphone-16",
     "price": 350900,
+    "storage": null,
+    "title": "iPhone 16",
+    "url": "https://shop.ucom.am/am/iphone-16.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/i/1iphone_16_black_1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "apple-iphone-16",
+    "price": 350900,
     "storage": 128,
     "title": "Սմարթ հեռախոս APPLE iPhone 16 128GB (Black) (A3287) (MYE73ZD/A)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-16-128gb-black-a3287-mye73zda.html",
@@ -1866,18 +2313,6 @@
     "ram": null,
     "color": "White",
     "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 350900,
-    "storage": null,
-    "title": "iPhone 16",
-    "url": "https://shop.ucom.am/am/iphone-16.html",
-    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/i/1iphone_16_black_1.webp",
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "ucom"
    },
    {
     "id": "apple-iphone-16",
@@ -1965,6 +2400,71 @@
     "ram": null,
     "color": "Yellow",
     "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-15",
+    "price": 279000,
+    "title": "iPhone 15 128GB Black",
+    "url": "https://ibolit.mobi/product/iphone-15-128gb-black/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red134_1.jpg",
+    "sku": "IBL:2019",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-15",
+    "price": 279000,
+    "title": "iPhone 15 128GB Blue",
+    "url": "https://ibolit.mobi/product/iphone-15-128gb-blue/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red135_1.jpg",
+    "sku": "IBL:2020",
+    "ram": null,
+    "color": "Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-15",
+    "price": 279000,
+    "title": "iPhone 15 128GB Green",
+    "url": "https://ibolit.mobi/product/iphone-15-128gb-green/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red136_1.jpg",
+    "sku": "IBL:2021",
+    "ram": null,
+    "color": "Green",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-15",
+    "price": 279000,
+    "title": "iPhone 15 128GB Pink",
+    "url": "https://ibolit.mobi/product/iphone-15-128gb-pink/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red138_1.jpg",
+    "sku": "IBL:2023",
+    "ram": null,
+    "color": "Pink",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-15",
+    "price": 279000,
+    "title": "iPhone 15 128GB Yellow",
+    "url": "https://ibolit.mobi/product/iphone-15-128gb-yellow/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red137_1.jpg",
+    "sku": "IBL:2022",
+    "ram": null,
+    "color": "Yellow",
+    "shop": "ibolit"
    },
    {
     "id": "apple-iphone-15",
@@ -2083,6 +2583,19 @@
   "apple-ipad-pro-11-m5": [
    {
     "id": "apple-ipad-pro-11-m5",
+    "price": 479000,
+    "title": "Apple iPad Pro 11/M5/ WIFI/256gb Black",
+    "url": "https://ibolit.mobi/product/apple-ipad-pro-11-m5-wifi-256gb-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/02/opad_pro_1_4.jpg",
+    "sku": "IBL:9075",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
     "price": 549000,
     "storage": null,
     "title": "iPad Pro 11 M5",
@@ -2145,6 +2658,84 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 319000,
+    "title": "iPad Air 11 M4 128GB WiFi 2026 Blue",
+    "url": "https://ibolit.mobi/product/ipad-air-11-m4-128gb-wifi-2026-blue/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/sin11.webp",
+    "sku": "IBL:90554",
+    "ram": null,
+    "color": "Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 319000,
+    "title": "iPad Air 11 M4 128GB WiFi 2026 Space Gray",
+    "url": "https://ibolit.mobi/product/ipad-air-11-m4-128gb-wifi-2026-space-gray/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/gray-11.webp",
+    "sku": "IBL:90555",
+    "ram": null,
+    "color": "Space Gray",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 372000,
+    "title": "iPad Air 11 M4 256GB WiFi 2026 Space Gray",
+    "url": "https://ibolit.mobi/product/ipad-air-11-m4-256gb-wifi-2026-space-gray/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/gray-11.webp",
+    "sku": "IBL:90557",
+    "ram": null,
+    "color": "Space Gray",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 372000,
+    "title": "iPad Air 11 M4 256GB WiFi 2026 Blue",
+    "url": "https://ibolit.mobi/product/ipad-air-11-m4-256gb-wifi-2026-blue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/sin11.webp",
+    "sku": "IBL:90558",
+    "ram": null,
+    "color": "Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 372000,
+    "title": "iPad Air 11 M4 256GB WiFi 2026 Starlight",
+    "url": "https://ibolit.mobi/product/ipad-air-11-m4-256gb-wifi-2026-starlight/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/star11.webp",
+    "sku": "IBL:90559",
+    "ram": null,
+    "color": "Starlight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 372000,
+    "title": "iPad Air 11 M4 256GB WiFi 2026 Lavander",
+    "url": "https://ibolit.mobi/product/ipad-air-11-m4-256gb-wifi-2026-lavander/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/fial11.webp",
+    "sku": "IBL:90560",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "apple-ipad-air-11-m4",
@@ -2265,6 +2856,19 @@
    },
    {
     "id": "apple-airpods-pro-3",
+    "price": 105000,
+    "title": "Apple AirPods Pro 3",
+    "url": "https://ibolit.mobi/product/apple-airpods-pro-3/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/1-768x768-1.jpeg",
+    "sku": "IBL:00100",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-pro-3",
     "price": 117000,
     "storage": null,
     "title": "AirPods Pro 3 (2025)",
@@ -2369,6 +2973,71 @@
    },
    {
     "id": "apple-airpods-max-2",
+    "price": 245000,
+    "title": "Apple AirPods Max 2 Midnight",
+    "url": "https://ibolit.mobi/product/apple-airpods-max-2-midnight/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/max-2.webp",
+    "sku": "IBL:90562",
+    "ram": null,
+    "color": "Midnight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 245000,
+    "title": "Apple AirPods Max 2 Purple",
+    "url": "https://ibolit.mobi/product/apple-airpods-max-2-purple/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/2.jpg",
+    "sku": "IBL:90564",
+    "ram": null,
+    "color": "Purple",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 245000,
+    "title": "Apple AirPods Max 2 Blue",
+    "url": "https://ibolit.mobi/product/apple-airpods-max-2-blue/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/1.jpg",
+    "sku": "IBL:90565",
+    "ram": null,
+    "color": "Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 245000,
+    "title": "Apple AirPods Max 2 Orange",
+    "url": "https://ibolit.mobi/product/apple-airpods-max-2-orange/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/airpods-max-select-202409-orange_fv1.jpg",
+    "sku": "IBL:90566",
+    "ram": null,
+    "color": "Orange",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 245000,
+    "title": "Apple AirPods Max 2 Starlight",
+    "url": "https://ibolit.mobi/product/apple-airpods-max-2-starlight/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/4.jpg",
+    "sku": "IBL:90570",
+    "ram": null,
+    "color": "Starlight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-max-2",
     "price": 318900,
     "storage": null,
     "title": "AirPods Max 2, Կեսգիշեր",
@@ -2445,6 +3114,19 @@
     "ram": null,
     "color": null,
     "shop": "redstore"
+   },
+   {
+    "id": "apple-airpods-4",
+    "price": 52000,
+    "title": "Apple AirPods 4",
+    "url": "https://ibolit.mobi/product/apple-airpods-4/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/note_83.jpg",
+    "sku": "IBL:83",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "apple-airpods-4",
@@ -2612,6 +3294,19 @@
    },
    {
     "id": "apple-watch-ultra-3",
+    "price": 359000,
+    "title": "Apple Watch Ultra 3 Black 49mm",
+    "url": "https://ibolit.mobi/product/apple-watch-ultra-3-black-49mm/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/02/75.jpg",
+    "sku": "IBL:90791",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-watch-ultra-3",
     "price": 369000,
     "storage": null,
     "title": "Apple Watch Ultra 3",
@@ -2718,6 +3413,32 @@
    },
    {
     "id": "apple-watch-se-3",
+    "price": 119000,
+    "title": "Apple Watch SE 3 40mm black",
+    "url": "https://ibolit.mobi/product/apple-watch-se-3-40mm/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/09/022.jpg",
+    "sku": "IBL:90787",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "price": 119000,
+    "title": "Apple Watch SE 3 40mm Starlight",
+    "url": "https://ibolit.mobi/product/apple-watch-se-3-40mm-starlight/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/09/963.jpg",
+    "sku": "IBL:90789",
+    "ram": null,
+    "color": "Starlight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-watch-se-3",
     "price": 129900,
     "storage": null,
     "title": "Apple Watch SE GPS Gen.3,  Starlight Sport Band, S/M, 40մմ, Starlight",
@@ -2807,6 +3528,32 @@
     "ram": null,
     "color": "Blush",
     "shop": "redstore"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 256 GB, Silver",
+    "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-256-gb-silver/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/2.png",
+    "sku": "IBL:90373",
+    "ram": 8,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 256 GB, Blush",
+    "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-256-gb-blush/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/7.png",
+    "sku": "IBL:90374",
+    "ram": 8,
+    "color": "Blush",
+    "shop": "ibolit"
    },
    {
     "id": "apple-macbook-neo-13",
@@ -2949,6 +3696,58 @@
    },
    {
     "id": "apple-macbook-neo-13",
+    "price": 359000,
+    "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 512 GB, Citrus",
+    "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-512-gb-citrus/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/260305150014171819.png",
+    "sku": "IBL:90369",
+    "ram": 8,
+    "color": "Citrus",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 359000,
+    "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 512 GB, Silver",
+    "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-512-gb-silver/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/2.png",
+    "sku": "IBL:90370",
+    "ram": 8,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 359000,
+    "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 512 GB, Indigo",
+    "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-512-gb-indigo/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/0.png",
+    "sku": "IBL:90371",
+    "ram": 8,
+    "color": "Indigo",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 359000,
+    "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 512 GB, Blush",
+    "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-512-gb-blush/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/7.png",
+    "sku": "IBL:90372",
+    "ram": 8,
+    "color": "Blush",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-neo-13",
     "price": 362000,
     "storage": 256,
     "title": "Macbook Neo",
@@ -3054,6 +3853,19 @@
    },
    {
     "id": "apple-macbook-pro-16-m5-max",
+    "price": 2209000,
+    "title": "Apple Macbook Pro 16\" M5 Max MGE94 (Silver)",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-16-m5-max-mge94-silver/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/09/8563.jpg",
+    "sku": "IBL:90857",
+    "ram": null,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-max",
     "price": 2230900,
     "storage": 2048,
     "title": "MacBook Pro 16.2-inch  M5 Max (18C CPU/32C GPU), 36 ԳԲ, 2 ՏԲ, Սև",
@@ -3080,6 +3892,19 @@
    }
   ],
   "apple-macbook-pro-16-m5-pro": [
+   {
+    "id": "apple-macbook-pro-16-m5-pro",
+    "price": 1279000,
+    "title": "Apple Macbook Pro 16.2\"M5 Pro\"/24GB/1TB/MGE44/Silver",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-16-2m5-pro-24gb-1tb-mge44-silver/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/70.jpg",
+    "sku": "IBL:90636",
+    "ram": 24,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
    {
     "id": "apple-macbook-pro-16-m5-pro",
     "price": 1339000,
@@ -3148,6 +3973,19 @@
   "apple-macbook-pro-14-m5-pro": [
    {
     "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1159000,
+    "title": "Apple Macbook Pro 14.2\"/M5 Pro/24GB RAM/1TB/MGDN4/Silver",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-2-m5-pro-24gb-ram-1tb-mgdn4-silver/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/70.jpg",
+    "sku": "IBL:90638",
+    "ram": 24,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
     "price": 1199000,
     "title": "Pro 14.2\" M5 Pro MGDN4(Silver)",
     "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdn4silver",
@@ -3197,6 +4035,19 @@
     "ram": 24,
     "color": "Silver",
     "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1399000,
+    "title": "Apple Macbook Pro 14\"/M5 Pro/24GB RAM/2TB/MGDT4/Space Black",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-m5-pro-24gb-ram-2tb-mgdt4-space-black/",
+    "storage": 2048,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/09/741.jpg",
+    "sku": "IBL:90784",
+    "ram": 24,
+    "color": "Space Black",
+    "shop": "ibolit"
    },
    {
     "id": "apple-macbook-pro-14-m5-pro",
@@ -3290,6 +4141,32 @@
    },
    {
     "id": "apple-macbook-pro-14-m5",
+    "price": 839000,
+    "title": "Apple Macbook Pro 14.2\"/M5/16GB RAM/512GB/MDE44/Silver",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-2-m5-16gb-ram-512gb-mde44-silver/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/70.jpg",
+    "sku": "IBL:90645",
+    "ram": 16,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 849000,
+    "title": "Apple MacBook Pro 14.2\" M5 MDE04(Space Black)",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-2-m5-mde04space-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/apple.webp",
+    "sku": "ibl-90123",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
     "price": 879000,
     "storage": null,
     "title": "Macbook PRO 14 M5",
@@ -3302,6 +4179,32 @@
    },
    {
     "id": "apple-macbook-pro-14-m5",
+    "price": 879000,
+    "title": "Apple Macbook Pro 14\"/M5/16GB RAM/1TB/MDE54/Silver",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-m5-16gb-ram-1tb-mde54-silver/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/70.jpg",
+    "sku": "IBL:90643",
+    "ram": 16,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 959000,
+    "title": "Apple Macbook Pro 14.2\"/M5/24GB RAM/1TB/MDE34/Space Black",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-2-m5-24gb-ram-1tb-mde34-space-black/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/96.jpg",
+    "sku": "IBL:90644",
+    "ram": 24,
+    "color": "Space Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
     "price": 969500,
     "storage": 1024,
     "title": "MacBook Pro 14.2\" M5 24GB I 1TB MDE64 Silver",
@@ -3311,6 +4214,19 @@
     "ram": 24,
     "color": "Silver",
     "shop": "allsell"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 989000,
+    "title": "Apple MacBook Pro 14.2\" M5 24/1TB MDE64",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-2-m5-24-1tb-mde64/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/98.png",
+    "sku": "IBL:90131",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "apple-macbook-pro-14-m5",
@@ -3340,6 +4256,32 @@
    }
   ],
   "apple-macbook-air-15-m5": [
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 599000,
+    "title": "Apple Macbook Air 15.3\"/M5/16GB/512GB/MDVH4/Midnight",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-15-3-m5-16gb-512gb-mdvh4-midnight/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/12.gif",
+    "sku": "IBL:90630",
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 629000,
+    "title": "Apple Macbook Air 15.3\"/M5/16GB/512GB/MDVQ4/Sky Blue",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-15-3-m5-16gb-512gb-mdvq4-sky-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/1020.gif",
+    "sku": "IBL:90595",
+    "ram": 16,
+    "color": "Sky Blue",
+    "shop": "ibolit"
+   },
    {
     "id": "apple-macbook-air-15-m5",
     "price": 689000,
@@ -3394,6 +4336,19 @@
    },
    {
     "id": "apple-macbook-air-15-m5",
+    "price": 699000,
+    "title": "Apple Macbook Air 15.3\"/M5/16GB/1TB/MDVA4/Silver",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-15-3-m5-16gb-1tb-mdva4-silver/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/11.gif",
+    "sku": "IBL:90628",
+    "ram": 16,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
     "price": 763900,
     "storage": 512,
     "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
@@ -3417,6 +4372,19 @@
     "ram": 16,
     "color": "Midnight",
     "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 909000,
+    "title": "Apple MacBook Air MDVU4 15.3''/M5/24GB RAM/1TB/MDVU4/Sky Blue",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-15-3-m5-24gb-ram-1tb-mdvu4-sky-blue/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/849.jpg",
+    "sku": "IBL:90486",
+    "ram": 24,
+    "color": "Sky Blue",
+    "shop": "ibolit"
    },
    {
     "id": "apple-macbook-air-15-m5",
@@ -3459,6 +4427,32 @@
    }
   ],
   "apple-macbook-air-13-m5": [
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 509000,
+    "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDHE4/Midnight",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-13-6-m5-16gb-512gb-mdhe4-midnight/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/12.gif",
+    "sku": "IBL:90629",
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 515000,
+    "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDHA4",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-13-6-m5-16gb-512gb-mdha4/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/41.jpg",
+    "sku": "IBL:90571",
+    "ram": 16,
+    "color": null,
+    "shop": "ibolit"
+   },
    {
     "id": "apple-macbook-air-13-m5",
     "price": 589000,
@@ -3564,6 +4558,45 @@
    },
    {
     "id": "apple-macbook-air-13-m5",
+    "price": 689000,
+    "title": "Apple Macbook Air 13.6\"/M5/16GB/1TB/MDHF4/Midnight",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-13-6-m5-16gb-1tb-mdhf4-midnight/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/12.gif",
+    "sku": "IBL:90640",
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 739000,
+    "title": "Apple Macbook Air 13.6\"/M5/24GB/1TB/MDHD4/Starlight",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-13-6-m5-24gb-1tb-mdhd4-starlight/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/40.gif",
+    "sku": "IBL:90633",
+    "ram": 24,
+    "color": "Starlight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 739000,
+    "title": "Apple Macbook Air 13.6\"/M5/24GB/1TB/MDHK4/Sky Blue",
+    "url": "https://ibolit.mobi/product/apple-macbook-air-13-6-m5-24gb-1tb-mdhk4-sky-blue/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/50.jpg",
+    "sku": "IBL:90635",
+    "ram": 24,
+    "color": "Sky Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
     "price": 785500,
     "storage": 1024,
     "title": "Macbook Air 13\" M5 24GB I 1TB MDHG4",
@@ -3645,6 +4678,32 @@
   "samsung-galaxy-a37": [
    {
     "id": "samsung-galaxy-a37",
+    "price": 129000,
+    "title": "Samsung Galaxy A37 8GB/128GB White",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a37-8gb-128gb-white/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/ehite01.gif",
+    "sku": "IBL:90420",
+    "ram": 8,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 129000,
+    "title": "Samsung Galaxy A37 8/128GB (Awesome Charcoal)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a37-8-128gb-awesome-charcoal/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/charcoal03.gif",
+    "sku": "IBL:90422",
+    "ram": null,
+    "color": "Awesome Charcoal",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a37",
     "price": 134900,
     "storage": null,
     "title": "Samsung A37",
@@ -3692,6 +4751,32 @@
     "ram": 8,
     "color": null,
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 137000,
+    "title": "Samsung Galaxy A37 8/256GB (Awesome GrayGreen)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a37-8-256gb-awesome-graygreen/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/037.gif",
+    "sku": "IBL:90425",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 137000,
+    "title": "Samsung Galaxy A37 8/256GB (Awesome Charcoal)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a37-8-256gb-awesome-charcoal/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/charcoal03.gif",
+    "sku": "IBL:90426",
+    "ram": null,
+    "color": "Awesome Charcoal",
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-a37",
@@ -3758,6 +4843,18 @@
     "id": "samsung-galaxy-a37",
     "price": 159900,
     "storage": 256,
+    "title": "Samsung A37",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-256gb-graygreen/2639/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744170907638.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 159900,
+    "storage": 256,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376E/DS 8GB 256GB (Awesome Charcoal)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a37-5g-sm-a376eds-8gb-256gb-awesome-charcoal.html",
     "inStock": true,
@@ -3777,21 +4874,22 @@
     "ram": 8,
     "color": null,
     "shop": "vega"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 159900,
-    "storage": 256,
-    "title": "Samsung A37",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-256gb-graygreen/2639/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744170907638.png",
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "telecom"
    }
   ],
   "samsung-galaxy-a56": [
+   {
+    "id": "samsung-galaxy-a56",
+    "price": 129000,
+    "title": "Samsung Galaxy A56 5G 8/128GB Lightgray",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a56-5g-8-128gb-lightgray/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/13.gif",
+    "sku": "IBL:80261",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
    {
     "id": "samsung-galaxy-a56",
     "price": 142000,
@@ -3833,6 +4931,19 @@
    },
    {
     "id": "samsung-galaxy-a56",
+    "price": 144000,
+    "title": "Samsung Galaxy A56 5G 8/256GB Pink",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a56-5g-8-256gb-pink/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/pink-3.jpg",
+    "sku": "IBL:80263",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a56",
     "price": 151900,
     "storage": 128,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy A56 5G SM-A566B/DS 8GB 128GB (Awesome Graphite)",
@@ -3866,6 +4977,19 @@
     "ram": null,
     "color": "Awesome Pink",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a56",
+    "price": 169000,
+    "title": "Samsung Galaxy A56 12/256",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a56-3/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/07/821.jpg",
+    "sku": "NIBL:821",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -3919,6 +5043,58 @@
   "samsung-galaxy-a57": [
    {
     "id": "samsung-galaxy-a57",
+    "price": 139000,
+    "title": "Samsung Galaxy A57 8/128GB (Awesome Gray)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a57-128gb-awesome-gray/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/02.gif",
+    "sku": "IBL:90400",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 139000,
+    "title": "Samsung Galaxy A57 8/128GB (Awesome Icyblue)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a57-128gb-awesome-icyblue/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/01.gif",
+    "sku": "IBL:90401",
+    "ram": null,
+    "color": "Awesome Icyblue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 139000,
+    "title": "Samsung Galaxy A57 8/128GB (Awesome Lilac)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a57-128gb-awesome-lilac/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/5775.gif",
+    "sku": "IBL:90403",
+    "ram": null,
+    "color": "Awesome Lilac",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 139000,
+    "title": "Samsung Galaxy A57 8/128GB (Awesome Navy)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a57-128gb-awesome-navy/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/07.gif",
+    "sku": "IBL:90404",
+    "ram": null,
+    "color": "Awesome Navy",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a57",
     "price": 149000,
     "title": "Samsung Galaxy A57",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
@@ -3945,6 +5121,32 @@
    },
    {
     "id": "samsung-galaxy-a57",
+    "price": 155000,
+    "title": "Samsung Galaxy A57 8/256GB (Awesome Navy)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a57-256gb-awesome-navy/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/07.gif",
+    "sku": "IBL:90405",
+    "ram": null,
+    "color": "Awesome Navy",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 155000,
+    "title": "Samsung Galaxy A57 8/256GB (Awesome Lilac)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a57-256gb-awesome-lilac/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/5775.gif",
+    "sku": "IBL:90406",
+    "ram": null,
+    "color": "Awesome Lilac",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a57",
     "price": 164000,
     "storage": null,
     "title": "Samsung Galaxy A57",
@@ -3954,18 +5156,6 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 166900,
-    "storage": 128,
-    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 128GB (Awesome Gray)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-128gb-awesome-gray.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Gray)%20(2)-500x500.jpg",
-    "ram": 8,
-    "color": null,
-    "shop": "vega"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -3990,6 +5180,18 @@
     "ram": null,
     "color": null,
     "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 166900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 128GB (Awesome Gray)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-128gb-awesome-gray.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Gray)%20(2)-500x500.jpg",
+    "ram": 8,
+    "color": null,
+    "shop": "vega"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -4131,6 +5333,19 @@
   "samsung-galaxy-s26": [
    {
     "id": "samsung-galaxy-s26",
+    "price": 279000,
+    "title": "Samsung Galaxy S26 12GB/256GB Cobalt Violet",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-256gb-cobalt-violet/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/img-4804-scaled.webp",
+    "sku": "IBL:90300",
+    "ram": 12,
+    "color": "Cobalt Violet",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26",
     "price": 295000,
     "title": "Samsung Galaxy S26",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
@@ -4196,6 +5411,32 @@
    },
    {
     "id": "samsung-galaxy-s26",
+    "price": 339000,
+    "title": "Samsung Galaxy S26 512gb White",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-512gb-white/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/us-galaxy-s26-s942-sm-s942uzwexaa-550995764_1773418001-2.webp",
+    "sku": "IBL:90361",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 339000,
+    "title": "Samsung Galaxy S26 12GB/512GB Sky Blue",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-512gb-sky-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/2-scaled.webp",
+    "sku": "IBL:90363",
+    "ram": 12,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26",
     "price": 348900,
     "storage": 256,
     "title": "Samsung Galaxy S26 256GB (White)",
@@ -4205,6 +5446,32 @@
     "ram": null,
     "color": "White",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 349000,
+    "title": "Samsung Galaxy S26+ 12GB/256GB Sky Blue",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-256gb-sky-blue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/img-4803-scaled.webp",
+    "sku": "IBL:90301",
+    "ram": 12,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 349000,
+    "title": "Samsung Galaxy S26+ 12GB/256GB Black",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-256gb-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/img-4801-scaled.webp",
+    "sku": "IBL:90302",
+    "ram": 12,
+    "color": "Black",
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-s26",
@@ -4241,6 +5508,19 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 399000,
+    "title": "Samsung Galaxy S26 Ultra 256 Sky Blue",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-256-ultra-sky-blue/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/galaxy_s26_ultra_-_sky_blue_1772454326.webp",
+    "sku": "IBL:90113",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    }
   ],
   "samsung-galaxy-s26-plus": [
@@ -4256,6 +5536,18 @@
     "ram": null,
     "color": null,
     "shop": "planet3d"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "price": 418900,
+    "storage": 256,
+    "title": "Samsung Galaxy S26+ 256GB (White)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s26+/33494/",
+    "image": "https://mobilecentre.am/img/prodpic/77273cc5b1108b699adbNew_Project_-_2026-02-26T124324.514.png",
+    "inStock": true,
+    "ram": null,
+    "color": "White",
+    "shop": "mobilecentre"
    },
    {
     "id": "samsung-galaxy-s26-plus",
@@ -4292,18 +5584,6 @@
     "ram": 12,
     "color": "White",
     "shop": "vega"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 418900,
-    "storage": 256,
-    "title": "Samsung Galaxy S26+ 256GB (White)",
-    "url": "https://mobilecentre.am/product/samsung-galaxy-s26+/33494/",
-    "image": "https://mobilecentre.am/img/prodpic/77273cc5b1108b699adbNew_Project_-_2026-02-26T124324.514.png",
-    "inStock": true,
-    "ram": null,
-    "color": "White",
-    "shop": "mobilecentre"
    },
    {
     "id": "samsung-galaxy-s26-plus",
@@ -4344,6 +5624,32 @@
     "ram": 12,
     "color": "Titanium Black",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "price": 399000,
+    "title": "Samsung Galaxy S25 Ultra 512GB Titanium Gray",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-512gb-titanium-gray/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_14.jpg",
+    "sku": "NIBL:14",
+    "ram": null,
+    "color": "Titanium Gray",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "price": 399000,
+    "title": "Samsung Galaxy S25 Ultra 512GB Titanium White Silver",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-512gb-titanium-white-silver/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_15.jpg",
+    "sku": "NIBL:15",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-s25-ultra",
@@ -4419,6 +5725,45 @@
     "ram": 12,
     "color": null,
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "price": 590000,
+    "title": "Samsung Galaxy S25 Ultra 12GB / 1TB Titanium Gray",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-12gb-1tb-titanium-gray/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_10.jpg",
+    "sku": "NIBL:10",
+    "ram": 12,
+    "color": "Titanium Gray",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "price": 590000,
+    "title": "Samsung Galaxy S25 Ultra 12GB / 1TB Titanium White Silver",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-12gb-1tb-titanium-white-silver/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_11.jpg",
+    "sku": "NIBL:11",
+    "ram": 12,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "price": 590000,
+    "title": "Samsung Galaxy S25 Ultra 12GB / 1TB Titanium Black",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-12gb-1tb-titanium-black/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_12.jpg",
+    "sku": "NIBL:12",
+    "ram": 12,
+    "color": "Titanium Black",
+    "shop": "ibolit"
    }
   ],
   "samsung-galaxy-s26-ultra": [
@@ -4489,6 +5834,45 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
+    "price": 399000,
+    "title": "Samsung Galaxy S26 Ultra 256 Pink Gold",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-ultra-256-pink-gold/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/galaxy_s26_ultra_-_pink_gold_1772454326.webp",
+    "sku": "IBL:90111",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 399000,
+    "title": "Samsung Galaxy S26 Ultra 256 Cobalt Violet",
+    "url": "https://ibolit.mobi/product/galaxy-s26-ultra-256-cobalt-violet/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/galaxy_s26_ultra_-_cobalt_violet_1772454326.webp",
+    "sku": "IBL:90114",
+    "ram": null,
+    "color": "Cobalt Violet",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 399000,
+    "title": "Samsung Galaxy S26 Ultra 256 Black",
+    "url": "https://ibolit.mobi/product/galaxy-s26-ultra-256-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/galaxy_s26_ultra_-_black_1772454326.webp",
+    "sku": "IBL:90116",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
     "price": 419000,
     "storage": null,
     "title": "Samsung Galaxy S26 Ultra",
@@ -4498,6 +5882,30 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Samsung Galaxy S26 Ultra 256GB (Sky Blue)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s26-ultra/33508/",
+    "image": "https://mobilecentre.am/img/prodpic/21bbc1335483f3984b67New_Project_-_2026-02-26T104759.771.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Samsung S26 Ultra",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-256gb-white/2599/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17725396854756.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -4549,30 +5957,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 479900,
-    "storage": 256,
-    "title": "Samsung Galaxy S26 Ultra 256GB (Sky Blue)",
-    "url": "https://mobilecentre.am/product/samsung-galaxy-s26-ultra/33508/",
-    "image": "https://mobilecentre.am/img/prodpic/21bbc1335483f3984b67New_Project_-_2026-02-26T104759.771.png",
-    "inStock": true,
-    "ram": null,
-    "color": "Blue",
-    "shop": "mobilecentre"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 479900,
-    "storage": 256,
-    "title": "Samsung S26 Ultra",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-256gb-white/2599/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17725396854756.png",
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "telecom"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "price": 489000,
     "title": "Samsung Galaxy S26 Ultra 12GB/512GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-black",
@@ -4596,6 +5980,18 @@
     "ram": 12,
     "color": "Blue",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 569900,
+    "storage": 512,
+    "title": "Samsung S26 Ultra",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-512gb-skyblue/2613/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17727781496089.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "telecom"
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -4635,18 +6031,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 569900,
-    "storage": 512,
-    "title": "Samsung S26 Ultra",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-512gb-skyblue/2613/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17727781496089.png",
-    "inStock": true,
-    "ram": null,
-    "color": "Blue",
-    "shop": "telecom"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "price": 579900,
     "storage": 512,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (Black)",
@@ -4671,6 +6055,45 @@
     "ram": null,
     "color": null,
     "shop": "planet3d"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 65000,
+    "title": "Samsung Galaxy A17 4/128(Black)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a17-4-128black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/165d02a05003c8382465new_project_-_2025-09-13t144222.905.jpg",
+    "sku": "IBL:80400",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 65000,
+    "title": "Samsung Galaxy A17 4/128(Gray)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a17-4-128gray/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/7b477e57a2419ff657benew_project_-_2025-09-13t144157.061.jpg",
+    "sku": "IBL:80401",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 65000,
+    "title": "Galaxy A17 (4 /128GB Blue",
+    "url": "https://ibolit.mobi/product/galaxy-a17-4-128gb-blue/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fff247111d5267b8c460new_project_-_2025-09-13t144122.836.jpg",
+    "sku": "IBL:80403",
+    "ram": null,
+    "color": "Blue",
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-a17",
@@ -4734,6 +6157,32 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 73000,
+    "title": "Samsung Galaxy A17 6/128GB(Black)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a17-6-128gbblack/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/165d02a05003c8382465new_project_-_2025-09-13t144222.905.jpg",
+    "sku": "IBL:80405",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 73000,
+    "title": "Samsung Galaxy A17 6/128GB(Gray)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a17-6-128gbgray/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/7b477e57a2419ff657benew_project_-_2025-09-13t144157.061.jpg",
+    "sku": "IBL:80404",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-a17",
@@ -4852,6 +6301,32 @@
    },
    {
     "id": "samsung-galaxy-a36",
+    "price": 109000,
+    "title": "Samsung Galaxy A36 5G 8/128GB Lavander",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a36-5g-8-128gb-lavander/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/a36-1.jpg2_-1.jpg",
+    "sku": "IBL:80379",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a36",
+    "price": 124000,
+    "title": "Samsung Galaxy A36 5G 8/256GB Lime",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a36-5g-8-256gb-lime/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/samsung-galaxy-a36-lime.jpg",
+    "sku": "IBL:80375",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a36",
     "price": 129900,
     "storage": 128,
     "title": "Samsung Galaxy A36 128GB (Awesome Lime)",
@@ -4912,6 +6387,32 @@
    }
   ],
   "poco-x7-pro": [
+   {
+    "id": "poco-x7-pro",
+    "price": 133000,
+    "title": "Xiaomi Poco X7 Pro 8GB / 256GB BlackGB / Yellow",
+    "url": "https://ibolit.mobi/product/xiaomi-poco-x7-pro-8gb-256gb-blackgb-yellow/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-161.jpg",
+    "sku": "NIBL:161",
+    "ram": 8,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "poco-x7-pro",
+    "price": 139000,
+    "title": "Xiaomi Poco X7 Pro 12GB / 512GB BlackGB / Yellow",
+    "url": "https://ibolit.mobi/product/xiaomi-poco-x7-pro-12gb-512gb-blackgb-yellow/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-167.jpg",
+    "sku": "NIBL:167",
+    "ram": 12,
+    "color": null,
+    "shop": "ibolit"
+   },
    {
     "id": "poco-x7-pro",
     "price": 154900,
@@ -4976,6 +6477,19 @@
    },
    {
     "id": "honor-400",
+    "price": 179000,
+    "title": "HONOR 400 12/512GB Midnight Black",
+    "url": "https://ibolit.mobi/product/honor-400-12-512gb-midnight-black/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/1040.jpg",
+    "sku": "IBL:90653",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "honor-400",
     "price": 199900,
     "storage": 512,
     "title": "Սմարթ հեռախոս HONOR 400 DNY-NX9 12GB 512GB (Desert Gold) (5109BURL)",
@@ -5023,6 +6537,32 @@
     "ram": 12,
     "color": "Black",
     "shop": "vega"
+   },
+   {
+    "id": "honor-400-pro",
+    "price": 269000,
+    "title": "Honor 400 Pro/Midnight Black 12/512",
+    "url": "https://ibolit.mobi/product/honor-400-pro-midnight-black-12-512/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/1020.jpg",
+    "sku": "IBL:90646",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "honor-400-pro",
+    "price": 269000,
+    "title": "Honor 400 Pro/Lunar Grey 12/512",
+    "url": "https://ibolit.mobi/product/honor-400-pro-lunar-grey-12-512/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/1030.jpg",
+    "sku": "IBL:90647",
+    "ram": null,
+    "color": "Lunar Grey",
+    "shop": "ibolit"
    }
   ],
   "samsung-galaxy-s25-fe": [
@@ -5063,6 +6603,58 @@
     "ram": 8,
     "color": "Navy",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 220000,
+    "title": "Samsung Galaxy S25 FE 256GB (Navy)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-fe-256gb-navy/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/61phnlzlydl._ac_sl1500_.jpg",
+    "sku": "IBL:80415",
+    "ram": null,
+    "color": "Navy",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 220000,
+    "title": "Samsung Galaxy S25 FE 256GB (White)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-fe-256gb-white/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/61cxhgegptl._ac_sx679_-768x768-1.jpg",
+    "sku": "IBL:80414",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 220000,
+    "title": "Samsung Galaxy S25 FE 256GB (Icyblue)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-fe-256gb-icyblue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/615s80nzp3l._ac_sx679_.jpg",
+    "sku": "IBL:80411",
+    "ram": null,
+    "color": "Icyblue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 220000,
+    "title": "Samsung Galaxy S25 FE 256GB (Jetblack)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-fe-256gb-jetblack/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/61jvxodkxol._ac_sx679_.jpg",
+    "sku": "IBL:80412",
+    "ram": null,
+    "color": "Jetblack",
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-s25-fe",
@@ -5272,6 +6864,32 @@
    },
    {
     "id": "samsung-galaxy-s25",
+    "price": 309000,
+    "title": "Samsung Galaxy S25+ 256GB Mint",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-256gb-mint/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_26.jpg",
+    "sku": "NIBL:26",
+    "ram": null,
+    "color": "Mint",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25",
+    "price": 309000,
+    "title": "Samsung Galaxy S25+ 256GB Navy",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-256gb-navy/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_27.jpg",
+    "sku": "NIBL:27",
+    "ram": null,
+    "color": "Navy",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25",
     "price": 318900,
     "storage": 256,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy S25 5G SM-S931B/DS 12GB 256GB (Silver Shadow)",
@@ -5281,20 +6899,58 @@
     "ram": 12,
     "color": "Silver Shadow",
     "shop": "vega"
-   }
-  ],
-  "oneplus-13": [
+   },
    {
-    "id": "oneplus-13",
-    "price": 464900,
+    "id": "samsung-galaxy-s25",
+    "price": 429000,
+    "title": "Samsung Galaxy S25+ 512GB Mint",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-512gb-mint/",
     "storage": 512,
-    "title": "Սմարթ հեռախոս ONEPLUS 13 16GB 512GB (Arctic Down) (CPH2653) (5011110325)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-oneplus-13-16gb-512gb-arctic-down-cph2653-5011110325.html",
     "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hunvar/Smartfon/13%2016GB%20512GB%20(Arctic%20Down)%20(CPH2653)%20(716143030)-500x500.jpg",
-    "ram": 16,
-    "color": null,
-    "shop": "vega"
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_22.jpg",
+    "sku": "NIBL:22",
+    "ram": null,
+    "color": "Mint",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25",
+    "price": 429000,
+    "title": "Samsung Galaxy S25+ 512GB Silver Shadow",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-512gb-silver-shadow/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_23.jpg",
+    "sku": "NIBL:23",
+    "ram": null,
+    "color": "Silver Shadow",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25",
+    "price": 429000,
+    "title": "Samsung Galaxy S25+ 512GB Navy",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-512gb-navy/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_24.jpg",
+    "sku": "NIBL:24",
+    "ram": null,
+    "color": "Navy",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s25",
+    "price": 429000,
+    "title": "Samsung Galaxy S25+ 512GB Icy Blue",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-512gb-icy-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl_25.jpg",
+    "sku": "NIBL:25",
+    "ram": null,
+    "color": "Icy Blue",
+    "shop": "ibolit"
    }
   ],
   "samsung-galaxy-s26-fe": [
@@ -5379,6 +7035,19 @@
   "samsung-galaxy-z-fold-8-ultra": [
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
+    "price": 640000,
+    "title": "Samsung Galaxy Z Fold 8 Ultra 256GB",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold8-ultra/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/51bygijptpl._ac_sl1500_.jpg",
+    "sku": "IBL:90730",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
     "price": 655000,
     "title": "Samsung Galaxy Z Fold8 Ultra",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8-ultra",
@@ -5415,6 +7084,19 @@
     "ram": 12,
     "color": "Cream",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "price": 750000,
+    "title": "Samsung Galaxy Z Fold 8 Ultra 12/512GB",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold-8-ultra-12-512/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/51bygijptpl._ac_sl1500_.jpg",
+    "sku": "IBL:90748",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
@@ -5481,6 +7163,32 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
+    "price": 1039000,
+    "title": "Samsung Galaxy Z Fold 8 Ultra/Graphite 1TB",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold-8-ultra-graphite-1tb/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/08/03.jpg",
+    "sku": "IBL:90750",
+    "ram": null,
+    "color": "Graphite",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "price": 1039000,
+    "title": "Samsung Galaxy Z Fold8 Ultra 1TB",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold8-ultra-1tb/",
+    "storage": 1024,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/51wsnp4vwal._ac_sl1500_.jpg",
+    "sku": "IBL:90752",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
     "price": 1059000,
     "title": "Samsung Galaxy Z Fold 8 Ultra 16GB/1TB Cream",
     "url": "https://redstore.am/en/product/samsung-galaxy-z-fold-8-ultra-16gb1tb-cream",
@@ -5494,6 +7202,19 @@
    }
   ],
   "samsung-galaxy-z-fold-8": [
+   {
+    "id": "samsung-galaxy-z-fold-8",
+    "price": 599000,
+    "title": "Samsung Galaxy Z Fold 8 256GB",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold-8/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/8.jpg",
+    "sku": "IBL:90727",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
    {
     "id": "samsung-galaxy-z-fold-8",
     "price": 619000,
@@ -5545,6 +7266,45 @@
     "ram": 12,
     "color": "Cream",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8",
+    "price": 660000,
+    "title": "Samsung Galaxy Z Fold 8 12GB/512GB Graphite",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold-8-12512gb/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/8.jpg1_.jpg",
+    "sku": "IBL:90756",
+    "ram": 12,
+    "color": "Graphite",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8",
+    "price": 660000,
+    "title": "Samsung Galaxy Z Fold 8 12GB/512GB Cream",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold-8-12gb-512gb-cream/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/8.jpg2_.jpg",
+    "sku": "IBL:90755",
+    "ram": 12,
+    "color": "Cream",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8",
+    "price": 660000,
+    "title": "Samsung Galaxy Z Fold 8 12GB/512GB Lavander",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold-8-12gb-512gb-lavander/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/8.jpg",
+    "sku": "IBL:90757",
+    "ram": 12,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-z-fold-8",
@@ -5613,6 +7373,19 @@
   "samsung-galaxy-z-flip-8": [
    {
     "id": "samsung-galaxy-z-flip-8",
+    "price": 425000,
+    "title": "Samsung Galaxy Z Flip 8 256GB",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-flip8/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/61i5pa32s4l._ac_sl1500_.jpg",
+    "sku": "IBL:90724",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
     "price": 445000,
     "title": "Samsung Galaxy Z Flip8",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
@@ -5662,6 +7435,19 @@
     "ram": 12,
     "color": "Pink",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "price": 500000,
+    "title": "Samsung Galaxy Z Flip 8 12GB/512GB Graphite",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-flip-8-12gb-512gb-graphite/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/61wf_ywr0pl._ac_sl1500_.jpg",
+    "sku": "IBL:90758",
+    "ram": 12,
+    "color": "Graphite",
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -5806,6 +7592,19 @@
    },
    {
     "id": "samsung-galaxy-a27",
+    "price": 109000,
+    "title": "Samsung Galaxy A27 128GB 5G",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a27-5g/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/10.jpg",
+    "sku": "IBL:90707",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a27",
     "price": 120000,
     "storage": null,
     "title": "Samsung Galaxy A27",
@@ -5851,6 +7650,45 @@
     "ram": null,
     "color": "Black",
     "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 124000,
+    "title": "Samsung Galaxy A27 256GB PINK",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a27-256gb-pink/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/10.jpg",
+    "sku": "IBL:90710",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 124000,
+    "title": "Samsung Galaxy A27 256GB Black",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a27-256gb-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/30.jpg",
+    "sku": "IBL:90711",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 124000,
+    "title": "Samsung Galaxy A27 256GB Blue",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a27-256gb-blue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/20.jpg",
+    "sku": "IBL:90712",
+    "ram": null,
+    "color": "Blue",
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-a27",
@@ -5907,6 +7745,84 @@
    },
    {
     "id": "xiaomi-redmi-note-14-pro",
+    "price": 98000,
+    "title": "Xiaomi Redmi Note 14 Pro 8GB / 256GB Aurora Purple",
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-8gb-256gb-aurora-purple/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-139.jpg",
+    "sku": "NIBL:139",
+    "ram": 8,
+    "color": "Aurora Purple",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
+    "price": 98000,
+    "title": "Xiaomi Redmi Note 14 Pro 8GB / 256GB Ocean Blue",
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-8gb-256gb-ocean-blue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-140.jpg",
+    "sku": "NIBL:140",
+    "ram": 8,
+    "color": "Ocean Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
+    "price": 98000,
+    "title": "Xiaomi Redmi Note 14 Pro 8GB / 256GB Midnight Black",
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-8gb-256gb-midnight-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-141.jpg",
+    "sku": "NIBL:141",
+    "ram": 8,
+    "color": "Midnight Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
+    "price": 118000,
+    "title": "Xiaomi Redmi Note 14 Pro 4G 12GB / 512GB Aurora Purple",
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-12gb-512gb-aurora-purple/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-149.jpg",
+    "sku": "NIBL:149",
+    "ram": 12,
+    "color": "Aurora Purple",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
+    "price": 118000,
+    "title": "Xiaomi Redmi Note 14 Pro 4G 12GB / 512GB Ocean Blue",
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-12gb-512gb-ocean-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-150.jpg",
+    "sku": "NIBL:150",
+    "ram": 12,
+    "color": "Ocean Blue",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
+    "price": 118000,
+    "title": "Xiaomi Redmi Note 14 Pro 4G 12GB / 512GB Midnight Black",
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-12gb-512gb-midnight-black/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-151.jpg",
+    "sku": "NIBL:151",
+    "ram": 12,
+    "color": "Midnight Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
     "price": 145000,
     "title": "Redmi Note 14 Pro+ 8GB/256GB Midnight Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-note-14-pro-8gb256gb-midnight-black",
@@ -5945,6 +7861,32 @@
    }
   ],
   "samsung-galaxy-a07": [
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 44000,
+    "title": "Samsung Galaxy A07 4/128GB(Gray)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a07-4-128gbgray/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/large_samsung-galaxy-a07_4.jpg",
+    "sku": "IBL:80360",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 45000,
+    "title": "Samsung Galaxy A07 4/128GB Green",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a07-4-128gb-green/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/large_samsung-galaxy-a07_3.jpg",
+    "sku": "IBL:80363",
+    "ram": null,
+    "color": "Green",
+    "shop": "ibolit"
+   },
    {
     "id": "samsung-galaxy-a07",
     "price": 45900,
@@ -6150,6 +8092,84 @@
     "ram": 12,
     "color": "Blue Shadow",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 649000,
+    "title": "Samsung Galaxy Z Fold7 5G 256GB (Mint)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold7-5g-256gb-mint/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/52.gif",
+    "sku": "IBL:80148",
+    "ram": null,
+    "color": "Mint",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 649000,
+    "title": "Samsung Galaxy Z Fold7 5G 256GB (BLUE)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold7-5g-256gb-blue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/015.gif",
+    "sku": "IBL:80149",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 699000,
+    "title": "Samsung Galaxy Z Fold7 5G 512GB (Mint)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold7-5g-512gb-mint/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/52-1.gif",
+    "sku": "IBL:80144",
+    "ram": null,
+    "color": "Mint",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 699000,
+    "title": "Samsung Galaxy Z Fold7 5G 512GB (Jet Black)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold7-5g-512gb-jet-black/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/f9-1.jpg",
+    "sku": "IBL:80145",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 699000,
+    "title": "Samsung Galaxy Z Fold7 5G 512GB (Silver Shadow)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold7-5g-512gb-silver-shadow/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/f2-768x768-1.jpg",
+    "sku": "IBL:80146",
+    "ram": null,
+    "color": "Silver Shadow",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 699000,
+    "title": "Samsung Galaxy Z Fold7 5G 512GB (Blue Shadow)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-fold7-5g-512gb-blue-shadow/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/f1-768x768-1.jpg",
+    "sku": "IBL:80147",
+    "ram": null,
+    "color": "Blue Shadow",
+    "shop": "ibolit"
    }
   ],
   "samsung-galaxy-z-flip-7": [
@@ -6167,6 +8187,32 @@
    },
    {
     "id": "samsung-galaxy-z-flip-7",
+    "price": 379000,
+    "title": "Samsung Galaxy Z Flip7 5G 12/256GB (Mint)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-flip7-5g-12-256gb-mint/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl3-1.jpg",
+    "sku": "IBL:80158",
+    "ram": null,
+    "color": "Mint",
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-7",
+    "price": 379000,
+    "title": "Samsung Galaxy Z Flip7 5G 12/256GB BLUE",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-flip7-5g-12-256gb-blue/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl2-1.jpg",
+    "sku": "IBL:80159",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-7",
     "price": 389900,
     "storage": null,
     "title": "Samsung Galaxy Z Flip 7",
@@ -6176,6 +8222,32 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-7",
+    "price": 440000,
+    "title": "Samsung Galaxy Z Flip7 5G 12/512GB (Coral Red)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-flip7-5g-12-512gb-coral-red/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl1.jpg",
+    "sku": "IBL:80154",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-7",
+    "price": 440000,
+    "title": "Samsung Galaxy Z Flip7 5G 12/512GB (Mint)",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-z-flip7-5g-12-512gb-mint/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl3.jpg",
+    "sku": "IBL:80155",
+    "ram": null,
+    "color": "Mint",
+    "shop": "ibolit"
    }
   ],
   "realme-c75": [
@@ -6233,6 +8305,19 @@
    },
    {
     "id": "xiaomi-15",
+    "price": 317000,
+    "title": "Xiaomi 15T Pro 12GB/512GB Black",
+    "url": "https://ibolit.mobi/product/xiaomi-15t-pro-12gb-512gb-black/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/4.jpg",
+    "sku": "IBL:90388",
+    "ram": 12,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-15",
     "price": 319000,
     "title": "15T Pro 12GB/512GB Black",
     "url": "https://redstore.am/en/product/xiaomi-15t-pro-12gb512gb-black",
@@ -6285,6 +8370,32 @@
    },
    {
     "id": "xiaomi-15",
+    "price": 369000,
+    "title": "Xiaomi 15 12GB / 512GB White",
+    "url": "https://ibolit.mobi/product/xiaomi-15-12gb-512gb-white/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-193.jpg",
+    "sku": "NIBL:193",
+    "ram": 12,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-15",
+    "price": 369000,
+    "title": "Xiaomi 15 12GB / 512GB Green",
+    "url": "https://ibolit.mobi/product/xiaomi-15-12gb-512gb-green/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-194.jpg",
+    "sku": "NIBL:194",
+    "ram": 12,
+    "color": "Green",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-15",
     "price": 429900,
     "storage": 512,
     "title": "Xiaomi 15 12GB/512GB (Green)",
@@ -6311,6 +8422,19 @@
    }
   ],
   "apple-iphone-16-pro-max": [
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 480000,
+    "title": "iPhone 16 Pro Max 256GB 1 SIM Desert Titanium",
+    "url": "https://ibolit.mobi/product/iphone-16-pro-max-256gb-1-sim-desert-titanium/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red251_1.jpg",
+    "sku": "IBL:2136",
+    "ram": null,
+    "color": "Desert Titanium",
+    "shop": "ibolit"
+   },
    {
     "id": "apple-iphone-16-pro-max",
     "price": 539000,
@@ -6485,6 +8609,58 @@
    },
    {
     "id": "apple-iphone-16-plus",
+    "price": 399000,
+    "title": "iPhone 16 Plus 128GB Black",
+    "url": "https://ibolit.mobi/product/iphone-16-plus-128gb-black/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red223_1.jpg",
+    "sku": "IBL:2108",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 399000,
+    "title": "iPhone 16 Plus 128GB Pink",
+    "url": "https://ibolit.mobi/product/iphone-16-plus-128gb-pink/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red225_1.jpg",
+    "sku": "IBL:2110",
+    "ram": null,
+    "color": "Pink",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 399000,
+    "title": "iPhone 16 Plus 128GB Teal",
+    "url": "https://ibolit.mobi/product/iphone-16-plus-128gb-teal/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red227_1.jpg",
+    "sku": "IBL:2112",
+    "ram": null,
+    "color": "Teal",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 399000,
+    "title": "iPhone 16 Plus 128GB White",
+    "url": "https://ibolit.mobi/product/iphone-16-plus-128gb-white/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red224_1.jpg",
+    "sku": "IBL:2109",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-plus",
     "price": 409900,
     "storage": 128,
     "title": "iPhone 16 Plus, 128 GB, Black",
@@ -6591,6 +8767,32 @@
     "ram": null,
     "color": "Pink",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 465000,
+    "title": "iPhone 16 Plus 256GB Black",
+    "url": "https://ibolit.mobi/product/iphone-16-plus-256gb-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red228_1.jpg",
+    "sku": "IBL:2113",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 465000,
+    "title": "iPhone 16 Plus 256GB Pink",
+    "url": "https://ibolit.mobi/product/iphone-16-plus-256gb-pink/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red470_1.jpg",
+    "sku": "IBL:2355",
+    "ram": null,
+    "color": "Pink",
+    "shop": "ibolit"
    }
   ],
   "samsung-galaxy-tab-a11-plus": [
@@ -6793,6 +8995,19 @@
     "ram": null,
     "color": "Gray",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 119000,
+    "title": "Samsung galaxy Tab A11 +5G 6/128gb",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a11-5g-6-128gb/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/02/a11.jpg",
+    "sku": "IBL:9081",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    }
   ],
   "xiaomi-redmi-watch-5-lite": [
@@ -6885,6 +9100,19 @@
     "ram": null,
     "color": "Black",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-buds-4",
+    "price": 52000,
+    "title": "Samsung Galaxy Buds 4",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-buds-4/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/25.jpg",
+    "sku": "IBL:90582",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "samsung-galaxy-buds-4",
@@ -7026,6 +9254,19 @@
    },
    {
     "id": "samsung-galaxy-buds-4-pro",
+    "price": 89000,
+    "title": "Samsung Galaxy Buds 4 Pro",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-buds-4-pro/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/05/51qehqsjzpl._ac_sl1500_.jpg",
+    "sku": "IBL:90581",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
     "price": 99000,
     "storage": null,
     "title": "Buy Samsung Galaxy Buds 4 Pro R640 in Armenia - AllSell",
@@ -7116,6 +9357,19 @@
    },
    {
     "id": "apple-airpods-pro-2",
+    "price": 83900,
+    "title": "Apple AirPods Pro 2 USB-C",
+    "url": "https://ibolit.mobi/product/apple-airpods-pro-2-usb-c/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/note_987.jpg",
+    "sku": "IBL:986",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-airpods-pro-2",
     "price": 89000,
     "title": "Apple AirPods Pro 2",
     "url": "https://3dplanet.am/en/store/product/apple-airpods-pro-2",
@@ -7164,6 +9418,19 @@
     "ram": 8,
     "color": null,
     "shop": "mobilecentre"
+   },
+   {
+    "id": "lenovo-ideapad-slim-3-15",
+    "price": 297000,
+    "title": "Lenovo IdeaPad Slim 3 15IRH8 83EM008WIN",
+    "url": "https://ibolit.mobi/product/lenovo-ideapad-slim-3-15irh8-83em008win/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/note_1661.jpg",
+    "sku": "IBL:1660",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    },
    {
     "id": "lenovo-ideapad-slim-3-15",
@@ -7293,6 +9560,45 @@
   "apple-iphone-16-pro": [
    {
     "id": "apple-iphone-16-pro",
+    "price": 279000,
+    "title": "iPhone 16 Pro 128GB 2SIM Natural Titanium USED",
+    "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-2sim-natural-titanium-used/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red275_1.jpg",
+    "sku": "IBL:9000",
+    "ram": null,
+    "color": "Natural Titanium",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 449000,
+    "title": "iPhone 16 Pro 128GB 2SIM Black Titanium",
+    "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-black-titanium-dual/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red276_1.jpg",
+    "sku": "IBL:2161",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 449000,
+    "title": "iPhone 16 Pro 128GB 2SIM White Titanium",
+    "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-white-titanium-dual/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red274_1.jpg",
+    "sku": "IBL:2159",
+    "ram": null,
+    "color": "White Titanium",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-pro",
     "price": 459900,
     "storage": 128,
     "title": "iPhone 16 Pro, 128 GB, Black Titanium",
@@ -7392,6 +9698,19 @@
    },
    {
     "id": "apple-iphone-16-pro",
+    "price": 489000,
+    "title": "iPhone 16 Pro 256GB 2SIM Black Titanium",
+    "url": "https://ibolit.mobi/product/iphone-16-pro-256gb-2sim-black-titanium/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red236_1.jpg",
+    "sku": "IBL:2121",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-16-pro",
     "price": 509900,
     "storage": 256,
     "title": "iPhone 16 Pro, 256 GB, Black Titanium",
@@ -7480,6 +9799,32 @@
   "apple-ipad-air-13-m4": [
    {
     "id": "apple-ipad-air-13-m4",
+    "price": 439000,
+    "title": "Apple iPad Air 13/M4/ 128 GB Wifi 2026 Purple",
+    "url": "https://ibolit.mobi/product/apple-ipad-air-13-m4-128-gb-wifi-2026-purple/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/fial11.webp",
+    "sku": "IBL:90561",
+    "ram": null,
+    "color": "Purple",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "price": 439000,
+    "title": "Apple iPad Air 13/M4/128gb Wifi 2026 Starlight",
+    "url": "https://ibolit.mobi/product/ipad-air-13-m4-128gb-wifi-2026-starlight/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/star11.webp",
+    "sku": "IBL:90563",
+    "ram": null,
+    "color": "Starlight",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
     "price": 459000,
     "storage": null,
     "title": "iPad Air 13 M4",
@@ -7533,6 +9878,19 @@
    },
    {
     "id": "xiaomi-pad-7-pro",
+    "price": 249000,
+    "title": "Xiaomi Pad 7 Pro 12/512GB (Green)",
+    "url": "https://ibolit.mobi/product/xiaomi-pad-7-pro-12-512gb-green/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/ipafd7.jpg",
+    "sku": "IBL:8000",
+    "ram": null,
+    "color": "Green",
+    "shop": "ibolit"
+   },
+   {
+    "id": "xiaomi-pad-7-pro",
     "price": 249900,
     "storage": null,
     "title": "Xiaomi Pad 7 Pro",
@@ -7547,6 +9905,19 @@
   "apple-ipad-pro-13-m5": [
    {
     "id": "apple-ipad-pro-13-m5",
+    "price": 595000,
+    "title": "Apple iPad Pro 13/M5/ WIFI/256gb Silver",
+    "url": "https://ibolit.mobi/product/apple-ipad-pro-13-m5-wifi-256gb-silver/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/02/61oexjvn1_l._ac_sl1500_.jpg",
+    "sku": "IBL:9078",
+    "ram": null,
+    "color": "Silver",
+    "shop": "ibolit"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
     "price": 639000,
     "storage": null,
     "title": "iPad Pro 13 M5",
@@ -7556,6 +9927,19 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
+    "price": 659000,
+    "title": "Apple Ipad Pro 13/M5/ 256gb WIFI+Cellular/ black",
+    "url": "https://ibolit.mobi/product/apple-ipad-pro-13-m5-256gb-wifi-cellular-black/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/02/opad_pro_1_4.jpg",
+    "sku": "IBL:9080",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    }
   ],
   "xiaomi-pad-7": [
@@ -7873,6 +10257,19 @@
     "ram": null,
     "color": null,
     "shop": "redstore"
+   },
+   {
+    "id": "apple-macbook-air-15-m4",
+    "price": 730000,
+    "title": "Macbook Air 15.3\"/M4/24GB/512GB/MC7D4/Sky blue",
+    "url": "https://ibolit.mobi/product/macbook-air-15-3-m4-24gb-512gb-mc7d4-sky-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/04/6_16_3_2.jpg",
+    "sku": "IBL:90511",
+    "ram": 24,
+    "color": null,
+    "shop": "ibolit"
    }
   ],
   "asus-zenbook-14-um3402ya-oled": [
@@ -7929,6 +10326,19 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "asus-vivobook-go-15-e1504fa-oled",
+    "price": 321000,
+    "title": "Asus VivoBook E1504FA-L1834 OLED",
+    "url": "https://ibolit.mobi/product/asus-vivobook-e1504fa-l1834-oled/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/vovo-3.webp",
+    "sku": "IBL:8057",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
    }
   ],
   "apple-imac-24-m4": [
@@ -8001,6 +10411,19 @@
     "ram": null,
     "color": "Space Black",
     "shop": "redstore"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-max",
+    "price": 1859000,
+    "title": "Apple Macbook Pro 14\"/M5 Max/36GB RAM/2TB/MGDU4/Space Black",
+    "url": "https://ibolit.mobi/product/apple-macbook-pro-14-m5-max-36gb-ram-2tb-mgdu4-space-black/",
+    "storage": 2048,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/09/741.jpg",
+    "sku": "IBL:90786",
+    "ram": 36,
+    "color": "Space Black",
+    "shop": "ibolit"
    }
   ],
   "sony-wh-1000xm6": [
@@ -8042,6 +10465,188 @@
     "ram": null,
     "color": "Silver",
     "shop": "redstore"
+   },
+   {
+    "id": "sony-wh-1000xm6",
+    "price": 189000,
+    "title": "Sony WH-1000XM6 Best Wireless",
+    "url": "https://ibolit.mobi/product/sony-wh-1000xm6-best-wireless/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/nhh.webp",
+    "sku": "IBL:90717",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   }
+  ],
+  "oneplus-13": [
+   {
+    "id": "oneplus-13",
+    "price": 464900,
+    "storage": 512,
+    "title": "Սմարթ հեռախոս ONEPLUS 13 16GB 512GB (Arctic Down) (CPH2653) (5011110325)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-oneplus-13-16gb-512gb-arctic-down-cph2653-5011110325.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hunvar/Smartfon/13%2016GB%20512GB%20(Arctic%20Down)%20(CPH2653)%20(716143030)-500x500.jpg",
+    "ram": 16,
+    "color": null,
+    "shop": "vega"
+   }
+  ],
+  "bo-beoplay-h95": [
+   {
+    "id": "bo-beoplay-h95",
+    "price": 509000,
+    "title": "Bang &amp; Olufsen Beoplay H95 Headphones - Gold Tone",
+    "url": "https://ibolit.mobi/product/bang-olufsen-beoplay-h95-headphones-gold-tone/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_235.jpg",
+    "sku": "IBL:6552",
+    "ram": null,
+    "color": "Gold Tone",
+    "shop": "ibolit"
+   },
+   {
+    "id": "bo-beoplay-h95",
+    "price": 509000,
+    "title": "Bang &amp; Olufsen Beoplay H95 Headphones, Chestnut",
+    "url": "https://ibolit.mobi/product/bang-olufsen-beoplay-h95-headphones-chestnut/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_234.jpg",
+    "sku": "IBL:6551",
+    "ram": null,
+    "color": "Chestnut",
+    "shop": "ibolit"
+   },
+   {
+    "id": "bo-beoplay-h95",
+    "price": 509000,
+    "title": "Beoplay H95 Headphones by Bang &amp; Olufsen, Black",
+    "url": "https://ibolit.mobi/product/beoplay-h95-headphones-by-bang-olufsen-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_236.jpg",
+    "sku": "IBL:6553",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "bo-beoplay-h95",
+    "price": 509000,
+    "title": "Beoplay H95 Headphones by Bang &amp; Olufsen, Navy",
+    "url": "https://ibolit.mobi/product/beoplay-h95-headphones-by-bang-olufsen-navy/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_233.jpg",
+    "sku": "IBL:6550",
+    "ram": null,
+    "color": "Navy",
+    "shop": "ibolit"
+   }
+  ],
+  "jbl-partybox-1000": [
+   {
+    "id": "jbl-partybox-1000",
+    "price": 429900,
+    "title": "JBL PartyBox 1000",
+    "url": "https://ibolit.mobi/product/jbl-partybox-1000/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red1776_1.jpg",
+    "sku": "IBL:3655",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit"
+   }
+  ],
+  "marshall-major-v": [
+   {
+    "id": "marshall-major-v",
+    "price": 47000,
+    "title": "Marshall Major V Black",
+    "url": "https://ibolit.mobi/product/marshall-major-v-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red2346_1.jpg",
+    "sku": "IBL:4218",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   },
+   {
+    "id": "marshall-major-v",
+    "price": 47000,
+    "title": "Marshall Major V Cream",
+    "url": "https://ibolit.mobi/product/marshall-major-v-cream/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/01/major-bej.webp",
+    "sku": "IBL:801199",
+    "ram": null,
+    "color": "Cream",
+    "shop": "ibolit"
+   }
+  ],
+  "marshall-stanmore-3": [
+   {
+    "id": "marshall-stanmore-3",
+    "price": 139000,
+    "title": "Marshall Stanmore III Black",
+    "url": "https://ibolit.mobi/product/marshall-stanmore-iii-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red1883_1.jpg",
+    "sku": "IBL:3761",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit"
+   }
+  ],
+  "sonos-era-300": [
+   {
+    "id": "sonos-era-300",
+    "price": 225000,
+    "title": "Sonos Era 300 White",
+    "url": "https://ibolit.mobi/product/sonos-era-300-white/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/note_1843.jpg",
+    "sku": "IBL:1842",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit"
+   }
+  ],
+  "google-pixel-10-pro": [
+   {
+    "id": "google-pixel-10-pro",
+    "price": 409000,
+    "title": "Google Pixel 10 Pro 16/128GB Jade",
+    "url": "https://ibolit.mobi/product/google-pixel-10-pro-16-128gb-jade/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/08/0.webp",
+    "sku": "IBL:90764",
+    "ram": null,
+    "color": "Jade",
+    "shop": "ibolit"
+   },
+   {
+    "id": "google-pixel-10-pro",
+    "price": 439000,
+    "title": "Google Pixel 10 Pro 16/256GB Porcelain",
+    "url": "https://ibolit.mobi/product/google-pixel-10-pro-16-256gb-porcelain/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/08/0-pixel-10-pro-porcelain-860_1764591046.webp",
+    "sku": "IBL:90763",
+    "ram": null,
+    "color": "Porcelain",
+    "shop": "ibolit"
    }
   ]
  }

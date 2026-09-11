@@ -82,6 +82,42 @@ function cutout(img){
     for(let p=0;p<W*H;p++) if(px[p*4+3]<16) bg[p]=1;   // the source's own alpha is the mask
   }
 
+  // PASS 2 - the shadow plinth. Apple's press renders stand the device on a soft grey wedge,
+  // 196-245, nowhere near the near-white test, so it survived the strict fill as a white slab
+  // under every iPhone and MacBook. It is a GRADIENT though: it fades into the backdrop with no
+  // edge at all, while a genuinely white product (AirPods) is cut off from the backdrop by its
+  // own silhouette. So this pass walks out from what is already transparent and only steps
+  // across SMALL luminance changes - it flows down the plinth and stops dead at a product edge.
+  // Neutral only, so a pale product colour (rose gold, mint) cannot be walked into either.
+  // Whether PASS 2 can be trusted is a property of the PHOTO, not of the constants: it separates
+  // plinth from product by the edge between them, and a WHITE product on a white backdrop has no
+  // such edge - the walk eats it instead. So measure what survived the strict fill first. If most
+  // of the product is already light, the walk is refused and that photo keeps its faint plinth,
+  // which is the cheaper mistake by a wide margin.
+  let lightN=0, opaqueN=0;
+  for(let p=0;p<W*H;p++) if(!bg[p]){ opaqueN++; if((px[p*4]+px[p*4+1]+px[p*4+2])/3>=200) lightN++; }
+  const soft = opaqueN>0 && lightN/opaqueN < 0.62;
+
+  if(!pre && soft){
+    const SOFT_MIN=150, SOFT_STEP=9, SOFT_SAT=12;
+    const lum=p=>(px[p*4]+px[p*4+1]+px[p*4+2])/3;
+    const sat=p=>Math.max(px[p*4],px[p*4+1],px[p*4+2])-Math.min(px[p*4],px[p*4+1],px[p*4+2]);
+    const q=[];
+    for(let p=0;p<W*H;p++) if(bg[p]) q.push(p);
+    for(let h=0;h<q.length;h++){
+      const p=q[h], x=p%W, y=(p-x)/W, L=lum(p);
+      for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
+        const nx=x+dx, ny=y+dy;
+        if(nx<0||ny<0||nx>=W||ny>=H) continue;
+        const n=ny*W+nx;
+        if(bg[n]) continue;
+        const nl=lum(n);
+        if(nl<SOFT_MIN||sat(n)>SOFT_SAT||Math.abs(nl-L)>SOFT_STEP) continue;
+        bg[n]=1; px[n*4+3]=0; q.push(n);
+      }
+    }
+  }
+
   // soften the white halo: opaque light pixels touching transparency fade out
   if(!pre) for(let y=0;y<H;y++)for(let x=0;x<W;x++){
     const p=y*W+x; if(bg[p])continue;
@@ -113,6 +149,35 @@ function cutout(img){
     const widest=Math.max.apply(null,segs.map(g=>g[1]-g[0]+1));
     const keep=segs.filter(g=>(g[1]-g[0]+1)>=widest*0.45);
     if(keep.length){keepX0=keep[0][0];keepX1=keep[keep.length-1][1];}
+  }
+
+  // Speckles. Whatever the fill could not reach - a rim of the plinth, a fragment of a dropped
+  // panel, a fleck of studio dust - stays opaque, and on the site's dark cards those flecks read
+  // as white grit scattered round the product. Label the opaque pixels and keep only the parts
+  // big enough to BE the product: anything under 2% of the largest piece is debris. A genuine
+  // front|back pair, or a pair of earbuds, are comparable in size and both survive.
+  {
+    const lab=new Int32Array(W*H).fill(-1), size=[], q=new Int32Array(W*H);
+    let nlab=0;
+    for(let p0=0;p0<W*H;p0++){
+      if(px[p0*4+3]<=24||lab[p0]>=0) continue;
+      let head=0,tail=0; q[tail++]=p0; lab[p0]=nlab; let n=0;
+      while(head<tail){
+        const p=q[head++], x=p%W, y=(p-x)/W; n++;
+        for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
+          const nx=x+dx, ny=y+dy;
+          if(nx<0||ny<0||nx>=W||ny>=H) continue;
+          const m=ny*W+nx;
+          if(lab[m]>=0||px[m*4+3]<=24) continue;
+          lab[m]=nlab; q[tail++]=m;
+        }
+      }
+      size[nlab++]=n;
+    }
+    if(nlab>1){
+      const big=Math.max.apply(null,size), min=big*0.02;
+      for(let p=0;p<W*H;p++) if(lab[p]>=0&&size[lab[p]]<min) px[p*4+3]=0;
+    }
   }
 
   // Trim to the product's bounding box so every phone fills its frame consistently.
