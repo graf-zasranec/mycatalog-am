@@ -136,19 +136,56 @@ function cutout(img){
     }
   }
 
+  // The contact shadow under a LIGHT product is the one the walk above refuses to touch, because
+  // on that photo it cannot tell shadow from product. It has a place, though: it pools at the
+  // BOTTOM. So a second, much meaner walk runs only in the lowest fifth of the frame and may
+  // remove at most a sixteenth of the product. A white strap that loops down there is a large
+  // fraction and trips the cap; a shadow is not.
+  if(!pre && !soft){
+    const lum=p=>(px[p*4]+px[p*4+1]+px[p*4+2])/3;
+    const sat=p=>Math.max(px[p*4],px[p*4+1],px[p*4+2])-Math.min(px[p*4],px[p*4+1],px[p*4+2]);
+    let y0=H;
+    for(let p=0;p<W*H;p++) if(!bg[p]){ const y=(p-(p%W))/W; if(y<y0) y0=y; }
+    const from=Math.round(y0+(H-y0)*0.80);
+    const take=new Uint8Array(W*H), q=[];
+    for(let y=from;y<H;y++) for(let x=0;x<W;x++){ const p=y*W+x; if(bg[p]) q.push(p); }
+    for(let h=0;h<q.length;h++){
+      const p=q[h], x=p%W, y=(p-x)/W, L=lum(p);
+      for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
+        const nx=x+dx, ny=y+dy;
+        if(nx<0||ny<from||nx>=W||ny>=H) continue;
+        const n=ny*W+nx;
+        if(bg[n]||take[n]) continue;
+        const nl=lum(n);
+        if(nl<205||sat(n)>10||Math.abs(nl-L)>6) continue;
+        take[n]=1; q.push(n);
+      }
+    }
+    let want=0; for(let p=0;p<W*H;p++) if(take[p]) want++;
+    if(want<=opaqueN*0.0625) for(let p=0;p<W*H;p++) if(take[p]){ bg[p]=1; px[p*4+3]=0; }
+  }
+
   // Background trapped INSIDE the product - the hole in a headphone's headband, the gap between
   // a watch and its strap - is unreachable from the border, so the fill left it and it read as a
   // white blob on the dark cards. Same near-white test as the border fill, so a product body
   // (235-248) is never touched, and only regions big enough to be real holes are cleared, which
   // leaves specular glints on glass alone.
-  if(!pre){
+  // Gated on the same measurement as PASS 2, for the same reason: on a product that is itself backdrop-white -
+  // the white Galaxy S26 Ultra - an enclosed flat region is as likely to BE the product's back as
+  // to be a hole through it, and clearing it tore the phone open. Dark products with light holes,
+  // which is every pair of headphones, are exactly the case where it can tell.
+  if(!pre && soft){
     // The backdrop is a studio flat, almost always exactly 255. A hole must MATCH it, not merely
     // be near-white: a glossy white phone back has blown highlights at 249-255 too, and clearing
     // those punched ragged holes straight through the Realme and the OnePlus. So the test is the
     // sampled backdrop colour within a couple of levels, and the region has to be flat.
-    let ref=255, n=0;
-    for(let x=0;x<W;x+=7){ ref+=(px[x*4]+px[x*4+1]+px[x*4+2])/3; n++; }
-    ref=Math.round(ref/(n+1));
+    // Median of all four borders, not the mean of the top row: a product that reaches the top
+    // edge drags a mean off the backdrop value, and then flat() starts matching the product.
+    const edge=[];
+    for(let x=0;x<W;x+=5){ for(const y of [0,H-1]){ const i=(y*W+x)*4; edge.push((px[i]+px[i+1]+px[i+2])/3); } }
+    for(let y=0;y<H;y+=5){ for(const x of [0,W-1]){ const i=(y*W+x)*4; edge.push((px[i]+px[i+1]+px[i+2])/3); } }
+    edge.sort((a,b)=>a-b);
+    const ref=Math.round(edge[edge.length>>1]);
     const flat=i=>{const r=px[i],g=px[i+1],b=px[i+2];
       return Math.abs(r-ref)<=2 && Math.abs(g-ref)<=2 && Math.abs(b-ref)<=2;};
     const MINHOLE=Math.max(64,Math.round(W*H*0.015));   // a headband gap is several % of the frame; a blown highlight on a white back is not
@@ -228,7 +265,8 @@ function cutout(img){
       size[nlab++]=n;
     }
     if(nlab>1){
-      const big=Math.max.apply(null,size), min=big*0.02;
+      let big=0; for(const v of size) if(v>big) big=v;   // apply() over 10k+ components throws
+      const min=big*0.02;
       for(let p=0;p<W*H;p++) if(lab[p]>=0&&size[lab[p]]<min) px[p*4+3]=0;
     }
   }
