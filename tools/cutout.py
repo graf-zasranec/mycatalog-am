@@ -58,13 +58,23 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
     if n:
         edge = set(np.unique(np.concatenate([holes[0], holes[-1], holes[:, 0], holes[:, -1]])))
         area = a.size
+        filled = np.zeros_like(a, dtype=bool)
         for lab, size in zip(*np.unique(holes, return_counts=True)):
             if lab == 0 or lab in edge:
                 continue
             if not solid_cat and size > area * 0.02:
                 continue
-            a[holes == lab] = 255
-        img.putalpha(Image.fromarray(a))
+            filled |= holes == lab
+        if filled.any():
+            a[filled] = 255
+            # remove() does not just clear alpha, it zeroes the colour of every pixel it drops.
+            # Turning the alpha back on alone paints the hole BLACK - the iMac's pale wallpaper
+            # came back as tar. The colour is still in the photo, so take it from there.
+            rgb = np.array(img.convert('RGB'))
+            rgb[filled] = np.array(src.convert('RGB'))[filled]
+            img = Image.fromarray(np.dstack([rgb, a]), 'RGBA')
+        else:
+            img.putalpha(Image.fromarray(a))
 
     solid = img.getchannel('A').point(lambda v: 255 if v > 24 else 0)
     bbox = solid.getbbox()
