@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-90IFTnU32tFPcTesypjsKBoIb/tFleorG+R8c6p1268='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-z3HVvOkXvdejrDE79Z+J2cCTIQU4EjipkGFwNqStEk8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 111 մոդել, 11 խանութի գներ դրամով, համեմատում և զտիչներ։">
 <link rel="canonical" href="https://graf-zasranec.github.io/mycatalog-am/">
@@ -100,6 +100,9 @@ a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 button,input,select,textarea{font:inherit;color:inherit}
 :where(a,button,input,select,summary,[tabindex]):focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+/* render() focuses the new page's heading so a screen reader announces it. That is not a
+   keyboard action, so it must not draw a focus ring round the title. */
+[tabindex="-1"]:focus,[tabindex="-1"]:focus-visible{outline:none}
 .num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;white-space:nowrap}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:-9999px;background:var(--surface);padding:10px 14px;border-radius:8px;z-index:99}
@@ -419,7 +422,9 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .bs button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
 .pprice2{border-top:1px solid var(--line2);padding:18px 0 4px}
 .pprice2 .lb{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.pprice2 b{display:block;font-size:44px;font-weight:800;letter-spacing:-.045em;line-height:1.05;margin-top:8px}
+/* > b, not any b: the price rail's "save up to" line lives inside .pprice2 too, and its <b>
+   was inheriting 44px and display:block - a giant orange number on its own line. */
+.pprice2>b{display:block;font-size:44px;font-weight:800;letter-spacing:-.045em;line-height:1.05;margin-top:8px}
 .pprice2 .save2{font-size:0.9375rem;font-weight:700;color:var(--brand);margin-top:6px}
 .pprice2 .shopn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:4px}
 .pcta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
@@ -643,7 +648,7 @@ a.store:hover .nm{color:var(--brand)}
   .chip{height:36px}
   .oc{padding:16px}
   .pname{letter-spacing:-.045em}
-  .pprice2 b{font-size:32px}
+  .pprice2>b{font-size:32px}
   .rail,.ends{max-width:none}
 }
 @media (max-width:420px){
@@ -1329,7 +1334,12 @@ function biggestSavings(n = 3) {
     for (const [tier, prices] of byTier) {
       if (prices.length < 2) continue;
       const lo = Math.min(...prices), hi = Math.max(...prices);
-      if (hi > lo && (!best || hi - lo > best.gap)) best = { p, lo, hi, gap: hi - lo, tier };
+      if (hi > lo && (!best || hi - lo > best.gap)) {
+        // tier is the internal "storage|ram" key; keep the capacity itself for the label, or it
+        // gets formatted as a capacity and prints as "2048I36 GB"
+        const [stor] = tier.split('|');
+        best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor };
+      }
     }
     return best;
   }).filter(Boolean).sort((a, b) => b.gap - a.gap).slice(0, n);
@@ -1379,7 +1389,7 @@ function mastHero() {
       <div class="save-grid">${sv.map(r => `<a class="sv" href="#/p/${esc(r.p.id)}">
         <span class="t"><img src="${IMG(r.p.id)}" alt="" loading="lazy"></span>
         <span>
-          <span class="nm">${esc(fullName(r.p))}${r.tier !== 'base' ? ` · ${esc(gb(r.tier, r.p.variantUnit))}` : ''}</span>
+          <span class="nm">${esc(fullName(r.p))}${r.storage ? ` · ${esc(gb(r.storage, r.p.variantUnit))}` : ''}</span>
           <span class="amt num">${money(r.gap)} ֏<small>${esc(x('saveUpTo'))}</small></span>
           <span class="bar"><i style="width:${Math.max(8, Math.round(r.gap / r.hi * 100))}%"></i></span>
           <span class="rng"><span>${money(r.lo)}</span><span>${money(r.hi)}</span></span>

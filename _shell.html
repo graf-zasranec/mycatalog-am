@@ -77,6 +77,9 @@ a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 button,input,select,textarea{font:inherit;color:inherit}
 :where(a,button,input,select,summary,[tabindex]):focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+/* render() focuses the new page's heading so a screen reader announces it. That is not a
+   keyboard action, so it must not draw a focus ring round the title. */
+[tabindex="-1"]:focus,[tabindex="-1"]:focus-visible{outline:none}
 .num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;white-space:nowrap}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:-9999px;background:var(--surface);padding:10px 14px;border-radius:8px;z-index:99}
@@ -396,7 +399,9 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .bs button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
 .pprice2{border-top:1px solid var(--line2);padding:18px 0 4px}
 .pprice2 .lb{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.pprice2 b{display:block;font-size:44px;font-weight:800;letter-spacing:-.045em;line-height:1.05;margin-top:8px}
+/* > b, not any b: the price rail's "save up to" line lives inside .pprice2 too, and its <b>
+   was inheriting 44px and display:block - a giant orange number on its own line. */
+.pprice2>b{display:block;font-size:44px;font-weight:800;letter-spacing:-.045em;line-height:1.05;margin-top:8px}
 .pprice2 .save2{font-size:0.9375rem;font-weight:700;color:var(--brand);margin-top:6px}
 .pprice2 .shopn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:4px}
 .pcta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
@@ -620,7 +625,7 @@ a.store:hover .nm{color:var(--brand)}
   .chip{height:36px}
   .oc{padding:16px}
   .pname{letter-spacing:-.045em}
-  .pprice2 b{font-size:32px}
+  .pprice2>b{font-size:32px}
   .rail,.ends{max-width:none}
 }
 @media (max-width:420px){

@@ -535,7 +535,12 @@ function biggestSavings(n = 3) {
     for (const [tier, prices] of byTier) {
       if (prices.length < 2) continue;
       const lo = Math.min(...prices), hi = Math.max(...prices);
-      if (hi > lo && (!best || hi - lo > best.gap)) best = { p, lo, hi, gap: hi - lo, tier };
+      if (hi > lo && (!best || hi - lo > best.gap)) {
+        // tier is the internal "storage|ram" key; keep the capacity itself for the label, or it
+        // gets formatted as a capacity and prints as "2048I36 GB"
+        const [stor] = tier.split('|');
+        best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor };
+      }
     }
     return best;
   }).filter(Boolean).sort((a, b) => b.gap - a.gap).slice(0, n);
@@ -585,7 +590,7 @@ function mastHero() {
       <div class="save-grid">${sv.map(r => `<a class="sv" href="#/p/${esc(r.p.id)}">
         <span class="t"><img src="${IMG(r.p.id)}" alt="" loading="lazy"></span>
         <span>
-          <span class="nm">${esc(fullName(r.p))}${r.tier !== 'base' ? ` · ${esc(gb(r.tier, r.p.variantUnit))}` : ''}</span>
+          <span class="nm">${esc(fullName(r.p))}${r.storage ? ` · ${esc(gb(r.storage, r.p.variantUnit))}` : ''}</span>
           <span class="amt num">${money(r.gap)} ֏<small>${esc(x('saveUpTo'))}</small></span>
           <span class="bar"><i style="width:${Math.max(8, Math.round(r.gap / r.hi * 100))}%"></i></span>
           <span class="rng"><span>${money(r.lo)}</span><span>${money(r.hi)}</span></span>
