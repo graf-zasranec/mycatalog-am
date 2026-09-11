@@ -318,12 +318,14 @@ function paintChrome() {
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
 function paintTray() {
+  // the tray exists to get you here - on the compare page it is the same list twice over
+  const onCompare = (location.hash.replace(/^#/, '') || '/') === '/compare';
   // opacity only, so it fades rather than blinks and survives the reduced-motion rule
   const lock = st.cmp.length ? catOf(byId(st.cmp[0])) : '';
   $$('[data-cat][data-cmp]').forEach(b =>
     b.classList.toggle('off', !!lock && b.dataset.cat !== lock));
   const tray = $('#tray');
-  if (!st.cmp.length) { tray.hidden = true; document.body.style.paddingBottom = ''; return; }
+  if (!st.cmp.length || onCompare) { tray.hidden = true; document.body.style.paddingBottom = ''; return; }
   tray.hidden = false;
   tray.innerHTML = `<div class="shell">` +
     st.cmp.map(id => `<span class="tslot"><img src="${IMG(id)}" alt="" loading="lazy"></span>`).join('') +
@@ -1080,8 +1082,8 @@ function compareView() {
   if (!ps.length) return `<div class="shell"><div class="empty" style="margin-top:40px">
     <b>${esc(t('compare.empty'))}</b><p style="margin-bottom:18px">${esc(x('emptyS'))}</p>
     <a class="btn" href="#/">${esc(t('compare.add_phone'))}</a></div></div>`;
-  const n = ps.length, slot = n < MAXCMP ? 1 : 0;
-  const cols = `200px repeat(${n + slot},minmax(0,1fr))`;
+  const n = ps.length, canAdd = n < MAXCMP;
+  const cols = `200px repeat(${n},minmax(0,1fr))`;
 
   let rows = '', nDiff = 0, nSame = 0;
   for (const [g, defs] of GROUPS) {
@@ -1103,8 +1105,7 @@ function compareView() {
       // value that is simply missing.
       const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
       rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
-        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
-        (slot ? `<div class="c ${cls}"></div>` : '');
+        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('');
     }
   }
   return `<div class="shell">
@@ -1114,19 +1115,17 @@ function compareView() {
       <span class="scount">${nSame} ${esc(x('same'))}</span>
       <span style="flex:1"></span>
       <label class="sw"><input type="checkbox" id="diffonly"><span class="tr"></span>${esc(t('compare.diff_only'))}</label>
-      <a class="btn ghost sm" href="#/">${esc(t('compare.add_phone'))}</a>
+      ${canAdd ? `<button class="btn ghost sm addbtn" data-act="openadd">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
       <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
         ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
-        ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(t('detail.add_compare'))}">
-          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
           <b>${esc(fullName(p))}</b></div>`).join('')}
-        ${slot ? `<div class="ccol"><b class="addlbl">${esc(t('detail.add_compare'))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
     </div>
@@ -1147,6 +1146,9 @@ function compareView() {
       </div>
     </div></div>`;
 }
+
+// The button says what it will add, because "Add phone" on a headphone comparison is wrong.
+const addLabel = p => t('compare.add_x').replace('{x}', (X[st.lang].cats || {})[catOf(p)] || '');
 
 // The picker only offers what can actually join this table: same product type, not already in
 // it. A query is optional - with the field empty it shows the most popular candidates.
@@ -1238,13 +1240,21 @@ document.addEventListener('click', e => {
   }
   const act = e.target.closest('[data-act]');
   if (act && act.dataset.act === 'openadd') {
-    const m = $('#cmodal'); if (m) { m.hidden = false; paintCmpRes(); $('#cmq')?.focus(); }
+    const m = $('#cmodal');
+    if (m) {
+      m.hidden = false; paintCmpRes();
+      // TWO frames between leaving display:none and adding the class - one is not enough for
+      // the browser to have computed the starting style, and the fade is skipped.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        m.classList.add('on'); $('#cmq')?.focus();
+      }));
+    }
     return;
   }
-  if (act && act.dataset.act === 'closeadd') { const m = $('#cmodal'); if (m) m.hidden = true; return; }
-  if (e.target.id === 'cmodal') { e.target.hidden = true; return; }   // click the backdrop to close
+  if (act && act.dataset.act === 'closeadd') { closeAdd(); return; }
+  if (e.target.id === 'cmodal') { closeAdd(); return; }               // click the backdrop to close
   const add = e.target.closest('[data-add]');
-  if (add) { if (toggleCmp(add.dataset.add)) render(true); return; }
+  if (add) { if (toggleCmp(add.dataset.add)) { closeAdd(); render(true); } return; }
   const dot = e.target.closest('[data-hero]');
   if (dot) { heroGo(+dot.dataset.hero); heroTick(); return; }
   const L = e.target.closest('[data-lang]');
@@ -1403,10 +1413,14 @@ heroTick();
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 const scrollMem = new Map();
 const remembers = h => h === '/' || h.startsWith('/c/');
-addEventListener('keydown', e => {
-  if (e.key !== 'Escape') return;
-  const m = $('#cmodal'); if (m && !m.hidden) { m.hidden = true; }
-});
+// Fade out, then hide: hiding first would cut the transition off before it ran. Under reduced
+// motion the duration is the same but the transition is dropped, so it simply closes.
+function closeAdd() {
+  const m = $('#cmodal'); if (!m || m.hidden) return;
+  m.classList.remove('on');
+  setTimeout(() => { m.hidden = true; }, 200);
+}
+addEventListener('keydown', e => { if (e.key === 'Escape') closeAdd(); });
 window.addEventListener('hashchange', e => {
   const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
   if (remembers(from)) scrollMem.set(from, window.scrollY);

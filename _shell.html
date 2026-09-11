@@ -468,19 +468,18 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .ctable .c:last-child{border-right:0}
 .ctable .c.worse{color:var(--bad);font-weight:700}
 
-/* ---- compare: the empty slot and the picker it opens ---- */
-.addslot{width:100%;min-height:84px;border:1.5px dashed var(--line2);border-radius:var(--r-md);
-  background:none;cursor:pointer;display:grid;place-items:center;transition:border-color .2s ease,background .2s ease}
-.addslot:hover{border-color:var(--brand);background:var(--brand-soft)}
-.addslot svg{width:30px;height:30px;stroke:var(--muted);fill:none;stroke-width:1.6;stroke-linecap:round}
-.addslot:hover svg{stroke:var(--brand)}
-.addlbl{color:var(--muted);font-weight:600}
-/* opacity only, so it fades in under the reduced-motion rule instead of being cut */
+/* ---- compare: the add button and the picker it opens ---- */
+.addbtn{display:inline-flex;align-items:center;gap:7px}
+.addbtn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+/* Opacity carries the fade, so it survives the reduced-motion rule; the small lift is the part
+   that rule drops. Hiding is delayed in JS by the same 200ms, or the fade never runs. */
 .cmodal{position:fixed;inset:0;z-index:60;background:rgba(12,16,24,.55);
-  display:grid;place-items:center;padding:20px;animation:none}
+  display:grid;place-items:center;padding:20px;opacity:0;transition:opacity .2s ease}
+.cmodal.on{opacity:1}
 .cmbox{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
   width:min(560px,100%);max-height:min(80vh,640px);overflow:auto;padding:22px;position:relative;
-  box-shadow:var(--shadow-m)}
+  box-shadow:var(--shadow-m);transform:translateY(8px);transition:transform .22s cubic-bezier(.2,.7,.3,1)}
+.cmodal.on .cmbox{transform:none}
 .cmbox h2{font-size:20px;font-weight:800;letter-spacing:-.03em;margin:0 0 14px}
 .cmx{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:0;
   background:var(--surface2);color:var(--muted);font-size:19px;cursor:pointer}
