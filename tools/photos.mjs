@@ -106,6 +106,10 @@ for (const p of P) {
   for (const s of slots) { const press = (PRESS[p.id] || {})[s.slug]; if (press) s.urls = [press, ...s.urls]; }
   for (const s of slots) {
     const have = (man[p.id] || []).find(e => e.slug === s.slug);
+    // A hand-picked shot wins on framing, not on pixel count: the shops sell the Smart Band 10
+    // with a 550px photo of the wrong thing, which beat a correct 590px crop on size alone and
+    // silently undid the fix. pin:true means leave this slot alone.
+    if (have && have.pin) { kept++; continue; }
     const havePath = have && `${SRC}/${have.src}`;
     const haveEdge = havePath && fs.existsSync(havePath) ? Math.max(...dimensions(fs.readFileSync(havePath))) : 0;
     const win = await best(s.urls);

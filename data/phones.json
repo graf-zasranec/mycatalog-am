@@ -5223,7 +5223,7 @@
   "popularity": 64,
   "accent": "#26313a",
   "display": {
-   "size": 8.0,
+   "size": 8,
    "type": "Dynamic AMOLED 2X",
    "resolution": "2184x1968",
    "refresh": 120,
@@ -5386,7 +5386,7 @@
   "popularity": 66,
   "accent": "#3b3b40",
   "display": {
-   "size": 8.0,
+   "size": 8,
    "type": "Dynamic AMOLED 2X",
    "resolution": "2504x2256",
    "refresh": 120,
@@ -5601,7 +5601,7 @@
    "wireless": 25
   },
   "body": {
-   "height": 163.0,
+   "height": 163,
    "width": 77.6,
    "thickness": 8.25,
    "weight": 227,
@@ -5794,5 +5794,848 @@
    "released"
   ],
   "category": "phone"
+ },
+ {
+  "id": "xiaomi-15",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "15",
+  "tier": "flagship",
+  "released": "2025-03",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 62,
+  "accent": "#C9CCD1",
+  "display": {
+   "size": 6.36,
+   "type": "LTPO AMOLED",
+   "resolution": "2670x1200",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3200,
+   "protection": "Xiaomi Shield Glass"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+   "gpu": "Adreno 830"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 299000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 329000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.6, 23mm wide, Light Fusion 900 sensor, OIS",
+   "ultrawide": "50 MP, f/2.2, 14mm, 115-degree",
+   "telephoto": "50 MP, f/2.0, 60mm, 2.6x optical zoom, OIS",
+   "front": "32 MP, f/2.0",
+   "video": "8K@24fps"
+  },
+  "battery": {
+   "capacity": 5240,
+   "wired": 90,
+   "wireless": 50
+  },
+  "body": {
+   "height": 152.3,
+   "width": 71.2,
+   "thickness": 8.08,
+   "weight": 191,
+   "materials": "Aluminium frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, HyperOS 2",
+  "updates": "4 OS upgrades and 6 years of security updates",
+  "colors": [
+   "Black",
+   "White",
+   "Green",
+   "Liquid Silver"
+  ],
+  "summaryEn": "A compact Snapdragon 8 Elite flagship: 6.36-inch screen, three 50 MP Leica cameras and 90W charging.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "poco-f7-ultra",
+  "category": "phone",
+  "brand": "POCO",
+  "name": "POCO F7 Ultra",
+  "tier": "flagship",
+  "released": "2025-03",
+  "priceAmd": 317900,
+  "priceAmdMax": 317900,
+  "popularity": 54,
+  "accent": "#2C2F36",
+  "display": {
+   "size": 6.67,
+   "type": "AMOLED",
+   "resolution": "3200x1440",
+   "refresh": 120,
+   "ppi": 526,
+   "brightness": 3200,
+   "protection": "Gorilla Glass Victus 2"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+   "gpu": "Adreno 830"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 317900
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 359900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.6, 24mm wide, Light Hunter 800 sensor, OIS",
+   "ultrawide": "32 MP, f/2.0, 15mm, 119-degree",
+   "telephoto": "50 MP, f/2.0, 60mm, 2.5x optical zoom, OIS",
+   "front": "32 MP, f/2.2",
+   "video": "8K@24fps"
+  },
+  "battery": {
+   "capacity": 5300,
+   "wired": 120,
+   "wireless": 50
+  },
+  "body": {
+   "height": 160.3,
+   "width": 75,
+   "thickness": 8.4,
+   "weight": 212,
+   "materials": "Aluminium frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, HyperOS 2",
+  "updates": "4 OS upgrades and 6 years of security updates",
+  "colors": [
+   "Black",
+   "Yellow"
+  ],
+  "summaryEn": "Flagship silicon at a mid-range price: Snapdragon 8 Elite, a 1440p 120 Hz screen and 120W charging.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "poco-m7-pro",
+  "category": "phone",
+  "brand": "POCO",
+  "name": "POCO M7 Pro 5G",
+  "tier": "budget",
+  "released": "2024-12",
+  "priceAmd": 96900,
+  "priceAmdMax": 96900,
+  "popularity": 46,
+  "accent": "#B9BEC6",
+  "display": {
+   "size": 6.67,
+   "type": "AMOLED",
+   "resolution": "2400x1080",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 2100,
+   "protection": "Gorilla Glass 5"
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 7025-Ultra",
+   "process": "6 nm",
+   "cpu": "Octa-core (2x2.5 GHz Cortex-A78 + 6x2.0 GHz Cortex-A55)",
+   "gpu": "Mali-G615 MC2"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 96900
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.5, 24mm wide, OIS",
+   "ultrawide": null,
+   "telephoto": null,
+   "front": "20 MP, f/2.2",
+   "video": "1080p@60fps"
+  },
+  "battery": {
+   "capacity": 5110,
+   "wired": 45,
+   "wireless": 0
+  },
+  "body": {
+   "height": 162.4,
+   "width": 75.7,
+   "thickness": 7.99,
+   "weight": 190,
+   "materials": "Plastic frame, plastic back",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, HyperOS",
+  "updates": "2 OS upgrades and 4 years of security updates",
+  "colors": [
+   "Black",
+   "Silver",
+   "Green"
+  ],
+  "summaryEn": "A budget 5G phone that still gets an AMOLED 120 Hz screen, OIS and 45W charging.",
+  "unsure": [
+   "chipset.antutu",
+   "colors",
+   "priceAmd",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "realme-16",
+  "category": "phone",
+  "brand": "Realme",
+  "name": "Realme 16 5G Air",
+  "tier": "midrange",
+  "aliases": [
+   "Realme 16 5G",
+   "Realme 16"
+  ],
+  "released": "2025-11",
+  "priceAmd": 159900,
+  "priceAmdMax": 159900,
+  "popularity": 44,
+  "accent": "#2A2C31",
+  "display": {
+   "size": 6.57,
+   "type": "AMOLED",
+   "resolution": "2372x1080",
+   "refresh": 120,
+   "ppi": 397,
+   "brightness": 2000
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 6400 Turbo",
+   "process": "6 nm",
+   "cpu": "Octa-core (2x2.5 GHz Cortex-A76 + 6x2.0 GHz Cortex-A55)",
+   "gpu": "Mali-G57 MC2"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 159900
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "50 MP, f/1.8, wide",
+   "ultrawide": null,
+   "telephoto": null,
+   "front": "50 MP",
+   "video": "1080p@30fps"
+  },
+  "battery": {
+   "capacity": 7000,
+   "wired": 45,
+   "wireless": 0
+  },
+  "body": {
+   "height": 158.3,
+   "width": 75.1,
+   "thickness": 8.1,
+   "weight": 183,
+   "materials": "Plastic frame, plastic back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.4",
+   "nfc": false,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 16",
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "A thin 5G mid-ranger built around a 7000 mAh battery and a 120 Hz AMOLED screen.",
+  "unsure": [
+   "released",
+   "display.refresh",
+   "display.brightness",
+   "battery.wired",
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "connectivity.nfc",
+   "colors",
+   "chipset.antutu",
+   "popularity"
+  ]
+ },
+ {
+  "id": "realme-gt-7t",
+  "category": "phone",
+  "brand": "Realme",
+  "name": "Realme GT 7T",
+  "tier": "upper-mid",
+  "released": "2025-05",
+  "priceAmd": 212900,
+  "priceAmdMax": 212900,
+  "popularity": 48,
+  "accent": "#2E3138",
+  "display": {
+   "size": 6.8,
+   "type": "AMOLED",
+   "resolution": "2800x1280",
+   "refresh": 120,
+   "ppi": 453,
+   "brightness": 6000
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 8400 Max",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x3.25 GHz Cortex-A725 + 3x3.0 GHz Cortex-A725 + 4x2.1 GHz Cortex-A725)",
+   "gpu": "Mali-G720 MC7"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 212900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 239900
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8, wide, OIS",
+   "ultrawide": "8 MP, f/2.2, 112-degree",
+   "telephoto": null,
+   "front": "32 MP, f/2.5",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 7000,
+   "wired": 100,
+   "wireless": 0
+  },
+  "body": {
+   "height": 162.4,
+   "width": 76,
+   "thickness": 8.3,
+   "weight": 202,
+   "materials": "Plastic frame, glass back",
+   "ip": "IP69"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, realme UI 6",
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "Dimensity 8400 Max, a 6.8-inch 120 Hz AMOLED and a 7000 mAh battery with 100W charging.",
+  "unsure": [
+   "display.brightness",
+   "battery.wired",
+   "body.ip",
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "colors",
+   "chipset.antutu",
+   "popularity"
+  ]
+ },
+ {
+  "id": "honor-400",
+  "category": "phone",
+  "brand": "Honor",
+  "name": "Honor 400",
+  "tier": "midrange",
+  "released": "2025-05",
+  "priceAmd": 154900,
+  "priceAmdMax": 154900,
+  "popularity": 47,
+  "accent": "#C9A96A",
+  "display": {
+   "size": 6.55,
+   "type": "AMOLED",
+   "resolution": "2736x1264",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 5000
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7 Gen 3",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x2.63 GHz Cortex-A715 + 3x2.4 GHz Cortex-A715 + 4x1.8 GHz Cortex-A510)",
+   "gpu": "Adreno 720"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 154900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 184900
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "200 MP, f/1.9, 24mm wide, OIS",
+   "ultrawide": "12 MP, f/2.2, 112-degree",
+   "telephoto": null,
+   "front": "50 MP, f/2.0",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 66,
+   "wireless": 0
+  },
+  "body": {
+   "height": 156.5,
+   "width": 74.6,
+   "thickness": 7.3,
+   "weight": 184,
+   "materials": "Plastic frame, glass back",
+   "ip": "IP66"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, MagicOS 9",
+  "updates": "6 OS upgrades and 6 years of security updates",
+  "colors": [
+   "Black",
+   "Desert Gold",
+   "Silver"
+  ],
+  "summaryEn": "A 200 MP main camera and a 6000 mAh silicon-carbon battery in a 7.3 mm body.",
+  "unsure": [
+   "chipset.antutu",
+   "body.ip",
+   "colors",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "honor-400-pro",
+  "category": "phone",
+  "brand": "Honor",
+  "name": "Honor 400 Pro",
+  "tier": "upper-mid",
+  "released": "2025-05",
+  "priceAmd": 224900,
+  "priceAmdMax": 224900,
+  "popularity": 49,
+  "accent": "#8D9199",
+  "display": {
+   "size": 6.7,
+   "type": "AMOLED",
+   "resolution": "2800x1280",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 5000
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Gen 3",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x3.3 GHz Cortex-X4 + 5x3.2 GHz Cortex-A720 + 2x2.3 GHz Cortex-A520)",
+   "gpu": "Adreno 750"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 224900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 254900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.9, 24mm wide, OIS",
+   "ultrawide": "12 MP, f/2.2, 112-degree",
+   "telephoto": "50 MP, f/2.4, 3x optical zoom, OIS",
+   "front": "50 MP, f/2.0",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 5300,
+   "wired": 100,
+   "wireless": 50
+  },
+  "body": {
+   "height": 161.4,
+   "width": 74.6,
+   "thickness": 8.1,
+   "weight": 205,
+   "materials": "Aluminium frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, MagicOS 9",
+  "updates": "6 OS upgrades and 6 years of security updates",
+  "colors": [
+   "Black",
+   "Lunar Grey"
+  ],
+  "summaryEn": "200 MP main and 3x periscope cameras, 100W wired and 50W wireless charging.",
+  "unsure": [
+   "chipset.name",
+   "chipset.antutu",
+   "body.ip",
+   "colors",
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "nothing-phone-3",
+  "category": "phone",
+  "brand": "Nothing",
+  "name": "Phone (3)",
+  "tier": "flagship",
+  "aliases": [
+   "Nothing Phone 3",
+   "Nothing Phone (3)"
+  ],
+  "released": "2025-07",
+  "priceAmd": 379000,
+  "priceAmdMax": 379000,
+  "popularity": 51,
+  "accent": "#E7E7E7",
+  "display": {
+   "size": 6.67,
+   "type": "LTPS AMOLED",
+   "resolution": "2800x1260",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 4500,
+   "protection": "Gorilla Glass 7i"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8s Gen 4",
+   "process": "4 nm",
+   "cpu": "Octa-core (1x3.21 GHz Cortex-X4 + 3x3.01 GHz Cortex-A720 + 2x2.8 GHz Cortex-A720 + 2x2.02 GHz Cortex-A720)",
+   "gpu": "Adreno 825"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 339000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 379000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.7, 24mm wide, OIS",
+   "ultrawide": "50 MP, f/2.2, 114-degree",
+   "telephoto": "50 MP, f/2.7, 3x periscope zoom, OIS",
+   "front": "50 MP, f/2.2",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 5150,
+   "wired": 65,
+   "wireless": 15
+  },
+  "body": {
+   "height": 160.6,
+   "width": 75.6,
+   "thickness": 8.99,
+   "weight": 218,
+   "materials": "Aluminium frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 15, Nothing OS 3.5",
+  "updates": "5 OS upgrades and 7 years of security updates",
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "Nothing’s first true flagship: a Glyph Matrix back, three 50 MP cameras and Wi-Fi 7.",
+  "unsure": [
+   "chipset.antutu",
+   "priceAmd",
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-wh-1000xm6",
+  "category": "headphones",
+  "brand": "Sony",
+  "name": "WH-1000XM6",
+  "tier": "flagship",
+  "released": "2025-05",
+  "priceAmd": 221900,
+  "priceAmdMax": 221900,
+  "popularity": 52,
+  "accent": "#2A2D33",
+  "audio": {
+   "type": "Over-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "materials": "Plastic frame, synthetic leather ear pads",
+   "weight": 254
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "USB-C charging, 3.5 mm jack"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 221900
+   }
+  ],
+  "colors": [
+   "Black",
+   "Silver",
+   "Blue"
+  ],
+  "summaryEn": "Sony’s reference noise-cancelling headphones: 30 hours, LDAC and multipoint, now folding again.",
+  "unsure": [
+   "colors",
+   "popularity"
+  ]
+ },
+ {
+  "id": "apple-macbook-air-13-m4",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Air 13 M4",
+  "tier": "upper-mid",
+  "aliases": [
+   "MacBook Air 13.6-inch M4",
+   "MacBook Air 13.6 M4",
+   "MacBook Air 136 M4"
+  ],
+  "released": "2025-03",
+  "priceAmd": 469000,
+  "priceAmdMax": 649000,
+  "popularity": 88,
+  "accent": "#A9C4D9",
+  "display": {
+   "size": 13.6,
+   "type": "Liquid Retina IPS LCD",
+   "resolution": "2560x1664",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M4",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M4 8- or 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 469000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 549000
+   },
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 649000
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody",
+   "weight": 1240
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Sky Blue",
+   "Silver",
+   "Starlight",
+   "Midnight"
+  ],
+  "summaryEn": "The M4 Air in Sky Blue — still the laptop most people should buy, now one generation cheaper.",
+  "unsure": [
+   "priceAmdMax",
+   "popularity"
+  ]
+ },
+ {
+  "id": "apple-imac-24-m4",
+  "category": "desktop",
+  "brand": "Apple",
+  "name": "iMac 24 M4",
+  "tier": "upper-mid",
+  "aliases": [
+   "24-inch iMac M4",
+   "iMac 24-inch M4"
+  ],
+  "released": "2024-10",
+  "priceAmd": 747900,
+  "priceAmdMax": 947900,
+  "popularity": 58,
+  "accent": "#7BA7D7",
+  "display": {
+   "size": 23.5,
+   "type": "4.5K Retina IPS LCD",
+   "resolution": "4480x2520",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M4",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M4 8- or 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 747900
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 847900
+   },
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 947900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody",
+   "dimensions": "461 x 547 x 115 mm",
+   "weight": 4480
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3",
+   "ports": "2x or 4x Thunderbolt 4, Gigabit Ethernet"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Blue",
+   "Purple",
+   "Pink",
+   "Orange",
+   "Yellow",
+   "Green",
+   "Silver"
+  ],
+  "summaryEn": "A Mac in seven colours with the computer inside the screen: 4.5K 24-inch display, M4 processor.",
+  "unsure": [
+   "priceAmdMax",
+   "popularity"
+  ]
  }
 ]

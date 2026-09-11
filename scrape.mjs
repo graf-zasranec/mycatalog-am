@@ -76,7 +76,7 @@ KEYS.sort((a, b) => b.key.length - a.key.length);
 // Without this, "Apple iPhone 16 Pro Max" would be priced as an iPhone 16.
 // 'xl' earns its place here: telecomarmenia's "Google Pixel 10 Pro XL" was being priced as a
 // Pixel 10 Pro, which is a different, cheaper phone.
-const QUALIFIERS = new Set(['pro', 'max', 'plus', 'ultra', 'mini', 'air', 'fe', 'lite', 'neo', 'edge', 'e', 'se', 'xl']);
+const QUALIFIERS = new Set(['pro', 'max', 'plus', 'ultra', 'mini', 'air', 'fe', 'lite', 'neo', 'edge', 'e', 'se', 'xl', 'fold', 'flip']);
 
 // Shops list accessories under the phone's own name ("Clear Case with MagSafe for iPhone 15"),
 // and those were being priced AS the phone. Anything that names an accessory, or is sold
@@ -198,12 +198,23 @@ const D = String.fromCharCode(34);
 const priceAfter = (html, anchor, span = 240) => {
   const i = html.indexOf(anchor);
   if (i < 0) return 0;
-  const m = clean(html.slice(i, i + span)).match(/\d[\d\s.,  ]*\d|\d/);
+  // The anchor is a class attribute, so it lands INSIDE the opening tag and every attribute
+  // after it is in reading range. iStore added style="color: #000000" to its price span and the
+  // first number found became 000000, which is how a working shop silently went to zero offers.
+  // Start at the end of that tag, where the text actually begins.
+  const j = html.indexOf('>', i);
+  const from = j < 0 ? i : j + 1;
+  const m = clean(html.slice(from, from + span)).match(/\d[\d\s.,  ]*\d|\d/);
   return m ? Number(m[0].replace(/[^\d]/g, '').slice(0, 8)) : 0;
 };
 const clean = s => String(s).replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, String.fromCharCode(34)).replace(/&#0?39;|&apos;/g, String.fromCharCode(39)).replace(/\s+/g, ' ').trim();
 const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)]
   .flatMap(m => { try { const j = JSON.parse(m[1]); return Array.isArray(j) ? j : [j]; } catch { return []; } });
+
+// REDstore and 3DPlanet both publish a schema.org Product on the page, which is the price the
+// shop means rather than whatever number the markup happens to show. One reader serves both.
+const ldProduct = html => ldJson(html).flatMap(j => j['@graph'] || j).find(j => j && j['@type'] === 'Product');
+const ldOffer = p => { const o = p && p.offers; return Array.isArray(o) ? o[0] : o; };
 
 /* ---------- self-test:  node scrape.mjs --selftest  (no network) ---------- */
 if (process.argv[2] === '--selftest') {
@@ -224,6 +235,8 @@ if (process.argv[2] === '--selftest') {
     ['samsung-galaxy-s25-ultra', 'samsung-galaxy-s25-ultra-512gb'],
     ['samsung-galaxy-s25', 'samsung-galaxy-s25-256gb'],
     ['apple-iphone-17', 'Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520)'],
+    // REDstore's Pixel 10 Pro Fold was being sold as a Pixel 10 Pro, at 725,000 instead of 475,900
+    [null, 'google-pixel-10-pro-fold-16gb256gb-moonstone'],
     ['xiaomi-15t', 'xiaomi-15t-256gb'],
     ['poco-x7-pro', 'poco-x7-pro-512gb'],
     ['apple-iphone-17-pro-max', 'apple-iphone-17-pro-max-2tb'],
@@ -281,6 +294,8 @@ if (process.argv[2] === '--selftest') {
     ['<p>no price class here</p>', 'e-shop__main-price', 0],
     // the number must come from the anchored block, not from a capacity sitting before it
     ['256 GB <span class="e-shop__main-price">89' + NB + '900</span>', 'e-shop__main-price', 89900],
+    // an attribute after the anchor is still inside the tag: the colour must not be the price
+    ['<span class="price is-action" style="color: #000000"> 397' + NB + '900 </span>', 'class="price is-action"', 397900],
   ];
   for (const [html, anchor, want] of priceCases) {
     const got = priceAfter(html, anchor);
@@ -288,6 +303,36 @@ if (process.argv[2] === '--selftest') {
   }
   console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
+}
+
+// Shared by the two JSON-LD shops: filter candidate URLs by matchPhone first so only pages that
+// can be one of our products are fetched, then read name/price/stock out of the Product block.
+async function crawlLd(urls, cap = 6) {
+  const out = [], per = {};
+  for (const u of urls) {
+    const id = matchPhone(u);
+    if (!id) continue;
+    per[id] = (per[id] || 0) + 1;
+    if (per[id] > cap) continue;                 // cap requests per model
+    const html = await get(u); await sleep(DELAY_MS);
+    if (!html) continue;
+    const p = ldProduct(html), o = ldOffer(p);
+    if (!o) continue;
+    const price = Math.round(Number(o.price));
+    const title = clean(p.name || '');
+    if (!price || price < 5000 || !title || !safeUrl(u)) continue;
+    const img = Array.isArray(p.image) ? p.image[0] : p.image;
+    out.push({
+      id, price, title, url: u,
+      storage: storageOf(title) ?? storageOf(u),
+      // Only an explicit out-of-stock value drops the offer; a missing availability means the
+      // shop did not say, and those are kept the way every other adapter keeps them.
+      inStock: !/OutOfStock|SoldOut|Discontinued|BackOrder|PreOrder/i.test(String(o.availability || '')),
+      image: safeUrl(String(img || '')) || null,
+      sku: p.sku || null
+    });
+  }
+  return out;
 }
 
 const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
@@ -601,6 +646,43 @@ const SHOPS = {
         out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock, image: img });
       }
       return out;
+    }
+  },
+
+  redstore: {
+    name: 'REDstore', site: 'https://redstore.am', note: 'electronics retailer',
+    warranty: 'https://redstore.am/en/pages/warranty',
+    async run() {
+      // robots.txt allows /product/ and names no sitemap, but /sitemap.xml is a normal index.
+      const idx = await get('https://redstore.am/sitemap.xml'); await sleep(DELAY_MS);
+      const maps = [...idx.matchAll(/<loc>(https:\/\/redstore\.am\/sitemaps\/products\/\d+\.xml)<\/loc>/g)].map(m => m[1]);
+      const urls = [];
+      for (const m of maps) {
+        const xml = await get(m); await sleep(DELAY_MS);
+        // each product is listed three times, once per locale; the English page is the one we read
+        for (const u of xml.matchAll(/<loc>(https:\/\/redstore\.am\/en\/product\/[^<]+)<\/loc>/g)) urls.push(u[1]);
+      }
+      return crawlLd(urls);
+    }
+  },
+
+  planet3d: {
+    name: '3DPlanet', site: 'https://3dplanet.am', note: 'Apple and electronics retailer',
+    async run() {
+      // Their sitemap lists four pages and no products, so the store index and the category
+      // pages it links to are the crawl. robots.txt forbids query strings, so the filtered
+      // category links (?brands[]=3) are dropped here rather than requested.
+      const pages = new Set(['https://3dplanet.am/en/store']);
+      const prods = new Set();
+      for (const page of pages) {                 // a Set visits values added while iterating
+        const html = await get(page); await sleep(DELAY_MS);
+        if (!html) continue;
+        for (const m of html.matchAll(/href="(https:\/\/3dplanet\.am\/en\/store\/[^"?]+)"/g)) {
+          if (m[1].includes('/product/')) prods.add(m[1]);
+          else if (pages.size < 40) pages.add(m[1]);
+        }
+      }
+      return crawlLd([...prods]);
     }
   },
 

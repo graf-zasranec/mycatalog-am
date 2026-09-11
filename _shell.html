@@ -75,6 +75,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 .skip:focus{left:10px;top:10px}
 .shell{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 @media (max-width:600px){.shell{padding:0 14px}}
+/* A 1240px column on a 2560px monitor is 660px of empty gutter each side and still only four
+   cards per row. The content column grows in two steps instead, which the auto-fill grid below
+   turns into more cards per row rather than wider ones. */
+@media (min-width:1500px){:root{--maxw:1420px}}
+@media (min-width:1920px){:root{--maxw:1680px}}
 
 /* ============ masthead: nav, cover and catalogue are ONE ivory field ============ */
 .mast{background:var(--bg);color:var(--text)}
@@ -140,12 +145,16 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cv-s.on{opacity:1;pointer-events:auto}
 .cv-m img{max-height:400px;width:auto;filter:drop-shadow(0 26px 44px rgba(22,28,40,.24))}
 /* Column 2 so they sit under the phone, not under the headline. */
-.cv-dots{grid-column:2;display:flex;justify-content:center;gap:0;margin-top:6px}
-/* 6px dot inside a 24px target: the padding is the hit area, background-clip keeps the dot small */
-.cv-dots button{width:24px;height:24px;padding:9px;border:0;border-radius:50%;cursor:pointer;
-  background:var(--line2);background-clip:content-box;transition:background .2s ease,transform .2s ease}
-.cv-dots button:hover{background:var(--muted)}
-.cv-dots button.on{background:var(--brand);transform:scale(1.25)}
+.cv-dots{grid-column:2;display:flex;justify-content:center;gap:3px;margin-top:8px}
+/* A 4px mark inside a 20px target: the button is the hit area, the ::before is all you see.
+   The current slide grows sideways into a short bar instead of a big circle - it reads as
+   "you are here" at a glance and still never gets taller than 4px. */
+.cv-dots button{width:20px;height:20px;padding:0;border:0;background:none;cursor:pointer;
+  display:grid;place-items:center}
+.cv-dots button::before{content:"";width:4px;height:4px;border-radius:999px;background:var(--line2);
+  transition:width .3s ease,background .3s ease}
+.cv-dots button:hover::before{background:var(--muted)}
+.cv-dots button.on::before{width:14px;background:var(--brand)}
 .cv-sub{grid-column:1;color:var(--body);font-size:1.03rem;max-width:44ch;margin-top:20px;position:relative;z-index:2}
 .cv-acts{grid-column:1;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative;z-index:2}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;
@@ -167,7 +176,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .save-hd h2{font-size:26px;font-weight:800;letter-spacing:-.035em}
 .save-hd p{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .save-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media (max-width:820px){.save-grid{grid-template-columns:1fr}}
+@media (max-width:1000px){.save-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.save-grid{grid-template-columns:1fr}}
 .sv{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;align-items:center;
   background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px;
   transition:border-color .14s}
@@ -285,15 +295,18 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ================= product grid ================= */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
+/* auto-fill lands one card short on a tablet - 768px minus the shell padding and a scrollbar is
+   just under what three 232px columns need - so the tablet range asks for three outright. */
+@media (min-width:620px) and (max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:520px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}}
 .pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:12px;
   display:flex;flex-direction:column;position:relative;transition:box-shadow .16s ease,transform .16s ease,border-color .16s}
 .pcard:hover{border-color:var(--text);box-shadow:none;transform:none}
 .pshot{position:relative;background:var(--shot);border-radius:var(--r-md);height:190px;display:block;padding:14px;overflow:hidden}
 @media (max-width:520px){.pshot{height:140px;padding:10px}}
-.fav{position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
-  background:var(--surface);display:grid;place-items:center;cursor:pointer;z-index:2;box-shadow:var(--shadow-s)}
-.fav svg{width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;transition:transform .15s ease}
+.fav{position:absolute;top:7px;right:7px;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);
+  background:var(--surface);display:grid;place-items:center;cursor:pointer;z-index:2}
+.fav svg{width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;transition:transform .15s ease}
 /* already compared: the plus turns into the x that removes it */
 .fav[aria-pressed="true"] svg{transform:rotate(45deg)}
 .fav:hover svg{stroke:var(--brand)}
@@ -519,10 +532,18 @@ a.store:hover .nm{color:var(--brand)}
 .pshot img,.sim .t img,.ccol .t img,.tslot img{
   width:100%;height:100%;max-width:100%;max-height:100%;
   object-fit:contain;object-position:center}
-/* two stacked shots per card so the colour can crossfade; only opacity moves */
-.pshot[data-cyc] img{position:absolute;inset:14px;width:auto;height:auto;opacity:0;transition:opacity .7s ease}
+/* Two stacked shots per card so the colour can crossfade; only opacity moves.
+   1.4s and eased at both ends: at .7s the swap still read as a blink.
+   The size must be spelled out: a replaced element with width:auto takes its INTRINSIC width,
+   so inset alone left every cycling photo at natural size in the top-left corner instead of
+   contained and centred the way the static cards are. */
+.pshot[data-cyc]{--cyc-pad:14px}
+.pshot[data-cyc] img{position:absolute;inset:var(--cyc-pad);
+  width:calc(100% - 2 * var(--cyc-pad));height:calc(100% - 2 * var(--cyc-pad));
+  object-fit:contain;object-position:center;opacity:0;
+  transition:opacity 1.4s cubic-bezier(.4,0,.2,1)}
 .pshot[data-cyc] img.on{opacity:1}
-@media (max-width:520px){.pshot[data-cyc] img{inset:10px}}
+@media (max-width:520px){.pshot[data-cyc]{--cyc-pad:10px}}
 .pshot,.sim .t,.ccol .t,.tslot{overflow:hidden}
 /* the compare header must grow with its content, never clip the name onto the photo */
 .ccol{min-width:0;height:auto}
@@ -542,9 +563,10 @@ a.store:hover .nm{color:var(--brand)}
   .rail,.ends{max-width:none}
 }
 @media (max-width:420px){
-  .grid{grid-template-columns:1fr}
   .ocards{grid-template-columns:1fr}
 }
+/* below this the two-up cards get too cramped to read */
+@media (max-width:330px){.grid{grid-template-columns:1fr}}
 
 
 /* ---- compare: the differences are the whole point, so make them read first ---- */
@@ -643,7 +665,11 @@ a.store:hover .nm{color:var(--brand)}
 .backbtn span{font-size:1rem;line-height:1}
 .navrow .crumb{padding:0}
 
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Reduced motion is about things MOVING, not about things fading: a cross-fade has no
+   direction and no displacement. So keyframe animations and every transform transition still
+   go, and opacity is the one property left free - which is what makes the hero and the card
+   colour changes dissolve rather than cut for anyone with the setting on. */
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-property:opacity!important}}
 </style>
 
 <a class="skip" href="#main">Main</a>

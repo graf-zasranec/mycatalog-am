@@ -723,11 +723,21 @@ const cycShots = id => [...new Set(Object.entries(CIMG[id] || {}).filter(([k]) =
 // Cards with more than one colour photo walk through them. One timer for the whole grid, and a
 // card only advances while it is on screen: crossfading rows nobody is looking at is wasted work
 // on a slow machine. Opacity only, so there is no layout to redo.
+// Every card used to flip on the same 3s beat, so the whole grid blinked at once. Each card
+// now carries its own due time with a random gap, which desynchronises them for free - one
+// timer still drives the lot, it just asks each card whether its own moment has come.
+const CYC_MIN = 4500, CYC_SPREAD = 4000;
+const cycDue = () => performance.now() + CYC_MIN + Math.random() * CYC_SPREAD;
 setInterval(() => {
   if (document.hidden) return;
+  const now = performance.now();
   for (const el of $$('[data-cyc]')) {
     const r = el.getBoundingClientRect();
     if (r.bottom < 0 || r.top > innerHeight) continue;
+    // first sight of a card: give it a random moment rather than the next tick
+    if (!el._cycDue) { el._cycDue = cycDue(); continue; }
+    if (now < el._cycDue) continue;
+    el._cycDue = cycDue();
     const shots = cycShots(el.dataset.cyc);
     const im = el.querySelectorAll('img');
     if (shots.length < 2 || im.length < 2) continue;
@@ -739,7 +749,7 @@ setInterval(() => {
     nxt.classList.add('on');
     cur.classList.remove('on');
   }
-}, 3000);
+}, 500);
 
 let SEL = { id: null, color: null, storage: null, ram: null };
 function initSel(p) {
