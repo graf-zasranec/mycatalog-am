@@ -1125,7 +1125,7 @@ function render(keepScroll) {
   st.cat = mc || (h === '/' ? '' : st.cat);
   if (st.cat !== wasCat) { pruneFilters(); if (!sortKeys().includes(st.sort)) st.sort = 'popular'; }
   const m = h.match(/^\/p\/(.+)$/);
-  let mo;
+  let mo, restoreY = null;
   const main = $('#main');
   if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — MyCatalog'; window.scrollTo(0, keepScroll ? y : 0); }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
@@ -1141,7 +1141,10 @@ function render(keepScroll) {
   else {
     main.innerHTML = catalogView(); refresh();
     document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'MyCatalog';
-    window.scrollTo(0, keepScroll ? window.scrollY : (remembers(h) ? (scrollMem.get(h) || 0) : 0));
+    // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
+    // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
+    // to the front page landed ~1480px past where you left, while a category page was exact.
+    restoreY = keepScroll ? window.scrollY : (remembers(h) ? (scrollMem.get(h) || 0) : 0);
   }
   if (!keepScroll) {
     const head = $('#main h1') || $('#main h2');
@@ -1152,6 +1155,7 @@ function render(keepScroll) {
   const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact'].includes(h) && !h.startsWith('/offers/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
+  if (restoreY !== null) window.scrollTo(0, restoreY);
 }
 
 /* ================= events ================= */
@@ -1307,6 +1311,10 @@ heroTick();
 
 // Going back to the catalogue should land where you left it, not at the top. Product pages
 // still open at the top - you clicked them to read them from the start.
+// The browser restores its OWN remembered scroll on a history back, asynchronously and after
+// our scrollTo has already run, so the two fought and the catalogue landed at neither position.
+// Turning that off makes scrollMem the single source of truth.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 const scrollMem = new Map();
 const remembers = h => h === '/' || h.startsWith('/c/');
 window.addEventListener('hashchange', e => {

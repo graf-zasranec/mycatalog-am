@@ -816,7 +816,8 @@ fs.writeFileSync('data/prices.json', JSON.stringify({
   // rule that keeps list.am out keeps yerevanmobile out.
   excluded: {
     'list.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /',
-    'yerevanmobile.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /'
+    'yerevanmobile.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /',
+    'notebookcentre.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /'
   },
   shops, offers
 }, null, 1));
