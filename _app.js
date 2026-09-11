@@ -239,7 +239,12 @@ const GROUPS = [
   ['sec.display', [
     ['f.screen_size', p => p.display.size + '″', p => p.display.size],
     ['f.screen_type', p => p.display.type],
-    ['f.resolution', p => p.display.resolution],
+    // 43 entries write the long side first and 10 write it last, which side by side in a
+    // comparison reads as two unrelated numbers. Normalised here rather than in the data, so a
+    // future scrape cannot reintroduce it: always short x long, the way every spec sheet lists it.
+    ['f.resolution', p => { const r = p.display?.resolution; if (!r) return null;
+      const m = /^(\d+)\s*[x×]\s*(\d+)$/.exec(String(r).trim());
+      return m ? Math.min(+m[1], +m[2]) + '×' + Math.max(+m[1], +m[2]) : r; }],
     ['f.refresh_rate', p => p.display.refresh + ' ' + u('hz'), p => p.display.refresh, 1],
     ['f.ppi', p => p.display.ppi && p.display.ppi + ' ppi', p => p.display.ppi, 1],
     ['f.brightness', p => p.display.brightness && money(p.display.brightness) + ' ' + u('nit'), p => p.display.brightness, 1],

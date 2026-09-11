@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-z3HVvOkXvdejrDE79Z+J2cCTIQU4EjipkGFwNqStEk8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-hI10XWDSK44qjx9dJUyW7MiSIeUGADDKmsbNqZy9AQM='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 111 մոդել, 11 խանութի գներ դրամով, համեմատում և զտիչներ։">
 <link rel="canonical" href="https://graf-zasranec.github.io/mycatalog-am/">
@@ -1038,7 +1038,12 @@ const GROUPS = [
   ['sec.display', [
     ['f.screen_size', p => p.display.size + '″', p => p.display.size],
     ['f.screen_type', p => p.display.type],
-    ['f.resolution', p => p.display.resolution],
+    // 43 entries write the long side first and 10 write it last, which side by side in a
+    // comparison reads as two unrelated numbers. Normalised here rather than in the data, so a
+    // future scrape cannot reintroduce it: always short x long, the way every spec sheet lists it.
+    ['f.resolution', p => { const r = p.display?.resolution; if (!r) return null;
+      const m = /^(\d+)\s*[x×]\s*(\d+)$/.exec(String(r).trim());
+      return m ? Math.min(+m[1], +m[2]) + '×' + Math.max(+m[1], +m[2]) : r; }],
     ['f.refresh_rate', p => p.display.refresh + ' ' + u('hz'), p => p.display.refresh, 1],
     ['f.ppi', p => p.display.ppi && p.display.ppi + ' ppi', p => p.display.ppi, 1],
     ['f.brightness', p => p.display.brightness && money(p.display.brightness) + ' ' + u('nit'), p => p.display.brightness, 1],
