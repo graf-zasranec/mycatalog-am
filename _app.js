@@ -317,38 +317,29 @@ function paintChrome() {
   $('#foot').innerHTML = `<b>MyCatalog</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
+// The compare bar is gone: picking a product goes straight to the comparison, so a second copy
+// of the same list pinned over the page was doing nothing but covering the last row. What is
+// kept is the count in the header, the dimming of cards that cannot join, and the one message
+// that has to be said out loud when a pick is refused.
 function paintTray() {
-  // the tray exists to get you here - on the compare page it is the same list twice over
-  const onCompare = (location.hash.replace(/^#/, '') || '/') === '/compare';
-  // opacity only, so it fades rather than blinks and survives the reduced-motion rule
+  $('#hdrCmpN').textContent = st.cmp.length;
   const lock = st.cmp.length ? catOf(byId(st.cmp[0])) : '';
   $$('[data-cat][data-cmp]').forEach(b =>
     b.classList.toggle('off', !!lock && b.dataset.cat !== lock));
-  const tray = $('#tray');
-  if (!st.cmp.length || onCompare) { tray.hidden = true; document.body.style.paddingBottom = ''; return; }
-  tray.hidden = false;
-  tray.innerHTML = `<div class="shell">` +
-    st.cmp.map(id => `<span class="tslot"><img src="${IMG(id)}" alt="" loading="lazy"></span>`).join('') +
-    `<span class="lbl">${esc(t('common.results_count').replace('{n}', st.cmp.length))}</span>` +
-    `<button class="clr" data-act="clearcmp" aria-label="${esc(t('compare.clear'))}">` +
-    `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg>` +
-    `<span class="lbl">${esc(t('compare.clear'))}</span></button>` +
-    `<a class="btn" href="#/compare">${esc(t('nav.compare'))}</a>` +
-    `<p class="traymsg" id="traymsg" role="status" aria-live="polite"></p></div>`;
-  // reserve exactly the tray height - the old fixed 78px stopped clearing it once the
-  // message line was added, and the tray covered the last rows of the page
-  document.body.style.paddingBottom = tray.offsetHeight + 'px';
-  $('#hdrCmpN').textContent = st.cmp.length;
 }
 // the compare limit used to fire a browser alert(); say it in the tray instead
-let trayMsgT;
+// BOTH timers have to be cancelled when a second message arrives: the inner one belongs to the
+// previous message and, left running, hides the new message about a second after it appears.
+let trayMsgT, trayHideT;
 function trayMsg(text) {
   const el = $('#traymsg'); if (!el) return;
-  el.textContent = text; el.classList.add('on');
-  const tray = $('#tray');
-  requestAnimationFrame(() => { document.body.style.paddingBottom = tray.offsetHeight + 'px'; });
-  clearTimeout(trayMsgT); trayMsgT = setTimeout(() => el.classList.remove('on'), 3200);
-  setTimeout(() => { const el2 = $('#tray'); if (el2) document.body.style.paddingBottom = el2.offsetHeight + 'px'; }, 3450);
+  clearTimeout(trayMsgT); clearTimeout(trayHideT);
+  el.textContent = text; el.hidden = false;
+  requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on')));
+  trayMsgT = setTimeout(() => {
+    el.classList.remove('on');
+    trayHideT = setTimeout(() => { el.hidden = true; }, 250);   // hide after the fade, not during
+  }, 3000);
 }
 const catOf = p => (p.category || 'phone');
 function toggleCmp(id) {
@@ -1082,8 +1073,8 @@ function compareView() {
   if (!ps.length) return `<div class="shell"><div class="empty" style="margin-top:40px">
     <b>${esc(t('compare.empty'))}</b><p style="margin-bottom:18px">${esc(x('emptyS'))}</p>
     <a class="btn" href="#/">${esc(t('compare.add_phone'))}</a></div></div>`;
-  const n = ps.length, canAdd = n < MAXCMP;
-  const cols = `200px repeat(${n},minmax(0,1fr))`;
+  const n = ps.length, canAdd = n < MAXCMP, slot = n === 1 ? 1 : 0;
+  const cols = `200px repeat(${n + slot},minmax(0,1fr))`;
 
   let rows = '', nDiff = 0, nSame = 0;
   for (const [g, defs] of GROUPS) {
@@ -1105,7 +1096,8 @@ function compareView() {
       // value that is simply missing.
       const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
       rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
-        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('');
+        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
+        (slot ? `<div class="c ${cls}"></div>` : '');
     }
   }
   return `<div class="shell">
@@ -1121,11 +1113,14 @@ function compareView() {
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
         ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+        ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(addLabel(ps[0]))}">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
           <b>${esc(fullName(p))}</b></div>`).join('')}
+        ${slot ? `<div class="ccol"><b class="addlbl">${esc(addLabel(ps[0]))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
     </div>

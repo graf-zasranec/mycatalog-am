@@ -27,7 +27,11 @@
    an attribute selector cannot share a rule - keep the two lists identical. */
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#12151D; --surface:#1A1E29; --surface2:#232837; --shot:#232837;
+    --bg:#12151D; --surface:#1A1E29; --surface2:#232837;
+    /* The photo tile stays LIGHT in dark mode. Product shots are cut out of a white
+       studio backdrop, so a black phone, black headphones or a black Xbox on a #232837
+       tile is a black shape on a black square - half the catalogue was invisible. */
+    --shot:#EDEFF3;
     --text:#F2EEE7; --body:#B3BBC9; --muted:#8B93A3;
     --line:#282D3B; --line2:#38404F;
     --brand:#E4574F; --brand-ink:#12151D; --brand-soft:#3A1E1C; --brand-2:#F0726A;
@@ -42,7 +46,11 @@
   }
 }
 :root[data-theme="dark"]{
-    --bg:#12151D; --surface:#1A1E29; --surface2:#232837; --shot:#232837;
+    --bg:#12151D; --surface:#1A1E29; --surface2:#232837;
+    /* The photo tile stays LIGHT in dark mode. Product shots are cut out of a white
+       studio backdrop, so a black phone, black headphones or a black Xbox on a #232837
+       tile is a black shape on a black square - half the catalogue was invisible. */
+    --shot:#EDEFF3;
     --text:#F2EEE7; --body:#B3BBC9; --muted:#8B93A3;
     --line:#282D3B; --line2:#38404F;
     --brand:#E4574F; --brand-ink:#12151D; --brand-soft:#3A1E1C; --brand-2:#F0726A;
@@ -422,18 +430,13 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
   .pcta .btn{width:100%}
   .btn{white-space:normal;height:auto;min-height:46px;padding:11px 18px;line-height:1.25;text-align:center}
   /* the compare tray has to fit slots + clear + CTA on one line at 375px */
-  .tray .shell{gap:7px;padding:6px 12px;min-height:58px}
   .tslot{width:34px;height:42px;padding:4px}
   /* keep the action, drop its label: "Մաքրել բոլորը" alone is ~90px */
   /* at this width the tray must fit slots + clear + CTA, so the clear button is icon-only.
      The name comes from aria-label on the button, not from off-screen text. */
-  .tray .clr{width:36px;height:36px;padding:0;flex:none;display:grid;place-items:center;
     border-radius:50%;border:1px solid var(--line2)}
   /* scroll the slots instead of hiding them: the badge said 4 while only 2 were visible */
-  .tray .shell{overflow-x:auto;scrollbar-width:none}
-  .tray .shell::-webkit-scrollbar{display:none}
   .tslot{flex:0 0 34px}
-  .tray .btn{height:40px;min-height:40px;padding:0 13px;font-size:0.844rem;white-space:nowrap;width:auto;flex:none}
 }
 /* ================= compare ================= */
 .cwrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);box-shadow:var(--shadow-s);
@@ -469,7 +472,19 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .ctable .c.worse{color:var(--bad);font-weight:700}
 
 /* ---- compare: the add button and the picker it opens ---- */
+/* The refused-pick message, all that is left of the compare bar. Fixed, centred, fades. */
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:70;margin:0;
+  background:var(--text);color:var(--bg);padding:11px 20px;border-radius:var(--pill);
+  font-size:0.9375rem;font-weight:600;box-shadow:var(--shadow-m);opacity:0;transition:opacity .25s ease;
+  max-width:calc(100vw - 32px);text-align:center}
+.toast.on{opacity:1}
 .addbtn{display:inline-flex;align-items:center;gap:7px}
+.addslot{width:100%;min-height:84px;border:1.5px dashed var(--line2);border-radius:var(--r-md);
+  background:none;cursor:pointer;display:grid;place-items:center;transition:border-color .2s ease,background .2s ease}
+.addslot:hover{border-color:var(--brand);background:var(--brand-soft)}
+.addslot svg{width:30px;height:30px;stroke:var(--muted);fill:none;stroke-width:1.6;stroke-linecap:round}
+.addslot:hover svg{stroke:var(--brand)}
+.addlbl{color:var(--muted);font-weight:600}
 .addbtn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
 /* Opacity carries the fade, so it survives the reduced-motion rule; the small lift is the part
    that rule drops. Hiding is delayed in JS by the same 200ms, or the fade never runs. */
@@ -521,23 +536,12 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .hide-same .row-same{display:none}
 
 /* ================= tray ================= */
-.tray{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--surface);border-top:1px solid var(--line);
   box-shadow:0 -8px 30px -14px rgba(20,28,64,.3)}
-.tray .shell{display:flex;align-items:center;gap:10px;min-height:66px;padding-block:10px}
 .tslot{width:44px;height:52px;background:var(--shot);border-radius:var(--r-sm);display:block;padding:5px;
   position:relative;flex:none}
-.tray .lbl{font-size:0.844rem;color:var(--muted);font-weight:600}
-@media (max-width:600px){.tray .lbl{display:none}}
-.tray .btn{margin-left:auto}
-.tray .clr{background:none;border:0;color:var(--muted);font-size:0.8125rem;font-weight:600;cursor:pointer;padding:8px;
   display:inline-flex;align-items:center;gap:6px}
-.tray .clr svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
-@media (max-width:560px){.tray .clr .lbl{display:none}}
-.tray .clr:hover{color:var(--hot)}
 
-.traymsg{margin:0;flex:1 1 100%;order:9;font-size:0.875rem;color:var(--brand);font-weight:600;
   max-height:0;overflow:hidden;opacity:0;transition:max-height .18s,opacity .18s}
-.traymsg.on{max-height:2.4em;opacity:1;margin-top:6px}
 footer.ft{margin-top:56px;border-top:1px solid var(--line);background:var(--surface)}
 footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;font-size:0.8125rem;color:var(--muted)}
 .ft-links{display:flex;gap:18px;margin-left:auto}
@@ -734,4 +738,4 @@ a.store:hover .nm{color:var(--brand)}
 </div>
 <main id="main"></main>
 <footer class="ft"><div class="shell" id="foot"></div></footer>
-<div class="tray" id="tray" hidden></div>
+<p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
