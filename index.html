@@ -420,17 +420,17 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .chead{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line);
   display:grid;grid-template-columns:var(--cols)}
 .chead .pad{border-right:1px solid var(--line)}
-@media (max-width:760px){.chead .pad{display:none}}
+@media (max-width:760px){.chead .pad,.cphotos .pad{display:none}}
 .ccol{padding:11px 26px 11px 10px;text-align:center;position:relative;border-right:1px solid var(--line)}
-.ccol .t{display:block;background:var(--shot);border-radius:var(--r-md);height:clamp(64px,7.5vw,104px);
-  padding:7px;margin-bottom:8px;overflow:hidden;
-  /* Height, margin and padding are layout properties: transitioning them relaid out the whole
-     80-row compare grid on every frame, which is the stutter. Only opacity and transform animate
-     now - both composited - and the box collapses in a single step once the fade has finished. */
-  transition:opacity .32s ease,transform .32s ease,height 0s linear .32s,margin 0s linear .32s,padding 0s linear .32s}
-.cwrap.stuck .ccol .t{opacity:0;transform:translateY(-10px) scale(.94);height:0;margin-bottom:0;padding-block:0}
-/* coming back: give the box its size immediately, then fade in */
-.cwrap:not(.stuck) .ccol .t{transition:opacity .32s ease .04s,transform .32s ease .04s,height 0s,margin 0s,padding 0s}
+/* The photos are their own row ABOVE the sticky bar, so they scroll out of view the way any
+   other content does. Animating them in and out of the sticky header meant resizing a
+   sticky element that sits on top of an 80-row grid, and every frame of that is a full
+   relayout - which is what made scrolling stall. Nothing here animates, so nothing can stutter. */
+.cphotos{display:grid;grid-template-columns:var(--cols);border-bottom:1px solid var(--line);background:var(--surface)}
+.cphotos .pad{border-right:1px solid var(--line)}
+.cphotos .c{padding:16px 10px;border-right:1px solid var(--line);display:grid;place-items:center}
+.cphotos .c:last-child{border-right:0}
+.cphotos img{max-height:clamp(84px,13vw,170px);width:auto;max-width:100%}
 .ccol:last-child{border-right:0}
 .ccol b{font-size:0.8125rem;font-weight:700;display:block;line-height:1.25}
 .ccol .x{position:absolute;top:50%;right:5px;transform:translateY(-50%);width:20px;height:20px;border-radius:50%;
@@ -448,7 +448,7 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .ctable .c.best{color:var(--good);font-weight:800}
 .ctable .c.best::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good);margin-right:7px;flex:none}
 @media (max-width:760px){
-  .chead,.ctable{grid-template-columns:repeat(var(--n),1fr)}
+  .chead,.ctable,.cphotos{grid-template-columns:repeat(var(--n),1fr)}
   .ctable .k{grid-column:1/-1;justify-content:flex-start;text-align:left;border-right:0;border-bottom:0;
     padding-bottom:2px;padding-top:12px;font-weight:700;color:var(--body)}
   .ctable .c{font-size:0.8125rem;padding:6px 8px 11px}
@@ -1720,10 +1720,12 @@ function compareView() {
       <a class="btn ghost sm" href="#/">${esc(t('compare.add_phone'))}</a>
       <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
+      <div class="cphotos"><div class="pad"></div>
+        ${ps.map(p => `<div class="c"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+      </div>
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
-          <span class="t"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></span>
           <b>${esc(fullName(p))}</b></div>`).join('')}
       </div>
       <div class="ctable">${rows}</div>
@@ -1903,22 +1905,6 @@ document.addEventListener('input', e => {
     $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
   }
 });
-// The compare header shows the photos at the top of the table and collapses to the name-only bar
-// once it is actually stuck. CSS has no :stuck, so one passive listener flips a class, and it
-// touches the DOM only when the state changes.
-let cheadStuck = false, cheadTick = false;
-addEventListener('scroll', () => {
-  if (cheadTick) return;                       // one measurement per frame, not per scroll event
-  cheadTick = true;
-  requestAnimationFrame(() => {
-    cheadTick = false;
-    const w = $('#cwrap');
-    if (!w) { cheadStuck = false; return; }
-    const stuck = w.getBoundingClientRect().top <= 0;
-    if (stuck !== cheadStuck) { cheadStuck = stuck; w.classList.toggle('stuck', stuck); }
-  });
-}, { passive: true });
-
 window.addEventListener('hashchange', () => render(false));
 render();
 

@@ -1045,10 +1045,12 @@ function compareView() {
       <a class="btn ghost sm" href="#/">${esc(t('compare.add_phone'))}</a>
       <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
+      <div class="cphotos"><div class="pad"></div>
+        ${ps.map(p => `<div class="c"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+      </div>
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
-          <span class="t"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></span>
           <b>${esc(fullName(p))}</b></div>`).join('')}
       </div>
       <div class="ctable">${rows}</div>
@@ -1228,21 +1230,5 @@ document.addEventListener('input', e => {
     $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
   }
 });
-// The compare header shows the photos at the top of the table and collapses to the name-only bar
-// once it is actually stuck. CSS has no :stuck, so one passive listener flips a class, and it
-// touches the DOM only when the state changes.
-let cheadStuck = false, cheadTick = false;
-addEventListener('scroll', () => {
-  if (cheadTick) return;                       // one measurement per frame, not per scroll event
-  cheadTick = true;
-  requestAnimationFrame(() => {
-    cheadTick = false;
-    const w = $('#cwrap');
-    if (!w) { cheadStuck = false; return; }
-    const stuck = w.getBoundingClientRect().top <= 0;
-    if (stuck !== cheadStuck) { cheadStuck = stuck; w.classList.toggle('stuck', stuck); }
-  });
-}, { passive: true });
-
 window.addEventListener('hashchange', () => render(false));
 render();
