@@ -1231,12 +1231,17 @@ document.addEventListener('input', e => {
 // The compare header shows the photos at the top of the table and collapses to the name-only bar
 // once it is actually stuck. CSS has no :stuck, so one passive listener flips a class, and it
 // touches the DOM only when the state changes.
-let cheadStuck = false;
+let cheadStuck = false, cheadTick = false;
 addEventListener('scroll', () => {
-  const w = $('#cwrap');
-  if (!w) { cheadStuck = false; return; }
-  const stuck = w.getBoundingClientRect().top <= 0;
-  if (stuck !== cheadStuck) { cheadStuck = stuck; w.classList.toggle('stuck', stuck); }
+  if (cheadTick) return;                       // one measurement per frame, not per scroll event
+  cheadTick = true;
+  requestAnimationFrame(() => {
+    cheadTick = false;
+    const w = $('#cwrap');
+    if (!w) { cheadStuck = false; return; }
+    const stuck = w.getBoundingClientRect().top <= 0;
+    if (stuck !== cheadStuck) { cheadStuck = stuck; w.classList.toggle('stuck', stuck); }
+  });
 }, { passive: true });
 
 window.addEventListener('hashchange', () => render(false));

@@ -416,8 +416,14 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 @media (max-width:760px){.chead .pad{display:none}}
 .ccol{padding:11px 26px 11px 10px;text-align:center;position:relative;border-right:1px solid var(--line)}
 .ccol .t{display:block;background:var(--shot);border-radius:var(--r-md);height:clamp(64px,7.5vw,104px);
-  padding:7px;margin-bottom:8px;overflow:hidden;transition:height .18s ease,margin .18s ease,padding .18s ease,opacity .15s ease}
-.cwrap.stuck .ccol .t{height:0;margin-bottom:0;padding-block:0;opacity:0}
+  padding:7px;margin-bottom:8px;overflow:hidden;
+  /* Height, margin and padding are layout properties: transitioning them relaid out the whole
+     80-row compare grid on every frame, which is the stutter. Only opacity and transform animate
+     now - both composited - and the box collapses in a single step once the fade has finished. */
+  transition:opacity .32s ease,transform .32s ease,height 0s linear .32s,margin 0s linear .32s,padding 0s linear .32s}
+.cwrap.stuck .ccol .t{opacity:0;transform:translateY(-10px) scale(.94);height:0;margin-bottom:0;padding-block:0}
+/* coming back: give the box its size immediately, then fade in */
+.cwrap:not(.stuck) .ccol .t{transition:opacity .32s ease .04s,transform .32s ease .04s,height 0s,margin 0s,padding 0s}
 .ccol:last-child{border-right:0}
 .ccol b{font-size:0.8125rem;font-weight:700;display:block;line-height:1.25}
 .ccol .x{position:absolute;top:50%;right:5px;transform:translateY(-50%);width:20px;height:20px;border-radius:50%;
