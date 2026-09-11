@@ -9,7 +9,7 @@
 // that page link to its siblings, so one seed per product finds every colour Samsung publishes.
 import fs from 'node:fs';
 
-const UA = 'Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)';
+const UA = 'MyCatalogBot/0.1 (+price comparison; respects robots.txt)';   // same string scrape.mjs sends
 const B = 'https://www.samsung.com';
 const SEEDS = {
   'samsung-galaxy-buds-4':        '/uk/audio-sound/galaxy-buds/galaxy-buds4-white-sm-r540nzwaeub/',

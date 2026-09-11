@@ -12,7 +12,7 @@
 //   node tools/photos.mjs --dry      report what it would change
 import fs from 'node:fs';
 
-const UA = 'Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)';
+const UA = 'MyCatalogBot/0.1 (+price comparison; respects robots.txt)';   // same string scrape.mjs sends
 const SRC = 'images/_src';
 const MIN_EDGE = 700;                 // below this a photo visibly softens on the product page
 const dry = process.argv.includes('--dry');

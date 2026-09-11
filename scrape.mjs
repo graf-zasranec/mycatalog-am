@@ -16,7 +16,7 @@
 
 import fs from 'node:fs';
 
-const UA = 'MyCatalogBot/0.1 (+price comparison; respects robots.txt)';
+const UA = 'MyCatalogBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
 const DELAY_MS = 400;
 const TIMEOUT_MS = 30000;
 
@@ -191,6 +191,16 @@ function safeUrl(u) {
 // A double quote, spelled out: writing one inline inside these scanners is what keeps
 // breaking when the file is edited through a shell.
 const D = String.fromCharCode(34);
+// Both Telecom and iStore mark the real price with a class and then nest spans inside it. A
+// fixed-width slice after the tag, or a regex over literal nbsp characters, spliced two numbers
+// into a plausible-looking wrong price whenever the markup shifted. Anchor, strip tags, take the
+// first number.  ponytail: 8-digit cap, fine until something here costs over 99,999,999 AMD.
+const priceAfter = (html, anchor, span = 240) => {
+  const i = html.indexOf(anchor);
+  if (i < 0) return 0;
+  const m = clean(html.slice(i, i + span)).match(/\d[\d\s.,  ]*\d|\d/);
+  return m ? Number(m[0].replace(/[^\d]/g, '').slice(0, 8)) : 0;
+};
 const clean = s => String(s).replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, String.fromCharCode(34)).replace(/&#0?39;|&apos;/g, String.fromCharCode(39)).replace(/\s+/g, ' ').trim();
 const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)]
   .flatMap(m => { try { const j = JSON.parse(m[1]); return Array.isArray(j) ? j : [j]; } catch { return []; } });
@@ -262,7 +272,21 @@ if (process.argv[2] === '--selftest') {
     const got = storageOf(txt);
     if (got !== want) { bad++; console.log(`FAIL storage got=${got} want=${want} <- ${txt}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length} checks pass`);
+  // priceAfter is the money path: a wrong number here is published as a real price.
+  const NB = String.fromCharCode(160), NN = String.fromCharCode(8239);
+  const priceCases = [
+    ['<span class="e-shop__main-price"><span>479' + NB + '900</span> AMD</span>', 'e-shop__main-price', 479900],
+    ['<div class="price is-action"> 1' + NN + '274' + NB + '900 </div>', 'class="price is-action"', 1274900],
+    ['<b class="e-shop__main-price">45900</b>', 'e-shop__main-price', 45900],
+    ['<p>no price class here</p>', 'e-shop__main-price', 0],
+    // the number must come from the anchored block, not from a capacity sitting before it
+    ['256 GB <span class="e-shop__main-price">89' + NB + '900</span>', 'e-shop__main-price', 89900],
+  ];
+  for (const [html, anchor, want] of priceCases) {
+    const got = priceAfter(html, anchor);
+    if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
+  }
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -508,10 +532,7 @@ const SHOPS = {
           const h = await get(u); await sleep(DELAY_MS);
           if (!h) continue;
           const title = clean((h.match(/<title>([^<|]*)/) || [])[1] || '');
-          const pi = h.indexOf('e-shop__main-price');
-          if (pi < 0) continue;
-          const gt = h.indexOf('>', pi);
-          const price = Number(h.slice(gt + 1, gt + 20).replace(/[^0-9]/g, '').slice(0, 7));
+          const price = priceAfter(h, 'e-shop__main-price');
           const id = matchPhone(title + ' ' + u);
           if (!id || !price || price < 5000 || !safeUrl(u)) continue;
           const img = (h.match(/property="og:image" content="([^"]+)"/) || [])[1];
@@ -540,8 +561,7 @@ const SHOPS = {
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
         // ".price is-action" is the live price; ".price text-muted" is the struck-through old one
-        const raw = (html.match(/class="price is-action"[^>]*>\s*([\d\s  ]+)/) || [])[1];
-        const price = raw ? Number(raw.replace(/[^\d]/g, '')) : 0;
+        const price = priceAfter(html, 'class="price is-action"');
         const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
         if (!price || !title) continue;
         if (!safeUrl(u)) continue;
@@ -623,7 +643,7 @@ const names = Object.keys(SHOPS).filter(k => only ? k === only : !SHOPS[k].disab
 // replace only the shops this run actually covers.
 const PRICES_FILE = 'data/prices.json';
 let prev = { shops: {}, offers: {} };
-if (only && fs.existsSync(PRICES_FILE)) {
+if (fs.existsSync(PRICES_FILE)) {
   try { prev = JSON.parse(fs.readFileSync(PRICES_FILE, 'utf8')); } catch { }
 }
 for (const [k, s] of Object.entries(SHOPS)) if (s.disabled && !names.includes(k)) console.log(`[${s.name}] skipped — ${s.disabled}`);
@@ -637,8 +657,16 @@ const report = [];
 for (const key of names) {
   const s = SHOPS[key];
   process.stdout.write(`[${s.name}] `);
-  let got = [];
-  try { got = await s.run(); } catch (e) { console.warn('adapter failed:', e.message); }
+  let got = [], threw = false;
+  try { got = await s.run(); } catch (e) { threw = true; console.warn('adapter failed:', e.message); }
+  if (threw) {
+    // keep what this shop had last night rather than dropping every one of its prices
+    const kept = Object.values(prev.offers || {}).flat().filter(o => o.shop === key);
+    for (const o of kept) (offers[o.id] ||= []).push(o);
+    console.log(`kept ${kept.length} offer(s) from the previous run`);
+    report.push({ shop: key, offers: kept.length, models: new Set(kept.map(o => o.id)).size, stale: true });
+    continue;
+  }
   // keep the cheapest offer per (phone, storage)
   const best = new Map();
   let dropped = 0;

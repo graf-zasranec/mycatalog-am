@@ -90,7 +90,9 @@ const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch
 const _allPrices = DATA.map(p => {
   const real = (typeof PRICES !== 'undefined' && PRICES.offers && PRICES.offers[p.id]) || [];
   return real.length ? Math.min(...real.map(o => o.price)) : p.priceAmd;
-});
+// One missing or malformed price would make PMIN/PMAX NaN, and every comparison against NaN is
+// false, so the catalogue would silently render empty with no clue why.
+}).filter(Number.isFinite);
 const PMIN = Math.floor(Math.min(..._allPrices) / 5000) * 5000;
 const PMAX = Math.ceil(Math.max(..._allPrices) / 5000) * 5000;
 // The saved price range was chosen against an older price list. Prices move every night now,
@@ -215,8 +217,8 @@ const SORTS = {
   price_desc: (a, b) => bestOf(b) - bestOf(a),
   newest: (a, b) => (b.released || '').localeCompare(a.released || ''),
   brand: (a, b) => a.brand.localeCompare(b.brand) || fullName(a).localeCompare(fullName(b)),
-  battery: (a, b) => (b.battery.capacity || 0) - (a.battery.capacity || 0),
-  screen: (a, b) => (b.display.size || 0) - (a.display.size || 0),
+  battery: (a, b) => (b.battery?.capacity || 0) - (a.battery?.capacity || 0),
+  screen: (a, b) => (b.display?.size || 0) - (a.display?.size || 0),
   savings: (a, b) => spreadOf(b) - spreadOf(a),
   shops: (a, b) => shopCount(offersFor(b)) - shopCount(offersFor(a)),
   ram: (a, b) => topOf(b, 'ram') - topOf(a, 'ram'),
@@ -1036,8 +1038,7 @@ function compareView() {
       <div class="chead"><div class="pad"></div>
         ${ps.map(p => `<div class="ccol">
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
-          <span class="t"><img src="${IMG(p.id)}" alt="${esc(fullName(p))}" decoding="async"></span>
-          <b>${esc(fullName(p))}</b><span class="p num">${money(bestOf(p))} ֏</span></div>`).join('')}
+          <b>${esc(fullName(p))}</b></div>`).join('')}
       </div>
       <div class="ctable">${rows}</div>
     </div></div>`;

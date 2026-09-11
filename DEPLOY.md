@@ -8,7 +8,7 @@ time — so it can be hosted free, almost anywhere.
 | File | What it is | Use it when |
 |---|---|---|
 | `index.html` + `images/` | the site, images loaded from disk | normal hosting (recommended) |
-| `index.embedded.html` | the **entire site in one file**, images inlined (2.3 MB) | you want zero moving parts |
+| `index.embedded.html` | the **entire site in one file**, images inlined (18.3 MB, gitignored - run `node build.mjs`) | you want zero moving parts |
 
 Both are self-contained. The only thing they fetch from the internet is the Google Fonts
 stylesheet; everything else is local.
@@ -77,8 +77,8 @@ Two things are still demo-grade and you should decide about them deliberately:
 1. **Product photos** come from shop and manufacturer press renders — see
    `images/SOURCES.txt`. Fine for a prototype or a client pitch; they need licensing, or
    replacing with your own photography, before a public commercial launch.
-2. **Six of 22 models have no live offers** and show an estimated price, labelled as an
-   estimate in the UI. The other 16 are real, scraped prices.
+2. **6 of 88 models have no live offers** and show an estimated price, labelled as an
+   estimate in the UI. The other 82 are real, scraped prices from 8 shops.
 
 Prices themselves are real and sourced from the shops' own pages, with the shop named and
 linked on every offer.

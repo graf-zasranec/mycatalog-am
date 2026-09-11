@@ -20,7 +20,7 @@ prices nightly by itself; Netlify Drop gives you one in ten seconds with no acco
 |---|---|
 | `_shell.html` | all the CSS + page chrome |
 | `_app.js` | all the logic (filters, compare, i18n, routing) |
-| `data/phones.json` | the 22 phones and their specs |
+| `data/phones.json` | the 88 products and their specs |
 | `data/strings.json` | every UI label in hy / ru / en |
 | `data/verdicts.json` | per-phone summary + pros/cons in hy / ru |
 | `images/<id>.jpg` | original product photo, filename = the phone's `id` |
@@ -54,7 +54,7 @@ dependency — nothing leaves the machine. The cutout is a **flood fill from the
 not a global "white to transparent" threshold, so white and silver phone bodies survive intact.
 
 Colour photos come from the shops themselves (Vega, then iSpace) — the photo shown for a colour
-comes from a shop that actually sells it. The **main** photo is shop-sourced too for the 13 phones
+comes from a shop that actually sells it. The **main** photo is shop-sourced too for the products
 a shop stocks with a picture; the other 9 fall back to `images/_gsmarena_fallback/`.
 
 GSMArena's robots.txt disallows ClaudeBot, so nothing new is fetched from them — the fallback
@@ -114,7 +114,7 @@ Adding a shop = one adapter in `scrape.mjs`. Check its robots.txt first.
 
 ## Before this goes live
 
-- Prices for 16 of 22 models are REAL, scraped from the shops' own sites. The other 6 are
+- Prices for 82 of 88 models are REAL, scraped from 8 Armenian shops. The other 6 are
   still estimates and are labelled as such in the UI. Re-run `scrape.mjs` regularly — prices go stale.
 - Product photos are manufacturer press renders — see `images/SOURCES.txt`. They need
   licensing, or replace them with your own / the distributor's.
