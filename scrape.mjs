@@ -91,7 +91,7 @@ const ACCESSORY_WORDS = [
   'case', 'cover', 'bumper', 'sleeve', 'pouch', 'wallet', 'folio', 'protector',
   'protection', 'tempered', 'film', 'skin', 'charger', 'charging', 'cable', 'adapter',
   'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank', 'power bank',
-  'airtag', 'pencil', 'keyboard', 'stylus',
+  'airtag', 'pencil', 'keyboard', 'stylus', 'dongle', 'hub',
   'պատյան', 'պաշտպան', 'լիցքավոր', 'մալուխ', 'ադապտեր',
   'чехол', 'защит', 'кабел', 'зарядн', 'адаптер', 'держател',
   'накладк', 'бампер', 'пленк', 'плёнк'
@@ -244,6 +244,7 @@ if (process.argv[2] === '--selftest') {
     ['xiaomi-redmi-note-14-pro', 'redmi-note-14-pro-256gb'],
     ['realme-c75', 'realme-c75-128gb'],
     ['apple-iphone-air', 'iphone-air-256-gb'],
+    [null, 'USB-C dongle for iPhone 15'],                         // accessory, not the phone
     [null, 'APPLE Clear Case with MagSafe for iPhone 15'],        // accessory, not the phone
     [null, 'https://istore.am/product/silicone-case-for-iphone-17-pro-black'],
     [null, 'Tempered Glass for iPhone 15'],
