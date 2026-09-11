@@ -6847,5 +6847,172 @@
    "connectivity.bluetooth",
    "popularity"
   ]
+ },
+ {
+  "id": "google-pixel-11-pro-xl",
+  "category": "phone",
+  "brand": "Google",
+  "name": "Pixel 11 Pro XL",
+  "tier": "flagship",
+  "released": "2026-08",
+  "priceAmd": 587700,
+  "priceAmdMax": 587700,
+  "popularity": 61,
+  "accent": "#B6C3CE",
+  "display": {
+   "size": 6.8,
+   "type": "LTPO OLED",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Google Tensor G6"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 587700
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP",
+   "ultrawide": null,
+   "telephoto": null,
+   "front": "42 MP",
+   "video": null
+  },
+  "battery": {},
+  "body": {},
+  "connectivity": {
+   "network": "5G",
+   "nfc": true
+  },
+  "cardSlot": false,
+  "os": "Android 17",
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "The largest Pixel: a 6.8-inch 120 Hz LTPO screen on Tensor G6, with a 42 MP front camera.",
+  "unsure": [
+   "released",
+   "variants",
+   "camera.modules",
+   "colors",
+   "connectivity.nfc",
+   "popularity"
+  ]
+ },
+ {
+  "id": "oneplus-nord-6",
+  "category": "phone",
+  "brand": "OnePlus",
+  "name": "Nord 6",
+  "tier": "upper-mid",
+  "released": "2026-07",
+  "priceAmd": 216700,
+  "priceAmdMax": 216700,
+  "popularity": 50,
+  "accent": "#3C4654",
+  "display": {
+   "size": 6.78,
+   "type": "AMOLED",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8s Gen 4"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 216700
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP",
+   "ultrawide": null,
+   "telephoto": null,
+   "front": "32 MP",
+   "video": null
+  },
+  "battery": {},
+  "body": {},
+  "connectivity": {
+   "network": "5G",
+   "nfc": true
+  },
+  "cardSlot": false,
+  "os": "Android 16, OxygenOS",
+  "colors": [
+   "Black",
+   "Green"
+  ],
+  "summaryEn": "Flagship silicon in the Nord price bracket: Snapdragon 8s Gen 4 and a 6.78-inch AMOLED.",
+  "unsure": [
+   "released",
+   "display.refresh",
+   "variants",
+   "camera.modules",
+   "colors",
+   "connectivity.nfc",
+   "os",
+   "popularity"
+  ]
+ },
+ {
+  "id": "xbox-series-x",
+  "category": "console",
+  "brand": "Microsoft",
+  "name": "Xbox Series X",
+  "aliases": [
+   "Microsoft Xbox Series X 1TB",
+   "Xbox Series X 1TB"
+  ],
+  "tier": "flagship",
+  "released": "2020-11",
+  "priceAmd": 354500,
+  "priceAmdMax": 354500,
+  "popularity": 53,
+  "accent": "#2A2D33",
+  "display": {},
+  "chipset": {
+   "name": "AMD Zen 2 custom",
+   "cpu": "8-core"
+  },
+  "graphics": {
+   "name": "AMD RDNA 2, 12 teraflops",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 354500
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Plastic tower with a top vent"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.0",
+   "ports": "HDMI 2.1, 3x USB-A, Gigabit Ethernet, storage expansion"
+  },
+  "cardSlot": false,
+  "os": "Xbox system software",
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "Microsoft’s full-size console: 4K at 120 fps, a 1 TB SSD and a disc drive.",
+  "unsure": [
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "body.materials",
+   "popularity"
+  ]
  }
 ]

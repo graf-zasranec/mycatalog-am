@@ -207,6 +207,8 @@ const priceAfter = (html, anchor, span = 240) => {
   const m = clean(html.slice(from, from + span)).match(/\d[\d\s.,  ]*\d|\d/);
   return m ? Number(m[0].replace(/[^\d]/g, '').slice(0, 8)) : 0;
 };
+// Magento's own stock class, the one the page actually renders next to the price.
+const stockOf = html => !/class="stock\s+unavailable"/i.test(html);
 const clean = s => String(s).replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, String.fromCharCode(34)).replace(/&#0?39;|&apos;/g, String.fromCharCode(39)).replace(/\s+/g, ' ').trim();
 const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)]
   .flatMap(m => { try { const j = JSON.parse(m[1]); return Array.isArray(j) ? j : [j]; } catch { return []; } });
@@ -298,11 +300,21 @@ if (process.argv[2] === '--selftest') {
     // an attribute after the anchor is still inside the tag: the colour must not be the price
     ['<span class="price is-action" style="color: #000000"> 397' + NB + '900 </span>', 'class="price is-action"', 397900],
   ];
+  const stockCases = [
+    ['<div class="stock available" title="Availability"><span>In stock</span></div>', true],
+    ['<div class="stock unavailable" title="Availability"><span>Out of stock</span></div>', false],
+    // the swatch config flag is not a stock state; it appears on every configurable product
+    ['{"canDisplayShowOutOfStockStatus":true,"channel":"website"}', true],
+  ];
+  for (const [html, want] of stockCases) {
+    const got = stockOf(html);
+    if (got !== want) { bad++; console.log(`FAIL stock got=${got} want=${want} <- ${html.slice(0, 60)}`); }
+  }
   for (const [html, anchor, want] of priceCases) {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -641,8 +653,11 @@ const SHOPS = {
         const price = Math.round(Number(html.slice(pi + 19, html.indexOf(D, pi + 19))));
         const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
         if (!price || price < 5000 || !title || !safeUrl(u)) continue;
-        // Magento marks a sold-out product with this schema.org value in the page head
-        const inStock = !/OutOfStock/i.test(html.slice(0, 200000));
+        // Magento prints class="stock available" / class="stock unavailable". The old test looked
+        // for the bare word OutOfStock anywhere in the page, and every configurable product
+        // carries "canDisplayShowOutOfStockStatus":true in its swatch config - so 103 of
+        // AllSell's 113 offers were being thrown away as sold out.
+        const inStock = stockOf(html);
         const img = (html.match(/https:\/\/allsell\.am\/media\/catalog\/product\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null;
         out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock, image: img });
       }
@@ -796,7 +811,13 @@ for (const k of names) shops[k] = { name: SHOPS[k].name, site: SHOPS[k].site, no
 fs.mkdirSync('data', { recursive: true });
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),
-  excluded: { 'list.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /' },
+  // Shops this crawler will not read. Both name ClaudeBot with Disallow: / - crawling them
+  // under another user agent is the bot-block bypass this project does not do, and the same
+  // rule that keeps list.am out keeps yerevanmobile out.
+  excluded: {
+    'list.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /',
+    'yerevanmobile.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /'
+  },
   shops, offers
 }, null, 1));
 
