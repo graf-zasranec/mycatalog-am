@@ -139,12 +139,13 @@ button,input,select,textarea{font:inherit;color:inherit}
   transition:opacity .8s ease}
 .cv-s.on{opacity:1;pointer-events:auto}
 .cv-m img{max-height:400px;width:auto;filter:drop-shadow(0 26px 44px rgba(22,28,40,.24))}
-.cv-dots{display:flex;justify-content:center;gap:2px;margin-top:10px}
-/* 8px dot, 24px target: the padding is the hit area, background-clip keeps the dot small */
-.cv-dots button{width:24px;height:24px;padding:8px;border:0;border-radius:50%;cursor:pointer;
+/* Column 2 so they sit under the phone, not under the headline. */
+.cv-dots{grid-column:2;display:flex;justify-content:center;gap:0;margin-top:6px}
+/* 6px dot inside a 24px target: the padding is the hit area, background-clip keeps the dot small */
+.cv-dots button{width:24px;height:24px;padding:9px;border:0;border-radius:50%;cursor:pointer;
   background:var(--line2);background-clip:content-box;transition:background .2s ease,transform .2s ease}
 .cv-dots button:hover{background:var(--muted)}
-.cv-dots button.on{background:var(--brand);transform:scale(1.35)}
+.cv-dots button.on{background:var(--brand);transform:scale(1.25)}
 .cv-sub{grid-column:1;color:var(--body);font-size:1.03rem;max-width:44ch;margin-top:20px;position:relative;z-index:2}
 .cv-acts{grid-column:1;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative;z-index:2}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;
@@ -155,6 +156,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (max-width:860px){
   .cv{grid-template-columns:1fr;gap:0;align-items:start}
   .cv-m{order:-1;place-items:center;margin-bottom:6px}
+  .cv-dots{grid-column:1;order:-1;margin:0 0 10px}
   .cv-m img{max-height:220px}
   .cv-h{max-width:none}
 }

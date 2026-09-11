@@ -802,7 +802,10 @@ function detailView(p) {
   // there is nothing misleading about one picture, so keep the full list.
   const allCols = p.colors || [];
   const shot4 = allCols.filter(c => colorPhoto(p, c));
-  const cols = shot4.length && shot4.length < allCols.length ? shot4 : allCols;
+  // A swatch row that cannot change the picture is a lie. One colour has nothing to choose, and
+  // several colours with no photos of their own - every Pixel - all fall back to the same main
+  // shot, so clicking them looked broken. Show the row only when two or more colours differ.
+  const cols = shot4.length >= 2 ? shot4 : [];
   // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
   // option blocks below simply do not render
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
@@ -1128,7 +1131,7 @@ function render(keepScroll) {
   else {
     main.innerHTML = catalogView(); refresh();
     document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'MyCatalog';
-    window.scrollTo(0, keepScroll ? window.scrollY : 0);
+    window.scrollTo(0, keepScroll ? window.scrollY : (remembers(h) ? (scrollMem.get(h) || 0) : 0));
   }
   if (!keepScroll) {
     const head = $('#main h1') || $('#main h2');
@@ -1292,5 +1295,13 @@ function heroTick() {
 }
 heroTick();
 
-window.addEventListener('hashchange', () => render(false));
+// Going back to the catalogue should land where you left it, not at the top. Product pages
+// still open at the top - you clicked them to read them from the start.
+const scrollMem = new Map();
+const remembers = h => h === '/' || h.startsWith('/c/');
+window.addEventListener('hashchange', e => {
+  const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
+  if (remembers(from)) scrollMem.set(from, window.scrollY);
+  render(false);
+});
 render();
