@@ -18,12 +18,6 @@
   "en": "Compare"
  },
  {
-  "key": "nav.about",
-  "hy": "Կայքի մասին",
-  "ru": "О проекте",
-  "en": "About"
- },
- {
   "key": "nav.search_placeholder",
   "hy": "Փնտրել մոդել կամ բրենդ",
   "ru": "Модель или бренд",
@@ -34,12 +28,6 @@
   "hy": "Մաքրել",
   "ru": "Сбросить",
   "en": "Reset"
- },
- {
-  "key": "common.all",
-  "hy": "Բոլորը",
-  "ru": "Все",
-  "en": "All"
  },
  {
   "key": "common.from",
@@ -66,18 +54,6 @@
   "en": "No"
  },
  {
-  "key": "common.back",
-  "hy": "Հետ",
-  "ru": "Назад",
-  "en": "Back"
- },
- {
-  "key": "common.no_results",
-  "hy": "Ոչինչ չի գտնվել",
-  "ru": "Ничего не найдено",
-  "en": "No results"
- },
- {
   "key": "common.results_count",
   "hy": "{n} արդյունք",
   "ru": "Результатов: {n}",
@@ -94,18 +70,6 @@
   "hy": "Թեմա",
   "ru": "Тема",
   "en": "Theme"
- },
- {
-  "key": "common.language",
-  "hy": "Լեզու",
-  "ru": "Язык",
-  "en": "Language"
- },
- {
-  "key": "common.filters",
-  "hy": "Զտիչներ",
-  "ru": "Фильтры",
-  "en": "Filters"
  },
  {
   "key": "sort.label",
@@ -180,18 +144,6 @@
   "en": "Battery"
  },
  {
-  "key": "filter.5g",
-  "hy": "5G",
-  "ru": "5G",
-  "en": "5G"
- },
- {
-  "key": "filter.nfc",
-  "hy": "NFC",
-  "ru": "NFC",
-  "en": "NFC"
- },
- {
   "key": "filter.refresh_rate",
   "hy": "Էկրանի թարմացում",
   "ru": "Частота обновления",
@@ -246,22 +198,10 @@
   "en": "Software"
  },
  {
-  "key": "sec.variants",
-  "hy": "Տարբերակներ",
-  "ru": "Версии",
-  "en": "Variants"
- },
- {
   "key": "sec.colors",
   "hy": "Գույներ",
   "ru": "Цвета",
   "en": "Colors"
- },
- {
-  "key": "sec.price",
-  "hy": "Գին",
-  "ru": "Цена",
-  "en": "Price"
  },
  {
   "key": "f.screen_size",
@@ -498,18 +438,6 @@
   "en": "Full specs"
  },
  {
-  "key": "detail.overview",
-  "hy": "Ընդհանուր",
-  "ru": "Основное",
-  "en": "Overview"
- },
- {
-  "key": "detail.approx_price",
-  "hy": "Մոտավոր գին",
-  "ru": "Примерная цена",
-  "en": "Approx. price"
- },
- {
   "key": "detail.similar",
   "hy": "Նմանատիպ մոդելներ",
   "ru": "Похожие модели",
@@ -576,20 +504,8 @@
   "en": "Catalog"
  },
  {
-  "key": "catalog.featured",
-  "hy": "Առաջարկվող մոդելներ",
-  "ru": "Выбор редакции",
-  "en": "Featured"
- },
- {
-  "key": "catalog.count_label",
-  "hy": "{n} մոդել",
-  "ru": "Моделей: {n}",
-  "en": "{n} models"
- },
- {
   "key": "f.touch",
-  "hy": "Հպէկրան",
+  "hy": "Հպումային էկրան",
   "ru": "Сенсорный экран",
   "en": "Touchscreen"
  },
@@ -700,5 +616,11 @@
   "hy": "CONTACT_EMAIL_HERE",
   "ru": "CONTACT_EMAIL_HERE",
   "en": "CONTACT_EMAIL_HERE"
+ },
+ {
+  "key": "common.skip",
+  "hy": "Անցնել բովանդակությանը",
+  "ru": "К содержимому",
+  "en": "Skip to content"
  }
 ]

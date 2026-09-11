@@ -16,6 +16,37 @@ const HISTORY = fs.existsSync('data/history.json') ? JSON.parse(rd('data/history
 const TERMS = JSON.parse(rd('data/terms.json'));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 
+// A configuration a shop actually sells is a real configuration. phones.json carries the spec
+// sheet, which lags: the MacBook Pro 14 sells at 512 GB, the Pixel 11 Pro XL at 12/256, and
+// neither was listed, so their cheapest offers could not be selected or even seen.
+for (const p of phones) {
+  if (p.variantUnit === 'mm') continue;                    // watch case sizes are not capacities
+  const seen = new Set((p.variants || []).map(v => `${v.ram ?? ''}|${v.storage ?? ''}`));
+  const base = (p.variants || [])[0] || {};
+  const add = [];
+  for (const o of (PRICES.offers && PRICES.offers[p.id]) || []) {
+    if (!(o.storage >= 8 && o.storage <= 8192)) continue;  // a shop typo is not a configuration
+    const ram = o.ram ?? base.ram ?? null;
+    const k = `${ram ?? ''}|${o.storage}`;
+    if (seen.has(k)) continue;
+    seen.add(k);
+    add.push({ ram, storage: o.storage, priceAmd: o.price });
+  }
+  if (add.length) {
+    p.variants = [...(p.variants || []), ...add]
+      .sort((a, b) => (a.storage || 0) - (b.storage || 0) || (a.ram || 0) - (b.ram || 0));
+  }
+}
+
+// A price series for a product that left the catalogue is dead weight nothing can render.
+for (const k of Object.keys(HISTORY.points || {}))
+  if (!phones.some(p => p.id === k)) { console.warn('  ! history for a product not in the catalogue:', k); delete HISTORY.points[k]; }
+
+// The page never renders an offer's title, photo or SKU - it renders the shop, price and link.
+// Shipping the rest is a large share of the inlined price blob for nothing.
+for (const list of Object.values(PRICES.offers || {}))
+  for (const o of list) { delete o.title; delete o.image; delete o.sku; }
+
 // transparent cutouts made by tools/cutout.mjs: images/cut/<phoneId>__<colourSlug>.webp
 // "<id>__main.webp" is the default shot; the rest are per-colour.
 const CUT = 'images/cut';

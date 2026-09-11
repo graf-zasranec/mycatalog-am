@@ -148,8 +148,10 @@ function matchIn(h) {
 function capacitiesOf(text) {
   // keep unicode letters: norm() strips ԳԲ / ՏԲ before they can be read
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  // AllSell writes the MacBook Air as "16GB I 512TB". Nothing on sale here holds more than 8 TB,
+  // so a terabyte figure that large is the shop meaning gigabytes.
   return [...h.matchAll(/(\d+)\s*(tb|տբ|gb|գբ)(?:\s|$)/g)]
-    .map(m => +m[1] * (/tb|տբ/.test(m[2]) ? 1024 : 1));
+    .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; });
 }
 // titles like "SM-S938B/DS 12GB 256GB" list RAM first, then storage -> larger is storage
 // A title that names ONE capacity is naming memory as often as storage: AllSell lists the
@@ -272,7 +274,9 @@ if (process.argv[2] === '--selftest') {
     ['Apple iPhone 17', null],
     ['MacBook Air 13 M5 16GB', null],            // 16 is the memory, there is no 16 GB SSD
     ['MacBook Air 13-inch M5 16GB/512GB', 512],
-    ['Xbox Series S 512 GB', 512]];
+    ['Xbox Series S 512 GB', 512],
+    ['Macbook Air 15" M5 16GB I 512TB MDVH4 Midnight', 512],   // shop typo: 512 TB does not exist
+    ['Mac Studio M4 Max 8TB', 8192]];
   const ramCases = [['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 12], ['XIAOMI POCO X7 Pro 5G 8GB 256GB (Black)', 8],
     ['iPhone 17 Pro, 256 ԳԲ, Silver', null]];
   for (const [txt, want] of ramCases) {

@@ -10,6 +10,8 @@ const backLink = (href, label) =>
   `<a class="backbtn" href="${esc(href)}"><span aria-hidden="true">←</span> ${esc(label)}</a>`;
 // local build reads images/<id>.jpg; the published build injects IMGDATA with inline data URIs
 const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || 'images/cut/' + id + '__main.webp';
+// IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
+const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
 const U = {
   hy: { mah: 'մԱժ', w: 'Վտ', g: 'գ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
@@ -19,7 +21,6 @@ const U = {
 const X = {
   hy: {
     tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
-    ch: ['Պաշտոնական ներկայացուցիչ', 'Առցանց խանութ', 'Ներմուծված'],
     any: 'Բոլորը', min: 'նվազ.', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
     bands: ['6.3″-ից փոքր', '6.3–6.7″', '6.7″-ից մեծ'],
     heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և ընտրի՛ր', heroB: 'քո հեռախոսը',
@@ -36,7 +37,6 @@ const X = {
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
-    ch: ['Официальный дилер', 'Онлайн-магазин', 'Привезённые'],
     any: 'Все', min: 'от', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
     bands: ['до 6.3″', '6.3–6.7″', 'больше 6.7″'],
     heroTag: 'Новинка', heroA: 'Сравни и выбери', heroB: 'свой смартфон',
@@ -53,7 +53,6 @@ const X = {
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
-    ch: ['Official reseller', 'Online shop', 'Grey import'],
     any: 'All', min: 'from', newBadge: 'New', view: 'View', allFilters: 'All filters',
     bands: ['under 6.3″', '6.3–6.7″', 'over 6.7″'],
     heroTag: 'Just launched', heroA: 'Compare and pick', heroB: 'your next phone',
@@ -111,6 +110,22 @@ const byId = id => DATA.find(p => p.id === id);
 const t = k => (STR[st.lang] && STR[st.lang][k]) || STR.hy[k] || k;
 const u = k => U[st.lang][k];
 const x = k => X[st.lang][k];
+// "11 магазина" is wrong and "1 shops" is wrong. Armenian keeps the singular after any
+// numeral, so it needs no table and falls through to the plain label.
+const PL = {
+  ru: { shops: ['магазин', 'магазина', 'магазинов'],
+        models: ['модель', 'модели', 'моделей'],
+        offersLbl: ['предложение', 'предложения', 'предложений'] },
+  en: { shops: ['shop', 'shops'], models: ['model', 'models'], offersLbl: ['offer', 'offers'] }
+};
+const plw = (n, k) => {
+  const f = (PL[st.lang] || {})[k];
+  if (!f) return x(k);
+  if (f.length === 2) return f[n === 1 ? 0 : 1];
+  const a = n % 10, b = n % 100;
+  return f[a === 1 && b !== 11 ? 0 : a > 1 && a < 5 && (b < 12 || b > 14) ? 1 : 2];
+};
+const nx = (n, k) => n + ' ' + plw(n, k);
 // Apple and Samsung model names already say the brand - "iPhone 17 Pro", not "Apple iPhone 17 Pro".
 // The brand is still searchable; see the query test below, which adds p.brand back in.
 const BARE_BRAND = new Set(['apple', 'samsung']);
@@ -208,7 +223,26 @@ function matches(p, s) {
   }
   return true;
 }
-const spreadOf = p => { const o = offersFor(p); return o.length > 1 ? o[o.length - 1].price - o[0].price : 0; };
+// A saving is only real when it is the SAME product in the SAME configuration: cheapest shop
+// against dearest. Measured across tiers it is just the price of more storage - the Z Fold 8
+// showed a 470 000 ֏ "saving" that was a 256 GB offer against a 1 TB one.
+const bestTier = p => {
+  const byTier = new Map();
+  for (const o of offersFor(p)) {
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '');
+    (byTier.get(k) || byTier.set(k, []).get(k)).push(o.price);
+  }
+  let best = null;
+  for (const [tier, prices] of byTier) {
+    if (prices.length < 2) continue;
+    const lo = Math.min(...prices), hi = Math.max(...prices);
+    const [stor] = tier.split('|');
+    if (hi > lo && (!best || hi - lo > best.gap))
+      best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor };
+  }
+  return best;
+};
+const spreadOf = p => bestTier(p)?.gap || 0;
 const SORTS = {
   popular: (a, b) => b.popularity - a.popularity,
   price_asc: (a, b) => bestOf(a) - bestOf(b),
@@ -218,6 +252,7 @@ const SORTS = {
   battery: (a, b) => (b.battery?.capacity || 0) - (a.battery?.capacity || 0),
   screen: (a, b) => (b.display?.size || 0) - (a.display?.size || 0),
   savings: (a, b) => spreadOf(b) - spreadOf(a),
+  performance: (a, b) => (b.chipset?.antutu || 0) - (a.chipset?.antutu || 0),
   shops: (a, b) => shopCount(offersFor(b)) - shopCount(offersFor(a)),
   ram: (a, b) => topOf(b, 'ram') - topOf(a, 'ram'),
   storage: (a, b) => topOf(b, 'storage') - topOf(a, 'storage')
@@ -226,8 +261,9 @@ const topOf = (p, k) => Math.max(0, ...(p.variants || []).map(v => v[k] || 0));
 // A sort is only worth offering when the items on screen actually carry the number: "Battery"
 // on a page of desktops sorts nothing, it just puts a dead option in the menu.
 const SORT_NEEDS = { battery: p => p.battery?.capacity, screen: p => p.display?.size,
-  ram: p => topOf(p, 'ram'), storage: p => topOf(p, 'storage'), savings: p => spreadOf(p) };
-const SORT_ALL = ['popular', 'price_asc', 'price_desc', 'savings', 'shops', 'newest', 'brand', 'ram', 'storage', 'battery', 'screen'];
+  ram: p => topOf(p, 'ram'), storage: p => topOf(p, 'storage'), savings: p => spreadOf(p),
+  performance: p => p.chipset?.antutu };
+const SORT_ALL = ['popular', 'price_asc', 'price_desc', 'savings', 'shops', 'newest', 'brand', 'performance', 'ram', 'storage', 'battery', 'screen'];
 if (!SORT_ALL.includes(st.sort)) st.sort = D.sort;   // a sort key we removed must not survive in saved state
 const sortKeys = () => { const v = inView(); return SORT_ALL.filter(k => !SORT_NEEDS[k] || v.some(SORT_NEEDS[k])); };
 const sortLabel = k => (X[st.lang].sorts && X[st.lang].sorts[k]) || t('sort.' + k);
@@ -256,6 +292,7 @@ const GROUPS = [
     ['f.process', p => p.chipset.process],
     ['f.cpu', p => p.chipset.cpu],
     ['f.gpu', p => p.graphics?.name || p.chipset?.gpu],
+    ['f.antutu', p => p.chipset?.antutu && money(p.chipset.antutu), p => p.chipset?.antutu, 1],
   ]],
   ['sec.memory', [
     // an item with nothing to choose (earbuds) or no RAM figure (a watch) shows no row at all
@@ -308,6 +345,7 @@ function paintChrome() {
   const tb = $('#themeBtn');
   tb.setAttribute('aria-label', t('common.theme') + ': ' + st.theme);
   tb.setAttribute('title', t('common.theme'));
+  $('#skipLink').textContent = t('common.skip');
   $('#srchLbl').textContent = t('nav.search_placeholder');
   $('#q').setAttribute('aria-label', t('nav.search_placeholder'));
   $('#q').placeholder = t('nav.search_placeholder');
@@ -391,7 +429,7 @@ const viewUnit = () => {
 };
 const CHIPSETS = () => { const unit = viewUnit(); return [
   ['ram', 'filter.ram', steps(p => (p.variants || []).map(v => v.ram)), v => v + ' ' + u('gb')],
-  ['stor', 'filter.storage', steps(p => (p.variants || []).map(v => v.storage)), v => gb(v, unit)],
+  ['stor', unit === 'mm' ? 'f.case_size' : 'filter.storage', steps(p => (p.variants || []).map(v => v.storage)), v => gb(v, unit)],
   ['batt', 'filter.battery', steps(p => [p.battery?.capacity]), v => money(v) + ' ' + u('mah')],
   ['hz', 'filter.refresh_rate', steps(p => [p.display?.refresh]), v => v + ' ' + u('hz')]
 ]; };
@@ -506,7 +544,7 @@ function card(p) {
       <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></h3>
       <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
       <div class="pfoot"><span class="pprice num">${amd(bestOf(p))}
-        <s>${n ? n + ' ' + esc(x('shops')) : esc(x('estimated'))}</s></span>
+        <s>${n ? esc(nx(n, 'shops')) : esc(x('estimated'))}</s></span>
         <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span></div>
     </div>
   </article>`;
@@ -526,37 +564,15 @@ function cardFacts(p, v) {
   if (p.body?.ip) f.push(esc(p.body.ip));
   return f.slice(0, 3);
 }
-function biggestSavings(n = 3) {
-  // A saving is only real if it is the SAME phone in the SAME capacity. Comparing a 256 GB
-  // offer against a 2 TB one produces a huge number nobody can actually pocket, so the spread
-  // is measured inside each storage tier and the best genuine one wins.
-  return DATA.map(p => {
-    const byTier = new Map();
-    for (const o of offersFor(p)) {
-      const k = (o.storage ?? 'base') + '|' + (o.ram ?? '');
-      (byTier.get(k) || byTier.set(k, []).get(k)).push(o.price);
-    }
-    let best = null;
-    for (const [tier, prices] of byTier) {
-      if (prices.length < 2) continue;
-      const lo = Math.min(...prices), hi = Math.max(...prices);
-      if (hi > lo && (!best || hi - lo > best.gap)) {
-        // tier is the internal "storage|ram" key; keep the capacity itself for the label, or it
-        // gets formatted as a capacity and prints as "2048I36 GB"
-        const [stor] = tier.split('|');
-        best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor };
-      }
-    }
-    return best;
-  }).filter(Boolean).sort((a, b) => b.gap - a.gap).slice(0, n);
-}
+const biggestSavings = (n = 3) =>
+  DATA.map(bestTier).filter(Boolean).sort((a, b) => b.gap - a.gap).slice(0, n);
 
 // The hero used to be one hardcoded iPhone. Five popular phones that actually have a photo,
 // crossfading; the rotation is a CSS animation, so there is no timer to cancel on route change.
 // Popular phones that have a photo, but never two of the same accent colour in a row - the point
 // of the carousel is that the colour keeps changing.
 const heroPicks = () => {
-  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && IMG(p.id))
+  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && hasIMG(p.id))
     .sort((a, b) => b.popularity - a.popularity);
   const out = [], used = new Set();
   for (const p of pool) {
@@ -585,9 +601,9 @@ function mastHero() {
       </div>
     </div>
     <div class="cv-bar">
-      <div><b class="num">${DATA.length}</b><span>${esc(x('models'))}</span></div>
-      <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(x('shops'))}</span></div>
-      <div><b class="num">${offersTotal}</b><span>${esc(x('offersLbl'))}</span></div>
+      <div><b class="num">${DATA.length}</b><span>${esc(plw(DATA.length, 'models'))}</span></div>
+      <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(plw(Object.keys(P.shops || {}).length, 'shops'))}</span></div>
+      <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
       ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}
     </div>
     ${sv.length ? `<section class="save-sec" id="savings">
@@ -630,7 +646,7 @@ function refresh() {
   $('#rescnt').textContent = t('common.results_count').replace('{n}', r.length);
   const ch = activeChips();
   $('#chips').innerHTML = ch.map(([k, l]) =>
-    `<button class="chip" data-rm="${esc(k)}">${esc(l)}<x aria-hidden="true">×</x></button>`).join('') +
+    `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
   syncFilters(); save();
 }
@@ -866,7 +882,7 @@ function detailView(p) {
     <div class="pstage">
       <div class="pmeta">
         <span>${esc(p.brand)} / ${esc(X[L].tier[p.tier] || p.tier)}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
-        <span>${offs.length ? shopCount(offs) + ' ' + esc(x('shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
+        <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
       </div>
       <h1 class="pname">${esc(fullName(p))}</h1>
       <div class="pgrid">
@@ -884,7 +900,7 @@ function detailView(p) {
             <b class="num">${money(shownPrice)} ֏</b>
             ${offs.length && offs.length > 1 && offs[offs.length - 1].price > lo
               ? `<div class="save2">${esc(x('saveUpTo'))} ${money(offs[offs.length - 1].price - lo)} ֏</div>` : ''}
-            ${offs.length ? `<div class="shopn">${shopCount(offs)} ${esc(x('shops'))}</div>` : ''}
+            ${offs.length ? `<div class="shopn">${esc(nx(shopCount(offs), 'shops'))}</div>` : ''}
             ${railHTML(offs)}
           </div>
           <div class="pcta">
@@ -904,6 +920,7 @@ function detailView(p) {
     ${offersFor(p).length > offs.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffers'))} → <b class="num">${offersFor(p).length}</b></a></p>` : ''}`
       : `<p class="empty" style="padding:26px 0"><b>${esc(x('noOffers'))}</b></p>`}
     <p class="note">${offs.length ? esc(x('priceSrc')) + ' · ' + esc(x('updated')) + ' ' + esc(updatedOn()) : esc(t('common.demo_prices_note'))}</p>
+    ${warrHTML(offs)}
 
     
     ${historyHTML(p)}
@@ -918,12 +935,23 @@ function detailView(p) {
   </div>`;
 }
 
+// Shops that publish warranty terms get a link to them; the rest are named plainly, so a shop
+// without a link reads as "this one does not publish it" rather than as a broken row.
+const warrHTML = offs => {
+  const ks = [...new Set(offs.map(o => o.shop))].filter(k => P.shops && P.shops[k]);
+  return ks.length ? `<p class="warr"><b>${esc(x('warranty'))}:</b>${ks.map(k => {
+    const w = shopWarranty(k), nm = P.shops[k].name || k;
+    return w ? `<a href="${esc(w)}" target="_blank" rel="noopener noreferrer">${esc(nm)}</a>`
+      : `<span class="nw">${esc(nm)} — ${esc(x('noWarranty'))}</span>`;
+  }).join('')}</p>` : '';
+};
+
 // Privacy and contact are the same shape: a heading and a few paragraphs from strings.json.
 function docView(key, paras) {
   return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
     <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
     ${paras.map(p => `<p>${esc(t(key + '.' + p))}</p>`).join('')}
-    ${key === 'contact' ? `<p><a href="mailto:${esc(t('contact.email'))}">${esc(t('contact.email'))}</a></p>` : ''}
+    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? `<p><a href="mailto:${esc(t('contact.email'))}">${esc(t('contact.email'))}</a></p>` : ''}
     </article></div>`;
 }
 
@@ -933,7 +961,7 @@ function docView(key, paras) {
    fact instead, because a question you cannot answer two ways is not a choice. */
 const CQ = [
   ['ram',  'filter.ram',          p => (p.variants || []).map(v => v.ram),     v => v + ' ' + u('gb')],
-  ['stor', 'filter.storage',      p => (p.variants || []).map(v => v.storage), v => gb(v)],
+  ['stor', 'filter.storage',      p => (p.variants || []).map(v => v.storage), v => gb(v, viewUnit())],
   ['hz',   'filter.refresh_rate', p => [p.display && p.display.refresh],       v => v + ' ' + u('hz')],
   ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u('mah')]
 ];
@@ -956,7 +984,7 @@ function constructView() {
     for (const [key, lbl, get, fmt] of CQ) {
       const vals = [...new Set(pool.flatMap(get).filter(v => v != null && v > 0))].sort((a, b) => a - b);
       if (vals.length < 2) continue;
-      questions += `<section class="cq"><h3>${esc(t(lbl))}</h3><div class="cqrow">`
+      questions += `<section class="cq"><h3>${esc(t(key === 'stor' && viewUnit() === 'mm' ? 'f.case_size' : lbl))}</h3><div class="cqrow">`
         + chip(key, 0, x('any'), !st[key])
         + vals.map(v => chip(key, v, x('min') + ' ' + fmt(v), String(st[key]) === String(v))).join('')
         + `</div></section>`;
@@ -1058,7 +1086,7 @@ function offersView(p) {
       <span class="t"><img src="${IMG(p.id)}" alt="" loading="lazy"></span>
       <div>
         <h1>${esc(fullName(p))}</h1>
-        <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(x('offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(x('shops'))}</p>
+        <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
       </div>
     </div>
     <div class="offilters">
@@ -1190,7 +1218,9 @@ function render(keepScroll) {
   // the catalogue, throwing you off the product page you were reading.
   if (raw && raw[0] !== '/') {
     const el = document.getElementById(raw);
-    if (el && $('#main').innerHTML) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    // Focus first: a skip link that only scrolls leaves the keyboard where it was, which is the
+    // one thing the link exists to fix.
+    if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
   }
   paintChrome(); paintTray();
   const h = raw || '/';
@@ -1253,6 +1283,7 @@ document.addEventListener('click', e => {
   if (act && act.dataset.act === 'openadd') {
     const m = $('#cmodal');
     if (m) {
+      addOpener = document.activeElement;
       m.hidden = false; paintCmpRes();
       // TWO frames between leaving display:none and adding the class - one is not enough for
       // the browser to have computed the starting style, and the fade is skipped.
@@ -1359,7 +1390,11 @@ document.addEventListener('click', e => {
   const d = e.target.closest('[data-drop]');
   $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
 });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') $$('[data-drop][open]').forEach(o => o.open = false); });
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  $('[data-drop][open]').forEach(o => o.open = false);
+  closeAdd();
+});
 document.addEventListener('change', e => {
   const el = e.target, f = el.dataset.f;
   if (el.id === 'diffonly') { $('#cwrap').classList.toggle('hide-same', el.checked); return; }
@@ -1426,12 +1461,13 @@ const scrollMem = new Map();
 const remembers = h => h === '/' || h.startsWith('/c/');
 // Fade out, then hide: hiding first would cut the transition off before it ran. Under reduced
 // motion the duration is the same but the transition is dropped, so it simply closes.
+let addOpener = null;
 function closeAdd() {
   const m = $('#cmodal'); if (!m || m.hidden) return;
   m.classList.remove('on');
   setTimeout(() => { m.hidden = true; }, 200);
+  addOpener?.focus(); addOpener = null;   // put the keyboard back where it was
 }
-addEventListener('keydown', e => { if (e.key === 'Escape') closeAdd(); });
 window.addEventListener('hashchange', e => {
   const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
   if (remembers(from)) scrollMem.set(from, window.scrollY);

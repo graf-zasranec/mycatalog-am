@@ -20,6 +20,22 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC, OUT = ROOT / 'images' / '_src', ROOT / 'images' / 'cut'
 OUT.mkdir(parents=True, exist_ok=True)
 
+# A phone, a tablet, a laptop, a console has no hole through it: any enclosed transparent
+# region inside one is the model tearing at a reflective screen, and gets filled whatever its
+# size. A headphone's headband gap, a watch strap's loop and a speaker's carry handle are real
+# holes, so for those only small ones are filled. The category decides, because size cannot:
+# the Smart Band's real loop is 26% of its box and the iPhone 17e's tear is 49%.
+SOLID_CATS = {'phone', 'tablet', 'laptop', 'desktop', 'console'}
+_cat = {}
+try:
+    import json
+    for _p in json.loads((ROOT / 'data' / 'phones.json').read_text(encoding='utf-8')):
+        _cat[_p['id']] = _p.get('category', 'phone')
+except Exception:
+    pass
+def solid_product(filename):
+    return _cat.get(filename.split('__')[0], '') in SOLID_CATS
+
 SIDE = 1200        # canvas the product is centred on
 FILL = 0.92        # how much of that canvas the product's longest side takes
 MAXUP = 1.15       # never upscale a small source by more than this, it only adds blur
@@ -27,7 +43,7 @@ MAXUP = 1.15       # never upscale a small source by more than this, it only add
 session = new_session('isnet-general-use')
 
 
-def cut(path: Path) -> Image.Image:
+def cut(path: Path, solid_cat: bool = False) -> Image.Image:
     src = Image.open(path).convert('RGBA')
     # A press PNG that already has alpha is its own answer; running the model on it can only
     # lose detail at the edges it already has.
@@ -43,7 +59,9 @@ def cut(path: Path) -> Image.Image:
         edge = set(np.unique(np.concatenate([holes[0], holes[-1], holes[:, 0], holes[:, -1]])))
         area = a.size
         for lab, size in zip(*np.unique(holes, return_counts=True)):
-            if lab == 0 or lab in edge or size > area * 0.02:
+            if lab == 0 or lab in edge:
+                continue
+            if not solid_cat and size > area * 0.02:
                 continue
             a[holes == lab] = 255
         img.putalpha(Image.fromarray(a))
@@ -94,7 +112,7 @@ def main():
     for f in files:
         try:
             out = OUT / (os.path.splitext(f)[0] + '.webp')
-            cut(SRC / f).save(out, 'WEBP', quality=90, method=6)
+            cut(SRC / f, solid_product(f)).save(out, 'WEBP', quality=90, method=6)
             done += 1
             print(f'{done}/{len(files)} {f}', flush=True)
         except Exception as e:

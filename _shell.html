@@ -295,7 +295,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .save{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--brand);margin-top:6px}
 .chip{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 8px 0 13px;border-radius:999px;
   background:var(--brand-soft);color:var(--brand);border:0;font-size:0.8125rem;font-weight:600;cursor:pointer}
-.chip x{font-size:15px;line-height:1;opacity:.65}
+.chip span{font-size:15px;line-height:1;opacity:.65}
 .chip:hover x{opacity:1}
 .chip.clear{background:none;color:var(--muted);padding:0 12px}
 .chip.clear:hover{color:var(--text)}
@@ -381,10 +381,9 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .pname{font-size:clamp(30px,5vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1.02;
   overflow-wrap:anywhere}
 .pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);gap:44px;align-items:stretch;margin-top:14px}
-/* Capped: the left column grows with the window, and without a ceiling a 1200px cutout was
-   being blown up past its own resolution on a wide screen - big and soft. */
-.pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:340px;
-  max-width:min(100%,520px);margin-inline:auto}
+/* Full width of its column: the cutouts are 1200px and the column tops out around 800, so
+   the big photo the page was designed around is still a downscale, never an upscale. */
+.pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:340px}
 .pshotwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   filter:drop-shadow(0 30px 46px rgba(20,19,20,.20))}
 .pside{padding-top:8px}
@@ -744,7 +743,7 @@ a.store:hover .nm{color:var(--brand)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition-property:opacity!important}}
 </style>
 
-<a class="skip" href="#main">Main</a>
+<a class="skip" href="#main" id="skipLink">Main</a>
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/"><span class="m"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span>MyCatalog</a>
@@ -766,6 +765,6 @@ a.store:hover .nm{color:var(--brand)}
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main"></main>
+<main id="main" tabindex="-1"></main>
 <footer class="ft"><div class="shell" id="foot"></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
