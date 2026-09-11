@@ -482,12 +482,13 @@ function card(p) {
   const v = (cheapest && p.variants.find(z => z.storage === cheapest.storage))
     || p.variants[0] || {};
   return `<article class="pcard">
-    <div class="pshot">
+    <div class="pshot"${cycShots(p.id).length > 1 ? ` data-cyc="${esc(p.id)}"` : ''}>
       ${isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-      <img src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      <img class="on" src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      ${cycShots(p.id).length > 1 ? `<img alt="" aria-hidden="true" loading="lazy" decoding="async">` : ''}
     </div>
     <div class="pbody">
       <span class="eyebrow">${esc(p.brand)}</span>
@@ -716,6 +717,29 @@ function swatch(name) {
 
 const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
 const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
+// 'main' is a copy of one of the colours under a different filename, so it would show twice
+const cycShots = id => [...new Set(Object.entries(CIMG[id] || {}).filter(([k]) => k !== 'main').map(([, v]) => v))];
+
+// Cards with more than one colour photo walk through them. One timer for the whole grid, and a
+// card only advances while it is on screen: crossfading rows nobody is looking at is wasted work
+// on a slow machine. Opacity only, so there is no layout to redo.
+setInterval(() => {
+  if (document.hidden) return;
+  for (const el of $$('[data-cyc]')) {
+    const r = el.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight) continue;
+    const shots = cycShots(el.dataset.cyc);
+    const im = el.querySelectorAll('img');
+    if (shots.length < 2 || im.length < 2) continue;
+    const cur = im[0].classList.contains('on') ? im[0] : im[1];
+    const nxt = cur === im[0] ? im[1] : im[0];
+    const i = (+el.dataset.cycI || 0) + 1;
+    el.dataset.cycI = i;
+    nxt.src = shots[i % shots.length];
+    nxt.classList.add('on');
+    cur.classList.remove('on');
+  }
+}, 3000);
 
 let SEL = { id: null, color: null, storage: null, ram: null };
 function initSel(p) {
