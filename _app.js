@@ -1092,10 +1092,10 @@ function compareView() {
         const ok = nv.filter(v => typeof v === 'number' && isFinite(v));
         if (ok.length > 1 && new Set(ok).size > 1) bi = nv.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok));
       }
-      // Only the value that is actually WORSE is marked. A row where the values merely differ
-      // without one being better - iOS against Android, one material against another - has no
-      // loser, so both sides read as fine and nothing turns red.
-      const mark = i => same || vals[i] === '—' ? '' : bi < 0 ? ' best' : vals[i] === vals[bi] ? ' best' : ' worse';
+      // Only weakness is marked - fewer mAh, fewer pixels, less memory. Everything else keeps the
+      // default colour, including a difference with no better side (iOS against Android) and a
+      // value that is simply missing.
+      const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
       rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
         vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('');
     }
