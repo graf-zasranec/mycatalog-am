@@ -20,11 +20,30 @@ const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.js
 // "<id>__main.webp" is the default shot; the rest are per-colour.
 const CUT = 'images/cut';
 const cutFiles = fs.existsSync(CUT) ? fs.readdirSync(CUT).filter(f => f.endsWith('.webp')) : [];
+
+// WebP width, read straight out of the header - the product page prefers the colour shot over
+// the main one, and 30 colour photos were a third of the main's resolution, so the card looked
+// sharp and the product page looked soft for the same phone. A colour shot that much worse is
+// not worth showing: dropping it falls back to the main, which is what the eye wants.
+function webpWidth(file) {
+  const b = fs.readFileSync(file, { encoding: null }).subarray(0, 40);
+  if (b.toString('ascii', 0, 4) !== 'RIFF') return 0;
+  const tag = b.toString('ascii', 12, 16);
+  if (tag === 'VP8X') return ((b[24] | (b[25] << 8) | (b[26] << 16)) + 1);
+  if (tag === 'VP8L') return ((b[21] | ((b[22] & 0x3f) << 8)) + 1);
+  if (tag === 'VP8 ') return b.readUInt16LE(26) & 0x3fff;
+  return 0;
+}
+const cutW = {};
+for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { cutW[f] = 0; } }
+
 function cutMap(inline) {
   const m = {};
   for (const f of cutFiles) {
     const [id, rest] = f.replace(/\.webp$/, '').split('__');
     if (!id || !rest) continue;
+    const mainW = cutW[`${id}__main.webp`] || 0;
+    if (rest !== 'main' && mainW && cutW[f] < mainW * 0.75) continue;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
       : `${CUT}/${f}`;

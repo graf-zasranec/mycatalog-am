@@ -368,7 +368,8 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .pstage{margin-top:6px}
 .pmeta{display:flex;justify-content:space-between;gap:16px;font-family:var(--mono);font-size:12px;
   letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding-bottom:12px}
-.pname{font-size:clamp(34px,8.5vw,96px);font-weight:800;letter-spacing:-.045em;line-height:.94;
+/* 8.5vw peaking at 96px ran the title off the side of a wide window and at browser zoom */
+.pname{font-size:clamp(30px,5vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1.02;
   overflow-wrap:anywhere}
 .pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);gap:44px;align-items:stretch;margin-top:14px}
 /* Capped: the left column grows with the window, and without a ceiling a 1200px cutout was
