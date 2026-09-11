@@ -12,6 +12,7 @@ const VERD = {};
 for (const { id, ...r } of JSON.parse(rd('data/verdicts.json'))) VERD[id] = r;
 // real shop offers from scrape.mjs; optional, the site falls back to estimates without it
 const HISTORY = fs.existsSync('data/history.json') ? JSON.parse(rd('data/history.json')) : { points: {} };
+const TERMS = JSON.parse(rd('data/terms.json'));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 
 // transparent cutouts made by tools/cutout.mjs: images/cut/<phoneId>__<colourSlug>.webp
@@ -30,10 +31,37 @@ function cutMap(inline) {
   return m;
 }
 
+// One check: pull the real tr() out of _app.js and prove the dictionary fires.
+// If a term stops matching (bad boundary, key typo) the build fails here, not in the browser.
+{
+  const src = rd('_app.js');
+  const a = src.indexOf('const TERMKEYS'), b = src.indexOf('/* TR_END */');
+  // indexOf returns -1 on a renamed marker, and slice(-1, n) would build a bogus function that
+  // either throws somewhere unrelated or passes while asserting nothing.
+  if (a < 0 || b <= a) { console.error('build: cannot find the tr() markers in _app.js (const TERMKEYS / TR_END)'); process.exit(1); }
+  const body = src.slice(a, b);
+  const tr = new Function('TERMS', body + '; return tr;')(TERMS);
+  const cases = [
+    ['Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)', 'hy', 'Ութմիջուկ (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)'],
+    ['Aluminum frame, glass back', 'ru', 'Алюминиевая рамка, стеклянная задняя панель'],
+    ['Awesome Lime', 'hy', 'Լայմ'],
+    ['Titanium Jetblack', 'ru', 'Титановый Глубокий чёрный'],
+    ['Nano-SIM + eSIM', 'en', 'Nano-SIM + eSIM'],
+  ];
+  for (const [input, lang, want] of cases) {
+    const got = tr(input, lang);
+    if (got !== want) { console.error(`terms: ${lang} "${input}"
+  got  ${got}
+  want ${want}`); process.exit(1); }
+  }
+  console.log('terms self-test: ' + cases.length + ' checks pass');
+}
+
 const HEAD_OPEN = `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<script>try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}<\/script>
 `;
 const HEAD_CLOSE = `</head><body>
 `;
@@ -54,8 +82,6 @@ function build({ inline, standalone }) {
     const cut = `${CUT}/${p.id}__main.webp`;
     if (fs.existsSync(cut)) {
       main[p.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
-    } else if (fs.existsSync(`images/${p.id}.jpg`)) {
-      main[p.id] = inline ? 'data:image/jpeg;base64,' + fs.readFileSync(`images/${p.id}.jpg`).toString('base64') : `images/${p.id}.jpg`;
     } else console.warn('  ! missing image for', p.id);
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
@@ -64,6 +90,7 @@ function build({ inline, standalone }) {
     + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\nconst VERD=${JSON.stringify(VERD)};\n`
     + `const PRICES=${JSON.stringify(PRICES)};\n`
     + `const HISTORY=${JSON.stringify(HISTORY)};\n`
+    + `const TERMS=${JSON.stringify(TERMS)};\n`
     + imgdata + rd('_app.js') + '\n<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);

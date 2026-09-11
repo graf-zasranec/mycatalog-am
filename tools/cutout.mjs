@@ -34,9 +34,25 @@ img{width:100%;display:block}figcaption{font-size:10px;opacity:.6;margin-top:4px
 const S=document.getElementById('s'), G=document.getElementById('g');
 
 // near-white and unsaturated == background candidate
+// Press PNGs from the manufacturers' own CDNs are already cut out, so their background is
+// transparent rather than white; without the alpha test the flood fill finds nothing to remove
+// and the whole frame is kept, black.
+// 234 was loose enough to swallow a WHITE PRODUCT: AirPods and white earbuds are ~235-248, a
+// studio backdrop is 250-255. The fill crossed the product edge and hollowed them out. Keeping the
+// test tight leaves at worst a faint rim, which the halo softener below fades.
 const isBg=(p,i)=>{const r=p[i],g=p[i+1],b=p[i+2];
   const mx=Math.max(r,g,b),mn=Math.min(r,g,b);
-  return mn>=234 && (mx-mn)<=14;};
+  return mn>=249 && (mx-mn)<=6;};
+// A press PNG arrives already cut out. Flood filling it anyway is what hollowed out every WHITE
+// product - the fill walks the transparent border, reaches a white body pixel that also passes the
+// near-white test, and eats the product from the edge inwards. AirPods and the white Galaxy Buds
+// came out as outlines. So: if the border is already transparent, the alpha channel IS the answer.
+const preCut=(px,W,H)=>{
+  let n=0,clear=0;
+  for(let x=0;x<W;x+=3){ for(const y of [0,H-1]){ n++; if(px[(y*W+x)*4+3]<16) clear++; } }
+  for(let y=0;y<H;y+=3){ for(const x of [0,W-1]){ n++; if(px[(y*W+x)*4+3]<16) clear++; } }
+  return clear/n > 0.97;
+};
 
 function cutout(img){
   const W=img.naturalWidth,H=img.naturalHeight;
@@ -47,7 +63,9 @@ function cutout(img){
 
   // flood fill inwards from every border pixel
   const bg=new Uint8Array(W*H);
+  const pre=preCut(px,W,H);
   const stack=[];
+  if(!pre){
   for(let x=0;x<W;x++){stack.push(x,0,x,H-1);}
   for(let y=0;y<H;y++){stack.push(0,y,W-1,y);}
   while(stack.length){
@@ -60,9 +78,12 @@ function cutout(img){
     stack.push(x+1,y,x-1,y,x,y+1,x,y-1);
   }
   for(let p=0;p<W*H;p++) if(bg[p]) px[p*4+3]=0;
+  } else {
+    for(let p=0;p<W*H;p++) if(px[p*4+3]<16) bg[p]=1;   // the source's own alpha is the mask
+  }
 
   // soften the white halo: opaque light pixels touching transparency fade out
-  for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+  if(!pre) for(let y=0;y<H;y++)for(let x=0;x<W;x++){
     const p=y*W+x; if(bg[p])continue;
     let edge=false;
     for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){
@@ -74,21 +95,54 @@ function cutout(img){
     if(lum>222) px[i+3]=Math.max(0,Math.round(255*(1-(lum-222)/33)));
   }
 
-  // trim to the product's bounding box so every phone fills its frame consistently
-  let x0=W,y0=H,x1=0,y1=0;
-  for(let y=0;y<H;y++)for(let x=0;x<W;x++){
-    if(px[(y*W+x)*4+3]>8){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;}
+  // Press renders are often four panels - side | front | back | side. Split the alpha mask
+  // into runs of occupied columns and keep only the wide ones, so the thin side profiles are
+  // dropped and the shot shows front and back. A one- or two-panel photo is left alone.
+  const colFull=new Uint8Array(W);
+  const MINCOL=Math.max(3,Math.round(H*0.03));   // a column counts only with real coverage
+  for(let x=0;x<W;x++){let n=0;for(let y=0;y<H;y++){if(px[(y*W+x)*4+3]>24)n++;}colFull[x]=n>=MINCOL?1:0;}
+  const segs=[];let run=-1;
+  for(let x=0;x<W;x++){ if(colFull[x]){ if(run<0)run=x; } else if(run>=0){ segs.push([run,x-1]); run=-1; } }
+  if(run>=0)segs.push([run,W-1]);
+  let keepX0=0,keepX1=W-1;
+  if(segs.length>=3){
+    const widest=Math.max.apply(null,segs.map(g=>g[1]-g[0]+1));
+    const keep=segs.filter(g=>(g[1]-g[0]+1)>=widest*0.45);
+    if(keep.length){keepX0=keep[0][0];keepX1=keep[keep.length-1][1];}
   }
+
+  // Trim to the product's bounding box so every phone fills its frame consistently.
+  // alpha>8 counted the faint dust the halo softener leaves scattered over the frame, so the box
+  // came out the size of the whole image and the scale-to-fill did nothing - that is why the pink
+  // iPhone 15 sat tiny in the middle while its siblings filled the frame. Only solid pixels, and
+  // only rows/columns with a real run of them, define the product.
+  const SOLID=64, MINRUN=Math.max(3,Math.round(Math.min(W,H)*0.01));
+  let x0=W,y0=H,x1=0,y1=0;
+  for(let y=0;y<H;y++){let n=0;for(let x=keepX0;x<=keepX1;x++) if(px[(y*W+x)*4+3]>SOLID) n++;
+    if(n>=MINRUN){ if(y<y0)y0=y; if(y>y1)y1=y; }}
+  for(let x=keepX0;x<=keepX1;x++){let n=0;for(let y=0;y<H;y++) if(px[(y*W+x)*4+3]>SOLID) n++;
+    if(n>=MINRUN){ if(x<x0)x0=x; if(x>x1)x1=x; }}
   if(x1<x0||y1<y0){x0=0;y0=0;x1=W-1;y1=H-1;}
   const pad=Math.round(Math.max(x1-x0,y1-y0)*0.02);
   x0=Math.max(0,x0-pad);y0=Math.max(0,y0-pad);x1=Math.min(W-1,x1+pad);y1=Math.min(H-1,y1+pad);
   g.putImageData(d,0,0);
   const cw=x1-x0+1, ch=y1-y0+1;
-  const MAX=560, k=Math.min(1,MAX/Math.max(cw,ch));      // cap the long edge; keeps the artifact small
+  // Every cutout is trimmed to its own bounding box, so a wide phone and a narrow one ended up
+  // filling the frame differently - switching colour on the product page looked like the phone
+  // changed size. Draw onto a fixed SQUARE canvas with the product at a fixed share of it, so
+  // every image of every product has the same aspect and the same visual scale.
+  const SIDE=1200, FILL=0.94, MAXUP=1.12;
+  // The product must always fill the frame - capping the enlargement instead just left small
+  // sources sitting tiny in a 1200px canvas, which reads as "bad photo" on a big screen.
+  // So fill the frame every time and shrink the CANVAS to whatever the source can honestly
+  // carry: same layout size on the page, fewer invented pixels in the file.
+  const side=Math.min(SIDE,Math.round(Math.max(cw,ch)*MAXUP/FILL));
+  const k=Math.min((side*FILL)/cw,(side*FILL)/ch);
+  const dw=Math.max(1,Math.round(cw*k)), dh=Math.max(1,Math.round(ch*k));
   const o=document.createElement('canvas');
-  o.width=Math.max(1,Math.round(cw*k));o.height=Math.max(1,Math.round(ch*k));
+  o.width=side;o.height=side;
   const og=o.getContext('2d');og.imageSmoothingQuality='high';
-  og.drawImage(c,x0,y0,cw,ch,0,0,o.width,o.height);
+  og.drawImage(c,x0,y0,cw,ch,Math.round((side-dw)/2),Math.round((side-dh)/2),dw,dh);
   return o;
 }
 

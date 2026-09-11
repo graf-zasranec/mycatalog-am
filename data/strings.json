@@ -246,12 +246,6 @@
   "en": "Software"
  },
  {
-  "key": "sec.pros_cons",
-  "hy": "Դրական և բացասական կողմեր",
-  "ru": "Плюсы и минусы",
-  "en": "Pros & cons"
- },
- {
   "key": "sec.variants",
   "hy": "Տարբերակներ",
   "ru": "Версии",
@@ -352,6 +346,12 @@
   "hy": "Ներքին հիշողություն",
   "ru": "Встроенная память",
   "en": "Storage"
+ },
+ {
+  "key": "f.case_size",
+  "hy": "Կորպուսի չափ",
+  "ru": "Размер корпуса",
+  "en": "Case size"
  },
  {
   "key": "f.card_slot",
@@ -504,18 +504,6 @@
   "en": "Overview"
  },
  {
-  "key": "detail.pros",
-  "hy": "Առավելություններ",
-  "ru": "Плюсы",
-  "en": "Pros"
- },
- {
-  "key": "detail.cons",
-  "hy": "Թերություններ",
-  "ru": "Минусы",
-  "en": "Cons"
- },
- {
   "key": "detail.approx_price",
   "hy": "Մոտավոր գին",
   "ru": "Примерная цена",
@@ -580,5 +568,53 @@
   "hy": "{n} մոդել",
   "ru": "Моделей: {n}",
   "en": "{n} models"
+ },
+ {
+  "key": "f.touch",
+  "hy": "Հպէկրան",
+  "ru": "Сенсорный экран",
+  "en": "Touchscreen"
+ },
+ {
+  "key": "f.graphics",
+  "hy": "Վիդեոքարտ",
+  "ru": "Видеокарта",
+  "en": "Graphics"
+ },
+ {
+  "key": "construct.title",
+  "hy": "Կոնստրուկտոր",
+  "ru": "Конструктор",
+  "en": "Construct"
+ },
+ {
+  "key": "construct.lead",
+  "hy": "Ընտրի՛ր՝ ինչ ես փնտրում, և մենք կցուցադրենք համապատասխանողները։",
+  "ru": "Выберите, что вы ищете, и мы покажем подходящие модели.",
+  "en": "Pick what you are after and we will show what matches."
+ },
+ {
+  "key": "construct.pick_cat",
+  "hy": "Ի՞նչ ես փնտրում",
+  "ru": "Что вы ищете",
+  "en": "What are you looking for"
+ },
+ {
+  "key": "construct.show",
+  "hy": "Ցույց տալ",
+  "ru": "Показать",
+  "en": "Show"
+ },
+ {
+  "key": "construct.fixed",
+  "hy": "Այս բաժնում բոլորն ունեն",
+  "ru": "Во всём разделе одинаково",
+  "en": "Same across this category"
+ },
+ {
+  "key": "construct.none",
+  "hy": "Այս պայմաններով ոչինչ չկա. թուլացրո՛ւ մեկը։",
+  "ru": "Под эти условия ничего нет — ослабьте одно из них.",
+  "en": "Nothing matches — loosen one of these."
  }
 ]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T06:05:51.983Z",
+ "generated": "2026-09-11T06:40:14.564Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /"
  },
@@ -28,10 +28,28 @@
    "note": "phone retailer",
    "warranty": null
   },
+  "ucom": {
+   "name": "Ucom",
+   "site": "https://shop.ucom.am",
+   "note": "operator shop",
+   "warranty": null
+  },
+  "telecom": {
+   "name": "Telecom Armenia",
+   "site": "https://www.telecomarmenia.am",
+   "note": "operator shop",
+   "warranty": null
+  },
   "istore": {
    "name": "iStore",
    "site": "https://istore.am",
    "note": "authorised Apple reseller",
+   "warranty": null
+  },
+  "allsell": {
+   "name": "AllSell",
+   "site": "https://allsell.am",
+   "note": "electronics retailer",
    "warranty": null
   }
  },
@@ -61,19 +79,6 @@
     "inStock": true,
     "ram": null,
     "color": "Deep Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 522900,
-    "storage": 256,
-    "title": "iPhone 17 Pro, 256 ԳԲ, Cosmic Orange",
-    "url": "https://ispace.am/product/iphone-17-pro-256-gb-cosmic-orange-mg8h4af-a",
-    "sku": "MG8H4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/8a/8a/8a8ae008f8b519511bfc41e8d16b6f81/250915140023667226.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Cosmic Orange",
     "shop": "ispace"
    },
    {
@@ -115,6 +120,18 @@
    {
     "id": "apple-iphone-17-pro",
     "price": 522900,
+    "storage": null,
+    "title": "iPhone 17 Pro",
+    "url": "https://shop.ucom.am/am/iphone-17-pro.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/p/iphone_17_pro_cosmic_orange_pdp_image_position_2__ce-ww_2_3_2.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 522900,
     "storage": 256,
     "title": "iPhone 17 Pro , 256GB , Silver",
     "url": "https://istore.am/product/iphone-17-pro-256gb-silver-2454",
@@ -142,20 +159,22 @@
     "storage": null,
     "title": "iPhone 17 Pro",
     "url": "https://www.pixel.am/am/product/iphone-17-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/114/800_1776059972-1758822242-17-pro-orng-1.png",
+    "color": "Cosmic Orange",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
     "id": "apple-iphone-17-pro",
     "price": 529900,
-    "storage": null,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://mobilecentre.am/product/apple-iphone-17-pro/33134/",
+    "storage": 256,
+    "title": "iPhone 17 Pro 256GB Dual eSIM (Silver)",
+    "url": "https://mobilecentre.am/product/apple-iphone-17-pro/33138/",
+    "image": "https://mobilecentre.am/img/prodpic/0d13f4ff5cb782c9c5e8New_Project_-_2025-09-19T105223.627.png",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Silver",
     "shop": "mobilecentre"
    },
    {
@@ -169,19 +188,6 @@
     "inStock": true,
     "ram": null,
     "color": "Silver",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 619900,
-    "storage": 512,
-    "title": "iPhone 17 Pro, 512 ԳԲ, Deep Blue",
-    "url": "https://ispace.am/product/iphone-17-pro-512-gb-deep-blue-mg8n4af-a",
-    "sku": "MG8N4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/be/d2/bed2ebac62b52c2580a68b9e0d67d995/250915140029572558.webp",
-    "inStock": true,
-    "ram": null,
-    "color": "Deep Blue",
     "shop": "ispace"
    },
    {
@@ -286,19 +292,6 @@
     "id": "apple-iphone-17-pro",
     "price": 717900,
     "storage": 1024,
-    "title": "iPhone 17 Pro, 1 ՏԲ, Deep Blue",
-    "url": "https://ispace.am/product/iphone-17-pro-1-tb-deep-blue-mg8r4af-a",
-    "sku": "MG8R4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/be/d2/bed2ebac62b52c2580a68b9e0d67d995/250915140029572558.webp",
-    "inStock": true,
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 717900,
-    "storage": 1024,
     "title": "iPhone 17 Pro, 1 ՏԲ, Silver",
     "url": "https://ispace.am/product/iphone-17-pro-1-tb-silver-mg8p4af-a",
     "sku": "MG8P4AF/A",
@@ -306,6 +299,19 @@
     "inStock": true,
     "ram": null,
     "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "price": 717900,
+    "storage": 1024,
+    "title": "iPhone 17 Pro, 1 ՏԲ, Deep Blue",
+    "url": "https://ispace.am/product/iphone-17-pro-1-tb-deep-blue-mg8r4af-a",
+    "sku": "MG8R4AF/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/be/d2/bed2ebac62b52c2580a68b9e0d67d995/250915140029572558.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Deep Blue",
     "shop": "ispace"
    },
    {
@@ -388,9 +394,10 @@
     "storage": null,
     "title": "iPhone 17 Pro Max",
     "url": "https://www.pixel.am/am/product/iphone-17-pro-max",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/115/800_1776063603-1758824264-17-p-max-ormg-2-sides.png",
+    "color": "Cosmic Orange",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
@@ -471,13 +478,26 @@
    {
     "id": "apple-iphone-17-pro-max",
     "price": 569900,
+    "storage": 256,
+    "title": "iPhone 17 Pro Max 256GB Dual eSIM (Silver)",
+    "url": "https://mobilecentre.am/product/apple-iphone-17-pro-max/33165/",
+    "image": "https://mobilecentre.am/img/prodpic/5c403119f8683f9c8a79New_Project_-_2025-09-19T104614.723.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 569900,
     "storage": null,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://mobilecentre.am/product/apple-iphone-17-pro-max/33163/",
+    "title": "iPhone 17 Pro Max",
+    "url": "https://shop.ucom.am/am/iphone-17-pro-max.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/p/iphone_17_pro_deep_blue_pdp_image_position_2__ce-ww_1_1_1_1.webp",
     "inStock": true,
     "ram": null,
     "color": null,
-    "shop": "mobilecentre"
+    "shop": "ucom"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -570,6 +590,18 @@
     "id": "apple-iphone-17-pro-max",
     "price": 668900,
     "storage": 512,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 512GB (Silver) (A3526) (MFYQ4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-512gb-silver-a3526-mfyq4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/September/Smartfon/MFYQ4AFA%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Silver",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 668900,
+    "storage": 512,
     "title": "iPhone 17 Pro Max , 512GB , Deep Blue",
     "url": "https://istore.am/product/iphone-17-pro-max-512gb-deep-blue-2464",
     "inStock": true,
@@ -616,18 +648,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "price": 749900,
-    "storage": 512,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 512GB (Silver) (A3526) (MFYQ4ZD/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-pro-max-512gb-silver-a3526-mfyq4zda.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hoktember/Smartfon/iPhone%2017%20Pro%20Max%20512GB%20(Silver)%20(A3526)%20(MFYQ4ZDA)%20(3)-500x500.jpg",
-    "ram": null,
-    "color": "Silver",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "price": 765900,
     "storage": 1024,
     "title": "iPhone 17 Pro Max, 1 ՏԲ, Cosmic Orange",
@@ -637,32 +657,6 @@
     "inStock": true,
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 765900,
-    "storage": 1024,
-    "title": "iPhone 17 Pro Max, 1 ՏԲ, Deep Blue",
-    "url": "https://ispace.am/product/iphone-17-pro-max-1-tb-deep-blue-mfyx4af-a",
-    "sku": "MFYX4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/41/49/4149198f1713e718ba920b85acffb4f4/250915140038367093.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 765900,
-    "storage": 1024,
-    "title": "iPhone 17 Pro Max, 1 ՏԲ, Silver",
-    "url": "https://ispace.am/product/iphone-17-pro-max-1-tb-silver-mfyv4af-a",
-    "sku": "MFYV4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/a3/44/a34423b7b08300fde0625964a0130f66/250915140035204152.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Silver",
     "shop": "ispace"
    },
    {
@@ -700,45 +694,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 962900,
-    "storage": 2048,
-    "title": "iPhone 17 Pro Max, 2 ՏԲ, Deep Blue",
-    "url": "https://ispace.am/product/iphone-17-pro-max-2-tb-deep-blue-mg014af-a",
-    "sku": "MG014AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/41/49/4149198f1713e718ba920b85acffb4f4/250915140038367093.webp",
-    "inStock": true,
-    "ram": null,
-    "color": "Deep Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 962900,
-    "storage": 2048,
-    "title": "iPhone 17 Pro Max, 2 ՏԲ, Silver",
-    "url": "https://ispace.am/product/iphone-17-pro-max-2-tb-silver-mfyy4af-a",
-    "sku": "MFYY4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/a3/44/a34423b7b08300fde0625964a0130f66/250915140035204152.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Silver",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 962900,
-    "storage": 2048,
-    "title": "iPhone 17 Pro Max, 2 ՏԲ, Cosmic Orange",
-    "url": "https://ispace.am/product/iphone-17-pro-max-2-tb-cosmic-orange-mg004af-a",
-    "sku": "MG004AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/2d/22/2d22e5e521d6491cf0dd8c0c8a47f2eb/250915140013863146.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Cosmic Orange",
-    "shop": "ispace"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -782,18 +737,6 @@
     "id": "apple-iphone-17",
     "price": 368900,
     "storage": 256,
-    "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (Mist Blue) (A3520) (MG6L4HX/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-mist-blue-a3520-mg6l4hxa.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hoktember/Smartfon/iPhone%2017%20256GB%20(Mist%20Blue)%20(A3520)%20(MG6L4HXA)%20(3)-500x500.jpg",
-    "ram": null,
-    "color": "Mist Blue",
-    "shop": "vega"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 368900,
-    "storage": 256,
     "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (Sage) (A3520) (MG6N4ZD/A)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-sage-a3520-mg6n4zda.html",
     "inStock": true,
@@ -818,6 +761,18 @@
     "id": "apple-iphone-17",
     "price": 368900,
     "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (Mist Blue) (A3520) (MG6L4HX/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-mist-blue-a3520-mg6l4hxa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hoktember/Smartfon/iPhone%2017%20256GB%20(Mist%20Blue)%20(A3520)%20(MG6L4HXA)%20(3)-500x500.jpg",
+    "ram": null,
+    "color": "Mist Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 368900,
+    "storage": 256,
     "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (White) (A3520) (MG6K4AF/A)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-white-a3520-mg6k4afa.html",
     "inStock": true,
@@ -832,33 +787,35 @@
     "storage": null,
     "title": "iPhone 17",
     "url": "https://www.pixel.am/am/product/iphone-17",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/999/800_1773313983-1770057251-ip-17-blk-2.png",
+    "color": "Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
     "id": "apple-iphone-17",
     "price": 385900,
-    "storage": null,
-    "title": "Apple iPhone 17",
-    "url": "https://mobilecentre.am/product/apple-iphone-17/33324/",
+    "storage": 256,
+    "title": "iPhone 17 256GB Dual eSIM (Lavender)",
+    "url": "https://mobilecentre.am/product/apple-iphone-17/33323/",
+    "image": "https://mobilecentre.am/img/prodpic/2234d35c8332e33bfed8New_Project_-_2025-09-19T111118.050.png",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Lavender",
     "shop": "mobilecentre"
    },
    {
     "id": "apple-iphone-17",
     "price": 397900,
     "storage": 256,
-    "title": "iPhone 17, 256 ԳԲ, Sage",
-    "url": "https://ispace.am/product/iphone-17-256-gb-sage-mg6n4af-a",
-    "sku": "MG6N4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/10/9f/109f16653f2e18eac1062a4c749aaaf2/250915140039737613.webp",
+    "title": "iPhone 17, 256 ԳԲ, Black",
+    "url": "https://ispace.am/product/iphone-17-256-gb-black-mg6j4af-a",
+    "sku": "MG6J4AF/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/2f/c0/2fc0659d10952ce971af72dad42fcf19/250915140041255872.webp",
     "inStock": true,
     "ram": null,
-    "color": "Sage",
+    "color": "Black",
     "shop": "ispace"
    },
    {
@@ -878,19 +835,6 @@
     "id": "apple-iphone-17",
     "price": 397900,
     "storage": 256,
-    "title": "iPhone 17, 256 ԳԲ, Black",
-    "url": "https://ispace.am/product/iphone-17-256-gb-black-mg6j4af-a",
-    "sku": "MG6J4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/2f/c0/2fc0659d10952ce971af72dad42fcf19/250915140041255872.webp",
-    "inStock": true,
-    "ram": null,
-    "color": "Black",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 397900,
-    "storage": 256,
     "title": "iPhone 17, 256 ԳԲ, White",
     "url": "https://ispace.am/product/iphone-17-256-gb-white-mg6k4af-a",
     "sku": "MG6K4AF/A",
@@ -904,19 +848,6 @@
     "id": "apple-iphone-17",
     "price": 397900,
     "storage": 256,
-    "title": "iPhone 17, 256 ԳԲ, Lavender",
-    "url": "https://ispace.am/product/iphone-17-256-gb-lavender-mg6m4af-a",
-    "sku": "MG6M4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/4a/e5/4ae568bd1d72a18862aea4e490828233/250915140032801867.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Lavender",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 397900,
-    "storage": 256,
     "title": "Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520) (MG6M4AF/A)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17-256gb-lavender-a3520-mg6m4afa.html",
     "inStock": true,
@@ -924,6 +855,18 @@
     "ram": null,
     "color": "Lavender",
     "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 397900,
+    "storage": null,
+    "title": "iPhone 17",
+    "url": "https://shop.ucom.am/am/iphone-17.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/p/iphone_17_sage_pdp_image_position_2__ce-ww_2.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
    },
    {
     "id": "apple-iphone-17",
@@ -1038,12 +981,13 @@
    {
     "id": "apple-iphone-air",
     "price": 409900,
-    "storage": null,
-    "title": "Apple iPhone Air",
-    "url": "https://mobilecentre.am/product/apple-iphone-air/32585/",
+    "storage": 256,
+    "title": "iPhone Air 256GB (Sky Blue)",
+    "url": "https://mobilecentre.am/product/apple-iphone-air/32584/",
+    "image": "https://mobilecentre.am/img/prodpic/01d923888f20b5a661c1New_Project_-_2025-09-19T110303.115.png",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Sky Blue",
     "shop": "mobilecentre"
    },
    {
@@ -1063,19 +1007,6 @@
     "id": "apple-iphone-air",
     "price": 411900,
     "storage": 256,
-    "title": "iPhone Air, 256 ԳԲ, Sky Blue",
-    "url": "https://ispace.am/product/iphone-air-256-gb-sky-blue-mg2p4af-a",
-    "sku": "MG2P4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/da/d5/dad5ba5bcce04d50f963570caa794cec/250915140019411801.webp",
-    "inStock": true,
-    "ram": null,
-    "color": "Sky Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 411900,
-    "storage": 256,
     "title": "iPhone Air, 256 ԳԲ, Cloud White",
     "url": "https://ispace.am/product/iphone-air-256-gb-cloud-white-mg2m4af-a",
     "sku": "MG2M4AF/A",
@@ -1089,13 +1020,13 @@
     "id": "apple-iphone-air",
     "price": 411900,
     "storage": 256,
-    "title": "iPhone Air, 256 ԳԲ, Light Gold",
-    "url": "https://ispace.am/product/iphone-air-256-gb-light-gold-mg2n4af-a",
-    "sku": "MG2N4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/8d/61/8d61f611ce202861c46f7b156b3a0493/250915140031978418.webp",
-    "inStock": false,
+    "title": "iPhone Air, 256 ԳԲ, Sky Blue",
+    "url": "https://ispace.am/product/iphone-air-256-gb-sky-blue-mg2p4af-a",
+    "sku": "MG2P4AF/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/da/d5/dad5ba5bcce04d50f963570caa794cec/250915140019411801.webp",
+    "inStock": true,
     "ram": null,
-    "color": "Light Gold",
+    "color": "Sky Blue",
     "shop": "ispace"
    },
    {
@@ -1133,6 +1064,18 @@
     "ram": null,
     "color": "Space Black",
     "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-air",
+    "price": 411900,
+    "storage": null,
+    "title": "iPhone Air",
+    "url": "https://shop.ucom.am/am/iphone-air.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/p/iphone_air_sky_blue_pdp_image_position_2__ce-ww.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
    },
    {
     "id": "apple-iphone-air",
@@ -1176,62 +1119,11 @@
     "storage": null,
     "title": "iPhone Air",
     "url": "https://www.pixel.am/am/product/iphone-air",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/040/800_1773847349-1758738460-17-air-blk-2.png",
+    "color": "Space Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 510900,
-    "storage": 512,
-    "title": "iPhone Air, 512 ԳԲ, Light Gold",
-    "url": "https://ispace.am/product/iphone-air-512-gb-light-gold-mg2u4af-a",
-    "sku": "MG2U4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/8d/61/8d61f611ce202861c46f7b156b3a0493/250915140031978418.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Light Gold",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 510900,
-    "storage": 512,
-    "title": "iPhone Air, 512 ԳԲ, Space Black",
-    "url": "https://ispace.am/product/iphone-air-512-gb-space-black-mg2q4af-a",
-    "sku": "MG2Q4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/a7/72/a772f3712399605f5cf4bd453207f5b3/250915140037040439.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Space Black",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 510900,
-    "storage": 512,
-    "title": "iPhone Air, 512 ԳԲ, Sky Blue",
-    "url": "https://ispace.am/product/iphone-air-512-gb-sky-blue-mg2v4af-a",
-    "sku": "MG2V4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/da/d5/dad5ba5bcce04d50f963570caa794cec/250915140019411801.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Sky Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 510900,
-    "storage": 512,
-    "title": "iPhone Air, 512 ԳԲ, Cloud White",
-    "url": "https://ispace.am/product/iphone-air-512-gb-cloud-white-mg2t4af-a",
-    "sku": "MG2T4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/48/9c/489cd239008d0f99e1cbc9f650f68649/250915140015381670.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Cloud White",
-    "shop": "ispace"
    },
    {
     "id": "apple-iphone-air",
@@ -1273,58 +1165,6 @@
     "id": "apple-iphone-air",
     "price": 607900,
     "storage": 1024,
-    "title": "iPhone Air, 1 ՏԲ, Sky Blue",
-    "url": "https://ispace.am/product/iphone-air-1-tb-sky-blue-mg304af-a",
-    "sku": "MG304AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/da/d5/dad5ba5bcce04d50f963570caa794cec/250915140019411801.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Sky Blue",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607900,
-    "storage": 1024,
-    "title": "iPhone Air, 1 ՏԲ, Light Gold",
-    "url": "https://ispace.am/product/iphone-air-1-tb-light-gold-mg2y4af-a",
-    "sku": "MG2Y4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/8d/61/8d61f611ce202861c46f7b156b3a0493/250915140031978418.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Light Gold",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607900,
-    "storage": 1024,
-    "title": "iPhone Air, 1 ՏԲ, Space Black",
-    "url": "https://ispace.am/product/iphone-air-1-tb-space-black-mg2w4af-a",
-    "sku": "MG2W4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/a7/72/a772f3712399605f5cf4bd453207f5b3/250915140037040439.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Space Black",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607900,
-    "storage": 1024,
-    "title": "iPhone Air, 1 ՏԲ, Cloud White",
-    "url": "https://ispace.am/product/iphone-air-1-tb-cloud-white-mg2x4af-a",
-    "sku": "MG2X4AF/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/48/9c/489cd239008d0f99e1cbc9f650f68649/250915140015381670.webp",
-    "inStock": false,
-    "ram": null,
-    "color": "Cloud White",
-    "shop": "ispace"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607900,
-    "storage": 1024,
     "title": "iPhone Air , 1TB , Space Black",
     "url": "https://istore.am/product/iphone-air-1tb-space-black-2477",
     "inStock": true,
@@ -1343,6 +1183,153 @@
     "image": "https://istore.am/product_image/2478/1757790092_3942fb38e1118124d059.jpg",
     "ram": null,
     "color": "Cloud White",
+    "shop": "istore"
+   }
+  ],
+  "apple-iphone-17e": [
+   {
+    "id": "apple-iphone-17e",
+    "price": 279900,
+    "storage": 256,
+    "title": "Apple iPhone 17e Dual eSIM 256GB (Black)",
+    "url": "https://mobilecentre.am/product/apple-iphone-17e/33768/",
+    "image": "https://mobilecentre.am/img/prodpic/b960a9d9fdb7d616d0f6New_Project__35_.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Black",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 298900,
+    "storage": null,
+    "title": "iPhone 17e",
+    "url": "https://shop.ucom.am/am/iphone-17e.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/p/iphone_17e_soft_pink_pdp_image_position_1b__ce_ww_2_1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 298900,
+    "storage": 256,
+    "title": "iPhone 17e , 256GB , White",
+    "url": "https://istore.am/product/iphone-17e-256gb-white-2690",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2690/1772888145_453ba82a6db2f5417590.jpg",
+    "ram": null,
+    "color": "White",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 298900,
+    "storage": 256,
+    "title": "iPhone 17e , 256GB , Black",
+    "url": "https://istore.am/product/iphone-17e-256gb-black-2693",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2693/1772889533_76e7587ddc16b8908cfe.jpg",
+    "ram": null,
+    "color": "Black",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 298900,
+    "storage": 256,
+    "title": "iPhone 17e, 256GB, Soft Pink",
+    "url": "https://istore.am/product/iphone-17e-256gb-soft-pink-2695",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2695/1772889978_4e8d2709045b667e3a03.jpg",
+    "ram": null,
+    "color": "Soft Pink",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 299000,
+    "storage": null,
+    "title": "iPhone 17e",
+    "url": "https://www.pixel.am/am/product/iphone-17e",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/184/800_1779728608-1e-black-2.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 299900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17e 256GB (Black) (A3634) (MHRV4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17e-256gb-black-a3634-mhrv4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mart/Smartfonner/iPhone%2017e%20256GB%20(Black)%20(MHRV4HXA)%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Black",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 299900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս APPLE iPhone 17e 256GB (Soft Pink) (A3634) (MHRX4AF/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-17e-256gb-soft-pink-a3634-mhrx4afa.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mart/Smartfonner/iPhone%2017e%20256GB%20(Soft%20Pink)%20(MHRX4HXA)%20(2)-500x500.jpg",
+    "ram": null,
+    "color": "Soft Pink",
+    "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 397900,
+    "storage": 512,
+    "title": "iPhone 17e, 512 ԳԲ, Soft Pink",
+    "url": "https://ispace.am/product/iphone-17e-512-gb-soft-pink-mhu34af-a",
+    "sku": "MHU34AF/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/6c/12/6c12000806b7820f4e565f76d76515af/260303130021057495.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Soft Pink",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 397900,
+    "storage": 512,
+    "title": "iPhone 17e , 512GB , White",
+    "url": "https://istore.am/product/iphone-17e-512gb-white-2691",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2691/1772888145_453ba82a6db2f5417590.jpg",
+    "ram": null,
+    "color": "White",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 397900,
+    "storage": 512,
+    "title": "iPhone 17e , 512GB , Black",
+    "url": "https://istore.am/product/iphone-17e-512gb-black-2692",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2692/1772889533_76e7587ddc16b8908cfe.jpg",
+    "ram": null,
+    "color": "Black",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "price": 397900,
+    "storage": 512,
+    "title": "iPhone 17e, 512GB, Soft Pink",
+    "url": "https://istore.am/product/iphone-17e-512gb-soft-pink-2694",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2694/1772889978_4e8d2709045b667e3a03.jpg",
+    "ram": null,
+    "color": "Soft Pink",
     "shop": "istore"
    }
   ],
@@ -1377,20 +1364,22 @@
     "storage": null,
     "title": "iPhone 16",
     "url": "https://www.pixel.am/am/product/iphone-16",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/043/800_1774251164-1726155172-16-blk.png",
+    "color": "Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
     "id": "apple-iphone-16",
     "price": 328900,
-    "storage": null,
-    "title": "Apple iPhone 16",
-    "url": "https://mobilecentre.am/product/apple-iphone-16/30890/",
+    "storage": 128,
+    "title": "iPhone 16 128GB (Teal)",
+    "url": "https://mobilecentre.am/product/apple-iphone-16/30889/",
+    "image": "https://mobilecentre.am/img/prodpic/07b8cdd91f1370fcb936New_Project__80_.png",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Teal",
     "shop": "mobilecentre"
    },
    {
@@ -1470,14 +1459,13 @@
     "id": "apple-iphone-16",
     "price": 350900,
     "storage": 128,
-    "title": "iPhone 16, 128 ԳԲ, Black",
-    "url": "https://ispace.am/product/iphone-16-128-gb-black-mye73hx-a",
-    "sku": "MYE73HX/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/dd/e3/dde3e0f4b53af14a845261f4d49a3e32/250331120218624932.webp",
+    "title": "Սմարթ հեռախոս APPLE iPhone 16 128GB (Black) (A3287) (MYE73ZD/A)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-16-128gb-black-a3287-mye73zda.html",
     "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2024/Hoktember/Smartfon/(MYE73ZDA)%20(2)-500x500.jpg",
     "ram": null,
     "color": "Black",
-    "shop": "ispace"
+    "shop": "vega"
    },
    {
     "id": "apple-iphone-16",
@@ -1505,15 +1493,15 @@
    },
    {
     "id": "apple-iphone-16",
-    "price": 351900,
-    "storage": 128,
-    "title": "Սմարթ հեռախոս APPLE iPhone 16 128GB (Black) (A3287) (MYE73HX/A)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-apple-iphone-16-128gb-black-a3287-mye73hxa.html",
+    "price": 350900,
+    "storage": null,
+    "title": "iPhone 16",
+    "url": "https://shop.ucom.am/am/iphone-16.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/i/1iphone_16_black_1.webp",
     "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2024/September/Smartfon/MYE73HXA%20(1)-500x500.jpg",
     "ram": null,
-    "color": "Black",
-    "shop": "vega"
+    "color": null,
+    "shop": "ucom"
    },
    {
     "id": "apple-iphone-16",
@@ -1592,12 +1580,13 @@
    {
     "id": "apple-iphone-15",
     "price": 292900,
-    "storage": null,
-    "title": "Apple iPhone 15",
-    "url": "https://mobilecentre.am/product/apple-iphone-15/29518/",
+    "storage": 128,
+    "title": "iPhone 15 128GB (Blue)",
+    "url": "https://mobilecentre.am/product/apple-iphone-15/33146/",
+    "image": "https://mobilecentre.am/img/prodpic/c5afeee62b366dcfbb9ecb0b5afcb4a51e7a7c571.jpg",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Blue",
     "shop": "mobilecentre"
    },
    {
@@ -1606,22 +1595,23 @@
     "storage": null,
     "title": "iPhone 15",
     "url": "https://www.pixel.am/am/product/iphone-15",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/044/800_1774252126-1696850447-iphone-15-black-2-sides.-1.png",
+    "color": "Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
     "id": "apple-iphone-15",
     "price": 298900,
     "storage": 128,
-    "title": "iPhone 15, 128 ԳԲ, Pink",
-    "url": "https://ispace.am/product/iphone-15-128-gb-pink-mtp13hx-a",
-    "sku": "MTP13HX/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/44/27/4427526b87affde5f8caeb4e00024d38/250331120043926931.webp",
+    "title": "iPhone 15, 128 ԳԲ, Blue",
+    "url": "https://ispace.am/product/iphone-15-128-gb-blue-mtp43hxa",
+    "sku": "MTP43HX/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/77/69/7769548220e408eca83b01da601001db/250331120239201231.webp",
     "inStock": true,
     "ram": null,
-    "color": "Pink",
+    "color": "Blue",
     "shop": "ispace"
    },
    {
@@ -1641,13 +1631,13 @@
     "id": "apple-iphone-15",
     "price": 298900,
     "storage": 128,
-    "title": "iPhone 15, 128 ԳԲ, Blue",
-    "url": "https://ispace.am/product/iphone-15-128-gb-blue-mtp43hxa",
-    "sku": "MTP43HX/A",
-    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/77/69/7769548220e408eca83b01da601001db/250331120239201231.webp",
+    "title": "iPhone 15, 128 ԳԲ, Pink",
+    "url": "https://ispace.am/product/iphone-15-128-gb-pink-mtp13hx-a",
+    "sku": "MTP13HX/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/44/27/4427526b87affde5f8caeb4e00024d38/250331120043926931.webp",
     "inStock": true,
     "ram": null,
-    "color": "Blue",
+    "color": "Pink",
     "shop": "ispace"
    },
    {
@@ -1673,6 +1663,1197 @@
     "ram": null,
     "color": "Green",
     "shop": "vega"
+   }
+  ],
+  "apple-ipad-pro-11-m5": [
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 549000,
+    "storage": null,
+    "title": "iPad Pro 11 M5",
+    "url": "https://www.pixel.am/am/product/ipad-pro-11-m5",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/087/800_1775504153-1770059910-2568.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 628900,
+    "storage": 256,
+    "title": "iPad Pro 11 M5, 256 ԳԲ Wi-Fi Ստանդարտ ապակի 2025, Space Black",
+    "url": "https://ispace.am/product/ipad-pro-11-m5-256-gb-wi-fi-standard-glass-2025-space-black-mdwk4qa-a",
+    "sku": "MDWK4QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/29/de/29de8522c8295d344038d6cff6785408/251016120014076566.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Space Black",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 628900,
+    "storage": 256,
+    "title": "iPad Pro 11 M5, 256 ԳԲ Wi-Fi Ստանդարտ ապակի 2025, Արծաթագույն",
+    "url": "https://ispace.am/product/ipad-pro-11-m5-256-gb-wi-fi-standard-glass-2025-silver-mdwl4qa-a",
+    "sku": "MDWL4QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/29/35/293546a1c05d0f29206c8d339c0e2335/251016120017722126.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 721900,
+    "storage": 512,
+    "title": "iPad Pro 11 M5, 512 ԳԲ Wi-Fi Ստանդարտ ապակի 2025, Արծաթագույն",
+    "url": "https://ispace.am/product/ipad-pro-11-m5-512-gb-wi-fi-standard-glass-2025-silver-mdwn4qa-a",
+    "sku": "MDWN4QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/29/35/293546a1c05d0f29206c8d339c0e2335/251016120017722126.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "ispace"
+   }
+  ],
+  "apple-ipad-air-11-m4": [
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 319000,
+    "storage": null,
+    "title": "iPad Air 11 M4",
+    "url": "https://www.pixel.am/am/product/ipad-air-11-m4",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/190/800_1782668335-grey-136.png",
+    "color": "Space Gray",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 389900,
+    "storage": 128,
+    "title": "iPad Air 11 M4, 128 ԳԲ Wi-Fi 2026, Purple",
+    "url": "https://ispace.am/product/ipad-air-11-m4-128-gb-wi-fi-2026-purple-mh344qa-a",
+    "sku": "MH344QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/9e/5e/9e5e2862ee2f5bc684acebb2d58dd896/260303170010264127.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Purple",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 389900,
+    "storage": 128,
+    "title": "iPad Air 11 M4, 128 ԳԲ Wi-Fi 2026, Blue",
+    "url": "https://ispace.am/product/ipad-air-11-m4-128-gb-wi-fi-2026-blue-mh314qa-a",
+    "sku": "MH314QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/40/85/408598a8d61712a18cf6ee4b368d68b1/260303170012863037.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 441900,
+    "storage": 256,
+    "title": "iPad Air 11 M4, 256 ԳԲ Wi-Fi 2026, Մոխրագույն տիեզերք",
+    "url": "https://ispace.am/product/ipad-air-11-m4-256-gb-wi-fi-2026-space-gray-mh354qa-a",
+    "sku": "MH354QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/1a/cc/1acc4fddfad8f894b0ff6a74b7f80688/260303170017477142.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Space Gray",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 441900,
+    "storage": 256,
+    "title": "iPad Air 11 M4, 256 ԳԲ Wi-Fi 2026, Purple",
+    "url": "https://ispace.am/product/ipad-air-11-m4-256-gb-wi-fi-2026-purple-mh394qa-a",
+    "sku": "MH394QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/9e/5e/9e5e2862ee2f5bc684acebb2d58dd896/260303170010264127.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Purple",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 441900,
+    "storage": 256,
+    "title": "iPad Air 11 M4, 256 ԳԲ Wi-Fi 2026, Blue",
+    "url": "https://ispace.am/product/ipad-air-11-m4-256-gb-wi-fi-2026-blue-mh364qa-a",
+    "sku": "MH364QA/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/40/85/408598a8d61712a18cf6ee4b368d68b1/260303170012863037.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "ispace"
+   }
+  ],
+  "apple-airpods-pro-3": [
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 104500,
+    "storage": null,
+    "title": "AirPods Pro 3 ANC Price In Armenia - Warranty - AllSell",
+    "url": "https://allsell.am/en/airpods-pro-3-anc",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_13__9.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 104900,
+    "storage": null,
+    "title": "AirPods Pro 3 MFHP4",
+    "url": "https://mobilecentre.am/product/airpods-pro-3-mfhp4/32590/",
+    "image": "https://mobilecentre.am/img/prodpic/14bc171cf4a382d88be9New_Project_-_2025-09-19T175902.740.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 117000,
+    "storage": null,
+    "title": "AirPods Pro 3 (2025)",
+    "url": "https://www.pixel.am/am/product/airpods-pro-3-2025",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/723/800_1766084288-web-akanjakali-chapser1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 119900,
+    "storage": null,
+    "title": "AirPods Pro 3, Սպիտակ",
+    "url": "https://ispace.am/product/airpods-pro-3-mfhp4ze-a",
+    "sku": "MFHP4ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/77/b2/77b2b078ccedce46f18e0514e7476d28/250910160020664746.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 119900,
+    "storage": null,
+    "title": "AirPods Pro 3",
+    "url": "https://istore.am/product/airpods-pro-3-2487",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2487/1757939902_b3e47e53c727475095da.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "istore"
+   }
+  ],
+  "apple-airpods-max-2": [
+   {
+    "id": "apple-airpods-max-2",
+    "price": 318900,
+    "storage": null,
+    "title": "AirPods Max 2, Կեսգիշեր",
+    "url": "https://ispace.am/product/airpods-max-2-midnight-mhwk4ze-a",
+    "sku": "MHWK4ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/e0/b1/e0b1dad660673d0a5c4f500d8e28d782/260317150014398046.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Midnight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 318900,
+    "storage": null,
+    "title": "AirPods Max 2, Կապույտ",
+    "url": "https://ispace.am/product/airpods-max-2-blue-mhwm4ze-a",
+    "sku": "MHWM4ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/d7/4c/d74c2626e6c1935be8a07aa7a2b1893c/260317150014868397.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 318900,
+    "storage": null,
+    "title": "AirPods Max 2, Մանուշակագույն",
+    "url": "https://ispace.am/product/airpods-max-2-purple-mhwp4ze-a",
+    "sku": "MHWP4ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/35/56/3556f145aa2085467a9be4713d0b7e43/260317150017742421.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Purple",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 318900,
+    "storage": null,
+    "title": "AirPods Max 2, Starlight",
+    "url": "https://ispace.am/product/airpods-max-2-starlight-mhwl4ze-a",
+    "sku": "MHWL4ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/20/bf/20bf66d31e987026f4fa15ae27040257/260317150011629696.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Starlight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 329000,
+    "storage": null,
+    "title": "AirPods Max 2 Type-C",
+    "url": "https://www.pixel.am/am/product/airpods-max-2-type-c",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/209/800_1785439169-airpods-max-black-2.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-airpods-4": [
+   {
+    "id": "apple-airpods-4",
+    "price": 52500,
+    "storage": null,
+    "title": "AirPods 4 Price In Armenia - Buy With Warranty - AllSell",
+    "url": "https://allsell.am/en/airpods-4",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yeeeeeeeeeeeyy_23_.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-airpods-4",
+    "price": 54900,
+    "storage": null,
+    "title": "AirPods 4 MXP63ZE/A",
+    "url": "https://shop.ucom.am/am/airpods-4.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/a/1airpods_4_.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "apple-airpods-4",
+    "price": 59900,
+    "storage": null,
+    "title": "AirPods 4, Սպիտակ",
+    "url": "https://ispace.am/product/apple-airpods-gen-4-mxp63zea",
+    "sku": "MXP63ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/c5/06/c5063b56e7634a6d343fa03328d12c61/250612160025667198.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-4",
+    "price": 59900,
+    "storage": null,
+    "title": "AirPods (Gen 4)",
+    "url": "https://istore.am/product/airpods-gen-4--2131",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2131/1726562714_7247cfa9311196c60b48.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "istore"
+   },
+   {
+    "id": "apple-airpods-4",
+    "price": 65000,
+    "storage": null,
+    "title": "AirPods 4",
+    "url": "https://www.pixel.am/am/product/airpods-4",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/062/800_1774813342-1726586380-web-akanjakali-chapser.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-airpods-4-anc": [
+   {
+    "id": "apple-airpods-4-anc",
+    "price": 77500,
+    "storage": null,
+    "title": "AirPods 4 ANC In Armenia - Buy Now - Fast Delivery - AllSell",
+    "url": "https://allsell.am/en/airpods-4-anc",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yeeeeeeeeeeeyy_25_.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-airpods-4-anc",
+    "price": 79900,
+    "storage": null,
+    "title": "Apple Airpods 4 with Active Noise Cancellation (MXP93)",
+    "url": "https://mobilecentre.am/product/apple-airpods-4-with-active-noise-cancellation-_mxp93_/30951/",
+    "image": "https://mobilecentre.am/img/prodpic/a34deef8616ead39423bNew_Project__23_.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-airpods-4-anc",
+    "price": 79900,
+    "storage": null,
+    "title": "AirPods 4 with Active Noise Cancellation MXP93ZE/A",
+    "url": "https://shop.ucom.am/am/airpods-4-with-active-noise-cancellation.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/a/1airpods_4__1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "apple-airpods-4-anc",
+    "price": 82000,
+    "storage": null,
+    "title": "AirPods 4 ANC",
+    "url": "https://www.pixel.am/am/product/airpods-4-anc",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/064/800_1774814171-1734371599-web-akanjakali-chapser-airpods-4.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-airpods-4-anc",
+    "price": 85900,
+    "storage": null,
+    "title": "AirPods 4 with Active Noise Cancellation, Սպիտակ",
+    "url": "https://ispace.am/product/apple-airpods-gen-4-mxp93zea",
+    "sku": "MXP93ZE/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/10/b0/10b0c2535c7979d6eb5023bb15390105/250612160028441407.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-4-anc",
+    "price": 85900,
+    "storage": null,
+    "title": "AirPods 4 with Active Noise Cancellation (Gen 4)",
+    "url": "https://istore.am/product/airpods-4-with-active-noise-cancellation-gen-4--2132",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2132/1726563335_40d1ef1896eb3556d4c4.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "istore"
+   }
+  ],
+  "apple-watch-ultra-3": [
+   {
+    "id": "apple-watch-ultra-3",
+    "price": 369000,
+    "storage": null,
+    "title": "Apple Watch Ultra 3",
+    "url": "https://www.pixel.am/am/product/apple-watch-ultra-3",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/053/800_1779632936-blk.png",
+    "color": "Black Titanium",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-watch-ultra-3",
+    "price": 496900,
+    "storage": null,
+    "title": "Apple Watch Ultra 3,  Black Titanium Milanese Loop, M, 49մմ, Սև",
+    "url": "https://ispace.am/product/apple-watch-ultra-3-black-titanium-milanese-loop-medium-49mm-black-mf1q4qi-a",
+    "sku": "MF1Q4QI/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/4b/86/4b86e71638ccc600efee908e517e985b/250915140010614529.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "ispace"
+   }
+  ],
+  "apple-watch-series-11": [
+   {
+    "id": "apple-watch-series-11",
+    "price": 174900,
+    "storage": null,
+    "title": "Apple Watch Series 11 GPS,  Purple Fog Sport Band, S/M, 42մմ, Silver Aluminium",
+    "url": "https://ispace.am/product/apple-watch-series-11-gps-purple-fog-sport-band-sm-42mm-silver-aluminium-meu64rk-a",
+    "sku": "MEU64RK/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/9c/12/9c121b49771f0fa77c40557a71866945/250915140030860067.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-watch-series-11",
+    "price": 174900,
+    "storage": null,
+    "title": "Apple Watch Series 11 GPS,  Black Sport Band, S/M, 42մմ, Space Grey Aluminium",
+    "url": "https://ispace.am/product/apple-watch-series-11-gps-black-sport-band-sm-42mm-space-grey-aluminium-meqw4rk-a",
+    "sku": "MEQW4RK/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/cb/aa/cbaa1fc15aa3b78953b71c62382e2c7d/250915140021260010.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Space Grey",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-watch-series-11",
+    "price": 179000,
+    "storage": null,
+    "title": "Apple Watch Series 11",
+    "url": "https://www.pixel.am/am/product/apple-watch-series-11",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/052/800_1774724862-1758907375-apple-watch-s11-46mm-black-1.png",
+    "color": "Jet Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-watch-series-11",
+    "price": 188900,
+    "storage": null,
+    "title": "Apple Watch Series 11 GPS,  Black Sport Band, M/L, 46մմ, Jet Black Aluminium",
+    "url": "https://ispace.am/product/apple-watch-series-11-gps-black-sport-band-ml-46mm-jet-black-aluminium-meux4rk-a",
+    "sku": "MEUX4RK/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/62/b6/62b687a44e0398d716f86baac5433e2b/250915140042353008.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Jet Black",
+    "shop": "ispace"
+   }
+  ],
+  "apple-watch-se-3": [
+   {
+    "id": "apple-watch-se-3",
+    "price": 129900,
+    "storage": null,
+    "title": "Apple Watch SE GPS Gen.3,  Starlight Sport Band, S/M, 40մմ, Starlight",
+    "url": "https://ispace.am/product/apple-watch-se-gps-gen3-starlight-sport-band-sm-40mm-starlight-meh34rk-a",
+    "sku": "MEH34RK/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/04/9a/049a05b1fcef2e41c997019251847491/250915140040298522.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Starlight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "price": 129900,
+    "storage": null,
+    "title": "Apple Watch SE GPS Gen.3,  Midnight Sport Band, S/M, 40մմ, Midnight",
+    "url": "https://ispace.am/product/apple-watch-se-gps-gen3-midnight-sport-band-sm-40mm-midnight-meh94rk-a",
+    "sku": "MEH94RK/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/72/e1/72e1f0f955115442167d9080d8d0adad/250915140017864444.webp",
+    "inStock": true,
+    "ram": null,
+    "color": "Midnight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "price": 134000,
+    "storage": null,
+    "title": "Apple Watch SE (3rd Gen. 2025)",
+    "url": "https://www.pixel.am/am/product/apple-watch-se-3rd-gen",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/051/800_1774723778-1758908752-se-blk-44-mm-1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-macbook-neo-13": [
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 339900,
+    "storage": 256,
+    "title": "Apple MacBook Neo 13 inch / Apple A18 Pro chip with 6-core CPU and 5-core GPU 8GB 256GB SSD MHFA4 (Silver)",
+    "url": "https://mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhfa4-_silver_/34505/",
+    "image": "https://mobilecentre.am/img/prodpic/0313a82287c1b87f220bNew_Project_-_2026-09-07T110319.381.png",
+    "inStock": true,
+    "ram": 8,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 339900,
+    "storage": 256,
+    "title": "Apple MacBook Neo 13 inch / Apple A18 Pro chip with 6-core CPU and 5-core GPU 8GB 256GB SSD MHFH4 (Blush)",
+    "url": "https://mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhfh4-_blush_/33776/",
+    "image": "https://mobilecentre.am/img/prodpic/1131df78def9924f82f5New_Project__57_.png",
+    "inStock": true,
+    "ram": 8,
+    "color": "Blush",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 339900,
+    "storage": 256,
+    "title": "Apple MacBook Neo 13 inch / Apple A18 Pro chip with 6-core CPU and 5-core GPU 8GB 256GB SSD MHFF4 (Indigo)",
+    "url": "https://mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhff4-_indigo_/33775/",
+    "image": "https://mobilecentre.am/img/prodpic/c60fcf44b22279f1aa94New_Project__52_.png",
+    "inStock": true,
+    "ram": 8,
+    "color": "Indigo",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 339900,
+    "storage": 256,
+    "title": "Apple MacBook Neo 13 inch / Apple A18 Pro chip with 6-core CPU and 5-core GPU 8GB 256GB SSD MHFD4 (Citrus)",
+    "url": "https://mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhfd4-_citrus_/33774/",
+    "image": "https://mobilecentre.am/img/prodpic/aae0dbd43db6ea667e3cNew_Project__47_.png",
+    "inStock": true,
+    "ram": 8,
+    "color": "Citrus",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 346900,
+    "storage": 256,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 256 ԳԲ, Citrus",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-256-gb-citrus-mhfd4ru-a",
+    "sku": "MHFD4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/d1/0f/d10fb08d7066e706d4f8ceace2924329/260305150019172959.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Citrus",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 346900,
+    "storage": 256,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 256 ԳԲ, Indigo",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-256-gb-indigo-z1ts00020",
+    "sku": "Z1TS00020",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/b3/1b/b31b68bc2f1f4ddd512ef4ca0f0781e9/260506135000399606.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Indigo",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 346900,
+    "storage": 256,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 256 ԳԲ, Blush",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-256-gb-blush-z1tu0001y",
+    "sku": "Z1TU0001Y",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/fc/a3/fca3fd0cb4361049d9536d26068d543d/260506134614578243.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Blush",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 346900,
+    "storage": 256,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 256 ԳԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-256-gb-silver-mhfa4ru-a",
+    "sku": "MHFA4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/bd/33/bd3368dd3f9bdeb957210861dc89888d/260305150018346163.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 362000,
+    "storage": 256,
+    "title": "Macbook Neo",
+    "url": "https://www.pixel.am/am/product/macbook-neo-8-256gb-mhfd4-2026-silver",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/050/800_1774721818-macbook-silver-3.png",
+    "color": "Silver",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 395900,
+    "storage": 512,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 512 ԳԲ, Citrus",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-512-gb-citrus-z1tr0001z",
+    "sku": "Z1TR0001Z",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/d1/0f/d10fb08d7066e706d4f8ceace2924329/260507144720097795.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Citrus",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 395900,
+    "storage": 512,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 512 ԳԲ, Blush",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-512-gb-blush-z1tv0001z",
+    "sku": "Z1TV0001Z",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/fc/a3/fca3fd0cb4361049d9536d26068d543d/260506134716129018.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Blush",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 395900,
+    "storage": 512,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 512 ԳԲ, Indigo",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-512-gb-indigo-mhfg4ru-a",
+    "sku": "MHFG4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/a6/31/a631792dd0eb824a4d8b73b4c5a11a1c/260305150018795522.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Indigo",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 395900,
+    "storage": 512,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 512 ԳԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-neo-z1tp0001y",
+    "sku": "Z1TP0001Y",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/bd/33/bd3368dd3f9bdeb957210861dc89888d/260507144813452848.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": null,
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 395900,
+    "storage": 512,
+    "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 512 ԳԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-neo-13-a18-pro-6c-cpu5c-gpu-8-gb-512-gb-silver-mhfc4ru-a",
+    "sku": "MHFC4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/a6/84/a684b3334d663c5712b211d3f6d4318f/260305150016454086.webp",
+    "inStock": true,
+    "ram": 8,
+    "color": "Silver",
+    "shop": "ispace"
+   }
+  ],
+  "apple-macbook-pro-16-m5-max": [
+   {
+    "id": "apple-macbook-pro-16-m5-max",
+    "price": 2230900,
+    "storage": 2048,
+    "title": "MacBook Pro 16.2-inch  M5 Max (18C CPU/32C GPU), 36 ԳԲ, 2 ՏԲ, Սև",
+    "url": "https://ispace.am/product/macbook-pro-162-m5-max-18c-cpu32c-gpu-36-gb-2-tb-space-black-mged4ru-a",
+    "sku": "MGED4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/e0/c6/e0c6fb5d849055c91659c11b2a014907/260304170014740588.webp",
+    "inStock": true,
+    "ram": 36,
+    "color": "Space Black",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-max",
+    "price": 2230900,
+    "storage": 2048,
+    "title": "MacBook Pro 16.2-inch  M5 Max (18C CPU/32C GPU), 36 ԳԲ, 2 ՏԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-pro-162-m5-max-18c-cpu32c-gpu-36-gb-2-tb-silver-mge74ru-a",
+    "sku": "MGE74RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/eb/89/eb89c4148b2ca4def51175035d7ce04a/260304170013563395.webp",
+    "inStock": true,
+    "ram": 36,
+    "color": "Silver",
+    "shop": "ispace"
+   }
+  ],
+  "apple-macbook-pro-16-m5-pro": [
+   {
+    "id": "apple-macbook-pro-16-m5-pro",
+    "price": 1339000,
+    "storage": null,
+    "title": "Macbook PRO 16 M5 Pro",
+    "url": "https://www.pixel.am/am/product/macbook-pro-16-m5-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/186/800_1779813879-macbook-m5-pro-16-blk2.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-pro",
+    "price": 1826900,
+    "storage": 1024,
+    "title": "MacBook Pro 16.2-inch  M5 Pro (18C CPU/20C GPU), 48 ԳԲ, 1 ՏԲ, Սև",
+    "url": "https://ispace.am/product/macbook-pro-162-m5-pro-18c-cpu20c-gpu-48-gb-1-tb-space-black-mgec4ru-a",
+    "sku": "MGEC4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/06/59/065918dede4ab9cbb84f19376bc82288/260304170011757464.webp",
+    "inStock": true,
+    "ram": 48,
+    "color": "Space Black",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-pro",
+    "price": 1826900,
+    "storage": 1024,
+    "title": "MacBook Pro 16.2-inch  M5 Pro (18C CPU/20C GPU), 48 ԳԲ, 1 ՏԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-pro-162-m5-pro-18c-cpu20c-gpu-48-gb-1-tb-silver-mge64ru-a",
+    "sku": "MGE64RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/d5/b3/d5b3f6da41a0cf9ba0ba7bf06dcf4bb3/260304170010562379.webp",
+    "inStock": true,
+    "ram": 48,
+    "color": "Silver",
+    "shop": "ispace"
+   }
+  ],
+  "apple-macbook-pro-14-m5-pro": [
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1274900,
+    "storage": 1024,
+    "title": "MacBook Pro 14.2-inch  M5 Pro (15C CPU/16C GPU), 24 ԳԲ, 1 ՏԲ, Սև",
+    "url": "https://ispace.am/product/macbook-pro-142-m5-pro-15c-cpu16c-gpu-24-gb-1-tb-space-black-mgdr4ru-a",
+    "sku": "MGDR4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/6d/19/6d1971eb54bd73a0ad4828f49b317d32/260304170027396047.webp",
+    "inStock": true,
+    "ram": 24,
+    "color": "Space Black",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1274900,
+    "storage": 1024,
+    "title": "MacBook Pro 14.2-inch  M5 Pro (15C CPU/16C GPU), 24 ԳԲ, 1 ՏԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-pro-142-m5-pro-15c-cpu16c-gpu-24-gb-1-tb-silver-mgdn4ru-a",
+    "sku": "MGDN4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/be/ee/beee6ebe86eb283047c7b2b1f3579c1f/260304170026100178.webp",
+    "inStock": true,
+    "ram": 24,
+    "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1628900,
+    "storage": 2048,
+    "title": "MacBook Pro 14.2-inch  M5 Pro (18C CPU/20C GPU), 24 ԳԲ, 2 ՏԲ, Սև",
+    "url": "https://ispace.am/product/macbook-pro-142-m5-pro-18c-cpu20c-gpu-24-gb-2-tb-space-black-mgdt4ru-a",
+    "sku": "MGDT4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/6d/19/6d1971eb54bd73a0ad4828f49b317d32/260304170027396047.webp",
+    "inStock": true,
+    "ram": 24,
+    "color": "Space Black",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1628900,
+    "storage": 2048,
+    "title": "MacBook Pro 14.2-inch  M5 Pro (18C CPU/20C GPU), 24 ԳԲ, 2 ՏԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-pro-142-m5-pro-18c-cpu20c-gpu-24-gb-2-tb-silver-mgdp4ru-a",
+    "sku": "MGDP4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/be/ee/beee6ebe86eb283047c7b2b1f3579c1f/260304170026100178.webp",
+    "inStock": true,
+    "ram": 24,
+    "color": "Silver",
+    "shop": "ispace"
+   }
+  ],
+  "apple-macbook-pro-14-m5": [
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 779500,
+    "storage": 512,
+    "title": "Apple MacBook Pro 14.2\" M5 16GB I 512GB MDE04",
+    "url": "https://allsell.am/en/apple-macbook-pro-14-2-m5-16gb-i-512gb-mde04",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/d/mde04.png",
+    "ram": 16,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 785500,
+    "storage": 1024,
+    "title": "Apple MacBook Pro 14.2\" M5 16GB I 1TB MDE14",
+    "url": "https://allsell.am/en/apple-macbook-pro-14-2-m5-16gb-i-1tb-mde14",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/d/mde04_2.png",
+    "ram": 16,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 819900,
+    "storage": 512,
+    "title": "MacBook Pro 14 M5 (2025) MDE04RU/A",
+    "url": "https://shop.ucom.am/am/macbook-pro-14-inch-m5-512gb.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/m/a/macbook_pro_14-in_m5_space_black_pdp_image_position_1__en-me_2.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 879000,
+    "storage": null,
+    "title": "Macbook PRO 14 M5",
+    "url": "https://www.pixel.am/am/product/macbook-pro-14-m5",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/080/800_1775457075-1767032930-4.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 969500,
+    "storage": 1024,
+    "title": "MacBook Pro 14.2\" M5 24GB I 1TB MDE64 Silver",
+    "url": "https://allsell.am/en/macbook-pro-14-2-m5-24gb-i-1tb-mde64-silver",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_1__428_5.jpg",
+    "ram": 24,
+    "color": "Silver",
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 1021900,
+    "storage": 1024,
+    "title": "MacBook Pro 14.2-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-pro-142-m5-10c-cpu10c-gpu-16-gb-1-tb-silver-mde54ru-a",
+    "sku": "MDE54RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/1f/e1/1fe10fff06242bf658e15f70ac50d68b/251016120016006189.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "price": 1021900,
+    "storage": 1024,
+    "title": "MacBook Pro 14.2-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Սև",
+    "url": "https://ispace.am/product/macbook-pro-142-m5-10c-cpu10c-gpu-16-gb-1-tb-space-black-mde14ru-a",
+    "sku": "MDE14RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/d4/ec/d4ecbefcbb6bad5988fcaa3fa058b0f4/251016120018617277.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Space Black",
+    "shop": "ispace"
+   }
+  ],
+  "apple-macbook-air-15-m5": [
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 763900,
+    "storage": 512,
+    "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
+    "url": "https://ispace.am/product/macbook-air-153-m5-10c-cpu10c-gpu-16-gb-512-gb-sky-blue-mdvq4ru-a",
+    "sku": "MDVQ4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/36/c9/36c971c3709378cd41a346809bb7db63/260304170024607738.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Sky Blue",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 763900,
+    "storage": 512,
+    "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 512 ԳԲ, Կեսգիշեր",
+    "url": "https://ispace.am/product/macbook-air-153-m5-10c-cpu10c-gpu-16-gb-512-gb-midnight-mdvh4ru-a",
+    "sku": "MDVH4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/54/ab/54ab260de0bfb5afdf87a3771bf75929/260304170018175483.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 910900,
+    "storage": 1024,
+    "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Կեսգիշեր",
+    "url": "https://ispace.am/product/macbook-air-153-m5-10c-cpu10c-gpu-16-gb-1-tb-midnight-mdvk4ru-a",
+    "sku": "MDVK4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/54/ab/54ab260de0bfb5afdf87a3771bf75929/260304170018175483.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 910900,
+    "storage": 1024,
+    "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Starlight",
+    "url": "https://ispace.am/product/macbook-air-153-m5-10c-cpu10c-gpu-16-gb-1-tb-starlight-mdve4ru-a",
+    "sku": "MDVE4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/f2/e5/f2e5cdffa7ae0db7520ee41e10b04a72/260304170023997008.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Starlight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "price": 910900,
+    "storage": 1024,
+    "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Sky Blue",
+    "url": "https://ispace.am/product/macbook-air-153-m5-10c-cpu10c-gpu-16-gb-1-tb-sky-blue-mdvt4ru-a",
+    "sku": "MDVT4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/36/c9/36c971c3709378cd41a346809bb7db63/260304170024607738.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Sky Blue",
+    "shop": "ispace"
+   }
+  ],
+  "apple-macbook-air-13-m5": [
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 619000,
+    "storage": null,
+    "title": "MacBook Air 13 M5",
+    "url": "https://www.pixel.am/am/product/macbook-air-13-m5",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/187/800_1779818302-macbook-air-13-m5-midnight-1.png",
+    "color": "Midnight",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 655900,
+    "storage": 512,
+    "title": "MacBook Air 13.6-inch  M5 (10C CPU/8C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
+    "url": "https://ispace.am/product/macbook-air-136-m5-10c-cpu8c-gpu-16-gb-512-gb-sky-blue-mdhh4ru-a",
+    "sku": "MDHH4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/40/39/4039bf1da78dfc7a1711d4734959da4f/260304170012335507.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Sky Blue",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 655900,
+    "storage": 512,
+    "title": "MacBook Air 13.6-inch  M5 (10C CPU/8C GPU), 16 ԳԲ, 512 ԳԲ, Կեսգիշեր",
+    "url": "https://ispace.am/product/macbook-air-136-m5-10c-cpu8c-gpu-16-gb-512-gb-midnight-mdhe4ru-a",
+    "sku": "MDHE4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/22/db/22db394fdb956aef60ce3127f7e4e194/260304170022455792.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 655900,
+    "storage": 512,
+    "title": "MacBook Air 13.6-inch  M5 (10C CPU/8C GPU), 16 ԳԲ, 512 ԳԲ, Արծաթագույն",
+    "url": "https://ispace.am/product/macbook-air-136-m5-10c-cpu8c-gpu-16-gb-512-gb-silver-mdh74ru-a",
+    "sku": "MDH74RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/99/5b/995be9e24751b969450a8b60e2578829/260304170026730879.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Silver",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 785500,
+    "storage": 1024,
+    "title": "Macbook Air 13\" M5 24GB I 1TB MDHG4",
+    "url": "https://allsell.am/en/macbook-air-13-m5-24gb-i-1tb-mdhg4",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__75_1_1.jpg",
+    "ram": 24,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 810900,
+    "storage": 1024,
+    "title": "MacBook Air 13.6-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Կեսգիշեր",
+    "url": "https://ispace.am/product/macbook-air-136-m5-10c-cpu10c-gpu-16-gb-1-tb-midnight-mdhf4ru-a",
+    "sku": "MDHF4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/22/db/22db394fdb956aef60ce3127f7e4e194/260304170022455792.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Midnight",
+    "shop": "ispace"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 810900,
+    "storage": 1024,
+    "title": "MacBook Air 13.6-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 1 ՏԲ, Starlight",
+    "url": "https://ispace.am/product/macbook-air-136-m5-10c-cpu10c-gpu-16-gb-1-tb-starlight-mdhc4ru-a",
+    "sku": "MDHC4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/6b/9e/6b9e0f6002f6deb6328e9fac493081cc/260304170030374293.webp",
+    "inStock": true,
+    "ram": 16,
+    "color": "Starlight",
+    "shop": "ispace"
+   }
+  ],
+  "apple-mac-mini-m4": [
+   {
+    "id": "apple-mac-mini-m4",
+    "price": 612900,
+    "storage": 512,
+    "title": "Mac mini M4, 10C CPU 10C GPU, 24ԳԲ 512ԳԲ Կոշտ կրիչ, Արծաթագույն",
+    "url": "https://ispace.am/product/mac-mini-apple-m4-24-gb-512-gb-ssd-mcyt4rua",
+    "sku": "MCYT4RU/A",
+    "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/bc/a6/bca6fe6b578e0693e807201962391337/250807140016594915.webp",
+    "inStock": true,
+    "ram": 24,
+    "color": null,
+    "shop": "ispace"
+   }
+  ],
+  "samsung-galaxy-a37": [
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 134900,
+    "storage": null,
+    "title": "Samsung A37",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-6-128-graygreen/2720/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/13/17836733445486.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 136000,
+    "storage": null,
+    "title": "Samsung Galaxy A37",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-a37",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/181/800_1779640200-a37-blk-2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 146900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376B/DS 6GB 128GB (Awesome Charcoal)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a37-5g-sm-a376bds-6gb-128gb-awesome-charcoal.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/September/Smartfonner/Galaxy%20A37%205G%20SM-A376BDS%206GB%20128GB%20(Awesome%20Charcoal)%20(2)-500x500.jpg",
+    "ram": 6,
+    "color": "Awesome Charcoal",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 146900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376B/DS 6GB 128GB (Awesome Graygreen)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a37-5g-sm-a376bds-6gb-128gb-awesome-graygreen.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/September/Smartfonner/Galaxy%20A37%205G%20SM-A376BDS%206GB%20128GB%20(Awesome%20Graygreen)%20(1)-500x500.jpg",
+    "ram": 6,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 149900,
+    "storage": 128,
+    "title": "Samsung Galaxy A37 128GB (Awesome GrayGreen)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a37/33681/",
+    "image": "https://mobilecentre.am/img/prodpic/439fe523b6a1d3575f2eNew_Project_-_2026-03-26T154020.787.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 149900,
+    "storage": 128,
+    "title": "Samsung A37",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-128gb-graygreen/2635/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17743590308893.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 159900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376E/DS 8GB 256GB (Awesome Charcoal)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a37-5g-sm-a376eds-8gb-256gb-awesome-charcoal.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A37%205G%20SM-A376EDS%208GB%20128GB%20(Awesome%20Charcoal)%20(3)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Charcoal",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 159900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376E/DS 8GB 256GB (Awesome Graygreen)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a37-5g-sm-a376eds-8gb-256gb-awesome-graygreen.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A37%205G%20SM-A376EDS%208GB%20128GB%20(Awesome%20Charcoal)%20(3)-500x500.jpg",
+    "ram": 8,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 159900,
+    "storage": 256,
+    "title": "Samsung A37",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-256gb-graygreen/2639/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744170907638.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
    }
   ],
   "samsung-galaxy-a56": [
@@ -1703,12 +2884,13 @@
    {
     "id": "samsung-galaxy-a56",
     "price": 159900,
-    "storage": null,
-    "title": "Samsung Galaxy A56",
+    "storage": 128,
+    "title": "Samsung Galaxy A56 128GB (Awesome Pink)",
     "url": "https://mobilecentre.am/product/samsung-galaxy-a56/31747/",
+    "image": "https://mobilecentre.am/img/prodpic/e294cfc4ec13db278f9eNew_Project_-_2025-03-05T135706.406.png",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Awesome Pink",
     "shop": "mobilecentre"
    },
    {
@@ -1717,9 +2899,10 @@
     "storage": null,
     "title": "Samsung Galaxy A56",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-a56",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/162/800_1776345835-1743100809-a56-graphite-2-sides.png",
+    "color": "Awesome Graphite",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
@@ -1759,6 +2942,278 @@
     "shop": "vega"
    }
   ],
+  "samsung-galaxy-a57": [
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 164000,
+    "storage": null,
+    "title": "Samsung Galaxy A57",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-a57",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/182/800_1779641705-blue-2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 166900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 128GB (Awesome Gray)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-128gb-awesome-gray.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Gray)%20(2)-500x500.jpg",
+    "ram": 8,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 166900,
+    "storage": 128,
+    "title": "Samsung Galaxy A57 128GB (Awesome Icyblue)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a57/33689/",
+    "image": "https://mobilecentre.am/img/prodpic/d1a5b533e0457e09c305New_Project__58_.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Awesome Icyblue",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 166900,
+    "storage": 128,
+    "title": "Samsung A57",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a57-8-128gb-navy/2643/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744236275812.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 172900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 128GB (Awesome Icyblue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-128gb-awesome-icyblue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Icyblue)%20-%20Copy%20(8)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Icyblue",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 172900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 128GB (Awesome Lilac)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-128gb-awesome-lilac.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20128GB%20(Awesome%20Lilac)%20(3)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Lilac",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 172900,
+    "storage": 128,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 128GB (Awesome Navy)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-128gb-awesome-navy.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Navy)%20(1)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Navy",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 185900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 256GB (Awesome Gray)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-256gb-awesome-gray.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20128GB%20(Awesome%20Gray)%20(2)-500x500.jpg",
+    "ram": 8,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 185900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 256GB (Awesome Icyblue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-256gb-awesome-icyblue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Icyblue)%20(8)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Icyblue",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 185900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 256GB (Awesome Lilac)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-256gb-awesome-lilac.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20256GB%20(Awesome%20Lilac)%20(3)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Lilac",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 185900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A57 5G SM-A576B/DS 8GB 256GB (Awesome Navy)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a57-5g-sm-a576bds-8gb-256gb-awesome-navy.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Mayis/Smartfon/Galaxy%20A57%205G%20SM-A576BDS%208GB%20128GB%20(Awesome%20Navy)%20(1)-500x500.jpg",
+    "ram": 8,
+    "color": "Awesome Navy",
+    "shop": "vega"
+   }
+  ],
+  "samsung-galaxy-s25-edge": [
+   {
+    "id": "samsung-galaxy-s25-edge",
+    "price": 329000,
+    "storage": null,
+    "title": "Samsung Galaxy S25 Edge",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-edge",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/122/800_1776107384-1749232227-s25-edge-blk-2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s25-edge",
+    "price": 419900,
+    "storage": 512,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S25 Edge SM-S9370 12GB 512GB (Titanium Jetblack)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s25-edge-sm-s9370-12gb-512gb-titanium-jetblack.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Noyember/Smartfon/Galaxy%20S25%20Edge%20SM-S9370%2012GB%20512GB%20(3)-500x500.jpg",
+    "ram": 12,
+    "color": "Titanium Jetblack",
+    "shop": "vega"
+   }
+  ],
+  "samsung-galaxy-s26": [
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 348900,
+    "storage": 256,
+    "title": "Samsung Galaxy S26 256GB (Cobalt Violet)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s26/33478/",
+    "image": "https://mobilecentre.am/img/prodpic/d0cfb14e7c987af553b4New_Project_-_2026-02-26T151259.519.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Cobalt Violet",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 349900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 SM-S942B/DS 12GB 256GB (Black)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-sm-s942bds-12gb-256gb-black.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20SM-S942BDS%2012GB%20256GB%20(Black)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Black",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 355900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 SM-S942B/DS 12GB 256GB (Sky Blue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-sm-s942bds-12gb-256gb-sky-blue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20SM-S942BDS%2012GB%20256GB%20(Sky%20Blue)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 399000,
+    "storage": null,
+    "title": "Samsung Galaxy S26",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-s26",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/118/800_1776080985-1773253418-blk-2-sides.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-s26-plus": [
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "price": 418900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26+ SM-S947B/DS 12GB 256GB (Black)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-plus-sm-s947bds-12gb-256gb-black.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20SM-S947BDS%2012GB%20256GB%20(Black)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Black",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "price": 418900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26+ SM-S947B/DS 12GB 256GB (Sky Blue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-plus-sm-s947bds-12gb-256gb-sky-blue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20SM-S947BDS%2012GB%20256GB%20(Sky%20Blue)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "price": 418900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26+ SM-S947B/DS 12GB 256GB (White)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-plus-sm-s947bds-12gb-256gb-white.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20SM-S947BDS%2012GB%20256GB%20(White)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "White",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "price": 418900,
+    "storage": 256,
+    "title": "Samsung Galaxy S26+ 256GB (Cobalt Violet)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s26+/33490/",
+    "image": "https://mobilecentre.am/img/prodpic/fa492cc32d82853bb4bbNew_Project_-_2026-02-26T124406.212.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Cobalt Violet",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "price": 456000,
+    "storage": null,
+    "title": "Samsung Galaxy S26 Plus",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-s26-plus",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/117/800_1776080271-1773255509-s26-plus-black-2-sides.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
   "samsung-galaxy-s25-ultra": [
    {
     "id": "samsung-galaxy-s25-ultra",
@@ -1766,10 +3221,23 @@
     "storage": null,
     "title": "Samsung Galaxy S25 Ultra",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-ultra",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/119/800_1776088285-1738507176-s25-ultra-blk-2-sides.png",
+    "color": "Titanium Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "price": 429900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB (Titanium Gray)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s25-ultra-5g-sm-s938bds-12gb-256gb-titanium-gray.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hulis/Smartfon/Galaxy%20S25%20Ultra%205G%20SM-S938BDS%2012GB%20512GB%20(Titanium%20Grey)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Titanium Gray",
+    "shop": "vega"
    },
    {
     "id": "samsung-galaxy-s25-ultra",
@@ -1782,17 +3250,213 @@
     "ram": 12,
     "color": "Titanium Black",
     "shop": "vega"
+   }
+  ],
+  "samsung-galaxy-s26-ultra": [
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 419000,
+    "storage": null,
+    "title": "Samsung Galaxy S26 Ultra",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-s26-ultra",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/116/800_1776065442-1773341542-s26-ultra-blk2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
    },
    {
-    "id": "samsung-galaxy-s25-ultra",
-    "price": 429900,
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
     "storage": 256,
-    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB (Titanium Gray)",
-    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s25-ultra-5g-sm-s938bds-12gb-256gb-titanium-gray.html",
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 256GB (Black)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-256gb-black.html",
     "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hulis/Smartfon/Galaxy%20S25%20Ultra%205G%20SM-S938BDS%2012GB%20512GB%20(Titanium%20Grey)%20(2)-500x500.jpg",
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/SAMSUNG%20Galaxy%20S26%20black%20(2)-500x500.jpg",
     "ram": 12,
-    "color": "Titanium Gray",
+    "color": "Black",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 256GB (Cobalt Violet)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-256gb-cobalt-violet.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20Ultra%20SM-S948BDS%2012GB%20512GB%20(Cobalt%20Violet)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Cobalt Violet",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 256GB (Sky Blue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-256gb-sky-blue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20Ultra%20SM-S948BDS%2012GB%20256GB%20(Sky%20Blue)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 256GB (White)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-256gb-white.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/%20SAMSUNG%20Galaxy%20S26%20Ultra%20SM-S948BDS%2012GB%20256GB%20(White)%20%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Samsung Galaxy S26 Ultra 256GB (Sky Blue)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s26-ultra/33508/",
+    "image": "https://mobilecentre.am/img/prodpic/21bbc1335483f3984b67New_Project_-_2026-02-26T104759.771.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Samsung S26 Ultra",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-256gb-white/2599/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17725396854756.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 569900,
+    "storage": 512,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (Cobalt Violet)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-512gb-cobalt-violet.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20Ultra%20SM-S948BDS%2012GB%20256GB%20(Cobalt%20Violet)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Cobalt Violet",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 569900,
+    "storage": 512,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (Sky Blue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-512gb-sky-blue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20Ultra%20SM-S948BDS%2012GB%20512GB%20(Sky%20Blue)%20(3)-500x500.jpg",
+    "ram": 12,
+    "color": "Blue",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 569900,
+    "storage": 512,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (White)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-512gb-white.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/Galaxy%20S26%20Ultra%20SM-S948BDS%2012GB%20512GB%20(White)%20(4)-500x500.jpg",
+    "ram": 12,
+    "color": null,
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 569900,
+    "storage": 512,
+    "title": "Samsung S26 Ultra",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-512gb-skyblue/2613/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17727781496089.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 579900,
+    "storage": 512,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (Black)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-512gb-black.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/April/Smartfon/12GB%20512GB%20(Black)%20(2)-500x500.jpg",
+    "ram": 12,
+    "color": "Black",
+    "shop": "vega"
+   }
+  ],
+  "samsung-galaxy-a17": [
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 69900,
+    "storage": 128,
+    "title": "Samsung Galaxy A17 4GB/128GB (Gray)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a17-_4gb_128gb_/32484/",
+    "image": "https://mobilecentre.am/img/prodpic/9847a47b89ad3a0fd00eNew_Project_-_2025-09-13T144157.061.png",
+    "inStock": true,
+    "ram": 4,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 72900,
+    "storage": null,
+    "title": "Samsung Galaxy A17",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-a17",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/178/800_1776373273-1758654233-a17-blk-2-sides.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 83900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A17 4G SM-A175F/DS 8GB 256GB (Black)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a17-4g-sm-a175fds-8gb-256gb-black.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hoktember/Smartfon/SAMSUNG%20Galaxy%20A17%204G%20SM-A175FDS%208GB%20256GB%20(Black)%20(2)-500x500.jpg",
+    "ram": 8,
+    "color": "Black",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 83900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A17 4G SM-A175F/DS 8GB 256GB (Grey)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a17-4g-sm-a175fds-8gb-256gb-grey.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hoktember/Smartfon/Galaxy%20A17%204G%20SM-A175FDS%208GB%20256GB%20(Grey)%20%20(2)-500x500.jpg",
+    "ram": 8,
+    "color": "Grey",
+    "shop": "vega"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "price": 83900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy A17 4G SM-A175F/DS 8GB 256GB (Light blue)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a17-4g-sm-a175fds-8gb-256gb-light-blue.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2025/Hoktember/Smartfon/SAMSUNG%20Galaxy%20A17%20(1)-500x500.jpg",
+    "ram": 8,
+    "color": "Blue",
     "shop": "vega"
    }
   ],
@@ -1815,9 +3479,10 @@
     "storage": null,
     "title": "Samsung Galaxy A26",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-a26",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/157/800_1776285858-1742752247-a26-blk--sides.png",
+    "color": "Awesome Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
@@ -1837,12 +3502,13 @@
    {
     "id": "samsung-galaxy-a36",
     "price": 129900,
-    "storage": null,
-    "title": "Samsung Galaxy A36",
-    "url": "https://mobilecentre.am/product/samsung-galaxy-a36/31735/",
+    "storage": 128,
+    "title": "Samsung Galaxy A36 128GB (Awesome Lime)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a36/31733/",
+    "image": "https://mobilecentre.am/img/prodpic/ac5db0bc46a92826a11dNew_Project_-_2025-03-05T112454.065.png",
     "inStock": true,
     "ram": null,
-    "color": null,
+    "color": "Awesome Lime",
     "shop": "mobilecentre"
    },
    {
@@ -1851,9 +3517,10 @@
     "storage": null,
     "title": "Samsung Galaxy A36",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-a36",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/161/800_1776344729-1743015727-a36-blk-2-sides.png",
+    "color": "Awesome Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
@@ -1905,6 +3572,56 @@
     "ram": 8,
     "color": null,
     "shop": "vega"
+   },
+   {
+    "id": "poco-x7-pro",
+    "price": 159000,
+    "storage": null,
+    "title": "Poco X7 Pro",
+    "url": "https://www.pixel.am/am/product/xiaomi-poco-x7-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/124/800_1776110199-1741377767-yellow-2-sides.png",
+    "color": "Poco Yellow",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-s25-fe": [
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 219000,
+    "storage": null,
+    "title": "Samsung Galaxy S25 FE",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-fe",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/121/800_1776105956-1762804259-s25-fe-blue-2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 238900,
+    "storage": 256,
+    "title": "Samsung Galaxy S25 FE 256GB (Dark Blue)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s25-fe/32447/",
+    "image": "https://mobilecentre.am/img/prodpic/7ecb050adb425b0b172dNew_Project_-_2025-09-05T110002.769.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 255900,
+    "storage": 256,
+    "title": "Սմարթ հեռախոս SAMSUNG Galaxy S25 FE SM-S731B/DS 8GB 256GB (Navy)",
+    "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s25-fe-sm-s731bds-8gb-256gb-navy.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/Hunvar/Smartfon/AMSUNG%20Galaxy%20S25%20FE%20%20NAVY%20(4)-500x500.jpg",
+    "ram": 8,
+    "color": "Navy",
+    "shop": "vega"
    }
   ],
   "samsung-galaxy-s25": [
@@ -1914,17 +3631,19 @@
     "storage": null,
     "title": "Samsung Galaxy S25",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-s25",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/123/800_1776108909-1738415687-s25-silver-shadow-s-sides.png",
+    "color": "Silver Shadow",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
     "id": "samsung-galaxy-s25",
     "price": 304900,
-    "storage": null,
-    "title": "Samsung Galaxy S25",
-    "url": "https://mobilecentre.am/product/samsung-galaxy-s25/31477/",
+    "storage": 128,
+    "title": "Samsung Galaxy S25 128GB (Blue)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s25/31473/",
+    "image": "https://mobilecentre.am/img/prodpic/c7d654b2b319188a7753New_Project__31_.png",
     "inStock": true,
     "ram": null,
     "color": null,
@@ -1957,6 +3676,184 @@
     "shop": "vega"
    }
   ],
+  "samsung-galaxy-s26-fe": [
+   {
+    "id": "samsung-galaxy-s26-fe",
+    "price": 336900,
+    "storage": 128,
+    "title": "Samsung Galaxy S26 FE 128GB (Light Green)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-s26-fe/34412/",
+    "image": "https://mobilecentre.am/img/prodpic/9084b26f0d37d0dee5bcNew_Project_-_2026-08-26T123945.744.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s26-fe",
+    "price": 336900,
+    "storage": null,
+    "title": "Samsung Galaxy S26 FE",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-fe.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/s/m/sm-s741_galaxys26fe_front2_pistachio_2_1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   }
+  ],
+  "samsung-galaxy-z-fold-8-ultra": [
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "price": 852900,
+    "storage": 256,
+    "title": "Samsung Galaxy Z Fold 8 Ultra 256GB (Graphite)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-z-fold-8-ultra/34171/",
+    "image": "https://mobilecentre.am/img/prodpic/c7e039d49fe0ba0d4de8New_Project__14_.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Graphite",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "price": 867000,
+    "storage": null,
+    "title": "Samsung Galaxy Z Fold 8 Ultra",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-z-fold-8-ultra",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/215/800_1786480956-galazy-z-fold-ultra-graphite--1.png",
+    "color": "Graphite",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-z-fold-8": [
+   {
+    "id": "samsung-galaxy-z-fold-8",
+    "price": 757000,
+    "storage": null,
+    "title": "Samsung Galaxy Z Fold 8",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-z-fold-8",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/213/800_1786476629-galaxy-z-fold-8-graphte-3.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8",
+    "price": 757900,
+    "storage": 256,
+    "title": "Samsung Galaxy Z Fold 8 256GB (Graphite)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-z-fold-8/34159/",
+    "image": "https://mobilecentre.am/img/prodpic/ce6a69de2198f3f700d7New_Project__9_.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Graphite",
+    "shop": "mobilecentre"
+   }
+  ],
+  "samsung-galaxy-z-flip-8": [
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "price": 527000,
+    "storage": null,
+    "title": "Samsung Galaxy Z Flip 8",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-z-flip-8",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/214/800_1786478897-galaxy-flip-8-graphite-1.png",
+    "color": "Graphite",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "price": 544900,
+    "storage": 256,
+    "title": "Samsung Galaxy Z Flip 8 256GB (Graphite)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-z-flip-8/34147/",
+    "image": "https://mobilecentre.am/img/prodpic/c908b9941ac2df794072New_Project__10_.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Graphite",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "price": 544900,
+    "storage": null,
+    "title": "Samsung Galaxy Z Flip 8",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/s/m/sm-f776_zflip8_closedfront_pink_260430_10.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "price": 544900,
+    "storage": 256,
+    "title": "Samsung Z Flip8",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-z-flip8-12-256gb-pink/2752/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/13/17863457556682.jpeg",
+    "inStock": true,
+    "ram": null,
+    "color": "Pink",
+    "shop": "telecom"
+   }
+  ],
+  "samsung-galaxy-a27": [
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 120000,
+    "storage": null,
+    "title": "Samsung Galaxy A27",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-a27",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/212/800_1786457590-a27-blk-2-sides.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 122900,
+    "storage": 128,
+    "title": "Samsung Galaxy A27 128GB (Blue)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a27/33851/",
+    "image": "https://mobilecentre.am/img/prodpic/7ed1034fa23553d2c5dbNew_Project_-_2026-06-25T111746.794.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 122900,
+    "storage": null,
+    "title": "Samsung Galaxy A27",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-a27.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/s/m/sm-a276_galaxya27_5g_front2_blue.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 122900,
+    "storage": null,
+    "title": "Samsung A27",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a27-6-128-black/2714/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/13/17836665573506.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Black",
+    "shop": "telecom"
+   }
+  ],
   "xiaomi-redmi-note-14-pro": [
    {
     "id": "xiaomi-redmi-note-14-pro",
@@ -1964,32 +3861,125 @@
     "storage": null,
     "title": "Redmi Note 14 Pro 4G",
     "url": "https://www.pixel.am/am/product/xiaomi-redmi-note-14-pro-4g",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/159/800_1776287717-1741520463-blk-2-sides.png",
+    "color": "Midnight Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    },
    {
     "id": "xiaomi-redmi-note-14-pro",
     "price": 146900,
-    "storage": null,
-    "title": "Xiaomi Redmi Note 14 Pro",
+    "storage": 512,
+    "title": "Xiaomi Redmi Note 14 Pro 12GB/512GB (Ocean Bluе)",
     "url": "https://mobilecentre.am/product/xiaomi-redmi-note-14-pro/32858/",
+    "image": "https://mobilecentre.am/img/prodpic/2c21834b9fd496411667New_Project_-_2025-10-04T144856.313.png",
     "inStock": true,
-    "ram": null,
+    "ram": 12,
     "color": null,
     "shop": "mobilecentre"
+   }
+  ],
+  "samsung-galaxy-a07": [
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 45900,
+    "storage": null,
+    "title": "Samsung Galaxy A07",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-a07",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/172/800_1776370688-1757171386-blk-2-sides.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 47900,
+    "storage": 64,
+    "title": "Samsung Galaxy A07 4GB/64GB (Black)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a07/32370/",
+    "image": "https://mobilecentre.am/img/prodpic/d67735eb2ad7298b6bceNew_Project_-_2025-08-22T102552.620.png",
+    "inStock": true,
+    "ram": 4,
+    "color": "Black",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 57900,
+    "storage": 128,
+    "title": "Samsung Galaxy A07 6GB/128GB (Green)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-a07-_6gb_128gb_/32374/",
+    "image": "https://mobilecentre.am/img/prodpic/f00fd349da76101cc721New_Project_-_2025-08-22T102623.980.png",
+    "inStock": true,
+    "ram": 6,
+    "color": "Green",
+    "shop": "mobilecentre"
+   }
+  ],
+  "samsung-galaxy-z-fold-7": [
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 559900,
+    "storage": 256,
+    "title": "Samsung Galaxy Z Fold 7 256GB (Jetblack)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-z-fold-7/32308/",
+    "image": "https://mobilecentre.am/img/prodpic/4b89c1e643a84220b346New_Project_-_2025-07-10T102415.751.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Jetblack",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 609000,
+    "storage": null,
+    "title": "Samsung Galaxy Z Fold 7",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-z-fold-7",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/170/800_1776369063-1753810053-fold7-blk-1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-z-flip-7": [
+   {
+    "id": "samsung-galaxy-z-flip-7",
+    "price": 336900,
+    "storage": 256,
+    "title": "Samsung Galaxy Z Flip 7 256GB (Coralred)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-z-flip-7/32297/",
+    "image": "https://mobilecentre.am/img/prodpic/ccd2526b396c350e26c2New_Project_-_2025-07-10T120540.066.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Coralred",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-7",
+    "price": 389900,
+    "storage": null,
+    "title": "Samsung Galaxy Z Flip 7",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-z-flip-7",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/167/800_1776366587-1753034096-z-flip-7-blk-1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
    }
   ],
   "realme-c75": [
    {
     "id": "realme-c75",
     "price": 77900,
-    "storage": null,
-    "title": "Realme C75",
+    "storage": 128,
+    "title": "Realme C75 8GB/128GB (Gold)",
     "url": "https://mobilecentre.am/product/realme-c75/31557/",
+    "image": "https://mobilecentre.am/img/prodpic/8e4e8c2fc16d35675cf5New_Project__23_.png",
     "inStock": true,
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "mobilecentre"
    }
@@ -1998,12 +3988,663 @@
    {
     "id": "xiaomi-redmi-14c",
     "price": 52900,
+    "storage": 128,
+    "title": "Xiaomi Redmi 14C 4GB/128GB (Sage Green)",
+    "url": "https://mobilecentre.am/product/xiaomi-redmi-14c/31233/",
+    "image": "https://mobilecentre.am/img/prodpic/f141c67dd0e9fdda589cNew_Project__50_.png",
+    "inStock": true,
+    "ram": 4,
+    "color": "Sage Green",
+    "shop": "mobilecentre"
+   }
+  ],
+  "apple-iphone-16-pro-max": [
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 539000,
     "storage": null,
-    "title": "Xiaomi Redmi 14C",
-    "url": "https://mobilecentre.am/product/xiaomi-redmi-14c/31234/",
+    "title": "iPhone 16 Pro Max",
+    "url": "https://www.pixel.am/am/product/iphone-16-pro-max",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/047/800_1774259725-1726500920-16-pro-max-back.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 549900,
+    "storage": 256,
+    "title": "iPhone 16 Pro Max 256GB (Desert Titanium)",
+    "url": "https://mobilecentre.am/product/apple-iphone-16-pro-max/30938/",
+    "image": "https://mobilecentre.am/img/prodpic/67411e5b43ed4f87b16fiPhone_16_Pro_Max_Desert_Titanium_PDP_Image_Position_1__ce-WW.jpg",
+    "inStock": true,
+    "ram": null,
+    "color": "Desert Titanium",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 559900,
+    "storage": 256,
+    "title": "iPhone 16 Pro Max, 256 GB, Black Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-256-gb-black-titanium-2096",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2096/1726209331_114ee1b100adfc195fca.jpg",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 559900,
+    "storage": 256,
+    "title": "iPhone 16 Pro Max, 256 GB, White Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-256-gb-white-titanium-2097",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2097/1726209661_b00cf7243f25e0455bf2.jpg",
+    "ram": null,
+    "color": "White Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 559900,
+    "storage": 256,
+    "title": "iPhone 16 Pro Max, 256 GB, Desert Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-256-gb-desert-titanium-2100",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2100/1726212696_ce51579b3a32796eca2f.jpg",
+    "ram": null,
+    "color": "Desert Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 559900,
+    "storage": 256,
+    "title": "iPhone 16 Pro Max, 256 GB, Natural Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-256-gb-natural-titanium-2102",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2102/1726213149_ed7d177df8ae155b7708.jpg",
+    "ram": null,
+    "color": "Natural Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 649900,
+    "storage": 512,
+    "title": "iPhone 16 Pro Max, 512 GB, Black Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-512-gb-black-titanium-2104",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2104/1726214569_15fc3fee0e5f925a0616.jpg",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 649900,
+    "storage": 512,
+    "title": "iPhone 16 Pro Max, 512 GB, White Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-512-gb-white-titanium-2106",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2106/1726215267_f929a6ee2f41260b7b0a.jpg",
+    "ram": null,
+    "color": "White Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 649900,
+    "storage": 512,
+    "title": "iPhone 16 Pro Max, 512 GB, Desert Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-512-gb-desert-titanium-2107",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2107/1726215578_569136b2692647fe2f82.jpg",
+    "ram": null,
+    "color": "Desert Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "price": 765900,
+    "storage": 1024,
+    "title": "iPhone 16 Pro Max, 1 TB, Black Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-max-1-tb-black-titanium-2115",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2115/1726226706_77cde080c46dd1b27755.jpg",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "istore"
+   }
+  ],
+  "apple-iphone-16-plus": [
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 369000,
+    "storage": null,
+    "title": "iPhone 16 Plus",
+    "url": "https://www.pixel.am/am/product/iphone-16-plus",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/045/800_1774252915-1744462346-1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 379900,
+    "storage": 128,
+    "title": "iPhone 16 Plus 128GB (Pink)",
+    "url": "https://mobilecentre.am/product/apple-iphone-16-plus/30903/",
+    "image": "https://mobilecentre.am/img/prodpic/7a88954cb3fb1012716eNew_Project.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Pink",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 409900,
+    "storage": 128,
+    "title": "iPhone 16 Plus, 128 GB, Black",
+    "url": "https://istore.am/product/iphone-16-plus-128-gb-black-2084",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2084/1726141025_54a2fb3389d14f0b3c5c.jpg",
+    "ram": null,
+    "color": "Black",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 409900,
+    "storage": 128,
+    "title": "iPhone 16 Plus, 128 GB, White",
+    "url": "https://istore.am/product/iphone-16-plus-128-gb-white-2085",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2085/1726142457_45835433a11519863164.jpg",
+    "ram": null,
+    "color": "White",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 409900,
+    "storage": 128,
+    "title": "iPhone 16 Plus, 128 GB, Pink",
+    "url": "https://istore.am/product/iphone-16-plus-128-gb-pink-2086",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2086/1726144254_51338b27644e9af32663.jpg",
+    "ram": null,
+    "color": "Pink",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 409900,
+    "storage": 128,
+    "title": "iPhone 16 Plus, 128 GB, Ultramarine",
+    "url": "https://istore.am/product/iphone-16-plus-128-gb-ultramarine-2095",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2095/1726209023_0536ae08b1c4afe074de.jpg",
+    "ram": null,
+    "color": "Ultramarine",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 409900,
+    "storage": 128,
+    "title": "iPhone 16 Plus, 128 GB, Teal",
+    "url": "https://istore.am/product/iphone-16-plus-128-gb-teal-2098",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2098/1726210925_9658fa4e1b4132fa20e3.jpg",
+    "ram": null,
+    "color": "Teal",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 459900,
+    "storage": 256,
+    "title": "iPhone 16 Plus, 256 GB, Black",
+    "url": "https://istore.am/product/iphone-16-plus-256-gb-black-2099",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2099/1726212029_3a4fd2d9ffb8771d5d22.jpg",
+    "ram": null,
+    "color": "Black",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 459900,
+    "storage": 256,
+    "title": "iPhone 16 Plus, 256 GB, White",
+    "url": "https://istore.am/product/iphone-16-plus-256-gb-white-2101",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2101/1726212941_498520fc6048c68c6e1c.jpg",
+    "ram": null,
+    "color": "White",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-plus",
+    "price": 459900,
+    "storage": 256,
+    "title": "iPhone 16 Plus, 256 GB, Pink",
+    "url": "https://istore.am/product/iphone-16-plus-256-gb-pink-2103",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2103/1726213632_e293fd79b64abd3ff0f1.jpg",
+    "ram": null,
+    "color": "Pink",
+    "shop": "istore"
+   }
+  ],
+  "samsung-galaxy-tab-a11-plus": [
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "price": 120900,
+    "storage": 128,
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 128GB (Silver)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11+-wi-fi-128gb-_silver_/33098/",
+    "image": "https://mobilecentre.am/img/prodpic/7367e3ae187e827ca16dNew_Project_-_2025-11-11T152517.128.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "price": 120900,
+    "storage": 128,
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 128GB (Gray)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11+-wi-fi-128gb-_gray_/33097/",
+    "image": "https://mobilecentre.am/img/prodpic/b56531fcf869ab753e4eNew_Project_-_2025-11-11T152540.912.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Gray",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "price": 130900,
+    "storage": null,
+    "title": "Samsung Galaxy Tab A11+ 5G",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-tab-a11-5g.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/m/image_-_2026-06-01t162416.808_1.webp",
     "inStock": true,
     "ram": null,
     "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "price": 141900,
+    "storage": 256,
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 256GB (Silver)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11+-wi-fi-256gb-_silver_/33100/",
+    "image": "https://mobilecentre.am/img/prodpic/ee7a1c84e180ee871c0bNew_Project_-_2025-11-11T152517.128.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "price": 141900,
+    "storage": 256,
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 256GB (Gray)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11+-wi-fi-256gb-_gray_/33099/",
+    "image": "https://mobilecentre.am/img/prodpic/4807b0ef2af894cac9e2New_Project_-_2025-11-11T152540.912.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Gray",
+    "shop": "mobilecentre"
+   }
+  ],
+  "samsung-galaxy-tab-a11": [
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 58900,
+    "storage": 64,
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 64GB (Silver)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11-wi-fi-64gb-_silver_/32812/",
+    "image": "https://mobilecentre.am/img/prodpic/bd385bea188d7dc860acNew_Project_-_2025-09-30T160447.043.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 58900,
+    "storage": 64,
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 64GB (Gray)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11-wi-fi-64gb-_gray_/32811/",
+    "image": "https://mobilecentre.am/img/prodpic/2df85cfcde978d1804adNew_Project_-_2025-09-30T160508.059.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Gray",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 77900,
+    "storage": null,
+    "title": "Samsung Galaxy Tab A11 Wi-Fi",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-tab-a11-wi-fi.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/m/image_-_2026-06-01t120235.712_1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 81900,
+    "storage": 128,
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 128GB (Silver)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11-wi-fi-128gb-_silver_/32810/",
+    "image": "https://mobilecentre.am/img/prodpic/b82ae509043a441c9e91New_Project_-_2025-09-30T160447.043.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 81900,
+    "storage": 128,
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 128GB (Gray)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-tab-a11-wi-fi-128gb-_gray_/32809/",
+    "image": "https://mobilecentre.am/img/prodpic/7e9ceb4ef93fd3cc49feNew_Project_-_2025-09-30T160508.059.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Gray",
+    "shop": "mobilecentre"
+   }
+  ],
+  "xiaomi-redmi-watch-5-lite": [
+   {
+    "id": "xiaomi-redmi-watch-5-lite",
+    "price": 18900,
+    "storage": null,
+    "title": "Xiaomi Redmi Watch 5 Lite",
+    "url": "https://www.pixel.am/am/product/xiaomi-redmi-watch-5-lite",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/092/800_1775507401-1744546154-watch-5-active-blk.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "xiaomi-redmi-watch-5-lite",
+    "price": 23900,
+    "storage": null,
+    "title": "Xiaomi Redmi Watch 5 Lite Smart Watch (Light Gold)",
+    "url": "https://mobilecentre.am/product/xiaomi-redmi-watch-5-lite-smart-watch-_light-gold_/34383/",
+    "image": "https://mobilecentre.am/img/prodpic/8ed2c925c6ec8c2fddf2New_Project_-_2026-08-25T154841.664.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "xiaomi-redmi-watch-5-lite",
+    "price": 23900,
+    "storage": null,
+    "title": "Xiaomi Redmi Watch 5 Lite Smart Watch (Black)",
+    "url": "https://mobilecentre.am/product/*xiaomi-smart-watch-redmi-watch-5-lite-black-_bhr8789gl_/34382/",
+    "image": "https://mobilecentre.am/img/prodpic/93050c3bcd32171fa156New_Project_-_2026-08-25T154827.008.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Black",
+    "shop": "mobilecentre"
+   }
+  ],
+  "xiaomi-smart-band-10": [
+   {
+    "id": "xiaomi-smart-band-10",
+    "price": 19900,
+    "storage": null,
+    "title": "Xiaomi Mi Smart Band 10",
+    "url": "https://www.pixel.am/am/product/xiaomi-smart-band-10",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/206/800_1784835651-d4b104ecc687691f6648421bd4cdefd5-removebg-preview.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "xiaomi-smart-band-10",
+    "price": 21900,
+    "storage": null,
+    "title": "Xiaomi Smart Band 10 BHR07PSGL Glacier Silver",
+    "url": "https://mobilecentre.am/product/xiaomi-smart-band-10-bhr07psgl-glacier-silver-/34376/",
+    "image": "https://mobilecentre.am/img/prodpic/c32c925ab7427a9258f9New_Project_-_2026-08-27T101143.452.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "mobilecentre"
+   }
+  ],
+  "samsung-galaxy-buds-4": [
+   {
+    "id": "samsung-galaxy-buds-4",
+    "price": 52900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4 Headphone (White)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-buds-4-headphone-_white_/33520/",
+    "image": "https://mobilecentre.am/img/prodpic/01444e017e2924dba8d4New_Project_-_2026-02-26T162809.861.png",
+    "inStock": true,
+    "ram": null,
+    "color": "White",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-buds-4",
+    "price": 52900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4 Headphone (Black)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-buds-4-headphone-_black_/33519/",
+    "image": "https://mobilecentre.am/img/prodpic/19baeb3902ea4361a849New_Project_-_2026-02-26T162753.938.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Black",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-buds-4",
+    "price": 59000,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-buds-4",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/244/800_1786713051-bud-4-blk-1.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-buds-4-pro": [
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "price": 68900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4 Pro",
+    "url": "https://shop.ucom.am/am/galaxy-buds4-pro.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/p/c/pc_buds4_pro_black_1_6.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "price": 72900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4 Pro Headphone (White)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-buds-4-pro-headphone-_white_/33518/",
+    "image": "https://mobilecentre.am/img/prodpic/8779d8ffa07f227b0f45New_Project_-_2026-02-26T164729.624.png",
+    "inStock": true,
+    "ram": null,
+    "color": "White",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "price": 72900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4 Pro Headphone (Black)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-buds-4-pro-headphone-_black_/33516/",
+    "image": "https://mobilecentre.am/img/prodpic/3bac1adae37531b6fcedNew_Project_-_2026-02-26T164744.608.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Black",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "price": 82000,
+    "storage": null,
+    "title": "Samsung Galaxy Buds 4 Pro",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-buds-4-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/245/800_1786713643-buds-pro-blk-1.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "price": 99000,
+    "storage": null,
+    "title": "Buy Samsung Galaxy Buds 4 Pro R640 in Armenia - AllSell",
+    "url": "https://allsell.am/en/samsung-galaxy-buds4-pro-r640",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/u/budsb-2.png",
+    "ram": null,
+    "color": null,
+    "shop": "allsell"
+   }
+  ],
+  "samsung-galaxy-buds-core": [
+   {
+    "id": "samsung-galaxy-buds-core",
+    "price": 20900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds Core Headphone R410 (White)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-buds-core-headphone-r410-_white_/32234/",
+    "image": "https://mobilecentre.am/img/prodpic/77e8e4af17370133332dNew_Project_-_2025-07-10T165454.806.png",
+    "inStock": true,
+    "ram": null,
+    "color": "White",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-buds-core",
+    "price": 20900,
+    "storage": null,
+    "title": "Samsung Galaxy Buds Core Headphone R410 (Black)",
+    "url": "https://mobilecentre.am/product/samsung-galaxy-buds-core-headphone-r410-_black_/32233/",
+    "image": "https://mobilecentre.am/img/prodpic/a7726c84230f8ae94e35New_Project_-_2025-07-10T165519.310.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Black",
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-buds-core",
+    "price": 21000,
+    "storage": null,
+    "title": "Samsung Galaxy Buds Core",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-buds-core",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/058/800_1774810584-1768076759-web-akanjakali-chapserblk-2.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-airpods-pro-2": [
+   {
+    "id": "apple-airpods-pro-2",
+    "price": 83500,
+    "storage": null,
+    "title": "Airpods pro 2 Type-c",
+    "url": "https://allsell.am/en/airpods-pro-2-type-c",
+    "inStock": true,
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yeeeeeeeeeeeyy_26_.jpg",
+    "ram": null,
+    "color": null,
+    "shop": "allsell"
+   },
+   {
+    "id": "apple-airpods-pro-2",
+    "price": 89900,
+    "storage": null,
+    "title": "Apple Airpods Pro 2 (MTJV3)",
+    "url": "https://mobilecentre.am/product/apple-airpods-pro-2-_mtjv3_/30952/",
+    "image": "https://mobilecentre.am/img/prodpic/8e7997474bcfd53fe4a8New_Project_-_2026-09-04T173321.577.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "mobilecentre"
+   },
+   {
+    "id": "apple-airpods-pro-2",
+    "price": 97000,
+    "storage": null,
+    "title": "AirPods Pro 2 (Type-C)",
+    "url": "https://www.pixel.am/am/product/airpods-pro-2-type-c",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/020/020/800_1700810788-4.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "lenovo-ideapad-slim-3-15": [
+   {
+    "id": "lenovo-ideapad-slim-3-15",
+    "price": 274900,
+    "storage": 512,
+    "title": "Lenovo PC Notebook IdeaPad Slim 3 15IRH8 / Core i5-13420H / 8GB RAM / 512GB SSD / 15.6 inch FHD / DOS (Arctic Grey)",
+    "url": "https://mobilecentre.am/product/lenovo-pc-notebook-ideapad-slim-3-15irh8-_-core-i5-13420h-_-8gb-ram-_-512gb-ssd-_-15.6-inch-fhd-_-dos-_arctic-grey_/34346/",
+    "image": "https://mobilecentre.am/img/prodpic/e311de5f0f69bcab38f8New_Project_-_2026-08-06T155341.649.png",
+    "inStock": true,
+    "ram": 8,
+    "color": null,
+    "shop": "mobilecentre"
+   }
+  ],
+  "lenovo-ideapad-5-2in1-16": [
+   {
+    "id": "lenovo-ideapad-5-2in1-16",
+    "price": 499900,
+    "storage": 512,
+    "title": "Lenovo PC Notebook IdeaPad 5 2-in-1 16IAL10 / Ultra 7 255U / 16GB RAM / 512GB SSD / 16 inch WUXGA Touch / WIN11 (Grey)",
+    "url": "https://mobilecentre.am/product/lenovo-pc-notebook-ideapad-5-2-in-1-16ial10-_-ultra-7-255u-_-16gb-ram-_-512gb-ssd-_-16-inch-wuxga-touch-_-win11-_grey_/34345/",
+    "image": "https://mobilecentre.am/img/prodpic/92d57f9adbc65f4cba43New_Project_-_2026-08-06T170956.548.png",
+    "inStock": true,
+    "ram": 16,
+    "color": null,
+    "shop": "mobilecentre"
+   }
+  ],
+  "hp-15-fd2747nr": [
+   {
+    "id": "hp-15-fd2747nr",
+    "price": 389900,
+    "storage": 512,
+    "title": "HP PC Notebook 15-FD2747NR / Ultra 7 255U / 16GB RAM / 512GB SSD / 15.6 inch FHD Touch / WIN11 (Natural Silver)",
+    "url": "https://mobilecentre.am/product/hp-pc-notebook-15-fd2747nr-_-ultra-7-255u-_-16gb-ram-_-512gb-ssd-_-15.6-inch-fhd-touch-_-win11-_natural-silver_/34343/",
+    "image": "https://mobilecentre.am/img/prodpic/57a0570b85325255095fNew_Project_-_2026-08-07T111508.736.png",
+    "inStock": true,
+    "ram": 16,
+    "color": "Silver",
     "shop": "mobilecentre"
    }
   ],
@@ -2014,9 +4655,10 @@
     "storage": null,
     "title": "Xiaomi 15T",
     "url": "https://www.pixel.am/am/product/xiaomi-15t",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/165/800_1776364896-1763407717-15-t-blk-2-sides.png",
+    "color": "Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    }
   ],
@@ -2027,9 +4669,10 @@
     "storage": null,
     "title": "Samsung Galaxy A16",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-a16",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/152/800_1776238752-1731699239-black.png",
+    "color": "Blue Black",
     "inStock": true,
     "ram": null,
-    "color": null,
     "shop": "pixel"
    }
   ],
@@ -2040,9 +4683,390 @@
     "storage": null,
     "title": "Samsung Galaxy A06",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-a06",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/151/800_1776237398-1725552045-a06-blk-blue-2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-iphone-16-pro": [
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 459900,
+    "storage": 128,
+    "title": "iPhone 16 Pro, 128 GB, Black Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-128-gb-black-titanium-2067",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2067/1726125460_35918a9e1454544ecccb.jpg",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 459900,
+    "storage": 128,
+    "title": "iPhone 16 Pro, 128 GB, White Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-128-gb-white-titanium-2071",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2071/1726127921_5424ff082268a7972987.jpg",
+    "ram": null,
+    "color": "White Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 459900,
+    "storage": 128,
+    "title": "iPhone 16 Pro, 128 GB, Desert Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-128-gb-desert-titanium-2074",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2074/1726129279_eaf44bc53b94ffd3a36f.jpg",
+    "ram": null,
+    "color": "Desert Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 459900,
+    "storage": 128,
+    "title": "iPhone 16 Pro, 128 GB, Natural Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-128-gb-natural-titanium-2075",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2075/1726129998_7b5be970a44250422ffc.jpg",
+    "ram": null,
+    "color": "Natural Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 465000,
+    "storage": null,
+    "title": "iPhone 16 Pro",
+    "url": "https://www.pixel.am/am/product/iphone-16-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/048/800_1774260565-1726426207-16-pro-black.png",
+    "color": "Black Titanium",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 509900,
+    "storage": 256,
+    "title": "iPhone 16 Pro, 256 GB, Black Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-256-gb-black-titanium-2077",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2077/1726130691_77fd33d5342fb25004b7.jpg",
+    "ram": null,
+    "color": "Black Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 509900,
+    "storage": 256,
+    "title": "iPhone 16 Pro, 256 GB, White Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-256-gb-white-titanium-2079",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2079/1726132207_d366e68e53ec95d9fd8b.jpg",
+    "ram": null,
+    "color": "White Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 509900,
+    "storage": 256,
+    "title": "iPhone 16 Pro, 256 GB, Desert Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-256-gb-desert-titanium-2081",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2081/1726133137_f5f0f39f4736c5e0c58e.jpg",
+    "ram": null,
+    "color": "Desert Titanium",
+    "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "price": 509900,
+    "storage": 256,
+    "title": "iPhone 16 Pro, 256 GB, Natural Titanium",
+    "url": "https://istore.am/product/iphone-16-pro-256-gb-natural-titanium-2083",
+    "inStock": true,
+    "image": "https://istore.am/product_image/2083/1726134244_1607d76ecc67c4ece58d.jpg",
+    "ram": null,
+    "color": "Natural Titanium",
+    "shop": "istore"
+   }
+  ],
+  "xiaomi-redmi-pad-2": [
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "price": 83900,
+    "storage": null,
+    "title": "Xiaomi Redmi Pad 2 9.7",
+    "url": "https://shop.ucom.am/am/xiaomi-redmi-pad-2-9-7.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/t/a/tablet-xiaomi-redmi-pad-2-9_7-4g-4gb-128gb-ru-_2604erp4dg_-graphite-gray-1-eldorado-armenia_3.webp",
     "inStock": true,
     "ram": null,
     "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "price": 83900,
+    "storage": 6,
+    "title": "Xiaomi Redmi Pad 2",
+    "url": "https://shop.ucom.am/am/xiaomi-redmi-pad-2-6gb.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/r/e/redmi_pad_2_11_wifi_6gb_128gb_graphite_gray_25040rp0ag_5_-540x720_2.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "price": 89000,
+    "storage": null,
+    "title": "Xiaomi Redmi Pad 2 9.7",
+    "url": "https://www.pixel.am/am/product/xiaomi-redmi-pad-2-9-7",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/207/800_1785008944-blk-2-sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-ipad-air-13-m4": [
+   {
+    "id": "apple-ipad-air-13-m4",
+    "price": 459000,
+    "storage": null,
+    "title": "iPad Air 13 M4",
+    "url": "https://www.pixel.am/am/product/ipad-air-13-m4",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/191/800_1782671455-grey-1.png",
+    "color": "Space Gray",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "xiaomi-pad-7-pro": [
+   {
+    "id": "xiaomi-pad-7-pro",
+    "price": 249900,
+    "storage": null,
+    "title": "Xiaomi Pad 7 Pro",
+    "url": "https://www.pixel.am/am/product/xiaomi-pad-7-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/134/800_1776147855-1770064951-2sides.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-ipad-pro-13-m5": [
+   {
+    "id": "apple-ipad-pro-13-m5",
+    "price": 639000,
+    "storage": null,
+    "title": "iPad Pro 13 M5",
+    "url": "https://www.pixel.am/am/product/ipad-pro-13-m5",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/090/800_1775506569-1768083306-ipad-pro-13-m5.blk-2-sides.png",
+    "color": "Space Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "xiaomi-pad-7": [
+   {
+    "id": "xiaomi-pad-7",
+    "price": 179900,
+    "storage": 256,
+    "title": "Xiaomi Pad 7 8/256 GB (Մոխրագույն)",
+    "url": "https://www.pixel.am/am/product/xiaomi-pad-7-8-256-gray",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/913/800_1770063966-2sides.png",
+    "color": "Gray",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-watch-ultra-2": [
+   {
+    "id": "samsung-galaxy-watch-ultra-2",
+    "price": 231900,
+    "storage": null,
+    "title": "Samsung Galaxy Watch Ultra 2",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-watch-ultra-2.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/2/0/20f227051a9450579213new_project__32__2.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-watch-ultra-2",
+    "price": 263000,
+    "storage": null,
+    "title": "Samsung Galaxy Watch Ultra 2 2026",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-watch-ultra-2-2026",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/257/800_1788287003-samsung-galaxy-watch-ultra-silver-1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-watch-8": [
+   {
+    "id": "samsung-galaxy-watch-8",
+    "price": 95900,
+    "storage": null,
+    "title": "Samsung Galaxy Watch 8 40mm LTE",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-watch-8-40mm-lte.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/m/image_66__1_1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "price": 103000,
+    "storage": null,
+    "title": "Samsung Galaxy Watch 8",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-watch-8",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/098/800_1775510274-1754160282-sam-gal-watch-8-sev-2-44mm.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "samsung-galaxy-watch-8-classic": [
+   {
+    "id": "samsung-galaxy-watch-8-classic",
+    "price": 136900,
+    "storage": null,
+    "title": "Samsung Galaxy Watch 8 Classic 46mm LTE",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-watch-8-classic-46mm-lte.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/m/image_67__1_1.webp",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-watch-8-classic",
+    "price": 149000,
+    "storage": null,
+    "title": "Samsung Galaxy Watch 8 Classic",
+    "url": "https://www.pixel.am/am/product/samsung-galaxy-watch-8-classic",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/093/800_1775507691-1754161016-classic-blk-21png.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "xiaomi-buds-6": [
+   {
+    "id": "xiaomi-buds-6",
+    "price": 19900,
+    "storage": null,
+    "title": "Redmi Buds 6",
+    "url": "https://www.pixel.am/am/product/xiaomi-buds-6",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/205/800_1784834007-452233.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "xiaomi-buds-6-lite": [
+   {
+    "id": "xiaomi-buds-6-lite",
+    "price": 12900,
+    "storage": null,
+    "title": "Redmi Buds 6 Lite (Black)",
+    "url": "https://www.pixel.am/am/product/xiaomi-buds-6-lite-black",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/325/800_1744540352-web-akanjakali-chapserblk.png",
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "apple-macbook-air-15-m4": [
+   {
+    "id": "apple-macbook-air-15-m4",
+    "price": 593000,
+    "storage": null,
+    "title": "Macbook Air 15 M4",
+    "url": "https://www.pixel.am/am/product/macbook-air-15-m4",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/074/800_1775252709-1751743886-silver-2.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "asus-zenbook-14-um3402ya-oled": [
+   {
+    "id": "asus-zenbook-14-um3402ya-oled",
+    "price": 355000,
+    "storage": null,
+    "title": "Asus ZenBook UM3402YA-WS51T OLED (Touch)",
+    "url": "https://www.pixel.am/am/product/asus-zenbook-um3402ya-ws51t-oled-touch",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/020/460/800_1713426848-macbook{.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "asus-vivobook-15-x1505va-oled": [
+   {
+    "id": "asus-vivobook-15-x1505va-oled",
+    "price": 399600,
+    "storage": null,
+    "title": "Asus VivoBook X1505VA-MA144 OLED",
+    "url": "https://www.pixel.am/am/product/asus-vivobook-x1505va-ma144-oled",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/020/457/800_1713355917-macbookg.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "asus-vivobook-pro-16-k6602vv-oled": [
+   {
+    "id": "asus-vivobook-pro-16-k6602vv-oled",
+    "price": 672000,
+    "storage": null,
+    "title": "Asus VivoBook Pro K6602VV-ES94 OLED",
+    "url": "https://www.pixel.am/am/product/asus-vivobook-pro-k6602vv-es94-oled",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/020/456/800_1713354340-macbook3.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel"
+   }
+  ],
+  "asus-vivobook-go-15-e1504fa-oled": [
+   {
+    "id": "asus-vivobook-go-15-e1504fa-oled",
+    "price": 277000,
+    "storage": null,
+    "title": "Asus VivoBook E1504FA-L1834 OLED",
+    "url": "https://www.pixel.am/am/product/asus-vivobook-e1504fa-l1834-oled",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/020/452/800_1713273492-macbook1.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
     "shop": "pixel"
    }
   ]

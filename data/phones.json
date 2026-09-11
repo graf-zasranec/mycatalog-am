@@ -74,16 +74,6 @@
   "cardSlot": false,
   "os": "iOS 26",
   "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
-  "pros": [
-   "120Hz ProMotion display on the non-Pro model",
-   "48MP ultra wide replaces the previous 12MP sensor",
-   "3000 nits peak outdoor brightness"
-  ],
-  "cons": [
-   "No dedicated telephoto lens",
-   "8GB RAM against 12GB on the Pro models",
-   "Video capped at 4K 60 fps"
-  ],
   "summaryEn": "Base iPhone 17 adds a 120Hz display, 48MP ultra wide and 256GB starting storage at the same price.",
   "unsure": [
    "chipset.antutu",
@@ -91,7 +81,8 @@
    "priceAmd",
    "variants[].priceAmd",
    "priceAmdMax"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "apple-iphone-17-pro",
@@ -172,16 +163,6 @@
   "cardSlot": false,
   "os": "iOS 26",
   "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
-  "pros": [
-   "48MP telephoto with 4x optical and 8x optical-quality zoom",
-   "Largest battery Apple has put in a 6.3-inch iPhone",
-   "4K 120 fps Dolby Vision and ProRes RAW recording"
-  ],
-  "cons": [
-   "204 g, heavier than the 199 g iPhone 16 Pro",
-   "Full-width camera plateau adds bulk",
-   "Base price rose to 1,099 USD"
-  ],
   "summaryEn": "Compact Pro with a 48MP triple camera, A19 Pro, 12GB RAM and the biggest battery in a 6.3-inch iPhone.",
   "unsure": [
    "chipset.antutu",
@@ -190,7 +171,8 @@
    "priceAmd",
    "variants[].priceAmd",
    "priceAmdMax"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "apple-iphone-17-pro-max",
@@ -276,16 +258,6 @@
   "cardSlot": false,
   "os": "iOS 26",
   "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
-  "pros": [
-   "Longest battery life of any iPhone to date",
-   "6.9-inch 120Hz display at 2868x1320",
-   "Only model offered with 2TB storage"
-  ],
-  "cons": [
-   "231 g and hard to use one-handed",
-   "2TB tier costs 1,999 USD",
-   "Same camera hardware as the smaller 17 Pro"
-  ],
   "summaryEn": "Largest iPhone 17 Pro, with a 6.9-inch display, 2TB option and the longest battery life in the lineup.",
   "unsure": [
    "chipset.antutu",
@@ -294,7 +266,8 @@
    "priceAmd",
    "variants[].priceAmd",
    "priceAmdMax"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "apple-iphone-air",
@@ -374,16 +347,6 @@
   "cardSlot": false,
   "os": "iOS 26",
   "updates": "No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases",
-  "pros": [
-   "5.64 mm thick and 165 g, the thinnest iPhone made",
-   "A19 Pro chip with 12GB RAM",
-   "Titanium frame with Ceramic Shield 2 on the front"
-  ],
-  "cons": [
-   "Single rear camera, no ultra wide or telephoto",
-   "3149 mAh, the smallest battery in the lineup",
-   "No mmWave 5G and eSIM only in every market"
-  ],
   "summaryEn": "Thinnest iPhone at 5.64 mm, with A19 Pro and a titanium frame, but one rear camera and a small battery.",
   "unsure": [
    "chipset.antutu",
@@ -392,7 +355,8 @@
    "priceAmd",
    "variants[].priceAmd",
    "priceAmdMax"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-s25-ultra",
@@ -471,22 +435,9 @@
    "Titanium Silverblue",
    "Titanium Black",
    "Titanium Whitesilver",
-   "Titanium Gray",
-   "Titanium Jetblack",
-   "Titanium Jadegreen",
-   "Titanium Pinkgold"
+   "Titanium Gray"
   ],
   "accent": "#8fa0b8",
-  "pros": [
-   "Built-in S Pen and four rear cameras including two telephotos",
-   "Seven years of OS and security updates",
-   "Titanium frame with Gorilla Armor 2, low-reflection front glass"
-  ],
-  "cons": [
-   "Highest price of the four",
-   "45W charging is slower than rivals at this price",
-   "218 g and 6.9 inches make one-handed use hard"
-  ],
   "summaryEn": "Samsung's largest flagship, with an S Pen, a four-camera rear array and seven years of software updates.",
   "unsure": [
    "chipset.antutu",
@@ -494,7 +445,8 @@
    "priceAmdMax",
    "variants[].priceAmd",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "google-pixel-10-pro",
@@ -581,16 +533,6 @@
    "Obsidian"
   ],
   "accent": "#93b49f",
-  "pros": [
-   "Three 48 MP-class rear cameras including a 5x periscope",
-   "Seven years of OS and security updates from launch",
-   "Compact 6.3-inch body for a flagship with a telephoto"
-  ],
-  "cons": [
-   "Tensor G5 trails Snapdragon 8 Elite in sustained performance",
-   "30W wired charging is modest for the price",
-   "Limited official retail presence in Armenia"
-  ],
   "summaryEn": "A compact Google flagship built around camera processing and seven years of Android updates.",
   "unsure": [
    "chipset.antutu",
@@ -598,7 +540,8 @@
    "priceAmdMax",
    "variants[].priceAmd",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "oneplus-13",
@@ -674,16 +617,6 @@
    "Midnight Ocean"
   ],
   "accent": "#1e3f6b",
-  "pros": [
-   "6000 mAh battery with 100W wired and 50W wireless charging",
-   "Three 50 MP rear cameras including a 3x periscope",
-   "IP68 and IP69 rating and 4500-nit peak display brightness"
-  ],
-  "cons": [
-   "Four OS upgrades, fewer than Samsung and Google",
-   "No microSD slot and no eSIM in most markets",
-   "Limited official service network in Armenia"
-  ],
   "summaryEn": "A Snapdragon 8 Elite flagship with a 6000 mAh battery, 100W charging and three 50 MP cameras.",
   "unsure": [
    "chipset.antutu",
@@ -692,7 +625,8 @@
    "priceAmdMax",
    "variants[].priceAmd",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "apple-iphone-16",
@@ -774,16 +708,6 @@
    "Black"
   ],
   "accent": "#4c5ebf",
-  "pros": [
-   "A18 chip keeps pace with newer Android flagships",
-   "Lightest and most compact of the four at 170 g",
-   "Longest practical software support and strongest resale value in Armenia"
-  ],
-  "cons": [
-   "60 Hz display when rivals here run at 120 Hz",
-   "Two rear cameras with no telephoto lens",
-   "3561 mAh battery and 30W wired charging"
-  ],
   "summaryEn": "Apple's standard 2024 model, compact and well supported, but limited by a 60 Hz screen and two cameras.",
   "unsure": [
    "chipset.antutu",
@@ -791,7 +715,8 @@
    "priceAmd",
    "priceAmdMax",
    "variants[].priceAmd"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-s25",
@@ -871,20 +796,7 @@
    "Icy Blue",
    "Navy",
    "Mint",
-   "Silver Shadow",
-   "Blue Black",
-   "Coral Red",
-   "Pink Gold"
-  ],
-  "pros": [
-   "Flagship Snapdragon 8 Elite performance in a compact body",
-   "Seven years of OS and security updates",
-   "162 g weight with a 7.2 mm frame"
-  ],
-  "cons": [
-   "4000 mAh battery and 25W charging are small for the class",
-   "No microSD slot",
-   "Telephoto is limited to 3x and 10 MP"
+   "Silver Shadow"
   ],
   "summaryEn": "Compact Samsung flagship with Snapdragon 8 Elite, a 6.2-inch 120Hz LTPO panel and seven years of updates.",
   "unsure": [
@@ -892,7 +804,8 @@
    "priceAmd",
    "priceAmdMax",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-a56",
@@ -974,23 +887,14 @@
    "Awesome Light Gray",
    "Awesome Pink"
   ],
-  "pros": [
-   "Six years of OS and security updates at a mid-range price",
-   "Metal frame with Gorilla Glass Victus+ on both sides",
-   "45W wired charging with a 5000 mAh battery"
-  ],
-  "cons": [
-   "No wireless charging and no microSD slot",
-   "No telephoto camera",
-   "IP67 rather than the IP68 of Samsung's flagships"
-  ],
   "summaryEn": "Mid-range Samsung with a 6.7-inch 120Hz AMOLED, Exynos 1580 and six years of software updates.",
   "unsure": [
    "chipset.antutu",
    "priceAmd",
    "priceAmdMax",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "xiaomi-15t",
@@ -1065,16 +969,6 @@
    "Gray",
    "Rose Gold"
   ],
-  "pros": [
-   "5500 mAh battery with 67W wired charging",
-   "144Hz 1.5K panel with very high peak brightness",
-   "Leica-tuned 50 MP main and 50 MP 2x telephoto"
-  ],
-  "cons": [
-   "No wireless charging",
-   "Dimensity 8400-Ultra is upper-mid silicon, not flagship class",
-   "No microSD slot"
-  ],
   "summaryEn": "Large-screen Xiaomi with Dimensity 8400-Ultra, Leica triple camera, 5500 mAh battery and 67W charging.",
   "unsure": [
    "chipset.antutu",
@@ -1086,7 +980,8 @@
    "priceAmd",
    "priceAmdMax",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "google-pixel-9a",
@@ -1162,23 +1057,14 @@
    "Iris",
    "Peony"
   ],
-  "pros": [
-   "Seven years of OS and security updates",
-   "5100 mAh battery, the largest in the Pixel A line",
-   "Google camera processing at a mid-range price"
-  ],
-  "cons": [
-   "Tensor G4 runs hotter and slower than rival silicon",
-   "23W wired charging is slow for a 5100 mAh cell",
-   "Gorilla Glass 3 only, and no official Armenian retail channel"
-  ],
   "summaryEn": "Google mid-ranger with Tensor G4, a 6.3-inch 120Hz OLED, 5100 mAh battery and seven years of updates.",
   "unsure": [
    "chipset.antutu",
    "priceAmd",
    "priceAmdMax",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "apple-iphone-15",
@@ -1260,22 +1146,13 @@
    "bluetooth": "5.3",
    "sim": "Nano-SIM and eSIM, dual standby"
   },
-  "pros": [
-   "A16 Bionic still outruns most Android phones at this price",
-   "Compact 6.1-inch body with IP68 rating",
-   "Long iOS support window and strong resale value"
-  ],
-  "cons": [
-   "Display stays at 60 Hz",
-   "Charging is slow at about 20 W",
-   "128 GB base storage with no card slot"
-  ],
   "summaryEn": "Compact Apple phone with a 48 MP main camera and long software support, held back by a 60 Hz screen.",
   "unsure": [
    "priceAmd",
    "priceAmdMax",
    "popularity"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-a36",
@@ -1356,22 +1233,13 @@
    "bluetooth": "5.3",
    "sim": "Dual nano-SIM plus eSIM"
   },
-  "pros": [
-   "Six years of Android and security updates",
-   "120 Hz AMOLED panel with 1200 nits peak brightness",
-   "45 W charging on a 5000 mAh battery"
-  ],
-  "cons": [
-   "Third rear camera is a low-value 5 MP macro",
-   "No microSD card slot",
-   "Performance is only mid-range for gaming"
-  ],
   "summaryEn": "Mid-range Samsung with a 120 Hz AMOLED, IP67 rating and six years of updates, on modest Snapdragon 6 Gen 3 hardware.",
   "unsure": [
    "priceAmd",
    "popularity",
    "chipset.antutu"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-a26",
@@ -1452,23 +1320,14 @@
    "bluetooth": "5.3",
    "sim": "Dual nano-SIM plus a dedicated microSD slot"
   },
-  "pros": [
-   "Six years of Android and security updates at a low price",
-   "120 Hz AMOLED display and IP67 rating",
-   "Keeps a dedicated microSD card slot"
-  ],
-  "cons": [
-   "25 W charging is slow for a 5000 mAh battery",
-   "Exynos 1380 is dated for demanding games",
-   "Peak brightness is lower than the A36"
-  ],
   "summaryEn": "Entry mid-range Samsung offering a 120 Hz AMOLED, IP67 and six years of updates, with slow charging and older silicon.",
   "unsure": [
    "connectivity.wifi",
    "priceAmd",
    "chipset.antutu",
    "body.weight"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "xiaomi-redmi-note-14-pro",
@@ -1544,23 +1403,14 @@
    "bluetooth": "5.4",
    "sim": "Dual nano-SIM"
   },
-  "pros": [
-   "1.5K AMOLED with 3000 nits peak brightness",
-   "5500 mAh battery with 45 W charging",
-   "IP68 rating, rare at this price"
-  ],
-  "cons": [
-   "Ultrawide and 2 MP macro cameras are weak",
-   "Only 3 Android version updates, shorter than Samsung's",
-   "No microSD expansion"
-  ],
   "summaryEn": "Value mid-ranger with a bright 1.5K AMOLED, large battery, IP68 and fast charging, paired with basic secondary cameras.",
   "unsure": [
    "cardSlot",
    "priceAmd",
    "chipset.antutu",
    "body.width"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "poco-x7-pro",
@@ -1635,21 +1485,12 @@
    "Obsidian Black",
    "Poco Yellow"
   ],
-  "pros": [
-   "Dimensity 8400-Ultra performance well above its price class",
-   "6000 mAh battery with 90W wired charging",
-   "IP68 rating, rare at this price"
-  ],
-  "cons": [
-   "No telephoto camera and only an 8 MP ultrawide",
-   "No microSD slot",
-   "Software support window shorter than Samsung's"
-  ],
   "summaryEn": "A performance-focused mid-ranger with a flagship-class Dimensity chip, 120Hz AMOLED, 6000 mAh battery and IP68.",
   "unsure": [
    "chipset.antutu",
    "variants"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "honor-x9c",
@@ -1725,16 +1566,6 @@
    "Titanium Black",
    "Moonlight White"
   ],
-  "pros": [
-   "6600 mAh battery in a 189 g, 8 mm body",
-   "4000 nits peak brightness on a 120Hz AMOLED panel",
-   "Rated for drop resistance and IP65M water jets"
-  ],
-  "cons": [
-   "Snapdragon 6 Gen 1 is only mid-tier for gaming",
-   "5 MP ultrawide is weak next to the 108 MP main",
-   "No microSD expansion"
-  ],
   "summaryEn": "A durability-oriented mid-ranger built around a very large battery, a bright curved AMOLED and a 108 MP main camera.",
   "unsure": [
    "chipset.antutu",
@@ -1746,7 +1577,8 @@
    "updates",
    "colors",
    "os"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-a16",
@@ -1826,23 +1658,14 @@
    "Light Green",
    "Light Gray"
   ],
-  "pros": [
-   "Six years of OS and security updates",
-   "Super AMOLED 90Hz screen at a budget price",
-   "microSD expansion up to 1.5 TB"
-  ],
-  "cons": [
-   "Exynos 1330 handles only light gaming",
-   "Video capture limited to 1080p",
-   "2 MP macro camera adds little"
-  ],
   "summaryEn": "A budget Samsung with an AMOLED 90Hz screen, 5G and an unusually long six-year update commitment.",
   "unsure": [
    "chipset.antutu",
    "chipset.name",
    "display.brightness",
    "variants"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "samsung-galaxy-a06",
@@ -1915,16 +1738,6 @@
    "Light Blue",
    "Gold"
   ],
-  "pros": [
-   "50 MP main camera at an entry-level price",
-   "5000 mAh battery with 25W charging support",
-   "microSD expansion and a 3.5 mm jack"
-  ],
-  "cons": [
-   "720p 60Hz LCD screen",
-   "Helio G85 is slow for gaming and heavy multitasking",
-   "No NFC and no 5G"
-  ],
   "summaryEn": "An entry-level Samsung with a large 720p LCD, 5000 mAh battery and a 50 MP camera, built for basic daily use.",
   "unsure": [
    "chipset.antutu",
@@ -1933,7 +1746,8 @@
    "connectivity.bluetooth",
    "updates",
    "variants"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "xiaomi-redmi-14c",
@@ -2013,16 +1827,6 @@
   "cardSlot": true,
   "os": "Android 14, HyperOS",
   "updates": "2 major Android updates (Android 15 confirmed), about 4 years of security patches",
-  "pros": [
-   "Large 6.88-inch 120Hz screen",
-   "5160 mAh battery with 3.5mm jack",
-   "Dedicated microSD slot"
-  ],
-  "cons": [
-   "720p resolution on a very large panel",
-   "Helio G81 Ultra is entry-level for gaming",
-   "18W charging is slow for the capacity"
-  ],
   "summaryEn": "Entry-level Xiaomi with a large 120Hz HD+ LCD, 5160 mAh battery, microSD slot and modest Helio G81 Ultra performance.",
   "unsure": [
    "updates",
@@ -2031,7 +1835,8 @@
    "priceAmd",
    "priceAmdMax",
    "variants[].priceAmd"
-  ]
+  ],
+  "category": "phone"
  },
  {
   "id": "realme-c75",
@@ -2104,16 +1909,6 @@
   "cardSlot": true,
   "os": "Android 14, realme UI 5.0",
   "updates": "2 major Android updates, about 3 years of security patches",
-  "pros": [
-   "5828 mAh battery with 45W charging",
-   "IP66/IP68/IP69 water and dust rating",
-   "1080p screen at this price"
-  ],
-  "cons": [
-   "Helio G92 Max is dated for gaming",
-   "90Hz LCD rather than OLED",
-   "No 5G and NFC is missing on most variants"
-  ],
   "summaryEn": "Durable budget Realme with IP69 rating, a 5828 mAh battery, 45W charging and a 1080p 90Hz LCD.",
   "unsure": [
    "chipset.antutu",
@@ -2123,6 +1918,3881 @@
    "priceAmd",
    "priceAmdMax",
    "variants[].priceAmd"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "apple-ipad-pro-11-m5",
+  "category": "tablet",
+  "brand": "Apple",
+  "name": "iPad Pro 11 M5",
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 599900,
+  "priceAmdMax": 1100000,
+  "popularity": 78,
+  "accent": "#C9CBD1",
+  "display": {
+   "size": 11,
+   "type": "Ultra Retina XDR OLED (tandem)",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Apple M5"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 599900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 721900
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 950000
+   },
+   {
+    "ram": 16,
+    "storage": 2048,
+    "priceAmd": 1100000
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "12 MP",
+   "front": "12 MP Center Stage"
+  },
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi, or Wi-Fi + Cellular",
+   "sim": "eSIM"
+  },
+  "cardSlot": false,
+  "os": "iPadOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The 11-inch iPad Pro on Apple's M5 chip, with the tandem-OLED Ultra Retina XDR display."
+ },
+ {
+  "id": "apple-ipad-pro-13-m5",
+  "category": "tablet",
+  "brand": "Apple",
+  "name": "iPad Pro 13 M5",
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 790000,
+  "priceAmdMax": 1491900,
+  "popularity": 70,
+  "accent": "#26262A",
+  "display": {
+   "size": 13,
+   "type": "Ultra Retina XDR OLED (tandem)",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Apple M5"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 790000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 900000
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 1200000
+   },
+   {
+    "ram": 16,
+    "storage": 2048,
+    "priceAmd": 1491900
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "12 MP",
+   "front": "12 MP Center Stage"
+  },
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi, or Wi-Fi + Cellular",
+   "sim": "eSIM"
+  },
+  "cardSlot": false,
+  "os": "iPadOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The 13-inch iPad Pro on M5 — the largest tandem-OLED iPad, sold up to 2 TB."
+ },
+ {
+  "id": "apple-ipad-air-11-m4",
+  "category": "tablet",
+  "brand": "Apple",
+  "name": "iPad Air 11 M4",
+  "tier": "upper-mid",
+  "released": "2026-03",
+  "priceAmd": 380000,
+  "priceAmdMax": 620000,
+  "popularity": 74,
+  "accent": "#A9C4D9",
+  "display": {
+   "size": 11,
+   "type": "Liquid Retina IPS LCD"
+  },
+  "chipset": {
+   "name": "Apple M4"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 380000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 441900
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 530000
+   },
+   {
+    "ram": 8,
+    "storage": 1024,
+    "priceAmd": 620000
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "12 MP",
+   "front": "12 MP Center Stage"
+  },
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi, or Wi-Fi + Cellular",
+   "sim": "eSIM"
+  },
+  "cardSlot": false,
+  "os": "iPadOS 26",
+  "colors": [
+   "Blue",
+   "Space Gray",
+   "Starlight",
+   "Purple"
+  ],
+  "summaryEn": "The 11-inch iPad Air on M4 — the mid-range iPad most people should buy."
+ },
+ {
+  "id": "apple-ipad-air-13-m4",
+  "category": "tablet",
+  "brand": "Apple",
+  "name": "iPad Air 13 M4",
+  "tier": "upper-mid",
+  "released": "2026-03",
+  "priceAmd": 493900,
+  "priceAmdMax": 740000,
+  "popularity": 62,
+  "accent": "#A9C4D9",
+  "display": {
+   "size": 13,
+   "type": "Liquid Retina IPS LCD"
+  },
+  "chipset": {
+   "name": "Apple M4"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 493900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 560000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 650000
+   },
+   {
+    "ram": 8,
+    "storage": 1024,
+    "priceAmd": 740000
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "12 MP",
+   "front": "12 MP Center Stage"
+  },
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi, or Wi-Fi + Cellular",
+   "sim": "eSIM"
+  },
+  "cardSlot": false,
+  "os": "iPadOS 26",
+  "colors": [
+   "Blue",
+   "Space Gray",
+   "Starlight",
+   "Purple"
+  ],
+  "summaryEn": "The 13-inch iPad Air — the big screen without the Pro's OLED price."
+ },
+ {
+  "id": "apple-ipad-a16",
+  "category": "tablet",
+  "brand": "Apple",
+  "name": "iPad A16",
+  "tier": "budget",
+  "released": "2025-03",
+  "priceAmd": 231900,
+  "priceAmdMax": 330000,
+  "popularity": 80,
+  "accent": "#C9CBD1",
+  "display": {
+   "size": 11,
+   "type": "Liquid Retina IPS LCD"
+  },
+  "chipset": {
+   "name": "Apple A16"
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 231900
+   },
+   {
+    "ram": 6,
+    "storage": 256,
+    "priceAmd": 275000
+   },
+   {
+    "ram": 6,
+    "storage": 512,
+    "priceAmd": 330000
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "12 MP",
+   "front": "12 MP Center Stage"
+  },
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi, or Wi-Fi + Cellular",
+   "sim": "eSIM"
+  },
+  "cardSlot": false,
+  "os": "iPadOS 26",
+  "colors": [
+   "Silver",
+   "Blue",
+   "Pink",
+   "Yellow"
+  ],
+  "summaryEn": "The entry iPad on the A16 chip — the cheapest way into iPadOS.",
+  "aliases": [
+   "iPad A16",
+   "iPad 11 A16"
   ]
+ },
+ {
+  "id": "apple-airpods-pro-3",
+  "category": "earbuds",
+  "brand": "Apple",
+  "name": "AirPods Pro 3",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 119900,
+  "priceAmdMax": 119900,
+  "popularity": 92,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "In-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "ip": "IP57"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "Wireless and USB-C charging case"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 119900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "Apple's flagship earbuds — active noise cancellation, transparency mode and a USB-C case."
+ },
+ {
+  "id": "apple-airpods-pro-2",
+  "category": "earbuds",
+  "brand": "Apple",
+  "name": "AirPods Pro 2",
+  "tier": "upper-mid",
+  "released": "2022-09",
+  "priceAmd": 147900,
+  "priceAmdMax": 147900,
+  "popularity": 70,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "In-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "Wireless and USB-C charging case"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 147900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "The previous Pro generation, still sold alongside the Pro 3."
+ },
+ {
+  "id": "apple-airpods-4",
+  "category": "earbuds",
+  "brand": "Apple",
+  "name": "AirPods 4",
+  "tier": "mid",
+  "released": "2024-09",
+  "priceAmd": 59900,
+  "priceAmdMax": 59900,
+  "popularity": 84,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "Open-fit, no noise cancellation",
+   "anc": false,
+   "transparency": false
+  },
+  "battery": {},
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "USB-C charging case"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 59900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "The open-fit AirPods without noise cancellation — the cheapest AirPods on sale.",
+  "aliases": [
+   "Apple AirPods Gen 4",
+   "AirPods Gen 4"
+  ]
+ },
+ {
+  "id": "apple-airpods-4-anc",
+  "category": "earbuds",
+  "brand": "Apple",
+  "name": "AirPods 4 with Active Noise Cancellation",
+  "tier": "upper-mid",
+  "released": "2024-09",
+  "priceAmd": 85900,
+  "priceAmdMax": 85900,
+  "popularity": 76,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "Open-fit, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "Wireless and USB-C charging case"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 85900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "The same open-fit shape as AirPods 4, with noise cancellation added.",
+  "aliases": [
+   "AirPods 4 with Active Noise Cancellation",
+   "AirPods 4 ANC"
+  ]
+ },
+ {
+  "id": "apple-airpods-max-2",
+  "category": "headphones",
+  "brand": "Apple",
+  "name": "AirPods Max 2",
+  "tier": "flagship",
+  "released": "2024-09",
+  "priceAmd": 318900,
+  "priceAmdMax": 324900,
+  "popularity": 55,
+  "accent": "#1F2430",
+  "audio": {
+   "type": "Over-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "materials": "Aluminium ear cups, stainless steel headband"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wireless": "USB-C charging"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 318900
+   }
+  ],
+  "colors": [
+   "Midnight",
+   "Blue",
+   "Starlight",
+   "Purple",
+   "Orange"
+  ],
+  "summaryEn": "Apple's over-ear headphones, now charging over USB-C."
+ },
+ {
+  "id": "apple-watch-series-11",
+  "category": "watch",
+  "brand": "Apple",
+  "name": "Apple Watch Series 11",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 188900,
+  "priceAmdMax": 260000,
+  "popularity": 88,
+  "accent": "#26262A",
+  "display": {
+   "type": "LTPO OLED Always-On"
+  },
+  "body": {
+   "materials": "Aluminium or titanium case",
+   "ip": "IP6X, 50 m water resistant"
+  },
+  "battery": {},
+  "connectivity": {
+   "network": "GPS, or GPS + Cellular",
+   "bluetooth": "5.3"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 42,
+    "priceAmd": 188900
+   },
+   {
+    "ram": null,
+    "storage": 46,
+    "priceAmd": 205000
+   }
+  ],
+  "os": "watchOS 26",
+  "colors": [
+   "Jet Black",
+   "Space Grey",
+   "Silver",
+   "Rose Gold"
+  ],
+  "summaryEn": "The mainstream Apple Watch, in 42 mm and 46 mm cases.",
+  "variantUnit": "mm"
+ },
+ {
+  "id": "apple-watch-ultra-3",
+  "category": "watch",
+  "brand": "Apple",
+  "name": "Apple Watch Ultra 3",
+  "tier": "flagship",
+  "released": "2025-09",
+  "priceAmd": 496900,
+  "priceAmdMax": 520000,
+  "popularity": 60,
+  "accent": "#8E8E93",
+  "display": {
+   "type": "LTPO OLED Always-On"
+  },
+  "body": {
+   "materials": "Titanium case",
+   "ip": "100 m water resistant, EN13319 dive rating"
+  },
+  "battery": {},
+  "connectivity": {
+   "network": "GPS + Cellular, satellite messaging",
+   "bluetooth": "5.3"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 49,
+    "priceAmd": 496900
+   }
+  ],
+  "os": "watchOS 26",
+  "colors": [
+   "Black Titanium",
+   "Natural Titanium"
+  ],
+  "summaryEn": "The 49 mm titanium Ultra — the biggest battery and the brightest screen Apple puts on a watch.",
+  "variantUnit": "mm"
+ },
+ {
+  "id": "apple-watch-se-3",
+  "category": "watch",
+  "brand": "Apple",
+  "name": "Apple Watch SE Gen.3",
+  "tier": "mid",
+  "released": "2025-09",
+  "priceAmd": 133900,
+  "priceAmdMax": 160000,
+  "popularity": 82,
+  "accent": "#1F2430",
+  "display": {
+   "type": "LTPO OLED"
+  },
+  "body": {
+   "materials": "Aluminium case",
+   "ip": "IP6X, 50 m water resistant"
+  },
+  "battery": {},
+  "connectivity": {
+   "network": "GPS, or GPS + Cellular",
+   "bluetooth": "5.3"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 40,
+    "priceAmd": 133900
+   },
+   {
+    "ram": null,
+    "storage": 44,
+    "priceAmd": 145000
+   }
+  ],
+  "os": "watchOS 26",
+  "colors": [
+   "Midnight",
+   "Starlight"
+  ],
+  "summaryEn": "The cheap Apple Watch, in 40 mm and 44 mm.",
+  "variantUnit": "mm",
+  "aliases": [
+   "Apple Watch SE GPS Gen3",
+   "Apple Watch SE Gen3",
+   "Apple Watch SE GPS Gen.3",
+   "Apple Watch SE 3"
+  ]
+ },
+ {
+  "id": "apple-macbook-neo-13",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Neo 13",
+  "aliases": [
+   "MacBook Neo 13-inch",
+   "MacBook Neo"
+  ],
+  "tier": "budget",
+  "released": "2026-02",
+  "priceAmd": 346900,
+  "priceAmdMax": 395900,
+  "popularity": 86,
+  "accent": "#E4CFA8",
+  "display": {
+   "size": 13,
+   "type": "Liquid Retina IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple A18 Pro",
+   "cpu": "6-core"
+  },
+  "graphics": {
+   "name": "Apple A18 Pro 5-core GPU",
+   "cores": 5,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 346900
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 395900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Blush",
+   "Citrus",
+   "Indigo"
+  ],
+  "summaryEn": "The cheapest MacBook, on the A18 Pro chip rather than an M-series."
+ },
+ {
+  "id": "apple-macbook-air-13-m5",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Air 13 M5",
+  "aliases": [
+   "MacBook Air 13.6-inch M5",
+   "MacBook Air 13.6 M5",
+   "MacBook Air 136 M5"
+  ],
+  "tier": "upper-mid",
+  "released": "2026-03",
+  "priceAmd": 655900,
+  "priceAmdMax": 910900,
+  "popularity": 94,
+  "accent": "#A9C4D9",
+  "display": {
+   "size": 13.6,
+   "type": "Liquid Retina IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M5 8- or 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 655900
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 810900
+   },
+   {
+    "ram": 24,
+    "storage": 1024,
+    "priceAmd": 910900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Midnight",
+   "Starlight",
+   "Sky Blue"
+  ],
+  "summaryEn": "The 13-inch Air on M5 — the laptop most people should buy."
+ },
+ {
+  "id": "apple-macbook-air-15-m5",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Air 15 M5",
+  "aliases": [
+   "MacBook Air 15.3-inch M5",
+   "MacBook Air 15.3 M5",
+   "MacBook Air 153 M5"
+  ],
+  "tier": "upper-mid",
+  "released": "2026-03",
+  "priceAmd": 763900,
+  "priceAmdMax": 910900,
+  "popularity": 80,
+  "accent": "#A9C4D9",
+  "display": {
+   "size": 15.3,
+   "type": "Liquid Retina IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M5 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 763900
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 910900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Midnight",
+   "Starlight",
+   "Sky Blue"
+  ],
+  "summaryEn": "The big-screen Air — the same M5, 15.3 inches instead of 13.6."
+ },
+ {
+  "id": "apple-macbook-air-15-m4",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Air 15 M4",
+  "aliases": [
+   "MacBook Air 15.3-inch M4",
+   "MacBook Air 15.3 M4",
+   "MacBook Air 153 M4"
+  ],
+  "tier": "mid",
+  "released": "2025-03",
+  "priceAmd": 717900,
+  "priceAmdMax": 819900,
+  "popularity": 66,
+  "accent": "#E8E3DA",
+  "display": {
+   "size": 15.3,
+   "type": "Liquid Retina IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M4",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M4 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 717900
+   },
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 819900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Midnight",
+   "Starlight"
+  ],
+  "summaryEn": "Last year's 15-inch Air, still stocked and cheaper than the M5."
+ },
+ {
+  "id": "apple-macbook-pro-14-m5",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 14 M5",
+  "aliases": [
+   "MacBook Pro 14.2-inch M5",
+   "MacBook Pro 14.2 M5",
+   "MacBook Pro 142 M5"
+  ],
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 1021900,
+  "priceAmdMax": 1224900,
+  "popularity": 82,
+  "accent": "#26262A",
+  "display": {
+   "size": 14.2,
+   "type": "Liquid Retina XDR mini-LED",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M5 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 1021900
+   },
+   {
+    "ram": 24,
+    "storage": 1024,
+    "priceAmd": 1123900
+   },
+   {
+    "ram": 32,
+    "storage": 1024,
+    "priceAmd": 1224900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": true,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The entry 14-inch Pro — XDR screen and 120 Hz on the base M5."
+ },
+ {
+  "id": "apple-macbook-pro-14-m5-pro",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 14 M5 Pro",
+  "aliases": [
+   "MacBook Pro 14.2-inch M5 Pro",
+   "MacBook Pro 14.2 M5 Pro",
+   "MacBook Pro 142 M5 Pro"
+  ],
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 1274900,
+  "priceAmdMax": 1628900,
+  "popularity": 72,
+  "accent": "#26262A",
+  "display": {
+   "size": 14.2,
+   "type": "Liquid Retina XDR mini-LED",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5 Pro",
+   "cpu": "15- or 18-core"
+  },
+  "graphics": {
+   "name": "Apple M5 Pro 16- or 20-core GPU",
+   "cores": 20,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 24,
+    "storage": 1024,
+    "priceAmd": 1274900
+   },
+   {
+    "ram": 24,
+    "storage": 2048,
+    "priceAmd": 1527900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": true,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The 14-inch Pro with the M5 Pro — more CPU and GPU cores for sustained work."
+ },
+ {
+  "id": "apple-macbook-pro-14-m5-max",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 14 M5 Max",
+  "aliases": [
+   "MacBook Pro 14.2-inch M5 Max",
+   "MacBook Pro 14.2 M5 Max",
+   "MacBook Pro 142 M5 Max"
+  ],
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 2083900,
+  "priceAmdMax": 2083900,
+  "popularity": 48,
+  "accent": "#26262A",
+  "display": {
+   "size": 14.2,
+   "type": "Liquid Retina XDR mini-LED",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5 Max",
+   "cpu": "18-core"
+  },
+  "graphics": {
+   "name": "Apple M5 Max 32-core GPU",
+   "cores": 32,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 36,
+    "storage": 2048,
+    "priceAmd": 2083900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": true,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The most powerful 14-inch Mac laptop — M5 Max with a 32-core GPU."
+ },
+ {
+  "id": "apple-macbook-pro-16-m5-pro",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 16 M5 Pro",
+  "aliases": [
+   "MacBook Pro 16.2-inch M5 Pro",
+   "MacBook Pro 16.2 M5 Pro",
+   "MacBook Pro 162 M5 Pro"
+  ],
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 1524900,
+  "priceAmdMax": 1826900,
+  "popularity": 64,
+  "accent": "#26262A",
+  "display": {
+   "size": 16.2,
+   "type": "Liquid Retina XDR mini-LED",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5 Pro",
+   "cpu": "18-core"
+  },
+  "graphics": {
+   "name": "Apple M5 Pro 20-core GPU",
+   "cores": 20,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 24,
+    "storage": 1024,
+    "priceAmd": 1524900
+   },
+   {
+    "ram": 48,
+    "storage": 1024,
+    "priceAmd": 1826900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": true,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The 16-inch Pro on M5 Pro — the big screen without Max pricing."
+ },
+ {
+  "id": "apple-macbook-pro-16-m5-max",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 16 M5 Max",
+  "aliases": [
+   "MacBook Pro 16.2-inch M5 Max",
+   "MacBook Pro 16.2 M5 Max",
+   "MacBook Pro 162 M5 Max"
+  ],
+  "tier": "flagship",
+  "released": "2025-10",
+  "priceAmd": 2230900,
+  "priceAmdMax": 2533900,
+  "popularity": 52,
+  "accent": "#26262A",
+  "display": {
+   "size": 16.2,
+   "type": "Liquid Retina XDR mini-LED",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M5 Max",
+   "cpu": "18-core"
+  },
+  "graphics": {
+   "name": "Apple M5 Max 32- or 40-core GPU",
+   "cores": 40,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 36,
+    "storage": 2048,
+    "priceAmd": 2230900
+   },
+   {
+    "ram": 48,
+    "storage": 2048,
+    "priceAmd": 2533900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "cardSlot": true,
+  "os": "macOS 26",
+  "colors": [
+   "Silver",
+   "Space Black"
+  ],
+  "summaryEn": "The fastest MacBook sold in Armenia — 16-inch M5 Max with a 40-core GPU."
+ },
+ {
+  "id": "samsung-galaxy-tab-a11-plus",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab A11+",
+  "aliases": [
+   "Samsung Galaxy Tab A11+",
+   "Galaxy Tab A11 Plus"
+  ],
+  "tier": "budget",
+  "released": "2025-09",
+  "priceAmd": 120900,
+  "priceAmdMax": 163900,
+  "popularity": 72,
+  "accent": "#C9CBD1",
+  "display": {
+   "size": 11,
+   "type": "TFT LCD",
+   "refresh": 90,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon 6 Gen 3"
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 120900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 141900
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi, or 5G",
+   "wifi": "Wi-Fi 6"
+  },
+  "cardSlot": true,
+  "os": "Android 15, One UI 7",
+  "colors": [
+   "Silver",
+   "Gray"
+  ],
+  "summaryEn": "Samsung's 11-inch budget tablet, sold in Wi-Fi and 5G versions."
+ },
+ {
+  "id": "samsung-galaxy-tab-a11",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab A11",
+  "aliases": [
+   "Samsung Galaxy Tab A11"
+  ],
+  "tier": "budget",
+  "released": "2025-09",
+  "priceAmd": 58900,
+  "priceAmdMax": 99900,
+  "popularity": 76,
+  "accent": "#C9CBD1",
+  "display": {
+   "size": 8.7,
+   "type": "TFT LCD",
+   "touch": true
+  },
+  "chipset": {
+   "name": "MediaTek Helio G99"
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 58900
+   },
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 99900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "network": "Wi-Fi, or LTE",
+   "wifi": "Wi-Fi 5"
+  },
+  "cardSlot": true,
+  "os": "Android 15, One UI 7",
+  "colors": [
+   "Silver",
+   "Gray"
+  ],
+  "summaryEn": "The cheapest Galaxy Tab — 8.7 inches, Wi-Fi or LTE."
+ },
+ {
+  "id": "xiaomi-pad-7",
+  "category": "tablet",
+  "brand": "Xiaomi",
+  "name": "Xiaomi Pad 7",
+  "aliases": [
+   "Xiaomi Pad 7"
+  ],
+  "tier": "mid",
+  "released": "2025-01",
+  "priceAmd": 149900,
+  "priceAmdMax": 189900,
+  "popularity": 70,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 11.2,
+   "type": "IPS LCD",
+   "refresh": 144,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon 7+ Gen 3"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 149900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 189900
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi",
+   "wifi": "Wi-Fi 6"
+  },
+  "cardSlot": false,
+  "os": "Android 15, HyperOS 2",
+  "colors": [
+   "Gray",
+   "Blue",
+   "Green"
+  ],
+  "summaryEn": "An 11.2-inch 144 Hz tablet at a mid-range price."
+ },
+ {
+  "id": "xiaomi-pad-7-pro",
+  "category": "tablet",
+  "brand": "Xiaomi",
+  "name": "Xiaomi Pad 7 Pro",
+  "aliases": [
+   "Xiaomi Pad 7 Pro"
+  ],
+  "tier": "upper-mid",
+  "released": "2025-01",
+  "priceAmd": 219900,
+  "priceAmdMax": 259900,
+  "popularity": 58,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 11.2,
+   "type": "IPS LCD",
+   "refresh": 144,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon 8s Gen 3"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 219900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 259900
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "network": "Wi-Fi",
+   "wifi": "Wi-Fi 7"
+  },
+  "cardSlot": false,
+  "os": "Android 15, HyperOS 2",
+  "colors": [
+   "Gray",
+   "Green"
+  ],
+  "summaryEn": "The Pad 7 with a faster chip and Wi-Fi 7."
+ },
+ {
+  "id": "xiaomi-redmi-pad-2",
+  "category": "tablet",
+  "brand": "Xiaomi",
+  "name": "Redmi Pad 2",
+  "aliases": [
+   "Xiaomi Redmi Pad 2",
+   "Redmi Pad 2"
+  ],
+  "tier": "budget",
+  "released": "2025-06",
+  "priceAmd": 89900,
+  "priceAmdMax": 109900,
+  "popularity": 74,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 11,
+   "type": "IPS LCD",
+   "refresh": 90,
+   "touch": true
+  },
+  "chipset": {
+   "name": "MediaTek Helio G100 Ultra"
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 89900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 109900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "network": "Wi-Fi",
+   "wifi": "Wi-Fi 5"
+  },
+  "cardSlot": true,
+  "os": "Android 15, HyperOS 2",
+  "colors": [
+   "Gray",
+   "Green",
+   "Blue"
+  ],
+  "summaryEn": "Redmi's 11-inch budget tablet with a microSD slot."
+ },
+ {
+  "id": "samsung-galaxy-watch-ultra-2",
+  "category": "watch",
+  "brand": "Samsung",
+  "name": "Galaxy Watch Ultra 2",
+  "aliases": [
+   "Samsung Galaxy Watch Ultra 2",
+   "Galaxy Watch Ultra 2 2026"
+  ],
+  "tier": "flagship",
+  "released": "2026-01",
+  "priceAmd": 289900,
+  "priceAmdMax": 289900,
+  "popularity": 54,
+  "accent": "#8E8E93",
+  "display": {
+   "type": "Super AMOLED Always-On"
+  },
+  "body": {
+   "materials": "Titanium case",
+   "ip": "IP68, 10 ATM, MIL-STD-810H"
+  },
+  "battery": {},
+  "variantUnit": "mm",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 47,
+    "priceAmd": 289900
+   }
+  ],
+  "connectivity": {
+   "network": "GPS + LTE",
+   "bluetooth": "5.3"
+  },
+  "os": "Wear OS 6, One UI Watch",
+  "colors": [
+   "Titanium Gray",
+   "Titanium White"
+  ],
+  "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance."
+ },
+ {
+  "id": "samsung-galaxy-watch-8",
+  "category": "watch",
+  "brand": "Samsung",
+  "name": "Galaxy Watch 8",
+  "aliases": [
+   "Samsung Galaxy Watch 8"
+  ],
+  "tier": "upper-mid",
+  "released": "2025-07",
+  "priceAmd": 139900,
+  "priceAmdMax": 169900,
+  "popularity": 78,
+  "accent": "#26262A",
+  "display": {
+   "type": "Super AMOLED Always-On"
+  },
+  "body": {
+   "materials": "Aluminium case",
+   "ip": "IP68, 5 ATM"
+  },
+  "battery": {},
+  "variantUnit": "mm",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 40,
+    "priceAmd": 139900
+   },
+   {
+    "ram": null,
+    "storage": 44,
+    "priceAmd": 169900
+   }
+  ],
+  "connectivity": {
+   "network": "GPS, or GPS + LTE",
+   "bluetooth": "5.3"
+  },
+  "os": "Wear OS 6, One UI Watch",
+  "colors": [
+   "Graphite",
+   "Silver"
+  ],
+  "summaryEn": "The mainstream Galaxy Watch, in 40 mm and 44 mm."
+ },
+ {
+  "id": "samsung-galaxy-watch-8-classic",
+  "category": "watch",
+  "brand": "Samsung",
+  "name": "Galaxy Watch 8 Classic",
+  "aliases": [
+   "Samsung Galaxy Watch 8 Classic"
+  ],
+  "tier": "flagship",
+  "released": "2025-07",
+  "priceAmd": 209900,
+  "priceAmdMax": 209900,
+  "popularity": 60,
+  "accent": "#26262A",
+  "display": {
+   "type": "Super AMOLED Always-On"
+  },
+  "body": {
+   "materials": "Stainless steel case with rotating bezel",
+   "ip": "IP68, 5 ATM"
+  },
+  "battery": {},
+  "variantUnit": "mm",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 46,
+    "priceAmd": 209900
+   }
+  ],
+  "connectivity": {
+   "network": "GPS, or GPS + LTE",
+   "bluetooth": "5.3"
+  },
+  "os": "Wear OS 6, One UI Watch",
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "The Watch 8 with a steel case and the rotating bezel."
+ },
+ {
+  "id": "xiaomi-smart-band-10",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Xiaomi Smart Band 10",
+  "aliases": [
+   "Xiaomi Smart Band 10"
+  ],
+  "tier": "budget",
+  "released": "2025-06",
+  "priceAmd": 24900,
+  "priceAmdMax": 24900,
+  "popularity": 88,
+  "accent": "#1B1B1F",
+  "display": {
+   "type": "AMOLED"
+  },
+  "body": {
+   "ip": "5 ATM"
+  },
+  "battery": {},
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 24900
+   }
+  ],
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "colors": [
+   "Black",
+   "Silver"
+  ],
+  "summaryEn": "Xiaomi's fitness band — the cheapest way onto your wrist."
+ },
+ {
+  "id": "xiaomi-redmi-watch-5-lite",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Watch 5 Lite",
+  "aliases": [
+   "Xiaomi Redmi Watch 5 Lite",
+   "Redmi Watch 5 Lite"
+  ],
+  "tier": "budget",
+  "released": "2025-02",
+  "priceAmd": 34900,
+  "priceAmdMax": 34900,
+  "popularity": 70,
+  "accent": "#1B1B1F",
+  "display": {
+   "type": "AMOLED"
+  },
+  "body": {
+   "ip": "5 ATM"
+  },
+  "battery": {},
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 34900
+   }
+  ],
+  "connectivity": {
+   "network": "Built-in GPS",
+   "bluetooth": "5.3"
+  },
+  "colors": [
+   "Black",
+   "Silver"
+  ],
+  "summaryEn": "A budget smartwatch with built-in GPS."
+ },
+ {
+  "id": "samsung-galaxy-buds-4",
+  "category": "earbuds",
+  "brand": "Samsung",
+  "name": "Galaxy Buds 4",
+  "aliases": [
+   "Samsung Galaxy Buds 4",
+   "Galaxy Buds 4 Headphone"
+  ],
+  "tier": "mid",
+  "released": "2025-07",
+  "priceAmd": 52900,
+  "priceAmdMax": 52900,
+  "popularity": 82,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "Open-fit, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "ip": "IP57"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 52900
+   }
+  ],
+  "connectivity": {
+   "bluetooth": "5.4",
+   "wireless": "USB-C charging case"
+  },
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "summaryEn": "Samsung's open-fit earbuds with noise cancellation."
+ },
+ {
+  "id": "samsung-galaxy-buds-4-pro",
+  "category": "earbuds",
+  "brand": "Samsung",
+  "name": "Galaxy Buds 4 Pro",
+  "aliases": [
+   "Samsung Galaxy Buds 4 Pro",
+   "Galaxy Buds 4 Pro Headphone"
+  ],
+  "tier": "flagship",
+  "released": "2025-07",
+  "priceAmd": 72900,
+  "priceAmdMax": 72900,
+  "popularity": 76,
+  "accent": "#26262A",
+  "audio": {
+   "type": "In-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "ip": "IP57"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 72900
+   }
+  ],
+  "connectivity": {
+   "bluetooth": "5.4",
+   "wireless": "Wireless and USB-C charging case"
+  },
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "summaryEn": "Samsung's flagship earbuds — in-ear, with the strongest noise cancellation."
+ },
+ {
+  "id": "samsung-galaxy-buds-core",
+  "category": "earbuds",
+  "brand": "Samsung",
+  "name": "Galaxy Buds Core",
+  "aliases": [
+   "Samsung Galaxy Buds Core"
+  ],
+  "tier": "budget",
+  "released": "2025-04",
+  "priceAmd": 27900,
+  "priceAmdMax": 27900,
+  "popularity": 80,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "In-ear, active noise cancellation",
+   "anc": true,
+   "transparency": false
+  },
+  "battery": {},
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 27900
+   }
+  ],
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "USB-C charging case"
+  },
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "The cheap Galaxy Buds, with noise cancellation kept in."
+ },
+ {
+  "id": "xiaomi-buds-6",
+  "category": "earbuds",
+  "brand": "Xiaomi",
+  "name": "Xiaomi Buds 6",
+  "aliases": [
+   "Xiaomi Buds 6"
+  ],
+  "tier": "mid",
+  "released": "2025-09",
+  "priceAmd": 39900,
+  "priceAmdMax": 39900,
+  "popularity": 72,
+  "accent": "#EDEDEA",
+  "audio": {
+   "type": "In-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true
+  },
+  "battery": {},
+  "body": {
+   "ip": "IP54"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 39900
+   }
+  ],
+  "connectivity": {
+   "bluetooth": "5.4",
+   "wireless": "USB-C charging case"
+  },
+  "colors": [
+   "White",
+   "Black"
+  ],
+  "summaryEn": "Xiaomi's mid-range earbuds with noise cancellation."
+ },
+ {
+  "id": "xiaomi-buds-6-lite",
+  "category": "earbuds",
+  "brand": "Xiaomi",
+  "name": "Xiaomi Buds 6 Lite",
+  "aliases": [
+   "Xiaomi Buds 6 Lite"
+  ],
+  "tier": "budget",
+  "released": "2025-09",
+  "priceAmd": 19900,
+  "priceAmdMax": 19900,
+  "popularity": 78,
+  "accent": "#1B1B1F",
+  "audio": {
+   "type": "In-ear, active noise cancellation",
+   "anc": true,
+   "transparency": false
+  },
+  "battery": {},
+  "body": {
+   "ip": "IP54"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 19900
+   }
+  ],
+  "connectivity": {
+   "bluetooth": "5.4",
+   "wireless": "USB-C charging case"
+  },
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "The cheap Buds 6, noise cancellation included."
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IRH8",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 15IRH8",
+   "IdeaPad Slim 3 15IRH8"
+  ],
+  "tier": "mid",
+  "released": "2025-01",
+  "priceAmd": 274900,
+  "priceAmdMax": 369900,
+  "popularity": 68,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 15.6,
+   "type": "IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13420H / i7-13620H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 274900
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 369900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Gray"
+  ],
+  "summaryEn": "A 15.6-inch Windows laptop with a 13th-gen Core chip."
+ },
+ {
+  "id": "lenovo-ideapad-5-2in1-16",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 2-in-1 16IAL10",
+  "aliases": [
+   "Lenovo IdeaPad 5 2-in-1 16IAL10",
+   "IdeaPad 5 2-in-1 16IAL10"
+  ],
+  "tier": "upper-mid",
+  "released": "2025-06",
+  "priceAmd": 499900,
+  "priceAmdMax": 499900,
+  "popularity": 56,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 16,
+   "type": "IPS LCD",
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 499900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Gray"
+  ],
+  "summaryEn": "A 16-inch convertible with a touchscreen that folds back into a tablet."
+ },
+ {
+  "id": "hp-15-fd2747nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "HP 15-FD2747NR",
+  "aliases": [
+   "HP PC Notebook 15-FD2747NR",
+   "HP 15-FD2747NR"
+  ],
+  "tier": "mid",
+  "released": "2025-05",
+  "priceAmd": 389900,
+  "priceAmdMax": 389900,
+  "popularity": 58,
+  "accent": "#C9CBD1",
+  "display": {
+   "size": 15.6,
+   "type": "IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 389900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Silver"
+  ],
+  "summaryEn": "A 15.6-inch HP on a Core Ultra chip with 16 GB of RAM."
+ },
+ {
+  "id": "asus-zenbook-14-um3402ya-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook 14 UM3402YA OLED",
+  "aliases": [
+   "Asus ZenBook UM3402YA-WS51T OLED (Touch)",
+   "ZenBook UM3402YA-WS51T OLED",
+   "asus-zenbook-um3402ya-ws51t-oled-touch"
+  ],
+  "tier": "upper-mid",
+  "released": "2025-02",
+  "priceAmd": 355000,
+  "priceAmdMax": 355000,
+  "popularity": 72,
+  "accent": "#3A3D42",
+  "display": {
+   "size": 14,
+   "type": "2.8K OLED",
+   "refresh": 90,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7530U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 355000
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Gray"
+  ],
+  "summaryEn": "A 14-inch ZenBook with a 2.8K OLED touchscreen — the only touch laptop in this catalogue."
+ },
+ {
+  "id": "asus-vivobook-15-x1505va-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 15 X1505VA OLED",
+  "aliases": [
+   "Asus VivoBook X1505VA-MA144 OLED",
+   "VivoBook X1505VA-MA144 OLED",
+   "asus-vivobook-x1505va-ma144-oled"
+  ],
+  "tier": "mid",
+  "released": "2025-03",
+  "priceAmd": 399600,
+  "priceAmdMax": 399600,
+  "popularity": 70,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 15.6,
+   "type": "Full HD OLED",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13500H"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399600
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Silver"
+  ],
+  "summaryEn": "A 15.6-inch VivoBook with an OLED panel instead of the usual LCD."
+ },
+ {
+  "id": "asus-vivobook-pro-16-k6602vv-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook Pro 16 K6602VV OLED",
+  "aliases": [
+   "Asus VivoBook Pro K6602VV-ES94 OLED",
+   "VivoBook Pro K6602VV-ES94 OLED",
+   "asus-vivobook-pro-k6602vv-es94-oled"
+  ],
+  "tier": "flagship",
+  "released": "2025-04",
+  "priceAmd": 672000,
+  "priceAmdMax": 672000,
+  "popularity": 58,
+  "accent": "#26262A",
+  "display": {
+   "size": 16,
+   "type": "3.2K OLED",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4060",
+   "type": "discrete"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 672000
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "A 16-inch 3.2K OLED creator laptop with a discrete RTX 4060."
+ },
+ {
+  "id": "asus-vivobook-go-15-e1504fa-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook Go 15 E1504FA OLED",
+  "aliases": [
+   "Asus VivoBook E1504FA-L1834 OLED",
+   "VivoBook E1504FA-L1834 OLED",
+   "asus-vivobook-e1504fa-l1834-oled"
+  ],
+  "tier": "budget",
+  "released": "2025-02",
+  "priceAmd": 277000,
+  "priceAmdMax": 277000,
+  "popularity": 76,
+  "accent": "#8E8E93",
+  "display": {
+   "size": 15.6,
+   "type": "Full HD OLED",
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7520U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 277000
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Silver",
+   "Black"
+  ],
+  "summaryEn": "The cheapest OLED laptop here — a 15.6-inch VivoBook Go."
+ },
+ {
+  "id": "apple-mac-mini-m4",
+  "category": "desktop",
+  "brand": "Apple",
+  "name": "Mac mini M4",
+  "aliases": [
+   "Mac mini Apple M4",
+   "Mac mini M4 10C CPU 10C GPU"
+  ],
+  "tier": "midrange",
+  "released": "2024-11",
+  "priceAmd": 314900,
+  "priceAmdMax": 612900,
+  "popularity": 66,
+  "accent": "#D9DADE",
+  "display": {},
+  "chipset": {
+   "name": "Apple M4",
+   "cpu": "10-core"
+  },
+  "graphics": {
+   "name": "Apple M4 10-core GPU",
+   "cores": 10,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 314900
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 511900
+   },
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 612900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody",
+   "dimensions": "127 x 127 x 50 mm",
+   "weight": 670
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3",
+   "ports": "2x Thunderbolt 4 front, 3x Thunderbolt 4 rear, HDMI, Gigabit Ethernet"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Silver"
+  ],
+  "summaryEn": "Apple's smallest desktop — a full M4 machine in a 12.7 cm box, screen and keyboard not included."
+ },
+ {
+  "id": "apple-mac-mini-m4-pro",
+  "category": "desktop",
+  "brand": "Apple",
+  "name": "Mac mini M4 Pro",
+  "aliases": [
+   "Mac mini Apple M4 Pro",
+   "Mac mini M4 Pro 12C CPU 16C GPU"
+  ],
+  "tier": "flagship",
+  "released": "2024-11",
+  "priceAmd": 813900,
+  "priceAmdMax": 813900,
+  "popularity": 61,
+  "accent": "#D9DADE",
+  "display": {},
+  "chipset": {
+   "name": "Apple M4 Pro",
+   "cpu": "12- or 14-core"
+  },
+  "graphics": {
+   "name": "Apple M4 Pro 16- or 20-core GPU",
+   "cores": 16,
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 813900
+   }
+  ],
+  "body": {
+   "materials": "Aluminium unibody",
+   "dimensions": "127 x 127 x 50 mm",
+   "weight": 730
+  },
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3",
+   "ports": "3x Thunderbolt 5 rear, 2x USB-C front, HDMI, 10 Gigabit Ethernet option"
+  },
+  "cardSlot": false,
+  "os": "macOS 26",
+  "colors": [
+   "Silver"
+  ],
+  "summaryEn": "The same small box with the M4 Pro and Thunderbolt 5 — the cheapest way into serious Apple silicon."
+ },
+ {
+  "id": "samsung-galaxy-s26",
+  "brand": "Samsung",
+  "name": "Galaxy S26",
+  "tier": "flagship",
+  "released": "2026-02",
+  "priceAmd": 299000,
+  "priceAmdMax": 399000,
+  "popularity": 86,
+  "accent": "#2b2b30",
+  "display": {
+   "size": 6.3,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2340x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2600",
+   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 299000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "10 MP, f/2.4, 3x optical zoom",
+   "front": "12 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4300
+  },
+  "body": {
+   "height": 149.6,
+   "width": 71.7,
+   "thickness": 7.2,
+   "weight": 167,
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Black",
+   "White",
+   "Cobalt Violet"
+  ],
+  "summaryEn": "The compact S26 on Samsung's own Exynos 2600, with a 6.3-inch 120Hz panel and seven years of updates.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "body.ip",
+   "released"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-s26-plus",
+  "brand": "Samsung",
+  "name": "Galaxy S26+",
+  "tier": "flagship",
+  "released": "2026-02",
+  "priceAmd": 418900,
+  "priceAmdMax": 456000,
+  "popularity": 80,
+  "accent": "#2b2b30",
+  "display": {
+   "size": 6.7,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "3120x1440",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2600",
+   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 418900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 456000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "10 MP, f/2.4, 3x optical zoom",
+   "front": "12 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4900
+  },
+  "body": {
+   "height": 158.4,
+   "width": 75.8,
+   "thickness": 7.3,
+   "weight": 190,
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Black",
+   "White",
+   "Cobalt Violet"
+  ],
+  "summaryEn": "The S26 in a 6.7-inch Quad HD+ body, with a 4900 mAh battery instead of the base model's 4300.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "body.ip",
+   "released"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-s26-ultra",
+  "brand": "Samsung",
+  "name": "Galaxy S26 Ultra",
+  "tier": "flagship",
+  "released": "2026-02",
+  "priceAmd": 379000,
+  "priceAmdMax": 629000,
+  "popularity": 92,
+  "accent": "#3b3b40",
+  "display": {
+   "size": 6.9,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "3120x1440",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 379000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 499000
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 629000
+   }
+  ],
+  "camera": {
+   "modules": 4,
+   "main": "200 MP, f/1.4, OIS",
+   "ultrawide": "50 MP, f/1.9",
+   "telephoto": "50 MP, f/2.9, 5x optical zoom plus 10 MP, f/2.4, 3x optical zoom",
+   "front": "12 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 163.6,
+   "width": 78.1,
+   "thickness": 7.9,
+   "weight": 214,
+   "materials": "Titanium frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Black",
+   "Blue",
+   "Cobalt Violet"
+  ],
+  "summaryEn": "Samsung's 2026 flagship: a 200 MP f/1.4 main camera, two telephotos and a 6.9-inch Quad HD+ panel.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "os",
+   "body.ip",
+   "released"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-s26-fe",
+  "brand": "Samsung",
+  "name": "Galaxy S26 FE",
+  "tier": "midrange",
+  "released": "2026-01",
+  "priceAmd": 289000,
+  "priceAmdMax": 336900,
+  "popularity": 72,
+  "accent": "#8fae86",
+  "display": {
+   "size": 6.7,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2340x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2500",
+   "cpu": "Deca-core (3.3 GHz + 2.74 GHz + 2.36 GHz + 1.8 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 289000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 336900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "8 MP, f/2.4, 3x optical zoom",
+   "front": "12 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4900
+  },
+  "body": {
+   "height": 161.6,
+   "width": 76.9,
+   "thickness": 7.4,
+   "weight": 193,
+   "materials": "Aluminium frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Graphite",
+   "Pistachio",
+   "White",
+   "Navy"
+  ],
+  "summaryEn": "The cheaper Fan Edition flagship: the S26's screen size and camera set on an Exynos 2500.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "body.ip",
+   "released"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-s25-fe",
+  "brand": "Samsung",
+  "name": "Galaxy S25 FE",
+  "tier": "midrange",
+  "released": "2025-09",
+  "priceAmd": 226000,
+  "priceAmdMax": 279000,
+  "popularity": 70,
+  "accent": "#a7c3d6",
+  "display": {
+   "size": 6.7,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2340x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2400",
+   "cpu": "Deca-core (3.2 GHz + 2.9 GHz + 2.6 GHz + 1.95 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 226000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 229000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 279000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "8 MP, f/2.4, 3x optical zoom",
+   "front": "12 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4900
+  },
+  "body": {
+   "height": 161.3,
+   "width": 76.6,
+   "thickness": 7.4,
+   "weight": 190,
+   "materials": "Aluminium frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Icyblue",
+   "Navy",
+   "Jetblack",
+   "White"
+  ],
+  "summaryEn": "Flagship screen and three cameras at half the flagship price, on Samsung's Exynos 2400.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "body.ip"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-s25-edge",
+  "brand": "Samsung",
+  "name": "Galaxy S25 Edge",
+  "tier": "flagship",
+  "released": "2025-05",
+  "priceAmd": 329000,
+  "priceAmdMax": 369000,
+  "popularity": 68,
+  "accent": "#c9ccd2",
+  "display": {
+   "size": 6.7,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "3120x1440",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
+   "cpu": "Octa-core (4.47 GHz + 3.5 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 329000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 369000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "200 MP, f/1.7, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "front": "12 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 3900
+  },
+  "body": {
+   "height": 158.2,
+   "width": 75.6,
+   "thickness": 5.8,
+   "weight": 163,
+   "materials": "Titanium frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Titanium Silver",
+   "Titanium Jetblack",
+   "Titanium Icyblue"
+  ],
+  "summaryEn": "5.8 mm thick and 163 g, with the Ultra's 200 MP sensor - the trade is a smaller 3900 mAh battery.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "os",
+   "body.ip"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-a57",
+  "brand": "Samsung",
+  "name": "Galaxy A57 5G",
+  "tier": "midrange",
+  "released": "2026-03",
+  "priceAmd": 149000,
+  "priceAmdMax": 166900,
+  "popularity": 74,
+  "accent": "#2f4f6f",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED Plus",
+   "resolution": "2340x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1680",
+   "cpu": "Octa-core (2.9 GHz + 2.6 GHz + 1.9 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 149000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 166900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "5 MP, f/2.4, macro focus",
+   "front": "12 MP",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 161.5,
+   "width": 76.8,
+   "thickness": 6.9,
+   "weight": 179,
+   "materials": "Aluminium frame, glass front and back",
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "6 years of OS and security updates",
+  "colors": [
+   "Awesome Navy",
+   "Awesome Grey",
+   "Awesome Icyblue",
+   "Awesome Lilac"
+  ],
+  "summaryEn": "Samsung's best-selling mid-ranger: 6.7-inch 120Hz AMOLED, OIS main camera and a 5000 mAh battery.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "updates",
+   "body.ip",
+   "released"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-a37",
+  "brand": "Samsung",
+  "name": "Galaxy A37 5G",
+  "tier": "midrange",
+  "released": "2026-03",
+  "priceAmd": 124000,
+  "priceAmdMax": 134900,
+  "popularity": 68,
+  "accent": "#3f4448",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "2340x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1480",
+   "cpu": "Octa-core (2.75 GHz + 2.0 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 124000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 134900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "8 MP, f/2.2",
+   "telephoto": "5 MP, f/2.4, macro focus",
+   "front": "12 MP",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 162.9,
+   "width": 78.2,
+   "thickness": 7.4,
+   "weight": 196,
+   "materials": "Plastic frame, glass front",
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "6 years of OS and security updates",
+  "colors": [
+   "Awesome Charcoal",
+   "Awesome Grey",
+   "Awesome Green"
+  ],
+  "summaryEn": "The A57's cheaper sibling: the same 6.7-inch 120Hz AMOLED and 5000 mAh battery, a simpler camera set.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "updates",
+   "body.ip",
+   "released",
+   "colors"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-a27",
+  "brand": "Samsung",
+  "name": "Galaxy A27 5G",
+  "tier": "budget",
+  "released": "2026-03",
+  "priceAmd": 109000,
+  "priceAmdMax": 125000,
+  "popularity": 62,
+  "accent": "#26262a",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "2340x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1330",
+   "cpu": "Octa-core (2.4 GHz + 1.8 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 109000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 125000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "ultrawide": "5 MP, f/2.2",
+   "telephoto": "2 MP, f/2.4, macro focus",
+   "front": "12 MP",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 162.4,
+   "width": 78.2,
+   "thickness": 7.8,
+   "weight": 200,
+   "materials": "Plastic frame, glass front",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.1",
+   "nfc": true,
+   "sim": "Dual nano-SIM plus a dedicated microSD slot"
+  },
+  "cardSlot": true,
+  "os": "Android 16, One UI 8",
+  "updates": "6 years of OS and security updates",
+  "colors": [
+   "Black",
+   "Blue"
+  ],
+  "summaryEn": "A 120Hz AMOLED and a 5000 mAh battery in the budget tier, with room for a microSD card.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "updates",
+   "body.ip",
+   "released",
+   "colors"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-a17",
+  "brand": "Samsung",
+  "name": "Galaxy A17 5G",
+  "tier": "budget",
+  "released": "2025-09",
+  "priceAmd": 68900,
+  "priceAmdMax": 74900,
+  "popularity": 58,
+  "accent": "#26262a",
+  "display": {
+   "size": 6.7,
+   "type": "Super AMOLED",
+   "resolution": "2340x1080",
+   "refresh": 90
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1330",
+   "cpu": "Octa-core (2.4 GHz + 2.0 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 68900
+   },
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 74900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "ultrawide": "5 MP, f/2.2",
+   "telephoto": "2 MP, f/2.4, macro focus",
+   "front": "13 MP",
+   "video": "1080p@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 164.4,
+   "width": 77.9,
+   "thickness": 7.5,
+   "weight": 192,
+   "materials": "Plastic frame, glass front",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Dual nano-SIM plus a dedicated microSD slot"
+  },
+  "cardSlot": true,
+  "os": "Android 15, One UI 7",
+  "updates": "6 years of OS and security updates",
+  "colors": [
+   "Black",
+   "Blue",
+   "Grey"
+  ],
+  "summaryEn": "An AMOLED screen and 5000 mAh at entry-level money - 90Hz rather than 120, and 1080p video only.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "updates",
+   "body.ip",
+   "released",
+   "colors"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-a07",
+  "brand": "Samsung",
+  "name": "Galaxy A07",
+  "tier": "budget",
+  "released": "2025-08",
+  "priceAmd": 42900,
+  "priceAmdMax": 49900,
+  "popularity": 52,
+  "accent": "#26262a",
+  "display": {
+   "size": 6.7,
+   "type": "PLS LCD",
+   "resolution": "1600x720",
+   "refresh": 90
+  },
+  "chipset": {
+   "name": "MediaTek Helio G99",
+   "cpu": "Octa-core (2.2 GHz + 2.0 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 42900
+   },
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 49900
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "ultrawide": "2 MP, f/2.4, depth",
+   "front": "8 MP",
+   "video": "1080p@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 167.4,
+   "width": 77.4,
+   "thickness": 7.6,
+   "weight": 184,
+   "materials": "Plastic frame, plastic back",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G LTE",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.3",
+   "nfc": false,
+   "sim": "Dual nano-SIM plus a dedicated microSD slot"
+  },
+  "cardSlot": true,
+  "os": "Android 15, One UI 7",
+  "updates": "6 years of OS and security updates",
+  "colors": [
+   "Black",
+   "Green",
+   "Light Violet"
+  ],
+  "summaryEn": "Samsung's cheapest current phone: a big 6.7-inch LCD, 5000 mAh and a microSD slot.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "updates",
+   "body.ip",
+   "released",
+   "colors",
+   "display.refresh"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-z-flip-7",
+  "brand": "Samsung",
+  "name": "Galaxy Z Flip 7",
+  "tier": "flagship",
+  "released": "2025-07",
+  "priceAmd": 359900,
+  "priceAmdMax": 544900,
+  "popularity": 66,
+  "accent": "#26313a",
+  "display": {
+   "size": 6.9,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2520x1080",
+   "refresh": 120,
+   "cover": {
+    "size": 4.1,
+    "resolution": "1048x948"
+   }
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2500",
+   "cpu": "Deca-core (3.3 GHz + 2.74 GHz + 2.36 GHz + 1.8 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 359900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 544900
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "front": "10 MP",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 4300
+  },
+  "body": {
+   "height": 166.7,
+   "width": 75.2,
+   "thickness": 6.5,
+   "weight": 188,
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP48"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Blue Shadow",
+   "Jetblack",
+   "Coralred",
+   "Mint"
+  ],
+  "summaryEn": "A clamshell that folds into a pocket, with a 4.1-inch cover screen you can run apps on.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "body.ip"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-z-flip-8",
+  "brand": "Samsung",
+  "name": "Galaxy Z Flip 8",
+  "tier": "flagship",
+  "released": "2026-07",
+  "priceAmd": 479000,
+  "priceAmdMax": 529000,
+  "popularity": 70,
+  "accent": "#26313a",
+  "display": {
+   "size": 6.9,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2520x1080",
+   "refresh": 120,
+   "cover": {
+    "size": 4.1,
+    "resolution": "1048x948"
+   }
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2600",
+   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 479000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 529000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "front": "10 MP",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 4300
+  },
+  "body": {
+   "height": 166.9,
+   "width": 75.4,
+   "thickness": 6.1,
+   "weight": 180,
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP48"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Pink",
+   "Graphite",
+   "Cream",
+   "Mint"
+  ],
+  "summaryEn": "The 2026 clamshell: 6.1 mm unfolded and 180 g, on Samsung's Exynos 2600.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "chipset.name",
+   "os",
+   "body.ip",
+   "released",
+   "priceAmdMax"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-z-fold-7",
+  "brand": "Samsung",
+  "name": "Galaxy Z Fold 7",
+  "tier": "flagship",
+  "released": "2025-07",
+  "priceAmd": 559000,
+  "priceAmdMax": 619000,
+  "popularity": 64,
+  "accent": "#26313a",
+  "display": {
+   "size": 8.0,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2184x1968",
+   "refresh": 120,
+   "cover": {
+    "size": 6.5,
+    "resolution": "2520x1080"
+   }
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
+   "cpu": "Octa-core (4.47 GHz + 3.5 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 559000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 619000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.7, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "10 MP, f/2.4, 3x optical zoom",
+   "front": "10 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4400
+  },
+  "body": {
+   "height": 158.4,
+   "width": 143.2,
+   "thickness": 4.2,
+   "weight": 215,
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP48"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM, or dual nano-SIM"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Blue Shadow",
+   "Silver Shadow",
+   "Jetblack",
+   "Mint"
+  ],
+  "summaryEn": "An 8-inch tablet that folds to 4.2 mm, with the Ultra's 200 MP camera.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "os",
+   "body.ip"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-z-fold-8",
+  "brand": "Samsung",
+  "name": "Galaxy Z Fold 8",
+  "tier": "flagship",
+  "released": "2026-07",
+  "priceAmd": 688000,
+  "priceAmdMax": 758000,
+  "popularity": 68,
+  "accent": "#26313a",
+  "display": {
+   "size": 7.6,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2448x1848",
+   "refresh": 120,
+   "cover": {
+    "size": 5.5,
+    "resolution": "2448x1972"
+   }
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 688000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 758000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "50 MP, f/1.9",
+   "front": "10 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4800
+  },
+  "body": {
+   "height": 123.9,
+   "width": 161.4,
+   "thickness": 4.5,
+   "weight": 201,
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP48"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Lavender",
+   "Graphite",
+   "Cream",
+   "Pistachio"
+  ],
+  "summaryEn": "The lighter 2026 fold - 201 g, a 5.5-inch cover screen and a 7.6-inch main display.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "os",
+   "body.ip",
+   "released",
+   "priceAmdMax"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "samsung-galaxy-z-fold-8-ultra",
+  "brand": "Samsung",
+  "name": "Galaxy Z Fold 8 Ultra",
+  "tier": "flagship",
+  "released": "2026-07",
+  "priceAmd": 788000,
+  "priceAmdMax": 878000,
+  "popularity": 66,
+  "accent": "#3b3b40",
+  "display": {
+   "size": 8.0,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2504x2256",
+   "refresh": 120,
+   "cover": {
+    "size": 6.5,
+    "resolution": "2520x1080"
+   }
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 788000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 878000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.7, OIS",
+   "ultrawide": "50 MP, f/1.9",
+   "telephoto": "10 MP, f/2.4, 3x optical zoom",
+   "front": "10 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "body": {
+   "height": 158.4,
+   "width": 143.2,
+   "thickness": 4.1,
+   "weight": 215,
+   "materials": "Titanium frame, glass front and back",
+   "ip": "IP48"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "6.0",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "Android 16, One UI 8",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Violet Shadow",
+   "Graphite",
+   "Cream",
+   "Green Shadow"
+  ],
+  "summaryEn": "The biggest foldable Samsung sells: an 8-inch main screen, 200 MP camera and a titanium frame.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "os",
+   "body.ip",
+   "released",
+   "priceAmdMax"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "apple-iphone-16-pro",
+  "brand": "Apple",
+  "name": "iPhone 16 Pro",
+  "tier": "flagship",
+  "released": "2024-09",
+  "priceAmd": 435000,
+  "priceAmdMax": 633900,
+  "popularity": 82,
+  "accent": "#4A4A46",
+  "display": {
+   "size": 6.3,
+   "type": "Super Retina XDR OLED",
+   "resolution": "2622x1206",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 2000,
+   "protection": "Ceramic Shield"
+  },
+  "chipset": {
+   "name": "Apple A18 Pro",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "Apple 6-core GPU"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 435000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 489000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 559000
+   },
+   {
+    "ram": 8,
+    "storage": 1024,
+    "priceAmd": 633900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.78, 24mm, sensor-shift OIS",
+   "ultrawide": "48 MP, f/2.2, 13mm, 120-degree",
+   "telephoto": "12 MP, f/2.8, 120mm, 5x optical zoom, 3D sensor-shift OIS",
+   "front": "12 MP, f/1.9",
+   "video": "4K Dolby Vision up to 120fps"
+  },
+  "battery": {
+   "wireless": 25
+  },
+  "body": {
+   "height": 149.6,
+   "width": 71.5,
+   "thickness": 8.25,
+   "weight": 199,
+   "materials": "Titanium frame, Ceramic Shield front, textured matte glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "Apple typically ships 5-7 years of iOS upgrades",
+  "colors": [
+   "Black Titanium",
+   "White Titanium",
+   "Natural Titanium",
+   "Desert Titanium"
+  ],
+  "summaryEn": "The 6.3-inch Pro on the A18 Pro, with a 5x tetraprism telephoto and Camera Control.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "battery.capacity"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "apple-iphone-16-pro-max",
+  "brand": "Apple",
+  "name": "iPhone 16 Pro Max",
+  "tier": "flagship",
+  "released": "2024-09",
+  "priceAmd": 589000,
+  "priceAmdMax": 687900,
+  "popularity": 84,
+  "accent": "#4A4A46",
+  "display": {
+   "size": 6.9,
+   "type": "Super Retina XDR OLED",
+   "resolution": "2868x1320",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 2000,
+   "protection": "Ceramic Shield"
+  },
+  "chipset": {
+   "name": "Apple A18 Pro",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "Apple 6-core GPU"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 589000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 639000
+   },
+   {
+    "ram": 8,
+    "storage": 1024,
+    "priceAmd": 687900
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.78, 24mm, sensor-shift OIS",
+   "ultrawide": "48 MP, f/2.2, 13mm, 120-degree",
+   "telephoto": "12 MP, f/2.8, 120mm, 5x optical zoom, 3D sensor-shift OIS",
+   "front": "12 MP, f/1.9",
+   "video": "4K Dolby Vision up to 120fps"
+  },
+  "battery": {
+   "wireless": 25
+  },
+  "body": {
+   "height": 163.0,
+   "width": 77.6,
+   "thickness": 8.25,
+   "weight": 227,
+   "materials": "Titanium frame, Ceramic Shield front, textured matte glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "Apple typically ships 5-7 years of iOS upgrades",
+  "colors": [
+   "Black Titanium",
+   "White Titanium",
+   "Natural Titanium",
+   "Desert Titanium"
+  ],
+  "summaryEn": "The largest 16-series Pro: a 6.9-inch panel and the longest battery Apple shipped that year.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "battery.capacity"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "apple-iphone-16-plus",
+  "brand": "Apple",
+  "name": "iPhone 16 Plus",
+  "tier": "midrange",
+  "released": "2024-09",
+  "priceAmd": 429000,
+  "priceAmdMax": 489000,
+  "popularity": 70,
+  "accent": "#79B7C9",
+  "display": {
+   "size": 6.7,
+   "type": "Super Retina XDR OLED",
+   "resolution": "2796x1290",
+   "refresh": 60,
+   "ppi": 460,
+   "brightness": 2000,
+   "protection": "Ceramic Shield"
+  },
+  "chipset": {
+   "name": "Apple A18",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "Apple 5-core GPU"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 429000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 459000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 489000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "48 MP, f/1.6, 26mm, sensor-shift OIS",
+   "ultrawide": "12 MP, f/2.2, 13mm, 120-degree",
+   "front": "12 MP, f/1.9",
+   "video": "4K Dolby Vision at 60fps"
+  },
+  "battery": {
+   "wireless": 25
+  },
+  "body": {
+   "height": 160.9,
+   "width": 77.8,
+   "thickness": 7.8,
+   "weight": 199,
+   "materials": "Aluminium frame, Ceramic Shield front, colour-infused glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "Apple typically ships 5-7 years of iOS upgrades",
+  "colors": [
+   "Black",
+   "White",
+   "Pink",
+   "Teal",
+   "Ultramarine"
+  ],
+  "summaryEn": "The big-screen iPhone 16 without the Pro price - two cameras and a 60Hz panel.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "battery.capacity"
+  ],
+  "category": "phone"
+ },
+ {
+  "id": "apple-iphone-17e",
+  "brand": "Apple",
+  "name": "iPhone 17e",
+  "tier": "midrange",
+  "released": "2026-02",
+  "priceAmd": 279000,
+  "priceAmdMax": 299900,
+  "popularity": 74,
+  "accent": "#E8C3CE",
+  "display": {
+   "size": 6.1,
+   "type": "Super Retina XDR OLED",
+   "resolution": "2532x1170",
+   "refresh": 60,
+   "ppi": 460,
+   "protection": "Ceramic Shield 2"
+  },
+  "chipset": {
+   "name": "Apple A19",
+   "cpu": "6-core (2 performance + 4 efficiency)",
+   "gpu": "Apple 4-core GPU with Neural Accelerators"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 279000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 299900
+   }
+  ],
+  "camera": {
+   "modules": 1,
+   "main": "48 MP, f/1.6, 26mm, OIS",
+   "front": "12 MP, f/1.9",
+   "video": "4K Dolby Vision at 60fps"
+  },
+  "battery": {
+   "wireless": 15
+  },
+  "body": {
+   "height": 146.7,
+   "width": 71.5,
+   "thickness": 7.8,
+   "weight": 170,
+   "materials": "Aluminium frame, Ceramic Shield 2 front, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM (dual eSIM support)"
+  },
+  "cardSlot": false,
+  "os": "iOS 26",
+  "updates": "Apple typically ships 5-7 years of iOS upgrades",
+  "colors": [
+   "Black",
+   "White",
+   "Soft Pink"
+  ],
+  "summaryEn": "The cheapest current iPhone: one 48 MP camera, the A19 chip and a 6.1-inch OLED.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "battery.capacity",
+   "released"
+  ],
+  "category": "phone"
  }
 ]

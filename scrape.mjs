@@ -21,7 +21,7 @@ const DELAY_MS = 400;
 const TIMEOUT_MS = 30000;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
+const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" plus ").replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
 
 async function get(url, tries = 2) {
   for (let i = 0; i < tries; i++) {
@@ -54,8 +54,14 @@ for (const p of phones) {
     if (/ 5g$/.test(k)) V.add(k.replace(/ 5g$/, ''));   // shops often drop the "5G"
   };
   add(fullName(p));
+  // shops write some names differently ("Apple Watch SE GPS Gen.3"). An item can list the
+  // spellings it also answers to rather than us loosening the matcher for everyone.
+  for (const al of p.aliases || []) add(al);
   // shops usually omit the brand in slugs ("iphone-17-pro-...", "galaxy-s25-ultra-...").
   // only trust a brand-less key when it is specific enough to stand alone.
+  // Operator shops drop "Galaxy" from the slug: telecomarmenia writes samsung-a37-6-128-graygreen
+  // and samsung-s26ultra-12-512gb-skyblue, never "galaxy".
+  if (/^galaxy /i.test(p.name)) add(p.brand + ' ' + p.name.replace(/^galaxy /i, ''));
   const bare = norm(p.name);
   if (bare.length >= 8 && bare.includes(' ')) add(bare);   // "iphone 17 pro", "iphone air"
   else if (bare.length >= 5 && /\d/.test(bare)) add(bare);
@@ -68,7 +74,9 @@ KEYS.sort((a, b) => b.key.length - a.key.length);
 // Model words that turn a phone into a DIFFERENT phone. Keys are tried longest-first, so if
 // one of these still trails the best match, the listing is a variant we don't carry -> no match.
 // Without this, "Apple iPhone 16 Pro Max" would be priced as an iPhone 16.
-const QUALIFIERS = new Set(['pro', 'max', 'plus', 'ultra', 'mini', 'air', 'fe', 'lite', 'neo', 'edge', 'e', 'se']);
+// 'xl' earns its place here: telecomarmenia's "Google Pixel 10 Pro XL" was being priced as a
+// Pixel 10 Pro, which is a different, cheaper phone.
+const QUALIFIERS = new Set(['pro', 'max', 'plus', 'ultra', 'mini', 'air', 'fe', 'lite', 'neo', 'edge', 'e', 'se', 'xl']);
 
 // Shops list accessories under the phone's own name ("Clear Case with MagSafe for iPhone 15"),
 // and those were being priced AS the phone. Anything that names an accessory, or is sold
@@ -76,14 +84,17 @@ const QUALIFIERS = new Set(['pro', 'max', 'plus', 'ultra', 'mini', 'air', 'fe', 
 // Plain substring list rather than one big regex: an alternation that silently breaks in
 // editing means accessories get priced as phones, which is exactly what happened.
 const ACCESSORY_WORDS = [
-  'case', 'cover', 'bumper', 'sleeve', 'pouch', 'wallet', 'folio', 'glass', 'protector',
+  // Things sold FOR a device. airpods / apple watch / headphone / earphone / headset used to
+  // live here; they are catalogue categories now, so rejecting them would hide real products.
+  // NOT 'glass': the iPad Pro is sold with 'standard glass' / 'nano-texture glass'.
+  // Screen protectors are still caught by protector / protection / tempered / պաշտպան / защит.
+  'case', 'cover', 'bumper', 'sleeve', 'pouch', 'wallet', 'folio', 'protector',
   'protection', 'tempered', 'film', 'skin', 'charger', 'charging', 'cable', 'adapter',
-  'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank',
-  'power bank', 'airpods', 'airtag', 'apple watch', 'pencil', 'keyboard', 'earphone',
-  'headphone', 'headset', 'stylus',
-  'պատյան', 'ապակի', 'պաշտպան', 'լիցքավոր', 'մալուխ', 'ադապտեր',
-  'чехол', 'стекло', 'защит', 'кабел', 'зарядн', 'адаптер', 'держател',
-  'накладк', 'бампер', 'пленк', 'плёнк', 'наушник'
+  'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank', 'power bank',
+  'airtag', 'pencil', 'keyboard', 'stylus',
+  'պատյան', 'պաշտպան', 'լիցքավոր', 'մալուխ', 'ադապտեր',
+  'чехол', 'защит', 'кабел', 'зарядн', 'адаптер', 'держател',
+  'накладк', 'бампер', 'пленк', 'плёнк'
 ];
 // a phone is never sold "for" another phone
 const FOR_WORDS = [' for iphone', ' for galaxy', ' for redmi', ' for poco', ' for pixel',
@@ -109,13 +120,26 @@ function looksLikeAccessory(text) {
 }
 function matchPhone(text) {
   if (looksLikeAccessory(text)) return null;
-  const h = ' ' + norm(text) + ' ';
+  // Shops compress the model in a slug ("samsung-s26ultra", "google-pixel10"). Splitting the
+  // digit/letter joins gives an ordinary title back unchanged and recovers the model name from a
+  // compressed one, so each reading gets its own attempt instead of loosening the matcher.
+  const base = norm(text);
+  for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2')])) {
+    const id = matchIn(' ' + v + ' ');
+    if (id) return id;
+  }
+  return null;
+}
+function matchIn(h) {
   for (const k of KEYS) {
     const needle = ' ' + k.key + ' ';
     const i = h.indexOf(needle);
     if (i < 0) continue;
     const next = h.slice(i + needle.length).trim().split(' ')[0];
-    if (next && QUALIFIERS.has(next)) return null;
+    // 'ultra' marks a different phone (Galaxy S25 Ultra) but is also an Intel chip tier
+    // ('Core Ultra 7 255U'), which was making every Core Ultra laptop unmatchable.
+    const intelUltra = next === 'ultra' && (h.includes(' core ultra ') || h.includes(' ultra 5 ') || h.includes(' ultra 7 ') || h.includes(' ultra 9 '));
+    if (next && QUALIFIERS.has(next) && !intelUltra) return null;
     return k.id;
   }
   return null;
@@ -138,6 +162,24 @@ function colorOf(text, colors) {
   for (const c of colors || []) if (h.includes(String(c).toLowerCase()) && (!hit || c.length > hit.length)) hit = c;
   return hit;
 }
+// pixel.am never names the variant in the title, but its product photo does:
+// ".../17-pro-orng-1.png". Expand the shop's abbreviations, then match a word of one of
+// the colours we list for that phone, so the row can say "Cosmic Orange" instead of nothing.
+const IMG_HUE = { orng: 'orange', ormg: 'orange', oringe: 'orange', blu: 'blue', blk: 'black', wht: 'white',
+  slv: 'silver', silv: 'silver', gld: 'gold', grn: 'green', pnk: 'pink', prpl: 'purple',
+  ylw: 'yellow', gry: 'gray', grey: 'gray', ttn: 'titanium', titan: 'titanium', lav: 'lavender',
+  mid: 'midnight', ultra: 'ultramarine', jet: 'jetblack' };
+function colorFromImage(src, colors) {
+  const words = tokenized(src).split(' ').filter(Boolean).map(w => IMG_HUE[w] || w);
+  let hit = null;
+  const hits = [];
+  for (const c of colors || []) {
+    const cw = tokenized(c).split(' ').filter(Boolean);
+    if (cw.some(w => words.includes(w))) { hits.push(c); if (!hit || c.length > hit.length) hit = c; }
+  }
+  // two colours in one filename ("a06-blk-blue") is a two-tone render, not an answer
+  return hits.length === 1 ? hit : null;
+}
 // Offer URLs end up in an href. iSpace's come from a third party's JSON-LD, so the scheme is
 // not ours to trust: anything but http(s) is dropped rather than rendered.
 function safeUrl(u) {
@@ -146,17 +188,29 @@ function safeUrl(u) {
     return (url.protocol === 'https:' || url.protocol === 'http:') ? url.href : null;
   } catch { return null; }
 }
-const clean = s => String(s).replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+// A double quote, spelled out: writing one inline inside these scanners is what keeps
+// breaking when the file is edited through a shell.
+const D = String.fromCharCode(34);
+const clean = s => String(s).replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, String.fromCharCode(34)).replace(/&#0?39;|&apos;/g, String.fromCharCode(39)).replace(/\s+/g, ' ').trim();
 const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)]
   .flatMap(m => { try { const j = JSON.parse(m[1]); return Array.isArray(j) ? j : [j]; } catch { return []; } });
 
 /* ---------- self-test:  node scrape.mjs --selftest  (no network) ---------- */
 if (process.argv[2] === '--selftest') {
   const cases = [
+    // the multi-brand shops reached beyond phones; these slugs must land on the right item
+    ['xiaomi-pad-7-pro', 'https://www.pixel.am/am/product/xiaomi-pad-7-pro'],
+    ['xiaomi-pad-7', 'https://www.pixel.am/am/product/xiaomi-pad-7-8-256-gray'],
+    ['hp-15-fd2747nr', 'HP PC Notebook 15-FD2747NR / Ultra 7 255U / 16GB RAM / 512GB SSD'],
+    // Mobile Centre lists the Plus as "S25+"; it must NOT be sold as a plain S25
+    [null, 'Samsung Galaxy S25+ 256GB (Silver Shadow)'],
+    ['samsung-galaxy-s25', 'Samsung Galaxy S25 128GB (Navy)'],
     ['apple-iphone-17-pro', 'iphone-17-pro-512-gb-deep-blue-mg8k4af-a'],
     ['apple-iphone-17', 'apple-iphone-17-256gb-black-mg6j4af-a.html'],
-    [null, 'Apple iPhone 17e'],                       // 17e must not land on the 17
-    [null, 'Apple iPhone 16 Pro Max'],                // model we do not carry
+    // Both are in the catalogue now, so the assertion is the real id - which still proves the
+    // qualifier guard works: a broken guard answers apple-iphone-17 / apple-iphone-16 here.
+    ['apple-iphone-17e', 'Apple iPhone 17e'],
+    ['apple-iphone-16-pro-max', 'Apple iPhone 16 Pro Max'],
     ['samsung-galaxy-s25-ultra', 'samsung-galaxy-s25-ultra-512gb'],
     ['samsung-galaxy-s25', 'samsung-galaxy-s25-256gb'],
     ['apple-iphone-17', 'Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520)'],
@@ -216,7 +270,9 @@ const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
 const enrich = (o) => ({
   ...o,
   ram: o.ram ?? ramOf(o.title),
-  color: colorOf(o.title, (phoneById[o.id] || {}).colors)
+  // iSpace titles name the colour in Armenian ("Սև", "Արծաթագույն") but every shop slugs the
+  // English name into the product URL, so the slug is the reliable place to read it from.
+  color: o.color ?? colorOf(o.title + ' ' + String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '), (phoneById[o.id] || {}).colors)
 });
 
 /* ---------- shops ---------- */
@@ -227,8 +283,11 @@ const SHOPS = {
     async run() {
       const out = [];
       const seen = new Set();
-      for (let page = 1; page <= 4; page++) {
-        const html = await get(`https://ispace.am/category/iphone${page > 1 ? '?page=' + page : ''}`);
+      // llms.txt points AI clients at /category/*; every catalogue category we carry is here
+      const CATS = ['iphone', 'ipad', 'airpods', 'apple-watch', 'mac'];
+      for (const cat of CATS)
+      for (let page = 1; page <= 12; page++) {
+        const html = await get(`https://ispace.am/category/${cat}${page > 1 ? '?page=' + page : ''}`);
         await sleep(DELAY_MS);
         if (!html) break;
         const list = ldJson(html).find(j => j['@type'] === 'ItemList');
@@ -290,11 +349,15 @@ const SHOPS = {
       // this category ignores ?page= and returns its whole listing in one response,
       // so paging it just refetches the same 140 products
       {
-        const html = await get('https://mobilecentre.am/category/phones/138/0/');
+        // one listing per catalogue category we carry; each returns its whole list in one response
+        const MC = ['phones/138/0', 'tablets/139/0', 'smart-watches/141/175', 'headphone/146/156', 'computers/144/0'];
+        const hits = [];
+        for (const cat of MC) {
+        const html = await get(`https://mobilecentre.am/category/${cat}/`);
         await sleep(DELAY_MS);
-        if (!html) return out;
+        if (!html) continue;
         const blocks = html.split('class="listitem"').slice(1);
-        if (!blocks.length) return out;
+        if (!blocks.length) continue;
         for (const b of blocks) {
           const url = (b.match(/href="(https:\/\/mobilecentre\.am\/product\/[^"]+)"/) || [])[1];
           const title = clean((b.match(/<h3[^>]*>([\s\S]{2,120}?)<\/h3>/) || [])[1] || '');
@@ -304,7 +367,20 @@ const SHOPS = {
           if (!url || !title || !price || !safeUrl(url)) continue;
           const id = matchPhone(title + ' ' + url);
           if (!id) continue;
-          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url, inStock: true });
+          hits.push({ id, price, title, url });
+        }
+        }
+        // The listing h3 is just the model name. The product page carries the real SKU in
+        // og:title - "iPhone 17 Pro 256GB Dual eSIM (Cosmic Orange)" - so capacity and colour
+        // come from there instead of being left blank. Only matched products are fetched.
+        for (const h of hits) {
+          const page = await get(h.url); await sleep(DELAY_MS);
+          const og = page && clean((page.match(/property="og:title" content="([^"]+)"/) || [])[1] || "");
+          const SEP = " - ";                                    // og:title is "Mobile Centre. - <sku>"
+          const title = og ? (og.includes(SEP) ? og.slice(og.indexOf(SEP) + SEP.length) : og) : h.title;
+          const img = page && (page.match(/property="og:image" content="([^"]+)"/) || [])[1];
+          out.push({ id: h.id, price: h.price, storage: storageOf(title) ?? storageOf(h.url), title, url: h.url,
+            image: img && safeUrl(img) ? img : null, inStock: true });
         }
       }
       return out;
@@ -316,8 +392,10 @@ const SHOPS = {
     async run() {
       const out = [];
       let cat = '';
-      for (let page = 1; page <= 4; page++) {
-        const part = await get(`https://www.pixel.am/am/products/phones?show=32&page=${page}`);
+      const PX = ['phones', 'tablets', 'watches', 'headphones', 'laptops'];
+      for (const section of PX)
+      for (let page = 1; page <= 12; page++) {
+        const part = await get(`https://www.pixel.am/am/products/${section}?show=32&page=${page}`);
         await sleep(DELAY_MS);
         if (!part) break;
         cat += part;
@@ -333,16 +411,117 @@ const SHOPS = {
         // <title> is "<name>՝ գինը 274,000 Դրամ"; the variant blob carries every SKU price
         const title = clean((h.match(/<title>([^<]*)<\/title>/) || [])[1] || '').replace(/՝\s*գին[^]*$/, '').trim();
         const prices = [...h.matchAll(/"price":(\d{4,})/g)].map(m => +m[1]).filter(n => n > 1000);
+        // Phone pages carry a variant blob with every SKU price. Tablet, watch and laptop
+        // pages do not - there the price is only in the <title>.
+        if (!prices.length) {
+          const ti = h.indexOf("<title>"), te = h.indexOf("</title>");
+          const head = ti >= 0 && te > ti ? h.slice(ti, te) : "";
+          const at = head.indexOf("Դրամ");
+          if (at > 0) {
+            let e = at - 1, s = e;
+            const sep = " ,. ";
+            while (s >= 0 && (sep.indexOf(head[s]) >= 0 || (head[s] >= "0" && head[s] <= "9"))) s--;
+            const n = Number(head.slice(s + 1, e + 1).replace(/[^0-9]/g, ""));
+            if (n > 1000) prices.push(n);
+          }
+        }
         if (!title || !prices.length) continue;
         const id = matchPhone(title + ' ' + u);
         const safe = safeUrl(u);
         if (!id || !safe) continue;
-        out.push({ id, price: Math.min(...prices), storage: storageOf(title) ?? storageOf(u), title, url: safe, inStock: true });
+        // the 800_ render is the shot the shop displays, so its filename names the variant on show
+        let shot = null;
+        for (let at = h.indexOf('/uploads/products/'); at >= 0 && !shot; at = h.indexOf('/uploads/products/', at + 1)) {
+          const from = h.lastIndexOf('http', at);
+          if (from < 0) continue;
+          let to = at;
+          const STOP = String.fromCharCode(34, 39) + " >";   // quote, apostrophe, space, gt
+          while (to < h.length && STOP.indexOf(h[to]) < 0) to++;
+          const u2 = h.slice(from, to);
+          if (u2.includes('800_')) shot = u2;
+        }
+        const color = shot ? colorFromImage(shot, (phoneById[id] || {}).colors) : null;
+        out.push({ id, price: Math.min(...prices), storage: storageOf(title) ?? storageOf(u), title, url: safe,
+          image: shot && safeUrl(shot) ? shot : null, color, inStock: true });
       }
       return out;
     }
   },
 
+
+  ucom: {
+    name: 'Ucom', site: 'https://shop.ucom.am', note: 'operator shop',
+    async run() {
+      const out = [];
+      // robots.txt disallows every URL with a query string, so pagination is off limits and
+      // each category contributes only its first page. Categories, not pages, give breadth.
+      const CATS = ['smartphones', 'tablets', 'smart-watches-bands', 'headphones', 'apple-products'];
+      for (const cat of CATS) {
+        const html = await get(`https://shop.ucom.am/am/${cat}.html`);
+        await sleep(DELAY_MS);
+        if (!html) continue;
+        // Magento product grid: one <a class="product-item-link"> and one data-price-amount each
+        const blocks = html.split('product-item-info').slice(1);
+        for (const b of blocks) {
+          const hi = b.indexOf(D + "https://shop.ucom.am/am/");
+          const url = hi < 0 ? null : b.slice(hi + 1, b.indexOf(D, hi + 1));
+          const li = b.indexOf("product-item-link");
+          const gt = li < 0 ? -1 : b.indexOf(">", li);
+          const title = gt < 0 ? "" : clean(b.slice(gt + 1, b.indexOf("<", gt)));
+          const pi = b.indexOf("data-price-amount=" + D);
+          const price = pi < 0 ? 0 : Math.round(Number(b.slice(pi + 19, b.indexOf(D, pi + 19))));
+          if (!url || !title || !price || !safeUrl(url)) continue;
+          const id = matchPhone(title + ' ' + url);
+          if (!id) continue;
+          const mi = b.indexOf(D + "https://shop.ucom.am/media/catalog/");
+          const img = mi < 0 ? null : b.slice(mi + 1, b.indexOf(D, mi + 1));
+          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url,
+            image: img && safeUrl(img) ? img : null, inStock: true });
+        }
+      }
+      return out;
+    }
+  },
+
+  telecom: {
+    name: 'Telecom Armenia', site: 'https://www.telecomarmenia.am', note: 'operator shop',
+    async run() {
+      const out = [];
+      // Listing pages carry no price at all, so each matched product page is fetched. The page
+      // shows TWO numbers: e-shop__main-price is the cash price, product-start-price is the
+      // monthly instalment. Reading the wrong one would list a phone at a fiftieth of its price.
+      const CATS = ['smartphones', 'notebooks-and-tablets'];
+      const seen = new Set();
+      for (const cat of CATS) {
+        const list = await get(`https://www.telecomarmenia.am/eshop/hy/${cat}/`);
+        await sleep(DELAY_MS);
+        if (!list) continue;
+        const key = `/eshop/hy/${cat}/`;
+        const urls = [];
+        for (let at = list.indexOf(D + 'https://www.telecomarmenia.am' + key); at >= 0;
+             at = list.indexOf(D + 'https://www.telecomarmenia.am' + key, at + 1)) {
+          const u = list.slice(at + 1, list.indexOf(D, at + 1));
+          if (u.length > key.length + 40 && !seen.has(u)) { seen.add(u); urls.push(u); }
+        }
+        for (const u of urls) {
+          if (!matchPhone(u)) continue;                 // only fetch pages that can match
+          const h = await get(u); await sleep(DELAY_MS);
+          if (!h) continue;
+          const title = clean((h.match(/<title>([^<|]*)/) || [])[1] || '');
+          const pi = h.indexOf('e-shop__main-price');
+          if (pi < 0) continue;
+          const gt = h.indexOf('>', pi);
+          const price = Number(h.slice(gt + 1, gt + 20).replace(/[^0-9]/g, '').slice(0, 7));
+          const id = matchPhone(title + ' ' + u);
+          if (!id || !price || price < 5000 || !safeUrl(u)) continue;
+          const img = (h.match(/property="og:image" content="([^"]+)"/) || [])[1];
+          out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u,
+            image: img && safeUrl(img) ? img : null, inStock: true });
+        }
+      }
+      return out;
+    }
+  },
 
   istore: {
     name: 'iStore', site: 'https://istore.am', note: 'authorised Apple reseller',
@@ -368,6 +547,38 @@ const SHOPS = {
         if (!safeUrl(u)) continue;
         out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock: true,
           image: (html.match(/https:\/\/istore\.am\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null });
+      }
+      return out;
+    }
+  },
+
+  allsell: {
+    name: 'AllSell', site: 'https://allsell.am', note: 'electronics retailer',
+    async run() {
+      // Magento, and its robots.txt names the sitemaps. Same shape as iStore: filter the sitemap
+      // by matchPhone first so only pages that can be one of our products are fetched.
+      const xml = await get('https://allsell.am/media/sitemap/en.xml');
+      await sleep(DELAY_MS);
+      const urls = [...xml.matchAll(/<loc>(https:\/\/allsell\.am\/en\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      const out = [], perPhone = {};
+      for (const u of urls) {
+        const id = matchPhone(u);
+        if (!id) continue;
+        perPhone[id] = (perPhone[id] || 0) + 1;
+        if (perPhone[id] > 6) continue;               // cap requests per model
+        const html = await get(u); await sleep(DELAY_MS);
+        if (!html) continue;
+        // data-price-amount is Magento's machine-readable final price, the same marker Ucom uses;
+        // the visible span carries thousands separators and a currency sign.
+        const pi = html.indexOf('data-price-amount=' + D);
+        if (pi < 0) continue;
+        const price = Math.round(Number(html.slice(pi + 19, html.indexOf(D, pi + 19))));
+        const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
+        if (!price || price < 5000 || !title || !safeUrl(u)) continue;
+        // Magento marks a sold-out product with this schema.org value in the page head
+        const inStock = !/OutOfStock/i.test(html.slice(0, 200000));
+        const img = (html.match(/https:\/\/allsell\.am\/media\/catalog\/product\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null;
+        out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock, image: img });
       }
       return out;
     }
@@ -433,6 +644,10 @@ for (const key of names) {
   let dropped = 0;
   for (const raw of got) {
     const o = enrich(raw);
+    // A price on a sold-out page is not an offer anyone can take, so it has no business on a
+    // price-comparison site. Only an explicit false counts - adapters that cannot read stock
+    // leave it undefined, and dropping those would empty the catalogue.
+    if (o.inStock === false) { dropped++; continue; }
     // Catches accessories that do not use any of the words above: nothing legitimately sells
     // at under a third of the model's own reference price.
     const ref = (phoneById[o.id] || {}).priceAmd;
