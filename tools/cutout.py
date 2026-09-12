@@ -40,19 +40,18 @@ SIDE = 1200        # canvas the product is centred on
 FILL = 0.92        # how much of that canvas the product's longest side takes
 MAXUP = 1.15       # never upscale a small source by more than this, it only adds blur
 
-# Two models, union of their masks. They fail in opposite directions: isnet eats thin dark
-# parts (it tore a chunk out of the Smart Band's strap and bit a notch off the Buds Core case)
-# while birefnet leaves a thin dark strap intact. The full birefnet-general deleted the iPhone's front
-# view entirely). Whatever either one is sure about is product.
-SESSIONS = [new_session('isnet-general-use'), new_session('birefnet-general-lite')]
+# bria-rmbg, after measuring four of them on the same eight photos. isnet ate thin dark parts
+# (a chunk out of the Smart Band's strap, a notch off the Buds Core case) and on the white
+# iPhone 17e it kept 9.9% of the frame - outlines and nothing else. birefnet-general deleted the
+# second phone from a two-shot render and exhausted memory on this machine. birefnet-general-lite
+# was good everywhere except white-on-white, where it bit a piece out of the 17e's back. bria-rmbg
+# is right on all eight: both phones in a two-shot render, the headband hole and the strap loop
+# left open, the white phone whole. It costs about 100s a photo here, which is the price.
+SESSION = new_session('bria-rmbg')
 
 
-def union_alpha(img):
-    a = None
-    for s in SESSIONS:
-        m = np.array(remove(img, session=s, post_process_mask=True, only_mask=True))
-        a = m if a is None else np.maximum(a, m)
-    return a
+def model_alpha(img):
+    return np.array(remove(img, session=SESSION, post_process_mask=True, only_mask=True))
 
 
 def cut(path: Path, solid_cat: bool = False) -> Image.Image:
@@ -66,7 +65,7 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
         # colour always comes from the photo, only the alpha comes from the models - remove()
         # zeroes the RGB of everything it drops, which used to paint any filled hole black
         img = src.copy()
-        img.putalpha(Image.fromarray(union_alpha(src)))
+        img.putalpha(Image.fromarray(model_alpha(src)))
 
     # The model sometimes punches holes through a reflective screen - the Z Fold's folded display
     # came out with white tears in it. A hole that is ENCLOSED by the product and small is always
@@ -82,6 +81,7 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
         # silhouette, and filling it printed a white blob under the Galaxy S26.
         back = np.median(np.concatenate([rgb[:8, :8].reshape(-1, 3), rgb[:8, -8:].reshape(-1, 3),
                                          rgb[-8:, :8].reshape(-1, 3), rgb[-8:, -8:].reshape(-1, 3)]), axis=0)
+        prod = rgb[a > 200].mean(axis=0) if (a > 200).any() else back
         filled = np.zeros_like(a, dtype=bool)
         for lab, size in zip(*np.unique(holes, return_counts=True)):
             if lab == 0 or lab in edge:
@@ -89,7 +89,11 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
             if not solid_cat and size > area * 0.02:
                 continue
             m = holes == lab
-            if np.abs(rgb[m].mean(axis=0) - back).max() < 18:
+            hue = rgb[m].mean(axis=0)
+            # Backdrop alone is not enough to tell them apart: the white iPhone 17e is the same
+            # colour as the studio it stands in, and refusing to fill left a tear through its back.
+            # It is backdrop only if it also looks nothing like the product around it.
+            if np.abs(hue - back).max() < 18 and np.abs(hue - prod).max() > 40:
                 continue
             filled |= m
         if filled.any():
@@ -157,6 +161,20 @@ def main():
         except Exception as e:
             print(f'  ! {f}: {e}', flush=True)
     print(f'done {done}/{len(files)}')
+    # A colour shot that came out byte-identical to the main one is the same photo twice: the
+    # page falls back to the main when a colour has no file of its own, so the copy is 3 MB of
+    # payload that changes nothing on screen.
+    import hashlib
+    digest = lambda f: hashlib.md5(f.read_bytes()).hexdigest()
+    gone = 0
+    for f in sorted(OUT.glob('*.webp')):
+        if f.stem.endswith('__main'):
+            continue
+        main = OUT / (f.stem.split('__')[0] + '__main.webp')
+        if main.exists() and digest(main) == digest(f):
+            f.unlink(); gone += 1
+    if gone:
+        print(f'removed {gone} colour cutouts identical to their main shot')
 
 
 if __name__ == '__main__':

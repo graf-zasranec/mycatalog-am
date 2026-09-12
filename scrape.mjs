@@ -178,6 +178,28 @@ function jsonAfter(html, anchor) {
   }
   return null;
 }
+// REDstore sells a Sky Blue Galaxy S26 and the catalogue lists Black, White and Cobalt Violet.
+// Saying nothing is worse than saying what the shop says, so a run of colour words in the slug is
+// reported as the shop wrote it. The vocabulary is fixed, or a slug word becomes a colour.
+const COLOR_WORDS = new Set(('black white blue green pink yellow red purple violet gray grey silver gold '
+  + 'titanium graphite midnight starlight cream lavender lilac mint navy orange beige bronze sand olive '
+  + 'teal ivory charcoal jade obsidian porcelain indigo peach coral sky cobalt moonstone jet ultramarine '
+  + 'desert natural pistachio aqua amber ruby onyx pearl slate frost snow shadow icy awesome deep light dark')
+  .split(' '));
+function colorWords(text) {
+  const w = tokenized(text).split(' ').filter(Boolean);
+  const runs = [];
+  for (let i = 0; i < w.length; i++) {
+    if (!COLOR_WORDS.has(w[i])) continue;
+    const from = i;
+    while (i + 1 < w.length && COLOR_WORDS.has(w[i + 1])) i++;
+    runs.push(w.slice(from, i + 1));
+  }
+  // two separate colour runs in one slug is a two-tone render or a comparison, not an answer
+  if (runs.length !== 1) return null;
+  const r = runs[0].filter(x => !['light', 'dark', 'deep', 'awesome'].includes(x) || runs[0].length > 1);
+  return r.length ? r.map(x => x[0].toUpperCase() + x.slice(1)).join(' ') : null;
+}
 // A shop that names its colours in Armenian against a catalogue that names them in English:
 // terms.json already holds that translation, so read it backwards. Armenian inflects the ending
 // (Silver is Արծաթե in the dictionary and Արծաթագույն on pixel.am), so it compares on the stem.
@@ -447,8 +469,12 @@ async function crawlLd(urls, cap = 6) {
 }
 
 const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
+// A product sold in exactly one capacity, or one colour, needs no shop to state it: there is
+// only one answer. 133 offers were showing no capacity for a product that has a single tier.
+const soleValue = list => { const v = [...new Set((list || []).filter(x => x != null))]; return v.length === 1 ? v[0] : null; };
 const enrich = (o) => ({
   ...o,
+  storage: o.storage ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
   ram: o.ram ?? ramOf(o.title),
   // iSpace titles name the colour in Armenian ("Սև", "Արծաթագույն") but every shop slugs the
   // English name into the product URL, so the slug is the reliable place to read it from.
@@ -457,6 +483,8 @@ const enrich = (o) => ({
   // that publishes an image gets it now, which is 32 more offers that can say what they are.
   color: o.color ?? colorOf(o.title + ' ' + String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '), (phoneById[o.id] || {}).colors)
     ?? (o.image ? colorFromImage(o.image, (phoneById[o.id] || {}).colors) : null)
+    ?? soleValue((phoneById[o.id] || {}).colors)
+    ?? colorWords(String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '))
 });
 
 /* ---------- shops ---------- */
@@ -943,6 +971,28 @@ for (const key of names) {
   console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (dropped ? ` (${dropped} implausible dropped)` : ''));
   report.push({ shop: key, offers: best.size, models: models.size });
 }
+
+// A shop page that names no capacity still has a price, and the other shops say what each
+// capacity costs. If that price falls inside exactly ONE tier's band and outside every other,
+// the tier is not a guess - AllSell's 278 500 iPhone 15 sits inside the 128 GB band (262 000 to
+// 299 900) and nowhere near the 256 GB one, so it is a 128 GB. Ambiguous prices stay unstated.
+let placed = 0;
+for (const list of Object.values(offers)) {
+  const band = new Map();
+  for (const o of list) {
+    if (o.storage == null) continue;
+    const b = band.get(o.storage) || { lo: Infinity, hi: -Infinity };
+    b.lo = Math.min(b.lo, o.price); b.hi = Math.max(b.hi, o.price);
+    band.set(o.storage, b);
+  }
+  if (band.size < 2) continue;
+  for (const o of list) {
+    if (o.storage != null) continue;
+    const fits = [...band].filter(([, b]) => o.price >= b.lo && o.price <= b.hi);
+    if (fits.length === 1) { o.storage = fits[0][0]; placed++; }
+  }
+}
+if (placed) console.log(`${placed} capacity-less offers placed in a tier by their price`);
 
 for (const id of Object.keys(offers)) offers[id].sort((a, b) => a.price - b.price);
 

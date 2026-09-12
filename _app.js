@@ -1061,7 +1061,10 @@ function offerRow(o, lo, i, unit, cls) {
   return `<li${cls ? ` class="${cls}"` : ''}><a class="orow${o.price === lo ? ' best' : ''}" href="${esc(safeHref(o.url))}" target="_blank" rel="noopener noreferrer">
     <span class="rk num">${String(i + 1).padStart(2, '0')}</span>
     <span class="sh">${esc(shopName(o.shop))}</span>
-    <span class="vr">${esc([o.storage ? gb(o.storage, unit) : '', o.ram ? o.ram + ' ' + u('gb') + ' RAM' : '', tr(o.color, st.lang) || ''].filter(Boolean).join(' · ') || (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}</span>
+    <!-- capacity and colour only: RAM is a spec, not something a buyer picks between shops, and
+         a column that reads '256 GB' on one row and '256 GB · 12 GB RAM · Black' on the next is
+         three different answers to the same question. -->
+    <span class="vr">${esc([o.storage ? gb(o.storage, unit) : '', tr(o.color, st.lang) || ''].filter(Boolean).join(' · ') || (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
       ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>` : `<i class="ins">${esc(x('inStock'))}</i>`}</span>
