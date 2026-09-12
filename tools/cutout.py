@@ -90,10 +90,12 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
                 continue
             m = holes == lab
             hue = rgb[m].mean(axis=0)
-            # Backdrop alone is not enough to tell them apart: the white iPhone 17e is the same
-            # colour as the studio it stands in, and refusing to fill left a tear through its back.
-            # It is backdrop only if it also looks nothing like the product around it.
-            if np.abs(hue - back).max() < 18 and np.abs(hue - prod).max() > 40:
+            # A gap the colour of the studio is the studio showing through. For a phone that can
+            # still be a tear the model made in a white back - the iPhone 17e is the colour of the
+            # room it stands in - so there the product's own colour gets a say. For a watch or a
+            # headphone it never does: a perforation in a strap IS a hole, and filling it printed
+            # white dots down the band.
+            if np.abs(hue - back).max() < 24 and (not solid_cat or np.abs(hue - prod).max() > 40):
                 continue
             filled |= m
         if filled.any():
@@ -108,6 +110,22 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
         near = ndimage.binary_dilation(a >= 200, iterations=1)
         a[(a < 200) & ~near] = 0
         img.putalpha(Image.fromarray(a))
+
+    # The photo was shot on a white backdrop, so every half-transparent edge pixel is already a
+    # blend of product and studio. Laid over a dark page that blend reads as a white halo. Undo
+    # the blend - C = (observed - (1-a)*backdrop) / a - and the edge keeps the product's own
+    # colour at the alpha it earned. A press PNG is exempt: its edges were separated by whoever
+    # made it, against no backdrop at all, so there is nothing to undo.
+    al = np.array(img.getchannel('A')).astype(np.float32) / 255.0
+    soft = (al > 0.06) & (al < 0.96)
+    if not pre and soft.any():
+        rgb0 = np.array(src.convert('RGB')).astype(np.float32)
+        bk = np.median(np.concatenate([rgb0[:8, :8].reshape(-1, 3), rgb0[:8, -8:].reshape(-1, 3),
+                                       rgb0[-8:, :8].reshape(-1, 3), rgb0[-8:, -8:].reshape(-1, 3)]), axis=0)
+        px = np.array(img.convert('RGB')).astype(np.float32)
+        f = al[soft][:, None]
+        px[soft] = np.clip((px[soft] - (1 - f) * bk) / f, 0, 255)
+        img = Image.fromarray(np.dstack([px.astype(np.uint8), (al * 255).astype(np.uint8)]), 'RGBA')
 
     solid = img.getchannel('A').point(lambda v: 255 if v > 24 else 0)
     bbox = solid.getbbox()

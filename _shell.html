@@ -65,7 +65,7 @@
 }
 
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 /* rem, not px: a reader who raises their browser's default text size gets a bigger UI.
    Structural values (borders, small gaps) stay in px on purpose. */
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--ui);font-size:1rem;line-height:1.6;
@@ -265,6 +265,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* No overflow here: overflow-x:auto makes overflow-y compute to auto too, which clipped every
    filter dropdown to the 46px-tall bar on desktop. Wrapping costs a row and keeps them visible. */
 .fbar{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:26px 0 0;padding-bottom:4px}
+.fbar{scrollbar-width:none}
 .fbar::-webkit-scrollbar{display:none}
 .fdrop{position:relative;flex:none}
 .fdrop>summary{list-style:none;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 15px;
@@ -295,7 +296,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .rng input{position:absolute;left:0;top:4px;width:100%;height:18px;margin:0;background:none;-webkit-appearance:none;appearance:none;pointer-events:none}
 .rng input::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:18px;height:18px;border-radius:50%;
   background:var(--surface);border:2px solid var(--brand);box-shadow:var(--shadow-s);cursor:pointer}
-.rng input::-moz-range-thumb{pointer-events:auto;width:15px;height:15px;border-radius:50%;background:var(--surface);
+.rng input::-moz-range-thumb{pointer-events:auto;width:14px;height:14px;border-radius:50%;background:var(--surface);
   border:2px solid var(--brand);cursor:pointer}
 .rngv{display:flex;justify-content:space-between;font-size:0.8125rem;font-weight:600;padding-top:6px}
 

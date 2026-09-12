@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-IVMVZeKF5cHdTsPeVlsbdrbklQTLsiWfeCH9evpwbk8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-txTn9zq9n7Ffw70aw3N3sPFcERHGxkNG8QezMUV+xg0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 120 մոդել, 13 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -89,7 +89,7 @@
 }
 
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 /* rem, not px: a reader who raises their browser's default text size gets a bigger UI.
    Structural values (borders, small gaps) stay in px on purpose. */
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--ui);font-size:1rem;line-height:1.6;
@@ -289,6 +289,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* No overflow here: overflow-x:auto makes overflow-y compute to auto too, which clipped every
    filter dropdown to the 46px-tall bar on desktop. Wrapping costs a row and keeps them visible. */
 .fbar{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:26px 0 0;padding-bottom:4px}
+.fbar{scrollbar-width:none}
 .fbar::-webkit-scrollbar{display:none}
 .fdrop{position:relative;flex:none}
 .fdrop>summary{list-style:none;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 15px;
@@ -319,7 +320,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .rng input{position:absolute;left:0;top:4px;width:100%;height:18px;margin:0;background:none;-webkit-appearance:none;appearance:none;pointer-events:none}
 .rng input::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:18px;height:18px;border-radius:50%;
   background:var(--surface);border:2px solid var(--brand);box-shadow:var(--shadow-s);cursor:pointer}
-.rng input::-moz-range-thumb{pointer-events:auto;width:15px;height:15px;border-radius:50%;background:var(--surface);
+.rng input::-moz-range-thumb{pointer-events:auto;width:14px;height:14px;border-radius:50%;background:var(--surface);
   border:2px solid var(--brand);cursor:pointer}
 .rngv{display:flex;justify-content:space-between;font-size:0.8125rem;font-weight:600;padding-top:6px}
 
@@ -2095,6 +2096,19 @@ function render(keepScroll) {
 
 /* ================= events ================= */
 document.addEventListener('click', e => {
+  // The wordmark is the way home. Its href is already #/, but a hash that does not change fires
+  // no hashchange, so from the front page - scrolled down, a search typed, a filter on - clicking
+  // it did nothing at all. Home means the top of a clean catalogue, every time.
+  if (e.target.closest('.logo')) {
+    e.preventDefault();
+    st.q = ''; st.brands = []; st.cat = '';
+    for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch']) st[k] = D[k];
+    st.scr = D.scr; st.sort = D.sort;
+    save();
+    if (location.hash && location.hash !== '#/') location.hash = '#/'; else render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
   const anchor = e.target.closest('a[href^="#"]:not([href^="#/"])');
   if (anchor) {
     e.preventDefault();

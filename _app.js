@@ -1296,6 +1296,19 @@ function render(keepScroll) {
 
 /* ================= events ================= */
 document.addEventListener('click', e => {
+  // The wordmark is the way home. Its href is already #/, but a hash that does not change fires
+  // no hashchange, so from the front page - scrolled down, a search typed, a filter on - clicking
+  // it did nothing at all. Home means the top of a clean catalogue, every time.
+  if (e.target.closest('.logo')) {
+    e.preventDefault();
+    st.q = ''; st.brands = []; st.cat = '';
+    for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch']) st[k] = D[k];
+    st.scr = D.scr; st.sort = D.sort;
+    save();
+    if (location.hash && location.hash !== '#/') location.hash = '#/'; else render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
   const anchor = e.target.closest('a[href^="#"]:not([href^="#/"])');
   if (anchor) {
     e.preventDefault();
