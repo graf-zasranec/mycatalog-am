@@ -76,6 +76,15 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
         else:
             img.putalpha(Image.fromarray(a))
 
+    # A press PNG often ships its drop shadow in the alpha channel - the Xbox console stood on a
+    # grey pool. A shadow is a wide, faint region; an anti-aliased edge is a faint pixel right
+    # beside an opaque one. Keep what is within a few pixels of the solid product, drop the rest.
+    a = np.array(img.getchannel('A'))
+    if pre and ((a > 8) & (a < 200)).sum() > a.size * 0.01:
+        near = ndimage.binary_dilation(a >= 200, iterations=1)
+        a[(a < 200) & ~near] = 0
+        img.putalpha(Image.fromarray(a))
+
     solid = img.getchannel('A').point(lambda v: 255 if v > 24 else 0)
     bbox = solid.getbbox()
     if bbox:

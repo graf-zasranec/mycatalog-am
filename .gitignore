@@ -10,3 +10,12 @@ images/_src/
 # Regenerate with: node build.mjs
 index.embedded.html
 artifact.html
+
+# Photo uploads land in images/ root and are consumed into images/_src; the site never
+# serves them, and the repo root is the Pages publish root.
+images/*.png
+images/*.jpg
+images/*.jpeg
+images/*.webp
+images/*.avif
+images/*.zip
