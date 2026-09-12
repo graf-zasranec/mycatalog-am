@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-9j356ZDHFUpyqSv+Cvu6Ft80v18KFPJV2LUHpqKmJ+I='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-IPLzQqTw7SMP3iJjHE1gajfmS0B9rtxJmzRdMYv6iFI='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 120 մոդել, 12 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -268,7 +268,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cfixed b{color:var(--text)}
 .cgo{margin:28px 0 10px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .cnone{color:var(--brand);font-weight:600;font-size:0.9375rem}
-@media (max-width:640px){.cgrid{grid-template-columns:1fr 1fr}.ccard{padding:13px 14px;font-size:0.9375rem}}
+/* 1fr is minmax(auto,1fr): the tenth category's name is wider than a 390px half-column, so it
+   set the column floor and the page scrolled sideways. The column may shrink, the label wraps. */
+@media (max-width:640px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ccard{padding:13px 14px;font-size:0.9375rem}
+  .ccard b{min-width:0;overflow-wrap:anywhere}}
 .ctabs{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:22px 0 4px}
 .ctabs .ctab{display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 15px;border-radius:var(--pill);
   border:1px solid var(--line);background:var(--surface);color:var(--body);font-weight:600;font-size:0.9375rem;
@@ -801,8 +805,10 @@ const backLink = (href, label) =>
 // local build reads images/<id>.jpg; the published build injects IMGDATA with inline data URIs
 // A product added before its photo has been sourced has no file, and a 404 renders as the
 // browser's broken-image icon - which reads as a bug rather than as a missing photo. A
-// neutral tile says what is actually true, and works on either theme.
-const NOPHOTO = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect x="14" y="18" width="36" height="28" rx="4" fill="none" stroke="%238A93A6" stroke-width="2" opacity=".5"/%3E%3Ccircle cx="32" cy="32" r="6" fill="none" stroke="%238A93A6" stroke-width="2" opacity=".5"/%3E%3C/svg%3E';
+// neutral tile says what is actually true, and works on either theme. It carries width and
+// height: an SVG with only a viewBox reports naturalWidth 0, which is exactly what a genuinely
+// broken image reports, so every check that looks for one would flag it.
+const NOPHOTO = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxNCIgeT0iMTgiIHdpZHRoPSIzNiIgaGVpZ2h0PSIyOCIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==';
 const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];

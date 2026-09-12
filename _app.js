@@ -11,8 +11,10 @@ const backLink = (href, label) =>
 // local build reads images/<id>.jpg; the published build injects IMGDATA with inline data URIs
 // A product added before its photo has been sourced has no file, and a 404 renders as the
 // browser's broken-image icon - which reads as a bug rather than as a missing photo. A
-// neutral tile says what is actually true, and works on either theme.
-const NOPHOTO = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect x="14" y="18" width="36" height="28" rx="4" fill="none" stroke="%238A93A6" stroke-width="2" opacity=".5"/%3E%3Ccircle cx="32" cy="32" r="6" fill="none" stroke="%238A93A6" stroke-width="2" opacity=".5"/%3E%3C/svg%3E';
+// neutral tile says what is actually true, and works on either theme. It carries width and
+// height: an SVG with only a viewBox reports naturalWidth 0, which is exactly what a genuinely
+// broken image reports, so every check that looks for one would flag it.
+const NOPHOTO = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxNCIgeT0iMTgiIHdpZHRoPSIzNiIgaGVpZ2h0PSIyOCIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==';
 const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
