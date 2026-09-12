@@ -1,0 +1,5 @@
+# index.html pins a sha256 of its own inline script in the CSP. The HTML parser normalises CRLF
+# to LF before hashing, so a CRLF working copy hashes differently, the browser refuses to run the
+# script, and the page is blank. core.autocrlf=true was doing exactly that on every checkout.
+# Nothing in this repo may be line-ending converted.
+* -text

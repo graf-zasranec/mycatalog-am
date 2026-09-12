@@ -871,6 +871,66 @@ const SHOPS = {
     }
   },
 
+  vlv: {
+    name: 'VLV', site: 'https://vlv.am', note: 'electronics and home retailer',
+    async run() {
+      // Their sitemap lists 13 003 products as /Product/<number> with no name in the URL, so
+      // there is nothing to filter on before fetching. The title IS on the page, so the id ->
+      // title map is built once into data/vlv-index.json and only the products that matched one
+      // of ours are re-read each night. Rebuild it with: node tools/vlv-index.mjs
+      const IDX = 'data/vlv-index.json';
+      let index = {};
+      try { index = JSON.parse(fs.readFileSync(IDX, 'utf8')); } catch { }
+      const ids = Object.entries(index).filter(([, title]) => matchPhone(title)).map(([id]) => id);
+      // No index yet: fall back to the handful of products we already know the numbers for, so
+      // the shop still reports prices instead of nothing.
+      const SEEDS = ['44014', '41419', '39879'];
+      const out = [];
+      for (const vid of (ids.length ? ids : SEEDS)) {
+        const u = `https://vlv.am/en/Product/${vid}`;
+        const html = await get(u); await sleep(DELAY_MS);
+        if (!html || !safeUrl(u)) continue;
+        const p = ldProduct(html), o = ldOffer(p);
+        const title = clean((p && p.name) || (html.match(/<title>([^<]*)<\/title>/) || [])[1] || '')
+          .replace(/^s*Buys+/i, '').replace(/s+in the VLV[^]*$/i, '');
+        // the URL is /Product/44014 and names nothing, so the product is identified by its title
+        const id = matchPhone(title);
+        const price = Math.round(Number((o && o.price) || 0));
+        if (!id || !price || price < 5000) continue;
+        const img = safeUrl(String((Array.isArray(p.image) ? p.image[0] : p.image) || '')) || null;
+        out.push({ id, price, title, url: u, image: img,
+          storage: storageOf(title), ram: ramOf(title),
+          inStock: !/OutOfStock|SoldOut/i.test(String((o && o.availability) || '')) });
+      }
+      return out;
+    }
+  },
+
+  eldorado: {
+    name: 'Eldorado', site: 'https://eldorado.am', note: 'electronics retailer',
+    // 403 to an honestly identified crawler - robots.txt itself is 403, so there is no policy to
+    // read and no way in without pretending to be a browser. Same rule as zigzag: not done.
+    disabled: '403 to non-browser user agents, robots.txt unreadable',
+    async run() {
+      // Magento, the same shape as AllSell, if they ever answer an identified crawler.
+      const xml = await get('https://eldorado.am/sitemap.xml'); await sleep(DELAY_MS);
+      const urls = [...String(xml).matchAll(/<loc>(https:\/\/eldorado\.am\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      const out = [];
+      for (const u of urls) {
+        const id = matchPhone(u); if (!id) continue;
+        const html = await get(u); await sleep(DELAY_MS);
+        if (!html) continue;
+        const pi = html.indexOf('data-price-amount=' + D);
+        if (pi < 0) continue;
+        const price = Math.round(Number(html.slice(pi + 19, html.indexOf(D, pi + 19))));
+        const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
+        if (!price || price < 5000 || !title || !safeUrl(u)) continue;
+        out.push({ id, price, title, url: u, storage: storageOf(title) ?? storageOf(u), inStock: stockOf(html) });
+      }
+      return out;
+    }
+  },
+
   ibolit: {
     name: 'iBolit', site: 'https://ibolit.mobi', note: 'audio and gadget retailer',
     async run() {

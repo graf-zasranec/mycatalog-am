@@ -161,20 +161,6 @@ def main():
         except Exception as e:
             print(f'  ! {f}: {e}', flush=True)
     print(f'done {done}/{len(files)}')
-    # A colour shot that came out byte-identical to the main one is the same photo twice: the
-    # page falls back to the main when a colour has no file of its own, so the copy is 3 MB of
-    # payload that changes nothing on screen.
-    import hashlib
-    digest = lambda f: hashlib.md5(f.read_bytes()).hexdigest()
-    gone = 0
-    for f in sorted(OUT.glob('*.webp')):
-        if f.stem.endswith('__main'):
-            continue
-        main = OUT / (f.stem.split('__')[0] + '__main.webp')
-        if main.exists() and digest(main) == digest(f):
-            f.unlink(); gone += 1
-    if gone:
-        print(f'removed {gone} colour cutouts identical to their main shot')
 
 
 if __name__ == '__main__':

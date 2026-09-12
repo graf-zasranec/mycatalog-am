@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-12T09:11:07.500Z",
+ "generated": "2026-09-12T10:03:22.595Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
@@ -70,6 +70,12 @@
    "name": "iBolit",
    "site": "https://ibolit.mobi",
    "note": "audio and gadget retailer",
+   "warranty": null
+  },
+  "vlv": {
+   "name": "VLV",
+   "site": "https://vlv.am",
+   "note": "electronics and home retailer",
    "warranty": null
   }
  },
@@ -986,6 +992,18 @@
     "ram": null,
     "color": "Cosmic Orange",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "price": 569900,
+    "title": "Apple iPhone 17 Pro Max 256GB Cosmic Orange",
+    "url": "https://vlv.am/en/Product/41419",
+    "image": "https://vlv.am/public/uploads/images/10-09-2026/6aa2795b5e722.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": "Cosmic Orange",
+    "shop": "vlv"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1948,6 +1966,18 @@
     "ram": null,
     "color": "Sage",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17",
+    "price": 397900,
+    "title": "Apple iPhone 17 256GB Black",
+    "url": "https://vlv.am/en/Product/44014",
+    "image": "https://vlv.am/public/uploads/images/10-09-2026/6aa278683c134.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": "Black",
+    "shop": "vlv"
    },
    {
     "id": "apple-iphone-17",
@@ -10303,6 +10333,18 @@
     "ram": 12,
     "color": "Black",
     "shop": "vega"
+   },
+   {
+    "id": "honor-400-pro",
+    "price": 249900,
+    "title": "HONOR 400 Pro 12/256GB Midnight Black",
+    "url": "https://vlv.am/en/Product/39879",
+    "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40ef7765f0b.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": "Black",
+    "shop": "vlv"
    },
    {
     "id": "honor-400-pro",

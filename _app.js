@@ -81,6 +81,16 @@ if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';
+// The numeric filters are the same kind of hazard: st.ram = "abc" passes every guard above,
+// matches() then compares a number against a string and the catalogue renders empty with no
+// visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
+// every product that has no display at all.
+for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'pmin', 'pmax']) {
+  const v = Number(st[k]);
+  st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
+}
+if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
+if (st.scr && !['lt63', 'mid', 'gt67'].includes(st.scr)) st.scr = D.scr;
 const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
 
 // The price filter compares against each phone's CHEAPEST offer, so the slider bounds have to be
@@ -1280,7 +1290,11 @@ document.addEventListener('click', e => {
   const anchor = e.target.closest('a[href^="#"]:not([href^="#/"])');
   if (anchor) {
     e.preventDefault();
-    document.getElementById(anchor.getAttribute('href').slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const target = document.getElementById(anchor.getAttribute('href').slice(1));
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // A skip link that only scrolls leaves the keyboard where it was, which is the one thing the
+    // link exists to fix. #main carries tabindex="-1"; on #results and #savings this is a no-op.
+    target?.focus({ preventScroll: true });
     return;
   }
   // The whole card opens the product. The chevron in its corner had always been decoration
@@ -1403,7 +1417,7 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
-  $('[data-drop][open]').forEach(o => o.open = false);
+  $$('[data-drop][open]').forEach(o => o.open = false);
   closeAdd();
 });
 document.addEventListener('change', e => {

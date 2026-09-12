@@ -203,12 +203,17 @@ function build({ inline, standalone }) {
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
   const shell = rd('_shell.html');
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
-  const appJs = '\n'
+  let appJs = '\n'
     + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\nconst VERD=${JSON.stringify(VERD)};\n`
     + `const PRICES=${JSON.stringify(PRICES)};\n`
     + `const HISTORY=${JSON.stringify(HISTORY)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
     + imgdata + rd('_app.js') + '\n';
+  // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
+  // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here
+  // and the hash the browser computes disagree, the browser refuses to run the app at all, and
+  // the page comes up blank on the machine that built it. Emit what the parser will see.
+  appJs = appJs.replace(/\r\n/g, '\n');
   const script = '\n<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);
