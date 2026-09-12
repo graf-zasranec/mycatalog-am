@@ -160,6 +160,92 @@ function capacitiesOf(text) {
 // the RAM and there is no storage figure to report.
 const storageOf = text => { const c = capacitiesOf(text); if (!c.length) return null;
   const m = Math.max(...c); return m >= 64 ? m : null; };
+// one capacity from a single label ("512 GB", "16GB") - a shop's own attribute value, which is
+// not a title and needs none of the guessing storageOf does
+const capOf = lbl => { const c = capacitiesOf(lbl || ''); return c.length ? c[0] : null; };
+// The JSON object that starts at the first { after an anchor. Brace counting has to skip
+// strings, or a } inside a product name ends the object early.
+function jsonAfter(html, anchor) {
+  const a = html.indexOf(anchor); if (a < 0) return null;
+  const start = html.indexOf('{', a); if (start < 0) return null;
+  let depth = 0, str = false, esc = false;
+  for (let i = start; i < html.length; i++) {
+    const c = html[i];
+    if (str) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') str = false; continue; }
+    if (c === '"') str = true;
+    else if (c === '{') depth++;
+    else if (c === '}' && --depth === 0) { try { return JSON.parse(html.slice(start, i + 1)); } catch { return null; } }
+  }
+  return null;
+}
+// A shop that names its colours in Armenian against a catalogue that names them in English:
+// terms.json already holds that translation, so read it backwards. Armenian inflects the ending
+// (Silver is Արծաթե in the dictionary and Արծաթագույն on pixel.am), so it compares on the stem.
+const TERMS_FILE = fs.existsSync('data/terms.json') ? JSON.parse(fs.readFileSync('data/terms.json', 'utf8')) : {};
+function colorTranslated(label, colors) {
+  const stem = t => String(t).toLowerCase().replace(/[^\p{L}]/gu, '').slice(0, 5);
+  const a = stem(label);
+  if (a.length < 4) return null;
+  const hits = (colors || []).filter(c => (TERMS_FILE[c] || []).some(t => stem(t) === a));
+  return hits.length === 1 ? hits[0] : null;
+}
+// pixel.am states its variants in plain HTML. A dimension with exactly ONE option is the variant
+// on sale and can be reported; a dimension with several cannot, because the page carries a single
+// price and attributing it to one combination would be a guess.
+function pixelVariants(html, colors) {
+  const out = { storage: null, color: null };
+  for (const m of html.matchAll(/<div class="variant-property"[\s\S]*?<input/g)) {
+    const opts = [...m[0].matchAll(/class="variant-option[^"]*"[^>]*>/g)]
+      .map(o => clean((o[0].match(/title="([^"]*)"/) || [])[1] || ''))
+      .filter(Boolean);
+    const texts = [...m[0].matchAll(/class="variant-option[^"]*"[^>]*>([^<]+)</g)].map(o => clean(o[1])).filter(Boolean);
+    const vals = opts.length ? opts : texts;
+    if (vals.length !== 1) continue;
+    const cap = capOf(vals[0]);
+    if (cap) out.storage ??= cap;
+    else out.color ??= colorOf(vals[0], colors) || colorTranslated(vals[0], colors);
+  }
+  return out;
+}
+// A Magento configurable page describes every one of its real SKUs here: per-child price,
+// stock, colour and capacity. One page therefore yields several offers, each true.
+function magentoChildren(html, colors) {
+  const cfg = jsonAfter(html, '"jsonConfig":');
+  if (!cfg || !cfg.optionPrices || !cfg.index || !cfg.attributes) return [];
+  const attrs = Object.values(cfg.attributes);
+  const text = a => ((a.code || '') + ' ' + (a.label || ''));
+  const drive = attrs.find(a => /drive|storage|internal/i.test(text(a)));
+  const color = attrs.find(a => /colou?r/i.test(text(a)));
+  const ram = attrs.find(a => a !== drive && /ram|memory/i.test(text(a)));
+  const label = (a, child) => {
+    if (!a) return null;
+    const want = String((cfg.index[child] || {})[a.id] ?? '');
+    const opt = (a.options || []).find(o => String(o.id) === want);
+    return opt ? clean(opt.label) : null;
+  };
+  const out = [];
+  for (const [child, pr] of Object.entries(cfg.optionPrices)) {
+    const price = Math.round(Number((pr.finalPrice || {}).amount || 0));
+    if (!price || price < 5000) continue;
+    const col = label(color, child);
+    out.push({ price, storage: capOf(label(drive, child)), ram: capOf(label(ram, child)),
+      color: (col && colorOf(col, colors)) || col || null, inStock: pr.is_in_stock !== false });
+  }
+  return out;
+}
+// 3DPlanet renders its colour swatches from this endpoint, and is_active is 0 for a colour the
+// shop has sold out of - the page itself says nothing about which colours you can actually buy.
+async function planetColors(varId) {
+  let data;
+  try { data = JSON.parse(await get('https://3dplanet.am/variations/' + varId + '/modifiers')); } catch { return []; }
+  const mod = (Array.isArray(data) ? data : []).find(m =>
+    ((m.specification || {}).translations || []).some(t => /^colou?r$/i.test(t.name || '')));
+  return ((mod || {}).values || []).map(v => ({
+    name: clean(((v.value || {}).value) || ''),
+    delta: Math.round(Number(v.price || 0)),
+    active: v.is_active !== 0
+  })).filter(c => c.name);
+}
 // ...and the smaller one is RAM, but only when the title really lists both
 const ramOf = text => { const c = capacitiesOf(text); return c.length >= 2 ? Math.min(...c) : null; };
 // colour, matched against the colours we already know this phone ships in
@@ -366,7 +452,11 @@ const enrich = (o) => ({
   ram: o.ram ?? ramOf(o.title),
   // iSpace titles name the colour in Armenian ("Սև", "Արծաթագույն") but every shop slugs the
   // English name into the product URL, so the slug is the reliable place to read it from.
+  // Last resort, and it works surprisingly often: the shop names the colour in its own photo
+  // filename ("...17-pro-orng-1.png"). pixel.am was the only adapter using this; every shop
+  // that publishes an image gets it now, which is 32 more offers that can say what they are.
   color: o.color ?? colorOf(o.title + ' ' + String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '), (phoneById[o.id] || {}).colors)
+    ?? (o.image ? colorFromImage(o.image, (phoneById[o.id] || {}).colors) : null)
 });
 
 /* ---------- shops ---------- */
@@ -534,8 +624,11 @@ const SHOPS = {
           const u2 = h.slice(from, to);
           if (u2.includes('800_')) shot = u2;
         }
-        const color = shot ? colorFromImage(shot, (phoneById[id] || {}).colors) : null;
-        out.push({ id, price: Math.min(...prices), storage: storageOf(title) ?? storageOf(u), title, url: safe,
+        const cols = (phoneById[id] || {}).colors;
+        const v = pixelVariants(h, cols);
+        const color = v.color || (shot ? colorFromImage(shot, cols) : null);
+        out.push({ id, price: Math.min(...prices),
+          storage: storageOf(title) ?? storageOf(u) ?? v.storage, title, url: safe,
           image: shot && safeUrl(shot) ? shot : null, color, inStock: true });
       }
       return out;
@@ -671,6 +764,13 @@ const SHOPS = {
         // AllSell's 113 offers were being thrown away as sold out.
         const inStock = stockOf(html);
         const img = (html.match(/https:\/\/allsell\.am\/media\/catalog\/product\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null;
+        // A configurable product is ONE page and SEVERAL real SKUs. The visible price and title
+        // belong to whichever child Magento happened to preselect; jsonConfig carries every
+        // child's own price, stock, colour and capacity. Reading it is why the colour used to
+        // say "variant not stated", why a sold-out colour was published as available, and why
+        // the capacity came from parsing a title.
+        const kids = magentoChildren(html, (phoneById[id] || {}).colors);
+        if (kids.length) { for (const k of kids) out.push({ id, title, url: u, image: img, ...k }); continue; }
         out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock, image: img });
       }
       return out;
@@ -710,7 +810,36 @@ const SHOPS = {
           else if (pages.size < 40) pages.add(m[1]);
         }
       }
-      return crawlLd([...prods]);
+      const out = [];
+      for (const u of prods) {
+        const id = matchPhone(u); if (!id) continue;
+        const html = await get(u); await sleep(DELAY_MS);
+        if (!html || !safeUrl(u)) continue;
+        const p = ldProduct(html), o = ldOffer(p);
+        const title = clean((p && p.name) || '');
+        const img = safeUrl(String((Array.isArray(p && p.image) ? p.image[0] : p && p.image) || '')) || null;
+        // Each capacity is its own button with its own price and its own variation id, and
+        // /variations/<id>/modifiers answers with the colours, their price deltas and - the part
+        // that matters - is_active, which is 0 for a colour the shop has sold out of.
+        const tiers = [...html.matchAll(/class="storage-btn[^"]*"([^>]*)>\s*([^<]+?)\s*</g)].map(m => ({
+          price: Math.round(Number((m[1].match(/data-price="([\d.]+)"/) || [])[1] || 0)),
+          varId: (m[1].match(/data-id="(\d+)"/) || [])[1],
+          storage: capOf(m[2])
+        })).filter(t => t.price >= 5000 && t.varId);
+        if (!tiers.length) {
+          const price = Math.round(Number((o && o.price) || 0));
+          if (price >= 5000 && title) out.push({ id, price, title, url: u, image: img,
+            storage: storageOf(title) ?? storageOf(u), inStock: true });
+          continue;
+        }
+        for (const t of tiers) {
+          const cols = await planetColors(t.varId); await sleep(DELAY_MS);
+          if (!cols.length) { out.push({ id, price: t.price, title, url: u, image: img, storage: t.storage, inStock: true }); continue; }
+          for (const c of cols) out.push({ id, price: t.price + c.delta, title, url: u, image: img,
+            storage: t.storage, color: colorOf(c.name, (phoneById[id] || {}).colors) || c.name, inStock: c.active });
+        }
+      }
+      return out;
     }
   },
 

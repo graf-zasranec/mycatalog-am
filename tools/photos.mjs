@@ -131,7 +131,9 @@ if (!dry) fs.writeFileSync(`${SRC}/manifest.json`, JSON.stringify(man, null, 1))
 // SOURCES.txt used to be written by hand and drifted the moment a photo was replaced. It is a
 // copyright record, so it has to match what is actually on disk: regenerate it from the manifest.
 if (!dry) {
-  const rows = Object.entries(man).flatMap(([id, list]) => list.map(e => `${e.src}  ${e.shop}`)).sort();
+  // The shop each photo came from stays in manifest.json, which is a working file. SOURCES.txt
+  // is served from the site root, and a competitor's name belongs in the price list, nowhere else.
+  const rows = Object.entries(man).flatMap(([id, list]) => list.map(e => e.src)).sort();
   fs.writeFileSync('images/SOURCES.txt', [
     'Product photos in images/_src/ were downloaded from the Armenian shops that list the product,',
     'and from the manufacturers own press pages (samsung.com) where a shop only publishes a small',

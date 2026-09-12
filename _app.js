@@ -1049,11 +1049,19 @@ function constructView() {
 let OSEL = { id: null, storage: '', ram: '', color: '' };
 function initOSel(id) { if (OSEL.id !== id) OSEL = { id, storage: '', ram: '', color: '' }; }
 
+// AirPods Pro 3 ship in one configuration and one colour: there is no variant to state, so
+// saying "variant not stated" reads as missing data rather than as the truth. Only ask the
+// question of a product that actually has choices.
+const hasChoices = p => {
+  const v = (p && p.variants) || [];
+  return new Set(v.map(z => z.storage)).size > 1 || new Set(v.map(z => z.ram)).size > 1
+    || ((p && p.colors) || []).length > 1;
+};
 function offerRow(o, lo, i, unit, cls) {
   return `<li${cls ? ` class="${cls}"` : ''}><a class="orow${o.price === lo ? ' best' : ''}" href="${esc(safeHref(o.url))}" target="_blank" rel="noopener noreferrer">
     <span class="rk num">${String(i + 1).padStart(2, '0')}</span>
     <span class="sh">${esc(shopName(o.shop))}</span>
-    <span class="vr">${esc([o.storage ? gb(o.storage, unit) : '', o.ram ? o.ram + ' ' + u('gb') + ' RAM' : '', tr(o.color, st.lang) || ''].filter(Boolean).join(' · ') || x('variantUnknown'))}</span>
+    <span class="vr">${esc([o.storage ? gb(o.storage, unit) : '', o.ram ? o.ram + ' ' + u('gb') + ' RAM' : '', tr(o.color, st.lang) || ''].filter(Boolean).join(' · ') || (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
       ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>` : `<i class="ins">${esc(x('inStock'))}</i>`}</span>

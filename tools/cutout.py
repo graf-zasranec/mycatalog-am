@@ -40,7 +40,19 @@ SIDE = 1200        # canvas the product is centred on
 FILL = 0.92        # how much of that canvas the product's longest side takes
 MAXUP = 1.15       # never upscale a small source by more than this, it only adds blur
 
-session = new_session('isnet-general-use')
+# Two models, union of their masks. They fail in opposite directions: isnet eats thin dark
+# parts (it tore a chunk out of the Smart Band's strap and bit a notch off the Buds Core case)
+# while birefnet leaves a thin dark strap intact. The full birefnet-general deleted the iPhone's front
+# view entirely). Whatever either one is sure about is product.
+SESSIONS = [new_session('isnet-general-use'), new_session('birefnet-general-lite')]
+
+
+def union_alpha(img):
+    a = None
+    for s in SESSIONS:
+        m = np.array(remove(img, session=s, post_process_mask=True, only_mask=True))
+        a = m if a is None else np.maximum(a, m)
+    return a
 
 
 def cut(path: Path, solid_cat: bool = False) -> Image.Image:
@@ -48,7 +60,13 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
     # A press PNG that already has alpha is its own answer; running the model on it can only
     # lose detail at the edges it already has.
     pre = src.getchannel('A').getextrema()[0] < 250
-    img = src if pre else remove(src, session=session, post_process_mask=True)
+    if pre:
+        img = src
+    else:
+        # colour always comes from the photo, only the alpha comes from the models - remove()
+        # zeroes the RGB of everything it drops, which used to paint any filled hole black
+        img = src.copy()
+        img.putalpha(Image.fromarray(union_alpha(src)))
 
     # The model sometimes punches holes through a reflective screen - the Z Fold's folded display
     # came out with white tears in it. A hole that is ENCLOSED by the product and small is always
@@ -58,23 +76,25 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
     if n:
         edge = set(np.unique(np.concatenate([holes[0], holes[-1], holes[:, 0], holes[:, -1]])))
         area = a.size
+        rgb = np.array(src.convert('RGB')).astype(int)
+        # The studio backdrop, read off the four corners. A "hole" whose photo underneath is that
+        # colour is not a hole in the product at all - it is backdrop trapped by a concave
+        # silhouette, and filling it printed a white blob under the Galaxy S26.
+        back = np.median(np.concatenate([rgb[:8, :8].reshape(-1, 3), rgb[:8, -8:].reshape(-1, 3),
+                                         rgb[-8:, :8].reshape(-1, 3), rgb[-8:, -8:].reshape(-1, 3)]), axis=0)
         filled = np.zeros_like(a, dtype=bool)
         for lab, size in zip(*np.unique(holes, return_counts=True)):
             if lab == 0 or lab in edge:
                 continue
             if not solid_cat and size > area * 0.02:
                 continue
-            filled |= holes == lab
+            m = holes == lab
+            if np.abs(rgb[m].mean(axis=0) - back).max() < 18:
+                continue
+            filled |= m
         if filled.any():
             a[filled] = 255
-            # remove() does not just clear alpha, it zeroes the colour of every pixel it drops.
-            # Turning the alpha back on alone paints the hole BLACK - the iMac's pale wallpaper
-            # came back as tar. The colour is still in the photo, so take it from there.
-            rgb = np.array(img.convert('RGB'))
-            rgb[filled] = np.array(src.convert('RGB'))[filled]
-            img = Image.fromarray(np.dstack([rgb, a]), 'RGBA')
-        else:
-            img.putalpha(Image.fromarray(a))
+        img.putalpha(Image.fromarray(a))
 
     # A press PNG often ships its drop shadow in the alpha channel - the Xbox console stood on a
     # grey pool. A shadow is a wide, faint region; an anti-aliased edge is a faint pixel right
