@@ -91,6 +91,9 @@ button,input,select,textarea{font:inherit;color:inherit}
    turns into more cards per row rather than wider ones. */
 @media (min-width:1500px){:root{--maxw:1420px}}
 @media (min-width:1920px){:root{--maxw:1680px}}
+/* a 2560 monitor is not a wide laptop: six cards a row instead of five, and the reading
+   column still capped so a line of body text never runs the width of the screen. */
+@media (min-width:2300px){:root{--maxw:2040px}}
 
 /* ============ masthead: nav, cover and catalogue are ONE ivory field ============ */
 .mast{background:var(--bg);color:var(--text)}
@@ -160,7 +163,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* A 4px mark inside a 20px target: the button is the hit area, the ::before is all you see.
    The current slide grows sideways into a short bar instead of a big circle - it reads as
    "you are here" at a glance and still never gets taller than 4px. */
-.cv-dots button{width:20px;height:20px;padding:0;border:0;background:none;cursor:pointer;
+.cv-dots button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;
   display:grid;place-items:center}
 .cv-dots button::before{content:"";width:3px;height:3px;border-radius:999px;background:var(--line2);
   transition:width .3s ease,background .3s ease}
@@ -225,6 +228,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cnh{font-size:clamp(30px,4.6vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin:18px 0 0}
 .clead{color:var(--body);font-size:1.0625rem;max-width:58ch;margin:10px 0 0}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+/* the count must not push the name out of the card, at any width */
+.ccard>b{min-width:0;overflow-wrap:anywhere}.ccard .num{flex:none}
 .ccard{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;cursor:pointer;
   border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);color:var(--text);
   font-size:1rem;font-weight:700;text-align:left;transition:border-color .12s,background .12s,color .12s}

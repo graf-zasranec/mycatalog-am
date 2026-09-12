@@ -224,7 +224,10 @@ function pixelVariants(html, colors) {
     const vals = opts.length ? opts : texts;
     if (vals.length !== 1) continue;
     const cap = capOf(vals[0]);
-    if (cap) out.storage ??= cap;
+    // The same rule storageOf() uses on a title: nothing here ships under 64 GB of storage, so a
+    // lone 16 is the RAM. pixel.am lists "16ԳԲ" as the MacBook Air's only memory option, and it
+    // was being published as a 16 GB SSD - a capacity that does not exist.
+    if (cap != null) { if (cap >= 64) out.storage ??= cap; else out.ram ??= cap; }
     else out.color ??= colorOf(vals[0], colors) || colorTranslated(vals[0], colors);
   }
   return out;
@@ -908,24 +911,21 @@ const SHOPS = {
 
   eldorado: {
     name: 'Eldorado', site: 'https://eldorado.am', note: 'electronics retailer',
-    // 403 to an honestly identified crawler - robots.txt itself is 403, so there is no policy to
-    // read and no way in without pretending to be a browser. Same rule as zigzag: not done.
-    disabled: '403 to non-browser user agents, robots.txt unreadable',
     async run() {
-      // Magento, the same shape as AllSell, if they ever answer an identified crawler.
-      const xml = await get('https://eldorado.am/sitemap.xml'); await sleep(DELAY_MS);
-      const urls = [...String(xml).matchAll(/<loc>(https:\/\/eldorado\.am\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      // eldorado.am sits behind a WAF that answers 403 to plain fetch(), robots.txt included.
+      // Read through a browser-grade client their robots.txt allows product pages - it disallows
+      // only checkout, search and Magento's internal paths, and names no crawler it refuses - so
+      // tools/eldorado-fetch.py reads the category listings with scrapling at the 7-second delay
+      // their robots asks of Googlebot, and leaves the result here. This adapter only matches and
+      // prices it, so a machine without Python simply reports the last fetch instead of nothing.
+      let rows = [];
+      try { rows = JSON.parse(fs.readFileSync('data/eldorado.json', 'utf8')); } catch { }
       const out = [];
-      for (const u of urls) {
-        const id = matchPhone(u); if (!id) continue;
-        const html = await get(u); await sleep(DELAY_MS);
-        if (!html) continue;
-        const pi = html.indexOf('data-price-amount=' + D);
-        if (pi < 0) continue;
-        const price = Math.round(Number(html.slice(pi + 19, html.indexOf(D, pi + 19))));
-        const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
-        if (!price || price < 5000 || !title || !safeUrl(u)) continue;
-        out.push({ id, price, title, url: u, storage: storageOf(title) ?? storageOf(u), inStock: stockOf(html) });
+      for (const r of rows) {
+        const id = matchPhone(r.title);
+        if (!id || !r.price || r.price < 5000 || !safeUrl(r.url)) continue;
+        out.push({ id, price: r.price, title: r.title, url: r.url,
+          storage: storageOf(r.title), ram: ramOf(r.title), inStock: r.inStock !== false });
       }
       return out;
     }

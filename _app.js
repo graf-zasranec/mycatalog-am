@@ -628,9 +628,11 @@ function mastHero() {
         <span class="t"><img src="${IMG(r.p.id)}" alt="" loading="lazy"></span>
         <span>
           <span class="nm">${esc(fullName(r.p))}${r.storage ? ` · ${esc(gb(r.storage, r.p.variantUnit))}` : ''}</span>
-          <span class="amt num">${money(r.gap)} ֏<small>${esc(x('saveUpTo'))}</small></span>
+          <!-- The big number on a price-comparison site has to be a price. It used to be the
+               saving, so the front page shouted 331 400 for a laptop that costs 1 899 500. -->
+          <span class="amt num">${money(r.lo)} ֏<small>${esc(x('bestPrice'))}</small></span>
           <span class="bar"><i style="width:${Math.max(8, Math.round(r.gap / r.hi * 100))}%"></i></span>
-          <span class="rng"><span>${money(r.lo)}</span><span>${money(r.hi)}</span></span>
+          <span class="rng"><span>${esc(x('saveUpTo'))} ${money(r.gap)} ֏</span><span>${money(r.hi)}</span></span>
         </span></a>`).join('')}</div>
     </section>` : ''}`;
 }
@@ -957,7 +959,7 @@ const warrHTML = offs => {
   const ks = [...new Set(offs.map(o => o.shop))].filter(k => P.shops && P.shops[k]);
   return ks.length ? `<p class="warr"><b>${esc(x('warranty'))}:</b>${ks.map(k => {
     const w = shopWarranty(k), nm = P.shops[k].name || k;
-    return w ? `<a href="${esc(w)}" target="_blank" rel="noopener noreferrer">${esc(nm)}</a>`
+    return w ? `<a href="${esc(safeHref(w))}" target="_blank" rel="noopener noreferrer">${esc(nm)}</a>`
       : `<span class="nw">${esc(nm)} — ${esc(x('noWarranty'))}</span>`;
   }).join('')}</p>` : '';
 };
@@ -1119,7 +1121,8 @@ function offersView(p) {
     <div class="offilters">
       ${chips('storage', stors, t('f.storage'), gb)}
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
-      ${chips('color', cols, t('sec.colors'))}
+      <!-- the chip label is the shop's English word; the page is not -->
+      ${chips('color', cols, t('sec.colors'), v => tr(v, st.lang))}
     </div>
     <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>
       ${(() => {
