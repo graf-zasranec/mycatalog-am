@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T17:16:23.796Z",
+ "generated": "2026-09-13T17:23:50.661Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -158,7 +158,8 @@
     "sku": "R72450288",
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -171,7 +172,8 @@
     "sku": "R725967",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -184,7 +186,19 @@
     "sku": "R72450139",
     "ram": null,
     "color": "Silver",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "ibolit",
+    "price": 519000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-256gb-esim-silver/",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -344,6 +358,16 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "price": 529000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "price": 529900,
     "storage": 256,
     "title": "iPhone 17 Pro 256GB Dual eSIM (Cosmic Orange)",
@@ -352,7 +376,8 @@
     "inStock": true,
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "mobilecentre"
+    "shop": "mobilecentre",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -365,6 +390,17 @@
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "price": 575000,
+    "storage": 512,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-512gb-silver-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -389,7 +425,8 @@
     "sku": "IBL:80912",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -402,7 +439,8 @@
     "sku": "IBL:80913",
     "ram": null,
     "color": "Silver",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -572,7 +610,8 @@
     "sku": "IBL:80914",
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -585,7 +624,8 @@
     "sku": "IBL:80915",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -745,7 +785,8 @@
     "sku": "R724657",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -758,7 +799,8 @@
     "sku": "R724651",
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -771,7 +813,8 @@
     "sku": "R724684",
     "ram": null,
     "color": "Silver",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -781,7 +824,8 @@
     "color": "Deep Blue",
     "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-deep-blue/",
     "inStock": true,
-    "seeded": true
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -890,7 +934,8 @@
     "inStock": true,
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "mobilecentre"
+    "shop": "mobilecentre",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -966,6 +1011,26 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "price": 575000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "price": 619000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-sim-orange/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 625000,
     "title": "Apple iPhone 17 Pro Max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
@@ -987,7 +1052,8 @@
     "sku": "IBL:80918",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1000,7 +1066,19 @@
     "sku": "IBL:80919",
     "ram": null,
     "color": "Silver",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "price": 625000,
+    "storage": 512,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1180,7 +1258,8 @@
     "color": "Cosmic Orange",
     "url": "https://ibolit.mobi/product/iphone-17-pro-max-1tb-esim-cosmic-orange/",
     "inStock": true,
-    "seeded": true
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1231,6 +1310,16 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "price": 829000,
+    "storage": 1024,
+    "color": "Silver",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-1tb-sim-silver/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 839000,
     "title": "Apple iPhone 17 Pro Max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
@@ -1264,7 +1353,8 @@
     "sku": "IBL:80202",
     "ram": null,
     "color": "Silver",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1277,7 +1367,8 @@
     "sku": "IBL:80204",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1290,7 +1381,8 @@
     "sku": "IBL:80203",
     "ram": null,
     "color": "Cosmic Orange",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1361,7 +1453,8 @@
     "sku": "IBL:80208",
     "ram": null,
     "color": null,
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1374,7 +1467,8 @@
     "sku": "IBL:80209",
     "ram": null,
     "color": "White",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1387,7 +1481,8 @@
     "sku": "IBL:80210",
     "ram": null,
     "color": "Mist Blue",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1400,7 +1495,8 @@
     "sku": "IBL:80211",
     "ram": null,
     "color": "Sage",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1413,7 +1509,8 @@
     "sku": "IBL:80213",
     "ram": null,
     "color": "Black",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1426,6 +1523,17 @@
     "color": "Black",
     "inStock": true,
     "shop": "allsell"
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "ucom",
+    "price": 359900,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://shop.ucom.am/en/iphone17.html",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1501,6 +1609,16 @@
    },
    {
     "id": "apple-iphone-17",
+    "shop": "redstore",
+    "price": 378000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-black",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17",
     "price": 384000,
     "title": "iPhone 17 256GB Black eSim",
     "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
@@ -1510,7 +1628,8 @@
     "sku": "R730634",
     "ram": null,
     "color": "Black",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1523,7 +1642,8 @@
     "sku": "R730640",
     "ram": null,
     "color": "Blue",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1536,7 +1656,8 @@
     "sku": "R730652",
     "ram": null,
     "color": "Lavender",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1549,7 +1670,8 @@
     "sku": "R730662",
     "ram": null,
     "color": "Sage",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1562,7 +1684,8 @@
     "sku": "R730673",
     "ram": null,
     "color": "White",
-    "shop": "redstore"
+    "shop": "redstore",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1587,7 +1710,19 @@
     "inStock": true,
     "ram": null,
     "color": "Mist Blue",
-    "shop": "mobilecentre"
+    "shop": "mobilecentre",
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "ibolit",
+    "price": 395000,
+    "storage": 256,
+    "color": "Sage",
+    "url": "https://ibolit.mobi/product/iphone-17-256-sage-esim/",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -2170,7 +2305,8 @@
     "sku": "IBL:80904",
     "ram": null,
     "color": "Space Black",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-air",
@@ -2183,7 +2319,8 @@
     "sku": "IBL:80902",
     "ram": null,
     "color": "Sky Blue",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-air",
@@ -2196,7 +2333,8 @@
     "sku": "IBL:80907",
     "ram": null,
     "color": "Light Gold",
-    "shop": "ibolit"
+    "shop": "ibolit",
+    "esim": true
    },
    {
     "id": "apple-iphone-air",
@@ -2394,7 +2532,8 @@
     "inStock": true,
     "ram": null,
     "color": "White",
-    "shop": "mobilecentre"
+    "shop": "mobilecentre",
+    "esim": true
    },
    {
     "id": "apple-iphone-17e",
@@ -11674,6 +11813,17 @@
    },
    {
     "id": "apple-iphone-16-pro-max",
+    "shop": "redstore",
+    "price": 589000,
+    "storage": 512,
+    "color": "Black Titanium",
+    "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
     "price": 649900,
     "storage": 512,
     "title": "iPhone 16 Pro Max, 512 GB, Black Titanium",
@@ -16006,6 +16156,88 @@
     "url": "https://eldorado.am/en/shopbrand/sennheiser",
     "inStock": true,
     "seeded": true
+   }
+  ],
+  "apple-iphone-18-pro": [
+   {
+    "id": "apple-iphone-18-pro",
+    "shop": "redstore",
+    "price": 799000,
+    "storage": 256,
+    "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-18-pro",
+    "shop": "redstore",
+    "price": 879000,
+    "storage": 256,
+    "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-18-pro",
+    "shop": "redstore",
+    "price": 959000,
+    "storage": 512,
+    "url": "https://redstore.am/en/product/iphone-18-pro-512gb-burgundy-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-18-pro",
+    "shop": "redstore",
+    "price": 1099000,
+    "storage": 1024,
+    "url": "https://redstore.am/en/product/iphone-18-pro-1tb-burgundy-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
+   }
+  ],
+  "apple-iphone-18-pro-max": [
+   {
+    "id": "apple-iphone-18-pro-max",
+    "shop": "redstore",
+    "price": 899000,
+    "storage": 256,
+    "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-18-pro-max",
+    "shop": "redstore",
+    "price": 979000,
+    "storage": 256,
+    "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-18-pro-max",
+    "shop": "redstore",
+    "price": 1059000,
+    "storage": 512,
+    "url": "https://redstore.am/en/product/iphone-18-pro-max-512gb-black-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-18-pro-max",
+    "shop": "redstore",
+    "price": 1199000,
+    "storage": 1024,
+    "url": "https://redstore.am/en/product/iphone-18-pro-max-1tb-black-esim",
+    "inStock": true,
+    "seeded": true,
+    "esim": true
    }
   ]
  }

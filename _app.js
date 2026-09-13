@@ -822,13 +822,14 @@ document.addEventListener('pointerover', e => {
   if (cyc) cycStep(cyc);
 });
 
-let SEL = { id: null, storage: null, ram: null };
+let SEL = { id: null, storage: null, ram: null, esim: null };
 function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
   // start on whatever the cheapest real offer actually is
   SEL = {
     id: p.id,
+    esim: null,
     storage: (offs.find(o => o.storage != null) || {}).storage ?? (p.variants[0] || {}).storage ?? null,
     ram: null
   };
@@ -851,6 +852,7 @@ function visibleOffers(p) {
     o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
   }
   if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
+  if (SEL.esim != null) o = o.filter(v => !!v.esim === SEL.esim);
   return o;
 }
 function railHTML(offs) {
@@ -882,6 +884,11 @@ function detailView(p) {
   const simSpec = ((p.connectivity || {}).sim || '').toLowerCase().replace(/no (physical sim|esim)[^,;)]*/g, '');
   const simOpts = /sim/.test(simSpec)
     ? [['Nano-SIM', /nano/.test(simSpec)], ['eSIM', /esim/.test(simSpec)]] : [];
+  // Only a picker when a shop actually sells BOTH and charges differently for them. Everywhere
+  // else there is nothing to choose and buttons would be a lie, so it stays a stated fact.
+  const simAll = offersFor(p);
+  const simPick = simOpts.length === 2 && simOpts[0][1] && simOpts[1][1]
+    && simAll.some(o => o.esim) && simAll.some(o => !o.esim);
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
   const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
   const sim = DATA.filter(q => q.id !== p.id).sort((a, b) =>
@@ -924,7 +931,10 @@ function detailView(p) {
           ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
-            <div class="bs">${simOpts.map(([n, ok]) => `<span class="${ok ? '' : 'na'}"${ok ? '' : ` title="${esc(x('noSim'))}"`}>${n}</span>`).join('')}</div></div>` : ''}
+            <div class="bs">${simPick
+              ? simOpts.map(([n]) => { const want = n === 'eSIM';
+                  return `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`; }).join('')
+              : simOpts.map(([n, ok]) => `<span class="${ok ? '' : 'na'}"${ok ? '' : ` title="${esc(x('noSim'))}"`}>${n}</span>`).join('')}</div></div>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}</span>
             <b class="num">${money(shownPrice)} ֏</b>
@@ -1449,10 +1459,15 @@ document.addEventListener('click', e => {
   }
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-storage],[data-ram]');
+  const opt = e.target.closest('[data-storage],[data-ram],[data-esim]');
   if (opt) {
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
+    // second click on the chosen one clears it, so "either" is reachable without a third button
+    if (opt.dataset.esim !== undefined) {
+      const want = opt.dataset.esim === '1';
+      SEL.esim = SEL.esim === want ? null : want;
+    }
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
     if (opt.dataset.storage !== undefined) {

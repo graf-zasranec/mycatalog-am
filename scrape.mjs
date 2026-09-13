@@ -1085,9 +1085,13 @@ try {
     const id = matchPhone(title);
     if (!id || !price) continue;
     const storage = cap ? +cap : null;
+    // eSIM is part of the identity, not a detail: REDstore sells the same capacity twice, once
+    // dual-eSIM and once with a tray, 80,000 apart. Keying dedupe on shop+storage alone threw
+    // the second one away and left the product page with nothing to choose between.
+    const esim = /(^|[^a-z])esim([^a-z]|$)/i.test(url) || /esim/i.test(title) || undefined;
     const list = offers[id] ||= [];
-    if (list.some(o => o.shop === shop && (o.storage ?? null) === storage)) continue;
-    list.push({ id, shop, price: +price, storage, color: color || undefined, url, inStock: true, seeded: true });
+    if (list.some(o => o.shop === shop && (o.storage ?? null) === storage && !!o.esim === !!esim)) continue;
+    list.push({ id, shop, price: +price, storage, color: color || undefined, url, inStock: true, seeded: true, esim });
     seeded++;
   }
 } catch (e) { if (e.code !== 'ENOENT') console.warn('listings.csv:', e.message); }
@@ -1132,6 +1136,14 @@ const HAND = {
   yerevanmobile: { name: 'Yerevan Mobile', site: 'https://yerevanmobile.am', note: 'phone retailer' },
 };
 for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v, warranty: null };
+
+// Which SIM you get is normally not a choice a shop prices - but for the iPhone 17 and 18 Pro
+// families it is: REDstore sells the 18 Pro 256GB at 799,000 as dual-eSIM and 879,000 with a
+// tray. Tagging the offer lets the product page turn SIM into a real picker exactly where the
+// two differ, and leave it as a stated fact everywhere else.
+for (const list of Object.values(offers)) {
+  for (const o of list) if (/(^|[^a-z])esim([^a-z]|$)/i.test(o.url || '') || /esim/i.test(o.title || '')) o.esim = true;
+}
 
 // One shop page can be reached under several colours, and each reading wrote its own row: the
 // Xiaomi 17 Pro Max carried the same allsell URL four times, and 328 of 1600 offers site-wide
