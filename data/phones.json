@@ -6035,7 +6035,7 @@
     "tier": "flagship",
     "released": "2025-10",
     "priceAmd": 2230900,
-    "priceAmdMax": 2533900,
+    "priceAmdMax": 2230900,
     "popularity": 52,
     "accent": "#26262A",
     "display": {
@@ -6058,11 +6058,6 @@
         "ram": 36,
         "storage": 2048,
         "priceAmd": 2230900
-      },
-      {
-        "ram": 48,
-        "storage": 2048,
-        "priceAmd": 2533900
       }
     ],
     "body": {
@@ -8795,6 +8790,395 @@
     "summaryEn": "The Redmi 15C under another badge, with 33 W charging and a dedicated card slot.",
     "unsure": [
       "popularity"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "asus-zenbook-14-ux3405ca-oled",
+    "brand": "ASUS",
+    "name": "Zenbook 14 UX3405CA OLED",
+    "tier": "upper-mid",
+    "released": "2025-01",
+    "priceAmd": 539000,
+    "priceAmdMax": 647900,
+    "popularity": 58,
+    "accent": "#4A4F57",
+    "display": {
+      "size": 14,
+      "type": "FHD+ OLED",
+      "refresh": 60,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 265H"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 75,
+      "wired": 65
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 539000
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 647900
+      }
+    ],
+    "colors": [
+      "Jasper Gray"
+    ],
+    "summaryEn": "A 1.28 kg OLED touch ultrabook on Intel's Core Ultra 200H, with a 75 Wh battery.",
+    "unsure": [
+      "popularity",
+      "display.refresh"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "asus-vivobook-16-ultra7-oled",
+    "brand": "ASUS",
+    "name": "Vivobook 16 OLED (Core Ultra 7)",
+    "tier": "mid",
+    "released": "2025-03",
+    "priceAmd": 458000,
+    "priceAmdMax": 458000,
+    "popularity": 46,
+    "accent": "#53565C",
+    "display": {
+      "size": 16,
+      "type": "3.2K OLED",
+      "refresh": 120,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 255H"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6E"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 458000
+      }
+    ],
+    "colors": [
+      "Matte Gray"
+    ],
+    "summaryEn": "Sixteen inches of OLED and a terabyte of storage, without an ultrabook's price.",
+    "unsure": [
+      "popularity",
+      "display.type",
+      "display.refresh",
+      "battery.capacity",
+      "connectivity.wifi"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "hp-omnibook-ultra-flip-14",
+    "brand": "HP",
+    "name": "OmniBook Ultra Flip 14",
+    "tier": "premium",
+    "released": "2025-01",
+    "priceAmd": 759000,
+    "priceAmdMax": 759000,
+    "popularity": 40,
+    "accent": "#2F3B49",
+    "display": {
+      "size": 14,
+      "type": "3K OLED",
+      "refresh": 120,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 5 226V"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics 130V",
+      "type": "integrated"
+    },
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 759000
+      }
+    ],
+    "colors": [
+      "Gray"
+    ],
+    "summaryEn": "A convertible that folds flat, on a 2880x1800 OLED running 48-120 Hz.",
+    "unsure": [
+      "popularity",
+      "battery"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "honor-magicbook-x16-plus",
+    "brand": "Honor",
+    "name": "MagicBook X16 Plus",
+    "tier": "mid",
+    "released": "2025-04",
+    "priceAmd": 369900,
+    "priceAmdMax": 369900,
+    "popularity": 44,
+    "accent": "#5A6068",
+    "display": {
+      "size": 16,
+      "type": "2.5K IPS",
+      "refresh": 120,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core 5 220H"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 75,
+      "wired": 65
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 369900
+      }
+    ],
+    "colors": [
+      "Space Gray"
+    ],
+    "summaryEn": "A 2.5K 120 Hz matte 16-inch at 1.79 kg, with a 75 Wh battery and a terabyte inside.",
+    "unsure": [
+      "popularity",
+      "connectivity.wifi"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "macOS",
+    "id": "apple-macbook-pro-16-m3-pro",
+    "brand": "Apple",
+    "name": "MacBook Pro 16 M3 Pro",
+    "tier": "premium",
+    "released": "2023-10",
+    "priceAmd": 1199900,
+    "priceAmdMax": 1199900,
+    "popularity": 52,
+    "accent": "#22242A",
+    "display": {
+      "size": 16.2,
+      "type": "Liquid Retina XDR",
+      "refresh": 120,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Apple M3 Pro"
+    },
+    "graphics": {
+      "name": "Apple 18-core GPU",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 100
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6E"
+    },
+    "variants": [
+      {
+        "ram": 18,
+        "storage": 512,
+        "priceAmd": 1199900
+      }
+    ],
+    "colors": [
+      "Space Black",
+      "Silver"
+    ],
+    "summaryEn": "The last 16-inch Pro before the M4, still on the same 120 Hz XDR panel.",
+    "unsure": [
+      "popularity",
+      "graphics.name"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "microsoft-surface-laptop-7-13",
+    "brand": "Microsoft",
+    "name": "Surface Laptop 7 13.8",
+    "tier": "upper-mid",
+    "released": "2024-06",
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "popularity": 38,
+    "accent": "#3C4652",
+    "display": {
+      "size": 13.8,
+      "type": "PixelSense Flow",
+      "refresh": 120,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Snapdragon X Plus"
+    },
+    "graphics": {
+      "name": "Qualcomm Adreno",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 54
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499000
+      }
+    ],
+    "colors": [
+      "Platinum"
+    ],
+    "summaryEn": "An Arm laptop that lasts a working day, on a 120 Hz touch display.",
+    "unsure": [
+      "popularity",
+      "colors",
+      "battery.capacity"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "asus-vivobook-s15-m3502qa-oled",
+    "brand": "ASUS",
+    "name": "Vivobook S 15 M3502QA OLED",
+    "tier": "mid",
+    "released": "2022-06",
+    "priceAmd": 329900,
+    "priceAmdMax": 329900,
+    "popularity": 36,
+    "accent": "#4C5158",
+    "display": {
+      "size": 15.6,
+      "type": "2.8K OLED",
+      "refresh": 60,
+      "touch": false
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 5800H"
+    },
+    "graphics": {
+      "name": "AMD Radeon Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 329900
+      }
+    ],
+    "colors": [
+      "Indie Black"
+    ],
+    "summaryEn": "An older Ryzen chassis kept alive by the OLED panel bolted to the front of it.",
+    "unsure": [
+      "popularity",
+      "chipset.name",
+      "display.type",
+      "colors"
+    ]
+  },
+  {
+    "category": "laptop",
+    "os": "Windows 11",
+    "id": "asus-vivobook-15x-m1503-oled",
+    "brand": "ASUS",
+    "name": "Vivobook 15X M1503 OLED",
+    "tier": "budget",
+    "released": "2022-08",
+    "priceAmd": 214900,
+    "priceAmdMax": 214900,
+    "popularity": 34,
+    "accent": "#585D64",
+    "display": {
+      "size": 15.6,
+      "type": "2.8K OLED",
+      "refresh": 120,
+      "touch": false
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 5600H"
+    },
+    "graphics": {
+      "name": "AMD Radeon Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 214900
+      }
+    ],
+    "colors": [
+      "Quiet Blue"
+    ],
+    "summaryEn": "The cheapest OLED in the catalogue, at 1.7 kg.",
+    "unsure": [
+      "popularity",
+      "chipset.name",
+      "colors"
     ]
   }
 ]

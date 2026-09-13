@@ -682,6 +682,7 @@ function refresh() {
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
   syncFilters(); save();
+  moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
 }
 
 /* ================= product page — bold panel + price-spread rail ================= */
@@ -1332,57 +1333,87 @@ function render(keepScroll) {
 // or run on a timer, and no media query can undo that.
 const RM = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const lastPrice = new Map();          // product id -> the price its rail showed last render
-let barObs = null;
+let fxObs = null;
 
-// Counts up to the number already written in the element. It reads the digits out of the text
-// instead of taking them as an argument, so the same helper serves "231 900 ֏" and a bare count
-// without either caller having to say which it is.
+// The element around a price is rarely just text - a card's price carries the old price in a <s>
+// and the ֏ in its own <span>. Writing to el.textContent would delete both, so the count walks to
+// the first text node holding digits and rewrites only that.
+function digitNode(el) {
+  const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  for (let n; (n = w.nextNode());) if (/\d/.test(n.nodeValue)) return n;
+  return null;
+}
+
+// Counts up to the number already on the page. It reads the digits out of the text instead of
+// taking them as an argument, so one helper serves "231 900 ֏" and a bare count alike.
 function rollUp(el, dur = 640) {
+  const node = digitNode(el);
+  if (!node) return;
   // Must end on a digit: a greedy [\d ]* swallows the space before the ֏, and every frame of
   // the count then renders "108 885֏" with the sign jammed against the number.
-  const txt = el.textContent, m = txt.match(/\d(?:[\d  ]*\d)?/);
+  const txt = node.nodeValue, m = txt.match(/\d(?:[\d  ]*\d)?/);
   if (!m) return;
   const end = +m[0].replace(/\D/g, '');
   if (!Number.isFinite(end) || end < 10) return;
   const pre = txt.slice(0, m.index), post = txt.slice(m.index + m[0].length), t0 = performance.now();
   const step = now => {
     const k = Math.min(1, (now - t0) / dur);
-    el.textContent = pre + money(end * (1 - Math.pow(1 - k, 3))) + post;
-    if (k < 1) requestAnimationFrame(step); else el.textContent = txt;   // land on the exact string
+    node.nodeValue = pre + money(end * (1 - Math.pow(1 - k, 3))) + post;
+    if (k < 1) requestAnimationFrame(step); else node.nodeValue = txt;   // land on the exact string
   };
   requestAnimationFrame(step);
 }
 
+// Every price on every view: catalogue cards, the product rail, each offer row, the savings
+// strip and the compare table. Off-screen ones wait for the viewport rather than finishing
+// unseen behind the fold, which is also what keeps a 138-card catalogue from counting at once.
+// Compare is deliberately absent: its price sits in a plain .c cell alongside every other spec
+// value, so there is no selector that catches the price without also catching "6.83 in".
+const PRICE_SEL = '.pcard .pprice, .pprice2 > b.num, .olist .orow .pr, .save-grid .amt';
+
 function moneyFx() {
-  if (RM()) return;
+  // The count runs for everyone. Digits settling in place is not motion across the screen -
+  // nothing travels, nothing scales - so prefers-reduced-motion has nothing to object to. The
+  // two effects that DO move, the glint sweeping over a row and a bar growing, stay gated below.
+  const still = RM();
+  fxObs?.disconnect();
+  fxObs = new IntersectionObserver((es, o) => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    o.unobserve(e.target);
+    if ('w' in e.target.dataset) e.target.style.width = e.target.dataset.w;   // a savings bar
+    else rollUp(e.target, 520);
+  }), { threshold: .3 });
+
   const big = $('.pprice2 > b.num');
   const pid = (location.hash.match(/^#\/p\/([^?]+)/) || [])[1];
+  let skip = null;
   if (big) {
     const now = +big.textContent.replace(/\D/g, '');
     const was = pid ? lastPrice.get(pid) : null;
-    // 5 - picking another capacity or colour changes the price. Flash the new figure rather
-    // than rolling it: a roll starting from zero reads as the page still loading, when what
-    // actually happened is that the answer changed.
-    if (was && was !== now) { big.classList.remove('fx-flash'); void big.offsetWidth; big.classList.add('fx-flash'); }
-    else rollUp(big);                                    // 1 - the price counts up on arrival
+    // Picking another capacity or colour changes the price. Flash the new figure rather than
+    // rolling it: a roll starting from zero reads as the page still loading, when what actually
+    // happened is that the answer changed.
+    if (was && was !== now) {
+      big.classList.remove('fx-flash'); void big.offsetWidth; big.classList.add('fx-flash');
+      skip = big;
+    }
     if (pid) lastPrice.set(pid, now);
   }
-  // 2 - the three counts in the hero bar. Never the fourth: it is a date, not a quantity.
+  // What is already on screen counts now; only what is below the fold waits to be scrolled to.
+  // Handing everything to the observer made the visible prices depend on the first intersection
+  // callback, which never arrives at all in a tab that is not painting.
+  const seen = el => { const r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; };
+  $$(PRICE_SEL).forEach(el => {
+    if (el === skip) return;
+    if (seen(el)) rollUp(el, 520); else fxObs.observe(el);
+  });
+  // The counts in the hero bar. Never the fourth: it is a date, not a quantity.
   $$('.cv-bar div:nth-child(-n+3) b.num').forEach(el => rollUp(el, 520));
-  // 3 - a savings bar fills when it reaches the viewport, so the growth is actually watched
-  // instead of finishing while the section is still below the fold.
-  const bars = $$('.save-grid .bar i');
-  if (bars.length) {
-    barObs?.disconnect();
-    barObs = new IntersectionObserver((es, o) => es.forEach(e => {
-      if (!e.isIntersecting) return;
-      e.target.style.width = e.target.dataset.w;
-      o.unobserve(e.target);
-    }), { threshold: .4 });
-    bars.forEach(i => { i.dataset.w = i.style.width; i.style.width = '0%'; barObs.observe(i); });
-  }
-  // 4 - the cheapest offer is the answer to the whole page, so it gets one sweep of light
-  const first = $('#offList li:first-child .orow');
+  if (still) return;
+  // A savings bar grows from nothing once it reaches the viewport.
+  $$('.save-grid .bar i').forEach(i => { i.dataset.w = i.style.width; i.style.width = '0%'; fxObs.observe(i); });
+  // The cheapest offer is the answer to the whole page, so it gets one sweep of light.
+  const first = $('#offList li:first-child .orow') || $('.olist li:first-child .orow');
   if (first) {
     first.classList.add('fx-glint');
     first.addEventListener('animationend', () => first.classList.remove('fx-glint'), { once: true });
