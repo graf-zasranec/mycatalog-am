@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-T1IrGnBAX5CsECZdTReS/uz2AJeXkubmE+SxobVWEN4='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-hGxAqGkvib+iRTnTYm2InRxVA9XK9im9ENa31Nuqgk0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 159 մոդել, 16 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -460,14 +460,16 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .cs button:hover{transform:scale(1.07)}
 .cs button.on{border-color:var(--text);box-shadow:0 0 0 3px color-mix(in oklab,var(--text) 14%,transparent)}
 .bs{display:flex;gap:8px;flex-wrap:wrap}
-.bs button{height:40px;padding:0 16px;border-radius:var(--pill);cursor:pointer;font-size:0.844rem;font-weight:600;
+.bs button,.bs span{height:40px;padding:0 16px;border-radius:var(--pill);cursor:pointer;font-size:0.844rem;font-weight:600;
   border:1.5px solid var(--line2);background:var(--surface);color:var(--text);transition:background .12s,border-color .12s}
 .bs button:hover{border-color:var(--text)}
 .bs button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
 /* A configuration the maker sells that no Armenian shop stocks. Struck through and faded rather
    than removed: the reader needs to see the option exists AND that nobody here has it. Still
    clickable, because its specs are still worth reading. */
-.bs button.na{color:var(--muted);border-color:var(--line);text-decoration:line-through;
+/* SIM is stated, not picked, so it is a span: no hover, no pointer, nothing to click. */
+.bs span{display:inline-flex;align-items:center;cursor:default}
+.bs button.na,.bs span.na{color:var(--muted);border-color:var(--line);text-decoration:line-through;
   text-decoration-thickness:1.5px;opacity:.62}
 .bs button.na.on{background:var(--muted);color:var(--bg);border-color:var(--muted);opacity:.8}
 .cs button.na{opacity:.42;filter:grayscale(.55)}
@@ -877,7 +879,7 @@ const X = {
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
-    warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը'
+    warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', noSim: 'այս հեռախոսը չի աջակցում'
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
@@ -893,7 +895,7 @@ const X = {
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
-    warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию'
+    warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', noSim: 'этот телефон не поддерживает'
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
@@ -909,7 +911,7 @@ const X = {
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
-    warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant'
+    warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', noSim: 'this phone does not support it'
   }
 };
 
@@ -1544,7 +1546,6 @@ function refresh() {
 }
 
 /* ================= product page — bold panel + price-spread rail ================= */
-const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 /* ---- spec text in the reader language -------------------------------------
    Spec VALUES live in phones.json in English. Rather than keep 22 x 2 translated
@@ -1575,72 +1576,8 @@ function tr(v, lang) {
 }
 /* TR_END */
 
-/* ---- colour swatches ----------------------------------------------------
-   Shops name colours freely ("Awesome Lime", "Titanium Jetblack", "Icy Blue"),
-   so an exact lookup table goes stale the moment a new phone lands. SWATCH holds
-   the brand-signature colours that must be right; everything else is resolved from
-   the colour words in the name, with light/deep modifiers applied. */
-const SWATCH = {
-  'Cosmic Orange': '#C8622A', 'Deep Blue': '#24405F', 'Silver': '#D9DADE', 'Space Black': '#26262A',
-  'Cloud White': '#EDEDEA', 'Light Gold': '#E4CFA8', 'Sky Blue': '#A9C4D9', 'Mist Blue': '#A9C4D9',
-  'Sage': '#9DAE96', 'Lavender': '#C9BCE0', 'Ultramarine': '#4A56C8', 'Teal': '#3F9E93',
-  'Starlight': '#E8E3DA', 'Midnight': '#1F2430', 'Moonstone': '#C9CBD1', 'Iris': '#7A7FD0',
-  'Jade': '#4E9E7E', 'Porcelain': '#EFEBE4', 'Obsidian': '#22252A', 'Peony': '#E7A9BC',
-  'Rose Gold': '#DDB1A0', 'Pink Gold': '#E5BBB0', 'Titanium Pinkgold': '#E0B9AE',
-  'Titanium Black': '#2E2E32', 'Titanium Gray': '#8E8E93', 'Titanium Silverblue': '#A9B4C2',
-  'Titanium Whitesilver': '#DCDCDE', 'Poco Yellow': '#F5CB00', 'Arctic Dawn': '#DDE6EF',
-  'Blush': '#E9B4AC', 'Citrus': '#E7C24A', 'Indigo': '#4B5490'
-};
-// head-noun colour words, matched from the end of the name
-const HUE = {
-  black: '#1B1B1F', white: '#F0F0EE', silver: '#D9DADE', gray: '#8E8E93', grey: '#8E8E93',
-  graphite: '#4A4A50', titanium: '#B7B8BC', obsidian: '#22252A', eclipse: '#1A1A1E', shadow: '#6E7076',
-  blue: '#2E6FA3', navy: '#2A3A57', ocean: '#2A5F8F', sky: '#A9C4D9', cyan: '#4FB6C4', teal: '#3F9E93',
-  ultramarine: '#4A56C8', iris: '#7A7FD0', starry: '#3E5C8A', icy: '#CFE0EC',
-  green: '#3E8E5A', mint: '#B9E3C6', lime: '#C3D852', olive: '#6F7355', sage: '#9DAE96',
-  jade: '#4E9E7E', nebula: '#4E7F63', emerald: '#2E7D5B',
-  yellow: '#EFC94C', gold: '#D9B36A', lightning: '#E3C56B', sand: '#DCC9A8',
-  orange: '#C8622A', coral: '#E4705E', peach: '#F0BFA0', red: '#C03A32',
-  pink: '#EFB4C4', rose: '#D9A0A6', peony: '#E7A9BC',
-  purple: '#7B5FA8', violet: '#7B5FA8', lavender: '#C9BCE0', aurora: '#8E6FB8', dreamy: '#9A7FC0',
-  midnight: '#1F2430', starlight: '#E8E3DA', moonstone: '#C9CBD1', moonlight: '#E9E9E4',
-  storm: '#3A3D42', porcelain: '#EFEBE4', natural: '#C9C1B6', desert: '#C2A288',
-  cream: '#EFE6D5', charcoal: '#43464B', pistachio: '#BFD3A0', cobalt: '#3B4FA8',
-  lilac: '#C3AEDA', icyblue: '#BBD6E8'
-};
-// Materials, not colours. "Black Titanium" and "Natural Titanium" both end in the material,
-// so a plain last-word-wins scan painted every Apple Watch Ultra swatch the same grey.
-// These only answer when no real colour word is present ("Titanium" on its own).
-// 'shadow' sits last in Samsung's "Blue Shadow" / "Silver Shadow" but qualifies the colour
-// rather than naming it, exactly like the material words do.
-const MATERIAL = new Set(['titanium', 'aluminium', 'aluminum', 'ceramic', 'steel', 'glass', 'leather', 'shadow']);
-const _hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
-const _mix = (h, amt) => {           // amt > 0 lightens toward white, < 0 darkens
-  const t = amt > 0 ? 255 : 0, k = Math.abs(amt);
-  return '#' + _hex(h).map(v => Math.round(v + (t - v) * k).toString(16).padStart(2, '0')).join('');
-};
-function swatch(name) {
-  if (SWATCH[name]) return SWATCH[name];
-  const words = String(name || '').toLowerCase().replace(/[^a-z]+/g, ' ').trim().split(' ').filter(Boolean);
-  let base = null, material = null;
-  // scan from the end: colour names put the head noun last ("Coral Green" is green)
-  for (let i = words.length - 1; i >= 0 && !base; i--) {
-    const w = words[i];
-    if (MATERIAL.has(w)) { material = material || HUE[w] || null; continue; }
-    if (HUE[w]) { base = HUE[w]; break; }
-    // compounds the shops write as one word: jetblack, pinkgold, jadegreen, whitesilver
-    let bestLen = 0;
-    for (const k in HUE) if (w.endsWith(k) && k.length > bestLen) { base = HUE[k]; bestLen = k.length; }
-  }
-  if (!base) base = material;
-  if (!base) return '#9AA0A6';
-  if (words.some(w => ['light', 'icy', 'ice', 'pale'].includes(w))) base = _mix(base, .34);
-  if (words.some(w => ['deep', 'dark', 'midnight', 'jet', 'obsidian', 'storm'].includes(w))) base = _mix(base, -.3);
-  return base;
-}
 
 const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
-const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
 // 'main' is a copy of one of the colours under a different filename, so it would show twice
 // The second shot of a crossfading card starts empty and is filled on the first swap. An <img>
 // with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
@@ -1697,14 +1634,13 @@ document.addEventListener('pointerover', e => {
   if (cyc) cycStep(cyc);
 });
 
-let SEL = { id: null, color: null, storage: null, ram: null };
+let SEL = { id: null, storage: null, ram: null };
 function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
   // start on whatever the cheapest real offer actually is
   SEL = {
     id: p.id,
-    color: (offs.find(o => o.color) || {}).color || (p.colors || [])[0] || null,
     storage: (offs.find(o => o.storage != null) || {}).storage ?? (p.variants[0] || {}).storage ?? null,
     ram: null
   };
@@ -1727,10 +1663,6 @@ function visibleOffers(p) {
     o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
   }
   if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
-  if (SEL.color) {
-    const m = o.filter(v => !v.color || v.color === SEL.color);
-    if (m.length) o = m;
-  }
   return o;
 }
 function railHTML(offs) {
@@ -1751,19 +1683,17 @@ function detailView(p) {
   const lo = offs.length ? offs[0].price : null;
   const variant = p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
   const shownPrice = lo ?? variant.priceAmd ?? p.priceAmd;
-  const shot = colorPhoto(p, SEL.color) || IMG(p.id);
-  // A colour with no photo of its own falls back to the main shot, so a product where only some
-  // colours are photographed showed three different swatches over one identical picture. Where
-  // that happens, offer only the colours we can actually show; where NO colour has its own photo
-  // there is nothing misleading about one picture, so keep the full list.
-  const allCols = p.colors || [];
-  const shot4 = allCols.filter(c => colorPhoto(p, c));
-  // A swatch row that cannot change the picture is a lie. One colour has nothing to choose, and
-  // several colours with no photos of their own - every Pixel - all fall back to the same main
-  // shot, so clicking them looked broken. Show the row only when two or more colours differ.
-  const cols = shot4.length >= 2 ? shot4 : [];
+  const shot = IMG(p.id);
   // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
   // option blocks below simply do not render
+  // SIM is a fact, not a choice - no shop prices a phone by its SIM tray - so these are spans,
+  // not buttons. It still belongs beside the capacity: an Armenian carrier hands you a physical
+  // SIM over the counter, and a phone with no tray for it is a wasted trip. Struck through here
+  // means "this phone does not have it", the same thing it means one row down.
+  // Negated clauses are cut first, or "no eSIM in most markets" reads as eSIM support.
+  const simSpec = ((p.connectivity || {}).sim || '').toLowerCase().replace(/no (physical sim|esim)[^,;)]*/g, '');
+  const simOpts = /sim/.test(simSpec)
+    ? [['Nano-SIM', /nano/.test(simSpec)], ['eSIM', /esim/.test(simSpec)]] : [];
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
   const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
   const sim = DATA.filter(q => q.id !== p.id).sort((a, b) =>
@@ -1794,7 +1724,7 @@ function detailView(p) {
       </div>
       <h1 class="pname">${esc(fullName(p))}</h1>
       <div class="pgrid">
-        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}${SEL.color ? ' — ' + esc(SEL.color) : ''}" id="hpShot" fetchpriority="high"></div>
+        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
           <p class="lede2">${esc(summary)}</p>
           <!-- No colour picker. Shops spell one finish eight different ways - Titanium Silverblue,
@@ -1805,6 +1735,8 @@ function detailView(p) {
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
           ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
+          ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
+            <div class="bs">${simOpts.map(([n, ok]) => `<span class="${ok ? '' : 'na'}"${ok ? '' : ` title="${esc(x('noSim'))}"`}>${n}</span>`).join('')}</div></div>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}</span>
             <b class="num">${money(shownPrice)} ֏</b>
@@ -1956,8 +1888,8 @@ function constructView() {
 /* ================= all offers for one model ================= */
 // The product page shows offers for the CHOSEN colour/capacity. This page shows every offer
 // the shops list for the model, and lets you slice it by shop, capacity and colour.
-let OSEL = { id: null, storage: '', ram: '', color: '' };
-function initOSel(id) { if (OSEL.id !== id) OSEL = { id, storage: '', ram: '', color: '' }; }
+let OSEL = { id: null, storage: '', ram: '' };
+function initOSel(id) { if (OSEL.id !== id) OSEL = { id, storage: '', ram: '' }; }
 
 // AirPods Pro 3 ship in one configuration and one colour: there is no variant to state, so
 // saying "variant not stated" reads as missing data rather than as the truth. Only ask the
@@ -1986,12 +1918,10 @@ function offersView(p) {
   const all = offersFor(p);
   const stors = [...new Set(all.map(o => o.storage).filter(v => v != null))].sort((a, b) => a - b);
   const rams = [...new Set(all.map(o => o.ram).filter(v => v != null))].sort((a, b) => a - b);
-  const cols = [...new Set(all.map(o => o.color).filter(Boolean))];
-  // filtering is by what you are buying - capacity, memory, colour - not by which shop
+  // filtering is by what you are buying - capacity and memory - not by which shop
   const list = all.filter(o =>
     (!OSEL.storage || String(o.storage) === OSEL.storage) &&
-    (!OSEL.ram || String(o.ram) === OSEL.ram) &&
-    (!OSEL.color || o.color === OSEL.color));
+    (!OSEL.ram || String(o.ram) === OSEL.ram));
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
   const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
 
@@ -2331,11 +2261,10 @@ document.addEventListener('click', e => {
   }
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-color],[data-storage],[data-ram]');
+  const opt = e.target.closest('[data-storage],[data-ram]');
   if (opt) {
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
-    if (opt.dataset.color !== undefined) SEL.color = opt.dataset.color;
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
     if (opt.dataset.storage !== undefined) {
