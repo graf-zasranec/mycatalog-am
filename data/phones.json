@@ -9240,5 +9240,578 @@
       "ASUS Vivobook 15X OLED M1503",
       "Vivobook 15X OLED M1503"
     ]
+  },
+  {
+    "id": "yandex-station-2",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station 2",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 119900,
+    "priceAmdMax": 119900,
+    "popularity": 30,
+    "accent": "#C8372D",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 119900
+      }
+    ],
+    "colors": [
+      "Black",
+      "Blue"
+    ],
+    "summaryEn": "The full-size Alice speaker, with a Zigbee hub for the rest of the house.",
+    "unsure": [
+      "popularity",
+      "released",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "yandex-station-lite",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station Lite",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 51900,
+    "priceAmdMax": 51900,
+    "popularity": 30,
+    "accent": "#C8372D",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 51900
+      }
+    ],
+    "colors": [
+      "Yellow",
+      "Black",
+      "Purple"
+    ],
+    "summaryEn": "The smallest Alice speaker - a voice assistant on a cable, not a stereo.",
+    "unsure": [
+      "popularity",
+      "released",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "yandex-station-max",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station Max",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 149900,
+    "priceAmdMax": 149900,
+    "popularity": 30,
+    "accent": "#C8372D",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 149900
+      }
+    ],
+    "colors": [
+      "Blue",
+      "Graphite"
+    ],
+    "summaryEn": "The loud one: room-filling sound and a clock face on the front.",
+    "unsure": [
+      "popularity",
+      "released",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "yandex-station-mini-3-pro",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station Mini 3 Pro",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 79000,
+    "priceAmdMax": 79000,
+    "popularity": 30,
+    "accent": "#C8372D",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 79000
+      }
+    ],
+    "colors": [
+      "Black",
+      "Gray"
+    ],
+    "summaryEn": "A palm-sized Alice speaker with a Zigbee hub built in.",
+    "unsure": [
+      "popularity",
+      "released",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "yandex-station-street",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station Street",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 129000,
+    "priceAmdMax": 129000,
+    "popularity": 30,
+    "accent": "#C8372D",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 129000
+      }
+    ],
+    "colors": [
+      "Green",
+      "Black"
+    ],
+    "summaryEn": "Alice in a splash-proof shell, meant to leave the kitchen.",
+    "unsure": [
+      "popularity",
+      "released",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "yandex-station-mini",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station Mini",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 51900,
+    "priceAmdMax": 51900,
+    "popularity": 30,
+    "accent": "#C8372D",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 51900
+      }
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "summaryEn": "The older palm-sized Alice speaker, still the cheapest way in.",
+    "unsure": [
+      "popularity",
+      "released",
+      "connectivity"
+    ]
+  },
+  {
+    "id": "yandex-smart-lamp",
+    "category": "appliance",
+    "brand": "Yandex",
+    "name": "Smart Lamp E14",
+    "tier": "budget",
+    "released": "2023-01",
+    "priceAmd": 5900,
+    "priceAmdMax": 5900,
+    "popularity": 20,
+    "accent": "#E8B33A",
+    "display": {},
+    "chipset": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 4"
+    },
+    "os": "Alice",
+    "variants": [
+      {
+        "priceAmd": 5900
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "summaryEn": "A colour-changing E14 bulb Alice can dim by voice.",
+    "unsure": [
+      "popularity",
+      "released"
+    ],
+    "aliases": [
+      "Yandex Smart Lamp",
+      "Yandex Smart lamp 00017 E14",
+      "Smart Lamp E14"
+    ]
+  },
+  {
+    "id": "garmin-fenix-8",
+    "category": "watch",
+    "brand": "Garmin",
+    "name": "Fenix 8",
+    "tier": "premium",
+    "released": "2024-08",
+    "priceAmd": 389000,
+    "priceAmdMax": 389000,
+    "popularity": 42,
+    "accent": "#1B2A38",
+    "display": {
+      "size": 1.4,
+      "type": "AMOLED",
+      "resolution": "454x454",
+      "touch": true
+    },
+    "chipset": {},
+    "battery": {
+      "capacity": 0
+    },
+    "variantUnit": "mm",
+    "connectivity": {
+      "bluetooth": "5.0",
+      "wifi": "Wi-Fi 5",
+      "nfc": true
+    },
+    "os": "Garmin OS",
+    "variants": [
+      {
+        "storage": 47,
+        "priceAmd": 389000
+      }
+    ],
+    "colors": [
+      "Black",
+      "Slate Gray"
+    ],
+    "summaryEn": "Multi-week battery, maps on the wrist, and a torch built into the bezel.",
+    "unsure": [
+      "popularity",
+      "battery",
+      "display.size"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-tab-s10-ultra",
+    "category": "tablet",
+    "brand": "Samsung",
+    "name": "Galaxy Tab S10 Ultra",
+    "tier": "premium",
+    "released": "2024-10",
+    "priceAmd": 479000,
+    "priceAmdMax": 479000,
+    "popularity": 46,
+    "accent": "#8A8F98",
+    "display": {
+      "size": 14.6,
+      "type": "Dynamic AMOLED 2X",
+      "resolution": "1848x2960",
+      "refresh": 120,
+      "touch": true
+    },
+    "chipset": {
+      "name": "MediaTek Dimensity 9300+",
+      "process": "4 nm"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "13 MP",
+      "ultrawide": "8 MP",
+      "front": "12 MP",
+      "video": "4K@30fps"
+    },
+    "battery": {
+      "capacity": 11200,
+      "wired": 45
+    },
+    "body": {
+      "weight": 718,
+      "ip": "IP68"
+    },
+    "connectivity": {
+      "network": "Wi-Fi",
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "5.3",
+      "nfc": false,
+      "sim": "Wi-Fi only"
+    },
+    "cardSlot": true,
+    "os": "Android 14, One UI 6",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 479000
+      }
+    ],
+    "colors": [
+      "Moonstone Gray",
+      "Platinum Silver"
+    ],
+    "summaryEn": "Fourteen and a half inches of AMOLED, with the S Pen in the box.",
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-watch-7",
+    "category": "watch",
+    "brand": "Samsung",
+    "name": "Galaxy Watch 7",
+    "tier": "mid",
+    "released": "2024-07",
+    "priceAmd": 129000,
+    "priceAmdMax": 129000,
+    "popularity": 44,
+    "accent": "#C9C3B6",
+    "variantUnit": "mm",
+    "display": {
+      "size": 1.5,
+      "type": "Super AMOLED",
+      "resolution": "480x480",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Exynos W1000",
+      "process": "3 nm"
+    },
+    "battery": {
+      "capacity": 425
+    },
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 4",
+      "nfc": true
+    },
+    "os": "Wear OS 5, One UI Watch 6",
+    "variants": [
+      {
+        "storage": 44,
+        "priceAmd": 129000
+      }
+    ],
+    "colors": [
+      "Cream",
+      "Green"
+    ],
+    "summaryEn": "The first 3 nm smartwatch chip, and the sensor array that came with it.",
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "apple-watch-series-10",
+    "category": "watch",
+    "brand": "Apple",
+    "name": "Apple Watch Series 10",
+    "tier": "upper-mid",
+    "released": "2024-09",
+    "priceAmd": 189000,
+    "priceAmdMax": 189000,
+    "popularity": 58,
+    "accent": "#1C1C1E",
+    "variantUnit": "mm",
+    "display": {
+      "size": 1.96,
+      "type": "LTPO3 OLED",
+      "resolution": "416x496",
+      "refresh": 60,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Apple S10 SiP"
+    },
+    "battery": {
+      "capacity": 327
+    },
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 4",
+      "nfc": true
+    },
+    "os": "watchOS 11",
+    "variants": [
+      {
+        "storage": 46,
+        "priceAmd": 189000
+      }
+    ],
+    "colors": [
+      "Jet Black",
+      "Silver",
+      "Rose Gold"
+    ],
+    "summaryEn": "The thinnest Apple Watch, on the widest screen Apple has put on one.",
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "apple-ipad-air-11-m3",
+    "category": "tablet",
+    "brand": "Apple",
+    "name": "iPad Air 11 M3",
+    "tier": "upper-mid",
+    "released": "2025-03",
+    "priceAmd": 289000,
+    "priceAmdMax": 289000,
+    "popularity": 54,
+    "accent": "#4A6fA5",
+    "display": {
+      "size": 11,
+      "type": "Liquid Retina",
+      "resolution": "1640x2360",
+      "refresh": 60,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Apple M3",
+      "process": "3 nm"
+    },
+    "camera": {
+      "modules": 1,
+      "main": "12 MP",
+      "front": "12 MP",
+      "video": "4K@60fps"
+    },
+    "battery": {
+      "capacity": 28900,
+      "wired": 20
+    },
+    "body": {
+      "weight": 460
+    },
+    "connectivity": {
+      "network": "Wi-Fi",
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "5.3",
+      "nfc": false,
+      "sim": "Wi-Fi only"
+    },
+    "cardSlot": false,
+    "os": "iPadOS 18",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 289000
+      }
+    ],
+    "colors": [
+      "Blue",
+      "Purple",
+      "Starlight",
+      "Space Gray"
+    ],
+    "summaryEn": "An M3 in the cheap iPad Air body - the Pro chip without the Pro screen.",
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "apple-ipad-pro-11-m4",
+    "category": "tablet",
+    "brand": "Apple",
+    "name": "iPad Pro 11 M4",
+    "tier": "premium",
+    "released": "2024-05",
+    "priceAmd": 489000,
+    "priceAmdMax": 489000,
+    "popularity": 56,
+    "accent": "#2B2B2E",
+    "display": {
+      "size": 11,
+      "type": "Tandem OLED",
+      "resolution": "1668x2420",
+      "refresh": 120,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Apple M4",
+      "process": "3 nm"
+    },
+    "camera": {
+      "modules": 1,
+      "main": "12 MP",
+      "front": "12 MP",
+      "video": "4K@60fps"
+    },
+    "battery": {
+      "capacity": 31290,
+      "wired": 20
+    },
+    "body": {
+      "weight": 444
+    },
+    "connectivity": {
+      "network": "Wi-Fi",
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "5.3",
+      "nfc": false,
+      "sim": "Wi-Fi only"
+    },
+    "cardSlot": false,
+    "os": "iPadOS 18",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 489000
+      }
+    ],
+    "colors": [
+      "Space Black",
+      "Silver"
+    ],
+    "summaryEn": "Two OLED panels stacked for brightness, in the thinnest thing Apple makes.",
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ]
   }
 ]

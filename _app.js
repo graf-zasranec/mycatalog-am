@@ -959,8 +959,10 @@ function detailView(p) {
         <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}${SEL.color ? ' — ' + esc(SEL.color) : ''}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
           <p class="lede2">${esc(summary)}</p>
-          ${cols.length ? `<div class="og"><label>${esc(t('sec.colors'))} <b id="colName">${esc(tr(SEL.color || '', st.lang))}</b></label>
-            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" style="--c:${esc(swatch(c))}" title="${esc(tr(c, st.lang))}${sold(p, 'color', c) ? '' : ' — ' + esc(x('notSold'))}" aria-label="${esc(tr(c, st.lang))}${sold(p, 'color', c) ? '' : ', ' + esc(x('notSold'))}" aria-pressed="${c === SEL.color}"></button>`).join('')}</div></div>` : ''}
+          <!-- No colour picker. Shops spell one finish eight different ways - Titanium Silverblue,
+               Titanium Silver Blue, Silver Blue Titanium - so the row filled with near-duplicate
+               chips that all led to the same phone. Capacity is the choice that moves the price. -->
+
           ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
           ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
@@ -1134,7 +1136,7 @@ function offerRow(o, lo, i, unit, cls) {
     <!-- capacity and colour only: RAM is a spec, not something a buyer picks between shops, and
          a column that reads '256 GB' on one row and '256 GB · 12 GB RAM · Black' on the next is
          three different answers to the same question. -->
-    <span class="vr">${esc([o.storage ? gb(o.storage, unit) : '', tr(o.color, st.lang) || ''].filter(Boolean).join(' · ') || (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}</span>
+    <span class="vr">${esc(o.storage ? gb(o.storage, unit) : (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
       ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>` : `<i class="ins">${esc(x('inStock'))}</i>`}</span>
@@ -1174,7 +1176,6 @@ function offersView(p) {
       ${chips('storage', stors, t('f.storage'), gb)}
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
       <!-- the chip label is the shop's English word; the page is not -->
-      ${chips('color', cols, t('sec.colors'), v => tr(v, st.lang))}
     </div>
     <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>
       ${(() => {

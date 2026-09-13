@@ -372,7 +372,9 @@ if (process.argv[2] === '--selftest') {
     [null, 'Tempered Glass for iPhone 15'],
     [null, 'Чехол для iPhone 15 Pro'],
     [null, 'Պատյան iPhone 15-ի համար'],
-    [null, 'Apple Watch Series 10'],
+    // Was asserted to match nothing while the catalogue had no Series 10. It carries one now,
+    // so the right assertion is that it finds that watch rather than falling through to a phone.
+    ['apple-watch-series-10', 'Apple Watch Series 10'],
     ['apple-iphone-15', 'Սմարթ հեռախոս APPLE IPHONE 15 128GB (BK) (MTP03HX/A)'],   // still a phone
     ['apple-iphone-15', 'iPhone 15, 128 ԳԲ, Pink'],
   ];
