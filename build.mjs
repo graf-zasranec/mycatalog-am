@@ -14,6 +14,10 @@ for (const { id, ...r } of JSON.parse(rd('data/verdicts.json'))) VERD[id] = r;
 // real shop offers from scrape.mjs; optional, the site falls back to estimates without it
 const HISTORY = fs.existsSync('data/history.json') ? JSON.parse(rd('data/history.json')) : { points: {} };
 const TERMS = JSON.parse(rd('data/terms.json'));
+// Announced, not yet on sale. Kept OUT of phones.json on purpose: these have no spec sheet we
+// can stand behind and no offer anyone can buy today, and inventing either is the one thing
+// this catalogue must not do. A name, a shop's pre-order price and a date is all we know.
+const COMING = fs.existsSync('data/coming.json') ? JSON.parse(rd('data/coming.json')) : { when: {}, items: [] };
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 
 // A configuration a shop actually sells is a real configuration. phones.json carries the spec
@@ -200,6 +204,11 @@ function build({ inline, standalone }) {
       main[p.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
     } else console.warn('  ! missing image for', p.id);
   }
+  for (const c of COMING.items || []) {
+    const cut = `${CUT}/${c.id}__main.webp`;
+    if (fs.existsSync(cut)) main[c.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
+    else console.warn('  ! missing image for', c.id, '(coming soon)');
+  }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
   const shell = rd('_shell.html');
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
@@ -208,6 +217,7 @@ function build({ inline, standalone }) {
     + `const PRICES=${JSON.stringify(PRICES)};\n`
     + `const HISTORY=${JSON.stringify(HISTORY)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
+    + `const COMING=${JSON.stringify(COMING)};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here

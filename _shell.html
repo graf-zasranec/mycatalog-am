@@ -199,6 +199,27 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 
 /* ---- savings strip: real spread between shops, the thing only this site knows ---- */
+/* Announced, not yet on sale. Reads as a strip of its own rather than as catalogue cards, so
+   nobody mistakes a pre-order price for a price you can pay in a shop today. */
+.soon-sec{margin-top:52px;border-top:1px solid var(--line);padding-top:26px}
+.soon-hd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.soon-tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--bg);background:var(--brand);border-radius:var(--pill);padding:4px 10px}
+.soon-hd h2{font-size:20px;font-weight:800;letter-spacing:-.03em}
+.soon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.soon{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:center;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px;
+  transition:border-color .14s}
+.soon:hover{border-color:var(--brand)}
+.soon .t{background:var(--shot);border-radius:var(--r-md);height:92px;padding:8px;overflow:hidden}
+.soon .t img{width:100%;height:100%;object-fit:contain}
+/* the three text lines live in ONE grid cell, or they get placed as grid items and the price
+   lands on top of the pre-order line */
+.soon>span:last-child{display:block;min-width:0}
+.soon .nm{display:block;font-size:0.938rem;font-weight:700;line-height:1.25}
+.soon .pr{display:block;font-size:19px;font-weight:800;letter-spacing:-.03em;margin-top:4px;white-space:nowrap}
+.soon .po{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);margin-top:4px}
 .save-sec{margin-top:52px}
 .save-hd{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}
 .save-hd h2{font-size:26px;font-weight:800;letter-spacing:-.035em}

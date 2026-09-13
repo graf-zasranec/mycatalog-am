@@ -39,7 +39,7 @@ const X = {
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
-    warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', noSim: 'այս հեռախոսը չի աջակցում'
+    warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', noSim: 'այս հեռախոսը չի աջակցում', preorder: 'Նախապատվեր', soonT: 'Շուտով'
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
@@ -55,7 +55,7 @@ const X = {
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
-    warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', noSim: 'этот телефон не поддерживает'
+    warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', noSim: 'этот телефон не поддерживает', preorder: 'Предзаказ', soonT: 'Скоро'
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
@@ -71,7 +71,7 @@ const X = {
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
-    warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', noSim: 'this phone does not support it'
+    warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', noSim: 'this phone does not support it', preorder: 'Pre-order', soonT: 'Coming soon'
   }
 };
 
@@ -669,7 +669,35 @@ function mastHero() {
           <span class="bar"><i style="width:${Math.max(8, Math.round(r.gap / r.hi * 100))}%"></i></span>
           <span class="rng"><span>${esc(x('saveUpTo'))} ${money(r.gap)} ֏</span><span>${money(r.hi)}</span></span>
         </span></a>`).join('')}</div>
-    </section>` : ''}`;
+    </section>` : ''}
+    ${soonHTML()}`;
+}
+
+// Announced but not on sale. These are NOT in DATA: no spec sheet, no offer you can buy today,
+// so they get a strip of their own rather than a product page full of blanks. The price is the
+// shop's own pre-order price and the card links straight to it, so the claim is theirs to make.
+// "from" is a PREFIX in Russian and English ("from 799 000") and a SUFFIX in Armenian
+// ("799 000 D-ic"), which is why the string itself starts with a hyphen there.
+const fromPrice = v => {
+  const f = x('from');
+  return f.startsWith('-') ? `${money(v)} ֏${f}` : `${f}${money(v)} ֏`;
+};
+function soonHTML() {
+  const C = (typeof COMING !== 'undefined' && COMING) || { items: [] };
+  const items = C.items || [];
+  if (!items.length) return '';
+  const when = (C.when || {})[st.lang] || (C.when || {}).en || '';
+  return `<section class="soon-sec">
+    <div class="soon-hd"><span class="soon-tag">${esc(x('soonT'))}</span><h2>${esc(when)}</h2></div>
+    <div class="soon-grid">${items.map(c => `<a class="soon" href="${esc(safeHref(c.url))}" target="_blank" rel="noopener noreferrer">
+      <span class="t"><img src="${esc(IMG(c.id))}" alt="${esc(c.brand + ' ' + c.name)}" loading="lazy"></span>
+      <span>
+        <span class="nm">${esc(c.brand)} ${esc(c.name)}</span>
+        <span class="pr num">${esc(fromPrice(c.from))}</span>
+        <span class="po">${esc(x('preorder'))} · ${esc(shopName(c.shop))}</span>
+      </span>
+    </a>`).join('')}</div>
+  </section>`;
 }
 
 // Categories are navigation, not a filter: one always-visible row, current item marked.
