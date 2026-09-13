@@ -51,44 +51,59 @@ def panels(a):
     return wide[0][0], tall[0], wide[-1][1] + 1, tall[1] + 1
 
 
+MARK = Path(__file__).resolve().parent / 'gsmarena-mark.png'
+
+
+def hipass(v):
+    """Strip the surface the mark lies on and keep only its strokes, so the same template matches
+    whether it sits on a white backdrop, a dark phone back or a printed screen."""
+    return v - ndimage.uniform_filter(v, size=9)
+
+
 def unmark(a):
-    """Erase GSMArena's mark: flat, light, unsaturated text over a smooth surface, bottom-right."""
+    """Find "www.GSMArena.com" by matching the letterforms themselves, and rebuild the strip it
+    covers from the pixels either side.
+
+    Earlier versions described the mark instead - flat, light, unsaturated, wide and short - and
+    every description also fitted something on some product. One of them mistook a highlight on a
+    Galaxy Watch strap for text and smeared a rectangle across it. The mark is always the same
+    pixels in the same font, so matching the pattern is both stricter and simpler than any rule
+    about what it looks like.
+    """
+    from scipy.signal import fftconvolve
+    tpl = hipass(np.array(Image.open(MARK).convert('L')).astype(np.float32))
+    th, tw = tpl.shape
+    v = hipass(np.array(Image.fromarray(a).convert('L')).astype(np.float32))
+    if v.shape[0] < th or v.shape[1] < tw:
+        return a, None
+    # normalised correlation: the template's energy is constant, so divide by the window's own
+    tn = np.sqrt((tpl * tpl).sum())
+    corr = fftconvolve(v, tpl[::-1, ::-1], mode='valid')
+    energy = np.sqrt(np.maximum(fftconvolve(v * v, np.ones_like(tpl), mode='valid'), 0))
+    score = corr / (energy * tn + 1e-6)
+    # A window with almost no detail divides a tiny correlation by a tinier norm and scores
+    # near-perfectly on nothing at all - which is how the first run "found" the mark two pixels
+    # from the top of the Galaxy Watch, in blank white. A window has to carry real contrast first.
+    score[energy < tn * 0.35] = -1
+    # The mark is always in the lower half of the render - lowest on a phone, around the middle on
+    # a landscape watch shot, never at the top. Without this the Pixel 10a's best match was a strip
+    # of its own top bezel, and the real mark at the bottom was left in place.
+    score[:int(score.shape[0] * 0.40)] = -1
+    y0, x0 = np.unravel_index(score.argmax(), score.shape)
+    peak = float(score[y0, x0])
+    # 0.72 sits in the gap measured across a dozen renders: real marks scored 0.87 and 0.79,
+    # every false peak 0.69 and below. Below the line the answer is 'not located', never 'absent'.
+    if peak < 0.72:
+        return a, None
     h, w, _ = a.shape
-    v, sat = a.mean(axis=2), a.max(axis=2) - a.min(axis=2)
-    zone = np.zeros((h, w), bool)
-    zone[int(h * 0.70):, :] = True          # the whole bottom band: the mark is not always on the right
-    # Grey rather than coloured, and standing out from whatever it lies on - in EITHER direction.
-    # It reads lighter than a dark phone back and darker than the white backdrop, and testing only
-    # for "lighter" missed it on every product photographed against white.
-    local = ndimage.uniform_filter(v, size=41)
-    cand = zone & (sat < 26) & (np.abs(v - local) > 11)
-    lab, n = ndimage.label(ndimage.binary_closing(cand, np.ones((3, 15))))
-    if not n:
-        return a, None
-    # Shape is what separates the mark from the product. "www.GSMArena.com" is a WIDE, SHORT strip
-    # - roughly ten times longer than it is tall. Taking the largest blob instead picked a highlight
-    # running down the Galaxy Watch's strap and smeared a pale rectangle across it.
-    best = None
-    for i in range(1, n + 1):
-        ys, xs = np.nonzero(lab == i)
-        bw, bh = xs.max() - xs.min() + 1, ys.max() - ys.min() + 1
-        if bh > 22 or bw < 55 or bw < bh * 4:
-            continue
-        if best is None or bw > best[0]:
-            best = (bw, xs.min(), xs.max(), ys.min(), ys.max())
-    if best is None:
-        return a, None
-    _, xmin, xmax, ymin, ymax = best
-    xs, ys = np.array([xmin, xmax]), np.array([ymin, ymax])
-    x0, x1, y0, y1 = xs.min() - 3, xs.max() + 3, ys.min() - 3, ys.max() + 3
-    x0, x1 = max(1, x0), min(w - 2, x1)
-    y0, y1 = max(0, y0), min(h - 1, y1)
+    x0, x1 = max(1, x0 - 3), min(w - 2, x0 + tw + 2)
+    y0, y1 = max(0, y0 - 3), min(h - 1, y0 + th + 2)
     t = np.linspace(0, 1, x1 - x0 + 1)[:, None]
     out = a.astype(np.float32)
     for y in range(y0, y1 + 1):
         left, right = out[y, max(0, x0 - 3):x0].mean(axis=0), out[y, x1 + 1:x1 + 4].mean(axis=0)
         out[y, x0:x1 + 1] = left * (1 - t) + right * t
-    return np.clip(out, 0, 255).astype('uint8'), (x0, y0, x1, y1)
+    return np.clip(out, 0, 255).astype("uint8"), (x0, y0, x1, y1, round(peak, 2))
 
 
 def main():
@@ -98,9 +113,20 @@ def main():
     x0, y0, x1, y1 = panels(a)
     a = a[y0:y1, x0:x1]
     a, box = unmark(a)
+    # Erasing is not the same as having erased. The matcher's best peak is sometimes not the mark -
+    # on the Pixel 10a it picked a strip of bezel and left the real one on the phone's back - so
+    # the result is searched again. Anything that still matches means the mark is still there, and
+    # a photo that still carries someone's watermark must not reach the catalogue.
+    # Every GSMArena render carries the mark, so failing to find one means failing to find it -
+    # not that it is absent. Either way the photo does not ship.
+    if not box:
+        raise SystemExit(f'{pid}: SKIPPED - watermark not located; needs a look')
+    _, left = unmark(a)
+    if left:
+        raise SystemExit(f'{pid}: SKIPPED - a mark is still present after erasing (peak {left[4]})')
     out = ROOT / 'images' / '_src' / f'{pid}__main.png'
     Image.fromarray(a).save(out)
-    print(f'{pid}: {a.shape[1]}x{a.shape[0]}' + (f', watermark erased at {box}' if box else ', no watermark found'))
+    print(f'{pid}: {a.shape[1]}x{a.shape[0]}' + (f', watermark erased at {box[:4]} (peak {box[4]})' if box else ', no watermark found'))
 
 
 if __name__ == '__main__':
