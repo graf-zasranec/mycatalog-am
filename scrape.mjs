@@ -1097,6 +1097,14 @@ for (const id of Object.keys(offers)) offers[id].sort((a, b) => a.price - b.pric
 
 const shops = { ...(prev.shops || {}) };
 for (const k of names) shops[k] = { name: SHOPS[k].name, site: SHOPS[k].site, note: SHOPS[k].note, warranty: SHOPS[k].warranty || null };
+// A shop that only ever appears in data/listings.csv has no adapter, so nothing above names it.
+// Without an entry here the offer row would print the raw key - "miarmenia" rather than "Mi Armenia".
+const HAND = {
+  miarmenia: { name: 'Mi Armenia', site: 'https://miarmenia.am', note: 'Xiaomi brand store' },
+  mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
+  zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
+};
+for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v, warranty: null };
 
 fs.mkdirSync('data', { recursive: true });
 fs.writeFileSync('data/prices.json', JSON.stringify({

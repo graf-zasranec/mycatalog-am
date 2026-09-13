@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T12:07:54.325Z",
+ "generated": "2026-09-13T13:22:34.419Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
@@ -81,6 +81,24 @@
   "eldorado": {
    "name": "Eldorado",
    "site": "https://eldorado.am",
+   "note": "electronics retailer",
+   "warranty": null
+  },
+  "miarmenia": {
+   "name": "Mi Armenia",
+   "site": "https://miarmenia.am",
+   "note": "Xiaomi brand store",
+   "warranty": null
+  },
+  "mtech": {
+   "name": "MTech",
+   "site": "https://www.mtech.am",
+   "note": "electronics retailer",
+   "warranty": null
+  },
+  "zigzag": {
+   "name": "Zigzag",
+   "site": "https://www.zigzag.am",
    "note": "electronics retailer",
    "warranty": null
   }
@@ -8508,6 +8526,15 @@
    },
    {
     "id": "xiaomi-17t-pro",
+    "shop": "miarmenia",
+    "price": 327900,
+    "storage": 256,
+    "url": "https://miarmenia.am/ru/collection/smartphones/1",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "xiaomi-17t-pro",
     "price": 329000,
     "storage": 512,
     "title": "Xiaomi 17T Pro",
@@ -8555,6 +8582,15 @@
     "inStock": true,
     "color": "Black",
     "shop": "vlv"
+   },
+   {
+    "id": "xiaomi-17t-pro",
+    "shop": "miarmenia",
+    "price": 346900,
+    "storage": 512,
+    "url": "https://miarmenia.am/ru/collection/smartphones/1",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "samsung-galaxy-s25-edge": [
@@ -19188,6 +19224,17 @@
     "seeded": true
    }
   ],
+  "yandex-smart-lamp": [
+   {
+    "id": "yandex-smart-lamp",
+    "shop": "ucom",
+    "price": 5900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/yandex-smart-lamp-00017-e14.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
   "xiaomi-redmi-15c": [
    {
     "id": "xiaomi-redmi-15c",
@@ -19414,17 +19461,6 @@
     "storage": null,
     "color": "Graphite",
     "url": "https://eldorado.am/en/shopbrand/sennheiser",
-    "inStock": true,
-    "seeded": true
-   }
-  ],
-  "yandex-smart-lamp": [
-   {
-    "id": "yandex-smart-lamp",
-    "shop": "ucom",
-    "price": 5900,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/yandex-smart-lamp-00017-e14.html",
     "inStock": true,
     "seeded": true
    }
