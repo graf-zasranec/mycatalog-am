@@ -137,7 +137,8 @@ button,input,select,textarea{font:inherit;color:inherit}
    _app.js skips all of them under reduced motion - these carry no transform for the global
    rule to strip, so the rule alone would let them through. */
 @keyframes fxflash{0%,62%{color:var(--brand)}100%{color:inherit}}
-.pprice2>b.fx-flash{animation:fxflash .8s ease-out}
+/* Any price, not just the rail: switching capacity or colour changes all of them at once. */
+.fx-flash{animation:fxflash .8s ease-out}
 @keyframes fxglint{from{background-position:-60% 0}to{background-position:170% 0}}
 .orow.fx-glint{background-image:linear-gradient(100deg,transparent 41%,color-mix(in srgb,var(--brand) 20%,transparent) 50%,transparent 59%);
   background-size:260% 100%;background-repeat:no-repeat;animation:fxglint .95s ease-out}

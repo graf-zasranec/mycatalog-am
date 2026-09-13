@@ -1334,6 +1334,10 @@ function render(keepScroll) {
 const RM = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const lastPrice = new Map();          // product id -> the price its rail showed last render
 let fxObs = null;
+// Set when a capacity, RAM or colour button is clicked. The whole page then answers a different
+// question - the rail, every offer row, the saving - so every price flashes rather than counting.
+// A count would read as "loading"; a flash reads as "this number just changed", which is true.
+let fxFlashAll = false;
 
 // The element around a price is rarely just text - a card's price carries the old price in a <s>
 // and the ֏ in its own <span>. Writing to el.textContent would delete both, so the count walks to
@@ -1384,6 +1388,17 @@ function moneyFx() {
     else rollUp(e.target, 520);
   }), { threshold: .3 });
 
+  const flashAll = fxFlashAll;
+  fxFlashAll = false;
+  if (flashAll) {
+    for (const el of $$(PRICE_SEL)) {
+      el.classList.remove('fx-flash'); void el.offsetWidth; el.classList.add('fx-flash');
+      el.addEventListener('animationend', () => el.classList.remove('fx-flash'), { once: true });
+    }
+    if ($('.pprice2 > b.num')) lastPrice.set((location.hash.match(/^#\/p\/([^?]+)/) || [])[1],
+      +$('.pprice2 > b.num').textContent.replace(/\D/g, ''));
+    return;
+  }
   const big = $('.pprice2 > b.num');
   const pid = (location.hash.match(/^#\/p\/([^?]+)/) || [])[1];
   let skip = null;
@@ -1543,6 +1558,7 @@ document.addEventListener('click', e => {
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
   const opt = e.target.closest('[data-color],[data-storage],[data-ram]');
   if (opt) {
+    fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
     if (opt.dataset.color !== undefined) SEL.color = opt.dataset.color;
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
