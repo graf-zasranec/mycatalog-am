@@ -164,21 +164,56 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
     return canvas
 
 
+# A full pass is hours on this machine, so a crash must not cost the whole thing. The stamp file
+# records which version of the cut produced what is on disk: bump PIPELINE whenever the cut itself
+# changes and the next run redoes everything, otherwise it resumes where it stopped. A cutout is
+# considered done when it is newer than both the stamp and its own source photo.
+PIPELINE = 'bria-rmbg + edge decontamination'
+STAMP = OUT / '.pipeline'
+
+
+def stamp_time():
+    """Rewrites the stamp when the pipeline changed, and returns the moment it was written."""
+    try:
+        if STAMP.read_text(encoding='utf-8').strip() == PIPELINE:
+            return STAMP.stat().st_mtime
+    except OSError:
+        pass
+    STAMP.write_text(PIPELINE, encoding='utf-8')
+    return STAMP.stat().st_mtime
+
+
 def main():
-    want = sys.argv[1:]
+    want = [a for a in sys.argv[1:] if not a.startswith('-')]
+    force = '--force' in sys.argv or '-f' in sys.argv
+    since = stamp_time()
     files = sorted(f for f in os.listdir(SRC) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')))
     if want:
         files = [f for f in files if any(f.startswith(w) for w in want)]
-    done = 0
+
+    todo = []
     for f in files:
+        out = OUT / (os.path.splitext(f)[0] + '.webp')
+        if force or not out.exists():
+            todo.append(f)
+            continue
+        o = out.stat().st_mtime
+        if o < since or o < (SRC / f).stat().st_mtime:
+            todo.append(f)
+    skipped = len(files) - len(todo)
+    if skipped:
+        print(f'{skipped} already cut by this pipeline, {len(todo)} to go', flush=True)
+
+    done = 0
+    for f in todo:
         try:
             out = OUT / (os.path.splitext(f)[0] + '.webp')
             cut(SRC / f, solid_product(f)).save(out, 'WEBP', quality=90, method=6)
             done += 1
-            print(f'{done}/{len(files)} {f}', flush=True)
+            print(f'{done}/{len(todo)} {f}', flush=True)
         except Exception as e:
             print(f'  ! {f}: {e}', flush=True)
-    print(f'done {done}/{len(files)}')
+    print(f'done {done}/{len(todo)} (+{skipped} already current)')
 
 
 if __name__ == '__main__':
