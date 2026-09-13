@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T11:33:12.930Z",
+ "generated": "2026-09-13T11:54:46.674Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
@@ -197,6 +197,15 @@
     "ram": null,
     "color": "Silver",
     "shop": "redstore"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "pixel",
+    "price": 521000,
+    "storage": 1024,
+    "url": "https://www.pixel.am/en/product/iphone-17-pro",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -902,6 +911,26 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "price": 549000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-deep-blue/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "pixel",
+    "price": 559000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 565000,
     "storage": 256,
     "title": "iPhone 17 Pro Max",
@@ -1515,6 +1544,16 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "pixel",
+    "price": 949000,
+    "storage": 1024,
+    "color": "Cosmic Orange",
+    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 962900,
     "storage": 2048,
     "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 2TB (Silver) (A3526) (MFYY4AF/A)",
@@ -2056,6 +2095,16 @@
     "inStock": true,
     "color": "Mist Blue",
     "shop": "vlv"
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "ibolit",
+    "price": 445000,
+    "storage": 512,
+    "color": "White",
+    "url": "https://ibolit.mobi/product/iphone-17-512-sim-white/",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -6894,6 +6943,15 @@
     "ram": 8,
     "color": "Green",
     "shop": "vega"
+   },
+   {
+    "id": "honor-x8c",
+    "shop": "telecom",
+    "price": 199900,
+    "storage": 256,
+    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "samsung-galaxy-a37": [
@@ -7389,17 +7447,6 @@
    {
     "id": "samsung-galaxy-a37",
     "price": 159900,
-    "title": "Smartphone Samsung A376 Galaxy A37 5G 8/256GB DS Awesome Charcoal",
-    "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-8-256gb-ds-awesome-charcoal",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": "Awesome Charcoal",
-    "shop": "eldorado"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 159900,
     "storage": 256,
     "title": "Samsung A37",
     "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-256gb-graygreen/2639/",
@@ -7408,6 +7455,17 @@
     "ram": null,
     "color": null,
     "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 159900,
+    "title": "Smartphone Samsung A376 Galaxy A37 5G 8/256GB DS Awesome Charcoal",
+    "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-8-256gb-ds-awesome-charcoal",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": "Awesome Charcoal",
+    "shop": "eldorado"
    },
    {
     "id": "samsung-galaxy-a37",
@@ -8110,6 +8168,18 @@
    {
     "id": "samsung-galaxy-a57",
     "price": 166900,
+    "storage": 128,
+    "title": "Samsung A57",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a57-8-128gb-navy/2643/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744236275812.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Navy",
+    "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 166900,
     "title": "Smartphone Samsung A576 Galaxy A57 5G 8/128GB DS Awesome Icyblue",
     "url": "https://eldorado.am/en/samsung-a576-galaxy-a57-5g-8-128gb-ds-awesome-icyblue",
     "storage": 128,
@@ -8128,18 +8198,6 @@
     "inStock": true,
     "color": "Awesome Navy",
     "shop": "eldorado"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 166900,
-    "storage": 128,
-    "title": "Samsung A57",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a57-8-128gb-navy/2643/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744236275812.png",
-    "inStock": true,
-    "ram": null,
-    "color": "Navy",
-    "shop": "telecom"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -8862,6 +8920,15 @@
     "inStock": true,
     "color": "Black",
     "shop": "vlv"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "shop": "telecom",
+    "price": 418900,
+    "storage": 256,
+    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s26-plus",
@@ -9779,6 +9846,16 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
+    "shop": "ibolit",
+    "price": 489000,
+    "storage": 512,
+    "color": "Pink Gold",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-ultra-512-pink-gold/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
     "price": 569900,
     "storage": 512,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (Cobalt Violet)",
@@ -9824,6 +9901,16 @@
     "ram": null,
     "color": "Blue",
     "shop": "telecom"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "mobilecentre",
+    "price": 569900,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-s26-ultra-512gb-_black_/33512/",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -9884,6 +9971,16 @@
     "color": "White",
     "inStock": true,
     "shop": "allsell"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "mobilecentre",
+    "price": 799900,
+    "storage": 1024,
+    "color": "Sky Blue",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-s26-ultra-1tb-_sky-blue_/33502/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "xiaomi-buds-6": [
@@ -12259,6 +12356,26 @@
     "ram": null,
     "color": "Pistachio",
     "shop": "ucom"
+   },
+   {
+    "id": "samsung-galaxy-s26-fe",
+    "shop": "mobilecentre",
+    "price": 383900,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-s26-fe-256gb-_black_/34418/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s26-fe",
+    "shop": "mobilecentre",
+    "price": 454900,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-s26-fe-512gb-_black_/34415/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "realme-16": [
@@ -12534,6 +12651,16 @@
     "ram": 12,
     "color": "Violet Shadow",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "shop": "mobilecentre",
+    "price": 994900,
+    "storage": 512,
+    "color": "Cream",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-z-fold-8-ultra-512gb-_cream_/33530/",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
@@ -13123,6 +13250,16 @@
     "ram": 12,
     "color": "Pink",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "shop": "mobilecentre",
+    "price": 639900,
+    "storage": 512,
+    "color": "Graphite",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-z-flip-8-512gb-_graphite_/33548/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "samsung-galaxy-a27": [
@@ -15876,6 +16013,16 @@
    },
    {
     "id": "nothing-phone-3",
+    "shop": "zigzag",
+    "price": 379000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://www.zigzag.am/en/nothing-phone-3-16-512-black-6974434226173.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "nothing-phone-3",
     "price": 439000,
     "storage": 256,
     "title": "Nothing Phone 3",
@@ -16693,6 +16840,16 @@
    },
    {
     "id": "apple-macbook-air-13-m4",
+    "shop": "vlv",
+    "price": 584900,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://vlv.am/en/Product/37998",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-air-13-m4",
     "price": 589000,
     "title": "Air 13.6'' M4 MC6A4(Starlight)",
     "url": "https://redstore.am/en/product/macbook-air-136-m4-mc6a4starlight",
@@ -17261,6 +17418,15 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit"
+   },
+   {
+    "id": "sony-ps5-slim",
+    "shop": "pixel",
+    "price": 309000,
+    "storage": 1024,
+    "url": "https://www.pixel.am/en/product/sony-ps5-slim-digital-edition-eu",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "sony-ps5-pro": [
@@ -17288,6 +17454,16 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit"
+   },
+   {
+    "id": "sony-ps5-pro",
+    "shop": "pixel",
+    "price": 529000,
+    "storage": 2048,
+    "color": "White",
+    "url": "https://www.pixel.am/en/product/sony-ps5-pro-digital-edition-white",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "sony-ps5-pro",
@@ -17690,6 +17866,16 @@
     "color": "Cream",
     "inStock": true,
     "shop": "allsell"
+   },
+   {
+    "id": "marshall-major-v",
+    "shop": "eldorado",
+    "price": 46900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://eldorado.am/en/shop-by-brand/marshall",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "marshall-major-v",
@@ -18146,6 +18332,15 @@
     "ram": null,
     "color": "Black",
     "shop": "redstore"
+   },
+   {
+    "id": "jbl-partybox-on-the-go",
+    "shop": "eldorado",
+    "price": 149900,
+    "storage": null,
+    "url": "https://eldorado.am/en/shopbrand/jbl",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "dyson-airwrap-hs09": [
@@ -18199,6 +18394,16 @@
     "ram": null,
     "color": "Red",
     "shop": "ibolit"
+   },
+   {
+    "id": "dyson-airwrap-hs09",
+    "shop": "zigzag",
+    "price": 299000,
+    "storage": null,
+    "color": "Amber Silk",
+    "url": "https://www.zigzag.am/en/shop-by-brand/dyson",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "dyson-airwrap-hs09",
@@ -18279,6 +18484,16 @@
     "ram": null,
     "color": null,
     "shop": "ibolit"
+   },
+   {
+    "id": "sony-wh-1000xm6",
+    "shop": "zigzag",
+    "price": 221900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://www.zigzag.am/en/sony-wh-1000xm6-bme.html",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "xiaomi-redmi-note-13-pro-plus": [
@@ -18395,30 +18610,6 @@
     "shop": "eldorado"
    }
   ],
-  "sonos-arc": [
-   {
-    "id": "sonos-arc",
-    "price": 539900,
-    "title": "soundbar Soundbar Sonos Arc Black (ARCG1EU1BLK)",
-    "url": "https://eldorado.am/en/sonos-arc-black-arcg1eu1blk",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "eldorado"
-   },
-   {
-    "id": "sonos-arc",
-    "price": 552900,
-    "title": "Soundbar Sonos Arc White (ARCG1EU1)",
-    "url": "https://eldorado.am/en/sonos-arc-white-arcg1eu1",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "eldorado"
-   }
-  ],
   "honor-x9b": [
    {
     "id": "honor-x9b",
@@ -18432,6 +18623,15 @@
     "ram": null,
     "color": null,
     "shop": "ibolit"
+   },
+   {
+    "id": "honor-x9b",
+    "shop": "telecom",
+    "price": 169900,
+    "storage": 256,
+    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "bo-beoplay-h95": [
@@ -18639,6 +18839,389 @@
     "ram": null,
     "color": "Porcelain",
     "shop": "ibolit"
+   },
+   {
+    "id": "google-pixel-10-pro",
+    "shop": "telecom",
+    "price": 475900,
+    "storage": 256,
+    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "honor-magicbook-x16-plus": [
+   {
+    "id": "honor-magicbook-x16-plus",
+    "shop": "zigzag",
+    "price": 369900,
+    "storage": 1024,
+    "color": "Space Gray",
+    "url": "https://www.zigzag.am/en/honor-magicbook-x16-plus-16-core-5-220n-32-1-space-gray-w11h-5301ambc.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "honor-magicbook-x16-plus",
+    "price": 379900,
+    "title": "Laptop HONOR MagicBook X16 Plus 2025 (5301ALVX) Space Gray",
+    "url": "https://eldorado.am/en/honor-magicbook-x16-plus-16-16-512-space-gray-dos-5301alvx",
+    "storage": 1024,
+    "ram": null,
+    "inStock": true,
+    "color": "Space Gray",
+    "shop": "eldorado"
+   }
+  ],
+  "honor-x7c": [
+   {
+    "id": "honor-x7c",
+    "shop": "telecom",
+    "price": 104900,
+    "storage": 128,
+    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "apple-macbook-pro-16-m3-pro": [
+   {
+    "id": "apple-macbook-pro-16-m3-pro",
+    "shop": "vlv",
+    "price": 1199900,
+    "storage": 512,
+    "color": "Space Black",
+    "url": "https://vlv.am/en/Product/30584",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "asus-zenbook-14-ux3405ca-oled": [
+   {
+    "id": "asus-zenbook-14-ux3405ca-oled",
+    "shop": "eldorado",
+    "price": 329900,
+    "storage": 512,
+    "url": "https://eldorado.am/en/asus-zenbook-14-oled-um3402ya-kp290-90nb0w95-m00j70",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "asus-zenbook-14-ux3405ca-oled",
+    "shop": "zigzag",
+    "price": 539000,
+    "storage": 512,
+    "color": "Jasper Gray",
+    "url": "https://www.zigzag.am/en/asus-zenbook-14-oled-touch-ultra-7-265h-16gb-512gb-w11-jasper-gray-ux3405ca-u7512.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "asus-zenbook-14-ux3405ca-oled",
+    "shop": "eldorado",
+    "price": 647900,
+    "storage": 1024,
+    "url": "https://eldorado.am/en/asus-zenbook-14-oled-ux3405m-ux3405ma-pp136w-90nb11r1-m005r0",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "asus-vivobook-16-ultra7-oled": [
+   {
+    "id": "asus-vivobook-16-ultra7-oled",
+    "shop": "zigzag",
+    "price": 458000,
+    "storage": 1024,
+    "color": "Matte Gray",
+    "url": "https://www.zigzag.am/en/asus-vivobook-16-oled-ultra-7-255h-16gb-1tb-matte-gray-90nb16i2-m00640.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "hp-omnibook-ultra-flip-14": [
+   {
+    "id": "hp-omnibook-ultra-flip-14",
+    "shop": "zigzag",
+    "price": 759000,
+    "storage": 512,
+    "color": "Gray",
+    "url": "https://www.zigzag.am/en/hp-omnibook-ultra-flip-14-oled-ultra-5-226v-16gb-512gb-w11h-gray-b5dx5ea.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "xiaomi-redmi-15c": [
+   {
+    "id": "xiaomi-redmi-15c",
+    "price": 54900,
+    "title": "Smartphone Xiaomi REDMI 15C 4GB/128GB Mint Green",
+    "url": "https://eldorado.am/en/smartphone-redmi-15c-4gb-128gb-mint-green",
+    "storage": 128,
+    "ram": 4,
+    "inStock": true,
+    "color": "Mint Green",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-15c",
+    "price": 54900,
+    "title": "Smartphone Xiaomi REDMI 15C 4GB/128GB Midnight Black",
+    "url": "https://eldorado.am/en/smartphone-redmi-15c-4gb-128gb-midnight-black",
+    "storage": 128,
+    "ram": 4,
+    "inStock": true,
+    "color": "Midnight Black",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-15c",
+    "price": 58900,
+    "title": "Smartphone REDMI 15C 6GB/128GB RU (25078RA3EY) Moonlight Blue",
+    "url": "https://eldorado.am/en/redmi-15c-6gb-128gb-moonlight-blue-eu-25078ra3ey",
+    "storage": 128,
+    "ram": 6,
+    "inStock": true,
+    "color": "Moonlight Blue",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-15c",
+    "price": 65900,
+    "title": "Smartphone Xiaomi REDMI 15C 8GB/256GB Mint Green",
+    "url": "https://eldorado.am/en/smartphone-redmi-15c-8gb-256gb-mint-green",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Mint Green",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-15c",
+    "price": 65900,
+    "title": "Smartphone REDMI 15C 8GB/256GB RU (25078RA3EY) Midnight Black",
+    "url": "https://eldorado.am/en/redmi-15c-8gb-256gb-midnight-black-ru-25078ra3ey",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Midnight Black",
+    "shop": "eldorado"
+   }
+  ],
+  "poco-c85": [
+   {
+    "id": "poco-c85",
+    "price": 60900,
+    "title": "Smartphone POCO C85 6GB/128GB RU (25078PC3EG) Black",
+    "url": "https://eldorado.am/en/smartphone-poco-c85-6gb-128gb-ru-25078pc3eg-black",
+    "storage": 128,
+    "ram": 6,
+    "inStock": true,
+    "color": "Black",
+    "shop": "eldorado"
+   },
+   {
+    "id": "poco-c85",
+    "price": 74900,
+    "title": "Smartphone POCO C85 8GB/256GB",
+    "url": "https://eldorado.am/en/poco-c85-8gb-256gb-black",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Black",
+    "shop": "eldorado"
+   },
+   {
+    "id": "poco-c85",
+    "price": 74900,
+    "title": "Smartphone POCO C85 8GB/256GB (25078PC3EG) Green",
+    "url": "https://eldorado.am/en/poco-c85-8gb-256gb-25078pc3eg-green",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Green",
+    "shop": "eldorado"
+   }
+  ],
+  "xiaomi-redmi-note-15-pro": [
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 125900,
+    "title": "Smartphone Xiaomi REDMI Note15 Pro 8GB/256GB EU (25100RA69G) Titanium Color",
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note15-pro-8gb-256gb-eu-25100ra69g-titanium-color",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Titanium",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 125900,
+    "title": "Smartphone Xiaomi REDMI Note 15 Pro 8GB/256GB RU (25100RA69G) Black",
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-8gb-256gb-ru-25100ra69g-black",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Black",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 125900,
+    "title": "Smartphone Xiaomi REDMI Note 15 Pro 8GB/256GB RU (25100RA69G) Glacier Blue",
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-8gb-256gb-ru-25100ra69g-glacier-blue",
+    "storage": 256,
+    "ram": 8,
+    "inStock": true,
+    "color": "Glacier Blue",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 152900,
+    "title": "Smartphone Xiaomi REDMI Note 15 Pro 12GB/512GB EU (25100RA69G) Titanium Color",
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-12gb-512gb-eu-25100ra69g-titanium-color",
+    "storage": 512,
+    "ram": 12,
+    "inStock": true,
+    "color": "Titanium",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 152900,
+    "title": "Smartphone Xiaomi REDMI Note15 Pro 12GB/512GB EU (25100RA69G) Black",
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note15-pro-12gb-512gb-eu-25100ra69g-black",
+    "storage": 512,
+    "ram": 12,
+    "inStock": true,
+    "color": "Black",
+    "shop": "eldorado"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 152900,
+    "title": "Smartphone Xiaomi REDMI Note 15 Pro 12GB/512GB EU (25100RA69G) Glacier Blue",
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-12gb-512gb-eu-25100ra69g-glacier-blue",
+    "storage": 512,
+    "ram": 12,
+    "inStock": true,
+    "color": "Glacier Blue",
+    "shop": "eldorado"
+   }
+  ],
+  "sonos-arc": [
+   {
+    "id": "sonos-arc",
+    "price": 539900,
+    "title": "soundbar Soundbar Sonos Arc Black (ARCG1EU1BLK)",
+    "url": "https://eldorado.am/en/sonos-arc-black-arcg1eu1blk",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": "Black",
+    "shop": "eldorado"
+   },
+   {
+    "id": "sonos-arc",
+    "price": 552900,
+    "title": "Soundbar Sonos Arc White (ARCG1EU1)",
+    "url": "https://eldorado.am/en/sonos-arc-white-arcg1eu1",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": "White",
+    "shop": "eldorado"
+   }
+  ],
+  "asus-vivobook-15x-m1503-oled": [
+   {
+    "id": "asus-vivobook-15x-m1503-oled",
+    "shop": "eldorado",
+    "price": 214900,
+    "storage": 512,
+    "url": "https://eldorado.am/en/asus-vivobook-15x-oled-m1503-m1503ia-l1018-90nb0y61-m00590",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "asus-vivobook-s15-m3502qa-oled": [
+   {
+    "id": "asus-vivobook-s15-m3502qa-oled",
+    "shop": "eldorado",
+    "price": 329900,
+    "storage": 1024,
+    "url": "https://eldorado.am/en/asus-vivobook-s-15-oled-m3502qa-ma153-16-gb-1-tb-90nb0xx1-m006s0",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "beats-studio-buds-plus": [
+   {
+    "id": "beats-studio-buds-plus",
+    "shop": "eldorado",
+    "price": 76900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://eldorado.am/en/beats-studio-buds-true-wireless-noise-cancelling-earbuds-black-gold-model-a2872-a2871-a2870",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "sennheiser-momentum-4": [
+   {
+    "id": "sennheiser-momentum-4",
+    "shop": "eldorado",
+    "price": 139900,
+    "storage": null,
+    "color": "Graphite",
+    "url": "https://eldorado.am/en/shopbrand/sennheiser",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "samsung-galaxy-z-flip-7-fe": [
+   {
+    "id": "samsung-galaxy-z-flip-7-fe",
+    "shop": "mobilecentre",
+    "price": 260900,
+    "storage": 128,
+    "color": "White",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-z-flip-7-fe-128gb-_white_/33552/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-z-flip-7-fe",
+    "shop": "redstore",
+    "price": 329000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-z-flip-7-fe-8gb256gb-black",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "honor-magic-7-pro": [
+   {
+    "id": "honor-magic-7-pro",
+    "shop": "telecom",
+    "price": 324900,
+    "storage": 256,
+    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "samsung-galaxy-a55": [
+   {
+    "id": "samsung-galaxy-a55",
+    "shop": "ucom",
+    "price": 134900,
+    "storage": 128,
+    "url": "https://shop.ucom.am/en/samsung-galaxy-a55.html",
+    "inStock": true,
+    "seeded": true
    }
   ]
  }

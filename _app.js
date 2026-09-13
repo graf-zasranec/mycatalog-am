@@ -36,7 +36,7 @@ const X = {
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
     emptyT: 'Ոչինչ չի գտնվել', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
-    goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին',
+    goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
     warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը'
@@ -52,7 +52,7 @@ const X = {
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
     emptyT: 'Ничего не найдено', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
-    goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена',
+    goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
     warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию'
@@ -68,7 +68,7 @@ const X = {
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
     emptyT: 'No results', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
-    goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price',
+    goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
     warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant'
@@ -175,6 +175,26 @@ const shopCount = list => new Set(list.map(o => o.shop)).size;
 const shopSite = k => (P.shops && P.shops[k] && P.shops[k].site) || '#';
 const shopWarranty = k => (P.shops && P.shops[k] && P.shops[k].warranty) || null;
 const realFor = (p, storage) => { const o = offersFor(p).find(o => o.storage === storage); return o ? o.price : null; };
+// A configuration the maker sells is not automatically a configuration Armenia sells. The
+// catalogue lists what the manufacturer offers; the offers say what is actually on a shelf here.
+// Anything with no offer behind it is shown struck through and grey rather than hidden, so the
+// reader can see the choice exists and that nobody stocks it. Colours are compared through tr()'s
+// own canonical form, since one shop writes "Jet Black" where another writes "Jetblack".
+const soldKey = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+const sold = (p, field, value) => {
+  const list = offersFor(p);
+  if (!list.length) return true;                      // nothing known - do not cross out the world
+  if (field === 'color') {
+    const want = soldKey(value);
+    return list.some(o => o.color && soldKey(o.color) === want);
+  }
+  // A watch's variants are case sizes in mm, but an offer's `storage` is gigabytes, and comparing
+  // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
+  // compare, so nothing is claimed.
+  if (field === 'storage') return p.variantUnit === 'mm' || list.some(o => o.storage === value);
+  // RAM is rarely printed by a shop, so treat "never stated" as unknown rather than unavailable.
+  return !list.some(o => o.ram) || list.some(o => o.ram === value);
+};
 const HIST = (typeof HISTORY !== 'undefined' && HISTORY.points) || {};
 const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : '';
 // Plot only days we actually recorded. One point is not a trend, so it says so instead.
@@ -940,11 +960,11 @@ function detailView(p) {
         <div class="pside">
           <p class="lede2">${esc(summary)}</p>
           ${cols.length ? `<div class="og"><label>${esc(t('sec.colors'))} <b id="colName">${esc(tr(SEL.color || '', st.lang))}</b></label>
-            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" class="${c === SEL.color ? 'on' : ''}" style="--c:${esc(swatch(c))}" title="${esc(tr(c, st.lang))}" aria-label="${esc(tr(c, st.lang))}" aria-pressed="${c === SEL.color}"></button>`).join('')}</div></div>` : ''}
+            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" style="--c:${esc(swatch(c))}" title="${esc(tr(c, st.lang))}${sold(p, 'color', c) ? '' : ' — ' + esc(x('notSold'))}" aria-label="${esc(tr(c, st.lang))}${sold(p, 'color', c) ? '' : ', ' + esc(x('notSold'))}" aria-pressed="${c === SEL.color}"></button>`).join('')}</div></div>` : ''}
           ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
-            <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}" aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
+            <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
           ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
-            <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}" aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
+            <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}</span>
             <b class="num">${money(shownPrice)} ֏</b>
@@ -1331,107 +1351,23 @@ function render(keepScroll) {
 // Five of them, all pointed at the number people came here for. Each is gated on reduced motion
 // by hand: the global CSS rule strips transforms and transitions, but these change text content
 // or run on a timer, and no media query can undo that.
-const RM = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
-const lastPrice = new Map();          // product id -> the price its rail showed last render
-let fxObs = null;
-// Set when a capacity, RAM or colour button is clicked. The whole page then answers a different
-// question - the rail, every offer row, the saving - so every price flashes rather than counting.
-// A count would read as "loading"; a flash reads as "this number just changed", which is true.
+// Set when a capacity, RAM or colour button is clicked on a product page.
 let fxFlashAll = false;
 
-// The element around a price is rarely just text - a card's price carries the old price in a <s>
-// and the ֏ in its own <span>. Writing to el.textContent would delete both, so the count walks to
-// the first text node holding digits and rewrites only that.
-function digitNode(el) {
-  const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
-  for (let n; (n = w.nextNode());) if (/\d/.test(n.nodeValue)) return n;
-  return null;
-}
+// Product page only. The animation answers "this number just changed because you changed the
+// configuration", which is a question only this page asks - on a catalogue grid the same effect
+// is 146 numbers twitching for no reason, and on first load it reads as the page still loading.
+const PRICE_SEL = '.pprice2 > b.num, .olist .orow .pr';
 
-// Counts up to the number already on the page. It reads the digits out of the text instead of
-// taking them as an argument, so one helper serves "231 900 ֏" and a bare count alike.
-function rollUp(el, dur = 640) {
-  const node = digitNode(el);
-  if (!node) return;
-  // Must end on a digit: a greedy [\d ]* swallows the space before the ֏, and every frame of
-  // the count then renders "108 885֏" with the sign jammed against the number.
-  const txt = node.nodeValue, m = txt.match(/\d(?:[\d  ]*\d)?/);
-  if (!m) return;
-  const end = +m[0].replace(/\D/g, '');
-  if (!Number.isFinite(end) || end < 10) return;
-  const pre = txt.slice(0, m.index), post = txt.slice(m.index + m[0].length), t0 = performance.now();
-  const step = now => {
-    const k = Math.min(1, (now - t0) / dur);
-    node.nodeValue = pre + money(end * (1 - Math.pow(1 - k, 3))) + post;
-    if (k < 1) requestAnimationFrame(step); else node.nodeValue = txt;   // land on the exact string
-  };
-  requestAnimationFrame(step);
-}
-
-// Every price on every view: catalogue cards, the product rail, each offer row, the savings
-// strip and the compare table. Off-screen ones wait for the viewport rather than finishing
-// unseen behind the fold, which is also what keeps a 138-card catalogue from counting at once.
-// Compare is deliberately absent: its price sits in a plain .c cell alongside every other spec
-// value, so there is no selector that catches the price without also catching "6.83 in".
-const PRICE_SEL = '.pcard .pprice, .pprice2 > b.num, .olist .orow .pr, .save-grid .amt';
-
+// Fires only after a capacity, RAM or colour button was pressed on a product page. Arriving at a
+// page is not a change, so nothing animates on load; a grid of 146 cards twitching at once was
+// noise, and a count-up on first paint just read as "still loading".
 function moneyFx() {
-  // The count runs for everyone. Digits settling in place is not motion across the screen -
-  // nothing travels, nothing scales - so prefers-reduced-motion has nothing to object to. The
-  // two effects that DO move, the glint sweeping over a row and a bar growing, stay gated below.
-  const still = RM();
-  fxObs?.disconnect();
-  fxObs = new IntersectionObserver((es, o) => es.forEach(e => {
-    if (!e.isIntersecting) return;
-    o.unobserve(e.target);
-    if ('w' in e.target.dataset) e.target.style.width = e.target.dataset.w;   // a savings bar
-    else rollUp(e.target, 520);
-  }), { threshold: .3 });
-
-  const flashAll = fxFlashAll;
+  if (!fxFlashAll) return;
   fxFlashAll = false;
-  if (flashAll) {
-    for (const el of $$(PRICE_SEL)) {
-      el.classList.remove('fx-flash'); void el.offsetWidth; el.classList.add('fx-flash');
-      el.addEventListener('animationend', () => el.classList.remove('fx-flash'), { once: true });
-    }
-    if ($('.pprice2 > b.num')) lastPrice.set((location.hash.match(/^#\/p\/([^?]+)/) || [])[1],
-      +$('.pprice2 > b.num').textContent.replace(/\D/g, ''));
-    return;
-  }
-  const big = $('.pprice2 > b.num');
-  const pid = (location.hash.match(/^#\/p\/([^?]+)/) || [])[1];
-  let skip = null;
-  if (big) {
-    const now = +big.textContent.replace(/\D/g, '');
-    const was = pid ? lastPrice.get(pid) : null;
-    // Picking another capacity or colour changes the price. Flash the new figure rather than
-    // rolling it: a roll starting from zero reads as the page still loading, when what actually
-    // happened is that the answer changed.
-    if (was && was !== now) {
-      big.classList.remove('fx-flash'); void big.offsetWidth; big.classList.add('fx-flash');
-      skip = big;
-    }
-    if (pid) lastPrice.set(pid, now);
-  }
-  // What is already on screen counts now; only what is below the fold waits to be scrolled to.
-  // Handing everything to the observer made the visible prices depend on the first intersection
-  // callback, which never arrives at all in a tab that is not painting.
-  const seen = el => { const r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; };
-  $$(PRICE_SEL).forEach(el => {
-    if (el === skip) return;
-    if (seen(el)) rollUp(el, 520); else fxObs.observe(el);
-  });
-  // The counts in the hero bar. Never the fourth: it is a date, not a quantity.
-  $$('.cv-bar div:nth-child(-n+3) b.num').forEach(el => rollUp(el, 520));
-  if (still) return;
-  // A savings bar grows from nothing once it reaches the viewport.
-  $$('.save-grid .bar i').forEach(i => { i.dataset.w = i.style.width; i.style.width = '0%'; fxObs.observe(i); });
-  // The cheapest offer is the answer to the whole page, so it gets one sweep of light.
-  const first = $('#offList li:first-child .orow') || $('.olist li:first-child .orow');
-  if (first) {
-    first.classList.add('fx-glint');
-    first.addEventListener('animationend', () => first.classList.remove('fx-glint'), { once: true });
+  for (const el of $$(PRICE_SEL)) {
+    el.classList.remove('fx-flash'); void el.offsetWidth; el.classList.add('fx-flash');
+    el.addEventListener('animationend', () => el.classList.remove('fx-flash'), { once: true });
   }
 }
 

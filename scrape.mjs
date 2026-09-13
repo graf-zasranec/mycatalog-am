@@ -1047,6 +1047,28 @@ for (const key of names) {
   report.push({ shop: key, offers: best.size, models: models.size });
 }
 
+// Hand-collected listings. A category crawl only sees what the shop chose to put on the pages it
+// walks, so Eldorado's own laptop and audio aisles never reached data/eldorado.json, and zigzag
+// refuses non-browser clients outright. Rows recorded by hand in data/listings.csv fill exactly
+// those gaps. They are a floor, never an override: a row is added only when the live scrape found
+// nothing for that shop, product and capacity, so a real price always wins.
+// (yerevanmobile rows are deliberately absent - its robots.txt names this crawler and says no.)
+let seeded = 0;
+try {
+  const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1);
+  for (const line of rows) {
+    const [shop, title, cap, color, url, price] = line.split(',');
+    const id = matchPhone(title);
+    if (!id || !price) continue;
+    const storage = cap ? +cap : null;
+    const list = offers[id] ||= [];
+    if (list.some(o => o.shop === shop && (o.storage ?? null) === storage)) continue;
+    list.push({ id, shop, price: +price, storage, color: color || undefined, url, inStock: true, seeded: true });
+    seeded++;
+  }
+} catch (e) { if (e.code !== 'ENOENT') console.warn('listings.csv:', e.message); }
+if (seeded) console.log(`\n${seeded} hand-recorded listing(s) filled gaps the crawl could not reach`);
+
 // A shop page that names no capacity still has a price, and the other shops say what each
 // capacity costs. If that price falls inside exactly ONE tier's band and outside every other,
 // the tier is not a guess - AllSell's 278 500 iPhone 15 sits inside the 128 GB band (262 000 to
