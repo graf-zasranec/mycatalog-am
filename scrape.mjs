@@ -552,7 +552,6 @@ const enrich = (o) => ({
 const SHOPS = {
   ispace: {
     name: 'iSpace', site: 'https://ispace.am', note: 'Apple Premium Reseller',
-    warranty: 'https://ispace.am/pages/warranty',
     async run() {
       const out = [];
       const seen = new Set();
@@ -587,7 +586,6 @@ const SHOPS = {
 
   vega: {
     name: 'Vega', site: 'https://vega.am', note: 'electronics retailer',
-    warranty: 'https://vega.am/services.html',
     async run() {
       const out = [];
       for (let page = 1; page <= 6; page++) {
@@ -868,7 +866,6 @@ const SHOPS = {
 
   redstore: {
     name: 'REDstore', site: 'https://redstore.am', note: 'electronics retailer',
-    warranty: 'https://redstore.am/en/pages/warranty',
     async run() {
       // robots.txt allows /product/ and names no sitemap, but /sitemap.xml is a normal index.
       const idx = await get('https://redstore.am/sitemap.xml'); await sleep(DELAY_MS);
@@ -1154,7 +1151,7 @@ if (placed) console.log(`${placed} capacity-less offers placed in a tier by thei
 for (const id of Object.keys(offers)) offers[id].sort((a, b) => a.price - b.price);
 
 const shops = { ...(prev.shops || {}) };
-for (const k of names) shops[k] = { name: SHOPS[k].name, site: SHOPS[k].site, note: SHOPS[k].note, warranty: SHOPS[k].warranty || null };
+for (const k of names) shops[k] = { name: SHOPS[k].name, site: SHOPS[k].site, note: SHOPS[k].note };
 // A shop that only ever appears in data/listings.csv has no adapter, so nothing above names it.
 // Without an entry here the offer row would print the raw key - "miarmenia" rather than "Mi Armenia".
 const HAND = {
@@ -1167,7 +1164,7 @@ const HAND = {
   notebookcentre: { name: 'Notebook Centre', site: 'https://notebookcentre.am', note: 'electronics retailer' },
   yerevanmobile: { name: 'Yerevan Mobile', site: 'https://yerevanmobile.am', note: 'phone retailer' },
 };
-for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v, warranty: null };
+for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 
 // "eSIM" in the name does NOT mean eSIM-only. 3DPlanet's two options read "E-Sim" and
 // "1 Սիմ քարտ + Esim" - the second is the phone WITH a nano tray, and matching on esim alone

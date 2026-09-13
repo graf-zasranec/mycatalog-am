@@ -19,6 +19,10 @@ const TERMS = JSON.parse(rd('data/terms.json'));
 // this catalogue must not do. A name, a shop's pre-order price and a date is all we know.
 const COMING = fs.existsSync('data/coming.json') ? JSON.parse(rd('data/coming.json')) : { when: {}, items: [] };
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
+// The shop's own page title rides along in prices.json because the capacity re-derivation reads
+// it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
+// ("... - Warranty - AllSell") into our page and adds weight for nothing.
+for (const list of Object.values(PRICES.offers || {})) for (const o of list) { delete o.title; delete o.sku; delete o.image; }
 
 // A configuration a shop actually sells is a real configuration. phones.json carries the spec
 // sheet, which lags: the MacBook Pro 14 sells at 512 GB, the Pixel 11 Pro XL at 12/256, and
