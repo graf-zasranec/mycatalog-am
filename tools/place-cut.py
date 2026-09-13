@@ -53,7 +53,11 @@ def alpha_by_flood(a, tol=18):
     edge.discard(0)
     outside = np.isin(lab, list(edge))
     al = (~outside).astype(np.float32)
-    al = ndimage.binary_closing(al > 0.5, np.ones((3, 3))).astype(np.float32)
+    al = ndimage.binary_closing(al > 0.5, np.ones((3, 3)))
+    # Fill enclosed holes. A white product on a white backdrop has patches that match the
+    # backdrop exactly - the shading inside an EarPod - and those come out as speckles of
+    # background INSIDE the product. Anything fully enclosed by the product is the product.
+    al = ndimage.binary_fill_holes(al).astype(np.float32)
     al = ndimage.gaussian_filter(al, 0.7)                 # soften the stair-step edge
     al3 = al[..., None]
     rgb = np.where(al3 > 0.02, (a - (1 - al3) * bg) / np.maximum(al3, 0.02), a)
