@@ -81,8 +81,10 @@ function cutMap(inline) {
   for (const f of cutFiles) {
     const [id, rest] = f.replace(/\.webp$/, '').split('__');
     if (!id || !rest) continue;
-    const mainW = cutW[`${id}__main.webp`] || 0;
-    if (rest !== 'main' && mainW && cutW[f] < mainW * 0.75) continue;
+    // 600px is the catalogue's floor for any photo. This used to be a fraction of the main
+    // shot's width, which punished the good main shots: the Fold 8's 719px colours were thrown
+    // out against its 1200px main while the Ultra's 937px ones squeaked past the same ratio.
+    if (rest !== 'main' && cutW[f] < 600) continue;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
       : `${CUT}/${f}`;

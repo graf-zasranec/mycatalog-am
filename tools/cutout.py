@@ -9,7 +9,7 @@
 # strap from a white backdrop. It ate watch straps and left podiums. isnet-general-use is a
 # segmentation model trained on exactly this - object against studio backdrop - and it answers
 # the question the thresholds could not.
-import sys, os, io
+import sys, os, io, subprocess
 from pathlib import Path
 from PIL import Image
 import numpy as np
@@ -214,6 +214,11 @@ def main():
         except Exception as e:
             print(f'  ! {f}: {e}', flush=True)
     print(f'done {done}/{len(todo)} (+{skipped} already current)')
+    # rembg punches a pinhole through anything brighter than the product - a camera flash, an LED.
+    # This used to be a manual pass, which meant every new photo escaped it until someone noticed.
+    if done:
+        ids = sorted({f.split('__')[0] for f in todo})
+        subprocess.run([sys.executable, str(ROOT / 'tools' / 'fill-specks.py'), *ids])
 
 
 if __name__ == '__main__':

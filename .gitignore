@@ -23,3 +23,8 @@ images/*.zip
 # the resume stamp is local bookkeeping, not site content
 images/cut/.pipeline
 .claude/
+
+# Sitemap caches for the shops whose search endpoints robots.txt disallows (allsell, eldorado).
+# ~37 MB of XML, refetched on demand by tools/shop-shot.py.
+.cache/
+__pycache__/

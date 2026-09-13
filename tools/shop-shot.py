@@ -1,6 +1,10 @@
 # Pulls a product photo from an Armenian shop's own product page.
 #
 #   python tools/shop-shot.py <product-id> <search terms...> [--shop zigzag|vega]
+#   python tools/shop-shot.py <product-id> --url <product page url>
+#
+# allsell and eldorado both Disallow their search endpoints but publish sitemaps, so there is
+# no search entry for them: pick the product URL out of the sitemap and pass it with --url.
 #
 # The shop shows a thumbnail; each entry below says how to turn that into the original.
 # zigzag is Magento (a /cache/<hash>/ segment to drop), vega is OpenCart (a cache/webp prefix
@@ -46,6 +50,8 @@ SHOPS = {
     'vega': dict(search='https://vega.am/search/?search={q}',
                  link=re.compile(r'(https://vega\.am/[a-z0-9\-/]+\.html)'),
                  page=None, orig=vega_orig),
+    'allsell': dict(orig=zigzag_orig),      # Magento, same cache segment
+    'eldorado': dict(orig=zigzag_orig),     # Magento, same cache segment
 }
 
 
@@ -99,8 +105,18 @@ def main():
         i = argv.index('--shop')
         shop = argv[i + 1]
         argv = argv[:i] + argv[i + 2:]
+    direct = None
+    if '--url' in argv:
+        i = argv.index('--url')
+        direct = argv[i + 1]
+        shop = next((k for k in SHOPS if k in direct), shop)
+        argv = argv[:i] + argv[i + 2:]
     cfg = SHOPS[shop]
     pid, terms = argv[0], ' '.join(argv[1:])
+
+    if direct:
+        save(pid, direct, cfg, shop, direct.rsplit('/', 1)[-1], 1.0)
+        return
 
     html = get(cfg['search'].format(q=terms.replace(' ', '+')))
     found = [s for s in dict.fromkeys(cfg['link'].findall(html)) if not any(k in s for k in SKIP)]
@@ -114,6 +130,10 @@ def main():
     slug, score = hit
 
     target = keyed[slug] if keyed[slug].startswith('http') else cfg['page'].format(slug=slug)
+    save(pid, target, cfg, shop, slug, score)
+
+
+def save(pid, target, cfg, shop, slug, score):
     m = OG.search(get(target))
     if not m:
         print(f'{pid}: {slug} has no og:image'); return
