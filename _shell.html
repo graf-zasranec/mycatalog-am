@@ -201,6 +201,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ---- savings strip: real spread between shops, the thing only this site knows ---- */
 /* Announced, not yet on sale. Reads as a strip of its own rather than as catalogue cards, so
    nobody mistakes a pre-order price for a price you can pay in a shop today. */
+/* Filter results arriving. The stagger is per-card via --d, set in gridIn(). */
+@keyframes gridin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes gridinFade{from{opacity:0}to{opacity:1}}
+.grid.gridin>*{animation:gridin .34s cubic-bezier(.22,.61,.36,1) both;animation-delay:var(--d,0ms)}
+@media (prefers-reduced-motion:reduce){
+  /* opacity only: the trigger is movement, and the cue that the grid changed is still worth keeping */
+  .grid.gridin>*{animation:gridinFade .2s ease both}
+}
 .soon-sec{margin-top:52px;border-top:1px solid var(--line);padding-top:26px}
 .soon-hd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .soon-tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;

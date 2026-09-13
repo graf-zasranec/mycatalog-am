@@ -77,7 +77,7 @@ const X = {
 
 /* ================= state ================= */
 const LS = 'mycatalog.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scr: '', batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -96,7 +96,7 @@ for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'pmin', 'pmax']) {
   st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
 }
 if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
-if (st.scr && !['lt63', 'mid', 'gt67'].includes(st.scr)) st.scr = D.scr;
+st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lt63', 'mid', 'gt67'].includes(v)) : [];
 const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
 
 // The price filter compares against each phone's CHEAPEST offer, so the slider bounds have to be
@@ -251,11 +251,11 @@ function matches(p, s) {
   if (s.scrmin && !(d >= s.scrmin)) return false;
   // 1 = must have a touchscreen, 2 = must not; 0 = do not care
   if (s.touch && p.display?.touch !== (s.touch === 1)) return false;
-  if (s.scr) {
+  // any of the chosen bands qualifies; none chosen means the question is not being asked
+  if ((s.scrs || []).length) {
     if (d == null) return false;
-    if (s.scr === 'lt63' && d >= 6.3) return false;
-    if (s.scr === 'mid' && (d < 6.3 || d > 6.7)) return false;
-    if (s.scr === 'gt67' && d <= 6.7) return false;
+    const band = d < 6.3 ? 'lt63' : d <= 6.7 ? 'mid' : 'gt67';
+    if (!s.scrs.includes(band)) return false;
   }
   return true;
 }
@@ -509,8 +509,7 @@ function filterBar() {
   for (const [k, lbl, vals, fmt] of CHIPSETS())
     if (vals.length > 1 && (!VARIES[k] || varies(VARIES[k]))) h += drop(k, t(lbl), radios(k, vals, fmt));
   if (varies(p => p.display?.size)) h += drop('scr', t('filter.screen_size'),
-    `<label class="opt"><input type="radio" name="r-scr" data-f="scr" value=""><span>${esc(x('any'))}</span></label>` +
-    ['lt63', 'mid', 'gt67'].map((v, i) => `<label class="opt"><input type="radio" name="r-scr" data-f="scr" value="${v}"><span>${esc(x('bands')[i])}</span><span class="n num" data-cnt="scr:${v}"></span></label>`).join(''));
+    ['lt63', 'mid', 'gt67'].map((v, i) => `<label class="opt"><input type="checkbox" data-f="scr" value="${v}"><span>${esc(x('bands')[i])}</span><span class="n num" data-cnt="scr:${v}"></span></label>`).join(''));
   if (varies(p => /5G/i.test(p.connectivity?.network || ''))) h += `<button class="toggle" data-f="g5" aria-pressed="false">5G</button>`;
   if (varies(p => p.connectivity?.nfc)) h += `<button class="toggle" data-f="nfc" aria-pressed="false">NFC</button>`;
   h += `<span class="spacer"></span>`;
@@ -523,12 +522,13 @@ function syncFilters() {
     const k = el.dataset.f;
     if (el.tagName === 'BUTTON') { el.setAttribute('aria-pressed', !!st[k]); return; }
     if (k === 'brand') el.checked = st.brands.includes(el.value);
+    else if (k === 'scr') el.checked = st.scrs.includes(el.value);
     else if (k === 'pmin' || k === 'pmax') el.value = st[k];
     else if (el.type === 'radio') el.checked = String(st[k] ?? '') === el.value;
   });
   $$('[data-cnt]').forEach(el => {
     const [k, v] = el.dataset.cnt.split(':');
-    el.textContent = k === 'b' ? cnt({ brands: [v] }) : k === 'scr' ? cnt({ scr: v }) : cnt({ [k]: +v });
+    el.textContent = k === 'b' ? cnt({ brands: [v] }) : k === 'scr' ? cnt({ scrs: [v] }) : cnt({ [k]: +v });
   });
   $$('[data-rng="min"]').forEach(e => e.textContent = money(st.pmin) + ' ֏');
   $$('[data-rng="max"]').forEach(e => e.textContent = money(st.pmax) + ' ֏');
@@ -542,7 +542,7 @@ function syncFilters() {
   $$('[data-drop]').forEach(d => {
     const k = d.dataset.drop;
     const on = k === 'brand' ? st.brands.length : k === 'price' ? (st.pmin > PMIN || st.pmax < PMAX)
-      : k === 'sort' ? st.sort !== 'popular' : !!st[k];
+      : k === 'sort' ? st.sort !== 'popular' : k === 'scr' ? st.scrs.length : !!st[k];
     d.classList.toggle('on', !!on);
   });
 }
@@ -553,8 +553,9 @@ function syncFilters() {
 function pruneFilters() {
   const pool = inView();
   const base = { ...D, brands: [], cat: st.cat, pmin: PMIN, pmax: PMAX };
-  for (const k of ['ram', 'stor', 'batt', 'hz', 'scr', 'scrmin', 'touch', 'g5', 'nfc'])
+  for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch', 'g5', 'nfc'])
     if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
+  st.scrs = st.scrs.filter(v => pool.some(p => matches(p, { ...base, scrs: [v] })));
   if (st.brands.length && !pool.some(p => st.brands.includes(p.brand))) st.brands = [];
 }
 
@@ -568,7 +569,7 @@ const activeChips = () => {
   if (st.scrmin) o.push(['scrmin', `${x('min')} ${st.scrmin}″`]);
   if (st.batt) o.push(['batt', `${x('min')} ${money(st.batt)} ${u('mah')}`]);
   if (st.hz) o.push(['hz', `${x('min')} ${st.hz} ${u('hz')}`]);
-  if (st.scr) o.push(['scr', x('bands')[{ lt63: 0, mid: 1, gt67: 2 }[st.scr]]]);
+  for (const v of st.scrs) o.push(['scr:' + v, x('bands')[{ lt63: 0, mid: 1, gt67: 2 }[v]]]);
   if (st.g5) o.push(['g5', '5G']);
   if (st.nfc) o.push(['nfc', 'NFC']);
   return o;
@@ -731,6 +732,24 @@ function refresh() {
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
   syncFilters(); save();
   moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
+  gridIn(box);
+}
+
+// The grid is replaced wholesale on every filter change, so without this the result set
+// teleports. One class on the container and the cards arrive in a short stagger; capped at 14
+// so a 90-product reset does not turn into a two-second wave.
+//
+// Reduced motion gets the fade WITHOUT the rise. The vestibular problem is movement, not
+// opacity, so removing the animation entirely would take away the cue that the grid changed
+// while giving nothing back.
+function gridIn(box) {
+  const cards = box.children;
+  if (!cards.length || box.firstElementChild.classList.contains('empty')) return;
+  box.classList.remove('gridin'); void box.offsetWidth;
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].style.setProperty('--d', (Math.min(i, 14) * 22) + 'ms');
+  }
+  box.classList.add('gridin');
 }
 
 /* ================= product page — bold panel + price-spread rail ================= */
@@ -765,7 +784,56 @@ function tr(v, lang) {
 /* TR_END */
 
 
+/* ---- colour swatches ----------------------------------------------------
+   Shops name colours freely ("Awesome Lime", "Titanium Jetblack", "Icy Blue"), so a lookup
+   table goes stale the moment a new phone lands. HUE resolves the colour WORDS in the name and
+   SWATCH overrides the brand-signature finishes that must be exact. */
+const SWATCH = {
+  'Cosmic Orange': '#C8622A', 'Deep Blue': '#24405F', 'Silver': '#D9DADE', 'Space Black': '#26262A',
+  'Burgundy': '#5C2233', 'Glacier': '#C7D6E2', 'Natural Titanium': '#C6BFB4', 'Jade': '#4E8F72',
+  'Titanium Silverblue': '#8CA3B8', 'Lavender': '#C3B2DA', 'Mint': '#B9DCC7', 'Icy Blue': '#BBD3E6',
+};
+const HUE = { black:'#1D1D1F', white:'#F1F1F3', silver:'#D9DADE', grey:'#9AA0A6', gray:'#9AA0A6',
+  graphite:'#3A3D42', blue:'#2F5C9E', navy:'#22345C', green:'#3E7D5A', mint:'#B9DCC7',
+  red:'#B3242C', pink:'#E4A0B7', purple:'#6E4E9E', lilac:'#B9A7D6', lavender:'#C3B2DA',
+  violet:'#5B3E8E', orange:'#D2743A', gold:'#D3B182', yellow:'#E6C64A', cream:'#EDE3D1',
+  beige:'#DCCFBA', brown:'#6B4B37', bronze:'#9A6B4A', copper:'#B87333',
+  titanium:'#C6BFB4', charcoal:'#36393E', sand:'#D8C9AE', teal:'#2F7D80', cyan:'#4AB3C8',
+  plum:'#6B3050', burgundy:'#5C2233', ivory:'#F0EADD', jade:'#4E8F72', glacier:'#C7D6E2',
+  lime:'#9CCB3B', coral:'#E0735E', rose:'#D98A9A', sky:'#8FC2E8', aqua:'#5FBFC4',
+  olive:'#6E7248', khaki:'#BCAE87', indigo:'#3B3F8F', turquoise:'#3FB8AF', peach:'#F0B38A',
+  apricot:'#E8A96A', amber:'#D9A441', emerald:'#2F8F62', sage:'#A8B79A', steel:'#7E858C',
+  midnight:'#1B2333', starlight:'#EDE7DA', graphene:'#2E3136', obsidian:'#1A1A1C',
+  ultramarine:'#2B3FA8', blush:'#E7B9BC', citrus:'#E8B93C', pistachio:'#BFD6A0', fog:'#C2C6CB',
+  canyon:'#B5714E', lemon:'#E9DC6A', porcelain:'#EDEBE6', chestnut:'#7A4A34', moonstone:'#AFBCC8',
+  dawn:'#D9CBD6', slate:'#4C555F', frost:'#DCE6EE', onyx:'#141416' };
+const MATERIAL = new Set(['titanium','aluminium','aluminum','ceramic','steel','glass','leather','shadow','matte']);
+const _hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+const _mix = (h, amt) => {
+  const t = amt > 0 ? 255 : 0, k = Math.abs(amt);
+  return '#' + _hex(h).map(v => Math.round(v + (t - v) * k).toString(16).padStart(2, '0')).join('');
+};
+function swatch(name) {
+  if (SWATCH[name]) return SWATCH[name];
+  const words = String(name || '').toLowerCase().replace(/[^a-z]+/g, ' ').trim().split(' ').filter(Boolean);
+  let base = null, material = null;
+  for (let i = words.length - 1; i >= 0 && !base; i--) {       // colour names put the head noun last
+    const w = words[i];
+    if (MATERIAL.has(w)) { material = material || HUE[w] || null; continue; }
+    if (HUE[w]) { base = HUE[w]; break; }
+    let bestLen = 0;                                          // shops write compounds as one word
+    for (const k in HUE) if (w.endsWith(k) && k.length > bestLen) { base = HUE[k]; bestLen = k.length; }
+  }
+  base = base || material;
+  if (!base) return '#9AA0A6';
+  if (words.some(w => ['light', 'icy', 'ice', 'pale'].includes(w))) base = _mix(base, .34);
+  if (words.some(w => ['deep', 'dark', 'midnight', 'jet', 'obsidian', 'storm'].includes(w))) base = _mix(base, -.3);
+  return base;
+}
+
 const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
+const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
 // 'main' is a copy of one of the colours under a different filename, so it would show twice
 // The second shot of a crossfading card starts empty and is filled on the first swap. An <img>
 // with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
@@ -822,7 +890,7 @@ document.addEventListener('pointerover', e => {
   if (cyc) cycStep(cyc);
 });
 
-let SEL = { id: null, storage: null, ram: null, esim: null };
+let SEL = { id: null, color: null, storage: null, ram: null, esim: null };
 function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
@@ -830,6 +898,7 @@ function initSel(p) {
   SEL = {
     id: p.id,
     esim: null,
+    color: (p.colors || []).find(c => sold(p, 'color', c)) || (p.colors || [])[0] || null,
     storage: (offs.find(o => o.storage != null) || {}).storage ?? (p.variants[0] || {}).storage ?? null,
     ram: null
   };
@@ -873,7 +942,11 @@ function detailView(p) {
   const lo = offs.length ? offs[0].price : null;
   const variant = p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
   const shownPrice = lo ?? variant.priceAmd ?? p.priceAmd;
-  const shot = IMG(p.id);
+  // Every finish the maker lists. The picture follows the choice where a colour has its own
+  // photo; where it does not, the main shot stays and the swatch still answers the real
+  // question - whether anyone in Armenia sells it. Crossed through when nobody does.
+  const cols = p.colors || [];
+  const shot = colorPhoto(p, SEL.color) || IMG(p.id);
   // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
   // option blocks below simply do not render
   // SIM is a fact, not a choice - no shop prices a phone by its SIM tray - so these are spans,
@@ -929,6 +1002,9 @@ function detailView(p) {
 
           ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
+          ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
+            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ' — ' + esc(x('notSold'))}"
+              class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
           ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
@@ -1346,7 +1422,7 @@ document.addEventListener('click', e => {
     e.preventDefault();
     st.q = ''; st.brands = []; st.cat = '';
     for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch']) st[k] = D[k];
-    st.scr = D.scr; st.sort = D.sort;
+    st.scrs = []; st.sort = D.sort;
     save();
     if (location.hash && location.hash !== '#/') location.hash = '#/'; else render();
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1402,11 +1478,12 @@ document.addEventListener('click', e => {
   if (tg) { const k = tg.dataset.f; st[k] = !st[k]; refresh(); return; }
   // construct page: category card, a question chip, a brand chip
   const cc = e.target.closest('[data-ccat]');
-  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scr: '', g5: false, nfc: false });
+  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false });
     save(); $('#main').innerHTML = constructView(); return; }
   const cq = e.target.closest('[data-cq]');
   if (cq) { const k = cq.dataset.cq, v = cq.dataset.cqv;
-    st[k] = (k === 'scr') ? v : +v;
+    if (k === 'scr') st.scrs = st.scrs.includes(v) ? st.scrs.filter(z => z !== v) : [...st.scrs, v];
+    else st[k] = +v;
     save(); $('#main').innerHTML = constructView(); return; }
   const cbrand = e.target.closest('[data-cqb]');
   if (cbrand) { const b = cbrand.dataset.cqb;
@@ -1415,11 +1492,11 @@ document.addEventListener('click', e => {
   const rm = e.target.closest('[data-rm]');
   if (rm) {
     const k = rm.dataset.rm;
-    if (k === 'all') Object.assign(st, { q: '', brands: [], pmin: PMIN, pmax: PMAX, ram: 0, stor: 0, batt: 0, hz: 0, scr: '', g5: false, nfc: false });
+    if (k === 'all') Object.assign(st, { q: '', brands: [], pmin: PMIN, pmax: PMAX, ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false });
     if (k === 'all') $('#q').value = '';
     else if (k.startsWith('brand:')) st.brands = st.brands.filter(b => b !== k.slice(6));
     else if (k === 'price') { st.pmin = PMIN; st.pmax = PMAX; }
-    else if (k === 'scr') st.scr = '';
+    else if (k.startsWith('scr:')) st.scrs = st.scrs.filter(v => v !== k.slice(4));
     else st[k] = (k === 'g5' || k === 'nfc') ? false : 0;
     if (location.hash === '#/construct') { save(); $('#main').innerHTML = constructView(); return; }
     // Let the chip collapse before the grid moves underneath it, so the reflow reads as caused
@@ -1458,10 +1535,11 @@ document.addEventListener('click', e => {
   }
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-storage],[data-ram],[data-esim]');
+  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim]');
   if (opt) {
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
+    if (opt.dataset.color !== undefined) SEL.color = opt.dataset.color;
     // second click on the chosen one clears it, so "either" is reachable without a third button
     if (opt.dataset.esim !== undefined) {
       const want = opt.dataset.esim === '1';
@@ -1500,7 +1578,7 @@ document.addEventListener('change', e => {
   if (el.id === 'diffonly') { $('#cwrap').classList.toggle('hide-same', el.checked); return; }
   if (!f) return;
   if (f === 'brand') st.brands = el.checked ? [...new Set([...st.brands, el.value])] : st.brands.filter(b => b !== el.value);
-  else if (f === 'scr') st.scr = el.value;
+  else if (f === 'scr') st.scrs = el.checked ? [...new Set([...st.scrs, el.value])] : st.scrs.filter(v => v !== el.value);
   else if (f === 'sort') { st.sort = el.value; el.closest('[data-drop]').open = false; }
   else if (f === 'pmin') st.pmin = Math.min(+el.value, st.pmax);
   else if (f === 'pmax') st.pmax = Math.max(+el.value, st.pmin);
