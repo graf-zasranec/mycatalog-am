@@ -205,6 +205,16 @@ button,input,select,textarea{font:inherit;color:inherit}
    physical SIMs - and it is usually the cheaper row, so it says so on the row itself. */
 .orow .esim{font-family:var(--mono);font-size:9px;letter-spacing:.08em;font-style:normal;
   padding:2px 5px;border-radius:4px;background:var(--surface2);color:var(--muted);vertical-align:middle}
+/* Pages. 36 cards a page: the grid stops being 192 cards of DOM on every filter move. */
+.pager{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center;margin:26px 0 4px}
+.pager .pg{min-width:38px;height:38px;padding:0 10px;border-radius:var(--pill);cursor:pointer;
+  font-family:var(--mono);font-size:0.8125rem;font-weight:600;border:1.5px solid var(--line2);
+  background:var(--surface);color:var(--text);transition:border-color .12s,background .12s}
+.pager .pg:hover:not(:disabled){border-color:var(--text)}
+.pager .pg.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.pager .pg:disabled{opacity:.35;cursor:default}
+.pager .gap{color:var(--muted);padding:0 2px}
+@media (max-width:520px){.pager .pg{min-width:34px;height:34px;padding:0 8px}}
 /* Filter results arriving. The stagger is per-card via --d, set in gridIn(). */
 @keyframes gridin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes gridinFade{from{opacity:0}to{opacity:1}}

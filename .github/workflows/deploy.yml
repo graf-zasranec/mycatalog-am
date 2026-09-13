@@ -5,7 +5,8 @@ name: MyCatalog — refresh prices
 
 on:
   schedule:
-    - cron: '0 3 * * *'      # 07:00 Yerevan (UTC+4)
+    - cron: '0 19 * * *'     # 23:00 Yerevan (UTC+4) - the day's prices, after the shops close
+    - cron: '0 3 * * *'      # 07:00 Yerevan - so the morning page is not last night's
   workflow_dispatch:          # lets you run it by hand from the Actions tab
 
 permissions:

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-SNM+lG9R+BvVlvcZ+ikgCKDZxZTZocL/4/dS8ESouP4='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-lyau2xO+6bxpIADVWrgnx+9RjXAC9kzQdO7RBHC/5As='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 192 մոդել, 19 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -229,6 +229,16 @@ button,input,select,textarea{font:inherit;color:inherit}
    physical SIMs - and it is usually the cheaper row, so it says so on the row itself. */
 .orow .esim{font-family:var(--mono);font-size:9px;letter-spacing:.08em;font-style:normal;
   padding:2px 5px;border-radius:4px;background:var(--surface2);color:var(--muted);vertical-align:middle}
+/* Pages. 36 cards a page: the grid stops being 192 cards of DOM on every filter move. */
+.pager{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center;margin:26px 0 4px}
+.pager .pg{min-width:38px;height:38px;padding:0 10px;border-radius:var(--pill);cursor:pointer;
+  font-family:var(--mono);font-size:0.8125rem;font-weight:600;border:1.5px solid var(--line2);
+  background:var(--surface);color:var(--text);transition:border-color .12s,background .12s}
+.pager .pg:hover:not(:disabled){border-color:var(--text)}
+.pager .pg.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.pager .pg:disabled{opacity:.35;cursor:default}
+.pager .gap{color:var(--muted);padding:0 2px}
+@media (max-width:520px){.pager .pg{min-width:34px;height:34px;padding:0 8px}}
 /* Filter results arriving. The stagger is per-card via --d, set in gridIn(). */
 @keyframes gridin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes gridinFade{from{opacity:0}to{opacity:1}}
@@ -947,7 +957,7 @@ const X = {
 
 /* ================= state ================= */
 const LS = 'mycatalog.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -966,6 +976,7 @@ for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'pmin', 'pmax']) {
   st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
 }
 if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
+st.page = Number.isFinite(+st.page) && +st.page >= 1 ? Math.floor(+st.page) : 1;
 st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lt63', 'mid', 'gt67'].includes(v)) : [];
 const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
 
@@ -1599,14 +1610,53 @@ function catalogView() {
     <div class="chips" id="chips"></div>
     <div class="resbar" id="results"><h2>${esc(t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
     <div class="grid" id="gridbox"></div>
+    <div id="pager"></div>
   </div>`;
 }
+// 192 products is 192 cards of DOM, 192 price lookups and 192 <img> the browser has to keep
+// track of, every time a filter moves. Lazy loading already spares the bytes; this spares the
+// work. 36 a page, which fills four rows on a desktop and still beats the fold on a phone.
+const PAGE = 36;
+const pageCount = n => Math.max(1, Math.ceil(n / PAGE));
+
+function pager(total) {
+  const last = pageCount(total);
+  if (last < 2) return '';
+  // first, last and the neighbours of the current page; an ellipsis stands in for the rest, so
+  // the row stays one line at 192 products and at 1920.
+  const want = new Set([1, last, st.page, st.page - 1, st.page + 1]);
+  if (st.page <= 3) { want.add(2); want.add(3); }
+  if (st.page >= last - 2) { want.add(last - 1); want.add(last - 2); }
+  const nums = [...want].filter(n => n >= 1 && n <= last).sort((a, b) => a - b);
+  let out = '', prev = 0;
+  for (const n of nums) {
+    if (prev && n - prev > 1) out += `<span class="gap" aria-hidden="true">…</span>`;
+    out += `<button class="pg${n === st.page ? ' on' : ''}" data-page="${n}"${n === st.page ? ' aria-current="page"' : ''}>${n}</button>`;
+    prev = n;
+  }
+  return `<nav class="pager" aria-label="${esc(t('catalog.title'))}">
+    <button class="pg nav" data-page="${st.page - 1}"${st.page === 1 ? ' disabled' : ''} aria-label="←">←</button>
+    ${out}
+    <button class="pg nav" data-page="${st.page + 1}"${st.page === last ? ' disabled' : ''} aria-label="→">→</button></nav>`;
+}
+
+// Every path that changes what is being listed must send you back to page 1 - otherwise a
+// filter applied on page 4 shows an empty grid for a reason nothing on screen explains. One
+// signature here instead of a reset in each of the nine handlers that can change it.
+let lastSig = null;
 function refresh() {
-  const r = results(), box = $('#gridbox');
+  const all = results(), box = $('#gridbox');
   if (!box) return;
-  box.innerHTML = r.length ? r.map(card).join('')
+  const sig = JSON.stringify([st.cat, st.q, st.brands, st.pmin, st.pmax, st.ram, st.stor,
+    st.scrs, st.batt, st.hz, st.g5, st.nfc, st.scrmin, st.touch, st.sort]);
+  if (sig !== lastSig) { if (lastSig !== null) st.page = 1; lastSig = sig; }
+  const last = pageCount(all.length);
+  if (st.page > last) st.page = last;          // a filter that shrinks the set must not strand you
+  const r = all.slice((st.page - 1) * PAGE, st.page * PAGE);
+  box.innerHTML = all.length ? r.map(card).join('')
     : `<div class="empty"><b>${esc(x('emptyT'))}</b>${esc(x('emptyS'))}<button class="btn ghost" data-rm="all" style="margin-top:14px">${esc(t('common.reset'))}</button></div>`;
-  $('#rescnt').textContent = t('common.results_count').replace('{n}', r.length);
+  const pg = $('#pager'); if (pg) pg.innerHTML = pager(all.length);
+  $('#rescnt').textContent = t('common.results_count').replace('{n}', all.length);
   const ch = activeChips();
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
@@ -2402,6 +2452,14 @@ document.addEventListener('click', e => {
     const open = list.classList.toggle('all');
     ex.setAttribute('aria-expanded', open);
     ex.firstChild.textContent = (open ? x('showLess') : x('showAll')) + ' ';
+    return;
+  }
+  const pgb = e.target.closest('[data-page]');
+  if (pgb && !pgb.disabled) {
+    st.page = Math.max(1, +pgb.dataset.page || 1);
+    save(); refresh();
+    const top = $('#results');
+    if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
     return;
   }
   const ofc = e.target.closest('[data-of]');

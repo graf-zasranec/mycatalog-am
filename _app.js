@@ -77,7 +77,7 @@ const X = {
 
 /* ================= state ================= */
 const LS = 'mycatalog.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -96,6 +96,7 @@ for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'pmin', 'pmax']) {
   st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
 }
 if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
+st.page = Number.isFinite(+st.page) && +st.page >= 1 ? Math.floor(+st.page) : 1;
 st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lt63', 'mid', 'gt67'].includes(v)) : [];
 const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
 
@@ -729,14 +730,53 @@ function catalogView() {
     <div class="chips" id="chips"></div>
     <div class="resbar" id="results"><h2>${esc(t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
     <div class="grid" id="gridbox"></div>
+    <div id="pager"></div>
   </div>`;
 }
+// 192 products is 192 cards of DOM, 192 price lookups and 192 <img> the browser has to keep
+// track of, every time a filter moves. Lazy loading already spares the bytes; this spares the
+// work. 36 a page, which fills four rows on a desktop and still beats the fold on a phone.
+const PAGE = 36;
+const pageCount = n => Math.max(1, Math.ceil(n / PAGE));
+
+function pager(total) {
+  const last = pageCount(total);
+  if (last < 2) return '';
+  // first, last and the neighbours of the current page; an ellipsis stands in for the rest, so
+  // the row stays one line at 192 products and at 1920.
+  const want = new Set([1, last, st.page, st.page - 1, st.page + 1]);
+  if (st.page <= 3) { want.add(2); want.add(3); }
+  if (st.page >= last - 2) { want.add(last - 1); want.add(last - 2); }
+  const nums = [...want].filter(n => n >= 1 && n <= last).sort((a, b) => a - b);
+  let out = '', prev = 0;
+  for (const n of nums) {
+    if (prev && n - prev > 1) out += `<span class="gap" aria-hidden="true">…</span>`;
+    out += `<button class="pg${n === st.page ? ' on' : ''}" data-page="${n}"${n === st.page ? ' aria-current="page"' : ''}>${n}</button>`;
+    prev = n;
+  }
+  return `<nav class="pager" aria-label="${esc(t('catalog.title'))}">
+    <button class="pg nav" data-page="${st.page - 1}"${st.page === 1 ? ' disabled' : ''} aria-label="←">←</button>
+    ${out}
+    <button class="pg nav" data-page="${st.page + 1}"${st.page === last ? ' disabled' : ''} aria-label="→">→</button></nav>`;
+}
+
+// Every path that changes what is being listed must send you back to page 1 - otherwise a
+// filter applied on page 4 shows an empty grid for a reason nothing on screen explains. One
+// signature here instead of a reset in each of the nine handlers that can change it.
+let lastSig = null;
 function refresh() {
-  const r = results(), box = $('#gridbox');
+  const all = results(), box = $('#gridbox');
   if (!box) return;
-  box.innerHTML = r.length ? r.map(card).join('')
+  const sig = JSON.stringify([st.cat, st.q, st.brands, st.pmin, st.pmax, st.ram, st.stor,
+    st.scrs, st.batt, st.hz, st.g5, st.nfc, st.scrmin, st.touch, st.sort]);
+  if (sig !== lastSig) { if (lastSig !== null) st.page = 1; lastSig = sig; }
+  const last = pageCount(all.length);
+  if (st.page > last) st.page = last;          // a filter that shrinks the set must not strand you
+  const r = all.slice((st.page - 1) * PAGE, st.page * PAGE);
+  box.innerHTML = all.length ? r.map(card).join('')
     : `<div class="empty"><b>${esc(x('emptyT'))}</b>${esc(x('emptyS'))}<button class="btn ghost" data-rm="all" style="margin-top:14px">${esc(t('common.reset'))}</button></div>`;
-  $('#rescnt').textContent = t('common.results_count').replace('{n}', r.length);
+  const pg = $('#pager'); if (pg) pg.innerHTML = pager(all.length);
+  $('#rescnt').textContent = t('common.results_count').replace('{n}', all.length);
   const ch = activeChips();
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
@@ -1532,6 +1572,14 @@ document.addEventListener('click', e => {
     const open = list.classList.toggle('all');
     ex.setAttribute('aria-expanded', open);
     ex.firstChild.textContent = (open ? x('showLess') : x('showAll')) + ' ';
+    return;
+  }
+  const pgb = e.target.closest('[data-page]');
+  if (pgb && !pgb.disabled) {
+    st.page = Math.max(1, +pgb.dataset.page || 1);
+    save(); refresh();
+    const top = $('#results');
+    if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
     return;
   }
   const ofc = e.target.closest('[data-of]');
