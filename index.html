@@ -838,7 +838,15 @@ a.store:hover .nm{color:var(--brand)}
    direction and no displacement. So keyframe animations and every transform transition still
    go, and opacity is the one property left free - which is what makes the hero and the card
    colour changes dissolve rather than cut for anyone with the setting on. */
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-property:opacity!important}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-property:opacity!important}
+  /* Two exceptions, because reduced motion is about MOVEMENT. A price changing colour and a
+     card fading in move nothing at all, and they are the only signal that the number you just
+     changed the configuration for is a different number. Blanketing them out left the product
+     page silent on the one interaction it exists for. */
+  .fx-flash{animation:fxflash .8s ease-out!important}
+  .grid.gridin>*{animation:gridinFade .2s ease both!important}
+}
 </style></head><body>
 
 
