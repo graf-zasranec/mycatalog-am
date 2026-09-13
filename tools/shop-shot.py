@@ -33,7 +33,16 @@ def main():
     # against ath-m20xbt, a different pair of headphones. Any query token carrying a digit is
     # the model, and it has to be present in the slug verbatim.
     models = [t for t in key.split() if any(c.isdigit() for c in t)]
+    # The variant word matters as much as the model number: "s10 ultra" matched the Tab S10 FE,
+    # because both carry s10 and neither "ultra" nor "fe" contains a digit. If the query names a
+    # tier, the slug has to carry the same one - and must not carry a DIFFERENT one.
+    TIERS = ['ultra', 'promax', 'pro', 'max', 'plus', 'mini', 'lite', 'fe', 'air']
+    asked = [t for t in TIERS if t in key.replace(' ', '')]
+    models += asked[:1]
     slugs = [s for s in slugs if all(m in s.replace('-', '') for m in models)]
+    if asked:
+        wrong = [t for t in TIERS if t not in asked and t != 'pro' or (t == 'pro' and 'pro' not in asked)]
+        slugs = [s for s in slugs if not any(w in s.replace('-', '') for w in ('fe', 'lite', 'mini') if w not in asked)]
     if not slugs:
         print(f'{pid}: nothing on zigzag carries {models or terms!r}'); return
     # The brand has to be there too. Without it a 0.43 ratio put a Xiaomi AIR FRYER on the JBL

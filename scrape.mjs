@@ -165,8 +165,15 @@ function capacitiesOf(text) {
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   // AllSell writes the MacBook Air as "16GB I 512TB". Nothing on sale here holds more than 8 TB,
   // so a terabyte figure that large is the shop meaning gigabytes.
-  return [...h.matchAll(/(\d+)\s*(tb|տբ|gb|գբ)(?:\s|$)/g)]
+  const withUnit = [...h.matchAll(/(\d+)\s*(tb|տբ|gb|գբ)(?:\s|$)/g)]
     .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; });
+  if (withUnit.length) return withUnit;
+  // iBolit writes the capacity with no unit at all - "iPHONE 17 256 Lavander ESIM" - and those
+  // offers landed with storage null, which makes them stand in for the base capacity of every
+  // configuration. Only a bare number that is EXACTLY a real capacity counts, so a model number
+  // ("Galaxy A56", "Redmi Note 13") cannot be read as one.
+  const SIZES = new Set([64, 128, 256, 512, 1024, 2048]);
+  return [...h.matchAll(/(?:^|\s)(\d+)(?=\s|$)/g)].map(m => +m[1]).filter(v => SIZES.has(v));
 }
 // titles like "SM-S938B/DS 12GB 256GB" list RAM first, then storage -> larger is storage
 // A title that names ONE capacity is naming memory as often as storage: AllSell lists the
@@ -177,6 +184,11 @@ const storageOf = text => { const c = capacitiesOf(text); if (!c.length) return 
   const m = Math.max(...c); return m >= 64 ? m : null; };
 // one capacity from a single label ("512 GB", "16GB") - a shop's own attribute value, which is
 // not a title and needs none of the guessing storageOf does
+// A shop naming BOTH a physical SIM and eSIM is selling the phone WITH a tray.
+const TRAY = /\b[12]\s*-?\s*sim\b|\bdual\s*sim\b|\bnano\b|սիմ|sim\s*card|\+\s*sim|sim\s*\+/i;
+// e-?sim, because 3DPlanet writes the tray-less option "E-Sim" with a hyphen. "Nano-SIM" does
+// not match it: there is no e immediately before the -sim.
+const ESIM_ONLY = t => /(^|[^a-z])e-?sim([^a-z]|$)/i.test(t) && !TRAY.test(t);
 const capOf = lbl => { const c = capacitiesOf(lbl || ''); return c.length ? c[0] : null; };
 // The JSON object that starts at the first { after an anchor. Brace counting has to skip
 // strings, or a } inside a product name ends the object early.
@@ -405,6 +417,26 @@ if (process.argv[2] === '--selftest') {
     const got = matchPhone(txt);
     if (got !== want) { bad++; console.log(`FAIL  got=${got}  want=${want}  <- ${txt}`); }
   }
+  // "eSIM" in a name does NOT mean eSIM-ONLY. A shop that also names a physical tray is selling
+  // the phone WITH one, and filing it under the wrong button moves a price by 80,000.
+  const simCases = [
+    [true, 'iPHONE 17 256 Lavander ESIM'], [true, 'E-Sim'],
+    [true, 'iphone-18-pro-256gb-burgundy-esim'], [true, 'iphone-17-pro-256gb-esim-silver'],
+    [false, '1 Սիմ քարտ + Esim'], [false, '1 SIM + eSIM'], [false, 'Dual SIM + eSIM'],
+    [false, 'Nano-SIM + eSIM'], [false, 'iPhone 17 Pro 256GB (Silver) 1 -SIM'],
+    [false, 'iphone-18-pro-256gb-burgundy'],
+  ];
+  for (const [want, txt] of simCases) {
+    const got = ESIM_ONLY(txt);
+    if (got !== want) { bad++; console.log(`FAIL  eSIM-only=${got} want=${want}  <- ${txt}`); }
+  }
+  // a capacity with no unit at all, and the model numbers that must not be read as one
+  const capCases = [[256, 'iPHONE 17 256 Lavander ESIM'], [512, 'Galaxy S25 512 Black'],
+    [null, 'Samsung Galaxy A56 5G'], [null, 'Redmi Note 13 Pro'], [null, 'Apple Watch 44']];
+  for (const [want, txt] of capCases) {
+    const got = capOf(txt);
+    if (got !== want) { bad++; console.log(`FAIL  capOf=${got} want=${want}  <- ${txt}`); }
+  }
   const st = [['iphone 17 pro 512 gb', 512], ['2tb', 2048], ['256gb', 256], ['1 ՏԲ', 1024], ['128 ԳԲ', 128],
     ['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 256],   // RAM listed first, storage is the larger
     ['ONEPLUS 13 16GB 512GB (Arctic Down)', 512],
@@ -463,7 +495,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + capCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -1088,7 +1120,7 @@ try {
     // eSIM is part of the identity, not a detail: REDstore sells the same capacity twice, once
     // dual-eSIM and once with a tray, 80,000 apart. Keying dedupe on shop+storage alone threw
     // the second one away and left the product page with nothing to choose between.
-    const esim = /(^|[^a-z])esim([^a-z]|$)/i.test(url) || /esim/i.test(title) || undefined;
+    const esim = ESIM_ONLY(`${title} ${url}`) || undefined;
     const list = offers[id] ||= [];
     if (list.some(o => o.shop === shop && (o.storage ?? null) === storage && !!o.esim === !!esim)) continue;
     list.push({ id, shop, price: +price, storage, color: color || undefined, url, inStock: true, seeded: true, esim });
@@ -1137,13 +1169,32 @@ const HAND = {
 };
 for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v, warranty: null };
 
+// "eSIM" in the name does NOT mean eSIM-only. 3DPlanet's two options read "E-Sim" and
+// "1 Սիմ քարտ + Esim" - the second is the phone WITH a nano tray, and matching on esim alone
+// would file it as the tray-less build and put its price under the wrong button.
+for (const list of Object.values(offers)) {
+  for (const o of list) if (ESIM_ONLY(`${o.title || ''} ${o.url || ''}`)) o.esim = true; else delete o.esim;
+}
+
+// An offer that arrived without a capacity but whose title states one. iBolit writes
+// "iPHONE 17 256 Lavander ESIM" with no GB, so those rows used to land with storage null - and a
+// null-capacity offer stands in for the BASE configuration of the product, which put a 256GB
+// price on the cheapest tier of a phone that also sells at 512GB and 1TB. Re-derived on every
+// run, so rows already on disk heal without a re-crawl.
+let recap = 0;
+for (const list of Object.values(offers)) {
+  for (const o of list) {
+    if (o.storage != null || !o.title) continue;
+    const c = capacitiesOf(o.title);
+    if (c.length === 1) { o.storage = c[0]; recap++; }
+  }
+}
+if (recap) console.log(`${recap} offer(s) given the capacity their title states`);
+
 // Which SIM you get is normally not a choice a shop prices - but for the iPhone 17 and 18 Pro
 // families it is: REDstore sells the 18 Pro 256GB at 799,000 as dual-eSIM and 879,000 with a
 // tray. Tagging the offer lets the product page turn SIM into a real picker exactly where the
 // two differ, and leave it as a stated fact everywhere else.
-for (const list of Object.values(offers)) {
-  for (const o of list) if (/(^|[^a-z])esim([^a-z]|$)/i.test(o.url || '') || /esim/i.test(o.title || '')) o.esim = true;
-}
 
 // One shop page can be reached under several colours, and each reading wrote its own row: the
 // Xiaomi 17 Pro Max carried the same allsell URL four times, and 328 of 1600 offers site-wide

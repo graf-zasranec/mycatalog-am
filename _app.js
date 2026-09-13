@@ -907,9 +907,10 @@ function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
   // start on whatever the cheapest real offer actually is
+  const both = offs.some(o => o.esim) && offs.some(o => !o.esim);
   SEL = {
     id: p.id,
-    esim: null,
+    esim: both ? false : null,
     color: (p.colors || []).find(c => sold(p, 'color', c)) || (p.colors || [])[0] || null,
     storage: (offs.find(o => o.storage != null) || {}).storage ?? (p.variants[0] || {}).storage ?? null,
     ram: null
@@ -1191,7 +1192,7 @@ function offerRow(o, lo, i, unit, cls) {
     <!-- capacity and colour only: RAM is a spec, not something a buyer picks between shops, and
          a column that reads '256 GB' on one row and '256 GB · 12 GB RAM · Black' on the next is
          three different answers to the same question. -->
-    <span class="vr">${esc(o.storage ? gb(o.storage, unit) : (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}</span>
+    <span class="vr">${esc(o.storage ? gb(o.storage, unit) : (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}${o.esim ? ' <i class="esim">eSIM</i>' : ''}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
       ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>` : `<i class="ins">${esc(x('inStock'))}</i>`}</span>
