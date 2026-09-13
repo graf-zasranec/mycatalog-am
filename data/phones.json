@@ -9972,5 +9972,1091 @@
    "iPhone 18 Pro Max",
    "Apple iPhone 18 Pro Max"
   ]
+ },
+ {
+  "id": "amazon-kindle-paperwhite-12",
+  "category": "ereader",
+  "brand": "Amazon",
+  "name": "Kindle Paperwhite (12th gen)",
+  "aliases": [
+   "Amazon Kindle Paperwhite 12",
+   "Kindle Paperwhite 12 Gen",
+   "Kindle Paperwhite 12",
+   "Amazon Kindle Paperwhite"
+  ],
+  "tier": "mid",
+  "released": "2024-10",
+  "priceAmd": 89000,
+  "priceAmdMax": 99000,
+  "popularity": 64,
+  "accent": "#2B2F33",
+  "display": {
+   "size": 7,
+   "type": "Paperwhite E Ink glare-free, adjustable warm light",
+   "ppi": 300,
+   "touch": true
+  },
+  "variants": [
+   {
+    "storage": 16,
+    "priceAmd": 89000
+   },
+   {
+    "storage": 32,
+    "priceAmd": 99000
+   }
+  ],
+  "battery": {
+   "life": "up to 12 weeks"
+  },
+  "connectivity": {
+   "network": "Wi-Fi",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "yes (Audible)"
+  },
+  "cardSlot": false,
+  "os": "Kindle OS",
+  "body": {
+   "weight": 211,
+   "ip": "IPX8"
+  },
+  "colors": [
+   "Black",
+   "Jade",
+   "Raspberry"
+  ],
+  "summaryEn": "The fastest Paperwhite yet: a 7-inch 300 ppi screen, weeks of battery and IPX8 waterproofing.",
+  "unsure": [
+   "battery.life",
+   "connectivity.wifi",
+   "body.weight"
+  ]
+ },
+ {
+  "id": "amazon-kindle-paperwhite-kids-11",
+  "category": "ereader",
+  "brand": "Amazon",
+  "name": "Kindle Paperwhite Kids (11th gen)",
+  "aliases": [
+   "Amazon Kindle Kids Paperwhite 11",
+   "Kindle Paperwhite Kids",
+   "Kindle Kids Paperwhite 11 Gen"
+  ],
+  "tier": "budget",
+  "released": "2021-10",
+  "priceAmd": 75000,
+  "priceAmdMax": 75000,
+  "popularity": 52,
+  "accent": "#3A5A78",
+  "display": {
+   "size": 6.8,
+   "type": "Paperwhite E Ink glare-free, adjustable warm light",
+   "ppi": 300,
+   "touch": true
+  },
+  "variants": [
+   {
+    "storage": 16,
+    "priceAmd": 75000
+   }
+  ],
+  "battery": {
+   "life": "up to 10 weeks"
+  },
+  "connectivity": {
+   "network": "Wi-Fi",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "yes (Audible)"
+  },
+  "cardSlot": false,
+  "os": "Kindle OS",
+  "body": {
+   "weight": 214,
+   "ip": "IPX8"
+  },
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "The Paperwhite in a kids bundle: a cover, two years of cover-anything warranty and no adverts.",
+  "unsure": [
+   "variants[].storage",
+   "battery.life",
+   "body.weight",
+   "released"
+  ]
+ },
+ {
+  "id": "jbl-charge-5",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Charge 5",
+  "aliases": [
+   "JBL Charge 5"
+  ],
+  "tier": "mid",
+  "released": "2021-04",
+  "priceAmd": 64900,
+  "priceAmdMax": 64900,
+  "popularity": 71,
+  "accent": "#1F1F22",
+  "variants": [
+   {
+    "priceAmd": 64900
+   }
+  ],
+  "audio": {
+   "power": "40 W"
+  },
+  "battery": {
+   "life": "20 hours"
+  },
+  "body": {
+   "ip": "IP67",
+   "weight": 960
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "network": "Bluetooth"
+  },
+  "summaryEn": "A 40 W brick that survives the beach and charges your phone off its own battery."
+ },
+ {
+  "id": "jbl-flip-7",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Flip 7",
+  "aliases": [
+   "JBL Flip 7"
+  ],
+  "tier": "mid",
+  "released": "2025-03",
+  "priceAmd": 54900,
+  "priceAmdMax": 54900,
+  "popularity": 70,
+  "accent": "#2A2E33",
+  "variants": [
+   {
+    "priceAmd": 54900
+   }
+  ],
+  "audio": {
+   "power": "35 W"
+  },
+  "battery": {
+   "life": "14 hours"
+  },
+  "body": {
+   "ip": "IP68",
+   "weight": 560
+  },
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "summaryEn": "The Flip with a dust rating at last: IP68, 35 W and an AI-upscaled top end."
+ },
+ {
+  "id": "jbl-clip-5",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Clip 5",
+  "aliases": [
+   "JBL Clip 5"
+  ],
+  "tier": "budget",
+  "released": "2024-08",
+  "priceAmd": 26900,
+  "priceAmdMax": 26900,
+  "popularity": 66,
+  "accent": "#3B4A5A",
+  "variants": [
+   {
+    "priceAmd": 26900
+   }
+  ],
+  "audio": {
+   "power": "7 W"
+  },
+  "battery": {
+   "life": "12 hours"
+  },
+  "body": {
+   "ip": "IP67",
+   "weight": 285
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "A carabiner speaker you clip to a bag and forget about for twelve hours."
+ },
+ {
+  "id": "jbl-boombox-2",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Boombox 2",
+  "aliases": [
+   "JBL Boombox 2"
+  ],
+  "tier": "flagship",
+  "released": "2020-09",
+  "priceAmd": 239900,
+  "priceAmdMax": 239900,
+  "popularity": 68,
+  "accent": "#111214",
+  "variants": [
+   {
+    "priceAmd": 239900
+   }
+  ],
+  "audio": {
+   "power": "80 W"
+  },
+  "battery": {
+   "life": "24 hours"
+  },
+  "body": {
+   "ip": "IPX7",
+   "weight": 5900
+  },
+  "connectivity": {
+   "bluetooth": "5.1"
+  },
+  "summaryEn": "Eighty watts and a day of battery, in something you carry by a handle."
+ },
+ {
+  "id": "jbl-partybox-encore-essential",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "PartyBox Encore Essential",
+  "aliases": [
+   "JBL PartyBox Encore Essential"
+  ],
+  "tier": "upper-mid",
+  "released": "2023-04",
+  "priceAmd": 169900,
+  "priceAmdMax": 169900,
+  "popularity": 67,
+  "accent": "#1A1C20",
+  "variants": [
+   {
+    "priceAmd": 169900
+   }
+  ],
+  "audio": {
+   "power": "100 W"
+  },
+  "battery": {
+   "life": "6 hours"
+  },
+  "body": {
+   "ip": "IPX4",
+   "weight": 12700
+  },
+  "connectivity": {
+   "bluetooth": "5.1"
+  },
+  "summaryEn": "A hundred watts, a light show and a microphone input, on wheels-free 12 kg.",
+  "unsure": [
+   "battery.life"
+  ]
+ },
+ {
+  "id": "jbl-authentics-200",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Authentics 200",
+  "aliases": [
+   "JBL Authentics 200"
+  ],
+  "tier": "upper-mid",
+  "released": "2023-09",
+  "priceAmd": 209900,
+  "priceAmdMax": 209900,
+  "popularity": 64,
+  "accent": "#4A3B2A",
+  "variants": [
+   {
+    "priceAmd": 209900
+   }
+  ],
+  "audio": {
+   "power": "60 W"
+  },
+  "connectivity": {
+   "network": "Wi-Fi and Bluetooth",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5"
+  },
+  "os": "Alexa and Google Assistant together",
+  "summaryEn": "Retro grille, modern guts: Wi-Fi, Dolby Atmos and two voice assistants at once."
+ },
+ {
+  "id": "jbl-authentics-500",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Authentics 500",
+  "aliases": [
+   "JBL Authentics 500"
+  ],
+  "tier": "flagship",
+  "released": "2023-09",
+  "priceAmd": 319900,
+  "priceAmdMax": 319900,
+  "popularity": 65,
+  "accent": "#3E3025",
+  "variants": [
+   {
+    "priceAmd": 319900
+   }
+  ],
+  "audio": {
+   "power": "270 W"
+  },
+  "connectivity": {
+   "network": "Wi-Fi and Bluetooth",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5"
+  },
+  "os": "Alexa and Google Assistant together",
+  "summaryEn": "A 270 W 3.1 system with Dolby Atmos, dressed as a 1970s radio."
+ },
+ {
+  "id": "marshall-kilburn-2",
+  "category": "speaker",
+  "brand": "Marshall",
+  "name": "Kilburn II",
+  "aliases": [
+   "Marshall Kilburn II"
+  ],
+  "tier": "upper-mid",
+  "released": "2018-09",
+  "priceAmd": 199900,
+  "priceAmdMax": 199900,
+  "popularity": 69,
+  "accent": "#0E0E10",
+  "variants": [
+   {
+    "priceAmd": 199900
+   }
+  ],
+  "audio": {
+   "power": "36 W"
+  },
+  "battery": {
+   "life": "20+ hours"
+  },
+  "body": {
+   "ip": "IPX2",
+   "weight": 2500
+  },
+  "connectivity": {
+   "bluetooth": "5.2"
+  },
+  "summaryEn": "The one with the guitar-amp handle: 36 W, twenty hours, built like a road case."
+ },
+ {
+  "id": "marshall-stockwell-2",
+  "category": "speaker",
+  "brand": "Marshall",
+  "name": "Stockwell II",
+  "aliases": [
+   "Marshall Stockwell II"
+  ],
+  "tier": "mid",
+  "released": "2019-04",
+  "priceAmd": 179900,
+  "priceAmdMax": 179900,
+  "popularity": 63,
+  "accent": "#131316",
+  "variants": [
+   {
+    "priceAmd": 179900
+   }
+  ],
+  "audio": {
+   "power": "20 W"
+  },
+  "battery": {
+   "life": "20+ hours"
+  },
+  "body": {
+   "ip": "IPX4",
+   "weight": 1400
+  },
+  "connectivity": {
+   "bluetooth": "5.2"
+  },
+  "summaryEn": "A 1.4 kg Marshall that still runs a full day on one charge."
+ },
+ {
+  "id": "harman-kardon-onyx-studio-7",
+  "category": "speaker",
+  "brand": "Harman Kardon",
+  "name": "Onyx Studio 7",
+  "aliases": [
+   "Harman Kardon Onyx Studio 7"
+  ],
+  "tier": "upper-mid",
+  "released": "2020-10",
+  "priceAmd": 109900,
+  "priceAmdMax": 109900,
+  "popularity": 62,
+  "accent": "#26262A",
+  "variants": [
+   {
+    "priceAmd": 109900
+   }
+  ],
+  "audio": {
+   "power": "50 W"
+  },
+  "battery": {
+   "life": "8 hours"
+  },
+  "body": {
+   "weight": 3200
+  },
+  "connectivity": {
+   "bluetooth": "5.0"
+  },
+  "summaryEn": "A 50 W ring on a chrome stand — the one that looks like furniture.",
+  "unsure": [
+   "body.ip"
+  ]
+ },
+ {
+  "id": "harman-kardon-aura-studio-4",
+  "category": "speaker",
+  "brand": "Harman Kardon",
+  "name": "Aura Studio 4",
+  "aliases": [
+   "Harman Kardon Aura Studio 4"
+  ],
+  "tier": "upper-mid",
+  "released": "2023-09",
+  "priceAmd": 144900,
+  "priceAmdMax": 144900,
+  "popularity": 61,
+  "accent": "#1C1C20",
+  "variants": [
+   {
+    "priceAmd": 144900
+   }
+  ],
+  "audio": {
+   "power": "130 W"
+  },
+  "battery": {},
+  "body": {
+   "ip": "none"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "A transparent dome with a light show inside and 130 W under it.",
+  "unsure": [
+   "body.ip"
+  ]
+ },
+ {
+  "id": "harman-kardon-luna",
+  "category": "speaker",
+  "brand": "Harman Kardon",
+  "name": "Luna",
+  "aliases": [
+   "Harman Kardon Luna"
+  ],
+  "tier": "mid",
+  "released": "2024-09",
+  "priceAmd": 74900,
+  "priceAmdMax": 74900,
+  "popularity": 58,
+  "accent": "#2E3238",
+  "variants": [
+   {
+    "priceAmd": 74900
+   }
+  ],
+  "audio": {
+   "power": "30 W"
+  },
+  "battery": {
+   "life": "12 hours"
+  },
+  "body": {
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "Harman Kardon in a portable, waterproof shell for the first time in years.",
+  "unsure": [
+   "audio.power",
+   "battery.life"
+  ]
+ },
+ {
+  "id": "bose-soundtouch-10",
+  "category": "speaker",
+  "brand": "Bose",
+  "name": "SoundTouch 10",
+  "aliases": [
+   "Bose SoundTouch 10"
+  ],
+  "tier": "mid",
+  "released": "2015-09",
+  "priceAmd": 159900,
+  "priceAmdMax": 159900,
+  "popularity": 55,
+  "accent": "#1A1A1C",
+  "variants": [
+   {
+    "priceAmd": 159900
+   }
+  ],
+  "audio": {},
+  "connectivity": {
+   "network": "Wi-Fi and Bluetooth",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "4.x"
+  },
+  "battery": {},
+  "summaryEn": "The small Wi-Fi Bose: six preset buttons and a room-filling sound from one box.",
+  "unsure": [
+   "audio.power",
+   "connectivity.bluetooth"
+  ]
+ },
+ {
+  "id": "sonos-ace",
+  "category": "headphones",
+  "brand": "Sonos",
+  "name": "Ace",
+  "aliases": [
+   "Sonos Ace"
+  ],
+  "tier": "flagship",
+  "released": "2024-06",
+  "priceAmd": 199000,
+  "priceAmdMax": 199000,
+  "popularity": 72,
+  "accent": "#1B1B1D",
+  "variants": [
+   {
+    "priceAmd": 199000
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "30 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "body": {
+   "weight": 312
+  },
+  "os": "Sonos app",
+  "summaryEn": "Sonos's first headphones: ANC, spatial audio and a swap that throws your soundbar into them."
+ },
+ {
+  "id": "bowers-wilkins-px8",
+  "category": "headphones",
+  "brand": "Bowers & Wilkins",
+  "name": "PX8",
+  "aliases": [
+   "Bowers & Wilkins PX8",
+   "B&W PX8",
+   "BW PX8"
+  ],
+  "tier": "flagship",
+  "released": "2022-10",
+  "priceAmd": 219900,
+  "priceAmdMax": 219900,
+  "popularity": 66,
+  "accent": "#2A1E1A",
+  "variants": [
+   {
+    "priceAmd": 219900
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "30 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.2"
+  },
+  "body": {
+   "weight": 320
+  },
+  "summaryEn": "Carbon-cone drivers in cast aluminium and leather — the expensive end of ANC."
+ },
+ {
+  "id": "marshall-major-iv",
+  "category": "headphones",
+  "brand": "Marshall",
+  "name": "Major IV",
+  "aliases": [
+   "Marshall Major IV"
+  ],
+  "tier": "mid",
+  "released": "2021-03",
+  "priceAmd": 53900,
+  "priceAmdMax": 53900,
+  "popularity": 64,
+  "accent": "#101012",
+  "variants": [
+   {
+    "priceAmd": 53900
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "battery": {
+   "life": "80+ hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.0"
+  },
+  "body": {
+   "weight": 165
+  },
+  "summaryEn": "Eighty hours on a charge, wireless charging, and it folds into a coat pocket."
+ },
+ {
+  "id": "sony-wh-ch720n",
+  "category": "headphones",
+  "brand": "Sony",
+  "name": "WH-CH720N",
+  "aliases": [
+   "Sony WH-CH720N"
+  ],
+  "tier": "mid",
+  "released": "2023-02",
+  "priceAmd": 39900,
+  "priceAmdMax": 39900,
+  "popularity": 68,
+  "accent": "#1E2126",
+  "variants": [
+   {
+    "priceAmd": 39900
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "35 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.2"
+  },
+  "body": {
+   "weight": 192
+  },
+  "summaryEn": "Sony's cheapest proper ANC: 192 grams and thirty-five hours."
+ },
+ {
+  "id": "sony-wh-ch520",
+  "category": "headphones",
+  "brand": "Sony",
+  "name": "WH-CH520",
+  "aliases": [
+   "Sony WH-CH520"
+  ],
+  "tier": "budget",
+  "released": "2023-02",
+  "priceAmd": 26900,
+  "priceAmdMax": 26900,
+  "popularity": 63,
+  "accent": "#24262B",
+  "variants": [
+   {
+    "priceAmd": 26900
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "battery": {
+   "life": "50 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.2"
+  },
+  "body": {
+   "weight": 147
+  },
+  "summaryEn": "Fifty hours and 147 grams, with no noise cancelling to pay for."
+ },
+ {
+  "id": "audio-technica-ath-s220bt",
+  "category": "headphones",
+  "brand": "Audio-Technica",
+  "name": "ATH-S220BT",
+  "aliases": [
+   "Audio-Technica ATH-S220BT"
+  ],
+  "tier": "budget",
+  "released": "2021-09",
+  "priceAmd": 29900,
+  "priceAmdMax": 29900,
+  "popularity": 54,
+  "accent": "#2B2B2F",
+  "variants": [
+   {
+    "priceAmd": 29900
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "battery": {
+   "life": "60 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.0"
+  },
+  "body": {
+   "weight": 193
+  },
+  "summaryEn": "Sixty hours from a studio brand, at a price that undercuts the big names."
+ },
+ {
+  "id": "jbl-tune-680nc",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Tune 680NC",
+  "aliases": [
+   "JBL Tune 680NC",
+   "JBL T680NC",
+   "JBL T680NC White"
+  ],
+  "tier": "budget",
+  "released": "2025-01",
+  "priceAmd": 34900,
+  "priceAmdMax": 34900,
+  "popularity": 57,
+  "accent": "#1F2226",
+  "variants": [
+   {
+    "priceAmd": 34900
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "70 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "ANC and seventy hours, for the price of a decent wired pair.",
+  "unsure": [
+   "battery.life",
+   "released"
+  ]
+ },
+ {
+  "id": "jbl-tune-530bt",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Tune 530BT",
+  "aliases": [
+   "JBL Tune 530BT",
+   "JBL T530BT",
+   "JBL T530BT Lavender"
+  ],
+  "tier": "budget",
+  "released": "2024-05",
+  "priceAmd": 23900,
+  "priceAmdMax": 23900,
+  "popularity": 53,
+  "accent": "#6E5A8A",
+  "variants": [
+   {
+    "priceAmd": 23900
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "battery": {
+   "life": "57 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "Fifty-seven hours of on-ear JBL, folded flat into a bag.",
+  "unsure": [
+   "released"
+  ]
+ },
+ {
+  "id": "sony-wf-c710n",
+  "category": "earbuds",
+  "brand": "Sony",
+  "name": "WF-C710N",
+  "aliases": [
+   "Sony WF-C710N"
+  ],
+  "tier": "mid",
+  "released": "2025-04",
+  "priceAmd": 52900,
+  "priceAmdMax": 52900,
+  "popularity": 67,
+  "accent": "#2A2D33",
+  "variants": [
+   {
+    "priceAmd": 52900
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "8.5 hours (30 with the case)"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "body": {
+   "ip": "IPX4"
+  },
+  "summaryEn": "Sony's mid-range ANC buds, now with a clear case and a much better call mic."
+ },
+ {
+  "id": "nothing-ear-a",
+  "category": "earbuds",
+  "brand": "Nothing",
+  "name": "Ear (a)",
+  "aliases": [
+   "Nothing Ear (a)",
+   "Nothing Ear (A) B162",
+   "Nothing Ear A"
+  ],
+  "tier": "mid",
+  "released": "2024-04",
+  "priceAmd": 51900,
+  "priceAmdMax": 51900,
+  "popularity": 65,
+  "accent": "#E8C547",
+  "variants": [
+   {
+    "priceAmd": 51900
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "5.5 hours (24.5 with the case)"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "body": {
+   "ip": "IP54"
+  },
+  "summaryEn": "The cheap transparent Nothings: 45 dB of ANC and a yellow case you will not lose."
+ },
+ {
+  "id": "samsung-galaxy-buds-fe",
+  "category": "earbuds",
+  "brand": "Samsung",
+  "name": "Galaxy Buds FE",
+  "aliases": [
+   "Samsung Galaxy Buds FE"
+  ],
+  "tier": "budget",
+  "released": "2023-10",
+  "priceAmd": 35900,
+  "priceAmdMax": 35900,
+  "popularity": 66,
+  "accent": "#2F3237",
+  "variants": [
+   {
+    "priceAmd": 35900
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "6 hours (21 with the case)"
+  },
+  "connectivity": {
+   "bluetooth": "5.2"
+  },
+  "body": {
+   "ip": "IPX2"
+  },
+  "summaryEn": "ANC and wingtips at the bottom of the Galaxy Buds range."
+ },
+ {
+  "id": "samsung-galaxy-buds-3-pro",
+  "category": "earbuds",
+  "brand": "Samsung",
+  "name": "Galaxy Buds3 Pro",
+  "aliases": [
+   "Samsung Galaxy Buds3 Pro",
+   "Samsung Galaxy Buds 3 Pro",
+   "Galaxy Buds3 Pro"
+  ],
+  "tier": "upper-mid",
+  "released": "2024-07",
+  "priceAmd": 62000,
+  "priceAmdMax": 62000,
+  "popularity": 74,
+  "accent": "#C9CCD2",
+  "variants": [
+   {
+    "priceAmd": 62000
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "6 hours (20 with the case)"
+  },
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "body": {
+   "ip": "IP57"
+  },
+  "summaryEn": "The blade-stem generation: 24-bit audio, IP57 and real-time interpreting on a Galaxy phone."
+ },
+ {
+  "id": "samsung-galaxy-buds-pro-r190",
+  "category": "earbuds",
+  "brand": "Samsung",
+  "name": "Galaxy Buds Pro",
+  "aliases": [
+   "Samsung Galaxy Buds Pro",
+   "Samsung Galaxy Buds Pro R190",
+   "Galaxy Buds Pro R190"
+  ],
+  "tier": "mid",
+  "released": "2021-01",
+  "priceAmd": 67200,
+  "priceAmdMax": 67200,
+  "popularity": 51,
+  "accent": "#1C1E22",
+  "variants": [
+   {
+    "priceAmd": 67200
+   }
+  ],
+  "audio": {
+   "anc": true
+  },
+  "battery": {
+   "life": "8 hours (28 with the case)"
+  },
+  "connectivity": {
+   "bluetooth": "5.0"
+  },
+  "body": {
+   "ip": "IPX7"
+  },
+  "summaryEn": "The 2021 Pro buds — still the only Galaxy Buds rated IPX7."
+ },
+ {
+  "id": "jbl-tune-125bt",
+  "category": "earbuds",
+  "brand": "JBL",
+  "name": "Tune 125BT",
+  "aliases": [
+   "JBL Tune 125BT"
+  ],
+  "tier": "budget",
+  "released": "2020-09",
+  "priceAmd": 11900,
+  "priceAmdMax": 11900,
+  "popularity": 50,
+  "accent": "#232529",
+  "variants": [
+   {
+    "priceAmd": 11900
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "battery": {
+   "life": "16 hours"
+  },
+  "connectivity": {
+   "bluetooth": "5.0"
+  },
+  "summaryEn": "A neckband pair with sixteen hours in it, for the price of a cable."
+ },
+ {
+  "id": "apple-earpods-usb-c",
+  "category": "earbuds",
+  "brand": "Apple",
+  "name": "EarPods (USB-C)",
+  "aliases": [
+   "Apple EarPods (USB-C)",
+   "Apple EarPods USB-C",
+   "EarPods Apple (USB-C)"
+  ],
+  "tier": "budget",
+  "released": "2023-09",
+  "priceAmd": 12900,
+  "priceAmdMax": 12900,
+  "popularity": 59,
+  "accent": "#D8D8DA",
+  "variants": [
+   {
+    "priceAmd": 12900
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "connectivity": {
+   "bluetooth": "none, wired USB-C"
+  },
+  "battery": {},
+  "summaryEn": "The wired EarPods, now on USB-C — no charging, no pairing, no losing one."
+ },
+ {
+  "id": "apple-earpods-lightning",
+  "category": "earbuds",
+  "brand": "Apple",
+  "name": "EarPods (Lightning)",
+  "aliases": [
+   "Apple EarPods (Lightning)",
+   "Apple EarPods Lightning",
+   "Apple Earpods Lightning Connector"
+  ],
+  "tier": "budget",
+  "released": "2016-09",
+  "priceAmd": 11000,
+  "priceAmdMax": 11000,
+  "popularity": 48,
+  "accent": "#D8D8DA",
+  "variants": [
+   {
+    "priceAmd": 11000
+   }
+  ],
+  "audio": {
+   "anc": false
+  },
+  "connectivity": {
+   "bluetooth": "none, wired Lightning"
+  },
+  "battery": {},
+  "summaryEn": "The Lightning EarPods, for every iPhone before the USB-C switch."
  }
 ]

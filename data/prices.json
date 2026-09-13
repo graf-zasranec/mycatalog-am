@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T17:23:50.661Z",
+ "generated": "2026-09-13T17:25:49.203Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -4306,6 +4306,15 @@
    },
    {
     "id": "apple-watch-se-3",
+    "shop": "yerevanmobile",
+    "price": 112000,
+    "storage": 40,
+    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-watch-se-3",
     "title": "Buy Apple Watch SE 3 GPS - Best Price In Armenia - AllSell",
     "url": "https://allsell.am/en/apple-watch-se-3-gps",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_-_2025-09-10t112421.302_3.jpg",
@@ -4353,6 +4362,15 @@
     "ram": null,
     "color": "Starlight",
     "shop": "ibolit"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "yerevanmobile",
+    "price": 122000,
+    "storage": 44,
+    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-watch-se-3",
@@ -12144,6 +12162,15 @@
    },
    {
     "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "yerevanmobile",
+    "price": 109000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics/tablets.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
     "price": 120900,
     "storage": 128,
     "title": "Samsung Galaxy Tab A11+ Wi-Fi 128GB (Silver)",
@@ -12277,6 +12304,15 @@
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "yerevanmobile",
+    "price": 54000,
+    "storage": 64,
+    "url": "https://www.yerevanmobile.am/en/electronics/tablets.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-tab-a11",
@@ -13230,6 +13266,15 @@
    },
    {
     "id": "xiaomi-redmi-pad-2",
+    "shop": "yerevanmobile",
+    "price": 109000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/electronics/tablets.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
     "price": 111000,
     "storage": 256,
     "title": "Xiaomi Redmi Pad 2",
@@ -13532,11 +13577,20 @@
     "title": "Samsung Galaxy Watch 8",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-8",
     "image": null,
-    "storage": null,
+    "storage": 40,
     "color": "Silver",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "yerevanmobile",
+    "price": 84000,
+    "storage": 40,
+    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-watch-8",
@@ -13555,7 +13609,7 @@
     "price": 99000,
     "title": "Samsung Galaxy Watch 8 44mm Silver",
     "url": "https://redstore.am/en/product/samsung-galaxy-watch-8-44mm-silver",
-    "storage": null,
+    "storage": 44,
     "inStock": true,
     "image": "https://admin.redstore.am/storage/uploads/2025/09/29/img-4089.jpg",
     "sku": "R722026",
@@ -13568,13 +13622,22 @@
     "price": 99000,
     "title": "Samsung Galaxy Watch 8 44mm Graphite",
     "url": "https://redstore.am/en/product/samsung-galaxy-watch-8-44mm-graphite",
-    "storage": null,
+    "storage": 44,
     "inStock": true,
     "image": "https://admin.redstore.am/storage/uploads/2025/09/29/img-4088.jpg",
     "sku": "R722021",
     "ram": null,
     "color": "Graphite",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "yerevanmobile",
+    "price": 99000,
+    "storage": 44,
+    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-watch-8",
@@ -16238,6 +16301,383 @@
     "inStock": true,
     "seeded": true,
     "esim": true
+   }
+  ],
+  "samsung-galaxy-buds-fe": [
+   {
+    "id": "samsung-galaxy-buds-fe",
+    "shop": "ucom",
+    "price": 35900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/samsung-galaxy-buds-fe.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "samsung-galaxy-buds-3-pro": [
+   {
+    "id": "samsung-galaxy-buds-3-pro",
+    "shop": "planet3d",
+    "price": 62000,
+    "storage": null,
+    "url": "https://3dplanet.am/en/store/headset",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-buds-3-pro",
+    "shop": "ucom",
+    "price": 69900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/samsung-galaxy-buds3-pro.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "apple-earpods-usb-c": [
+   {
+    "id": "apple-earpods-usb-c",
+    "shop": "ucom",
+    "price": 12900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/earpods-apple-usb-c-mtjy3zm-a-myqy3zm-a.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-earpods-usb-c",
+    "shop": "telecom",
+    "price": 12900,
+    "storage": null,
+    "url": "https://www.telecomarmenia.am/eshop/en/accessories/apple-earpods-white/2686/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "sony-wh-ch520": [
+   {
+    "id": "sony-wh-ch520",
+    "shop": "zigzag",
+    "price": 26900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/sony",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "sony-wf-c710n": [
+   {
+    "id": "sony-wf-c710n",
+    "shop": "zigzag",
+    "price": 52900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/sony",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "marshall-major-iv": [
+   {
+    "id": "marshall-major-iv",
+    "shop": "eldorado",
+    "price": 53900,
+    "storage": null,
+    "url": "https://eldorado.am/en/marshall-major-iv",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "sony-wh-ch720n": [
+   {
+    "id": "sony-wh-ch720n",
+    "shop": "eldorado",
+    "price": 57900,
+    "storage": null,
+    "url": "https://eldorado.am/en/sony-wh-ch720n-white",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "nothing-ear-a": [
+   {
+    "id": "nothing-ear-a",
+    "shop": "eldorado",
+    "price": 51900,
+    "storage": null,
+    "url": "https://eldorado.am/en/nothing-ear-a-b162-white",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "apple-earpods-lightning": [
+   {
+    "id": "apple-earpods-lightning",
+    "shop": "notebookcentre",
+    "price": 10000,
+    "storage": null,
+    "url": "https://notebookcentre.am/ru/brand/Apple",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-earpods-lightning",
+    "shop": "eldorado",
+    "price": 11000,
+    "storage": null,
+    "url": "https://eldorado.am/en/apple-earpods-mmtn2zm-a-a1748",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "harman-kardon-onyx-studio-7": [
+   {
+    "id": "harman-kardon-onyx-studio-7",
+    "shop": "mobilecentre",
+    "price": 109900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/harman-kardon-onyx-studio-7-portable-bluetooth-speaker-_black_/26934/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "bose-soundtouch-10": [
+   {
+    "id": "bose-soundtouch-10",
+    "shop": "mobilecentre",
+    "price": 159900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/bose-soundtouch-10-bluetooth-speaker-_black_/25215/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "samsung-galaxy-buds-pro-r190": [
+   {
+    "id": "samsung-galaxy-buds-pro-r190",
+    "shop": "eldorado",
+    "price": 67200,
+    "storage": null,
+    "url": "https://eldorado.am/en/original-samsung-headphone-galaxy-buds-pro-r190-black",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-tune-125bt": [
+   {
+    "id": "jbl-tune-125bt",
+    "shop": "vega",
+    "price": 11900,
+    "storage": null,
+    "url": "https://vega.am/en/home-appliances/phones-and-gadgets/wired-headphones/headphone-jbl-tune-125bt-bk.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "jbl-tune-125bt",
+    "shop": "eldorado",
+    "price": 14900,
+    "storage": null,
+    "url": "https://eldorado.am/en/jbl-tune-125bt-black",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "sonos-ace": [
+   {
+    "id": "sonos-ace",
+    "shop": "zigzag",
+    "price": 199000,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/sony",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-charge-5": [
+   {
+    "id": "jbl-charge-5",
+    "shop": "mobilecentre",
+    "price": 64900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-charge-5-portable-wireless-speaker-_squad_/31840/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-partybox-encore-essential": [
+   {
+    "id": "jbl-partybox-encore-essential",
+    "shop": "mobilecentre",
+    "price": 169900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-party-box-encore-essential-portable-wireless-speaker-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-authentics-500": [
+   {
+    "id": "jbl-authentics-500",
+    "shop": "mobilecentre",
+    "price": 319900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-speaker-authentics-500-wifi-bluetooth-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-authentics-200": [
+   {
+    "id": "jbl-authentics-200",
+    "shop": "mobilecentre",
+    "price": 209900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-authentics-200-wifi-bluetooth-speaker-auth200-blk-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-boombox-2": [
+   {
+    "id": "jbl-boombox-2",
+    "shop": "mobilecentre",
+    "price": 239900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-boombox-2-portable-bluetooth-speaker/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "harman-kardon-aura-studio-4": [
+   {
+    "id": "harman-kardon-aura-studio-4",
+    "shop": "mobilecentre",
+    "price": 144900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/harman-kardon-aurastudio-4-wireless-speaker-system-aurastudio4-bk-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "marshall-kilburn-2": [
+   {
+    "id": "marshall-kilburn-2",
+    "shop": "mobilecentre",
+    "price": 199900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/marshall-speaker-kilburn-ii-wireless-stereo-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "marshall-stockwell-2": [
+   {
+    "id": "marshall-stockwell-2",
+    "shop": "mobilecentre",
+    "price": 179900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/marshall-speaker-stockwell-2-wireless-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-flip-7": [
+   {
+    "id": "jbl-flip-7",
+    "shop": "mobilecentre",
+    "price": 54900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-flip-7-waterproof-portable-bluetooth-speaker-flip7-sqd-squad/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "harman-kardon-luna": [
+   {
+    "id": "harman-kardon-luna",
+    "shop": "mobilecentre",
+    "price": 74900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/harman-kardon-luna-portable-wireless-bluetooth-speaker-black/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-clip-5": [
+   {
+    "id": "jbl-clip-5",
+    "shop": "mobilecentre",
+    "price": 26900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/jbl-clip-5-portable-wireless-speaker-_blue_/31841/",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "bowers-wilkins-px8": [
+   {
+    "id": "bowers-wilkins-px8",
+    "shop": "zigzag",
+    "price": 219900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/b-w-px8-flagship-headphone-black.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "audio-technica-ath-s220bt": [
+   {
+    "id": "audio-technica-ath-s220bt",
+    "shop": "zigzag",
+    "price": 29900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/audio-technica-ath-s220bt-white-wireless-headphone-ath-s220btwh.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-tune-680nc": [
+   {
+    "id": "jbl-tune-680nc",
+    "shop": "zigzag",
+    "price": 34900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/jbl-t680ncwht.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "jbl-tune-530bt": [
+   {
+    "id": "jbl-tune-530bt",
+    "shop": "zigzag",
+    "price": 23900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/jbl-t530btlaveu.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "amazon-kindle-paperwhite-12": [
+   {
+    "id": "amazon-kindle-paperwhite-12",
+    "shop": "yerevanmobile",
+    "price": 89000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics/tablets.html",
+    "inStock": true,
+    "seeded": true
+   }
+  ],
+  "amazon-kindle-paperwhite-kids-11": [
+   {
+    "id": "amazon-kindle-paperwhite-kids-11",
+    "shop": "yerevanmobile",
+    "price": 75000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics/tablets.html",
+    "inStock": true,
+    "seeded": true
    }
   ]
  }
