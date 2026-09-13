@@ -343,8 +343,10 @@ if (process.argv[2] === '--selftest') {
     ['xiaomi-pad-7-pro', 'https://www.pixel.am/am/product/xiaomi-pad-7-pro'],
     ['xiaomi-pad-7', 'https://www.pixel.am/am/product/xiaomi-pad-7-8-256-gray'],
     ['hp-15-fd2747nr', 'HP PC Notebook 15-FD2747NR / Ultra 7 255U / 16GB RAM / 512GB SSD'],
-    // Mobile Centre lists the Plus as "S25+"; it must NOT be sold as a plain S25
-    [null, 'Samsung Galaxy S25+ 256GB (Silver Shadow)'],
+    // Mobile Centre lists the Plus as "S25+". The Plus is in the catalogue now, so the assertion
+    // is its real id - which still proves the qualifier guard works: a broken guard answers
+    // samsung-galaxy-s25 here.
+    ['samsung-galaxy-s25-plus', 'Samsung Galaxy S25+ 256GB (Silver Shadow)'],
     ['samsung-galaxy-s25', 'Samsung Galaxy S25 128GB (Navy)'],
     ['apple-iphone-17-pro', 'iphone-17-pro-512-gb-deep-blue-mg8k4af-a'],
     ['apple-iphone-17', 'apple-iphone-17-256gb-black-mg6j4af-a.html'],

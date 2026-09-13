@@ -4597,6 +4597,70 @@
   ]
  },
  {
+  "id": "apple-macbook-pro-14-m4-pro",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 14 M4 Pro",
+  "tier": "flagship",
+  "released": "2024-10",
+  "priceAmd": 899000,
+  "priceAmdMax": 999000,
+  "popularity": 62,
+  "accent": "#2E2E30",
+  "display": {
+   "size": 14.2,
+   "type": "Liquid Retina XDR",
+   "resolution": "1964x3024",
+   "refresh": 120,
+   "ppi": 254,
+   "brightness": 1600,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Apple M4 Pro",
+   "process": "3 nm",
+   "cpu": "12-core (8 performance + 4 efficiency)",
+   "gpu": "16-core GPU"
+  },
+  "battery": {
+   "capacity": 72.4
+  },
+  "body": {
+   "height": 312.6,
+   "width": 221.2,
+   "thickness": 15.5,
+   "weight": 1550,
+   "materials": "Aluminium unibody"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3",
+   "wireless": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3"
+  },
+  "os": "macOS Sequoia",
+  "variants": [
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 899000
+   },
+   {
+    "ram": 24,
+    "storage": 1024,
+    "priceAmd": 999000
+   }
+  ],
+  "colors": [
+   "Space Black",
+   "Silver"
+  ],
+  "summaryEn": "The M4 Pro in the 14-inch body: 12 CPU cores, 16 GPU cores, Thunderbolt 5.",
+  "unsure": [
+   "popularity",
+   "priceAmdMax"
+  ]
+ },
+ {
   "id": "apple-mac-mini-m4-pro",
   "category": "desktop",
   "brand": "Apple",
@@ -5248,6 +5312,86 @@
   ]
  },
  {
+  "id": "samsung-galaxy-s25-plus",
+  "category": "phone",
+  "brand": "Samsung",
+  "name": "Galaxy S25+",
+  "tier": "flagship",
+  "released": "2025-02",
+  "priceAmd": 349000,
+  "priceAmdMax": 394900,
+  "popularity": 58,
+  "accent": "#26303C",
+  "display": {
+   "size": 6.7,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "1440x3120",
+   "refresh": 120,
+   "ppi": 513,
+   "brightness": 2600,
+   "protection": "Gorilla Armor 2"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.47 GHz + 6x3.53 GHz)",
+   "gpu": "Adreno 830"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2, 120-degree",
+   "telephoto": "10 MP, f/2.4, 3x optical, OIS",
+   "front": "12 MP, f/2.2",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4900,
+   "wired": 45,
+   "wireless": 15
+  },
+  "body": {
+   "height": 158.4,
+   "width": 75.8,
+   "thickness": 7.3,
+   "weight": 190,
+   "materials": "Armor aluminium frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Nano-SIM + eSIM"
+  },
+  "os": "Android 15, One UI 7",
+  "updates": "7 OS upgrades and 7 years of security updates",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 349000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 394900
+   }
+  ],
+  "colors": [
+   "Icyblue",
+   "Navy",
+   "Mint",
+   "Silver Shadow"
+  ],
+  "summaryEn": "The S25 with a bigger screen and a bigger battery, and nothing else given up.",
+  "unsure": [
+   "popularity",
+   "priceAmdMax"
+  ]
+ },
+ {
   "id": "sony-ps5-pro",
   "category": "console",
   "brand": "Sony",
@@ -5696,6 +5840,40 @@
   ]
  },
  {
+  "id": "xiaomi-17-pro-max",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "17 Pro Max",
+  "tier": "flagship",
+  "released": "2026-09",
+  "priceAmd": 559000,
+  "priceAmdMax": 559000,
+  "popularity": 54,
+  "accent": "#2E4A3A",
+  "connectivity": {
+   "network": "5G",
+   "nfc": true
+  },
+  "os": "Android 16, HyperOS",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 559000
+   }
+  ],
+  "colors": [
+   "Green",
+   "White",
+   "Purple"
+  ],
+  "summaryEn": "Xiaomi’s 2026 flagship, sold here in 12/512.",
+  "unsure": [
+   "popularity",
+   "os"
+  ]
+ },
+ {
   "id": "xbox-series-x",
   "category": "console",
   "brand": "Microsoft",
@@ -6025,6 +6203,85 @@
   ]
  },
  {
+  "id": "samsung-galaxy-a55",
+  "category": "phone",
+  "brand": "Samsung",
+  "name": "Galaxy A55 5G",
+  "tier": "midrange",
+  "released": "2024-03",
+  "priceAmd": 134900,
+  "priceAmdMax": 154900,
+  "popularity": 52,
+  "accent": "#2F3A4A",
+  "display": {
+   "size": 6.6,
+   "type": "Super AMOLED",
+   "resolution": "1080x2340",
+   "refresh": 120,
+   "ppi": 390,
+   "brightness": 1000,
+   "protection": "Gorilla Glass Victus+"
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1480",
+   "process": "4 nm",
+   "cpu": "Octa-core (4x2.75 GHz Cortex-A78 + 4x2.0 GHz Cortex-A55)",
+   "gpu": "Xclipse 530"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2, 123-degree",
+   "front": "32 MP, f/2.2",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25,
+   "wireless": 0
+  },
+  "body": {
+   "height": 161.1,
+   "width": 77.4,
+   "thickness": 8.2,
+   "weight": 213,
+   "materials": "Aluminium frame, glass back",
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, One UI 6.1",
+  "updates": "4 OS upgrades and 5 years of security updates",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 134900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 154900
+   }
+  ],
+  "colors": [
+   "Awesome Iceblue",
+   "Awesome Navy",
+   "Awesome Lilac",
+   "Awesome Lemon"
+  ],
+  "summaryEn": "The A-series workhorse: 120 Hz AMOLED, 5000 mAh and four Android upgrades.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
   "id": "nothing-phone-3",
   "category": "phone",
   "brand": "Nothing",
@@ -6164,6 +6421,45 @@
    "connectivity.nfc",
    "os",
    "popularity"
+  ]
+ },
+ {
+  "id": "google-pixel-10a",
+  "category": "phone",
+  "brand": "Google",
+  "name": "Pixel 10a",
+  "tier": "midrange",
+  "released": "2026-03",
+  "priceAmd": 299900,
+  "priceAmdMax": 329900,
+  "popularity": 50,
+  "accent": "#8FA9C4",
+  "connectivity": {
+   "network": "5G",
+   "nfc": true
+  },
+  "os": "Android 16",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 299900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 329900
+   }
+  ],
+  "colors": [
+   "Obsidian",
+   "Porcelain"
+  ],
+  "summaryEn": "The cheap Pixel: Google’s camera processing without the Pro price.",
+  "unsure": [
+   "popularity",
+   "colors",
+   "priceAmdMax"
   ]
  },
  {
@@ -6614,6 +6910,84 @@
   ]
  },
  {
+  "id": "honor-magic-7-pro",
+  "category": "phone",
+  "brand": "Honor",
+  "name": "Magic7 Pro",
+  "tier": "flagship",
+  "released": "2024-11",
+  "priceAmd": 324900,
+  "priceAmdMax": 364900,
+  "popularity": 47,
+  "accent": "#26323F",
+  "display": {
+   "size": 6.8,
+   "type": "LTPO OLED",
+   "resolution": "1280x2800",
+   "refresh": 120,
+   "ppi": 453,
+   "brightness": 5000
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite",
+   "process": "3 nm",
+   "cpu": "Octa-core (2x4.32 GHz + 6x3.53 GHz)",
+   "gpu": "Adreno 830"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.4-f/2.0, OIS",
+   "ultrawide": "50 MP, f/2.0, 122-degree",
+   "telephoto": "200 MP, f/2.6, 3x periscope, OIS",
+   "front": "50 MP, f/2.0",
+   "video": "4K@60fps"
+  },
+  "battery": {
+   "capacity": 5270,
+   "wired": 100,
+   "wireless": 80
+  },
+  "body": {
+   "height": 162.7,
+   "width": 77.1,
+   "thickness": 8.8,
+   "weight": 223,
+   "materials": "Aluminium frame, glass back",
+   "ip": "IP68/IP69"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.4",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "os": "Android 15, MagicOS 9",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 324900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 364900
+   }
+  ],
+  "colors": [
+   "Black",
+   "Lunar Grey",
+   "Breeze Blue"
+  ],
+  "summaryEn": "A 200 MP periscope and a 5270 mAh silicon-carbon battery at well under flagship money.",
+  "unsure": [
+   "popularity",
+   "priceAmdMax",
+   "colors"
+  ]
+ },
+ {
   "id": "poco-m7-pro",
   "category": "phone",
   "brand": "POCO",
@@ -6730,6 +7104,44 @@
   "summaryEn": "Beats earbuds that pair as easily with Android as with iPhone.",
   "unsure": [
    "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-z-flip-7-fe",
+  "category": "phone",
+  "brand": "Samsung",
+  "name": "Galaxy Z Flip7 FE",
+  "tier": "upper-mid",
+  "released": "2025-07",
+  "priceAmd": 260900,
+  "priceAmdMax": 329000,
+  "popularity": 45,
+  "accent": "#2A2A2E",
+  "connectivity": {
+   "network": "5G",
+   "nfc": true
+  },
+  "os": "Android 16, One UI 8",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 260900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 329000
+   }
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "summaryEn": "The folding phone without the folding price.",
+  "unsure": [
+   "popularity",
+   "os"
   ]
  },
  {
@@ -6905,6 +7317,155 @@
   ]
  },
  {
+  "id": "xiaomi-redmi-note-13-pro-plus",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "Redmi Note 13 Pro+ 5G",
+  "tier": "mid",
+  "released": "2023-09",
+  "priceAmd": 99900,
+  "priceAmdMax": 119900,
+  "popularity": 44,
+  "accent": "#22304A",
+  "display": {
+   "size": 6.67,
+   "type": "AMOLED curved",
+   "resolution": "1220x2712",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 1800,
+   "protection": "Gorilla Glass Victus"
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 7200-Ultra",
+   "process": "4 nm",
+   "cpu": "Octa-core (2x2.8 GHz + 6x2.0 GHz)",
+   "gpu": "Mali-G610 MC4"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.65, OIS",
+   "ultrawide": "8 MP, f/2.2",
+   "front": "16 MP, f/2.4",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 120,
+   "wireless": 0
+  },
+  "body": {
+   "weight": 205,
+   "materials": "Plastic frame, glass back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "os": "Android 13, HyperOS",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 99900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 119900
+   }
+  ],
+  "colors": [
+   "Midnight Black",
+   "Moonlight White",
+   "Aurora Purple"
+  ],
+  "summaryEn": "120-watt charging and a 200 MP camera, at a price that reads like a typo.",
+  "unsure": [
+   "popularity",
+   "priceAmdMax"
+  ]
+ },
+ {
+  "id": "honor-x9b",
+  "category": "phone",
+  "brand": "Honor",
+  "name": "X9b 5G",
+  "tier": "mid",
+  "released": "2023-11",
+  "priceAmd": 149900,
+  "priceAmdMax": 169900,
+  "popularity": 43,
+  "accent": "#1F3B2E",
+  "display": {
+   "size": 6.78,
+   "type": "AMOLED curved",
+   "resolution": "1224x2652",
+   "refresh": 120,
+   "ppi": 429,
+   "brightness": 1200
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen 1",
+   "process": "4 nm",
+   "cpu": "Octa-core (4x2.2 GHz + 4x1.8 GHz)",
+   "gpu": "Adreno 710"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.75, OIS",
+   "ultrawide": "5 MP, f/2.2",
+   "front": "16 MP, f/2.45",
+   "video": "1080p@60fps"
+  },
+  "battery": {
+   "capacity": 5800,
+   "wired": 35,
+   "wireless": 0
+  },
+  "body": {
+   "height": 163.6,
+   "width": 75.5,
+   "thickness": 8,
+   "weight": 185,
+   "materials": "Plastic frame, glass back"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.1",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "os": "Android 13, MagicOS 7.2",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 149900
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 169900
+   }
+  ],
+  "colors": [
+   "Midnight Black",
+   "Emerald Green",
+   "Sunrise Orange"
+  ],
+  "summaryEn": "The drop-test phone: a 5800 mAh battery behind Honor’s toughened curved screen.",
+  "unsure": [
+   "popularity",
+   "colors"
+  ]
+ },
+ {
   "id": "oneplus-13",
   "brand": "OnePlus",
   "name": "OnePlus 13",
@@ -7073,6 +7634,77 @@
   ]
  },
  {
+  "id": "xiaomi-redmi-note-13-pro",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "Redmi Note 13 Pro",
+  "tier": "mid",
+  "released": "2023-09",
+  "priceAmd": 84900,
+  "priceAmdMax": 94900,
+  "popularity": 42,
+  "accent": "#2C3E50",
+  "display": {
+   "size": 6.67,
+   "type": "AMOLED",
+   "resolution": "1220x2712",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 1800,
+   "protection": "Gorilla Glass Victus"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen 2",
+   "process": "4 nm",
+   "cpu": "Octa-core (4x2.4 GHz + 4x1.95 GHz)",
+   "gpu": "Adreno 710"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.65, OIS",
+   "ultrawide": "8 MP, f/2.2",
+   "front": "16 MP, f/2.4",
+   "video": "4K@30fps"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 67,
+   "wireless": 0
+  },
+  "body": {
+   "weight": 187,
+   "materials": "Plastic frame, glass back",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.2",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 13, HyperOS",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 84900
+   }
+  ],
+  "colors": [
+   "Midnight Black",
+   "Forest Green",
+   "Lavender Purple"
+  ],
+  "summaryEn": "The same 200 MP sensor as the Pro+, on a flat screen and a smaller bill.",
+  "unsure": [
+   "popularity",
+   "priceAmdMax",
+   "colors"
+  ]
+ },
+ {
   "id": "marshall-stanmore-3",
   "category": "speaker",
   "brand": "Marshall",
@@ -7116,6 +7748,60 @@
   ]
  },
  {
+  "id": "asus-rog-strix-g16",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ROG Strix G16 G614",
+  "tier": "flagship",
+  "released": "2025-01",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 41,
+  "accent": "#171A21",
+  "display": {
+   "size": 16,
+   "type": "QHD+ IPS 240 Hz",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-14900HX"
+  },
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4060",
+   "type": "discrete"
+  },
+  "battery": {
+   "capacity": 90
+  },
+  "body": {
+   "weight": 2500,
+   "materials": "Aluminium lid, plastic base"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 899000
+   }
+  ],
+  "colors": [
+   "Eclipse Gray"
+  ],
+  "summaryEn": "A 240 Hz gaming laptop with an RTX 4060 and a desktop-class i9.",
+  "unsure": [
+   "popularity",
+   "display.type",
+   "body.weight",
+   "battery.capacity"
+  ]
+ },
+ {
   "id": "jbl-partybox-on-the-go",
   "category": "speaker",
   "brand": "JBL",
@@ -7153,6 +7839,127 @@
   "summaryEn": "A party speaker you can carry, with a wireless microphone in the box.",
   "unsure": [
    "popularity"
+  ]
+ },
+ {
+  "id": "honor-x8c",
+  "category": "phone",
+  "brand": "Honor",
+  "name": "X8c",
+  "tier": "budget",
+  "released": "2024-12",
+  "priceAmd": 109900,
+  "priceAmdMax": 129900,
+  "popularity": 40,
+  "accent": "#2B4152",
+  "display": {
+   "size": 6.7,
+   "type": "AMOLED",
+   "resolution": "1080x2412",
+   "refresh": 90,
+   "ppi": 394
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685",
+   "process": "6 nm",
+   "cpu": "Octa-core (4x2.8 GHz + 4x1.9 GHz)",
+   "gpu": "Adreno 610"
+  },
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.75",
+   "front": "16 MP, f/2.45",
+   "video": "1080p@30fps"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 35,
+   "wireless": 0
+  },
+  "body": {
+   "weight": 179,
+   "materials": "Plastic frame and back"
+  },
+  "connectivity": {
+   "network": "4G",
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.1",
+   "nfc": true,
+   "sim": "Dual nano-SIM"
+  },
+  "os": "Android 14, MagicOS 8",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 109900
+   }
+  ],
+  "colors": [
+   "Midnight Black",
+   "Titanium Purple",
+   "Moonlight White"
+  ],
+  "summaryEn": "A 108 MP camera and an AMOLED screen at the bottom of the price list.",
+  "unsure": [
+   "popularity",
+   "priceAmdMax",
+   "colors"
+  ]
+ },
+ {
+  "id": "lenovo-legion-pro-5-16",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion Pro 5 16IAX10",
+  "tier": "flagship",
+  "released": "2025-03",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#1B1D22",
+  "display": {
+   "size": 16,
+   "type": "WQXGA IPS 165 Hz",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 5060",
+   "type": "discrete"
+  },
+  "battery": {
+   "capacity": 80
+  },
+  "body": {
+   "weight": 2650,
+   "materials": "Aluminium lid, plastic base"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 799000
+   }
+  ],
+  "colors": [
+   "Eclipse Black"
+  ],
+  "summaryEn": "Lenovo’s mid-weight gaming 16, RTX 5060 and a 165 Hz WQXGA panel.",
+  "unsure": [
+   "popularity",
+   "display.type",
+   "body.weight",
+   "battery.capacity",
+   "graphics.name"
   ]
  },
  {
@@ -7234,6 +8041,74 @@
   ]
  },
  {
+  "id": "honor-x7c",
+  "category": "phone",
+  "brand": "Honor",
+  "name": "X7c",
+  "tier": "budget",
+  "released": "2024-11",
+  "priceAmd": 104900,
+  "priceAmdMax": 114900,
+  "popularity": 38,
+  "accent": "#3A4A5C",
+  "display": {
+   "size": 6.77,
+   "type": "TFT LCD",
+   "resolution": "720x1610",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.75",
+   "front": "8 MP, f/2.0",
+   "video": "1080p@30fps"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 35,
+   "wireless": 0
+  },
+  "body": {
+   "weight": 199,
+   "materials": "Plastic frame and back",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "nfc": false,
+   "sim": "Dual nano-SIM"
+  },
+  "os": "Android 14, MagicOS 8",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 104900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 114900
+   }
+  ],
+  "colors": [
+   "Moonlight White",
+   "Forest Green",
+   "Midnight Black"
+  ],
+  "summaryEn": "Six thousand milliamp-hours and a drop-resistant body, for very little.",
+  "unsure": [
+   "popularity",
+   "colors"
+  ]
+ },
+ {
   "id": "jbl-partybox-1000",
   "category": "speaker",
   "brand": "JBL",
@@ -7272,6 +8147,75 @@
   "unsure": [
    "connectivity.bluetooth",
    "popularity"
+  ]
+ },
+ {
+  "id": "poco-c75",
+  "category": "phone",
+  "brand": "POCO",
+  "name": "C75",
+  "tier": "budget",
+  "released": "2024-11",
+  "priceAmd": 62900,
+  "priceAmdMax": 69900,
+  "popularity": 36,
+  "accent": "#1E2A38",
+  "display": {
+   "size": 6.88,
+   "type": "IPS LCD",
+   "resolution": "720x1640",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "MediaTek Helio G81 Ultra",
+   "process": "12 nm",
+   "gpu": "Mali-G52 MC2"
+  },
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "13 MP, f/2.0",
+   "video": "1080p@30fps"
+  },
+  "battery": {
+   "capacity": 5160,
+   "wired": 18,
+   "wireless": 0
+  },
+  "body": {
+   "weight": 204,
+   "materials": "Plastic frame and back",
+   "ip": "IP52"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.4",
+   "nfc": false,
+   "sim": "Dual nano-SIM"
+  },
+  "cardSlot": true,
+  "os": "Android 14, HyperOS",
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 62900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 69900
+   }
+  ],
+  "colors": [
+   "Black",
+   "Green",
+   "Gold"
+  ],
+  "summaryEn": "The cheapest phone here that still has a 120 Hz screen.",
+  "unsure": [
+   "popularity",
+   "colors"
   ]
  },
  {
