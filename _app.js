@@ -624,14 +624,26 @@ const biggestSavings = (n = 3) =>
 // Popular phones that have a photo, but never two of the same accent colour in a row - the point
 // of the carousel is that the colour keeps changing.
 const heroPicks = () => {
-  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && hasIMG(p.id))
+  // No Ultra in the carousel. An Ultra press shot carries the S Pen leaning against the phone -
+  // correct on its own product page, wrong in a row of six that is meant to read as one shape,
+  // where the pen juts into the frame and the phone sits smaller than its neighbours to fit.
+  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && hasIMG(p.id) && !/\bultra\b/i.test(p.name))
     .sort((a, b) => b.popularity - a.popularity);
-  const out = [], used = new Set();
+  // One pass per brand, then fill. Deduping on accent colour alone used to give variety by
+  // accident - it happened to pick up a Samsung - and dropping the Ultras turned the row into
+  // six iPhones. Brand first makes that variety the rule instead of a coincidence.
+  const out = [], seenBrand = new Set(), seenAccent = new Set();
   for (const p of pool) {
-    const c = (p.accent || '').toLowerCase();
-    if (used.has(c)) continue;
-    used.add(c); out.push(p);
+    if (seenBrand.has(p.brand)) continue;
+    seenBrand.add(p.brand); seenAccent.add((p.accent || '').toLowerCase());
+    out.push(p);
     if (out.length === 6) break;
+  }
+  for (const p of pool) {
+    if (out.length === 6) break;
+    const c = (p.accent || '').toLowerCase();
+    if (out.includes(p) || seenAccent.has(c)) continue;
+    seenAccent.add(c); out.push(p);
   }
   return out.length > 1 ? out : pool.slice(0, 6);
 };

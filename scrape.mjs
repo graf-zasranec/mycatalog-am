@@ -256,7 +256,7 @@ function magentoChildren(html, colors) {
   const text = a => ((a.code || '') + ' ' + (a.label || ''));
   const drive = attrs.find(a => /drive|storage|internal/i.test(text(a)));
   const color = attrs.find(a => /colou?r/i.test(text(a)));
-  const ram = attrs.find(a => a !== drive && /ram|memory/i.test(text(a)));
+  const ram = attrs.find(a => a !== drive && /\bram\b|memory/i.test(text(a)));
   const label = (a, child) => {
     if (!a) return null;
     const want = String((cfg.index[child] || {})[a.id] ?? '');
