@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-13T17:02:28.107Z",
+ "generated": "2026-09-13T17:16:23.796Z",
  "excluded": {
-  "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
-  "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
-  "notebookcentre.am": "robots.txt: User-agent: ClaudeBot / Disallow: /"
+  "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
+  "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
+  "notebookcentre.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled"
  },
  "shops": {
   "ispace": {
@@ -106,6 +106,18 @@
    "name": "AppZone",
    "site": "https://appzone.am",
    "note": "electronics retailer",
+   "warranty": null
+  },
+  "notebookcentre": {
+   "name": "Notebook Centre",
+   "site": "https://notebookcentre.am",
+   "note": "electronics retailer",
+   "warranty": null
+  },
+  "yerevanmobile": {
+   "name": "Yerevan Mobile",
+   "site": "https://yerevanmobile.am",
+   "note": "phone retailer",
    "warranty": null
   }
  },
@@ -3788,6 +3800,15 @@
     "ram": null,
     "color": "Starlight",
     "shop": "ispace"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "shop": "zigzag",
+    "price": 318900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/accessories/headphones-and-headsets.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-airpods-max-2",
@@ -14563,6 +14584,15 @@
    },
    {
     "id": "marshall-major-v",
+    "shop": "telecom",
+    "price": 64900,
+    "storage": null,
+    "url": "https://www.telecomarmenia.am/eshop/en/accessories/headphones-marshall-major-v-black/2251/",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "marshall-major-v",
     "price": 73900,
     "title": "MARSHALL Major V (1006832) Black",
     "url": "https://vlv.am/en/Product/36425",
@@ -15621,6 +15651,15 @@
     "url": "https://eldorado.am/en/jandeks-stancija-maks-blue-yndx-0008",
     "inStock": true,
     "seeded": true
+   },
+   {
+    "id": "yandex-station-max",
+    "shop": "notebookcentre",
+    "price": 247000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/product/yandex-smart-station-max-2",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "yandex-station-mini-3-pro": [
@@ -15636,6 +15675,15 @@
    }
   ],
   "yandex-station-street": [
+   {
+    "id": "yandex-station-street",
+    "shop": "notebookcentre",
+    "price": 99900,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030",
+    "inStock": true,
+    "seeded": true
+   },
    {
     "id": "yandex-station-street",
     "shop": "zigzag",

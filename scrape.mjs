@@ -1126,6 +1126,10 @@ const HAND = {
   mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
   zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
   appzone: { name: 'AppZone', site: 'https://appzone.am', note: 'electronics retailer' },
+  // Not crawled - see `excluded` below - but rows recorded by hand still carry its prices,
+  // so the shop needs a name to show under.
+  notebookcentre: { name: 'Notebook Centre', site: 'https://notebookcentre.am', note: 'electronics retailer' },
+  yerevanmobile: { name: 'Yerevan Mobile', site: 'https://yerevanmobile.am', note: 'phone retailer' },
 };
 for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v, warranty: null };
 
@@ -1146,13 +1150,17 @@ if (deduped) console.log(`${deduped} duplicate offer row(s) collapsed`);
 fs.mkdirSync('data', { recursive: true });
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),
-  // Shops this crawler will not read. Both name ClaudeBot with Disallow: / - crawling them
-  // under another user agent is the bot-block bypass this project does not do, and the same
-  // rule that keeps list.am out keeps yerevanmobile out.
+  // Shops this CRAWLER will not read. Each names ClaudeBot with Disallow: / , and fetching them
+  // under another user agent is the bot-block bypass this project does not do.
+  //
+  // That directive governs automated fetching, not the facts themselves: a price someone read
+  // off the shelf and typed into data/listings.csv is their observation, not our crawl, so
+  // hand-recorded rows for these shops ARE carried. Nothing here requests their pages - no
+  // listings, no product pages, no images.
   excluded: {
-    'list.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /',
-    'yerevanmobile.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /',
-    'notebookcentre.am': 'robots.txt: User-agent: ClaudeBot / Disallow: /'
+    'list.am': 'robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled',
+    'yerevanmobile.am': 'robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled',
+    'notebookcentre.am': 'robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled'
   },
   shops, offers
 }, null, 1));
