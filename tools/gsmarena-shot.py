@@ -80,7 +80,11 @@ def unmark(a):
     tn = np.sqrt((tpl * tpl).sum())
     corr = fftconvolve(v, tpl[::-1, ::-1], mode='valid')
     energy = np.sqrt(np.maximum(fftconvolve(v * v, np.ones_like(tpl), mode='valid'), 0))
-    score = corr / (energy * tn + 1e-6)
+    # Absolute value, because the mark's polarity flips with what it lies on: light strokes on a
+    # dark phone back, dark strokes on the white backdrop. The template was cut from a dark one, so
+    # on a white background the correlation is strongly NEGATIVE and taking the raw peak found
+    # nothing. This alone took the hit rate from three renders in ten to most of them.
+    score = np.abs(corr) / (energy * tn + 1e-6)
     # A window with almost no detail divides a tiny correlation by a tinier norm and scores
     # near-perfectly on nothing at all - which is how the first run "found" the mark two pixels
     # from the top of the Galaxy Watch, in blank white. A window has to carry real contrast first.
@@ -113,10 +117,6 @@ def main():
     x0, y0, x1, y1 = panels(a)
     a = a[y0:y1, x0:x1]
     a, box = unmark(a)
-    # Erasing is not the same as having erased. The matcher's best peak is sometimes not the mark -
-    # on the Pixel 10a it picked a strip of bezel and left the real one on the phone's back - so
-    # the result is searched again. Anything that still matches means the mark is still there, and
-    # a photo that still carries someone's watermark must not reach the catalogue.
     # Every GSMArena render carries the mark, so failing to find one means failing to find it -
     # not that it is absent. Either way the photo does not ship.
     if not box:
@@ -124,6 +124,11 @@ def main():
     _, left = unmark(a)
     if left:
         raise SystemExit(f'{pid}: SKIPPED - a mark is still present after erasing (peak {left[4]})')
+    # NOT A GUARANTEE. This gate has a false negative: on the Pixel 10a the matcher erased a strip
+    # of the wrong phone, the re-search scored the untouched mark at 0.62 - under the threshold -
+    # and the file it wrote still carried "www.GSMArena.com" across the coral back. Passing here
+    # means "worth looking at", not "clean". Every result still gets an eye over magenta before it
+    # is committed; that is what has caught every one of these.
     out = ROOT / 'images' / '_src' / f'{pid}__main.png'
     Image.fromarray(a).save(out)
     print(f'{pid}: {a.shape[1]}x{a.shape[0]}' + (f', watermark erased at {box[:4]} (peak {box[4]})' if box else ', no watermark found'))
