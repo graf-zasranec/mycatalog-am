@@ -132,6 +132,16 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* A toast already says what happened, but the badge is the thing being watched. */
 @keyframes cmppop{0%{transform:scale(1)}32%{transform:scale(1.45)}100%{transform:scale(1)}}
 .cmpbtn .c.pop{animation:cmppop .42s cubic-bezier(.2,.9,.3,1)}
+/* Money animations. The price rail flashes when the figure changes under you, the cheapest
+   offer takes one sweep of light, and a savings bar grows once it is actually on screen.
+   _app.js skips all of them under reduced motion - these carry no transform for the global
+   rule to strip, so the rule alone would let them through. */
+@keyframes fxflash{0%,62%{color:var(--brand)}100%{color:inherit}}
+.pprice2>b.fx-flash{animation:fxflash .8s ease-out}
+@keyframes fxglint{from{background-position:-60% 0}to{background-position:170% 0}}
+.orow.fx-glint{background-image:linear-gradient(100deg,transparent 41%,color-mix(in srgb,var(--brand) 20%,transparent) 50%,transparent 59%);
+  background-size:260% 100%;background-repeat:no-repeat;animation:fxglint .95s ease-out}
+.sv .bar i{transition:width .9s cubic-bezier(.22,1,.36,1)}
 .cmpbtn .c{min-width:20px;height:20px;padding:0 6px;border-radius:var(--pill);background:var(--brand);color:#fff;
   font-size:11.5px;font-weight:700;display:grid;place-items:center}
 .cmpbtn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}

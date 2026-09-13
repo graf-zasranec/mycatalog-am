@@ -1323,6 +1323,70 @@ function render(keepScroll) {
   mh.innerHTML = home ? mastHero() : '';
   if (home) heroTick(); else clearTimeout(heroT);   // no slides off the front page, no timer
   if (restoreY !== null) window.scrollTo(0, restoreY);
+  moneyFx();
+}
+
+/* ================= money animations ================= */
+// Five of them, all pointed at the number people came here for. Each is gated on reduced motion
+// by hand: the global CSS rule strips transforms and transitions, but these change text content
+// or run on a timer, and no media query can undo that.
+const RM = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+const lastPrice = new Map();          // product id -> the price its rail showed last render
+let barObs = null;
+
+// Counts up to the number already written in the element. It reads the digits out of the text
+// instead of taking them as an argument, so the same helper serves "231 900 ֏" and a bare count
+// without either caller having to say which it is.
+function rollUp(el, dur = 640) {
+  // Must end on a digit: a greedy [\d ]* swallows the space before the ֏, and every frame of
+  // the count then renders "108 885֏" with the sign jammed against the number.
+  const txt = el.textContent, m = txt.match(/\d(?:[\d  ]*\d)?/);
+  if (!m) return;
+  const end = +m[0].replace(/\D/g, '');
+  if (!Number.isFinite(end) || end < 10) return;
+  const pre = txt.slice(0, m.index), post = txt.slice(m.index + m[0].length), t0 = performance.now();
+  const step = now => {
+    const k = Math.min(1, (now - t0) / dur);
+    el.textContent = pre + money(end * (1 - Math.pow(1 - k, 3))) + post;
+    if (k < 1) requestAnimationFrame(step); else el.textContent = txt;   // land on the exact string
+  };
+  requestAnimationFrame(step);
+}
+
+function moneyFx() {
+  if (RM()) return;
+  const big = $('.pprice2 > b.num');
+  const pid = (location.hash.match(/^#\/p\/([^?]+)/) || [])[1];
+  if (big) {
+    const now = +big.textContent.replace(/\D/g, '');
+    const was = pid ? lastPrice.get(pid) : null;
+    // 5 - picking another capacity or colour changes the price. Flash the new figure rather
+    // than rolling it: a roll starting from zero reads as the page still loading, when what
+    // actually happened is that the answer changed.
+    if (was && was !== now) { big.classList.remove('fx-flash'); void big.offsetWidth; big.classList.add('fx-flash'); }
+    else rollUp(big);                                    // 1 - the price counts up on arrival
+    if (pid) lastPrice.set(pid, now);
+  }
+  // 2 - the three counts in the hero bar. Never the fourth: it is a date, not a quantity.
+  $$('.cv-bar div:nth-child(-n+3) b.num').forEach(el => rollUp(el, 520));
+  // 3 - a savings bar fills when it reaches the viewport, so the growth is actually watched
+  // instead of finishing while the section is still below the fold.
+  const bars = $$('.save-grid .bar i');
+  if (bars.length) {
+    barObs?.disconnect();
+    barObs = new IntersectionObserver((es, o) => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.style.width = e.target.dataset.w;
+      o.unobserve(e.target);
+    }), { threshold: .4 });
+    bars.forEach(i => { i.dataset.w = i.style.width; i.style.width = '0%'; barObs.observe(i); });
+  }
+  // 4 - the cheapest offer is the answer to the whole page, so it gets one sweep of light
+  const first = $('#offList li:first-child .orow');
+  if (first) {
+    first.classList.add('fx-glint');
+    first.addEventListener('animationend', () => first.classList.remove('fx-glint'), { once: true });
+  }
 }
 
 /* ================= events ================= */
