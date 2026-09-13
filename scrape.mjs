@@ -65,7 +65,7 @@ for (const p of phones) {
   const bare = norm(p.name);
   if (bare.length >= 8 && bare.includes(' ')) add(bare);   // "iphone 17 pro", "iphone air"
   else if (bare.length >= 5 && /\d/.test(bare)) add(bare);
-  for (const k of V) KEYS.push({ id: p.id, key: k });
+  for (const k of V) KEYS.push({ id: p.id, key: k, full: norm(fullName(p)) });
 }
 KEYS.sort((a, b) => b.key.length - a.key.length);
 
@@ -77,6 +77,17 @@ KEYS.sort((a, b) => b.key.length - a.key.length);
 // 'xl' earns its place here: telecomarmenia's "Google Pixel 10 Pro XL" was being priced as a
 // Pixel 10 Pro, which is a different, cheaper phone.
 const QUALIFIERS = new Set(['pro', 'max', 'plus', 'ultra', 'mini', 'air', 'fe', 'lite', 'neo', 'edge', 'e', 'se', 'xl', 'fold', 'flip']);
+
+// The mirror of QUALIFIERS, for words that PRECEDE the match. Xiaomi calls its flagship
+// "17 Pro Max", which earns a brand-less bare key, and that key sits inside "Redmi Note 17 Pro
+// Max" - a different phone at a third of the price. It was the flagship's best offer on the live
+// site: 174,900 against a real 559,000. A prefix only disqualifies a key that does not carry the
+// word itself, so "Redmi Note 14 Pro" still matches its own product.
+const PREFIXES = new Set(['note', 'redmi', 'poco', 'nord']);
+
+// A second-hand phone is not the product. The catalogue prices new stock only, and
+// ibolit's "used-17-pro-max-256-blue" was sitting in the Xiaomi 17 Pro Max's offer list.
+const SECONDHAND = ['used', 'refurbished', 'renewed', 'preowned', 'уценка', 'восстановленный'];
 
 // Shops list accessories under the phone's own name ("Clear Case with MagSafe for iPhone 15"),
 // and those were being priced AS the phone. Anything that names an accessory, or is sold
@@ -120,6 +131,8 @@ function looksLikeAccessory(text) {
 }
 function matchPhone(text) {
   if (looksLikeAccessory(text)) return null;
+  const h = tokenized(text).replace(/  +/g, ' ');
+  if (SECONDHAND.some(w => h.includes(' ' + w + ' '))) return null;
   // Shops compress the model in a slug ("samsung-s26ultra", "google-pixel10"). Splitting the
   // digit/letter joins gives an ordinary title back unchanged and recovers the model name from a
   // compressed one, so each reading gets its own attempt instead of loosening the matcher.
@@ -135,6 +148,8 @@ function matchIn(h) {
     const needle = ' ' + k.key + ' ';
     const i = h.indexOf(needle);
     if (i < 0) continue;
+    const prev = h.slice(0, i).trim().split(' ').pop();
+    if (prev && PREFIXES.has(prev) && !k.full.includes(prev)) return null;
     const next = h.slice(i + needle.length).trim().split(' ')[0];
     // 'ultra' marks a different phone (Galaxy S25 Ultra) but is also an Intel chip tier
     // ('Core Ultra 7 255U'), which was making every Core Ultra laptop unmatchable.
@@ -340,6 +355,13 @@ const ldOffer = p => { const o = p && p.offers; return Array.isArray(o) ? o[0] :
 if (process.argv[2] === '--selftest') {
   const cases = [
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
+    // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
+    // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
+    [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
+    [null, 'https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/'],
+    ['xiaomi-17-pro-max', 'https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black'],
+    // second-hand stock is not the product
+    [null, 'https://ibolit.mobi/product/used-17-pro-max-256-blue/'],
     ['xiaomi-pad-7-pro', 'https://www.pixel.am/am/product/xiaomi-pad-7-pro'],
     ['xiaomi-pad-7', 'https://www.pixel.am/am/product/xiaomi-pad-7-8-256-gray'],
     ['hp-15-fd2747nr', 'HP PC Notebook 15-FD2747NR / Ultra 7 255U / 16GB RAM / 512GB SSD'],
@@ -1103,8 +1125,23 @@ const HAND = {
   miarmenia: { name: 'Mi Armenia', site: 'https://miarmenia.am', note: 'Xiaomi brand store' },
   mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
   zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
+  appzone: { name: 'AppZone', site: 'https://appzone.am', note: 'electronics retailer' },
 };
 for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v, warranty: null };
+
+// One shop page can be reached under several colours, and each reading wrote its own row: the
+// Xiaomi 17 Pro Max carried the same allsell URL four times, and 328 of 1600 offers site-wide
+// were exact repeats. Deduping here rather than in each adapter covers the crawl, the hand-kept
+// listings and any adapter added later - all of them land in `offers` before this point.
+let deduped = 0;
+for (const [id, list] of Object.entries(offers)) {
+  const seen = new Set();
+  offers[id] = list.filter(o => {
+    const k = [o.shop, o.url, o.price, o.storage ?? ''].join('|');
+    return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
+  });
+}
+if (deduped) console.log(`${deduped} duplicate offer row(s) collapsed`);
 
 fs.mkdirSync('data', { recursive: true });
 fs.writeFileSync('data/prices.json', JSON.stringify({

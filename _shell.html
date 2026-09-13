@@ -421,6 +421,10 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
 .pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);gap:44px;align-items:stretch;margin-top:14px}
 /* Full width of its column: the cutouts are 1200px and the column tops out around 800, so
    the big photo the page was designed around is still a downscale, never an upscale. */
+/* No photo yet. NOPHOTO is a 64px glyph; object-fit:contain happily scales it to fill a 340px
+   hero and a 190px card, where it reads as a BROKEN image rather than a missing one. Pin it to
+   its own size wherever it lands and let the rest of the box stay empty. */
+img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:auto;opacity:.5}
 .pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:340px}
 .pshotwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   filter:drop-shadow(0 30px 46px rgba(20,19,20,.20))}

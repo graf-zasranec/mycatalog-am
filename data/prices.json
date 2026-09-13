@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T13:22:34.419Z",
+ "generated": "2026-09-13T14:49:27.967Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: /",
@@ -101,6 +101,12 @@
    "site": "https://www.zigzag.am",
    "note": "electronics retailer",
    "warranty": null
+  },
+  "appzone": {
+   "name": "AppZone",
+   "site": "https://appzone.am",
+   "note": "electronics retailer",
+   "warranty": null
   }
  },
  "offers": {
@@ -119,30 +125,6 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "price": 488000,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
-    "image": null,
-    "storage": 256,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 488000,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
-    "image": null,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro",
     "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
@@ -150,30 +132,6 @@
     "storage": 256,
     "ram": null,
     "color": "Deep Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
-    "price": 488500,
-    "storage": 256,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
-    "price": 488500,
-    "storage": 256,
-    "ram": null,
-    "color": "Orange",
     "inStock": true,
     "shop": "allsell"
    },
@@ -398,30 +356,6 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "price": 574000,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 574000,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Cosmic Orange",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro",
     "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
@@ -429,30 +363,6 @@
     "storage": 512,
     "ram": null,
     "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
-    "price": 578500,
-    "storage": 512,
-    "ram": null,
-    "color": "Deep Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
-    "price": 578500,
-    "storage": 512,
-    "ram": null,
-    "color": "Orange",
     "inStock": true,
     "shop": "allsell"
    },
@@ -494,6 +404,16 @@
     "ram": null,
     "color": "Cosmic Orange",
     "shop": "ibolit"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "price": 618000,
+    "storage": 512,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-512gb-silver",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -619,30 +539,6 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "price": 685000,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
-    "image": null,
-    "storage": 1024,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "price": 685000,
-    "title": "Apple iPhone 17 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
-    "image": null,
-    "storage": 1024,
-    "color": "Cosmic Orange",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro",
     "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
@@ -650,30 +546,6 @@
     "storage": 1024,
     "ram": null,
     "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
-    "price": 685500,
-    "storage": 1024,
-    "ram": null,
-    "color": "Deep Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "title": "iPhone 17 Pro In Armenia - Buy Cash Or Credit - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_7_.png",
-    "price": 685500,
-    "storage": 1024,
-    "ram": null,
-    "color": "Orange",
     "inStock": true,
     "shop": "allsell"
    },
@@ -813,6 +685,16 @@
     "ram": null,
     "color": "Deep Blue",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "price": 744000,
+    "storage": 1024,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-1tb-deep-blue",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "apple-iphone-17-pro-max": [
@@ -830,30 +712,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "price": 525000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 256,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 525000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro-max",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
@@ -861,30 +719,6 @@
     "storage": 256,
     "ram": null,
     "color": "Orange",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 525500,
-    "storage": 256,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 525500,
-    "storage": 256,
-    "ram": null,
-    "color": "Deep Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -1133,30 +967,6 @@
    {
     "id": "apple-iphone-17-pro-max",
     "price": 625000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 512,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 625000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 512,
-    "color": "Cosmic Orange",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 625000,
     "title": "iPhone 17 Pro max 512GB Deep Blue Esim",
     "url": "https://ibolit.mobi/product/iphone-17-pro-max-512gb-deep-blue/",
     "storage": 512,
@@ -1189,30 +999,6 @@
     "storage": 512,
     "ram": null,
     "color": "Orange",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 625500,
-    "storage": 512,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 625500,
-    "storage": 512,
-    "ram": null,
-    "color": "Deep Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -1330,36 +1116,22 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "price": 695000,
+    "storage": 512,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 715000,
     "title": "Apple iPhone 17 Pro Max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 1024,
     "color": "Silver",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 715000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 1024,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 715000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 1024,
-    "color": "Cosmic Orange",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -1378,30 +1150,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 715500,
-    "storage": 1024,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 715500,
-    "storage": 1024,
-    "ram": null,
-    "color": "Deep Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "price": 737900,
     "storage": 1024,
     "title": "Սմարթ հեռախոս APPLE iPhone 17 Pro Max 1TB (Cosmic Orange) (A3526) (MFYW4ZA/A)",
@@ -1411,6 +1159,16 @@
     "ram": null,
     "color": "Cosmic Orange",
     "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "price": 759000,
+    "storage": 1024,
+    "color": "Cosmic Orange",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-1tb-esim-cosmic-orange/",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1451,36 +1209,22 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "price": 788000,
+    "storage": 1024,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-1tb-silver",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 839000,
     "title": "Apple iPhone 17 Pro Max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 2048,
     "color": "Silver",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 839000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 2048,
-    "color": "Deep Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "price": 839000,
-    "title": "Apple iPhone 17 Pro Max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 2048,
-    "color": "Cosmic Orange",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -1494,30 +1238,6 @@
     "storage": 2048,
     "ram": null,
     "color": "Orange",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 839500,
-    "storage": 2048,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
-    "url": "https://allsell.am/en/iphone-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
-    "price": 839500,
-    "storage": 2048,
-    "ram": null,
-    "color": "Deep Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -1567,6 +1287,16 @@
     "storage": 1024,
     "color": "Cosmic Orange",
     "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "price": 958000,
+    "storage": 2048,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-2tb-silver",
     "inStock": true,
     "seeded": true
    },
@@ -1687,108 +1417,12 @@
    },
    {
     "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 359500,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 359500,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 359500,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 359500,
-    "storage": 256,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
     "price": 364000,
     "title": "Apple iPhone 17",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 364000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 364000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 256,
-    "color": "Lavender",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 364000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 256,
-    "color": "Sage",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 364000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 256,
-    "color": "Mist Blue",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -2138,51 +1772,13 @@
    },
    {
     "id": "apple-iphone-17",
+    "shop": "pixel",
     "price": 465000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
     "storage": 512,
-    "color": "White",
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/product/iphone-17",
     "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 465000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 512,
-    "color": "Lavender",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 465000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 512,
-    "color": "Sage",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 465000,
-    "title": "Apple iPhone 17",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17",
-    "image": null,
-    "storage": 512,
-    "color": "Mist Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
+    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -2193,54 +1789,6 @@
     "storage": 512,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 465500,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 465500,
-    "storage": 512,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 465500,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17",
-    "title": "IPhone 17 In Armenia - Buy At The Best Price Here - AllSell",
-    "url": "https://allsell.am/en/iphone-17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__24_5.jpg",
-    "price": 465500,
-    "storage": 512,
-    "ram": null,
-    "color": "Green",
     "inStock": true,
     "shop": "allsell"
    },
@@ -2296,6 +1844,16 @@
    },
    {
     "id": "apple-iphone-air",
+    "shop": "pixel",
+    "price": 384000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=apple",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-air",
     "price": 395000,
     "title": "Apple iPhone Air",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
@@ -2308,42 +1866,6 @@
    },
    {
     "id": "apple-iphone-air",
-    "price": 395000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 256,
-    "color": "Space Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 395000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 256,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 395000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 256,
-    "color": "Light Gold",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
     "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
     "url": "https://allsell.am/en/iphone-air",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
@@ -2351,42 +1873,6 @@
     "storage": 256,
     "ram": null,
     "color": "Light Gold",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-air",
-    "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-air",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
-    "price": 395500,
-    "storage": 256,
-    "ram": null,
-    "color": "Sky Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-air",
-    "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-air",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
-    "price": 395500,
-    "storage": 256,
-    "ram": null,
-    "color": "Space Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-air",
-    "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-air",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
-    "price": 395500,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
     "inStock": true,
     "shop": "allsell"
    },
@@ -2615,48 +2101,22 @@
    },
    {
     "id": "apple-iphone-air",
+    "shop": "ucom",
+    "price": 445900,
+    "storage": 512,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/iphones.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-air",
     "price": 449000,
     "title": "Apple iPhone Air",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
     "image": null,
     "storage": 512,
     "color": "Cloud White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 449000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 512,
-    "color": "Space Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 449000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 512,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 449000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 512,
-    "color": "Light Gold",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -2740,42 +2200,6 @@
    },
    {
     "id": "apple-iphone-air",
-    "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-air",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
-    "price": 499500,
-    "storage": 512,
-    "ram": null,
-    "color": "Sky Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-air",
-    "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-air",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
-    "price": 499500,
-    "storage": 512,
-    "ram": null,
-    "color": "Space Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-air",
-    "title": "iPhone Air Smartphone - Buy In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-air",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t110616.223_1.png",
-    "price": 499500,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-air",
     "price": 510900,
     "storage": 512,
     "title": "iPhone Air , 512GB , Space Black",
@@ -2818,42 +2242,6 @@
     "image": null,
     "storage": 1024,
     "color": "Cloud White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 1024,
-    "color": "Space Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 1024,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-air",
-    "price": 607000,
-    "title": "Apple iPhone Air",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-air",
-    "image": null,
-    "storage": 1024,
-    "color": "Light Gold",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -2937,30 +2325,6 @@
    },
    {
     "id": "apple-iphone-17e",
-    "title": "iPhone 17e Price In Armenia - Buy Now - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-17e",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_19__5_2.jpg",
-    "price": 264500,
-    "storage": 256,
-    "ram": null,
-    "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17e",
-    "title": "iPhone 17e Price In Armenia - Buy Now - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-17e",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_19__5_2.jpg",
-    "price": 264500,
-    "storage": 256,
-    "ram": null,
-    "color": "Light pink",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-17e",
     "price": 269000,
     "title": "iPhone 17e 256gb Pink e-sim",
     "url": "https://ibolit.mobi/product/iphone-17e-256gb-pink/",
@@ -3000,6 +2364,16 @@
    },
    {
     "id": "apple-iphone-17e",
+    "shop": "pixel",
+    "price": 279000,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=apple",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17e",
     "price": 279900,
     "storage": 256,
     "title": "Apple iPhone 17e Dual eSIM 256GB (White)",
@@ -3018,30 +2392,6 @@
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17e",
-    "price": 289000,
-    "title": "Apple iPhone 17e",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17e",
-    "image": null,
-    "storage": 256,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-17e",
-    "price": 289000,
-    "title": "Apple iPhone 17e",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17e",
-    "image": null,
-    "storage": 256,
-    "color": "White",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -3129,6 +2479,16 @@
     "ram": null,
     "color": "Soft Pink",
     "shop": "vega"
+   },
+   {
+    "id": "apple-iphone-17e",
+    "shop": "ucom",
+    "price": 299900,
+    "storage": 128,
+    "color": "Pink",
+    "url": "https://shop.ucom.am/en/iphones.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17e",
@@ -3260,108 +2620,12 @@
    },
    {
     "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 308500,
-    "storage": 128,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 308500,
-    "storage": 128,
-    "ram": null,
-    "color": "Ultramarine",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 308500,
-    "storage": 128,
-    "ram": null,
-    "color": "Teal",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 308500,
-    "storage": 128,
-    "ram": null,
-    "color": "Pink",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
     "price": 319000,
     "title": "Apple iPhone 16",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
     "image": null,
     "storage": 128,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 319000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 128,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 319000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 128,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 319000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 128,
-    "color": "Ultramarine",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 319000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 128,
-    "color": "Teal",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -3493,54 +2757,6 @@
    },
    {
     "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 337500,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 337500,
-    "storage": 256,
-    "ram": null,
-    "color": "Ultramarine",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 337500,
-    "storage": 256,
-    "ram": null,
-    "color": "Teal",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
-    "title": "Iphone 16",
-    "url": "https://allsell.am/en/iphone-16",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__39.jpg",
-    "price": 337500,
-    "storage": 256,
-    "ram": null,
-    "color": "Pink",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-16",
     "price": 345000,
     "title": "iPhone 16 256GB Black",
     "url": "https://ibolit.mobi/product/iphone-16-256gb-black/",
@@ -3560,54 +2776,6 @@
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 347000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 256,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 347000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 347000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 256,
-    "color": "Ultramarine",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16",
-    "price": 347000,
-    "title": "Apple iPhone 16",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16",
-    "image": null,
-    "storage": 256,
-    "color": "Teal",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -3747,6 +2915,16 @@
    },
    {
     "id": "apple-iphone-16",
+    "shop": "ucom",
+    "price": 351900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/iphone-16.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16",
     "price": 399900,
     "storage": 256,
     "title": "iPhone 16, 256 GB, Black",
@@ -3797,54 +2975,6 @@
    },
    {
     "id": "apple-iphone-15",
-    "price": 262000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 128,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 262000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 128,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 262000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 128,
-    "color": "Green",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 262000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 128,
-    "color": "Yellow",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
     "price": 276900,
     "storage": 128,
     "title": "Սմարթ հեռախոս APPLE IPHONE 15 128GB (BK) (MTP03HX/A)",
@@ -3888,54 +3018,6 @@
     "storage": 128,
     "ram": null,
     "color": "Yellow",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-15",
-    "title": "iPhone 15 Smartphone In Armenia - Buy - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-15",
-    "image": null,
-    "price": 278500,
-    "storage": 128,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-15",
-    "title": "iPhone 15 Smartphone In Armenia - Buy - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-15",
-    "image": null,
-    "price": 278500,
-    "storage": 128,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-15",
-    "title": "iPhone 15 Smartphone In Armenia - Buy - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-15",
-    "image": null,
-    "price": 278500,
-    "storage": 128,
-    "ram": null,
-    "color": "Pink",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-iphone-15",
-    "title": "iPhone 15 Smartphone In Armenia - Buy - Warranty - AllSell",
-    "url": "https://allsell.am/en/iphone-15",
-    "image": null,
-    "price": 278500,
-    "storage": 128,
-    "ram": null,
-    "color": "Black",
     "inStock": true,
     "shop": "allsell"
    },
@@ -4125,54 +3207,6 @@
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 309000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 256,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 309000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 256,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 309000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 256,
-    "color": "Green",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-15",
-    "price": 309000,
-    "title": "Apple iPhone 15",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-15",
-    "image": null,
-    "storage": 256,
-    "color": "Yellow",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -4619,54 +3653,6 @@
    },
    {
     "id": "apple-airpods-max-2",
-    "price": 239000,
-    "title": "Apple AirPods Max 2",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
-    "image": null,
-    "storage": null,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "price": 239000,
-    "title": "Apple AirPods Max 2",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
-    "image": null,
-    "storage": null,
-    "color": "Orange",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "price": 239000,
-    "title": "Apple AirPods Max 2",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
-    "image": null,
-    "storage": null,
-    "color": "Starlight",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "price": 239000,
-    "title": "Apple AirPods Max 2",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
-    "image": null,
-    "storage": null,
-    "color": "Midnight",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-airpods-max-2",
     "title": "Airpods Max 2",
     "url": "https://allsell.am/en/airpods-max-2",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__129.jpg",
@@ -4674,54 +3660,6 @@
     "storage": null,
     "ram": null,
     "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "title": "Airpods Max 2",
-    "url": "https://allsell.am/en/airpods-max-2",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__129.jpg",
-    "price": 239500,
-    "storage": null,
-    "ram": null,
-    "color": "Starlight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "title": "Airpods Max 2",
-    "url": "https://allsell.am/en/airpods-max-2",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__129.jpg",
-    "price": 239500,
-    "storage": null,
-    "ram": null,
-    "color": "Midnight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "title": "Airpods Max 2",
-    "url": "https://allsell.am/en/airpods-max-2",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__129.jpg",
-    "price": 239500,
-    "storage": null,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "title": "Airpods Max 2",
-    "url": "https://allsell.am/en/airpods-max-2",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__129.jpg",
-    "price": 239500,
-    "storage": null,
-    "ram": null,
-    "color": "Orange",
     "inStock": true,
     "shop": "allsell"
    },
@@ -5046,18 +3984,6 @@
    },
    {
     "id": "apple-watch-ultra-3",
-    "price": 319000,
-    "title": "Apple Watch Ultra 3",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-ultra-3",
-    "image": null,
-    "storage": 64,
-    "color": "Natural Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-watch-ultra-3",
     "title": "Apple Watch Ultra 3 In Armenia - Buy With Warranty - AllSell",
     "url": "https://allsell.am/en/apple-watch-ultra-3",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_-_2025-09-10t103834.735.jpg",
@@ -5065,18 +3991,6 @@
     "storage": 49,
     "ram": null,
     "color": "Black Titanium",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-watch-ultra-3",
-    "title": "Apple Watch Ultra 3 In Armenia - Buy With Warranty - AllSell",
-    "url": "https://allsell.am/en/apple-watch-ultra-3",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_-_2025-09-10t103834.735.jpg",
-    "price": 327400,
-    "storage": 49,
-    "ram": null,
-    "color": "Natural Titanium",
     "inStock": true,
     "shop": "allsell"
    },
@@ -5171,42 +4085,6 @@
    },
    {
     "id": "apple-watch-series-11",
-    "price": 155000,
-    "title": "Apple Watch Series 11",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-series-11",
-    "image": null,
-    "storage": 64,
-    "color": "Space Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-watch-series-11",
-    "price": 155000,
-    "title": "Apple Watch Series 11",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-series-11",
-    "image": null,
-    "storage": 64,
-    "color": "Rose Gold",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-watch-series-11",
-    "price": 155000,
-    "title": "Apple Watch Series 11",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-series-11",
-    "image": null,
-    "storage": 64,
-    "color": "Jet Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-watch-series-11",
     "price": 174900,
     "storage": null,
     "title": "Apple Watch Series 11 GPS,  Purple Fog Sport Band, S/M, 42մմ, Silver Aluminium",
@@ -5259,18 +4137,6 @@
    },
    {
     "id": "apple-watch-se-3",
-    "price": 112000,
-    "title": "Apple Watch SE 3",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-se-3",
-    "image": null,
-    "storage": 64,
-    "color": "Midnight",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-watch-se-3",
     "title": "Buy Apple Watch SE 3 GPS - Best Price In Armenia - AllSell",
     "url": "https://allsell.am/en/apple-watch-se-3-gps",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_-_2025-09-10t112421.302_3.jpg",
@@ -5278,18 +4144,6 @@
     "storage": null,
     "ram": null,
     "color": "Starlight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-watch-se-3",
-    "title": "Buy Apple Watch SE 3 GPS - Best Price In Armenia - AllSell",
-    "url": "https://allsell.am/en/apple-watch-se-3-gps",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_-_2025-09-10t112421.302_3.jpg",
-    "price": 112400,
-    "storage": null,
-    "ram": null,
-    "color": "Midnight",
     "inStock": true,
     "shop": "allsell"
    },
@@ -5380,42 +4234,6 @@
     "storage": 256,
     "ram": null,
     "color": "Pink",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "title": "Buy MacBook Neo In Armenia - Best Price - Delivery - AllSell",
-    "url": "https://allsell.am/en/macbook-neo",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_2.jpg",
-    "price": 309000,
-    "storage": 256,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "title": "Buy MacBook Neo In Armenia - Best Price - Delivery - AllSell",
-    "url": "https://allsell.am/en/macbook-neo",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_2.jpg",
-    "price": 309000,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "title": "Buy MacBook Neo In Armenia - Best Price - Delivery - AllSell",
-    "url": "https://allsell.am/en/macbook-neo",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_2.jpg",
-    "price": 309000,
-    "storage": 256,
-    "ram": null,
-    "color": "Yellow",
     "inStock": true,
     "shop": "allsell"
    },
@@ -5671,42 +4489,6 @@
    },
    {
     "id": "apple-macbook-neo-13",
-    "title": "Buy MacBook Neo In Armenia - Best Price - Delivery - AllSell",
-    "url": "https://allsell.am/en/macbook-neo",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_2.jpg",
-    "price": 349000,
-    "storage": 512,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "title": "Buy MacBook Neo In Armenia - Best Price - Delivery - AllSell",
-    "url": "https://allsell.am/en/macbook-neo",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_2.jpg",
-    "price": 349000,
-    "storage": 512,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "title": "Buy MacBook Neo In Armenia - Best Price - Delivery - AllSell",
-    "url": "https://allsell.am/en/macbook-neo",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_2.jpg",
-    "price": 349000,
-    "storage": 512,
-    "ram": null,
-    "color": "Yellow",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-neo-13",
     "price": 359000,
     "title": "MacBook Neo 13\" A18 Pro (6C CPU/5C GPU), 8 GB, 512 GB, Citrus",
     "url": "https://ibolit.mobi/product/macbook-neo-13-a18-pro-6c-cpu-5c-gpu-8-gb-512-gb-citrus/",
@@ -5857,18 +4639,6 @@
     "storage": 2048,
     "ram": 36,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-pro-16-m5-max",
-    "title": "MacBook Pro 16.2\" M5 Max 36GB I 2TB MGE74 Silver",
-    "url": "https://allsell.am/en/macbook-pro-16-2-m5-max-36gb-i-2tb-mge74-silver",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_10__8_6.jpg",
-    "price": 1899500,
-    "storage": 2048,
-    "ram": 36,
-    "color": "Silver",
     "inStock": true,
     "shop": "allsell"
    },
@@ -6027,18 +4797,6 @@
     "storage": 1024,
     "ram": 24,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-pro-14-m5-pro",
-    "title": "MacBook Pro 14.2\" M5 Pro 24GB I 1TB MGDR4 Space Black",
-    "url": "https://allsell.am/en/macbook-pro-14-2-m5-pro-24gb-i-1tb-mgdr4-space-black",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_12__6_6.jpg",
-    "price": 1149500,
-    "storage": 1024,
-    "ram": 24,
-    "color": "Silver",
     "inStock": true,
     "shop": "allsell"
    },
@@ -6354,18 +5112,6 @@
    },
    {
     "id": "apple-macbook-air-15-m5",
-    "title": "Macbook Air 15\" M5 16GB I 512TB MDVH4 Midnight",
-    "url": "https://allsell.am/en/macbook-air-15-m5-16gb-i-512tb-mdvh4-midnight",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__127_3.jpg",
-    "price": 667500,
-    "storage": 512,
-    "ram": 16,
-    "color": "Starlight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-15-m5",
     "price": 689000,
     "title": "Air 15.3'' M5 MDVQ4(Sky Blue)",
     "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvq4sky-blue",
@@ -6464,30 +5210,6 @@
     "storage": 1024,
     "ram": 24,
     "color": "Starlight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-15-m5",
-    "title": "Macbook Air 15\" M5 24GB I1TB MDVU4 Sky Blue",
-    "url": "https://allsell.am/en/macbook-air-15-m5-24gb-i1tb-mdvu4-sky-blue",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__38_4.jpg",
-    "price": 829500,
-    "storage": 1024,
-    "ram": 24,
-    "color": "Midnight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-15-m5",
-    "title": "Macbook Air 15\" M5 24GB I1TB MDVU4 Sky Blue",
-    "url": "https://allsell.am/en/macbook-air-15-m5-24gb-i1tb-mdvu4-sky-blue",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__38_4.jpg",
-    "price": 829500,
-    "storage": 1024,
-    "ram": 24,
-    "color": "Sky Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -6637,42 +5359,6 @@
    },
    {
     "id": "apple-macbook-air-13-m5",
-    "title": "Macbook Air 13\" M5 16GB I 512",
-    "url": "https://allsell.am/en/macbook-air-13-m5-16gb-i-512",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__111.jpg",
-    "price": 599500,
-    "storage": 512,
-    "ram": null,
-    "color": "Midnight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "title": "Macbook Air 13\" M5 16GB I 512",
-    "url": "https://allsell.am/en/macbook-air-13-m5-16gb-i-512",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__111.jpg",
-    "price": 599500,
-    "storage": 512,
-    "ram": null,
-    "color": "Starlight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "title": "Macbook Air 13\" M5 16GB I 512",
-    "url": "https://allsell.am/en/macbook-air-13-m5-16gb-i-512",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__111.jpg",
-    "price": 599500,
-    "storage": 512,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
     "price": 619000,
     "storage": 512,
     "title": "MacBook Air 13 M5",
@@ -6731,42 +5417,6 @@
     "storage": 1024,
     "ram": 16,
     "color": "Midnight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "title": "Macbook Air 13\" M5 16GB I 1TB MDHJ4 Sky Blue",
-    "url": "https://allsell.am/en/macbook-air-13-m5-16gb-i-1tb-mdhj4-sky-blue",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__38_1.jpg",
-    "price": 665500,
-    "storage": 1024,
-    "ram": 16,
-    "color": "Starlight",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "title": "Macbook Air 13\" M5 16GB I 1TB MDHJ4 Sky Blue",
-    "url": "https://allsell.am/en/macbook-air-13-m5-16gb-i-1tb-mdhj4-sky-blue",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__38_1.jpg",
-    "price": 665500,
-    "storage": 1024,
-    "ram": 16,
-    "color": "Sky Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "title": "Macbook Air 13\" M5 16GB I 1TB MDHJ4 Sky Blue",
-    "url": "https://allsell.am/en/macbook-air-13-m5-16gb-i-1tb-mdhj4-sky-blue",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__38_1.jpg",
-    "price": 665500,
-    "storage": 1024,
-    "ram": 16,
-    "color": "Silver",
     "inStock": true,
     "shop": "allsell"
    },
@@ -6987,42 +5637,6 @@
    },
    {
     "id": "samsung-galaxy-a37",
-    "title": "Samsung Galaxy A37",
-    "url": "https://allsell.am/en/samsung-galaxy-a37",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_1.jpg",
-    "price": 119600,
-    "storage": 128,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "title": "Samsung Galaxy A37",
-    "url": "https://allsell.am/en/samsung-galaxy-a37",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_1.jpg",
-    "price": 119600,
-    "storage": 128,
-    "ram": null,
-    "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "title": "Samsung Galaxy A37",
-    "url": "https://allsell.am/en/samsung-galaxy-a37",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_1.jpg",
-    "price": 119600,
-    "storage": 128,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a37",
     "price": 129900,
     "title": "Smartphone Samsung A376 Galaxy A37 5G 6/128GB DS Awesome Graygreen",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-6-128gb-ds-awesome-graygreen",
@@ -7159,42 +5773,6 @@
    },
    {
     "id": "samsung-galaxy-a37",
-    "price": 137000,
-    "title": "Samsung Galaxy A37",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
-    "image": null,
-    "storage": 128,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 137000,
-    "title": "Samsung Galaxy A37",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
-    "image": null,
-    "storage": 128,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 137000,
-    "title": "Samsung Galaxy A37",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
-    "image": null,
-    "storage": 128,
-    "color": "Dark Green",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a37",
     "price": 143000,
     "title": "Samsung Galaxy A37 8/256GB (Awesome GrayGreen)",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a37-8-256gb-awesome-graygreen/",
@@ -7302,42 +5880,6 @@
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 147000,
-    "title": "Samsung Galaxy A37",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 147000,
-    "title": "Samsung Galaxy A37",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 147000,
-    "title": "Samsung Galaxy A37",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
-    "image": null,
-    "storage": 256,
-    "color": "Dark Green",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -7496,30 +6038,6 @@
     "color": "Purple",
     "inStock": true,
     "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "title": "Samsung Galaxy A37",
-    "url": "https://allsell.am/en/samsung-galaxy-a37",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_1.jpg",
-    "price": 164600,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "title": "Samsung Galaxy A37",
-    "url": "https://allsell.am/en/samsung-galaxy-a37",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_1.jpg",
-    "price": 164600,
-    "storage": 256,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
    }
   ],
   "samsung-galaxy-a56": [
@@ -7628,42 +6146,6 @@
    },
    {
     "id": "samsung-galaxy-a56",
-    "price": 142000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 128,
-    "color": "Graphite",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "price": 142000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 128,
-    "color": "Lightgray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "price": 142000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 128,
-    "color": "Olive",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a56",
     "price": 143900,
     "title": "SAMSUNG A56 (A566) 128GB Black //",
     "url": "https://vlv.am/en/Product/37976",
@@ -7740,18 +6222,6 @@
    },
    {
     "id": "samsung-galaxy-a56",
-    "title": "Buy Samsung Galaxy A56 Smartphone In Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a56",
-    "image": null,
-    "price": 149600,
-    "storage": 256,
-    "ram": null,
-    "color": "Light pink",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a56",
     "price": 151900,
     "storage": 128,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy A56 5G SM-A566B/DS 8GB 128GB (Awesome Graphite)",
@@ -7788,42 +6258,6 @@
    },
    {
     "id": "samsung-galaxy-a56",
-    "price": 159000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 256,
-    "color": "Graphite",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "price": 159000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 256,
-    "color": "Lightgray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "price": 159000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 256,
-    "color": "Olive",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a56",
     "price": 159900,
     "storage": 128,
     "title": "Samsung Galaxy A56 128GB (Awesome Pink)",
@@ -7833,6 +6267,16 @@
     "ram": null,
     "color": "Awesome Pink",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a56",
+    "shop": "pixel",
+    "price": 159900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a56",
@@ -7906,42 +6350,6 @@
     "storage": 128,
     "ram": null,
     "color": "Ice Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "title": "Samsung Galaxy A57 Price In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a57",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_4__52.jpg",
-    "price": 143600,
-    "storage": 128,
-    "ram": null,
-    "color": "Grey",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "title": "Samsung Galaxy A57 Price In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a57",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_4__52.jpg",
-    "price": 143600,
-    "storage": 128,
-    "ram": null,
-    "color": "Navy",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "title": "Samsung Galaxy A57 Price In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a57",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_4__52.jpg",
-    "price": 143600,
-    "storage": 128,
-    "ram": null,
-    "color": "Light Purple",
     "inStock": true,
     "shop": "allsell"
    },
@@ -8063,39 +6471,13 @@
    },
    {
     "id": "samsung-galaxy-a57",
+    "shop": "pixel",
     "price": 149000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
     "storage": 128,
-    "color": "Gray",
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
     "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 149000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 128,
-    "color": "Icyblue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 149000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 128,
-    "color": "Navy",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a57",
@@ -8137,6 +6519,16 @@
    },
    {
     "id": "samsung-galaxy-a57",
+    "shop": "zigzag",
+    "price": 162900,
+    "storage": 256,
+    "color": "Awesome Navy",
+    "url": "https://www.zigzag.am/en/samsung-galaxy-a57-8gb-256gb-awesome-navy.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a57",
     "price": 164000,
     "storage": null,
     "title": "Samsung Galaxy A57",
@@ -8146,6 +6538,16 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "zigzag",
+    "price": 165000,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.zigzag.am/en/promo/current-1/zigzag-bts/smartphones.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a57",
@@ -8219,6 +6621,16 @@
    },
    {
     "id": "samsung-galaxy-a57",
+    "shop": "ucom",
+    "price": 166900,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/samsung-galaxy-57.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a57",
     "price": 167000,
     "title": "Samsung Galaxy A57 8GB/256GB Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-gray",
@@ -8251,42 +6663,6 @@
     "image": null,
     "storage": 256,
     "color": "Lilac Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 167000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 256,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 167000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 256,
-    "color": "Icyblue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 167000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 256,
-    "color": "Navy",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -8408,30 +6784,6 @@
     "storage": 512,
     "ram": null,
     "color": "Grey",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "title": "Samsung Galaxy A57 Price In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a57",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_4__52.jpg",
-    "price": 194600,
-    "storage": 512,
-    "ram": null,
-    "color": "Navy",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "title": "Samsung Galaxy A57 Price In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a57",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_4__52.jpg",
-    "price": 194600,
-    "storage": 512,
-    "ram": null,
-    "color": "Ice Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -8608,20 +6960,8 @@
    },
    {
     "id": "samsung-galaxy-s25-edge",
-    "title": "Buy Samsung Galaxy S25 Edge Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-edge",
-    "image": null,
-    "price": 289600,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-edge",
     "price": 329000,
-    "storage": null,
+    "storage": 256,
     "title": "Samsung Galaxy S25 Edge",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-edge",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/122/800_1776107384-1749232227-s25-edge-blk-2-sides.png",
@@ -8629,6 +6969,26 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s25-edge",
+    "shop": "redstore",
+    "price": 329000,
+    "storage": 256,
+    "color": "Titanium Icyblue",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-edge-12gb256gb-titanium-icyblue",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s25-edge",
+    "shop": "pixel",
+    "price": 329000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s25-edge",
@@ -8671,66 +7031,6 @@
    },
    {
     "id": "samsung-galaxy-s26-plus",
-    "price": 329000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 329000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 256,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 329000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 329000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 256,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 329000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 256,
-    "color": "Peach Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
     "title": "Samsung Galaxy S26 Plus",
     "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
@@ -8738,42 +7038,6 @@
     "storage": 256,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "title": "Samsung Galaxy S26 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
-    "price": 329600,
-    "storage": 256,
-    "ram": null,
-    "color": "Ice Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "title": "Samsung Galaxy S26 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
-    "price": 329600,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "title": "Samsung Galaxy S26 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
-    "price": 329600,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
     "inStock": true,
     "shop": "allsell"
    },
@@ -8791,66 +7055,6 @@
    },
    {
     "id": "samsung-galaxy-s26-plus",
-    "price": 389000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 512,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 389000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 512,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 389000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 512,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 389000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 512,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "price": 389000,
-    "title": "Samsung Galaxy S26+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26plus",
-    "image": null,
-    "storage": 512,
-    "color": "Peach Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
     "title": "Samsung Galaxy S26 Plus",
     "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
@@ -8858,42 +7062,6 @@
     "storage": 512,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "title": "Samsung Galaxy S26 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
-    "price": 389600,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "title": "Samsung Galaxy S26 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
-    "price": 389600,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "title": "Samsung Galaxy S26 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_5__1.png",
-    "price": 389600,
-    "storage": 512,
-    "ram": null,
-    "color": "Ice Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -8969,7 +7137,7 @@
    {
     "id": "samsung-galaxy-s26-plus",
     "price": 456000,
-    "storage": null,
+    "storage": 256,
     "title": "Samsung Galaxy S26 Plus",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-s26-plus",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/117/800_1776080271-1773255509-s26-plus-black-2-sides.png",
@@ -8977,6 +7145,16 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "shop": "pixel",
+    "price": 456000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "samsung-galaxy-s25-ultra": [
@@ -8994,42 +7172,6 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "price": 339000,
-    "title": "Samsung Galaxy S25 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Titanium Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "price": 339000,
-    "title": "Samsung Galaxy S25 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Titanium Silverblue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "price": 339000,
-    "title": "Samsung Galaxy S25 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Titanium Whitesilver",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
     "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
     "image": null,
@@ -9037,42 +7179,6 @@
     "storage": 256,
     "ram": null,
     "color": "Black Titanium",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 349600,
-    "storage": 256,
-    "ram": null,
-    "color": "Gray Titanium",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 349600,
-    "storage": 256,
-    "ram": null,
-    "color": "Ice Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 349600,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
     "inStock": true,
     "shop": "allsell"
    },
@@ -9097,42 +7203,6 @@
     "image": null,
     "storage": 512,
     "color": "Titanium Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "price": 399000,
-    "title": "Samsung Galaxy S25 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Titanium Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "price": 399000,
-    "title": "Samsung Galaxy S25 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Titanium Silverblue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "price": 399000,
-    "title": "Samsung Galaxy S25 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Titanium Whitesilver",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -9177,39 +7247,23 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 399600,
-    "storage": 512,
-    "ram": null,
-    "color": "Gray Titanium",
+    "shop": "ibolit",
+    "price": 400000,
+    "storage": 256,
+    "color": "Titanium White Silver",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-256gb-titanium-white-silver/",
     "inStock": true,
-    "shop": "allsell"
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 399600,
-    "storage": 512,
-    "ram": null,
-    "color": "Ice Blue",
+    "shop": "pixel",
+    "price": 409000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
     "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 399600,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s25-ultra",
@@ -9362,42 +7416,6 @@
     "color": "Black Titanium",
     "inStock": true,
     "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 598600,
-    "storage": 1024,
-    "ram": null,
-    "color": "Gray Titanium",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 598600,
-    "storage": 1024,
-    "ram": null,
-    "color": "Ice Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
-    "image": null,
-    "price": 598600,
-    "storage": 1024,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
    }
   ],
   "samsung-galaxy-s26-ultra": [
@@ -9415,66 +7433,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 379000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 379000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 379000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 379000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 379000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Peach Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
@@ -9482,42 +7440,6 @@
     "storage": 256,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 379600,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 379600,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 379600,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
     "inStock": true,
     "shop": "allsell"
    },
@@ -9664,66 +7586,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 465000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 465000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 465000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 465000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 465000,
-    "title": "Samsung Galaxy S26 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Peach Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
@@ -9731,42 +7593,6 @@
     "storage": 512,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 469600,
-    "storage": 512,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 469600,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 469600,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
     "inStock": true,
     "shop": "allsell"
    },
@@ -9892,6 +7718,16 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
+    "shop": "zigzag",
+    "price": 569000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://www.zigzag.am/en/promo/current-1/zigzag-bts/smartphones.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
     "price": 569900,
     "storage": 512,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 512GB (Cobalt Violet)",
@@ -9974,39 +7810,13 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
+    "shop": "redstore",
     "price": 629000,
     "storage": 1024,
-    "ram": null,
-    "color": "Blue",
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-16gb1tb-black",
     "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 629000,
-    "storage": 1024,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
-    "price": 629000,
-    "storage": 1024,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -10121,30 +7931,6 @@
    {
     "id": "samsung-galaxy-a17",
     "price": 65000,
-    "title": "Samsung Galaxy A17",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-    "image": null,
-    "storage": 128,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "price": 65000,
-    "title": "Samsung Galaxy A17",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-    "image": null,
-    "storage": 128,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "price": 65000,
     "title": "Samsung Galaxy A17 4/128(Black)",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a17-4-128black/",
     "storage": 128,
@@ -10190,30 +7976,6 @@
     "storage": 128,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "title": "Samsung Galaxy A17",
-    "url": "https://allsell.am/en/samsung-galaxy-a17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_224_1.jpg",
-    "price": 65600,
-    "storage": 128,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "title": "Samsung Galaxy A17",
-    "url": "https://allsell.am/en/samsung-galaxy-a17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_224_1.jpg",
-    "price": 65600,
-    "storage": 128,
-    "ram": null,
-    "color": "Grey",
     "inStock": true,
     "shop": "allsell"
    },
@@ -10354,30 +8116,6 @@
    },
    {
     "id": "samsung-galaxy-a17",
-    "price": 95000,
-    "title": "Samsung Galaxy A17",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-    "image": null,
-    "storage": 256,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "price": 95000,
-    "title": "Samsung Galaxy A17",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-    "image": null,
-    "storage": 256,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a17",
     "title": "Samsung Galaxy A17",
     "url": "https://allsell.am/en/samsung-galaxy-a17",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_224_1.jpg",
@@ -10385,30 +8123,6 @@
     "storage": 256,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "title": "Samsung Galaxy A17",
-    "url": "https://allsell.am/en/samsung-galaxy-a17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_224_1.jpg",
-    "price": 99600,
-    "storage": 256,
-    "ram": null,
-    "color": "Grey",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "title": "Samsung Galaxy A17",
-    "url": "https://allsell.am/en/samsung-galaxy-a17",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_224_1.jpg",
-    "price": 99600,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -10464,6 +8178,16 @@
     "ram": 6,
     "color": "White",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "shop": "pixel",
+    "price": 105900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a26",
@@ -10593,42 +8317,6 @@
    {
     "id": "samsung-galaxy-a36",
     "price": 109000,
-    "title": "Samsung Galaxy A36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 128,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "price": 109000,
-    "title": "Samsung Galaxy A36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 128,
-    "color": "Lavender",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "price": 109000,
-    "title": "Samsung Galaxy A36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 128,
-    "color": "Lime",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "price": 109000,
     "title": "Samsung Galaxy A36 5G 8/128GB Lavander",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a36-5g-8-128gb-lavander/",
     "storage": 128,
@@ -10654,48 +8342,22 @@
    },
    {
     "id": "samsung-galaxy-a36",
+    "shop": "redstore",
+    "price": 109000,
+    "storage": 128,
+    "color": "Lavender",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-lavender",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a36",
     "price": 123000,
     "title": "Samsung Galaxy A36",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "price": 123000,
-    "title": "Samsung Galaxy A36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "price": 123000,
-    "title": "Samsung Galaxy A36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 256,
-    "color": "Lavender",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "price": 123000,
-    "title": "Samsung Galaxy A36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 256,
-    "color": "Lime",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -10754,6 +8416,16 @@
    },
    {
     "id": "samsung-galaxy-a36",
+    "shop": "redstore",
+    "price": 124000,
+    "storage": 256,
+    "color": "Lime",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb256gb-lime",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a36",
     "price": 129900,
     "storage": 128,
     "title": "Samsung Galaxy A36 128GB (Awesome White)",
@@ -10763,6 +8435,16 @@
     "ram": null,
     "color": "Awesome White",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-a36",
+    "shop": "pixel",
+    "price": 129900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -11113,6 +8795,16 @@
     "ram": null,
     "color": "Lunar Grey",
     "shop": "ibolit"
+   },
+   {
+    "id": "honor-400-pro",
+    "shop": "appzone",
+    "price": 275000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://appzone.am/en/product/honor-400-pro-5g-12-512gb-ocean-blue/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "samsung-galaxy-s25-fe": [
@@ -11125,42 +8817,6 @@
     "storage": 256,
     "ram": null,
     "color": "Jet Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "title": "Samsung Galaxy S25FE in Armenia - Buy Now - Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25fe",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__17.jpg",
-    "price": 215600,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "title": "Samsung Galaxy S25FE in Armenia - Buy Now - Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25fe",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__17.jpg",
-    "price": 215600,
-    "storage": 256,
-    "ram": null,
-    "color": "Navy",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "title": "Samsung Galaxy S25FE in Armenia - Buy Now - Price - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s25fe",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_6__17.jpg",
-    "price": 215600,
-    "storage": 256,
-    "ram": null,
-    "color": "Ice Blue",
     "inStock": true,
     "shop": "allsell"
    },
@@ -11256,6 +8912,16 @@
    },
    {
     "id": "samsung-galaxy-s25-fe",
+    "shop": "pixel",
+    "price": 226000,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
     "price": 229000,
     "title": "Samsung Galaxy S25 FE 8GB/256GB Jetblack",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-jetblack",
@@ -11314,42 +8980,6 @@
     "image": null,
     "storage": 256,
     "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "price": 229000,
-    "title": "Samsung Galaxy S25 FE",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
-    "image": null,
-    "storage": 256,
-    "color": "Jet Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "price": 229000,
-    "title": "Samsung Galaxy S25 FE",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
-    "image": null,
-    "storage": 256,
-    "color": "Icyblue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "price": 229000,
-    "title": "Samsung Galaxy S25 FE",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
-    "image": null,
-    "storage": 256,
-    "color": "Navy",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -11431,18 +9061,6 @@
    },
    {
     "id": "poco-f7-ultra",
-    "title": "Գնել Poco F7 Ultra Լավագույն Գնով - Կանխիկ/Ապառիկ - AllSell",
-    "url": "https://allsell.am/en/poco-f7-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/4/1/41414.jpg",
-    "price": 289800,
-    "storage": 512,
-    "ram": null,
-    "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "poco-f7-ultra",
     "price": 317900,
     "storage": 256,
     "title": "Սմարթ հեռախոս XIAOMI POCO F7 Ultra 12GB 256GB (Black) (24122RKC7G)",
@@ -11467,6 +9085,16 @@
     "ram": 12,
     "color": "Mint",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-s25",
+    "shop": "pixel",
+    "price": 273000,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s25",
@@ -11558,6 +9186,16 @@
    },
    {
     "id": "samsung-galaxy-s25",
+    "shop": "ucom",
+    "price": 319900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/samsung-galaxy-s25.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s25",
     "price": 429000,
     "title": "Samsung Galaxy S25+ 512GB Mint",
     "url": "https://ibolit.mobi/product/samsung-galaxy-s25-512gb-mint/",
@@ -11637,108 +9275,12 @@
    },
    {
     "id": "samsung-galaxy-s26",
-    "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
-    "price": 295600,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
-    "price": 295600,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
-    "price": 295600,
-    "storage": 256,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26",
     "price": 309000,
     "title": "Samsung Galaxy S26",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 309000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 309000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 256,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 309000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 309000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 256,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 309000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 256,
-    "color": "Peach Pink",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -11810,66 +9352,6 @@
    {
     "id": "samsung-galaxy-s26",
     "price": 339000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 512,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 512,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 512,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 512,
-    "color": "Sky Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 512,
-    "color": "Peach Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
     "title": "Samsung Galaxy S26 512gb White",
     "url": "https://ibolit.mobi/product/samsung-galaxy-s26-512gb-white/",
     "storage": 512,
@@ -11895,6 +9377,16 @@
    },
    {
     "id": "samsung-galaxy-s26",
+    "shop": "redstore",
+    "price": 339000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb512gb-black",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s26",
     "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s26",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
@@ -11902,42 +9394,6 @@
     "storage": 512,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
-    "price": 339600,
-    "storage": 512,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
-    "price": 339600,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
-    "price": 339600,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
     "inStock": true,
     "shop": "allsell"
    },
@@ -11976,6 +9432,16 @@
     "inStock": true,
     "color": "White",
     "shop": "vlv"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "shop": "ucom",
+    "price": 348900,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/samsung-galaxy-s26.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -12030,7 +9496,7 @@
    {
     "id": "samsung-galaxy-s26",
     "price": 399000,
-    "storage": null,
+    "storage": 256,
     "title": "Samsung Galaxy S26",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-s26",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/118/800_1776080985-1773253418-blk-2-sides.png",
@@ -12044,13 +9510,23 @@
     "price": 399000,
     "title": "Samsung Galaxy S26 Ultra 256 Sky Blue",
     "url": "https://ibolit.mobi/product/samsung-galaxy-s26-256-ultra-sky-blue/",
-    "storage": null,
+    "storage": 256,
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/03/galaxy_s26_ultra_-_sky_blue_1772454326.webp",
     "sku": "IBL:90113",
     "ram": null,
     "color": "Sky Blue",
     "shop": "ibolit"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "shop": "pixel",
+    "price": 399000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "oneplus-13": [
@@ -12068,95 +9544,6 @@
    }
   ],
   "xiaomi-17-pro-max": [
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 174900,
-    "storage": 256,
-    "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB (Green)",
-    "url": "https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/",
-    "image": "https://mobilecentre.am/img/prodpic/d81d8d755e4a4785e4fbNew_Project_-_2026-09-10T161226.046.png",
-    "inStock": true,
-    "ram": 8,
-    "color": "Green",
-    "shop": "mobilecentre"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 219000,
-    "title": "XIAOMI REDMI Note 17 Pro Max 5G 8/256GB Black",
-    "url": "https://vlv.am/en/Product/48965",
-    "image": "https://vlv.am/public/uploads/images/12-09-2026/6aa4f7a9c9524.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 239000,
-    "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Black",
-    "url": "https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256gb-black",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/61560/image/10-montaznaia-oblast-1.webp",
-    "sku": "61560",
-    "ram": 8,
-    "color": "Black",
-    "shop": "redstore"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 239000,
-    "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Purple",
-    "url": "https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256gb-purple",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/61572/image/8-montaznaia-oblast-1.webp",
-    "sku": "RA164527",
-    "ram": 8,
-    "color": "Purple",
-    "shop": "redstore"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 239000,
-    "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Cloud Blush",
-    "url": "https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256gb-cloud-blush",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/61573/image/5-montaznaia-oblast-1.webp",
-    "sku": "RA164530",
-    "ram": 8,
-    "color": null,
-    "shop": "redstore"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 239000,
-    "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Green",
-    "url": "https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256gb-green",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/61574/image/3-montaznaia-oblast-1.webp",
-    "sku": "RA164533",
-    "ram": 8,
-    "color": "Green",
-    "shop": "redstore"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 479900,
-    "title": "Used 17 max 256 Blue",
-    "url": "https://ibolit.mobi/product/used-17-pro-max-256-blue/",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/10/deep-blue-hero-zoom-1024x1024-1.png",
-    "sku": "IBL:90599",
-    "ram": null,
-    "color": "Blue",
-    "shop": "ibolit"
-   },
    {
     "id": "xiaomi-17-pro-max",
     "price": 559000,
@@ -12219,42 +9606,6 @@
    },
    {
     "id": "xiaomi-17-pro-max",
-    "title": "Buy Xiaomi 17 Pro Max In Armenia - Best Price Here - AllSell",
-    "url": "https://allsell.am/en/xiaomi-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/_/4/_4__2.jpg",
-    "price": 559000,
-    "storage": 512,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "title": "Buy Xiaomi 17 Pro Max In Armenia - Best Price Here - AllSell",
-    "url": "https://allsell.am/en/xiaomi-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/_/4/_4__2.jpg",
-    "price": 559000,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "title": "Buy Xiaomi 17 Pro Max In Armenia - Best Price Here - AllSell",
-    "url": "https://allsell.am/en/xiaomi-17-pro-max",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/_/4/_4__2.jpg",
-    "price": 559000,
-    "storage": 512,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
     "price": 559000,
     "title": "17 Pro Max 16GB/512GB Black",
     "url": "https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black",
@@ -12303,30 +9654,6 @@
     "storage": 256,
     "ram": null,
     "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-fe",
-    "title": "Buy Samsung Galaxy S26 FE In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-fe",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/p/i/pistachio.png",
-    "price": 294600,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s26-fe",
-    "title": "Buy Samsung Galaxy S26 FE In Armenia - Warranty - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-s26-fe",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/p/i/pistachio.png",
-    "price": 294600,
-    "storage": 256,
-    "ram": null,
-    "color": "Black",
     "inStock": true,
     "shop": "allsell"
    },
@@ -12456,30 +9783,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
-    "price": 655000,
-    "title": "Samsung Galaxy Z Fold8 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
-    "price": 655000,
-    "title": "Samsung Galaxy Z Fold8 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8-ultra",
-    "image": null,
-    "storage": 256,
-    "color": "Graphite",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
     "title": "Samsung Galaxy Z Fold 8 Ultra Price in Armenia - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-z-fold-8-ultra",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__121.jpg",
@@ -12487,30 +9790,6 @@
     "storage": 256,
     "ram": null,
     "color": "Graphite",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
-    "title": "Samsung Galaxy Z Fold 8 Ultra Price in Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__121.jpg",
-    "price": 659600,
-    "storage": 256,
-    "ram": null,
-    "color": "Cream",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
-    "title": "Samsung Galaxy Z Fold 8 Ultra Price in Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__121.jpg",
-    "price": 659600,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
     "inStock": true,
     "shop": "allsell"
    },
@@ -12580,30 +9859,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
-    "price": 775000,
-    "title": "Samsung Galaxy Z Fold8 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
-    "price": 775000,
-    "title": "Samsung Galaxy Z Fold8 Ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8-ultra",
-    "image": null,
-    "storage": 512,
-    "color": "Graphite",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
     "title": "Samsung Galaxy Z Fold 8 Ultra Price in Armenia - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-z-fold-8-ultra",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__121.jpg",
@@ -12611,30 +9866,6 @@
     "storage": 512,
     "ram": null,
     "color": "Graphite",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
-    "title": "Samsung Galaxy Z Fold 8 Ultra Price in Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__121.jpg",
-    "price": 779600,
-    "storage": 512,
-    "ram": null,
-    "color": "Cream",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8-ultra",
-    "title": "Samsung Galaxy Z Fold 8 Ultra Price in Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8-ultra",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__121.jpg",
-    "price": 779600,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
     "inStock": true,
     "shop": "allsell"
    },
@@ -12766,30 +9997,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8",
-    "price": 619000,
-    "title": "Samsung Galaxy Z Fold8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "price": 619000,
-    "title": "Samsung Galaxy Z Fold8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
     "title": "Buy Samsung Galaxy Z Fold 8 In Armenia - Best Price",
     "url": "https://allsell.am/en/samsung-galaxy-z-fold-8",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__82.jpg",
@@ -12797,30 +10004,6 @@
     "storage": 256,
     "ram": null,
     "color": "Graphite",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "title": "Buy Samsung Galaxy Z Fold 8 In Armenia - Best Price",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__82.jpg",
-    "price": 619600,
-    "storage": 256,
-    "ram": null,
-    "color": "Cream",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "title": "Buy Samsung Galaxy Z Fold 8 In Armenia - Best Price",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__82.jpg",
-    "price": 619600,
-    "storage": 256,
-    "ram": null,
-    "color": "Purple",
     "inStock": true,
     "shop": "allsell"
    },
@@ -12877,30 +10060,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8",
-    "price": 655000,
-    "title": "Samsung Galaxy Z Fold8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8",
-    "image": null,
-    "storage": 512,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "price": 655000,
-    "title": "Samsung Galaxy Z Fold8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8",
-    "image": null,
-    "storage": 512,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
     "title": "Buy Samsung Galaxy Z Fold 8 In Armenia - Best Price",
     "url": "https://allsell.am/en/samsung-galaxy-z-fold-8",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__82.jpg",
@@ -12908,30 +10067,6 @@
     "storage": 512,
     "ram": null,
     "color": "Graphite",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "title": "Buy Samsung Galaxy Z Fold 8 In Armenia - Best Price",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__82.jpg",
-    "price": 659600,
-    "storage": 512,
-    "ram": null,
-    "color": "Cream",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "title": "Buy Samsung Galaxy Z Fold 8 In Armenia - Best Price",
-    "url": "https://allsell.am/en/samsung-galaxy-z-fold-8",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_5__82.jpg",
-    "price": 659600,
-    "storage": 512,
-    "ram": null,
-    "color": "Purple",
     "inStock": true,
     "shop": "allsell"
    },
@@ -13066,42 +10201,6 @@
    },
    {
     "id": "samsung-galaxy-z-flip-8",
-    "price": 445000,
-    "title": "Samsung Galaxy Z Flip8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
-    "image": null,
-    "storage": 256,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-flip-8",
-    "price": 445000,
-    "title": "Samsung Galaxy Z Flip8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-flip-8",
-    "price": 445000,
-    "title": "Samsung Galaxy Z Flip8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
-    "image": null,
-    "storage": 256,
-    "color": "Mint",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-flip-8",
     "price": 469000,
     "title": "Samsung Galaxy Z Flip 8 12GB/256GB Graphite",
     "url": "https://redstore.am/en/product/samsung-galaxy-z-flip-8-12gb256gb-graphite",
@@ -13138,6 +10237,16 @@
     "ram": 12,
     "color": "Pink",
     "shop": "redstore"
+   },
+   {
+    "id": "samsung-galaxy-z-flip-8",
+    "shop": "pixel",
+    "price": 479000,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -13208,42 +10317,6 @@
     "image": null,
     "storage": 512,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-flip-8",
-    "price": 565000,
-    "title": "Samsung Galaxy Z Flip8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
-    "image": null,
-    "storage": 512,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-flip-8",
-    "price": 565000,
-    "title": "Samsung Galaxy Z Flip8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
-    "image": null,
-    "storage": 512,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-flip-8",
-    "price": 565000,
-    "title": "Samsung Galaxy Z Flip8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-flip8",
-    "image": null,
-    "storage": 512,
-    "color": "Mint",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -13359,30 +10432,6 @@
     "image": null,
     "storage": 128,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "price": 109000,
-    "title": "Samsung Galaxy A27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 128,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "price": 109000,
-    "title": "Samsung Galaxy A27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 128,
-    "color": "Pink",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -13563,30 +10612,6 @@
    },
    {
     "id": "samsung-galaxy-a27",
-    "price": 125000,
-    "title": "Samsung Galaxy A27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 256,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "price": 125000,
-    "title": "Samsung Galaxy A27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 256,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a27",
     "title": "Samsung Galaxy A27 Armenia - Price & Specifications",
     "url": "https://allsell.am/en/samsung-galaxy-a27",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/4/5/4596_1.png",
@@ -13608,6 +10633,16 @@
     "inStock": true,
     "color": "Black",
     "shop": "vlv"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "shop": "mobilecentre",
+    "price": 141900,
+    "storage": 256,
+    "color": "Light Pink",
+    "url": "https://www.mobilecentre.am/product/samsung-galaxy-a27-256gb-_light-pink_/34422/",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "xiaomi-redmi-note-14-pro": [
@@ -13619,30 +10654,6 @@
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-redmi-note-14-pro",
-    "price": 95000,
-    "title": "Xiaomi Redmi Note 14 Pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-14-pro",
-    "image": null,
-    "storage": 256,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-redmi-note-14-pro",
-    "price": 95000,
-    "title": "Xiaomi Redmi Note 14 Pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-14-pro",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -13803,6 +10814,16 @@
   "samsung-galaxy-a07": [
    {
     "id": "samsung-galaxy-a07",
+    "shop": "pixel",
+    "price": 42900,
+    "storage": 64,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a07",
     "price": 44000,
     "title": "Samsung Galaxy A07 4/128GB(Gray)",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a07-4-128gbgray/",
@@ -13878,27 +10899,13 @@
    },
    {
     "id": "samsung-galaxy-a07",
-    "title": "Samsung Galaxy A07 Smartphone - Buy In Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a07",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_1__1.png",
-    "price": 48600,
+    "shop": "ucom",
+    "price": 49900,
     "storage": 64,
-    "ram": null,
-    "color": "Green",
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/samsung-galaxy-a07.html",
     "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "title": "Samsung Galaxy A07 Smartphone - Buy In Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a07",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_1__1.png",
-    "price": 48600,
-    "storage": 64,
-    "ram": null,
-    "color": "Light Purple",
-    "inStock": true,
-    "shop": "allsell"
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a07",
@@ -13953,30 +10960,6 @@
    },
    {
     "id": "samsung-galaxy-a07",
-    "price": 52000,
-    "title": "Samsung Galaxy A07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 64,
-    "color": "Green",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "price": 52000,
-    "title": "Samsung Galaxy A07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 64,
-    "color": "Light Violet",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a07",
     "title": "Samsung Galaxy A07 Smartphone - Buy In Armenia - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-a07",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_1__1.png",
@@ -13984,30 +10967,6 @@
     "storage": 128,
     "ram": null,
     "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "title": "Samsung Galaxy A07 Smartphone - Buy In Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a07",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_1__1.png",
-    "price": 56600,
-    "storage": 128,
-    "ram": null,
-    "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "title": "Samsung Galaxy A07 Smartphone - Buy In Armenia - AllSell",
-    "url": "https://allsell.am/en/samsung-galaxy-a07",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/y/e/yesido_1__1.png",
-    "price": 56600,
-    "storage": 128,
-    "ram": null,
-    "color": "Light Purple",
     "inStock": true,
     "shop": "allsell"
    },
@@ -14073,30 +11032,6 @@
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "price": 58000,
-    "title": "Samsung Galaxy A07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 128,
-    "color": "Green",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "price": 58000,
-    "title": "Samsung Galaxy A07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 128,
-    "color": "Light Violet",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
    }
   ],
   "realme-gt-7t": [
@@ -14141,42 +11076,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-7",
-    "price": 539000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 256,
-    "color": "Blue Shadow",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
-    "price": 539000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 256,
-    "color": "Mint",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
-    "price": 539000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 256,
-    "color": "Silver Shadow",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
     "price": 559900,
     "storage": 256,
     "title": "Samsung Galaxy Z Fold 7 256GB (Silver Shadow)",
@@ -14207,42 +11106,6 @@
     "image": null,
     "storage": 512,
     "color": "Jet Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
-    "price": 629000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 512,
-    "color": "Blue Shadow",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
-    "price": 629000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 512,
-    "color": "Mint",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
-    "price": 629000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 512,
-    "color": "Silver Shadow",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -14573,18 +11436,6 @@
    },
    {
     "id": "xiaomi-15",
-    "price": 345000,
-    "title": "Xiaomi 15",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-15",
-    "image": null,
-    "storage": 512,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-15",
     "price": 355000,
     "title": "15 12GB/512GB White",
     "url": "https://redstore.am/en/product/xiaomi-15-12gb512gb-white",
@@ -14650,39 +11501,13 @@
    },
    {
     "id": "samsung-galaxy-s25-plus",
-    "title": "Samsung Galaxy S25 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_1__153.jpg",
-    "price": 328600,
+    "shop": "pixel",
+    "price": 349000,
     "storage": 256,
-    "ram": null,
-    "color": "Silver",
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
     "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-plus",
-    "title": "Samsung Galaxy S25 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_1__153.jpg",
-    "price": 328600,
-    "storage": 256,
-    "ram": null,
-    "color": "Mint",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-s25-plus",
-    "title": "Samsung Galaxy S25 Plus",
-    "url": "https://allsell.am/en/samsung-galaxy-s25-plus",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_1__153.jpg",
-    "price": 328600,
-    "storage": 256,
-    "ram": null,
-    "color": "Ice Blue",
-    "inStock": true,
-    "shop": "allsell"
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -14695,6 +11520,16 @@
     "ram": null,
     "color": "Mint",
     "shop": "mobilecentre"
+   },
+   {
+    "id": "samsung-galaxy-s25-plus",
+    "shop": "ucom",
+    "price": 374900,
+    "storage": 256,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/samsung-galaxy-s25-plus.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -14799,6 +11634,16 @@
    },
    {
     "id": "apple-iphone-16-pro-max",
+    "shop": "redstore",
+    "price": 589000,
+    "storage": 512,
+    "color": "Black Titanium",
+    "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
     "price": 649900,
     "storage": 512,
     "title": "iPhone 16 Pro Max, 512 GB, Black Titanium",
@@ -14832,6 +11677,16 @@
     "ram": null,
     "color": "Desert Titanium",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro-max",
+    "shop": "zigzag",
+    "price": 687900,
+    "storage": 512,
+    "color": "Natural Titanium",
+    "url": "https://www.zigzag.am/en/apple-iphone-16-pro-max-512gb-natural-titanium.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-16-pro-max",
@@ -14999,6 +11854,16 @@
    },
    {
     "id": "apple-iphone-16-plus",
+    "shop": "redstore",
+    "price": 429000,
+    "storage": 256,
+    "color": "Pink",
+    "url": "https://redstore.am/en/product/iphone-16-plus-256gb-pink",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16-plus",
     "price": 459900,
     "storage": 256,
     "title": "iPhone 16 Plus, 256 GB, Black",
@@ -15075,36 +11940,12 @@
    },
    {
     "id": "samsung-galaxy-tab-a11-plus",
-    "title": "Samsung Galaxy Tab A11 Plus X230 Wfii",
-    "url": "https://allsell.am/en/samsung-galaxy-tab-a11-plus-x230-wfii",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_18__9.jpg",
-    "price": 99600,
-    "storage": 128,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11-plus",
     "price": 108000,
     "title": "Samsung Galaxy Tab A11+",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11plus",
     "image": null,
     "storage": 256,
     "color": "Silver",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11-plus",
-    "price": 108000,
-    "title": "Samsung Galaxy Tab A11+",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11plus",
-    "image": null,
-    "storage": 256,
-    "color": "Gray",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -15118,18 +11959,6 @@
     "storage": 256,
     "ram": null,
     "color": "Grey",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11-plus",
-    "title": "Samsung Galaxy Tab A11 Plus X230 Wfii",
-    "url": "https://allsell.am/en/samsung-galaxy-tab-a11-plus-x230-wfii",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_18__9.jpg",
-    "price": 108600,
-    "storage": 256,
-    "ram": null,
-    "color": "Silver",
     "inStock": true,
     "shop": "allsell"
    },
@@ -15233,18 +12062,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
-    "title": "Samsung Galaxy Tab A11",
-    "url": "https://allsell.am/en/samsung-galaxy-tab-a11",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_16__7_1.jpg",
-    "price": 52600,
-    "storage": 64,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
     "price": 54000,
     "title": "Samsung Galaxy Tab A11 4GB/64GB WiFi X133 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-4gb64gb-wifi-x133-gray",
@@ -15277,18 +12094,6 @@
     "image": null,
     "storage": 64,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
-    "price": 54000,
-    "title": "Samsung Galaxy Tab A11",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
-    "image": null,
-    "storage": 64,
-    "color": "Silver",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -15343,18 +12148,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
-    "title": "Samsung Galaxy Tab A11",
-    "url": "https://allsell.am/en/samsung-galaxy-tab-a11",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_16__7_1.jpg",
-    "price": 72600,
-    "storage": 128,
-    "ram": null,
-    "color": "Silver",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
     "price": 75000,
     "title": "Samsung Galaxy Tab A11 8GB/128GB WiFi X133 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-8gb128gb-wifi-x133-gray",
@@ -15387,18 +12180,6 @@
     "image": null,
     "storage": 128,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
-    "price": 75000,
-    "title": "Samsung Galaxy Tab A11",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
-    "image": null,
-    "storage": 128,
-    "color": "Silver",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -15639,18 +12420,6 @@
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-buds-4",
-    "price": 62000,
-    "title": "Samsung Galaxy Buds 4",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-4",
-    "image": null,
-    "storage": null,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
    }
   ],
   "samsung-galaxy-buds-4-pro": [
@@ -15700,18 +12469,6 @@
     "image": null,
     "storage": null,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-buds-4-pro",
-    "price": 72000,
-    "title": "Samsung Galaxy Buds 4 Pro",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-4-pro",
-    "image": null,
-    "storage": null,
-    "color": "White",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -16100,6 +12857,16 @@
   "samsung-galaxy-a16": [
    {
     "id": "samsung-galaxy-a16",
+    "shop": "pixel",
+    "price": 56900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a16",
     "price": 59900,
     "storage": null,
     "title": "Samsung Galaxy A16",
@@ -16109,13 +12876,23 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a16",
+    "shop": "ucom",
+    "price": 74900,
+    "storage": 128,
+    "color": "Not specified",
+    "url": "https://shop.ucom.am/en/samsung-galaxy-a16.html",
+    "inStock": true,
+    "seeded": true
    }
   ],
   "samsung-galaxy-a06": [
    {
     "id": "samsung-galaxy-a06",
     "price": 35900,
-    "storage": null,
+    "storage": 64,
     "title": "Samsung Galaxy A06",
     "url": "https://www.pixel.am/am/product/samsung-galaxy-a06",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/151/800_1776237398-1725552045-a06-blk-blue-2-sides.png",
@@ -16123,6 +12900,26 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "samsung-galaxy-a06",
+    "shop": "pixel",
+    "price": 35900,
+    "storage": 64,
+    "color": "Not specified",
+    "url": "https://www.pixel.am/en/products/phones?brand=samsung",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-a06",
+    "shop": "zigzag",
+    "price": 37700,
+    "storage": 64,
+    "color": "Black",
+    "url": "https://www.zigzag.am/en/samsung-galaxy-a06-4gb-64gb-black.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-a06",
@@ -16348,30 +13145,6 @@
    },
    {
     "id": "xiaomi-pad-7-pro",
-    "price": 234000,
-    "title": "Xiaomi Pad 7 Pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-pad-7-pro",
-    "price": 234000,
-    "title": "Xiaomi Pad 7 Pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Green",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-pad-7-pro",
     "title": "Xiaomi Pad 7 Pro",
     "url": "https://allsell.am/en/xiaomi-pad-7-pro",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_4__61_1.jpg",
@@ -16379,18 +13152,6 @@
     "storage": 512,
     "ram": null,
     "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xiaomi-pad-7-pro",
-    "title": "Xiaomi Pad 7 Pro",
-    "url": "https://allsell.am/en/xiaomi-pad-7-pro",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_4__61_1.jpg",
-    "price": 234800,
-    "storage": 512,
-    "ram": null,
-    "color": "Green",
     "inStock": true,
     "shop": "allsell"
    },
@@ -16475,30 +13236,6 @@
    },
    {
     "id": "xiaomi-pad-7",
-    "title": "Xiaomi Pad 7",
-    "url": "https://allsell.am/en/xiaomi-pad-7",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_7__7.jpg",
-    "price": 158700,
-    "storage": 256,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xiaomi-pad-7",
-    "title": "Xiaomi Pad 7",
-    "url": "https://allsell.am/en/xiaomi-pad-7",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_7__7.jpg",
-    "price": 158700,
-    "storage": 256,
-    "ram": null,
-    "color": "Blue",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xiaomi-pad-7",
     "price": 159000,
     "title": "Xiaomi Pad 7 8GB/256GB Blue",
     "url": "https://redstore.am/en/product/xiaomi-pad-7-8gb256gb-blue",
@@ -16531,30 +13268,6 @@
     "image": null,
     "storage": 256,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-pad-7",
-    "price": 159000,
-    "title": "Xiaomi Pad 7",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7",
-    "image": null,
-    "storage": 256,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-pad-7",
-    "price": 159000,
-    "title": "Xiaomi Pad 7",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7",
-    "image": null,
-    "storage": 256,
-    "color": "Green",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -16612,18 +13325,6 @@
    },
    {
     "id": "samsung-galaxy-watch-ultra-2",
-    "price": 239000,
-    "title": "Samsung Galaxy Watch Ultra2",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-ultra2",
-    "image": null,
-    "storage": 64,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-watch-ultra-2",
     "price": 263000,
     "storage": 47,
     "title": "Samsung Galaxy Watch Ultra 2 2026",
@@ -16644,18 +13345,6 @@
     "image": null,
     "storage": null,
     "color": "Silver",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-watch-8",
-    "price": 84000,
-    "title": "Samsung Galaxy Watch 8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-8",
-    "image": null,
-    "storage": null,
-    "color": "Graphite",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -16757,18 +13446,6 @@
     "image": null,
     "storage": 46,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "samsung-galaxy-watch-8-classic",
-    "price": 129000,
-    "title": "Samsung Galaxy Watch 8 Classic",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-8-classic",
-    "image": null,
-    "storage": 46,
-    "color": "White",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -17050,61 +13727,12 @@
   "apple-iphone-16-pro": [
    {
     "id": "apple-iphone-16-pro",
-    "price": 279000,
-    "title": "iPhone 16 Pro 128GB 2SIM Natural Titanium USED",
-    "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-2sim-natural-titanium-used/",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red275_1.jpg",
-    "sku": "IBL:9000",
-    "ram": null,
-    "color": "Natural Titanium",
-    "shop": "ibolit"
-   },
-   {
-    "id": "apple-iphone-16-pro",
     "price": 429000,
     "title": "Apple iPhone 16 Pro",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
     "image": null,
     "storage": 128,
     "color": "Black Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 429000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 128,
-    "color": "White Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 429000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 128,
-    "color": "Natural Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 429000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 128,
-    "color": "Desert Titanium",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
@@ -17182,6 +13810,16 @@
     "ram": null,
     "color": "Natural Titanium",
     "shop": "istore"
+   },
+   {
+    "id": "apple-iphone-16-pro",
+    "shop": "zigzag",
+    "price": 459900,
+    "storage": 128,
+    "color": "Black Titanium",
+    "url": "https://www.zigzag.am/en/apple-iphone-16-pro-128gb-black-titanium.html",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-16-pro",
@@ -17297,42 +13935,6 @@
    },
    {
     "id": "apple-iphone-16-pro",
-    "price": 529000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 256,
-    "color": "White Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 529000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 256,
-    "color": "Natural Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 529000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 256,
-    "color": "Desert Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
     "price": 569000,
     "title": "Apple iPhone 16 Pro",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
@@ -17345,39 +13947,13 @@
    },
    {
     "id": "apple-iphone-16-pro",
-    "price": 569000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
+    "shop": "zigzag",
+    "price": 625000,
     "storage": 512,
-    "color": "White Titanium",
+    "color": "Black Titanium",
+    "url": "https://www.zigzag.am/en/apple-iphone-16-pro-512gb-black-titanium.html",
     "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 569000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Natural Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "apple-iphone-16-pro",
-    "price": 569000,
-    "title": "Apple iPhone 16 Pro",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Desert Titanium",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
+    "seeded": true
    },
    {
     "id": "apple-iphone-16-pro",
@@ -17609,18 +14185,6 @@
    },
    {
     "id": "marshall-stanmore-3",
-    "title": "Marshall Stanmore III",
-    "url": "https://allsell.am/en/marshall-stanmore-iii",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-08-12t094445.248.jpg",
-    "price": 144900,
-    "storage": null,
-    "ram": null,
-    "color": "Cream",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "marshall-stanmore-3",
     "price": 168900,
     "title": "MARSHALL Stanmore III (1006010) Black",
     "url": "https://vlv.am/en/Product/36421",
@@ -17841,18 +14405,6 @@
    },
    {
     "id": "xbox-series-x",
-    "title": "Xbox Series X 1TB Didital Edtition",
-    "url": "https://allsell.am/en/xbox-series-x-1tb-didital-edtition",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_1__184_1.jpg",
-    "price": 314500,
-    "storage": 1024,
-    "ram": null,
-    "color": "White",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "xbox-series-x",
     "price": 349000,
     "title": "Xbox Series X 1TB SSD Black",
     "url": "https://redstore.am/en/product/xbox-series-x-1tb-ssd-black",
@@ -17888,18 +14440,6 @@
     "storage": null,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "marshall-major-v",
-    "title": "Ականջակալ Marshall Major V Wireless On-Ear Headphone",
-    "url": "https://allsell.am/en/marshall-major-v-wireless-on-ear-headphone",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__85.jpg",
-    "price": 46900,
-    "storage": null,
-    "ram": null,
-    "color": "Cream",
     "inStock": true,
     "shop": "allsell"
    },
@@ -18067,30 +14607,6 @@
    },
    {
     "id": "google-pixel-11-pro-xl",
-    "title": "Google Pixel 11 Pro XL",
-    "url": "https://allsell.am/en/google-pixel-11-pro-xl",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/1/1/111_9__3.jpg",
-    "price": 587700,
-    "storage": 256,
-    "ram": null,
-    "color": "Mint",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "google-pixel-11-pro-xl",
-    "title": "Google Pixel 11 Pro XL",
-    "url": "https://allsell.am/en/google-pixel-11-pro-xl",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/1/1/111_9__3.jpg",
-    "price": 587700,
-    "storage": 256,
-    "ram": null,
-    "color": "Green",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "google-pixel-11-pro-xl",
     "price": 599000,
     "title": "Google Pixel 11 Pro XL 12GB/256GB Obsidian",
     "url": "https://redstore.am/en/product/google-pixel-11-pro-xl-12gb256gb-obsidian",
@@ -18164,30 +14680,6 @@
     "storage": 256,
     "ram": null,
     "color": "Black",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "oneplus-nord-6",
-    "title": "OnePlus Nord 6",
-    "url": "https://allsell.am/en/oneplus-nord-6",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/1/1/111_16__1.jpg",
-    "price": 216700,
-    "storage": 256,
-    "ram": null,
-    "color": "Mint",
-    "inStock": true,
-    "shop": "allsell"
-   },
-   {
-    "id": "oneplus-nord-6",
-    "title": "OnePlus Nord 6",
-    "url": "https://allsell.am/en/oneplus-nord-6",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/1/1/111_16__1.jpg",
-    "price": 216700,
-    "storage": 256,
-    "ram": null,
-    "color": "Silver",
     "inStock": true,
     "shop": "allsell"
    },
@@ -18547,36 +15039,12 @@
    },
    {
     "id": "xiaomi-redmi-note-13-pro-plus",
-    "price": 139000,
-    "title": "Xiaomi Redmi Note 13 Pro +",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-13-pro-plus",
-    "image": null,
-    "storage": 256,
-    "color": "Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-redmi-note-13-pro-plus",
     "price": 159000,
     "title": "Xiaomi Redmi Note 13 Pro +",
     "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-13-pro-plus",
     "image": null,
     "storage": 512,
     "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d"
-   },
-   {
-    "id": "xiaomi-redmi-note-13-pro-plus",
-    "price": 159000,
-    "title": "Xiaomi Redmi Note 13 Pro +",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-13-pro-plus",
-    "image": null,
-    "storage": 512,
-    "color": "Purple",
     "inStock": true,
     "ram": null,
     "shop": "planet3d"
