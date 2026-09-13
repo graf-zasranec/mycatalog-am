@@ -1028,9 +1028,22 @@ for (const key of names) {
     const k = [o.id, o.storage ?? '?', o.color ?? '?'].join('|');
     if (!best.has(k) || o.price < best.get(k).price) best.set(k, o);
   }
+  // An adapter returning nothing is not the same as a shop having nothing in stock. A WAF page,
+  // a changed layout or a redirect all parse to zero offers WITHOUT throwing, and since this run
+  // has already dropped the shop's previous rows, that silently deletes every price it had. It
+  // is how the nightly job published 1165 offers over 11 shops on the same day a local run found
+  // 1482 over 13. Yesterday's price is stale; no price at all is worse.
+  const had = Object.values(prev.offers || {}).flat().filter(o => o.shop === key);
+  if (!best.size && had.length) {
+    for (const o of had) (offers[o.id] ||= []).push(o);
+    console.log(`parsed 0 - kept ${had.length} offer(s) from the previous run`);
+    report.push({ shop: key, offers: had.length, models: new Set(had.map(o => o.id)).size, stale: true });
+    continue;
+  }
   for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key });
   const models = new Set([...best.values()].map(o => o.id));
-  console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (dropped ? ` (${dropped} implausible dropped)` : ''));
+  const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
+  console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (dropped ? ` (${dropped} implausible dropped)` : '') + collapse);
   report.push({ shop: key, offers: best.size, models: models.size });
 }
 
