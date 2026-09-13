@@ -129,6 +129,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cmpbtn.ghost{border-color:var(--line2);color:var(--body)}
 .cmpbtn.ghost:hover{background:var(--surface2);color:var(--text);border-color:var(--text)}
 .cmpbtn:hover{background:var(--text);color:var(--bg)}
+/* A toast already says what happened, but the badge is the thing being watched. */
+@keyframes cmppop{0%{transform:scale(1)}32%{transform:scale(1.45)}100%{transform:scale(1)}}
+.cmpbtn .c.pop{animation:cmppop .42s cubic-bezier(.2,.9,.3,1)}
 .cmpbtn .c{min-width:20px;height:20px;padding:0 6px;border-radius:var(--pill);background:var(--brand);color:#fff;
   font-size:11.5px;font-weight:700;display:grid;place-items:center}
 .cmpbtn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
@@ -304,7 +307,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 .note{font-size:0.8125rem;color:var(--muted);margin-top:12px}
 .save{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--brand);margin-top:6px}
 .chip{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 8px 0 13px;border-radius:999px;
-  background:var(--brand-soft);color:var(--brand);border:0;font-size:0.8125rem;font-weight:600;cursor:pointer}
+  background:var(--brand-soft);color:var(--brand);border:0;font-size:0.8125rem;font-weight:600;cursor:pointer;
+  /* a chip that disappears in one frame makes the grid below it jump for no visible reason.
+     Collapsing its width first makes the reflow look caused. max-width, not width: the chip is
+     inline-flex and sized by its own text. */
+  max-width:320px;overflow:hidden;white-space:nowrap;
+  transition:opacity .18s ease,max-width .24s cubic-bezier(.4,0,.2,1),padding .24s,margin .24s}
+.chip.gone{opacity:0;max-width:0;padding-left:0;padding-right:0;margin-right:-9px}
 .chip span{font-size:15px;line-height:1;opacity:.65}
 .chip:hover x{opacity:1}
 .chip.clear{background:none;color:var(--muted);padding:0 12px}
@@ -324,7 +333,12 @@ button,input,select,textarea{font:inherit;color:inherit}
    chip set the floor for its whole column and push the grid off the screen. */
 .pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:12px;min-width:0;
   display:flex;flex-direction:column;position:relative;transition:box-shadow .16s ease,transform .16s ease,border-color .16s}
-.pcard:hover{border-color:var(--text);box-shadow:none;transform:none}
+/* Hover used to change a border and nothing else. Lifting the card and deepening its shadow
+   says "this one is under your hand", and the script advances the colour crossfade at the same
+   moment, so hovering a row reads as browsing rather than as pointing. */
+.pcard:hover{border-color:var(--line2);box-shadow:var(--shadow-m);transform:translateY(-3px)}
+/* a finger is not a pointer: on touch the lift would stick after the tap */
+@media (hover:none){.pcard:hover{transform:none;box-shadow:var(--shadow-s);border-color:var(--text)}}
 .pshot{position:relative;background:var(--shot);border-radius:var(--r-md);height:190px;display:block;padding:14px;overflow:hidden}
 @media (max-width:520px){.pshot{height:140px;padding:10px}}
 .fav{position:absolute;top:7px;right:7px;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);
@@ -370,8 +384,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 .panel-c h3 i{width:7px;height:7px;border-radius:2px;background:var(--brand);display:block}
 .kv{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:0.9375rem;align-items:baseline}
 .kv:last-child{border-bottom:0}
-.kv dt{color:var(--muted);flex:none;width:44%;font-size:0.875rem}
-.kv dd{margin:0;font-weight:600;text-align:right;flex:1}
+/* A hard 44% column is narrower than a single Armenian word: "հաճախականություն" alone is wider
+   than 118px, so the label ran out of its own box. The label takes the room it needs, gives the
+   rest back when it is short, and breaks the word when even that is not enough. */
+.kv dt{color:var(--muted);flex:1 1 44%;min-width:0;overflow-wrap:anywhere;font-size:0.875rem}
+.kv dd{margin:0;font-weight:600;text-align:right;flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
 .simrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:14px}
 .sim{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:12px;display:flex;
   align-items:center;gap:12px;transition:border-color .15s,box-shadow .15s}

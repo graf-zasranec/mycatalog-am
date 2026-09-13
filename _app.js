@@ -372,7 +372,7 @@ function paintChrome() {
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}</a>`;
   $('#hdrCmpLbl').textContent = t('nav.compare');
   $('#hdrConstructLbl').textContent = t('construct.title');
-  $('#hdrCmpN').textContent = st.cmp.length;
+  paintCmpCount();
   $('#foot').innerHTML = `<b>MyCatalog</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
@@ -380,8 +380,23 @@ function paintChrome() {
 // of the same list pinned over the page was doing nothing but covering the last row. What is
 // kept is the count in the header, the dimming of cards that cannot join, and the one message
 // that has to be said out loud when a pick is refused.
+// The badge is the thing being watched when a product is added, and it was changing silently -
+// the toast said what happened somewhere else on the page. It pops only when the count GOES UP,
+// so removing one, or a plain re-render, stays quiet.
+function paintCmpCount() {
+  const el = $('#hdrCmpN');
+  if (!el) return;
+  const was = +el.textContent || 0;
+  el.textContent = st.cmp.length;
+  if (st.cmp.length <= was) return;
+  el.classList.remove('pop');
+  void el.offsetWidth;          // restart the animation rather than let it be ignored
+  el.classList.add('pop');
+  // drop the class once it has played, so the element does not carry a spent state around
+  el.addEventListener('animationend', () => el.classList.remove('pop'), { once: true });
+}
 function paintTray() {
-  $('#hdrCmpN').textContent = st.cmp.length;
+  paintCmpCount();
   const lock = st.cmp.length ? catOf(byId(st.cmp[0])) : '';
   $$('[data-cat][data-cmp]').forEach(b =>
     b.classList.toggle('off', !!lock && b.dataset.cat !== lock));
@@ -793,19 +808,35 @@ setInterval(() => {
     // first sight of a card: give it a random moment rather than the next tick
     if (!el._cycDue) { el._cycDue = cycDue(); continue; }
     if (now < el._cycDue) continue;
-    el._cycDue = cycDue();
-    const shots = cycShots(el.dataset.cyc);
-    const im = el.querySelectorAll('img');
-    if (shots.length < 2 || im.length < 2) continue;
-    const cur = im[0].classList.contains('on') ? im[0] : im[1];
-    const nxt = cur === im[0] ? im[1] : im[0];
-    const i = (+el.dataset.cycI || 0) + 1;
-    el.dataset.cycI = i;
-    nxt.src = shots[i % shots.length];
-    nxt.classList.add('on');
-    cur.classList.remove('on');
+    cycStep(el);
   }
 }, 500);
+// One step of a card's colour crossfade. The timer calls it on its own beat; hovering a card
+// calls it at once, so the pointer takes the wheel from the timer for as long as it is there.
+function cycStep(el) {
+  el._cycDue = cycDue();
+  const shots = cycShots(el.dataset.cyc);
+  const im = el.querySelectorAll('img');
+  if (shots.length < 2 || im.length < 2) return;
+  const cur = im[0].classList.contains('on') ? im[0] : im[1];
+  const nxt = cur === im[0] ? im[1] : im[0];
+  const i = (+el.dataset.cycI || 0) + 1;
+  el.dataset.cycI = i;
+  nxt.src = shots[i % shots.length];
+  nxt.classList.add('on');
+  cur.classList.remove('on');
+}
+// pointerover bubbles, so one listener covers every card the grid ever renders. relatedTarget
+// tells a real entry from a move between two children of the same card.
+document.addEventListener('pointerover', e => {
+  if (!e.target.closest) return;
+  // the whole card is the hover target, not just the photo: the pointer usually arrives over the
+  // name or the price, and the photo is what should answer
+  const card = e.target.closest('.pcard');
+  if (!card || (e.relatedTarget && card.contains(e.relatedTarget))) return;
+  const cyc = card.querySelector('[data-cyc]');
+  if (cyc) cycStep(cyc);
+});
 
 let SEL = { id: null, color: null, storage: null, ram: null };
 function initSel(p) {
@@ -1379,7 +1410,12 @@ document.addEventListener('click', e => {
     else if (k === 'scr') st.scr = '';
     else st[k] = (k === 'g5' || k === 'nfc') ? false : 0;
     if (location.hash === '#/construct') { save(); $('#main').innerHTML = constructView(); return; }
-    refresh(); return;
+    // Let the chip collapse before the grid moves underneath it, so the reflow reads as caused
+    // by the dismissal rather than as the page jumping. Reduced motion skips the wait entirely.
+    const slow = k !== 'all' && rm.classList.contains('chip')
+      && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (slow) { rm.classList.add('gone'); setTimeout(refresh, 240); } else refresh();
+    return;
   }
   const clr = e.target.closest('[data-act="clearcmp"]');
   if (clr) { st.cmp = []; save(); paintTray(); render(); return; }
