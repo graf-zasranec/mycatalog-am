@@ -921,13 +921,29 @@ function cycStep(el) {
   const shots = cycShots(el.dataset.cyc);
   const im = el.querySelectorAll('img');
   if (shots.length < 2 || im.length < 2) return;
+  if (el._cycBusy) return;                     // a step already waiting on its image
   const cur = im[0].classList.contains('on') ? im[0] : im[1];
   const nxt = cur === im[0] ? im[1] : im[0];
   const i = (+el.dataset.cycI || 0) + 1;
-  el.dataset.cycI = i;
-  nxt.src = shots[i % shots.length];
-  nxt.classList.add('on');
-  cur.classList.remove('on');
+  const src = shots[i % shots.length];
+  // Fade to it only once it can actually be painted. Setting src and adding .on in the same
+  // breath showed an EMPTY card for as long as the file took to arrive - the photo appeared
+  // only when a hover stepped it on to one already in cache, which is exactly what it looked
+  // like from the outside. nxt is opacity 0 while it loads, so nothing flickers.
+  const show = () => {
+    el._cycBusy = false;
+    el.dataset.cycI = i;
+    nxt.classList.add('on');
+    cur.classList.remove('on');
+  };
+  el._cycBusy = true;
+  nxt.src = src;
+  if (nxt.decode) nxt.decode().then(show, () => { el._cycBusy = false; });
+  else if (nxt.complete && nxt.naturalWidth) show();
+  else {
+    nxt.onload = show;
+    nxt.onerror = () => { el._cycBusy = false; };   // leave the photo that is already up
+  }
 }
 // pointerover bubbles, so one listener covers every card the grid ever renders. relatedTarget
 // tells a real entry from a move between two children of the same card.
