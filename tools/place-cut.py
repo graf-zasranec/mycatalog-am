@@ -1,6 +1,6 @@
 # Places an ALREADY-TRANSPARENT source straight into images/cut/, skipping rembg.
 #
-#   python tools/place-cut.py <product-id> <file.png> [--white]
+#   python tools/place-cut.py <product-id> <file.png> [--white|--flood]
 #
 # Some shops publish the cutout the catalogue wants: 3dplanet serves 1500px RGBA renders, ucom
 # serves the Yandex lamp as transparent PNG. Running a matting model over those is worse than
@@ -34,10 +34,38 @@ def alpha_from_white(a):
     return np.dstack([np.clip(rgb, 0, 255), al * 255]).astype(np.uint8)
 
 
+def alpha_by_flood(a, tol=18):
+    """Background is whatever is connected to the frame edge and the same colour as it.
+
+    Needed because the other two modes each fail on the Galaxy S26 Ultra press shot: --white
+    assumes the product is DARKER than the backdrop and this is a white phone on light grey, so
+    it erased the phone; and rembg finds the phone but deletes the S Pen leaning against it,
+    because a matting model keeps 'the subject' and the stylus is not it. A flood from the edge
+    has no opinion about what the product is, so everything in frame survives.
+    """
+    from scipy import ndimage
+    h, w, _ = a.shape
+    corners = np.array([a[0, 0], a[0, w - 1], a[h - 1, 0], a[h - 1, w - 1]], dtype=np.float32)
+    bg = corners.mean(axis=0)
+    flat = np.abs(a.astype(np.float32) - bg).max(axis=2) <= tol
+    lab, _ = ndimage.label(flat)
+    edge = set(lab[0, :]) | set(lab[-1, :]) | set(lab[:, 0]) | set(lab[:, -1])
+    edge.discard(0)
+    outside = np.isin(lab, list(edge))
+    al = (~outside).astype(np.float32)
+    al = ndimage.binary_closing(al > 0.5, np.ones((3, 3))).astype(np.float32)
+    al = ndimage.gaussian_filter(al, 0.7)                 # soften the stair-step edge
+    al3 = al[..., None]
+    rgb = np.where(al3 > 0.02, (a - (1 - al3) * bg) / np.maximum(al3, 0.02), a)
+    return np.dstack([np.clip(rgb, 0, 255), np.clip(al, 0, 1) * 255]).astype(np.uint8)
+
+
 def main():
     pid, src = sys.argv[1], sys.argv[2]
     im = Image.open(src)
-    if '--white' in sys.argv:
+    if '--flood' in sys.argv:
+        im = Image.fromarray(alpha_by_flood(np.array(im.convert('RGB')).astype(np.float32)), 'RGBA')
+    elif '--white' in sys.argv:
         im = Image.fromarray(alpha_from_white(np.array(im.convert('RGB')).astype(np.float32)), 'RGBA')
     else:
         im = im.convert('RGBA')

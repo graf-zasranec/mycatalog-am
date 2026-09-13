@@ -39,7 +39,7 @@ const X = {
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
-    warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', noSim: 'այս հեռախոսը չի աջակցում', preorder: 'Նախապատվեր', soonT: 'Շուտով'
+    warranty: 'Երաշխիք', variantUnknown: 'տարբերակը նշված չէ', noWarranty: 'չի հրապարակում', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
@@ -55,7 +55,7 @@ const X = {
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
-    warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', noSim: 'этот телефон не поддерживает', preorder: 'Предзаказ', soonT: 'Скоро'
+    warranty: 'Гарантия', variantUnknown: 'версия не указана', noWarranty: 'не публикует', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
@@ -71,7 +71,7 @@ const X = {
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
-    warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', noSim: 'this phone does not support it', preorder: 'Pre-order', soonT: 'Coming soon'
+    warranty: 'Warranty', variantUnknown: 'variant not stated', noWarranty: 'not published', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
   }
 };
 
@@ -881,14 +881,15 @@ function detailView(p) {
   // SIM over the counter, and a phone with no tray for it is a wasted trip. Struck through here
   // means "this phone does not have it", the same thing it means one row down.
   // Negated clauses are cut first, or "no eSIM in most markets" reads as eSIM support.
-  const simSpec = ((p.connectivity || {}).sim || '').toLowerCase().replace(/no (physical sim|esim)[^,;)]*/g, '');
-  const simOpts = /sim/.test(simSpec)
-    ? [['Nano-SIM', /nano/.test(simSpec)], ['eSIM', /esim/.test(simSpec)]] : [];
-  // Only a picker when a shop actually sells BOTH and charges differently for them. Everywhere
-  // else there is nothing to choose and buttons would be a lie, so it stays a stated fact.
+  // SIM appears ONLY when a shop sells both builds and charges differently for them - the
+  // iPhone 17 and 18 Pro families, where the tray costs 80,000 more. A phone that comes one way
+  // has nothing to choose, and a row of chips you cannot act on is noise; the spec table below
+  // already says which SIMs it takes.
   const simAll = offersFor(p);
-  const simPick = simOpts.length === 2 && simOpts[0][1] && simOpts[1][1]
+  const simPick = /nano/.test(((p.connectivity || {}).sim || '').toLowerCase())
+    && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
     && simAll.some(o => o.esim) && simAll.some(o => !o.esim);
+  const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
   const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
   const sim = DATA.filter(q => q.id !== p.id).sort((a, b) =>
@@ -931,10 +932,8 @@ function detailView(p) {
           ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
-            <div class="bs">${simPick
-              ? simOpts.map(([n]) => { const want = n === 'eSIM';
-                  return `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`; }).join('')
-              : simOpts.map(([n, ok]) => `<span class="${ok ? '' : 'na'}"${ok ? '' : ` title="${esc(x('noSim'))}"`}>${n}</span>`).join('')}</div></div>` : ''}
+            <div class="bs">${simOpts.map(([n, want]) =>
+              `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`).join('')}</div></div>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}</span>
             <b class="num">${money(shownPrice)} ֏</b>
