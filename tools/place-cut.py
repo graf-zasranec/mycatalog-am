@@ -6,7 +6,14 @@
 # serves the Yandex lamp as transparent PNG. Running a matting model over those is worse than
 # useless - rembg deleted the Dyson Airwrap's styler wand twice (pale pink AND dark plum, so it
 # is not contrast: it reads a long thin object as not-the-subject) and left the kit without the
-# product in it. --white cuts a product-on-pure-white source by luminance instead, which is what
+# product in it.
+#
+# --white is ONLY for a DARK product on a WHITE backdrop. It has no idea what the object is, so a
+# WHITE product (JBL Tune 680NC, Audio-Technica ATH-S220BT) comes out half transparent, and a
+# source shot on BLACK (Sony WF-C710N) keeps the whole backdrop as a solid rectangle. Both of
+# those want tools/cutout.py and its matting model instead.
+#
+# --white cuts a product-on-pure-white source by luminance instead, which is what
 # the Airwrap needed.
 import sys
 import numpy as np
