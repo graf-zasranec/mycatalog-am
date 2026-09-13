@@ -39,22 +39,14 @@ def check(path: Path):
     if max(w, h) < 600:
         bad.append(f'canvas only {w}x{h} - the source was too small to fill 1200px')
 
-    # A near-white patch ringed by product that is NOT near-white is backdrop the model kept.
-    # The ring test is what keeps a white phone or a white watch face from being flagged.
-    white = body & (rgb.min(axis=2) > 228)
-    lab, _ = ndimage.label(white)
-    specks = 0
-    for i, sz in enumerate(np.bincount(lab.ravel())):
-        if i == 0 or sz < 25:
-            continue
-        m = lab == i
-        if m[0].any() or m[-1].any() or m[:, 0].any() or m[:, -1].any():
-            continue
-        ring = ndimage.binary_dilation(m, iterations=2) & ~m
-        if ring.any() and body[ring].mean() > 0.9 and (rgb[ring].min(axis=1) > 228).mean() < 0.4:
-            specks += sz
-    if specks > 400:
-        bad.append(f'{specks}px of white backdrop left inside the product')
+    # There is deliberately NO rule here for white specks left inside a product, though that is
+    # the fault that started this file. Four rules were tried and all of them fail, because a
+    # speck of studio backdrop and a real white part of a product are the same pixels: pure,
+    # flat, enclosed by darker product. A white watch dial, the numerals on a black face, the
+    # inside of an AirPods case and a blob of trapped backdrop score identically. The last
+    # attempt flagged 200 of 335 cutouts, nearly all of them correct images.
+    # Use --sheet instead: it lays the cutouts over magenta, where a leftover speck is instantly
+    # obvious to the eye and a white product plainly is not. That is what caught the Galaxy Watch.
 
     # Half-transparent edge pixels should carry the product's colour. If they are far brighter,
     # they are still blended with the studio and will read as a halo on a dark page.
@@ -81,11 +73,30 @@ def check(path: Path):
     return bad
 
 
+def sheet(files, out):
+    """Lays the cutouts over magenta. Any studio backdrop still stuck to a product shows up as a
+    white patch where magenta should be - the one test for that which does not cry wolf."""
+    from PIL import Image as I
+    S, cols = 300, min(6, len(files))
+    rows = (len(files) + cols - 1) // cols
+    sh = I.new('RGB', (S * cols, S * rows), (255, 0, 170))
+    for n, f in enumerate(files):
+        im = I.open(CUT / f).convert('RGBA').resize((S, S), I.LANCZOS)
+        tile = I.new('RGBA', (S, S), (255, 0, 170, 255))
+        tile.alpha_composite(im)
+        sh.paste(tile.convert('RGB'), ((n % cols) * S, (n // cols) * S))
+    sh.save(out)
+    print(f'contact sheet: {out}  ({len(files)} cutouts over magenta - look for white)')
+
+
 def main():
-    want = sys.argv[1:]
+    want = [a for a in sys.argv[1:] if not a.startswith('-')]
     files = sorted(f for f in os.listdir(CUT) if f.endswith('.webp'))
     if want:
         files = [f for f in files if any(f.startswith(x) for x in want)]
+    if '--sheet' in sys.argv:
+        sheet(files[:36], ROOT / 'imgcheck-sheet.png')
+        return 0
     flagged = 0
     for f in files:
         bad = check(CUT / f)
