@@ -34,7 +34,11 @@ const mainShots = new Set(cuts.filter(f => f.endsWith('__main.webp')).map(f => f
 const colourShots = cuts.filter(f => f.includes('__') && !f.endsWith('__main.webp')).length;
 
 /* ---------- the doubts ---------- */
-const doubts = { unverifiable: [], hand: [], single: [], none: [], outlier: [], unstated: [], stale: [] };
+const doubts = { unverifiable: [], hand: [], single: [], none: [], outlier: [], unstated: [], stale: [], listing: [] };
+// "Go to shop" has to land on the product. These land on a category page, where the visitor has
+// to find the thing again themselves and the price on our side cannot be rechecked against
+// anything in particular.
+const LISTING = /\/(category|collection|promo)\/|\/(iphones|smartphones|speakers|tablets|watches|headphones-and-headsets)\.html$/i;
 const med = a => { const v = [...a].sort((x, y) => x - y); return v[v.length >> 1]; };
 
 for (const p of DATA) {
@@ -64,6 +68,7 @@ for (const p of DATA) {
 for (const o of all) {
   const p = byId(o.id);
   const row = { id: o.id, name: p ? name(p) : o.id, shop: o.shop, price: o.price, title: o.title, url: o.url };
+  if (LISTING.test(o.url)) doubts.listing.push(row);
   if (blockedShop(o.shop)) doubts.unverifiable.push(row);
   else if (o.seeded) doubts.hand.push(row);
   else if (o.seen && daysAgo(o.seen) > 14) doubts.stale.push({ ...row, seen: o.seen, days: daysAgo(o.seen) });
@@ -115,6 +120,8 @@ if (process.argv.includes('--doubts')) {
   for (const r of doubts.outlier) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)} vs ${r.median} (${r.off}% off)  ${r.name} ${r.size}`);
   title('Price with no capacity stated, on a product sold in several', doubts.unstated.length);
   for (const r of doubts.unstated) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)}  ${r.name}`);
+  title('The link lands on a category page, not on the product', doubts.listing.length);
+  for (const r of doubts.listing) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)}  ${r.name}  ${r.url}`);
   title('Last read more than a fortnight ago', doubts.stale.length);
   for (const r of doubts.stale) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)}  ${r.name}  (${r.days} days)`);
 }

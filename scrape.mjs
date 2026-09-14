@@ -143,7 +143,7 @@ function matchPhone(text) {
   const base = norm(text);
   for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2')])) {
     const id = matchIn(' ' + v + ' ');
-    if (id) return id;
+    if (id) return capacityFits(id, text) ? id : null;
   }
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
   // title, so a title wins when both readings of the same item miss.
@@ -151,6 +151,16 @@ function matchPhone(text) {
     (MISSED.get(CURSHOP) || MISSED.set(CURSHOP, new Map()).get(CURSHOP)).set(norm(text), String(text).trim());
   }
   return null;
+}
+// A pair of earbuds is never sold as "8GB/256GB". Vega listed a POCO C85 phone bundled with
+// Redmi Buds 6 Active - "...poco-c85-8gb-256gb-green-plus-redmi-buds-6-active..." - and the buds
+// in the slug won the match, so a phone-and-buds bundle became the cheapest Xiaomi Buds 6 in the
+// country at 62,900 against a real 111,900. The shop's own words settle it: a product with no
+// storage to choose cannot be the thing a gigabyte figure belongs to.
+const STORELESS = new Set(phones.filter(p => !(p.variants || []).some(v => v.storage != null)).map(p => p.id));
+function capacityFits(id, text) {
+  if (!STORELESS.has(id)) return true;
+  return !capacitiesOf(text).some(c => c >= 32);
 }
 function matchIn(h) {
   for (const k of KEYS) {
@@ -405,6 +415,9 @@ if (process.argv[2] === '--selftest') {
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
+    // a phone sold with earbuds in the box is neither product's price
+    [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
+    ['xiaomi-buds-6', 'Xiaomi Buds 6'],
     [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
     [null, 'https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/'],
     ['xiaomi-17-pro-max', 'https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black'],
