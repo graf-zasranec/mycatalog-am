@@ -34,6 +34,7 @@ const X = {
     tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
     any: 'Բոլորը', min: 'նվազ.', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
     dS: 'օ', hS: 'ժ', mS: 'ր',
+    share: 'Կիսվել', shared: 'Պատճենվեց',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
@@ -56,6 +57,7 @@ const X = {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
     any: 'Все', min: 'от', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
     dS: 'д', hS: 'ч', mS: 'м',
+    share: 'Поделиться', shared: 'Скопировано',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
@@ -78,6 +80,7 @@ const X = {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
     any: 'All', min: 'from', newBadge: 'New', view: 'View', allFilters: 'All filters',
     dS: 'd', hS: 'h', mS: 'm',
+    share: 'Share', shared: 'Link copied',
     unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
@@ -543,6 +546,12 @@ const unsureRow = (p, key) => {
   const u = p.unsure || [];
   return u.includes(f) || u.includes(f.split('.')[0]);
 };
+
+// What the address bar holds is #/p/<id>, and a fragment never reaches a server: paste one into
+// Telegram and no scraper can know which product it names, so no preview comes back. build.mjs
+// writes a real page per product at p/<id>/ carrying its title, price and picture. This is the
+// url the share button hands out - the same product, previewable.
+const shareUrl = id => location.href.split('#')[0].replace(/index\.html$/, '') + 'p/' + id + '/';
 
 /* ================= chrome ================= */
 const ICON_CHEV = '<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
@@ -1357,6 +1366,7 @@ function detailView(p) {
           <div class="pcta">
             <a class="btn" href="#buy">${esc(x('offersTitle'))}</a>
             <button class="btn ghost" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
+            <button class="btn ghost" data-share="${esc(p.id)}">${esc(x('share'))}</button>
           </div>
         </div>
       </div>
@@ -1871,6 +1881,19 @@ document.addEventListener('click', e => {
     e.preventDefault();
     const id = fav.dataset.cmp, wasIn = st.cmp.includes(id);
     if (toggleCmp(id) && wasIn && location.hash === '#/compare') render();
+    return;
+  }
+  const sh = e.target.closest('[data-share]');
+  if (sh) {
+    const id = sh.dataset.share, url = shareUrl(id), nm = fullName(byId(id));
+    // navigator.share opens the phone's own sheet, which is how a link actually gets into
+    // Telegram or WhatsApp. Everywhere else, and if the sheet is dismissed, copy it instead.
+    const copy = () => navigator.clipboard?.writeText(url).then(() => {
+      const was = sh.textContent;
+      sh.textContent = x('shared');
+      setTimeout(() => { sh.textContent = was; }, 1600);
+    }, () => { });
+    if (navigator.share) navigator.share({ title: nm, url }).catch(copy); else copy();
     return;
   }
   const cb = e.target.closest('[data-cmp-btn]');

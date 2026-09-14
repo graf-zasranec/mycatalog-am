@@ -304,9 +304,78 @@ fs.writeFileSync('robots.txt', `User-agent: *
 Allow: /
 Sitemap: ${SITE}sitemap.xml
 `);
+// One shareable page per product. Paste a #/p/... link into Telegram and nothing comes back:
+// the fragment is never sent to the server, so no scraper can know which product it names. These
+// are real urls with the product's own title, price and picture in the head, and a refresh that
+// carries a person straight into the catalogue. The body is what a crawler and a reader with no
+// JavaScript get, so it is not an empty doorway.
+//
+// It also gives the site 198 indexable urls where the sitemap could only ever list one.
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const nameOf = p => p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name;
+const amd = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0') + '\u00a0\u058f';
+const shopsOf = p => new Set(((PRICES.offers && PRICES.offers[p.id]) || []).map(o => o.shop)).size;
+// Armenian plural is the bare noun after any number, so one form is correct for all of them.
+const DESC = p => {
+  const n = shopsOf(p);
+  return n
+    ? `\u0533\u056b\u0576\u0568\u055d ${amd(bestOf(p))}-\u056b\u0581\u055d ${n} \u056d\u0561\u0576\u0578\u0582\u0569\u056b \u0563\u0576\u0565\u0580\u056b \u0570\u0561\u0574\u0565\u0574\u0561\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576 MyCatalog-\u0578\u0582\u0574\u0589`
+    : `\u0531\u0575\u057d \u057a\u0561\u0570\u056b\u0576 \u0570\u0561\u0575\u056f\u0561\u056f\u0561\u0576 \u056d\u0561\u0576\u0578\u0582\u0569\u0576\u0565\u0580\u0578\u0582\u0574 \u0561\u057c\u056f\u0561 \u0579\u0567\u0589`;
+};
+
+let shared = 0;
+for (const p of phones) {
+  const card = `images/social/${p.id}.jpg`;
+  const img = SITE + (fs.existsSync(card) ? card : SEO.img);
+  const url = `${SITE}p/${p.id}/`;
+  const title = `${nameOf(p)} \u2014 \u0563\u056b\u0576\u0568 \u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576\u0578\u0582\u0574 | MyCatalog`;
+  const ld = { '@context': 'https://schema.org', '@type': 'Product', name: nameOf(p),
+    brand: { '@type': 'Brand', name: p.brand }, category: p.category || 'phone',
+    image: img, url, offers: offerOf(p) };
+  const page = `<!doctype html>
+<html lang="hy"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="refresh" content="0;url=../../#/p/${p.id}">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(DESC(p))}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MyCatalog">
+<meta property="og:locale" content="hy_AM">
+<meta property="og:title" content="${esc(nameOf(p))}">
+<meta property="og:description" content="${esc(DESC(p))}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(nameOf(p))}">
+<meta name="twitter:description" content="${esc(DESC(p))}">
+<meta name="twitter:image" content="${img}">
+<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
+<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
+display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
+img{max-width:min(420px,100%);height:auto}h1{font-size:22px;margin:16px 0 4px}
+p{margin:0 0 16px;color:#4A5262}a{color:#9E2B25}</style>
+</head><body><div>
+<img src="../../images/social/${p.id}.jpg" alt="${esc(nameOf(p))}" width="1200" height="630">
+<h1>${esc(nameOf(p))}</h1>
+<p>${esc(DESC(p))}</p>
+<a href="../../#/p/${p.id}">\u0532\u0561\u0581\u0565\u056c \u056f\u0561\u057f\u0561\u056c\u0578\u0563\u0578\u0582\u0574</a>
+</div></body></html>
+`;
+  fs.mkdirSync(`p/${p.id}`, { recursive: true });
+  fs.writeFileSync(`p/${p.id}/index.html`, page);
+  shared++;
+}
+console.log(`${shared} share page(s) under p/`);
+
+const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>${SITE}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+ <url><loc>${SITE}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+${phones.map(p => ` <url><loc>${SITE}p/${p.id}/</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>`).join('\n')}
 </urlset>
 `);
 fs.writeFileSync('index.html', build({ inline: false, standalone: true }));
