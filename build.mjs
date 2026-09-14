@@ -80,7 +80,9 @@ function webpWidth(file) {
 const cutW = {};
 for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { cutW[f] = 0; } }
 
-function cutMap(inline) {
+// small: the 600 px copy where one exists. The product page wants the full-size colour shot;
+// the card cycling through the same colours in a 123 px box does not.
+function cutMap(inline, small) {
   const m = {};
   for (const f of cutFiles) {
     const [id, rest] = f.replace(/\.webp$/, '').split('__');
@@ -89,9 +91,10 @@ function cutMap(inline) {
     // shot's width, which punished the good main shots: the Fold 8's 719px colours were thrown
     // out against its 1200px main while the Ultra's 937px ones squeaked past the same ratio.
     if (rest !== 'main' && cutW[f] < 600) continue;
+    const thumb = `images/thumb/${f}`;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
-      : `${CUT}/${f}`;
+      : (small && fs.existsSync(thumb) ? thumb : `${CUT}/${f}`);
   }
   return m;
 }
@@ -251,20 +254,31 @@ function splitShell(shell) {
 
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
+  // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
+  const colorThumbs = inline ? {} : cutMap(false, true);
   // main shot: the transparent cutout when we have one, else the original photo
-  const main = {};
-  for (const p of phones) {
+  // Two sizes of the same photograph. A card draws it into a box 123 px wide on a phone and was
+  // being handed the 1200 px cutout the product page uses - 829 KB of images for thirteen
+  // thumbnails. images/thumb holds a 600 px copy, which still clears a retina desktop card, and
+  // the full-size file is left to the two places that fill the screen with it.
+  const THUMB = 'images/thumb';
+  const src = (id, small) => {
+    const t = `${THUMB}/${id}__main.webp`;
+    return small && fs.existsSync(t) ? t : `${CUT}/${id}__main.webp`;
+  };
+  const at = f => inline ? 'data:image/webp;base64,' + fs.readFileSync(f).toString('base64') : f;
+  const main = {}, thumb = {};
+  for (const p of [...phones, ...(COMING.items || [])]) {
     const cut = `${CUT}/${p.id}__main.webp`;
-    if (fs.existsSync(cut)) {
-      main[p.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
-    } else console.warn('  ! missing image for', p.id);
+    if (!fs.existsSync(cut)) { console.warn('  ! missing image for', p.id); continue; }
+    main[p.id] = at(cut);
+    // The embedded build carries every photo as a data URI. Inlining a second copy of all 198
+    // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
+    // THUMB() falls through to IMG().
+    if (!inline) thumb[p.id] = src(p.id, true);
   }
-  for (const c of COMING.items || []) {
-    const cut = `${CUT}/${c.id}__main.webp`;
-    if (fs.existsSync(cut)) main[c.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
-    else console.warn('  ! missing image for', c.id, '(coming soon)');
-  }
-  const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
+  const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
+    + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
   const shell = seoTitle(rd('_shell.html'));
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
   let appJs = '\n'

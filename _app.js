@@ -16,6 +16,11 @@ const backLink = (href, label) =>
 // broken image reports, so every check that looks for one would flag it.
 const NOPHOTO = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxNCIgeT0iMTgiIHdpZHRoPSIzNiIgaGVpZ2h0PSIyOCIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==';
 const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
+// Every place that draws the photo small - cards, the savings strip, compare, the tray, the
+// suggestion rows. The two that fill the screen with it (the cover carousel and the product
+// page itself) keep IMG. Falls back to the full size when no thumbnail was made, which is what
+// happens for a shot already at or under 600 px.
+const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(id);
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
@@ -796,7 +801,7 @@ function card(p) {
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-      <img class="on" src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      <img class="on" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
       ${cycShots(p.id).length > 1 ? `<img alt="" aria-hidden="true" decoding="async" src="${BLANK}">` : ''}
     </div>
     <div class="pbody">
@@ -885,7 +890,7 @@ function mastHero() {
     ${sv.length ? `<section class="save-sec" id="savings">
       <div class="save-hd"><h2>${esc(x('savingsT'))}</h2><p>${esc(x('savingsS'))}</p></div>
       <div class="save-grid">${sv.map(r => `<a class="sv" href="#/p/${esc(r.p.id)}">
-        <span class="t"><img src="${IMG(r.p.id)}" alt="" loading="lazy"></span>
+        <span class="t"><img src="${THUMB(r.p.id)}" alt="" loading="lazy"></span>
         <span>
           <span class="nm">${esc(fullName(r.p))}${r.storage ? ` · ${esc(gb(r.storage, r.p.variantUnit))}` : ''}</span>
           <!-- The big number on a price-comparison site has to be a price. It used to be the
@@ -924,7 +929,7 @@ function soonHTML() {
     <div class="soon-hd"><span class="soon-tag">${esc(x('soonT'))}</span><h2>${esc(when)}</h2>${
       cd ? `<span class="soon-cd num" id="soon-cd" data-cd="${esc(C.date)}">${esc(cd)}</span>` : ''}</div>
     <div class="soon-grid">${items.map(c => `<a class="soon" href="${esc(safeHref(c.url))}" target="_blank" rel="noopener noreferrer">
-      <span class="t"><img src="${esc(IMG(c.id))}" alt="${esc(c.brand + ' ' + c.name)}" loading="lazy"></span>
+      <span class="t"><img src="${esc(THUMB(c.id))}" alt="${esc(c.brand + ' ' + c.name)}" loading="lazy"></span>
       <span>
         <span class="nm">${esc(c.brand)} ${esc(c.name)}</span>
         <span class="pr num">${esc(fromPrice(c.from))}</span>
@@ -1146,8 +1151,11 @@ const BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAA
 // if every frame is the same shape. A photo shot in the other orientation keeps its place on
 // the product page and loses only its turn here. See tools/pageonly.py.
 const SKIPCYC = (typeof PAGEONLY !== 'undefined' && PAGEONLY) || {};
+// The cycle runs inside a card, so it takes the 600 px copies. The product page keeps CIMG.
+const CTHUMB = (typeof COLORTHUMB !== 'undefined' && COLORTHUMB) || {};
 const cycShots = id => [...new Set(Object.entries(CIMG[id] || {})
-  .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k)).map(([, v]) => v))];
+  .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k))
+  .map(([k, v]) => (CTHUMB[id] && CTHUMB[id][k]) || v))];
 
 // Cards with more than one colour photo walk through them. One timer for the whole grid, and a
 // card only advances while it is on screen: crossfading rows nobody is looking at is wasted work
@@ -1372,7 +1380,7 @@ function detailView(p) {
 
     <h2 class="sh">${esc(t('detail.similar'))}</h2>
     <div class="simrow">${sim.map(sp => `<a class="sim" href="#/p/${esc(sp.id)}">
-      <span class="t"><img src="${IMG(sp.id)}" alt="" loading="lazy"></span>
+      <span class="t"><img src="${THUMB(sp.id)}" alt="" loading="lazy"></span>
       <span><b>${esc(fullName(sp))}</b><span class="num">${money(bestOf(sp))} ֏</span></span></a>`).join('')}</div>
   </div>`;
 }
@@ -1545,7 +1553,7 @@ function offersView(p) {
     <div class="navrow">${backLink('#/p/' + p.id, fullName(p))}
       <nav class="crumb"><span>${esc(x('allOffers'))}</span></nav></div>
     <div class="ofhead">
-      <span class="t"><img src="${IMG(p.id)}" alt="" loading="lazy"></span>
+      <span class="t"><img src="${THUMB(p.id)}" alt="" loading="lazy"></span>
       <div>
         <h1>${esc(fullName(p))}</h1>
         <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
@@ -1618,7 +1626,7 @@ function compareView() {
     </div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
-        ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+        ${ps.map(p => `<div class="c"><img src="${esc(THUMB(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
         ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(addLabel(ps[0]))}">
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
@@ -1639,7 +1647,7 @@ function compareView() {
         <div id="cmres" class="cmres"></div>
         <div class="cmnow"><span class="cmlbl">${esc(t('compare.in_list'))}</span>
           ${ps.map(p => `<div class="cmrow">
-            <img src="${esc(IMG(p.id))}" alt="" loading="lazy">
+            <img src="${esc(THUMB(p.id))}" alt="" loading="lazy">
             <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
             <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
           </div>`).join('')}
@@ -1668,7 +1676,7 @@ function paintCmpRes() {
   const box = $('#cmres'); if (!box) return;
   const list = cmpCandidates($('#cmq') ? $('#cmq').value : '');
   box.innerHTML = list.length ? list.map(p => `<button class="cmrow" data-add="${esc(p.id)}">
-      <img src="${esc(IMG(p.id))}" alt="" loading="lazy">
+      <img src="${esc(THUMB(p.id))}" alt="" loading="lazy">
       <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
     </button>`).join('') : `<p class="cmnone">${esc(x('emptyT'))}</p>`;
 }
@@ -1974,7 +1982,7 @@ function paintSuggest() {
     return;
   }
   box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
-      <img src="${esc(IMG(p.id))}" alt="" loading="lazy" decoding="async">
+      <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
       <span class="sg-n">${esc(fullName(p))}</span>
       <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
     + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
