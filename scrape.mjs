@@ -1237,17 +1237,19 @@ for (const key of names) {
   }
   // keep the cheapest offer per (phone, storage)
   const best = new Map();
-  let dropped = 0;
+  // Two different reasons, counted apart. A sold-out listing is perfectly plausible; calling it
+  // implausible in the log made a third of AllSell's catalogue look like a parsing fault.
+  let soldOut = 0, tooCheap = 0;
   for (const raw of got) {
     const o = enrich(raw);
     // A price on a sold-out page is not an offer anyone can take, so it has no business on a
     // price-comparison site. Only an explicit false counts - adapters that cannot read stock
     // leave it undefined, and dropping those would empty the catalogue.
-    if (o.inStock === false) { dropped++; continue; }
+    if (o.inStock === false) { soldOut++; continue; }
     // Catches accessories that do not use any of the words above: nothing legitimately sells
     // at under a third of the model's own reference price.
     const ref = (phoneById[o.id] || {}).priceAmd;
-    if (ref && o.price < ref * 0.3) { dropped++; continue; }
+    if (ref && o.price < ref * 0.3) { tooCheap++; continue; }
     const k = [o.id, o.storage ?? '?', o.color ?? '?'].join('|');
     if (!best.has(k) || o.price < best.get(k).price) best.set(k, o);
   }
@@ -1268,7 +1270,8 @@ for (const key of names) {
 for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, seen: TODAY });
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
-  console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (dropped ? ` (${dropped} implausible dropped)` : '') + collapse);
+  const why = [soldOut && `${soldOut} sold out`, tooCheap && `${tooCheap} too cheap to be the product`].filter(Boolean);
+  console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (why.length ? ` (${why.join(', ')})` : '') + collapse);
   report.push({ shop: key, offers: best.size, models: models.size });
 }
 
