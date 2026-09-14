@@ -831,9 +831,17 @@ a.store:hover .nm{color:var(--brand)}
 @media (max-width:600px){.ofl{width:100%}}
 
 /* stock status on each offer */
-.orow .ins,.orow .oos{display:block;font-style:normal;font-size:0.6875rem;font-weight:600;margin-top:2px}
+.orow .ins,.orow .oos,.orow .unk{display:block;font-style:normal;font-size:0.6875rem;font-weight:600;margin-top:2px}
 .orow .ins{color:var(--good)}
-.orow .oos{color:var(--muted)}
+/* Out of stock was muted grey - the quietest thing on the row, under a price you cannot buy.
+   It is the one fact that makes the rest of the row useless, so it is the loudest. */
+.orow .oos{display:inline-block;margin-top:4px;padding:2px 9px;border-radius:var(--pill);
+  background:var(--bad);color:#fff;font-size:0.75rem;font-weight:800;letter-spacing:.02em;
+  text-transform:uppercase}
+.orow .unk{color:var(--muted);font-weight:500}
+/* and the row itself steps back: a price nobody can take should not read as an offer */
+.orow:has(.oos){opacity:.62}
+.orow:has(.oos) .pr{text-decoration:line-through;text-decoration-thickness:2px}
 .hist .hh{fill:none;stroke:var(--apricot);stroke-width:1;stroke-dasharray:3 3;opacity:.75;vector-effect:non-scaling-stroke}
 
 /* return control */

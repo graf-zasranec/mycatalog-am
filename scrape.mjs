@@ -1193,7 +1193,7 @@ try {
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
-                color: r.color || undefined, url: r.url, inStock: true, seeded: true, esim: r.esim });
+                color: r.color || undefined, url: r.url, seeded: true, esim: r.esim });
     seeded++;
   }
   if (tagged) console.log(`${tagged} crawled offer(s) had their SIM build named by a hand row`);
