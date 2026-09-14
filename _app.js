@@ -807,6 +807,11 @@ function refresh() {
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
+  // The tab counts are taken within the active query, so they go stale the moment the query
+  // changes - clearing the search box left "All 3" sitting above 36 cards. Repaint them here,
+  // where every filter change already lands.
+  const tabs = $('.ctabs');
+  if (tabs) tabs.outerHTML = catTabs();
   syncFilters(); save();
   moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
   gridIn(box);

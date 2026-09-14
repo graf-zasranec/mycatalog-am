@@ -456,6 +456,13 @@ if (process.argv[2] === '--selftest') {
     }
   }
 
+  // a lone price far under what the other shops agree on is a misread, not a deal
+  const medCases = [[[100, 100, 100], 100], [[90, 100, 110], 100], [[40, 100, 100, 100], 100]];
+  for (const [arr, want] of medCases) {
+    const got = medianOf(arr);
+    if (got !== want) { bad++; console.log(`FAIL  median ${got} want ${want}`); }
+  }
+
   const buildCases = [
     [true, 'iPhone 17 Pro Max 512GB Silver Esim'], [true, 'E-Sim'],
     [false, '1 Սիմ քարտ + Esim'], [false, 'iphone-17-pro-max-512gb-sim-deep-blue'],
@@ -532,7 +539,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + buildCases.length + flipCases.length + capCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -1239,6 +1246,34 @@ for (const list of Object.values(offers)) {
 // So we drop the claim instead. Both rows keep their own price and their own page; they simply
 // stop asserting which build they are, the SIM picker does not appear, and nobody is shown a
 // price under the wrong button. Deleting is idempotent, which swapping was not.
+// One shop's price against every other shop's, which is a far better test of "is this real"
+// than the static reference price: that one passes anything above 30% of a spec-sheet figure,
+// and iBolit's iPhone 17 Pro Max 512 GB came back at 279 000 against a 668 900 median and sailed
+// through - then led "Where you save most" on the front page with a 390 000 saving that did not
+// exist. The shop's own page reads 625 000, so the crawl misread it. A price under half what
+// three or more shops agree the same capacity costs is a scrape error, not a bargain.
+let outliers = 0;
+for (const [id, list] of Object.entries(offers)) {
+  const byCap = new Map();
+  for (const o of list) {
+    const k = String(o.storage ?? 'base');
+    (byCap.get(k) || byCap.set(k, []).get(k)).push(o);
+  }
+  for (const group of byCap.values()) {
+    if (group.length < 3) continue;                 // too few to call anything a consensus
+    const floor = medianOf(group.map(o => o.price)) * 0.5;
+    for (const o of group) {
+      if (o.price >= floor) continue;
+      offers[id] = offers[id].filter(v => v !== o);
+      outliers++;
+      console.warn(`    ! ${id} ${o.shop} ${o.price} dropped: under half the ${Math.round(floor * 2)} median for this capacity`);
+    }
+  }
+}
+if (outliers) console.log(`${outliers} price(s) dropped as scrape errors`);
+
+function medianOf(a) { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; }
+
 let simDropped = 0;
 for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
 if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tray was priced at or below the eSIM)`);
