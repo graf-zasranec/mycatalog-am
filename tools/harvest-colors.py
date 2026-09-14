@@ -17,6 +17,10 @@ from PIL import Image
 from scrapling.fetchers import Fetcher
 
 ROOT = Path(__file__).resolve().parent.parent
+# Shop images already looked at and refused. Without this the same four came back every time the
+# harvest list was rebuilt - a POCO bundle filed as Xiaomi Buds 6 has now been rejected three
+# separate times. A judgement made by eye is worth keeping.
+REJECTS = json.loads((ROOT / 'data' / 'photo-rejects.json').read_text(encoding='utf8'))     if (ROOT / 'data' / 'photo-rejects.json').exists() else {}
 OUT = ROOT / 'images' / '_src'
 MIN = 600                     # the catalogue's floor; below it we would rather show nothing
 
@@ -63,6 +67,10 @@ def main():
             continue
         dest = OUT / f'{pid}__{slug(color)}.png'
         if dest.exists():
+            continue
+        bad = REJECTS.get(pid, {}).get(color)
+        if bad and bad.get('url') == url:
+            print(f'{pid} {color:22} {shop:12} refused earlier: {bad.get("why", "")}')
             continue
         b = biggest(url)
         if not b:

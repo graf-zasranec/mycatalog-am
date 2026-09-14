@@ -408,6 +408,7 @@ function paintChrome() {
   $('#srchLbl').textContent = t('nav.search_placeholder');
   $('#q').setAttribute('aria-label', t('nav.search_placeholder'));
   $('#q').placeholder = t('nav.search_placeholder');
+  const go = $('#qgo'); if (go) go.setAttribute('aria-label', t('nav.search_placeholder'));
   if ($('#q').value !== st.q) $('#q').value = st.q;
   const h = location.hash.replace(/^#/, '') || '/';
   $('#nav').innerHTML =
@@ -1177,7 +1178,13 @@ function docView(key, paras) {
   return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
     <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
     ${paras.map(p => `<p>${esc(t(key + '.' + p))}</p>`).join('')}
-    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? `<p><a href="mailto:${esc(t('contact.email'))}">${esc(t('contact.email'))}</a></p>` : ''}
+    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? (() => {
+      // The page invites people to write; it needs somewhere for them to write TO. An address
+      // starting with http is a link, anything else is an email - so swapping one for the other
+      // is a change to data/strings.json and nothing else.
+      const c = t('contact.email'), web = /^https?:\/\//i.test(c);
+      return `<p><a href="${esc(web ? safeHref(c) : 'mailto:' + c)}"${web ? ' target="_blank" rel="noopener noreferrer"' : ''}>${esc(c.replace(/^https?:\/\//, ''))}</a></p>`;
+    })() : ''}
     </article></div>`;
 }
 
@@ -1745,6 +1752,7 @@ function paintSuggest() {
   if (!list.length) {
     box.innerHTML = st.q.trim() ? `<p class="sg-none">${esc(x('emptyT'))}</p>` : '';
     box.hidden = !st.q.trim();
+    setExpanded(!box.hidden);
     return;
   }
   box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
@@ -1753,8 +1761,11 @@ function paintSuggest() {
       <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
     + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
   box.hidden = false;
+  setExpanded(true);
 }
-function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } }
+function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
+// the combobox has to SAY whether its list is open; it was announced closed the whole time
+function setExpanded(v) { const q = $('#q'); if (q) q.setAttribute('aria-expanded', v ? 'true' : 'false'); }
 // Enter, or the search button, is what opens the results page.
 function submitSearch() {
   closeSuggest();
