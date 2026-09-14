@@ -369,6 +369,24 @@ const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*
 
 // REDstore and 3DPlanet both publish a schema.org Product on the page, which is the price the
 // shop means rather than whatever number the markup happens to show. One reader serves both.
+// The cash price, read out of the product's own price block so a related item's price cannot
+// stand in for it. Returns 0 when the page does not state one.
+// Mobile Centre's cash price: the number after "Գին՝" inside this product's own block.
+function mcCash(block) {
+  // the listing closes the span between label and number ("<span>Գին՝ </span> 174,900դր.")
+  // while the product page runs them together. Allow either.
+  const m = block.match(/Գին՝\s*(?:<\/span>)?\s*([\d,  ]+)\s*դր/);
+  return m ? +m[1].replace(/[^0-9]/g, '') : 0;
+}
+
+function pixelCash(html) {
+  const at = html.indexOf('product-info-price');
+  if (at < 0) return 0;
+  const blk = html.slice(at, at + 500);
+  const m = blk.match(/class="cash-price[^"]*"[^>]*>[^<]*<b>\s*([\d,  ]+)/);
+  return m ? +m[1].replace(/[^0-9]/g, '') : 0;
+}
+
 const ldProduct = html => ldJson(html).flatMap(j => j['@graph'] || j).find(j => j && j['@type'] === 'Product');
 const ldOffer = p => { const o = p && p.offers; return Array.isArray(o) ? o[0] : o; };
 
@@ -463,6 +481,33 @@ if (process.argv[2] === '--selftest') {
     if (got !== want) { bad++; console.log(`FAIL  median ${got} want ${want}`); }
   }
 
+  // Pixel's own markup: the higher number is the instalment price, the lower one is the price
+  // Mobile Centre prints the instalment total in data-price and the real price after "Գին՝"
+  const mcCases = [
+    ['<a data-price="549900"> Գինս 519,900դր.', 0],
+    ['<a data-price="549900"> Գին՝ 519,900դր.', 519900],
+    ['<span style="x">Գին՝ </span> 174,900դր.', 174900],
+    ['<a data-price="549900">no cash price here</a>', 0],
+  ];
+  for (const [html, want] of mcCases) {
+    const got = mcCash(html);
+    if (got !== want) { bad++; console.log(`FAIL  mcCash=${got} want=${want}`); }
+  }
+
+  const pixCases = [
+    ['<div class="product-info-price"> <span class="mr5">Ապառիկ:</span> '
+     + '<span class="actual-price">129,000 Դրամ</span> '
+     + '<div class="cash-price pt10">Գինը: <b>119,000 Դրամ</b></div> </div>', 119000],
+    ['<div class="product-info-price"><span class="actual-price">45,900</span>'
+     + '<div class="cash-price"><b>42,900</b></div></div>', 42900],
+    ['<div class="product-info-price"><span class="actual-price">99,000</span></div>', 0],
+    ['no price block here', 0],
+  ];
+  for (const [html, want] of pixCases) {
+    const got = pixelCash(html);
+    if (got !== want) { bad++; console.log(`FAIL  pixelCash=${got} want=${want}`); }
+  }
+
   const buildCases = [
     [true, 'iPhone 17 Pro Max 512GB Silver Esim'], [true, 'E-Sim'],
     [false, '1 Սիմ քարտ + Esim'], [false, 'iphone-17-pro-max-512gb-sim-deep-blue'],
@@ -539,7 +584,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -676,9 +721,12 @@ const SHOPS = {
         for (const b of blocks) {
           const url = (b.match(/href="(https:\/\/mobilecentre\.am\/product\/[^"]+)"/) || [])[1];
           const title = clean((b.match(/<h3[^>]*>([\s\S]{2,120}?)<\/h3>/) || [])[1] || '');
-          // the credit-calculator link carries the price as a clean integer
-          const price = Number((b.match(/data-price="(\d+)"/) || [])[1])
-            || Number(((b.match(/Գին՝\s*<\/span>\s*([\d,]+)\s*դր/) || [])[1] || '').replace(/,/g, ''));
+          // Two numbers again. data-price belongs to the credit calculator and is the
+          // instalment total - the listing labels it "Ապառիկ գին". The price a buyer pays is
+          // the one after "Գին՝", and it is lower: 519 900 against 549 900 on the iPhone 16 Pro
+          // Max. The old fallback expected a </span> that is not in the markup, so it never
+          // matched and the instalment figure always won.
+          const price = mcCash(b) || Number((b.match(/data-price="(\d+)"/) || [])[1]);
           if (!url || !title || !price || !safeUrl(url)) continue;
           const id = matchPhone(title + ' ' + url);
           if (!id) continue;
@@ -758,7 +806,13 @@ const SHOPS = {
         const cols = (phoneById[id] || {}).colors;
         const v = pixelVariants(h, cols);
         const color = v.color || (shot ? colorFromImage(shot, cols) : null);
-        out.push({ id, price: Math.min(...prices),
+        // Pixel prints TWO numbers and the class names are backwards. .actual-price is labelled
+        // "Ապառիկ" - instalment - and is the higher one; the cash price a buyer actually pays is
+        // in .cash-price. PRODUCT_VARIANTS carries the instalment price too, so taking its
+        // minimum published an inflated figure for every Pixel offer: the Galaxy A37 read
+        // 129 000 against a shelf price of 119 000.
+        const cash = pixelCash(h);
+        out.push({ id, price: cash || Math.min(...prices),
           storage: storageOf(title) ?? storageOf(u) ?? v.storage, title, url: safe,
           image: shot && safeUrl(shot) ? shot : null, color, inStock: true });
       }
