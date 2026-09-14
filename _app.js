@@ -351,9 +351,9 @@ const FILT = {
 // items in view differ on it before it is drawn.
 const ASK = {
   phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'g5', 'nfc'],
-  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5'],
-  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr'],
-  desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr'],
+  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5', 'touch'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch'],
+  desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch'],
   console:    ['stor'],
   ereader:    ['stor', 'scr', 'water'],
   watch:      ['stor', 'scr', 'life', 'water'],
@@ -1420,6 +1420,8 @@ function constructView() {
   const fixed = [];
   if (st.cat) {
     for (const [key, lbl, get, fmt] of CQ) {
+      // the same rule the filter bar follows: a category is only asked what it can answer
+      if (!askable(key)) continue;
       const vals = [...new Set(pool.flatMap(get).filter(v => v != null && v > 0))].sort((a, b) => a - b);
       if (vals.length < 2) continue;
       questions += `<section class="cq"><h3>${esc(t(key === 'stor' && viewUnit() === 'mm' ? 'f.case_size' : lbl))}</h3><div class="cqrow">`
@@ -1427,14 +1429,14 @@ function constructView() {
         + vals.map(v => chip(key, v, x('min') + ' ' + fmt(v), String(st[key]) === String(v))).join('')
         + `</div></section>`;
     }
-    const sizes = [...new Set(pool.map(p => p.display && p.display.size).filter(v => v != null))].sort((a, b) => a - b);
+    const sizes = askable('scr') ? [...new Set(pool.map(p => p.display && p.display.size).filter(v => v != null))].sort((a, b) => a - b) : [];
     if (sizes.length > 1) {
       questions += `<section class="cq"><h3>${esc(t('filter.screen_size'))}</h3><div class="cqrow">`
         + chip('scrmin', 0, x('any'), !st.scrmin)
         + sizes.map(v => chip('scrmin', v, x('min') + ' ' + v + String.fromCharCode(8243), String(st.scrmin) === String(v))).join('')
         + `</div></section>`;
     }
-    const touches = [...new Set(pool.map(p => p.display && p.display.touch).filter(v => v != null))];
+    const touches = askable('touch') ? [...new Set(pool.map(p => p.display && p.display.touch).filter(v => v != null))] : [];
     if (touches.length > 1) {
       questions += `<section class="cq"><h3>${esc(t('f.touch'))}</h3><div class="cqrow">`
         + chip('touch', 0, x('any'), !st.touch)

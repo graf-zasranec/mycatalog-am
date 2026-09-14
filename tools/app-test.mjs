@@ -149,6 +149,10 @@ is(hasNone(barKeys(''), ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'cpu', 'gpu'
 is(barKeys('').includes('shop'), true, 'the shop filter applies everywhere');
 app.st = { ...app.st, cat: '', fopen: false };
 
+// Construct asks the same questions the bar does, so a watch is not asked about milliamp-hours
+is([app.askable('batt','watch'), app.askable('hz','watch'), app.askable('touch','laptop'), app.askable('touch','phone')],
+   [false, false, true, false], 'Construct and the filter bar agree on what a category can be asked');
+
 /* --- screen bands are cut from the category, not from phones --------------------------- */
 const pb = app.bandCuts('phone'), lb = app.bandCuts('laptop');
 is(pb[1] < 9 && lb[0] > 9, true, 'a laptop band is not a phone band');
