@@ -2,6 +2,7 @@
 //
 //   node scrape.mjs            all shops
 //   node scrape.mjs ispace     one shop
+//   node scrape.mjs vlv allsell   several
 //
 // Politeness / rules this respects:
 //   * list.am is EXCLUDED — its robots.txt has "User-agent: ClaudeBot / Disallow: /".
@@ -1154,8 +1155,12 @@ const SHOPS = {
 };
 
 /* ---------- run ---------- */
-const only = process.argv[2];
-const names = Object.keys(SHOPS).filter(k => only ? k === only : !SHOPS[k].disabled);
+// One shop or several: a whole run takes hours and the shops that matter for one question are
+// usually two or three of them.
+const picked = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const names = Object.keys(SHOPS).filter(k => picked.length ? picked.includes(k) : !SHOPS[k].disabled);
+const unknown = picked.filter(k => !SHOPS[k]);
+if (unknown.length) { console.error('no such shop: ' + unknown.join(', ')); process.exit(1); }
 
 // Running one shop must not throw away the others. Start from what is already on disk and
 // replace only the shops this run actually covers.
