@@ -2384,6 +2384,91 @@
   "category": "phone"
  },
  {
+  "id": "google-pixel-10",
+  "category": "phone",
+  "brand": "Google",
+  "name": "Pixel 10",
+  "aliases": [
+   "Google Pixel 10",
+   "Pixel 10"
+  ],
+  "tier": "upper-mid",
+  "released": "2025-08",
+  "priceAmd": 299000,
+  "priceAmdMax": 339000,
+  "popularity": 74,
+  "accent": "#4C6B8A",
+  "display": {
+   "size": 6.3,
+   "type": "Actua OLED",
+   "resolution": "2424x1080",
+   "refresh": 120,
+   "protection": "Gorilla Glass Victus 2"
+  },
+  "chipset": {
+   "name": "Google Tensor G5"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 128,
+    "priceAmd": 299000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 339000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "48MP, f/1.7, OIS",
+   "ultrawide": "13MP, f/2.2",
+   "telephoto": "10.8MP, 5x optical, OIS",
+   "front": "10.5MP"
+  },
+  "battery": {
+   "capacity": 4970,
+   "wired": 30,
+   "wireless": 15
+  },
+  "body": {
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "nfc": true,
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "6"
+  },
+  "cardSlot": false,
+  "os": "Android 16",
+  "colors": [
+   "Obsidian",
+   "Frost",
+   "Indigo",
+   "Lemongrass"
+  ],
+  "summaryEn": "The first plain Pixel with a telephoto camera, on the Tensor G5.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "display.type",
+   "display.protection",
+   "camera.main",
+   "camera.ultrawide",
+   "camera.telephoto",
+   "camera.front",
+   "battery.capacity",
+   "battery.wired",
+   "battery.wireless",
+   "connectivity.wifi",
+   "connectivity.bluetooth",
+   "colors"
+  ]
+ },
+ {
   "id": "samsung-galaxy-a36",
   "brand": "Samsung",
   "name": "Galaxy A36 5G",
@@ -4661,6 +4746,58 @@
   ]
  },
  {
+  "id": "lenovo-loq-15",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "LOQ 15IRX9",
+  "aliases": [
+   "Lenovo LOQ 15IRX9",
+   "LOQ 15IRX9"
+  ],
+  "tier": "mid",
+  "released": "2025-04",
+  "priceAmd": 459900,
+  "priceAmdMax": 559900,
+  "popularity": 62,
+  "accent": "#3A4A5C",
+  "display": {
+   "size": 15.6,
+   "type": "IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13450HX"
+  },
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4050",
+   "type": "discrete"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 459900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Luna Grey"
+  ],
+  "summaryEn": "A 15.6-inch gaming laptop with a 13th-gen HX processor and a GeForce RTX graphics card.",
+  "unsure": [
+   "released",
+   "popularity",
+   "display.type",
+   "connectivity.wifi",
+   "colors",
+   "graphics.name"
+  ]
+ },
+ {
   "id": "apple-mac-mini-m4-pro",
   "category": "desktop",
   "brand": "Apple",
@@ -5394,6 +5531,57 @@
   ]
  },
  {
+  "id": "jbl-go-4",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Go 4",
+  "aliases": [
+   "JBL Go 4",
+   "Go 4"
+  ],
+  "tier": "budget",
+  "released": "2024-04",
+  "priceAmd": 22900,
+  "priceAmdMax": 22900,
+  "popularity": 58,
+  "accent": "#E8562A",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 22900
+   }
+  ],
+  "audio": {
+   "type": "Ultra-portable Bluetooth speaker",
+   "anc": false,
+   "transparency": false
+  },
+  "battery": {
+   "life": "7 hours (9 with Playtime Boost)"
+  },
+  "body": {
+   "weight": 190,
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "USB-C charging"
+  },
+  "colors": [
+   "Black",
+   "Blue",
+   "Red"
+  ],
+  "summaryEn": "A pocket speaker that survives dust and a dunk, with a carry loop.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "colors"
+  ]
+ },
+ {
   "id": "sony-ps5-pro",
   "category": "console",
   "brand": "Sony",
@@ -5716,6 +5904,57 @@
    "popularity",
    "colors",
    "os"
+  ]
+ },
+ {
+  "id": "hp-victus-15",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-fa2262ci",
+  "aliases": [
+   "HP Victus 15-fa2262ci",
+   "Victus 15-fa2262ci"
+  ],
+  "tier": "mid",
+  "released": "2025-06",
+  "priceAmd": 699900,
+  "priceAmdMax": 699900,
+  "popularity": 55,
+  "accent": "#2E3A48",
+  "display": {
+   "size": 15.6,
+   "type": "IPS LCD",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5 210H"
+  },
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 3050",
+   "type": "discrete"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 699900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Mica Silver"
+  ],
+  "summaryEn": "A 15.6-inch gaming laptop with a GeForce RTX 3050.",
+  "unsure": [
+   "released",
+   "popularity",
+   "display.type",
+   "connectivity.wifi",
+   "colors"
   ]
  },
  {
@@ -6283,6 +6522,59 @@
   ]
  },
  {
+  "id": "dell-inspiron-16",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Inspiron 16",
+  "aliases": [
+   "Dell Inspiron 16",
+   "Inspiron 16"
+  ],
+  "tier": "mid",
+  "released": "2025-09",
+  "priceAmd": 389900,
+  "priceAmdMax": 389900,
+  "popularity": 52,
+  "accent": "#5C7C96",
+  "display": {
+   "size": 16,
+   "type": "WUXGA IPS LCD",
+   "resolution": "1920x1200",
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 5 120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 389900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Ice Blue"
+  ],
+  "summaryEn": "A 16-inch Windows laptop with a touchscreen.",
+  "unsure": [
+   "priceAmd",
+   "priceAmdMax",
+   "popularity",
+   "released",
+   "connectivity.wifi",
+   "graphics.name"
+  ]
+ },
+ {
   "id": "nothing-phone-3",
   "category": "phone",
   "brand": "Nothing",
@@ -6461,6 +6753,59 @@
    "popularity",
    "colors",
    "priceAmdMax"
+  ]
+ },
+ {
+  "id": "acer-aspire-15",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire AL15-72P",
+  "aliases": [
+   "Acer Aspire AL15-72P",
+   "Aspire AL15-72P"
+  ],
+  "tier": "budget",
+  "released": "2026-04",
+  "priceAmd": 289900,
+  "priceAmdMax": 289900,
+  "popularity": 50,
+  "accent": "#6E7784",
+  "display": {
+   "size": 15.6,
+   "type": "IPS LCD",
+   "resolution": "1920x1080",
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 289900
+   }
+  ],
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "os": "Windows 11",
+  "colors": [
+   "Steel Gray"
+  ],
+  "summaryEn": "A 15.6-inch Full HD laptop with a 13th-gen Core i5 and 16 GB of memory.",
+  "unsure": [
+   "released",
+   "popularity",
+   "display.type",
+   "connectivity.wifi",
+   "colors",
+   "graphics.name"
   ]
  },
  {

@@ -144,7 +144,7 @@ function matchPhone(text) {
   const base = norm(text);
   for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2')])) {
     const id = matchIn(' ' + v + ' ');
-    if (id) return capacityFits(id, text) ? id : null;
+    if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
   }
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
   // title, so a title wins when both readings of the same item miss.
@@ -162,6 +162,20 @@ const STORELESS = new Set(phones.filter(p => !(p.variants || []).some(v => v.sto
 function capacityFits(id, text) {
   if (!STORELESS.has(id)) return true;
   return !capacitiesOf(text).some(c => c >= 32);
+}
+// AllSell's "HP OmniBook Flip 7 16-AU0070WM" is a laptop, and "flip 7" in it matched the JBL
+// Flip 7 speaker - a 410,000 dram laptop filed among 48,000 dram speakers. The shop names the
+// maker, so: if a title names a brand this catalogue knows and it is not the matched product's
+// brand, the match is wrong. A title that names no brand at all (shops write "MacBook Neo 13")
+// still matches, and a title naming several keeps the one whose brand is actually there.
+// 'Nothing' is left out of the test - it is an ordinary English word before it is a brand.
+const BRANDS = [...new Set(phones.map(p => norm(p.brand)))].filter(b => b && b !== 'nothing');
+const brandOfId = Object.fromEntries(phones.map(p => [p.id, norm(p.brand)]));
+function brandFits(id, text) {
+  const h = ' ' + norm(text) + ' ';
+  const mine = brandOfId[id];
+  if (mine && h.includes(' ' + mine + ' ')) return true;
+  return !BRANDS.some(b => b !== mine && h.includes(' ' + b + ' '));
 }
 function matchIn(h) {
   for (const k of KEYS) {
@@ -416,6 +430,26 @@ if (process.argv[2] === '--selftest') {
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
+    // a laptop whose model name contains a speaker's. The shop says HP; the speaker is a JBL.
+    [null, 'HP OmniBook Flip 7 16-AU0070WM'],
+    ['jbl-flip-7', 'JBL Flip 7 Squad'],
+    ['jbl-flip-7', 'Portable speaker JBL Flip 7 Black'],
+    // shops drop the brand all the time, and that must still match
+    ['apple-macbook-neo-13', 'MacBook Neo 13" A18 Pro (6C CPU/5C GPU), 8 GB, 256 GB, Silver'],
+    // the plain Pixel 10 sits between two products already in the catalogue, and neither may
+    // absorb its listings - nor it theirs
+    ['google-pixel-10', 'Google Pixel 10'],
+    ['google-pixel-10a', 'Google Pixel 10a'],
+    ['google-pixel-10-pro', 'Google Pixel 10 Pro'],
+    ['jbl-go-4', 'JBL Go 4'],
+    ['dell-inspiron-16', 'Dell PC Notebook Inspiron 16 / Core 5 120U / 8GB RAM / 512GB SSD / 16 inch WUXGA Touch / WIN11 (Ice Blue)'],
+    // laptops VLV stocks, matched off the shop's own title
+    ['lenovo-loq-15', 'LENOVO LOQ 15IRX9  i5-13450HX 16GB 1TB RTX4050 15.6" (83DV0069RK) Notebooks'],
+    ['lenovo-loq-15', 'LENOVO LOQ 15IRX9 i5-13450HX 16GB 1TB RTX3050 15.6" (83DV01CJRK) Notebooks'],
+    // a different generation, and not in the catalogue - it must not be filed as the IRX9
+    [null, 'LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6" 83JE0189RK Notebooks'],
+    ['hp-victus-15', 'HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA Notebooks'],
+    ['acer-aspire-15', 'ACER ASPIRE AL15-72P-57CM i5-13420H 16/512 15.6" NX.D5HEM.002 Notebooks'],
     // a phone sold with earbuds in the box is neither product's price
     [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
     ['xiaomi-buds-6', 'Xiaomi Buds 6'],
