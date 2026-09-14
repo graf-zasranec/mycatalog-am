@@ -189,6 +189,15 @@ const TRAY = /\b[12]\s*-?\s*sim\b|\bdual\s*sim\b|\bnano\b|սիմ|sim\s*card|\+\s
 // e-?sim, because 3DPlanet writes the tray-less option "E-Sim" with a hyphen. "Nano-SIM" does
 // not match it: there is no e immediately before the -sim.
 const ESIM_ONLY = t => /(^|[^a-z])e-?sim([^a-z]|$)/i.test(t) && !TRAY.test(t);
+// Three states, not two. A shop that says nothing about the SIM build is not asserting a tray,
+// and treating it as one put prices under a button the shop never agreed to: Pixel's 559 000
+// iPhone 17 Pro Max 512 GB appeared as the "Nano-SIM" price, below the 625 000 eSIM, which is
+// backwards - the tray hardware always costs more. Returns true (eSIM-only), false (a tray the
+// shop named), or undefined (not stated).
+// A bare "sim" that is not "esim" IS the shop naming a tray - it is how iBolit distinguishes
+// .../512gb-sim-deep-blue from .../512gb-silver-esim.
+const SIM_WORD = /(^|[^a-z])sim([^a-z]|$)/i;
+const simBuild = t => ESIM_ONLY(t) ? true : (TRAY.test(t) || SIM_WORD.test(t)) ? false : undefined;
 const capOf = lbl => { const c = capacitiesOf(lbl || ''); return c.length ? c[0] : null; };
 // The JSON object that starts at the first { after an anchor. Brace counting has to skip
 // strings, or a } inside a product name ends the object early.
@@ -440,11 +449,22 @@ if (process.argv[2] === '--selftest') {
   ];
   for (const [e0, t0v, keep] of flipCases) {
     const esim = { shop: 's', storage: 256, price: e0, url: 'e', esim: true };
-    const tray = { shop: 's', storage: 256, price: t0v, url: 't' };
+    const tray = { shop: 's', storage: 256, price: t0v, url: 't', esim: false };
     dropUnrankableSim([esim, tray]);
     if (!!esim.esim !== keep || esim.price !== e0 || tray.price !== t0v) {
       bad++; console.log(`FAIL  sim ${e0}/${t0v} -> esim=${!!esim.esim} want ${keep} (prices must not move)`);
     }
+  }
+
+  const buildCases = [
+    [true, 'iPhone 17 Pro Max 512GB Silver Esim'], [true, 'E-Sim'],
+    [false, '1 Սիմ քարտ + Esim'], [false, 'iphone-17-pro-max-512gb-sim-deep-blue'],
+    [false, 'Nano-SIM'], [false, 'Dual SIM'],
+    [undefined, 'iPhone 17 Pro Max 512GB'], [undefined, 'www.pixel.am/am/product/iphone-17-pro-max'],
+  ];
+  for (const [want, txt] of buildCases) {
+    const got = simBuild(txt);
+    if (got !== want) { bad++; console.log(`FAIL  simBuild=${got} want=${want}  <- ${txt}`); }
   }
 
   // a capacity with no unit at all, and the model numbers that must not be read as one
@@ -512,7 +532,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + flipCases.length + capCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + buildCases.length + flipCases.length + capCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -1129,7 +1149,7 @@ try {
   const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1)
     .map(line => { const [shop, title, cap, color, url, price] = line.split(','); return { shop, title, cap, color, url, price }; })
     .map(r => ({ ...r, id: matchPhone(r.title), storage: r.cap ? +r.cap : null,
-                 esim: ESIM_ONLY(`${r.title} ${r.url}`) || undefined }))
+                 esim: simBuild(`${r.title} ${r.url}`) }))
     .filter(r => r.id && r.price);
 
   // Pass 1 - TAG, not add. A crawler can only read the axes the page exposes, and 3DPlanet's
@@ -1205,7 +1225,10 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // "1 Սիմ քարտ + Esim" - the second is the phone WITH a nano tray, and matching on esim alone
 // would file it as the tray-less build and put its price under the wrong button.
 for (const list of Object.values(offers)) {
-  for (const o of list) if (ESIM_ONLY(`${o.title || ''} ${o.url || ''}`)) o.esim = true; else delete o.esim;
+  for (const o of list) {
+    const b = simBuild(`${o.title || ''} ${o.url || ''}`);
+    if (b === undefined) delete o.esim; else o.esim = b;
+  }
 }
 
 // The physical nano tray ALWAYS costs more than the eSIM-only build - a shop never charges less
@@ -1231,7 +1254,7 @@ function dropUnrankableSim(list) {
   for (const o of list) {
     const k = `${o.shop}|${o.storage ?? ''}|${(o.color || '').toLowerCase()}`;
     const g = groups.get(k) || { esim: [], tray: [] };
-    (o.esim ? g.esim : g.tray).push(o);
+    if (o.esim === true) g.esim.push(o); else if (o.esim === false) g.tray.push(o);
     groups.set(k, g);
   }
   let n = 0;
@@ -1277,7 +1300,7 @@ for (const [id, list] of Object.entries(offers)) {
     // the SIM build belongs in the key: without it two rows for one page that differ only by
     // build collapse into whichever the loop reached first, and since this file is re-read as the
     // next run's base, the survivor alternated from night to night.
-    const k = [o.shop, o.url, o.price, o.storage ?? '', o.esim ? 'e' : 'n'].join('|');
+    const k = [o.shop, o.url, o.price, o.storage ?? '', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
 }

@@ -18,6 +18,9 @@ const TERMS = JSON.parse(rd('data/terms.json'));
 // can stand behind and no offer anyone can buy today, and inventing either is the one thing
 // this catalogue must not do. A name, a shop's pre-order price and a date is all we know.
 const COMING = fs.existsSync('data/coming.json') ? JSON.parse(rd('data/coming.json')) : { when: {}, items: [] };
+// colour photos whose shape fights the main shot: fine on the product page, a lurch in the
+// card carousel. Regenerate with: python tools/pageonly.py
+const PAGEONLY = fs.existsSync('data/pageonly.json') ? JSON.parse(rd('data/pageonly.json')) : {};
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
@@ -123,10 +126,23 @@ function cutMap(inline) {
 // What does carry weight on a single page: a real title and description, the social card, a
 // canonical, and an ItemList that names the products and their cheapest Armenian price.
 const SITE = 'https://graf-zasranec.github.io/mycatalog-am/';
-const bestOf = p => {
-  const offs = (PRICES.offers && PRICES.offers[p.id]) || [];
-  const live = offs.map(o => o.price).filter(Number.isFinite);
-  return live.length ? Math.min(...live) : p.priceAmd;
+const pricesOf = p => ((PRICES.offers && PRICES.offers[p.id]) || [])
+  .map(o => o.price).filter(Number.isFinite);
+const bestOf = p => { const l = pricesOf(p); return l.length ? Math.min(...l) : p.priceAmd; };
+// A single Offer says "this costs X" and throws away the two facts this site exists to publish:
+// how many shops sell it and what the spread is. AggregateOffer carries both, and it is what
+// earns a price range in a search result rather than one bare number.
+const offerOf = p => {
+  const l = pricesOf(p);
+  if (l.length < 2) {
+    return { '@type': 'Offer', priceCurrency: 'AMD', price: bestOf(p), availability: 'https://schema.org/InStock' };
+  }
+  return {
+    '@type': 'AggregateOffer', priceCurrency: 'AMD',
+    lowPrice: Math.min(...l), highPrice: Math.max(...l),
+    offerCount: new Set(((PRICES.offers && PRICES.offers[p.id]) || []).map(o => o.shop)).size,
+    availability: 'https://schema.org/InStock'
+  };
 };
 const SEO = {
   url: SITE,
@@ -148,7 +164,7 @@ const SEO = {
         brand: { '@type': 'Brand', name: p.brand },
         category: p.category || 'phone',
         url: SITE + '#/p/' + p.id,
-        offers: { '@type': 'Offer', priceCurrency: 'AMD', price: bestOf(p), availability: 'https://schema.org/InStock' }
+        offers: offerOf(p)
       }
     }))
   }
@@ -195,6 +211,13 @@ const HEAD_CLOSE = `</head><body>
 // The artifact platform supplies its own <head>, so the fragment build stays as-is. The
 // standalone files are whole documents, and there <title>/<link>/<style> were landing in
 // <body> - valid only because browsers hoist them, and it delays the webfont.
+// The shell ships a placeholder <title> so the file opens sensibly on its own; the build puts
+// the real one in. _app.js overwrites document.title per route, so this is what a crawler and
+// the first paint see, and it is the line a search result prints.
+function seoTitle(shell) {
+  return shell.replace('<title>MyCatalog</title>', `<title>${SEO.title}</title>`);
+}
+
 function splitShell(shell) {
   const i = shell.lastIndexOf('</style>');
   return i < 0 ? { head: '', body: shell } : { head: shell.slice(0, i + 8), body: shell.slice(i + 8) };
@@ -216,7 +239,7 @@ function build({ inline, standalone }) {
     else console.warn('  ! missing image for', c.id, '(coming soon)');
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
-  const shell = rd('_shell.html');
+  const shell = seoTitle(rd('_shell.html'));
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
   let appJs = '\n'
     + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\nconst VERD=${JSON.stringify(VERD)};\n`
@@ -224,6 +247,7 @@ function build({ inline, standalone }) {
     + `const HISTORY=${JSON.stringify(HISTORY)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
     + `const COMING=${JSON.stringify(COMING)};\n`
+    + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here

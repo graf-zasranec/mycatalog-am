@@ -34,7 +34,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
@@ -50,7 +50,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
@@ -66,7 +66,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
@@ -232,10 +232,19 @@ function historyHTML(p) {
 const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generated.slice(5, 7) + '.' + P.generated.slice(0, 4) : '';
 
 /* ================= filtering ================= */
+// The words someone types are rarely in the shop's order: "samsung fold" is how a person asks
+// for the Galaxy Z Fold 8, and a contiguous-substring test answers "no results" to it. Every
+// word has to appear somewhere, order free.
+const hay = p => (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase();
+function hayMatch(p, q) {
+  const words = String(q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return true;
+  const h = hay(p);
+  return words.every(w => h.includes(w));
+}
 function matches(p, s) {
   if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
-  const q = s.q.trim().toLowerCase();
-  if (q && !(p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase().includes(q)) return false;
+  if (!hayMatch(p, s.q)) return false;
   if (s.brands.length && !s.brands.includes(p.brand)) return false;
   const pr = bestOf(p);
   if (pr < s.pmin || pr > s.pmax) return false;
@@ -262,10 +271,23 @@ function matches(p, s) {
 // A saving is only real when it is the SAME product in the SAME configuration: cheapest shop
 // against dearest. Measured across tiers it is just the price of more storage - the Z Fold 8
 // showed a 470 000 ֏ "saving" that was a 256 GB offer against a 1 TB one.
+// "Save up to X" is a promise that the same thing costs less somewhere else, so the two prices
+// have to be the same thing. Two ways they were not:
+//
+// The eSIM build and the tray build are different hardware at different prices - the tray always
+// costs more - so a tier that mixed them reported the SIM difference as a saving. The iPhone 17
+// Pro Max 1TB read "save 234 000" by comparing a 715 000 eSIM against a 949 000 tray.
+//
+// And an offer whose capacity the shop never stated could be any configuration. Where a product
+// sells in one size only that is harmless, but the MacBook Pro 14 M4 Pro sells at 512 GB and
+// 1 TB and all three of its offers state no capacity - so the front page promised 274 000 off
+// by putting one shop's base model beside the same shop's higher one.
 const bestTier = p => {
+  const sizes = new Set((p.variants || []).map(v => v.storage).filter(v => v != null));
   const byTier = new Map();
   for (const o of offersFor(p)) {
-    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '');
+    if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?');
     (byTier.get(k) || byTier.set(k, []).get(k)).push(o.price);
   }
   let best = null;
@@ -717,10 +739,14 @@ function soonHTML() {
 // Counts come from the data, so a category appears the moment its first item lands.
 function catTabs() {
   const cats = [...new Set(DATA.map(p => p.category || 'phone'))];
-  const n = c => DATA.filter(p => (p.category || 'phone') === c).length;
+  // Counted within the active query, not over the whole catalogue: on a search for "samsung
+  // fold" the tabs used to promise "Phones 70" above three results, and the number a tab shows
+  // has to be the number clicking it produces.
+  const pool = DATA.filter(p => hayMatch(p, st.q));
+  const n = c => pool.filter(p => (p.category || 'phone') === c).length;
   const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${esc(label)}<b class="num">${count}</b></a>`;
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
-    tab('', x('catAll'), DATA.length) +
+    tab('', x('catAll'), pool.length) +
     cats.map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') + `</nav>`;
 }
 function catalogView() {
@@ -728,7 +754,7 @@ function catalogView() {
     ${catTabs()}
     ${filterBar()}
     <div class="chips" id="chips"></div>
-    <div class="resbar" id="results"><h2>${esc(t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
+    <div class="resbar" id="results"><h2>${esc(location.hash.replace(/^#/, '') === '/search' && st.q.trim() ? st.q.trim() : t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
     <div class="grid" id="gridbox"></div>
     <div id="pager"></div>
   </div>`;
@@ -890,7 +916,12 @@ const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
 // with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
 // them on the front page. A 1x1 transparent GIF is a valid, cached, 68-byte placeholder.
 const BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
-const cycShots = id => [...new Set(Object.entries(CIMG[id] || {}).filter(([k]) => k !== 'main').map(([, v]) => v))];
+// A card crossfades a product's colour photos, which only reads as one product turning around
+// if every frame is the same shape. A photo shot in the other orientation keeps its place on
+// the product page and loses only its turn here. See tools/pageonly.py.
+const SKIPCYC = (typeof PAGEONLY !== 'undefined' && PAGEONLY) || {};
+const cycShots = id => [...new Set(Object.entries(CIMG[id] || {})
+  .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k)).map(([, v]) => v))];
 
 // Cards with more than one colour photo walk through them. One timer for the whole grid, and a
 // card only advances while it is on screen: crossfading rows nobody is looking at is wasted work
@@ -962,7 +993,7 @@ function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
   // start on whatever the cheapest real offer actually is
-  const both = offs.some(o => o.esim) && offs.some(o => !o.esim);
+  const both = offs.some(o => o.esim === true) && offs.some(o => o.esim === false);
   SEL = {
     id: p.id,
     esim: both ? false : null,
@@ -989,7 +1020,9 @@ function visibleOffers(p) {
     o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
   }
   if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
-  if (SEL.esim != null) o = o.filter(v => !!v.esim === SEL.esim);
+  // strict: an offer whose SIM build the shop never stated is not evidence for either button.
+  // Treating "not stated" as "tray" put Pixel's 559 000 under Nano-SIM, below the 625 000 eSIM.
+  if (SEL.esim != null) o = o.filter(v => v.esim === SEL.esim);
   return o;
 }
 function railHTML(offs) {
@@ -1029,7 +1062,7 @@ function detailView(p) {
   const simAll = offersFor(p);
   const simPick = /nano/.test(((p.connectivity || {}).sim || '').toLowerCase())
     && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
-    && simAll.some(o => o.esim) && simAll.some(o => !o.esim);
+    && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
   const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
@@ -1424,6 +1457,11 @@ function render(keepScroll) {
   else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
   else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — MyCatalog'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
   else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
+  else if (h === '/search') {
+    main.innerHTML = catalogView(); refresh();
+    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — MyCatalog';
+    window.scrollTo(0, keepScroll ? window.scrollY : 0);
+  }
   else {
     main.innerHTML = catalogView(); refresh();
     document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'MyCatalog';
@@ -1438,7 +1476,7 @@ function render(keepScroll) {
   }
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact'].includes(h) && !h.startsWith('/offers/');
+  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search'].includes(h) && !h.startsWith('/offers/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
   if (home) heroTick(); else clearTimeout(heroT);   // no slides off the front page, no timer
@@ -1598,6 +1636,8 @@ document.addEventListener('click', e => {
     if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
     return;
   }
+  if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
+  if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
   const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim]');
@@ -1634,7 +1674,9 @@ document.addEventListener('click', e => {
   $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
 });
 document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.id === 'q') { e.preventDefault(); submitSearch(); return; }
   if (e.key !== 'Escape') return;
+  closeSuggest();
   $$('[data-drop][open]').forEach(o => o.open = false);
   closeAdd();
 });
@@ -1650,6 +1692,43 @@ document.addEventListener('change', e => {
   else st[f] = +el.value;
   refresh();
 });
+// Suggestions under the box: the fastest route to ONE product, without leaving the page you
+// are on. The full grid, with every filter, lives behind Enter or the search button.
+const SUGG_MAX = 8;
+function suggestFor(q) {
+  if (!String(q || '').trim()) return [];
+  const hit = DATA.filter(p => hayMatch(p, q));
+  // a product whose name STARTS with what was typed is what the person meant; the rest follow
+  const w = q.trim().toLowerCase();
+  hit.sort((a, b) => (hay(b).startsWith(w) - hay(a).startsWith(w)) || bestOf(a) - bestOf(b));
+  return hit.slice(0, SUGG_MAX);
+}
+function paintSuggest() {
+  const box = $('#sugg');
+  if (!box) return;
+  const list = suggestFor(st.q);
+  const total = DATA.filter(p => hayMatch(p, st.q)).length;
+  if (!list.length) {
+    box.innerHTML = st.q.trim() ? `<p class="sg-none">${esc(x('emptyT'))}</p>` : '';
+    box.hidden = !st.q.trim();
+    return;
+  }
+  box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
+      <img src="${esc(IMG(p.id))}" alt="" loading="lazy" decoding="async">
+      <span class="sg-n">${esc(fullName(p))}</span>
+      <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
+    + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
+  box.hidden = false;
+}
+function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } }
+// Enter, or the search button, is what opens the results page.
+function submitSearch() {
+  closeSuggest();
+  const el = $('#q');
+  if (el) el.blur();
+  save();
+  if (location.hash !== '#/search') location.hash = '#/search'; else render();
+}
 let qT;
 document.addEventListener('input', e => {
   const el = e.target;
@@ -1661,7 +1740,10 @@ document.addEventListener('input', e => {
     qT = setTimeout(() => {
       // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
       // query had nowhere to land. Go to the catalogue and let render() draw the results.
-      if ($('#gridbox')) refresh(); else { save(); location.hash = '#/'; }
+      // typing refines whatever list you are already looking at; it never navigates on its
+      // own. Enter or the search button is what opens the results page.
+      paintSuggest();
+      if ($('#gridbox')) refresh();
     }, 140);
     return;
   }

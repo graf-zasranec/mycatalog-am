@@ -82,7 +82,8 @@ def main():
         c.thumbnail((int(side * 0.94), int(side * 0.94)), Image.LANCZOS)
     out = Image.new('RGBA', (side, side), (0, 0, 0, 0))
     out.alpha_composite(c, ((side - c.width) // 2, (side - c.height) // 2))
-    dst = ROOT / 'images' / 'cut' / f'{pid}__main.webp'
+    # a pid that already names a variant ("...__lavender") keeps it; a bare one means the main shot
+    dst = ROOT / 'images' / 'cut' / ((pid if '__' in pid else f'{pid}__main') + '.webp')
     out.save(dst, 'WEBP', quality=90)
     print(f'{pid}: {out.size[0]}x{out.size[1]}  (ink {bb[2]-bb[0]}x{bb[3]-bb[1]}) -> {dst.name}')
 
