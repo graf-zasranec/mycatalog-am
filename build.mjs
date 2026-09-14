@@ -201,7 +201,7 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="twitter:title" content="${SEO.title}">
 <meta name="twitter:description" content="${SEO.desc}">
 <meta name="twitter:image" content="${SEO.url}${SEO.img}">
-<script type="application/ld+json">${JSON.stringify(SEO.ld)}<\/script>
+<script type="application/ld+json">${JSON.stringify(SEO.ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>${THEME_JS}<\/script>
 `;
