@@ -34,7 +34,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
@@ -50,7 +50,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
@@ -66,7 +66,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
@@ -87,6 +87,7 @@ if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';
+if (typeof st.fopen !== 'boolean') st.fopen = false;
 // The numeric filters are the same kind of hazard: st.ram = "abc" passes every guard above,
 // matches() then compares a number against a string and the catalogue renders empty with no
 // visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
@@ -518,7 +519,7 @@ function inView() { return DATA.filter(p => !st.cat || (p.category || 'phone') =
 function varies(get) { return new Set(inView().map(get).filter(v => v != null && v !== '')).size > 1; }
 function filterBar() {
   const pool = inView();
-  let h = `<div class="fbar">`;
+  let h = `<div class="fbar${st.fopen ? '' : ' folded'}">`;
   const brandsHere = [...new Set(pool.map(p => p.brand))].sort();
   if (brandsHere.length > 1) h += drop('brand', t('filter.brand'), brandsHere.map(b =>
     `<label class="opt"><input type="checkbox" data-f="brand" value="${esc(b)}"><span>${esc(b)}</span><span class="n num" data-cnt="b:${esc(b)}"></span></label>`).join(''));
@@ -537,7 +538,19 @@ function filterBar() {
   h += `<span class="spacer"></span>`;
   h += drop('sort', `${t('sort.label')}: ${sortLabel(st.sort)}`, sortKeys().map(s =>
     `<label class="opt"><input type="radio" name="r-sort" data-f="sort" value="${s}"><span>${esc(sortLabel(s))}</span></label>`).join(''), true);
-  return h + `</div>`;
+  // The button sits OUTSIDE the bar it folds, so folding cannot hide it.
+  const n = activeFilterCount();
+  return h + `</div><button class="fmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
+    ${esc(st.fopen ? x('filtersHide') : x('filtersShow'))}${n ? ` <b>${n}</b>` : ''}
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`;
+}
+// how many filters are actually narrowing the list right now - shown on the button so a folded
+// bar can never hide the fact that something is filtering
+function activeFilterCount() {
+  return (st.brands || []).length + (st.scrs || []).length
+    + (st.pmin > PMIN || st.pmax < PMAX ? 1 : 0)
+    + ['ram', 'stor', 'batt', 'hz'].filter(k => st[k]).length
+    + (st.g5 ? 1 : 0) + (st.nfc ? 1 : 0);
 }
 function syncFilters() {
   $$('[data-f]').forEach(el => {
@@ -745,9 +758,12 @@ function catTabs() {
   const pool = DATA.filter(p => hayMatch(p, st.q));
   const n = c => pool.filter(p => (p.category || 'phone') === c).length;
   const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${esc(label)}<b class="num">${count}</b></a>`;
+  // A tab whose count is 0 leads to an empty page, so it is not offered. The category you are
+  // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
     tab('', x('catAll'), pool.length) +
-    cats.map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') + `</nav>`;
+    cats.filter(c => n(c) > 0 || st.cat === c)
+        .map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') + `</nav>`;
 }
 function catalogView() {
   return `<div class="shell">
@@ -1641,6 +1657,8 @@ document.addEventListener('click', e => {
     if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
     return;
   }
+  const fm = e.target.closest('[data-fmore]');
+  if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
   if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');

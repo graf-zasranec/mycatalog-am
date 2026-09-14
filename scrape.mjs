@@ -1091,7 +1091,12 @@ if (fs.existsSync(PRICES_FILE)) {
 for (const [k, s] of Object.entries(SHOPS)) if (s.disabled && !names.includes(k)) console.log(`[${s.name}] skipped — ${s.disabled}`);
 const offers = {};
 for (const [id, list] of Object.entries(prev.offers || {})) {
-  const keep = list.filter(o => !names.includes(o.shop));   // drop the shops we are re-fetching
+  // Hand rows are rebuilt from data/listings.csv further down, so the previous run's copies are
+  // dropped here. Inheriting them made the csv write-only: a row whose url was corrected still
+  // lost to the stale copy sitting in the base, because dedupe keys on shop+storage+build and
+  // the old one got there first. 23 dead links and 38 category urls survived several edits that
+  // way.
+  const keep = list.filter(o => !names.includes(o.shop) && !o.seeded);
   if (keep.length) offers[id] = keep;
 }
 const report = [];
