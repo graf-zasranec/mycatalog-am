@@ -3,6 +3,7 @@
 //   index.embedded.html  standalone single file, images inlined    <- one file to email/host
 //   artifact.html        head-less fragment, images inlined        <- for publishing as an Artifact
 // Run: node build.mjs
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 const rd = f => fs.readFileSync(f, 'utf8');
@@ -119,6 +120,14 @@ function cutMap(inline) {
   want ${want}`); process.exit(1); }
   }
   console.log('terms self-test: ' + cases.length + ' checks pass');
+}
+
+// The app's own checks. Run here so a build cannot ship logic that fails them; the scraper had
+// 96 checks and the 1800 lines a visitor touches had none.
+{
+  const r = spawnSync(process.execPath, ['tools/app-test.mjs'], { encoding: 'utf8' });
+  process.stdout.write(r.stdout || '');
+  if (r.status !== 0) { process.stderr.write(r.stderr || ''); process.exit(1); }
 }
 
 // SEO. The router lives in the hash, so a crawler only ever sees ONE url - there is no point
