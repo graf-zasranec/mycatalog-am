@@ -430,6 +430,23 @@ if (process.argv[2] === '--selftest') {
     const got = ESIM_ONLY(txt);
     if (got !== want) { bad++; console.log(`FAIL  eSIM-only=${got} want=${want}  <- ${txt}`); }
   }
+  // The tray build always costs more than the eSIM build, so a pair that comes back the other
+  // way round is a mislabel at the shop. The prices must come out swapped, not published as-is.
+  const flipCases = [
+    // [esimPrice, trayPrice, does the pair keep its eSIM label?]
+    [569000, 525000, false],   // tray cheaper: unrankable, label dropped
+    [625000, 625000, false],   // equal: carries no signal either, label dropped
+    [525000, 569000, true],    // tray dearer: the normal case, left alone
+  ];
+  for (const [e0, t0v, keep] of flipCases) {
+    const esim = { shop: 's', storage: 256, price: e0, url: 'e', esim: true };
+    const tray = { shop: 's', storage: 256, price: t0v, url: 't' };
+    dropUnrankableSim([esim, tray]);
+    if (!!esim.esim !== keep || esim.price !== e0 || tray.price !== t0v) {
+      bad++; console.log(`FAIL  sim ${e0}/${t0v} -> esim=${!!esim.esim} want ${keep} (prices must not move)`);
+    }
+  }
+
   // a capacity with no unit at all, and the model numbers that must not be read as one
   const capCases = [[256, 'iPHONE 17 256 Lavander ESIM'], [512, 'Galaxy S25 512 Black'],
     [null, 'Samsung Galaxy A56 5G'], [null, 'Redmi Note 13 Pro'], [null, 'Apple Watch 44']];
@@ -495,7 +512,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + capCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + flipCases.length + capCases.length} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -1105,24 +1122,42 @@ for (const key of names) {
 // refuses non-browser clients outright. Rows recorded by hand in data/listings.csv fill exactly
 // those gaps. They are a floor, never an override: a row is added only when the live scrape found
 // nothing for that shop, product and capacity, so a real price always wins.
-// (yerevanmobile rows are deliberately absent - its robots.txt names this crawler and says no.)
+// robots.txt governs what this crawler may FETCH, not what a price is: rows for the shops that
+// disallow us (yerevanmobile, list.am, notebookcentre) are recorded by hand and carried here.
 let seeded = 0;
 try {
-  const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1);
-  for (const line of rows) {
-    const [shop, title, cap, color, url, price] = line.split(',');
-    const id = matchPhone(title);
-    if (!id || !price) continue;
-    const storage = cap ? +cap : null;
-    // eSIM is part of the identity, not a detail: REDstore sells the same capacity twice, once
-    // dual-eSIM and once with a tray, 80,000 apart. Keying dedupe on shop+storage alone threw
-    // the second one away and left the product page with nothing to choose between.
-    const esim = ESIM_ONLY(`${title} ${url}`) || undefined;
-    const list = offers[id] ||= [];
-    if (list.some(o => o.shop === shop && (o.storage ?? null) === storage && !!o.esim === !!esim)) continue;
-    list.push({ id, shop, price: +price, storage, color: color || undefined, url, inStock: true, seeded: true, esim });
+  const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1)
+    .map(line => { const [shop, title, cap, color, url, price] = line.split(','); return { shop, title, cap, color, url, price }; })
+    .map(r => ({ ...r, id: matchPhone(r.title), storage: r.cap ? +r.cap : null,
+                 esim: ESIM_ONLY(`${r.title} ${r.url}`) || undefined }))
+    .filter(r => r.id && r.price);
+
+  // Pass 1 - TAG, not add. A crawler can only read the axes the page exposes, and 3DPlanet's
+  // page shows no SIM option at all: its four prices are the eSIM build, which nothing on the
+  // page says. A hand row carrying that shop's own price for a row we already have is telling us
+  // which build it is, so it lends the row its title and the eSIM post-pass below re-reads it.
+  let tagged = 0;
+  for (const r of rows) {
+    // url as well as price: a hand row names one page, and matching on shop+storage+price alone
+    // tagged whichever row happened to share that price - two redstore rows at the same price got
+    // opposite flags, the dedupe below then kept whichever came first, and the build alternated.
+    const hit = (offers[r.id] || []).find(o => o.shop === r.shop && o.url === r.url
+      && (o.storage ?? null) === r.storage && o.price === +r.price);
+    if (hit && !!hit.esim !== !!r.esim) { hit.title = r.title; hit.esim = r.esim; tagged++; }
+  }
+
+  // Pass 2 - ADD the builds still missing. Split from pass 1 so a file that happens to list the
+  // tray row before the eSIM row cannot change the outcome.
+  for (const r of rows) {
+    const list = offers[r.id] ||= [];
+    if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage && !!o.esim === !!r.esim)) continue;
+    // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
+    // and without it a seeded row is re-judged on its url alone.
+    list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
+                color: r.color || undefined, url: r.url, inStock: true, seeded: true, esim: r.esim });
     seeded++;
   }
+  if (tagged) console.log(`${tagged} crawled offer(s) had their SIM build named by a hand row`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('listings.csv:', e.message); }
 if (seeded) console.log(`\n${seeded} hand-recorded listing(s) filled gaps the crawl could not reach`);
 
@@ -1173,6 +1208,44 @@ for (const list of Object.values(offers)) {
   for (const o of list) if (ESIM_ONLY(`${o.title || ''} ${o.url || ''}`)) o.esim = true; else delete o.esim;
 }
 
+// The physical nano tray ALWAYS costs more than the eSIM-only build - a shop never charges less
+// for the extra hardware. A pair that comes back the other way round is therefore mislabelled,
+// and the one thing we must not do is guess which half is wrong: an earlier version swapped the
+// two prices, which flipped the urls, which made the next run re-read the labels off the swapped
+// urls and swap them straight back - the price under each button alternated nightly.
+// So we drop the claim instead. Both rows keep their own price and their own page; they simply
+// stop asserting which build they are, the SIM picker does not appear, and nobody is shown a
+// price under the wrong button. Deleting is idempotent, which swapping was not.
+let simDropped = 0;
+for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
+if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tray was priced at or below the eSIM)`);
+
+// Declared as a function so it hoists above the --selftest block, which exercises this exact
+// code rather than a copy of it.
+function dropUnrankableSim(list) {
+  // Group ALL rows per key, not one representative each: prices.json is re-read as the base of
+  // the next run, so a rule that depends on which row it happened to look at first changes its
+  // mind every night. Comparing the cheapest of each side, and clearing every eSIM row in the
+  // group, is order-independent and settles after one pass.
+  const groups = new Map();
+  for (const o of list) {
+    const k = `${o.shop}|${o.storage ?? ''}|${(o.color || '').toLowerCase()}`;
+    const g = groups.get(k) || { esim: [], tray: [] };
+    (o.esim ? g.esim : g.tray).push(o);
+    groups.set(k, g);
+  }
+  let n = 0;
+  for (const { esim, tray } of groups.values()) {
+    if (!esim.length || !tray.length) continue;
+    const lowE = Math.min(...esim.map(o => o.price));
+    const lowT = Math.min(...tray.map(o => o.price));
+    if (lowT > lowE) continue;                  // the tray costs more: nothing to question
+    for (const o of esim) delete o.esim;
+    n++;
+  }
+  return n;
+}
+
 // An offer that arrived without a capacity but whose title states one. iBolit writes
 // "iPHONE 17 256 Lavander ESIM" with no GB, so those rows used to land with storage null - and a
 // null-capacity offer stands in for the BASE configuration of the product, which put a 256GB
@@ -1201,7 +1274,10 @@ let deduped = 0;
 for (const [id, list] of Object.entries(offers)) {
   const seen = new Set();
   offers[id] = list.filter(o => {
-    const k = [o.shop, o.url, o.price, o.storage ?? ''].join('|');
+    // the SIM build belongs in the key: without it two rows for one page that differ only by
+    // build collapse into whichever the loop reached first, and since this file is re-read as the
+    // next run's base, the survivor alternated from night to night.
+    const k = [o.shop, o.url, o.price, o.storage ?? '', o.esim ? 'e' : 'n'].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T18:32:36.034Z",
+ "generated": "2026-09-14T07:40:05.857Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -734,14 +734,15 @@
    {
     "id": "apple-iphone-17-pro-max",
     "price": 525000,
-    "title": "Apple iPhone 17 Pro Max",
+    "title": "Apple iPhone 17 Pro Max 256GB eSIM",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 256,
     "color": "Silver",
     "inStock": true,
     "ram": null,
-    "shop": "planet3d"
+    "shop": "planet3d",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -829,6 +830,16 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "planet3d",
+    "title": "Apple iPhone 17 Pro Max 256GB 1 SIM + eSIM",
+    "price": 569000,
+    "storage": 256,
+    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -998,7 +1009,8 @@
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
     "inStock": true,
-    "seeded": true
+    "seeded": true,
+    "title": "iPhone 17 Pro Max 256GB Deep Blue"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1013,14 +1025,15 @@
    {
     "id": "apple-iphone-17-pro-max",
     "price": 625000,
-    "title": "Apple iPhone 17 Pro Max",
+    "title": "Apple iPhone 17 Pro Max 512GB eSIM",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 512,
     "color": "Silver",
     "inStock": true,
     "ram": null,
-    "shop": "planet3d"
+    "shop": "planet3d",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1197,15 +1210,26 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "planet3d",
+    "title": "Apple iPhone 17 Pro Max 512GB 1 SIM + eSIM",
+    "price": 695000,
+    "storage": 512,
+    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 715000,
-    "title": "Apple iPhone 17 Pro Max",
+    "title": "Apple iPhone 17 Pro Max 1TB eSIM",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 1024,
     "color": "Silver",
     "inStock": true,
     "ram": null,
-    "shop": "planet3d"
+    "shop": "planet3d",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1291,6 +1315,16 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "planet3d",
+    "title": "Apple iPhone 17 Pro Max 1TB 1 SIM + eSIM",
+    "price": 788000,
+    "storage": 1024,
+    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "shop": "ibolit",
     "price": 829000,
     "storage": 1024,
@@ -1302,14 +1336,15 @@
    {
     "id": "apple-iphone-17-pro-max",
     "price": 839000,
-    "title": "Apple iPhone 17 Pro Max",
+    "title": "Apple iPhone 17 Pro Max 2TB eSIM",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 2048,
     "color": "Silver",
     "inStock": true,
     "ram": null,
-    "shop": "planet3d"
+    "shop": "planet3d",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1382,6 +1417,25 @@
     "storage": 2048,
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-max-2tb-silver",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "planet3d",
+    "title": "Apple iPhone 17 Pro Max 2TB 1 SIM + eSIM",
+    "price": 958000,
+    "storage": 2048,
+    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "price": 959000,
+    "storage": 2048,
+    "url": "https://ibolit.mobi/product-category/smartphones/",
     "inStock": true,
     "seeded": true
    },
@@ -1513,7 +1567,9 @@
     "color": "Black",
     "url": "https://shop.ucom.am/en/iphone17.html",
     "inStock": true,
-    "seeded": true
+    "seeded": true,
+    "title": "iPhone 17 (eSIM)",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -1589,27 +1645,27 @@
    },
    {
     "id": "apple-iphone-17",
-    "shop": "redstore",
     "price": 378000,
-    "storage": 256,
-    "color": "Black",
+    "title": "iPhone 17 256GB Black",
     "url": "https://redstore.am/en/product/iphone-17-256gb-black",
-    "inStock": true,
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17",
-    "price": 384000,
-    "title": "iPhone 17 256GB Black eSim",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
     "storage": 256,
     "inStock": true,
     "image": "https://admin.redstore.am/storage/products/59068/image/img-4477.webp",
     "sku": "R730634",
     "ram": null,
     "color": "Black",
+    "shop": "redstore"
+   },
+   {
+    "id": "apple-iphone-17",
     "shop": "redstore",
-    "esim": true
+    "title": "iPhone 17 256GB Black",
+    "price": 384000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
+    "inStock": true,
+    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -7342,6 +7398,15 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
+    "shop": "yerevanmobile",
+    "price": 339000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-ultra.html",
+    "inStock": true,
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
     "title": "Samsung S25 Ultra Price In Armenia - Buy - Warranty -AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s25-ultra",
     "image": null,
@@ -11810,7 +11875,8 @@
     "color": "Black Titanium",
     "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium",
     "inStock": true,
-    "seeded": true
+    "seeded": true,
+    "title": "iPhone 16 Pro Max 512GB Black Titanium"
    },
    {
     "id": "apple-iphone-16-pro-max",
@@ -11821,7 +11887,7 @@
     "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium-esim",
     "inStock": true,
     "seeded": true,
-    "esim": true
+    "title": "iPhone 16 Pro Max 512GB Black Titanium eSim"
    },
    {
     "id": "apple-iphone-16-pro-max",
