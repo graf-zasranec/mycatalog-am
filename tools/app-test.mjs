@@ -46,6 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
+  filterBar, askable, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -122,6 +123,55 @@ const today = (prices.generated || '').slice(0, 10);
 is(app.seenTag({ seen: today }), '', 'a price read today needs no tag');
 is(/by hand|ձեռքով|вручную/.test(app.seenTag({})), true, 'a hand-recorded price says so');
 is(/\d\d\.\d\d/.test(app.seenTag({ seen: '2026-01-09' })), true, 'an older price shows its own day');
+
+/* --- filters are questions about THIS category ----------------------------------------- */
+// A pair of AirPods has no RAM and no screen. The bar used to offer both because the numbers
+// varied across whatever happened to be in view, which is not the same as the question making
+// sense. These read the real bar, so a new category cannot quietly reintroduce it.
+const barKeys = cat => {
+  app.st = { ...app.st, cat, fopen: true, q: '' };
+  const h = app.filterBar();
+  return [...h.matchAll(/data-drop="([^"]+)"/g)].map(m => m[1])
+    .concat([...h.matchAll(/class="toggle" data-f="([^"]+)"/g)].map(m => m[1]))
+    .filter(k => k !== 'sort');
+};
+const hasNone = (keys, banned) => banned.filter(k => keys.includes(k));
+is(hasNone(barKeys('earbuds'), ['ram', 'stor', 'batt', 'hz', 'scr']), [], 'earbuds are not asked about RAM or screens');
+is(hasNone(barKeys('headphones'), ['ram', 'stor', 'batt', 'hz', 'scr']), [], 'headphones are not asked about RAM or screens');
+is(hasNone(barKeys('watch'), ['ram', 'batt', 'hz', 'cam']), [], 'a watch is not asked about refresh rate or RAM');
+is(hasNone(barKeys('laptop'), ['hz', 'cam', 'g5', 'nfc']), [], 'a laptop is not asked about 5G or cameras');
+is(barKeys('phone').includes('cam'), true, 'phones are asked about the camera');
+is(barKeys('laptop').includes('cpu') && barKeys('laptop').includes('gpu'), true, 'laptops are asked about CPU and GPU');
+is(barKeys('earbuds').includes('anc'), true, 'earbuds are asked about noise cancelling');
+// With no category chosen the page is showing phones beside fridges: only the questions that
+// apply to a purchase rather than to hardware survive.
+is(hasNone(barKeys(''), ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'cpu', 'gpu', 'anc']), [], 'no category, no spec filters');
+is(barKeys('').includes('shop'), true, 'the shop filter applies everywhere');
+app.st = { ...app.st, cat: '', fopen: false };
+
+/* --- screen bands are cut from the category, not from phones --------------------------- */
+const pb = app.bandCuts('phone'), lb = app.bandCuts('laptop');
+is(pb[1] < 9 && lb[0] > 9, true, 'a laptop band is not a phone band');
+
+/* --- the readings behind the new filters ----------------------------------------------- */
+const w = ip => app.waterOf({ body: { ip } });
+is([w('IP68'), w('IPX4'), w('IP52'), w('5 ATM'), w('IP6X, 50 m water resistant'), w('')],
+   ['dip', 'splash', null, 'dip', 'dip', null], 'water resistance reads the water digit, not the dust one');
+is(app.mpOf({ camera: { main: '48MP Fusion, 24mm, f/1.78, OIS' } }), 48, 'the main camera number');
+is(app.mpOf({ camera: {} }), null, 'no camera block, no number invented');
+is(app.hoursOf({ battery: { life: '8.5 hours (30 with the case)' } }), 8.5, 'battery life is the buds\' own figure');
+is(app.cpuOf({ chipset: { name: 'Intel Core i5-13500H' } }), 'Intel Core i5', 'CPU cut at the tier');
+is(app.cpuOf({ chipset: { name: 'Apple M5 Pro' } }), 'Apple M5 Pro', 'M5 Pro is not an M5');
+
+/* --- a card shows one price per shop, cheapest first ------------------------------------ */
+const withOffers = phones.find(p => new Set((prices.offers[p.id] || []).map(o => o.shop)).size > 2);
+const rws = app.shopRows(withOffers, 3);
+is(new Set(rws.map(r => r[0])).size, rws.length, 'one row per shop');
+is(rws.map(r => r[1]).every((v, i, a) => !i || v >= a[i - 1]), true, 'cheapest shop first');
+
+/* --- the countdown counts down, and stops ---------------------------------------------- */
+is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');
+is(/\d/.test(app.cdText(new Date(Date.now() + 3 * 864e5).toISOString().slice(0, 10))), true, 'a future date shows a figure');
 
 console.log(bad ? `${bad} of ${n} app checks FAILED` : `app self-test: ${n} checks pass`);
 process.exit(bad ? 1 : 0);
