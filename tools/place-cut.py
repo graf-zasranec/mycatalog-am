@@ -15,6 +15,13 @@
 #
 # --white cuts a product-on-pure-white source by luminance instead, which is what
 # the Airwrap needed.
+#
+# --flood is the answer when the product has BRIGHT INTERIOR CONTENT on a white backdrop: a
+# Kindle's e-ink page, a phone screen showing a pale wallpaper. rembg reads those as more
+# backdrop and eats them - the Paperwhite 12 came out with its whole page transparent and the
+# text floating in 1182 pieces - and --white eats them for the same reason. A flood only removes
+# what is CONNECTED to the frame edge, and a screen is enclosed by its own bezel, so it survives.
+# It also peels off the wedge of backdrop rembg sometimes leaves welded to a corner.
 import sys
 import numpy as np
 from PIL import Image
