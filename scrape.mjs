@@ -1083,6 +1083,7 @@ const names = Object.keys(SHOPS).filter(k => only ? k === only : !SHOPS[k].disab
 
 // Running one shop must not throw away the others. Start from what is already on disk and
 // replace only the shops this run actually covers.
+const TODAY = new Date().toISOString().slice(0, 10);
 const PRICES_FILE = 'data/prices.json';
 let prev = { shops: {}, offers: {} };
 if (fs.existsSync(PRICES_FILE)) {
@@ -1097,6 +1098,10 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
   // the old one got there first. 23 dead links and 38 category urls survived several edits that
   // way.
   const keep = list.filter(o => !names.includes(o.shop) && !o.seeded);
+  // An offer we are not re-fetching keeps the date it already had. One that predates the field
+  // gets the date of the file it came out of, which is when it was last confirmed present -
+  // borrowing today's would be the same false claim the field exists to remove.
+  for (const o of keep) if (!o.seen) o.seen = (prev.generated || '').slice(0, 10) || TODAY;
   if (keep.length) offers[id] = keep;
 }
 const report = [];
@@ -1142,7 +1147,9 @@ for (const key of names) {
     report.push({ shop: key, offers: had.length, models: new Set(had.map(o => o.id)).size, stale: true });
     continue;
   }
-  for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key });
+  // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
+// that failed keeps whatever date it already had, which is the point of having one.
+for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, seen: TODAY });
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
   console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (dropped ? ` (${dropped} implausible dropped)` : '') + collapse);

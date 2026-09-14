@@ -175,6 +175,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* the panel is the width of the box on desktop; on a phone the box spans the row, so it does too */
 @media (max-width:820px){.sugg{max-height:60vh;overflow-y:auto}}
 
+.orow .stale{font-style:normal;font-size:10.5px;padding:1px 5px;border-radius:var(--pill);
+  background:var(--surface2);color:var(--muted);margin-left:6px;white-space:nowrap}
+
 /* ---- filters fold away: eleven chips above the results is most of a phone screen ---- */
 .fbar.folded > *{display:none}
 .fbar.folded > .spacer,.fbar.folded > [data-drop="sort"]{display:inline-flex}
