@@ -2394,14 +2394,14 @@
   ],
   "tier": "upper-mid",
   "released": "2025-08",
-  "priceAmd": 299000,
-  "priceAmdMax": 339000,
+  "priceAmd": 310000,
+  "priceAmdMax": 399900,
   "popularity": 74,
   "accent": "#4C6B8A",
   "display": {
    "size": 6.3,
    "type": "Actua OLED",
-   "resolution": "2424x1080",
+   "resolution": "1080x2424",
    "refresh": 120,
    "protection": "Gorilla Glass Victus 2"
   },
@@ -2417,7 +2417,7 @@
    {
     "ram": 12,
     "storage": 256,
-    "priceAmd": 339000
+    "priceAmd": 310000
    }
   ],
   "camera": {
@@ -2425,7 +2425,7 @@
    "main": "48MP, f/1.7, OIS",
    "ultrawide": "13MP, f/2.2",
    "telephoto": "10.8MP, 5x optical, OIS",
-   "front": "10.5MP"
+   "front": "10.5MP Dual PD, f/2.2, autofocus"
   },
   "battery": {
    "capacity": 4970,
@@ -2451,21 +2451,8 @@
   ],
   "summaryEn": "The first plain Pixel with a telephoto camera, on the Tensor G5.",
   "unsure": [
-   "priceAmd",
-   "priceAmdMax",
    "popularity",
-   "display.type",
-   "display.protection",
-   "camera.main",
-   "camera.ultrawide",
-   "camera.telephoto",
-   "camera.front",
-   "battery.capacity",
-   "battery.wired",
-   "battery.wireless",
-   "connectivity.wifi",
-   "connectivity.bluetooth",
-   "colors"
+   "variants[].priceAmd"
   ]
  },
  {
@@ -5547,15 +5534,15 @@
   ],
   "tier": "budget",
   "released": "2024-04",
-  "priceAmd": 22900,
-  "priceAmdMax": 22900,
+  "priceAmd": 21900,
+  "priceAmdMax": 21900,
   "popularity": 58,
   "accent": "#E8562A",
   "variants": [
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 22900
+    "priceAmd": 21900
    }
   ],
   "audio": {
@@ -5581,10 +5568,12 @@
   ],
   "summaryEn": "A pocket speaker that survives dust and a dunk, with a carry loop.",
   "unsure": [
-   "priceAmd",
-   "priceAmdMax",
    "popularity",
-   "colors"
+   "colors",
+   "body.ip",
+   "body.weight",
+   "battery.life",
+   "connectivity.bluetooth"
   ]
  },
  {
