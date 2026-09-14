@@ -886,6 +886,27 @@ a.store:hover .nm{color:var(--brand)}
   .fx-flash{animation:fxflash .8s ease-out!important}
   .grid.gridin>*{animation:gridinFade .2s ease both!important}
 }
+/* ================= a finger, not a mouse pointer =================
+   Measured at 375 px: the plus that adds a card to a comparison was 26x26, the language buttons
+   38x25, the theme switch and the page numbers 34x34, and the only part of a card that opened
+   the product was the 22 px line of its title. A fingertip covers about 9 mm, which is why 44 px
+   is the figure everyone settles on.
+
+   Two different fixes, because the controls have two different problems. The ones that look
+   right at the size they are drawn keep their size and get a bigger TARGET - an invisible 44 px
+   square centred on them. The ones that are simply short get taller. Both only under
+   (pointer: coarse), so nothing about the desktop layout moves. */
+@media (pointer: coarse){
+  .ctabs .ctab, .fmore, .pg, .toggle, .fbar summary, .cmpbtn, #langs button{min-height:44px}
+  .fav::after, .srch-go::after, .th::after, #langs button::after{
+    content:'';position:absolute;top:50%;left:50%;width:44px;height:44px;
+    transform:translate(-50%,-50%);border-radius:50%}
+  .th, #langs button{position:relative}
+  /* The whole card opens the product, not just the title. .pcard is already positioned, and the
+     plus is lifted above the stretched link so it still adds to the comparison instead. */
+  .pcard h3 a::after{content:'';position:absolute;inset:0;z-index:1}
+  .fav{z-index:3}
+}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
