@@ -46,7 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  filterBar, askable, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText,
+  filterBar, askable, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -168,6 +168,13 @@ const withOffers = phones.find(p => new Set((prices.offers[p.id] || []).map(o =>
 const rws = app.shopRows(withOffers, 3);
 is(new Set(rws.map(r => r[0])).size, rws.length, 'one row per shop');
 is(rws.map(r => r[1]).every((v, i, a) => !i || v >= a[i - 1]), true, 'cheapest shop first');
+
+/* --- a figure the data flags as unconfirmed says so ------------------------------------ */
+const uns = { unsure: ['battery.capacity', 'connectivity'] };
+is(app.unsureRow(uns, 'f.capacity'), true, 'an unconfirmed field is marked');
+is(app.unsureRow(uns, 'f.wifi'), true, 'a whole unconfirmed block covers its rows');
+is(app.unsureRow(uns, 'f.weight'), false, 'a confirmed field is not marked');
+is(app.unsureRow({}, 'f.capacity'), false, 'nothing flagged, nothing marked');
 
 /* --- the countdown counts down, and stops ---------------------------------------------- */
 is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');

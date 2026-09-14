@@ -446,6 +446,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .fav.off{opacity:.25;transition:opacity .35s ease}
 .fav{transition:opacity .35s ease}
 .badge{position:absolute;top:10px;left:10px;height:22px;padding:0 10px;border-radius:var(--pill);background:var(--text);
+/* A product no Armenian shop is listing. The catalogue only carries stock you can buy, so this
+   is the one card state that has to contradict the badge beside it rather than decorate it. */
+.badge.na{background:var(--surface2);color:var(--muted);border:1px solid var(--line2)}
   color:var(--bg);font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;display:inline-flex;align-items:center;z-index:2;letter-spacing:.01em}
 .pbody{padding:12px 4px 2px;display:flex;flex-direction:column;flex:1}
 .eyebrow{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase}
@@ -460,6 +463,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 .pfoot{margin-top:auto;padding-top:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
 .pprice{font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
 .pprice s{display:block;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0}
+/* A figure the data itself flags as unconfirmed. Quiet - it qualifies the number, it does not
+   shout at it - and it carries its reason in a title so it is not a mystery mark. */
+.unsure{font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--muted);border:1px solid var(--line2);border-radius:var(--pill);padding:1px 7px;
+  margin-left:6px;white-space:nowrap;text-decoration:none;vertical-align:1px}
 /* The other shops' prices. A card that says "3 shops" names a spread without showing it. */
 .poffers{list-style:none;margin:10px -4px 0;padding:8px 4px 0;border-top:1px solid var(--line2);
   display:flex;flex-direction:column;gap:4px}

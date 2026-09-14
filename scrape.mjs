@@ -129,6 +129,10 @@ function looksLikeAccessory(text) {
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
 }
+// Which shop is being crawled right now, so a title nothing in the catalogue answers to can be
+// filed under it. Deciding what to add next used to be guesswork; this makes it a reading.
+let CURSHOP = '';
+const MISSED = new Map();
 function matchPhone(text) {
   if (looksLikeAccessory(text)) return null;
   const h = tokenized(text).replace(/  +/g, ' ');
@@ -140,6 +144,11 @@ function matchPhone(text) {
   for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2')])) {
     const id = matchIn(' ' + v + ' ');
     if (id) return id;
+  }
+  // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
+  // title, so a title wins when both readings of the same item miss.
+  if (CURSHOP && !/^https?:/i.test(text)) {
+    (MISSED.get(CURSHOP) || MISSED.set(CURSHOP, new Map()).get(CURSHOP)).set(norm(text), String(text).trim());
   }
   return null;
 }
@@ -1162,6 +1171,7 @@ const report = [];
 
 for (const key of names) {
   const s = SHOPS[key];
+  CURSHOP = key;
   process.stdout.write(`[${s.name}] `);
   let got = [], threw = false;
   try { got = await s.run(); } catch (e) { threw = true; console.warn('adapter failed:', e.message); }
@@ -1407,7 +1417,16 @@ for (const [id, list] of Object.entries(offers)) {
 }
 if (deduped) console.log(`${deduped} duplicate offer row(s) collapsed`);
 
+// What the shops are selling that this catalogue does not list. Only the shops that ran are
+// rewritten, so a single-shop run does not erase the others' readings.
+const MISSF = 'data/unmatched.json';
+const missPrev = fs.existsSync(MISSF) ? JSON.parse(fs.readFileSync(MISSF, 'utf8')) : { shops: {} };
+for (const [shop, m] of MISSED) missPrev.shops[shop] = [...m.values()].sort();
+missPrev.generated = new Date().toISOString();
 fs.mkdirSync('data', { recursive: true });
+fs.writeFileSync(MISSF, JSON.stringify(missPrev, null, 1));
+console.log(`${[...MISSED.values()].reduce((n, m) => n + m.size, 0)} title(s) on the shelves that the catalogue has no entry for -> ${MISSF}`);
+
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),
   // Shops this CRAWLER will not read. Each names ClaudeBot with Disallow: / , and fetching them

@@ -29,6 +29,7 @@ const X = {
     tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
     any: 'Բոլորը', min: 'նվազ.', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
     dS: 'օ', hS: 'ժ', mS: 'ր',
+    unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
@@ -50,6 +51,7 @@ const X = {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
     any: 'Все', min: 'от', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
     dS: 'д', hS: 'ч', mS: 'м',
+    unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
@@ -71,6 +73,7 @@ const X = {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
     any: 'All', min: 'from', newBadge: 'New', view: 'View', allFilters: 'All filters',
     dS: 'd', hS: 'h', mS: 'm',
+    unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
@@ -510,6 +513,32 @@ const GROUPS = [
   ]]
 ];
 
+// Every product carries `unsure`: the list of fields whose value was not confirmed from the
+// maker's own sheet. The data has recorded that from the start and the page has been printing
+// those figures as fact. This says which field each spec row reads, so the ones that are not
+// certain are marked as not certain. A row with no entry here has nothing to be unsure about.
+const FIELD_OF = {
+  'f.screen_size': 'display.size', 'f.screen_type': 'display.type', 'f.resolution': 'display.resolution',
+  'f.refresh_rate': 'display.refresh', 'f.ppi': 'display.ppi', 'f.brightness': 'display.brightness',
+  'f.protection': 'display.protection', 'f.touch': 'display.touch',
+  'f.chipset': 'chipset.name', 'f.process': 'chipset.process', 'f.cpu': 'chipset.cpu',
+  'f.gpu': 'graphics.name', 'f.antutu': 'chipset.antutu', 'f.card_slot': 'cardSlot',
+  'f.main_cam': 'camera.main', 'f.ultrawide': 'camera.ultrawide', 'f.telephoto': 'camera.telephoto',
+  'f.front_cam': 'camera.front', 'f.video': 'camera.video',
+  'f.capacity': 'battery.capacity', 'f.charging': 'battery.wired', 'f.wireless': 'battery.wireless',
+  'f.weight': 'body.weight', 'f.materials': 'body.materials', 'f.ip_rating': 'body.ip',
+  'f.network': 'connectivity.network', 'f.wifi': 'connectivity.wifi', 'f.bluetooth': 'connectivity.bluetooth',
+  'f.nfc': 'connectivity.nfc', 'f.sim': 'connectivity.sim',
+  'f.os': 'os', 'f.updates': 'updates', 'f.released': 'released',
+};
+// A whole block can be flagged ('connectivity', 'battery'), which covers every row inside it.
+const unsureRow = (p, key) => {
+  const f = FIELD_OF[key];
+  if (!f) return false;
+  const u = p.unsure || [];
+  return u.includes(f) || u.includes(f.split('.')[0]);
+};
+
 /* ================= chrome ================= */
 const ICON_CHEV = '<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
 function paintChrome() {
@@ -762,7 +791,8 @@ function card(p) {
     || p.variants[0] || {};
   return `<article class="pcard">
     <div class="pshot"${cycShots(p.id).length > 1 ? ` data-cyc="${esc(p.id)}"` : ''}>
-      ${isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
+      ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
+        : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
@@ -912,6 +942,16 @@ setInterval(() => {
   const v = cdText(e.dataset.cd);
   if (v) e.textContent = v; else e.remove();
 }, 30000);
+
+// A counter, if one is configured, sees the first load and nothing after it: every page on this
+// site is a hash change. Both calls are optional chains, so with no counter this is three
+// property reads that find nothing.
+const countView = () => {
+  try {
+    window.umami?.track?.();
+    window.goatcounter?.count?.({ path: location.pathname + location.hash, event: false });
+  } catch (e) { }
+};
 
 // Categories are navigation, not a filter: one always-visible row, current item marked.
 // Counts come from the data, so a category appears the moment its first item lands.
@@ -1264,7 +1304,8 @@ function detailView(p) {
       // Catching that here covers every getter, including ones added for future categories.
       const bad = v == null || v === '' || /undefined|null|NaN/.test(String(v));
       const key = (k === 'f.storage' && p.variantUnit === 'mm') ? 'f.case_size' : k;
-      return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}</dd></div>`;
+      const q = unsureRow(p, k) ? ` <abbr class="unsure" title="${esc(x('unsureTip'))}">${esc(x('unsureMark'))}</abbr>` : '';
+      return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}${q}</dd></div>`;
     }).join('');
     return body ? `<section class="panel-c"><h3><i></i>${esc(t(g))}</h3><dl>${body}</dl></section>` : '';
   }).join('');
@@ -1642,6 +1683,8 @@ function render(keepScroll) {
     if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
   }
   paintChrome(); paintTray();
+  // not on a re-render (keepScroll): one visit per route, not one per filter change
+  if (!keepScroll) countView();
   const h = raw || '/';
   const mc = h.startsWith('/c/') ? h.slice(3) : null;
   // a category lives in the URL so it can be shared and the back button works

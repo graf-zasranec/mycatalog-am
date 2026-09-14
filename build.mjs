@@ -179,6 +179,22 @@ const SEO = {
   }
 };
 
+// A static site on GitHub Pages knows nothing about its own visitors: no server, no log anyone
+// can read. Counting them needs a third party, so which one is a file and not a code change,
+// and with no file there is no counter, no third-party request and no change to the policy
+// below. data/analytics.json: { "provider": "umami", "id": "<site id>", "host": "<origin>" }
+// or { "provider": "goatcounter", "id": "<your code>" }.
+const AN = fs.existsSync('data/analytics.json') ? JSON.parse(rd('data/analytics.json')) : null;
+const COUNTER = !AN ? { tag: '', script: [], connect: [], img: [] }
+  : AN.provider === 'umami' ? {
+      tag: `<script defer src="${AN.host || 'https://cloud.umami.is'}/script.js" data-website-id="${AN.id}"><\/script>`,
+      script: [AN.host || 'https://cloud.umami.is'], connect: [AN.host || 'https://cloud.umami.is'], img: [] }
+  : AN.provider === 'goatcounter' ? {
+      tag: `<script data-goatcounter="https://${AN.id}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"><\/script>`,
+      script: ['https://gc.zgo.at'], connect: [`https://${AN.id}.goatcounter.com`], img: [`https://${AN.id}.goatcounter.com`] }
+  : (() => { throw new Error('data/analytics.json: unknown provider ' + AN.provider); })();
+if (AN) console.log(`visitor counter: ${AN.provider}`);
+
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
 
@@ -192,7 +208,7 @@ const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').di
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${COUNTER.connect.length ? COUNTER.connect.join(' ') : "'none'"}; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="${SEO.desc}">
@@ -213,6 +229,7 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <script type="application/ld+json">${JSON.stringify(SEO.ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>${THEME_JS}<\/script>
+${COUNTER.tag}
 `;
 const HEAD_CLOSE = `</head><body>
 `;
