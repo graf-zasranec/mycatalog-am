@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T08:30:40.851Z",
+ "generated": "2026-09-15T08:38:37.013Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -4009,7 +4009,8 @@
     "title": "Apple AirPods Max 2 Midnight",
     "price": 318900,
     "storage": null,
-    "url": "https://www.zigzag.am/en/accessories/headphones-and-headsets.html",
+    "color": "Midnight",
+    "url": "https://www.zigzag.am/am/apple-airpods-max-2-midnight-mhwk4ze-a.html",
     "seeded": true
    }
   ],
@@ -4423,7 +4424,7 @@
     "url": "https://allsell.am/en/apple-watch-se-3-gps",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_-_2025-09-10t112421.302_3.jpg",
     "price": 112400,
-    "storage": null,
+    "storage": 40,
     "ram": null,
     "color": "Starlight",
     "inStock": true,
@@ -4436,12 +4437,22 @@
     "title": "Apple Watch SE 3 GPS 40mm Midnight/Midnight (MEH94RK/A) (94ET/A)",
     "url": "https://vlv.am/en/Product/43400",
     "image": "https://vlv.am/public/uploads/images/23-03-2026/69c13ca113f39.webp",
-    "storage": null,
+    "storage": 40,
     "ram": null,
     "inStock": true,
     "color": "Midnight",
     "shop": "vlv",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "zigzag",
+    "title": "Apple Watch SE 3 40mm Midnight",
+    "price": 114900,
+    "storage": 40,
+    "color": "Midnight",
+    "url": "https://www.zigzag.am/am/apple-watch-se-3-gps-40mm-midnight-midnight-sport-band-s-m-meh94.html",
+    "seeded": true
    },
    {
     "id": "apple-watch-se-3",
@@ -4483,7 +4494,7 @@
    {
     "id": "apple-watch-se-3",
     "price": 129900,
-    "storage": null,
+    "storage": 44,
     "title": "Apple Watch SE GPS Gen.3,  Starlight Sport Band, S/M, 40մմ, Starlight",
     "url": "https://ispace.am/product/apple-watch-se-gps-gen3-starlight-sport-band-sm-40mm-starlight-meh34rk-a",
     "sku": "MEH34RK/A",
@@ -4497,7 +4508,7 @@
    {
     "id": "apple-watch-se-3",
     "price": 129900,
-    "storage": null,
+    "storage": 44,
     "title": "Apple Watch SE GPS Gen.3,  Midnight Sport Band, S/M, 40մմ, Midnight",
     "url": "https://ispace.am/product/apple-watch-se-gps-gen3-midnight-sport-band-sm-40mm-midnight-meh94rk-a",
     "sku": "MEH94RK/A",
@@ -4507,6 +4518,16 @@
     "color": "Midnight",
     "shop": "ispace",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "zigzag",
+    "title": "Apple Watch SE 3 44mm Starlight",
+    "price": 133900,
+    "storage": 44,
+    "color": "Starlight",
+    "url": "https://www.zigzag.am/am/apple-watch-se-3-gps-44mm-starlight-starlight-sport-band-s-m-mehg4.html",
+    "seeded": true
    }
   ],
   "apple-macbook-neo-13": [
@@ -6460,19 +6481,6 @@
     "id": "samsung-galaxy-a37",
     "price": 159900,
     "storage": 256,
-    "title": "Samsung A37",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-256gb-graygreen/2639/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744170907638.png",
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "telecom",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 159900,
-    "storage": 256,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376E/DS 8GB 256GB (Awesome Graygreen)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-a37-5g-sm-a376eds-8gb-256gb-awesome-graygreen.html",
     "inStock": true,
@@ -6506,6 +6514,19 @@
     "ram": 8,
     "color": "White",
     "shop": "vega",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 159900,
+    "storage": 256,
+    "title": "Samsung A37",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a37-8-256gb-graygreen/2639/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17744170907638.png",
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "telecom",
     "seen": "2026-09-15"
    },
    {
@@ -6969,8 +6990,8 @@
     "title": "Samsung Galaxy A57 5G",
     "price": 165000,
     "storage": 128,
-    "color": "Not specified",
-    "url": "https://www.zigzag.am/en/promo/current-1/zigzag-bts/smartphones.html",
+    "color": "Awesome Navy",
+    "url": "https://www.zigzag.am/am/samsung-galaxy-a57-8gb-128gb-awesome-navy.html",
     "seeded": true
    },
    {
@@ -7929,19 +7950,6 @@
     "id": "samsung-galaxy-s26-ultra",
     "price": 479900,
     "storage": 256,
-    "title": "Samsung S26 Ultra",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-256gb-white/2599/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17725396854756.png",
-    "inStock": true,
-    "ram": null,
-    "color": "White",
-    "shop": "telecom",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 479900,
-    "storage": 256,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy S26 Ultra SM-S948B/DS 12GB 256GB (Cobalt Violet)",
     "url": "https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-samsung-galaxy-s26-ultra-sm-s948bds-12gb-256gb-cobalt-violet.html",
     "inStock": true,
@@ -7979,6 +7987,19 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
+    "price": 479900,
+    "storage": 256,
+    "title": "Samsung S26 Ultra",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-256gb-white/2599/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17725396854756.png",
+    "inStock": true,
+    "ram": null,
+    "color": "White",
+    "shop": "telecom",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
     "price": 489000,
     "title": "Samsung Galaxy S26 Ultra 12GB/512GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-black",
@@ -8008,25 +8029,22 @@
    {
     "id": "samsung-galaxy-s26-ultra",
     "shop": "zigzag",
-    "title": "Samsung Galaxy S26 Ultra Black",
-    "price": 569000,
+    "title": "Samsung Galaxy S26 Ultra Violet",
+    "price": 499000,
     "storage": 256,
-    "color": "Black",
-    "url": "https://www.zigzag.am/en/promo/current-1/zigzag-bts/smartphones.html",
+    "color": "Cobalt Violet",
+    "url": "https://www.zigzag.am/am/samsung-galaxy-s26-ultra-12gb-256gb-cobalt-violet.html",
     "seeded": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 569900,
+    "shop": "zigzag",
+    "title": "Samsung Galaxy S26 Ultra 512GB",
+    "price": 569000,
     "storage": 512,
-    "title": "Samsung S26 Ultra",
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-512gb-skyblue/2613/",
-    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17727781496089.png",
-    "inStock": true,
-    "ram": null,
-    "color": "Blue",
-    "shop": "telecom",
-    "seen": "2026-09-15"
+    "color": "Black",
+    "url": "https://www.zigzag.am/am/samsung-galaxy-s26-ultra-12gb-512gb-black.html",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -8052,6 +8070,19 @@
     "ram": 12,
     "color": "White",
     "shop": "vega",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 569900,
+    "storage": 512,
+    "title": "Samsung S26 Ultra",
+    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-s26ultra-12-512gb-skyblue/2613/",
+    "image": "https://www.telecomarmenia.am/eshop/images/product/12/17727781496089.png",
+    "inStock": true,
+    "ram": null,
+    "color": "Blue",
+    "shop": "telecom",
     "seen": "2026-09-15"
    },
    {
@@ -9124,16 +9155,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A36",
-    "price": 129900,
-    "storage": 128,
-    "color": "Not specified",
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a36",
-    "seeded": true
    }
   ],
   "poco-x7-pro": [
@@ -16780,7 +16801,8 @@
     "title": "Sony WH-CH520 Yellow",
     "price": 26900,
     "storage": null,
-    "url": "https://www.zigzag.am/en/sony",
+    "color": "Yellow",
+    "url": "https://www.zigzag.am/am/sony-wh-ch520-yz.html",
     "seeded": true
    },
    {
@@ -17989,16 +18011,6 @@
    },
    {
     "id": "dyson-airwrap-hs09",
-    "shop": "zigzag",
-    "title": "Dyson Airwrap HS09",
-    "price": 299000,
-    "storage": null,
-    "color": "Amber Silk",
-    "url": "https://www.zigzag.am/en/shop-by-brand/dyson",
-    "seeded": true
-   },
-   {
-    "id": "dyson-airwrap-hs09",
     "price": 329000,
     "title": "Dyson Airwrap HS09 Amber Silk",
     "url": "https://redstore.am/en/product/dyson-airwrap-hs09-amber-silk",
@@ -18010,6 +18022,16 @@
     "color": "Amber Silk",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "dyson-airwrap-hs09",
+    "shop": "zigzag",
+    "title": "Dyson Airwrap HS09",
+    "price": 329000,
+    "storage": null,
+    "color": "Amber Silk",
+    "url": "https://www.zigzag.am/am/dyson-airwrap-hs09-multi-styler-amber-silk.html",
+    "seeded": true
    },
    {
     "id": "dyson-airwrap-hs09",
@@ -18455,6 +18477,16 @@
   "sony-wh-ch720n": [
    {
     "id": "sony-wh-ch720n",
+    "shop": "zigzag",
+    "title": "Sony WH-CH720N Black",
+    "price": 56900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://www.zigzag.am/am/sony-wh-ch720n-bce.html",
+    "seeded": true
+   },
+   {
+    "id": "sony-wh-ch720n",
     "shop": "eldorado",
     "title": "Sony WH-CH720N White",
     "price": 57900,
@@ -18757,6 +18789,16 @@
     "color": "White",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "sonos-era-300",
+    "shop": "zigzag",
+    "title": "Sonos Era 300 White",
+    "price": 276900,
+    "storage": null,
+    "color": "White",
+    "url": "https://www.zigzag.am/am/sonos-era-300-white-e30g1eu1.html",
+    "seeded": true
    }
   ],
   "xiaomi-redmi-note-13-pro": [
@@ -19060,7 +19102,8 @@
     "title": "Sony WF-C710N Black",
     "price": 52900,
     "storage": null,
-    "url": "https://www.zigzag.am/en/sony",
+    "color": "Black",
+    "url": "https://www.zigzag.am/am/sony-wf-c710n-bz.html",
     "seeded": true
    }
   ],
@@ -19114,7 +19157,7 @@
     "price": 261900,
     "storage": null,
     "color": "White",
-    "url": "https://www.zigzag.am/en/sony",
+    "url": "https://www.zigzag.am/am/sonos-ace-white-aceg1r21.html",
     "seeded": true
    }
   ],
@@ -19126,17 +19169,6 @@
     "price": 29900,
     "storage": null,
     "url": "https://www.zigzag.am/en/audio-technica-ath-s220bt-white-wireless-headphone-ath-s220btwh.html",
-    "seeded": true
-   }
-  ],
-  "amazon-kindle-paperwhite-kids-11": [
-   {
-    "id": "amazon-kindle-paperwhite-kids-11",
-    "shop": "yerevanmobile",
-    "title": "Amazon Kindle Kids Paperwhite 11 Gen",
-    "price": 75000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/electronics/tablets.html",
     "seeded": true
    }
   ]
