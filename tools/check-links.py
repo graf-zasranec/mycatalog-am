@@ -21,6 +21,11 @@ from pathlib import Path
 
 from scrapling.fetchers import Fetcher
 
+# Shop titles are Armenian and Russian, and Windows hands a redirected stdout cp1252, which
+# cannot encode either: the whole sweep finished and then died printing its first line.
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+
 ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / 'data' / 'listings.csv'
 PRICES = ROOT / 'data' / 'prices.json'
@@ -80,12 +85,18 @@ def check_all():
         if host == last_host:
             time.sleep(0.4)          # one at a time per host, with a gap
         last_host = host
-        try:
-            r = Fetcher.get(u, impersonate='chrome', timeout=25)
-            st, html = r.status, (r.html_content or '')
-            done[u] = {'status': st, 'stock': stock_of(html)}
-        except Exception as e:
-            done[u] = {'status': 'ERR', 'why': type(e).__name__}
+        # One retry before believing it. Three redstore urls came back DNSError in a sweep where
+        # every other redstore page answered 200, and all three answer 200 on a second ask -
+        # a checker that cries broken over a blip is worse than no checker.
+        for attempt in (1, 2):
+            try:
+                r = Fetcher.get(u, impersonate='chrome', timeout=25)
+                done[u] = {'status': r.status, 'stock': stock_of(r.html_content or '')}
+                break
+            except Exception as e:
+                done[u] = {'status': 'ERR', 'why': type(e).__name__}
+                if attempt == 1:
+                    time.sleep(2)
         if i % 25 == 0:
             STATE.write_text(json.dumps(done), encoding='utf8')
             print(f'  {i}/{len(urls)}', flush=True)

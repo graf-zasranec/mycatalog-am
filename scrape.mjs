@@ -750,7 +750,13 @@ const SHOPS = {
           if (!id) continue;
           // the listing serves 250x250; the same path also serves 500x500 (and 1500x1500)
           const thumb = (b.match(/src="(https:\/\/vega\.am\/image\/cache\/catalog\/[^"]+?\.jpg)"/) || [])[1];
-          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url, inStock: true,
+          // Vega marks every tile: instock is "Առկա է", and outofstock covers "Առկա չէ",
+          // "Պատվերով" (to order) and "Ճշտել առկայությունը" (ask us) - none of which is a
+          // phone you can walk out with. This adapter used to assert inStock: true for all of
+          // them, and 60 sold-out Vega listings were being published as buyable offers.
+          const stock = (b.match(/class="stock-status (instock|outofstock)"/) || [])[1];
+          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url,
+            inStock: stock ? stock === 'instock' : undefined,
             image: thumb ? thumb.replace(/-250x250\.jpg$/, '-500x500.jpg') : null });
         }
         if (blocks.length < 5) break;
