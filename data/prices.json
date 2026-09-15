@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T08:38:37.013Z",
+ "generated": "2026-09-15T11:36:20.626Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -129,6 +129,17 @@
     "ram": null,
     "shop": "planet3d",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Deep Blue eSim",
+    "price": 488000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue-esim",
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -368,16 +379,6 @@
     "shop": "ibolit",
     "seen": "2026-09-15",
     "esim": false
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Silver",
-    "price": 529000,
-    "storage": 256,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1069,12 +1070,13 @@
    {
     "id": "apple-iphone-17-pro-max",
     "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Silver",
+    "title": "iPhone 17 Pro Max 256GB Silver eSim",
     "price": 575000,
     "storage": 256,
     "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
-    "seeded": true
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver-esim",
+    "seeded": true,
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1644,6 +1646,17 @@
    },
    {
     "id": "apple-iphone-17",
+    "shop": "redstore",
+    "title": "iPhone 17 256GB Black eSim",
+    "price": 364000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
+    "seeded": true,
+    "esim": true
+   },
+   {
+    "id": "apple-iphone-17",
     "price": 364900,
     "storage": 256,
     "title": "iPhone 17 256GB Dual eSIM (Lavender)",
@@ -1655,16 +1668,6 @@
     "shop": "mobilecentre",
     "seen": "2026-09-15",
     "esim": true
-   },
-   {
-    "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB Black",
-    "price": 378000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-black",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -3430,6 +3433,62 @@
    },
    {
     "id": "apple-ipad-pro-11-m5",
+    "price": 499000,
+    "title": "Pro 11 256GB WiFi 2025 Silver",
+    "url": "https://redstore.am/en/product/ipad-pro-11-256gb-wifi-2025-silver",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/13/bezymiannyi-2-montaznaia-oblast-1.jpg",
+    "sku": "R723973",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 499000,
+    "title": "Pro 11 256GB WiFi 2025 Space Black",
+    "url": "https://redstore.am/en/product/ipad-pro-11-256gb-wifi-2025-space-black",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/13/evyhf-montaznaia-oblast-1.jpg",
+    "sku": "R723974",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 559000,
+    "title": "Pro 11 512GB WiFi 2025 Space Black",
+    "url": "https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2025-space-black",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59666/image/gyi-montaznaia-oblast-1.jpg",
+    "sku": "R89703",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "price": 559000,
+    "title": "Pro 11 512GB WiFi 2025 Silver",
+    "url": "https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2025-silver",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59667/image/fu-montaznaia-oblast-1.jpg",
+    "sku": "R89708",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
     "price": 628900,
     "storage": 256,
     "title": "iPad Pro 11 M5, 256 ԳԲ Wi-Fi Ստանդարտ ապակի 2025, Արծաթագույն",
@@ -3515,13 +3574,45 @@
    },
    {
     "id": "apple-ipad-air-11-m4",
-    "shop": "redstore",
-    "title": "Apple iPad Air 11 M4",
     "price": 329000,
+    "title": "Air 11 128GB WiFi 2026 Space Gray",
+    "url": "https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-space-gray",
     "storage": 128,
-    "color": "Blue",
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60077/image/ssw-montaznaia-oblast-1.webp",
+    "sku": "R97757",
+    "ram": null,
+    "color": "Space Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 329000,
+    "title": "Air 11 128GB WiFi 2026 Purple",
+    "url": "https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-purple",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60078/image/sdfre-montaznaia-oblast-1.webp",
+    "sku": "R97772",
+    "ram": null,
+    "color": "Purple",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 329000,
+    "title": "Air 11 128GB WiFi 2026 Blue",
     "url": "https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-blue",
-    "seeded": true
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60079/image/gui-montaznaia-oblast-1.webp",
+    "sku": "R97777",
+    "ram": null,
+    "color": "Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
    },
    {
     "id": "apple-ipad-air-11-m4",
@@ -3609,6 +3700,48 @@
    },
    {
     "id": "apple-ipad-air-11-m4",
+    "price": 399000,
+    "title": "iPad Air 11 256GB WiFi 2026 Space Gray",
+    "url": "https://redstore.am/en/product/ipad-air-11-256gb-wifi-2026-space-gray",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61066/image/bezymiannyi-1-montaznaia-oblast-1.webp",
+    "sku": "RA06874",
+    "ram": null,
+    "color": "Space Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 399000,
+    "title": "iPad Air 11 256GB WiFi 2026 Blue",
+    "url": "https://redstore.am/en/product/ipad-air-11-256gb-wifi-2026-blue",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61067/image/bezymiannyi-1-montaznaia-oblast-1.webp",
+    "sku": "RA06879",
+    "ram": null,
+    "color": "Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "price": 399000,
+    "title": "iPad Air 11 256GB WiFi 2026 Purple",
+    "url": "https://redstore.am/en/product/ipad-air-11-256gb-wifi-2026-purple",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61068/image/bezymiannyi-1-montaznaia-oblast-1.webp",
+    "sku": "RA06884",
+    "ram": null,
+    "color": "Purple",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
     "price": 441900,
     "storage": 256,
     "title": "iPad Air 11 M4, 256 ԳԲ Wi-Fi 2026, Մոխրագույն տիեզերք",
@@ -3668,6 +3801,19 @@
     "id": "apple-airpods-pro-3",
     "price": 99000,
     "title": "Apple AirPods Pro 3",
+    "url": "https://3dplanet.am/en/store/product/apple-airpods-pro-3",
+    "image": null,
+    "storage": null,
+    "inStock": true,
+    "ram": null,
+    "color": "White",
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 99000,
+    "title": "Apple AirPods Pro 3",
     "url": "https://redstore.am/en/product/apple-airpods-pro-3",
     "storage": null,
     "inStock": true,
@@ -3676,19 +3822,6 @@
     "ram": null,
     "color": "White",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-airpods-pro-3",
-    "price": 99000,
-    "title": "Apple AirPods Pro 3",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-pro-3",
-    "image": null,
-    "storage": null,
-    "inStock": true,
-    "ram": null,
-    "color": "White",
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -3798,6 +3931,19 @@
    {
     "id": "apple-airpods-max-2",
     "price": 239000,
+    "title": "Apple AirPods Max 2",
+    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
+    "image": null,
+    "storage": null,
+    "color": "Blue",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "price": 239000,
     "title": "Apple AirPods Max 2 Midnight",
     "url": "https://redstore.am/en/product/apple-airpods-max-2-midnight",
     "storage": null,
@@ -3849,19 +3995,6 @@
     "ram": null,
     "color": "Orange",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "price": 239000,
-    "title": "Apple AirPods Max 2",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
-    "image": null,
-    "storage": null,
-    "color": "Blue",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -4018,20 +4151,6 @@
    {
     "id": "apple-airpods-4",
     "price": 52000,
-    "title": "Apple Airpods 4",
-    "url": "https://redstore.am/en/product/apple-airpods-4",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/11/12/gdsdxs-montaznaia-oblast-1.jpg",
-    "sku": "R6060093",
-    "ram": null,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-airpods-4",
-    "price": 52000,
     "title": "Apple AirPods 4",
     "url": "https://ibolit.mobi/product/apple-airpods-4/",
     "storage": null,
@@ -4041,6 +4160,20 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-4",
+    "price": 52000,
+    "title": "Apple Airpods 4",
+    "url": "https://redstore.am/en/product/apple-airpods-4",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/12/gdsdxs-montaznaia-oblast-1.jpg",
+    "sku": "R6060093",
+    "ram": null,
+    "color": "White",
+    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -4547,62 +4680,6 @@
    {
     "id": "apple-macbook-neo-13",
     "price": 309000,
-    "title": "Neo 13\" MHFD4(Citrus)",
-    "url": "https://redstore.am/en/product/macbook-neo-13-mhfd4citrus",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60042/image/5-montaznaia-oblast.webp",
-    "sku": "R96562",
-    "ram": null,
-    "color": "Citrus",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Neo 13\" MHFF4(Indigo)",
-    "url": "https://redstore.am/en/product/macbook-neo-13-mhff4indigo",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60043/image/sw-montaznaia-oblast-1.jpg",
-    "sku": "R96563",
-    "ram": null,
-    "color": "Indigo",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Neo 13\" MHFA4(Silver)",
-    "url": "https://redstore.am/en/product/macbook-neo-13-mhfa4silver",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60044/image/sww-montaznaia-oblast-1.jpg",
-    "sku": "R96568",
-    "ram": null,
-    "color": "Silver",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Neo 13\" MHFH4(Blush)",
-    "url": "https://redstore.am/en/product/macbook-neo-13-mhfh4blush",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60088/image/2-montaznaia-oblast-1.webp",
-    "sku": "R98190",
-    "ram": null,
-    "color": "Blush",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
     "title": "Apple MacBook Neo 13\" MHFD4(Citrus)",
     "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfd4citrus",
     "image": null,
@@ -4678,6 +4755,62 @@
     "ram": 8,
     "color": "Blush",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Neo 13\" MHFD4(Citrus)",
+    "url": "https://redstore.am/en/product/macbook-neo-13-mhfd4citrus",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60042/image/5-montaznaia-oblast.webp",
+    "sku": "R96562",
+    "ram": null,
+    "color": "Citrus",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Neo 13\" MHFF4(Indigo)",
+    "url": "https://redstore.am/en/product/macbook-neo-13-mhff4indigo",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60043/image/sw-montaznaia-oblast-1.jpg",
+    "sku": "R96563",
+    "ram": null,
+    "color": "Indigo",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Neo 13\" MHFA4(Silver)",
+    "url": "https://redstore.am/en/product/macbook-neo-13-mhfa4silver",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60044/image/sww-montaznaia-oblast-1.jpg",
+    "sku": "R96568",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Neo 13\" MHFH4(Blush)",
+    "url": "https://redstore.am/en/product/macbook-neo-13-mhfh4blush",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60088/image/2-montaznaia-oblast-1.webp",
+    "sku": "R98190",
+    "ram": null,
+    "color": "Blush",
+    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -4970,20 +5103,7 @@
   "apple-macbook-pro-16-m5-max": [
    {
     "id": "apple-macbook-pro-16-m5-max",
-    "title": "MacBook Pro 16.2\" M5 Max 36GB I 2TB MGE74 Silver",
-    "url": "https://allsell.am/en/macbook-pro-16-2-m5-max-36gb-i-2tb-mge74-silver",
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_10__8_6.jpg",
-    "price": 1899500,
-    "storage": 2048,
-    "ram": 36,
-    "color": "Black",
-    "inStock": true,
-    "shop": "allsell",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-pro-16-m5-max",
-    "price": 1909000,
+    "price": 1809000,
     "title": "Pro 16.2\" M5 Max MGED4(Space Black)",
     "url": "https://redstore.am/en/product/macbook-pro-162-m5-max-mged4space-black",
     "storage": 2048,
@@ -4997,7 +5117,7 @@
    },
    {
     "id": "apple-macbook-pro-16-m5-max",
-    "price": 1909000,
+    "price": 1809000,
     "title": "Pro 16.2\" M5 Max MGE74(Silver)",
     "url": "https://redstore.am/en/product/macbook-pro-162-m5-max-mge74silver",
     "storage": 2048,
@@ -5007,6 +5127,19 @@
     "ram": null,
     "color": "Silver",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-max",
+    "title": "MacBook Pro 16.2\" M5 Max 36GB I 2TB MGE74 Silver",
+    "url": "https://allsell.am/en/macbook-pro-16-2-m5-max-36gb-i-2tb-mge74-silver",
+    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_10__8_6.jpg",
+    "price": 1899500,
+    "storage": 2048,
+    "ram": 36,
+    "color": "Black",
+    "inStock": true,
+    "shop": "allsell",
     "seen": "2026-09-15"
    },
    {
@@ -5069,20 +5202,7 @@
    },
    {
     "id": "apple-macbook-pro-16-m5-pro",
-    "price": 1339000,
-    "storage": 1024,
-    "title": "Macbook PRO 16 M5 Pro",
-    "url": "https://www.pixel.am/am/product/macbook-pro-16-m5-pro",
-    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/186/800_1779813879-macbook-m5-pro-16-blk2.png",
-    "color": null,
-    "inStock": true,
-    "ram": null,
-    "shop": "pixel",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-pro-16-m5-pro",
-    "price": 1339000,
+    "price": 1289000,
     "title": "Pro 16.2\" M5 Pro MGEA4(Space Black)",
     "url": "https://redstore.am/en/product/macbook-pro-162-m5-pro-mgea4space-black",
     "storage": 1024,
@@ -5096,7 +5216,7 @@
    },
    {
     "id": "apple-macbook-pro-16-m5-pro",
-    "price": 1339000,
+    "price": 1289000,
     "title": "Pro 16.2\" M5 Pro MGE44(Silver)",
     "url": "https://redstore.am/en/product/macbook-pro-162-m5-pro-mge44silver",
     "storage": 1024,
@@ -5106,6 +5226,19 @@
     "ram": null,
     "color": "Silver",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-pro",
+    "price": 1339000,
+    "storage": 1024,
+    "title": "Macbook PRO 16 M5 Pro",
+    "url": "https://www.pixel.am/am/product/macbook-pro-16-m5-pro",
+    "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/186/800_1779813879-macbook-m5-pro-16-blk2.png",
+    "color": null,
+    "inStock": true,
+    "ram": null,
+    "shop": "pixel",
     "seen": "2026-09-15"
    },
    {
@@ -5140,6 +5273,34 @@
   "apple-macbook-pro-14-m5-pro": [
    {
     "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1149000,
+    "title": "Pro 14.2\" M5 Pro MGDN4(Silver)",
+    "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdn4silver",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60087/image/whatsapp-image-2026-04-01-at-190923.webp",
+    "sku": "R98184",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "price": 1149000,
+    "title": "Pro 14.2\" M5 Pro MGDR4(Space Black)",
+    "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdr4space-black",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60215/image/fr-montaznaia-oblast-1.webp",
+    "sku": "R1000000",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
     "title": "MacBook Pro 14.2\" M5 Pro 24GB I 1TB MGDR4 Space Black",
     "url": "https://allsell.am/en/macbook-pro-14-2-m5-pro-24gb-i-1tb-mgdr4-space-black",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_12__6_6.jpg",
@@ -5163,34 +5324,6 @@
     "ram": 24,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-pro-14-m5-pro",
-    "price": 1199000,
-    "title": "Pro 14.2\" M5 Pro MGDN4(Silver)",
-    "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdn4silver",
-    "storage": 1024,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60087/image/whatsapp-image-2026-04-01-at-190923.webp",
-    "sku": "R98184",
-    "ram": null,
-    "color": "Silver",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-pro-14-m5-pro",
-    "price": 1199000,
-    "title": "Pro 14.2\" M5 Pro MGDR4(Space Black)",
-    "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdr4space-black",
-    "storage": 1024,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60215/image/fr-montaznaia-oblast-1.webp",
-    "sku": "R1000000",
-    "ram": null,
-    "color": "Space Black",
-    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -5697,6 +5830,62 @@
    },
    {
     "id": "apple-macbook-air-13-m5",
+    "price": 649000,
+    "title": "Air 13.6'' M5 MDHE4(Midnight)",
+    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdhe4midnight",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60048/image/333-montaznaia-oblast-1.jpg",
+    "sku": "R96582",
+    "ram": null,
+    "color": "Midnight",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 649000,
+    "title": "Air 13.6'' M5 MDHA4(Starlight)",
+    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdha4starlight",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60049/image/ety-montaznaia-oblast-1-1.webp",
+    "sku": "R96588",
+    "ram": null,
+    "color": "Starlight",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 649000,
+    "title": "Air 13.6'' M5 MDHH4(Sky Blue)",
+    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdhh4sky-blue",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60050/image/jk-montaznaia-oblast-1.webp",
+    "sku": "R96593",
+    "ram": null,
+    "color": "Sky Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "price": 649000,
+    "title": "Air 13.6'' M5 MDH74(Silver)",
+    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdh74silver",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60051/image/e33-montaznaia-oblast-1.jpg",
+    "sku": "R96603",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
     "price": 655900,
     "storage": 512,
     "title": "MacBook Air 13.6-inch  M5 (10C CPU/8C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
@@ -5721,62 +5910,6 @@
     "ram": 16,
     "color": "Midnight",
     "shop": "ispace",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "price": 659000,
-    "title": "Air 13.6'' M5 MDHE4(Midnight)",
-    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdhe4midnight",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60048/image/333-montaznaia-oblast-1.jpg",
-    "sku": "R96582",
-    "ram": null,
-    "color": "Midnight",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "price": 659000,
-    "title": "Air 13.6'' M5 MDHA4(Starlight)",
-    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdha4starlight",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60049/image/ety-montaznaia-oblast-1-1.webp",
-    "sku": "R96588",
-    "ram": null,
-    "color": "Starlight",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "price": 659000,
-    "title": "Air 13.6'' M5 MDHH4(Sky Blue)",
-    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdhh4sky-blue",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60050/image/jk-montaznaia-oblast-1.webp",
-    "sku": "R96593",
-    "ram": null,
-    "color": "Sky Blue",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
-    "price": 659000,
-    "title": "Air 13.6'' M5 MDH74(Silver)",
-    "url": "https://redstore.am/en/product/macbook-air-136-m5-mdh74silver",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60051/image/e33-montaznaia-oblast-1.jpg",
-    "sku": "R96603",
-    "ram": null,
-    "color": "Silver",
-    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -6146,6 +6279,48 @@
    },
    {
     "id": "samsung-galaxy-a37",
+    "price": 127000,
+    "title": "Samsung Galaxy A37 8GB/128GB White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb128gb-white",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60106/image/hgg-montaznaia-oblast-1.webp",
+    "sku": "R97329",
+    "ram": 8,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 127000,
+    "title": "Samsung Galaxy A37 8GB/128GB Charkoal",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb128gb-charkoal",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60211/image/ffr-montaznaia-oblast-1.webp",
+    "sku": "R98641",
+    "ram": 8,
+    "color": null,
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 127000,
+    "title": "Samsung Galaxy A37 8GB/128GB Lavender",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb128gb-lavender",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60245/image/bnh-montaznaia-oblast-1.webp",
+    "sku": "R98839",
+    "ram": 8,
+    "color": "Lavender",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
     "price": 129900,
     "title": "Smartphone Samsung A376 Galaxy A37 5G 6/128GB DS Awesome Graygreen",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-6-128gb-ds-awesome-graygreen",
@@ -6226,48 +6401,6 @@
    {
     "id": "samsung-galaxy-a37",
     "price": 137000,
-    "title": "Samsung Galaxy A37 8GB/128GB White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb128gb-white",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60106/image/hgg-montaznaia-oblast-1.webp",
-    "sku": "R97329",
-    "ram": 8,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 137000,
-    "title": "Samsung Galaxy A37 8GB/128GB Charkoal",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb128gb-charkoal",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60211/image/ffr-montaznaia-oblast-1.webp",
-    "sku": "R98641",
-    "ram": 8,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 137000,
-    "title": "Samsung Galaxy A37 8GB/128GB Lavender",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb128gb-lavender",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60245/image/bnh-montaznaia-oblast-1.webp",
-    "sku": "R98839",
-    "ram": 8,
-    "color": "Lavender",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 137000,
     "title": "Samsung Galaxy A37",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a37",
     "image": null,
@@ -6308,6 +6441,48 @@
    },
    {
     "id": "samsung-galaxy-a37",
+    "price": 144000,
+    "title": "Samsung Galaxy A37 8GB/256GB Charkoal",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb256gb-charkoal",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60107/image/ffr-montaznaia-oblast-1.webp",
+    "sku": "R97334",
+    "ram": 8,
+    "color": null,
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 144000,
+    "title": "Samsung Galaxy A37 8GB/256GB White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb256gb-white",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60108/image/hgg-montaznaia-oblast-1.webp",
+    "sku": "R97344",
+    "ram": 8,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 144000,
+    "title": "Samsung Galaxy A37 8GB/256GB Lavender",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb256gb-lavender",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60239/image/bnh-montaznaia-oblast-1.webp",
+    "sku": "R100064",
+    "ram": 8,
+    "color": "Lavender",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a37",
     "price": 146900,
     "storage": 128,
     "title": "Սմարթ հեռախոս SAMSUNG Galaxy A37 5G SM-A376B/DS 6GB 128GB (Awesome Charcoal)",
@@ -6343,48 +6518,6 @@
     "ram": 6,
     "color": "Awesome Lavender",
     "shop": "vega",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 147000,
-    "title": "Samsung Galaxy A37 8GB/256GB Charkoal",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb256gb-charkoal",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60107/image/ffr-montaznaia-oblast-1.webp",
-    "sku": "R97334",
-    "ram": 8,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 147000,
-    "title": "Samsung Galaxy A37 8GB/256GB White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb256gb-white",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60108/image/hgg-montaznaia-oblast-1.webp",
-    "sku": "R97344",
-    "ram": 8,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 147000,
-    "title": "Samsung Galaxy A37 8GB/256GB Lavender",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a37-8gb256gb-lavender",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60239/image/bnh-montaznaia-oblast-1.webp",
-    "sku": "R100064",
-    "ram": 8,
-    "color": "Lavender",
-    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -6616,6 +6749,19 @@
    {
     "id": "samsung-galaxy-a56",
     "price": 142000,
+    "title": "Samsung Galaxy A56",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
+    "image": null,
+    "storage": 128,
+    "color": "Pink",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a56",
+    "price": 142000,
     "title": "Samsung Galaxy A56 8GB/128GB Light Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-light-gray",
     "storage": 128,
@@ -6643,19 +6789,6 @@
    },
    {
     "id": "samsung-galaxy-a56",
-    "price": 142000,
-    "title": "Samsung Galaxy A56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 128,
-    "color": "Pink",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a56",
     "price": 143900,
     "storage": 128,
     "title": "Samsung Galaxy A56 128GB (Awesome Pink)",
@@ -6678,6 +6811,20 @@
     "inStock": true,
     "color": null,
     "shop": "vlv",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a56",
+    "price": 144000,
+    "title": "Samsung Galaxy A56 5G 8/256GB Pink",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a56-5g-8-256gb-pink/",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/pink-3.jpg",
+    "sku": "IBL:80263",
+    "ram": null,
+    "color": "Awesome Pink",
+    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -6734,20 +6881,6 @@
     "ram": 8,
     "color": "Pink",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "price": 144000,
-    "title": "Samsung Galaxy A56 5G 8/256GB Pink",
-    "url": "https://ibolit.mobi/product/samsung-galaxy-a56-5g-8-256gb-pink/",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/pink-3.jpg",
-    "sku": "IBL:80263",
-    "ram": null,
-    "color": "Awesome Pink",
-    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -6820,6 +6953,62 @@
    },
    {
     "id": "samsung-galaxy-a57",
+    "price": 144000,
+    "title": "Samsung Galaxy A57 8GB/128GB Gray",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-gray",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60111/image/hh-montaznaia-oblast-1-1-1.webp",
+    "sku": "R97484",
+    "ram": 8,
+    "color": "Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 144000,
+    "title": "Samsung Galaxy A57 8GB/128GB Navy",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-navy",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60112/image/sw22-montaznaia-oblast-1-1.webp",
+    "sku": "R97499",
+    "ram": 8,
+    "color": "Navy",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 144000,
+    "title": "Samsung Galaxy A57 8GB/128GB Icyblue",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-icyblue",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60113/image/e32-montaznaia-oblast-1.webp",
+    "sku": "R97504",
+    "ram": 8,
+    "color": null,
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 144000,
+    "title": "Samsung Galaxy A57 8GB/128GB Lilac",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-lilac",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60114/image/se3-montaznaia-oblast-1.webp",
+    "sku": "R97509",
+    "ram": 8,
+    "color": "Lilac",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a57",
     "price": 145000,
     "title": "Samsung Galaxy A57 8/128GB (Awesome Gray)",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a57-128gb-awesome-gray/",
@@ -6872,62 +7061,6 @@
     "ram": null,
     "color": "Awesome Navy",
     "shop": "ibolit",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 149000,
-    "title": "Samsung Galaxy A57 8GB/128GB Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-gray",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60111/image/hh-montaznaia-oblast-1-1-1.webp",
-    "sku": "R97484",
-    "ram": 8,
-    "color": "Gray",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 149000,
-    "title": "Samsung Galaxy A57 8GB/128GB Navy",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-navy",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60112/image/sw22-montaznaia-oblast-1-1.webp",
-    "sku": "R97499",
-    "ram": 8,
-    "color": "Navy",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 149000,
-    "title": "Samsung Galaxy A57 8GB/128GB Icyblue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-icyblue",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60113/image/e32-montaznaia-oblast-1.webp",
-    "sku": "R97504",
-    "ram": 8,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 149000,
-    "title": "Samsung Galaxy A57 8GB/128GB Lilac",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-lilac",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60114/image/se3-montaznaia-oblast-1.webp",
-    "sku": "R97509",
-    "ram": 8,
-    "color": "Lilac",
-    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -7070,6 +7203,19 @@
    {
     "id": "samsung-galaxy-a57",
     "price": 167000,
+    "title": "Samsung Galaxy A57",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
+    "image": null,
+    "storage": 256,
+    "color": "Lilac Purple",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "price": 167000,
     "title": "Samsung Galaxy A57 8GB/256GB Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-gray",
     "storage": 256,
@@ -7093,19 +7239,6 @@
     "ram": 8,
     "color": "Navy",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "price": 167000,
-    "title": "Samsung Galaxy A57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 256,
-    "color": "Lilac Purple",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -7757,62 +7890,6 @@
    {
     "id": "samsung-galaxy-s26-ultra",
     "price": 399000,
-    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-black",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59936/image/img-4759.webp",
-    "sku": "R94646",
-    "ram": 12,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 399000,
-    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Cobalt Violet",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-cobalt-violet",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59937/image/bezymiannyi-4-montaznaia-oblast-1.webp",
-    "sku": "R94650",
-    "ram": 12,
-    "color": "Cobalt Violet",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 399000,
-    "title": "Samsung Galaxy S26 Ultra 12GB/256GB White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-white",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59938/image/sew-montaznaia-oblast-1-1.webp",
-    "sku": "R94651",
-    "ram": 12,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 399000,
-    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-blue",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59967/og_image/img-4758-1.webp",
-    "sku": "R94666",
-    "ram": 12,
-    "color": "Blue",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "price": 399000,
     "title": "Samsung Galaxy S26 Ultra 256 Pink Gold",
     "url": "https://ibolit.mobi/product/samsung-galaxy-s26-ultra-256-pink-gold/",
     "storage": 256,
@@ -7878,6 +7955,62 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 419000,
+    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-black",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59936/image/img-4759.webp",
+    "sku": "R94646",
+    "ram": 12,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 419000,
+    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Cobalt Violet",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-cobalt-violet",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59937/image/bezymiannyi-4-montaznaia-oblast-1.webp",
+    "sku": "R94650",
+    "ram": 12,
+    "color": "Cobalt Violet",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 419000,
+    "title": "Samsung Galaxy S26 Ultra 12GB/256GB White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-white",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59938/image/sew-montaznaia-oblast-1-1.webp",
+    "sku": "R94651",
+    "ram": 12,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "price": 419000,
+    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Blue",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-blue",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59967/og_image/img-4758-1.webp",
+    "sku": "R94666",
+    "ram": 12,
+    "color": "Blue",
+    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -8000,7 +8133,7 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 489000,
+    "price": 499000,
     "title": "Samsung Galaxy S26 Ultra 12GB/512GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-black",
     "storage": 512,
@@ -8014,7 +8147,7 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "price": 489000,
+    "price": 499000,
     "title": "Samsung Galaxy S26 Ultra 12GB/512GB Blue",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-blue",
     "storage": 512,
@@ -8146,6 +8279,19 @@
    {
     "id": "xiaomi-redmi-15c",
     "price": 53000,
+    "title": "Xiaomi Redmi 15C 4G",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-15c-4g",
+    "image": null,
+    "storage": 128,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-redmi-15c",
+    "price": 53000,
     "title": "Redmi 15C 4GB/128GB Midnight Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-15c-4gb128gb-midnight-black",
     "storage": 128,
@@ -8197,19 +8343,6 @@
     "ram": 4,
     "color": "Twilight Orange",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-redmi-15c",
-    "price": 53000,
-    "title": "Xiaomi Redmi 15C 4G",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-15c-4g",
-    "image": null,
-    "storage": 128,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -8448,7 +8581,7 @@
    },
    {
     "id": "samsung-galaxy-a17",
-    "price": 69000,
+    "price": 72000,
     "title": "Samsung Galaxy A17 4GB/128GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a17-4gb128gb-black",
     "storage": 128,
@@ -8462,7 +8595,7 @@
    },
    {
     "id": "samsung-galaxy-a17",
-    "price": 69000,
+    "price": 72000,
     "title": "Samsung Galaxy A17 4GB/128GB Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a17-4gb128gb-gray",
     "storage": 128,
@@ -8476,7 +8609,7 @@
    },
    {
     "id": "samsung-galaxy-a17",
-    "price": 69000,
+    "price": 72000,
     "title": "Samsung Galaxy A17 4GB/128GB Light Blue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a17-4gb128gb-light-blue",
     "storage": 128,
@@ -8528,92 +8661,6 @@
     "seen": "2026-09-15"
    }
   ],
-  "samsung-galaxy-a26": [
-   {
-    "id": "samsung-galaxy-a26",
-    "price": 85000,
-    "title": "Samsung Galaxy A26 6GB/128GB Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-black",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4547.jpg",
-    "sku": "R72451396",
-    "ram": 6,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "price": 85000,
-    "title": "Samsung Galaxy A26 6GB/128GB Peach Pink",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-peach-pink",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4554.jpg",
-    "sku": "R6057271",
-    "ram": 6,
-    "color": "Peach Pink",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "price": 85000,
-    "title": "Samsung Galaxy A26 6GB/128GB White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-white",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4552.jpg",
-    "sku": "R608084",
-    "ram": 6,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "price": 109000,
-    "title": "Samsung Galaxy A26 8GB/256GB Mint",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4550.jpg",
-    "sku": "R72450688",
-    "ram": 8,
-    "color": "Mint",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "price": 109000,
-    "title": "Samsung Galaxy A26 8GB/256GB Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-black",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4547.jpg",
-    "sku": "R72451071",
-    "ram": 8,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "price": 109000,
-    "title": "Samsung Galaxy A26 8GB/256GB White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-white",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4552.jpg",
-    "sku": "R608249",
-    "ram": 8,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   }
-  ],
   "xiaomi-redmi-note-15-pro": [
    {
     "id": "xiaomi-redmi-note-15-pro",
@@ -8644,6 +8691,19 @@
    {
     "id": "xiaomi-redmi-note-15-pro",
     "price": 119000,
+    "title": "Xiaomi Redmi Note 15 Pro 4G",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-15-pro-4g",
+    "image": null,
+    "storage": 256,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "price": 119000,
     "title": "Redmi Note 15 Pro 8GB/256GB Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-note-15-pro-8gb256gb-black",
     "storage": 256,
@@ -8667,19 +8727,6 @@
     "ram": 8,
     "color": "Glacier Blue",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-redmi-note-15-pro",
-    "price": 119000,
-    "title": "Xiaomi Redmi Note 15 Pro 4G",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-15-pro-4g",
-    "image": null,
-    "storage": 256,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -9503,6 +9550,19 @@
    {
     "id": "samsung-galaxy-s25-fe",
     "price": 229000,
+    "title": "Samsung Galaxy S25 FE",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
+    "image": null,
+    "storage": 256,
+    "color": "White",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "price": 229000,
     "title": "Samsung Galaxy S25 FE 8GB/256GB Jetblack",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-jetblack",
     "storage": 256,
@@ -9555,19 +9615,6 @@
     "color": "Icyblue",
     "shop": "redstore",
     "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "price": 229000,
-    "title": "Samsung Galaxy S25 FE",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
-    "image": null,
-    "storage": 256,
-    "color": "White",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
    }
   ],
   "poco-f7-ultra": [
@@ -9587,6 +9634,19 @@
    {
     "id": "poco-f7-ultra",
     "price": 289000,
+    "title": "POCO F7 Ultra Black",
+    "url": "https://3dplanet.am/en/store/product/poco-f7-ultra-black",
+    "image": null,
+    "storage": 512,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "poco-f7-ultra",
+    "price": 289000,
     "title": "Poco F7 Ultra 16GB/512GB Yellow",
     "url": "https://redstore.am/en/product/xiaomi-poco-f7-ultra-16gb512gb-yellow",
     "storage": 512,
@@ -9596,19 +9656,6 @@
     "ram": 16,
     "color": "Yellow",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "poco-f7-ultra",
-    "price": 289000,
-    "title": "POCO F7 Ultra Black",
-    "url": "https://3dplanet.am/en/store/product/poco-f7-ultra-black",
-    "image": null,
-    "storage": 512,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -9846,6 +9893,47 @@
    {
     "id": "samsung-galaxy-s26",
     "price": 339000,
+    "title": "Samsung Galaxy S26",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
+    "image": null,
+    "storage": 512,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 339000,
+    "title": "Samsung Galaxy S26 512gb White",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-512gb-white/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/us-galaxy-s26-s942-sm-s942uzwexaa-550995764_1773418001-2.webp",
+    "sku": "IBL:90361",
+    "ram": null,
+    "color": "White",
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 339000,
+    "title": "Samsung Galaxy S26 12GB/512GB Sky Blue",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-512gb-sky-blue/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/2-scaled.webp",
+    "sku": "IBL:90363",
+    "ram": 12,
+    "color": "Sky Blue",
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "price": 339000,
     "title": "Samsung Galaxy S26 12GB/256GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb256gb-black",
     "storage": 256,
@@ -9897,47 +9985,6 @@
     "ram": 12,
     "color": "White",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26",
-    "image": null,
-    "storage": 512,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26 512gb White",
-    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-512gb-white/",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/us-galaxy-s26-s942-sm-s942uzwexaa-550995764_1773418001-2.webp",
-    "sku": "IBL:90361",
-    "ram": null,
-    "color": "White",
-    "shop": "ibolit",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "price": 339000,
-    "title": "Samsung Galaxy S26 12GB/512GB Sky Blue",
-    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-512gb-sky-blue/",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2026/03/2-scaled.webp",
-    "sku": "IBL:90363",
-    "ram": 12,
-    "color": "Sky Blue",
-    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -10853,6 +10900,33 @@
    {
     "id": "samsung-galaxy-a27",
     "price": 109000,
+    "title": "Samsung Galaxy A27",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
+    "image": null,
+    "storage": 128,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 109000,
+    "title": "Samsung Galaxy A27 128GB 5G",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-a27-5g/",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/10.jpg",
+    "sku": "IBL:90707",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 109000,
     "title": "Samsung Galaxy A27 6GB/128GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a27-6gb128gb-black",
     "storage": 128,
@@ -10904,33 +10978,6 @@
     "ram": 6,
     "color": "Pink",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "price": 109000,
-    "title": "Samsung Galaxy A27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 128,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "price": 109000,
-    "title": "Samsung Galaxy A27 128GB 5G",
-    "url": "https://ibolit.mobi/product/samsung-galaxy-a27-5g/",
-    "storage": 128,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2026/07/10.jpg",
-    "sku": "IBL:90707",
-    "ram": null,
-    "color": null,
-    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -11056,6 +11103,19 @@
    {
     "id": "samsung-galaxy-a27",
     "price": 125000,
+    "title": "Samsung Galaxy A27",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
+    "image": null,
+    "storage": 256,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "price": 125000,
     "title": "Samsung Galaxy A27 8GB/256GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a27-8gb256gb-black",
     "storage": 256,
@@ -11079,19 +11139,6 @@
     "ram": 8,
     "color": "Blue",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "price": 125000,
-    "title": "Samsung Galaxy A27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 256,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -11418,6 +11465,19 @@
    {
     "id": "samsung-galaxy-a07",
     "price": 52000,
+    "title": "Samsung Galaxy A07",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
+    "image": null,
+    "storage": 64,
+    "color": "Gray",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 52000,
     "title": "Samsung Galaxy A07 4GB/64GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a07-4gb64gb-black",
     "storage": 64,
@@ -11459,19 +11519,6 @@
    },
    {
     "id": "samsung-galaxy-a07",
-    "price": 52000,
-    "title": "Samsung Galaxy A07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 64,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a07",
     "price": 54900,
     "storage": 128,
     "title": "Samsung Galaxy A07 6GB/128GB (Green)",
@@ -11494,6 +11541,19 @@
     "color": "Green",
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a07",
+    "price": 58000,
+    "title": "Samsung Galaxy A07",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
+    "image": null,
+    "storage": 128,
+    "color": "Gray",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -11537,19 +11597,6 @@
     "color": "Light Violet",
     "shop": "redstore",
     "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "price": 58000,
-    "title": "Samsung Galaxy A07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 128,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
    }
   ],
   "realme-gt-7t": [
@@ -11584,6 +11631,19 @@
    {
     "id": "samsung-galaxy-z-fold-7",
     "price": 539000,
+    "title": "Samsung Galaxy Z Fold7",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
+    "image": null,
+    "storage": 256,
+    "color": "Jet Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 539000,
     "title": "Samsung Galaxy Z Fold 7 12GB/256GB Silver Shadow",
     "url": "https://redstore.am/en/product/samsung-galaxy-z-fold-7-12gb256gb-silver-shadow",
     "storage": 256,
@@ -11597,19 +11657,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-7",
-    "price": 539000,
-    "title": "Samsung Galaxy Z Fold7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 256,
-    "color": "Jet Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
     "price": 629000,
     "title": "Samsung Galaxy Z Fold7",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
@@ -11619,20 +11666,6 @@
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
-    "price": 649000,
-    "title": "Samsung Galaxy Z Fold 7 12GB/512GB Blue Shadow",
-    "url": "https://redstore.am/en/product/samsung-galaxy-z-fold-7-12gb512gb-blue-shadow",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/07/img-6306.jpg",
-    "sku": "R603617",
-    "ram": 12,
-    "color": "Blue Shadow",
-    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -11661,6 +11694,20 @@
     "ram": null,
     "color": "Blue",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "price": 649000,
+    "title": "Samsung Galaxy Z Fold 7 12GB/512GB Blue Shadow",
+    "url": "https://redstore.am/en/product/samsung-galaxy-z-fold-7-12gb512gb-blue-shadow",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/07/img-6306.jpg",
+    "sku": "R603617",
+    "ram": 12,
+    "color": "Blue Shadow",
+    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -12691,6 +12738,19 @@
    {
     "id": "samsung-galaxy-tab-a11",
     "price": 54000,
+    "title": "Samsung Galaxy Tab A11",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
+    "image": null,
+    "storage": 64,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 54000,
     "title": "Samsung Galaxy Tab A11 4GB/64GB WiFi X133 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-4gb64gb-wifi-x133-gray",
     "storage": 64,
@@ -12714,19 +12774,6 @@
     "ram": 4,
     "color": "Silver",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
-    "price": 54000,
-    "title": "Samsung Galaxy Tab A11",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
-    "image": null,
-    "storage": 64,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -12803,6 +12850,19 @@
    {
     "id": "samsung-galaxy-tab-a11",
     "price": 75000,
+    "title": "Samsung Galaxy Tab A11",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
+    "image": null,
+    "storage": 128,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "price": 75000,
     "title": "Samsung Galaxy Tab A11 8GB/128GB WiFi X133 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-8gb128gb-wifi-x133-gray",
     "storage": 128,
@@ -12826,19 +12886,6 @@
     "ram": 8,
     "color": "Silver",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
-    "price": 75000,
-    "title": "Samsung Galaxy Tab A11",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
-    "image": null,
-    "storage": 128,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -13030,20 +13077,6 @@
    {
     "id": "samsung-galaxy-buds-4",
     "price": 52000,
-    "title": "Samsung Galaxy Buds 4 Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-buds-4-black",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60388/image/h-montaznaia-oblast-1.webp",
-    "sku": "RA034312",
-    "ram": null,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-buds-4",
-    "price": 52000,
     "title": "Samsung Galaxy Buds 4",
     "url": "https://ibolit.mobi/product/samsung-galaxy-buds-4/",
     "storage": null,
@@ -13053,6 +13086,20 @@
     "ram": null,
     "color": null,
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-4",
+    "price": 52000,
+    "title": "Samsung Galaxy Buds 4 Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-buds-4-black",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60388/image/h-montaznaia-oblast-1.webp",
+    "sku": "RA034312",
+    "ram": null,
+    "color": "Black",
+    "shop": "redstore",
     "seen": "2026-09-15"
    },
    {
@@ -13125,6 +13172,19 @@
    {
     "id": "samsung-galaxy-buds-4-pro",
     "price": 72000,
+    "title": "Samsung Galaxy Buds 4 Pro",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-4-pro",
+    "image": null,
+    "storage": null,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "price": 72000,
     "title": "Samsung Galaxy Buds 4 Pro White",
     "url": "https://redstore.am/en/product/samsung-galaxy-buds-4-pro-white",
     "storage": null,
@@ -13148,19 +13208,6 @@
     "ram": null,
     "color": "Black",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-buds-4-pro",
-    "price": 72000,
-    "title": "Samsung Galaxy Buds 4 Pro",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-4-pro",
-    "image": null,
-    "storage": null,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -13520,6 +13567,19 @@
    {
     "id": "samsung-galaxy-buds-3-pro",
     "price": 62000,
+    "title": "Samsung Galaxy Buds 3 Pro",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-3-pro",
+    "image": null,
+    "storage": null,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-3-pro",
+    "price": 62000,
     "title": "Samsung Galaxy Buds 3 Pro White",
     "url": "https://redstore.am/en/product/samsung-galaxy-buds-3-pro-white",
     "storage": null,
@@ -13543,19 +13603,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-buds-3-pro",
-    "price": 62000,
-    "title": "Samsung Galaxy Buds 3 Pro",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-3-pro",
-    "image": null,
-    "storage": null,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -13906,6 +13953,20 @@
    {
     "id": "xiaomi-17-pro-max",
     "price": 559000,
+    "title": "Xiaomi 17 Pro Max 16/512Black",
+    "url": "https://ibolit.mobi/product/xiaomi-17-pro-max-16-512black/",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/17_peo_amx.jpg",
+    "sku": "IBL:90619",
+    "ram": null,
+    "color": null,
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-17-pro-max",
+    "price": 559000,
     "title": "17 Pro Max 16GB/512GB Black",
     "url": "https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black",
     "storage": 512,
@@ -13929,20 +13990,6 @@
     "ram": 16,
     "color": "Green",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-17-pro-max",
-    "price": 559000,
-    "title": "Xiaomi 17 Pro Max 16/512Black",
-    "url": "https://ibolit.mobi/product/xiaomi-17-pro-max-16-512black/",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2026/06/17_peo_amx.jpg",
-    "sku": "IBL:90619",
-    "ram": null,
-    "color": null,
-    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -14092,7 +14139,7 @@
    {
     "id": "apple-ipad-air-13-m4",
     "price": 439000,
-    "storage": null,
+    "storage": 128,
     "title": "iPad Air 13 M4",
     "url": "https://www.pixel.am/am/product/ipad-air-13-m4",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/191/800_1782671455-grey-1.png",
@@ -14129,6 +14176,62 @@
     "color": "Starlight",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "price": 439000,
+    "title": "Air 13 128GB WiFi 2026 Blue",
+    "url": "https://redstore.am/en/product/ipad-air-13-128gb-wifi-2026-blue",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60080/image/gui-montaznaia-oblast-1.webp",
+    "sku": "R97782",
+    "ram": null,
+    "color": "Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "price": 439000,
+    "title": "Air 13 128GB WiFi 2026 Purple",
+    "url": "https://redstore.am/en/product/ipad-air-13-128gb-wifi-2026-purple",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60081/image/sdfre-montaznaia-oblast-1.webp",
+    "sku": "R97787",
+    "ram": null,
+    "color": "Purple",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "price": 439000,
+    "title": "Air 13 128GB WiFi 2026 Space Gray",
+    "url": "https://redstore.am/en/product/ipad-air-13-128gb-wifi-2026-space-gray",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61069/image/7-montaznaia-oblast-1.webp",
+    "sku": "RA06886",
+    "ram": null,
+    "color": "Space Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "price": 529000,
+    "title": "iPad Air 13 256GB WiFi 2026 Blue",
+    "url": "https://redstore.am/en/product/ipad-air-13-256gb-wifi-2026-blue",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61070/image/bezymiannyi-1-montaznaia-oblast-1.webp",
+    "sku": "RA06900",
+    "ram": null,
+    "color": "Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
    }
   ],
   "apple-ipad-air-11-m3": [
@@ -14147,6 +14250,19 @@
    }
   ],
   "xiaomi-pad-7-pro": [
+   {
+    "id": "xiaomi-pad-7-pro",
+    "price": 234000,
+    "title": "Xiaomi Pad 7 Pro",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7-pro",
+    "image": null,
+    "storage": 512,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
    {
     "id": "xiaomi-pad-7-pro",
     "price": 234000,
@@ -14173,19 +14289,6 @@
     "ram": 12,
     "color": "Blue",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-pad-7-pro",
-    "price": 234000,
-    "title": "Xiaomi Pad 7 Pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7-pro",
-    "image": null,
-    "storage": 512,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -14246,8 +14349,22 @@
    },
    {
     "id": "apple-ipad-pro-13-m5",
+    "price": 599000,
+    "title": "Pro 13 256GB WiFi 2025 Space Black",
+    "url": "https://redstore.am/en/product/ipad-pro-13-256gb-wifi-2025-space-black",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59493/image/img-5638.webp",
+    "sku": "R86212",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
     "price": 629000,
-    "storage": null,
+    "storage": 256,
     "title": "iPad Pro 13 M5",
     "url": "https://www.pixel.am/am/product/ipad-pro-13-m5",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/090/800_1775506569-1768083306-ipad-pro-13-m5.blk-2-sides.png",
@@ -14269,6 +14386,20 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
+    "price": 759000,
+    "title": "iPad Pro 13 512GB WiFi 2025 Space Black",
+    "url": "https://redstore.am/en/product/ipad-pro-13-512gb-wifi-2025-space-black",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61071/image/4-montaznaia-oblast-1.webp",
+    "sku": "RA06932",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
     "seen": "2026-09-15"
    }
   ],
@@ -14316,13 +14447,45 @@
    },
    {
     "id": "apple-ipad-pro-11-m4",
-    "shop": "redstore",
-    "title": "Apple iPad Pro 11 M4",
     "price": 509000,
-    "storage": 512,
-    "color": "Space Black",
+    "title": "Pro 11 512GB WiFi 2024 Space Black",
     "url": "https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2024-space-black",
-    "seeded": true
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/02/img-5638.jpg",
+    "sku": "R57948681",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m4",
+    "price": 539000,
+    "title": "Pro 11 256GB 5G 2024 Space Black",
+    "url": "https://redstore.am/en/product/ipad-pro-11-256gb-5g-2024-space-black",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/02/img-5638.jpg",
+    "sku": "R5897713",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m4",
+    "price": 539000,
+    "title": "Pro 11 256GB 5G 2024 Silver",
+    "url": "https://redstore.am/en/product/ipad-pro-11-256gb-5g-2024-silver",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/02/img-5639.jpg",
+    "sku": "R5897717",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
    },
    {
     "id": "apple-ipad-pro-11-m4",
@@ -14336,6 +14499,20 @@
     "ram": null,
     "color": "Space Black",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m4",
+    "price": 639000,
+    "title": "Pro 11 512GB 5G 2024 Silver",
+    "url": "https://redstore.am/en/product/ipad-pro-11-512gb-5g-2024-silver",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/06/mnbvf-montaznaia-oblast-1.jpg",
+    "sku": "R6059500",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
     "seen": "2026-09-15"
    }
   ],
@@ -14351,6 +14528,19 @@
     "color": "Grey",
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-pad-7",
+    "price": 159000,
+    "title": "Xiaomi Pad 7",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7",
+    "image": null,
+    "storage": 256,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -14379,19 +14569,6 @@
     "ram": 8,
     "color": "Green",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-pad-7",
-    "price": 159000,
-    "title": "Xiaomi Pad 7",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7",
-    "image": null,
-    "storage": 256,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -14438,6 +14615,19 @@
    {
     "id": "samsung-galaxy-watch-ultra-2",
     "price": 239000,
+    "title": "Samsung Galaxy Watch Ultra2",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-ultra2",
+    "image": null,
+    "storage": 64,
+    "color": "Silver",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-ultra-2",
+    "price": 239000,
     "title": "Samsung Galaxy Watch Ultra 2 47mm Titanium Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-watch-ultra-2-47mm-titanium-gray",
     "storage": 47,
@@ -14447,19 +14637,6 @@
     "ram": null,
     "color": "Titanium Gray",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-watch-ultra-2",
-    "price": 239000,
-    "title": "Samsung Galaxy Watch Ultra2",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-ultra2",
-    "image": null,
-    "storage": 64,
-    "color": "Silver",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    }
   ],
@@ -14580,6 +14757,19 @@
    {
     "id": "samsung-galaxy-watch-8-classic",
     "price": 129000,
+    "title": "Samsung Galaxy Watch 8 Classic",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-8-classic",
+    "image": null,
+    "storage": 46,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-8-classic",
+    "price": 129000,
     "title": "Samsung Galaxy Watch 8 Classic 46mm White",
     "url": "https://redstore.am/en/product/samsung-galaxy-watch-8-classic-46mm-white",
     "storage": 46,
@@ -14589,19 +14779,6 @@
     "ram": null,
     "color": "White",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-watch-8-classic",
-    "price": 129000,
-    "title": "Samsung Galaxy Watch 8 Classic",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-8-classic",
-    "image": null,
-    "storage": 46,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -14917,6 +15094,47 @@
    {
     "id": "marshall-major-v",
     "price": 47000,
+    "title": "Marshall Major V",
+    "url": "https://3dplanet.am/en/store/product/marshall-major-v",
+    "image": null,
+    "storage": null,
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-major-v",
+    "price": 47000,
+    "title": "Marshall Major V Black",
+    "url": "https://ibolit.mobi/product/marshall-major-v-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red2346_1.jpg",
+    "sku": "IBL:4218",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-major-v",
+    "price": 47000,
+    "title": "Marshall Major V Cream",
+    "url": "https://ibolit.mobi/product/marshall-major-v-cream/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2026/01/major-bej.webp",
+    "sku": "IBL:801199",
+    "ram": null,
+    "color": "Cream",
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-major-v",
+    "price": 47000,
     "title": "Marshall Major V Black",
     "url": "https://redstore.am/en/product/marshall-major-v-black",
     "storage": null,
@@ -14968,47 +15186,6 @@
     "ram": null,
     "color": "Blue",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "marshall-major-v",
-    "price": 47000,
-    "title": "Marshall Major V",
-    "url": "https://3dplanet.am/en/store/product/marshall-major-v",
-    "image": null,
-    "storage": null,
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "marshall-major-v",
-    "price": 47000,
-    "title": "Marshall Major V Black",
-    "url": "https://ibolit.mobi/product/marshall-major-v-black/",
-    "storage": null,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red2346_1.jpg",
-    "sku": "IBL:4218",
-    "ram": null,
-    "color": "Black",
-    "shop": "ibolit",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "marshall-major-v",
-    "price": 47000,
-    "title": "Marshall Major V Cream",
-    "url": "https://ibolit.mobi/product/marshall-major-v-cream/",
-    "storage": null,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2026/01/major-bej.webp",
-    "sku": "IBL:801199",
-    "ram": null,
-    "color": "Cream",
-    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -15853,6 +16030,19 @@
    {
     "id": "samsung-galaxy-watch-7",
     "price": 88000,
+    "title": "Samsung Galaxy Watch 7",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-7",
+    "image": null,
+    "storage": 44,
+    "color": "Gray",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-7",
+    "price": 88000,
     "title": "Samsung Galaxy Watch 7 40mm Cream",
     "url": "https://redstore.am/en/product/samsung-galaxy-watch-7-40mm-cream",
     "storage": 44,
@@ -15862,19 +16052,6 @@
     "ram": null,
     "color": "Cream",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-watch-7",
-    "price": 88000,
-    "title": "Samsung Galaxy Watch 7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-7",
-    "image": null,
-    "storage": 44,
-    "color": "Gray",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -16050,6 +16227,20 @@
     "id": "marshall-stanmore-3",
     "price": 139000,
     "title": "Marshall Stanmore III Black",
+    "url": "https://ibolit.mobi/product/marshall-stanmore-iii-black/",
+    "storage": null,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red1883_1.jpg",
+    "sku": "IBL:3761",
+    "ram": null,
+    "color": "Black",
+    "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-stanmore-3",
+    "price": 139000,
+    "title": "Marshall Stanmore III Black",
     "url": "https://redstore.am/en/product/marshall-stanmore-iii-black",
     "storage": null,
     "inStock": true,
@@ -16072,20 +16263,6 @@
     "ram": null,
     "color": "Cream",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "marshall-stanmore-3",
-    "price": 139000,
-    "title": "Marshall Stanmore III Black",
-    "url": "https://ibolit.mobi/product/marshall-stanmore-iii-black/",
-    "storage": null,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/red1883_1.jpg",
-    "sku": "IBL:3761",
-    "ram": null,
-    "color": "Black",
-    "shop": "ibolit",
     "seen": "2026-09-15"
    },
    {
@@ -17014,52 +17191,6 @@
     "seen": "2026-09-15"
    }
   ],
-  "xiaomi-15t": [
-   {
-    "id": "xiaomi-15t",
-    "price": 249000,
-    "title": "15T 12GB/512GB Rose Gold",
-    "url": "https://redstore.am/en/product/xiaomi-15t-12gb512gb-rose-gold",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/11/16/xcfvghjk-montaznaia-oblast-1.jpg",
-    "sku": "R609377",
-    "ram": 12,
-    "color": "Rose Gold",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   }
-  ],
-  "google-pixel-9a": [
-   {
-    "id": "google-pixel-9a",
-    "price": 269000,
-    "title": "Google Pixel 9A 8GB/256GB Obsidian",
-    "url": "https://redstore.am/en/product/google-pixel-9a-8gb256gb-obsidian",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/27/img-8623.jpg",
-    "sku": "R594384",
-    "ram": 8,
-    "color": "Obsidian",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "google-pixel-9a",
-    "price": 269000,
-    "title": "Google Pixel 9A 8GB/256GB Porcelain",
-    "url": "https://redstore.am/en/product/google-pixel-9a-8gb256gb-porcelain",
-    "storage": 256,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/27/img-8621.jpg",
-    "sku": "R594385",
-    "ram": 8,
-    "color": "Porcelain",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   }
-  ],
   "apple-iphone-18-pro": [
    {
     "id": "apple-iphone-18-pro",
@@ -17133,15 +17264,6 @@
     "shop": "redstore",
     "seen": "2026-09-15",
     "esim": true
-   },
-   {
-    "id": "apple-iphone-18-pro",
-    "shop": "redstore",
-    "title": "iPhone 18 Pro 256GB tray",
-    "price": 879000,
-    "storage": 256,
-    "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy",
-    "seeded": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -17279,15 +17401,6 @@
    },
    {
     "id": "apple-iphone-18-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 18 Pro Max 256GB tray",
-    "price": 979000,
-    "storage": 256,
-    "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-18-pro-max",
     "price": 1009000,
     "title": "Apple iPhone 18 Pro Max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-18-pro-max",
@@ -17375,48 +17488,6 @@
     "seen": "2026-09-15"
    }
   ],
-  "hp-omnibook-ultra-flip-14": [
-   {
-    "id": "hp-omnibook-ultra-flip-14",
-    "price": 599000,
-    "title": "HP OmniBook Ultra Flip 14-FH0013DX",
-    "url": "https://redstore.am/en/product/hp-omnibook-ultra-flip-14-fh0013dx",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/11/14/img-8976.jpg",
-    "sku": "R720683",
-    "ram": null,
-    "color": "Gray",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "hp-omnibook-ultra-flip-14",
-    "shop": "zigzag",
-    "title": "HP OmniBook Ultra Flip",
-    "price": 759000,
-    "storage": 512,
-    "color": "Gray",
-    "url": "https://www.zigzag.am/en/hp-omnibook-ultra-flip-14-oled-ultra-5-226v-16gb-512gb-w11h-gray-b5dx5ea.html",
-    "seeded": true
-   }
-  ],
-  "microsoft-surface-laptop-7-13": [
-   {
-    "id": "microsoft-surface-laptop-7-13",
-    "price": 699000,
-    "title": "Microsoft Surface Laptop 7",
-    "url": "https://redstore.am/en/product/microsoft-surface-laptop-7",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59809/image/w3e4r5ty-montaznaia-oblast-1.jpg",
-    "sku": "R91822",
-    "ram": null,
-    "color": "Platinum",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   }
-  ],
   "asus-rog-strix-g16": [
    {
     "id": "asus-rog-strix-g16",
@@ -17493,20 +17564,6 @@
    {
     "id": "apple-macbook-pro-14-m5-max",
     "price": 1859000,
-    "title": "Pro 14.2\" M5 Max MGDU4(Space Black)",
-    "url": "https://redstore.am/en/product/macbook-pro-142-m5-max-mgdu4space-black",
-    "storage": 2048,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60217/image/fr-montaznaia-oblast-1.webp",
-    "sku": "R100254",
-    "ram": null,
-    "color": "Space Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-pro-14-m5-max",
-    "price": 1859000,
     "title": "Apple Macbook Pro 14\"/M5 Max/36GB RAM/2TB/MGDU4/Space Black",
     "url": "https://ibolit.mobi/product/apple-macbook-pro-14-m5-max-36gb-ram-2tb-mgdu4-space-black/",
     "storage": 2048,
@@ -17517,9 +17574,36 @@
     "color": "Space Black",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-max",
+    "price": 1859000,
+    "title": "Pro 14.2\" M5 Max MGDU4(Space Black)",
+    "url": "https://redstore.am/en/product/macbook-pro-142-m5-max-mgdu4space-black",
+    "storage": 2048,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60217/image/fr-montaznaia-oblast-1.webp",
+    "sku": "R100254",
+    "ram": null,
+    "color": "Space Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
    }
   ],
   "jbl-clip-5": [
+   {
+    "id": "jbl-clip-5",
+    "price": 24000,
+    "title": "JBL Clip 5",
+    "url": "https://3dplanet.am/en/store/product/jbl-clip-5",
+    "image": null,
+    "storage": null,
+    "color": "Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
    {
     "id": "jbl-clip-5",
     "price": 24000,
@@ -17574,19 +17658,6 @@
     "ram": null,
     "color": "Pink",
     "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "jbl-clip-5",
-    "price": 24000,
-    "title": "JBL Clip 5",
-    "url": "https://3dplanet.am/en/store/product/jbl-clip-5",
-    "image": null,
-    "storage": null,
-    "color": "Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -17768,149 +17839,6 @@
     "price": 109900,
     "storage": null,
     "url": "https://www.mobilecentre.am/product/harman-kardon-onyx-studio-7-portable-bluetooth-speaker-_black_/26934/",
-    "seeded": true
-   }
-  ],
-  "yandex-station-mini-3-pro": [
-   {
-    "id": "yandex-station-mini-3-pro",
-    "price": 79000,
-    "title": "Yandex Station Mini 3 Pro Black",
-    "url": "https://redstore.am/en/product/yandex-station-mini-3-pro-black",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8528.jpeg",
-    "sku": "R6053846",
-    "ram": null,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "yandex-station-mini-3-pro",
-    "price": 79000,
-    "title": "Yandex Station Mini 3 Pro Blue",
-    "url": "https://redstore.am/en/product/yandex-station-mini-3-pro-blue",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8527.jpeg",
-    "sku": "R6053850",
-    "ram": null,
-    "color": "Blue",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "yandex-station-mini-3-pro",
-    "price": 79000,
-    "title": "Yandex Station Mini 3 Pro Gray",
-    "url": "https://redstore.am/en/product/yandex-station-mini-3-pro-gray",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8526.jpeg",
-    "sku": "R6053856",
-    "ram": null,
-    "color": "Gray",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   }
-  ],
-  "yandex-station-street": [
-   {
-    "id": "yandex-station-street",
-    "price": 79000,
-    "title": "Yandex Station Street Black",
-    "url": "https://redstore.am/en/product/yandex-station-street-black",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8539.jpg",
-    "sku": "R6053882",
-    "ram": null,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "yandex-station-street",
-    "price": 79000,
-    "title": "Yandex Station Street Green",
-    "url": "https://redstore.am/en/product/yandex-station-street-green",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60520/image/9325dca2-adb4-442c-b1df-3d53d291e56b.webp",
-    "sku": "RA034748",
-    "ram": null,
-    "color": "Green",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "yandex-station-street",
-    "shop": "notebookcentre",
-    "title": "Yandex Station Street",
-    "price": 99900,
-    "storage": null,
-    "url": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030",
-    "seeded": true
-   },
-   {
-    "id": "yandex-station-street",
-    "shop": "zigzag",
-    "title": "Yandex Station Street",
-    "price": 129000,
-    "storage": null,
-    "color": "Green",
-    "url": "https://www.zigzag.am/en/yandex-smart-station-street-yndx-00030-green.html",
-    "seeded": true
-   }
-  ],
-  "marshall-stockwell-2": [
-   {
-    "id": "marshall-stockwell-2",
-    "price": 129000,
-    "title": "Marshall Stockwell II Black/Brass",
-    "url": "https://redstore.am/en/product/marshall-stockwell-ii-blackbrass",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8481.jpeg",
-    "sku": "R579217856",
-    "ram": null,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "marshall-stockwell-2",
-    "shop": "mobilecentre",
-    "title": "Marshall Stockwell II",
-    "price": 179900,
-    "storage": null,
-    "url": "https://www.mobilecentre.am/product/marshall-speaker-stockwell-2-wireless-black/",
-    "seeded": true
-   }
-  ],
-  "jbl-partybox-on-the-go": [
-   {
-    "id": "jbl-partybox-on-the-go",
-    "price": 139000,
-    "title": "JBL PartyBox ON The Go",
-    "url": "https://redstore.am/en/product/jbl-partybox-on-the-go",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8351.jpg",
-    "sku": "R6064170",
-    "ram": null,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "jbl-partybox-on-the-go",
-    "shop": "eldorado",
-    "title": "JBL PartyBox On-The-Go",
-    "price": 149900,
-    "storage": null,
-    "url": "https://eldorado.am/en/shopbrand/jbl",
     "seeded": true
    }
   ],
@@ -18140,31 +18068,6 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-15"
-   }
-  ],
-  "jbl-tune-680nc": [
-   {
-    "id": "jbl-tune-680nc",
-    "price": 29000,
-    "title": "JBL Tune 680NC Black",
-    "url": "https://redstore.am/en/product/jbl-tune-680nc-black",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60201/image/rr-montaznaia-oblast-1.webp",
-    "sku": "R90535",
-    "ram": null,
-    "color": "Black",
-    "shop": "redstore",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "jbl-tune-680nc",
-    "shop": "zigzag",
-    "title": "JBL Tune 680NC",
-    "price": 34900,
-    "storage": null,
-    "url": "https://www.zigzag.am/en/jbl-t680ncwht.html",
-    "seeded": true
    }
   ],
   "sony-wh-1000xm6": [
@@ -18970,6 +18873,406 @@
     "color": "Porcelain",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   }
+  ],
+  "samsung-galaxy-a26": [
+   {
+    "id": "samsung-galaxy-a26",
+    "price": 85000,
+    "title": "Samsung Galaxy A26 6GB/128GB Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-black",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4547.jpg",
+    "sku": "R72451396",
+    "ram": 6,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "price": 85000,
+    "title": "Samsung Galaxy A26 6GB/128GB Peach Pink",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-peach-pink",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4554.jpg",
+    "sku": "R6057271",
+    "ram": 6,
+    "color": "Peach Pink",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "price": 85000,
+    "title": "Samsung Galaxy A26 6GB/128GB White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-white",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4552.jpg",
+    "sku": "R608084",
+    "ram": 6,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "price": 109000,
+    "title": "Samsung Galaxy A26 8GB/256GB Mint",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4550.jpg",
+    "sku": "R72450688",
+    "ram": 8,
+    "color": "Mint",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "price": 109000,
+    "title": "Samsung Galaxy A26 8GB/256GB Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-black",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4547.jpg",
+    "sku": "R72451071",
+    "ram": 8,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "price": 109000,
+    "title": "Samsung Galaxy A26 8GB/256GB White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-white",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4552.jpg",
+    "sku": "R608249",
+    "ram": 8,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   }
+  ],
+  "xiaomi-15t": [
+   {
+    "id": "xiaomi-15t",
+    "price": 249000,
+    "title": "15T 12GB/512GB Rose Gold",
+    "url": "https://redstore.am/en/product/xiaomi-15t-12gb512gb-rose-gold",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/16/xcfvghjk-montaznaia-oblast-1.jpg",
+    "sku": "R609377",
+    "ram": 12,
+    "color": "Rose Gold",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   }
+  ],
+  "google-pixel-9a": [
+   {
+    "id": "google-pixel-9a",
+    "price": 269000,
+    "title": "Google Pixel 9A 8GB/256GB Obsidian",
+    "url": "https://redstore.am/en/product/google-pixel-9a-8gb256gb-obsidian",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/27/img-8623.jpg",
+    "sku": "R594384",
+    "ram": 8,
+    "color": "Obsidian",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "google-pixel-9a",
+    "price": 269000,
+    "title": "Google Pixel 9A 8GB/256GB Porcelain",
+    "url": "https://redstore.am/en/product/google-pixel-9a-8gb256gb-porcelain",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/27/img-8621.jpg",
+    "sku": "R594385",
+    "ram": 8,
+    "color": "Porcelain",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   }
+  ],
+  "apple-ipad-a16": [
+   {
+    "id": "apple-ipad-a16",
+    "price": 199000,
+    "title": "11 128GB WiFi 2025 Blue",
+    "url": "https://redstore.am/en/product/ipad-11-128gb-wifi-2025-blue",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/14/img-5592.jpg",
+    "sku": "R724009",
+    "ram": null,
+    "color": "Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-a16",
+    "price": 199000,
+    "title": "11 128GB WiFi 2025 Pink",
+    "url": "https://redstore.am/en/product/ipad-11-128gb-wifi-2025-pink",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/14/img-5591.jpg",
+    "sku": "R720190",
+    "ram": null,
+    "color": "Pink",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-a16",
+    "price": 199000,
+    "title": "11 128GB WiFi 2025 Silver",
+    "url": "https://redstore.am/en/product/ipad-11-128gb-wifi-2025-silver",
+    "storage": 128,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/13/cfdhy-montaznaia-oblast-1.jpg",
+    "sku": "R724029",
+    "ram": null,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-a16",
+    "price": 249000,
+    "title": "11 256GB WiFi 2025 Yellow",
+    "url": "https://redstore.am/en/product/ipad-11-256gb-wifi-2025-yellow",
+    "storage": 256,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/06/hgfdsdfg-montaznaia-oblast-1.jpg",
+    "sku": "R6059443",
+    "ram": null,
+    "color": "Yellow",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   }
+  ],
+  "hp-omnibook-ultra-flip-14": [
+   {
+    "id": "hp-omnibook-ultra-flip-14",
+    "price": 599000,
+    "title": "HP OmniBook Ultra Flip 14-FH0013DX",
+    "url": "https://redstore.am/en/product/hp-omnibook-ultra-flip-14-fh0013dx",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/11/14/img-8976.jpg",
+    "sku": "R720683",
+    "ram": null,
+    "color": "Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "hp-omnibook-ultra-flip-14",
+    "shop": "zigzag",
+    "title": "HP OmniBook Ultra Flip",
+    "price": 759000,
+    "storage": 512,
+    "color": "Gray",
+    "url": "https://www.zigzag.am/en/hp-omnibook-ultra-flip-14-oled-ultra-5-226v-16gb-512gb-w11h-gray-b5dx5ea.html",
+    "seeded": true
+   }
+  ],
+  "microsoft-surface-laptop-7-13": [
+   {
+    "id": "microsoft-surface-laptop-7-13",
+    "price": 699000,
+    "title": "Microsoft Surface Laptop 7",
+    "url": "https://redstore.am/en/product/microsoft-surface-laptop-7",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/59809/image/w3e4r5ty-montaznaia-oblast-1.jpg",
+    "sku": "R91822",
+    "ram": null,
+    "color": "Platinum",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   }
+  ],
+  "yandex-station-mini-3-pro": [
+   {
+    "id": "yandex-station-mini-3-pro",
+    "price": 79000,
+    "title": "Yandex Station Mini 3 Pro Black",
+    "url": "https://redstore.am/en/product/yandex-station-mini-3-pro-black",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8528.jpeg",
+    "sku": "R6053846",
+    "ram": null,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "yandex-station-mini-3-pro",
+    "price": 79000,
+    "title": "Yandex Station Mini 3 Pro Blue",
+    "url": "https://redstore.am/en/product/yandex-station-mini-3-pro-blue",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8527.jpeg",
+    "sku": "R6053850",
+    "ram": null,
+    "color": "Blue",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "yandex-station-mini-3-pro",
+    "price": 79000,
+    "title": "Yandex Station Mini 3 Pro Gray",
+    "url": "https://redstore.am/en/product/yandex-station-mini-3-pro-gray",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8526.jpeg",
+    "sku": "R6053856",
+    "ram": null,
+    "color": "Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   }
+  ],
+  "yandex-station-street": [
+   {
+    "id": "yandex-station-street",
+    "price": 79000,
+    "title": "Yandex Station Street Black",
+    "url": "https://redstore.am/en/product/yandex-station-street-black",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8539.jpg",
+    "sku": "R6053882",
+    "ram": null,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "yandex-station-street",
+    "price": 79000,
+    "title": "Yandex Station Street Green",
+    "url": "https://redstore.am/en/product/yandex-station-street-green",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60520/image/9325dca2-adb4-442c-b1df-3d53d291e56b.webp",
+    "sku": "RA034748",
+    "ram": null,
+    "color": "Green",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "yandex-station-street",
+    "shop": "notebookcentre",
+    "title": "Yandex Station Street",
+    "price": 99900,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030",
+    "seeded": true
+   },
+   {
+    "id": "yandex-station-street",
+    "shop": "zigzag",
+    "title": "Yandex Station Street",
+    "price": 129000,
+    "storage": null,
+    "color": "Green",
+    "url": "https://www.zigzag.am/en/yandex-smart-station-street-yndx-00030-green.html",
+    "seeded": true
+   }
+  ],
+  "marshall-stockwell-2": [
+   {
+    "id": "marshall-stockwell-2",
+    "price": 129000,
+    "title": "Marshall Stockwell II Black/Brass",
+    "url": "https://redstore.am/en/product/marshall-stockwell-ii-blackbrass",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8481.jpeg",
+    "sku": "R579217856",
+    "ram": null,
+    "color": null,
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-stockwell-2",
+    "shop": "mobilecentre",
+    "title": "Marshall Stockwell II",
+    "price": 179900,
+    "storage": null,
+    "url": "https://www.mobilecentre.am/product/marshall-speaker-stockwell-2-wireless-black/",
+    "seeded": true
+   }
+  ],
+  "jbl-partybox-on-the-go": [
+   {
+    "id": "jbl-partybox-on-the-go",
+    "price": 139000,
+    "title": "JBL PartyBox ON The Go",
+    "url": "https://redstore.am/en/product/jbl-partybox-on-the-go",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/26/img-8351.jpg",
+    "sku": "R6064170",
+    "ram": null,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "jbl-partybox-on-the-go",
+    "shop": "eldorado",
+    "title": "JBL PartyBox On-The-Go",
+    "price": 149900,
+    "storage": null,
+    "url": "https://eldorado.am/en/shopbrand/jbl",
+    "seeded": true
+   }
+  ],
+  "jbl-tune-680nc": [
+   {
+    "id": "jbl-tune-680nc",
+    "price": 29000,
+    "title": "JBL Tune 680NC Black",
+    "url": "https://redstore.am/en/product/jbl-tune-680nc-black",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/60201/image/rr-montaznaia-oblast-1.webp",
+    "sku": "R90535",
+    "ram": null,
+    "color": "Black",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "jbl-tune-680nc",
+    "shop": "zigzag",
+    "title": "JBL Tune 680NC",
+    "price": 34900,
+    "storage": null,
+    "url": "https://www.zigzag.am/en/jbl-t680ncwht.html",
+    "seeded": true
    }
   ],
   "asus-vivobook-15x-m1503-oled": [

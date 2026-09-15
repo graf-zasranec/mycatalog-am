@@ -455,6 +455,13 @@ if (process.argv[2] === '--selftest') {
     [null, 'LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6" 83JE0189RK Notebooks'],
     ['hp-victus-15', 'HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA Notebooks'],
     ['acer-aspire-15', 'ACER ASPIRE AL15-72P-57CM i5-13420H 16/512 15.6" NX.D5HEM.002 Notebooks'],
+    // REDstore calls every Apple Watch an iWatch
+    ['apple-watch-se-3', 'https://redstore.am/en/product/iwatch-se3-40mm-midnight-band'],
+    ['apple-watch-series-11', 'https://redstore.am/en/product/iwatch-series-11-42mm-jet-black-band'],
+    ['apple-watch-ultra-3', 'https://redstore.am/en/product/iwatch-ultra-3-49mm-black-ti-black-ocean-band'],
+    // ...but an iWatch we do not carry must stay unmatched, not fall onto the nearest one
+    [null, 'https://redstore.am/en/product/iwatch-series-12-42mm-black-band'],
+    [null, 'https://redstore.am/en/product/iwatch-ultra-4-49mm-black-ti-black-band'],
     // a shop that names an iPad by its year, with the capacity in between
     ['apple-ipad-pro-11-m4', 'https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2024-space-black'],
     ['apple-ipad-air-11-m4', 'https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-blue'],

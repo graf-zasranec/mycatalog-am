@@ -47,3 +47,7 @@ data/unmatched.json
 
 # Resume state for tools/check-links.py --all
 .links.json
+
+# shop shelf reading: cached sitemap and the drafts built from it
+.redstore-urls.json
+.shelf-*.json

@@ -674,7 +674,10 @@
    "Rose Gold"
   ],
   "summaryEn": "The mainstream Apple Watch, in 42 mm and 46 mm cases.",
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "aliases": [
+   "iWatch Series 11"
+  ]
  },
  {
   "id": "xiaomi-smart-band-10",
@@ -1090,7 +1093,8 @@
    "Apple Watch SE GPS Gen3",
    "Apple Watch SE Gen3",
    "Apple Watch SE GPS Gen.3",
-   "Apple Watch SE 3"
+   "Apple Watch SE 3",
+   "iWatch SE 3"
   ]
  },
  {
@@ -4961,7 +4965,10 @@
    "Natural Titanium"
   ],
   "summaryEn": "The 49 mm titanium Ultra \u2014 the biggest battery and the brightest screen Apple puts on a watch.",
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "aliases": [
+   "iWatch Ultra 3"
+  ]
  },
  {
   "id": "samsung-galaxy-watch-8-classic",
@@ -8342,6 +8349,9953 @@
   ]
  },
  {
+  "id": "dell-se2425hm",
+  "category": "monitor",
+  "brand": "Dell",
+  "name": "SE2425HM",
+  "tier": "budget",
+  "priceAmd": 47000,
+  "priceAmdMax": 47000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 100,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 100 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 47000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-1c-23-8",
+  "category": "monitor",
+  "brand": "Xiaomi",
+  "name": "1C 23.8\"",
+  "tier": "budget",
+  "priceAmd": 49000,
+  "priceAmdMax": 49000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 49000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-pro-e2425hm",
+  "category": "monitor",
+  "brand": "Dell",
+  "name": "Pro E2425HM",
+  "tier": "budget",
+  "priceAmd": 55000,
+  "priceAmdMax": 55000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 100,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "DisplayPort, HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 100 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 55000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-gaming-monitor-g24i",
+  "category": "monitor",
+  "brand": "Xiaomi",
+  "name": "Gaming Monitor G24i",
+  "tier": "budget",
+  "priceAmd": 57000,
+  "priceAmdMax": 57000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 180,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, DisplayPort, AUX"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 180 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 57000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-21-5-led-m22f",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "21.5'' LED (M22F)",
+  "tier": "budget",
+  "priceAmd": 59000,
+  "priceAmdMax": 59000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 21.5,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 300
+  },
+  "connectivity": {
+   "ports": "HDMI, Display port"
+  },
+  "summaryEn": "A 21.5-inch IPS monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 59000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-ls22a330nhm",
+  "category": "monitor",
+  "brand": "Samsung",
+  "name": "LS22A330NHM",
+  "tier": "budget",
+  "priceAmd": 59000,
+  "priceAmdMax": 59000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 21.5,
+   "type": "TN",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 21.5-inch TN monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 59000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "aoc-22b2hn",
+  "category": "monitor",
+  "brand": "AOC",
+  "name": "22B2HN",
+  "tier": "budget",
+  "priceAmd": 59000,
+  "priceAmdMax": 59000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 21.5,
+   "type": "VA",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 21.5-inch VA monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 59000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-led-e2020h",
+  "category": "monitor",
+  "brand": "Dell",
+  "name": "LED E2020H",
+  "tier": "budget",
+  "priceAmd": 59000,
+  "priceAmdMax": 59000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 20,
+   "type": "TN",
+   "resolution": "1600 x 900",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "DisplayPort, HDMI, VGA"
+  },
+  "summaryEn": "A 20-inch TN monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 59000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "aoc-24b30h2",
+  "category": "monitor",
+  "brand": "AOC",
+  "name": "24B30H2",
+  "tier": "budget",
+  "priceAmd": 59000,
+  "priceAmdMax": 59000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 120
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 120 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 59000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "philips-271v8w",
+  "category": "monitor",
+  "brand": "Philips",
+  "name": "271V8W",
+  "tier": "mid",
+  "priceAmd": 62000,
+  "priceAmdMax": 62000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 27-inch IPS monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 62000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-s5-524sh",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "S5 524SH",
+  "tier": "mid",
+  "priceAmd": 67000,
+  "priceAmdMax": 67000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 100,
+   "brightness": 300
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 100 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 67000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vp247hae",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "VP247HAE",
+  "tier": "mid",
+  "priceAmd": 69000,
+  "priceAmdMax": 69000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "VA",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch VA monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-21-5-led-22fw",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "21.5'' LED (22FW)",
+  "tier": "mid",
+  "priceAmd": 69000,
+  "priceAmdMax": 69000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 21.5,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 300
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 21.5-inch IPS monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "aoc-24v2q",
+  "category": "monitor",
+  "brand": "AOC",
+  "name": "24V2Q",
+  "tier": "mid",
+  "priceAmd": 69000,
+  "priceAmdMax": 69000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, Display port"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-24-led-m24fw",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "24'' LED (M24FW)",
+  "tier": "mid",
+  "priceAmd": 69000,
+  "priceAmdMax": 69000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 300
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-gaming-monitor-a27q",
+  "category": "monitor",
+  "brand": "Xiaomi",
+  "name": "Gaming Monitor A27Q",
+  "tier": "mid",
+  "priceAmd": 73000,
+  "priceAmdMax": 73000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "2560 \u00d7 1440",
+   "refresh": 120,
+   "brightness": 300
+  },
+  "connectivity": {},
+  "summaryEn": "A 27-inch IPS monitor at 120 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 73000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "huawei-led-23-8-ad80hw",
+  "category": "monitor",
+  "brand": "Huawei",
+  "name": "LED 23.8\" AD80HW",
+  "tier": "mid",
+  "priceAmd": 79000,
+  "priceAmdMax": 79000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 79000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "philips-271v8",
+  "category": "monitor",
+  "brand": "Philips",
+  "name": "271V8",
+  "tier": "mid",
+  "priceAmd": 79000,
+  "priceAmdMax": 79000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 27-inch IPS monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 79000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-527sf",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "527SF",
+  "tier": "mid",
+  "priceAmd": 89000,
+  "priceAmdMax": 89000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 100,
+   "brightness": 300
+  },
+  "connectivity": {
+   "ports": "HDMI, VGA"
+  },
+  "summaryEn": "A 27-inch IPS monitor at 100 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 89000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "benq-gw2780",
+  "category": "monitor",
+  "brand": "BenQ",
+  "name": "GW2780",
+  "tier": "mid",
+  "priceAmd": 109000,
+  "priceAmdMax": 109000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "HDMI, Display port"
+  },
+  "summaryEn": "A 27-inch IPS monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 109000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vg245q",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "VG245Q",
+  "tier": "upper-mid",
+  "priceAmd": 129000,
+  "priceAmdMax": 129000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "TN",
+   "resolution": "1920 x 1080",
+   "refresh": 75,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "DisplayPort, HDMI, VGA"
+  },
+  "summaryEn": "A 23.8-inch TN monitor at 75 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 129000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-m5-ls24am506nm",
+  "category": "monitor",
+  "brand": "Samsung",
+  "name": "M5 LS24AM506NM",
+  "tier": "upper-mid",
+  "priceAmd": 149000,
+  "priceAmdMax": 149000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 60,
+   "brightness": 250
+  },
+  "connectivity": {
+   "ports": "Hdmi"
+  },
+  "summaryEn": "A 23.8-inch IPS monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 149000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-gaming-monitor-g-pro-27i",
+  "category": "monitor",
+  "brand": "Xiaomi",
+  "name": "Gaming Monitor G Pro 27i",
+  "tier": "upper-mid",
+  "priceAmd": 158000,
+  "priceAmdMax": 158000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "2560 x 1600",
+   "refresh": 180,
+   "brightness": 350
+  },
+  "connectivity": {
+   "ports": "HDMI, Display port"
+  },
+  "summaryEn": "A 27-inch IPS monitor at 180 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 158000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "benq-el2870u",
+  "category": "monitor",
+  "brand": "BenQ",
+  "name": "EL2870U",
+  "tier": "upper-mid",
+  "priceAmd": 159000,
+  "priceAmdMax": 159000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27,
+   "type": "TN",
+   "resolution": "3440 x 1440",
+   "refresh": 60,
+   "brightness": 300
+  },
+  "connectivity": {
+   "ports": "HDMI, Display port"
+  },
+  "summaryEn": "A 27-inch TN monitor at 60 Hz.",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 159000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e410ka-cl464",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook E410KA-CL464",
+  "tier": "budget",
+  "priceAmd": 109000,
+  "priceAmdMax": 109000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4500"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1300
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel N4500.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 109000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e410ka-cl4128",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook E410KA-CL4128",
+  "tier": "budget",
+  "priceAmd": 115000,
+  "priceAmdMax": 115000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "LED",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4500"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1320
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel N4500.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 115000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-wyse-5470",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Wyse 5470",
+  "tier": "budget",
+  "priceAmd": 129000,
+  "priceAmdMax": 129000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4100"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics 600",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1790
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel N4100.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 256,
+    "priceAmd": 129000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-1-14igl7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Ideapad 1 14IGL7",
+  "tier": "budget",
+  "priceAmd": 145000,
+  "priceAmdMax": 145000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "TN",
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4020"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics 600",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1300
+  },
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with Intel N4020.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 145000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-14-em0002wm",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "14-EM0002WM",
+  "tier": "budget",
+  "priceAmd": 139000,
+  "priceAmdMax": 139000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Athlon Silver 7120U"
+  },
+  "graphics": {
+   "name": "AMD Radeon 610M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1460
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with Athlon Silver 7120U.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 139000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15ian8-n100",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IAN8(N100)",
+  "tier": "budget",
+  "priceAmd": 145000,
+  "priceAmdMax": 145000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Celeron N100"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1550
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Celeron N100.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 145000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-lite-al15-31p-c2z1",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Lite AL15-31P-C2Z1",
+  "tier": "budget",
+  "priceAmd": 149000,
+  "priceAmdMax": 149000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "TN",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4500"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel N4500.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 149000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-wyse-5470-8gb-256gb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Wyse 5470(8GB/256GB)",
+  "tier": "budget",
+  "priceAmd": 149000,
+  "priceAmdMax": 149000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4100"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics 600",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1790
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel N4100.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 149000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e510ka-br859ws",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook E510KA-BR859WS",
+  "tier": "budget",
+  "priceAmd": 159000,
+  "priceAmdMax": 159000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N4500"
+  },
+  "graphics": {
+   "name": "Intel HD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1630
+  },
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel N4500.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 159000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-14-dq6015dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "14 DQ6015DX",
+  "tier": "budget",
+  "priceAmd": 159000,
+  "priceAmdMax": 159000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel N150"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1470
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel N150.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 159000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e1404fa-th31",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook E1404FA-TH31",
+  "tier": "budget",
+  "priceAmd": 179000,
+  "priceAmdMax": 179000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 3 7320U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1380
+  },
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with AMD Ryzen 3 7320U.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 179000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15ian8-128gb",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IAN8(128GB)",
+  "tier": "budget",
+  "priceAmd": 179000,
+  "priceAmdMax": 179000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "TN",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-N305"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1550
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 179000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0113dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0113DX",
+  "tier": "budget",
+  "priceAmd": 179000,
+  "priceAmdMax": 179000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-N305"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 179000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-go-15-ag15-32p-39r2",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire GO 15 AG15-32P-39R2",
+  "tier": "budget",
+  "priceAmd": 179000,
+  "priceAmdMax": 179000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 3-N355"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1700
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core 3-N355.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 179000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1404va-i38128",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1404VA-I38128",
+  "tier": "budget",
+  "priceAmd": 189000,
+  "priceAmdMax": 189000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1400
+  },
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 189000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0336nia",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0336NIA",
+  "tier": "budget",
+  "priceAmd": 199000,
+  "priceAmdMax": 199000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 256,
+    "priceAmd": 199000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15ian8-256gb",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IAN8(256GB)",
+  "tier": "budget",
+  "priceAmd": 199000,
+  "priceAmdMax": 199000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-N305"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1550
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 199000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0133wm",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0133WM",
+  "tier": "budget",
+  "priceAmd": 199000,
+  "priceAmdMax": 199000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-N305"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1700
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 199000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e1404ga-nk006w",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook E1404GA-NK006W",
+  "tier": "budget",
+  "priceAmd": 209000,
+  "priceAmdMax": 209000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-N305"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1380
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with Intel Core i3-N305.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 209000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0531nia",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0531NIA",
+  "tier": "budget",
+  "priceAmd": 209000,
+  "priceAmdMax": 209000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 256,
+    "priceAmd": 209000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-v15-g4-iru",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "V15 G4 IRU",
+  "tier": "budget",
+  "priceAmd": 219000,
+  "priceAmdMax": 219000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1650
+  },
+  "os": "Windows 11",
+  "released": "2022",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 219000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0123dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0123DX",
+  "tier": "budget",
+  "priceAmd": 219000,
+  "priceAmdMax": 219000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 219000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-lite-al16-54p-37j9",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Lite AL16-54P-37J9",
+  "tier": "budget",
+  "priceAmd": 219000,
+  "priceAmdMax": 219000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1305U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1700
+  },
+  "released": "2023",
+  "summaryEn": "A 16-inch laptop with Intel Core i3-1305U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 219000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15iru8-256gb",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IRU8(256GB)",
+  "tier": "budget",
+  "priceAmd": 219000,
+  "priceAmdMax": 219000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1305U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1620
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1305U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 219000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0153dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0153DX",
+  "tier": "budget",
+  "priceAmd": 219000,
+  "priceAmdMax": 219000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "DOS",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 219000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-go15-e1504ga-ws35",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook GO15 E1504GA-WS35",
+  "tier": "budget",
+  "priceAmd": 225000,
+  "priceAmdMax": 225000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-N305"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1630
+  },
+  "os": "Windows 11",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 225000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-3-a325-45",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire 3 A325-45",
+  "tier": "budget",
+  "priceAmd": 229000,
+  "priceAmdMax": 229000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "TN",
+   "resolution": "1366x768",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1305U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1500
+  },
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1305U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 229000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-1-15amn7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 1 15AMN7",
+  "tier": "budget",
+  "priceAmd": 229000,
+  "priceAmdMax": 229000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7520U"
+  },
+  "graphics": {
+   "name": "AMD Radeon 610M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 7520U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 229000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-15-5250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "15 5250",
+  "tier": "budget",
+  "priceAmd": 229000,
+  "priceAmdMax": 229000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1305U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1620
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1305U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 229000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1404vap-v14",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1404VAP-V14",
+  "tier": "budget",
+  "priceAmd": 229000,
+  "priceAmdMax": 229000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1450
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 229000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0531nia-512gb",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0531NIA(512GB)",
+  "tier": "budget",
+  "priceAmd": 229000,
+  "priceAmdMax": 229000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 229000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-pro-15-essential-pv15250-core3",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Pro 15 Essential(PV15250)(Core3)",
+  "tier": "budget",
+  "priceAmd": 229000,
+  "priceAmdMax": 229000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 3 100U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Core 3 100U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 229000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-flex-5-14iau7-i3",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Flex 5 14IAU7(I3)",
+  "tier": "budget",
+  "priceAmd": 239000,
+  "priceAmdMax": 239000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i3-1215U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1550
+  },
+  "os": "Windows 11",
+  "released": "2022",
+  "summaryEn": "A 14-inch laptop with Intel Core i3-1215U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 239000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fc0146dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FC0146DX",
+  "tier": "budget",
+  "priceAmd": 239000,
+  "priceAmdMax": 239000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7520U"
+  },
+  "graphics": {
+   "name": "AMD Radeon 610M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 7520U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 239000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fc0196nia",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FC0196NIA",
+  "tier": "budget",
+  "priceAmd": 239000,
+  "priceAmdMax": 239000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7520U"
+  },
+  "graphics": {
+   "name": "AMD Radeon 610M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 7520U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 239000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15ahp10",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15AHP10",
+  "tier": "budget",
+  "priceAmd": 249000,
+  "priceAmdMax": 249000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 8540U"
+  },
+  "graphics": {
+   "name": "AMD Radeon 740M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 8540U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 249000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-1-15iru7-8gb",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 1 15IRU7(8GB)",
+  "tier": "budget",
+  "priceAmd": 249000,
+  "priceAmdMax": 249000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1335U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1620
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1335U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 249000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-go-15-ag15-51p-510u",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire GO 15 AG15-51P-510U",
+  "tier": "budget",
+  "priceAmd": 249000,
+  "priceAmdMax": 249000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1710
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 249000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0180nia",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0180NIA",
+  "tier": "budget",
+  "priceAmd": 249000,
+  "priceAmdMax": 249000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "DOS",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 249000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-15-dc15250-i5",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "15-DC15250(I5)",
+  "tier": "mid",
+  "priceAmd": 255000,
+  "priceAmdMax": 255000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1940
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 255000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-go-15-e1504fa-bq2909",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook Go 15 E1504FA-BQ2909",
+  "tier": "mid",
+  "priceAmd": 255000,
+  "priceAmdMax": 255000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7520U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1630
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 7520U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 255000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15irh10-i5",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IRH10(I5)",
+  "tier": "mid",
+  "priceAmd": 265000,
+  "priceAmdMax": 265000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-13420H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 265000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-vero-16-av16-51p-58ku",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Vero 16 AV16-51P-58KU",
+  "tier": "mid",
+  "priceAmd": 269000,
+  "priceAmdMax": 269000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-125U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1800
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 269000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-nj2920",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1504VA-NJ2920",
+  "tier": "mid",
+  "priceAmd": 269000,
+  "priceAmdMax": 269000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "LED",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1710
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 269000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0250wm",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0250WM",
+  "tier": "mid",
+  "priceAmd": 269000,
+  "priceAmdMax": 269000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 269000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd0154wm-i5",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD0154WM(I5)",
+  "tier": "mid",
+  "priceAmd": 269000,
+  "priceAmdMax": 269000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 269000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-lite-al16-54p-50tq",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Lite AL16-54P-50TQ",
+  "tier": "mid",
+  "priceAmd": 269000,
+  "priceAmdMax": 269000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1700
+  },
+  "os": "DOS",
+  "released": "2023",
+  "summaryEn": "A 16-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 269000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-16-dc16251",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "16-DC16251",
+  "tier": "mid",
+  "priceAmd": 275000,
+  "priceAmdMax": 275000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1980
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 275000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-1-15iru7-16gb",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 1 15IRU7(16GB)",
+  "tier": "mid",
+  "priceAmd": 279000,
+  "priceAmdMax": 279000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1335U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1620
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1335U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 279000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-16-by0205dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 16-BY0205DX",
+  "tier": "mid",
+  "priceAmd": 287000,
+  "priceAmdMax": 287000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 40"
+  },
+  "graphics": {
+   "name": "AMD Radeon 610M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1640
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 40.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 287000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-v14-g4-iru",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "V14 G4 IRU",
+  "tier": "mid",
+  "priceAmd": 289000,
+  "priceAmdMax": 289000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1430
+  },
+  "os": "DOS",
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with Intel Core i7-13620H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 289000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-15-f1504vap-bs54t",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 15 F1504VAP-BS54T",
+  "tier": "mid",
+  "priceAmd": 289000,
+  "priceAmdMax": 289000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1710
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 289000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd2050wm",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD2050WM",
+  "tier": "mid",
+  "priceAmd": 289000,
+  "priceAmdMax": 289000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 5-225U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 289000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-m1605ya-mb345",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook M1605YA-MB345",
+  "tier": "mid",
+  "priceAmd": 299000,
+  "priceAmdMax": 299000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7730U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "released": "2023",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 7730U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 299000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-15-dc15250-i5-16gb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "15-DC15250(I5)(16GB)",
+  "tier": "mid",
+  "priceAmd": 299000,
+  "priceAmdMax": 299000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1920
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 299000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-vostro-3530-i7",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Vostro 3530(I7)",
+  "tier": "mid",
+  "priceAmd": 309000,
+  "priceAmdMax": 309000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-1355U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-1355U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 309000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd1899nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15-FD1899NR",
+  "tier": "mid",
+  "priceAmd": 318000,
+  "priceAmdMax": 318000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core 7-150U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 318000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-swift-go-14-sfg14-72t-58sh",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Swift GO 14 SFG14-72T-58SH",
+  "tier": "mid",
+  "priceAmd": 319000,
+  "priceAmdMax": 319000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-125H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1300
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 319000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-flip-5-14-fp0057nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook Flip 5 14-FP0057NR",
+  "tier": "mid",
+  "priceAmd": 319000,
+  "priceAmdMax": 319000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1620
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 319000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-3-15itl6",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 3 15ITL6",
+  "tier": "mid",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "TN",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-1165G7"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce MX450 2GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1650
+  },
+  "os": "DOS",
+  "released": "2021",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-1165G7 and Nvidia Geforce MX450 2GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 1,
+    "priceAmd": 329000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15t-fd100-ultra-5",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15T-FD100(Ultra 5)",
+  "tier": "mid",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-125H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1650
+  },
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 5-125H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 329000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-inspiron-7440-core-5",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Inspiron 7440(Core 5)",
+  "tier": "mid",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "WVA",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1750
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 329000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-flip-tp3604va-ws51t",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook Flip TP3604VA-WS51T",
+  "tier": "mid",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i5-1335U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "released": "2023",
+  "summaryEn": "A 16-inch laptop with Intel Core i5-1335U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 329000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-q410-evo",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook Q410-EVO",
+  "tier": "mid",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "OLED",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i5-13500H"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1560
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core i5-13500H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 329000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-inspiron-7440-i5",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Inspiron 7440(I5)",
+  "tier": "mid",
+  "priceAmd": 329000,
+  "priceAmdMax": 329000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1750
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core i5-1334U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 329000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-5-16iru9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 16IRU9",
+  "tier": "mid",
+  "priceAmd": 335000,
+  "priceAmdMax": 335000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 2000
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-120U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 335000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-swift-go-14-sfg14-71-52tv",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Swift Go 14 SFG14-71-52TV",
+  "tier": "mid",
+  "priceAmd": 339000,
+  "priceAmdMax": 339000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2240x1400",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-1335U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1300
+  },
+  "released": "2023",
+  "summaryEn": "A 14-inch laptop with Intel Core i5-1335U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 339000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-16-be0003dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 16-BE0003DX",
+  "tier": "mid",
+  "priceAmd": 339000,
+  "priceAmdMax": 339000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 220"
+  },
+  "graphics": {
+   "name": "AMD Radeon 740M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1890
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 220.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 339000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-nj3952",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1504VA-NJ3952",
+  "tier": "mid",
+  "priceAmd": 339000,
+  "priceAmdMax": 339000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1710
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core 7-150U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 339000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fa2013dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FA2013DX",
+  "tier": "mid",
+  "priceAmd": 349000,
+  "priceAmdMax": 349000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-13420H and Nvidia Geforce RTX 3050 6GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 349000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-pro-15-essential-pv15250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Pro 15 Essential(PV15250)",
+  "tier": "mid",
+  "priceAmd": 349000,
+  "priceAmdMax": 349000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-1355U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-1355U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 349000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15t-fd100-ultra-7",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15T-FD100(Ultra 7)",
+  "tier": "mid",
+  "priceAmd": 359000,
+  "priceAmdMax": 359000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1650
+  },
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 7-155H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 359000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fa506nfr-hn129",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FA506NFR-HN129",
+  "tier": "mid",
+  "priceAmd": 359000,
+  "priceAmdMax": 359000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7435HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 2050 4GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 7435HS and Nvidia Geforce RTX 2050 4GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 359000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-5-14ial10",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 14IAL10",
+  "tier": "mid",
+  "priceAmd": 359000,
+  "priceAmdMax": 359000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1500
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-225U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 359000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-14-ai-a14-52mt-59dp",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire 14 AI A14-52MT-59DP",
+  "tier": "mid",
+  "priceAmd": 359000,
+  "priceAmdMax": 359000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-226V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1400
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-226V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 359000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-16-bu0305dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 16-BU0305DX",
+  "tier": "mid",
+  "priceAmd": 359000,
+  "priceAmdMax": 359000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1770
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 359000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-q415ma-u5512",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook Q415MA-U5512",
+  "tier": "mid",
+  "priceAmd": 369000,
+  "priceAmdMax": 369000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "OLED",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-125H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1280
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125H.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 369000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-probook-440-g10",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 440 G10",
+  "tier": "mid",
+  "priceAmd": 379000,
+  "priceAmdMax": 379000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-1355U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1370
+  },
+  "os": "Windows 11",
+  "summaryEn": "A 14-inch laptop with Intel Core i7-1355U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 379000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-14-fm0013dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 14-FM0013DX",
+  "tier": "mid",
+  "priceAmd": 379000,
+  "priceAmdMax": 379000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-226V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-226V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 379000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-loq-15arp9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "LOQ 15ARP9",
+  "tier": "mid",
+  "priceAmd": 379000,
+  "priceAmdMax": 379000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7235HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2380
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 7235HS and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 379000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-envy-15-fe1165nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Envy 15-FE1165NR",
+  "tier": "mid",
+  "priceAmd": 379000,
+  "priceAmdMax": 379000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-125U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1750
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 5-125U.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 379000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-13-dx13260",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 13 DX13260",
+  "tier": "mid",
+  "priceAmd": 379000,
+  "priceAmdMax": 379000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 5 320"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1000
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 13-inch laptop with Core 5 320.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 379000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-nitro-anv16-71-58u4",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro ANV16-71-58U4",
+  "tier": "mid",
+  "priceAmd": 389000,
+  "priceAmdMax": 389000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-14450HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2500
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i5-14450HX and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 389000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-flip-14-tp3407sa-ds74t",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook Flip 14-TP3407SA-DS74T",
+  "tier": "mid",
+  "priceAmd": 389000,
+  "priceAmdMax": 389000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "OLED",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1570
+  },
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 389000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-15-dc15250-i7-512gb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "15-DC15250(I7)(512GB)",
+  "tier": "mid",
+  "priceAmd": 389000,
+  "priceAmdMax": 389000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-1355U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1620
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-1355U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 389000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-14-plus-2in1-db04250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "14 Plus 2in1 DB04250",
+  "tier": "mid",
+  "priceAmd": 398000,
+  "priceAmdMax": 398000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "WVA",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1610
+  },
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 398000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-5-14iru9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 14IRU9",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1470
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core 7-150U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-14-jyu4645cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook 14 (JYU4645CN)",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2240x1400",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-210H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1360
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-210H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-inspiron-7440-core-7",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Inspiron 7440(Core 7)",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "WVA",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1750
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core 7-150U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-16-bu0007dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 16-BU0007DX",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 255U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1640
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with Ultra 7 255U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-5-2in1-16ahp9-ryzen-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 2in1 16AHP9(Ryzen 7)",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 8845HS"
+  },
+  "graphics": {
+   "name": "AMD Radeon 780M",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1800
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 8845HS.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-go-16-ag16-71p-97w3",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Go 16 AG16-71P-97W3",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1700
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i9-13900H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-thin-a15-b7uc-653xae",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Thin A15 B7UC-653XAE",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7-7735HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 4GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1860
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7-7735HS and Nvidia Geforce RTX 3050 4GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-16-dc16250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "16 DC16250",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "WVA",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 7-150U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-17-dg0107dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 17-DG0107DX",
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 17,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 2500
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 17-inch laptop with Intel Core Ultra 7 255U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fa2082wm",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FA2082WM",
+  "tier": "mid",
+  "priceAmd": 419000,
+  "priceAmdMax": 419000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2290
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-13420H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 419000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-16-as0023dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 16-AS0023DX",
+  "tier": "mid",
+  "priceAmd": 419000,
+  "priceAmdMax": 419000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 419000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-plus-2in1-db04250-7137",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Plus 2in1 DB04250-7137",
+  "tier": "mid",
+  "priceAmd": 419000,
+  "priceAmdMax": 419000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1610
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 419000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-g15-5520",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "G15 5520",
+  "tier": "mid",
+  "priceAmd": 429000,
+  "priceAmdMax": 429000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-12500H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 4GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2680
+  },
+  "released": "2022",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-12500H and Nvidia Geforce RTX 3050 4GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 429000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15t-dw300",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "15T-DW300",
+  "tier": "mid",
+  "priceAmd": 429000,
+  "priceAmdMax": 429000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-1165G7"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1750
+  },
+  "released": "2021",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-1165G7.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 429000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fb3093dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FB3093DX",
+  "tier": "mid",
+  "priceAmd": 429000,
+  "priceAmdMax": 429000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7445HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2290
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 7445HS and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 429000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-nitro-v15-anv15-52-57bb",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro V15 ANV15-52-57BB",
+  "tier": "mid",
+  "priceAmd": 429000,
+  "priceAmdMax": 429000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2100
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i5-13420H and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 429000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-7-16iml9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga 7 16IML9",
+  "tier": "mid",
+  "priceAmd": 435000,
+  "priceAmdMax": 435000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1990
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-155U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 435000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-pro-14-jyu4594cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook Pro 14 (JYU4594CN)",
+  "tier": "mid",
+  "priceAmd": 439000,
+  "priceAmdMax": 439000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-125H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1450
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 439000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-16-jyu4639cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook 16 (JYU4639CN)",
+  "tier": "mid",
+  "priceAmd": 449000,
+  "priceAmdMax": 449000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-220H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1650
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-220H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 449000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-14-plus-2in1-db04255",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "14 Plus 2in1 DB04255",
+  "tier": "mid",
+  "priceAmd": 449000,
+  "priceAmdMax": 449000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "WVA",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen AI 7 350"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1590
+  },
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with AMD Ryzen AI 7 350.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 449000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15q8x10",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15Q8X10",
+  "tier": "mid",
+  "priceAmd": 449000,
+  "priceAmdMax": 449000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon X 8 Core"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1500
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Snapdragon X 8 Core.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 449000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fa506ncg-hn198",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FA506NCG-HN198",
+  "tier": "mid",
+  "priceAmd": 449000,
+  "priceAmdMax": 449000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7445HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 4GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 7445HS and Nvidia Geforce RTX 3050 4GB.",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 449000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-14-jyu4635cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook 14 (JYU4635CN)",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-220H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1360
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-220H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fa2318tx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FA2318TX",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2290
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 3050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-nitro-anv15-51-76er",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro ANV15-51-76ER",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2100
+  },
+  "os": "DOS",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-a16-fa607nuq-ws73",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF A16 FA607NUQ-WS73",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 170"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 170 and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-katana-15-b13vek-1675us",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Katana 15 B13VEK-1675US",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2250
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-7-16-az0595",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 7 16-AZ0595",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2048\u00d71280",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core 9 270H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1920
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Core 9 270H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-katana-15-hk-b14vek-001us",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Katana 15 HK B14VEK-001US",
+  "tier": "mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2250
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 459000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-14-jyu4618cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook 14 (JYU4618CN)",
+  "tier": "mid",
+  "priceAmd": 469000,
+  "priceAmdMax": 469000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1370
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core i7-13620H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 469000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-16-jyu4617cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook 16 (JYU4617CN)",
+  "tier": "mid",
+  "priceAmd": 469000,
+  "priceAmdMax": 469000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1370
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-13620H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 469000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-5-2in1-14ahp9-ryzen-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 2in1 14AHP9(Ryzen 7)",
+  "tier": "mid",
+  "priceAmd": 469000,
+  "priceAmdMax": 469000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 8845HS"
+  },
+  "graphics": {
+   "name": "AMD Radeon 780M",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1470
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with AMD Ryzen 7 8845HS.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 469000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fa2317tx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FA2317TX",
+  "tier": "mid",
+  "priceAmd": 479000,
+  "priceAmdMax": 479000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2450
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 479000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-ideapad-5-2in1-16ial10-ultra-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 2in1 16IAL10(Ultra 7)",
+  "tier": "mid",
+  "priceAmd": 479000,
+  "priceAmdMax": 479000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 2100
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Ultra 7 255U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 479000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-2in1-16t-as000",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 2in1 16T-AS000",
+  "tier": "mid",
+  "priceAmd": 479000,
+  "priceAmdMax": 479000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics 140V",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 479000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fa506ncg-hn211",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FA506NCG-HN211",
+  "tier": "mid",
+  "priceAmd": 479000,
+  "priceAmdMax": 479000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7445HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 4GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 7445HS and Nvidia Geforce RTX 3050 4GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 479000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-17-dd0047nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X 17-DD0047NR",
+  "tier": "mid",
+  "priceAmd": 479000,
+  "priceAmdMax": 479000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 17,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics 140V",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 2000
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 17-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 479000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-nitro-anv16-71-760q",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro ANV16-71-760Q",
+  "tier": "mid",
+  "priceAmd": 489000,
+  "priceAmdMax": 489000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2500
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 489000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-7-2-in-1-16akp10",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga 7 2 in 1 16AKP10",
+  "tier": "mid",
+  "priceAmd": 489000,
+  "priceAmdMax": 489000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen AI 7 350"
+  },
+  "graphics": {
+   "name": "AMD Radeon 860M Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1300
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen AI 7 350.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 489000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-loq-15ahp10-rtx-5050",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "LOQ 15AHP10(RTX 5050)",
+  "tier": "mid",
+  "priceAmd": 495000,
+  "priceAmdMax": 495000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 250"
+  },
+  "graphics": {
+   "name": "Nvidia RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 250 and Nvidia RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 495000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fx607vu-rl089",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FX607VU-RL089",
+  "tier": "mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-210H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-210H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 499000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fa507nv-eh53",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FA507NV-EH53",
+  "tier": "mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 7535HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 7535HS and Nvidia Geforce RTX 4060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 499000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-14-ai-a14-52mt-701k",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire 14 AI A14-52MT-701K",
+  "tier": "mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1400
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-258V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 499000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-16-f1605va-ws96",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 16 F1605VA-WS96",
+  "tier": "mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i9-13900H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 499000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fa707nug-hx154",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FA707NUG-HX154",
+  "tier": "mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 17,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7445HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2600
+  },
+  "os": "DOS",
+  "released": "2023",
+  "summaryEn": "A 17-inch laptop with AMD Ryzen 7 7445HS and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 499000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-slim-7-15ill9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga Slim 7 15ILL9",
+  "tier": "mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1530
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 499000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fa2787nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FA2787NR",
+  "tier": "upper-mid",
+  "priceAmd": 505000,
+  "priceAmdMax": 505000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 505000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-16-jyu4643cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook 16 (JYU4643CN)",
+  "tier": "upper-mid",
+  "priceAmd": 509000,
+  "priceAmdMax": 509000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 5-210H"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1630
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-210H.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 509000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-pro-14-plus-2in1-pb14250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Pro 14 Plus 2in1 PB14250",
+  "tier": "upper-mid",
+  "priceAmd": 509000,
+  "priceAmdMax": 509000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-265U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1450
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-265U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 509000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-g5-15-5535",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "G5 15 5535",
+  "tier": "upper-mid",
+  "priceAmd": 529000,
+  "priceAmdMax": 529000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 7840HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2810
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 7840HS and Nvidia Geforce RTX 4060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 529000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-loq-15irx10-i7-13gen-rtx-5060",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "LOQ 15IRX10(I7 13Gen/RTX 5060)",
+  "tier": "upper-mid",
+  "priceAmd": 529000,
+  "priceAmdMax": 529000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-13650HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 529000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-book-6-np760xjg",
+  "category": "laptop",
+  "brand": "Samsung",
+  "name": "Galaxy Book 6(NP760XJG)",
+  "tier": "upper-mid",
+  "priceAmd": 529000,
+  "priceAmdMax": 529000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 355"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1800
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with Ultra 7 355.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 529000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fb3001nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FB3001NR",
+  "tier": "upper-mid",
+  "priceAmd": 539000,
+  "priceAmdMax": 539000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen AI 7 350"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2290
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen AI 7 350 and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 539000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-victus-15-fa2093dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-FA2093DX",
+  "tier": "upper-mid",
+  "priceAmd": 539000,
+  "priceAmdMax": 539000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2290
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 539000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-15-da15265",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware 15 DA15265",
+  "tier": "upper-mid",
+  "priceAmd": 539000,
+  "priceAmdMax": 539000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 5 220"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 5 220 and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 539000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9345-x-plus",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9345(X Plus)",
+  "tier": "upper-mid",
+  "priceAmd": 549000,
+  "priceAmdMax": 549000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Snapdragon X Plus"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1190
+  },
+  "released": "2025",
+  "summaryEn": "A 13-inch laptop with Snapdragon X Plus.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 549000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-loq-15ahp10-rtx-5060",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "LOQ 15AHP10(RTX 5060)",
+  "tier": "upper-mid",
+  "priceAmd": 549000,
+  "priceAmdMax": 549000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 250"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 250 and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 549000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9350-16gb-ultra-7",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9350(16GB/Ultra 7)",
+  "tier": "upper-mid",
+  "priceAmd": 559000,
+  "priceAmdMax": 559000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "OLED",
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1220
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 13-inch laptop with Intel Core Ultra 7-256V.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 559000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-da15260",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware DA15260",
+  "tier": "upper-mid",
+  "priceAmd": 559000,
+  "priceAmdMax": 559000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 7-240H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 15-inch laptop with Intel Core 7-240H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 559000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9345-x-elite-16gb-512gb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9345(X Elite)(16GB/512GB)",
+  "tier": "upper-mid",
+  "priceAmd": 589000,
+  "priceAmdMax": 589000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "OLED",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Snapdragon X Elite"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1170
+  },
+  "released": "2025",
+  "summaryEn": "A 13-inch laptop with Snapdragon X Elite.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 589000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-pro-16-jyu4593cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook Pro 16 (JYU4593CN)",
+  "tier": "upper-mid",
+  "priceAmd": 589000,
+  "priceAmdMax": 589000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "3072x1920",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-155H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 589000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-swift-sfg16-72t-95lg",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Swift SFG16-72T-95LG",
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1600
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-185H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-pro-16-jyu4649cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook Pro 16 (JYU4649CN)",
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "3072x1920",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 5-225H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-flip-ux3407qa-x1p512",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook Flip UX3407QA-X1P512",
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon X Plus"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 980
+  },
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Plus.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-anv15-52-99cv",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "ANV15-52-99CV",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2110
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i9-13900H and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-16-aurora-ac16250-16gb-rtx-5050",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware 16 Aurora-AC16250(16GB/RTX 5050)",
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 7-240H"
+  },
+  "graphics": {
+   "name": "Nvidia RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2380
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 7-240H and Nvidia RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fx607vu-ds73",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FX607VU-DS73",
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2300
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-13620H and Nvidia RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-katana-15-hx-b14wek",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Katana 15 HX B14WEK",
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmibook-pro-16-jyu4650cn",
+  "category": "laptop",
+  "brand": "Xiaomi",
+  "name": "RedmiBook Pro 16 (JYU4650CN)",
+  "tier": "upper-mid",
+  "priceAmd": 609000,
+  "priceAmdMax": 609000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "3072x1920",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-225H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-225H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 609000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-anv15-52-92dd",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "ANV15-52-92DD",
+  "tier": "upper-mid",
+  "priceAmd": 619000,
+  "priceAmdMax": 619000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2110
+  },
+  "released": "2023",
+  "summaryEn": "A 15-inch laptop with Intel Core i9-13900H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 619000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-pro-q543mj-u93050",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook Pro Q543MJ-U93050",
+  "tier": "upper-mid",
+  "priceAmd": 645000,
+  "priceAmdMax": 645000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "OLED",
+   "resolution": "1920x1080",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 9-185H and Nvidia Geforce RTX 3050 6GB.",
+  "variants": [
+   {
+    "ram": 24,
+    "storage": 2,
+    "priceAmd": 645000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-5-16-af1095cl",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 16-AF1095CL",
+  "tier": "upper-mid",
+  "priceAmd": 645000,
+  "priceAmdMax": 645000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-285H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics 140T",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1600
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-285H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 645000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-plus-16-db16250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Plus 16 DB16250",
+  "tier": "upper-mid",
+  "priceAmd": 649000,
+  "priceAmdMax": 649000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1880
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-288V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 649000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-16-aurora-ac16250-16gb-rtx-5060",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware 16 Aurora-AC16250(16GB/ RTX 5060)",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core 7-240H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2570
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core 7-240H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-slim-7-14q8x9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga Slim 7 14Q8X9",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "OLED",
+   "resolution": "2944x1840",
+   "refresh": 90,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon X Elite"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1280
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Elite.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-plus-2in1-db04250-9168",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Plus 2in1 DB04250-9168",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1610
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-288V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-nitro-v15-anv15-52-90gc",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro V15 ANV15-52-90GC",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Nvidia RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2110
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i9-13900H and Nvidia RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "gigabyte-gaming-a16-ga6h",
+  "category": "laptop",
+  "brand": "Gigabyte",
+  "name": "Gaming A16 GA6H",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-16-flip-tp3607sa-is77t",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 16 Flip TP3607SA-IS77T",
+  "tier": "upper-mid",
+  "priceAmd": 659000,
+  "priceAmdMax": 659000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1800
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-258V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 659000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-nitro-v15-anv15-52-9161",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro V15 ANV15-52-9161",
+  "tier": "upper-mid",
+  "priceAmd": 669000,
+  "priceAmdMax": 669000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2110
+  },
+  "os": "Windows 11",
+  "summaryEn": "A 15-inch laptop with Intel Core i9-13900H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 669000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omen-16t-wf100-rtx-4070",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Omen 16T-WF100(RTX 4070)",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14700HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2390
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-14700HX and Nvidia Geforce RTX 4070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fx608jmr-f16",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FX608JMR-F16",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omen-16-ap0167ax",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Omen 16-AP0167AX",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 9 8940HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2450
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 9 8940HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-plus-2in1-db04250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Plus 2in1 DB04250",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1610
+  },
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-288V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-14-um3406g-ws79t",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook 14 UM3406G-WS79T",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen AI 7 445"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1000
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with AMD Ryzen AI 7 445.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-hyperx-omen-15-ga0762nr",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "HyperX OMEN 15-GA0762NR",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-a18-fa808um-is74",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Tuf A18 FA808UM-IS74",
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 260"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2600
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with AMD Ryzen 7 260 and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-legion-5-15iax10",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 15IAX10",
+  "tier": "upper-mid",
+  "priceAmd": 729000,
+  "priceAmdMax": 729000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "OLED",
+   "resolution": "2560x1600",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-255HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 7-255HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 729000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-hyperx-omen-16-am2013dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "HyperX OMEN 16-AM2013DX",
+  "tier": "upper-mid",
+  "priceAmd": 729000,
+  "priceAmdMax": 729000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 356H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 356H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 729000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-katana-15-hx-b14wgk-293us",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Katana 15 HX B14WGK-293US",
+  "tier": "upper-mid",
+  "priceAmd": 739000,
+  "priceAmdMax": 739000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "2560x1440",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 739000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g614fh-os94",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G614FH-OS94",
+  "tier": "upper-mid",
+  "priceAmd": 739000,
+  "priceAmdMax": 739000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 9 9955HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2500
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 9 9955HX and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 739000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-predator-helios-neo-16s-71-91aw",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Predator Helios Neo 16S-71-91AW",
+  "tier": "upper-mid",
+  "priceAmd": 749000,
+  "priceAmdMax": 749000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "OLED",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2320
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 749000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-16-plus-2-in-1-db06250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "16 Plus 2 in 1 DB06250",
+  "tier": "upper-mid",
+  "priceAmd": 759000,
+  "priceAmdMax": 759000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "Mini-LED",
+   "resolution": "2560x1600",
+   "refresh": 90,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 2050
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-288V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 759000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omen-slim-16-an0008tx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Omen Slim 16-AN0008TX",
+  "tier": "upper-mid",
+  "priceAmd": 759000,
+  "priceAmdMax": 759000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-285H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2450
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-285H and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 759000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-14-um3405ga-zb-70",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook 14 UM3405GA-ZB_70",
+  "tier": "upper-mid",
+  "priceAmd": 759000,
+  "priceAmdMax": 759000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen AI 9 465"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1000
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with AMD Ryzen AI 9 465.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 759000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-elitebook-ultra-g1q",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "EliteBook Ultra G1Q",
+  "tier": "upper-mid",
+  "priceAmd": 769000,
+  "priceAmdMax": 769000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2240x1400",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Snapdragon X Elite"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1340
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Elite.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 512,
+    "priceAmd": 769000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-16x-aurora-ac16251-rtx-5060",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware 16X Aurora-AC16251(RTX 5060)",
+  "tier": "upper-mid",
+  "priceAmd": 779000,
+  "priceAmdMax": 779000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2610
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 779000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-predator-helios-neo-phn14-51-90n4",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Predator Helios Neo PHN14-51-90N4",
+  "tier": "upper-mid",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "3072x1920",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-185H and Nvidia Geforce RTX 4070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9640-rtx-4050",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9640(RTX 4050)",
+  "tier": "upper-mid",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16.3,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2130
+  },
+  "released": "2024",
+  "summaryEn": "A 16.3-inch laptop with Intel Core Ultra 7-155H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fx608jpr-wh74",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FX608JPR-WH74",
+  "tier": "upper-mid",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-legion-5-15irx10-i9-rtx-5070",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 15IRX10(I9/RTX 5070)",
+  "tier": "upper-mid",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "OLED",
+   "resolution": "2560x1600",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-14900HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1900
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i9-14900HX and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-elitebook-ultra-g1q-1tb-ssd",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "EliteBook Ultra G1Q(1TB SSD)",
+  "tier": "upper-mid",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "2240x1400",
+   "refresh": 60,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Snapdragon X Elite"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1340
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Elite.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-hyperx-omen-16-ap1023dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "HyperX OMEN 16-AP1023DX",
+  "tier": "upper-mid",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 9 8940HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 9 8940HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-a16-fa608up-a16",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Tuf A16 FA608UP-A16",
+  "tier": "upper-mid",
+  "priceAmd": 829000,
+  "priceAmdMax": 829000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 9 270"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2250
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 9 270 and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 829000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-katana-15-hx-b14wgk-016us",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Katana 15 HX B14WGK-016US",
+  "tier": "upper-mid",
+  "priceAmd": 849000,
+  "priceAmdMax": 849000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "2560x1440",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-14900HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2400
+  },
+  "os": "DOS",
+  "released": "2025",
+  "summaryEn": "A 15-inch laptop with Intel Core i9-14900HX and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 849000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-predator-helios-neo-phn16-73-97bp",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Predator Helios Neo PHN16-73-97BP",
+  "tier": "upper-mid",
+  "priceAmd": 859000,
+  "priceAmdMax": 859000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 180,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2700
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 859000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g18-g814ph-es94",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G18 G814PH-ES94",
+  "tier": "upper-mid",
+  "priceAmd": 859000,
+  "priceAmdMax": 859000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 144,
+   "touch": false
+  },
+  "chipset": {
+   "name": "AMD Ryzen 9 8940HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 3100
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with AMD Ryzen 9 8940HX and Nvidia Geforce RTX 5050 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 859000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-fx608lm-bs96",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF FX608LM-BS96",
+  "tier": "upper-mid",
+  "priceAmd": 875000,
+  "priceAmdMax": 875000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 165,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2200
+  },
+  "os": "DOS",
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 875000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9440-rtx-4050",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9440(RTX 4050)",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1680
+  },
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155H and Nvidia Geforce RTX 4050 6GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g614jvr-es94",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G614JVR-ES94",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i9-14900HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2500
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core i9-14900HX and Nvidia Geforce RTX 4060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-predator-helios-neo-phn16-73-94zr",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Predator Helios Neo PHN16-73-94ZR",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2700
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-16-as0043dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 16-AS0043DX",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15,
+   "type": "IPS",
+   "resolution": "1920x1080",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 2290
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 15-inch laptop with Intel Core Ultra 9-288V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 2,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-9-13imu9",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga 9 13IMU9",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "OLED",
+   "resolution": "2880x1800",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155U"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1340
+  },
+  "os": "Windows 11",
+  "released": "2023",
+  "summaryEn": "A 13-inch laptop with Intel Core Ultra 7-155U.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-9-14ill10",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga 9 14ILL10",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "OLED",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1320
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-258V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9345-x-elite-32gb-1tb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9345(X Elite)(32GB/1TB)",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "OLED",
+   "resolution": "2880x1800",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Snapdragon X Elite"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1170
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 13-inch laptop with Snapdragon X Elite.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g16-g615lm-ds96",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G16 G615LM-DS96",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2660
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g18-g815jmr-ss74",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G18 G815JMR-SS74",
+  "tier": "upper-mid",
+  "priceAmd": 899000,
+  "priceAmdMax": 899000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core i7-14650HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 3300
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core i7-14650HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 899000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9350-ultra-9",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9350(Ultra 9)",
+  "tier": "flagship",
+  "priceAmd": 969000,
+  "priceAmdMax": 969000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1190
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 13-inch laptop with Intel Core Ultra 9-288V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 969000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-zephyrus-gu605cp-g16",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Zephyrus GU605CP-G16",
+  "tier": "flagship",
+  "priceAmd": 999000,
+  "priceAmdMax": 999000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-285H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 1850
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-285H and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 999000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9350-32gb-ultra-7",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9350(32GB/Ultra 7)",
+  "tier": "flagship",
+  "priceAmd": 999000,
+  "priceAmdMax": 999000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 13,
+   "type": "OLED",
+   "resolution": "2880x1800",
+   "refresh": 60,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1220
+  },
+  "os": "Windows 11",
+  "summaryEn": "A 13-inch laptop with Intel Core Ultra 7-258V.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 999000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9640-512gb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9640(512GB)",
+  "tier": "flagship",
+  "priceAmd": 1099000,
+  "priceAmdMax": 1099000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16.3,
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2130
+  },
+  "released": "2024",
+  "summaryEn": "A 16.3-inch laptop with Intel Core Ultra 7-155H and Nvidia Geforce RTX 4060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 1099000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g815lm-is96-rtx5060",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G815LM-IS96(RTX5060)",
+  "tier": "flagship",
+  "priceAmd": 1099000,
+  "priceAmdMax": 1099000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 3220
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1099000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-14-premium-da14250",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "14 Premium DA14250",
+  "tier": "flagship",
+  "priceAmd": 1099000,
+  "priceAmdMax": 1099000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14,
+   "type": "IPS",
+   "resolution": "1920x1200",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-255H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "body": {
+   "weight": 1660
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-255H.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1099000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g815lp-is96-rtx5070",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G815LP-IS96(RTX5070)",
+  "tier": "flagship",
+  "priceAmd": 1139000,
+  "priceAmdMax": 1139000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 3100
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5070 8GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1139000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g615lr-ms97",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G615LR-MS97",
+  "tier": "flagship",
+  "priceAmd": 1299000,
+  "priceAmdMax": 1299000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 TI 12GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2650
+  },
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5070 TI 12GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 2,
+    "priceAmd": 1299000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-xps-9640-1tb",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9640(1TB)",
+  "tier": "flagship",
+  "priceAmd": 1299000,
+  "priceAmdMax": 1299000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16.3,
+   "type": "OLED",
+   "resolution": "3840x2160",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4060 8GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2250
+  },
+  "os": "Windows 11",
+  "released": "2024",
+  "summaryEn": "A 16.3-inch laptop with Intel Core Ultra 7-155H and Nvidia Geforce RTX 4060 8GB.",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1,
+    "priceAmd": 1299000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-raider-16-max-hx-b2wh-rtx-5070ti",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Raider 16 Max HX B2WH(RTX 5070Ti)",
+  "tier": "flagship",
+  "priceAmd": 1599000,
+  "priceAmdMax": 1599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9 290HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 TI 12GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2700
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9 290HX and Nvidia Geforce RTX 5070 TI 12GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-g18-g815lr-is97",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix G18 G815LR-IS97",
+  "tier": "flagship",
+  "priceAmd": 1599000,
+  "priceAmdMax": 1599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 TI 12GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2850
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5070 TI 12GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 2,
+    "priceAmd": 1599000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-raider-16-max-hx-b2wi-rtx-5080",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Raider 16 Max HX B2WI(RTX 5080)",
+  "tier": "flagship",
+  "priceAmd": 1699000,
+  "priceAmdMax": 1699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9 290HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5080 16GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2700
+  },
+  "os": "Windows 11",
+  "released": "2026",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9 290HX and Nvidia Geforce RTX 5080 16GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1699000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-18-area-51-32gb-rtx-5080",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware 18\" Area-51(32GB/RTX 5080)",
+  "tier": "flagship",
+  "priceAmd": 1799000,
+  "priceAmdMax": 1799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 300,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5080 16GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 4340
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5080 16GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1799000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-raider-18-hx-ai-a2xwig-rtx-5080",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Raider 18 HX AI A2XWIG(RTX 5080)",
+  "tier": "flagship",
+  "priceAmd": 1859000,
+  "priceAmdMax": 1859000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "Mini-LED",
+   "resolution": "3840\u00d72400",
+   "refresh": 120,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9 290HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5080 16GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 3600
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9 290HX and Nvidia Geforce RTX 5080 16GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 1859000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-x16-r2",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware X16 R2",
+  "tier": "flagship",
+  "priceAmd": 1999000,
+  "priceAmdMax": 1999000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4090 16GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2720
+  },
+  "released": "2024",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-185H and Nvidia Geforce RTX 4090 16GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 2,
+    "priceAmd": 1999000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-alienware-18-area-51-64gb-rtx-5080",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Alienware 18\" Area-51(64GB/RTX 5080)",
+  "tier": "flagship",
+  "priceAmd": 1999000,
+  "priceAmdMax": 1999000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 18,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 300,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5080 16GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 4340
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5080 16GB.",
+  "variants": [
+   {
+    "ram": 64,
+    "storage": 2,
+    "priceAmd": 1999000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-scare-16-g635lx-ds96",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Rog Strix Scare 16 G635LX-DS96",
+  "tier": "flagship",
+  "priceAmd": 2199000,
+  "priceAmdMax": 2199000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "Mini-LED",
+   "resolution": "2560x1600",
+   "refresh": 240,
+   "touch": false
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5090 24GB",
+   "type": "discrete"
+  },
+  "body": {
+   "weight": 2650
+  },
+  "os": "Windows 11",
+  "released": "2025",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5090 24GB.",
+  "variants": [
+   {
+    "ram": 32,
+    "storage": 1,
+    "priceAmd": 2199000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
   "id": "bo-beoplay-h95",
   "category": "headphones",
   "brand": "Bang & Olufsen",
@@ -10053,6 +20007,9 @@
   "unsure": [
    "popularity",
    "battery.capacity"
+  ],
+  "aliases": [
+   "iWatch Series 10"
   ]
  },
  {
