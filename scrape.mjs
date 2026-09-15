@@ -347,22 +347,35 @@ function magentoChildren(html, colors) {
     if (!price || price < 5000) continue;
     const col = label(color, child);
     out.push({ price, storage: capOf(label(drive, child)), ram: capOf(label(ram, child)),
-      color: (col && colorOf(col, colors)) || col || null, inStock: pr.is_in_stock !== false });
+      // A colour Magento states that none of the product's own colours will map to is not a
+      // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
+      // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
+      color: (col && colorOf(col, colors)) || null, inStock: pr.is_in_stock !== false });
   }
   return out;
 }
-// 3DPlanet renders its colour swatches from this endpoint, and is_active is 0 for a colour the
-// shop has sold out of - the page itself says nothing about which colours you can actually buy.
-async function planetColors(varId) {
+// 3DPlanet renders its buy-box options from this endpoint, one call per variation id covering
+// every dimension at once - colour, and on an iPhone, SIM build too. is_active is 0 for an
+// option the shop has sold out of; the page itself says nothing about which you can actually
+// buy. Colour's own price is a delta on the tier (almost always 0); SIM's is not a delta at
+// all - "E-Sim" repeats the tier's own price back exactly, "1 Sim kard + Esim" (the nano tray)
+// states the tray build's OWN full price - the standing rule that the tray always costs more
+// than eSIM, confirmed on 3DPlanet's own numbers rather than assumed.
+async function planetModifiers(varId) {
   let data;
-  try { data = JSON.parse(await get('https://3dplanet.am/variations/' + varId + '/modifiers')); } catch { return []; }
-  const mod = (Array.isArray(data) ? data : []).find(m =>
-    ((m.specification || {}).translations || []).some(t => /^colou?r$/i.test(t.name || '')));
-  return ((mod || {}).values || []).map(v => ({
-    name: clean(((v.value || {}).value) || ''),
-    delta: Math.round(Number(v.price || 0)),
-    active: v.is_active !== 0
-  })).filter(c => c.name);
+  try { data = JSON.parse(await get('https://3dplanet.am/variations/' + varId + '/modifiers')); } catch { return {}; }
+  const out = {};
+  for (const m of (Array.isArray(data) ? data : [])) {
+    const name = ((m.specification || {}).translations || [])[0]?.name || '';
+    const key = /^colou?r$/i.test(name) ? 'color' : /^sim$/i.test(name) ? 'sim' : null;
+    if (!key) continue;
+    out[key] = (m.values || []).map(v => ({
+      name: clean(((v.value || {}).value) || ''),
+      price: Math.round(Number(v.price || 0)),
+      active: v.is_active !== 0
+    })).filter(c => c.name);
+  }
+  return out;
 }
 // ...and the smaller one is RAM, but only when the title really lists both
 const ramOf = text => { const c = capacitiesOf(text); return c.length >= 2 ? Math.min(...c) : null; };
@@ -616,6 +629,19 @@ if (process.argv[2] === '--selftest') {
     if (got !== want) { bad++; console.log(`FAIL  pixelCash=${got} want=${want}`); }
   }
 
+  // AllSell's Pixel 10 page states its colour as "Yellow" - a real colour word, but not one
+  // of the four the product actually ships in (Obsidian, Frost, Indigo, Lemongrass). Publishing
+  // it made a fifth swatch appear that matched nothing real. An unmapped colour must come back
+  // null, so enrich()'s own fallback chain - colorFromImage, then the url's colour words - gets
+  // a chance to run; that chain never fires while the adapter's own guess is still truthy.
+  {
+    const fakeCfg = { attributes: { 93: { id: 93, code: 'color', label: 'Color', options: [{ id: 7, label: 'Yellow' }] } },
+      index: { '501': { 93: 7 } }, optionPrices: { '501': { finalPrice: { amount: 329900 } } } };
+    const html = '<script>"jsonConfig":' + JSON.stringify(fakeCfg) + '</script>';
+    const kids = magentoChildren(html, ['Obsidian', 'Frost', 'Indigo', 'Lemongrass']);
+    if (kids[0]?.color !== null) { bad++; console.log(`FAIL  magentoChildren color=${kids[0]?.color} want=null (unmapped "Yellow")`); }
+  }
+
   const buildCases = [
     [true, 'iPhone 17 Pro Max 512GB Silver Esim'], [true, 'E-Sim'],
     [false, '1 Սիմ քարտ + Esim'], [false, 'iphone-17-pro-max-512gb-sim-deep-blue'],
@@ -696,7 +722,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -1139,10 +1165,34 @@ const SHOPS = {
           continue;
         }
         for (const t of tiers) {
-          const cols = await planetColors(t.varId); await sleep(DELAY_MS);
-          if (!cols.length) { out.push({ id, price: t.price, title, url: u, image: img, storage: t.storage, inStock: true }); continue; }
-          for (const c of cols) out.push({ id, price: t.price + c.delta, title, url: u, image: img,
-            storage: t.storage, color: colorOf(c.name, (phoneById[id] || {}).colors) || c.name, inStock: c.active });
+          const mod = await planetModifiers(t.varId); await sleep(DELAY_MS);
+          const cols = mod.color || [];
+          const sims = mod.sim || [];
+          // Every real combination is SIM build x colour. A dimension this product does not
+          // offer contributes exactly one pass-through option, so the loop still runs once per
+          // colour on an Android phone and once per SIM build on a lone-colour iPhone.
+          const simOpts = sims.length ? sims : [{ name: null, price: t.price, active: true }];
+          const colOpts = cols.length ? cols : [{ name: null, price: 0, active: true }];
+          for (const s of simOpts) for (const c of colOpts) {
+            if (!s.active || !c.active) continue;
+            out.push({
+              id, url: u, image: img, storage: t.storage,
+              // SIM's own value already IS the final price for that build; a colour delta rides
+              // on top of it exactly as it would on the plain tier price.
+              price: (sims.length ? s.price : t.price) + c.price,
+              // same rule as magentoChildren: a colour name of 3DPlanet's own that maps to
+              // none of the product's colours is left unstated rather than invented
+              color: c.name ? (colorOf(c.name, (phoneById[id] || {}).colors) || null) : null,
+              // The SIM build's own label rides in the title too, the way every other shop's
+              // does - ibolit's url says "-1sim", redstore's title says "eSim". A later pass
+              // re-derives esim from title+url for every shop and would DELETE a value it
+              // cannot itself confirm; without the label in the title that pass saw a plain
+              // "Apple iPhone 18 Pro" and erased the very field this line sets.
+              title: sims.length ? `${title} (${s.name})` : title,
+              esim: sims.length ? simBuild(s.name) : undefined,
+              inStock: true
+            });
+          }
         }
       }
       return out;
@@ -1315,7 +1365,13 @@ for (const key of names) {
     // at under a third of the model's own reference price.
     const ref = (phoneById[o.id] || {}).priceAmd;
     if (ref && o.price < ref * 0.3) { tooCheap++; continue; }
-    const k = [o.id, o.storage ?? '?', o.color ?? '?'].join('|');
+    // A Nano-SIM build is a genuinely more expensive product, not a worse price on the same
+    // one - and it was losing every time. The key that decides "same offer, keep the cheaper"
+    // did not include the SIM build, so a shop's own Nano-SIM row was always more expensive
+    // than its own eSIM row for the same phone/storage/colour and got silently thrown away
+    // here, before esim/tray labelling or the pairing logic below ever saw it. Three states,
+    // not two, in the key as much as in the field: true, false and unstated must each survive.
+    const k = [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     if (!best.has(k) || o.price < best.get(k).price) best.set(k, o);
   }
   // An adapter returning nothing is not the same as a shop having nothing in stock. A WAF page,
