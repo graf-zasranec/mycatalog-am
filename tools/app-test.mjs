@@ -46,7 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  filterBar, askable, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, shareUrl,
+  filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, shareUrl,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -191,6 +191,13 @@ is(app.shareUrl('x'), 'http://localhost:8123/p/x/', 'and index.html, which Pages
 /* --- the countdown counts down, and stops ---------------------------------------------- */
 is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');
 is(/\d/.test(app.cdText(new Date(Date.now() + 3 * 864e5).toISOString().slice(0, 10))), true, 'a future date shows a figure');
+
+/* --- the search box does not follow you home ------------------------------------------- */
+is(app.keepsQuery('/search'), true, 'the results page keeps the query');
+is(app.keepsQuery('/p/apple-iphone-17'), true, 'so does a product, so back returns to results');
+is(app.keepsQuery('/'), false, 'the front page does not');
+is(app.keepsQuery(''), false, 'nor does a bare url');
+is(app.keepsQuery('/c/phone'), false, 'nor does a category');
 
 console.log(bad ? `${bad} of ${n} app checks FAILED` : `app self-test: ${n} checks pass`);
 process.exit(bad ? 1 : 0);

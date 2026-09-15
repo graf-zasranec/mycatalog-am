@@ -147,8 +147,12 @@ function matchPhone(text) {
   // capacity and the radio puts them back together. Tried LAST, so an exact reading always wins.
   const lean = base.replace(/\b\d+\s?(gb|tb)\b|\bwi ?fi\b|\b5g\b|\blte\b|\bcellular\b/g, ' ')
                    .replace(/\s+/g, ' ').trim();
-  for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2'), lean])) {
-    const id = matchIn(' ' + v + ' ');
+  // The split readings are guesses about a compressed slug, so they are held to a stricter
+  // rule than the shop's own words: see matchIn.
+  const tries = [[base, false], [base.replace(/(\d)([a-z])/g, '$1 $2'), true],
+                 [base.replace(/([a-z])(\d)/g, '$1 $2'), true], [lean, false]];
+  for (const [v, split] of tries) {
+    const id = matchIn(' ' + v + ' ', split);
     if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
   }
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
@@ -182,7 +186,7 @@ function brandFits(id, text) {
   if (mine && h.includes(' ' + mine + ' ')) return true;
   return !BRANDS.some(b => b !== mine && h.includes(' ' + b + ' '));
 }
-function matchIn(h) {
+function matchIn(h, split = false) {
   for (const k of KEYS) {
     const needle = ' ' + k.key + ' ';
     const i = h.indexOf(needle);
@@ -194,18 +198,32 @@ function matchIn(h) {
     // ('Core Ultra 7 255U'), which was making every Core Ultra laptop unmatchable.
     const intelUltra = next === 'ultra' && (h.includes(' core ultra ') || h.includes(' ultra 5 ') || h.includes(' ultra 7 ') || h.includes(' ultra 9 '));
     if (next && QUALIFIERS.has(next) && !intelUltra) return null;
+    // A split reading manufactures the letter that follows: "Xiaomi 15T Pro" becomes
+    // "xiaomi 15 t pro", and the plain 15's key then matched with a stray "t" after it - a
+    // 15T Pro's 319,000 on the wrong phone. In the shop's own words a trailing single letter
+    // is ordinary; in a reading we invented it is the rest of a model name we just cut in half.
+    if (split && next && next.length === 1) return null;
     return k.id;
   }
   return null;
 }
 // every "<n> GB/TB" figure in a title, in GB
+// Capacities that are actually sold. Anything else read off a title or a slug is two numbers
+// that ran together, not a product.
+const REAL_CAPACITY = new Set([2, 3, 4, 6, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96, 128, 192,
+                               250, 256, 500, 512, 750, 1000, 1024, 1536, 2000, 2048, 3072,
+                               4000, 4096, 6144, 8192]);
 function capacitiesOf(text) {
   // keep unicode letters: norm() strips ԳԲ / ՏԲ before they can be read
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   // AllSell writes the MacBook Air as "16GB I 512TB". Nothing on sale here holds more than 8 TB,
   // so a terabyte figure that large is the shop meaning gigabytes.
   const withUnit = [...h.matchAll(/(\d+)\s*(tb|տբ|gb|գբ)(?:\s|$)/g)]
-    .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; });
+    .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; })
+    // A capacity nobody manufactures is the shop's url with the model number glued to the
+    // capacity: REDstore writes "Paperwhite 12(16GB)" and slugs it "paperwhite-1216gb", which
+    // was published as 1216 GB - "1.1875 TB" on the page. An Alienware read 1,625,016 GB.
+    .filter(v => REAL_CAPACITY.has(v));
   if (withUnit.length) return withUnit;
   // iBolit writes the capacity with no unit at all - "iPHONE 17 256 Lavander ESIM" - and those
   // offers landed with storage null, which makes them stand in for the base capacity of every
@@ -441,6 +459,10 @@ if (process.argv[2] === '--selftest') {
     // both, and this is the pair that makes the difference visible.
     ['samsung-galaxy-tab-s8', 'samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
     ['samsung-galaxy-tab-s8-plus', 'Samsung Galaxy Tab S8+ 8GB/128GB WiFi X800 Graphite samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
+    // splitting "15T" to recover a compressed slug must not let the plain 15 take a 15T Pro
+    [null, 'Xiaomi 15T Pro'],
+    ['xiaomi-15t', 'Xiaomi 15T'],
+    ['xiaomi-15', 'Xiaomi 15'],
     ['jbl-flip-7', 'JBL Flip 7 Squad'],
     ['jbl-flip-7', 'Portable speaker JBL Flip 7 Black'],
     // shops drop the brand all the time, and that must still match
@@ -618,7 +640,11 @@ if (process.argv[2] === '--selftest') {
     ['MacBook Air 13-inch M5 16GB/512GB', 512],
     ['Xbox Series S 512 GB', 512],
     ['Macbook Air 15" M5 16GB I 512TB MDVH4 Midnight', 512],   // shop typo: 512 TB does not exist
-    ['Mac Studio M4 Max 8TB', 8192]];
+    ['Mac Studio M4 Max 8TB', 8192],
+    // REDstore slugs "Paperwhite 12(16GB)" as "paperwhite-1216gb"; 1216 GB was published as
+    // "1.1875 TB". A model number glued to a capacity is not a capacity.
+    ['amazon-kindle-paperwhite-1216gb', null],
+    ['dell-alienware-16-aurora-ac1625016gb-rtx-5060', null]];
   const ramCases = [['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 12], ['XIAOMI POCO X7 Pro 5G 8GB 256GB (Black)', 8],
     ['iPhone 17 Pro, 256 ԳԲ, Silver', null]];
   for (const [txt, want] of ramCases) {
