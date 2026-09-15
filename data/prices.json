@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T21:10:42.663Z",
+ "generated": "2026-09-15T21:32:08.135Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -130,17 +130,6 @@
     "ram": null,
     "shop": "planet3d",
     "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Deep Blue eSim",
-    "price": 488000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue-esim",
-    "seeded": true,
-    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -414,6 +403,16 @@
     "shop": "ibolit",
     "seen": "2026-09-15",
     "esim": false
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Silver",
+    "price": 529000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1155,13 +1154,12 @@
    {
     "id": "apple-iphone-17-pro-max",
     "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Silver eSim",
+    "title": "iPhone 17 Pro Max 256GB Silver",
     "price": 575000,
     "storage": 256,
     "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver-esim",
-    "seeded": true,
-    "esim": true
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1171,20 +1169,6 @@
     "storage": 256,
     "url": "https://shop.ucom.am/en/iphone-17-pro-max.html",
     "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
-    "image": null,
-    "storage": 512,
-    "price": 625000,
-    "color": "Silver",
-    "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1215,6 +1199,20 @@
     "shop": "ibolit",
     "seen": "2026-09-15",
     "esim": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
+    "image": null,
+    "storage": 512,
+    "price": 625000,
+    "color": "Silver",
+    "title": "Apple iPhone 17 Pro Max (E-Sim)",
+    "esim": true,
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1583,6 +1581,16 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "title": "iPhone 17 Pro Max 2TB 1 SIM + eSIM",
+    "price": 959000,
+    "storage": 2048,
+    "url": "https://ibolit.mobi/product-category/smartphones/",
+    "seeded": true,
+    "esim": false
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "price": 962900,
     "storage": 2048,
     "title": "iPhone 17 Pro Max , 2TB , Deep Blue",
@@ -1710,17 +1718,6 @@
    },
    {
     "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB Black eSim",
-    "price": 364000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17",
     "price": 364900,
     "storage": 256,
     "title": "iPhone 17 256GB Dual eSIM (Sage)",
@@ -1732,6 +1729,16 @@
     "shop": "mobilecentre",
     "seen": "2026-09-15",
     "esim": true
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "redstore",
+    "title": "iPhone 17 256GB Black",
+    "price": 378000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-black",
+    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -3495,6 +3502,15 @@
    },
    {
     "id": "apple-ipad-pro-11-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Pro 11/M5/ WIFI",
+    "price": 479000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
     "price": 489900,
     "storage": 256,
     "title": "Apple iPad Pro 11 Wi-Fi 256GB 2025 MDWK4 (Space Black)",
@@ -3533,6 +3549,24 @@
     "color": "Space Black",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "shop": "notebookcentre",
+    "title": "iPad Pro 11 M5 WiFi Silver / 256 GB",
+    "price": 499000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
+    "shop": "notebookcentre",
+    "title": "iPad Pro 11 M5 WiFi Silver / 512 GB",
+    "price": 555000,
+    "storage": 512,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
    },
    {
     "id": "apple-ipad-pro-11-m5",
@@ -3688,6 +3722,15 @@
     "color": "Blue",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Air 11/M4/Wifi",
+    "price": 329000,
+    "storage": 128,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-ipad-air-11-m4",
@@ -3876,6 +3919,20 @@
     "id": "apple-airpods-pro-3",
     "price": 99000,
     "title": "Apple AirPods Pro 3",
+    "url": "https://redstore.am/en/product/apple-airpods-pro-3",
+    "storage": null,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/04/img-5861.png",
+    "sku": "R606733",
+    "ram": null,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 99000,
+    "title": "Apple AirPods Pro 3",
     "url": "https://3dplanet.am/en/store/product/apple-airpods-pro-3",
     "image": null,
     "storage": null,
@@ -3887,17 +3944,12 @@
    },
    {
     "id": "apple-airpods-pro-3",
-    "price": 99000,
+    "shop": "yerevanmobile",
     "title": "Apple AirPods Pro 3",
-    "url": "https://redstore.am/en/product/apple-airpods-pro-3",
+    "price": 99000,
     "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/04/img-5861.png",
-    "sku": "R606733",
-    "ram": null,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-airpods-pro-3",
@@ -3954,6 +4006,15 @@
    },
    {
     "id": "apple-airpods-pro-3",
+    "shop": "notebookcentre",
+    "title": "Apple Airpods Pro 3",
+    "price": 105000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
+    "seeded": true
+   },
+   {
+    "id": "apple-airpods-pro-3",
     "shop": "ucom",
     "title": "AirPods Pro 3",
     "price": 109900,
@@ -3992,6 +4053,41 @@
   "apple-airpods-max-2": [
    {
     "id": "apple-airpods-max-2",
+    "shop": "yerevanmobile",
+    "title": "Apple AirPods Max (Type-C)",
+    "price": 169000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-lightning",
+    "image": null,
+    "storage": null,
+    "price": 189000,
+    "color": "Blue",
+    "title": "Apple AirPods Max (Lightning)",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-type-c",
+    "image": null,
+    "storage": null,
+    "price": 209000,
+    "color": "Purple",
+    "title": "Apple AirPods Max (Type-C)",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-max-2",
     "price": 239000,
     "storage": null,
     "title": "AirPods Max 2 Type-C",
@@ -4001,19 +4097,6 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "url": "https://3dplanet.am/en/store/product/apple-airpods-max-2",
-    "image": null,
-    "storage": null,
-    "price": 239000,
-    "color": "Blue",
-    "title": "Apple AirPods Max 2",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -4071,6 +4154,15 @@
     "color": "Orange",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "shop": "notebookcentre",
+    "title": "Apple AirPods Max (Type-C) Midnight",
+    "price": 239000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2",
+    "seeded": true
    },
    {
     "id": "apple-airpods-max-2",
@@ -4292,6 +4384,15 @@
    },
    {
     "id": "apple-airpods-4",
+    "shop": "yerevanmobile",
+    "title": "Apple Airpods 4",
+    "price": 54000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-airpods-4",
     "price": 54900,
     "storage": null,
     "title": "AirPods 4 MXP63ZE/A",
@@ -4315,6 +4416,15 @@
     "color": "White",
     "shop": "vlv",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-airpods-4",
+    "shop": "notebookcentre",
+    "title": "Apple Airpods 4",
+    "price": 57000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
+    "seeded": true
    },
    {
     "id": "apple-airpods-4",
@@ -4441,6 +4551,20 @@
    },
    {
     "id": "apple-watch-ultra-3",
+    "price": 319000,
+    "title": "Ultra 3 49mm Black Ti Black Ocean Band",
+    "url": "https://redstore.am/en/product/iwatch-ultra-3-49mm-black-ti-black-ocean-band",
+    "storage": 49,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/10/15/img-7018.jpg",
+    "sku": "R724784",
+    "ram": null,
+    "color": null,
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-ultra-3",
     "url": "https://3dplanet.am/en/store/product/apple-watch-ultra-3",
     "image": null,
     "storage": 64,
@@ -4454,17 +4578,12 @@
    },
    {
     "id": "apple-watch-ultra-3",
+    "shop": "yerevanmobile",
+    "title": "Apple Watch Ultra 3",
     "price": 319000,
-    "title": "Ultra 3 49mm Black Ti Black Ocean Band",
-    "url": "https://redstore.am/en/product/iwatch-ultra-3-49mm-black-ti-black-ocean-band",
-    "storage": 49,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/15/img-7018.jpg",
-    "sku": "R724784",
-    "ram": null,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-09-15"
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-watch-ultra-3",
@@ -4506,6 +4625,15 @@
     "color": "Natural",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-ultra-3",
+    "shop": "notebookcentre",
+    "title": "Apple Watch Ultra 3 49MM Black",
+    "price": 359000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2",
+    "seeded": true
    },
    {
     "id": "apple-watch-ultra-3",
@@ -4560,19 +4688,6 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-watch-series-11",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-series-11",
-    "image": null,
-    "storage": 64,
-    "price": 155000,
-    "color": "Silver",
-    "title": "Apple Watch Series 11",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -4633,6 +4748,37 @@
    },
    {
     "id": "apple-watch-series-11",
+    "url": "https://3dplanet.am/en/store/product/apple-watch-series-11",
+    "image": null,
+    "storage": 64,
+    "price": 155000,
+    "color": "Silver",
+    "title": "Apple Watch Series 11",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-series-11",
+    "shop": "notebookcentre",
+    "title": "Apple Watch 11 42mm Space Gray",
+    "price": 155000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2",
+    "seeded": true
+   },
+   {
+    "id": "apple-watch-series-11",
+    "shop": "yerevanmobile",
+    "title": "Apple Watch Series 11 42mm",
+    "price": 155000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-watch-series-11",
     "price": 174900,
     "storage": null,
     "title": "Apple Watch Series 11 GPS,  Purple Fog Sport Band, S/M, 42մմ, Silver Aluminium",
@@ -4676,19 +4822,6 @@
    },
    {
     "id": "apple-watch-se-3",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-se-3",
-    "image": null,
-    "storage": 64,
-    "price": 112000,
-    "color": "Starlight",
-    "title": "Apple Watch SE 3",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-watch-se-3",
     "price": 112000,
     "title": "SE3 40mm Midnight Band",
     "url": "https://redstore.am/en/product/iwatch-se3-40mm-midnight-band",
@@ -4703,11 +4836,33 @@
    },
    {
     "id": "apple-watch-se-3",
+    "url": "https://3dplanet.am/en/store/product/apple-watch-se-3",
+    "image": null,
+    "storage": 64,
+    "price": 112000,
+    "color": "Starlight",
+    "title": "Apple Watch SE 3",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-se-3",
     "shop": "yerevanmobile",
     "title": "Apple Watch SE 3 40mm",
     "price": 112000,
     "storage": 40,
     "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "yerevanmobile",
+    "title": "Apple Watch SE 3 40mm",
+    "price": 112000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
     "seeded": true
    },
    {
@@ -4834,6 +4989,15 @@
     "color": "Starlight",
     "url": "https://www.zigzag.am/am/apple-watch-se-3-gps-44mm-starlight-starlight-sport-band-s-m-mehg4.html",
     "seeded": true
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "notebookcentre",
+    "title": "Apple Watch SE 3 40mm Starlight",
+    "price": 134000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2",
+    "seeded": true
    }
   ],
   "apple-macbook-neo-13": [
@@ -4848,58 +5012,6 @@
     "color": "Pink",
     "inStock": true,
     "shop": "allsell",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Apple MacBook Neo 13\" MHFD4(Citrus)",
-    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfd4citrus",
-    "image": null,
-    "storage": 256,
-    "inStock": true,
-    "ram": null,
-    "color": "Citrus",
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Apple MacBook Neo 13\" MHFF4(Indigo)",
-    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhff4indigo",
-    "image": null,
-    "storage": 256,
-    "inStock": true,
-    "ram": null,
-    "color": "Indigo",
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Apple MacBook Neo 13\" MHFA4(Silver)",
-    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfa4silver",
-    "image": null,
-    "storage": 256,
-    "inStock": true,
-    "ram": null,
-    "color": "Silver",
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-macbook-neo-13",
-    "price": 309000,
-    "title": "Apple MacBook Neo 13\" MHFH4(Blush)",
-    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfh4blush",
-    "image": null,
-    "storage": 256,
-    "inStock": true,
-    "ram": null,
-    "color": "Blush",
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -4985,6 +5097,67 @@
     "color": "Blush",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Apple MacBook Neo 13\" MHFD4(Citrus)",
+    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfd4citrus",
+    "image": null,
+    "storage": 256,
+    "inStock": true,
+    "ram": null,
+    "color": "Citrus",
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Apple MacBook Neo 13\" MHFF4(Indigo)",
+    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhff4indigo",
+    "image": null,
+    "storage": 256,
+    "inStock": true,
+    "ram": null,
+    "color": "Indigo",
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Apple MacBook Neo 13\" MHFA4(Silver)",
+    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfa4silver",
+    "image": null,
+    "storage": 256,
+    "inStock": true,
+    "ram": null,
+    "color": "Silver",
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "price": 309000,
+    "title": "Apple MacBook Neo 13\" MHFH4(Blush)",
+    "url": "https://3dplanet.am/en/store/product/apple-macbook-neo-13-mhfh4blush",
+    "image": null,
+    "storage": 256,
+    "inStock": true,
+    "ram": null,
+    "color": "Blush",
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-neo-13",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Neo 13\"/8GB/256GB/MHFH4/Blush",
+    "price": 309000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-neo-13",
@@ -5191,6 +5364,15 @@
    },
    {
     "id": "apple-macbook-neo-13",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Neo 13.0\"/8GB/512GB/MHFC4/Silver",
+    "price": 359000,
+    "storage": 512,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-neo-13",
     "price": 395900,
     "storage": 512,
     "title": "MacBook Neo 13-inch  A18 Pro (6C CPU/5C GPU), 8 ԳԲ, 512 ԳԲ, Citrus",
@@ -5301,6 +5483,15 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-max",
+    "shop": "yerevanmobile",
+    "title": "Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGE74/Silver",
+    "price": 1809000,
+    "storage": 2048,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-pro-16-m5-max",
@@ -5416,6 +5607,15 @@
    },
    {
     "id": "apple-macbook-pro-16-m5-pro",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Pro 16.2\"M5 Pro\"/48GB/1TB/MGE64/Silver",
+    "price": 1629000,
+    "storage": 1024,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-pro-16-m5-pro",
     "price": 1826900,
     "storage": 1024,
     "title": "MacBook Pro 16.2-inch  M5 Pro (18C CPU/20C GPU), 48 ԳԲ, 1 ՏԲ, Սև",
@@ -5501,6 +5701,15 @@
    },
    {
     "id": "apple-macbook-pro-14-m5-pro",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Pro 14.2\"/M5 Pro/24GB RAM/1TB/MGDN4/Silver",
+    "price": 1159000,
+    "storage": 1024,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
     "price": 1274900,
     "storage": 1024,
     "title": "MacBook Pro 14.2-inch  M5 Pro (15C CPU/16C GPU), 24 ԳԲ, 1 ՏԲ, Սև",
@@ -5540,6 +5749,15 @@
     "color": "Space Black",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Pro 14\"/M5 Pro/24GB RAM/2TB/MGDT4/Space Black",
+    "price": 1399000,
+    "storage": 2048,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-pro-14-m5-pro",
@@ -5668,6 +5886,15 @@
    },
    {
     "id": "apple-macbook-pro-14-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Pro 14\"/M5/16GB RAM/512GB/MDE04/Space Black",
+    "price": 849000,
+    "storage": 512,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
     "price": 879000,
     "title": "Apple Macbook Pro 14\"/M5/16GB RAM/1TB/MDE54/Silver",
     "url": "https://ibolit.mobi/product/apple-macbook-pro-14-m5-16gb-ram-1tb-mde54-silver/",
@@ -5679,6 +5906,15 @@
     "color": "Silver",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Pro 14\"/M5/16GB RAM/1TB/MDE14/Space Black",
+    "price": 879000,
+    "storage": 1024,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-pro-14-m5",
@@ -5794,6 +6030,15 @@
    },
    {
     "id": "apple-macbook-air-15-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Air 15.3\"/M5/16GB/512GB/MDVQ4/Sky Blue",
+    "price": 709000,
+    "storage": 512,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
     "price": 763900,
     "storage": 512,
     "title": "MacBook Air 15.3-inch  M5 (10C CPU/10C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
@@ -5888,6 +6133,15 @@
     "inStock": true,
     "shop": "allsell",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-15-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Air 15.3\"/M5/16GB/1TB/MDVA4/Silver",
+    "price": 849000,
+    "storage": 1024,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-air-15-m5",
@@ -6059,6 +6313,15 @@
    },
    {
     "id": "apple-macbook-air-13-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDHE4/Midnight",
+    "price": 649000,
+    "storage": 512,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
     "price": 655900,
     "storage": 512,
     "title": "MacBook Air 13.6-inch  M5 (10C CPU/8C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
@@ -6111,6 +6374,15 @@
     "color": "Midnight",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Air 13.6\"/M5/16GB/1TB/MDHF4/Midnight",
+    "price": 689000,
+    "storage": 1024,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-air-13-m5",
@@ -6929,19 +7201,6 @@
    },
    {
     "id": "samsung-galaxy-a56",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
-    "image": null,
-    "storage": 128,
-    "price": 142000,
-    "color": null,
-    "title": "Samsung Galaxy A56",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a56",
     "price": 142000,
     "title": "Samsung Galaxy A56 8GB/128GB Light Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-light-gray",
@@ -6966,6 +7225,19 @@
     "ram": 8,
     "color": "Pink",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a56",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a56",
+    "image": null,
+    "storage": 128,
+    "price": 142000,
+    "color": null,
+    "title": "Samsung Galaxy A56",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -7391,19 +7663,6 @@
    },
    {
     "id": "samsung-galaxy-a57",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
-    "image": null,
-    "storage": 256,
-    "price": 167000,
-    "color": null,
-    "title": "Samsung Galaxy A57",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a57",
     "price": 167000,
     "title": "Samsung Galaxy A57 8GB/256GB Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-gray",
@@ -7428,6 +7687,19 @@
     "ram": 8,
     "color": "Navy",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a57",
+    "image": null,
+    "storage": 256,
+    "price": 167000,
+    "color": null,
+    "title": "Samsung Galaxy A57",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -7922,19 +8194,6 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
-    "image": null,
-    "storage": 512,
-    "price": 399000,
-    "color": "Titanium Gray",
-    "title": "Samsung Galaxy S25 Ultra",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
     "price": 399000,
     "title": "Samsung Galaxy S25 Ultra 512GB Titanium Gray",
     "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-512gb-titanium-gray/",
@@ -7959,6 +8218,19 @@
     "ram": null,
     "color": "Titanium White Silver",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-ultra",
+    "image": null,
+    "storage": 512,
+    "price": 399000,
+    "color": "Titanium Gray",
+    "title": "Samsung Galaxy S25 Ultra",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -8301,19 +8573,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
-    "image": null,
-    "storage": 512,
-    "price": 469000,
-    "color": "Black",
-    "title": "Samsung Galaxy S26 Ultra",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "price": 469000,
     "title": "Samsung Galaxy S26 Ultra 512 Pink Gold",
     "url": "https://ibolit.mobi/product/galaxy-s26-ultra-512-pink-gold/",
@@ -8324,6 +8583,19 @@
     "ram": null,
     "color": "Pink Gold",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-ultra",
+    "image": null,
+    "storage": 512,
+    "price": 469000,
+    "color": "Black",
+    "title": "Samsung Galaxy S26 Ultra",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -8564,19 +8836,6 @@
    },
    {
     "id": "xiaomi-redmi-15c",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-15c-4g",
-    "image": null,
-    "storage": 128,
-    "price": 53000,
-    "color": null,
-    "title": "Xiaomi Redmi 15C 4G",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-redmi-15c",
     "price": 53000,
     "title": "Redmi 15C 4GB/128GB Midnight Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-15c-4gb128gb-midnight-black",
@@ -8629,6 +8888,19 @@
     "ram": 4,
     "color": "Twilight Orange",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-redmi-15c",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-15c-4g",
+    "image": null,
+    "storage": 128,
+    "price": 53000,
+    "color": null,
+    "title": "Xiaomi Redmi 15C 4G",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -8756,19 +9028,6 @@
   "samsung-galaxy-a17": [
    {
     "id": "samsung-galaxy-a17",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-    "image": null,
-    "storage": 128,
-    "price": 65000,
-    "color": "Black",
-    "title": "Samsung Galaxy A17",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a17",
     "price": 65000,
     "title": "Samsung Galaxy A17 4/128(Black)",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a17-4-128black/",
@@ -8807,6 +9066,19 @@
     "ram": null,
     "color": "Blue",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
+    "image": null,
+    "storage": 128,
+    "price": 65000,
+    "color": "Black",
+    "title": "Samsung Galaxy A17",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -8994,19 +9266,6 @@
    },
    {
     "id": "xiaomi-redmi-note-15-pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-15-pro-4g",
-    "image": null,
-    "storage": 256,
-    "price": 119000,
-    "color": "Black",
-    "title": "Xiaomi Redmi Note 15 Pro 4G",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-redmi-note-15-pro",
     "price": 119000,
     "title": "Redmi Note 15 Pro 8GB/256GB Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-note-15-pro-8gb256gb-black",
@@ -9031,6 +9290,19 @@
     "ram": 8,
     "color": "Glacier Blue",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-redmi-note-15-pro-4g",
+    "image": null,
+    "storage": 256,
+    "price": 119000,
+    "color": "Black",
+    "title": "Xiaomi Redmi Note 15 Pro 4G",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -9362,19 +9634,6 @@
   "samsung-galaxy-a36": [
    {
     "id": "samsung-galaxy-a36",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
-    "image": null,
-    "storage": 128,
-    "price": 109000,
-    "color": null,
-    "title": "Samsung Galaxy A36",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a36",
     "price": 109000,
     "title": "Samsung Galaxy A36 5G 8/128GB Lavander",
     "url": "https://ibolit.mobi/product/samsung-galaxy-a36-5g-8-128gb-lavander/",
@@ -9399,6 +9658,19 @@
     "ram": null,
     "color": "Awesome Lime",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a36",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a36",
+    "image": null,
+    "storage": 128,
+    "price": 109000,
+    "color": null,
+    "title": "Samsung Galaxy A36",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -9831,19 +10103,6 @@
    },
    {
     "id": "samsung-galaxy-s25-fe",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
-    "image": null,
-    "storage": 256,
-    "price": 229000,
-    "color": "White",
-    "title": "Samsung Galaxy S25 FE",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
     "price": 229000,
     "title": "Samsung Galaxy S25 FE 8GB/256GB Jetblack",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-jetblack",
@@ -9900,6 +10159,19 @@
    },
    {
     "id": "samsung-galaxy-s25-fe",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s25-fe",
+    "image": null,
+    "storage": 256,
+    "price": 229000,
+    "color": "White",
+    "title": "Samsung Galaxy S25 FE",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy S25 FE",
     "price": 229000,
@@ -9924,19 +10196,6 @@
    },
    {
     "id": "poco-f7-ultra",
-    "url": "https://3dplanet.am/en/store/product/poco-f7-ultra-black",
-    "image": null,
-    "storage": 512,
-    "price": 289000,
-    "color": "Black",
-    "title": "POCO F7 Ultra Black",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "poco-f7-ultra",
     "price": 289000,
     "title": "Poco F7 Ultra 16GB/512GB Yellow",
     "url": "https://redstore.am/en/product/xiaomi-poco-f7-ultra-16gb512gb-yellow",
@@ -9947,6 +10206,19 @@
     "ram": 16,
     "color": "Yellow",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "poco-f7-ultra",
+    "url": "https://3dplanet.am/en/store/product/poco-f7-ultra-black",
+    "image": null,
+    "storage": 512,
+    "price": 289000,
+    "color": "Black",
+    "title": "POCO F7 Ultra Black",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -10845,6 +11117,15 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy Z Fold 8",
+    "price": 669000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8",
     "price": 679000,
     "title": "Samsung Galaxy Z Fold 8 12GB/512GB Lavander",
     "url": "https://redstore.am/en/product/samsung-galaxy-z-fold-8-12gb512gb-lavander",
@@ -11113,19 +11394,6 @@
    },
    {
     "id": "samsung-galaxy-a27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 128,
-    "price": 109000,
-    "color": "Black",
-    "title": "Samsung Galaxy A27",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a27",
     "price": 109000,
     "title": "Samsung Galaxy A27 6GB/128GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a27-6gb128gb-black",
@@ -11192,6 +11460,19 @@
     "ram": null,
     "color": null,
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
+    "image": null,
+    "storage": 128,
+    "price": 109000,
+    "color": "Black",
+    "title": "Samsung Galaxy A27",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -11325,19 +11606,6 @@
    },
    {
     "id": "samsung-galaxy-a27",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
-    "image": null,
-    "storage": 256,
-    "price": 125000,
-    "color": "Black",
-    "title": "Samsung Galaxy A27",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a27",
     "price": 125000,
     "title": "Samsung Galaxy A27 8GB/256GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a27-8gb256gb-black",
@@ -11362,6 +11630,19 @@
     "ram": 8,
     "color": "Blue",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a27",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a27",
+    "image": null,
+    "storage": 256,
+    "price": 125000,
+    "color": "Black",
+    "title": "Samsung Galaxy A27",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -11686,19 +11967,6 @@
    },
    {
     "id": "samsung-galaxy-a07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 64,
-    "price": 52000,
-    "color": null,
-    "title": "Samsung Galaxy A07",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a07",
     "price": 52000,
     "title": "Samsung Galaxy A07 4GB/64GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a07-4gb64gb-black",
@@ -11741,6 +12009,19 @@
    },
    {
     "id": "samsung-galaxy-a07",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
+    "image": null,
+    "storage": 64,
+    "price": 52000,
+    "color": null,
+    "title": "Samsung Galaxy A07",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a07",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy A07 4G",
     "price": 52000,
@@ -11772,19 +12053,6 @@
     "color": "Green",
     "inStock": true,
     "shop": "allsell",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
-    "image": null,
-    "storage": 128,
-    "price": 58000,
-    "color": null,
-    "title": "Samsung Galaxy A07",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -11828,6 +12096,19 @@
     "color": "Light Violet",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-a07",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a07",
+    "image": null,
+    "storage": 128,
+    "price": 58000,
+    "color": null,
+    "title": "Samsung Galaxy A07",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
    }
   ],
   "samsung-galaxy-z-fold-7": [
@@ -11846,19 +12127,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
-    "image": null,
-    "storage": 256,
-    "price": 539000,
-    "color": null,
-    "title": "Samsung Galaxy Z Fold7",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
     "price": 539000,
     "title": "Samsung Galaxy Z Fold 7 12GB/256GB Silver Shadow",
     "url": "https://redstore.am/en/product/samsung-galaxy-z-fold-7-12gb256gb-silver-shadow",
@@ -11869,6 +12137,19 @@
     "ram": 12,
     "color": "Silver Shadow",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold7",
+    "image": null,
+    "storage": 256,
+    "price": 539000,
+    "color": null,
+    "title": "Samsung Galaxy Z Fold7",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -12804,6 +13085,15 @@
    },
    {
     "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Tab A11 Plus WiFi (X230)",
+    "price": 109000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
     "price": 114900,
     "storage": 128,
     "title": "Samsung Galaxy Tab A11+ Wi-Fi 128GB (Silver)",
@@ -12924,19 +13214,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
-    "image": null,
-    "storage": 64,
-    "price": 54000,
-    "color": null,
-    "title": "Samsung Galaxy Tab A11",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
     "price": 54000,
     "title": "Samsung Galaxy Tab A11 4GB/64GB WiFi X133 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-4gb64gb-wifi-x133-gray",
@@ -12961,6 +13238,19 @@
     "ram": 4,
     "color": "Silver",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
+    "image": null,
+    "storage": 64,
+    "price": 54000,
+    "color": null,
+    "title": "Samsung Galaxy Tab A11",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -13036,19 +13326,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
-    "image": null,
-    "storage": 128,
-    "price": 75000,
-    "color": null,
-    "title": "Samsung Galaxy Tab A11",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-a11",
     "price": 75000,
     "title": "Samsung Galaxy Tab A11 8GB/128GB WiFi X133 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-8gb128gb-wifi-x133-gray",
@@ -13073,6 +13350,19 @@
     "ram": 8,
     "color": "Silver",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-a11",
+    "image": null,
+    "storage": 128,
+    "price": 75000,
+    "color": null,
+    "title": "Samsung Galaxy Tab A11",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -13244,6 +13534,24 @@
     "color": "Silver",
     "shop": "mobilecentre",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-smart-band-10",
+    "shop": "yerevanmobile",
+    "title": "Xiaomi Smart Band 10",
+    "price": 23000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "xiaomi-smart-band-10",
+    "shop": "notebookcentre",
+    "title": "Xiaomi Smart Band 10 (Midnight Black) BHR07PYGL",
+    "price": 25000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40",
+    "seeded": true
    }
   ],
   "samsung-galaxy-buds-4": [
@@ -13274,6 +13582,15 @@
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-4",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Buds 4",
+    "price": 52000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-buds-4",
@@ -13344,19 +13661,6 @@
    },
    {
     "id": "samsung-galaxy-buds-4-pro",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-4-pro",
-    "image": null,
-    "storage": null,
-    "price": 72000,
-    "color": "Black",
-    "title": "Samsung Galaxy Buds 4 Pro",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-buds-4-pro",
     "price": 72000,
     "title": "Samsung Galaxy Buds 4 Pro White",
     "url": "https://redstore.am/en/product/samsung-galaxy-buds-4-pro-white",
@@ -13382,6 +13686,28 @@
     "color": "Black",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-4-pro",
+    "image": null,
+    "storage": null,
+    "price": 72000,
+    "color": "Black",
+    "title": "Samsung Galaxy Buds 4 Pro",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-4-pro",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Buds 4 Pro",
+    "price": 72000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-buds-4-pro",
@@ -13711,6 +14037,24 @@
    },
    {
     "id": "apple-airpods-pro-2",
+    "shop": "notebookcentre",
+    "title": "Apple Airpods Pro 2 (Type-C)",
+    "price": 84000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
+    "seeded": true
+   },
+   {
+    "id": "apple-airpods-pro-2",
+    "shop": "yerevanmobile",
+    "title": "Apple AirPods Pro 2 (Type-C)",
+    "price": 84000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-airpods-pro-2",
     "price": 89000,
     "title": "Apple AirPods Pro 2",
     "url": "https://3dplanet.am/en/store/product/apple-airpods-pro-2",
@@ -13737,19 +14081,6 @@
    }
   ],
   "samsung-galaxy-buds-3-pro": [
-   {
-    "id": "samsung-galaxy-buds-3-pro",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-3-pro",
-    "image": null,
-    "storage": null,
-    "price": 62000,
-    "color": null,
-    "title": "Samsung Galaxy Buds 3 Pro",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
    {
     "id": "samsung-galaxy-buds-3-pro",
     "price": 62000,
@@ -13780,6 +14111,28 @@
    },
    {
     "id": "samsung-galaxy-buds-3-pro",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-buds-3-pro",
+    "image": null,
+    "storage": null,
+    "price": 62000,
+    "color": null,
+    "title": "Samsung Galaxy Buds 3 Pro",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-3-pro",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Buds 3 Pro",
+    "price": 62000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-buds-3-pro",
     "price": 67000,
     "storage": null,
     "title": "Samsung Galaxy Buds 3 Pro",
@@ -13790,6 +14143,15 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-buds-3-pro",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy Buds 3 Pro",
+    "price": 69000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-buds-3-pro",
@@ -13879,6 +14241,15 @@
     "price": 35900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-buds-fe.html",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-buds-fe",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy Buds FE",
+    "price": 36000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
     "seeded": true
    }
   ],
@@ -14197,6 +14568,15 @@
    },
    {
     "id": "xiaomi-redmi-pad-2",
+    "shop": "notebookcentre",
+    "title": "Xiaomi Redmi Pad 2 9.7 4G (2604ERP4DG)",
+    "price": 83900,
+    "storage": 128,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock",
+    "seeded": true
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
     "price": 85900,
     "title": "Tablet Xiaomi Redmi Pad 2 4GB/128GB RU (25040RP0AG) Lavender Purple",
     "url": "https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple",
@@ -14356,6 +14736,33 @@
    },
    {
     "id": "apple-ipad-air-13-m4",
+    "shop": "notebookcentre",
+    "title": "iPad Air 13 M4 WiFi Blue / 128 GB",
+    "price": 439000,
+    "storage": 128,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Air 13/M4/Wifi",
+    "price": 439000,
+    "storage": 128,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
+    "shop": "notebookcentre",
+    "title": "iPad Air 13 M4 WiFi Starlight / 256 GB",
+    "price": 499000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
     "price": 529000,
     "title": "iPad Air 13 256GB WiFi 2026 Blue",
     "url": "https://redstore.am/en/product/ipad-air-13-256gb-wifi-2026-blue",
@@ -14387,19 +14794,6 @@
   "xiaomi-pad-7-pro": [
    {
     "id": "xiaomi-pad-7-pro",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7-pro",
-    "image": null,
-    "storage": 512,
-    "price": 234000,
-    "color": null,
-    "title": "Xiaomi Pad 7 Pro",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-pad-7-pro",
     "price": 234000,
     "title": "Xiaomi Pad 7 Pro 12GB/512GB Gray",
     "url": "https://redstore.am/en/product/xiaomi-pad-7-pro-12gb512gb-gray",
@@ -14425,6 +14819,28 @@
     "color": "Blue",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-pad-7-pro",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7-pro",
+    "image": null,
+    "storage": 512,
+    "price": 234000,
+    "color": null,
+    "title": "Xiaomi Pad 7 Pro",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-pad-7-pro",
+    "shop": "yerevanmobile",
+    "title": "Xiaomi Pad 7 Pro",
+    "price": 234000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "xiaomi-pad-7-pro",
@@ -14484,6 +14900,15 @@
    },
    {
     "id": "apple-ipad-pro-13-m5",
+    "shop": "notebookcentre",
+    "title": "iPad Pro 13 M5 WiFi Silver / 256 GB",
+    "price": 595000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
     "price": 599000,
     "title": "Pro 13 256GB WiFi 2025 Space Black",
     "url": "https://redstore.am/en/product/ipad-pro-13-256gb-wifi-2025-space-black",
@@ -14522,6 +14947,24 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
+    "shop": "notebookcentre",
+    "title": "Apple iPad Pro 13 (2025) M5 WIFI",
+    "price": 659000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Pro 13/M5/ WIFI",
+    "price": 659000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-ipad-pro-13-m5",
@@ -14667,19 +15110,6 @@
    },
    {
     "id": "xiaomi-pad-7",
-    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7",
-    "image": null,
-    "storage": 256,
-    "price": 159000,
-    "color": null,
-    "title": "Xiaomi Pad 7",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "xiaomi-pad-7",
     "price": 159000,
     "title": "Xiaomi Pad 7 8GB/256GB Blue",
     "url": "https://redstore.am/en/product/xiaomi-pad-7-8gb256gb-blue",
@@ -14705,6 +15135,28 @@
     "color": "Green",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-pad-7",
+    "url": "https://3dplanet.am/en/store/product/xiaomi-pad-7",
+    "image": null,
+    "storage": 256,
+    "price": 159000,
+    "color": null,
+    "title": "Xiaomi Pad 7",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "xiaomi-pad-7",
+    "shop": "yerevanmobile",
+    "title": "Xiaomi Pad 7",
+    "price": 159000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "xiaomi-pad-7",
@@ -14749,6 +15201,20 @@
    },
    {
     "id": "samsung-galaxy-watch-ultra-2",
+    "price": 239000,
+    "title": "Samsung Galaxy Watch Ultra 2 47mm Titanium Gray",
+    "url": "https://redstore.am/en/product/samsung-galaxy-watch-ultra-2-47mm-titanium-gray",
+    "storage": 47,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/61330/image/12-montaznaia-oblast-1.webp",
+    "sku": "RA11659",
+    "ram": null,
+    "color": "Titanium Gray",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-ultra-2",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-ultra2",
     "image": null,
     "storage": 64,
@@ -14762,17 +15228,12 @@
    },
    {
     "id": "samsung-galaxy-watch-ultra-2",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Watch Ultra2",
     "price": 239000,
-    "title": "Samsung Galaxy Watch Ultra 2 47mm Titanium Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-watch-ultra-2-47mm-titanium-gray",
-    "storage": 47,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/61330/image/12-montaznaia-oblast-1.webp",
-    "sku": "RA11659",
-    "ram": null,
-    "color": "Titanium Gray",
-    "shop": "redstore",
-    "seen": "2026-09-15"
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    }
   ],
   "samsung-galaxy-watch-8": [
@@ -14796,6 +15257,15 @@
     "price": 84000,
     "storage": 40,
     "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Watch 8 40mm",
+    "price": 84000,
+    "storage": 40,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
     "seeded": true
    },
    {
@@ -14876,6 +15346,15 @@
    },
    {
     "id": "samsung-galaxy-watch-8",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy Watch 8 40mm Silver",
+    "price": 108000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
     "title": "Samsung Galaxy Watch 8",
     "url": "https://allsell.am/en/samsung-galaxy-watch-8",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_13__14.jpg",
@@ -14891,6 +15370,20 @@
   "samsung-galaxy-watch-8-classic": [
    {
     "id": "samsung-galaxy-watch-8-classic",
+    "price": 129000,
+    "title": "Samsung Galaxy Watch 8 Classic 46mm White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-watch-8-classic-46mm-white",
+    "storage": 46,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/uploads/2025/09/29/img-4094.jpg",
+    "sku": "R722035",
+    "ram": null,
+    "color": "White",
+    "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-8-classic",
     "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-8-classic",
     "image": null,
     "storage": 46,
@@ -14904,17 +15397,12 @@
    },
    {
     "id": "samsung-galaxy-watch-8-classic",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Watch8 Classic 46mm",
     "price": 129000,
-    "title": "Samsung Galaxy Watch 8 Classic 46mm White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-watch-8-classic-46mm-white",
-    "storage": 46,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/09/29/img-4094.jpg",
-    "sku": "R722035",
-    "ram": null,
-    "color": "White",
-    "shop": "redstore",
-    "seen": "2026-09-15"
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-watch-8-classic",
@@ -14954,6 +15442,15 @@
     "inStock": true,
     "shop": "allsell",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-8-classic",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy Watch 8 Classic 46mm",
+    "price": 148000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-watch-8-classic",
@@ -15068,6 +15565,15 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-air-15-m4",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Air 15.3\"/M4 /16GB RAM/256GB SSD/MC7A4/Sky Blue",
+    "price": 539000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "apple-macbook-air-15-m4",
@@ -15238,19 +15744,6 @@
    {
     "id": "marshall-major-v",
     "price": 47000,
-    "title": "Marshall Major V",
-    "url": "https://3dplanet.am/en/store/product/marshall-major-v",
-    "image": null,
-    "storage": null,
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "marshall-major-v",
-    "price": 47000,
     "title": "Marshall Major V Black",
     "url": "https://redstore.am/en/product/marshall-major-v-black",
     "storage": null,
@@ -15334,6 +15827,19 @@
    },
    {
     "id": "marshall-major-v",
+    "price": 47000,
+    "title": "Marshall Major V",
+    "url": "https://3dplanet.am/en/store/product/marshall-major-v",
+    "image": null,
+    "storage": null,
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-major-v",
     "title": "Ականջակալ Marshall Major V Wireless On-Ear Headphone",
     "url": "https://allsell.am/en/marshall-major-v-wireless-on-ear-headphone",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_3__85.jpg",
@@ -15344,6 +15850,15 @@
     "inStock": true,
     "shop": "allsell",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-major-v",
+    "shop": "notebookcentre",
+    "title": "Marshall Major V Cream",
+    "price": 55000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2",
+    "seeded": true
    },
    {
     "id": "marshall-major-v",
@@ -15408,6 +15923,15 @@
    }
   ],
   "apple-earpods-usb-c": [
+   {
+    "id": "apple-earpods-usb-c",
+    "shop": "notebookcentre",
+    "title": "Apple Earpods USB-C",
+    "price": 10000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
+    "seeded": true
+   },
    {
     "id": "apple-earpods-usb-c",
     "price": 12500,
@@ -16041,6 +16565,15 @@
    },
    {
     "id": "sony-ps5-slim",
+    "shop": "notebookcentre",
+    "title": "PlayStation 5 Slim (Digital)",
+    "price": 309000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/gaming-console",
+    "seeded": true
+   },
+   {
+    "id": "sony-ps5-slim",
     "price": 319000,
     "title": "PS5 Slim Digital Edition",
     "url": "https://redstore.am/en/product/ps5-slim-digital-edition-1",
@@ -16091,6 +16624,15 @@
     "color": "White",
     "url": "https://www.pixel.am/en/product/sony-ps5-pro-digital-edition-white",
     "seeded": true
+   },
+   {
+    "id": "sony-ps5-pro",
+    "shop": "notebookcentre",
+    "title": "Playstation 5 Pro",
+    "price": 529000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/gaming-console",
+    "seeded": true
    }
   ],
   "sony-playstation-portal": [
@@ -16124,6 +16666,15 @@
    },
    {
     "id": "sony-playstation-portal",
+    "shop": "notebookcentre",
+    "title": "Sony PlayStation Portal",
+    "price": 129000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/gaming-console",
+    "seeded": true
+   },
+   {
+    "id": "sony-playstation-portal",
     "title": "Buy Sony Playstation Portal CFI-Y1001 In Armenia - AllSell",
     "url": "https://allsell.am/en/sony-playstation-portal-cfi-y1001",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/6/1/61twtfjqlol._sl1500__1.png",
@@ -16139,19 +16690,6 @@
   "samsung-galaxy-watch-7": [
    {
     "id": "samsung-galaxy-watch-7",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-7",
-    "image": null,
-    "storage": 44,
-    "price": 88000,
-    "color": null,
-    "title": "Samsung Galaxy Watch 7",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-watch-7",
     "price": 88000,
     "title": "Samsung Galaxy Watch 7 40mm Cream",
     "url": "https://redstore.am/en/product/samsung-galaxy-watch-7-40mm-cream",
@@ -16162,6 +16700,19 @@
     "ram": null,
     "color": "Cream",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-watch-7",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-watch-7",
+    "image": null,
+    "storage": 44,
+    "price": 88000,
+    "color": null,
+    "title": "Samsung Galaxy Watch 7",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -16706,6 +17257,15 @@
     "color": "White",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "xbox-series-s",
+    "shop": "notebookcentre",
+    "title": "Microsoft Xbox Series S 1Tb (EP2-00645) White",
+    "price": 219000,
+    "storage": 1024,
+    "url": "https://notebookcentre.am/en/category/gaming-console",
+    "seeded": true
    }
   ],
   "xbox-series-x": [
@@ -17068,6 +17628,15 @@
     "color": "Pink",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "sony-wh-ch520",
+    "shop": "yerevanmobile",
+    "title": "Sony WH-CH520",
+    "price": 19000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "sony-wh-ch520",
@@ -17444,6 +18013,15 @@
    },
    {
     "id": "apple-iphone-18-pro",
+    "shop": "redstore",
+    "title": "iPhone 18 Pro 256GB tray",
+    "price": 879000,
+    "storage": 256,
+    "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-18-pro",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-18-pro",
     "image": null,
     "storage": 512,
@@ -17658,6 +18236,15 @@
    },
    {
     "id": "apple-iphone-18-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 18 Pro Max 256GB tray",
+    "price": 979000,
+    "storage": 256,
+    "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-18-pro-max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-18-pro-max",
     "image": null,
     "storage": 512,
@@ -17851,19 +18438,6 @@
   "jbl-clip-5": [
    {
     "id": "jbl-clip-5",
-    "url": "https://3dplanet.am/en/store/product/jbl-clip-5",
-    "image": null,
-    "storage": null,
-    "price": 24000,
-    "color": null,
-    "title": "JBL Clip 5",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "jbl-clip-5",
     "price": 24000,
     "title": "JBL Clip 5 Squad",
     "url": "https://redstore.am/en/product/jbl-clip-5-squad",
@@ -17916,6 +18490,19 @@
     "ram": null,
     "color": "Pink",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "jbl-clip-5",
+    "url": "https://3dplanet.am/en/store/product/jbl-clip-5",
+    "image": null,
+    "storage": null,
+    "price": 24000,
+    "color": null,
+    "title": "JBL Clip 5",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -18253,19 +18840,6 @@
   "apple-watch-series-10": [
    {
     "id": "apple-watch-series-10",
-    "url": "https://3dplanet.am/en/store/product/apple-watch-series-10",
-    "image": null,
-    "storage": 64,
-    "price": 159000,
-    "color": "Silver",
-    "title": "Apple Watch Series 10",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "apple-watch-series-10",
     "price": 159000,
     "title": "Apple Watch Series 10 42mm Silver",
     "url": "https://ibolit.mobi/product/apple-watch-series-10-42mm-silver/",
@@ -18276,6 +18850,19 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-watch-series-10",
+    "url": "https://3dplanet.am/en/store/product/apple-watch-series-10",
+    "image": null,
+    "storage": 64,
+    "price": 159000,
+    "color": "Silver",
+    "title": "Apple Watch Series 10",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -18410,6 +18997,15 @@
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "marshall-major-iv",
+    "shop": "notebookcentre",
+    "title": "Marshall Major IV",
+    "price": 45900,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock",
+    "seeded": true
    },
    {
     "id": "marshall-major-iv",
@@ -18609,19 +19205,6 @@
    },
    {
     "id": "samsung-galaxy-tab-s10-fe",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-s10-fe",
-    "image": null,
-    "storage": 128,
-    "price": 179000,
-    "color": null,
-    "title": "Samsung Galaxy Tab S10 FE",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-s10-fe",
     "price": 179000,
     "title": "Samsung Galaxy Tab S10 FE 8GB/128GB WiFi X520 Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-s10-fe-8gb128gb-wifi-x520-gray",
@@ -18647,6 +19230,28 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-s10-fe",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-s10-fe",
+    "image": null,
+    "storage": 128,
+    "price": 179000,
+    "color": null,
+    "title": "Samsung Galaxy Tab S10 FE",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-s10-fe",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Tab S10 FE (X520)",
+    "price": 179000,
+    "storage": 128,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-tab-s10-fe",
@@ -18689,19 +19294,6 @@
    },
    {
     "id": "samsung-galaxy-tab-s10-fe",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-s10-fe",
-    "image": null,
-    "storage": 256,
-    "price": 209000,
-    "color": null,
-    "title": "Samsung Galaxy Tab S10 FE",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-s10-fe",
     "price": 209000,
     "title": "Samsung Galaxy Tab S10 FE 12GB/256GB",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s10-fe-12gb-256gb/",
@@ -18712,6 +19304,19 @@
     "ram": 12,
     "color": null,
     "shop": "ibolit",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-s10-fe",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-s10-fe",
+    "image": null,
+    "storage": 256,
+    "price": 209000,
+    "color": null,
+    "title": "Samsung Galaxy Tab S10 FE",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -18786,19 +19391,6 @@
   "samsung-galaxy-tab-s8": [
    {
     "id": "samsung-galaxy-tab-s8",
-    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-s8",
-    "image": null,
-    "storage": 256,
-    "price": 289000,
-    "color": null,
-    "title": "Samsung Galaxy Tab S8",
-    "inStock": true,
-    "ram": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "samsung-galaxy-tab-s8",
     "price": 289000,
     "title": "Samsung Galaxy Tab S8 8GB/128GB WiFi X700 Pink Gold",
     "url": "https://redstore.am/en/product/samsung-galaxy-tab-s8-8gb128gb-wifi-x700-pink-gold",
@@ -18809,6 +19401,19 @@
     "ram": 8,
     "color": "Pink Gold",
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-s8",
+    "url": "https://3dplanet.am/en/store/product/samsung-galaxy-tab-s8",
+    "image": null,
+    "storage": 256,
+    "price": 289000,
+    "color": null,
+    "title": "Samsung Galaxy Tab S8",
+    "inStock": true,
+    "ram": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    },
    {
@@ -18853,6 +19458,15 @@
     "ram": null,
     "shop": "planet3d",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "samsung-galaxy-tab-s11-ultra",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Tab S11 Ultra WiFi (X930)",
+    "price": 399000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    },
    {
     "id": "samsung-galaxy-tab-s11-ultra",
@@ -18914,19 +19528,6 @@
     "id": "asus-vivobook-x1404vap-v14",
     "price": 229000,
     "title": "Asus VivoBook X1404VAP-V14",
-    "url": "https://3dplanet.am/en/store/product/asus-vivobook-x1404vap-v14",
-    "image": null,
-    "storage": 256,
-    "inStock": true,
-    "ram": null,
-    "color": null,
-    "shop": "planet3d",
-    "seen": "2026-09-15"
-   },
-   {
-    "id": "asus-vivobook-x1404vap-v14",
-    "price": 229000,
-    "title": "Asus VivoBook X1404VAP-V14",
     "url": "https://redstore.am/en/product/asus-vivobook-x1404vap-v14",
     "storage": 256,
     "inStock": true,
@@ -18935,6 +19536,19 @@
     "ram": null,
     "color": null,
     "shop": "redstore",
+    "seen": "2026-09-15"
+   },
+   {
+    "id": "asus-vivobook-x1404vap-v14",
+    "price": 229000,
+    "title": "Asus VivoBook X1404VAP-V14",
+    "url": "https://3dplanet.am/en/store/product/asus-vivobook-x1404vap-v14",
+    "image": null,
+    "storage": 256,
+    "inStock": true,
+    "ram": null,
+    "color": null,
+    "shop": "planet3d",
     "seen": "2026-09-15"
    }
   ],
@@ -19425,6 +20039,15 @@
    },
    {
     "id": "apple-ipad-a16",
+    "shop": "notebookcentre",
+    "title": "iPad 11 A16 (2025) WiFi Yellow / 128 GB",
+    "price": 189000,
+    "storage": 128,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock",
+    "seeded": true
+   },
+   {
+    "id": "apple-ipad-a16",
     "price": 199000,
     "title": "11 128GB WiFi 2025 Blue",
     "url": "https://redstore.am/en/product/ipad-11-128gb-wifi-2025-blue",
@@ -19464,6 +20087,15 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-ipad-a16",
+    "shop": "notebookcentre",
+    "title": "iPad 11 A16 (2025) WiFi Blue / 256 GB",
+    "price": 239000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock",
+    "seeded": true
    },
    {
     "id": "apple-ipad-a16",
@@ -23434,6 +24066,15 @@
     "color": "Space Black",
     "shop": "ibolit",
     "seen": "2026-09-15"
+   },
+   {
+    "id": "apple-macbook-pro-14-m5-max",
+    "shop": "yerevanmobile",
+    "title": "Apple Macbook Pro 14\"/M5 Max/36GB RAM/2TB/MGDU4/Space Black",
+    "price": 1859000,
+    "storage": 2048,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    }
   ],
   "msi-raider-18-hx-ai-a2xwig-rtx-5080": [
@@ -24189,6 +24830,15 @@
    },
    {
     "id": "sony-wh-1000xm6",
+    "shop": "yerevanmobile",
+    "title": "Sony WH-1000XM6",
+    "price": 179000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "sony-wh-1000xm6",
     "price": 189000,
     "title": "Sony WH-1000XM6 Best Wireless",
     "url": "https://ibolit.mobi/product/sony-wh-1000xm6-best-wireless/",
@@ -24436,6 +25086,24 @@
    },
    {
     "id": "amazon-kindle-paperwhite-12",
+    "shop": "yerevanmobile",
+    "title": "Amazon Kindle Paperwhite 12 Gen/16GB",
+    "price": 89000,
+    "storage": 16,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "amazon-kindle-paperwhite-12",
+    "shop": "yerevanmobile",
+    "title": "Amazon Kindle Paperwhite 12 Gen/32GB",
+    "price": 99000,
+    "storage": 32,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
+   {
+    "id": "amazon-kindle-paperwhite-12",
     "price": 118000,
     "title": "Amazon Kindle Paperwhite 12(16GB)",
     "url": "https://ibolit.mobi/product/amazon-kindle-paperwhite-1216gb/",
@@ -24557,6 +25225,15 @@
    }
   ],
   "beats-studio-buds-plus": [
+   {
+    "id": "beats-studio-buds-plus",
+    "shop": "yerevanmobile",
+    "title": "Apple Beats Studio Buds Plus",
+    "price": 74000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   },
    {
     "id": "beats-studio-buds-plus",
     "shop": "eldorado",
@@ -24742,6 +25419,17 @@
     "price": 379000,
     "storage": 512,
     "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
+    "seeded": true
+   }
+  ],
+  "amazon-kindle-paperwhite-kids-11": [
+   {
+    "id": "amazon-kindle-paperwhite-kids-11",
+    "shop": "yerevanmobile",
+    "title": "Amazon Kindle Kids Paperwhite 11 Gen",
+    "price": 75000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
     "seeded": true
    }
   ]
