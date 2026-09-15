@@ -437,6 +437,10 @@ if (process.argv[2] === '--selftest') {
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
     // a laptop whose model name contains a speaker's. The shop says HP; the speaker is a JBL.
     [null, 'HP OmniBook Flip 7 16-AU0070WM'],
+    // REDstore's url for the Tab S8+ says "tab-s8"; only its title says plus. crawlLd reads
+    // both, and this is the pair that makes the difference visible.
+    ['samsung-galaxy-tab-s8', 'samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
+    ['samsung-galaxy-tab-s8-plus', 'Samsung Galaxy Tab S8+ 8GB/128GB WiFi X800 Graphite samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
     ['jbl-flip-7', 'JBL Flip 7 Squad'],
     ['jbl-flip-7', 'Portable speaker JBL Flip 7 Black'],
     // shops drop the brand all the time, and that must still match
@@ -673,16 +677,20 @@ if (process.argv[2] === '--selftest') {
 async function crawlLd(urls, cap = 6) {
   const out = [], per = {};
   for (const u of urls) {
-    const id = matchPhone(u);
-    if (!id) continue;
-    per[id] = (per[id] || 0) + 1;
-    if (per[id] > cap) continue;                 // cap requests per model
+    const urlId = matchPhone(u);
+    if (!urlId) continue;
+    per[urlId] = (per[urlId] || 0) + 1;
+    if (per[urlId] > cap) continue;              // cap requests per model
     const html = await get(u); await sleep(DELAY_MS);
     if (!html) continue;
     const p = ldProduct(html), o = ldOffer(p);
     if (!o) continue;
     const price = Math.round(Number(o.price));
     const title = clean(p.name || '');
+    // The url only decides which pages are worth fetching; what the shop CALLS the thing is in
+    // the title, and every other adapter reads both. REDstore slugs the Tab S8 and the Tab S8+
+    // alike as "tab-s8", and the plus tablet's price landed on the plain one.
+    const id = matchPhone(title + ' ' + u) || urlId;
     if (!price || price < 5000 || !title || !safeUrl(u)) continue;
     const img = Array.isArray(p.image) ? p.image[0] : p.image;
     out.push({

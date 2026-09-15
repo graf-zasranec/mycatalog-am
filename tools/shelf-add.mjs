@@ -23,7 +23,7 @@ const DATA = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 
 const num = s => { const m = /(-?[\d.]+)/.exec(String(s ?? '')); return m ? +m[1] : null; };
 const clean = s => String(s ?? '').replace(/\\+/g, '').replace(/\s+/g, ' ').trim();
-const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const slug = s => s.toLowerCase().replace(/\+/g, ' plus ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // Brands the catalogue already knows keep their spelling; a new one is taken from the title.
 const BRANDS = [...new Set(DATA.map(p => p.brand))];
@@ -55,10 +55,38 @@ const cpu = s => clean(s)
   .replace(/\s*-\s*/g, '-')
   .replace(/^Intel Core-/, 'Intel Core ');
 const TIER = {
+  tablet:  p => p >= 550000 ? 'flagship' : p >= 450000 ? 'premium' : p >= 250000 ? 'upper-mid' : p >= 130000 ? 'mid' : 'budget',
   laptop:  p => p >= 900000 ? 'flagship' : p >= 500000 ? 'upper-mid' : p >= 250000 ? 'mid' : 'budget',
   monitor: p => p >= 120000 ? 'upper-mid' : p >= 60000 ? 'mid' : 'budget',
 };
+// REDstore names a tablet by every option it was ordered with - "Galaxy Tab S11 Ultra
+// 12GB/256GB WiFi X930 Gray". The model ends where the first capacity begins.
+const tabName = s => s.replace(/\s+\d+\s?GB\b[\s\S]*$/i, '').trim();
 const MAP = {
+  tablet: r => {
+    const a = r.attrs;
+    const cams = clean(a['Main camera']).split(/\s*\+\s*/).filter(Boolean);
+    return {
+      display: {
+        ...(num(a['Screen diagonal(inch)']) ? { size: num(a['Screen diagonal(inch)']) } : {}),
+        ...(a['Screen resolution'] ? { resolution: clean(a['Screen resolution']).replace(/\s*x\s*/i, 'x') } : {}),
+        touch: true,
+      },
+      ...(a['CPU'] ? { chipset: { name: clean(a['CPU']) } } : {}),
+      ...(cams.length ? { camera: { modules: cams.length, main: cams[0],
+            ...(cams[1] ? { ultrawide: cams[1] } : {}),
+            ...(a['Front camera'] ? { front: clean(a['Front camera']) } : {}) } } : {}),
+      ...(num(a['Battery capacity']) ? { battery: { capacity: num(a['Battery capacity']) } } : {}),
+      ...(num(a['Weight(Kg)']) ? { body: { weight: Math.round(num(a['Weight(Kg)']) * 1000) } } : {}),
+      // "Without SIM card capability" is the shop's way of saying Wi-Fi only
+      connectivity: { sim: /without/i.test(String(a['SIM card quantity'] ?? '')) ? 'Wi-Fi only' : clean(a['SIM card quantity']) },
+      ...(a['Operation system'] ? { os: clean(a['Operation system']) } : {}),
+      ...(num(a['Year of manufacture']) ? { released: String(num(a['Year of manufacture'])) } : {}),
+      _variant: { ram: num(a['RAM']), storage: num(a['Storage']) },
+      summaryEn: [num(a['Screen diagonal(inch)']) && `A ${num(a['Screen diagonal(inch)'])}-inch tablet`,
+                  a['CPU'] && `on ${clean(a['CPU'])}`].filter(Boolean).join(' ') + '.',
+    };
+  },
   notebooks: r => {
     const a = r.attrs;
     const gpu = clean(a['Graphic card']);
@@ -106,7 +134,7 @@ const MAP = {
 const have = new Set(DATA.map(p => p.id));
 const drafts = [], skipped = [], nobrand = [];
 for (const r of rows) {
-  const name = clean(r.name);
+  const name = category === 'tablet' ? tabName(clean(r.name)) : clean(r.name);
   const brand = brandOf(name);
   if (!brand) { nobrand.push(name); continue; }
   const short = name.toLowerCase().startsWith(brand.toLowerCase() + ' ') ? name.slice(brand.length + 1) : name;
@@ -115,6 +143,12 @@ for (const r of rows) {
   const known = matchPhone(name) || matchPhone(r.url || '');
   if (known) { skipped.push(known); continue; }
   if (have.has(id)) { skipped.push(id); continue; }
+  // REDstore puts the part that tells two machines apart in brackets - "15IAN8(N100)",
+  // "XPS 9350(16GB/Ultra 7)" - and its own url DELETES the brackets and slashes instead of
+  // separating them, so the catalogue's readable "15IAN8 N100" can never be found in
+  // "...15ian8n100". The shop's own spelling is recorded as one this product answers to,
+  // rather than loosening the matcher for every shop.
+  const joined = name.replace(/[^\w\s-]/g, '');
   const body = MAP[category](r);
   // the export's word for the aisle is not the catalogue's word for the category
   const cat = { notebooks: 'laptop', monitors: 'monitor' }[category] || category;
@@ -124,9 +158,10 @@ for (const r of rows) {
     tier: TIER[cat] ? TIER[cat](r.price) : 'mid',
     priceAmd: r.price, priceAmdMax: r.price, popularity: 40,
     accent: '#5C6470',
+    ...(joined !== name ? { aliases: [joined] } : {}),
     ...body, _variant: undefined,
     variants: [{ ram: body._variant?.ram ?? null, storage: body._variant?.storage ?? null, priceAmd: r.price }],
-    battery: {},
+    battery: body.battery ?? {},
     // the price is the shop's; the popularity number is ours and nothing measured it
     unsure: ['popularity'],
     _url: r.url, _image: r.image, _sku: r.sku,
