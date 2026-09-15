@@ -5987,6 +5987,64 @@
   ]
  },
  {
+  "id": "xiaomi-15t-pro",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "15T Pro",
+  "tier": "upper-mid",
+  "released": "2025",
+  "priceAmd": 299000,
+  "priceAmdMax": 319000,
+  "popularity": 55,
+  "accent": "#6E7276",
+  "display": {
+   "size": 6.83,
+   "resolution": "2772x1280"
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 9400+"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "50 MP",
+   "ultrawide": "12 MP",
+   "telephoto": "50 MP",
+   "front": "32 MP"
+  },
+  "battery": {
+   "capacity": 5500
+  },
+  "body": {
+   "weight": 210
+  },
+  "connectivity": {
+   "sim": "Dual nano-SIM"
+  },
+  "os": "Android 15",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 299000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 319000
+   }
+  ],
+  "colors": [
+   "Black",
+   "Gray"
+  ],
+  "summaryEn": "A 6.83-inch Xiaomi on the Dimensity 9400+, with a 50 MP triple camera and a 5500 mAh battery.",
+  "unsure": [
+   "os",
+   "body.weight",
+   "popularity"
+  ]
+ },
+ {
   "id": "samsung-galaxy-watch-ultra-2",
   "category": "watch",
   "brand": "Samsung",

@@ -459,8 +459,10 @@ if (process.argv[2] === '--selftest') {
     // both, and this is the pair that makes the difference visible.
     ['samsung-galaxy-tab-s8', 'samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
     ['samsung-galaxy-tab-s8-plus', 'Samsung Galaxy Tab S8+ 8GB/128GB WiFi X800 Graphite samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
-    // splitting "15T" to recover a compressed slug must not let the plain 15 take a 15T Pro
-    [null, 'Xiaomi 15T Pro'],
+    // splitting "15T" to recover a compressed slug must not let the plain 15 take a 15T Pro.
+    // The Pro is carried now, so the phone that proves the rule is the Ultra, which is not.
+    ['xiaomi-15t-pro', 'Xiaomi 15T Pro'],
+    [null, 'Xiaomi 15 Ultra'],
     ['xiaomi-15t', 'Xiaomi 15T'],
     ['xiaomi-15', 'Xiaomi 15'],
     ['jbl-flip-7', 'JBL Flip 7 Squad'],
