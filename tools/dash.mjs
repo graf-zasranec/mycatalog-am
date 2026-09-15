@@ -34,7 +34,7 @@ const mainShots = new Set(cuts.filter(f => f.endsWith('__main.webp')).map(f => f
 const colourShots = cuts.filter(f => f.includes('__') && !f.endsWith('__main.webp')).length;
 
 /* ---------- the doubts ---------- */
-const doubts = { unverifiable: [], hand: [], single: [], none: [], outlier: [], unstated: [], stale: [], listing: [] };
+const doubts = { unverifiable: [], hand: [], single: [], none: [], outlier: [], unstated: [], stale: [], listing: [], shared: [] };
 // "Go to shop" has to land on the product. These land on a category page, where the visitor has
 // to find the thing again themselves and the price on our side cannot be rechecked against
 // anything in particular.
@@ -65,10 +65,16 @@ for (const p of DATA) {
   if (sizes.size > 1) for (const o of offs) if (o.storage == null)
     doubts.unstated.push({ id: p.id, name: name(p), shop: o.shop, price: o.price, url: o.url });
 }
+// A product page serves one product. A url that several different products point at is a list
+// of them, whatever its shape - this catches the ones no pattern would: zigzag.am/en/sony stands
+// in for two Sony headphones AND a Sonos, and redstore's tablet category for three tablets.
+const perUrl = {};
+for (const o of all) (perUrl[o.url] ||= new Set()).add(o.id);
 for (const o of all) {
   const p = byId(o.id);
   const row = { id: o.id, name: p ? name(p) : o.id, shop: o.shop, price: o.price, title: o.title, url: o.url };
   if (LISTING.test(o.url)) doubts.listing.push(row);
+  if (perUrl[o.url].size > 1) doubts.shared.push({ ...row, products: perUrl[o.url].size });
   if (blockedShop(o.shop)) doubts.unverifiable.push(row);
   else if (o.seeded) doubts.hand.push(row);
   else if (o.seen && daysAgo(o.seen) > 14) doubts.stale.push({ ...row, seen: o.seen, days: daysAgo(o.seen) });
@@ -120,6 +126,8 @@ if (process.argv.includes('--doubts')) {
   for (const r of doubts.outlier) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)} vs ${r.median} (${r.off}% off)  ${r.name} ${r.size}`);
   title('Price with no capacity stated, on a product sold in several', doubts.unstated.length);
   for (const r of doubts.unstated) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)}  ${r.name}`);
+  title('One url standing in for several different products', doubts.shared.length);
+  for (const r of doubts.shared) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)}  ${r.name}  (${r.products} products share ${r.url})`);
   title('The link lands on a category page, not on the product', doubts.listing.length);
   for (const r of doubts.listing) console.log(`  ${shop(r.shop).padEnd(16)} ${String(r.price).padStart(9)}  ${r.name}  ${r.url}`);
   title('Last read more than a fortnight ago', doubts.stale.length);

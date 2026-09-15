@@ -2,13 +2,20 @@
 #
 #   python tools/check-links.py            report only
 #   python tools/check-links.py --prune     drop the rows whose page is gone or sold out
+#   python tools/check-links.py --all       every url in data/prices.json, not only the hand rows
+#
+# --all answers a different question: which links on the site would disappoint somebody who
+# clicked one. It writes .links.json as it goes and picks up where it stopped, because 1400
+# pages is half an hour and this machine should not have to do it twice.
 #
 # A crawled offer heals itself: next run the shop either serves the page or the offer disappears.
 # A hand-recorded row has no such cycle - notebookcentre and yerevanmobile are not crawled at all,
 # appzone barely - so a row here is the one kind that can rot silently while the site keeps
 # linking people to a 404.
+import json
 import re
 import sys
+import time
 from collections import OrderedDict
 from pathlib import Path
 
@@ -16,6 +23,16 @@ from scrapling.fetchers import Fetcher
 
 ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / 'data' / 'listings.csv'
+PRICES = ROOT / 'data' / 'prices.json'
+STATE = ROOT / '.links.json'
+# Shops this checker must not fetch. The first three name our crawler with Disallow: / , and
+# Zigzag's WAF refuses anything that says what it is - impersonating a browser past that is the
+# bot-block evasion this project does not do. Their links can only be checked by a person.
+NOFETCH = {'yerevanmobile': 'robots.txt: Disallow', 'notebookcentre': 'robots.txt: Disallow',
+           'listam': 'robots.txt: Disallow', 'zigzag': '403 to anything that identifies itself'}
+# "Go to shop" has to land on the product. These land on a list of them.
+LISTING = re.compile(r'/(category|collection|promo)/'
+                     r'|/(iphones|smartphones|speakers|tablets|watches|headphones-and-headsets)\.html$', re.I)
 DEAD = {404, 410, 500}          # 403/429 is a shop refusing US, not a missing page
 # A crawled offer is dropped when the shop says out of stock; a hand row never was, because
 # data/listings.csv carries no stock column and nothing re-read the page. Zigzag's Galaxy A06
@@ -41,7 +58,86 @@ def stock_of(html):
     return None
 
 
+def check_all():
+    """Every url the site links to, grouped by what a person clicking it would get."""
+    data = json.loads(PRICES.read_text(encoding='utf8'))
+    offers = [o for lst in data['offers'].values() for o in lst]
+    urls = OrderedDict()
+    for o in offers:
+        urls.setdefault(o['url'], []).append(o)
+
+    done = json.loads(STATE.read_text(encoding='utf8')) if STATE.exists() else {}
+    print(f'{len(urls)} distinct url(s) across {len(offers)} offer(s); {len(done)} already checked')
+    last_host = None
+    for i, (u, rows) in enumerate(urls.items(), 1):
+        shop = rows[0]['shop']
+        if u in done:
+            continue
+        if shop in NOFETCH:
+            done[u] = {'status': 'not fetched', 'why': NOFETCH[shop]}
+            continue
+        host = u.split('/')[2]
+        if host == last_host:
+            time.sleep(0.4)          # one at a time per host, with a gap
+        last_host = host
+        try:
+            r = Fetcher.get(u, impersonate='chrome', timeout=25)
+            st, html = r.status, (r.html_content or '')
+            done[u] = {'status': st, 'stock': stock_of(html)}
+        except Exception as e:
+            done[u] = {'status': 'ERR', 'why': type(e).__name__}
+        if i % 25 == 0:
+            STATE.write_text(json.dumps(done), encoding='utf8')
+            print(f'  {i}/{len(urls)}', flush=True)
+    STATE.write_text(json.dumps(done), encoding='utf8')
+
+    # what a person clicking would actually get
+    buckets = {'dead': [], 'refused': [], 'error': [], 'soldout': [], 'listing': [], 'unfetchable': []}
+    for u, rows in urls.items():
+        d = done.get(u, {})
+        st = d.get('status')
+        row = (rows[0]['shop'], rows[0].get('title') or rows[0]['id'], u, len(rows), d)
+        if st == 'not fetched':
+            buckets['unfetchable'].append(row)
+        elif st in DEAD:
+            buckets['dead'].append(row)
+        elif st == 'ERR':
+            buckets['error'].append(row)
+        elif isinstance(st, int) and st >= 400:
+            buckets['refused'].append(row)
+        elif d.get('stock') is False:
+            buckets['soldout'].append(row)
+        if LISTING.search(u):
+            buckets['listing'].append(row)
+    return urls, buckets
+
+
 def main():
+    if '--all' in sys.argv:
+        urls, b = check_all()
+        title = lambda h, n: print(f'\n== {h} ({n}) ==')
+        title('Gone - the page answers 404, 410 or 500', len(b['dead']))
+        for sh, t, u, n, d in b['dead']:
+            print(f'  {d["status"]}  {sh:14} {t[:44]:46} {u}')
+        title('The shop refused us - somebody with a browser may still see it', len(b['refused']))
+        for sh, t, u, n, d in b['refused']:
+            print(f'  {d["status"]}  {sh:14} {t[:44]:46} {u}')
+        title('Never answered - timed out or would not connect', len(b['error']))
+        for sh, t, u, n, d in b['error']:
+            print(f'  {d.get("why", ""):12}  {sh:14} {t[:44]:46} {u}')
+        title('The page says sold out', len(b['soldout']))
+        for sh, t, u, n, d in b['soldout']:
+            print(f'  {sh:14} {t[:44]:46} {u}')
+        title('Lands on a category page, not on the product', len(b['listing']))
+        for sh, t, u, n, d in b['listing']:
+            print(f'  {sh:14} {t[:44]:46} {u}')
+        title('This checker may not fetch - only a person can', len(b['unfetchable']))
+        for sh, t, u, n, d in b['unfetchable']:
+            print(f'  {sh:14} {t[:44]:46} {u}   ({d.get("why", "")})')
+        bad = sum(len(v) for v in b.values())
+        print(f'\n{bad} link(s) worth a look, out of {len(urls)}')
+        return
+
     lines = CSV.read_text(encoding='utf8').rstrip('\n').split('\n')
     head, rows = lines[0], lines[1:]
     urls = OrderedDict()
