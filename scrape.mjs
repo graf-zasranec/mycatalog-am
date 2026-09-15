@@ -142,7 +142,12 @@ function matchPhone(text) {
   // digit/letter joins gives an ordinary title back unchanged and recovers the model name from a
   // compressed one, so each reading gets its own attempt instead of loosening the matcher.
   const base = norm(text);
-  for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2')])) {
+  // A shop writes the configuration in the middle of the name - "Pro 11 512GB WiFi 2024 Space
+  // Black" - so the model and the year it is sold by never sit next to each other. Dropping the
+  // capacity and the radio puts them back together. Tried LAST, so an exact reading always wins.
+  const lean = base.replace(/\b\d+\s?(gb|tb)\b|\bwi ?fi\b|\b5g\b|\blte\b|\bcellular\b/g, ' ')
+                   .replace(/\s+/g, ' ').trim();
+  for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2'), lean])) {
     const id = matchIn(' ' + v + ' ');
     if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
   }
@@ -450,6 +455,17 @@ if (process.argv[2] === '--selftest') {
     [null, 'LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6" 83JE0189RK Notebooks'],
     ['hp-victus-15', 'HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA Notebooks'],
     ['acer-aspire-15', 'ACER ASPIRE AL15-72P-57CM i5-13420H 16/512 15.6" NX.D5HEM.002 Notebooks'],
+    // a shop that names an iPad by its year, with the capacity in between
+    ['apple-ipad-pro-11-m4', 'https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2024-space-black'],
+    ['apple-ipad-air-11-m4', 'https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-blue'],
+    ['apple-ipad-air-11-m3', 'https://redstore.am/en/product/ipad-air-11-256gb-wifi-2025-blue'],
+    ['apple-ipad-pro-13-m5', 'https://redstore.am/en/product/ipad-pro-13-512gb-wifi-2025-space-black'],
+    // and the chip-named readings every other shop uses must keep working
+    ['apple-ipad-pro-11-m4', 'https://ibolit.mobi/product/ipad-pro-11-m4-256gb-wi-fi-standard-glass-silver/'],
+    ['apple-ipad-air-11-m3', 'https://www.pixel.am/am/product/ipad-air-11-m3'],
+    // stripping the capacity must not turn one phone into another
+    ['samsung-galaxy-a57', 'Samsung Galaxy A57 5G SM-A576B 8GB 128GB Awesome Navy'],
+    [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
     // a phone sold with earbuds in the box is neither product's price
     [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
     ['xiaomi-buds-6', 'Xiaomi Buds 6'],

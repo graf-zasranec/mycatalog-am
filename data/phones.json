@@ -1381,7 +1381,7 @@
   "id": "apple-ipad-a16",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad A16",
+  "name": "iPad 11 (2025) A16",
   "tier": "budget",
   "released": "2025-03",
   "priceAmd": 231900,
@@ -1436,7 +1436,10 @@
   "summaryEn": "The entry iPad on the A16 chip \u2014 the cheapest way into iPadOS.",
   "aliases": [
    "iPad A16",
-   "iPad 11 A16"
+   "iPad 11 A16",
+   "Apple iPad A16",
+   "iPad 11 2025",
+   "Apple iPad 11 2025"
   ]
  },
  {
@@ -1619,7 +1622,7 @@
   "id": "apple-ipad-pro-11-m5",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Pro 11 M5",
+  "name": "iPad Pro 11 (2025) M5",
   "tier": "flagship",
   "released": "2025-10",
   "priceAmd": 599900,
@@ -1675,7 +1678,13 @@
    "Silver",
    "Space Black"
   ],
-  "summaryEn": "The 11-inch iPad Pro on Apple's M5 chip, with the tandem-OLED Ultra Retina XDR display."
+  "summaryEn": "The 11-inch iPad Pro on Apple's M5 chip, with the tandem-OLED Ultra Retina XDR display.",
+  "aliases": [
+   "iPad Pro 11 M5",
+   "Apple iPad Pro 11 M5",
+   "iPad Pro 11 2025",
+   "Apple iPad Pro 11 2025"
+  ]
  },
  {
   "id": "samsung-galaxy-watch-8",
@@ -2117,7 +2126,7 @@
   "id": "apple-ipad-air-11-m4",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Air 11 M4",
+  "name": "iPad Air 11 (2026) M4",
   "tier": "upper-mid",
   "released": "2026-03",
   "priceAmd": 380000,
@@ -2174,7 +2183,13 @@
    "Starlight",
    "Purple"
   ],
-  "summaryEn": "The 11-inch iPad Air on M4 \u2014 the mid-range iPad most people should buy."
+  "summaryEn": "The 11-inch iPad Air on M4 \u2014 the mid-range iPad most people should buy.",
+  "aliases": [
+   "iPad Air 11 M4",
+   "Apple iPad Air 11 M4",
+   "iPad Air 11 2026",
+   "Apple iPad Air 11 2026"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad-2",
@@ -2909,7 +2924,7 @@
   "id": "apple-ipad-pro-13-m5",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Pro 13 M5",
+  "name": "iPad Pro 13 (2025) M5",
   "tier": "flagship",
   "released": "2025-10",
   "priceAmd": 790000,
@@ -2965,7 +2980,13 @@
    "Silver",
    "Space Black"
   ],
-  "summaryEn": "The 13-inch iPad Pro on M5 \u2014 the largest tandem-OLED iPad, sold up to 2 TB."
+  "summaryEn": "The 13-inch iPad Pro on M5 \u2014 the largest tandem-OLED iPad, sold up to 2 TB.",
+  "aliases": [
+   "iPad Pro 13 M5",
+   "Apple iPad Pro 13 M5",
+   "iPad Pro 13 2025",
+   "Apple iPad Pro 13 2025"
+  ]
  },
  {
   "id": "apple-airpods-pro-2",
@@ -4446,7 +4467,7 @@
   "id": "apple-ipad-air-13-m4",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Air 13 M4",
+  "name": "iPad Air 13 (2026) M4",
   "tier": "upper-mid",
   "released": "2026-03",
   "priceAmd": 493900,
@@ -4503,7 +4524,13 @@
    "Starlight",
    "Purple"
   ],
-  "summaryEn": "The 13-inch iPad Air \u2014 the big screen without the Pro's OLED price."
+  "summaryEn": "The 13-inch iPad Air \u2014 the big screen without the Pro's OLED price.",
+  "aliases": [
+   "iPad Air 13 M4",
+   "Apple iPad Air 13 M4",
+   "iPad Air 13 2026",
+   "Apple iPad Air 13 2026"
+  ]
  },
  {
   "id": "samsung-galaxy-a27",
@@ -10032,7 +10059,7 @@
   "id": "apple-ipad-air-11-m3",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Air 11 M3",
+  "name": "iPad Air 11 (2025) M3",
   "tier": "upper-mid",
   "released": "2025-03",
   "priceAmd": 289000,
@@ -10089,13 +10116,19 @@
   "unsure": [
    "popularity",
    "battery.capacity"
+  ],
+  "aliases": [
+   "iPad Air 11 M3",
+   "Apple iPad Air 11 M3",
+   "iPad Air 11 2025",
+   "Apple iPad Air 11 2025"
   ]
  },
  {
   "id": "apple-ipad-pro-11-m4",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Pro 11 M4",
+  "name": "iPad Pro 11 (2024) M4",
   "tier": "premium",
   "released": "2024-05",
   "priceAmd": 489000,
@@ -10150,6 +10183,12 @@
   "unsure": [
    "popularity",
    "battery.capacity"
+  ],
+  "aliases": [
+   "iPad Pro 11 M4",
+   "Apple iPad Pro 11 M4",
+   "iPad Pro 11 2024",
+   "Apple iPad Pro 11 2024"
   ]
  },
  {
