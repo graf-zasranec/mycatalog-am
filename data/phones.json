@@ -18839,6 +18839,51 @@
   ]
  },
  {
+  "id": "amazon-kindle-11",
+  "category": "ereader",
+  "brand": "Amazon",
+  "name": "Kindle (11th gen)",
+  "aliases": [
+   "Amazon Kindle 11th Gen",
+   "Kindle 11th Gen",
+   "Amazon Kindle 11th Gen 16GB"
+  ],
+  "tier": "budget",
+  "released": "2022",
+  "priceAmd": 84000,
+  "priceAmdMax": 84000,
+  "popularity": 40,
+  "accent": "#2B2F33",
+  "display": {
+   "size": 6,
+   "type": "E Ink, anti-glare",
+   "touch": true
+  },
+  "variants": [
+   {
+    "storage": 16,
+    "priceAmd": 84000
+   }
+  ],
+  "battery": {
+   "life": "weeks"
+  },
+  "connectivity": {
+   "network": "Wi-Fi"
+  },
+  "cardSlot": false,
+  "os": "Kindle OS",
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "The base Kindle: a 6-inch anti-glare E Ink screen, 16 GB and USB-C charging.",
+  "unsure": [
+   "battery.life",
+   "connectivity.network",
+   "popularity"
+  ]
+ },
+ {
   "id": "bo-beoplay-h95",
   "category": "headphones",
   "brand": "Bang & Olufsen",
