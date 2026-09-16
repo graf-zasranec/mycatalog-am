@@ -18884,6 +18884,43 @@
   ]
  },
  {
+  "id": "asus-rog-ally-x",
+  "category": "console",
+  "brand": "Asus",
+  "name": "ROG Ally X",
+  "aliases": [
+   "Asus ROG Ally X"
+  ],
+  "tier": "flagship",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "display": {
+   "size": 7,
+   "type": "Full HD touchscreen",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen Z1 Extreme"
+  },
+  "cardSlot": true,
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 599000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A handheld gaming PC on the Ryzen Z1 Extreme, with a 7-inch 120Hz touchscreen and full Windows 11.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
   "id": "bo-beoplay-h95",
   "category": "headphones",
   "brand": "Bang & Olufsen",
@@ -19027,6 +19064,43 @@
   "unsure": [
    "popularity",
    "colors"
+  ]
+ },
+ {
+  "id": "asus-rog-ally-7",
+  "category": "console",
+  "brand": "Asus",
+  "name": "ROG Ally",
+  "aliases": [
+   "Asus ROG Ally 7",
+   "Asus ROG Ally"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 345000,
+  "priceAmdMax": 345000,
+  "popularity": 38,
+  "accent": "#5C6470",
+  "display": {
+   "size": 7,
+   "type": "Full HD touchscreen",
+   "refresh": 120,
+   "touch": true
+  },
+  "chipset": {
+   "name": "AMD Ryzen Z1"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 345000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "The base ROG Ally: Ryzen Z1, the same 7-inch 120Hz touchscreen, Windows 11.",
+  "unsure": [
+   "popularity"
   ]
  },
  {
@@ -19275,6 +19349,62 @@
   ]
  },
  {
+  "id": "asus-dual-rtx-4060-ti-8gb",
+  "category": "component",
+  "brand": "Asus",
+  "name": "Dual GeForce RTX 4060 Ti 8GB",
+  "tier": "mid",
+  "priceAmd": 267000,
+  "priceAmdMax": 267000,
+  "popularity": 30,
+  "accent": "#5C6470",
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4060 Ti",
+   "type": "discrete"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 8,
+    "priceAmd": 267000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A GeForce RTX 4060 Ti graphics card with 8 GB of GDDR6 and dual-fan cooling.",
+  "unsure": [
+   "popularity"
+  ],
+  "variantUnit": "vram"
+ },
+ {
+  "id": "asus-dual-rtx-4060-8gb",
+  "category": "component",
+  "brand": "Asus",
+  "name": "Dual RTX 4060 8GB",
+  "tier": "mid",
+  "priceAmd": 208000,
+  "priceAmdMax": 208000,
+  "popularity": 28,
+  "accent": "#5C6470",
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4060",
+   "type": "discrete"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 8,
+    "priceAmd": 208000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A GeForce RTX 4060 graphics card with 8 GB of GDDR6.",
+  "unsure": [
+   "popularity"
+  ],
+  "variantUnit": "vram"
+ },
+ {
   "id": "realme-c75",
   "brand": "Realme",
   "name": "C75",
@@ -19400,6 +19530,34 @@
    "body.weight",
    "connectivity.bluetooth"
   ]
+ },
+ {
+  "id": "asus-proart-rtx-4060-8gb",
+  "category": "component",
+  "brand": "Asus",
+  "name": "ProArt RTX 4060 8GB",
+  "tier": "mid",
+  "priceAmd": 195000,
+  "priceAmdMax": 195000,
+  "popularity": 26,
+  "accent": "#5C6470",
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4060",
+   "type": "discrete"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 8,
+    "priceAmd": 195000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "The ProArt-branded GeForce RTX 4060, 8 GB of GDDR6, built for creative workflows.",
+  "unsure": [
+   "popularity"
+  ],
+  "variantUnit": "vram"
  },
  {
   "id": "google-pixel-9a",
