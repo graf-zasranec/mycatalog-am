@@ -1429,7 +1429,18 @@ try {
   // tray row before the eSIM row cannot change the outcome.
   for (const r of rows) {
     const list = offers[r.id] ||= [];
-    if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage && !!o.esim === !!r.esim)) continue;
+    // Colour belongs in this key as much as SIM build does: AirPods Max has no storage variant
+    // at all, so every one of its colours shared the same (shop, storage, esim) key, and only
+    // the first hand row ever written for a given shop could exist - iBolit's Red, Silver and
+    // Sky Blue were silently dropped in favour of whichever colour got crawled or seeded first.
+    // Colour alone still was not enough: iBolit's "Red" and "Silver" are not among the five
+    // colours this product is actually catalogued in, so colorOf() left both null - the same
+    // null, colliding with each other the moment the second one was checked against the first,
+    // which this very loop had just pushed. Each hand row names its own real product page, so
+    // the url is what tells two same-null-colour rows apart when colour itself cannot.
+    if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage
+                     && !!o.esim === !!r.esim && (o.color || null) === (r.color || null)
+                     && (o.url || null) === (r.url || null))) continue;
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
