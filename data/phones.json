@@ -22138,5 +22138,1023 @@
   },
   "battery": {},
   "summaryEn": "The Lightning EarPods, for every iPhone before the USB-C switch."
+ },
+ {
+  "id": "asus-vivobook-pro-15-q543mj-u93050-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook Pro 15 Q543MJ-U93050 OLED",
+  "tier": "upper-mid",
+  "priceAmd": 690000,
+  "priceAmdMax": 690000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "type": "OLED"
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9 185H"
+  },
+  "graphics": {
+   "name": "Nvidia GeForce RTX 3050 6 GB",
+   "type": "discrete"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": 24,
+    "storage": 2048,
+    "priceAmd": 690000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 9 185H and Nvidia GeForce RTX 3050 6 GB.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-s16-s5606ma-ds96-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook S16 S5606MA-DS96 OLED",
+  "tier": "upper-mid",
+  "priceAmd": 610000,
+  "priceAmdMax": 610000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 16,
+   "type": "OLED"
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 9 185H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 610000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9 185H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-pro-15-q533mj-u73050-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook Pro 15 Q533MJ-U73050 OLED",
+  "tier": "upper-mid",
+  "priceAmd": 565000,
+  "priceAmdMax": 565000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "type": "OLED"
+  },
+  "chipset": {
+   "name": "Intel Core Ultra 7 155H"
+  },
+  "graphics": {
+   "name": "Nvidia GeForce RTX 3050 6 GB",
+   "type": "discrete"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 565000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 7 155H and Nvidia GeForce RTX 3050 6 GB.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-k5504-vn-ds96",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook K5504 VN-DS96",
+  "tier": "upper-mid",
+  "priceAmd": 508000,
+  "priceAmdMax": 508000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i9-13900H"
+  },
+  "graphics": {
+   "name": "Intel Arc A350 4 GB",
+   "type": "discrete"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 508000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i9-13900H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1502za-bq2270",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1502ZA BQ2270",
+  "tier": "mid",
+  "priceAmd": 465000,
+  "priceAmdMax": 465000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i7-12700H"
+  },
+  "graphics": {
+   "name": "Intel Iris Plus Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 465000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-fx707zc4-hx076",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "TUF Gaming FX707ZC4-HX076",
+  "tier": "mid",
+  "priceAmd": 430000,
+  "priceAmdMax": 430000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i5-12500H"
+  },
+  "graphics": {
+   "name": "Nvidia GeForce RTX 3050 4 GB",
+   "type": "discrete"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 430000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-12500H and Nvidia GeForce RTX 3050 4 GB.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1505za-ma477-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1505ZA-MA477 OLED",
+  "tier": "mid",
+  "priceAmd": 367000,
+  "priceAmdMax": 367000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "type": "OLED"
+  },
+  "chipset": {
+   "name": "Intel Core i7-12700H"
+  },
+  "graphics": {
+   "name": "Intel Iris Plus Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 367000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-nj436",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1504VA-NJ436",
+  "tier": "mid",
+  "priceAmd": 335000,
+  "priceAmdMax": 353000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i7-1355U"
+  },
+  "graphics": {
+   "name": "Intel Iris Plus Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 335000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 353000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-1355U.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-m1503-qa-l1223-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook M1503 QA L1223 OLED",
+  "tier": "mid",
+  "priceAmd": 335000,
+  "priceAmdMax": 335000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "type": "OLED"
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 5800H"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 335000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 5800H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-m1603qa-r7-12512",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook M1603QA R7 12512",
+  "tier": "mid",
+  "priceAmd": 301000,
+  "priceAmdMax": 301000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "AMD Ryzen 7 5800H"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "os": "Windows 11",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 301000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 5800H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-k3500p-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook K3500P OLED",
+  "tier": "mid",
+  "priceAmd": 280000,
+  "priceAmdMax": 280000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "type": "OLED"
+  },
+  "chipset": {
+   "name": "Intel Core i5-11300H"
+  },
+  "graphics": {
+   "name": "Intel Iris Plus Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 280000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-11300H.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504za-u672",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1504ZA-U672",
+  "tier": "mid",
+  "priceAmd": 255000,
+  "priceAmdMax": 272000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i5-1235U"
+  },
+  "graphics": {
+   "name": "Intel Iris Plus Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 255000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 272000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1235U.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-nj061",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1504VA NJ061",
+  "tier": "budget",
+  "priceAmd": 247000,
+  "priceAmdMax": 247000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i5-1235U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 247000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1235U.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-nj451",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1504VA-NJ451",
+  "tier": "budget",
+  "priceAmd": 204000,
+  "priceAmdMax": 214000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6
+  },
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel Iris Plus Graphics",
+   "type": "integrated"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 204000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 205000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 214000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch laptop with Intel Core i3-1315U.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1404za-i38128",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook X1404ZA-I38128",
+  "tier": "budget",
+  "priceAmd": 200000,
+  "priceAmdMax": 200000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14
+  },
+  "chipset": {
+   "name": "Intel Core i3-1215U"
+  },
+  "os": "Dos",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 200000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 14-inch laptop with Intel Core i3-1215U.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e1404ga-nk053w",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook E1404GA-NK053W",
+  "tier": "budget",
+  "priceAmd": 186000,
+  "priceAmdMax": 186000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14
+  },
+  "chipset": {
+   "name": "Intel N305"
+  },
+  "os": "Win11",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 186000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 14-inch laptop with Intel N305.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-e410ma-bv2490w",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook E410MA-BV2490W",
+  "tier": "budget",
+  "priceAmd": 133000,
+  "priceAmdMax": 133000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14
+  },
+  "chipset": {
+   "name": "Intel N4020"
+  },
+  "os": "Win11",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 512,
+    "priceAmd": 133000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 14-inch laptop with Intel N4020.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-chromebook-cx1700cka-ws44f-m",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Chromebook CX1700CKA WS44F M",
+  "tier": "budget",
+  "priceAmd": 131000,
+  "priceAmdMax": 131000,
+  "popularity": 20,
+  "accent": "#5C6470",
+  "display": {
+   "size": 17.3
+  },
+  "chipset": {
+   "name": "Intel N4500"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "os": "Chrome OS",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 131000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 17.3-inch laptop with Intel N4500.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-proart-display-32-pa329cv",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "ProArt Display 32” PA329CV",
+  "tier": "upper-mid",
+  "priceAmd": 455000,
+  "priceAmdMax": 455000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 32
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 455000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 32-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-32-cg32uq",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "32” CG32UQ",
+  "tier": "upper-mid",
+  "priceAmd": 365000,
+  "priceAmdMax": 365000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 32
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 365000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 32-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-34-vg34vqel1a",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "TUF Gaming 34” VG34VQEL1A",
+  "tier": "mid",
+  "priceAmd": 245000,
+  "priceAmdMax": 245000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 34
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 245000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 34-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-proart-studio-24-pa248cnv",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "ProArt Studio 24” PA248CNV",
+  "tier": "mid",
+  "priceAmd": 239000,
+  "priceAmdMax": 239000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 24
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 239000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 24-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-32-vg32vq1br",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "32” VG32VQ1BR",
+  "tier": "mid",
+  "priceAmd": 239000,
+  "priceAmdMax": 239000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 32
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 239000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 32-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-22-vt229h-touch",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "22” VT229H Touch",
+  "tier": "mid",
+  "priceAmd": 185000,
+  "priceAmdMax": 185000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 22,
+   "touch": true
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 185000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 22-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenscreen-mb16ahv-touch-screen",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "ZenScreen MB16AHV Touch Screen",
+  "tier": "mid",
+  "priceAmd": 175000,
+  "priceAmdMax": 175000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "touch": true
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 175000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-zenscreen-mb16aht-touch-screen",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "ZenScreen MB16AHT Touch Screen",
+  "tier": "mid",
+  "priceAmd": 175000,
+  "priceAmdMax": 175000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 15.6,
+   "touch": true
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 175000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 15.6-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-27-vg279ql1a",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "TUF Gaming 27” VG279QL1A",
+  "tier": "mid",
+  "priceAmd": 175000,
+  "priceAmdMax": 175000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 175000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 27-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-27-vg279q1a",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "TUF Gaming 27” VG279Q1A",
+  "tier": "mid",
+  "priceAmd": 175000,
+  "priceAmdMax": 175000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 175000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 27-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-gaming-25-vg258qr",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "Gaming 25” VG258QR",
+  "tier": "mid",
+  "priceAmd": 170000,
+  "priceAmdMax": 170000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 25
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 170000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 25-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-24-vg248q1b",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "TUF Gaming 24” VG248Q1B",
+  "tier": "budget",
+  "priceAmd": 119000,
+  "priceAmdMax": 119000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 24
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 119000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 24-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-27-va279hae",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "27” VA279HAE",
+  "tier": "budget",
+  "priceAmd": 88000,
+  "priceAmdMax": 88000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 27
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 88000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 27-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-24-vz239he-w",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "24” VZ239HE-W",
+  "tier": "budget",
+  "priceAmd": 85000,
+  "priceAmdMax": 85000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 24
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 85000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 24-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-22-vp228de",
+  "category": "monitor",
+  "brand": "ASUS",
+  "name": "22” VP228DE",
+  "tier": "budget",
+  "priceAmd": 48000,
+  "priceAmdMax": 48000,
+  "popularity": 15,
+  "accent": "#5C6470",
+  "display": {
+   "size": 22
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 48000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A 22-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
  }
 ]
