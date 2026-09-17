@@ -40,6 +40,7 @@ async function get(url, tries = 2) {
 
 /* ---------- phone matching ---------- */
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
+const PHONE_CATS = new Map(phones.map(p => [p.id, p.category || 'phone']));
 const fullName = p => p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name;
 
 // each phone gets one or more keys; the LONGEST key that matches a listing wins,
@@ -155,6 +156,8 @@ function matchIn(h) {
     // ('Core Ultra 7 255U'), which was making every Core Ultra laptop unmatchable.
     const intelUltra = next === 'ultra' && (h.includes(' core ultra ') || h.includes(' ultra 5 ') || h.includes(' ultra 7 ') || h.includes(' ultra 9 '));
     if (next && QUALIFIERS.has(next) && !intelUltra) return null;
+    const cat = PHONE_CATS.get(k.id) || 'phone';
+    if (cat !== 'phone' && (h.includes('smart phone') || h.includes('smartphone') || h.includes('սմարթ հեռախոս') || h.includes('телефон'))) return null;
     return k.id;
   }
   return null;
