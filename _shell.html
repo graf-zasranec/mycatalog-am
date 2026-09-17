@@ -154,6 +154,40 @@ button,input,select,textarea{font:inherit;color:inherit}
   .cmpbtn{margin-left:4px}
 }
 
+/* ---- search: a list while you type, a whole page behind Enter ---- */
+.srch-go{position:absolute;left:4px;top:4px;width:32px;height:32px;display:grid;place-items:center;
+  background:none;border:0;border-radius:var(--pill);cursor:pointer;color:var(--muted)}
+.srch-go:hover{color:var(--brand)}
+.srch-go svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2}
+.sugg{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:60;background:var(--surface);
+  border:1px solid var(--line2);border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.sg-i{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:10px;padding:8px 12px;
+  color:inherit;text-decoration:none;border-bottom:1px solid var(--line2)}
+.sg-i:last-of-type{border-bottom:0}
+.sg-i:hover,.sg-i:focus-visible{background:var(--line2);outline:none}
+.sg-i img{width:34px;height:34px;object-fit:contain}
+.sg-n{font-weight:600;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sg-p{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sg-none{margin:0;padding:12px;color:var(--muted);font-size:13px}
+.sg-all{display:block;width:100%;padding:10px;border:0;border-top:1px solid var(--line2);
+  background:var(--line2);color:var(--brand);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.sg-all:hover{filter:brightness(1.08)}
+/* the panel is the width of the box on desktop; on a phone the box spans the row, so it does too */
+@media (max-width:820px){.sugg{max-height:60vh;overflow-y:auto}}
+
+.orow .stale{font-style:normal;font-size:10.5px;padding:1px 5px;border-radius:var(--pill);
+  background:var(--surface2);color:var(--muted);margin-left:6px;white-space:nowrap}
+
+/* ---- filters fold away: eleven chips above the results is most of a phone screen ---- */
+.fbar.folded > *{display:none}
+.fbar.folded > .spacer,.fbar.folded > [data-drop="sort"]{display:inline-flex}
+.fmore{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 14px;border-radius:var(--pill);
+  border:1px solid var(--line2);background:none;color:inherit;font:inherit;font-size:13px;cursor:pointer}
+.fmore:hover{border-color:var(--brand);color:var(--brand)}
+.fmore b{font-weight:700;color:var(--brand)}
+.fmore svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.2;transition:transform .2s ease}
+.fmore[aria-expanded="true"] svg{transform:rotate(180deg)}
+
 /* ---- cover: the phone overlaps the headline, apricot rule ties them ---- */
 .mast-hero{padding-block:8px 0}
 .cv-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
@@ -228,6 +262,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 .soon-tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--bg);background:var(--brand);border-radius:var(--pill);padding:4px 10px}
 .soon-hd h2{font-size:20px;font-weight:800;letter-spacing:-.03em}
+/* The wait, in the mono face the rest of the site uses for figures. Tabular digits so the
+   minutes tick without the line shuffling sideways. */
+.soon-cd{margin-left:auto;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;
+  color:var(--brand);border:1px solid var(--line);border-radius:var(--pill);padding:5px 12px;
+  font-variant-numeric:tabular-nums}
 .soon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
 .soon{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:center;
   background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px;
@@ -407,6 +446,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .fav.off{opacity:.25;transition:opacity .35s ease}
 .fav{transition:opacity .35s ease}
 .badge{position:absolute;top:10px;left:10px;height:22px;padding:0 10px;border-radius:var(--pill);background:var(--text);
+/* A product no Armenian shop is listing. The catalogue only carries stock you can buy, so this
+   is the one card state that has to contradict the badge beside it rather than decorate it. */
+.badge.na{background:var(--surface2);color:var(--muted);border:1px solid var(--line2)}
   color:var(--bg);font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;display:inline-flex;align-items:center;z-index:2;letter-spacing:.01em}
 .pbody{padding:12px 4px 2px;display:flex;flex-direction:column;flex:1}
 .eyebrow{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase}
@@ -421,6 +463,19 @@ button,input,select,textarea{font:inherit;color:inherit}
 .pfoot{margin-top:auto;padding-top:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
 .pprice{font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
 .pprice s{display:block;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0}
+/* A figure the data itself flags as unconfirmed. Quiet - it qualifies the number, it does not
+   shout at it - and it carries its reason in a title so it is not a mystery mark. */
+.unsure{font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--muted);border:1px solid var(--line2);border-radius:var(--pill);padding:1px 7px;
+  margin-left:6px;white-space:nowrap;text-decoration:none;vertical-align:1px}
+/* The other shops' prices. A card that says "3 shops" names a spread without showing it. */
+.poffers{list-style:none;margin:10px -4px 0;padding:8px 4px 0;border-top:1px solid var(--line2);
+  display:flex;flex-direction:column;gap:4px}
+.poffers li{display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  font-size:12px;color:var(--muted);min-width:0}
+.poffers li>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.poffers b{font-weight:600;color:var(--text);white-space:nowrap;font-variant-numeric:tabular-nums}
+.poffers .mo{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;justify-content:flex-end}
 .pcard .go{position:relative;z-index:2;width:34px;height:34px;border-radius:50%;background:var(--surface2);
   display:grid;place-items:center;flex:none}
 .pcard .go svg{width:15px;height:15px;stroke:var(--brand);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
@@ -797,9 +852,17 @@ a.store:hover .nm{color:var(--brand)}
 @media (max-width:600px){.ofl{width:100%}}
 
 /* stock status on each offer */
-.orow .ins,.orow .oos{display:block;font-style:normal;font-size:0.6875rem;font-weight:600;margin-top:2px}
+.orow .ins,.orow .oos,.orow .unk{display:block;font-style:normal;font-size:0.6875rem;font-weight:600;margin-top:2px}
 .orow .ins{color:var(--good)}
-.orow .oos{color:var(--muted)}
+/* Out of stock was muted grey - the quietest thing on the row, under a price you cannot buy.
+   It is the one fact that makes the rest of the row useless, so it is the loudest. */
+.orow .oos{display:inline-block;margin-top:4px;padding:2px 9px;border-radius:var(--pill);
+  background:var(--bad);color:#fff;font-size:0.75rem;font-weight:800;letter-spacing:.02em;
+  text-transform:uppercase}
+.orow .unk{color:var(--muted);font-weight:500}
+/* and the row itself steps back: a price nobody can take should not read as an offer */
+.orow:has(.oos){opacity:.62}
+.orow:has(.oos) .pr{text-decoration:line-through;text-decoration-thickness:2px}
 .hist .hh{fill:none;stroke:var(--apricot);stroke-width:1;stroke-dasharray:3 3;opacity:.75;vector-effect:non-scaling-stroke}
 
 /* return control */
@@ -823,6 +886,27 @@ a.store:hover .nm{color:var(--brand)}
   .fx-flash{animation:fxflash .8s ease-out!important}
   .grid.gridin>*{animation:gridinFade .2s ease both!important}
 }
+/* ================= a finger, not a mouse pointer =================
+   Measured at 375 px: the plus that adds a card to a comparison was 26x26, the language buttons
+   38x25, the theme switch and the page numbers 34x34, and the only part of a card that opened
+   the product was the 22 px line of its title. A fingertip covers about 9 mm, which is why 44 px
+   is the figure everyone settles on.
+
+   Two different fixes, because the controls have two different problems. The ones that look
+   right at the size they are drawn keep their size and get a bigger TARGET - an invisible 44 px
+   square centred on them. The ones that are simply short get taller. Both only under
+   (pointer: coarse), so nothing about the desktop layout moves. */
+@media (pointer: coarse){
+  .ctabs .ctab, .fmore, .pg, .toggle, .fbar summary, .cmpbtn, #langs button{min-height:44px}
+  .fav::after, .srch-go::after, .th::after, #langs button::after{
+    content:'';position:absolute;top:50%;left:50%;width:44px;height:44px;
+    transform:translate(-50%,-50%);border-radius:50%}
+  .th, #langs button{position:relative}
+  /* The whole card opens the product, not just the title. .pcard is already positioned, and the
+     plus is lifted above the stretched link so it still adds to the comparison instead. */
+  .pcard h3 a::after{content:'';position:absolute;inset:0;z-index:1}
+  .fav{z-index:3}
+}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
@@ -830,9 +914,14 @@ a.store:hover .nm{color:var(--brand)}
   <div class="shell topnav">
     <a class="logo" href="#/"><span class="m"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span>MyCatalog</a>
     <nav class="nav" id="nav"></nav>
-    <label class="srch" for="q"><span class="vh" id="srchLbl">Search</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
-      <input type="search" id="q"></label>
+    <div class="srch">
+      <label class="vh" for="q" id="srchLbl">Search</label>
+      <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
+      <button type="button" class="srch-go" id="qgo" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+      </button>
+      <div class="sugg" id="sugg" role="listbox" hidden></div>
+    </div>
     <span class="mast-r">
       <a class="cmpbtn ghost" id="hdrConstruct" href="#/construct">
         <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>

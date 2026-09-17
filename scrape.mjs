@@ -2,6 +2,7 @@
 //
 //   node scrape.mjs            all shops
 //   node scrape.mjs ispace     one shop
+//   node scrape.mjs vlv allsell   several
 //
 // Politeness / rules this respects:
 //   * list.am is EXCLUDED — its robots.txt has "User-agent: ClaudeBot / Disallow: /".
@@ -40,7 +41,6 @@ async function get(url, tries = 2) {
 
 /* ---------- phone matching ---------- */
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
-const PHONE_CATS = new Map(phones.map(p => [p.id, p.category || 'phone']));
 const fullName = p => p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name;
 
 // each phone gets one or more keys; the LONGEST key that matches a listing wins,
@@ -130,6 +130,10 @@ function looksLikeAccessory(text) {
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
 }
+// Which shop is being crawled right now, so a title nothing in the catalogue answers to can be
+// filed under it. Deciding what to add next used to be guesswork; this makes it a reading.
+let CURSHOP = '';
+const MISSED = new Map();
 function matchPhone(text) {
   if (looksLikeAccessory(text)) return null;
   const h = tokenized(text).replace(/  +/g, ' ');
@@ -138,13 +142,51 @@ function matchPhone(text) {
   // digit/letter joins gives an ordinary title back unchanged and recovers the model name from a
   // compressed one, so each reading gets its own attempt instead of loosening the matcher.
   const base = norm(text);
-  for (const v of new Set([base, base.replace(/(\d)([a-z])/g, '$1 $2'), base.replace(/([a-z])(\d)/g, '$1 $2')])) {
-    const id = matchIn(' ' + v + ' ');
-    if (id) return id;
+  // A shop writes the configuration in the middle of the name - "Pro 11 512GB WiFi 2024 Space
+  // Black" - so the model and the year it is sold by never sit next to each other. Dropping the
+  // capacity and the radio puts them back together. Tried LAST, so an exact reading always wins.
+  const lean = base.replace(/\b\d+\s?(gb|tb)\b|\bwi ?fi\b|\b5g\b|\blte\b|\bcellular\b/g, ' ')
+                   .replace(/\s+/g, ' ').trim();
+  // The split readings are guesses about a compressed slug, so they are held to a stricter
+  // rule than the shop's own words: see matchIn.
+  const tries = [[base, false], [base.replace(/(\d)([a-z])/g, '$1 $2'), true],
+                 [base.replace(/([a-z])(\d)/g, '$1 $2'), true], [lean, false]];
+  for (const [v, split] of tries) {
+    const id = matchIn(' ' + v + ' ', split);
+    if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
+  }
+  // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
+  // title, so a title wins when both readings of the same item miss.
+  if (CURSHOP && !/^https?:/i.test(text)) {
+    (MISSED.get(CURSHOP) || MISSED.set(CURSHOP, new Map()).get(CURSHOP)).set(norm(text), String(text).trim());
   }
   return null;
 }
-function matchIn(h) {
+// A pair of earbuds is never sold as "8GB/256GB". Vega listed a POCO C85 phone bundled with
+// Redmi Buds 6 Active - "...poco-c85-8gb-256gb-green-plus-redmi-buds-6-active..." - and the buds
+// in the slug won the match, so a phone-and-buds bundle became the cheapest Xiaomi Buds 6 in the
+// country at 62,900 against a real 111,900. The shop's own words settle it: a product with no
+// storage to choose cannot be the thing a gigabyte figure belongs to.
+const STORELESS = new Set(phones.filter(p => !(p.variants || []).some(v => v.storage != null)).map(p => p.id));
+function capacityFits(id, text) {
+  if (!STORELESS.has(id)) return true;
+  return !capacitiesOf(text).some(c => c >= 32);
+}
+// AllSell's "HP OmniBook Flip 7 16-AU0070WM" is a laptop, and "flip 7" in it matched the JBL
+// Flip 7 speaker - a 410,000 dram laptop filed among 48,000 dram speakers. The shop names the
+// maker, so: if a title names a brand this catalogue knows and it is not the matched product's
+// brand, the match is wrong. A title that names no brand at all (shops write "MacBook Neo 13")
+// still matches, and a title naming several keeps the one whose brand is actually there.
+// 'Nothing' is left out of the test - it is an ordinary English word before it is a brand.
+const BRANDS = [...new Set(phones.map(p => norm(p.brand)))].filter(b => b && b !== 'nothing');
+const brandOfId = Object.fromEntries(phones.map(p => [p.id, norm(p.brand)]));
+function brandFits(id, text) {
+  const h = ' ' + norm(text) + ' ';
+  const mine = brandOfId[id];
+  if (mine && h.includes(' ' + mine + ' ')) return true;
+  return !BRANDS.some(b => b !== mine && h.includes(' ' + b + ' '));
+}
+function matchIn(h, split = false) {
   for (const k of KEYS) {
     const needle = ' ' + k.key + ' ';
     const i = h.indexOf(needle);
@@ -156,20 +198,32 @@ function matchIn(h) {
     // ('Core Ultra 7 255U'), which was making every Core Ultra laptop unmatchable.
     const intelUltra = next === 'ultra' && (h.includes(' core ultra ') || h.includes(' ultra 5 ') || h.includes(' ultra 7 ') || h.includes(' ultra 9 '));
     if (next && QUALIFIERS.has(next) && !intelUltra) return null;
-    const cat = PHONE_CATS.get(k.id) || 'phone';
-    if (cat !== 'phone' && (h.includes('smart phone') || h.includes('smartphone') || h.includes('սմարթ հեռախոս') || h.includes('телефон'))) return null;
+    // A split reading manufactures the letter that follows: "Xiaomi 15T Pro" becomes
+    // "xiaomi 15 t pro", and the plain 15's key then matched with a stray "t" after it - a
+    // 15T Pro's 319,000 on the wrong phone. In the shop's own words a trailing single letter
+    // is ordinary; in a reading we invented it is the rest of a model name we just cut in half.
+    if (split && next && next.length === 1) return null;
     return k.id;
   }
   return null;
 }
 // every "<n> GB/TB" figure in a title, in GB
+// Capacities that are actually sold. Anything else read off a title or a slug is two numbers
+// that ran together, not a product.
+const REAL_CAPACITY = new Set([2, 3, 4, 6, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96, 128, 192,
+                               250, 256, 500, 512, 750, 1000, 1024, 1536, 2000, 2048, 3072,
+                               4000, 4096, 6144, 8192]);
 function capacitiesOf(text) {
   // keep unicode letters: norm() strips ԳԲ / ՏԲ before they can be read
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   // AllSell writes the MacBook Air as "16GB I 512TB". Nothing on sale here holds more than 8 TB,
   // so a terabyte figure that large is the shop meaning gigabytes.
   const withUnit = [...h.matchAll(/(\d+)\s*(tb|տբ|gb|գբ)(?:\s|$)/g)]
-    .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; });
+    .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; })
+    // A capacity nobody manufactures is the shop's url with the model number glued to the
+    // capacity: REDstore writes "Paperwhite 12(16GB)" and slugs it "paperwhite-1216gb", which
+    // was published as 1216 GB - "1.1875 TB" on the page. An Alienware read 1,625,016 GB.
+    .filter(v => REAL_CAPACITY.has(v));
   if (withUnit.length) return withUnit;
   // iBolit writes the capacity with no unit at all - "iPHONE 17 256 Lavander ESIM" - and those
   // offers landed with storage null, which makes them stand in for the base capacity of every
@@ -192,6 +246,15 @@ const TRAY = /\b[12]\s*-?\s*sim\b|\bdual\s*sim\b|\bnano\b|սիմ|sim\s*card|\+\s
 // e-?sim, because 3DPlanet writes the tray-less option "E-Sim" with a hyphen. "Nano-SIM" does
 // not match it: there is no e immediately before the -sim.
 const ESIM_ONLY = t => /(^|[^a-z])e-?sim([^a-z]|$)/i.test(t) && !TRAY.test(t);
+// Three states, not two. A shop that says nothing about the SIM build is not asserting a tray,
+// and treating it as one put prices under a button the shop never agreed to: Pixel's 559 000
+// iPhone 17 Pro Max 512 GB appeared as the "Nano-SIM" price, below the 625 000 eSIM, which is
+// backwards - the tray hardware always costs more. Returns true (eSIM-only), false (a tray the
+// shop named), or undefined (not stated).
+// A bare "sim" that is not "esim" IS the shop naming a tray - it is how iBolit distinguishes
+// .../512gb-sim-deep-blue from .../512gb-silver-esim.
+const SIM_WORD = /(^|[^a-z])sim([^a-z]|$)/i;
+const simBuild = t => ESIM_ONLY(t) ? true : (TRAY.test(t) || SIM_WORD.test(t)) ? false : undefined;
 const capOf = lbl => { const c = capacitiesOf(lbl || ''); return c.length ? c[0] : null; };
 // The JSON object that starts at the first { after an anchor. Brace counting has to skip
 // strings, or a } inside a product name ends the object early.
@@ -284,22 +347,35 @@ function magentoChildren(html, colors) {
     if (!price || price < 5000) continue;
     const col = label(color, child);
     out.push({ price, storage: capOf(label(drive, child)), ram: capOf(label(ram, child)),
-      color: (col && colorOf(col, colors)) || col || null, inStock: pr.is_in_stock !== false });
+      // A colour Magento states that none of the product's own colours will map to is not a
+      // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
+      // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
+      color: (col && colorOf(col, colors)) || null, inStock: pr.is_in_stock !== false });
   }
   return out;
 }
-// 3DPlanet renders its colour swatches from this endpoint, and is_active is 0 for a colour the
-// shop has sold out of - the page itself says nothing about which colours you can actually buy.
-async function planetColors(varId) {
+// 3DPlanet renders its buy-box options from this endpoint, one call per variation id covering
+// every dimension at once - colour, and on an iPhone, SIM build too. is_active is 0 for an
+// option the shop has sold out of; the page itself says nothing about which you can actually
+// buy. Colour's own price is a delta on the tier (almost always 0); SIM's is not a delta at
+// all - "E-Sim" repeats the tier's own price back exactly, "1 Sim kard + Esim" (the nano tray)
+// states the tray build's OWN full price - the standing rule that the tray always costs more
+// than eSIM, confirmed on 3DPlanet's own numbers rather than assumed.
+async function planetModifiers(varId) {
   let data;
-  try { data = JSON.parse(await get('https://3dplanet.am/variations/' + varId + '/modifiers')); } catch { return []; }
-  const mod = (Array.isArray(data) ? data : []).find(m =>
-    ((m.specification || {}).translations || []).some(t => /^colou?r$/i.test(t.name || '')));
-  return ((mod || {}).values || []).map(v => ({
-    name: clean(((v.value || {}).value) || ''),
-    delta: Math.round(Number(v.price || 0)),
-    active: v.is_active !== 0
-  })).filter(c => c.name);
+  try { data = JSON.parse(await get('https://3dplanet.am/variations/' + varId + '/modifiers')); } catch { return {}; }
+  const out = {};
+  for (const m of (Array.isArray(data) ? data : [])) {
+    const name = ((m.specification || {}).translations || [])[0]?.name || '';
+    const key = /^colou?r$/i.test(name) ? 'color' : /^sim$/i.test(name) ? 'sim' : null;
+    if (!key) continue;
+    out[key] = (m.values || []).map(v => ({
+      name: clean(((v.value || {}).value) || ''),
+      price: Math.round(Number(v.price || 0)),
+      active: v.is_active !== 0
+    })).filter(c => c.name);
+  }
+  return out;
 }
 // ...and the smaller one is RAM, but only when the title really lists both
 const ramOf = text => { const c = capacitiesOf(text); return c.length >= 2 ? Math.min(...c) : null; };
@@ -363,6 +439,24 @@ const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*
 
 // REDstore and 3DPlanet both publish a schema.org Product on the page, which is the price the
 // shop means rather than whatever number the markup happens to show. One reader serves both.
+// The cash price, read out of the product's own price block so a related item's price cannot
+// stand in for it. Returns 0 when the page does not state one.
+// Mobile Centre's cash price: the number after "Գին՝" inside this product's own block.
+function mcCash(block) {
+  // the listing closes the span between label and number ("<span>Գին՝ </span> 174,900դր.")
+  // while the product page runs them together. Allow either.
+  const m = block.match(/Գին՝\s*(?:<\/span>)?\s*([\d,  ]+)\s*դր/);
+  return m ? +m[1].replace(/[^0-9]/g, '') : 0;
+}
+
+function pixelCash(html) {
+  const at = html.indexOf('product-info-price');
+  if (at < 0) return 0;
+  const blk = html.slice(at, at + 500);
+  const m = blk.match(/class="cash-price[^"]*"[^>]*>[^<]*<b>\s*([\d,  ]+)/);
+  return m ? +m[1].replace(/[^0-9]/g, '') : 0;
+}
+
 const ldProduct = html => ldJson(html).flatMap(j => j['@graph'] || j).find(j => j && j['@type'] === 'Product');
 const ldOffer = p => { const o = p && p.offers; return Array.isArray(o) ? o[0] : o; };
 
@@ -372,6 +466,57 @@ if (process.argv[2] === '--selftest') {
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
+    // a laptop whose model name contains a speaker's. The shop says HP; the speaker is a JBL.
+    [null, 'HP OmniBook Flip 7 16-AU0070WM'],
+    // REDstore's url for the Tab S8+ says "tab-s8"; only its title says plus. crawlLd reads
+    // both, and this is the pair that makes the difference visible.
+    ['samsung-galaxy-tab-s8', 'samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
+    ['samsung-galaxy-tab-s8-plus', 'Samsung Galaxy Tab S8+ 8GB/128GB WiFi X800 Graphite samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
+    // splitting "15T" to recover a compressed slug must not let the plain 15 take a 15T Pro.
+    // The Pro is carried now, so the phone that proves the rule is the Ultra, which is not.
+    ['xiaomi-15t-pro', 'Xiaomi 15T Pro'],
+    [null, 'Xiaomi 15 Ultra'],
+    ['xiaomi-15t', 'Xiaomi 15T'],
+    ['xiaomi-15', 'Xiaomi 15'],
+    ['jbl-flip-7', 'JBL Flip 7 Squad'],
+    ['jbl-flip-7', 'Portable speaker JBL Flip 7 Black'],
+    // shops drop the brand all the time, and that must still match
+    ['apple-macbook-neo-13', 'MacBook Neo 13" A18 Pro (6C CPU/5C GPU), 8 GB, 256 GB, Silver'],
+    // the plain Pixel 10 sits between two products already in the catalogue, and neither may
+    // absorb its listings - nor it theirs
+    ['google-pixel-10', 'Google Pixel 10'],
+    ['google-pixel-10a', 'Google Pixel 10a'],
+    ['google-pixel-10-pro', 'Google Pixel 10 Pro'],
+    ['jbl-go-4', 'JBL Go 4'],
+    ['dell-inspiron-16', 'Dell PC Notebook Inspiron 16 / Core 5 120U / 8GB RAM / 512GB SSD / 16 inch WUXGA Touch / WIN11 (Ice Blue)'],
+    // laptops VLV stocks, matched off the shop's own title
+    ['lenovo-loq-15', 'LENOVO LOQ 15IRX9  i5-13450HX 16GB 1TB RTX4050 15.6" (83DV0069RK) Notebooks'],
+    ['lenovo-loq-15', 'LENOVO LOQ 15IRX9 i5-13450HX 16GB 1TB RTX3050 15.6" (83DV01CJRK) Notebooks'],
+    // a different generation, and not in the catalogue - it must not be filed as the IRX9
+    [null, 'LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6" 83JE0189RK Notebooks'],
+    ['hp-victus-15', 'HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA Notebooks'],
+    ['acer-aspire-15', 'ACER ASPIRE AL15-72P-57CM i5-13420H 16/512 15.6" NX.D5HEM.002 Notebooks'],
+    // REDstore calls every Apple Watch an iWatch
+    ['apple-watch-se-3', 'https://redstore.am/en/product/iwatch-se3-40mm-midnight-band'],
+    ['apple-watch-series-11', 'https://redstore.am/en/product/iwatch-series-11-42mm-jet-black-band'],
+    ['apple-watch-ultra-3', 'https://redstore.am/en/product/iwatch-ultra-3-49mm-black-ti-black-ocean-band'],
+    // ...but an iWatch we do not carry must stay unmatched, not fall onto the nearest one
+    [null, 'https://redstore.am/en/product/iwatch-series-12-42mm-black-band'],
+    [null, 'https://redstore.am/en/product/iwatch-ultra-4-49mm-black-ti-black-band'],
+    // a shop that names an iPad by its year, with the capacity in between
+    ['apple-ipad-pro-11-m4', 'https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2024-space-black'],
+    ['apple-ipad-air-11-m4', 'https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-blue'],
+    ['apple-ipad-air-11-m3', 'https://redstore.am/en/product/ipad-air-11-256gb-wifi-2025-blue'],
+    ['apple-ipad-pro-13-m5', 'https://redstore.am/en/product/ipad-pro-13-512gb-wifi-2025-space-black'],
+    // and the chip-named readings every other shop uses must keep working
+    ['apple-ipad-pro-11-m4', 'https://ibolit.mobi/product/ipad-pro-11-m4-256gb-wi-fi-standard-glass-silver/'],
+    ['apple-ipad-air-11-m3', 'https://www.pixel.am/am/product/ipad-air-11-m3'],
+    // stripping the capacity must not turn one phone into another
+    ['samsung-galaxy-a57', 'Samsung Galaxy A57 5G SM-A576B 8GB 128GB Awesome Navy'],
+    [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
+    // a phone sold with earbuds in the box is neither product's price
+    [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
+    ['xiaomi-buds-6', 'Xiaomi Buds 6'],
     [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
     [null, 'https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/'],
     ['xiaomi-17-pro-max', 'https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black'],
@@ -433,6 +578,81 @@ if (process.argv[2] === '--selftest') {
     const got = ESIM_ONLY(txt);
     if (got !== want) { bad++; console.log(`FAIL  eSIM-only=${got} want=${want}  <- ${txt}`); }
   }
+  // The tray build always costs more than the eSIM build, so a pair that comes back the other
+  // way round is a mislabel at the shop. The prices must come out swapped, not published as-is.
+  const flipCases = [
+    // [esimPrice, trayPrice, does the pair keep its eSIM label?]
+    [569000, 525000, false],   // tray cheaper: unrankable, label dropped
+    [625000, 625000, false],   // equal: carries no signal either, label dropped
+    [525000, 569000, true],    // tray dearer: the normal case, left alone
+  ];
+  for (const [e0, t0v, keep] of flipCases) {
+    const esim = { shop: 's', storage: 256, price: e0, url: 'e', esim: true };
+    const tray = { shop: 's', storage: 256, price: t0v, url: 't', esim: false };
+    dropUnrankableSim([esim, tray]);
+    if (!!esim.esim !== keep || esim.price !== e0 || tray.price !== t0v) {
+      bad++; console.log(`FAIL  sim ${e0}/${t0v} -> esim=${!!esim.esim} want ${keep} (prices must not move)`);
+    }
+  }
+
+  // a lone price far under what the other shops agree on is a misread, not a deal
+  const medCases = [[[100, 100, 100], 100], [[90, 100, 110], 100], [[40, 100, 100, 100], 100]];
+  for (const [arr, want] of medCases) {
+    const got = medianOf(arr);
+    if (got !== want) { bad++; console.log(`FAIL  median ${got} want ${want}`); }
+  }
+
+  // Pixel's own markup: the higher number is the instalment price, the lower one is the price
+  // Mobile Centre prints the instalment total in data-price and the real price after "Գին՝"
+  const mcCases = [
+    ['<a data-price="549900"> Գինս 519,900դր.', 0],
+    ['<a data-price="549900"> Գին՝ 519,900դր.', 519900],
+    ['<span style="x">Գին՝ </span> 174,900դր.', 174900],
+    ['<a data-price="549900">no cash price here</a>', 0],
+  ];
+  for (const [html, want] of mcCases) {
+    const got = mcCash(html);
+    if (got !== want) { bad++; console.log(`FAIL  mcCash=${got} want=${want}`); }
+  }
+
+  const pixCases = [
+    ['<div class="product-info-price"> <span class="mr5">Ապառիկ:</span> '
+     + '<span class="actual-price">129,000 Դրամ</span> '
+     + '<div class="cash-price pt10">Գինը: <b>119,000 Դրամ</b></div> </div>', 119000],
+    ['<div class="product-info-price"><span class="actual-price">45,900</span>'
+     + '<div class="cash-price"><b>42,900</b></div></div>', 42900],
+    ['<div class="product-info-price"><span class="actual-price">99,000</span></div>', 0],
+    ['no price block here', 0],
+  ];
+  for (const [html, want] of pixCases) {
+    const got = pixelCash(html);
+    if (got !== want) { bad++; console.log(`FAIL  pixelCash=${got} want=${want}`); }
+  }
+
+  // AllSell's Pixel 10 page states its colour as "Yellow" - a real colour word, but not one
+  // of the four the product actually ships in (Obsidian, Frost, Indigo, Lemongrass). Publishing
+  // it made a fifth swatch appear that matched nothing real. An unmapped colour must come back
+  // null, so enrich()'s own fallback chain - colorFromImage, then the url's colour words - gets
+  // a chance to run; that chain never fires while the adapter's own guess is still truthy.
+  {
+    const fakeCfg = { attributes: { 93: { id: 93, code: 'color', label: 'Color', options: [{ id: 7, label: 'Yellow' }] } },
+      index: { '501': { 93: 7 } }, optionPrices: { '501': { finalPrice: { amount: 329900 } } } };
+    const html = '<script>"jsonConfig":' + JSON.stringify(fakeCfg) + '</script>';
+    const kids = magentoChildren(html, ['Obsidian', 'Frost', 'Indigo', 'Lemongrass']);
+    if (kids[0]?.color !== null) { bad++; console.log(`FAIL  magentoChildren color=${kids[0]?.color} want=null (unmapped "Yellow")`); }
+  }
+
+  const buildCases = [
+    [true, 'iPhone 17 Pro Max 512GB Silver Esim'], [true, 'E-Sim'],
+    [false, '1 Սիմ քարտ + Esim'], [false, 'iphone-17-pro-max-512gb-sim-deep-blue'],
+    [false, 'Nano-SIM'], [false, 'Dual SIM'],
+    [undefined, 'iPhone 17 Pro Max 512GB'], [undefined, 'www.pixel.am/am/product/iphone-17-pro-max'],
+  ];
+  for (const [want, txt] of buildCases) {
+    const got = simBuild(txt);
+    if (got !== want) { bad++; console.log(`FAIL  simBuild=${got} want=${want}  <- ${txt}`); }
+  }
+
   // a capacity with no unit at all, and the model numbers that must not be read as one
   const capCases = [[256, 'iPHONE 17 256 Lavander ESIM'], [512, 'Galaxy S25 512 Black'],
     [null, 'Samsung Galaxy A56 5G'], [null, 'Redmi Note 13 Pro'], [null, 'Apple Watch 44']];
@@ -448,7 +668,11 @@ if (process.argv[2] === '--selftest') {
     ['MacBook Air 13-inch M5 16GB/512GB', 512],
     ['Xbox Series S 512 GB', 512],
     ['Macbook Air 15" M5 16GB I 512TB MDVH4 Midnight', 512],   // shop typo: 512 TB does not exist
-    ['Mac Studio M4 Max 8TB', 8192]];
+    ['Mac Studio M4 Max 8TB', 8192],
+    // REDstore slugs "Paperwhite 12(16GB)" as "paperwhite-1216gb"; 1216 GB was published as
+    // "1.1875 TB". A model number glued to a capacity is not a capacity.
+    ['amazon-kindle-paperwhite-1216gb', null],
+    ['dell-alienware-16-aurora-ac1625016gb-rtx-5060', null]];
   const ramCases = [['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 12], ['XIAOMI POCO X7 Pro 5G 8GB 256GB (Black)', 8],
     ['iPhone 17 Pro, 256 ԳԲ, Silver', null]];
   for (const [txt, want] of ramCases) {
@@ -498,7 +722,7 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + capCases.length} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -507,16 +731,20 @@ if (process.argv[2] === '--selftest') {
 async function crawlLd(urls, cap = 6) {
   const out = [], per = {};
   for (const u of urls) {
-    const id = matchPhone(u);
-    if (!id) continue;
-    per[id] = (per[id] || 0) + 1;
-    if (per[id] > cap) continue;                 // cap requests per model
+    const urlId = matchPhone(u);
+    if (!urlId) continue;
+    per[urlId] = (per[urlId] || 0) + 1;
+    if (per[urlId] > cap) continue;              // cap requests per model
     const html = await get(u); await sleep(DELAY_MS);
     if (!html) continue;
     const p = ldProduct(html), o = ldOffer(p);
     if (!o) continue;
     const price = Math.round(Number(o.price));
     const title = clean(p.name || '');
+    // The url only decides which pages are worth fetching; what the shop CALLS the thing is in
+    // the title, and every other adapter reads both. REDstore slugs the Tab S8 and the Tab S8+
+    // alike as "tab-s8", and the plus tablet's price landed on the plain one.
+    const id = matchPhone(title + ' ' + u) || urlId;
     if (!price || price < 5000 || !title || !safeUrl(u)) continue;
     const img = Array.isArray(p.image) ? p.image[0] : p.image;
     out.push({
@@ -607,7 +835,13 @@ const SHOPS = {
           if (!id) continue;
           // the listing serves 250x250; the same path also serves 500x500 (and 1500x1500)
           const thumb = (b.match(/src="(https:\/\/vega\.am\/image\/cache\/catalog\/[^"]+?\.jpg)"/) || [])[1];
-          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url, inStock: true,
+          // Vega marks every tile: instock is "Առկա է", and outofstock covers "Առկա չէ",
+          // "Պատվերով" (to order) and "Ճշտել առկայությունը" (ask us) - none of which is a
+          // phone you can walk out with. This adapter used to assert inStock: true for all of
+          // them, and 60 sold-out Vega listings were being published as buyable offers.
+          const stock = (b.match(/class="stock-status (instock|outofstock)"/) || [])[1];
+          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url,
+            inStock: stock ? stock === 'instock' : undefined,
             image: thumb ? thumb.replace(/-250x250\.jpg$/, '-500x500.jpg') : null });
         }
         if (blocks.length < 5) break;
@@ -635,9 +869,12 @@ const SHOPS = {
         for (const b of blocks) {
           const url = (b.match(/href="(https:\/\/mobilecentre\.am\/product\/[^"]+)"/) || [])[1];
           const title = clean((b.match(/<h3[^>]*>([\s\S]{2,120}?)<\/h3>/) || [])[1] || '');
-          // the credit-calculator link carries the price as a clean integer
-          const price = Number((b.match(/data-price="(\d+)"/) || [])[1])
-            || Number(((b.match(/Գին՝\s*<\/span>\s*([\d,]+)\s*դր/) || [])[1] || '').replace(/,/g, ''));
+          // Two numbers again. data-price belongs to the credit calculator and is the
+          // instalment total - the listing labels it "Ապառիկ գին". The price a buyer pays is
+          // the one after "Գին՝", and it is lower: 519 900 against 549 900 on the iPhone 16 Pro
+          // Max. The old fallback expected a </span> that is not in the markup, so it never
+          // matched and the instalment figure always won.
+          const price = mcCash(b) || Number((b.match(/data-price="(\d+)"/) || [])[1]);
           if (!url || !title || !price || !safeUrl(url)) continue;
           const id = matchPhone(title + ' ' + url);
           if (!id) continue;
@@ -717,7 +954,13 @@ const SHOPS = {
         const cols = (phoneById[id] || {}).colors;
         const v = pixelVariants(h, cols);
         const color = v.color || (shot ? colorFromImage(shot, cols) : null);
-        out.push({ id, price: Math.min(...prices),
+        // Pixel prints TWO numbers and the class names are backwards. .actual-price is labelled
+        // "Ապառիկ" - instalment - and is the higher one; the cash price a buyer actually pays is
+        // in .cash-price. PRODUCT_VARIANTS carries the instalment price too, so taking its
+        // minimum published an inflated figure for every Pixel offer: the Galaxy A37 read
+        // 129 000 against a shelf price of 119 000.
+        const cash = pixelCash(h);
+        out.push({ id, price: cash || Math.min(...prices),
           storage: storageOf(title) ?? storageOf(u) ?? v.storage, title, url: safe,
           image: shot && safeUrl(shot) ? shot : null, color, inStock: true });
       }
@@ -922,10 +1165,34 @@ const SHOPS = {
           continue;
         }
         for (const t of tiers) {
-          const cols = await planetColors(t.varId); await sleep(DELAY_MS);
-          if (!cols.length) { out.push({ id, price: t.price, title, url: u, image: img, storage: t.storage, inStock: true }); continue; }
-          for (const c of cols) out.push({ id, price: t.price + c.delta, title, url: u, image: img,
-            storage: t.storage, color: colorOf(c.name, (phoneById[id] || {}).colors) || c.name, inStock: c.active });
+          const mod = await planetModifiers(t.varId); await sleep(DELAY_MS);
+          const cols = mod.color || [];
+          const sims = mod.sim || [];
+          // Every real combination is SIM build x colour. A dimension this product does not
+          // offer contributes exactly one pass-through option, so the loop still runs once per
+          // colour on an Android phone and once per SIM build on a lone-colour iPhone.
+          const simOpts = sims.length ? sims : [{ name: null, price: t.price, active: true }];
+          const colOpts = cols.length ? cols : [{ name: null, price: 0, active: true }];
+          for (const s of simOpts) for (const c of colOpts) {
+            if (!s.active || !c.active) continue;
+            out.push({
+              id, url: u, image: img, storage: t.storage,
+              // SIM's own value already IS the final price for that build; a colour delta rides
+              // on top of it exactly as it would on the plain tier price.
+              price: (sims.length ? s.price : t.price) + c.price,
+              // same rule as magentoChildren: a colour name of 3DPlanet's own that maps to
+              // none of the product's colours is left unstated rather than invented
+              color: c.name ? (colorOf(c.name, (phoneById[id] || {}).colors) || null) : null,
+              // The SIM build's own label rides in the title too, the way every other shop's
+              // does - ibolit's url says "-1sim", redstore's title says "eSim". A later pass
+              // re-derives esim from title+url for every shop and would DELETE a value it
+              // cannot itself confirm; without the label in the title that pass saw a plain
+              // "Apple iPhone 18 Pro" and erased the very field this line sets.
+              title: sims.length ? `${title} (${s.name})` : title,
+              esim: sims.length ? simBuild(s.name) : undefined,
+              inStock: true
+            });
+          }
         }
       }
       return out;
@@ -1037,11 +1304,16 @@ const SHOPS = {
 };
 
 /* ---------- run ---------- */
-const only = process.argv[2];
-const names = Object.keys(SHOPS).filter(k => only ? k === only : !SHOPS[k].disabled);
+// One shop or several: a whole run takes hours and the shops that matter for one question are
+// usually two or three of them.
+const picked = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const names = Object.keys(SHOPS).filter(k => picked.length ? picked.includes(k) : !SHOPS[k].disabled);
+const unknown = picked.filter(k => !SHOPS[k]);
+if (unknown.length) { console.error('no such shop: ' + unknown.join(', ')); process.exit(1); }
 
 // Running one shop must not throw away the others. Start from what is already on disk and
 // replace only the shops this run actually covers.
+const TODAY = new Date().toISOString().slice(0, 10);
 const PRICES_FILE = 'data/prices.json';
 let prev = { shops: {}, offers: {} };
 if (fs.existsSync(PRICES_FILE)) {
@@ -1050,13 +1322,23 @@ if (fs.existsSync(PRICES_FILE)) {
 for (const [k, s] of Object.entries(SHOPS)) if (s.disabled && !names.includes(k)) console.log(`[${s.name}] skipped — ${s.disabled}`);
 const offers = {};
 for (const [id, list] of Object.entries(prev.offers || {})) {
-  const keep = list.filter(o => !names.includes(o.shop));   // drop the shops we are re-fetching
+  // Hand rows are rebuilt from data/listings.csv further down, so the previous run's copies are
+  // dropped here. Inheriting them made the csv write-only: a row whose url was corrected still
+  // lost to the stale copy sitting in the base, because dedupe keys on shop+storage+build and
+  // the old one got there first. 23 dead links and 38 category urls survived several edits that
+  // way.
+  const keep = list.filter(o => !names.includes(o.shop) && !o.seeded);
+  // An offer we are not re-fetching keeps the date it already had. One that predates the field
+  // gets the date of the file it came out of, which is when it was last confirmed present -
+  // borrowing today's would be the same false claim the field exists to remove.
+  for (const o of keep) if (!o.seen) o.seen = (prev.generated || '').slice(0, 10) || TODAY;
   if (keep.length) offers[id] = keep;
 }
 const report = [];
 
 for (const key of names) {
   const s = SHOPS[key];
+  CURSHOP = key;
   process.stdout.write(`[${s.name}] `);
   let got = [], threw = false;
   try { got = await s.run(); } catch (e) { threw = true; console.warn('adapter failed:', e.message); }
@@ -1070,18 +1352,26 @@ for (const key of names) {
   }
   // keep the cheapest offer per (phone, storage)
   const best = new Map();
-  let dropped = 0;
+  // Two different reasons, counted apart. A sold-out listing is perfectly plausible; calling it
+  // implausible in the log made a third of AllSell's catalogue look like a parsing fault.
+  let soldOut = 0, tooCheap = 0;
   for (const raw of got) {
     const o = enrich(raw);
     // A price on a sold-out page is not an offer anyone can take, so it has no business on a
     // price-comparison site. Only an explicit false counts - adapters that cannot read stock
     // leave it undefined, and dropping those would empty the catalogue.
-    if (o.inStock === false) { dropped++; continue; }
+    if (o.inStock === false) { soldOut++; continue; }
     // Catches accessories that do not use any of the words above: nothing legitimately sells
     // at under a third of the model's own reference price.
     const ref = (phoneById[o.id] || {}).priceAmd;
-    if (ref && o.price < ref * 0.3) { dropped++; continue; }
-    const k = [o.id, o.storage ?? '?', o.color ?? '?'].join('|');
+    if (ref && o.price < ref * 0.3) { tooCheap++; continue; }
+    // A Nano-SIM build is a genuinely more expensive product, not a worse price on the same
+    // one - and it was losing every time. The key that decides "same offer, keep the cheaper"
+    // did not include the SIM build, so a shop's own Nano-SIM row was always more expensive
+    // than its own eSIM row for the same phone/storage/colour and got silently thrown away
+    // here, before esim/tray labelling or the pairing logic below ever saw it. Three states,
+    // not two, in the key as much as in the field: true, false and unstated must each survive.
+    const k = [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     if (!best.has(k) || o.price < best.get(k).price) best.set(k, o);
   }
   // An adapter returning nothing is not the same as a shop having nothing in stock. A WAF page,
@@ -1096,10 +1386,13 @@ for (const key of names) {
     report.push({ shop: key, offers: had.length, models: new Set(had.map(o => o.id)).size, stale: true });
     continue;
   }
-  for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key });
+  // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
+// that failed keeps whatever date it already had, which is the point of having one.
+for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, seen: TODAY });
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
-  console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (dropped ? ` (${dropped} implausible dropped)` : '') + collapse);
+  const why = [soldOut && `${soldOut} sold out`, tooCheap && `${tooCheap} too cheap to be the product`].filter(Boolean);
+  console.log(`${best.size} offers across ${models.size} of ${phones.length} models` + (why.length ? ` (${why.join(', ')})` : '') + collapse);
   report.push({ shop: key, offers: best.size, models: models.size });
 }
 
@@ -1108,24 +1401,53 @@ for (const key of names) {
 // refuses non-browser clients outright. Rows recorded by hand in data/listings.csv fill exactly
 // those gaps. They are a floor, never an override: a row is added only when the live scrape found
 // nothing for that shop, product and capacity, so a real price always wins.
-// (yerevanmobile rows are deliberately absent - its robots.txt names this crawler and says no.)
+// robots.txt governs what this crawler may FETCH, not what a price is: rows for the shops that
+// disallow us (yerevanmobile, list.am, notebookcentre) are recorded by hand and carried here.
 let seeded = 0;
 try {
-  const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1);
-  for (const line of rows) {
-    const [shop, title, cap, color, url, price] = line.split(',');
-    const id = matchPhone(title);
-    if (!id || !price) continue;
-    const storage = cap ? +cap : null;
-    // eSIM is part of the identity, not a detail: REDstore sells the same capacity twice, once
-    // dual-eSIM and once with a tray, 80,000 apart. Keying dedupe on shop+storage alone threw
-    // the second one away and left the product page with nothing to choose between.
-    const esim = ESIM_ONLY(`${title} ${url}`) || undefined;
-    const list = offers[id] ||= [];
-    if (list.some(o => o.shop === shop && (o.storage ?? null) === storage && !!o.esim === !!esim)) continue;
-    list.push({ id, shop, price: +price, storage, color: color || undefined, url, inStock: true, seeded: true, esim });
+  const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1)
+    .map(line => { const [shop, title, cap, color, url, price] = line.split(','); return { shop, title, cap, color, url, price }; })
+    .map(r => ({ ...r, id: matchPhone(r.title), storage: r.cap ? +r.cap : null,
+                 esim: simBuild(`${r.title} ${r.url}`) }))
+    .filter(r => r.id && r.price);
+
+  // Pass 1 - TAG, not add. A crawler can only read the axes the page exposes, and 3DPlanet's
+  // page shows no SIM option at all: its four prices are the eSIM build, which nothing on the
+  // page says. A hand row carrying that shop's own price for a row we already have is telling us
+  // which build it is, so it lends the row its title and the eSIM post-pass below re-reads it.
+  let tagged = 0;
+  for (const r of rows) {
+    // url as well as price: a hand row names one page, and matching on shop+storage+price alone
+    // tagged whichever row happened to share that price - two redstore rows at the same price got
+    // opposite flags, the dedupe below then kept whichever came first, and the build alternated.
+    const hit = (offers[r.id] || []).find(o => o.shop === r.shop && o.url === r.url
+      && (o.storage ?? null) === r.storage && o.price === +r.price);
+    if (hit && !!hit.esim !== !!r.esim) { hit.title = r.title; hit.esim = r.esim; tagged++; }
+  }
+
+  // Pass 2 - ADD the builds still missing. Split from pass 1 so a file that happens to list the
+  // tray row before the eSIM row cannot change the outcome.
+  for (const r of rows) {
+    const list = offers[r.id] ||= [];
+    // Colour belongs in this key as much as SIM build does: AirPods Max has no storage variant
+    // at all, so every one of its colours shared the same (shop, storage, esim) key, and only
+    // the first hand row ever written for a given shop could exist - iBolit's Red, Silver and
+    // Sky Blue were silently dropped in favour of whichever colour got crawled or seeded first.
+    // Colour alone still was not enough: iBolit's "Red" and "Silver" are not among the five
+    // colours this product is actually catalogued in, so colorOf() left both null - the same
+    // null, colliding with each other the moment the second one was checked against the first,
+    // which this very loop had just pushed. Each hand row names its own real product page, so
+    // the url is what tells two same-null-colour rows apart when colour itself cannot.
+    if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage
+                     && !!o.esim === !!r.esim && (o.color || null) === (r.color || null)
+                     && (o.url || null) === (r.url || null))) continue;
+    // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
+    // and without it a seeded row is re-judged on its url alone.
+    list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
+                color: r.color || undefined, url: r.url, seeded: true, esim: r.esim });
     seeded++;
   }
+  if (tagged) console.log(`${tagged} crawled offer(s) had their SIM build named by a hand row`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('listings.csv:', e.message); }
 if (seeded) console.log(`\n${seeded} hand-recorded listing(s) filled gaps the crawl could not reach`);
 
@@ -1173,7 +1495,76 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // "1 Սիմ քարտ + Esim" - the second is the phone WITH a nano tray, and matching on esim alone
 // would file it as the tray-less build and put its price under the wrong button.
 for (const list of Object.values(offers)) {
-  for (const o of list) if (ESIM_ONLY(`${o.title || ''} ${o.url || ''}`)) o.esim = true; else delete o.esim;
+  for (const o of list) {
+    const b = simBuild(`${o.title || ''} ${o.url || ''}`);
+    if (b === undefined) delete o.esim; else o.esim = b;
+  }
+}
+
+// The physical nano tray ALWAYS costs more than the eSIM-only build - a shop never charges less
+// for the extra hardware. A pair that comes back the other way round is therefore mislabelled,
+// and the one thing we must not do is guess which half is wrong: an earlier version swapped the
+// two prices, which flipped the urls, which made the next run re-read the labels off the swapped
+// urls and swap them straight back - the price under each button alternated nightly.
+// So we drop the claim instead. Both rows keep their own price and their own page; they simply
+// stop asserting which build they are, the SIM picker does not appear, and nobody is shown a
+// price under the wrong button. Deleting is idempotent, which swapping was not.
+// One shop's price against every other shop's, which is a far better test of "is this real"
+// than the static reference price: that one passes anything above 30% of a spec-sheet figure,
+// and iBolit's iPhone 17 Pro Max 512 GB came back at 279 000 against a 668 900 median and sailed
+// through - then led "Where you save most" on the front page with a 390 000 saving that did not
+// exist. The shop's own page reads 625 000, so the crawl misread it. A price under half what
+// three or more shops agree the same capacity costs is a scrape error, not a bargain.
+let outliers = 0;
+for (const [id, list] of Object.entries(offers)) {
+  const byCap = new Map();
+  for (const o of list) {
+    const k = String(o.storage ?? 'base');
+    (byCap.get(k) || byCap.set(k, []).get(k)).push(o);
+  }
+  for (const group of byCap.values()) {
+    if (group.length < 3) continue;                 // too few to call anything a consensus
+    const floor = medianOf(group.map(o => o.price)) * 0.5;
+    for (const o of group) {
+      if (o.price >= floor) continue;
+      offers[id] = offers[id].filter(v => v !== o);
+      outliers++;
+      console.warn(`    ! ${id} ${o.shop} ${o.price} dropped: under half the ${Math.round(floor * 2)} median for this capacity`);
+    }
+  }
+}
+if (outliers) console.log(`${outliers} price(s) dropped as scrape errors`);
+
+function medianOf(a) { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; }
+
+let simDropped = 0;
+for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
+if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tray was priced at or below the eSIM)`);
+
+// Declared as a function so it hoists above the --selftest block, which exercises this exact
+// code rather than a copy of it.
+function dropUnrankableSim(list) {
+  // Group ALL rows per key, not one representative each: prices.json is re-read as the base of
+  // the next run, so a rule that depends on which row it happened to look at first changes its
+  // mind every night. Comparing the cheapest of each side, and clearing every eSIM row in the
+  // group, is order-independent and settles after one pass.
+  const groups = new Map();
+  for (const o of list) {
+    const k = `${o.shop}|${o.storage ?? ''}|${(o.color || '').toLowerCase()}`;
+    const g = groups.get(k) || { esim: [], tray: [] };
+    if (o.esim === true) g.esim.push(o); else if (o.esim === false) g.tray.push(o);
+    groups.set(k, g);
+  }
+  let n = 0;
+  for (const { esim, tray } of groups.values()) {
+    if (!esim.length || !tray.length) continue;
+    const lowE = Math.min(...esim.map(o => o.price));
+    const lowT = Math.min(...tray.map(o => o.price));
+    if (lowT > lowE) continue;                  // the tray costs more: nothing to question
+    for (const o of esim) delete o.esim;
+    n++;
+  }
+  return n;
 }
 
 // An offer that arrived without a capacity but whose title states one. iBolit writes
@@ -1204,13 +1595,25 @@ let deduped = 0;
 for (const [id, list] of Object.entries(offers)) {
   const seen = new Set();
   offers[id] = list.filter(o => {
-    const k = [o.shop, o.url, o.price, o.storage ?? ''].join('|');
+    // the SIM build belongs in the key: without it two rows for one page that differ only by
+    // build collapse into whichever the loop reached first, and since this file is re-read as the
+    // next run's base, the survivor alternated from night to night.
+    const k = [o.shop, o.url, o.price, o.storage ?? '', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
 }
 if (deduped) console.log(`${deduped} duplicate offer row(s) collapsed`);
 
+// What the shops are selling that this catalogue does not list. Only the shops that ran are
+// rewritten, so a single-shop run does not erase the others' readings.
+const MISSF = 'data/unmatched.json';
+const missPrev = fs.existsSync(MISSF) ? JSON.parse(fs.readFileSync(MISSF, 'utf8')) : { shops: {} };
+for (const [shop, m] of MISSED) missPrev.shops[shop] = [...m.values()].sort();
+missPrev.generated = new Date().toISOString();
 fs.mkdirSync('data', { recursive: true });
+fs.writeFileSync(MISSF, JSON.stringify(missPrev, null, 1));
+console.log(`${[...MISSED.values()].reduce((n, m) => n + m.size, 0)} title(s) on the shelves that the catalogue has no entry for -> ${MISSF}`);
+
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),
   // Shops this CRAWLER will not read. Each names ClaudeBot with Disallow: / , and fetching them

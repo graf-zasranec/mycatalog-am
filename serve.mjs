@@ -7,13 +7,17 @@ import { fileURLToPath } from 'node:url';
 // any path containing a space, which is most of them on Windows.
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 const TYPES = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json',
-  '.jpg':'image/jpeg', '.png':'image/png', '.webp':'image/webp', '.txt':'text/plain', '.svg':'image/svg+xml' };
+  '.jpg':'image/jpeg', '.png':'image/png', '.webp':'image/webp', '.txt':'text/plain', '.svg':'image/svg+xml',
+  '.xml':'application/xml' };
 http.createServer((req, res) => {
   // a bare % makes decodeURIComponent throw, the handler rejects and the request never gets a
   // reply - the browser just hangs. Answer 400 instead.
   let rel;
+  // Pages serves dir/ as dir/index.html, and the share pages under p/<id>/ are only reachable
+  // that way. A preview server that does not do the same hides a broken link until it is live.
   try { rel = decodeURIComponent(req.url.split('?')[0]).replace(/^\/+/, '') || 'index.html'; }
   catch { res.writeHead(400); return res.end('bad url'); }
+  if (rel === '' || rel.endsWith('/')) rel += 'index.html';
   const file = path.resolve(ROOT, rel);
   // ROOT + separator, or a sibling folder named MyCatalogSomething would pass the prefix test
   if (file !== ROOT && !file.startsWith(ROOT + path.sep)) { res.writeHead(403).end('no'); return; }

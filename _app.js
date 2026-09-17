@@ -16,6 +16,11 @@ const backLink = (href, label) =>
 // broken image reports, so every check that looks for one would flag it.
 const NOPHOTO = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxNCIgeT0iMTgiIHdpZHRoPSIzNiIgaGVpZ2h0PSIyOCIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==';
 const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
+// Every place that draws the photo small - cards, the savings strip, compare, the tray, the
+// suggestion rows. The two that fill the screen with it (the cover carousel and the product
+// page itself) keep IMG. Falls back to the full size when no thumbnail was made, which is what
+// happens for a shot already at or under 600 px.
+const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(id);
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
@@ -28,15 +33,22 @@ const X = {
   hy: {
     tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
     any: 'Բոլորը', min: 'նվազ.', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
-    bands: ['6.3″-ից փոքր', '6.3–6.7″', '6.7″-ից մեծ'],
+    dS: 'օ', hS: 'ժ', mS: 'ր',
+    share: 'Կիսվել', shared: 'Պատճենվեց',
+    unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
+    scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
+    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
+    cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
+    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
+    waters: { splash: 'Ցանկոտումից պաշտպանված', dip: 'Ջրի մեջ ընկղման դիմացկուն' },
     heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և ընտրի՛ր', heroB: 'քո հեռախոսը',
     heroSub: 'Ամեն խանութ իր գինն է տալիս։ Մենք դրանք հավաքում ենք մեկ տեղում՝ որպեսզի գտնես հենց քեզ պետքը և չվճարես ավելին, քան պետք է։',
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
-    goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հայաստանում չի վաճառվում',
+    goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
     variantUnknown: 'տարբերակը նշված չէ', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
@@ -44,15 +56,22 @@ const X = {
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
     any: 'Все', min: 'от', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
-    bands: ['до 6.3″', '6.3–6.7″', 'больше 6.7″'],
+    dS: 'д', hS: 'ч', mS: 'м',
+    share: 'Поделиться', shared: 'Скопировано',
+    unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
+    scrLo: 'до {x}″', scrHi: 'от {x}″',
+    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
+    cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
+    ancF: 'Шумоподавление', waterF: 'Влагозащита',
+    waters: { splash: 'Защита от брызг', dip: 'Выдерживает погружение' },
     heroTag: 'Новинка', heroA: 'Сравни и выбери', heroB: 'свой смартфон',
     heroSub: 'Каждый магазин называет свою цену. Мы собираем их в одном месте — чтобы вы нашли именно то, что нужно, и не переплатили.',
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
-    goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'В Армении не продаётся',
+    goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
     variantUnknown: 'версия не указана', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
@@ -60,15 +79,22 @@ const X = {
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
     any: 'All', min: 'from', newBadge: 'New', view: 'View', allFilters: 'All filters',
-    bands: ['under 6.3″', '6.3–6.7″', 'over 6.7″'],
+    dS: 'd', hS: 'h', mS: 'm',
+    share: 'Share', shared: 'Link copied',
+    unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
+    scrLo: 'under {x}″', scrHi: '{x}″ and up',
+    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
+    cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
+    ancF: 'Noise cancelling', waterF: 'Water resistance',
+    waters: { splash: 'Splash resistant', dip: 'Survives a dunk' },
     heroTag: 'Just launched', heroA: 'Compare and pick', heroB: 'your next phone',
     heroSub: 'Every shop quotes its own price. We put them side by side, so you find the one you actually need and never pay more than you have to.',
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
-    goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not sold in Armenia',
+    goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
     variantUnknown: 'variant not stated', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
@@ -77,27 +103,32 @@ const X = {
 
 /* ================= state ================= */
 const LS = 'mycatalog.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, g5: false, nfc: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], g5: false, nfc: false, anc: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
 // exists, or an array that came back as a string would all render as a broken page.
-for (const k of ['brands', 'cmp']) if (!Array.isArray(st[k])) st[k] = [];
+for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops']) if (!Array.isArray(st[k])) st[k] = [];
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';
+if (typeof st.fopen !== 'boolean') st.fopen = false;
 // The numeric filters are the same kind of hazard: st.ram = "abc" passes every guard above,
 // matches() then compares a number against a string and the catalogue renders empty with no
 // visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
 // every product that has no display at all.
-for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'pmin', 'pmax']) {
+for (const k of ['ram', 'stor', 'batt', 'hz', 'cam', 'life', 'scrmin', 'pmin', 'pmax']) {
   const v = Number(st[k]);
   st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
 }
 if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
 st.page = Number.isFinite(+st.page) && +st.page >= 1 ? Math.floor(+st.page) : 1;
-st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lt63', 'mid', 'gt67'].includes(v)) : [];
+// The screen bands are cut from whatever is in the category, so their keys are positions
+// ('lo' is not 6.3" on a page of laptops), and a band saved under the old fixed phone scale
+// would silently select the wrong third.
+st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lo', 'mid', 'hi'].includes(v)) : [];
+st.waters = Array.isArray(st.waters) ? st.waters.filter(v => ['splash', 'dip'].includes(v)) : [];
 const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
 
 // The price filter compares against each phone's CHEAPEST offer, so the slider bounds have to be
@@ -161,6 +192,7 @@ const isNew = p => {
 };
 // A variant is "how much storage" for a phone or tablet and "which case size" for a watch.
 // Both ride in variant.storage; the item's variantUnit decides how it is printed.
+const storageLabel = p => p.variantUnit === 'mm' ? 'f.case_size' : p.variantUnit === 'vram' ? 'f.vram' : 'f.storage';
 const gb = (v, unit) => unit === 'mm' ? v + ' ' + u('mm')
   : v >= 1024 ? (v / 1024) + ' TB' : v + ' ' + u('gb');
 
@@ -232,40 +264,162 @@ function historyHTML(p) {
 const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generated.slice(5, 7) + '.' + P.generated.slice(0, 4) : '';
 
 /* ================= filtering ================= */
+// The words someone types are rarely in the shop's order: "samsung fold" is how a person asks
+// for the Galaxy Z Fold 8, and a contiguous-substring test answers "no results" to it. Every
+// word has to appear somewhere, order free.
+const hay = p => (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase();
+function hayMatch(p, q) {
+  const words = String(q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return true;
+  const h = hay(p);
+  return words.every(w => h.includes(w));
+}
+/* --- what a product can be asked ---------------------------------------------------- */
+// Every one of these reads a fact the catalogue already carries. Nothing is invented: a phone
+// with no camera block has no megapixel count and drops out of a camera filter rather than
+// being given a plausible one.
+const mpOf = p => { const m = /(\d+(?:\.\d+)?)\s*MP/i.exec(p.camera?.main || ''); return m ? +m[1] : null; };
+// "8.5 hours (30 with the case)" -> 8.5. The buds' own figure, not the case total, because that
+// is the number every maker prints first and the only one all of them print.
+const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\s*h/i.exec(p.battery?.life || ''); return m ? +m[1] : null; };
+// IP68 is dust 6 / water 8, IPX4 is water only, and ATM or metre figures are dive ratings.
+// Three answers a buyer actually has: nothing, survives splashes, survives being dunked.
+const waterOf = p => {
+  const v = p.body?.ip || '';
+  if (/ATM|\d+\s*m\s*water|dive/i.test(v)) return 'dip';
+  const m = /IP(?:\d|X)(\d)/i.exec(v);
+  const d = m ? +m[1] : null;
+  return d == null ? null : d >= 7 ? 'dip' : d >= 4 ? 'splash' : null;
+};
+// M5 Pro and M5 Max are different purchases; an i5 and an i7 of one generation are the same
+// aisle. So Apple keeps its suffix and Intel/AMD are cut at the tier.
+const cpuOf = p => {
+  const n = p.chipset?.name || '';
+  const a = /^Apple (M\d+(?: (?:Pro|Max|Ultra))?|A\d+(?: Pro)?)/.exec(n);
+  if (a) return 'Apple ' + a[1];
+  const m = /^(Intel Core (?:Ultra )?\w+)/.exec(n) || /^(AMD Ryzen \d+)/.exec(n) || /^(Snapdragon(?: \w+)?)/.exec(n);
+  return m ? m[1] : (n || null);
+};
+const gpuOf = p => {
+  const g = p.graphics;
+  if (!g || !g.name) return null;
+  if (g.type !== 'discrete') return 'integrated';
+  const m = /(GeForce RTX \d+|GeForce GTX \d+|Radeon RX \d+)/i.exec(g.name);
+  return m ? m[1] : g.name;
+};
+// Screen bands used to be the three phone bands - under 6.3", 6.3-6.7", over 6.7" - drawn on a
+// page of laptops, where every one of them lands in the last band and the filter answers
+// nothing. Cut them from the sizes the category actually has instead.
+const _bandC = {};
+function bandCuts(cat) {
+  if (cat in _bandC) return _bandC[cat];
+  const v = [...new Set(DATA.filter(p => !cat || (p.category || 'phone') === cat)
+    .map(p => p.display?.size).filter(n => typeof n === 'number' && n > 0))].sort((a, b) => a - b);
+  return _bandC[cat] = v.length < 3 ? null : [v[Math.floor(v.length / 3)], v[Math.floor(v.length * 2 / 3)]];
+}
+const bandOf = (p, cat) => {
+  const c = bandCuts(cat), d = p.display?.size;
+  return (!c || d == null) ? null : d < c[0] ? 'lo' : d < c[1] ? 'mid' : 'hi';
+};
+const bandLabel = v => {
+  const c = bandCuts(st.cat);
+  if (!c) return '';
+  return v === 'lo' ? x('scrLo').replace('{x}', c[0])
+    : v === 'hi' ? x('scrHi').replace('{x}', c[1]) : c[0] + '\u2013' + c[1] + '\u2033';
+};
+
+// One table for every filter. 'min' is a "this much or more" radio, 'set' is a tick list where
+// any chosen value qualifies, 'flag' is a yes/no button. The bar, the option counts, the chips,
+// the reset and the pruning all read this, so a new filter is one entry and not six edits.
+const FILT = {
+  brand: { kind: 'set', arr: 'brands', label: () => t('filter.brand'), of: p => p.brand, fmt: v => v },
+  shop:  { kind: 'set', arr: 'shops', label: () => x('shopLbl'), of: null, fmt: v => shopName(v) },
+  // 'of' answers "does this product qualify" (its biggest variant), 'all' supplies the options
+  // (every variant), so 256 GB can be offered even where no product stops there.
+  ram:   { kind: 'min', label: () => t('filter.ram'), of: p => topOf(p, 'ram') || null,
+           all: p => (p.variants || []).map(v => v.ram), fmt: v => v + ' ' + u('gb') },
+  stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
+           of: p => topOf(p, 'storage') || null, all: p => (p.variants || []).map(v => v.storage),
+           fmt: v => gb(v, viewUnit()) },
+  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u('mah') },
+  hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
+  cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
+  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v + ' ' + x('hrs') },
+  scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), of: (p, s) => bandOf(p, s.cat),
+           fmt: bandLabel, vals: () => bandCuts(st.cat) ? ['lo', 'mid', 'hi'] : [] },
+  cpu:   { kind: 'set', arr: 'cpus', label: () => x('cpuF'), of: cpuOf, fmt: v => v },
+  gpu:   { kind: 'set', arr: 'gpus', label: () => x('gpuF'), of: gpuOf, fmt: v => v === 'integrated' ? x('integrated') : v },
+  water: { kind: 'set', arr: 'waters', label: () => x('waterF'), of: waterOf, fmt: v => x('waters')[v], vals: () => ['splash', 'dip'] },
+  g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
+  nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
+  anc:   { kind: 'flag', label: () => x('ancF'), of: p => !!p.audio?.anc },
+};
+// Which questions each category can be asked. The bar used to decide this purely on whether the
+// numbers varied, so AirPods were filtered by RAM and screen size and a watch by refresh rate:
+// varying is not the same as meaning something. A filter listed here still has to prove the
+// items in view differ on it before it is drawn.
+const ASK = {
+  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'g5', 'nfc'],
+  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5', 'touch'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch'],
+  desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch'],
+  console:    ['stor'],
+  ereader:    ['stor', 'scr', 'water'],
+  watch:      ['stor', 'scr', 'life', 'water'],
+  earbuds:    ['anc', 'life', 'water'],
+  headphones: ['anc', 'life', 'water'],
+  speaker:    ['life', 'water'],
+  appliance:  [],
+  monitor:    ['scr', 'hz'],
+  component:  [],
+};
+// Brand, price and shop are questions about the purchase, not about the hardware, so they are
+// asked everywhere. A spec question needs a category: with none chosen the page is showing
+// phones beside fridges, and "16 GB or more" there is a question about some of them only.
+const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop' || (!!cat && (ASK[cat] || []).includes(k));
+
 function matches(p, s) {
   if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
-  const q = s.q.trim().toLowerCase();
-  if (q && !(p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase().includes(q)) return false;
-  if (s.brands.length && !s.brands.includes(p.brand)) return false;
+  if (!hayMatch(p, s.q)) return false;
   const pr = bestOf(p);
   if (pr < s.pmin || pr > s.pmax) return false;
-  if (s.ram && !(p.variants || []).some(v => v.ram >= s.ram)) return false;
-  if (s.stor && !(p.variants || []).some(v => v.storage >= s.stor)) return false;
-  // an ACTIVE spec filter excludes anything without that spec: earbuds have no screen, so
-  // they must not slip through a "120 Hz or more" filter merely by lacking the field
-  if (s.batt && !(p.battery?.capacity >= s.batt)) return false;
-  if (s.hz && !(p.display?.refresh >= s.hz)) return false;
-  if (s.g5 && !/5G/i.test(p.connectivity?.network || '')) return false;
-  if (s.nfc && !p.connectivity?.nfc) return false;
-  const d = p.display?.size;
-  if (s.scrmin && !(d >= s.scrmin)) return false;
+  for (const k in FILT) {
+    const f = FILT[k];
+    // an ACTIVE spec filter excludes anything without that spec: earbuds have no screen, so
+    // they must not slip through a "120 Hz or more" filter merely by lacking the field
+    if (f.kind === 'flag') { if (s[k] && !f.of(p, s)) return false; continue; }
+    if (f.kind === 'min') { if (s[k] && !(f.of(p, s) >= s[k])) return false; continue; }
+    const sel = s[f.arr] || [];
+    if (!sel.length) continue;
+    if (k === 'shop') { if (!offersFor(p).some(o => sel.includes(o.shop))) return false; continue; }
+    const v = f.of(p, s);                        // any chosen value qualifies
+    if (v == null || !sel.includes(v)) return false;
+  }
+  if (s.scrmin && !(p.display?.size >= s.scrmin)) return false;
   // 1 = must have a touchscreen, 2 = must not; 0 = do not care
   if (s.touch && p.display?.touch !== (s.touch === 1)) return false;
-  // any of the chosen bands qualifies; none chosen means the question is not being asked
-  if ((s.scrs || []).length) {
-    if (d == null) return false;
-    const band = d < 6.3 ? 'lt63' : d <= 6.7 ? 'mid' : 'gt67';
-    if (!s.scrs.includes(band)) return false;
-  }
   return true;
 }
 // A saving is only real when it is the SAME product in the SAME configuration: cheapest shop
 // against dearest. Measured across tiers it is just the price of more storage - the Z Fold 8
 // showed a 470 000 ֏ "saving" that was a 256 GB offer against a 1 TB one.
+// "Save up to X" is a promise that the same thing costs less somewhere else, so the two prices
+// have to be the same thing. Two ways they were not:
+//
+// The eSIM build and the tray build are different hardware at different prices - the tray always
+// costs more - so a tier that mixed them reported the SIM difference as a saving. The iPhone 17
+// Pro Max 1TB read "save 234 000" by comparing a 715 000 eSIM against a 949 000 tray.
+//
+// And an offer whose capacity the shop never stated could be any configuration. Where a product
+// sells in one size only that is harmless, but the MacBook Pro 14 M4 Pro sells at 512 GB and
+// 1 TB and all three of its offers state no capacity - so the front page promised 274 000 off
+// by putting one shop's base model beside the same shop's higher one.
 const bestTier = p => {
+  const sizes = new Set((p.variants || []).map(v => v.storage).filter(v => v != null));
   const byTier = new Map();
   for (const o of offersFor(p)) {
-    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '');
+    if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?');
     (byTier.get(k) || byTier.set(k, []).get(k)).push(o.price);
   }
   let best = null;
@@ -361,7 +515,8 @@ const GROUPS = [
     ['f.wifi', p => p.connectivity.wifi],
     ['f.bluetooth', p => p.connectivity.bluetooth],
     ['f.nfc', p => p.connectivity?.nfc == null ? null : p.connectivity.nfc ? t('common.yes') : t('common.no')],
-    ['f.sim', p => p.connectivity.sim]
+    ['f.sim', p => p.connectivity.sim],
+    ['f.ports', p => p.connectivity.ports]
   ]],
   ['sec.software', [
     ['f.os', p => p.os],
@@ -369,6 +524,38 @@ const GROUPS = [
     ['f.released', p => relDate(p.released)]
   ]]
 ];
+
+// Every product carries `unsure`: the list of fields whose value was not confirmed from the
+// maker's own sheet. The data has recorded that from the start and the page has been printing
+// those figures as fact. This says which field each spec row reads, so the ones that are not
+// certain are marked as not certain. A row with no entry here has nothing to be unsure about.
+const FIELD_OF = {
+  'f.screen_size': 'display.size', 'f.screen_type': 'display.type', 'f.resolution': 'display.resolution',
+  'f.refresh_rate': 'display.refresh', 'f.ppi': 'display.ppi', 'f.brightness': 'display.brightness',
+  'f.protection': 'display.protection', 'f.touch': 'display.touch',
+  'f.chipset': 'chipset.name', 'f.process': 'chipset.process', 'f.cpu': 'chipset.cpu',
+  'f.gpu': 'graphics.name', 'f.antutu': 'chipset.antutu', 'f.card_slot': 'cardSlot',
+  'f.main_cam': 'camera.main', 'f.ultrawide': 'camera.ultrawide', 'f.telephoto': 'camera.telephoto',
+  'f.front_cam': 'camera.front', 'f.video': 'camera.video',
+  'f.capacity': 'battery.capacity', 'f.charging': 'battery.wired', 'f.wireless': 'battery.wireless',
+  'f.weight': 'body.weight', 'f.materials': 'body.materials', 'f.ip_rating': 'body.ip',
+  'f.network': 'connectivity.network', 'f.wifi': 'connectivity.wifi', 'f.bluetooth': 'connectivity.bluetooth',
+  'f.nfc': 'connectivity.nfc', 'f.sim': 'connectivity.sim', 'f.ports': 'connectivity.ports',
+  'f.os': 'os', 'f.updates': 'updates', 'f.released': 'released',
+};
+// A whole block can be flagged ('connectivity', 'battery'), which covers every row inside it.
+const unsureRow = (p, key) => {
+  const f = FIELD_OF[key];
+  if (!f) return false;
+  const u = p.unsure || [];
+  return u.includes(f) || u.includes(f.split('.')[0]);
+};
+
+// What the address bar holds is #/p/<id>, and a fragment never reaches a server: paste one into
+// Telegram and no scraper can know which product it names, so no preview comes back. build.mjs
+// writes a real page per product at p/<id>/ carrying its title, price and picture. This is the
+// url the share button hands out - the same product, previewable.
+const shareUrl = id => location.href.split('#')[0].replace(/index\.html$/, '') + 'p/' + id + '/';
 
 /* ================= chrome ================= */
 const ICON_CHEV = '<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
@@ -385,6 +572,7 @@ function paintChrome() {
   $('#srchLbl').textContent = t('nav.search_placeholder');
   $('#q').setAttribute('aria-label', t('nav.search_placeholder'));
   $('#q').placeholder = t('nav.search_placeholder');
+  const go = $('#qgo'); if (go) go.setAttribute('aria-label', t('nav.search_placeholder'));
   if ($('#q').value !== st.q) $('#q').value = st.q;
   const h = location.hash.replace(/^#/, '') || '/';
   $('#nav').innerHTML =
@@ -478,57 +666,78 @@ const viewUnit = () => {
   const p = inView().filter(q => (q.variants || []).some(v => v.storage != null));
   return p.length && p.every(q => q.variantUnit === 'mm') ? 'mm' : undefined;
 };
-const CHIPSETS = () => { const unit = viewUnit(); return [
-  ['ram', 'filter.ram', steps(p => (p.variants || []).map(v => v.ram)), v => v + ' ' + u('gb')],
-  ['stor', unit === 'mm' ? 'f.case_size' : 'filter.storage', steps(p => (p.variants || []).map(v => v.storage)), v => gb(v, unit)],
-  ['batt', 'filter.battery', steps(p => [p.battery?.capacity]), v => money(v) + ' ' + u('mah')],
-  ['hz', 'filter.refresh_rate', steps(p => [p.display?.refresh]), v => v + ' ' + u('hz')]
-]; };
 const drop = (key, label, body, right) =>
   `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel">${body}</div></details>`;
 const radios = (key, vals, fmt) =>
   `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="0"><span>${esc(x('any'))}</span></label>` +
   vals.map(v => `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="${v}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${v}"></span></label>`).join('');
+const boxes = (key, vals, fmt) => vals.map(v =>
+  `<label class="opt"><input type="checkbox" data-f="${key}" value="${esc(String(v))}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${esc(String(v))}"></span></label>`).join('');
 
 // A filter earns its place only if the items in view actually differ on it. Deriving that
 // from the data means a new category never needs a hand-written filter list.
 function inView() { return DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat); }
 function varies(get) { return new Set(inView().map(get).filter(v => v != null && v !== '')).size > 1; }
+// The values a tick-list offers: only the ones something in view actually has, so "Submersible"
+// is not offered on a page where nothing is waterproof.
+function setVals(k, f, pool) {
+  if (k === 'shop') return [...new Set(pool.flatMap(p => offersFor(p).map(o => o.shop)))]
+    .sort((a, b) => shopName(a).localeCompare(shopName(b)));
+  const have = new Set(pool.map(p => f.of(p, st)).filter(v => v != null && v !== ''));
+  return (f.vals ? f.vals() : [...have].sort()).filter(v => have.has(v));
+}
+// One filter's control - or nothing at all, when the category is never asked this question or
+// every item in view answers it the same way.
+function fdrop(k, pool) {
+  const f = FILT[k];
+  if (!askable(k)) return '';
+  if (f.kind === 'flag') return varies(p => f.of(p, st))
+    ? `<button class="toggle" data-f="${k}" aria-pressed="false">${esc(f.label())}</button>` : '';
+  if (f.kind === 'min') {
+    const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)]);
+    return vals.length > 1 && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
+  }
+  const vals = setVals(k, f, pool);
+  return vals.length > 1 ? drop(k, f.label(), boxes(k, vals, f.fmt)) : '';
+}
 function filterBar() {
   const pool = inView();
-  let h = `<div class="fbar">`;
-  const brandsHere = [...new Set(pool.map(p => p.brand))].sort();
-  if (brandsHere.length > 1) h += drop('brand', t('filter.brand'), brandsHere.map(b =>
-    `<label class="opt"><input type="checkbox" data-f="brand" value="${esc(b)}"><span>${esc(b)}</span><span class="n num" data-cnt="b:${esc(b)}"></span></label>`).join(''));
+  let h = `<div class="fbar${st.fopen ? '' : ' folded'}">`;
+  h += fdrop('brand', pool);
   h += drop('price', t('filter.price'), `<div class="rngbox"><div class="rng"><span class="track"></span><span class="fill"></span>
       <input type="range" data-f="pmin" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.from'))}">
       <input type="range" data-f="pmax" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.to'))}"></div>
       <div class="rngv"><span class="num" data-rng="min"></span><span class="num" data-rng="max"></span></div></div>`);
-  const VARIES = { ram: p => topOf(p, 'ram') || null, stor: p => topOf(p, 'storage') || null,
-    batt: p => p.battery?.capacity, hz: p => p.display?.refresh };
-  for (const [k, lbl, vals, fmt] of CHIPSETS())
-    if (vals.length > 1 && (!VARIES[k] || varies(VARIES[k]))) h += drop(k, t(lbl), radios(k, vals, fmt));
-  if (varies(p => p.display?.size)) h += drop('scr', t('filter.screen_size'),
-    ['lt63', 'mid', 'gt67'].map((v, i) => `<label class="opt"><input type="checkbox" data-f="scr" value="${v}"><span>${esc(x('bands')[i])}</span><span class="n num" data-cnt="scr:${v}"></span></label>`).join(''));
-  if (varies(p => /5G/i.test(p.connectivity?.network || ''))) h += `<button class="toggle" data-f="g5" aria-pressed="false">5G</button>`;
-  if (varies(p => p.connectivity?.nfc)) h += `<button class="toggle" data-f="nfc" aria-pressed="false">NFC</button>`;
+  for (const k in FILT) if (k !== 'brand') h += fdrop(k, pool);
   h += `<span class="spacer"></span>`;
   h += drop('sort', `${t('sort.label')}: ${sortLabel(st.sort)}`, sortKeys().map(s =>
     `<label class="opt"><input type="radio" name="r-sort" data-f="sort" value="${s}"><span>${esc(sortLabel(s))}</span></label>`).join(''), true);
-  return h + `</div>`;
+  // The button sits OUTSIDE the bar it folds, so folding cannot hide it.
+  const n = activeFilterCount();
+  return h + `</div><button class="fmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
+    ${esc(st.fopen ? x('filtersHide') : x('filtersShow'))}${n ? ` <b>${n}</b>` : ''}
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`;
+}
+// how many filters are actually narrowing the list right now - shown on the button so a folded
+// bar can never hide the fact that something is filtering
+function activeFilterCount() {
+  let n = (st.pmin > PMIN || st.pmax < PMAX) ? 1 : 0;
+  for (const k in FILT) n += FILT[k].kind === 'set' ? (st[FILT[k].arr] || []).length : (st[k] ? 1 : 0);
+  return n;
 }
 function syncFilters() {
   $$('[data-f]').forEach(el => {
     const k = el.dataset.f;
     if (el.tagName === 'BUTTON') { el.setAttribute('aria-pressed', !!st[k]); return; }
-    if (k === 'brand') el.checked = st.brands.includes(el.value);
-    else if (k === 'scr') el.checked = st.scrs.includes(el.value);
+    if (FILT[k] && FILT[k].kind === 'set') el.checked = (st[FILT[k].arr] || []).includes(el.value);
     else if (k === 'pmin' || k === 'pmax') el.value = st[k];
     else if (el.type === 'radio') el.checked = String(st[k] ?? '') === el.value;
   });
   $$('[data-cnt]').forEach(el => {
-    const [k, v] = el.dataset.cnt.split(':');
-    el.textContent = k === 'b' ? cnt({ brands: [v] }) : k === 'scr' ? cnt({ scrs: [v] }) : cnt({ [k]: +v });
+    // split on the FIRST colon only: a shop id or a brand is the rest of the string
+    const d = el.dataset.cnt, i = d.indexOf(':'), k = d.slice(0, i), v = d.slice(i + 1);
+    const f = FILT[k];
+    el.textContent = f && f.kind === 'set' ? cnt({ [f.arr]: [v] }) : cnt({ [k]: +v });
   });
   $$('[data-rng="min"]').forEach(e => e.textContent = money(st.pmin) + ' ֏');
   $$('[data-rng="max"]').forEach(e => e.textContent = money(st.pmax) + ' ֏');
@@ -541,8 +750,8 @@ function syncFilters() {
   if (sd) sd.childNodes[0].nodeValue = t('sort.label') + ': ' + sortLabel(st.sort);
   $$('[data-drop]').forEach(d => {
     const k = d.dataset.drop;
-    const on = k === 'brand' ? st.brands.length : k === 'price' ? (st.pmin > PMIN || st.pmax < PMAX)
-      : k === 'sort' ? st.sort !== 'popular' : k === 'scr' ? st.scrs.length : !!st[k];
+    const on = k === 'price' ? (st.pmin > PMIN || st.pmax < PMAX) : k === 'sort' ? st.sort !== 'popular'
+      : FILT[k] && FILT[k].kind === 'set' ? (st[FILT[k].arr] || []).length : !!st[k];
     d.classList.toggle('on', !!on);
   });
 }
@@ -552,43 +761,60 @@ function syncFilters() {
 // drop the filters the new category cannot satisfy at all.
 function pruneFilters() {
   const pool = inView();
-  const base = { ...D, brands: [], cat: st.cat, pmin: PMIN, pmax: PMAX };
-  for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch', 'g5', 'nfc'])
+  const base = { ...D, cat: st.cat, pmin: PMIN, pmax: PMAX };
+  for (const k in FILT) {
+    const f = FILT[k];
+    // a question this category is never asked has no control to turn it off with again
+    if (!askable(k)) { if (f.kind === 'set') st[f.arr] = []; else st[k] = D[k]; continue; }
+    if (f.kind === 'set') st[f.arr] = (st[f.arr] || []).filter(v => pool.some(p => matches(p, { ...base, [f.arr]: [v] })));
+    else if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
+  }
+  for (const k of ['scrmin', 'touch'])
     if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
-  st.scrs = st.scrs.filter(v => pool.some(p => matches(p, { ...base, scrs: [v] })));
-  if (st.brands.length && !pool.some(p => st.brands.includes(p.brand))) st.brands = [];
 }
 
 const activeChips = () => {
   const o = [];
-  st.brands.forEach(b => o.push(['brand:' + b, b]));
+  for (const v of st.brands) o.push(['brand:' + v, v]);
   if (st.pmin > PMIN || st.pmax < PMAX) o.push(['price', `${money(st.pmin)}–${money(st.pmax)} ֏`]);
-  if (st.ram) o.push(['ram', `${x('min')} ${st.ram} ${u('gb')}`]);
-  if (st.stor) o.push(['stor', `${x('min')} ${gb(st.stor, viewUnit())}`]);
+  for (const k in FILT) {
+    const f = FILT[k];
+    if (k === 'brand') continue;                                   // already first, above the price
+    if (f.kind === 'set') { for (const v of st[f.arr] || []) o.push([k + ':' + v, f.fmt(v)]); continue; }
+    if (st[k]) o.push([k, f.kind === 'flag' ? f.label() : `${x('min')} ${f.fmt(st[k])}`]);
+  }
   if (st.touch) o.push(['touch', `${t('f.touch')}: ${st.touch === 1 ? t('common.yes') : t('common.no')}`]);
   if (st.scrmin) o.push(['scrmin', `${x('min')} ${st.scrmin}″`]);
-  if (st.batt) o.push(['batt', `${x('min')} ${money(st.batt)} ${u('mah')}`]);
-  if (st.hz) o.push(['hz', `${x('min')} ${st.hz} ${u('hz')}`]);
-  for (const v of st.scrs) o.push(['scr:' + v, x('bands')[{ lt63: 0, mid: 1, gt67: 2 }[v]]]);
-  if (st.g5) o.push(['g5', '5G']);
-  if (st.nfc) o.push(['nfc', 'NFC']);
   return o;
 };
 
 /* ================= catalog ================= */
+// One price per shop, cheapest first. offersFor() is already sorted, so the first time a shop
+// appears is its own best price.
+const shopRows = (p, n) => {
+  const seen = new Map();
+  for (const o of offersFor(p)) if (!seen.has(o.shop)) seen.set(o.shop, o.price);
+  return [...seen].slice(0, n);
+};
 function card(p) {
-  const n = shopCount(offersFor(p));
+  // A card used to say "3 shops" and stop there, which is the one thing a price-comparison
+  // card must not do: it names a spread without showing it. Now the big number carries the shop
+  // it belongs to and the next two shops sit under it with their own prices.
+  const rows = shopRows(p, 3);
+  const rest = rows.slice(1);
+  const more = shopCount(offersFor(p)) - rows.length;
   // show the configuration the displayed price actually belongs to, not simply the first variant
   const cheapest = offersFor(p)[0];
   const v = (cheapest && p.variants.find(z => z.storage === cheapest.storage))
     || p.variants[0] || {};
   return `<article class="pcard">
     <div class="pshot"${cycShots(p.id).length > 1 ? ` data-cyc="${esc(p.id)}"` : ''}>
-      ${isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
+      ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
+        : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-      <img class="on" src="${IMG(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      <img class="on" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
       ${cycShots(p.id).length > 1 ? `<img alt="" aria-hidden="true" decoding="async" src="${BLANK}">` : ''}
     </div>
     <div class="pbody">
@@ -596,8 +822,11 @@ function card(p) {
       <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></h3>
       <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
       <div class="pfoot"><span class="pprice num">${amd(bestOf(p))}
-        <s>${n ? esc(nx(n, 'shops')) : esc(x('estimated'))}</s></span>
+        <s>${rows.length ? esc(shopName(rows[0][0])) : esc(x('estimated'))}</s></span>
         <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span></div>
+      ${rest.length ? `<ul class="poffers">${rest.map(([sh, pr]) =>
+        `<li><span>${esc(shopName(sh))}</span><b class="num">${money(pr)} ֏</b></li>`).join('')}${
+        more > 0 ? `<li class="mo">+${more}</li>` : ''}</ul>` : ''}
     </div>
   </article>`;
 }
@@ -670,10 +899,11 @@ function mastHero() {
       <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
       ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}
     </div>
+    ${soonHTML()}
     ${sv.length ? `<section class="save-sec" id="savings">
       <div class="save-hd"><h2>${esc(x('savingsT'))}</h2><p>${esc(x('savingsS'))}</p></div>
       <div class="save-grid">${sv.map(r => `<a class="sv" href="#/p/${esc(r.p.id)}">
-        <span class="t"><img src="${IMG(r.p.id)}" alt="" loading="lazy"></span>
+        <span class="t"><img src="${THUMB(r.p.id)}" alt="" loading="lazy"></span>
         <span>
           <span class="nm">${esc(fullName(r.p))}${r.storage ? ` · ${esc(gb(r.storage, r.p.variantUnit))}` : ''}</span>
           <!-- The big number on a price-comparison site has to be a price. It used to be the
@@ -682,8 +912,7 @@ function mastHero() {
           <span class="bar"><i style="width:${Math.max(8, Math.round(r.gap / r.hi * 100))}%"></i></span>
           <span class="rng"><span>${esc(x('saveUpTo'))} ${money(r.gap)} ֏</span><span>${money(r.hi)}</span></span>
         </span></a>`).join('')}</div>
-    </section>` : ''}
-    ${soonHTML()}`;
+    </section>` : ''}`;
 }
 
 // Announced but not on sale. These are NOT in DATA: no spec sheet, no offer you can buy today,
@@ -695,15 +924,25 @@ const fromPrice = v => {
   const f = x('from');
   return f.startsWith('-') ? `${money(v)} ֏${f}` : `${f}${money(v)} ֏`;
 };
+// Ten o'clock Yerevan time on the day of sale - shops open, not midnight. A date that has
+// already passed returns nothing, so the strip quietly loses its clock instead of counting up.
+function cdText(iso) {
+  const ms = Date.parse(iso + 'T10:00:00+04:00') - Date.now();
+  if (!(ms > 0)) return '';
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+  return `${d}${x('dS')} ${h}${x('hS')} ${m}${x('mS')}`;
+}
 function soonHTML() {
   const C = (typeof COMING !== 'undefined' && COMING) || { items: [] };
   const items = C.items || [];
   if (!items.length) return '';
   const when = (C.when || {})[st.lang] || (C.when || {}).en || '';
+  const cd = C.date ? cdText(C.date) : '';
   return `<section class="soon-sec">
-    <div class="soon-hd"><span class="soon-tag">${esc(x('soonT'))}</span><h2>${esc(when)}</h2></div>
+    <div class="soon-hd"><span class="soon-tag">${esc(x('soonT'))}</span><h2>${esc(when)}</h2>${
+      cd ? `<span class="soon-cd num" id="soon-cd" data-cd="${esc(C.date)}">${esc(cd)}</span>` : ''}</div>
     <div class="soon-grid">${items.map(c => `<a class="soon" href="${esc(safeHref(c.url))}" target="_blank" rel="noopener noreferrer">
-      <span class="t"><img src="${esc(IMG(c.id))}" alt="${esc(c.brand + ' ' + c.name)}" loading="lazy"></span>
+      <span class="t"><img src="${esc(THUMB(c.id))}" alt="${esc(c.brand + ' ' + c.name)}" loading="lazy"></span>
       <span>
         <span class="nm">${esc(c.brand)} ${esc(c.name)}</span>
         <span class="pr num">${esc(fromPrice(c.from))}</span>
@@ -713,22 +952,48 @@ function soonHTML() {
   </section>`;
 }
 
+// Minutes are the smallest unit shown, so half a minute is close enough and nothing here
+// animates. Route changes replace the element; this finds whatever is on screen now.
+setInterval(() => {
+  const e = document.getElementById('soon-cd');
+  if (!e) return;
+  const v = cdText(e.dataset.cd);
+  if (v) e.textContent = v; else e.remove();
+}, 30000);
+
+// A counter, if one is configured, sees the first load and nothing after it: every page on this
+// site is a hash change. Both calls are optional chains, so with no counter this is three
+// property reads that find nothing.
+const countView = () => {
+  try {
+    window.umami?.track?.();
+    window.goatcounter?.count?.({ path: location.pathname + location.hash, event: false });
+  } catch (e) { }
+};
+
 // Categories are navigation, not a filter: one always-visible row, current item marked.
 // Counts come from the data, so a category appears the moment its first item lands.
 function catTabs() {
   const cats = [...new Set(DATA.map(p => p.category || 'phone'))];
-  const n = c => DATA.filter(p => (p.category || 'phone') === c).length;
+  // Counted within the active query, not over the whole catalogue: on a search for "samsung
+  // fold" the tabs used to promise "Phones 70" above three results, and the number a tab shows
+  // has to be the number clicking it produces.
+  const pool = DATA.filter(p => hayMatch(p, st.q));
+  const n = c => pool.filter(p => (p.category || 'phone') === c).length;
   const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${esc(label)}<b class="num">${count}</b></a>`;
+  // A tab whose count is 0 leads to an empty page, so it is not offered. The category you are
+  // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
-    tab('', x('catAll'), DATA.length) +
-    cats.map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') + `</nav>`;
+    tab('', x('catAll'), pool.length) +
+    cats.filter(c => n(c) > 0 || st.cat === c)
+        .map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') + `</nav>`;
 }
 function catalogView() {
   return `<div class="shell">
     ${catTabs()}
     ${filterBar()}
     <div class="chips" id="chips"></div>
-    <div class="resbar" id="results"><h2>${esc(t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
+    <div class="resbar" id="results"><h2>${esc(location.hash.replace(/^#/, '') === '/search' && st.q.trim() ? st.q.trim() : t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
     <div class="grid" id="gridbox"></div>
     <div id="pager"></div>
   </div>`;
@@ -767,8 +1032,8 @@ let lastSig = null;
 function refresh() {
   const all = results(), box = $('#gridbox');
   if (!box) return;
-  const sig = JSON.stringify([st.cat, st.q, st.brands, st.pmin, st.pmax, st.ram, st.stor,
-    st.scrs, st.batt, st.hz, st.g5, st.nfc, st.scrmin, st.touch, st.sort]);
+  const sig = JSON.stringify([st.cat, st.q, st.pmin, st.pmax, st.scrmin, st.touch, st.sort,
+    ...Object.keys(FILT).map(k => FILT[k].arr ? st[FILT[k].arr] : st[k])]);
   if (sig !== lastSig) { if (lastSig !== null) st.page = 1; lastSig = sig; }
   const last = pageCount(all.length);
   if (st.page > last) st.page = last;          // a filter that shrinks the set must not strand you
@@ -781,6 +1046,11 @@ function refresh() {
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
+  // The tab counts are taken within the active query, so they go stale the moment the query
+  // changes - clearing the search box left "All 3" sitting above 36 cards. Repaint them here,
+  // where every filter change already lands.
+  const tabs = $('.ctabs');
+  if (tabs) tabs.outerHTML = catTabs();
   syncFilters(); save();
   moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
   gridIn(box);
@@ -890,7 +1160,15 @@ const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
 // with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
 // them on the front page. A 1x1 transparent GIF is a valid, cached, 68-byte placeholder.
 const BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
-const cycShots = id => [...new Set(Object.entries(CIMG[id] || {}).filter(([k]) => k !== 'main').map(([, v]) => v))];
+// A card crossfades a product's colour photos, which only reads as one product turning around
+// if every frame is the same shape. A photo shot in the other orientation keeps its place on
+// the product page and loses only its turn here. See tools/pageonly.py.
+const SKIPCYC = (typeof PAGEONLY !== 'undefined' && PAGEONLY) || {};
+// The cycle runs inside a card, so it takes the 600 px copies. The product page keeps CIMG.
+const CTHUMB = (typeof COLORTHUMB !== 'undefined' && COLORTHUMB) || {};
+const cycShots = id => [...new Set(Object.entries(CIMG[id] || {})
+  .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k))
+  .map(([k, v]) => (CTHUMB[id] && CTHUMB[id][k]) || v))];
 
 // Cards with more than one colour photo walk through them. One timer for the whole grid, and a
 // card only advances while it is on screen: crossfading rows nobody is looking at is wasted work
@@ -962,7 +1240,7 @@ function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
   // start on whatever the cheapest real offer actually is
-  const both = offs.some(o => o.esim) && offs.some(o => !o.esim);
+  const both = offs.some(o => o.esim === true) && offs.some(o => o.esim === false);
   SEL = {
     id: p.id,
     esim: both ? false : null,
@@ -989,7 +1267,9 @@ function visibleOffers(p) {
     o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
   }
   if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
-  if (SEL.esim != null) o = o.filter(v => !!v.esim === SEL.esim);
+  // strict: an offer whose SIM build the shop never stated is not evidence for either button.
+  // Treating "not stated" as "tray" put Pixel's 559 000 under Nano-SIM, below the 625 000 eSIM.
+  if (SEL.esim != null) o = o.filter(v => v.esim === SEL.esim);
   return o;
 }
 function railHTML(offs) {
@@ -1029,7 +1309,7 @@ function detailView(p) {
   const simAll = offersFor(p);
   const simPick = /nano/.test(((p.connectivity || {}).sim || '').toLowerCase())
     && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
-    && simAll.some(o => o.esim) && simAll.some(o => !o.esim);
+    && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
   const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
@@ -1044,8 +1324,9 @@ function detailView(p) {
       // A getter that formats a missing field yields "null GB" / "NaN mAh" / "undefined x undefined".
       // Catching that here covers every getter, including ones added for future categories.
       const bad = v == null || v === '' || /undefined|null|NaN/.test(String(v));
-      const key = (k === 'f.storage' && p.variantUnit === 'mm') ? 'f.case_size' : k;
-      return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}</dd></div>`;
+      const key = k === 'f.storage' ? storageLabel(p) : k;
+      const q = unsureRow(p, k) ? ` <abbr class="unsure" title="${esc(x('unsureTip'))}">${esc(x('unsureMark'))}</abbr>` : '';
+      return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}${q}</dd></div>`;
     }).join('');
     return body ? `<section class="panel-c"><h3><i></i>${esc(t(g))}</h3><dl>${body}</dl></section>` : '';
   }).join('');
@@ -1073,7 +1354,7 @@ function detailView(p) {
           ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
             <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ' — ' + esc(x('notSold'))}"
               class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
-          ${stors.length ? `<div class="og"><label>${esc(t(p.variantUnit === 'mm' ? 'f.case_size' : 'f.storage'))}</label>
+          ${stors.length ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
             <div class="bs">${simOpts.map(([n, want]) =>
@@ -1089,6 +1370,7 @@ function detailView(p) {
           <div class="pcta">
             <a class="btn" href="#buy">${esc(x('offersTitle'))}</a>
             <button class="btn ghost" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
+            <button class="btn ghost" data-share="${esc(p.id)}">${esc(x('share'))}</button>
           </div>
         </div>
       </div>
@@ -1112,7 +1394,7 @@ function detailView(p) {
 
     <h2 class="sh">${esc(t('detail.similar'))}</h2>
     <div class="simrow">${sim.map(sp => `<a class="sim" href="#/p/${esc(sp.id)}">
-      <span class="t"><img src="${IMG(sp.id)}" alt="" loading="lazy"></span>
+      <span class="t"><img src="${THUMB(sp.id)}" alt="" loading="lazy"></span>
       <span><b>${esc(fullName(sp))}</b><span class="num">${money(bestOf(sp))} ֏</span></span></a>`).join('')}</div>
   </div>`;
 }
@@ -1123,7 +1405,13 @@ function docView(key, paras) {
   return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
     <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
     ${paras.map(p => `<p>${esc(t(key + '.' + p))}</p>`).join('')}
-    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? `<p><a href="mailto:${esc(t('contact.email'))}">${esc(t('contact.email'))}</a></p>` : ''}
+    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? (() => {
+      // The page invites people to write; it needs somewhere for them to write TO. An address
+      // starting with http is a link, anything else is an email - so swapping one for the other
+      // is a change to data/strings.json and nothing else.
+      const c = t('contact.email'), web = /^https?:\/\//i.test(c);
+      return `<p><a href="${esc(web ? safeHref(c) : 'mailto:' + c)}"${web ? ' target="_blank" rel="noopener noreferrer"' : ''}>${esc(c.replace(/^https?:\/\//, ''))}</a></p>`;
+    })() : ''}
     </article></div>`;
 }
 
@@ -1154,6 +1442,8 @@ function constructView() {
   const fixed = [];
   if (st.cat) {
     for (const [key, lbl, get, fmt] of CQ) {
+      // the same rule the filter bar follows: a category is only asked what it can answer
+      if (!askable(key)) continue;
       const vals = [...new Set(pool.flatMap(get).filter(v => v != null && v > 0))].sort((a, b) => a - b);
       if (vals.length < 2) continue;
       questions += `<section class="cq"><h3>${esc(t(key === 'stor' && viewUnit() === 'mm' ? 'f.case_size' : lbl))}</h3><div class="cqrow">`
@@ -1161,14 +1451,14 @@ function constructView() {
         + vals.map(v => chip(key, v, x('min') + ' ' + fmt(v), String(st[key]) === String(v))).join('')
         + `</div></section>`;
     }
-    const sizes = [...new Set(pool.map(p => p.display && p.display.size).filter(v => v != null))].sort((a, b) => a - b);
+    const sizes = askable('scr') ? [...new Set(pool.map(p => p.display && p.display.size).filter(v => v != null))].sort((a, b) => a - b) : [];
     if (sizes.length > 1) {
       questions += `<section class="cq"><h3>${esc(t('filter.screen_size'))}</h3><div class="cqrow">`
         + chip('scrmin', 0, x('any'), !st.scrmin)
         + sizes.map(v => chip('scrmin', v, x('min') + ' ' + v + String.fromCharCode(8243), String(st.scrmin) === String(v))).join('')
         + `</div></section>`;
     }
-    const touches = [...new Set(pool.map(p => p.display && p.display.touch).filter(v => v != null))];
+    const touches = askable('touch') ? [...new Set(pool.map(p => p.display && p.display.touch).filter(v => v != null))] : [];
     if (touches.length > 1) {
       questions += `<section class="cq"><h3>${esc(t('f.touch'))}</h3><div class="cqrow">`
         + chip('touch', 0, x('any'), !st.touch)
@@ -1215,6 +1505,17 @@ function constructView() {
   </div>`;
 }
 
+// When this price was last read off the shop's own page. The file carries one timestamp, which
+// said every price was checked today - including the ones typed in by hand, which no crawl ever
+// revisits, and which is how 23 of them rotted into 404s without anyone noticing. A row that was
+// not read today says so, and one nobody can date says that instead of borrowing today's.
+const seenTag = o => {
+  if (!o.seen) return ` <i class="stale" title="${esc(x('handTip'))}">${esc(x('handSeen'))}</i>`;
+  if (o.seen === (P.generated || '').slice(0, 10)) return '';
+  const d = o.seen.slice(8, 10) + '.' + o.seen.slice(5, 7);
+  return ` <i class="stale" title="${esc(x('seenTip'))}">${esc(d)}</i>`;
+};
+
 /* ================= all offers for one model ================= */
 // The product page shows offers for the CHOSEN colour/capacity. This page shows every offer
 // the shops list for the model, and lets you slice it by shop, capacity and colour.
@@ -1236,10 +1537,12 @@ function offerRow(o, lo, i, unit, cls) {
     <!-- capacity and colour only: RAM is a spec, not something a buyer picks between shops, and
          a column that reads '256 GB' on one row and '256 GB · 12 GB RAM · Black' on the next is
          three different answers to the same question. -->
-    <span class="vr">${esc(o.storage ? gb(o.storage, unit) : (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}${o.esim ? ' <i class="esim">eSIM</i>' : ''}</span>
+    <span class="vr">${esc(o.storage ? gb(o.storage, unit) : (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}${o.esim ? ' <i class="esim">eSIM</i>' : ''}${seenTag(o)}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
-      ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>` : `<i class="ins">${esc(x('inStock'))}</i>`}</span>
+      ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>`
+        : o.inStock === true ? `<i class="ins">${esc(x('inStock'))}</i>`
+        : `<i class="unk">${esc(x('stockUnknown'))}</i>`}</span>
     <span class="ar" aria-hidden="true">→</span></a></li>`;
 }
 
@@ -1264,7 +1567,7 @@ function offersView(p) {
     <div class="navrow">${backLink('#/p/' + p.id, fullName(p))}
       <nav class="crumb"><span>${esc(x('allOffers'))}</span></nav></div>
     <div class="ofhead">
-      <span class="t"><img src="${IMG(p.id)}" alt="" loading="lazy"></span>
+      <span class="t"><img src="${THUMB(p.id)}" alt="" loading="lazy"></span>
       <div>
         <h1>${esc(fullName(p))}</h1>
         <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
@@ -1337,7 +1640,7 @@ function compareView() {
     </div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
-        ${ps.map(p => `<div class="c"><img src="${esc(IMG(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+        ${ps.map(p => `<div class="c"><img src="${esc(THUMB(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
         ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(addLabel(ps[0]))}">
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
@@ -1358,7 +1661,7 @@ function compareView() {
         <div id="cmres" class="cmres"></div>
         <div class="cmnow"><span class="cmlbl">${esc(t('compare.in_list'))}</span>
           ${ps.map(p => `<div class="cmrow">
-            <img src="${esc(IMG(p.id))}" alt="" loading="lazy">
+            <img src="${esc(THUMB(p.id))}" alt="" loading="lazy">
             <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
             <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
           </div>`).join('')}
@@ -1387,12 +1690,18 @@ function paintCmpRes() {
   const box = $('#cmres'); if (!box) return;
   const list = cmpCandidates($('#cmq') ? $('#cmq').value : '');
   box.innerHTML = list.length ? list.map(p => `<button class="cmrow" data-add="${esc(p.id)}">
-      <img src="${esc(IMG(p.id))}" alt="" loading="lazy">
+      <img src="${esc(THUMB(p.id))}" alt="" loading="lazy">
       <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
     </button>`).join('') : `<p class="cmnone">${esc(x('emptyT'))}</p>`;
 }
 
 /* ================= router ================= */
+// The query belongs to the results page. Coming home - the wordmark, a category, or the back
+// button - left the word sitting in the box AND still filtering the grid underneath it, so the
+// front page silently showed a search you thought you had left. A product page keeps it, so
+// going back from a product to the results still has the results. Typing is unaffected: it
+// repaints the grid through refresh() and never reaches render().
+const keepsQuery = route => !(route === '' || route === '/' || route.startsWith('/c/'));
 function render(keepScroll) {
   const raw = location.hash.replace(/^#/, '');
   // #buy / #results / #main are in-page anchors, not routes. They used to fall through to
@@ -1403,7 +1712,10 @@ function render(keepScroll) {
     // one thing the link exists to fix.
     if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
   }
+  if (!keepsQuery(raw) && st.q) { st.q = ''; save(); }
   paintChrome(); paintTray();
+  // not on a re-render (keepScroll): one visit per route, not one per filter change
+  if (!keepScroll) countView();
   const h = raw || '/';
   const mc = h.startsWith('/c/') ? h.slice(3) : null;
   // a category lives in the URL so it can be shared and the back button works
@@ -1424,6 +1736,11 @@ function render(keepScroll) {
   else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
   else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — MyCatalog'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
   else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — MyCatalog'; window.scrollTo(0, 0); }
+  else if (h === '/search') {
+    main.innerHTML = catalogView(); refresh();
+    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — MyCatalog';
+    window.scrollTo(0, keepScroll ? window.scrollY : 0);
+  }
   else {
     main.innerHTML = catalogView(); refresh();
     document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'MyCatalog';
@@ -1438,7 +1755,7 @@ function render(keepScroll) {
   }
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact'].includes(h) && !h.startsWith('/offers/');
+  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search'].includes(h) && !h.startsWith('/offers/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
   if (home) heroTick(); else clearTimeout(heroT);   // no slides off the front page, no timer
@@ -1549,12 +1866,17 @@ document.addEventListener('click', e => {
   const rm = e.target.closest('[data-rm]');
   if (rm) {
     const k = rm.dataset.rm;
-    if (k === 'all') Object.assign(st, { q: '', brands: [], pmin: PMIN, pmax: PMAX, ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false });
-    if (k === 'all') $('#q').value = '';
-    else if (k.startsWith('brand:')) st.brands = st.brands.filter(b => b !== k.slice(6));
+    if (k === 'all') {
+      Object.assign(st, { q: '', pmin: PMIN, pmax: PMAX });
+      for (const kk in FILT) { const f = FILT[kk]; if (f.kind === 'set') st[f.arr] = []; else st[kk] = D[kk]; }
+      if ($('#q')) $('#q').value = '';
+    }
     else if (k === 'price') { st.pmin = PMIN; st.pmax = PMAX; }
-    else if (k.startsWith('scr:')) st.scrs = st.scrs.filter(v => v !== k.slice(4));
-    else st[k] = (k === 'g5' || k === 'nfc') ? false : 0;
+    else if (k.includes(':')) {
+      const i = k.indexOf(':'), f = FILT[k.slice(0, i)];
+      if (f) st[f.arr] = (st[f.arr] || []).filter(v => v !== k.slice(i + 1));
+    }
+    else st[k] = D[k] ?? 0;
     if (location.hash === '#/construct') { save(); $('#main').innerHTML = constructView(); return; }
     // Let the chip collapse before the grid moves underneath it, so the reflow reads as caused
     // by the dismissal rather than as the page jumping. Reduced motion skips the wait entirely.
@@ -1570,6 +1892,19 @@ document.addEventListener('click', e => {
     e.preventDefault();
     const id = fav.dataset.cmp, wasIn = st.cmp.includes(id);
     if (toggleCmp(id) && wasIn && location.hash === '#/compare') render();
+    return;
+  }
+  const sh = e.target.closest('[data-share]');
+  if (sh) {
+    const id = sh.dataset.share, url = shareUrl(id), nm = fullName(byId(id));
+    // navigator.share opens the phone's own sheet, which is how a link actually gets into
+    // Telegram or WhatsApp. Everywhere else, and if the sheet is dismissed, copy it instead.
+    const copy = () => navigator.clipboard?.writeText(url).then(() => {
+      const was = sh.textContent;
+      sh.textContent = x('shared');
+      setTimeout(() => { sh.textContent = was; }, 1600);
+    }, () => { });
+    if (navigator.share) navigator.share({ title: nm, url }).catch(copy); else copy();
     return;
   }
   const cb = e.target.closest('[data-cmp-btn]');
@@ -1598,6 +1933,10 @@ document.addEventListener('click', e => {
     if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
     return;
   }
+  const fm = e.target.closest('[data-fmore]');
+  if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
+  if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
+  if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
   const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim]');
@@ -1634,7 +1973,9 @@ document.addEventListener('click', e => {
   $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
 });
 document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.id === 'q') { e.preventDefault(); submitSearch(); return; }
   if (e.key !== 'Escape') return;
+  closeSuggest();
   $$('[data-drop][open]').forEach(o => o.open = false);
   closeAdd();
 });
@@ -1642,14 +1983,57 @@ document.addEventListener('change', e => {
   const el = e.target, f = el.dataset.f;
   if (el.id === 'diffonly') { $('#cwrap').classList.toggle('hide-same', el.checked); return; }
   if (!f) return;
-  if (f === 'brand') st.brands = el.checked ? [...new Set([...st.brands, el.value])] : st.brands.filter(b => b !== el.value);
-  else if (f === 'scr') st.scrs = el.checked ? [...new Set([...st.scrs, el.value])] : st.scrs.filter(v => v !== el.value);
+  if (FILT[f] && FILT[f].kind === 'set') {
+    const a = FILT[f].arr;
+    st[a] = el.checked ? [...new Set([...(st[a] || []), el.value])] : (st[a] || []).filter(v => v !== el.value);
+  }
   else if (f === 'sort') { st.sort = el.value; el.closest('[data-drop]').open = false; }
   else if (f === 'pmin') st.pmin = Math.min(+el.value, st.pmax);
   else if (f === 'pmax') st.pmax = Math.max(+el.value, st.pmin);
   else st[f] = +el.value;
   refresh();
 });
+// Suggestions under the box: the fastest route to ONE product, without leaving the page you
+// are on. The full grid, with every filter, lives behind Enter or the search button.
+const SUGG_MAX = 8;
+function suggestFor(q) {
+  if (!String(q || '').trim()) return [];
+  const hit = DATA.filter(p => hayMatch(p, q));
+  // a product whose name STARTS with what was typed is what the person meant; the rest follow
+  const w = q.trim().toLowerCase();
+  hit.sort((a, b) => (hay(b).startsWith(w) - hay(a).startsWith(w)) || bestOf(a) - bestOf(b));
+  return hit.slice(0, SUGG_MAX);
+}
+function paintSuggest() {
+  const box = $('#sugg');
+  if (!box) return;
+  const list = suggestFor(st.q);
+  const total = DATA.filter(p => hayMatch(p, st.q)).length;
+  if (!list.length) {
+    box.innerHTML = st.q.trim() ? `<p class="sg-none">${esc(x('emptyT'))}</p>` : '';
+    box.hidden = !st.q.trim();
+    setExpanded(!box.hidden);
+    return;
+  }
+  box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
+      <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
+      <span class="sg-n">${esc(fullName(p))}</span>
+      <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
+    + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
+  box.hidden = false;
+  setExpanded(true);
+}
+function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
+// the combobox has to SAY whether its list is open; it was announced closed the whole time
+function setExpanded(v) { const q = $('#q'); if (q) q.setAttribute('aria-expanded', v ? 'true' : 'false'); }
+// Enter, or the search button, is what opens the results page.
+function submitSearch() {
+  closeSuggest();
+  const el = $('#q');
+  if (el) el.blur();
+  save();
+  if (location.hash !== '#/search') location.hash = '#/search'; else render();
+}
 let qT;
 document.addEventListener('input', e => {
   const el = e.target;
@@ -1661,7 +2045,10 @@ document.addEventListener('input', e => {
     qT = setTimeout(() => {
       // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
       // query had nowhere to land. Go to the catalogue and let render() draw the results.
-      if ($('#gridbox')) refresh(); else { save(); location.hash = '#/'; }
+      // typing refines whatever list you are already looking at; it never navigates on its
+      // own. Enter or the search button is what opens the results page.
+      paintSuggest();
+      if ($('#gridbox')) refresh();
     }, 140);
     return;
   }

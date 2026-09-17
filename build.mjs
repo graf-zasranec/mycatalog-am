@@ -3,6 +3,7 @@
 //   index.embedded.html  standalone single file, images inlined    <- one file to email/host
 //   artifact.html        head-less fragment, images inlined        <- for publishing as an Artifact
 // Run: node build.mjs
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 const rd = f => fs.readFileSync(f, 'utf8');
@@ -18,6 +19,9 @@ const TERMS = JSON.parse(rd('data/terms.json'));
 // can stand behind and no offer anyone can buy today, and inventing either is the one thing
 // this catalogue must not do. A name, a shop's pre-order price and a date is all we know.
 const COMING = fs.existsSync('data/coming.json') ? JSON.parse(rd('data/coming.json')) : { when: {}, items: [] };
+// colour photos whose shape fights the main shot: fine on the product page, a lurch in the
+// card carousel. Regenerate with: python tools/pageonly.py
+const PAGEONLY = fs.existsSync('data/pageonly.json') ? JSON.parse(rd('data/pageonly.json')) : {};
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
@@ -76,7 +80,9 @@ function webpWidth(file) {
 const cutW = {};
 for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { cutW[f] = 0; } }
 
-function cutMap(inline) {
+// small: the 600 px copy where one exists. The product page wants the full-size colour shot;
+// the card cycling through the same colours in a 123 px box does not.
+function cutMap(inline, small) {
   const m = {};
   for (const f of cutFiles) {
     const [id, rest] = f.replace(/\.webp$/, '').split('__');
@@ -85,9 +91,10 @@ function cutMap(inline) {
     // shot's width, which punished the good main shots: the Fold 8's 719px colours were thrown
     // out against its 1200px main while the Ultra's 937px ones squeaked past the same ratio.
     if (rest !== 'main' && cutW[f] < 600) continue;
+    const thumb = `images/thumb/${f}`;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
-      : `${CUT}/${f}`;
+      : (small && fs.existsSync(thumb) ? thumb : `${CUT}/${f}`);
   }
   return m;
 }
@@ -118,15 +125,36 @@ function cutMap(inline) {
   console.log('terms self-test: ' + cases.length + ' checks pass');
 }
 
+// The app's own checks. Run here so a build cannot ship logic that fails them; the scraper had
+// 96 checks and the 1800 lines a visitor touches had none.
+{
+  const r = spawnSync(process.execPath, ['tools/app-test.mjs'], { encoding: 'utf8' });
+  process.stdout.write(r.stdout || '');
+  if (r.status !== 0) { process.stderr.write(r.stderr || ''); process.exit(1); }
+}
+
 // SEO. The router lives in the hash, so a crawler only ever sees ONE url - there is no point
 // emitting a sitemap of #/p/... fragments, because fragments are not indexed as separate pages.
 // What does carry weight on a single page: a real title and description, the social card, a
 // canonical, and an ItemList that names the products and their cheapest Armenian price.
 const SITE = 'https://graf-zasranec.github.io/mycatalog-am/';
-const bestOf = p => {
-  const offs = (PRICES.offers && PRICES.offers[p.id]) || [];
-  const live = offs.map(o => o.price).filter(Number.isFinite);
-  return live.length ? Math.min(...live) : p.priceAmd;
+const pricesOf = p => ((PRICES.offers && PRICES.offers[p.id]) || [])
+  .map(o => o.price).filter(Number.isFinite);
+const bestOf = p => { const l = pricesOf(p); return l.length ? Math.min(...l) : p.priceAmd; };
+// A single Offer says "this costs X" and throws away the two facts this site exists to publish:
+// how many shops sell it and what the spread is. AggregateOffer carries both, and it is what
+// earns a price range in a search result rather than one bare number.
+const offerOf = p => {
+  const l = pricesOf(p);
+  if (l.length < 2) {
+    return { '@type': 'Offer', priceCurrency: 'AMD', price: bestOf(p), availability: 'https://schema.org/InStock' };
+  }
+  return {
+    '@type': 'AggregateOffer', priceCurrency: 'AMD',
+    lowPrice: Math.min(...l), highPrice: Math.max(...l),
+    offerCount: new Set(((PRICES.offers && PRICES.offers[p.id]) || []).map(o => o.shop)).size,
+    availability: 'https://schema.org/InStock'
+  };
 };
 const SEO = {
   url: SITE,
@@ -148,11 +176,27 @@ const SEO = {
         brand: { '@type': 'Brand', name: p.brand },
         category: p.category || 'phone',
         url: SITE + '#/p/' + p.id,
-        offers: { '@type': 'Offer', priceCurrency: 'AMD', price: bestOf(p), availability: 'https://schema.org/InStock' }
+        offers: offerOf(p)
       }
     }))
   }
 };
+
+// A static site on GitHub Pages knows nothing about its own visitors: no server, no log anyone
+// can read. Counting them needs a third party, so which one is a file and not a code change,
+// and with no file there is no counter, no third-party request and no change to the policy
+// below. data/analytics.json: { "provider": "umami", "id": "<site id>", "host": "<origin>" }
+// or { "provider": "goatcounter", "id": "<your code>" }.
+const AN = fs.existsSync('data/analytics.json') ? JSON.parse(rd('data/analytics.json')) : null;
+const COUNTER = !AN ? { tag: '', script: [], connect: [], img: [] }
+  : AN.provider === 'umami' ? {
+      tag: `<script defer src="${AN.host || 'https://cloud.umami.is'}/script.js" data-website-id="${AN.id}"><\/script>`,
+      script: [AN.host || 'https://cloud.umami.is'], connect: [AN.host || 'https://cloud.umami.is'], img: [] }
+  : AN.provider === 'goatcounter' ? {
+      tag: `<script data-goatcounter="https://${AN.id}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"><\/script>`,
+      script: ['https://gc.zgo.at'], connect: [`https://${AN.id}.goatcounter.com`], img: [`https://${AN.id}.goatcounter.com`] }
+  : (() => { throw new Error('data/analytics.json: unknown provider ' + AN.provider); })();
+if (AN) console.log(`visitor counter: ${AN.provider}`);
 
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
@@ -167,7 +211,7 @@ const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').di
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${COUNTER.connect.length ? COUNTER.connect.join(' ') : "'none'"}; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="${SEO.desc}">
@@ -185,9 +229,10 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="twitter:title" content="${SEO.title}">
 <meta name="twitter:description" content="${SEO.desc}">
 <meta name="twitter:image" content="${SEO.url}${SEO.img}">
-<script type="application/ld+json">${JSON.stringify(SEO.ld)}<\/script>
+<script type="application/ld+json">${JSON.stringify(SEO.ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>${THEME_JS}<\/script>
+${COUNTER.tag}
 `;
 const HEAD_CLOSE = `</head><body>
 `;
@@ -195,6 +240,13 @@ const HEAD_CLOSE = `</head><body>
 // The artifact platform supplies its own <head>, so the fragment build stays as-is. The
 // standalone files are whole documents, and there <title>/<link>/<style> were landing in
 // <body> - valid only because browsers hoist them, and it delays the webfont.
+// The shell ships a placeholder <title> so the file opens sensibly on its own; the build puts
+// the real one in. _app.js overwrites document.title per route, so this is what a crawler and
+// the first paint see, and it is the line a search result prints.
+function seoTitle(shell) {
+  return shell.replace('<title>MyCatalog</title>', `<title>${SEO.title}</title>`);
+}
+
 function splitShell(shell) {
   const i = shell.lastIndexOf('</style>');
   return i < 0 ? { head: '', body: shell } : { head: shell.slice(0, i + 8), body: shell.slice(i + 8) };
@@ -202,21 +254,32 @@ function splitShell(shell) {
 
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
+  // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
+  const colorThumbs = inline ? {} : cutMap(false, true);
   // main shot: the transparent cutout when we have one, else the original photo
-  const main = {};
-  for (const p of phones) {
+  // Two sizes of the same photograph. A card draws it into a box 123 px wide on a phone and was
+  // being handed the 1200 px cutout the product page uses - 829 KB of images for thirteen
+  // thumbnails. images/thumb holds a 600 px copy, which still clears a retina desktop card, and
+  // the full-size file is left to the two places that fill the screen with it.
+  const THUMB = 'images/thumb';
+  const src = (id, small) => {
+    const t = `${THUMB}/${id}__main.webp`;
+    return small && fs.existsSync(t) ? t : `${CUT}/${id}__main.webp`;
+  };
+  const at = f => inline ? 'data:image/webp;base64,' + fs.readFileSync(f).toString('base64') : f;
+  const main = {}, thumb = {};
+  for (const p of [...phones, ...(COMING.items || [])]) {
     const cut = `${CUT}/${p.id}__main.webp`;
-    if (fs.existsSync(cut)) {
-      main[p.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
-    } else console.warn('  ! missing image for', p.id);
+    if (!fs.existsSync(cut)) { console.warn('  ! missing image for', p.id); continue; }
+    main[p.id] = at(cut);
+    // The embedded build carries every photo as a data URI. Inlining a second copy of all 198
+    // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
+    // THUMB() falls through to IMG().
+    if (!inline) thumb[p.id] = src(p.id, true);
   }
-  for (const c of COMING.items || []) {
-    const cut = `${CUT}/${c.id}__main.webp`;
-    if (fs.existsSync(cut)) main[c.id] = inline ? 'data:image/webp;base64,' + fs.readFileSync(cut).toString('base64') : cut;
-    else console.warn('  ! missing image for', c.id, '(coming soon)');
-  }
-  const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst COLORIMG=${JSON.stringify(colors)};\n`;
-  const shell = rd('_shell.html');
+  const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
+    + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
+  const shell = seoTitle(rd('_shell.html'));
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
   let appJs = '\n'
     + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\nconst VERD=${JSON.stringify(VERD)};\n`
@@ -224,6 +287,7 @@ function build({ inline, standalone }) {
     + `const HISTORY=${JSON.stringify(HISTORY)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
     + `const COMING=${JSON.stringify(COMING)};\n`
+    + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here
@@ -240,9 +304,99 @@ fs.writeFileSync('robots.txt', `User-agent: *
 Allow: /
 Sitemap: ${SITE}sitemap.xml
 `);
+// One shareable page per product. Paste a #/p/... link into Telegram and nothing comes back:
+// the fragment is never sent to the server, so no scraper can know which product it names. These
+// are real urls with the product's own title, price and picture in the head, and a refresh that
+// carries a person straight into the catalogue. The body is what a crawler and a reader with no
+// JavaScript get, so it is not an empty doorway.
+//
+// It also gives the site 198 indexable urls where the sitemap could only ever list one.
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const nameOf = p => p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name;
+const amd = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0') + '\u00a0\u058f';
+const shopsOf = p => new Set(((PRICES.offers && PRICES.offers[p.id]) || []).map(o => o.shop)).size;
+// Armenian plural is the bare noun after any number, so one form is correct for all of them.
+const DESC = p => {
+  const n = shopsOf(p);
+  return n
+    ? `\u0533\u056b\u0576\u0568\u055d ${amd(bestOf(p))}-\u056b\u0581\u055d ${n} \u056d\u0561\u0576\u0578\u0582\u0569\u056b \u0563\u0576\u0565\u0580\u056b \u0570\u0561\u0574\u0565\u0574\u0561\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576 MyCatalog-\u0578\u0582\u0574\u0589`
+    : `\u0531\u0575\u057d \u057a\u0561\u0570\u056b\u0576 \u0570\u0561\u0575\u056f\u0561\u056f\u0561\u0576 \u056d\u0561\u0576\u0578\u0582\u0569\u0576\u0565\u0580\u0578\u0582\u0574 \u0561\u057c\u056f\u0561 \u0579\u0567\u0589`;
+};
+
+let shared = 0;
+for (const p of phones) {
+  const card = `images/social/${p.id}.jpg`;
+  const img = SITE + (fs.existsSync(card) ? card : SEO.img);
+  const url = `${SITE}p/${p.id}/`;
+  const title = `${nameOf(p)} \u2014 \u0563\u056b\u0576\u0568 \u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576\u0578\u0582\u0574 | MyCatalog`;
+  const ld = { '@context': 'https://schema.org', '@type': 'Product', name: nameOf(p),
+    brand: { '@type': 'Brand', name: p.brand }, category: p.category || 'phone',
+    image: img, url, offers: offerOf(p) };
+  const page = `<!doctype html>
+<html lang="hy"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="refresh" content="0;url=../../#/p/${p.id}">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(DESC(p))}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MyCatalog">
+<meta property="og:locale" content="hy_AM">
+<meta property="og:title" content="${esc(nameOf(p))}">
+<meta property="og:description" content="${esc(DESC(p))}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(nameOf(p))}">
+<meta name="twitter:description" content="${esc(DESC(p))}">
+<meta name="twitter:image" content="${img}">
+<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
+<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
+display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
+img{max-width:min(420px,100%);height:auto}h1{font-size:22px;margin:16px 0 4px}
+p{margin:0 0 16px;color:#4A5262}a{color:#9E2B25}</style>
+</head><body><div>
+<img src="../../images/social/${p.id}.jpg" alt="${esc(nameOf(p))}" width="1200" height="630">
+<h1>${esc(nameOf(p))}</h1>
+<p>${esc(DESC(p))}</p>
+<a href="../../#/p/${p.id}">\u0532\u0561\u0581\u0565\u056c \u056f\u0561\u057f\u0561\u056c\u0578\u0563\u0578\u0582\u0574</a>
+</div></body></html>
+`;
+  fs.mkdirSync(`p/${p.id}`, { recursive: true });
+  fs.writeFileSync(`p/${p.id}/index.html`, page);
+  shared++;
+}
+console.log(`${shared} share page(s) under p/`);
+
+// A mistyped product url, or one from a product that has since left the catalogue, gets
+// GitHub's own 404 - a black page in English about a repository. This one is the catalogue's,
+// in the catalogue's language, and it offers the way back.
+fs.writeFileSync('404.html', `<!doctype html>
+<html lang="hy"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Էջը չի գտնվել | MyCatalog</title>
+<meta name="robots" content="noindex">
+<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
+display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
+h1{font-size:26px;margin:0 0 6px}p{margin:0 0 20px;color:#4A5262}
+a{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:12px 22px;border-radius:50px}
+@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}p{color:#B3BBC9}a{background:#E4574F;color:#12151D}}</style>
+</head><body><div>
+<h1>Էջը չի գտնվել</h1>
+<p>Հնարավոր է՝ այս ապրանքը այլևս կատալոգում չէ։</p>
+<a href="${SITE}">Բացել կատալոգը</a>
+</div></body></html>
+`);
+
+const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>${SITE}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+ <url><loc>${SITE}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+${phones.map(p => ` <url><loc>${SITE}p/${p.id}/</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>`).join('\n')}
 </urlset>
 `);
 fs.writeFileSync('index.html', build({ inline: false, standalone: true }));

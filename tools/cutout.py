@@ -47,7 +47,10 @@ MAXUP = 1.15       # never upscale a small source by more than this, it only add
 # was good everywhere except white-on-white, where it bit a piece out of the 17e's back. bria-rmbg
 # is right on all eight: both phones in a two-shot render, the headband hole and the strap loop
 # left open, the white phone whole. It costs about 100s a photo here, which is the price.
-SESSION = new_session('bria-rmbg')
+# CUT_PROVIDER picks an onnxruntime provider. DmlExecutionProvider was tried on this machine's
+# Iris Xe and took the graphics driver down mid-inference (device removed), so this stays on CPU.
+_prov = os.environ.get('CUT_PROVIDER')
+SESSION = new_session('bria-rmbg', **({'providers': [_prov, 'CPUExecutionProvider']} if _prov else {}))
 
 
 def model_alpha(img):

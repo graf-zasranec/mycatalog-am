@@ -1,626 +1,638 @@
 [
-  {
-    "key": "app.tagline",
-    "hy": "Համեմատի՛ր և ընտրի՛ր քո հեռախոսը",
-    "ru": "Сравни смартфоны — выбери свой",
-    "en": "Compare phones. Choose smarter."
-  },
-  {
-    "key": "nav.catalog",
-    "hy": "Կատալոգ",
-    "ru": "Каталог",
-    "en": "Catalog"
-  },
-  {
-    "key": "nav.compare",
-    "hy": "Համեմատություն",
-    "ru": "Сравнение",
-    "en": "Compare"
-  },
-  {
-    "key": "nav.search_placeholder",
-    "hy": "Փնտրել մոդել կամ բրենդ",
-    "ru": "Модель или бренд",
-    "en": "Search model or brand"
-  },
-  {
-    "key": "common.reset",
-    "hy": "Մաքրել",
-    "ru": "Сбросить",
-    "en": "Reset"
-  },
-  {
-    "key": "common.from",
-    "hy": "Սկսած",
-    "ru": "От",
-    "en": "From"
-  },
-  {
-    "key": "common.to",
-    "hy": "Մինչև",
-    "ru": "До",
-    "en": "To"
-  },
-  {
-    "key": "common.yes",
-    "hy": "Այո",
-    "ru": "Да",
-    "en": "Yes"
-  },
-  {
-    "key": "common.no",
-    "hy": "Ոչ",
-    "ru": "Нет",
-    "en": "No"
-  },
-  {
-    "key": "common.results_count",
-    "hy": "{n} արդյունք",
-    "ru": "Результатов: {n}",
-    "en": "{n} results"
-  },
-  {
-    "key": "common.demo_prices_note",
-    "hy": "Գները ցուցադրական են և չեն թարմացվում խանութներից։",
-    "ru": "Цены примерные: это демо-данные, а не реальные предложения магазинов.",
-    "en": "Prices are indicative demo data, not a live shop feed."
-  },
-  {
-    "key": "common.theme",
-    "hy": "Թեմա",
-    "ru": "Тема",
-    "en": "Theme"
-  },
-  {
-    "key": "sort.label",
-    "hy": "Դասավորում",
-    "ru": "Сортировка",
-    "en": "Sort by"
-  },
-  {
-    "key": "sort.popular",
-    "hy": "Ամենապահանջված",
-    "ru": "Популярные",
-    "en": "Popular"
-  },
-  {
-    "key": "sort.price_asc",
-    "hy": "Գինը՝ աճող",
-    "ru": "Сначала дешёвые",
-    "en": "Price: low to high"
-  },
-  {
-    "key": "sort.price_desc",
-    "hy": "Գինը՝ նվազող",
-    "ru": "Сначала дорогие",
-    "en": "Price: high to low"
-  },
-  {
-    "key": "sort.newest",
-    "hy": "Նորույթներ",
-    "ru": "Новинки",
-    "en": "Newest"
-  },
-  {
-    "key": "sort.performance",
-    "hy": "Հզորություն",
-    "ru": "Производительность",
-    "en": "Performance"
-  },
-  {
-    "key": "filter.brand",
-    "hy": "Բրենդ",
-    "ru": "Бренд",
-    "en": "Brand"
-  },
-  {
-    "key": "filter.price",
-    "hy": "Գին",
-    "ru": "Цена",
-    "en": "Price"
-  },
-  {
-    "key": "filter.ram",
-    "hy": "RAM",
-    "ru": "ОЗУ",
-    "en": "RAM"
-  },
-  {
-    "key": "filter.storage",
-    "hy": "Հիշողություն",
-    "ru": "Память",
-    "en": "Storage"
-  },
-  {
-    "key": "filter.screen_size",
-    "hy": "Էկրանի չափ",
-    "ru": "Диагональ",
-    "en": "Screen size"
-  },
-  {
-    "key": "filter.battery",
-    "hy": "Մարտկոց",
-    "ru": "Батарея",
-    "en": "Battery"
-  },
-  {
-    "key": "filter.refresh_rate",
-    "hy": "Էկրանի թարմացում",
-    "ru": "Частота обновления",
-    "en": "Refresh rate"
-  },
-  {
-    "key": "sec.display",
-    "hy": "Էկրան",
-    "ru": "Экран",
-    "en": "Display"
-  },
-  {
-    "key": "sec.performance",
-    "hy": "Հզորություն",
-    "ru": "Производительность",
-    "en": "Performance"
-  },
-  {
-    "key": "sec.memory",
-    "hy": "Հիշողություն",
-    "ru": "Память",
-    "en": "Memory"
-  },
-  {
-    "key": "sec.camera",
-    "hy": "Տեսախցիկ",
-    "ru": "Камера",
-    "en": "Camera"
-  },
-  {
-    "key": "sec.battery",
-    "hy": "Մարտկոց",
-    "ru": "Батарея",
-    "en": "Battery"
-  },
-  {
-    "key": "sec.body",
-    "hy": "Կորպուս",
-    "ru": "Корпус",
-    "en": "Body"
-  },
-  {
-    "key": "sec.connectivity",
-    "hy": "Կապ",
-    "ru": "Связь",
-    "en": "Connectivity"
-  },
-  {
-    "key": "sec.software",
-    "hy": "Ծրագրակազմ",
-    "ru": "Софт",
-    "en": "Software"
-  },
-  {
-    "key": "sec.colors",
-    "hy": "Գույներ",
-    "ru": "Цвета",
-    "en": "Colors"
-  },
-  {
-    "key": "f.screen_size",
-    "hy": "Անկյունագիծ",
-    "ru": "Диагональ",
-    "en": "Screen size"
-  },
-  {
-    "key": "f.screen_type",
-    "hy": "Էկրանի տեսակ",
-    "ru": "Тип экрана",
-    "en": "Screen type"
-  },
-  {
-    "key": "f.resolution",
-    "hy": "Լուծաչափ",
-    "ru": "Разрешение",
-    "en": "Resolution"
-  },
-  {
-    "key": "f.refresh_rate",
-    "hy": "Թարմացման հաճախականություն",
-    "ru": "Частота обновления",
-    "en": "Refresh rate"
-  },
-  {
-    "key": "f.ppi",
-    "hy": "Խտություն, PPI",
-    "ru": "Плотность пикселей, PPI",
-    "en": "Pixel density"
-  },
-  {
-    "key": "f.brightness",
-    "hy": "Պայծառություն",
-    "ru": "Яркость",
-    "en": "Brightness"
-  },
-  {
-    "key": "f.protection",
-    "hy": "Էկրանի պաշտպանություն",
-    "ru": "Защита экрана",
-    "en": "Protection"
-  },
-  {
-    "key": "f.chipset",
-    "hy": "Չիպսեթ",
-    "ru": "Чипсет",
-    "en": "Chipset"
-  },
-  {
-    "key": "f.process",
-    "hy": "Տեխնոլոգիա, նմ",
-    "ru": "Техпроцесс, нм",
-    "en": "Process"
-  },
-  {
-    "key": "f.cpu",
-    "hy": "Պրոցեսոր",
-    "ru": "Процессор",
-    "en": "CPU"
-  },
-  {
-    "key": "f.gpu",
-    "hy": "Գրաֆիկա",
-    "ru": "Графика",
-    "en": "GPU"
-  },
-  {
-    "key": "f.antutu",
-    "hy": "AnTuTu միավոր",
-    "ru": "Баллы AnTuTu",
-    "en": "AnTuTu score"
-  },
-  {
-    "key": "f.ram",
-    "hy": "Օպերատիվ հիշողություն",
-    "ru": "Оперативная память",
-    "en": "RAM"
-  },
-  {
-    "key": "f.storage",
-    "hy": "Ներքին հիշողություն",
-    "ru": "Встроенная память",
-    "en": "Storage"
-  },
-  {
-    "key": "f.case_size",
-    "hy": "Կորպուսի չափ",
-    "ru": "Размер корпуса",
-    "en": "Case size"
-  },
-  {
-    "key": "f.card_slot",
-    "hy": "Հիշողության քարտ",
-    "ru": "Слот для карты памяти",
-    "en": "Card slot"
-  },
-  {
-    "key": "f.main_cam",
-    "hy": "Հիմնական տեսախցիկ",
-    "ru": "Основная камера",
-    "en": "Main camera"
-  },
-  {
-    "key": "f.ultrawide",
-    "hy": "Գերլայն",
-    "ru": "Сверхширокоугольная",
-    "en": "Ultrawide"
-  },
-  {
-    "key": "f.telephoto",
-    "hy": "Տելեֆոտո",
-    "ru": "Телеобъектив",
-    "en": "Telephoto"
-  },
-  {
-    "key": "f.front_cam",
-    "hy": "Առջևի տեսախցիկ",
-    "ru": "Фронтальная камера",
-    "en": "Front camera"
-  },
-  {
-    "key": "f.video",
-    "hy": "Տեսանկարահանում",
-    "ru": "Видеосъёмка",
-    "en": "Video"
-  },
-  {
-    "key": "f.capacity",
-    "hy": "Տարողություն",
-    "ru": "Ёмкость",
-    "en": "Capacity"
-  },
-  {
-    "key": "f.charging",
-    "hy": "Լիցքավորում",
-    "ru": "Зарядка",
-    "en": "Charging"
-  },
-  {
-    "key": "f.wireless",
-    "hy": "Անլար լիցքավորում",
-    "ru": "Беспроводная зарядка",
-    "en": "Wireless charging"
-  },
-  {
-    "key": "f.dimensions",
-    "hy": "Չափսեր",
-    "ru": "Размеры",
-    "en": "Dimensions"
-  },
-  {
-    "key": "f.weight",
-    "hy": "Քաշ",
-    "ru": "Вес",
-    "en": "Weight"
-  },
-  {
-    "key": "f.materials",
-    "hy": "Նյութեր",
-    "ru": "Материалы",
-    "en": "Materials"
-  },
-  {
-    "key": "f.ip_rating",
-    "hy": "IP պաշտպանություն",
-    "ru": "Класс защиты IP",
-    "en": "IP rating"
-  },
-  {
-    "key": "f.network",
-    "hy": "Ցանցեր",
-    "ru": "Сети",
-    "en": "Network"
-  },
-  {
-    "key": "f.wifi",
-    "hy": "Wi-Fi",
-    "ru": "Wi-Fi",
-    "en": "Wi-Fi"
-  },
-  {
-    "key": "f.bluetooth",
-    "hy": "Bluetooth",
-    "ru": "Bluetooth",
-    "en": "Bluetooth"
-  },
-  {
-    "key": "f.nfc",
-    "hy": "NFC",
-    "ru": "NFC",
-    "en": "NFC"
-  },
-  {
-    "key": "f.sim",
-    "hy": "SIM քարտեր",
-    "ru": "SIM-карты",
-    "en": "SIM"
-  },
-  {
-    "key": "f.os",
-    "hy": "Օպերացիոն համակարգ",
-    "ru": "Операционная система",
-    "en": "OS"
-  },
-  {
-    "key": "f.updates",
-    "hy": "Թարմացումներ",
-    "ru": "Обновления",
-    "en": "Updates"
-  },
-  {
-    "key": "f.released",
-    "hy": "Թողարկում",
-    "ru": "Дата выхода",
-    "en": "Released"
-  },
-  {
-    "key": "detail.add_compare",
-    "hy": "Ավելացնել համեմատությանը",
-    "ru": "Добавить к сравнению",
-    "en": "Add to compare"
-  },
-  {
-    "key": "detail.in_compare",
-    "hy": "Ավելացված է",
-    "ru": "В сравнении",
-    "en": "In compare"
-  },
-  {
-    "key": "detail.full_specs",
-    "hy": "Բոլոր բնութագրերը",
-    "ru": "Все характеристики",
-    "en": "Full specs"
-  },
-  {
-    "key": "detail.similar",
-    "hy": "Նմանատիպ մոդելներ",
-    "ru": "Похожие модели",
-    "en": "Similar phones"
-  },
-  {
-    "key": "compare.title",
-    "hy": "Համեմատություն",
-    "ru": "Сравнение",
-    "en": "Compare"
-  },
-  {
-    "key": "compare.empty",
-    "hy": "Դեռ համեմատելու բան չկա",
-    "ru": "Пока нечего сравнивать",
-    "en": "Nothing to compare yet"
-  },
-  {
-    "key": "compare.add_phone",
-    "hy": "Ավելացնել հեռախոս",
-    "ru": "Добавить телефон",
-    "en": "Add phone"
-  },
-  {
-    "key": "compare.add_x",
-    "hy": "Ավելացնել {x}",
-    "ru": "Добавить: {x}",
-    "en": "Add {x}"
-  },
-  {
-    "key": "compare.clear",
-    "hy": "Մաքրել բոլորը",
-    "ru": "Очистить",
-    "en": "Clear"
-  },
-  {
-    "key": "compare.diff_only",
-    "hy": "Միայն տարբերությունները",
-    "ru": "Только отличия",
-    "en": "Differences only"
-  },
-  {
-    "key": "compare.max_reached",
-    "hy": "Կարելի է համեմատել առավելագույնը 4 հեռախոս",
-    "ru": "Можно сравнить до 4 телефонов",
-    "en": "You can compare up to 4 phones"
-  },
-  {
-    "key": "compare.same_category",
-    "hy": "Համեմատել կարելի է միայն նույն տեսակի ապրանքներ",
-    "ru": "Сравнивать можно только товары одного типа",
-    "en": "You can only compare products of the same type"
-  },
-  {
-    "key": "compare.in_list",
-    "hy": "Համեմատության մեջ",
-    "ru": "В сравнении",
-    "en": "Models in comparison"
-  },
-  {
-    "key": "catalog.title",
-    "hy": "Կատալոգ",
-    "ru": "Каталог",
-    "en": "Catalog"
-  },
-  {
-    "key": "f.touch",
-    "hy": "Հպումային էկրան",
-    "ru": "Сенсорный экран",
-    "en": "Touchscreen"
-  },
-  {
-    "key": "f.graphics",
-    "hy": "Վիդեոքարտ",
-    "ru": "Видеокарта",
-    "en": "Graphics"
-  },
-  {
-    "key": "construct.title",
-    "hy": "Կոնստրուկտոր",
-    "ru": "Конструктор",
-    "en": "Construct"
-  },
-  {
-    "key": "construct.lead",
-    "hy": "Ընտրի՛ր՝ ինչ ես փնտրում, և մենք կցուցադրենք համապատասխանողները։",
-    "ru": "Выберите, что вы ищете, и мы покажем подходящие модели.",
-    "en": "Pick what you are after and we will show what matches."
-  },
-  {
-    "key": "construct.pick_cat",
-    "hy": "Ի՞նչ ես փնտրում",
-    "ru": "Что вы ищете",
-    "en": "What are you looking for"
-  },
-  {
-    "key": "construct.show",
-    "hy": "Ցույց տալ",
-    "ru": "Показать",
-    "en": "Show"
-  },
-  {
-    "key": "construct.fixed",
-    "hy": "Այս բաժնում բոլորն ունեն",
-    "ru": "Во всём разделе одинаково",
-    "en": "Same across this category"
-  },
-  {
-    "key": "construct.none",
-    "hy": "Այս պայմաններով ոչինչ չկա. թուլացրո՛ւ մեկը։",
-    "ru": "Под эти условия ничего нет — ослабьте одно из них.",
-    "en": "Nothing matches — loosen one of these."
-  },
-  {
-    "key": "nav.contact",
-    "hy": "Կապ",
-    "ru": "Контакты",
-    "en": "Contact"
-  },
-  {
-    "key": "nav.privacy",
-    "hy": "Գաղտնիություն",
-    "ru": "Конфиденциальность",
-    "en": "Privacy"
-  },
-  {
-    "key": "privacy.title",
-    "hy": "Գաղտնիության քաղաքականություն",
-    "ru": "Политика конфиденциальности",
-    "en": "Privacy policy"
-  },
-  {
-    "key": "privacy.p1",
-    "hy": "Այս կայքը հաշիվներ չունի, չի հավաքում անձնական տվյալներ և չի օգտագործում հետագծող cookie-ներ։",
-    "ru": "На этом сайте нет аккаунтов, он не собирает персональные данные и не использует отслеживающие cookie.",
-    "en": "This site has no accounts, collects no personal data and uses no tracking cookies."
-  },
-  {
-    "key": "privacy.p2",
-    "hy": "Ընտրած լեզուն, թեման, զտիչները և համեմատության ցանկը պահվում են միայն ձեր դիտարկիչում (localStorage) և մեզ չեն ուղարկվում։ Դիտարկիչի տվյալները մաքրելը դրանք ջնջում է։",
-    "ru": "Выбранный язык, тема, фильтры и список сравнения хранятся только в вашем браузере (localStorage) и нам не отправляются. Очистка данных браузера удаляет их.",
-    "en": "Your language, theme, filters and compare list are stored only in your browser (localStorage) and are never sent to us. Clearing your browser data deletes them."
-  },
-  {
-    "key": "privacy.p3",
-    "hy": "Էջը տառատեսակները բեռնում է Google Fonts-ից. դա միակ արտաքին հարցումն է, և Google-ը դրա ընթացքում տեսնում է ձեր IP հասցեն։",
-    "ru": "Страница загружает шрифты из Google Fonts — это единственный внешний запрос, и Google при этом видит ваш IP-адрес.",
-    "en": "The page loads fonts from Google Fonts. That is the only external request, and Google sees your IP address when it happens."
-  },
-  {
-    "key": "privacy.p4",
-    "hy": "Խանութների հղումները տանում են այլ կայքեր, որոնք ունեն իրենց քաղաքականությունը։ Գները հավաքվում են հրապարակային էջերից և կարող են հնանալ։",
-    "ru": "Ссылки на магазины ведут на сторонние сайты с собственными политиками. Цены собираются с публичных страниц и могут устареть.",
-    "en": "Shop links lead to other sites with their own policies. Prices are collected from public pages and can go stale."
-  },
-  {
-    "key": "contact.title",
-    "hy": "Կապ",
-    "ru": "Связаться",
-    "en": "Contact"
-  },
-  {
-    "key": "contact.p1",
-    "hy": "Սխա՞լ գին, բացակայող մոդել, կամ խանութ, որը պետք է ավելացվի — գրե՛ք։",
-    "ru": "Неверная цена, отсутствующая модель или магазин, который стоит добавить — напишите.",
-    "en": "A wrong price, a missing model, or a shop worth adding — write in."
-  },
-  {
-    "key": "contact.p2",
-    "hy": "Խանութներին. եթե ցանկանում եք, որ ձեր գները հայտնվեն այստեղ, ուղարկե՛ք ապրանքների ֆիդ կամ թույլատրե՛ք մեր crawler-ին։",
-    "ru": "Магазинам: если хотите, чтобы ваши цены были здесь, пришлите фид товаров или разрешите доступ нашему краулеру.",
-    "en": "Shops: to have your prices here, send a product feed or allow our crawler."
-  },
-  {
-    "key": "contact.email",
-    "hy": "CONTACT_EMAIL_HERE",
-    "ru": "CONTACT_EMAIL_HERE",
-    "en": "CONTACT_EMAIL_HERE"
-  },
-  {
-    "key": "common.skip",
-    "hy": "Անցնել բովանդակությանը",
-    "ru": "К содержимому",
-    "en": "Skip to content"
-  }
+ {
+  "key": "app.tagline",
+  "hy": "Համեմատի՛ր և ընտրի՛ր քո հեռախոսը",
+  "ru": "Сравни смартфоны — выбери свой",
+  "en": "Compare phones. Choose smarter."
+ },
+ {
+  "key": "nav.catalog",
+  "hy": "Կատալոգ",
+  "ru": "Каталог",
+  "en": "Catalog"
+ },
+ {
+  "key": "nav.compare",
+  "hy": "Համեմատություն",
+  "ru": "Сравнение",
+  "en": "Compare"
+ },
+ {
+  "key": "nav.search_placeholder",
+  "hy": "Փնտրել մոդել կամ բրենդ",
+  "ru": "Модель или бренд",
+  "en": "Search model or brand"
+ },
+ {
+  "key": "common.reset",
+  "hy": "Մաքրել",
+  "ru": "Сбросить",
+  "en": "Reset"
+ },
+ {
+  "key": "common.from",
+  "hy": "Սկսած",
+  "ru": "От",
+  "en": "From"
+ },
+ {
+  "key": "common.to",
+  "hy": "Մինչև",
+  "ru": "До",
+  "en": "To"
+ },
+ {
+  "key": "common.yes",
+  "hy": "Այո",
+  "ru": "Да",
+  "en": "Yes"
+ },
+ {
+  "key": "common.no",
+  "hy": "Ոչ",
+  "ru": "Нет",
+  "en": "No"
+ },
+ {
+  "key": "common.results_count",
+  "hy": "{n} արդյունք",
+  "ru": "Результатов: {n}",
+  "en": "{n} results"
+ },
+ {
+  "key": "common.demo_prices_note",
+  "hy": "Գները ցուցադրական են և չեն թարմացվում խանութներից։",
+  "ru": "Цены примерные: это демо-данные, а не реальные предложения магазинов.",
+  "en": "Prices are indicative demo data, not a live shop feed."
+ },
+ {
+  "key": "common.theme",
+  "hy": "Թեմա",
+  "ru": "Тема",
+  "en": "Theme"
+ },
+ {
+  "key": "sort.label",
+  "hy": "Դասավորում",
+  "ru": "Сортировка",
+  "en": "Sort by"
+ },
+ {
+  "key": "sort.popular",
+  "hy": "Ամենապահանջված",
+  "ru": "Популярные",
+  "en": "Popular"
+ },
+ {
+  "key": "sort.price_asc",
+  "hy": "Գինը՝ աճող",
+  "ru": "Сначала дешёвые",
+  "en": "Price: low to high"
+ },
+ {
+  "key": "sort.price_desc",
+  "hy": "Գինը՝ նվազող",
+  "ru": "Сначала дорогие",
+  "en": "Price: high to low"
+ },
+ {
+  "key": "sort.newest",
+  "hy": "Նորույթներ",
+  "ru": "Новинки",
+  "en": "Newest"
+ },
+ {
+  "key": "sort.performance",
+  "hy": "Հզորություն",
+  "ru": "Производительность",
+  "en": "Performance"
+ },
+ {
+  "key": "filter.brand",
+  "hy": "Բրենդ",
+  "ru": "Бренд",
+  "en": "Brand"
+ },
+ {
+  "key": "filter.price",
+  "hy": "Գին",
+  "ru": "Цена",
+  "en": "Price"
+ },
+ {
+  "key": "filter.ram",
+  "hy": "Օպերատիվ հիշող.",
+  "ru": "ОЗУ",
+  "en": "RAM"
+ },
+ {
+  "key": "filter.storage",
+  "hy": "Հիշողություն",
+  "ru": "Память",
+  "en": "Storage"
+ },
+ {
+  "key": "filter.screen_size",
+  "hy": "Էկրանի չափ",
+  "ru": "Диагональ",
+  "en": "Screen size"
+ },
+ {
+  "key": "filter.battery",
+  "hy": "Մարտկոց",
+  "ru": "Батарея",
+  "en": "Battery"
+ },
+ {
+  "key": "filter.refresh_rate",
+  "hy": "Էկրանի թարմացում",
+  "ru": "Частота обновления",
+  "en": "Refresh rate"
+ },
+ {
+  "key": "sec.display",
+  "hy": "Էկրան",
+  "ru": "Экран",
+  "en": "Display"
+ },
+ {
+  "key": "sec.performance",
+  "hy": "Հզորություն",
+  "ru": "Производительность",
+  "en": "Performance"
+ },
+ {
+  "key": "sec.memory",
+  "hy": "Հիշողություն",
+  "ru": "Память",
+  "en": "Memory"
+ },
+ {
+  "key": "sec.camera",
+  "hy": "Տեսախցիկ",
+  "ru": "Камера",
+  "en": "Camera"
+ },
+ {
+  "key": "sec.battery",
+  "hy": "Մարտկոց",
+  "ru": "Батарея",
+  "en": "Battery"
+ },
+ {
+  "key": "sec.body",
+  "hy": "Կորպուս",
+  "ru": "Корпус",
+  "en": "Body"
+ },
+ {
+  "key": "sec.connectivity",
+  "hy": "Կապ",
+  "ru": "Связь",
+  "en": "Connectivity"
+ },
+ {
+  "key": "sec.software",
+  "hy": "Ծրագրակազմ",
+  "ru": "Софт",
+  "en": "Software"
+ },
+ {
+  "key": "sec.colors",
+  "hy": "Գույներ",
+  "ru": "Цвета",
+  "en": "Colors"
+ },
+ {
+  "key": "f.screen_size",
+  "hy": "Անկյունագիծ",
+  "ru": "Диагональ",
+  "en": "Screen size"
+ },
+ {
+  "key": "f.screen_type",
+  "hy": "Էկրանի տեսակ",
+  "ru": "Тип экрана",
+  "en": "Screen type"
+ },
+ {
+  "key": "f.resolution",
+  "hy": "Լուծաչափ",
+  "ru": "Разрешение",
+  "en": "Resolution"
+ },
+ {
+  "key": "f.refresh_rate",
+  "hy": "Թարմացման հաճախականություն",
+  "ru": "Частота обновления",
+  "en": "Refresh rate"
+ },
+ {
+  "key": "f.ppi",
+  "hy": "Խտություն, PPI",
+  "ru": "Плотность пикселей, PPI",
+  "en": "Pixel density"
+ },
+ {
+  "key": "f.brightness",
+  "hy": "Պայծառություն",
+  "ru": "Яркость",
+  "en": "Brightness"
+ },
+ {
+  "key": "f.protection",
+  "hy": "Էկրանի պաշտպանություն",
+  "ru": "Защита экрана",
+  "en": "Protection"
+ },
+ {
+  "key": "f.chipset",
+  "hy": "Չիպսեթ",
+  "ru": "Чипсет",
+  "en": "Chipset"
+ },
+ {
+  "key": "f.process",
+  "hy": "Տեխնոլոգիա, նմ",
+  "ru": "Техпроцесс, нм",
+  "en": "Process"
+ },
+ {
+  "key": "f.cpu",
+  "hy": "Պրոցեսոր",
+  "ru": "Процессор",
+  "en": "CPU"
+ },
+ {
+  "key": "f.gpu",
+  "hy": "Գրաֆիկա",
+  "ru": "Графика",
+  "en": "GPU"
+ },
+ {
+  "key": "f.antutu",
+  "hy": "AnTuTu միավոր",
+  "ru": "Баллы AnTuTu",
+  "en": "AnTuTu score"
+ },
+ {
+  "key": "f.ram",
+  "hy": "Օպերատիվ հիշողություն",
+  "ru": "Оперативная память",
+  "en": "RAM"
+ },
+ {
+  "key": "f.storage",
+  "hy": "Ներքին հիշողություն",
+  "ru": "Встроенная память",
+  "en": "Storage"
+ },
+ {
+  "key": "f.vram",
+  "hy": "Ներքբերի հիշողություն",
+  "ru": "Видеопамять",
+  "en": "Video memory"
+ },
+ {
+  "key": "f.case_size",
+  "hy": "Կորպուսի չափ",
+  "ru": "Размер корпуса",
+  "en": "Case size"
+ },
+ {
+  "key": "f.card_slot",
+  "hy": "Հիշողության քարտ",
+  "ru": "Слот для карты памяти",
+  "en": "Card slot"
+ },
+ {
+  "key": "f.main_cam",
+  "hy": "Հիմնական տեսախցիկ",
+  "ru": "Основная камера",
+  "en": "Main camera"
+ },
+ {
+  "key": "f.ultrawide",
+  "hy": "Գերլայն",
+  "ru": "Сверхширокоугольная",
+  "en": "Ultrawide"
+ },
+ {
+  "key": "f.telephoto",
+  "hy": "Տելեֆոտո",
+  "ru": "Телеобъектив",
+  "en": "Telephoto"
+ },
+ {
+  "key": "f.front_cam",
+  "hy": "Առջևի տեսախցիկ",
+  "ru": "Фронтальная камера",
+  "en": "Front camera"
+ },
+ {
+  "key": "f.video",
+  "hy": "Տեսանկարահանում",
+  "ru": "Видеосъёмка",
+  "en": "Video"
+ },
+ {
+  "key": "f.capacity",
+  "hy": "Տարողություն",
+  "ru": "Ёмкость",
+  "en": "Capacity"
+ },
+ {
+  "key": "f.charging",
+  "hy": "Լիցքավորում",
+  "ru": "Зарядка",
+  "en": "Charging"
+ },
+ {
+  "key": "f.wireless",
+  "hy": "Անլար լիցքավորում",
+  "ru": "Беспроводная зарядка",
+  "en": "Wireless charging"
+ },
+ {
+  "key": "f.dimensions",
+  "hy": "Չափսեր",
+  "ru": "Размеры",
+  "en": "Dimensions"
+ },
+ {
+  "key": "f.weight",
+  "hy": "Քաշ",
+  "ru": "Вес",
+  "en": "Weight"
+ },
+ {
+  "key": "f.materials",
+  "hy": "Նյութեր",
+  "ru": "Материалы",
+  "en": "Materials"
+ },
+ {
+  "key": "f.ip_rating",
+  "hy": "IP պաշտպանություն",
+  "ru": "Класс защиты IP",
+  "en": "IP rating"
+ },
+ {
+  "key": "f.network",
+  "hy": "Ցանցեր",
+  "ru": "Сети",
+  "en": "Network"
+ },
+ {
+  "key": "f.wifi",
+  "hy": "Wi-Fi",
+  "ru": "Wi-Fi",
+  "en": "Wi-Fi"
+ },
+ {
+  "key": "f.bluetooth",
+  "hy": "Bluetooth",
+  "ru": "Bluetooth",
+  "en": "Bluetooth"
+ },
+ {
+  "key": "f.nfc",
+  "hy": "NFC",
+  "ru": "NFC",
+  "en": "NFC"
+ },
+ {
+  "key": "f.sim",
+  "hy": "SIM քարտեր",
+  "ru": "SIM-карты",
+  "en": "SIM"
+ },
+ {
+  "key": "f.ports",
+  "hy": "Մուտքեր",
+  "ru": "Разъёмы",
+  "en": "Inputs"
+ },
+ {
+  "key": "f.os",
+  "hy": "Օպերացիոն համակարգ",
+  "ru": "Операционная система",
+  "en": "OS"
+ },
+ {
+  "key": "f.updates",
+  "hy": "Թարմացումներ",
+  "ru": "Обновления",
+  "en": "Updates"
+ },
+ {
+  "key": "f.released",
+  "hy": "Թողարկում",
+  "ru": "Дата выхода",
+  "en": "Released"
+ },
+ {
+  "key": "detail.add_compare",
+  "hy": "Ավելացնել համեմատությանը",
+  "ru": "Добавить к сравнению",
+  "en": "Add to compare"
+ },
+ {
+  "key": "detail.in_compare",
+  "hy": "Ավելացված է",
+  "ru": "В сравнении",
+  "en": "In compare"
+ },
+ {
+  "key": "detail.full_specs",
+  "hy": "Բոլոր բնութագրերը",
+  "ru": "Все характеристики",
+  "en": "Full specs"
+ },
+ {
+  "key": "detail.similar",
+  "hy": "Նմանատիպ մոդելներ",
+  "ru": "Похожие модели",
+  "en": "Similar phones"
+ },
+ {
+  "key": "compare.title",
+  "hy": "Համեմատություն",
+  "ru": "Сравнение",
+  "en": "Compare"
+ },
+ {
+  "key": "compare.empty",
+  "hy": "Դեռ համեմատելու բան չկա",
+  "ru": "Пока нечего сравнивать",
+  "en": "Nothing to compare yet"
+ },
+ {
+  "key": "compare.add_phone",
+  "hy": "Ավելացնել հեռախոս",
+  "ru": "Добавить телефон",
+  "en": "Add phone"
+ },
+ {
+  "key": "compare.add_x",
+  "hy": "Ավելացնել {x}",
+  "ru": "Добавить: {x}",
+  "en": "Add {x}"
+ },
+ {
+  "key": "compare.clear",
+  "hy": "Մաքրել բոլորը",
+  "ru": "Очистить",
+  "en": "Clear"
+ },
+ {
+  "key": "compare.diff_only",
+  "hy": "Միայն տարբերությունները",
+  "ru": "Только отличия",
+  "en": "Differences only"
+ },
+ {
+  "key": "compare.max_reached",
+  "hy": "Կարելի է համեմատել առավելագույնը 4 հեռախոս",
+  "ru": "Можно сравнить до 4 телефонов",
+  "en": "You can compare up to 4 phones"
+ },
+ {
+  "key": "compare.same_category",
+  "hy": "Համեմատել կարելի է միայն նույն տեսակի ապրանքներ",
+  "ru": "Сравнивать можно только товары одного типа",
+  "en": "You can only compare products of the same type"
+ },
+ {
+  "key": "compare.in_list",
+  "hy": "Համեմատության մեջ",
+  "ru": "В сравнении",
+  "en": "Models in comparison"
+ },
+ {
+  "key": "catalog.title",
+  "hy": "Կատալոգ",
+  "ru": "Каталог",
+  "en": "Catalog"
+ },
+ {
+  "key": "f.touch",
+  "hy": "Հպումային էկրան",
+  "ru": "Сенсорный экран",
+  "en": "Touchscreen"
+ },
+ {
+  "key": "f.graphics",
+  "hy": "Վիդեոքարտ",
+  "ru": "Видеокарта",
+  "en": "Graphics"
+ },
+ {
+  "key": "construct.title",
+  "hy": "Կոնստրուկտոր",
+  "ru": "Конструктор",
+  "en": "Construct"
+ },
+ {
+  "key": "construct.lead",
+  "hy": "Ընտրի՛ր՝ ինչ ես փնտրում, և մենք կցուցադրենք համապատասխանողները։",
+  "ru": "Выберите, что вы ищете, и мы покажем подходящие модели.",
+  "en": "Pick what you are after and we will show what matches."
+ },
+ {
+  "key": "construct.pick_cat",
+  "hy": "Ի՞նչ ես փնտրում",
+  "ru": "Что вы ищете",
+  "en": "What are you looking for"
+ },
+ {
+  "key": "construct.show",
+  "hy": "Ցույց տալ",
+  "ru": "Показать",
+  "en": "Show"
+ },
+ {
+  "key": "construct.fixed",
+  "hy": "Այս բաժնում բոլորն ունեն",
+  "ru": "Во всём разделе одинаково",
+  "en": "Same across this category"
+ },
+ {
+  "key": "construct.none",
+  "hy": "Այս պայմաններով ոչինչ չկա. թուլացրո՛ւ մեկը։",
+  "ru": "Под эти условия ничего нет — ослабьте одно из них.",
+  "en": "Nothing matches — loosen one of these."
+ },
+ {
+  "key": "nav.contact",
+  "hy": "Կապ",
+  "ru": "Контакты",
+  "en": "Contact"
+ },
+ {
+  "key": "nav.privacy",
+  "hy": "Գաղտնիություն",
+  "ru": "Конфиденциальность",
+  "en": "Privacy"
+ },
+ {
+  "key": "privacy.title",
+  "hy": "Գաղտնիության քաղաքականություն",
+  "ru": "Политика конфиденциальности",
+  "en": "Privacy policy"
+ },
+ {
+  "key": "privacy.p1",
+  "hy": "Այս կայքը հաշիվներ չունի, չի հավաքում անձնական տվյալներ և չի օգտագործում հետագծող cookie-ներ։",
+  "ru": "На этом сайте нет аккаунтов, он не собирает персональные данные и не использует отслеживающие cookie.",
+  "en": "This site has no accounts, collects no personal data and uses no tracking cookies."
+ },
+ {
+  "key": "privacy.p2",
+  "hy": "Ընտրած լեզուն, թեման, զտիչները և համեմատության ցանկը պահվում են միայն ձեր դիտարկիչում (localStorage) և մեզ չեն ուղարկվում։ Դիտարկիչի տվյալները մաքրելը դրանք ջնջում է։",
+  "ru": "Выбранный язык, тема, фильтры и список сравнения хранятся только в вашем браузере (localStorage) и нам не отправляются. Очистка данных браузера удаляет их.",
+  "en": "Your language, theme, filters and compare list are stored only in your browser (localStorage) and are never sent to us. Clearing your browser data deletes them."
+ },
+ {
+  "key": "privacy.p3",
+  "hy": "Էջը տառատեսակները բեռնում է Google Fonts-ից. դա միակ արտաքին հարցումն է, և Google-ը դրա ընթացքում տեսնում է ձեր IP հասցեն։",
+  "ru": "Страница загружает шрифты из Google Fonts — это единственный внешний запрос, и Google при этом видит ваш IP-адрес.",
+  "en": "The page loads fonts from Google Fonts. That is the only external request, and Google sees your IP address when it happens."
+ },
+ {
+  "key": "privacy.p4",
+  "hy": "Խանութների հղումները տանում են այլ կայքեր, որոնք ունեն իրենց քաղաքականությունը։ Գները հավաքվում են հրապարակային էջերից և կարող են հնանալ։",
+  "ru": "Ссылки на магазины ведут на сторонние сайты с собственными политиками. Цены собираются с публичных страниц и могут устареть.",
+  "en": "Shop links lead to other sites with their own policies. Prices are collected from public pages and can go stale."
+ },
+ {
+  "key": "contact.title",
+  "hy": "Կապ",
+  "ru": "Связаться",
+  "en": "Contact"
+ },
+ {
+  "key": "contact.p1",
+  "hy": "Սխա՞լ գին, բացակայող մոդել, կամ խանութ, որը պետք է ավելացվի — գրե՛ք։",
+  "ru": "Неверная цена, отсутствующая модель или магазин, который стоит добавить — напишите.",
+  "en": "A wrong price, a missing model, or a shop worth adding — write in."
+ },
+ {
+  "key": "contact.p2",
+  "hy": "Խանութներին. եթե ցանկանում եք, որ ձեր գները հայտնվեն այստեղ, ուղարկե՛ք ապրանքների ֆիդ կամ թույլատրե՛ք մեր crawler-ին։",
+  "ru": "Магазинам: если хотите, чтобы ваши цены были здесь, пришлите фид товаров или разрешите доступ нашему краулеру.",
+  "en": "Shops: to have your prices here, send a product feed or allow our crawler."
+ },
+ {
+  "key": "contact.email",
+  "hy": "https://github.com/graf-zasranec/mycatalog-am/issues",
+  "ru": "https://github.com/graf-zasranec/mycatalog-am/issues",
+  "en": "https://github.com/graf-zasranec/mycatalog-am/issues"
+ },
+ {
+  "key": "common.skip",
+  "hy": "Անցնել բովանդակությանը",
+  "ru": "К содержимому",
+  "en": "Skip to content"
+ }
 ]
