@@ -181,6 +181,16 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ---- filters fold away: eleven chips above the results is most of a phone screen ---- */
 .fbar.folded > :nth-child(n+5){display:none}   /* folded still shows the first four */
 .fbar.folded > .spacer,.fbar.folded > [data-drop="sort"]{display:inline-flex}
+.fapply{display:flex;gap:8px;margin-top:10px;padding:10px 0 2px;border-top:1px solid var(--line);
+  /* the brand list is longer than the panel is tall, and an Apply you have to scroll to find
+     is an Apply nobody presses */
+  position:sticky;bottom:-8px;background:var(--surface)}
+.fapply button{flex:1 1 auto;height:32px;border-radius:var(--pill);font:inherit;font-size:0.875rem;cursor:pointer;
+  border:1px solid var(--line2);background:none;color:var(--muted)}
+.fapply .fgo{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+.fapply .fclear{flex:0 0 auto;padding:0 12px}
+.fapply button:hover{filter:brightness(1.08)}
+.fdrop.dirty > summary{border-color:var(--brand);color:var(--brand)}
 .fmore{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 14px;border-radius:var(--pill);
   border:1px solid var(--line2);background:none;color:inherit;font:inherit;font-size:13px;cursor:pointer}
 .fmore:hover{border-color:var(--brand);color:var(--brand)}

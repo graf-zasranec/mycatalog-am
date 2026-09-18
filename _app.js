@@ -46,7 +46,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
@@ -69,7 +69,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
@@ -92,7 +92,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
@@ -698,8 +698,14 @@ const viewUnit = () => {
   const p = inView().filter(q => (q.variants || []).some(v => v.storage != null));
   return p.length && p.every(q => q.variantUnit === 'mm') ? 'mm' : undefined;
 };
+// Ticking a box used to filter the page under you, so choosing three brands meant three reloads
+// of the grid and two of them were views nobody asked for. The ticks are now just ticks until
+// Apply, which is what a multi-select has always meant everywhere else.
+const APPLY = key => `<div class="fapply"><button type="button" class="fclear" data-clear="${key}">${
+  esc(x('clearF'))}</button><button type="button" class="fgo" data-apply="${key}">${esc(x('applyF'))}</button></div>`;
 const drop = (key, label, body, right) =>
-  `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel">${body}</div></details>`;
+  `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel">${body}${
+    right ? '' : APPLY(key)}</div></details>`;
 const radios = (key, vals, fmt) =>
   `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="0"><span>${esc(x('any'))}</span></label>` +
   vals.map(v => `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="${v}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${v}"></span></label>`).join('');
@@ -757,6 +763,36 @@ function activeFilterCount() {
   for (const k in FILT) n += FILT[k].kind === 'set' ? (st[FILT[k].arr] || []).length : (st[k] ? 1 : 0);
   return n;
 }
+// Read what the panel is showing into the state, close it, and redraw once.
+function commitPanel(panel, key) {
+  if (!panel) return;
+  if (key === 'price') {
+    const lo = +panel.querySelector('input[data-f="pmin"]')?.value;
+    const hi = +panel.querySelector('input[data-f="pmax"]')?.value;
+    st.pmin = Math.min(lo, hi); st.pmax = Math.max(lo, hi);
+  } else {
+    const f = FILT[key];
+    if (f && f.kind === 'set') st[f.arr] = [...panel.querySelectorAll('input[type="checkbox"]:checked')].map(i => i.value);
+    else if (f) { const r = panel.querySelector('input[type="radio"]:checked'); st[key] = r ? +r.value : 0; }
+  }
+  panel.classList.remove('dirty');
+  panel.open = false;
+  st.page = 1;
+  refresh();
+}
+// The number under a price slider, painted from the handles rather than from the state, so it
+// still follows the drag while the drag is only a draft.
+function paintRange(panel) {
+  const lo = +panel.querySelector('input[data-f="pmin"]')?.value;
+  const hi = +panel.querySelector('input[data-f="pmax"]')?.value;
+  const a = Math.min(lo, hi), b = Math.max(lo, hi), sp = PMAX - PMIN;
+  const mn = panel.querySelector('[data-rng="min"]'), mx = panel.querySelector('[data-rng="max"]');
+  if (mn) mn.textContent = money(a) + ' ֏';
+  if (mx) mx.textContent = money(b) + ' ֏';
+  const fill = panel.querySelector('.rng .fill');
+  if (fill) { fill.style.left = ((a - PMIN) / sp * 100) + '%'; fill.style.right = ((PMAX - b) / sp * 100) + '%'; }
+}
+
 function syncFilters() {
   $$('[data-f]').forEach(el => {
     const k = el.dataset.f;
@@ -1895,6 +1931,18 @@ document.addEventListener('click', e => {
   if (e.target.closest('#hdrCmp')) { location.hash = '#/compare'; return; }
   const tg = e.target.closest('button[data-f]');
   if (tg) { const k = tg.dataset.f; st[k] = !st[k]; refresh(); return; }
+  const ap = e.target.closest('[data-apply]');
+  if (ap) { commitPanel(ap.closest('.fdrop'), ap.dataset.apply); return; }
+  const cl = e.target.closest('[data-clear]');
+  if (cl) {
+    const pn = cl.closest('.fdrop');
+    pn.querySelectorAll('input[type="checkbox"]').forEach(i => i.checked = false);
+    pn.querySelectorAll('input[type="radio"][value="0"]').forEach(i => i.checked = true);
+    pn.querySelectorAll('input[data-f="pmin"]').forEach(i => i.value = PMIN);
+    pn.querySelectorAll('input[data-f="pmax"]').forEach(i => i.value = PMAX);
+    commitPanel(pn, cl.dataset.clear);
+    return;
+  }
   // construct page: category card, a question chip, a brand chip
   const cc = e.target.closest('[data-ccat]');
   if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false });
@@ -2030,11 +2078,20 @@ document.addEventListener('change', e => {
   const el = e.target, f = el.dataset.f;
   if (el.id === 'diffonly') { $('#cwrap').classList.toggle('hide-same', el.checked); return; }
   if (!f) return;
-  if (FILT[f] && FILT[f].kind === 'set') {
+  // Inside a filter panel nothing is decided until Apply. The panel marks itself changed so the
+  // button can say so, and the range readout still tracks the handle, because a slider whose
+  // number does not move while you drag it is broken whatever it does afterwards.
+  const panel = el.closest && el.closest('.fdrop:not(.r)');
+  if (panel && f !== 'sort') {
+    panel.classList.add('dirty');
+    if (f === 'pmin' || f === 'pmax') paintRange(panel);
+    return;
+  }
+  if (f === 'sort') { st.sort = el.value; el.closest('[data-drop]').open = false; }
+  else if (FILT[f] && FILT[f].kind === 'set') {
     const a = FILT[f].arr;
     st[a] = el.checked ? [...new Set([...(st[a] || []), el.value])] : (st[a] || []).filter(v => v !== el.value);
   }
-  else if (f === 'sort') { st.sort = el.value; el.closest('[data-drop]').open = false; }
   else if (f === 'pmin') st.pmin = Math.min(+el.value, st.pmax);
   else if (f === 'pmax') st.pmax = Math.max(+el.value, st.pmin);
   else st[f] = +el.value;

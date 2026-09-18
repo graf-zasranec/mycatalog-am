@@ -3,6 +3,8 @@
 #   python tools/check-links.py            report only
 #   python tools/check-links.py --prune     drop the rows whose page is gone or sold out
 #   python tools/check-links.py --all       every url in data/prices.json, not only the hand rows
+#   python tools/check-links.py --all --xlsx   ...and write the whole finding to a spreadsheet
+#   python tools/check-links.py --all --prune  ...and pin the dead pages so nothing re-adds them
 #
 # --all answers a different question: which links on the site would disappoint somebody who
 # clicked one. It writes .links.json as it goes and picks up where it stopped, because 1400
@@ -123,6 +125,70 @@ def check_all():
     return urls, buckets
 
 
+# A spreadsheet, because the answer to "is this page really gone" is a person opening it, and a
+# person opening two hundred of them wants them in rows they can sort and tick off.
+def write_xlsx(b):
+    try:
+        import openpyxl
+    except ImportError:
+        print('openpyxl is not installed - writing csv instead')
+        out = ROOT / 'data' / 'dead-links.csv'
+        rows = [(k, d.get('status', ''), sh, t, u, n) for k, v in b.items() for sh, t, u, n, d in v]
+        out.write_text('verdict,status,shop,title,url,offers\n' + '\n'.join(
+            ','.join(str(c).replace(',', ' ') for c in r) for r in rows) + '\n', encoding='utf8')
+        print(f'  -> {out}')
+        return
+    # What each bucket means in plain words, so the column can be read without this file open.
+    SAY = {'dead': 'GONE - answers 404/410/500, safe to remove',
+           'refused': 'REFUSED our checker (403/429) - may well work in a browser, please look',
+           'error': 'never answered - timed out or would not connect',
+           'soldout': 'the page itself says sold out',
+           'listing': 'lands on a category page, not on the product',
+           'unfetchable': 'this checker is not allowed to fetch it - only a person can'}
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = 'links to check'
+    ws.append(['verdict', 'http', 'shop', 'product', 'url', 'offers on this page', 'what it means'])
+    for c in ws[1]:
+        c.font = openpyxl.styles.Font(bold=True)
+    ws.freeze_panes = 'A2'
+    for k in ('dead', 'refused', 'error', 'soldout', 'listing', 'unfetchable'):
+        for sh, t, u, n, d in b.get(k, []):
+            ws.append([k, str(d.get('status', '')), sh, t, u, n, SAY[k]])
+    for col, w in zip('ABCDEFG', (10, 7, 15, 46, 66, 8, 60)):
+        ws.column_dimensions[col].width = w
+    out = ROOT / 'data' / 'dead-links.xlsx'
+    wb.save(out)
+    print(f'\n  -> {out}  ({ws.max_row - 1} row(s))')
+
+
+# A dead page is pinned '-' in data/links.csv, which is the one place the crawler consults before
+# it guesses. Removing the row alone would not hold: the next crawl would find the same url and
+# put it straight back. 403 is NOT pinned - that is the shop refusing this checker, not a missing
+# page, and a person with a browser may well see it. The spreadsheet lists those for a human.
+def prune_dead(b):
+    links = ROOT / 'data' / 'links.csv'
+    if not links.exists():
+        print('no data/links.csv - run: node tools/links.mjs')
+        return
+    gone = {u for _, _, u, _, _ in b['dead']}
+    if not gone:
+        print('\nnothing answers 404 - nothing to pin')
+        return
+    lines = links.read_text(encoding='utf8').rstrip('\n').split('\n')
+    out, hit = [lines[0]], 0
+    for line in lines[1:]:
+        c = line.split(',')
+        if len(c) >= 10 and c[9] in gone:
+            c[0] = '-'
+            hit += 1
+            line = ','.join(c)
+        out.append(line)
+    links.write_text('\n'.join(out) + '\n', encoding='utf8')
+    print(f'\n{hit} dead page(s) pinned as not-ours in data/links.csv')
+    print('now run:  node scrape.mjs --handonly && node tools/links.mjs && node build.mjs')
+
+
 def main():
     if '--all' in sys.argv:
         urls, b = check_all()
@@ -147,6 +213,10 @@ def main():
             print(f'  {sh:14} {t[:44]:46} {u}   ({d.get("why", "")})')
         bad = sum(len(v) for v in b.values())
         print(f'\n{bad} link(s) worth a look, out of {len(urls)}')
+        if '--xlsx' in sys.argv:
+            write_xlsx(b)
+        if '--prune' in sys.argv:
+            prune_dead(b)
         return
 
     lines = CSV.read_text(encoding='utf8').rstrip('\n').split('\n')

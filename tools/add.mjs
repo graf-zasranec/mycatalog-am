@@ -14,8 +14,8 @@ import fs from 'node:fs';
 
 const src = fs.readFileSync('scrape.mjs', 'utf8');
 const body = src.slice(0, src.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]');
-const { matchPhone, looksLikeAccessory } = await import('data:text/javascript;base64,' +
-  Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory };\n', 'utf8').toString('base64'));
+const { matchPhone, looksLikeAccessory, COLOR_WORDS } = await import('data:text/javascript;base64,' +
+  Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory, COLOR_WORDS };\n', 'utf8').toString('base64'));
 
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const BRANDS = [...new Set(phones.map(p => p.brand))]
@@ -44,7 +44,7 @@ const KINDS = [
   // "Tracker" and "traker" both appear, in the same export, for the same device
   [/(Smart ?)?fitness trac?k?er|\bSmart ?watch\b|\bWatch\b|ժամացույց|часы/i, 'watch'],
   [/\bStyler\b|Airwrap|hair ?dry|Supersonic|փոշեկուլ|пылесос/i, 'appliance'],
-  [/\bSmartphone\b|Սմարթ ?հեռախոս|смартфон/i, 'phone'],
+  [/\bSmartphone\b|Սմարթֆոն|Սմարթ ?հեռախոս|смартфон/i, 'phone'],
 ];
 // A shop's own section is a better witness than a word that is not there: a row scraped off
 // .../smartphones/... is a phone even when its title only says "Samsung A07".
@@ -52,11 +52,60 @@ const SECTIONS = [[/smartphone|\/phones?\//i, 'phone'], [/tablet/i, 'tablet'],
   [/laptop|notebook/i, 'laptop'], [/watch/i, 'watch'], [/headphone|audio/i, 'headphones'],
   [/monitor/i, 'monitor'], [/\/tv\b/i, 'tv']];
 
+// Most of these exports are listing pages: no kind-word in the title, no section in the url,
+// just "JBL Flip 6 Gray" or "MacBook Air 13 MGN93 M1 2020 Silver". What a thing is, though, is
+// written in its family name - that is what a family name is for - and 897 rows were refused for
+// want of this table. Every entry here is a real product line, not a guess about one.
+const FAMILY = [
+  [/\bMacBook\b|\bThinkPad\b|\bIdeaPad\b|\bVivobook\b|\bZenbook\b|\bExpertBook\b|\bOmniBook\b|\bProBook\b|\bEliteBook\b|\bPavilion\b|\bEnvy\b|\bVictus\b|\bOmen\b|\bInspiron\b|\bLatitude\b|\bVostro\b|\bXPS\b|\bAspire\b|\bNitro\b|\bPredator\b|\bSwift\b|\bTravelMate\b|\bMagicBook\b|\bMateBook\b|\bGalaxy Book\b|\bSurface Laptop\b|\bLegion\b|\bLOQ\b|\bYoga\b|\bROG\b|\bTUF\b|\bKatana\b|\bModern\b|\bCyborg\b|\bRedmiBook\b/i, 'laptop'],
+  [/\biPad\b|\bGalaxy Tab\b|\bHonor Pad\b|\bMatePad\b|\bRedmi Pad\b|\bMi Pad\b|\bLenovo Tab\b|\bSurface Pro\b/i, 'tablet'],
+  [/\biMac\b|\bMac mini\b|\bMac Studio\b|\bMac Pro\b|\bAll[- ]?in[- ]?One\b/i, 'desktop'],
+  [/\bStudio Display\b|\bPro Display\b|\bOdyssey\b|\bUltraGear\b|\bUltraFine\b|\bProArt\b|\bZOWIE\b|\bNitro (XV|VG|KG|EI)\b/i, 'monitor'],
+  [/\bPlayStation\b|\bPS5\b|\bXbox\b|\bNintendo Switch\b|\bSteam Deck\b|\bROG Ally\b|\bLegion Go\b/i, 'console'],
+  [/\bAirPods\b|\bGalaxy Buds\b|\bFreeBuds\b|\bRedmi Buds\b|\bBuds\b|\bWF-\w|\bLiveBuds\b|\bEarbuds\b|\bMomentum True\b/i, 'earbuds'],
+  [/\bWH-\w|\bQuietComfort\b|\bBeoplay H\d|\bJBL (Tune|Live|Quantum)\b|\bHD \d{3}\b|\bSolo \d\b|\bStudio Pro\b|\bMomentum \d\b/i, 'headphones'],
+  [/\bHomePod\b|\bSoundLink\b|\bBeosound\b|\bPartyBox\b|\bBoombox\b|\bCharge \d\b|\bFlip \d\b|\bClip \d\b|\bXtreme \d\b|\bGo \d\b|\bStanmore\b|\bWoburn\b|\bActon\b|\bEmberton\b|\bUxbridge\b|\bMiddleton\b|\bWillen\b|\bKilburn\b|\bOnyx Studio\b|\bSonos\b|\bYandex ?Station\b/i, 'speaker'],
+  [/\bForerunner\b|\bFenix\b|\bVenu\b|\bInstinct\b|\bVivoactive\b|\bCIRQA\b|\bSmart Band\b|\bMi Band\b|\bGalaxy Watch\b|\bApple Watch\b|\bWatch (SE|Ultra|Series)\b|\bWhoop\b|\bFitbit\b/i, 'watch'],
+  [/\bKindle\b|\bPaperwhite\b|\bPocketBook\b|\breMarkable\b/i, 'ereader'],
+  [/\bAirwrap\b|\bSupersonic\b|\bAirStrait\b|\bAirStarit\b|\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir ?Purifier\b|\bVacuum\b|\bRobot Vacuum\b/i, 'appliance'],
+  [/\bGeForce\b|\bRadeon RX\b|\bRTX \d{4}\b|\bArc A\d{3}\b/i, 'component'],
+  // a phone family is the last thing asked, because "Redmi" and "Galaxy" also name tablets,
+  // earbuds and watches, all of which are matched above before this line is reached
+  [/\biPhone\b|\bGalaxy (S|A|Z|M|F)\d|\bRedmi (Note )?\d|\bPoco \w\d|\bPixel \d|\bHonor (X|Magic|Play)\d|\bReno\d*\b|\bNord\b|\bXperia\b|\bnova \d/i, 'phone'],
+];
+
 // Of the things that go inside a computer, only video cards and processors.
 const PC_PART = /\bSSD\b|\bHDD\b|\bNVMe\b|\bDIMM\b|\bDDR[45]\b|motherboard|материнск|блок питания|power supply/i;
 const IS_CHIP = /\bRTX\s?\d|\bGTX\s?\d|Radeon RX|GeForce|Ryzen \d|Core i\d|Core Ultra|видеокарт|процессор/i;
 
 const slug = s => s.toLowerCase().replace(/\+/g, 'plus').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+// A colour is not a model. "Xiaomi Poco X7 / Green" and "Xiaomi Poco X7 / Silver" are one phone,
+// and left alone they became two products; "Redmi 17 /256GB Oak Green" and "Redmi 17 8/256GB Oak
+// Green RU (2606FRN72Y)" became two more. The vocabulary is the scraper's own list plus every
+// word the catalogue already uses to name a colour, which is the only list that can keep up with
+// what the makers invent - Oak, Sage, Glacier, Lemongrass, Moonstone were all in it already.
+const HUES = new Set([...COLOR_WORDS,
+  ...phones.flatMap(p => (p.colors || []).flatMap(c => String(c).toLowerCase().split(/[^a-z]+/))),
+  'sandy', 'oak', 'nightfall', 'phantom', 'mystic', 'stellar'].filter(Boolean));
+// A maker sells a phone in a colour named after the range it belongs to - there is a POCO Yellow -
+// so the catalogue's own colour list contains the word POCO, and stripping colours turned
+// "Xiaomi Poco X7" into "Xiaomi X7". A brand is never a colour, whatever a swatch is called.
+for (const b of BRANDS) HUES.delete(b.toLowerCase());
+for (const w of ['pro', 'max', 'ultra', 'plus', 'lite', 'air', 'mini', 'note', 'edge', 'fold', 'flip'])
+  HUES.delete(w);
+// Everything a shop writes after the model that is about this particular box rather than about
+// the model: the colour, the configuration, the region it was imported for, and the part number.
+function modelOnly(name) {
+  return name
+    .replace(/\([^)]*\)/g, ' ')                          // (2606FRN72Y), (LAB-LX1)
+    .replace(/\b\d{1,3}\s*\/\s*\d{2,4}\s*(GB|TB)?\b/gi, ' ')   // 8/256GB - a configuration
+    .replace(/\b\d+\s*(GB|TB|ԳԲ|ՏԲ)\b/gi, ' ')             // 256GB
+    .replace(/(^|\s)\/(\s|$)/g, ' ')                      // the bare slash left behind
+    .replace(/\b(RU|EU|CN|INT|Global|Dual|NFC)\b/gi, ' ')   // which market it was imported for
+    .split(/\s+/).filter(w => w && !HUES.has(w.toLowerCase().replace(/[^a-z]/g, '')))
+    .join(' ').replace(/\s{2,}/g, ' ').replace(/^[\s|,\/-]+|[\s|,\/-]+$/g, '');
+}
 const cap = t => {
   const m = String(t ?? '').match(/(\d+)\s*(GB|TB|ԳԲ|ՏԲ)/i);
   if (!m) return null;
@@ -94,6 +143,17 @@ for (const r of rows) {
   if (matchPhone(r.name)) continue;                       // already a product here
   if (looksLikeAccessory(r.name)) { refused.push(['accessory', r]); continue; }
   if (PC_PART.test(r.name) && !IS_CHIP.test(r.name)) { refused.push(['pc part', r]); continue; }
+  // "Apple Backpack TOMTOC Navigator T68 Backpack Black for MacBook Pro 14" came through the
+  // family table as a laptop, which is exactly the trap a family table sets.
+  if (/\bbackpack\b|\bbag\b|\bbriefcase\b|\bpouch\b|\bearphones?\b|\bmotherboard\b|\bSoC\b|\bLGA ?\d/i.test(r.name))
+    { refused.push(['accessory', r]); continue; }
+  // This catalogue carries new stock only. "iPhone 16 Pro 2SIM USED" says so on the shelf.
+  if (/\bused\b|\bsecond[- ]?hand\b|\brefurb\w*\b|\bopen ?box\b|б\/у|օգտագործված/i.test(r.name))
+    { refused.push(['second-hand', r]); continue; }
+  // A screen protector that never says "tempered": 'glass' alone cannot be banned outright,
+  // because the iPad Pro is sold with standard and nano-texture glass.
+  if (/\b(uv|unipro|hydrogel|privacy)\b[^,]{0,14}\bglass\b|\bglass\b[^,]{0,10}\bprotect/i.test(r.name))
+    { refused.push(['accessory', r]); continue; }
 
   // The capacity arrives twice: after the '|' this shop joins two columns with, and again inside
   // the title - "Samsung A165 256GB | 256 GB". Neither is part of a name. "Honor 200Lite 8/256"
@@ -111,7 +171,8 @@ for (const r of rows) {
   if (!brand) { refused.push(['no brand', r]); continue; }
 
   const kind = (KINDS.find(([re]) => re.test(title)) || [])[1]
-    || (SECTIONS.find(([re]) => re.test(r.url || '')) || [])[1];
+    || (SECTIONS.find(([re]) => re.test(r.url || '')) || [])[1]
+    || (FAMILY.find(([re]) => re.test(title)) || [])[1];
   if (!kind) { refused.push(['no category', r]); continue; }
 
   // the model is what is left once the brand and the kind-word are taken out of the shop's title
@@ -119,7 +180,11 @@ for (const r of rows) {
   for (const [re] of KINDS) name = name.replace(new RegExp(re.source, 'gi'), ' ');
   name = name.replace(reBrand(brand, 'ig'), ' ')
              .replace(/\(\s*\)/g, ' ').replace(/\s{2,}/g, ' ').replace(/^[\s|,-]+|[\s|,-]+$/g, '');
-  if (name.length < 2) { refused.push(['no model', r]); continue; }
+  // A model name is written in Latin letters by every maker on these shelves. What is left in
+  // Armenian or Russian after the kind-word has gone is the shop's own prose - a colour, mostly -
+  // and "Xiaomi REDMI մանուշակագույն" is not a product name.
+  name = modelOnly(name).split(/\s+/).filter(w => !/[\u0530-\u058F\u0400-\u04FF]/.test(w)).join(' ');
+  if (name.length < 2 || !/[a-z0-9]/i.test(name)) { refused.push(['no model', r]); continue; }
   const b = brand.toLowerCase();
   const already = KNOWN.get(b + '|' + bag(name)) || KNOWN.get(b + '|' + squash(name));
   if (already) { refused.push(['already ' + already, r]); continue; }

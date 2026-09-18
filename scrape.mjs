@@ -185,8 +185,20 @@ function matchPhone(text) {
                    .replace(/\s+/g, ' ').trim();
   // The split readings are guesses about a compressed slug, so they are held to a stricter
   // rule than the shop's own words: see matchIn.
+  // Apple's part number sits in the MIDDLE of the name on half these shelves - "MacBook Air 15
+  // MC6K4 M4 24GB,512GB Starlight", "iPad Air 13 M3 WiFi 128GB Starlight /MCNK4*" - and a key is
+  // read as a run of consecutive words, so "macbook air 15 m4" is not in that title at all. Two
+  // readings put it back: drop the " /PARTNO" tail some shops append, and drop a bare five-
+  // character letters-and-digits token, which is the shape of an Apple part number and of almost
+  // nothing else. Tried LAST of all, after every exact reading has had its turn, so a real model
+  // name of that shape - and there are none this short - could not be thrown away while it still
+  // had a chance to match.
+  const detail = base.replace(/\s*\/\s*[a-z0-9*\/-]+\s*$/i, ' ')
+                     .replace(/(^|\s)(?=[a-z]*\d)(?=\d*[a-z])[a-z0-9]{5}(?=\s|$)/g, ' ')
+                     .replace(/\s+/g, ' ').trim();
   const tries = [[base, false], [base.replace(/(\d)([a-z])/g, '$1 $2'), true],
-                 [base.replace(/([a-z])(\d)/g, '$1 $2'), true], [lean, false]];
+                 [base.replace(/([a-z])(\d)/g, '$1 $2'), true], [lean, false],
+                 [detail, false], [detail.replace(/\b\d+\s?(gb|tb)\b/g, ' ').replace(/\s+/g, ' ').trim(), false]];
   for (const [v, split] of tries) {
     const id = matchIn(' ' + v + ' ', split);
     if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
