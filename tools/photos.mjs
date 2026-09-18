@@ -11,6 +11,10 @@
 //   node tools/photos.mjs            refresh every product
 //   node tools/photos.mjs --dry      report what it would change
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
+
+const PLACEHOLDER = fs.existsSync('data/placeholders.json')
+  ? JSON.parse(fs.readFileSync('data/placeholders.json', 'utf8')) : {};
 
 const UA = 'MyCatalogBot/0.1 (+price comparison; respects robots.txt)';   // same string scrape.mjs sends
 const SRC = 'images/_src';
@@ -102,6 +106,11 @@ async function best(urls) {
       const r = await fetch(u, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
       if (!r.ok) continue;
       const b = Buffer.from(await r.arrayBuffer());
+      // A shop with no photo still answers with an image: its own "no image" square. It is a
+      // 1200px file, so it wins on size and lands on the product page looking like a photo.
+      // Byte-identity alone cannot spot these - four sizes of one Hisense TV share one render
+      // quite legitimately - so this refuses only the exact files confirmed by eye.
+      if (PLACEHOLDER[createHash('md5').update(b).digest('hex')]) continue;
       const [w, h] = dimensions(b);
       const edge = Math.max(w, h);
       if (edge && (!win || edge > win.edge)) win = { b, edge, w, h, ext: ext(r.headers.get('content-type') || ''), url: u };
@@ -123,10 +132,19 @@ const man = fs.existsSync(`${SRC}/manifest.json`)
 // join the candidate list and win on size.
 const PRESS = fs.existsSync('data/press.json') ? JSON.parse(fs.readFileSync('data/press.json', 'utf8')) : {};
 const NO_FETCH = Object.keys(PR.excluded || {});
+// Photos a person looked at and said no to, with the reason: a Space Black MacBook filed as
+// Silver, a sponsorship banner with no television in it. Until now only harvest-colors.py read
+// this, so the picker downloaded a rejected photo again on the very next run and the reading was
+// worth nothing. A reading outranks the biggest-wins rule, the same way a pin in links.csv
+// outranks the matcher.
+const REJECT = fs.existsSync('data/photo-rejects.json')
+  ? JSON.parse(fs.readFileSync('data/photo-rejects.json', 'utf8')) : {};
+const rejected = id => new Set(Object.values(REJECT[id] || {}).map(r => r && r.url).filter(Boolean));
 
-let improved = 0, kept = 0, weak = [];
+let improved = 0, kept = 0, weak = [], refused = 0;
 for (const p of P) {
   if (only.size && !only.has(p.id)) continue;
+  const no = rejected(p.id);
   const offers = (PR.offers[p.id] || []).filter(o => o.image);
   // Nobody photographed it into the price file, but somebody linked it: read the picture off the
   // product page. Three links is enough to find one - past that the product has no photo anywhere.
@@ -156,7 +174,9 @@ for (const p of P) {
     if (have && have.pin) { kept++; continue; }
     const havePath = have && `${SRC}/${have.src}`;
     const haveEdge = havePath && fs.existsSync(havePath) ? Math.max(...dimensions(fs.readFileSync(havePath))) : 0;
-    const win = await best(s.urls);
+    const ok = s.urls.filter(u => !no.has(u));
+    refused += s.urls.length - ok.length;
+    const win = await best(ok);
     if (!win) continue;
     if (win.edge <= haveEdge) { kept++; if (haveEdge < MIN_EDGE) weak.push(`${p.id} ${s.slug} ${haveEdge}px`); continue; }
     console.log(`  ${p.id} ${s.slug}: ${haveEdge || 'none'} -> ${win.w}x${win.h}`);
@@ -190,5 +210,6 @@ if (!dry) {
     '', ...rows, ''
   ].join(String.fromCharCode(10)));
 }
-console.log(`\n${dry ? 'would improve' : 'improved'} ${improved}, already best ${kept}`);
+console.log(`\n${dry ? 'would improve' : 'improved'} ${improved}, already best ${kept}` +
+            (refused ? `, ${refused} candidate(s) refused by data/photo-rejects.json` : ''));
 if (weak.length) console.log(`still under ${MIN_EDGE}px (no shop publishes better):\n  ` + weak.join('\n  '));
