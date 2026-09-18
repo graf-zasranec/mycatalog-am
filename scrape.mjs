@@ -540,8 +540,10 @@ if (process.argv[2] === '--selftest') {
     // laptops VLV stocks, matched off the shop's own title
     ['lenovo-loq-15', 'LENOVO LOQ 15IRX9  i5-13450HX 16GB 1TB RTX4050 15.6" (83DV0069RK) Notebooks'],
     ['lenovo-loq-15', 'LENOVO LOQ 15IRX9 i5-13450HX 16GB 1TB RTX3050 15.6" (83DV01CJRK) Notebooks'],
-    // a different generation, and not in the catalogue - it must not be filed as the IRX9
-    [null, 'LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6" 83JE0189RK Notebooks'],
+    // A different generation, and it must not be filed as the IRX9. It used to be absent from
+    // the catalogue and the assertion was null; it is carried now, so the same title proves the
+    // same thing by landing on its OWN entry rather than on its predecessor's.
+    ['lenovo-loq-15irx10', 'LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6" 83JE0189RK Notebooks'],
     ['hp-victus-15', 'HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA Notebooks'],
     ['acer-aspire-15', 'ACER ASPIRE AL15-72P-57CM i5-13420H 16/512 15.6" NX.D5HEM.002 Notebooks'],
     // REDstore calls every Apple Watch an iWatch
@@ -561,12 +563,13 @@ if (process.argv[2] === '--selftest') {
     ['apple-ipad-air-11-m3', 'https://www.pixel.am/am/product/ipad-air-11-m3'],
     // stripping the capacity must not turn one phone into another
     ['samsung-galaxy-a57', 'Samsung Galaxy A57 5G SM-A576B 8GB 128GB Awesome Navy'],
-    [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
+    // carried since the Eldorado and iBolit exports were read; it must be itself, not a Note 17
+    ['xiaomi-redmi-note-17-pro-max-5g', 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
     // a phone sold with earbuds in the box is neither product's price
     [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
     ['xiaomi-buds-6', 'Xiaomi Buds 6'],
-    [null, 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
-    [null, 'https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/'],
+    ['xiaomi-redmi-note-17-pro-max-5g', 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
+    ['xiaomi-redmi-note-17-pro-max-5g', 'https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/'],
     ['xiaomi-17-pro-max', 'https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black'],
     // second-hand stock is not the product
     [null, 'https://ibolit.mobi/product/used-17-pro-max-256-blue/'],

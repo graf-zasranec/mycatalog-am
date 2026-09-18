@@ -71,6 +71,10 @@ def check_all():
     offers = [o for lst in data['offers'].values() for o in lst]
     urls = OrderedDict()
     for o in offers:
+        # A price read off a spreadsheet that named no page has no link to check. Those rows are
+        # real prices and belong on the site; they are simply not this tool's business.
+        if not str(o.get('url') or '').startswith('http'):
+            continue
         urls.setdefault(o['url'], []).append(o)
 
     done = json.loads(STATE.read_text(encoding='utf8')) if STATE.exists() else {}

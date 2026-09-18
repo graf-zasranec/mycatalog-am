@@ -197,7 +197,10 @@ for (const r of rows) {
   // could not find its own listing. The catalogue already has the answer for a shop that spells
   // a thing its own way: the product carries that spelling as an alias.
   out.push({ id: slug(brand + ' ' + name), brand, name, category: kind, alias: title,
-             storage: cap(r.storage) ?? cap(r.name), price: r.price, shop: r.shop,
+             // Some exports label the RAM column "memory", so "6/128GB" arrives with storage 6.
+             // Nothing here is sold with six gigabytes of storage: of the readings available,
+             // the largest real one is the capacity and the rest are memory.
+             storage: [cap(r.storage), cap(r.name)].filter(v => v >= 8).sort((a, b) => b - a)[0] ?? null, price: r.price, shop: r.shop,
              url: r.url || '', title: r.name.replace(/\s{2,}/g, ' ').trim() });
 }
 
