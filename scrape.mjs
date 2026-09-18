@@ -138,15 +138,24 @@ const MISSED = new Map();
 // below pass the url either alone or glued to the shop's title, so the url is read back out of
 // whatever was handed in rather than asking all twenty-odd of them to pass it separately.
 const PINS = new Map();
+// ...and column 6, the SIM build, when it is written with a '!' after it. A shop can state the
+// build wrongly on its own page: iBolit slugs the iPhone 18 Pro eSIM build '...-256gb-sim-...'
+// and the tray build '...-esim-...', so every reading off that url is backwards and no amount of
+// care with the words can recover it. Without the bang the column is just what the crawl derived
+// and is re-derived freely; with it, somebody checked.
+const SIMPINS = new Map();
 try {
   for (const line of fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).slice(1)) {
     const c = line.split(',');
-    if (c[9] && c[0]) PINS.set(c[9], c[0]);
+    if (!c[9]) continue;
+    if (c[0]) PINS.set(c[9], c[0]);
+    if (c[6] === 'esim!' || c[6] === 'nano!') SIMPINS.set(c[9], c[6] === 'esim!');
   }
 } catch (e) { if (e.code !== 'ENOENT') console.warn('links.csv:', e.message); }
+const urlIn = text => String(text).match(/https?:\/\/\S+/)?.[0].replace(/[),.;]+$/, '');
 function pinnedId(text) {
-  const m = String(text).match(/https?:\/\/\S+/);
-  return m ? PINS.get(m[0].replace(/[),.;]+$/, '')) : undefined;
+  const u = urlIn(text);
+  return u ? PINS.get(u) : undefined;
 }
 function matchPhone(text) {
   // A human reading data/links.csv and correcting the id column has settled this page for good.
@@ -758,7 +767,17 @@ if (process.argv[2] === '--selftest') {
     if (got !== want) { bad++; console.log(`FAIL  pin got=${got} want=${want}  <- ${text}`); }
   }
   PINS.delete('https://example.am/p/1'); PINS.delete('https://example.am/p/2');
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + pinCases.length + 1} checks pass`);
+  // and the SIM build a human checked beats the slug, which is the only way to read a shop that
+  // has its own two builds the wrong way round
+  const simPinCases = [
+    ['https://ibolit.mobi/product/apple-iphone-18-pro-256gb-sim-glacier/', true],
+    ['https://ibolit.mobi/product/apple-iphone-18-pro-256gb-esim-burgundy/', false],
+  ];
+  for (const [url, want] of simPinCases) {
+    const got = SIMPINS.has(url) ? SIMPINS.get(url) : simBuild(url);
+    if (got !== want) { bad++; console.log(`FAIL  sim pin got=${got} want=${want}  <- ${url}`); }
+  }
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + pinCases.length + simPinCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -1532,7 +1551,7 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // would file it as the tray-less build and put its price under the wrong button.
 for (const list of Object.values(offers)) {
   for (const o of list) {
-    const b = simBuild(`${o.title || ''} ${o.url || ''}`);
+    const b = SIMPINS.has(o.url) ? SIMPINS.get(o.url) : simBuild(`${o.title || ''} ${o.url || ''}`);
     if (b === undefined) delete o.esim; else o.esim = b;
   }
 }
