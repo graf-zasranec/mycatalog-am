@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-17T12:10:31.418Z",
+ "generated": "2026-09-18T06:13:39.694Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -152,17 +152,6 @@
     "color": "Deep Blue",
     "shop": "mobilecentre",
     "seen": "2026-09-17",
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Deep Blue eSim",
-    "price": 488000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue-esim",
-    "seeded": true,
     "esim": true
    },
    {
@@ -1028,28 +1017,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Deep Blue eSim",
-    "price": 525000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-deep-blue-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Cosmic Orange eSim",
-    "price": 525000,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-cosmic-orange-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "shop": "yerevanmobile",
     "title": "Apple iPhone 17 Pro Max (eSim)",
     "price": 525000,
@@ -1382,17 +1349,6 @@
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
     "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Silver eSim",
-    "price": 575000,
-    "storage": 256,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver-esim",
-    "seeded": true,
-    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2128,17 +2084,6 @@
    },
    {
     "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB Black eSim",
-    "price": 364000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17",
     "price": 364900,
     "storage": 256,
     "title": "iPhone 17 256GB Dual eSIM (Sage)",
@@ -2170,17 +2115,6 @@
     "color": "White",
     "url": "https://redstore.am/en/product/iphone-17-256gb-white",
     "seeded": true
-   },
-   {
-    "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB Sage eSim",
-    "price": 378000,
-    "storage": 256,
-    "color": "Sage",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-sage-esim",
-    "seeded": true,
-    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -8506,6 +8440,15 @@
     "price": 399000,
     "storage": 256,
     "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "allsell",
+    "title": "Samsung Galaxy S26 Ultra",
+    "price": 399600,
+    "storage": 256,
+    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
     "seeded": true
    },
    {
@@ -29140,6 +29083,1062 @@
     "price": 75000,
     "storage": null,
     "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
+   }
+  ],
+  "tcl-43v6c": [
+   {
+    "id": "tcl-43v6c",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 43V6C",
+    "price": 149900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue43u8000huxpy": [
+   {
+    "id": "samsung-ue43u8000huxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE43U8000HUXPY",
+    "price": 152000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "xiaomi-a-43-2026": [
+   {
+    "id": "xiaomi-a-43-2026",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LED XIAOMI A 43 2026 (L43MB-AURU)",
+    "price": 157900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-43ua75009la": [
+   {
+    "id": "lg-43ua75009la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG (43UA75009LA)",
+    "price": 177900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue43m70hauxpy": [
+   {
+    "id": "samsung-ue43m70hauxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE43M70HAUXPY",
+    "price": 178000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-43nu850b6la": [
+   {
+    "id": "lg-43nu850b6la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 43NU850B6LA",
+    "price": 178900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-43p7k": [
+   {
+    "id": "tcl-43p7k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 43P7K",
+    "price": 179900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "xiaomi-a-50-2026": [
+   {
+    "id": "xiaomi-a-50-2026",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց XIAOMI A 50 2026 (L50MB-ARU)",
+    "price": 187900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-43v6d": [
+   {
+    "id": "tcl-43v6d",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 43V6D",
+    "price": 189900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue55u8000fuxru": [
+   {
+    "id": "samsung-ue55u8000fuxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE55U8000FUXRU",
+    "price": 192000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe43q60ba": [
+   {
+    "id": "samsung-qe43q60ba",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung 43\" QE43Q60BA 4K UHD QLED",
+    "price": 199900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "xiaomi-a-pro-43-2026": [
+   {
+    "id": "xiaomi-a-pro-43-2026",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց XIAOMI A Pro 43 2026 (L43MB-APRU)",
+    "price": 199900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-50v6c": [
+   {
+    "id": "tcl-50v6c",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 50V6C",
+    "price": 209900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue50u8000huxpy": [
+   {
+    "id": "samsung-ue50u8000huxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE50U8000HUXPY",
+    "price": 212000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-43qned70b6c": [
+   {
+    "id": "lg-43qned70b6c",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 43QNED70B6C",
+    "price": 215900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-43nano80a6b": [
+   {
+    "id": "lg-43nano80a6b",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 43NANO80A6B",
+    "price": 219900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe43q7faauxru": [
+   {
+    "id": "samsung-qe43q7faauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE43Q7FAAUXRU",
+    "price": 223900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "sony-k-43s30": [
+   {
+    "id": "sony-k-43s30",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Sony BRAVIA 3 K-43S30",
+    "price": 228900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue65u8000fuxru": [
+   {
+    "id": "samsung-ue65u8000fuxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE65U8000FUXRU",
+    "price": 247000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-50nu850b6la": [
+   {
+    "id": "lg-50nu850b6la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 50NU850B6LA",
+    "price": 247900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-55v6c": [
+   {
+    "id": "tcl-55v6c",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 55V6C",
+    "price": 249900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue55m70hauxpy": [
+   {
+    "id": "samsung-ue55m70hauxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE55M70HAUXPY",
+    "price": 254000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "sony-k-50s30": [
+   {
+    "id": "sony-k-50s30",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց SONY K-50S30",
+    "price": 268900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-50p7l": [
+   {
+    "id": "tcl-50p7l",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 50P7L",
+    "price": 275900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-50qned70b6c": [
+   {
+    "id": "lg-50qned70b6c",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 50QNED70B6C",
+    "price": 278900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-55p7k": [
+   {
+    "id": "tcl-55p7k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 55P7K",
+    "price": 279900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-65p8k": [
+   {
+    "id": "tcl-65p8k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 65P8K",
+    "price": 279900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55nu850b6la": [
+   {
+    "id": "lg-55nu850b6la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 55NU850B6LA",
+    "price": 287900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-50qned80a6a": [
+   {
+    "id": "lg-50qned80a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 50QNED80A6A",
+    "price": 289900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned70a6a": [
+   {
+    "id": "lg-55qned70a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 55QNED70A6A",
+    "price": 298900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe50q7faauxru": [
+   {
+    "id": "samsung-qe50q7faauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE50Q7FAAUXRU",
+    "price": 298900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-55p8l": [
+   {
+    "id": "tcl-55p8l",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 55P8L",
+    "price": 299800,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-50c6k": [
+   {
+    "id": "tcl-50c6k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 50C6K",
+    "price": 309900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue65u8000huxpy": [
+   {
+    "id": "samsung-ue65u8000huxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE65U8000HUXPY",
+    "price": 314000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "sony-k-55s30": [
+   {
+    "id": "sony-k-55s30",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց SONY K-55S30",
+    "price": 328900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-65ua75009la": [
+   {
+    "id": "lg-65ua75009la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 65UA75009LA",
+    "price": 329900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-65qned70a6a": [
+   {
+    "id": "lg-65qned70a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 65QNED70A6A",
+    "price": 339900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "xiaomi-a-65-2025": [
+   {
+    "id": "xiaomi-a-65-2025",
+    "shop": "eldorado",
+    "title": "Հեռուստացույց XIAOMI LED A 65 2025 (L65MA-ARU) Smart",
+    "price": 339900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "xiaomi-a-65-2026": [
+   {
+    "id": "xiaomi-a-65-2026",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Led Xiaomi A 65 2026 (L65MB-ARU)",
+    "price": 339900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe55q7faauxru": [
+   {
+    "id": "samsung-qe55q7faauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE55Q7FAAUXRU",
+    "price": 352900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue55du8000uxru": [
+   {
+    "id": "samsung-ue55du8000uxru",
+    "shop": "eldorado",
+    "title": "հեռուստացույց Samsung UE55DU8000UXRU Smart",
+    "price": 359000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned80a6a": [
+   {
+    "id": "lg-55qned80a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 55QNED80A6A",
+    "price": 359900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-65nu850b6la": [
+   {
+    "id": "lg-65nu850b6la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 65NU850B6LA",
+    "price": 367900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned80b6b": [
+   {
+    "id": "lg-55qned80b6b",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 55QNED80B6B",
+    "price": 372900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-55c6k": [
+   {
+    "id": "tcl-55c6k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 55C6K",
+    "price": 378900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-65p8l": [
+   {
+    "id": "tcl-65p8l",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 65P8L",
+    "price": 381700,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned82a6b": [
+   {
+    "id": "lg-55qned82a6b",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 55QNED82A6B",
+    "price": 399900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue75u8000huxpy": [
+   {
+    "id": "samsung-ue75u8000huxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE75U8000HUXPY",
+    "price": 403000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-65t6d": [
+   {
+    "id": "tcl-65t6d",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 65T6D",
+    "price": 409900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "sony-k-65s30": [
+   {
+    "id": "sony-k-65s30",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց SONY K-65S30",
+    "price": 418900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned86t6a": [
+   {
+    "id": "lg-55qned86t6a",
+    "shop": "eldorado",
+    "title": "Հեռուստացույց LG 55QNED86T6A Smart",
+    "price": 429900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-55c7k": [
+   {
+    "id": "tcl-55c7k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 55C7K",
+    "price": 439900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned80t6a": [
+   {
+    "id": "lg-55qned80t6a",
+    "shop": "eldorado",
+    "title": "Հեռուստացույց LG 55QNED80T6A Smart",
+    "price": 449100,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-75v6d": [
+   {
+    "id": "tcl-75v6d",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 75V6D",
+    "price": 459900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-75nu850b6la": [
+   {
+    "id": "lg-75nu850b6la",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 75NU850B6LA",
+    "price": 469900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue65m80hauxpy": [
+   {
+    "id": "samsung-ue65m80hauxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE65M80HAUXPY",
+    "price": 479000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe55q60abuxru": [
+   {
+    "id": "samsung-qe55q60abuxru",
+    "shop": "eldorado",
+    "title": "հեռուստացույց Samsung 55'' QLED 4K Q60AB Smart (QE55Q60ABUXRU)",
+    "price": 479900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-65c6k": [
+   {
+    "id": "tcl-65c6k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 65C6K",
+    "price": 479900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-65qned80b6b": [
+   {
+    "id": "lg-65qned80b6b",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 65QNED80B6B",
+    "price": 494900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-75t6d": [
+   {
+    "id": "tcl-75t6d",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 75T6D",
+    "price": 519900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-65qned86t6a": [
+   {
+    "id": "lg-65qned86t6a",
+    "shop": "eldorado",
+    "title": "Հեռուստացույց LG 65QNED86T6A Smart",
+    "price": 549900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-55qned86a6a": [
+   {
+    "id": "lg-55qned86a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 55QNED86A6A",
+    "price": 566900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-75qned70b6a": [
+   {
+    "id": "lg-75qned70b6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 75QNED70B6A",
+    "price": 569900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-65qned80a6a": [
+   {
+    "id": "lg-65qned80a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 65QNED80A6A",
+    "price": 611900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-ue75m80hauxpy": [
+   {
+    "id": "samsung-ue75m80hauxpy",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung UE75M80HAUXPY",
+    "price": 629000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-65c7l": [
+   {
+    "id": "tcl-65c7l",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 65C7L",
+    "price": 639900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe55qn80fauxru": [
+   {
+    "id": "samsung-qe55qn80fauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE55QN80FAUXRU",
+    "price": 665900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe75q60dauxru": [
+   {
+    "id": "samsung-qe75q60dauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE75Q60DAUXRU",
+    "price": 689900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe75qn70fauxru": [
+   {
+    "id": "samsung-qe75qn70fauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE75QN70FAUXRU",
+    "price": 690000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-85p8l": [
+   {
+    "id": "tcl-85p8l",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 85P8L",
+    "price": 695900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe55s95cauxru": [
+   {
+    "id": "samsung-qe55s95cauxru",
+    "shop": "eldorado",
+    "title": "հեռուստացույց Samsung 55\"QE55S95CAUXRU Smart",
+    "price": 697900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-85p7l": [
+   {
+    "id": "tcl-85p7l",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 85P7L",
+    "price": 699900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe65qn85dbuxru": [
+   {
+    "id": "samsung-qe65qn85dbuxru",
+    "shop": "eldorado",
+    "title": "հեռուստացույց Samsung QE65QN85DBUXRU Smart",
+    "price": 718900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-75c6k": [
+   {
+    "id": "tcl-75c6k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 75C6K",
+    "price": 729900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-85qned70b6a": [
+   {
+    "id": "lg-85qned70b6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 85QNED70B6A",
+    "price": 773900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-75c7k": [
+   {
+    "id": "tcl-75c7k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 75C7K",
+    "price": 779900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe75q70dauxru": [
+   {
+    "id": "samsung-qe75q70dauxru",
+    "shop": "eldorado",
+    "title": "Հեռուստացույց Samsung QE75Q70DAUXRU",
+    "price": 849900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-oled65b5rla": [
+   {
+    "id": "lg-oled65b5rla",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG OLED65B5RLA",
+    "price": 899900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-oled55c6rla": [
+   {
+    "id": "lg-oled55c6rla",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG OLED55C6RLA",
+    "price": 1016900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-75qned86a6a": [
+   {
+    "id": "lg-75qned86a6a",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 75QNED86A6A",
+    "price": 1079900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-75qned85b6b": [
+   {
+    "id": "lg-75qned85b6b",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG 75QNED85B6B",
+    "price": 1097900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe65s95fauxru": [
+   {
+    "id": "samsung-qe65s95fauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE65S95FAUXRU",
+    "price": 1111000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe75qn80fauxru": [
+   {
+    "id": "samsung-qe75qn80fauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE75QN80FAUXRU",
+    "price": 1173900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe75qn90cauxru": [
+   {
+    "id": "samsung-qe75qn90cauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE75QN90CAUXRU 75\" Neo QLED 4K",
+    "price": 1184900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe65s90dauxru": [
+   {
+    "id": "samsung-qe65s90dauxru",
+    "shop": "eldorado",
+    "title": "հեռուստացույց Samsung QE65S90DAUXRU Smart",
+    "price": 1199000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-98p8k": [
+   {
+    "id": "tcl-98p8k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 98P8K",
+    "price": 1199000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-oled65c5rla": [
+   {
+    "id": "lg-oled65c5rla",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG OLED65C5RLA",
+    "price": 1249900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe65qn90fauxru": [
+   {
+    "id": "samsung-qe65qn90fauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE65QN90FAUXRU",
+    "price": 1307900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe85q60dauxru": [
+   {
+    "id": "samsung-qe85q60dauxru",
+    "shop": "eldorado",
+    "title": "հեռուստացույց Samsung QE85Q60DAUXRU Smart",
+    "price": 1319000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe65s90faexru": [
+   {
+    "id": "samsung-qe65s90faexru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE65S90FAEXRU",
+    "price": 1382900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-oled65g5rla": [
+   {
+    "id": "lg-oled65g5rla",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց LG OLED65G5RLA",
+    "price": 1399900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-98c6k": [
+   {
+    "id": "tcl-98c6k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 98C6K",
+    "price": 1499000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe77s95fauxru": [
+   {
+    "id": "samsung-qe77s95fauxru",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց Samsung QE77S95FAUXRU",
+    "price": 1710000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "lg-oled83c4rla": [
+   {
+    "id": "lg-oled83c4rla",
+    "shop": "eldorado",
+    "title": "Հեռուստացույց LG OLED83C4RLA Smart",
+    "price": 2549900,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "samsung-qe55q7fam": [
+   {
+    "id": "samsung-qe55q7fam",
+    "shop": "eldorado",
+    "title": "Հայելի հեռուստացույցով Samsung QE55Q7FAM",
+    "price": 4894000,
+    "storage": null,
+    "url": "",
+    "seeded": true
+   }
+  ],
+  "tcl-115c7k": [
+   {
+    "id": "tcl-115c7k",
+    "shop": "eldorado",
+    "title": "Սմարթ հեռուստացույց TCL 115C7K",
+    "price": 6398900,
+    "storage": null,
+    "url": "",
     "seeded": true
    }
   ]
