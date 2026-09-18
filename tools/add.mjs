@@ -259,10 +259,20 @@ for (const [k, v] of Object.entries(byKind).sort((a, b) => b[1].length - a[1].le
 if (suspect.length) {
   console.log(`\n== ${suspect.length} to check by hand: same make, same kind, exactly the same price ==`);
   for (const s of suspect) console.log(`   ${String(s.price).padStart(8)}  ${s.id.padEnd(30)} vs ${s.twin}`);
-  fs.writeFileSync('data/check-by-hand.csv',
-    'id,samePriceAs,price,shopTitle,url\n' +
-    suspect.map(s => [s.id, s.twin, s.price, s.title.replace(/,/g, ' '), s.url].join(',')).join('\n') + '\n');
-  console.log('   -> data/check-by-hand.csv');
+  // These are open questions for a person, not a derived value, so this file MERGES. It used to be
+  // rewritten from scratch on every run - including a run without --write - which silently threw
+  // away every question nobody had answered yet. A run may add a question; only a person removes one.
+  const HAND = 'data/check-by-hand.csv', HEAD = 'id,samePriceAs,price,shopTitle,url';
+  const rows = new Map();
+  if (fs.existsSync(HAND))
+    for (const line of fs.readFileSync(HAND, 'utf8').split(/\r?\n/).slice(1)) {
+      const c = line.split(',');
+      if (line.trim()) rows.set(c[0] + '|' + c[c.length - 1], line);
+    }
+  for (const s of suspect)
+    rows.set(s.id + '|' + s.url, [s.id, s.twin, s.price, s.title.replace(/,/g, ' '), s.url].join(','));
+  fs.writeFileSync(HAND, [HEAD, ...rows.values()].join('\n') + '\n');
+  console.log(`   -> ${HAND} (${rows.size} open, ${suspect.length} from this run)`);
 }
 if (process.argv.includes('--refused')) {
   console.log('\n== refused ==');

@@ -72,6 +72,29 @@ function upscaleCandidates(url) {
 
 const ext = ct => ct.includes('png') ? 'png' : ct.includes('webp') ? 'webp' : 'jpg';
 
+// An offer that came from a hand-collected export carries a product url but no picture, so the
+// loop below used to skip the product entirely - 478 of them. The page behind that url names its
+// own main image in the og:image meta tag, which is what the tag is for, so one fetch turns a
+// link we already hold into a photo candidate. Shops that answer a crawler with a block page
+// simply yield nothing here; none of this reaches past a refusal.
+const ogSeen = new Map();
+async function ogImage(url) {
+  if (ogSeen.has(url)) return ogSeen.get(url);
+  let out = null;
+  try {
+    const r = await fetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
+    if (r.ok) {
+      const h = await r.text();
+      const m = h.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)
+             || h.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
+      if (m) out = new URL(m[1].replace(/&amp;/g, '&'), url).href;
+    }
+    await new Promise(r => setTimeout(r, 250));
+  } catch { /* a shop being down must not stop the pass */ }
+  ogSeen.set(url, out);
+  return out;
+}
+
 async function best(urls) {
   let win = null;
   for (const u of urls.flatMap(upscaleCandidates)) {
@@ -99,11 +122,24 @@ const man = fs.existsSync(`${SRC}/manifest.json`)
 // preview these are the same product at 1920px with a transparent background, so they simply
 // join the candidate list and win on size.
 const PRESS = fs.existsSync('data/press.json') ? JSON.parse(fs.readFileSync('data/press.json', 'utf8')) : {};
+const NO_FETCH = Object.keys(PR.excluded || {});
 
 let improved = 0, kept = 0, weak = [];
 for (const p of P) {
   if (only.size && !only.has(p.id)) continue;
   const offers = (PR.offers[p.id] || []).filter(o => o.image);
+  // Nobody photographed it into the price file, but somebody linked it: read the picture off the
+  // product page. Three links is enough to find one - past that the product has no photo anywhere.
+  if (!offers.length && !PRESS[p.id]) {
+    // prices.json names the shops this project will not fetch, and says of them: no listings, no
+    // product pages, no images. A hand-typed price for one of those shops is somebody's own
+    // reading and is carried; its url is still a page we do not request. Read the list from
+    // there rather than keeping a second copy that can drift out of step with it.
+    const links = [...new Set((PR.offers[p.id] || []).map(o => o.url).filter(Boolean))]
+      .filter(u => !NO_FETCH.some(host => { try { return new URL(u).hostname.endsWith(host); } catch { return false; } }))
+      .slice(0, 3);
+    for (const url of links) { const image = await ogImage(url); if (image) { offers.push({ url, image, color: null }); break; } }
+  }
   if (!offers.length && !PRESS[p.id]) continue;
   // one job per slot: the main shot, plus one per colour the shops actually photograph
   const slots = [{ slug: 'main', color: null, urls: [...Object.values(PRESS[p.id] || {}), ...offers.map(o => o.image)] }];

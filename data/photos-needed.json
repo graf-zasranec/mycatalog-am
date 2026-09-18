@@ -3,39 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1422,
- "missing": 989,
- "tooSmall": 9,
+ "missing": 976,
+ "tooSmall": 10,
  "products": [
-  {
-   "id": "xiaomi-redmi-note-15",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 15",
-   "category": "phone",
-   "shops": 7,
-   "query": "Xiaomi Redmi Note 15",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-14",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 14",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi Redmi Note 14",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-600-pro",
-   "brand": "Honor",
-   "name": "600 Pro",
-   "category": "phone",
-   "shops": 5,
-   "query": "Honor 600 Pro",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "dji-mic-mini",
    "brand": "DJI",
@@ -57,26 +27,6 @@
    "width": 0
   },
   {
-   "id": "dji-osmo-mobile-8",
-   "brand": "DJI",
-   "name": "Osmo Mobile 8",
-   "category": "drone",
-   "shops": 4,
-   "query": "DJI Osmo Mobile 8",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dji-osmo-pocket-3",
-   "brand": "DJI",
-   "name": "Osmo Pocket 3",
-   "category": "drone",
-   "shops": 4,
-   "query": "DJI Osmo Pocket 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dji-osmo-pocket-4",
    "brand": "DJI",
    "name": "Osmo Pocket 4",
@@ -87,52 +37,12 @@
    "width": 0
   },
   {
-   "id": "honor-600",
-   "brand": "Honor",
-   "name": "600",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor 600",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "honor-pad-10-5g",
    "brand": "Honor",
    "name": "Pad 10 5G",
    "category": "tablet",
    "shops": 4,
    "query": "Honor Pad 10 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-x8d",
-   "brand": "Honor",
-   "name": "X8d",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor X8d",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-x9d",
-   "brand": "Honor",
-   "name": "X9d",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor X9d",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-woburn-ii",
-   "brand": "Marshall",
-   "name": "Woburn II",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Marshall Woburn II",
    "what": "missing",
    "width": 0
   },
@@ -237,16 +147,6 @@
    "width": 0
   },
   {
-   "id": "lenovo-v15-g4-iru",
-   "brand": "Lenovo",
-   "name": "V15 G4 IRU",
-   "category": "laptop",
-   "shops": 3,
-   "query": "Lenovo V15 G4 IRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-17",
    "brand": "Xiaomi",
    "name": "Redmi 17",
@@ -323,16 +223,6 @@
    "category": "console",
    "shops": 2,
    "query": "Asus ROG Ally X",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-24-vg248q1b",
-   "brand": "ASUS",
-   "name": "TUF Gaming 24” VG248Q1B",
-   "category": "monitor",
-   "shops": 2,
-   "query": "ASUS TUF Gaming 24” VG248Q1B",
    "what": "missing",
    "width": 0
   },
@@ -837,16 +727,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-note-12",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 12",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi Note 12",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "acer-aspire-a16-51gm-71yf",
    "brand": "Acer",
    "name": "Aspire A16-51GM-71YF",
@@ -993,16 +873,6 @@
    "category": "monitor",
    "shops": 1,
    "query": "AOC 49\" LCD AG493UCX",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-airpods-5",
-   "brand": "Apple",
-   "name": "AirPods 5",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Apple AirPods 5",
    "what": "missing",
    "width": 0
   },
@@ -9895,6 +9765,16 @@
    "query": "Xiaomi Watch S1 Active",
    "what": "missing",
    "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-note-12",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 12",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Redmi Note 12",
+   "what": "too small",
+   "width": 556
   },
   {
    "id": "yandex-station-2",
