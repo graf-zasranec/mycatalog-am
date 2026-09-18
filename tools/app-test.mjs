@@ -99,15 +99,25 @@ is(unstated > 0 && trays.length < app.offersFor(p17).length, true,
    'an offer whose build nobody stated backs neither button');
 
 /* --- the tray always costs more -------------------------------------------------------- */
+// Per shop, and only per shop: a shop charges more for the tray build than for the eSIM build of
+// the same phone at the same capacity. Across shops it says nothing - iBolit's 512 GB tray at
+// 445,000 is under Pixel's 512 GB eSIM at 465,000 because iBolit is cheaper, not because either
+// price is wrong, and comparing the two cheapest numbers in the country reported that as a bug.
 for (const p of phones) {
   const offs = app.offersFor(p);
-  const caps = new Set(offs.map(o => o.storage));
-  for (const c of caps) {
-    const e = offs.filter(o => o.storage === c && o.esim === true).map(o => o.price);
-    const t = offs.filter(o => o.storage === c && o.esim === false).map(o => o.price);
-    if (!e.length || !t.length) continue;
-    n++;
-    if (Math.min(...t) <= Math.min(...e)) { bad++; console.log(`FAIL  ${p.id} ${c}: tray ${Math.min(...t)} is not above eSIM ${Math.min(...e)}`); }
+  for (const c of new Set(offs.map(o => o.storage))) {
+    // Colour too. iBolit sells the iPhone 18 Pro 256 GB tray in Glacier, Silver and Black at
+    // 799,000 and the eSIM only in Burgundy at 879,000: there is no colour it sells both ways,
+    // so the 80,000 between them is a colour difference, a SIM difference, or both, and nothing
+    // on either page separates them. Comparing them anyway invents a reading of that gap.
+    for (const s of new Set(offs.map(o => o.shop))) for (const col of new Set(offs.map(o => o.color))) {
+      const at = offs.filter(o => o.storage === c && o.shop === s && o.color === col);
+      const e = at.filter(o => o.esim === true).map(o => o.price);
+      const t = at.filter(o => o.esim === false).map(o => o.price);
+      if (!e.length || !t.length) continue;
+      n++;
+      if (Math.min(...t) <= Math.min(...e)) { bad++; console.log(`FAIL  ${p.id} ${c} at ${s}: tray ${Math.min(...t)} is not above eSIM ${Math.min(...e)}`); }
+    }
   }
 }
 

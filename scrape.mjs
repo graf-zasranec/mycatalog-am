@@ -134,7 +134,27 @@ function looksLikeAccessory(text) {
 // filed under it. Deciding what to add next used to be guesswork; this makes it a reading.
 let CURSHOP = '';
 const MISSED = new Map();
+// data/links.csv, column 0 against column 9: the id a human gave a shop page. Most call sites
+// below pass the url either alone or glued to the shop's title, so the url is read back out of
+// whatever was handed in rather than asking all twenty-odd of them to pass it separately.
+const PINS = new Map();
+try {
+  for (const line of fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).slice(1)) {
+    const c = line.split(',');
+    if (c[9] && c[0]) PINS.set(c[9], c[0]);
+  }
+} catch (e) { if (e.code !== 'ENOENT') console.warn('links.csv:', e.message); }
+function pinnedId(text) {
+  const m = String(text).match(/https?:\/\/\S+/);
+  return m ? PINS.get(m[0].replace(/[),.;]+$/, '')) : undefined;
+}
 function matchPhone(text) {
+  // A human reading data/links.csv and correcting the id column has settled this page for good.
+  // Checked before every heuristic below, because a heuristic is a guess and this is a reading:
+  // no amount of cleverness about titles should be allowed to re-open a question already answered.
+  // '-' in that column says "not a product this catalogue carries", which is also an answer.
+  const pin = pinnedId(text);
+  if (pin !== undefined) return pin === '-' ? null : pin;
   if (looksLikeAccessory(text)) return null;
   const h = tokenized(text).replace(/  +/g, ' ');
   if (SECONDHAND.some(w => h.includes(' ' + w + ' '))) return null;
@@ -722,7 +742,23 @@ if (process.argv[2] === '--selftest') {
     const got = priceAfter(html, anchor);
     if (got !== want) { bad++; console.log(`FAIL  priceAfter got=${got} want=${want}  <- ${html}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + 1} checks pass`);
+  // The pin has to beat every heuristic below it, including the accessory reject and a title
+  // that names a different product outright - that is the whole point of writing one by hand.
+  PINS.set('https://example.am/p/1', 'apple-iphone-17-pro');
+  PINS.set('https://example.am/p/2', '-');
+  const pinCases = [
+    ['apple-iphone-17-pro', 'https://example.am/p/1'],
+    ['apple-iphone-17-pro', 'Case for Galaxy S26 https://example.am/p/1'],
+    [null, 'iPhone 17 Pro https://example.am/p/2'],
+    // a url nobody pinned still goes through the ordinary matcher
+    ['apple-iphone-17-pro', 'iPhone 17 Pro https://example.am/p/3'],
+  ];
+  for (const [want, text] of pinCases) {
+    const got = matchPhone(text);
+    if (got !== want) { bad++; console.log(`FAIL  pin got=${got} want=${want}  <- ${text}`); }
+  }
+  PINS.delete('https://example.am/p/1'); PINS.delete('https://example.am/p/2');
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + pinCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 

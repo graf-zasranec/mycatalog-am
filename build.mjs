@@ -50,6 +50,18 @@ for (const p of phones) {
   }
 }
 
+// Nothing here is sold with one gigabyte of storage. A "1" in that column is a terabyte whose
+// unit got dropped on the way in - 83 laptops shipped that way and every one of them published
+// "1 GB" on its page. The importer that did it was a one-off script, so the guard lives at the
+// gate every product must pass rather than in whatever writes phones.json next. Watches and
+// video cards measure something else in that field, and say so with variantUnit.
+for (const p of phones)
+  for (const v of p.variants || [])
+    if (!p.variantUnit && v.storage != null && v.storage < 8) {
+      console.error(`build: ${p.id} says ${v.storage} GB of storage - a dropped TB?`);
+      process.exit(1);
+    }
+
 // A price series for a product that left the catalogue is dead weight nothing can render.
 for (const k of Object.keys(HISTORY.points || {}))
   if (!phones.some(p => p.id === k)) { console.warn('  ! history for a product not in the catalogue:', k); delete HISTORY.points[k]; }
