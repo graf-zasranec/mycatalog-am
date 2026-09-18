@@ -1537,7 +1537,10 @@ for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, see
 let seeded = 0;
 try {
   const raw = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1)
-    .map(line => { const [shop, title, cap, color, url, price] = line.split(','); return { shop, title, cap, color, url, price }; });
+    // A seventh column, and the rows written before it existed simply leave it empty. Ucom prices
+    // the Galaxy A17 at 65,900 with 4 GB of memory and 73,900 with 6, both at 128 GB and in the
+    // same three colours - two real configurations that nothing in six columns could tell apart.
+    .map(line => { const [shop, title, cap, color, url, price, ram] = line.split(','); return { shop, title, cap, color, url, price, ram }; });
   const shared = new Map();
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
   const rows = raw
@@ -1583,10 +1586,12 @@ try {
     // the url is what tells two same-null-colour rows apart when colour itself cannot.
     if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage
                      && !!o.esim === !!r.esim && (o.color || null) === (r.color || null)
+                     && (o.ram ?? null) === (r.ram ? +r.ram : null)
                      && (o.url || null) === (r.url || null))) continue;
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
+                ram: r.ram ? +r.ram : undefined,
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim });
     seeded++;
   }
@@ -1755,7 +1760,7 @@ for (const [id, list] of Object.entries(offers)) {
     // in four colours at one price from one page, and without colour here those four rows are
     // one row: the phone arrived with a single swatch and the picker had nothing to pick. An
     // exact repeat still collapses, because an exact repeat repeats the colour too.
-    const k = [o.shop, o.url, o.price, o.storage ?? '', o.color ?? '',
+    const k = [o.shop, o.url, o.price, o.storage ?? '', o.color ?? '', o.ram ?? '',
                o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });

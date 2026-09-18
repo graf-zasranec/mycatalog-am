@@ -1,4 +1,4 @@
-shop,title,capacity,color,url,price
+shop,title,capacity,color,url,price,ram
 eldorado,ASUS Vivobook 15X OLED M1503,512,,https://eldorado.am/en/asus-vivobook-15x-oled-m1503-m1503ia-l1018-90nb0y61-m00590,214900
 eldorado,ASUS Zenbook 14 OLED UM3402YA,512,,https://eldorado.am/en/asus-zenbook-14-oled-um3402ya-kp290-90nb0w95-m00j70,329900
 eldorado,ASUS Vivobook S 15 OLED M3502QA,1024,,https://eldorado.am/en/asus-vivobook-s-15-oled-m3502qa-ma153-16-gb-1-tb-90nb0xx1-m006s0,329900
@@ -213,10 +213,8 @@ ucom,iPhone 16,128,,https://shop.ucom.am/en/iphone-16.html,351900
 ucom,iPhone 16 (AM),128,,https://shop.ucom.am/am/iphone-16.html,351900
 ucom,Samsung Galaxy S25,128,,https://shop.ucom.am/en/samsung-galaxy-s25.html,319900
 ucom,Samsung Galaxy S25 Plus,256,,https://shop.ucom.am/en/samsung-galaxy-s25-plus.html,374900
-ucom,Samsung Galaxy S26,256,,https://shop.ucom.am/en/samsung-galaxy-s26.html,348900
 ucom,Samsung Galaxy A57,256,,https://shop.ucom.am/en/samsung-galaxy-57.html,166900
 ucom,Samsung Galaxy A16,128,,https://shop.ucom.am/en/samsung-galaxy-a16.html,74900
-ucom,Samsung Galaxy A07,64,,https://shop.ucom.am/en/samsung-galaxy-a07.html,49900
 zigzag,Samsung Galaxy S26 Ultra 512GB,512,Black,https://www.zigzag.am/am/samsung-galaxy-s26-ultra-12gb-512gb-black.html,569000
 zigzag,Samsung Galaxy S26 Ultra Violet,256,Cobalt Violet,https://www.zigzag.am/am/samsung-galaxy-s26-ultra-12gb-256gb-cobalt-violet.html,499000
 zigzag,Samsung Galaxy S26 Ultra Black,256,Black,https://www.zigzag.am/am/samsung-galaxy-s26-ultra-12gb-256gb-black.html,499000
@@ -2079,9 +2077,6 @@ ucom,Apple iPhone 17 512GB Black,512,Black,https://shop.ucom.am/en/iphone17.html
 ucom,Apple iPhone Air 256GB,256,,https://shop.ucom.am/en/iphone-air.html,411900
 ucom,Apple iPhone 17e 256GB Black,256,Black,https://shop.ucom.am/am/iphone-17e.html,298900
 ucom,Apple iPhone 17e 256GB White,256,White,https://shop.ucom.am/am/iphone-17e.html,298900
-ucom,Samsung Galaxy S26 FE 128GB,128,,https://shop.ucom.am/am/samsung-galaxy-s26-fe.html,336900
-ucom,Samsung Galaxy S26 FE 256GB,256,,https://shop.ucom.am/am/samsung-galaxy-s26-fe.html,383900
-ucom,Samsung Galaxy S26 FE 512GB,512,,https://shop.ucom.am/am/samsung-galaxy-s26-fe.html,454900
 ucom,Samsung Galaxy A27 5G 128GB Pink,128,Pink,https://shop.ucom.am/am/samsung-galaxy-a27.html,122900
 ucom,Samsung Galaxy A27 5G 128GB Blue,128,Blue,https://shop.ucom.am/am/samsung-galaxy-a27.html,122900
 ucom,Samsung Galaxy A27 5G 128GB Black,128,Black,https://shop.ucom.am/am/samsung-galaxy-a27.html,122900
@@ -2093,3 +2088,41 @@ ucom,Samsung Galaxy Z Flip 8 512GB Cream,512,Cream,,639900
 ucom,Xiaomi Redmi Note 17 Pro 5G 256GB Black,256,Black,https://shop.ucom.am/am/xiaomi-redmi-note-17-pro-5g.html,135900
 ucom,Xiaomi Redmi Note 17 Pro 5G 256GB Purple,256,Purple,https://shop.ucom.am/am/xiaomi-redmi-note-17-pro-5g.html,135900
 ucom,Xiaomi Redmi Note 17 Pro 5G 256GB Orange,256,Orange,https://shop.ucom.am/am/xiaomi-redmi-note-17-pro-5g.html,135900
+ucom,Samsung Galaxy S26 12GB 256GB Black,256,Black,https://shop.ucom.am/am/samsung-galaxy-s26.html,348900,12
+ucom,Samsung Galaxy S26 12GB 256GB White,256,White,https://shop.ucom.am/am/samsung-galaxy-s26.html,348900,12
+ucom,Samsung Galaxy S26 12GB 256GB Cobalt Violet,256,Cobalt Violet,https://shop.ucom.am/am/samsung-galaxy-s26.html,348900,12
+ucom,Samsung Galaxy S26 12GB 256GB Sky Blue,256,Sky Blue,https://shop.ucom.am/am/samsung-galaxy-s26.html,348900,12
+ucom,Samsung Galaxy S26 12GB 512GB Black,512,Black,https://shop.ucom.am/am/samsung-galaxy-s26.html,418900,12
+ucom,Samsung Galaxy S26 12GB 512GB White,512,White,https://shop.ucom.am/am/samsung-galaxy-s26.html,418900,12
+ucom,Samsung Galaxy S26 12GB 512GB Cobalt Violet,512,Cobalt Violet,https://shop.ucom.am/am/samsung-galaxy-s26.html,418900,12
+ucom,Samsung Galaxy S26 12GB 512GB Sky Blue,512,Sky Blue,https://shop.ucom.am/am/samsung-galaxy-s26.html,418900,12
+ucom,Samsung Galaxy S26+ 12GB 512GB Black,512,Black,https://shop.ucom.am/am/samsung-galaxy-s26-plus.html,469900,12
+ucom,Samsung Galaxy S26+ 12GB 512GB White,512,White,https://shop.ucom.am/am/samsung-galaxy-s26-plus.html,469900,12
+ucom,Samsung Galaxy S26+ 12GB 512GB Sky Blue,512,Sky Blue,https://shop.ucom.am/am/samsung-galaxy-s26-plus.html,469900,12
+ucom,Samsung Galaxy S26 Ultra 12GB 256GB Black,256,Black,https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html,479900,12
+ucom,Samsung Galaxy S26 Ultra 12GB 256GB Cobalt Violet,256,Cobalt Violet,https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html,479900,12
+ucom,Samsung Galaxy S26 Ultra 12GB 256GB Blue,256,Blue,https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html,479900,12
+ucom,Samsung Galaxy S26 Ultra 12GB 512GB Black,512,Black,https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html,569900,12
+ucom,Samsung Galaxy S26 Ultra 12GB 512GB Cobalt Violet,512,Cobalt Violet,https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html,569900,12
+ucom,Samsung Galaxy S26 Ultra 12GB 512GB Blue,512,Blue,https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html,569900,12
+ucom,Samsung Galaxy A17 5G 4GB 128GB Grey,128,Grey,https://shop.ucom.am/am/samsung-galaxy-a17.html,65900,4
+ucom,Samsung Galaxy A17 5G 4GB 128GB Black,128,Black,https://shop.ucom.am/am/samsung-galaxy-a17.html,65900,4
+ucom,Samsung Galaxy A17 5G 4GB 128GB Blue,128,Blue,https://shop.ucom.am/am/samsung-galaxy-a17.html,65900,4
+ucom,Samsung Galaxy A17 5G 6GB 128GB Grey,128,Grey,https://shop.ucom.am/am/samsung-galaxy-a17.html,73900,6
+ucom,Samsung Galaxy A17 5G 6GB 128GB Black,128,Black,https://shop.ucom.am/am/samsung-galaxy-a17.html,73900,6
+ucom,Samsung Galaxy A17 5G 6GB 128GB Blue,128,Blue,https://shop.ucom.am/am/samsung-galaxy-a17.html,73900,6
+ucom,Samsung Galaxy A07 4GB 128GB Green,128,Green,https://shop.ucom.am/en/samsung-galaxy-a07.html,49900,4
+ucom,Samsung Galaxy A07 4GB 128GB Black,128,Black,https://shop.ucom.am/en/samsung-galaxy-a07.html,49900,4
+ucom,Samsung Galaxy A07 4GB 128GB Light Violet,128,Light Violet,https://shop.ucom.am/en/samsung-galaxy-a07.html,49900,4
+ucom,Samsung Galaxy A07 6GB 128GB Green,128,Green,https://shop.ucom.am/en/samsung-galaxy-a07.html,54900,6
+ucom,Samsung Galaxy A07 6GB 128GB Black,128,Black,https://shop.ucom.am/en/samsung-galaxy-a07.html,54900,6
+ucom,Samsung Galaxy Z Flip7 FE 8GB 128GB Black,128,Black,https://shop.ucom.am/am/samsung-galaxy-z-flip-7-fe.html,298900,8
+ucom,Samsung Galaxy Z Flip7 FE 8GB 128GB White,128,White,https://shop.ucom.am/am/samsung-galaxy-z-flip-7-fe.html,298900,8
+ucom,Samsung Galaxy Z Flip7 FE 8GB 256GB Black,256,Black,https://shop.ucom.am/am/samsung-galaxy-z-flip-7-fe.html,338900,8
+ucom,Samsung Galaxy Z Flip7 FE 8GB 256GB White,256,White,https://shop.ucom.am/am/samsung-galaxy-z-flip-7-fe.html,338900,8
+ucom,Samsung Galaxy Z Fold 8 12GB 256GB Graphite,256,Graphite,https://shop.ucom.am/am/samsung-galaxy-z-fold-8.html,757900,12
+ucom,Samsung Galaxy Z Fold 8 12GB 256GB Cream,256,Cream,https://shop.ucom.am/am/samsung-galaxy-z-fold-8.html,757900,12
+ucom,Samsung Galaxy Z Fold 8 12GB 512GB Graphite,512,Graphite,https://shop.ucom.am/am/samsung-galaxy-z-fold-8.html,900900,12
+ucom,Samsung Galaxy Z Fold 8 Ultra 12GB 256GB Graphite,256,Graphite,https://shop.ucom.am/am/samsung-galaxy-z-fold-8-ultra.html,852900,12
+ucom,Samsung Galaxy Z Fold 8 Ultra 12GB 256GB Violet Shadow,256,Violet Shadow,https://shop.ucom.am/am/samsung-galaxy-z-fold-8-ultra.html,852900,12
+ucom,Samsung Galaxy Z Fold 8 Ultra 12GB 512GB Graphite,512,Graphite,https://shop.ucom.am/am/samsung-galaxy-z-fold-8-ultra.html,994900,12
