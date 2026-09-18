@@ -145,12 +145,19 @@ const PINS = new Map();
 // and is re-derived freely; with it, somebody checked.
 const SIMPINS = new Map();
 try {
+  const seenTwice = new Set();
   for (const line of fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).slice(1)) {
     const c = line.split(',');
     if (!c[9]) continue;
+    // A url two different products answer to names no single product, so it settles nothing. The
+    // file should not contain one, and a pin taken from one would be applied to every row it
+    // touches: 128 Yerevan Mobile rows share one .../tablets.html.
+    if (PINS.has(c[9]) && PINS.get(c[9]) !== c[0]) { seenTwice.add(c[9]); continue; }
     if (c[0]) PINS.set(c[9], c[0]);
     if (c[6] === 'esim!' || c[6] === 'nano!') SIMPINS.set(c[9], c[6] === 'esim!');
   }
+  for (const u of seenTwice) { PINS.delete(u); SIMPINS.delete(u); }
+  if (seenTwice.size) console.warn(`links.csv: ${seenTwice.size} url(s) name more than one product - not pinned`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('links.csv:', e.message); }
 const urlIn = text => String(text).match(/https?:\/\/\S+/)?.[0].replace(/[),.;]+$/, '');
 function pinnedId(text) {
@@ -1464,9 +1471,21 @@ for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, see
 // disallow us (yerevanmobile, list.am, notebookcentre) are recorded by hand and carried here.
 let seeded = 0;
 try {
-  const rows = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1)
-    .map(line => { const [shop, title, cap, color, url, price] = line.split(','); return { shop, title, cap, color, url, price }; })
-    .map(r => ({ ...r, id: matchPhone(r.title), storage: r.cap ? +r.cap : null,
+  const raw = fs.readFileSync('data/listings.csv', 'utf8').trim().split(/\r?\n/).slice(1)
+    .map(line => { const [shop, title, cap, color, url, price] = line.split(','); return { shop, title, cap, color, url, price }; });
+  const shared = new Map();
+  for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
+  const rows = raw
+    // A hand row's url is read ONLY when somebody pinned it AND no other row names that same
+    // url. Pixel's DJI mic kits say "Charging case" in their titles, the accessory filter threw
+    // all four out, and the pin written to overrule that was keyed by url and so was never
+    // consulted. But a third of these rows carry the url of the LISTING they were read off -
+    // .../electronics/tablets.html, ...&page=3 - and 128 Yerevan Mobile rows share one of them.
+    // The count comes from this file, which is the only place that knows: prices.json cannot
+    // say, because by the time it is written the rows in question have already been thrown away.
+    .map(r => ({ ...r, id: (PINS.has(r.url) && shared.get(r.url) === 1) ? matchPhone(r.url)
+                           : matchPhone(r.title),
+                 storage: r.cap ? +r.cap : null,
                  esim: simBuild(`${r.title} ${r.url}`) }))
     .filter(r => r.id && r.price);
 
