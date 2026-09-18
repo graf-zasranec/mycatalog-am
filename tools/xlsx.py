@@ -20,15 +20,25 @@ SHOPS = {'istyle.am': 'istyle', 'pixel.am': 'pixel', 'eldorado.am': 'eldorado', 
          '3dplanet.am': 'planet3d', 'ucom.am': 'ucom', 'telecomarmenia.am': 'telecom'}
 # the column name on the left is whatever the person clicked in Web Scraper that day
 KEEP = {'name': 'name', 'data': 'name', 'title': 'name', 'item_page_title': 'name',
-        'price': 'price', 'price 1': 'price',
+        # every shop's export calls the price something slightly different, and a row with no
+        # price is dropped - so a column name missed here loses the whole file silently
+        'price': 'price', 'price 1': 'price', 'price2': 'price', 'price_1': 'price',
+        'price_2': 'price', 'price_5': 'price',
         'ram': 'ram', 'memory': 'storage', 'chip': 'chip', 'videocard': 'gpu',
         'screen size': 'screen', 'screen resolution': 'resolution', 'operating system': 'os',
         'brand': 'brand', 'weight': 'weight', 'image': 'image', 'item_page_link': 'url'}
 
 
 def shop_of(url):
-    host = re.sub(r'^https?://(www\.)?', '', str(url or '')).split('/')[0]
-    return SHOPS.get(host, host or '?')
+    # Ucom serves its catalogue from shop.ucom.am, so stripping only "www." left the whole
+    # subdomain in the key and 174 rows arrived filed under a shop nothing else knows about.
+    # Matched on the suffix instead: a host ends with the domain whatever sits in front of it.
+    host = re.sub(r'^https?://', '', str(url or '')).split('/')[0].lower()
+    host = re.sub(r'^www\.', '', host)
+    for dom, name in SHOPS.items():
+        if host == dom or host.endswith('.' + dom):
+            return name
+    return host or '?'
 
 
 def amd(v):
@@ -64,7 +74,12 @@ def read(path):
         if not row.get('name') or not row.get('price'):
             continue
         row['price'] = amd(row['price'])
-        row['shop'] = shop_of(dict(zip(head, r)).get('web_scraper_start_url'))
+        start = dict(zip(head, r)).get('web_scraper_start_url')
+        row['shop'] = shop_of(start)
+        # The aisle the row was read from. VLV's product links are /en/Product/47554 and its
+        # titles are "SAMSUNG UE85M80HAUXPY" - neither says what the thing is, while the listing
+        # it came off says /category/filter/tv-1 and is the shop's own word for it.
+        row['from'] = str(start or '')
         row['src'] = os.path.basename(path)
         if row['price']:
             out.append(row)

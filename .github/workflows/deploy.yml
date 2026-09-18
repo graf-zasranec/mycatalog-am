@@ -42,7 +42,9 @@ jobs:
         run: |
           git config user.name  "mycatalog-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/prices.json data/history.json index.html
+          # photos-needed.json goes with them: it is published for whoever is finding
+          # images, and a stale copy is worse than none.
+          git add data/prices.json data/history.json data/photos-needed.json index.html
           git diff --staged --quiet && echo "no price changes" && exit 0
           git commit -m "prices: $(date -u +%Y-%m-%d)"
           git push

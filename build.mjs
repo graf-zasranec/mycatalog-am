@@ -114,6 +114,44 @@ function webpWidth(file) {
 const cutW = {};
 for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { cutW[f] = 0; } }
 
+// The photo backlog, published. Every build writes what still needs a picture to a file that
+// goes live with the site, so whoever is finding images can read the current list over HTTP
+// instead of being handed a stale copy:
+//     https://graf-zasranec.github.io/mycatalog-am/data/photos-needed.json
+//
+// Two different jobs, and they are not interchangeable. MISSING is a grey box on the page.
+// TOO SMALL needs a LARGER ORIGINAL and never an enlargement - a 545px picture stretched to 600
+// is the same picture with softer edges, which is the trade this floor exists to refuse.
+{
+  const FLOOR = 600;
+  const need = [];
+  for (const p of phones) {
+    const f = `${CUT}/${p.id}__main.webp`;
+    const shops = new Set(((PRICES.offers || {})[p.id] || []).map(o => o.shop)).size;
+    const row = { id: p.id, brand: p.brand, name: p.name, category: p.category, shops,
+                  // what to type into an image search to find the right thing
+                  query: `${p.brand} ${p.name}`.replace(/\s+/g, ' ').trim() };
+    if (!fs.existsSync(f)) { need.push({ ...row, what: 'missing', width: 0 }); continue; }
+    const w = webpWidth(f);
+    if (w && w < FLOOR) need.push({ ...row, what: 'too small', width: w });
+  }
+  // the ones people actually land on first: a missing photo costs most where the shops agree
+  need.sort((a, b) => (a.what === b.what ? 0 : a.what === 'missing' ? -1 : 1)
+    || b.shops - a.shops || (b.width ? 1 : 0) - (a.width ? 1 : 0) || a.id.localeCompare(b.id));
+  fs.writeFileSync('data/photos-needed.json', JSON.stringify({
+    generated: new Date().toISOString().slice(0, 10),
+    floorPx: FLOOR,
+    note: 'too small needs a larger original, not an enlargement',
+    total: phones.length,
+    missing: need.filter(n => n.what === 'missing').length,
+    tooSmall: need.filter(n => n.what === 'too small').length,
+    products: need,
+  }, null, 1));
+  console.log(`  photos-needed.json: ${need.filter(n => n.what === 'missing').length} missing, ` +
+              `${need.filter(n => n.what === 'too small').length} under ${FLOOR}px`);
+}
+
+
 // small: the 600 px copy where one exists. The product page wants the full-size colour shot;
 // the card cycling through the same colours in a 123 px box does not.
 function cutMap(inline, small) {

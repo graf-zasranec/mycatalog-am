@@ -50,7 +50,27 @@ const KINDS = [
 // .../smartphones/... is a phone even when its title only says "Samsung A07".
 const SECTIONS = [[/smartphone|\/phones?\//i, 'phone'], [/tablet/i, 'tablet'],
   [/laptop|notebook/i, 'laptop'], [/watch/i, 'watch'], [/headphone|audio/i, 'headphones'],
-  [/monitor/i, 'monitor'], [/\/tv\b/i, 'tv']];
+  [/monitor/i, 'monitor'], [/[/-]tv(-\d+)?\b|\btelevision/i, 'tv'], [/speaker|acoustic/i, 'speaker']];
+
+// A television's size and panel are written into its model number, the way every maker writes
+// them. The same reading that built the 97 sets already here, so a set arriving from a different
+// shop lands beside them with the same two facts rather than with none.
+function tvSpec(model) {
+  let m;
+  if ((m = model.match(/^OLED(\d{2,3})/i))) return { size: +m[1], type: 'OLED' };
+  if ((m = model.match(/^(\d{2,3})QNED/i))) return { size: +m[1], type: 'QNED Mini-LED' };
+  if ((m = model.match(/^(\d{2,3})NANO/i))) return { size: +m[1], type: 'NanoCell LED' };
+  if ((m = model.match(/^(\d{2,3})(UR|UT|US|UA|NU|QNED)/i))) return { size: +m[1], type: 'LED' };
+  if ((m = model.match(/^(?:QE|MRE)(\d{2,3})QN9/i))) return { size: +m[1], type: 'Neo QLED' };
+  if ((m = model.match(/^(?:QE|MRE)(\d{2,3})S9/i))) return { size: +m[1], type: 'OLED' };
+  if ((m = model.match(/^(?:QE|MRE)(\d{2,3})QN/i))) return { size: +m[1], type: 'Neo QLED' };
+  if ((m = model.match(/^(?:QE|MRE)(\d{2,3})Q/i))) return { size: +m[1], type: 'QLED' };
+  if ((m = model.match(/^UE(\d{2,3})/i))) return { size: +m[1], type: 'LED' };
+  if ((m = model.match(/^(\d{2,3})(C|P|X|V|T|A|U)\d/i)))
+    return { size: +m[1], type: /[CX]/i.test(m[2]) ? 'QLED' : 'LED' };
+  if ((m = model.match(/\bK[DE]?-?(\d{2,3})/i))) return { size: +m[1], type: 'LED' };
+  return null;
+}
 
 // Most of these exports are listing pages: no kind-word in the title, no section in the url,
 // just "JBL Flip 6 Gray" or "MacBook Air 13 MGN93 M1 2020 Silver". What a thing is, though, is
@@ -172,7 +192,9 @@ for (const r of rows) {
 
   const kind = (KINDS.find(([re]) => re.test(title)) || [])[1]
     || (SECTIONS.find(([re]) => re.test(r.url || '')) || [])[1]
-    || (FAMILY.find(([re]) => re.test(title)) || [])[1];
+    || (FAMILY.find(([re]) => re.test(title)) || [])[1]
+    // last, and only when nothing the row itself says has answered: the aisle it was read from
+    || (SECTIONS.find(([re]) => re.test(r.from || '')) || [])[1];
   if (!kind) { refused.push(['no category', r]); continue; }
 
   // the model is what is left once the brand and the kind-word are taken out of the shop's title
@@ -263,10 +285,14 @@ for (const [id, list] of fresh) {
       ? tiers.map(s => ({ ram: null, storage: s,
           priceAmd: Math.min(...list.filter(x => x.storage === s).map(x => x.price)) }))
       : [{ ram: null, storage: null, priceAmd: lo }],
-    display: {}, battery: {},
+    display: o.category === 'tv' && tvSpec(o.name)
+      ? { size: tvSpec(o.name).size, type: tvSpec(o.name).type, resolution: '3840 x 2160' } : {},
+    battery: {},
     summaryEn: `${o.brand} ${o.name}.`,
     // Nothing on the listing states a screen, a chip or a battery, so nothing here claims one.
-    unsure: ['popularity', 'display', 'chipset', 'battery.capacity'],
+    unsure: o.category === 'tv' && tvSpec(o.name)
+      ? ['popularity', 'display.resolution', 'chipset']
+      : ['popularity', 'display', 'chipset', 'battery.capacity'],
   });
   for (const x of list)
     csv.push([x.shop, x.title.replace(/,/g, ' '), x.storage || '', '', x.url, x.price].join(','));
