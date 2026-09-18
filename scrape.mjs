@@ -1751,7 +1751,12 @@ for (const [id, list] of Object.entries(offers)) {
     // the SIM build belongs in the key: without it two rows for one page that differ only by
     // build collapse into whichever the loop reached first, and since this file is re-read as the
     // next run's base, the survivor alternated from night to night.
-    const k = [o.shop, o.url, o.price, o.storage ?? '', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
+    // Colour belongs in it for the same reason the SIM build does. Ucom sells the iPhone 18 Pro
+    // in four colours at one price from one page, and without colour here those four rows are
+    // one row: the phone arrived with a single swatch and the picker had nothing to pick. An
+    // exact repeat still collapses, because an exact repeat repeats the colour too.
+    const k = [o.shop, o.url, o.price, o.storage ?? '', o.color ?? '',
+               o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
 }

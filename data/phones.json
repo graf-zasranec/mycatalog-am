@@ -50592,5 +50592,37 @@
    "chipset",
    "battery.capacity"
   ]
+ },
+ {
+  "id": "xiaomi-redmi-note-17-pro-5g",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "Redmi Note 17 Pro 5G",
+  "tier": "mid",
+  "priceAmd": 135900,
+  "priceAmdMax": 135900,
+  "popularity": 45,
+  "accent": "#5C6470",
+  "colors": [
+   "Black",
+   "Purple",
+   "Orange"
+  ],
+  "variants": [
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 135900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Xiaomi Redmi Note 17 Pro 5G.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
  }
 ]
