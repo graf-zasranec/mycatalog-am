@@ -176,8 +176,17 @@ for (const r of rows) {
   if (!kind) { refused.push(['no category', r]); continue; }
 
   // the model is what is left once the brand and the kind-word are taken out of the shop's title
+  // Strip the word that says what KIND of thing this is - but not a word that is part of the
+  // thing's NAME. "Airwrap", "Supersonic" and "AirStrait" are Dyson's model lines, and taking
+  // them out of the middle left "Dyson Nural er" and "Dyson multi- Wave+Curl diffuser".
+  const FAMILY_WORD = /Airwrap|Supersonic|AirStrait|AirStarit|Buds|AirPods|Watch|Tablet|Speaker/i;
   let name = title;
-  for (const [re] of KINDS) name = name.replace(new RegExp(re.source, 'gi'), ' ');
+  for (const [re] of KINDS) {
+    const keep = [...(title.match(new RegExp(re.source, 'gi')) || [])].some(w => FAMILY_WORD.test(w));
+    if (!keep) name = name.replace(new RegExp(re.source, 'gi'), ' ');
+  }
+  // ...and a trademark sign is punctuation the maker owns, not part of what it is called
+  name = name.replace(/[™®©]/g, ' ');
   name = name.replace(reBrand(brand, 'ig'), ' ')
              .replace(/\(\s*\)/g, ' ').replace(/\s{2,}/g, ' ').replace(/^[\s|,-]+|[\s|,-]+$/g, '');
   // A model name is written in Latin letters by every maker on these shelves. What is left in

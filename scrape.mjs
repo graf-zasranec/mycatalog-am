@@ -1049,7 +1049,7 @@ const SHOPS = {
   ucom: {
     name: 'Ucom', site: 'https://shop.ucom.am', note: 'operator shop',
     async run() {
-      const out = [];
+      const out = [], found = [];
       // robots.txt disallows every URL with a query string, so pagination is off limits and
       // each category contributes only its first page. Categories, not pages, give breadth.
       const CATS = ['smartphones', 'tablets', 'smart-watches-bands', 'headphones', 'apple-products'];
@@ -1072,9 +1072,33 @@ const SHOPS = {
           if (!id) continue;
           const mi = b.indexOf(D + "https://shop.ucom.am/media/catalog/");
           const img = mi < 0 ? null : b.slice(mi + 1, b.indexOf(D, mi + 1));
-          out.push({ id, price, storage: storageOf(title) ?? storageOf(url), title, url,
-            image: img && safeUrl(img) ? img : null, inStock: true });
+          found.push({ id, price, title, url, image: img && safeUrl(img) ? img : null });
         }
+      }
+
+      // The grid shows ONE price - whichever colour and capacity Magento decided to show first -
+      // so a phone sold in four capacities arrived here as a single number, and the picker on
+      // the product page had nothing to pick between. Every real SKU is described on the product
+      // page itself, in the same jsonConfig every other Magento shop here is read through.
+      //
+      // robots.txt disallows /*? , /catalog/ , /index.php/ and the rest; a product page is
+      // .../en/<slug>.html and is none of those, so it may be fetched.
+      const seen = new Set();
+      for (const f of found) {
+        if (seen.has(f.url)) continue;
+        seen.add(f.url);
+        const page = await get(f.url);
+        await sleep(DELAY_MS);
+        const kids = page ? magentoChildren(page, (phoneById[f.id] || {}).colors) : [];
+        if (!kids.length) {
+          // a simple product, with one price and nothing to choose: the grid already had it
+          out.push({ ...f, storage: storageOf(f.title) ?? storageOf(f.url), inStock: true });
+          continue;
+        }
+        for (const k of kids)
+          out.push({ id: f.id, title: f.title, url: f.url, image: f.image,
+                     price: k.price, storage: k.storage ?? storageOf(f.title) ?? storageOf(f.url),
+                     ram: k.ram, color: k.color, inStock: k.inStock !== false });
       }
       return out;
     }

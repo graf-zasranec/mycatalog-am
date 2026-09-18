@@ -51,7 +51,7 @@ const X = {
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
-    variantUnknown: 'տարբերակը նշված չէ', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն հեռախոսը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
+    variantUnknown: 'տարբերակը նշված չէ', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն ապրանքը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
@@ -74,7 +74,7 @@ const X = {
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
-    variantUnknown: 'версия не указана', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один телефон — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
+    variantUnknown: 'версия не указана', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один товар — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
@@ -97,7 +97,7 @@ const X = {
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
-    variantUnknown: 'variant not stated', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same phone, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
+    variantUnknown: 'variant not stated', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same product, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
   }
 };
 
@@ -114,7 +114,6 @@ if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';
 if (typeof st.fopen !== 'boolean') st.fopen = false;
-if (typeof st.catsAll !== 'boolean') st.catsAll = false;
 // The numeric filters are the same kind of hazard: st.ram = "abc" passes every guard above,
 // matches() then compares a number against a string and the catalogue renders empty with no
 // visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
@@ -607,11 +606,13 @@ function paintChrome() {
   const go = $('#qgo'); if (go) go.setAttribute('aria-label', t('nav.search_placeholder'));
   if ($('#q').value !== st.q) $('#q').value = st.q;
   const h = location.hash.replace(/^#/, '') || '/';
+  // The logo is home and always has been, so a second link to it in the nav said nothing. What
+  // the nav is for is the two places you cannot otherwise reach: the chooser, which is where
+  // "Catalog" now goes, and the comparison.
   $('#nav').innerHTML =
-    `<a href="#/" ${h === '/' || h.startsWith('/c/') ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
+    `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}</a>`;
   $('#hdrCmpLbl').textContent = t('nav.compare');
-  $('#hdrConstructLbl').textContent = t('construct.title');
   paintCmpCount();
   $('#foot').innerHTML = `<b>MyCatalog</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
@@ -1053,19 +1054,20 @@ function catTabs() {
   // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
   // Fifteen categories wrapped to three rows and pushed the catalogue itself below the fold. The
   // six biggest are shown, plus whichever one you are standing in, so the tab you are on is never
-  // the one that got hidden. The rest are one button away, and stay open once opened.
+  // the one that got hidden.
   const live = cats.filter(c => n(c) > 0 || st.cat === c);
   const few = new Set([...live].sort((a, b) => n(b) - n(a)).slice(0, CAT_SHOWN));
   if (st.cat) few.add(st.cat);
-  const shown = st.catsAll ? live : live.filter(c => few.has(c));
+  const shown = live.filter(c => few.has(c));
   const rest = live.length - shown.length;
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
     tab('', x('catAll'), pool.length) +
     shown.map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') +
-    (rest > 0 || st.catsAll
-      ? `<button class="ctab cmore" data-catmore="1" aria-expanded="${st.catsAll ? 'true' : 'false'}">${
-          esc(st.catsAll ? x('catsFewer') : x('catsMore'))}${rest > 0 ? ` <b class="num">${rest}</b>` : ''}</button>`
-      : '') + `</nav>`;
+    // Every section, laid out and explained, is what the chooser page already is - so the button
+    // that says "more sections" goes there instead of unfolding a second row of the same chips.
+    `<a class="fmore cmore" href="#/construct">${esc(x('catsMore'))}${
+      rest > 0 ? ` <b>${rest}</b>` : ''}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>`
+    + `</nav>`;
 }
 // Six fills one row at every width this site is read at, and leaves the grid on screen.
 const CAT_SHOWN = 6;
@@ -1394,9 +1396,6 @@ function detailView(p) {
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
   const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
   const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
-  const sim = DATA.filter(q => q.id !== p.id).sort((a, b) =>
-    (a.tier === p.tier ? 0 : 1) - (b.tier === p.tier ? 0 : 1) ||
-    Math.abs(bestOf(a) - bestOf(p)) - Math.abs(bestOf(b) - bestOf(p))).slice(0, 4);
   const inC = st.cmp.includes(p.id);
 
   const specs = GROUPS.map(([g, rows]) => {
@@ -1449,23 +1448,23 @@ function detailView(p) {
             ${railHTML(offs)}
           </div>
           <div class="pcta">
-            <a class="btn" href="#buy">${esc(x('offersTitle'))}</a>
-            <button class="btn ghost" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
+            ${offs.length ? `<a class="btn" href="#buy">${esc(x('offersTitle'))}</a>` : ''}
+            <button class="btn${offs.length ? ' ghost' : ''}" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
             <button class="btn ghost" data-share="${esc(p.id)}">${esc(x('share'))}</button>
           </div>
         </div>
       </div>
     </div>
 
-    <h2 class="sh" id="buy">${esc(x('offersTitle'))}${offs.length ? ` <em>${offs.length}</em>` : ''}</h2>
+    ${!offs.length ? '' : `<h2 class="sh" id="buy">${esc(x('offersTitle'))} <em>${offs.length}</em></h2>`}
     ${offs.length ? `<ol class="olist" id="offList">
       ${offs.map((o, i) => offerRow(o, lo, i, p.variantUnit, i >= OFFER_PEEK ? 'more' : '')).join('')}
     </ol>
     ${offs.length > OFFER_PEEK ? `<button class="expand" data-expand="offList" aria-expanded="false" aria-controls="offList">
       ${esc(x('showAll'))} <b class="num">${offs.length}</b></button>` : ''}
     ${offersFor(p).length > offs.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffers'))} → <b class="num">${offersFor(p).length}</b></a></p>` : ''}`
-      : `<p class="empty" style="padding:26px 0"><b>${esc(x('noOffers'))}</b></p>`}
-    <p class="note">${offs.length ? esc(x('priceSrc')) + ' · ' + esc(x('updated')) + ' ' + esc(updatedOn()) : esc(t('common.demo_prices_note'))}</p>
+      : ''}
+    ${offs.length ? `<p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>` : ''}
 
     
     ${historyHTML(p)}
@@ -1473,10 +1472,6 @@ function detailView(p) {
     <h2 class="sh">${esc(t('detail.full_specs'))}</h2>
     <div class="secgrid">${specs}</div>
 
-    <h2 class="sh">${esc(t('detail.similar'))}</h2>
-    <div class="simrow">${sim.map(sp => `<a class="sim" href="#/p/${esc(sp.id)}">
-      <span class="t"><img src="${THUMB(sp.id)}" alt="" loading="lazy"></span>
-      <span><b>${esc(fullName(sp))}</b><span class="num">${money(bestOf(sp))} ֏</span></span></a>`).join('')}</div>
   </div>`;
 }
 
@@ -2028,8 +2023,6 @@ document.addEventListener('click', e => {
   }
   const fm = e.target.closest('[data-fmore]');
   if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
-  const cm = e.target.closest('[data-catmore]');
-  if (cm) { st.catsAll = !st.catsAll; save(); render(true); return; }
   if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');

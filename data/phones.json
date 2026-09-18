@@ -28407,70 +28407,10 @@
   ]
  },
  {
-  "id": "dyson-er-stand",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "™ er Stand",
-  "aliases": [
-   "Dyson Supersonic™ Hair Dryer Stand (Nickel/Black)"
-  ],
-  "tier": "budget",
-  "priceAmd": 24000,
-  "priceAmdMax": 24000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 24000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson ™ er Stand.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-multi-wavepluscurl-diffuser",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "™ multi- Wave+Curl diffuser",
-  "aliases": [
-   "Dyson Airwrap™ multi-styler Wave+Curl diffuser"
-  ],
-  "tier": "budget",
-  "priceAmd": 39000,
-  "priceAmdMax": 39000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 39000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson ™ multi- Wave+Curl diffuser.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-r-dh17",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "r™ DH17",
+  "name": "Dyson Supersonic r DH17",
   "aliases": [
    "Dyson Supersonic r™ DH17"
   ],
@@ -28530,7 +28470,7 @@
   "id": "dyson-nural-er",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Nural™ er",
+  "name": "Dyson Supersonic Nural hair dryer",
   "aliases": [
    "Dyson Supersonic Nural™ hair dryer"
   ],
@@ -28942,34 +28882,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Honor X7E.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "poco-m8-pro-5g",
-  "category": "phone",
-  "brand": "POCO",
-  "name": "M8 Pro 5G",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 149000,
-  "priceAmdMax": 149000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 149000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "POCO M8 Pro 5G.",
   "unsure": [
    "popularity",
    "display",
@@ -29973,36 +29885,6 @@
   ]
  },
  {
-  "id": "sony-ps5-sense-wireless-controller",
-  "category": "console",
-  "brand": "Sony",
-  "name": "PS5 Sense Wireless Controller",
-  "aliases": [
-   "Sony PS5 Dual Sense Wireless Controller"
-  ],
-  "tier": "budget",
-  "priceAmd": 37000,
-  "priceAmdMax": 37000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 37000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony PS5 Sense Wireless Controller.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "sony-ps5-driving-force-hori-racing-wheel",
   "category": "console",
   "brand": "Sony",
@@ -30023,94 +29905,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Sony PS5 Driving Force Hori Racing Wheel.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-ps5-vertical-stand",
-  "category": "console",
-  "brand": "Sony",
-  "name": "PS5 Vertical Stand",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 29000,
-  "priceAmdMax": 29000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 29000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony PS5 Vertical Stand.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-ps5-sense-helldivers-2-wireless-controller",
-  "category": "console",
-  "brand": "Sony",
-  "name": "PS5 Sense HELLDIVERS 2 Wireless Controller",
-  "aliases": [
-   "Sony PS5 Dual Sense HELLDIVERS 2 Wireless Controller"
-  ],
-  "tier": "budget",
-  "priceAmd": 74000,
-  "priceAmdMax": 74000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 74000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony PS5 Sense HELLDIVERS 2 Wireless Controller.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-ps5-sense-nacon-revolution-wireless-controller",
-  "category": "console",
-  "brand": "Sony",
-  "name": "PS5 Sense NACON Revolution Wireless Controller",
-  "aliases": [
-   "Sony PS5 Dual Sense NACON Revolution Wireless Controller (Սև)"
-  ],
-  "tier": "budget",
-  "priceAmd": 99000,
-  "priceAmdMax": 99000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony PS5 Sense NACON Revolution Wireless Controller.",
   "unsure": [
    "popularity",
    "display",
@@ -30175,66 +29969,6 @@
   ]
  },
  {
-  "id": "sony-ps5-dualsense-edge-wireless-controller",
-  "category": "console",
-  "brand": "Sony",
-  "name": "Ps5 DualSense Edge™ Wireless Controller",
-  "aliases": [
-   "Sony Ps5 DualSense Edge™ Wireless Controller (Սպիտակ)"
-  ],
-  "tier": "budget",
-  "priceAmd": 99000,
-  "priceAmdMax": 99000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony Ps5 DualSense Edge™ Wireless Controller.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-ps5-access-controller",
-  "category": "console",
-  "brand": "Sony",
-  "name": "Ps5 Access™ Controller",
-  "aliases": [
-   "Sony Ps5 Access™ Controller (Սպիտակ)"
-  ],
-  "tier": "budget",
-  "priceAmd": 59000,
-  "priceAmdMax": 59000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 59000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony Ps5 Access™ Controller.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "samsung-galaxy-ultra-47mm-2025",
   "category": "watch",
   "brand": "Samsung",
@@ -30271,7 +30005,7 @@
   "id": "dyson-hs08-multi-and-dryer-straightpluswavy-strawberry-bronze-blush",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 ™ Multi- and dryer Straight+Wavy Strawberry Bronze/Blush",
+  "name": "HS08 Airwrap Multi- and dryer Straight+Wavy Strawberry Bronze/Blush Pink",
   "aliases": [
    "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Strawberry Bronze/Blush Pink"
   ],
@@ -30301,7 +30035,7 @@
   "id": "dyson-hs08-multi-and-dryer-straightpluswavy-velvet-gold",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 ™ Multi- and dryer Straight+Wavy Velvet/Gold",
+  "name": "HS08 Airwrap Multi- and dryer Straight+Wavy Red Velvet/Gold",
   "aliases": [
    "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Red Velvet/Gold"
   ],
@@ -30331,7 +30065,7 @@
   "id": "dyson-hs08-multi-and-dryer-curlypluscoily-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 ™ Multi- and dryer Curly+Coily Vinca Blue/Topaz",
+  "name": "HS08 Airwrap Multi- and dryer Curly+Coily Vinca Blue/Topaz",
   "aliases": [
    "Dyson HS08 Airwrap™ Multi-styler and dryer Curly+Coily Vinca Blue/Topaz"
   ],
@@ -30361,7 +30095,7 @@
   "id": "dyson-hd18-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD18 ™ Vinca Blue/Topaz",
+  "name": "Dyson HD18 Supersonic Vinca Blue/Topaz",
   "aliases": [
    "Dyson HD18 Supersonic™ Vinca Blue/Topaz"
   ],
@@ -30391,7 +30125,7 @@
   "id": "dyson-hs05-multi-short-and-coarse-blue-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 ™ multi- Short and Coarse Blue/Rich",
+  "name": "HS05 Airwrap multi- Short and Coarse Prussian Blue/Rich Copper",
   "aliases": [
    "Dyson HS05 Airwrap™ multi-styler Short and Coarse Prussian Blue/Rich Copper"
   ],
@@ -30421,7 +30155,7 @@
   "id": "dyson-hs05-multi-complete-long-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 ™ Multi- Complete Long Blue/Topaz",
+  "name": "HS05 Airwrap Multi- Complete Long Prussian Blue/Topaz",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Topaz"
   ],
@@ -30451,7 +30185,7 @@
   "id": "dyson-hs05-multi-complete-long-fuchisa-nickel",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 ™ multi- Complete Long Fuchisa/Nickel",
+  "name": "HS05 Airwrap multi- Complete Long Fuchisa/Nickel",
   "aliases": [
    "Dyson HS05 Airwrap™ multi-styler Complete Long Fuchisa/Nickel"
   ],
@@ -30481,7 +30215,7 @@
   "id": "dyson-hs08-id-multi-ceramic-patina-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 ™ ID Multi- Ceramic Patina/Topaz",
+  "name": "HS08 Airwrap ID Multi- Ceramic Patina/Topaz",
   "aliases": [
    "Dyson HS08 Airwrap™ ID Multi-Styler Ceramic Patina/Topaz"
   ],
@@ -30511,7 +30245,7 @@
   "id": "dyson-hd16-nural-strawberry-bronze-blush",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD16 ™ Nural Strawberry Bronze/Blush",
+  "name": "Dyson HD16 Supersonic Nural Strawberry Bronze/Blush Pink",
   "aliases": [
    "Dyson HD16 Supersonic™ Nural Strawberry Bronze/Blush Pink"
   ],
@@ -30541,7 +30275,7 @@
   "id": "dyson-hs08-id-multi-plum",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 ™ ID Multi- Plum",
+  "name": "HS08 Airwrap ID Multi- Jasper Plum",
   "aliases": [
    "Dyson HS08 Airwrap™ ID Multi-Styler Jasper Plum"
   ],
@@ -30571,7 +30305,7 @@
   "id": "dyson-ht01-airstrait-straightener-plum",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HT01 Airstrait™ Straightener Plum",
+  "name": "Dyson HT01 Airstrait Straightener Jasper Plum",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Jasper Plum"
   ],
@@ -30601,7 +30335,7 @@
   "id": "dyson-hd16-nural-plum",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD16 ™ Nural Plum",
+  "name": "Dyson HD16 Supersonic Nural Jasper Plum",
   "aliases": [
    "Dyson HD16 Supersonic™ Nural Jasper Plum"
   ],
@@ -30631,7 +30365,7 @@
   "id": "dyson-hd16-nural-velvet",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD16 ™ Nural Velvet",
+  "name": "Dyson HD16 Supersonic Nural Red Velvet",
   "aliases": [
    "Dyson HD16 Supersonic™ Nural Red Velvet"
   ],
@@ -30721,7 +30455,7 @@
   "id": "dyson-ht01-airstrait-straightener-ceramic",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HT01 Airstrait™ Straightener Ceramic",
+  "name": "Dyson HT01 Airstrait Straightener Ceramic Pink",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Ceramic Pink"
   ],
@@ -30845,7 +30579,7 @@
   "id": "dyson-ht01-airstrait-straightener-velvet-gold",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HT01 Airstrait™ Straightener Velvet/Gold",
+  "name": "Dyson HT01 Airstrait Straightener Red Velvet/Gold",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Red Velvet/Gold"
   ],
@@ -30875,7 +30609,7 @@
   "id": "dyson-ht01-airstrait-straightener-strawberry-bronze-blush",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HT01 Airstrait™ Straightener Strawberry Bronze/Blush",
+  "name": "Dyson HT01 Airstrait Straightener Strawberry Bronze/Blush Pink",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Strawberry Bronze/Blush Pink"
   ],
@@ -30905,7 +30639,7 @@
   "id": "dyson-hs05-multi-complete-long-blue-copper",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 ™ Multi- Complete Long Blue/Copper",
+  "name": "HS05 Airwrap Multi- Complete Long Prussian Blue/Copper",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Copper"
   ],
@@ -30935,7 +30669,7 @@
   "id": "dyson-hs05-multi-complete-long-strawberry-bronze-pink",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 ™ Multi- Complete Long Strawberry Bronze/Pink",
+  "name": "HS05 Airwrap Multi- Complete Long Strawberry Bronze/Pink",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Strawberry Bronze/Pink"
   ],
@@ -30965,7 +30699,7 @@
   "id": "dyson-hs05-multi-complete-long-gold-onyx",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 ™ Multi- Complete Long Gold/Onyx",
+  "name": "HS05 Airwrap Multi- Complete Long Gold/Onyx Black",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Gold/Onyx Black"
   ],
@@ -30995,7 +30729,7 @@
   "id": "dyson-hs08-id-multi-velvet-gold",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 ™ ID Multi- Velvet/Gold",
+  "name": "HS08 Airwrap ID Multi- Red Velvet/Gold",
   "aliases": [
    "Dyson HS08 Airwrap™ ID Multi-Styler Red Velvet/Gold"
   ],
@@ -31025,7 +30759,7 @@
   "id": "dyson-er-hd07",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "er HD07",
+  "name": "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)",
   "aliases": [
    "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)"
   ],
@@ -31178,7 +30912,7 @@
   "id": "dyson-ht01-airstrait-straightener-blue-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HT01 Airstrait™ Straightener Blue/Rich",
+  "name": "Dyson HT01 Airstrait Straightener Prussian Blue/Rich Copper",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Prussian Blue/Rich Copper"
   ],
@@ -31236,7 +30970,7 @@
   "id": "dyson-hd16-nural-ceramic-patina-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD16 ™ Nural Ceramic Patina/Topaz",
+  "name": "Dyson HD16 Supersonic Nural Ceramic Patina/Topaz",
   "aliases": [
    "Dyson HD16 Supersonic™ Nural Ceramic Patina/Topaz"
   ],
@@ -31266,7 +31000,7 @@
   "id": "dyson-hd16-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD16 ™ Vinca Blue/Topaz",
+  "name": "Dyson HD16 Supersonic Vinca Blue/Topaz",
   "aliases": [
    "Dyson HD16 Supersonic™ Vinca Blue/Topaz"
   ],
@@ -31296,7 +31030,7 @@
   "id": "dyson-hd15-er-black-onyx",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD15 ™ er Black/Onyx",
+  "name": "Dyson HD15 Supersonic Hair Dryer Black/Onyx Gold",
   "aliases": [
    "Dyson HD15 Supersonic™ Hair Dryer Black/Onyx Gold"
   ],
@@ -31326,7 +31060,7 @@
   "id": "dyson-hd15-er-nickel-copper",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD15 ™ er Nickel/Copper",
+  "name": "Dyson HD15 Supersonic Hair Dryer Nickel/Copper",
   "aliases": [
    "Dyson HD15 Supersonic™ Hair Dryer Nickel/Copper"
   ],
@@ -34393,67 +34127,6 @@
   ]
  },
  {
-  "id": "xiaomi-poco-c81-pro",
-  "category": "phone",
-  "brand": "Xiaomi",
-  "name": "POCO C81 Pro",
-  "aliases": [
-   "Սմարթֆոն XIAOMI POCO C81 Pro /128GB RU (25128PC17G) Սև",
-   "Սմարթֆոն XIAOMI POCO C81 Pro /128GB RU (25128PC17G) Կանաչ"
-  ],
-  "tier": "budget",
-  "priceAmd": 52900,
-  "priceAmdMax": 52900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 52900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi POCO C81 Pro.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "xiaomi-redmi-a7-pro",
-  "category": "phone",
-  "brand": "Xiaomi",
-  "name": "REDMI A7 Pro",
-  "aliases": [
-   "Սմարթֆոն Xiaomi REDMI A7 Pro /128GB RU (25128RN17A) Mist Blue"
-  ],
-  "tier": "budget",
-  "priceAmd": 61900,
-  "priceAmdMax": 61900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 61900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi REDMI A7 Pro.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "xiaomi-poco-m7",
   "category": "phone",
   "brand": "Xiaomi",
@@ -34881,98 +34554,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Honor Pad X9a.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "microsoft-xbox-controller-series",
-  "category": "console",
-  "brand": "Microsoft",
-  "name": "Xbox Controller Series",
-  "aliases": [
-   "Microsoft Xbox Controller Series Deep Pink Խաղային վահանակ"
-  ],
-  "tier": "budget",
-  "priceAmd": 36900,
-  "priceAmdMax": 36900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 36900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Microsoft Xbox Controller Series.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "microsoft-xbox-controller-series-s-x-new",
-  "category": "console",
-  "brand": "Microsoft",
-  "name": "Xbox Controller Series S X New",
-  "aliases": [
-   "Microsoft Xbox Controller Series S X New Red Խաղային վահանակ"
-  ],
-  "tier": "budget",
-  "priceAmd": 36900,
-  "priceAmdMax": 36900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 36900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Microsoft Xbox Controller Series S X New.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-playstation-dualsense-ps5-wireless-controller",
-  "category": "console",
-  "brand": "Sony",
-  "name": "Playstation DualSense PS5 Wireless Controller",
-  "aliases": [
-   "Sony Playstation DualSense PS5 Wireless Controller Cosmic Red Խաղային վահանակ",
-   "Խաղային վահանակ Sony Playstation DualSense PS5 Wireless Controller Starlight Blue",
-   "Խաղային վահանակ Sony Playstation DualSense PS5 Wireless Controller Purple"
-  ],
-  "tier": "budget",
-  "priceAmd": 37900,
-  "priceAmdMax": 37900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 37900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony Playstation DualSense PS5 Wireless Controller.",
   "unsure": [
    "popularity",
    "display",
@@ -37718,7 +37299,7 @@
   "id": "garmin-cirqa-smart-band-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "CIRQA™ Smart Band, S-M",
+  "name": "Garmin CIRQA Smart Band, Black, S-M",
   "aliases": [
    "Garmin CIRQA™ Smart Band, Black, S-M"
   ],
@@ -37776,7 +37357,7 @@
   "id": "garmin-cirqa-smart-band-captain-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "CIRQA™ Smart Band, Captain S-M",
+  "name": "Garmin CIRQA Smart Band, Captain Blue, S-M",
   "aliases": [
    "Garmin CIRQA™ Smart Band, Captain Blue, S-M"
   ],
@@ -38243,7 +37824,7 @@
   "id": "garmin-cirqa-smart-band-french-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "CIRQA™ Smart Band, French S-M",
+  "name": "Garmin CIRQA Smart Band, French Gray, S-M",
   "aliases": [
    "Garmin CIRQA™ Smart Band, French Gray, S-M"
   ],
@@ -38361,7 +37942,7 @@
   "id": "garmin-forerunner-970",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Forerunner® 970",
+  "name": "Garmin Forerunner 970 Black",
   "aliases": [
    "Garmin Forerunner® 970 Black"
   ],
@@ -38447,7 +38028,7 @@
   "id": "garmin-vivoactive-6",
   "category": "watch",
   "brand": "Garmin",
-  "name": "vivoactive® 6",
+  "name": "Garmin vivoactive 6 Lunar Gold",
   "aliases": [
    "Garmin vivoactive® 6 Lunar Gold",
    "Garmin vivoactive® 6 Black"
@@ -38805,7 +38386,7 @@
   "id": "garmin-forerunner-965-black-powder",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Forerunner® 965 Black/Powder",
+  "name": "Garmin Forerunner 965 Black/Powder Grey",
   "aliases": [
    "Garmin Forerunner® 965 Black/Powder Grey"
   ],
@@ -39029,44 +38610,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Xiaomi Redmi Note 17 4G.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "xiaomi-poco-m8-pro-5g",
-  "category": "phone",
-  "brand": "Xiaomi",
-  "name": "POCO M8 Pro 5G",
-  "aliases": [
-   "Xiaomi POCO M8 Pro 5G /256GB Black",
-   "Xiaomi POCO M8 Pro 5G /256GB Silver",
-   "Xiaomi POCO M8 Pro 5G /256GB Green",
-   "Xiaomi POCO M8 Pro 5G /512GB Black"
-  ],
-  "tier": "mid",
-  "priceAmd": 149900,
-  "priceAmdMax": 178900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 8,
-    "priceAmd": 149900
-   },
-   {
-    "ram": null,
-    "storage": 12,
-    "priceAmd": 178900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi POCO M8 Pro 5G.",
   "unsure": [
    "popularity",
    "display",
@@ -44772,7 +44315,7 @@
   "id": "dyson-multi-complete-long-hs05",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ multi- Complete Long HS05",
+  "name": "Airwrap multi- Complete Long HS05 Onyx Gold",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Onyx Gold",
    "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush"
@@ -44803,7 +44346,7 @@
   "id": "dyson-multi-complete-long-hs05-strawberry",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ multi- Complete Long HS05 Strawberry",
+  "name": "Airwrap multi- Complete Long HS05 Strawberry Bronze / Pink",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Strawberry Bronze / Pink"
   ],
@@ -44833,7 +44376,7 @@
   "id": "dyson-multi-complete-long-hs05-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ multi- Complete Long HS05 Topaz",
+  "name": "Airwrap multi- Complete Long HS05 Prussian Blue / Topaz",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Topaz"
   ],
@@ -44863,7 +44406,7 @@
   "id": "dyson-multi-complete-long-hs05-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ multi- Complete Long HS05 Rich",
+  "name": "Airwrap multi- Complete Long HS05 Prussian Blue / Rich Copper",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Rich Copper"
   ],
@@ -44893,7 +44436,7 @@
   "id": "dyson-multi-complete-long-hs05-fuchisa",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ multi- Complete Long HS05 Fuchisa",
+  "name": "Airwrap multi- Complete Long HS05 Fuchisa / Nickel",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Fuchisa / Nickel"
   ],
@@ -44953,7 +44496,7 @@
   "id": "dyson-nural-hd16-strawberry",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ Nural HD16 Strawberry",
+  "name": "Dyson Supersonic Nural HD16 Strawberry Bronze / Blush Pink",
   "aliases": [
    "Dyson Supersonic™ Nural HD16 Strawberry Bronze / Blush Pink"
   ],
@@ -45013,7 +44556,7 @@
   "id": "dyson-er-hd15",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ er HD15",
+  "name": "Dyson Supersonic Hair Dryer HD15 Nickel / Copper",
   "aliases": [
    "Dyson Supersonic™ Hair Dryer HD15 Nickel / Copper"
   ],
@@ -45043,7 +44586,7 @@
   "id": "dyson-origin-hs05",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "™ Origin HS05",
+  "name": "Dyson Airwrap Origin HS05 Nickel / Copper",
   "aliases": [
    "Dyson Airwrap™ Origin HS05 Nickel / Copper"
   ],
@@ -45103,7 +44646,7 @@
   "id": "dyson-airstrait-straightener-ht01-nicel",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airstrait™ Straightener HT01 Nicel",
+  "name": "Dyson Airstrait Straightener HT01 Nicel / Copper",
   "aliases": [
    "Dyson Airstrait™ Straightener HT01 Nicel / Copper"
   ],
@@ -45133,7 +44676,7 @@
   "id": "dyson-airstrait-straightener-ht01-ceramic",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airstrait™ Straightener HT01 Ceramic",
+  "name": "Dyson Airstrait Straightener HT01 Ceramic Pink",
   "aliases": [
    "Dyson Airstrait™ Straightener HT01 Ceramic Pink"
   ],

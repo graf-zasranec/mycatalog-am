@@ -191,6 +191,25 @@ button,input,select,textarea{font:inherit;color:inherit}
 .fapply .fclear{flex:0 0 auto;padding:0 12px}
 .fapply button:hover{filter:brightness(1.08)}
 .fdrop.dirty > summary{border-color:var(--brand);color:var(--brand)}
+/* --- motion -------------------------------------------------------------------------- */
+/* Only transform and opacity: the two properties a browser can animate without re-laying out
+   the page, which is what keeps this smooth on a weak machine as well as a fast one. */
+.ctabs .ctab,.fmore,.fdrop summary,.fapply button,.pcard,.sv,.btn,.toggle{
+  transition:transform .18s cubic-bezier(.2,.7,.3,1),opacity .18s ease,
+             background-color .18s ease,border-color .18s ease,color .18s ease}
+.ctabs .ctab:active,.fmore:active,.fapply button:active,.toggle:active{transform:scale(.97)}
+.pcard:hover{transform:translateY(-2px)}
+.sv:hover{transform:translateY(-2px)}
+.fdrop .panel{transform-origin:top left;animation:pop .16s cubic-bezier(.2,.7,.3,1)}
+.fdrop.r .panel{transform-origin:top right}
+@keyframes pop{from{opacity:0;transform:translateY(-4px) scale(.985)}to{opacity:1;transform:none}}
+.fdrop summary svg{transition:transform .18s cubic-bezier(.2,.7,.3,1)}
+.fdrop[open] summary svg{transform:rotate(180deg)}
+/* Someone who has asked their system for less movement gets none of it. */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
 .fmore{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 14px;border-radius:var(--pill);
   border:1px solid var(--line2);background:none;color:inherit;font:inherit;font-size:13px;cursor:pointer}
 .fmore:hover{border-color:var(--brand);color:var(--brand)}
@@ -367,8 +386,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .ctabs .ctab:hover{border-color:var(--line2);color:var(--text)}
 .ctabs .ctab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
 .ctabs .ctab b{font-weight:600;font-size:0.8125rem;opacity:.6}
-.ctabs .cmore{background:none;font:inherit;cursor:pointer;border-style:dashed}
-.ctabs .cmore:hover{border-color:var(--brand);color:var(--brand)}
+.ctabs .cmore{height:38px;margin:0;text-decoration:none}
+@media (max-width:640px){.ctabs .cmore{height:34px}}
 @media (max-width:640px){.ctabs{gap:5px;margin-top:16px}.ctabs .ctab{height:34px;padding:0 12px;font-size:0.875rem}}
 /* No overflow here: overflow-x:auto makes overflow-y compute to auto too, which clipped every
    filter dropdown to the 46px-tall bar on desktop. Wrapping costs a row and keeps them visible. */
@@ -935,9 +954,6 @@ a.store:hover .nm{color:var(--brand)}
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <a class="cmpbtn ghost" id="hdrConstruct" href="#/construct">
-        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>
-        <span class="lbl" id="hdrConstructLbl"></span></a>
       <button class="cmpbtn" id="hdrCmp">
         <svg viewBox="0 0 24 24"><path d="M4 7h10M4 17h10M17 4v6M20 7h-6M20 17h-6M7 14v6"/></svg>
         <span class="lbl" id="hdrCmpLbl"></span><span class="c" id="hdrCmpN">0</span></button>
