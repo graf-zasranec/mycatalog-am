@@ -20518,6 +20518,140 @@
   ]
  },
  {
+  "id": "bo-beosound-edge",
+  "category": "speaker",
+  "brand": "Bang & Olufsen",
+  "name": "Beosound Edge",
+  "priceAmd": 1429000,
+  "priceAmdMax": 1429000,
+  "popularity": 24,
+  "audio": {
+   "type": "Wireless home speaker"
+  },
+  "connectivity": {
+   "wireless": "AirPlay 2, Chromecast"
+  },
+  "colors": [
+   "Natural"
+  ],
+  "summaryEn": "A round, wall-mountable Bang & Olufsen home speaker.",
+  "tier": "flagship",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1429000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "bo-beosound-level",
+  "category": "speaker",
+  "brand": "Bang & Olufsen",
+  "name": "Beosound Level",
+  "priceAmd": 759000,
+  "priceAmdMax": 759000,
+  "popularity": 24,
+  "audio": {
+   "type": "Portable, rechargeable home speaker"
+  },
+  "body": {
+   "materials": "Natural oak veneer, aluminium"
+  },
+  "colors": [
+   "Natural"
+  ],
+  "summaryEn": "A portable, rechargeable Bang & Olufsen home speaker in oak and aluminium.",
+  "tier": "flagship",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 759000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "bo-beoplay-hx",
+  "category": "headphones",
+  "brand": "Bang & Olufsen",
+  "name": "Beoplay HX",
+  "priceAmd": 259000,
+  "priceAmdMax": 259000,
+  "popularity": 22,
+  "audio": {
+   "type": "Over-ear, adaptive noise cancellation",
+   "anc": true
+  },
+  "battery": {
+   "life": "up to 35 hours with ANC on"
+  },
+  "body": {
+   "materials": "Aluminium, lambskin leather, memory-foam cushions"
+  },
+  "colors": [
+   "Black Anthracite",
+   "Timber"
+  ],
+  "summaryEn": "Over-ear Bang & Olufsen headphones with adaptive ANC and up to 35 hours of battery life.",
+  "tier": "upper-mid",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 259000
+   }
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "bo-beosound-a1-2",
+  "category": "speaker",
+  "brand": "Bang & Olufsen",
+  "name": "Beosound A1 2nd Gen",
+  "priceAmd": 159000,
+  "priceAmdMax": 159000,
+  "popularity": 22,
+  "audio": {
+   "type": "Portable speaker"
+  },
+  "colors": [
+   "Gold Tone",
+   "Green",
+   "Anthracite Oxygen",
+   "Grey Mist",
+   "Pink",
+   "Black Anthracite"
+  ],
+  "summaryEn": "Bang & Olufsen's small portable speaker, in six finishes.",
+  "tier": "mid",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 159000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
   "id": "yandex-smart-lamp",
   "category": "appliance",
   "brand": "Yandex",
@@ -22765,6 +22899,103 @@
   ]
  },
  {
+  "id": "bo-beosound-a5",
+  "category": "speaker",
+  "brand": "Bang & Olufsen",
+  "name": "Beosound A5 Nordic Weave",
+  "priceAmd": 509000,
+  "priceAmdMax": 509000,
+  "popularity": 20,
+  "audio": {
+   "type": "Portable speaker"
+  },
+  "colors": [
+   "Nordic Weave"
+  ],
+  "summaryEn": "A large portable Bang & Olufsen speaker in the Nordic Weave finish.",
+  "tier": "flagship",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 509000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "bo-beoplay-ex",
+  "category": "earbuds",
+  "brand": "Bang & Olufsen",
+  "name": "Beoplay EX",
+  "priceAmd": 209000,
+  "priceAmdMax": 209000,
+  "popularity": 20,
+  "audio": {
+   "type": "In-ear, active noise cancellation"
+  },
+  "colors": [
+   "Black Anthracite",
+   "Anthracite Oxygen"
+  ],
+  "summaryEn": "Bang & Olufsen's true wireless earbuds.",
+  "tier": "upper-mid",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 209000
+   }
+  ],
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "bo-beosound-explore",
+  "category": "speaker",
+  "brand": "Bang & Olufsen",
+  "name": "Beosound Explore",
+  "priceAmd": 109000,
+  "priceAmdMax": 109000,
+  "popularity": 18,
+  "audio": {
+   "type": "Portable speaker"
+  },
+  "battery": {
+   "life": "up to 27 hours"
+  },
+  "body": {
+   "materials": "Aluminium shell",
+   "ip": "IP67"
+  },
+  "colors": [
+   "Navy",
+   "Grey Mist",
+   "Green",
+   "Chestnut"
+  ],
+  "summaryEn": "A rugged IP67 portable Bang & Olufsen speaker, up to 27 hours of battery.",
+  "tier": "mid",
+  "accent": "#B79A72",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 109000
+   }
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
   "id": "asus-proart-display-32-pa329cv",
   "category": "monitor",
   "brand": "ASUS",
@@ -23153,6 +23384,144 @@
   ],
   "battery": {},
   "summaryEn": "A 22-inch monitor.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-go-2-4",
+  "category": "headphones",
+  "brand": "ASUS",
+  "name": "ROG Strix Go 2.4",
+  "tier": "budget",
+  "priceAmd": 61000,
+  "priceAmdMax": 61000,
+  "popularity": 12,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 61000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A gaming headset: ROG Strix Go 2.4.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-delta-s",
+  "category": "headphones",
+  "brand": "ASUS",
+  "name": "ROG Delta S",
+  "tier": "budget",
+  "priceAmd": 45000,
+  "priceAmdMax": 45000,
+  "popularity": 12,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 45000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A gaming headset: ROG Delta S.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-h7-core-gun-metal",
+  "category": "headphones",
+  "brand": "ASUS",
+  "name": "TUF Gaming H7 Core Gun Metal",
+  "tier": "budget",
+  "priceAmd": 37800,
+  "priceAmdMax": 37800,
+  "popularity": 12,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 37800
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A gaming headset: TUF Gaming H7 Core Gun Metal.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-h3-gun-metal",
+  "category": "headphones",
+  "brand": "ASUS",
+  "name": "TUF Gaming H3 Gun Metal",
+  "tier": "budget",
+  "priceAmd": 37800,
+  "priceAmdMax": 37800,
+  "popularity": 12,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 37800
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A gaming headset: TUF Gaming H3 Gun Metal.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-rog-strix-go-core",
+  "category": "headphones",
+  "brand": "ASUS",
+  "name": "ROG Strix Go Core",
+  "tier": "budget",
+  "priceAmd": 37800,
+  "priceAmdMax": 37800,
+  "popularity": 12,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 37800
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A gaming headset: ROG Strix Go Core.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-tuf-gaming-h1",
+  "category": "headphones",
+  "brand": "ASUS",
+  "name": "TUF Gaming H1",
+  "tier": "budget",
+  "priceAmd": 36000,
+  "priceAmdMax": 36000,
+  "popularity": 12,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 36000
+   }
+  ],
+  "battery": {},
+  "summaryEn": "A gaming headset: TUF Gaming H1.",
   "unsure": [
    "popularity"
   ]
