@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T11:15:22.988Z",
+ "generated": "2026-09-18T11:17:24.720Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -4156,19 +4156,23 @@
    {
     "id": "apple-iphone-16",
     "shop": "ucom",
-    "title": "iPhone 16",
-    "price": 351900,
+    "title": "Apple iPhone 16 8GB 128GB Black",
+    "price": 350900,
     "storage": 128,
-    "url": "https://shop.ucom.am/en/iphone-16.html",
+    "ram": 8,
+    "color": "Black",
+    "url": "https://shop.ucom.am/am/iphone-16.html",
     "seeded": true,
     "esim": false
    },
    {
     "id": "apple-iphone-16",
     "shop": "ucom",
-    "title": "iPhone 16 (AM)",
-    "price": 351900,
+    "title": "Apple iPhone 16 8GB 128GB White",
+    "price": 350900,
     "storage": 128,
+    "ram": 8,
+    "color": "White",
     "url": "https://shop.ucom.am/am/iphone-16.html",
     "seeded": true,
     "esim": false
@@ -4455,6 +4459,18 @@
     "color": "Black",
     "shop": "vlv",
     "seen": "2026-09-18"
+   },
+   {
+    "id": "apple-iphone-15",
+    "shop": "ucom",
+    "title": "Apple iPhone 15 6GB 128GB Black",
+    "price": 298900,
+    "storage": 128,
+    "ram": 6,
+    "color": "Black",
+    "url": "https://shop.ucom.am/am/iphone-15.html",
+    "seeded": true,
+    "esim": false
    },
    {
     "id": "apple-iphone-15",
@@ -17131,6 +17147,30 @@
     "storage": 128,
     "ram": 8,
     "color": "Awesome Lime",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
+    "seeded": true,
+    "esim": false
+   },
+   {
+    "id": "samsung-galaxy-a36",
+    "shop": "ucom",
+    "title": "Samsung Galaxy A36 5G 8GB 256GB Awesome Black",
+    "price": 149900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Awesome Black",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
+    "seeded": true,
+    "esim": false
+   },
+   {
+    "id": "samsung-galaxy-a36",
+    "shop": "ucom",
+    "title": "Samsung Galaxy A36 5G 8GB 256GB Awesome White",
+    "price": 149900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Awesome White",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
     "esim": false

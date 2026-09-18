@@ -16,6 +16,9 @@ const UA = 'MyCatalogBot/0.1 (+price comparison; respects robots.txt)';   // sam
 const SRC = 'images/_src';
 const MIN_EDGE = 700;                 // below this a photo visibly softens on the product page
 const dry = process.argv.includes('--dry');
+// Named products only, when any are named. Re-measuring 1,425 products to improve ten of them is
+// an hour of somebody else's bandwidth for nothing.
+const only = new Set(process.argv.slice(2).filter(a => !a.startsWith('--')));
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // enough of a decoder to read width/height out of the header, no dependency needed
@@ -87,7 +90,11 @@ async function best(urls) {
 
 const P = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const PR = JSON.parse(fs.readFileSync('data/prices.json', 'utf8'));
-const man = JSON.parse(fs.readFileSync(`${SRC}/manifest.json`, 'utf8'));
+// A record of what each saved source measured, so a re-run does not re-download to learn what it
+// already knows. It is a cache, not data: images/_src is gitignored, so on a fresh clone there is
+// none, and the honest answer to that is to measure again rather than to refuse to run.
+const man = fs.existsSync(`${SRC}/manifest.json`)
+  ? JSON.parse(fs.readFileSync(`${SRC}/manifest.json`, 'utf8')) : {};
 // Manufacturer press shots, collected by tools/press.mjs. Where a shop only publishes a 550px
 // preview these are the same product at 1920px with a transparent background, so they simply
 // join the candidate list and win on size.
@@ -95,6 +102,7 @@ const PRESS = fs.existsSync('data/press.json') ? JSON.parse(fs.readFileSync('dat
 
 let improved = 0, kept = 0, weak = [];
 for (const p of P) {
+  if (only.size && !only.has(p.id)) continue;
   const offers = (PR.offers[p.id] || []).filter(o => o.image);
   if (!offers.length && !PRESS[p.id]) continue;
   // one job per slot: the main shot, plus one per colour the shops actually photograph
