@@ -45,6 +45,8 @@ for (const list of Object.values(byBrandCat)) {
     // and the tail that differs is not a word that names a different model. "Pro", "Max",
     // "Ultra" and the rest are the whole point of a range: the iPhone 17 and the 17 Pro are two
     // phones, and a check that cannot tell them apart reports 72 duplicates and finds none.
+    // a question a person has already answered is not asked again
+    if ((list[i].settled || []).includes('notADuplicate') || (list[j].settled || []).includes('notADuplicate')) continue;
     const tail = (a.length > b.length ? a.slice(b.length) : b.slice(a.length));
     if (/^(pro|max|ultra|plus|mini|se|fe|lite|air|e|promax|proxl|xl)$/i.test(tail)) continue;
     if (tail.length > 3) continue;

@@ -2473,6 +2473,9 @@
   "unsure": [
    "popularity",
    "variants[].priceAmd"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -2672,46 +2675,6 @@
    "Gray"
   ],
   "summaryEn": "Samsung's 11-inch budget tablet, sold in Wi-Fi and 5G versions."
- },
- {
-  "id": "xiaomi-buds-6",
-  "category": "earbuds",
-  "brand": "Xiaomi",
-  "name": "Redmi Buds 6",
-  "aliases": [
-   "Xiaomi Buds 6"
-  ],
-  "tier": "mid",
-  "released": "2025-09",
-  "priceAmd": 39900,
-  "priceAmdMax": 39900,
-  "popularity": 72,
-  "accent": "#EDEDEA",
-  "audio": {
-   "type": "In-ear, active noise cancellation",
-   "anc": true,
-   "transparency": true
-  },
-  "battery": {},
-  "body": {
-   "ip": "IP54"
-  },
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 39900
-   }
-  ],
-  "connectivity": {
-   "bluetooth": "5.4",
-   "wireless": "USB-C charging case"
-  },
-  "colors": [
-   "White",
-   "Black"
-  ],
-  "summaryEn": "Xiaomi's mid-range earbuds with noise cancellation."
  },
  {
   "id": "asus-zenbook-14-um3402ya-oled",
@@ -4698,6 +4661,9 @@
    "priceAmd",
    "priceAmdMax",
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -7384,84 +7350,6 @@
   ]
  },
  {
-  "id": "poco-m7-pro",
-  "category": "phone",
-  "brand": "POCO",
-  "name": "POCO M7 Pro 5G",
-  "tier": "budget",
-  "released": "2024-12",
-  "priceAmd": 96900,
-  "priceAmdMax": 96900,
-  "popularity": 46,
-  "accent": "#B9BEC6",
-  "display": {
-   "size": 6.67,
-   "type": "AMOLED",
-   "resolution": "2400x1080",
-   "refresh": 120,
-   "ppi": 395,
-   "brightness": 2100,
-   "protection": "Gorilla Glass 5"
-  },
-  "chipset": {
-   "name": "MediaTek Dimensity 7025-Ultra",
-   "process": "6 nm",
-   "cpu": "Octa-core (2x2.5 GHz Cortex-A78 + 6x2.0 GHz Cortex-A55)",
-   "gpu": "Mali-G615 MC2"
-  },
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 96900
-   }
-  ],
-  "camera": {
-   "modules": 2,
-   "main": "50 MP, f/1.5, 24mm wide, OIS",
-   "ultrawide": null,
-   "telephoto": null,
-   "front": "20 MP, f/2.2",
-   "video": "1080p@60fps"
-  },
-  "battery": {
-   "capacity": 5110,
-   "wired": 45,
-   "wireless": 0
-  },
-  "body": {
-   "height": 162.4,
-   "width": 75.7,
-   "thickness": 7.99,
-   "weight": 190,
-   "materials": "Plastic frame, plastic back",
-   "ip": "IP64"
-  },
-  "connectivity": {
-   "network": "5G",
-   "wifi": "Wi-Fi 5",
-   "bluetooth": "5.4",
-   "nfc": true,
-   "sim": "Dual nano-SIM"
-  },
-  "cardSlot": true,
-  "os": "Android 14, HyperOS",
-  "updates": "2 OS upgrades and 4 years of security updates",
-  "colors": [
-   "Black",
-   "Silver",
-   "Green"
-  ],
-  "summaryEn": "A budget 5G phone that still gets an AMOLED 120 Hz screen, OIS and 45W charging.",
-  "unsure": [
-   "chipset.antutu",
-   "colors",
-   "priceAmd",
-   "priceAmdMax",
-   "popularity"
-  ]
- },
- {
   "id": "beats-studio-buds-plus",
   "category": "earbuds",
   "brand": "Beats",
@@ -7788,6 +7676,9 @@
   "unsure": [
    "popularity",
    "priceAmdMax"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -7863,6 +7754,9 @@
   "unsure": [
    "popularity",
    "colors"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -8220,6 +8114,9 @@
    "popularity",
    "priceAmdMax",
    "colors"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -8610,6 +8507,9 @@
   "battery": {},
   "unsure": [
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -10561,51 +10461,6 @@
   ]
  },
  {
-  "id": "lenovo-ideapad-1-15iru7-8gb",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "IdeaPad 1 15IRU7(8GB)",
-  "tier": "budget",
-  "priceAmd": 249000,
-  "priceAmdMax": 249000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i5-1335U"
-  },
-  "graphics": {
-   "name": "Intel Iris Xe Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1620
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 15-inch laptop with Intel Core i5-1335U.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 249000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo IdeaPad 1 15IRU78GB"
-  ]
- },
- {
   "id": "acer-aspire-go-15-ag15-51p-510u",
   "category": "laptop",
   "brand": "Acer",
@@ -10687,51 +10542,6 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "dell-15-dc15250-i5",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "15-DC15250(I5)",
-  "tier": "mid",
-  "priceAmd": 255000,
-  "priceAmdMax": 255000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 120,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core i5-1334U"
-  },
-  "graphics": {
-   "name": "Intel UHD Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1940
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 15-inch laptop with Intel Core i5-1334U.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 512,
-    "priceAmd": 255000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell 15-DC15250I5"
   ]
  },
  {
@@ -15375,7 +15185,7 @@
   "id": "dell-alienware-16-aurora-ac16250-16gb-rtx-5050",
   "category": "laptop",
   "brand": "Dell",
-  "name": "Alienware 16 Aurora-AC16250(16GB/RTX 5050)",
+  "name": "Alienware 16 Aurora (RTX 5050)",
   "tier": "upper-mid",
   "priceAmd": 599000,
   "priceAmdMax": 599000,
@@ -15714,7 +15524,7 @@
   "id": "dell-alienware-16-aurora-ac16250-16gb-rtx-5060",
   "category": "laptop",
   "brand": "Dell",
-  "name": "Alienware 16 Aurora-AC16250(16GB/ RTX 5060)",
+  "name": "Alienware 16 Aurora (RTX 5060)",
   "tier": "upper-mid",
   "priceAmd": 659000,
   "priceAmdMax": 659000,
@@ -18667,6 +18477,9 @@
   "summaryEn": "A handheld gaming PC on the Ryzen Z1 Extreme, with a 7-inch 120Hz touchscreen and full Windows 11.",
   "unsure": [
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -19321,7 +19134,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "settled": [
+   "notADuplicate"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-15-pro",
@@ -21421,7 +21237,10 @@
   "body": {
    "weight": 192
   },
-  "summaryEn": "Sony's cheapest proper ANC: 192 grams and thirty-five hours."
+  "summaryEn": "Sony's cheapest proper ANC: 192 grams and thirty-five hours.",
+  "settled": [
+   "notADuplicate"
+  ]
  },
  {
   "id": "sony-wh-ch520",
@@ -21429,12 +21248,14 @@
   "brand": "Sony",
   "name": "WH-CH520",
   "aliases": [
-   "Sony WH-CH520"
+   "Sony WH-CH520",
+   "WH CH520L",
+   "Sony WH CH520L Blue Անլար ականջակալ"
   ],
   "tier": "budget",
   "released": "2023-02",
   "priceAmd": 26900,
-  "priceAmdMax": 26900,
+  "priceAmdMax": 27900,
   "popularity": 63,
   "accent": "#24262B",
   "variants": [
@@ -25979,37 +25800,13 @@
   ]
  },
  {
-  "id": "dji-osmo-mobile-8-p",
-  "category": "drone",
-  "brand": "DJI",
-  "name": "Osmo Mobile 8 P",
-  "tier": "mid",
-  "priceAmd": 99900,
-  "priceAmdMax": 99900,
-  "popularity": 45,
-  "accent": "#515A66",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "A motorised gimbal for a phone.",
-  "unsure": [
-   "popularity"
-  ]
- },
- {
   "id": "dji-osmo-mobile-8",
   "category": "drone",
   "brand": "DJI",
   "name": "Osmo Mobile 8",
   "tier": "mid",
   "priceAmd": 67900,
-  "priceAmdMax": 73900,
+  "priceAmdMax": 99900,
   "popularity": 45,
   "accent": "#515A66",
   "variants": [
@@ -26024,6 +25821,9 @@
   "summaryEn": "A motorised gimbal for a phone.",
   "unsure": [
    "popularity"
+  ],
+  "aliases": [
+   "Osmo Mobile 8 P"
   ]
  },
  {
@@ -26048,6 +25848,9 @@
   "summaryEn": "A motorised gimbal for a phone.",
   "unsure": [
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26120,6 +25923,9 @@
   "summaryEn": "A wireless microphone set.",
   "unsure": [
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26144,6 +25950,9 @@
   "summaryEn": "A wireless microphone set.",
   "unsure": [
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26192,6 +26001,9 @@
   "summaryEn": "A wireless microphone set.",
   "unsure": [
    "popularity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26544,6 +26356,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26605,6 +26420,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26755,6 +26573,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -26966,6 +26787,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -27597,11 +27421,13 @@
   "brand": "Lenovo",
   "name": "IdeaPad 1 15IRU7",
   "aliases": [
-   "Նոթբուք Lenovo IdeaPad 1 15IRU7"
+   "Նոթբուք Lenovo IdeaPad 1 15IRU7",
+   "IdeaPad 1 15IRU7(8GB)",
+   "Lenovo IdeaPad 1 15IRU78GB"
   ],
   "tier": "mid",
   "priceAmd": 218900,
-  "priceAmdMax": 218900,
+  "priceAmdMax": 249000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -27609,6 +27435,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 218900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 249000
    }
   ],
   "display": {},
@@ -27619,7 +27450,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "released": "2025"
  },
  {
   "id": "lenovo-ideapad-slim-3-15iru10",
@@ -27687,11 +27519,13 @@
   "brand": "Dell",
   "name": "15 DC15250",
   "aliases": [
-   "Նոթբուք Dell 15 DC15250"
+   "Նոթբուք Dell 15 DC15250",
+   "15-DC15250(I5)",
+   "Dell 15-DC15250I5"
   ],
   "tier": "mid",
   "priceAmd": 229900,
-  "priceAmdMax": 229900,
+  "priceAmdMax": 255000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -27699,6 +27533,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 229900
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 255000
    }
   ],
   "display": {},
@@ -27709,7 +27548,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "released": "2025"
  },
  {
   "id": "hp-omnibook-5-ai-16-af1003ci-ultra",
@@ -27980,6 +27820,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -28595,9 +28438,13 @@
   "category": "speaker",
   "brand": "Marshall",
   "name": "Emberton III",
-  "aliases": [],
+  "aliases": [
+   "Emberton 3",
+   "Marshall Emberton 3 (Կաթնագույն)",
+   "Marshall Emberton 3 (Սև)"
+  ],
   "tier": "budget",
-  "priceAmd": 89000,
+  "priceAmd": 79000,
   "priceAmdMax": 89000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -28616,6 +28463,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -28759,6 +28609,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -30005,7 +29858,7 @@
   "id": "dyson-hs08-multi-and-dryer-straightpluswavy-strawberry-bronze-blush",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 Airwrap Multi- and dryer Straight+Wavy Strawberry Bronze/Blush Pink",
+  "name": "Airwrap HS08 (Strawberry Bronze)",
   "aliases": [
    "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Strawberry Bronze/Blush Pink"
   ],
@@ -30035,7 +29888,7 @@
   "id": "dyson-hs08-multi-and-dryer-straightpluswavy-velvet-gold",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 Airwrap Multi- and dryer Straight+Wavy Red Velvet/Gold",
+  "name": "Airwrap HS08 (Red Velvet)",
   "aliases": [
    "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Red Velvet/Gold"
   ],
@@ -30065,7 +29918,7 @@
   "id": "dyson-hs08-multi-and-dryer-curlypluscoily-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 Airwrap Multi- and dryer Curly+Coily Vinca Blue/Topaz",
+  "name": "Airwrap HS08 (Vinca Blue)",
   "aliases": [
    "Dyson HS08 Airwrap™ Multi-styler and dryer Curly+Coily Vinca Blue/Topaz"
   ],
@@ -30125,7 +29978,7 @@
   "id": "dyson-hs05-multi-short-and-coarse-blue-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 Airwrap multi- Short and Coarse Prussian Blue/Rich Copper",
+  "name": "Airwrap HS05 (Prussian Blue)",
   "aliases": [
    "Dyson HS05 Airwrap™ multi-styler Short and Coarse Prussian Blue/Rich Copper"
   ],
@@ -30155,7 +30008,7 @@
   "id": "dyson-hs05-multi-complete-long-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 Airwrap Multi- Complete Long Prussian Blue/Topaz",
+  "name": "Airwrap HS05 Complete Long (Blue)",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Topaz"
   ],
@@ -30185,7 +30038,7 @@
   "id": "dyson-hs05-multi-complete-long-fuchisa-nickel",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 Airwrap multi- Complete Long Fuchisa/Nickel",
+  "name": "Airwrap HS05 Complete Long (Fuchsia)",
   "aliases": [
    "Dyson HS05 Airwrap™ multi-styler Complete Long Fuchisa/Nickel"
   ],
@@ -30215,7 +30068,7 @@
   "id": "dyson-hs08-id-multi-ceramic-patina-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS08 Airwrap ID Multi- Ceramic Patina/Topaz",
+  "name": "Airwrap HS08 (Ceramic Patina)",
   "aliases": [
    "Dyson HS08 Airwrap™ ID Multi-Styler Ceramic Patina/Topaz"
   ],
@@ -30245,7 +30098,7 @@
   "id": "dyson-hd16-nural-strawberry-bronze-blush",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD16 Supersonic Nural Strawberry Bronze/Blush Pink",
+  "name": "Supersonic Nural HD16 (Strawberry)",
   "aliases": [
    "Dyson HD16 Supersonic™ Nural Strawberry Bronze/Blush Pink"
   ],
@@ -30305,7 +30158,7 @@
   "id": "dyson-ht01-airstrait-straightener-plum",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HT01 Airstrait Straightener Jasper Plum",
+  "name": "Airstrait HT01 (Jasper Plum)",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Jasper Plum"
   ],
@@ -30455,7 +30308,7 @@
   "id": "dyson-ht01-airstrait-straightener-ceramic",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HT01 Airstrait Straightener Ceramic Pink",
+  "name": "Airstrait HT01 (Ceramic Pink)",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Ceramic Pink"
   ],
@@ -30474,37 +30327,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Dyson HT01 Airstrait™ Straightener Ceramic.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "marshall-emberton-3",
-  "category": "speaker",
-  "brand": "Marshall",
-  "name": "Emberton 3",
-  "aliases": [
-   "Marshall Emberton 3 (Կաթնագույն)",
-   "Marshall Emberton 3 (Սև)"
-  ],
-  "tier": "budget",
-  "priceAmd": 79000,
-  "priceAmdMax": 79000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 79000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Marshall Emberton 3.",
   "unsure": [
    "popularity",
    "display",
@@ -30579,7 +30401,7 @@
   "id": "dyson-ht01-airstrait-straightener-velvet-gold",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HT01 Airstrait Straightener Red Velvet/Gold",
+  "name": "Airstrait HT01 (Red Velvet)",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Red Velvet/Gold"
   ],
@@ -30609,7 +30431,7 @@
   "id": "dyson-ht01-airstrait-straightener-strawberry-bronze-blush",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HT01 Airstrait Straightener Strawberry Bronze/Blush Pink",
+  "name": "Airstrait HT01 (Strawberry)",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Strawberry Bronze/Blush Pink"
   ],
@@ -30639,7 +30461,7 @@
   "id": "dyson-hs05-multi-complete-long-blue-copper",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 Airwrap Multi- Complete Long Prussian Blue/Copper",
+  "name": "Airwrap HS05 Complete Long (Blue/Copper)",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Copper"
   ],
@@ -30669,7 +30491,7 @@
   "id": "dyson-hs05-multi-complete-long-strawberry-bronze-pink",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 Airwrap Multi- Complete Long Strawberry Bronze/Pink",
+  "name": "Airwrap HS05 Complete Long (Strawberry)",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Strawberry Bronze/Pink"
   ],
@@ -30699,7 +30521,7 @@
   "id": "dyson-hs05-multi-complete-long-gold-onyx",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HS05 Airwrap Multi- Complete Long Gold/Onyx Black",
+  "name": "Airwrap HS05 Complete Long (Gold)",
   "aliases": [
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Gold/Onyx Black"
   ],
@@ -30759,7 +30581,7 @@
   "id": "dyson-er-hd07",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)",
+  "name": "Supersonic HD07 (Iron Fuchsia)",
   "aliases": [
    "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)"
   ],
@@ -30912,7 +30734,7 @@
   "id": "dyson-ht01-airstrait-straightener-blue-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HT01 Airstrait Straightener Prussian Blue/Rich Copper",
+  "name": "Airstrait HT01 (Prussian Blue)",
   "aliases": [
    "Dyson HT01 Airstrait™ Straightener Prussian Blue/Rich Copper"
   ],
@@ -30939,38 +30761,10 @@
   ]
  },
  {
-  "id": "dyson-ht01-airstrait-straightener-nickel-copper",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "HT01 Airstrait™ Straightener Nickel/Copper",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HT01 Airstrait™ Straightener Nickel/Copper.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-hd16-nural-ceramic-patina-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD16 Supersonic Nural Ceramic Patina/Topaz",
+  "name": "Supersonic Nural HD16 (Ceramic)",
   "aliases": [
    "Dyson HD16 Supersonic™ Nural Ceramic Patina/Topaz"
   ],
@@ -31030,7 +30824,7 @@
   "id": "dyson-hd15-er-black-onyx",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD15 Supersonic Hair Dryer Black/Onyx Gold",
+  "name": "Supersonic HD15 (Black)",
   "aliases": [
    "Dyson HD15 Supersonic™ Hair Dryer Black/Onyx Gold"
   ],
@@ -31060,7 +30854,7 @@
   "id": "dyson-hd15-er-nickel-copper",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD15 Supersonic Hair Dryer Nickel/Copper",
+  "name": "Supersonic HD15 (Nickel)",
   "aliases": [
    "Dyson HD15 Supersonic™ Hair Dryer Nickel/Copper"
   ],
@@ -31150,7 +30944,7 @@
   "id": "acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001",
   "category": "laptop",
   "brand": "Acer",
-  "name": "Aspire Lite AlL15-36P-C0M7 N150, NX.DE1AA.001",
+  "name": "Aspire Lite AL15-36P",
   "aliases": [
    "Նոթբուք Acer Aspire Lite AlL15-36P-C0M7 N150, NX.DE1AA.001 Light Silver"
   ],
@@ -31240,7 +31034,7 @@
   "id": "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11",
   "category": "laptop",
   "brand": "ASUS",
-  "name": "Vivobook 15, Core 3-100U, X1504VAP-C38128, W11",
+  "name": "Vivobook 15 X1504VAP",
   "aliases": [
    "Նոթբուք ASUS Vivobook 15, Core 3-100U, X1504VAP-C38128, W11, Quiet Blue"
   ],
@@ -31270,7 +31064,7 @@
   "id": "lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus",
   "category": "laptop",
   "brand": "Lenovo",
-  "name": "IdeaPad Slim 3, 15.6”, W11, Abyss Bl 82XQ012HUS",
+  "name": "IdeaPad Slim 3 15AMN8",
   "aliases": [
    "Նոթբուք Lenovo IdeaPad Slim 3, 15.6”, W11, Abyss Bl 82XQ012HUS"
   ],
@@ -31537,36 +31331,6 @@
   ]
  },
  {
-  "id": "honor-magicbook-x14-plus-14",
-  "category": "laptop",
-  "brand": "Honor",
-  "name": "MagicBook X14 Plus 14\"",
-  "aliases": [
-   "Նոթբուք HONOR MagicBook X14 Plus 14\" /512GB (5301ALWC)"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 332900,
-  "priceAmdMax": 332900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 16,
-    "priceAmd": 332900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Honor MagicBook X14 Plus 14\".",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "asus-vivobook-15-m1502n",
   "category": "laptop",
   "brand": "ASUS",
@@ -31654,6 +31418,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -31933,7 +31700,7 @@
   "id": "lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11",
   "category": "laptop",
   "brand": "Lenovo",
-  "name": "IdeaPad Slim 3, Ryzen 7-8840HS ,83KA000QUS Touch, Bklit, W11",
+  "name": "IdeaPad Slim 3 (Ryzen 7)",
   "aliases": [
    "Նոթբուք Lenovo IdeaPad Slim 3, Ryzen 7-8840HS ,83KA000QUS Touch, Bklit, W11"
   ],
@@ -31993,7 +31760,7 @@
   "id": "asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11",
   "category": "laptop",
   "brand": "ASUS",
-  "name": "Vivobook 16, AMD Ryzen 7-7730U, 90NB10R1-M00CH0, W11",
+  "name": "Vivobook 16 (Ryzen 7)",
   "aliases": [
    "Նոթբուք ASUS Vivobook 16, AMD Ryzen 7-7730U, 90NB10R1-M00CH0, W11"
   ],
@@ -32352,37 +32119,6 @@
   ]
  },
  {
-  "id": "lenovo-ideapad-slim-5-16irh10-r",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "IdeaPad Slim 5 16IRH10 R",
-  "aliases": [
-   "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10 R (83J1001DRK)",
-   "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10R (83J1001ERK)"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 459900,
-  "priceAmdMax": 465900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 459900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Lenovo IdeaPad Slim 5 16IRH10 R.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "lenovo-ideacentre-aio-27irh-9-27",
   "category": "desktop",
   "brand": "Lenovo",
@@ -32572,10 +32308,13 @@
   "brand": "Lenovo",
   "name": "IdeaPad Slim 516IRH10",
   "aliases": [
-   "Նոթբուք Lenovo IdeaPad Slim 516IRH10 (83HS002SRK)"
+   "Նոթբուք Lenovo IdeaPad Slim 516IRH10 (83HS002SRK)",
+   "IdeaPad Slim 5 16IRH10 R",
+   "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10 R (83J1001DRK)",
+   "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10R (83J1001ERK)"
   ],
   "tier": "upper-mid",
-  "priceAmd": 489900,
+  "priceAmd": 459900,
   "priceAmdMax": 489900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -34160,43 +33899,6 @@
   ]
  },
  {
-  "id": "xiaomi-redmi",
-  "category": "phone",
-  "brand": "Xiaomi",
-  "name": "REDMI",
-  "aliases": [
-   "Սմարթֆոն Xiaomi REDMI 15 /128GB RU (25062RN2DY) մանուշակագույն",
-   "Սմարթֆոն Xiaomi REDMI 15 /128GB RU (25062RN2DY) սև",
-   "Սմարթֆոն Xiaomi REDMI 15 /128GB EU (25062RN2DA) Sandy Purple",
-   "Սմարթֆոն Xiaomi REDMI 17 /128GB Black EU (2606FRN72Y)",
-   "Xiaomi Redmi 17 /128GB Black",
-   "Xiaomi Redmi 17 /256GB Oak Green",
-   "Xiaomi Redmi 17 /256GB Deep Blue",
-   "Xiaomi Redmi 17 /256GB Black"
-  ],
-  "tier": "budget",
-  "priceAmd": 66900,
-  "priceAmdMax": 114900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 8,
-    "priceAmd": 69900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi REDMI.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "samsung-a366",
   "category": "phone",
   "brand": "Samsung",
@@ -34856,36 +34558,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Honor Choice Clip MAK-ME01.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wh-ch520l",
-  "category": "headphones",
-  "brand": "Sony",
-  "name": "WH CH520L",
-  "aliases": [
-   "Sony WH CH520L Blue Անլար ականջակալ"
-  ],
-  "tier": "budget",
-  "priceAmd": 27900,
-  "priceAmdMax": 27900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 27900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WH CH520L.",
   "unsure": [
    "popularity",
    "display",
@@ -35747,7 +35419,9 @@
   "brand": "Sony",
   "name": "WH-1000XM5",
   "aliases": [
-   "Sony WH-1000XM5 (YY2954) անլար ականջակալ արծաթագույն"
+   "Sony WH-1000XM5 (YY2954) անլար ականջակալ արծաթագույն",
+   "WH-1000XM5/SME",
+   "WH-1000XM5/BME"
   ],
   "tier": "mid",
   "priceAmd": 199900,
@@ -36376,40 +36050,10 @@
   ]
  },
  {
-  "id": "lenovo-thinkpad-e16-g3-16-core-5-210h-21tf004rfw",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "ThinkPad E16 G3 16\" Core 5-210H /21TF004RFW",
-  "aliases": [
-   "Lenovo ThinkPad E16 G3 16\" Core 5-210H /512GB /21TF004RFW"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 419000,
-  "priceAmdMax": 419000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 16,
-    "priceAmd": 419000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Lenovo ThinkPad E16 G3 16\" Core 5-210H /21TF004RFW.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw",
   "category": "laptop",
   "brand": "Lenovo",
-  "name": "ThinkPad T16 G4 16\" Ultra 7-255U /21QE0066FW",
+  "name": "ThinkPad T16 G4",
   "aliases": [
    "Lenovo ThinkPad T16 G4 16\" Ultra 7-255U /512GB /21QE0066FW"
   ],
@@ -36439,7 +36083,7 @@
   "id": "hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet",
   "category": "laptop",
   "brand": "HP",
-  "name": "EliteBook 8 Flip G1i 13.3\" Ultra 5-225U W11P /A37FYET",
+  "name": "EliteBook 8 Flip G1i",
   "aliases": [
    "HP EliteBook 8 Flip G1i 13.3\" Ultra 5-225U /512GB W11P /A37FYET"
   ],
@@ -36469,7 +36113,7 @@
   "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
   "category": "laptop",
   "brand": "HP",
-  "name": "OmniBook 5 16\" Ultra 5-225U 16/1 /BM0Q2EA",
+  "name": "OmniBook 5 16",
   "aliases": [],
   "tier": "upper-mid",
   "priceAmd": 439900,
@@ -36497,7 +36141,7 @@
   "id": "hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea",
   "category": "laptop",
   "brand": "HP",
-  "name": "OmniBook 5 16\" Ultra 7-255U 16/1 /BK9Y8EA",
+  "name": "OmniBook 5 16 (Ultra 7)",
   "aliases": [],
   "tier": "upper-mid",
   "priceAmd": 499000,
@@ -36525,7 +36169,7 @@
   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
   "category": "laptop",
   "brand": "Honor",
-  "name": "MagicBook Pro 16\" Ultra 5-125H 24/1 W11H /5301AJJG",
+  "name": "MagicBook Pro 16 (24GB)",
   "aliases": [
    "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 White W11H /5301AJJG"
   ],
@@ -36555,7 +36199,7 @@
   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajje",
   "category": "laptop",
   "brand": "Honor",
-  "name": "MagicBook Pro 16\" Ultra 5-125H 24/1 W11H /5301AJJE",
+  "name": "MagicBook Pro 16 (24GB)",
   "aliases": [
    "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 Purple W11H /5301AJJE"
   ],
@@ -36582,38 +36226,10 @@
   ]
  },
  {
-  "id": "asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "ROG STRIX G16 16\" i9-14900HX 16/1 4060 W11 /G614JVR-ES94*",
-  "aliases": [],
-  "tier": "flagship",
-  "priceAmd": 1044000,
-  "priceAmdMax": 1044000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 1044000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "ASUS ROG STRIX G16 16\" i9-14900HX 16/1 4060 W11 /G614JVR-ES94*.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
   "category": "laptop",
   "brand": "ASUS",
-  "name": "Vivobook S 15.6\" i9-13900H 16/1 CAMO W11 /K5504VA-PB99-SL*",
+  "name": "Vivobook S 15 (i9)",
   "aliases": [
    "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO SILVER W11 /K5504VA-PB99-SL*"
   ],
@@ -36643,7 +36259,7 @@
   "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-gr",
   "category": "laptop",
   "brand": "ASUS",
-  "name": "Vivobook S 15.6\" i9-13900H 16/1 CAMO W11 /K5504VA-PB99-GR*",
+  "name": "Vivobook S 15 (i9)",
   "aliases": [
    "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO GREEN W11 /K5504VA-PB99-GR*"
   ],
@@ -36662,34 +36278,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "ASUS Vivobook S 15.6\" i9-13900H 16/1 CAMO W11 /K5504VA-PB99-GR*.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "ENVY 16 i9-13900H 16/1 4060 W11 /7Z0P3UA#ABA*",
-  "aliases": [],
-  "tier": "flagship",
-  "priceAmd": 925800,
-  "priceAmdMax": 925800,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 925800
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "HP ENVY 16 i9-13900H 16/1 4060 W11 /7Z0P3UA#ABA*.",
   "unsure": [
    "popularity",
    "display",
@@ -36832,62 +36420,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Sony WF-C510/B.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wh-1000xm5-sme",
-  "category": "headphones",
-  "brand": "Sony",
-  "name": "WH-1000XM5/SME",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 199900,
-  "priceAmdMax": 199900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 199900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WH-1000XM5/SME.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wh-1000xm5-bme",
-  "category": "headphones",
-  "brand": "Sony",
-  "name": "WH-1000XM5/BME",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 199900,
-  "priceAmdMax": 199900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 199900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WH-1000XM5/BME.",
   "unsure": [
    "popularity",
    "display",
@@ -37123,7 +36655,7 @@
   "id": "apple-ultra-2-49mm-titaniumplusdark-alpine-loop-l-mx4t3",
   "category": "watch",
   "brand": "Apple",
-  "name": "Ultra 2 49mm Titanium+Dark Alpine Loop L /MX4T3*",
+  "name": "Watch Ultra 2 49mm",
   "aliases": [
    "Apple Watch Ultra 2 49mm Black Titanium+Dark Green Alpine Loop L /MX4T3*"
   ],
@@ -37210,38 +36742,10 @@
   ]
  },
  {
-  "id": "apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4",
-  "category": "monitor",
-  "brand": "Apple",
-  "name": "Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4",
-  "aliases": [],
-  "tier": "flagship",
-  "priceAmd": 860900,
-  "priceAmdMax": 860900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 860900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",
   "category": "monitor",
   "brand": "Apple",
-  "name": "Studio Display XDR 2026 Tilt-Height adjustable /MFEL4*",
+  "name": "Studio Display XDR",
   "aliases": [],
   "tier": "flagship",
   "priceAmd": 1999000,
@@ -37329,7 +36833,7 @@
   "id": "garmin-cirqa-smart-band-mauve-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "CIRQA™ Smart Band, Mauve, S-M",
+  "name": "CIRQA Smart Band",
   "aliases": [],
   "tier": "budget",
   "priceAmd": 89000,
@@ -37357,7 +36861,7 @@
   "id": "garmin-cirqa-smart-band-captain-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Garmin CIRQA Smart Band, Captain Blue, S-M",
+  "name": "CIRQA Smart Band",
   "aliases": [
    "Garmin CIRQA™ Smart Band, Captain Blue, S-M"
   ],
@@ -37732,34 +37236,6 @@
   ]
  },
  {
-  "id": "garmin-instinct-2x-solar-tactical-edition-coyote",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Instinct 2X Solar - Tactical Edition Coyote",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 166500,
-  "priceAmdMax": 166500,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 166500
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Instinct 2X Solar - Tactical Edition Coyote.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "garmin-venu-4-41-mm",
   "category": "watch",
   "brand": "Garmin",
@@ -37824,7 +37300,7 @@
   "id": "garmin-cirqa-smart-band-french-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Garmin CIRQA Smart Band, French Gray, S-M",
+  "name": "CIRQA Smart Band",
   "aliases": [
    "Garmin CIRQA™ Smart Band, French Gray, S-M"
   ],
@@ -38175,7 +37651,7 @@
   "id": "garmin-fenix-8-47-mm-amoled-sapphire-with-vented-bracelet",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 8 – 47 mm, AMOLED Sapphire, with Vented bracelet",
+  "name": "Fenix 8 47mm AMOLED",
   "aliases": [
    "Garmin Fenix 8 – 47 mm, AMOLED Sapphire, Titanium with Vented titanium bracelet"
   ],
@@ -38746,7 +38222,7 @@
   "id": "apple-band-extension-42mm-magnetic-link-for-38-42mm",
   "category": "watch",
   "brand": "Apple",
-  "name": "Band Extension 42mm Magnetic Link for 38-42mm",
+  "name": "Watch Band 42mm",
   "aliases": [
    "Band Extension Apple 42mm Magnetic Link Black for Apple Watch 38-42mm"
   ],
@@ -39625,34 +39101,6 @@
   ]
  },
  {
-  "id": "asus-tuf-gaming-z790-plus-wi-fi-d4-socket-1700",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "TUF Gaming Z790 Plus Wi-Fi D4 Socket 1700",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 153000,
-  "priceAmdMax": 153000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 153000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "ASUS TUF Gaming Z790 Plus Wi-Fi D4 Socket 1700.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "asus-proart-lc-420",
   "category": "monitor",
   "brand": "ASUS",
@@ -39673,34 +39121,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "ASUS ProArt LC 420.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "asus-tuf-gaming-z790-plus-d4-socket-1700",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "TUF Gaming Z790-Plus D4 Socket 1700",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 135000,
-  "priceAmdMax": 135000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 135000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "ASUS TUF Gaming Z790-Plus D4 Socket 1700.",
   "unsure": [
    "popularity",
    "display",
@@ -39790,34 +39210,9 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "asus-tuf-gaming-z690-plus-d4-socket-1700",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "TUF Gaming Z690-Plus D4 Socket 1700",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 125000,
-  "priceAmdMax": 125000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 125000
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "ASUS TUF Gaming Z690-Plus D4 Socket 1700.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -40106,7 +39501,7 @@
   "id": "asus-mouse-rog-strix-carry-p508-90mp01b0-b0ua00",
   "category": "laptop",
   "brand": "ASUS",
-  "name": "Mouse ROG Strix Carry P508 90MP01B0-B0UA00",
+  "name": "ROG Strix Carry Mouse",
   "aliases": [
    "Mouse ASUS ROG Strix Carry P508 90MP01B0-B0UA00"
   ],
@@ -40217,34 +39612,6 @@
   ]
  },
  {
-  "id": "asus-tuf-gaming-combo-k1-and-m3-90mp02a0-bcra",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "TUF Gaming Combo K1 and M3 90MP02A0-BCRA",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 32000,
-  "priceAmdMax": 32000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 32000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "ASUS TUF Gaming Combo K1 and M3 90MP02A0-BCRA.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "asus-mouse-rog-keris-p509-90mp01r0-b0ua00",
   "category": "laptop",
   "brand": "ASUS",
@@ -40306,7 +39673,7 @@
   "id": "asus-mouse-pad-nc01-rog-sheath-blk-90mp00k3-b0ua00",
   "category": "laptop",
   "brand": "ASUS",
-  "name": "Mouse Pad NC01 ROG Sheath BLK 90MP00K3-B0UA00",
+  "name": "ROG Sheath Mouse Pad",
   "aliases": [
    "Mouse Pad ASUS NC01 ROG Sheath BLK 90MP00K3-B0UA00"
   ],
@@ -40474,6 +39841,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -41555,36 +40925,6 @@
   ]
  },
  {
-  "id": "samsung-galaxy-tab-a9-plus-x210",
-  "category": "tablet",
-  "brand": "Samsung",
-  "name": "Galaxy Tab A9 Plus X210",
-  "aliases": [
-   "Samsung Galaxy Tab A9 Plus X210 Graphite"
-  ],
-  "tier": "mid",
-  "priceAmd": 109000,
-  "priceAmdMax": 109000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 128,
-    "priceAmd": 109000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy Tab A9 Plus X210.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "samsung-galaxy-tab-a8-10-5-x205",
   "category": "tablet",
   "brand": "Samsung",
@@ -42223,7 +41563,7 @@
   "id": "honor-magicbook-pro-16-3k-core-ultra-5-125h-ram-1t-win11",
   "category": "laptop",
   "brand": "Honor",
-  "name": "MAGICBOOK PRO 16” 3K.Core Ultra 5 125H/ Ram/1T/Win11",
+  "name": "MagicBook Pro 16 3K",
   "aliases": [
    "HONOR MAGICBOOK PRO 16” 3K.Core Ultra 5 125H/24GB Ram/1T/Win11"
   ],
@@ -42250,46 +41590,18 @@
   ]
  },
  {
-  "id": "hp-envy-pc-7x9x5ea-32",
-  "category": "desktop",
-  "brand": "HP",
-  "name": "ENVY PC 7X9X5EA 32",
-  "aliases": [
-   "HP ENVY Desktop PC 7X9X5EA 32"
-  ],
-  "tier": "flagship",
-  "priceAmd": 895000,
-  "priceAmdMax": 895000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 1024,
-    "priceAmd": 895000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "HP ENVY PC 7X9X5EA 32.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "hp-envy-pc-7x9x5ea",
   "category": "desktop",
   "brand": "HP",
   "name": "Envy PC 7X9X5EA",
   "aliases": [
-   "HP Envy Desktop PC 7X9X5EA"
+   "HP Envy Desktop PC 7X9X5EA",
+   "ENVY PC 7X9X5EA 32",
+   "HP ENVY Desktop PC 7X9X5EA 32"
   ],
   "tier": "flagship",
   "priceAmd": 875000,
-  "priceAmdMax": 875000,
+  "priceAmdMax": 895000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -42450,42 +41762,16 @@
   ]
  },
  {
-  "id": "hp-probook-450-g9-7c196pa16",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "ProBook 450 G9 7C196PA16",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 390000,
-  "priceAmdMax": 390000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 512,
-    "priceAmd": 390000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "HP ProBook 450 G9 7C196PA16.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "hp-probook-450-g9-7c196pa",
   "category": "laptop",
   "brand": "HP",
   "name": "ProBook 450 G9 7C196PA",
-  "aliases": [],
+  "aliases": [
+   "ProBook 450 G9 7C196PA16"
+  ],
   "tier": "upper-mid",
   "priceAmd": 380000,
-  "priceAmdMax": 380000,
+  "priceAmdMax": 390000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -42538,7 +41824,9 @@
   "category": "laptop",
   "brand": "HP",
   "name": "Victus 15-fa0033dx 9T9R8UA",
-  "aliases": [],
+  "aliases": [
+   "Victus 15-fa0033dx 9T9R8UA 16"
+  ],
   "tier": "upper-mid",
   "priceAmd": 330000,
   "priceAmdMax": 330000,
@@ -42554,34 +41842,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "HP Victus 15-fa0033dx 9T9R8UA.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "hp-victus-15-fa0033dx-9t9r8ua-16",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "Victus 15-fa0033dx 9T9R8UA 16",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 330000,
-  "priceAmdMax": 330000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 512,
-    "priceAmd": 330000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "HP Victus 15-fa0033dx 9T9R8UA 16.",
   "unsure": [
    "popularity",
    "display",
@@ -44079,42 +43339,16 @@
   ]
  },
  {
-  "id": "lenovo-thinkpad-e16-gen-1-21jn001qgp16",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "ThinkPad E16 Gen 1 21JN001QGP16",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 451000,
-  "priceAmdMax": 451000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 512,
-    "priceAmd": 451000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Lenovo ThinkPad E16 Gen 1 21JN001QGP16.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "lenovo-thinkpad-e16-gen-1-21jn001qgp",
   "category": "laptop",
   "brand": "Lenovo",
   "name": "ThinkPad E16 Gen 1 21JN001QGP",
-  "aliases": [],
+  "aliases": [
+   "ThinkPad E16 Gen 1 21JN001QGP16"
+  ],
   "tier": "upper-mid",
   "priceAmd": 439000,
-  "priceAmdMax": 439000,
+  "priceAmdMax": 451000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -44155,34 +43389,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Lenovo LOQ Tower 17 IRR9 90X0002MGH.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "lenovo-yoga-mouse-with-laser-presenter-gy50u59626",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "Yoga Mouse with Laser Presenter GY50U59626",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 352000,
-  "priceAmdMax": 352000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 352000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Lenovo Yoga Mouse with Laser Presenter GY50U59626.",
   "unsure": [
    "popularity",
    "display",
@@ -44315,7 +43521,7 @@
   "id": "dyson-multi-complete-long-hs05",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap multi- Complete Long HS05 Onyx Gold",
+  "name": "Airwrap HS05 Complete Long",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Onyx Gold",
    "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush"
@@ -44346,7 +43552,7 @@
   "id": "dyson-multi-complete-long-hs05-strawberry",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap multi- Complete Long HS05 Strawberry Bronze / Pink",
+  "name": "Airwrap HS05 (Strawberry)",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Strawberry Bronze / Pink"
   ],
@@ -44376,7 +43582,7 @@
   "id": "dyson-multi-complete-long-hs05-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap multi- Complete Long HS05 Prussian Blue / Topaz",
+  "name": "Airwrap HS05 (Blue)",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Topaz"
   ],
@@ -44406,7 +43612,7 @@
   "id": "dyson-multi-complete-long-hs05-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap multi- Complete Long HS05 Prussian Blue / Rich Copper",
+  "name": "Airwrap HS05 (Blue/Copper)",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Rich Copper"
   ],
@@ -44436,7 +43642,7 @@
   "id": "dyson-multi-complete-long-hs05-fuchisa",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap multi- Complete Long HS05 Fuchisa / Nickel",
+  "name": "Airwrap HS05 (Fuchsia)",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Fuchisa / Nickel"
   ],
@@ -44496,7 +43702,7 @@
   "id": "dyson-nural-hd16-strawberry",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Supersonic Nural HD16 Strawberry Bronze / Blush Pink",
+  "name": "Supersonic Nural HD16",
   "aliases": [
    "Dyson Supersonic™ Nural HD16 Strawberry Bronze / Blush Pink"
   ],
@@ -44556,7 +43762,7 @@
   "id": "dyson-er-hd15",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Supersonic Hair Dryer HD15 Nickel / Copper",
+  "name": "Supersonic HD15",
   "aliases": [
    "Dyson Supersonic™ Hair Dryer HD15 Nickel / Copper"
   ],
@@ -44586,7 +43792,7 @@
   "id": "dyson-origin-hs05",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Airwrap Origin HS05 Nickel / Copper",
+  "name": "Airwrap Origin HS05",
   "aliases": [
    "Dyson Airwrap™ Origin HS05 Nickel / Copper"
   ],
@@ -44646,7 +43852,7 @@
   "id": "dyson-airstrait-straightener-ht01-nicel",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Airstrait Straightener HT01 Nicel / Copper",
+  "name": "Airstrait HT01",
   "aliases": [
    "Dyson Airstrait™ Straightener HT01 Nicel / Copper"
   ],
@@ -44676,7 +43882,7 @@
   "id": "dyson-airstrait-straightener-ht01-ceramic",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Airstrait Straightener HT01 Ceramic Pink",
+  "name": "Airstrait HT01 (Ceramic)",
   "aliases": [
    "Dyson Airstrait™ Straightener HT01 Ceramic Pink"
   ],

@@ -164,6 +164,28 @@ function pinnedId(text) {
   const u = urlIn(text);
   return u ? PINS.get(u) : undefined;
 }
+// A phone sold with earbuds in the box is neither product at either product's price. Vega's
+// "...poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg" used to match nothing only
+// because the catalogue did not carry the POCO C85; now that it does, the bundle would hand that
+// phone a price that includes a pair of earbuds.
+//
+// What marks a bundle is a joining word with a real model name on BOTH sides. "Galaxy S26+"
+// tokenises to "galaxy s26 plus" with nothing after the joiner, and "Redmi Note 13 Pro+ 5G"
+// leaves only "5g" - one token, which is a radio, not a product. Two tokens and a digit-bearing
+// model on the right is a second thing in the box.
+function looksLikeBundle(text) {
+  const h = tokenized(text).replace(/  +/g, ' ');
+  for (const j of [' plus ', ' and ', ' with ']) {
+    const at = h.indexOf(j);
+    if (at < 0) continue;
+    const left = h.slice(0, at).trim(), right = h.slice(at + j.length).trim();
+    const words = right.split(' ').filter(Boolean);
+    if (words.length < 2 || left.split(' ').filter(Boolean).length < 2) continue;
+    // a second product names itself: a word of its own and a number belonging to it
+    if (words.some(w => /^[a-z]{3,}$/.test(w)) && words.some(w => /\d/.test(w))) return true;
+  }
+  return false;
+}
 function matchPhone(text) {
   // A human reading data/links.csv and correcting the id column has settled this page for good.
   // Checked before every heuristic below, because a heuristic is a guess and this is a reading:
@@ -172,6 +194,7 @@ function matchPhone(text) {
   const pin = pinnedId(text);
   if (pin !== undefined) return pin === '-' ? null : pin;
   if (looksLikeAccessory(text)) return null;
+  if (looksLikeBundle(text)) return null;
   const h = tokenized(text).replace(/  +/g, ' ');
   if (SECONDHAND.some(w => h.includes(' ' + w + ' '))) return null;
   // Shops compress the model in a slug ("samsung-s26ultra", "google-pixel10"). Splitting the
@@ -567,7 +590,10 @@ if (process.argv[2] === '--selftest') {
     ['xiaomi-redmi-note-17-pro-max-5g', 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
     // a phone sold with earbuds in the box is neither product's price
     [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
-    ['xiaomi-buds-6', 'Xiaomi Buds 6'],
+    // A bundle is rejected whichever of its two products the catalogue happens to carry.
+    [null, 'Xiaomi POCO C85 8GB 256GB Green plus Redmi Buds 6 Active'],
+    // ...and the ordinary readings a "+" appears in are not bundles
+    ['samsung-galaxy-s26-plus', 'Samsung Galaxy S26+ 256GB'],
     ['xiaomi-redmi-note-17-pro-max-5g', 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
     ['xiaomi-redmi-note-17-pro-max-5g', 'https://mobilecentre.am/product/xiaomi-redmi-note-17-pro-max/34553/'],
     ['xiaomi-17-pro-max', 'https://redstore.am/en/product/xiaomi-17-pro-max-16gb512gb-black'],
