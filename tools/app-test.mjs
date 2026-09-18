@@ -155,7 +155,11 @@ is(barKeys('laptop').includes('cpu') && barKeys('laptop').includes('gpu'), true,
 is(barKeys('earbuds').includes('anc'), true, 'earbuds are asked about noise cancelling');
 // With no category chosen the page is showing phones beside fridges: only the questions that
 // apply to a purchase rather than to hardware survive.
-is(hasNone(barKeys(''), ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'cpu', 'gpu', 'anc']), [], 'no category, no spec filters');
+// With no category the bar used to offer nothing but brand, price and shop, which read as a
+// catalogue that had lost its filters. It offers the spec questions now; what protects the
+// AirPods from a RAM filter is still the rule below - the items in view have to DIFFER on it.
+is(barKeys('').length > 3, true, 'the whole catalogue can still be asked spec questions');
+is(hasNone(barKeys('headphones'), ['ram', 'stor', 'cpu', 'gpu']), [], 'headphones are not asked about RAM or CPUs');
 is(barKeys('').includes('shop'), true, 'the shop filter applies everywhere');
 app.st = { ...app.st, cat: '', fopen: false };
 

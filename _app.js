@@ -46,7 +46,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', from: '-ից',
@@ -69,7 +69,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', from: 'от ',
@@ -92,7 +92,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', from: 'from ',
@@ -114,6 +114,7 @@ if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';
 if (typeof st.fopen !== 'boolean') st.fopen = false;
+if (typeof st.catsAll !== 'boolean') st.catsAll = false;
 // The numeric filters are the same kind of hazard: st.ram = "abc" passes every guard above,
 // matches() then compares a number against a string and the catalogue renders empty with no
 // visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
@@ -353,33 +354,61 @@ const FILT = {
   g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
   nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
   anc:   { kind: 'flag', label: () => x('ancF'), of: p => !!p.audio?.anc },
+  // Ninety-six televisions and thirty-eight monitors all differ on the one thing a buyer of
+  // either actually chooses between, and nothing here could ask about it until now.
+  panel: { kind: 'set', arr: 'panels', label: () => x('panelF'), of: p => panelOf(p), fmt: v => v },
+  // A shop sells last year's laptop next to this year's at the same price, and the model number
+  // is the only thing that says which - except here, where the catalogue already knows.
+  year:  { kind: 'min', label: () => x('yearF'), of: p => yearOf(p), fmt: v => String(v) },
+  os:    { kind: 'set', arr: 'oses', label: () => x('osF'), of: p => osOf(p), fmt: v => v },
 };
+// The panel is written in a dozen ways across the makers - "Liquid Retina IPS LCD", "QNED
+// Mini-LED", "Neo QLED" - and the buyer is choosing between about five things. The most specific
+// word in the string is the one that decides, so OLED beats LED in "NanoCell LED".
+const PANELS = ['Mini-LED', 'QNED', 'Neo QLED', 'QLED', 'AMOLED', 'OLED', 'NanoCell', 'IPS', 'VA', 'TN', 'LCD', 'LED', 'E Ink'];
+function panelOf(p) {
+  const t = String(p.display?.type || '');
+  if (!t) return null;
+  return PANELS.find(k => new RegExp('\\b' + k.replace(/[-\s]/g, '[-\\s]?') + '\\b', 'i').test(t)) || null;
+}
+// The year it was released, which is a fact the catalogue records, not one read off a title.
+const yearOf = p => { const m = String(p.released || '').match(/^(\d{4})/); return m ? +m[1] : null; };
+// "macOS 26", "Android 15, One UI 7" - the family is what anybody filters on, not the point release.
+const OSES = ['iOS', 'iPadOS', 'macOS', 'watchOS', 'Android', 'Windows', 'HarmonyOS', 'Chrome OS', 'Tizen', 'webOS'];
+const osOf = p => OSES.find(o => new RegExp('\\b' + o + '\\b', 'i').test(String(p.os || ''))) || null;
 // Which questions each category can be asked. The bar used to decide this purely on whether the
 // numbers varied, so AirPods were filtered by RAM and screen size and a watch by refresh rate:
 // varying is not the same as meaning something. A filter listed here still has to prove the
 // items in view differ on it before it is drawn.
 const ASK = {
-  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'g5', 'nfc'],
-  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5', 'touch'],
-  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch'],
-  desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch'],
-  console:    ['stor'],
-  ereader:    ['stor', 'scr', 'water'],
-  watch:      ['stor', 'scr', 'life', 'water'],
-  earbuds:    ['anc', 'life', 'water'],
-  headphones: ['anc', 'life', 'water'],
-  speaker:    ['life', 'water'],
-  appliance:  [],
-  monitor:    ['scr', 'hz'],
-  component:  [],
+  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
+  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5', 'touch', 'panel', 'os', 'year'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
+  desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
+  console:    ['stor', 'year'],
+  ereader:    ['stor', 'scr', 'water', 'panel', 'year'],
+  watch:      ['stor', 'scr', 'life', 'water', 'os', 'year'],
+  earbuds:    ['anc', 'life', 'water', 'year'],
+  headphones: ['anc', 'life', 'water', 'year'],
+  speaker:    ['life', 'water', 'year'],
+  appliance:  ['year'],
+  monitor:    ['scr', 'hz', 'panel', 'year'],
+  component:  ['year'],
   // A television is asked the same two questions a monitor is: how big, and how fast.
-  tv:         ['scr', 'hz'],
-  drone:      [],
+  tv:         ['scr', 'hz', 'panel', 'os', 'year'],
+  drone:      ['year'],
 };
 // Brand, price and shop are questions about the purchase, not about the hardware, so they are
 // asked everywhere. A spec question needs a category: with none chosen the page is showing
 // phones beside fridges, and "16 GB or more" there is a question about some of them only.
-const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop' || (!!cat && (ASK[cat] || []).includes(k));
+// With a category chosen, that category's own list decides. With none, the bar used to offer
+// nothing but brand, price and shop - which is why "All" looked like it had lost its filters.
+// A question some category in view would be asked is a fair question to ask of the whole view;
+// whether it is DRAWN still depends on the items in view actually differing on it, which is the
+// check that kept RAM off the AirPods in the first place.
+const ANY_ASK = new Set(Object.values(ASK).flat());
+const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop'
+  || (cat ? (ASK[cat] || []).includes(k) : ANY_ASK.has(k));
 
 function matches(p, s) {
   if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
@@ -986,11 +1015,24 @@ function catTabs() {
   const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${esc(label)}<b class="num">${count}</b></a>`;
   // A tab whose count is 0 leads to an empty page, so it is not offered. The category you are
   // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
+  // Fifteen categories wrapped to three rows and pushed the catalogue itself below the fold. The
+  // six biggest are shown, plus whichever one you are standing in, so the tab you are on is never
+  // the one that got hidden. The rest are one button away, and stay open once opened.
+  const live = cats.filter(c => n(c) > 0 || st.cat === c);
+  const few = new Set([...live].sort((a, b) => n(b) - n(a)).slice(0, CAT_SHOWN));
+  if (st.cat) few.add(st.cat);
+  const shown = st.catsAll ? live : live.filter(c => few.has(c));
+  const rest = live.length - shown.length;
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
     tab('', x('catAll'), pool.length) +
-    cats.filter(c => n(c) > 0 || st.cat === c)
-        .map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') + `</nav>`;
+    shown.map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') +
+    (rest > 0 || st.catsAll
+      ? `<button class="ctab cmore" data-catmore="1" aria-expanded="${st.catsAll ? 'true' : 'false'}">${
+          esc(st.catsAll ? x('catsFewer') : x('catsMore'))}${rest > 0 ? ` <b class="num">${rest}</b>` : ''}</button>`
+      : '') + `</nav>`;
 }
+// Six fills one row at every width this site is read at, and leaves the grid on screen.
+const CAT_SHOWN = 6;
 function catalogView() {
   return `<div class="shell">
     ${catTabs()}
@@ -1938,6 +1980,8 @@ document.addEventListener('click', e => {
   }
   const fm = e.target.closest('[data-fmore]');
   if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
+  const cm = e.target.closest('[data-catmore]');
+  if (cm) { st.catsAll = !st.catsAll; save(); render(true); return; }
   if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');

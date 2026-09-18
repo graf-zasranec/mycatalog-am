@@ -179,7 +179,7 @@ button,input,select,textarea{font:inherit;color:inherit}
   background:var(--surface2);color:var(--muted);margin-left:6px;white-space:nowrap}
 
 /* ---- filters fold away: eleven chips above the results is most of a phone screen ---- */
-.fbar.folded > *{display:none}
+.fbar.folded > :nth-child(n+5){display:none}   /* folded still shows the first four */
 .fbar.folded > .spacer,.fbar.folded > [data-drop="sort"]{display:inline-flex}
 .fmore{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 14px;border-radius:var(--pill);
   border:1px solid var(--line2);background:none;color:inherit;font:inherit;font-size:13px;cursor:pointer}
@@ -357,6 +357,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .ctabs .ctab:hover{border-color:var(--line2);color:var(--text)}
 .ctabs .ctab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
 .ctabs .ctab b{font-weight:600;font-size:0.8125rem;opacity:.6}
+.ctabs .cmore{background:none;font:inherit;cursor:pointer;border-style:dashed}
+.ctabs .cmore:hover{border-color:var(--brand);color:var(--brand)}
 @media (max-width:640px){.ctabs{gap:5px;margin-top:16px}.ctabs .ctab{height:34px;padding:0 12px;font-size:0.875rem}}
 /* No overflow here: overflow-x:auto makes overflow-y compute to auto too, which clipped every
    filter dropdown to the 46px-tall bar on desktop. Wrapping costs a row and keeps them visible. */
