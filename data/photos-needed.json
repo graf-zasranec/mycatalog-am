@@ -2,9 +2,9 @@
  "generated": "2026-09-18",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1422,
- "missing": 797,
- "tooSmall": 21,
+ "total": 1420,
+ "missing": 670,
+ "tooSmall": 43,
  "products": [
   {
    "id": "dji-mic-mini",
@@ -47,16 +47,6 @@
    "width": 0
   },
   {
-   "id": "whoop-peak",
-   "brand": "Whoop",
-   "name": "Peak",
-   "category": "watch",
-   "shops": 4,
-   "query": "Whoop Peak",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "honor-x7d",
    "brand": "Honor",
    "name": "X7d",
@@ -93,16 +83,6 @@
    "category": "phone",
    "shops": 3,
    "query": "Xiaomi Redmi 17",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-14s",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 14S",
-   "category": "phone",
-   "shops": 3,
-   "query": "Xiaomi Redmi Note 14S",
    "what": "missing",
    "width": 0
   },
@@ -257,16 +237,6 @@
    "width": 0
   },
   {
-   "id": "samsung-galaxy-buds4-pro-r640",
-   "brand": "Samsung",
-   "name": "Galaxy Buds4 Pro R640",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Samsung Galaxy Buds4 Pro R640",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-tab-a9-x110",
    "brand": "Samsung",
    "name": "Galaxy Tab A9 X110",
@@ -307,192 +277,12 @@
    "width": 0
   },
   {
-   "id": "samsung-qe55qn80fauxru",
-   "brand": "Samsung",
-   "name": "QE55QN80FAUXRU",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung QE55QN80FAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe65s90faexru",
-   "brand": "Samsung",
-   "name": "QE65S90FAEXRU",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung QE65S90FAEXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe65s95fauxru",
-   "brand": "Samsung",
-   "name": "QE65S95FAUXRU",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung QE65S95FAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe75qn80fauxru",
-   "brand": "Samsung",
-   "name": "QE75QN80FAUXRU",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung QE75QN80FAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue43m70hauxpy",
-   "brand": "Samsung",
-   "name": "UE43M70HAUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE43M70HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue43u8000huxpy",
-   "brand": "Samsung",
-   "name": "UE43U8000HUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE43U8000HUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue50u8000huxpy",
-   "brand": "Samsung",
-   "name": "UE50U8000HUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE50U8000HUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue55m70hauxpy",
-   "brand": "Samsung",
-   "name": "UE55M70HAUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE55M70HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue65u8000huxpy",
-   "brand": "Samsung",
-   "name": "UE65U8000HUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE65U8000HUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue75u8000huxpy",
-   "brand": "Samsung",
-   "name": "UE75U8000HUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE75U8000HUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-43s30",
-   "brand": "Sony",
-   "name": "K-43S30",
-   "category": "tv",
-   "shops": 2,
-   "query": "Sony K-43S30",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-50s30",
-   "brand": "Sony",
-   "name": "K-50S30",
-   "category": "tv",
-   "shops": 2,
-   "query": "Sony K-50S30",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-55s30",
-   "brand": "Sony",
-   "name": "K-55S30",
-   "category": "tv",
-   "shops": 2,
-   "query": "Sony K-55S30",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-65s30",
-   "brand": "Sony",
-   "name": "K-65S30",
-   "category": "tv",
-   "shops": 2,
-   "query": "Sony K-65S30",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "sony-wh-1000xm5",
    "brand": "Sony",
    "name": "WH-1000XM5",
    "category": "headphones",
    "shops": 2,
    "query": "Sony WH-1000XM5",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-43v6d",
-   "brand": "TCL",
-   "name": "43V6D",
-   "category": "tv",
-   "shops": 2,
-   "query": "TCL 43V6D",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-55c6k",
-   "brand": "TCL",
-   "name": "55C6K",
-   "category": "tv",
-   "shops": 2,
-   "query": "TCL 55C6K",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-55v6c",
-   "brand": "TCL",
-   "name": "55V6C",
-   "category": "tv",
-   "shops": 2,
-   "query": "TCL 55V6C",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-65c6k",
-   "brand": "TCL",
-   "name": "65C6K",
-   "category": "tv",
-   "shops": 2,
-   "query": "TCL 65C6K",
    "what": "missing",
    "width": 0
   },
@@ -513,16 +303,6 @@
    "category": "phone",
    "shops": 2,
    "query": "Xiaomi POCO X8 Pro Max",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-15",
-   "brand": "Xiaomi",
-   "name": "Redmi 15",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi 15",
    "what": "missing",
    "width": 0
   },
@@ -5127,26 +4907,6 @@
    "width": 0
   },
   {
-   "id": "oppo-reno-a78",
-   "brand": "OPPO",
-   "name": "Reno A78",
-   "category": "phone",
-   "shops": 1,
-   "query": "OPPO Reno A78",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "oppo-reno8t",
-   "brand": "OPPO",
-   "name": "Reno8T",
-   "category": "phone",
-   "shops": 1,
-   "query": "OPPO Reno8T",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "philips-24-usb-c-24e1n3300a-00",
    "brand": "Philips",
    "name": "24\" USB-C 24E1N3300A/00",
@@ -5193,46 +4953,6 @@
    "category": "monitor",
    "shops": 1,
    "query": "Samsung 27D300GAU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-a15",
-   "brand": "Samsung",
-   "name": "A15",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung A15",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-a165",
-   "brand": "Samsung",
-   "name": "A165",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung A165",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-a25",
-   "brand": "Samsung",
-   "name": "A25",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung A25",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-a366",
-   "brand": "Samsung",
-   "name": "A366",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung A366",
    "what": "missing",
    "width": 0
   },
@@ -5297,26 +5017,6 @@
    "width": 0
   },
   {
-   "id": "samsung-galaxy-a34",
-   "brand": "Samsung",
-   "name": "Galaxy A34",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung Galaxy A34",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-a35",
-   "brand": "Samsung",
-   "name": "Galaxy A35",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung Galaxy A35",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-active-2",
    "brand": "Samsung",
    "name": "Galaxy Active 2",
@@ -5333,16 +5033,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Samsung Galaxy Book 4 NP750XGK-KS2US",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-buds-live",
-   "brand": "Samsung",
-   "name": "Galaxy Buds Live",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Samsung Galaxy Buds Live",
    "what": "missing",
    "width": 0
   },
@@ -5423,36 +5113,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Samsung Galaxy Ultra 47mm 2025",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-watch-3-41mm",
-   "brand": "Samsung",
-   "name": "Galaxy Watch 3 41mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch 3 41mm",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-watch-fit-3",
-   "brand": "Samsung",
-   "name": "Galaxy Watch Fit 3",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch Fit 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-watch-ultra-47mm-lte",
-   "brand": "Samsung",
-   "name": "Galaxy Watch Ultra 47mm LTE",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch Ultra 47mm LTE",
    "what": "missing",
    "width": 0
   },
@@ -5567,26 +5227,6 @@
    "width": 0
   },
   {
-   "id": "samsung-mre55r85hauxpy",
-   "brand": "Samsung",
-   "name": "MRE55R85HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung MRE55R85HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-mre75r95hauxpy",
-   "brand": "Samsung",
-   "name": "MRE75R95HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung MRE75R95HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-odyssey-ark-55-ls55cg97wnixci",
    "brand": "Samsung",
    "name": "Odyssey Ark 55” LS55CG97WNIXCI",
@@ -5667,52 +5307,12 @@
    "width": 0
   },
   {
-   "id": "samsung-qe43qn70hauxpy",
-   "brand": "Samsung",
-   "name": "QE43QN70HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE43QN70HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe48s90faexru",
-   "brand": "Samsung",
-   "name": "QE48S90FAEXRU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE48S90FAEXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe48s90haexpy",
-   "brand": "Samsung",
-   "name": "QE48S90HAEXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE48S90HAEXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-qe50q7faauxru",
    "brand": "Samsung",
    "name": "QE50Q7FAAUXRU",
    "category": "tv",
    "shops": 1,
    "query": "Samsung QE50Q7FAAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe50qn70hauxpy",
-   "brand": "Samsung",
-   "name": "QE50QN70HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE50QN70HAUXPY",
    "what": "missing",
    "width": 0
   },
@@ -5757,62 +5357,12 @@
    "width": 0
   },
   {
-   "id": "samsung-qe55qn80hauxpy",
-   "brand": "Samsung",
-   "name": "QE55QN80HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE55QN80HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe55s85haexpy",
-   "brand": "Samsung",
-   "name": "QE55S85HAEXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE55S85HAEXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe55s90hauxpy",
-   "brand": "Samsung",
-   "name": "QE55S90HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE55S90HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-qe55s95cauxru",
    "brand": "Samsung",
    "name": "QE55S95CAUXRU",
    "category": "tv",
    "shops": 1,
    "query": "Samsung QE55S95CAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe65q7faauxru",
-   "brand": "Samsung",
-   "name": "QE65Q7FAAUXRU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE65Q7FAAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe65qn80hauxpy",
-   "brand": "Samsung",
-   "name": "QE65QN80HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE65QN80HAUXPY",
    "what": "missing",
    "width": 0
   },
@@ -5827,42 +5377,12 @@
    "width": 0
   },
   {
-   "id": "samsung-qe65qn900duxru",
-   "brand": "Samsung",
-   "name": "QE65QN900DUXRU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE65QN900DUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-qe65qn90fauxru",
    "brand": "Samsung",
    "name": "QE65QN90FAUXRU",
    "category": "tv",
    "shops": 1,
    "query": "Samsung QE65QN90FAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe65qn990fuxru",
-   "brand": "Samsung",
-   "name": "QE65QN990FUXRU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE65QN990FUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe65s85haexpy",
-   "brand": "Samsung",
-   "name": "QE65S85HAEXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE65S85HAEXPY",
    "what": "missing",
    "width": 0
   },
@@ -5917,32 +5437,12 @@
    "width": 0
   },
   {
-   "id": "samsung-qe75qn70hauxpy",
-   "brand": "Samsung",
-   "name": "QE75QN70HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE75QN70HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-qe75qn90cauxru",
    "brand": "Samsung",
    "name": "QE75QN90CAUXRU",
    "category": "tv",
    "shops": 1,
    "query": "Samsung QE75QN90CAUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe77s90faexru",
-   "brand": "Samsung",
-   "name": "QE77S90FAEXRU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE77S90FAEXRU",
    "what": "missing",
    "width": 0
   },
@@ -5963,16 +5463,6 @@
    "category": "tv",
    "shops": 1,
    "query": "Samsung QE83S90DAEXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-qe83s90haexpy",
-   "brand": "Samsung",
-   "name": "QE83S90HAEXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung QE83S90HAEXPY",
    "what": "missing",
    "width": 0
   },
@@ -6027,16 +5517,6 @@
    "width": 0
   },
   {
-   "id": "samsung-ue32f6000fuxru",
-   "brand": "Samsung",
-   "name": "UE32F6000FUXRU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung UE32F6000FUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-ue55du8000uxru",
    "brand": "Samsung",
    "name": "UE55DU8000UXRU",
@@ -6047,32 +5527,12 @@
    "width": 0
   },
   {
-   "id": "samsung-ue55m80hauxpy",
-   "brand": "Samsung",
-   "name": "UE55M80HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung UE55M80HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-ue55u8000fuxru",
    "brand": "Samsung",
    "name": "UE55U8000FUXRU",
    "category": "tv",
    "shops": 1,
    "query": "Samsung UE55U8000FUXRU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue65m70hauxpy",
-   "brand": "Samsung",
-   "name": "UE65M70HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung UE65M70HAUXPY",
    "what": "missing",
    "width": 0
   },
@@ -6097,32 +5557,12 @@
    "width": 0
   },
   {
-   "id": "samsung-ue75m70hauxpy",
-   "brand": "Samsung",
-   "name": "UE75M70HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung UE75M70HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-ue75m80hauxpy",
    "brand": "Samsung",
    "name": "UE75M80HAUXPY",
    "category": "tv",
    "shops": 1,
    "query": "Samsung UE75M80HAUXPY",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue85m80hauxpy",
-   "brand": "Samsung",
-   "name": "UE85M80HAUXPY",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung UE85M80HAUXPY",
    "what": "missing",
    "width": 0
   },
@@ -6243,76 +5683,6 @@
    "category": "headphones",
    "shops": 1,
    "query": "Sennheiser RS 195",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-55xr50",
-   "brand": "Sony",
-   "name": "K-55XR50",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-55XR50",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-65xr50",
-   "brand": "Sony",
-   "name": "K-65XR50",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-65XR50",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-65xr70",
-   "brand": "Sony",
-   "name": "K-65XR70",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-65XR70",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-65xr80m2",
-   "brand": "Sony",
-   "name": "K-65XR80M2",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-65XR80M2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-75s30",
-   "brand": "Sony",
-   "name": "K-75S30",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-75S30",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-75xr50",
-   "brand": "Sony",
-   "name": "K-75XR50",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-75XR50",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-k-75xr70",
-   "brand": "Sony",
-   "name": "K-75XR70",
-   "category": "tv",
-   "shops": 1,
-   "query": "Sony K-75XR70",
    "what": "missing",
    "width": 0
   },
@@ -6597,32 +5967,12 @@
    "width": 0
   },
   {
-   "id": "sony-xperia-10v",
-   "brand": "Sony",
-   "name": "Xperia 10V",
-   "category": "phone",
-   "shops": 1,
-   "query": "Sony Xperia 10V",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "tcl-115c7k",
    "brand": "TCL",
    "name": "115C7K",
    "category": "tv",
    "shops": 1,
    "query": "TCL 115C7K",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-32s5k",
-   "brand": "TCL",
-   "name": "32S5K",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 32S5K",
    "what": "missing",
    "width": 0
   },
@@ -6663,16 +6013,6 @@
    "category": "tv",
    "shops": 1,
    "query": "TCL 50P7L",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-50s5k",
-   "brand": "TCL",
-   "name": "50S5K",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 50S5K",
    "what": "missing",
    "width": 0
   },
@@ -6847,16 +6187,6 @@
    "width": 0
   },
   {
-   "id": "toshiba-32v35re",
-   "brand": "Toshiba",
-   "name": "32V35RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 32V35RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "toshiba-43c350ke",
    "brand": "Toshiba",
    "name": "43C350KE",
@@ -6873,16 +6203,6 @@
    "category": "tv",
    "shops": 1,
    "query": "Toshiba 43C350LE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-43c350re",
-   "brand": "Toshiba",
-   "name": "43C350RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 43C350RE",
    "what": "missing",
    "width": 0
   },
@@ -6907,82 +6227,12 @@
    "width": 0
   },
   {
-   "id": "toshiba-43m450re",
-   "brand": "Toshiba",
-   "name": "43M450RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 43M450RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-43v35re",
-   "brand": "Toshiba",
-   "name": "43V35RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 43V35RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-50c350re",
-   "brand": "Toshiba",
-   "name": "50C350RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 50C350RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-50m450re",
-   "brand": "Toshiba",
-   "name": "50M450RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 50M450RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "toshiba-50m550le",
    "brand": "Toshiba",
    "name": "50M550LE",
    "category": "tv",
    "shops": 1,
    "query": "Toshiba 50M550LE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-50v37se",
-   "brand": "Toshiba",
-   "name": "50V37SE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 50V37SE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-55c350ne",
-   "brand": "Toshiba",
-   "name": "55C350NE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 55C350NE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-55c350re",
-   "brand": "Toshiba",
-   "name": "55C350RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 55C350RE",
    "what": "missing",
    "width": 0
   },
@@ -7007,102 +6257,12 @@
    "width": 0
   },
   {
-   "id": "toshiba-55z670re",
-   "brand": "Toshiba",
-   "name": "55Z670RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 55Z670RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-55z680se",
-   "brand": "Toshiba",
-   "name": "55Z680SE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 55Z680SE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-65c350re",
-   "brand": "Toshiba",
-   "name": "65C350RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 65C350RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "toshiba-65c450me",
    "brand": "Toshiba",
    "name": "65C450ME",
    "category": "tv",
    "shops": 1,
    "query": "Toshiba 65C450ME",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-65z670re",
-   "brand": "Toshiba",
-   "name": "65Z670RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 65Z670RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-65z680se",
-   "brand": "Toshiba",
-   "name": "65Z680SE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 65Z680SE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-65z770re",
-   "brand": "Toshiba",
-   "name": "65Z770RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 65Z770RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-75c350ne",
-   "brand": "Toshiba",
-   "name": "75C350NE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 75C350NE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-75z670re",
-   "brand": "Toshiba",
-   "name": "75Z670RE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 75Z670RE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-85c350ne",
-   "brand": "Toshiba",
-   "name": "85C350NE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 85C350NE",
    "what": "missing",
    "width": 0
   },
@@ -7133,56 +6293,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Whoop Life",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "whoop-mg-life",
-   "brand": "Whoop",
-   "name": "MG life",
-   "category": "watch",
-   "shops": 1,
-   "query": "Whoop MG life",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-12-lite",
-   "brand": "Xiaomi",
-   "name": "12 Lite",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi 12 Lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-12x",
-   "brand": "Xiaomi",
-   "name": "12X",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi 12X",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-13-lite",
-   "brand": "Xiaomi",
-   "name": "13 Lite",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi 13 Lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-14t",
-   "brand": "Xiaomi",
-   "name": "14T",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi 14T",
    "what": "missing",
    "width": 0
   },
@@ -7287,36 +6397,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-poco-c40",
-   "brand": "Xiaomi",
-   "name": "Poco C40",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco C40",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-f4",
-   "brand": "Xiaomi",
-   "name": "Poco F4",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco F4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-f5",
-   "brand": "Xiaomi",
-   "name": "Poco F5",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco F5",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-poco-f6",
    "brand": "Xiaomi",
    "name": "Poco F6",
@@ -7337,62 +6417,12 @@
    "width": 0
   },
   {
-   "id": "xiaomi-poco-m5",
-   "brand": "Xiaomi",
-   "name": "Poco M5",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco M5",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-m6",
-   "brand": "Xiaomi",
-   "name": "Poco M6",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco M6",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-m6-pro",
-   "brand": "Xiaomi",
-   "name": "Poco M6 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco M6 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-m7-pro-5g",
-   "brand": "Xiaomi",
-   "name": "Poco M7 Pro 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco M7 Pro 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-poco-x5-5g",
    "brand": "Xiaomi",
    "name": "Poco X5 5G",
    "category": "phone",
    "shops": 1,
    "query": "Xiaomi Poco X5 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-x5-pro-5g",
-   "brand": "Xiaomi",
-   "name": "Poco X5 Pro 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco X5 Pro 5G",
    "what": "missing",
    "width": 0
   },
@@ -7407,72 +6437,12 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-10-2022",
-   "brand": "Xiaomi",
-   "name": "Redmi 10 2022",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 10 2022",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-10a",
    "brand": "Xiaomi",
    "name": "Redmi 10A",
    "category": "phone",
    "shops": 1,
    "query": "Xiaomi Redmi 10A",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-10c",
-   "brand": "Xiaomi",
-   "name": "Redmi 10C",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 10C",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-12",
-   "brand": "Xiaomi",
-   "name": "Redmi 12",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 12",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-12c",
-   "brand": "Xiaomi",
-   "name": "Redmi 12C",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 12C",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-13",
-   "brand": "Xiaomi",
-   "name": "Redmi 13",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 13",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-13c",
-   "brand": "Xiaomi",
-   "name": "Redmi 13C",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 13C",
    "what": "missing",
    "width": 0
   },
@@ -7577,116 +6547,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-a2plus",
-   "brand": "Xiaomi",
-   "name": "Redmi A2+",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi A2+",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-a3",
-   "brand": "Xiaomi",
-   "name": "Redmi A3",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi A3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-a5",
-   "brand": "Xiaomi",
-   "name": "Redmi A5",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi A5",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-buds-3-lite",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 3 Lite",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 3 Lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-buds-6-play",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 6 Play",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 6 Play",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-10-pro",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 10 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 10 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-10s",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 10S",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 10S",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-11",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 11",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 11",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-11-proplus-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 11 Pro+ 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 11 Pro+ 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-11s",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 11S",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 11S",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-13",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 13",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 13",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-note-14-pro-plus-5g",
    "brand": "Xiaomi",
    "name": "Redmi Note 14 Pro Plus 5G",
@@ -7717,16 +6577,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-note-17-pro-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 17 Pro 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 17 Pro 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-note-17-pro-max-5g",
    "brand": "Xiaomi",
    "name": "Redmi Note 17 Pro Max 5G",
@@ -7737,42 +6587,12 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-pad",
-   "brand": "Xiaomi",
-   "name": "Redmi Pad",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Xiaomi Redmi Pad",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-pad-2-pro",
    "brand": "Xiaomi",
    "name": "Redmi Pad 2 Pro",
    "category": "tablet",
    "shops": 1,
    "query": "Xiaomi Redmi Pad 2 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-pad-pro-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Pad Pro 5G",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Xiaomi Redmi Pad Pro 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-pad-se",
-   "brand": "Xiaomi",
-   "name": "Redmi Pad SE",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Xiaomi Redmi Pad SE",
    "what": "missing",
    "width": 0
   },
@@ -7793,56 +6613,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Xiaomi Redmi Smart Band 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-watch-2-lite",
-   "brand": "Xiaomi",
-   "name": "Redmi Watch 2 Lite",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Redmi Watch 2 Lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-watch-5-active",
-   "brand": "Xiaomi",
-   "name": "Redmi Watch 5 Active",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Redmi Watch 5 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-s-pro-mini-led-65",
-   "brand": "Xiaomi",
-   "name": "S Pro Mini LED 65",
-   "category": "tv",
-   "shops": 1,
-   "query": "Xiaomi S Pro Mini LED 65",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-smart-band-7",
-   "brand": "Xiaomi",
-   "name": "Smart Band 7",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Smart Band 7",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-smart-band-7-pro",
-   "brand": "Xiaomi",
-   "name": "Smart Band 7 Pro",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Smart Band 7 Pro",
    "what": "missing",
    "width": 0
   },
@@ -7883,46 +6653,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Xiaomi Smart Mi Band 8 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-smart-watch-70mai-saphir",
-   "brand": "Xiaomi",
-   "name": "Smart Watch 70mai Saphir",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Smart Watch 70mai Saphir",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-tv-a-pro-55-2026-qled",
-   "brand": "Xiaomi",
-   "name": "TV A Pro 55 2026 QLED",
-   "category": "tv",
-   "shops": 1,
-   "query": "Xiaomi TV A Pro 55 2026 QLED",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-tv-s-65-2025-mled",
-   "brand": "Xiaomi",
-   "name": "TV S 65 2025 MLED",
-   "category": "tv",
-   "shops": 1,
-   "query": "Xiaomi TV S 65 2025 MLED",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-watch-s1",
-   "brand": "Xiaomi",
-   "name": "Watch S1",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Watch S1",
    "what": "missing",
    "width": 0
   },
@@ -7975,6 +6705,16 @@
    "query": "Xiaomi Redmi A7 Pro",
    "what": "missing",
    "width": 0
+  },
+  {
+   "id": "tcl-55v6c",
+   "brand": "TCL",
+   "name": "55V6C",
+   "category": "tv",
+   "shops": 2,
+   "query": "TCL 55V6C",
+   "what": "too small",
+   "width": 579
   },
   {
    "id": "xiaomi-redmi-note-12",
@@ -8167,6 +6907,166 @@
    "width": 570
   },
   {
+   "id": "samsung-a15",
+   "brand": "Samsung",
+   "name": "A15",
+   "category": "phone",
+   "shops": 1,
+   "query": "Samsung A15",
+   "what": "too small",
+   "width": 519
+  },
+  {
+   "id": "samsung-galaxy-a35",
+   "brand": "Samsung",
+   "name": "Galaxy A35",
+   "category": "phone",
+   "shops": 1,
+   "query": "Samsung Galaxy A35",
+   "what": "too small",
+   "width": 466
+  },
+  {
+   "id": "samsung-galaxy-buds-live",
+   "brand": "Samsung",
+   "name": "Galaxy Buds Live",
+   "category": "earbuds",
+   "shops": 1,
+   "query": "Samsung Galaxy Buds Live",
+   "what": "too small",
+   "width": 580
+  },
+  {
+   "id": "samsung-galaxy-watch-3-41mm",
+   "brand": "Samsung",
+   "name": "Galaxy Watch 3 41mm",
+   "category": "watch",
+   "shops": 1,
+   "query": "Samsung Galaxy Watch 3 41mm",
+   "what": "too small",
+   "width": 548
+  },
+  {
+   "id": "sony-xperia-10v",
+   "brand": "Sony",
+   "name": "Xperia 10V",
+   "category": "phone",
+   "shops": 1,
+   "query": "Sony Xperia 10V",
+   "what": "too small",
+   "width": 551
+  },
+  {
+   "id": "toshiba-32v35re",
+   "brand": "Toshiba",
+   "name": "32V35RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 32V35RE",
+   "what": "too small",
+   "width": 534
+  },
+  {
+   "id": "toshiba-43v35re",
+   "brand": "Toshiba",
+   "name": "43V35RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 43V35RE",
+   "what": "too small",
+   "width": 561
+  },
+  {
+   "id": "toshiba-50c350re",
+   "brand": "Toshiba",
+   "name": "50C350RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 50C350RE",
+   "what": "too small",
+   "width": 562
+  },
+  {
+   "id": "toshiba-55c350re",
+   "brand": "Toshiba",
+   "name": "55C350RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 55C350RE",
+   "what": "too small",
+   "width": 564
+  },
+  {
+   "id": "toshiba-55z670re",
+   "brand": "Toshiba",
+   "name": "55Z670RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 55Z670RE",
+   "what": "too small",
+   "width": 564
+  },
+  {
+   "id": "toshiba-65c350re",
+   "brand": "Toshiba",
+   "name": "65C350RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 65C350RE",
+   "what": "too small",
+   "width": 564
+  },
+  {
+   "id": "toshiba-65z670re",
+   "brand": "Toshiba",
+   "name": "65Z670RE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 65Z670RE",
+   "what": "too small",
+   "width": 565
+  },
+  {
+   "id": "toshiba-65z680se",
+   "brand": "Toshiba",
+   "name": "65Z680SE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 65Z680SE",
+   "what": "too small",
+   "width": 541
+  },
+  {
+   "id": "xiaomi-poco-f4",
+   "brand": "Xiaomi",
+   "name": "Poco F4",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi Poco F4",
+   "what": "too small",
+   "width": 596
+  },
+  {
+   "id": "xiaomi-poco-m6-pro",
+   "brand": "Xiaomi",
+   "name": "Poco M6 Pro",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi Poco M6 Pro",
+   "what": "too small",
+   "width": 494
+  },
+  {
+   "id": "xiaomi-redmi-12c",
+   "brand": "Xiaomi",
+   "name": "Redmi 12C",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi Redmi 12C",
+   "what": "too small",
+   "width": 595
+  },
+  {
    "id": "xiaomi-redmi-14c",
    "brand": "Xiaomi",
    "name": "Redmi 14C",
@@ -8175,6 +7075,56 @@
    "query": "Xiaomi Redmi 14C",
    "what": "too small",
    "width": 525
+  },
+  {
+   "id": "xiaomi-redmi-buds-3-lite",
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 3 Lite",
+   "category": "earbuds",
+   "shops": 1,
+   "query": "Xiaomi Redmi Buds 3 Lite",
+   "what": "too small",
+   "width": 594
+  },
+  {
+   "id": "xiaomi-redmi-watch-2-lite",
+   "brand": "Xiaomi",
+   "name": "Redmi Watch 2 Lite",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Redmi Watch 2 Lite",
+   "what": "too small",
+   "width": 580
+  },
+  {
+   "id": "xiaomi-smart-band-7",
+   "brand": "Xiaomi",
+   "name": "Smart Band 7",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Smart Band 7",
+   "what": "too small",
+   "width": 495
+  },
+  {
+   "id": "xiaomi-smart-watch-70mai-saphir",
+   "brand": "Xiaomi",
+   "name": "Smart Watch 70mai Saphir",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Smart Watch 70mai Saphir",
+   "what": "too small",
+   "width": 561
+  },
+  {
+   "id": "xiaomi-watch-s1",
+   "brand": "Xiaomi",
+   "name": "Watch S1",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Watch S1",
+   "what": "too small",
+   "width": 580
   },
   {
    "id": "yandex-smart-lamp",

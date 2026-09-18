@@ -2563,7 +2563,12 @@
    "popularity",
    "chipset.antutu"
   ],
-  "category": "phone"
+  "category": "phone",
+  "aliases": [
+   "Սմարթֆոն Samsung A366 /128GB Lime",
+   "Samsung A366",
+   "A366"
+  ]
  },
  {
   "id": "apple-macbook-pro-14-m5-pro",
@@ -2886,7 +2891,11 @@
    "display.brightness",
    "variants"
   ],
-  "category": "phone"
+  "category": "phone",
+  "aliases": [
+   "Samsung A165",
+   "A165"
+  ]
  },
  {
   "id": "apple-ipad-pro-13-m5",
@@ -26375,34 +26384,6 @@
   ]
  },
  {
-  "id": "samsung-a165",
-  "category": "phone",
-  "brand": "Samsung",
-  "name": "A165",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 84900,
-  "priceAmdMax": 84900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 256,
-    "priceAmd": 84900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung A165.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "honor-x8b",
   "category": "phone",
   "brand": "Honor",
@@ -33836,36 +33817,6 @@
    "battery.capacity"
   ],
   "colors": []
- },
- {
-  "id": "samsung-a366",
-  "category": "phone",
-  "brand": "Samsung",
-  "name": "A366",
-  "aliases": [
-   "Սմարթֆոն Samsung A366 /128GB Lime"
-  ],
-  "tier": "mid",
-  "priceAmd": 129900,
-  "priceAmdMax": 129900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 8,
-    "priceAmd": 129900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung A366.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
  },
  {
   "id": "honor-200",
