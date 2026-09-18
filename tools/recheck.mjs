@@ -23,6 +23,7 @@ const rows = fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).sli
               return { id, product, shop, title, storage, color, esim, price: +price, seen, url }; })
   .filter(r => r.url && r.price);
 
+const OFFICIAL = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace']);
 const want = process.argv.slice(2);
 const on = n => want.includes('--' + n) || want.includes('--all') || !want.some(a => a.startsWith('--'));
 const hits = [];
@@ -56,6 +57,12 @@ for (const r of rows) {
     if (s < 8) flag('storage', r, `${s} GB is not a size - a dropped TB?`);
     else if (tiers.length && !tiers.includes(s)) flag('storage', r, `${s} not among ${tiers.join('/')}`);
   }
+
+  // An official representative imports through the official channel and that channel brings the
+  // nano tray only. One of their pages claiming an eSIM-only build is either a reading of the
+  // wrong words or a shop that is not the representative we think it is.
+  if (on('sim') && OFFICIAL.has(r.shop) && r.esim === 'esim' && byId.get(r.id)?.category === 'phone')
+    flag('sim', r, `${r.shop} is an official rep - nano tray only`);
 
   // A price far outside what every other shop charges is usually a different product, an
   // instalment figure, or a trade-in price read off the same page.

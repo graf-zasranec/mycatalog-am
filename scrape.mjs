@@ -1572,9 +1572,19 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // "eSIM" in the name does NOT mean eSIM-only. 3DPlanet's two options read "E-Sim" and
 // "1 Սիմ քարտ + Esim" - the second is the phone WITH a nano tray, and matching on esim alone
 // would file it as the tray-less build and put its price under the wrong button.
-for (const list of Object.values(offers)) {
+// Shops that are official representatives import through the official channel, and that channel
+// brings the physical nano tray only - so their listing never states a SIM build because there is
+// only one to state, and reading nothing is not the same as there being nothing to read.
+// A human's '!' still wins: this is a rule about a shop, and a rule can have an exception.
+const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace']);
+// Only where a SIM build means anything. A laptop has no tray to charge more for, and stamping
+// one on it would put a nano-SIM badge on a MacBook.
+const HAS_SIM = new Set(phones.filter(p => p.category === 'phone').map(p => p.id));
+for (const [id, list] of Object.entries(offers)) {
   for (const o of list) {
-    const b = SIMPINS.has(o.url) ? SIMPINS.get(o.url) : simBuild(`${o.title || ''} ${o.url || ''}`);
+    const b = SIMPINS.has(o.url) ? SIMPINS.get(o.url)
+      : (NANO_ONLY.has(o.shop) && HAS_SIM.has(id)) ? false
+      : simBuild(`${o.title || ''} ${o.url || ''}`);
     if (b === undefined) delete o.esim; else o.esim = b;
   }
 }

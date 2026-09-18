@@ -72,6 +72,18 @@ for (const p of phones)
     dead.slice(0, 6).map(p => p.id).join(', ') + (dead.length > 6 ? ', ...' : ''));
 }
 
+// No English in the Armenian or the Russian view. A product with no summary in those languages
+// falls back to summaryEn, which is an English sentence on a page that must not have one, so it
+// is worth stopping the build over: node tools/verdicts.mjs --write writes the missing ones.
+{
+  const mute = phones.filter(p => !(VERD[p.id] && VERD[p.id].s_hy && VERD[p.id].s_ru));
+  if (mute.length) {
+    console.error(`build: ${mute.length} product(s) would show English in the hy/ru view - ` +
+      `node tools/verdicts.mjs --write: ` + mute.slice(0, 6).map(p => p.id).join(', '));
+    process.exit(1);
+  }
+}
+
 // A price series for a product that left the catalogue is dead weight nothing can render.
 for (const k of Object.keys(HISTORY.points || {}))
   if (!phones.some(p => p.id === k)) { console.warn('  ! history for a product not in the catalogue:', k); delete HISTORY.points[k]; }
