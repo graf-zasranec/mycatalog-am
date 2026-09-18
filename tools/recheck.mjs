@@ -58,6 +58,21 @@ for (const r of rows) {
     else if (tiers.length && !tiers.includes(s)) flag('storage', r, `${s} not among ${tiers.join('/')}`);
   }
 
+  // A generation is one character on a shelf and a whole year of hardware in the hand. Where our
+  // name and the shop's title BOTH state one, they have to state the same one: an M4 Pro page
+  // carrying an M5 listing is the single most expensive kind of wrong this catalogue can be.
+  if (on('gen') && r.title) {
+    const say = (re, s) => (String(s).match(re) || [])[0]?.toLowerCase().replace(/\s+/g, ' ').trim();
+    for (const [what, re] of [['chip', /\b(m[1-5])\s*(pro|max|ultra)?\b/i],
+                              ['size', /\b(11|12\.9|13\.6|13|14\.2|14|15\.3|15|16)\b/],
+                              ['line', /\b(air|pro|mini|neo)\b/i]]) {
+      const a = say(re, p.name), b = say(re, r.title);
+      if (!a || !b) continue;
+      const same = what === 'size' ? Math.floor(+a) === Math.floor(+b) : a === b;
+      if (!same) flag('gen', r, `we say ${what} ${a}, the shop says ${b}`);
+    }
+  }
+
   // An official representative imports through the official channel and that channel brings the
   // nano tray only. One of their pages claiming an eSIM-only build is either a reading of the
   // wrong words or a shop that is not the representative we think it is.
