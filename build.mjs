@@ -55,12 +55,26 @@ for (const p of phones) {
 // "1 GB" on its page. The importer that did it was a one-off script, so the guard lives at the
 // gate every product must pass rather than in whatever writes phones.json next. Watches and
 // video cards measure something else in that field, and say so with variantUnit.
+// The other way this goes wrong: a shop writes the configuration as "12/512GB" and the figure on
+// the LEFT of the slash is taken. 8 and 12 clear the guard above, so the RAM ships as the capacity
+// - and scrape.mjs then refuses every title that states a real one, leaving the product
+// unreachable and the next import proposing a duplicate of it. No phone, tablet or laptop is sold
+// with under 32 GB; a Kindle at 16 GB and an RTX 4060 at 8 GB are neither, so the floor is per
+// category. Warned rather than refused: each one is settled by reading a shelf, not by a rule.
+const RAMISH = [];
 for (const p of phones)
-  for (const v of p.variants || [])
+  for (const v of p.variants || []) {
     if (!p.variantUnit && v.storage != null && v.storage < 8) {
       console.error(`build: ${p.id} says ${v.storage} GB of storage - a dropped TB?`);
       process.exit(1);
     }
+    if (!p.variantUnit && v.storage != null && v.storage < 32 &&
+        ['phone', 'tablet', 'laptop', 'desktop'].includes(p.category))
+      RAMISH.push(`${p.id} (${p.category}) ${v.storage} GB`);
+  }
+if (RAMISH.length)
+  console.warn(`  ! ${RAMISH.length} variant(s) hold what looks like RAM in the storage field: ` +
+               RAMISH.slice(0, 8).join(', ') + (RAMISH.length > 8 ? ` +${RAMISH.length - 8} more` : ''));
 
 // No price, no entry. A comparison with nothing to compare is an empty page wearing a product's
 // name. Warned rather than refused, because a shop that was down on crawl day also leaves a

@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1422,
- "missing": 976,
- "tooSmall": 10,
+ "missing": 954,
+ "tooSmall": 15,
  "products": [
   {
    "id": "dji-mic-mini",
@@ -147,6 +147,16 @@
    "width": 0
   },
   {
+   "id": "xiaomi-poco-m7",
+   "brand": "Xiaomi",
+   "name": "POCO M7",
+   "category": "phone",
+   "shops": 3,
+   "query": "Xiaomi POCO M7",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "xiaomi-redmi-17",
    "brand": "Xiaomi",
    "name": "Redmi 17",
@@ -183,26 +193,6 @@
    "category": "phone",
    "shops": 2,
    "query": "Apple iPhone 15 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-32-vg32vq1br",
-   "brand": "ASUS",
-   "name": "32” VG32VQ1BR",
-   "category": "monitor",
-   "shops": 2,
-   "query": "ASUS 32” VG32VQ1BR",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-chromebook-cx1700cka-ws44f-m",
-   "brand": "ASUS",
-   "name": "Chromebook CX1700CKA WS44F M",
-   "category": "laptop",
-   "shops": 2,
-   "query": "ASUS Chromebook CX1700CKA WS44F M",
    "what": "missing",
    "width": 0
   },
@@ -707,12 +697,22 @@
    "width": 0
   },
   {
-   "id": "xiaomi-poco-m7",
+   "id": "xiaomi-poco-m8-5g",
    "brand": "Xiaomi",
-   "name": "POCO M7",
+   "name": "POCO M8 5G",
    "category": "phone",
    "shops": 2,
-   "query": "Xiaomi POCO M7",
+   "query": "Xiaomi POCO M8 5G",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-x8-pro-max",
+   "brand": "Xiaomi",
+   "name": "POCO X8 Pro Max",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi POCO X8 Pro Max",
    "what": "missing",
    "width": 0
   },
@@ -753,16 +753,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Acer Aspire AL15-52",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-aspire-lite-al15-36p-32xp",
-   "brand": "Acer",
-   "name": "Aspire Lite AL15-36P-32XP",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Aspire Lite AL15-36P-32XP",
    "what": "missing",
    "width": 0
   },
@@ -947,16 +937,6 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a",
-   "brand": "Apple",
-   "name": "iPad 10.9 Wi-Fi A14 MPQA3RK/A",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 10.9 Wi-Fi A14 MPQA3RK/A",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-10-a16-wi-fi-2025",
    "brand": "Apple",
    "name": "iPad 10 A16 Wi-Fi /2025",
@@ -977,42 +957,12 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a",
-   "brand": "Apple",
-   "name": "iPad 11 Pro Wi-Fi M2 MNXG3RK/A",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 11 Pro Wi-Fi M2 MNXG3RK/A",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-12-9-pro-wi-fi-plus-4g-m2-mp1x3rk",
-   "brand": "Apple",
-   "name": "iPad 12.9 Pro Wi-Fi + 4G M2 MP1X3RK",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 12.9 Pro Wi-Fi + 4G M2 MP1X3RK",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-9",
    "brand": "Apple",
    "name": "iPad 9",
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-air-11-inch-with-wi-fi",
-   "brand": "Apple",
-   "name": "iPad Air 11-inch with Wi-Fi",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Air 11-inch with Wi-Fi",
    "what": "missing",
    "width": 0
   },
@@ -1107,16 +1057,6 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-pro-11-wi-fi",
-   "brand": "Apple",
-   "name": "iPad Pro 11 Wi-Fi",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Pro 11 Wi-Fi",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3",
    "brand": "Apple",
    "name": "iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*",
@@ -1183,16 +1123,6 @@
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Pro 13 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-wi-fi-11",
-   "brand": "Apple",
-   "name": "iPad Wi-Fi 11\"",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Wi-Fi 11\"",
    "what": "missing",
    "width": 0
   },
@@ -1437,126 +1367,6 @@
    "width": 0
   },
   {
-   "id": "apple-watch-s10-42mm-with-sport-band",
-   "brand": "Apple",
-   "name": "Watch S10 42mm With Sport Band",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch S10 42mm With Sport Band",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-watch-s10-46mm-with-sport-band",
-   "brand": "Apple",
-   "name": "Watch S10 46mm With Sport Band",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch S10 46mm With Sport Band",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-watch-series-12-gps-42mm",
-   "brand": "Apple",
-   "name": "Watch Series 12 GPS 42mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Series 12 GPS 42mm",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-watch-series-12-gps-46mm",
-   "brand": "Apple",
-   "name": "Watch Series 12 GPS 46mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Series 12 GPS 46mm",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
-   "brand": "Apple",
-   "name": "Watch Ultra 4 GPS + Cellular + Band",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Ultra 4 GPS + Cellular + Band",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-milanese-loop",
-   "brand": "Apple",
-   "name": "Watch Ultra 4 GPS + Cellular + Milanese Loop",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-trail-loop",
-   "brand": "Apple",
-   "name": "Watch Ultra 4 GPS + Cellular + Trail Loop",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Ultra 4 GPS + Cellular + Trail Loop",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-22-vp228de",
-   "brand": "ASUS",
-   "name": "22” VP228DE",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS 22” VP228DE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-22-vt229h-touch",
-   "brand": "ASUS",
-   "name": "22” VT229H Touch",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS 22” VT229H Touch",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-24-vz239he-w",
-   "brand": "ASUS",
-   "name": "24” VZ239HE-W",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS 24” VZ239HE-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-27-va279hae",
-   "brand": "ASUS",
-   "name": "27” VA279HAE",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS 27” VA279HAE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-32-cg32uq",
-   "brand": "ASUS",
-   "name": "32” CG32UQ",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS 32” CG32UQ",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "asus-b3405cca-ly0189",
    "brand": "ASUS",
    "name": "B3405CCA-LY0189",
@@ -1583,16 +1393,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "ASUS B3605CCA-MB0080",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-dual-rtx-4060-8gb",
-   "brand": "Asus",
-   "name": "Dual RTX 4060 8GB",
-   "category": "component",
-   "shops": 1,
-   "query": "Asus Dual RTX 4060 8GB",
    "what": "missing",
    "width": 0
   },
@@ -6928,61 +6728,31 @@
   },
   {
    "id": "poco-c81-pro",
-   "brand": "POCO",
-   "name": "C81 Pro",
+   "brand": "Xiaomi",
+   "name": "POCO C81 Pro",
    "category": "phone",
    "shops": 1,
-   "query": "POCO C81 Pro",
+   "query": "Xiaomi POCO C81 Pro",
    "what": "missing",
    "width": 0
   },
   {
    "id": "poco-f7-pro",
-   "brand": "POCO",
-   "name": "F7 Pro",
+   "brand": "Xiaomi",
+   "name": "POCO F7 Pro",
    "category": "phone",
    "shops": 1,
-   "query": "POCO F7 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-m7",
-   "brand": "POCO",
-   "name": "M7",
-   "category": "phone",
-   "shops": 1,
-   "query": "POCO M7",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-m8-5g",
-   "brand": "POCO",
-   "name": "M8 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "POCO M8 5G",
+   "query": "Xiaomi POCO F7 Pro",
    "what": "missing",
    "width": 0
   },
   {
    "id": "poco-x8-pro-5g",
-   "brand": "POCO",
-   "name": "X8 Pro 5G",
+   "brand": "Xiaomi",
+   "name": "POCO X8 Pro 5G",
    "category": "phone",
    "shops": 1,
-   "query": "POCO X8 Pro 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-x8-pro-max-5g",
-   "brand": "POCO",
-   "name": "X8 Pro Max 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "POCO X8 Pro Max 5G",
+   "query": "Xiaomi POCO X8 Pro 5G",
    "what": "missing",
    "width": 0
   },
@@ -9177,16 +8947,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-poco-m8-5g",
-   "brand": "Xiaomi",
-   "name": "POCO M8 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi POCO M8 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-poco-x5-5g",
    "brand": "Xiaomi",
    "name": "Poco X5 5G",
@@ -9213,26 +8973,6 @@
    "category": "phone",
    "shops": 1,
    "query": "Xiaomi Poco X7",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-x7-pro",
-   "brand": "Xiaomi",
-   "name": "Poco X7 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco X7 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-x8-pro-max",
-   "brand": "Xiaomi",
-   "name": "POCO X8 Pro Max",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi POCO X8 Pro Max",
    "what": "missing",
    "width": 0
   },
@@ -9767,6 +9507,46 @@
    "width": 0
   },
   {
+   "id": "samsung-galaxy-a07s",
+   "brand": "Samsung",
+   "name": "Galaxy A07s",
+   "category": "phone",
+   "shops": 0,
+   "query": "Samsung Galaxy A07s",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-galaxy-a08",
+   "brand": "Samsung",
+   "name": "Galaxy A08",
+   "category": "phone",
+   "shops": 0,
+   "query": "Samsung Galaxy A08",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-m8-pro-5g",
+   "brand": "Xiaomi",
+   "name": "POCO M8 Pro 5G",
+   "category": "phone",
+   "shops": 0,
+   "query": "Xiaomi POCO M8 Pro 5G",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-a7-pro",
+   "brand": "Xiaomi",
+   "name": "Redmi A7 Pro",
+   "category": "phone",
+   "shops": 0,
+   "query": "Xiaomi Redmi A7 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "xiaomi-redmi-note-12",
    "brand": "Xiaomi",
    "name": "Redmi Note 12",
@@ -9795,6 +9575,56 @@
    "query": "Amazon Kindle Paperwhite Kids (11th gen)",
    "what": "too small",
    "width": 545
+  },
+  {
+   "id": "apple-watch-series-12-gps-42mm",
+   "brand": "Apple",
+   "name": "Watch Series 12 GPS 42mm",
+   "category": "watch",
+   "shops": 1,
+   "query": "Apple Watch Series 12 GPS 42mm",
+   "what": "too small",
+   "width": 491
+  },
+  {
+   "id": "apple-watch-series-12-gps-46mm",
+   "brand": "Apple",
+   "name": "Watch Series 12 GPS 46mm",
+   "category": "watch",
+   "shops": 1,
+   "query": "Apple Watch Series 12 GPS 46mm",
+   "what": "too small",
+   "width": 490
+  },
+  {
+   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+   "brand": "Apple",
+   "name": "Watch Ultra 4 GPS + Cellular + Band",
+   "category": "watch",
+   "shops": 1,
+   "query": "Apple Watch Ultra 4 GPS + Cellular + Band",
+   "what": "too small",
+   "width": 520
+  },
+  {
+   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-milanese-loop",
+   "brand": "Apple",
+   "name": "Watch Ultra 4 GPS + Cellular + Milanese Loop",
+   "category": "watch",
+   "shops": 1,
+   "query": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop",
+   "what": "too small",
+   "width": 527
+  },
+  {
+   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-trail-loop",
+   "brand": "Apple",
+   "name": "Watch Ultra 4 GPS + Cellular + Trail Loop",
+   "category": "watch",
+   "shops": 1,
+   "query": "Apple Watch Ultra 4 GPS + Cellular + Trail Loop",
+   "what": "too small",
+   "width": 527
   },
   {
    "id": "bose-soundtouch-10",

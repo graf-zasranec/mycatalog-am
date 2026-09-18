@@ -4264,7 +4264,7 @@
  },
  {
   "id": "poco-x7-pro",
-  "brand": "POCO",
+  "brand": "Xiaomi",
   "name": "POCO X7 Pro",
   "tier": "mid",
   "released": "2025-01",
@@ -4340,7 +4340,11 @@
    "chipset.antutu",
    "variants"
   ],
-  "category": "phone"
+  "category": "phone",
+  "aliases": [
+   "Xiaomi Poco X7 Pro",
+   "POCO POCO X7 Pro"
+  ]
  },
  {
   "id": "xiaomi-redmi-14c",
@@ -6011,7 +6015,7 @@
  {
   "id": "poco-f7-ultra",
   "category": "phone",
-  "brand": "POCO",
+  "brand": "Xiaomi",
   "name": "POCO F7 Ultra",
   "tier": "flagship",
   "released": "2025-03",
@@ -6087,6 +6091,9 @@
    "priceAmd",
    "priceAmdMax",
    "popularity"
+  ],
+  "aliases": [
+   "POCO POCO F7 Ultra"
   ]
  },
  {
@@ -18641,8 +18648,8 @@
  {
   "id": "poco-c75",
   "category": "phone",
-  "brand": "POCO",
-  "name": "C75",
+  "brand": "Xiaomi",
+  "name": "POCO C75",
   "tier": "budget",
   "released": "2024-11",
   "priceAmd": 62900,
@@ -18705,6 +18712,9 @@
   "unsure": [
    "popularity",
    "colors"
+  ],
+  "aliases": [
+   "POCO C75"
   ]
  },
  {
@@ -19301,7 +19311,7 @@
  {
   "id": "poco-c85",
   "category": "phone",
-  "brand": "POCO",
+  "brand": "Xiaomi",
   "name": "POCO C85",
   "tier": "budget",
   "released": "2025-09",
@@ -19369,6 +19379,9 @@
   "summaryEn": "The Redmi 15C under another badge, with 33 W charging and a dedicated card slot.",
   "unsure": [
    "popularity"
+  ],
+  "aliases": [
+   "POCO POCO C85"
   ]
  },
  {
@@ -28773,49 +28786,23 @@
   ]
  },
  {
-  "id": "poco-x8-pro-max-5g",
-  "category": "phone",
-  "brand": "POCO",
-  "name": "X8 Pro Max 5G",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 209000,
-  "priceAmdMax": 209000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 209000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "POCO X8 Pro Max 5G.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "poco-x8-pro-5g",
   "category": "phone",
-  "brand": "POCO",
-  "name": "X8 Pro 5G",
-  "aliases": [],
+  "brand": "Xiaomi",
+  "name": "POCO X8 Pro 5G",
+  "aliases": [
+   "POCO X8 Pro 5G"
+  ],
   "tier": "mid",
-  "priceAmd": 169000,
-  "priceAmdMax": 169000,
+  "priceAmd": 209900,
+  "priceAmdMax": 209900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 169000
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 209900
    }
   ],
   "display": {},
@@ -28829,49 +28816,23 @@
   ]
  },
  {
-  "id": "poco-m8-5g",
-  "category": "phone",
-  "brand": "POCO",
-  "name": "M8 5G",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 109000,
-  "priceAmdMax": 109000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 109000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "POCO M8 5G.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "poco-c81-pro",
   "category": "phone",
-  "brand": "POCO",
-  "name": "C81 Pro",
-  "aliases": [],
+  "brand": "Xiaomi",
+  "name": "POCO C81 Pro",
+  "aliases": [
+   "POCO C81 Pro"
+  ],
   "tier": "budget",
-  "priceAmd": 53000,
-  "priceAmdMax": 53000,
+  "priceAmd": 80900,
+  "priceAmdMax": 80900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 53000
+    "ram": 4,
+    "storage": 256,
+    "priceAmd": 80900
    }
   ],
   "display": {},
@@ -29274,37 +29235,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple iPad Air 13 M3.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "poco-m7",
-  "category": "phone",
-  "brand": "POCO",
-  "name": "M7",
-  "aliases": [
-   "Սմարթֆոն POCO M7 /128GB EU (25062PC34G) Կապույտ",
-   "Սմարթֆոն POCO M7 /128GB RU (25062PC34G) Արծաթագույն"
-  ],
-  "tier": "budget",
-  "priceAmd": 64900,
-  "priceAmdMax": 64900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 64900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "POCO M7.",
   "unsure": [
    "popularity",
    "display",
@@ -33874,18 +33804,26 @@
    "Սմարթֆոն XIAOMI POCO M7 /128GB RU (25062PC34G) Սև",
    "Սմարթֆոն XIAOMI POCO M7 /256GB Արծաթագույն",
    "Սմարթֆոն Xiaomi POCO M7 EU /256GB (25062PC34G) կապույտ",
-   "Xiaomi POCO M7 /256GB Silver"
+   "Xiaomi POCO M7 /256GB Silver",
+   "Սմարթֆոն POCO M7 /128GB EU (25062PC34G) Կապույտ",
+   "Սմարթֆոն POCO M7 /128GB RU (25062PC34G) Արծաթագույն",
+   "POCO M7"
   ],
   "tier": "budget",
-  "priceAmd": 64900,
-  "priceAmdMax": 72900,
+  "priceAmd": 71900,
+  "priceAmdMax": 80900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": 8,
-    "priceAmd": 72900
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 71900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 80900
    }
   ],
   "display": {},
@@ -33896,7 +33834,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "samsung-a366",
@@ -33964,18 +33903,19 @@
   "brand": "Xiaomi",
   "name": "POCO X8 Pro Max",
   "aliases": [
-   "Սմարթֆոն Xiaomi POCO X8 Pro Max /512GB RU (2602BPC18G) Սև"
+   "Սմարթֆոն Xiaomi POCO X8 Pro Max /512GB RU (2602BPC18G) Սև",
+   "POCO X8 Pro Max 5G"
   ],
   "tier": "mid",
-  "priceAmd": 242900,
-  "priceAmdMax": 242900,
+  "priceAmd": 269900,
+  "priceAmdMax": 269900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": 12,
-    "priceAmd": 242900
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 269900
    }
   ],
   "display": {},
@@ -33986,7 +33926,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "xiaomi-17t",
@@ -34004,9 +33945,14 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": 12,
+    "ram": 12,
+    "storage": 256,
     "priceAmd": 243900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 266900
    }
   ],
   "display": {},
@@ -34022,10 +33968,11 @@
  {
   "id": "poco-f7-pro",
   "category": "phone",
-  "brand": "POCO",
-  "name": "F7 Pro",
+  "brand": "Xiaomi",
+  "name": "POCO F7 Pro",
   "aliases": [
-   "Սմարթֆոն POCO F7 Pro /512GB սև"
+   "Սմարթֆոն POCO F7 Pro /512GB սև",
+   "POCO F7 Pro"
   ],
   "tier": "mid",
   "priceAmd": 256900,
@@ -38007,18 +37954,19 @@
   "name": "POCO M8 5G",
   "aliases": [
    "Xiaomi POCO M8 5G /256GB Black",
-   "Xiaomi POCO M8 5G /256GB Silver"
+   "Xiaomi POCO M8 5G /256GB Silver",
+   "POCO M8 5G"
   ],
   "tier": "mid",
-  "priceAmd": 111900,
-  "priceAmdMax": 111900,
+  "priceAmd": 123900,
+  "priceAmdMax": 123900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": 8,
-    "priceAmd": 111900
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 123900
    }
   ],
   "display": {},
@@ -38029,7 +37977,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "xiaomi-redmi-note-17-4g",
@@ -45807,34 +45756,6 @@
   ]
  },
  {
-  "id": "xiaomi-poco-x7-pro",
-  "category": "phone",
-  "brand": "Xiaomi",
-  "name": "Poco X7 Pro",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 154900,
-  "priceAmdMax": 154900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 154900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Poco X7 Pro.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "honor-magic-8-pro",
   "category": "phone",
   "brand": "Honor",
@@ -50618,6 +50539,138 @@
   "display": {},
   "battery": {},
   "summaryEn": "Xiaomi Redmi Note 17 Pro 5G.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "xiaomi-poco-m8-pro-5g",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "POCO M8 Pro 5G",
+  "aliases": [
+   "XIAOMI POCO M8 Pro 5G 12/512GB Black",
+   "XIAOMI M8 Pro 5G 8/256GB Black",
+   "Xiaomi M8 Pro 5G"
+  ],
+  "tier": "mid",
+  "priceAmd": 166900,
+  "priceAmdMax": 196900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 166900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 196900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Xiaomi M8 Pro 5G.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a08",
+  "category": "phone",
+  "brand": "Samsung",
+  "name": "Galaxy A08",
+  "aliases": [
+   "SAMSUNG A08 (A085) 6/128GB Dark Blue",
+   "SAMSUNG A08 (A085) 4/128GB Silver",
+   "SAMSUNG A08 (A085) 4/128GB Dark Blue",
+   "Samsung A08"
+  ],
+  "tier": "budget",
+  "priceAmd": 84900,
+  "priceAmdMax": 97900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 84900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung A08.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-a7-pro",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "Redmi A7 Pro",
+  "aliases": [
+   "XIAOMI Redmi A7 Pro 4/128GB Mist Blue",
+   "XIAOMI Redmi A7 Pro 4/128GB Black"
+  ],
+  "tier": "budget",
+  "priceAmd": 63900,
+  "priceAmdMax": 63900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 63900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Xiaomi Redmi A7 Pro.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-a07s",
+  "category": "phone",
+  "brand": "Samsung",
+  "name": "Galaxy A07s",
+  "aliases": [
+   "SAMSUNG A07s (A077) 4/64GB Black",
+   "Samsung A07s"
+  ],
+  "tier": "budget",
+  "priceAmd": 59900,
+  "priceAmdMax": 59900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 59900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung A07s.",
   "unsure": [
    "popularity",
    "display",
