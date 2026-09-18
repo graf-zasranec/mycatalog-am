@@ -4823,56 +4823,6 @@
   ]
  },
  {
-  "id": "apple-mac-mini-m4-pro",
-  "category": "desktop",
-  "brand": "Apple",
-  "name": "Mac mini M4 Pro",
-  "aliases": [
-   "Mac mini Apple M4 Pro",
-   "Mac mini M4 Pro 12C CPU 16C GPU"
-  ],
-  "tier": "flagship",
-  "released": "2024-11",
-  "priceAmd": 813900,
-  "priceAmdMax": 813900,
-  "popularity": 61,
-  "accent": "#D9DADE",
-  "display": {},
-  "chipset": {
-   "name": "Apple M4 Pro",
-   "cpu": "12- or 14-core"
-  },
-  "graphics": {
-   "name": "Apple M4 Pro 16- or 20-core GPU",
-   "cores": 16,
-   "type": "integrated"
-  },
-  "variants": [
-   {
-    "ram": 24,
-    "storage": 512,
-    "priceAmd": 813900
-   }
-  ],
-  "body": {
-   "materials": "Aluminium unibody",
-   "dimensions": "127 x 127 x 50 mm",
-   "weight": 730
-  },
-  "battery": {},
-  "connectivity": {
-   "wifi": "Wi-Fi 6E",
-   "bluetooth": "5.3",
-   "ports": "3x Thunderbolt 5 rear, 2x USB-C front, HDMI, 10 Gigabit Ethernet option"
-  },
-  "cardSlot": false,
-  "os": "macOS 26",
-  "colors": [
-   "Silver"
-  ],
-  "summaryEn": "The same small box with the M4 Pro and Thunderbolt 5 — the cheapest way into serious Apple silicon."
- },
- {
   "id": "google-pixel-11-pro-xl",
   "category": "phone",
   "brand": "Google",
@@ -7916,91 +7866,6 @@
   ]
  },
  {
-  "id": "oneplus-13",
-  "brand": "OnePlus",
-  "name": "OnePlus 13",
-  "tier": "flagship",
-  "released": "2025-01",
-  "priceAmd": 381000,
-  "priceAmdMax": 423000,
-  "popularity": 42,
-  "display": {
-   "size": 6.82,
-   "type": "LTPO AMOLED",
-   "resolution": "1440x3168",
-   "refresh": 120,
-   "ppi": 510,
-   "brightness": 4500,
-   "protection": "Ceramic Guard"
-  },
-  "chipset": {
-   "name": "Qualcomm Snapdragon 8 Elite",
-   "process": "3 nm",
-   "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Phoenix M)",
-   "gpu": "Adreno 830",
-   "antutu": 2950000
-  },
-  "variants": [
-   {
-    "ram": 12,
-    "storage": 256,
-    "priceAmd": 381000
-   },
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 423000
-   }
-  ],
-  "camera": {
-   "modules": 3,
-   "main": "50 MP f/1.6 wide, Sony LYT-808, OIS",
-   "ultrawide": "50 MP f/2.0, 120-degree",
-   "telephoto": "50 MP f/2.6 3x periscope, OIS",
-   "front": "32 MP f/2.4",
-   "video": "8K at 30 fps, 4K at 60 fps, Dolby Vision"
-  },
-  "battery": {
-   "capacity": 6000,
-   "wired": 100,
-   "wireless": 50
-  },
-  "body": {
-   "height": 162.9,
-   "width": 76.5,
-   "thickness": 8.5,
-   "weight": 213,
-   "ip": "IP68/IP69",
-   "materials": "Aluminium frame, Ceramic Guard front, glass or vegan leather back"
-  },
-  "connectivity": {
-   "network": "5G",
-   "wifi": "Wi-Fi 7",
-   "bluetooth": "5.4",
-   "nfc": true,
-   "sim": "Dual nano-SIM; no eSIM in most markets"
-  },
-  "cardSlot": false,
-  "os": "Android 15, OxygenOS 15",
-  "updates": "4 years of OS upgrades and 6 years of security updates",
-  "colors": [
-   "Black Eclipse",
-   "Arctic Dawn",
-   "Midnight Ocean"
-  ],
-  "accent": "#1e3f6b",
-  "summaryEn": "A Snapdragon 8 Elite flagship with a 6000 mAh battery, 100W charging and three 50 MP cameras.",
-  "unsure": [
-   "chipset.antutu",
-   "connectivity.sim",
-   "priceAmd",
-   "priceAmdMax",
-   "variants[].priceAmd",
-   "popularity"
-  ],
-  "category": "phone"
- },
- {
   "id": "sonos-era-300",
   "category": "speaker",
   "brand": "Sonos",
@@ -9044,39 +8909,6 @@
     "ram": null,
     "storage": null,
     "priceAmd": 89000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
-  "id": "benq-gw2780",
-  "category": "monitor",
-  "brand": "BenQ",
-  "name": "GW2780",
-  "tier": "mid",
-  "priceAmd": 109000,
-  "priceAmdMax": 109000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 27,
-   "type": "IPS",
-   "resolution": "1920 x 1080",
-   "refresh": 60,
-   "brightness": 250
-  },
-  "connectivity": {
-   "ports": "HDMI, Display port"
-  },
-  "summaryEn": "A 27-inch IPS monitor at 60 Hz.",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 109000
    }
   ],
   "battery": {},
@@ -11667,48 +11499,6 @@
   ]
  },
  {
-  "id": "hp-omnibook-flip-5-14-fp0057nr",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "OmniBook Flip 5 14-FP0057NR",
-  "tier": "mid",
-  "priceAmd": 319000,
-  "priceAmdMax": 319000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 14,
-   "type": "IPS",
-   "resolution": "1920x1200",
-   "refresh": 60,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core 5-120U"
-  },
-  "graphics": {
-   "name": "Intel UHD Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1620
-  },
-  "os": "DOS",
-  "released": "2025",
-  "summaryEn": "A 14-inch laptop with Intel Core 5-120U.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 319000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
   "id": "lenovo-ideapad-3-15itl6",
   "category": "laptop",
   "brand": "Lenovo",
@@ -12674,47 +12464,6 @@
     "ram": 8,
     "storage": 512,
     "priceAmd": 379000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
-  "id": "acer-nitro-anv16-71-58u4",
-  "category": "laptop",
-  "brand": "Acer",
-  "name": "Nitro ANV16-71-58U4",
-  "tier": "mid",
-  "priceAmd": 389000,
-  "priceAmdMax": 389000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 16,
-   "type": "IPS",
-   "resolution": "1920x1200",
-   "refresh": 144,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i5-14450HX"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 4050 6GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2500
-  },
-  "released": "2024",
-  "summaryEn": "A 16-inch laptop with Intel Core i5-14450HX and Nvidia Geforce RTX 4050 6GB.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 512,
-    "priceAmd": 389000
    }
   ],
   "battery": {},
@@ -18999,74 +18748,6 @@
   ]
  },
  {
-  "id": "honor-x7c",
-  "category": "phone",
-  "brand": "Honor",
-  "name": "X7c",
-  "tier": "budget",
-  "released": "2024-11",
-  "priceAmd": 104900,
-  "priceAmdMax": 114900,
-  "popularity": 38,
-  "accent": "#3A4A5C",
-  "display": {
-   "size": 6.77,
-   "type": "TFT LCD",
-   "resolution": "720x1610",
-   "refresh": 120
-  },
-  "chipset": {
-   "name": "Qualcomm Snapdragon 685",
-   "process": "6 nm",
-   "gpu": "Adreno 610"
-  },
-  "camera": {
-   "modules": 2,
-   "main": "108 MP, f/1.75",
-   "front": "8 MP, f/2.0",
-   "video": "1080p@30fps"
-  },
-  "battery": {
-   "capacity": 6000,
-   "wired": 35,
-   "wireless": 0
-  },
-  "body": {
-   "weight": 199,
-   "materials": "Plastic frame and back",
-   "ip": "IP64"
-  },
-  "connectivity": {
-   "network": "4G",
-   "bluetooth": "5.1",
-   "nfc": false,
-   "sim": "Dual nano-SIM"
-  },
-  "os": "Android 14, MagicOS 8",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 128,
-    "priceAmd": 104900
-   },
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 114900
-   }
-  ],
-  "colors": [
-   "Moonlight White",
-   "Forest Green",
-   "Midnight Black"
-  ],
-  "summaryEn": "Six thousand milliamp-hours and a drop-resistant body, for very little.",
-  "unsure": [
-   "popularity",
-   "colors"
-  ]
- },
- {
   "id": "asus-rog-ally-7",
   "category": "console",
   "brand": "Asus",
@@ -20095,59 +19776,6 @@
  },
  {
   "category": "laptop",
-  "os": "macOS",
-  "id": "apple-macbook-pro-16-m3-pro",
-  "brand": "Apple",
-  "name": "MacBook Pro 16 M3 Pro",
-  "tier": "premium",
-  "released": "2023-10",
-  "priceAmd": 1199900,
-  "priceAmdMax": 1199900,
-  "popularity": 52,
-  "accent": "#22242A",
-  "display": {
-   "size": 16.2,
-   "type": "Liquid Retina XDR",
-   "refresh": 120,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Apple M3 Pro"
-  },
-  "graphics": {
-   "name": "Apple 18-core GPU",
-   "type": "integrated"
-  },
-  "battery": {
-   "capacity": 100
-  },
-  "connectivity": {
-   "wifi": "Wi-Fi 6E"
-  },
-  "variants": [
-   {
-    "ram": 18,
-    "storage": 512,
-    "priceAmd": 1199900
-   }
-  ],
-  "colors": [
-   "Space Black",
-   "Silver"
-  ],
-  "summaryEn": "The last 16-inch Pro before the M4, still on the same 120 Hz XDR panel.",
-  "unsure": [
-   "popularity",
-   "graphics.name"
-  ],
-  "aliases": [
-   "Apple MacBook Pro 16 M3 Pro",
-   "MacBook Pro 16 M3 Pro",
-   "MacBook Pro 16\" M3 Pro"
-  ]
- },
- {
-  "category": "laptop",
   "os": "Windows 11",
   "id": "microsoft-surface-laptop-7-13",
   "brand": "Microsoft",
@@ -20686,51 +20314,6 @@
    "Yandex Smart Lamp",
    "Yandex Smart lamp 00017 E14",
    "Smart Lamp E14"
-  ]
- },
- {
-  "id": "garmin-fenix-8",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Fenix 8",
-  "tier": "premium",
-  "released": "2024-08",
-  "priceAmd": 389000,
-  "priceAmdMax": 389000,
-  "popularity": 42,
-  "accent": "#1B2A38",
-  "display": {
-   "size": 1.4,
-   "type": "AMOLED",
-   "resolution": "454x454",
-   "touch": true
-  },
-  "chipset": {},
-  "battery": {
-   "capacity": 0
-  },
-  "variantUnit": "mm",
-  "connectivity": {
-   "bluetooth": "5.0",
-   "wifi": "Wi-Fi 5",
-   "nfc": true
-  },
-  "os": "Garmin OS",
-  "variants": [
-   {
-    "storage": 47,
-    "priceAmd": 389000
-   }
-  ],
-  "colors": [
-   "Black",
-   "Slate Gray"
-  ],
-  "summaryEn": "Multi-week battery, maps on the wrist, and a torch built into the bezel.",
-  "unsure": [
-   "popularity",
-   "battery",
-   "display.size"
   ]
  },
  {
@@ -21773,41 +21356,6 @@
   },
   "os": "Sonos app",
   "summaryEn": "Sonos's first headphones: ANC, spatial audio and a swap that throws your soundbar into them."
- },
- {
-  "id": "bowers-wilkins-px8",
-  "category": "headphones",
-  "brand": "Bowers & Wilkins",
-  "name": "PX8",
-  "aliases": [
-   "Bowers & Wilkins PX8",
-   "B&W PX8",
-   "BW PX8"
-  ],
-  "tier": "flagship",
-  "released": "2022-10",
-  "priceAmd": 219900,
-  "priceAmdMax": 219900,
-  "popularity": 66,
-  "accent": "#2A1E1A",
-  "variants": [
-   {
-    "priceAmd": 219900
-   }
-  ],
-  "audio": {
-   "anc": true
-  },
-  "battery": {
-   "life": "30 hours"
-  },
-  "connectivity": {
-   "bluetooth": "5.2"
-  },
-  "body": {
-   "weight": 320
-  },
-  "summaryEn": "Carbon-cone drivers in cast aluminium and leather — the expensive end of ANC."
  },
  {
   "id": "marshall-major-iv",

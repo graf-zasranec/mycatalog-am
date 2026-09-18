@@ -62,6 +62,16 @@ for (const p of phones)
       process.exit(1);
     }
 
+// No price, no entry. A comparison with nothing to compare is an empty page wearing a product's
+// name. Warned rather than refused, because a shop that was down on crawl day also leaves a
+// product with no offers, and that is a bad day rather than a product gone: node tools/prune.mjs
+// decides, after a clean crawl.
+{
+  const dead = phones.filter(p => !((PRICES.offers || {})[p.id] || []).length);
+  if (dead.length) console.warn(`  ! ${dead.length} product(s) nothing sells - node tools/prune.mjs: ` +
+    dead.slice(0, 6).map(p => p.id).join(', ') + (dead.length > 6 ? ', ...' : ''));
+}
+
 // A price series for a product that left the catalogue is dead weight nothing can render.
 for (const k of Object.keys(HISTORY.points || {}))
   if (!phones.some(p => p.id === k)) { console.warn('  ! history for a product not in the catalogue:', k); delete HISTORY.points[k]; }
