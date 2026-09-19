@@ -9080,12 +9080,23 @@
     "ram": 4,
     "storage": 256,
     "priceAmd": 129000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 149000
    }
   ],
   "battery": {},
   "unsure": [
    "popularity"
-  ]
+  ],
+  "aliases": [
+   "Dell Wyse 54708GB256GB",
+   "Dell Wyse 5470(8GB/256GB)",
+   "Wyse 5470(8GB/256GB)"
+  ],
+  "colors": []
  },
  {
   "id": "lenovo-ideapad-1-14igl7",
@@ -9257,51 +9268,6 @@
   ]
  },
  {
-  "id": "dell-wyse-5470-8gb-256gb",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "Wyse 5470(8GB/256GB)",
-  "tier": "budget",
-  "priceAmd": 149000,
-  "priceAmdMax": 149000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 14,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel N4100"
-  },
-  "graphics": {
-   "name": "Intel UHD Graphics 600",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1790
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 14-inch laptop with Intel N4100.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 149000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell Wyse 54708GB256GB"
-  ]
- },
- {
   "id": "asus-vivobook-e510ka-br859ws",
   "category": "laptop",
   "brand": "ASUS",
@@ -9420,51 +9386,6 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "lenovo-ideapad-slim-3-15ian8-128gb",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "IdeaPad Slim 3 15IAN8(128GB)",
-  "tier": "budget",
-  "priceAmd": 179000,
-  "priceAmdMax": 179000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "TN",
-   "resolution": "1920x1080",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i3-N305"
-  },
-  "graphics": {
-   "name": "Intel UHD Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1550
-  },
-  "os": "Windows 11",
-  "released": "2023",
-  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 128,
-    "priceAmd": 179000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo IdeaPad Slim 3 15IAN8128GB"
   ]
  },
  {
@@ -9632,51 +9553,6 @@
   ]
  },
  {
-  "id": "lenovo-ideapad-slim-3-15ian8-256gb",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "IdeaPad Slim 3 15IAN8(256GB)",
-  "tier": "budget",
-  "priceAmd": 199000,
-  "priceAmdMax": 199000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i3-N305"
-  },
-  "graphics": {
-   "name": "Intel UHD Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1550
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 15-inch laptop with Intel Core i3-N305.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 199000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo IdeaPad Slim 3 15IAN8256GB"
-  ]
- },
- {
   "id": "hp-15-fd0133wm",
   "category": "laptop",
   "brand": "HP",
@@ -9792,12 +9668,23 @@
     "ram": 4,
     "storage": 256,
     "priceAmd": 209000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 229000
    }
   ],
   "battery": {},
   "unsure": [
    "popularity"
-  ]
+  ],
+  "aliases": [
+   "HP 15-FD0531NIA512GB",
+   "HP 15-FD0531NIA(512GB)",
+   "15-FD0531NIA(512GB)"
+  ],
+  "colors": []
  },
  {
   "id": "lenovo-v15-g4-iru",
@@ -9927,7 +9814,7 @@
   "id": "lenovo-ideapad-slim-3-15iru8-256gb",
   "category": "laptop",
   "brand": "Lenovo",
-  "name": "IdeaPad Slim 3 15IRU8(256GB)",
+  "name": "IdeaPad Slim 3 15IRU8",
   "tier": "budget",
   "priceAmd": 219000,
   "priceAmdMax": 219000,
@@ -9965,7 +9852,9 @@
    "popularity"
   ],
   "aliases": [
-   "Lenovo IdeaPad Slim 3 15IRU8256GB"
+   "Lenovo IdeaPad Slim 3 15IRU8256GB",
+   "IdeaPad Slim 3 15IRU8(256GB)",
+   "Lenovo IdeaPad Slim 3 15IRU8(256GB)"
   ]
  },
  {
@@ -10214,50 +10103,6 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "hp-15-fd0531nia-512gb",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "15-FD0531NIA(512GB)",
-  "tier": "budget",
-  "priceAmd": 229000,
-  "priceAmdMax": 229000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 60
-  },
-  "chipset": {
-   "name": "Intel Core i3-1315U"
-  },
-  "graphics": {
-   "name": "Intel UHD Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1590
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 15-inch laptop with Intel Core i3-1315U.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 512,
-    "priceAmd": 229000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "HP 15-FD0531NIA512GB"
   ]
  },
  {
@@ -10901,51 +10746,6 @@
   ]
  },
  {
-  "id": "lenovo-ideapad-1-15iru7-16gb",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "IdeaPad 1 15IRU7(16GB)",
-  "tier": "mid",
-  "priceAmd": 279000,
-  "priceAmdMax": 279000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i5-1335U"
-  },
-  "graphics": {
-   "name": "Intel Iris Xe Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1620
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 15-inch laptop with Intel Core i5-1335U.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 256,
-    "priceAmd": 279000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo IdeaPad 1 15IRU716GB"
-  ]
- },
- {
   "id": "hp-omnibook-3-16-by0205dx",
   "category": "laptop",
   "brand": "HP",
@@ -11158,7 +10958,7 @@
   "id": "dell-15-dc15250-i5-16gb",
   "category": "laptop",
   "brand": "Dell",
-  "name": "15-DC15250(I5)(16GB)",
+  "name": "15-DC15250(I5)",
   "tier": "mid",
   "priceAmd": 299000,
   "priceAmdMax": 299000,
@@ -11195,7 +10995,9 @@
    "popularity"
   ],
   "aliases": [
-   "Dell 15-DC15250I516GB"
+   "Dell 15-DC15250I516GB",
+   "15-DC15250(I5)(16GB)",
+   "Dell 15-DC15250(I5)(16GB)"
   ]
  },
  {
@@ -12342,7 +12144,7 @@
   "id": "dell-15-dc15250-i7-512gb",
   "category": "laptop",
   "brand": "Dell",
-  "name": "15-DC15250(I7)(512GB)",
+  "name": "15-DC15250(I7)",
   "tier": "mid",
   "priceAmd": 389000,
   "priceAmdMax": 389000,
@@ -12380,7 +12182,9 @@
    "popularity"
   ],
   "aliases": [
-   "Dell 15-DC15250I7512GB"
+   "Dell 15-DC15250I7512GB",
+   "15-DC15250(I7)(512GB)",
+   "Dell 15-DC15250(I7)(512GB)"
   ]
  },
  {
@@ -14858,7 +14662,7 @@
   "id": "dell-xps-9350-16gb-ultra-7",
   "category": "laptop",
   "brand": "Dell",
-  "name": "XPS 9350(16GB/Ultra 7)",
+  "name": "XPS 9350",
   "tier": "upper-mid",
   "priceAmd": 559000,
   "priceAmdMax": 559000,
@@ -14889,6 +14693,11 @@
     "ram": 16,
     "storage": 512,
     "priceAmd": 559000
+   },
+   {
+    "ram": 32,
+    "storage": 1024,
+    "priceAmd": 999000
    }
   ],
   "battery": {},
@@ -14896,8 +14705,14 @@
    "popularity"
   ],
   "aliases": [
-   "Dell XPS 935016GBUltra 7"
-  ]
+   "Dell XPS 935016GBUltra 7",
+   "Dell XPS 935032GBUltra 7",
+   "Dell XPS 9350(32GB/Ultra 7)",
+   "XPS 9350(32GB/Ultra 7)",
+   "XPS 9350(16GB/Ultra 7)",
+   "Dell XPS 9350(16GB/Ultra 7)"
+  ],
+  "colors": []
  },
  {
   "id": "dell-alienware-da15260",
@@ -14939,50 +14754,6 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "dell-xps-9345-x-elite-16gb-512gb",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "XPS 9345(X Elite)(16GB/512GB)",
-  "tier": "upper-mid",
-  "priceAmd": 589000,
-  "priceAmdMax": 589000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 13,
-   "type": "OLED",
-   "resolution": "2880x1800",
-   "refresh": 120,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Snapdragon X Elite"
-  },
-  "graphics": {
-   "name": "Qualcomm Adreno",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1170
-  },
-  "released": "2025",
-  "summaryEn": "A 13-inch laptop with Snapdragon X Elite.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 589000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell XPS 9345X Elite16GB512GB"
   ]
  },
  {
@@ -16494,12 +16265,23 @@
     "ram": 32,
     "storage": 512,
     "priceAmd": 769000
+   },
+   {
+    "ram": 32,
+    "storage": 1024,
+    "priceAmd": 799000
    }
   ],
   "battery": {},
   "unsure": [
    "popularity"
-  ]
+  ],
+  "aliases": [
+   "HP EliteBook Ultra G1Q1TB SSD",
+   "HP EliteBook Ultra G1Q(1TB SSD)",
+   "EliteBook Ultra G1Q(1TB SSD)"
+  ],
+  "colors": []
  },
  {
   "id": "dell-alienware-16x-aurora-ac16251-rtx-5060",
@@ -16716,51 +16498,6 @@
   ],
   "aliases": [
    "Lenovo Legion 5 15IRX10I9RTX 5070"
-  ]
- },
- {
-  "id": "hp-elitebook-ultra-g1q-1tb-ssd",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "EliteBook Ultra G1Q(1TB SSD)",
-  "tier": "upper-mid",
-  "priceAmd": 799000,
-  "priceAmdMax": 799000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 14,
-   "type": "IPS",
-   "resolution": "2240x1400",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Snapdragon X Elite"
-  },
-  "graphics": {
-   "name": "Qualcomm Adreno",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1340
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 14-inch laptop with Snapdragon X Elite.",
-  "variants": [
-   {
-    "ram": 32,
-    "storage": 1024,
-    "priceAmd": 799000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "HP EliteBook Ultra G1Q1TB SSD"
   ]
  },
  {
@@ -17269,7 +17006,7 @@
   "id": "dell-xps-9345-x-elite-32gb-1tb",
   "category": "laptop",
   "brand": "Dell",
-  "name": "XPS 9345(X Elite)(32GB/1TB)",
+  "name": "XPS 9345(X Elite)",
   "tier": "upper-mid",
   "priceAmd": 899000,
   "priceAmdMax": 899000,
@@ -17297,6 +17034,11 @@
   "summaryEn": "A 13-inch laptop with Snapdragon X Elite.",
   "variants": [
    {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 589000
+   },
+   {
     "ram": 32,
     "storage": 1024,
     "priceAmd": 899000
@@ -17307,8 +17049,14 @@
    "popularity"
   ],
   "aliases": [
-   "Dell XPS 9345X Elite32GB1TB"
-  ]
+   "Dell XPS 9345X Elite32GB1TB",
+   "Dell XPS 9345X Elite16GB512GB",
+   "Dell XPS 9345(X Elite)(16GB/512GB)",
+   "XPS 9345(X Elite)(16GB/512GB)",
+   "XPS 9345(X Elite)(32GB/1TB)",
+   "Dell XPS 9345(X Elite)(32GB/1TB)"
+  ],
+  "colors": []
  },
  {
   "id": "asus-rog-strix-g16-g615lm-ds96",
@@ -17478,93 +17226,6 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "dell-xps-9350-32gb-ultra-7",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "XPS 9350(32GB/Ultra 7)",
-  "tier": "flagship",
-  "priceAmd": 999000,
-  "priceAmdMax": 999000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 13,
-   "type": "OLED",
-   "resolution": "2880x1800",
-   "refresh": 60,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 7-258V"
-  },
-  "graphics": {
-   "name": "Intel Arc Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1220
-  },
-  "os": "Windows 11",
-  "summaryEn": "A 13-inch laptop with Intel Core Ultra 7-258V.",
-  "variants": [
-   {
-    "ram": 32,
-    "storage": 1024,
-    "priceAmd": 999000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell XPS 935032GBUltra 7"
-  ]
- },
- {
-  "id": "dell-xps-9640-512gb",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "XPS 9640(512GB)",
-  "tier": "flagship",
-  "priceAmd": 1099000,
-  "priceAmdMax": 1099000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 16.3,
-   "resolution": "1920x1200",
-   "refresh": 120,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 7-155H"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 4060 8GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2130
-  },
-  "released": "2024",
-  "summaryEn": "A 16.3-inch laptop with Intel Core Ultra 7-155H and Nvidia Geforce RTX 4060 8GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 1099000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell XPS 9640512GB"
   ]
  },
  {
@@ -17744,7 +17405,7 @@
   "id": "dell-xps-9640-1tb",
   "category": "laptop",
   "brand": "Dell",
-  "name": "XPS 9640(1TB)",
+  "name": "XPS 9640",
   "tier": "flagship",
   "priceAmd": 1299000,
   "priceAmdMax": 1299000,
@@ -17773,6 +17434,11 @@
   "variants": [
    {
     "ram": 16,
+    "storage": 512,
+    "priceAmd": 1099000
+   },
+   {
+    "ram": 16,
     "storage": 1024,
     "priceAmd": 1299000
    }
@@ -17782,8 +17448,14 @@
    "popularity"
   ],
   "aliases": [
-   "Dell XPS 96401TB"
-  ]
+   "Dell XPS 96401TB",
+   "Dell XPS 9640512GB",
+   "Dell XPS 9640(512GB)",
+   "XPS 9640(512GB)",
+   "XPS 9640(1TB)",
+   "Dell XPS 9640(1TB)"
+  ],
+  "colors": []
  },
  {
   "id": "msi-raider-16-max-hx-b2wh-rtx-5070ti",
@@ -17921,7 +17593,7 @@
   "id": "dell-alienware-18-area-51-32gb-rtx-5080",
   "category": "laptop",
   "brand": "Dell",
-  "name": "Alienware 18\" Area-51(32GB/RTX 5080)",
+  "name": "Alienware 18\" Area-51",
   "tier": "flagship",
   "priceAmd": 1799000,
   "priceAmdMax": 1799000,
@@ -17952,6 +17624,11 @@
     "ram": 32,
     "storage": 1024,
     "priceAmd": 1799000
+   },
+   {
+    "ram": 64,
+    "storage": 2048,
+    "priceAmd": 1999000
    }
   ],
   "battery": {},
@@ -17959,8 +17636,14 @@
    "popularity"
   ],
   "aliases": [
-   "Dell Alienware 18 Area-5132GBRTX 5080"
-  ]
+   "Dell Alienware 18 Area-5132GBRTX 5080",
+   "Dell Alienware 18 Area-5164GBRTX 5080",
+   "Dell Alienware 18\" Area-51(64GB/RTX 5080)",
+   "Alienware 18\" Area-51(64GB/RTX 5080)",
+   "Alienware 18\" Area-51(32GB/RTX 5080)",
+   "Dell Alienware 18\" Area-51(32GB/RTX 5080)"
+  ],
+  "colors": []
  },
  {
   "id": "msi-raider-18-hx-ai-a2xwig-rtx-5080",
@@ -18046,51 +17729,6 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "dell-alienware-18-area-51-64gb-rtx-5080",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "Alienware 18\" Area-51(64GB/RTX 5080)",
-  "tier": "flagship",
-  "priceAmd": 1999000,
-  "priceAmdMax": 1999000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 18,
-   "type": "IPS",
-   "resolution": "2560x1600",
-   "refresh": 300,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 9-275HX"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 5080 16GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 4340
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 18-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5080 16GB.",
-  "variants": [
-   {
-    "ram": 64,
-    "storage": 2048,
-    "priceAmd": 1999000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell Alienware 18 Area-5164GBRTX 5080"
   ]
  },
  {
@@ -21929,14 +21567,14 @@
   "os": "Dos",
   "variants": [
    {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 335000
-   },
-   {
     "ram": 8,
     "storage": 512,
     "priceAmd": 353000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 335000
    }
   ],
   "battery": {},
@@ -22147,11 +21785,6 @@
     "ram": 8,
     "storage": 256,
     "priceAmd": 204000
-   },
-   {
-    "ram": 8,
-    "storage": 256,
-    "priceAmd": 205000
    },
    {
     "ram": 12,
@@ -27234,7 +26867,13 @@
   "brand": "Lenovo",
   "name": "IdeaPad Slim 3 15IAN8",
   "aliases": [
-   "Նոթբուք Notebook Lenovo IdeaPad Slim 3 15IAN8"
+   "Նոթբուք Notebook Lenovo IdeaPad Slim 3 15IAN8",
+   "Lenovo IdeaPad Slim 3 15IAN8256GB",
+   "Lenovo IdeaPad Slim 3 15IAN8(256GB)",
+   "IdeaPad Slim 3 15IAN8(256GB)",
+   "Lenovo IdeaPad Slim 3 15IAN8128GB",
+   "Lenovo IdeaPad Slim 3 15IAN8(128GB)",
+   "IdeaPad Slim 3 15IAN8(128GB)"
   ],
   "tier": "mid",
   "priceAmd": 125900,
@@ -27243,9 +26882,14 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 125900
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 179000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 199000
    }
   ],
   "display": {},
@@ -27256,7 +26900,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "hp-15-fd0883nr",
@@ -27417,7 +27062,10 @@
   "aliases": [
    "Նոթբուք Lenovo IdeaPad 1 15IRU7",
    "IdeaPad 1 15IRU7(8GB)",
-   "Lenovo IdeaPad 1 15IRU78GB"
+   "Lenovo IdeaPad 1 15IRU78GB",
+   "Lenovo IdeaPad 1 15IRU716GB",
+   "Lenovo IdeaPad 1 15IRU7(16GB)",
+   "IdeaPad 1 15IRU7(16GB)"
   ],
   "tier": "mid",
   "priceAmd": 218900,
@@ -27426,14 +27074,14 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 218900
-   },
-   {
     "ram": 8,
     "storage": 256,
     "priceAmd": 249000
+   },
+   {
+    "ram": 16,
+    "storage": 256,
+    "priceAmd": 279000
    }
   ],
   "display": {},
@@ -27445,7 +27093,8 @@
    "chipset",
    "battery.capacity"
   ],
-  "released": "2025"
+  "released": "2025",
+  "colors": []
  },
  {
   "id": "lenovo-ideapad-slim-3-15iru10",
@@ -27523,11 +27172,6 @@
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 229900
-   },
    {
     "ram": 8,
     "storage": 512,
@@ -29766,96 +29410,6 @@
   ]
  },
  {
-  "id": "dyson-hs08-multi-and-dryer-straightpluswavy-strawberry-bronze-blush",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS08 (Strawberry Bronze)",
-  "aliases": [
-   "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Strawberry Bronze/Blush Pink"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 311000,
-  "priceAmdMax": 311000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 311000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS08 ™ Multi- and dryer Straight+Wavy Strawberry Bronze/Blush.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs08-multi-and-dryer-straightpluswavy-velvet-gold",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS08 (Red Velvet)",
-  "aliases": [
-   "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Red Velvet/Gold"
-  ],
-  "tier": "mid",
-  "priceAmd": 289000,
-  "priceAmdMax": 289000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 289000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS08 ™ Multi- and dryer Straight+Wavy Velvet/Gold.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs08-multi-and-dryer-curlypluscoily-vinca-blue-topaz",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS08 (Vinca Blue)",
-  "aliases": [
-   "Dyson HS08 Airwrap™ Multi-styler and dryer Curly+Coily Vinca Blue/Topaz"
-  ],
-  "tier": "mid",
-  "priceAmd": 294000,
-  "priceAmdMax": 294000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 294000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS08 ™ Multi- and dryer Curly+Coily Vinca Blue/Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-hd18-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
@@ -29886,102 +29440,23 @@
   ]
  },
  {
-  "id": "dyson-hs05-multi-short-and-coarse-blue-rich",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 (Prussian Blue)",
-  "aliases": [
-   "Dyson HS05 Airwrap™ multi-styler Short and Coarse Prussian Blue/Rich Copper"
-  ],
-  "tier": "mid",
-  "priceAmd": 209000,
-  "priceAmdMax": 209000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 209000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS05 ™ multi- Short and Coarse Blue/Rich.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs05-multi-complete-long-blue-topaz",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 Complete Long (Blue)",
-  "aliases": [
-   "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Topaz"
-  ],
-  "tier": "mid",
-  "priceAmd": 249000,
-  "priceAmdMax": 249000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 249000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS05 ™ Multi- Complete Long Blue/Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs05-multi-complete-long-fuchisa-nickel",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 Complete Long (Fuchsia)",
-  "aliases": [
-   "Dyson HS05 Airwrap™ multi-styler Complete Long Fuchisa/Nickel"
-  ],
-  "tier": "mid",
-  "priceAmd": 245000,
-  "priceAmdMax": 245000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 245000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS05 ™ multi- Complete Long Fuchisa/Nickel.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-hs08-id-multi-ceramic-patina-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap HS08 (Ceramic Patina)",
+  "name": "Airwrap HS08",
   "aliases": [
-   "Dyson HS08 Airwrap™ ID Multi-Styler Ceramic Patina/Topaz"
+   "Dyson HS08 Airwrap™ ID Multi-Styler Ceramic Patina/Topaz",
+   "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Red Velvet/Gold",
+   "Dyson Airwrap HS08 (Red Velvet)",
+   "Airwrap HS08 (Red Velvet)",
+   "Dyson HS08 Airwrap™ Multi-styler and dryer Curly+Coily Vinca Blue/Topaz",
+   "Dyson Airwrap HS08 (Vinca Blue)",
+   "Airwrap HS08 (Vinca Blue)",
+   "Dyson HS08 Airwrap™ Multi-styler and dryer Straight+Wavy Strawberry Bronze/Blush Pink",
+   "Dyson Airwrap HS08 (Strawberry Bronze)",
+   "Airwrap HS08 (Strawberry Bronze)",
+   "Airwrap HS08 (Ceramic Patina)",
+   "Dyson Airwrap HS08 (Ceramic Patina)"
   ],
   "tier": "mid",
   "priceAmd": 265000,
@@ -30003,36 +29478,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hd16-nural-strawberry-bronze-blush",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Supersonic Nural HD16 (Strawberry)",
-  "aliases": [
-   "Dyson HD16 Supersonic™ Nural Strawberry Bronze/Blush Pink"
   ],
-  "tier": "mid",
-  "priceAmd": 229000,
-  "priceAmdMax": 229000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 229000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD16 ™ Nural Strawberry Bronze/Blush.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+  "colors": [
+   "Red Velvet",
+   "Vinca Blue",
+   "Strawberry Bronze",
+   "Ceramic Patina"
   ]
  },
  {
@@ -30069,9 +29520,29 @@
   "id": "dyson-ht01-airstrait-straightener-plum",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airstrait HT01 (Jasper Plum)",
+  "name": "Airstrait HT01",
   "aliases": [
-   "Dyson HT01 Airstrait™ Straightener Jasper Plum"
+   "Dyson HT01 Airstrait™ Straightener Jasper Plum",
+   "Dyson Airstrait™ Straightener HT01 Nicel / Copper",
+   "Dyson Airstrait HT01",
+   "Airstrait HT01",
+   "Dyson HT01 Airstrait™ Straightener Ceramic Pink",
+   "Dyson Airstrait HT01 (Ceramic Pink)",
+   "Airstrait HT01 (Ceramic Pink)",
+   "Dyson Airstrait™ Straightener HT01 Ceramic Pink",
+   "Dyson Airstrait HT01 (Ceramic)",
+   "Airstrait HT01 (Ceramic)",
+   "Dyson HT01 Airstrait™ Straightener Prussian Blue/Rich Copper",
+   "Dyson Airstrait HT01 (Prussian Blue)",
+   "Airstrait HT01 (Prussian Blue)",
+   "Dyson HT01 Airstrait™ Straightener Red Velvet/Gold",
+   "Dyson Airstrait HT01 (Red Velvet)",
+   "Airstrait HT01 (Red Velvet)",
+   "Dyson HT01 Airstrait™ Straightener Strawberry Bronze/Blush Pink",
+   "Dyson Airstrait HT01 (Strawberry)",
+   "Airstrait HT01 (Strawberry)",
+   "Airstrait HT01 (Jasper Plum)",
+   "Dyson Airstrait HT01 (Jasper Plum)"
   ],
   "tier": "mid",
   "priceAmd": 189000,
@@ -30082,7 +29553,7 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 189000
+    "priceAmd": 168000
    }
   ],
   "display": {},
@@ -30093,6 +29564,14 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "colors": [
+   "Ceramic Pink",
+   "Ceramic",
+   "Prussian Blue",
+   "Red Velvet",
+   "Strawberry",
+   "Jasper Plum"
   ]
  },
  {
@@ -30216,36 +29695,6 @@
   ]
  },
  {
-  "id": "dyson-ht01-airstrait-straightener-ceramic",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait HT01 (Ceramic Pink)",
-  "aliases": [
-   "Dyson HT01 Airstrait™ Straightener Ceramic Pink"
-  ],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HT01 Airstrait™ Straightener Ceramic.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "marshall-willen-ii",
   "category": "speaker",
   "brand": "Marshall",
@@ -30309,156 +29758,6 @@
   ]
  },
  {
-  "id": "dyson-ht01-airstrait-straightener-velvet-gold",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait HT01 (Red Velvet)",
-  "aliases": [
-   "Dyson HT01 Airstrait™ Straightener Red Velvet/Gold"
-  ],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HT01 Airstrait™ Straightener Velvet/Gold.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-ht01-airstrait-straightener-strawberry-bronze-blush",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait HT01 (Strawberry)",
-  "aliases": [
-   "Dyson HT01 Airstrait™ Straightener Strawberry Bronze/Blush Pink"
-  ],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HT01 Airstrait™ Straightener Strawberry Bronze/Blush.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs05-multi-complete-long-blue-copper",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 Complete Long (Blue/Copper)",
-  "aliases": [
-   "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Copper"
-  ],
-  "tier": "mid",
-  "priceAmd": 259000,
-  "priceAmdMax": 259000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 259000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS05 ™ Multi- Complete Long Blue/Copper.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs05-multi-complete-long-strawberry-bronze-pink",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 Complete Long (Strawberry)",
-  "aliases": [
-   "Dyson HS05 Airwrap™ Multi-styler Complete Long Strawberry Bronze/Pink"
-  ],
-  "tier": "mid",
-  "priceAmd": 273000,
-  "priceAmdMax": 273000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 273000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS05 ™ Multi- Complete Long Strawberry Bronze/Pink.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs05-multi-complete-long-gold-onyx",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 Complete Long (Gold)",
-  "aliases": [
-   "Dyson HS05 Airwrap™ Multi-styler Complete Long Gold/Onyx Black"
-  ],
-  "tier": "mid",
-  "priceAmd": 248000,
-  "priceAmdMax": 248000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 248000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS05 ™ Multi- Complete Long Gold/Onyx.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-hs08-id-multi-velvet-gold",
   "category": "appliance",
   "brand": "Dyson",
@@ -30492,9 +29791,11 @@
   "id": "dyson-er-hd07",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Supersonic HD07 (Iron Fuchsia)",
+  "name": "Supersonic HD07",
   "aliases": [
-   "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)"
+   "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)",
+   "Supersonic HD07 (Iron Fuchsia)",
+   "Dyson Supersonic HD07 (Iron Fuchsia)"
   ],
   "tier": "mid",
   "priceAmd": 192000,
@@ -30516,6 +29817,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "colors": [
+   "Iron Fuchsia"
   ]
  },
  {
@@ -30642,66 +29946,6 @@
   ]
  },
  {
-  "id": "dyson-ht01-airstrait-straightener-blue-rich",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait HT01 (Prussian Blue)",
-  "aliases": [
-   "Dyson HT01 Airstrait™ Straightener Prussian Blue/Rich Copper"
-  ],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HT01 Airstrait™ Straightener Blue/Rich.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hd16-nural-ceramic-patina-topaz",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Supersonic Nural HD16 (Ceramic)",
-  "aliases": [
-   "Dyson HD16 Supersonic™ Nural Ceramic Patina/Topaz"
-  ],
-  "tier": "mid",
-  "priceAmd": 219000,
-  "priceAmdMax": 219000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 219000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD16 ™ Nural Ceramic Patina/Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-hd16-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
@@ -30724,66 +29968,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Dyson HD16 ™ Vinca Blue/Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hd15-er-black-onyx",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Supersonic HD15 (Black)",
-  "aliases": [
-   "Dyson HD15 Supersonic™ Hair Dryer Black/Onyx Gold"
-  ],
-  "tier": "mid",
-  "priceAmd": 185000,
-  "priceAmdMax": 185000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 185000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD15 ™ er Black/Onyx.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hd15-er-nickel-copper",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Supersonic HD15 (Nickel)",
-  "aliases": [
-   "Dyson HD15 Supersonic™ Hair Dryer Nickel/Copper"
-  ],
-  "tier": "mid",
-  "priceAmd": 205000,
-  "priceAmdMax": 205000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 205000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD15 ™ er Nickel/Copper.",
   "unsure": [
    "popularity",
    "display",
@@ -34585,9 +33769,11 @@
   "id": "microsoft-xbox",
   "category": "headphones",
   "brand": "Microsoft",
-  "name": "Xbox",
+  "name": "Xbox Headset",
   "aliases": [
-   "MICROSOFT Xbox Ականջակալ"
+   "MICROSOFT Xbox Ականջակալ",
+   "Xbox",
+   "Microsoft Xbox"
   ],
   "tier": "budget",
   "priceAmd": 65900,
@@ -36035,9 +35221,12 @@
   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
   "category": "laptop",
   "brand": "Honor",
-  "name": "MagicBook Pro 16 (24GB)",
+  "name": "MagicBook Pro 16",
   "aliases": [
-   "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 White W11H /5301AJJG"
+   "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 White W11H /5301AJJG",
+   "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 Purple W11H /5301AJJE",
+   "Honor MagicBook Pro 16 (24GB)",
+   "MagicBook Pro 16 (24GB)"
   ],
   "tier": "upper-mid",
   "priceAmd": 559900,
@@ -36059,37 +35248,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajje",
-  "category": "laptop",
-  "brand": "Honor",
-  "name": "MagicBook Pro 16 (24GB)",
-  "aliases": [
-   "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 Purple W11H /5301AJJE"
   ],
-  "tier": "upper-mid",
-  "priceAmd": 579900,
-  "priceAmdMax": 579900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 579900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 W11H /5301AJJE.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": []
  },
  {
   "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
@@ -36097,7 +35257,10 @@
   "brand": "ASUS",
   "name": "Vivobook S 15 (i9)",
   "aliases": [
-   "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO SILVER W11 /K5504VA-PB99-SL*"
+   "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO SILVER W11 /K5504VA-PB99-SL*",
+   "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO GREEN W11 /K5504VA-PB99-GR*",
+   "ASUS Vivobook S 15 (i9)",
+   "Vivobook S 15 (i9)"
   ],
   "tier": "upper-mid",
   "priceAmd": 643600,
@@ -36119,37 +35282,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-gr",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "Vivobook S 15 (i9)",
-  "aliases": [
-   "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO GREEN W11 /K5504VA-PB99-GR*"
   ],
-  "tier": "upper-mid",
-  "priceAmd": 643600,
-  "priceAmdMax": 643600,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 643600
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "ASUS Vivobook S 15.6\" i9-13900H 16/1 CAMO W11 /K5504VA-PB99-GR*.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": []
  },
  {
   "id": "sony-wf-c510-l",
@@ -36700,7 +35834,12 @@
   "category": "watch",
   "brand": "Garmin",
   "name": "CIRQA Smart Band",
-  "aliases": [],
+  "aliases": [
+   "Garmin CIRQA™ Smart Band, French Gray, S-M",
+   "Garmin CIRQA Smart Band",
+   "CIRQA Smart Band",
+   "Garmin CIRQA™ Smart Band, Captain Blue, S-M"
+  ],
   "tier": "budget",
   "priceAmd": 89000,
   "priceAmdMax": 89000,
@@ -36721,37 +35860,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-cirqa-smart-band-captain-s-m",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "CIRQA Smart Band",
-  "aliases": [
-   "Garmin CIRQA™ Smart Band, Captain Blue, S-M"
   ],
-  "tier": "budget",
-  "priceAmd": 89000,
-  "priceAmdMax": 89000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 89000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin CIRQA™ Smart Band, Captain S-M.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": []
  },
  {
   "id": "garmin-forerunner-170-music-whitestone",
@@ -37155,36 +36265,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Garmin Fenix 9, 51mm, Carbon DLC, Band.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-cirqa-smart-band-french-s-m",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "CIRQA Smart Band",
-  "aliases": [
-   "Garmin CIRQA™ Smart Band, French Gray, S-M"
-  ],
-  "tier": "budget",
-  "priceAmd": 89000,
-  "priceAmdMax": 89000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 89000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin CIRQA™ Smart Band, French S-M.",
   "unsure": [
    "popularity",
    "display",
@@ -43392,7 +42472,22 @@
   "name": "Airwrap HS05 Complete Long",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Onyx Gold",
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush"
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush",
+   "Dyson HS05 Airwrap™ Multi-styler Complete Long Gold/Onyx Black",
+   "Dyson Airwrap HS05 Complete Long (Gold)",
+   "Airwrap HS05 Complete Long (Gold)",
+   "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Topaz",
+   "Dyson Airwrap HS05 Complete Long (Blue)",
+   "Airwrap HS05 Complete Long (Blue)",
+   "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Copper",
+   "Dyson Airwrap HS05 Complete Long (Blue/Copper)",
+   "Airwrap HS05 Complete Long (Blue/Copper)",
+   "Dyson HS05 Airwrap™ multi-styler Complete Long Fuchisa/Nickel",
+   "Dyson Airwrap HS05 Complete Long (Fuchsia)",
+   "Airwrap HS05 Complete Long (Fuchsia)",
+   "Dyson HS05 Airwrap™ Multi-styler Complete Long Strawberry Bronze/Pink",
+   "Dyson Airwrap HS05 Complete Long (Strawberry)",
+   "Airwrap HS05 Complete Long (Strawberry)"
   ],
   "tier": "mid",
   "priceAmd": 256000,
@@ -43403,7 +42498,7 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 256000
+    "priceAmd": 245000
    }
   ],
   "display": {},
@@ -43414,75 +42509,36 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-multi-complete-long-hs05-strawberry",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 (Strawberry)",
-  "aliases": [
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Strawberry Bronze / Pink"
   ],
-  "tier": "mid",
-  "priceAmd": 272000,
-  "priceAmdMax": 272000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 272000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson ™ multi- Complete Long HS05 Strawberry.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-multi-complete-long-hs05-topaz",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 (Blue)",
-  "aliases": [
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Topaz"
-  ],
-  "tier": "mid",
-  "priceAmd": 269000,
-  "priceAmdMax": 269000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 269000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson ™ multi- Complete Long HS05 Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+  "colors": [
+   "Gold",
+   "Blue",
+   "Blue/Copper",
+   "Fuchsia",
+   "Strawberry"
   ]
  },
  {
   "id": "dyson-multi-complete-long-hs05-rich",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap HS05 (Blue/Copper)",
+  "name": "Airwrap HS05",
   "aliases": [
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Rich Copper"
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Rich Copper",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Topaz",
+   "Dyson Airwrap HS05 (Blue)",
+   "Airwrap HS05 (Blue)",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Fuchisa / Nickel",
+   "Dyson Airwrap HS05 (Fuchsia)",
+   "Airwrap HS05 (Fuchsia)",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Strawberry Bronze / Pink",
+   "Dyson Airwrap HS05 (Strawberry)",
+   "Airwrap HS05 (Strawberry)",
+   "Dyson HS05 Airwrap™ multi-styler Short and Coarse Prussian Blue/Rich Copper",
+   "Dyson Airwrap HS05 (Prussian Blue)",
+   "Airwrap HS05 (Prussian Blue)",
+   "Airwrap HS05 (Blue/Copper)",
+   "Dyson Airwrap HS05 (Blue/Copper)"
   ],
   "tier": "mid",
   "priceAmd": 258000,
@@ -43493,7 +42549,7 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 258000
+    "priceAmd": 209000
    }
   ],
   "display": {},
@@ -43504,36 +42560,13 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-multi-complete-long-hs05-fuchisa",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05 (Fuchsia)",
-  "aliases": [
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Fuchisa / Nickel"
   ],
-  "tier": "mid",
-  "priceAmd": 256000,
-  "priceAmdMax": 256000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 256000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson ™ multi- Complete Long HS05 Fuchisa.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+  "colors": [
+   "Blue",
+   "Fuchsia",
+   "Strawberry",
+   "Prussian Blue",
+   "Blue/Copper"
   ]
  },
  {
@@ -43572,7 +42605,13 @@
   "brand": "Dyson",
   "name": "Supersonic Nural HD16",
   "aliases": [
-   "Dyson Supersonic™ Nural HD16 Strawberry Bronze / Blush Pink"
+   "Dyson Supersonic™ Nural HD16 Strawberry Bronze / Blush Pink",
+   "Dyson HD16 Supersonic™ Nural Ceramic Patina/Topaz",
+   "Dyson Supersonic Nural HD16 (Ceramic)",
+   "Supersonic Nural HD16 (Ceramic)",
+   "Dyson HD16 Supersonic™ Nural Strawberry Bronze/Blush Pink",
+   "Dyson Supersonic Nural HD16 (Strawberry)",
+   "Supersonic Nural HD16 (Strawberry)"
   ],
   "tier": "mid",
   "priceAmd": 246000,
@@ -43583,7 +42622,7 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 246000
+    "priceAmd": 219000
    }
   ],
   "display": {},
@@ -43594,6 +42633,10 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "colors": [
+   "Ceramic",
+   "Strawberry"
   ]
  },
  {
@@ -43632,7 +42675,13 @@
   "brand": "Dyson",
   "name": "Supersonic HD15",
   "aliases": [
-   "Dyson Supersonic™ Hair Dryer HD15 Nickel / Copper"
+   "Dyson Supersonic™ Hair Dryer HD15 Nickel / Copper",
+   "Dyson HD15 Supersonic™ Hair Dryer Black/Onyx Gold",
+   "Dyson Supersonic HD15 (Black)",
+   "Supersonic HD15 (Black)",
+   "Dyson HD15 Supersonic™ Hair Dryer Nickel/Copper",
+   "Dyson Supersonic HD15 (Nickel)",
+   "Supersonic HD15 (Nickel)"
   ],
   "tier": "mid",
   "priceAmd": 203000,
@@ -43643,7 +42692,7 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 203000
+    "priceAmd": 185000
    }
   ],
   "display": {},
@@ -43654,6 +42703,10 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "colors": [
+   "Black",
+   "Nickel"
   ]
  },
  {
@@ -43709,66 +42762,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Dyson HS08 Vinca Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-airstrait-straightener-ht01-nicel",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait HT01",
-  "aliases": [
-   "Dyson Airstrait™ Straightener HT01 Nicel / Copper"
-  ],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson Airstrait™ Straightener HT01 Nicel.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-airstrait-straightener-ht01-ceramic",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait HT01 (Ceramic)",
-  "aliases": [
-   "Dyson Airstrait™ Straightener HT01 Ceramic Pink"
-  ],
-  "tier": "mid",
-  "priceAmd": 168000,
-  "priceAmdMax": 168000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 168000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson Airstrait™ Straightener HT01 Ceramic.",
   "unsure": [
    "popularity",
    "display",

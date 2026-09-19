@@ -56,12 +56,25 @@ for (const list of Object.values(byBrandCat)) {
 }
 
 // --- a price nothing else in the country corroborates -----------------------------------------
+// Compared WITHIN one capacity, because a product sold in several is SUPPOSED to span a range:
+// the Xbox Series X runs 235,000 to 479,000 because the top of that is the 2TB edition, and the
+// iPhones spread the same way. Reading the cheapest configuration against the dearest raised
+// those as faults when they were the catalogue working correctly. Offers naming no capacity form
+// their own group, since they can only be compared with each other.
 for (const p of phones) {
-  const ps = (offers[p.id] || []).map(o => o.price).sort((a, b) => a - b);
-  if (ps.length < 2) continue;
-  if (ps[ps.length - 1] > ps[0] * 2)
-    add('prices too far apart', p.id, `${p.brand} ${p.name} — ${ps[0]} to ${ps[ps.length - 1]} AMD`,
-        'which of these is not this product, or not this configuration?');
+  const byCap = new Map();
+  for (const o of offers[p.id] || []) {
+    const k = o.storage ?? '?';
+    (byCap.get(k) || byCap.set(k, []).get(k)).push(o.price);
+  }
+  for (const [cap, list] of byCap) {
+    if (list.length < 2) continue;
+    const ps = list.sort((a, b) => a - b);
+    if (ps[ps.length - 1] > ps[0] * 2)
+      add('prices too far apart', p.id,
+          `${p.brand} ${p.name}${cap === '?' ? '' : ' ' + cap + 'GB'} — ${ps[0]} to ${ps[ps.length - 1]} AMD`,
+          'which of these is not this product, or not this configuration?');
+  }
 }
 
 // --- sold by one shop, at a price unlike what that product should cost -------------------------

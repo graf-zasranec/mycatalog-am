@@ -99,6 +99,44 @@ async function ogImage(url) {
   return out;
 }
 
+// Does the file declare an alpha channel? The header says so without decoding anything, the same
+// way dimensions() reads the size. A JPEG never carries one; a PNG names its colour type; WebP
+// sets a flag. This reports what the FORMAT declares, not whether any pixel is actually see-
+// through - a PNG can carry a fully opaque alpha channel - so it is used only to break a tie,
+// never to throw away a bigger photo.
+function declaresAlpha(b) {
+  if (b[0] === 0xFF && b[1] === 0xD8) return false;                       // JPEG
+  if (b[0] === 0x89 && b[1] === 0x50) {
+    const type = b[25];                                                   // IHDR colour type
+    if (type === 4 || type === 6) return true;                            // grey+A, RGBA
+    return type === 3 && b.includes(Buffer.from('tRNS'));                 // palette with transparency
+  }
+  const s = b.toString('latin1', 0, Math.min(b.length, 64));
+  const i = s.indexOf('VP8');
+  if (i < 0) return false;
+  if (s.slice(i, i + 4) === 'VP8X') return (b[i + 8] & 0x10) !== 0;        // alpha bit in the flags
+  if (s.slice(i, i + 4) === 'VP8L') return (b[i + 9 + 4] & 0x10) !== 0;    // alpha_is_used
+  return false;                                                           // plain lossy VP8
+}
+
+// A source that arrives already cut out skips the matting model entirely - about a minute and a
+// half of this machine, per photo - and skips the tearing the model has to be guarded against.
+// So a transparent candidate wins a close call: it must still clear the 600px floor and come
+// within this much of the biggest candidate, because a photo too small for the canvas is not a
+// bargain at any speed.
+const ALPHA_TIEBREAK = 0.8;
+const FLOOR = 600;                    // the same floor build.mjs reports a photo as too small below
+
+function beats(a, b) {
+  // Transparency only ever decides a close call. Either side can win it, so a big opaque photo
+  // still beats a tiny transparent one, and the rule cannot quietly shrink the catalogue.
+  if (a.alpha !== b.alpha) {
+    const [t, o] = a.alpha ? [a, b] : [b, a];
+    if (t.edge >= FLOOR && t.edge >= o.edge * ALPHA_TIEBREAK) return a.alpha;
+  }
+  return a.edge > b.edge;
+}
+
 async function best(urls) {
   let win = null;
   for (const u of urls.flatMap(upscaleCandidates)) {
@@ -113,7 +151,8 @@ async function best(urls) {
       if (PLACEHOLDER[createHash('md5').update(b).digest('hex')]) continue;
       const [w, h] = dimensions(b);
       const edge = Math.max(w, h);
-      if (edge && (!win || edge > win.edge)) win = { b, edge, w, h, ext: ext(r.headers.get('content-type') || ''), url: u };
+      const cand = { b, edge, w, h, alpha: declaresAlpha(b), ext: ext(r.headers.get('content-type') || ''), url: u };
+      if (edge && (!win || beats(cand, win))) win = cand;
       await new Promise(r => setTimeout(r, 250));
     } catch { /* a shop being down must not stop the pass */ }
   }

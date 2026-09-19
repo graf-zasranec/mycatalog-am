@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-18",
+ "generated": "2026-09-19",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1420,
- "missing": 670,
+ "total": 1384,
+ "missing": 643,
  "tooSmall": 43,
  "products": [
   {
@@ -103,6 +103,56 @@
    "category": "phone",
    "shops": 2,
    "query": "Apple iPhone 15 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dyson-er-hd15",
+   "brand": "Dyson",
+   "name": "Supersonic HD15",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Dyson Supersonic HD15",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dyson-ht01-airstrait-straightener-plum",
+   "brand": "Dyson",
+   "name": "Airstrait HT01",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Dyson Airstrait HT01",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dyson-multi-complete-long-hs05",
+   "brand": "Dyson",
+   "name": "Airwrap HS05 Complete Long",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Dyson Airwrap HS05 Complete Long",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dyson-multi-complete-long-hs05-rich",
+   "brand": "Dyson",
+   "name": "Airwrap HS05",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Dyson Airwrap HS05",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dyson-nural-hd16-strawberry",
+   "brand": "Dyson",
+   "name": "Supersonic Nural HD16",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Dyson Supersonic Nural HD16",
    "what": "missing",
    "width": 0
   },
@@ -1537,16 +1587,6 @@
    "width": 0
   },
   {
-   "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-gr",
-   "brand": "ASUS",
-   "name": "Vivobook S 15 (i9)",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS Vivobook S 15 (i9)",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
    "brand": "ASUS",
    "name": "Vivobook S 15 (i9)",
@@ -1957,72 +1997,12 @@
    "width": 0
   },
   {
-   "id": "dyson-airstrait-straightener-ht01-ceramic",
-   "brand": "Dyson",
-   "name": "Airstrait HT01 (Ceramic)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01 (Ceramic)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-airstrait-straightener-ht01-nicel",
-   "brand": "Dyson",
-   "name": "Airstrait HT01",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dyson-er-hd07",
    "brand": "Dyson",
-   "name": "Supersonic HD07 (Iron Fuchsia)",
+   "name": "Supersonic HD07",
    "category": "appliance",
    "shops": 1,
-   "query": "Dyson Supersonic HD07 (Iron Fuchsia)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-er-hd15",
-   "brand": "Dyson",
-   "name": "Supersonic HD15",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic HD15",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd15-er-black-onyx",
-   "brand": "Dyson",
-   "name": "Supersonic HD15 (Black)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic HD15 (Black)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd15-er-nickel-copper",
-   "brand": "Dyson",
-   "name": "Supersonic HD15 (Nickel)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic HD15 (Nickel)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd16-nural-ceramic-patina-topaz",
-   "brand": "Dyson",
-   "name": "Supersonic Nural HD16 (Ceramic)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic Nural HD16 (Ceramic)",
+   "query": "Dyson Supersonic HD07",
    "what": "missing",
    "width": 0
   },
@@ -2033,16 +2013,6 @@
    "category": "appliance",
    "shops": 1,
    "query": "Dyson Dyson HD16 Supersonic Nural Jasper Plum",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd16-nural-strawberry-bronze-blush",
-   "brand": "Dyson",
-   "name": "Supersonic Nural HD16 (Strawberry)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic Nural HD16 (Strawberry)",
    "what": "missing",
    "width": 0
   },
@@ -2077,72 +2047,12 @@
    "width": 0
   },
   {
-   "id": "dyson-hs05-multi-complete-long-blue-copper",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long (Blue/Copper)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long (Blue/Copper)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs05-multi-complete-long-blue-topaz",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long (Blue)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long (Blue)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs05-multi-complete-long-fuchisa-nickel",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long (Fuchsia)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long (Fuchsia)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs05-multi-complete-long-gold-onyx",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long (Gold)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long (Gold)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs05-multi-complete-long-strawberry-bronze-pink",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long (Strawberry)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long (Strawberry)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs05-multi-short-and-coarse-blue-rich",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 (Prussian Blue)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 (Prussian Blue)",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dyson-hs08-id-multi-ceramic-patina-topaz",
    "brand": "Dyson",
-   "name": "Airwrap HS08 (Ceramic Patina)",
+   "name": "Airwrap HS08",
    "category": "appliance",
    "shops": 1,
-   "query": "Dyson Airwrap HS08 (Ceramic Patina)",
+   "query": "Dyson Airwrap HS08",
    "what": "missing",
    "width": 0
   },
@@ -2163,36 +2073,6 @@
    "category": "appliance",
    "shops": 1,
    "query": "Dyson HS08 Airwrap ID Multi- Red Velvet/Gold",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-multi-and-dryer-curlypluscoily-vinca-blue-topaz",
-   "brand": "Dyson",
-   "name": "Airwrap HS08 (Vinca Blue)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS08 (Vinca Blue)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-multi-and-dryer-straightpluswavy-strawberry-bronze-blush",
-   "brand": "Dyson",
-   "name": "Airwrap HS08 (Strawberry Bronze)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS08 (Strawberry Bronze)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-multi-and-dryer-straightpluswavy-velvet-gold",
-   "brand": "Dyson",
-   "name": "Airwrap HS08 (Red Velvet)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS08 (Red Velvet)",
    "what": "missing",
    "width": 0
   },
@@ -2227,122 +2107,12 @@
    "width": 0
   },
   {
-   "id": "dyson-ht01-airstrait-straightener-blue-rich",
-   "brand": "Dyson",
-   "name": "Airstrait HT01 (Prussian Blue)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01 (Prussian Blue)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-ht01-airstrait-straightener-ceramic",
-   "brand": "Dyson",
-   "name": "Airstrait HT01 (Ceramic Pink)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01 (Ceramic Pink)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-ht01-airstrait-straightener-plum",
-   "brand": "Dyson",
-   "name": "Airstrait HT01 (Jasper Plum)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01 (Jasper Plum)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-ht01-airstrait-straightener-strawberry-bronze-blush",
-   "brand": "Dyson",
-   "name": "Airstrait HT01 (Strawberry)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01 (Strawberry)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-ht01-airstrait-straightener-velvet-gold",
-   "brand": "Dyson",
-   "name": "Airstrait HT01 (Red Velvet)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airstrait HT01 (Red Velvet)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05-fuchisa",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 (Fuchsia)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 (Fuchsia)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05-rich",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 (Blue/Copper)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 (Blue/Copper)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05-strawberry",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 (Strawberry)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 (Strawberry)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05-topaz",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 (Blue)",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 (Blue)",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dyson-nural-er",
    "brand": "Dyson",
    "name": "Dyson Supersonic Nural hair dryer",
    "category": "appliance",
    "shops": 1,
    "query": "Dyson Dyson Supersonic Nural hair dryer",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-nural-hd16-strawberry",
-   "brand": "Dyson",
-   "name": "Supersonic Nural HD16",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic Nural HD16",
    "what": "missing",
    "width": 0
   },
@@ -2397,32 +2167,12 @@
    "width": 0
   },
   {
-   "id": "garmin-cirqa-smart-band-captain-s-m",
-   "brand": "Garmin",
-   "name": "CIRQA Smart Band",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin CIRQA Smart Band",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "garmin-cirqa-smart-band-french-l-xl",
    "brand": "Garmin",
    "name": "CIRQA Smart Band French L/XL",
    "category": "watch",
    "shops": 1,
    "query": "Garmin CIRQA Smart Band French L/XL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-cirqa-smart-band-french-s-m",
-   "brand": "Garmin",
-   "name": "CIRQA Smart Band",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin CIRQA Smart Band",
    "what": "missing",
    "width": 0
   },
@@ -3137,22 +2887,12 @@
    "width": 0
   },
   {
-   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajje",
-   "brand": "Honor",
-   "name": "MagicBook Pro 16 (24GB)",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Honor MagicBook Pro 16 (24GB)",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
    "brand": "Honor",
-   "name": "MagicBook Pro 16 (24GB)",
+   "name": "MagicBook Pro 16",
    "category": "laptop",
    "shops": 1,
-   "query": "Honor MagicBook Pro 16 (24GB)",
+   "query": "Honor MagicBook Pro 16",
    "what": "missing",
    "width": 0
   },
@@ -3907,16 +3647,6 @@
    "width": 0
   },
   {
-   "id": "lenovo-ideapad-1-15iru7-16gb",
-   "brand": "Lenovo",
-   "name": "IdeaPad 1 15IRU7(16GB)",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo IdeaPad 1 15IRU7(16GB)",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "lenovo-ideapad-5-2-in-1-14iru9",
    "brand": "Lenovo",
    "name": "IdeaPad 5 2-in-1 14IRU9",
@@ -3953,16 +3683,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Lenovo IdeaPad Slim 3 15AMN8",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-ideapad-slim-3-15ian8-128gb",
-   "brand": "Lenovo",
-   "name": "IdeaPad Slim 3 15IAN8(128GB)",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo IdeaPad Slim 3 15IAN8(128GB)",
    "what": "missing",
    "width": 0
   },
@@ -4799,10 +4519,10 @@
   {
    "id": "microsoft-xbox",
    "brand": "Microsoft",
-   "name": "Xbox",
+   "name": "Xbox Headset",
    "category": "headphones",
    "shops": 1,
-   "query": "Microsoft Xbox",
+   "query": "Microsoft Xbox Headset",
    "what": "missing",
    "width": 0
   },
@@ -6443,6 +6163,16 @@
    "category": "phone",
    "shops": 1,
    "query": "Xiaomi Redmi 10A",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-10c",
+   "brand": "Xiaomi",
+   "name": "Redmi 10C",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi Redmi 10C",
    "what": "missing",
    "width": 0
   },

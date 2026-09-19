@@ -207,6 +207,25 @@ def main():
     if skipped:
         print(f'{skipped} already cut by this pipeline, {len(todo)} to go', flush=True)
 
+    # A source below the 600px floor costs a minute and a half to matte and is then reported as
+    # too small anyway, so it is passed over until a bigger original turns up. The file STAYS in
+    # images/_src: it is the record of the best anyone publishes today, and the day a press page
+    # offers something larger this picks it up again. --small mattes them regardless.
+    if '--small' not in sys.argv:
+        big, small = [], []
+        for f in todo:
+            try:
+                w, h = Image.open(SRC / f).size
+            except Exception:
+                big.append(f)
+                continue
+            (big if max(w, h) >= 600 else small).append(f)
+        if small:
+            print(f'{len(small)} source(s) under 600px passed over (--small to matte them anyway): '
+                  + ', '.join(os.path.splitext(x)[0] for x in small[:6])
+                  + (f' +{len(small) - 6} more' if len(small) > 6 else ''), flush=True)
+        todo = big
+
     done = 0
     for f in todo:
         try:

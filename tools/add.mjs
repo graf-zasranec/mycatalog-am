@@ -150,12 +150,10 @@ for (const p of phones) {
   KNOWN.set(p.brand.toLowerCase() + '|' + bag(p.name), p.id);
   KNOWN.set(p.brand.toLowerCase() + '|' + squash(p.name), p.id);
 }
-// The price does not get to decide anything. Two Xiaomi phones at 84,900 are two phones, and a
-// guard that refused on price alone threw out a real Redmi Note 14S. It only marks a row for a
-// person to look at, and the row is added either way.
-const SAME_PRICE = new Map();
-for (const p of phones) SAME_PRICE.set(p.brand.toLowerCase() + '|' + p.category + '|' + p.priceAmd, p.id);
-const suspect = [];
+// Price says nothing about identity, and this stopped pretending it did. Two Xiaomi phones at
+// 84,900 are two phones; every row the same-price check ever raised turned out to be one. It used
+// to write them to data/check-by-hand.csv for somebody to work through, which was a queue of
+// false positives, so the check and the file are both gone.
 
 const rows = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')).filter(r => r.price);
 const out = [], refused = [];
@@ -219,8 +217,6 @@ for (const r of rows) {
   const b = brand.toLowerCase();
   const already = KNOWN.get(b + '|' + bag(name)) || KNOWN.get(b + '|' + squash(name));
   if (already) { refused.push(['already ' + already, r]); continue; }
-  const twin = SAME_PRICE.get(b + '|' + kind + '|' + r.price);
-  if (twin) suspect.push({ id: slug(brand + ' ' + name), twin, title: r.name.replace(/\s{2,}/g, ' ').trim(), price: r.price, url: r.url || '' });
 
   // The model is the shop's title with the brand and the kind-word taken OUT OF THE MIDDLE, and
   // the matcher reads a key as a run of consecutive words - so "Styler Dyson HS08 Airwrap I.D"
@@ -255,24 +251,6 @@ for (const [k, v] of Object.entries(byKind).sort((a, b) => b[1].length - a[1].le
   console.log(`-- ${k} (${v.length})`);
   for (const o of v.sort((a, b) => a.id.localeCompare(b.id)))
     console.log(`   ${String(o.price).padStart(8)}  ${o.id.padEnd(34)} ${o.brand} ${o.name}`);
-}
-if (suspect.length) {
-  console.log(`\n== ${suspect.length} to check by hand: same make, same kind, exactly the same price ==`);
-  for (const s of suspect) console.log(`   ${String(s.price).padStart(8)}  ${s.id.padEnd(30)} vs ${s.twin}`);
-  // These are open questions for a person, not a derived value, so this file MERGES. It used to be
-  // rewritten from scratch on every run - including a run without --write - which silently threw
-  // away every question nobody had answered yet. A run may add a question; only a person removes one.
-  const HAND = 'data/check-by-hand.csv', HEAD = 'id,samePriceAs,price,shopTitle,url';
-  const rows = new Map();
-  if (fs.existsSync(HAND))
-    for (const line of fs.readFileSync(HAND, 'utf8').split(/\r?\n/).slice(1)) {
-      const c = line.split(',');
-      if (line.trim()) rows.set(c[0] + '|' + c[c.length - 1], line);
-    }
-  for (const s of suspect)
-    rows.set(s.id + '|' + s.url, [s.id, s.twin, s.price, s.title.replace(/,/g, ' '), s.url].join(','));
-  fs.writeFileSync(HAND, [HEAD, ...rows.values()].join('\n') + '\n');
-  console.log(`   -> ${HAND} (${rows.size} open, ${suspect.length} from this run)`);
 }
 if (process.argv.includes('--refused')) {
   console.log('\n== refused ==');
