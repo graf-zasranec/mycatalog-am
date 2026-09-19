@@ -3,59 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1332,
- "missing": 410,
- "tooSmall": 55,
+ "missing": 383,
+ "tooSmall": 56,
  "products": [
-  {
-   "id": "xiaomi-poco-x8-pro-max",
-   "brand": "Xiaomi",
-   "name": "POCO X8 Pro Max",
-   "category": "phone",
-   "shops": 7,
-   "query": "Xiaomi POCO X8 Pro Max",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-17t",
-   "brand": "Xiaomi",
-   "name": "17T",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi 17T",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-17",
-   "brand": "Xiaomi",
-   "name": "Redmi 17",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi Redmi 17",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-a7-pro",
-   "brand": "Xiaomi",
-   "name": "Redmi A7 Pro",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi Redmi A7 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-17-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 17 5G",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi Redmi Note 17 5G",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "xiaomi-poco-m7",
    "brand": "Xiaomi",
@@ -63,26 +13,6 @@
    "category": "phone",
    "shops": 5,
    "query": "Xiaomi POCO M7",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-m8-5g",
-   "brand": "Xiaomi",
-   "name": "POCO M8 5G",
-   "category": "phone",
-   "shops": 5,
-   "query": "Xiaomi POCO M8 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-m8-pro-5g",
-   "brand": "Xiaomi",
-   "name": "POCO M8 Pro 5G",
-   "category": "phone",
-   "shops": 5,
-   "query": "Xiaomi POCO M8 Pro 5G",
    "what": "missing",
    "width": 0
   },
@@ -103,16 +33,6 @@
    "category": "drone",
    "shops": 4,
    "query": "DJI Osmo Pocket 4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "whoop-life",
-   "brand": "Whoop",
-   "name": "Life",
-   "category": "watch",
-   "shops": 4,
-   "query": "Whoop Life",
    "what": "missing",
    "width": 0
   },
@@ -143,26 +63,6 @@
    "category": "appliance",
    "shops": 3,
    "query": "Dyson Supersonic Nural HD16",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wh-1000xm5",
-   "brand": "Sony",
-   "name": "WH-1000XM5",
-   "category": "headphones",
-   "shops": 3,
-   "query": "Sony WH-1000XM5",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-f6",
-   "brand": "Xiaomi",
-   "name": "Poco F6",
-   "category": "phone",
-   "shops": 3,
-   "query": "Xiaomi Poco F6",
    "what": "missing",
    "width": 0
   },
@@ -367,82 +267,12 @@
    "width": 0
   },
   {
-   "id": "sony-ps5-pulse-elite-wireless",
-   "brand": "Sony",
-   "name": "PS5 PULSE Elite Wireless",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Sony PS5 PULSE Elite Wireless",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-pulse-explore",
-   "brand": "Sony",
-   "name": "PULSE Explore",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Sony PULSE Explore",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wf-c510-yc",
-   "brand": "Sony",
-   "name": "WF-C510/YC",
-   "category": "earbuds",
-   "shops": 2,
-   "query": "Sony WF-C510/YC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wh-ch720",
-   "brand": "Sony",
-   "name": "WH-CH720",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Sony WH-CH720",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-10c",
    "brand": "Xiaomi",
    "name": "Redmi 10C",
    "category": "phone",
    "shops": 2,
    "query": "Xiaomi Redmi 10C",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-4-active",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 4 Active",
-   "category": "earbuds",
-   "shops": 2,
-   "query": "Xiaomi Redmi Buds 4 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-8-lite",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 8 Lite",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Xiaomi Redmi Buds 8 Lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-14-pro-plus-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 14 Pro Plus 5G",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi Note 14 Pro Plus 5G",
    "what": "missing",
    "width": 0
   },
@@ -3367,26 +3197,6 @@
    "width": 0
   },
   {
-   "id": "sony-playstation-vr2",
-   "brand": "Sony",
-   "name": "PlayStation VR2",
-   "category": "console",
-   "shops": 1,
-   "query": "Sony PlayStation VR2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-playstation-vr2-horizon",
-   "brand": "Sony",
-   "name": "PlayStation VR2 Horizon",
-   "category": "console",
-   "shops": 1,
-   "query": "Sony PlayStation VR2 Horizon",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "sony-ps5-backbone",
    "brand": "Sony",
    "name": "PS5 BackBone",
@@ -3453,16 +3263,6 @@
    "category": "earbuds",
    "shops": 1,
    "query": "Sony WF-1000XM5/SCE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wf-1000xm5-wireless-headphones",
-   "brand": "Sony",
-   "name": "WF-1000XM5 Wireless Headphones",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Sony WF-1000XM5 Wireless Headphones",
    "what": "missing",
    "width": 0
   },
@@ -3927,26 +3727,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-mi-smart-band-8-active",
-   "brand": "Xiaomi",
-   "name": "Mi Smart Band 8 Active",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Mi Smart Band 8 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-mi-smart-band-9",
-   "brand": "Xiaomi",
-   "name": "Mi Smart Band 9",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Mi Smart Band 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-mi-smart-kettle-pro-mjhwsh02ym",
    "brand": "Xiaomi",
    "name": "Mi Smart Kettle Pro MJHWSH02YM",
@@ -3973,56 +3753,6 @@
    "category": "phone",
    "shops": 1,
    "query": "Xiaomi Poco X5 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-10a",
-   "brand": "Xiaomi",
-   "name": "Redmi 10A",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 10A",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-15-4g",
-   "brand": "Xiaomi",
-   "name": "Redmi 15 4G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 15 4G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-4-bhr-5846-gl",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 4 BHR 5846 GL",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 4 BHR 5846 GL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-4-lite",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 4 Lite",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 4 Lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-5",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 5",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 5",
    "what": "missing",
    "width": 0
   },
@@ -4605,6 +4335,16 @@
    "query": "Xiaomi Redmi 14C",
    "what": "too small",
    "width": 525
+  },
+  {
+   "id": "xiaomi-redmi-4-lite",
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 4 Lite",
+   "category": "earbuds",
+   "shops": 1,
+   "query": "Xiaomi Redmi Buds 4 Lite",
+   "what": "too small",
+   "width": 588
   },
   {
    "id": "xiaomi-redmi-watch-2-lite",
