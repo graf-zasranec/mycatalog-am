@@ -614,7 +614,7 @@ function paintChrome() {
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}</a>`;
   $('#hdrCmpLbl').textContent = t('nav.compare');
   paintCmpCount();
-  $('#foot').innerHTML = `<b>impulsive.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
+  $('#foot').innerHTML = `<b>impulsive</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
@@ -1815,25 +1815,25 @@ function render(keepScroll) {
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');
-  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — impulsive.am'; window.scrollTo(0, keepScroll ? y : 0); }
+  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — impulsive'; window.scrollTo(0, keepScroll ? y : 0); }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
     const y = window.scrollY;
     main.innerHTML = offersView(byId(mo[1]));
     document.title = x('allOffers') + ' — ' + fullName(byId(mo[1]));
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
-  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — impulsive.am'; window.scrollTo(0, 0); }
-  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — impulsive.am'; window.scrollTo(0, 0); }
-  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — impulsive.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
-  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — impulsive.am'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — impulsive'; window.scrollTo(0, 0); }
+  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — impulsive'; window.scrollTo(0, 0); }
+  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — impulsive'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
+  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — impulsive'; window.scrollTo(0, 0); }
   else if (h === '/search') {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — impulsive.am';
+    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — impulsive';
     window.scrollTo(0, keepScroll ? window.scrollY : 0);
   }
   else {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'impulsive.am';
+    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'impulsive';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
     // to the front page landed ~1480px past where you left, while a category page was exact.

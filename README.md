@@ -1,4 +1,4 @@
-# impulsive.am
+# impulsive
 
 Trilingual (hy / ru / en) smartphone catalogue for the Armenian market.
 111 products, prices in AMD, filters, product pages and side-by-side comparison.
@@ -69,13 +69,13 @@ photography before launch.
 ## Keeping prices fresh
 
 `refresh.cmd` re-scrapes every shop and rebuilds the site. A Windows scheduled task named
-**"impulsive.am refresh"** runs it daily at 06:00.
+**"MyCatalog refresh"** runs it daily at 06:00.
 
     refresh.cmd                          # run it now
 
     # inspect / remove the schedule
-    Get-ScheduledTask -TaskName 'impulsive.am refresh'
-    Unregister-ScheduledTask -TaskName 'impulsive.am refresh' -Confirm:$false
+    Get-ScheduledTask -TaskName 'MyCatalog refresh'
+    Unregister-ScheduledTask -TaskName 'MyCatalog refresh' -Confirm:$false
 
 If a scrape fails, refresh.cmd stops and keeps the previous `data/prices.json` rather than
 publishing an empty catalogue. Photos are not refreshed by it — re-run `tools/colors.mjs`

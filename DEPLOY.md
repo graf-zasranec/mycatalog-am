@@ -1,4 +1,4 @@
-# Putting impulsive.am online
+# Putting impulsive online
 
 The site is plain static files. There is no server, no database, no build step at request
 time — so it can be hosted free, almost anywhere.
@@ -28,7 +28,7 @@ history, and redeploys. Your PC does not need to be on.
 ```bash
 git init
 git add -A
-git commit -m "impulsive.am"
+git commit -m "impulsive"
 git branch -M main
 git remote add origin https://github.com/<your-user>/mycatalog.git
 git push -u origin main

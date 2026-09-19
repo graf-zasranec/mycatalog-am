@@ -19,7 +19,7 @@ http.createServer((req, res) => {
   catch { res.writeHead(400); return res.end('bad url'); }
   if (rel === '' || rel.endsWith('/')) rel += 'index.html';
   const file = path.resolve(ROOT, rel);
-  // ROOT + separator, or a sibling folder named impulsive.amSomething would pass the prefix test
+  // ROOT + separator, or a sibling folder whose name merely starts with ROOT's would pass the prefix test
   if (file !== ROOT && !file.startsWith(ROOT + path.sep)) { res.writeHead(403).end('no'); return; }
   fs.readFile(file, (err, buf) => {
     if (err) { res.writeHead(404).end('not found'); return; }
