@@ -1,0 +1,47 @@
+{
+ "_": "Per-colour product photos read off the shops by hand and supplied as a spreadsheet, keyed like data/press.json: id -> slot -> url. These are SHOP photographs, not manufacturer press renders, which is why they are not in press.json - images/SOURCES.txt has to say truthfully where a picture came from. tools/photos.mjs treats them as one more candidate, so the 600px floor, the placeholder hashes and photo-rejects.json all still apply and the biggest candidate still wins. A slot is only recorded where the shop colour resolves to exactly one colour the product actually lists.",
+ "samsung-galaxy-s25-ultra": {
+  "titanium-silverblue": "https://admin.redstore.am/storage/uploads/2025/09/28/img-5076.jpg",
+  "titanium-whitesilver": "https://admin.redstore.am/storage/uploads/2025/09/28/img-5077.jpg"
+ },
+ "samsung-galaxy-a57": {
+  "awesome-grey": "https://admin.redstore.am/storage/products/60111/image/hh-montaznaia-oblast-1-1-1.webp",
+  "awesome-navy": "https://admin.redstore.am/storage/products/60112/image/sw22-montaznaia-oblast-1-1.webp",
+  "awesome-lilac": "https://admin.redstore.am/storage/products/60114/image/se3-montaznaia-oblast-1.webp",
+  "awesome-icyblue": "https://admin.redstore.am/storage/products/60113/image/e32-montaznaia-oblast-1.webp"
+ },
+ "samsung-galaxy-a56": {
+  "awesome-graphite": "https://admin.redstore.am/storage/uploads/2025/09/28/img-5026.jpg",
+  "awesome-light-gray": "https://admin.redstore.am/storage/uploads/2025/09/28/img-5023.jpg",
+  "awesome-pink": "https://admin.redstore.am/storage/uploads/2025/09/28/img-5025.jpg",
+  "awesome-olive": "https://admin.redstore.am/storage/uploads/2025/09/28/img-5024.jpg"
+ },
+ "samsung-galaxy-a26": {
+  "awesome-black": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4547.jpg",
+  "awesome-white": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4552.jpg",
+  "awesome-mint": "https://admin.redstore.am/storage/uploads/2025/09/28/img-4550.jpg"
+ },
+ "apple-iphone-17-pro-max": {
+  "cosmic-orange": "https://cdn.storech.com/uploads/store-media-files/000/000/000/000/002/412/1758046496-facebook-link-shablonorange-17-p-max.png",
+  "deep-blue": "https://cdn.storech.com/uploads/store-media-files/000/000/000/000/002/412/1758046496-facebook-link-shablonorange-17-p-max.png"
+ },
+ "apple-iphone-17e": {
+  "soft-pink": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/p/iphone_17e_soft_pink_pdp_image_position_1b__ce_ww_2_1.png?___store=en"
+ },
+ "apple-iphone-16-pro": {
+  "desert-titanium": "https://www.zigzag.am/media/catalog/product/cache/6e22448b5f90615b7a8022ae7c490765/3/4/347700619.jpg"
+ },
+ "apple-iphone-16-pro-max": {
+  "natural-titanium": "https://www.zigzag.am/media/catalog/product/cache/6e22448b5f90615b7a8022ae7c490765/3/4/347700634.jpg"
+ },
+ "samsung-galaxy-a06": {
+  "black": "https://www.zigzag.am/media/catalog/product/cache/6e22448b5f90615b7a8022ae7c490765/3/4/347204510_1.jpg"
+ },
+ "samsung-galaxy-s26-ultra": {
+  "cobalt-violet": "https://www.zigzag.am/media/catalog/product/cache/6e22448b5f90615b7a8022ae7c490765/3/4/34724340.jpg",
+  "blue": "https://www.mobilecentre.am/img/prodpic/21bbc1335483f3984b67New_Project_-_2026-02-26T104759.771.png"
+ },
+ "samsung-galaxy-a27": {
+  "pink": "https://www.mobilecentre.am/img/prodpic/d7131deeb45212b4f150New_Project_-_2026-08-24T113754.819.png"
+ }
+}

@@ -170,6 +170,19 @@ const man = fs.existsSync(`${SRC}/manifest.json`)
 // preview these are the same product at 1920px with a transparent background, so they simply
 // join the candidate list and win on size.
 const PRESS = fs.existsSync('data/press.json') ? JSON.parse(fs.readFileSync('data/press.json', 'utf8')) : {};
+// Per-colour shop photos collected by hand and supplied as a spreadsheet. They join the candidate
+// list exactly as the press shots do - same shape, id -> slot -> url - so the size floor, the
+// placeholder hashes and photo-rejects.json all still apply and the biggest still wins. They are
+// kept in their own file because images/SOURCES.txt has to say truthfully where a picture came
+// from, and a shop's photograph is not a manufacturer's press render.
+{
+  const HAND = fs.existsSync('data/hand-images.json')
+    ? JSON.parse(fs.readFileSync('data/hand-images.json', 'utf8')) : {};
+  for (const [id, slots] of Object.entries(HAND)) {
+    if (id === '_') continue;
+    for (const [slot, url] of Object.entries(slots)) (PRESS[id] ||= {})[slot] ||= url;
+  }
+}
 const NO_FETCH = Object.keys(PR.excluded || {});
 // Photos a person looked at and said no to, with the reason: a Space Black MacBook filed as
 // Silver, a sponsorship banner with no television in it. Until now only harvest-colors.py read
@@ -202,7 +215,10 @@ for (const p of P) {
   const slots = [{ slug: 'main', color: null, urls: [...Object.values(PRESS[p.id] || {}), ...offers.map(o => o.image)] }];
   for (const c of p.colors || []) {
     const urls = offers.filter(o => o.color === c).map(o => o.image);
-    if (urls.length) slots.push({ slug: slug(c), color: c, urls });
+    // A colour slot used to exist only where an OFFER carried a picture of that colour, so a
+    // hand-collected photo of a colour no shop had photographed into the price file could only
+    // ever be used as the main shot. If a named source has that colour, the slot is worth making.
+    if (urls.length || (PRESS[p.id] || {})[slug(c)]) slots.push({ slug: slug(c), color: c, urls });
   }
   for (const s of slots) { const press = (PRESS[p.id] || {})[s.slug]; if (press) s.urls = [press, ...s.urls]; }
   for (const s of slots) {
