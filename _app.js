@@ -611,25 +611,30 @@ function paintChrome() {
   // "Catalog" now goes, and the comparison.
   $('#nav').innerHTML =
     `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
-    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}</a>`;
-  $('#hdrCmpLbl').textContent = t('nav.compare');
+    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}`
+    + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`;
   paintCmpCount();
   $('#foot').innerHTML = `<b>impulsive</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
-// of the same list pinned over the page was doing nothing but covering the last row. What is
-// kept is the count in the header, the dimming of cards that cannot join, and the one message
-// that has to be said out loud when a pick is refused.
+// of the same list pinned over the page was doing nothing but covering the last row. The header
+// button that duplicated it is gone too - one way in, the nav link, which now carries the count.
+// What is kept is the dimming of cards that cannot join, and the one message that has to be
+// said out loud when a pick is refused.
 // The badge is the thing being watched when a product is added, and it was changing silently -
 // the toast said what happened somewhere else on the page. It pops only when the count GOES UP,
 // so removing one, or a plain re-render, stays quiet.
+let lastCmpN = 0;
 function paintCmpCount() {
-  const el = $('#hdrCmpN');
+  const el = $('#cmpN');
   if (!el) return;
-  const was = +el.textContent || 0;
-  el.textContent = st.cmp.length;
+  // The badge lives in the nav now, which render() rewrites, so the previous count cannot be
+  // read back off the element - a re-render would always look like no change. Keep it here.
+  const was = lastCmpN;
+  lastCmpN = st.cmp.length;
+  el.textContent = st.cmp.length || '';
   if (st.cmp.length <= was) return;
   el.classList.remove('pop');
   void el.offsetWidth;          // restart the animation rather than let it be ignored
@@ -1937,7 +1942,6 @@ document.addEventListener('click', e => {
     st.theme = st.theme === 'auto' ? (osDark ? 'light' : 'dark') : st.theme === 'dark' ? 'light' : 'dark';
     save(); paintChrome(); return;
   }
-  if (e.target.closest('#hdrCmp')) { location.hash = '#/compare'; return; }
   const tg = e.target.closest('button[data-f]');
   if (tg) { const k = tg.dataset.f; st[k] = !st[k]; refresh(); return; }
   const ap = e.target.closest('[data-apply]');

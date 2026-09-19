@@ -35,8 +35,15 @@ CATEGORIES = [
 ]
 
 # <a class="product_name combo_link" href="...">TITLE</a> ... data-price-amount="89900"
+#
+# Take the finalPrice and nothing else. A discounted card prints TWO prices, oldPrice first and
+# finalPrice after it, so matching the first data-price-amount reads the struck-through price the
+# shop is no longer asking - which is how 26 catalogue entries came to sit above what Eldorado
+# actually charges. Every card carries a finalPrice, discounted or not (checked across the
+# headset, smartphone and notebook listings: 0 cards without one), so keying on it drops nothing.
 CARD = re.compile(
-    r'class="product_name combo_link"\s+href="([^"]+)"\s*>\s*(.*?)\s*</a>(.{0,2000}?)data-price-amount="([\d.]+)"',
+    r'class="product_name combo_link"\s+href="([^"]+)"\s*>\s*(.*?)\s*</a>'
+    r'(.{0,2000}?)data-price-amount="([\d.]+)"\s+data-price-type="finalPrice"',
     re.S)
 
 

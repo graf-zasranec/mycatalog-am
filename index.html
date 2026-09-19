@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-AUVeWKnbk+DmoHbGYyXJLzgyDVXzD3ho/TWSrtxxtrc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-1zbkRPvf14SSs8UVVhL11YGabKUuEp7975nku5K0CCQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 1332 մոդել, 19 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -130,7 +130,6 @@ button,input,select,textarea{font:inherit;color:inherit}
   box-shadow:inset 0 -1px 0 transparent}
 .nav a:hover{color:var(--text)}
 .nav a[aria-current="page"]{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
-@media (max-width:900px){.nav{display:none}}
 .srch{flex:1 1 auto;min-width:0;position:relative;max-width:340px}
 .srch input{width:100%;height:40px;padding:0 15px 0 38px;border-radius:0;border:0;
   border-bottom:1px solid var(--line2);background:none;color:var(--text);font-size:0.875rem}
@@ -148,15 +147,9 @@ button,input,select,textarea{font:inherit;color:inherit}
   display:grid;place-items:center;margin-left:4px}
 .th svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.6}
 .th:hover{color:var(--text)}
-.cmpbtn{flex:none;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 15px;border-radius:var(--pill);
-  border:1px solid var(--text);background:none;color:var(--text);font-weight:600;font-size:0.844rem;
-  cursor:pointer;white-space:nowrap;margin-left:10px}
-.cmpbtn.ghost{border-color:var(--line2);color:var(--body)}
-.cmpbtn.ghost:hover{background:var(--surface2);color:var(--text);border-color:var(--text)}
-.cmpbtn:hover{background:var(--text);color:var(--bg)}
 /* A toast already says what happened, but the badge is the thing being watched. */
 @keyframes cmppop{0%{transform:scale(1)}32%{transform:scale(1.45)}100%{transform:scale(1)}}
-.cmpbtn .c.pop{animation:cmppop .42s cubic-bezier(.2,.9,.3,1)}
+.nav a .c.pop{animation:cmppop .42s cubic-bezier(.2,.9,.3,1)}
 /* Money animations. The price rail flashes when the figure changes under you, the cheapest
    offer takes one sweep of light, and a savings bar grows once it is actually on screen.
    _app.js skips all of them under reduced motion - these carry no transform for the global
@@ -168,15 +161,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .orow.fx-glint{background-image:linear-gradient(100deg,transparent 41%,color-mix(in srgb,var(--brand) 20%,transparent) 50%,transparent 59%);
   background-size:260% 100%;background-repeat:no-repeat;animation:fxglint .95s ease-out}
 .sv .bar i{transition:width .9s cubic-bezier(.22,1,.36,1)}
-.cmpbtn .c{min-width:20px;height:20px;padding:0 6px;border-radius:var(--pill);background:var(--brand);color:#fff;
-  font-size:11.5px;font-weight:700;display:grid;place-items:center}
-.cmpbtn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
-@media (max-width:640px){.cmpbtn span.lbl{display:none}.cmpbtn{padding:0 11px}}
+.nav a .c{min-width:19px;height:19px;margin-left:6px;padding:0 6px;border-radius:var(--pill);background:var(--brand);
+  color:#fff;font-size:11.5px;font-weight:700;display:inline-grid;place-items:center;vertical-align:1px}
+.nav a .c:empty{display:none}
 @media (max-width:820px){
   .topnav{flex-wrap:wrap;height:auto;padding-block:12px;gap:10px}
   .topnav .logo{order:1}.mast-r{order:2;margin-left:auto}
   .srch{order:3;flex:1 1 100%;max-width:none}
-  .cmpbtn{margin-left:4px}
+  .nav{order:4;flex:1 1 100%}
 }
 
 /* ---- search: a list while you type, a whole page behind Enter ---- */
@@ -961,7 +953,7 @@ a.store:hover .nm{color:var(--brand)}
    square centred on them. The ones that are simply short get taller. Both only under
    (pointer: coarse), so nothing about the desktop layout moves. */
 @media (pointer: coarse){
-  .ctabs .ctab, .fmore, .pg, .toggle, .fbar summary, .cmpbtn, #langs button{min-height:44px}
+  .ctabs .ctab, .fmore, .pg, .toggle, .fbar summary, .nav a, #langs button{min-height:44px}
   .fav::after, .srch-go::after, .th::after, #langs button::after{
     content:'';position:absolute;top:50%;left:50%;width:44px;height:44px;
     transform:translate(-50%,-50%);border-radius:50%}
@@ -988,9 +980,6 @@ a.store:hover .nm{color:var(--brand)}
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <button class="cmpbtn" id="hdrCmp">
-        <svg viewBox="0 0 24 24"><path d="M4 7h10M4 17h10M17 4v6M20 7h-6M20 17h-6M7 14v6"/></svg>
-        <span class="lbl" id="hdrCmpLbl"></span><span class="c" id="hdrCmpN">0</span></button>
       <span class="langs" id="langs"></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
@@ -1628,25 +1617,30 @@ function paintChrome() {
   // "Catalog" now goes, and the comparison.
   $('#nav').innerHTML =
     `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
-    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}</a>`;
-  $('#hdrCmpLbl').textContent = t('nav.compare');
+    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}`
+    + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`;
   paintCmpCount();
   $('#foot').innerHTML = `<b>impulsive</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
-// of the same list pinned over the page was doing nothing but covering the last row. What is
-// kept is the count in the header, the dimming of cards that cannot join, and the one message
-// that has to be said out loud when a pick is refused.
+// of the same list pinned over the page was doing nothing but covering the last row. The header
+// button that duplicated it is gone too - one way in, the nav link, which now carries the count.
+// What is kept is the dimming of cards that cannot join, and the one message that has to be
+// said out loud when a pick is refused.
 // The badge is the thing being watched when a product is added, and it was changing silently -
 // the toast said what happened somewhere else on the page. It pops only when the count GOES UP,
 // so removing one, or a plain re-render, stays quiet.
+let lastCmpN = 0;
 function paintCmpCount() {
-  const el = $('#hdrCmpN');
+  const el = $('#cmpN');
   if (!el) return;
-  const was = +el.textContent || 0;
-  el.textContent = st.cmp.length;
+  // The badge lives in the nav now, which render() rewrites, so the previous count cannot be
+  // read back off the element - a re-render would always look like no change. Keep it here.
+  const was = lastCmpN;
+  lastCmpN = st.cmp.length;
+  el.textContent = st.cmp.length || '';
   if (st.cmp.length <= was) return;
   el.classList.remove('pop');
   void el.offsetWidth;          // restart the animation rather than let it be ignored
@@ -2954,7 +2948,6 @@ document.addEventListener('click', e => {
     st.theme = st.theme === 'auto' ? (osDark ? 'light' : 'dark') : st.theme === 'dark' ? 'light' : 'dark';
     save(); paintChrome(); return;
   }
-  if (e.target.closest('#hdrCmp')) { location.hash = '#/compare'; return; }
   const tg = e.target.closest('button[data-f]');
   if (tg) { const k = tg.dataset.f; st[k] = !st[k]; refresh(); return; }
   const ap = e.target.closest('[data-apply]');
