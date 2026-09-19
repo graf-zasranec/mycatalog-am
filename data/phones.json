@@ -34894,10 +34894,12 @@
   "id": "samsung-galaxy-buds-4-pro",
   "category": "earbuds",
   "brand": "Samsung",
-  "name": "Galaxy Buds 4 Pro",
+  "name": "Galaxy Buds4 Pro",
   "aliases": [
    "Samsung Galaxy Buds 4 Pro",
-   "Galaxy Buds 4 Pro Headphone"
+   "Galaxy Buds 4 Pro Headphone",
+   "Galaxy Buds4 Pro R640",
+   "Headphone Galaxy Buds4 Pro R640"
   ],
   "tier": "flagship",
   "released": "2025-07",
@@ -35063,36 +35065,6 @@
    "ip": "IPX7"
   },
   "summaryEn": "The 2021 Pro buds — still the only Galaxy Buds rated IPX7."
- },
- {
-  "id": "samsung-galaxy-buds4-pro-r640",
-  "category": "headphones",
-  "brand": "Samsung",
-  "name": "Galaxy Buds4 Pro R640",
-  "aliases": [
-   "Headphone Galaxy Buds4 Pro R640"
-  ],
-  "tier": "budget",
-  "priceAmd": 72900,
-  "priceAmdMax": 72900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 72900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy Buds4 Pro R640.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
  },
  {
   "id": "samsung-galaxy-fe",
@@ -36803,13 +36775,15 @@
   "id": "samsung-galaxy-watch-8-classic",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch 8 Classic",
+  "name": "Galaxy Watch8 Classic",
   "aliases": [
-   "Samsung Galaxy Watch 8 Classic"
+   "Samsung Galaxy Watch 8 Classic",
+   "Galaxy Watch8 Classic L500",
+   "Սմարթ ժամացույց Samsung Galaxy Watch8 Classic L500 Սպիտակ"
   ],
   "tier": "flagship",
   "released": "2025-07",
-  "priceAmd": 209900,
+  "priceAmd": 155900,
   "priceAmdMax": 209900,
   "popularity": 60,
   "accent": "#26262A",
@@ -36827,6 +36801,11 @@
     "ram": null,
     "storage": 46,
     "priceAmd": 209900
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 155900
    }
   ],
   "connectivity": {
@@ -36984,36 +36963,6 @@
   ],
   "colors": [],
   "variantUnit": "mm"
- },
- {
-  "id": "samsung-galaxy-watch8-classic-l500",
-  "category": "watch",
-  "brand": "Samsung",
-  "name": "Galaxy Watch8 Classic L500",
-  "aliases": [
-   "Սմարթ ժամացույց Samsung Galaxy Watch8 Classic L500 Սպիտակ"
-  ],
-  "tier": "mid",
-  "priceAmd": 155900,
-  "priceAmdMax": 155900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 155900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy Watch8 Classic L500.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
  },
  {
   "id": "samsung-galaxy-z-flip-7",
