@@ -47,6 +47,36 @@
    "width": 0
   },
   {
+   "id": "microsoft-xbox",
+   "brand": "Microsoft",
+   "name": "Xbox Headset",
+   "category": "headphones",
+   "shops": 4,
+   "query": "Microsoft Xbox Headset",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-x7",
+   "brand": "Xiaomi",
+   "name": "Poco X7",
+   "category": "phone",
+   "shops": 4,
+   "query": "Xiaomi Poco X7",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-buds-6",
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 6",
+   "category": "earbuds",
+   "shops": 4,
+   "query": "Xiaomi Redmi Buds 6",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "apple-ultra-2",
    "brand": "Apple",
    "name": "Watch Ultra 2",
@@ -67,12 +97,12 @@
    "width": 0
   },
   {
-   "id": "xiaomi-poco-x7",
+   "id": "xiaomi-redmi-8-active-bhr08jtgl",
    "brand": "Xiaomi",
-   "name": "Poco X7",
-   "category": "phone",
+   "name": "Redmi Buds 8 Active",
+   "category": "headphones",
    "shops": 3,
-   "query": "Xiaomi Poco X7",
+   "query": "Xiaomi Redmi Buds 8 Active",
    "what": "missing",
    "width": 0
   },
@@ -257,6 +287,16 @@
    "width": 0
   },
   {
+   "id": "samsung-galaxy-6-classic-43mm-r950",
+   "brand": "Samsung",
+   "name": "Galaxy Watch 6 Classic",
+   "category": "watch",
+   "shops": 2,
+   "query": "Samsung Galaxy Watch 6 Classic",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "samsung-galaxy-a07s",
    "brand": "Samsung",
    "name": "Galaxy A07s",
@@ -283,6 +323,16 @@
    "category": "watch",
    "shops": 2,
    "query": "Samsung Galaxy Watch Active 2",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-galaxy-ultra-47mm-2024",
+   "brand": "Samsung",
+   "name": "Galaxy Watch Ultra 2024",
+   "category": "watch",
+   "shops": 2,
+   "query": "Samsung Galaxy Watch Ultra 2024",
    "what": "missing",
    "width": 0
   },
@@ -2427,16 +2477,6 @@
    "width": 0
   },
   {
-   "id": "microsoft-xbox",
-   "brand": "Microsoft",
-   "name": "Xbox Headset",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Microsoft Xbox Headset",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "nothing-6974434224179",
    "brand": "Nothing",
    "name": "6974434224179",
@@ -2507,16 +2547,6 @@
    "width": 0
   },
   {
-   "id": "samsung-galaxy-6-classic-43mm-r950",
-   "brand": "Samsung",
-   "name": "Galaxy Watch 6 Classic",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch 6 Classic",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-7-ultra-47mm-sm-l705f",
    "brand": "Samsung",
    "name": "Galaxy Watch 7 Ultra",
@@ -2533,16 +2563,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Samsung Galaxy Watch FE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-ultra-47mm-2024",
-   "brand": "Samsung",
-   "name": "Galaxy Watch Ultra 2024",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch Ultra 2024",
    "what": "missing",
    "width": 0
   },
@@ -3677,16 +3697,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-8-active-bhr08jtgl",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 8 Active",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 8 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-pad-se-8-7-4g",
    "brand": "Xiaomi",
    "name": "Redmi Pad SE 8.7 4G",
@@ -3743,16 +3753,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Xiaomi Watch S1 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-buds-6",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 6",
-   "category": "earbuds",
-   "shops": 0,
-   "query": "Xiaomi Redmi Buds 6",
    "what": "missing",
    "width": 0
   },
