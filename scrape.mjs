@@ -24,6 +24,21 @@ const TIMEOUT_MS = 30000;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" plus ").replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
 
+async function vlvPrice(vid) {
+  try {
+    const r = await fetch(`https://vlv.am/api/product-info/${vid}`, { method: 'POST', redirect: 'follow',
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+      headers: { 'user-agent': UA, 'content-type': 'application/json', accept: 'application/json' }, body: '{}' });
+    if (!r.ok) return 0;
+    const t = await r.text();
+    // Regex literals, not RegExp(string): a built-up pattern needs the backslash doubled, and
+    // getting that wrong fails silently - every product falls back and the fix looks applied.
+    const promo = Number((t.match(/"promo_price":(\d+)/) || [])[1]) || 0;
+    const sell = Number((t.match(/"selling_price":(\d+)/) || [])[1]) || 0;
+    return promo || sell;
+  } catch { return 0; }
+}
+
 async function get(url, tries = 2) {
   for (let i = 0; i < tries; i++) {
     try {
@@ -1328,6 +1343,10 @@ const SHOPS = {
 
   vlv: {
     name: 'VLV', site: 'https://vlv.am', note: 'electronics and home retailer',
+    // promo_price while a promotion is running, selling_price otherwise. robots.txt allows this
+    // path - the price endpoints it does disallow (/price/ajax, /getHomeActionPrice) are other
+    // paths, and are not touched. 0 means "could not tell", and the caller keeps the ld+json.
+    async price(vid) { return vlvPrice(vid); },
     async run() {
       // Their sitemap lists 13 003 products as /Product/<number> with no name in the URL, so
       // there is nothing to filter on before fetching. The title IS on the page, so the id ->
@@ -1350,7 +1369,12 @@ const SHOPS = {
           .replace(/^s*Buys+/i, '').replace(/s+in the VLV[^]*$/i, '');
         // the URL is /Product/44014 and names nothing, so the product is identified by its title
         const id = matchPhone(title);
-        const price = Math.round(Number((o && o.price) || 0));
+        // The ld+json price is the catalogue figure and is neither always current nor ever the
+        // discounted one: the 65" S95F printed 1,111,000 on the page while its ld+json still said
+        // 1,587,000 and its own selling_price said 1,325,810. Three numbers, and the one the
+        // customer pays is the smallest. So ask the endpoint the page itself asks.
+        const live = await vlvPrice(vid); await sleep(DELAY_MS);
+        const price = live || Math.round(Number((o && o.price) || 0));
         if (!id || !price || price < 5000) continue;
         const img = safeUrl(String((Array.isArray(p.image) ? p.image[0] : p.image) || '')) || null;
         out.push({ id, price, title, url: u, image: img,

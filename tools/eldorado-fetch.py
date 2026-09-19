@@ -19,12 +19,17 @@ from scrapling.fetchers import Fetcher
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'data' / 'eldorado.json'
 DELAY = 7            # what their robots.txt asks of Googlebot
-PAGES = 6            # per category; they show 24 a page
+# A ceiling, not a target: each category stops the moment a page adds no product it has not
+# already seen. Magento clamps an out-of-range page to the last real one, so an overrun page
+# repeats and dedupes to nothing, which is the same signal. Six cut every deep aisle short -
+# TVs alone run past page 12.
+PAGES = 25           # per category; they show 16 a page
 
 CATEGORIES = [
     'phones/tablets-and-smartphones/smartphones',
     'phones/tablets-and-smartphones/tablets',
     'phones/smart-watches',
+    'audio-video/tv',
     'audio-video/players-headsets/audio-headset',
     'audio-video/players-headsets/soudbar',
     'computer-equipments/computers/notebooks',
