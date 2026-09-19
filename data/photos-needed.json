@@ -2,9 +2,9 @@
  "generated": "2026-09-19",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1361,
- "missing": 623,
- "tooSmall": 42,
+ "total": 1334,
+ "missing": 538,
+ "tooSmall": 50,
  "products": [
   {
    "id": "samsung-galaxy-3",
@@ -167,26 +167,6 @@
    "width": 0
   },
   {
-   "id": "apple-homepod-mini",
-   "brand": "Apple",
-   "name": "HomePod Mini",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Apple HomePod Mini",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "beats-studio",
-   "brand": "Beats",
-   "name": "Studio Buds",
-   "category": "earbuds",
-   "shops": 4,
-   "query": "Beats Studio Buds",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dji-mic-mini",
    "brand": "DJI",
    "name": "Mic Mini",
@@ -317,16 +297,6 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-11",
-   "brand": "Apple",
-   "name": "iPad 11",
-   "category": "tablet",
-   "shops": 3,
-   "query": "Apple iPad 11",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ultra-2",
    "brand": "Apple",
    "name": "Watch Ultra 2",
@@ -343,16 +313,6 @@
    "category": "laptop",
    "shops": 3,
    "query": "ASUS Vivobook 15 X1504VA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "beats-fit-pro",
-   "brand": "Beats",
-   "name": "Fit Pro",
-   "category": "headphones",
-   "shops": 3,
-   "query": "Beats Fit Pro",
    "what": "missing",
    "width": 0
   },
@@ -527,32 +487,12 @@
    "width": 0
   },
   {
-   "id": "acer-swift-3-sf314-59-75qc",
-   "brand": "Acer",
-   "name": "Swift 3 SF314 59 75QC",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Acer Swift 3 SF314 59 75QC",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
    "brand": "Apple",
    "name": "iPad Air 11 Wi-Fi + Cellular 2024",
    "category": "tablet",
    "shops": 2,
    "query": "Apple iPad Air 11 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-air-13-wi-fi-2024",
-   "brand": "Apple",
-   "name": "iPad Air 13 Wi-Fi 2024",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Apple iPad Air 13 Wi-Fi 2024",
    "what": "missing",
    "width": 0
   },
@@ -577,56 +517,6 @@
    "width": 0
   },
   {
-   "id": "apple-macbook-pro-14-m4",
-   "brand": "Apple",
-   "name": "Macbook PRO 14 M4",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Apple Macbook PRO 14 M4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-p5405csa",
-   "brand": "ASUS",
-   "name": "P5405CSA",
-   "category": "laptop",
-   "shops": 2,
-   "query": "ASUS P5405CSA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vg279q3a-90lm0990-b01170",
-   "brand": "ASUS",
-   "name": "VG279Q3A 90LM0990-B01170",
-   "category": "monitor",
-   "shops": 2,
-   "query": "ASUS VG279Q3A 90LM0990-B01170",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vy249hf-w",
-   "brand": "ASUS",
-   "name": "VY249HF-W",
-   "category": "monitor",
-   "shops": 2,
-   "query": "ASUS VY249HF-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vy279hf-w-90lm06d2-b02170",
-   "brand": "ASUS",
-   "name": "VY279HF-W 90LM06D2-B02170",
-   "category": "monitor",
-   "shops": 2,
-   "query": "ASUS VY279HF-W 90LM06D2-B02170",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "beats-flex-all-day",
    "brand": "Beats",
    "name": "Flex All-Day",
@@ -643,36 +533,6 @@
    "category": "headphones",
    "shops": 2,
    "query": "Bose QuietComfort 45 Acoustic",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-quietcomfort-ii",
-   "brand": "Bose",
-   "name": "QuietComfort II",
-   "category": "earbuds",
-   "shops": 2,
-   "query": "Bose QuietComfort II",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-soundlink-mini-ii",
-   "brand": "Bose",
-   "name": "Soundlink Mini II",
-   "category": "speaker",
-   "shops": 2,
-   "query": "Bose Soundlink Mini II",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-soundlink-revolve-ii",
-   "brand": "Bose",
-   "name": "SoundLink Revolve II",
-   "category": "speaker",
-   "shops": 2,
-   "query": "Bose SoundLink Revolve II",
    "what": "missing",
    "width": 0
   },
@@ -1237,56 +1097,6 @@
    "width": 0
   },
   {
-   "id": "acer-aspire-a16-51gm-71yf",
-   "brand": "Acer",
-   "name": "Aspire A16-51GM-71YF",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Aspire A16-51GM-71YF",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-aspire-a514-56m-770k",
-   "brand": "Acer",
-   "name": "Aspire A514-56M-770K",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Aspire A514-56M-770K",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-aspire-al15-52",
-   "brand": "Acer",
-   "name": "Aspire AL15-52",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Aspire AL15-52",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-aspire-lite-al16-52p-32e3",
-   "brand": "Acer",
-   "name": "Aspire Lite AL16-52P-32E3",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Aspire Lite AL16-52P-32E3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-aspire-lite-al16-52p-59qu",
-   "brand": "Acer",
-   "name": "Aspire Lite AL16-52P-59QU",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Aspire Lite AL16-52P-59QU",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001",
    "brand": "Acer",
    "name": "Aspire Lite AL15-36P",
@@ -1297,82 +1107,12 @@
    "width": 0
   },
   {
-   "id": "acer-nitro-5-an515-45-r7sl",
-   "brand": "Acer",
-   "name": "Nitro 5 AN515-45-R7SL",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Nitro 5 AN515-45-R7SL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-nitro-5-anv15-51-93hs",
-   "brand": "Acer",
-   "name": "Nitro 5 ANV15-51-93HS",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Nitro 5 ANV15-51-93HS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-nitro-v15-anv15-51-789j",
-   "brand": "Acer",
-   "name": "Nitro V15 ANV15-51-789J",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Nitro V15 ANV15-51-789J",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-nitro-v16-anv16-71-70f7",
-   "brand": "Acer",
-   "name": "Nitro V16 ANV16-71-70F7",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Nitro V16 ANV16-71-70F7",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-predator-helios-neo-14-phn14-51-79ub",
-   "brand": "Acer",
-   "name": "Predator Helios Neo 14 PHN14-51-79UB",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Predator Helios Neo 14 PHN14-51-79UB",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "acer-predator-triton-300-pt-315-53-75-xx",
-   "brand": "Acer",
-   "name": "Predator Triton 300 PT 315-53-75 XX",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Acer Predator Triton 300 PT 315-53-75 XX",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "aoc-49-lcd-ag493ucx",
    "brand": "AOC",
    "name": "49\" LCD AG493UCX",
    "category": "monitor",
    "shops": 1,
    "query": "AOC 49\" LCD AG493UCX",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-homepod-2",
-   "brand": "Apple",
-   "name": "HomePod 2",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Apple HomePod 2",
    "what": "missing",
    "width": 0
   },
@@ -1397,26 +1137,6 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-10-2-9th-gen-wi-fi",
-   "brand": "Apple",
-   "name": "iPad 10.2 9th Gen Wi-Fi",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 10.2 9th Gen Wi-Fi",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-10-2-9th-generation-wi-fi",
-   "brand": "Apple",
-   "name": "iPad 10.2 9th Generation , , Wi-Fi",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 10.2 9th Generation , , Wi-Fi",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-10-a16-wi-fi-2025",
    "brand": "Apple",
    "name": "iPad 10 A16 Wi-Fi /2025",
@@ -1427,62 +1147,12 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-9",
-   "brand": "Apple",
-   "name": "iPad 9",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-air-11-wi-fi-2024",
-   "brand": "Apple",
-   "name": "iPad Air 11 Wi-Fi 2024",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Air 11 Wi-Fi 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-air-13-m3",
-   "brand": "Apple",
-   "name": "iPad Air 13 M3",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Air 13 M3",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-air-5-wi-fi-plus-cellular-2022",
    "brand": "Apple",
    "name": "iPad Air 5 Wi-Fi + Cellular 2022",
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Air 5 Wi-Fi + Cellular 2022",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-mini-6",
-   "brand": "Apple",
-   "name": "iPad Mini 6",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Mini 6",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-mini-7",
-   "brand": "Apple",
-   "name": "iPad Mini 7",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Mini 7",
    "what": "missing",
    "width": 0
   },
@@ -1527,16 +1197,6 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-pro-13-m4",
-   "brand": "Apple",
-   "name": "iPad Pro 13 M4",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Pro 13 M4",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024",
    "brand": "Apple",
    "name": "iPad Pro 13 M4 Wi-Fi + Cellular 2024",
@@ -1547,72 +1207,12 @@
    "width": 0
   },
   {
-   "id": "apple-ipad-pro-13-wi-fi-2024",
-   "brand": "Apple",
-   "name": "iPad Pro 13 Wi-Fi 2024",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Pro 13 Wi-Fi 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-pro-13-wi-fi-plus-cellular-2024",
    "brand": "Apple",
    "name": "iPad Pro 13 Wi-Fi + Cellular 2024",
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Pro 13 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-iphone-14-pro-max-magic-glass-box",
-   "brand": "Apple",
-   "name": "iPhone 14 Pro Max Magic Glass Box",
-   "category": "phone",
-   "shops": 1,
-   "query": "Apple iPhone 14 Pro Max Magic Glass Box",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-13-m1-2024",
-   "brand": "Apple",
-   "name": "MacBook Air 13 M1 2024",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air 13 M1 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-13-mgn63-m1-2020",
-   "brand": "Apple",
-   "name": "MacBook Air 13 MGN63 M1 2020",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air 13 MGN63 M1 2020",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-13-mgn93-m1-2020",
-   "brand": "Apple",
-   "name": "MacBook Air 13 MGN93 M1 2020",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air 13 MGN93 M1 2020",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-13-mgnd3-m1-2020",
-   "brand": "Apple",
-   "name": "MacBook Air 13 MGND3 M1 2020",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air 13 MGND3 M1 2020",
    "what": "missing",
    "width": 0
   },
@@ -1637,132 +1237,12 @@
    "width": 0
   },
   {
-   "id": "apple-macbook-air-mgn63-late-2020",
-   "brand": "Apple",
-   "name": "MacBook Air MGN63 Late 2020",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air MGN63 Late 2020",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-mgn93-late-2020",
-   "brand": "Apple",
-   "name": "MacBook Air MGN93 Late 2020",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air MGN93 Late 2020",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-14-2023-mtl73",
-   "brand": "Apple",
-   "name": "MacBook Pro 14 2023 MTL73",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 14 2023 MTL73",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-14-m4-max",
-   "brand": "Apple",
-   "name": "Macbook PRO 14 M4 Max",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple Macbook PRO 14 M4 Max",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-14-mr7j3-2023",
-   "brand": "Apple",
-   "name": "MacBook Pro 14 MR7J3 2023",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 14 MR7J3 2023",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-14-mrx33-2023",
-   "brand": "Apple",
-   "name": "MacBook Pro 14 MRX33 2023",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 14 MRX33 2023",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-14-mrx43-2023",
-   "brand": "Apple",
-   "name": "MacBook Pro 14 MRX43 2023",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 14 MRX43 2023",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-16-m4-max",
-   "brand": "Apple",
-   "name": "Macbook PRO 16 M4 Max",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple Macbook PRO 16 M4 Max",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-16-m4-pro",
-   "brand": "Apple",
-   "name": "Macbook PRO 16 M4 Pro",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple Macbook PRO 16 M4 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-16-mrw23",
-   "brand": "Apple",
-   "name": "MacBook Pro 16 MRW23",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 16 MRW23",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-pro-16-mrw63-2023",
-   "brand": "Apple",
-   "name": "MacBook Pro 16 MRW63 2023",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 16 MRW63 2023",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",
    "brand": "Apple",
    "name": "Studio Display XDR",
    "category": "monitor",
    "shops": 1,
    "query": "Apple Studio Display XDR",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-tws-bluetooth-headsets-3rd-generation",
-   "brand": "Apple",
-   "name": "AirPods 3rd Generation",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Apple AirPods 3rd Generation",
    "what": "missing",
    "width": 0
   },
@@ -1917,302 +1397,12 @@
    "width": 0
   },
   {
-   "id": "asus-mouse-pad-nc01-rog-sheath-blk-90mp00k3-b0ua00",
-   "brand": "ASUS",
-   "name": "ROG Sheath Mouse Pad",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Sheath Mouse Pad",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-mouse-rog-keris-p509-90mp01r0-b0ua00",
-   "brand": "ASUS",
-   "name": "Mouse ROG Keris P509 90MP01R0-B0UA00",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS Mouse ROG Keris P509 90MP01R0-B0UA00",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-mouse-rog-strix-carry-p508-90mp01b0-b0ua00",
-   "brand": "ASUS",
-   "name": "ROG Strix Carry Mouse",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix Carry Mouse",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-p504-rog-gladius-ii-origin",
-   "brand": "ASUS",
-   "name": "P504 ROG Gladius II Origin",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS P504 ROG Gladius II Origin",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-proart-lc-420",
-   "brand": "ASUS",
-   "name": "ProArt LC 420",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS ProArt LC 420",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-gladius-ii-core-p507",
-   "brand": "ASUS",
-   "name": "ROG Gladius II Core P507",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Gladius II Core P507",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-hyperion-gr701",
-   "brand": "ASUS",
-   "name": "ROG Hyperion GR701",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Hyperion GR701",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-keris-p513",
-   "brand": "ASUS",
-   "name": "ROG Keris P513",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Keris P513",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-rg-07-performance-thermal-paste-kit",
-   "brand": "ASUS",
-   "name": "ROG RG-07 Performance Thermal Paste Kit",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG RG-07 Performance Thermal Paste Kit",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-650g",
-   "brand": "ASUS",
-   "name": "ROG Strix 650G",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix 650G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-b760-g-gaming-wi-fi-d4",
-   "brand": "ASUS",
-   "name": "ROG Strix B760-G Gaming Wi-Fi D4",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix B760-G Gaming Wi-Fi D4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-b760-g-gaming-wifi",
-   "brand": "ASUS",
-   "name": "ROG Strix B760-G Gaming WiFi",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix B760-G Gaming WiFi",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-gs-ax3000",
-   "brand": "ASUS",
-   "name": "ROG Strix GS-AX3000",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix GS-AX3000",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-gs-ax5400",
-   "brand": "ASUS",
-   "name": "ROG Strix GS-AX5400",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix GS-AX5400",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-helios-gx601-90dc0020-b39000",
-   "brand": "ASUS",
-   "name": "ROG Strix Helios GX601 90DC0020-B39000",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix Helios GX601 90DC0020-B39000",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-impact-ii-p506",
-   "brand": "ASUS",
-   "name": "ROG Strix Impact II P506",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix Impact II P506",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-impact-ii-wireless",
-   "brand": "ASUS",
-   "name": "ROG Strix Impact II Wireless",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix Impact II Wireless",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-lc-ii-360",
-   "brand": "ASUS",
-   "name": "ROG Strix LC II 360",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix LC II 360",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-z790-f-gaming-wi-fi-ii",
-   "brand": "ASUS",
-   "name": "ROG Strix Z790-F Gaming Wi-Fi II",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix Z790-F Gaming Wi-Fi II",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-rog-strix-z790-h-gaming-wi-fi",
-   "brand": "ASUS",
-   "name": "ROG Strix Z790-H Gaming Wi-Fi",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS ROG Strix Z790-H Gaming Wi-Fi",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-1200-g",
-   "brand": "ASUS",
-   "name": "TUF Gaming 1200 G",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming 1200 G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-450b",
-   "brand": "ASUS",
-   "name": "TUF Gaming 450B",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming 450B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-550w",
-   "brand": "ASUS",
-   "name": "TUF Gaming 550W",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming 550W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-650b",
-   "brand": "ASUS",
-   "name": "TUF Gaming 650B",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming 650B",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "asus-tuf-gaming-a16-fa608p",
    "brand": "ASUS",
    "name": "TUF Gaming A16 FA608P",
    "category": "laptop",
    "shops": 1,
    "query": "ASUS TUF Gaming A16 FA608P",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-gt302-argb",
-   "brand": "ASUS",
-   "name": "TUF Gaming GT302 ARGB",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming GT302 ARGB",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-k1",
-   "brand": "ASUS",
-   "name": "TUF Gaming K1",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming K1",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-m3-mouse-p305-90mp01j0-b0ua00",
-   "brand": "ASUS",
-   "name": "TUF Gaming M3 Mouse P305 90MP01J0-B0UA00",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming M3 Mouse P305 90MP01J0-B0UA00",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-gaming-p3-06",
-   "brand": "ASUS",
-   "name": "TUF Gaming P3 06",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF Gaming P3 06",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-tuf-h3-wireless",
-   "brand": "ASUS",
-   "name": "TUF H3 Wireless",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF H3 Wireless",
    "what": "missing",
    "width": 0
   },
@@ -2457,26 +1647,6 @@
    "width": 0
   },
   {
-   "id": "bose-soundlink-flex",
-   "brand": "Bose",
-   "name": "SoundLink Flex",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Bose SoundLink Flex",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-soundlink-revolve",
-   "brand": "Bose",
-   "name": "SoundLink Revolve",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Bose SoundLink Revolve",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "bose-soundsport-free",
    "brand": "Bose",
    "name": "SoundSport Free",
@@ -2493,16 +1663,6 @@
    "category": "headphones",
    "shops": 1,
    "query": "Bose SoundSport Free Bright",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-sport",
-   "brand": "Bose",
-   "name": "Sport",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Bose Sport",
    "what": "missing",
    "width": 0
   },
@@ -3443,16 +2603,6 @@
    "category": "desktop",
    "shops": 1,
    "query": "HP Envy PC 7X9X5EA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-envy-rechargeable-mouse-500",
-   "brand": "HP",
-   "name": "Envy Rechargeable Mouse 500",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP Envy Rechargeable Mouse 500",
    "what": "missing",
    "width": 0
   },
@@ -6297,6 +5447,56 @@
    "width": 526
   },
   {
+   "id": "acer-aspire-a16-51gm-71yf",
+   "brand": "Acer",
+   "name": "Aspire A16-51GM-71YF",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Acer Aspire A16-51GM-71YF",
+   "what": "too small",
+   "width": 459
+  },
+  {
+   "id": "acer-aspire-a514-56m-770k",
+   "brand": "Acer",
+   "name": "Aspire A514-56M-770K",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Acer Aspire A514-56M-770K",
+   "what": "too small",
+   "width": 459
+  },
+  {
+   "id": "acer-aspire-al15-52",
+   "brand": "Acer",
+   "name": "Aspire AL15-52",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Acer Aspire AL15-52",
+   "what": "too small",
+   "width": 569
+  },
+  {
+   "id": "acer-aspire-lite-al16-52p-32e3",
+   "brand": "Acer",
+   "name": "Aspire Lite AL16-52P-32E3",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Acer Aspire Lite AL16-52P-32E3",
+   "what": "too small",
+   "width": 459
+  },
+  {
+   "id": "acer-aspire-lite-al16-52p-59qu",
+   "brand": "Acer",
+   "name": "Aspire Lite AL16-52P-59QU",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Acer Aspire Lite AL16-52P-59QU",
+   "what": "too small",
+   "width": 459
+  },
+  {
    "id": "amazon-kindle-paperwhite-kids-11",
    "brand": "Amazon",
    "name": "Kindle Paperwhite Kids (11th gen)",
@@ -6305,6 +5505,36 @@
    "query": "Amazon Kindle Paperwhite Kids (11th gen)",
    "what": "too small",
    "width": 545
+  },
+  {
+   "id": "apple-ipad-pro-13-wi-fi-2024",
+   "brand": "Apple",
+   "name": "iPad Pro 13 Wi-Fi 2024",
+   "category": "tablet",
+   "shops": 1,
+   "query": "Apple iPad Pro 13 Wi-Fi 2024",
+   "what": "too small",
+   "width": 579
+  },
+  {
+   "id": "apple-macbook-air-13-mgn93-m1-2020",
+   "brand": "Apple",
+   "name": "MacBook Air 13 MGN93 M1 2020",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Apple MacBook Air 13 MGN93 M1 2020",
+   "what": "too small",
+   "width": 535
+  },
+  {
+   "id": "apple-macbook-air-13-mgnd3-m1-2020",
+   "brand": "Apple",
+   "name": "MacBook Air 13 MGND3 M1 2020",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Apple MacBook Air 13 MGND3 M1 2020",
+   "what": "too small",
+   "width": 482
   },
   {
    "id": "apple-watch-series-12-gps-42mm",
