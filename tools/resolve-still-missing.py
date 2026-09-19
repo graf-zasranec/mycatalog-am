@@ -56,21 +56,35 @@ def collect_ibolit():
 
 
 def collect_pixel():
-    # The sitemap is stale (2021). The live catalog pages hold current products.
+    # The sitemap is stale (2021). The live catalog pages hold current products:
+    # paginated with ?page=N on /am/products/<category>. Discover categories from nav.
     out = {}
-    for pn in range(1, 13):
-        u = f'https://www.pixel.am/am/products?p={pn}'
-        try:
-            h = Fetcher.get(u, impersonate='chrome', timeout=40).html_content or ''
-        except Exception:
-            continue
-        got = 0
-        for path in set(re.findall(r'href="(?:https://www\.pixel\.am)?(/am/product/[^"]+)"', h)):
-            key = norm(slug_of(path))
-            out.setdefault(key, 'https://www.pixel.am' + path)
-            got += 1
-        if not got:
-            break
+    h = Fetcher.get('https://www.pixel.am/am', impersonate='chrome', timeout=40).html_content or ''
+    cats = set()
+    for x in re.findall(r'href="([^"]+)"', h):
+        x = unquote(x)
+        m = re.match(r'https://www\.pixel\.am/am/products(?:/([a-z0-9-]+))?/?$', x)
+        if m and '/product/' not in x:
+            cats.add(x.split('?')[0])
+    cats.add('https://www.pixel.am/am/products')  # featured landing
+    for base in cats:
+        for pn in range(1, 30):
+            u = f'{base}?page={pn}'
+            try:
+                hh = Fetcher.get(u, impersonate='chrome', timeout=40).html_content or ''
+            except Exception:
+                break
+            got = 0
+            for path in set(re.findall(r'href="([^"]*product/[^"]+)"', hh)):
+                if not path.startswith('http'):
+                    path = 'https://www.pixel.am' + path
+                path = unquote(path)
+                if '/product/' not in path:
+                    continue
+                out.setdefault(norm(slug_of(path)), path)
+                got += 1
+            if not got:
+                break
     return out
 
 
@@ -184,15 +198,28 @@ def main():
                     return url
         return None
 
+    ARM = {'Մոխրագույն': 'grey', 'Մոխրագոյն': 'grey', 'Սև': 'black', 'Սեւ': 'black',
+           'Կապույտ': 'blue', 'Կապոյտ': 'blue', 'Սպիտակ': 'white', 'Սպիտակ': 'white',
+           'Արծաթագույն': 'silver', 'Արծաթագոյն': 'silver', 'Կաթնագույն': 'cream',
+           'Կաթնագոյն': 'cream', 'Տիտան': 'titanium'}
+
+    def localize_color(color):
+        return ARM.get(color.strip(), color)
+
     resolved = {}
     for r in rows:
         shop, title, cap = r['shop'], r['title'], (r.get('capacity') or '').strip()
         if r.get('color', '').strip():
-            cap = cap + r['color'].strip()
+            cap = (cap + localize_color(r['color'])).lower()
         want = norm(title)
         hit = manual_base(shop, want, title) or eld_code(r, shop)
+        if not hit and shop == 'ucom' and 'zflip' in want:
+            hit = 'https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html'
         if not hit:
             hit = pick(cat_for(shop), want, cap, shop)
+        if not hit:
+            # slugs often spell roman numerals with digits (Willen II -> willen-2)
+            hit = pick(cat_for(shop), want.replace('iii', '3').replace('ii', '2').replace('iv', '4'), cap, shop)
         if hit:
             # still-missing lists the 1-based file line; lns is 0-based
             resolved[int(r['listings_line']) - 1] = hit
