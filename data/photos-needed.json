@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1332,
- "missing": 537,
- "tooSmall": 50,
+ "missing": 482,
+ "tooSmall": 52,
  "products": [
   {
    "id": "samsung-galaxy-3",
@@ -73,26 +73,6 @@
    "category": "phone",
    "shops": 6,
    "query": "Xiaomi Redmi Note 17 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "harman-kardon-studio-8",
-   "brand": "Harman Kardon",
-   "name": "Studio 8",
-   "category": "speaker",
-   "shops": 5,
-   "query": "Harman Kardon Studio 8",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-flip-6",
-   "brand": "JBL",
-   "name": "Flip 6",
-   "category": "speaker",
-   "shops": 5,
-   "query": "JBL Flip 6",
    "what": "missing",
    "width": 0
   },
@@ -167,72 +147,12 @@
    "width": 0
   },
   {
-   "id": "dji-mic-mini",
-   "brand": "DJI",
-   "name": "Mic Mini",
-   "category": "drone",
-   "shops": 4,
-   "query": "DJI Mic Mini",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dji-osmo-action-6",
-   "brand": "DJI",
-   "name": "Osmo Action 6",
-   "category": "drone",
-   "shops": 4,
-   "query": "DJI Osmo Action 6",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dji-osmo-pocket-4",
    "brand": "DJI",
    "name": "Osmo Pocket 4",
    "category": "drone",
    "shops": 4,
    "query": "DJI Osmo Pocket 4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "harman-kardon-studio-9",
-   "brand": "Harman Kardon",
-   "name": "Studio 9",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Harman Kardon Studio 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-pad-10-5g",
-   "brand": "Honor",
-   "name": "Pad 10 5G",
-   "category": "tablet",
-   "shops": 4,
-   "query": "Honor Pad 10 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-x7d",
-   "brand": "Honor",
-   "name": "X7d",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor X7d",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-x7e",
-   "brand": "Honor",
-   "name": "X7E",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor X7E",
    "what": "missing",
    "width": 0
   },
@@ -323,86 +243,6 @@
    "category": "appliance",
    "shops": 3,
    "query": "Dyson Supersonic Nural HD16",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-choice-x7-lite",
-   "brand": "Honor",
-   "name": "CHOICE X7 lite",
-   "category": "headphones",
-   "shops": 3,
-   "query": "Honor CHOICE X7 lite",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-boombox-3-squad",
-   "brand": "JBL",
-   "name": "Boombox 3 Squad",
-   "category": "speaker",
-   "shops": 3,
-   "query": "JBL Boombox 3 Squad",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-live-770-nc",
-   "brand": "JBL",
-   "name": "Live 770 NC",
-   "category": "headphones",
-   "shops": 3,
-   "query": "JBL Live 770 NC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-live-flex",
-   "brand": "JBL",
-   "name": "Live Flex",
-   "category": "headphones",
-   "shops": 3,
-   "query": "JBL Live Flex",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-120",
-   "brand": "JBL",
-   "name": "Partybox 120",
-   "category": "speaker",
-   "shops": 3,
-   "query": "JBL Partybox 120",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-310",
-   "brand": "JBL",
-   "name": "PartyBox 310",
-   "category": "speaker",
-   "shops": 3,
-   "query": "JBL PartyBox 310",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-320",
-   "brand": "JBL",
-   "name": "Partybox 320",
-   "category": "speaker",
-   "shops": 3,
-   "query": "JBL Partybox 320",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-710",
-   "brand": "JBL",
-   "name": "PartyBox 710",
-   "category": "speaker",
-   "shops": 3,
-   "query": "JBL PartyBox 710",
    "what": "missing",
    "width": 0
   },
@@ -537,62 +377,12 @@
    "width": 0
   },
   {
-   "id": "dell-inspiron-16-plus-7630",
-   "brand": "Dell",
-   "name": "Inspiron 16 Plus 7630",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Dell Inspiron 16 Plus 7630",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dell-xps-16-9640",
-   "brand": "Dell",
-   "name": "XPS 16 9640",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Dell XPS 16 9640",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dyson-hd16-nural-plum",
    "brand": "Dyson",
    "name": "HD16 Supersonic Nural Jasper Plum",
    "category": "appliance",
    "shops": 2,
    "query": "Dyson HD16 Supersonic Nural Jasper Plum",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd18-vinca-blue-topaz",
-   "brand": "Dyson",
-   "name": "HD18 Supersonic Vinca Blue/Topaz",
-   "category": "appliance",
-   "shops": 2,
-   "query": "Dyson HD18 Supersonic Vinca Blue/Topaz",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-velvet",
-   "brand": "Dyson",
-   "name": "Airwrap HS08",
-   "category": "appliance",
-   "shops": 2,
-   "query": "Dyson Airwrap HS08",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-ht01-airstrait-straightener-plum",
-   "brand": "Dyson",
-   "name": "Airstrait HT01",
-   "category": "appliance",
-   "shops": 2,
-   "query": "Dyson Airstrait HT01",
    "what": "missing",
    "width": 0
   },
@@ -613,16 +403,6 @@
    "category": "appliance",
    "shops": 2,
    "query": "Dyson V12 Detect Slim Cordless Vacuum Cleaner",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-zone",
-   "brand": "Dyson",
-   "name": "Zone",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Dyson Zone",
    "what": "missing",
    "width": 0
   },
@@ -687,72 +467,12 @@
    "width": 0
   },
   {
-   "id": "hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet",
-   "brand": "HP",
-   "name": "EliteBook 8 Flip G1i",
-   "category": "laptop",
-   "shops": 2,
-   "query": "HP EliteBook 8 Flip G1i",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
    "brand": "HP",
    "name": "OmniBook 5 16",
    "category": "laptop",
    "shops": 2,
    "query": "HP OmniBook 5 16",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-boombox-3",
-   "brand": "JBL",
-   "name": "Boombox 3",
-   "category": "speaker",
-   "shops": 2,
-   "query": "JBL Boombox 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-clip-4",
-   "brand": "JBL",
-   "name": "Clip 4",
-   "category": "speaker",
-   "shops": 2,
-   "query": "JBL Clip 4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-go-3",
-   "brand": "JBL",
-   "name": "Go 3",
-   "category": "speaker",
-   "shops": 2,
-   "query": "JBL Go 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-live-pro-2-twc",
-   "brand": "JBL",
-   "name": "Live Pro 2 TWC",
-   "category": "headphones",
-   "shops": 2,
-   "query": "JBL Live Pro 2 TWC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-stage-320",
-   "brand": "JBL",
-   "name": "PartyBox Stage 320",
-   "category": "speaker",
-   "shops": 2,
-   "query": "JBL PartyBox Stage 320",
    "what": "missing",
    "width": 0
   },
@@ -1687,52 +1407,12 @@
    "width": 0
   },
   {
-   "id": "dell-inspiron-7445",
-   "brand": "Dell",
-   "name": "Inspiron 7445",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Dell Inspiron 7445",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dell-n2y94",
    "brand": "Dell",
    "name": "N2Y94",
    "category": "laptop",
    "shops": 1,
    "query": "Dell N2Y94",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dell-vostro-3520-i3",
-   "brand": "Dell",
-   "name": "Vostro 3520 i3",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Dell Vostro 3520 i3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dell-vostro-3520-i5",
-   "brand": "Dell",
-   "name": "Vostro 3520 i5",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Dell Vostro 3520 i5",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dell-vostro-3910",
-   "brand": "Dell",
-   "name": "Vostro 3910",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Dell Vostro 3910",
    "what": "missing",
    "width": 0
   },
@@ -1787,16 +1467,6 @@
    "width": 0
   },
   {
-   "id": "dyson-er-hd15",
-   "brand": "Dyson",
-   "name": "Supersonic HD15",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic HD15",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dyson-hd16-nural-velvet",
    "brand": "Dyson",
    "name": "HD16 Supersonic Nural Red Velvet",
@@ -1833,26 +1503,6 @@
    "category": "appliance",
    "shops": 1,
    "query": "Dyson HS08 Airwrap ID Multi- Red Velvet/Gold",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05",
-   "brand": "Dyson",
-   "name": "Airwrap HS05 Complete Long",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05 Complete Long",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-multi-complete-long-hs05-rich",
-   "brand": "Dyson",
-   "name": "Airwrap HS05",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS05",
    "what": "missing",
    "width": 0
   },
@@ -2467,16 +2117,6 @@
    "width": 0
   },
   {
-   "id": "honor-magicbook-pro-16-3k-core-ultra-5-125h-ram-1t-win11",
-   "brand": "Honor",
-   "name": "MagicBook Pro 16 3K",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Honor MagicBook Pro 16 3K",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
    "brand": "Honor",
    "name": "MagicBook Pro 16",
@@ -2547,52 +2187,12 @@
    "width": 0
   },
   {
-   "id": "hp-elitebook-640-g10",
-   "brand": "HP",
-   "name": "EliteBook 640 G10",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP EliteBook 640 G10",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-envy-16-h1023dx-touch-7z0p3ua",
-   "brand": "HP",
-   "name": "Envy 16-h1023dx Touch 7Z0P3UA",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP Envy 16-h1023dx Touch 7Z0P3UA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-envy-16-h1053dx-touch-9u360ua",
-   "brand": "HP",
-   "name": "Envy 16-h1053dx Touch 9U360UA",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP Envy 16-h1053dx Touch 9U360UA",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hp-envy-hayden-22c1",
    "brand": "HP",
    "name": "ENVY Hayden 22C1",
    "category": "laptop",
    "shops": 1,
    "query": "HP ENVY Hayden 22C1",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-envy-pc-7x9x5ea",
-   "brand": "HP",
-   "name": "Envy PC 7X9X5EA",
-   "category": "desktop",
-   "shops": 1,
-   "query": "HP Envy PC 7X9X5EA",
    "what": "missing",
    "width": 0
   },
@@ -2627,56 +2227,6 @@
    "width": 0
   },
   {
-   "id": "hp-probook-450-g10-85c38ea",
-   "brand": "HP",
-   "name": "ProBook 450 G10 85C38EA",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP ProBook 450 G10 85C38EA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-probook-450-g9-7c196pa",
-   "brand": "HP",
-   "name": "ProBook 450 G9 7C196PA",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP ProBook 450 G9 7C196PA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-victus-15-fa0018nq",
-   "brand": "HP",
-   "name": "Victus 15 FA0018NQ",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP Victus 15 FA0018NQ",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-victus-15-fa0020nq",
-   "brand": "HP",
-   "name": "Victus 15 FA0020NQ",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP Victus 15 FA0020NQ",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-victus-15-fa0033dx-9t9r8ua",
-   "brand": "HP",
-   "name": "Victus 15-fa0033dx 9T9R8UA",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP Victus 15-fa0033dx 9T9R8UA",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hp-victus-clamshell-roaree-24c1",
    "brand": "HP",
    "name": "Victus Clamshell Roaree 24C1",
@@ -2687,112 +2237,12 @@
    "width": 0
   },
   {
-   "id": "jbl-boombox-3-wi-fi",
-   "brand": "JBL",
-   "name": "Boombox 3 Wi-Fi",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Boombox 3 Wi-Fi",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-clip-4-squad",
-   "brand": "JBL",
-   "name": "Clip 4 Squad",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Clip 4 Squad",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-flip-6-squared",
-   "brand": "JBL",
-   "name": "Flip 6 Squared",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Flip 6 Squared",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-flip-6-star",
-   "brand": "JBL",
-   "name": "Flip 6 Star",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Flip 6 Star",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-go-3-squad",
-   "brand": "JBL",
-   "name": "Go 3 Squad",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Go 3 Squad",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-live-460-nc",
-   "brand": "JBL",
-   "name": "Live 460 NC",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Live 460 NC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-live-660-nc",
-   "brand": "JBL",
-   "name": "Live 660 NC",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Live 660 NC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-live-pro-2-tws",
-   "brand": "JBL",
-   "name": "Live Pro 2 TWS",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Live Pro 2 TWS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-110",
-   "brand": "JBL",
-   "name": "PartyBox 110",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL PartyBox 110",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "jbl-partybox-club-120",
    "brand": "JBL",
    "name": "PartyBox Club 120",
    "category": "speaker",
    "shops": 1,
    "query": "JBL PartyBox Club 120",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-quantum-200-wired",
-   "brand": "JBL",
-   "name": "Quantum 200 Wired",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Quantum 200 Wired",
    "what": "missing",
    "width": 0
   },
@@ -5377,6 +4827,16 @@
    "width": 0
   },
   {
+   "id": "jbl-clip-4",
+   "brand": "JBL",
+   "name": "Clip 4",
+   "category": "speaker",
+   "shops": 2,
+   "query": "JBL Clip 4",
+   "what": "too small",
+   "width": 369
+  },
+  {
    "id": "tcl-55v6c",
    "brand": "TCL",
    "name": "55V6C",
@@ -5645,6 +5105,16 @@
    "query": "Honor X7c",
    "what": "too small",
    "width": 534
+  },
+  {
+   "id": "jbl-clip-4-squad",
+   "brand": "JBL",
+   "name": "Clip 4 Squad",
+   "category": "speaker",
+   "shops": 1,
+   "query": "JBL Clip 4 Squad",
+   "what": "too small",
+   "width": 396
   },
   {
    "id": "realme-16",
