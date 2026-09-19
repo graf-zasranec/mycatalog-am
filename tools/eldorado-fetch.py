@@ -33,6 +33,8 @@ CATEGORIES = [
     'audio-video/players-headsets/audio-headset',
     'audio-video/players-headsets/soudbar',
     'computer-equipments/computers/notebooks',
+    'computer-equipments/computers/all-in-one',
+    'computer-equipments/computer-devices/monitors',
     'computer-equipments/accessories-for-computer-equipments/speakers',
     'games-and-entertainment/game-consoles',
     'dyson-products-eldorado/dyson-hair-care-armenia-eldorado',

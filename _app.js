@@ -192,6 +192,7 @@ const isNew = p => {
 };
 // A variant is "how much storage" for a phone or tablet and "which case size" for a watch.
 // Both ride in variant.storage; the item's variantUnit decides how it is printed.
+const inch = v => v + '″';
 const storageLabel = p => p.variantUnit === 'mm' ? 'f.case_size' : p.variantUnit === 'vram' ? 'f.vram' : 'f.storage';
 const gb = (v, unit) => unit === 'mm' ? v + ' ' + u('mm')
   : v >= 1024 ? (v / 1024) + ' TB' : v + ' ' + u('gb');
@@ -224,6 +225,8 @@ const sold = (p, field, value) => {
   // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
   // compare, so nothing is claimed.
   if (field === 'storage') return p.variantUnit === 'mm' || list.some(o => o.storage === value);
+  // A listing often names no screen, exactly as it often names no RAM, so silence is not a refusal.
+  if (field === 'size') return !list.some(o => o.size) || list.some(o => o.size === value);
   // RAM is rarely printed by a shop, so treat "never stated" as unknown rather than unavailable.
   return !list.some(o => o.ram) || list.some(o => o.ram === value);
 };
@@ -1324,7 +1327,7 @@ document.addEventListener('pointerover', e => {
   if (cyc) cycStep(cyc);
 });
 
-let SEL = { id: null, color: null, storage: null, ram: null, esim: null };
+let SEL = { id: null, color: null, storage: null, ram: null, esim: null, size: null };
 function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
@@ -1335,11 +1338,16 @@ function initSel(p) {
     esim: both ? false : null,
     color: (p.colors || []).find(c => sold(p, 'color', c)) || (p.colors || [])[0] || null,
     storage: (offs.find(o => o.storage != null) || {}).storage ?? (p.variants[0] || {}).storage ?? null,
-    ram: null
+    ram: null,
+    // A MacBook Air M5 is one product in two screens. Start on the screen somebody is actually
+    // selling, falling back to the first the catalogue lists.
+    size: (offs.find(o => o.size != null) || {}).size ?? (p.variants.find(v => v.size != null) || {}).size ?? null
   };
-  // RAM and storage are sold as a pair, so start on a combination that exists
-  const v0 = p.variants.find(v => v.storage === SEL.storage) || p.variants[0];
-  SEL.ram = v0 ? v0.ram : null;
+  // RAM and storage are sold as a pair, so start on a combination that exists - and within the
+  // chosen screen, because the 15 is not sold in every configuration the 13 is.
+  const pool = SEL.size != null ? p.variants.filter(v => v.size === SEL.size) : p.variants;
+  const v0 = pool.find(v => v.storage === SEL.storage) || pool[0] || p.variants[0];
+  if (v0) { SEL.storage = v0.storage ?? SEL.storage; SEL.ram = v0.ram; } else SEL.ram = null;
 }
 // Narrow the offer list to the chosen options.
 // RAM and storage decide the price, so those filters are HARD: if nothing matches, the answer is
@@ -1356,6 +1364,8 @@ function visibleOffers(p) {
     o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
   }
   if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
+  // soft, like RAM: a listing that never says which screen is not evidence against either
+  if (SEL.size != null) o = o.filter(v => v.size == null || v.size === SEL.size);
   // strict: an offer whose SIM build the shop never stated is not evidence for either button.
   // Treating "not stated" as "tray" put Pixel's 559 000 under Nano-SIM, below the 625 000 eSIM.
   if (SEL.esim != null) o = o.filter(v => v.esim === SEL.esim);
@@ -1400,8 +1410,10 @@ function detailView(p) {
     && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
     && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
-  const rams = [...new Set(p.variants.map(v => v.ram))].filter(v => v != null);
-  const stors = [...new Set(p.variants.map(v => v.storage))].filter(v => v != null);
+  const sizes = [...new Set(p.variants.map(v => v.size))].filter(v => v != null).sort((a, b) => a - b);
+  const vPool = SEL.size != null && sizes.length ? p.variants.filter(v => v.size === SEL.size) : p.variants;
+  const rams = [...new Set(vPool.map(v => v.ram))].filter(v => v != null);
+  const stors = [...new Set(vPool.map(v => v.storage))].filter(v => v != null);
   const inC = st.cmp.includes(p.id);
 
   const specs = GROUPS.map(([g, rows]) => {
@@ -1435,6 +1447,8 @@ function detailView(p) {
                Titanium Silver Blue, Silver Blue Titanium - so the row filled with near-duplicate
                chips that all led to the same phone. Capacity is the choice that moves the price. -->
 
+          ${sizes.length > 1 ? `<div class="og"><label>${esc(t('f.screen'))}</label>
+            <div class="bs">${sizes.map(sv => `<button data-size="${sv}" class="${sv === SEL.size ? 'on' : ''}${sold(p, 'size', sv) ? '' : ' na'}"${sold(p, 'size', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.size}">${esc(inch(sv))}</button>`).join('')}</div></div>` : ''}
           ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
           ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
@@ -2045,7 +2059,7 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim]');
+  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim],[data-size]');
   if (opt) {
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
@@ -2057,6 +2071,14 @@ document.addEventListener('click', e => {
     }
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
+    if (opt.dataset.size !== undefined) {
+      SEL.size = +opt.dataset.size;
+      const pool = ph ? ph.variants.filter(v => v.size === SEL.size) : [];
+      if (pool.length && !pool.some(v => v.storage === SEL.storage && v.ram === SEL.ram)) {
+        const v = pool.slice().sort((a, b) => (a.storage || 0) - (b.storage || 0))[0];
+        if (v) { SEL.storage = v.storage; SEL.ram = v.ram; }
+      }
+    }
     if (opt.dataset.storage !== undefined) {
       SEL.storage = +opt.dataset.storage;
       if (ph && !ph.variants.some(v => v.storage === SEL.storage && v.ram === SEL.ram)) {

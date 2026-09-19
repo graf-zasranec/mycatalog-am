@@ -2,10 +2,20 @@
  "generated": "2026-09-19",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1332,
- "missing": 383,
+ "total": 1324,
+ "missing": 381,
  "tooSmall": 56,
  "products": [
+  {
+   "id": "xiaomi-redmi-note-17-pro-max-5g",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 17 Pro Max 5G",
+   "category": "phone",
+   "shops": 6,
+   "query": "Xiaomi Redmi Note 17 Pro Max 5G",
+   "what": "missing",
+   "width": 0
+  },
   {
    "id": "xiaomi-poco-m7",
    "brand": "Xiaomi",
@@ -17,22 +27,22 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-note-17-pro-max-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 17 Pro Max 5G",
-   "category": "phone",
-   "shops": 5,
-   "query": "Xiaomi Redmi Note 17 Pro Max 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dji-osmo-pocket-4",
    "brand": "DJI",
    "name": "Osmo Pocket 4",
    "category": "drone",
    "shops": 4,
    "query": "DJI Osmo Pocket 4",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dyson-nural-hd16-strawberry",
+   "brand": "Dyson",
+   "name": "Supersonic Nural HD16",
+   "category": "appliance",
+   "shops": 4,
+   "query": "Dyson Supersonic Nural HD16",
    "what": "missing",
    "width": 0
   },
@@ -53,16 +63,6 @@
    "category": "laptop",
    "shops": 3,
    "query": "ASUS Vivobook 15 X1504VA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-nural-hd16-strawberry",
-   "brand": "Dyson",
-   "name": "Supersonic Nural HD16",
-   "category": "appliance",
-   "shops": 3,
-   "query": "Dyson Supersonic Nural HD16",
    "what": "missing",
    "width": 0
   },
@@ -177,6 +177,16 @@
    "width": 0
   },
   {
+   "id": "hisense-55e7q-pro",
+   "brand": "Hisense",
+   "name": "55E7Q PRO",
+   "category": "tv",
+   "shops": 2,
+   "query": "Hisense 55E7Q PRO",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "honor-200",
    "brand": "Honor",
    "name": "200",
@@ -223,6 +233,16 @@
    "category": "laptop",
    "shops": 2,
    "query": "HP OmniBook 5 16",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "jbl-partybox-club-120",
+   "brand": "JBL",
+   "name": "PartyBox Club 120",
+   "category": "speaker",
+   "shops": 2,
+   "query": "JBL PartyBox Club 120",
    "what": "missing",
    "width": 0
   },
@@ -433,26 +453,6 @@
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Pro 13 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-m5-13-ram",
-   "brand": "Apple",
-   "name": "MacBook Air M5 13. RAM",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air M5 13. RAM",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-m5-ram",
-   "brand": "Apple",
-   "name": "MacBook Air M5 RAM",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air M5 RAM",
    "what": "missing",
    "width": 0
   },
@@ -1507,16 +1507,6 @@
    "width": 0
   },
   {
-   "id": "hisense-55e7q-pro",
-   "brand": "Hisense",
-   "name": "55E7Q PRO",
-   "category": "tv",
-   "shops": 1,
-   "query": "Hisense 55E7Q PRO",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hisense-65a7nq",
    "brand": "Hisense",
    "name": "65A7NQ",
@@ -1733,16 +1723,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "HP Victus Clamshell Roaree 24C1",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-partybox-club-120",
-   "brand": "JBL",
-   "name": "PartyBox Club 120",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL PartyBox Club 120",
    "what": "missing",
    "width": 0
   },

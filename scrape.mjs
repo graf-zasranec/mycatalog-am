@@ -879,6 +879,18 @@ async function crawlLd(urls, cap = 6) {
 }
 
 const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
+
+// A MacBook Air is one product in two screens, so an offer has to say WHICH screen or it would
+// show under both. Shops write it as "MacBook Air 13 M4", "Air 13.6\"/M5/16GB" or "Pro 16 M5 Pro".
+// The lookahead is what keeps "16GB" and "512GB" out: a number that is immediately a unit is a
+// capacity, not a screen. Laptops only - a 15 in a phone title is not inches.
+function screenOf(title, id) {
+  if ((phoneById[id] || {}).category !== 'laptop') return undefined;
+  const m = String(title || '').match(/(13\.6|13\.3|13|14|15\.3|15|16)(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\d))/i);
+  if (!m) return undefined;
+  const n = +m[1];
+  return n === 13.6 || n === 13.3 ? 13 : n === 15.3 ? 15 : n;
+}
 // A product sold in exactly one capacity, or one colour, needs no shop to state it: there is
 // only one answer. 133 offers were showing no capacity for a product that has a single tier.
 const soleValue = list => { const v = [...new Set((list || []).filter(x => x != null))]; return v.length === 1 ? v[0] : null; };
@@ -1543,7 +1555,7 @@ for (const key of names) {
   }
   // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
 // that failed keeps whatever date it already had, which is the point of having one.
-for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, seen: TODAY });
+for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, seen: TODAY, size: screenOf(o.title, o.id) });
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
   const why = [soldOut && `${soldOut} sold out`, tooCheap && `${tooCheap} too cheap to be the product`].filter(Boolean);
@@ -1615,7 +1627,7 @@ try {
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
-                ram: r.ram ? +r.ram : undefined,
+                ram: r.ram ? +r.ram : undefined, size: screenOf(r.title, r.id),
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim });
     seeded++;
   }

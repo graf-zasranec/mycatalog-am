@@ -4668,7 +4668,7 @@
   "id": "apple-macbook-air-13-m1-2024",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Air 13 M1 2024",
+  "name": "MacBook Air M1 2024",
   "aliases": [
    "MacBook Air 13 M1 2024 Starlight"
   ],
@@ -4681,7 +4681,8 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 719000
+    "priceAmd": 719000,
+    "size": 13
    }
   ],
   "display": {},
@@ -4692,22 +4693,27 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "apple-macbook-air-13-m4",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Air 13 M4",
+  "name": "MacBook Air M4",
   "tier": "upper-mid",
   "aliases": [
    "MacBook Air 13.6-inch M4",
    "MacBook Air 13.6 M4",
-   "MacBook Air 136 M4"
+   "MacBook Air 136 M4",
+   "MacBook Air 15 M4",
+   "MacBook Air 15.3-inch M4",
+   "MacBook Air 15.3 M4",
+   "MacBook Air 153 M4"
   ],
   "released": "2025-03",
   "priceAmd": 469000,
-  "priceAmdMax": 649000,
+  "priceAmdMax": 819900,
   "popularity": 88,
   "accent": "#A9C4D9",
   "display": {
@@ -4729,17 +4735,32 @@
    {
     "ram": 16,
     "storage": 256,
-    "priceAmd": 469000
+    "priceAmd": 469000,
+    "size": 13
    },
    {
     "ram": 16,
     "storage": 512,
-    "priceAmd": 549000
+    "priceAmd": 549000,
+    "size": 13
    },
    {
     "ram": 24,
     "storage": 512,
-    "priceAmd": 649000
+    "priceAmd": 649000,
+    "size": 13
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 717900,
+    "size": 15
+   },
+   {
+    "ram": 24,
+    "storage": 512,
+    "priceAmd": 819900,
+    "size": 15
    }
   ],
   "body": {
@@ -4769,15 +4790,25 @@
   "id": "apple-macbook-air-13-m5",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Air 13 M5",
+  "name": "MacBook Air M5",
   "aliases": [
    "MacBook Air 13.6-inch M5",
    "MacBook Air 13.6 M5",
-   "MacBook Air 136 M5"
+   "MacBook Air 136 M5",
+   "MacBook Air 15 M5",
+   "MacBook Air 15.3-inch M5",
+   "MacBook Air 15.3 M5",
+   "MacBook Air 153 M5",
+   "MacBook Air M5 RAM",
+   "MacBook Air M5 13/16GB RAM",
+   "MacBook Air M5 15/16GB RAM",
+   "MacBook Air M5 15/24GB RAM",
+   "MacBook Air M5 13. RAM",
+   "MacBook Air M5 13.6/24 RAM"
   ],
   "tier": "upper-mid",
   "released": "2026-03",
-  "priceAmd": 655900,
+  "priceAmd": 579000,
   "priceAmdMax": 910900,
   "popularity": 94,
   "accent": "#A9C4D9",
@@ -4799,17 +4830,32 @@
    {
     "ram": 16,
     "storage": 512,
-    "priceAmd": 655900
+    "priceAmd": 655900,
+    "size": 13
    },
    {
     "ram": 16,
     "storage": 1024,
-    "priceAmd": 810900
+    "priceAmd": 810900,
+    "size": 13
    },
    {
     "ram": 24,
     "storage": 1024,
-    "priceAmd": 910900
+    "priceAmd": 910900,
+    "size": 13
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 763900,
+    "size": 15
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 910900,
+    "size": 15
    }
   ],
   "body": {
@@ -4913,191 +4959,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple MacBook Air 13 MGND3 M1 2020.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-air-15-m4",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air 15 M4",
-  "aliases": [
-   "MacBook Air 15.3-inch M4",
-   "MacBook Air 15.3 M4",
-   "MacBook Air 153 M4"
-  ],
-  "tier": "mid",
-  "released": "2025-03",
-  "priceAmd": 717900,
-  "priceAmdMax": 819900,
-  "popularity": 66,
-  "accent": "#E8E3DA",
-  "display": {
-   "size": 15.3,
-   "type": "Liquid Retina IPS LCD",
-   "touch": false
-  },
-  "chipset": {
-   "name": "Apple M4",
-   "cpu": "10-core"
-  },
-  "graphics": {
-   "name": "Apple M4 10-core GPU",
-   "cores": 10,
-   "type": "integrated"
-  },
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 717900
-   },
-   {
-    "ram": 24,
-    "storage": 512,
-    "priceAmd": 819900
-   }
-  ],
-  "body": {
-   "materials": "Aluminium unibody"
-  },
-  "battery": {},
-  "connectivity": {
-   "wifi": "Wi-Fi 6E",
-   "bluetooth": "5.3"
-  },
-  "cardSlot": false,
-  "os": "macOS 26",
-  "colors": [
-   "Midnight",
-   "Starlight"
-  ],
-  "summaryEn": "Last year's 15-inch Air, still stocked and cheaper than the M5."
- },
- {
-  "id": "apple-macbook-air-15-m5",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air 15 M5",
-  "aliases": [
-   "MacBook Air 15.3-inch M5",
-   "MacBook Air 15.3 M5",
-   "MacBook Air 153 M5"
-  ],
-  "tier": "upper-mid",
-  "released": "2026-03",
-  "priceAmd": 763900,
-  "priceAmdMax": 910900,
-  "popularity": 80,
-  "accent": "#A9C4D9",
-  "display": {
-   "size": 15.3,
-   "type": "Liquid Retina IPS LCD",
-   "touch": false
-  },
-  "chipset": {
-   "name": "Apple M5",
-   "cpu": "10-core"
-  },
-  "graphics": {
-   "name": "Apple M5 10-core GPU",
-   "cores": 10,
-   "type": "integrated"
-  },
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 763900
-   },
-   {
-    "ram": 16,
-    "storage": 1024,
-    "priceAmd": 910900
-   }
-  ],
-  "body": {
-   "materials": "Aluminium unibody"
-  },
-  "battery": {},
-  "connectivity": {
-   "wifi": "Wi-Fi 6E",
-   "bluetooth": "5.3"
-  },
-  "cardSlot": false,
-  "os": "macOS 26",
-  "colors": [
-   "Silver",
-   "Midnight",
-   "Starlight",
-   "Sky Blue"
-  ],
-  "summaryEn": "The big-screen Air — the same M5, 15.3 inches instead of 13.6."
- },
- {
-  "id": "apple-macbook-air-m5-13-ram",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air M5 13. RAM",
-  "aliases": [
-   "MacBook Air M5 13.6/24 RAM"
-  ],
-  "tier": "flagship",
-  "priceAmd": 779000,
-  "priceAmdMax": 779000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 779000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air M5 13. RAM.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-air-m5-ram",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air M5 RAM",
-  "aliases": [
-   "MacBook Air M5 13/16GB RAM",
-   "MacBook Air M5 15/16GB RAM",
-   "MacBook Air M5 15/24GB RAM"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 579000,
-  "priceAmdMax": 859000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 16,
-    "priceAmd": 579000
-   },
-   {
-    "ram": null,
-    "storage": 24,
-    "priceAmd": 859000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air M5 RAM.",
   "unsure": [
    "popularity",
    "display",
@@ -5258,7 +5119,7 @@
   "id": "apple-macbook-pro-14-m4",
   "category": "laptop",
   "brand": "Apple",
-  "name": "Macbook PRO 14 M4",
+  "name": "MacBook Pro M4",
   "aliases": [
    "Macbook PRO 14 M4"
   ],
@@ -5271,7 +5132,8 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 669000
+    "priceAmd": 669000,
+    "size": 14
    }
   ],
   "display": {},
@@ -5282,26 +5144,35 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "apple-macbook-pro-14-m4-max",
   "category": "laptop",
   "brand": "Apple",
-  "name": "Macbook PRO 14 M4 Max",
+  "name": "MacBook Pro M4 Max",
   "aliases": [
-   "Macbook PRO 14 M4 Max"
+   "Macbook PRO 14 M4 Max",
+   "Macbook PRO 16 M4 Max"
   ],
   "tier": "flagship",
   "priceAmd": 1299000,
-  "priceAmdMax": 1299000,
+  "priceAmdMax": 1499000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 1299000
+    "priceAmd": 1299000,
+    "size": 14
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1499000,
+    "size": 16
    }
   ],
   "display": {},
@@ -5312,17 +5183,18 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": []
  },
  {
   "id": "apple-macbook-pro-14-m4-pro",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 M4 Pro",
+  "name": "MacBook Pro M4 Pro",
   "tier": "flagship",
   "released": "2024-10",
   "priceAmd": 899000,
-  "priceAmdMax": 999000,
+  "priceAmdMax": 1229000,
   "popularity": 62,
   "accent": "#2E2E30",
   "display": {
@@ -5360,12 +5232,20 @@
    {
     "ram": 24,
     "storage": 512,
-    "priceAmd": 899000
+    "priceAmd": 899000,
+    "size": 14
    },
    {
     "ram": 24,
     "storage": 1024,
-    "priceAmd": 999000
+    "priceAmd": 999000,
+    "size": 14
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1229000,
+    "size": 16
    }
   ],
   "colors": [
@@ -5376,13 +5256,16 @@
   "unsure": [
    "popularity",
    "priceAmdMax"
+  ],
+  "aliases": [
+   "Macbook PRO 16 M4 Pro"
   ]
  },
  {
   "id": "apple-macbook-pro-14-m5",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 M5",
+  "name": "MacBook Pro M5",
   "aliases": [
    "MacBook Pro 14.2-inch M5",
    "MacBook Pro 14.2 M5",
@@ -5413,17 +5296,20 @@
    {
     "ram": 16,
     "storage": 1024,
-    "priceAmd": 1021900
+    "priceAmd": 1021900,
+    "size": 14
    },
    {
     "ram": 24,
     "storage": 1024,
-    "priceAmd": 1123900
+    "priceAmd": 1123900,
+    "size": 14
    },
    {
     "ram": 32,
     "storage": 1024,
-    "priceAmd": 1224900
+    "priceAmd": 1224900,
+    "size": 14
    }
   ],
   "body": {
@@ -5446,16 +5332,20 @@
   "id": "apple-macbook-pro-14-m5-max",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 M5 Max",
+  "name": "MacBook Pro M5 Max",
   "aliases": [
    "MacBook Pro 14.2-inch M5 Max",
    "MacBook Pro 14.2 M5 Max",
-   "MacBook Pro 142 M5 Max"
+   "MacBook Pro 142 M5 Max",
+   "MacBook Pro 16 M5 Max",
+   "MacBook Pro 16.2-inch M5 Max",
+   "MacBook Pro 16.2 M5 Max",
+   "MacBook Pro 162 M5 Max"
   ],
   "tier": "flagship",
   "released": "2025-10",
   "priceAmd": 2083900,
-  "priceAmdMax": 2083900,
+  "priceAmdMax": 2230900,
   "popularity": 48,
   "accent": "#26262A",
   "display": {
@@ -5477,7 +5367,14 @@
    {
     "ram": 36,
     "storage": 2048,
-    "priceAmd": 2083900
+    "priceAmd": 2083900,
+    "size": 14
+   },
+   {
+    "ram": 36,
+    "storage": 2048,
+    "priceAmd": 2230900,
+    "size": 16
    }
   ],
   "body": {
@@ -5500,16 +5397,20 @@
   "id": "apple-macbook-pro-14-m5-pro",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 M5 Pro",
+  "name": "MacBook Pro M5 Pro",
   "aliases": [
    "MacBook Pro 14.2-inch M5 Pro",
    "MacBook Pro 14.2 M5 Pro",
-   "MacBook Pro 142 M5 Pro"
+   "MacBook Pro 142 M5 Pro",
+   "MacBook Pro 16 M5 Pro",
+   "MacBook Pro 16.2-inch M5 Pro",
+   "MacBook Pro 16.2 M5 Pro",
+   "MacBook Pro 162 M5 Pro"
   ],
   "tier": "flagship",
   "released": "2025-10",
   "priceAmd": 1274900,
-  "priceAmdMax": 1628900,
+  "priceAmdMax": 1826900,
   "popularity": 72,
   "accent": "#26262A",
   "display": {
@@ -5531,12 +5432,26 @@
    {
     "ram": 24,
     "storage": 1024,
-    "priceAmd": 1274900
+    "priceAmd": 1274900,
+    "size": 14
    },
    {
     "ram": 24,
     "storage": 2048,
-    "priceAmd": 1527900
+    "priceAmd": 1527900,
+    "size": 14
+   },
+   {
+    "ram": 24,
+    "storage": 1024,
+    "priceAmd": 1524900,
+    "size": 16
+   },
+   {
+    "ram": 48,
+    "storage": 1024,
+    "priceAmd": 1826900,
+    "size": 16
    }
   ],
   "body": {
@@ -5644,179 +5559,6 @@
    "chipset",
    "battery.capacity"
   ]
- },
- {
-  "id": "apple-macbook-pro-16-m4-max",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "Macbook PRO 16 M4 Max",
-  "aliases": [
-   "Macbook PRO 16 M4 Max"
-  ],
-  "tier": "flagship",
-  "priceAmd": 1499000,
-  "priceAmdMax": 1499000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 1499000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Macbook PRO 16 M4 Max.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-pro-16-m4-pro",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "Macbook PRO 16 M4 Pro",
-  "aliases": [
-   "Macbook PRO 16 M4 Pro"
-  ],
-  "tier": "flagship",
-  "priceAmd": 1229000,
-  "priceAmdMax": 1229000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 1229000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Macbook PRO 16 M4 Pro.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-pro-16-m5-max",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Pro 16 M5 Max",
-  "aliases": [
-   "MacBook Pro 16.2-inch M5 Max",
-   "MacBook Pro 16.2 M5 Max",
-   "MacBook Pro 162 M5 Max"
-  ],
-  "tier": "flagship",
-  "released": "2025-10",
-  "priceAmd": 2230900,
-  "priceAmdMax": 2230900,
-  "popularity": 52,
-  "accent": "#26262A",
-  "display": {
-   "size": 16.2,
-   "type": "Liquid Retina XDR mini-LED",
-   "refresh": 120,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Apple M5 Max",
-   "cpu": "18-core"
-  },
-  "graphics": {
-   "name": "Apple M5 Max 32- or 40-core GPU",
-   "cores": 40,
-   "type": "integrated"
-  },
-  "variants": [
-   {
-    "ram": 36,
-    "storage": 2048,
-    "priceAmd": 2230900
-   }
-  ],
-  "body": {
-   "materials": "Aluminium unibody"
-  },
-  "battery": {},
-  "connectivity": {
-   "wifi": "Wi-Fi 6E",
-   "bluetooth": "5.3"
-  },
-  "cardSlot": true,
-  "os": "macOS 26",
-  "colors": [
-   "Silver",
-   "Space Black"
-  ],
-  "summaryEn": "The fastest MacBook sold in Armenia — 16-inch M5 Max with a 40-core GPU."
- },
- {
-  "id": "apple-macbook-pro-16-m5-pro",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Pro 16 M5 Pro",
-  "aliases": [
-   "MacBook Pro 16.2-inch M5 Pro",
-   "MacBook Pro 16.2 M5 Pro",
-   "MacBook Pro 162 M5 Pro"
-  ],
-  "tier": "flagship",
-  "released": "2025-10",
-  "priceAmd": 1524900,
-  "priceAmdMax": 1826900,
-  "popularity": 64,
-  "accent": "#26262A",
-  "display": {
-   "size": 16.2,
-   "type": "Liquid Retina XDR mini-LED",
-   "refresh": 120,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Apple M5 Pro",
-   "cpu": "18-core"
-  },
-  "graphics": {
-   "name": "Apple M5 Pro 20-core GPU",
-   "cores": 20,
-   "type": "integrated"
-  },
-  "variants": [
-   {
-    "ram": 24,
-    "storage": 1024,
-    "priceAmd": 1524900
-   },
-   {
-    "ram": 48,
-    "storage": 1024,
-    "priceAmd": 1826900
-   }
-  ],
-  "body": {
-   "materials": "Aluminium unibody"
-  },
-  "battery": {},
-  "connectivity": {
-   "wifi": "Wi-Fi 6E",
-   "bluetooth": "5.3"
-  },
-  "cardSlot": true,
-  "os": "macOS 26",
-  "colors": [
-   "Silver",
-   "Space Black"
-  ],
-  "summaryEn": "The 16-inch Pro on M5 Pro — the big screen without Max pricing."
  },
  {
   "id": "apple-macbook-pro-16-mrw23",
