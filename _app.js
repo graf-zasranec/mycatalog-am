@@ -1788,6 +1788,12 @@ function render(keepScroll) {
     // one thing the link exists to fix.
     if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
   }
+  // Tapping a suggestion opened the product underneath and left the list of suggestions sitting
+  // on top of it. The outside-click rule cannot close it: a suggestion is a link INSIDE .srch, and
+  // that rule exists precisely to leave the search box alone while it is being used. Arriving
+  // somewhere is what ends a search, so the list closes on any route change - which covers the
+  // back button too. Typing never reaches here; it repaints through refresh().
+  closeSuggest();
   if (!keepsQuery(raw) && st.q) { st.q = ''; save(); }
   paintChrome(); paintTray();
   // not on a re-render (keepScroll): one visit per route, not one per filter change

@@ -34,17 +34,26 @@ const packs = {};
 for (const f of files) Object.assign(packs, JSON.parse(fs.readFileSync(f, 'utf8')));
 console.log(`${Object.keys(packs).length} picture(s) in ${files.length} file(s)`);
 
+// A pack is keyed either by product id - which is what happens once the ids are known, and needs
+// no guessing at all - or by the search term that found it, which still has to be matched back.
+const byId = new Set(phones.map(p => p.id));
+const keyedById = Object.keys(packs).filter(k => byId.has(k)).length > Object.keys(packs).length / 2;
+console.log(keyedById ? '  keyed by product id' : '  keyed by search term, matching back by name');
+
 const mine = phones.filter(p => (offers[p.id] || []).some(o => o.shop === shop));
 let wrote = 0, small = 0, worse = 0, nomatch = 0;
 for (const p of mine) {
   const full = `${p.brand} ${p.name}`.replace(/\s+/g, ' ').trim();
-  const hit = packs[termOf(full)];
+  const hit = keyedById ? packs[p.id] : packs[termOf(full)];
   if (!hit || !hit.b64) { nomatch++; continue; }
-  // the term found the product, but the picture has to be of it: the url should carry some of
-  // the model's own words, or this is a search that landed on a scented candle
-  const u = norm(hit.url || '');
-  const words = full.split(/[\s(),\/]+/).filter(w => w.length > 2);
-  if (!words.some(w => u.includes(norm(w)))) { nomatch++; continue; }
+  // When the pack was keyed by a search term, the term finding the product is not enough - the
+  // picture has to be OF it, so the url should carry some of the model's own words. A pack keyed
+  // by id was already matched when it was built.
+  if (!keyedById) {
+    const u = norm(hit.url || '');
+    const words = full.split(/[\s(),\/]+/).filter(w => w.length > 2);
+    if (!words.some(w => u.includes(norm(w)))) { nomatch++; continue; }
+  }
 
   const edge = Math.max(hit.w || 0, hit.h || 0);
   const have = (man[p.id] || []).find(e => e.slug === 'main');

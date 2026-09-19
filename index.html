@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-sbgiBz5sXEz/YKUnSS2j7Eyr8vcmIezSM97uQyRWhB8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-1592C55QuUXwDvw1Xlj4JQf5lxumfYeizOS4D8f328c='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 1332 մոդել, 19 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -2797,6 +2797,12 @@ function render(keepScroll) {
     // one thing the link exists to fix.
     if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
   }
+  // Tapping a suggestion opened the product underneath and left the list of suggestions sitting
+  // on top of it. The outside-click rule cannot close it: a suggestion is a link INSIDE .srch, and
+  // that rule exists precisely to leave the search box alone while it is being used. Arriving
+  // somewhere is what ends a search, so the list closes on any route change - which covers the
+  // back button too. Typing never reaches here; it repaints through refresh().
+  closeSuggest();
   if (!keepsQuery(raw) && st.q) { st.q = ''; save(); }
   paintChrome(); paintTray();
   // not on a re-render (keepScroll): one visit per route, not one per filter change
