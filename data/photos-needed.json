@@ -2,9 +2,9 @@
  "generated": "2026-09-19",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1373,
- "missing": 633,
- "tooSmall": 43,
+ "total": 1361,
+ "missing": 623,
+ "tooSmall": 42,
  "products": [
   {
    "id": "samsung-galaxy-3",
@@ -327,6 +327,16 @@
    "width": 0
   },
   {
+   "id": "apple-ultra-2",
+   "brand": "Apple",
+   "name": "Watch Ultra 2",
+   "category": "watch",
+   "shops": 3,
+   "query": "Apple Watch Ultra 2",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "asus-vivobook-15-x1504va",
    "brand": "ASUS",
    "name": "Vivobook 15 X1504VA",
@@ -477,22 +487,12 @@
    "width": 0
   },
   {
-   "id": "samsung-galaxy-9-40mm",
-   "brand": "Samsung",
-   "name": "Galaxy Watch 9 40mm",
-   "category": "watch",
-   "shops": 3,
-   "query": "Samsung Galaxy Watch 9 40mm",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-9-44mm",
    "brand": "Samsung",
-   "name": "Galaxy Watch 9 44mm",
+   "name": "Galaxy Watch 9",
    "category": "watch",
    "shops": 3,
-   "query": "Samsung Galaxy Watch 9 44mm",
+   "query": "Samsung Galaxy Watch 9",
    "what": "missing",
    "width": 0
   },
@@ -583,16 +583,6 @@
    "category": "laptop",
    "shops": 2,
    "query": "Apple Macbook PRO 14 M4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ultra-2",
-   "brand": "Apple",
-   "name": "Watch Ultra 2",
-   "category": "watch",
-   "shops": 2,
-   "query": "Apple Watch Ultra 2",
    "what": "missing",
    "width": 0
   },
@@ -709,20 +699,20 @@
   {
    "id": "dyson-hd16-nural-plum",
    "brand": "Dyson",
-   "name": "Dyson HD16 Supersonic Nural Jasper Plum",
+   "name": "HD16 Supersonic Nural Jasper Plum",
    "category": "appliance",
    "shops": 2,
-   "query": "Dyson Dyson HD16 Supersonic Nural Jasper Plum",
+   "query": "Dyson HD16 Supersonic Nural Jasper Plum",
    "what": "missing",
    "width": 0
   },
   {
    "id": "dyson-hd18-vinca-blue-topaz",
    "brand": "Dyson",
-   "name": "Dyson HD18 Supersonic Vinca Blue/Topaz",
+   "name": "HD18 Supersonic Vinca Blue/Topaz",
    "category": "appliance",
    "shops": 2,
-   "query": "Dyson Dyson HD18 Supersonic Vinca Blue/Topaz",
+   "query": "Dyson HD18 Supersonic Vinca Blue/Topaz",
    "what": "missing",
    "width": 0
   },
@@ -777,12 +767,22 @@
    "width": 0
   },
   {
-   "id": "garmin-venu-4-45-mm",
+   "id": "garmin-instinct-3-50mm-amoled",
    "brand": "Garmin",
-   "name": "Venu 4 45 mm",
+   "name": "Instinct 3, AMOLED",
    "category": "watch",
    "shops": 2,
-   "query": "Garmin Venu 4 45 mm",
+   "query": "Garmin Instinct 3, AMOLED",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "garmin-venu-4-45-mm",
+   "brand": "Garmin",
+   "name": "Venu 4",
+   "category": "watch",
+   "shops": 2,
+   "query": "Garmin Venu 4",
    "what": "missing",
    "width": 0
   },
@@ -1367,16 +1367,6 @@
    "width": 0
   },
   {
-   "id": "apple-band-extension-42mm-magnetic-link-for-38-42mm",
-   "brand": "Apple",
-   "name": "Watch Band 42mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Band 42mm",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-homepod-2",
    "brand": "Apple",
    "name": "HomePod 2",
@@ -1773,16 +1763,6 @@
    "category": "earbuds",
    "shops": 1,
    "query": "Apple AirPods 3rd Generation",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ultra-2-49mm-blue-black-m-l-mrf63rb-a",
-   "brand": "Apple",
-   "name": "Watch Ultra 2 49mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Ultra 2 49mm",
    "what": "missing",
    "width": 0
   },
@@ -2669,20 +2649,20 @@
   {
    "id": "dyson-hd16-nural-velvet",
    "brand": "Dyson",
-   "name": "Dyson HD16 Supersonic Nural Red Velvet",
+   "name": "HD16 Supersonic Nural Red Velvet",
    "category": "appliance",
    "shops": 1,
-   "query": "Dyson Dyson HD16 Supersonic Nural Red Velvet",
+   "query": "Dyson HD16 Supersonic Nural Red Velvet",
    "what": "missing",
    "width": 0
   },
   {
    "id": "dyson-hd16-vinca-blue-topaz",
    "brand": "Dyson",
-   "name": "Dyson HD16 Supersonic Vinca Blue/Topaz",
+   "name": "HD16 Supersonic Vinca Blue/Topaz",
    "category": "appliance",
    "shops": 1,
-   "query": "Dyson Dyson HD16 Supersonic Vinca Blue/Topaz",
+   "query": "Dyson HD16 Supersonic Vinca Blue/Topaz",
    "what": "missing",
    "width": 0
   },
@@ -2729,20 +2709,20 @@
   {
    "id": "dyson-nural-er",
    "brand": "Dyson",
-   "name": "Dyson Supersonic Nural hair dryer",
+   "name": "Supersonic Nural hair dryer",
    "category": "appliance",
    "shops": 1,
-   "query": "Dyson Dyson Supersonic Nural hair dryer",
+   "query": "Dyson Supersonic Nural hair dryer",
    "what": "missing",
    "width": 0
   },
   {
    "id": "dyson-r-dh17",
    "brand": "Dyson",
-   "name": "Dyson Supersonic r DH17",
+   "name": "Supersonic r DH17",
    "category": "appliance",
    "shops": 1,
-   "query": "Dyson Dyson Supersonic r DH17",
+   "query": "Dyson Supersonic r DH17",
    "what": "missing",
    "width": 0
   },
@@ -2789,30 +2769,30 @@
   {
    "id": "garmin-cirqa-smart-band-s-m",
    "brand": "Garmin",
-   "name": "Garmin CIRQA Smart Band, Black, S-M",
+   "name": "CIRQA Smart Band, Black, S-M",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Garmin CIRQA Smart Band, Black, S-M",
+   "query": "Garmin CIRQA Smart Band, Black, S-M",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-epix-pro-sapphire-edition-51-mm",
    "brand": "Garmin",
-   "name": "epix Pro – Sapphire Edition 51 mm",
+   "name": "epix Pro – Sapphire Edition",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin epix Pro – Sapphire Edition 51 mm",
+   "query": "Garmin epix Pro – Sapphire Edition",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-epix-pro-standard-edition-47mm",
    "brand": "Garmin",
-   "name": "epix Pro – Standard Edition 47mm",
+   "name": "epix Pro – Standard Edition",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin epix Pro – Standard Edition 47mm",
+   "query": "Garmin epix Pro – Standard Edition",
    "what": "missing",
    "width": 0
   },
@@ -2839,80 +2819,60 @@
   {
    "id": "garmin-fenix-8-47-mm-amoled",
    "brand": "Garmin",
-   "name": "Fenix 8 – 47 mm, AMOLED",
+   "name": "Fenix 8, AMOLED",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Fenix 8 – 47 mm, AMOLED",
+   "query": "Garmin Fenix 8, AMOLED",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-fenix-8-47-mm-amoled-sapphire-carbon",
    "brand": "Garmin",
-   "name": "Fenix 8 – 47 mm, AMOLED Sapphire Carbon",
+   "name": "Fenix 8, AMOLED Sapphire Carbon",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon",
+   "query": "Garmin Fenix 8, AMOLED Sapphire Carbon",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-fenix-8-47-mm-amoled-sapphire-spark",
    "brand": "Garmin",
-   "name": "Fenix 8 – 47 mm, AMOLED Sapphire Spark",
+   "name": "Fenix 8, AMOLED Sapphire Spark",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-fenix-8-47-mm-amoled-sapphire-with-vented-bracelet",
-   "brand": "Garmin",
-   "name": "Fenix 8 47mm AMOLED",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Fenix 8 47mm AMOLED",
+   "query": "Garmin Fenix 8, AMOLED Sapphire Spark",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-fenix-8-pro-47-mm-amoled",
    "brand": "Garmin",
-   "name": "Fenix 8 Pro – 47 mm, AMOLED",
+   "name": "Fenix 8 Pro, AMOLED",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Fenix 8 Pro – 47 mm, AMOLED",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-fenix-8-pro-51-mm-amoled",
-   "brand": "Garmin",
-   "name": "Fenix 8 Pro – 51 mm, AMOLED",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Fenix 8 Pro – 51 mm, AMOLED",
+   "query": "Garmin Fenix 8 Pro, AMOLED",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-fenix-9-51mm-carbon-dlc-band",
    "brand": "Garmin",
-   "name": "Fenix 9, 51mm, Carbon DLC, Band",
+   "name": "Fenix 9, Carbon DLC, Band",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Fenix 9, 51mm, Carbon DLC, Band",
+   "query": "Garmin Fenix 9, Carbon DLC, Band",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-fenix-9-pro-47mm-amoled-carbon-dlc",
    "brand": "Garmin",
-   "name": "Fenix 9 Pro 47mm, AMOLED, Carbon DLC",
+   "name": "Fenix 9 Pro, AMOLED, Carbon DLC",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Fenix 9 Pro 47mm, AMOLED, Carbon DLC",
+   "query": "Garmin Fenix 9 Pro, AMOLED, Carbon DLC",
    "what": "missing",
    "width": 0
   },
@@ -2999,20 +2959,20 @@
   {
    "id": "garmin-forerunner-965-black-powder",
    "brand": "Garmin",
-   "name": "Garmin Forerunner 965 Black/Powder Grey",
+   "name": "Forerunner 965 Black/Powder Grey",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Garmin Forerunner 965 Black/Powder Grey",
+   "query": "Garmin Forerunner 965 Black/Powder Grey",
    "what": "missing",
    "width": 0
   },
   {
    "id": "garmin-forerunner-970",
    "brand": "Garmin",
-   "name": "Garmin Forerunner 970 Black",
+   "name": "Forerunner 970 Black",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Garmin Forerunner 970 Black",
+   "query": "Garmin Forerunner 970 Black",
    "what": "missing",
    "width": 0
   },
@@ -3057,52 +3017,12 @@
    "width": 0
   },
   {
-   "id": "garmin-instinct-3-45-mm-amoled",
-   "brand": "Garmin",
-   "name": "Instinct 3 – 45 mm, AMOLED",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Instinct 3 – 45 mm, AMOLED",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-instinct-3-45-mm-solar",
-   "brand": "Garmin",
-   "name": "Instinct 3 – 45 mm, Solar",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Instinct 3 – 45 mm, Solar",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-instinct-3-50mm-amoled",
-   "brand": "Garmin",
-   "name": "Instinct 3, 50mm,AMOLED",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Instinct 3, 50mm,AMOLED",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "garmin-instinct-3-50mm-solar",
    "brand": "Garmin",
-   "name": "Instinct 3, 50mm,Solar",
+   "name": "Instinct 3, Solar",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Instinct 3, 50mm,Solar",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-instinct-3-amoled-45-mm",
-   "brand": "Garmin",
-   "name": "Instinct 3 amoled 45 mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Instinct 3 amoled 45 mm",
+   "query": "Garmin Instinct 3, Solar",
    "what": "missing",
    "width": 0
   },
@@ -3133,16 +3053,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Garmin Venu 3s French",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-venu-4-41-mm",
-   "brand": "Garmin",
-   "name": "Venu 4 - 41 mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Venu 4 - 41 mm",
    "what": "missing",
    "width": 0
   },
@@ -3199,10 +3109,10 @@
   {
    "id": "garmin-vivoactive-6",
    "brand": "Garmin",
-   "name": "Garmin vivoactive 6 Lunar Gold",
+   "name": "vivoactive 6 Lunar Gold",
    "category": "watch",
    "shops": 1,
-   "query": "Garmin Garmin vivoactive 6 Lunar Gold",
+   "query": "Garmin vivoactive 6 Lunar Gold",
    "what": "missing",
    "width": 0
   },
@@ -4879,20 +4789,20 @@
   {
    "id": "samsung-galaxy-6-classic-43mm-r950",
    "brand": "Samsung",
-   "name": "Galaxy Watch 6 Classic 43mm",
+   "name": "Galaxy Watch 6 Classic",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch 6 Classic 43mm",
+   "query": "Samsung Galaxy Watch 6 Classic",
    "what": "missing",
    "width": 0
   },
   {
    "id": "samsung-galaxy-7-ultra-47mm-sm-l705f",
    "brand": "Samsung",
-   "name": "Galaxy Watch 7 Ultra 47mm",
+   "name": "Galaxy Watch 7 Ultra",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch 7 Ultra 47mm",
+   "query": "Samsung Galaxy Watch 7 Ultra",
    "what": "missing",
    "width": 0
   },
@@ -4969,40 +4879,30 @@
   {
    "id": "samsung-galaxy-ultra-47mm-2024",
    "brand": "Samsung",
-   "name": "Galaxy Watch Ultra 47mm 2024",
+   "name": "Galaxy Watch Ultra 2024",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch Ultra 47mm 2024",
+   "query": "Samsung Galaxy Watch Ultra 2024",
    "what": "missing",
    "width": 0
   },
   {
    "id": "samsung-galaxy-ultra-47mm-2025",
    "brand": "Samsung",
-   "name": "Galaxy Watch Ultra 47mm 2025",
+   "name": "Galaxy Watch Ultra 2025",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch Ultra 47mm 2025",
+   "query": "Samsung Galaxy Watch Ultra 2025",
    "what": "missing",
    "width": 0
   },
   {
    "id": "samsung-galaxy-watch4-40-mm",
    "brand": "Samsung",
-   "name": "Galaxy Watch4 40 mm",
+   "name": "Galaxy Watch4",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch4 40 mm",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-watch4-44mm",
-   "brand": "Samsung",
-   "name": "Galaxy Watch4 44mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch4 44mm",
+   "query": "Samsung Galaxy Watch4",
    "what": "missing",
    "width": 0
   },
@@ -6409,22 +6309,12 @@
   {
    "id": "apple-watch-series-12-gps-42mm",
    "brand": "Apple",
-   "name": "Watch Series 12 GPS 42mm",
+   "name": "Watch Series 12 GPS",
    "category": "watch",
    "shops": 1,
-   "query": "Apple Watch Series 12 GPS 42mm",
+   "query": "Apple Watch Series 12 GPS",
    "what": "too small",
    "width": 491
-  },
-  {
-   "id": "apple-watch-series-12-gps-46mm",
-   "brand": "Apple",
-   "name": "Watch Series 12 GPS 46mm",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Series 12 GPS 46mm",
-   "what": "too small",
-   "width": 490
   },
   {
    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
@@ -6539,10 +6429,10 @@
   {
    "id": "realme-16",
    "brand": "Realme",
-   "name": "Realme 16 5G Air",
+   "name": "16 5G Air",
    "category": "phone",
    "shops": 1,
-   "query": "Realme Realme 16 5G Air",
+   "query": "Realme 16 5G Air",
    "what": "too small",
    "width": 590
   },
@@ -6559,10 +6449,10 @@
   {
    "id": "realme-gt-7t",
    "brand": "Realme",
-   "name": "Realme GT 7T",
+   "name": "GT 7T",
    "category": "phone",
    "shops": 1,
-   "query": "Realme Realme GT 7T",
+   "query": "Realme GT 7T",
    "what": "too small",
    "width": 570
   },
@@ -6599,10 +6489,10 @@
   {
    "id": "samsung-galaxy-watch-3-41mm",
    "brand": "Samsung",
-   "name": "Galaxy Watch 3 41mm",
+   "name": "Galaxy Watch 3",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch 3 41mm",
+   "query": "Samsung Galaxy Watch 3",
    "what": "too small",
    "width": 548
   },

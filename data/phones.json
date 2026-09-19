@@ -1951,36 +1951,6 @@
   "summaryEn": "Apple's flagship earbuds — active noise cancellation, transparency mode and a USB-C case."
  },
  {
-  "id": "apple-band-extension-42mm-magnetic-link-for-38-42mm",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch Band 42mm",
-  "aliases": [
-   "Band Extension Apple 42mm Magnetic Link Black for Apple Watch 38-42mm"
-  ],
-  "tier": "budget",
-  "priceAmd": 68900,
-  "priceAmdMax": 68900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 68900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Band Extension 42mm Magnetic Link for 38-42mm.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-earpods-lightning",
   "category": "earbuds",
   "brand": "Apple",
@@ -5974,18 +5944,25 @@
   "name": "Watch Ultra 2",
   "aliases": [
    "Apple Watch Ultra 2",
-   "Ultra 2"
+   "Ultra 2",
+   "Apple Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
+   "Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
+   "Apple Watch Ultra 2 49mm Black Titanium+Dark Green Alpine Loop L /MX4T3*",
+   "Apple Watch Ultra 2 49mm",
+   "Watch Ultra 2 49mm",
+   "Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
+   "Watch Ultra 2"
   ],
   "tier": "upper-mid",
-  "priceAmd": 339000,
-  "priceAmdMax": 339000,
+  "priceAmd": 406500,
+  "priceAmdMax": 406500,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
-    "priceAmd": 339000
+    "storage": 49,
+    "priceAmd": 406500
    }
   ],
   "display": {},
@@ -5996,62 +5973,38 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ultra-2-49mm-blue-black-m-l-mrf63rb-a",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch Ultra 2 49mm",
-  "aliases": [
-   "Apple Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
-   "Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
-   "Apple Watch Ultra 2 49mm Black Titanium+Dark Green Alpine Loop L /MX4T3*",
-   "Apple Watch Ultra 2 49mm",
-   "Watch Ultra 2 49mm",
-   "Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 406500,
-  "priceAmdMax": 406500,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 406500
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Ultra 2 49mm Blue/Black M/L/MRF63RB/A.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
   ],
   "colors": [
    "Blue"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "apple-watch-s10-42mm-with-sport-band",
   "category": "watch",
   "brand": "Apple",
-  "name": "Watch S10 42mm With Sport Band",
-  "aliases": [],
+  "name": "Watch S10 With Sport Band",
+  "aliases": [
+   "Apple Watch S10 46mm With Sport Band",
+   "Watch S10 46mm With Sport Band",
+   "Watch S10 42mm With Sport Band",
+   "Apple Watch S10 42mm With Sport Band"
+  ],
   "tier": "mid",
   "priceAmd": 179900,
-  "priceAmdMax": 179900,
+  "priceAmdMax": 199900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 42,
     "priceAmd": 179900
+   },
+   {
+    "ram": null,
+    "storage": 46,
+    "priceAmd": 199900
    }
   ],
   "display": {},
@@ -6062,41 +6015,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "apple-watch-s10-46mm-with-sport-band",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch S10 46mm With Sport Band",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 199900,
-  "priceAmdMax": 199900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 199900
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Watch S10 46mm With Sport Band.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "apple-watch-se-3",
   "category": "watch",
   "brand": "Apple",
-  "name": "Apple Watch SE Gen.3",
+  "name": "Watch SE Gen.3",
   "tier": "mid",
   "released": "2025-09",
   "priceAmd": 133900,
@@ -6139,14 +6066,15 @@
    "Apple Watch SE Gen3",
    "Apple Watch SE GPS Gen.3",
    "Apple Watch SE 3",
-   "iWatch SE 3"
+   "iWatch SE 3",
+   "Apple Watch SE Gen.3"
   ]
  },
  {
   "id": "apple-watch-series-10",
   "category": "watch",
   "brand": "Apple",
-  "name": "Apple Watch Series 10",
+  "name": "Watch Series 10",
   "tier": "upper-mid",
   "released": "2024-09",
   "priceAmd": 189000,
@@ -6190,14 +6118,15 @@
    "battery.capacity"
   ],
   "aliases": [
-   "iWatch Series 10"
+   "iWatch Series 10",
+   "Apple Watch Series 10"
   ]
  },
  {
   "id": "apple-watch-series-11",
   "category": "watch",
   "brand": "Apple",
-  "name": "Apple Watch Series 11",
+  "name": "Watch Series 11",
   "tier": "flagship",
   "released": "2025-09",
   "priceAmd": 188900,
@@ -6239,25 +6168,36 @@
   "variantUnit": "mm",
   "aliases": [
    "iWatch Series 11",
-   "Apple Watch 11"
+   "Apple Watch 11",
+   "Apple Watch Series 11"
   ]
  },
  {
   "id": "apple-watch-series-12-gps-42mm",
   "category": "watch",
   "brand": "Apple",
-  "name": "Watch Series 12 GPS 42mm",
-  "aliases": [],
+  "name": "Watch Series 12 GPS",
+  "aliases": [
+   "Apple Watch Series 12 GPS 46mm",
+   "Watch Series 12 GPS 46mm",
+   "Watch Series 12 GPS 42mm",
+   "Apple Watch Series 12 GPS 42mm"
+  ],
   "tier": "mid",
   "priceAmd": 194900,
-  "priceAmdMax": 194900,
+  "priceAmdMax": 218900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 42,
     "priceAmd": 194900
+   },
+   {
+    "ram": null,
+    "storage": 46,
+    "priceAmd": 218900
    }
   ],
   "display": {},
@@ -6268,41 +6208,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "apple-watch-series-12-gps-46mm",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch Series 12 GPS 46mm",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 218900,
-  "priceAmdMax": 218900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 218900
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Watch Series 12 GPS 46mm.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "apple-watch-ultra-3",
   "category": "watch",
   "brand": "Apple",
-  "name": "Apple Watch Ultra 3",
+  "name": "Watch Ultra 3",
   "tier": "flagship",
   "released": "2025-09",
   "priceAmd": 496900,
@@ -6336,7 +6250,8 @@
   "summaryEn": "The 49 mm titanium Ultra — the biggest battery and the brightest screen Apple puts on a watch.",
   "variantUnit": "mm",
   "aliases": [
-   "iWatch Ultra 3"
+   "iWatch Ultra 3",
+   "Apple Watch Ultra 3"
   ]
  },
  {
@@ -15991,9 +15906,10 @@
   "id": "dyson-hd16-nural-plum",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD16 Supersonic Nural Jasper Plum",
+  "name": "HD16 Supersonic Nural Jasper Plum",
   "aliases": [
-   "Dyson HD16 Supersonic™ Nural Jasper Plum"
+   "Dyson HD16 Supersonic™ Nural Jasper Plum",
+   "Dyson HD16 Supersonic Nural Jasper Plum"
   ],
   "tier": "mid",
   "priceAmd": 249000,
@@ -16021,9 +15937,10 @@
   "id": "dyson-hd16-nural-velvet",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD16 Supersonic Nural Red Velvet",
+  "name": "HD16 Supersonic Nural Red Velvet",
   "aliases": [
-   "Dyson HD16 Supersonic™ Nural Red Velvet"
+   "Dyson HD16 Supersonic™ Nural Red Velvet",
+   "Dyson HD16 Supersonic Nural Red Velvet"
   ],
   "tier": "mid",
   "priceAmd": 279000,
@@ -16051,9 +15968,10 @@
   "id": "dyson-hd16-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD16 Supersonic Vinca Blue/Topaz",
+  "name": "HD16 Supersonic Vinca Blue/Topaz",
   "aliases": [
-   "Dyson HD16 Supersonic™ Vinca Blue/Topaz"
+   "Dyson HD16 Supersonic™ Vinca Blue/Topaz",
+   "Dyson HD16 Supersonic Vinca Blue/Topaz"
   ],
   "tier": "mid",
   "priceAmd": 215000,
@@ -16081,9 +15999,10 @@
   "id": "dyson-hd18-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson HD18 Supersonic Vinca Blue/Topaz",
+  "name": "HD18 Supersonic Vinca Blue/Topaz",
   "aliases": [
-   "Dyson HD18 Supersonic™ Vinca Blue/Topaz"
+   "Dyson HD18 Supersonic™ Vinca Blue/Topaz",
+   "Dyson HD18 Supersonic Vinca Blue/Topaz"
   ],
   "tier": "mid",
   "priceAmd": 233000,
@@ -16427,9 +16346,10 @@
   "id": "dyson-nural-er",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Supersonic Nural hair dryer",
+  "name": "Supersonic Nural hair dryer",
   "aliases": [
-   "Dyson Supersonic Nural™ hair dryer"
+   "Dyson Supersonic Nural™ hair dryer",
+   "Dyson Supersonic Nural hair dryer"
   ],
   "tier": "mid",
   "priceAmd": 229000,
@@ -16527,9 +16447,10 @@
   "id": "dyson-r-dh17",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Dyson Supersonic r DH17",
+  "name": "Supersonic r DH17",
   "aliases": [
-   "Dyson Supersonic r™ DH17"
+   "Dyson Supersonic r™ DH17",
+   "Dyson Supersonic r DH17"
   ],
   "tier": "mid",
   "priceAmd": 229000,
@@ -16739,9 +16660,10 @@
   "id": "garmin-cirqa-smart-band-s-m",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Garmin CIRQA Smart Band, Black, S-M",
+  "name": "CIRQA Smart Band, Black, S-M",
   "aliases": [
-   "Garmin CIRQA™ Smart Band, Black, S-M"
+   "Garmin CIRQA™ Smart Band, Black, S-M",
+   "Garmin CIRQA Smart Band, Black, S-M"
   ],
   "tier": "budget",
   "priceAmd": 89000,
@@ -16769,9 +16691,11 @@
   "id": "garmin-epix-pro-sapphire-edition-51-mm",
   "category": "watch",
   "brand": "Garmin",
-  "name": "epix Pro – Sapphire Edition 51 mm",
+  "name": "epix Pro – Sapphire Edition",
   "aliases": [
-   "Սմարթ ժամացույց Garmin epix Pro (Gen 2) – Sapphire Edition 51 mm"
+   "Սմարթ ժամացույց Garmin epix Pro (Gen 2) – Sapphire Edition 51 mm",
+   "epix Pro – Sapphire Edition 51 mm",
+   "Garmin epix Pro – Sapphire Edition 51 mm"
   ],
   "tier": "upper-mid",
   "priceAmd": 345000,
@@ -16781,7 +16705,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 51,
     "priceAmd": 345000
    }
   ],
@@ -16793,15 +16717,18 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-epix-pro-standard-edition-47mm",
   "category": "watch",
   "brand": "Garmin",
-  "name": "epix Pro – Standard Edition 47mm",
+  "name": "epix Pro – Standard Edition",
   "aliases": [
-   "Սմարթ ժամացույց Garmin epix Pro (Gen 2) – Standard Edition 47mm"
+   "Սմարթ ժամացույց Garmin epix Pro (Gen 2) – Standard Edition 47mm",
+   "epix Pro – Standard Edition 47mm",
+   "Garmin epix Pro – Standard Edition 47mm"
   ],
   "tier": "upper-mid",
   "priceAmd": 327000,
@@ -16811,7 +16738,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 327000
    }
   ],
@@ -16823,7 +16750,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-fenix-7-pro-sapphire-solar",
@@ -16887,9 +16815,14 @@
   "id": "garmin-fenix-8-47-mm-amoled",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 8 – 47 mm, AMOLED",
+  "name": "Fenix 8, AMOLED",
   "aliases": [
-   "Garmin Fenix 8 – 47 mm, AMOLED Slate Gray"
+   "Garmin Fenix 8 – 47 mm, AMOLED Slate Gray",
+   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire, Titanium with Vented titanium bracelet",
+   "Garmin Fenix 8 47mm AMOLED",
+   "Fenix 8 47mm AMOLED",
+   "Fenix 8 – 47 mm, AMOLED",
+   "Garmin Fenix 8 – 47 mm, AMOLED"
   ],
   "tier": "upper-mid",
   "priceAmd": 348000,
@@ -16899,7 +16832,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 348000
    }
   ],
@@ -16911,15 +16844,19 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-fenix-8-47-mm-amoled-sapphire-carbon",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 8 – 47 mm, AMOLED Sapphire Carbon",
+  "name": "Fenix 8, AMOLED Sapphire Carbon",
   "aliases": [
-   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon Gray Titanium"
+   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon Gray Titanium",
+   "Fenix 8 – 47 mm, AMOLED Sapphire Carbon",
+   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon"
   ],
   "tier": "upper-mid",
   "priceAmd": 386280,
@@ -16929,7 +16866,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 386280
    }
   ],
@@ -16941,15 +16878,18 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-fenix-8-47-mm-amoled-sapphire-spark",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 8 – 47 mm, AMOLED Sapphire Spark",
+  "name": "Fenix 8, AMOLED Sapphire Spark",
   "aliases": [
-   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark Orange Titanium"
+   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark Orange Titanium",
+   "Fenix 8 – 47 mm, AMOLED Sapphire Spark",
+   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark"
   ],
   "tier": "upper-mid",
   "priceAmd": 386280,
@@ -16959,7 +16899,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 386280
    }
   ],
@@ -16971,54 +16911,35 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-fenix-8-47-mm-amoled-sapphire-with-vented-bracelet",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Fenix 8 47mm AMOLED",
-  "aliases": [
-   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire, Titanium with Vented titanium bracelet"
   ],
-  "tier": "upper-mid",
-  "priceAmd": 532000,
-  "priceAmdMax": 532000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 532000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire, with Vented bracelet.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-fenix-8-pro-47-mm-amoled",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 8 Pro – 47 mm, AMOLED",
-  "aliases": [],
+  "name": "Fenix 8 Pro, AMOLED",
+  "aliases": [
+   "Garmin Fenix 8 Pro – 51 mm, AMOLED",
+   "Fenix 8 Pro – 51 mm, AMOLED",
+   "Fenix 8 Pro – 47 mm, AMOLED",
+   "Garmin Fenix 8 Pro – 47 mm, AMOLED"
+  ],
   "tier": "upper-mid",
   "priceAmd": 434130,
-  "priceAmdMax": 434130,
+  "priceAmdMax": 468930,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 434130
+   },
+   {
+    "ram": null,
+    "storage": 51,
+    "priceAmd": 468930
    }
   ],
   "display": {},
@@ -17029,43 +16950,19 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-fenix-8-pro-51-mm-amoled",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Fenix 8 Pro – 51 mm, AMOLED",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 468930,
-  "priceAmdMax": 468930,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 468930
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Fenix 8 Pro – 51 mm, AMOLED.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-fenix-9-51mm-carbon-dlc-band",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 9, 51mm, Carbon DLC, Band",
+  "name": "Fenix 9, Carbon DLC, Band",
   "aliases": [
-   "Garmin Fenix 9, 51mm, Carbon DLC, Black Band"
+   "Garmin Fenix 9, 51mm, Carbon DLC, Black Band",
+   "Fenix 9, 51mm, Carbon DLC, Band",
+   "Garmin Fenix 9, 51mm, Carbon DLC, Band"
   ],
   "tier": "upper-mid",
   "priceAmd": 489000,
@@ -17075,7 +16972,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 51,
     "priceAmd": 489000
    }
   ],
@@ -17087,15 +16984,18 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-fenix-9-pro-47mm-amoled-carbon-dlc",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 9 Pro 47mm, AMOLED, Carbon DLC",
+  "name": "Fenix 9 Pro, AMOLED, Carbon DLC",
   "aliases": [
-   "Garmin Fenix 9 Pro 47mm, AMOLED, Carbon Gray DLC Titanium"
+   "Garmin Fenix 9 Pro 47mm, AMOLED, Carbon Gray DLC Titanium",
+   "Fenix 9 Pro 47mm, AMOLED, Carbon DLC",
+   "Garmin Fenix 9 Pro 47mm, AMOLED, Carbon DLC"
   ],
   "tier": "upper-mid",
   "priceAmd": 489000,
@@ -17105,7 +17005,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 489000
    }
   ],
@@ -17117,7 +17017,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-forerunner-170",
@@ -17355,9 +17256,10 @@
   "id": "garmin-forerunner-965-black-powder",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Garmin Forerunner 965 Black/Powder Grey",
+  "name": "Forerunner 965 Black/Powder Grey",
   "aliases": [
-   "Garmin Forerunner® 965 Black/Powder Grey"
+   "Garmin Forerunner® 965 Black/Powder Grey",
+   "Garmin Forerunner 965 Black/Powder Grey"
   ],
   "tier": "mid",
   "priceAmd": 206100,
@@ -17385,9 +17287,10 @@
   "id": "garmin-forerunner-970",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Garmin Forerunner 970 Black",
+  "name": "Forerunner 970 Black",
   "aliases": [
-   "Garmin Forerunner® 970 Black"
+   "Garmin Forerunner® 970 Black",
+   "Garmin Forerunner 970 Black"
   ],
   "tier": "mid",
   "priceAmd": 296100,
@@ -17528,76 +17431,33 @@
   ]
  },
  {
-  "id": "garmin-instinct-3-45-mm-amoled",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Instinct 3 – 45 mm, AMOLED",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 158400,
-  "priceAmdMax": 158400,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 158400
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Instinct 3 – 45 mm, AMOLED.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-instinct-3-45-mm-solar",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Instinct 3 – 45 mm, Solar",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 140800,
-  "priceAmdMax": 140800,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 140800
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Instinct 3 – 45 mm, Solar.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "garmin-instinct-3-50mm-amoled",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Instinct 3, 50mm,AMOLED",
-  "aliases": [],
+  "name": "Instinct 3, AMOLED",
+  "aliases": [
+   "Garmin Instinct 3 – 45 mm, AMOLED",
+   "Instinct 3 – 45 mm, AMOLED",
+   "Սմարթ ժամացույց Garmin Instinct 3 amoled (010-02936-00) 45 mm",
+   "Garmin Instinct 3 amoled 45 mm",
+   "Instinct 3 amoled 45 mm",
+   "Instinct 3, 50mm,AMOLED",
+   "Garmin Instinct 3, 50mm,AMOLED"
+  ],
   "tier": "mid",
-  "priceAmd": 176000,
+  "priceAmd": 158400,
   "priceAmdMax": 176000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 45,
+    "priceAmd": 158400
+   },
+   {
+    "ram": null,
+    "storage": 50,
     "priceAmd": 176000
    }
   ],
@@ -17609,23 +17469,35 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-instinct-3-50mm-solar",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Instinct 3, 50mm,Solar",
-  "aliases": [],
+  "name": "Instinct 3, Solar",
+  "aliases": [
+   "Garmin Instinct 3 – 45 mm, Solar",
+   "Instinct 3 – 45 mm, Solar",
+   "Instinct 3, 50mm,Solar",
+   "Garmin Instinct 3, 50mm,Solar"
+  ],
   "tier": "mid",
-  "priceAmd": 158400,
+  "priceAmd": 140800,
   "priceAmdMax": 158400,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 45,
+    "priceAmd": 140800
+   },
+   {
+    "ram": null,
+    "storage": 50,
     "priceAmd": 158400
    }
   ],
@@ -17637,37 +17509,9 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-instinct-3-amoled-45-mm",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Instinct 3 amoled 45 mm",
-  "aliases": [
-   "Սմարթ ժամացույց Garmin Instinct 3 amoled (010-02936-00) 45 mm"
   ],
-  "tier": "mid",
-  "priceAmd": 198000,
-  "priceAmdMax": 198000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 198000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Instinct 3 amoled 45 mm.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-venu-3-leather",
@@ -17760,44 +17604,19 @@
   ]
  },
  {
-  "id": "garmin-venu-4-41-mm",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Venu 4 - 41 mm",
-  "aliases": [
-   "Garmin Venu 4 - 41 mm Lunar Gold",
-   "Garmin Venu 4 - 41 mm Black"
-  ],
-  "tier": "mid",
-  "priceAmd": 239000,
-  "priceAmdMax": 239000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 239000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Venu 4 - 41 mm.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "garmin-venu-4-45-mm",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Venu 4 45 mm",
+  "name": "Venu 4",
   "aliases": [
    "Սմարթ ժամացույց Garmin Venu 4 (010-03014-00) 45 mm",
-   "Garmin Venu 4 - 45 mm Black"
+   "Garmin Venu 4 - 45 mm Black",
+   "Garmin Venu 4 - 41 mm Lunar Gold",
+   "Garmin Venu 4 - 41 mm Black",
+   "Garmin Venu 4 - 41 mm",
+   "Venu 4 - 41 mm",
+   "Venu 4 45 mm",
+   "Garmin Venu 4 45 mm"
   ],
   "tier": "mid",
   "priceAmd": 239000,
@@ -17807,7 +17626,12 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 41,
+    "priceAmd": 239000
+   },
+   {
+    "ram": null,
+    "storage": 45,
     "priceAmd": 239000
    }
   ],
@@ -17819,7 +17643,9 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "garmin-venu-x1-gps",
@@ -17974,10 +17800,11 @@
   "id": "garmin-vivoactive-6",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Garmin vivoactive 6 Lunar Gold",
+  "name": "vivoactive 6 Lunar Gold",
   "aliases": [
    "Garmin vivoactive® 6 Lunar Gold",
-   "Garmin vivoactive® 6 Black"
+   "Garmin vivoactive® 6 Black",
+   "Garmin vivoactive 6 Lunar Gold"
   ],
   "tier": "mid",
   "priceAmd": 144000,
@@ -21049,7 +20876,7 @@
   "id": "honor-400",
   "category": "phone",
   "brand": "Honor",
-  "name": "Honor 400",
+  "name": "400",
   "tier": "midrange",
   "released": "2025-05",
   "priceAmd": 154900,
@@ -21125,6 +20952,9 @@
    "colors",
    "priceAmdMax",
    "popularity"
+  ],
+  "aliases": [
+   "Honor 400"
   ]
  },
  {
@@ -21159,7 +20989,7 @@
   "id": "honor-400-pro",
   "category": "phone",
   "brand": "Honor",
-  "name": "Honor 400 Pro",
+  "name": "400 Pro",
   "tier": "upper-mid",
   "released": "2025-05",
   "priceAmd": 224900,
@@ -21235,6 +21065,9 @@
    "colors",
    "priceAmdMax",
    "popularity"
+  ],
+  "aliases": [
+   "Honor 400 Pro"
   ]
  },
  {
@@ -22742,7 +22575,7 @@
  {
   "id": "honor-x9c",
   "brand": "Honor",
-  "name": "Honor X9c",
+  "name": "X9c",
   "tier": "mid",
   "released": "2024-11",
   "priceAmd": 145000,
@@ -22825,7 +22658,10 @@
    "colors",
    "os"
   ],
-  "category": "phone"
+  "category": "phone",
+  "aliases": [
+   "Honor X9c"
+  ]
  },
  {
   "id": "honor-x9d",
@@ -23586,7 +23422,7 @@
   "id": "hp-15-fd2747nr",
   "category": "laptop",
   "brand": "HP",
-  "name": "HP 15-FD2747NR",
+  "name": "15-FD2747NR",
   "aliases": [
    "HP PC Notebook 15-FD2747NR",
    "HP 15-FD2747NR"
@@ -34270,11 +34106,12 @@
   "id": "realme-16",
   "category": "phone",
   "brand": "Realme",
-  "name": "Realme 16 5G Air",
+  "name": "16 5G Air",
   "tier": "midrange",
   "aliases": [
    "Realme 16 5G",
-   "Realme 16"
+   "Realme 16",
+   "Realme 16 5G Air"
   ],
   "released": "2025-11",
   "priceAmd": 159900,
@@ -34435,7 +34272,7 @@
   "id": "realme-gt-7t",
   "category": "phone",
   "brand": "Realme",
-  "name": "Realme GT 7T",
+  "name": "GT 7T",
   "tier": "upper-mid",
   "released": "2025-05",
   "priceAmd": 212900,
@@ -34511,6 +34348,9 @@
    "colors",
    "chipset.antutu",
    "popularity"
+  ],
+  "aliases": [
+   "Realme GT 7T"
   ]
  },
  {
@@ -34774,12 +34614,14 @@
   "id": "samsung-galaxy-6-classic-43mm-r950",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch 6 Classic 43mm",
+  "name": "Galaxy Watch 6 Classic",
   "aliases": [
    "Սմարթ ժամացույց Samsung Galaxy Watch 6 Classic 43mm R950 Silver",
    "Galaxy 6 Classic 43mm R950",
    "Galaxy Watch 6 Classic 43mm R950 Silver",
-   "Samsung Galaxy Watch 6 Classic 43mm R950 Silver"
+   "Samsung Galaxy Watch 6 Classic 43mm R950 Silver",
+   "Galaxy Watch 6 Classic 43mm",
+   "Samsung Galaxy Watch 6 Classic 43mm"
   ],
   "tier": "mid",
   "priceAmd": 148900,
@@ -34789,7 +34631,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 43,
     "priceAmd": 148900
    }
   ],
@@ -34804,17 +34646,20 @@
   ],
   "colors": [
    "Silver"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-7-ultra-47mm-sm-l705f",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch 7 Ultra 47mm",
+  "name": "Galaxy Watch 7 Ultra",
   "aliases": [
    "Samsung Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
    "Galaxy 7 Ultra 47mm /SM-L705F",
-   "Galaxy Watch 7 Ultra 47mm Gray /SM-L705F"
+   "Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
+   "Galaxy Watch 7 Ultra 47mm",
+   "Samsung Galaxy Watch 7 Ultra 47mm"
   ],
   "tier": "mid",
   "priceAmd": 229900,
@@ -34824,7 +34669,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 229900
    }
   ],
@@ -34839,59 +34684,40 @@
   ],
   "colors": [
    "Gray"
-  ]
- },
- {
-  "id": "samsung-galaxy-9-40mm",
-  "category": "watch",
-  "brand": "Samsung",
-  "name": "Galaxy Watch 9 40mm",
-  "aliases": [
-   "Galaxy Watch 9 / 40mm",
-   "Galaxy 9 40mm",
-   "Samsung Galaxy Watch 9 / 40mm"
   ],
-  "tier": "mid",
-  "priceAmd": 148000,
-  "priceAmdMax": 148000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 148000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy 9 40mm.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-9-44mm",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch 9 44mm",
+  "name": "Galaxy Watch 9",
   "aliases": [
    "Galaxy Watch 9 / 44mm",
    "Galaxy 9 44mm",
-   "Samsung Galaxy Watch 9 / 44mm"
+   "Samsung Galaxy Watch 9 / 44mm",
+   "Galaxy Watch 9 / 40mm",
+   "Galaxy 9 40mm",
+   "Samsung Galaxy Watch 9 / 40mm",
+   "Samsung Galaxy Watch 9 40mm",
+   "Galaxy Watch 9 40mm",
+   "Galaxy Watch 9 44mm",
+   "Samsung Galaxy Watch 9 44mm"
   ],
   "tier": "mid",
-  "priceAmd": 158000,
+  "priceAmd": 148000,
   "priceAmdMax": 158000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 40,
+    "priceAmd": 148000
+   },
+   {
+    "ram": null,
+    "storage": 44,
     "priceAmd": 158000
    }
   ],
@@ -34903,7 +34729,9 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-a06",
@@ -37859,12 +37687,14 @@
   "id": "samsung-galaxy-ultra-47mm-2024",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch Ultra 47mm 2024",
+  "name": "Galaxy Watch Ultra 2024",
   "aliases": [
    "Samsung Galaxy Watch Ultra 47mm 2024 (Սպիտակ Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2024 (Արծաթագույն Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2024 (Մոխրագույն Տիտան)",
-   "Galaxy Ultra 47mm 2024"
+   "Galaxy Ultra 47mm 2024",
+   "Galaxy Watch Ultra 47mm 2024",
+   "Samsung Galaxy Watch Ultra 47mm 2024"
   ],
   "tier": "mid",
   "priceAmd": 159000,
@@ -37874,7 +37704,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 159000
    }
   ],
@@ -37886,19 +37716,22 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-ultra-47mm-2025",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch Ultra 47mm 2025",
+  "name": "Galaxy Watch Ultra 2025",
   "aliases": [
    "Samsung Galaxy Watch Ultra 47mm 2025 (Մոխրագույն Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2025 (Սև Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2025 (Կապույտ Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2025 (Սպիտակ Տիտան)",
-   "Galaxy Ultra 47mm 2025"
+   "Galaxy Ultra 47mm 2025",
+   "Galaxy Watch Ultra 47mm 2025",
+   "Samsung Galaxy Watch Ultra 47mm 2025"
   ],
   "tier": "mid",
   "priceAmd": 159000,
@@ -37908,7 +37741,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 159000
    }
   ],
@@ -37920,14 +37753,18 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-watch-3-41mm",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch 3 41mm",
-  "aliases": [],
+  "name": "Galaxy Watch 3",
+  "aliases": [
+   "Galaxy Watch 3 41mm",
+   "Samsung Galaxy Watch 3 41mm"
+  ],
   "tier": "budget",
   "priceAmd": 59900,
   "priceAmdMax": 59900,
@@ -37936,7 +37773,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 41,
     "priceAmd": 59900
    }
   ],
@@ -37948,7 +37785,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-watch-7",
@@ -38157,8 +37995,11 @@
   "id": "samsung-galaxy-watch-ultra-47mm-lte",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch Ultra 47mm LTE",
-  "aliases": [],
+  "name": "Galaxy Watch Ultra LTE",
+  "aliases": [
+   "Galaxy Watch Ultra 47mm LTE",
+   "Samsung Galaxy Watch Ultra 47mm LTE"
+  ],
   "tier": "mid",
   "priceAmd": 211900,
   "priceAmdMax": 211900,
@@ -38167,7 +38008,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 47,
     "priceAmd": 211900
    }
   ],
@@ -38179,16 +38020,22 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-watch4-40-mm",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch4 40 mm",
+  "name": "Galaxy Watch4",
   "aliases": [
    "Սմարթ ժամացույց Samsung Galaxy Watch4 40 mm Black (R860)",
-   "Սմարթ ժամացույց Samsung Galaxy Watch4 40 mm Rose Gold (R860)"
+   "Սմարթ ժամացույց Samsung Galaxy Watch4 40 mm Rose Gold (R860)",
+   "Սմարթ ժամացույց Samsung Galaxy Watch4 44mm Black (R870)",
+   "Samsung Galaxy Watch4 44mm",
+   "Galaxy Watch4 44mm",
+   "Galaxy Watch4 40 mm",
+   "Samsung Galaxy Watch4 40 mm"
   ],
   "tier": "budget",
   "priceAmd": 99900,
@@ -38198,7 +38045,12 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 40,
+    "priceAmd": 99900
+   },
+   {
+    "ram": null,
+    "storage": 44,
     "priceAmd": 99900
    }
   ],
@@ -38210,37 +38062,9 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "samsung-galaxy-watch4-44mm",
-  "category": "watch",
-  "brand": "Samsung",
-  "name": "Galaxy Watch4 44mm",
-  "aliases": [
-   "Սմարթ ժամացույց Samsung Galaxy Watch4 44mm Black (R870)"
   ],
-  "tier": "budget",
-  "priceAmd": 99900,
-  "priceAmdMax": 99900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy Watch4 44mm.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": [],
+  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-watch8-classic-l500",
@@ -45756,7 +45580,7 @@
   "id": "xiaomi-pad-7",
   "category": "tablet",
   "brand": "Xiaomi",
-  "name": "Xiaomi Pad 7",
+  "name": "Pad 7",
   "aliases": [
    "Xiaomi Pad 7"
   ],
@@ -45808,7 +45632,7 @@
   "id": "xiaomi-pad-7-pro",
   "category": "tablet",
   "brand": "Xiaomi",
-  "name": "Xiaomi Pad 7 Pro",
+  "name": "Pad 7 Pro",
   "aliases": [
    "Xiaomi Pad 7 Pro"
   ],
@@ -48833,7 +48657,7 @@
   "id": "xiaomi-smart-band-10",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Xiaomi Smart Band 10",
+  "name": "Smart Band 10",
   "aliases": [
    "Xiaomi Smart Band 10"
   ],
