@@ -2,8 +2,8 @@
  "generated": "2026-09-19",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1385,
- "missing": 644,
+ "total": 1373,
+ "missing": 633,
  "tooSmall": 43,
  "products": [
   {
@@ -11,7 +11,7 @@
    "brand": "Samsung",
    "name": "Galaxy Buds 3",
    "category": "earbuds",
-   "shops": 8,
+   "shops": 9,
    "query": "Samsung Galaxy Buds 3",
    "what": "missing",
    "width": 0
@@ -99,10 +99,10 @@
   {
    "id": "jbl-tune",
    "brand": "JBL",
-   "name": "Tune Buds Purple",
+   "name": "Tune Buds",
    "category": "earbuds",
    "shops": 5,
-   "query": "JBL Tune Buds Purple",
+   "query": "JBL Tune Buds",
    "what": "missing",
    "width": 0
   },
@@ -179,10 +179,10 @@
   {
    "id": "beats-studio",
    "brand": "Beats",
-   "name": "Studio Buds Earbuds (A2512 A25 13 A2514)",
+   "name": "Studio Buds",
    "category": "earbuds",
    "shops": 4,
-   "query": "Beats Studio Buds Earbuds (A2512 A25 13 A2514)",
+   "query": "Beats Studio Buds",
    "what": "missing",
    "width": 0
   },
@@ -439,10 +439,10 @@
   {
    "id": "jbl-wave",
    "brand": "JBL",
-   "name": "Wave Buds White",
+   "name": "Wave Buds",
    "category": "earbuds",
    "shops": 3,
-   "query": "JBL Wave Buds White",
+   "query": "JBL Wave Buds",
    "what": "missing",
    "width": 0
   },
@@ -479,20 +479,20 @@
   {
    "id": "samsung-galaxy-9-40mm",
    "brand": "Samsung",
-   "name": "Galaxy Watch 9 / 40mm",
+   "name": "Galaxy Watch 9 40mm",
    "category": "watch",
    "shops": 3,
-   "query": "Samsung Galaxy Watch 9 / 40mm",
+   "query": "Samsung Galaxy Watch 9 40mm",
    "what": "missing",
    "width": 0
   },
   {
    "id": "samsung-galaxy-9-44mm",
    "brand": "Samsung",
-   "name": "Galaxy Watch 9 / 44mm",
+   "name": "Galaxy Watch 9 44mm",
    "category": "watch",
    "shops": 3,
-   "query": "Samsung Galaxy Watch 9 / 44mm",
+   "query": "Samsung Galaxy Watch 9 44mm",
    "what": "missing",
    "width": 0
   },
@@ -727,7 +727,7 @@
    "width": 0
   },
   {
-   "id": "dyson-hs08-id-multi-ceramic-patina-topaz",
+   "id": "dyson-hs08-velvet",
    "brand": "Dyson",
    "name": "Airwrap HS08",
    "category": "appliance",
@@ -793,6 +793,16 @@
    "category": "phone",
    "shops": 2,
    "query": "Honor 200",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "honor-choice-infowear-2i-kch-wb01",
+   "brand": "Honor",
+   "name": "Choice Watch 2i",
+   "category": "watch",
+   "shops": 2,
+   "query": "Honor Choice Watch 2i",
    "what": "missing",
    "width": 0
   },
@@ -1169,10 +1179,10 @@
   {
    "id": "xiaomi-redmi-8-lite",
    "brand": "Xiaomi",
-   "name": "Redmi Buds 8 Lite Black",
+   "name": "Redmi Buds 8 Lite",
    "category": "headphones",
    "shops": 2,
-   "query": "Xiaomi Redmi Buds 8 Lite Black",
+   "query": "Xiaomi Redmi Buds 8 Lite",
    "what": "missing",
    "width": 0
   },
@@ -1768,16 +1778,6 @@
   },
   {
    "id": "apple-ultra-2-49mm-blue-black-m-l-mrf63rb-a",
-   "brand": "Apple",
-   "name": "Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ultra-2-49mm-titaniumplusdark-alpine-loop-l-mx4t3",
    "brand": "Apple",
    "name": "Watch Ultra 2 49mm",
    "category": "watch",
@@ -2439,10 +2439,10 @@
   {
    "id": "beats-solo-true-wireless",
    "brand": "Beats",
-   "name": "Solo Buds True Wireless (A3151 A3150 A3152)",
+   "name": "Solo Buds True Wireless",
    "category": "headphones",
    "shops": 1,
-   "query": "Beats Solo Buds True Wireless (A3151 A3150 A3152)",
+   "query": "Beats Solo Buds True Wireless",
    "what": "missing",
    "width": 0
   },
@@ -2703,36 +2703,6 @@
    "category": "appliance",
    "shops": 1,
    "query": "Dyson HS08 Airwrap ID Multi- Red Velvet/Gold",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-strawberry",
-   "brand": "Dyson",
-   "name": "Airwrap HS08 Strawberry Bronze / Pink",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS08 Strawberry Bronze / Pink",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-velvet",
-   "brand": "Dyson",
-   "name": "Airwrap HS08 Red Velvet / Gold",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS08 Red Velvet / Gold",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-vinca-topaz",
-   "brand": "Dyson",
-   "name": "Airwrap HS08 Vinca Blue / Topaz",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Airwrap HS08 Vinca Blue / Topaz",
    "what": "missing",
    "width": 0
   },
@@ -3419,30 +3389,10 @@
   {
    "id": "honor-5-stl-b19-5502abgj",
    "brand": "Honor",
-   "name": "Watch 5 Green STL-B19 /5502ABGJ",
+   "name": "Watch 5",
    "category": "watch",
    "shops": 1,
-   "query": "Honor Watch 5 Green STL-B19 /5502ABGJ",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-choice-2i-kch-wb01-5504acgm",
-   "brand": "Honor",
-   "name": "Choice Watch 2i Black KCH-WB01 /5504ACGM",
-   "category": "watch",
-   "shops": 1,
-   "query": "Honor Choice Watch 2i Black KCH-WB01 /5504ACGM",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-choice-2i-kch-wb01-5504acgn",
-   "brand": "Honor",
-   "name": "Choice Watch 2i White KCH-WB01 /5504ACGN",
-   "category": "watch",
-   "shops": 1,
-   "query": "Honor Choice Watch 2i White KCH-WB01 /5504ACGN",
+   "query": "Honor Watch 5",
    "what": "missing",
    "width": 0
   },
@@ -3453,16 +3403,6 @@
    "category": "headphones",
    "shops": 1,
    "query": "Honor Choice Clip MAK-ME01",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-choice-infowear-2i-kch-wb01",
-   "brand": "Honor",
-   "name": "CHOICE INFOWEAR Watch 2i KCH-WB01 (5504ACGN)",
-   "category": "watch",
-   "shops": 1,
-   "query": "Honor CHOICE INFOWEAR Watch 2i KCH-WB01 (5504ACGN)",
    "what": "missing",
    "width": 0
   },
@@ -3913,16 +3853,6 @@
    "category": "headphones",
    "shops": 1,
    "query": "JBL Tune 760 NC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-ghost",
-   "brand": "JBL",
-   "name": "Tune Buds Ghost White",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "JBL Tune Buds Ghost White",
    "what": "missing",
    "width": 0
   },
@@ -4889,20 +4819,20 @@
   {
    "id": "nothing-cmf-3-pro-6974434225312",
    "brand": "Nothing",
-   "name": "CMF Watch 3 Pro Dark Grey /6974434225312",
+   "name": "CMF Watch 3 Pro",
    "category": "watch",
    "shops": 1,
-   "query": "Nothing CMF Watch 3 Pro Dark Grey /6974434225312",
+   "query": "Nothing CMF Watch 3 Pro",
    "what": "missing",
    "width": 0
   },
   {
    "id": "nothing-cmf-pro-2",
    "brand": "Nothing",
-   "name": "CMF Nothing Watch PRO 2 (D398)",
+   "name": "CMF Watch Pro 2",
    "category": "watch",
    "shops": 1,
-   "query": "Nothing CMF Nothing Watch PRO 2 (D398)",
+   "query": "Nothing CMF Watch Pro 2",
    "what": "missing",
    "width": 0
   },
@@ -4949,20 +4879,20 @@
   {
    "id": "samsung-galaxy-6-classic-43mm-r950",
    "brand": "Samsung",
-   "name": "Galaxy Watch 6 Classic 43mm R950 Silver",
+   "name": "Galaxy Watch 6 Classic 43mm",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch 6 Classic 43mm R950 Silver",
+   "query": "Samsung Galaxy Watch 6 Classic 43mm",
    "what": "missing",
    "width": 0
   },
   {
    "id": "samsung-galaxy-7-ultra-47mm-sm-l705f",
    "brand": "Samsung",
-   "name": "Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
+   "name": "Galaxy Watch 7 Ultra 47mm",
    "category": "watch",
    "shops": 1,
-   "query": "Samsung Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
+   "query": "Samsung Galaxy Watch 7 Ultra 47mm",
    "what": "missing",
    "width": 0
   },
@@ -5213,16 +5143,6 @@
    "category": "tv",
    "shops": 1,
    "query": "Samsung Odyssey G8 OLED 34” S34BG850SU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-original-galaxy-3-r530",
-   "brand": "Samsung",
-   "name": "Original Headphone Galaxy Buds 3 R530 Silver",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Samsung Original Headphone Galaxy Buds 3 R530 Silver",
    "what": "missing",
    "width": 0
   },
@@ -6337,42 +6257,12 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-5-active",
-   "brand": "Xiaomi",
-   "name": "Redmi Watch 5 Active Matte Silver (BHR8790GL)",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Redmi Watch 5 Active Matte Silver (BHR8790GL)",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-8-active-bhr08jtgl",
    "brand": "Xiaomi",
-   "name": "Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL",
+   "name": "Redmi Buds 8 Active",
    "category": "headphones",
    "shops": 1,
-   "query": "Xiaomi Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-8-active-bhr08jugl",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-8-lite-bhr08olgl",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 8 lite (M2539E1) BHR08OLGL",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 8 lite (M2539E1) BHR08OLGL",
+   "query": "Xiaomi Redmi Buds 8 Active",
    "what": "missing",
    "width": 0
   },
