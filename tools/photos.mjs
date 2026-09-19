@@ -192,6 +192,17 @@ const NO_FETCH = Object.keys(PR.excluded || {});
 const REJECT = fs.existsSync('data/photo-rejects.json')
   ? JSON.parse(fs.readFileSync('data/photo-rejects.json', 'utf8')) : {};
 const rejected = id => new Set(Object.values(REJECT[id] || {}).map(r => r && r.url).filter(Boolean));
+// A rejection is matched by url, so one recorded without a url silently protects nothing. That
+// happened: the S95H television was rejected for a white block under its screen, the entry carried
+// an empty url, and the very next run downloaded it again. Say so rather than fail quietly.
+{
+  const blind = [];
+  for (const [id, slots] of Object.entries(REJECT))
+    for (const [slot, r] of Object.entries(slots || {}))
+      if (!r || !r.url) blind.push(`${id} ${slot}`);
+  if (blind.length)
+    console.log(`  ! ${blind.length} rejection(s) with no url, which cannot refuse anything: ${blind.join(', ')}`);
+}
 
 let improved = 0, kept = 0, weak = [], refused = 0;
 for (const p of P) {

@@ -3,19 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1332,
- "missing": 482,
- "tooSmall": 52,
+ "missing": 410,
+ "tooSmall": 55,
  "products": [
-  {
-   "id": "samsung-galaxy-3",
-   "brand": "Samsung",
-   "name": "Galaxy Buds 3",
-   "category": "earbuds",
-   "shops": 9,
-   "query": "Samsung Galaxy Buds 3",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "xiaomi-poco-x8-pro-max",
    "brand": "Xiaomi",
@@ -23,16 +13,6 @@
    "category": "phone",
    "shops": 7,
    "query": "Xiaomi POCO X8 Pro Max",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-emberton-iii",
-   "brand": "Marshall",
-   "name": "Emberton III",
-   "category": "speaker",
-   "shops": 6,
-   "query": "Marshall Emberton III",
    "what": "missing",
    "width": 0
   },
@@ -73,36 +53,6 @@
    "category": "phone",
    "shops": 6,
    "query": "Xiaomi Redmi Note 17 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune",
-   "brand": "JBL",
-   "name": "Tune Buds",
-   "category": "earbuds",
-   "shops": 5,
-   "query": "JBL Tune Buds",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-c81-pro",
-   "brand": "Xiaomi",
-   "name": "POCO C81 Pro",
-   "category": "phone",
-   "shops": 5,
-   "query": "Xiaomi POCO C81 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-x8-pro-5g",
-   "brand": "Xiaomi",
-   "name": "POCO X8 Pro 5G",
-   "category": "phone",
-   "shops": 5,
-   "query": "Xiaomi POCO X8 Pro 5G",
    "what": "missing",
    "width": 0
   },
@@ -157,56 +107,6 @@
    "width": 0
   },
   {
-   "id": "jbl-xtreme-4",
-   "brand": "JBL",
-   "name": "Xtreme 4",
-   "category": "speaker",
-   "shops": 4,
-   "query": "JBL Xtreme 4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-acton-iii",
-   "brand": "Marshall",
-   "name": "Acton III",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Marshall Acton III",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-willen-ii",
-   "brand": "Marshall",
-   "name": "Willen II",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Marshall Willen II",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-woburn-iii",
-   "brand": "Marshall",
-   "name": "Woburn III",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Marshall Woburn III",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-f7-pro",
-   "brand": "Xiaomi",
-   "name": "POCO F7 Pro",
-   "category": "phone",
-   "shops": 4,
-   "query": "Xiaomi POCO F7 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "whoop-life",
    "brand": "Whoop",
    "name": "Life",
@@ -243,56 +143,6 @@
    "category": "appliance",
    "shops": 3,
    "query": "Dyson Supersonic Nural HD16",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-wave",
-   "brand": "JBL",
-   "name": "Wave Buds",
-   "category": "earbuds",
-   "shops": 3,
-   "query": "JBL Wave Buds",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-middleton",
-   "brand": "Marshall",
-   "name": "Middleton",
-   "category": "speaker",
-   "shops": 3,
-   "query": "Marshall Middleton",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-willen",
-   "brand": "Marshall",
-   "name": "Willen",
-   "category": "speaker",
-   "shops": 3,
-   "query": "Marshall Willen",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-2",
-   "brand": "Samsung",
-   "name": "Galaxy Buds 2",
-   "category": "earbuds",
-   "shops": 3,
-   "query": "Samsung Galaxy Buds 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-9-44mm",
-   "brand": "Samsung",
-   "name": "Galaxy Watch 9",
-   "category": "watch",
-   "shops": 3,
-   "query": "Samsung Galaxy Watch 9",
    "what": "missing",
    "width": 0
   },
@@ -477,136 +327,6 @@
    "width": 0
   },
   {
-   "id": "jbl-tune-beam",
-   "brand": "JBL",
-   "name": "Tune Beam",
-   "category": "headphones",
-   "shops": 2,
-   "query": "JBL Tune Beam",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-flex",
-   "brand": "JBL",
-   "name": "Tune Flex",
-   "category": "headphones",
-   "shops": 2,
-   "query": "JBL Tune Flex",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-xtreme-3",
-   "brand": "JBL",
-   "name": "Xtreme 3",
-   "category": "speaker",
-   "shops": 2,
-   "query": "JBL Xtreme 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-xtreme-4-squad",
-   "brand": "JBL",
-   "name": "Xtreme 4 Squad",
-   "category": "speaker",
-   "shops": 2,
-   "query": "JBL Xtreme 4 Squad",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-ideacentre-aio-24irh9",
-   "brand": "Lenovo",
-   "name": "IdeaCentre AIO 24IRH9",
-   "category": "desktop",
-   "shops": 2,
-   "query": "Lenovo IdeaCentre AIO 24IRH9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-ideapad-5-2-in-1-14iru9",
-   "brand": "Lenovo",
-   "name": "IdeaPad 5 2-in-1 14IRU9",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Lenovo IdeaPad 5 2-in-1 14IRU9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-loq-15irx10",
-   "brand": "Lenovo",
-   "name": "LOQ 15IRX10",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Lenovo LOQ 15IRX10",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-thinkbook-16-g8-irl",
-   "brand": "Lenovo",
-   "name": "ThinkBOOK 16 G8 IRL",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Lenovo ThinkBOOK 16 G8 IRL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-24u411a-b",
-   "brand": "LG",
-   "name": "24U411A-B",
-   "category": "monitor",
-   "shops": 2,
-   "query": "LG 24U411A-B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-27sr50f-w",
-   "brand": "LG",
-   "name": "27SR50F-W",
-   "category": "monitor",
-   "shops": 2,
-   "query": "LG 27SR50F-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-32sr50f-w",
-   "brand": "LG",
-   "name": "32SR50F-W",
-   "category": "monitor",
-   "shops": 2,
-   "query": "LG 32SR50F-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-uxbridge",
-   "brand": "Marshall",
-   "name": "Uxbridge",
-   "category": "speaker",
-   "shops": 2,
-   "query": "Marshall Uxbridge",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-2-pro",
-   "brand": "Samsung",
-   "name": "Galaxy Buds 2 Pro",
-   "category": "earbuds",
-   "shops": 2,
-   "query": "Samsung Galaxy Buds 2 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-3-fe",
    "brand": "Samsung",
    "name": "Galaxy Buds 3 FE",
@@ -643,56 +363,6 @@
    "category": "watch",
    "shops": 2,
    "query": "Samsung Galaxy Watch Active 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-a9-x110",
-   "brand": "Samsung",
-   "name": "Galaxy Tab A9 X110",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Samsung Galaxy Tab A9 X110",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-a9-x115",
-   "brand": "Samsung",
-   "name": "Galaxy Tab A9 X115",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Samsung Galaxy Tab A9 X115",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-a9plus-x210",
-   "brand": "Samsung",
-   "name": "Galaxy Tab A9+ X210",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Samsung Galaxy Tab A9+ X210",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-a9plus-x216",
-   "brand": "Samsung",
-   "name": "Galaxy Tab A9+ X216",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Samsung Galaxy Tab A9+ X216",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-ue65m80hauxpy",
-   "brand": "Samsung",
-   "name": "UE65M80HAUXPY",
-   "category": "tv",
-   "shops": 2,
-   "query": "Samsung UE65M80HAUXPY",
    "what": "missing",
    "width": 0
   },
@@ -2247,126 +1917,6 @@
    "width": 0
   },
   {
-   "id": "jbl-quantum-300",
-   "brand": "JBL",
-   "name": "Quantum 300",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Quantum 300",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-125-tws",
-   "brand": "JBL",
-   "name": "Tune 125 TWS",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 125 TWS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-130-tws",
-   "brand": "JBL",
-   "name": "Tune 130 TWS",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 130 TWS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-215-tws",
-   "brand": "JBL",
-   "name": "Tune 215 TWS",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 215 TWS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-230-nc-tws",
-   "brand": "JBL",
-   "name": "Tune 230 NC TWS",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 230 NC TWS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-230-tws",
-   "brand": "JBL",
-   "name": "Tune 230 TWS",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 230 TWS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-500-wired",
-   "brand": "JBL",
-   "name": "Tune 500 Wired",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 500 Wired",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-520-bt",
-   "brand": "JBL",
-   "name": "Tune 520 BT",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 520 BT",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-670-nc",
-   "brand": "JBL",
-   "name": "Tune 670 NC",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 670 NC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-720-bt",
-   "brand": "JBL",
-   "name": "Tune 720 BT",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 720 BT",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-tune-760-nc",
-   "brand": "JBL",
-   "name": "Tune 760 NC",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Tune 760 NC",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "jbl-xtreme-3-camouflage",
-   "brand": "JBL",
-   "name": "Xtreme 3 Camouflage",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Xtreme 3 Camouflage",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "lenovo-82vg00wxus",
    "brand": "Lenovo",
    "name": "82VG00WXUS",
@@ -2567,62 +2117,12 @@
    "width": 0
   },
   {
-   "id": "lenovo-legion-5-pro-16-irx9",
-   "brand": "Lenovo",
-   "name": "Legion 5 Pro 16 IRX9",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Legion 5 Pro 16 IRX9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-legion-pro-5-slim",
-   "brand": "Lenovo",
-   "name": "Legion Pro 5 Slim",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Legion Pro 5 Slim",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-legion-slim-5-14-aph8-oled-82y5000aus",
-   "brand": "Lenovo",
-   "name": "Legion Slim 5 14 APH8 OLED 82Y5000AUS",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Legion Slim 5 14 APH8 OLED 82Y5000AUS",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-loq-15-arp9-83jc0000us",
-   "brand": "Lenovo",
-   "name": "LOQ 15 ARP9 83JC0000US",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo LOQ 15 ARP9 83JC0000US",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "lenovo-loq-15iax9",
    "brand": "Lenovo",
    "name": "LOQ 15IAX9",
    "category": "laptop",
    "shops": 1,
    "query": "Lenovo LOQ 15IAX9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-loq-tower-17-irr9-90x0002mgh",
-   "brand": "Lenovo",
-   "name": "LOQ Tower 17 IRR9 90X0002MGH",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo LOQ Tower 17 IRR9 90X0002MGH",
    "what": "missing",
    "width": 0
   },
@@ -2637,52 +2137,12 @@
    "width": 0
   },
   {
-   "id": "lenovo-thinkpad-e16-gen-1-21jn001qgp",
-   "brand": "Lenovo",
-   "name": "ThinkPad E16 Gen 1 21JN001QGP",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo ThinkPad E16 Gen 1 21JN001QGP",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-thinkpad-e16-gen-2-21ma002xrt",
-   "brand": "Lenovo",
-   "name": "ThinkPad E16 Gen 2 21MA002XRT",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo ThinkPad E16 Gen 2 21MA002XRT",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-thinkpad-e16-gen-2-21ma004vrt",
-   "brand": "Lenovo",
-   "name": "ThinkPad E16 Gen 2 21MA004VRT",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo ThinkPad E16 Gen 2 21MA004VRT",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw",
    "brand": "Lenovo",
    "name": "ThinkPad T16 G4",
    "category": "laptop",
    "shops": 1,
    "query": "Lenovo ThinkPad T16 G4",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-thinkpad-t16-gen-2-21hh005agq",
-   "brand": "Lenovo",
-   "name": "ThinkPad T16 Gen 2 21HH005AGQ",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo ThinkPad T16 Gen 2 21HH005AGQ",
    "what": "missing",
    "width": 0
   },
@@ -2703,36 +2163,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Lenovo Yoga 9 14ILL10",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-yoga-pro-7-14-ahp9-83e3002ark",
-   "brand": "Lenovo",
-   "name": "Yoga Pro 7 14 AHP9 83E3002ARK",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Yoga Pro 7 14 AHP9 83E3002ARK",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-yoga-pro-9-16imh9",
-   "brand": "Lenovo",
-   "name": "Yoga Pro 9 16IMH9",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Yoga Pro 9 16IMH9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led",
-   "brand": "Lenovo",
-   "name": "Yoga Pro 9 16IMH9 83DN002RRK Mini LED",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Yoga Pro 9 16IMH9 83DN002RRK Mini LED",
    "what": "missing",
    "width": 0
   },
@@ -3247,66 +2677,6 @@
    "width": 0
   },
   {
-   "id": "msi-cyborg-15-a12vf-043us",
-   "brand": "MSI",
-   "name": "Cyborg 15 A12VF 043US",
-   "category": "laptop",
-   "shops": 1,
-   "query": "MSI Cyborg 15 A12VF 043US",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "msi-cyborg-15-a13uc-821xae",
-   "brand": "MSI",
-   "name": "Cyborg 15 A13UC-821XAE",
-   "category": "laptop",
-   "shops": 1,
-   "query": "MSI Cyborg 15 A13UC-821XAE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "msi-cyborg-15-a13ve-218us",
-   "brand": "MSI",
-   "name": "Cyborg 15 A13VE-218US",
-   "category": "laptop",
-   "shops": 1,
-   "query": "MSI Cyborg 15 A13VE-218US",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "msi-modern-15-a11mu-1006xge",
-   "brand": "MSI",
-   "name": "Modern 15 A11MU 1006XGE",
-   "category": "laptop",
-   "shops": 1,
-   "query": "MSI Modern 15 A11MU 1006XGE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "msi-modern-15-b11m-006xge",
-   "brand": "MSI",
-   "name": "Modern 15 B11M 006XGE",
-   "category": "laptop",
-   "shops": 1,
-   "query": "MSI Modern 15 B11M 006XGE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "msi-modern-15-b5m-008xge",
-   "brand": "MSI",
-   "name": "MODERN 15 B5M-008XGE",
-   "category": "laptop",
-   "shops": 1,
-   "query": "MSI MODERN 15 B5M-008XGE",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "nothing-6974434224179",
    "brand": "Nothing",
    "name": "6974434224179",
@@ -3397,72 +2767,12 @@
    "width": 0
   },
   {
-   "id": "samsung-galaxy-book-4-np750xgk-ks2us",
-   "brand": "Samsung",
-   "name": "Galaxy Book 4 NP750XGK-KS2US",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Samsung Galaxy Book 4 NP750XGK-KS2US",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-fe",
    "brand": "Samsung",
    "name": "Galaxy Watch FE",
    "category": "watch",
    "shops": 1,
    "query": "Samsung Galaxy Watch FE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-a8-10-5-x200",
-   "brand": "Samsung",
-   "name": "Galaxy Tab A8 10.5 X200",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Samsung Galaxy Tab A8 10.5 X200",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-a8-10-5-x205",
-   "brand": "Samsung",
-   "name": "Galaxy Tab A8 10.5 X205",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Samsung Galaxy Tab A8 10.5 X205",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-s9-fe-x510",
-   "brand": "Samsung",
-   "name": "Galaxy Tab S9 FE X510",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Samsung Galaxy Tab S9 FE X510",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-s9-fe-x516",
-   "brand": "Samsung",
-   "name": "Galaxy Tab S9 FE X516",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Samsung Galaxy Tab S9 FE X516",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-tab-s9-ultra",
-   "brand": "Samsung",
-   "name": "Galaxy Tab S9 Ultra",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Samsung Galaxy Tab S9 Ultra",
    "what": "missing",
    "width": 0
   },
@@ -3587,26 +2897,6 @@
    "width": 0
   },
   {
-   "id": "samsung-odyssey-ark-55-ls55cg97wnixci",
-   "brand": "Samsung",
-   "name": "Odyssey Ark 55” LS55CG97WNIXCI",
-   "category": "monitor",
-   "shops": 1,
-   "query": "Samsung Odyssey Ark 55” LS55CG97WNIXCI",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-odyssey-g3-24-s24ag304nr",
-   "brand": "Samsung",
-   "name": "Odyssey G3 24” S24AG304NR",
-   "category": "monitor",
-   "shops": 1,
-   "query": "Samsung Odyssey G3 24” S24AG304NR",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-odyssey-g4-ls25bg400eixci",
    "brand": "Samsung",
    "name": "Odyssey G4 LS25BG400EIXCI",
@@ -3623,16 +2913,6 @@
    "category": "monitor",
    "shops": 1,
    "query": "Samsung Odyssey G5 S32CG552EU",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-odyssey-g8-oled-34-s34bg850su",
-   "brand": "Samsung",
-   "name": "Odyssey G8 OLED 34” S34BG850SU",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung Odyssey G8 OLED 34” S34BG850SU",
    "what": "missing",
    "width": 0
   },
@@ -4837,6 +4117,16 @@
    "width": 369
   },
   {
+   "id": "marshall-uxbridge",
+   "brand": "Marshall",
+   "name": "Uxbridge",
+   "category": "speaker",
+   "shops": 2,
+   "query": "Marshall Uxbridge",
+   "what": "too small",
+   "width": 556
+  },
+  {
    "id": "tcl-55v6c",
    "brand": "TCL",
    "name": "55V6C",
@@ -5115,6 +4405,26 @@
    "query": "JBL Clip 4 Squad",
    "what": "too small",
    "width": 396
+  },
+  {
+   "id": "jbl-tune-125-tws",
+   "brand": "JBL",
+   "name": "Tune 125 TWS",
+   "category": "headphones",
+   "shops": 1,
+   "query": "JBL Tune 125 TWS",
+   "what": "too small",
+   "width": 581
+  },
+  {
+   "id": "jbl-tune-130-tws",
+   "brand": "JBL",
+   "name": "Tune 130 TWS",
+   "category": "headphones",
+   "shops": 1,
+   "query": "JBL Tune 130 TWS",
+   "what": "too small",
+   "width": 500
   },
   {
    "id": "realme-16",
