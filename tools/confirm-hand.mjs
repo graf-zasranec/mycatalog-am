@@ -42,6 +42,60 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 // that is the page saying "no", not a price.
 const FLOOR = 1000;
 
+// pixel.am is the one shop here that states no price on the page at all. It ships every BUILD of
+// a product as JSON instead - var PRODUCT_VARIANTS = [...] - each with its own price, sale price,
+// stock, colour, memory and SIM card, and the visible figure is assembled from it in the browser.
+// All four readers below came back empty on 268 pages for exactly this reason.
+// Because the page prices each build separately, a pixel url shared by rows of different
+// capacities is NOT the trap the guard further down exists for: this can answer each of them.
+const BUILDS = ['pixel.am'];
+const capOf = s => {
+  const m = String(s || '').match(/([\d.]+)\s*(TB|GB)/i);
+  return m ? Math.round(parseFloat(m[1]) * (/tb/i.test(m[2]) ? 1024 : 1)) : null;
+};
+function buildPrice(html, f) {
+  if (!BUILDS.some(h => f[4].includes(h))) return null;
+  let vs = null;
+  const m = html.match(/var\s+PRODUCT_VARIANTS\s*=\s*(\[[\s\S]*?\]);/);
+  if (m) {
+    try {
+      vs = JSON.parse(m[1]).map(v => {
+        const p = Object.fromEntries((v.properties || [])
+          .map(x => [String(x.title).toLowerCase().trim(), String(x.valueTitle || '').trim()]));
+        // pixel quotes TWO prices and "price" is the dearer one. On the Galaxy Buds 2 page the
+        // JSON says price 47000 / wholesalePrice 42000, and the page itself prints "47,000" as
+        // the credit figure with "Գինը: 42,000" - the cash price - beside it. Our own row says
+        // 42,000. So wholesalePrice is not a trade price despite the name: it is what a person
+        // pays, which is also the figure this catalogue quotes everywhere.
+        // Reading "price" instead would have raised 73 pixel offers by about a tenth each,
+        // uniformly, which is what gave it away - a whole shop does not reprice by 10% overnight.
+        const price = Math.round(Number(v.wholesalePrice) > 0 ? Number(v.wholesalePrice)
+          : Number(v.salePrice) > 0 ? Number(v.salePrice) : Number(v.price));
+        return { price, stock: Number(v.quantity) > 0, cap: capOf(p.memory), color: p.color || '' };
+      }).filter(v => v.price >= FLOOR);
+    } catch { }
+  }
+  // A product sold in one build only ships no variant array. Those pages carry both figures too:
+  // .actual-price holds the CREDIT price and .cash-price the cash one - the PS5 vertical stand
+  // reads "Credit: 32,000 AMD / Price: 29,000 AMD", and our row says 29,000. Take the cash one.
+  // og:title is no good either: it carries a rounded "price from" that is sometimes days stale.
+  if (!vs || !vs.length) {
+    const a = html.match(/class="[^"]*cash-price[^"]*"[^>]*>([\s\S]{0,160}?)<\/(?:div|span|p)>/i);
+    const n = a && Number((String(a[1]).replace(/<[^>]+>/g, ' ').match(/[\d, ]{4,}/g) || [''])
+      .map(x => Number(x.replace(/[^\d]/g, ''))).filter(x => x >= FLOOR)[0] || 0);
+    vs = n >= FLOOR ? [{ price: n, stock: true, cap: null, color: '', only: true }] : [];
+  }
+  if (!vs.length) return null;
+  const cap = Number(f[2]) || null, col = (f[3] || '').trim().toLowerCase();
+  let hit = vs.filter(v => cap == null || v.cap === cap);
+  if (col) { const c = hit.filter(v => v.color.toLowerCase() === col); if (c.length) hit = c; }
+  if (!hit.length) return null;
+  // Several builds that all cost the same are not an ambiguity - there is nothing to disagree
+  // about. Several at different prices are, and this tool does not guess between them.
+  if (hit.length > 1 && new Set(hit.map(v => v.price)).size !== 1) return null;
+  return { price: hit[0].price, how: hit[0].only ? 'pixel-cash' : 'pixel-builds', stock: hit[0].stock, only: !!hit[0].only };
+}
+
 function priceOf(html) {
   for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
@@ -130,10 +184,13 @@ for (const f of todo) {
 const shared = todo.filter(f => configs.get(f[0] + '|' + f[4]).size > 1);
 const sharedKeys = new Set(shared.map(f => f[0] + '|' + f[4]));
 if (sharedKeys.size) console.log(`${shared.length} row(s) share ${sharedKeys.size} url(s) but disagree on the capacity or the price - one page cannot settle them, skipped`);
-todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + f[4]));
+// A page that prices each BUILD separately is not the trap this guard exists for - it can answer
+// each row on its own terms. But only the page can say whether it does that, so those rows stay
+// in the run and are judged after it has been read, further down.
+todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + f[4]) || BUILDS.some(h => f[4].includes(h)));
 
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
-let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [];
+let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [];
 for (let i = 0; i < todo.length; i++) {
   const f = todo[i];
   let p = CACHE.get(tidy(f[4])) || null;
@@ -153,7 +210,11 @@ for (let i = 0; i < todo.length; i++) {
     } catch (e) { gone.push([f[0], f[1], f[4], e.name]); }
     await sleep(DELAY);
     if (!html) continue;
-    p = priceOf(html);
+    p = buildPrice(html, f) || priceOf(html);
+    // This row was kept past the disputed-url guard only because its shop prices builds
+    // separately. If the page turned out to carry one figure for everything, it cannot settle a
+    // url that five different Dyson colours point at - five rows, five prices, one page.
+    if (p && p.only && sharedKeys.has(f[0] + '|' + f[4])) { disputed.push([f[0], f[1], f[4]]); continue; }
     if (!p) { nop.push([f[0], f[1], f[4]]); continue; }
   }
   how[p.how] = (how[p.how] || 0) + 1;
@@ -196,6 +257,8 @@ console.log('read from:', Object.entries(how).map(([k, v]) => `${k} ${v}`).join(
 if (nop.length) { console.log(`\n${nop.length} page(s) with no price this could read:`); for (const n of nop.slice(0, 15)) console.log('  ', n[0].padEnd(13), n[1].slice(0, 38).padEnd(40), n[2].slice(0, 60)); }
 if (wild.length) { console.log(`
 ${wild.length} price(s) moved too far to apply without a person looking:`); for (const w of wild.slice(0, 20)) console.log('  ', w[0].padEnd(13), String(w[1]).slice(0, 36).padEnd(38), `${w[2]} -> ${w[3]}`, w[4].slice(0, 46)); }
+if (disputed.length) console.log(`
+${disputed.length} row(s) share a url with rows that disagree about its price, and the page turned out to carry only one figure - left alone`);
 if (wrongLink.length) {
   console.log(`\n${wrongLink.length} row(s) whose link opens a different product - price left alone, the LINK needs fixing:`);
   for (const w of wrongLink) console.log('  ', w[0].padEnd(10), w[1].slice(0, 40).padEnd(42), '->', w[2].slice(0, 40).padEnd(42), w[3].slice(0, 58));
