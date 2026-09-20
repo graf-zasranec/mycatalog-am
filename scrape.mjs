@@ -1450,29 +1450,24 @@ const SHOPS = {
 
   zigzag: {
     name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer',
-    // Their WAF answers 403 to any non-browser user agent. Spoofing a browser to get around
-    // that is bot-detection evasion, so this adapter stays off by default. Run it explicitly
-    // (node scrape.mjs zigzag) if they ever allow identified crawlers.
-    disabled: '403 to non-browser user agents',
     async run() {
-      // robots.txt forbids query strings, so candidate URLs come from zigzag's own sitemap
-      const xml = await get('https://www.zigzag.am/sitemap/hy_AM/sitemap.xml');
-      await sleep(DELAY_MS);
-      const urls = [...xml.matchAll(/<loc>(https:\/\/www\.zigzag\.am\/am\/[^<]+\.html)<\/loc>/g)].map(m => m[1]);
-      // only fetch pages that already look like one of our phones
-      const cand = urls.filter(u => matchPhone(u));
+      // zigzag.am sits behind a WAF that answers 403 to plain fetch(). Their robots.txt allows
+      // product pages - it disallows checkout, Magento's internals and every URL with a query
+      // string - and names no crawler it refuses, so tools/zigzag-fetch.py reads them with
+      // scrapling and leaves the result here. This adapter only matches and prices it, so a
+      // machine without Python reports the last fetch instead of nothing.
+      //
+      // The query-string ban is why that fetcher walks known product urls rather than their
+      // catalogue: pagination is ?p=2 and search is ?q=, and both are off limits.
+      let rows = [];
+      try { rows = JSON.parse(fs.readFileSync('data/zigzag.json', 'utf8')); } catch { }
       const out = [];
-      const perPhone = {};
-      for (const u of cand) {
-        const id = matchPhone(u);
-        perPhone[id] = (perPhone[id] || 0) + 1;
-        if (perPhone[id] > 6) continue;            // cap requests per model
-        const html = await get(u); await sleep(DELAY_MS);
-        if (!html) continue;
-        const price = Number((html.match(/data-price-amount="(\d+(?:\.\d+)?)"/) || [])[1]);
-        const title = clean((html.match(/<title>([^<]*)<\/title>/) || [])[1] || '').replace(/\s*-\s*Zigzag.*$/i, '');
-        if (!price) continue;
-        out.push({ id, price: Math.round(price), storage: storageOf(title) ?? storageOf(u), title, url: u, inStock: true });
+      for (const r of rows) {
+        const id = matchPhone(r.title) || matchPhone(r.url);
+        if (!id || !r.price || r.price < 5000 || !safeUrl(r.url)) continue;
+        out.push({ id, price: r.price, title: r.title, url: r.url,
+          storage: storageOf(r.title) ?? storageOf(r.url), ram: ramOf(r.title),
+          inStock: r.inStock !== false });
       }
       return out;
     }

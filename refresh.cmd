@@ -27,10 +27,17 @@ echo [%date% %time%] reading eldorado...
 python tools\eldorado-fetch.py
 if errorlevel 1 echo   eldorado fetch failed - carrying on with the previous data\eldorado.json
 
-REM Zigzag also answers 403, and is deliberately NOT here. Their robots allows product pages, but
-REM getting past their WAF means impersonating a browser, and this project does not do that to a
-REM shop that has said no. Their prices come from tools/browse-harvest.js, run by a person in
-REM their own browser - which is a person looking at a shop, not a crawler pretending to be one.
+REM Zigzag, on the same arrangement and for the same reason: 403 to plain fetch, robots.txt that
+REM allows product pages and names no crawler it refuses. Added on the owner's explicit
+REM instruction after checking it worked - a product page returns 200 with its prices intact.
+REM
+REM Their robots forbids every URL with a query string, so that fetcher cannot walk the catalogue
+REM at all: pagination is ?p=2 and search is ?q=. It re-reads the product pages we already link
+REM plus whatever the clean .html category pages show, which is why Zigzag gains prices for what
+REM it already has rather than discovering much that is new.
+echo [%date% %time%] reading zigzag...
+python tools\zigzag-fetch.py
+if errorlevel 1 echo   zigzag fetch failed - carrying on with the previous data\zigzag.json
 
 echo [%date% %time%] refreshing prices...
 node scrape.mjs
