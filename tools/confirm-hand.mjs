@@ -27,6 +27,12 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 // Every shop here is Magento, WooCommerce or a bespoke store, and between them they state the
 // price in one of four ways. Tried in order of how specific each one is: a ld+json Product says
 // which product it belongs to, a bare data-price-amount does not.
+// A shop states 0 for something it has stopped selling, and the og / itemprop / Magento readers
+// took that at face value - this was about to write 0 over real prices on Ucom's discontinued
+// iPads and phones. Nothing in this catalogue costs under a thousand drams, so a figure below
+// that is the page saying "no", not a price.
+const FLOOR = 1000;
+
 function priceOf(html) {
   for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
@@ -36,7 +42,7 @@ function priceOf(html) {
         if (/product/i.test(n['@type'] || '') && n.offers) {
           const o = Array.isArray(n.offers) ? n.offers[0] : n.offers;
           const p = Number(o.price ?? o.lowPrice);
-          if (p > 0) return { price: Math.round(p), how: 'ld+json', stock: /InStock/i.test(String(o.availability || '')) };
+          if (p >= FLOOR) return { price: Math.round(p), how: 'ld+json', stock: /InStock/i.test(String(o.availability || '')) };
         }
         for (const v of Object.values(n)) { const r = walk(v); if (r) return r; }
         return null;
@@ -47,16 +53,16 @@ function priceOf(html) {
   }
   let m = html.match(/<meta[^>]+property="product:price:amount"[^>]+content="([\d.]+)"/i)
        || html.match(/<meta[^>]+content="([\d.]+)"[^>]+property="product:price:amount"/i);
-  if (m) return { price: Math.round(+m[1]), how: 'og-meta', stock: !/out-of-stock|OutOfStock/i.test(html) };
+  if (m && +m[1] >= FLOOR) return { price: Math.round(+m[1]), how: 'og-meta', stock: !/out-of-stock|OutOfStock/i.test(html) };
   m = html.match(/itemprop="price"[^>]*content="([\d.]+)"/i);
-  if (m) return { price: Math.round(+m[1]), how: 'itemprop', stock: !/out-of-stock|OutOfStock/i.test(html) };
+  if (m && +m[1] >= FLOOR) return { price: Math.round(+m[1]), how: 'itemprop', stock: !/out-of-stock|OutOfStock/i.test(html) };
   // Magento prints dozens of these on one page for its recommendations, so take the one inside
   // the main product block and nowhere else.
   const main = html.match(/product-info-main([\s\S]{0,8000})/i);
   if (main) {
     const f = main[1].match(/data-price-amount="([\d.]+)"[^>]*data-price-type="finalPrice"/i)
            || main[1].match(/data-price-amount="([\d.]+)"/i);
-    if (f) return { price: Math.round(+f[1]), how: 'magento-main', stock: !/out-of-stock/i.test(html) };
+    if (f && +f[1] >= FLOOR) return { price: Math.round(+f[1]), how: 'magento-main', stock: !/out-of-stock/i.test(html) };
   }
   return null;
 }
@@ -85,7 +91,7 @@ if (sharedKeys.size) console.log(`${shared.length} row(s) share ${sharedKeys.siz
 todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + f[4]));
 
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
-let ok = 0, moved = 0, gone = [], nop = [], how = {};
+let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [];
 for (let i = 0; i < todo.length; i++) {
   const f = todo[i];
   let html = '';
@@ -98,7 +104,15 @@ for (let i = 0; i < todo.length; i++) {
   const p = priceOf(html);
   if (!p) { nop.push([f[0], f[1], f[4]]); continue; }
   how[p.how] = (how[p.how] || 0) + 1;
-  if (+f[5] !== p.price) { moved++; console.log(`  ${f[0].padEnd(13)} ${f[1].slice(0, 40).padEnd(42)} ${f[5]} -> ${p.price}`); }
+  // A price that moves by more than half is either a real sale or a page that is not about this
+  // row, and from here the two look identical. Reported, never applied: two runs today were
+  // stopped for writing exactly this kind of change, and a wrong price is worse than an undated one.
+  const was = Number(f[5]) || 0;
+  if (was && (p.price > was * 1.6 || p.price < was * 0.5)) {
+    wild.push([f[0], f[1], was, p.price, f[4]]);
+    continue;
+  }
+  if (was !== p.price) { moved++; console.log(`  ${f[0].padEnd(13)} ${f[1].slice(0, 40).padEnd(42)} ${f[5]} -> ${p.price}`); }
   while (f.length < 9) f.push('');
   f[5] = String(p.price); f[8] = TODAY;
   ok++;
@@ -127,4 +141,6 @@ if (!dry) {
 console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page`);
 console.log('read from:', Object.entries(how).map(([k, v]) => `${k} ${v}`).join(', ') || 'nothing');
 if (nop.length) { console.log(`\n${nop.length} page(s) with no price this could read:`); for (const n of nop.slice(0, 15)) console.log('  ', n[0].padEnd(13), n[1].slice(0, 38).padEnd(40), n[2].slice(0, 60)); }
+if (wild.length) { console.log(`
+${wild.length} price(s) moved too far to apply without a person looking:`); for (const w of wild.slice(0, 20)) console.log('  ', w[0].padEnd(13), String(w[1]).slice(0, 36).padEnd(38), `${w[2]} -> ${w[3]}`, w[4].slice(0, 46)); }
 if (gone.length) { console.log(`\n${gone.length} page(s) gone - a person decides what happens to these:`); for (const g of gone.slice(0, 15)) console.log('  ', g[0].padEnd(13), g[1].slice(0, 34).padEnd(36), g[3], g[2].slice(0, 52)); }
