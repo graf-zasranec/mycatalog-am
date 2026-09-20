@@ -5,12 +5,12 @@
 /* ================= tokens ================= */
 :root{
   --bg:#F7F3EC; --surface:#FFFFFF; --surface2:#F1EBE1; --shot:#EFE9DF;
-  --text:#161C28; --body:#4A5262; --muted:#686F7B;
+  --text:#161C28; --body:#4A5262; --muted:#626974;
   --line:#E6DFD4; --line2:#D9D0C2;
   --brand:#9E2B25; --brand-ink:#FFFFFF; --brand-soft:#F6E4E1; --brand-2:#7E1F1B;
   --apricot:#B8443C; --apricot-soft:#F7E5E3;
   --plum:#3E6B8A; --plum-soft:#E7EEF3;
-  --good:#2F7A57; --good-soft:#E4F0EA; --bad:#C0392B;
+  --good:#2C7452; --good-soft:#E4F0EA; --bad:#C0392B;
   --hot:#161C28; --hot-soft:#EFE9DF;
   /* masthead shares the page surface: nav, hero and catalogue are one field */
   --nav:transparent; --nav-ink:var(--text); --nav-muted:var(--muted);
@@ -445,7 +445,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .chip.clear:hover{color:var(--text)}
 
 .resbar{display:flex;align-items:baseline;gap:10px;margin:22px 0 14px}
-.resbar h2{font-size:26px;font-weight:800;letter-spacing:-.035em}
+.resbar h1,.resbar h2{font-size:26px;font-weight:800;letter-spacing:-.035em;margin:0}
 .resbar .cnt{font-size:0.875rem;color:var(--muted);font-weight:500}
 
 /* ================= product grid ================= */
@@ -519,7 +519,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .pcard:hover .go{background:var(--brand)}
 .pcard:hover .go svg{stroke:var(--brand-ink)}
 .empty{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--muted)}
-.empty b{display:block;color:var(--text);font-size:18px;font-weight:700;margin-bottom:6px}
+.empty b,.empty .emptyh{display:block;color:var(--text);font-size:18px;font-weight:700;margin:0 0 6px;line-height:1.3}
 
 /* ================= product page — bold panel ================= */
 .crumb a:hover{color:var(--brand)}
@@ -747,7 +747,7 @@ footer.ft{margin-top:56px;border-top:1px solid var(--line);background:var(--surf
 footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;font-size:0.8125rem;color:var(--muted)}
 /* What this site is, on every page. It takes the whole width so it reads as a statement rather
    than as one more item in the row, and it sits before the links so the links stay at the end. */
-.ft-note{flex-basis:100%;order:1;font-size:0.75rem;line-height:1.5;color:var(--muted);opacity:.85}
+.ft-note{flex-basis:100%;order:1;font-size:0.75rem;line-height:1.5;color:var(--muted)}
 .ft-links{display:flex;gap:18px;margin-left:auto;order:2}
 .ft-links a{color:var(--body);border-bottom:1px solid transparent;padding-block:2px}
 .ft-links a:hover{color:var(--text);border-bottom-color:var(--line2)}
@@ -841,7 +841,7 @@ a.store:hover .nm{color:var(--brand)}
 .orow .pr{font-size:18px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
 .orow .dl{text-align:right;font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
 .orow .ar{color:var(--muted);font-size:15px}
-.orow:hover .ar{color:var(--brand)}
+.orow:hover .ar{color:var(--brand-2)}
 .orow.best{background:var(--good-soft)}
 .orow.best .dl{color:var(--good)}
 .orow.best .rk{color:var(--good)}
@@ -942,7 +942,19 @@ a.store:hover .nm{color:var(--brand)}
    square centred on them. The ones that are simply short get taller. Both only under
    (pointer: coarse), so nothing about the desktop layout moves. */
 @media (pointer: coarse){
-  .ctabs .ctab, .fmore, .pg, .toggle, .fbar summary, .nav a, #langs button{min-height:44px}
+  .ctabs .ctab, .fmore, .pg, .toggle, .fbar summary, .nav a, #langs button,
+  .ft-links a, .topnav .logo, .fapply button, .cv-dots button,
+  .backbtn, .bs button, .cchip{min-height:44px}
+  /* the pager was 44 tall and 34 wide - a target is both measurements or neither */
+  .pager .pg{min-width:44px}
+  .cv-dots{gap:8px}
+  /* Only the thumb of a range takes the pointer, and an 18 px thumb is the one control on this
+     site you have to DRAG. Bigger thumb, taller strip, track re-centred on both. */
+  .rng{height:30px}
+  .rng .track,.rng .fill{top:14px}
+  .rng input{top:1px;height:28px}
+  .rng input::-webkit-slider-thumb{width:26px;height:26px}
+  .rng input::-moz-range-thumb{width:24px;height:24px}
   .fav::after, .srch-go::after, .th::after, #langs button::after{
     content:'';position:absolute;top:50%;left:50%;width:44px;height:44px;
     transform:translate(-50%,-50%);border-radius:50%}

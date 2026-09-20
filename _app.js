@@ -1103,21 +1103,30 @@ function catTabs() {
   const rest = live.length - shown.length;
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
     tab('', x('catAll'), pool.length) +
-    shown.map(c => tab(c, (X[st.lang].cats && X[st.lang].cats[c]) || c, n(c))).join('') +
+    shown.map(c => tab(c, catName(c), n(c))).join('') +
     // Every section, laid out and explained, is what the chooser page already is - so the button
     // that says "more sections" goes there instead of unfolding a second row of the same chips.
     `<a class="fmore cmore" href="#/construct">${esc(x('catsMore'))}${
       rest > 0 ? ` <b>${rest}</b>` : ''}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>`
     + `</nav>`;
 }
+const catName = c => (X[st.lang].cats && X[st.lang].cats[c]) || c;
 // Six fills one row at every width this site is read at, and leaves the grid on screen.
 const CAT_SHOWN = 6;
 function catalogView() {
+  // The hero carries the h1 on the front page. Every other catalogue screen - a category, a
+  // search - had no h1 at all, and the one heading it did have said "Catalog" while the browser
+  // tab said "Phones". Name the thing you are standing in, at the level it deserves.
+  const raw = location.hash.replace(/^#/, '') || '/';
+  const hd = raw === '/' ? 'h2' : 'h1';
+  const title = raw === '/search' && st.q.trim() ? st.q.trim()
+    : st.cat ? catName(st.cat)
+    : t('catalog.title');
   return `<div class="shell">
     ${catTabs()}
     ${filterBar()}
     <div class="chips" id="chips"></div>
-    <div class="resbar" id="results"><h2>${esc(location.hash.replace(/^#/, '') === '/search' && st.q.trim() ? st.q.trim() : t('catalog.title'))}</h2><span class="cnt" id="rescnt"></span></div>
+    <div class="resbar" id="results"><${hd}>${esc(title)}</${hd}><span class="cnt" id="rescnt"></span></div>
     <div class="grid" id="gridbox"></div>
     <div id="pager"></div>
   </div>`;
@@ -1162,11 +1171,15 @@ function refresh() {
   const last = pageCount(all.length);
   if (st.page > last) st.page = last;          // a filter that shrinks the set must not strand you
   const r = all.slice((st.page - 1) * PAGE, st.page * PAGE);
+  // "Try changing the filters" was printed at a reader with no filters on - somebody who had
+  // typed a word, or landed on a section that is empty. Say it only when there are filters, and
+  // offer the button only when it has something to undo.
+  const ch = activeChips();
   box.innerHTML = all.length ? r.map(card).join('')
-    : `<div class="empty"><b>${esc(x('emptyT'))}</b>${esc(x('emptyS'))}<button class="btn ghost" data-rm="all" style="margin-top:14px">${esc(t('common.reset'))}</button></div>`;
+    : `<div class="empty"><b>${esc(x('emptyT'))}</b>${ch.length ? esc(x('emptyS')) : ''}${
+        ch.length || st.q ? `<button class="btn ghost" data-rm="all" style="margin-top:14px">${esc(t('common.reset'))}</button>` : ''}</div>`;
   const pg = $('#pager'); if (pg) pg.innerHTML = pager(all.length);
   $('#rescnt').textContent = t('common.results_count').replace('{n}', all.length);
-  const ch = activeChips();
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
@@ -1763,8 +1776,10 @@ function offersView(p) {
 /* ================= compare ================= */
 function compareView() {
   const ps = st.cmp.map(byId).filter(Boolean);
+  // It borrowed the catalogue's "try changing the filters" - a screen with no filters on it.
+  // The button below already says what to do, so the wrong sentence just goes.
   if (!ps.length) return `<div class="shell"><div class="empty" style="margin-top:40px">
-    <b>${esc(t('compare.empty'))}</b><p style="margin-bottom:18px">${esc(x('emptyS'))}</p>
+    <h1 class="emptyh">${esc(t('compare.empty'))}</h1>
     <a class="btn" href="#/">${esc(t('compare.add_phone'))}</a></div></div>`;
   const n = ps.length, canAdd = n < MAXCMP, slot = n === 1 ? 1 : 0;
   const cols = `200px repeat(${n + slot},minmax(0,1fr))`;
@@ -1890,10 +1905,14 @@ function render(keepScroll) {
   // not on a re-render (keepScroll): one visit per route, not one per filter change
   if (!keepScroll) countView();
   const h = raw || '/';
-  const mc = h.startsWith('/c/') ? h.slice(3) : null;
+  // #/c/phones (the tab links say #/c/phone) used to leave you on "0 results - try changing the
+  // filters", with no tab marked current and no filter to change. A section nobody stocks is not
+  // a section; show the whole catalogue instead of a dead end.
+  const mc0 = h.startsWith('/c/') ? h.slice(3) : null;
+  const mc = mc0 && DATA.some(p => catOf(p) === mc0) ? mc0 : (mc0 ? '' : null);
   // a category lives in the URL so it can be shared and the back button works
   const wasCat = st.cat;
-  st.cat = mc || (h === '/' ? '' : st.cat);
+  st.cat = mc !== null ? mc : (h === '/' ? '' : st.cat);
   if (st.cat !== wasCat) { pruneFilters(); if (!sortKeys().includes(st.sort)) st.sort = 'popular'; }
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
