@@ -202,7 +202,7 @@ function looksLikeBundle(text) {
   }
   return false;
 }
-function matchPhone(text) {
+function matchPhone(text, meta) {
   // A human reading data/links.csv and correcting the id column has settled this page for good.
   // Checked before every heuristic below, because a heuristic is a guess and this is a reading:
   // no amount of cleverness about titles should be allowed to re-open a question already answered.
@@ -245,7 +245,14 @@ function matchPhone(text) {
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
   // title, so a title wins when both readings of the same item miss.
   if (CURSHOP && !/^https?:/i.test(text)) {
-    (MISSED.get(CURSHOP) || MISSED.set(CURSHOP, new Map()).get(CURSHOP)).set(norm(text), String(text).trim());
+    // Record what the shop was asking as well as what it called the thing. A title on its own is
+    // a thing to type in by hand; a title with a price and a page is a row tools/add.mjs can turn
+    // into a catalogue entry, and its rule - no price, no entry - can only be applied if the
+    // price came along. Adapters that have the row pass it; the rest still record the title.
+    (MISSED.get(CURSHOP) || MISSED.set(CURSHOP, new Map()).get(CURSHOP))
+      .set(norm(text), meta && meta.price
+        ? { title: String(text).trim(), price: Math.round(+meta.price) || null, url: meta.url || null }
+        : { title: String(text).trim() });
   }
   return null;
 }
@@ -1500,6 +1507,52 @@ const SHOPS = {
     }
   },
 
+  yerevanmobile: {
+    name: 'Yerevan Mobile', site: 'https://www.yerevanmobile.am', note: 'phone retailer',
+    async run() {
+      // Crawled since 2026-09-20. Their robots.txt is one User-agent: * block with fourteen path
+      // rules and nothing about AI at all; product pages are allowed. "Disallow: /*?" rules out
+      // pagination, so as with Ucom the breadth has to come from categories rather than pages.
+      // Accessories is left out: the catalogue does not carry them.
+      const CATS = ['phones', 'tablets', 'watches', 'computers'];
+      const out = [];
+      for (const cat of CATS) {
+        const html = await get(`https://www.yerevanmobile.am/en/electronics/${cat}.html`);
+        await sleep(DELAY_MS);
+        if (!html) continue;
+        // Magento product grid. Ucom's index-scanning does not transfer: here the anchor writes
+        // href BEFORE class, so reading "the first url in the block" picks up a hover widget
+        // rather than the product. Match the anchor itself.
+        const A = /<a[^>]*href="(https:\/\/www\.yerevanmobile\.am\/en\/[^"]+\.html)"[^>]*class="[^"]*product-item-link[^"]*"[^>]*>([\s\S]*?)<\/a>/i;
+        for (const b of html.split('product-item-info').slice(1)) {
+          const a = A.exec(b);
+          if (!a) continue;
+          const url = a[1];
+          const title = clean(a[2].replace(/<[^>]+>/g, ' '));
+          const pi = b.indexOf('data-price-amount=' + D);
+          const price = pi < 0 ? 0 : Math.round(Number(b.slice(pi + 19, b.indexOf(D, pi + 19))));
+          if (!url || !title || !price || price < 5000 || !safeUrl(url)) continue;
+          if (/\/electronics\//.test(url)) continue;         // a category, not a product
+          const id = matchPhone(title, { price, url }) || matchPhone(url);
+          if (!id) continue;
+          out.push({ id, price, title, url,
+            storage: storageOf(title) ?? storageOf(url), ram: ramOf(title), inStock: true });
+        }
+      }
+      return out;
+    }
+  },
+
+  // Notebook Centre has no adapter, and not for want of permission: their robots.txt allows
+  // product pages and names six AI crawlers it refuses, none of them this one. The site simply
+  // cannot be read. Every product page is a client-rendered shell - 2,345 characters of body
+  // text, and neither the product's name nor its SKU appears in the server HTML, only the slug
+  // already in the url. The data arrives from /get-products, which their robots.txt disallows.
+  //
+  // So their 216 rows stay hand-recorded. Reading them would mean either running their JavaScript
+  // or fetching the endpoint they asked crawlers not to touch.
+  notebookcentre: { name: 'Notebook Centre', site: 'https://notebookcentre.am', note: 'electronics retailer' },
+
   zigzag: {
     name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer',
     async run() {
@@ -1728,11 +1781,6 @@ const HAND = {
   miarmenia: { name: 'Mi Armenia', site: 'https://miarmenia.am', note: 'Xiaomi brand store' },
   mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
   zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
-  appzone: { name: 'AppZone', site: 'https://appzone.am', note: 'electronics retailer' },
-  // Crawled as of 2026-09-20; before that, hand-recorded rows carried these two, so both still
-  // need a name to show under.
-  notebookcentre: { name: 'Notebook Centre', site: 'https://notebookcentre.am', note: 'electronics retailer' },
-  yerevanmobile: { name: 'Yerevan Mobile', site: 'https://yerevanmobile.am', note: 'phone retailer' },
 };
 for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 
@@ -1899,11 +1947,15 @@ if (deduped) console.log(`${deduped} duplicate offer row(s) collapsed`);
 // rewritten, so a single-shop run does not erase the others' readings.
 const MISSF = 'data/unmatched.json';
 const missPrev = fs.existsSync(MISSF) ? JSON.parse(fs.readFileSync(MISSF, 'utf8')) : { shops: {} };
-for (const [shop, m] of MISSED) missPrev.shops[shop] = [...m.values()].sort();
+for (const [shop, m] of MISSED)
+  missPrev.shops[shop] = [...m.values()].sort((a, b) => a.title.localeCompare(b.title));
 missPrev.generated = new Date().toISOString();
 fs.mkdirSync('data', { recursive: true });
 fs.writeFileSync(MISSF, JSON.stringify(missPrev, null, 1));
-console.log(`${[...MISSED.values()].reduce((n, m) => n + m.size, 0)} title(s) on the shelves that the catalogue has no entry for -> ${MISSF}`);
+const missN = [...MISSED.values()].reduce((n, m) => n + m.size, 0);
+const missPriced = [...MISSED.values()].reduce((n, m) => n + [...m.values()].filter(r => r.price).length, 0);
+console.log(`${missN} title(s) on the shelves that the catalogue has no entry for -> ${MISSF}`);
+if (missPriced) console.log(`   ${missPriced} of them carry a price and a link, so tools/add.mjs can read them`);
 
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),

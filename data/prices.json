@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T09:32:56.446Z",
+ "generated": "2026-09-20T09:47:34.915Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -93,7 +93,7 @@
   },
   "yerevanmobile": {
    "name": "Yerevan Mobile",
-   "site": "https://yerevanmobile.am",
+   "site": "https://www.yerevanmobile.am",
    "note": "phone retailer"
   },
   "istyle": {
@@ -8096,6 +8096,18 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-19"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "price": 112000,
+    "title": "Apple Watch SE 3 40mm",
+    "url": "https://www.yerevanmobile.am/en/apple-watch-se-3-40mm.html",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-watch-se-3",
@@ -23605,6 +23617,18 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
+    "price": 54000,
+    "title": "Samsung Galaxy Tab A11 WiFi (X133)",
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-wifi-x133.html",
+    "storage": 64,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy Tab A11 WiFi",
     "price": 54000,
@@ -24629,6 +24653,18 @@
     "color": "Silver",
     "shop": "mobilecentre",
     "seen": "2026-09-19"
+   },
+   {
+    "id": "xiaomi-smart-band-10",
+    "price": 23000,
+    "title": "Xiaomi Smart Band 10",
+    "url": "https://www.yerevanmobile.am/en/xiaomi-smart-band-10.html",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-smart-band-10",
@@ -35849,12 +35885,15 @@
    },
    {
     "id": "samsung-galaxy-watch-8",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy Watch 8 40mm",
     "price": 84000,
-    "storage": 40,
+    "title": "Samsung Galaxy Watch 8 40mm",
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-watch-8-40mm.html",
-    "seeded": true
+    "storage": 40,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-watch-8",
@@ -45377,6 +45416,18 @@
     "color": "Lavender Purple",
     "shop": "eldorado",
     "seen": "2026-09-19"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "price": 99000,
+    "title": "Xiaomi Redmi Pad 2",
+    "url": "https://www.yerevanmobile.am/en/xiaomi-redmi-pad-2.html",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-pad-2",
@@ -58347,6 +58398,18 @@
   "amazon-kindle-paperwhite-12": [
    {
     "id": "amazon-kindle-paperwhite-12",
+    "price": 89000,
+    "title": "Amazon Kindle Paperwhite 12 Gen/16GB",
+    "url": "https://www.yerevanmobile.am/en/amazon-kindle-paperwhite-12-gen.html",
+    "storage": 16,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "amazon-kindle-paperwhite-12",
     "shop": "yerevanmobile",
     "title": "Amazon Kindle Paperwhite 12 Gen 16GB",
     "price": 89000,
@@ -58470,6 +58533,29 @@
     "color": "Porcelain",
     "shop": "ibolit",
     "seen": "2026-09-19"
+   }
+  ],
+  "amazon-kindle-paperwhite-kids-11": [
+   {
+    "id": "amazon-kindle-paperwhite-kids-11",
+    "price": 75000,
+    "title": "Amazon Kindle Kids Paperwhite 11 Gen",
+    "url": "https://www.yerevanmobile.am/en/amazon-kindle-kids-paperwhite-11-gen.html",
+    "storage": 16,
+    "ram": null,
+    "inStock": true,
+    "color": "Black",
+    "shop": "yerevanmobile",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "amazon-kindle-paperwhite-kids-11",
+    "shop": "yerevanmobile",
+    "title": "Amazon Kindle Kids Paperwhite 11 Gen",
+    "price": 75000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/electronics.html",
+    "seeded": true
    }
   ],
   "asus-vivobook-15x-m1503-oled": [
@@ -58666,17 +58752,6 @@
     "price": 379000,
     "storage": 512,
     "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
-    "seeded": true
-   }
-  ],
-  "amazon-kindle-paperwhite-kids-11": [
-   {
-    "id": "amazon-kindle-paperwhite-kids-11",
-    "shop": "yerevanmobile",
-    "title": "Amazon Kindle Kids Paperwhite 11 Gen",
-    "price": 75000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/electronics.html",
     "seeded": true
    }
   ],

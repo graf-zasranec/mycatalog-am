@@ -11,9 +11,8 @@
 # pages is half an hour and this machine should not have to do it twice.
 #
 # A crawled offer heals itself: next run the shop either serves the page or the offer disappears.
-# A hand-recorded row has no such cycle - notebookcentre and yerevanmobile are not crawled at all,
-# appzone barely - so a row here is the one kind that can rot silently while the site keeps
-# linking people to a 404.
+# A hand-recorded row has no such cycle, so it is the one kind that can rot silently while the
+# site keeps linking people to a 404.
 import json
 import re
 import sys
