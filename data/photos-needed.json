@@ -3,19 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1321,
- "missing": 271,
+ "missing": 254,
  "tooSmall": 57,
  "products": [
-  {
-   "id": "xiaomi-redmi-note-17-pro-max-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 17 Pro Max 5G",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi Redmi Note 17 Pro Max 5G",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "xiaomi-poco-m7",
    "brand": "Xiaomi",
@@ -43,16 +33,6 @@
    "category": "appliance",
    "shops": 4,
    "query": "Dyson Supersonic Nural HD16",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-x7",
-   "brand": "Xiaomi",
-   "name": "Poco X7",
-   "category": "phone",
-   "shops": 4,
-   "query": "Xiaomi Poco X7",
    "what": "missing",
    "width": 0
   },
@@ -333,26 +313,6 @@
    "category": "phone",
    "shops": 2,
    "query": "Xiaomi Redmi Note 17 4G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-pad-2-pro",
-   "brand": "Xiaomi",
-   "name": "Redmi Pad 2 Pro",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Xiaomi Redmi Pad 2 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-smart-band-2",
-   "brand": "Xiaomi",
-   "name": "Redmi Smart Band 2",
-   "category": "watch",
-   "shops": 2,
-   "query": "Xiaomi Redmi Smart Band 2",
    "what": "missing",
    "width": 0
   },
@@ -2377,76 +2337,6 @@
    "width": 0
   },
   {
-   "id": "tcl-75c7k",
-   "brand": "TCL",
-   "name": "75C7K",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 75C7K",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-75t6d",
-   "brand": "TCL",
-   "name": "75T6D",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 75T6D",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-75v6d",
-   "brand": "TCL",
-   "name": "75V6D",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 75V6D",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-85p7l",
-   "brand": "TCL",
-   "name": "85P7L",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 85P7L",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-85p8l",
-   "brand": "TCL",
-   "name": "85P8L",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 85P8L",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-98c6k",
-   "brand": "TCL",
-   "name": "98C6K",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 98C6K",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "tcl-98p8k",
-   "brand": "TCL",
-   "name": "98P8K",
-   "category": "tv",
-   "shops": 1,
-   "query": "TCL 98P8K",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "toshiba-32v35me",
    "brand": "Toshiba",
    "name": "32V35ME",
@@ -2613,66 +2503,6 @@
    "category": "appliance",
    "shops": 1,
    "query": "Xiaomi Mi Electric Kettle Pro 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-mi-smart-kettle-pro-mjhwsh02ym",
-   "brand": "Xiaomi",
-   "name": "Mi Smart Kettle Pro MJHWSH02YM",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Xiaomi Mi Smart Kettle Pro MJHWSH02YM",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-f6-pro",
-   "brand": "Xiaomi",
-   "name": "Poco F6 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco F6 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-x5-5g",
-   "brand": "Xiaomi",
-   "name": "Poco X5 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Poco X5 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-8-active-bhr08jtgl",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 8 Active",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 8 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-pad-se-8-7-4g",
-   "brand": "Xiaomi",
-   "name": "Redmi Pad SE 8.7 4G",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Xiaomi Redmi Pad SE 8.7 4G",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-smart-band-8-active",
-   "brand": "Xiaomi",
-   "name": "Smart Band 8 Active",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Smart Band 8 Active",
    "what": "missing",
    "width": 0
   },
