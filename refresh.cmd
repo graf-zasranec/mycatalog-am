@@ -68,11 +68,38 @@ if errorlevel 1 (
   exit /b 1
 )
 
+REM A shop rewrites its image urls, so a product with no photograph today often has one the
+REM morning after a fresh crawl - which is exactly now. --missing asks only about the products
+REM that have none, because measuring all 1,318 to improve 200 is an hour of somebody else's
+REM bandwidth. It writes to images/_src only; turning those into cutouts is tools/cutout.py,
+REM which is run by a person because every new cutout is looked at before it goes on the site.
+REM
+REM Not a gate: no photograph is a worse page, not a wrong price.
+echo.
+echo [%date% %time%] looking for photographs of the products that have none...
+node tools/photos.mjs --missing
+if errorlevel 1 echo   photo pass failed - prices are published regardless
+
 REM Not a gate, a reading. Rows that disagree with themselves are printed so the run says what it
 REM is unsure about, instead of leaving it to be found on the site.
 echo.
 echo [%date% %time%] rows that disagree with themselves:
 node tools/recheck.mjs
+
+REM The other three readings: links that go nowhere, offers nobody has confirmed, and titles on
+REM the shelves this catalogue has no entry for. All three drift quietly between runs and all
+REM three used to be discovered on the live site instead of here.
+echo.
+echo [%date% %time%] state of the catalogue:
+node tools/health.mjs
+
+REM What this run CANNOT do, so it is not mistaken for having done it. notebookcentre.am names
+REM anthropic-ai and Claude-Web in its robots.txt with Disallow: / , so nothing here reads it -
+REM its prices and its links are confirmed by a person opening the shop, and the seen column in
+REM data/listings.csv carries the date that happened. If those dates are old, that is the job.
+echo.
+echo   notebookcentre is not crawled - its robots.txt refuses this kind of client.
+echo   Its rows are confirmed by hand; check the seen column in data\listings.csv.
 
 echo.
 echo [%date% %time%] done.
