@@ -2298,6 +2298,12 @@ function heroGo(n) {
 }
 function heroTick() {
   clearTimeout(heroT);
+  // The money animations above are gated on reduced motion by hand, for the reason written
+  // there: a media query cannot undo a timer. This is a timer too, and it was missed. The hero
+  // kept advancing itself every seven seconds for a reader who has asked the whole system to
+  // stop moving things - which is also WCAG 2.2.2, auto-updating content with no way to stop it.
+  // The dots still work, so every slide is still reachable. It just waits to be asked.
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   heroT = setTimeout(() => {
     const sl = $$('.cv-s');
     if (sl.length > 1 && !document.hidden) heroGo(sl.findIndex(e => e.classList.contains('on')) + 1);

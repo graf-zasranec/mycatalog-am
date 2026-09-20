@@ -137,7 +137,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 @keyframes fxglint{from{background-position:-60% 0}to{background-position:170% 0}}
 .orow.fx-glint{background-image:linear-gradient(100deg,transparent 41%,color-mix(in srgb,var(--brand) 20%,transparent) 50%,transparent 59%);
   background-size:260% 100%;background-repeat:no-repeat;animation:fxglint .95s ease-out}
-.sv .bar i{transition:width .9s cubic-bezier(.22,1,.36,1)}
+/* The bar's width is written into the markup at render time and nothing ever changes it
+   afterwards, so the width transition that used to be here never once fired - the savings
+   bars have always just appeared at full length. A keyframe needs nothing to change: it runs
+   on arrival, it scales rather than resizes, so it composites, and the reduced-motion rule
+   above already strips every animation for anyone who does not want it. */
+@keyframes barin{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.sv .bar i{transform-origin:left;animation:barin .9s cubic-bezier(.22,1,.36,1) both}
 .nav a .c{min-width:19px;height:19px;margin-left:6px;padding:0 6px;border-radius:var(--pill);background:var(--brand);
   color:var(--brand-ink);font-size:11.5px;font-weight:700;display:inline-grid;place-items:center;vertical-align:1px}
 .nav a .c:empty{display:none}
@@ -440,7 +446,7 @@ button,input,select,textarea{font:inherit;color:inherit}
   transition:opacity .18s ease,max-width .24s cubic-bezier(.4,0,.2,1),padding .24s,margin .24s}
 .chip.gone{opacity:0;max-width:0;padding-left:0;padding-right:0;margin-right:-9px}
 .chip span{font-size:15px;line-height:1;opacity:.65}
-.chip:hover x{opacity:1}
+.chip:hover span{opacity:1}
 .chip.clear{background:none;color:var(--muted);padding:0 12px}
 .chip.clear:hover{color:var(--text)}
 
