@@ -1576,7 +1576,7 @@ try {
     // A seventh column, and the rows written before it existed simply leave it empty. Ucom prices
     // the Galaxy A17 at 65,900 with 4 GB of memory and 73,900 with 6, both at 128 GB and in the
     // same three colours - two real configurations that nothing in six columns could tell apart.
-    .map(line => { const [shop, title, cap, color, url, price, ram] = line.split(','); return { shop, title, cap, color, url, price, ram }; });
+    .map(line => { const [shop, title, cap, color, url, price, ram, check] = line.split(','); return { shop, title, cap, color, url, price, ram, check }; });
   const shared = new Map();
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
   const rows = raw
@@ -1628,7 +1628,8 @@ try {
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
                 ram: r.ram ? +r.ram : undefined, size: screenOf(r.title, r.id),
-                color: r.color || undefined, url: r.url, seeded: true, esim: r.esim });
+                color: r.color || undefined, url: r.url, seeded: true, esim: r.esim,
+                checkColor: (r.check || '').trim() === 'color' || undefined });
     seeded++;
   }
   if (tagged) console.log(`${tagged} crawled offer(s) had their SIM build named by a hand row`);
