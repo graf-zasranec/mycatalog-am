@@ -23,6 +23,11 @@ const dry = process.argv.includes('--dry');
 // Named products only, when any are named. Re-measuring 1,425 products to improve ten of them is
 // an hour of somebody else's bandwidth for nothing.
 const only = new Set(process.argv.slice(2).filter(a => !a.startsWith('--')));
+// --missing: only the products that have no photograph at all. Measuring 1,318 products to find
+// a source for the 200 without one is an hour of other people's bandwidth for nothing, which is
+// why the nightly job asks for this rather than the full pass. Shops rewrite their image urls,
+// so a product that had nothing yesterday often has something the morning after a fresh crawl.
+const missingOnly = process.argv.includes('--missing');
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // enough of a decoder to read width/height out of the header, no dependency needed
@@ -139,12 +144,18 @@ function beats(a, b) {
   return a.edge > b.edge;
 }
 
+// How many candidates answered with something other than an image on the last call. A product
+// whose every shop image 404s produced exactly the same silence as one nobody links at all -
+// the iPhone 15 Pro had eight iStore urls, all of them dead, and the run said nothing whatever
+// about it. The count is read straight after best() returns and reported per product.
+let dead = 0;
 async function best(urls) {
   let win = null;
+  dead = 0;
   for (const u of urls.flatMap(upscaleCandidates)) {
     try {
       const r = await fetch(u, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
-      if (!r.ok) continue;
+      if (!r.ok) { dead++; continue; }
       const b = Buffer.from(await r.arrayBuffer());
       // A shop with no photo still answers with an image: its own "no image" square. It is a
       // 1200px file, so it wins on size and lands on the product page looking like a photo.
@@ -174,6 +185,11 @@ const PR = JSON.parse(fs.readFileSync('data/prices.json', 'utf8'));
 // none, and the honest answer to that is to measure again rather than to refuse to run.
 const man = fs.existsSync(`${SRC}/manifest.json`)
   ? JSON.parse(fs.readFileSync(`${SRC}/manifest.json`, 'utf8')) : {};
+if (missingOnly) {
+  const have = new Set(fs.readdirSync(SRC).filter(f => f !== 'manifest.json').map(f => f.split('__')[0]));
+  for (const p of JSON.parse(fs.readFileSync('data/phones.json', 'utf8'))) if (!have.has(p.id)) only.add(p.id);
+  console.log(`--missing: ${only.size} product(s) have no photograph`);
+}
 // Manufacturer press shots, collected by tools/press.mjs. Where a shop only publishes a 550px
 // preview these are the same product at 1920px with a transparent background, so they simply
 // join the candidate list and win on size.
@@ -191,7 +207,12 @@ const PRESS = fs.existsSync('data/press.json') ? JSON.parse(fs.readFileSync('dat
     for (const [slot, url] of Object.entries(slots)) (PRESS[id] ||= {})[slot] ||= url;
   }
 }
-const NO_FETCH = Object.keys(PR.excluded || {});
+// prices.json used to name the shops this project will not fetch; that block is gone, which left
+// this empty and silently allowed a request anywhere. notebookcentre.am's robots.txt names
+// anthropic-ai and Claude-Web with Disallow: / , so its pages are not read by a crawler here -
+// its photographs are collected the same way its prices were, by a person opening the shop.
+// Same list, same reason, as the one in tools/check-links.py.
+const NO_FETCH = [...Object.keys(PR.excluded || {}), 'notebookcentre.am'];
 // Photos a person looked at and said no to, with the reason: a Space Black MacBook filed as
 // Silver, a sponsorship banner with no television in it. Until now only harvest-colors.py read
 // this, so the picker downloaded a rejected photo again on the very next run and the reading was
@@ -199,7 +220,11 @@ const NO_FETCH = Object.keys(PR.excluded || {});
 // outranks the matcher.
 const REJECT = fs.existsSync('data/photo-rejects.json')
   ? JSON.parse(fs.readFileSync('data/photo-rejects.json', 'utf8')) : {};
-const rejected = id => new Set(Object.values(REJECT[id] || {}).map(r => r && r.url).filter(Boolean));
+// url may be one string or a list of them. A product whose every shop photo is of the WRONG
+// thing needs them all named: the Xbox Headset matched seven Xbox Controller offers, so
+// refusing the winning photo only handed the slot to the next controller.
+const rejected = id => new Set(Object.values(REJECT[id] || {})
+  .flatMap(r => !r ? [] : Array.isArray(r.url) ? r.url : [r.url]).filter(Boolean));
 // A rejection is matched by url, so one recorded without a url silently protects nothing. That
 // happened: the S95H television was rejected for a white block under its screen, the entry carried
 // an empty url, and the very next run downloaded it again. Say so rather than fail quietly.
@@ -212,14 +237,28 @@ const rejected = id => new Set(Object.values(REJECT[id] || {}).map(r => r && r.u
     console.log(`  ! ${blind.length} rejection(s) with no url, which cannot refuse anything: ${blind.join(', ')}`);
 }
 
-let improved = 0, kept = 0, weak = [], refused = 0;
+let improved = 0, kept = 0, weak = [], refused = 0, stale = [];
 for (const p of P) {
   if (only.size && !only.has(p.id)) continue;
   const no = rejected(p.id);
   const offers = (PR.offers[p.id] || []).filter(o => o.image);
   // Nobody photographed it into the price file, but somebody linked it: read the picture off the
   // product page. Three links is enough to find one - past that the product has no photo anywhere.
-  if (!offers.length && !PRESS[p.id]) {
+  // ...or when what we already hold is too small to use. The og fallback used to run ONLY for a
+  // product with no picture at all, so a product stuck on a 550px shop preview never had its own
+  // product pages read - and those pages are exactly where a bigger photograph lives. Four shops
+  // gained real product urls on 2026-09-20 (notebookcentre, zigzag, eldorado, yerevanmobile) and
+  // none of it reached the photo hunt, because every one of those products already had a small
+  // image and so took the early exit. Adding candidates can only improve the result: the biggest
+  // still wins, and the reject and placeholder lists still refuse what a person has refused.
+  const bestNow = Math.max(0, ...(man[p.id] || []).map(e => {
+    const f = `${SRC}/${e.src}`;
+    try { return fs.existsSync(f) ? Math.max(...dimensions(fs.readFileSync(f))) : 0; } catch { return 0; }
+  }));
+  // The press guard belongs to the first case only: "nothing links a photo and no press shot
+  // exists either". A press shot that is itself under 700px is no reason to skip reading the
+  // shops' own product pages - that guard is what kept the Smart Band 10 on 550px.
+  if ((!offers.length && !PRESS[p.id]) || bestNow < MIN_EDGE) {
     // prices.json names the shops this project will not fetch, and says of them: no listings, no
     // product pages, no images. A hand-typed price for one of those shops is somebody's own
     // reading and is carried; its url is still a page we do not request. Read the list from
@@ -227,7 +266,10 @@ for (const p of P) {
     const links = [...new Set((PR.offers[p.id] || []).map(o => o.url).filter(Boolean))]
       .filter(u => !NO_FETCH.some(host => { try { return new URL(u).hostname.endsWith(host); } catch { return false; } }))
       .slice(0, 3);
-    for (const url of links) { const image = await ogImage(url); if (image) { offers.push({ url, image, color: null }); break; } }
+    // No break. It used to stop at the first page that HAD an og:image, not the first that had a
+    // BIGGER one, so Pixel's 550px preview ended the search and Yerevan Mobile's 660px original
+    // two links later was never seen. Collect all three and let the biggest-wins rule decide.
+    for (const url of links) { const image = await ogImage(url); if (image) offers.push({ url, image, color: null }); }
   }
   if (!offers.length && !PRESS[p.id]) continue;
   // one job per slot: the main shot, plus one per colour the shops actually photograph
@@ -251,7 +293,7 @@ for (const p of P) {
     const ok = s.urls.filter(u => !no.has(u));
     refused += s.urls.length - ok.length;
     const win = await best(ok);
-    if (!win) continue;
+    if (!win) { if (dead) stale.push(`${p.id} ${s.slug}: all ${dead} shop image(s) answered 404`); continue; }
     if (win.edge <= haveEdge) { kept++; if (haveEdge < MIN_EDGE) weak.push(`${p.id} ${s.slug} ${haveEdge}px`); continue; }
     console.log(`  ${p.id} ${s.slug}: ${haveEdge || 'none'} -> ${win.w}x${win.h}`);
     if (win.edge < MIN_EDGE) weak.push(`${p.id} ${s.slug} ${win.edge}px`);
@@ -287,3 +329,6 @@ if (!dry) {
 console.log(`\n${dry ? 'would improve' : 'improved'} ${improved}, already best ${kept}` +
             (refused ? `, ${refused} candidate(s) refused by data/photo-rejects.json` : ''));
 if (weak.length) console.log(`still under ${MIN_EDGE}px (no shop publishes better):\n  ` + weak.join('\n  '));
+// Not "nobody links a photo" - somebody does, and the link is dead. Worth saying, because
+// the fix is a fresh crawl of that shop, not hunting for a source by hand.
+if (stale.length) for (const s of ['every linked photo is a dead link:', ...stale]) console.log('  ' + s);
