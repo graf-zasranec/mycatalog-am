@@ -14,6 +14,24 @@ REM are both run by a person, after a clean crawl, having read what they are abo
 cd /d "%~dp0"
 setlocal
 
+REM Eldorado answers 403 to any non-browser user agent. Their robots.txt allows product pages and
+REM names no crawler it refuses, so tools/eldorado-fetch.py reads them with scrapling at the delay
+REM their robots asks of Googlebot, and leaves the result in data/eldorado.json for scrape.mjs.
+REM
+REM This step used to be missing, which meant eldorado's prices only moved when somebody ran the
+REM fetcher by hand - the nightly job was re-publishing the same figures for that shop every day.
+REM
+REM It is deliberately NOT a gate. No Python, no scrapling, shop down: the adapter reads the last
+REM fetch instead, and a stale eldorado is better than no run at all.
+echo [%date% %time%] reading eldorado...
+python tools\eldorado-fetch.py
+if errorlevel 1 echo   eldorado fetch failed - carrying on with the previous data\eldorado.json
+
+REM Zigzag also answers 403, and is deliberately NOT here. Their robots allows product pages, but
+REM getting past their WAF means impersonating a browser, and this project does not do that to a
+REM shop that has said no. Their prices come from tools/browse-harvest.js, run by a person in
+REM their own browser - which is a person looking at a shop, not a crawler pretending to be one.
+
 echo [%date% %time%] refreshing prices...
 node scrape.mjs
 if errorlevel 1 (
