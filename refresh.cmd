@@ -39,8 +39,11 @@ echo [%date% %time%] reading zigzag...
 python tools\zigzag-fetch.py
 if errorlevel 1 echo   zigzag fetch failed - carrying on with the previous data\zigzag.json
 
+REM --fresh: the nightly job wants today's prices from every shop, not yesterday's checkpoint.
+REM Without it a run started again the same day skips the shops the last one already read, which
+REM is what somebody re-running by hand after a crash wants and the opposite of what this wants.
 echo [%date% %time%] refreshing prices...
-node scrape.mjs
+node scrape.mjs --fresh
 if errorlevel 1 (
   echo scrape failed - keeping the previous data/prices.json and NOT rebuilding
   exit /b 1

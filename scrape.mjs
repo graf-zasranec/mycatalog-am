@@ -1633,9 +1633,39 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
 }
 const report = [];
 
+// A whole run's work used to live only in memory until the very end, so anything that stopped
+// the process - and on this machine that means the OS reclaiming memory - threw away every shop
+// already crawled. One run died 77 minutes in, during the twelfth of eighteen shops, and the
+// eleven behind it went with it.
+//
+// Each shop's offers are now written out as it finishes. A run started again the same day reads
+// them back and skips those shops, so a death costs the shop it happened in rather than the day.
+// --fresh ignores the file and crawls everything, which is what the nightly job wants.
+const PARTIAL = '.scrape-partial.json';
+const fresh = process.argv.includes('--fresh');
+let done = { date: '', shops: {} };
+if (!fresh && fs.existsSync(PARTIAL)) {
+  try {
+    const d = JSON.parse(fs.readFileSync(PARTIAL, 'utf8'));
+    if (d.date === TODAY) {
+      done = d;
+      const have = Object.keys(done.shops).filter(k => names.includes(k));
+      if (have.length) console.log(`resuming: ${have.length} shop(s) already read today (${have.join(', ')}) - --fresh to ignore`);
+    }
+  } catch { }
+}
+
 for (const key of names) {
   const s = SHOPS[key];
   CURSHOP = key;
+  // Already read today, in a run that did not finish. Take it rather than ask the shop again.
+  if (done.shops[key]) {
+    for (const o of done.shops[key]) (offers[o.id] ||= []).push(o);
+    const models = new Set(done.shops[key].map(o => o.id));
+    console.log(`[${s.name}] ${done.shops[key].length} offers across ${models.size} models (already read today)`);
+    report.push({ shop: key, offers: done.shops[key].length, models: models.size });
+    continue;
+  }
   process.stdout.write(`[${s.name}] `);
   let got = [], threw = false;
   try { got = await s.run(); } catch (e) { threw = true; console.warn('adapter failed:', e.message); }
@@ -1685,7 +1715,12 @@ for (const key of names) {
   }
   // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
 // that failed keeps whatever date it already had, which is the point of having one.
-for (const o of best.values()) (offers[o.id] ||= []).push({ ...o, shop: key, seen: TODAY, size: screenOf(o.title, o.id) });
+const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: TODAY, size: screenOf(o.title, o.id) }));
+  for (const o of rows) (offers[o.id] ||= []).push(o);
+  // Written now, not at the end: this shop is read and should stay read even if the run dies in
+  // the next one. Small enough that the cost is nothing beside the hour it saves.
+  done.date = TODAY; done.shops[key] = rows;
+  try { fs.writeFileSync(PARTIAL, JSON.stringify(done)); } catch { }
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
   const why = [soldOut && `${soldOut} sold out`, tooCheap && `${tooCheap} too cheap to be the product`].filter(Boolean);

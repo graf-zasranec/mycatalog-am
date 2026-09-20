@@ -64,3 +64,6 @@ zigzag.rar
 *.rar
 .wanted-images.json
 .links.json.bak
+
+# Per-shop checkpoint so a run that dies resumes instead of starting over. Regenerated daily.
+.scrape-partial.json
