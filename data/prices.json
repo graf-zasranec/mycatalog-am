@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T11:25:09.670Z",
+ "generated": "2026-09-20T11:35:17.340Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -2967,16 +2967,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "ibolit",
-    "title": "iPhone 17 Pro Max 2TB 1 SIM + eSIM",
-    "price": 959000,
-    "storage": 2048,
-    "url": "https://ibolit.mobi/product-category/smartphones/",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "price": 962900,
     "storage": 2048,
     "title": "iPhone 17 Pro Max, 2 ՏԲ, Deep Blue",
@@ -3015,6 +3005,18 @@
     "color": "Cosmic Orange",
     "shop": "istore",
     "seen": "2026-09-19"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "title": "iPhone 17 Pro Max 2TB 1 SIM + eSIM",
+    "price": 1059000,
+    "storage": 2048,
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-2tb-1-sim-silver/",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20",
+    "checkColor": true
    }
   ],
   "apple-iphone-17": [
@@ -7551,8 +7553,9 @@
     "title": "Apple AirPods 4",
     "price": 54000,
     "storage": null,
-    "url": "https://3dplanet.am/en/store/headset",
-    "seeded": true
+    "url": "https://3dplanet.am/en/store/product/apple-airpods-4",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-4",
@@ -14715,8 +14718,9 @@
     "title": "Xiaomi 17T Pro",
     "price": 327900,
     "storage": 256,
-    "url": "https://miarmenia.am/ru/collection/smartphones/1",
-    "seeded": true
+    "url": "https://miarmenia.am/ru/product/558/xiaomi-17t-pro-12-256-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-17t-pro",
@@ -14788,8 +14792,9 @@
     "title": "Xiaomi 17T Pro",
     "price": 346900,
     "storage": 512,
-    "url": "https://miarmenia.am/ru/collection/smartphones/1",
-    "seeded": true
+    "url": "https://miarmenia.am/ru/product/559/xiaomi-17t-pro-12-512-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-17t-pro",
@@ -45942,16 +45947,6 @@
     "storage": null,
     "color": "Silver",
     "url": "https://ibolit.mobi/product/apple-watch-series-10-42mm-silver/",
-    "seeded": true
-   },
-   {
-    "id": "apple-watch-series-10",
-    "shop": "redstore",
-    "title": "Apple Watch Series 10",
-    "price": 189000,
-    "storage": 46,
-    "color": "Jet Black",
-    "url": "https://redstore.am/en/categories/smart-watches",
     "seeded": true
    }
   ],
