@@ -31,10 +31,16 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / 'data' / 'listings.csv'
 PRICES = ROOT / 'data' / 'prices.json'
 STATE = ROOT / '.links.json'
-# Nothing is skipped any more. This said the first three name our crawler with Disallow: / , and
-# on 2026-09-20 all three robots.txt files were read again: none of them does. Zigzag 403s a plain
-# fetch, but it is crawled through scrapling now like Eldorado, so its links resolve here too.
-NOFETCH = {}
+# This once skipped four shops on the claim that they name our crawler with Disallow: / . Their
+# robots.txt files were read again on 2026-09-20 and three of them do not, so zigzag, yerevanmobile
+# and list.am came off the list; zigzag 403s a plain fetch but is read through scrapling, like
+# Eldorado, so its links resolve here.
+# One shop, and for a reason it states itself: notebookcentre.am's robots.txt carries
+# "User-agent: anthropic-ai / Disallow: /" and the same for Claude-Web. Getting past that would
+# mean impersonating a browser at a shop that has asked this kind of client not to come, so its
+# links are confirmed the other way - a person opens them, which is how all 219 of its rows got
+# their url and their seen date on 2026-09-20.
+NOFETCH = {'notebookcentre': "their robots.txt refuses AI crawlers by name - checked in a browser instead"}
 # "Go to shop" has to land on the product. These land on a list of them.
 LISTING = re.compile(r'/(category|collection|promo)/'
                      r'|/(iphones|smartphones|speakers|tablets|watches|headphones-and-headsets)\.html$', re.I)
@@ -78,12 +84,17 @@ def check_all():
     done = json.loads(STATE.read_text(encoding='utf8')) if STATE.exists() else {}
     print(f'{len(urls)} distinct url(s) across {len(offers)} offer(s); {len(done)} already checked')
     last_host = None
+    skipped = {}
     for i, (u, rows) in enumerate(urls.items(), 1):
         shop = rows[0]['shop']
         if u in done:
             continue
         if shop in NOFETCH:
-            done[u] = {'status': 'not fetched', 'why': NOFETCH[shop]}
+            # Reported, never remembered. "not fetched" is the absence of an answer, and caching
+            # it made the rule outlive itself: 56 links kept being reported as unfetchable long
+            # after the rules that skipped them were removed, because the resume step counted
+            # them as already checked and never asked the shop a single time.
+            skipped[u] = NOFETCH[shop]
             continue
         host = u.split('/')[2]
         if host == last_host:
@@ -109,7 +120,7 @@ def check_all():
     # what a person clicking would actually get
     buckets = {'dead': [], 'refused': [], 'error': [], 'soldout': [], 'listing': [], 'unfetchable': []}
     for u, rows in urls.items():
-        d = done.get(u, {})
+        d = {'status': 'not fetched', 'why': skipped[u]} if u in skipped else done.get(u, {})
         st = d.get('status')
         row = (rows[0]['shop'], rows[0].get('title') or rows[0]['id'], u, len(rows), d)
         if st == 'not fetched':
