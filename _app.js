@@ -1845,7 +1845,7 @@ function cmpCandidates(q) {
   // same haystack the catalogue search uses, so typing here behaves like typing up there
   const n = (q || '').trim().toLowerCase();
   return DATA
-    .filter(p => !st.cmp.includes(p.id) && (!cat || catOf(p) === cat))
+    .filter(p => hasReal(p) && !st.cmp.includes(p.id) && (!cat || catOf(p) === cat))
     .filter(p => !n || (p.brand + ' ' + fullName(p)).toLowerCase().includes(n))
     .sort((a, b) => b.popularity - a.popularity)
     .slice(0, 8);
