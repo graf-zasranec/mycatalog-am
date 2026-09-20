@@ -74,5 +74,23 @@
    "url": "https://ibolit.mobi/wp-content/uploads/2025/04/nibl-102.jpg",
    "why": "the phone in it is mint green and white, not gold"
   }
+ },
+ "apple-ultra-2": {
+  "main": {
+   "url": "https://3dplanet.am/images/logo.png",
+   "why": "3DPlanet's own shop logo, 3954x1240. Their product page names it as og:image, and with no shop publishing a photo of this watch it won the slot on size alone"
+  }
+ },
+ "microsoft-xbox": {
+  "main": {
+   "url": [
+    "https://ibolit.mobi/wp-content/uploads/2025/03/red1333_1.jpg",
+    "https://ibolit.mobi/wp-content/uploads/2025/03/red1334_1.jpg",
+    "https://ibolit.mobi/wp-content/uploads/2025/03/red1335_1.jpg",
+    "https://ibolit.mobi/wp-content/uploads/2025/03/red1336_1.jpg",
+    "https://ibolit.mobi/wp-content/uploads/2025/03/red1337_1.jpg"
+   ],
+   "why": "all five are the Xbox Wireless Controller; this product is the Xbox Headset. The controllers are matched onto it by the title matcher, which is the real fault - see data/unmatched.json"
+  }
  }
 }
