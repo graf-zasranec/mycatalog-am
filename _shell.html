@@ -259,6 +259,9 @@ button,input,select,textarea{font:inherit;color:inherit}
    physical SIMs - and it is usually the cheaper row, so it says so on the row itself. */
 .orow .esim{font-family:var(--mono);font-size:9px;letter-spacing:.08em;font-style:normal;
   padding:2px 5px;border-radius:4px;background:var(--surface2);color:var(--muted);vertical-align:middle}
+/* Nano-SIM is the tray build and the commoner one, so it reads as plain type rather than
+   competing with the eSIM chip for attention. */
+.orow .esim.nano{background:none;border:1px solid var(--line2);color:var(--muted)}
 /* The shop sells this finish but publishes no page for it, so the link goes to the same
    model in another colour. The row says so rather than letting the picture do the lying. */
 .orow .chk{margin-left:6px;padding:1px 6px;border-radius:var(--pill);border:1px solid var(--line2);

@@ -1777,6 +1777,37 @@ for (const list of Object.values(offers)) {
 }
 if (recap) console.log(`${recap} offer(s) given the capacity their title states`);
 
+// The opposite mistake: a capacity that is really the memory. A laptop titled "16GB/512GB" or
+// "8ԳԲ/256ԳԲ" states both, and whichever parsed first won the capacity column - so the offers
+// page offered "16 GB" and "24 GB" as storage tiers beside 512 GB and 1 TB. No laptop ships a
+// 16 GB disk, so when the title names a bigger capacity, the small number was the memory all
+// along. Only laptops and desktops: a watch's 44 is millimetres and a Kindle's 16 GB is real.
+let remem = 0;
+for (const [id, list] of Object.entries(offers)) {
+  const c = (phoneById[id] || {}).category;
+  if (c !== 'laptop' && c !== 'desktop') continue;
+  for (const o of list) {
+    if (o.storage == null || o.storage >= 64 || !o.title) continue;
+    // "SSD512" and "SSD 1TB" state a capacity with no GB after the number, which capacitiesOf
+    // cannot see, and that is exactly how these titles are written.
+    const ssd = [...o.title.matchAll(/SSD\s*(\d{3,4})\b/gi)].map(m => +m[1]);
+    const big = [...capacitiesOf(o.title), ...ssd].filter(v => v >= 64);
+    if (big.length) {
+      if (o.ram == null) o.ram = o.storage;
+      o.storage = Math.min(...big);
+      remem++;
+      continue;
+    }
+    // No capacity anywhere in the title. It does not matter what the title calls the number:
+    // no laptop ships a disk under 64 GB, so this is the memory whether the shop said so or
+    // not. Admitting the disk is unknown beats publishing a 16 GB one.
+    if (o.ram == null) o.ram = o.storage;
+    o.storage = null;
+    remem++;
+  }
+}
+if (remem) console.log(`${remem} laptop offer(s) had memory in the capacity column`);
+
 // Which SIM you get is normally not a choice a shop prices - but for the iPhone 17 and 18 Pro
 // families it is: REDstore sells the 18 Pro 256GB at 799,000 as dual-eSIM and 879,000 with a
 // tray. Tagging the offer lets the product page turn SIM into a real picker exactly where the

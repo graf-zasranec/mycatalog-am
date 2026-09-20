@@ -1624,8 +1624,8 @@ const seenTag = o => {
 /* ================= all offers for one model ================= */
 // The product page shows offers for the CHOSEN colour/capacity. This page shows every offer
 // the shops list for the model, and lets you slice it by shop, capacity and colour.
-let OSEL = { id: null, storage: '', ram: '' };
-function initOSel(id) { if (OSEL.id !== id) OSEL = { id, storage: '', ram: '' }; }
+let OSEL = { id: null, storage: '', ram: '', size: '', esim: '' };
+function initOSel(id) { if (OSEL.id !== id) OSEL = { id, storage: '', ram: '', size: '', esim: '' }; }
 
 // AirPods Pro 3 ship in one configuration and one colour: there is no variant to state, so
 // saying "variant not stated" reads as missing data rather than as the truth. Only ask the
@@ -1646,10 +1646,16 @@ function offerRow(o, lo, i, unit, cls) {
       : `<div class="orow nolink${best}">`}
     <span class="rk num">${String(i + 1).padStart(2, '0')}</span>
     <span class="sh">${esc(shopName(o.shop))}</span>
-    <!-- capacity and colour only: RAM is a spec, not something a buyer picks between shops, and
-         a column that reads '256 GB' on one row and '256 GB · 12 GB RAM · Black' on the next is
-         three different answers to the same question. -->
-    <span class="vr">${esc(o.storage ? gb(o.storage, unit) : (hasChoices(byId(o.id)) ? x('variantUnknown') : ''))}${o.esim ? ' <i class="esim">eSIM</i>' : ''}${o.checkColor ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">${[
+        o.size != null ? esc(inch(o.size)) : '',
+        o.storage ? esc(gb(o.storage, unit)) : (hasChoices(byId(o.id)) ? esc(x('variantUnknown')) : ''),
+        o.ram ? esc(o.ram + ' ' + u('gb')) : '',
+      ].filter(Boolean).join(' · ')}${o.esim === true ? ' <i class="esim">eSIM</i>'
+        : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
       ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>`
@@ -1663,10 +1669,17 @@ function offersView(p) {
   const all = offersFor(p);
   const stors = [...new Set(all.map(o => o.storage).filter(v => v != null))].sort((a, b) => a - b);
   const rams = [...new Set(all.map(o => o.ram).filter(v => v != null))].sort((a, b) => a - b);
-  // filtering is by what you are buying - capacity and memory - not by which shop
+  const sizes = [...new Set(all.map(o => o.size).filter(v => v != null))].sort((a, b) => a - b);
+  // Three states, not two: a shop that never said which SIM build it sells is not evidence for
+  // either, so '?' is its own choice rather than being folded into Nano-SIM.
+  const sims = [...new Set(all.map(o => o.esim === true ? 'e' : o.esim === false ? 'n' : '?'))]
+    .sort((a, b) => 'ne?'.indexOf(a) - 'ne?'.indexOf(b));
+  // filtering is by what you are buying - capacity, memory, screen, SIM build - not by which shop
   const list = all.filter(o =>
     (!OSEL.storage || String(o.storage) === OSEL.storage) &&
-    (!OSEL.ram || String(o.ram) === OSEL.ram));
+    (!OSEL.ram || String(o.ram) === OSEL.ram) &&
+    (!OSEL.size || String(o.size) === OSEL.size) &&
+    (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim));
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
   const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
 
@@ -1688,6 +1701,8 @@ function offersView(p) {
     <div class="offilters">
       ${chips('storage', stors, t('f.storage'), gb)}
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
+      ${chips('size', sizes, t('f.screen'), inch)}
+      ${chips('esim', sims, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
       <!-- the chip label is the shop's English word; the page is not -->
     </div>
     <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>

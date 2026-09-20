@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T04:22:36.460Z",
+ "generated": "2026-09-20T08:44:40.651Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -9392,7 +9392,8 @@
     "shop": "istyle",
     "title": "MacBook Air M5 13/16GB RAM",
     "price": 579000,
-    "storage": 16,
+    "storage": null,
+    "ram": 16,
     "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2013.6%20%2016%20512GB",
     "seeded": true
    },
@@ -9557,7 +9558,8 @@
     "shop": "istyle",
     "title": "MacBook Air M5 15/16GB RAM",
     "price": 649000,
-    "storage": 16,
+    "storage": null,
+    "ram": 16,
     "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2015%2016GB",
     "seeded": true
    },
@@ -9905,7 +9907,8 @@
     "shop": "istyle",
     "title": "MacBook Air M5 15/24GB RAM",
     "price": 859000,
-    "storage": 24,
+    "storage": null,
+    "ram": 24,
     "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2015%2024GB",
     "seeded": true
    },
@@ -30176,7 +30179,8 @@
     "shop": "telecom",
     "title": "Նոթբուք Lenovo IdeaPad Slim 3 15 IRH10R 16GB",
     "price": 291900,
-    "storage": 16,
+    "storage": null,
+    "ram": 16,
     "url": "https://www.telecomarmenia.am/eshop/hy/devices/lenovo-ideapad-slim-3-15irh10r/2816/",
     "seeded": true
    },
@@ -35804,7 +35808,8 @@
     "shop": "zigzag",
     "title": "HP EliteBook 8 Flip G1i 13.3\" Ultra 5-225U 32GB/512GB W11P /A37FYET",
     "price": 789000,
-    "storage": 32,
+    "storage": 512,
+    "ram": 32,
     "url": "",
     "seeded": true
    }
@@ -37386,8 +37391,7 @@
     "price": 189000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-airstrait-straightener-ht01-nickel-copper",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    },
    {
     "id": "dyson-ht01-airstrait-straightener-plum",
@@ -44559,8 +44563,8 @@
     "title": "ASUS Vivobook 15 X1504VA C5 120U 16GB SSD512 15.6\" X1504VA-BQ4056",
     "url": "https://vlv.am/en/Product/47622",
     "image": "https://vlv.am/public/uploads/images/07-07-2026/6a4cb4887b404.webp",
-    "storage": 16,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -45097,7 +45101,7 @@
     "title": "Nothing Phone 3",
     "price": 399000,
     "storage": 256,
-    "url": "",
+    "url": "https://www.pixel.am/am/product/nothng-phone-3",
     "seeded": true
    }
   ],
@@ -49695,8 +49699,8 @@
     "title": "LENOVO LOQ 15IRX10 i7-13645HX 16GB SSD512 RTX5050 15.6\" 83JE0189RK",
     "url": "https://vlv.am/en/Product/47631",
     "image": "https://vlv.am/public/uploads/images/18-09-2026/6aace2e59f113.webp",
-    "storage": 16,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -52163,7 +52167,8 @@
     "shop": "eldorado",
     "title": "Նոթբուք HONOR MagicBook X16 2025 16GB/512GB (5301ALWS) Space Gray",
     "price": 319900,
-    "storage": 16,
+    "storage": 512,
+    "ram": 16,
     "url": "https://eldorado.am/en/honor-magicbook-x16-plus-2025-5301ambc",
     "seeded": true
    }
@@ -52444,15 +52449,6 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-19"
-   },
-   {
-    "id": "hp-g10-470g10",
-    "shop": "eldorado",
-    "title": "Նոթբուք HP G10 470G10 8GB/512 GB (859V4EA)",
-    "price": 429900,
-    "storage": 8,
-    "url": "https://eldorado.am/en/hp-g10-470g10-8gb-512-gb-859v4ea",
-    "seeded": true
    }
   ],
   "asus-b3405cca-ly0189": [
@@ -52510,7 +52506,8 @@
     "shop": "eldorado",
     "title": "Նոթբուք Microsoft Surface Go 2 8ԳԲ/256ԳԲ",
     "price": 429900,
-    "storage": 8,
+    "storage": 256,
+    "ram": 8,
     "url": "",
     "seeded": true
    }
@@ -52755,7 +52752,8 @@
     "shop": "eldorado",
     "title": "Նոթբուք Microsoft Surface 4 16ԳԲ/1ՏԲ",
     "price": 519900,
-    "storage": 16,
+    "storage": 1024,
+    "ram": 16,
     "url": "",
     "seeded": true
    }
@@ -52856,15 +52854,6 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-19"
-   },
-   {
-    "id": "hp-envy-hayden-22c1",
-    "shop": "eldorado",
-    "title": "Նոթբուք HP ENVY Hayden 22C1 16 GB/1 TB (6Y9T0EA)",
-    "price": 699900,
-    "storage": 16,
-    "url": "https://eldorado.am/en/hp-envy-hayden-22c1-16-gb-1-tb-6y9t0ea",
-    "seeded": true
    }
   ],
   "asus-tuf-gaming-a16-fa608p": [
@@ -53710,8 +53699,7 @@
     "price": 249000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-hd16-ceramic-patina-topaz",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    }
   ],
   "honor-x9b": [
@@ -57519,8 +57507,7 @@
     "price": 289000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-airwrap-multi-styler-and-dryer-straight-wavy-hs08-strawberry-bronze-blue-pink",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    },
    {
     "id": "dyson-hs08-velvet",
@@ -57629,8 +57616,7 @@
     "price": 245000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-airwrap-multi-styler-and-dryer-straight-wavy-long-hs05-nickel-cooper",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    },
    {
     "id": "dyson-multi-complete-long-hs05",
@@ -57639,8 +57625,7 @@
     "price": 249000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-airwrap-multi-styler-and-dryer-straight-wavy-long-hs05-prussian-blue-blush-pink",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    },
    {
     "id": "dyson-multi-complete-long-hs05",
@@ -57696,7 +57681,7 @@
     "title": "Dyson HD15 Supersonic™ Hair Dryer Black/Onyx Gold",
     "price": 185000,
     "storage": null,
-    "url": "",
+    "url": "https://www.pixel.am/am/product/dyson-supersonic-origin-hair-dryer-black-onyx-gold",
     "seeded": true
    },
    {
@@ -59274,8 +59259,7 @@
     "price": 269000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-airwrap-multi-styler-and-dryer-curly-coily-hs08-vinca-blue-topaz",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    }
   ],
   "dyson-hd16-nural-velvet": [
@@ -59286,8 +59270,7 @@
     "price": 279000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-hd16-ceramic-patina-topaz",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    }
   ],
   "samsung-galaxy-ultra-47mm-2024": [
@@ -59353,8 +59336,7 @@
     "price": 215000,
     "storage": null,
     "url": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-hd16-ceramic-patina-topaz",
-    "seeded": true,
-    "checkColor": true
+    "seeded": true
    }
   ],
   "honor-magicbook-x16-2026-16-wuxga-ssd1tb": [
@@ -59363,7 +59345,8 @@
     "shop": "eldorado",
     "title": "Նոթբուք Honor MagicBook X16 2026 (BRG-X) (5301ARGN) 16\" WUXGA 16GB/SSD1TB Space Gray",
     "price": 369900,
-    "storage": 16,
+    "storage": 1024,
+    "ram": 16,
     "url": "https://eldorado.am/en/honor-magicbook-x16-2026-brg-x-5301argn-16-wuxga-16gb-ssd1tb-space-gray",
     "seeded": true
    }
@@ -59374,7 +59357,8 @@
     "shop": "eldorado",
     "title": "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10 16\" i5-13420H 16GB/TB Luna Grey (83HS002NRK)",
     "price": 389900,
-    "storage": 16,
+    "storage": null,
+    "ram": 16,
     "url": "https://eldorado.am/en/lenovo-ideapad-slim-5-16irh10-r-83j1001drk",
     "seeded": true
    }
@@ -59693,7 +59677,8 @@
     "shop": "zigzag",
     "title": "Lenovo ThinkPad T16 G4 16\" Ultra 7-255U 16GB/512GB /21QE0066FW",
     "price": 839000,
-    "storage": 16,
+    "storage": 512,
+    "ram": 16,
     "url": "",
     "seeded": true
    }
