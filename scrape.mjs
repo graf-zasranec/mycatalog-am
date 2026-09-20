@@ -856,11 +856,28 @@ if (process.argv[2] === '--selftest') {
 // can be one of our products are fetched, then read name/price/stock out of the Product block.
 async function crawlLd(urls, cap = 6) {
   const out = [], per = {};
+  // How many of these urls this will actually ask for, said before it starts asking. REDstore's
+  // sitemap lists 7,200 products; matchPhone refuses most of them without a request and the cap
+  // trims the rest, but the run printed nothing at all for the 25 minutes that took, so a shop
+  // doing its job was indistinguishable from a shop that had hung.
+  const want = [];
+  const seen = {};
+  for (const u of urls) {
+    const id = matchPhone(u);
+    if (!id) continue;
+    seen[id] = (seen[id] || 0) + 1;
+    if (seen[id] <= cap) want.push(u);
+  }
+  if (want.length > 200)
+    process.stdout.write(`
+  ${want.length} page(s) to read of ${urls.length} listed, about ${Math.round(want.length * (DELAY_MS + 600) / 60000)} min: `);
+  let done = 0;
   for (const u of urls) {
     const urlId = matchPhone(u);
     if (!urlId) continue;
     per[urlId] = (per[urlId] || 0) + 1;
     if (per[urlId] > cap) continue;              // cap requests per model
+    if (want.length > 200 && ++done % 250 === 0) process.stdout.write(`${done} `);
     const html = await get(u); await sleep(DELAY_MS);
     if (!html) continue;
     const p = ldProduct(html), o = ldOffer(p);
@@ -1689,7 +1706,11 @@ try {
     // A seventh column, and the rows written before it existed simply leave it empty. Ucom prices
     // the Galaxy A17 at 65,900 with 4 GB of memory and 73,900 with 6, both at 128 GB and in the
     // same three colours - two real configurations that nothing in six columns could tell apart.
-    .map(line => { const [shop, title, cap, color, url, price, ram, check] = line.split(','); return { shop, title, cap, color, url, price, ram, check }; });
+    // A ninth column, seen: the day somebody opened that shop's own product page and read this
+    // price off it. Without it every hand row printed "not checked" forever, including the ones
+    // just confirmed - the crawl is the only thing that ever dated an offer, and these are the
+    // rows no crawl can reach. Blank still means unverified, which is the honest default.
+    .map(line => { const [shop, title, cap, color, url, price, ram, check, seen] = line.split(','); return { shop, title, cap, color, url, price, ram, check, seen }; });
   const shared = new Map();
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
   const rows = raw
@@ -1736,12 +1757,19 @@ try {
     if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage
                      && !!o.esim === !!r.esim && (o.color || null) === (r.color || null)
                      && (o.ram ?? null) === (r.ram ? +r.ram : null)
-                     && (o.url || null) === (r.url || null))) continue;
+                     // ...but only between two HAND rows. A crawled row is the shop's own page
+                     // read today, and it covers this configuration whatever url somebody once
+                     // wrote the hand row against - which is usually a category listing, or
+                     // nothing at all. Requiring the urls to match here meant every hand row
+                     // survived beside the crawled one it duplicates: zigzag showed 147 rows for
+                     // 66 real offers, half of them dated and linked, half saying "not checked".
+                     && (!o.seeded || (o.url || null) === (r.url || null)))) continue;
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
                 ram: r.ram ? +r.ram : undefined, size: screenOf(r.title, r.id),
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim,
+                seen: /^\d{4}-\d{2}-\d{2}$/.test((r.seen || '').trim()) ? r.seen.trim() : undefined,
                 checkColor: (r.check || '').trim() === 'color' || undefined });
     seeded++;
   }
