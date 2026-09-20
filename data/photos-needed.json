@@ -7,6 +7,16 @@
  "tooSmall": 58,
  "products": [
   {
+   "id": "microsoft-xbox",
+   "brand": "Microsoft",
+   "name": "Xbox Headset",
+   "category": "headphones",
+   "shops": 5,
+   "query": "Microsoft Xbox Headset",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "asus-vivobook-15-x1504va",
    "brand": "ASUS",
    "name": "Vivobook 15 X1504VA",
@@ -127,12 +137,12 @@
    "width": 0
   },
   {
-   "id": "microsoft-xbox",
-   "brand": "Microsoft",
-   "name": "Xbox Headset",
-   "category": "headphones",
+   "id": "samsung-galaxy-6-classic-43mm-r950",
+   "brand": "Samsung",
+   "name": "Galaxy Watch 6 Classic",
+   "category": "watch",
    "shops": 2,
-   "query": "Microsoft Xbox Headset",
+   "query": "Samsung Galaxy Watch 6 Classic",
    "what": "missing",
    "width": 0
   },
@@ -1547,16 +1557,6 @@
    "width": 0
   },
   {
-   "id": "samsung-galaxy-6-classic-43mm-r950",
-   "brand": "Samsung",
-   "name": "Galaxy Watch 6 Classic",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch 6 Classic",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "samsung-galaxy-7-ultra-47mm-sm-l705f",
    "brand": "Samsung",
    "name": "Galaxy Watch 7 Ultra",
@@ -2037,6 +2037,16 @@
    "width": 369
   },
   {
+   "id": "asus-tuf-gaming-h1",
+   "brand": "ASUS",
+   "name": "TUF Gaming H1",
+   "category": "headphones",
+   "shops": 2,
+   "query": "ASUS TUF Gaming H1",
+   "what": "too small",
+   "width": 435
+  },
+  {
    "id": "marshall-uxbridge",
    "brand": "Marshall",
    "name": "Uxbridge",
@@ -2235,16 +2245,6 @@
    "query": "Apple Watch Ultra 4 GPS + Cellular",
    "what": "too small",
    "width": 520
-  },
-  {
-   "id": "asus-tuf-gaming-h1",
-   "brand": "ASUS",
-   "name": "TUF Gaming H1",
-   "category": "headphones",
-   "shops": 1,
-   "query": "ASUS TUF Gaming H1",
-   "what": "too small",
-   "width": 435
   },
   {
    "id": "asus-v241eak-ba06",
