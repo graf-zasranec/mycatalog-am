@@ -54,3 +54,13 @@ data/unmatched.json
 .tabs.json
 .ym.json
 .one.json
+
+# Working files that were committed by accident and served publicly, because the repo root is
+# the Pages publish root. None is referenced by any script; the harvest that produced them can
+# be run again. eldorado-images-full.json alone was 36 MB of base64 JPEGs on the live site.
+eldorado-images-full.json
+zigzag-terms.txt
+zigzag.rar
+*.rar
+.wanted-images.json
+.links.json.bak
