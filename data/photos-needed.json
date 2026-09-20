@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 208,
- "tooSmall": 57,
+ "missing": 204,
+ "tooSmall": 60,
  "products": [
   {
    "id": "microsoft-xbox-controller",
@@ -27,16 +27,6 @@
    "width": 0
   },
   {
-   "id": "asus-vivobook-15-x1504va",
-   "brand": "ASUS",
-   "name": "Vivobook 15 X1504VA",
-   "category": "laptop",
-   "shops": 3,
-   "query": "ASUS Vivobook 15 X1504VA",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
    "brand": "Apple",
    "name": "iPad Air 11 Wi-Fi + Cellular 2024",
@@ -53,16 +43,6 @@
    "category": "tablet",
    "shops": 2,
    "query": "Apple iPad Air 13 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "beats-flex-all-day",
-   "brand": "Beats",
-   "name": "Flex All-Day",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Beats Flex All-Day",
    "what": "missing",
    "width": 0
   },
@@ -513,26 +493,6 @@
    "category": "headphones",
    "shops": 1,
    "query": "Beats Solo Buds True Wireless",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-soundsport-free",
-   "brand": "Bose",
-   "name": "SoundSport Free",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Bose SoundSport Free",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "bose-soundsport-free-bright",
-   "brand": "Bose",
-   "name": "SoundSport Free Bright",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Bose SoundSport Free Bright",
    "what": "missing",
    "width": 0
   },
@@ -2137,6 +2097,16 @@
    "width": 435
   },
   {
+   "id": "beats-flex-all-day",
+   "brand": "Beats",
+   "name": "Flex All-Day",
+   "category": "headphones",
+   "shops": 2,
+   "query": "Beats Flex All-Day",
+   "what": "too small",
+   "width": 586
+  },
+  {
    "id": "marshall-uxbridge",
    "brand": "Marshall",
    "name": "Uxbridge",
@@ -2375,6 +2345,26 @@
    "query": "ASUS VivoBook X1504VA-NJ451",
    "what": "too small",
    "width": 459
+  },
+  {
+   "id": "bose-soundsport-free",
+   "brand": "Bose",
+   "name": "SoundSport Free",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Bose SoundSport Free",
+   "what": "too small",
+   "width": 550
+  },
+  {
+   "id": "bose-soundsport-free-bright",
+   "brand": "Bose",
+   "name": "SoundSport Free Bright",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Bose SoundSport Free Bright",
+   "what": "too small",
+   "width": 556
   },
   {
    "id": "bose-soundtouch-10",
