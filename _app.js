@@ -2198,9 +2198,13 @@ const SUGG_MAX = 8;
 function suggestFor(q) {
   if (!String(q || '').trim()) return [];
   const hit = DATA.filter(p => hayMatch(p, q));
-  // a product whose name STARTS with what was typed is what the person meant; the rest follow
+  // A product whose name STARTS with what was typed is what the person meant; the rest follow.
+  // Within each of those two groups, the best-known model wins: searching "playstation" should
+  // put the Pro and the Slim above a dozen controllers and headsets, and it used to do the
+  // opposite - cheapest first meant every accessory outranked the console it plugs into.
   const w = q.trim().toLowerCase();
-  hit.sort((a, b) => (hay(b).startsWith(w) - hay(a).startsWith(w)) || bestOf(a) - bestOf(b));
+  hit.sort((a, b) => (hay(b).startsWith(w) - hay(a).startsWith(w))
+    || (b.popularity - a.popularity) || bestOf(a) - bestOf(b));
   return hit.slice(0, SUGG_MAX);
 }
 function paintSuggest() {
