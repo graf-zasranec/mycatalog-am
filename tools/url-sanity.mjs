@@ -45,6 +45,17 @@ for (const f of rows) {
   if (![...u].some(w => !PATHY.has(w))) continue;           // numeric id: unjudgeable, not a fault
   const nums = String(title).match(/\d{2,}/g) || [];
   if (t.some(w => u.has(w)) || nums.some(n => url.includes(n))) continue;
+  // A slug hyphenates what the name writes as one word: Ucom serves "AirPods 5" at
+  // /air-pods-5.html, checked against their own h1 on 2026-09-20. Comparing letters only, with
+  // every separator gone, is the general form of that.
+  const bare = x => String(x).toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (bare(path).includes(bare(title))) continue;
+  // ...and a slug may transliterate what the name spells in Latin. eldorado writes Yandex as
+  // "jandeks" and Station as "stancija" - a Russian reading of the word, romanised. These two
+  // are the only ones this catalogue has met; each was confirmed against eldorado's own h1 on
+  // 2026-09-20. Anything else still gets reported rather than quietly accepted.
+  const TRANSLIT = { yandex: 'jandeks', station: 'stancija' };
+  if (t.some(w => TRANSLIT[w] && u.has(TRANSLIT[w]))) continue;   // same 'any word agrees' bar as above
   bad.push({ shop, title, url, listing: LISTING(url) });
 }
 
