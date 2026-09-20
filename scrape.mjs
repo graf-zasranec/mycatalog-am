@@ -1706,7 +1706,12 @@ for (const key of names) {
   // has already dropped the shop's previous rows, that silently deletes every price it had. It
   // is how the nightly job published 1165 offers over 11 shops on the same day a local run found
   // 1482 over 13. Yesterday's price is stale; no price at all is worse.
-  const had = Object.values(prev.offers || {}).flat().filter(o => o.shop === key);
+  // Crawled rows only, on both sides. This counted the shop's HAND rows too, so a shop the
+  // catalogue carries mostly by hand always looked like it had collapsed: Yerevan Mobile has
+  // found 7 or 8 offers by crawl for as long as there are records, and its 103 seeded rows made
+  // that read as "COLLAPSED from 104" every single night. Comparing a crawl against a crawl is
+  // the only comparison that means anything, and it is what makes a real collapse visible.
+  const had = Object.values(prev.offers || {}).flat().filter(o => o.shop === key && !o.seeded);
   if (!best.size && had.length) {
     for (const o of had) (offers[o.id] ||= []).push(o);
     console.log(`parsed 0 - kept ${had.length} offer(s) from the previous run`);
