@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 206,
- "tooSmall": 58,
+ "missing": 208,
+ "tooSmall": 57,
  "products": [
   {
    "id": "microsoft-xbox-controller",
@@ -397,6 +397,16 @@
    "width": 0
   },
   {
+   "id": "asus-tuf-fx607vu-rl089",
+   "brand": "ASUS",
+   "name": "TUF FX607VU-RL089",
+   "category": "laptop",
+   "shops": 1,
+   "query": "ASUS TUF FX607VU-RL089",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "asus-tuf-gaming-a16-fa608p",
    "brand": "ASUS",
    "name": "TUF Gaming A16 FA608P",
@@ -453,6 +463,16 @@
    "category": "laptop",
    "shops": 1,
    "query": "ASUS Vivobook 17 X1704VAP",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "asus-vivobook-e1404ga-nk006w",
+   "brand": "ASUS",
+   "name": "VivoBook E1404GA-NK006W",
+   "category": "laptop",
+   "shops": 1,
+   "query": "ASUS VivoBook E1404GA-NK006W",
    "what": "missing",
    "width": 0
   },
@@ -2285,16 +2305,6 @@
    "query": "Acer Aspire Lite AL16-52P-59QU",
    "what": "too small",
    "width": 459
-  },
-  {
-   "id": "amazon-kindle-paperwhite-kids-11",
-   "brand": "Amazon",
-   "name": "Kindle Paperwhite Kids (11th gen)",
-   "category": "ereader",
-   "shops": 1,
-   "query": "Amazon Kindle Paperwhite Kids (11th gen)",
-   "what": "too small",
-   "width": 545
   },
   {
    "id": "apple-ipad-pro-13-wi-fi-2024",

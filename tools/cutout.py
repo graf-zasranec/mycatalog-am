@@ -230,7 +230,18 @@ def main():
     for f in todo:
         try:
             out = OUT / (os.path.splitext(f)[0] + '.webp')
-            cut(SRC / f, solid_product(f)).save(out, 'WEBP', quality=90, method=6)
+            # Write beside the file and rename over it. A save that dies part-way truncates what
+            # was there, and on this machine it does die: rembg wants about 2.5 GB and two
+            # cutouts were left at 0 bytes during one overnight pass. A 0-byte image is what the
+            # site would serve, and the old photograph - which was fine, only smaller - is gone.
+            # os.replace is atomic on Windows as well as POSIX.
+            tmp = out.with_suffix('.webp.part')
+            try:
+                cut(SRC / f, solid_product(f)).save(tmp, 'WEBP', quality=90, method=6)
+                os.replace(tmp, out)
+            finally:
+                if tmp.exists():
+                    tmp.unlink()
             done += 1
             print(f'{done}/{len(todo)} {f}', flush=True)
         except Exception as e:
