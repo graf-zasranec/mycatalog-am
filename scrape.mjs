@@ -40,14 +40,21 @@ async function vlvPrice(vid) {
   } catch { return 0; }
 }
 
+// The status of the last request, for the one caller that needs to tell "this page is gone"
+// from "the network hiccuped". A retry can fix the second; nothing fixes the first.
+let LAST_STATUS = 0;
 async function get(url, tries = 2) {
+  LAST_STATUS = 0;
   for (let i = 0; i < tries; i++) {
     try {
       const c = AbortSignal.timeout(TIMEOUT_MS);
       const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,*/*' }, signal: c, redirect: 'follow' });
+      LAST_STATUS = r.status;
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.text();
     } catch (e) {
+      // A 404 is an answer. Asking again wastes a request and the wait in front of it.
+      if (LAST_STATUS >= 400 && LAST_STATUS < 500) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       if (i === tries - 1) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       await sleep(1200);
     }
@@ -1419,9 +1426,15 @@ const SHOPS = {
       // the shop still reports prices instead of nothing.
       const SEEDS = ['44014', '41419', '39879'];
       const out = [];
+      // A product VLV has withdrawn stays in the index for ever and is asked for again every
+      // night: ten of them 404'd in one run, which is ten requests and ten warnings for pages
+      // that will never come back. A 404 takes the id out of the index; anything else - a
+      // timeout, a 500 - leaves it alone, because that is the shop having a bad moment.
+      const withdrawn = [];
       for (const vid of (ids.length ? ids : SEEDS)) {
         const u = `https://vlv.am/en/Product/${vid}`;
         const html = await get(u); await sleep(DELAY_MS);
+        if (!html && LAST_STATUS === 404) withdrawn.push(vid);
         if (!html || !safeUrl(u)) continue;
         const p = ldProduct(html), o = ldOffer(p);
         const title = clean((p && p.name) || (html.match(/<title>([^<]*)<\/title>/) || [])[1] || '')
@@ -1439,6 +1452,11 @@ const SHOPS = {
         out.push({ id, price, title, url: u, image: img,
           storage: storageOf(title), ram: ramOf(title),
           inStock: !/OutOfStock|SoldOut/i.test(String((o && o.availability) || '')) });
+      }
+      if (withdrawn.length) {
+        for (const vid of withdrawn) delete index[vid];
+        try { fs.writeFileSync(IDX, JSON.stringify(index)); } catch { }
+        console.log(`  ${withdrawn.length} product(s) withdrawn by the shop, dropped from ${IDX}`);
       }
       return out;
     }
