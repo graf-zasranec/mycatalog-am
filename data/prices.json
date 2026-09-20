@@ -46426,7 +46426,8 @@
     "color": null,
     "inStock": true,
     "shop": "ucom",
-    "seen": "2026-09-19"
+    "seen": "2026-09-19",
+    "band": "Band"
    },
    {
     "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
@@ -46435,36 +46436,11 @@
     "price": 384900,
     "storage": null,
     "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-ocean-band.html",
-    "seeded": true
-   }
-  ],
-  "apple-watch-ultra-4-gps-plus-cellular-plus-milanese-loop": [
-   {
-    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-milanese-loop",
-    "title": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop",
-    "url": "https://shop.ucom.am/am/apple-watch-ultra-4-gps-cellular-milanese-loop.html",
-    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/a/p/apple_watch_ultra_4_49mm_gps_plus_cellular_black_titanium_milanese_loop_black_pdp_image_position_1__ce-ww-removebg-preview.webp",
-    "price": 434900,
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "inStock": true,
-    "shop": "ucom",
-    "seen": "2026-09-19"
+    "seeded": true,
+    "band": "Band"
    },
    {
-    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-milanese-loop",
-    "shop": "ucom",
-    "title": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop",
-    "price": 434900,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-milanese-loop.html",
-    "seeded": true
-   }
-  ],
-  "apple-watch-ultra-4-gps-plus-cellular-plus-trail-loop": [
-   {
-    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-trail-loop",
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
     "title": "Apple Watch Ultra 4 GPS + Cellular + Trail Loop",
     "url": "https://shop.ucom.am/am/apple-watch-ultra-4-gps-cellular.html",
     "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/a/p/apple_watch_ultra_4_49mm_gps_plus_cellular_natural_titanium_trail_loop_sand_pdp_image_position_1__ce-ww-removebg-preview.webp",
@@ -46474,16 +46450,42 @@
     "color": null,
     "inStock": true,
     "shop": "ucom",
-    "seen": "2026-09-19"
+    "seen": "2026-09-19",
+    "band": "Trail Loop"
    },
    {
-    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-trail-loop",
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
     "shop": "ucom",
     "title": "Apple Watch Ultra 4 GPS + Cellular + Trail Loop",
     "price": 384900,
     "storage": null,
     "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular.html",
-    "seeded": true
+    "seeded": true,
+    "band": "Trail Loop"
+   },
+   {
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+    "title": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop",
+    "url": "https://shop.ucom.am/am/apple-watch-ultra-4-gps-cellular-milanese-loop.html",
+    "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/a/p/apple_watch_ultra_4_49mm_gps_plus_cellular_black_titanium_milanese_loop_black_pdp_image_position_1__ce-ww-removebg-preview.webp",
+    "price": 434900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "inStock": true,
+    "shop": "ucom",
+    "seen": "2026-09-19",
+    "band": "Milanese Loop"
+   },
+   {
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+    "shop": "ucom",
+    "title": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop",
+    "price": 434900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-milanese-loop.html",
+    "seeded": true,
+    "band": "Milanese Loop"
    }
   ],
   "apple-watch-series-12-gps-42mm": [

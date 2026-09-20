@@ -6000,40 +6000,14 @@
   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
   "category": "watch",
   "brand": "Apple",
-  "name": "Watch Ultra 4 GPS + Cellular + Band",
+  "name": "Watch Ultra 4 GPS + Cellular",
   "aliases": [
-   "Apple Watch Ultra 4 GPS + Cellular + Ocean Band"
+   "Apple Watch Ultra 4 GPS + Cellular + Ocean Band",
+   "Watch Ultra 4 GPS + Cellular + Trail Loop",
+   "Watch Ultra 4 GPS + Cellular + Milanese Loop"
   ],
   "tier": "upper-mid",
   "priceAmd": 384900,
-  "priceAmdMax": 384900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 384900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Watch Ultra 4 GPS + Cellular + Band.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-watch-ultra-4-gps-plus-cellular-plus-milanese-loop",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch Ultra 4 GPS + Cellular + Milanese Loop",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 434900,
   "priceAmdMax": 434900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -6041,40 +6015,25 @@
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 434900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-watch-ultra-4-gps-plus-cellular-plus-trail-loop",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch Ultra 4 GPS + Cellular + Trail Loop",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 384900,
-  "priceAmdMax": 384900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
+    "priceAmd": 384900,
+    "band": "Band"
+   },
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 384900
+    "priceAmd": 384900,
+    "band": "Trail Loop"
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 434900,
+    "band": "Milanese Loop"
    }
   ],
   "display": {},
   "battery": {},
-  "summaryEn": "Apple Watch Ultra 4 GPS + Cellular + Trail Loop.",
+  "summaryEn": "Apple Watch Ultra 4 GPS + Cellular + Band.",
   "unsure": [
    "popularity",
    "display",
