@@ -55,7 +55,44 @@ const BUILDS = ['pixel.am'];
 // it wrote 642,900 over the iPhone 18 Pro's 743,900, 943,900 and 1,256,900, which is the same
 // flattening two earlier runs were stopped for. Checked on the shop by the owner on 2026-09-21:
 // you have to select 2TB before a 2TB price appears. Ucom's hand rows are right; leave them.
-const readUrl = u => u;
+// Ucom is one of these: the price is CHOSEN on the page, not printed on it. There is no figure
+// for this tool to read, and the one it can read is the wrong one. The useful question about such
+// a row is the other one - does the link open the product it names, the page where a person picks
+// the memory, the RAM and the colour? That is what CONFIG rows are checked for, and a row that
+// passes is marked check=config so the site can stop calling a hand-read price "not checked".
+const CONFIG = ['shop.ucom.am'];
+const isConfig = u => CONFIG.some(h => u.includes(h));
+// Ucom labels its options in whichever language it is asked for, and its English page is the one
+// whose title this can read.
+const readUrl = u => u.includes('shop.ucom.am') ? u.replace('/am/', '/en/').replace('/ru/', '/en/') : u;
+
+// Does the page name the product the row names? The page names the FAMILY and the row names the
+// build, so the containment runs that way round: "iPhone 18 Pro" belongs inside "Apple iPhone 18
+// Pro 256GB Burgundy", never the reverse.
+const NOISE = new Set(['the', 'and', 'with', 'for', 'new', 'gb', 'tb', 'mm', 'wi', 'fi', 'wifi',
+  'cellular', 'esim', 'nano', 'sim', 'dual', 'black', 'white', 'silver', 'gold', 'blue', 'green',
+  'red', 'pink', 'grey', 'gray', 'purple', 'violet', 'orange', 'yellow', 'titanium', 'graphite',
+  'midnight', 'starlight', 'space', 'inch', 'awesome', 'phantom', 'cosmic', 'jetblack', 'shadow',
+  'series', 'smartphone', 'phone', 'buy', 'price', 'shop', 'ucom', 'am']);
+// Digits are kept: "AirPods 4" is not "AirPods Pro 3", and dropping the 4 left one word to judge
+// by. What goes is the build - a capacity, a memory size - because the page names the family.
+const nwords = z => [...new Set(String(z).toLowerCase().match(/[a-z0-9]+/g) || [])]
+  .filter(w => w.length > 1 && !NOISE.has(w) && !/^\d+(gb|tb|mb)$/.test(w));
+function namesTheProduct(html, title) {
+  const h1 = (html.match(/<h1[^>]*>([\s\S]{0,200}?)<\/h1>/i) || [])[1] || '';
+  const tt = (html.match(/<title[^>]*>([\s\S]{0,200}?)<\/title>/i) || [])[1] || '';
+  const page = nwords((h1 + ' ' + tt).replace(/<[^>]+>/g, ' '));
+  if (!page.length) return false;
+  const mine = nwords(title);
+  if (!mine.length) return false;
+  // Either side may be the fuller one. Ucom writes "Yandex Smart Speaker Station Mini" where the
+  // row says "Yandex Station Mini", and "iPhone 18 Pro" where the row says "Apple iPhone 18 Pro
+  // 256GB Burgundy". One of the two has to sit inside the other; which one does not matter.
+  const shared = page.filter(w => mine.includes(w)).length;
+  const bare = z => String(z).toLowerCase().replace(/[^a-z0-9]/g, '');
+  return Math.max(shared / page.length, shared / mine.length) >= 0.8
+    || bare(title).includes(bare(page.join('')));
+}
 const capOf = s => {
   const m = String(s || '').match(/([\d.]+)\s*(TB|GB)/i);
   return m ? Math.round(parseFloat(m[1]) * (/tb/i.test(m[2]) ? 1024 : 1)) : null;
@@ -195,9 +232,15 @@ if (sharedKeys.size) console.log(`${shared.length} row(s) share ${sharedKeys.siz
 // each row on its own terms. But only the page can say whether it does that, so those rows stay
 // in the run and are judged after it has been read, further down.
 todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + f[4]) || BUILDS.some(h => f[4].includes(h)));
+// ...and a CONFIG shop's rows are never skipped for that reason either: a url shared by every
+// capacity is exactly what a configurator looks like, and the question asked of it is the link,
+// not the price.
+for (const f of body)
+  if (f.length > 5 && f[4] && /^https?:/.test(f[4]) && isConfig(f[4])
+      && (!only.size || only.has(f[0])) && !(f[7] || '').trim() && !todo.includes(f)) todo.push(f);
 
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
-let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [];
+let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], linked = 0;
 for (let i = 0; i < todo.length; i++) {
   const f = todo[i];
   let p = CACHE.get(tidy(f[4])) || null;
@@ -217,6 +260,12 @@ for (let i = 0; i < todo.length; i++) {
     } catch (e) { gone.push([f[0], f[1], f[4], e.name]); }
     await sleep(DELAY);
     if (!html) continue;
+    // A configurator states no price to read. Check the link instead and mark the row.
+    if (isConfig(f[4])) {
+      if (namesTheProduct(html, f[1])) { f.marked = true; linked++; }
+      else wrongLink.push([f[0], f[1], '(the page does not name it)', f[4]]);
+      continue;
+    }
     p = buildPrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
@@ -245,7 +294,10 @@ for (let i = 0; i < todo.length; i++) {
 // would have vanished the moment it finished.
 if (!dry) {
   const changed = new Map();
-  for (const f of todo) if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(f[0] + '|' + f[4], [f[5], f[8]]);
+  for (const f of todo) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(f[0] + '|' + f[4], [f[5], f[8], null]);
+    else if (f.marked) changed.set(f[0] + '|' + f[4], [null, null, 'config']);
+  }
   const now = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
   const merged = now.map((l, i) => {
     if (!i || !l.trim()) return l;
@@ -253,13 +305,15 @@ if (!dry) {
     const c = f.length > 5 && changed.get(f[0] + '|' + f[4]);
     if (!c) return l;
     while (f.length < 9) f.push('');
-    f[5] = c[0]; f[8] = c[1];
+    if (c[0] != null) { f[5] = c[0]; f[8] = c[1]; }
+    if (c[2] && !(f[7] || '').trim()) f[7] = c[2];
     return f.join(',');
   });
   fs.writeFileSync('data/listings.csv', merged.filter(l => l.trim()).join('\n') + '\n');
   console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now`);
 }
 console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page`);
+if (linked) console.log(`${linked} row(s) at a shop that prices by configuration: the link opens the product they name, so the price a person read stands and the site can stop calling it unchecked`);
 console.log('read from:', Object.entries(how).map(([k, v]) => `${k} ${v}`).join(', ') || 'nothing');
 if (nop.length) { console.log(`\n${nop.length} page(s) with no price this could read:`); for (const n of nop.slice(0, 15)) console.log('  ', n[0].padEnd(13), n[1].slice(0, 38).padEnd(40), n[2].slice(0, 60)); }
 if (wild.length) { console.log(`

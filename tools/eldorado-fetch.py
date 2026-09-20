@@ -51,10 +51,21 @@ CATEGORIES = [
 # shop is no longer asking - which is how 26 catalogue entries came to sit above what Eldorado
 # actually charges. Every card carries a finalPrice, discounted or not (checked across the
 # headset, smartphone and notebook listings: 0 cards without one), so keying on it drops nothing.
+#
+# The card also carries the product's photograph, and 80 products in this catalogue are sold by
+# eldorado ALONE and have no picture at all - so it is picked up here, where the page is already
+# open, rather than by a second pass that would have to ask the shop all over again. Two traps:
+# a brand logo <img> sits on the same card, which is how a shop's own logo became a product photo
+# twice before, so the path must be /media/catalog/product/; and the src on the card points at
+# Magento's resized copy under /cache/<32 hex>/, where the original beside it is larger - 800x800
+# against the card's thumbnail.
 CARD = re.compile(
+    r'<img[^>]+src="(https://eldorado\.am/media/catalog/product/[^"]+)"[^>]*>'
+    r'.{0,4000}?'
     r'class="product_name combo_link"\s+href="([^"]+)"\s*>\s*(.*?)\s*</a>'
     r'(.{0,2000}?)data-price-amount="([\d.]+)"\s+data-price-type="finalPrice"',
     re.S)
+UNCACHE = re.compile(r'/cache/[0-9a-f]{32}/')
 
 
 def get(url):
@@ -75,7 +86,7 @@ for cat in CATEGORIES:
         if not html or len(html) < 20000:
             break
         found = 0
-        for href, title, between, price in CARD.findall(html):
+        for img, href, title, between, price in CARD.findall(html):
             if href in seen:
                 continue
             seen.add(href)
@@ -85,6 +96,7 @@ for cat in CATEGORIES:
                 'price': round(float(price)),
                 # Magento prints class="stock unavailable" on a sold-out card
                 'inStock': 'stock unavailable' not in between,
+                'image': UNCACHE.sub('/', img),
             })
             found += 1
         print(f'{cat} p{page}: {found}', flush=True)

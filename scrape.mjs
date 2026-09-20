@@ -1836,7 +1836,11 @@ try {
                 ram: r.ram ? +r.ram : undefined, size: screenOf(r.title, r.id),
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim,
                 seen: /^\d{4}-\d{2}-\d{2}$/.test((r.seen || '').trim()) ? r.seen.trim() : undefined,
-                checkColor: (r.check || '').trim() === 'color' || undefined });
+                checkColor: (r.check || '').trim() === 'color' || undefined,
+                // this shop prices the configuration, not the page: tools/confirm-hand.mjs has
+                // checked that the link opens the product, which is the only thing there is to
+                // check, so the site says "by hand" rather than "not checked".
+                pickOnSite: (r.check || '').trim() === 'config' || undefined });
     seeded++;
   }
   if (tagged) console.log(`${tagged} crawled offer(s) had their SIM build named by a hand row`);

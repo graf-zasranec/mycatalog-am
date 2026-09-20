@@ -20,7 +20,13 @@ const listing = rows.filter(o => o.url && LISTING.test(o.url));
 // 2. An offer nobody has confirmed. A crawled row is dated by the crawl; a hand row is dated by
 //    the seen column in data/listings.csv, written the day somebody opened that shop's own page.
 //    Blank means unverified, and the site says so on the row, so this is the size of that debt.
-const unseen = rows.filter(o => !o.seen);
+//    Except where the shop prices the CONFIGURATION rather than the page: Ucom shows a build's
+//    price only once you pick the memory, the RAM and the colour, so there is no figure on the
+//    page to check and never will be. Those rows are checked a different way - that the link
+//    opens the product - and counted separately, because lumping them in made the debt look 116
+//    rows larger than it is and pointed at work that cannot be done.
+const pick = rows.filter(o => !o.seen && o.pickOnSite);
+const unseen = rows.filter(o => !o.seen && !o.pickOnSite);
 const byShop = {};
 for (const o of unseen) byShop[o.shop] = (byShop[o.shop] || 0) + 1;
 
@@ -47,6 +53,7 @@ try {
 const dead = PRODUCTS.filter(p => !(P.offers[p.id] || []).length).length;
 console.log(`  ${rows.length} offers`);
 console.log(`  ${noLink.length} with no link, ${listing.length} pointing at a listing page   (both should be 0)`);
+if (pick.length) console.log(`  ${pick.length} priced by configuration - no figure on the page to read; their links are checked instead`);
 console.log(`  ${unseen.length} nobody has confirmed` + (unseen.length
   ? ': ' + Object.entries(byShop).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([s, n]) => `${s} ${n}`).join(', ')
   : ''));

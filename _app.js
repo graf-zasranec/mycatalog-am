@@ -1668,6 +1668,13 @@ function constructView() {
 // revisits, and which is how 23 of them rotted into 404s without anyone noticing. A row that was
 // not read today says so, and one nobody can date says that instead of borrowing today's.
 const seenTag = o => {
+  // "not checked" is the wrong thing to say about a price a person read off the shelf at a shop
+  // that will not print one. Ucom shows a build's price only after you have chosen the memory,
+  // the RAM and the colour, so there is nothing on that page for a checker to read - and what CAN
+  // be checked, that the link opens the product, tools/confirm-hand.mjs checks. A row that passes
+  // gets no tag at all: the price is a person's, the link is verified, there is nothing to warn
+  // about, and a badge saying "by hand" only invites the reader to distrust a good figure.
+  if (!o.seen && o.pickOnSite) return '';
   if (!o.seen) return ` <i class="stale" title="${esc(x('handTip'))}">${esc(x('handSeen'))}</i>`;
   if (o.seen === (P.generated || '').slice(0, 10)) return '';
   const d = o.seen.slice(8, 10) + '.' + o.seen.slice(5, 7);
