@@ -130,6 +130,27 @@ if (process.argv.includes('--fix')) {
   const key = s => (String(s).toLowerCase().match(/[a-z0-9]+/g) || [])
     .filter(c => c.length >= 4 && /\d/.test(c) && /[a-z]/.test(c) && !/^\d+[gtmk]b$/.test(c)
       && !/^(19|20)\d\d$/.test(c));
+  // These rows name their colour in the Armenian title; the colour column is empty and eldorado
+  // writes the English word into the slug. Only the colours this catalogue has actually met.
+  // Matched lowercased: the same shop writes "Սև" and "սև" in the same column.
+  const COLOUR = { 'կապույտ': 'blue', 'արծաթագույն': 'silver',
+    'սև': 'black', 'սպիտակ': 'white', 'կանաչ': 'green',
+    'մոխրագույն': 'gray', 'ոսկեգույն': 'gold',
+    'մանուշակագույն': 'purple', 'կարմիր': 'red',
+    blue: 'blue', silver: 'silver', black: 'black', white: 'white', green: 'green',
+    gray: 'gray', grey: 'gray', gold: 'gold', purple: 'purple', red: 'red' };
+  const COLOURS = [...new Set(Object.values(COLOUR))];
+  // Which colour does this text name, if any? A row that names one and a url that names a
+  // different one are not the same product, however well their model codes agree - eldorado
+  // lists HONOR CHOICE ROS-ME01 in black only, and the white row was about to point at it.
+  // A Latin colour has to be a whole word: "Redmi" contains "red", and that one substring made
+  // every Redmi title look like it named two colours at once, which this reads as naming none.
+  // The Armenian keys are matched as substrings, because they arrive with suffixes attached.
+  const colourOf = s => { const l = String(s || '').toLowerCase();
+    const tok = new Set(l.split(/[^a-z]+/).filter(Boolean));
+    const en = new Set();
+    for (const [k, v] of Object.entries(COLOUR)) if (/^[a-z]+$/.test(k) ? tok.has(k) : l.includes(k)) en.add(v);
+    return en.size === 1 ? [...en][0] : null; };
   let done = 0, ambiguous = 0, nohit = 0;
   const changed = new Map();
   for (const [shop, file] of [['eldorado', 'data/eldorado.json'], ['zigzag', 'data/zigzag.json']]) {
@@ -145,21 +166,42 @@ if (process.argv.includes('--fix')) {
       if (f[0] !== shop) continue;
       const ks = key(f[1]);
       if (!ks.length) continue;
-      if (ks.some(k => tidy(f[4]).includes(k))) continue;        // the link already names it
+      // The LONGEST code is the specific one. "IdeaCentre AIO 24IRH9 (F0HN00KSRU)" names the
+      // family and the machine, and asking whether the url carries either meant the family alone
+      // counted as proof - so three different computers all kept a link to the first of them.
+      const most = ks.slice().sort((a, b) => b.length - a.length)[0];
+      if (tidy(f[4]).includes(most)) continue;                   // the link already names it
       const hits = new Set();
       for (const k of ks) for (const u of idx.get(k) || []) hits.add(u);
       if (!hits.size) { nohit++; continue; }
       let cand = [...hits];
-      // The same model in six colours is six urls carrying the same code. The row names its
-      // colour, and the shop writes it into the slug, so that is what tells them apart.
       if (cand.length > 1) {
-        const col = String(f[3] || '').toLowerCase().split(/[^a-z]+/).filter(w => w.length > 2);
-        const m = col.length ? cand.filter(u => col.every(w => tidy(u).includes(w))) : [];
-        if (m.length === 1) cand = m;
+        // Several urls carry the same code because the shop lists the same model six times, once
+        // per colour, and because a code is often shared across a family: L43MB-AURU and
+        // L43MB-APRU are two different televisions. So score instead of filter - the right url is
+        // the one that answers to the MOST of what the row says, and a tie is still no answer.
+        //   the whole hyphenated code first, which is what separates AURU from APRU
+        //   then EU / RU, then the capacities, then the colour - which these rows write in
+        //   Armenian in the title, not in the colour column
+        const low = (f[1] || '').toLowerCase();
+        const want = [];
+        for (const c of low.match(/[a-z0-9]+(?:-[a-z0-9]+)+/g) || []) if (/\d/.test(c)) want.push([c, 4]);
+        for (const c of ks) want.push([c, 3]);
+        for (const c of low.match(/\b\d+\s*gb\b/g) || []) want.push([c.replace(/\s+/g, ''), 2]);
+        for (const c of ['eu', 'ru']) if (new RegExp('\\b' + c + '\\b').test(low)) want.push([c, 2]);
+        const mine = colourOf(f[1]);
+        if (mine) want.push([mine, 2]);
+        const score = u => want.reduce((n, [w, k]) => n + (tidy(u).includes(w) ? k : 0), 0);
+        const ranked = cand.map(u => [u, score(u)]).sort((a, b) => b[1] - a[1]);
+        if (ranked.length > 1 && ranked[0][1] > ranked[1][1]) cand = [ranked[0][0]];
       }
-      if (cand.length > 1) { ambiguous++; continue; }              // two answers is no answer
+      if (cand.length > 1) { ambiguous++; continue; }              // a tie is no answer
       const to = cand[0];
       if (tidy(to) === tidy(f[4])) continue;                       // already there
+      // Last word, whether one url answered or several did: a white pair of headphones does not
+      // link to the black pair just because the shop lists no white one.
+      const mine = colourOf(f[1]), theirs = colourOf(to.split('/').pop());
+      if (mine && theirs && mine !== theirs) { ambiguous++; continue; }
       console.log(`  ${f[1].slice(0, 44).padEnd(46)}\n      ${f[4].slice(-58)}\n   -> ${to.slice(-58)}`);
       changed.set(f[0] + '|' + f[4] + '|' + f[1], to);
       done++;
