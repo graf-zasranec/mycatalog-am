@@ -1033,19 +1033,32 @@ const SHOPS = {
     async run() {
       const out = [];
       let cat = '';
-      const PX = ['phones', 'tablets', 'watches', 'headphones', 'laptops'];
+      // Nine sections, not five. Dyson lives under hair-dryer, the DJI mics under microphone,
+      // and neither is reachable from the five this used to walk - which is why 15 Dyson rows sat
+      // unlinked while their pages existed all along.
+      const PX = ['phones', 'tablets', 'watches', 'headphones', 'laptops',
+                  'accessories', 'pods', 'gamepad', 'hair-dryer', 'microphone', 'drone', 'smart-gadget'];
       for (const section of PX)
+      // show=128, not 32: with 32 the listing stopped paginating after page 8 and the walk quietly
+      // ended a third of the way through phones.
       for (let page = 1; page <= 12; page++) {
-        const part = await get(`https://www.pixel.am/am/products/${section}?show=32&page=${page}`);
+        const part = await get(`https://www.pixel.am/am/products/${section}?show=128&page=${page}`);
         await sleep(DELAY_MS);
         if (!part) break;
         cat += part;
         if (!/\/am\/product\//.test(part)) break;
       }
       if (!cat) return out;
-      // filter by URL first so we only fetch pages that can match a phone we list
+      // Match on the LINK TEXT as well as the url. Pixel's slug for the Nothing Phone 3 is
+      // /product/nothng-phone-3 - misspelled on their side - so a url-only filter can never reach
+      // it, while the anchor text says "Nothing Phone 3" plainly.
+      const named = new Map();
+      for (const m of cat.matchAll(/<a[^>]+href="(https:\/\/www\.pixel\.am\/am\/product\/[a-z0-9-]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+        const text = m[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+        if (text && !named.has(m[1])) named.set(m[1], text);
+      }
       const urls = [...new Set([...cat.matchAll(/https:\/\/www\.pixel\.am\/am\/product\/[a-z0-9-]+/g)].map(m => m[0]))]
-        .filter(u => matchPhone(u));
+        .filter(u => matchPhone(u) || matchPhone(named.get(u) || ''));
       for (const u of urls) {
         const h = await get(u); await sleep(DELAY_MS);
         if (!h) continue;
