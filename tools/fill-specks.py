@@ -28,10 +28,16 @@ def fix(path):
     # background through it.
     solid = a > 200
     holes = ndimage.binary_fill_holes(solid) & ~solid
-    before = int((a > 0).sum()) + int(a.sum())
     if not holes.any():
+        a0 = a.copy()
         harden(arr)
-        if int((arr[..., 3] > 0).sum()) + int(arr[..., 3].sum()) != before:
+        # A lossy WebP save nudges the very alpha it was just handed: a pixel written as 255
+        # reads back 253. harden is idempotent on exact values, so it "repairs" that on the next
+        # run and saves again, and the same file is re-encoded on every pass for ever - 128
+        # cutouts churned that way in one afternoon, each losing a little RGB to the
+        # re-compression while looking identical. Only a change a viewer could see is worth a
+        # rewrite, and five units of alpha on an already-opaque pixel is not one.
+        if int((np.abs(arr[..., 3].astype(np.int16) - a0.astype(np.int16)) > 8).sum()):
             Image.fromarray(arr, 'RGBA').save(path, 'WEBP', quality=90)
             return -1                       # hardened only, no hole to close
         return 0
