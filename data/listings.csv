@@ -1,4 +1,4 @@
-shop,title,capacity,color,url,price,ram,check
+shop,title,capacity,color,url,price,ram,check,seen
 eldorado,ASUS Vivobook 15X OLED M1503,512,,https://eldorado.am/en/asus-vivobook-15x-oled-m1503-m1503ia-l1018-90nb0y61-m00590,214900
 eldorado,ASUS Zenbook 14 OLED UM3402YA,512,,https://eldorado.am/en/asus-zenbook-14-oled-um3402ya-kp290-90nb0w95-m00j70,329900
 eldorado,ASUS Vivobook S 15 OLED M3502QA,1024,,https://eldorado.am/en/asus-vivobook-s-15-oled-m3502qa-ma153-16-gb-1-tb-90nb0xx1-m006s0,329900
@@ -8,16 +8,16 @@ eldorado,JBL PartyBox On-The-Go,,,https://eldorado.am/en/shopbrand/jbl,149900
 eldorado,Marshall Major V,,Black,https://eldorado.am/en/shop-by-brand/marshall,46900
 eldorado,Sennheiser Momentum 4,,Graphite,https://eldorado.am/en/shopbrand/sennheiser,139900
 eldorado,Sonos Arc,,Black,https://eldorado.am/en/shopbrand/sonos,429900
-ibolit,JBL PartyBox Ultimate,,,https://ibolit.mobi/product-category/audio/,559900
+ibolit,JBL PartyBox Ultimate,,,https://ibolit.mobi/product/jbl-partybox-ultimate/,559900,,,
 ibolit,iPhone 17,512,White,https://ibolit.mobi/product/iphone-17-512-sim-white/,445000
 ibolit,iPhone 17 Pro,256,Silver,https://ibolit.mobi/product/iphone-17-pro-256gb-esim-silver/,519000
 ibolit,iPhone 17 Pro Max,256,Deep Blue,https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-deep-blue/,549000
 ibolit,iPhone 17 Pro Max,256,Cosmic Orange,https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-orange/,549000
 ibolit,Samsung Galaxy S26,256,Cobalt Violet,https://ibolit.mobi/product/samsung-galaxy-s26-12gb-256gb-cobalt-violet/,309000
-mobilecentre,Apple MacBook Neo 13,256,Silver,https://www.mobilecentre.am/category/computers/144/0/,339900
-mobilecentre,Apple MacBook Neo 13,256,Citrus,https://www.mobilecentre.am/category/computers/144/0/,339900
-mobilecentre,Apple MacBook Neo 13,256,Blush,https://www.mobilecentre.am/category/computers/144/0/,339900
-mobilecentre,Apple MacBook Neo 13,256,Indigo,https://www.mobilecentre.am/category/computers/144/0/,339900
+mobilecentre,Apple MacBook Neo 13,256,Silver,https://www.mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhfa4-_silver_/34505/,339900,,,2026-09-20
+mobilecentre,Apple MacBook Neo 13,256,Citrus,https://www.mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhfd4-_citrus_/33774/,339900,,,2026-09-20
+mobilecentre,Apple MacBook Neo 13,256,Blush,https://www.mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhfh4-_blush_/33776/,339900,,,2026-09-20
+mobilecentre,Apple MacBook Neo 13,256,Indigo,https://www.mobilecentre.am/product/apple-macbook-neo-13-inch-_-apple-a18-pro-chip-with-6-core-cpu-and-5-core-gpu-8gb-256gb-ssd-mhff4-_indigo_/33775/,339900,,,2026-09-20
 mobilecentre,Samsung Galaxy S26,256,Black,https://www.mobilecentre.am/product/samsung-galaxy-s26-256gb-_black_/33476/,348900
 mobilecentre,Samsung Galaxy S26,256,White,https://www.mobilecentre.am/product/samsung-galaxy-s26-256gb-_white_/33482/,348900
 mobilecentre,Samsung Galaxy S26 FE,128,Black,https://www.mobilecentre.am/product/samsung-galaxy-s26-fe-128gb-_black_/34413/,336900
@@ -75,7 +75,7 @@ redstore,Yandex Station Mini 3 Pro,,Black,https://redstore.am/en/product/yandex-
 redstore,Yandex Station Mini 3 Pro,,Gray,https://redstore.am/product/yandex-station-mini-3-pro-gray,79000
 zigzag,Yandex Station Street,,Green,https://www.zigzag.am/en/yandex-smart-station-street-yndx-00030-green.html,129000
 zigzag,Yandex Station Max,,Graphite,https://www.zigzag.am/am/yandex-station-max-yndx-00053-graphite.html,149900
-ucom,Yandex Station Mini,,,https://shop.ucom.am/en/speakers.html,51900
+ucom,Yandex Station Mini,,,https://shop.ucom.am/am/yandex-smart-speaker-station-mini.html,51900,,,
 ucom,Yandex Station 2,,,https://shop.ucom.am/en/yandex-smart-station-2-00051.html,119900
 ucom,Yandex Station Lite,,,https://shop.ucom.am/en/yandex-smart-station-light-00025.html,31900
 ucom,Yandex Smart Lamp,,,https://shop.ucom.am/en/yandex-smart-lamp-00017-e14.html,5900
@@ -87,10 +87,10 @@ pixel,Sony PS5 Slim Digital,1024,,https://www.pixel.am/en/product/sony-ps5-slim-
 pixel,Sony PS5 Pro,2048,White,https://www.pixel.am/en/product/sony-ps5-pro-digital-edition-white,529000
 ibolit,Bang Olufsen Beosound Balance,,Natural Oak,https://ibolit.mobi/product-category/audio/,1469000
 zigzag,Sony WH-1000XM6,,Black,https://www.zigzag.am/en/sony-wh-1000xm6-bme.html,221900
-allsell,OnePlus Nord 6,256,,https://allsell.am/en/phones,216700
+allsell,OnePlus Nord 6,256,,https://allsell.am/en/oneplus-nord-6,216700,,,
 miarmenia,Xiaomi 17T Pro,256,,https://miarmenia.am/ru/collection/smartphones/1,327900
 miarmenia,Xiaomi 17T Pro,512,,https://miarmenia.am/ru/collection/smartphones/1,346900
-allsell,Google Pixel 11 Pro XL,256,,https://allsell.am/en/phones,587700
+allsell,Google Pixel 11 Pro XL,256,,https://allsell.am/en/google-pixel-11-pro-xl,587700,,,
 pixel,Nothing Phone 3,256,,https://www.pixel.am/am/product/nothng-phone-3,399000,,
 redstore,iPhone 17 256GB Black,256,Black,https://redstore.am/en/product/iphone-17-256gb-black,378000
 redstore,iPhone 17 256GB Black eSim,256,Black,https://redstore.am/en/product/iphone-17-256gb-black-esim,364000
@@ -258,8 +258,6 @@ telecom,Marshall Major V,,,https://www.telecomarmenia.am/eshop/en/accessories/he
 mobilecentre,JBL Charge 5,,,https://www.mobilecentre.am/product/jbl-charge-5-portable-wireless-speaker-_squad_/31840/,64900
 mobilecentre,JBL PartyBox Encore Essential,,,https://www.mobilecentre.am/product/jbl-party-box-encore-essential-portable-wireless-speaker-black/,169900
 vega,JBL Tune 125BT Black,,,https://vega.am/en/home-appliances/phones-and-gadgets/wired-headphones/headphone-jbl-tune-125bt-bk.html,11900
-notebookcentre,Yandex Station Street,,,https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030,99900
-notebookcentre,Apple EarPods Lightning,,,https://notebookcentre.am/ru/brand/Apple,10000
 redstore,iPhone 18 Pro 256GB,256,,https://redstore.am/en/product/iphone-18-pro-256gb-burgundy-esim,799000
 redstore,iPhone 18 Pro 512GB,512,,https://redstore.am/en/product/iphone-18-pro-512gb-burgundy-esim,959000
 redstore,iPhone 18 Pro 1TB,1024,,https://redstore.am/en/product/iphone-18-pro-1tb-burgundy-esim,1099000
@@ -268,13 +266,9 @@ redstore,iPhone 18 Pro Max 512GB,512,,https://redstore.am/en/product/iphone-18-p
 redstore,iPhone 18 Pro Max 1TB,1024,,https://redstore.am/en/product/iphone-18-pro-max-1tb-black-esim,1199000
 redstore,iPhone 18 Pro 256GB tray,256,,https://redstore.am/en/product/iphone-18-pro-256gb-burgundy,879000
 redstore,iPhone 18 Pro Max 256GB tray,256,,https://redstore.am/en/product/iphone-18-pro-max-256gb-black,979000
-yerevanmobile,Samsung Galaxy Tab A11 WiFi,,,https://www.yerevanmobile.am/en/electronics/tablets.html,54000
-yerevanmobile,Samsung Galaxy Tab A11 5G 64GB,64,Gray,https://www.yerevanmobile.am/en/electronics/tablets.html,69000
-yerevanmobile,Samsung Galaxy Tab A11 5G 128GB,128,Gray,https://www.yerevanmobile.am/en/electronics/tablets.html,89000
-yerevanmobile,Samsung Galaxy Watch 8 40mm,40,,https://www.yerevanmobile.am/en/samsung-galaxy-watch-8-40mm.html,84000
-yerevanmobile,Samsung Galaxy Watch 8 44mm,44,,https://www.yerevanmobile.am/en/electronics/watches.html,99000
-yerevanmobile,Apple Watch SE 3 40mm,40,,https://www.yerevanmobile.am/en/apple-watch-se-3-40mm.html,112000
-yerevanmobile,Apple Watch SE 3 44mm,44,,https://www.yerevanmobile.am/en/apple-watch-se-3-44mm.html,122000
+yerevanmobile,Samsung Galaxy Watch 8 40mm,40,,https://www.yerevanmobile.am/en/samsung-galaxy-watch-8-40mm.html,84000,,,2026-09-20
+yerevanmobile,Apple Watch SE 3 40mm,40,,https://www.yerevanmobile.am/en/apple-watch-se-3-40mm.html,112000,,,2026-09-20
+yerevanmobile,Apple Watch SE 3 44mm,44,,https://www.yerevanmobile.am/en/apple-watch-se-3-44mm.html,122000,,,2026-09-20
 mobilecentre,JBL Authentics 500,,,https://www.mobilecentre.am/product/jbl-speaker-authentics-500-wifi-bluetooth-black/,319900
 mobilecentre,JBL Authentics 200,,,https://www.mobilecentre.am/product/jbl-authentics-200-wifi-bluetooth-speaker-auth200-blk-black/,209900
 mobilecentre,JBL Boombox 2,,,https://www.mobilecentre.am/product/jbl-boombox-2-portable-bluetooth-speaker/,239900
@@ -287,398 +281,129 @@ mobilecentre,JBL Clip 5,,,https://www.mobilecentre.am/product/jbl-clip-5-portabl
 zigzag,Audio-Technica ATH-S220BT,,,https://www.zigzag.am/en/audio-technica-ath-s220bt-white-wireless-headphone-ath-s220btwh.html,29900
 zigzag,JBL Tune 680NC,,,https://www.zigzag.am/en/jbl-t680ncwht.html,34900
 zigzag,JBL Tune 530BT,,,https://www.zigzag.am/en/jbl-t530btlaveu.html,23900
-yerevanmobile,Amazon Kindle Paperwhite 12 Gen 16GB,,,https://www.yerevanmobile.am/en/electronics/tablets.html,89000
-yerevanmobile,Amazon Kindle Paperwhite 12 Gen 32GB,,,https://www.yerevanmobile.am/en/electronics/tablets.html,99000
-yerevanmobile,Samsung Galaxy S25 Ultra,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s25-ultra.html,339000
+yerevanmobile,Amazon Kindle Paperwhite 12 Gen 32GB,,,https://www.yerevanmobile.am/en/amazon-kindle-paperwhite-12-gen-32gb.html,99000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S25 Ultra,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s25-ultra.html,339000,,,
 ibolit,iPhone 17 Pro Max 1TB eSim Silver,1024,Silver,https://ibolit.mobi/product/iphone-17-pro-max-1tb-esim-silver/,715000
 ibolit,iPhone 17 Pro Max 2TB eSim Silver,2048,Silver,https://ibolit.mobi/product/iphone-17-pro-max-2tb-esimsilver/,849000
-ibolit,iPhone 17 Pro Max 2TB 1 SIM + eSIM,2048,,https://ibolit.mobi/product-category/smartphones/,959000
+ibolit,iPhone 17 Pro Max 2TB 1 SIM + eSIM,2048,,https://ibolit.mobi/product-category/smartphones/,959000,,,
 zigzag,Apple Watch SE 3 40mm Midnight,40,Midnight,https://www.zigzag.am/am/apple-watch-se-3-gps-40mm-midnight-midnight-sport-band-s-m-meh94.html,114900
 zigzag,Apple Watch SE 3 44mm Starlight,44,Starlight,https://www.zigzag.am/am/apple-watch-se-3-gps-44mm-starlight-starlight-sport-band-s-m-mehg4.html,133900
 zigzag,Apple Watch SE 3 44mm Midnight,44,Midnight,https://www.zigzag.am/am/apple-watch-se-3-gps-44mm-midnight-midnight-sport-band-s-m-mehn4rk-a.html,133900
 zigzag,Sony WH-CH720N Black,,Black,https://www.zigzag.am/am/sony-wh-ch720n-bce.html,56900
 zigzag,Sonos Era 300 White,,White,https://www.zigzag.am/am/sonos-era-300-white-e30g1eu1.html,276900
-yerevanmobile,Samsung Galaxy A07 4G,64,,https://www.yerevanmobile.am/en/samsung-galaxy-a07-4g.html,52000
-yerevanmobile,Xiaomi Redmi 15C 4G,128,,https://www.yerevanmobile.am/en/electronics/phones.html,72000
-yerevanmobile,Samsung Galaxy A17,128,,https://www.yerevanmobile.am/en/electronics/phones.html,72000
-yerevanmobile,Samsung Galaxy A27,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a27.html,109000
-yerevanmobile,Samsung Galaxy A37,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a37.html,127000
-yerevanmobile,Xiaomi Redmi Note 15 Pro 4G,256,,https://www.yerevanmobile.am/en/electronics/phones.html,134000
-yerevanmobile,Samsung Galaxy A57,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a57.html,144000
-yerevanmobile,OnePlus Nord 6,256,,https://www.yerevanmobile.am/en/electronics/phones.html,219000
-yerevanmobile,Samsung Galaxy S25 FE,128,,https://www.yerevanmobile.am/en/electronics/phones.html,229000
-yerevanmobile,Google Pixel 10a,128,,https://www.yerevanmobile.am/en/electronics/phones.html,229000
-yerevanmobile,Honor 400 Pro,512,,https://www.yerevanmobile.am/en/electronics/phones.html,269000
-yerevanmobile,Samsung Galaxy S25,128,,https://www.yerevanmobile.am/en/electronics/phones.html,279000
-yerevanmobile,Samsung Galaxy S26 FE,256,,https://www.yerevanmobile.am/en/electronics/phones.html,289000
-yerevanmobile,Apple iPhone 15,128,,https://www.yerevanmobile.am/en/electronics/phones.html,295000
-yerevanmobile,Samsung Galaxy S25 Edge,256,,https://www.yerevanmobile.am/en/electronics/phones.html,319000
-yerevanmobile,Samsung Galaxy S26,256,,https://www.yerevanmobile.am/en/electronics/phones.html,319000
-yerevanmobile,Google Pixel 10,128,,https://www.yerevanmobile.am/en/electronics/phones.html,339000
-yerevanmobile,Samsung Galaxy S26 Plus,256,,https://www.yerevanmobile.am/en/electronics/phones.html,349000
-yerevanmobile,Apple iPhone 16,128,,https://www.yerevanmobile.am/en/electronics/phones.html,365000
-yerevanmobile,Honor Magic 7 Pro,512,,https://www.yerevanmobile.am/en/electronics/phones.html,379000
-yerevanmobile,Apple iPhone 16 Plus,128,,https://www.yerevanmobile.am/en/electronics/phones.html,389000
-yerevanmobile,Apple iPhone Air,256,,https://www.yerevanmobile.am/en/electronics/phones.html,395000
-yerevanmobile,Samsung Galaxy S26 Ultra,256,,https://www.yerevanmobile.am/en/electronics/phones.html,399000
-yerevanmobile,Apple iPhone 17,256,,https://www.yerevanmobile.am/en/electronics/phones.html,429000
-yerevanmobile,Apple iPhone 16 Pro,128,,https://www.yerevanmobile.am/en/electronics/phones.html,445000
-yerevanmobile,Samsung Galaxy Z Flip8,256,,https://www.yerevanmobile.am/en/electronics/phones.html,445000
-yerevanmobile,Apple iPhone 17 Pro (eSim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,488000
-yerevanmobile,Apple iPhone 17 Pro (Nano-Sim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,519000
-yerevanmobile,Apple iPhone 17 Pro Max (eSim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,525000
-yerevanmobile,Samsung Galaxy Z Fold7,256,,https://www.yerevanmobile.am/en/electronics/phones.html,539000
-yerevanmobile,Xiaomi 17 Pro Max,512,,https://www.yerevanmobile.am/en/electronics/phones.html,559000
-yerevanmobile,Apple iPhone 17 Pro Max (Nano-Sim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,569000
-yerevanmobile,Google Pixel 11 Pro XL,256,,https://www.yerevanmobile.am/en/electronics/phones.html,599000
-yerevanmobile,Samsung Galaxy Z Fold 8,256,,https://www.yerevanmobile.am/en/electronics/phones.html,619000
-yerevanmobile,Samsung Galaxy Z Fold8 Ultra,256,,https://www.yerevanmobile.am/en/electronics/phones.html,655000
-yerevanmobile,Apple iPhone 18 Pro (Esim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,749000
-yerevanmobile,Apple iPhone 18 Pro (Nano Sim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,829000
-yerevanmobile,Apple iPhone 18 Pro Max (Esim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,849000
-yerevanmobile,Apple iPhone 18 Pro Max (Nano Sim),256,,https://www.yerevanmobile.am/en/electronics/phones.html,929000
+yerevanmobile,Samsung Galaxy A07 4G,64,,https://www.yerevanmobile.am/en/samsung-galaxy-a07-4g.html,52000,,,
+yerevanmobile,Xiaomi Redmi 15C 4G,128,,https://www.yerevanmobile.am/en/xiaomi-redmi-15c-4g.html,72000,,,2026-09-20
+yerevanmobile,Samsung Galaxy A17,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a17.html,72000,,,2026-09-20
+yerevanmobile,Samsung Galaxy A27,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a27.html,129000,,,
+yerevanmobile,Samsung Galaxy A37,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a37.html,127000,,,
+yerevanmobile,Samsung Galaxy A57,128,,https://www.yerevanmobile.am/en/samsung-galaxy-a57.html,143000,,,
+yerevanmobile,OnePlus Nord 6,256,,https://www.yerevanmobile.am/en/oneplus-nord-6.html,219000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S25 FE,128,,https://www.yerevanmobile.am/en/samsung-galaxy-s25-fe.html,229000,,,2026-09-20
+yerevanmobile,Google Pixel 10a,128,,https://www.yerevanmobile.am/en/google-pixel-10a.html,229000,,,2026-09-20
+yerevanmobile,Honor 400 Pro,512,,https://www.yerevanmobile.am/en/honor-400-pro.html,269000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S25,128,,https://www.yerevanmobile.am/en/samsung-galaxy-s25.html,259000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S26 FE,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s26-fe.html,289000,,,2026-09-20
+yerevanmobile,Apple iPhone 15,128,,https://www.yerevanmobile.am/en/apple-iphone-15.html,295000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S25 Edge,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s25-edge.html,319000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S26,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s26.html,319000,,,2026-09-20
+yerevanmobile,Google Pixel 10,128,,https://www.yerevanmobile.am/en/google-pixel-10.html,339000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S26 Plus,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s26-plus.html,349000,,,2026-09-20
+yerevanmobile,Apple iPhone 16,128,,https://www.yerevanmobile.am/en/apple-iphone-16.html,365000,,,2026-09-20
+yerevanmobile,Honor Magic 7 Pro,512,,https://www.yerevanmobile.am/en/honor-magic-7-pro.html,379000,,,2026-09-20
+yerevanmobile,Apple iPhone 16 Plus,128,,https://www.yerevanmobile.am/en/apple-iphone-16-plus.html,389000,,,2026-09-20
+yerevanmobile,Apple iPhone Air,256,,https://www.yerevanmobile.am/en/apple-iphone-air.html,395000,,,2026-09-20
+yerevanmobile,Samsung Galaxy S26 Ultra,256,,https://www.yerevanmobile.am/en/samsung-galaxy-s26-ultra.html,399000,,,2026-09-20
+yerevanmobile,Apple iPhone 17,256,,https://www.yerevanmobile.am/en/apple-iphone-17.html,429000,,,2026-09-20
+yerevanmobile,Apple iPhone 16 Pro,128,,https://www.yerevanmobile.am/en/apple-iphone-16-pro.html,445000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Z Flip8,256,,https://www.yerevanmobile.am/en/samsung-galaxy-z-flip8.html,445000,,,2026-09-20
+yerevanmobile,Apple iPhone 17 Pro (eSim),256,,https://www.yerevanmobile.am/en/apple-iphone-17-pro-esim.html,475000,,,2026-09-20
+yerevanmobile,Apple iPhone 17 Pro (Nano-Sim),256,,https://www.yerevanmobile.am/en/apple-iphone-17-pro-nano-sim.html,509000,,,2026-09-20
+yerevanmobile,Apple iPhone 17 Pro Max (eSim),256,,https://www.yerevanmobile.am/en/apple-iphone-17-pro-max-esim.html,515000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Z Fold7,256,,https://www.yerevanmobile.am/en/samsung-galaxy-z-fold7.html,539000,,,2026-09-20
+yerevanmobile,Xiaomi 17 Pro Max,512,,https://www.yerevanmobile.am/en/xiaomi-17-pro-max.html,559000,,,2026-09-20
+yerevanmobile,Apple iPhone 17 Pro Max (Nano-Sim),256,,https://www.yerevanmobile.am/en/apple-iphone-17-pro-max-nano-sim.html,559000,,,2026-09-20
+yerevanmobile,Google Pixel 11 Pro XL,256,,https://www.yerevanmobile.am/en/google-pixel-11-pro-xl.html,585000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Z Fold 8,256,,https://www.yerevanmobile.am/en/samsung-galaxy-z-fold-8.html,619000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Z Fold8 Ultra,256,,https://www.yerevanmobile.am/en/samsung-galaxy-z-fold8-ultra.html,655000,,,2026-09-20
 planet3d,Apple AirPods 4,,,https://3dplanet.am/en/store/headset,54000
 planet3d,Samsung Galaxy Buds 3 Pro,,,https://3dplanet.am/en/store/headset,62000
-notebookcentre,iPad Air 13 M4 WiFi Blue / 128 GB,128,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,439000
-notebookcentre,iPad Air 13 M4 WiFi Purple / 128 GB,128,Purple,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,439000
-notebookcentre,iPad Air 13 M4 WiFi Starlight / 256 GB,256,Starlight,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,499000
-notebookcentre,iPad Air 13 M4 WiFi + Cellular,,,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,499000
-notebookcentre,iPad Air 13 M4 WiFi Blue / 256 GB,256,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,499000
-notebookcentre,iPad Pro 11 M5 WiFi Silver / 256 GB,256,Silver,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,499000
-notebookcentre,iPad Air 13 M4 WiFi Space Gray / 256 GB,256,Space Gray,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,499000
-notebookcentre,iPad Air 13 M4 WiFi Purple / 256 GB,256,Purple,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,499000
-notebookcentre,iPad Pro 11 M5 WiFi Silver / 512 GB,512,Silver,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,555000
-notebookcentre,iPad Pro 11 M5 WiFi Space Black / 512 GB,512,Space Black,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,555000
-notebookcentre,iPad Pro 13 M5 WiFi Silver / 256 GB,256,Silver,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,595000
-notebookcentre,iPad Pro 13 M5 WiFi Space Black / 256 GB,256,Space Black,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,595000
-notebookcentre,Apple iPad Pro 13 (2025) M5 WIFI,,,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,659000
-notebookcentre,Samsung Galaxy Z Fold 8,,,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,669000
-notebookcentre,Samsung Galaxy Z Fold 8 Lavender,,Lavender,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,669000
-notebookcentre,Samsung Galaxy Z Fold 8 Cream,,Cream,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=3,669000
-notebookcentre,Xiaomi Redmi Pad 2 9.7 4G (2604ERP4DG),,,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,83900
-notebookcentre,Xiaomi Redmi Pad 2 4G (2505DRP06G),,,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,119900
-notebookcentre,iPad 11 A16 (2025) WiFi Yellow / 128 GB,128,Yellow,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,189000
-notebookcentre,iPad 11 A16 (2025) WiFi Pink / 128 GB,128,Pink,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,189000
-notebookcentre,iPad 11 A16 (2025) WiFi Blue / 128 GB,128,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,189000
-notebookcentre,iPad 11 A16 (2025) WiFi,,,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,189000
-notebookcentre,iPad 11 A16 (2025) WiFi + Cellular Yellow / 128 GB,128,Yellow,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,239000
-notebookcentre,iPad 11 A16 (2025) WiFi Blue / 256 GB,256,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,239000
-notebookcentre,iPad 11 A16 (2025) WiFi Silver / 256 GB,256,Silver,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,239000
-notebookcentre,iPad 11 A16 (2025) WiFi Yellow / 256 GB,256,Yellow,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,239000
-notebookcentre,iPad 11 A16 (2025) WiFi Pink / 256 GB,256,Pink,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,239000
-notebookcentre,iPad 11 A16 (2025) WiFi + Cellular Blue / 128 GB,128,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock,239000
-notebookcentre,Sony PlayStation Portal,,,https://notebookcentre.am/en/category/gaming-console,129000
-notebookcentre,Microsoft Xbox Series S 1Tb (EP2-00645) White,,White,https://notebookcentre.am/en/category/gaming-console,219000
-notebookcentre,PlayStation 5 Slim (Digital),,,https://notebookcentre.am/en/category/gaming-console,309000
-notebookcentre,PlayStation 5 Slim,,,https://notebookcentre.am/en/category/gaming-console,319000
-notebookcentre,Playstation 5 Pro,,,https://notebookcentre.am/en/category/gaming-console,529000
-notebookcentre,Samsung Galaxy Watch 8 40mm Silver,,Silver,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,108000
-notebookcentre,Samsung Galaxy Watch 8 44mm Silver,,Silver,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,120000
-notebookcentre,Apple Watch SE 3 40mm Starlight,,Starlight,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,134000
-notebookcentre,Apple Watch SE 3 44mm Midnight,,Midnight,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,144000
-notebookcentre,Apple Watch 11 42mm Space Gray,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,155000
-notebookcentre,Apple Watch 11 42mm Silver,,Silver,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,155000
-notebookcentre,Apple Watch 11 42mm Rose Gold,,Rose Gold,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,155000
-notebookcentre,Apple Watch 11 46mm Silver,,Silver,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,165000
-notebookcentre,Apple Watch 11 46mm Rose Gold,,Rose Gold,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,165000
-notebookcentre,Apple Watch 11 46mm Space Gray,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,165000
-notebookcentre,Apple Watch Ultra 3 49MM Black,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40&page=2,359000
-notebookcentre,Xiaomi Smart Band 10 (Midnight Black) BHR07PYGL,,Black,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,25000
-notebookcentre,Samsung Galaxy Watch 8 40mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,108000
-notebookcentre,Apple Watch SE 3 40mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,119000
-notebookcentre,Samsung Galaxy Watch 8 44mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,120000
-notebookcentre,Apple Watch SE 3 44mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,129000
-notebookcentre,Samsung Galaxy Watch 8 Classic 46mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,148000
-notebookcentre,Apple Watch 11 42mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,155000
-notebookcentre,Apple Watch 11 46mm,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,165000
-notebookcentre,Apple Watch Ultra 3 49MM,,,https://notebookcentre.am/en/category/watch-glasses?brand=19&brand=24&brand=20&brand=40,359000
-notebookcentre,Marshall Major V Cream,,Cream,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2,55000
-notebookcentre,Marshall Major V Blue,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2,55000
-notebookcentre,Apple AirPods Max (Type-C) Midnight,,Midnight,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2,239000
-notebookcentre,Apple AirPods Max (Type-C) Starlight,,Starlight,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2,239000
-notebookcentre,Apple AirPods Max (Type-C) Purple,,Purple,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2,239000
-notebookcentre,Apple AirPods Max (Type-C) Orange,,Orange,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock&page=2,239000
-notebookcentre,Apple Earpods Lightning Connector,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,10000
-notebookcentre,Apple Earpods USB-C,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,10000
-notebookcentre,Samsung Galaxy Buds FE,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,36000
-notebookcentre,Marshall Major IV,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,45900
-notebookcentre,Marshall Major V,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,55000
-notebookcentre,Apple Airpods 4,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,57000
-notebookcentre,Samsung Galaxy Buds 3 Pro,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,69000
-notebookcentre,Apple Airpods 4 ANC (Active Noise Cancellation),,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,79000
-notebookcentre,Apple Airpods Pro 2 (Type-C),,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,84000
-notebookcentre,Apple Airpods Pro 3,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,105000
-notebookcentre,Airpods Max (Type-C),,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,199000
-notebookcentre,Airpods Max2,,,https://notebookcentre.am/en/category/headphones?brand=19&brand=16&brand=24&brand=21&brand=20&brand=57&product_status=in_stock,269000
-yerevanmobile,Samsung Galaxy Tab A11 WiFi (X133),,,https://www.yerevanmobile.am/en/electronics.html,54000
-yerevanmobile,Samsung Galaxy Tab A11 WiFi +5G (X135G),,,https://www.yerevanmobile.am/en/electronics.html,69000
-yerevanmobile,Amazon Kindle Kids Paperwhite 11 Gen,,,https://www.yerevanmobile.am/en/electronics.html,75000
-yerevanmobile,Amazon Kindle Paperwhite 12 Gen/16GB,16,,https://www.yerevanmobile.am/en/electronics.html,89000
-yerevanmobile,Amazon Kindle Paperwhite 12 Gen/32GB,32,,https://www.yerevanmobile.am/en/electronics.html,99000
-yerevanmobile,Samsung Galaxy Tab A11 Plus WiFi (X230),,,https://www.yerevanmobile.am/en/electronics.html,109000
-yerevanmobile,Xiaomi Pad 7,,,https://www.yerevanmobile.am/en/electronics.html,159000
-yerevanmobile,Samsung Galaxy Tab S10 FE (X520),,,https://www.yerevanmobile.am/en/electronics.html,179000
-yerevanmobile,Samsung Galaxy Tab S10 FE WiFi + Cellular (X526),,,https://www.yerevanmobile.am/en/electronics.html,219000
-yerevanmobile,Xiaomi Pad 7 Pro,,,https://www.yerevanmobile.am/en/electronics.html,234000
-yerevanmobile,Apple iPad Air 11/M4/Wifi,,,https://www.yerevanmobile.am/en/electronics.html,329000
-yerevanmobile,Samsung Galaxy Tab S11 Ultra WiFi (X930),,,https://www.yerevanmobile.am/en/electronics.html,399000
-yerevanmobile,Apple iPad Air 11/M4/Wifi+Cellular,,,https://www.yerevanmobile.am/en/electronics.html,399000
-yerevanmobile,Apple iPad Air 13/M4/Wifi,,,https://www.yerevanmobile.am/en/electronics.html,439000
-yerevanmobile,Apple iPad Pro 11/M5/ WIFI,,,https://www.yerevanmobile.am/en/electronics.html,479000
-yerevanmobile,Apple iPad Air 13/M4/Wifi+Cellular,,,https://www.yerevanmobile.am/en/electronics.html,499000
-yerevanmobile,Apple Ipad Pro 11/M5/ WIFI+Cellular,,,https://www.yerevanmobile.am/en/electronics.html,559000
-yerevanmobile,Apple iPad Pro 13/M5/ WIFI,,,https://www.yerevanmobile.am/en/electronics.html,659000
-yerevanmobile,Apple Ipad Pro 13/M5/ WIFI+Cellular,,,https://www.yerevanmobile.am/en/electronics.html,659000
-yerevanmobile,Apple Macbook Neo 13"/8GB/256GB/MHFH4/Blush,256,Blush,https://www.yerevanmobile.am/en/electronics.html,309000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/256GB/MHFA4/Silver,256,Silver,https://www.yerevanmobile.am/en/electronics.html,309000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/256GB/MHFD4/Citrus,256,Citrus,https://www.yerevanmobile.am/en/electronics.html,309000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/256GB/MHFF4/Indigo,256,Indigo,https://www.yerevanmobile.am/en/electronics.html,309000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFC4/Silver,512,Silver,https://www.yerevanmobile.am/en/electronics.html,359000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFJ4/Blush,512,Blush,https://www.yerevanmobile.am/en/electronics.html,359000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFG4/Indigo,512,Indigo,https://www.yerevanmobile.am/en/electronics.html,359000
-yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFE4/Citrus,512,Citrus,https://www.yerevanmobile.am/en/electronics.html,359000
-yerevanmobile,Apple Macbook Air 15.3"/M4 /16GB RAM/256GB SSD/MC7A4/Sky Blue,256,,https://www.yerevanmobile.am/en/electronics.html,539000
-yerevanmobile,Apple Macbook Air 15.3"/M4/16GB/256GB/MW1J3/Starlight,256,Starlight,https://www.yerevanmobile.am/en/electronics.html,539000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDHE4/Midnight,512,Midnight,https://www.yerevanmobile.am/en/electronics.html,649000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDHA4/Starlight,512,Starlight,https://www.yerevanmobile.am/en/electronics.html,649000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDHH4/Sky Blue,512,Sky Blue,https://www.yerevanmobile.am/en/electronics.html,649000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDH74/Silver,512,Silver,https://www.yerevanmobile.am/en/electronics.html,649000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/1TB/MDHF4/Midnight,1024,Midnight,https://www.yerevanmobile.am/en/electronics.html,689000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/1TB/MDHJ4/Sky Blue,1024,Sky Blue,https://www.yerevanmobile.am/en/electronics.html,689000
-yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/1TB/MDH84/Silver,1024,Silver,https://www.yerevanmobile.am/en/electronics.html,689000
-yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/512GB/MDVQ4/Sky Blue,512,Sky Blue,https://www.yerevanmobile.am/en/electronics.html,709000
-yerevanmobile,Apple Macbook Air 15"/M5/16GB/512GB/MDV94/Silver,512,Silver,https://www.yerevanmobile.am/en/electronics.html,709000
-yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/512GB/MDVH4/Midnight,512,Midnight,https://www.yerevanmobile.am/en/electronics.html,709000
-yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/512GB/MDVD4/Silver,512,Silver,https://www.yerevanmobile.am/en/electronics.html,709000
-yerevanmobile,Apple Macbook Air 13.6"/M5/24GB/1TB/MDHD4/Starlight,1024,Starlight,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple Macbook Pro 14"/M5/16GB RAM/512GB/MDE04/Space Black,512,Space Black,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/1TB/MDVA4/Silver,1024,Silver,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple MacBook Air 15.3''/M5/16GB RAM/1TB/MDVE4/Starlight,1024,Starlight,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple MacBook Air 15.3''/M5/16GB RAM/1TB/MDVK4/Midnight,1024,Midnight,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple MacBook Air 15.3''/M5/16GB RAM/1TB/MDVT4/Sky Blue,1024,Sky Blue,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple Macbook Air 13.6"/M5/24GB/1TB/MDHK4/Sky Blue,1024,Sky Blue,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple Macbook Pro 14.2"/M5/16GB RAM/512GB/MDE44/Silver,512,Silver,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple Macbook Air 13.6"/M5/24GB/1TB/MDH94/Silver,1024,Silver,https://www.yerevanmobile.am/en/electronics.html,849000
-yerevanmobile,Apple Macbook Pro 14"/M5/16GB RAM/1TB/MDE14/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/electronics.html,879000
-yerevanmobile,Apple MacBook Air 15.3''/M5/24GB RAM/1TB/MDVF4/Starlight,1024,Starlight,https://www.yerevanmobile.am/en/electronics.html,919000
-yerevanmobile,Apple MacBook Air 15''/M5/24GB RAM/1TB/MDVN4/Midnight,1024,Midnight,https://www.yerevanmobile.am/en/electronics.html,919000
-yerevanmobile,Apple MacBook Air 15.3''/M5/24GB RAM/1TB/MDVU4/Sky Blue,1024,Sky Blue,https://www.yerevanmobile.am/en/electronics.html,919000
-yerevanmobile,Apple Macbook Pro 14.2"/M5/24GB RAM/1TB/MDE34/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/electronics.html,989000
-yerevanmobile,Apple Macbook Pro 14.2"/M5 Pro/24GB RAM/1TB/MGDN4/Silver,1024,Silver,https://www.yerevanmobile.am/en/electronics.html,1159000
-yerevanmobile,Apple Macbook Pro 14"/M5 Pro/24GB RAM/1TB/MGDR4/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/electronics.html,1159000
-yerevanmobile,Apple Macbook Pro 14"/M5 Pro/24GB RAM/2TB/MGDT4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/electronics.html,1399000
-yerevanmobile,Apple Macbook Pro 16.2"M5 Pro"/48GB/1TB/MGE64/Silver,1024,Silver,https://www.yerevanmobile.am/en/electronics.html,1629000
-yerevanmobile,Apple Macbook Pro 16.2"/M5 Pro/48GB RAM/1TB/MGEC4/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/electronics.html,1629000
-yerevanmobile,Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGE74/Silver,2048,Silver,https://www.yerevanmobile.am/en/electronics.html,1809000
-yerevanmobile,Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGED4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/electronics.html,1809000
-yerevanmobile,Apple Macbook Pro 14"/M5 Max/36GB RAM/2TB/MGDU4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/electronics.html,1859000
-yerevanmobile,Apple Macbook Pro 14.2"/M5 Max/36GB RAM/2TB/MGDQ4/Silver,2048,Silver,https://www.yerevanmobile.am/en/electronics.html,1859000
-yerevanmobile,Apple Macbook Pro 16"/M5 Max/48GB RAM/2TB/MGE94/Silver,2048,Silver,https://www.yerevanmobile.am/en/electronics.html,2109000
-yerevanmobile,Apple MacBook Pro 16''/M5 Max/48GB RAM/2TB/MGEE4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/electronics.html,2109000
-yerevanmobile,Xiaomi Smart Band 10,,,https://www.yerevanmobile.am/en/electronics.html,23000
-yerevanmobile,Samsung Galaxy Watch 8 40mm,,,https://www.yerevanmobile.am/en/electronics.html,84000
-yerevanmobile,Samsung Galaxy Watch8 44mm,,,https://www.yerevanmobile.am/en/electronics.html,99000
-yerevanmobile,Apple Watch SE 3 40mm,,,https://www.yerevanmobile.am/en/electronics.html,112000
-yerevanmobile,Apple Watch SE 3 44mm,,,https://www.yerevanmobile.am/en/electronics.html,122000
-yerevanmobile,Samsung Galaxy Watch8 Classic 46mm,,,https://www.yerevanmobile.am/en/electronics.html,129000
-yerevanmobile,Apple Watch Series 11 42mm,,,https://www.yerevanmobile.am/en/electronics.html,155000
-yerevanmobile,Apple Watch Series 11 46mm,,,https://www.yerevanmobile.am/en/electronics.html,165000
-yerevanmobile,Samsung Galaxy Watch Ultra2,,,https://www.yerevanmobile.am/en/electronics.html,239000
-yerevanmobile,Apple Watch Ultra 3,,,https://www.yerevanmobile.am/en/electronics.html,319000
-yerevanmobile,Sony WH-CH520,,,https://www.yerevanmobile.am/en/electronics.html,19000
-yerevanmobile,Samsung Galaxy Buds 4,,,https://www.yerevanmobile.am/en/electronics.html,52000
-yerevanmobile,Apple Airpods 4,,,https://www.yerevanmobile.am/en/electronics.html,54000
-yerevanmobile,Samsung Galaxy Buds 3 Pro,,,https://www.yerevanmobile.am/en/electronics.html,62000
-yerevanmobile,Samsung Galaxy Buds 4 Pro,,,https://www.yerevanmobile.am/en/electronics.html,72000
-yerevanmobile,Apple Beats Studio Buds Plus,,,https://www.yerevanmobile.am/en/electronics.html,74000
-yerevanmobile,Apple Airpods 4 (Active NC),,,https://www.yerevanmobile.am/en/electronics.html,77000
-yerevanmobile,Apple AirPods Pro 2 (Type-C),,,https://www.yerevanmobile.am/en/electronics.html,84000
-yerevanmobile,Apple AirPods Pro 3,,,https://www.yerevanmobile.am/en/electronics.html,99000
-yerevanmobile,Apple AirPods Max (Type-C),,,https://www.yerevanmobile.am/en/electronics.html,169000
-yerevanmobile,Sony WH-1000XM6,,,https://www.yerevanmobile.am/en/electronics.html,179000
-yerevanmobile,Apple AirPods Max 2,,,https://www.yerevanmobile.am/en/electronics.html,239000
-notebookcentre,HP 15-fd0113dx (C0CM1UA),,,https://notebookcentre.am/en/category/notebooks?sort=low,179000
-notebookcentre,Asus VivoBook X1404VA-I38128,,,https://notebookcentre.am/en/category/notebooks?sort=low,199000
-notebookcentre,HP 15-fd0531nia (B82HWEA/8),,,https://notebookcentre.am/en/category/notebooks?sort=low,229000
-notebookcentre,Lenovo LOQ 15IRX9 (83DV00FMRK),,,https://notebookcentre.am/en/category/notebooks?sort=low&page=4,449000
-notebookcentre,HP OmniBook 3 17-dg0107dx  (D7NF3UA),,,https://notebookcentre.am/en/category/notebooks?sort=low&page=4,465000
-notebookcentre,Asus ROG Strix G16 G614JU-N3193,,,https://notebookcentre.am/en/category/notebooks?sort=low&page=4,515000
-notebookcentre,MacBook Pro 14 M5 MDE04 Space Black (2025),,Space Black,https://notebookcentre.am/en/category/notebooks?sort=low&page=5,849000
-notebookcentre,MacBook Pro 14 M5 MDE44 Silver (2025),,Silver,https://notebookcentre.am/en/category/notebooks?sort=low&page=5,849000
-notebookcentre,MacBook Pro 14 M5 MDE54 Silver (2025),,Silver,https://notebookcentre.am/en/category/notebooks?sort=low&page=5,879000
-notebookcentre,MacBook Pro 14 M4 Pro MX2E3 Silver (2024),,Silver,https://notebookcentre.am/en/category/notebooks?sort=low&page=5,989000
-notebookcentre,MacBook Pro 14 M5 MDE34 Space Black (2025),,Space Black,https://notebookcentre.am/en/category/notebooks?sort=low&page=6,989000
-notebookcentre,MacBook Pro 14 M5 MDE64 Silver (2025),,Silver,https://notebookcentre.am/en/category/notebooks?sort=low&page=6,989000
-notebookcentre,MacBook Pro 14 M4 Pro MX2J3 (2024) Space Black,,Space Black,https://notebookcentre.am/en/category/notebooks?sort=low&page=6,1099000
-notebookcentre,MacBook Pro 14 M5 Pro MGDR4 (2026),,,https://notebookcentre.am/en/category/notebooks?sort=low&page=6,1209000
-notebookcentre,MacBook Pro 14 M5 Pro MGDN4 Silver (2026),,Silver,https://notebookcentre.am/en/category/notebooks?sort=low&page=6,1249000
-notebookcentre,MacBook Pro 16 M5 Max MGEE4 (2026) Space Black,,Space Black,https://notebookcentre.am/en/category/notebooks?sort=low&page=6,2209000
-notebookcentre,HP 15-fd0250wm (BY0S6UA),,,https://notebookcentre.am/en/category/notebooks?sort=low&page=2,259000
-notebookcentre,HP 15-fd0250wm (BY0S6UA/16),,,https://notebookcentre.am/en/category/notebooks?sort=low&page=2,289000
-notebookcentre,Samsung Galaxy A26,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,109000
-notebookcentre,Xiaomi Redmi Note 15 Pro,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,134900
-notebookcentre,Xiaomi Redmi Note 15 Pro Titanium Gray / 256 GB,256,Titanium,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,134900
-notebookcentre,Xiaomi Redmi Note 15 Pro Black / 256 GB,256,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,134900
-notebookcentre,Samsung Galaxy A37 Awesome Lavender / 8 GB / 128 GB,128,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Samsung Galaxy A56 Graphite / 8 GB / 128 GB,128,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Samsung Galaxy A37 Awesome White / 8 GB / 128 GB,128,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Samsung Galaxy A37 Awesome Charcoal / 8 GB / 128 GB,128,Awesome Charcoal,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Samsung Galaxy A56 Olive / 8 GB / 128 GB,128,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Samsung Galaxy A37,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Samsung Galaxy A56 Pink / 8 GB / 128 GB,128,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=2,149000
-notebookcentre,Xiaomi Redmi Note 15 Pro Titanium Gray / 512 GB,512,Titanium,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,152900
-notebookcentre,Xiaomi Redmi Note 15 Pro Black / 512 GB,512,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,152900
-notebookcentre,Xiaomi Redmi Note 15 Pro Glacier Blue / 512 GB,512,Glacier Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,152900
-notebookcentre,Samsung Galaxy A56,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,159000
-notebookcentre,Samsung Galaxy A37 Awesome Lavender / 8 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,165000
-notebookcentre,Samsung Galaxy A37 Awesome White / 8 GB / 256 GB,256,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,165000
-notebookcentre,Samsung Galaxy A37 Awesome Graygreen / 8 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,165000
-notebookcentre,Samsung Galaxy A57 Awesome Navy / 128 GB / 8 GB,128,Awesome Navy,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A57 Awesome Icyblue / 128 GB / 8 GB,128,Awesome Icyblue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A57,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A56 Lightgray / 8 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A56 Graphite / 8 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A56 Olive / 8 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A57 Awesome Gray / 128 GB / 8 GB,128,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=3,169000
-notebookcentre,Samsung Galaxy A56 Pink / 8 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,169000
-notebookcentre,Samsung Galaxy A37 Awesome Charcoal / 8 GB / 256 GB,256,Awesome Charcoal,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,179000
-notebookcentre,Samsung Galaxy A57 Awesome Lilac / 256 GB / 8 GB,256,Awesome Lilac,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A57 Awesome Gray / 256 GB / 8 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A57 Awesome Navy / 256 GB / 8 GB,256,Awesome Navy,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A57 Awesome Icyblue / 256 GB / 8 GB,256,Awesome Icyblue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A56 Graphite / 12 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A56 Lightgrey / 12 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A56 Olive / 12 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,Samsung Galaxy A56 Pink / 12 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=4,189000
-notebookcentre,iPhone 16,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,305000
-notebookcentre,iPhone 16 Ultramarine / 128 GB,128,Ultramarine,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,305000
-notebookcentre,iPhone 16 Pink / 128 GB,128,Pink,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,305000
-notebookcentre,iPhone 16 White / 128 GB,128,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,305000
-notebookcentre,iPhone 16 Black / 128 GB,128,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,305000
-notebookcentre,Samsung Galaxy S25 Edge,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,319000
-notebookcentre,Samsung Galaxy S26 Pink Gold / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,319000
-notebookcentre,Samsung Galaxy S26 Sky Blue / 256 GB,256,Sky Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,319000
-notebookcentre,Samsung Galaxy S26 Silver Shadow / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,319000
-notebookcentre,Samsung Galaxy S26 Cobalt Violet / 256 GB,256,Cobalt Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,319000
-notebookcentre,Xiaomi 17T Pro,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,327900
-notebookcentre,Xiaomi 17T Pro Deep Blue,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,327900
-notebookcentre,Samsung Galaxy S26,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,329000
-notebookcentre,iPhone 16 Teal / 256 GB,256,Teal,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,345000
-notebookcentre,iPhone 16 Black / 256 GB,256,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,345000
-notebookcentre,iPhone 16 White / 256 GB,256,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,345000
-notebookcentre,iPhone 16 Ultramarine / 256 GB,256,Ultramarine,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,345000
-notebookcentre,iPhone 16 Pink / 256 GB,256,Pink,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,345000
-notebookcentre,Xiaomi 17T Pro Deep Violet,,Deep Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=5,346900
-notebookcentre,Xiaomi 17T Pro Black,,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,346900
-notebookcentre,Samsung Galaxy S26+,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,349000
-notebookcentre,Samsung Galaxy S26+ Sky Blue / 256 GB,256,Sky Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,349000
-notebookcentre,Samsung Galaxy Z Flip 7,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy Z Flip 7 Jet Black / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 Pink Gold / 512 GB,512,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 Cobalt Violet / 512 GB,512,Cobalt Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 Black / 512 GB,512,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 Sky Blue / 512 GB,512,Sky Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 Silver Shadow / 512 GB,512,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 White / 512 GB,512,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,359000
-notebookcentre,Samsung Galaxy S26 Ultra,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,379000
-notebookcentre,Samsung Galaxy S26 Ultra Black / 12 GB / 256 GB,256,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,379000
-notebookcentre,Samsung Galaxy S26 Ultra White / 12 GB / 256 GB,256,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,379000
-notebookcentre,Samsung Galaxy S26 Ultra Cobalt Violet / 12 GB / 256 GB,256,Cobalt Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,379000
-notebookcentre,Samsung Galaxy S26 Ultra Silver Shadow / 12 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,379000
-notebookcentre,Samsung Galaxy S26 Ultra Pink Gold / 12 GB / 256 GB,256,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,379000
-notebookcentre,Samsung Galaxy S25 Edge Titanium Jetblack / 512 GB,512,Titanium Jetblack,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,389000
-notebookcentre,Samsung Galaxy S26+ Sky Blue / 512 GB,512,Sky Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=6,389000
-notebookcentre,Samsung Galaxy S26+ Cobalt Violet / 512 GB,512,Cobalt Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,389000
-notebookcentre,Samsung Galaxy S26+ White / 512 GB,512,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,389000
-notebookcentre,iPhone Air,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,395000
-notebookcentre,iPhone Air Space Black / eSim / 256 GB,256,Space Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,395000
-notebookcentre,iPhone Air Light Gold / eSim / 256 GB,256,Light Gold,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,395000
-notebookcentre,iPhone Air Cloud White / eSim / 256 GB,256,Cloud White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,395000
-notebookcentre,iPad Air 11 M4 WiFi + Cellular,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,399000
-notebookcentre,Samsung Galaxy Z Flip 7 Jet Black / 512 GB,512,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,404000
-notebookcentre,Samsung Galaxy Z Flip 7 Blue Shadow / 512 GB,512,Blue Shadow,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,404000
-notebookcentre,iPhone 17,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,429000
-notebookcentre,iPhone 17 White / Nano-SIM / 256 GB,256,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,429000
-notebookcentre,iPhone 17 Sage / Nano-SIM / 256 GB,256,Sage,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,429000
-notebookcentre,iPhone 17 Mist Blue / Nano-SIM / 256 GB,256,Mist Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,429000
-notebookcentre,iPhone 17 Lavender / Nano-SIM / 256 GB,256,Lavender,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,429000
-notebookcentre,iPhone 17 Black / Nano-SIM / 256 GB,256,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,429000
-notebookcentre,iPhone Air Space Black / eSim / 512 GB,512,Space Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,449000
-notebookcentre,Samsung Galaxy S26 Ultra Pink Gold / 12 GB / 512 GB,512,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=7,469000
-notebookcentre,Samsung Galaxy S26 Ultra Black / 12 GB / 512 GB,512,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,469000
-notebookcentre,Samsung Galaxy S26 Ultra White / 12 GB / 512 GB,512,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,469000
-notebookcentre,Samsung Galaxy S26 Ultra Cobalt Violet / 12 GB / 512 GB,512,Cobalt Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,469000
-notebookcentre,Samsung Galaxy S26 Ultra Sky Blue / 12 GB / 512 GB,512,Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,469000
-notebookcentre,Samsung Galaxy S26 Ultra Silver Shadow / 12 GB / 512 GB,512,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,469000
-notebookcentre,iPhone 17 Pro,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,488000
-notebookcentre,iPhone 17 Pro Silver / eSim / 256 GB,256,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,488000
-notebookcentre,iPhone 17 Pro Deep Blue / eSim / 256 GB,256,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,488000
-notebookcentre,iPhone 17 Pro Silver / Nano-SIM / 256 GB,256,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,519000
-notebookcentre,iPhone 17 Pro Deep Blue / Nano-SIM / 256 GB,256,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,519000
-notebookcentre,iPhone 17 Pro Cosmic Orange / Nano-SIM / 256 GB,256,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,519000
-notebookcentre,iPhone 17 Pro Max,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,525000
-notebookcentre,iPhone 17 Pro Max Silver / eSIm / 256 GB,256,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,525000
-notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 256 GB,256,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,525000
-notebookcentre,Samsung Galaxy Z Fold 7,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,539000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 256 GB,256,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=8,569000
-notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 256 GB,256,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,569000
-notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 256 GB,256,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,569000
-notebookcentre,iPhone 17 Pro Silver / eSim / 512 GB,512,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,588000
-notebookcentre,iPhone 17 Pro Cosmic Orange / eSim / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,588000
-notebookcentre,iPhone 17 Pro Deep Blue / eSim / 512 GB,512,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,588000
-notebookcentre,iPhone 17 Pro Deep Blue / Nano-SIM / 512 GB,512,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,618000
-notebookcentre,iPhone 17 Pro Cosmic Orange / Nano-SIM / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,618000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / eSim / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,625000
-notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 512 GB,512,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,625000
-notebookcentre,iPhone 17 Pro Max Silver / eSim / 512 GB,512,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,625000
-notebookcentre,Samsung Galaxy S26 Ultra Sky Blue / 16 GB / 1 TB,1024,Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,629000
-notebookcentre,Samsung Galaxy S26 Ultra White / 16 GB / 1 TB,1024,White,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,629000
-notebookcentre,Samsung Galaxy S26 Ultra Black / 16 GB / 1 TB,1024,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,629000
-notebookcentre,Samsung Galaxy S26 Ultra Silver Shadow / 16 GB / 1 TB,1024,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,629000
-notebookcentre,Samsung Galaxy S26 Ultra Cobalt Violet / 16 GB / 1 TB,1024,Cobalt Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,629000
-notebookcentre,Samsung Galaxy S26 Ultra Pink Gold / 16 GB / 1 TB,1024,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,629000
-notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 512 GB,512,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,668000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,668000
-notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 512 GB,512,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=9,668000
-notebookcentre,iPhone 17 Pro Silver / eSim / 1 TB,1024,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,685000
-notebookcentre,iPhone 17 Pro Deep Blue / eSim / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,685000
-notebookcentre,iPhone 17 Pro Cosmic Orange / eSim / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,685000
-notebookcentre,iPhone 17 Pro Max Silver / eSim / 1 TB,1024,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,715000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / eSim / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,715000
-notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,715000
-notebookcentre,iPhone 17 Pro Silver / Nano-SIM / 1 TB,1024,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,717000
-notebookcentre,iPhone 17 Pro Deep Blue / Nano-SIM / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,717000
-notebookcentre,iPhone 17 Pro Cosmic Orange / Nano-SIM / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,717000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,765000
-notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,765000
-notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 1 TB,1024,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,765000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / eSim / 2 TB,2048,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,839000
-notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 2 TB,2048,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,839000
-notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 2 TB,2048,Cosmic Orange,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,958000
-notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 2 TB,2048,Deep Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,958000
-notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 2 TB,2048,Silver,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock&page=10,959000
-notebookcentre,Samsung Galaxy A07,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,52000
-notebookcentre,Samsung Galaxy A07 Light Violet / 64 GB,64,Light Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,52000
-notebookcentre,Xiaomi Poco C85 Black / 6 GB / 128 GB,128,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,57000
-notebookcentre,Xiaomi Poco C85,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,58000
-notebookcentre,Samsung Galaxy A07 Light Violet / 128 GB,128,Light Violet,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,58000
-notebookcentre,Xiaomi Poco C85 Power Black / 8 GB / 256 GB,256,Black,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,69000
-notebookcentre,Xiaomi Poco C85 Spring Green / 8 GB / 256 GB,256,Green,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,69000
-notebookcentre,Samsung Galaxy A17,,,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,72000
-notebookcentre,Samsung Galaxy A17 Light Blue,,Blue,https://notebookcentre.am/en/category/smartphones?brand=19&brand=20&brand=24&brand=40&brand=243&sort=low&product_status=in_stock,72000
-notebookcentre,iPad 11 A16 (2025) WiFi + Cellular Pink / 128 GB,128,Pink,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,239000
-notebookcentre,iPad Air 11 M4 WiFi Blue / 128 GB,128,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,319000
-notebookcentre,iPad Air 11 M4 WiFi Purple / 128 GB,128,Purple,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,319000
-notebookcentre,iPad Air 11 M4 WiFi Starlight / 128 GB,128,Starlight,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,319000
-notebookcentre,iPad Air 11 M4 WiFi Starlight / 256 GB,256,Starlight,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,399000
-notebookcentre,iPad Air 11 M4 WiFi Blue / 256 GB,256,Blue,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,399000
-notebookcentre,iPad Air 11 M4 WiFi Purple / 256 GB,256,Purple,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,399000
-notebookcentre,iPad Air 11 M4 WiFi Space Gray / 256 GB,256,Space Gray,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,399000
-notebookcentre,iPad Air 13 M4 WiFi Starlight / 128 GB,128,Starlight,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,439000
-notebookcentre,iPad Air 13 M4 WiFi Space Gray / 128 GB,128,Space Gray,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=2,439000
-notebookcentre,iPad Pro 13 M5 WiFi + Cellular Silver / 256 GB,256,Silver,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=4,695000
-notebookcentre,iPad Pro 13 M5 WiFi Silver / 512 GB,512,Silver,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=4,695000
-notebookcentre,iPad Pro 13 M5 WiFi Space Black / 512 GB,512,Space Black,https://notebookcentre.am/en/category/tablets?brand=19&brand=24&brand=40&brand=20&brand=240&sort=low&product_status=in_stock&page=4,695000
+yerevanmobile,Samsung Galaxy Tab A11 WiFi (X133),,,https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-wifi-x133.html,54000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Tab A11 WiFi +5G (X135G),,,https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-wifi-5g-x135g.html,69000,,,2026-09-20
+yerevanmobile,Amazon Kindle Kids Paperwhite 11 Gen,,,https://www.yerevanmobile.am/en/amazon-kindle-kids-paperwhite-11-gen.html,75000,,,2026-09-20
+yerevanmobile,Amazon Kindle Paperwhite 12 Gen/32GB,32,,https://www.yerevanmobile.am/en/amazon-kindle-paperwhite-12-gen-32gb.html,99000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Tab A11 Plus WiFi (X230),,,https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-plus-wifi-x230.html,109000,,,2026-09-20
+yerevanmobile,Xiaomi Pad 7,,,https://www.yerevanmobile.am/en/xiaomi-pad-7.html,159000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Tab S10 FE (X520),,,https://www.yerevanmobile.am/en/samsung-galaxy-tab-s10-fe-x520.html,179000,,,2026-09-20
+yerevanmobile,Xiaomi Pad 7 Pro,,,https://www.yerevanmobile.am/en/xiaomi-pad-7-pro.html,234000,,,2026-09-20
+yerevanmobile,Apple iPad Air 11/M4/Wifi,,,https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi.html,329000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Tab S11 Ultra WiFi (X930),,,https://www.yerevanmobile.am/en/samsung-galaxy-tab-s11-ultra-wifi-x930.html,399000,,,2026-09-20
+yerevanmobile,Apple iPad Air 11/M4/Wifi+Cellular,,,https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi-cellular.html,399000,,,2026-09-20
+yerevanmobile,Apple iPad Air 13/M4/Wifi,,,https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi.html,439000,,,2026-09-20
+yerevanmobile,Apple iPad Pro 11/M5/ WIFI,,,https://www.yerevanmobile.am/en/apple-ipad-pro-11-m5-wifi.html,479000,,,2026-09-20
+yerevanmobile,Apple iPad Air 13/M4/Wifi+Cellular,,,https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi-cellular.html,499000,,,2026-09-20
+yerevanmobile,Apple Ipad Pro 11/M5/ WIFI+Cellular,,,https://www.yerevanmobile.am/en/apple-ipad-pro-11-m5-wifi-cellular.html,559000,,,2026-09-20
+yerevanmobile,Apple iPad Pro 13/M5/ WIFI,,,https://www.yerevanmobile.am/en/apple-ipad-pro-13-m5-wifi.html,659000,,,2026-09-20
+yerevanmobile,Apple Ipad Pro 13/M5/ WIFI+Cellular,,,https://www.yerevanmobile.am/en/apple-ipad-pro-13-m5-wifi-cellular.html,659000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13"/8GB/256GB/MHFH4/Blush,256,Blush,https://www.yerevanmobile.am/en/apple-macbook-neo-13-8gb-256gb-mhfh4-blush.html,319000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/256GB/MHFA4/Silver,256,Silver,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-256gb-mhfa4-silver.html,319000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/256GB/MHFD4/Citrus,256,Citrus,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-256gb-mhfd4-citrus.html,319000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/256GB/MHFF4/Indigo,256,Indigo,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-256gb-mhff4-indigo.html,319000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFC4/Silver,512,Silver,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfc4-silver.html,369000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFJ4/Blush,512,Blush,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfj4-blush.html,369000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFG4/Indigo,512,Indigo,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfg4-indigo.html,369000,,,2026-09-20
+yerevanmobile,Apple Macbook Neo 13.0"/8GB/512GB/MHFE4/Citrus,512,Citrus,https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfe4-citrus.html,369000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDHE4/Midnight,512,Midnight,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdhe4-midnight.html,649000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDHA4/Starlight,512,Starlight,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdha4-starlight.html,649000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDHH4/Sky Blue,512,Sky Blue,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdhh4-sky-blue.html,649000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/512GB/MDH74/Silver,512,Silver,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdh74-silver.html,649000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/1TB/MDHF4/Midnight,1024,Midnight,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-1tb-mdhf4-midnight.html,689000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/1TB/MDHJ4/Sky Blue,1024,Sky Blue,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-1tb-mdhj4-sky-blue.html,689000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/16GB/1TB/MDH84/Silver,1024,Silver,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-1tb-mdh84-silver.html,689000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/512GB/MDVQ4/Sky Blue,512,Sky Blue,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-512gb-mdvq4-sky-blue.html,709000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 15"/M5/16GB/512GB/MDV94/Silver,512,Silver,https://www.yerevanmobile.am/en/apple-macbook-air-15-m5-16gb-512gb-mdv94-silver.html,709000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/512GB/MDVH4/Midnight,512,Midnight,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-512gb-mdvh4-midnight.html,709000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/512GB/MDVD4/Silver,512,Silver,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-512gb-mdvd4-silver.html,709000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/24GB/1TB/MDHD4/Starlight,1024,Starlight,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-24gb-1tb-mdhd4-starlight.html,849000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14"/M5/16GB RAM/512GB/MDE04/Space Black,512,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-14-m5-16gb-ram-512gb-mde04-space-black.html,849000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 15.3"/M5/16GB/1TB/MDVA4/Silver,1024,Silver,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-1tb-mdva4-silver.html,849000,,,2026-09-20
+yerevanmobile,Apple MacBook Air 15.3''/M5/16GB RAM/1TB/MDVE4/Starlight,1024,Starlight,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-ram-1tb-mdve4-starlight.html,849000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14.2"/M5/16GB RAM/512GB/MDE44/Silver,512,Silver,https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-16gb-ram-512gb-mde44-silver.html,849000,,,2026-09-20
+yerevanmobile,Apple Macbook Air 13.6"/M5/24GB/1TB/MDH94/Silver,1024,Silver,https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-24gb-1tb-mdh94-silver.html,849000,,,2026-09-20
+yerevanmobile,Apple MacBook Air 15.3''/M5/24GB RAM/1TB/MDVF4/Starlight,1024,Starlight,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-24gb-ram-1tb-mdvf4-starlight.html,919000,,,2026-09-20
+yerevanmobile,Apple MacBook Air 15''/M5/24GB RAM/1TB/MDVN4/Midnight,1024,Midnight,https://www.yerevanmobile.am/en/apple-macbook-air-15-m5-24gb-ram-1tb-mdvn4-midnight.html,919000,,,2026-09-20
+yerevanmobile,Apple MacBook Air 15.3''/M5/24GB RAM/1TB/MDVU4/Sky Blue,1024,Sky Blue,https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-24gb-ram-1tb-mdvu4-sky-blue.html,919000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14.2"/M5/24GB RAM/1TB/MDE34/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-24gb-ram-1tb-mde34-space-black.html,989000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14.2"/M5 Pro/24GB RAM/1TB/MGDN4/Silver,1024,Silver,https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-pro-24gb-ram-1tb-mgdn4-silver.html,1159000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14"/M5 Pro/24GB RAM/1TB/MGDR4/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-14-m5-pro-24gb-ram-1tb-mgdr4-space-black.html,1159000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14"/M5 Pro/24GB RAM/2TB/MGDT4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-14-m5-pro-24gb-ram-2tb-mgdt4-space-black.html,1399000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 16.2"M5 Pro"/48GB/1TB/MGE64/Silver,1024,Silver,https://www.yerevanmobile.am/en/apple-macbook-pro-16-2-m5-pro-48gb-1tb-mge64-silver.html,1629000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 16.2"/M5 Pro/48GB RAM/1TB/MGEC4/Space Black,1024,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-16-2-m5-pro-48gb-ram-1tb-mgec4-space-black.html,1629000,,,2026-09-20
+yerevanmobile,Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGE74/Silver,2048,Silver,https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-36gb-ram-2tb-mge74-silver.html,1809000,,,2026-09-20
+yerevanmobile,Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGED4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-36gb-ram-2tb-mged4-space-black.html,1809000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14"/M5 Max/36GB RAM/2TB/MGDU4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-14-m5-max-36gb-ram-2tb-mgdu4-space-black.html,1859000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 14.2"/M5 Max/36GB RAM/2TB/MGDQ4/Silver,2048,Silver,https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-max-36gb-ram-2tb-mgdq4-silver.html,1859000,,,2026-09-20
+yerevanmobile,Apple Macbook Pro 16"/M5 Max/48GB RAM/2TB/MGE94/Silver,2048,Silver,https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-48gb-ram-2tb-mge94-silver.html,2109000,,,2026-09-20
+yerevanmobile,Apple MacBook Pro 16''/M5 Max/48GB RAM/2TB/MGEE4/Space Black,2048,Space Black,https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-48gb-ram-2tb-mgee4-space-black.html,2109000,,,2026-09-20
+yerevanmobile,Xiaomi Smart Band 10,,,https://www.yerevanmobile.am/en/xiaomi-smart-band-10.html,23000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Watch 8 40mm,,,https://www.yerevanmobile.am/en/samsung-galaxy-watch-8-40mm.html,84000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Watch8 44mm,,,https://www.yerevanmobile.am/en/samsung-galaxy-watch8-44mm.html,99000,,,2026-09-20
+yerevanmobile,Apple Watch SE 3 40mm,,,https://www.yerevanmobile.am/en/apple-watch-se-3-40mm.html,112000,,,2026-09-20
+yerevanmobile,Apple Watch SE 3 44mm,,,https://www.yerevanmobile.am/en/apple-watch-se-3-44mm.html,122000,,,2026-09-20
+yerevanmobile,Apple Watch Series 11 42mm,,,https://www.yerevanmobile.am/en/apple-watch-series-11-42mm.html,155000,,,2026-09-20
+yerevanmobile,Apple Watch Series 11 46mm,,,https://www.yerevanmobile.am/en/apple-watch-series-11-46mm.html,165000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Watch Ultra2,,,https://www.yerevanmobile.am/en/samsung-galaxy-watch-ultra2.html,239000,,,2026-09-20
+yerevanmobile,Apple Watch Ultra 3,,,https://www.yerevanmobile.am/en/apple-watch-ultra-3.html,319000,,,2026-09-20
+yerevanmobile,Sony WH-CH520,,,https://www.yerevanmobile.am/en/sony-wh-ch520.html,19000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Buds 4,,,https://www.yerevanmobile.am/en/samsung-galaxy-buds-4.html,52000,,,2026-09-20
+yerevanmobile,Apple Airpods 4,,,https://www.yerevanmobile.am/en/apple-airpods-4.html,52000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Buds 3 Pro,,,https://www.yerevanmobile.am/en/samsung-galaxy-buds-3-pro.html,62000,,,2026-09-20
+yerevanmobile,Samsung Galaxy Buds 4 Pro,,,https://www.yerevanmobile.am/en/samsung-galaxy-buds-4-pro.html,72000,,,2026-09-20
+yerevanmobile,Apple Beats Studio Buds Plus,,,https://www.yerevanmobile.am/en/apple-beats-studio-buds-plus.html,74000,,,2026-09-20
+yerevanmobile,Apple Airpods 4 (Active NC),,,https://www.yerevanmobile.am/en/apple-airpods-4-active-nc.html,77000,,,2026-09-20
+yerevanmobile,Apple AirPods Pro 2 (Type-C),,,https://www.yerevanmobile.am/en/apple-airpods-pro-2-type-c.html,84000,,,2026-09-20
+yerevanmobile,Apple AirPods Pro 3,,,https://www.yerevanmobile.am/en/apple-airpods-pro-3.html,99000,,,2026-09-20
+yerevanmobile,Sony WH-1000XM6,,,https://www.yerevanmobile.am/en/sony-wh-1000xm6.html,179000,,,2026-09-20
+yerevanmobile,Apple AirPods Max 2,,,https://www.yerevanmobile.am/en/apple-airpods-max-2.html,239000,,,2026-09-20
 ibolit,Apple AirPods Pro 2  USB-C,,,https://ibolit.mobi/product/apple-airpods-pro-2-usb-c/,83900
 ibolit,TWS Bluetooth Headsets Apple AirPods Pro 2nd Generation  USB-C,,,https://ibolit.mobi/product/tws-bluetooth-headsets-apple-airpods-pro-2nd-generation-usb-c/,94000
 ibolit,Apple Watch Series 10 42mm  Silver,,Silver,https://ibolit.mobi/product/apple-watch-series-10-42mm-silver/,159000
@@ -1012,17 +737,17 @@ istyle,Marshall Willen,,,https://istyle.am/en/product/Marshall%20Willen%09,55900
 ibolit,Marshall Willen Cream,,,https://ibolit.mobi/product/marshall-willen-cream/,54000
 ibolit,Marshall Willen Black,,,https://ibolit.mobi/product/marshall-willen-black/,54000
 pixel,Xiaomi Redmi 17,,,https://www.pixel.am/am/product/xiaomi-redmi-17,79000
-eldorado,Սմարթֆոն Xiaomi Redmi 17 8/256GB Deep Blue RU (2606FRN72Y),256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,114900
-eldorado,Սմարթֆոն Xiaomi Redmi 17 8/256GB Black RU (2606FRN72Y),256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,114900
-eldorado,Սմարթֆոն Xiaomi Redmi 17 8/256GB Oak Green RU (2606FRN72Y),256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,114900
+eldorado,Սմարթֆոն Xiaomi Redmi 17 8/256GB Deep Blue RU (2606FRN72Y),256,,https://eldorado.am/en/xiaomi-redmi-17-8-256gb-deep-blue-ru-2606frn72y,114900,,,2026-09-20
+eldorado,Սմարթֆոն Xiaomi Redmi 17 8/256GB Black RU (2606FRN72Y),256,,https://eldorado.am/en/xiaomi-redmi-17-8-256gb-black-ru-2606frn72y,114900,,,2026-09-20
+eldorado,Սմարթֆոն Xiaomi Redmi 17 8/256GB Oak Green RU (2606FRN72Y),256,,https://eldorado.am/en/xiaomi-redmi-17-8-256gb-oak-green-ru-2606frn72y,114900,,,2026-09-20
 pixel,Xiaomi Redmi Note 17 5G,,,https://www.pixel.am/am/product/xiaomi-redmi-note-17-5g,119000
 eldorado,Սմարթֆոն Xiaomi Redmi Note 17 5G 6/128GB Black EU (26081RA18G),128,,https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple,97900
-zigzag,Xiaomi Redmi Note 17 5G 6GB/128GB Black,6,,,97900
+zigzag,Xiaomi Redmi Note 17 5G 6GB/128GB Black,6,,https://www.zigzag.am/am/xiaomi-redmi-note-17-5g-6gb-128gb-black.html,97900,,,2026-09-20
 pixel,Whoop Life (MG),,,https://www.pixel.am/am/product/whoop-life-mg,189000
 pixel,Honor X7E,,,https://www.pixel.am/am/product/honor-x7e,95000
-eldorado,Սմարթֆոն Honor X7e 6/256GB Midnight Black (LAB-LX1),256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,89900
-eldorado,Սմարթֆոն Honor X7e 6/256GB Sunrise Orange (LAB-LX1),256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,89900
-eldorado,Սմարթֆոն Honor X7e 6/256GB Light Blue (LAB-LX1),256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,89900
+eldorado,Սմարթֆոն Honor X7e 6/256GB Midnight Black (LAB-LX1),256,,https://eldorado.am/en/honor-x7e-6-256gb-midnight-black-lab-lx1,89900,,,2026-09-20
+eldorado,Սմարթֆոն Honor X7e 6/256GB Sunrise Orange (LAB-LX1),256,,https://eldorado.am/en/honor-x7e-6-256gb-sunrise-orange-lab-lx1,89900,,,2026-09-20
+eldorado,Սմարթֆոն Honor X7e 6/256GB Light Blue (LAB-LX1),256,,https://eldorado.am/en/honor-x7e-6-256gb-light-blue-lab-lx1,89900,,,2026-09-20
 zigzag,Honor X7e 6GB/256GB Light Blue,6,,https://www.zigzag.am/am/honor-x7e-6gb-256gb-light-blue.html,89900
 zigzag,Honor X7e 6GB/256GB Midnight Black,6,,https://www.zigzag.am/am/honor-x7e-6gb-256gb-midnight-black.html,89900
 zigzag,Honor X7e 6GB/256GB Sunrise Orange,6,,https://www.zigzag.am/am/honor-x7e-6gb-256gb-sunrise-orange.html,89900
@@ -1196,7 +921,7 @@ eldorado,Նոթբուք Lenovo IdeaPad Slim 516IRH10 (83HS002SRK),,,https://eldo
 eldorado,Նոթբուք ASUS FX607V (FX607VU-RL046) (90NR0N06-M00310),,,https://eldorado.am/en/laptop-asus-fx607v-fx607vu-rl046-90nr0n06-m00310,495900
 eldorado,Նոթբուք ASUS B3405CCA-LY0191 (90NX08L1-M006U0),,,https://eldorado.am/en/laptop-asus-b3405cca-ly0191-90nx08l1-m006u0,498900
 eldorado,Նոթբուք ASUS B3605CCA-MB0080 (90NX08N1-M00340),,,https://eldorado.am/en/laptop-asus-b3605cca-mb0080-90nx08n1-m00340,498900
-eldorado,Նոթբուք Microsoft Surface 4 16ԳԲ/1ՏԲ,16,,,519900
+eldorado,Նոթբուք Microsoft Surface 4 16ԳԲ/1ՏԲ,16,,https://eldorado.am/en/laptop-microsoft-surface-laptop-4-16gb-1tb,519900,,,2026-09-20
 eldorado,Նոթբուք Asus ExpertBook B5 B5405CCA (B5405CCA-NZ1264),,,https://eldorado.am/en/laptop-asus-expertbook-b5-b5405cca-b5405cca-nz1264,539900
 eldorado,Նոթբուք ASUS FA707 (FA707NUR-HX057) (90NR0JL5-M002W0),,,https://eldorado.am/en/laptop-asus-fa707-fa707nur-hx057-90nr0jl5-m002w0,549900
 eldorado,Նոթբուք ASUS Expert Book B5 B5405CVA ( B5405CVA-LY0592),,,https://eldorado.am/en/asus-expert-book-b5-b5405cva-b5405cva-ly0592,559900
@@ -1245,23 +970,23 @@ eldorado,Մոնիտոր Samsung LS27BG650EU,,,https://eldorado.am/en/samsung-ls2
 eldorado,Խաղային մոնիտոր LG 34GP63A-B,,,https://eldorado.am/en/gaming-monitor-lg-34gp63a-b,239900
 eldorado,Խաղային մոնիտոր AOC 49" LCD AG493UCX,,,https://eldorado.am/en/aoc-49-lcd-ag493ucx,469900
 eldorado,Սմարթֆոն XIAOMI POCO M7 6GB/128GB RU (25062PC34G) Սև,6,,https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple,64900
-eldorado,Սմարթֆոն XIAOMI POCO M7 8GB/256GB Արծաթագույն,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,72900
-eldorado,Սմարթֆոն Xiaomi POCO M7 EU 8GB/256GB (25062PC34G) կապույտ,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,72900
-zigzag,Xiaomi POCO M7 8GB/256GB Silver,8,,,72900
+eldorado,Սմարթֆոն XIAOMI POCO M7 8GB/256GB Արծաթագույն,8,,https://eldorado.am/en/smartphone-xiaomi-poco-m7-8gb-256gb-silver,72900,,,2026-09-20
+eldorado,Սմարթֆոն Xiaomi POCO M7 EU 8GB/256GB (25062PC34G) կապույտ,8,,https://eldorado.am/en/xiaomi-poco-m7-eu-8gb-256gb-25062pc34g-blue,72900,,,2026-09-20
+zigzag,Xiaomi POCO M7 8GB/256GB Silver,8,,https://www.zigzag.am/am/xiaomi-poco-m7-8gb-256gb-silver.html,72900,,,2026-09-20
 eldorado,Սմարթֆոն Xiaomi REDMI 15 6GB/128GB RU (25062RN2DY) մանուշակագույն,6,,https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple,66900
 eldorado,Սմարթֆոն Xiaomi REDMI 15 6GB/128GB RU (25062RN2DY) սև,6,,https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple,66900
 eldorado,Սմարթֆոն Xiaomi REDMI 15 8GB/128GB EU (25062RN2DA) Sandy Purple,8,,https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple,69900
 eldorado,Սմարթֆոն Xiaomi REDMI 17 4GB/128GB Black EU (2606FRN72Y),4,,https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple,79900
-zigzag,Xiaomi Redmi 17 4GB/128GB Black,4,,,83900
-zigzag,Xiaomi Redmi 17 8GB/256GB Oak Green,8,,,114900
-zigzag,Xiaomi Redmi 17 8GB/256GB Deep Blue,8,,,114900
-zigzag,Xiaomi Redmi 17 8GB/256GB Black,8,,,114900
-eldorado,Սմարթֆոն Xiaomi REDMI 15 8GB/256GB Titan Gray,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,74900
+zigzag,Xiaomi Redmi 17 4GB/128GB Black,4,,https://www.zigzag.am/am/xiaomi-redmi-17-4gb-128gb-black.html,83900,,,2026-09-20
+zigzag,Xiaomi Redmi 17 8GB/256GB Oak Green,8,,https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-oak-green.html,114900,,,2026-09-20
+zigzag,Xiaomi Redmi 17 8GB/256GB Deep Blue,8,,https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-deep-blue.html,114900,,,2026-09-20
+zigzag,Xiaomi Redmi 17 8GB/256GB Black,8,,https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-black.html,114900,,,2026-09-20
+eldorado,Սմարթֆոն Xiaomi REDMI 15 8GB/256GB Titan Gray,8,,https://eldorado.am/en/smartphone-redmi-15-8gb-256gb-titan-gray,74900,,,2026-09-20
 eldorado,Սմարթֆոն NOTHING CMF 1 (8/128) սև A015,,,https://eldorado.am/en/nothing-cmf-phone-1-8-128-light-green-a015,99900
 eldorado,Սմարթֆոն NOTHING CMF 1 (8/128) Կանաչ A015,,,https://eldorado.am/en/nothing-cmf-phone-1-8-128-light-green-a015,99900
 eldorado,Սմարթֆոն Samsung A366 8GB/128GB Lime,8,,https://eldorado.am/en/smartphone-samsung-a366-8gb-128gb-lime,129900
-eldorado,Սմարթֆոն HONOR 200 8/256GB (5109BFKC) Emerald Green,256,,https://eldorado.am/en/microsoft-surface-laptop-go-2,159900
-eldorado,Սմարթֆոն Xiaomi REDMI Note 15 Pro+ 5G 8GB/256GB RU(2510ERA8BG) Սև,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,175900
+eldorado,Սմարթֆոն HONOR 200 8/256GB (5109BFKC) Emerald Green,256,,https://eldorado.am/en/honor-200-8-256gb-5109bfkc-emerald-green,159900,,,2026-09-20
+eldorado,Սմարթֆոն Xiaomi REDMI Note 15 Pro+ 5G 8GB/256GB RU(2510ERA8BG) Սև,8,,https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-5g-8gb-256gb-ru-2510era8bg-black,175900,,,2026-09-20
 eldorado,Սմարթֆոն Nothing Phone (1) 8/256 GB Black,256,,https://eldorado.am/en/nothing-phone-1-8-256-gb-black,177900
 eldorado,Սմարթֆոն Xiaomi POCO X8 Pro Max 12GB/512GB RU (2602BPC18G) Սև,12,,https://eldorado.am/en/smartphone-honor-x9d-12gb-256gb-mtn-nx1-forest-green,242900
 eldorado,Սմարթֆոն XIAOMI 17T 12GB/256GB RU (2602DPT53G) Black,12,,https://eldorado.am/en/smartphone-honor-x9d-12gb-256gb-mtn-nx1-forest-green,243900
@@ -1274,58 +999,58 @@ eldorado,Պլանշետ Honor Pad X7 JMS-W09 (5504ADQH) մոխրագույն,,,h
 eldorado,Պլանշետ Honor Pad X7 LTE JMS-L09 (5504ADRG) մոխրագույն,,,https://eldorado.am/en/tablet-honor-pad-x7-lte-jms-l09-5504adrg-gray,64900
 eldorado,Պլանշետ Honor Pad X8b NDL2-W09 (5301ARMH) Space Gray,,,https://eldorado.am/en/tablet-honor-pad-x8b-ndl2-w09-5301armh-space-gray,94900
 eldorado,Պլանշետ HONOR Pad X8b NDL2-L09 (5301ARMF) Space Gray,,,https://eldorado.am/en/honor-pad-x8b-ndl2-w09-5301armh-space-gray,104900
-eldorado,Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) Graphite Gray,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,142900
-eldorado,Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) մանուշակագույն,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,142900
+eldorado,Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) Graphite Gray,8,,https://eldorado.am/en/tablet-redmi-pad-2-pro-8gb-256gb-ru-25099rp13g-graphite-gray,142900,,,2026-09-20
+eldorado,Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) մանուշակագույն,8,,https://eldorado.am/en/tablet-xiaomi-redmi-pad-2-pro-8gb-256gb-ru-25099rp13g-purple,142900,,,2026-09-20
 eldorado,Պլանշետ HONOR Pad X9a (5301AMVJ) Gray,,,https://eldorado.am/en/tablet-honor-pad-x9a-5301amvj-gray,169900
-eldorado,Պլանշետ HONOR Pad X9a 8GB+256GB (5301AMUY) Gray,8,,https://eldorado.am/en/microsoft-surface-laptop-go-2,179900
+eldorado,Պլանշետ HONOR Pad X9a 8GB+256GB (5301AMUY) Gray,8,,https://eldorado.am/en/honor-pad-x9a-8gb-256gb-5301amuy-gray,179900,,,2026-09-20
 eldorado,Sony Playstation DualSense PS5 մոխրագույն,,,https://eldorado.am/en/sony-playstation-dualsense-ps5-wireless-controller-cosmic-red,37900
 eldorado,Անլար ականջակալ Sony PULSE Explore White,,,https://eldorado.am/en/jbl-pulse-5-black,89900
 eldorado,Անլար ականջակալ HONOR CHOICE Earbuds X7 lite,,,https://eldorado.am/en/honor-x7d-6gb-128gb-lgn-lx1-desert-gold,8900
 eldorado,Ականջակալ Samsung EO-IC100  USB Type-C White,,,https://eldorado.am/en/samsung-eo-ic100-usb-type-c-white,9900
-eldorado,Անլար ականջակալ Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL,,,,10900
-eldorado,Անլար ականջակալ Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL,,,,10900
-eldorado,Անլար ականջակալ Redmi Buds 8 lite (M2539E1) BHR08OLGL Սպիտակ,,,,14900
+eldorado,Անլար ականջակալ Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL,,,https://eldorado.am/en/redmi-buds-8-active-white-m2537e1-bhr08jugl,8900,,,2026-09-20
+eldorado,Անլար ականջակալ Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL,,,https://eldorado.am/en/redmi-buds-8-active-black-m2537e1-bhr08jtgl,8900,,,2026-09-20
+eldorado,Անլար ականջակալ Redmi Buds 8 lite (M2539E1) BHR08OLGL Սպիտակ,,,https://eldorado.am/en/wireless-headphones-redmi-buds-8-lite-m2539e1-bhr08olgl-white,9900,,,2026-09-20
 eldorado,Անլար ականջակալ Redmi Buds 8 Lite Black,,,https://eldorado.am/en/wireless-earbuds-redmi-buds-8-lite-black,14900
 eldorado,Ականջակալ HONOR CHOICE ROS-ME01 Սև,,,https://eldorado.am/en/honor-x7d-6gb-128gb-lgn-lx1-desert-gold,19900
 eldorado,Ականջակալ HONOR CHOICE ROS-ME01 սպիտակ,,,https://eldorado.am/en/honor-x7d-6gb-128gb-lgn-lx1-desert-gold,19900
-eldorado,Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMX) black,,,,25900
-eldorado,Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMR) Purple,,,,25900
+eldorado,Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMX) black,,,https://eldorado.am/en/honor-choice-earbuds-clip-mak-me01-5504admx-black,23310,,,2026-09-20
+eldorado,Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMR) Purple,,,https://eldorado.am/en/honor-choice-earbuds-clip-mak-me01-5504admr-purple,23310,,,2026-09-20
 eldorado,Sony WH CH520L Blue Անլար ականջակալ,,,https://eldorado.am/en/sony-wh-ch520l-blue,27900
 eldorado,Անլար ականջակալ Beats Flex All-Day (A2295),,,https://eldorado.am/en/beats-flex-all-day-wireless-earphones-yuzu-yellow-model-a2295,31900
 eldorado,Ականջակալ Beats Solo Buds True Wireless (A3151 A3150 A3152),,,https://eldorado.am/en/beats-solo-buds-true-wireless-earbuds-transparent-red-model-a3151-a3150-a3152,35900
 eldorado,Sony WF-C500 True Wireless (YY2952) անլար ականջակալ նարնջագույն,,,https://eldorado.am/en/sony-wf-c500-orange-yy2952,37900
-eldorado,Sony WH-CH720 Black Անլար ականջակալ,,,,57900
+eldorado,Sony WH-CH720 Black Անլար ականջակալ,,,https://eldorado.am/en/sony-wh-ch720-black,39900,,,2026-09-20
 eldorado,Անլար ականջակալ Samsung Original Headphone Galaxy Buds 3 R530 Silver,,,https://eldorado.am/en/samsung-original-headphone-galaxy-buds-3-r530-silver,59900
-eldorado,MICROSOFT Xbox Ականջակալ,,,https://eldorado.am/en/microsoft-surface-laptop-go-2,65900
-eldorado,Beats Studio Buds Earbuds (A2512 A25 13 A2514) անլար ակաջակալ սպիտակ,,,,67900
-eldorado,Անլար ականջակալ Beats Studio Buds Earbuds (A2512 A25 13 A2514) սև,,,,67900
-eldorado,Beats Studio Buds Earbuds (A2512 A25 13 A2514) անլար ականջակալ կարմիր,,,,67900
+eldorado,MICROSOFT Xbox Ականջակալ,,,https://eldorado.am/en/microsoft-xbox-wireless-headset,65900,,,2026-09-20
+eldorado,Beats Studio Buds Earbuds (A2512 A25 13 A2514) անլար ակաջակալ սպիտակ,,,https://eldorado.am/en/beats-studio-buds-earbuds-2512-a25-13-a2514-white,67900,,,2026-09-20
+eldorado,Անլար ականջակալ Beats Studio Buds Earbuds (A2512 A25 13 A2514) սև,,,https://eldorado.am/en/beats-studio-buds-true-wireless-noise-cancelling-earbuds-black,67900,,,2026-09-20
+eldorado,Beats Studio Buds Earbuds (A2512 A25 13 A2514) անլար ականջակալ կարմիր,,,https://eldorado.am/en/beats-studio-buds-earbuds-a2512-a25-13-a2514-red,67900,,,2026-09-20
 eldorado,Անլար ականջակալ Sennheiser HD 450BT Black,,,https://eldorado.am/en/sennheiser-hd-450bt-black,69900
 eldorado,Անլար ականջակալ Sony Playstation Pulse Elite wireless PS5,,,https://eldorado.am/en/sony-playstation-pulse-elite-wireless-ps5,79900
-eldorado,Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ սպիտակ,,,,89900
-eldorado,Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ սև,,,,89900
-eldorado,Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ մոխրագույն,,,,89900
-eldorado,Անլար ականջակալ Beats Solo4 OnEar (A3140),,,,89900
-eldorado,Անլար ականջակալ Sennheiser Accentum Wireless ACAEBT սև,,,,89900
+eldorado,Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ սպիտակ,,,https://eldorado.am/en/beats-fit-pro-true-wireless-earbuds-a2577-a2576-a257-white,89900,,,2026-09-20
+eldorado,Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ սև,,,https://eldorado.am/en/beats-fit-pro-true-wireless-earbuds-a2577-a2576-a257-black,89900,,,2026-09-20
+eldorado,Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ մոխրագույն,,,https://eldorado.am/en/beats-fit-pro-true-wireless-earbuds-a2577-a2576-a257-grey,89900,,,2026-09-20
+eldorado,Անլար ականջակալ Beats Solo4 OnEar (A3140),,,https://eldorado.am/en/beats-solo4-wireless-headphones-onear-wireless-headphones-matte-black-model-a3140,89900,,color,2026-09-20
+eldorado,Անլար ականջակալ Sennheiser Accentum Wireless ACAEBT սև,,,https://eldorado.am/en/sennheiser-accentum-wireless-acaebt-black-2,75900,,,2026-09-20
 eldorado,Sony WHULT900N White Անլար ականջակալ,,,https://eldorado.am/en/sony-whult900n-white,89900
-eldorado,Անլար ականջակալ Sennheiser Accentum ACAEBT սպիտակ,,,,89900
+eldorado,Անլար ականջակալ Sennheiser Accentum ACAEBT սպիտակ,,,https://eldorado.am/en/sennheiser-accentum-wireless-acaebt-white,75900,,,2026-09-20
 eldorado,Nothing Ear Open B182 սպիտակ անլար ականջակալ,,,https://eldorado.am/en/nothing-ear-open-b182-white,89900
 eldorado,Ականջակալ Sennheiser HD 599,,,https://eldorado.am/en/sennheiser-hd-599,95900
 eldorado,Անլար Ականջակալ Bose SoundSport Free Bright Orange,,,https://eldorado.am/en/bose-soundsport-free-wrls-hdph-orn-navy,99900
-eldorado,Ականջակալ Sennheiser Accentum True Wireless ATW1 սպիտակ,,,,99900
-eldorado,Ականջակալ Sennheiser Accentum True Wireless ATW1 սև,,,,99900
+eldorado,Ականջակալ Sennheiser Accentum True Wireless ATW1 սպիտակ,,,https://eldorado.am/en/sennheiser-accentum-true-wireless-atw1-white,85900,,,2026-09-20
+eldorado,Ականջակալ Sennheiser Accentum True Wireless ATW1 սև,,,https://eldorado.am/en/sennheiser-accentum-true-wireless-atw1-black,85900,,,2026-09-20
 eldorado,Անլար Ականջակալ Bose SoundSport Free Black,,,https://eldorado.am/en/bose-soundsport-free-wrls-hdph-blk,99900
-eldorado,Ականջակալ Sennheiser Accentum True Special Edition ATW1 SE կապույտ,,,,99900
-eldorado,Անլար ականջակալ Sennheiser Accentum Plus (ACPAEBT) սև,,,,119900
-eldorado,Անլար ականջակալ Sennheiser Accentum Plus (ACPAEBT) սպիտակ,,,,119900
+eldorado,Ականջակալ Sennheiser Accentum True Special Edition ATW1 SE կապույտ,,,https://eldorado.am/en/sennheiser-accentum-true-wireless-special-edition-atw1-blue-se,85900,,,2026-09-20
+eldorado,Անլար ականջակալ Sennheiser Accentum Plus (ACPAEBT) սև,,,https://eldorado.am/en/sennheiser-accentum-plus-wireless-acpaebt-black-2,99900,,,2026-09-20
+eldorado,Անլար ականջակալ Sennheiser Accentum Plus (ACPAEBT) սպիտակ,,,https://eldorado.am/en/sennheiser-accentum-plus-wireless-acpaebt-white,99900,,,2026-09-20
 eldorado,Անլար ականջակալ Bose QuietComfort 45 Acoustic Black,,,https://eldorado.am/en/bose-quietcomfort-45-acoustic-black,126900
-eldorado,Ականջակալ Beats Studio Pro Wireless Model (A2924),,Navy,,139900
-eldorado,Ականջակալ Beats Studio Pro Wireless (A2924),,Sandstone,,139900
-eldorado,Ականջակալ Sennheiser Momentum Sport MSPORT1 Olive,,,,159900
-eldorado,Ականջակալ Sennheiser Momentum Sport MSPORT1 սև,,,,159900
-eldorado,Ականջակալ Sennheiser Momentum Sport MSPORT1 Graphite,,,,159900
+eldorado,Ականջակալ Beats Studio Pro Wireless Model (A2924),,Navy,https://eldorado.am/en/beats-studio-pro-wireless-headphones-navy-model-a2924,139900,,,2026-09-20
+eldorado,Ականջակալ Beats Studio Pro Wireless (A2924),,Sandstone,https://eldorado.am/en/beats-studio-pro-wireless-headphones-sandstone-model-a2924,139900,,,2026-09-20
+eldorado,Ականջակալ Sennheiser Momentum Sport MSPORT1 Olive,,,https://eldorado.am/en/sennheiser-momentum-sport-with-adaptive-anc-and-transparency-mode-msport1-olive,129900,,,2026-09-20
+eldorado,Ականջակալ Sennheiser Momentum Sport MSPORT1 սև,,,https://eldorado.am/en/sennheiser-momentum-sport-with-adaptive-anc-and-transparency-mode-msport1-black-2,129900,,,2026-09-20
+eldorado,Ականջակալ Sennheiser Momentum Sport MSPORT1 Graphite,,,https://eldorado.am/en/sennheiser-momentum-sport-with-adaptive-anc-and-transparency-mode-msport1-graphite,129900,,,2026-09-20
 eldorado,Sennheiser HD 620S Ականջակալ,,,https://eldorado.am/en/sennheiser-hd-620s,159900
-eldorado,Sennheiser RS 195 Black Ականջակալ,,,,159900
+eldorado,Sennheiser RS 195 Black Ականջակալ,,,https://eldorado.am/en/sennheiser-rs-195-black,129900,,,2026-09-20
 eldorado,Անլար ականջակալ Sennheiser Momentum M4AEBT սև,,,https://eldorado.am/en/sennheiser-momentum-wireless-m4aebt-black,169900
 eldorado,Sony WH-1000XM5 (YY2954) անլար ականջակալ արծաթագույն,,,https://eldorado.am/en/sony-wireless-headphones-wh-1000xm5-silver-yy2954,199900
 eldorado,Անլար ականջակալ օդի ֆիլտրով Dyson Zone (Ultra Blue/Prussian Blue),,,https://eldorado.am/en/dyson-zone-headphones-with-air-purification-ultra-blue-prussian-blue,319900
@@ -1353,90 +1078,85 @@ eldorado,Սմարթ ժամացույց Garmin Forerunner 970 010-02969-10 (Black
 eldorado,Սմարթ ժամացույց Garmin epix Pro (Gen 2) – Sapphire Edition 51 mm,,,https://eldorado.am/en/garmin-epix-pro-gen-2-sapphire-edition-51-mm-010-02804-01,345000
 eldorado,Սմարթ ժամացույց Garmin Venu X1 Moss (010-02980-03),,,https://eldorado.am/en/garmin-venu-x1-moss-010-02980-03,359000
 zigzag,HP OMEN 16" Core i7-14650HX 32GB/1TB RTX5050 Black /C42DNEA,32,,https://www.zigzag.am/am/hp-omen-16-core-i7-14650hx-32gb-1tb-rtx5050-black-c42dnea.html,849900
-zigzag,Lenovo ThinkPad T16 Gen 5 16" Ultra 7-355 16GB/512GB /21WT005CFW,16,,,824900
-zigzag,Lenovo ThinkPad T16 Gen 5 16" Ultra 5-325 16GB/512GB /21WT0059FW,16,,,759900
-zigzag,Lenovo ThinkPad E16 Gen 4 16" Ultra 7-355 16GB/512GB /21YC003TFW,16,,,689900
-zigzag,Lenovo ThinkPad E16 Gen 4 16" Ultra 5-325 16GB/512GB /21YC003UFW,16,,,629900
-zigzag,Lenovo IdeaPad Slim 3 15.3" i5-13420H 16GB/512GB Grey /83K1002ERK,16,,,349000
-zigzag,Asus VivoBook 15.6" Core 5-120U 16GB/512GB Quiet Blue /90NB13Y1-M01PX0,16,,,339000
-zigzag,Asus VivoBook 17.3" Core 5-120U 16GB/512GB Quiet Blue /90NB13X2-M00J00,16,,,379000
-zigzag,Asus TUF 16" i7-14650HX 16GB/512GB RTX5050 Gray /90NR0NA1-M003C0,16,,,739000
-zigzag,Asus Vivobook S 16" Core 5-210H 16GB/512GB Matte Gray /90NB1672-M009K0,16,,,449000
-zigzag,Asus Vivobook S 14" Core 5-210H 16GB/512GB Matte Gray /90NB1682-M00720,16,,,429000
-zigzag,Lenovo LOQ 15.6" i7-13645HX 16GB/512GB RTX5050 Luna Grey /83JE0189RK,16,,,639900
-zigzag,Lenovo IdeaPad Slim 3 15.3" R7-170 16GB/512GB Grey /83K700HRRK,16,,,349900
+zigzag,Lenovo ThinkPad T16 Gen 5 16" Ultra 7-355 16GB/512GB /21WT005CFW,16,,https://www.zigzag.am/am/lenovo-thinkpad-t16-gen-5-16-ultra-7-355-16gb-512gb-21wt005cfw.html,824900,,,2026-09-20
+zigzag,Lenovo ThinkPad T16 Gen 5 16" Ultra 5-325 16GB/512GB /21WT0059FW,16,,https://www.zigzag.am/am/lenovo-thinkpad-t16-gen-5-16-ultra-5-325-16gb-512gb-21wt0059fw.html,759900,,,2026-09-20
+zigzag,Lenovo ThinkPad E16 Gen 4 16" Ultra 7-355 16GB/512GB /21YC003TFW,16,,https://www.zigzag.am/am/lenovo-thinkpad-e16-gen-4-16-ultra-7-355-16gb-512gb-21yc003tfw.html,689900,,,2026-09-20
+zigzag,Lenovo ThinkPad E16 Gen 4 16" Ultra 5-325 16GB/512GB /21YC003UFW,16,,https://www.zigzag.am/am/lenovo-thinkpad-e16-gen-4-16-ultra-5-325-16gb-512gb-21yc003ufw.html,629900,,,2026-09-20
+zigzag,Asus VivoBook 15.6" Core 5-120U 16GB/512GB Quiet Blue /90NB13Y1-M01PX0,16,,https://www.zigzag.am/am/asus-vivobook-15-6-core-5-120u-16gb-512gb-quiet-blue-90nb13y1-m01px0.html,339000,,,2026-09-20
+zigzag,Asus VivoBook 17.3" Core 5-120U 16GB/512GB Quiet Blue /90NB13X2-M00J00,16,,https://www.zigzag.am/am/asus-vivobook-17-3-core-5-120u-16gb-512gb-quiet-blue-90nb13x2-m00j00.html,379000,,,2026-09-20
+zigzag,Asus TUF 16" i7-14650HX 16GB/512GB RTX5050 Gray /90NR0NA1-M003C0,16,,https://www.zigzag.am/am/asus-tuf-16-i7-14650hx-16gb-512gb-rtx5050-gray-90nr0na1-m003c0.html,739000,,,2026-09-20
+zigzag,Asus Vivobook S 16" Core 5-210H 16GB/512GB Matte Gray /90NB1672-M009K0,16,,https://www.zigzag.am/am/asus-vivobook-s-16-core-5-210h-16gb-512gb-matte-gray-90nb1672-m009k0.html,449000,,,2026-09-20
+zigzag,Asus Vivobook S 14" Core 5-210H 16GB/512GB Matte Gray /90NB1682-M00720,16,,https://www.zigzag.am/am/asus-vivobook-s-14-core-5-210h-16gb-512gb-matte-gray-90nb1682-m00720.html,429000,,,2026-09-20
+zigzag,Lenovo LOQ 15.6" i7-13645HX 16GB/512GB RTX5050 Luna Grey /83JE0189RK,16,,https://www.zigzag.am/am/lenovo-loq-15-6-i7-13645hx-16gb-512gb-rtx5050-luna-grey-83je0189rk.html,639900,,,2026-09-20
+zigzag,Lenovo IdeaPad Slim 3 15.3" R7-170 16GB/512GB Grey /83K700HRRK,16,,https://www.zigzag.am/am/lenovo-ideapad-slim-3-15-3-r7-170-16gb-512gb-grey-83k700hrrk.html,349900,,,2026-09-20
 zigzag,HP OmniBook X Flip 16" Ultra 7-258V 32GB/1TB W11H Silver /CL6V6EA,32,,https://www.zigzag.am/am/hp-omnibook-x-flip-16-ultra-7-258v-32gb-1tb-w11h-silver-cl6v6ea.html,779000
 zigzag,HP OmniBook X Flip 14" Ultra 7-256V 16GB/1TB W11H Silver /BZ2X0EA,16,,https://www.zigzag.am/am/hp-omnibook-x-flip-14-ultra-7-256v-16gb-1tb-w11h-silver-bz2x0ea.html,719000
 zigzag,HP OmniBook X Flip 16" Ultra 7-256V 16GB/1TB W11H Silver /C1UP1EA,16,,https://www.zigzag.am/am/hp-omnibook-x-flip-16-ultra-7-256v-16gb-1tb-w11h-silver-c1up1ea.html,733000
-zigzag,Asus ZenBook 16" OLED Ryzen AI 7-445 32GB/1TB W11H White /90NB17H2-M006F0,32,,,979000
-zigzag,Honor MagicBook X16 Ultra 5-125H 16GB/1TB W11H Gray /5301ARGM,16,,,379900
-zigzag,Lenovo ThinkPad E16 G3 16" Core 5-210H 16GB/512GB /21TF004RFW,16,,,419000
-zigzag,Lenovo ThinkPad T16 G4 16" Ultra 7-255U 16GB/512GB /21QE0066FW,16,,,839000
+zigzag,Asus ZenBook 16" OLED Ryzen AI 7-445 32GB/1TB W11H White /90NB17H2-M006F0,32,,https://www.zigzag.am/am/asus-zenbook-16-oled-ryzen-ai-7-445-32gb-1tb-w11h-white-90nb17h2-m006f0.html,979000,,,2026-09-20
+zigzag,Honor MagicBook X16 Ultra 5-125H 16GB/1TB W11H Gray /5301ARGM,16,,https://www.zigzag.am/am/honor-magicbook-x16-ultra-5-125h-16gb-1tb-w11h-gray-5301argm.html,379900,,,2026-09-20
+zigzag,Lenovo ThinkPad E16 G3 16" Core 5-210H 16GB/512GB /21TF004RFW,16,,https://www.zigzag.am/am/lenovo-thinkpad-e16-g3-16-core-5-210h-16gb-512gb-21tf004rfw.html,419000,,,2026-09-20
+zigzag,Lenovo ThinkPad T16 G4 16" Ultra 7-255U 16GB/512GB /21QE0066FW,16,,https://www.zigzag.am/am/lenovo-thinkpad-t16-g4-16-ultra-7-255u-16gb-512gb-21qe0066fw.html,839000,,,2026-09-20
 zigzag,HP OmniBook X Flip 16" Ultra 5-226V 16GB/1TB W11H Silver /CL6V7EA,16,,https://www.zigzag.am/am/hp-omnibook-x-flip-16-ultra-5-226v-16gb-1tb-w11h-silver-cl6v7ea.html,641000
 zigzag,HP OmniBook 7 16" Core 5-210H 16GB/512GB Silver W11H /C21N7EA,16,,https://www.zigzag.am/am/hp-omnibook-7-16-core-5-210h-16gb-512gb-silver-w11h-c21n7ea.html,479000
 zigzag,HP OMEN 16" Ultra 7-255HX 64GB/1TB RTX 5070Ti Black /C5HZ1EA,64,,https://www.zigzag.am/am/hp-omen-16-ultra-7-255hx-64gb-1tb-rtx-5070ti-black-c5hz1ea.html,1399000
-zigzag,Asus Zenbook DUO 14.5" Touch Ultra 9-285H 32GB/2TB W11 GRAY /UX8406CA-IS99T*,32,,,1169000
-zigzag,Asus Vivobook 15.6" Touch Core 7-150U 16GB/1TB W11 SILVER /F1504VAP-IH79T*,16,,,429000
-zigzag,Asus Vivobook 16" i7-1355 16GB/512GB WIN11 BLACK /F1605VA-WS74*,16,,,389000
-zigzag,Lenovo ThinkPad E16 G3 16" Ultra 5-225U 16GB/512GB Black /21SR0048FW,16,,,499000
-zigzag,Honor MagicBook X14 i5-13420H 16GB/512GB Space Gray W11H /5301ALWG,16,,,299900
-zigzag,Honor MagicBook Pro 16 Ultra 9-285H 32GB/1TB RTX5060 W11H White /5301APWK,32,,,859900
+zigzag,Asus Zenbook DUO 14.5" Touch Ultra 9-285H 32GB/2TB W11 GRAY /UX8406CA-IS99T*,32,,https://www.zigzag.am/am/asus-zenbook-duo-14-5-touch-ultra-9-285h-32gb-2tb-w11-gray-ux8406ca-is99t.html,1169000,,,2026-09-20
+zigzag,Asus Vivobook 15.6" Touch Core 7-150U 16GB/1TB W11 SILVER /F1504VAP-IH79T*,16,,https://www.zigzag.am/am/asus-vivobook-15-6-touch-core-7-150u-16gb-1tb-w11-silver-f1504vap-ih79t.html,429000,,,2026-09-20
+zigzag,Asus Vivobook 16" i7-1355 16GB/512GB WIN11 BLACK /F1605VA-WS74*,16,,https://www.zigzag.am/am/asus-vivobook-16-i7-1355-16gb-512gb-win11-black-f1605va-ws74.html,389000,,,2026-09-20
+zigzag,Lenovo ThinkPad E16 G3 16" Ultra 5-225U 16GB/512GB Black /21SR0048FW,16,,https://www.zigzag.am/am/lenovo-thinkpad-e16-g3-16-ultra-5-225u-16gb-512gb-black-21sr0048fw.html,499000,,,2026-09-20
+zigzag,Honor MagicBook X14 i5-13420H 16GB/512GB Space Gray W11H /5301ALWG,16,,https://www.zigzag.am/am/honor-magicbook-x14-i5-13420h-16gb-512gb-space-gray-w11h-5301alwg.html,269900,,,2026-09-20
+zigzag,Honor MagicBook Pro 16 Ultra 9-285H 32GB/1TB RTX5060 W11H White /5301APWK,32,,https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-9-285h-32gb-1tb-rtx5060-w11h-white-5301apwk.html,859900,,,2026-09-20
 zigzag,HP EliteBook 8 Flip G1i 13.3" Ultra 5-225U 32GB/512GB W11P /A37FYET,32,,https://www.zigzag.am/am/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-32gb-512gb-w11p-a37fyet.html,789000
-zigzag,Lenovo Yoga 7 2in1 16" Ultra 7-256V 16GB/1TB Grey /83JT0028RK,16,,,598900
+zigzag,Lenovo Yoga 7 2in1 16" Ultra 7-256V 16GB/1TB Grey /83JT0028RK,16,,https://www.zigzag.am/am/lenovo-yoga-7-2in1-16-ultra-7-256v-16gb-1tb-grey-83jt0028rk.html,598900,,,2026-09-20
 zigzag,HP OmniBook X Flip x360 16" Ultra 5-226V 16GB/512GB W11H Silver /C1UP3EA,16,,https://www.zigzag.am/am/hp-omnibook-x-flip-x360-16-ultra-5-226v-16gb-512gb-w11h-silver-c1up3ea.html,585000
-zigzag,HP OmniBook X Flip x360 14" Ultra 7-256V 16GB/512GB W11H Silver /C1UM8EA,16,,,669000
-zigzag,Lenovo ThinkPad X9 G1 Aura Edition 15.3" Ultra 7-258V 32GB/1TB W11P White /21Q6006AFW,32,,,1265000
-zigzag,Lenovo IdeaPad Slim 3 16" i5-13420H 16GB/512GB Grey /83K2000WRK,16,,,349000
-zigzag,Lenovo IdeaPad Slim 3 15.3" i7-13620H 16/512 /83K10032RK,,,,365900
+zigzag,HP OmniBook X Flip x360 14" Ultra 7-256V 16GB/512GB W11H Silver /C1UM8EA,16,,https://www.zigzag.am/am/hp-omnibook-x-flip-x360-14-ultra-7-256v-16gb-512gb-w11h-silver-c1um8ea.html,669000,,,2026-09-20
+zigzag,Lenovo ThinkPad X9 G1 Aura Edition 15.3" Ultra 7-258V 32GB/1TB W11P White /21Q6006AFW,32,,https://www.zigzag.am/am/lenovo-thinkpad-x9-g1-aura-edition-15-3-ultra-7-258v-32gb-1tb-w11p-white-21q6006afw.html,1265000,,,2026-09-20
+zigzag,Lenovo IdeaPad Slim 3 16" i5-13420H 16GB/512GB Grey /83K2000WRK,16,,https://www.zigzag.am/am/lenovo-ideapad-slim-3-16-i5-13420h-16gb-512gb-grey-83k2000wrk.html,349000,,,2026-09-20
+zigzag,Lenovo IdeaPad Slim 3 15.3" i7-13620H 16/512 /83K10032RK,,,https://www.zigzag.am/am/lenovo-ideapad-slim-3-15-3-i7-13620h-16-512-83k10032rk.html,365900,,,2026-09-20
 zigzag,HP OmniBook 5 16" Ultra 5-225U 16/1 /BM0Q2EA,,,https://www.zigzag.am/am/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea.html,439900
 zigzag,HP OmniBook 5 16" Ultra 7-255U 16/1 /BK9Y8EA,,,https://www.zigzag.am/am/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea.html,499000
-zigzag,Lenovo IdeaPad 5 2-in-1 16" OLED i7-150U 16/512 Grey /83DU003WRK,,,,548000
-zigzag,Honor MagicBook Pro 16" Ultra 5-125H 24/1 White W11H /5301AJJG,,,,559900
-zigzag,Honor MagicBook Pro 16" Ultra 5-125H 24/1 Purple W11H /5301AJJE,,,,579900
+zigzag,Lenovo IdeaPad 5 2-in-1 16" OLED i7-150U 16/512 Grey /83DU003WRK,,,https://www.zigzag.am/am/lenovo-ideapad-5-2-in-1-16-oled-i7-150u-16-512-grey-83du003wrk.html,548000,,,2026-09-20
+zigzag,Honor MagicBook Pro 16" Ultra 5-125H 24/1 White W11H /5301AJJG,,,https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-5-125h-24-1-white-w11h-5301ajjg.html,503900,,,2026-09-20
+zigzag,Honor MagicBook Pro 16" Ultra 5-125H 24/1 Purple W11H /5301AJJE,,,https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-5-125h-24-1-purple-w11h-5301ajje.html,521900,,,2026-09-20
 zigzag,HP Pavilion 16" R7-8840U 16/512 /B2CV4EA,,,https://www.zigzag.am/am/hp-pavilion-16-r7-8840u-16-512-b2cv4ea.html,434000
 zigzag,HP Pavilion 16" Ultra 5-125U 16/512 /B2CV3EA,,,https://www.zigzag.am/am/hp-pavilion-16-ultra-5-125u-16-512-b2cv3ea.html,447000
-zigzag,Honor MagicBook X 16 Pro i5-13420H 8/512 W11H Silver /5301AHQV,,,,305900
-zigzag,Honor MagicBook X14 Pro i5-13420H 8/512 W11H Silver /5301AHQK,,,,305900
-zigzag,Apple MacBook Air 13" M3 8/10 16/1TB Space Gray US KB /Z1G50006H*,1024,,,949000
+zigzag,Honor MagicBook X 16 Pro i5-13420H 8/512 W11H Silver /5301AHQV,,,https://www.zigzag.am/am/honor-magicbook-x-16-pro-i5-13420h-8-512-w11h-silver-5301ahqv.html,275300,,,2026-09-20
+zigzag,Honor MagicBook X14 Pro i5-13420H 8/512 W11H Silver /5301AHQK,,,https://www.zigzag.am/am/honor-magicbook-x14-pro-i5-13420h-8-512-w11h-silver-5301ahqk.html,275300,,,2026-09-20
+zigzag,Apple MacBook Air 13" M3 8/10 16/1TB Space Gray US KB /Z1G50006H*,1024,,https://www.zigzag.am/am/apple-macbook-air-13-m3-8-10-16-1tb-space-gray-us-kb-z1g50006h.html,949000,,,2026-09-20
 zigzag,HP Laptop 15.6" Core 5 120U 16/512 /A5CV9EA,,,https://www.zigzag.am/am/hp-laptop-15-6-core-5-120u-16-512-a5cv9ea.html,365000
 zigzag,HP Laptop 15.6" FHD i5-1334U / 16/512 /9U5W4EA,,,https://www.zigzag.am/am/hp-laptop-15-6-fhd-i5-1334u-16-512-9u5w4ea.html,355000
-zigzag,Honor MagicBook X16 i5-12450H 8/512 (BRN-F58) /5301AHHP,,,,279900
-zigzag,Asus ROG STRIX G16 16" i9-14900HX 16/1 4060 W11 /G614JVR-ES94*,,,,1044000
-zigzag,Asus Vivobook S 15.6" i9-13900H 16/1 CAMO SILVER W11 /K5504VA-PB99-SL*,,,,643600
-zigzag,Asus Vivobook S 15.6" i9-13900H 16/1 CAMO GREEN W11 /K5504VA-PB99-GR*,,,,643600
-zigzag,Lenovo Yoga Slim 7 R5-7640S 16/512 /83AA000BRK,,,,547000
-zigzag,Apple MacBook Pro 16 M3Pro 12/18 18/512 Black /MRW13RU/A,,,,1179500
-zigzag,Apple MacBook Pro 14 M3 8/10 8/512 SG /MTL73RU/A,,,,713400
-zigzag,Apple MacBook Pro 14 M3 8/10 8/1 SG /MTL83RU/A,,,,793000
+zigzag,Honor MagicBook X16 i5-12450H 8/512 (BRN-F58) /5301AHHP,,,https://www.zigzag.am/am/honor-magicbook-x16-i5-12450h-8-512-brn-f58-5301ahhp.html,251900,,,2026-09-20
+zigzag,Asus ROG STRIX G16 16" i9-14900HX 16/1 4060 W11 /G614JVR-ES94*,,,https://www.zigzag.am/am/asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94.html,1044000,,,2026-09-20
+zigzag,Asus Vivobook S 15.6" i9-13900H 16/1 CAMO SILVER W11 /K5504VA-PB99-SL*,,,https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-silver-w11-k5504va-pb99-sl.html,643600,,,2026-09-20
+zigzag,Asus Vivobook S 15.6" i9-13900H 16/1 CAMO GREEN W11 /K5504VA-PB99-GR*,,,https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html,643600,,,2026-09-20
+zigzag,Lenovo Yoga Slim 7 R5-7640S 16/512 /83AA000BRK,,,https://www.zigzag.am/am/lenovo-yoga-slim-7-r5-7640s-16-512-83aa000brk.html,547000,,,2026-09-20
+zigzag,Apple MacBook Pro 16 M3Pro 12/18 18/512 Black /MRW13RU/A,,,https://www.zigzag.am/am/apple-macbook-pro-16-m3pro-12-18-18-512-black-mrw13ru-a.html,1179500,,,2026-09-20
+zigzag,Apple MacBook Pro 14 M3 8/10 8/512 SG /MTL73RU/A,,,https://www.zigzag.am/am/apple-macbook-pro-14-m3-8-10-8-512-sg-mtl73ru-a.html,713400,,,2026-09-20
+zigzag,Apple MacBook Pro 14 M3 8/10 8/1 SG /MTL83RU/A,,,https://www.zigzag.am/am/apple-macbook-pro-14-m3-8-10-8-1-sg-mtl83ru-a.html,793000,,,2026-09-20
 zigzag,HP ENVY 16 i9-13900H 16/1 4060 W11 /7Z0P3UA#ABA*,,,https://www.zigzag.am/am/hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba.html,925800
-zigzag,Sony WF-C510/L,,,,31900
-zigzag,Sony WF-C510/YC,,,,31900
-zigzag,Sony WF-C510/W,,,,31900
-zigzag,Nothing Headphone ( 1 ) White /6974434224179,,,,157000
-zigzag,Sony WF-C510/B,,,,31900
-zigzag,Sony WH-1000XM5/SME,,,,199900
-zigzag,Sony WH-1000XM5/BME,,,,199900
-zigzag,Sony WH-G900N/WZ E,,,,151900
-zigzag,Sony WF-C700N/GZ E,,,,54900
-zigzag,Sony WF-C700N/WZ E,,,,52900
-zigzag,Sony WF-1000XM5/SCE,,,,147900
-zigzag,Sony WF-1000XM5/BCE,,,,147900
-zigzag,Honor Pad X7 8.7" 4GB/128GB LTE Gray /5504ADRG,4,,,64900
-zigzag,Honor Pad X8b 11" 6GB/256GB WIFI Gray /5301ARMJ,6,,,102900
-zigzag,Honor Pad X9a 8GB/256GB LTE Gray /5301AMUY,8,,,179990
-zigzag,Apple iPad Air 13" M3 WiFi 128GB Starlight /MCNK4*,128,,,425900
-zigzag,Apple iPad Pro 13" M4 2024 512GB Wi-Fi Black /MVX43*,512,,,679000
-zigzag,Apple iPad Pro 13" M4 2024 256GB Wi-Fi Black /MVX23*,256,,,579000
-zigzag,Apple iPad Pro 12.9 M2 128GB Cell SpaceGray/MP5X3*,128,,,537400
-zigzag,Apple iPad Pro 12.9 M2 WiFi 128GB S.Grey/MNXP3RK/A,128,,,505400
-zigzag,Apple iPad Pro 12.9 M2 WiFi 128GB Silver/MNXQ3RK/A,128,,,505400
-zigzag,Apple Watch Ultra 2 49mm Black Titanium+Dark Green Alpine Loop L /MX4T3*,,,,406000
-zigzag,Apple HomePod Mini Yellow /MJ2E3LL/A*,,,,72900
-zigzag,Apple Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A,,,,406500
-zigzag,Apple Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4,,,,860900
-zigzag,Apple Studio Display XDR 2026 Tilt-Height adjustable /MFEL4*,,,,1999000
+zigzag,Sony WF-C510/YC,,,https://www.zigzag.am/am/sony-wf-c510-yc.html,31900,,,2026-09-20
+zigzag,Nothing Headphone ( 1 ) White /6974434224179,,,https://www.zigzag.am/am/nothing-headphone-1-white-6974434224179.html,157000,,,2026-09-20
+zigzag,Sony WH-1000XM5/SME,,,https://www.zigzag.am/am/sony-wh-1000xm5-sme.html,199900,,,2026-09-20
+zigzag,Sony WH-1000XM5/BME,,,https://www.zigzag.am/am/sony-wh-1000xm5-bme.html,199900,,,2026-09-20
+zigzag,Sony WH-G900N/WZ E,,,https://www.zigzag.am/am/sony-wh-g900n-wz-e.html,151900,,,2026-09-20
+zigzag,Sony WF-C700N/GZ E,,,https://www.zigzag.am/am/sony-wf-c700n-gz-e.html,54900,,,2026-09-20
+zigzag,Sony WF-C700N/WZ E,,,https://www.zigzag.am/am/sony-wf-c700n-wz-e.html,52900,,,2026-09-20
+zigzag,Sony WF-1000XM5/SCE,,,https://www.zigzag.am/am/sony-wf-1000xm5-sce.html,147900,,,2026-09-20
+zigzag,Sony WF-1000XM5/BCE,,,https://www.zigzag.am/am/sony-wf-1000xm5-bce.html,147900,,,2026-09-20
+zigzag,Honor Pad X7 8.7" 4GB/128GB LTE Gray /5504ADRG,4,,https://www.zigzag.am/am/honor-pad-x7-8-7-4gb-128gb-lte-gray-5504adrg.html,64900,,,2026-09-20
+zigzag,Honor Pad X8b 11" 6GB/256GB WIFI Gray /5301ARMJ,6,,https://www.zigzag.am/am/honor-pad-x8b-11-6gb-256gb-wifi-gray-5301armj.html,102900,,,2026-09-20
+zigzag,Honor Pad X9a 8GB/256GB LTE Gray /5301AMUY,8,,https://www.zigzag.am/am/honor-pad-x9a-8gb-256gb-lte-gray-5301amuy.html,179990,,,2026-09-20
+zigzag,Apple iPad Air 13" M3 WiFi 128GB Starlight /MCNK4*,128,,https://www.zigzag.am/am/apple-ipad-air-13-m3-wifi-128gb-starlight-mcnk4.html,425900,,,2026-09-20
+zigzag,Apple iPad Pro 13" M4 2024 512GB Wi-Fi Black /MVX43*,512,,https://www.zigzag.am/am/apple-ipad-pro-13-m4-2024-512gb-wi-fi-black-mvx43.html,679000,,,2026-09-20
+zigzag,Apple iPad Pro 13" M4 2024 256GB Wi-Fi Black /MVX23*,256,,https://www.zigzag.am/am/apple-ipad-pro-13-m4-2024-256gb-wi-fi-black-mvx23.html,579000,,,2026-09-20
+zigzag,Apple iPad Pro 12.9 M2 128GB Cell SpaceGray/MP5X3*,128,,https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-128gb-cell-spacegray-mp5x3.html,537400,,,2026-09-20
+zigzag,Apple iPad Pro 12.9 M2 WiFi 128GB S.Grey/MNXP3RK/A,128,,https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-wifi-128gb-s-grey-mnxp3rk-a.html,505400,,,2026-09-20
+zigzag,Apple iPad Pro 12.9 M2 WiFi 128GB Silver/MNXQ3RK/A,128,,https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-wifi-128gb-silver-mnxq3rk-a.html,505400,,,2026-09-20
+zigzag,Apple Watch Ultra 2 49mm Black Titanium+Dark Green Alpine Loop L /MX4T3*,,,https://www.zigzag.am/am/apple-watch-ultra-2-49mm-black-titanium-dark-green-alpine-loop-l-mx4t3.html,406000,,,2026-09-20
+zigzag,Apple HomePod Mini Yellow /MJ2E3LL/A*,,,https://www.zigzag.am/am/apple-homepod-mini-yellow-mj2e3ll-a.html,72900,,,2026-09-20
+zigzag,Apple Watch Ultra 2 49mm Blue/Black M/L/MRF63RB/A,,,https://www.zigzag.am/am/apple-watch-ultra-2-49mm-blue-black-m-l-mrf63rb-a.html,406500,,,2026-09-20
+zigzag,Apple Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4,,,https://www.zigzag.am/am/apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4.html,860900,,,2026-09-20
+zigzag,Apple Studio Display XDR 2026 Tilt-Height adjustable /MFEL4*,,,https://www.zigzag.am/am/apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4.html,1999000,,,2026-09-20
 zigzag,Garmin Fenix 9 Pro 47mm  AMOLED  Carbon Gray DLC Titanium,,,https://www.zigzag.am/am/garmin-fenix-9-pro-47mm-amoled-carbon-gray-dlc-titanium.html,489000
-zigzag,Garmin CIRQA™ Smart Band  Black  S-M,,,,89000
 zigzag,Garmin CIRQA™ Smart Band  Mauve  S-M,,,https://www.zigzag.am/am/garmin-cirqatm-smart-band-mauve-s-m.html,89000
 zigzag,Garmin CIRQA™ Smart Band  Captain Blue  S-M,,,https://www.zigzag.am/am/garmin-cirqatm-smart-band-captain-blue-s-m.html,89000
 zigzag,Garmin Forerunner 170 Music Whitestone,,,https://www.zigzag.am/am/garmin-forerunner-170-music-whitestone.html,159000
@@ -1446,11 +1166,11 @@ zigzag,Garmin Forerunner 170 Black,,,https://www.zigzag.am/am/garmin-forerunner-
 zigzag,Garmin Forerunner 70 Citron,,,https://www.zigzag.am/am/garmin-forerunner-70-citron.html,109000
 zigzag,Garmin Forerunner 70 Whitestone,,,https://www.zigzag.am/am/garmin-forerunner-70-whitestone.html,109000
 zigzag,Garmin Forerunner 70 Black,,,https://www.zigzag.am/am/garmin-forerunner-70-black.html,109000
-zigzag,Honor Choice Watch 2i White KCH-WB01 /5504ACGN,,,,19900
-zigzag,Honor Choice Watch 2i Black KCH-WB01 /5504ACGM,,,,19900
+zigzag,Honor Choice Watch 2i White KCH-WB01 /5504ACGN,,,https://www.zigzag.am/am/honor-choice-watch-2i-white-kch-wb01-5504acgn.html,19900,,,2026-09-20
+zigzag,Honor Choice Watch 2i Black KCH-WB01 /5504ACGM,,,https://www.zigzag.am/am/honor-choice-watch-2i-black-kch-wb01-5504acgm.html,19900,,,2026-09-20
 zigzag,Garmin Fenix 8 Pro – 51 mm  AMOLED,,,https://www.zigzag.am/am/garmin-fenix-8-pro-51-mm-amoled.html,468930
 zigzag,Garmin Fenix 8 Pro – 47 mm  AMOLED,,,https://www.zigzag.am/am/garmin-fenix-8-pro-47-mm-amoled.html,434130
-zigzag,Nothing CMF Watch 3 Pro Dark Grey /6974434225312,,,,55000
+zigzag,Nothing CMF Watch 3 Pro Dark Grey /6974434225312,,,https://www.zigzag.am/am/nothing-cmf-watch-3-pro-dark-grey-6974434225312.html,55000,,,2026-09-20
 zigzag,Garmin Instinct 2X Solar - Tactical Edition Coyote,,,https://www.zigzag.am/am/garmin-instinct-2x-solar-tactical-edition-coyote.html,166500
 zigzag,Garmin Venu 4 - 41 mm Lunar Gold,,,https://www.zigzag.am/am/garmin-venu-4-41-mm-lunar-gold.html,239000
 zigzag,Garmin Venu 4 - 41 mm Black,,,https://www.zigzag.am/am/garmin-venu-4-41-mm-black.html,239000
@@ -1466,8 +1186,8 @@ zigzag,Garmin vivoactive® 6 Lunar Gold,,,https://www.zigzag.am/am/garmin-vivoac
 zigzag,Garmin vivoactive® 6 Black,,,https://www.zigzag.am/am/garmin-vivoactiver-6-black.html,144000
 zigzag,Garmin Instinct 3  50mm Solar,,,https://www.zigzag.am/am/garmin-instinct-3-50mm-solar.html,158400
 zigzag,Garmin Instinct 3  50mm AMOLED,,,https://www.zigzag.am/am/garmin-instinct-3-50mm-amoled.html,176000
-zigzag,Honor Watch 5 Green STL-B19 /5502ABGJ,,,,64900
-zigzag,Samsung Galaxy Watch 7 Ultra 47mm Gray /SM-L705F,,,,229900
+zigzag,Honor Watch 5 Green STL-B19 /5502ABGJ,,,https://www.zigzag.am/am/honor-watch-5-green-stl-b19-5502abgj.html,64900,,,2026-09-20
+zigzag,Samsung Galaxy Watch 7 Ultra 47mm Gray /SM-L705F,,,https://www.zigzag.am/am/samsung-galaxy-watch-7-ultra-47mm-gray-sm-l705f.html,229900,,,2026-09-20
 zigzag,Garmin Fenix 8 – 47 mm  AMOLED Sapphire  Titanium with Vented titanium bracelet,,,https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled.html,532000
 zigzag,Garmin Fenix 8 – 47 mm  AMOLED Slate Gray,,,https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-slate-gray.html,348000
 zigzag,Garmin Fenix 8 – 47 mm  AMOLED Sapphire Carbon Gray Titanium,,,https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-sapphire-carbon-gray-titanium.html,386280
@@ -1482,14 +1202,14 @@ zigzag,Garmin Instinct 2X Solar Moss,,,https://www.zigzag.am/am/garmin-instinct-
 zigzag,Garmin Venu 3 Black leather,,,https://www.zigzag.am/am/garmin-venu-3-black-leather.html,179100
 zigzag,Garmin Venu 3s French grey,,,https://www.zigzag.am/am/garmin-venu-3s-french-grey.html,189000
 zigzag,Garmin Fenix 7X Pro – Sapphire Solar Edition,,,https://www.zigzag.am/am/garmin-fenix-7x-pro-sapphire-solar-edition.html,329000
-zigzag,Xiaomi Redmi Note 17 5G 6GB/128GB Celestial Purple,6,,,97900
-zigzag,Xiaomi POCO M8 5G 8GB/256GB Black,8,,,111900
-zigzag,Xiaomi POCO M8 5G 8GB/256GB Silver,8,,,111900
-zigzag,Xiaomi Redmi Note 17 4G 8GB/256GB Black,8,,,129900
-zigzag,Xiaomi Redmi Note 17 4G 8GB/256GB Celestial Purple,8,,,129900
-zigzag,Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Black,8,,,174900
-zigzag,Xiaomi Redmi Note 17 Pro Max 5G 8GB/512GB Black,8,,,191900
-zigzag,Google Pixel 10 Pro Fold 512GB Moonstone /GU0NP,512,,,919000
+zigzag,Xiaomi Redmi Note 17 5G 6GB/128GB Celestial Purple,6,,https://www.zigzag.am/am/xiaomi-redmi-note-17-5g-6gb-128gb-celestial-purple.html,97900,,,2026-09-20
+zigzag,Xiaomi POCO M8 5G 8GB/256GB Black,8,,https://www.zigzag.am/am/xiaomi-poco-m8-5g-8gb-256gb-black.html,111900,,,2026-09-20
+zigzag,Xiaomi POCO M8 5G 8GB/256GB Silver,8,,https://www.zigzag.am/am/xiaomi-poco-m8-5g-8gb-256gb-silver.html,111900,,,2026-09-20
+zigzag,Xiaomi Redmi Note 17 4G 8GB/256GB Black,8,,https://www.zigzag.am/am/xiaomi-redmi-note-17-4g-8gb-256gb-black.html,129900,,,2026-09-20
+zigzag,Xiaomi Redmi Note 17 4G 8GB/256GB Celestial Purple,8,,https://www.zigzag.am/am/xiaomi-redmi-note-17-4g-8gb-256gb-celestial-purple.html,129900,,,2026-09-20
+zigzag,Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Black,8,,https://www.zigzag.am/am/xiaomi-redmi-note-17-pro-max-5g-8gb-256gb-black.html,174900,,,2026-09-20
+zigzag,Xiaomi Redmi Note 17 Pro Max 5G 8GB/512GB Black,8,,https://www.zigzag.am/am/xiaomi-redmi-note-17-pro-max-5g-8gb-512gb-black.html,191900,,,2026-09-20
+zigzag,Google Pixel 10 Pro Fold 512GB Moonstone /GU0NP,512,,https://www.zigzag.am/am/google-pixel-10-pro-fold-512gb-moonstone-gu0np.html,919000,,,2026-09-20
 ibolit,Apple HomePod Mini Black,,,https://ibolit.mobi/product/apple-homepod-mini-black/,59900
 ibolit,Apple HomePod Mini Blue,,,https://ibolit.mobi/product/apple-homepod-mini-blue/,59900
 ibolit,Apple HomePod Mini Orange,,,https://ibolit.mobi/product/apple-homepod-mini-orange/,59900
@@ -2164,3 +1884,222 @@ vlv,SAMSUNG A08 (A085) 4/128GB Dark Blue,128,,https://vlv.am/en/Product/49086,84
 vlv,XIAOMI Redmi A7 Pro 4/128GB Mist Blue,128,,https://vlv.am/en/Product/49039,63900
 vlv,XIAOMI Redmi A7 Pro 4/128GB Black,128,,https://vlv.am/en/Product/46875,63900
 vlv,SAMSUNG A07s (A077) 4/64GB Black,64,,https://vlv.am/en/Product/49085,59900
+notebookcentre,Yandex Station Street,,,https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030,99900,,,2026-09-20
+notebookcentre,Apple EarPods Lightning,,,https://notebookcentre.am/en/product/apple-earpods-lightning-connector,10000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Blue / 128 GB,128,Blue,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-blue-128-gb,439000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Purple / 128 GB,128,Purple,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-purple-128-gb,439000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Starlight / 256 GB,256,Starlight,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-starlight-256-gb,499000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi + Cellular,,,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-cellular,499000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Blue / 256 GB,256,Blue,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-blue-256-gb,499000,,,2026-09-20
+notebookcentre,iPad Pro 11 M5 WiFi Silver / 256 GB,256,Silver,https://notebookcentre.am/en/product/ipad-pro-11-m5-wifi-silver-256-gb,479000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Space Gray / 256 GB,256,Space Gray,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-space-gray-256-gb,499000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Purple / 256 GB,256,Purple,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-purple-256-gb,499000,,,2026-09-20
+notebookcentre,iPad Pro 11 M5 WiFi Silver / 512 GB,512,Silver,https://notebookcentre.am/en/product/ipad-pro-11-m5-wifi-silver-512-gb,559000,,,2026-09-20
+notebookcentre,iPad Pro 11 M5 WiFi Space Black / 512 GB,512,Space Black,https://notebookcentre.am/en/product/ipad-pro-11-m5-wifi-space-black-512-gb,559000,,,2026-09-20
+notebookcentre,iPad Pro 13 M5 WiFi Silver / 256 GB,256,Silver,https://notebookcentre.am/en/product/ipad-pro-13-m5-wifi-silver-256-gb,595000,,,2026-09-20
+notebookcentre,iPad Pro 13 M5 WiFi Space Black / 256 GB,256,Space Black,https://notebookcentre.am/en/product/ipad-pro-13-m5-wifi-space-black-256-gb,595000,,,2026-09-20
+notebookcentre,Apple iPad Pro 13 (2025) M5 WIFI,,,https://notebookcentre.am/en/product/apple-ipad-pro-13-2025-m5-wifi,659000,,,2026-09-20
+notebookcentre,Samsung Galaxy Z Fold 8,,,https://notebookcentre.am/en/product/samsung-galaxy-z-fold-8,619000,,,2026-09-20
+notebookcentre,Samsung Galaxy Z Fold 8 Lavender,,Lavender,https://notebookcentre.am/en/product/samsung-galaxy-z-fold-8-lavender,619000,,,2026-09-20
+notebookcentre,Samsung Galaxy Z Fold 8 Cream,,Cream,https://notebookcentre.am/en/product/samsung-galaxy-z-fold-8-cream,619000,,,2026-09-20
+notebookcentre,Xiaomi Redmi Pad 2 9.7 4G (2604ERP4DG),,,https://notebookcentre.am/en/product/xiaomi-redmi-pad-2-9-7-4g-2604erp4dg,83900,,,2026-09-20
+notebookcentre,Xiaomi Redmi Pad 2 4G (2505DRP06G),,,https://notebookcentre.am/en/product/xiaomi-redmi-pad-2-4g-2505drp06g,119900,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Yellow / 128 GB,128,Yellow,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-yellow-128-gb,199000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Pink / 128 GB,128,Pink,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-pink-128-gb,199000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Blue / 128 GB,128,Blue,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-blue-128-gb,199000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi,,,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi,199000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi + Cellular Yellow / 128 GB,128,Yellow,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-cellular-yellow-128-gb,239000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Blue / 256 GB,256,Blue,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-blue-256-gb,249000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Silver / 256 GB,256,Silver,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-silver-256-gb,249000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Yellow / 256 GB,256,Yellow,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-yellow-256-gb,249000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi Pink / 256 GB,256,Pink,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-pink-256-gb,249000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi + Cellular Blue / 128 GB,128,Blue,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-cellular-blue-128-gb,239000,,,2026-09-20
+notebookcentre,Sony PlayStation Portal,,,https://notebookcentre.am/en/product/sony-playstation-portal,129000,,,2026-09-20
+notebookcentre,Microsoft Xbox Series S 1Tb (EP2-00645) White,,White,https://notebookcentre.am/en/product/microsoft-xbox-series-s-1tb-ep2-00645-white,219000,,,2026-09-20
+notebookcentre,PlayStation 5 Slim (Digital),,,https://notebookcentre.am/en/product/playstation-5-slim-digital,309000,,,2026-09-20
+notebookcentre,PlayStation 5 Slim,,,https://notebookcentre.am/en/product/playstation-5-slim,339000,,,2026-09-20
+notebookcentre,Playstation 5 Pro,,,https://notebookcentre.am/en/product/playstation-5-pro,559000,,,2026-09-20
+notebookcentre,Samsung Galaxy Watch 8 40mm Silver,,Silver,https://notebookcentre.am/en/product/samsung-galaxy-watch-8-40mm-silver,108000,,,2026-09-20
+notebookcentre,Samsung Galaxy Watch 8 44mm Silver,,Silver,https://notebookcentre.am/en/product/samsung-galaxy-watch-8-44mm-silver,120000,,,2026-09-20
+notebookcentre,Apple Watch SE 3 40mm Starlight,,Starlight,https://notebookcentre.am/en/product/apple-watch-se-3-40mm-starlight,134000,,,2026-09-20
+notebookcentre,Apple Watch SE 3 44mm Midnight,,Midnight,https://notebookcentre.am/en/product/apple-watch-se-3-44mm-midnight,144000,,,2026-09-20
+notebookcentre,Apple Watch 11 42mm Space Gray,,,https://notebookcentre.am/en/product/apple-watch-11-42mm-space-gray,155000,,,2026-09-20
+notebookcentre,Apple Watch 11 42mm Silver,,Silver,https://notebookcentre.am/en/product/apple-watch-11-42mm-silver,155000,,,2026-09-20
+notebookcentre,Apple Watch 11 42mm Rose Gold,,Rose Gold,https://notebookcentre.am/en/product/apple-watch-11-42mm-rose-gold,155000,,,2026-09-20
+notebookcentre,Apple Watch 11 46mm Silver,,Silver,https://notebookcentre.am/en/product/apple-watch-11-46mm-silver,165000,,,2026-09-20
+notebookcentre,Apple Watch 11 46mm Rose Gold,,Rose Gold,https://notebookcentre.am/en/product/apple-watch-11-46mm-rose-gold,165000,,,2026-09-20
+notebookcentre,Apple Watch 11 46mm Space Gray,,,https://notebookcentre.am/en/product/apple-watch-11-46mm-space-gray,165000,,,2026-09-20
+notebookcentre,Apple Watch Ultra 3 49MM Black,,,https://notebookcentre.am/en/product/apple-watch-ultra-3-49mm-black,359000,,,2026-09-20
+notebookcentre,Xiaomi Smart Band 10 (Midnight Black) BHR07PYGL,,Black,https://notebookcentre.am/en/product/xiaomi-smart-band-10-midnight-black-bhr07pygl,25000,,,2026-09-20
+notebookcentre,Samsung Galaxy Watch 8 40mm,,,https://notebookcentre.am/en/product/samsung-galaxy-watch-8-40mm,108000,,,2026-09-20
+notebookcentre,Apple Watch SE 3 40mm,,,https://notebookcentre.am/en/product/apple-watch-se-3-40mm,119000,,,2026-09-20
+notebookcentre,Samsung Galaxy Watch 8 44mm,,,https://notebookcentre.am/en/product/samsung-galaxy-watch-8-44mm,120000,,,2026-09-20
+notebookcentre,Apple Watch SE 3 44mm,,,https://notebookcentre.am/en/product/apple-watch-se-3-44mm,129000,,,2026-09-20
+notebookcentre,Samsung Galaxy Watch 8 Classic 46mm,,,https://notebookcentre.am/en/product/samsung-galaxy-watch-8-classic-46mm,148000,,,2026-09-20
+notebookcentre,Apple Watch 11 42mm,,,https://notebookcentre.am/en/product/apple-watch-11-42mm,155000,,,2026-09-20
+notebookcentre,Apple Watch 11 46mm,,,https://notebookcentre.am/en/product/apple-watch-11-46mm,165000,,,2026-09-20
+notebookcentre,Apple Watch Ultra 3 49MM,,,https://notebookcentre.am/en/product/apple-watch-ultra-3-49mm,359000,,,2026-09-20
+notebookcentre,Marshall Major V Cream,,Cream,https://notebookcentre.am/en/product/marshall-major-v-cream,55000,,,2026-09-20
+notebookcentre,Marshall Major V Blue,,,https://notebookcentre.am/en/product/marshall-major-v-blue,55000,,,2026-09-20
+notebookcentre,Apple AirPods Max (Type-C) Midnight,,Midnight,https://notebookcentre.am/en/product/apple-airpods-max-type-c-midnight,239000,,,2026-09-20
+notebookcentre,Apple AirPods Max (Type-C) Starlight,,Starlight,https://notebookcentre.am/en/product/apple-airpods-max-type-c-starlight,239000,,,2026-09-20
+notebookcentre,Apple AirPods Max (Type-C) Purple,,Purple,https://notebookcentre.am/en/product/apple-airpods-max-type-c-purple,239000,,,2026-09-20
+notebookcentre,Apple AirPods Max (Type-C) Orange,,Orange,https://notebookcentre.am/en/product/apple-airpods-max-type-c-orange,239000,,,2026-09-20
+notebookcentre,Apple Earpods Lightning Connector,,,https://notebookcentre.am/en/product/apple-earpods-lightning-connector,10000,,,2026-09-20
+notebookcentre,Apple Earpods USB-C,,,https://notebookcentre.am/en/product/apple-earpods-usb-c,10000,,,2026-09-20
+notebookcentre,Samsung Galaxy Buds FE,,,https://notebookcentre.am/en/product/samsung-galaxy-buds-fe,36000,,,2026-09-20
+notebookcentre,Marshall Major IV,,,https://notebookcentre.am/en/product/marshall-major-iv,45900,,,2026-09-20
+notebookcentre,Marshall Major V,,,https://notebookcentre.am/en/product/marshall-major-v,55000,,,2026-09-20
+notebookcentre,Apple Airpods 4,,,https://notebookcentre.am/en/product/apple-airpods-4,57000,,,2026-09-20
+notebookcentre,Samsung Galaxy Buds 3 Pro,,,https://notebookcentre.am/en/product/samsung-galaxy-buds-3-pro,69000,,,2026-09-20
+notebookcentre,Apple Airpods 4 ANC (Active Noise Cancellation),,,https://notebookcentre.am/en/product/apple-airpods-4-anc-active-noise-cancellation,79000,,,2026-09-20
+notebookcentre,Apple Airpods Pro 2 (Type-C),,,https://notebookcentre.am/en/product/apple-airpods-pro-2-type-c,84000,,,2026-09-20
+notebookcentre,Apple Airpods Pro 3,,,https://notebookcentre.am/en/product/apple-airpods-pro-3,105000,,,2026-09-20
+notebookcentre,Airpods Max (Type-C),,,https://notebookcentre.am/en/product/airpods-max-type-c,199000,,,2026-09-20
+notebookcentre,Airpods Max2,,,https://notebookcentre.am/en/product/airpods-max2,269000,,,2026-09-20
+notebookcentre,HP 15-fd0113dx (C0CM1UA),,,https://notebookcentre.am/en/product/hp-15-fd0113dx-c0cm1ua,179000,,,2026-09-20
+notebookcentre,Asus VivoBook X1404VA-I38128,,,https://notebookcentre.am/en/product/asus-vivobook-x1404va-i38128,199000,,,2026-09-20
+notebookcentre,HP 15-fd0531nia (B82HWEA/8),,,https://notebookcentre.am/en/product/hp-15-fd0531nia-b82hwea-8,229000,,,2026-09-20
+notebookcentre,HP OmniBook 3 17-dg0107dx  (D7NF3UA),,,https://notebookcentre.am/en/product/hp-omnibook-3-17-dg0107dx-d7nf3ua,465000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 MDE04 Space Black (2025),,Space Black,https://notebookcentre.am/en/product/macbook-pro-14-m5-mde04-space-black-2025,849000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 MDE44 Silver (2025),,Silver,https://notebookcentre.am/en/product/macbook-pro-14-m5-mde44-silver-2025,849000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 MDE54 Silver (2025),,Silver,https://notebookcentre.am/en/product/macbook-pro-14-m5-mde54-silver-2025,879000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 MDE34 Space Black (2025),,Space Black,https://notebookcentre.am/en/product/macbook-pro-14-m5-mde34-space-black-2025,989000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 MDE64 Silver (2025),,Silver,https://notebookcentre.am/en/product/macbook-pro-14-m5-mde64-silver-2025,989000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M4 Pro MX2J3 (2024) Space Black,,Space Black,https://notebookcentre.am/en/product/macbook-pro-14-m4-pro-mx2j3-2024-space-black,1099000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 Pro MGDR4 (2026),,,https://notebookcentre.am/en/product/macbook-pro-14-m5-pro-mgdr4-2026,1159000,,,2026-09-20
+notebookcentre,MacBook Pro 14 M5 Pro MGDN4 Silver (2026),,Silver,https://notebookcentre.am/en/product/macbook-pro-14-m5-pro-mgdn4-silver-2026,1159000,,,2026-09-20
+notebookcentre,Samsung Galaxy A26,,,https://notebookcentre.am/en/product/samsung-galaxy-a26,109000,,,2026-09-20
+notebookcentre,Xiaomi Redmi Note 15 Pro,,,https://notebookcentre.am/en/product/xiaomi-redmi-note-15-pro,134900,,,2026-09-20
+notebookcentre,Xiaomi Redmi Note 15 Pro Titanium Gray / 256 GB,256,Titanium,https://notebookcentre.am/en/product/xiaomi-redmi-note-15-pro-titanium-gray-256-gb,134900,,,2026-09-20
+notebookcentre,Xiaomi Redmi Note 15 Pro Black / 256 GB,256,Black,https://notebookcentre.am/en/product/xiaomi-redmi-note-15-pro-black-256-gb,134900,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome Lavender / 8 GB / 128 GB,128,,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-lavender-8-gb-128-gb,149000,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome White / 8 GB / 128 GB,128,White,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-white-8-gb-128-gb,149000,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome Charcoal / 8 GB / 128 GB,128,Awesome Charcoal,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-charcoal-8-gb-128-gb,149000,,,2026-09-20
+notebookcentre,Samsung Galaxy A37,,,https://notebookcentre.am/en/product/samsung-galaxy-a37,149000,,,2026-09-20
+notebookcentre,Xiaomi Redmi Note 15 Pro Titanium Gray / 512 GB,512,Titanium,https://notebookcentre.am/en/product/xiaomi-redmi-note-15-pro-titanium-gray-512-gb,152900,,,2026-09-20
+notebookcentre,Xiaomi Redmi Note 15 Pro Black / 512 GB,512,Black,https://notebookcentre.am/en/product/xiaomi-redmi-note-15-pro-black-512-gb,152900,,,2026-09-20
+notebookcentre,Xiaomi Redmi Note 15 Pro Glacier Blue / 512 GB,512,Glacier Blue,https://notebookcentre.am/en/product/xiaomi-redmi-note-15-pro-glacier-blue-512-gb,152900,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome Lavender / 8 GB / 256 GB,256,,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-lavender-8-gb-256-gb,165000,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome White / 8 GB / 256 GB,256,White,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-white-8-gb-256-gb,165000,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome Graygreen / 8 GB / 256 GB,256,,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-graygreen-8-gb-256-gb,165000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Navy / 128 GB / 8 GB,128,Awesome Navy,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-navy-128-gb-8-gb,169000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Icyblue / 128 GB / 8 GB,128,Awesome Icyblue,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-icyblue-128-gb-8-gb,169000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57,,,https://notebookcentre.am/en/product/samsung-galaxy-a57,169000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Gray / 128 GB / 8 GB,128,,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-gray-128-gb-8-gb,169000,,,2026-09-20
+notebookcentre,Samsung Galaxy A37 Awesome Charcoal / 8 GB / 256 GB,256,Awesome Charcoal,https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-charcoal-8-gb-256-gb,179000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Lilac / 256 GB / 8 GB,256,Awesome Lilac,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-lilac-256-gb-8-gb,189000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Gray / 256 GB / 8 GB,256,,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-gray-256-gb-8-gb,189000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Navy / 256 GB / 8 GB,256,Awesome Navy,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-navy-256-gb-8-gb,189000,,,2026-09-20
+notebookcentre,Samsung Galaxy A57 Awesome Icyblue / 256 GB / 8 GB,256,Awesome Icyblue,https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-icyblue-256-gb-8-gb,189000,,,2026-09-20
+notebookcentre,iPhone 16,,,https://notebookcentre.am/en/product/iphone-16,365000,,,2026-09-20
+notebookcentre,iPhone 16 Ultramarine / 128 GB,128,Ultramarine,https://notebookcentre.am/en/product/iphone-16-ultramarine-128-gb,365000,,,2026-09-20
+notebookcentre,iPhone 16 Pink / 128 GB,128,Pink,https://notebookcentre.am/en/product/iphone-16-pink-128-gb,365000,,,2026-09-20
+notebookcentre,iPhone 16 White / 128 GB,128,White,https://notebookcentre.am/en/product/iphone-16-white-128-gb,365000,,,2026-09-20
+notebookcentre,iPhone 16 Black / 128 GB,128,Black,https://notebookcentre.am/en/product/iphone-16-black-128-gb,365000,,,2026-09-20
+notebookcentre,Samsung Galaxy S25 Edge,,,https://notebookcentre.am/en/product/samsung-galaxy-s25-edge,319000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Sky Blue / 256 GB,256,Sky Blue,https://notebookcentre.am/en/product/samsung-galaxy-s26-sky-blue-256-gb-2,319000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Silver Shadow / 256 GB,256,,https://notebookcentre.am/en/product/samsung-galaxy-s26-silver-shadow-256-gb,319000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Cobalt Violet / 256 GB,256,Cobalt Violet,https://notebookcentre.am/en/product/samsung-galaxy-s26-cobalt-violet-256-gb,319000,,,2026-09-20
+notebookcentre,Xiaomi 17T Pro,,,https://notebookcentre.am/en/product/xiaomi-17t-pro,327900,,,2026-09-20
+notebookcentre,Xiaomi 17T Pro Deep Blue,,,https://notebookcentre.am/en/product/xiaomi-17t-pro-deep-blue,346900,,,2026-09-20
+notebookcentre,Samsung Galaxy S26,,,https://notebookcentre.am/en/product/samsung-galaxy-s26-2,319000,,,2026-09-20
+notebookcentre,iPhone 16 Teal / 256 GB,256,Teal,https://notebookcentre.am/en/product/iphone-16-teal-256-gb,399000,,,2026-09-20
+notebookcentre,iPhone 16 Black / 256 GB,256,Black,https://notebookcentre.am/en/product/iphone-16-black-256-gb,399000,,,2026-09-20
+notebookcentre,Xiaomi 17T Pro Deep Violet,,Deep Violet,https://notebookcentre.am/en/product/xiaomi-17t-pro-deep-violet,346900,,,2026-09-20
+notebookcentre,Xiaomi 17T Pro Black,,Black,https://notebookcentre.am/en/product/xiaomi-17t-pro-black,346900,,,2026-09-20
+notebookcentre,Samsung Galaxy S26+,,,https://notebookcentre.am/en/product/samsung-galaxy-s26,349000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26+ Sky Blue / 256 GB,256,Sky Blue,https://notebookcentre.am/en/product/samsung-galaxy-s26-sky-blue-256-gb,349000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Cobalt Violet / 512 GB,512,Cobalt Violet,https://notebookcentre.am/en/product/samsung-galaxy-s26-cobalt-violet-512-gb-2,359000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Black / 512 GB,512,Black,https://notebookcentre.am/en/product/samsung-galaxy-s26-black-512-gb-2,359000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Sky Blue / 512 GB,512,Sky Blue,https://notebookcentre.am/en/product/samsung-galaxy-s26-sky-blue-512-gb-2,359000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Silver Shadow / 512 GB,512,,https://notebookcentre.am/en/product/samsung-galaxy-s26-silver-shadow-512-gb,359000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 White / 512 GB,512,White,https://notebookcentre.am/en/product/samsung-galaxy-s26-white-512-gb-2,359000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra,,,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra,399000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Black / 12 GB / 256 GB,256,Black,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-black-12-gb-256-gb,399000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra White / 12 GB / 256 GB,256,White,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-white-12-gb-256-gb,399000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Cobalt Violet / 12 GB / 256 GB,256,Cobalt Violet,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-12-gb-256-gb,399000,,,2026-09-20
+notebookcentre,Samsung Galaxy S25 Edge Titanium Jetblack / 512 GB,512,Titanium Jetblack,https://notebookcentre.am/en/product/samsung-galaxy-s25-edge-titanium-jetblack-512-gb,389000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26+ Sky Blue / 512 GB,512,Sky Blue,https://notebookcentre.am/en/product/samsung-galaxy-s26-sky-blue-512-gb,409000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26+ Cobalt Violet / 512 GB,512,Cobalt Violet,https://notebookcentre.am/en/product/samsung-galaxy-s26-cobalt-violet-512-gb,409000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26+ White / 512 GB,512,White,https://notebookcentre.am/en/product/samsung-galaxy-s26-white-512-gb,409000,,,2026-09-20
+notebookcentre,iPhone Air,,,https://notebookcentre.am/en/product/iphone-air,395000,,,2026-09-20
+notebookcentre,iPhone Air Space Black / eSim / 256 GB,256,Space Black,https://notebookcentre.am/en/product/iphone-air-space-black-esim-256-gb,395000,,,2026-09-20
+notebookcentre,iPhone Air Light Gold / eSim / 256 GB,256,Light Gold,https://notebookcentre.am/en/product/iphone-air-light-gold-esim-256-gb,395000,,,2026-09-20
+notebookcentre,iPhone Air Cloud White / eSim / 256 GB,256,Cloud White,https://notebookcentre.am/en/product/iphone-air-cloud-white-esim-256-gb,395000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi + Cellular,,,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-cellular,399000,,,2026-09-20
+notebookcentre,iPhone 17,,,https://notebookcentre.am/en/product/iphone-17,363000,,,2026-09-20
+notebookcentre,iPhone 17 White / Nano-SIM / 256 GB,256,White,https://notebookcentre.am/en/product/iphone-17-white-nano-sim-256-gb,429000,,,2026-09-20
+notebookcentre,iPhone 17 Sage / Nano-SIM / 256 GB,256,Sage,https://notebookcentre.am/en/product/iphone-17-sage-nano-sim-256-gb,429000,,,2026-09-20
+notebookcentre,iPhone 17 Mist Blue / Nano-SIM / 256 GB,256,Mist Blue,https://notebookcentre.am/en/product/iphone-17-mist-blue-nano-sim-256-gb,429000,,,2026-09-20
+notebookcentre,iPhone 17 Lavender / Nano-SIM / 256 GB,256,Lavender,https://notebookcentre.am/en/product/iphone-17-lavender-nano-sim-256-gb,429000,,,2026-09-20
+notebookcentre,iPhone 17 Black / Nano-SIM / 256 GB,256,Black,https://notebookcentre.am/en/product/iphone-17-black-nano-sim-256-gb,429000,,,2026-09-20
+notebookcentre,iPhone Air Space Black / eSim / 512 GB,512,Space Black,https://notebookcentre.am/en/product/iphone-air-space-black-esim-512-gb,449000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Black / 12 GB / 512 GB,512,Black,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-black-12-gb-512-gb,479000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra White / 12 GB / 512 GB,512,White,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-white-12-gb-512-gb,479000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Cobalt Violet / 12 GB / 512 GB,512,Cobalt Violet,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-12-gb-512-gb,479000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Sky Blue / 12 GB / 512 GB,512,Blue,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-sky-blue-12-gb-512-gb,479000,,,2026-09-20
+notebookcentre,iPhone 17 Pro,,,https://notebookcentre.am/en/product/iphone-17-pro,475000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Silver / eSim / 256 GB,256,Silver,https://notebookcentre.am/en/product/iphone-17-pro-silver-esim-256-gb,475000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Deep Blue / eSim / 256 GB,256,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-esim-256-gb,475000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Silver / Nano-SIM / 256 GB,256,Silver,https://notebookcentre.am/en/product/iphone-17-pro-silver-nano-sim-256-gb,509000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Deep Blue / Nano-SIM / 256 GB,256,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-nano-sim-256-gb,509000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Cosmic Orange / Nano-SIM / 256 GB,256,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-cosmic-orange-nano-sim-256-gb,509000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max,,,https://notebookcentre.am/en/product/iphone-17-pro-max,515000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / eSIm / 256 GB,256,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-esim-256-gb,515000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 256 GB,256,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-esim-256-gb,515000,,,2026-09-20
+notebookcentre,Samsung Galaxy Z Fold 7,,,https://notebookcentre.am/en/product/samsung-galaxy-z-fold-7,539000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 256 GB,256,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-nano-sim-256-gb,559000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 256 GB,256,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-nano-sim-256-gb,559000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 256 GB,256,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-nano-sim-256-gb,559000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Silver / eSim / 512 GB,512,Silver,https://notebookcentre.am/en/product/iphone-17-pro-silver-esim-512-gb,559000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Cosmic Orange / eSim / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-cosmic-orange-esim-512-gb,559000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Deep Blue / eSim / 512 GB,512,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-esim-512-gb,559000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Deep Blue / Nano-SIM / 512 GB,512,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-nano-sim-512-gb,589000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Cosmic Orange / Nano-SIM / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-cosmic-orange-nano-sim-512-gb,589000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / eSim / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-esim-512-gb,609000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 512 GB,512,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-esim-512-gb,609000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / eSim / 512 GB,512,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-esim-512-gb,609000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Black / 16 GB / 1 TB,1024,Black,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-black-16-gb-1-tb,629000,,,2026-09-20
+notebookcentre,Samsung Galaxy S26 Ultra Cobalt Violet / 16 GB / 1 TB,1024,Cobalt Violet,https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-16-gb-1-tb,629000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 512 GB,512,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-nano-sim-512-gb,639000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 512 GB,512,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-nano-sim-512-gb,639000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 512 GB,512,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-nano-sim-512-gb,639000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Silver / eSim / 1 TB,1024,Silver,https://notebookcentre.am/en/product/iphone-17-pro-silver-esim-1-tb,669000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Deep Blue / eSim / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-esim-1-tb,669000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Cosmic Orange / eSim / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-cosmic-orange-esim-1-tb,669000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / eSim / 1 TB,1024,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-esim-1-tb,689000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / eSim / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-esim-1-tb,689000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-esim-1-tb,689000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Silver / Nano-SIM / 1 TB,1024,Silver,https://notebookcentre.am/en/product/iphone-17-pro-silver-nano-sim-1-tb,699000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Deep Blue / Nano-SIM / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-nano-sim-1-tb,699000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Cosmic Orange / Nano-SIM / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-cosmic-orange-nano-sim-1-tb,699000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 1 TB,1024,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-nano-sim-1-tb,749000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 1 TB,1024,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-nano-sim-1-tb,749000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 1 TB,1024,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-nano-sim-1-tb,749000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / eSim / 2 TB,2048,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-esim-2-tb,809000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / eSim / 2 TB,2048,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-esim-2-tb,809000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 2 TB,2048,Cosmic Orange,https://notebookcentre.am/en/product/iphone-17-pro-max-cosmic-orange-nano-sim-2-tb,939000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Deep Blue / Nano-SIM / 2 TB,2048,Deep Blue,https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-nano-sim-2-tb,939000,,,2026-09-20
+notebookcentre,iPhone 17 Pro Max Silver / Nano-SIM / 2 TB,2048,Silver,https://notebookcentre.am/en/product/iphone-17-pro-max-silver-nano-sim-2-tb,939000,,,2026-09-20
+notebookcentre,Samsung Galaxy A07,,,https://notebookcentre.am/en/product/samsung-galaxy-a07,52000,,,2026-09-20
+notebookcentre,Samsung Galaxy A07 Light Violet / 64 GB,64,Light Violet,https://notebookcentre.am/en/product/samsung-galaxy-a07-light-violet-64-gb,52000,,,2026-09-20
+notebookcentre,Xiaomi Poco C85 Black / 6 GB / 128 GB,128,Black,https://notebookcentre.am/en/product/xiaomi-poco-c85-black-6-gb-128-gb,58000,,,2026-09-20
+notebookcentre,Xiaomi Poco C85,,,https://notebookcentre.am/en/product/xiaomi-poco-c85,58000,,,2026-09-20
+notebookcentre,Samsung Galaxy A07 Light Violet / 128 GB,128,Light Violet,https://notebookcentre.am/en/product/samsung-galaxy-a07-light-violet-128-gb,58000,,,2026-09-20
+notebookcentre,Xiaomi Poco C85 Power Black / 8 GB / 256 GB,256,Black,https://notebookcentre.am/en/product/xiaomi-poco-c85-power-black-8-gb-256-gb,69000,,,2026-09-20
+notebookcentre,Xiaomi Poco C85 Spring Green / 8 GB / 256 GB,256,Green,https://notebookcentre.am/en/product/xiaomi-poco-c85-spring-green-8-gb-256-gb,69000,,,2026-09-20
+notebookcentre,Samsung Galaxy A17,,,https://notebookcentre.am/en/product/samsung-galaxy-a17,72000,,,2026-09-20
+notebookcentre,Samsung Galaxy A17 Light Blue,,Blue,https://notebookcentre.am/en/product/samsung-galaxy-a17-light-blue,72000,,,2026-09-20
+notebookcentre,iPad 11 A16 (2025) WiFi + Cellular Pink / 128 GB,128,Pink,https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-cellular-pink-128-gb,239000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Blue / 128 GB,128,Blue,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-blue-128-gb,319000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Purple / 128 GB,128,Purple,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-purple-128-gb,319000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Starlight / 128 GB,128,Starlight,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-starlight-128-gb,319000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Starlight / 256 GB,256,Starlight,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-starlight-256-gb,399000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Blue / 256 GB,256,Blue,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-blue-256-gb,399000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Purple / 256 GB,256,Purple,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-purple-256-gb,399000,,,2026-09-20
+notebookcentre,iPad Air 11 M4 WiFi Space Gray / 256 GB,256,Space Gray,https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-space-gray-256-gb,399000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Starlight / 128 GB,128,Starlight,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-starlight-128-gb,439000,,,2026-09-20
+notebookcentre,iPad Air 13 M4 WiFi Space Gray / 128 GB,128,Space Gray,https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-space-gray-128-gb,439000,,,2026-09-20
+notebookcentre,iPad Pro 13 M5 WiFi + Cellular Silver / 256 GB,256,Silver,https://notebookcentre.am/en/product/ipad-pro-13-m5-wifi-cellular-silver-256-gb,695000,,,2026-09-20
+notebookcentre,iPad Pro 13 M5 WiFi Space Black / 512 GB,512,Space Black,https://notebookcentre.am/en/product/ipad-pro-13-m5-wifi-space-black-512-gb,659000,,,2026-09-20
