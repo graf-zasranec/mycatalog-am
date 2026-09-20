@@ -26,7 +26,10 @@ const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.js
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
 // ("... - Warranty - AllSell") into our page and adds weight for nothing.
-for (const list of Object.values(PRICES.offers || {})) for (const o of list) { delete o.title; delete o.sku; delete o.image; }
+// ...and the id, which every offer repeated although the offers are already stored UNDER that
+// id. 4,949 copies of a key the reader is holding anyway: 135 KB of the page, for nothing. The
+// one place that read it had the product in scope all along.
+for (const list of Object.values(PRICES.offers || {})) for (const o of list) { delete o.title; delete o.sku; delete o.image; delete o.id; }
 
 // A configuration a shop actually sells is a real configuration. phones.json carries the spec
 // sheet, which lags: the MacBook Pro 14 sells at 512 GB, the Pixel 11 Pro XL at 12/256, and
@@ -101,11 +104,6 @@ if (RAMISH.length)
 // A price series for a product that left the catalogue is dead weight nothing can render.
 for (const k of Object.keys(HISTORY.points || {}))
   if (!phones.some(p => p.id === k)) { console.warn('  ! history for a product not in the catalogue:', k); delete HISTORY.points[k]; }
-
-// The page never renders an offer's title, photo or SKU - it renders the shop, price and link.
-// Shipping the rest is a large share of the inlined price blob for nothing.
-for (const list of Object.values(PRICES.offers || {}))
-  for (const o of list) { delete o.title; delete o.image; delete o.sku; }
 
 // transparent cutouts made by tools/cutout.mjs: images/cut/<phoneId>__<colourSlug>.webp
 // "<id>__main.webp" is the default shot; the rest are per-colour.
@@ -382,6 +380,9 @@ function build({ inline, standalone }) {
     + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\n`
     + (lazy ? 'let VERD={};\nlet HISTORY={points:{}};\nconst LAZYDATA=true;\n'
             : `const VERD=${JSON.stringify(VERD)};\nconst HISTORY=${JSON.stringify(HISTORY)};\nconst LAZYDATA=false;\n`)
+    // Wrapping this in JSON.parse was tried and measured: 268 ms to interactive against 294 ms
+    // for the literal, three loads each, same machine - 9% - and it cost 77 KB of backslashes.
+    // Not worth carrying the escaping for that, so the literal stays.
     + `const PRICES=${JSON.stringify(PRICES)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
     + `const COMING=${JSON.stringify(COMING)};\n`

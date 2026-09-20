@@ -1540,7 +1540,7 @@ function detailView(p) {
 
     ${!offs.length ? '' : `<h2 class="sh" id="buy">${esc(x('offersTitle'))} <em>${offs.length}</em></h2>`}
     ${offs.length ? `<ol class="olist" id="offList">
-      ${offs.map((o, i) => offerRow(o, lo, i, p.variantUnit, i >= OFFER_PEEK ? 'more' : '')).join('')}
+      ${offs.map((o, i) => offerRow(o, lo, i, p.variantUnit, i >= OFFER_PEEK ? 'more' : '', p)).join('')}
     </ol>
     ${offs.length > OFFER_PEEK ? `<button class="expand" data-expand="offList" aria-expanded="false" aria-controls="offList">
       ${esc(x('showAll'))} <b class="num">${offs.length}</b></button>` : ''}
@@ -1688,7 +1688,7 @@ const hasChoices = p => {
   return new Set(v.map(z => z.storage)).size > 1 || new Set(v.map(z => z.ram)).size > 1
     || ((p && p.colors) || []).length > 1;
 };
-function offerRow(o, lo, i, unit, cls) {
+function offerRow(o, lo, i, unit, cls, of) {
   // A row with no link was still an <a>, and safeHref turns a missing url into "#" - so it looked
   // clickable and clicking it threw you back to the front page. A price somebody read off a shelf
   // is worth showing; pretending it leads somewhere is not. No url, no link, and no arrow.
@@ -1705,7 +1705,7 @@ function offerRow(o, lo, i, unit, cls) {
          state is simply absent rather than guessed at. -->
     <span class="vr">${[
         o.size != null ? esc(inch(o.size)) : '',
-        o.storage ? esc(gb(o.storage, unit)) : (hasChoices(byId(o.id)) ? esc(x('variantUnknown')) : ''),
+        o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : ''),
         o.ram ? esc(o.ram + ' ' + u('gb')) : '',
       ].filter(Boolean).join(' · ')}${o.esim === true ? ' <i class="esim">eSIM</i>'
         : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
@@ -1767,7 +1767,7 @@ function offersView(p) {
           ? `<span class="cnt">${esc(x('saveUpTo'))} <b class="num">${money(hi - lo)} ֏</b></span>`
           : (tiers.size > 1 ? `<span class="cnt">${esc(x('pickCapacity'))}</span>` : '');
       })()}</div>
-    ${list.length ? `<ol class="olist">${list.map((o, i) => offerRow(o, lo, i, p.variantUnit)).join('')}</ol>`
+    ${list.length ? `<ol class="olist">${list.map((o, i) => offerRow(o, lo, i, p.variantUnit, '', p)).join('')}</ol>`
       : `<p class="empty" style="padding:30px 0"><b>${esc(x('noOffers'))}</b></p>`}
     <p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>
   </div>`;
