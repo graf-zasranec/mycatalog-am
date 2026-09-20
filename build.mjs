@@ -486,7 +486,18 @@ ${phones.map(p => ` <url><loc>${SITE}p/${p.id}/</loc><lastmod>${today}</lastmod>
 </urlset>
 `);
 fs.writeFileSync('index.html', build({ inline: false, standalone: true }));
-fs.writeFileSync('index.embedded.html', build({ inline: true, standalone: true }));
-fs.writeFileSync('artifact.html', build({ inline: true, standalone: false }));
+// The two single-file builds inline every photograph as a data URI. That was ~18 MB each when
+// this was written and is 211 MB each now, so a plain build wrote 422 MB nobody asked for -
+// GitHub Pages serves index.html and nothing else, and both files are gitignored. They are
+// still one command away for anyone who wants a self-contained copy to mail or to paste:
+//
+//   node build.mjs --all
+const written = ['index.html'];
+if (process.argv.includes('--all')) {
+  fs.writeFileSync('index.embedded.html', build({ inline: true, standalone: true }));
+  fs.writeFileSync('artifact.html', build({ inline: true, standalone: false }));
+  written.push('index.embedded.html', 'artifact.html');
+}
 const kb = f => (fs.statSync(f).size / 1024).toFixed(0) + ' KB';
-for (const f of ['index.html', 'index.embedded.html', 'artifact.html']) console.log(f.padEnd(22), kb(f));
+for (const f of written) console.log(f.padEnd(22), kb(f));
+if (written.length === 1) console.log('(single-file builds skipped - node build.mjs --all writes them)');
