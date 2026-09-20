@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1318,
- "missing": 233,
- "tooSmall": 57,
+ "missing": 207,
+ "tooSmall": 58,
  "products": [
   {
    "id": "apple-ultra-2",
@@ -77,16 +77,6 @@
    "width": 0
   },
   {
-   "id": "dyson-hd16-nural-plum",
-   "brand": "Dyson",
-   "name": "HD16 Supersonic Nural Jasper Plum",
-   "category": "appliance",
-   "shops": 2,
-   "query": "Dyson HD16 Supersonic Nural Jasper Plum",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "garmin-instinct-3-50mm-amoled",
    "brand": "Garmin",
    "name": "Instinct 3, AMOLED",
@@ -113,16 +103,6 @@
    "category": "tv",
    "shops": 2,
    "query": "Hisense 55E7Q PRO",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-200",
-   "brand": "Honor",
-   "name": "200",
-   "category": "phone",
-   "shops": 2,
-   "query": "Honor 200",
    "what": "missing",
    "width": 0
   },
@@ -597,86 +577,6 @@
    "width": 0
   },
   {
-   "id": "dyson-airstarit",
-   "brand": "Dyson",
-   "name": "AirStarit",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson AirStarit",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-er-hd07",
-   "brand": "Dyson",
-   "name": "Supersonic HD07",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic HD07",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd16-nural-velvet",
-   "brand": "Dyson",
-   "name": "HD16 Supersonic Nural Red Velvet",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson HD16 Supersonic Nural Red Velvet",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hd16-vinca-blue-topaz",
-   "brand": "Dyson",
-   "name": "HD16 Supersonic Vinca Blue/Topaz",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson HD16 Supersonic Vinca Blue/Topaz",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-id-multi-plum",
-   "brand": "Dyson",
-   "name": "HS08 Airwrap ID Multi- Jasper Plum",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson HS08 Airwrap ID Multi- Jasper Plum",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-hs08-id-multi-velvet-gold",
-   "brand": "Dyson",
-   "name": "HS08 Airwrap ID Multi- Red Velvet/Gold",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson HS08 Airwrap ID Multi- Red Velvet/Gold",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-nural-er",
-   "brand": "Dyson",
-   "name": "Supersonic Nural hair dryer",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic Nural hair dryer",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dyson-r-dh17",
-   "brand": "Dyson",
-   "name": "Supersonic r DH17",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Dyson Supersonic r DH17",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "dyson-zone-absoluteplus",
    "brand": "Dyson",
    "name": "Zone Absolute+",
@@ -713,16 +613,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Garmin CIRQA Smart Band",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-cirqa-smart-band-s-m",
-   "brand": "Garmin",
-   "name": "CIRQA Smart Band, Black, S-M",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin CIRQA Smart Band, Black, S-M",
    "what": "missing",
    "width": 0
   },
@@ -1077,36 +967,6 @@
    "width": 0
   },
   {
-   "id": "google-pixel-9",
-   "brand": "Google",
-   "name": "Pixel 9",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-9-pro",
-   "brand": "Google",
-   "name": "Pixel 9 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 9 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-9-pro-xl",
-   "brand": "Google",
-   "name": "Pixel 9 Pro XL",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 9 Pro XL",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hisense-32a4n",
    "brand": "Hisense",
    "name": "32A4N",
@@ -1253,16 +1113,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Honor MagicBook Pro 16",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-magicbook-x16-2025",
-   "brand": "Honor",
-   "name": "MagicBook X16 2025",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Honor MagicBook X16 2025",
    "what": "missing",
    "width": 0
   },
@@ -1697,26 +1547,6 @@
    "width": 0
   },
   {
-   "id": "marshall-acton-3",
-   "brand": "Marshall",
-   "name": "Acton 3",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Marshall Acton 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-woburn-3",
-   "brand": "Marshall",
-   "name": "Woburn 3",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Marshall Woburn 3",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "microsoft-surface-4",
    "brand": "Microsoft",
    "name": "Surface 4",
@@ -1793,36 +1623,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Samsung Galaxy Watch 7 Ultra",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-fe",
-   "brand": "Samsung",
-   "name": "Galaxy Watch FE",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch FE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-ultra-47mm-2024",
-   "brand": "Samsung",
-   "name": "Galaxy Watch Ultra 2024",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch Ultra 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-ultra-47mm-2025",
-   "brand": "Samsung",
-   "name": "Galaxy Watch Ultra 2025",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch Ultra 2025",
    "what": "missing",
    "width": 0
   },
@@ -2017,56 +1817,6 @@
    "width": 0
   },
   {
-   "id": "sony-ps5-backbone",
-   "brand": "Sony",
-   "name": "PS5 BackBone",
-   "category": "console",
-   "shops": 1,
-   "query": "Sony PS5 BackBone",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-ps5-driving-force-hori-racing-wheel",
-   "brand": "Sony",
-   "name": "PS5 Driving Force Hori Racing Wheel",
-   "category": "console",
-   "shops": 1,
-   "query": "Sony PS5 Driving Force Hori Racing Wheel",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-ps5-hd-camera",
-   "brand": "Sony",
-   "name": "PS5 HD Camera",
-   "category": "console",
-   "shops": 1,
-   "query": "Sony PS5 HD Camera",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-ps5-pulse-explore-wireless",
-   "brand": "Sony",
-   "name": "PS5 PULSE Explore Wireless",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Sony PS5 PULSE Explore Wireless",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-ps5-vr-2",
-   "brand": "Sony",
-   "name": "PS5 VR 2",
-   "category": "console",
-   "shops": 1,
-   "query": "Sony PS5 VR 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "sony-wf-1000xm5-bce",
    "brand": "Sony",
    "name": "WF-1000XM5/BCE",
@@ -2083,36 +1833,6 @@
    "category": "earbuds",
    "shops": 1,
    "query": "Sony WF-1000XM5/SCE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wf-c510-b",
-   "brand": "Sony",
-   "name": "WF-C510/B",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Sony WF-C510/B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wf-c510-l",
-   "brand": "Sony",
-   "name": "WF-C510/L",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Sony WF-C510/L",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sony-wf-c510-w",
-   "brand": "Sony",
-   "name": "WF-C510/W",
-   "category": "earbuds",
-   "shops": 1,
-   "query": "Sony WF-C510/W",
    "what": "missing",
    "width": 0
   },
@@ -2297,26 +2017,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-a-pro-43-2026",
-   "brand": "Xiaomi",
-   "name": "A Pro 43 2026",
-   "category": "tv",
-   "shops": 1,
-   "query": "Xiaomi A Pro 43 2026",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-mi-electric-kettle-pro-2",
-   "brand": "Xiaomi",
-   "name": "Mi Electric Kettle Pro 2",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Xiaomi Mi Electric Kettle Pro 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
    "brand": "Xiaomi",
    "name": "Smart Band 8 Champagne BHR7166GL",
@@ -2337,11 +2037,61 @@
    "width": 0
   },
   {
+   "id": "garmin-cirqa-smart-band-s-m",
+   "brand": "Garmin",
+   "name": "CIRQA Smart Band, Black, S-M",
+   "category": "watch",
+   "shops": 0,
+   "query": "Garmin CIRQA Smart Band, Black, S-M",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-wf-c510-b",
+   "brand": "Sony",
+   "name": "WF-C510/B",
+   "category": "earbuds",
+   "shops": 0,
+   "query": "Sony WF-C510/B",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-wf-c510-l",
+   "brand": "Sony",
+   "name": "WF-C510/L",
+   "category": "earbuds",
+   "shops": 0,
+   "query": "Sony WF-C510/L",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-wf-c510-w",
+   "brand": "Sony",
+   "name": "WF-C510/W",
+   "category": "earbuds",
+   "shops": 0,
+   "query": "Sony WF-C510/W",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "apple-iphone-16-plus",
+   "brand": "Apple",
+   "name": "iPhone 16 Plus",
+   "category": "phone",
+   "shops": 5,
+   "query": "Apple iPhone 16 Plus",
+   "what": "too small",
+   "width": 455
+  },
+  {
    "id": "jbl-clip-4",
    "brand": "JBL",
    "name": "Clip 4",
    "category": "speaker",
-   "shops": 2,
+   "shops": 3,
    "query": "JBL Clip 4",
    "what": "too small",
    "width": 369
@@ -2405,6 +2155,16 @@
    "query": "Xiaomi Redmi Note 12",
    "what": "too small",
    "width": 556
+  },
+  {
+   "id": "xiaomi-smart-band-7",
+   "brand": "Xiaomi",
+   "name": "Smart Band 7",
+   "category": "watch",
+   "shops": 2,
+   "query": "Xiaomi Smart Band 7",
+   "what": "too small",
+   "width": 495
   },
   {
    "id": "yandex-station-2",
@@ -2865,16 +2625,6 @@
    "query": "Xiaomi Redmi Watch 2 Lite",
    "what": "too small",
    "width": 580
-  },
-  {
-   "id": "xiaomi-smart-band-7",
-   "brand": "Xiaomi",
-   "name": "Smart Band 7",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Smart Band 7",
-   "what": "too small",
-   "width": 495
   },
   {
    "id": "xiaomi-smart-watch-70mai-saphir",
