@@ -20,7 +20,12 @@ const dry = process.argv.includes('--dry');
 const only = new Set(process.argv.slice(2).filter(a => !a.startsWith('--')));
 // notebookcentre.am names anthropic-ai and Claude-Web in robots.txt with Disallow: / , so it is
 // confirmed by a person opening the shop, never from here. Same list as tools/check-links.py.
-const NEVER = ['notebookcentre.am'];
+const NEVER = ['notebookcentre.am',
+  // These two answer 403 to any plain fetch - which is why they are read through scrapling by
+  // tools/{eldorado,zigzag}-fetch.py in the first place. Asking them from here filed 120 live
+  // pages as "gone", the same wrong conclusion the link checker used to reach. Their prices
+  // come from their own fetchers; there is nothing for this tool to add.
+  'eldorado.am', 'zigzag.am'];
 const TODAY = new Date().toISOString().slice(0, 10);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -143,4 +148,11 @@ console.log('read from:', Object.entries(how).map(([k, v]) => `${k} ${v}`).join(
 if (nop.length) { console.log(`\n${nop.length} page(s) with no price this could read:`); for (const n of nop.slice(0, 15)) console.log('  ', n[0].padEnd(13), n[1].slice(0, 38).padEnd(40), n[2].slice(0, 60)); }
 if (wild.length) { console.log(`
 ${wild.length} price(s) moved too far to apply without a person looking:`); for (const w of wild.slice(0, 20)) console.log('  ', w[0].padEnd(13), String(w[1]).slice(0, 36).padEnd(38), `${w[2]} -> ${w[3]}`, w[4].slice(0, 46)); }
-if (gone.length) { console.log(`\n${gone.length} page(s) gone - a person decides what happens to these:`); for (const g of gone.slice(0, 15)) console.log('  ', g[0].padEnd(13), g[1].slice(0, 34).padEnd(36), g[3], g[2].slice(0, 52)); }
+// A shop turning the checker away is not a missing page, and calling it one throws away a real
+// price on a live product. 403, 401 and 429 are the shop saying no to US.
+const refused = gone.filter(g => /40[13]|429/.test(String(g[3])));
+const missing = gone.filter(g => !/40[13]|429/.test(String(g[3])));
+if (refused.length) console.log(`
+${refused.length} page(s) refused this checker - the page is there, it will not answer us`);
+if (missing.length) { console.log(`
+${missing.length} page(s) gone - a person decides what happens to these:`); for (const g of missing.slice(0, 15)) console.log('  ', g[0].padEnd(13), g[1].slice(0, 34).padEnd(36), g[3], g[2].slice(0, 52)); }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T15:22:12.597Z",
+ "generated": "2026-09-20T15:36:56.523Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -273,6 +273,18 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "ibolit",
+    "title": "iPhone 17 Pro",
+    "price": 489000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-256gb-esim-silver/",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "price": 509000,
     "title": "iPhone 17 Pro 256GB Cosmic Orange eSim",
     "url": "https://redstore.am/en/product/iphone-17-pro-256gb-cosmic-orange-esim",
@@ -407,14 +419,25 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "shop": "ibolit",
-    "title": "iPhone 17 Pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Silver",
     "price": 519000,
     "storage": 256,
     "color": "Silver",
-    "url": "https://ibolit.mobi/product/iphone-17-pro-256gb-esim-silver/",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
     "seeded": true,
-    "esim": true
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Deep Blue",
+    "price": 519000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17-pro",
@@ -592,26 +615,6 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Silver",
-    "price": 529000,
-    "storage": 256,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Deep Blue",
-    "price": 529000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro",
     "shop": "viva",
     "title": "iPhone 17 Pro 256GB Silver",
     "price": 550900,
@@ -684,16 +687,6 @@
     "ram": null,
     "shop": "planet3d",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Cosmic Orange Dual",
-    "price": 559000,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-cosmic-orange-dual",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -773,13 +766,25 @@
    {
     "id": "apple-iphone-17-pro",
     "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Cosmic Orange Dual",
+    "price": 579000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-cosmic-orange-dual",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
     "title": "iPhone 17 Pro 512GB Silver eSim",
-    "price": 575000,
+    "price": 579000,
     "storage": 512,
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-512gb-silver-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17-pro",
@@ -896,11 +901,12 @@
     "id": "apple-iphone-17-pro",
     "shop": "redstore",
     "title": "iPhone 17 Pro 512GB Silver",
-    "price": 618000,
+    "price": 599000,
     "storage": 512,
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-512gb-silver",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1338,6 +1344,17 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 1TB Deep Blue",
+    "price": 709000,
+    "storage": 1024,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-1tb-deep-blue",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "price": 717900,
     "storage": 1024,
     "title": "iPhone 17 Pro, 1 ՏԲ, Cosmic Orange",
@@ -1503,16 +1520,6 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 1TB Deep Blue",
-    "price": 744000,
-    "storage": 1024,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-1tb-deep-blue",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro",
     "shop": "viva",
     "title": "iPhone 17 Pro 1TB Silver",
     "price": 825900,
@@ -1671,6 +1678,30 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "title": "iPhone 17 Pro Max",
+    "price": 525000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-deep-blue/",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
+    "title": "iPhone 17 Pro Max",
+    "price": 525000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-orange/",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro-max",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
@@ -1751,28 +1782,6 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "ibolit",
-    "title": "iPhone 17 Pro Max",
-    "price": 549000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-deep-blue/",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "ibolit",
-    "title": "iPhone 17 Pro Max",
-    "price": 549000,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "url": "https://ibolit.mobi/product/iphone-17-pro-max-256gb-esim-orange/",
-    "seeded": true,
     "esim": true
    },
    {
@@ -1872,6 +1881,39 @@
     "url": "https://notebookcentre.am/en/product/iphone-17-pro-max-silver-nano-sim-256-gb",
     "seeded": true,
     "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 256GB Silver",
+    "price": 565000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 256GB Deep Blue",
+    "price": 565000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-deep-blue",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 256GB Cosmic Orange",
+    "price": 565000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-cosmic-orange",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -2067,36 +2109,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Silver",
-    "price": 575000,
-    "storage": 256,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Deep Blue",
-    "price": 575000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-deep-blue",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Cosmic Orange",
-    "price": 575000,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-cosmic-orange",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "shop": "viva",
     "title": "iPhone 17 Pro Max 256GB Silver",
     "price": 598900,
@@ -2238,28 +2250,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 512GB Silver eSim",
-    "price": 625000,
-    "storage": 512,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 512GB Deep Blue eSim",
-    "price": 625000,
-    "storage": 512,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-deep-blue-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro-max",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
@@ -2295,6 +2285,30 @@
     "color": "Deep Blue",
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 512GB Silver eSim",
+    "price": 629000,
+    "storage": 512,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver-esim",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 512GB Deep Blue eSim",
+    "price": 629000,
+    "storage": 512,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-deep-blue-esim",
+    "seeded": true,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -2373,6 +2387,17 @@
     "url": "https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-nano-sim-512-gb",
     "seeded": true,
     "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 512GB Silver",
+    "price": 649000,
+    "storage": 512,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -2609,16 +2634,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 512GB Silver",
-    "price": 695000,
-    "storage": 512,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "shop": "viva",
     "title": "iPhone 17 Pro Max 512GB Silver",
     "price": 697900,
@@ -2663,13 +2678,26 @@
    {
     "id": "apple-iphone-17-pro-max",
     "shop": "ibolit",
+    "title": "iPhone 17 Pro Max 1TB eSim Cosmic Orange",
+    "price": 715000,
+    "storage": 1024,
+    "color": "Cosmic Orange",
+    "url": "https://ibolit.mobi/product/iphone-17-pro-max-1tb-esim-cosmic-orange/",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "ibolit",
     "title": "iPhone 17 Pro Max 1TB eSim Silver",
     "price": 715000,
     "storage": 1024,
     "color": "Silver",
     "url": "https://ibolit.mobi/product/iphone-17-pro-max-1tb-esim-silver/",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2790,14 +2818,25 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "ibolit",
-    "title": "iPhone 17 Pro Max 1TB eSim Cosmic Orange",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 1TB Silver",
+    "price": 759000,
+    "storage": 1024,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-1tb-silver",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 1TB Cosmic Orange",
     "price": 759000,
     "storage": 1024,
     "color": "Cosmic Orange",
-    "url": "https://ibolit.mobi/product/iphone-17-pro-max-1tb-esim-cosmic-orange/",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-1tb-cosmic-orange",
     "seeded": true,
-    "esim": true
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2853,26 +2892,6 @@
     "color": "Cosmic Orange",
     "shop": "istore",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 1TB Silver",
-    "price": 788000,
-    "storage": 1024,
-    "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-1tb-silver",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 1TB Cosmic Orange",
-    "price": 788000,
-    "storage": 1024,
-    "color": "Cosmic Orange",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-1tb-cosmic-orange",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3149,11 +3168,12 @@
     "id": "apple-iphone-17-pro-max",
     "shop": "redstore",
     "title": "iPhone 17 Pro Max 2TB Silver",
-    "price": 958000,
+    "price": 949000,
     "storage": 2048,
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-max-2tb-silver",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3391,26 +3411,6 @@
     "shop": "mobilecentre",
     "seen": "2026-09-20",
     "esim": true
-   },
-   {
-    "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB Black",
-    "price": 378000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-black",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB White",
-    "price": 378000,
-    "storage": 256,
-    "color": "White",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-white",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -4020,7 +4020,30 @@
     "color": "White",
     "url": "https://ibolit.mobi/product/iphone-17-512-sim-white/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "redstore",
+    "title": "iPhone 17 256GB Black",
+    "price": 449000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-black",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "redstore",
+    "title": "iPhone 17 256GB White",
+    "price": 449000,
+    "storage": 256,
+    "color": "White",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-white",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17",
@@ -4706,7 +4729,8 @@
     "storage": 256,
     "url": "https://shop.ucom.am/en/iphone-air.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-air",
@@ -5330,7 +5354,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-17e.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17e",
@@ -5341,7 +5366,8 @@
     "color": "White",
     "url": "https://shop.ucom.am/am/iphone-17e.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-17e",
@@ -5626,7 +5652,8 @@
     "price": 308500,
     "storage": 128,
     "url": "https://allsell.am/en/iphone-16",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-16",
@@ -5878,7 +5905,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-16.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-16",
@@ -5890,7 +5918,8 @@
     "color": "White",
     "url": "https://shop.ucom.am/am/iphone-16.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-16",
@@ -6394,7 +6423,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-15.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-15",
@@ -6432,7 +6462,8 @@
     "storage": 256,
     "color": "Black",
     "url": "https://ibolit.mobi/product/iphone-15-256gb-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-15",
@@ -6442,7 +6473,8 @@
     "storage": 256,
     "color": "Blue",
     "url": "https://ibolit.mobi/product/iphone-15-256gb-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-15",
@@ -6452,7 +6484,8 @@
     "storage": 256,
     "color": "Green",
     "url": "https://ibolit.mobi/product/iphone-15-256gb-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-15",
@@ -6462,7 +6495,8 @@
     "storage": 256,
     "color": "Pink",
     "url": "https://ibolit.mobi/product/iphone-15-256gb-pink/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-15",
@@ -6472,7 +6506,8 @@
     "storage": 256,
     "color": "Yellow",
     "url": "https://ibolit.mobi/product/iphone-15-256gb-yellow/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-11-m5": [
@@ -7401,7 +7436,8 @@
     "price": 190000,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-airpods-max-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7410,7 +7446,8 @@
     "price": 190000,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-airpods-max-red/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7419,7 +7456,8 @@
     "price": 190000,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-airpods-max-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7429,7 +7467,8 @@
     "storage": null,
     "color": "Blue",
     "url": "https://ibolit.mobi/product/apple-airpods-max-sky-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7439,7 +7478,8 @@
     "storage": null,
     "color": "Orange",
     "url": "https://ibolit.mobi/product/apple-airpods-max-type-c-orange/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7449,7 +7489,8 @@
     "storage": null,
     "color": "Purple",
     "url": "https://ibolit.mobi/product/apple-airpods-max-type-c-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7459,7 +7500,8 @@
     "storage": null,
     "color": "Starlight",
     "url": "https://ibolit.mobi/product/apple-airpods-max-type-c-starlight/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-max-2",
@@ -7961,7 +8003,8 @@
     "price": 109900,
     "storage": null,
     "url": "https://shop.ucom.am/en/airpods-3-pro.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-pro-3",
@@ -8109,7 +8152,8 @@
     "price": 54900,
     "storage": null,
     "url": "https://shop.ucom.am/en/airpods-4.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-4",
@@ -8252,7 +8296,8 @@
     "price": 79900,
     "storage": null,
     "url": "https://shop.ucom.am/en/airpods-4-with-active-noise-cancellation.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-4-anc",
@@ -8279,6 +8324,16 @@
     "ram": null,
     "color": "White",
     "shop": "istore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-4-anc",
+    "shop": "viva",
+    "title": "AirPods 4 with Active Noise Cancellation MXP93ZE/A",
+    "price": 92900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/airpods-4-with-active-noise-cancellation-mxp93ze-a/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -8448,6 +8503,17 @@
    },
    {
     "id": "apple-watch-ultra-3",
+    "shop": "viva",
+    "title": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Anchor Blue Ocean Band",
+    "price": 442900,
+    "storage": 49,
+    "color": "Natural Titanium",
+    "url": "https://shop.viva.am/product/apple-watch-ultra-3-gps-cellular-49mm-natural-titanium-case-with-anchor-blue-ocean-band/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-ultra-3",
     "price": 496900,
     "storage": 49,
     "title": "Apple Watch Ultra 3,  Black Titanium Milanese Loop, M, 49մմ, Սև",
@@ -8458,6 +8524,17 @@
     "ram": null,
     "color": "Black Titanium",
     "shop": "ispace",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-ultra-3",
+    "shop": "viva",
+    "title": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Titanium Milanese Loop - Medium MF1Q4QI/A",
+    "price": 496900,
+    "storage": 49,
+    "color": "Black Titanium",
+    "url": "https://shop.viva.am/product/apple-watch-ultra-3-gps-cellular-49mm-black-titanium-case-with-black-titanium-milanese-loop-medium/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -8770,6 +8847,28 @@
     "color": "Silver",
     "shop": "ispace",
     "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-11",
+    "shop": "viva",
+    "title": "Apple Watch Series 11 GPS 42mm Rose Gold Aluminium Case with Light Blush Sport Band - S/M  MEU04RK/A",
+    "price": 199900,
+    "storage": null,
+    "color": "Rose Gold",
+    "url": "https://shop.viva.am/product/apple-watch-series-11-gps-42mm-rose-gold-aluminium-case-with-light-blush-sport-band-s-m-meu04rk-a/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-11",
+    "shop": "viva",
+    "title": "Apple Watch Series 11 GPS 46mm Jet Black Aluminium Case with Black Sport Band - M/L MEUX4ET/A",
+    "price": 237900,
+    "storage": null,
+    "color": "Jet Black",
+    "url": "https://shop.viva.am/product/apple-watch-series-11-gps-46mm-jet-black-aluminium-case-with-black-sport-band-m-l/",
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-watch-se-3": [
@@ -9015,6 +9114,17 @@
     "storage": null,
     "color": "Starlight",
     "url": "https://notebookcentre.am/en/product/apple-watch-se-3-40mm-starlight",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "viva",
+    "title": "Apple Watch SE 3 GPS 40mm Midnight Aluminium Case with Midnight Sport Band - S/M MEH94RK/A",
+    "price": 138900,
+    "storage": null,
+    "color": "Midnight",
+    "url": "https://shop.viva.am/product/apple-watch-se-3-40mm/",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -11589,7 +11699,8 @@
     "price": 127000,
     "storage": 128,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a37.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a37",
@@ -12984,6 +13095,45 @@
    },
    {
     "id": "samsung-galaxy-s26-plus",
+    "shop": "ucom",
+    "title": "Samsung Galaxy S26+ 12GB 512GB Black",
+    "price": 418900,
+    "storage": 512,
+    "ram": 12,
+    "color": "Black",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-plus.html",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "shop": "ucom",
+    "title": "Samsung Galaxy S26+ 12GB 512GB White",
+    "price": 418900,
+    "storage": 512,
+    "ram": 12,
+    "color": "White",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-plus.html",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
+    "shop": "ucom",
+    "title": "Samsung Galaxy S26+ 12GB 512GB Sky Blue",
+    "price": 418900,
+    "storage": 512,
+    "ram": 12,
+    "color": "Sky Blue",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-plus.html",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
     "shop": "viva",
     "title": "Samsung Galaxy S26+ 12GB+256GB White",
     "price": 418900,
@@ -13032,42 +13182,6 @@
     "storage": 256,
     "url": "https://www.pixel.am/en/product/samsung-galaxy-s26-plus",
     "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "shop": "ucom",
-    "title": "Samsung Galaxy S26+ 12GB 512GB Black",
-    "price": 469900,
-    "storage": 512,
-    "ram": 12,
-    "color": "Black",
-    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-plus.html",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "shop": "ucom",
-    "title": "Samsung Galaxy S26+ 12GB 512GB White",
-    "price": 469900,
-    "storage": 512,
-    "ram": 12,
-    "color": "White",
-    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-plus.html",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "shop": "ucom",
-    "title": "Samsung Galaxy S26+ 12GB 512GB Sky Blue",
-    "price": 469900,
-    "storage": 512,
-    "ram": 12,
-    "color": "Sky Blue",
-    "url": "https://shop.ucom.am/am/samsung-galaxy-s26-plus.html",
-    "seeded": true,
-    "esim": false
    },
    {
     "id": "samsung-galaxy-s26-plus",
@@ -13128,16 +13242,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Blue",
-    "price": 379000,
-    "storage": 256,
-    "color": "Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-blue",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "title": "Samsung Galaxy S26 Ultra In Armenia - Best Price - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_1_3__2.png",
@@ -13186,6 +13290,16 @@
     "color": "White",
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "allsell",
+    "title": "Samsung Galaxy S26 Ultra",
+    "price": 379600,
+    "storage": 256,
+    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -13379,15 +13493,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "shop": "allsell",
-    "title": "Samsung Galaxy S26 Ultra",
-    "price": 399600,
-    "storage": 256,
-    "url": "https://allsell.am/en/samsung-galaxy-s26-ultra",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "price": 419000,
     "title": "Samsung Galaxy S26 Ultra 12GB/256GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-black",
@@ -13445,22 +13550,13 @@
    {
     "id": "samsung-galaxy-s26-ultra",
     "shop": "redstore",
-    "title": "Samsung Galaxy S26 Ultra 12GB/512GB Black",
-    "price": 469000,
-    "storage": 512,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-black",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 Ultra 12GB/512GB Cobalt Violet",
-    "price": 469000,
-    "storage": 512,
-    "color": "Cobalt Violet",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-cobalt-violet",
-    "seeded": true
+    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Blue",
+    "price": 419000,
+    "storage": 256,
+    "color": "Blue",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-blue",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13830,6 +13926,28 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S26 Ultra 12GB/512GB Black",
+    "price": 499000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-black",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S26 Ultra 12GB/512GB Cobalt Violet",
+    "price": 499000,
+    "storage": 512,
+    "color": "Cobalt Violet",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-cobalt-violet",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
     "shop": "zigzag",
     "title": "Samsung Galaxy S26 Ultra Violet",
     "price": 499000,
@@ -14043,16 +14161,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 Ultra 16GB/1TB Black",
-    "price": 629000,
-    "storage": 1024,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-16gb1tb-black",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy S26 Ultra Black / 16 GB / 1 TB",
     "price": 629000,
@@ -14070,6 +14178,17 @@
     "storage": 1024,
     "color": "Cobalt Violet",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-16-gb-1-tb",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S26 Ultra 16GB/1TB Black",
+    "price": 649000,
+    "storage": 1024,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-16gb1tb-black",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -14337,7 +14456,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/xiaomi-redmi-note-17-pro-5g.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-note-17-pro-5g",
@@ -14348,7 +14468,8 @@
     "color": "Purple",
     "url": "https://shop.ucom.am/am/xiaomi-redmi-note-17-pro-5g.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-note-17-pro-5g",
@@ -14359,7 +14480,8 @@
     "color": "Orange",
     "url": "https://shop.ucom.am/am/xiaomi-redmi-note-17-pro-5g.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-note-17-pro-5g",
@@ -14695,7 +14817,8 @@
     "price": 84900,
     "storage": 128,
     "url": "https://vlv.am/en/Product/49087",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a08",
@@ -14704,7 +14827,8 @@
     "price": 84900,
     "storage": 128,
     "url": "https://vlv.am/en/Product/49086",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a08",
@@ -14759,7 +14883,8 @@
     "price": 97900,
     "storage": 128,
     "url": "https://vlv.am/en/Product/49088",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a08",
@@ -14816,7 +14941,8 @@
     "price": 59900,
     "storage": 64,
     "url": "https://vlv.am/en/Product/49085",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-s26-fe": [
@@ -14918,16 +15044,6 @@
    },
    {
     "id": "samsung-galaxy-s26-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 FE 8GB/256GB Graphite",
-    "price": 289000,
-    "storage": 256,
-    "color": "Graphite",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-fe-8gb256gb-graphite",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-fe",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy S26 FE",
     "price": 289000,
@@ -14989,6 +15105,17 @@
     "ram": 8,
     "color": "Pistachio",
     "shop": "redstore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-fe",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S26 FE 8GB/256GB Graphite",
+    "price": 319000,
+    "storage": 256,
+    "color": "Graphite",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-fe-8gb256gb-graphite",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -15718,6 +15845,17 @@
    },
    {
     "id": "xiaomi-17t-pro",
+    "shop": "redstore",
+    "title": "Xiaomi 17T Pro",
+    "price": 319000,
+    "storage": 256,
+    "color": "Deep Violet",
+    "url": "https://redstore.am/en/product/xiaomi-17t-pro-12gb256gb-deep-violet",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-17t-pro",
     "price": 327900,
     "storage": 256,
     "title": "Xiaomi 17T Pro 12GB/256GB (Black)",
@@ -15806,7 +15944,7 @@
    {
     "id": "xiaomi-17t-pro",
     "price": 339000,
-    "storage": null,
+    "storage": 512,
     "title": "Xiaomi 17T Pro",
     "url": "https://www.pixel.am/am/product/xiaomi-17t-pro",
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/022/217/800_1786484401-blk-2-sides.png",
@@ -15844,7 +15982,7 @@
     "shop": "notebookcentre",
     "title": "Xiaomi 17T Pro Deep Blue",
     "price": 346900,
-    "storage": null,
+    "storage": 512,
     "url": "https://notebookcentre.am/en/product/xiaomi-17t-pro-deep-blue",
     "seeded": true,
     "seen": "2026-09-20"
@@ -15854,7 +15992,7 @@
     "shop": "notebookcentre",
     "title": "Xiaomi 17T Pro Deep Violet",
     "price": 346900,
-    "storage": null,
+    "storage": 512,
     "color": "Deep Violet",
     "url": "https://notebookcentre.am/en/product/xiaomi-17t-pro-deep-violet",
     "seeded": true,
@@ -15865,21 +16003,11 @@
     "shop": "notebookcentre",
     "title": "Xiaomi 17T Pro Black",
     "price": 346900,
-    "storage": null,
+    "storage": 512,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/xiaomi-17t-pro-black",
     "seeded": true,
     "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-17t-pro",
-    "shop": "redstore",
-    "title": "Xiaomi 17T Pro",
-    "price": 399000,
-    "storage": 256,
-    "color": "Deep Violet",
-    "url": "https://redstore.am/en/product/xiaomi-17t-pro-12gb256gb-deep-violet",
-    "seeded": true
    }
   ],
   "xiaomi-17t": [
@@ -17494,7 +17622,8 @@
     "color": "Pink",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a27.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a27",
@@ -17505,7 +17634,8 @@
     "color": "Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a27.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a27",
@@ -17516,7 +17646,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a27.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a27",
@@ -17635,7 +17766,8 @@
     "storage": 256,
     "color": "Blue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a27-8gb256gb-blue",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a27",
@@ -17657,7 +17789,8 @@
     "price": 129000,
     "storage": 128,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a27.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a27",
@@ -18911,12 +19044,57 @@
    },
    {
     "id": "samsung-galaxy-a57",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A57 8GB/128GB Gray",
+    "price": 143000,
+    "storage": 128,
+    "color": "Gray",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-gray",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A57 8GB/128GB Navy",
+    "price": 143000,
+    "storage": 128,
+    "color": "Navy",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-navy",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A57 8GB/128GB Lilac",
+    "price": 143000,
+    "storage": 128,
+    "color": "Lilac",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-lilac",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A57 8GB/128GB Icyblue",
+    "price": 143000,
+    "storage": 128,
+    "color": "Icyblue",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-icyblue",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy A57",
     "price": 143000,
     "storage": 128,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a57.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -18999,46 +19177,6 @@
     "color": "Awesome Navy",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Gray",
-    "price": 149000,
-    "storage": 128,
-    "color": "Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-gray",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Navy",
-    "price": 149000,
-    "storage": 128,
-    "color": "Navy",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-navy",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Lilac",
-    "price": 149000,
-    "storage": 128,
-    "color": "Lilac",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-lilac",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Icyblue",
-    "price": 149000,
-    "storage": 128,
-    "color": "Icyblue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-icyblue",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19178,7 +19316,8 @@
     "storage": 256,
     "url": "https://shop.ucom.am/en/samsung-galaxy-57.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19273,7 +19412,8 @@
     "storage": 256,
     "color": "Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-gray",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19283,7 +19423,8 @@
     "storage": 256,
     "color": "Navy",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-navy",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19293,7 +19434,8 @@
     "storage": 256,
     "color": "Icyblue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-icyblue",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19303,7 +19445,8 @@
     "storage": 256,
     "color": "Lilac",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-lilac",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19412,7 +19555,8 @@
     "storage": 256,
     "color": "Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-gray",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19422,7 +19566,8 @@
     "storage": 256,
     "color": "Navy",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-navy",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19432,7 +19577,8 @@
     "storage": 256,
     "color": "Icyblue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-icyblue",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19442,7 +19588,8 @@
     "storage": 256,
     "color": "Lilac",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-lilac",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a57",
@@ -19575,6 +19722,17 @@
    },
    {
     "id": "samsung-galaxy-s26",
+    "shop": "ibolit",
+    "title": "Samsung Galaxy S26",
+    "price": 279000,
+    "storage": 256,
+    "color": "Cobalt Violet",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-256gb-cobalt-violet/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26",
     "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s26",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
@@ -19611,26 +19769,6 @@
     "inStock": true,
     "shop": "allsell",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 12GB/256GB Black",
-    "price": 299000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb256gb-black",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy S26",
-    "price": 309000,
-    "storage": 256,
-    "color": "Cobalt Violet",
-    "url": "https://ibolit.mobi/product/samsung-galaxy-s26-12gb-256gb-cobalt-violet/",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -19864,22 +20002,13 @@
    {
     "id": "samsung-galaxy-s26",
     "shop": "redstore",
-    "title": "Samsung Galaxy S26 12GB/512GB Black",
+    "title": "Samsung Galaxy S26 12GB/256GB Black",
     "price": 339000,
-    "storage": 512,
+    "storage": 256,
     "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb512gb-black",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 12GB/512GB Cobalt Violet",
-    "price": 339000,
-    "storage": 512,
-    "color": "Cobalt Violet",
-    "url": "https://redstore.am/product/samsung-galaxy-s26-12gb512gb-cobalt-violet",
-    "seeded": true
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb256gb-black",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20195,6 +20324,28 @@
    },
    {
     "id": "samsung-galaxy-s26",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S26 12GB/512GB Black",
+    "price": 379000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb512gb-black",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S26 12GB/512GB Cobalt Violet",
+    "price": 379000,
+    "storage": 512,
+    "color": "Cobalt Violet",
+    "url": "https://redstore.am/product/samsung-galaxy-s26-12gb512gb-cobalt-violet",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26",
     "shop": "pixel",
     "title": "Samsung Galaxy S26",
     "price": 399000,
@@ -20341,6 +20492,26 @@
     "color": null,
     "shop": "mobilecentre",
     "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro-plus-5g",
+    "shop": "eldorado",
+    "title": "Սմարթֆոն Xiaomi REDMI Note 15 Pro+ 5G 8GB/256GB RU(2510ERA8BG) Սև",
+    "price": 175900,
+    "storage": 8,
+    "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-5g-8gb-256gb-ru-2510era8bg-black",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-note-15-pro-plus-5g",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB Black",
+    "price": 175900,
+    "storage": 8,
+    "url": "https://shop.viva.am/en/product/xiaomi-redmi-note-15-pro-plus-5g-8gb-256gb-black/",
+    "seeded": true
    }
   ],
   "xiaomi-redmi-note-14s": [
@@ -20581,6 +20752,16 @@
    },
    {
     "id": "xiaomi-redmi-note-14-pro",
+    "shop": "ibolit",
+    "title": "Xiaomi Redmi Note 14 Pro+ 8GB / 256GB Midnight Black",
+    "price": 98000,
+    "storage": 256,
+    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-8gb-256gb-midnight-black/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-note-14-pro",
     "shop": "viva",
     "title": "Xiaomi Redmi Note 14 Pro 8GB/256GB Black",
     "price": 113900,
@@ -20711,15 +20892,6 @@
     "color": "Frost Blue",
     "shop": "redstore",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-note-14-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Redmi Note 14 Pro+ 8GB / 256GB Midnight Black",
-    "price": 161000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-8gb-256gb-midnight-black/",
-    "seeded": true
    }
   ],
   "xiaomi-redmi-15c": [
@@ -21068,7 +21240,8 @@
     "storage": 6,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-15-6gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-15",
@@ -21172,7 +21345,8 @@
     "storage": 8,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-15-8gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-15",
@@ -21354,7 +21528,8 @@
     "price": 117000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-x7-12gb-512gb-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-x7",
@@ -21363,7 +21538,8 @@
     "price": 117000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-x7-12gb-512gb-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-x7",
@@ -21372,7 +21548,8 @@
     "price": 117000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-x7-12gb-512gb-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-x7",
@@ -22267,6 +22444,39 @@
    },
    {
     "id": "samsung-galaxy-s25-fe",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 FE 8GB/256GB Navy",
+    "price": 222000,
+    "storage": 256,
+    "color": "Navy",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-navy",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 FE 8GB/256GB White",
+    "price": 222000,
+    "storage": 256,
+    "color": "White",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-white",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 FE 8GB/256GB Jetblack",
+    "price": 222000,
+    "storage": 256,
+    "color": "Jetblack",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-jetblack",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-fe",
     "shop": "pixel",
     "title": "Samsung Galaxy S25 FE",
     "price": 226000,
@@ -22382,36 +22592,6 @@
    },
    {
     "id": "samsung-galaxy-s25-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 FE 8GB/256GB Navy",
-    "price": 229000,
-    "storage": 256,
-    "color": "Navy",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-navy",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 FE 8GB/256GB White",
-    "price": 229000,
-    "storage": 256,
-    "color": "White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-white",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 FE 8GB/256GB Jetblack",
-    "price": 229000,
-    "storage": 256,
-    "color": "Jetblack",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-jetblack",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy S25 FE",
     "price": 229000,
@@ -22440,16 +22620,6 @@
     "storage": 128,
     "color": "Icy Blue",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-icy-blue",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 12GB/128GB Mint",
-    "price": 239000,
-    "storage": 128,
-    "color": "Mint",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-mint",
     "seeded": true
    },
    {
@@ -22492,6 +22662,17 @@
     "ram": 12,
     "color": "Mint",
     "shop": "redstore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 12GB/128GB Mint",
+    "price": 259000,
+    "storage": 128,
+    "color": "Mint",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-mint",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -22643,7 +22824,8 @@
     "color": "Icy Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s25",
@@ -22655,7 +22837,8 @@
     "color": "Mint",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-a07": [
@@ -22934,7 +23117,8 @@
     "price": 52000,
     "storage": 64,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a07-4g.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a07",
@@ -23868,7 +24052,8 @@
     "storage": 256,
     "color": "Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-z-flip-7-fe-8gb256gb-black",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-z-flip-7-fe",
@@ -24062,7 +24247,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/redmi-a5.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-14": [
@@ -24377,7 +24563,8 @@
     "storage": 128,
     "color": "Light Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-light-gray",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24387,7 +24574,8 @@
     "storage": 128,
     "color": "Pink",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-pink",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24493,7 +24681,8 @@
     "storage": 256,
     "color": "Graphite",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-graphite",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24503,7 +24692,8 @@
     "storage": 256,
     "color": "Light Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-light-gray",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24513,7 +24703,8 @@
     "storage": 256,
     "color": "Olive",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-olive",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24523,7 +24714,8 @@
     "storage": 256,
     "color": "Pink",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-pink",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24569,7 +24761,8 @@
     "color": "Awesome Pink",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a56.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24580,7 +24773,8 @@
     "color": "Awesome Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a56.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24591,7 +24785,8 @@
     "color": "Awesome Olive",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a56.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24602,7 +24797,8 @@
     "color": "Awesome Light Gray",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a56.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24626,7 +24822,8 @@
     "storage": 256,
     "color": "Light Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-12gb256gb-light-gray",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -24636,7 +24833,8 @@
     "storage": 256,
     "color": "Olive",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-12gb256gb-olive",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -25715,7 +25913,8 @@
     "storage": 256,
     "color": "Teal",
     "url": "https://ibolit.mobi/product/iphone-16-plus-256gb-teal/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-16-plus",
@@ -25725,7 +25924,8 @@
     "storage": 256,
     "color": "Ultramarine",
     "url": "https://ibolit.mobi/product/iphone-16-plus-256gb-ultramarine/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-16-plus",
@@ -25735,7 +25935,8 @@
     "storage": 256,
     "color": "White",
     "url": "https://ibolit.mobi/product/iphone-16-plus-256gb-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-a3": [
@@ -25760,7 +25961,8 @@
     "storage": 4,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-a3-4gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-12": [
@@ -25823,7 +26025,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-12.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-a2plus": [
@@ -25848,7 +26051,8 @@
     "storage": 3,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-a2-3gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-12c": [
@@ -25873,7 +26077,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-12c-4gb-128gb-graphite-gray.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-poco-f4": [
@@ -25885,7 +26090,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-poco-f4.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-f4",
@@ -25923,7 +26129,8 @@
     "storage": 6,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-10-2022-6gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-poco-m5": [
@@ -25948,7 +26155,8 @@
     "storage": 6,
     "url": "https://shop.ucom.am/en/xiaomi-poco-m5-6gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-m5",
@@ -25958,7 +26166,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-poco-m5.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-poco-c40": [
@@ -25983,7 +26192,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-poco-c40.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-10c": [
@@ -26008,7 +26218,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-10c-64gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a11-plus": [
@@ -27004,7 +27215,8 @@
     "price": 79900,
     "storage": 6,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-pad-se-6gb.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-pad-se",
@@ -27013,7 +27225,8 @@
     "price": 99900,
     "storage": 8,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-pad-se-8gb.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-air-13-wi-fi-2024": [
@@ -27064,7 +27277,8 @@
     "price": 493000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-13-256-gb-wi-fi-2024-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-13-wi-fi-2024",
@@ -27115,7 +27329,8 @@
     "price": 526000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-13-256-gb-wi-fi-2024-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-13-wi-fi-2024",
@@ -27124,7 +27339,8 @@
     "price": 526000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-13-256gb-wi-fi-2024-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-13-wi-fi-2024",
@@ -27133,7 +27349,8 @@
     "price": 526000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-13-256gb-wi-fi-2024-starlight/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-air-13-wi-fi-plus-cellular-2024": [
@@ -27209,7 +27426,8 @@
     "price": 521000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-13-128gb-wi-fi-cellular-2024-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-13-wi-fi-plus-cellular-2024",
@@ -27218,7 +27436,8 @@
     "price": 643000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-13-256gb-wi-fi-cellular-2024-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-13-wi-fi-plus-cellular-2024",
@@ -27227,7 +27446,8 @@
     "price": 643000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-13-256gb-wi-fi-cellular-2024-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-air-11-wi-fi-plus-cellular-2024": [
@@ -27251,7 +27471,8 @@
     "price": 405000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-cellular-2024-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
@@ -27260,7 +27481,8 @@
     "price": 405000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-cellular-2024-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
@@ -27269,7 +27491,8 @@
     "price": 405000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-cellular-2024-starlight/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
@@ -27278,7 +27501,8 @@
     "price": 466000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-air-11-256gb-wi-fi-cellular-2024-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-s9-plus": [
@@ -27795,7 +28019,8 @@
     "price": 37900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-buds-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune",
@@ -27804,7 +28029,8 @@
     "price": 37900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-buds-ghost-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune",
@@ -27813,7 +28039,8 @@
     "price": 37900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-buds-ghost-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune",
@@ -28358,7 +28585,8 @@
     "price": 20900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-buds-core.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-buds-6-play": [
@@ -28437,7 +28665,8 @@
     "price": 6500,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-buds-6.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-buds-6-play",
@@ -28692,7 +28921,8 @@
     "price": 83900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-airpods-pro-2-usb-c/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-airpods-pro-2",
@@ -28747,7 +28977,8 @@
     "price": 94000,
     "storage": null,
     "url": "https://ibolit.mobi/product/tws-bluetooth-headsets-apple-airpods-pro-2nd-generation-usb-c/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-3": [
@@ -28882,7 +29113,8 @@
     "price": 62000,
     "storage": null,
     "url": "https://ibolit.mobi/product/samsung-galaxy-buds-3-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-buds-3-pro": [
@@ -29048,7 +29280,8 @@
     "price": 35900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-buds-fe.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-buds-fe",
@@ -29314,7 +29547,8 @@
     "price": 27900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-wave-buds-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-wave",
@@ -29323,7 +29557,8 @@
     "price": 27900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-wave-buds-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-wave",
@@ -29361,7 +29596,8 @@
     "price": 11900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-buds-3-lite.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-buds-3-lite",
@@ -30020,7 +30256,8 @@
     "storage": 256,
     "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30085,7 +30322,8 @@
     "price": 979000,
     "storage": 256,
     "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30256,7 +30494,8 @@
     "storage": 512,
     "url": "https://redstore.am/en/product/iphone-18-pro-max-512gb-black-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30378,7 +30617,8 @@
     "storage": 1024,
     "url": "https://redstore.am/en/product/iphone-18-pro-max-1tb-black-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30989,7 +31229,8 @@
     "storage": 256,
     "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31069,7 +31310,8 @@
     "price": 879000,
     "storage": 256,
     "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31246,7 +31488,8 @@
     "storage": 512,
     "url": "https://redstore.am/en/product/iphone-18-pro-512gb-burgundy-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31368,7 +31611,8 @@
     "storage": 1024,
     "url": "https://redstore.am/en/product/iphone-18-pro-1tb-burgundy-esim",
     "seeded": true,
-    "esim": true
+    "esim": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32411,6 +32655,17 @@
    {
     "id": "samsung-galaxy-a16",
     "shop": "ucom",
+    "title": "Samsung Galaxy A16",
+    "price": 59900,
+    "storage": 128,
+    "url": "https://shop.ucom.am/en/samsung-galaxy-a16.html",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a16",
+    "shop": "ucom",
     "title": "Samsung Galaxy A16 5G 4GB 128GB Blue Black",
     "price": 59900,
     "storage": 128,
@@ -32418,7 +32673,8 @@
     "color": "Blue Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a16.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a16",
@@ -32430,7 +32686,8 @@
     "color": "Gray",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a16.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a16",
@@ -32442,7 +32699,8 @@
     "color": "Light Green",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a16.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a16",
@@ -32474,16 +32732,6 @@
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a16-128gb-light-green/",
     "seeded": true,
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a16",
-    "shop": "ucom",
-    "title": "Samsung Galaxy A16",
-    "price": 74900,
-    "storage": 128,
-    "url": "https://shop.ucom.am/en/samsung-galaxy-a16.html",
-    "seeded": true,
-    "esim": false
    },
    {
     "id": "samsung-galaxy-a16",
@@ -32549,7 +32797,8 @@
     "storage": 8,
     "url": "https://shop.ucom.am/en/xiaomi-poco-m7-pro-8gb-256gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-m7-pro-5g",
@@ -32885,7 +33134,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-poco-x7-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "poco-x7-pro",
@@ -32974,7 +33224,8 @@
     "price": 339000,
     "storage": 256,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-ultra.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s25-ultra",
@@ -32987,6 +33238,17 @@
     "inStock": true,
     "ram": null,
     "shop": "pixel",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "shop": "ibolit",
+    "title": "Samsung Galaxy S25 Ultra 256GB Titanium White Silver",
+    "price": 349000,
+    "storage": 256,
+    "color": "Titanium White Silver",
+    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-256gb-titanium-white-silver/",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -33004,16 +33266,6 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/256GB Titanium Black",
-    "price": 359000,
-    "storage": 256,
-    "color": "Titanium Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb256gb-titanium-black",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
     "price": 379000,
     "title": "Samsung Galaxy S25 Ultra 12GB/256GB Titanium Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb256gb-titanium-black",
@@ -33024,6 +33276,17 @@
     "ram": 12,
     "color": "Titanium Black",
     "shop": "redstore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 Ultra 12GB/256GB Titanium Black",
+    "price": 379000,
+    "storage": 256,
+    "color": "Titanium Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb256gb-titanium-black",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -33121,46 +33384,6 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy S25 Ultra 256GB Titanium White Silver",
-    "price": 400000,
-    "storage": 256,
-    "color": "Titanium White Silver",
-    "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-256gb-titanium-white-silver/",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium Gray",
-    "price": 409000,
-    "storage": 512,
-    "color": "Titanium Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-gray",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium Silver Blue",
-    "price": 409000,
-    "storage": 512,
-    "color": "Titanium Silver Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-silver-blue-1",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium White Silver",
-    "price": 409000,
-    "storage": 512,
-    "color": "Titanium White Silver",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-white-silver",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
     "shop": "pixel",
     "title": "Samsung Galaxy S25 Ultra",
     "price": 409000,
@@ -33222,6 +33445,39 @@
     "ram": 12,
     "color": "Titanium Silver Blue",
     "shop": "redstore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium Gray",
+    "price": 439000,
+    "storage": 512,
+    "color": "Titanium Gray",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-gray",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium Silver Blue",
+    "price": 439000,
+    "storage": 512,
+    "color": "Titanium Silver Blue",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-silver-blue-1",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-ultra",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium White Silver",
+    "price": 439000,
+    "storage": 512,
+    "color": "Titanium White Silver",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-white-silver",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -33998,6 +34254,17 @@
   "xiaomi-redmi-pad-se-8-7-4g": [
    {
     "id": "xiaomi-redmi-pad-se-8-7-4g",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Pad SE 8.7 4G 6GB/128GB Gray",
+    "price": 67900,
+    "storage": 128,
+    "ram": 6,
+    "url": "https://shop.viva.am/product/xiaomi-redmi-pad-se-8-7-4g-6gb-128gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-pad-se-8-7-4g",
     "price": 69900,
     "storage": 128,
     "title": "Xiaomi Redmi Pad SE 8.7 4G",
@@ -34068,7 +34335,8 @@
     "price": 94000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x216-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9plus-x216",
@@ -34077,7 +34345,8 @@
     "price": 94000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x216-graphite/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9plus-x216",
@@ -34100,7 +34369,8 @@
     "price": 109000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x216-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a9plus-x210": [
@@ -34161,7 +34431,8 @@
     "price": 75000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x210-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9plus-x210",
@@ -34170,7 +34441,8 @@
     "price": 75000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x210-graphite/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9plus-x210",
@@ -34179,7 +34451,8 @@
     "price": 76000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x210-navy-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a9-x115": [
@@ -34217,7 +34490,8 @@
     "price": 63000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
@@ -34254,7 +34528,8 @@
     "price": 65000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-navy-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
@@ -34263,7 +34538,8 @@
     "price": 65000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-graphite/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
@@ -34286,7 +34562,8 @@
     "price": 74000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
@@ -34323,7 +34600,8 @@
     "price": 94000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-navy-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
@@ -34332,7 +34610,8 @@
     "price": 94000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-graphite/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a9-x110": [
@@ -34393,7 +34672,8 @@
     "price": 55000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x110",
@@ -34402,7 +34682,8 @@
     "price": 55000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-navy-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-a9-x110",
@@ -34425,7 +34706,8 @@
     "price": 56000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-graphite/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-air-11-m3": [
@@ -35381,7 +35663,8 @@
     "price": 28900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-smart-band-7-pro.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-watch-8": [
@@ -35773,7 +36056,8 @@
     "price": 15900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-watch-5-active.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-watch-5-active",
@@ -35980,7 +36264,8 @@
     "price": 22900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-smart-band-7.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-airpods-5": [
@@ -36722,7 +37007,8 @@
     "price": 559900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-partybox-ultimate/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-partybox-ultimate",
@@ -37693,7 +37979,8 @@
     "price": 142000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-xtreme-4-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-xtreme-4",
@@ -37702,7 +37989,8 @@
     "price": 142000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-xtreme-4-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-xtreme-4",
@@ -37995,7 +38283,8 @@
     "price": 21900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-clip-4-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-clip-4",
@@ -38004,7 +38293,8 @@
     "price": 21900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-clip-4-teal/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-clip-4",
@@ -38013,7 +38303,8 @@
     "price": 21900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-clip-4-red/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-clip-4",
@@ -38022,7 +38313,8 @@
     "price": 21900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-clip-4-pink/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-clip-4",
@@ -38031,7 +38323,8 @@
     "price": 21900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-clip-4-orange/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-clip-4",
@@ -38040,25 +38333,8 @@
     "price": 21900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-clip-4-green/",
-    "seeded": true
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Blue",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4blue/",
-    "seeded": true
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Black",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-clip-4",
@@ -38070,6 +38346,26 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "jbl-clip-4",
+    "shop": "ibolit",
+    "title": "JBL Clip 4 Blue",
+    "price": 22900,
+    "storage": null,
+    "url": "https://ibolit.mobi/product/jbl-clip-4blue/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "jbl-clip-4",
+    "shop": "ibolit",
+    "title": "JBL Clip 4 Black",
+    "price": 22900,
+    "storage": null,
+    "url": "https://ibolit.mobi/product/jbl-clip-4black/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -38135,7 +38431,8 @@
     "price": 54000,
     "storage": null,
     "url": "https://ibolit.mobi/product/marshall-willen-cream/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-willen",
@@ -38144,7 +38441,8 @@
     "price": 54000,
     "storage": null,
     "url": "https://ibolit.mobi/product/marshall-willen-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-willen",
@@ -38446,7 +38744,8 @@
     "price": 53900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-flip-6-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-flip-6",
@@ -38524,7 +38823,8 @@
     "price": 59000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-flip-6-teal/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-flip-6",
@@ -38533,7 +38833,8 @@
     "price": 59000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-flip-6-pink/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-flip-6",
@@ -38542,7 +38843,8 @@
     "price": 59000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-flip-6-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-flip-6",
@@ -38551,7 +38853,8 @@
     "price": 59000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-flip-6-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "marshall-woburn-3": [
@@ -38837,7 +39140,8 @@
     "price": 16000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-go-3-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-go-3",
@@ -38846,7 +39150,8 @@
     "price": 16000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-go-3-teal/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-go-3",
@@ -38855,7 +39160,8 @@
     "price": 16000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-go-3-red/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-go-3",
@@ -38864,7 +39170,8 @@
     "price": 16000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-go-3-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-go-3",
@@ -39022,7 +39329,8 @@
     "price": 77000,
     "storage": null,
     "url": "https://ibolit.mobi/product/marshall-emberton-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-emberton",
@@ -39125,7 +39433,8 @@
     "price": 187000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-boombox-3-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-boombox-3-squad": [
@@ -39727,7 +40036,8 @@
     "price": 256000,
     "storage": null,
     "url": "https://ibolit.mobi/product/dyson-airwrap-multi-styler-complete-long-hs05-blue-blush/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "dyson-multi-complete-long-hs05",
@@ -39763,7 +40073,8 @@
     "price": 272000,
     "storage": null,
     "url": "https://ibolit.mobi/product/dyson-airwrap-multi-styler-complete-long-hs05-onyx-gold/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "dyson-multi-complete-long-hs05",
@@ -40079,6 +40390,15 @@
     "color": "Ceramic",
     "shop": "planet3d",
     "seen": "2026-09-20"
+   },
+   {
+    "id": "dyson-ht01-airstrait-straightener-plum",
+    "shop": "istyle",
+    "title": "Dyson AirStarit (HT01) Orange 2026",
+    "price": 175000,
+    "storage": null,
+    "url": "https://istyle.am/en/product/Dyson Airstrait™ HT01  Orange 2026",
+    "seeded": true
    },
    {
     "id": "dyson-ht01-airstrait-straightener-plum",
@@ -40439,7 +40759,8 @@
     "price": 246000,
     "storage": null,
     "url": "https://ibolit.mobi/product/dyson-supersonic-nural-hd16-strawberry-bronze-blush-pink/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "dyson-hd16-vinca-blue-topaz": [
@@ -40523,7 +40844,8 @@
     "price": 203000,
     "storage": null,
     "url": "https://ibolit.mobi/product/dyson-supersonic-hair-dryer-hd15-nickel-copper/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "dyson-er-hd15",
@@ -41249,7 +41571,8 @@
     "price": 134900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-pad-pro-5g.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-watch-ultra-4-gps-plus-cellular-plus-band": [
@@ -41265,6 +41588,26 @@
     "inStock": true,
     "shop": "ucom",
     "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+    "shop": "viva",
+    "title": "Apple Watch Ultra 4 GPS + Cellular 49mm Natural Titanium Case with Sand Trail Loop - M/L",
+    "price": 384900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-ultra-4-gps-cellular-49mm-natural-titanium-case-with-sand-trail-loop-m-l/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+    "shop": "viva",
+    "title": "Apple Watch Ultra 4 GPS + Cellular 49mm Black Titanium Case with Black Titanium Milanese Loop - M",
+    "price": 434900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-ultra-4-gps-cellular-49mm-black-titanium-case-with-black-titanium-milanese-loop-m/",
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-watch-series-12-gps-42mm": [
@@ -41279,6 +41622,46 @@
     "color": null,
     "inStock": true,
     "shop": "ucom",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-12-gps-42mm",
+    "shop": "viva",
+    "title": "Apple Watch Series 12 GPS 42mm Light Gold Aluminium Case with Sand Sport Band - S/M",
+    "price": 194900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-series-12-gps-42mm-light-gold-aluminium-case-with-sand-sport-band-s-m/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-12-gps-42mm",
+    "shop": "viva",
+    "title": "Apple Watch Series 12 GPS 42mm Light Gold Aluminium Case with Sand Sport Band - M/L",
+    "price": 194900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-series-12-gps-42mm-light-gold-aluminium-case-with-sand-sport-band-m-l/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-12-gps-42mm",
+    "shop": "viva",
+    "title": "Apple Watch Series 12 GPS 46mm Black Aluminium Case with Black Sport Band - M/L",
+    "price": 218900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-series-12-gps-46mm-black-aluminium-case-with-black-sport-band-m-l/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-12-gps-42mm",
+    "shop": "viva",
+    "title": "Apple Watch Series 12 GPS 46mm Space Grey Aluminium Case with Navy Blue Sport Band - M/L",
+    "price": 218900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-series-12-gps-46mm-space-grey-aluminium-case-with-navy-blue-sport-band-m-l/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -41515,7 +41898,8 @@
     "price": 51900,
     "storage": null,
     "url": "https://shop.ucom.am/am/yandex-smart-speaker-station-mini.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-400-lite": [
@@ -41580,7 +41964,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-200-lite-8gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "honor-200-lite-5g",
@@ -41630,7 +42015,8 @@
     "storage": 256,
     "color": "Jade Cyan",
     "url": "https://redstore.am/en/product/honor-x9c-8gb256gb-jade-cyan",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "honor-x9c",
@@ -43084,7 +43470,8 @@
     "price": 189000,
     "storage": null,
     "url": "https://ibolit.mobi/product/marshall-woburn-iii-cream/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-woburn-iii",
@@ -43093,7 +43480,8 @@
     "price": 189000,
     "storage": null,
     "url": "https://ibolit.mobi/product/marshall-woburn-iii-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-woburn-iii",
@@ -43324,7 +43712,8 @@
     "price": 12900,
     "storage": null,
     "url": "https://shop.ucom.am/en/earpods-apple-usb-c-mtjy3zm-a-myqy3zm-a.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-earpods-usb-c",
@@ -44657,7 +45046,8 @@
     "price": 192000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-12gb-512gb-titanium/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-f6",
@@ -44666,7 +45056,8 @@
     "price": 192000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-12gb-512gb-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-f6",
@@ -44675,7 +45066,8 @@
     "price": 192000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-12gb-512gb-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "asus-vivobook-15-x1504va": [
@@ -44837,7 +45229,8 @@
     "price": 99900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-xtreme-3-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-xtreme-3",
@@ -44846,7 +45239,8 @@
     "price": 99900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-xtreme-3-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-xtreme-3",
@@ -47937,7 +48331,8 @@
     "price": 77000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-live-770-nc-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-live-770-nc",
@@ -47946,7 +48341,8 @@
     "price": 77000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-live-770-nc-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-live-770-nc",
@@ -47955,7 +48351,8 @@
     "price": 77000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-live-770-nc-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-live-770-nc",
@@ -48086,7 +48483,8 @@
     "price": 82900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-soundlink-mini-ii-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "bose-soundlink-mini-ii",
@@ -48389,7 +48787,8 @@
     "price": 59900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-mini-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-homepod-mini",
@@ -48398,7 +48797,8 @@
     "price": 59900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-mini-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-homepod-mini",
@@ -48407,7 +48807,8 @@
     "price": 59900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-mini-orange/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-homepod-mini",
@@ -48416,7 +48817,8 @@
     "price": 59900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-mini-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-homepod-mini",
@@ -48425,7 +48827,8 @@
     "price": 59900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-mini-yellow/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "marshall-kilburn-2": [
@@ -49136,7 +49539,8 @@
     "price": 31900,
     "storage": null,
     "url": "https://shop.ucom.am/en/yandex-smart-station-light-00025.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "yandex-station-lite",
@@ -49145,7 +49549,8 @@
     "price": 33900,
     "storage": null,
     "url": "https://shop.ucom.am/en/yandex-smart-speaker-station-light-2-with-alice-gpt.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "yandex-station-lite",
@@ -49741,16 +50146,6 @@
    },
    {
     "id": "samsung-galaxy-s25-edge",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Edge 12GB/512GB Titanium Jetblack",
-    "price": 389000,
-    "storage": 512,
-    "color": "Titanium Jetblack",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-edge-12gb512gb-titanium-jetblack",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s25-edge",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy S25 Edge Titanium Jetblack / 512 GB",
     "price": 389000,
@@ -49772,6 +50167,17 @@
     "ram": 12,
     "color": "Titanium Jetblack",
     "shop": "redstore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-edge",
+    "shop": "redstore",
+    "title": "Samsung Galaxy S25 Edge 12GB/512GB Titanium Jetblack",
+    "price": 409000,
+    "storage": 512,
+    "color": "Titanium Jetblack",
+    "url": "https://redstore.am/en/product/samsung-galaxy-s25-edge-12gb512gb-titanium-jetblack",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -49966,7 +50372,8 @@
     "price": 119900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-pad.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-pad",
@@ -50440,6 +50847,28 @@
    },
    {
     "id": "google-pixel-11-pro-xl",
+    "shop": "redstore",
+    "title": "Google Pixel 11 Pro XL",
+    "price": 585000,
+    "storage": 256,
+    "color": "Obsidian",
+    "url": "https://redstore.am/en/product/google-pixel-11-pro-xl-12gb256gb-obsidian",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "google-pixel-11-pro-xl",
+    "shop": "redstore",
+    "title": "Google Pixel 11 Pro XL",
+    "price": 585000,
+    "storage": 256,
+    "color": "Olive",
+    "url": "https://redstore.am/en/product/google-pixel-11-pro-xl-12gb256gb-olive",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "google-pixel-11-pro-xl",
     "shop": "yerevanmobile",
     "title": "Google Pixel 11 Pro XL",
     "price": 585000,
@@ -50468,27 +50897,8 @@
     "price": 587700,
     "storage": 256,
     "url": "https://allsell.am/en/google-pixel-11-pro-xl",
-    "seeded": true
-   },
-   {
-    "id": "google-pixel-11-pro-xl",
-    "shop": "redstore",
-    "title": "Google Pixel 11 Pro XL",
-    "price": 599000,
-    "storage": 256,
-    "color": "Obsidian",
-    "url": "https://redstore.am/en/product/google-pixel-11-pro-xl-12gb256gb-obsidian",
-    "seeded": true
-   },
-   {
-    "id": "google-pixel-11-pro-xl",
-    "shop": "redstore",
-    "title": "Google Pixel 11 Pro XL",
-    "price": 599000,
-    "storage": 256,
-    "color": "Olive",
-    "url": "https://redstore.am/en/product/google-pixel-11-pro-xl-12gb256gb-olive",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "google-pixel-11-pro-xl",
@@ -50566,7 +50976,8 @@
     "price": 216700,
     "storage": 256,
     "url": "https://allsell.am/en/oneplus-nord-6",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "oneplus-nord-6",
@@ -50590,7 +51001,8 @@
     "storage": 256,
     "color": "Fresh Mint",
     "url": "https://redstore.am/en/product/oneplus-nord-6-8gb256gb-fresh-mint",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "oneplus-nord-6",
@@ -50793,7 +51205,8 @@
     "storage": 128,
     "color": "Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-black",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a26",
@@ -50803,7 +51216,8 @@
     "storage": 128,
     "color": "Peach Pink",
     "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-peach-pink",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a26",
@@ -50813,7 +51227,8 @@
     "storage": 128,
     "color": "White",
     "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-white",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a26",
@@ -50825,7 +51240,8 @@
     "color": "Awesome Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a26",
@@ -50837,7 +51253,8 @@
     "color": "Awesome White",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a26",
@@ -50849,7 +51266,8 @@
     "color": "Awesome Mint",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a26",
@@ -50908,36 +51326,6 @@
    },
    {
     "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 8GB/256GB Black",
-    "price": 99000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-black",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 8GB/256GB Peach Pink",
-    "price": 99000,
-    "storage": 256,
-    "color": "Peach Pink",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-peach-pink",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 8GB/256GB Mint",
-    "price": 99000,
-    "storage": 256,
-    "color": "Mint",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a26",
     "price": 109000,
     "title": "Samsung Galaxy A26 8GB/256GB Mint",
     "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
@@ -50976,6 +51364,39 @@
     "ram": 8,
     "color": "White",
     "shop": "redstore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A26 8GB/256GB Black",
+    "price": 109000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-black",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A26 8GB/256GB Peach Pink",
+    "price": 109000,
+    "storage": 256,
+    "color": "Peach Pink",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-peach-pink",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "shop": "redstore",
+    "title": "Samsung Galaxy A26 8GB/256GB Mint",
+    "price": 109000,
+    "storage": 256,
+    "color": "Mint",
+    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -51193,7 +51614,8 @@
     "price": 14900,
     "storage": null,
     "url": "https://ibolit.mobi/product/xiaomi-redmi-smart-band-2-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "google-fitbit-air": [
@@ -54176,7 +54598,8 @@
     "price": 799000,
     "storage": 1024,
     "url": "https://redstore.am/en/product/lenovo-legion-pro-5-16iax10",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "asus-tuf-fx608jpr-wh74": [
@@ -55226,7 +55649,8 @@
     "price": 109900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-soundlink-revolve-ii-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "bose-soundlink-revolve-ii",
@@ -55235,7 +55659,8 @@
     "price": 132000,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-soundlink-revolve-ii-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-xtreme-4-squad": [
@@ -55411,7 +55836,8 @@
     "price": 35900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-beam-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-beam",
@@ -55420,7 +55846,8 @@
     "price": 35900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-beam-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-beam",
@@ -55483,7 +55910,8 @@
     "price": 44900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-flex-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-flex",
@@ -55802,7 +56230,8 @@
     "price": 109900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-quietcomfort-earbuds-ii-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "dyson-zone": [
@@ -55855,7 +56284,8 @@
     "price": 165900,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-2-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-homepod-2",
@@ -55878,7 +56308,8 @@
     "price": 181000,
     "storage": null,
     "url": "https://ibolit.mobi/product/apple-homepod-2-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-homepod-2",
@@ -56083,7 +56514,8 @@
     "storage": null,
     "color": "Silver",
     "url": "https://ibolit.mobi/product/apple-watch-series-10-42mm-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "dyson-origin-hs05": [
@@ -56641,7 +57073,8 @@
     "price": 26900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-quantum-300-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-quantum-300",
@@ -56764,7 +57197,8 @@
     "price": 65900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-live-pro-2-tws-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-live-660-nc": [
@@ -56789,7 +57223,8 @@
     "price": 55900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-live-660-nc-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-live-660-nc",
@@ -60469,7 +60904,8 @@
     "price": 169000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/dell-vostro-3520-i3-8gb-512gb/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "dell-vostro-3520-i5": [
@@ -60494,7 +60930,8 @@
     "price": 216000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/dell-vostro-3520-i5-8gb-512gb/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "hp-elitebook-640-g10": [
@@ -60823,7 +61260,8 @@
     "price": 275000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-air-13-mgn63-m1-2020-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-13-m1-2024": [
@@ -60848,7 +61286,8 @@
     "price": 719000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-air-13-m1-2024-starlight/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-13-mgn93-m1-2020": [
@@ -60873,7 +61312,8 @@
     "price": 305000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-air-13-mgn93-m1-2020-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-13-mgnd3-m1-2020": [
@@ -60898,7 +61338,8 @@
     "price": 314900,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-air-13-mgnd3-m1-2020-gold/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-mgn63-late-2020": [
@@ -60923,7 +61364,8 @@
     "price": 305000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-air-mgn63-late-2020-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-mgn93-late-2020": [
@@ -60948,7 +61390,8 @@
     "price": 339000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-air-mgn93-late-2020-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-14-2023-mtl73": [
@@ -60973,7 +61416,8 @@
     "price": 692000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-pro-14-2023-mtl73-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-14-mr7j3-2023": [
@@ -60998,7 +61442,8 @@
     "price": 720000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-pro-14-mr7j3-2023-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-14-mrx33-2023": [
@@ -61023,7 +61468,8 @@
     "price": 889000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-pro-14-mrx33-2023-space-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-14-mrx43-2023": [
@@ -61048,7 +61494,8 @@
     "price": 1043000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-pro-14-mrx43-2023-space-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-16-mrw23": [
@@ -61073,7 +61520,8 @@
     "price": 1175000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-pro-16-mrw23-space-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-16-mrw63-2023": [
@@ -61098,7 +61546,8 @@
     "price": 1175000,
     "storage": null,
     "url": "https://ibolit.mobi/product/macbook-pro-16-mrw63-2023-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "msi-cyborg-15-a12vf-043us": [
@@ -61219,7 +61668,8 @@
     "price": 154000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/ipad-10-2-9th-gen-64gb-wi-fi-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-10-2-9th-generation-wi-fi": [
@@ -61244,7 +61694,8 @@
     "price": 152000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/ipad-10-2-9th-generation-64gb-wi-fi-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-air-11-wi-fi-2024": [
@@ -61297,7 +61748,8 @@
     "price": 277000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-2024-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-11-wi-fi-2024",
@@ -61306,7 +61758,8 @@
     "price": 277000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-2024-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-ipad-air-11-wi-fi-2024",
@@ -61315,7 +61768,8 @@
     "price": 277000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-2024-starlight/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-13-wi-fi-2024": [
@@ -61340,7 +61794,8 @@
     "price": 680000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/ipad-pro-13-512gb-wi-fi-2024-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a8-10-5-x200": [
@@ -61365,7 +61820,8 @@
     "price": 77000,
     "storage": 32,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a8-10-5-32gb-x200-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a8-10-5-x205": [
@@ -61390,7 +61846,8 @@
     "price": 77000,
     "storage": 32,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a8-10-5-32gb-x205-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-s9-fe-x510": [
@@ -61415,7 +61872,8 @@
     "price": 164000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x510",
@@ -61452,7 +61910,8 @@
     "price": 165000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-mint/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x510",
@@ -61461,7 +61920,8 @@
     "price": 165000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-lavender/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x510",
@@ -61512,7 +61972,8 @@
     "price": 203000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x510-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x510",
@@ -61521,7 +61982,8 @@
     "price": 203000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x510-mint/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x510",
@@ -61530,7 +61992,8 @@
     "price": 203000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x510-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-s9-fe-x516": [
@@ -61597,7 +62060,8 @@
     "price": 209000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61606,7 +62070,8 @@
     "price": 209000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-mint/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61615,7 +62080,8 @@
     "price": 209000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-lavender/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61624,7 +62090,8 @@
     "price": 209000,
     "storage": 128,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61661,7 +62128,8 @@
     "price": 246000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61670,7 +62138,8 @@
     "price": 246000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-lavender/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61679,7 +62148,8 @@
     "price": 246000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -61688,7 +62158,8 @@
     "price": 247000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-mint/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "asus-rog-delta-s": [
@@ -61981,7 +62452,8 @@
     "price": 509000,
     "storage": null,
     "url": "https://ibolit.mobi/product/bang-olufsen-beosound-a5-nordic-weave-portable-speaker/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "bo-beosound-balance": [
@@ -62068,7 +62540,8 @@
     "price": 79900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-soundlink-flex-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "bose-soundlink-flex",
@@ -62077,7 +62550,8 @@
     "price": 79900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-soundlink-flex-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "bose-soundlink-revolve": [
@@ -62102,7 +62576,8 @@
     "price": 99000,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-soundlink-revolve-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "bose-sport": [
@@ -62141,7 +62616,8 @@
     "price": 69900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-sport-earbuds-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "bose-sport",
@@ -62150,7 +62626,8 @@
     "price": 69900,
     "storage": null,
     "url": "https://ibolit.mobi/product/bose-sport-earbuds-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "dell-ax510-2-0": [
@@ -62248,7 +62725,8 @@
     "price": 249900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-boombox-3-wi-fi-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-clip-4-squad": [
@@ -62289,7 +62767,8 @@
     "price": 59000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-flip-6-black-star/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-flip-6-squared": [
@@ -62362,7 +62841,8 @@
     "price": 26900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-quantum-200-wired-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-125-tws": [
@@ -62401,7 +62881,8 @@
     "price": 49900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-125-tws-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-125-tws",
@@ -62410,7 +62891,8 @@
     "price": 49900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-125-tws-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-130-tws": [
@@ -62435,7 +62917,8 @@
     "price": 29900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-130-tws-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-215-tws": [
@@ -62460,7 +62943,8 @@
     "price": 49000,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-215-tws-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-215-tws",
@@ -62483,7 +62967,8 @@
     "price": 49900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-215-tws-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-230-nc-tws": [
@@ -62524,7 +63009,8 @@
     "price": 39900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-230-tws-beige/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-500-wired": [
@@ -62563,7 +63049,8 @@
     "price": 11900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-500-wired-pink/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-500-wired",
@@ -62572,7 +63059,8 @@
     "price": 11900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-500-wired-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-520-bt": [
@@ -62683,7 +63171,8 @@
     "price": 39900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-670-nc-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-670-nc",
@@ -62692,7 +63181,8 @@
     "price": 39900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-670-nc-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-720-bt": [
@@ -62731,7 +63221,8 @@
     "price": 28900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-720-bt-purple/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-720-bt",
@@ -62740,7 +63231,8 @@
     "price": 28900,
     "storage": null,
     "url": "https://ibolit.mobi/product/jbl-tune-720-bt-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-760-nc": [
@@ -62850,7 +63342,8 @@
     "price": 139900,
     "storage": null,
     "url": "https://ibolit.mobi/product/sony-wf-1000xm5-wireless-headphones-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-4-bhr-5846-gl": [
@@ -62967,7 +63460,8 @@
     "price": 11400,
     "storage": null,
     "url": "https://ibolit.mobi/product/xiaomi-mi-smart-band-8-active-pink/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-smart-band-8-active": [
@@ -63008,7 +63502,8 @@
     "price": 34400,
     "storage": null,
     "url": "https://ibolit.mobi/product/xiaomi-smart-mi-band-8-pro-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "asus-dual-rtx-4060-ti-8gb": [
@@ -63180,7 +63675,8 @@
     "price": 40000,
     "storage": 32,
     "url": "https://ibolit.mobi/product/xiaomi-redmi-10a-2gb-32gb-chrome-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-10a",
@@ -63189,7 +63685,8 @@
     "price": 40000,
     "storage": 32,
     "url": "https://ibolit.mobi/product/xiaomi-redmi-10a-2gb-32gb-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "poco-c75": [
@@ -63270,7 +63767,8 @@
     "price": 97000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/xiaomi-poco-x5-5g-8gb-256gb-green/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-x5-5g",
@@ -63279,7 +63777,8 @@
     "price": 97000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/xiaomi-poco-x5-5g-8gb-256gb-blue/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-13-pro": [
@@ -63391,7 +63890,8 @@
     "storage": 12,
     "url": "https://shop.ucom.am/en/xiaomi-14t-12gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-poco-f6-pro": [
@@ -63430,7 +63930,8 @@
     "price": 236000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-12gb-512gb-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-f6-pro",
@@ -63439,7 +63940,8 @@
     "price": 236000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-12gb-512gb-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-f6-pro",
@@ -63476,7 +63978,8 @@
     "price": 279000,
     "storage": 1024,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-16gb-1tb-black/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-f6-pro",
@@ -63485,7 +63988,8 @@
     "price": 279000,
     "storage": 1024,
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-16gb-1tb-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-magicbook-pro-16-3k-core-ultra-5-125h-ram-1t-win11": [
@@ -65960,7 +66464,8 @@
     "price": 119900,
     "storage": null,
     "url": "https://shop.ucom.am/en/yandex-smart-station-2-00051.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "yandex-smart-lamp": [
@@ -65971,7 +66476,8 @@
     "price": 5900,
     "storage": null,
     "url": "https://shop.ucom.am/en/yandex-smart-lamp-00017-e14.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "nothing-ear-a": [
@@ -66004,7 +66510,8 @@
     "price": 11900,
     "storage": null,
     "url": "https://vega.am/en/home-appliances/phones-and-gadgets/wired-headphones/headphone-jbl-tune-125bt-bk.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "jbl-tune-125bt",
@@ -66500,17 +67007,6 @@
     "seeded": true
    }
   ],
-  "dyson-airstarit-2026": [
-   {
-    "id": "dyson-airstarit-2026",
-    "shop": "istyle",
-    "title": "Dyson AirStarit (HT01) Orange 2026",
-    "price": 175000,
-    "storage": null,
-    "url": "https://istyle.am/en/product/Dyson Airstrait™ HT01  Orange 2026",
-    "seeded": true
-   }
-  ],
   "lenovo-83lk0001us": [
    {
     "id": "lenovo-83lk0001us",
@@ -66643,7 +67139,8 @@
     "price": 365000,
     "storage": 64,
     "url": "https://ibolit.mobi/product/ipad-air-5-64gb-wi-fi-cellular-2022-space-gray/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024": [
@@ -66654,7 +67151,8 @@
     "price": 598000,
     "storage": 256,
     "url": "https://ibolit.mobi/product/ipad-pro-13-256gb-wi-fi-cellular-2024-space-grey/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-13-wi-fi-plus-cellular-2024": [
@@ -66665,7 +67163,8 @@
     "price": 715000,
     "storage": 512,
     "url": "https://ibolit.mobi/product/ipad-pro-13-512gb-wi-fi-cellular-2024-silver/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-mi-electric-kettle-pro-2": [
@@ -66676,7 +67175,8 @@
     "price": 3200,
     "storage": null,
     "url": "https://ibolit.mobi/product/xiaomi-mi-electric-kettle-pro-2-white/",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a": [
@@ -66687,7 +67187,8 @@
     "price": 524900,
     "storage": null,
     "url": "https://shop.ucom.am/en/ipad-pro-wi-fi.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-air-11-inch-with-wi-fi": [
@@ -66698,7 +67199,8 @@
     "price": 319900,
     "storage": null,
     "url": "https://shop.ucom.am/en/ipad-air-11-inch-m3-with-wi-fi.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a": [
@@ -66720,7 +67222,8 @@
     "price": 119900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-pad-8.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "huawei-matepad-t10": [
@@ -66731,7 +67234,8 @@
     "price": 99900,
     "storage": null,
     "url": "https://shop.ucom.am/en/huawei-matepad-t10.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-watch-3-41mm": [
@@ -66742,7 +67246,8 @@
     "price": 59900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-watch-3-41mm.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-watch-gs-3-rubber": [
@@ -66753,7 +67258,8 @@
     "price": 39900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-watch-gs-4.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-band-6": [
@@ -66764,7 +67270,8 @@
     "price": 24900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-band-6.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-watch-s1-active": [
@@ -66775,7 +67282,8 @@
     "price": 79900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-watch-s1-active.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-watch-s1": [
@@ -66786,7 +67294,8 @@
     "price": 109900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-watch-s1.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-smart-watch-70mai-saphir": [
@@ -66797,7 +67306,8 @@
     "price": 99900,
     "storage": null,
     "url": "https://shop.ucom.am/en/smart-watch-xiaomi-70-mai-saphir.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-watch-ultra-47mm-lte": [
@@ -66808,7 +67318,8 @@
     "price": 211900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-watch-ultra-47mm-lte.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "apple-watch-s10-42mm-with-sport-band": [
@@ -66819,7 +67330,8 @@
     "price": 179900,
     "storage": null,
     "url": "https://shop.ucom.am/en/apple-watch-series-10-42mm-sport-band.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "apple-watch-s10-42mm-with-sport-band",
@@ -66828,7 +67340,8 @@
     "price": 199900,
     "storage": null,
     "url": "https://shop.ucom.am/en/apple-watch-series-10-46mm-sport-band.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-watch-fit-3": [
@@ -66839,7 +67352,8 @@
     "price": 25900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-watch-fit-3.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-watch-2-lite": [
@@ -66850,7 +67364,8 @@
     "price": 33900,
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-watch-2-lite-black-m2109w1.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-buds-live": [
@@ -66861,7 +67376,8 @@
     "price": 39900,
     "storage": null,
     "url": "https://shop.ucom.am/en/samsung-galaxy-buds-live.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-choice-earbuds-x3": [
@@ -66872,7 +67388,8 @@
     "price": 22900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-choice-earbuds-x3-mln-00.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-choice-earbuds-x5": [
@@ -66883,7 +67400,8 @@
     "price": 14900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-choice-earbuds-x5.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-choice-earbuds-x7e-ast-me00": [
@@ -66894,7 +67412,8 @@
     "price": 8900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-choice-earbuds-x7e-white-ast-me00.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-choice-headphones-me01": [
@@ -66905,7 +67424,8 @@
     "price": 17900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-choice-headphones-me01.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "honor-earbuds-x6": [
@@ -66916,7 +67436,8 @@
     "price": 12900,
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-earbuds-x6.html",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-11": [
@@ -66928,7 +67449,8 @@
     "storage": 4,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-note-11-4gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-12x": [
@@ -66940,7 +67462,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-12x.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-11-proplus-5g": [
@@ -66952,7 +67475,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-note-11-pro-plus-5g.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-10-pro": [
@@ -66964,7 +67488,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-note-10-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-13-lite": [
@@ -66976,7 +67501,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-13-lite-8gb-128gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-11s": [
@@ -66988,7 +67514,8 @@
     "storage": 6,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-note-11s-6gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-note-10s": [
@@ -67000,7 +67527,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-note-10s.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-13c": [
@@ -67024,7 +67552,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/nothing-phone-2.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-poco-f5": [
@@ -67036,7 +67565,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/xiaomi-poco-f5-8gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-poco-x5-pro-5g": [
@@ -67048,7 +67578,8 @@
     "storage": 8,
     "url": "https://shop.ucom.am/en/xiaomi-poco-x5-pro-5g-8gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "honor-x5b-plus": [
@@ -67072,7 +67603,8 @@
     "storage": 6,
     "url": "https://shop.ucom.am/en/xiaomi-poco-m6-6gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-poco-m6",
@@ -67082,7 +67614,8 @@
     "storage": 8,
     "url": "https://shop.ucom.am/en/xiaomi-poco-m6-8gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "honor-x6c": [
@@ -67094,7 +67627,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-x6c.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "honor-magic7": [
@@ -67106,7 +67640,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-magic7.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "honor-magic-8-pro": [
@@ -67118,7 +67653,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-magic-8-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-20"
    }
   ],
   "hisense-75e8s": [
@@ -67129,7 +67665,8 @@
     "price": 759000,
     "storage": null,
     "url": "https://vlv.am/en/Product/46342",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "sony-kd-65x75wl": [
@@ -67238,6 +67775,140 @@
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a55-256gb-blue-black4843/",
     "seeded": true,
     "seen": "2026-09-20"
+   }
+  ],
+  "realme-c71": [
+   {
+    "id": "realme-c71",
+    "shop": "viva",
+    "title": "Realme C71 6GB/128GB White",
+    "price": 52900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/realme-c71-6gb-128gb-white/",
+    "seeded": true
+   },
+   {
+    "id": "realme-c71",
+    "shop": "viva",
+    "title": "Realme C71 6GB/128GB Green",
+    "price": 52900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/realme-c71-6gb-128gb-green2793/",
+    "seeded": true
+   },
+   {
+    "id": "realme-c71",
+    "shop": "viva",
+    "title": "Realme C71 8GB/256GB White",
+    "price": 63900,
+    "storage": 8,
+    "url": "https://shop.viva.am/en/product/realme-c71-8gb-256gb-white2229/",
+    "seeded": true
+   }
+  ],
+  "apple-iphone-16e": [
+   {
+    "id": "apple-iphone-16e",
+    "shop": "viva",
+    "title": "iPhone 16e 128GB Black",
+    "price": 299900,
+    "storage": 128,
+    "url": "https://shop.viva.am/en/product/iphone-16e-128gb-black/",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16e",
+    "shop": "viva",
+    "title": "iPhone 16e 128GB White",
+    "price": 299900,
+    "storage": 128,
+    "url": "https://shop.viva.am/en/product/iphone-16e-128gb-white2876/",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16e",
+    "shop": "viva",
+    "title": "iPhone 16e 256GB Black",
+    "price": 349900,
+    "storage": 256,
+    "url": "https://shop.viva.am/en/product/iphone-16e-256gb-black7619/",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16e",
+    "shop": "viva",
+    "title": "iPhone 16e 256GB White",
+    "price": 349900,
+    "storage": 256,
+    "url": "https://shop.viva.am/en/product/iphone-16e-256gb-white28766675-md1w4hx-a/",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-16e",
+    "shop": "viva",
+    "title": "iPhone 16e 512GB White",
+    "price": 489900,
+    "storage": 512,
+    "url": "https://shop.viva.am/en/product/iphone-16e-512gb-white287666758053/",
+    "seeded": true
+   }
+  ],
+  "realme-note-60x": [
+   {
+    "id": "realme-note-60x",
+    "shop": "viva",
+    "title": "Realme Note 60x 3GB/64GB Black",
+    "price": 34900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/realme-note-60x-3gb-64gb-black/",
+    "seeded": true
+   },
+   {
+    "id": "realme-note-60x",
+    "shop": "viva",
+    "title": "Realme Note 60x 3GB/64GB Green",
+    "price": 34900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/realme-note-60x-3gb-64gb-green/",
+    "seeded": true
+   },
+   {
+    "id": "realme-note-60x",
+    "shop": "viva",
+    "title": "Realme Note 60x 4GB/128GB Black",
+    "price": 40900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/realme-note-60x-4gb-128gb-black1287/",
+    "seeded": true
+   }
+  ],
+  "poco-c71": [
+   {
+    "id": "poco-c71",
+    "shop": "viva",
+    "title": "POCO C71 3GB/64GB Black",
+    "price": 32900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/poco-c71-3gb-64gb-Black/",
+    "seeded": true
+   },
+   {
+    "id": "poco-c71",
+    "shop": "viva",
+    "title": "POCO C71 4GB/128GB Black",
+    "price": 38900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/poco-c71-4gb-128gb-black/",
+    "seeded": true
+   },
+   {
+    "id": "poco-c71",
+    "shop": "viva",
+    "title": "POCO C71 4GB/128GB Gold",
+    "price": 38900,
+    "storage": null,
+    "url": "https://shop.viva.am/en/product/poco-c71-4gb-128gb-gold/",
+    "seeded": true
    }
   ]
  }

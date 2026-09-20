@@ -2,17 +2,27 @@
  "generated": "2026-09-20",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1319,
- "missing": 202,
+ "total": 1323,
+ "missing": 206,
  "tooSmall": 58,
  "products": [
   {
-   "id": "microsoft-xbox",
+   "id": "microsoft-xbox-controller",
    "brand": "Microsoft",
-   "name": "Xbox Wireless Headset",
-   "category": "headphones",
+   "name": "Xbox Wireless Controller",
+   "category": "console",
    "shops": 5,
-   "query": "Microsoft Xbox Wireless Headset",
+   "query": "Microsoft Xbox Wireless Controller",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-note-15-pro-plus-5g",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 15 Pro Plus 5G",
+   "category": "phone",
+   "shops": 4,
+   "query": "Xiaomi Redmi Note 15 Pro Plus 5G",
    "what": "missing",
    "width": 0
   },
@@ -167,16 +177,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-note-15-pro-plus-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 15 Pro Plus 5G",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi Note 15 Pro Plus 5G",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "xiaomi-redmi-note-17-4g",
    "brand": "Xiaomi",
    "name": "Redmi Note 17 4G",
@@ -243,6 +243,16 @@
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "apple-iphone-16e",
+   "brand": "Apple",
+   "name": "iPhone 16e",
+   "category": "phone",
+   "shops": 1,
+   "query": "Apple iPhone 16e",
    "what": "missing",
    "width": 0
   },
@@ -1517,6 +1527,16 @@
    "width": 0
   },
   {
+   "id": "microsoft-xbox",
+   "brand": "Microsoft",
+   "name": "Xbox Wireless Headset",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Microsoft Xbox Wireless Headset",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "nothing-6974434224179",
    "brand": "Nothing",
    "name": "6974434224179",
@@ -1553,6 +1573,36 @@
    "category": "monitor",
    "shops": 1,
    "query": "Philips 24\" USB-C 24E1N3300A/00",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "poco-c71",
+   "brand": "Xiaomi",
+   "name": "POCO C71",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi POCO C71",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "realme-c71",
+   "brand": "Realme",
+   "name": "C71",
+   "category": "phone",
+   "shops": 1,
+   "query": "Realme C71",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "realme-note-60x",
+   "brand": "Realme",
+   "name": "Note 60x",
+   "category": "phone",
+   "shops": 1,
+   "query": "Realme Note 60x",
    "what": "missing",
    "width": 0
   },
@@ -1987,16 +2037,6 @@
    "width": 0
   },
   {
-   "id": "microsoft-xbox-controller",
-   "brand": "Microsoft",
-   "name": "Xbox Wireless Controller",
-   "category": "console",
-   "shops": 0,
-   "query": "Microsoft Xbox Wireless Controller",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "sony-wf-c510-b",
    "brand": "Sony",
    "name": "WF-C510/B",
@@ -2045,6 +2085,26 @@
    "query": "JBL Clip 4",
    "what": "too small",
    "width": 369
+  },
+  {
+   "id": "apple-watch-series-12-gps-42mm",
+   "brand": "Apple",
+   "name": "Watch Series 12 GPS",
+   "category": "watch",
+   "shops": 2,
+   "query": "Apple Watch Series 12 GPS",
+   "what": "too small",
+   "width": 491
+  },
+  {
+   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+   "brand": "Apple",
+   "name": "Watch Ultra 4 GPS + Cellular",
+   "category": "watch",
+   "shops": 2,
+   "query": "Apple Watch Ultra 4 GPS + Cellular",
+   "what": "too small",
+   "width": 520
   },
   {
    "id": "asus-tuf-gaming-h1",
@@ -2275,26 +2335,6 @@
    "query": "Apple MacBook Air 13 MGND3 M1 2020",
    "what": "too small",
    "width": 482
-  },
-  {
-   "id": "apple-watch-series-12-gps-42mm",
-   "brand": "Apple",
-   "name": "Watch Series 12 GPS",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Series 12 GPS",
-   "what": "too small",
-   "width": 491
-  },
-  {
-   "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
-   "brand": "Apple",
-   "name": "Watch Ultra 4 GPS + Cellular",
-   "category": "watch",
-   "shops": 1,
-   "query": "Apple Watch Ultra 4 GPS + Cellular",
-   "what": "too small",
-   "width": 520
   },
   {
    "id": "asus-v241eak-ba06",

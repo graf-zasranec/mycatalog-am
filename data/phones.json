@@ -46540,18 +46540,26 @@
   "brand": "Xiaomi",
   "name": "Redmi Note 15 Pro Plus 5G",
   "aliases": [
-   "Redmi Note 15 Pro Plus 5G"
+   "Redmi Note 15 Pro Plus 5G",
+   "Redmi Note 15 Pro+",
+   "Redmi Note 15 Pro+ 5G",
+   "Xiaomi Redmi Note 15 Pro+ 5G"
   ],
   "tier": "mid",
-  "priceAmd": 173000,
-  "priceAmdMax": 173000,
+  "priceAmd": 175900,
+  "priceAmdMax": 199900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
-    "storage": null,
-    "priceAmd": 173000
+    "storage": 256,
+    "priceAmd": 175900
+   },
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 199900
    }
   ],
   "display": {},
@@ -48104,6 +48112,161 @@
    "popularity",
    "released",
    "connectivity"
+  ]
+ },
+ {
+  "id": "realme-c71",
+  "category": "phone",
+  "brand": "Realme",
+  "name": "C71",
+  "aliases": [
+   "Realme C71 /256GB White",
+   "Realme C71 /128GB White",
+   "Realme C71 /128GB Green"
+  ],
+  "tier": "budget",
+  "priceAmd": 52900,
+  "priceAmdMax": 63900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 52900
+   },
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 63900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Realme C71.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "apple-iphone-16e",
+  "category": "phone",
+  "brand": "Apple",
+  "name": "iPhone 16e",
+  "aliases": [
+   "iPhone 16e White",
+   "iPhone 16e Black"
+  ],
+  "tier": "mid",
+  "priceAmd": 299900,
+  "priceAmdMax": 489900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 299900
+   },
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 349900
+   },
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 489900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Apple iPhone 16e.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "realme-note-60x",
+  "category": "phone",
+  "brand": "Realme",
+  "name": "Note 60x",
+  "aliases": [
+   "Realme Note 60x /128GB Black",
+   "Realme Note 60x /64GB Black",
+   "Realme Note 60x /64GB Green"
+  ],
+  "tier": "budget",
+  "priceAmd": 34900,
+  "priceAmdMax": 40900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 64,
+    "priceAmd": 34900
+   },
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 40900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Realme Note 60x.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "poco-c71",
+  "category": "phone",
+  "brand": "Xiaomi",
+  "name": "POCO C71",
+  "aliases": [
+   "POCO C71",
+   "POCO C71 /128GB Black",
+   "POCO C71 /128GB Gold",
+   "POCO C71 /64GB Black",
+   "Poco C71",
+   "Xiaomi POCO C71"
+  ],
+  "tier": "budget",
+  "priceAmd": 32900,
+  "priceAmdMax": 38900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 64,
+    "priceAmd": 32900
+   },
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 38900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Xiaomi C71.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
   ]
  }
 ]
