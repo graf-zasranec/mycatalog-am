@@ -452,6 +452,11 @@ for (const p of phones) {
 <meta name="twitter:description" content="${esc(DESC(p))}">
 <meta name="twitter:image" content="${img}">
 <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
+// These eight colours are literals because a standalone shell - the per-product no-JS page,
+// the 404, the favicon - cannot read a CSS variable from _shell.html. They mirror the tokens
+// and were checked against them on 2026-09-20: #F7F3EC --bg, #161C28 --text, #4A5262 --body,
+// #9E2B25 --brand and, for the dark block, #12151D --bg, #F2EEE7 --text, #B3BBC9 --body,
+// #E4574F --brand. Nothing enforces that, so a palette change has to be made here too.
 <style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
 display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
 img{max-width:min(420px,100%);height:auto}h1{font-size:22px;margin:16px 0 4px}

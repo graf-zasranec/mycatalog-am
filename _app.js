@@ -64,7 +64,10 @@ const X = {
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита',
     waters: { splash: 'Защита от брызг', dip: 'Выдерживает погружение' },
-    heroTag: 'Новинка', heroA: 'Сравни и выбери', heroB: 'свой смартфон',
+    // ru addresses the reader as вы everywhere else - the subhead below, the footer, the whole
+    // interface - and only this headline used ты. Raised to вы rather than lowering the rest:
+    // it is the smaller change and the register Russian retail copy is written in.
+    heroTag: 'Новинка', heroA: 'Сравните и выберите', heroB: 'свой смартфон',
     heroSub: 'Каждый магазин называет свою цену. Мы собираем их в одном месте — чтобы вы нашли именно то, что нужно, и не переплатили.',
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',

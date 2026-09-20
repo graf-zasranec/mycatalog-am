@@ -99,6 +99,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .mast{background:var(--bg);color:var(--text)}
 .topnav{display:flex;align-items:center;gap:16px;height:74px}
 .topnav .logo{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:800;letter-spacing:-.03em;color:var(--text);flex:none}
+/* The mark is the dot. It used to hold a 24-viewBox phone icon drawn at 9x9 with no fill set,
+   so it inherited #000 - a colour that is in no palette here - and spilled the circle it sat
+   in. At this size the glyph could not be read as anything, so it is gone rather than fixed. */
 .topnav .logo .m{width:9px;height:9px;border-radius:50%;background:var(--brand);flex:none}
 .nav{display:flex;gap:2px;flex:none}
 .nav a{padding:8px 12px;border-radius:0;font-weight:600;font-size:0.875rem;color:var(--muted);
@@ -954,7 +957,7 @@ a.store:hover .nm{color:var(--brand)}
 <a class="skip" href="#main" id="skipLink">Main</a>
 <div class="mast" id="mast">
   <div class="shell topnav">
-    <a class="logo" href="#/"><span class="m"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span>Impulse</a>
+    <a class="logo" href="#/"><span class="m"></span>Impulse</a>
     <nav class="nav" id="nav"></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
