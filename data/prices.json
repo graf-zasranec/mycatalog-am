@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T08:50:28.171Z",
+ "generated": "2026-09-20T08:54:01.473Z",
  "excluded": {
   "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
   "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
@@ -46431,16 +46431,6 @@
    },
    {
     "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
-    "shop": "ucom",
-    "title": "Apple Watch Ultra 4 GPS + Cellular + Ocean Band",
-    "price": 384900,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-ocean-band.html",
-    "seeded": true,
-    "band": "Band"
-   },
-   {
-    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
     "title": "Apple Watch Ultra 4 GPS + Cellular + Trail Loop",
     "url": "https://shop.ucom.am/am/apple-watch-ultra-4-gps-cellular.html",
     "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/a/p/apple_watch_ultra_4_49mm_gps_plus_cellular_natural_titanium_trail_loop_sand_pdp_image_position_1__ce-ww-removebg-preview.webp",
@@ -46460,8 +46450,16 @@
     "price": 384900,
     "storage": null,
     "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular.html",
-    "seeded": true,
-    "band": "Trail Loop"
+    "seeded": true
+   },
+   {
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+    "shop": "ucom",
+    "title": "Apple Watch Ultra 4 GPS + Cellular + Ocean Band",
+    "price": 384900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-ocean-band.html",
+    "seeded": true
    },
    {
     "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
@@ -46484,8 +46482,7 @@
     "price": 434900,
     "storage": null,
     "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-milanese-loop.html",
-    "seeded": true,
-    "band": "Milanese Loop"
+    "seeded": true
    }
   ],
   "apple-watch-series-12-gps-42mm": [
@@ -58807,9 +58804,19 @@
     "esim": false
    }
   ],
-  "honor-200lite": [
+  "honor-200-lite-5g": [
    {
-    "id": "honor-200lite",
+    "id": "honor-200-lite-5g",
+    "shop": "ucom",
+    "title": "Honor 200 Lite 5G",
+    "price": 86900,
+    "storage": null,
+    "url": "https://shop.ucom.am/en/honor-200-lite-8gb.html",
+    "seeded": true,
+    "esim": false
+   },
+   {
+    "id": "honor-200-lite-5g",
     "shop": "telecom",
     "title": "Honor 200Lite 8/256 | 256 GB",
     "price": 99900,
@@ -60702,18 +60709,6 @@
     "price": 173900,
     "storage": 8,
     "url": "https://shop.ucom.am/en/xiaomi-poco-x5-pro-5g-8gb.html",
-    "seeded": true,
-    "esim": false
-   }
-  ],
-  "honor-200-lite-5g": [
-   {
-    "id": "honor-200-lite-5g",
-    "shop": "ucom",
-    "title": "Honor 200 Lite 5G",
-    "price": 86900,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/honor-200-lite-8gb.html",
     "seeded": true,
     "esim": false
    }

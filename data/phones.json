@@ -8621,6 +8621,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -19703,10 +19706,12 @@
   "category": "phone",
   "brand": "Honor",
   "name": "200 Lite 5G",
-  "aliases": [],
+  "aliases": [
+   "200Lite"
+  ],
   "tier": "budget",
   "priceAmd": 86900,
-  "priceAmdMax": 86900,
+  "priceAmdMax": 99900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -19714,6 +19719,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 86900
+   },
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 99900
    }
   ],
   "display": {},
@@ -19724,35 +19734,8 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "honor-200lite",
-  "category": "phone",
-  "brand": "Honor",
-  "name": "200Lite",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 99900,
-  "priceAmdMax": 99900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 256,
-    "priceAmd": 99900
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Honor 200Lite.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "colors": []
  },
  {
   "id": "honor-400",
@@ -33747,7 +33730,10 @@
    "colors",
    "display.refresh"
   ],
-  "category": "phone"
+  "category": "phone",
+  "settled": [
+   "notADuplicate"
+  ]
  },
  {
   "id": "samsung-galaxy-a07s",
@@ -45101,6 +45087,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -45162,6 +45151,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -45307,6 +45299,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -45940,6 +45935,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
@@ -46672,6 +46670,9 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "settled": [
+   "notADuplicate"
   ]
  },
  {
