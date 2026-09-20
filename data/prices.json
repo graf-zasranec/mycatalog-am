@@ -1,10 +1,5 @@
 {
- "generated": "2026-09-20T08:54:01.473Z",
- "excluded": {
-  "list.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
-  "yerevanmobile.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled",
-  "notebookcentre.am": "robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled"
- },
+ "generated": "2026-09-20T09:32:56.446Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -100,6 +95,11 @@
    "name": "Yerevan Mobile",
    "site": "https://yerevanmobile.am",
    "note": "phone retailer"
+  },
+  "istyle": {
+   "name": "iStyle",
+   "site": "https://istyle.am",
+   "note": "Apple and premium audio retailer"
   }
  },
  "offers": {
@@ -8103,7 +8103,7 @@
     "title": "Apple Watch SE 3 40mm",
     "price": 112000,
     "storage": 40,
-    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "url": "https://www.yerevanmobile.am/en/apple-watch-se-3-40mm.html",
     "seeded": true
    },
    {
@@ -8221,7 +8221,7 @@
     "title": "Apple Watch SE 3 44mm",
     "price": 122000,
     "storage": 44,
-    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "url": "https://www.yerevanmobile.am/en/apple-watch-se-3-44mm.html",
     "seeded": true
    },
    {
@@ -10763,7 +10763,7 @@
     "title": "Samsung Galaxy A37",
     "price": 127000,
     "storage": 128,
-    "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a37.html",
     "seeded": true
    },
    {
@@ -15671,7 +15671,7 @@
     "title": "Samsung Galaxy A27",
     "price": 109000,
     "storage": 128,
-    "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a27.html",
     "seeded": true
    },
    {
@@ -17138,7 +17138,7 @@
     "title": "Samsung Galaxy A57",
     "price": 144000,
     "storage": 128,
-    "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a57.html",
     "seeded": true
    },
    {
@@ -20560,7 +20560,7 @@
     "title": "Samsung Galaxy A07 4G",
     "price": 52000,
     "storage": 64,
-    "url": "https://www.yerevanmobile.am/en/electronics/phones.html",
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a07-4g.html",
     "seeded": true
    },
    {
@@ -34366,6 +34366,18 @@
   "harman-kardon-studio-9": [
    {
     "id": "harman-kardon-studio-9",
+    "price": 68000,
+    "title": "Harman Kardon Onyx Studio 9",
+    "url": "https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%209",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "istyle",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "harman-kardon-studio-9",
     "price": 123000,
     "title": "Harman Kardon Onyx Studio 9 Black",
     "url": "https://redstore.am/en/product/harman-kardon-onyx-studio-9-black",
@@ -34390,15 +34402,6 @@
     "inStock": true,
     "shop": "allsell",
     "seen": "2026-09-19"
-   },
-   {
-    "id": "harman-kardon-studio-9",
-    "shop": "istyle",
-    "title": "Harman Kardon Onyx Studio 9",
-    "price": 135000,
-    "storage": null,
-    "url": "https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%209",
-    "seeded": true
    },
    {
     "id": "harman-kardon-studio-9",
@@ -34571,12 +34574,15 @@
    },
    {
     "id": "marshall-emberton-iii",
-    "shop": "istyle",
+    "price": 95000,
     "title": "Marshall Emberton III",
-    "price": 89000,
-    "storage": null,
     "url": "https://istyle.am/en/product/Marshall%20Emberton%20III",
-    "seeded": true
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "istyle",
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-emberton-iii",
@@ -35810,7 +35816,7 @@
     "price": 789000,
     "storage": 512,
     "ram": 32,
-    "url": "",
+    "url": "https://www.zigzag.am/am/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-32gb-512gb-w11p-a37fyet.html",
     "seeded": true
    }
   ],
@@ -35847,7 +35853,7 @@
     "title": "Samsung Galaxy Watch 8 40mm",
     "price": 84000,
     "storage": 40,
-    "url": "https://www.yerevanmobile.am/en/electronics/watches.html",
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-watch-8-40mm.html",
     "seeded": true
    },
    {
@@ -37823,6 +37829,18 @@
   "marshall-middleton": [
    {
     "id": "marshall-middleton",
+    "price": 89000,
+    "title": "Marshall Middleton",
+    "url": "https://istyle.am/en/product/Marshall%20Middleton",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "istyle",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "marshall-middleton",
     "price": 119000,
     "title": "Marshall Middleton Black/Brass",
     "url": "https://redstore.am/en/product/marshall-middleton-blackbrass",
@@ -37834,15 +37852,6 @@
     "color": null,
     "shop": "redstore",
     "seen": "2026-09-19"
-   },
-   {
-    "id": "marshall-middleton",
-    "shop": "istyle",
-    "title": "Marshall Middleton",
-    "price": 125000,
-    "storage": null,
-    "url": "https://istyle.am/en/product/Marshall%20Middleton",
-    "seeded": true
    },
    {
     "id": "marshall-middleton",
@@ -44613,7 +44622,7 @@
     "title": "HP OmniBook 5 16\" Ultra 5-225U 16/1 /BM0Q2EA",
     "price": 439900,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea.html",
     "seeded": true
    }
   ],
@@ -45046,7 +45055,27 @@
     "title": "Honor X7e 6GB/256GB Light Blue",
     "price": 89900,
     "storage": 6,
-    "url": "",
+    "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-light-blue.html",
+    "seeded": true,
+    "esim": false
+   },
+   {
+    "id": "honor-x7e",
+    "shop": "zigzag",
+    "title": "Honor X7e 6GB/256GB Midnight Black",
+    "price": 89900,
+    "storage": 6,
+    "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-midnight-black.html",
+    "seeded": true,
+    "esim": false
+   },
+   {
+    "id": "honor-x7e",
+    "shop": "zigzag",
+    "title": "Honor X7e 6GB/256GB Sunrise Orange",
+    "price": 89900,
+    "storage": 6,
+    "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-sunrise-orange.html",
     "seeded": true,
     "esim": false
    },
@@ -50396,7 +50425,16 @@
     "title": "Garmin Instinct 3 – 45 mm  AMOLED",
     "price": 158400,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-instinct-3-45-mm-amoled.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-instinct-3-50mm-amoled",
+    "shop": "zigzag",
+    "title": "Garmin Instinct 3  50mm AMOLED",
+    "price": 176000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-instinct-3-50mm-amoled.html",
     "seeded": true
    },
    {
@@ -50445,7 +50483,25 @@
     "title": "Garmin Venu 4 - 45 mm Black",
     "price": 239000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-venu-4-45-mm-black.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-venu-4-45-mm",
+    "shop": "zigzag",
+    "title": "Garmin Venu 4 - 41 mm Lunar Gold",
+    "price": 239000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-venu-4-41-mm-lunar-gold.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-venu-4-45-mm",
+    "shop": "zigzag",
+    "title": "Garmin Venu 4 - 41 mm Black",
+    "price": 239000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-venu-4-41-mm-black.html",
     "seeded": true
    }
   ],
@@ -57017,12 +57073,15 @@
   "marshall-uxbridge": [
    {
     "id": "marshall-uxbridge",
-    "shop": "istyle",
+    "price": 89000,
     "title": "Marshall Uxbridge",
-    "price": 105000,
-    "storage": null,
     "url": "https://istyle.am/en/product/Marshall%20Uxbridge",
-    "seeded": true
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "istyle",
+    "seen": "2026-09-20"
    },
    {
     "id": "marshall-uxbridge",
@@ -59698,7 +59757,7 @@
     "title": "HP OmniBook 5 16\" Ultra 7-255U 16/1 /BK9Y8EA",
     "price": 499000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea.html",
     "seeded": true
    }
   ],
@@ -59885,7 +59944,7 @@
     "title": "Garmin Fenix 9 Pro 47mm  AMOLED  Carbon Gray DLC Titanium",
     "price": 489000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-9-pro-47mm-amoled-carbon-gray-dlc-titanium.html",
     "seeded": true
    }
   ],
@@ -59907,7 +59966,25 @@
     "title": "Garmin CIRQA™ Smart Band  Mauve  S-M",
     "price": 89000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-cirqatm-smart-band-mauve-s-m.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-cirqa-smart-band-mauve-s-m",
+    "shop": "zigzag",
+    "title": "Garmin CIRQA™ Smart Band  Captain Blue  S-M",
+    "price": 89000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-cirqatm-smart-band-captain-blue-s-m.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-cirqa-smart-band-mauve-s-m",
+    "shop": "zigzag",
+    "title": "Garmin CIRQA™ Smart Band  French Gray  S-M",
+    "price": 89000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-cirqatm-smart-band-french-gray-s-m.html",
     "seeded": true
    }
   ],
@@ -59918,7 +59995,7 @@
     "title": "Garmin Forerunner 170 Music Whitestone",
     "price": 159000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-170-music-whitestone.html",
     "seeded": true
    }
   ],
@@ -59929,7 +60006,7 @@
     "title": "Garmin Forerunner 170 Music Black",
     "price": 159000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-170-music-black.html",
     "seeded": true
    }
   ],
@@ -59940,7 +60017,7 @@
     "title": "Garmin Forerunner 170 Whitestone",
     "price": 129000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-170-whitestone.html",
     "seeded": true
    }
   ],
@@ -59951,7 +60028,7 @@
     "title": "Garmin Forerunner 170 Black",
     "price": 129000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-170-black.html",
     "seeded": true
    }
   ],
@@ -59962,7 +60039,7 @@
     "title": "Garmin Forerunner 70 Citron",
     "price": 109000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-70-citron.html",
     "seeded": true
    }
   ],
@@ -59973,7 +60050,7 @@
     "title": "Garmin Forerunner 70 Whitestone",
     "price": 109000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-70-whitestone.html",
     "seeded": true
    }
   ],
@@ -59984,7 +60061,7 @@
     "title": "Garmin Forerunner 70 Black",
     "price": 109000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-70-black.html",
     "seeded": true
    }
   ],
@@ -59992,10 +60069,19 @@
    {
     "id": "garmin-fenix-8-pro-47-mm-amoled",
     "shop": "zigzag",
+    "title": "Garmin Fenix 8 Pro – 47 mm  AMOLED",
+    "price": 434130,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-fenix-8-pro-47-mm-amoled.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-fenix-8-pro-47-mm-amoled",
+    "shop": "zigzag",
     "title": "Garmin Fenix 8 Pro – 51 mm  AMOLED",
     "price": 468930,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-8-pro-51-mm-amoled.html",
     "seeded": true
    }
   ],
@@ -60014,10 +60100,19 @@
    {
     "id": "garmin-instinct-2x-solar-tactical-edition",
     "shop": "zigzag",
+    "title": "Garmin Instinct 2X Solar – Tactical Edition",
+    "price": 166440,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-instinct-2x-solar-tactical-edition.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-instinct-2x-solar-tactical-edition",
+    "shop": "zigzag",
     "title": "Garmin Instinct 2X Solar - Tactical Edition Coyote",
     "price": 166500,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-instinct-2x-solar-tactical-edition-coyote.html",
     "seeded": true
    }
   ],
@@ -60028,7 +60123,7 @@
     "title": "Garmin Fenix 9  51mm  Carbon DLC  Black Band",
     "price": 489000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-9-51mm-carbon-dlc-black-band.html",
     "seeded": true
    }
   ],
@@ -60039,7 +60134,7 @@
     "title": "Garmin Venu X1  GPS  Moss",
     "price": 269100,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-venu-x1-gps-moss.html",
     "seeded": true
    }
   ],
@@ -60050,7 +60145,7 @@
     "title": "Garmin Venu X1  GPS  Black",
     "price": 269100,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-venu-x1-gps-black.html",
     "seeded": true
    }
   ],
@@ -60061,7 +60156,7 @@
     "title": "Garmin Forerunner 570 Black",
     "price": 215100,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunner-570-black.html",
     "seeded": true
    }
   ],
@@ -60072,7 +60167,7 @@
     "title": "Garmin Forerunner® 970 Black",
     "price": 296100,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunnerr-970-black.html",
     "seeded": true
    }
   ],
@@ -60083,7 +60178,16 @@
     "title": "Garmin Instinct 3 – 45 mm  Solar",
     "price": 140800,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-instinct-3-45-mm-solar.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-instinct-3-50mm-solar",
+    "shop": "zigzag",
+    "title": "Garmin Instinct 3  50mm Solar",
+    "price": 158400,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-instinct-3-50mm-solar.html",
     "seeded": true
    }
   ],
@@ -60094,7 +60198,16 @@
     "title": "Garmin vivoactive® 6 Lunar Gold",
     "price": 144000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-vivoactiver-6-lunar-gold.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-vivoactive-6",
+    "shop": "zigzag",
+    "title": "Garmin vivoactive® 6 Black",
+    "price": 144000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-vivoactiver-6-black.html",
     "seeded": true
    }
   ],
@@ -60124,10 +60237,19 @@
    {
     "id": "garmin-fenix-8-47-mm-amoled",
     "shop": "zigzag",
+    "title": "Garmin Fenix 8 – 47 mm  AMOLED Slate Gray",
+    "price": 348000,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-slate-gray.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-fenix-8-47-mm-amoled",
+    "shop": "zigzag",
     "title": "Garmin Fenix 8 – 47 mm  AMOLED Sapphire  Titanium with Vented titanium bracelet",
     "price": 532000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled.html",
     "seeded": true
    }
   ],
@@ -60138,7 +60260,7 @@
     "title": "Garmin Fenix 8 – 47 mm  AMOLED Sapphire Carbon Gray Titanium",
     "price": 386280,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-sapphire-carbon-gray-titanium.html",
     "seeded": true
    }
   ],
@@ -60149,7 +60271,7 @@
     "title": "Garmin Fenix 8 – 47 mm  AMOLED Sapphire Spark Orange Titanium",
     "price": 386280,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-sapphire-spark-orange-titanium.html",
     "seeded": true
    }
   ],
@@ -60160,7 +60282,7 @@
     "title": "Garmin Instinct 2X Solar Graphite",
     "price": 169150,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-instinct-2x-solar-graphite.html",
     "seeded": true
    }
   ],
@@ -60171,7 +60293,16 @@
     "title": "Garmin Vivoactive 5 Ivory",
     "price": 121500,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-vivoactive-5-ivory.html",
+    "seeded": true
+   },
+   {
+    "id": "garmin-vivoactive-5",
+    "shop": "zigzag",
+    "title": "Garmin vivoactive 5 Black",
+    "price": 121500,
+    "storage": null,
+    "url": "https://www.zigzag.am/am/garmin-vivoactive-5-black.html",
     "seeded": true
    }
   ],
@@ -60182,7 +60313,7 @@
     "title": "Garmin Fenix 7 Pro Sapphire Solar Black",
     "price": 299000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-7-pro-sapphire-solar-black.html",
     "seeded": true
    }
   ],
@@ -60193,7 +60324,7 @@
     "title": "Garmin Forerunner® 965 Black/Powder Grey",
     "price": 206100,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-forerunnerr-965-black-powder-grey.html",
     "seeded": true
    }
   ],
@@ -60204,7 +60335,7 @@
     "title": "Garmin Instinct 2X Solar Moss",
     "price": 169150,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-instinct-2x-solar-moss.html",
     "seeded": true
    }
   ],
@@ -60215,7 +60346,7 @@
     "title": "Garmin Venu 3 Black leather",
     "price": 179100,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-venu-3-black-leather.html",
     "seeded": true
    }
   ],
@@ -60226,7 +60357,7 @@
     "title": "Garmin Venu 3s French grey",
     "price": 189000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-venu-3s-french-grey.html",
     "seeded": true
    }
   ],
@@ -60237,7 +60368,7 @@
     "title": "Garmin Fenix 7X Pro – Sapphire Solar Edition",
     "price": 329000,
     "storage": null,
-    "url": "",
+    "url": "https://www.zigzag.am/am/garmin-fenix-7x-pro-sapphire-solar-edition.html",
     "seeded": true
    }
   ],

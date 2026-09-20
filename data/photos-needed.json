@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1318,
- "missing": 246,
- "tooSmall": 55,
+ "missing": 236,
+ "tooSmall": 57,
  "products": [
   {
    "id": "apple-ultra-2",
@@ -287,46 +287,6 @@
    "width": 0
   },
   {
-   "id": "apple-imac-24-inch-m3-8ram-2023",
-   "brand": "Apple",
-   "name": "iMac 24-inch M3 8RAM /2023",
-   "category": "desktop",
-   "shops": 1,
-   "query": "Apple iMac 24-inch M3 8RAM /2023",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-10-a16-wi-fi-2025",
-   "brand": "Apple",
-   "name": "iPad 10 A16 Wi-Fi /2025",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad 10 A16 Wi-Fi /2025",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-air-5-wi-fi-plus-cellular-2022",
-   "brand": "Apple",
-   "name": "iPad Air 5 Wi-Fi + Cellular 2022",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Air 5 Wi-Fi + Cellular 2022",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-mini-7-wifi",
-   "brand": "Apple",
-   "name": "iPad Mini 7 WiFi",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Mini 7 WiFi",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3",
    "brand": "Apple",
    "name": "iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*",
@@ -353,26 +313,6 @@
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024",
-   "brand": "Apple",
-   "name": "iPad Pro 13 M4 Wi-Fi + Cellular 2024",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Pro 13 M4 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-pro-13-wi-fi-plus-cellular-2024",
-   "brand": "Apple",
-   "name": "iPad Pro 13 Wi-Fi + Cellular 2024",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Pro 13 Wi-Fi + Cellular 2024",
    "what": "missing",
    "width": 0
   },
@@ -577,26 +517,6 @@
    "width": 0
   },
   {
-   "id": "asus-vivobook-e1404ga-nk053w",
-   "brand": "ASUS",
-   "name": "VivoBook E1404GA-NK053W",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS VivoBook E1404GA-NK053W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vivobook-e410ma-bv2490w",
-   "brand": "ASUS",
-   "name": "VivoBook E410MA-BV2490W",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS VivoBook E410MA-BV2490W",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
    "brand": "ASUS",
    "name": "Vivobook S 15 (i9)",
@@ -623,26 +543,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "ASUS Vivobook S16 S3607V",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vivobook-x1404za-i38128",
-   "brand": "ASUS",
-   "name": "VivoBook X1404ZA-I38128",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS VivoBook X1404ZA-I38128",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vivobook-x1504va-nj451",
-   "brand": "ASUS",
-   "name": "VivoBook X1504VA-NJ451",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS VivoBook X1504VA-NJ451",
    "what": "missing",
    "width": 0
   },
@@ -2617,6 +2517,16 @@
    "width": 579
   },
   {
+   "id": "apple-ipad-pro-13-wi-fi-plus-cellular-2024",
+   "brand": "Apple",
+   "name": "iPad Pro 13 Wi-Fi + Cellular 2024",
+   "category": "tablet",
+   "shops": 1,
+   "query": "Apple iPad Pro 13 Wi-Fi + Cellular 2024",
+   "what": "too small",
+   "width": 579
+  },
+  {
    "id": "apple-macbook-air-13-mgn93-m1-2020",
    "brand": "Apple",
    "name": "MacBook Air 13 MGN93 M1 2020",
@@ -2685,6 +2595,16 @@
    "query": "ASUS Vivobook X1404VA-V14.I38128",
    "what": "too small",
    "width": 526
+  },
+  {
+   "id": "asus-vivobook-x1504va-nj451",
+   "brand": "ASUS",
+   "name": "VivoBook X1504VA-NJ451",
+   "category": "laptop",
+   "shops": 1,
+   "query": "ASUS VivoBook X1504VA-NJ451",
+   "what": "too small",
+   "width": 459
   },
   {
    "id": "bose-soundtouch-10",

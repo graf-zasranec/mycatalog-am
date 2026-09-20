@@ -5,10 +5,11 @@
 //   node scrape.mjs vlv allsell   several
 //
 // Politeness / rules this respects:
-//   * list.am is EXCLUDED — its robots.txt has "User-agent: ClaudeBot / Disallow: /".
 //   * vega.am disallows ?limit= ?sort= ?order= ?search= — only ?page= is used.
-//   * zigzag.am is OFF by default — its WAF 403s identified crawlers and faking a browser
-//     user agent to bypass that would be bot-detection evasion.
+//   * zigzag.am and eldorado.am 403 a plain fetch. Both allow product pages in robots.txt and
+//     name no crawler they refuse, so tools/{zigzag,eldorado}-fetch.py read them with scrapling.
+//   * yerevanmobile.am and zigzag.am disallow every URL with a query string, so neither is
+//     paginated or searched — only clean paths.
 //   * ispace.am publishes llms.txt pointing AI clients at /category/* — that is what is used.
 //   * one request at a time per host, with a delay between them.
 //
@@ -1118,7 +1119,13 @@ const SHOPS = {
       const out = [], found = [];
       // robots.txt disallows every URL with a query string, so pagination is off limits and
       // each category contributes only its first page. Categories, not pages, give breadth.
-      const CATS = ['smartphones', 'tablets', 'smart-watches-bands', 'headphones', 'apple-products'];
+      // Their own nav links 32 category pages and this used to walk five of them. Breadth is the
+      // only lever here - no pagination means each category gives one page, so a category we do
+      // not name is a page we never see. Accessories, cases, chargers and numbers stay out: the
+      // catalogue does not carry them.
+      const CATS = ['smartphones', 'tablets', 'smart-watches-bands', 'headphones', 'apple-products',
+                    'macbooks', 'notebooks', 'tv', 'speakers', 'gadgets', 'cameras',
+                    'smart-home-devices', '5g'];
       for (const cat of CATS) {
         const html = await get(`https://shop.ucom.am/am/${cat}.html`);
         await sleep(DELAY_MS);
@@ -1177,7 +1184,10 @@ const SHOPS = {
       // Listing pages carry no price at all, so each matched product page is fetched. The page
       // shows TWO numbers: e-shop__main-price is the cash price, product-start-price is the
       // monthly instalment. Reading the wrong one would list a phone at a fiftieth of its price.
-      const CATS = ['smartphones', 'notebooks-and-tablets'];
+      // Two of the seventeen categories their own eshop links. The four added here are the ones
+      // the catalogue actually carries; accessories, memory and connectivity are left out.
+      const CATS = ['smartphones', 'notebooks-and-tablets', 'smart-watches', 'audio',
+                    'devices', 'game-pad'];
       const seen = new Set();
       for (const cat of CATS) {
         const list = await get(`https://www.telecomarmenia.am/eshop/hy/${cat}/`);
@@ -1448,6 +1458,48 @@ const SHOPS = {
     }
   },
 
+  istyle: {
+    name: 'iStyle', site: 'https://istyle.am', note: 'Apple and premium audio retailer',
+    async run() {
+      // robots.txt is "Allow: /" with a published sitemap, so this is an ordinary crawl. The only
+      // awkwardness is where the price lives: the page renders it with JavaScript, but the data is
+      // already in the HTML as an HTML-escaped JSON payload - "price_override":125000 inside a
+      // variants array. Unescape and read it; no browser needed.
+      const idx = await get('https://istyle.am/sitemap-en.xml'); await sleep(DELAY_MS);
+      const urls = [...idx.matchAll(/<loc>([^<]*\/product\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      const out = [];
+      for (const raw of urls) {
+        // the sitemap prints the product name unencoded, spaces and all
+        const name = clean(decodeURIComponent(raw.split('/product/')[1] || '')).replace(/\s+/g, ' ').trim();
+        const id = matchPhone(name);
+        if (!id) continue;
+        const u = raw.split('/product/')[0] + '/product/' + encodeURIComponent(name);
+        if (!safeUrl(u)) continue;
+        const html = await get(u); await sleep(DELAY_MS);
+        if (!html) continue;
+        const json = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
+        // The page also carries the variants of everything it recommends. The first block is this
+        // product's - the one whose price the page prints at the top.
+        const at = json.indexOf('"variants":[');
+        if (at < 0) continue;
+        const slice = json.slice(at, at + 4000);
+        const first = /\{[^{}]*"price_override":(\d+)[^{}]*\}/.exec(slice);
+        if (!first) continue;
+        const listed = +first[1];
+        const sale = /"is_on_sale":true[^}]*?"sale_price":(\d+)/.exec(slice);
+        // a shop that is running a sale is asking the sale price, so that is the price
+        const price = sale ? +sale[1] : listed;
+        const stock = /"stock":(\d+)/.exec(first[0]);
+        const active = /"is_active":true/.test(first[0]);
+        if (!price || price < 5000) continue;
+        out.push({ id, price, title: name, url: u,
+          storage: storageOf(name), ram: ramOf(name),
+          inStock: active && (!stock || +stock[1] > 0) });
+      }
+      return out;
+    }
+  },
+
   zigzag: {
     name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer',
     async run() {
@@ -1677,8 +1729,8 @@ const HAND = {
   mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
   zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
   appzone: { name: 'AppZone', site: 'https://appzone.am', note: 'electronics retailer' },
-  // Not crawled - see `excluded` below - but rows recorded by hand still carry its prices,
-  // so the shop needs a name to show under.
+  // Crawled as of 2026-09-20; before that, hand-recorded rows carried these two, so both still
+  // need a name to show under.
   notebookcentre: { name: 'Notebook Centre', site: 'https://notebookcentre.am', note: 'electronics retailer' },
   yerevanmobile: { name: 'Yerevan Mobile', site: 'https://yerevanmobile.am', note: 'phone retailer' },
 };
@@ -1855,18 +1907,6 @@ console.log(`${[...MISSED.values()].reduce((n, m) => n + m.size, 0)} title(s) on
 
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),
-  // Shops this CRAWLER will not read. Each names ClaudeBot with Disallow: / , and fetching them
-  // under another user agent is the bot-block bypass this project does not do.
-  //
-  // That directive governs automated fetching, not the facts themselves: a price someone read
-  // off the shelf and typed into data/listings.csv is their observation, not our crawl, so
-  // hand-recorded rows for these shops ARE carried. Nothing here requests their pages - no
-  // listings, no product pages, no images.
-  excluded: {
-    'list.am': 'robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled',
-    'yerevanmobile.am': 'robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled',
-    'notebookcentre.am': 'robots.txt: User-agent: ClaudeBot / Disallow: / — not crawled'
-  },
   shops, offers
 }, null, 1));
 

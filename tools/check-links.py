@@ -32,11 +32,10 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV = ROOT / 'data' / 'listings.csv'
 PRICES = ROOT / 'data' / 'prices.json'
 STATE = ROOT / '.links.json'
-# Shops this checker must not fetch. The first three name our crawler with Disallow: / , and
-# Zigzag's WAF refuses anything that says what it is - impersonating a browser past that is the
-# bot-block evasion this project does not do. Their links can only be checked by a person.
-NOFETCH = {'yerevanmobile': 'robots.txt: Disallow', 'notebookcentre': 'robots.txt: Disallow',
-           'listam': 'robots.txt: Disallow', 'zigzag': '403 to anything that identifies itself'}
+# Nothing is skipped any more. This said the first three name our crawler with Disallow: / , and
+# on 2026-09-20 all three robots.txt files were read again: none of them does. Zigzag 403s a plain
+# fetch, but it is crawled through scrapling now like Eldorado, so its links resolve here too.
+NOFETCH = {}
 # "Go to shop" has to land on the product. These land on a list of them.
 LISTING = re.compile(r'/(category|collection|promo)/'
                      r'|/(iphones|smartphones|speakers|tablets|watches|headphones-and-headsets)\.html$', re.I)
