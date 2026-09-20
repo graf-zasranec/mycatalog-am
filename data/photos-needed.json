@@ -7,12 +7,12 @@
  "tooSmall": 58,
  "products": [
   {
-   "id": "microsoft-xbox-controller",
+   "id": "microsoft-xbox",
    "brand": "Microsoft",
-   "name": "Xbox Wireless Controller",
-   "category": "console",
+   "name": "Xbox Wireless Headset",
+   "category": "headphones",
    "shops": 5,
-   "query": "Microsoft Xbox Wireless Controller",
+   "query": "Microsoft Xbox Wireless Headset",
    "what": "missing",
    "width": 0
   },
@@ -1517,16 +1517,6 @@
    "width": 0
   },
   {
-   "id": "microsoft-xbox",
-   "brand": "Microsoft",
-   "name": "Xbox Wireless Headset",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Microsoft Xbox Wireless Headset",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "nothing-6974434224179",
    "brand": "Nothing",
    "name": "6974434224179",
@@ -1993,6 +1983,16 @@
    "category": "watch",
    "shops": 0,
    "query": "Garmin CIRQA Smart Band, Black, S-M",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "microsoft-xbox-controller",
+   "brand": "Microsoft",
+   "name": "Xbox Wireless Controller",
+   "category": "console",
+   "shops": 0,
+   "query": "Microsoft Xbox Wireless Controller",
    "what": "missing",
    "width": 0
   },

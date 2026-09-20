@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T14:54:19.309Z",
+ "generated": "2026-09-20T15:22:12.597Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -100,6 +100,11 @@
    "name": "iStyle",
    "site": "https://istyle.am",
    "note": "Apple and premium audio retailer"
+  },
+  "viva": {
+   "name": "Viva",
+   "site": "https://shop.viva.am",
+   "note": "mobile operator shop"
   }
  },
  "offers": {
@@ -225,17 +230,6 @@
     "color": "Deep Blue",
     "shop": "mobilecentre",
     "seen": "2026-09-20",
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro 256GB Deep Blue eSim",
-    "price": 488000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue-esim",
-    "seeded": true,
     "esim": true
    },
    {
@@ -598,6 +592,26 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Silver",
+    "price": 529000,
+    "storage": 256,
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Deep Blue",
+    "price": 529000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-deep-blue",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "shop": "viva",
     "title": "iPhone 17 Pro 256GB Silver",
     "price": 550900,
@@ -670,6 +684,16 @@
     "ram": null,
     "shop": "planet3d",
     "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Cosmic Orange Dual",
+    "price": 559000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-cosmic-orange-dual",
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1647,28 +1671,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Deep Blue eSim",
-    "price": 525000,
-    "storage": 256,
-    "color": "Deep Blue",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-deep-blue-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Cosmic Orange eSim",
-    "price": 525000,
-    "storage": 256,
-    "color": "Cosmic Orange",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-cosmic-orange-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "title": "iPhone 17 Pro Max In Armenia At The Best Price - AllSell",
     "url": "https://allsell.am/en/iphone-17-pro-max",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_2_-_2025-09-10t114040.249_1.jpg",
@@ -2066,13 +2068,32 @@
    {
     "id": "apple-iphone-17-pro-max",
     "shop": "redstore",
-    "title": "iPhone 17 Pro Max 256GB Silver eSim",
+    "title": "iPhone 17 Pro Max 256GB Silver",
     "price": 575000,
     "storage": 256,
     "color": "Silver",
-    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver-esim",
-    "seeded": true,
-    "esim": true
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-silver",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 256GB Deep Blue",
+    "price": 575000,
+    "storage": 256,
+    "color": "Deep Blue",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-deep-blue",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro Max 256GB Cosmic Orange",
+    "price": 575000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://redstore.am/en/product/iphone-17-pro-max-256gb-cosmic-orange",
+    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3359,17 +3380,6 @@
    },
    {
     "id": "apple-iphone-17",
-    "shop": "redstore",
-    "title": "iPhone 17 256GB Black eSim",
-    "price": 364000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-black-esim",
-    "seeded": true,
-    "esim": true
-   },
-   {
-    "id": "apple-iphone-17",
     "price": 364900,
     "storage": 256,
     "title": "iPhone 17 256GB Dual eSIM (Sage)",
@@ -3385,13 +3395,22 @@
    {
     "id": "apple-iphone-17",
     "shop": "redstore",
-    "title": "iPhone 17 256GB Sage eSim",
+    "title": "iPhone 17 256GB Black",
     "price": 378000,
     "storage": 256,
-    "color": "Sage",
-    "url": "https://redstore.am/en/product/iphone-17-256gb-sage-esim",
-    "seeded": true,
-    "esim": true
+    "color": "Black",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-black",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "redstore",
+    "title": "iPhone 17 256GB White",
+    "price": 378000,
+    "storage": 256,
+    "color": "White",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-white",
+    "seeded": true
    },
    {
     "id": "apple-iphone-17",
@@ -7901,19 +7920,6 @@
    {
     "id": "apple-airpods-pro-3",
     "price": 105000,
-    "title": "Apple AirPods Pro 3 (MFHP4ZE/A)",
-    "url": "https://vlv.am/en/Product/41597",
-    "image": "https://vlv.am/public/uploads/images/05-05-2026/69f9c004bf2f1.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-pro-3",
-    "price": 105000,
     "title": "Apple AirPods Pro 3",
     "url": "https://ibolit.mobi/product/apple-airpods-pro-3/",
     "storage": null,
@@ -7923,6 +7929,19 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "price": 105000,
+    "title": "Apple AirPods Pro 3 (MFHP4ZE/A)",
+    "url": "https://vlv.am/en/Product/41597",
+    "image": "https://vlv.am/public/uploads/images/05-05-2026/69f9c004bf2f1.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": "White",
+    "shop": "vlv",
     "seen": "2026-09-20"
    },
    {
@@ -7969,6 +7988,16 @@
     "ram": null,
     "color": "White",
     "shop": "istore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-pro-3",
+    "shop": "viva",
+    "title": "AirPods Pro 3",
+    "price": 129900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/airpods-pro-3/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -8130,6 +8159,16 @@
     "ram": null,
     "color": "White",
     "shop": "istore",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-4",
+    "shop": "viva",
+    "title": "APPLE AirPods (Gen 4) MXP63ZE/A",
+    "price": 65900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-airpods-gen-4-art-mxp63ze-a-/",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -8838,6 +8877,18 @@
    {
     "id": "apple-watch-se-3",
     "price": 114900,
+    "title": "Apple Watch SE 3 GPS 40mm Midnight, Midnight Sport Band - S/M /MEH94",
+    "url": "https://www.zigzag.am/am/apple-watch-se-3-gps-40mm-midnight-midnight-sport-band-s-m-meh94.html",
+    "storage": 40,
+    "ram": null,
+    "inStock": true,
+    "color": "Midnight",
+    "shop": "zigzag",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "price": 114900,
     "title": "Apple Watch SE 3 GPS 40mm Midnight/Midnight (MEH94RK/A) (94ET/A)",
     "url": "https://vlv.am/en/Product/43400",
     "image": "https://vlv.am/public/uploads/images/23-03-2026/69c13ca113f39.webp",
@@ -8846,18 +8897,6 @@
     "inStock": true,
     "color": "Midnight",
     "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-watch-se-3",
-    "price": 114900,
-    "title": "Apple Watch SE 3 GPS 40mm Midnight, Midnight Sport Band - S/M /MEH94",
-    "url": "https://www.zigzag.am/am/apple-watch-se-3-gps-40mm-midnight-midnight-sport-band-s-m-meh94.html",
-    "storage": 40,
-    "ram": null,
-    "inStock": true,
-    "color": "Midnight",
-    "shop": "zigzag",
     "seen": "2026-09-20"
    },
    {
@@ -8987,6 +9026,16 @@
     "storage": null,
     "color": "Midnight",
     "url": "https://notebookcentre.am/en/product/apple-watch-se-3-44mm-midnight",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-se-3",
+    "shop": "viva",
+    "title": "Apple Watch SE 3 (44mm)",
+    "price": 154900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/apple-watch-se-3-44mm/",
     "seeded": true,
     "seen": "2026-09-20"
    }
@@ -11109,19 +11158,6 @@
    {
     "id": "honor-x8d",
     "price": 104900,
-    "title": "HONOR X8d 8/128GB Velvet Black",
-    "url": "https://vlv.am/en/Product/44449",
-    "image": "https://vlv.am/public/uploads/images/29-05-2026/6a198e3113c9f.webp",
-    "storage": 128,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x8d",
-    "price": 104900,
     "title": "Smartphone HONOR X8d 8GB/128GB (LNA-LX2) Velvet Black",
     "url": "https://eldorado.am/en/smartphone-honor-x8d-8gb-128gb-lna-lx2-velvet-black",
     "storage": 128,
@@ -11157,6 +11193,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "honor-x8d",
+    "price": 104900,
+    "title": "HONOR X8d 8/128GB Velvet Black",
+    "url": "https://vlv.am/en/Product/44449",
+    "image": "https://vlv.am/public/uploads/images/29-05-2026/6a198e3113c9f.webp",
+    "storage": 128,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "honor-x8d",
@@ -11197,19 +11246,6 @@
    {
     "id": "honor-x8d",
     "price": 114900,
-    "title": "HONOR X8d 8/256GB Velvet Black",
-    "url": "https://vlv.am/en/Product/44452",
-    "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ece0a55fd8.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x8d",
-    "price": 114900,
     "title": "Smartphone HONOR X8d 8GB/256GB (LNA-LX2) Light Blue",
     "url": "https://eldorado.am/en/smartphone-honor-x8d-8gb-256gb-lna-lx2-light-blue",
     "storage": 256,
@@ -11232,6 +11268,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "honor-x8d",
+    "price": 114900,
+    "title": "HONOR X8d 8/256GB Velvet Black",
+    "url": "https://vlv.am/en/Product/44452",
+    "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ece0a55fd8.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "honor-x8d",
@@ -11830,32 +11879,6 @@
    {
     "id": "samsung-galaxy-a37",
     "price": 149900,
-    "title": "SAMSUNG A37 (A376) 128GB Charcoal (Black)",
-    "url": "https://vlv.am/en/Product/45162",
-    "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40e79d8d9e3.webp",
-    "storage": 128,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 149900,
-    "title": "SAMSUNG A37 (A376) 128GB GrayGreen",
-    "url": "https://vlv.am/en/Product/45163",
-    "image": "https://vlv.am/public/uploads/images/09-06-2026/6a2818e64c5db.webp",
-    "storage": 128,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "price": 149900,
     "title": "Smartphone Samsung A376 Galaxy A37 5G 8/256GB DS Awesome Charcoal",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-8-256gb-ds-awesome-charcoal",
     "storage": 256,
@@ -11878,6 +11901,32 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 149900,
+    "title": "SAMSUNG A37 (A376) 128GB Charcoal (Black)",
+    "url": "https://vlv.am/en/Product/45162",
+    "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40e79d8d9e3.webp",
+    "storage": 128,
+    "ram": null,
+    "inStock": true,
+    "color": "Black",
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a37",
+    "price": 149900,
+    "title": "SAMSUNG A37 (A376) 128GB GrayGreen",
+    "url": "https://vlv.am/en/Product/45163",
+    "image": "https://vlv.am/public/uploads/images/09-06-2026/6a2818e64c5db.webp",
+    "storage": 128,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a37",
@@ -12160,19 +12209,6 @@
    {
     "id": "honor-x9d",
     "price": 149900,
-    "title": "HONOR X9d 8/256GB Midnight Black",
-    "url": "https://vlv.am/en/Product/43013",
-    "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ed8c28439b.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x9d",
-    "price": 149900,
     "title": "Smartphone HONOR X9d 8GB/256GB (MTN-NX1) Forest Green",
     "url": "https://eldorado.am/en/smartphone-honor-x9d-8gb-256gb-mtn-nx1-forest-green",
     "storage": 256,
@@ -12208,6 +12244,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "honor-x9d",
+    "price": 149900,
+    "title": "HONOR X9d 8/256GB Midnight Black",
+    "url": "https://vlv.am/en/Product/43013",
+    "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ed8c28439b.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "honor-x9d",
@@ -12263,19 +12312,6 @@
    },
    {
     "id": "honor-600",
-    "price": 199900,
-    "title": "HONOR 600 8/256GB Black",
-    "url": "https://vlv.am/en/Product/48615",
-    "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e89d00d7a7.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-600",
     "title": "Honor 600",
     "url": "https://allsell.am/en/honor-600",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_10__9.jpg",
@@ -12285,6 +12321,19 @@
     "color": null,
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "honor-600",
+    "price": 199900,
+    "title": "HONOR 600 8/256GB Black",
+    "url": "https://vlv.am/en/Product/48615",
+    "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e89d00d7a7.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
     "seen": "2026-09-20"
    },
    {
@@ -12353,19 +12402,6 @@
    },
    {
     "id": "honor-600",
-    "price": 229900,
-    "title": "HONOR 600 8/512GB Black",
-    "url": "https://vlv.am/en/Product/48616",
-    "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e8970af045.webp",
-    "storage": 512,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-600",
     "title": "Honor 600",
     "url": "https://allsell.am/en/honor-600",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_10__9.jpg",
@@ -12375,6 +12411,19 @@
     "color": null,
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "honor-600",
+    "price": 229900,
+    "title": "HONOR 600 8/512GB Black",
+    "url": "https://vlv.am/en/Product/48616",
+    "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e8970af045.webp",
+    "storage": 512,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
     "seen": "2026-09-20"
    },
    {
@@ -14109,19 +14158,6 @@
    {
     "id": "xiaomi-redmi-note-17-pro-max-5g",
     "price": 174900,
-    "title": "XIAOMI REDMI Note 17 Pro Max 5G 8/256GB Black",
-    "url": "https://vlv.am/en/Product/48965",
-    "image": "https://vlv.am/public/uploads/images/12-09-2026/6aa4f7a9c9524.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-note-17-pro-max-5g",
-    "price": 174900,
     "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Black",
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-pro-max-5g-8gb-256gb-black.html",
     "storage": 256,
@@ -14144,6 +14180,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-redmi-note-17-pro-max-5g",
+    "price": 174900,
+    "title": "XIAOMI REDMI Note 17 Pro Max 5G 8/256GB Black",
+    "url": "https://vlv.am/en/Product/48965",
+    "image": "https://vlv.am/public/uploads/images/12-09-2026/6aa4f7a9c9524.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-note-17-pro-max-5g",
@@ -14372,19 +14421,6 @@
    {
     "id": "xiaomi-redmi-note-17-5g",
     "price": 97900,
-    "title": "XIAOMI Redmi Note 17 5G 6/128GB Black",
-    "url": "https://vlv.am/en/Product/48555",
-    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d32db37eca.webp",
-    "storage": 128,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-note-17-5g",
-    "price": 97900,
     "title": "Xiaomi Redmi Note 17 5G 6GB/128GB Black",
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-5g-6gb-128gb-black.html",
     "storage": 128,
@@ -14420,6 +14456,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-redmi-note-17-5g",
+    "price": 97900,
+    "title": "XIAOMI Redmi Note 17 5G 6/128GB Black",
+    "url": "https://vlv.am/en/Product/48555",
+    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d32db37eca.webp",
+    "storage": 128,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-note-17-5g",
@@ -15265,19 +15314,6 @@
    {
     "id": "xiaomi-redmi-17",
     "price": 79900,
-    "title": "XIAOMI REDMI 17 4/128GB Black",
-    "url": "https://vlv.am/en/Product/48353",
-    "image": "https://vlv.am/public/uploads/images/13-08-2026/6a7d7016ab678.webp",
-    "storage": 128,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-17",
-    "price": 79900,
     "title": "Smartphone Xiaomi REDMI 17 4GB/128GB Black EU (2606FRN72Y)",
     "url": "https://eldorado.am/en/xiaomi-redmi-17-4gb-128gb-black-eu-2606frn72y",
     "storage": 128,
@@ -15287,6 +15323,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-redmi-17",
+    "price": 79900,
+    "title": "XIAOMI REDMI 17 4/128GB Black",
+    "url": "https://vlv.am/en/Product/48353",
+    "image": "https://vlv.am/public/uploads/images/13-08-2026/6a7d7016ab678.webp",
+    "storage": 128,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-17",
@@ -15380,19 +15429,6 @@
    {
     "id": "xiaomi-redmi-17",
     "price": 114900,
-    "title": "XIAOMI REDMI 17 8/256GB Black",
-    "url": "https://vlv.am/en/Product/48554",
-    "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c358932803.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-17",
-    "price": 114900,
     "title": "Xiaomi Redmi 17 8GB/256GB Black",
     "url": "https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-black.html",
     "storage": 256,
@@ -15467,6 +15503,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-redmi-17",
+    "price": 114900,
+    "title": "XIAOMI REDMI 17 8/256GB Black",
+    "url": "https://vlv.am/en/Product/48554",
+    "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c358932803.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-17",
@@ -15683,19 +15732,6 @@
    {
     "id": "xiaomi-17t-pro",
     "price": 327900,
-    "title": "XIAOMI 17T Pro 12/256GB Black",
-    "url": "https://vlv.am/en/Product/47218",
-    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e5208a088.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-17t-pro",
-    "price": 327900,
     "title": "Smartphone XIAOMI 17T Pro 12GB/256GB RU (2602EPTC0G) Black",
     "url": "https://eldorado.am/en/smartphone-xiaomi-17t-pro-12gb-256gb-ru-2602eptc0g-black",
     "storage": 256,
@@ -15705,6 +15741,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-17t-pro",
+    "price": 327900,
+    "title": "XIAOMI 17T Pro 12/256GB Black",
+    "url": "https://vlv.am/en/Product/47218",
+    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e5208a088.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": "Black",
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-17t-pro",
@@ -15863,19 +15912,6 @@
    {
     "id": "xiaomi-17t",
     "price": 243900,
-    "title": "XIAOMI 17T 12/256GB Black",
-    "url": "https://vlv.am/en/Product/47215",
-    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e64466775.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-17t",
-    "price": 243900,
     "title": "Smartphone XIAOMI 17T 12GB/256GB RU (2602DPT53G) Black",
     "url": "https://eldorado.am/en/smartphone-xiaomi-17t-12gb-256gb-ru-2602dpt53g-black",
     "storage": 256,
@@ -15885,6 +15921,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-17t",
+    "price": 243900,
+    "title": "XIAOMI 17T 12/256GB Black",
+    "url": "https://vlv.am/en/Product/47215",
+    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e64466775.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-17t",
@@ -15940,19 +15989,6 @@
    {
     "id": "xiaomi-17t",
     "price": 266900,
-    "title": "XIAOMI 17T 12/512GB Black",
-    "url": "https://vlv.am/en/Product/47217",
-    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e599375be.webp",
-    "storage": 512,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-17t",
-    "price": 266900,
     "title": "Smartphone XIAOMI 17T 12GB/512GB RU (2602DPT53G) Black",
     "url": "https://eldorado.am/en/smartphone-xiaomi-17t-12gb-512gb-ru-2602dpt53g-black",
     "storage": 512,
@@ -15962,6 +15998,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "xiaomi-17t",
+    "price": 266900,
+    "title": "XIAOMI 17T 12/512GB Black",
+    "url": "https://vlv.am/en/Product/47217",
+    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e599375be.webp",
+    "storage": 512,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-17t",
@@ -26109,6 +26158,30 @@
    },
    {
     "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 6GB/128GB Silver",
+    "price": 120900,
+    "storage": 128,
+    "ram": 6,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-6gb-128gb-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 6GB/128GB Gray",
+    "price": 120900,
+    "storage": 128,
+    "ram": 6,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-6gb-128gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
     "title": "Samsung Galaxy Tab A11+ 5G",
     "url": "https://shop.ucom.am/am/samsung-galaxy-tab-a11-5g.html",
     "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/i/m/image_-_2026-06-01t162416.808_1.webp",
@@ -26144,6 +26217,54 @@
     "ram": null,
     "color": "Gray",
     "shop": "mobilecentre",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11+ 5G 6GB/128GB Gray",
+    "price": 137900,
+    "storage": 128,
+    "ram": 6,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-5g-6gb-128gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 8GB/256GB Gray",
+    "price": 141900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-8gb-256gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11+ Wi-Fi 8GB/256GB Silver",
+    "price": 141900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-8gb-256gb-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11-plus",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11+ 5G 8GB/256GB Gray",
+    "price": 163900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-5g-8gb-256gb-gray/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -26268,6 +26389,30 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 4GB/64GB Gray",
+    "price": 55900,
+    "storage": 64,
+    "ram": 4,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-4gb-64gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 4GB/64GB Silver",
+    "price": 55900,
+    "storage": 64,
+    "ram": 4,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-4gb-64gb-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
     "price": 58900,
     "title": "SAMSUNG Tab A11 (X130N) 64GB Gray",
     "url": "https://vlv.am/en/Product/43092",
@@ -26284,7 +26429,7 @@
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy Tab A11 WiFi +5G (X135G)",
     "price": 69000,
-    "storage": null,
+    "storage": 64,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-wifi-5g-x135g.html",
     "seeded": true,
     "seen": "2026-09-20"
@@ -26371,6 +26516,54 @@
    },
    {
     "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 LTE 4GB/64GB Gray",
+    "price": 76900,
+    "storage": 64,
+    "ram": 4,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-lte-4gb-64gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 LTE 4GB/64GB Silver",
+    "price": 76900,
+    "storage": 64,
+    "ram": 4,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-lte-4gb-64gb-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 8GB/128GB Silver",
+    "price": 76900,
+    "storage": 128,
+    "ram": 8,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-8gb-128gb-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 Wi-Fi 8GB/128GB Gray",
+    "price": 76900,
+    "storage": 128,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-wi-fi-8gb-128gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
     "price": 77900,
     "storage": 128,
     "title": "Samsung Galaxy Tab A11 Wi-Fi 128GB (Silver)",
@@ -26445,6 +26638,30 @@
     "inStock": true,
     "color": "Silver",
     "shop": "vlv",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 LTE 8GB/128GB Gray",
+    "price": 93900,
+    "storage": 128,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-lte-8gb-128gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-tab-a11",
+    "shop": "viva",
+    "title": "Samsung Galaxy Tab A11 LTE 8GB/128GB Silver",
+    "price": 93900,
+    "storage": 128,
+    "ram": 8,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-tab-a11-lte-8gb-128gb-silver/",
+    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -27161,6 +27378,16 @@
    },
    {
     "id": "xiaomi-redmi-watch-5-lite",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Watch 5 Lite Gold",
+    "price": 19900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/xiaomi-redmi-watch-5-lite-gold/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-watch-5-lite",
     "price": 23500,
     "title": "Xiaomi Redmi Watch 5 Lite Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-watch-5-lite-black",
@@ -27349,6 +27576,17 @@
     "price": 8900,
     "storage": null,
     "url": "https://eldorado.am/en/redmi-buds-8-active-black-m2537e1-bhr08jtgl",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-8-active-bhr08jtgl",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Buds 8 Active Black",
+    "price": 10900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-buds-8-active-black/",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -27653,6 +27891,16 @@
     "ram": null,
     "color": "Blue",
     "shop": "mobilecentre",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-buds-6",
+    "shop": "viva",
+    "title": "Redmi Buds 6 Active Black",
+    "price": 9900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/redmi-buds-6-active-black-m2344e1/",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -28246,6 +28494,28 @@
    },
    {
     "id": "xiaomi-buds-6-lite",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Buds 6 Lite Black",
+    "price": 10900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-buds-6-lite-black/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-buds-6-lite",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Buds 6 Lite White",
+    "price": 10900,
+    "storage": null,
+    "color": "White",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-buds-6-lite-white/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-buds-6-lite",
     "price": 11900,
     "storage": null,
     "title": "Redmi Buds 8 Lite (Սև)",
@@ -28320,19 +28590,6 @@
    {
     "id": "apple-earpods-lightning",
     "price": 13900,
-    "title": "Apple EarPods (Lightning Connector) (MWTY3ZM/A)",
-    "url": "https://vlv.am/en/Product/36329",
-    "image": "https://vlv.am/public/uploads/images/05-12-2024/67515a8a8cbcb.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-earpods-lightning",
-    "price": 13900,
     "title": "Apple EarPods Lightning Connector",
     "url": "https://ibolit.mobi/product/apple-earpods-lightning-connector-2/",
     "storage": null,
@@ -28342,6 +28599,19 @@
     "ram": null,
     "color": null,
     "shop": "ibolit",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-earpods-lightning",
+    "price": 13900,
+    "title": "Apple EarPods (Lightning Connector) (MWTY3ZM/A)",
+    "url": "https://vlv.am/en/Product/36329",
+    "image": "https://vlv.am/public/uploads/images/05-12-2024/67515a8a8cbcb.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
     "seen": "2026-09-20"
    }
   ],
@@ -31364,19 +31634,6 @@
    {
     "id": "honor-x7e",
     "price": 89900,
-    "title": "HONOR X7e 6/256GB Midnight Black",
-    "url": "https://vlv.am/en/Product/48617",
-    "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e88eb64df6.webp",
-    "storage": 256,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x7e",
-    "price": 89900,
     "title": "Honor X7e 6GB/256GB Light Blue",
     "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-light-blue.html",
     "storage": 256,
@@ -31451,6 +31708,19 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
+   },
+   {
+    "id": "honor-x7e",
+    "price": 89900,
+    "title": "HONOR X7e 6/256GB Midnight Black",
+    "url": "https://vlv.am/en/Product/48617",
+    "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e88eb64df6.webp",
+    "storage": 256,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
    },
    {
     "id": "honor-x7e",
@@ -33225,6 +33495,30 @@
    },
    {
     "id": "xiaomi-redmi-pad-2",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Pad 2 4GB/128GB Green",
+    "price": 74900,
+    "storage": 128,
+    "ram": 4,
+    "color": "Green",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-pad-2-4gb-128gb-green1504/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Pad 2 4GB/128GB Gray",
+    "price": 74900,
+    "storage": 128,
+    "ram": 4,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-pad-2-4gb-128gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
     "price": 82900,
     "title": "XIAOMI Redmi Pad 2 4/128GB 9.7\" Graphite Gray",
     "url": "https://vlv.am/en/Product/43520",
@@ -33285,10 +33579,46 @@
    },
    {
     "id": "xiaomi-redmi-pad-2",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Pad 2 8GB/256GB Gray",
+    "price": 89900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-pad-2-4gb-256gb-gray4036/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Pad 2 4G 6GB/128GB Gray",
+    "price": 93900,
+    "storage": 128,
+    "ram": 6,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-pad-2-4g-8gb-128gb-gray6625/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Pad 2 4G 8GB/256GB Gray",
+    "price": 98900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-pad-2-4g-8gb-256gb-gray/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-pad-2",
     "price": 99000,
     "title": "Xiaomi Redmi Pad 2",
     "url": "https://www.yerevanmobile.am/en/xiaomi-redmi-pad-2.html",
-    "storage": null,
+    "storage": 256,
     "ram": null,
     "inStock": true,
     "color": null,
@@ -35211,6 +35541,50 @@
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-watch-8-44mm",
     "seeded": true,
     "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "viva",
+    "title": "Samsung Galaxy Watch8 40mm LTE Graphite",
+    "price": 121900,
+    "storage": null,
+    "color": "Graphite",
+    "url": "https://shop.viva.am/product/samsung-galaxy-watch8-40mm-lte-graphite/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "viva",
+    "title": "Samsung Galaxy Watch8 40mm LTE Silver",
+    "price": 121900,
+    "storage": null,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-watch8-40mm-lte-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "viva",
+    "title": "Samsung Galaxy Watch8 44mm LTE Graphite",
+    "price": 133900,
+    "storage": null,
+    "color": "Graphite",
+    "url": "https://shop.viva.am/product/samsung-galaxy-watch8-44mm-lte-graphite/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-watch-8",
+    "shop": "viva",
+    "title": "Samsung Galaxy Watch8 44mm LTE Silver",
+    "price": 133900,
+    "storage": null,
+    "color": "Silver",
+    "url": "https://shop.viva.am/product/samsung-galaxy-watch8-44mm-lte-silver9138/",
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-mi-smart-band-9": [
@@ -35354,6 +35728,28 @@
     "storage": null,
     "url": "https://eldorado.am/en/smart-watch-samsung-galaxy-watch8-classic-l500-white",
     "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-watch-8-classic",
+    "shop": "viva",
+    "title": "Samsung Galaxy Watch8 Classic 46mm LTE White",
+    "price": 173900,
+    "storage": null,
+    "color": "White",
+    "url": "https://shop.viva.am/product/samsung-galaxy-watch8-classic-46mm-lte-white/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-watch-8-classic",
+    "shop": "viva",
+    "title": "Samsung Galaxy Watch8 Classic 46mm LTE Black",
+    "price": 173900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/product/samsung-galaxy-watch8-classic-46mm-lte-black5200/",
+    "seeded": true,
+    "seen": "2026-09-20"
    }
   ],
   "xiaomi-redmi-watch-5-active": [
@@ -35396,6 +35792,16 @@
     "storage": null,
     "url": "https://eldorado.am/en/xiaomi-redmi-watch-5-active-midnight-black-bhr8784gl",
     "seeded": true
+   },
+   {
+    "id": "xiaomi-redmi-watch-5-active",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Watch 5 Active Silver",
+    "price": 17900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/xiaomi-redmi-watch-5-active-silver/",
+    "seeded": true,
+    "seen": "2026-09-20"
    },
    {
     "id": "xiaomi-redmi-watch-5-active",
@@ -35589,6 +35995,16 @@
     "color": null,
     "inStock": true,
     "shop": "ucom",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-5",
+    "shop": "viva",
+    "title": "AirPods 5",
+    "price": 69900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/airpods-5/",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -42921,15 +43337,12 @@
    },
    {
     "id": "apple-earpods-usb-c",
-    "price": 13900,
+    "shop": "viva",
     "title": "Apple EarPods (USB-C) (MYQY3ZM/A)",
-    "url": "https://vlv.am/en/Product/36330",
-    "image": "https://vlv.am/public/uploads/images/18-10-2025/68f343bfb427a.webp",
+    "price": 12900,
     "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
+    "url": "https://shop.viva.am/product/apple-earpods-usb-c-myqy3zm-a/",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -42944,6 +43357,19 @@
     "ram": null,
     "color": null,
     "shop": "ibolit",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-earpods-usb-c",
+    "price": 13900,
+    "title": "Apple EarPods (USB-C) (MYQY3ZM/A)",
+    "url": "https://vlv.am/en/Product/36330",
+    "image": "https://vlv.am/public/uploads/images/18-10-2025/68f343bfb427a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
     "seen": "2026-09-20"
    }
   ],
@@ -44269,6 +44695,18 @@
    {
     "id": "asus-vivobook-15-x1504va",
     "price": 319900,
+    "title": "Notebook ASUS Vivobook 15 X1504VA (X1504VA-BQ4056)",
+    "url": "https://eldorado.am/en/asus-vivobook-15-x1504va-x1504va-bq4056",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "asus-vivobook-15-x1504va",
+    "price": 319900,
     "title": "ASUS Vivobook 15 X1504VA C5 120U 16GB SSD512 15.6\" X1504VA-BQ4056",
     "url": "https://vlv.am/en/Product/47622",
     "image": "https://vlv.am/public/uploads/images/07-07-2026/6a4cb4887b404.webp",
@@ -44277,18 +44715,6 @@
     "inStock": true,
     "color": null,
     "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-vivobook-15-x1504va",
-    "price": 319900,
-    "title": "Notebook ASUS Vivobook 15 X1504VA (X1504VA-BQ4056)",
-    "url": "https://eldorado.am/en/asus-vivobook-15-x1504va-x1504va-bq4056",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
     "seen": "2026-09-20"
    }
   ],
@@ -44375,66 +44801,6 @@
     "seen": "2026-09-20"
    }
   ],
-  "lg-55nano816na": [
-   {
-    "id": "lg-55nano816na",
-    "price": 589000,
-    "title": "LG 55NANO816NA(QA)",
-    "url": "https://vlv.am/en/Product/15723",
-    "image": "https://vlv.am/public/uploads/images/20-02-2023/63f33e93e889b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43c350ke": [
-   {
-    "id": "toshiba-43c350ke",
-    "price": 164900,
-    "title": "TOSHIBA 43C350KE",
-    "url": "https://vlv.am/en/Product/18262",
-    "image": "https://vlv.am/public/uploads/images/28-08-2024/66cf01056ba65.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a85h": [
-   {
-    "id": "hisense-65a85h",
-    "price": 1279000,
-    "title": "Hisense 65A85H",
-    "url": "https://vlv.am/en/Product/19710",
-    "image": "https://vlv.am/public/uploads/images/21-02-2023/63f507bbed8ce.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65u7hq": [
-   {
-    "id": "hisense-65u7hq",
-    "price": 549000,
-    "title": "Hisense 65U7HQ",
-    "url": "https://vlv.am/en/Product/19711",
-    "image": "https://vlv.am/public/uploads/images/26-04-2024/63f507c2e0031.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
   "jbl-xtreme-3": [
    {
     "id": "jbl-xtreme-3",
@@ -44496,501 +44862,6 @@
     "seen": "2026-09-20"
    }
   ],
-  "lg-43nano766qa": [
-   {
-    "id": "lg-43nano766qa",
-    "price": 219000,
-    "title": "LG 43NANO766QA",
-    "url": "https://vlv.am/en/Product/20466",
-    "image": "https://vlv.am/public/uploads/images/07-02-2024/63f518654bbf2.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-43uq81006lb": [
-   {
-    "id": "lg-43uq81006lb",
-    "price": 269000,
-    "title": "LG 43UQ81006LB",
-    "url": "https://vlv.am/en/Product/20467",
-    "image": "https://vlv.am/public/uploads/images/21-02-2023/63f51867a777f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-85m550le": [
-   {
-    "id": "toshiba-85m550le",
-    "price": 699900,
-    "title": "TOSHIBA 85M550LE",
-    "url": "https://vlv.am/en/Product/20489",
-    "image": "https://vlv.am/public/uploads/images/19-02-2024/63f5194476420.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43c450ke": [
-   {
-    "id": "toshiba-43c450ke",
-    "price": 169900,
-    "title": "TOSHIBA 43C450KE",
-    "url": "https://vlv.am/en/Product/20665",
-    "image": "https://vlv.am/public/uploads/images/20-01-2024/63f51ad8b0922.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-65nano766qa": [
-   {
-    "id": "lg-65nano766qa",
-    "price": 529900,
-    "title": "LG 65NANO766QA",
-    "url": "https://vlv.am/en/Product/21193",
-    "image": "https://vlv.am/public/uploads/images/21-02-2023/63f51d04494f0.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-50m550le": [
-   {
-    "id": "toshiba-50m550le",
-    "price": 209900,
-    "title": "TOSHIBA 50M550LE",
-    "url": "https://vlv.am/en/Product/21266",
-    "image": "https://vlv.am/public/uploads/images/19-09-2024/66ec102dc47d4.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43c350le": [
-   {
-    "id": "toshiba-43c350le",
-    "price": 175900,
-    "title": "TOSHIBA 43C350LE",
-    "url": "https://vlv.am/en/Product/25559",
-    "image": "https://vlv.am/public/uploads/images/13-02-2024/65cb2fef44f70.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe85qn800auxru": [
-   {
-    "id": "samsung-qe85qn800auxru",
-    "price": 2525000,
-    "title": "SAMSUNG QE85QN800AUXRU",
-    "url": "https://vlv.am/en/Product/25736",
-    "image": "https://vlv.am/public/uploads/images/20-04-2024/662381ffe6bbe.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85a6bg": [
-   {
-    "id": "hisense-85a6bg",
-    "price": 869000,
-    "title": "Hisense 85A6BG",
-    "url": "https://vlv.am/en/Product/26586",
-    "image": "https://vlv.am/public/uploads/images/04-09-2024/66d83494a5b24.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe55ls03bauxce": [
-   {
-    "id": "samsung-qe55ls03bauxce",
-    "price": 429000,
-    "title": "SAMSUNG QE55LS03BAUXCE",
-    "url": "https://vlv.am/en/Product/27256",
-    "image": "https://vlv.am/public/uploads/images/06-05-2024/6479f28dd1981.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe85qn90bauxce": [
-   {
-    "id": "samsung-qe85qn90bauxce",
-    "price": 1899000,
-    "title": "SAMSUNG QE85QN90BAUXCE",
-    "url": "https://vlv.am/en/Product/27484",
-    "image": "https://vlv.am/public/uploads/images/06-05-2024/64954d3822fd5.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-43a7kq": [
-   {
-    "id": "hisense-43a7kq",
-    "price": 163600,
-    "title": "Hisense 43A7KQ",
-    "url": "https://vlv.am/en/Product/27896",
-    "image": "https://vlv.am/public/uploads/images/06-05-2024/6505765eabd64.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65uxkq": [
-   {
-    "id": "hisense-65uxkq",
-    "price": 999000,
-    "title": "Hisense 65UXKQ",
-    "url": "https://vlv.am/en/Product/28111",
-    "image": "https://vlv.am/public/uploads/images/20-09-2024/652647fcf1760.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a85k": [
-   {
-    "id": "hisense-65a85k",
-    "price": 1119000,
-    "title": "Hisense 65A85K",
-    "url": "https://vlv.am/en/Product/28791",
-    "image": "https://vlv.am/public/uploads/images/04-09-2024/66d847641a96b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe85qn90cauxru": [
-   {
-    "id": "samsung-qe85qn90cauxru",
-    "price": 1879000,
-    "title": "SAMSUNG QE85QN90CAUXRU",
-    "url": "https://vlv.am/en/Product/29489",
-    "image": "https://vlv.am/public/uploads/images/20-04-2024/66237f84c77bc.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-55z670me": [
-   {
-    "id": "toshiba-55z670me",
-    "price": 339900,
-    "title": "TOSHIBA 55Z670ME",
-    "url": "https://vlv.am/en/Product/30984",
-    "image": "https://vlv.am/public/uploads/images/15-05-2024/6642ff45a2474.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-kd-55x85l": [
-   {
-    "id": "sony-kd-55x85l",
-    "price": 399990,
-    "title": "SONY KD-55X85L",
-    "url": "https://vlv.am/en/Product/31142",
-    "image": "https://vlv.am/public/uploads/images/21-02-2024/65d5acacd11e6.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-kd-65x85l": [
-   {
-    "id": "sony-kd-65x85l",
-    "price": 522900,
-    "title": "SONY KD-65X85L",
-    "url": "https://vlv.am/en/Product/31144",
-    "image": "https://vlv.am/public/uploads/images/21-02-2024/65d5ac2a74b4a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-55qned816ra": [
-   {
-    "id": "lg-55qned816ra",
-    "price": 569900,
-    "title": "LG 55QNED816RA",
-    "url": "https://vlv.am/en/Product/31218",
-    "image": "https://vlv.am/public/uploads/images/04-03-2024/65e5578c2ecc0.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-55c450me": [
-   {
-    "id": "toshiba-55c450me",
-    "price": 259900,
-    "title": "TOSHIBA 55C450ME",
-    "url": "https://vlv.am/en/Product/31733",
-    "image": "https://vlv.am/public/uploads/images/08-06-2024/6663021ccab98.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-65c450me": [
-   {
-    "id": "toshiba-65c450me",
-    "price": 349900,
-    "title": "TOSHIBA 65C450ME",
-    "url": "https://vlv.am/en/Product/31734",
-    "image": "https://vlv.am/public/uploads/images/10-06-2024/66670ca623ae7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-55nano766qa": [
-   {
-    "id": "lg-55nano766qa",
-    "price": 389900,
-    "title": "LG 55NANO766QA",
-    "url": "https://vlv.am/en/Product/31875",
-    "image": "https://vlv.am/public/uploads/images/17-04-2024/661f6dfe37908.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-32a4n": [
-   {
-    "id": "hisense-32a4n",
-    "price": 99600,
-    "title": "Hisense 32A4N",
-    "url": "https://vlv.am/en/Product/31950",
-    "image": "https://vlv.am/public/uploads/images/28-08-2024/66cefd29baf05.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43c450me": [
-   {
-    "id": "toshiba-43c450me",
-    "price": 185900,
-    "title": "TOSHIBA 43C450ME",
-    "url": "https://vlv.am/en/Product/31951",
-    "image": "https://vlv.am/public/uploads/images/29-08-2024/66d0448bd18a7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-40a4n": [
-   {
-    "id": "hisense-40a4n",
-    "price": 119600,
-    "title": "Hisense 40A4N",
-    "url": "https://vlv.am/en/Product/31952",
-    "image": "https://vlv.am/public/uploads/images/28-08-2024/66cf085928db4.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-32v35me": [
-   {
-    "id": "toshiba-32v35me",
-    "price": 99900,
-    "title": "TOSHIBA 32V35ME",
-    "url": "https://vlv.am/en/Product/31953",
-    "image": "https://vlv.am/public/uploads/images/08-06-2024/666300156722b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a7nq": [
-   {
-    "id": "hisense-65a7nq",
-    "price": 435000,
-    "title": "Hisense 65A7NQ",
-    "url": "https://vlv.am/en/Product/32140",
-    "image": "https://vlv.am/public/uploads/images/18-07-2024/6698b60a5bd02.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-55ur81006lj": [
-   {
-    "id": "lg-55ur81006lj",
-    "price": 309000,
-    "title": "LG 55UR81006LJ",
-    "url": "https://vlv.am/en/Product/32789",
-    "image": "https://vlv.am/public/uploads/images/22-05-2024/664d98e5d72a7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55a6n": [
-   {
-    "id": "hisense-55a6n",
-    "price": 219700,
-    "title": "Hisense 55A6N",
-    "url": "https://vlv.am/en/Product/32896",
-    "image": "https://vlv.am/public/uploads/images/19-09-2024/66ec0ca8f0e69.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50a7nq": [
-   {
-    "id": "hisense-50a7nq",
-    "price": 222200,
-    "title": "Hisense 50A7NQ",
-    "url": "https://vlv.am/en/Product/32900",
-    "image": "https://vlv.am/public/uploads/images/31-07-2024/66a3b246e2040.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-85z670me": [
-   {
-    "id": "toshiba-85z670me",
-    "price": 829900,
-    "title": "TOSHIBA 85Z670ME",
-    "url": "https://vlv.am/en/Product/32902",
-    "image": "https://vlv.am/public/uploads/images/07-08-2024/6698b759a487e.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe83s90daexru": [
-   {
-    "id": "samsung-qe83s90daexru",
-    "price": 3119000,
-    "title": "SAMSUNG QE83S90DAEXRU",
-    "url": "https://vlv.am/en/Product/33282",
-    "image": "https://vlv.am/public/uploads/images/21-06-2024/66751a23008c3.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue98du9000uxru": [
-   {
-    "id": "samsung-ue98du9000uxru",
-    "price": 1552000,
-    "title": "SAMSUNG UE98DU9000UXRU",
-    "url": "https://vlv.am/en/Product/33286",
-    "image": "https://vlv.am/public/uploads/images/04-09-2024/66d84ce54ac29.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
   "marshall-major-iv": [
    {
     "id": "marshall-major-iv",
@@ -45039,141 +44910,6 @@
     "seeded": true
    }
   ],
-  "toshiba-85c350ne": [
-   {
-    "id": "toshiba-85c350ne",
-    "price": 689900,
-    "title": "TOSHIBA 85C350NE",
-    "url": "https://vlv.am/en/Product/34548",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9aa265af9fd.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-43a6n": [
-   {
-    "id": "hisense-43a6n",
-    "price": 153800,
-    "title": "Hisense 43A6N",
-    "url": "https://vlv.am/en/Product/34549",
-    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82f8f9a5bf2.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-oled55b4rla": [
-   {
-    "id": "lg-oled55b4rla",
-    "price": 599000,
-    "title": "LG OLED55B4RLA",
-    "url": "https://vlv.am/en/Product/35532",
-    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c7790361c7d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "lg-oled65b4rla": [
-   {
-    "id": "lg-oled65b4rla",
-    "price": 1299000,
-    "title": "LG OLED65B4RLA",
-    "url": "https://vlv.am/en/Product/35533",
-    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c77514100d7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-110uxnq": [
-   {
-    "id": "hisense-110uxnq",
-    "price": 4699000,
-    "title": "Hisense 110UXNQ",
-    "url": "https://vlv.am/en/Product/35867",
-    "image": "https://vlv.am/public/uploads/images/20-07-2026/6a5df87ab3cf7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe65qn900duxru": [
-   {
-    "id": "samsung-qe65qn900duxru",
-    "price": 1659000,
-    "title": "SAMSUNG QE65QN900DUXRU",
-    "url": "https://vlv.am/en/Product/36282",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce38871bf52.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-43e7nq": [
-   {
-    "id": "hisense-43e7nq",
-    "price": 170900,
-    "title": "Hisense 43E7NQ",
-    "url": "https://vlv.am/en/Product/37020",
-    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c79fe8571e6.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-55c350ne": [
-   {
-    "id": "toshiba-55c350ne",
-    "price": 239900,
-    "title": "TOSHIBA 55C350NE",
-    "url": "https://vlv.am/en/Product/37217",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9aa490728.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-75c350ne": [
-   {
-    "id": "toshiba-75c350ne",
-    "price": 494100,
-    "title": "TOSHIBA 75C350NE",
-    "url": "https://vlv.am/en/Product/37361",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9fd04f8f5.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
   "samsung-qe55qn80fauxru": [
    {
     "id": "samsung-qe55qn80fauxru",
@@ -45201,22 +44937,19 @@
     "seen": "2026-09-20"
    }
   ],
-  "samsung-qe65q7faauxru": [
+  "hisense-50e7q": [
    {
-    "id": "samsung-qe65q7faauxru",
-    "price": 477000,
-    "title": "SAMSUNG QE65Q7FAAUXRU",
-    "url": "https://vlv.am/en/Product/38125",
-    "image": "https://vlv.am/public/uploads/images/19-03-2026/69bbfe4799fad.webp",
+    "id": "hisense-50e7q",
+    "price": 214800,
+    "title": "Smart TV HISENSE 50E7Q",
+    "url": "https://eldorado.am/en/smart-tv-hisense-50e7q",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
-    "shop": "vlv",
+    "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50e7q": [
+   },
    {
     "id": "hisense-50e7q",
     "price": 214800,
@@ -45229,21 +44962,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "hisense-43a6q": [
    {
-    "id": "hisense-50e7q",
-    "price": 214800,
-    "title": "Smart TV HISENSE 50E7Q",
-    "url": "https://eldorado.am/en/smart-tv-hisense-50e7q",
+    "id": "hisense-43a6q",
+    "price": 161100,
+    "title": "Smart TV HISENSE 43A6Q",
+    "url": "https://eldorado.am/en/smart-tv-hisense-43a6q",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-43a6q": [
+   },
    {
     "id": "hisense-43a6q",
     "price": 161100,
@@ -45256,21 +44989,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "hisense-55e7q": [
    {
-    "id": "hisense-43a6q",
-    "price": 161100,
-    "title": "Smart TV HISENSE 43A6Q",
-    "url": "https://eldorado.am/en/smart-tv-hisense-43a6q",
+    "id": "hisense-55e7q",
+    "price": 244100,
+    "title": "Smart TV HISENSE 55E7Q",
+    "url": "https://eldorado.am/en/smart-tv-hisense-55e7q",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55e7q": [
+   },
    {
     "id": "hisense-55e7q",
     "price": 244100,
@@ -45283,34 +45016,9 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "hisense-55e7q",
-    "price": 244100,
-    "title": "Smart TV HISENSE 55E7Q",
-    "url": "https://eldorado.am/en/smart-tv-hisense-55e7q",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-09-20"
    }
   ],
   "hisense-43e7q": [
-   {
-    "id": "hisense-43e7q",
-    "price": 175800,
-    "title": "Hisense 43E7Q",
-    "url": "https://vlv.am/en/Product/38400",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fcc898ba9.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
    {
     "id": "hisense-43e7q",
     "price": 175800,
@@ -45322,15 +45030,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50a6q": [
+   },
    {
-    "id": "hisense-50a6q",
-    "price": 205100,
-    "title": "Hisense 50A6Q",
-    "url": "https://vlv.am/en/Product/38401",
-    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c79f561add5.webp",
+    "id": "hisense-43e7q",
+    "price": 175800,
+    "title": "Hisense 43E7Q",
+    "url": "https://vlv.am/en/Product/38400",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fcc898ba9.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -45397,19 +45103,6 @@
    {
     "id": "samsung-qe65s95fauxru",
     "price": 1111000,
-    "title": "SAMSUNG QE65S95FAUXRU",
-    "url": "https://vlv.am/en/Product/38483",
-    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c774082808d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-qe65s95fauxru",
-    "price": 1111000,
     "title": "Smart TV Samsung QE65S95FAUXRU",
     "url": "https://eldorado.am/en/smart-tv-samsung-qe65s95fauxru",
     "storage": null,
@@ -45418,15 +45111,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe77s90faexru": [
+   },
    {
-    "id": "samsung-qe77s90faexru",
-    "price": 2047000,
-    "title": "SAMSUNG QE77S90FAEXRU",
-    "url": "https://vlv.am/en/Product/38485",
-    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c772c6650ef.webp",
+    "id": "samsung-qe65s95fauxru",
+    "price": 1111000,
+    "title": "SAMSUNG QE65S95FAUXRU",
+    "url": "https://vlv.am/en/Product/38483",
+    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c774082808d.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -45439,19 +45130,6 @@
    {
     "id": "hisense-55e7q-pro",
     "price": 312500,
-    "title": "Hisense 55E7Q PRO",
-    "url": "https://vlv.am/en/Product/38783",
-    "image": "https://vlv.am/public/uploads/images/18-07-2025/687a60d3d4bf4.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "hisense-55e7q-pro",
-    "price": 312500,
     "title": "Smart TV HISENSE 55E7Q PRO",
     "url": "https://eldorado.am/en/hisense-55e7q-pro",
     "storage": null,
@@ -45460,90 +45138,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65u8q": [
+   },
    {
-    "id": "hisense-65u8q",
-    "price": 671300,
-    "title": "Hisense 65U8Q",
-    "url": "https://vlv.am/en/Product/38784",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a843007a41ef.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a7q": [
-   {
-    "id": "hisense-65a7q",
-    "price": 449000,
-    "title": "Hisense 65A7Q",
-    "url": "https://vlv.am/en/Product/38785",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a840f8294b7f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65u7q-pro": [
-   {
-    "id": "hisense-65u7q-pro",
-    "price": 537000,
-    "title": "Hisense 65U7Q PRO",
-    "url": "https://vlv.am/en/Product/38786",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8426e9c6bba.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-58e7q": [
-   {
-    "id": "hisense-58e7q",
-    "price": 263700,
-    "title": "Hisense 58E7Q",
-    "url": "https://vlv.am/en/Product/38787",
-    "image": "https://vlv.am/public/uploads/images/25-03-2026/69c3d69f86fb6.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-58a6q": [
-   {
-    "id": "hisense-58a6q",
-    "price": 250000,
-    "title": "Hisense 58A6Q",
-    "url": "https://vlv.am/en/Product/38788",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8403e676ac1.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a6q": [
-   {
-    "id": "hisense-65a6q",
-    "price": 316900,
-    "title": "Hisense 65A6Q",
-    "url": "https://vlv.am/en/Product/38789",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a84089250985.webp",
+    "id": "hisense-55e7q-pro",
+    "price": 312500,
+    "title": "Hisense 55E7Q PRO",
+    "url": "https://vlv.am/en/Product/38783",
+    "image": "https://vlv.am/public/uploads/images/18-07-2025/687a60d3d4bf4.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -45556,19 +45157,6 @@
    {
     "id": "hisense-65e7q-pro",
     "price": 397400,
-    "title": "Hisense 65E7Q PRO",
-    "url": "https://vlv.am/en/Product/38790",
-    "image": "https://vlv.am/public/uploads/images/24-07-2025/6881d1d4256ef.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "hisense-65e7q-pro",
-    "price": 397400,
     "title": "Smart TV HISENSE 65E7Q PRO",
     "url": "https://eldorado.am/en/hisense-65e7q-pro",
     "storage": null,
@@ -45577,30 +45165,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85e7q": [
+   },
    {
-    "id": "hisense-85e7q",
-    "price": 789000,
-    "title": "Hisense 85E7Q",
-    "url": "https://vlv.am/en/Product/38791",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce22a95fbb0.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75e7q": [
-   {
-    "id": "hisense-75e7q",
-    "price": 609900,
-    "title": "Hisense 75E7Q",
-    "url": "https://vlv.am/en/Product/38793",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8424685af30.webp",
+    "id": "hisense-65e7q-pro",
+    "price": 397400,
+    "title": "Hisense 65E7Q PRO",
+    "url": "https://vlv.am/en/Product/38790",
+    "image": "https://vlv.am/public/uploads/images/24-07-2025/6881d1d4256ef.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -45613,6 +45184,18 @@
    {
     "id": "hisense-55a7q",
     "price": 249000,
+    "title": "Smart TV HISENSE 55A7Q",
+    "url": "https://eldorado.am/en/hisense-55a7q",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "hisense-55a7q",
+    "price": 249000,
     "title": "Hisense 55A7Q",
     "url": "https://vlv.am/en/Product/38796",
     "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8407ea85809.webp",
@@ -45622,21 +45205,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "hisense-55u7q": [
    {
-    "id": "hisense-55a7q",
-    "price": 249000,
-    "title": "Smart TV HISENSE 55A7Q",
-    "url": "https://eldorado.am/en/hisense-55a7q",
+    "id": "hisense-55u7q",
+    "price": 343700,
+    "title": "Smart TV HISENSE 55U7Q",
+    "url": "https://eldorado.am/en/hisense-55u7q",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55u7q": [
+   },
    {
     "id": "hisense-55u7q",
     "price": 343700,
@@ -45649,36 +45232,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "hisense-50u7q": [
    {
-    "id": "hisense-55u7q",
-    "price": 343700,
-    "title": "Smart TV HISENSE 55U7Q",
-    "url": "https://eldorado.am/en/hisense-55u7q",
+    "id": "hisense-50u7q",
+    "price": 300800,
+    "title": "Smart TV HISENSE 50U7Q",
+    "url": "https://eldorado.am/en/hisense-50u7q",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65u7q": [
-   {
-    "id": "hisense-65u7q",
-    "price": 494100,
-    "title": "Hisense 65U7Q.",
-    "url": "https://vlv.am/en/Product/38799",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8421ee83e90.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50u7q": [
+   },
    {
     "id": "hisense-50u7q",
     "price": 300800,
@@ -45691,34 +45259,9 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "hisense-50u7q",
-    "price": 300800,
-    "title": "Smart TV HISENSE 50U7Q",
-    "url": "https://eldorado.am/en/hisense-50u7q",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-09-20"
    }
   ],
   "hisense-65e7q": [
-   {
-    "id": "hisense-65e7q",
-    "price": 327600,
-    "title": "Hisense 65E7Q.",
-    "url": "https://vlv.am/en/Product/38801",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8409d26c18b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
    {
     "id": "hisense-65e7q",
     "price": 327600,
@@ -45730,135 +45273,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe48s90faexru": [
+   },
    {
-    "id": "samsung-qe48s90faexru",
-    "price": 733000,
-    "title": "SAMSUNG QE48S90FAEXRU",
-    "url": "https://vlv.am/en/Product/39009",
-    "image": "https://vlv.am/public/uploads/images/27-03-2026/69c63d358f14e.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-k-65xr70": [
-   {
-    "id": "sony-k-65xr70",
-    "price": 849990,
-    "title": "SONY K-65XR70",
-    "url": "https://vlv.am/en/Product/39719",
-    "image": "https://vlv.am/public/uploads/images/20-03-2026/69bd4da4338a9.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-k-75xr70": [
-   {
-    "id": "sony-k-75xr70",
-    "price": 1234900,
-    "title": "SONY K-75XR70",
-    "url": "https://vlv.am/en/Product/39720",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce3be5341ee.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43v35re": [
-   {
-    "id": "toshiba-43v35re",
-    "price": 119900,
-    "title": "TOSHIBA 43V35RE",
-    "url": "https://vlv.am/en/Product/40407",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9288eb6bc.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55a6q": [
-   {
-    "id": "hisense-55a6q",
-    "price": 236800,
-    "title": "Hisense 55A6Q",
-    "url": "https://vlv.am/en/Product/40408",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fefe52f75.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55u7q-pro": [
-   {
-    "id": "hisense-55u7q-pro",
-    "price": 408100,
-    "title": "Hisense 55U7Q PRO",
-    "url": "https://vlv.am/en/Product/40409",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a841042b5db0.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55u8q": [
-   {
-    "id": "hisense-55u8q",
-    "price": 494100,
-    "title": "Hisense 55U8Q",
-    "url": "https://vlv.am/en/Product/40410",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a84223b007ce.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-32a4q": [
-   {
-    "id": "hisense-32a4q",
-    "price": 105000,
-    "title": "Hisense 32A4Q",
-    "url": "https://vlv.am/en/Product/41265",
-    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82e90fce11d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-40a4q": [
-   {
-    "id": "hisense-40a4q",
-    "price": 127000,
-    "title": "Hisense 40A4Q",
-    "url": "https://vlv.am/en/Product/41266",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fb4a12dce.webp",
+    "id": "hisense-65e7q",
+    "price": 327600,
+    "title": "Hisense 65E7Q.",
+    "url": "https://vlv.am/en/Product/38801",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8409d26c18b.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -45886,171 +45307,6 @@
     "title": "SAMSUNG QE75QN80FAUXRU",
     "url": "https://vlv.am/en/Product/41439",
     "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce2f9ac7822.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-55z670re": [
-   {
-    "id": "toshiba-55z670re",
-    "price": 339900,
-    "title": "TOSHIBA 55Z670RE",
-    "url": "https://vlv.am/en/Product/41496",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9cef70a10.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-65z770re": [
-   {
-    "id": "toshiba-65z770re",
-    "price": 451600,
-    "title": "TOSHIBA 65Z770RE",
-    "url": "https://vlv.am/en/Product/41497",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9ed703a00.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75a6q": [
-   {
-    "id": "hisense-75a6q",
-    "price": 478400,
-    "title": "Hisense 75A6Q",
-    "url": "https://vlv.am/en/Product/41498",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a841cc10e330.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75e7q-pro": [
-   {
-    "id": "hisense-75e7q-pro",
-    "price": 507700,
-    "title": "Hisense 75E7Q PRO",
-    "url": "https://vlv.am/en/Product/41499",
-    "image": "https://vlv.am/public/uploads/images/08-06-2026/6a266d5d2fe3c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75u7q": [
-   {
-    "id": "hisense-75u7q",
-    "price": 610200,
-    "title": "Hisense 75U7Q",
-    "url": "https://vlv.am/en/Product/41500",
-    "image": "https://vlv.am/public/uploads/images/23-06-2026/6a3a56e9cf40c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-100e7q-pro": [
-   {
-    "id": "hisense-100e7q-pro",
-    "price": 1235100,
-    "title": "Hisense 100E7Q PRO",
-    "url": "https://vlv.am/en/Product/41501",
-    "image": "https://vlv.am/public/uploads/images/20-03-2026/69bd90b53fba9.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-65z670re": [
-   {
-    "id": "toshiba-65z670re",
-    "price": 409100,
-    "title": "TOSHIBA 65Z670RE",
-    "url": "https://vlv.am/en/Product/41502",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce13cda6782.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75u7q-pro": [
-   {
-    "id": "hisense-75u7q-pro",
-    "price": 683500,
-    "title": "Hisense 75U7Q PRO",
-    "url": "https://vlv.am/en/Product/41503",
-    "image": "https://vlv.am/public/uploads/images/11-06-2026/6a2a5c2bf27d8.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85a6q": [
-   {
-    "id": "hisense-85a6q",
-    "price": 610200,
-    "title": "Hisense 85A6Q",
-    "url": "https://vlv.am/en/Product/41504",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a843548ce4eb.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85u7q": [
-   {
-    "id": "hisense-85u7q",
-    "price": 1079000,
-    "title": "Hisense 85U7Q",
-    "url": "https://vlv.am/en/Product/41505",
-    "image": "https://vlv.am/public/uploads/images/25-03-2026/69c3e8962a91c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-k-75s30": [
-   {
-    "id": "sony-k-75s30",
-    "price": 549990,
-    "title": "SONY K-75S30",
-    "url": "https://vlv.am/en/Product/41513",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce2b4b09741.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -46167,157 +45423,19 @@
     "seen": "2026-09-20"
    }
   ],
-  "sony-k-75xr50": [
-   {
-    "id": "sony-k-75xr50",
-    "price": 929990,
-    "title": "SONY K-75XR50",
-    "url": "https://vlv.am/en/Product/41520",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce312130fb0.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-k-65xr50": [
-   {
-    "id": "sony-k-65xr50",
-    "price": 749990,
-    "title": "SONY K-65XR50",
-    "url": "https://vlv.am/en/Product/41521",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce2d6f07993.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-k-55xr50": [
-   {
-    "id": "sony-k-55xr50",
-    "price": 579990,
-    "title": "SONY K-55XR50",
-    "url": "https://vlv.am/en/Product/41522",
-    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce291939c40.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "sony-k-65xr80m2": [
-   {
-    "id": "sony-k-65xr80m2",
-    "price": 1299990,
-    "title": "SONY K-65XR80M2",
-    "url": "https://vlv.am/en/Product/41523",
-    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a05a57e848.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe65qn990fuxru": [
-   {
-    "id": "samsung-qe65qn990fuxru",
-    "price": 2729000,
-    "title": "SAMSUNG QE65QN990FUXRU",
-    "url": "https://vlv.am/en/Product/41884",
-    "image": "https://vlv.am/public/uploads/images/20-03-2026/69bce91507550.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-65c350re": [
-   {
-    "id": "toshiba-65c350re",
-    "price": 317400,
-    "title": "TOSHIBA 65C350RE",
-    "url": "https://vlv.am/en/Product/41885",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9e7e6bda7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-50m450re": [
-   {
-    "id": "toshiba-50m450re",
-    "price": 249900,
-    "title": "TOSHIBA 50M450RE",
-    "url": "https://vlv.am/en/Product/41886",
-    "image": "https://vlv.am/public/uploads/images/09-09-2026/6aa16003dd414.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-55c350re": [
-   {
-    "id": "toshiba-55c350re",
-    "price": 249900,
-    "title": "TOSHIBA 55C350RE",
-    "url": "https://vlv.am/en/Product/41887",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9b06c7a12.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-50c350re": [
-   {
-    "id": "toshiba-50c350re",
-    "price": 188000,
-    "title": "TOSHIBA 50C350RE",
-    "url": "https://vlv.am/en/Product/41888",
-    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9a4075436.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43m450re": [
-   {
-    "id": "toshiba-43m450re",
-    "price": 189900,
-    "title": "TOSHIBA 43M450RE",
-    "url": "https://vlv.am/en/Product/42043",
-    "image": "https://vlv.am/public/uploads/images/24-01-2026/69746b4846b4a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
   "tcl-32s5k": [
+   {
+    "id": "tcl-32s5k",
+    "price": 99500,
+    "title": "Smart TV TCL 32S5K",
+    "url": "https://eldorado.am/en/tcl-32s5k",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-09-20"
+   },
    {
     "id": "tcl-32s5k",
     "price": 99500,
@@ -46330,21 +45448,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "tcl-50s5k": [
    {
-    "id": "tcl-32s5k",
-    "price": 99500,
-    "title": "Smart TV TCL 32S5K",
-    "url": "https://eldorado.am/en/tcl-32s5k",
+    "id": "tcl-50s5k",
+    "price": 159900,
+    "title": "Smart TV TCL 50S5K",
+    "url": "https://eldorado.am/en/smart-tv-tcl-50s5k",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "tcl-50s5k": [
+   },
    {
     "id": "tcl-50s5k",
     "price": 159900,
@@ -46357,21 +45475,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "tcl-55v6c": [
    {
-    "id": "tcl-50s5k",
-    "price": 159900,
-    "title": "Smart TV TCL 50S5K",
-    "url": "https://eldorado.am/en/smart-tv-tcl-50s5k",
+    "id": "tcl-55v6c",
+    "price": 249900,
+    "title": "Smart TV TCL 55V6C",
+    "url": "https://eldorado.am/en/tcl-55v6c",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "tcl-55v6c": [
+   },
    {
     "id": "tcl-55v6c",
     "price": 249900,
@@ -46384,21 +45502,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "tcl-65c6k": [
    {
-    "id": "tcl-55v6c",
-    "price": 249900,
-    "title": "Smart TV TCL 55V6C",
-    "url": "https://eldorado.am/en/tcl-55v6c",
+    "id": "tcl-65c6k",
+    "price": 479900,
+    "title": "Smart TV TCL 65C6K",
+    "url": "https://eldorado.am/en/smart-tv-tcl-65c6k",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "tcl-65c6k": [
+   },
    {
     "id": "tcl-65c6k",
     "price": 479900,
@@ -46410,18 +45528,6 @@
     "inStock": true,
     "color": null,
     "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "tcl-65c6k",
-    "price": 479900,
-    "title": "Smart TV TCL 65C6K",
-    "url": "https://eldorado.am/en/smart-tv-tcl-65c6k",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
     "seen": "2026-09-20"
    }
   ],
@@ -46629,22 +45735,19 @@
     "seeded": true
    }
   ],
-  "toshiba-75z670re": [
+  "tcl-55c6k": [
    {
-    "id": "toshiba-75z670re",
-    "price": 537000,
-    "title": "TOSHIBA 75Z670RE",
-    "url": "https://vlv.am/en/Product/45085",
-    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a0193b849c.webp",
+    "id": "tcl-55c6k",
+    "price": 378900,
+    "title": "Smart TV TCL 55C6K",
+    "url": "https://eldorado.am/en/smart-tv-tcl-55c6k",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
-    "shop": "vlv",
+    "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "tcl-55c6k": [
+   },
    {
     "id": "tcl-55c6k",
     "price": 378900,
@@ -46657,96 +45760,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue43m70hauxpy": [
    {
-    "id": "tcl-55c6k",
-    "price": 378900,
-    "title": "Smart TV TCL 55C6K",
-    "url": "https://eldorado.am/en/smart-tv-tcl-55c6k",
+    "id": "samsung-ue43m70hauxpy",
+    "price": 178000,
+    "title": "Smart TV Samsung UE43M70HAUXPY",
+    "url": "https://eldorado.am/en/samsung-ue43m70hauxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "hisense-40a5q": [
-   {
-    "id": "hisense-40a5q",
-    "price": 134300,
-    "title": "Hisense 40A5Q",
-    "url": "https://vlv.am/en/Product/45197",
-    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a3543a4978f2.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "xiaomi-s-pro-mini-led-65": [
-   {
-    "id": "xiaomi-s-pro-mini-led-65",
-    "price": 469900,
-    "title": "XIAOMI S Pro Mini LED 65 (L65MB-SRU)",
-    "url": "https://vlv.am/en/Product/45645",
-    "image": "https://vlv.am/public/uploads/images/29-04-2026/69f2056dc125c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe55s85haexpy": [
-   {
-    "id": "samsung-qe55s85haexpy",
-    "price": 679000,
-    "title": "SAMSUNG QE55S85HAEXPY",
-    "url": "https://vlv.am/en/Product/46177",
-    "image": "https://vlv.am/public/uploads/images/31-07-2026/6a6c6cceb70a4.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe55s90hauxpy": [
-   {
-    "id": "samsung-qe55s90hauxpy",
-    "price": 1049000,
-    "title": "SAMSUNG QE55S90HAUXPY",
-    "url": "https://vlv.am/en/Product/46178",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b31207ff02.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe65s85haexpy": [
-   {
-    "id": "samsung-qe65s85haexpy",
-    "price": 919000,
-    "title": "SAMSUNG QE65S85HAEXPY",
-    "url": "https://vlv.am/en/Product/46179",
-    "image": "https://vlv.am/public/uploads/images/16-09-2026/6aaa9a78e7907.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue43m70hauxpy": [
+   },
    {
     "id": "samsung-ue43m70hauxpy",
     "price": 178000,
@@ -46759,21 +45787,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue43u8000huxpy": [
    {
-    "id": "samsung-ue43m70hauxpy",
-    "price": 178000,
-    "title": "Smart TV Samsung UE43M70HAUXPY",
-    "url": "https://eldorado.am/en/samsung-ue43m70hauxpy",
+    "id": "samsung-ue43u8000huxpy",
+    "price": 152000,
+    "title": "Smart TV Samsung UE43U8000HUXPY",
+    "url": "https://eldorado.am/en/samsung-ue43u8000huxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue43u8000huxpy": [
+   },
    {
     "id": "samsung-ue43u8000huxpy",
     "price": 152000,
@@ -46786,21 +45814,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue50u8000huxpy": [
    {
-    "id": "samsung-ue43u8000huxpy",
-    "price": 152000,
-    "title": "Smart TV Samsung UE43U8000HUXPY",
-    "url": "https://eldorado.am/en/samsung-ue43u8000huxpy",
+    "id": "samsung-ue50u8000huxpy",
+    "price": 212000,
+    "title": "Smart TV Samsung UE50U8000HUXPY",
+    "url": "https://eldorado.am/en/samsung-ue50u8000huxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue50u8000huxpy": [
+   },
    {
     "id": "samsung-ue50u8000huxpy",
     "price": 212000,
@@ -46813,36 +45841,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue65m80hauxpy": [
    {
-    "id": "samsung-ue50u8000huxpy",
-    "price": 212000,
-    "title": "Smart TV Samsung UE50U8000HUXPY",
-    "url": "https://eldorado.am/en/samsung-ue50u8000huxpy",
+    "id": "samsung-ue65m80hauxpy",
+    "price": 479000,
+    "title": "Smart TV Samsung UE65M80HAUXPY",
+    "url": "https://eldorado.am/en/samsung-ue65m80hauxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue65m70hauxpy": [
-   {
-    "id": "samsung-ue65m70hauxpy",
-    "price": 322000,
-    "title": "SAMSUNG UE65M70HAUXPY",
-    "url": "https://vlv.am/en/Product/46183",
-    "image": "https://vlv.am/public/uploads/images/13-06-2026/6a2d244073bfc.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue65m80hauxpy": [
+   },
    {
     "id": "samsung-ue65m80hauxpy",
     "price": 479000,
@@ -46855,21 +45868,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue65u8000huxpy": [
    {
-    "id": "samsung-ue65m80hauxpy",
-    "price": 479000,
-    "title": "Smart TV Samsung UE65M80HAUXPY",
-    "url": "https://eldorado.am/en/samsung-ue65m80hauxpy",
+    "id": "samsung-ue65u8000huxpy",
+    "price": 314000,
+    "title": "Smart TV Samsung UE65U8000HUXPY",
+    "url": "https://eldorado.am/en/samsung-ue65u8000huxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue65u8000huxpy": [
+   },
    {
     "id": "samsung-ue65u8000huxpy",
     "price": 314000,
@@ -46882,21 +45895,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue75m70hauxpy": [
    {
-    "id": "samsung-ue65u8000huxpy",
-    "price": 314000,
-    "title": "Smart TV Samsung UE65U8000HUXPY",
-    "url": "https://eldorado.am/en/samsung-ue65u8000huxpy",
+    "id": "samsung-ue75m70hauxpy",
+    "price": 467000,
+    "title": "Smart TV Samsung UE75M70HAUXPY",
+    "url": "https://eldorado.am/en/samsung-ue75m70hauxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue75m70hauxpy": [
+   },
    {
     "id": "samsung-ue75m70hauxpy",
     "price": 467000,
@@ -46909,21 +45922,21 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
+   }
+  ],
+  "samsung-ue75u8000huxpy": [
    {
-    "id": "samsung-ue75m70hauxpy",
-    "price": 467000,
-    "title": "Smart TV Samsung UE75M70HAUXPY",
-    "url": "https://eldorado.am/en/samsung-ue75m70hauxpy",
+    "id": "samsung-ue75u8000huxpy",
+    "price": 403000,
+    "title": "Smart TV Samsung UE75U8000HUXPY",
+    "url": "https://eldorado.am/en/samsung-ue75u8000huxpy",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue75u8000huxpy": [
+   },
    {
     "id": "samsung-ue75u8000huxpy",
     "price": 403000,
@@ -46936,109 +45949,9 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-ue75u8000huxpy",
-    "price": 403000,
-    "title": "Smart TV Samsung UE75U8000HUXPY",
-    "url": "https://eldorado.am/en/samsung-ue75u8000huxpy",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55e7s": [
-   {
-    "id": "hisense-55e7s",
-    "price": 329000,
-    "title": "Hisense 55E7S",
-    "url": "https://vlv.am/en/Product/46195",
-    "image": "https://vlv.am/public/uploads/images/29-06-2026/6a421f9cbaa03.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50a6s": [
-   {
-    "id": "hisense-50a6s",
-    "price": 285000,
-    "title": "Hisense 50A6S",
-    "url": "https://vlv.am/en/Product/46196",
-    "image": "https://vlv.am/public/uploads/images/29-06-2026/6a421efe7c454.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65e8s": [
-   {
-    "id": "hisense-65e8s",
-    "price": 565000,
-    "title": "Hisense 65E8S",
-    "url": "https://vlv.am/en/Product/46343",
-    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d33a8e43d8.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55a7s": [
-   {
-    "id": "hisense-55a7s",
-    "price": 399000,
-    "title": "Hisense 55A7S",
-    "url": "https://vlv.am/en/Product/46356",
-    "image": "https://vlv.am/public/uploads/images/01-09-2026/6a969265ef0f8.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a7s": [
-   {
-    "id": "hisense-65a7s",
-    "price": 485000,
-    "title": "Hisense 65A7S",
-    "url": "https://vlv.am/en/Product/46357",
-    "image": "https://vlv.am/public/uploads/images/31-07-2026/6a6c63314933f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
    }
   ],
   "samsung-ue55m70hauxpy": [
-   {
-    "id": "samsung-ue55m70hauxpy",
-    "price": 254000,
-    "title": "SAMSUNG UE55M70HAUXPY",
-    "url": "https://vlv.am/en/Product/46662",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b134bd107a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
    {
     "id": "samsung-ue55m70hauxpy",
     "price": 254000,
@@ -47050,450 +45963,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue55m80hauxpy": [
+   },
    {
-    "id": "samsung-ue55m80hauxpy",
-    "price": 359000,
-    "title": "SAMSUNG UE55M80HAUXPY",
-    "url": "https://vlv.am/en/Product/46663",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2a580f29a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe43qn70hauxpy": [
-   {
-    "id": "samsung-qe43qn70hauxpy",
-    "price": 324000,
-    "title": "SAMSUNG QE43QN70HAUXPY",
-    "url": "https://vlv.am/en/Product/46664",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2adab6508.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe50qn70hauxpy": [
-   {
-    "id": "samsung-qe50qn70hauxpy",
-    "price": 374000,
-    "title": "SAMSUNG QE50QN70HAUXPY",
-    "url": "https://vlv.am/en/Product/46665",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2c8ce1c60.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe75qn70hauxpy": [
-   {
-    "id": "samsung-qe75qn70hauxpy",
-    "price": 722000,
-    "title": "SAMSUNG QE75QN70HAUXPY",
-    "url": "https://vlv.am/en/Product/46668",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b304fccc8d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe55qn80hauxpy": [
-   {
-    "id": "samsung-qe55qn80hauxpy",
-    "price": 619000,
-    "title": "SAMSUNG QE55QN80HAUXPY",
-    "url": "https://vlv.am/en/Product/46670",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2d74cca46.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe65s95hauxpy": [
-   {
-    "id": "samsung-qe65s95hauxpy",
-    "price": 1317000,
-    "title": "SAMSUNG QE65S95HAUXPY",
-    "url": "https://vlv.am/en/Product/46672",
-    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b3285074fa.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-40a5s": [
-   {
-    "id": "hisense-40a5s",
-    "price": 185000,
-    "title": "Hisense 40A5S",
-    "url": "https://vlv.am/en/Product/47385",
-    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82f865b421c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-43e7s": [
-   {
-    "id": "hisense-43e7s",
-    "price": 219000,
-    "title": "Hisense 43E7S",
-    "url": "https://vlv.am/en/Product/47386",
-    "image": "https://vlv.am/public/uploads/images/26-06-2026/6a3e29790898a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-32v35re": [
-   {
-    "id": "toshiba-32v35re",
-    "price": 109000,
-    "title": "TOSHIBA 32V35RE",
-    "url": "https://vlv.am/en/Product/47387",
-    "image": "https://vlv.am/public/uploads/images/25-06-2026/6a3d41b6f2531.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50e7s": [
-   {
-    "id": "hisense-50e7s",
-    "price": 295000,
-    "title": "Hisense 50E7S",
-    "url": "https://vlv.am/en/Product/47388",
-    "image": "https://vlv.am/public/uploads/images/26-06-2026/6a3e2d7251147.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-mre55r85hauxpy": [
-   {
-    "id": "samsung-mre55r85hauxpy",
-    "price": 722000,
-    "title": "SAMSUNG MRE55R85HAUXPY",
-    "url": "https://vlv.am/en/Product/47458",
-    "image": "https://vlv.am/public/uploads/images/03-09-2026/6a99237d16a9c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe48s90haexpy": [
-   {
-    "id": "samsung-qe48s90haexpy",
-    "price": 799000,
-    "title": "SAMSUNG QE48S90HAEXPY",
-    "url": "https://vlv.am/en/Product/47460",
-    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a6372cc9bf3c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe65qn80hauxpy": [
-   {
-    "id": "samsung-qe65qn80hauxpy",
-    "price": 749000,
-    "title": "SAMSUNG QE65QN80HAUXPY",
-    "url": "https://vlv.am/en/Product/47461",
-    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a6371f430b70.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-ue85m80hauxpy": [
-   {
-    "id": "samsung-ue85m80hauxpy",
-    "price": 839000,
-    "title": "SAMSUNG UE85M80HAUXPY",
-    "url": "https://vlv.am/en/Product/47462",
-    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a6370e940a8d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-43a7s": [
-   {
-    "id": "hisense-43a7s",
-    "price": 249000,
-    "title": "Hisense 43A7S",
-    "url": "https://vlv.am/en/Product/47550",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fe39dc35a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65e7s": [
-   {
-    "id": "hisense-65e7s",
-    "price": 435000,
-    "title": "Hisense 65E7S",
-    "url": "https://vlv.am/en/Product/47551",
-    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b3c86c09cc.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75u7s-pro": [
-   {
-    "id": "hisense-75u7s-pro",
-    "price": 889000,
-    "title": "Hisense 75U7S PRO",
-    "url": "https://vlv.am/en/Product/47552",
-    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b57200d91d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75e7s": [
-   {
-    "id": "hisense-75e7s",
-    "price": 629000,
-    "title": "Hisense 75E7S",
-    "url": "https://vlv.am/en/Product/47553",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8425ec8e972.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-116uxq": [
-   {
-    "id": "hisense-116uxq",
-    "price": 6199000,
-    "title": "Hisense 116UXQ",
-    "url": "https://vlv.am/en/Product/47554",
-    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b4fc127abe.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75ur9s": [
-   {
-    "id": "hisense-75ur9s",
-    "price": 1349000,
-    "title": "Hisense 75UR9S",
-    "url": "https://vlv.am/en/Product/47555",
-    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b39960f469.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65a6s": [
-   {
-    "id": "hisense-65a6s",
-    "price": 419000,
-    "title": "Hisense 65A6S",
-    "url": "https://vlv.am/en/Product/47556",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a840d2048c5c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-65z680se": [
-   {
-    "id": "toshiba-65z680se",
-    "price": 575000,
-    "title": "TOSHIBA 65Z680SE",
-    "url": "https://vlv.am/en/Product/47557",
-    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b34be3eed5.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55u7s-pro": [
-   {
-    "id": "hisense-55u7s-pro",
-    "price": 525000,
-    "title": "Hisense 55U7S PRO",
-    "url": "https://vlv.am/en/Product/47558",
-    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a5a17ac9688d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65u7s-pro": [
-   {
-    "id": "hisense-65u7s-pro",
-    "price": 689000,
-    "title": "Hisense 65U7S PRO",
-    "url": "https://vlv.am/en/Product/47559",
-    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a0301d839a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85e8s": [
-   {
-    "id": "hisense-85e8s",
-    "price": 989000,
-    "title": "Hisense 85E8S",
-    "url": "https://vlv.am/en/Product/47560",
-    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a04041a07c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85e7s": [
-   {
-    "id": "hisense-85e7s",
-    "price": 819000,
-    "title": "Hisense 85E7S",
-    "url": "https://vlv.am/en/Product/47561",
-    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a843157e4816.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-85u7s-pro": [
-   {
-    "id": "hisense-85u7s-pro",
-    "price": 1199000,
-    "title": "Hisense 85U7S PRO",
-    "url": "https://vlv.am/en/Product/47562",
-    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a049aaaa88.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-50a7s": [
-   {
-    "id": "hisense-50a7s",
-    "price": 305000,
-    "title": "Hisense 50A7S",
-    "url": "https://vlv.am/en/Product/47563",
-    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a59f20ede3ed.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-55e8s": [
-   {
-    "id": "hisense-55e8s",
-    "price": 439000,
-    "title": "Hisense 55E8S",
-    "url": "https://vlv.am/en/Product/47564",
-    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a5a139c90d6c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-55z680se": [
-   {
-    "id": "toshiba-55z680se",
-    "price": 435000,
-    "title": "TOSHIBA 55Z680SE",
-    "url": "https://vlv.am/en/Product/47565",
-    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a01e66baad.webp",
+    "id": "samsung-ue55m70hauxpy",
+    "price": 254000,
+    "title": "SAMSUNG UE55M70HAUXPY",
+    "url": "https://vlv.am/en/Product/46662",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b134bd107a.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -47542,19 +46018,6 @@
    {
     "id": "tcl-43v6d",
     "price": 189900,
-    "title": "TCL 43V6D",
-    "url": "https://vlv.am/en/Product/47849",
-    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a63429133e1b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "tcl-43v6d",
-    "price": 189900,
     "title": "Smart TV TCL 43V6D",
     "url": "https://eldorado.am/en/tcl-43v6d",
     "storage": null,
@@ -47563,159 +46026,13 @@
     "color": null,
     "shop": "eldorado",
     "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-43c350re": [
-   {
-    "id": "toshiba-43c350re",
-    "price": 179000,
-    "title": "TOSHIBA 43C350RE",
-    "url": "https://vlv.am/en/Product/48057",
-    "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c5a845e3e9.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "toshiba-50v37se": [
-   {
-    "id": "toshiba-50v37se",
-    "price": 209900,
-    "title": "TOSHIBA 50V37SE",
-    "url": "https://vlv.am/en/Product/48058",
-    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d3168e58cd.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-40a4s": [
-   {
-    "id": "hisense-40a4s",
-    "price": 179000,
-    "title": "Hisense 40A4S",
-    "url": "https://vlv.am/en/Product/48059",
-    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82f81d756ab.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hp-victus-15": [
-   {
-    "id": "hp-victus-15",
-    "price": 699900,
-    "title": "HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA",
-    "url": "https://vlv.am/en/Product/48132",
-    "image": "https://vlv.am/public/uploads/images/01-08-2026/6a6e03e8d145a.webp",
-    "storage": 512,
-    "ram": null,
-    "inStock": true,
-    "color": "Mica Silver",
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-qe83s90haexpy": [
-   {
-    "id": "samsung-qe83s90haexpy",
-    "price": 2499000,
-    "title": "SAMSUNG QE83S90HAEXPY",
-    "url": "https://vlv.am/en/Product/48201",
-    "image": "https://vlv.am/public/uploads/images/01-09-2026/6a967f5409b8b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "samsung-mre75r95hauxpy": [
-   {
-    "id": "samsung-mre75r95hauxpy",
-    "price": 2199000,
-    "title": "SAMSUNG MRE75R95HAUXPY",
-    "url": "https://vlv.am/en/Product/48202",
-    "image": "https://vlv.am/public/uploads/images/03-09-2026/6a99222571c87.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-65ur8s": [
-   {
-    "id": "hisense-65ur8s",
-    "price": 889000,
-    "title": "Hisense 65UR8S",
-    "url": "https://vlv.am/en/Product/48529",
-    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d35b51c3a7.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "jbl-partybox-stage-320": [
-   {
-    "id": "jbl-partybox-stage-320",
-    "shop": "istyle",
-    "title": "JBL PartyBox Stage 320",
-    "price": 255000,
-    "storage": null,
-    "url": "https://istyle.am/en/product/JBL%20PartyBox%20Stage%20320",
-    "seeded": true
    },
    {
-    "id": "jbl-partybox-stage-320",
-    "price": 308000,
-    "title": "JBL PartyBox Stage 320 (AM)",
-    "url": "https://vlv.am/en/Product/48544",
-    "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c451e3badd.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-75ur8s": [
-   {
-    "id": "hisense-75ur8s",
-    "price": 1149000,
-    "title": "Hisense 75UR8S",
-    "url": "https://vlv.am/en/Product/48625",
-    "image": "https://vlv.am/public/uploads/images/01-09-2026/6a9690cc689d1.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-09-20"
-   }
-  ],
-  "hisense-32a5s": [
-   {
-    "id": "hisense-32a5s",
-    "price": 169000,
-    "title": "Hisense 32A5S",
-    "url": "https://vlv.am/en/Product/48817",
-    "image": "https://vlv.am/public/uploads/images/10-09-2026/6aa254045c84a.webp",
+    "id": "tcl-43v6d",
+    "price": 189900,
+    "title": "TCL 43V6D",
+    "url": "https://vlv.am/en/Product/47849",
+    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a63429133e1b.webp",
     "storage": null,
     "ram": null,
     "inStock": true,
@@ -57001,6 +55318,27 @@
    },
    {
     "id": "xiaomi-redmi-8-lite",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Buds 8 Lite Black",
+    "price": 11900,
+    "storage": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/product/xiaomi-redmi-buds-8-lite-black/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-8-lite",
+    "shop": "viva",
+    "title": "Xiaomi Redmi Buds 8 Lite White",
+    "price": 11900,
+    "storage": null,
+    "url": "https://shop.viva.am/product/xiaomi-redmi-buds-8-lite-white/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-redmi-8-lite",
     "price": 14500,
     "title": "Xiaomi Redmi Buds 8 Lite Black",
     "url": "https://redstore.am/en/product/xiaomi-redmi-buds-8-lite-black",
@@ -65473,6 +63811,2115 @@
     "seen": "2026-09-20"
    }
   ],
+  "lg-55nano816na": [
+   {
+    "id": "lg-55nano816na",
+    "price": 589000,
+    "title": "LG 55NANO816NA(QA)",
+    "url": "https://vlv.am/en/Product/15723",
+    "image": "https://vlv.am/public/uploads/images/20-02-2023/63f33e93e889b.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43c350ke": [
+   {
+    "id": "toshiba-43c350ke",
+    "price": 164900,
+    "title": "TOSHIBA 43C350KE",
+    "url": "https://vlv.am/en/Product/18262",
+    "image": "https://vlv.am/public/uploads/images/28-08-2024/66cf01056ba65.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a85h": [
+   {
+    "id": "hisense-65a85h",
+    "price": 1279000,
+    "title": "Hisense 65A85H",
+    "url": "https://vlv.am/en/Product/19710",
+    "image": "https://vlv.am/public/uploads/images/21-02-2023/63f507bbed8ce.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65u7hq": [
+   {
+    "id": "hisense-65u7hq",
+    "price": 549000,
+    "title": "Hisense 65U7HQ",
+    "url": "https://vlv.am/en/Product/19711",
+    "image": "https://vlv.am/public/uploads/images/26-04-2024/63f507c2e0031.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-43nano766qa": [
+   {
+    "id": "lg-43nano766qa",
+    "price": 219000,
+    "title": "LG 43NANO766QA",
+    "url": "https://vlv.am/en/Product/20466",
+    "image": "https://vlv.am/public/uploads/images/07-02-2024/63f518654bbf2.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-43uq81006lb": [
+   {
+    "id": "lg-43uq81006lb",
+    "price": 269000,
+    "title": "LG 43UQ81006LB",
+    "url": "https://vlv.am/en/Product/20467",
+    "image": "https://vlv.am/public/uploads/images/21-02-2023/63f51867a777f.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-85m550le": [
+   {
+    "id": "toshiba-85m550le",
+    "price": 699900,
+    "title": "TOSHIBA 85M550LE",
+    "url": "https://vlv.am/en/Product/20489",
+    "image": "https://vlv.am/public/uploads/images/19-02-2024/63f5194476420.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43c450ke": [
+   {
+    "id": "toshiba-43c450ke",
+    "price": 169900,
+    "title": "TOSHIBA 43C450KE",
+    "url": "https://vlv.am/en/Product/20665",
+    "image": "https://vlv.am/public/uploads/images/20-01-2024/63f51ad8b0922.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-65nano766qa": [
+   {
+    "id": "lg-65nano766qa",
+    "price": 529900,
+    "title": "LG 65NANO766QA",
+    "url": "https://vlv.am/en/Product/21193",
+    "image": "https://vlv.am/public/uploads/images/21-02-2023/63f51d04494f0.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-50m550le": [
+   {
+    "id": "toshiba-50m550le",
+    "price": 209900,
+    "title": "TOSHIBA 50M550LE",
+    "url": "https://vlv.am/en/Product/21266",
+    "image": "https://vlv.am/public/uploads/images/19-09-2024/66ec102dc47d4.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43c350le": [
+   {
+    "id": "toshiba-43c350le",
+    "price": 175900,
+    "title": "TOSHIBA 43C350LE",
+    "url": "https://vlv.am/en/Product/25559",
+    "image": "https://vlv.am/public/uploads/images/13-02-2024/65cb2fef44f70.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe85qn800auxru": [
+   {
+    "id": "samsung-qe85qn800auxru",
+    "price": 2525000,
+    "title": "SAMSUNG QE85QN800AUXRU",
+    "url": "https://vlv.am/en/Product/25736",
+    "image": "https://vlv.am/public/uploads/images/20-04-2024/662381ffe6bbe.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85a6bg": [
+   {
+    "id": "hisense-85a6bg",
+    "price": 869000,
+    "title": "Hisense 85A6BG",
+    "url": "https://vlv.am/en/Product/26586",
+    "image": "https://vlv.am/public/uploads/images/04-09-2024/66d83494a5b24.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe55ls03bauxce": [
+   {
+    "id": "samsung-qe55ls03bauxce",
+    "price": 429000,
+    "title": "SAMSUNG QE55LS03BAUXCE",
+    "url": "https://vlv.am/en/Product/27256",
+    "image": "https://vlv.am/public/uploads/images/06-05-2024/6479f28dd1981.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe85qn90bauxce": [
+   {
+    "id": "samsung-qe85qn90bauxce",
+    "price": 1899000,
+    "title": "SAMSUNG QE85QN90BAUXCE",
+    "url": "https://vlv.am/en/Product/27484",
+    "image": "https://vlv.am/public/uploads/images/06-05-2024/64954d3822fd5.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-43a7kq": [
+   {
+    "id": "hisense-43a7kq",
+    "price": 163600,
+    "title": "Hisense 43A7KQ",
+    "url": "https://vlv.am/en/Product/27896",
+    "image": "https://vlv.am/public/uploads/images/06-05-2024/6505765eabd64.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65uxkq": [
+   {
+    "id": "hisense-65uxkq",
+    "price": 999000,
+    "title": "Hisense 65UXKQ",
+    "url": "https://vlv.am/en/Product/28111",
+    "image": "https://vlv.am/public/uploads/images/20-09-2024/652647fcf1760.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a85k": [
+   {
+    "id": "hisense-65a85k",
+    "price": 1119000,
+    "title": "Hisense 65A85K",
+    "url": "https://vlv.am/en/Product/28791",
+    "image": "https://vlv.am/public/uploads/images/04-09-2024/66d847641a96b.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe85qn90cauxru": [
+   {
+    "id": "samsung-qe85qn90cauxru",
+    "price": 1879000,
+    "title": "SAMSUNG QE85QN90CAUXRU",
+    "url": "https://vlv.am/en/Product/29489",
+    "image": "https://vlv.am/public/uploads/images/20-04-2024/66237f84c77bc.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-55z670me": [
+   {
+    "id": "toshiba-55z670me",
+    "price": 339900,
+    "title": "TOSHIBA 55Z670ME",
+    "url": "https://vlv.am/en/Product/30984",
+    "image": "https://vlv.am/public/uploads/images/15-05-2024/6642ff45a2474.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-kd-55x85l": [
+   {
+    "id": "sony-kd-55x85l",
+    "price": 399990,
+    "title": "SONY KD-55X85L",
+    "url": "https://vlv.am/en/Product/31142",
+    "image": "https://vlv.am/public/uploads/images/21-02-2024/65d5acacd11e6.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-kd-65x85l": [
+   {
+    "id": "sony-kd-65x85l",
+    "price": 522900,
+    "title": "SONY KD-65X85L",
+    "url": "https://vlv.am/en/Product/31144",
+    "image": "https://vlv.am/public/uploads/images/21-02-2024/65d5ac2a74b4a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-55qned816ra": [
+   {
+    "id": "lg-55qned816ra",
+    "price": 569900,
+    "title": "LG 55QNED816RA",
+    "url": "https://vlv.am/en/Product/31218",
+    "image": "https://vlv.am/public/uploads/images/04-03-2024/65e5578c2ecc0.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-55c450me": [
+   {
+    "id": "toshiba-55c450me",
+    "price": 259900,
+    "title": "TOSHIBA 55C450ME",
+    "url": "https://vlv.am/en/Product/31733",
+    "image": "https://vlv.am/public/uploads/images/08-06-2024/6663021ccab98.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-65c450me": [
+   {
+    "id": "toshiba-65c450me",
+    "price": 349900,
+    "title": "TOSHIBA 65C450ME",
+    "url": "https://vlv.am/en/Product/31734",
+    "image": "https://vlv.am/public/uploads/images/10-06-2024/66670ca623ae7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-55nano766qa": [
+   {
+    "id": "lg-55nano766qa",
+    "price": 389900,
+    "title": "LG 55NANO766QA",
+    "url": "https://vlv.am/en/Product/31875",
+    "image": "https://vlv.am/public/uploads/images/17-04-2024/661f6dfe37908.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-32a4n": [
+   {
+    "id": "hisense-32a4n",
+    "price": 99600,
+    "title": "Hisense 32A4N",
+    "url": "https://vlv.am/en/Product/31950",
+    "image": "https://vlv.am/public/uploads/images/28-08-2024/66cefd29baf05.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43c450me": [
+   {
+    "id": "toshiba-43c450me",
+    "price": 185900,
+    "title": "TOSHIBA 43C450ME",
+    "url": "https://vlv.am/en/Product/31951",
+    "image": "https://vlv.am/public/uploads/images/29-08-2024/66d0448bd18a7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-40a4n": [
+   {
+    "id": "hisense-40a4n",
+    "price": 119600,
+    "title": "Hisense 40A4N",
+    "url": "https://vlv.am/en/Product/31952",
+    "image": "https://vlv.am/public/uploads/images/28-08-2024/66cf085928db4.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-32v35me": [
+   {
+    "id": "toshiba-32v35me",
+    "price": 99900,
+    "title": "TOSHIBA 32V35ME",
+    "url": "https://vlv.am/en/Product/31953",
+    "image": "https://vlv.am/public/uploads/images/08-06-2024/666300156722b.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a7nq": [
+   {
+    "id": "hisense-65a7nq",
+    "price": 435000,
+    "title": "Hisense 65A7NQ",
+    "url": "https://vlv.am/en/Product/32140",
+    "image": "https://vlv.am/public/uploads/images/18-07-2024/6698b60a5bd02.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-55ur81006lj": [
+   {
+    "id": "lg-55ur81006lj",
+    "price": 309000,
+    "title": "LG 55UR81006LJ",
+    "url": "https://vlv.am/en/Product/32789",
+    "image": "https://vlv.am/public/uploads/images/22-05-2024/664d98e5d72a7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55a6n": [
+   {
+    "id": "hisense-55a6n",
+    "price": 219700,
+    "title": "Hisense 55A6N",
+    "url": "https://vlv.am/en/Product/32896",
+    "image": "https://vlv.am/public/uploads/images/19-09-2024/66ec0ca8f0e69.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-50a7nq": [
+   {
+    "id": "hisense-50a7nq",
+    "price": 222200,
+    "title": "Hisense 50A7NQ",
+    "url": "https://vlv.am/en/Product/32900",
+    "image": "https://vlv.am/public/uploads/images/31-07-2024/66a3b246e2040.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-85z670me": [
+   {
+    "id": "toshiba-85z670me",
+    "price": 829900,
+    "title": "TOSHIBA 85Z670ME",
+    "url": "https://vlv.am/en/Product/32902",
+    "image": "https://vlv.am/public/uploads/images/07-08-2024/6698b759a487e.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe83s90daexru": [
+   {
+    "id": "samsung-qe83s90daexru",
+    "price": 3119000,
+    "title": "SAMSUNG QE83S90DAEXRU",
+    "url": "https://vlv.am/en/Product/33282",
+    "image": "https://vlv.am/public/uploads/images/21-06-2024/66751a23008c3.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-ue98du9000uxru": [
+   {
+    "id": "samsung-ue98du9000uxru",
+    "price": 1552000,
+    "title": "SAMSUNG UE98DU9000UXRU",
+    "url": "https://vlv.am/en/Product/33286",
+    "image": "https://vlv.am/public/uploads/images/04-09-2024/66d84ce54ac29.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-85c350ne": [
+   {
+    "id": "toshiba-85c350ne",
+    "price": 689900,
+    "title": "TOSHIBA 85C350NE",
+    "url": "https://vlv.am/en/Product/34548",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9aa265af9fd.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-43a6n": [
+   {
+    "id": "hisense-43a6n",
+    "price": 153800,
+    "title": "Hisense 43A6N",
+    "url": "https://vlv.am/en/Product/34549",
+    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82f8f9a5bf2.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-oled55b4rla": [
+   {
+    "id": "lg-oled55b4rla",
+    "price": 599000,
+    "title": "LG OLED55B4RLA",
+    "url": "https://vlv.am/en/Product/35532",
+    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c7790361c7d.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "lg-oled65b4rla": [
+   {
+    "id": "lg-oled65b4rla",
+    "price": 1299000,
+    "title": "LG OLED65B4RLA",
+    "url": "https://vlv.am/en/Product/35533",
+    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c77514100d7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-110uxnq": [
+   {
+    "id": "hisense-110uxnq",
+    "price": 4699000,
+    "title": "Hisense 110UXNQ",
+    "url": "https://vlv.am/en/Product/35867",
+    "image": "https://vlv.am/public/uploads/images/20-07-2026/6a5df87ab3cf7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe65qn900duxru": [
+   {
+    "id": "samsung-qe65qn900duxru",
+    "price": 1659000,
+    "title": "SAMSUNG QE65QN900DUXRU",
+    "url": "https://vlv.am/en/Product/36282",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce38871bf52.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-43e7nq": [
+   {
+    "id": "hisense-43e7nq",
+    "price": 170900,
+    "title": "Hisense 43E7NQ",
+    "url": "https://vlv.am/en/Product/37020",
+    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c79fe8571e6.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-55c350ne": [
+   {
+    "id": "toshiba-55c350ne",
+    "price": 239900,
+    "title": "TOSHIBA 55C350NE",
+    "url": "https://vlv.am/en/Product/37217",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9aa490728.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-75c350ne": [
+   {
+    "id": "toshiba-75c350ne",
+    "price": 494100,
+    "title": "TOSHIBA 75C350NE",
+    "url": "https://vlv.am/en/Product/37361",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9fd04f8f5.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe65q7faauxru": [
+   {
+    "id": "samsung-qe65q7faauxru",
+    "price": 477000,
+    "title": "SAMSUNG QE65Q7FAAUXRU",
+    "url": "https://vlv.am/en/Product/38125",
+    "image": "https://vlv.am/public/uploads/images/19-03-2026/69bbfe4799fad.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-50a6q": [
+   {
+    "id": "hisense-50a6q",
+    "price": 205100,
+    "title": "Hisense 50A6Q",
+    "url": "https://vlv.am/en/Product/38401",
+    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c79f561add5.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe77s90faexru": [
+   {
+    "id": "samsung-qe77s90faexru",
+    "price": 2047000,
+    "title": "SAMSUNG QE77S90FAEXRU",
+    "url": "https://vlv.am/en/Product/38485",
+    "image": "https://vlv.am/public/uploads/images/28-03-2026/69c772c6650ef.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65u8q": [
+   {
+    "id": "hisense-65u8q",
+    "price": 671300,
+    "title": "Hisense 65U8Q",
+    "url": "https://vlv.am/en/Product/38784",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a843007a41ef.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a7q": [
+   {
+    "id": "hisense-65a7q",
+    "price": 449000,
+    "title": "Hisense 65A7Q",
+    "url": "https://vlv.am/en/Product/38785",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a840f8294b7f.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65u7q-pro": [
+   {
+    "id": "hisense-65u7q-pro",
+    "price": 537000,
+    "title": "Hisense 65U7Q PRO",
+    "url": "https://vlv.am/en/Product/38786",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8426e9c6bba.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-58e7q": [
+   {
+    "id": "hisense-58e7q",
+    "price": 263700,
+    "title": "Hisense 58E7Q",
+    "url": "https://vlv.am/en/Product/38787",
+    "image": "https://vlv.am/public/uploads/images/25-03-2026/69c3d69f86fb6.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-58a6q": [
+   {
+    "id": "hisense-58a6q",
+    "price": 250000,
+    "title": "Hisense 58A6Q",
+    "url": "https://vlv.am/en/Product/38788",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8403e676ac1.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a6q": [
+   {
+    "id": "hisense-65a6q",
+    "price": 316900,
+    "title": "Hisense 65A6Q",
+    "url": "https://vlv.am/en/Product/38789",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a84089250985.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85e7q": [
+   {
+    "id": "hisense-85e7q",
+    "price": 789000,
+    "title": "Hisense 85E7Q",
+    "url": "https://vlv.am/en/Product/38791",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce22a95fbb0.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75e7q": [
+   {
+    "id": "hisense-75e7q",
+    "price": 609900,
+    "title": "Hisense 75E7Q",
+    "url": "https://vlv.am/en/Product/38793",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8424685af30.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65u7q": [
+   {
+    "id": "hisense-65u7q",
+    "price": 494100,
+    "title": "Hisense 65U7Q.",
+    "url": "https://vlv.am/en/Product/38799",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8421ee83e90.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe48s90faexru": [
+   {
+    "id": "samsung-qe48s90faexru",
+    "price": 733000,
+    "title": "SAMSUNG QE48S90FAEXRU",
+    "url": "https://vlv.am/en/Product/39009",
+    "image": "https://vlv.am/public/uploads/images/27-03-2026/69c63d358f14e.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-65xr70": [
+   {
+    "id": "sony-k-65xr70",
+    "price": 849990,
+    "title": "SONY K-65XR70",
+    "url": "https://vlv.am/en/Product/39719",
+    "image": "https://vlv.am/public/uploads/images/20-03-2026/69bd4da4338a9.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-75xr70": [
+   {
+    "id": "sony-k-75xr70",
+    "price": 1234900,
+    "title": "SONY K-75XR70",
+    "url": "https://vlv.am/en/Product/39720",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce3be5341ee.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43v35re": [
+   {
+    "id": "toshiba-43v35re",
+    "price": 119900,
+    "title": "TOSHIBA 43V35RE",
+    "url": "https://vlv.am/en/Product/40407",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9288eb6bc.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55a6q": [
+   {
+    "id": "hisense-55a6q",
+    "price": 236800,
+    "title": "Hisense 55A6Q",
+    "url": "https://vlv.am/en/Product/40408",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fefe52f75.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55u7q-pro": [
+   {
+    "id": "hisense-55u7q-pro",
+    "price": 408100,
+    "title": "Hisense 55U7Q PRO",
+    "url": "https://vlv.am/en/Product/40409",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a841042b5db0.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55u8q": [
+   {
+    "id": "hisense-55u8q",
+    "price": 494100,
+    "title": "Hisense 55U8Q",
+    "url": "https://vlv.am/en/Product/40410",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a84223b007ce.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-32a4q": [
+   {
+    "id": "hisense-32a4q",
+    "price": 105000,
+    "title": "Hisense 32A4Q",
+    "url": "https://vlv.am/en/Product/41265",
+    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82e90fce11d.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-40a4q": [
+   {
+    "id": "hisense-40a4q",
+    "price": 127000,
+    "title": "Hisense 40A4Q",
+    "url": "https://vlv.am/en/Product/41266",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fb4a12dce.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-55z670re": [
+   {
+    "id": "toshiba-55z670re",
+    "price": 339900,
+    "title": "TOSHIBA 55Z670RE",
+    "url": "https://vlv.am/en/Product/41496",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9cef70a10.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-65z770re": [
+   {
+    "id": "toshiba-65z770re",
+    "price": 451600,
+    "title": "TOSHIBA 65Z770RE",
+    "url": "https://vlv.am/en/Product/41497",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9ed703a00.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75a6q": [
+   {
+    "id": "hisense-75a6q",
+    "price": 478400,
+    "title": "Hisense 75A6Q",
+    "url": "https://vlv.am/en/Product/41498",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a841cc10e330.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75e7q-pro": [
+   {
+    "id": "hisense-75e7q-pro",
+    "price": 507700,
+    "title": "Hisense 75E7Q PRO",
+    "url": "https://vlv.am/en/Product/41499",
+    "image": "https://vlv.am/public/uploads/images/08-06-2026/6a266d5d2fe3c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75u7q": [
+   {
+    "id": "hisense-75u7q",
+    "price": 610200,
+    "title": "Hisense 75U7Q",
+    "url": "https://vlv.am/en/Product/41500",
+    "image": "https://vlv.am/public/uploads/images/23-06-2026/6a3a56e9cf40c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-100e7q-pro": [
+   {
+    "id": "hisense-100e7q-pro",
+    "price": 1235100,
+    "title": "Hisense 100E7Q PRO",
+    "url": "https://vlv.am/en/Product/41501",
+    "image": "https://vlv.am/public/uploads/images/20-03-2026/69bd90b53fba9.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-65z670re": [
+   {
+    "id": "toshiba-65z670re",
+    "price": 409100,
+    "title": "TOSHIBA 65Z670RE",
+    "url": "https://vlv.am/en/Product/41502",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce13cda6782.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75u7q-pro": [
+   {
+    "id": "hisense-75u7q-pro",
+    "price": 683500,
+    "title": "Hisense 75U7Q PRO",
+    "url": "https://vlv.am/en/Product/41503",
+    "image": "https://vlv.am/public/uploads/images/11-06-2026/6a2a5c2bf27d8.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85a6q": [
+   {
+    "id": "hisense-85a6q",
+    "price": 610200,
+    "title": "Hisense 85A6Q",
+    "url": "https://vlv.am/en/Product/41504",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a843548ce4eb.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85u7q": [
+   {
+    "id": "hisense-85u7q",
+    "price": 1079000,
+    "title": "Hisense 85U7Q",
+    "url": "https://vlv.am/en/Product/41505",
+    "image": "https://vlv.am/public/uploads/images/25-03-2026/69c3e8962a91c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-75s30": [
+   {
+    "id": "sony-k-75s30",
+    "price": 549990,
+    "title": "SONY K-75S30",
+    "url": "https://vlv.am/en/Product/41513",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce2b4b09741.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-75xr50": [
+   {
+    "id": "sony-k-75xr50",
+    "price": 929990,
+    "title": "SONY K-75XR50",
+    "url": "https://vlv.am/en/Product/41520",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce312130fb0.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-65xr50": [
+   {
+    "id": "sony-k-65xr50",
+    "price": 749990,
+    "title": "SONY K-65XR50",
+    "url": "https://vlv.am/en/Product/41521",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce2d6f07993.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-55xr50": [
+   {
+    "id": "sony-k-55xr50",
+    "price": 579990,
+    "title": "SONY K-55XR50",
+    "url": "https://vlv.am/en/Product/41522",
+    "image": "https://vlv.am/public/uploads/images/02-04-2026/69ce291939c40.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "sony-k-65xr80m2": [
+   {
+    "id": "sony-k-65xr80m2",
+    "price": 1299990,
+    "title": "SONY K-65XR80M2",
+    "url": "https://vlv.am/en/Product/41523",
+    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a05a57e848.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe65qn990fuxru": [
+   {
+    "id": "samsung-qe65qn990fuxru",
+    "price": 2729000,
+    "title": "SAMSUNG QE65QN990FUXRU",
+    "url": "https://vlv.am/en/Product/41884",
+    "image": "https://vlv.am/public/uploads/images/20-03-2026/69bce91507550.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-65c350re": [
+   {
+    "id": "toshiba-65c350re",
+    "price": 317400,
+    "title": "TOSHIBA 65C350RE",
+    "url": "https://vlv.am/en/Product/41885",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9e7e6bda7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-50m450re": [
+   {
+    "id": "toshiba-50m450re",
+    "price": 249900,
+    "title": "TOSHIBA 50M450RE",
+    "url": "https://vlv.am/en/Product/41886",
+    "image": "https://vlv.am/public/uploads/images/09-09-2026/6aa16003dd414.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-55c350re": [
+   {
+    "id": "toshiba-55c350re",
+    "price": 249900,
+    "title": "TOSHIBA 55C350RE",
+    "url": "https://vlv.am/en/Product/41887",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9b06c7a12.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-50c350re": [
+   {
+    "id": "toshiba-50c350re",
+    "price": 188000,
+    "title": "TOSHIBA 50C350RE",
+    "url": "https://vlv.am/en/Product/41888",
+    "image": "https://vlv.am/public/uploads/images/04-09-2026/6a9a9a4075436.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43m450re": [
+   {
+    "id": "toshiba-43m450re",
+    "price": 189900,
+    "title": "TOSHIBA 43M450RE",
+    "url": "https://vlv.am/en/Product/42043",
+    "image": "https://vlv.am/public/uploads/images/24-01-2026/69746b4846b4a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-75z670re": [
+   {
+    "id": "toshiba-75z670re",
+    "price": 537000,
+    "title": "TOSHIBA 75Z670RE",
+    "url": "https://vlv.am/en/Product/45085",
+    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a0193b849c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-40a5q": [
+   {
+    "id": "hisense-40a5q",
+    "price": 134300,
+    "title": "Hisense 40A5Q",
+    "url": "https://vlv.am/en/Product/45197",
+    "image": "https://vlv.am/public/uploads/images/19-06-2026/6a3543a4978f2.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "xiaomi-s-pro-mini-led-65": [
+   {
+    "id": "xiaomi-s-pro-mini-led-65",
+    "price": 469900,
+    "title": "XIAOMI S Pro Mini LED 65 (L65MB-SRU)",
+    "url": "https://vlv.am/en/Product/45645",
+    "image": "https://vlv.am/public/uploads/images/29-04-2026/69f2056dc125c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe55s85haexpy": [
+   {
+    "id": "samsung-qe55s85haexpy",
+    "price": 679000,
+    "title": "SAMSUNG QE55S85HAEXPY",
+    "url": "https://vlv.am/en/Product/46177",
+    "image": "https://vlv.am/public/uploads/images/31-07-2026/6a6c6cceb70a4.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe55s90hauxpy": [
+   {
+    "id": "samsung-qe55s90hauxpy",
+    "price": 1049000,
+    "title": "SAMSUNG QE55S90HAUXPY",
+    "url": "https://vlv.am/en/Product/46178",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b31207ff02.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe65s85haexpy": [
+   {
+    "id": "samsung-qe65s85haexpy",
+    "price": 919000,
+    "title": "SAMSUNG QE65S85HAEXPY",
+    "url": "https://vlv.am/en/Product/46179",
+    "image": "https://vlv.am/public/uploads/images/16-09-2026/6aaa9a78e7907.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-ue65m70hauxpy": [
+   {
+    "id": "samsung-ue65m70hauxpy",
+    "price": 322000,
+    "title": "SAMSUNG UE65M70HAUXPY",
+    "url": "https://vlv.am/en/Product/46183",
+    "image": "https://vlv.am/public/uploads/images/13-06-2026/6a2d244073bfc.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55e7s": [
+   {
+    "id": "hisense-55e7s",
+    "price": 329000,
+    "title": "Hisense 55E7S",
+    "url": "https://vlv.am/en/Product/46195",
+    "image": "https://vlv.am/public/uploads/images/29-06-2026/6a421f9cbaa03.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-50a6s": [
+   {
+    "id": "hisense-50a6s",
+    "price": 285000,
+    "title": "Hisense 50A6S",
+    "url": "https://vlv.am/en/Product/46196",
+    "image": "https://vlv.am/public/uploads/images/29-06-2026/6a421efe7c454.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65e8s": [
+   {
+    "id": "hisense-65e8s",
+    "price": 565000,
+    "title": "Hisense 65E8S",
+    "url": "https://vlv.am/en/Product/46343",
+    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d33a8e43d8.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55a7s": [
+   {
+    "id": "hisense-55a7s",
+    "price": 399000,
+    "title": "Hisense 55A7S",
+    "url": "https://vlv.am/en/Product/46356",
+    "image": "https://vlv.am/public/uploads/images/01-09-2026/6a969265ef0f8.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a7s": [
+   {
+    "id": "hisense-65a7s",
+    "price": 485000,
+    "title": "Hisense 65A7S",
+    "url": "https://vlv.am/en/Product/46357",
+    "image": "https://vlv.am/public/uploads/images/31-07-2026/6a6c63314933f.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-ue55m80hauxpy": [
+   {
+    "id": "samsung-ue55m80hauxpy",
+    "price": 359000,
+    "title": "SAMSUNG UE55M80HAUXPY",
+    "url": "https://vlv.am/en/Product/46663",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2a580f29a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe43qn70hauxpy": [
+   {
+    "id": "samsung-qe43qn70hauxpy",
+    "price": 324000,
+    "title": "SAMSUNG QE43QN70HAUXPY",
+    "url": "https://vlv.am/en/Product/46664",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2adab6508.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe50qn70hauxpy": [
+   {
+    "id": "samsung-qe50qn70hauxpy",
+    "price": 374000,
+    "title": "SAMSUNG QE50QN70HAUXPY",
+    "url": "https://vlv.am/en/Product/46665",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2c8ce1c60.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe75qn70hauxpy": [
+   {
+    "id": "samsung-qe75qn70hauxpy",
+    "price": 722000,
+    "title": "SAMSUNG QE75QN70HAUXPY",
+    "url": "https://vlv.am/en/Product/46668",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b304fccc8d.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe55qn80hauxpy": [
+   {
+    "id": "samsung-qe55qn80hauxpy",
+    "price": 619000,
+    "title": "SAMSUNG QE55QN80HAUXPY",
+    "url": "https://vlv.am/en/Product/46670",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b2d74cca46.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe65s95hauxpy": [
+   {
+    "id": "samsung-qe65s95hauxpy",
+    "price": 1317000,
+    "title": "SAMSUNG QE65S95HAUXPY",
+    "url": "https://vlv.am/en/Product/46672",
+    "image": "https://vlv.am/public/uploads/images/30-07-2026/6a6b3285074fa.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-40a5s": [
+   {
+    "id": "hisense-40a5s",
+    "price": 185000,
+    "title": "Hisense 40A5S",
+    "url": "https://vlv.am/en/Product/47385",
+    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82f865b421c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-43e7s": [
+   {
+    "id": "hisense-43e7s",
+    "price": 219000,
+    "title": "Hisense 43E7S",
+    "url": "https://vlv.am/en/Product/47386",
+    "image": "https://vlv.am/public/uploads/images/26-06-2026/6a3e29790898a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-32v35re": [
+   {
+    "id": "toshiba-32v35re",
+    "price": 109000,
+    "title": "TOSHIBA 32V35RE",
+    "url": "https://vlv.am/en/Product/47387",
+    "image": "https://vlv.am/public/uploads/images/25-06-2026/6a3d41b6f2531.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-50e7s": [
+   {
+    "id": "hisense-50e7s",
+    "price": 295000,
+    "title": "Hisense 50E7S",
+    "url": "https://vlv.am/en/Product/47388",
+    "image": "https://vlv.am/public/uploads/images/26-06-2026/6a3e2d7251147.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-mre55r85hauxpy": [
+   {
+    "id": "samsung-mre55r85hauxpy",
+    "price": 722000,
+    "title": "SAMSUNG MRE55R85HAUXPY",
+    "url": "https://vlv.am/en/Product/47458",
+    "image": "https://vlv.am/public/uploads/images/03-09-2026/6a99237d16a9c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe48s90haexpy": [
+   {
+    "id": "samsung-qe48s90haexpy",
+    "price": 799000,
+    "title": "SAMSUNG QE48S90HAEXPY",
+    "url": "https://vlv.am/en/Product/47460",
+    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a6372cc9bf3c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe65qn80hauxpy": [
+   {
+    "id": "samsung-qe65qn80hauxpy",
+    "price": 749000,
+    "title": "SAMSUNG QE65QN80HAUXPY",
+    "url": "https://vlv.am/en/Product/47461",
+    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a6371f430b70.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-ue85m80hauxpy": [
+   {
+    "id": "samsung-ue85m80hauxpy",
+    "price": 839000,
+    "title": "SAMSUNG UE85M80HAUXPY",
+    "url": "https://vlv.am/en/Product/47462",
+    "image": "https://vlv.am/public/uploads/images/24-07-2026/6a6370e940a8d.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-43a7s": [
+   {
+    "id": "hisense-43a7s",
+    "price": 249000,
+    "title": "Hisense 43A7S",
+    "url": "https://vlv.am/en/Product/47550",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a83fe39dc35a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65e7s": [
+   {
+    "id": "hisense-65e7s",
+    "price": 435000,
+    "title": "Hisense 65E7S",
+    "url": "https://vlv.am/en/Product/47551",
+    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b3c86c09cc.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75u7s-pro": [
+   {
+    "id": "hisense-75u7s-pro",
+    "price": 889000,
+    "title": "Hisense 75U7S PRO",
+    "url": "https://vlv.am/en/Product/47552",
+    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b57200d91d.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75e7s": [
+   {
+    "id": "hisense-75e7s",
+    "price": 629000,
+    "title": "Hisense 75E7S",
+    "url": "https://vlv.am/en/Product/47553",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a8425ec8e972.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-116uxq": [
+   {
+    "id": "hisense-116uxq",
+    "price": 6199000,
+    "title": "Hisense 116UXQ",
+    "url": "https://vlv.am/en/Product/47554",
+    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b4fc127abe.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75ur9s": [
+   {
+    "id": "hisense-75ur9s",
+    "price": 1349000,
+    "title": "Hisense 75UR9S",
+    "url": "https://vlv.am/en/Product/47555",
+    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b39960f469.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65a6s": [
+   {
+    "id": "hisense-65a6s",
+    "price": 419000,
+    "title": "Hisense 65A6S",
+    "url": "https://vlv.am/en/Product/47556",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a840d2048c5c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-65z680se": [
+   {
+    "id": "toshiba-65z680se",
+    "price": 575000,
+    "title": "TOSHIBA 65Z680SE",
+    "url": "https://vlv.am/en/Product/47557",
+    "image": "https://vlv.am/public/uploads/images/18-07-2026/6a5b34be3eed5.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55u7s-pro": [
+   {
+    "id": "hisense-55u7s-pro",
+    "price": 525000,
+    "title": "Hisense 55U7S PRO",
+    "url": "https://vlv.am/en/Product/47558",
+    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a5a17ac9688d.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65u7s-pro": [
+   {
+    "id": "hisense-65u7s-pro",
+    "price": 689000,
+    "title": "Hisense 65U7S PRO",
+    "url": "https://vlv.am/en/Product/47559",
+    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a0301d839a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85e8s": [
+   {
+    "id": "hisense-85e8s",
+    "price": 989000,
+    "title": "Hisense 85E8S",
+    "url": "https://vlv.am/en/Product/47560",
+    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a04041a07c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85e7s": [
+   {
+    "id": "hisense-85e7s",
+    "price": 819000,
+    "title": "Hisense 85E7S",
+    "url": "https://vlv.am/en/Product/47561",
+    "image": "https://vlv.am/public/uploads/images/18-08-2026/6a843157e4816.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-85u7s-pro": [
+   {
+    "id": "hisense-85u7s-pro",
+    "price": 1199000,
+    "title": "Hisense 85U7S PRO",
+    "url": "https://vlv.am/en/Product/47562",
+    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a049aaaa88.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-50a7s": [
+   {
+    "id": "hisense-50a7s",
+    "price": 305000,
+    "title": "Hisense 50A7S",
+    "url": "https://vlv.am/en/Product/47563",
+    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a59f20ede3ed.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-55e8s": [
+   {
+    "id": "hisense-55e8s",
+    "price": 439000,
+    "title": "Hisense 55E8S",
+    "url": "https://vlv.am/en/Product/47564",
+    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a5a139c90d6c.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-55z680se": [
+   {
+    "id": "toshiba-55z680se",
+    "price": 435000,
+    "title": "TOSHIBA 55Z680SE",
+    "url": "https://vlv.am/en/Product/47565",
+    "image": "https://vlv.am/public/uploads/images/29-07-2026/6a6a01e66baad.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-43c350re": [
+   {
+    "id": "toshiba-43c350re",
+    "price": 179000,
+    "title": "TOSHIBA 43C350RE",
+    "url": "https://vlv.am/en/Product/48057",
+    "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c5a845e3e9.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "toshiba-50v37se": [
+   {
+    "id": "toshiba-50v37se",
+    "price": 209900,
+    "title": "TOSHIBA 50V37SE",
+    "url": "https://vlv.am/en/Product/48058",
+    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d3168e58cd.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-40a4s": [
+   {
+    "id": "hisense-40a4s",
+    "price": 179000,
+    "title": "Hisense 40A4S",
+    "url": "https://vlv.am/en/Product/48059",
+    "image": "https://vlv.am/public/uploads/images/17-08-2026/6a82f81d756ab.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hp-victus-15": [
+   {
+    "id": "hp-victus-15",
+    "price": 699900,
+    "title": "HP Victus 15-fa2262ci Core 5 - 210H/15.6 8/512 RT3050 DR9V2EA",
+    "url": "https://vlv.am/en/Product/48132",
+    "image": "https://vlv.am/public/uploads/images/01-08-2026/6a6e03e8d145a.webp",
+    "storage": 512,
+    "ram": null,
+    "inStock": true,
+    "color": "Mica Silver",
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-qe83s90haexpy": [
+   {
+    "id": "samsung-qe83s90haexpy",
+    "price": 2499000,
+    "title": "SAMSUNG QE83S90HAEXPY",
+    "url": "https://vlv.am/en/Product/48201",
+    "image": "https://vlv.am/public/uploads/images/01-09-2026/6a967f5409b8b.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "samsung-mre75r95hauxpy": [
+   {
+    "id": "samsung-mre75r95hauxpy",
+    "price": 2199000,
+    "title": "SAMSUNG MRE75R95HAUXPY",
+    "url": "https://vlv.am/en/Product/48202",
+    "image": "https://vlv.am/public/uploads/images/03-09-2026/6a99222571c87.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-65ur8s": [
+   {
+    "id": "hisense-65ur8s",
+    "price": 889000,
+    "title": "Hisense 65UR8S",
+    "url": "https://vlv.am/en/Product/48529",
+    "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d35b51c3a7.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "jbl-partybox-stage-320": [
+   {
+    "id": "jbl-partybox-stage-320",
+    "shop": "istyle",
+    "title": "JBL PartyBox Stage 320",
+    "price": 255000,
+    "storage": null,
+    "url": "https://istyle.am/en/product/JBL%20PartyBox%20Stage%20320",
+    "seeded": true
+   },
+   {
+    "id": "jbl-partybox-stage-320",
+    "price": 308000,
+    "title": "JBL PartyBox Stage 320 (AM)",
+    "url": "https://vlv.am/en/Product/48544",
+    "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c451e3badd.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-75ur8s": [
+   {
+    "id": "hisense-75ur8s",
+    "price": 1149000,
+    "title": "Hisense 75UR8S",
+    "url": "https://vlv.am/en/Product/48625",
+    "image": "https://vlv.am/public/uploads/images/01-09-2026/6a9690cc689d1.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
+  "hisense-32a5s": [
+   {
+    "id": "hisense-32a5s",
+    "price": 169000,
+    "title": "Hisense 32A5S",
+    "url": "https://vlv.am/en/Product/48817",
+    "image": "https://vlv.am/public/uploads/images/10-09-2026/6aa254045c84a.webp",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "vlv",
+    "seen": "2026-09-20"
+   }
+  ],
   "asus-vivobook-15x-m1503-oled": [
    {
     "id": "asus-vivobook-15x-m1503-oled",
@@ -66229,17 +66676,6 @@
     "price": 3200,
     "storage": null,
     "url": "https://ibolit.mobi/product/xiaomi-mi-electric-kettle-pro-2-white/",
-    "seeded": true
-   }
-  ],
-  "apple-ipad-12-9-pro-wi-fi-plus-4g-m2-mp1x3rk": [
-   {
-    "id": "apple-ipad-12-9-pro-wi-fi-plus-4g-m2-mp1x3rk",
-    "shop": "ucom",
-    "title": "iPad 12.9 Pro Wi-Fi + 4G M2 (2022) MP1X3RK",
-    "price": 48,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/ipad-pro-wi-fi-4g-12-9.html",
     "seeded": true
    }
   ],
