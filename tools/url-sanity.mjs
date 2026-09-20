@@ -181,6 +181,24 @@ if (process.argv.includes('--fix')) {
       for (const k of ks) for (const u of idx.get(k) || []) hits.add(u);
       if (!hits.size) { nohit++; continue; }
       let cand = [...hits];
+      // If the shop's own catalogue offers the url this row already carries, the row is right.
+      // The longest-code test above only asks whether the SLUG spells the code out, and eldorado
+      // often does not - /beats-studio-buds-true-wireless-noise-cancelling-earbuds-black is the
+      // black Studio Buds, spelled without a single code. Three rows were being reported as
+      // unsettled when the answer was the link they already had.
+      if (cand.some(u => tidy(u) === tidy(f[4]))) continue;
+      // Colour decides before anything is scored. The same phone in three colours is three urls,
+      // and eldorado does not spell the model code into all of them - the Magic8 Pro's gold slug
+      // leaves out 5109BQJL while the black and cyan ones keep it, so scoring handed the code's
+      // three points to the two wrong colours and produced a dead three-way tie. If the row names
+      // a colour and exactly one candidate names the same one, that IS the answer.
+      if (cand.length > 1) {
+        const want = colourOf(f[1]);
+        if (want) {
+          const m = cand.filter(u => colourOf(u.split('/').pop()) === want);
+          if (m.length === 1) cand = m;
+        }
+      }
       if (cand.length > 1) {
         // Several urls carry the same code because the shop lists the same model six times, once
         // per colour, and because a code is often shared across a family: L43MB-AURU and
@@ -197,6 +215,11 @@ if (process.argv.includes('--fix')) {
         for (const c of ['eu', 'ru']) if (new RegExp('\\b' + c + '\\b').test(low)) want.push([c, 2]);
         const mine = colourOf(f[1]);
         if (mine) want.push([mine, 2]);
+        // ...and any other Latin word the title carries, worth one. A fixed colour list can only
+        // know the colours it was told about, and shops keep inventing them: "Sky Cyan" and
+        // "Sunrise Gold" are not in it, and both Magic8 Pro rows sat on an X9d's page because of
+        // that. A code still outranks a word three to one, so this only ever breaks ties.
+        for (const w of new Set(low.match(/[a-z]{3,}/g) || [])) want.push([w, 1]);
         const score = u => want.reduce((n, [w, k]) => n + (tidy(u).includes(w) ? k : 0), 0);
         const ranked = cand.map(u => [u, score(u)]).sort((a, b) => b[1] - a[1]);
         if (ranked.length > 1 && ranked[0][1] > ranked[1][1]) cand = [ranked[0][0]];
