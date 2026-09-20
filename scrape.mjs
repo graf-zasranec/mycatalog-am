@@ -1813,7 +1813,15 @@ try {
     // which this very loop had just pushed. Each hand row names its own real product page, so
     // the url is what tells two same-null-colour rows apart when colour itself cannot.
     if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage
-                     && !!o.esim === !!r.esim && (o.color || null) === (r.color || null)
+                     && !!o.esim === !!r.esim
+                     // A hand row with no colour in it is not a DIFFERENT colour, it is an
+                     // unspecified one - and against a crawled row of the same build at the same
+                     // price it says nothing the crawl has not already said today. 73 offers sat
+                     // on the site twice for exactly this reason: pixel's iPhone 17 Pro 256GB at
+                     // 474,000 read off the shop this morning, and beside it the same shop, the
+                     // same capacity, the same 474,000, saying "not checked".
+                     && ((o.color || null) === (r.color || null)
+                         || (!r.color && !o.seeded && o.price === +r.price))
                      && (o.ram ?? null) === (r.ram ? +r.ram : null)
                      // ...but only between two HAND rows. A crawled row is the shop's own page
                      // read today, and it covers this configuration whatever url somebody once

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T18:12:43.426Z",
+ "generated": "2026-09-20T18:14:02.468Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -121,15 +121,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro",
-    "price": 474000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/iphone-17-pro",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1565,15 +1556,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro Max",
-    "price": 514000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -4358,15 +4340,6 @@
    },
    {
     "id": "apple-iphone-air",
-    "shop": "pixel",
-    "title": "iPhone Air",
-    "price": 384000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/iphone-air",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-air",
     "shop": "yerevanmobile",
     "title": "Apple iPhone Air",
     "price": 395000,
@@ -4719,17 +4692,6 @@
     "inStock": true,
     "color": "Space Black",
     "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-air",
-    "shop": "ucom",
-    "title": "Apple iPhone Air 256GB",
-    "price": 411900,
-    "storage": 256,
-    "url": "https://shop.ucom.am/en/iphone-air.html",
-    "seeded": true,
-    "esim": false,
     "seen": "2026-09-20"
    },
    {
@@ -7432,36 +7394,6 @@
    {
     "id": "apple-airpods-max-2",
     "shop": "ibolit",
-    "title": "Apple AirPods Max  Green",
-    "price": 190000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-airpods-max-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "shop": "ibolit",
-    "title": "Apple AirPods Max  Red",
-    "price": 190000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-airpods-max-red/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "shop": "ibolit",
-    "title": "Apple AirPods Max  Silver",
-    "price": 190000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-airpods-max-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "shop": "ibolit",
     "title": "Apple AirPods Max  Sky Blue",
     "price": 190000,
     "storage": null,
@@ -8147,16 +8079,6 @@
    },
    {
     "id": "apple-airpods-4",
-    "shop": "ucom",
-    "title": "AirPods 4",
-    "price": 54900,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/airpods-4.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-4",
     "price": 56900,
     "title": "Apple AirPods 4 (MXP63ZE/A)",
     "url": "https://vlv.am/en/Product/35185",
@@ -8287,16 +8209,6 @@
     "color": "White",
     "inStock": true,
     "shop": "ucom",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-4-anc",
-    "shop": "ucom",
-    "title": "AirPods 4 with Active Noise Cancellation",
-    "price": 79900,
-    "storage": null,
-    "url": "https://shop.ucom.am/en/airpods-4-with-active-noise-cancellation.html",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -12450,16 +12362,6 @@
    },
    {
     "id": "honor-600",
-    "shop": "telecom",
-    "title": "Honor 600 | 256 GB",
-    "price": 199900,
-    "storage": 256,
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/honor-600-8-256gb-black/2689/",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "honor-600",
     "price": 209900,
     "storage": 256,
     "title": "Honor 600",
@@ -12537,16 +12439,6 @@
     "color": null,
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-600",
-    "shop": "telecom",
-    "title": "Honor 600 | 512 GB",
-    "price": 229900,
-    "storage": 512,
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/honor-600-8-512gb-black/2691/",
-    "seeded": true,
-    "esim": false
    }
   ],
   "honor-600-pro": [
@@ -12602,16 +12494,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20",
-    "esim": false
-   },
-   {
-    "id": "honor-600-pro",
-    "shop": "telecom",
-    "title": "Honor 600 Pro | 512 GB",
-    "price": 329900,
-    "storage": 512,
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/honor-600pro-12-512gb-black/2699/",
-    "seeded": true,
     "esim": false
    },
    {
@@ -14598,16 +14480,6 @@
    },
    {
     "id": "xiaomi-redmi-note-17-5g",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Xiaomi Redmi Note 17 5G 6/128GB Black EU (26081RA18G)",
-    "price": 97900,
-    "storage": 128,
-    "url": "https://eldorado.am/en/tablet-redmi-pad-2-4gb-128gb-ru-25040rp0ag-lavender-purple",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "xiaomi-redmi-note-17-5g",
     "shop": "zigzag",
     "title": "Xiaomi Redmi Note 17 5G 6GB/128GB Black",
     "price": 97900,
@@ -15646,39 +15518,6 @@
     "inStock": true,
     "color": null,
     "shop": "vlv",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-17",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Xiaomi Redmi 17 8/256GB Deep Blue RU (2606FRN72Y)",
-    "price": 114900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/xiaomi-redmi-17-8-256gb-deep-blue-ru-2606frn72y",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-17",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Xiaomi Redmi 17 8/256GB Black RU (2606FRN72Y)",
-    "price": 114900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/xiaomi-redmi-17-8-256gb-black-ru-2606frn72y",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-17",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Xiaomi Redmi 17 8/256GB Oak Green RU (2606FRN72Y)",
-    "price": 114900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/xiaomi-redmi-17-8-256gb-oak-green-ru-2606frn72y",
-    "seeded": true,
-    "esim": false,
     "seen": "2026-09-20"
    },
    {
@@ -17507,15 +17346,6 @@
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A27",
-    "price": 109000,
-    "storage": 128,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a27",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-a27",
@@ -27278,16 +27108,6 @@
    },
    {
     "id": "apple-ipad-air-13-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 13 256 GB Wi-Fi 2024 Purple",
-    "price": 493000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/ipad-air-13-256-gb-wi-fi-2024-purple/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-13-wi-fi-2024",
     "price": 526000,
     "title": "iPad Air 13 256 GB Wi-Fi 2024 Space Gray",
     "url": "https://ibolit.mobi/product/ipad-air-13-256-gb-wi-fi-2024-space-gray/",
@@ -27326,36 +27146,6 @@
     "ram": null,
     "color": "Starlight",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-13-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 13 256 GB Wi-Fi 2024 Space Gray",
-    "price": 526000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/ipad-air-13-256-gb-wi-fi-2024-space-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-13-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 13 256GB Wi-Fi 2024 Blue",
-    "price": 526000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/ipad-air-13-256gb-wi-fi-2024-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-13-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 13 256GB Wi-Fi 2024 Starlight",
-    "price": 526000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/ipad-air-13-256gb-wi-fi-2024-starlight/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -27791,26 +27581,6 @@
    },
    {
     "id": "xiaomi-redmi-8-active-bhr08jtgl",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL",
-    "price": 8900,
-    "storage": null,
-    "url": "https://eldorado.am/en/redmi-buds-8-active-white-m2537e1-bhr08jugl",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-8-active-bhr08jtgl",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL",
-    "price": 8900,
-    "storage": null,
-    "url": "https://eldorado.am/en/redmi-buds-8-active-black-m2537e1-bhr08jtgl",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-8-active-bhr08jtgl",
     "shop": "viva",
     "title": "Xiaomi Redmi Buds 8 Active Black",
     "price": 10900,
@@ -28016,36 +27786,6 @@
     "ram": null,
     "color": "Ghost",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune",
-    "shop": "ibolit",
-    "title": "JBL Tune Buds Purple",
-    "price": 37900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-buds-purple/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune",
-    "shop": "ibolit",
-    "title": "JBL Tune Buds Ghost White",
-    "price": 37900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-buds-ghost-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune",
-    "shop": "ibolit",
-    "title": "JBL Tune Buds Ghost Black",
-    "price": 37900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-buds-ghost-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -28398,15 +28138,6 @@
     "color": "Black",
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-buds-4-pro",
-    "shop": "telecom",
-    "title": "Headphone Galaxy Buds4 Pro R640",
-    "price": 72900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/en/audio/galaxy-buds4-pro-r640-black/2663/",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-buds-4-pro",
@@ -28922,16 +28653,6 @@
    },
    {
     "id": "apple-airpods-pro-2",
-    "shop": "ibolit",
-    "title": "Apple AirPods Pro 2  USB-C",
-    "price": 83900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-airpods-pro-2-usb-c/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-pro-2",
     "shop": "yerevanmobile",
     "title": "Apple AirPods Pro 2 (Type-C)",
     "price": 84000,
@@ -29014,15 +28735,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-3",
-    "shop": "pixel",
-    "title": "Samsung Galaxy Buds 3",
-    "price": 44000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/samsung-galaxy-buds-3",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-3",
@@ -29110,16 +28822,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-3",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Buds 3 Silver",
-    "price": 62000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-buds-3-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -29355,36 +29057,6 @@
    },
    {
     "id": "beats-fit-pro",
-    "shop": "eldorado",
-    "title": "Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ սպիտակ",
-    "price": 89900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-fit-pro-true-wireless-earbuds-a2577-a2576-a257-white",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-fit-pro",
-    "shop": "eldorado",
-    "title": "Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ սև",
-    "price": 89900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-fit-pro-true-wireless-earbuds-a2577-a2576-a257-black",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-fit-pro",
-    "shop": "eldorado",
-    "title": "Beats Fit Pro (A2577 A2576 A257) անլար ականջակալ մոխրագույն",
-    "price": 89900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-fit-pro-true-wireless-earbuds-a2577-a2576-a257-grey",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-fit-pro",
     "price": 111900,
     "storage": null,
     "title": "Beats Fit Pro True Wireless Earbuds MK2H3 (Purple)",
@@ -29447,36 +29119,6 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-studio",
-    "shop": "eldorado",
-    "title": "Beats Studio Buds Earbuds (A2512 A25 13 A2514) անլար ակաջակալ սպիտակ",
-    "price": 67900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-studio-buds-earbuds-2512-a25-13-a2514-white",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-studio",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Beats Studio Buds Earbuds (A2512 A25 13 A2514) սև",
-    "price": 67900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-studio-buds-true-wireless-noise-cancelling-earbuds-black",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-studio",
-    "shop": "eldorado",
-    "title": "Beats Studio Buds Earbuds (A2512 A25 13 A2514) անլար ականջակալ կարմիր",
-    "price": 67900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-studio-buds-earbuds-a2512-a25-13-a2514-red",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -29630,16 +29272,6 @@
     "inStock": true,
     "color": "Yellow",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-flex-all-day",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Beats Flex All-Day (A2295)",
-    "price": 31900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-flex-all-day-wireless-earphones-yuzu-yellow-model-a2295",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -30254,17 +29886,6 @@
     "shop": "ibolit",
     "seen": "2026-09-20",
     "esim": true
-   },
-   {
-    "id": "apple-iphone-18-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 18 Pro Max 256GB",
-    "price": 899000,
-    "storage": 256,
-    "url": "https://redstore.am/en/product/iphone-18-pro-max-256gb-black-esim",
-    "seeded": true,
-    "esim": true,
-    "seen": "2026-09-20"
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31230,17 +30851,6 @@
    },
    {
     "id": "apple-iphone-18-pro",
-    "shop": "redstore",
-    "title": "iPhone 18 Pro 256GB",
-    "price": 799000,
-    "storage": 256,
-    "url": "https://redstore.am/en/product/iphone-18-pro-256gb-burgundy-esim",
-    "seeded": true,
-    "esim": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-18-pro",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-18-pro",
     "image": null,
     "storage": 256,
@@ -31975,39 +31585,6 @@
    },
    {
     "id": "honor-x7e",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Honor X7e 6/256GB Midnight Black (LAB-LX1)",
-    "price": 89900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/honor-x7e-6-256gb-midnight-black-lab-lx1",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x7e",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Honor X7e 6/256GB Sunrise Orange (LAB-LX1)",
-    "price": 89900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/honor-x7e-6-256gb-sunrise-orange-lab-lx1",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x7e",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն Honor X7e 6/256GB Light Blue (LAB-LX1)",
-    "price": 89900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/honor-x7e-6-256gb-light-blue-lab-lx1",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x7e",
     "shop": "zigzag",
     "title": "Honor X7e 6GB/256GB Light Blue",
     "price": 89900,
@@ -32573,15 +32150,6 @@
    },
    {
     "id": "nothing-phone-3",
-    "shop": "pixel",
-    "title": "Nothing Phone 3",
-    "price": 399000,
-    "storage": 256,
-    "url": "https://www.pixel.am/am/product/nothng-phone-3",
-    "seeded": true
-   },
-   {
-    "id": "nothing-phone-3",
     "price": 465000,
     "title": "Nothing Phone (3) 16/512 Black /6974434226173",
     "url": "https://www.zigzag.am/en/nothing-phone-3-16-512-black-6974434226173.html",
@@ -32652,15 +32220,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a16",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A16",
-    "price": 56900,
-    "storage": 128,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a16",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-a16",
@@ -34340,26 +33899,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a9plus-x216",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X216 Silver",
-    "price": 94000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x216-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9plus-x216",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X216 Graphite",
-    "price": 94000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x216-graphite/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9plus-x216",
     "price": 109000,
     "title": "Samsung Galaxy Tab A9 128GB X216 Silver",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x216-silver/",
@@ -34370,16 +33909,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9plus-x216",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 128GB X216 Silver",
-    "price": 109000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x216-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -34437,26 +33966,6 @@
    {
     "id": "samsung-galaxy-tab-a9plus-x210",
     "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X210 Silver",
-    "price": 75000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x210-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9plus-x210",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X210 Graphite",
-    "price": 75000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x210-graphite/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9plus-x210",
-    "shop": "ibolit",
     "title": "Samsung Galaxy Tab A9+ 64GB X210 Navy Blue",
     "price": 76000,
     "storage": 64,
@@ -34495,16 +34004,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X115 Silver",
-    "price": 63000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x115",
     "price": 65000,
     "title": "Samsung Galaxy Tab A9 64GB X115 Graphite",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-graphite/",
@@ -34533,26 +34032,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a9-x115",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X115 Navy Blue",
-    "price": 65000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-navy-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x115",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X115 Graphite",
-    "price": 65000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x115-graphite/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x115",
     "price": 74000,
     "title": "Samsung Galaxy Tab A9 128GB X115 Silver",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-silver/",
@@ -34563,16 +34042,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x115",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 128GB X115 Silver",
-    "price": 74000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -34601,26 +34070,6 @@
     "ram": null,
     "color": "Navy Blue",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x115",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 128GB X115 Navy Blue",
-    "price": 94000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-navy-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x115",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 128GB X115 Graphite",
-    "price": 94000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-128gb-x115-graphite/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -34677,26 +34126,6 @@
    },
    {
     "id": "samsung-galaxy-tab-a9-x110",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X110 Silver",
-    "price": 55000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x110",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X110 Navy Blue",
-    "price": 55000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-navy-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x110",
     "price": 56000,
     "title": "Samsung Galaxy Tab A9 64GB X110 Graphite",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-graphite/",
@@ -34707,16 +34136,6 @@
     "ram": null,
     "color": "Graphite",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a9-x110",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A9 64GB X110 Graphite",
-    "price": 56000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a9-64gb-x110-graphite/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -36897,15 +36316,6 @@
    },
    {
     "id": "jbl-partybox-120",
-    "shop": "pixel",
-    "title": "JBL Partybox 120 (Սև)",
-    "price": 159000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/jbl-partybox-120-black",
-    "seeded": true
-   },
-   {
-    "id": "jbl-partybox-120",
     "price": 203000,
     "title": "JBL PartyBox 120",
     "url": "https://ibolit.mobi/product/jbl-partybox-120/",
@@ -36946,15 +36356,6 @@
     "color": "Black",
     "shop": "redstore",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-partybox-320",
-    "shop": "pixel",
-    "title": "JBL Partybox 320 (Սև)",
-    "price": 205000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/jbl-partybox-320-black",
-    "seeded": true
    },
    {
     "id": "jbl-partybox-320",
@@ -37011,16 +36412,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-partybox-ultimate",
-    "shop": "ibolit",
-    "title": "JBL PartyBox Ultimate",
-    "price": 559900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-partybox-ultimate/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -37160,15 +36551,6 @@
    },
    {
     "id": "marshall-emberton-iii",
-    "shop": "pixel",
-    "title": "Marshall Emberton 3 (Կաթնագույն)",
-    "price": 79000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/marshall-emberton-3-black",
-    "seeded": true
-   },
-   {
-    "id": "marshall-emberton-iii",
     "price": 95000,
     "title": "Marshall Emberton III",
     "url": "https://istyle.am/en/product/Marshall%20Emberton%20III",
@@ -37260,15 +36642,6 @@
     "color": "Cream",
     "shop": "redstore",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "marshall-willen-ii",
-    "shop": "pixel",
-    "title": "Marshall Willen II (Կաթնագույն)",
-    "price": 59000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/marshall-willen-2-black",
-    "seeded": true
    },
    {
     "id": "marshall-willen-ii",
@@ -37950,15 +37323,6 @@
    },
    {
     "id": "jbl-xtreme-4",
-    "shop": "pixel",
-    "title": "JBL Xtreme 4 (Սև)",
-    "price": 137000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/jbl-xtreme-4-blue",
-    "seeded": true
-   },
-   {
-    "id": "jbl-xtreme-4",
     "price": 142000,
     "title": "JBL Xtreme 4 Black",
     "url": "https://ibolit.mobi/product/jbl-xtreme-4-black/",
@@ -37983,26 +37347,6 @@
     "ram": null,
     "color": "Blue",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-xtreme-4",
-    "shop": "ibolit",
-    "title": "JBL Xtreme 4 Blue",
-    "price": 142000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-xtreme-4-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-xtreme-4",
-    "shop": "ibolit",
-    "title": "JBL Xtreme 4 Black",
-    "price": 142000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-xtreme-4-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -38291,66 +37635,6 @@
    },
    {
     "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 White",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Teal",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4-teal/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Red",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4-red/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Pink",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4-pink/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Orange",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4-orange/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-clip-4",
-    "shop": "ibolit",
-    "title": "JBL Clip 4 Green",
-    "price": 21900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-clip-4-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-clip-4",
     "price": 22050,
     "title": "Portable speaker JBL Clip 4 White",
     "url": "https://eldorado.am/en/jbl-clip-4-white",
@@ -38435,26 +37719,6 @@
     "ram": null,
     "color": "Cream",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "marshall-willen",
-    "shop": "ibolit",
-    "title": "Marshall Willen Cream",
-    "price": 54000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/marshall-willen-cream/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "marshall-willen",
-    "shop": "ibolit",
-    "title": "Marshall Willen Black",
-    "price": 54000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/marshall-willen-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -38752,16 +38016,6 @@
    },
    {
     "id": "jbl-flip-6",
-    "shop": "ibolit",
-    "title": "JBL Flip 6 White",
-    "price": 53900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-flip-6-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-flip-6",
     "price": 55900,
     "title": "JBL FLIP 6 RED //",
     "url": "https://vlv.am/en/Product/25604",
@@ -38827,46 +38081,6 @@
     "ram": null,
     "color": "Teal",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-flip-6",
-    "shop": "ibolit",
-    "title": "JBL Flip 6 Teal",
-    "price": 59000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-flip-6-teal/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-flip-6",
-    "shop": "ibolit",
-    "title": "JBL Flip 6 Pink",
-    "price": 59000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-flip-6-pink/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-flip-6",
-    "shop": "ibolit",
-    "title": "JBL Flip 6 Green",
-    "price": 59000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-flip-6-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-flip-6",
-    "shop": "ibolit",
-    "title": "JBL Flip 6 Gray",
-    "price": 59000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-flip-6-gray/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -39148,46 +38362,6 @@
    },
    {
     "id": "jbl-go-3",
-    "shop": "ibolit",
-    "title": "JBL Go 3 White",
-    "price": 16000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-go-3-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-go-3",
-    "shop": "ibolit",
-    "title": "JBL Go 3 Teal",
-    "price": 16000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-go-3-teal/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-go-3",
-    "shop": "ibolit",
-    "title": "JBL Go 3 Red",
-    "price": 16000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-go-3-red/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-go-3",
-    "shop": "ibolit",
-    "title": "JBL Go 3 Blue",
-    "price": 16000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-go-3-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-go-3",
     "price": 18900,
     "storage": null,
     "title": "JBL GO 3 BLK",
@@ -39337,16 +38511,6 @@
    },
    {
     "id": "marshall-emberton",
-    "shop": "ibolit",
-    "title": "Marshall Emberton Green",
-    "price": 77000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/marshall-emberton-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "marshall-emberton",
     "shop": "telecom",
     "title": "Marshall Emberton II",
     "price": 79900,
@@ -39437,16 +38601,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-boombox-3",
-    "shop": "ibolit",
-    "title": "JBL Boombox 3 Black",
-    "price": 187000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-boombox-3-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -39564,15 +38718,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-ps5-pulse-explore-wireless",
-    "shop": "pixel",
-    "title": "Sony PS5 PULSE Explore Wireless Earbuds (Սպիտակ)",
-    "price": 99000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/ps5-pulse-explore-earbuds-white",
-    "seeded": true
    }
   ],
   "sony-ps5-pulse-elite-wireless": [
@@ -39588,15 +38733,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-ps5-pulse-elite-wireless",
-    "shop": "pixel",
-    "title": "Sony PS5 PULSE Elite Wireless Headset (Սպիտակ)",
-    "price": 69000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/ps5-pulse-elite-white",
-    "seeded": true
    },
    {
     "id": "sony-ps5-pulse-elite-wireless",
@@ -39723,15 +38859,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-ps5-hd-camera",
-    "shop": "pixel",
-    "title": "Sony PS5 HD Camera (Սպիտակ)",
-    "price": 28000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/sony-ps5-camera-white",
-    "seeded": true
    }
   ],
   "sony-ps5-pro": [
@@ -39959,15 +39086,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-hd18-vinca-blue-topaz",
-    "shop": "pixel",
-    "title": "Dyson HD18 Supersonic™ Vinca Blue/Topaz",
-    "price": 233000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-hd18-supersonic-vinca-blue-topaz",
-    "seeded": true
    }
   ],
   "dyson-multi-complete-long-hs05": [
@@ -39983,15 +39101,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-multi-complete-long-hs05",
-    "shop": "pixel",
-    "title": "Dyson HS05 Airwrap™ multi-styler Complete Long Fuchisa/Nickel",
-    "price": 245000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-airwrap-multi-styler-and-dryer-straight-wavy-long-hs05-nickel-cooper",
-    "seeded": true
    },
    {
     "id": "dyson-multi-complete-long-hs05",
@@ -40021,15 +39130,6 @@
    },
    {
     "id": "dyson-multi-complete-long-hs05",
-    "shop": "pixel",
-    "title": "Dyson HS05 Airwrap™ Multi-styler Complete Long Prussian Blue/Topaz",
-    "price": 249000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-airwrap-multi-styler-and-dryer-straight-wavy-long-hs05-prussian-blue-blush-pink",
-    "seeded": true
-   },
-   {
-    "id": "dyson-multi-complete-long-hs05",
     "price": 256000,
     "title": "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush",
     "url": "https://ibolit.mobi/product/dyson-airwrap-multi-styler-complete-long-hs05-blue-blush/",
@@ -40040,16 +39140,6 @@
     "ram": null,
     "color": "Blue",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-multi-complete-long-hs05",
-    "shop": "ibolit",
-    "title": "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush",
-    "price": 256000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/dyson-airwrap-multi-styler-complete-long-hs05-blue-blush/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -40077,16 +39167,6 @@
     "ram": null,
     "color": "Gold",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-multi-complete-long-hs05",
-    "shop": "ibolit",
-    "title": "Dyson Airwrap™ multi-styler Complete Long HS05 Onyx Gold",
-    "price": 272000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/dyson-airwrap-multi-styler-complete-long-hs05-onyx-gold/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -40241,15 +39321,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-hs08-velvet",
-    "shop": "pixel",
-    "title": "Dyson HS08 Airwrap™ ID Multi-Styler Ceramic Patina/Topaz",
-    "price": 265000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-airwrap-straight-wavy-hs08-jceramic-patina",
-    "seeded": true
    },
    {
     "id": "dyson-hs08-velvet",
@@ -40522,33 +39593,6 @@
    },
    {
     "id": "dyson-ht01-airstrait-straightener-plum",
-    "shop": "pixel",
-    "title": "Dyson HT01 Airstrait™ Straightener Jasper Plum",
-    "price": 189000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-airstrait-straightener-ht01-nickel-copper",
-    "seeded": true
-   },
-   {
-    "id": "dyson-ht01-airstrait-straightener-plum",
-    "shop": "pixel",
-    "title": "Dyson HT01 Airstrait™ Straightener Strawberry Bronze/Blush Pink",
-    "price": 189000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-airstrait-straightener-ht01-strawberry-bronze-blush-pink",
-    "seeded": true
-   },
-   {
-    "id": "dyson-ht01-airstrait-straightener-plum",
-    "shop": "pixel",
-    "title": "Dyson HT01 Airstrait™ Straightener Prussian Blue/Rich Copper",
-    "price": 189000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-airstrait-straightener-ht01-prussian-blue-rich-copper",
-    "seeded": true
-   },
-   {
-    "id": "dyson-ht01-airstrait-straightener-plum",
     "price": 189900,
     "storage": null,
     "title": "Buy Dyson HT01 Airstrait Straightener Jasper Plum - AllSell",
@@ -40627,15 +39671,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-hd16-nural-velvet",
-    "shop": "pixel",
-    "title": "Dyson HD16 Supersonic™ Nural Red Velvet",
-    "price": 279000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-hd16-ceramic-patina-topaz",
-    "seeded": true
    }
   ],
   "dyson-hs08-id-multi-velvet-gold": [
@@ -40666,15 +39701,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-er-hd07",
-    "shop": "pixel",
-    "title": "Dyson Supersonic Hair Dryer HD07 (Iron Fuchsia)",
-    "price": 192000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-supersonic-hair-dryer-hd07-iron-fuchsia",
-    "seeded": true
    }
   ],
   "dyson-nural-hd16-strawberry": [
@@ -40764,16 +39790,6 @@
     "color": "Strawberry",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-nural-hd16-strawberry",
-    "shop": "ibolit",
-    "title": "Dyson Supersonic™ Nural HD16 Strawberry Bronze / Blush Pink",
-    "price": 246000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/dyson-supersonic-nural-hd16-strawberry-bronze-blush-pink/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "dyson-hd16-vinca-blue-topaz": [
@@ -40789,15 +39805,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-hd16-vinca-blue-topaz",
-    "shop": "pixel",
-    "title": "Dyson HD16 Supersonic™ Vinca Blue/Topaz",
-    "price": 215000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-hd16-ceramic-patina-topaz",
-    "seeded": true
    }
   ],
   "dyson-er-hd15": [
@@ -40829,15 +39836,6 @@
    },
    {
     "id": "dyson-er-hd15",
-    "shop": "pixel",
-    "title": "Dyson HD15 Supersonic™ Hair Dryer Black/Onyx Gold",
-    "price": 185000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-supersonic-origin-hair-dryer-black-onyx-gold",
-    "seeded": true
-   },
-   {
-    "id": "dyson-er-hd15",
     "price": 203000,
     "title": "Dyson Supersonic™ Hair Dryer HD15 Nickel / Copper",
     "url": "https://ibolit.mobi/product/dyson-supersonic-hair-dryer-hd15-nickel-copper/",
@@ -40852,16 +39850,6 @@
    },
    {
     "id": "dyson-er-hd15",
-    "shop": "ibolit",
-    "title": "Dyson Supersonic™ Hair Dryer HD15 Nickel / Copper",
-    "price": 203000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/dyson-supersonic-hair-dryer-hd15-nickel-copper/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-er-hd15",
     "price": 205000,
     "storage": null,
     "title": "Dyson HD15 Supersonic™ Hair Dryer Nickel/Copper",
@@ -40872,15 +39860,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-er-hd15",
-    "shop": "pixel",
-    "title": "Dyson HD15 Supersonic™ Hair Dryer Nickel/Copper",
-    "price": 205000,
-    "storage": null,
-    "url": "https://www.pixel.am/am/product/dyson-supersonic-origin-hair-dryer-hd15-nickel-copper",
-    "seeded": true
    }
   ],
   "dji-mic-3": [
@@ -41903,16 +40882,6 @@
     "inStock": true,
     "shop": "ucom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "yandex-station-mini",
-    "shop": "ucom",
-    "title": "Yandex Station Mini",
-    "price": 51900,
-    "storage": null,
-    "url": "https://shop.ucom.am/am/yandex-smart-speaker-station-mini.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "honor-400-lite": [
@@ -42099,16 +41068,6 @@
    },
    {
     "id": "google-pixel-10-pro-xl",
-    "shop": "telecom",
-    "title": "Google Pixel 10 Pro XL | 256 GB",
-    "price": 475900,
-    "storage": 256,
-    "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/google-pixel-10-pro-xl-16-256gb-obsidian/2724/",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "google-pixel-10-pro-xl",
     "price": 569000,
     "title": "Google Pixel 10 Pro XL 16/512GB Obsidian",
     "url": "https://ibolit.mobi/product/google-pixel-10-pro-xl-16-512gb-obsidian/",
@@ -42173,16 +41132,6 @@
     "color": "Indigo",
     "shop": "telecom",
     "seen": "2026-09-20",
-    "esim": false
-   },
-   {
-    "id": "google-pixel-10",
-    "shop": "telecom",
-    "title": "Google Pixel 10",
-    "price": 399900,
-    "storage": 256,
-    "url": "https://www.telecomarmenia.am/eshop/en/smartphones/google-pixel10-12-256gb-indigo/2682/",
-    "seeded": true,
     "esim": false
    }
   ],
@@ -42341,15 +41290,6 @@
     "color": "Black",
     "shop": "telecom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "whoop-mg-life",
-    "shop": "telecom",
-    "title": "Smart Fitness Tracker Whoop MG life",
-    "price": 188900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/en/devices/whoop-mg-life-black/2728/",
-    "seeded": true
    }
   ],
   "lenovo-ideapad-slim-3-15iru9": [
@@ -42379,15 +41319,6 @@
     "color": "Grey",
     "shop": "telecom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-ideapad-slim-3-15iru9",
-    "shop": "telecom",
-    "title": "Նոթբուք Lenovo IdeaPad Slim 3 15IRU9",
-    "price": 253900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-lenovo-ideapad-slim3-15iru9-grey/2713/",
-    "seeded": true
    }
   ],
   "lenovo-ideapad-slim-3-15iru10": [
@@ -42403,15 +41334,6 @@
     "color": "Grey",
     "shop": "telecom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-ideapad-slim-3-15iru10",
-    "shop": "telecom",
-    "title": "Նոթբուք Lenovo IdeaPad Slim 3 15IRU10",
-    "price": 221900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-lenovo-ideapad-slim3-15iru10-grey/2712/",
-    "seeded": true
    }
   ],
   "lenovo-ideapad-1-15iru7": [
@@ -42465,15 +41387,6 @@
     "color": "Light Silver",
     "shop": "telecom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "acer-aspire-lite-al15-36p-32xp",
-    "shop": "telecom",
-    "title": "Նոթբուք Acer Aspire Lite AL15-36P-32XP",
-    "price": 199900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-acer-aspire-lite-al1536p32xp-light-silver/2708/",
-    "seeded": true
    }
   ],
   "asus-vivobook-x1404va-v14-i38128": [
@@ -42489,15 +41402,6 @@
     "color": "Blue",
     "shop": "telecom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-vivobook-x1404va-v14-i38128",
-    "shop": "telecom",
-    "title": "Նոթբուք Asus Vivobook X1404VA-V14.I38128",
-    "price": 199900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-asus-vivobook-x1404va-quiet-blue/2707/",
-    "seeded": true
    }
   ],
   "hp-15-fd0055": [
@@ -42513,15 +41417,6 @@
     "color": "Natural Silver",
     "shop": "telecom",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "hp-15-fd0055",
-    "shop": "telecom",
-    "title": "Notebook HP 15-FD0055",
-    "price": 219900,
-    "storage": null,
-    "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-hp-15-fd0055-natural-silver/2704/",
-    "seeded": true
    }
   ],
   "apple-iphone-15-pro": [
@@ -42661,16 +41556,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-quietcomfort-45-acoustic",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Bose QuietComfort 45 Acoustic Black",
-    "price": 115900,
-    "storage": null,
-    "url": "https://eldorado.am/en/bose-quietcomfort-45-acoustic-black",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -43475,26 +42360,6 @@
     "ram": null,
     "color": "Cream",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "marshall-woburn-iii",
-    "shop": "ibolit",
-    "title": "Marshall Woburn III Cream",
-    "price": 189000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/marshall-woburn-iii-cream/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "marshall-woburn-iii",
-    "shop": "ibolit",
-    "title": "Marshall Woburn III Black",
-    "price": 189000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/marshall-woburn-iii-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -44426,16 +43291,6 @@
    },
    {
     "id": "sony-wh-ch520",
-    "shop": "eldorado",
-    "title": "Sony WH CH520L Blue Անլար ականջակալ",
-    "price": 17900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-wh-ch520l-blue",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-wh-ch520",
     "price": 19000,
     "title": "Sony WH-CH520 Pink",
     "url": "https://redstore.am/en/product/sony-wh-ch520-pink",
@@ -44887,16 +43742,6 @@
     "color": "Silver",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-wh-1000xm5",
-    "shop": "eldorado",
-    "title": "Sony WH-1000XM5 (YY2954) անլար ականջակալ արծաթագույն",
-    "price": 199900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-wireless-headphones-wh-1000xm5-silver-yy2954",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "sony-wh-1000xm6": [
@@ -45240,26 +44085,6 @@
     "ram": null,
     "color": "Blue",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-xtreme-3",
-    "shop": "ibolit",
-    "title": "JBL Xtreme 3 Blue",
-    "price": 99900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-xtreme-3-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-xtreme-3",
-    "shop": "ibolit",
-    "title": "JBL Xtreme 3 Black",
-    "price": 99900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-xtreme-3-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -46070,16 +44895,6 @@
    },
    {
     "id": "sony-wh-ch720n",
-    "shop": "eldorado",
-    "title": "Sony WH-CH720N White",
-    "price": 39900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-wh-ch720n-white",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-wh-ch720n",
     "price": 56900,
     "title": "Sony WH-CH720N/BCE",
     "url": "https://www.zigzag.am/am/sony-wh-ch720n-bce.html",
@@ -46419,16 +45234,6 @@
     "color": "Grey",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-loq-15irx10",
-    "shop": "eldorado",
-    "title": "Նոթբուք Lenovo LOQ 15IRX10 (83JE00RNRK) Luna Grey",
-    "price": 599900,
-    "storage": null,
-    "url": "https://eldorado.am/en/laptop-lenovo-loq-15irx10-83je00rnrk-luna-grey",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "tcl-43v6d": [
@@ -46553,16 +45358,6 @@
    },
    {
     "id": "honor-choice-infowear-2i-kch-wb01",
-    "shop": "eldorado",
-    "title": "Սմարթ ժամացույց HONOR CHOICE INFOWEAR Watch 2i KCH-WB01 (5504ACGN) Սպիտակ",
-    "price": 17910,
-    "storage": null,
-    "url": "https://eldorado.am/en/smart-watch-honor-choice-infowear-watch-2i-kch-wb01-5504acgn-white",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-choice-infowear-2i-kch-wb01",
     "price": 19900,
     "title": "Honor Choice Watch 2i Black KCH-WB01 /5504ACGM",
     "url": "https://www.zigzag.am/am/honor-choice-watch-2i-black-kch-wb01-5504acgm.html",
@@ -46583,26 +45378,6 @@
     "inStock": true,
     "color": "White",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-choice-infowear-2i-kch-wb01",
-    "shop": "zigzag",
-    "title": "Honor Choice Watch 2i White KCH-WB01 /5504ACGN",
-    "price": 19900,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/honor-choice-watch-2i-white-kch-wb01-5504acgn.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-choice-infowear-2i-kch-wb01",
-    "shop": "zigzag",
-    "title": "Honor Choice Watch 2i Black KCH-WB01 /5504ACGM",
-    "price": 19900,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/honor-choice-watch-2i-black-kch-wb01-5504acgm.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -46667,36 +45442,6 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-venu-4-45-mm",
-    "shop": "zigzag",
-    "title": "Garmin Venu 4 - 45 mm Black",
-    "price": 239000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-venu-4-45-mm-black.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-venu-4-45-mm",
-    "shop": "zigzag",
-    "title": "Garmin Venu 4 - 41 mm Lunar Gold",
-    "price": 239000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-venu-4-41-mm-lunar-gold.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-venu-4-45-mm",
-    "shop": "zigzag",
-    "title": "Garmin Venu 4 - 41 mm Black",
-    "price": 239000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-venu-4-41-mm-black.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -46868,16 +45613,6 @@
     "color": "Yellow",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-mini-mj2e3ll-a",
-    "shop": "zigzag",
-    "title": "Apple HomePod Mini Yellow /MJ2E3LL/A*",
-    "price": 72900,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/apple-homepod-mini-yellow-mj2e3ll-a.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3": [
@@ -46906,16 +45641,6 @@
     "color": "Grey",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a",
-    "shop": "zigzag",
-    "title": "Apple iPad Pro 12.9 M2 WiFi 128GB S.Grey/MNXP3RK/A",
-    "price": 505400,
-    "storage": 128,
-    "url": "https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-wifi-128gb-s-grey-mnxp3rk-a.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-12-9-m2-wifi-silver-mnxq3rk-a": [
@@ -46929,16 +45654,6 @@
     "inStock": true,
     "color": "Silver",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-12-9-m2-wifi-silver-mnxq3rk-a",
-    "shop": "zigzag",
-    "title": "Apple iPad Pro 12.9 M2 WiFi 128GB Silver/MNXQ3RK/A",
-    "price": 505400,
-    "storage": 128,
-    "url": "https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-wifi-128gb-silver-mnxq3rk-a.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -46979,26 +45694,6 @@
     "inStock": true,
     "color": "Silver",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
-    "shop": "zigzag",
-    "title": "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO SILVER W11 /K5504VA-PB99-SL*",
-    "price": 643600,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-silver-w11-k5504va-pb99-sl.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
-    "shop": "zigzag",
-    "title": "Asus Vivobook S 15.6\" i9-13900H 16/1 CAMO GREEN W11 /K5504VA-PB99-GR*",
-    "price": 643600,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47051,16 +45746,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-fenix-7-pro-sapphire-solar",
-    "shop": "zigzag",
-    "title": "Garmin Fenix 7 Pro Sapphire Solar Black",
-    "price": 299000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-fenix-7-pro-sapphire-solar-black.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47246,16 +45931,6 @@
     "color": "Black",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-forerunner-170",
-    "shop": "zigzag",
-    "title": "Garmin Forerunner 170 Black",
-    "price": 129000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-forerunner-170-black.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-forerunner-170-music": [
@@ -47269,16 +45944,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-forerunner-170-music",
-    "shop": "zigzag",
-    "title": "Garmin Forerunner 170 Music Black",
-    "price": 159000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-forerunner-170-music-black.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47322,16 +45987,6 @@
     "color": "Black",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-forerunner-570",
-    "shop": "zigzag",
-    "title": "Garmin Forerunner 570 Black",
-    "price": 215100,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-forerunner-570-black.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-forerunner-70": [
@@ -47345,16 +46000,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-forerunner-70",
-    "shop": "zigzag",
-    "title": "Garmin Forerunner 70 Black",
-    "price": 109000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-forerunner-70-black.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47412,16 +46057,6 @@
     "color": "Black",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-forerunner-970",
-    "shop": "zigzag",
-    "title": "Garmin Forerunner® 970 Black",
-    "price": 296100,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-forerunnerr-970-black.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-instinct-2x-solar": [
@@ -47435,16 +46070,6 @@
     "inStock": true,
     "color": "Graphite",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-instinct-2x-solar",
-    "shop": "zigzag",
-    "title": "Garmin Instinct 2X Solar Graphite",
-    "price": 169150,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-instinct-2x-solar-graphite.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47502,16 +46127,6 @@
     "color": "Black",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-venu-3-leather",
-    "shop": "zigzag",
-    "title": "Garmin Venu 3 Black leather",
-    "price": 179100,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-venu-3-black-leather.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-venu-3s-french": [
@@ -47526,16 +46141,6 @@
     "color": "Grey",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-venu-3s-french",
-    "shop": "zigzag",
-    "title": "Garmin Venu 3s French grey",
-    "price": 189000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-venu-3s-french-grey.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-venu-x1-gps": [
@@ -47549,16 +46154,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-venu-x1-gps",
-    "shop": "zigzag",
-    "title": "Garmin Venu X1  GPS  Black",
-    "price": 269100,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-venu-x1-gps-black.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47600,26 +46195,6 @@
     "color": "Ivory",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-vivoactive-5",
-    "shop": "zigzag",
-    "title": "Garmin Vivoactive 5 Ivory",
-    "price": 121500,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-vivoactive-5-ivory.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-vivoactive-5",
-    "shop": "zigzag",
-    "title": "Garmin vivoactive 5 Black",
-    "price": 121500,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-vivoactive-5-black.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-vivoactive-6": [
@@ -47646,26 +46221,6 @@
     "color": "Gold",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-vivoactive-6",
-    "shop": "zigzag",
-    "title": "Garmin vivoactive® 6 Lunar Gold",
-    "price": 144000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-vivoactiver-6-lunar-gold.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-vivoactive-6",
-    "shop": "zigzag",
-    "title": "Garmin vivoactive® 6 Black",
-    "price": 144000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/garmin-vivoactiver-6-black.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "google-pixel-10-pro-fold-gu0np": [
@@ -47681,17 +46236,6 @@
     "shop": "zigzag",
     "seen": "2026-09-20",
     "esim": false
-   },
-   {
-    "id": "google-pixel-10-pro-fold-gu0np",
-    "shop": "zigzag",
-    "title": "Google Pixel 10 Pro Fold 512GB Moonstone /GU0NP",
-    "price": 919000,
-    "storage": 512,
-    "url": "https://www.zigzag.am/am/google-pixel-10-pro-fold-512gb-moonstone-gu0np.html",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    }
   ],
   "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg": [
@@ -47709,16 +46253,6 @@
    },
    {
     "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
-    "shop": "zigzag",
-    "title": "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 White W11H /5301AJJG",
-    "price": 503900,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-5-125h-24-1-white-w11h-5301ajjg.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
     "price": 521900,
     "title": "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 Purple W11H /5301AJJE",
     "url": "https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-5-125h-24-1-purple-w11h-5301ajje.html",
@@ -47727,16 +46261,6 @@
     "inStock": true,
     "color": "Purple",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
-    "shop": "zigzag",
-    "title": "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 Purple W11H /5301AJJE",
-    "price": 521900,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-5-125h-24-1-purple-w11h-5301ajje.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47751,16 +46275,6 @@
     "inStock": true,
     "color": "Green",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-5-stl-b19-5502abgj",
-    "shop": "zigzag",
-    "title": "Honor Watch 5 Green STL-B19 /5502ABGJ",
-    "price": 64900,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/honor-watch-5-green-stl-b19-5502abgj.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -47804,16 +46318,6 @@
     "color": "Dark",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "nothing-cmf-3-pro-6974434225312",
-    "shop": "zigzag",
-    "title": "Nothing CMF Watch 3 Pro Dark Grey /6974434225312",
-    "price": 55000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/nothing-cmf-watch-3-pro-dark-grey-6974434225312.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "nothing-6974434224179": [
@@ -47827,16 +46331,6 @@
     "inStock": true,
     "color": "White",
     "shop": "zigzag",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "nothing-6974434224179",
-    "shop": "zigzag",
-    "title": "Nothing Headphone ( 1 ) White /6974434224179",
-    "price": 157000,
-    "storage": null,
-    "url": "https://www.zigzag.am/am/nothing-headphone-1-white-6974434224179.html",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -48020,16 +46514,6 @@
     "color": "White",
     "shop": "zigzag",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "audio-technica-ath-s220bt",
-    "shop": "zigzag",
-    "title": "Audio-Technica ATH-S220BT",
-    "price": 35900,
-    "storage": null,
-    "url": "https://www.zigzag.am/en/audio-technica-ath-s220bt-white-wireless-headphone-ath-s220btwh.html",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "amazon-kindle-paperwhite-kids-11": [
@@ -48084,17 +46568,6 @@
     "shop": "eldorado",
     "seen": "2026-09-20",
     "esim": false
-   },
-   {
-    "id": "honor-200",
-    "shop": "eldorado",
-    "title": "Սմարթֆոն HONOR 200 8/256GB (5109BFKC) Emerald Green",
-    "price": 159900,
-    "storage": 256,
-    "url": "https://eldorado.am/en/honor-200-8-256gb-5109bfkc-emerald-green",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    },
    {
     "id": "honor-200",
@@ -48377,36 +46850,6 @@
    },
    {
     "id": "jbl-live-770-nc",
-    "shop": "ibolit",
-    "title": "JBL Live 770 NC White",
-    "price": 77000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-live-770-nc-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-live-770-nc",
-    "shop": "ibolit",
-    "title": "JBL Live 770 NC Blue",
-    "price": 77000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-live-770-nc-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-live-770-nc",
-    "shop": "ibolit",
-    "title": "JBL Live 770 NC Black",
-    "price": 77000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-live-770-nc-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-live-770-nc",
     "title": "JBL Live 770NC Wireless Over-Ear Noise Cancelling Headphones",
     "url": "https://allsell.am/en/jbl-live-770nc-wireless-over-ear-noise-cancelling-headphones",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/r/frame_9_-_2025-07-07t131838.545_1_1.jpg",
@@ -48525,16 +46968,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-soundlink-mini-ii",
-    "shop": "ibolit",
-    "title": "Bose Soundlink Mini II Silver",
-    "price": 82900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-soundlink-mini-ii-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -48829,56 +47262,6 @@
     "ram": null,
     "color": "Yellow",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-mini",
-    "shop": "ibolit",
-    "title": "Apple HomePod Mini Black",
-    "price": 59900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-mini-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-mini",
-    "shop": "ibolit",
-    "title": "Apple HomePod Mini Blue",
-    "price": 59900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-mini-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-mini",
-    "shop": "ibolit",
-    "title": "Apple HomePod Mini Orange",
-    "price": 59900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-mini-orange/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-mini",
-    "shop": "ibolit",
-    "title": "Apple HomePod Mini White",
-    "price": 59900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-mini-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-mini",
-    "shop": "ibolit",
-    "title": "Apple HomePod Mini Yellow",
-    "price": 59900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-mini-yellow/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -51656,16 +50039,6 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-smart-band-2",
-    "shop": "ibolit",
-    "title": "Xiaomi Redmi Smart Band 2 White",
-    "price": 14900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/xiaomi-redmi-smart-band-2-white/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -54642,16 +53015,6 @@
     "color": "Eclipse Black",
     "shop": "redstore",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-legion-pro-5-16",
-    "shop": "redstore",
-    "title": "Lenovo Legion Pro 5",
-    "price": 799000,
-    "storage": 1024,
-    "url": "https://redstore.am/en/product/lenovo-legion-pro-5-16iax10",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "asus-tuf-fx608jpr-wh74": [
@@ -55697,16 +54060,6 @@
    {
     "id": "bose-soundlink-revolve-ii",
     "shop": "ibolit",
-    "title": "Bose SoundLink Revolve II Black",
-    "price": 109900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-soundlink-revolve-ii-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-soundlink-revolve-ii",
-    "shop": "ibolit",
     "title": "Bose SoundLink Revolve II Silver",
     "price": 132000,
     "storage": null,
@@ -55781,26 +54134,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-8-lite",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Redmi Buds 8 lite (M2539E1) BHR08OLGL Սպիտակ",
-    "price": 9900,
-    "storage": null,
-    "url": "https://eldorado.am/en/wireless-headphones-redmi-buds-8-lite-m2539e1-bhr08olgl-white",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-8-lite",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Redmi Buds 8 Lite Black",
-    "price": 9900,
-    "storage": null,
-    "url": "https://eldorado.am/en/wireless-earbuds-redmi-buds-8-lite-black",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -55884,26 +54217,6 @@
    },
    {
     "id": "jbl-tune-beam",
-    "shop": "ibolit",
-    "title": "JBL Tune Beam White",
-    "price": 35900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-beam-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-beam",
-    "shop": "ibolit",
-    "title": "JBL Tune Beam Purple",
-    "price": 35900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-beam-purple/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-beam",
     "price": 39900,
     "title": "Headphone JBL Tune Beam 2 (TBEAM2WHT)",
     "url": "https://eldorado.am/en/headphone-jbl-tune-beam-2-tbeam2wht",
@@ -55954,16 +54267,6 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-flex",
-    "shop": "ibolit",
-    "title": "JBL Tune Flex White",
-    "price": 44900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-flex-white/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -56034,16 +54337,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-wh-ch720",
-    "shop": "eldorado",
-    "title": "Sony WH-CH720 Black Անլար ականջակալ",
-    "price": 39900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-wh-ch720-black",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -56276,16 +54569,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-quietcomfort-ii",
-    "shop": "ibolit",
-    "title": "Bose QuietComfort Earbuds II Black",
-    "price": 109900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-quietcomfort-earbuds-ii-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "dyson-zone": [
@@ -56333,16 +54616,6 @@
    },
    {
     "id": "apple-homepod-2",
-    "shop": "ibolit",
-    "title": "Apple HomePod 2 White",
-    "price": 165900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-2-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-2",
     "price": 181000,
     "title": "Apple HomePod 2 Black",
     "url": "https://ibolit.mobi/product/apple-homepod-2-black/",
@@ -56353,16 +54626,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-homepod-2",
-    "shop": "ibolit",
-    "title": "Apple HomePod 2 Black",
-    "price": 181000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/apple-homepod-2-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -56755,16 +55018,6 @@
     "color": "Gray",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-pad-x7-jms-w09",
-    "shop": "eldorado",
-    "title": "Պլանշետ Honor Pad X7 JMS-W09 (5504ADQH) մոխրագույն",
-    "price": 59900,
-    "storage": null,
-    "url": "https://eldorado.am/en/tablet-honor-pad-x7-jms-w09-5504adqh-gray",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "honor-pad-x7-lte-jms-l09": [
@@ -56778,16 +55031,6 @@
     "inStock": true,
     "color": "Gray",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-pad-x7-lte-jms-l09",
-    "shop": "eldorado",
-    "title": "Պլանշետ Honor Pad X7 LTE JMS-L09 (5504ADRG) մոխրագույն",
-    "price": 64900,
-    "storage": null,
-    "url": "https://eldorado.am/en/tablet-honor-pad-x7-lte-jms-l09-5504adrg-gray",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -56803,16 +55046,6 @@
     "color": "Gray",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-pad-x8b-ndl2-w09",
-    "shop": "eldorado",
-    "title": "Պլանշետ Honor Pad X8b NDL2-W09 (5301ARMH) Space Gray",
-    "price": 94900,
-    "storage": null,
-    "url": "https://eldorado.am/en/tablet-honor-pad-x8b-ndl2-w09-5301armh-space-gray",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "honor-pad-x8b-ndl2-l09": [
@@ -56826,16 +55059,6 @@
     "inStock": true,
     "color": "Gray",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-pad-x8b-ndl2-l09",
-    "shop": "eldorado",
-    "title": "Պլանշետ HONOR Pad X8b NDL2-L09 (5301ARMF) Space Gray",
-    "price": 104900,
-    "storage": null,
-    "url": "https://eldorado.am/en/honor-pad-x8b-ndl2-w09-5301armh-space-gray",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -56851,16 +55074,6 @@
     "color": "Gold",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
-    "shop": "eldorado",
-    "title": "Ֆիթնես-թեւնոց Xiaomi Smart Band 8 Champagne Gold (M2239B1) BHR7166GL",
-    "price": 14850,
-    "storage": null,
-    "url": "https://eldorado.am/en/xiaomi-smart-band-8-champagne-gold-m2239b1-bhr7166gl",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "nothing-cmf-pro-2": [
@@ -56874,16 +55087,6 @@
     "inStock": true,
     "color": "Blue",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "nothing-cmf-pro-2",
-    "shop": "eldorado",
-    "title": "CMF Nothing Watch PRO 2 (D398) խելացի ժամացույց կապույտ",
-    "price": 35900,
-    "storage": null,
-    "url": "https://eldorado.am/en/nothing-watch-pro-2-d398-blue",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -56910,26 +55113,6 @@
     "inStock": true,
     "color": "Gold",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-watch4-40-mm",
-    "shop": "eldorado",
-    "title": "Սմարթ ժամացույց Samsung Galaxy Watch4 40 mm Black (R860)",
-    "price": 69900,
-    "storage": null,
-    "url": "https://eldorado.am/en/samsung-galaxy-watch4-40-mm-rose-gold-r860",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-watch4-40-mm",
-    "shop": "eldorado",
-    "title": "Սմարթ ժամացույց Samsung Galaxy Watch4 44mm Black (R870)",
-    "price": 69900,
-    "storage": null,
-    "url": "https://eldorado.am/en/samsung-galaxy-watch4-44mm-black-r870",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -56997,16 +55180,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "garmin-forerunner-970-010-02969-10",
-    "shop": "eldorado",
-    "title": "Սմարթ ժամացույց Garmin Forerunner 970 010-02969-10 (Black)",
-    "price": 329000,
-    "storage": null,
-    "url": "https://eldorado.am/en/garmin-forerunner-970-010-02969-10-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "garmin-epix-pro-sapphire-edition-51-mm": [
@@ -57059,16 +55232,6 @@
     "color": "White",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-eo-ic100-usb-type-c",
-    "shop": "eldorado",
-    "title": "Ականջակալ Samsung EO-IC100  USB Type-C White",
-    "price": 6900,
-    "storage": null,
-    "url": "https://eldorado.am/en/samsung-eo-ic100-usb-type-c-white",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "honor-choice-clip-mak-me01": [
@@ -57095,26 +55258,6 @@
     "color": "Purple",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-choice-clip-mak-me01",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMX) black",
-    "price": 23310,
-    "storage": null,
-    "url": "https://eldorado.am/en/honor-choice-earbuds-clip-mak-me01-5504admx-black",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-choice-clip-mak-me01",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMR) Purple",
-    "price": 23310,
-    "storage": null,
-    "url": "https://eldorado.am/en/honor-choice-earbuds-clip-mak-me01-5504admr-purple",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-quantum-300": [
@@ -57130,16 +55273,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-quantum-300",
-    "shop": "ibolit",
-    "title": "JBL Quantum 300 Black",
-    "price": 26900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-quantum-300-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -57167,16 +55300,6 @@
     "color": "Red",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-solo-true-wireless",
-    "shop": "eldorado",
-    "title": "Ականջակալ Beats Solo Buds True Wireless (A3151 A3150 A3152)",
-    "price": 35900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-solo-buds-true-wireless-earbuds-transparent-red-model-a3151-a3150-a3152",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "sony-wf-c500-true-wireless": [
@@ -57190,16 +55313,6 @@
     "inStock": true,
     "color": "Orange",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-wf-c500-true-wireless",
-    "shop": "eldorado",
-    "title": "Sony WF-C500 True Wireless (YY2952) անլար ականջակալ նարնջագույն",
-    "price": 29900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-wf-c500-orange-yy2952",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -57257,16 +55370,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-live-pro-2-tws",
-    "shop": "ibolit",
-    "title": "JBL Live Pro 2 TWS Black",
-    "price": 65900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-live-pro-2-tws-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-live-660-nc": [
@@ -57282,16 +55385,6 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-live-660-nc",
-    "shop": "ibolit",
-    "title": "JBL Live 660 NC White",
-    "price": 55900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-live-660-nc-white/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -57347,16 +55440,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-accentum-acaebt",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Sennheiser Accentum ACAEBT սպիտակ",
-    "price": 75900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-accentum-wireless-acaebt-white",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "sony-whult900n": [
@@ -57370,16 +55453,6 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-whult900n",
-    "shop": "eldorado",
-    "title": "Sony WHULT900N White Անլար ականջակալ",
-    "price": 69900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-whult900n-white",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -57395,17 +55468,6 @@
     "color": "Pink",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "beats-solo4-onear",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Beats Solo4 OnEar (A3140)",
-    "price": 89900,
-    "storage": null,
-    "url": "https://eldorado.am/en/beats-solo4-wireless-headphones-onear-wireless-headphones-matte-black-model-a3140",
-    "seeded": true,
-    "seen": "2026-09-20",
-    "checkColor": true
    }
   ],
   "sennheiser-hd-599": [
@@ -57446,26 +55508,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-accentum-true-wireless-atw1",
-    "shop": "eldorado",
-    "title": "Ականջակալ Sennheiser Accentum True Wireless ATW1 սպիտակ",
-    "price": 85900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-accentum-true-wireless-atw1-white",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-accentum-true-wireless-atw1",
-    "shop": "eldorado",
-    "title": "Ականջակալ Sennheiser Accentum True Wireless ATW1 սև",
-    "price": 85900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-accentum-true-wireless-atw1-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "sennheiser-accentum-true-special-edition-atw1-se": [
@@ -57479,16 +55521,6 @@
     "inStock": true,
     "color": "Blue",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-accentum-true-special-edition-atw1-se",
-    "shop": "eldorado",
-    "title": "Ականջակալ Sennheiser Accentum True Special Edition ATW1 SE կապույտ",
-    "price": 85900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-accentum-true-wireless-special-edition-atw1-blue-se",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -57515,26 +55547,6 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-accentum-plus",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Sennheiser Accentum Plus (ACPAEBT) սև",
-    "price": 99900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-accentum-plus-wireless-acpaebt-black-2",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-accentum-plus",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Sennheiser Accentum Plus (ACPAEBT) սպիտակ",
-    "price": 99900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-accentum-plus-wireless-acpaebt-white",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -57600,16 +55612,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-rs-195",
-    "shop": "eldorado",
-    "title": "Sennheiser RS 195 Black Ականջակալ",
-    "price": 129900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-rs-195-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "sennheiser-momentum-sport-msport1": [
@@ -57623,36 +55625,6 @@
     "inStock": true,
     "color": "Olive",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-momentum-sport-msport1",
-    "shop": "eldorado",
-    "title": "Ականջակալ Sennheiser Momentum Sport MSPORT1 Olive",
-    "price": 129900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-momentum-sport-with-adaptive-anc-and-transparency-mode-msport1-olive",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-momentum-sport-msport1",
-    "shop": "eldorado",
-    "title": "Ականջակալ Sennheiser Momentum Sport MSPORT1 սև",
-    "price": 129900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-momentum-sport-with-adaptive-anc-and-transparency-mode-msport1-black-2",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-momentum-sport-msport1",
-    "shop": "eldorado",
-    "title": "Ականջակալ Sennheiser Momentum Sport MSPORT1 Graphite",
-    "price": 129900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-momentum-sport-with-adaptive-anc-and-transparency-mode-msport1-graphite",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -57681,16 +55653,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sennheiser-momentum-m4aebt",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ Sennheiser Momentum M4AEBT սև",
-    "price": 135900,
-    "storage": null,
-    "url": "https://eldorado.am/en/sennheiser-momentum-wireless-m4aebt-black",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -57741,16 +55703,6 @@
     "inStock": true,
     "color": "Blue",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "dyson-zone-absoluteplus",
-    "shop": "eldorado",
-    "title": "Անլար ականջակալ օդի ֆիլտրով Dyson Zone Absolute+ (Prussian Blue/Bright Copper)",
-    "price": 199900,
-    "storage": null,
-    "url": "https://eldorado.am/en/dyson-zone-absolute-headphones-with-air-purification-prussian-blue-bright-copper",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -58963,16 +56915,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-l410ma-tb02-n4020-90nb0q15-m32880-star",
-    "shop": "eldorado",
-    "title": "Նոթբուք Asus L410MA-TB02 N4020  90NB0Q15-M32880 Star Black",
-    "price": 129900,
-    "storage": null,
-    "url": "https://eldorado.am/en/asus-l410ma-tb02-n4020-90nb0q15-m32880-star-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001": [
@@ -58986,16 +56928,6 @@
     "inStock": true,
     "color": "Light Silver",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001",
-    "shop": "eldorado",
-    "title": "Նոթբուք Acer Aspire Lite AlL15-36P-C0M7 N150  NX.DE1AA.001 Light Silver",
-    "price": 149900,
-    "storage": null,
-    "url": "https://eldorado.am/en/acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001-light-silver",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -59038,16 +56970,6 @@
     "inStock": true,
     "color": "Blue",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11",
-    "shop": "eldorado",
-    "title": "Նոթբուք ASUS Vivobook 15  Core 3-100U  X1504VAP-C38128  W11  Quiet Blue",
-    "price": 209900,
-    "storage": null,
-    "url": "https://eldorado.am/en/asus-vivobook-15-core-3-100u-x1504vap-c38128-w11-quiet-blue",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -59147,16 +57069,6 @@
     "color": "Grey",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-ideapad-slim-5-14irh10",
-    "shop": "eldorado",
-    "title": "Նոթբուք Lenovo IdeaPad Slim 5 14IRH10 (83HR002SRK) Luna Grey",
-    "price": 349900,
-    "storage": null,
-    "url": "https://eldorado.am/en/laptop-lenovo-ideapad-slim-5-14irh10-83hr002srk-luna-grey",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "asus-vivobook-17-x1704vap": [
@@ -59198,16 +57110,6 @@
     "inStock": true,
     "color": "Grey",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-expertbook-p1-p1503cva-misty",
-    "shop": "eldorado",
-    "title": "Նոթբուք Asus ExpertBook P1 P1503CVA (P1503CVA-S72252) Misty Grey",
-    "price": 389900,
-    "storage": null,
-    "url": "https://eldorado.am/en/laptop-asus-expertbook-p1-p1503cva-p1503cva-s72252-misty-grey",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -59279,16 +57181,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "asus-vivobook-16-i7-1355u-f1605va-ws74-w11",
-    "shop": "eldorado",
-    "title": "Նոթբուք ASUS Vivobook 16  i7-1355U  F1605VA-WS74  W11  Black",
-    "price": 389900,
-    "storage": null,
-    "url": "https://eldorado.am/en/asus-vivobook-16-i7-1355u-f1605va-ws74-w11-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "dell-15-ldc15250-7427blk-pus-touch-w11": [
@@ -59302,16 +57194,6 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "dell-15-ldc15250-7427blk-pus-touch-w11",
-    "shop": "eldorado",
-    "title": "Նոթբուք DELL 15  LDC15250-7427BLK-PUS  Touch  W11  Black",
-    "price": 399900,
-    "storage": null,
-    "url": "https://eldorado.am/en/dell-15-ldc15250-7427blk-pus-touch-w11-black",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -59369,16 +57251,6 @@
     "color": "Grey",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us",
-    "shop": "eldorado",
-    "title": "Նոթբուք Lenovo IdeaPad 5 2-in 1  Touch  W11  Grey 83DS0056US",
-    "price": 398900,
-    "storage": null,
-    "url": "https://eldorado.am/en/lenovo-ideapad-5-2-in-1-touch-w11-grey-83ds0056us",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "microsoft-surface-go-2": [
@@ -59420,16 +57292,6 @@
     "inStock": true,
     "color": "Grey",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus",
-    "shop": "eldorado",
-    "title": "Նոթբուք Lenovo IdeaPad Slim 5i  Core 7 240H  83J1002SUS Luna Grey",
-    "price": 419900,
-    "storage": null,
-    "url": "https://eldorado.am/en/lenovo-ideapad-slim-5i-core-7-240h-83j1002sus-luna-grey",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -59837,16 +57699,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-27d300gau",
-    "shop": "eldorado",
-    "title": "Մոնիտոր Samsung 27D300GAU Black",
-    "price": 59900,
-    "storage": null,
-    "url": "https://eldorado.am/en/samsung-27d300gau-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "asus-vz27ehf-90lm07b0-b01470": [
@@ -60211,16 +58063,6 @@
     "color": "Black",
     "shop": "eldorado",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-s27d402g",
-    "shop": "eldorado",
-    "title": "Մոնիտոր Samsung S27D402G Black",
-    "price": 205900,
-    "storage": null,
-    "url": "https://eldorado.am/en/samsung-s27d402g-black",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "samsung-ls27bg650eu": [
@@ -60312,16 +58154,6 @@
     "inStock": true,
     "color": "Red",
     "shop": "eldorado",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-playstation-dualsense-ps5",
-    "shop": "eldorado",
-    "title": "Sony Playstation DualSense PS5 մոխրագույն",
-    "price": 34110,
-    "storage": null,
-    "url": "https://eldorado.am/en/sony-playstation-dualsense-ps5-wireless-controller-cosmic-red",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61335,16 +59167,6 @@
     "color": "Gray",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-air-13-mgn63-m1-2020",
-    "shop": "ibolit",
-    "title": "MacBook Air 13 MGN63 M1 2020 Space Gray",
-    "price": 275000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-air-13-mgn63-m1-2020-space-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-13-m1-2024": [
@@ -61360,16 +59182,6 @@
     "ram": null,
     "color": "Starlight",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-air-13-m1-2024",
-    "shop": "ibolit",
-    "title": "MacBook Air 13 M1 2024 Starlight",
-    "price": 719000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-air-13-m1-2024-starlight/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61387,16 +59199,6 @@
     "color": "Silver",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-air-13-mgn93-m1-2020",
-    "shop": "ibolit",
-    "title": "MacBook Air 13 MGN93 M1 2020 Silver",
-    "price": 305000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-air-13-mgn93-m1-2020-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-13-mgnd3-m1-2020": [
@@ -61412,16 +59214,6 @@
     "ram": null,
     "color": "Gold",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-air-13-mgnd3-m1-2020",
-    "shop": "ibolit",
-    "title": "MacBook Air 13 MGND3 M1 2020 Gold",
-    "price": 314900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-air-13-mgnd3-m1-2020-gold/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61439,16 +59231,6 @@
     "color": "Gray",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-air-mgn63-late-2020",
-    "shop": "ibolit",
-    "title": "MacBook Air MGN63 Late 2020 Space Gray",
-    "price": 305000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-air-mgn63-late-2020-space-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-air-mgn93-late-2020": [
@@ -61464,16 +59246,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-air-mgn93-late-2020",
-    "shop": "ibolit",
-    "title": "MacBook Air MGN93 Late 2020 Silver",
-    "price": 339000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-air-mgn93-late-2020-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61491,16 +59263,6 @@
     "color": "Gray",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-pro-14-2023-mtl73",
-    "shop": "ibolit",
-    "title": "MacBook Pro 14 2023 MTL73 Space Gray",
-    "price": 692000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-pro-14-2023-mtl73-space-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-14-mr7j3-2023": [
@@ -61516,16 +59278,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-pro-14-mr7j3-2023",
-    "shop": "ibolit",
-    "title": "MacBook Pro 14 MR7J3 2023 Silver",
-    "price": 720000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-pro-14-mr7j3-2023-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61543,16 +59295,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-pro-14-mrx33-2023",
-    "shop": "ibolit",
-    "title": "MacBook Pro 14 MRX33 2023 Space Black",
-    "price": 889000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-pro-14-mrx33-2023-space-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-14-mrx43-2023": [
@@ -61568,16 +59310,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-pro-14-mrx43-2023",
-    "shop": "ibolit",
-    "title": "MacBook Pro 14 MRX43 2023 Space Black",
-    "price": 1043000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-pro-14-mrx43-2023-space-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61595,16 +59327,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-pro-16-mrw23",
-    "shop": "ibolit",
-    "title": "MacBook Pro 16 MRW23 Space Black",
-    "price": 1175000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-pro-16-mrw23-space-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-macbook-pro-16-mrw63-2023": [
@@ -61620,16 +59342,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-macbook-pro-16-mrw63-2023",
-    "shop": "ibolit",
-    "title": "MacBook Pro 16 MRW63 2023 Silver",
-    "price": 1175000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/macbook-pro-16-mrw63-2023-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61743,16 +59455,6 @@
     "color": "Silver",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-10-2-9th-gen-wi-fi",
-    "shop": "ibolit",
-    "title": "iPad 10.2 9th Gen 64GB Wi-Fi Silver",
-    "price": 154000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/ipad-10-2-9th-gen-64gb-wi-fi-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-10-2-9th-generation-wi-fi": [
@@ -61768,16 +59470,6 @@
     "ram": null,
     "color": "Gray",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-10-2-9th-generation-wi-fi",
-    "shop": "ibolit",
-    "title": "iPad 10.2 9th Generation   64GB  Wi-Fi  Space Gray",
-    "price": 152000,
-    "storage": 64,
-    "url": "https://ibolit.mobi/product/ipad-10-2-9th-generation-64gb-wi-fi-space-gray/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61823,36 +59515,6 @@
     "color": "Starlight",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-11-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 11 128GB Wi-Fi 2024 Purple",
-    "price": 277000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-2024-purple/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-11-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 11 128GB Wi-Fi 2024 Space Gray",
-    "price": 277000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-2024-space-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-11-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Air 11 128GB Wi-Fi 2024 Starlight",
-    "price": 277000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/ipad-air-11-128gb-wi-fi-2024-starlight/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "apple-ipad-pro-13-wi-fi-2024": [
@@ -61868,16 +59530,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-13-wi-fi-2024",
-    "shop": "ibolit",
-    "title": "iPad Pro 13 512GB Wi-Fi 2024 Silver",
-    "price": 680000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/ipad-pro-13-512gb-wi-fi-2024-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61895,16 +59547,6 @@
     "color": "Gray",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a8-10-5-x200",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A8 10.5 32GB X200 Gray",
-    "price": 77000,
-    "storage": 32,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a8-10-5-32gb-x200-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "samsung-galaxy-tab-a8-10-5-x205": [
@@ -61920,16 +59562,6 @@
     "ram": null,
     "color": "Gray",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-a8-10-5-x205",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab A8 10.5 32GB X205 Gray",
-    "price": 77000,
-    "storage": 32,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-a8-10-5-32gb-x205-gray/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -62527,16 +60159,6 @@
     "color": "Nordic Weave",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "bo-beosound-a5",
-    "shop": "ibolit",
-    "title": "Bang & Olufsen Beosound A5 Nordic Weave Portable Speaker",
-    "price": 509000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bang-olufsen-beosound-a5-nordic-weave-portable-speaker/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "bo-beosound-balance": [
@@ -62615,26 +60237,6 @@
     "color": "White",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-soundlink-flex",
-    "shop": "ibolit",
-    "title": "Bose SoundLink Flex White",
-    "price": 79900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-soundlink-flex-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-soundlink-flex",
-    "shop": "ibolit",
-    "title": "Bose SoundLink Flex Black",
-    "price": 79900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-soundlink-flex-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "bose-soundlink-revolve": [
@@ -62650,16 +60252,6 @@
     "ram": null,
     "color": "Gray",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-soundlink-revolve",
-    "shop": "ibolit",
-    "title": "Bose SoundLink Revolve Gray",
-    "price": 99000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-soundlink-revolve-gray/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -62690,26 +60282,6 @@
     "ram": null,
     "color": "Blue",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-sport",
-    "shop": "ibolit",
-    "title": "Bose Sport Earbuds Blue",
-    "price": 69900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-sport-earbuds-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "bose-sport",
-    "shop": "ibolit",
-    "title": "Bose Sport Earbuds Black",
-    "price": 69900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/bose-sport-earbuds-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -62800,16 +60372,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-boombox-3-wi-fi",
-    "shop": "ibolit",
-    "title": "JBL Boombox 3 Wi-Fi Black",
-    "price": 249900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-boombox-3-wi-fi-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-clip-4-squad": [
@@ -62841,16 +60403,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-flip-6-star",
-    "shop": "ibolit",
-    "title": "JBL Flip 6 Black Star",
-    "price": 59000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-flip-6-black-star/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -62916,16 +60468,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-quantum-200-wired",
-    "shop": "ibolit",
-    "title": "JBL Quantum 200 Wired Black",
-    "price": 26900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-quantum-200-wired-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-125-tws": [
@@ -62956,26 +60498,6 @@
     "color": "White",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-125-tws",
-    "shop": "ibolit",
-    "title": "JBL Tune 125 TWS White",
-    "price": 49900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-125-tws-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-125-tws",
-    "shop": "ibolit",
-    "title": "JBL Tune 125 TWS Blue",
-    "price": 49900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-125-tws-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-130-tws": [
@@ -62991,16 +60513,6 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-130-tws",
-    "shop": "ibolit",
-    "title": "JBL Tune 130 TWS White",
-    "price": 29900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-130-tws-white/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -63021,16 +60533,6 @@
    },
    {
     "id": "jbl-tune-215-tws",
-    "shop": "ibolit",
-    "title": "JBL Tune 215 TWS Green",
-    "price": 49000,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-215-tws-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-215-tws",
     "price": 49900,
     "title": "JBL Tune 215 TWS White",
     "url": "https://ibolit.mobi/product/jbl-tune-215-tws-white/",
@@ -63041,16 +60543,6 @@
     "ram": null,
     "color": "White",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-215-tws",
-    "shop": "ibolit",
-    "title": "JBL Tune 215 TWS White",
-    "price": 49900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-215-tws-white/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -63084,16 +60576,6 @@
     "color": "Beige",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-230-tws",
-    "shop": "ibolit",
-    "title": "JBL Tune 230 TWS Beige",
-    "price": 39900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-230-tws-beige/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-500-wired": [
@@ -63123,26 +60605,6 @@
     "ram": null,
     "color": "Pink",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-500-wired",
-    "shop": "ibolit",
-    "title": "JBL Tune 500 Wired Pink",
-    "price": 11900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-500-wired-pink/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-500-wired",
-    "shop": "ibolit",
-    "title": "JBL Tune 500 Wired Black",
-    "price": 11900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-500-wired-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -63246,26 +60708,6 @@
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-670-nc",
-    "shop": "ibolit",
-    "title": "JBL Tune 670 NC Blue",
-    "price": 39900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-670-nc-blue/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-670-nc",
-    "shop": "ibolit",
-    "title": "JBL Tune 670 NC Black",
-    "price": 39900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-670-nc-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "jbl-tune-720-bt": [
@@ -63295,26 +60737,6 @@
     "ram": null,
     "color": "Purple",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-720-bt",
-    "shop": "ibolit",
-    "title": "JBL Tune 720 BT Purple",
-    "price": 28900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-720-bt-purple/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "jbl-tune-720-bt",
-    "shop": "ibolit",
-    "title": "JBL Tune 720 BT Black",
-    "price": 28900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/jbl-tune-720-bt-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -63416,16 +60838,6 @@
     "ram": null,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-wf-1000xm5-wireless-headphones",
-    "shop": "ibolit",
-    "title": "Sony WF-1000XM5 Wireless Headphones Silver",
-    "price": 139900,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/sony-wf-1000xm5-wireless-headphones-silver/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -63535,16 +60947,6 @@
     "color": "Pink",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-mi-smart-band-8-active",
-    "shop": "ibolit",
-    "title": "Xiaomi Mi Smart Band 8 Active Pink",
-    "price": 11400,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/xiaomi-mi-smart-band-8-active-pink/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "xiaomi-smart-band-8-active": [
@@ -63576,16 +60978,6 @@
     "ram": null,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-smart-mi-band-8-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Smart Mi Band 8 Pro Black",
-    "price": 34400,
-    "storage": null,
-    "url": "https://ibolit.mobi/product/xiaomi-smart-mi-band-8-pro-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
