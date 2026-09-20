@@ -82,6 +82,7 @@ const ext = ct => ct.includes('png') ? 'png' : ct.includes('webp') ? 'webp' : 'j
 // link we already hold into a photo candidate. Shops that answer a crawler with a block page
 // simply yield nothing here; none of this reaches past a refusal.
 const ogSeen = new Map();
+const OG_URLS = new Set();   // images that came from a page's og:image, not from a product shot
 async function ogImage(url) {
   if (ogSeen.has(url)) return ogSeen.get(url);
   let out = null;
@@ -96,6 +97,7 @@ async function ogImage(url) {
     await new Promise(r => setTimeout(r, 250));
   } catch { /* a shop being down must not stop the pass */ }
   ogSeen.set(url, out);
+  if (out) OG_URLS.add(out);
   return out;
 }
 
@@ -151,6 +153,12 @@ async function best(urls) {
       if (PLACEHOLDER[createHash('md5').update(b).digest('hex')]) continue;
       const [w, h] = dimensions(b);
       const edge = Math.max(w, h);
+      // og:image is the one route that hands back something other than a product: a shop's social
+      // card. It is a real image of winning size, so edge alone accepts it - that is how a
+      // 3954x1240 3DPlanet logo became the Apple Watch Ultra 2's photo. A social card is always a
+      // wide strip, so refuse a landscape og image. Only og: a product page's own photo may be as
+      // wide as a soundbar, and a phone stood upright may be as tall as it likes.
+      if (OG_URLS.has(u) && w && h && w / h > 1.5) continue;
       const cand = { b, edge, w, h, alpha: declaresAlpha(b), ext: ext(r.headers.get('content-type') || ''), url: u };
       if (edge && (!win || beats(cand, win))) win = cand;
       await new Promise(r => setTimeout(r, 250));

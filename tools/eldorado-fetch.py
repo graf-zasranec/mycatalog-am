@@ -29,6 +29,9 @@ CATEGORIES = [
     'phones/tablets-and-smartphones/smartphones',
     'phones/tablets-and-smartphones/tablets',
     'phones/smart-watches',
+    # earbuds live under phones, not under audio-video: a Redmi Buds is filed with the phone it
+    # pairs to, and audio-video/players-headsets never lists one
+    'phones/headsets',
     'audio-video/tv',
     'audio-video/players-headsets/audio-headset',
     'audio-video/players-headsets/soudbar',
