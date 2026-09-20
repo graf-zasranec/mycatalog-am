@@ -49,6 +49,13 @@ const FLOOR = 1000;
 // Because the page prices each build separately, a pixel url shared by rows of different
 // capacities is NOT the trap the guard further down exists for: this can answer each of them.
 const BUILDS = ['pixel.am'];
+// ucom is NOT on that list and must not be added. Its pages are Magento and do carry the whole
+// configurable matrix, so reading them looks easy - but the page does not show a capacity's price
+// until that capacity is chosen, and what it serves until then is the base build. Confirming from
+// it wrote 642,900 over the iPhone 18 Pro's 743,900, 943,900 and 1,256,900, which is the same
+// flattening two earlier runs were stopped for. Checked on the shop by the owner on 2026-09-21:
+// you have to select 2TB before a 2TB price appears. Ucom's hand rows are right; leave them.
+const readUrl = u => u;
 const capOf = s => {
   const m = String(s || '').match(/([\d.]+)\s*(TB|GB)/i);
   return m ? Math.round(parseFloat(m[1]) * (/tb/i.test(m[2]) ? 1024 : 1)) : null;
@@ -205,7 +212,7 @@ for (let i = 0; i < todo.length; i++) {
     if (noFetch(f[4])) continue;          // belt and braces: these two are never asked directly
     let html = '';
     try {
-      const r = await fetch(f[4], { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
+      const r = await fetch(readUrl(f[4]), { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
       if (r.ok) html = await r.text(); else gone.push([f[0], f[1], f[4], 'HTTP ' + r.status]);
     } catch (e) { gone.push([f[0], f[1], f[4], e.name]); }
     await sleep(DELAY);
