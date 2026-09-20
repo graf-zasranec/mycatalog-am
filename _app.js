@@ -231,11 +231,14 @@ const sold = (p, field, value) => {
   // RAM is rarely printed by a shop, so treat "never stated" as unknown rather than unavailable.
   return !list.some(o => o.ram) || list.some(o => o.ram === value);
 };
-const HIST = (typeof HISTORY !== 'undefined' && HISTORY.points) || {};
+// Read through a function, not captured once: on the served build HISTORY starts empty and is
+// filled by loadLazy() the first time a product page is opened, and a value copied out at
+// startup would stay empty for the life of the tab.
+const HIST = () => (typeof HISTORY !== 'undefined' && HISTORY.points) || {};
 const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : '';
 // Plot only days we actually recorded. One point is not a trend, so it says so instead.
 function historyHTML(p) {
-  const pts = HIST[p.id] || [];
+  const pts = HIST()[p.id] || [];
   if (!pts.length) return '';
   if (pts.length < 2) return `<h2 class="sh">${esc(x('histT'))}</h2>
     <p class="note">${esc(x('noHist'))} · ${esc(x('trackSince'))} ${esc(dmy(pts[0].d))}</p>`;
@@ -267,12 +270,37 @@ function historyHTML(p) {
 }
 const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generated.slice(5, 7) + '.' + P.generated.slice(0, 4) : '';
 
+// The two blobs the served build leaves out, fetched the first time somebody asks for a product
+// page and never on the front page - which is what saves the front page from parsing 531 KB it
+// has no use for. Once is enough per tab; a failure is silent on purpose, because the page
+// already reads correctly without either of them: the verdict falls back to the English summary
+// and the price chart simply does not appear.
+let lazyDone = false;
+function loadLazy() {
+  if (lazyDone || typeof LAZYDATA === 'undefined' || !LAZYDATA) return;
+  lazyDone = true;
+  Promise.all([
+    fetch('data/verdicts.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('data/history.json').then(r => r.ok ? r.json() : null).catch(() => null),
+  ]).then(([v, h]) => {
+    if (v) for (const row of v) { const { id, ...rest } = row; VERD[id] = rest; }
+    if (h) HISTORY = h;
+    if ((v || h) && location.hash.startsWith('#/p/')) render(true);
+  });
+}
+
 /* ================= filtering ================= */
 // The words someone types are rarely in the shop's order: "samsung fold" is how a person asks
 // for the Galaxy Z Fold 8, and a contiguous-substring test answers "no results" to it. Every
 // word has to appear somewhere, order free.
 const hay = p => (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase();
 function hayMatch(p, q) {
+  // Nothing in Armenia sells it today, so it has no business in a price-comparison list: no card
+  // in the grid, no row in the search box, no entry in a category count. Its PAGE stays, and so
+  // does its line in sitemap.xml - the product is real, the url has been indexed, and somebody
+  // arriving from a search engine should land on what they looked for rather than a 404. It comes
+  // back on its own the day any shop stocks it again, because this asks the offers, not a list.
+  if (!hasReal(p)) return false;
   const words = String(q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
   if (!words.length) return true;
   const h = hay(p);
@@ -1397,6 +1425,7 @@ function railHTML(offs) {
 
 function detailView(p) {
   initSel(p);
+  loadLazy();
   const V = VERD[p.id] || {}, L = st.lang;
   const summary = (L !== 'en' && V['s_' + L]) || p.summaryEn;
   const offs = visibleOffers(p);

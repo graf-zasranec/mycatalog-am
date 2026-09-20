@@ -292,12 +292,16 @@ const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').di
 // then cannot run a script this build did not produce, which is the point of having a CSP at all
 // on a page that renders scraped shop names. Styles still need 'unsafe-inline' - the colour
 // swatches carry a style attribute - and img-src keeps data: for the embedded build.
+// connect-src is 'self' and nothing more. It was 'none', which is the right answer for a page
+// that fetches nothing; the served build now fetches data/verdicts.json and data/history.json
+// from its own origin when somebody opens a product page. 'self' permits exactly those two
+// and no destination off this site, so nothing the page holds can be sent anywhere.
 // frame-ancestors is NOT here: a meta element cannot deliver it and the browser logs an error
 // on every load. Clickjacking cover would need a real header, which GitHub Pages does not serve.
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${COUNTER.connect.length ? COUNTER.connect.join(' ') : "'none'"}; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="${SEO.desc}">
@@ -367,10 +371,18 @@ function build({ inline, standalone }) {
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
   const shell = seoTitle(rd('_shell.html'));
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
+  // The verdict sentences and the price history are read on a PRODUCT page and nowhere else,
+  // and together they are 531 KB of the 3.26 MB this file makes a browser parse before it can
+  // paint one card. The served build leaves them out and fetches data/verdicts.json and
+  // data/history.json the first time somebody opens a product - both are already published,
+  // because the repo root is the Pages publish root. The single-file builds keep carrying them:
+  // a file somebody mails or pastes has nothing to fetch from.
+  const lazy = !inline;
   let appJs = '\n'
-    + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\nconst VERD=${JSON.stringify(VERD)};\n`
+    + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\n`
+    + (lazy ? 'let VERD={};\nlet HISTORY={points:{}};\nconst LAZYDATA=true;\n'
+            : `const VERD=${JSON.stringify(VERD)};\nconst HISTORY=${JSON.stringify(HISTORY)};\nconst LAZYDATA=false;\n`)
     + `const PRICES=${JSON.stringify(PRICES)};\n`
-    + `const HISTORY=${JSON.stringify(HISTORY)};\n`
     + `const TERMS=${JSON.stringify(TERMS)};\n`
     + `const COMING=${JSON.stringify(COMING)};\n`
     + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
