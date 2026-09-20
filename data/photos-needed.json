@@ -3,19 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 204,
+ "missing": 200,
  "tooSmall": 60,
  "products": [
-  {
-   "id": "microsoft-xbox-controller",
-   "brand": "Microsoft",
-   "name": "Xbox Wireless Controller",
-   "category": "console",
-   "shops": 5,
-   "query": "Microsoft Xbox Wireless Controller",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "xiaomi-redmi-note-15-pro-plus-5g",
    "brand": "Xiaomi",
@@ -123,16 +113,6 @@
    "category": "speaker",
    "shops": 2,
    "query": "JBL PartyBox Club 120",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-6-classic-43mm-r950",
-   "brand": "Samsung",
-   "name": "Galaxy Watch 6 Classic",
-   "category": "watch",
-   "shops": 2,
-   "query": "Samsung Galaxy Watch 6 Classic",
    "what": "missing",
    "width": 0
   },
@@ -377,16 +357,6 @@
    "width": 0
   },
   {
-   "id": "asus-tuf-fx607vu-rl089",
-   "brand": "ASUS",
-   "name": "TUF FX607VU-RL089",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS TUF FX607VU-RL089",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "asus-tuf-gaming-a16-fa608p",
    "brand": "ASUS",
    "name": "TUF Gaming A16 FA608P",
@@ -443,16 +413,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "ASUS Vivobook 17 X1704VAP",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vivobook-e1404ga-nk006w",
-   "brand": "ASUS",
-   "name": "VivoBook E1404GA-NK006W",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS VivoBook E1404GA-NK006W",
    "what": "missing",
    "width": 0
   },

@@ -46,6 +46,12 @@ for (const f of rows) {
   const PATHY = new Set(['product', 'products', 'item', 'items', 'shop', 'store', 'catalog',
     'catalogue', 'page', 'index', 'html', 'php', 'www', 'com', 'net', 'org', 'ru', 'en', 'am', 'hy']);
   if (![...u].some(w => !PATHY.has(w))) continue;           // numeric id: unjudgeable, not a fault
+  // And sometimes the shop's own slug is the thing that is wrong. Opened in a browser on
+  // 2026-09-20: /honor-pad-x8b-ndl2-w09-5301armh-space-gray serves a page whose heading reads
+  // "Tablet HONOR Pad X8b NDL2-L09 (5301ARMF) Space Gray" at AMD 104,900 - our row's product and
+  // our row's price. The link is right; eldorado's slug names the wrong variant.
+  const SHOP_SLUG_LIES = ['/honor-pad-x8b-ndl2-w09-5301armh-space-gray'];
+  if (SHOP_SLUG_LIES.some(s => url.endsWith(s))) continue;
   // A model code - letters AND digits together, five characters or more - is the one thing in a
   // title that names exactly one product: 25062PC34G, 90NB11D1-M00N40, L65MA-ARU, 83GS00E6RK.
   // When the row carries one and the url carries a different one, no amount of shared vocabulary
