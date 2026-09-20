@@ -31373,11 +31373,12 @@
   "id": "microsoft-xbox",
   "category": "headphones",
   "brand": "Microsoft",
-  "name": "Xbox Headset",
+  "name": "Xbox Wireless Headset",
   "aliases": [
    "MICROSOFT Xbox Ականջակալ",
-   "Xbox",
-   "Microsoft Xbox"
+   "Xbox Wireless Headset",
+   "Microsoft Xbox Wireless Headset",
+   "Xbox Headset"
   ],
   "tier": "budget",
   "priceAmd": 65900,
@@ -31393,7 +31394,50 @@
   ],
   "display": {},
   "battery": {},
-  "summaryEn": "Microsoft Xbox.",
+  "summaryEn": "Microsoft Xbox Wireless Headset.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "microsoft-xbox-controller",
+  "category": "console",
+  "brand": "Microsoft",
+  "name": "Xbox Wireless Controller",
+  "aliases": [
+   "Xbox Wireless Controller",
+   "Xbox X/S Controller",
+   "Microsoft Xbox Controller",
+   "Xbox Controller",
+   "Xbox Series X/S Controller"
+  ],
+  "colors": [
+   "Carbon Black",
+   "Robot White",
+   "Shock Blue",
+   "Pulse Red",
+   "Electric Volt",
+   "Deep Pink",
+   "Astral Purple"
+  ],
+  "tier": "budget",
+  "priceAmd": 37900,
+  "priceAmdMax": 45000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 37900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Microsoft Xbox Wireless Controller for Xbox Series X|S.",
   "unsure": [
    "popularity",
    "display",

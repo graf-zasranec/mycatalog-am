@@ -2,17 +2,17 @@
  "generated": "2026-09-20",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1318,
- "missing": 201,
+ "total": 1319,
+ "missing": 202,
  "tooSmall": 58,
  "products": [
   {
-   "id": "microsoft-xbox",
+   "id": "microsoft-xbox-controller",
    "brand": "Microsoft",
-   "name": "Xbox Headset",
-   "category": "headphones",
+   "name": "Xbox Wireless Controller",
+   "category": "console",
    "shops": 5,
-   "query": "Microsoft Xbox Headset",
+   "query": "Microsoft Xbox Wireless Controller",
    "what": "missing",
    "width": 0
   },
@@ -1517,6 +1517,16 @@
    "width": 0
   },
   {
+   "id": "microsoft-xbox",
+   "brand": "Microsoft",
+   "name": "Xbox Wireless Headset",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Microsoft Xbox Wireless Headset",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "nothing-6974434224179",
    "brand": "Nothing",
    "name": "6974434224179",
@@ -2057,6 +2067,36 @@
    "width": 556
   },
   {
+   "id": "realme-c75",
+   "brand": "Realme",
+   "name": "C75",
+   "category": "phone",
+   "shops": 2,
+   "query": "Realme C75",
+   "what": "too small",
+   "width": 580
+  },
+  {
+   "id": "realme-gt-7t",
+   "brand": "Realme",
+   "name": "GT 7T",
+   "category": "phone",
+   "shops": 2,
+   "query": "Realme GT 7T",
+   "what": "too small",
+   "width": 570
+  },
+  {
+   "id": "samsung-galaxy-a35",
+   "brand": "Samsung",
+   "name": "Galaxy A35",
+   "category": "phone",
+   "shops": 2,
+   "query": "Samsung Galaxy A35",
+   "what": "too small",
+   "width": 466
+  },
+  {
    "id": "tcl-55v6c",
    "brand": "TCL",
    "name": "55V6C",
@@ -2085,6 +2125,16 @@
    "query": "Xiaomi Redmi 12C",
    "what": "too small",
    "width": 595
+  },
+  {
+   "id": "xiaomi-redmi-14c",
+   "brand": "Xiaomi",
+   "name": "Redmi 14C",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Redmi 14C",
+   "what": "too small",
+   "width": 525
   },
   {
    "id": "xiaomi-redmi-buds-3-lite",
@@ -2377,26 +2427,6 @@
    "width": 590
   },
   {
-   "id": "realme-c75",
-   "brand": "Realme",
-   "name": "C75",
-   "category": "phone",
-   "shops": 1,
-   "query": "Realme C75",
-   "what": "too small",
-   "width": 580
-  },
-  {
-   "id": "realme-gt-7t",
-   "brand": "Realme",
-   "name": "GT 7T",
-   "category": "phone",
-   "shops": 1,
-   "query": "Realme GT 7T",
-   "what": "too small",
-   "width": 570
-  },
-  {
    "id": "samsung-a15",
    "brand": "Samsung",
    "name": "A15",
@@ -2405,16 +2435,6 @@
    "query": "Samsung A15",
    "what": "too small",
    "width": 519
-  },
-  {
-   "id": "samsung-galaxy-a35",
-   "brand": "Samsung",
-   "name": "Galaxy A35",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung Galaxy A35",
-   "what": "too small",
-   "width": 466
   },
   {
    "id": "samsung-galaxy-buds-live",
@@ -2535,16 +2555,6 @@
    "query": "Xiaomi Poco M6 Pro",
    "what": "too small",
    "width": 494
-  },
-  {
-   "id": "xiaomi-redmi-14c",
-   "brand": "Xiaomi",
-   "name": "Redmi 14C",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi 14C",
-   "what": "too small",
-   "width": 525
   },
   {
    "id": "xiaomi-redmi-4-lite",
