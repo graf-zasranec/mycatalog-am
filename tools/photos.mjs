@@ -237,6 +237,27 @@ const rejected = id => new Set(Object.values(REJECT[id] || {})
     console.log(`  ! ${blind.length} rejection(s) with no url, which cannot refuse anything: ${blind.join(', ')}`);
 }
 
+// A hash added to data/placeholders.json refuses future DOWNLOADS, but a copy already sitting in
+// images/_src was never looked at again - and since these files are shop logos served at huge
+// sizes, nothing ever beats them on the biggest-wins rule, so the bad source stays for ever.
+// 3DPlanet's logo reached asus-vivobook-15-x1504va at 14:11 and was still there after the hash
+// was recorded at 15:25. Check what is on disk too, once, before anything else runs.
+{
+  let dropped = 0;
+  for (const [id, entries] of Object.entries(man)) {
+    for (const e of [...entries]) {
+      const f = `${SRC}/${e.src}`;
+      if (!fs.existsSync(f)) continue;
+      const why = PLACEHOLDER[createHash('md5').update(fs.readFileSync(f)).digest('hex')];
+      if (!why) continue;
+      if (!dry) { fs.unlinkSync(f); man[id] = entries.filter(x => x !== e); }
+      console.log(`  ! ${id} ${e.slug}: the saved source is a known placeholder - ${String(why).slice(0, 70)}`);
+      dropped++;
+    }
+  }
+  if (dropped && !dry) fs.writeFileSync(`${SRC}/manifest.json`, JSON.stringify(man, null, 1));
+}
+
 let improved = 0, kept = 0, weak = [], refused = 0, stale = [];
 for (const p of P) {
   if (only.size && !only.has(p.id)) continue;

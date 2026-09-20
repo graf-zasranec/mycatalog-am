@@ -9,6 +9,7 @@
 # carabiner and the Major's headband are enclosed holes too, and they are real. Those run from
 # 1% to 66% of the product's area; the punched ones are under 0.05%, three orders of magnitude
 # apart, so the cut is not a close call.
+import os
 import sys
 import numpy as np
 from scipy import ndimage
@@ -38,7 +39,7 @@ def fix(path):
         # re-compression while looking identical. Only a change a viewer could see is worth a
         # rewrite, and five units of alpha on an already-opaque pixel is not one.
         if int((np.abs(arr[..., 3].astype(np.int16) - a0.astype(np.int16)) > 8).sum()):
-            Image.fromarray(arr, 'RGBA').save(path, 'WEBP', quality=90)
+            save(arr, path)
             return -1                       # hardened only, no hole to close
         return 0
     lab, n = ndimage.label(holes)
@@ -61,9 +62,24 @@ def fix(path):
         arr[..., c] = np.clip(ch, 0, 255).astype(np.uint8)
     arr[..., 3] = a
     harden(arr)
-    Image.fromarray(arr, 'RGBA').save(path, 'WEBP', quality=90)
+    save(arr, path)
     return filled
 
+
+def save(arr, path):
+    """Write beside the file and rename over it.
+
+    A save that fails part-way truncates what was there: apple-ultra-2's cutout was left at 0
+    bytes when libwebp ran out of memory mid-encode, and a 0-byte image is what the site would
+    have served. Writing to a neighbour and renaming means the old photograph survives a failure
+    intact - os.replace is atomic on Windows as well as POSIX."""
+    tmp = path.with_suffix('.webp.tmp')
+    try:
+        Image.fromarray(arr, 'RGBA').save(tmp, 'WEBP', quality=90)
+        os.replace(tmp, path)
+    finally:
+        if tmp.exists():
+            tmp.unlink()
 
 def harden(arr):
     """A pixel ringed by solid product is solid product.
@@ -85,7 +101,13 @@ def main():
     for f in files:
         if not f.exists():
             print(f'{f.name}: missing'); continue
-        px = fix(f)
+        try:
+            px = fix(f)
+        except Exception as e:
+            # One bad file used to end the run: libwebp raised on a single image and every
+            # cutout after it went unrepaired. Say which, and carry on.
+            print(f'{f.name.replace("__main.webp", ""):36} FAILED: {type(e).__name__}: {e}')
+            continue
         if px == -1:
             hit += 1
             print(f'{f.name.replace("__main.webp", ""):36} edge hardened')
