@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1322,
- "missing": 375,
- "tooSmall": 56,
+ "total": 1321,
+ "missing": 358,
+ "tooSmall": 57,
  "products": [
   {
    "id": "xiaomi-redmi-note-17-pro-max-5g",
@@ -47,6 +47,16 @@
    "width": 0
   },
   {
+   "id": "xiaomi-poco-x7",
+   "brand": "Xiaomi",
+   "name": "Poco X7",
+   "category": "phone",
+   "shops": 4,
+   "query": "Xiaomi Poco X7",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "apple-ultra-2",
    "brand": "Apple",
    "name": "Watch Ultra 2",
@@ -63,16 +73,6 @@
    "category": "laptop",
    "shops": 3,
    "query": "ASUS Vivobook 15 X1504VA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-poco-x7",
-   "brand": "Xiaomi",
-   "name": "Poco X7",
-   "category": "phone",
-   "shops": 3,
-   "query": "Xiaomi Poco X7",
    "what": "missing",
    "width": 0
   },
@@ -247,6 +247,16 @@
    "width": 0
   },
   {
+   "id": "microsoft-xbox",
+   "brand": "Microsoft",
+   "name": "Xbox Headset",
+   "category": "headphones",
+   "shops": 2,
+   "query": "Microsoft Xbox Headset",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "samsung-galaxy-3-fe",
    "brand": "Samsung",
    "name": "Galaxy Buds 3 FE",
@@ -293,6 +303,16 @@
    "category": "phone",
    "shops": 2,
    "query": "Xiaomi Redmi 10C",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-buds-6",
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 6",
+   "category": "earbuds",
+   "shops": 2,
+   "query": "Xiaomi Redmi Buds 6",
    "what": "missing",
    "width": 0
   },
@@ -607,16 +627,6 @@
    "width": 0
   },
   {
-   "id": "asus-vg32aqa1a-90lm07l0-b02370",
-   "brand": "ASUS",
-   "name": "VG32AQA1A 90LM07L0-B02370",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS VG32AQA1A 90LM07L0-B02370",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11",
    "brand": "ASUS",
    "name": "Vivobook 15 X1504VAP",
@@ -737,82 +747,12 @@
    "width": 0
   },
   {
-   "id": "asus-vu279hfi-w",
-   "brand": "ASUS",
-   "name": "VU279HFI-W",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS VU279HFI-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vz24ehf-w",
-   "brand": "ASUS",
-   "name": "VZ24EHF-W",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS VZ24EHF-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vz27ehf-90lm07b0-b01470",
-   "brand": "ASUS",
-   "name": "VZ27EHF 90LM07B0-B01470",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS VZ27EHF 90LM07B0-B01470",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-vz27ehf-w-90lm07b0-b02470",
-   "brand": "ASUS",
-   "name": "VZ27EHF-W 90LM07B0-B02470",
-   "category": "monitor",
-   "shops": 1,
-   "query": "ASUS VZ27EHF-W 90LM07B0-B02470",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "beats-solo-true-wireless",
    "brand": "Beats",
    "name": "Solo Buds True Wireless",
    "category": "headphones",
    "shops": 1,
    "query": "Beats Solo Buds True Wireless",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "beats-solo4-onear",
-   "brand": "Beats",
-   "name": "Solo4 OnEar",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Beats Solo4 OnEar",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "beats-studio-pro-wireless",
-   "brand": "Beats",
-   "name": "Studio Pro Wireless",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Beats Studio Pro Wireless",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "beats-studio-pro-wireless-model",
-   "brand": "Beats",
-   "name": "Studio Pro Wireless Model",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Beats Studio Pro Wireless Model",
    "what": "missing",
    "width": 0
   },
@@ -843,16 +783,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Dell 15, LDC15250-7427BLK-PUS, Touch, W11",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "dell-27-e2723h",
-   "brand": "Dell",
-   "name": "27'' E2723H",
-   "category": "monitor",
-   "shops": 1,
-   "query": "Dell 27'' E2723H",
    "what": "missing",
    "width": 0
   },
@@ -1547,16 +1477,6 @@
    "width": 0
   },
   {
-   "id": "honor-choice-clip-mak-me01",
-   "brand": "Honor",
-   "name": "Choice Clip MAK-ME01",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Honor Choice Clip MAK-ME01",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
    "brand": "Honor",
    "name": "MagicBook Pro 16",
@@ -1653,16 +1573,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "HP OmniBook 5 16 (Ultra 7)",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-pc-maokong24i1c23",
-   "brand": "HP",
-   "name": "PC Maokong24I1C23",
-   "category": "desktop",
-   "shops": 1,
-   "query": "HP PC Maokong24I1C23",
    "what": "missing",
    "width": 0
   },
@@ -1923,66 +1833,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Lenovo Yoga 9 14ILL10",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-24g411a-b",
-   "brand": "LG",
-   "name": "24G411A-B",
-   "category": "monitor",
-   "shops": 1,
-   "query": "LG 24G411A-B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-24gs50f-b",
-   "brand": "LG",
-   "name": "24GS50F-B",
-   "category": "monitor",
-   "shops": 1,
-   "query": "LG 24GS50F-B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-27gs50f-b",
-   "brand": "LG",
-   "name": "27GS50F-B",
-   "category": "monitor",
-   "shops": 1,
-   "query": "LG 27GS50F-B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-27u421a-b",
-   "brand": "LG",
-   "name": "27U421A-B",
-   "category": "monitor",
-   "shops": 1,
-   "query": "LG 27U421A-B",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-27u511sa-w",
-   "brand": "LG",
-   "name": "27U511SA-W",
-   "category": "monitor",
-   "shops": 1,
-   "query": "LG 27U511SA-W",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-29u531a-w",
-   "brand": "LG",
-   "name": "29U531A-W",
-   "category": "monitor",
-   "shops": 1,
-   "query": "LG 29U531A-W",
    "what": "missing",
    "width": 0
   },
@@ -2423,16 +2273,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "Microsoft Surface Go 2",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "microsoft-xbox",
-   "brand": "Microsoft",
-   "name": "Xbox Headset",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Microsoft Xbox Headset",
    "what": "missing",
    "width": 0
   },
@@ -3747,16 +3587,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-redmi-buds-6",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 6",
-   "category": "earbuds",
-   "shops": 0,
-   "query": "Xiaomi Redmi Buds 6",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "jbl-clip-4",
    "brand": "JBL",
    "name": "Clip 4",
@@ -4045,6 +3875,16 @@
    "query": "Honor X7c",
    "what": "too small",
    "width": 534
+  },
+  {
+   "id": "hp-pc-maokong24i1c23",
+   "brand": "HP",
+   "name": "PC Maokong24I1C23",
+   "category": "desktop",
+   "shops": 1,
+   "query": "HP PC Maokong24I1C23",
+   "what": "too small",
+   "width": 591
   },
   {
    "id": "jbl-clip-4-squad",

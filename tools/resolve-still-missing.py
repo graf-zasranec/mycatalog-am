@@ -124,7 +124,7 @@ def pick(cat, want, cap='', shop=''):
     if want in cat:
         return cat[want]
     hits = sorted((k, v) for k, v in cat.items()
-                  if k.startswith(want) and k[len(want):len(want) + 1].isdigit())
+                  if k.startswith(want) or (want in k))
     if not hits:
         return None
     if cap:
@@ -132,6 +132,54 @@ def pick(cat, want, cap='', shop=''):
         if exact:
             return exact[0]
     return min(hits, key=lambda kv: len(kv[0]))[1]
+
+
+def pick_color(cat, want, cap=''):
+    """For rows whose title carries the variance as a parenthesized color phrase
+    (Dyson etc.): match that phrase against the slug instead of the full title."""
+    m = re.search(r'\(([^)]+)\)', want)
+    if not m or m.group(1) == '':
+        return None
+    phrase = squash(m.group(1))
+    if len(phrase) < 6:
+        return None
+    hits = sorted((k, v) for k, v in cat.items() if phrase in k)
+    if not hits:
+        return None
+    if cap:
+        exact = [v for k, v in hits if cap in k]
+        if exact:
+            return exact[0]
+    return min(hits, key=lambda kv: len(kv[0]))[1]
+
+
+def _lcs(a, b):
+    """Longest common substring length."""
+    n, m = len(a), len(b)
+    table = [[0] * (m + 1) for _ in range(n + 1)]
+    best = 0
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            if a[i - 1] == b[j - 1]:
+                table[i][j] = table[i - 1][j - 1] + 1
+                if table[i][j] > best:
+                    best = table[i][j]
+    return best
+
+
+def pick_code(cat, title):
+    """Model-code based match: Dyson HS05/HS08/HD16/HT01 etc. rows put the code in
+    the slug. Restrict to candidates containing the code, choose the one sharing the
+    longest common substring with the title (colors/descriptors are noisy)."""
+    code = re.search(r'(?:hs|hd|ht)\d{2}', squash(title))
+    if not code:
+        return None
+    c = code.group(0)
+    pool = [(k, v) for k, v in cat.items() if c in k]
+    if not pool:
+        return None
+    t = squash(title)
+    return max(pool, key=lambda kv: _lcs(kv[0], t))[1]
 
 
 def main():
@@ -177,10 +225,22 @@ def main():
         'orange2026': 'https://istyle.am/en/product/Dyson Airstrait™ HT01  Orange 2026',
     }
 
+    PIXEL_MANUAL = {
+        'samsungtaba9x216': 'https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x216',
+        'samsungtaba9x210': 'https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x210',
+        'sonyps5pulseexplorewirelessearbuds': 'https://www.pixel.am/am/product/ps5-pulse-explore-earbuds-white',
+        'sonyps5pulseelitewirelessheadset': 'https://www.pixel.am/am/product/ps5-pulse-elite-white',
+        'sonyps5hdcamera': 'https://www.pixel.am/am/product/sony-ps5-camera-white',
+    }
+
     def manual_base(shop, want, title):
         if shop == 'istyle':
             for k, v in ISTYLE_MANUAL.items():
                 if want.startswith(k) or k in want:
+                    return v
+        if shop == 'pixel':
+            for k, v in PIXEL_MANUAL.items():
+                if k in want:
                     return v
         return None
 
@@ -220,6 +280,13 @@ def main():
         if not hit:
             # slugs often spell roman numerals with digits (Willen II -> willen-2)
             hit = pick(cat_for(shop), want.replace('iii', '3').replace('ii', '2').replace('iv', '4'), cap, shop)
+        if not hit:
+            hit = pick_color(cat_for(shop), title, cap)
+        if not hit:
+            # pixel 2024 Watch Ultra rows: slugs drop the year suffix
+            hit = pick(cat_for(shop), want.replace('2024', '').replace('2025', ''), cap, shop)
+        if not hit:
+            hit = pick_code(cat_for(shop), title)
         if hit:
             # still-missing lists the 1-based file line; lns is 0-based
             resolved[int(r['listings_line']) - 1] = hit

@@ -17,7 +17,7 @@
 
 import fs from 'node:fs';
 
-const UA = 'ImpulsiveBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
+const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
 const DELAY_MS = 400;
 const TIMEOUT_MS = 30000;
 

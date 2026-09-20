@@ -11350,7 +11350,9 @@
   "brand": "Beats",
   "name": "Studio Pro Wireless",
   "aliases": [
-   "Ականջակալ Beats Studio Pro Wireless (A2924)"
+   "Ականջակալ Beats Studio Pro Wireless (A2924)",
+   "Studio Pro Wireless Model",
+   "Ականջակալ Beats Studio Pro Wireless Model (A2924)"
   ],
   "tier": "mid",
   "priceAmd": 139900,
@@ -11372,36 +11374,10 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "beats-studio-pro-wireless-model",
-  "category": "headphones",
-  "brand": "Beats",
-  "name": "Studio Pro Wireless Model",
-  "aliases": [
-   "Ականջակալ Beats Studio Pro Wireless Model (A2924)"
   ],
-  "tier": "mid",
-  "priceAmd": 139900,
-  "priceAmdMax": 139900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 139900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Beats Studio Pro Wireless Model.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+  "colors": [
+   "Sandstone",
+   "Navy"
   ]
  },
  {
