@@ -1849,6 +1849,11 @@ const HAND = {
   miarmenia: { name: 'Mi Armenia', site: 'https://miarmenia.am', note: 'Xiaomi brand store' },
   mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
   zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
+  // Viva's own shop, added 2026-09-20 from an export the owner took that day. Its robots.txt is
+  // "Allow: /" with a sitemap and its product pages carry ld+json prices, so this is a shop that
+  // could be crawled rather than carried by hand - the rows are here because the export was what
+  // arrived, not because the shop refuses anything.
+  viva: { name: 'Viva', site: 'https://shop.viva.am', note: 'mobile operator shop' },
 };
 for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 
