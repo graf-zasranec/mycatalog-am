@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T22:41:07.788Z",
+ "generated": "2026-09-21T06:04:43.467Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -124,15 +124,6 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro",
-    "price": 474000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/iphone-17-pro",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
     "image": null,
     "storage": 256,
@@ -175,6 +166,17 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone 17 Pro (eSim)",
+    "price": 475000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-esim.html",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "shop": "notebookcentre",
     "title": "iPhone 17 Pro",
     "price": 475000,
@@ -203,17 +205,6 @@
     "storage": 256,
     "color": "Deep Blue",
     "url": "https://notebookcentre.am/en/product/iphone-17-pro-deep-blue-esim-256-gb",
-    "seeded": true,
-    "esim": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone 17 Pro (eSim)",
-    "price": 475000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-esim.html",
     "seeded": true,
     "esim": true,
     "seen": "2026-09-20"
@@ -372,6 +363,17 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone 17 Pro (Nano-Sim)",
+    "price": 509000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-nano-sim.html",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "shop": "notebookcentre",
     "title": "iPhone 17 Pro Silver / Nano-SIM / 256 GB",
     "price": 509000,
@@ -408,13 +410,13 @@
    },
    {
     "id": "apple-iphone-17-pro",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone 17 Pro (Nano-Sim)",
-    "price": 509000,
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Silver",
+    "price": 519000,
     "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-nano-sim.html",
+    "color": "Silver",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-silver",
     "seeded": true,
-    "esim": false,
     "seen": "2026-09-20"
    },
    {
@@ -750,6 +752,17 @@
     "color": null,
     "inStock": true,
     "shop": "allsell",
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro",
+    "shop": "redstore",
+    "title": "iPhone 17 Pro 256GB Cosmic Orange Dual",
+    "price": 579000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://redstore.am/en/product/iphone-17-pro-256gb-cosmic-orange-dual",
+    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -1546,15 +1559,6 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro Max",
-    "price": 514000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 256,
@@ -1597,6 +1601,17 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone 17 Pro Max (eSim)",
+    "price": 515000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-max-esim.html",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "shop": "notebookcentre",
     "title": "iPhone 17 Pro Max",
     "price": 515000,
@@ -1625,17 +1640,6 @@
     "storage": 256,
     "color": "Deep Blue",
     "url": "https://notebookcentre.am/en/product/iphone-17-pro-max-deep-blue-esim-256-gb",
-    "seeded": true,
-    "esim": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone 17 Pro Max (eSim)",
-    "price": 515000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-max-esim.html",
     "seeded": true,
     "esim": true,
     "seen": "2026-09-20"
@@ -1806,6 +1810,27 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "pixel",
+    "title": "iPhone 17 Pro Max",
+    "price": 559000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
+    "seeded": true
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone 17 Pro Max (Nano-Sim)",
+    "price": 559000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-max-nano-sim.html",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "shop": "notebookcentre",
     "title": "iPhone 17 Pro Max Cosmic Orange / Nano-SIM / 256 GB",
     "price": 559000,
@@ -1836,27 +1861,6 @@
     "storage": 256,
     "color": "Silver",
     "url": "https://notebookcentre.am/en/product/iphone-17-pro-max-silver-nano-sim-256-gb",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro Max",
-    "price": 559000,
-    "storage": 512,
-    "color": "Black",
-    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone 17 Pro Max (Nano-Sim)",
-    "price": 559000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-17-pro-max-nano-sim.html",
     "seeded": true,
     "esim": false,
     "seen": "2026-09-20"
@@ -3210,16 +3214,6 @@
   "apple-iphone-17": [
    {
     "id": "apple-iphone-17",
-    "shop": "pixel",
-    "title": "iPhone 17",
-    "price": 344000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://www.pixel.am/en/product/iphone-17",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-17",
     "price": 354000,
     "storage": 256,
     "title": "iPhone 17",
@@ -3775,7 +3769,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/en/iphone17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-17",
@@ -3786,7 +3781,8 @@
     "color": "White",
     "url": "https://shop.ucom.am/en/iphone17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-17",
@@ -3797,7 +3793,8 @@
     "color": "Lavender",
     "url": "https://shop.ucom.am/en/iphone17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-17",
@@ -3851,6 +3848,16 @@
     "storage": 256,
     "color": "Mist Blue",
     "url": "https://shop.viva.am/en/product/iphone-17-256gb-mist-blue/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone 17",
+    "price": 429000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-17.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -3912,16 +3919,6 @@
     "url": "https://notebookcentre.am/en/product/iphone-17-black-nano-sim-256-gb",
     "seeded": true,
     "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone 17",
-    "price": 429000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-17.html",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -4019,6 +4016,17 @@
     "storage": 256,
     "color": "Black",
     "url": "https://redstore.am/en/product/iphone-17-256gb-black",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "redstore",
+    "title": "iPhone 17 256GB White",
+    "price": 449000,
+    "storage": 256,
+    "color": "White",
+    "url": "https://redstore.am/en/product/iphone-17-256gb-white",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -4272,7 +4280,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/en/iphone17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-17",
@@ -4335,11 +4344,11 @@
    },
    {
     "id": "apple-iphone-air",
-    "shop": "pixel",
-    "title": "iPhone Air",
-    "price": 384000,
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone Air",
+    "price": 395000,
     "storage": 256,
-    "url": "https://www.pixel.am/en/product/iphone-air",
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-air.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -4387,16 +4396,6 @@
     "url": "https://notebookcentre.am/en/product/iphone-air-cloud-white-esim-256-gb",
     "seeded": true,
     "esim": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-air",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone Air",
-    "price": 395000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-air.html",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -5922,6 +5921,16 @@
    },
    {
     "id": "apple-iphone-16",
+    "shop": "yerevanmobile",
+    "title": "Apple iPhone 16",
+    "price": 365000,
+    "storage": 128,
+    "url": "https://www.yerevanmobile.am/en/apple-iphone-16.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-iphone-16",
     "shop": "notebookcentre",
     "title": "iPhone 16",
     "price": 365000,
@@ -5971,16 +5980,6 @@
     "storage": 128,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/iphone-16-black-128-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-16",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone 16",
-    "price": 365000,
-    "storage": 128,
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-16.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -6534,22 +6533,22 @@
    },
    {
     "id": "apple-ipad-pro-11-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Pro 11/M5/ WIFI",
+    "price": 479000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-11-m5-wifi.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
     "shop": "notebookcentre",
     "title": "iPad Pro 11 M5 WiFi Silver / 256 GB",
     "price": 479000,
     "storage": 256,
     "color": "Silver",
     "url": "https://notebookcentre.am/en/product/ipad-pro-11-m5-wifi-silver-256-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-11-m5",
-    "shop": "yerevanmobile",
-    "title": "Apple iPad Pro 11/M5/ WIFI",
-    "price": 479000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-11-m5-wifi.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -6624,6 +6623,16 @@
    },
    {
     "id": "apple-ipad-pro-11-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Ipad Pro 11/M5/ WIFI+Cellular",
+    "price": 559000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-11-m5-wifi-cellular.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-ipad-pro-11-m5",
     "shop": "notebookcentre",
     "title": "iPad Pro 11 M5 WiFi Silver / 512 GB",
     "price": 559000,
@@ -6641,16 +6650,6 @@
     "storage": 512,
     "color": "Space Black",
     "url": "https://notebookcentre.am/en/product/ipad-pro-11-m5-wifi-space-black-512-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-11-m5",
-    "shop": "yerevanmobile",
-    "title": "Apple Ipad Pro 11/M5/ WIFI+Cellular",
-    "price": 559000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-11-m5-wifi-cellular.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -6952,6 +6951,16 @@
    },
    {
     "id": "apple-ipad-air-11-m4",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Air 11/M4/Wifi+Cellular",
+    "price": 399000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi-cellular.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-ipad-air-11-m4",
     "shop": "notebookcentre",
     "title": "iPad Air 11 M4 WiFi + Cellular",
     "price": 399000,
@@ -7001,16 +7010,6 @@
     "storage": 256,
     "color": "Space Gray",
     "url": "https://notebookcentre.am/en/product/ipad-air-11-m4-wifi-space-gray-256-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-11-m4",
-    "shop": "yerevanmobile",
-    "title": "Apple iPad Air 11/M4/Wifi+Cellular",
-    "price": 399000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi-cellular.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -7408,16 +7407,6 @@
    },
    {
     "id": "apple-airpods-max-2",
-    "shop": "notebookcentre",
-    "title": "Airpods Max (Type-C)",
-    "price": 199000,
-    "storage": null,
-    "url": "https://notebookcentre.am/en/product/airpods-max-type-c",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-max-2",
     "shop": "ibolit",
     "title": "Apple AirPods Max  Type-C   Orange",
     "price": 199000,
@@ -7446,6 +7435,16 @@
     "storage": null,
     "color": "Starlight",
     "url": "https://ibolit.mobi/product/apple-airpods-max-type-c-starlight/",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-max-2",
+    "shop": "notebookcentre",
+    "title": "Airpods Max (Type-C)",
+    "price": 199000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/product/airpods-max-type-c",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -7596,6 +7595,16 @@
    },
    {
     "id": "apple-airpods-max-2",
+    "shop": "yerevanmobile",
+    "title": "Apple AirPods Max 2",
+    "price": 239000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/apple-airpods-max-2.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-max-2",
     "shop": "notebookcentre",
     "title": "Apple AirPods Max (Type-C) Midnight",
     "price": 239000,
@@ -7635,16 +7644,6 @@
     "storage": null,
     "color": "Orange",
     "url": "https://notebookcentre.am/en/product/apple-airpods-max-type-c-orange",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-max-2",
-    "shop": "yerevanmobile",
-    "title": "Apple AirPods Max 2",
-    "price": 239000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/apple-airpods-max-2.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -8578,6 +8577,16 @@
    },
    {
     "id": "apple-watch-series-11",
+    "shop": "yerevanmobile",
+    "title": "Apple Watch Series 11 42mm",
+    "price": 155000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/apple-watch-series-11-42mm.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-11",
     "shop": "notebookcentre",
     "title": "Apple Watch 11 42mm Space Gray",
     "price": 155000,
@@ -8615,16 +8624,6 @@
     "price": 155000,
     "storage": null,
     "url": "https://notebookcentre.am/en/product/apple-watch-11-42mm",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-watch-series-11",
-    "shop": "yerevanmobile",
-    "title": "Apple Watch Series 11 42mm",
-    "price": 155000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/apple-watch-series-11-42mm.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -8672,6 +8671,16 @@
    },
    {
     "id": "apple-watch-series-11",
+    "shop": "yerevanmobile",
+    "title": "Apple Watch Series 11 46mm",
+    "price": 165000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/apple-watch-series-11-46mm.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-watch-series-11",
     "shop": "notebookcentre",
     "title": "Apple Watch 11 46mm Silver",
     "price": 165000,
@@ -8709,16 +8718,6 @@
     "price": 165000,
     "storage": null,
     "url": "https://notebookcentre.am/en/product/apple-watch-11-46mm",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-watch-series-11",
-    "shop": "yerevanmobile",
-    "title": "Apple Watch Series 11 46mm",
-    "price": 165000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/apple-watch-series-11-46mm.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -8990,7 +8989,7 @@
     "shop": "notebookcentre",
     "title": "Apple Watch SE 3 44mm",
     "price": 129000,
-    "storage": 44,
+    "storage": null,
     "url": "https://notebookcentre.am/en/product/apple-watch-se-3-44mm",
     "seeded": true,
     "seen": "2026-09-20"
@@ -12719,6 +12718,16 @@
    },
    {
     "id": "samsung-galaxy-s26-plus",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy S26 Plus",
+    "price": 349000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s26-plus.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-plus",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy S26+",
     "price": 349000,
@@ -12735,16 +12744,6 @@
     "storage": 256,
     "color": "Sky Blue",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-sky-blue-256-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26-plus",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy S26 Plus",
-    "price": 349000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s26-plus.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -13327,6 +13326,25 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
+    "shop": "pixel",
+    "title": "Samsung Galaxy S26 Ultra",
+    "price": 399000,
+    "storage": 256,
+    "url": "https://www.pixel.am/en/product/samsung-galaxy-s26-ultra",
+    "seeded": true
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy S26 Ultra",
+    "price": 399000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s26-ultra.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26-ultra",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy S26 Ultra",
     "price": 399000,
@@ -13365,25 +13383,6 @@
     "storage": 256,
     "color": "Cobalt Violet",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-12-gb-256-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "shop": "pixel",
-    "title": "Samsung Galaxy S26 Ultra",
-    "price": 399000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-s26-ultra",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy S26 Ultra",
-    "price": 399000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s26-ultra.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -13697,7 +13696,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13709,7 +13709,8 @@
     "color": "Cobalt Violet",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13721,7 +13722,8 @@
     "color": "Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13937,7 +13939,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13949,7 +13952,8 @@
     "color": "Cobalt Violet",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13961,7 +13965,8 @@
     "color": "Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -15752,21 +15757,21 @@
    },
    {
     "id": "xiaomi-17t-pro",
-    "shop": "notebookcentre",
-    "title": "Xiaomi 17T Pro",
-    "price": 327900,
-    "storage": 256,
-    "url": "https://notebookcentre.am/en/product/xiaomi-17t-pro",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-17t-pro",
     "shop": "miarmenia",
     "title": "Xiaomi 17T Pro",
     "price": 327900,
     "storage": 256,
     "url": "https://miarmenia.am/ru/product/558/xiaomi-17t-pro-12-256-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-17t-pro",
+    "shop": "notebookcentre",
+    "title": "Xiaomi 17T Pro",
+    "price": 327900,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/product/xiaomi-17t-pro",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -15826,6 +15831,16 @@
    },
    {
     "id": "xiaomi-17t-pro",
+    "shop": "miarmenia",
+    "title": "Xiaomi 17T Pro",
+    "price": 346900,
+    "storage": 512,
+    "url": "https://miarmenia.am/ru/product/559/xiaomi-17t-pro-12-512-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "xiaomi-17t-pro",
     "shop": "notebookcentre",
     "title": "Xiaomi 17T Pro Deep Blue",
     "price": 346900,
@@ -15853,16 +15868,6 @@
     "storage": 512,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/xiaomi-17t-pro-black",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-17t-pro",
-    "shop": "miarmenia",
-    "title": "Xiaomi 17T Pro",
-    "price": 346900,
-    "storage": 512,
-    "url": "https://miarmenia.am/ru/product/559/xiaomi-17t-pro-12-512-gb",
     "seeded": true,
     "seen": "2026-09-20"
    }
@@ -16306,7 +16311,8 @@
     "color": "Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-fold-8-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
@@ -16318,7 +16324,8 @@
     "color": "Violet Shadow",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-fold-8-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
@@ -16377,7 +16384,8 @@
     "color": "Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-fold-8-ultra.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-fold-8-ultra",
@@ -16498,6 +16506,16 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy Z Fold 8",
+    "price": 619000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-z-fold-8.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-8",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy Z Fold 8",
     "price": 619000,
@@ -16525,16 +16543,6 @@
     "storage": 256,
     "color": "Cream",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-z-fold-8-cream",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy Z Fold 8",
-    "price": 619000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-z-fold-8.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -16743,15 +16751,6 @@
    },
    {
     "id": "samsung-galaxy-z-fold-8",
-    "shop": "pixel",
-    "title": "Samsung Galaxy Z Fold 8",
-    "price": 688000,
-    "storage": 256,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-z-fold-8",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-z-fold-8",
     "price": 757900,
     "storage": 256,
     "title": "Samsung Galaxy Z Fold 8 256GB (Lavender)",
@@ -16773,7 +16772,8 @@
     "color": "Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-fold-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-fold-8",
@@ -16785,7 +16785,8 @@
     "color": "Cream",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-fold-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-fold-8",
@@ -16830,7 +16831,8 @@
     "color": "Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-fold-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-fold-8",
@@ -17084,7 +17086,8 @@
     "color": "Pink",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -17095,7 +17098,8 @@
     "color": "Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -17106,7 +17110,8 @@
     "color": "Cream",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -17212,7 +17217,8 @@
     "color": "Graphite",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -17223,7 +17229,8 @@
     "color": "Cream",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-8.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-8",
@@ -17381,15 +17388,6 @@
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a27",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A27",
-    "price": 109000,
-    "storage": 128,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a27",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-a27",
@@ -19059,15 +19057,6 @@
    },
    {
     "id": "samsung-galaxy-a57",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A57",
-    "price": 149000,
-    "storage": 128,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a57",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a57",
     "title": "Samsung Galaxy A57 Price In Armenia - Warranty - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-a57",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_4__52.jpg",
@@ -19438,49 +19427,6 @@
    },
    {
     "id": "samsung-galaxy-a57",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy A57 Awesome Lilac / 256 GB / 8 GB",
-    "price": 189000,
-    "storage": 256,
-    "color": "Awesome Lilac",
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-lilac-256-gb-8-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy A57 Awesome Gray / 256 GB / 8 GB",
-    "price": 189000,
-    "storage": 256,
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-gray-256-gb-8-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy A57 Awesome Navy / 256 GB / 8 GB",
-    "price": 189000,
-    "storage": 256,
-    "color": "Awesome Navy",
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-navy-256-gb-8-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy A57 Awesome Icyblue / 256 GB / 8 GB",
-    "price": 189000,
-    "storage": 256,
-    "color": "Awesome Icyblue",
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-icyblue-256-gb-8-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
     "shop": "redstore",
     "title": "Samsung Galaxy A57 12GB/256GB Gray",
     "price": 189000,
@@ -19520,6 +19466,49 @@
     "storage": 256,
     "color": "Lilac",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-lilac",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy A57 Awesome Lilac / 256 GB / 8 GB",
+    "price": 189000,
+    "storage": 256,
+    "color": "Awesome Lilac",
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-lilac-256-gb-8-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy A57 Awesome Gray / 256 GB / 8 GB",
+    "price": 189000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-gray-256-gb-8-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy A57 Awesome Navy / 256 GB / 8 GB",
+    "price": 189000,
+    "storage": 256,
+    "color": "Awesome Navy",
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-navy-256-gb-8-gb",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a57",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy A57 Awesome Icyblue / 256 GB / 8 GB",
+    "price": 189000,
+    "storage": 256,
+    "color": "Awesome Icyblue",
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-icyblue-256-gb-8-gb",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -19726,6 +19715,16 @@
    },
    {
     "id": "samsung-galaxy-s26",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy S26",
+    "price": 319000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s26.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s26",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy S26 Sky Blue / 256 GB",
     "price": 319000,
@@ -19763,16 +19762,6 @@
     "price": 319000,
     "storage": 256,
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-2",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy S26",
-    "price": 319000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s26.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -19997,7 +19986,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20009,7 +19999,8 @@
     "color": "White",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20021,7 +20012,8 @@
     "color": "Cobalt Violet",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20033,7 +20025,8 @@
     "color": "Sky Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20278,7 +20271,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20290,7 +20284,8 @@
     "color": "White",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20302,7 +20297,8 @@
     "color": "Cobalt Violet",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -20314,7 +20310,8 @@
     "color": "Sky Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s26.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s26",
@@ -21912,7 +21909,8 @@
     "color": "Grey",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a17",
@@ -21924,7 +21922,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a17",
@@ -21936,7 +21935,8 @@
     "color": "Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a17",
@@ -22027,6 +22027,16 @@
    },
    {
     "id": "samsung-galaxy-a17",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy A17",
+    "price": 72000,
+    "storage": 128,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a17.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a17",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy A17",
     "price": 72000,
@@ -22043,16 +22053,6 @@
     "storage": 128,
     "color": "Blue",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a17-light-blue",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a17",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy A17",
-    "price": 72000,
-    "storage": 128,
-    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a17.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -22079,7 +22079,8 @@
     "color": "Grey",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a17",
@@ -22091,7 +22092,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a17",
@@ -22103,7 +22105,8 @@
     "color": "Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a17.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a17",
@@ -22959,7 +22962,8 @@
     "color": "Green",
     "url": "https://shop.ucom.am/en/samsung-galaxy-a07.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a07",
@@ -22971,7 +22975,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/en/samsung-galaxy-a07.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a07",
@@ -22983,7 +22988,8 @@
     "color": "Light Violet",
     "url": "https://shop.ucom.am/en/samsung-galaxy-a07.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a07",
@@ -23068,6 +23074,16 @@
    },
    {
     "id": "samsung-galaxy-a07",
+    "shop": "yerevanmobile",
+    "title": "Samsung Galaxy A07 4G",
+    "price": 52000,
+    "storage": 64,
+    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a07-4g.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a07",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy A07",
     "price": 52000,
@@ -23084,16 +23100,6 @@
     "storage": 64,
     "color": "Light Violet",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a07-light-violet-64-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a07",
-    "shop": "yerevanmobile",
-    "title": "Samsung Galaxy A07 4G",
-    "price": 52000,
-    "storage": 64,
-    "url": "https://www.yerevanmobile.am/en/samsung-galaxy-a07-4g.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -23155,7 +23161,8 @@
     "color": "Green",
     "url": "https://shop.ucom.am/en/samsung-galaxy-a07.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a07",
@@ -23167,7 +23174,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/en/samsung-galaxy-a07.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a07",
@@ -23530,21 +23538,21 @@
    },
    {
     "id": "samsung-galaxy-z-fold-7",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy Z Fold 7",
-    "price": 539000,
-    "storage": 256,
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-z-fold-7",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-z-fold-7",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy Z Fold7",
     "price": 539000,
     "storage": 256,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-z-fold7.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-z-fold-7",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy Z Fold 7",
+    "price": 539000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-z-fold-7",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -23942,7 +23950,8 @@
     "color": "Blue Shadow",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-7.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-7",
@@ -23954,7 +23963,8 @@
     "color": "Jetblack",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-7.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-7",
@@ -23977,7 +23987,8 @@
     "color": "Blue Shadow",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-7.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-z-flip-7",
@@ -23989,7 +24000,8 @@
     "color": "Jetblack",
     "url": "https://shop.ucom.am/am/samsung-galaxy-z-flip-7.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    }
   ],
   "samsung-galaxy-z-flip-7-fe": [
@@ -25147,7 +25159,8 @@
     "color": "Awesome Lavender",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -25159,7 +25172,8 @@
     "color": "Awesome Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -25171,7 +25185,8 @@
     "color": "Awesome White",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -25183,7 +25198,8 @@
     "color": "Awesome Lime",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -25195,7 +25211,8 @@
     "color": "Awesome Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -25207,7 +25224,8 @@
     "color": "Awesome White",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a36.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a36",
@@ -25364,7 +25382,8 @@
     "color": "Icyblue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25-plus.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -25376,7 +25395,8 @@
     "color": "Navy",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25-plus.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -25388,7 +25408,8 @@
     "color": "Mint",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25-plus.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -25400,7 +25421,8 @@
     "color": "Silver Shadow",
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25-plus.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -25411,7 +25433,8 @@
     "ram": 12,
     "url": "https://shop.ucom.am/am/samsung-galaxy-s25-plus.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-s25-plus",
@@ -28908,21 +28931,21 @@
    },
    {
     "id": "apple-airpods-pro-2",
-    "shop": "notebookcentre",
-    "title": "Apple Airpods Pro 2 (Type-C)",
-    "price": 84000,
-    "storage": null,
-    "url": "https://notebookcentre.am/en/product/apple-airpods-pro-2-type-c",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-airpods-pro-2",
     "shop": "yerevanmobile",
     "title": "Apple AirPods Pro 2 (Type-C)",
     "price": 84000,
     "storage": null,
     "url": "https://www.yerevanmobile.am/en/apple-airpods-pro-2-type-c.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-airpods-pro-2",
+    "shop": "notebookcentre",
+    "title": "Apple Airpods Pro 2 (Type-C)",
+    "price": 84000,
+    "storage": null,
+    "url": "https://notebookcentre.am/en/product/apple-airpods-pro-2-type-c",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -29796,7 +29819,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -29907,7 +29931,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30245,7 +30270,8 @@
     "color": "Burgundy",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30256,7 +30282,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30267,7 +30294,8 @@
     "color": "Glacier",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30582,7 +30610,8 @@
     "color": "Burgundy",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30593,7 +30622,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30604,7 +30634,8 @@
     "color": "Glacier",
     "url": "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30773,7 +30804,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -30884,7 +30916,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31306,7 +31339,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31621,7 +31655,8 @@
     "color": "Burgundy",
     "url": "https://shop.ucom.am/am/iphone-18-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31632,7 +31667,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/iphone-18-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31643,7 +31679,8 @@
     "color": "Glacier",
     "url": "https://shop.ucom.am/am/iphone-18-pro.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32529,15 +32566,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a16",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A16",
-    "price": 56900,
-    "storage": 128,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a16",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-a16",
@@ -33972,6 +34000,16 @@
    },
    {
     "id": "apple-ipad-air-13-m4",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Air 13/M4/Wifi",
+    "price": 439000,
+    "storage": 128,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-ipad-air-13-m4",
     "shop": "notebookcentre",
     "title": "iPad Air 13 M4 WiFi Blue / 128 GB",
     "price": 439000,
@@ -34017,10 +34055,10 @@
    {
     "id": "apple-ipad-air-13-m4",
     "shop": "yerevanmobile",
-    "title": "Apple iPad Air 13/M4/Wifi",
-    "price": 439000,
-    "storage": 128,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi.html",
+    "title": "Apple iPad Air 13/M4/Wifi+Cellular",
+    "price": 499000,
+    "storage": 256,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi-cellular.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -34075,16 +34113,6 @@
     "storage": 256,
     "color": "Purple",
     "url": "https://notebookcentre.am/en/product/ipad-air-13-m4-wifi-purple-256-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-air-13-m4",
-    "shop": "yerevanmobile",
-    "title": "Apple iPad Air 13/M4/Wifi+Cellular",
-    "price": 499000,
-    "storage": 256,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi-cellular.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -34856,6 +34884,26 @@
    },
    {
     "id": "apple-ipad-pro-13-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple iPad Pro 13/M5/ WIFI",
+    "price": 659000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-13-m5-wifi.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
+    "shop": "yerevanmobile",
+    "title": "Apple Ipad Pro 13/M5/ WIFI+Cellular",
+    "price": 659000,
+    "storage": null,
+    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-13-m5-wifi-cellular.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "apple-ipad-pro-13-m5",
     "shop": "notebookcentre",
     "title": "Apple iPad Pro 13 (2025) M5 WIFI",
     "price": 659000,
@@ -34872,26 +34920,6 @@
     "storage": 512,
     "color": "Space Black",
     "url": "https://notebookcentre.am/en/product/ipad-pro-13-m5-wifi-space-black-512-gb",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-13-m5",
-    "shop": "yerevanmobile",
-    "title": "Apple iPad Pro 13/M5/ WIFI",
-    "price": 659000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-13-m5-wifi.html",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-ipad-pro-13-m5",
-    "shop": "yerevanmobile",
-    "title": "Apple Ipad Pro 13/M5/ WIFI+Cellular",
-    "price": 659000,
-    "storage": null,
-    "url": "https://www.yerevanmobile.am/en/apple-ipad-pro-13-m5-wifi-cellular.html",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -39164,6 +39192,15 @@
    },
    {
     "id": "sony-ps5-slim",
+    "shop": "pixel",
+    "title": "Sony PS5 Slim",
+    "price": 309000,
+    "storage": 1024,
+    "url": "https://www.pixel.am/en/product/sony-ps5-slim-digital-edition-eu",
+    "seeded": true
+   },
+   {
+    "id": "sony-ps5-slim",
     "shop": "notebookcentre",
     "title": "PlayStation 5 Slim (Digital)",
     "price": 309000,
@@ -39171,15 +39208,6 @@
     "url": "https://notebookcentre.am/en/product/playstation-5-slim-digital",
     "seeded": true,
     "seen": "2026-09-20"
-   },
-   {
-    "id": "sony-ps5-slim",
-    "shop": "pixel",
-    "title": "Sony PS5 Slim",
-    "price": 309000,
-    "storage": 1024,
-    "url": "https://www.pixel.am/en/product/sony-ps5-slim-digital-edition-eu",
-    "seeded": true
    },
    {
     "id": "sony-ps5-slim",
@@ -40327,6 +40355,56 @@
   "dji-mic-mini": [
    {
     "id": "dji-mic-mini",
+    "shop": "pixel",
+    "title": "DJI MIC MINI Infinity Black",
+    "price": 31900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-infinity-black",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "dji-mic-mini",
+    "shop": "pixel",
+    "title": "DJI MIC MINI Arctic White",
+    "price": 31900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-arctic-white",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "dji-mic-mini",
+    "shop": "pixel",
+    "title": "DJI MIC MINI (1 TX + 1 RX)",
+    "price": 39900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-1tx-1rx",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "dji-mic-mini",
+    "shop": "pixel",
+    "title": "DJI MIC MINI (2 TX + 1 MOBILE RX)",
+    "price": 44900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-2rx-1-mobile",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "dji-mic-mini",
+    "shop": "pixel",
+    "title": "DJI MIC MINI (2 TX + 1 RX)+ Charging case",
+    "price": 59900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-2tx-1rx-charging-case",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "dji-mic-mini",
     "price": 79000,
     "title": "DJI Mic Mini Sans Fil",
     "url": "https://redstore.am/en/product/dji-mic-mini-sans-fil",
@@ -40368,6 +40446,26 @@
    }
   ],
   "dji-mic-mini-2": [
+   {
+    "id": "dji-mic-mini-2",
+    "shop": "pixel",
+    "title": "DJI MIC MINI 2 ( 2 TX + 1 MOBILE RX ) Charging case",
+    "price": 66900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-2-2tx-1-mobile-rx",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "dji-mic-mini-2",
+    "shop": "pixel",
+    "title": "DJI MIC MINI 2 (2 TX + 1 RX) Charging case",
+    "price": 73900,
+    "storage": null,
+    "url": "https://www.pixel.am/am/product/dji-mic-mini-2-2tx-1rx-charging-case",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
    {
     "id": "dji-mic-mini-2",
     "price": 78300,
@@ -45800,21 +45898,21 @@
    },
    {
     "id": "samsung-galaxy-s25-edge",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy S25 Edge",
-    "price": 319000,
-    "storage": 256,
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-s25-edge",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-edge",
     "shop": "yerevanmobile",
     "title": "Samsung Galaxy S25 Edge",
     "price": 319000,
     "storage": 256,
     "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-edge.html",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-s25-edge",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy S25 Edge",
+    "price": 319000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-s25-edge",
     "seeded": true,
     "seen": "2026-09-20"
    },
@@ -46867,16 +46965,6 @@
    },
    {
     "id": "samsung-galaxy-a26",
-    "shop": "notebookcentre",
-    "title": "Samsung Galaxy A26",
-    "price": 109000,
-    "storage": 256,
-    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a26",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a26",
     "shop": "redstore",
     "title": "Samsung Galaxy A26 8GB/256GB Black",
     "price": 109000,
@@ -46905,6 +46993,16 @@
     "storage": 256,
     "color": "Mint",
     "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
+    "seeded": true,
+    "seen": "2026-09-20"
+   },
+   {
+    "id": "samsung-galaxy-a26",
+    "shop": "notebookcentre",
+    "title": "Samsung Galaxy A26",
+    "price": 109000,
+    "storage": 256,
+    "url": "https://notebookcentre.am/en/product/samsung-galaxy-a26",
     "seeded": true,
     "seen": "2026-09-20"
    }
@@ -64978,7 +65076,8 @@
     "price": 199900,
     "storage": null,
     "url": "https://shop.ucom.am/en/ipad-wi-fi.html",
-    "seeded": true
+    "seeded": true,
+    "pickOnSite": true
    }
   ],
   "honor-pad-8": [
@@ -65307,7 +65406,8 @@
     "storage": 4,
     "url": "https://shop.ucom.am/en/xiaomi-redmi-13c.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    }
   ],
   "nothing-phone-2": [
@@ -65358,7 +65458,8 @@
     "storage": null,
     "url": "https://shop.ucom.am/en/honor-x5b-plus.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    }
   ],
   "xiaomi-poco-m6": [
@@ -65469,7 +65570,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a06-4gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a06",
@@ -65481,7 +65583,8 @@
     "color": "Black",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a06-4gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a06",
@@ -65493,7 +65596,8 @@
     "color": "Light Blue",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a06-4gb.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a06",
@@ -65519,7 +65623,8 @@
     "color": "Awesome Lilac",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a55",
@@ -65531,7 +65636,8 @@
     "color": "Awesome Lilac",
     "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "pickOnSite": true
    },
    {
     "id": "samsung-galaxy-a55",
