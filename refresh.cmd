@@ -53,13 +53,21 @@ REM It runs after the two fetches above because eldorado and zigzag rows are ans
 REM caches, and before the crawl below because the crawl reads listings.csv.
 REM
 REM Not a gate: an unreachable shop leaves the old figure, which is what it did before anyway.
-REM --recheck 1 means "anything not looked at today", which is every hand row. --limit 400 keeps
-REM one night's work to roughly ten minutes on this machine: the oldest 400 are taken, they come
-REM back carrying today's date, and tomorrow's run picks up the next 400. About 1,800 rows are in
-REM the rotation, so everything is re-priced within a week and nothing is ever left behind.
-REM Raise the limit to cover more per night; drop --limit entirely to do all of them in one go.
+REM --recheck 1 means "anything not already looked at today", which is every hand row: about
+REM 1,800 of them. Left as it is, ONE run checks all of them, which adds roughly three quarters
+REM of an hour to the job on this machine.
+REM
+REM It is interruptible without losing work. Each row is dated as it is checked, so a run that is
+REM stopped half way leaves the finished half dated and the next run resumes at the rest.
+REM
+REM If that is too long to sit through, cap one run's share by setting ROW_LIMIT below, e.g.
+REM   set ROW_LIMIT=--limit 400
+REM which takes the OLDEST 400 each time. Those come back carrying today's date and sort to the
+REM back, so consecutive runs work through the whole catalogue - 400 a night covers it in five.
+set RECHECK_DAYS=1
+set ROW_LIMIT=
 echo [%date% %time%] re-pricing the hand-entered rows...
-node tools\confirm-hand.mjs --recheck 1 --limit 400
+node tools\confirm-hand.mjs --recheck %RECHECK_DAYS% %ROW_LIMIT%
 if errorlevel 1 echo   hand-row pass failed - carrying on with the figures already in listings.csv
 
 REM --fresh: the nightly job wants today's prices from every shop, not yesterday's checkpoint.
