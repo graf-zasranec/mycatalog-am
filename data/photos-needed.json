@@ -3,56 +3,26 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 200,
- "tooSmall": 60,
+ "missing": 190,
+ "tooSmall": 63,
  "products": [
   {
    "id": "xiaomi-redmi-note-15-pro-plus-5g",
    "brand": "Xiaomi",
    "name": "Redmi Note 15 Pro Plus 5G",
    "category": "phone",
-   "shops": 4,
+   "shops": 5,
    "query": "Xiaomi Redmi Note 15 Pro Plus 5G",
    "what": "missing",
    "width": 0
   },
   {
-   "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
-   "brand": "Apple",
-   "name": "iPad Air 11 Wi-Fi + Cellular 2024",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Apple iPad Air 11 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-air-13-wi-fi-plus-cellular-2024",
-   "brand": "Apple",
-   "name": "iPad Air 13 Wi-Fi + Cellular 2024",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Apple iPad Air 13 Wi-Fi + Cellular 2024",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-instinct-3-50mm-amoled",
-   "brand": "Garmin",
-   "name": "Instinct 3, AMOLED",
-   "category": "watch",
-   "shops": 2,
-   "query": "Garmin Instinct 3, AMOLED",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-venu-4-45-mm",
-   "brand": "Garmin",
-   "name": "Venu 4",
-   "category": "watch",
-   "shops": 2,
-   "query": "Garmin Venu 4",
+   "id": "microsoft-xbox",
+   "brand": "Microsoft",
+   "name": "Xbox Wireless Headset",
+   "category": "headphones",
+   "shops": 4,
+   "query": "Microsoft Xbox Wireless Headset",
    "what": "missing",
    "width": 0
   },
@@ -107,12 +77,32 @@
    "width": 0
   },
   {
-   "id": "jbl-partybox-club-120",
-   "brand": "JBL",
-   "name": "PartyBox Club 120",
-   "category": "speaker",
+   "id": "poco-c71",
+   "brand": "Xiaomi",
+   "name": "POCO C71",
+   "category": "phone",
    "shops": 2,
-   "query": "JBL PartyBox Club 120",
+   "query": "Xiaomi POCO C71",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "realme-c71",
+   "brand": "Realme",
+   "name": "C71",
+   "category": "phone",
+   "shops": 2,
+   "query": "Realme C71",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "realme-note-60x",
+   "brand": "Realme",
+   "name": "Note 60x",
+   "category": "phone",
+   "shops": 2,
+   "query": "Realme Note 60x",
    "what": "missing",
    "width": 0
   },
@@ -477,36 +467,6 @@
    "width": 0
   },
   {
-   "id": "dyson-zone-absoluteplus",
-   "brand": "Dyson",
-   "name": "Zone Absolute+",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Dyson Zone Absolute+",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-cirqa-smart-band-french-l-xl",
-   "brand": "Garmin",
-   "name": "CIRQA Smart Band French L/XL",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin CIRQA Smart Band French L/XL",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-cirqa-smart-band-mauve-l-xl",
-   "brand": "Garmin",
-   "name": "CIRQA Smart Band Mauve L-XL",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin CIRQA Smart Band Mauve L-XL",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "garmin-cirqa-smart-band-mauve-s-m",
    "brand": "Garmin",
    "name": "CIRQA Smart Band",
@@ -717,16 +677,6 @@
    "width": 0
   },
   {
-   "id": "garmin-forerunner-970-010-02969-10",
-   "brand": "Garmin",
-   "name": "Forerunner 970 010-02969-10",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Forerunner 970 010-02969-10",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "garmin-instinct-2x-solar",
    "brand": "Garmin",
    "name": "Instinct 2X Solar",
@@ -813,16 +763,6 @@
    "category": "watch",
    "shops": 1,
    "query": "Garmin Venu X1, GPS, Moss",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "garmin-venu-x1-moss",
-   "brand": "Garmin",
-   "name": "Venu X1 Moss",
-   "category": "watch",
-   "shops": 1,
-   "query": "Garmin Venu X1 Moss",
    "what": "missing",
    "width": 0
   },
@@ -1467,16 +1407,6 @@
    "width": 0
   },
   {
-   "id": "microsoft-xbox",
-   "brand": "Microsoft",
-   "name": "Xbox Wireless Headset",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Microsoft Xbox Wireless Headset",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "nothing-6974434224179",
    "brand": "Nothing",
    "name": "6974434224179",
@@ -1513,36 +1443,6 @@
    "category": "monitor",
    "shops": 1,
    "query": "Philips 24\" USB-C 24E1N3300A/00",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-c71",
-   "brand": "Xiaomi",
-   "name": "POCO C71",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi POCO C71",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "realme-c71",
-   "brand": "Realme",
-   "name": "C71",
-   "category": "phone",
-   "shops": 1,
-   "query": "Realme C71",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "realme-note-60x",
-   "brand": "Realme",
-   "name": "Note 60x",
-   "category": "phone",
-   "shops": 1,
-   "query": "Realme Note 60x",
    "what": "missing",
    "width": 0
   },
@@ -2027,6 +1927,16 @@
    "width": 369
   },
   {
+   "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
+   "brand": "Apple",
+   "name": "iPad Air 11 Wi-Fi + Cellular 2024",
+   "category": "tablet",
+   "shops": 2,
+   "query": "Apple iPad Air 11 Wi-Fi + Cellular 2024",
+   "what": "too small",
+   "width": 510
+  },
+  {
    "id": "apple-watch-series-12-gps-42mm",
    "brand": "Apple",
    "name": "Watch Series 12 GPS",
@@ -2065,6 +1975,16 @@
    "query": "Beats Flex All-Day",
    "what": "too small",
    "width": 586
+  },
+  {
+   "id": "jbl-partybox-club-120",
+   "brand": "JBL",
+   "name": "PartyBox Club 120",
+   "category": "speaker",
+   "shops": 2,
+   "query": "JBL PartyBox Club 120",
+   "what": "too small",
+   "width": 566
   },
   {
    "id": "marshall-uxbridge",
@@ -2345,6 +2265,16 @@
    "query": "DJI Mavic 3 Pro",
    "what": "too small",
    "width": 517
+  },
+  {
+   "id": "dyson-zone-absoluteplus",
+   "brand": "Dyson",
+   "name": "Zone Absolute+",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Dyson Zone Absolute+",
+   "what": "too small",
+   "width": 570
   },
   {
    "id": "honor-choice-earbuds-x3",
