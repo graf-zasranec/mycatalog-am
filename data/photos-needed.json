@@ -3,69 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1308,
- "missing": 6,
- "tooSmall": 73,
+ "missing": 0,
+ "tooSmall": 75,
  "products": [
-  {
-   "id": "apple-homepod-mini-mj2e3ll-a",
-   "brand": "Apple",
-   "name": "HomePod Mini /MJ2E3LL/A*",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Apple HomePod Mini /MJ2E3LL/A*",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3",
-   "brand": "Apple",
-   "name": "iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*",
-   "category": "tablet",
-   "shops": 1,
-   "query": "Apple iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "asus-fx607v",
-   "brand": "ASUS",
-   "name": "FX607V",
-   "category": "laptop",
-   "shops": 1,
-   "query": "ASUS FX607V",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-magicbook-x16-2026-16-wuxga-ssd1tb",
-   "brand": "Honor",
-   "name": "MagicBook X16 2026 16\" WUXGA /SSD1TB",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Honor MagicBook X16 2026 16\" WUXGA /SSD1TB",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "hp-envy-hayden-22c1",
-   "brand": "HP",
-   "name": "ENVY Hayden 22C1",
-   "category": "laptop",
-   "shops": 1,
-   "query": "HP ENVY Hayden 22C1",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-watch4-40-mm",
-   "brand": "Samsung",
-   "name": "Galaxy Watch4",
-   "category": "watch",
-   "shops": 1,
-   "query": "Samsung Galaxy Watch4",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "apple-iphone-16-plus",
    "brand": "Apple",
@@ -507,6 +447,16 @@
    "width": 534
   },
   {
+   "id": "hp-envy-hayden-22c1",
+   "brand": "HP",
+   "name": "ENVY Hayden 22C1",
+   "category": "laptop",
+   "shops": 1,
+   "query": "HP ENVY Hayden 22C1",
+   "what": "too small",
+   "width": 566
+  },
+  {
    "id": "hp-pc-maokong24i1c23",
    "brand": "HP",
    "name": "PC Maokong24I1C23",
@@ -585,6 +535,16 @@
    "query": "Samsung Galaxy Watch 3",
    "what": "too small",
    "width": 548
+  },
+  {
+   "id": "samsung-galaxy-watch4-40-mm",
+   "brand": "Samsung",
+   "name": "Galaxy Watch4",
+   "category": "watch",
+   "shops": 1,
+   "query": "Samsung Galaxy Watch4",
+   "what": "too small",
+   "width": 565
   },
   {
    "id": "sennheiser-hd-450bt",
