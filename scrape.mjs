@@ -78,6 +78,7 @@ async function get(url, tries = 2) {
 
 /* ---------- phone matching ---------- */
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
+const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
 const fullName = p => p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name;
 
 // each phone gets one or more keys; the LONGEST key that matches a listing wins,
@@ -1019,6 +1020,23 @@ if (process.argv[2] === '--selftest') {
     const got = capOf(txt);
     if (got !== want) { bad++; console.log(`FAIL capOf got=${got} want=${want} <- ${txt}`); }
   }
+  // The screen reader was silently dead for months: its \b word boundaries had been saved as
+  // literal backspace bytes, so it matched nothing and every laptop offer carried size:null -
+  // which made the 14"/16" buttons filter nothing and quote one price for both.
+  const LAP = 'apple-macbook-pro-14-m5-max';      // a real laptop id; screenOf ignores every other category
+  const scrCases = [['MacBook Pro 16 M5 Max', 16], ['MacBook Air 13.6 M5', 13],
+    ['macbook pro 16 2 m5 max', 16],              // the url slug, once punctuation is stripped
+    ['apple macbook pro 14 2 m5 max 36gb ram 2tb', 14],
+    ['MacBook Pro 15.3 M4', 15], ['MacBook Pro 14 M5 Pro', 14],
+    ['MacBook Pro M5 Max 16GB RAM', undefined],   // a capacity is not a screen
+    ['MacBook Pro M5 512GB', undefined]];
+  for (const [txt, want] of scrCases) {
+    const got = screenOf(txt, LAP);
+    if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
+  }
+  if (screenOf('MacBook Pro 16 M5', 'apple-iphone-17-pro') !== undefined) {
+    bad++; console.log('FAIL screenOf read a screen off a non-laptop');
+  }
   const colCases = [['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
     ['APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523)', ['Cosmic Orange', 'Deep Blue'], 'Cosmic Orange'],
     ['Apple iPhone 17 Pro', ['Cosmic Orange', 'Deep Blue'], null]];
@@ -1143,7 +1161,6 @@ async function crawlLd(urls, cap = 6) {
   return out;
 }
 
-const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
 
 // A MacBook Air is one product in two screens, so an offer has to say WHICH screen or it would
 // show under both. Shops write it as "MacBook Air 13 M4", "Air 13.6\"/M5/16GB" or "Pro 16 M5 Pro".
@@ -1151,10 +1168,12 @@ const phoneById = Object.fromEntries(phones.map(p => [p.id, p]));
 // capacity, not a screen. Laptops only - a 15 in a phone title is not inches.
 function screenOf(title, id) {
   if ((phoneById[id] || {}).category !== 'laptop') return undefined;
-  const m = String(title || '').match(/(13\.6|13\.3|13|14|15\.3|15|16)(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\d))/i);
+  // Apple's real diagonals are 14.2 and 16.2, and a URL slug writes them "14-2" or "16-2" once
+  // the punctuation is gone - so the decimal forms have to match a space or a dash too, and they
+  // have to come first, or bare "14" would win and the lookahead would then reject it for the "2".
+  const m = String(title || '').match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\d))/i);
   if (!m) return undefined;
-  const n = +m[1];
-  return n === 13.6 || n === 13.3 ? 13 : n === 15.3 ? 15 : n;
+  return Math.trunc(parseFloat(m[1].replace(/[\s-]/, '.')));
 }
 // A product sold in exactly one capacity, or one colour, needs no shop to state it: there is
 // only one answer. 133 offers were showing no capacity for a product that has a single tier.
@@ -1163,6 +1182,11 @@ const enrich = (o) => ({
   ...o,
   storage: o.storage ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
   ram: o.ram ?? ramOf(o.title),
+  // enrich never filled this, so every offer carried size:null and the 14"/16" chips filtered
+  // nothing - both buttons showed the whole offer list, at one price. The title is often silent
+  // about the screen but the URL slug is not ("macbook-pro-16-2-m5-max"), as with colour below.
+  size: o.size ?? screenOf(o.title, o.id)
+    ?? screenOf(String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '), o.id),
   // iSpace titles name the colour in Armenian ("Սև", "Արծաթագույն") but every shop slugs the
   // English name into the product URL, so the slug is the reliable place to read it from.
   // Last resort, and it works surprisingly often: the shop names the colour in its own photo
@@ -1204,7 +1228,7 @@ const SHOPS = {
           const u = queue[qi];
           const ph = await get(u); await sleep(DELAY_MS);
           if (!ph) continue;
-          for (const m of ph.matchAll(/<a[^>]*aria-label="Go to product variant"[^>]*>/gi)) {
+          for (const m of ph.matchAll(/<a\b[^>]*aria-label="Go to product variant"[^>]*>/gi)) {
             const href = (m[0].match(/href="(\/product\/[a-z0-9-]+)"/) || [])[1];
             if (!href) continue;
             const sib = 'https://ispace.am' + href;
