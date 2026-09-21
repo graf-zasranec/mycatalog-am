@@ -113,6 +113,41 @@ for (const [id, seed] of Object.entries(SEEDS)) {
   if (!Object.keys(out[id]).length) { delete out[id]; console.log(`  ${id}: no gallery image on the page`); }
   await sleep(600);
 }
+// ---------- apple.com ----------
+// Apple's stockists here publish 455-700px previews; apple.com serves the same product as a
+// 2000px TRANSPARENT png, which is the best source in this whole pipeline - cutout.py sees real
+// alpha and keeps it rather than asking the model to guess an edge.
+//
+// Its robots.txt names no crawler it refuses and disallows only two shop overlays, a Chinese
+// path and /tmall - none of which is this.
+//
+// The naming is regular: a buy page carries "<stem>-<colour>-select-<yyyymm>" for every finish it
+// sells, and the image server takes wid/hei/fmt. So one page yields every colour without walking
+// to each of them. Gallery stills are NOT usable and are not read: "s12-case-unselect-gallery-1"
+// is a close crop of a corner of the watch, not a photograph of the watch.
+const APPLE = {
+  'apple-iphone-16-plus': { page: 'https://www.apple.com/shop/buy-iphone/iphone-16', stem: 'iphone-16-plus' },
+};
+const APPLE_IMG = n => `https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/${n}?wid=2000&hei=2000&fmt=png-alpha`;
+
+for (const [id, { page, stem }] of Object.entries(APPLE)) {
+  const html = await get(page);
+  if (!html) { console.log(`  ${id}: apple page unreachable`); continue; }
+  // the colour sits between the stem and "-select", and nothing else on the page matches that
+  const re = new RegExp(`as-images\\.apple\\.com/is/(${stem}-([a-z]+)-select-\\d{6})`, 'g');
+  const found = new Map();
+  for (const m of html.matchAll(re)) if (!found.has(m[2])) found.set(m[2], m[1]);
+  if (!found.size) { console.log(`  ${id}: no finish image on the apple page`); continue; }
+  out[id] = out[id] || {};
+  let first = true;
+  for (const [colour, name] of found) {
+    out[id][slug(colour)] = APPLE_IMG(name);
+    if (first) { out[id].main = APPLE_IMG(name); first = false; }
+  }
+  console.log(`  ${id}: ${found.size} finish(es) from apple.com - ${[...found.keys()].join(', ')}`);
+  await sleep(600);
+}
+
 // Merged, not replaced. This file is a record of photographs somebody found, and not all of
 // them came from SEEDS: sonos-ace was written in by hand and was silently deleted the first time
 // this ran afterwards. A manufacturer also retires a product page - five Samsung seeds stopped
