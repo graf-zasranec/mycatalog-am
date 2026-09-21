@@ -11,7 +11,7 @@
 # the question the thresholds could not.
 import sys, os, io, subprocess
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageFilter
 import numpy as np
 from scipy import ndimage
 from rembg import remove, new_session
@@ -174,8 +174,20 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
     scale = (side * FILL) / max(w, h)
     img = img.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.LANCZOS)
 
+    # The model's mask is effectively binary: alpha steps 0 -> 255 in a single pixel, so every
+    # edge is a staircase, and on a white page that reads as a hard, crunchy outline rather than
+    # a photograph. A sub-pixel feather of the ALPHA ONLY gives the anti-aliasing the mask never
+    # had. The radius is deliberately under one pixel - enough to fill the step, too little to
+    # soften anything a reader would call detail.
+    a = img.getchannel('A').filter(ImageFilter.GaussianBlur(0.6))
+    img.putalpha(a)
+
+    # ...and pasted WITHOUT a mask. Pasting RGBA through its own alpha composites the edge band
+    # against the canvas, which is transparent BLACK, so every part-transparent pixel was pulled
+    # toward black and the cutout wore a dark fringe. An empty canvas has nothing to blend with;
+    # copying the pixels wholesale is both correct and what was meant.
     canvas = Image.new('RGBA', (side, side), (0, 0, 0, 0))
-    canvas.paste(img, ((side - img.width) // 2, (side - img.height) // 2), img)
+    canvas.paste(img, ((side - img.width) // 2, (side - img.height) // 2))
     return canvas
 
 
