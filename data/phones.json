@@ -2391,36 +2391,6 @@
   ]
  },
  {
-  "id": "apple-ipad-12-9-pro-wi-fi-plus-4g-m2-mp1x3rk",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad 12.9 Pro Wi-Fi + 4G M2 MP1X3RK",
-  "aliases": [
-   "iPad 12.9 Pro Wi-Fi + 4G M2 (2022) MP1X3RK"
-  ],
-  "tier": "budget",
-  "priceAmd": 48,
-  "priceAmdMax": 48,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 48
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad 12.9 Pro Wi-Fi + 4G M2 MP1X3RK.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-ipad-9",
   "category": "tablet",
   "brand": "Apple",
@@ -14546,36 +14516,6 @@
   ]
  },
  {
-  "id": "dyson-airstarit-2026",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "AirStarit 2026",
-  "aliases": [
-   "Dyson AirStarit (HT01) Orange 2026"
-  ],
-  "tier": "mid",
-  "priceAmd": 175000,
-  "priceAmdMax": 175000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 175000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson AirStarit 2026.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-airstarit-kanzan",
   "category": "appliance",
   "brand": "Dyson",
@@ -15540,37 +15480,6 @@
    "battery.capacity"
   ],
   "colors": []
- },
- {
-  "id": "garmin-cirqa-smart-band-s-m",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "CIRQA Smart Band, Black, S-M",
-  "aliases": [
-   "Garmin CIRQA™ Smart Band, Black, S-M",
-   "Garmin CIRQA Smart Band, Black, S-M"
-  ],
-  "tier": "budget",
-  "priceAmd": 89000,
-  "priceAmdMax": 89000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 89000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin CIRQA™ Smart Band, S-M.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
  },
  {
   "id": "garmin-epix-pro-sapphire-edition-51-mm",
@@ -24163,48 +24072,6 @@
   ]
  },
  {
-  "id": "hp-victus-15-fa2082wm",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "Victus 15-FA2082WM",
-  "tier": "mid",
-  "priceAmd": 419000,
-  "priceAmdMax": 419000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 144,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i5-13420H"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 4050 6GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2290
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 15-inch laptop with Intel Core i5-13420H and Nvidia Geforce RTX 4050 6GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 419000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
   "id": "hp-victus-15-fa2093dx",
   "category": "laptop",
   "brand": "HP",
@@ -24289,48 +24156,6 @@
   ]
  },
  {
-  "id": "hp-victus-15-fa2318tx",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "Victus 15-FA2318TX",
-  "tier": "mid",
-  "priceAmd": 459000,
-  "priceAmdMax": 459000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 144,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i7-13620H"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 3050 6GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2290
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 3050 6GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 459000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
   "id": "hp-victus-15-fa2787nr",
   "category": "laptop",
   "brand": "HP",
@@ -24407,48 +24232,6 @@
     "ram": 16,
     "storage": 1024,
     "priceAmd": 539000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
-  "id": "hp-victus-15-fb3093dx",
-  "category": "laptop",
-  "brand": "HP",
-  "name": "Victus 15-FB3093DX",
-  "tier": "mid",
-  "priceAmd": 429000,
-  "priceAmdMax": 429000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 144,
-   "touch": false
-  },
-  "chipset": {
-   "name": "AMD Ryzen 7 7445HS"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 4050 6GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2290
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 7445HS and Nvidia Geforce RTX 4050 6GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 429000
    }
   ],
   "battery": {},
@@ -28320,51 +28103,6 @@
   ]
  },
  {
-  "id": "lenovo-loq-15ahp10-rtx-5060",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "LOQ 15AHP10(RTX 5060)",
-  "tier": "upper-mid",
-  "priceAmd": 549000,
-  "priceAmdMax": 549000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 144,
-   "touch": false
-  },
-  "chipset": {
-   "name": "AMD Ryzen 7 250"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 5060 8GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2300
-  },
-  "os": "DOS",
-  "released": "2025",
-  "summaryEn": "A 15-inch laptop with AMD Ryzen 7 250 and Nvidia Geforce RTX 5060 8GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 549000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo LOQ 15AHP10RTX 5060"
-  ]
- },
- {
   "id": "lenovo-loq-15arp9",
   "category": "laptop",
   "brand": "Lenovo",
@@ -28465,51 +28203,6 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "lenovo-loq-15irx10-i7-13gen-rtx-5060",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "LOQ 15IRX10(I7 13Gen/RTX 5060)",
-  "tier": "upper-mid",
-  "priceAmd": 529000,
-  "priceAmdMax": 529000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "IPS",
-   "resolution": "1920x1080",
-   "refresh": 144,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core i7-13650HX"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 5060 8GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2400
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 15-inch laptop with Intel Core i7-13650HX and Nvidia Geforce RTX 5060 8GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 529000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo LOQ 15IRX10I7 13GenRTX 5060"
   ]
  },
  {
@@ -40481,37 +40174,6 @@
   ]
  },
  {
-  "id": "sony-kd-50x75wl",
-  "category": "tv",
-  "brand": "Sony",
-  "name": "KD-50X75WL",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 237900,
-  "priceAmdMax": 237900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 237900
-   }
-  ],
-  "display": {
-   "size": 50,
-   "type": "LED",
-   "resolution": "3840 x 2160"
-  },
-  "battery": {},
-  "summaryEn": "Sony KD-50X75WL.",
-  "unsure": [
-   "popularity",
-   "display.resolution",
-   "chipset"
-  ]
- },
- {
   "id": "sony-kd-55x85l",
   "category": "tv",
   "brand": "Sony",
@@ -40536,37 +40198,6 @@
   },
   "battery": {},
   "summaryEn": "Sony KD-55X85L.",
-  "unsure": [
-   "popularity",
-   "display.resolution",
-   "chipset"
-  ]
- },
- {
-  "id": "sony-kd-65x75wl",
-  "category": "tv",
-  "brand": "Sony",
-  "name": "KD-65X75WL",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 379900,
-  "priceAmdMax": 379900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 379900
-   }
-  ],
-  "display": {
-   "size": 65,
-   "type": "LED",
-   "resolution": "3840 x 2160"
-  },
-  "battery": {},
-  "summaryEn": "Sony KD-65X75WL.",
   "unsure": [
    "popularity",
    "display.resolution",
@@ -41198,90 +40829,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Sony WF-C500 True Wireless.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wf-c510-b",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "WF-C510/B",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 31900,
-  "priceAmdMax": 31900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 31900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WF-C510/B.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wf-c510-l",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "WF-C510/L",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 31900,
-  "priceAmdMax": 31900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 31900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WF-C510/L.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wf-c510-w",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "WF-C510/W",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 31900,
-  "priceAmdMax": 31900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 31900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WF-C510/W.",
   "unsure": [
    "popularity",
    "display",

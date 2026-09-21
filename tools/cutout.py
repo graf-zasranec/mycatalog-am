@@ -65,6 +65,13 @@ _prov = os.environ.get('CUT_PROVIDER')
 SESSION = new_session('bria-rmbg', **({'providers': [_prov, 'CPUExecutionProvider']} if _prov else {}))
 
 
+# How far past the model's own edge to look for product it dropped, and how far a pixel must sit
+# from the studio backdrop to count as product rather than shadow. 22 clears a soft drop shadow
+# on a white ground; the reach is in pixels of the SOURCE, which is 2000-4500 px wide here.
+EDGE_REACH = 14
+EDGE_TOL = 22
+
+
 def model_alpha(img):
     return np.array(remove(img, session=SESSION, post_process_mask=True, only_mask=True))
 
@@ -81,6 +88,26 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
         # zeroes the RGB of everything it drops, which used to paint any filled hole black
         img = src.copy()
         img.putalpha(Image.fromarray(model_alpha(src)))
+        # The model traces a LOW-CONTRAST edge badly. A white phone's silver side rail against a
+        # white studio came back with bites chewed out of it between the buttons, and no amount of
+        # smoothing puts metal back - the pixels were never kept. The backdrop colour is known from
+        # the corners, so along the edge the photograph can be asked directly: a pixel that is
+        # plainly not the backdrop, lying within a few pixels of what the model DID keep, is
+        # product the model dropped. Held to that band so the drop shadow further out stays out,
+        # and to a tolerance a soft shadow does not reach.
+        a0 = np.array(img.getchannel("A"))
+        keep = a0 > 128
+        if keep.any():
+            rgb0 = np.array(src.convert("RGB")).astype(int)
+            back0 = np.median(np.concatenate([
+                rgb0[:8, :8].reshape(-1, 3), rgb0[:8, -8:].reshape(-1, 3),
+                rgb0[-8:, :8].reshape(-1, 3), rgb0[-8:, -8:].reshape(-1, 3)]), axis=0)
+            band = ndimage.binary_dilation(keep, iterations=EDGE_REACH) & ~keep
+            back_far = np.abs(rgb0 - back0).max(axis=2) > EDGE_TOL
+            regained = band & back_far
+            if regained.any():
+                a0[regained] = 255
+                img.putalpha(Image.fromarray(a0))
 
     # The model sometimes punches holes through a reflective screen - the Z Fold's folded display
     # came out with white tears in it. A hole that is ENCLOSED by the product and small is always

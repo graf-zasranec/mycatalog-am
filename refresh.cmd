@@ -39,6 +39,24 @@ echo [%date% %time%] reading zigzag...
 python tools\zigzag-fetch.py
 if errorlevel 1 echo   zigzag fetch failed - carrying on with the previous data\zigzag.json
 
+REM The hand rows in data\listings.csv are the other half of the catalogue, and scrape.mjs only
+REM ever READS them - it never re-prices them. So a row entered by hand kept its original figure
+REM for as long as it existed, and "update the prices" quietly meant "update the crawled ones".
+REM This opens each row's own link, finds the build that row describes and writes today's price.
+REM
+REM It is safe to run unattended because it refuses far more than it accepts: a move of more than
+REM half is reported and NOT applied, a price under 10,000 dram is reported and not applied, a
+REM page that no longer names the product is reported as a bad link, and several rows sharing one
+REM url that disagree about the price are left alone entirely. Everything it declines is printed.
+REM
+REM It runs after the two fetches above because eldorado and zigzag rows are answered from those
+REM caches, and before the crawl below because the crawl reads listings.csv.
+REM
+REM Not a gate: an unreachable shop leaves the old figure, which is what it did before anyway.
+echo [%date% %time%] re-pricing the hand-entered rows...
+node tools\confirm-hand.mjs
+if errorlevel 1 echo   hand-row pass failed - carrying on with the figures already in listings.csv
+
 REM --fresh: the nightly job wants today's prices from every shop, not yesterday's checkpoint.
 REM Without it a run started again the same day skips the shops the last one already read, which
 REM is what somebody re-running by hand after a crash wants and the opposite of what this wants.
