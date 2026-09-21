@@ -43,7 +43,12 @@ try {
   const u = JSON.parse(fs.readFileSync('data/unmatched.json', 'utf8'));
   for (const [shop, list] of Object.entries(u.shops || {}))
     for (const t of list) {
-      const w = String(t).toLowerCase().replace(/^[^a-z0-9]+/, '').split(/[^a-z0-9]+/)[0];
+      // Three shops write a plain string here and the other eleven write { title: ... }.
+      // String(t) on an object is "[object Object]", whose first word is "object", which is not
+      // a brand - so this line was counting notebookcentre, redstore and planet3d and silently
+      // skipping every other shop. The 99 it reported was three shops' worth, not fourteen.
+      const w = String(t && t.title != null ? t.title : t)
+        .toLowerCase().replace(/^[^a-z0-9]+/, '').split(/[^a-z0-9]+/)[0];
       if (BRANDS.has(w)) { fresh++; freshBy[shop] = (freshBy[shop] || 0) + 1; }
     }
 } catch { }
