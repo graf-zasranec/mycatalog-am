@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-yhjv0/AbnNul6HS835Xx+CsMN/S7Hhfyl2zmprz9VkM='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-tIaQ3Q14IiAlDcs572mLxp/tUmcI9ijiillbvfZgOws='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 1323 մոդել, 21 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -2772,6 +2772,17 @@ const hasChoices = p => {
   return new Set(v.map(z => z.storage)).size > 1 || new Set(v.map(z => z.ram)).size > 1
     || ((p && p.colors) || []).length > 1;
 };
+// One value across the whole product is not a choice, and writing it on every row just repeats
+// the title: a MacBook Pro M5 Max is sold in one build, so all seven rows read "2 TB . 36 GB"
+// and the column says nothing at all. An axis earns its place on the row only where the product
+// really offers more than one of it. Counted over the variants AND the offers, because a shop
+// sometimes lists a build the variant table never described - and one shop stating the RAM while
+// the others stay silent is not a difference between them either.
+const offerAxisVaries = (p, key) => {
+  if (!p) return false;
+  const vals = [...((p.variants || []).map(v => v[key])), ...(offersFor(p) || []).map(o => o[key])];
+  return new Set(vals.filter(v => v != null)).size > 1;
+};
 function offerRow(o, lo, i, unit, cls, of, withColor) {
   // A row with no link was still an <a>, and safeHref turns a missing url into "#" - so it looked
   // clickable and clicking it threw you back to the front page. A price somebody read off a shelf
@@ -2788,14 +2799,14 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
          two rows at different prices with nothing on them to say why. Anything the shop did not
          state is simply absent rather than guessed at. -->
     <span class="vr">${[
-        o.size != null ? esc(inch(o.size)) : '',
-        o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : ''),
-        o.ram ? esc(o.ram + ' ' + u('gb')) : '',
+        o.size != null && offerAxisVaries(of, 'size') ? esc(inch(o.size)) : '',
+        offerAxisVaries(of, 'storage') ? (o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : '')) : '',
+        o.ram && offerAxisVaries(of, 'ram') ? esc(o.ram + ' ' + u('gb')) : '',
         // The product page shows one row per build and collapses the colours behind it; this
         // page shows every one of them, and without the colour written down two rows from the
         // same shop at the same price are indistinguishable - they read as the listing being
         // duplicated rather than as the two different phones they are.
-        withColor && o.color ? `<i class="ocol"><b style="--c:${swatch(o.color)}"></b>${esc(o.color)}</i>` : '',
+        withColor && o.color && offerAxisVaries(of, 'color') ? `<i class="ocol"><b style="--c:${swatch(o.color)}"></b>${esc(o.color)}</i>` : '',
       ].filter(Boolean).join(' · ')}${!(of && simChoice(of)) ? ''
         : o.esim === true ? ' <i class="esim">eSIM</i>'
         : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
