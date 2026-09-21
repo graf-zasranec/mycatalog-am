@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T13:14:36.748Z",
+ "generated": "2026-09-21T13:20:46.258Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -6038,11 +6038,12 @@
     "shop": "pixel",
     "title": "iPhone 17e",
     "price": 279000,
-    "storage": 128,
+    "storage": 256,
     "ram": null,
     "color": null,
     "url": "https://www.pixel.am/en/product/iphone-17e",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-17e",
@@ -11730,13 +11731,14 @@
     "id": "apple-macbook-air-13-m5",
     "shop": "istyle",
     "title": "MacBook Air M5 13/16GB RAM",
-    "price": 579000,
+    "price": 595000,
     "storage": null,
     "ram": 16,
     "size": 13,
     "color": null,
     "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2013.6%20%2016%20512GB",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-macbook-air-13-m5",
@@ -11908,18 +11910,6 @@
    },
    {
     "id": "apple-macbook-air-13-m5",
-    "shop": "istyle",
-    "title": "MacBook Air M5 15/16GB RAM",
-    "price": 649000,
-    "storage": null,
-    "ram": 16,
-    "size": 15,
-    "color": null,
-    "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2015%2016GB",
-    "seeded": true
-   },
-   {
-    "id": "apple-macbook-air-13-m5",
     "price": 655900,
     "storage": 512,
     "title": "MacBook Air 13.6-inch  M5 (10C CPU/8C GPU), 16 ԳԲ, 512 ԳԲ, Sky Blue",
@@ -12031,6 +12021,19 @@
     "shop": "istyle",
     "seen": "2026-09-21",
     "size": 15
+   },
+   {
+    "id": "apple-macbook-air-13-m5",
+    "shop": "istyle",
+    "title": "MacBook Air M5 15/16GB RAM",
+    "price": 669000,
+    "storage": null,
+    "ram": 16,
+    "size": 15,
+    "color": null,
+    "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2015%2016GB",
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-macbook-air-13-m5",
@@ -12240,7 +12243,8 @@
     "size": 15,
     "color": null,
     "url": "https://istyle.am/en/product/MacBook%20Air%20M5%2015%2024GB",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-macbook-air-13-m5",
@@ -12978,6 +12982,18 @@
    },
    {
     "id": "samsung-galaxy-a37",
+    "shop": "pixel",
+    "title": "Samsung Galaxy A37",
+    "price": 119000,
+    "storage": 128,
+    "ram": null,
+    "color": null,
+    "url": "https://www.pixel.am/en/product/samsung-galaxy-a37",
+    "seeded": true,
+    "seen": "2026-09-21"
+   },
+   {
+    "id": "samsung-galaxy-a37",
     "title": "Samsung Galaxy A37",
     "url": "https://allsell.am/en/samsung-galaxy-a37",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/n/e/new_project_2__110_1.jpg",
@@ -13027,17 +13043,6 @@
     "inStock": true,
     "shop": "allsell",
     "seen": "2026-09-21"
-   },
-   {
-    "id": "samsung-galaxy-a37",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A37",
-    "price": 124000,
-    "storage": 128,
-    "ram": null,
-    "color": null,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a37",
-    "seeded": true
    },
    {
     "id": "samsung-galaxy-a37",
@@ -24689,17 +24694,6 @@
    },
    {
     "id": "samsung-galaxy-a17",
-    "shop": "pixel",
-    "title": "Samsung Galaxy A17",
-    "price": 68900,
-    "storage": 128,
-    "ram": null,
-    "color": null,
-    "url": "https://www.pixel.am/en/product/samsung-galaxy-a17",
-    "seeded": true
-   },
-   {
-    "id": "samsung-galaxy-a17",
     "price": 72000,
     "title": "Samsung Galaxy A17 4GB/128GB Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-a17-4gb128gb-black",
@@ -24790,6 +24784,18 @@
     "color": "Black",
     "inStock": true,
     "shop": "pixel",
+    "seen": "2026-09-21"
+   },
+   {
+    "id": "samsung-galaxy-a17",
+    "shop": "pixel",
+    "title": "Samsung Galaxy A17",
+    "price": 72900,
+    "storage": 128,
+    "ram": null,
+    "color": null,
+    "url": "https://www.pixel.am/en/product/samsung-galaxy-a17",
+    "seeded": true,
     "seen": "2026-09-21"
    },
    {
@@ -31335,7 +31341,8 @@
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/en/apple-earpods-mmtn2zm-a-a1748",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-earpods-lightning",
@@ -31626,7 +31633,8 @@
     "ram": null,
     "color": "Silver",
     "url": "https://eldorado.am/en/samsung-original-headphone-galaxy-buds-3-r530-silver",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "samsung-galaxy-3",
@@ -42597,7 +42605,8 @@
     "ram": null,
     "color": "Orange",
     "url": "https://istyle.am/en/product/Dyson Airstrait™ HT01  Orange 2026",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "dyson-ht01-airstrait-straightener-plum",
@@ -42849,18 +42858,6 @@
     "ram": null,
     "shop": "pixel",
     "seen": "2026-09-21"
-   },
-   {
-    "id": "dyson-nural-hd16-strawberry",
-    "shop": "pixel",
-    "title": "Dyson HD16 Supersonic™ Nural Strawberry Bronze/Blush Pink",
-    "price": 229000,
-    "storage": null,
-    "ram": null,
-    "color": "Strawberry",
-    "url": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-hd16-ceramic-patina-topaz",
-    "seeded": true,
-    "checkColor": true
    },
    {
     "id": "dyson-nural-hd16-strawberry",
@@ -46304,7 +46301,8 @@
     "size": 14,
     "color": "Jasper Gray",
     "url": "https://eldorado.am/en/asus-zenbook-14-oled-um3402ya-kp290-90nb0w95-m00j70",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "asus-zenbook-14-ux3405ca-oled",
@@ -46370,7 +46368,8 @@
     "size": 14,
     "color": "Jasper Gray",
     "url": "https://eldorado.am/en/asus-zenbook-14-oled-ux3405m-ux3405ma-pp136w-90nb11r1-m005r0",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "jbl-flip-7": [
@@ -56169,7 +56168,8 @@
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/en/marshall-major-iv",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "toshiba-85c350ne": [
@@ -64975,12 +64975,13 @@
     "id": "samsung-galaxy-buds-pro-r190",
     "shop": "eldorado",
     "title": "Samsung Galaxy Buds Pro R190",
-    "price": 67200,
+    "price": 77900,
     "storage": null,
     "ram": null,
     "color": "Black",
     "url": "https://eldorado.am/en/original-samsung-headphone-galaxy-buds-pro-r190-black",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "sony-wf-1000xm5-wireless-headphones": [
@@ -66912,7 +66913,8 @@
     "ram": null,
     "color": "Amber",
     "url": "https://istyle.am/en/product/Dyson AirStarit (HT01) Amber Silk ",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "dyson-airstarit-kanzan": [
@@ -69138,12 +69140,13 @@
     "id": "asus-vivobook-15x-m1503-oled",
     "shop": "eldorado",
     "title": "ASUS Vivobook 15X OLED M1503",
-    "price": 214900,
+    "price": 275800,
     "storage": 512,
     "ram": null,
     "color": "Quiet Blue",
     "url": "https://eldorado.am/en/asus-vivobook-15x-oled-m1503-m1503ia-l1018-90nb0y61-m00590",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "asus-vivobook-s15-m3502qa-oled": [
@@ -69157,7 +69160,8 @@
     "size": 15,
     "color": "Indie Black",
     "url": "https://eldorado.am/en/asus-vivobook-s-15-oled-m3502qa-ma153-16-gb-1-tb-90nb0xx1-m006s0",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "yandex-station-2": [
@@ -69196,7 +69200,8 @@
     "ram": null,
     "color": "White",
     "url": "https://eldorado.am/en/nothing-ear-a-b162-white",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "bose-soundtouch-10": [
@@ -69235,7 +69240,8 @@
     "ram": null,
     "color": "Black",
     "url": "https://eldorado.am/en/jbl-tune-125bt-black",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "honor-magic-7-pro": [
@@ -69738,19 +69744,6 @@
     "seen": "2026-09-21"
    }
   ],
-  "apple-imac-24-inch-m3-8ram-2023": [
-   {
-    "id": "apple-imac-24-inch-m3-8ram-2023",
-    "shop": "istyle",
-    "title": "iMac 24-inch M3 8RAM /2023/",
-    "price": 879000,
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "url": "https://istyle.am/en/product/iMac%20%2024-inch%20%20M3%208%20256%20(2023)%09",
-    "seeded": true
-   }
-  ],
   "apple-ipad-10-a16-wi-fi-2025": [
    {
     "id": "apple-ipad-10-a16-wi-fi-2025",
@@ -69761,7 +69754,8 @@
     "ram": null,
     "color": null,
     "url": "https://istyle.am/en/product/iPad 10 A16 Wi-Fi ",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "dyson-r-dh17": [
@@ -69817,21 +69811,8 @@
     "size": 16,
     "color": "Gray",
     "url": "https://eldorado.am/en/honor-magicbook-x16-2026-brg-x-5301argn-16-wuxga-16gb-ssd1tb-space-gray",
-    "seeded": true
-   }
-  ],
-  "lenovo-ideapad-slim-5-16irh10-16-i5-13420h-tb": [
-   {
-    "id": "lenovo-ideapad-slim-5-16irh10-16-i5-13420h-tb",
-    "shop": "eldorado",
-    "title": "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10 16\" i5-13420H 16GB/TB Luna Grey (83HS002NRK)",
-    "price": 389900,
-    "storage": null,
-    "ram": 16,
-    "size": 16,
-    "color": null,
-    "url": "https://eldorado.am/en/lenovo-ideapad-slim-5-16irh10-r-83j1001drk",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "asus-fx607v": [
@@ -69844,7 +69825,8 @@
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/en/laptop-asus-fx607v-fx607vu-rl046-90nr0n06-m00310",
-    "seeded": true
+    "seeded": true,
+    "seen": "2026-09-21"
    }
   ],
   "sennheiser-hd-450bt": [
