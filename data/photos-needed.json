@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 59,
- "tooSmall": 62,
+ "missing": 50,
+ "tooSmall": 69,
  "products": [
   {
    "id": "honor-choice-ros-me01",
@@ -13,66 +13,6 @@
    "category": "headphones",
    "shops": 2,
    "query": "Honor CHOICE ROS-ME01",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "poco-c71",
-   "brand": "Xiaomi",
-   "name": "POCO C71",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi POCO C71",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "realme-c71",
-   "brand": "Realme",
-   "name": "C71",
-   "category": "phone",
-   "shops": 2,
-   "query": "Realme C71",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "realme-note-60x",
-   "brand": "Realme",
-   "name": "Note 60x",
-   "category": "phone",
-   "shops": 2,
-   "query": "Realme Note 60x",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "samsung-galaxy-a07s",
-   "brand": "Samsung",
-   "name": "Galaxy A07s",
-   "category": "phone",
-   "shops": 2,
-   "query": "Samsung Galaxy A07s",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-10c",
-   "brand": "Xiaomi",
-   "name": "Redmi 10C",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi 10C",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "xiaomi-redmi-note-17-4g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 17 4G",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi Note 17 4G",
    "what": "missing",
    "width": 0
   },
@@ -357,26 +297,6 @@
    "width": 0
   },
   {
-   "id": "sennheiser-hd-450bt",
-   "brand": "Sennheiser",
-   "name": "HD 450BT",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Sennheiser HD 450BT",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "sennheiser-hd-599",
-   "brand": "Sennheiser",
-   "name": "HD 599",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Sennheiser HD 599",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "sony-kd-55x85l",
    "brand": "Sony",
    "name": "KD-55X85L",
@@ -527,16 +447,6 @@
    "width": 0
   },
   {
-   "id": "xiaomi-watch-s1-active",
-   "brand": "Xiaomi",
-   "name": "Watch S1 Active",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Watch S1 Active",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "garmin-cirqa-smart-band-s-m",
    "brand": "Garmin",
    "name": "CIRQA Smart Band, Black, S-M",
@@ -677,6 +587,16 @@
    "width": 556
   },
   {
+   "id": "realme-c71",
+   "brand": "Realme",
+   "name": "C71",
+   "category": "phone",
+   "shops": 2,
+   "query": "Realme C71",
+   "what": "too small",
+   "width": 581
+  },
+  {
    "id": "realme-c75",
    "brand": "Realme",
    "name": "C75",
@@ -695,6 +615,26 @@
    "query": "Realme GT 7T",
    "what": "too small",
    "width": 570
+  },
+  {
+   "id": "realme-note-60x",
+   "brand": "Realme",
+   "name": "Note 60x",
+   "category": "phone",
+   "shops": 2,
+   "query": "Realme Note 60x",
+   "what": "too small",
+   "width": 544
+  },
+  {
+   "id": "samsung-galaxy-a07s",
+   "brand": "Samsung",
+   "name": "Galaxy A07s",
+   "category": "phone",
+   "shops": 2,
+   "query": "Samsung Galaxy A07s",
+   "what": "too small",
+   "width": 537
   },
   {
    "id": "samsung-galaxy-a35",
@@ -725,6 +665,16 @@
    "query": "Xiaomi Poco F4",
    "what": "too small",
    "width": 596
+  },
+  {
+   "id": "xiaomi-redmi-10c",
+   "brand": "Xiaomi",
+   "name": "Redmi 10C",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Redmi 10C",
+   "what": "too small",
+   "width": 560
   },
   {
    "id": "xiaomi-redmi-12c",
@@ -765,6 +715,16 @@
    "query": "Xiaomi Redmi Note 12",
    "what": "too small",
    "width": 556
+  },
+  {
+   "id": "xiaomi-redmi-note-17-4g",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 17 4G",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Redmi Note 17 4G",
+   "what": "too small",
+   "width": 570
   },
   {
    "id": "xiaomi-smart-band-7",
@@ -1057,6 +1017,16 @@
    "width": 548
   },
   {
+   "id": "sennheiser-hd-450bt",
+   "brand": "Sennheiser",
+   "name": "HD 450BT",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Sennheiser HD 450BT",
+   "what": "too small",
+   "width": 599
+  },
+  {
    "id": "sony-wf-c700n-wz-e",
    "brand": "Sony",
    "name": "WF-C700N/WZ E",
@@ -1205,6 +1175,16 @@
    "query": "Xiaomi Watch S1",
    "what": "too small",
    "width": 580
+  },
+  {
+   "id": "xiaomi-watch-s1-active",
+   "brand": "Xiaomi",
+   "name": "Watch S1 Active",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Watch S1 Active",
+   "what": "too small",
+   "width": 599
   },
   {
    "id": "yandex-smart-lamp",

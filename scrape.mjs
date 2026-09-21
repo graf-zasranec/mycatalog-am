@@ -23,7 +23,12 @@ const DELAY_MS = 400;
 const TIMEOUT_MS = 30000;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" plus ").replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
+// A shop's own misspelling of a word it uses across its whole catalogue. AllSell slugs the
+// Apple Watch Series 11 ".../apple-watch-seria-11", which matched nothing, so a watch it
+// sells at 155,400 was absent from the site altogether. "seria" names nothing else here, so
+// reading past it costs nothing and is not a guess about which product is meant.
+const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" plus ")
+  .replace(/[^a-z0-9]+/g, ' ').replace(/ seria /g, ' series ').replace(/\s+/g, ' ').trim();
 
 async function vlvPrice(vid) {
   try {
@@ -568,7 +573,13 @@ function magentoChildren(html, colors) {
       // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
       color: (col && colorOf(col, colors)) || null, inStock: pr.is_in_stock !== false });
   }
-  return out;
+  // A child whose colour did not map is not a DIFFERENT colour, it is an unspecified one, and
+  // beside a sibling at the same price that is named it says nothing the named row has not
+  // already said. Yerevan Mobile's Smart Band 10 came back as Black, Silver, and a third row
+  // with no colour at all - one shop listed three times at 23,000 with nothing to tell them
+  // apart, which is what a reader calls a duplicate.
+  const named = new Set(out.filter(o => o.color).map(o => `${o.price}|${o.storage ?? ''}|${o.ram ?? ''}`));
+  return out.filter(o => o.color || !named.has(`${o.price}|${o.storage ?? ''}|${o.ram ?? ''}`));
 }
 // 3DPlanet renders its buy-box options from this endpoint, one call per variation id covering
 // every dimension at once - colour, and on an iPhone, SIM build too. is_active is 0 for an
@@ -713,6 +724,8 @@ if (process.argv[2] === '--selftest') {
     [null, 'Xiaomi 15 Ultra'],
     ['xiaomi-15t', 'Xiaomi 15T'],
     ['xiaomi-15', 'Xiaomi 15'],
+    // AllSell's own misspelling, on every Apple Watch Series page it serves
+    ['apple-watch-series-11', 'https://allsell.am/en/apple-watch-seria-11'],
     ['jbl-flip-7', 'JBL Flip 7 Squad'],
     ['jbl-flip-7', 'Portable speaker JBL Flip 7 Black'],
     // shops drop the brand all the time, and that must still match
@@ -1255,13 +1268,42 @@ const SHOPS = {
         // The listing h3 is just the model name. The product page carries the real SKU in
         // og:title - "iPhone 17 Pro 256GB Dual eSIM (Cosmic Orange)" - so capacity and colour
         // come from there instead of being left blank. Only matched products are fetched.
-        for (const h of hits) {
+        // The listing carries ONE entry per model and it points at one SKU - "Apple iPhone 17
+        // Pro" opens the 256GB Dual eSIM in Deep Blue. Every other build is on that page as an
+        // ordinary link whose slug names it in full, ".../iphone-17-pro-512gb-nano-sim-&-esim-
+        // _silver_/33185/", each with its own id, its own page and its own price. Following them
+        // is the difference between one iPhone 17 Pro and the eighteen this shop actually sells.
+        const seenU = new Set(hits.map(h => h.url));
+        const queue = hits.slice();
+        for (let qi = 0; qi < queue.length && qi < 800; qi++) {
+          const h = queue[qi];
           const page = await get(h.url); await sleep(DELAY_MS);
           const og = page && clean((page.match(/property="og:title" content="([^"]+)"/) || [])[1] || "");
           const SEP = " - ";                                    // og:title is "Mobile Centre. - <sku>"
           const title = og ? (og.includes(SEP) ? og.slice(og.indexOf(SEP) + SEP.length) : og) : h.title;
           const img = page && (page.match(/property="og:image" content="([^"]+)"/) || [])[1];
-          out.push({ id: h.id, price: h.price, storage: storageOf(title) ?? storageOf(h.url), title, url: h.url,
+          for (const m of (page || '').matchAll(/href="(https:\/\/mobilecentre\.am\/product\/[^"]*?\/\d+\/)"/g)) {
+            const u2 = m[1];
+            if (seenU.has(u2) || !safeUrl(u2)) continue;
+            // a sibling build of THIS product, not one of the shop's recommendations
+            const id2 = matchPhone(u2);
+            if (id2 !== h.id) continue;
+            seenU.add(u2);
+            queue.push({ id: h.id, price: 0, title: h.title, url: u2 });
+          }
+          // A sibling was reached from another page and carries no listing price of its own; the
+          // page states it, and mcCash reads the cash figure rather than the instalment one.
+          const price = h.price || mcCash(page || '');
+          if (!price || price < 5000) continue;
+          // The SIM build comes from the page's own og:title and NOT from the url. This shop's
+          // slug is decoration - the id is what resolves, and they disagree: /33157/ is slugged
+          // "512gb-nano-sim-&-esim-_cosmic-orange_" and its page says "512GB Dual eSIM (Cosmic
+          // Orange)". Letting simBuild read title+url, as it does everywhere else, hands the
+          // stale slug a veto over what the page actually says. Marked as read from the page so
+          // the eSIM post-pass leaves it alone.
+          const said = simBuild(title);
+          out.push({ id: h.id, price, storage: storageOf(title) ?? storageOf(h.url), title, url: h.url,
+            esim: said, simFromPage: said !== undefined || undefined,
             image: img && safeUrl(img) ? img : null, inStock: true });
         }
       }
@@ -1784,6 +1826,19 @@ const SHOPS = {
           if (/\/electronics\//.test(url)) continue;         // a category, not a product
           const id = matchPhone(title, { price, url }) || matchPhone(url);
           if (!id) continue;
+          // The grid gives one price for the whole product. The page behind it is an ordinary
+          // Magento configurable and names every SKU it sells: the Apple Watch SE 3 40mm is two
+          // colours there and reached us as one row, which is also why its two rows sat on the
+          // site at the same price with nothing to tell them apart.
+          const page = await get(url); await sleep(DELAY_MS);
+          const kids = page ? magentoChildren(page, (phoneById[id] || {}).colors) : [];
+          if (kids.length) {
+            for (const k of kids)
+              out.push({ id, price: k.price, title, url,
+                storage: k.storage ?? storageOf(title) ?? storageOf(url),
+                ram: k.ram ?? ramOf(title), color: k.color, inStock: k.inStock !== false });
+            continue;
+          }
           out.push({ id, price, title, url,
             storage: storageOf(title) ?? storageOf(url), ram: ramOf(title), inStock: true });
         }
