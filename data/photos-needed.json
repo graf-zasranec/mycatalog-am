@@ -3,7 +3,7 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 60,
+ "missing": 59,
  "tooSmall": 62,
  "products": [
   {
@@ -93,16 +93,6 @@
    "category": "tablet",
    "shops": 1,
    "query": "Apple iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-iphone-16e",
-   "brand": "Apple",
-   "name": "iPhone 16e",
-   "category": "phone",
-   "shops": 1,
-   "query": "Apple iPhone 16e",
    "what": "missing",
    "width": 0
   },
@@ -621,7 +611,7 @@
    "brand": "JBL",
    "name": "Clip 4",
    "category": "speaker",
-   "shops": 3,
+   "shops": 4,
    "query": "JBL Clip 4",
    "what": "too small",
    "width": 565

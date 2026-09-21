@@ -489,6 +489,58 @@ function pixelMatrix(html, colors) {
   }
   return [...best.values()];
 }
+// istyle publishes every SKU of a product as a JSON array in the page, HTML-escaped. One
+// iPhone 17 Pro is ten variants there - two SIM builds, three capacities, two colours - and the
+// reader before this one took the FIRST of them with /\{[^{}]*"price_override":(\d+)[^{}]*\}/,
+// which cannot match a variant object at all: every one of them contains a nested
+// attribute_values array, so the class [^{}] stops at its first brace. That is why a shop with
+// 241 products in its sitemap contributed four offers, all of them speakers.
+//
+// Colour is a hex swatch here rather than a name, so it cannot be reported; capacity and SIM
+// build can, and colours of one build are collapsed the way pixel's are - same price, and three
+// rows differing in nothing a reader can see are not three offers.
+function istyleVariants(html) {
+  const j = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
+  const at = j.indexOf('"variants":[');
+  if (at < 0) return [];
+  const start = j.indexOf('[', at);
+  const BS = String.fromCharCode(92);            // a backslash, without writing one
+  let depth = 0, i = start, instr = false, esc = false;
+  for (; i < j.length; i++) {
+    const c = j[i];
+    if (instr) { if (esc) esc = false; else if (c === BS) esc = true; else if (c === '"') instr = false; continue; }
+    if (c === '"') instr = true;
+    else if (c === '[') depth++;
+    else if (c === ']' && --depth === 0) break;
+  }
+  let arr;
+  try { arr = JSON.parse(j.slice(start, i + 1)); } catch { return []; }
+  const best = new Map();
+  for (const v of arr) {
+    if (v.is_active === false) continue;
+    const price = Math.round(Number(v.is_on_sale && v.sale_price ? v.sale_price : v.price_override));
+    if (!(price > 5000)) continue;
+    const attr = {};
+    for (const av of v.attribute_values || []) {
+      const n = ((av.attribute || {}).name || {}).en;
+      if (n) attr[String(n).toLowerCase()] = (av.value || {}).en;
+    }
+    // "No Sim" is the eSIM-only build and "1SIM" the one with a tray - the shop is counting
+    // physical slots, so the wording is the opposite way round from every other site here.
+    const q = String(attr['sim card quantity'] || '');
+    const sim = /no\s*sim/i.test(q) ? true : /\d\s*sim/i.test(q) ? false : undefined;
+    const cap = capOf(attr['internal memory'] || '');
+    const k = `${cap ?? ''}|${sim === true ? 'e' : sim === false ? 'n' : '?'}`;
+    const row = { price, storage: cap != null && cap >= 64 ? cap : null,
+                  esim: sim, simFromPage: sim !== undefined || undefined,
+                  inStock: Number(v.stock) > 0 };
+    const had = best.get(k);
+    // in stock beats out of stock; below that, the cheaper colour
+    if (!had || (row.inStock && !had.inStock) || (row.inStock === had.inStock && row.price < had.price))
+      best.set(k, row);
+  }
+  return [...best.values()];
+}
 // A Magento configurable page describes every one of its real SKUs here: per-child price,
 // stock, colour and capacity. One page therefore yields several offers, each true.
 function magentoChildren(html, colors) {
@@ -902,6 +954,30 @@ if (process.argv[2] === '--selftest') {
         bad++; console.log(`FAIL pixelMatrix ${g.price}/${g.storage}/${g.esim} want ${want[i].join('/')}`);
       }
     }
+  }
+  // istyle's variant payload, HTML-escaped exactly as the page carries it. Every variant object
+  // holds a nested attribute_values array, which is what the old /\{[^{}]*\}/ reader could not
+  // match - it took no variant at all and the shop contributed four offers from 241 products.
+  {
+    const mk = (price, mem, sim, stock) => ({ id: 1, price_override: price, is_active: true,
+      is_on_sale: false, sale_price: null, stock,
+      attribute_values: [
+        { attribute: { name: { en: 'Internal Memory' } }, value: { en: mem } },
+        { attribute: { name: { en: 'SIM card quantity' } }, value: { en: sim } },
+        { attribute: { name: { en: 'Color' } }, value: { en: '#454962' } }] });
+    const payload = '&quot;variants&quot;:' + JSON.stringify([
+      mk(469000, '256 GB', 'No Sim', 30), mk(499000, '256 GB', '1SIM', 30),
+      mk(559000, '512GB', 'No Sim', 30),
+      mk(469000, '256 GB', 'No Sim', 10),   // another colour, same build and price
+    ]).replace(/"/g, '&quot;');
+    const v = istyleVariants(payload).sort((a, b) => a.price - b.price);
+    // "No Sim" is the eSIM-only build; "1SIM" has the tray and costs more; colours collapse
+    const want = [[469000, 256, true], [499000, 256, false], [559000, 512, true]];
+    if (v.length !== want.length) { bad++; console.log(`FAIL istyleVariants got ${v.length}, want ${want.length}`); }
+    else for (let i = 0; i < want.length; i++)
+      if (v[i].price !== want[i][0] || v[i].storage !== want[i][1] || v[i].esim !== want[i][2]) {
+        bad++; console.log(`FAIL istyleVariants ${v[i].price}/${v[i].storage}/${v[i].esim} want ${want[i].join('/')}`);
+      }
   }
   const colCases = [['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
     ['APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523)', ['Cosmic Orange', 'Deep Blue'], 'Cosmic Orange'],
@@ -1666,24 +1742,15 @@ const SHOPS = {
         if (!safeUrl(u)) continue;
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
-        const json = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
-        // The page also carries the variants of everything it recommends. The first block is this
-        // product's - the one whose price the page prints at the top.
-        const at = json.indexOf('"variants":[');
-        if (at < 0) continue;
-        const slice = json.slice(at, at + 4000);
-        const first = /\{[^{}]*"price_override":(\d+)[^{}]*\}/.exec(slice);
-        if (!first) continue;
-        const listed = +first[1];
-        const sale = /"is_on_sale":true[^}]*?"sale_price":(\d+)/.exec(slice);
-        // a shop that is running a sale is asking the sale price, so that is the price
-        const price = sale ? +sale[1] : listed;
-        const stock = /"stock":(\d+)/.exec(first[0]);
-        const active = /"is_active":true/.test(first[0]);
-        if (!price || price < 5000) continue;
-        out.push({ id, price, title: name, url: u,
-          storage: storageOf(name), ram: ramOf(name),
-          inStock: active && (!stock || +stock[1] > 0) });
+        // The page also carries the variants of everything it recommends. The first block is
+        // this product's - the one whose price the page prints at the top - and every SKU in it
+        // is a real offer: capacity and SIM build, each at its own price.
+        const vs = istyleVariants(html);
+        if (!vs.length) continue;
+        for (const v of vs)
+          out.push({ id, price: v.price, title: name, url: u,
+            storage: v.storage ?? storageOf(name), ram: ramOf(name),
+            esim: v.esim, simFromPage: v.simFromPage, inStock: v.inStock });
       }
       return out;
     }
