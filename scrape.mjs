@@ -436,6 +436,59 @@ function pixelVariants(html, colors) {
   }
   return out;
 }
+// One pixel page is a MATRIX, not a price. The iPhone 17 Pro Max sells there in four capacities
+// and two SIM builds at eight different figures, and this adapter published exactly one of them -
+// so the 1 TB and the tray builds existed on the shop's own page and nowhere on ours, and the
+// rows that did exist had to be typed in by hand afterwards. Same reasoning as magentoChildren
+// below: a page that describes its real SKUs yields one offer per SKU.
+//
+// Colour is collapsed to one row per build, because pixel prices every colour of a build
+// identically and three rows differing only in a word read as the listing repeated.
+function pixelMatrix(html, colors) {
+  const m = html.match(/var\s+PRODUCT_VARIANTS\s*=\s*(\[[\s\S]*?\]);/);
+  if (!m) return [];
+  let vs;
+  try { vs = JSON.parse(m[1]); } catch { return []; }
+  const best = new Map();
+  for (const v of vs) {
+    // The property NAMES are whatever language the page is in - the crawl reads /am/, where they
+    // are Գույն, Հիշողություն and Սիմ Քարտ - so each one is recognised by what its value looks
+    // like instead: a capacity is a capacity in any language, a SIM build is written in Latin on
+    // both, and whatever is left over is the colour. Keying on the English names read every
+    // Armenian page as a single option with no capacity at all.
+    let mem = '', simVal = '', col = '';
+    for (const x of v.properties || []) {
+      const val = String(x.valueTitle || '').trim();
+      if (!val) continue;
+      if (!simVal && /sim/i.test(val)) simVal = val;
+      else if (!mem && capOf(val) != null) mem = val;
+      else if (!col) col = val;
+    }
+    const p = { memory: mem, color: col, 'sim card': simVal };
+    // wholesalePrice is the CASH price - see pixelCash() - while "price" is the instalment
+    // figure. Reading the wrong one inflated every pixel offer by about a tenth.
+    const price = Math.round(Number(v.wholesalePrice) > 0 ? Number(v.wholesalePrice)
+      : Number(v.salePrice) > 0 ? Number(v.salePrice) : Number(v.price));
+    if (!(price > 1000)) continue;
+    const cap = capOf(p.memory);
+    const sim = simBuild(p['sim card'] || '');
+    const k = [cap ?? '', sim === true ? 'e' : sim === false ? 'n' : '?'].join('|');
+    const row = {
+      price,
+      storage: cap != null && cap >= 64 ? cap : null,
+      ram: cap != null && cap < 64 ? cap : null,
+      esim: sim,
+      color: colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || null,
+      inStock: Number(v.quantity) > 0,
+      // The shop named this build in its own variant data. That outranks anything the eSIM
+      // post-pass could infer from a title, which is the same title on all eight rows.
+      simFromPage: sim !== undefined || undefined,
+    };
+    const had = best.get(k);
+    if (!had || row.price < had.price) best.set(k, row);
+  }
+  return [...best.values()];
+}
 // A Magento configurable page describes every one of its real SKUs here: per-child price,
 // stock, colour and capacity. One page therefore yields several offers, each true.
 function magentoChildren(html, colors) {
@@ -494,11 +547,27 @@ async function planetModifiers(varId) {
 const ramOf = text => { const c = capacitiesOf(text); const lo = Math.min(...c);
   return c.length >= 2 && lo < Math.max(...c) ? lo : null; };
 // colour, matched against the colours we already know this phone ships in
+// Shops and manufacturers spell one colour several ways. Samsung's own name is "Awesome Grey";
+// viva slugs it "gray", REDstore "gray", eldorado "awesome-gray". "Awesome Icyblue" is "iceblue"
+// at viva. Each spelling that reaches the page as its own word makes one phone look like two.
+const cword = w => String(w).toLowerCase().replace(/[^a-z]/g, '')
+  .replace(/^grey$/, 'gray').replace(/^ice(blue)$/, 'icy$1').replace(/^icy$/, 'ice');
 function colorOf(text, colors) {
   const h = String(text).toLowerCase();
   let hit = null;
   for (const c of colors || []) if (h.includes(String(c).toLowerCase()) && (!hit || c.length > hit.length)) hit = c;
-  return hit;
+  if (hit) return hit;
+  // The shop wrote the distinctive half and dropped the house adjective: every shop selling the
+  // Galaxy A57 slugs it "navy", and the catalogue calls it "Awesome Navy". Match on the last
+  // word when it names exactly ONE of this product's colours, so the row reports the catalogue's
+  // own name rather than a word of its own - which is what put "Navy" and "Awesome Navy" side by
+  // side as if they were different phones, and left "iceblue" with no colour at all.
+  const words = new Set(h.split(/[^a-z]+/).filter(Boolean).map(cword));
+  const cand = (colors || []).filter(c => {
+    const tail = cword(String(c).split(/\s+/).pop());
+    return tail.length > 2 && words.has(tail);
+  });
+  return cand.length === 1 ? cand[0] : null;
 }
 // pixel.am never names the variant in the title, but its product photo does:
 // ".../17-pro-orng-1.png". Expand the shop's abbreviations, then match a word of one of
@@ -806,6 +875,34 @@ if (process.argv[2] === '--selftest') {
     const got = ramOf(txt);
     if (got !== want) { bad++; console.log(`FAIL ram got=${got} want=${want} <- ${txt}`); }
   }
+  // pixel's variant blob, in the language the crawl actually reads it in. The property NAMES
+  // are Armenian and only the values give away what each one is; keying on the English names
+  // read every Armenian page as one option with no capacity, which is how a phone sold in two
+  // capacities reached the site as a single price.
+  const PXV = 'var PRODUCT_VARIANTS = ' + JSON.stringify([
+    { quantity: 3, price: 328000, salePrice: 0, wholesalePrice: 299000,
+      properties: [{ title: 'Գույն', valueTitle: 'Black' },
+                   { title: 'Հիշողություն', valueTitle: '128 ԳԲ' }] },
+    { quantity: 3, price: 369000, salePrice: 0, wholesalePrice: 339000,
+      properties: [{ title: 'Գույն', valueTitle: 'Black' },
+                   { title: 'Հիշողություն', valueTitle: '256 ԳԲ' }] },
+    { quantity: 3, price: 599000, salePrice: 0, wholesalePrice: 559000,
+      properties: [{ title: 'Գույն', valueTitle: 'Black' },
+                   { title: 'Հիշողություն', valueTitle: '256 ԳԲ' },
+                   { title: 'Սիմ Քարտ', valueTitle: 'Nano-SIM+eSIM' }] },
+  ]) + ';';
+  {
+    const m = pixelMatrix(PXV, null).sort((a, b) => a.price - b.price);
+    // two capacities, and the tray build kept apart from the eSIM one at the same capacity
+    const want = [[299000, 128, undefined], [339000, 256, undefined], [559000, 256, false]];
+    if (m.length !== want.length) { bad++; console.log(`FAIL pixelMatrix got ${m.length} sku(s), want ${want.length}`); }
+    else for (let i = 0; i < want.length; i++) {
+      const g = m[i];
+      if (g.price !== want[i][0] || g.storage !== want[i][1] || g.esim !== want[i][2]) {
+        bad++; console.log(`FAIL pixelMatrix ${g.price}/${g.storage}/${g.esim} want ${want[i].join('/')}`);
+      }
+    }
+  }
   const colCases = [['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
     ['APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523)', ['Cosmic Orange', 'Deep Blue'], 'Cosmic Orange'],
     ['Apple iPhone 17 Pro', ['Cosmic Orange', 'Deep Blue'], null]];
@@ -980,8 +1077,24 @@ const SHOPS = {
         if (!urls.length) break;
         const fresh = urls.filter(u => !seen.has(u) && matchPhone(u));
         urls.forEach(u => seen.add(u));
-        for (const u of fresh) {
+        // A product page names its own siblings. The category listing shows ONE build of each
+        // phone - the 256 GB Silver - and every other capacity and colour is rendered on that
+        // page as <a aria-label="Go to product variant">, server-side, pointing at its own
+        // product url. Not following them is why one iPhone 17 Pro reached us where the shop
+        // sells five, and why so much of this site stood unchecked: the rows existed, the pages
+        // existed, and nothing ever asked for them.
+        const queue = [...fresh];
+        for (let qi = 0; qi < queue.length && qi < 600; qi++) {
+          const u = queue[qi];
           const ph = await get(u); await sleep(DELAY_MS);
+          if (!ph) continue;
+          for (const m of ph.matchAll(/<a[^>]*aria-label="Go to product variant"[^>]*>/gi)) {
+            const href = (m[0].match(/href="(\/product\/[a-z0-9-]+)"/) || [])[1];
+            if (!href) continue;
+            const sib = 'https://ispace.am' + href;
+            if (seen.has(sib) || !matchPhone(sib)) continue;
+            seen.add(sib); queue.push(sib);
+          }
           const pr = ldJson(ph).find(j => j['@type'] === 'Product');
           const price = Number(pr?.offers?.price);
           if (!pr || !price) continue;
@@ -1155,9 +1268,23 @@ const SHOPS = {
         // minimum published an inflated figure for every Pixel offer: the Galaxy A37 read
         // 129 000 against a shelf price of 119 000.
         const cash = pixelCash(h);
+        const img = shot && safeUrl(shot) ? shot : null;
+        // Every build the page sells, each with its own price. Only when there is more than one
+        // - a page with a single SKU says nothing the cash price has not already said, and going
+        // through the matrix for it would swap a figure read off the page for one read out of a
+        // blob for no gain.
+        const matrix = pixelMatrix(h, cols);
+        if (matrix.length > 1) {
+          for (const mv of matrix)
+            out.push({ id, price: mv.price,
+              storage: mv.storage ?? storageOf(title) ?? storageOf(u) ?? v.storage,
+              ram: mv.ram ?? undefined, esim: mv.esim, simFromPage: mv.simFromPage,
+              title, url: safe, image: img, color: mv.color || color, inStock: mv.inStock });
+          continue;
+        }
         out.push({ id, price: cash || Math.min(...prices),
           storage: storageOf(title) ?? storageOf(u) ?? v.storage, title, url: safe,
-          image: shot && safeUrl(shot) ? shot : null, color, inStock: true });
+          image: img, color, inStock: true });
       }
       return out;
     }
@@ -1675,8 +1802,11 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
     // night's answer while a freshly crawled one was judged on the raw reading, and the two
     // disagreed: REDstore's 519,000 Silver and 579,000 Dual iPhone 17 Pros were dropped as
     // duplicates of an eSIM row that only looked like a tray row because last night said so.
+    // ...unless the adapter read it off the shop's own variant data, which is a fact the page
+    // stated rather than a conclusion drawn from a title, and is not re-derivable from one:
+    // pixel gives all eight builds of a phone the same title.
     const { esim, ...rest } = o;
-    return enrich(rest);
+    return enrich(o.simFromPage ? o : rest);
   });
   // An offer we are not re-fetching keeps the date it already had. One that predates the field
   // gets the date of the file it came out of, which is when it was last confirmed present -
@@ -1860,8 +1990,12 @@ try {
                      // stored flag is a previous run's conclusion and the other's is today's raw
                      // reading, and comparing the two made REDstore's 519,000 Silver vanish into
                      // its 509,000 eSIM sibling - a different page, a different price, a
-                     // different phone.
-                     && !!simBuild(`${o.title || ''} ${o.url || ''}`) === !!r.esim
+                     // different phone. Where the ADAPTER read the build out of the shop's own
+                     // variant data, that is the shop's word and the title is not consulted:
+                     // pixel gives all eight builds of a phone one title, so deriving from it
+                     // would fail to match the hand row that says the same thing and the two
+                     // would sit side by side at the same price.
+                     && !!(o.simFromPage ? o.esim : simBuild(`${o.title || ''} ${o.url || ''}`)) === !!r.esim
                      // A hand row with no colour in it is not a DIFFERENT colour, it is an
                      // unspecified one - and against a crawled row of the same build at the same
                      // price it says nothing the crawl has not already said today. 73 offers sat
@@ -1880,7 +2014,13 @@ try {
                      && (!o.seeded || canonUrl(o.url) === canonUrl(r.url)))) continue;
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
-    list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
+    // enrich(), exactly as a crawled offer gets. It only ever fills a null, and a hand row
+    // arrives with more nulls than any crawled one: the colour is usually not in the csv at all
+    // but is sitting in plain sight in the url the row names. Four viva rows for the Galaxy A57
+    // at 166,900 - .../a57-8gb-128gb-navy/, -iceblue/, -gray/, -lilac/ - all published with no
+    // colour, so the page showed the same shop four times at one price with nothing to tell them
+    // apart, and every one of them wearing a "check colour" badge over a link that says navy.
+    list.push(enrich({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
                 ram: r.ram ?? undefined, size: screenOf(r.title, r.id),
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim,
                 seen: /^\d{4}-\d{2}-\d{2}$/.test((r.seen || '').trim()) ? r.seen.trim() : undefined,
@@ -1888,7 +2028,7 @@ try {
                 // this shop prices the configuration, not the page: tools/confirm-hand.mjs has
                 // checked that the link opens the product, which is the only thing there is to
                 // check, so the site says "by hand" rather than "not checked".
-                pickOnSite: (r.check || '').trim() === 'config' || undefined });
+                pickOnSite: (r.check || '').trim() === 'config' || undefined }));
     seeded++;
   }
   if (tagged) console.log(`${tagged} crawled offer(s) had their SIM build named by a hand row`);
@@ -1956,7 +2096,11 @@ for (const [id, list] of Object.entries(offers)) {
     // that did: REDstore titles 27 of its iPhones "... eSim" and every one of them was being
     // published as Nano-SIM, which is the opposite of what the shop wrote on its own page.
     const said = simBuild(`${o.title || ''} ${o.url || ''}`);
-    const b = SIMPINS.has(o.url) ? SIMPINS.get(o.url)
+    // A build the ADAPTER read out of the shop's own variant data is not a guess and is not
+    // re-derived here. pixel gives all eight builds of a phone the same title, so re-reading
+    // that title would collapse the distinction the page went to the trouble of stating.
+    const b = o.simFromPage ? o.esim
+      : SIMPINS.has(o.url) ? SIMPINS.get(o.url)
       : said !== undefined ? said
       : (NANO_ONLY.has(o.shop) && HAS_SIM.has(id)) ? false
       : undefined;
