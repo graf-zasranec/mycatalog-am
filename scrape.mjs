@@ -380,7 +380,13 @@ const ESIM_ONLY = t => /(^|[^a-z])e-?sim([^a-z]|$)/i.test(t) && !TRAY.test(t);
 // .../512gb-sim-deep-blue from .../512gb-silver-esim.
 const SIM_WORD = /(^|[^a-z])sim([^a-z]|$)/i;
 const simBuild = t => ESIM_ONLY(t) ? true : (TRAY.test(t) || SIM_WORD.test(t)) ? false : undefined;
-const capOf = lbl => { const c = capacitiesOf(lbl || ''); return c.length ? c[0] : null; };
+// A shop states BOTH figures in one attribute: pixel's Galaxy A56 offers "Ram/Rom: 8/128 GB".
+// capacitiesOf now returns both of them, and taking the first took the RAM - so the page's own
+// capacity never matched the row's 128 and thirty pixel products could not be priced at all.
+// The capacity of a label is the largest figure that could BE a capacity; where none could -
+// pixel lists the MacBook Air's memory as "16 ԳԲ" and means RAM - the single figure stands.
+const capOf = lbl => { const c = capacitiesOf(lbl || ''); if (!c.length) return null;
+  const big = c.filter(v => v >= 64); return big.length ? Math.max(...big) : c[0]; };
 // The JSON object that starts at the first { after an anchor. Brace counting has to skip
 // strings, or a } inside a product name ends the object early.
 function jsonAfter(html, anchor) {
@@ -485,12 +491,14 @@ function pixelMatrix(html, colors) {
       : Number(v.salePrice) > 0 ? Number(v.salePrice) : Number(v.price));
     if (!(price > 1000)) continue;
     const cap = capOf(p.memory);
+    // the same label often carries the memory too - "8/128 GB" is both
+    const mram = ramOf(p.memory || '');
     const sim = simBuild(p['sim card'] || '');
     const k = [cap ?? '', sim === true ? 'e' : sim === false ? 'n' : '?'].join('|');
     const row = {
       price,
       storage: cap != null && cap >= 64 ? cap : null,
-      ram: cap != null && cap < 64 ? cap : null,
+      ram: mram ?? (cap != null && cap < 64 ? cap : null),
       esim: sim,
       color: colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || null,
       inStock: Number(v.quantity) > 0,
@@ -1001,6 +1009,16 @@ if (process.argv[2] === '--selftest') {
         bad++; console.log(`FAIL istyleVariants ${v[i].price}/${v[i].storage}/${v[i].esim} want ${want[i].join('/')}`);
       }
   }
+  // A shop that states both figures in one attribute: pixel's Galaxy A56 is "Ram/Rom: 8/128 GB".
+  // The capacity of that label is 128 - taking the first figure took the RAM, and then the
+  // page's own capacity never matched the row's and the product could not be priced at all.
+  // Where no figure could be a capacity, pixel means RAM - the MacBook Air's memory is "16 ԳԲ".
+  const labelCases = [['8/128 GB', 128], ['12/256 GB', 256], ['512 GB', 512],
+    ['16 ԳԲ', 16], ['1 TB', 1024], ['12/512GB', 512], ['', null]];
+  for (const [txt, want] of labelCases) {
+    const got = capOf(txt);
+    if (got !== want) { bad++; console.log(`FAIL capOf got=${got} want=${want} <- ${txt}`); }
+  }
   const colCases = [['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
     ['APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523)', ['Cosmic Orange', 'Deep Blue'], 'Cosmic Orange'],
     ['Apple iPhone 17 Pro', ['Cosmic Orange', 'Deep Blue'], null]];
@@ -1070,7 +1088,7 @@ if (process.argv[2] === '--selftest') {
     const got = SIMPINS.has(url) ? SIMPINS.get(url) : simBuild(url);
     if (got !== want) { bad++; console.log(`FAIL  sim pin got=${got} want=${want}  <- ${url}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + pinCases.length + simPinCases.length + 1} checks pass`);
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 

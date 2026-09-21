@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T09:26:15.825Z",
+ "generated": "2026-09-21T11:12:31.313Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -22482,7 +22482,8 @@
     "color": "Black",
     "url": "https://shop.viva.am/en/product/xiaomi-redmi-note-15-pro-plus-5g-8gb-256gb-black/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "xiaomi-redmi-note-15-pro-plus-5g",
@@ -24836,18 +24837,6 @@
   "samsung-galaxy-s25": [
    {
     "id": "samsung-galaxy-s25",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 12GB/128GB Icy Blue",
-    "price": 239000,
-    "storage": 128,
-    "ram": 12,
-    "color": "Icy Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-icy-blue",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s25",
     "price": 259000,
     "title": "Samsung Galaxy S25 12GB/128GB Mint",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-mint",
@@ -24889,18 +24878,6 @@
     "color": "Mint",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s25",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 12GB/256GB Silver Shadow",
-    "price": 259000,
-    "storage": 256,
-    "ram": 12,
-    "color": "Silver Shadow",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb256gb-silver-shadow",
-    "seeded": true,
     "esim": false
    },
    {
@@ -26884,18 +26861,6 @@
    },
    {
     "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/128GB Graphite",
-    "price": 142000,
-    "storage": 128,
-    "ram": 8,
-    "color": "Graphite",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-graphite",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-a56",
     "price": 143900,
     "title": "SAMSUNG A56 (A566) 128GB Black //",
     "url": "https://vlv.am/en/Product/37976",
@@ -27207,42 +27172,6 @@
    },
    {
     "id": "samsung-galaxy-a36",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A36 8GB/128GB Lavender",
-    "price": 109000,
-    "storage": 128,
-    "ram": 8,
-    "color": "Lavender",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-lavender",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A36 8GB/128GB Lime",
-    "price": 109000,
-    "storage": 128,
-    "ram": 8,
-    "color": "Lime",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-lime",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A36 8GB/128GB White",
-    "price": 109000,
-    "storage": 128,
-    "ram": 8,
-    "color": "White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-white",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-a36",
     "price": 116900,
     "storage": 128,
     "title": "Samsung Galaxy A36 128GB (Awesome Lavender)",
@@ -27322,30 +27251,6 @@
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A36 8GB/256GB Lime",
-    "price": 124000,
-    "storage": 256,
-    "ram": 8,
-    "color": "Lime",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb256gb-lime",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-a36",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A36 8GB/256GB White",
-    "price": 124000,
-    "storage": 256,
-    "ram": 8,
-    "color": "White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb256gb-white",
-    "seeded": true,
-    "esim": false
    },
    {
     "id": "samsung-galaxy-a36",
@@ -27881,29 +27786,6 @@
    },
    {
     "id": "apple-iphone-16-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 16 Pro Max 512GB Black Titanium",
-    "price": 589000,
-    "storage": 512,
-    "ram": null,
-    "color": "Black Titanium",
-    "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "apple-iphone-16-pro-max",
-    "shop": "redstore",
-    "title": "iPhone 16 Pro Max 512GB Black Titanium eSim",
-    "price": 589000,
-    "storage": 512,
-    "ram": null,
-    "color": "Black Titanium",
-    "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium-esim",
-    "seeded": true
-   },
-   {
-    "id": "apple-iphone-16-pro-max",
     "shop": "viva",
     "title": "iPhone 16 Pro Max 512GB Desert Titanium",
     "price": 640900,
@@ -28152,18 +28034,6 @@
     "color": "Teal",
     "shop": "istore",
     "seen": "2026-09-20",
-    "esim": false
-   },
-   {
-    "id": "apple-iphone-16-plus",
-    "shop": "redstore",
-    "title": "iPhone 16 Plus 256GB Pink",
-    "price": 429000,
-    "storage": 256,
-    "ram": null,
-    "color": "Pink",
-    "url": "https://redstore.am/en/product/iphone-16-plus-256gb-pink",
-    "seeded": true,
     "esim": false
    },
    {
@@ -43502,18 +43372,6 @@
     "color": "Titanium Purple",
     "shop": "vlv",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "honor-x9c",
-    "shop": "redstore",
-    "title": "Honor X9C",
-    "price": 159000,
-    "storage": 256,
-    "ram": null,
-    "color": "Titanium Black",
-    "url": "https://redstore.am/product/honor-x9c-12gb256gb-titanium-black",
-    "seeded": true,
-    "esim": false
    }
   ],
   "google-pixel-10-pro-xl": [
@@ -47775,18 +47633,6 @@
    },
    {
     "id": "samsung-galaxy-s25-edge",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Edge 12GB/256GB Titanium Icyblue",
-    "price": 329000,
-    "storage": 256,
-    "ram": 12,
-    "color": "Titanium Icyblue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-edge-12gb256gb-titanium-icyblue",
-    "seeded": true,
-    "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s25-edge",
     "shop": "notebookcentre",
     "title": "Samsung Galaxy S25 Edge Titanium Jetblack / 512 GB",
     "price": 389000,
@@ -48435,18 +48281,6 @@
     "seeded": true,
     "esim": false,
     "seen": "2026-09-20"
-   },
-   {
-    "id": "oneplus-nord-6",
-    "shop": "redstore",
-    "title": "OnePlus Nord 6",
-    "price": 219000,
-    "storage": 256,
-    "ram": null,
-    "color": "Quick Silver",
-    "url": "https://redstore.am/en/product/oneplus-nord-6-8gb256gb-quick-silver",
-    "seeded": true,
-    "esim": false
    },
    {
     "id": "oneplus-nord-6",
@@ -66173,7 +66007,8 @@
     "color": "Black",
     "url": "https://shop.viva.am/en/product/poco-c71-3gb-64gb-Black/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "poco-c71",
@@ -66198,7 +66033,8 @@
     "color": "Black",
     "url": "https://shop.viva.am/en/product/poco-c71-4gb-128gb-black/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "poco-c71",
@@ -66210,7 +66046,8 @@
     "color": "Gold",
     "url": "https://shop.viva.am/en/product/poco-c71-4gb-128gb-gold/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    }
   ],
   "samsung-galaxy-tab-s9-ultra": [
@@ -67201,7 +67038,8 @@
     "color": "Black",
     "url": "https://shop.viva.am/en/product/realme-note-60x-3gb-64gb-black/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "realme-note-60x",
@@ -67213,7 +67051,8 @@
     "color": "Green",
     "url": "https://shop.viva.am/en/product/realme-note-60x-3gb-64gb-green/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "realme-note-60x",
@@ -67251,7 +67090,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/realme-note-60x-4gb-128gb-black1287/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    }
   ],
   "realme-gt-7t": [
@@ -67345,7 +67185,8 @@
     "color": "White",
     "url": "https://shop.viva.am/en/product/realme-c71-6gb-128gb-white/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "realme-c71",
@@ -67357,7 +67198,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/realme-c71-6gb-128gb-green2793/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "realme-c71",
@@ -67382,7 +67224,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/realme-c71-8gb-256gb-white2229/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    }
   ],
   "realme-c75": [
@@ -67923,7 +67766,8 @@
     "color": "Black",
     "url": "https://shop.viva.am/en/product/iphone-16e-128gb-black/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-16e",
@@ -67935,7 +67779,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/iphone-16e-128gb-white2876/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-16e",
@@ -67947,7 +67792,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/iphone-16e-256gb-black7619/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-16e",
@@ -67959,7 +67805,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/iphone-16e-256gb-white28766675-md1w4hx-a/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-16e",
@@ -67971,7 +67818,8 @@
     "color": null,
     "url": "https://shop.viva.am/en/product/iphone-16e-512gb-white287666758053/",
     "seeded": true,
-    "esim": false
+    "esim": false,
+    "seen": "2026-09-21"
    }
   ],
   "honor-x8c": [
