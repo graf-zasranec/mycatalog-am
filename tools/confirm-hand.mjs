@@ -168,6 +168,23 @@ function mobilecentrePrice(html, f) {
   return n >= FLOOR ? { price: n, how: 'mobilecentre-cash', stock: true } : null;
 }
 
+// Telecom Armenia states its price in plain markup and nowhere else - no ld+json, no og meta,
+// no itemprop - so priceOf() below found nothing on any of its pages and all 64 of its rows sat
+// unconfirmed while the figure was sitting on the page the whole time. The class is the same
+// "e-shop__main-price" the scraper already reads on this shop's listings.
+//
+// Only the FIRST such block: the page repeats the class in its recommendations carousel, and
+// the first one is the product the page is about.
+function telecomPrice(html, f) {
+  if (!f[4].includes('telecomarmenia.am')) return null;
+  const i = html.indexOf('e-shop__main-price');
+  if (i < 0) return null;
+  const m = html.slice(i, i + 300).match(/>\s*([\d][\d,  \s]{3,12})/);
+  if (!m) return null;
+  const n = Number(String(m[1]).replace(/[^\d]/g, ''));
+  return n >= FLOOR ? { price: n, how: 'telecom-page', stock: true } : null;
+}
+
 function priceOf(html) {
   for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
@@ -319,7 +336,7 @@ for (let i = 0; i < todo.length; i++) {
         continue;
       }
     }
-    p = buildPrice(html, f) || mobilecentrePrice(html, f) || priceOf(html);
+    p = buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
     // url that five different Dyson colours point at - five rows, five prices, one page.

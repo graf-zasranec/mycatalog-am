@@ -30,7 +30,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" plus ")
   .replace(/[^a-z0-9]+/g, ' ').replace(/ seria /g, ' series ').replace(/\s+/g, ' ').trim();
 
-async function vlvPrice(vid) {
+async function vlvInfo(vid) {
   try {
     const r = await fetch(`https://vlv.am/api/product-info/${vid}`, { method: 'POST', redirect: 'follow',
       signal: AbortSignal.timeout(TIMEOUT_MS),
@@ -41,8 +41,17 @@ async function vlvPrice(vid) {
     // getting that wrong fails silently - every product falls back and the fix looks applied.
     const promo = Number((t.match(/"promo_price":(\d+)/) || [])[1]) || 0;
     const sell = Number((t.match(/"selling_price":(\d+)/) || [])[1]) || 0;
-    return promo || sell;
-  } catch { return 0; }
+    // ...and the photograph, from the same answer. The picture the PAGE advertises is dead on a
+    // third of this shop's products - og:image and the ld+json both name a thumbnail file that
+    // 404s today, not merely in our copy - while the gallery this endpoint returns is live and
+    // 1280px. Thirty products had no photograph on our site for want of asking a request we were
+    // already making.
+    const gal = [...t.matchAll(/"images_source":"([^"]+)"/g)]
+      .map(m => m[1].split(String.fromCharCode(92) + '/').join('/'))
+      .filter(x => /\.(webp|jpe?g|png)$/i.test(x));
+    const image = gal.length ? 'https://vlv.am/public/' + gal[0].replace(/^\/+/, '') : '';
+    return { price: promo || sell, image };
+  } catch { return { price: 0, image: '' }; }
 }
 
 // The status of the last request, for the one caller that needs to tell "this page is gone"
@@ -1677,7 +1686,7 @@ const SHOPS = {
     // promo_price while a promotion is running, selling_price otherwise. robots.txt allows this
     // path - the price endpoints it does disallow (/price/ajax, /getHomeActionPrice) are other
     // paths, and are not touched. 0 means "could not tell", and the caller keeps the ld+json.
-    async price(vid) { return vlvPrice(vid); },
+    async price(vid) { return (await vlvInfo(vid)).price; },
     async run() {
       // Their sitemap lists 13 003 products as /Product/<number> with no name in the URL, so
       // there is nothing to filter on before fetching. The title IS on the page, so the id ->
@@ -1710,10 +1719,12 @@ const SHOPS = {
         // discounted one: the 65" S95F printed 1,111,000 on the page while its ld+json still said
         // 1,587,000 and its own selling_price said 1,325,810. Three numbers, and the one the
         // customer pays is the smallest. So ask the endpoint the page itself asks.
-        const live = await vlvPrice(vid); await sleep(DELAY_MS);
-        const price = live || Math.round(Number((o && o.price) || 0));
+        const live = await vlvInfo(vid); await sleep(DELAY_MS);
+        const price = live.price || Math.round(Number((o && o.price) || 0));
         if (!id || !price || price < 5000) continue;
-        const img = safeUrl(String((Array.isArray(p.image) ? p.image[0] : p.image) || '')) || null;
+        // the gallery first; the page's own advertised picture only if the gallery is empty
+        const img = (live.image && safeUrl(live.image))
+          || safeUrl(String((Array.isArray(p.image) ? p.image[0] : p.image) || '')) || null;
         out.push({ id, price, title, url: u, image: img,
           storage: storageOf(title), ram: ramOf(title),
           inStock: !/OutOfStock|SoldOut/i.test(String((o && o.availability) || '')) });
