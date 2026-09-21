@@ -1820,6 +1820,14 @@ try {
                  esim: simBuild(`${r.title} ${r.url}`) }))
     .filter(r => r.id && r.price);
 
+  // pixel.am serves one product page under both /am/ and /en/. The crawl reads the Armenian
+  // path and a hand row was written against the English one, so comparing the two literally
+  // meant pass 1 never recognised the row it was meant to tag and pass 2 added a second copy
+  // beside it - the same shop, the same price, the same colour, twice on the offers page. Only
+  // a leading two-letter segment is dropped, which is a locale everywhere it appears here.
+  const canonUrl = u => String(u || '').replace(/\/+$/, '')
+    .replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2');
+
   // Pass 1 - TAG, not add. A crawler can only read the axes the page exposes, and 3DPlanet's
   // page shows no SIM option at all: its four prices are the eSIM build, which nothing on the
   // page says. A hand row carrying that shop's own price for a row we already have is telling us
@@ -1829,7 +1837,7 @@ try {
     // url as well as price: a hand row names one page, and matching on shop+storage+price alone
     // tagged whichever row happened to share that price - two redstore rows at the same price got
     // opposite flags, the dedupe below then kept whichever came first, and the build alternated.
-    const hit = (offers[r.id] || []).find(o => o.shop === r.shop && o.url === r.url
+    const hit = (offers[r.id] || []).find(o => o.shop === r.shop && canonUrl(o.url) === canonUrl(r.url)
       && (o.storage ?? null) === r.storage && o.price === +r.price);
     if (hit && !!hit.esim !== !!r.esim) { hit.title = r.title; hit.esim = r.esim; tagged++; }
   }
@@ -1869,7 +1877,7 @@ try {
                      // nothing at all. Requiring the urls to match here meant every hand row
                      // survived beside the crawled one it duplicates: zigzag showed 147 rows for
                      // 66 real offers, half of them dated and linked, half saying "not checked".
-                     && (!o.seeded || (o.url || null) === (r.url || null)))) continue;
+                     && (!o.seeded || canonUrl(o.url) === canonUrl(r.url)))) continue;
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,

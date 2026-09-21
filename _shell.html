@@ -268,6 +268,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* Nano-SIM is the tray build and the commoner one, so it reads as plain type rather than
    competing with the eSIM chip for attention. */
 .orow .esim.nano{background:none;border:1px solid var(--line2);color:var(--muted)}
+/* The colour, on the all-offers page only. A swatch first, because that is what the eye
+   separates two rows by before it reads either of them. */
+.orow .ocol{font-style:normal;display:inline-flex;align-items:center;gap:5px;vertical-align:middle}
+.orow .ocol b{width:9px;height:9px;border-radius:50%;background:var(--c,var(--line2));
+  border:1px solid rgba(0,0,0,.18);flex:none}
 /* The shop sells this finish but publishes no page for it, so the link goes to the same
    model in another colour. The row says so rather than letting the picture do the lying. */
 .orow .chk{margin-left:6px;padding:1px 6px;border-radius:var(--pill);border:1px solid var(--line2);

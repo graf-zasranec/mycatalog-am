@@ -1726,7 +1726,7 @@ const hasChoices = p => {
   return new Set(v.map(z => z.storage)).size > 1 || new Set(v.map(z => z.ram)).size > 1
     || ((p && p.colors) || []).length > 1;
 };
-function offerRow(o, lo, i, unit, cls, of) {
+function offerRow(o, lo, i, unit, cls, of, withColor) {
   // A row with no link was still an <a>, and safeHref turns a missing url into "#" - so it looked
   // clickable and clicking it threw you back to the front page. A price somebody read off a shelf
   // is worth showing; pretending it leads somewhere is not. No url, no link, and no arrow.
@@ -1745,6 +1745,11 @@ function offerRow(o, lo, i, unit, cls, of) {
         o.size != null ? esc(inch(o.size)) : '',
         o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : ''),
         o.ram ? esc(o.ram + ' ' + u('gb')) : '',
+        // The product page shows one row per build and collapses the colours behind it; this
+        // page shows every one of them, and without the colour written down two rows from the
+        // same shop at the same price are indistinguishable - they read as the listing being
+        // duplicated rather than as the two different phones they are.
+        withColor && o.color ? `<i class="ocol"><b style="--c:${swatch(o.color)}"></b>${esc(o.color)}</i>` : '',
       ].filter(Boolean).join(' · ')}${!(of && simChoice(of)) ? ''
         : o.esim === true ? ' <i class="esim">eSIM</i>'
         : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
@@ -1824,7 +1829,7 @@ function offersView(p) {
           ? `<span class="cnt">${esc(x('saveUpTo'))} <b class="num">${money(hi - lo)} ֏</b></span>`
           : (tiers.size > 1 ? `<span class="cnt">${esc(x('pickCapacity'))}</span>` : '');
       })()}</div>
-    ${list.length ? `<ol class="olist">${list.map((o, i) => offerRow(o, lo, i, p.variantUnit, '', p)).join('')}</ol>`
+    ${list.length ? `<ol class="olist">${list.map((o, i) => offerRow(o, lo, i, p.variantUnit, '', p, true)).join('')}</ol>`
       : `<p class="empty" style="padding:30px 0"><b>${esc(x('noOffers'))}</b></p>`}
     <p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>
   </div>`;
