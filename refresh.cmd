@@ -53,8 +53,13 @@ REM It runs after the two fetches above because eldorado and zigzag rows are ans
 REM caches, and before the crawl below because the crawl reads listings.csv.
 REM
 REM Not a gate: an unreachable shop leaves the old figure, which is what it did before anyway.
+REM --recheck 1 means "anything not looked at today", which is every hand row. --limit 400 keeps
+REM one night's work to roughly ten minutes on this machine: the oldest 400 are taken, they come
+REM back carrying today's date, and tomorrow's run picks up the next 400. About 1,800 rows are in
+REM the rotation, so everything is re-priced within a week and nothing is ever left behind.
+REM Raise the limit to cover more per night; drop --limit entirely to do all of them in one go.
 echo [%date% %time%] re-pricing the hand-entered rows...
-node tools\confirm-hand.mjs
+node tools\confirm-hand.mjs --recheck 1 --limit 400
 if errorlevel 1 echo   hand-row pass failed - carrying on with the figures already in listings.csv
 
 REM --fresh: the nightly job wants today's prices from every shop, not yesterday's checkpoint.

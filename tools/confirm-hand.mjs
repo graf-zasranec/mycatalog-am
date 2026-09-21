@@ -17,7 +17,31 @@ import fs from 'node:fs';
 const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';
 const DELAY = 700;
 const dry = process.argv.includes('--dry');
-const only = new Set(process.argv.slice(2).filter(a => !a.startsWith('--')));
+// Without these this tool only ever looked at rows carrying NO date, which made it a one-shot
+// way to clear a backlog rather than something a nightly job can use: once every row had been
+// checked once, it found nothing to do and prices never moved again.
+//   --recheck N   also take rows last checked more than N days ago
+//   --limit M     stop after M rows, oldest first, so a run has a bounded length
+// The pair is what lets refresh.cmd re-price everything over a few nights on a slow machine
+// instead of spending an hour on one.
+const numArg = (name, dflt) => {
+  const i = process.argv.indexOf(name);
+  const v = i >= 0 ? Number(process.argv[i + 1]) : NaN;
+  return Number.isFinite(v) && v >= 0 ? v : dflt;
+};
+const RECHECK = process.argv.includes('--recheck') ? numArg('--recheck', 1) : null;
+const LIMIT = process.argv.includes('--limit') ? numArg('--limit', 0) : 0;
+const DAY_MS = 86400000;
+const ageDays = (f) => {
+  const d = (f[8] || '').trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return Infinity;     // never checked: the oldest there is
+  return (Date.now() - Date.parse(d + 'T00:00:00Z')) / DAY_MS;
+};
+const FLAG_VALUES = new Set(['--recheck', '--limit'].flatMap(n => {
+  const i = process.argv.indexOf(n);
+  return i >= 0 ? [process.argv[i + 1]] : [];
+}));
+const only = new Set(process.argv.slice(2).filter(a => !a.startsWith('--') && !FLAG_VALUES.has(a)));
 // notebookcentre.am names anthropic-ai and Claude-Web in robots.txt with Disallow: / , so it is
 // confirmed by a person opening the shop, never from here. Same list as tools/check-links.py.
 const NEVER = ['notebookcentre.am'];
@@ -351,7 +375,7 @@ const rows = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
 const head = rows[0];
 const body = rows.slice(1).filter(l => l.trim()).map(l => l.split(','));
 let todo = body.filter(f => f.length > 5 && f[4] && /^https?:/.test(f[4])
-  && !/^\d{4}-\d{2}-\d{2}$/.test((f[8] || '').trim())
+  && (RECHECK === null ? !/^\d{4}-\d{2}-\d{2}$/.test((f[8] || '').trim()) : ageDays(f) >= RECHECK)
   && (!only.size || only.has(f[0]))
   && !NEVER.some(h => f[4].includes(h))
   // a row at one of the two cached shops is only reachable if the cache happens to list it
@@ -384,6 +408,15 @@ for (const f of body)
   if (f.length > 5 && f[4] && /^https?:/.test(f[4]) && isConfig(f[4])
       && (!only.size || only.has(f[0])) && !(f[7] || '').trim() && !todo.includes(f)) todo.push(f);
 
+// Oldest first, then take only as many as this run is allowed. That ordering is what makes a
+// bounded nightly run cover everything: each night picks up where the last left off, because
+// the rows it checked carry today's date and sort to the back.
+const waiting = todo.length;
+if (LIMIT > 0) console.log(`limit ${LIMIT}: taking the oldest of ${waiting} row(s) due`);
+if (LIMIT > 0 && todo.length > LIMIT) {
+  todo.sort((a, b) => ageDays(b) - ageDays(a));
+  todo = todo.slice(0, LIMIT);
+}
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
 let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], cheap = [], linked = 0;
 for (let i = 0; i < todo.length; i++) {
