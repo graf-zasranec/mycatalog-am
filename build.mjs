@@ -166,6 +166,14 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 
 // small: the 600 px copy where one exists. The product page wants the full-size colour shot;
 // the card cycling through the same colours in a 123 px box does not.
+// The same floor tools/cutout.py mattes to, and for the same reason: 600px, or 500px for a
+// product nobody is looking at, where the comparison is not 500 against 600 but 500 against a
+// swatch that changes nothing when it is clicked. Keeping this in step matters - cutout.py now
+// mattes those colours, and a floor of its own here would build cutouts the page cannot show.
+// TEMPORARY alongside its twin; see the note in tools/cutout.py.
+const POP = Object.fromEntries(phones.map(p => [p.id, p.popularity ?? 100]));
+const colourFloor = id => ((POP[id] ?? 100) < 50 ? 500 : 600);
+
 function cutMap(inline, small) {
   const m = {};
   for (const f of cutFiles) {
@@ -174,7 +182,7 @@ function cutMap(inline, small) {
     // 600px is the catalogue's floor for any photo. This used to be a fraction of the main
     // shot's width, which punished the good main shots: the Fold 8's 719px colours were thrown
     // out against its 1200px main while the Ultra's 937px ones squeaked past the same ratio.
-    if (rest !== 'main' && cutW[f] < 600) continue;
+    if (rest !== 'main' && cutW[f] < colourFloor(id)) continue;
     const thumb = `images/thumb/${f}`;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
