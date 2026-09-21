@@ -1423,9 +1423,13 @@ function visibleOffers(p) {
   // deliberately no colour picker here - so four identical-looking rows were four ways of saying
   // the same sentence. Collapse on what the row actually displays. This also fixes the shop count
   // and the price rail, which were counting colours as competing offers.
+  // The url was in this key, and the url is the one thing the row does NOT display: Notebook
+  // Centre gives each colour its own page, so three colours at one price were three different
+  // keys and all three survived a filter written to remove exactly them. Key on what a reader
+  // can see. The first survivor wins, which is the shop's own first colour.
   const seen = new Set();
   return o.filter(v => {
-    const k = [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?', v.url || ''].join('|');
+    const k = [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?'].join('|');
     return seen.has(k) ? false : (seen.add(k), true);
   });
 }
@@ -1714,13 +1718,9 @@ function offerRow(o, lo, i, unit, cls, of) {
         o.size != null ? esc(inch(o.size)) : '',
         o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : ''),
         o.ram ? esc(o.ram + ' ' + u('gb')) : '',
-        // ...and the colour, which was the one axis missing. Notebook Centre sells the iPhone 17
-        // Pro Max 256GB Nano-SIM in three colours at one price, and without this the page drew
-        // three rows that were identical in every character - the same shop, three times over,
-        // for no reason a reader could see.
-        esc(o.color || ''),
       ].filter(Boolean).join(' · ')}${o.esim === true ? ' <i class="esim">eSIM</i>'
-        : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
+        : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
+        ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
       ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>`
