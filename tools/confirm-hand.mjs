@@ -41,6 +41,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 // iPads and phones. Nothing in this catalogue costs under a thousand drams, so a figure below
 // that is the page saying "no", not a price.
 const FLOOR = 1000;
+// ...and above that floor there is still a band where a figure is more likely to be a mistake
+// than a bargain. Flagged for a person, not dropped: see the guard further down.
+const SUSPECT = 10000;
 
 // pixel.am is the one shop here that states no price on the page at all. It ships every BUILD of
 // a product as JSON instead - var PRODUCT_VARIANTS = [...] - each with its own price, sale price,
@@ -76,8 +79,20 @@ const NOISE = new Set(['the', 'and', 'with', 'for', 'new', 'gb', 'tb', 'mm', 'wi
   'series', 'smartphone', 'phone', 'buy', 'price', 'shop', 'ucom', 'am']);
 // Digits are kept: "AirPods 4" is not "AirPods Pro 3", and dropping the 4 left one word to judge
 // by. What goes is the build - a capacity, a memory size - because the page names the family.
-const nwords = z => [...new Set(String(z).toLowerCase().match(/[a-z0-9]+/g) || [])]
-  .filter(w => w.length > 1 && !NOISE.has(w) && !/^\d+(gb|tb|mb)$/.test(w));
+// "+" is a word. Ucom titles the Galaxy S26+ "Samsung Galaxy S26 Plus" while the row writes it
+// "S26+", and stripping the sign left "plus" on one side only - the page scored 0.75 against a
+// bar of 0.8 and five Samsung rows were reported as links opening a different product when the
+// page named the product exactly. scrape.mjs's norm() has spelled it out for the same reason.
+// ...and a model number is one word on one side and two on the other. Ucom titles it "Galaxy Z
+// Flip 7 FE" where the row writes "Flip7 FE", so "flip7" matched neither "flip" nor "7" and four
+// rows were reported as opening a different product. A letter followed by a digit is split, which
+// gives both sides the same shape; the reverse is NOT split, or "8gb" would become a stray "8"
+// that no capacity rule could then discard. A lone digit is kept - the comment above is right
+// that "AirPods 4" is not "AirPods Pro 3" - while a lone letter goes.
+const nwords = z => [...new Set(String(z).toLowerCase().split('+').join(' plus ')
+  .replace(/([a-z])(\d)/g, '$1 $2')
+  .match(/[a-z0-9]+/g) || [])]
+  .filter(w => (w.length > 1 || /\d/.test(w)) && !NOISE.has(w) && !/^\d+(gb|tb|mb)$/.test(w));
 function namesTheProduct(html, title) {
   const h1 = (html.match(/<h1[^>]*>([\s\S]{0,200}?)<\/h1>/i) || [])[1] || '';
   const tt = (html.match(/<title[^>]*>([\s\S]{0,200}?)<\/title>/i) || [])[1] || '';
@@ -112,8 +127,22 @@ function buildPrice(html, f) {
   if (m) {
     try {
       vs = JSON.parse(m[1]).map(v => {
-        const p = Object.fromEntries((v.properties || [])
-          .map(x => [String(x.title).toLowerCase().trim(), String(x.valueTitle || '').trim()]));
+        // Each property is recognised by what its VALUE looks like, never by its name. pixel
+        // titles the same axis "Memory" on one page, "Ram/Rom" on the next and Հիշողություն on
+        // the Armenian one - and keying on the English word meant the Galaxy A27's "Ram/Rom:
+        // 6/128 GB" was read as no capacity at all, so the row's 128 matched nothing and 43
+        // products were reported as pages with no price while the price was on the page.
+        // A capacity is a capacity in any language; a SIM build is written in Latin on all of
+        // them; whatever is left is the colour. Same rule as scrape.mjs's pixelMatrix.
+        let mem = '', simVal = '', col = '';
+        for (const x of v.properties || []) {
+          const val = String(x.valueTitle || '').trim();
+          if (!val) continue;
+          if (!simVal && /sim/i.test(val)) simVal = val;
+          else if (!mem && capOf(val) != null) mem = val;
+          else if (!col) col = val;
+        }
+        const p = { memory: mem, color: col, 'sim card': simVal };
         // pixel quotes TWO prices and "price" is the dearer one. On the Galaxy Buds 2 page the
         // JSON says price 47000 / wholesalePrice 42000, and the page itself prints "47,000" as
         // the credit figure with "Գինը: 42,000" - the cash price - beside it. Our own row says
@@ -139,13 +168,30 @@ function buildPrice(html, f) {
   }
   if (!vs.length) return null;
   const cap = Number(f[2]) || null, col = (f[3] || '').trim().toLowerCase();
-  let hit = vs.filter(v => cap == null || v.cap === cap);
+  // A page that ships ONE build states no capacity to match against - the fallback above reads
+  // the single cash price and leaves cap null - so a row that names a capacity could never match
+  // it, and fifty pixel products were reported as "no price this could read" when the price was
+  // printed on the page. The row's capacity describes the product; the page's one figure is that
+  // product's price. Where several rows share such a url the guard further down still refuses
+  // them, which is the case this exactness was protecting against.
+  let hit = vs.filter(v => v.only || cap == null || v.cap === cap);
   if (col) { const c = hit.filter(v => v.color.toLowerCase() === col); if (c.length) hit = c; }
   // A row that does not say which build it is stays ambiguous and is refused below - that is the
   // right answer, not a gap: 514,000 and 559,000 are both this phone at this capacity.
   const rsim = simOf(f[1]);
   if (rsim !== undefined) { const c = hit.filter(v => v.sim === rsim); if (c.length) hit = c; }
   if (!hit.length) return null;
+  // Still several builds at different prices, and the row does not say which one it is. If
+  // exactly one of them costs what the row ALREADY says, that is the row, and its price has not
+  // moved. This can only ever confirm an unchanged figure: where the row's price is absent from
+  // the page the ambiguity stands and the row is refused below, because then something did move
+  // and nothing here can say which build it moved on. 24 pixel rows sat unconfirmed on this -
+  // every one of them a capacity-less row whose price was still exactly right.
+  if (hit.length > 1 && new Set(hit.map(v => v.price)).size !== 1) {
+    const was = Number(f[5]);
+    const same = was > 0 ? hit.filter(v => v.price === was) : [];
+    if (same.length) hit = same;
+  }
   // Several builds that all cost the same are not an ambiguity - there is nothing to disagree
   // about. Several at different prices are, and this tool does not guess between them.
   if (hit.length > 1 && new Set(hit.map(v => v.price)).size !== 1) return null;
@@ -183,6 +229,48 @@ function telecomPrice(html, f) {
   if (!m) return null;
   const n = Number(String(m[1]).replace(/[^\d]/g, ''));
   return n >= FLOOR ? { price: n, how: 'telecom-page', stock: true } : null;
+}
+
+// istyle states every SKU of a product as a JSON array in the page, HTML-escaped, and states
+// the price nowhere else - so priceOf() found nothing on any of its pages and 29 rows stood
+// unconfirmed against pages that answer 200 and carry the whole payload. Same array the crawler
+// reads; here it only has to answer one row.
+//
+// The capacity column on these rows is the MEMORY, not the disk - "MacBook Air M5 13/16GB RAM"
+// is 16 - so a row is matched against either axis, and a figure that names exactly one price
+// settles it. Several variants at one price are not an ambiguity; several at different prices
+// are, and this does not guess between them.
+function istylePrice(html, f) {
+  if (!f[4].includes('istyle.am')) return null;
+  const j = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
+  const at = j.indexOf('"variants":[');
+  if (at < 0) return null;
+  const start = j.indexOf('[', at);
+  const BS = String.fromCharCode(92);
+  let depth = 0, i = start, instr = false, esc = false;
+  for (; i < j.length; i++) {
+    const c = j[i];
+    if (instr) { if (esc) esc = false; else if (c === BS) esc = true; else if (c === '"') instr = false; continue; }
+    if (c === '"') instr = true;
+    else if (c === '[') depth++;
+    else if (c === ']' && --depth === 0) break;
+  }
+  let arr;
+  try { arr = JSON.parse(j.slice(start, i + 1)); } catch { return null; }
+  const rows = [];
+  for (const v of arr) {
+    if (v.is_active === false) continue;
+    const price = Math.round(Number(v.is_on_sale && v.sale_price ? v.sale_price : v.price_override));
+    if (!(price >= FLOOR)) continue;
+    const caps = (v.attribute_values || []).map(a => capOf((a.value || {}).en)).filter(x => x != null);
+    rows.push({ price, caps, stock: Number(v.stock) > 0 });
+  }
+  if (!rows.length) return null;
+  const want = Number(f[2]) || null;
+  let hit = want == null ? rows : rows.filter(r => r.caps.includes(want));
+  if (!hit.length) return null;
+  if (new Set(hit.map(r => r.price)).size !== 1) return null;
+  return { price: hit[0].price, how: 'istyle-variants', stock: hit.some(r => r.stock) };
 }
 
 function priceOf(html) {
@@ -297,7 +385,7 @@ for (const f of body)
       && (!only.size || only.has(f[0])) && !(f[7] || '').trim() && !todo.includes(f)) todo.push(f);
 
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
-let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], linked = 0;
+let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], cheap = [], linked = 0;
 for (let i = 0; i < todo.length; i++) {
   const f = todo[i];
   let p = CACHE.get(tidy(f[4])) || null;
@@ -336,7 +424,8 @@ for (let i = 0; i < todo.length; i++) {
         continue;
       }
     }
-    p = buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
+    p = buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f)
+      || istylePrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
     // url that five different Dyson colours point at - five rows, five prices, one page.
@@ -352,6 +441,11 @@ for (let i = 0; i < todo.length; i++) {
     wild.push([f[0], f[1], was, p.price, f[4]]);
     continue;
   }
+  // Owner's rule, 2026-09-21: under 10 000 drams is suspicious. Not rejected - the catalogue does
+  // carry a 5 500 earbud and a 5 900 lamp - but never written unseen, because the same figure is
+  // what a recycled link looks like. Mobile Centre served a 4 000 silicone case from a url whose
+  // slug still said samsung-galaxy-z-flip-7, and an instalment or a deposit reads this way too.
+  if (p.price < SUSPECT) { cheap.push([f[0], f[1], was, p.price, f[4]]); continue; }
   if (was !== p.price) { moved++; console.log(`  ${f[0].padEnd(13)} ${f[1].slice(0, 40).padEnd(42)} ${f[5]} -> ${p.price}`); }
   while (f.length < 9) f.push('');
   f[5] = String(p.price); f[8] = p.day || TODAY;
@@ -392,6 +486,9 @@ console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own pa
 if (linked) console.log(`${linked} row(s) at a shop that prices by configuration: the link opens the product they name, so the price a person read stands and the site can stop calling it unchecked`);
 console.log('read from:', Object.entries(how).map(([k, v]) => `${k} ${v}`).join(', ') || 'nothing');
 if (nop.length) { console.log(`\n${nop.length} page(s) with no price this could read:`); for (const n of nop.slice(0, 15)) console.log('  ', n[0].padEnd(13), n[1].slice(0, 38).padEnd(40), n[2].slice(0, 60)); }
+if (cheap.length) { console.log(`
+${cheap.length} price(s) under ${SUSPECT.toLocaleString('en-US')} dram - suspicious, left alone for a person to look at:`);
+  for (const w of cheap.slice(0, 20)) console.log('  ', w[0].padEnd(13), String(w[1]).slice(0, 36).padEnd(38), `${w[2]} -> ${w[3]}`, w[4].slice(0, 46)); }
 if (wild.length) { console.log(`
 ${wild.length} price(s) moved too far to apply without a person looking:`); for (const w of wild.slice(0, 20)) console.log('  ', w[0].padEnd(13), String(w[1]).slice(0, 36).padEnd(38), `${w[2]} -> ${w[3]}`, w[4].slice(0, 46)); }
 if (disputed.length) console.log(`
