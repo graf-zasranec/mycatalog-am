@@ -29,7 +29,25 @@ const SEEDS = {
   'samsung-galaxy-a17':           '/uk/smartphones/galaxy-a/galaxy-a17-5g-black-128gb-sm-a176bzkaeub/',
   'samsung-galaxy-a07':           '/levant/smartphones/galaxy-a/galaxy-a07-black-128gb-sm-a075fzkgmea/',
   'samsung-galaxy-s26-fe':        '/uk/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blgdeub/',
-  'samsung-galaxy-s25-fe':        '/uk/smartphones/galaxy-s/galaxy-s25-fe-icyblue-512gb-sm-s731blbieub/'
+  'samsung-galaxy-s25-fe':        '/uk/smartphones/galaxy-s/galaxy-s25-fe-icyblue-512gb-sm-s731blbieub/',
+  // The UK site retires a model's page once it stops selling it there and leaves only the
+  // accessories behind, so an older phone is seeded from a region that still carries it. Found
+  // through samsung.com's own sitemaps - /*/search/ is Disallow in their robots.txt.
+  'samsung-galaxy-a07s':          '/levant/smartphones/galaxy-a/galaxy-a07s-black-64gb-sm-a077fzkdmea/',
+  'samsung-galaxy-a35':           '/levant/smartphones/galaxy-a/galaxy-a35-5g-awesome-iceblue-128gb-sm-a356elbmmea/',
+  'samsung-a15':                  '/levant/smartphones/galaxy-a/galaxy-a15-5g-blue-black-128gb-sm-a156ezkdmea/',
+  'samsung-galaxy-watch4-40-mm':  '/ru/watches/galaxy-watch/galaxy-watch4-black-bt-sm-r860nzkacis/',
+  // Televisions. One model, one colour, and no "sm-" code in the slug - so the sibling search
+  // below finds nothing to pair them with and each simply keeps its own hero shot, which is the
+  // right answer for a television. The gallery image is the same 1920px transparent master.
+  'samsung-qe55q60abuxru':        '/ru/tvs/qled-tv/q60ab-55-inch-qled-4k-smart-tv-qe55q60abuxru/',
+  'samsung-qe55ls03bauxce':       '/ru/lifestyle-tvs/the-frame/ls03b-55-inch-the-frame-qled-4k-smart-tv-black-qe55ls03bauxru/',
+  'samsung-qe65s95hauxpy':        '/ru/tvs/oled-tv/s95h-65-inch-4k-smart-tv-qe65s95hauxpy/',
+  'samsung-qe83s90daexru':        '/ru/tvs/oled-tv/s90d-83-inch-oled-4k-tizen-os-smart-tv-qe83s90daexru/',
+  'samsung-qe85qn800auxru':       '/ru/tvs/qled-tv/qn800a-85-inch-neo-qled-8k-smart-tv-qe85qn800auxru/',
+  'samsung-qe85qn90bauxce':       '/ru/tvs/qled-tv/qn90b-85-inch-neo-qled-4k-smart-tv-qe85qn90bauxru/',
+  'samsung-qe85qn90cauxru':       '/ru/tvs/qled-tv/qn90c-85-inch-neo-qled-4k-smart-tv-qe85qn90cauxru/',
+  'samsung-ue98du9000uxru':       '/ru/tvs/uhd-4k-tv/du9000-98-inch-crystal-uhd-4k-tizen-os-smart-tv-ue98du9000uxru/'
 };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -95,5 +113,16 @@ for (const [id, seed] of Object.entries(SEEDS)) {
   if (!Object.keys(out[id]).length) { delete out[id]; console.log(`  ${id}: no gallery image on the page`); }
   await sleep(600);
 }
-fs.writeFileSync('data/press.json', JSON.stringify(out, null, 1) + String.fromCharCode(10));
-console.log(`${Object.keys(out).length} products, ${Object.values(out).reduce((n, v) => n + Object.keys(v).length, 0)} photos -> data/press.json`);
+// Merged, not replaced. This file is a record of photographs somebody found, and not all of
+// them came from SEEDS: sonos-ace was written in by hand and was silently deleted the first time
+// this ran afterwards. A manufacturer also retires a product page - five Samsung seeds stopped
+// yielding a gallery image between two runs - and a run that overwrites turns that into the loss
+// of a picture the site is still using. What this run found wins; what it did not find stays.
+let prev = {};
+try { prev = JSON.parse(fs.readFileSync('data/press.json', 'utf8')); } catch { }
+const merged = { ...prev };
+for (const [id, v] of Object.entries(out)) merged[id] = { ...(merged[id] || {}), ...v };
+const kept = Object.keys(prev).filter(k => !out[k]).length;
+fs.writeFileSync('data/press.json', JSON.stringify(merged, null, 1) + String.fromCharCode(10));
+console.log(`${Object.keys(out).length} product(s) read this run, ${kept} kept from before`);
+console.log(`${Object.keys(merged).length} products, ${Object.values(merged).reduce((n, v) => n + Object.keys(v).length, 0)} photos -> data/press.json`);
