@@ -3,8 +3,8 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 50,
- "tooSmall": 69,
+ "missing": 41,
+ "tooSmall": 73,
  "products": [
   {
    "id": "honor-choice-ros-me01",
@@ -107,16 +107,6 @@
    "width": 0
   },
   {
-   "id": "hisense-55a6n",
-   "brand": "Hisense",
-   "name": "55A6N",
-   "category": "tv",
-   "shops": 1,
-   "query": "Hisense 55A6N",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hisense-65a7nq",
    "brand": "Hisense",
    "name": "65A7NQ",
@@ -157,16 +147,6 @@
    "width": 0
   },
   {
-   "id": "hisense-75e8s",
-   "brand": "Hisense",
-   "name": "75E8S",
-   "category": "tv",
-   "shops": 1,
-   "query": "Hisense 75E8S",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hisense-85a6bg",
    "brand": "Hisense",
    "name": "85A6BG",
@@ -193,26 +173,6 @@
    "category": "laptop",
    "shops": 1,
    "query": "HP ENVY Hayden 22C1",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-yoga-9-13imu9",
-   "brand": "Lenovo",
-   "name": "Yoga 9 13IMU9",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Yoga 9 13IMU9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-yoga-9-14ill10",
-   "brand": "Lenovo",
-   "name": "Yoga 9 14ILL10",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Yoga 9 14ILL10",
    "what": "missing",
    "width": 0
   },
@@ -337,36 +297,6 @@
    "width": 0
   },
   {
-   "id": "toshiba-32v35me",
-   "brand": "Toshiba",
-   "name": "32V35ME",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 32V35ME",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-43c350ke",
-   "brand": "Toshiba",
-   "name": "43C350KE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 43C350KE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-43c350le",
-   "brand": "Toshiba",
-   "name": "43C350LE",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 43C350LE",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "toshiba-43c450ke",
    "brand": "Toshiba",
    "name": "43C450KE",
@@ -407,16 +337,6 @@
    "width": 0
   },
   {
-   "id": "toshiba-55z670me",
-   "brand": "Toshiba",
-   "name": "55Z670ME",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 55Z670ME",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "toshiba-65c450me",
    "brand": "Toshiba",
    "name": "65C450ME",
@@ -433,16 +353,6 @@
    "category": "tv",
    "shops": 1,
    "query": "Toshiba 85M550LE",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "toshiba-85z670me",
-   "brand": "Toshiba",
-   "name": "85Z670ME",
-   "category": "tv",
-   "shops": 1,
-   "query": "Toshiba 85Z670ME",
    "what": "missing",
    "width": 0
   },
@@ -525,6 +435,16 @@
    "query": "JBL Clip 4",
    "what": "too small",
    "width": 565
+  },
+  {
+   "id": "apple-watch-series-10",
+   "brand": "Apple",
+   "name": "Watch Series 10",
+   "category": "watch",
+   "shops": 2,
+   "query": "Apple Watch Series 10",
+   "what": "too small",
+   "width": 574
   },
   {
    "id": "apple-watch-series-12-gps-42mm",
@@ -1047,6 +967,16 @@
    "width": 551
   },
   {
+   "id": "toshiba-32v35me",
+   "brand": "Toshiba",
+   "name": "32V35ME",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 32V35ME",
+   "what": "too small",
+   "width": 534
+  },
+  {
    "id": "toshiba-32v35re",
    "brand": "Toshiba",
    "name": "32V35RE",
@@ -1083,6 +1013,16 @@
    "category": "tv",
    "shops": 1,
    "query": "Toshiba 55C350RE",
+   "what": "too small",
+   "width": 564
+  },
+  {
+   "id": "toshiba-55z670me",
+   "brand": "Toshiba",
+   "name": "55Z670ME",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 55Z670ME",
    "what": "too small",
    "width": 564
   },
@@ -1125,6 +1065,16 @@
    "query": "Toshiba 65Z680SE",
    "what": "too small",
    "width": 541
+  },
+  {
+   "id": "toshiba-85z670me",
+   "brand": "Toshiba",
+   "name": "85Z670ME",
+   "category": "tv",
+   "shops": 1,
+   "query": "Toshiba 85Z670ME",
+   "what": "too small",
+   "width": 564
   },
   {
    "id": "xiaomi-poco-m6-pro",
