@@ -1688,8 +1688,29 @@ const seenTag = o => {
 /* ================= all offers for one model ================= */
 // The product page shows offers for the CHOSEN colour/capacity. This page shows every offer
 // the shops list for the model, and lets you slice it by shop, capacity and colour.
-let OSEL = { id: null, storage: '', ram: '', size: '', esim: '' };
-function initOSel(id) { if (OSEL.id !== id) OSEL = { id, storage: '', ram: '', size: '', esim: '' }; }
+let OSEL = { id: null, storage: '', ram: '', size: '', esim: '', color: '' };
+// Arriving here from a product page you have already answered these questions - the capacity,
+// the memory, the SIM build, the colour. Asking them again, with every chip back on "any", is
+// the site forgetting what it was just told. So the first visit for a product inherits whatever
+// the product page had selected; changing a chip here is still yours to change.
+// ...but only for an axis this page actually shows a chip for. The product page filters softly
+// on memory - an offer that never states its RAM is not evidence against the 12GB you picked -
+// while this page filters strictly, and it only draws a group when there are two values to
+// choose between. Inheriting SEL.ram = 12 onto a page with no memory chips left every offer
+// filtered out by a control the reader could not see, let alone clear: the iPhone 17 Pro Max
+// opened with nothing on it at all.
+function initOSel(id, avail) {
+  if (OSEL.id === id) return;
+  const from = SEL.id === id ? SEL : null;
+  const has = (k, v) => v !== '' && (avail[k] || []).some(a => String(a) === String(v));
+  const take = (k, v) => has(k, v) ? String(v) : '';
+  OSEL = { id,
+    storage: take('storage', from && from.storage != null ? from.storage : ''),
+    ram: take('ram', from && from.ram != null ? from.ram : ''),
+    size: take('size', from && from.size != null ? from.size : ''),
+    esim: take('esim', from && from.esim != null ? (from.esim ? 'e' : 'n') : ''),
+    color: take('color', (from && from.color) || '') };
+}
 
 // AirPods Pro 3 ship in one configuration and one colour: there is no variant to state, so
 // saying "variant not stated" reads as missing data rather than as the truth. Only ask the
@@ -1730,7 +1751,6 @@ function offerRow(o, lo, i, unit, cls, of) {
 }
 
 function offersView(p) {
-  initOSel(p.id);
   const all = offersFor(p);
   const stors = [...new Set(all.map(o => o.storage).filter(v => v != null))].sort((a, b) => a - b);
   const rams = [...new Set(all.map(o => o.ram).filter(v => v != null))].sort((a, b) => a - b);
@@ -1739,12 +1759,20 @@ function offersView(p) {
   // either, so '?' is its own choice rather than being folded into Nano-SIM.
   const sims = [...new Set(all.map(o => o.esim === true ? 'e' : o.esim === false ? 'n' : '?'))]
     .sort((a, b) => 'ne?'.indexOf(a) - 'ne?'.indexOf(b));
+  // This page is where every colour a shop lists is visible, unlike the product page which shows
+  // one row per build - so here the colour is worth choosing by.
+  const cols = [...new Set(all.map(o => o.color).filter(Boolean))].sort();
+  // a group is only drawn when there are two values to pick between, so that is also the test
+  // for whether a choice carried over from the product page can be shown - and un-shown.
+  const two = a => a.length > 1 ? a : [];
+  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(sims), color: two(cols) });
   // filtering is by what you are buying - capacity, memory, screen, SIM build - not by which shop
   const list = all.filter(o =>
     (!OSEL.storage || String(o.storage) === OSEL.storage) &&
     (!OSEL.ram || String(o.ram) === OSEL.ram) &&
     (!OSEL.size || String(o.size) === OSEL.size) &&
-    (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim));
+    (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim) &&
+    (!OSEL.color || String(o.color || '') === OSEL.color));
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
   const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
 
@@ -1768,6 +1796,7 @@ function offersView(p) {
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
       ${chips('size', sizes, t('f.screen'), inch)}
       ${chips('esim', sims, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
+      ${chips('color', cols, t('f.color'))}
       <!-- the chip label is the shop's English word; the page is not -->
     </div>
     <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>
