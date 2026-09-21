@@ -227,12 +227,27 @@ const sold = (p, field, value) => {
   // A watch's variants are case sizes in mm, but an offer's `storage` is gigabytes, and comparing
   // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
   // compare, so nothing is claimed.
-  if (field === 'storage') return p.variantUnit === 'mm' || list.some(o => o.storage === value);
-  // A listing often names no screen, exactly as it often names no RAM, so silence is not a refusal.
-  if (field === 'size') return !list.some(o => o.size) || list.some(o => o.size === value);
-  if (field === 'band') return !list.some(o => o.band) || list.some(o => o.band === value);
-  // RAM is rarely printed by a shop, so treat "never stated" as unknown rather than unavailable.
-  return !list.some(o => o.ram) || list.some(o => o.ram === value);
+  // Every answer below has to match visibleOffers exactly. They are two readings of one question -
+  // "does picking this leave anything on the page" - and when they disagreed the button contradicted
+  // the page behind it: 256 GB was crossed out on a MacBook Air M4 and clicking it showed pixel at
+  // 469 000, because that offer states no capacity and visibleOffers lets such an offer stand in for
+  // the smallest tier while this did not.
+  if (field === 'storage') {
+    if (p.variantUnit === 'mm') return true;          // a watch's variants are mm, an offer's are GB
+    if (list.some(o => o.storage === value)) return true;
+    const caps = (p.variants || []).map(v => v.storage).filter(v => v != null);
+    return caps.length > 0 && value === Math.min(...caps) && list.some(o => o.storage == null);
+  }
+  // Strict where the product really is sold in more than one screen, soft otherwise - the same
+  // split visibleOffers makes, for the same reason.
+  if (field === 'size') {
+    const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
+    return screens.size > 1 ? list.some(o => o.size === value)
+                            : list.some(o => o.size == null || o.size === value);
+  }
+  if (field === 'band') return list.some(o => !o.band || o.band === value);
+  // RAM is rarely printed by a shop, so an offer that never states it shows under every choice.
+  return list.some(o => o.ram == null || o.ram === value);
 };
 // Read through a function, not captured once: on the served build HISTORY starts empty and is
 // filled by loadLazy() the first time a product page is opened, and a value copied out at
@@ -1402,6 +1417,21 @@ function initSel(p) {
   const pool = SEL.size != null ? p.variants.filter(v => v.size === SEL.size) : p.variants;
   const v0 = pool.find(v => v.storage === SEL.storage) || pool[0] || p.variants[0];
   if (v0) { SEL.storage = v0.storage ?? SEL.storage; SEL.ram = v0.ram; } else SEL.ram = null;
+  // Everything above picks a combination the CATALOGUE lists, which is not the same as one anybody
+  // here sells. A MacBook Air M4 13-inch/16GB/512GB is a real Apple machine that no Armenian shop
+  // stocks, and the page opened on it: a list price, and not one offer under it. If the opening
+  // choice shows nothing, move it onto the cheapest offer that does exist - which is what the
+  // comment at the top of this function always claimed it did.
+  if (offs.length && !visibleOffers(p).length) {
+    const o = offs[0];                                    // offersFor is sorted cheapest first
+    if (o.size != null) SEL.size = o.size;
+    const caps = (p.variants || []).map(v => v.storage).filter(v => v != null);
+    // A shop that states no capacity is quoting the base model, the same reading visibleOffers uses
+    SEL.storage = o.storage ?? (caps.length ? Math.min(...caps) : SEL.storage);
+    const vm = (p.variants || []).find(v => v.storage === SEL.storage
+      && (SEL.size == null || v.size == null || v.size === SEL.size));
+    SEL.ram = o.ram ?? (vm ? vm.ram : null);
+  }
 }
 // Narrow the offer list to the chosen options.
 // RAM and storage decide the price, so those filters are HARD: if nothing matches, the answer is
@@ -1778,10 +1808,10 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
         : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
         ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
     <span class="pr num">${money(o.price)} ֏</span>
-    <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}
-      ${o.inStock === false ? `<i class="oos">${esc(x('outOfStock'))}</i>`
-        : o.inStock === true ? `<i class="ins">${esc(x('inStock'))}</i>`
-        : `<i class="unk">${esc(x('stockUnknown'))}</i>`}</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}</span>
     ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 

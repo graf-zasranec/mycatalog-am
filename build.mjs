@@ -40,7 +40,13 @@ for (const p of phones) {
   const base = (p.variants || [])[0] || {};
   const add = [];
   for (const o of (PRICES.offers && PRICES.offers[p.id]) || []) {
-    if (!(o.storage >= 8 && o.storage <= 8192)) continue;  // a shop typo is not a configuration
+    // A shop typo is not a configuration, and neither is one number sitting in two fields: viva
+    // published the whole Galaxy S26 range with the RAM copied into the capacity column, and this
+    // minted "12 GB" and "16 GB" buttons in the STORAGE row of an S26 Ultra. Nothing in this
+    // catalogue stores less than the 32 GB of a Galaxy Tab A8, so below that it is a memory size
+    // that has wandered, not a disk.
+    if (!(o.storage >= 32 && o.storage <= 8192)) continue;
+    if (o.ram != null && o.storage === o.ram) continue;
     const ram = o.ram ?? base.ram ?? null;
     const k = `${ram ?? ''}|${o.storage}`;
     if (seen.has(k)) continue;

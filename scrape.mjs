@@ -335,7 +335,11 @@ const REAL_CAPACITY = new Set([2, 3, 4, 6, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96
 // number. So the pair is read off the raw text, before the slash is gone. Pixel sells the Xiaomi
 // 17 Pro Max as "12/512GB" and every row of it landed with no RAM at all, so the phone offered
 // no 12 GB to choose.
-const RAM_SLASH = /(?:^|[^\p{L}\p{N}])(\d+)\s*(?:gb|ԳԲ)?\s*\/\s*(\d+)\s*(?:tb|ՏԲ|gb|ԳԲ)(?![\p{L}\p{N}])/iu;
+// The shops write the ram/storage pair three ways - "12/512GB", "12GB+512GB" and "8GB 128GB" -
+// and only the first was read, so viva's whole Galaxy S26 range came in with the RAM sitting in
+// the capacity column. A bare space only counts when the FIRST figure carries its own unit,
+// otherwise "Galaxy S26 12 256" would be a pair rather than a model number and a capacity.
+const RAM_SLASH = /(?:^|[^\p{L}\p{N}])(\d+)\s*(?:(?:gb|ԳԲ)\s*[\/+]?\s*|[\/+]\s*)(\d+)\s*(?:tb|ՏԲ|gb|ԳԲ)(?![\p{L}\p{N}])/iu;
 function capacitiesOf(text) {
   // keep unicode letters: norm() strips ԳԲ / ՏԲ before they can be read
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
@@ -1015,7 +1019,10 @@ if (process.argv[2] === '--selftest') {
   // page's own capacity never matched the row's and the product could not be priced at all.
   // Where no figure could be a capacity, pixel means RAM - the MacBook Air's memory is "16 ԳԲ".
   const labelCases = [['8/128 GB', 128], ['12/256 GB', 256], ['512 GB', 512],
-    ['16 ԳԲ', 16], ['1 TB', 1024], ['12/512GB', 512], ['', null]];
+    ['16 ԳԲ', 16], ['1 TB', 1024], ['12/512GB', 512], ['', null],
+    ['Samsung Galaxy S26 Ultra 12GB+512GB Black', 512],   // viva's "+" notation
+    ['Samsung Galaxy A56 8GB 128GB(SM-A566) Black', 128], // ...and its bare-space one
+    ['Samsung Galaxy S26 Ultra 16GB+1TB White', 1024]];
   for (const [txt, want] of labelCases) {
     const got = capOf(txt);
     if (got !== want) { bad++; console.log(`FAIL capOf got=${got} want=${want} <- ${txt}`); }
