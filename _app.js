@@ -1292,6 +1292,12 @@ function swatch(name) {
 const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
 const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
+// A label every row carries tells the buyer nothing. The SIM build is worth stating only
+// where there is one to choose - where this product is actually sold here in both builds,
+// which in practice is Apple, Pixel and the occasional Samsung. Everything else is a tray
+// phone from every shop that stocks it, and a "Nano-SIM" on all of its rows is noise.
+const simChoice = p => { const a = offersFor(p);
+  return a.some(o => o.esim === true) && a.some(o => o.esim === false); };
 // 'main' is a copy of one of the colours under a different filename, so it would show twice
 // The second shot of a crossfading card starts empty and is filled on the first swap. An <img>
 // with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
@@ -1739,7 +1745,8 @@ function offerRow(o, lo, i, unit, cls, of) {
         o.size != null ? esc(inch(o.size)) : '',
         o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : ''),
         o.ram ? esc(o.ram + ' ' + u('gb')) : '',
-      ].filter(Boolean).join(' · ')}${o.esim === true ? ' <i class="esim">eSIM</i>'
+      ].filter(Boolean).join(' · ')}${!(of && simChoice(of)) ? ''
+        : o.esim === true ? ' <i class="esim">eSIM</i>'
         : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
         ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
     <span class="pr num">${money(o.price)} ֏</span>
@@ -1769,7 +1776,8 @@ function offersView(p) {
   // a group is only drawn when there are two values to pick between, so that is also the test
   // for whether a choice carried over from the product page can be shown - and un-shown.
   const two = a => a.length > 1 ? a : [];
-  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(sims), color: two(cols) });
+  const simVals = simChoice(p) ? sims : [];
+  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(simVals), color: two(cols) });
   // filtering is by what you are buying - capacity, memory, screen, SIM build - not by which shop
   const list = all.filter(o =>
     (!OSEL.storage || String(o.storage) === OSEL.storage) &&
@@ -1789,7 +1797,7 @@ function offersView(p) {
     <div class="navrow">${backLink('#/p/' + p.id, fullName(p))}
       <nav class="crumb"><span>${esc(x('allOffers'))}</span></nav></div>
     <div class="ofhead">
-      <span class="t"><img src="${THUMB(p.id)}" alt="" loading="lazy"></span>
+      <span class="t"><img src="${esc(colorPhoto(p, OSEL.color) || THUMB(p.id))}" alt="" loading="lazy"></span>
       <div>
         <h1>${esc(fullName(p))}</h1>
         <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
@@ -1799,7 +1807,7 @@ function offersView(p) {
       ${chips('storage', stors, t('f.storage'), gb)}
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
       ${chips('size', sizes, t('f.screen'), inch)}
-      ${chips('esim', sims, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
+      ${chips('esim', simVals, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
       ${cols.length < 2 ? '' : `<div class="ofg"><span class="ofl">${esc(t('f.color'))}</span>
         <button class="ofc${OSEL.color === '' ? ' on' : ''}" data-of="color" data-ofv="">${esc(x('any'))}</button>
         <span class="cs ofcs">${cols.map(c => `<button data-of="color" data-ofv="${esc(c)}" style="--c:${swatch(c)}"

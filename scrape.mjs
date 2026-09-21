@@ -314,6 +314,13 @@ function matchIn(h, split = false) {
 const REAL_CAPACITY = new Set([2, 3, 4, 6, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96, 128, 192,
                                250, 256, 500, 512, 750, 1000, 1024, 1536, 2000, 2048, 3072,
                                4000, 4096, 6144, 8192]);
+// "12/512GB" and "16GB/1TB" name the RAM and the storage with the unit written once, and the
+// slash is the only thing that says the first figure is a capacity at all - normalising it to a
+// space leaves "12 512gb", which is the shape of "Redmi Note 12 256GB", where the 12 is a model
+// number. So the pair is read off the raw text, before the slash is gone. Pixel sells the Xiaomi
+// 17 Pro Max as "12/512GB" and every row of it landed with no RAM at all, so the phone offered
+// no 12 GB to choose.
+const RAM_SLASH = /(?:^|[^\p{L}\p{N}])(\d+)\s*(?:gb|ԳԲ)?\s*\/\s*(\d+)\s*(?:tb|ՏԲ|gb|ԳԲ)(?![\p{L}\p{N}])/iu;
 function capacitiesOf(text) {
   // keep unicode letters: norm() strips ԳԲ / ՏԲ before they can be read
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
@@ -325,7 +332,10 @@ function capacitiesOf(text) {
     // capacity: REDstore writes "Paperwhite 12(16GB)" and slugs it "paperwhite-1216gb", which
     // was published as 1216 GB - "1.1875 TB" on the page. An Alienware read 1,625,016 GB.
     .filter(v => REAL_CAPACITY.has(v));
-  if (withUnit.length) return withUnit;
+  if (withUnit.length) {
+    const m = String(text).match(RAM_SLASH), ram = m ? +m[1] : 0;
+    return ram && REAL_CAPACITY.has(ram) && ram < Math.max(...withUnit) ? [ram, ...withUnit] : withUnit;
+  }
   // iBolit writes the capacity with no unit at all - "iPHONE 17 256 Lavander ESIM" - and those
   // offers landed with storage null, which makes them stand in for the base capacity of every
   // configuration. Only a bare number that is EXACTLY a real capacity counts, so a model number
@@ -479,7 +489,10 @@ async function planetModifiers(varId) {
   return out;
 }
 // ...and the smaller one is RAM, but only when the title really lists both
-const ramOf = text => { const c = capacitiesOf(text); return c.length >= 2 ? Math.min(...c) : null; };
+// Two capacities that are the SAME capacity are one figure written twice - telecom titles the
+// Galaxy A16 "Samsung A165 256GB | 256 GB" - and the smaller of them is not a RAM size.
+const ramOf = text => { const c = capacitiesOf(text); const lo = Math.min(...c);
+  return c.length >= 2 && lo < Math.max(...c) ? lo : null; };
 // colour, matched against the colours we already know this phone ships in
 function colorOf(text, colors) {
   const h = String(text).toLowerCase();
@@ -779,9 +792,16 @@ if (process.argv[2] === '--selftest') {
     // REDstore slugs "Paperwhite 12(16GB)" as "paperwhite-1216gb"; 1216 GB was published as
     // "1.1875 TB". A model number glued to a capacity is not a capacity.
     ['amazon-kindle-paperwhite-1216gb', null],
-    ['dell-alienware-16-aurora-ac1625016gb-rtx-5060', null]];
+    ['dell-alienware-16-aurora-ac1625016gb-rtx-5060', null],
+    ['Xiaomi 17 Pro Max 12/512GB (Black)', 512], ['Galaxy S26 Ultra 16GB/1TB', 1024]];
   const ramCases = [['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 12], ['XIAOMI POCO X7 Pro 5G 8GB 256GB (Black)', 8],
-    ['iPhone 17 Pro, 256 ԳԲ, Silver', null]];
+    ['iPhone 17 Pro, 256 ԳԲ, Silver', null],
+    // "12/512GB" writes the unit once, and the slash is the only thing separating it from
+    // "Redmi Note 12 256GB", where the 12 is a model number and there is no RAM figure at all.
+    ['Xiaomi 17 Pro Max 12/512GB (Black)', 12], ['Redmi Note 14 8/256GB', 8],
+    ['POCO X7 Pro 12 GB / 512 GB', 12], ['Galaxy S26 Ultra 16GB/1TB', 16],
+    ['Redmi Note 12 256GB', null], ['iPhone 17 Pro Max 256GB', null],
+    ['Samsung A165 256GB | 256 GB', null]];
   for (const [txt, want] of ramCases) {
     const got = ramOf(txt);
     if (got !== want) { bad++; console.log(`FAIL ram got=${got} want=${want} <- ${txt}`); }
@@ -1642,7 +1662,22 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
   // lost to the stale copy sitting in the base, because dedupe keys on shop+storage+build and
   // the old one got there first. 23 dead links and 38 category urls survived several edits that
   // way.
-  const keep = list.filter(o => !names.includes(o.shop) && !o.seeded);
+  // ...and re-derived, not just copied. enrich() only ever FILLS a null - it cannot overwrite
+  // what a shop said - so running it again is idempotent except where a rule has got better
+  // since, which is the whole point: teaching capacitiesOf that "12/512GB" names a RAM gave 362
+  // offers across twelve shops a memory figure they had been missing, and without this they
+  // would each have waited for their own shop's next crawl to get it.
+  const keep = list.filter(o => !names.includes(o.shop) && !o.seeded).map(o => {
+    // ...and WITHOUT the SIM build it was written with. That field is an output of the post-pass
+    // at the bottom of this file, which re-decides it from title, url, SIMPINS and NANO_ONLY on
+    // every run - so carrying it forward feeds a conclusion back in as evidence. The hand-row
+    // merge compares it before that post-pass runs, so a carried offer was being judged on last
+    // night's answer while a freshly crawled one was judged on the raw reading, and the two
+    // disagreed: REDstore's 519,000 Silver and 579,000 Dual iPhone 17 Pros were dropped as
+    // duplicates of an eSIM row that only looked like a tray row because last night said so.
+    const { esim, ...rest } = o;
+    return enrich(rest);
+  });
   // An offer we are not re-fetching keeps the date it already had. One that predates the field
   // gets the date of the file it came out of, which is when it was last confirmed present -
   // borrowing today's would be the same false claim the field exists to remove.
@@ -1781,7 +1816,7 @@ try {
     // say, because by the time it is written the rows in question have already been thrown away.
     .map(r => ({ ...r, id: (PINS.has(r.url) && shared.get(r.url) === 1) ? matchPhone(r.url)
                            : matchPhone(r.title),
-                 storage: r.cap ? +r.cap : null,
+                 storage: r.cap ? +r.cap : null, ram: r.ram ? +r.ram : ramOf(r.title),
                  esim: simBuild(`${r.title} ${r.url}`) }))
     .filter(r => r.id && r.price);
 
@@ -1813,7 +1848,12 @@ try {
     // which this very loop had just pushed. Each hand row names its own real product page, so
     // the url is what tells two same-null-colour rows apart when colour itself cannot.
     if (list.some(o => o.shop === r.shop && (o.storage ?? null) === r.storage
-                     && !!o.esim === !!r.esim
+                     // Read the same way on both sides, off the shop's own words. One side's
+                     // stored flag is a previous run's conclusion and the other's is today's raw
+                     // reading, and comparing the two made REDstore's 519,000 Silver vanish into
+                     // its 509,000 eSIM sibling - a different page, a different price, a
+                     // different phone.
+                     && !!simBuild(`${o.title || ''} ${o.url || ''}`) === !!r.esim
                      // A hand row with no colour in it is not a DIFFERENT colour, it is an
                      // unspecified one - and against a crawled row of the same build at the same
                      // price it says nothing the crawl has not already said today. 73 offers sat
@@ -1822,7 +1862,7 @@ try {
                      // same capacity, the same 474,000, saying "not checked".
                      && ((o.color || null) === (r.color || null)
                          || (!r.color && !o.seeded && o.price === +r.price))
-                     && (o.ram ?? null) === (r.ram ? +r.ram : null)
+                     && (o.ram ?? null) === (r.ram ?? null)
                      // ...but only between two HAND rows. A crawled row is the shop's own page
                      // read today, and it covers this configuration whatever url somebody once
                      // wrote the hand row against - which is usually a category listing, or
@@ -1833,7 +1873,7 @@ try {
     // the title has to travel with the row: the eSIM post-pass re-derives o.esim from title+url,
     // and without it a seeded row is re-judged on its url alone.
     list.push({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
-                ram: r.ram ? +r.ram : undefined, size: screenOf(r.title, r.id),
+                ram: r.ram ?? undefined, size: screenOf(r.title, r.id),
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim,
                 seen: /^\d{4}-\d{2}-\d{2}$/.test((r.seen || '').trim()) ? r.seen.trim() : undefined,
                 checkColor: (r.check || '').trim() === 'color' || undefined,
@@ -1903,9 +1943,15 @@ const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace',
 const HAS_SIM = new Set(phones.filter(p => p.category === 'phone').map(p => p.id));
 for (const [id, list] of Object.entries(offers)) {
   for (const o of list) {
+    // The shop's own words first, the shop's import channel only where it said nothing. This
+    // rule exists because those shops never state a build, so it has no business overruling one
+    // that did: REDstore titles 27 of its iPhones "... eSim" and every one of them was being
+    // published as Nano-SIM, which is the opposite of what the shop wrote on its own page.
+    const said = simBuild(`${o.title || ''} ${o.url || ''}`);
     const b = SIMPINS.has(o.url) ? SIMPINS.get(o.url)
+      : said !== undefined ? said
       : (NANO_ONLY.has(o.shop) && HAS_SIM.has(id)) ? false
-      : simBuild(`${o.title || ''} ${o.url || ''}`);
+      : undefined;
     if (b === undefined) delete o.esim; else o.esim = b;
   }
 }

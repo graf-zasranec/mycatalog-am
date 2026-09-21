@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21T06:46:37.057Z",
+ "generated": "2026-09-21T07:02:43.572Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -124,17 +124,29 @@
    },
    {
     "id": "apple-iphone-17-pro",
+    "shop": "pixel",
+    "title": "iPhone 17 Pro 256GB Cosmic Orange eSIM",
+    "price": 474000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://www.pixel.am/en/product/iphone-17-pro",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-21"
+   },
+   {
+    "id": "apple-iphone-17-pro",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro",
     "image": null,
     "storage": 256,
     "price": 475000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -144,11 +156,11 @@
     "price": 475000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -158,11 +170,11 @@
     "price": 475000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -287,7 +299,7 @@
     "color": "Cosmic Orange",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -302,7 +314,7 @@
     "color": "Deep Blue",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -317,7 +329,7 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -327,11 +339,11 @@
     "price": 509000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -341,11 +353,11 @@
     "price": 509000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -355,11 +367,11 @@
     "price": 509000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -431,15 +443,6 @@
     "seeded": true,
     "esim": false,
     "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro",
-    "price": 521000,
-    "storage": 1024,
-    "url": "https://www.pixel.am/en/product/iphone-17-pro",
-    "seeded": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -654,11 +657,11 @@
     "price": 559000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -668,11 +671,11 @@
     "price": 559000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -682,11 +685,11 @@
     "price": 559000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -784,7 +787,7 @@
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-512gb-silver-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -825,11 +828,11 @@
     "price": 589000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -839,11 +842,11 @@
     "price": 589000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -853,11 +856,11 @@
     "price": 589000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1123,11 +1126,11 @@
     "price": 669000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1137,11 +1140,11 @@
     "price": 669000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1151,11 +1154,11 @@
     "price": 669000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1270,11 +1273,11 @@
     "price": 699000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1284,11 +1287,11 @@
     "price": 699000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1298,11 +1301,11 @@
     "price": 699000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro",
@@ -1589,17 +1592,29 @@
    },
    {
     "id": "apple-iphone-17-pro-max",
+    "shop": "pixel",
+    "title": "iPhone 17 Pro Max 256GB Cosmic Orange eSIM",
+    "price": 514000,
+    "storage": 256,
+    "color": "Cosmic Orange",
+    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-21"
+   },
+   {
+    "id": "apple-iphone-17-pro-max",
     "url": "https://3dplanet.am/en/store/product/apple-iphone-17-pro-max",
     "image": null,
     "storage": 256,
     "price": 515000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1609,11 +1624,11 @@
     "price": 515000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1623,11 +1638,11 @@
     "price": 515000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1764,7 +1779,7 @@
     "color": "Deep Blue",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1779,7 +1794,7 @@
     "color": "Cosmic Orange",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1794,7 +1809,7 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1804,11 +1819,11 @@
     "price": 555000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1818,11 +1833,11 @@
     "price": 555000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -1832,21 +1847,11 @@
     "price": 555000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17-pro-max",
-    "shop": "pixel",
-    "title": "iPhone 17 Pro Max",
-    "price": 559000,
-    "storage": 512,
-    "color": "Black",
-    "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
-    "seeded": true
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2171,11 +2176,11 @@
     "price": 609000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2185,11 +2190,11 @@
     "price": 609000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2199,11 +2204,11 @@
     "price": 609000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2319,7 +2324,7 @@
     "color": "Silver",
     "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-silver-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -2331,7 +2336,7 @@
     "color": "Deep Blue",
     "url": "https://redstore.am/en/product/iphone-17-pro-max-512gb-deep-blue-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -2342,11 +2347,11 @@
     "price": 639000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2356,11 +2361,11 @@
     "price": 639000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2370,11 +2375,11 @@
     "price": 639000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2575,11 +2580,11 @@
     "price": 689000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2589,11 +2594,11 @@
     "price": 689000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2603,11 +2608,11 @@
     "price": 689000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2699,12 +2704,14 @@
    {
     "id": "apple-iphone-17-pro-max",
     "shop": "pixel",
-    "title": "iPhone 17 Pro Max",
-    "price": 715000,
-    "storage": 512,
-    "color": "Blue",
+    "title": "iPhone 17 Pro Max 1TB Cosmic Orange eSIM",
+    "price": 714000,
+    "storage": 1024,
+    "color": "Cosmic Orange",
     "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
-    "seeded": true
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2777,11 +2784,11 @@
     "price": 749000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2791,11 +2798,11 @@
     "price": 749000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2805,11 +2812,11 @@
     "price": 749000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2936,11 +2943,11 @@
     "price": 809000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2950,11 +2957,11 @@
     "price": 809000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -2964,11 +2971,11 @@
     "price": 809000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3107,11 +3114,11 @@
     "price": 939000,
     "color": "Silver",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3121,11 +3128,11 @@
     "price": 939000,
     "color": "Deep Blue",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3135,11 +3142,11 @@
     "price": 939000,
     "color": "Cosmic Orange",
     "title": "Apple iPhone 17 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3195,12 +3202,14 @@
    {
     "id": "apple-iphone-17-pro-max",
     "shop": "pixel",
-    "title": "iPhone 17 Pro Max",
+    "title": "iPhone 17 Pro Max 2TB Cosmic Orange Nano-SIM+eSIM",
     "price": 949000,
-    "storage": 1024,
+    "storage": 2048,
     "color": "Cosmic Orange",
     "url": "https://www.pixel.am/en/product/iphone-17-pro-max",
-    "seeded": true
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -3286,6 +3295,18 @@
    },
    {
     "id": "apple-iphone-17",
+    "shop": "pixel",
+    "title": "iPhone 17 256GB Black eSIM",
+    "price": 354000,
+    "storage": 256,
+    "color": "Black",
+    "url": "https://www.pixel.am/en/product/iphone-17",
+    "seeded": true,
+    "esim": true,
+    "seen": "2026-09-21"
+   },
+   {
+    "id": "apple-iphone-17",
     "price": 357000,
     "title": "iPHONE 17 256 Lavander ESIM",
     "url": "https://ibolit.mobi/product/iphone-17-256-lavander-esim/",
@@ -3367,11 +3388,11 @@
     "price": 363000,
     "color": "Black",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -3381,11 +3402,11 @@
     "price": 363000,
     "color": "White",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -3395,11 +3416,11 @@
     "price": 363000,
     "color": "Lavender",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -3409,11 +3430,11 @@
     "price": 363000,
     "color": "Sage",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -3423,11 +3444,11 @@
     "price": 363000,
     "color": "Mist Blue",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -3515,11 +3536,11 @@
     "price": 395000,
     "color": "Black",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -3529,11 +3550,11 @@
     "price": 395000,
     "color": "White",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -3543,11 +3564,11 @@
     "price": 395000,
     "color": "Lavender",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -3557,11 +3578,11 @@
     "price": 395000,
     "color": "Sage",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -3571,11 +3592,11 @@
     "price": 395000,
     "color": "Mist Blue",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -4004,7 +4025,7 @@
     "color": "Black",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4019,7 +4040,7 @@
     "color": "Blue",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4034,7 +4055,7 @@
     "color": "Lavender",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4049,7 +4070,7 @@
     "color": "Sage",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4064,7 +4085,7 @@
     "color": "White",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4110,11 +4131,11 @@
     "price": 465000,
     "color": "Black",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4124,11 +4145,11 @@
     "price": 465000,
     "color": "White",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4138,11 +4159,11 @@
     "price": 465000,
     "color": "Lavender",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4152,11 +4173,11 @@
     "price": 465000,
     "color": "Sage",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4166,20 +4187,11 @@
     "price": 465000,
     "color": "Mist Blue",
     "title": "Apple iPhone 17 (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "apple-iphone-17",
-    "shop": "pixel",
-    "title": "iPhone 17 512GB",
-    "price": 465000,
-    "storage": 512,
-    "url": "https://www.pixel.am/en/product/iphone-17",
-    "seeded": true
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17",
@@ -4228,11 +4240,11 @@
     "price": 469000,
     "color": "Black",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -4242,11 +4254,11 @@
     "price": 469000,
     "color": "White",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -4256,11 +4268,11 @@
     "price": 469000,
     "color": "Lavender",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -4270,11 +4282,11 @@
     "price": 469000,
     "color": "Sage",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17",
@@ -4284,11 +4296,23 @@
     "price": 469000,
     "color": "Mist Blue",
     "title": "Apple iPhone 17 (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
+   },
+   {
+    "id": "apple-iphone-17",
+    "shop": "pixel",
+    "title": "iPhone 17 512GB Black Nano-SIM+eSIM",
+    "price": 489000,
+    "storage": 512,
+    "color": "Black",
+    "url": "https://www.pixel.am/en/product/iphone-17",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-09-21"
    },
    {
     "id": "apple-iphone-17",
@@ -5246,11 +5270,11 @@
     "price": 285000,
     "color": "Black",
     "title": "Apple iPhone 17e (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17e",
@@ -5260,11 +5284,11 @@
     "price": 285000,
     "color": null,
     "title": "Apple iPhone 17e (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17e",
@@ -5274,11 +5298,11 @@
     "price": 285000,
     "color": "White",
     "title": "Apple iPhone 17e (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-17e",
@@ -5327,11 +5351,11 @@
     "price": 295000,
     "color": "Black",
     "title": "Apple iPhone 17e (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17e",
@@ -5341,11 +5365,11 @@
     "price": 295000,
     "color": null,
     "title": "Apple iPhone 17e (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17e",
@@ -5355,11 +5379,11 @@
     "price": 295000,
     "color": "White",
     "title": "Apple iPhone 17e (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-17e",
@@ -9374,6 +9398,7 @@
     "title": "Apple Macbook Neo 13\"/8GB/256GB/MHFH4/Blush",
     "price": 319000,
     "storage": 256,
+    "ram": 8,
     "color": "Blush",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-8gb-256gb-mhfh4-blush.html",
     "seeded": true,
@@ -9385,6 +9410,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/256GB/MHFA4/Silver",
     "price": 319000,
     "storage": 256,
+    "ram": 8,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-256gb-mhfa4-silver.html",
     "seeded": true,
@@ -9396,6 +9422,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/256GB/MHFD4/Citrus",
     "price": 319000,
     "storage": 256,
+    "ram": 8,
     "color": "Citrus",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-256gb-mhfd4-citrus.html",
     "seeded": true,
@@ -9407,6 +9434,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/256GB/MHFF4/Indigo",
     "price": 319000,
     "storage": 256,
+    "ram": 8,
     "color": "Indigo",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-256gb-mhff4-indigo.html",
     "seeded": true,
@@ -9730,6 +9758,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/512GB/MHFC4/Silver",
     "price": 369000,
     "storage": 512,
+    "ram": 8,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfc4-silver.html",
     "seeded": true,
@@ -9741,6 +9770,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/512GB/MHFJ4/Blush",
     "price": 369000,
     "storage": 512,
+    "ram": 8,
     "color": "Blush",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfj4-blush.html",
     "seeded": true,
@@ -9752,6 +9782,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/512GB/MHFG4/Indigo",
     "price": 369000,
     "storage": 512,
+    "ram": 8,
     "color": "Indigo",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfg4-indigo.html",
     "seeded": true,
@@ -9763,6 +9794,7 @@
     "title": "Apple Macbook Neo 13.0\"/8GB/512GB/MHFE4/Citrus",
     "price": 369000,
     "storage": 512,
+    "ram": 8,
     "color": "Citrus",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-neo-13-0-8gb-512gb-mhfe4-citrus.html",
     "seeded": true,
@@ -9913,6 +9945,7 @@
     "title": "Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGE74/Silver",
     "price": 1809000,
     "storage": 2048,
+    "ram": 36,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-36gb-ram-2tb-mge74-silver.html",
     "seeded": true,
@@ -9924,6 +9957,7 @@
     "title": "Apple MacBook Pro 16''/M5 Max/36GB RAM/2TB/MGED4/Space Black",
     "price": 1809000,
     "storage": 2048,
+    "ram": 36,
     "color": "Space Black",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-36gb-ram-2tb-mged4-space-black.html",
     "seeded": true,
@@ -9949,6 +9983,7 @@
     "title": "Apple Macbook Pro 14.2\"/M5 Max/36GB RAM/2TB/MGDQ4/Silver",
     "price": 1859000,
     "storage": 2048,
+    "ram": 36,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-max-36gb-ram-2tb-mgdq4-silver.html",
     "seeded": true,
@@ -9973,6 +10008,7 @@
     "title": "Apple Macbook Pro 16\"/M5 Max/48GB RAM/2TB/MGE94/Silver",
     "price": 2109000,
     "storage": 2048,
+    "ram": 48,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-48gb-ram-2tb-mge94-silver.html",
     "seeded": true,
@@ -9984,6 +10020,7 @@
     "title": "Apple MacBook Pro 16''/M5 Max/48GB RAM/2TB/MGEE4/Space Black",
     "price": 2109000,
     "storage": 2048,
+    "ram": 48,
     "color": "Space Black",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-16-m5-max-48gb-ram-2tb-mgee4-space-black.html",
     "seeded": true,
@@ -10107,6 +10144,7 @@
     "title": "Apple Macbook Pro 14.2\"/M5 Pro/24GB RAM/1TB/MGDN4/Silver",
     "price": 1159000,
     "storage": 1024,
+    "ram": 24,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-pro-24gb-ram-1tb-mgdn4-silver.html",
     "seeded": true,
@@ -10201,6 +10239,7 @@
     "title": "Apple Macbook Pro 16.2\"M5 Pro\"/48GB/1TB/MGE64/Silver",
     "price": 1629000,
     "storage": 1024,
+    "ram": 48,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-16-2-m5-pro-48gb-1tb-mge64-silver.html",
     "seeded": true,
@@ -10212,6 +10251,7 @@
     "title": "Apple Macbook Pro 16.2\"/M5 Pro/48GB RAM/1TB/MGEC4/Space Black",
     "price": 1629000,
     "storage": 1024,
+    "ram": 48,
     "color": "Space Black",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-16-2-m5-pro-48gb-ram-1tb-mgec4-space-black.html",
     "seeded": true,
@@ -10320,6 +10360,7 @@
     "title": "Apple Macbook Pro 14.2\"/M5/16GB RAM/512GB/MDE44/Silver",
     "price": 849000,
     "storage": 512,
+    "ram": 16,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-16gb-ram-512gb-mde44-silver.html",
     "seeded": true,
@@ -10361,7 +10402,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/03/98.png",
     "sku": "IBL:90131",
-    "ram": null,
+    "ram": 24,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -10372,6 +10413,7 @@
     "title": "Apple Macbook Pro 14.2\"/M5/24GB RAM/1TB/MDE34/Space Black",
     "price": 989000,
     "storage": 1024,
+    "ram": 24,
     "color": "Space Black",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-pro-14-2-m5-24gb-ram-1tb-mde34-space-black.html",
     "seeded": true,
@@ -10443,7 +10485,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/04/519.png",
     "sku": "IBL:90485",
-    "ram": null,
+    "ram": 16,
     "color": "Sky Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -10586,6 +10628,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDHE4/Midnight",
     "price": 649000,
     "storage": 512,
+    "ram": 16,
     "color": "Midnight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdhe4-midnight.html",
     "seeded": true,
@@ -10597,6 +10640,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDHA4/Starlight",
     "price": 649000,
     "storage": 512,
+    "ram": 16,
     "color": "Starlight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdha4-starlight.html",
     "seeded": true,
@@ -10608,6 +10652,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDHH4/Sky Blue",
     "price": 649000,
     "storage": 512,
+    "ram": 16,
     "color": "Sky Blue",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdhh4-sky-blue.html",
     "seeded": true,
@@ -10619,6 +10664,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/512GB/MDH74/Silver",
     "price": 649000,
     "storage": 512,
+    "ram": 16,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-512gb-mdh74-silver.html",
     "seeded": true,
@@ -10734,6 +10780,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/1TB/MDHF4/Midnight",
     "price": 689000,
     "storage": 1024,
+    "ram": 16,
     "color": "Midnight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-1tb-mdhf4-midnight.html",
     "seeded": true,
@@ -10745,6 +10792,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/1TB/MDHJ4/Sky Blue",
     "price": 689000,
     "storage": 1024,
+    "ram": 16,
     "color": "Sky Blue",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-1tb-mdhj4-sky-blue.html",
     "seeded": true,
@@ -10756,6 +10804,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/16GB/1TB/MDH84/Silver",
     "price": 689000,
     "storage": 1024,
+    "ram": 16,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-16gb-1tb-mdh84-silver.html",
     "seeded": true,
@@ -10767,6 +10816,7 @@
     "title": "Apple Macbook Air 15.3\"/M5/16GB/512GB/MDVQ4/Sky Blue",
     "price": 709000,
     "storage": 512,
+    "ram": 16,
     "color": "Sky Blue",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-512gb-mdvq4-sky-blue.html",
     "seeded": true,
@@ -10778,6 +10828,7 @@
     "title": "Apple Macbook Air 15\"/M5/16GB/512GB/MDV94/Silver",
     "price": 709000,
     "storage": 512,
+    "ram": 16,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-m5-16gb-512gb-mdv94-silver.html",
     "seeded": true,
@@ -10789,6 +10840,7 @@
     "title": "Apple Macbook Air 15.3\"/M5/16GB/512GB/MDVH4/Midnight",
     "price": 709000,
     "storage": 512,
+    "ram": 16,
     "color": "Midnight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-512gb-mdvh4-midnight.html",
     "seeded": true,
@@ -10800,6 +10852,7 @@
     "title": "Apple Macbook Air 15.3\"/M5/16GB/512GB/MDVD4/Silver",
     "price": 709000,
     "storage": 512,
+    "ram": 16,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-512gb-mdvd4-silver.html",
     "seeded": true,
@@ -10847,6 +10900,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/24GB/1TB/MDHD4/Starlight",
     "price": 849000,
     "storage": 1024,
+    "ram": 24,
     "color": "Starlight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-24gb-1tb-mdhd4-starlight.html",
     "seeded": true,
@@ -10858,6 +10912,7 @@
     "title": "Apple Macbook Air 15.3\"/M5/16GB/1TB/MDVA4/Silver",
     "price": 849000,
     "storage": 1024,
+    "ram": 16,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-1tb-mdva4-silver.html",
     "seeded": true,
@@ -10869,6 +10924,7 @@
     "title": "Apple MacBook Air 15.3''/M5/16GB RAM/1TB/MDVE4/Starlight",
     "price": 849000,
     "storage": 1024,
+    "ram": 16,
     "color": "Starlight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-16gb-ram-1tb-mdve4-starlight.html",
     "seeded": true,
@@ -10880,6 +10936,7 @@
     "title": "Apple Macbook Air 13.6\"/M5/24GB/1TB/MDH94/Silver",
     "price": 849000,
     "storage": 1024,
+    "ram": 24,
     "color": "Silver",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-13-6-m5-24gb-1tb-mdh94-silver.html",
     "seeded": true,
@@ -10943,6 +11000,7 @@
     "title": "Apple MacBook Air 15.3''/M5/24GB RAM/1TB/MDVF4/Starlight",
     "price": 919000,
     "storage": 1024,
+    "ram": 24,
     "color": "Starlight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-24gb-ram-1tb-mdvf4-starlight.html",
     "seeded": true,
@@ -10954,6 +11012,7 @@
     "title": "Apple MacBook Air 15''/M5/24GB RAM/1TB/MDVN4/Midnight",
     "price": 919000,
     "storage": 1024,
+    "ram": 24,
     "color": "Midnight",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-m5-24gb-ram-1tb-mdvn4-midnight.html",
     "seeded": true,
@@ -10965,6 +11024,7 @@
     "title": "Apple MacBook Air 15.3''/M5/24GB RAM/1TB/MDVU4/Sky Blue",
     "price": 919000,
     "storage": 1024,
+    "ram": 24,
     "color": "Sky Blue",
     "url": "https://www.yerevanmobile.am/en/apple-macbook-air-15-3-m5-24gb-ram-1tb-mdvu4-sky-blue.html",
     "seeded": true,
@@ -11008,6 +11068,7 @@
     "title": "Xiaomi Poco C85 Black / 6 GB / 128 GB",
     "price": 58000,
     "storage": 128,
+    "ram": 6,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/xiaomi-poco-c85-black-6-gb-128-gb",
     "seeded": true,
@@ -11069,7 +11130,7 @@
     "url": "https://vlv.am/en/Product/41205",
     "image": "https://vlv.am/public/uploads/images/02-12-2025/692ed22155c24.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Black",
     "shop": "vlv",
@@ -11095,6 +11156,7 @@
     "title": "Xiaomi Poco C85 Power Black / 8 GB / 256 GB",
     "price": 69000,
     "storage": 256,
+    "ram": 8,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/xiaomi-poco-c85-power-black-8-gb-256-gb",
     "seeded": true,
@@ -11106,6 +11168,7 @@
     "title": "Xiaomi Poco C85 Spring Green / 8 GB / 256 GB",
     "price": 69000,
     "storage": 256,
+    "ram": 8,
     "color": "Green",
     "url": "https://notebookcentre.am/en/product/xiaomi-poco-c85-spring-green-8-gb-256-gb",
     "seeded": true,
@@ -11203,7 +11266,7 @@
     "url": "https://vlv.am/en/Product/41207",
     "image": "https://vlv.am/public/uploads/images/02-12-2025/692ed2555c547.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Black",
     "shop": "vlv",
@@ -11333,7 +11396,7 @@
     "url": "https://vlv.am/en/Product/44449",
     "image": "https://vlv.am/public/uploads/images/29-05-2026/6a198e3113c9f.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -11423,7 +11486,7 @@
     "url": "https://vlv.am/en/Product/44452",
     "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ece0a55fd8.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -11644,7 +11707,7 @@
     "title": "Smartphone Samsung A376 Galaxy A37 5G 6/128GB DS Awesome Graygreen",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-6-128gb-ds-awesome-graygreen",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
@@ -11657,7 +11720,7 @@
     "title": "Smartphone Samsung A376 Galaxy A37 5G 6/128GB DS Awesome Charcoal",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-6-128gb-ds-awesome-charcoal",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Awesome Charcoal",
     "shop": "eldorado",
@@ -11808,7 +11871,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/04/charcoal03.gif",
     "sku": "IBL:90422",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Charcoal",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -11836,7 +11899,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/04/037.gif",
     "sku": "IBL:90425",
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -11850,7 +11913,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/04/charcoal03.gif",
     "sku": "IBL:90426",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Charcoal",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -12000,6 +12063,7 @@
     "title": "Samsung Galaxy A37 Awesome Lavender / 8 GB / 128 GB",
     "price": 149000,
     "storage": 128,
+    "ram": 8,
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-lavender-8-gb-128-gb",
     "seeded": true,
     "seen": "2026-09-20"
@@ -12010,6 +12074,7 @@
     "title": "Samsung Galaxy A37 Awesome White / 8 GB / 128 GB",
     "price": 149000,
     "storage": 128,
+    "ram": 8,
     "color": "White",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-white-8-gb-128-gb",
     "seeded": true,
@@ -12021,6 +12086,7 @@
     "title": "Samsung Galaxy A37 Awesome Charcoal / 8 GB / 128 GB",
     "price": 149000,
     "storage": 128,
+    "ram": 8,
     "color": "Awesome Charcoal",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-charcoal-8-gb-128-gb",
     "seeded": true,
@@ -12095,7 +12161,7 @@
     "title": "Smartphone Samsung A376 Galaxy A37 5G 8/256GB DS Awesome Charcoal",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-8-256gb-ds-awesome-charcoal",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Awesome Charcoal",
     "shop": "eldorado",
@@ -12108,7 +12174,7 @@
     "title": "Smartphone Samsung A376 Galaxy A37 5G 8/256GB DS Awesome Graygreen",
     "url": "https://eldorado.am/en/samsung-a376-galaxy-a37-5g-8-256gb-ds-awesome-graygreen",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
@@ -12313,6 +12379,7 @@
     "title": "Samsung Galaxy A37 Awesome Lavender / 8 GB / 256 GB",
     "price": 165000,
     "storage": 256,
+    "ram": 8,
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-lavender-8-gb-256-gb",
     "seeded": true,
     "seen": "2026-09-20"
@@ -12323,6 +12390,7 @@
     "title": "Samsung Galaxy A37 Awesome White / 8 GB / 256 GB",
     "price": 165000,
     "storage": 256,
+    "ram": 8,
     "color": "White",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-white-8-gb-256-gb",
     "seeded": true,
@@ -12334,6 +12402,7 @@
     "title": "Samsung Galaxy A37 Awesome Graygreen / 8 GB / 256 GB",
     "price": 165000,
     "storage": 256,
+    "ram": 8,
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-graygreen-8-gb-256-gb",
     "seeded": true,
     "seen": "2026-09-20"
@@ -12344,6 +12413,7 @@
     "title": "Samsung Galaxy A37 Awesome Charcoal / 8 GB / 256 GB",
     "price": 179000,
     "storage": 256,
+    "ram": 8,
     "color": "Awesome Charcoal",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a37-awesome-charcoal-8-gb-256-gb",
     "seeded": true,
@@ -12414,7 +12484,7 @@
     "url": "https://vlv.am/en/Product/43013",
     "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ed8c28439b.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -12532,7 +12602,7 @@
     "url": "https://vlv.am/en/Product/48615",
     "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e89d00d7a7.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -12613,7 +12683,7 @@
     "url": "https://vlv.am/en/Product/48616",
     "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e8970af045.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -12670,7 +12740,7 @@
     "title": "Smartphone Honor 600 Pro 12/512GB Black (VKP-NX9)",
     "url": "https://eldorado.am/en/honor-600-pro-12-512gb-black-vkp-nx9",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
@@ -13210,6 +13280,7 @@
     "title": "Samsung Galaxy S26+ 12GB+256GB White",
     "price": 418900,
     "storage": 12,
+    "ram": 12,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s27-12gb-256gb-white/",
     "seeded": true,
@@ -13222,6 +13293,7 @@
     "title": "Samsung Galaxy S26+ 12GB+256GB Violet",
     "price": 418900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-257gb-violet/",
     "seeded": true,
     "esim": false,
@@ -13233,6 +13305,7 @@
     "title": "Samsung Galaxy S26+ 12GB+256GB Black",
     "price": 418900,
     "storage": 12,
+    "ram": 12,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-257gb-black/",
     "seeded": true,
@@ -13245,6 +13318,7 @@
     "title": "Samsung Galaxy S26+ 12GB+256GB Blue",
     "price": 418900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-257gb-blue/",
     "seeded": true,
     "esim": false,
@@ -13265,6 +13339,7 @@
     "title": "Samsung Galaxy S26+ 12GB+512GB Black",
     "price": 469900,
     "storage": 12,
+    "ram": 12,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-258gb-black2914/",
     "seeded": true,
@@ -13277,6 +13352,7 @@
     "title": "Samsung Galaxy S26+ 12GB+512GB Blue",
     "price": 469900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-258gb-blue281/",
     "seeded": true,
     "esim": false,
@@ -13288,6 +13364,7 @@
     "title": "Samsung Galaxy S26+ 12GB+512GB White",
     "price": 469900,
     "storage": 12,
+    "ram": 12,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s27-12gb-257gb-white4416/",
     "seeded": true,
@@ -13300,6 +13377,7 @@
     "title": "Samsung Galaxy S26+ 12GB+512GB Violet",
     "price": 469900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-258gb-violet7945/",
     "seeded": true,
     "esim": false,
@@ -13553,6 +13631,7 @@
     "title": "Samsung Galaxy S26 Ultra Black / 12 GB / 256 GB",
     "price": 399000,
     "storage": 256,
+    "ram": 12,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-black-12-gb-256-gb",
     "seeded": true,
@@ -13564,6 +13643,7 @@
     "title": "Samsung Galaxy S26 Ultra White / 12 GB / 256 GB",
     "price": 399000,
     "storage": 256,
+    "ram": 12,
     "color": "White",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-white-12-gb-256-gb",
     "seeded": true,
@@ -13575,6 +13655,7 @@
     "title": "Samsung Galaxy S26 Ultra Cobalt Violet / 12 GB / 256 GB",
     "price": 399000,
     "storage": 256,
+    "ram": 12,
     "color": "Cobalt Violet",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-12-gb-256-gb",
     "seeded": true,
@@ -13639,18 +13720,6 @@
     "shop": "redstore",
     "seen": "2026-09-20",
     "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 Ultra 12GB/256GB Blue",
-    "price": 419000,
-    "storage": 256,
-    "color": "Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb256gb-blue",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s26-ultra",
@@ -13762,6 +13831,7 @@
     "title": "Samsung Galaxy S26 Ultra Black / 12 GB / 512 GB",
     "price": 479000,
     "storage": 512,
+    "ram": 12,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-black-12-gb-512-gb",
     "seeded": true,
@@ -13773,6 +13843,7 @@
     "title": "Samsung Galaxy S26 Ultra White / 12 GB / 512 GB",
     "price": 479000,
     "storage": 512,
+    "ram": 12,
     "color": "White",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-white-12-gb-512-gb",
     "seeded": true,
@@ -13784,6 +13855,7 @@
     "title": "Samsung Galaxy S26 Ultra Cobalt Violet / 12 GB / 512 GB",
     "price": 479000,
     "storage": 512,
+    "ram": 12,
     "color": "Cobalt Violet",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-12-gb-512-gb",
     "seeded": true,
@@ -13795,6 +13867,7 @@
     "title": "Samsung Galaxy S26 Ultra Sky Blue / 12 GB / 512 GB",
     "price": 479000,
     "storage": 512,
+    "ram": 12,
     "color": "Blue",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-sky-blue-12-gb-512-gb",
     "seeded": true,
@@ -13935,6 +14008,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+256GB Black",
     "price": 479900,
     "storage": 12,
+    "ram": 12,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-256gb-black/",
     "seeded": true,
@@ -13947,6 +14021,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+256GB Blue",
     "price": 479900,
     "storage": 12,
+    "ram": 12,
     "color": "Blue",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-256gb-blue/",
     "seeded": true,
@@ -13959,6 +14034,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+256GB Violet",
     "price": 479900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-256gbviolet/",
     "seeded": true,
     "esim": false,
@@ -13970,6 +14046,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+256GB White",
     "price": 479900,
     "storage": 12,
+    "ram": 12,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-256gb-white/",
     "seeded": true,
@@ -14035,21 +14112,10 @@
    {
     "id": "samsung-galaxy-s26-ultra",
     "shop": "redstore",
-    "title": "Samsung Galaxy S26 Ultra 12GB/512GB Black",
-    "price": 499000,
-    "storage": 512,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-black",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
-    "shop": "redstore",
     "title": "Samsung Galaxy S26 Ultra 12GB/512GB Cobalt Violet",
     "price": 499000,
     "storage": 512,
+    "ram": 12,
     "color": "Cobalt Violet",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-12gb512gb-cobalt-violet",
     "seeded": true,
@@ -14189,6 +14255,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+512GB Black",
     "price": 569900,
     "storage": 12,
+    "ram": 12,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-512gb-black/",
     "seeded": true,
@@ -14201,6 +14268,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+512GB Blue",
     "price": 569900,
     "storage": 12,
+    "ram": 12,
     "color": "Blue",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-512gb-blue/",
     "seeded": true,
@@ -14213,6 +14281,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+512GB Violet",
     "price": 569900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-512gb-violet/",
     "seeded": true,
     "esim": false,
@@ -14224,6 +14293,7 @@
     "title": "Samsung Galaxy S26 Ultra 12GB+512GB White",
     "price": 569900,
     "storage": 12,
+    "ram": 12,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-12gb-512gb-white/",
     "seeded": true,
@@ -14288,6 +14358,7 @@
     "title": "Samsung Galaxy S26 Ultra Black / 16 GB / 1 TB",
     "price": 629000,
     "storage": 1024,
+    "ram": 16,
     "color": "Black",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-black-16-gb-1-tb",
     "seeded": true,
@@ -14299,6 +14370,7 @@
     "title": "Samsung Galaxy S26 Ultra Cobalt Violet / 16 GB / 1 TB",
     "price": 629000,
     "storage": 1024,
+    "ram": 16,
     "color": "Cobalt Violet",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s26-ultra-cobalt-violet-16-gb-1-tb",
     "seeded": true,
@@ -14310,6 +14382,7 @@
     "title": "Samsung Galaxy S26 Ultra 16GB/1TB Black",
     "price": 649000,
     "storage": 1024,
+    "ram": 16,
     "color": "Black",
     "url": "https://redstore.am/en/product/samsung-galaxy-s26-ultra-16gb1tb-black",
     "seeded": true,
@@ -14333,6 +14406,7 @@
     "title": "Samsung Galaxy S26 Ultra 16GB+1TB Black",
     "price": 844900,
     "storage": 16,
+    "ram": 16,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-16gb-1tb-black/",
     "seeded": true,
@@ -14345,6 +14419,7 @@
     "title": "Samsung Galaxy S26 Ultra 16GB+1TB Blue",
     "price": 844900,
     "storage": 16,
+    "ram": 16,
     "color": "Blue",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-16gb-1tb-blue8488/",
     "seeded": true,
@@ -14357,6 +14432,7 @@
     "title": "Samsung Galaxy S26 Ultra 16GB+1TB Violet",
     "price": 844900,
     "storage": 16,
+    "ram": 16,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-16gb-1tb-violet/",
     "seeded": true,
     "esim": false,
@@ -14368,6 +14444,7 @@
     "title": "Samsung Galaxy S26 Ultra 16GB+1TB White",
     "price": 844900,
     "storage": 16,
+    "ram": 16,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-ultra-16gb-1tb-white/",
     "seeded": true,
@@ -14410,7 +14487,7 @@
     "url": "https://vlv.am/en/Product/48965",
     "image": "https://vlv.am/public/uploads/images/12-09-2026/6aa4f7a9c9524.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -14448,6 +14525,7 @@
     "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/256GB Black",
     "price": 174900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-pro-max-5g-8gb-256gb-black.html",
     "seeded": true,
     "esim": false,
@@ -14546,6 +14624,7 @@
     "title": "Xiaomi Redmi Note 17 Pro Max 5G 8GB/512GB Black",
     "price": 191900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-pro-max-5g-8gb-512gb-black.html",
     "seeded": true,
     "esim": false,
@@ -14640,7 +14719,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/09/17-zkshh-yfkj.jpg",
     "sku": "IBL:90848",
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -14682,7 +14761,7 @@
     "url": "https://vlv.am/en/Product/48555",
     "image": "https://vlv.am/public/uploads/images/25-08-2026/6a8d32db37eca.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -14694,7 +14773,7 @@
     "title": "Smartphone Xiaomi Redmi Note 17 5G 6/128GB Black EU (26081RA18G)",
     "url": "https://eldorado.am/en/xiaomi-redmi-note17-5g-6-128gb-black-eu-26081ra18g",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
@@ -14733,6 +14812,7 @@
     "title": "Xiaomi Redmi Note 17 5G 6GB/128GB Black",
     "price": 97900,
     "storage": 6,
+    "ram": 6,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-5g-6gb-128gb-black.html",
     "seeded": true,
     "esim": false,
@@ -14744,6 +14824,7 @@
     "title": "Xiaomi Redmi Note 17 5G 6GB/128GB Celestial Purple",
     "price": 97900,
     "storage": 6,
+    "ram": 6,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-5g-6gb-128gb-celestial-purple.html",
     "seeded": true,
     "esim": false,
@@ -14756,7 +14837,7 @@
     "url": "https://vlv.am/en/Product/48557",
     "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c36a5f0975.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -14872,6 +14953,7 @@
     "title": "Xiaomi Redmi Note 17 4G 8GB/256GB Black",
     "price": 129900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-4g-8gb-256gb-black.html",
     "seeded": true,
     "esim": false,
@@ -14883,6 +14965,7 @@
     "title": "Xiaomi Redmi Note 17 4G 8GB/256GB Celestial Purple",
     "price": 129900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-note-17-4g-8gb-256gb-celestial-purple.html",
     "seeded": true,
     "esim": false,
@@ -14945,6 +15028,7 @@
     "title": "SAMSUNG A08 (A085) 4/128GB Silver",
     "price": 84900,
     "storage": 128,
+    "ram": 4,
     "url": "https://vlv.am/en/Product/49087",
     "seeded": true,
     "seen": "2026-09-20"
@@ -14955,6 +15039,7 @@
     "title": "SAMSUNG A08 (A085) 4/128GB Dark Blue",
     "price": 84900,
     "storage": 128,
+    "ram": 4,
     "url": "https://vlv.am/en/Product/49086",
     "seeded": true,
     "seen": "2026-09-20"
@@ -15014,6 +15099,7 @@
     "title": "SAMSUNG A08 (A085) 6/128GB Dark Blue",
     "price": 97900,
     "storage": 128,
+    "ram": 6,
     "url": "https://vlv.am/en/Product/49088",
     "seeded": true,
     "seen": "2026-09-20"
@@ -15075,6 +15161,7 @@
     "title": "SAMSUNG A07s (A077) 4/64GB Black",
     "price": 59900,
     "storage": 64,
+    "ram": 4,
     "url": "https://vlv.am/en/Product/49085",
     "seeded": true,
     "seen": "2026-09-20"
@@ -15161,7 +15248,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/09/81.jpg",
     "sku": "IBL:90859",
-    "ram": null,
+    "ram": 8,
     "color": "Graphite",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -15175,7 +15262,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/09/8191.jpg",
     "sku": "IBL:90860",
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -15247,18 +15334,6 @@
     "shop": "redstore",
     "seen": "2026-09-20",
     "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s26-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 FE 8GB/256GB Graphite",
-    "price": 319000,
-    "storage": 256,
-    "color": "Graphite",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-fe-8gb256gb-graphite",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s26-fe",
@@ -15608,7 +15683,7 @@
     "url": "https://vlv.am/en/Product/48353",
     "image": "https://vlv.am/public/uploads/images/13-08-2026/6a7d7016ab678.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -15633,6 +15708,7 @@
     "title": "Սմարթֆոն Xiaomi REDMI 17 4GB/128GB Black EU (2606FRN72Y)",
     "price": 79900,
     "storage": 4,
+    "ram": 4,
     "url": "https://eldorado.am/en/xiaomi-redmi-17-4gb-128gb-black-eu-2606frn72y",
     "seeded": true,
     "esim": false,
@@ -15657,6 +15733,7 @@
     "title": "Xiaomi Redmi 17 4GB/128GB Black",
     "price": 83900,
     "storage": 4,
+    "ram": 4,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-17-4gb-128gb-black.html",
     "seeded": true,
     "esim": false,
@@ -15727,7 +15804,7 @@
     "url": "https://vlv.am/en/Product/48554",
     "image": "https://vlv.am/public/uploads/images/24-08-2026/6a8c358932803.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -15739,7 +15816,7 @@
     "title": "Smartphone Xiaomi Redmi 17 8/256GB Black RU (2606FRN72Y)",
     "url": "https://eldorado.am/en/xiaomi-redmi-17-8-256gb-black-ru-2606frn72y",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
@@ -15752,7 +15829,7 @@
     "title": "Smartphone Xiaomi Redmi 17 8/256GB Oak Green RU (2606FRN72Y)",
     "url": "https://eldorado.am/en/xiaomi-redmi-17-8-256gb-oak-green-ru-2606frn72y",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Green",
     "shop": "eldorado",
@@ -15765,7 +15842,7 @@
     "title": "Smartphone Xiaomi Redmi 17 8/256GB Deep Blue RU (2606FRN72Y)",
     "url": "https://eldorado.am/en/xiaomi-redmi-17-8-256gb-deep-blue-ru-2606frn72y",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Deep Blue",
     "shop": "eldorado",
@@ -15817,6 +15894,7 @@
     "title": "Xiaomi Redmi 17 8GB/256GB Oak Green",
     "price": 114900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-oak-green.html",
     "seeded": true,
     "esim": false,
@@ -15828,6 +15906,7 @@
     "title": "Xiaomi Redmi 17 8GB/256GB Deep Blue",
     "price": 114900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-deep-blue.html",
     "seeded": true,
     "esim": false,
@@ -15839,6 +15918,7 @@
     "title": "Xiaomi Redmi 17 8GB/256GB Black",
     "price": 114900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-redmi-17-8gb-256gb-black.html",
     "seeded": true,
     "esim": false,
@@ -15927,7 +16007,7 @@
     "url": "https://vlv.am/en/Product/48234",
     "image": "https://vlv.am/public/uploads/images/06-08-2026/6a743dd708746.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -16012,7 +16092,7 @@
     "url": "https://vlv.am/en/Product/47218",
     "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e5208a088.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": "Black",
     "shop": "vlv",
@@ -16074,7 +16154,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/09/2828.jpg",
     "sku": "IBL:90858",
-    "ram": null,
+    "ram": 12,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -16182,7 +16262,7 @@
     "url": "https://vlv.am/en/Product/47215",
     "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e64466775.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -16207,6 +16287,7 @@
     "title": "Սմարթֆոն XIAOMI 17T 12GB/256GB RU (2602DPT53G) Black",
     "price": 243900,
     "storage": 12,
+    "ram": 12,
     "url": "https://eldorado.am/en/smartphone-xiaomi-17t-12gb-256gb-ru-2602dpt53g-black",
     "seeded": true,
     "esim": false,
@@ -16221,7 +16302,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/08/17t.webp",
     "sku": "IBL:90768",
-    "ram": null,
+    "ram": 12,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -16235,7 +16316,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/08/tt.webp",
     "sku": "IBL:90769",
-    "ram": null,
+    "ram": 12,
     "color": "Violet",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -16260,7 +16341,7 @@
     "url": "https://vlv.am/en/Product/47217",
     "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e599375be.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -16285,6 +16366,7 @@
     "title": "Սմարթֆոն XIAOMI 17T 12GB/512GB RU (2602DPT53G) Black",
     "price": 266900,
     "storage": 12,
+    "ram": 12,
     "url": "https://eldorado.am/en/smartphone-xiaomi-17t-12gb-512gb-ru-2602dpt53g-black",
     "seeded": true,
     "esim": false,
@@ -16475,7 +16557,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/07/51bygijptpl._ac_sl1500_.jpg",
     "sku": "IBL:90748",
-    "ram": null,
+    "ram": 12,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -17943,18 +18025,6 @@
    },
    {
     "id": "samsung-galaxy-a27",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A27 8GB/256GB Blue",
-    "price": 125000,
-    "storage": 256,
-    "color": "Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a27-8gb256gb-blue",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a27",
     "title": "Samsung Galaxy A27 Armenia - Price & Specifications",
     "url": "https://allsell.am/en/samsung-galaxy-a27",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/4/5/4596_1.png",
@@ -18294,7 +18364,7 @@
     "url": "https://vlv.am/en/Product/43873",
     "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40ee3016e81.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -18449,7 +18519,7 @@
     "url": "https://vlv.am/en/Product/46875",
     "image": "https://vlv.am/public/uploads/images/05-06-2026/6a229d57a763c.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -18581,6 +18651,7 @@
     "title": "Սմարթֆոն Xiaomi POCO X8 Pro Max 12GB/512GB RU (2602BPC18G) Սև",
     "price": 242900,
     "storage": 12,
+    "ram": 12,
     "url": "https://eldorado.am/en/smartphone-xiaomi-poco-x8-pro-max-12gb-512gb-ru-2602bpc18g-black",
     "seeded": true,
     "esim": false,
@@ -18593,7 +18664,7 @@
     "url": "https://vlv.am/en/Product/47214",
     "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34e6f992f7e.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -18926,7 +18997,7 @@
     "url": "https://vlv.am/en/Product/43871",
     "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40edce8b8fa.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Black",
     "shop": "vlv",
@@ -18939,7 +19010,7 @@
     "url": "https://vlv.am/en/Product/43872",
     "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ed2675f46d.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Titanium",
     "shop": "vlv",
@@ -19159,7 +19230,7 @@
     "url": "https://vlv.am/en/Product/43874",
     "image": "https://vlv.am/public/uploads/images/05-03-2026/69a978f005c8e.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": "Black",
     "shop": "vlv",
@@ -19243,45 +19314,10 @@
    {
     "id": "samsung-galaxy-a57",
     "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Gray",
-    "price": 143000,
-    "storage": 128,
-    "color": "Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-gray",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Navy",
-    "price": 143000,
-    "storage": 128,
-    "color": "Navy",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-navy",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/128GB Lilac",
-    "price": 143000,
-    "storage": 128,
-    "color": "Lilac",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-lilac",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
     "title": "Samsung Galaxy A57 8GB/128GB Icyblue",
     "price": 143000,
     "storage": 128,
+    "ram": 8,
     "color": "Icyblue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb128gb-icyblue",
     "seeded": true,
@@ -19333,7 +19369,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/03/02.gif",
     "sku": "IBL:90400",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Gray",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -19347,7 +19383,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/05/01.gif",
     "sku": "IBL:90401",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Icyblue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -19361,7 +19397,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/03/5775.gif",
     "sku": "IBL:90403",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Lilac",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -19375,7 +19411,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/05/07.gif",
     "sku": "IBL:90404",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Navy",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -19399,7 +19435,7 @@
     "title": "Smartphone Samsung A576 Galaxy A57 5G 8/128GB DS Awesome Icyblue",
     "url": "https://eldorado.am/en/samsung-a576-galaxy-a57-5g-8-128gb-ds-awesome-icyblue",
     "storage": 128,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Awesome Icyblue",
     "shop": "eldorado",
@@ -19412,7 +19448,7 @@
     "title": "Smartphone Samsung A576 Galaxy A57 5G 8/128GB DS Awesome Navy",
     "url": "https://eldorado.am/en/samsung-a576-galaxy-a57-5g-8-128gb-ds-awesome-navy",
     "storage": 128,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Awesome Navy",
     "shop": "eldorado",
@@ -19425,7 +19461,7 @@
     "title": "Smartphone Samsung A576 Galaxy A57 5G 8/128GB DS Awesome Lilac",
     "url": "https://eldorado.am/en/samsung-a576-galaxy-a57-5g-8-128gb-ds-awesome-lilac",
     "storage": 128,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Awesome Lilac",
     "shop": "eldorado",
@@ -19441,7 +19477,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/05/07.gif",
     "sku": "IBL:90405",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Navy",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -19455,7 +19491,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/03/5775.gif",
     "sku": "IBL:90406",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Lilac",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -19616,33 +19652,10 @@
    {
     "id": "samsung-galaxy-a57",
     "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/256GB Gray",
-    "price": 167000,
-    "storage": 256,
-    "color": "Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-gray",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A57 8GB/256GB Navy",
-    "price": 167000,
-    "storage": 256,
-    "color": "Navy",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-navy",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a57",
-    "shop": "redstore",
     "title": "Samsung Galaxy A57 8GB/256GB Icyblue",
     "price": 167000,
     "storage": 256,
+    "ram": 8,
     "color": "Icyblue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-icyblue",
     "seeded": true,
@@ -19655,6 +19668,7 @@
     "title": "Samsung Galaxy A57 8GB/256GB Lilac",
     "price": 167000,
     "storage": 256,
+    "ram": 8,
     "color": "Lilac",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-8gb256gb-lilac",
     "seeded": true,
@@ -19667,6 +19681,7 @@
     "title": "Samsung Galaxy A57 Awesome Navy / 128 GB / 8 GB",
     "price": 169000,
     "storage": 128,
+    "ram": 8,
     "color": "Awesome Navy",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-navy-128-gb-8-gb",
     "seeded": true,
@@ -19678,6 +19693,7 @@
     "title": "Samsung Galaxy A57 Awesome Icyblue / 128 GB / 8 GB",
     "price": 169000,
     "storage": 128,
+    "ram": 8,
     "color": "Awesome Icyblue",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-icyblue-128-gb-8-gb",
     "seeded": true,
@@ -19699,6 +19715,7 @@
     "title": "Samsung Galaxy A57 Awesome Gray / 128 GB / 8 GB",
     "price": 169000,
     "storage": 128,
+    "ram": 8,
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-gray-128-gb-8-gb",
     "seeded": true,
     "seen": "2026-09-20"
@@ -19770,6 +19787,7 @@
     "title": "Samsung Galaxy A57 12GB/256GB Gray",
     "price": 189000,
     "storage": 256,
+    "ram": 12,
     "color": "Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-gray",
     "seeded": true,
@@ -19782,6 +19800,7 @@
     "title": "Samsung Galaxy A57 12GB/256GB Navy",
     "price": 189000,
     "storage": 256,
+    "ram": 12,
     "color": "Navy",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-navy",
     "seeded": true,
@@ -19794,6 +19813,7 @@
     "title": "Samsung Galaxy A57 12GB/256GB Icyblue",
     "price": 189000,
     "storage": 256,
+    "ram": 12,
     "color": "Icyblue",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-icyblue",
     "seeded": true,
@@ -19806,6 +19826,7 @@
     "title": "Samsung Galaxy A57 12GB/256GB Lilac",
     "price": 189000,
     "storage": 256,
+    "ram": 12,
     "color": "Lilac",
     "url": "https://redstore.am/en/product/samsung-galaxy-a57-12gb256gb-lilac",
     "seeded": true,
@@ -19818,6 +19839,7 @@
     "title": "Samsung Galaxy A57 Awesome Lilac / 256 GB / 8 GB",
     "price": 189000,
     "storage": 256,
+    "ram": 8,
     "color": "Awesome Lilac",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-lilac-256-gb-8-gb",
     "seeded": true,
@@ -19829,6 +19851,7 @@
     "title": "Samsung Galaxy A57 Awesome Gray / 256 GB / 8 GB",
     "price": 189000,
     "storage": 256,
+    "ram": 8,
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-gray-256-gb-8-gb",
     "seeded": true,
     "seen": "2026-09-20"
@@ -19839,6 +19862,7 @@
     "title": "Samsung Galaxy A57 Awesome Navy / 256 GB / 8 GB",
     "price": 189000,
     "storage": 256,
+    "ram": 8,
     "color": "Awesome Navy",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-navy-256-gb-8-gb",
     "seeded": true,
@@ -19850,6 +19874,7 @@
     "title": "Samsung Galaxy A57 Awesome Icyblue / 256 GB / 8 GB",
     "price": 189000,
     "storage": 256,
+    "ram": 8,
     "color": "Awesome Icyblue",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-a57-awesome-icyblue-256-gb-8-gb",
     "seeded": true,
@@ -20230,18 +20255,6 @@
    },
    {
     "id": "samsung-galaxy-s26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 12GB/256GB Black",
-    "price": 339000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb256gb-black",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26",
     "title": "Samsung Galaxy S26 Price In Armenia - Buy Now - AllSell",
     "url": "https://allsell.am/en/samsung-galaxy-s26",
     "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/2/s26_1.jpg",
@@ -20387,6 +20400,7 @@
     "title": "Samsung Galaxy S26 12GB+256GB White",
     "price": 348900,
     "storage": 12,
+    "ram": 12,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-256gb-white/",
     "seeded": true,
@@ -20399,6 +20413,7 @@
     "title": "Samsung Galaxy S26 12GB+256GB Violet",
     "price": 348900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-256gb-violet/",
     "seeded": true,
     "esim": false,
@@ -20410,6 +20425,7 @@
     "title": "Samsung Galaxy S26 12GB+256GB Black",
     "price": 348900,
     "storage": 12,
+    "ram": 12,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-256gb-black/",
     "seeded": true,
@@ -20422,6 +20438,7 @@
     "title": "Samsung Galaxy S26 12GB+256GB Blue",
     "price": 348900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-256gb-blue/",
     "seeded": true,
     "esim": false,
@@ -20565,30 +20582,6 @@
    },
    {
     "id": "samsung-galaxy-s26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 12GB/512GB Black",
-    "price": 379000,
-    "storage": 512,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s26-12gb512gb-black",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S26 12GB/512GB Cobalt Violet",
-    "price": 379000,
-    "storage": 512,
-    "color": "Cobalt Violet",
-    "url": "https://redstore.am/product/samsung-galaxy-s26-12gb512gb-cobalt-violet",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s26",
     "shop": "pixel",
     "title": "Samsung Galaxy S26",
     "price": 399000,
@@ -20680,6 +20673,7 @@
     "title": "Samsung Galaxy S26 12GB+512GB White",
     "price": 420900,
     "storage": 12,
+    "ram": 12,
     "color": "White",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-512gb-white/",
     "seeded": true,
@@ -20692,6 +20686,7 @@
     "title": "Samsung Galaxy S26 12GB+512GB Violet",
     "price": 420900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-512gb-violet/",
     "seeded": true,
     "esim": false,
@@ -20703,6 +20698,7 @@
     "title": "Samsung Galaxy S26 12GB+512GB Black",
     "price": 420900,
     "storage": 12,
+    "ram": 12,
     "color": "Black",
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-512gb-black/",
     "seeded": true,
@@ -20715,6 +20711,7 @@
     "title": "Samsung Galaxy S26 12GB+512GB Blue",
     "price": 420900,
     "storage": 12,
+    "ram": 12,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-s26-12gb-256gb-blue927/",
     "seeded": true,
     "esim": false,
@@ -20767,6 +20764,7 @@
     "title": "Սմարթֆոն Xiaomi REDMI Note 15 Pro+ 5G 8GB/256GB RU(2510ERA8BG) Սև",
     "price": 175900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/smartphone-xiaomi-redmi-note-15-pro-5g-8gb-256gb-ru-2510era8bg-black",
     "seeded": true,
     "esim": false,
@@ -20778,6 +20776,7 @@
     "title": "Xiaomi Redmi Note 15 Pro+ 5G 8GB/256GB Black",
     "price": 175900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/xiaomi-redmi-note-15-pro-plus-5g-8gb-256gb-black/",
     "seeded": true,
     "esim": false
@@ -20817,7 +20816,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/2c92644b0c63f588b25d67f1aeb1c77d.jpg",
     "sku": "IBL:80318",
-    "ram": null,
+    "ram": 8,
     "color": "Purple",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -20831,7 +20830,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/21e2d33aabaf5ab8c668831a2b6e4031-1.jpg",
     "sku": "IBL:80319",
-    "ram": null,
+    "ram": 8,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -20845,7 +20844,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/ab816cc8e448660e1f9e1c21bcbd2a70.jpg",
     "sku": "IBL:80320",
-    "ram": null,
+    "ram": 8,
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -20907,7 +20906,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/2c92644b0c63f588b25d67f1aeb1c77d-1.jpg",
     "sku": "IBL:80321",
-    "ram": null,
+    "ram": 12,
     "color": "Purple",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -20921,7 +20920,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/21e2d33aabaf5ab8c668831a2b6e4031-2.jpg",
     "sku": "IBL:80322",
-    "ram": null,
+    "ram": 12,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -20935,7 +20934,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/ab816cc8e448660e1f9e1c21bcbd2a70-1.jpg",
     "sku": "IBL:80323",
-    "ram": null,
+    "ram": 12,
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -21033,16 +21032,6 @@
     "ram": 8,
     "color": "Midnight Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-note-14-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Redmi Note 14 Pro+ 8GB / 256GB Midnight Black",
-    "price": 98000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/xiaomi-redmi-note-14-pro-8gb-256gb-midnight-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -21526,6 +21515,7 @@
     "title": "Սմարթֆոն Xiaomi REDMI 15 6GB/128GB RU (25062RN2DY) մանուշակագույն",
     "price": 66900,
     "storage": 6,
+    "ram": 6,
     "url": "https://eldorado.am/en/redmi-15-6gb-128gb-sandy-purple-ru-25062rn2dy",
     "seeded": true,
     "esim": false,
@@ -21537,6 +21527,7 @@
     "title": "Սմարթֆոն Xiaomi REDMI 15 6GB/128GB RU (25062RN2DY) սև",
     "price": 66900,
     "storage": 6,
+    "ram": 6,
     "url": "https://eldorado.am/en/redmi-15-6gb-128gb-midnight-black-ru-25062rn2dy",
     "seeded": true,
     "esim": false,
@@ -21609,6 +21600,7 @@
     "title": "Սմարթֆոն Xiaomi REDMI 15 8GB/128GB EU (25062RN2DA) Sandy Purple",
     "price": 69900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/smartphone-redmi-15-8gb-128gb-eu-25062rn2da-sandy-purple",
     "seeded": true,
     "esim": false,
@@ -21646,6 +21638,7 @@
     "title": "Սմարթֆոն Xiaomi REDMI 15 8GB/256GB Titan Gray",
     "price": 74900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/smartphone-redmi-15-8gb-256gb-titan-gray",
     "seeded": true,
     "esim": false,
@@ -21754,7 +21747,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/04d997882bfd270b1f0dace64234922d.png",
     "sku": "IBL:80316",
-    "ram": null,
+    "ram": 8,
     "color": "Green",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -21768,7 +21761,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/8988f11815ab53966e1c5cf891923949-1.jpg",
     "sku": "IBL:80317",
-    "ram": null,
+    "ram": 8,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -21839,36 +21832,6 @@
     "ram": 12,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-x7",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco X7 12GB / 512GB Silver",
-    "price": 117000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-x7-12gb-512gb-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-x7",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco X7 12GB / 512GB Green",
-    "price": 117000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-x7-12gb-512gb-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-x7",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco X7 12GB / 512GB Black",
-    "price": 117000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-x7-12gb-512gb-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -21957,6 +21920,7 @@
     "title": "Սմարթֆոն POCO M7 6GB/128GB EU (25062PC34G) Կապույտ",
     "price": 64900,
     "storage": 6,
+    "ram": 6,
     "url": "https://eldorado.am/en/smartphone-poco-m7-6gb-128gb-blue-eu-25062pc34g",
     "seeded": true,
     "esim": false,
@@ -21968,6 +21932,7 @@
     "title": "Սմարթֆոն POCO M7 6GB/128GB RU (25062PC34G) Արծաթագույն",
     "price": 64900,
     "storage": 6,
+    "ram": 6,
     "url": "https://eldorado.am/en/smartphone-poco-m7-6gb-128gb-silver-ru-25062pc34g",
     "seeded": true,
     "esim": false,
@@ -21979,6 +21944,7 @@
     "title": "Սմարթֆոն XIAOMI POCO M7 6GB/128GB RU (25062PC34G) Սև",
     "price": 64900,
     "storage": 6,
+    "ram": 6,
     "url": "https://eldorado.am/en/smartphone-xiaomi-poco-m7-6gb-128gb-black-ru-25062pc34g",
     "seeded": true,
     "esim": false,
@@ -21991,7 +21957,7 @@
     "url": "https://vlv.am/en/Product/43514",
     "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40ec90d4b4b.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -22042,6 +22008,7 @@
     "title": "Սմարթֆոն XIAOMI POCO M7 8GB/256GB Արծաթագույն",
     "price": 72900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/smartphone-xiaomi-poco-m7-8gb-256gb-silver",
     "seeded": true,
     "esim": false,
@@ -22053,6 +22020,7 @@
     "title": "Սմարթֆոն Xiaomi POCO M7 EU 8GB/256GB (25062PC34G) կապույտ",
     "price": 72900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/xiaomi-poco-m7-eu-8gb-256gb-25062pc34g-blue",
     "seeded": true,
     "esim": false,
@@ -22064,6 +22032,7 @@
     "title": "Xiaomi POCO M7 8GB/256GB Silver",
     "price": 72900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-poco-m7-8gb-256gb-silver.html",
     "seeded": true,
     "esim": false,
@@ -22088,7 +22057,7 @@
     "url": "https://vlv.am/en/Product/46936",
     "image": "https://vlv.am/public/uploads/images/10-06-2026/6a290104cb38c.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -22210,7 +22179,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fff247111d5267b8c460new_project_-_2025-09-13t144122.836.jpg",
     "sku": "IBL:80403",
-    "ram": null,
+    "ram": 4,
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -22274,7 +22243,7 @@
     "url": "https://vlv.am/en/Product/41310",
     "image": "https://vlv.am/public/uploads/images/28-05-2026/6a183f985699a.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": "Blue",
     "shop": "vlv",
@@ -22287,7 +22256,7 @@
     "url": "https://vlv.am/en/Product/42356",
     "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40e2fd2e674.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -22811,42 +22780,6 @@
    },
    {
     "id": "samsung-galaxy-s25-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 FE 8GB/256GB Navy",
-    "price": 222000,
-    "storage": 256,
-    "color": "Navy",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-navy",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 FE 8GB/256GB White",
-    "price": 222000,
-    "storage": 256,
-    "color": "White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-white",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 FE 8GB/256GB Jetblack",
-    "price": 222000,
-    "storage": 256,
-    "color": "Jetblack",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-fe-8gb256gb-jetblack",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-fe",
     "shop": "pixel",
     "title": "Samsung Galaxy S25 FE",
     "price": 226000,
@@ -22993,6 +22926,7 @@
     "title": "Samsung Galaxy S25 12GB/128GB Icy Blue",
     "price": 239000,
     "storage": 128,
+    "ram": 12,
     "color": "Icy Blue",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-icy-blue",
     "seeded": true,
@@ -23046,21 +22980,10 @@
    {
     "id": "samsung-galaxy-s25",
     "shop": "redstore",
-    "title": "Samsung Galaxy S25 12GB/128GB Mint",
-    "price": 259000,
-    "storage": 128,
-    "color": "Mint",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb128gb-mint",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25",
-    "shop": "redstore",
     "title": "Samsung Galaxy S25 12GB/256GB Silver Shadow",
     "price": 259000,
     "storage": 256,
+    "ram": 12,
     "color": "Silver Shadow",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-12gb256gb-silver-shadow",
     "seeded": true,
@@ -23241,7 +23164,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/large_samsung-galaxy-a07_4.jpg",
     "sku": "IBL:80360",
-    "ram": null,
+    "ram": 4,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -23255,7 +23178,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/large_samsung-galaxy-a07_2_1.jpg",
     "sku": "IBL:80361",
-    "ram": null,
+    "ram": 4,
     "color": "Silver",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -23269,7 +23192,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/large_samsung-galaxy-a07_3.jpg",
     "sku": "IBL:80363",
-    "ram": null,
+    "ram": 4,
     "color": "Green",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -23776,6 +23699,7 @@
     "title": "Realme Note 60x 3GB/64GB Black",
     "price": 34900,
     "storage": null,
+    "ram": 3,
     "url": "https://shop.viva.am/en/product/realme-note-60x-3gb-64gb-black/",
     "seeded": true,
     "esim": false
@@ -23786,6 +23710,7 @@
     "title": "Realme Note 60x 3GB/64GB Green",
     "price": 34900,
     "storage": null,
+    "ram": 3,
     "url": "https://shop.viva.am/en/product/realme-note-60x-3gb-64gb-green/",
     "seeded": true,
     "esim": false
@@ -23809,6 +23734,7 @@
     "title": "Realme Note 60x 4GB/128GB Black",
     "price": 40900,
     "storage": null,
+    "ram": 4,
     "url": "https://shop.viva.am/en/product/realme-note-60x-4gb-128gb-black1287/",
     "seeded": true,
     "esim": false
@@ -23875,6 +23801,7 @@
     "title": "Realme C71 6GB/128GB White",
     "price": 52900,
     "storage": 128,
+    "ram": 6,
     "url": "https://shop.viva.am/en/product/realme-c71-6gb-128gb-white/",
     "seeded": true,
     "esim": false
@@ -23885,6 +23812,7 @@
     "title": "Realme C71 6GB/128GB Green",
     "price": 52900,
     "storage": 128,
+    "ram": 6,
     "url": "https://shop.viva.am/en/product/realme-c71-6gb-128gb-green2793/",
     "seeded": true,
     "esim": false
@@ -23895,6 +23823,7 @@
     "title": "Realme C71 8GB/256GB White",
     "price": 63900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/realme-c71-8gb-256gb-white2229/",
     "seeded": true,
     "esim": false
@@ -24271,7 +24200,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl3-1.jpg",
     "sku": "IBL:80158",
-    "ram": null,
+    "ram": 12,
     "color": "Mint",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24285,7 +24214,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl2-1.jpg",
     "sku": "IBL:80159",
-    "ram": null,
+    "ram": 12,
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24299,7 +24228,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl1.jpg",
     "sku": "IBL:80154",
-    "ram": null,
+    "ram": 12,
     "color": "Coral Red",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24313,7 +24242,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl3.jpg",
     "sku": "IBL:80155",
-    "ram": null,
+    "ram": 12,
     "color": "Mint",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24327,7 +24256,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl2.jpg",
     "sku": "IBL:80156",
-    "ram": null,
+    "ram": 12,
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24341,7 +24270,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/fl5.jpg",
     "sku": "IBL:80157",
-    "ram": null,
+    "ram": 12,
     "color": "Jet Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24785,7 +24714,7 @@
     "title": "Smartphone Xiaomi Redmi Note 14 6/128GB Midnight Black",
     "url": "https://eldorado.am/en/xiaomi-redmi-note-14-6-128gb-midnight-black",
     "storage": 128,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Midnight Black",
     "shop": "eldorado",
@@ -24976,7 +24905,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/13.gif",
     "sku": "IBL:80261",
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -24990,7 +24919,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/14.gif",
     "sku": "IBL:80385",
-    "ram": null,
+    "ram": 8,
     "color": "Pink",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25004,7 +24933,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/12.gif",
     "sku": "IBL:80386",
-    "ram": null,
+    "ram": 8,
     "color": "Graphite",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25018,7 +24947,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/056.gif",
     "sku": "IBL:80388",
-    "ram": null,
+    "ram": 8,
     "color": "Olive",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25085,34 +25014,11 @@
     "title": "Samsung Galaxy A56 8GB/128GB Graphite",
     "price": 142000,
     "storage": 128,
+    "ram": 8,
     "color": "Graphite",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-graphite",
     "seeded": true,
     "esim": false
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/128GB Light Gray",
-    "price": 142000,
-    "storage": 128,
-    "color": "Light Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-light-gray",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/128GB Pink",
-    "price": 142000,
-    "storage": 128,
-    "color": "Pink",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb128gb-pink",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-a56",
@@ -25209,57 +25115,9 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/pink-3.jpg",
     "sku": "IBL:80263",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Pink",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/256GB Graphite",
-    "price": 144000,
-    "storage": 256,
-    "color": "Graphite",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-graphite",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/256GB Light Gray",
-    "price": 144000,
-    "storage": 256,
-    "color": "Light Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-light-gray",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/256GB Olive",
-    "price": 144000,
-    "storage": 256,
-    "color": "Olive",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-olive",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a56",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A56 8GB/256GB Pink",
-    "price": 144000,
-    "storage": 256,
-    "color": "Pink",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a56-8gb256gb-pink",
-    "seeded": true,
-    "esim": false,
     "seen": "2026-09-20"
    },
    {
@@ -25365,6 +25223,7 @@
     "title": "Samsung Galaxy A56 12GB/256GB Light Gray",
     "price": 169000,
     "storage": 256,
+    "ram": 12,
     "color": "Light Gray",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-12gb256gb-light-gray",
     "seeded": true,
@@ -25377,6 +25236,7 @@
     "title": "Samsung Galaxy A56 12GB/256GB Olive",
     "price": 169000,
     "storage": 256,
+    "ram": 12,
     "color": "Olive",
     "url": "https://redstore.am/en/product/samsung-galaxy-a56-12gb256gb-olive",
     "seeded": true,
@@ -25389,6 +25249,7 @@
     "title": "Samsung Galaxy A56 8GB 128GB(SM-A566) Black",
     "price": 181900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a56-8-128gb-sm-a566-black/",
     "seeded": true,
     "esim": false,
@@ -25400,6 +25261,7 @@
     "title": "Samsung Galaxy A56 8GB 128GB(SM-A566) Green",
     "price": 181900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a56-8-128gb-sm-a566-green/",
     "seeded": true,
     "esim": false,
@@ -25411,6 +25273,7 @@
     "title": "Samsung Galaxy A56 8GB 256GB(SM-A566) Black",
     "price": 199900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a56-8-256gb-sm-a566-black/",
     "seeded": true,
     "esim": false,
@@ -25440,7 +25303,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/a36-1.jpg2_-1.jpg",
     "sku": "IBL:80379",
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25454,7 +25317,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/samsung-galaxy-a36-lime-1.jpg",
     "sku": "IBL:80380",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Lime",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25465,6 +25328,7 @@
     "title": "Samsung Galaxy A36 8GB/128GB Lavender",
     "price": 109000,
     "storage": 128,
+    "ram": 8,
     "color": "Lavender",
     "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-lavender",
     "seeded": true,
@@ -25476,6 +25340,7 @@
     "title": "Samsung Galaxy A36 8GB/128GB Lime",
     "price": 109000,
     "storage": 128,
+    "ram": 8,
     "color": "Lime",
     "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-lime",
     "seeded": true,
@@ -25487,6 +25352,7 @@
     "title": "Samsung Galaxy A36 8GB/128GB White",
     "price": 109000,
     "storage": 128,
+    "ram": 8,
     "color": "White",
     "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb128gb-white",
     "seeded": true,
@@ -25527,7 +25393,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/samsung-galaxy-a36-lime.jpg",
     "sku": "IBL:80375",
-    "ram": null,
+    "ram": 8,
     "color": "Awesome Lime",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25541,7 +25407,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/a36.jpg2_.jpg",
     "sku": "IBL:80376",
-    "ram": null,
+    "ram": 8,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25555,7 +25421,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/a36.jpg",
     "sku": "IBL:80377",
-    "ram": null,
+    "ram": 8,
     "color": "White",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25569,7 +25435,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/a361.jpg",
     "sku": "IBL:80378",
-    "ram": null,
+    "ram": 8,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -25580,6 +25446,7 @@
     "title": "Samsung Galaxy A36 8GB/256GB Lime",
     "price": 124000,
     "storage": 256,
+    "ram": 8,
     "color": "Lime",
     "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb256gb-lime",
     "seeded": true,
@@ -25591,6 +25458,7 @@
     "title": "Samsung Galaxy A36 8GB/256GB White",
     "price": 124000,
     "storage": 256,
+    "ram": 8,
     "color": "White",
     "url": "https://redstore.am/en/product/samsung-galaxy-a36-8gb256gb-white",
     "seeded": true,
@@ -25637,6 +25505,7 @@
     "title": "Սմարթֆոն Samsung A366 8GB/128GB Lime",
     "price": 129900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/smartphone-samsung-a366-8gb-128gb-lime",
     "seeded": true,
     "esim": false,
@@ -25726,6 +25595,7 @@
     "title": "Samsung Galaxy A36 8GB 128GB(SM-A366) Black",
     "price": 151900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a36-8-128gb-sm-a366-black/",
     "seeded": true,
     "esim": false,
@@ -25737,6 +25607,7 @@
     "title": "Samsung Galaxy A36 8GB 128GB(SM-A366) Lavender",
     "price": 151900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a36-8-128gb-sm-a366-lavender/",
     "seeded": true,
     "esim": false,
@@ -25760,6 +25631,7 @@
     "title": "Samsung Galaxy A36 8GB 256GB(SM-A366) Black",
     "price": 168900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.viva.am/en/product/samsung-galaxy-a36-8-256gb-sm-a366-black/",
     "seeded": true,
     "esim": false,
@@ -26169,8 +26041,7 @@
     "storage": 512,
     "color": "Black Titanium",
     "url": "https://redstore.am/en/product/iphone-16-pro-max-512gb-black-titanium-esim",
-    "seeded": true,
-    "esim": false
+    "seeded": true
    },
    {
     "id": "apple-iphone-16-pro-max",
@@ -26933,7 +26804,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/02/a11.jpg",
     "sku": "IBL:9081",
-    "ram": null,
+    "ram": 6,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -30530,11 +30401,11 @@
     "price": 849000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30544,11 +30415,11 @@
     "price": 849000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30558,11 +30429,11 @@
     "price": 849000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30572,11 +30443,11 @@
     "price": 849000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30591,7 +30462,7 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30606,7 +30477,7 @@
     "color": "Black",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30621,7 +30492,7 @@
     "color": "Glacier",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30636,7 +30507,7 @@
     "color": "Burgundy",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30706,11 +30577,11 @@
     "price": 929000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30720,11 +30591,11 @@
     "price": 929000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30734,11 +30605,11 @@
     "price": 929000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30748,11 +30619,11 @@
     "price": 929000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30885,11 +30756,11 @@
     "price": 1009000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30899,11 +30770,11 @@
     "price": 1009000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30913,11 +30784,11 @@
     "price": 1009000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30927,11 +30798,11 @@
     "price": 1009000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30941,7 +30812,7 @@
     "storage": 512,
     "url": "https://redstore.am/en/product/iphone-18-pro-max-512gb-black-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -30952,11 +30823,11 @@
     "price": 1089000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30966,11 +30837,11 @@
     "price": 1089000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30980,11 +30851,11 @@
     "price": 1089000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -30994,11 +30865,11 @@
     "price": 1089000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31008,11 +30879,11 @@
     "price": 1149000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31022,11 +30893,11 @@
     "price": 1149000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31036,11 +30907,11 @@
     "price": 1149000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31050,11 +30921,11 @@
     "price": 1149000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31064,7 +30935,7 @@
     "storage": 1024,
     "url": "https://redstore.am/en/product/iphone-18-pro-max-1tb-black-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -31075,11 +30946,11 @@
     "price": 1229000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31089,11 +30960,11 @@
     "price": 1229000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31103,11 +30974,11 @@
     "price": 1229000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31117,11 +30988,11 @@
     "price": 1229000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31229,11 +31100,11 @@
     "price": 1409000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31243,11 +31114,11 @@
     "price": 1409000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31257,11 +31128,11 @@
     "price": 1409000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro-max",
@@ -31271,11 +31142,11 @@
     "price": 1409000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro Max (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    }
   ],
   "apple-iphone-18-pro": [
@@ -31532,11 +31403,11 @@
     "price": 749000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31546,11 +31417,11 @@
     "price": 749000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31560,11 +31431,11 @@
     "price": 749000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31574,11 +31445,11 @@
     "price": 749000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31593,7 +31464,7 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31608,7 +31479,7 @@
     "color": "Black",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31623,7 +31494,7 @@
     "color": "Glacier",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31638,7 +31509,7 @@
     "color": "Burgundy",
     "shop": "redstore",
     "seen": "2026-09-20",
-    "esim": false
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31693,11 +31564,11 @@
     "price": 829000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31707,11 +31578,11 @@
     "price": 829000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31721,11 +31592,11 @@
     "price": 829000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31735,11 +31606,11 @@
     "price": 829000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31775,11 +31646,11 @@
     "price": 909000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31789,11 +31660,11 @@
     "price": 909000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31803,11 +31674,11 @@
     "price": 909000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31817,11 +31688,11 @@
     "price": 909000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31947,7 +31818,7 @@
     "storage": 512,
     "url": "https://redstore.am/en/product/iphone-18-pro-512gb-burgundy-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -31958,11 +31829,11 @@
     "price": 989000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31972,11 +31843,11 @@
     "price": 989000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -31986,11 +31857,11 @@
     "price": 989000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32000,11 +31871,11 @@
     "price": 989000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32014,11 +31885,11 @@
     "price": 1049000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32028,11 +31899,11 @@
     "price": 1049000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32042,11 +31913,11 @@
     "price": 1049000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32056,11 +31927,11 @@
     "price": 1049000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32070,7 +31941,7 @@
     "storage": 1024,
     "url": "https://redstore.am/en/product/iphone-18-pro-1tb-burgundy-esim",
     "seeded": true,
-    "esim": false,
+    "esim": true,
     "seen": "2026-09-20"
    },
    {
@@ -32081,11 +31952,11 @@
     "price": 1129000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32095,11 +31966,11 @@
     "price": 1129000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32109,11 +31980,11 @@
     "price": 1129000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32123,11 +31994,11 @@
     "price": 1129000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32137,11 +32008,11 @@
     "price": 1229000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32151,11 +32022,11 @@
     "price": 1229000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32165,11 +32036,11 @@
     "price": 1229000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32179,11 +32050,11 @@
     "price": 1229000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (E-Sim)",
-    "esim": true,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": true
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32291,11 +32162,11 @@
     "price": 1309000,
     "color": "Black",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32305,11 +32176,11 @@
     "price": 1309000,
     "color": "Silver",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32319,11 +32190,11 @@
     "price": 1309000,
     "color": "Glacier",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-18-pro",
@@ -32333,11 +32204,11 @@
     "price": 1309000,
     "color": "Burgundy",
     "title": "Apple iPhone 18 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    }
   ],
   "honor-x7e": [
@@ -32348,7 +32219,7 @@
     "url": "https://vlv.am/en/Product/48617",
     "image": "https://vlv.am/public/uploads/images/26-08-2026/6a8e88eb64df6.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -32360,7 +32231,7 @@
     "title": "Smartphone Honor X7e 6/256GB Midnight Black (LAB-LX1)",
     "url": "https://eldorado.am/en/honor-x7e-6-256gb-midnight-black-lab-lx1",
     "storage": 256,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Midnight Black",
     "shop": "eldorado",
@@ -32373,7 +32244,7 @@
     "title": "Smartphone Honor X7e 6/256GB Sunrise Orange (LAB-LX1)",
     "url": "https://eldorado.am/en/honor-x7e-6-256gb-sunrise-orange-lab-lx1",
     "storage": 256,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Orange",
     "shop": "eldorado",
@@ -32386,7 +32257,7 @@
     "title": "Smartphone Honor X7e 6/256GB Light Blue (LAB-LX1)",
     "url": "https://eldorado.am/en/honor-x7e-6-256gb-light-blue-lab-lx1",
     "storage": 256,
-    "ram": null,
+    "ram": 6,
     "inStock": true,
     "color": "Light Blue",
     "shop": "eldorado",
@@ -32438,6 +32309,7 @@
     "title": "Honor X7e 6GB/256GB Light Blue",
     "price": 89900,
     "storage": 6,
+    "ram": 6,
     "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-light-blue.html",
     "seeded": true,
     "esim": false,
@@ -32449,6 +32321,7 @@
     "title": "Honor X7e 6GB/256GB Midnight Black",
     "price": 89900,
     "storage": 6,
+    "ram": 6,
     "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-midnight-black.html",
     "seeded": true,
     "esim": false,
@@ -32460,6 +32333,7 @@
     "title": "Honor X7e 6GB/256GB Sunrise Orange",
     "price": 89900,
     "storage": 6,
+    "ram": 6,
     "url": "https://www.zigzag.am/am/honor-x7e-6gb-256gb-sunrise-orange.html",
     "seeded": true,
     "esim": false,
@@ -32575,7 +32449,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/04/719gilqw1gl._ac_sl1500_.jpg",
     "sku": "IBL:90435",
-    "ram": null,
+    "ram": 12,
     "color": "Silver",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -32614,7 +32488,7 @@
     "url": "https://vlv.am/en/Product/44382",
     "image": "https://vlv.am/public/uploads/images/09-06-2026/6a2817b8e93b6.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -32640,7 +32514,7 @@
     "url": "https://vlv.am/en/Product/46876",
     "image": "https://vlv.am/public/uploads/images/15-06-2026/6a2fd08ab1c0a.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -32840,7 +32714,7 @@
     "url": "https://vlv.am/en/Product/47206",
     "image": "https://vlv.am/public/uploads/images/19-06-2026/6a34ef8ee43fe.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -32948,6 +32822,7 @@
     "title": "Xiaomi POCO M8 5G 8GB/256GB Black",
     "price": 111900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-poco-m8-5g-8gb-256gb-black.html",
     "seeded": true,
     "esim": false,
@@ -32959,6 +32834,7 @@
     "title": "Xiaomi POCO M8 5G 8GB/256GB Silver",
     "price": 111900,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/xiaomi-poco-m8-5g-8gb-256gb-silver.html",
     "seeded": true,
     "esim": false,
@@ -32984,7 +32860,7 @@
     "url": "https://vlv.am/en/Product/43995",
     "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ec243d2982.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -33281,6 +33157,7 @@
     "title": "Xiaomi Poco M7 Pro 5G 8GB/256GB",
     "price": 95900,
     "storage": 8,
+    "ram": 8,
     "url": "https://shop.ucom.am/en/xiaomi-poco-m7-pro-8gb-256gb.html",
     "seeded": true,
     "esim": false,
@@ -33306,6 +33183,7 @@
     "title": "POCO C71 3GB/64GB Black",
     "price": 32900,
     "storage": null,
+    "ram": 3,
     "url": "https://shop.viva.am/en/product/poco-c71-3gb-64gb-Black/",
     "seeded": true,
     "esim": false
@@ -33329,6 +33207,7 @@
     "title": "POCO C71 4GB/128GB Black",
     "price": 38900,
     "storage": null,
+    "ram": 4,
     "url": "https://shop.viva.am/en/product/poco-c71-4gb-128gb-black/",
     "seeded": true,
     "esim": false
@@ -33339,6 +33218,7 @@
     "title": "POCO C71 4GB/128GB Gold",
     "price": 38900,
     "storage": null,
+    "ram": 4,
     "url": "https://shop.viva.am/en/product/poco-c71-4gb-128gb-gold/",
     "seeded": true,
     "esim": false
@@ -33423,7 +33303,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/10/a0484f4a909d5b0e39ec761f88350b0c.jpg",
     "sku": "IBL:10233",
-    "ram": null,
+    "ram": 12,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -33437,7 +33317,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/10/b02f0ab2989497e0d0eb700787e111e8.jpg",
     "sku": "IBL:10389",
-    "ram": null,
+    "ram": 12,
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -33451,7 +33331,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/10/abf8ee666f5a688e8d237a25cd0d14a2.jpg",
     "sku": "IBL:9090",
-    "ram": null,
+    "ram": 12,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -33682,7 +33562,7 @@
     "title": "Smartphone Xiaomi Poco X7 Pro 12/512GB Green EU (2412DPC0AG)",
     "url": "https://eldorado.am/en/xiaomi-poco-x7-pro-12-512gb-green-eu-2412dpc0ag",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": "Green",
     "shop": "eldorado",
@@ -33804,18 +33684,6 @@
     "shop": "redstore",
     "seen": "2026-09-20",
     "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/256GB Titanium Black",
-    "price": 379000,
-    "storage": 256,
-    "color": "Titanium Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb256gb-titanium-black",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    },
    {
     "id": "samsung-galaxy-s25-ultra",
@@ -33981,42 +33849,6 @@
    },
    {
     "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium Gray",
-    "price": 439000,
-    "storage": 512,
-    "color": "Titanium Gray",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-gray",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium Silver Blue",
-    "price": 439000,
-    "storage": 512,
-    "color": "Titanium Silver Blue",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-silver-blue-1",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Ultra 12GB/512GB Titanium White Silver",
-    "price": 439000,
-    "storage": 512,
-    "color": "Titanium White Silver",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-ultra-12gb512gb-titanium-white-silver",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-s25-ultra",
     "price": 590000,
     "title": "Samsung Galaxy S25 Ultra 12GB / 1TB Titanium Gray",
     "url": "https://ibolit.mobi/product/samsung-galaxy-s25-ultra-12gb-1tb-titanium-gray/",
@@ -34095,7 +33927,7 @@
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/781/800_1763403590-17-p-m-purple.png",
     "color": "Purple",
     "inStock": true,
-    "ram": null,
+    "ram": 12,
     "shop": "pixel",
     "seen": "2026-09-20"
    },
@@ -34108,7 +33940,7 @@
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/780/800_1763403492-17-p-m-grn.png",
     "color": "Green",
     "inStock": true,
-    "ram": null,
+    "ram": 12,
     "shop": "pixel",
     "seen": "2026-09-20"
    },
@@ -34121,7 +33953,7 @@
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/779/800_1763403404-17-p-mwht.png",
     "color": "White",
     "inStock": true,
-    "ram": null,
+    "ram": 12,
     "shop": "pixel",
     "seen": "2026-09-20"
    },
@@ -34134,7 +33966,7 @@
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/778/800_1763402103-17-pm-blue.png",
     "color": "Black",
     "inStock": true,
-    "ram": null,
+    "ram": 12,
     "shop": "pixel",
     "seen": "2026-09-20"
    },
@@ -34230,7 +34062,7 @@
     "image": "https://ibolit.mobi/wp-content/uploads/2026/06/17_peo_amx.jpg",
     "sku": "IBL:90619",
     "ram": null,
-    "color": null,
+    "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
    },
@@ -34317,7 +34149,7 @@
     "url": "https://vlv.am/en/Product/43520",
     "image": "https://vlv.am/public/uploads/images/12-06-2026/6a2c08c8037ba.webp",
     "storage": 128,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": "Gray",
     "shop": "vlv",
@@ -34342,7 +34174,7 @@
     "title": "Tablet Xiaomi Redmi Pad 2 9.7 4G 4/128GB Silver RU (2604ERP4DG)",
     "url": "https://eldorado.am/en/xiaomi-redmi-pad-2-9-7-4g-4-128gb-silver-ru-2604erp4dg",
     "storage": 128,
-    "ram": null,
+    "ram": 4,
     "inStock": true,
     "color": "Silver",
     "shop": "eldorado",
@@ -34487,7 +34319,7 @@
     "url": "https://vlv.am/en/Product/42447",
     "image": "https://vlv.am/public/uploads/images/28-11-2025/69294e5a0c706.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Gray",
     "shop": "vlv",
@@ -35375,7 +35207,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2025/09/ipafd7.jpg",
     "sku": "IBL:8000",
-    "ram": null,
+    "ram": 12,
     "color": "Green",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -35848,7 +35680,7 @@
     "image": "https://cdn.storech.com/uploads/products/000/000/000/000/021/913/800_1770063966-2sides.png",
     "color": "Gray",
     "inStock": true,
-    "ram": null,
+    "ram": 8,
     "shop": "pixel",
     "seen": "2026-09-20"
    }
@@ -41760,7 +41592,7 @@
     "url": "https://vlv.am/en/Product/44062",
     "image": "https://vlv.am/public/uploads/images/18-02-2026/6995a27ee4026.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -42132,7 +41964,7 @@
     "url": "https://vlv.am/en/Product/39890",
     "image": "https://vlv.am/public/uploads/images/29-05-2026/6a198deb9523b.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -42235,7 +42067,7 @@
     "url": "https://vlv.am/en/Product/36637",
     "image": "https://vlv.am/public/uploads/images/02-06-2026/6a1ed3e5c7072.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Titanium Purple",
     "shop": "vlv",
@@ -42274,7 +42106,7 @@
     "title": "Smartphone Google Pixel 10 Pro XL 16/256GB Obsidian",
     "url": "https://eldorado.am/en/google-pixel-10-pro-xl-16-256gb-obsidian",
     "storage": 256,
-    "ram": null,
+    "ram": 16,
     "inStock": true,
     "color": "Obsidian",
     "shop": "eldorado",
@@ -42304,7 +42136,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/08/xl.jpg",
     "sku": "IBL:90767",
-    "ram": null,
+    "ram": 16,
     "color": "Obsidian",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -43131,11 +42963,11 @@
     "price": 569000,
     "color": "Black Titanium",
     "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-16-pro",
@@ -43145,11 +42977,11 @@
     "price": 569000,
     "color": "White Titanium",
     "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-16-pro",
@@ -43159,11 +42991,11 @@
     "price": 569000,
     "color": "Natural Titanium",
     "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-16-pro",
@@ -43173,11 +43005,11 @@
     "price": 569000,
     "color": "Desert Titanium",
     "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
-    "esim": false,
     "inStock": true,
     "ram": null,
     "shop": "planet3d",
-    "seen": "2026-09-20"
+    "seen": "2026-09-20",
+    "esim": false
    },
    {
     "id": "apple-iphone-16-pro",
@@ -44254,7 +44086,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/06/1040.jpg",
     "sku": "IBL:90653",
-    "ram": null,
+    "ram": 12,
     "color": "Black",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -44266,7 +44098,7 @@
     "url": "https://vlv.am/en/Product/39881",
     "image": "https://vlv.am/public/uploads/images/28-06-2026/6a40fefe47fb9.webp",
     "storage": 512,
-    "ram": null,
+    "ram": 12,
     "inStock": true,
     "color": "Black",
     "shop": "vlv",
@@ -44696,7 +44528,7 @@
     "title": "Smartphone HONOR 200 8/256GB (5109BFKC) Emerald Green",
     "url": "https://eldorado.am/en/honor-200-8-256gb-5109bfkc-emerald-green",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Green",
     "shop": "eldorado",
@@ -45559,7 +45391,7 @@
     "title": "Lenovo IdeaPad 5 2-in-1 14IRU9 16/512GB (83DT006NRK) Notebook",
     "url": "https://eldorado.am/en/lenovo-ideapad-5-2-in-1-14iru9-16-512gb-83dt006nrk",
     "storage": 512,
-    "ram": null,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
@@ -45571,7 +45403,7 @@
     "title": "IdeaPad 5 2-in-1 14IRU9 16/1TB Integrated (83DT006QRK) Notebook",
     "url": "https://eldorado.am/en/ideapad-5-2-in-1-14iru9-16-1tb-integrated-83dt006qrk",
     "storage": 1024,
-    "ram": null,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
@@ -46045,7 +45877,7 @@
     "title": "Notebook Lenovo ThinkBOOK 16 G8 IRL 16/512GB (21SH008ART)",
     "url": "https://eldorado.am/en/lenovo-thinkbook-16-g8-irl-16-512gb-21sh008art",
     "storage": 512,
-    "ram": null,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
@@ -46546,6 +46378,7 @@
     "title": "Samsung Galaxy S25 Edge 12GB/256GB Titanium Icyblue",
     "price": 329000,
     "storage": 256,
+    "ram": 12,
     "color": "Titanium Icyblue",
     "url": "https://redstore.am/en/product/samsung-galaxy-s25-edge-12gb256gb-titanium-icyblue",
     "seeded": true,
@@ -46576,18 +46409,6 @@
     "shop": "redstore",
     "seen": "2026-09-20",
     "esim": false
-   },
-   {
-    "id": "samsung-galaxy-s25-edge",
-    "shop": "redstore",
-    "title": "Samsung Galaxy S25 Edge 12GB/512GB Titanium Jetblack",
-    "price": 409000,
-    "storage": 512,
-    "color": "Titanium Jetblack",
-    "url": "https://redstore.am/en/product/samsung-galaxy-s25-edge-12gb512gb-titanium-jetblack",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
    }
   ],
   "lenovo-v14-g4-iru": [
@@ -46655,7 +46476,7 @@
     "image": null,
     "storage": 512,
     "inStock": true,
-    "ram": null,
+    "ram": 16,
     "color": null,
     "shop": "planet3d",
     "seen": "2026-09-20"
@@ -47437,42 +47258,6 @@
    },
    {
     "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 6GB/128GB Black",
-    "price": 85000,
-    "storage": 128,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-black",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 6GB/128GB Peach Pink",
-    "price": 85000,
-    "storage": 128,
-    "color": "Peach Pink",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-peach-pink",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 6GB/128GB White",
-    "price": 85000,
-    "storage": 128,
-    "color": "White",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-6gb128gb-white",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a26",
     "shop": "ucom",
     "title": "Samsung Galaxy A26 5G 6GB 128GB Awesome Black",
     "price": 85900,
@@ -47618,35 +47403,12 @@
    {
     "id": "samsung-galaxy-a26",
     "shop": "redstore",
-    "title": "Samsung Galaxy A26 8GB/256GB Black",
-    "price": 109000,
-    "storage": 256,
-    "color": "Black",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-black",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "shop": "redstore",
     "title": "Samsung Galaxy A26 8GB/256GB Peach Pink",
     "price": 109000,
     "storage": 256,
+    "ram": 8,
     "color": "Peach Pink",
     "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-peach-pink",
-    "seeded": true,
-    "esim": false,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-a26",
-    "shop": "redstore",
-    "title": "Samsung Galaxy A26 8GB/256GB Mint",
-    "price": 109000,
-    "storage": 256,
-    "color": "Mint",
-    "url": "https://redstore.am/en/product/samsung-galaxy-a26-8gb256gb-mint",
     "seeded": true,
     "esim": false,
     "seen": "2026-09-20"
@@ -47721,7 +47483,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/08/61-uqovhk0l._ac_sl1500__1_1.webp",
     "sku": "IBL:90760",
-    "ram": null,
+    "ram": 8,
     "color": "Obsidian",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -50655,7 +50417,7 @@
     "image": null,
     "storage": 1024,
     "inStock": true,
-    "ram": null,
+    "ram": 16,
     "color": null,
     "shop": "planet3d",
     "seen": "2026-09-20"
@@ -50904,7 +50666,7 @@
     "image": null,
     "storage": 1024,
     "inStock": true,
-    "ram": null,
+    "ram": 16,
     "color": "Eclipse Black",
     "shop": "planet3d",
     "seen": "2026-09-20"
@@ -53188,7 +52950,7 @@
     "url": "https://vlv.am/en/Product/35848",
     "image": "https://vlv.am/public/uploads/images/15-06-2026/6a2fce52b714b.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -53247,36 +53009,6 @@
     "ram": 12,
     "color": "Titanium",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 12GB / 512GB Titanium",
-    "price": 192000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-12gb-512gb-titanium/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 12GB / 512GB Green",
-    "price": 192000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-12gb-512gb-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 12GB / 512GB Black",
-    "price": 192000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-12gb-512gb-black/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -55629,6 +55361,7 @@
     "title": "Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) Graphite Gray",
     "price": 142900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/tablet-redmi-pad-2-pro-8gb-256gb-ru-25099rp13g-graphite-gray",
     "seeded": true,
     "seen": "2026-09-20"
@@ -55639,6 +55372,7 @@
     "title": "Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) մանուշակագույն",
     "price": 142900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/tablet-xiaomi-redmi-pad-2-pro-8gb-256gb-ru-25099rp13g-purple",
     "seeded": true,
     "seen": "2026-09-20"
@@ -55650,7 +55384,7 @@
     "url": "https://vlv.am/en/Product/42592",
     "image": "https://vlv.am/public/uploads/images/20-11-2025/691ec68c5d5cf.webp",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "vlv",
@@ -56866,7 +56600,7 @@
     "title": "Smartphone HONOR X8B 8/128GB Glamorous Green (5109AYBM)",
     "url": "https://eldorado.am/en/honor-x8b-8-128gb-glamorous-green-5109aybm",
     "storage": 128,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Green",
     "shop": "eldorado",
@@ -56889,7 +56623,7 @@
     "title": "Smartphone HONOR X8B 8/256GB Midnight Black (5109AYBR)",
     "url": "https://eldorado.am/en/honor-x8b-8-256gb-midnight-black-5109aybr",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Midnight Black",
     "shop": "eldorado",
@@ -56902,7 +56636,7 @@
     "title": "Smartphone HONOR X8B 8/256GB Titanium Silver (5109AYBV)",
     "url": "https://eldorado.am/en/honor-x8b-8-256gb-titanium-silver-5109aybv",
     "storage": 256,
-    "ram": null,
+    "ram": 8,
     "inStock": true,
     "color": "Titanium Silver",
     "shop": "eldorado",
@@ -57042,6 +56776,7 @@
     "title": "Պլանշետ HONOR Pad X9a 8GB+256GB (5301AMUY) Gray",
     "price": 179900,
     "storage": 8,
+    "ram": 8,
     "url": "https://eldorado.am/en/honor-pad-x9a-8gb-256gb-5301amuy-gray",
     "seeded": true,
     "seen": "2026-09-20"
@@ -57064,6 +56799,7 @@
     "title": "Honor Pad X9a 8GB/256GB LTE Gray /5301AMUY",
     "price": 179990,
     "storage": 8,
+    "ram": 8,
     "url": "https://www.zigzag.am/am/honor-pad-x9a-8gb-256gb-lte-gray-5301amuy.html",
     "seeded": true,
     "seen": "2026-09-20"
@@ -59723,7 +59459,7 @@
     "title": "Laptop Lenovo IdeaPad Pro 5 16IRH8 16/512GB (83AQ0024RK)",
     "url": "https://eldorado.am/en/lenovo-ideapad-pro-5-16irh8-16-512gb-83aq0024rk",
     "storage": 512,
-    "ram": null,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
@@ -61008,16 +60744,6 @@
     "color": null,
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "dell-vostro-3520-i3",
-    "shop": "ibolit",
-    "title": "Dell Vostro 3520 i3 8GB 512GB",
-    "price": 169000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/dell-vostro-3520-i3-8gb-512gb/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "dell-vostro-3520-i5": [
@@ -61033,16 +60759,6 @@
     "ram": 8,
     "color": null,
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "dell-vostro-3520-i5",
-    "shop": "ibolit",
-    "title": "Dell Vostro 3520 i5 8GB 512GB",
-    "price": 216000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/dell-vostro-3520-i5-8gb-512gb/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -61827,16 +61543,6 @@
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x510",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X510 Gray",
-    "price": 164000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x510",
     "price": 165000,
     "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X510 Lavender",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-lavender/",
@@ -61861,26 +61567,6 @@
     "ram": 6,
     "color": "Mint",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x510",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X510 Mint",
-    "price": 165000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-mint/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x510",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X510 Lavender",
-    "price": 165000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x510-lavender/",
-    "seeded": true,
     "seen": "2026-09-20"
    },
    {
@@ -61923,36 +61609,6 @@
     "ram": 8,
     "color": "Silver",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x510",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X510 Silver",
-    "price": 203000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x510-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x510",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X510 Mint",
-    "price": 203000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x510-mint/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x510",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X510 Gray",
-    "price": 203000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x510-gray/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -62015,46 +61671,6 @@
    },
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X516 Silver",
-    "price": 209000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X516 Mint",
-    "price": 209000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-mint/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X516 Lavender",
-    "price": 209000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-lavender/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 6GB 128GB X516 Gray",
-    "price": 209000,
-    "storage": 128,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-6gb-128gb-x516-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
     "price": 246000,
     "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X516 Gray",
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-gray/",
@@ -62084,39 +61700,10 @@
    {
     "id": "samsung-galaxy-tab-s9-fe-x516",
     "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X516 Silver",
-    "price": 246000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X516 Lavender",
-    "price": 246000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-lavender/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
-    "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X516 Gray",
-    "price": 246000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-gray/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "shop": "ibolit",
     "title": "Samsung Galaxy Tab S9 FE 8GB 256GB X516 Mint",
     "price": 247000,
     "storage": 256,
+    "ram": 8,
     "url": "https://ibolit.mobi/product/samsung-galaxy-tab-s9-fe-8gb-256gb-x516-mint/",
     "seeded": true,
     "seen": "2026-09-20"
@@ -63362,26 +62949,6 @@
     "color": "Silver",
     "shop": "ibolit",
     "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-10a",
-    "shop": "ibolit",
-    "title": "Xiaomi Redmi 10A 2GB / 32GB Chrome Silver",
-    "price": 40000,
-    "storage": 32,
-    "url": "https://ibolit.mobi/product/xiaomi-redmi-10a-2gb-32gb-chrome-silver/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-redmi-10a",
-    "shop": "ibolit",
-    "title": "Xiaomi Redmi 10A 2GB / 32GB Black",
-    "price": 40000,
-    "storage": 32,
-    "url": "https://ibolit.mobi/product/xiaomi-redmi-10a-2gb-32gb-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
    }
   ],
   "poco-c75": [
@@ -63454,26 +63021,6 @@
     "ram": 8,
     "color": "Green",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-x5-5g",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco X5 5G 8GB / 256GB Green",
-    "price": 97000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-x5-5g-8gb-256gb-green/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-x5-5g",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco X5 5G 8GB / 256GB Blue",
-    "price": 97000,
-    "storage": 256,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-x5-5g-8gb-256gb-blue/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -63621,26 +63168,6 @@
    },
    {
     "id": "xiaomi-poco-f6-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 Pro 12GB / 512GB White",
-    "price": 236000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-12gb-512gb-white/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 Pro 12GB / 512GB Black",
-    "price": 236000,
-    "storage": 512,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-12gb-512gb-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6-pro",
     "price": 279000,
     "title": "Xiaomi Poco F6 Pro 16GB / 1TB White",
     "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-16gb-1tb-white/",
@@ -63665,26 +63192,6 @@
     "ram": 16,
     "color": "Black",
     "shop": "ibolit",
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 Pro 16GB / 1TB Black",
-    "price": 279000,
-    "storage": 1024,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-16gb-1tb-black/",
-    "seeded": true,
-    "seen": "2026-09-20"
-   },
-   {
-    "id": "xiaomi-poco-f6-pro",
-    "shop": "ibolit",
-    "title": "Xiaomi Poco F6 Pro 16GB / 1TB White",
-    "price": 279000,
-    "storage": 1024,
-    "url": "https://ibolit.mobi/product/xiaomi-poco-f6-pro-16gb-1tb-white/",
-    "seeded": true,
     "seen": "2026-09-20"
    }
   ],
@@ -64029,7 +63536,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/08/0.webp",
     "sku": "IBL:90764",
-    "ram": null,
+    "ram": 16,
     "color": "Jade",
     "shop": "ibolit",
     "seen": "2026-09-20"
@@ -64043,7 +63550,7 @@
     "inStock": true,
     "image": "https://ibolit.mobi/wp-content/uploads/2026/08/0-pixel-10-pro-porcelain-860_1764591046.webp",
     "sku": "IBL:90763",
-    "ram": null,
+    "ram": 16,
     "color": "Porcelain",
     "shop": "ibolit",
     "seen": "2026-09-20"

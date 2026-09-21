@@ -97,6 +97,14 @@ const capOf = s => {
   const m = String(s || '').match(/([\d.]+)\s*(TB|GB)/i);
   return m ? Math.round(parseFloat(m[1]) * (/tb/i.test(m[2]) ? 1024 : 1)) : null;
 };
+// pixel sells the SIM build as its own axis: the 256 GB iPhone 17 Pro Max is 514,000 as eSIM-only
+// and 559,000 with the nano tray, one capacity at two prices. Without reading it, capacity and
+// colour matched both variants and the ambiguity guard below refused every pixel iPhone there is.
+// Three states, as in scrape.mjs's simBuild: eSIM-only, a tray the shop named, or not stated.
+// pixel writes the tray build "Nano-SIM+eSIM", so the nano test has to run BEFORE the esim one.
+const simOf = v => !v ? undefined : /nano|dual/i.test(v) ? false
+  : /(^|[^a-z])e-?sim([^a-z]|$)/i.test(v) ? true : undefined;
+
 function buildPrice(html, f) {
   if (!BUILDS.some(h => f[4].includes(h))) return null;
   let vs = null;
@@ -115,7 +123,7 @@ function buildPrice(html, f) {
         // uniformly, which is what gave it away - a whole shop does not reprice by 10% overnight.
         const price = Math.round(Number(v.wholesalePrice) > 0 ? Number(v.wholesalePrice)
           : Number(v.salePrice) > 0 ? Number(v.salePrice) : Number(v.price));
-        return { price, stock: Number(v.quantity) > 0, cap: capOf(p.memory), color: p.color || '' };
+        return { price, stock: Number(v.quantity) > 0, cap: capOf(p.memory), color: p.color || '', sim: simOf(p['sim card']) };
       }).filter(v => v.price >= FLOOR);
     } catch { }
   }
@@ -133,6 +141,10 @@ function buildPrice(html, f) {
   const cap = Number(f[2]) || null, col = (f[3] || '').trim().toLowerCase();
   let hit = vs.filter(v => cap == null || v.cap === cap);
   if (col) { const c = hit.filter(v => v.color.toLowerCase() === col); if (c.length) hit = c; }
+  // A row that does not say which build it is stays ambiguous and is refused below - that is the
+  // right answer, not a gap: 514,000 and 559,000 are both this phone at this capacity.
+  const rsim = simOf(f[1]);
+  if (rsim !== undefined) { const c = hit.filter(v => v.sim === rsim); if (c.length) hit = c; }
   if (!hit.length) return null;
   // Several builds that all cost the same are not an ambiguity - there is nothing to disagree
   // about. Several at different prices are, and this tool does not guess between them.
@@ -334,16 +346,22 @@ for (let i = 0; i < todo.length; i++) {
 // reverts anything added meanwhile - a new shop's 262 rows went in during this very run and
 // would have vanished the moment it finished.
 if (!dry) {
+  // Keyed by the row's whole identity, not by shop and url. A url is NOT one row: a shop that
+  // prices each build separately sells four iPhone 17 Pro Maxes from one page, and keying on the
+  // url alone kept only the last of them in this map and then stamped its price onto all four -
+  // 949,000 and 714,000 and 559,000 all became 514,000, which is the flattening the capacity
+  // guard further up exists to prevent, arriving by the back door after that guard had passed.
+  const idOf = f => f.slice(0, 5).join('|');
   const changed = new Map();
   for (const f of todo) {
-    if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(f[0] + '|' + f[4], [f[5], f[8], null]);
-    else if (f.marked) changed.set(f[0] + '|' + f[4], [null, null, 'config']);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(idOf(f), [f[5], f[8], null]);
+    else if (f.marked) changed.set(idOf(f), [null, null, 'config']);
   }
   const now = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
   const merged = now.map((l, i) => {
     if (!i || !l.trim()) return l;
     const f = l.split(',');
-    const c = f.length > 5 && changed.get(f[0] + '|' + f[4]);
+    const c = f.length > 5 && changed.get(idOf(f));
     if (!c) return l;
     while (f.length < 9) f.push('');
     if (c[0] != null) { f[5] = c[0]; f[8] = c[1]; }
