@@ -43,6 +43,8 @@ PRODUCT = re.compile(r'https://www\.zigzag\.am/am/[a-z0-9][a-z0-9\-]*\.html')
 MAIN = re.compile(r'product-info-main(.*?)(?:</section>|<footer)', re.S | re.I)
 FINAL = re.compile(r'data-price-amount="([\d.]+)"\s+data-price-type="finalPrice"', re.I)
 TITLE = re.compile(r'<title>\s*(.*?)\s*(?:\s-\sZigzag)?\s*</title>', re.S | re.I)
+OGIMG = re.compile(r'property="og:image"[^>]+content="([^"]+)"', re.I)
+UNCACHE = re.compile(r'/cache/[0-9a-f]{32}/')
 
 
 def get(url):
@@ -92,12 +94,19 @@ for i, u in enumerate(urls, 1):
         gone += 1
         continue
     title = TITLE.search(html)
+    # The page is open anyway, and 48 products in this catalogue are sold by zigzag ALONE and have
+    # no photograph at all. og:image is the shop's own main shot; the url it gives points at
+    # Magento's resized copy under /cache/<32 hex>/, and the original sits beside it without that
+    # segment. Taken from the meta tag rather than the page body on purpose - a listing page also
+    # carries brand logos and neighbouring products, and one of those became a product photo twice.
+    og = OGIMG.search(html)
     rows.append({
         'url': u,
         'title': re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', title.group(1))).strip() if title else '',
         'price': round(float(price.group(1))),
         # Magento prints this on a page you cannot buy from
         'inStock': 'out-of-stock' not in html.lower(),
+        'image': UNCACHE.sub('/', og.group(1)) if og else None,
     })
     if i % 25 == 0:
         print(f'  {i}/{len(urls)}', flush=True)
