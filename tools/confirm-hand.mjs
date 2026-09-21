@@ -140,6 +140,22 @@ function buildPrice(html, f) {
   return { price: hit[0].price, how: hit[0].only ? 'pixel-cash' : 'pixel-builds', stock: hit[0].stock, only: !!hit[0].only };
 }
 
+// mobilecentre prints three figures on a product page and only one is what a person pays.
+// "Գին՝ 339,900դր." is the price; below it sit the monthly instalments over 36 and 24 months,
+// and the credit box repeats the same number under the heading "Ապառիկ գին" - so matching any
+// price-shaped figure takes whichever comes first, which is how the pixel reader inflated 73
+// offers by a tenth before it was caught. Read the one the shop labels Գին and nothing else,
+// and only inside the price block, because the page also carries neighbouring products.
+function mobilecentrePrice(html, f) {
+  if (!f[4].includes('mobilecentre.am')) return null;
+  const i = html.indexOf('price-block');
+  if (i < 0) return null;
+  const m = html.slice(i, i + 3000).match(/Գին[՝:]?[\s\S]{0,300}?([\d][\d,\s]{3,12})\s*դր/);
+  if (!m) return null;
+  const n = Number(String(m[1]).replace(/[^\d]/g, ''));
+  return n >= FLOOR ? { price: n, how: 'mobilecentre-cash', stock: true } : null;
+}
+
 function priceOf(html) {
   for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
@@ -184,7 +200,19 @@ function priceOf(html) {
 // shop writes the title, and telling a POCO from a Redmi is exactly what this has to do.
 const BRANDS = [...new Set(JSON.parse(fs.readFileSync('data/phones.json', 'utf8'))
   .map(p => String(p.brand || '').toLowerCase()).filter(b => b.length > 2)), 'poco', 'redmi'];
-const brandsIn = t => BRANDS.filter(b => String(t || '').toLowerCase().includes(b));
+// A shop writes "iPhone 17", not "Apple iPhone 17", so a check that looks for the word Apple
+// sees no brand at all and waves the page through. That is how a mobilecentre row for a Samsung
+// Galaxy Z Flip 7 FE kept a link to an iPhone page and was about to take its price.
+const FAMILY = { iphone: 'apple', ipad: 'apple', macbook: 'apple', airpods: 'apple',
+  imac: 'apple', airtag: 'apple', watch_ultra: 'apple',
+  galaxy: 'samsung', redmi: 'xiaomi', poco: 'xiaomi', pixel: 'google', thinkpad: 'lenovo',
+  ideapad: 'lenovo', vivobook: 'asus', zenbook: 'asus', rog: 'asus', magicbook: 'honor' };
+const brandsIn = t => {
+  const l = String(t || '').toLowerCase();
+  const out = BRANDS.filter(b => l.includes(b));
+  for (const [k, v] of Object.entries(FAMILY)) if (l.includes(k) && !out.includes(v)) out.push(v);
+  return out;
+};
 
 const CACHE = new Map();
 for (const [host, file] of CACHED) {
@@ -266,7 +294,20 @@ for (let i = 0; i < todo.length; i++) {
       else wrongLink.push([f[0], f[1], '(the page does not name it)', f[4]]);
       continue;
     }
-    p = buildPrice(html, f) || priceOf(html);
+    // The brand check used to run only on the two cached shops, where the listing hands us a
+    // title. A fetched page has one too - its h1 - and it catches the same fault: a mobilecentre
+    // row for a "Samsung Galaxy Z Flip 7 FE 128GB White" opens a page headed "iPhone 17
+    // (Nano-SIM & eSIM) 256GB White", and without this the iPhone's price went onto the Samsung.
+    // Only a page that names a brand can disagree; one that names none is judged as before.
+    const head = (html.match(/<h1[^>]*>([\s\S]{0,160}?)<\/h1>/i) || [])[1] || '';
+    if (head) {
+      const mine = brandsIn(f[1]), theirs = brandsIn(head.replace(/<[^>]+>/g, ' '));
+      if (mine.length && theirs.length && !mine.some(b => theirs.includes(b))) {
+        wrongLink.push([f[0], f[1], head.replace(/<[^>]+>/g, ' ').trim().slice(0, 44), f[4]]);
+        continue;
+      }
+    }
+    p = buildPrice(html, f) || mobilecentrePrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
     // url that five different Dyson colours point at - five rows, five prices, one page.
