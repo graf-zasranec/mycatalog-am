@@ -1186,6 +1186,15 @@ function screenOf(title, id) {
 // A product sold in exactly one capacity, or one colour, needs no shop to state it: there is
 // only one answer. 133 offers were showing no capacity for a product that has a single tier.
 const soleValue = list => { const v = [...new Set((list || []).filter(x => x != null))]; return v.length === 1 ? v[0] : null; };
+// A percent-encoded url has to be DECODED before its words can be read. istyle writes
+// ".../MacBook%20Air%20M5%2013.6%20%2016%20512GB", and stripping the punctuation out of that
+// leaves the "20" of each %20 stuck to the number after it: "2013" instead of "13", so the screen
+// size vanished and so did any colour spelled the same way.
+const urlWords = u => {
+  let s = String(u || '');
+  try { s = decodeURIComponent(s); } catch { /* a stray % is not a reason to lose the whole url */ }
+  return s.replace(/[^a-zA-Z0-9]+/g, ' ');
+};
 const enrich = (o) => ({
   ...o,
   storage: o.storage ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
@@ -1194,16 +1203,16 @@ const enrich = (o) => ({
   // nothing - both buttons showed the whole offer list, at one price. The title is often silent
   // about the screen but the URL slug is not ("macbook-pro-16-2-m5-max"), as with colour below.
   size: o.size ?? screenOf(o.title, o.id)
-    ?? screenOf(String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '), o.id),
+    ?? screenOf(urlWords(o.url), o.id),
   // iSpace titles name the colour in Armenian ("Սև", "Արծաթագույն") but every shop slugs the
   // English name into the product URL, so the slug is the reliable place to read it from.
   // Last resort, and it works surprisingly often: the shop names the colour in its own photo
   // filename ("...17-pro-orng-1.png"). pixel.am was the only adapter using this; every shop
   // that publishes an image gets it now, which is 32 more offers that can say what they are.
-  color: o.color ?? colorOf(o.title + ' ' + String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '), (phoneById[o.id] || {}).colors)
+  color: o.color ?? colorOf(o.title + ' ' + urlWords(o.url), (phoneById[o.id] || {}).colors)
     ?? (o.image ? colorFromImage(o.image, (phoneById[o.id] || {}).colors) : null)
     ?? soleValue((phoneById[o.id] || {}).colors)
-    ?? colorWords(String(o.url || '').replace(/[^a-zA-Z0-9]+/g, ' '))
+    ?? colorWords(urlWords(o.url))
 });
 
 /* ---------- shops ---------- */

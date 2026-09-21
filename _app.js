@@ -1418,8 +1418,16 @@ function visibleOffers(p) {
     o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
   }
   if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
-  // soft, like RAM: a listing that never says which screen is not evidence against either
-  if (SEL.size != null) o = o.filter(v => v.size == null || v.size === SEL.size);
+  // Strict, unlike RAM: a 14-inch and a 16-inch are different machines at different prices, so the
+  // button shows that screen's offers and nothing else - otherwise both buttons quote one number.
+  // Only where the product really is sold in more than one screen, though: on a single-screen
+  // laptop there is nothing to choose, and dropping an offer that merely never stated its size
+  // would throw away a real price for no gain.
+  const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
+  if (SEL.size != null) {
+    o = screens.size > 1 ? o.filter(v => v.size === SEL.size)
+                         : o.filter(v => v.size == null || v.size === SEL.size);
+  }
   if (SEL.band) o = o.filter(v => !v.band || v.band === SEL.band);
   // strict: an offer whose SIM build the shop never stated is not evidence for either button.
   // Treating "not stated" as "tray" put Pixel's 559 000 under Nano-SIM, below the 625 000 eSIM.
@@ -1456,7 +1464,11 @@ function detailView(p) {
   const summary = (L !== 'en' && V['s_' + L]) || p.summaryEn;
   const offs = visibleOffers(p);
   const lo = offs.length ? offs[0].price : null;
-  const variant = p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
+  // ...and within the chosen screen: an M5 Max's two variants differ ONLY by size, so ignoring it
+  // here always found the 14-inch and quoted its list price on the 16-inch page.
+  const variant = p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram
+      && (SEL.size == null || v.size == null || v.size === SEL.size))
+    || p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
   const shownPrice = lo ?? variant.priceAmd ?? p.priceAmd;
   // Every finish the maker lists. The picture follows the choice where a colour has its own
   // photo; where it does not, the main shot stays and the swatch still answers the real
@@ -1526,7 +1538,7 @@ function detailView(p) {
           ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
             <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ' — ' + esc(x('notSold'))}"
               class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
-          ${stors.length ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
+          ${stors.length > 1 ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
             <div class="bs">${simOpts.map(([n, want]) =>
