@@ -1029,7 +1029,9 @@ if (process.argv[2] === '--selftest') {
     ['apple macbook pro 14 2 m5 max 36gb ram 2tb', 14],
     ['MacBook Pro 15.3 M4', 15], ['MacBook Pro 14 M5 Pro', 14],
     ['MacBook Pro M5 Max 16GB RAM', undefined],   // a capacity is not a screen
-    ['MacBook Pro M5 512GB', undefined]];
+    ['MacBook Pro M5 512GB', undefined],
+    ['Macbook Air M5 16/512 MDHE4LLA Midnight', undefined],   // 16 GB of memory, not a 16" Air
+    ['Macbook Air M5 13 16/512 Midnight', 13]];               // ...and the screen still reads
   for (const [txt, want] of scrCases) {
     const got = screenOf(txt, LAP);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
@@ -1171,7 +1173,13 @@ function screenOf(title, id) {
   // Apple's real diagonals are 14.2 and 16.2, and a URL slug writes them "14-2" or "16-2" once
   // the punctuation is gone - so the decimal forms have to match a space or a dash too, and they
   // have to come first, or bare "14" would win and the lookahead would then reject it for the "2".
-  const m = String(title || '').match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\d))/i);
+  // "16/512" is 16 GB of memory and a 512 GB disk - the shops' own ram/storage notation - so a
+  // slash after the number rules it out as firmly as a "GB" does. ibolit's "Macbook Air M5 16/512"
+  // was being sold here as a 16-inch Air, a machine Apple has never made.
+  // A bare digit afterwards is NOT a reason to refuse any more: it was there to stop "14 2" being
+  // read as a plain 14, and the decimal forms above now match that case themselves, first. Keeping
+  // it also threw away "Macbook Air M5 13 16/512", where the 13 is exactly what we are after.
+  const m = String(title || '').match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/))/i);
   if (!m) return undefined;
   return Math.trunc(parseFloat(m[1].replace(/[\s-]/, '.')));
 }
@@ -2318,6 +2326,17 @@ for (const [id, list] of Object.entries(offers)) {
 if (outliers) console.log(`${outliers} price(s) dropped as scrape errors`);
 
 function medianOf(a) { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; }
+
+// A screen size that the product is not made in is a misread, and enrich() cannot correct it:
+// it only ever FILLS a null, so yesterday's wrong answer would outlive the fix that caught it.
+// The catalogue knows which screens each laptop comes in, so it can simply say no.
+let badSize = 0;
+for (const [id, list] of Object.entries(offers)) {
+  const made = new Set(((phoneById[id] || {}).variants || []).map(v => v.size).filter(v => v != null));
+  if (made.size < 1) continue;
+  for (const o of list) if (o.size != null && !made.has(o.size)) { delete o.size; badSize++; }
+}
+if (badSize) console.log(`${badSize} offer(s) claimed a screen size the product is not sold in - cleared`);
 
 let simDropped = 0;
 for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
