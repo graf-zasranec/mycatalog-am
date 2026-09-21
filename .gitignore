@@ -67,3 +67,8 @@ zigzag.rar
 
 # Per-shop checkpoint so a run that dies resumes instead of starting over. Regenerated daily.
 .scrape-partial.json
+
+# Points the playwright MCP at Brave, because Chrome is not installed on this machine and the
+# plugin's own definition asks for the "chrome" channel. Local to this machine, and the repo root
+# is the Pages publish root.
+.mcp.json
