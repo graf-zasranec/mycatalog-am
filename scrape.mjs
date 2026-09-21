@@ -1894,7 +1894,10 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // brings the physical nano tray only - so their listing never states a SIM build because there is
 // only one to state, and reading nothing is not the same as there being nothing to read.
 // A human's '!' still wins: this is a rule about a shop, and a rule can have an exception.
-const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace']);
+// viva, istore, vega and redstore import the same way, confirmed by the owner on 2026-09-21:
+// if their listing does not say otherwise in its own name, it is the nano tray.
+const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace',
+  'viva', 'istore', 'vega', 'redstore']);
 // Only where a SIM build means anything. A laptop has no tray to charge more for, and stamping
 // one on it would put a nano-SIM badge on a MacBook.
 const HAS_SIM = new Set(phones.filter(p => p.category === 'phone').map(p => p.id));
