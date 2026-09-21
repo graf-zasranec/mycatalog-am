@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-lVMq5LcD4Pf2DX/JzKmrdRD/yZ1gyummgHj5jbGFxCM='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fukoY3YX6zcBFtKNVwmVMjkMkEVehvXVriGv5N0J7XM=' 'sha256-FIjSHdUQFFJJIPSSoVUaPYZdlVFG5bW1YiG4agOSi20='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312151D'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E4574F'/%3E%3C/svg%3E">
 <meta name="description" content="Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ 1323 մոդել, 21 խանութի գներ դրամով, համեմատում և զտիչներ։">
@@ -922,6 +922,11 @@ a.store:hover .nm{color:var(--brand)}
   font-size:0.844rem;font-weight:600;cursor:pointer}
 .ofc:hover{border-color:var(--text)}
 .ofc.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+/* The colour row on the all-offers page is the same swatch the product page uses, so the two
+   pages ask the question the same way. .cs already draws and sizes them; the only difference is
+   that these sit in a filter row beside an "All" chip, so they need its 34px height and its gap. */
+.ofcs{display:inline-flex;gap:7px;flex-wrap:wrap;align-items:center}
+.ofcs button{width:34px;height:34px}
 @media (max-width:600px){.ofl{width:100%}}
 
 /* stock status on each offer */
@@ -2796,8 +2801,12 @@ function offersView(p) {
   const sims = [...new Set(all.map(o => o.esim === true ? 'e' : o.esim === false ? 'n' : '?'))]
     .sort((a, b) => 'ne?'.indexOf(a) - 'ne?'.indexOf(b));
   // This page is where every colour a shop lists is visible, unlike the product page which shows
-  // one row per build - so here the colour is worth choosing by.
-  const cols = [...new Set(all.map(o => o.color).filter(Boolean))].sort();
+  // one row per build - so here the colour is worth choosing by. The list comes from the
+  // CATALOGUE, not from the offers: the iPhone 17 Pro Max is sold in Cosmic Orange, Deep Blue and
+  // Silver, and reading the offers instead also offered "Black" and "Blue" - one row each, both
+  // pixel's own words for a phone Apple does not make in either. A filter is a promise that the
+  // thing exists.
+  const cols = (p.colors || []).filter(c => all.some(o => o.color === c));
   // a group is only drawn when there are two values to pick between, so that is also the test
   // for whether a choice carried over from the product page can be shown - and un-shown.
   const two = a => a.length > 1 ? a : [];
@@ -2832,7 +2841,11 @@ function offersView(p) {
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
       ${chips('size', sizes, t('f.screen'), inch)}
       ${chips('esim', sims, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
-      ${chips('color', cols, t('f.color'))}
+      ${cols.length < 2 ? '' : `<div class="ofg"><span class="ofl">${esc(t('f.color'))}</span>
+        <button class="ofc${OSEL.color === '' ? ' on' : ''}" data-of="color" data-ofv="">${esc(x('any'))}</button>
+        <span class="cs ofcs">${cols.map(c => `<button data-of="color" data-ofv="${esc(c)}" style="--c:${swatch(c)}"
+          title="${esc(c)}" aria-label="${esc(c)}" aria-pressed="${OSEL.color === c}"
+          class="${OSEL.color === c ? 'on' : ''}"></button>`).join('')}</span></div>`}
       <!-- the chip label is the shop's English word; the page is not -->
     </div>
     <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>

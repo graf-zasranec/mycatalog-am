@@ -897,6 +897,11 @@ a.store:hover .nm{color:var(--brand)}
   font-size:0.844rem;font-weight:600;cursor:pointer}
 .ofc:hover{border-color:var(--text)}
 .ofc.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+/* The colour row on the all-offers page is the same swatch the product page uses, so the two
+   pages ask the question the same way. .cs already draws and sizes them; the only difference is
+   that these sit in a filter row beside an "All" chip, so they need its 34px height and its gap. */
+.ofcs{display:inline-flex;gap:7px;flex-wrap:wrap;align-items:center}
+.ofcs button{width:34px;height:34px}
 @media (max-width:600px){.ofl{width:100%}}
 
 /* stock status on each offer */

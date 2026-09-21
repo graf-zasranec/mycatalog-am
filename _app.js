@@ -1760,8 +1760,12 @@ function offersView(p) {
   const sims = [...new Set(all.map(o => o.esim === true ? 'e' : o.esim === false ? 'n' : '?'))]
     .sort((a, b) => 'ne?'.indexOf(a) - 'ne?'.indexOf(b));
   // This page is where every colour a shop lists is visible, unlike the product page which shows
-  // one row per build - so here the colour is worth choosing by.
-  const cols = [...new Set(all.map(o => o.color).filter(Boolean))].sort();
+  // one row per build - so here the colour is worth choosing by. The list comes from the
+  // CATALOGUE, not from the offers: the iPhone 17 Pro Max is sold in Cosmic Orange, Deep Blue and
+  // Silver, and reading the offers instead also offered "Black" and "Blue" - one row each, both
+  // pixel's own words for a phone Apple does not make in either. A filter is a promise that the
+  // thing exists.
+  const cols = (p.colors || []).filter(c => all.some(o => o.color === c));
   // a group is only drawn when there are two values to pick between, so that is also the test
   // for whether a choice carried over from the product page can be shown - and un-shown.
   const two = a => a.length > 1 ? a : [];
@@ -1796,7 +1800,11 @@ function offersView(p) {
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
       ${chips('size', sizes, t('f.screen'), inch)}
       ${chips('esim', sims, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
-      ${chips('color', cols, t('f.color'))}
+      ${cols.length < 2 ? '' : `<div class="ofg"><span class="ofl">${esc(t('f.color'))}</span>
+        <button class="ofc${OSEL.color === '' ? ' on' : ''}" data-of="color" data-ofv="">${esc(x('any'))}</button>
+        <span class="cs ofcs">${cols.map(c => `<button data-of="color" data-ofv="${esc(c)}" style="--c:${swatch(c)}"
+          title="${esc(c)}" aria-label="${esc(c)}" aria-pressed="${OSEL.color === c}"
+          class="${OSEL.color === c ? 'on' : ''}"></button>`).join('')}</span></div>`}
       <!-- the chip label is the shop's English word; the page is not -->
     </div>
     <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>
