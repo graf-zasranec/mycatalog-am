@@ -21,6 +21,10 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 CUT = ROOT / 'images' / 'cut'
 FLOOR = 600
+# ...except for products nobody is looking at: a popularity under 10 is a handful of views a
+# month, and there a 500px picture beats the grey box that is there instead. Owner's call,
+# 2026-09-21. Kept in step with tools/cutout.py, which decides what actually gets matted.
+LOW_FLOOR, LOW_POP = 500, 50
 
 phones = json.loads((ROOT / 'data' / 'phones.json').read_text(encoding='utf8'))
 prices = json.loads((ROOT / 'data' / 'prices.json').read_text(encoding='utf8'))['offers']
@@ -44,7 +48,7 @@ for p in phones:
     except Exception:
         rows.append(('unreadable', p, 0, shops))
         continue
-    if w < FLOOR:
+    if w < (LOW_FLOOR if (p.get('popularity', 100) or 100) < LOW_POP else FLOOR):
         rows.append(('too small', p, w, shops))
 
 # the biggest sellers first: a missing photo costs more on a product people actually look at

@@ -3,19 +3,9 @@
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1323,
- "missing": 61,
- "tooSmall": 64,
+ "missing": 60,
+ "tooSmall": 62,
  "products": [
-  {
-   "id": "xiaomi-redmi-note-15-pro-plus-5g",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 15 Pro Plus 5G",
-   "category": "phone",
-   "shops": 5,
-   "query": "Xiaomi Redmi Note 15 Pro Plus 5G",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "honor-choice-ros-me01",
    "brand": "Honor",
@@ -634,17 +624,7 @@
    "shops": 3,
    "query": "JBL Clip 4",
    "what": "too small",
-   "width": 369
-  },
-  {
-   "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
-   "brand": "Apple",
-   "name": "iPad Air 11 Wi-Fi + Cellular 2024",
-   "category": "tablet",
-   "shops": 2,
-   "query": "Apple iPad Air 11 Wi-Fi + Cellular 2024",
-   "what": "too small",
-   "width": 510
+   "width": 565
   },
   {
    "id": "apple-watch-series-12-gps-42mm",
@@ -934,7 +914,7 @@
    "shops": 1,
    "query": "ASUS VivoBook X1504VA-NJ451",
    "what": "too small",
-   "width": 459
+   "width": 526
   },
   {
    "id": "bose-soundsport-free",
@@ -965,16 +945,6 @@
    "query": "Bose SoundTouch 10",
    "what": "too small",
    "width": 485
-  },
-  {
-   "id": "dji-mavic-3-pro",
-   "brand": "DJI",
-   "name": "Mavic 3 Pro",
-   "category": "drone",
-   "shops": 1,
-   "query": "DJI Mavic 3 Pro",
-   "what": "too small",
-   "width": 517
   },
   {
    "id": "dyson-zone-absoluteplus",

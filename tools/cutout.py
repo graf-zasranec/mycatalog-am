@@ -33,6 +33,18 @@ try:
         _cat[_p['id']] = _p.get('category', 'phone')
 except Exception:
     pass
+# Popularity comes from the same phones.json already loaded above for the category.
+_pop = {}
+try:
+    import json as _json
+    for _p in _json.loads((ROOT / 'data' / 'phones.json').read_text(encoding='utf-8')):
+        _pop[_p['id']] = _p.get('popularity', 100)
+except Exception:
+    pass
+FLOOR, LOW_FLOOR, LOW_POP = 600, 500, 50
+def floor_for(filename):
+    return LOW_FLOOR if _pop.get(filename.split('__')[0], 100) < LOW_POP else FLOOR
+
 def solid_product(filename):
     return _cat.get(filename.split('__')[0], '') in SOLID_CATS
 
@@ -207,10 +219,24 @@ def main():
     if skipped:
         print(f'{skipped} already cut by this pipeline, {len(todo)} to go', flush=True)
 
-    # A source below the 600px floor costs a minute and a half to matte and is then reported as
-    # too small anyway, so it is passed over until a bigger original turns up. The file STAYS in
+    # A source below the floor costs a minute and a half to matte and is then reported as too
+    # small anyway, so it is passed over until a bigger original turns up. The file STAYS in
     # images/_src: it is the record of the best anyone publishes today, and the day a press page
     # offers something larger this picks it up again. --small mattes them regardless.
+    #
+    # The floor is 600px, except for products nobody is looking at, where a 500px picture beats
+    # the grey box that is there now - which is the real comparison, not 500px against 600px.
+    # Owner's call, 2026-09-21. The threshold is 50 and not something lower because popularity is
+    # a DEFAULT of 40 on 1126 of the 1323 entries: it marks the products somebody has rated as
+    # popular rather than measuring the rest, so anything under 50 means "not singled out". The
+    # 102 entries rated 60 and above keep the 600px bar. It is still a floor and not a licence to
+    # enlarge - nothing is upscaled, here or anywhere.
+    #
+    # TEMPORARY. The owner set this to get pictures onto pages that have none today, and means to
+    # come back to it once the catalogue is filled in - both to raise the floor again and to fix
+    # the popularity field itself, which cannot currently express "nobody looks at this" because
+    # 1126 of 1323 entries carry the same default. Raise LOW_POP back toward 10, or drop
+    # LOW_FLOOR entirely, once the products below 600px have a larger original.
     if '--small' not in sys.argv:
         big, small = [], []
         for f in todo:
@@ -219,9 +245,9 @@ def main():
             except Exception:
                 big.append(f)
                 continue
-            (big if max(w, h) >= 600 else small).append(f)
+            (big if max(w, h) >= floor_for(f) else small).append(f)
         if small:
-            print(f'{len(small)} source(s) under 600px passed over (--small to matte them anyway): '
+            print(f'{len(small)} source(s) under the floor passed over (--small to matte them anyway): '
                   + ', '.join(os.path.splitext(x)[0] for x in small[:6])
                   + (f' +{len(small) - 6} more' if len(small) > 6 else ''), flush=True)
         todo = big
