@@ -1992,8 +1992,6 @@ function detailView(p) {
           </div>
         </div>
         ${compareWithHTML(p)}
-        ${offs.length ? `<div class="pbar"><b class="num">${money(lo)} ֏</b><span>${esc(shopName(offs[0].shop))}</span>
-          <a href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))} →</a></div>` : ''}
       </div>
     </div>
 
@@ -2562,7 +2560,6 @@ function render(keepScroll) {
   mh.innerHTML = home ? mastHero() : '';
   if (home) requestAnimationFrame(dealEdges);
   if (restoreY !== null) window.scrollTo(0, restoreY);
-  document.body.classList.toggle('has-pbar', !!main.querySelector('.pbar'));
   paintHist();
   moneyFx();
 }
