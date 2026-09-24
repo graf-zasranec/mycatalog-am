@@ -221,6 +221,22 @@ function cutMap(inline, small) {
   return m;
 }
 
+// The stylesheet must balance. One brace left open by a merge put every rule after it inside
+// "@media (max-width:760px)", and the whole desktop site shipped unstyled; one stray "}" makes a
+// browser drop the rule after it. Neither shows up as an error anywhere - so the build refuses.
+{
+  const s = rd('_shell.html'), css = s.slice(s.indexOf('<style>'), s.indexOf('</style>'))
+    .replace(/\/\*[\s\S]*?\*\//g, c => c.replace(/[^\n]/g, ' ')).replace(/"[^"\n]*"|'[^'\n]*'/g, q => q.replace(/[{}]/g, ' '));
+  const base = s.slice(0, s.indexOf('<style>')).split('\n').length - 1;
+  let depth = 0, line = 1, opened = [];
+  for (const c of css) {
+    if (c === '\n') line++;
+    if (c === '{') opened.push(line + base), depth++;
+    if (c === '}') { if (!depth) { console.error(`build: _shell.html line ${line + base} closes a block that was never opened`); process.exit(1); } depth--; opened.pop(); }
+  }
+  if (depth) { console.error(`build: _shell.html line ${opened.pop()} opens a block that is never closed`); process.exit(1); }
+}
+
 // One check: pull the real tr() out of _app.js and prove the dictionary fires.
 // If a term stops matching (bad boundary, key typo) the build fails here, not in the browser.
 {
@@ -416,7 +432,7 @@ function build({ inline, standalone }) {
   // a file somebody mails or pastes has nothing to fetch from.
   const lazy = !inline;
   let appJs = '\n'
-    + `const DATA=${JSON.stringify(phones.map(({ summaryEn, ...p }) => p))};\nconst STR=${JSON.stringify(STR)};\n`
+    + `const DATA=${JSON.stringify(phones.map(({ summaryEn, sources, ...p }) => p))};\nconst STR=${JSON.stringify(STR)};\n`
     + (lazy ? 'let HISTORY={points:{}};\nconst LAZYDATA=true;\n'
             : `const HISTORY=${JSON.stringify(HISTORY)};\nconst LAZYDATA=false;\n`)
     // Wrapping this in JSON.parse was tried and measured: 268 ms to interactive against 294 ms
