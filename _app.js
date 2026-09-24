@@ -1024,15 +1024,17 @@ function filterBar() {
   // folded bar still shows the question that matters most. Shop and anything else askable follow.
   const order = [...new Set([...(ASK[st.cat] || []), ...Object.keys(FILT)])].filter(k => k !== 'brand');
   for (const k of order) if (FILT[k]) h += fdrop(k, pool);
+  // "All filters" sits in the row it opens, styled like "More sections" above it. Folding hides
+  // the extra filters, never this button (see .fbar.folded > .fmore).
+  const nf = activeFilterCount();
+  h += `<button class="fmore cmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
+    ${esc(st.fopen ? x('filtersHide') : x('filtersShow'))}${nf ? ` <b>${nf}</b>` : ''}
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`;
   h += `<span class="spacer"></span>`;
   h += drop('sort', `${t('sort.label')}: ${sortLabel(st.sort)}`, sortKeys().map(s =>
     `<label class="opt"><input type="radio" name="r-sort" data-f="sort" value="${s}"><span>${esc(sortLabel(s))}</span></label>`).join(''), true);
-  // The button sits OUTSIDE the bar it folds, so folding cannot hide it.
-  const n = activeFilterCount();
   return h + `<div class="fsheet-ft"><button type="button" class="fsclr" data-rm="all">${esc(t('common.reset'))}</button><button type="button" class="fsgo" id="fsgo" data-fsgo="1">${esc(x('showN').replace('{n}', results().length))}</button></div>`
-    + `</div><button class="fmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
-    ${esc(st.fopen ? x('filtersHide') : x('filtersShow'))}${n ? ` <b>${n}</b>` : ''}
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`;
+    + `</div>`;
 }
 // how many filters are actually narrowing the list right now - shown on the button so a folded
 // bar can never hide the fact that something is filtering
@@ -1427,8 +1429,11 @@ function catTabs() {
   // six biggest are shown, plus whichever one you are standing in, so the tab you are on is never
   // the one that got hidden.
   const live = cats.filter(c => n(c) > 0 || st.cat === c);
-  const few = new Set([...live].sort((a, b) => n(b) - n(a)).slice(0, CAT_SHOWN));
-  if (st.cat) few.add(st.cat);
+  const cap = CAT_SHOWN[st.lang] || 5;
+  const top = [...live].sort((a, b) => n(b) - n(a)).slice(0, cap);
+  // the section you are in takes the last place rather than adding one, so the row never grows
+  if (st.cat && !top.includes(st.cat)) top[cap - 1] = st.cat;
+  const few = new Set(top);
   const shown = live.filter(c => few.has(c));
   const rest = live.length - shown.length;
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
@@ -1441,8 +1446,9 @@ function catTabs() {
     + `</nav>`;
 }
 const catName = c => (X[st.lang].cats && X[st.lang].cats[c]) || c;
-// Six fills one row at every width this site is read at, and leaves the grid on screen.
-const CAT_SHOWN = 6;
+// How many sections fit one row beside "More sections": Armenian and Russian names run longer
+// than English (owner, 2026-09-24: 6 in English, 5 in Armenian and Russian).
+const CAT_SHOWN = { en: 6, hy: 5, ru: 5 };
 function catalogView() {
   // The hero carries the h1 on the front page. Every other catalogue screen - a category, a
   // search - had no h1 at all, and the one heading it did have said "Catalog" while the browser
@@ -2556,6 +2562,8 @@ function render(keepScroll) {
   }
   else {
     main.innerHTML = catalogView(); refresh();
+    // the section row scrolls sideways; the one you are in may sit past the edge or under "More"
+    const on = $('.ctabs .on'); if (on) on.parentNode.scrollLeft = on.offsetLeft - on.parentNode.offsetLeft - 14;
     document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'Better.am';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back

@@ -184,7 +184,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ---- filters fold away: eleven chips above the results is most of a phone screen ---- */
 .fbar.folded > :nth-child(n+6){display:none}   /* folded still shows the first four (child 1 is the sheet head) */
-.fbar.folded > .spacer,.fbar.folded > [data-drop="sort"]{display:inline-flex}
+.fbar.folded > .spacer,.fbar.folded > [data-drop="sort"],.fbar.folded > .fmore{display:inline-flex}
+/* "All filters" in the filter row, the same pill as "More sections" at the filters' height */
+.fbar .cmore{height:42px;margin:0;font-size:0.9375rem;font-weight:600}
 .fsheet-hd,.fsheet-ft,.mbar,.fscrim{display:none}
 .fsearch{width:100%;height:36px;border:1px solid var(--line2);border-radius:var(--r-sm);background:var(--bg);color:var(--text);
   padding:0 11px;font:inherit;font-size:0.875rem;margin-bottom:6px;position:sticky;top:-8px;z-index:1}
@@ -466,14 +468,18 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (max-width:640px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .ccard{padding:13px 14px;font-size:0.9375rem}
   .ccard b{min-width:0;overflow-wrap:anywhere}}
-.ctabs{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:22px 0 4px}
+.ctabs{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;align-items:center;margin:22px 0 4px}
+.ctabs::-webkit-scrollbar{display:none}
+.ctabs .ctab{flex:none}
+/* one row in every language: the tabs scroll under "More sections", which stays in view */
+.ctabs .cmore{flex:none;position:sticky;right:0;margin-left:auto;background:var(--bg);box-shadow:-14px 0 10px var(--bg)}
 .ctabs .ctab{display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 15px;border-radius:var(--pill);
   border:1px solid var(--line);background:var(--surface);color:var(--body);font-weight:600;font-size:0.9375rem;
   transition:border-color .12s,color .12s,background .12s}
 .ctabs .ctab:hover{border-color:var(--line2);color:var(--text)}
 .ctabs .ctab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
 .ctabs .ctab b{font-weight:600;font-size:0.8125rem;opacity:.6}
-.ctabs .cmore{height:38px;margin:0;text-decoration:none}
+.ctabs .cmore{height:38px;text-decoration:none}
 @media (max-width:640px){.ctabs .cmore{height:34px}}
 @media (max-width:640px){.ctabs{gap:5px;margin-top:16px}.ctabs .ctab{height:34px;padding:0 12px;font-size:0.875rem}}
 /* No overflow here: overflow-x:auto makes overflow-y compute to auto too, which clipped every
@@ -1210,6 +1216,7 @@ a.store:hover .nm{color:var(--brand)}
   .ctabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:12px -14px 0;padding:2px 14px 4px;scroll-snap-type:x proximity;scroll-padding-inline:14px}
   .ctabs::-webkit-scrollbar{display:none}
   .ctabs .ctab,.ctabs .cmore{flex:none;scroll-snap-align:start}
+  .ctabs .cmore{position:static;box-shadow:none;margin-left:0}
   .mbar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:40;background:var(--bg);
     margin:10px -14px 0;padding:8px 14px;border-bottom:1px solid var(--line)}
   .mbar-f{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:var(--pill);border:1px solid var(--line2);
@@ -1217,7 +1224,7 @@ a.store:hover .nm{color:var(--brand)}
   .mbar-f svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
   .mbar-f b{min-width:19px;height:19px;border-radius:10px;background:var(--brand);color:var(--brand-ink);font-size:11px;display:inline-grid;place-items:center}
   .mbar-n{margin-left:auto;color:var(--muted);font-size:13px}
-  .fbar,.fmore{display:none}
+  .fbar{display:none}
   html.fs-open{overflow:hidden}
   html.fs-open .fscrim{display:block;position:fixed;inset:0;background:rgba(10,12,18,.42);z-index:89}
   html.fs-open .fbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:90;margin:0;max-height:88vh;overflow-y:auto;
@@ -1225,7 +1232,7 @@ a.store:hover .nm{color:var(--brand)}
     animation:sheetin .28s cubic-bezier(.2,.8,.2,1)}
   html.fs-open .fbar.folded > *{display:block}
   html.fs-open .fbar > .fsheet-hd,html.fs-open .fbar > .fsheet-ft{display:flex}
-  html.fs-open .fbar .spacer{display:none}
+  html.fs-open .fbar .spacer,html.fs-open .fbar > .fmore{display:none}
   .fbar .fsheet-hd{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:2;
     background:var(--surface);padding:14px 0 10px;border-bottom:1px solid var(--line);font-size:17px}
   .fsheet-hd button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line2);background:none;color:var(--text);font-size:20px;line-height:1;cursor:pointer}
