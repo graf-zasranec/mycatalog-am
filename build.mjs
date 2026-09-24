@@ -299,13 +299,13 @@ const offerOf = p => {
 const SEO = {
   url: SITE,
   img: 'images/cut/' + (phones.find(p => fs.existsSync(`${CUT}/${p.id}__main.webp`)) || phones[0]).id + '__main.webp',
-  title: `Better — ${phones.length} սարքի գներ Հայաստանի խանութներում`,
+  title: `Better.am — ${phones.length} սարքի գներ Հայաստանի խանութներում`,
   desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
       + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
   ld: {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Better',
+    name: 'Better.am',
     // the 50 most popular: every product now has its own page, which is where a crawler finds it
     numberOfItems: Math.min(50, phones.length),
     itemListElement: phones.slice().sort((a, b) => (b.popularity || 0) - (a.popularity || 0)).slice(0, 50).map((p, i) => ({
@@ -362,7 +362,7 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="description" content="${SEO.desc}">
 <link rel="canonical" href="${SEO.url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Better">
+<meta property="og:site_name" content="Better.am">
 <meta property="og:locale" content="hy_AM">
 <meta property="og:locale:alternate" content="ru_RU">
 <meta property="og:locale:alternate" content="en_US">
@@ -389,7 +389,7 @@ const HEAD_CLOSE = `</head><body>
 // the real one in. _app.js overwrites document.title per route, so this is what a crawler and
 // the first paint see, and it is the line a search result prints.
 function seoTitle(shell) {
-  return shell.replace('<title>Better</title>', `<title>${SEO.title}</title>`);
+  return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`);
 }
 
 function splitShell(shell) {
@@ -525,7 +525,7 @@ const catLabel = c => CATS[c] || c;
 // Armenian plural is the bare noun after any number, so one form is correct for all of them.
 const DESC = p => {
   const n = shopsOf(p);
-  return n ? `Գինը՝ ${amd(bestOf(p))}-ից, ${n} խանութի գների համեմատություն Better-ում։`
+  return n ? `Գինը՝ ${amd(bestOf(p))}-ից, ${n} խանութի գների համեմատություն Better.am-ում։`
     : 'Այս պահին հայկական խանութներում առկա չէ։';
 };
 // lowest price of the last 30 days, from the history the nightly crawl keeps
@@ -577,7 +577,7 @@ const HEAD = ({ title, desc, url, img, ld }) => `<!doctype html>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Better">
+<meta property="og:site_name" content="Better.am">
 <meta property="og:locale" content="hy_AM">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
@@ -602,15 +602,15 @@ for (const p of phones) {
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Product', name: nameOf(p), brand: { '@type': 'Brand', name: p.brand },
       category: cat, image: img, url, offers: offerOf(p) },
-    crumbs([['Better', SITE], [catLabel(cat), catUrl], [nameOf(p), url]]),
+    crumbs([['Better.am', SITE], [catLabel(cat), catUrl], [nameOf(p), url]]),
   ];
-  const page = HEAD({ title: `${nameOf(p)} — գինը Հայաստանում | Better`, desc: DESC(p), url, img, ld }) + `
-<header><a href="../../">Better</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better</a> › <a href="../../c/${cat}/">${esc(catLabel(cat))}</a> › <span>${esc(nameOf(p))}</span></nav>
+  const page = HEAD({ title: `${nameOf(p)} — գինը Հայաստանում | Better.am`, desc: DESC(p), url, img, ld }) + `
+<header><a href="../../">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <a href="../../c/${cat}/">${esc(catLabel(cat))}</a> › <span>${esc(nameOf(p))}</span></nav>
 <main>
 <h1>${esc(nameOf(p))}</h1>
 <p class="lead">${lo != null ? `${esc(nameOf(p))}-ի գինը Հայաստանում՝ ${amd(lo)}-ից, ${shopsOf(p)} խանութում։${hi > lo ? ` Ամենաթանկ առաջարկը՝ ${amd(hi)}։` : ''}${low != null && low < lo ? ` Վերջին 30 օրվա ամենացածր գինը՝ ${amd(low)}։` : ''}` : esc(DESC(p))}</p>
-<a class="go" href="../../#/p/${p.id}">Համեմատել Better-ում</a>
+<a class="go" href="../../#/p/${p.id}">Համեմատել Better.am-ում</a>
 ${shot ? `<img class="shot" src="${shot}" alt="${esc(nameOf(p))}" width="360" height="360">` : ''}
 ${offs.length ? `<h2>Գները խանութներում</h2>
 <div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
@@ -632,15 +632,15 @@ for (const c of cats) {
   const list = phones.filter(p => catOf(p) === c && offersOf(p).length)
     .sort((a, b) => (b.popularity || 0) - (a.popularity || 0) || bestOf(a) - bestOf(b));
   const url = `${SITE}c/${c}/`;
-  const title = `${catLabel(c)} — գները Հայաստանի խանութներում | Better`;
-  const desc = `${list.length} մոդել, ${amd(Math.min(...list.map(bestOf)))}-ից։ Համեմատիր գները Հայաստանի խանութներում Better-ում։`;
-  const page = HEAD({ title, desc, url, img: SITE + SEO.img, ld: [crumbs([['Better', SITE], [catLabel(c), url]])] }) + `
-<header><a href="../../">Better</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better</a> › <span>${esc(catLabel(c))}</span></nav>
+  const title = `${catLabel(c)} — գները Հայաստանի խանութներում | Better.am`;
+  const desc = `${list.length} մոդել, ${amd(Math.min(...list.map(bestOf)))}-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։`;
+  const page = HEAD({ title, desc, url, img: SITE + SEO.img, ld: [crumbs([['Better.am', SITE], [catLabel(c), url]])] }) + `
+<header><a href="../../">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <span>${esc(catLabel(c))}</span></nav>
 <main>
 <h1>${esc(catLabel(c))}</h1>
 <p class="lead">${esc(desc)}</p>
-<a class="go" href="../../#/c/${c}">Զտել և համեմատել Better-ում</a>
+<a class="go" href="../../#/c/${c}">Զտել և համեմատել Better.am-ում</a>
 <h2>Մոդելներ և գներ</h2>
 <ul class="pl">${list.map(p => `<li><a href="../../p/${p.id}/">${esc(nameOf(p))}</a><span>${amd(bestOf(p))}-ից</span></li>`).join('\n')}</ul>
 <p class="upd">${today.split('-').reverse().join('.')}</p>
@@ -665,6 +665,8 @@ const bodyHTML = list => {
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>\n';
     inList = li;
+    const fig = /^!fig:(images\/blog\/[\w.-]+)\|(.*)$/.exec(s);
+    if (fig) { html += `<figure style="margin:20px 0"><img src="../../${fig[1]}" alt="${esc(fig[2])}" style="width:100%;height:auto;border-radius:12px"><figcaption style="font-size:13px;color:#626974;margin-top:6px">${esc(fig[2])}</figcaption></figure>\n`; continue; }
     html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>\n` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>\n`;
   }
   return html + (inList ? '</ul>\n' : '');
@@ -672,10 +674,10 @@ const bodyHTML = list => {
 if (BLOG.length) {
   const bUrl = `${SITE}b/`;
   fs.mkdirSync('b', { recursive: true });
-  fs.writeFileSync('b/index.html', HEAD({ title: 'Բլոգ | Better', desc: 'Հոդվածներ գների, համեմատման և տեխնիկայի ընտրության մասին։', url: bUrl, img: SITE + SEO.img,
-    ld: [crumbs([['Better', SITE], ['Բլոգ', bUrl]])] }) + `
-<header><a href="../">Better</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../">Better</a> › <span>Բլոգ</span></nav>
+  fs.writeFileSync('b/index.html', HEAD({ title: 'Բլոգ | Better.am', desc: 'Հոդվածներ գների, համեմատման և տեխնիկայի ընտրության մասին։', url: bUrl, img: SITE + SEO.img,
+    ld: [crumbs([['Better.am', SITE], ['Բլոգ', bUrl]])] }) + `
+<header><a href="../">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="../">Better.am</a> › <span>Բլոգ</span></nav>
 <main>
 <h1>Բլոգ</h1>
 <ul class="pl">${BLOG.map(a => `<li><a href="${a.id}/">${esc(a.hy.title)}</a><span>${a.date.split('-').reverse().join('.')}</span></li>`).join('\n')}</ul>
@@ -688,18 +690,20 @@ if (BLOG.length) {
   for (const a of BLOG) {
     const url = `${bUrl}${a.id}/`;
     const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.hy.title, description: a.hy.lead,
-      datePublished: a.date, inLanguage: 'hy', url, publisher: { '@type': 'Organization', name: 'Better' } },
-      crumbs([['Better', SITE], ['Բլոգ', bUrl], [a.hy.title, url]])];
+      datePublished: a.date, inLanguage: 'hy', url, publisher: { '@type': 'Organization', name: 'Better.am' } },
+      crumbs([['Better.am', SITE], ['Բլոգ', bUrl], [a.hy.title, url]])];
     fs.mkdirSync(`b/${a.id}`, { recursive: true });
-    fs.writeFileSync(`b/${a.id}/index.html`, HEAD({ title: `${a.hy.title} | Better`, desc: a.hy.lead, url, img: SITE + SEO.img, ld }) + `
-<header><a href="../../">Better</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better</a> › <a href="../">Բլոգ</a> › <span>${esc(a.hy.title)}</span></nav>
+    const og = `images/blog/${a.id}.jpg`;
+    fs.writeFileSync(`b/${a.id}/index.html`, HEAD({ title: `${a.hy.title} | Better.am`, desc: a.hy.lead, url, img: SITE + (fs.existsSync(og) ? og : SEO.img), ld }) + `
+<header><a href="../../">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <a href="../">Բլոգ</a> › <span>${esc(a.hy.title)}</span></nav>
 <main>
 <h1>${esc(a.hy.title)}</h1>
 <p class="lead">${LIVE(esc(a.hy.lead))}</p>
+${a.cover && fs.existsSync(a.cover) ? `<img src="../../${a.cover}" alt="${esc(a.hy.title)}" width="1600" height="900" style="width:100%;height:auto;border-radius:16px;margin:4px 0 18px">` : ''}
 ${bodyHTML(a.hy.body)}
 ${(a.sources || []).length ? `<p class="upd">Աղբյուրներ՝ ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s => `<a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
-<p><a class="go" href="../../#/blog/${a.id}">Կարդալ Better-ում</a></p>
+<p><a class="go" href="../../#/blog/${a.id}">Կարդալ Better.am-ում</a></p>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
 </main></body></html>
 `);
@@ -718,7 +722,7 @@ for (const [from, to] of Object.entries(MERGED)) {
 <meta http-equiv="refresh" content="0;url=../${to}/">
 <link rel="canonical" href="${SITE}p/${to}/">
 <meta name="robots" content="noindex">
-<title>Better</title>
+<title>Better.am</title>
 </head><body><a href="../${to}/">${esc(nameOf(phones.find(p => p.id === to)))}</a></body></html>
 `);
   moved++;
@@ -732,7 +736,7 @@ fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
-<title>Էջը չի գտնվել | Better</title>
+<title>Էջը չի գտնվել | Better.am</title>
 <meta name="robots" content="noindex">
 <style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
 display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
