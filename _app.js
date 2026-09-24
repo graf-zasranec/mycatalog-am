@@ -2037,7 +2037,10 @@ function postBody(list) {
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>';
     inList = li;
-    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>`;
+    // "!fig:<path>|<caption>" is a picture from images/blog with its caption
+    const fig = /^!fig:(images\/blog\/[\w.-]+)\|(.*)$/.exec(s);
+    html += fig ? `<figure class="post-fig"><img src="${esc(fig[1])}" alt="${esc(fig[2])}" loading="lazy" decoding="async"><figcaption>${esc(fig[2])}</figcaption></figure>`
+      : s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>`;
   }
   return html + (inList ? '</ul>' : '');
 }
@@ -2045,6 +2048,7 @@ function blogView() {
   return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
     <header class="bl-hd"><h1>${esc(t('nav.blog'))}</h1><p>${esc(x('blogSub'))}</p></header>
     <div class="bl-grid">${BLOG.map((a, i) => { const T = postText(a); return `<a class="bl-card${i ? '' : ' first'}" href="#/blog/${esc(a.id)}">
+      ${a.cover ? `<span class="bl-im"><img src="${esc(a.cover.replace(/\.webp$/, '-card.webp'))}" alt="" loading="lazy" decoding="async"></span>` : ''}
       <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
       <h2>${esc(T.title)}</h2><p>${LIVE(esc(T.lead))}</p>
       <span class="bl-go">${esc(x('readL'))} →</span></a>`; }).join('')}</div></div>`;
@@ -2056,6 +2060,7 @@ function postView(a) {
       <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
       <h1>${esc(T.title)}</h1>
       <p class="post-lead">${LIVE(esc(T.lead))}</p>
+      ${a.cover ? `<img class="post-cover" src="${esc(a.cover)}" alt="${esc(T.title)}" decoding="async" fetchpriority="high">` : ''}
       ${postBody(T.body)}
       ${(a.sources || []).length ? `<p class="post-src">${esc(x('sourcesL'))}: ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s =>
         `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}

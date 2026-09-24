@@ -665,6 +665,8 @@ const bodyHTML = list => {
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>\n';
     inList = li;
+    const fig = /^!fig:(images\/blog\/[\w.-]+)\|(.*)$/.exec(s);
+    if (fig) { html += `<figure style="margin:20px 0"><img src="../../${fig[1]}" alt="${esc(fig[2])}" style="width:100%;height:auto;border-radius:12px"><figcaption style="font-size:13px;color:#626974;margin-top:6px">${esc(fig[2])}</figcaption></figure>\n`; continue; }
     html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>\n` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>\n`;
   }
   return html + (inList ? '</ul>\n' : '');
@@ -691,12 +693,14 @@ if (BLOG.length) {
       datePublished: a.date, inLanguage: 'hy', url, publisher: { '@type': 'Organization', name: 'Better.am' } },
       crumbs([['Better.am', SITE], ['Բլոգ', bUrl], [a.hy.title, url]])];
     fs.mkdirSync(`b/${a.id}`, { recursive: true });
-    fs.writeFileSync(`b/${a.id}/index.html`, HEAD({ title: `${a.hy.title} | Better.am`, desc: a.hy.lead, url, img: SITE + SEO.img, ld }) + `
+    const og = `images/blog/${a.id}.jpg`;
+    fs.writeFileSync(`b/${a.id}/index.html`, HEAD({ title: `${a.hy.title} | Better.am`, desc: a.hy.lead, url, img: SITE + (fs.existsSync(og) ? og : SEO.img), ld }) + `
 <header><a href="../../">Better.am</a></header>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <a href="../">Բլոգ</a> › <span>${esc(a.hy.title)}</span></nav>
 <main>
 <h1>${esc(a.hy.title)}</h1>
 <p class="lead">${LIVE(esc(a.hy.lead))}</p>
+${a.cover && fs.existsSync(a.cover) ? `<img src="../../${a.cover}" alt="${esc(a.hy.title)}" width="1600" height="900" style="width:100%;height:auto;border-radius:16px;margin:4px 0 18px">` : ''}
 ${bodyHTML(a.hy.body)}
 ${(a.sources || []).length ? `<p class="upd">Աղբյուրներ՝ ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s => `<a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
 <p><a class="go" href="../../#/blog/${a.id}">Կարդալ Better.am-ում</a></p>
