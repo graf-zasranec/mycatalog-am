@@ -1,6 +1,7 @@
 # Makes the small copy of every main product shot, for the places that show one small.
 #
-#   python tools/thumbs.py
+#   python tools/thumbs.py            new or newer photos
+#   python tools/thumbs.py --check    also any thumbnail that no longer matches its photo
 #
 # A card on a phone draws the photo into a box about 155 px wide and was being handed the same
 # 1200 px cutout the product page uses: 829 KB of images to fill thirteen thumbnails. 600 px is
@@ -20,11 +21,25 @@ SRC = ROOT / 'images' / 'cut'
 OUT = ROOT / 'images' / 'thumb'
 EDGE = 600
 
+# --check: a file's date is not proof it is current. A checkout gives every file the same date,
+# so a thumbnail cut from an OLD photo looked newer than the photo that replaced it - the iPhone 18
+# Pro's Burgundy and Glacier cards were showing the Silver shot. This compares the pictures.
+CHECK = '--check' in sys.argv
+
+def looks(path):
+    im = Image.open(path).convert('RGBA').resize((32, 32))
+    return im.tobytes()
+
+def differs(a, b):
+    x, y = looks(a), looks(b)
+    return sum(abs(p - q) for p, q in zip(x, y)) / len(x) > 3
+
 OUT.mkdir(parents=True, exist_ok=True)
 made = skipped = same = 0
 for f in sorted(SRC.glob('*.webp')):
     dest = OUT / f.name
-    if dest.exists() and dest.stat().st_mtime >= f.stat().st_mtime:
+    fresh = dest.exists() and dest.stat().st_mtime >= f.stat().st_mtime
+    if fresh and not (CHECK and differs(f, dest)):
         skipped += 1
         continue
     im = Image.open(f)

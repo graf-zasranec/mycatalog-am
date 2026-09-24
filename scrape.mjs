@@ -2554,6 +2554,16 @@ for (const [id, list] of Object.entries(offers)) {
   const arr = (hist.points[id] ||= []);
   const i = arr.findIndex(pt => pt.d === day);
   const pt = { d: day, lo, hi, shops };
+  // lo and hi span every configuration, so a 1 TB listing appearing moved the band although no
+  // price changed, and the chart could not follow the size a reader picked. The cheapest price
+  // per storage size is kept alongside ('base' where the product comes in one size).
+  const sizes = new Set(((phoneById[id] || {}).variants || []).map(v => v.storage).filter(v => v != null));
+  const t = {};
+  for (const o of list) {
+    const k = o.storage != null ? String(o.storage) : sizes.size > 1 ? null : 'base';
+    if (k && (t[k] == null || o.price < t[k])) t[k] = o.price;
+  }
+  if (Object.keys(t).length) pt.t = t;
   if (i >= 0) arr[i] = pt; else { arr.push(pt); hadded++; }
   arr.sort((a, b) => a.d.localeCompare(b.d));
   if (arr.length > 400) arr.splice(0, arr.length - 400);   // ~13 months, plenty

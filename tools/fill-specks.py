@@ -115,6 +115,12 @@ def main():
             hit += 1; total += px
             print(f'{f.name.replace("__main.webp", ""):36} filled {px} px')
     print(f'\n{hit} photo(s) repaired, {total} px of pinholes closed')
+    # The cards show images/thumb, the product page images/cut. A new or repaired cutout left its
+    # old thumbnail behind - 167 cards showed a different photo from their own product page - so
+    # the small copies are brought up to date here, after the last change to any cutout.
+    # thumbs.py skips every thumbnail that is already newer than its cutout.
+    import subprocess
+    subprocess.run([sys.executable, str(Path(__file__).resolve().parent / 'thumbs.py')])
 
 
 if __name__ == '__main__':
