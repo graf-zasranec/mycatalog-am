@@ -43,7 +43,7 @@ const X = {
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ էժան', sameBest: 'նույն գինը',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենաէժան գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
     spotT: 'Օրվա գործարքը',
-    dealSave: '{shop}-ից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    dealSave: '{shop}-ից {n} ֏ էժան', dealUsual: 'սովորական գնից {n} ֏ էժան', usuallyL: 'սովորաբար', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -75,7 +75,7 @@ const X = {
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина', sameBest: 'та же цена',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
     spotT: 'Выгода дня',
-    dealSave: 'на {n} ֏ дешевле, чем в {shop}', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
+    dealSave: 'на {n} ֏ дешевле, чем в {shop}', dealUsual: 'на {n} ֏ ниже обычной цены', usuallyL: 'обычно', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
@@ -110,7 +110,7 @@ const X = {
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop', sameBest: 'same price',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
     spotT: 'Deal of the day',
-    dealSave: '{n} ֏ less than {shop}', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
+    dealSave: '{n} ֏ less than {shop}', dealUsual: '{n} ֏ below the usual price', usuallyL: 'usually', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
@@ -653,30 +653,42 @@ function matches(p, s) {
 // sells in one size only that is harmless, but the MacBook Pro 14 M4 Pro sells at 512 GB and
 // 1 TB and all three of its offers state no capacity - so the front page promised 274 000 off
 // by putting one shop's base model beside the same shop's higher one.
-const bestTier = p => {
+// Every configuration a product is sold in (same capacity, RAM and SIM build), with one price per
+// shop - its cheapest. Two colours at one shop are not a saving between shops, and the front page
+// names the shops, so each end has to be one.
+const tiersOf = p => {
   const sizes = new Set((p.variants || []).map(v => v.storage).filter(v => v != null));
   const byTier = new Map();
   for (const o of offersFor(p)) {
     if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
-    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?');
+    // screen size too: a 13-inch and a 15-inch MacBook with the same memory are not one product
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '');
     (byTier.get(k) || byTier.set(k, []).get(k)).push(o);
   }
-  let best = null;
+  const out = [];
   for (const [tier, offs] of byTier) {
-    // One price per shop - its cheapest. Two colours at one shop are not a saving between shops,
-    // and the front page names the two shops, so each end has to be one.
     const perShop = new Map();
     offs.forEach((o, i) => { const k = o.shop ?? i; if (!perShop.has(k) || o.price < perShop.get(k).price) perShop.set(k, o); });
     if (perShop.size < 2) continue;
     const list = [...perShop.values()].sort((a, b) => a.price - b.price);
     const loO = list[0], hiO = list[list.length - 1], lo = loO.price, hi = hiO.price;
-    const [stor, ram, sim] = tier.split('|');
-    if (hi > lo && (!best || hi - lo > best.gap))
-      best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor, ram: ram ? +ram : null,
-               esim: sim === 'e' ? true : sim === 'n' ? false : null, loShop: loO.shop, hiShop: hiO.shop, shops: list.length };
+    // the usual price: what the middle shop asks - a real price somebody charges, and one that a
+    // single mislabelled listing at either end cannot move
+    const mid = list[list.length >> 1].price;
+    const [stor, ram, sim, size] = tier.split('|');
+    out.push({ p, lo, hi, mid, gap: hi - lo, below: mid - lo, storage: stor === 'base' ? null : +stor, ram: ram ? +ram : null,
+               size: size && new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1 ? +size : null,
+               esim: sim === 'e' ? true : sim === 'n' ? false : null, loShop: loO.shop, hiShop: hiO.shop, shops: list.length });
   }
-  return best;
+  return out;
 };
+// the widest spread between two shops for one configuration
+const bestTier = p => tiersOf(p).reduce((a, r) => r.hi > r.lo && (!a || r.gap > a.gap) ? r : a, null);
+// The front page's saving is measured against the usual price, not the dearest shop: one shop
+// listing a bigger model as the 512 GB made a "saving" of 294 000 on a phone nobody overcharges
+// for. Three shops at least, or there is no middle to speak of.
+const typTier = p => tiersOf(p).filter(r => r.shops >= 3 && r.below > 0)
+  .reduce((a, r) => !a || r.below / r.mid > a.below / a.mid ? r : a, null);
 const spreadOf = p => bestTier(p)?.gap || 0;
 const SORTS = {
   popular: (a, b) => b.popularity - a.popularity,
@@ -1177,10 +1189,11 @@ function cardFacts(p, v) {
 }
 // The front page used to open on one big product photo that changed every two seconds and said
 // nothing about price. It opens on the reason to be here instead: the same product in the same
-// configuration, cheapest shop against dearest, today. Nothing moves unless the reader moves it.
+// configuration, the cheapest shop against what shops usually ask, today. Nothing moves unless the
+// reader moves it.
 //
 // A saving is only offered where it is real: one price per shop, the same capacity, RAM and SIM
-// type at both ends (bestTier), and at least an eighth off the dearest - a 3% spread is noise.
+// type throughout (typTier), three shops at least, and 5% or more under the usual price.
 // Popular products first, and no more than three from one section or one brand, so the row is not
 // ten iPhones.
 const DEALS_MAX = 10;
@@ -1189,8 +1202,8 @@ let DEALS_CACHE = null;
 function deals() {
   if (DEALS_CACHE) return DEALS_CACHE;
   const out = DEALS_CACHE = [], perCat = {}, perBrand = {};
-  const pool = DATA.map(bestTier).filter(r => r && r.gap / r.hi >= 0.08)
-    .sort((a, b) => b.p.popularity - a.p.popularity || b.gap - a.gap);
+  const pool = DATA.map(typTier).filter(r => r && r.below / r.mid >= 0.05)
+    .sort((a, b) => b.p.popularity - a.p.popularity || b.below / b.mid - a.below / a.mid);
   for (const d of [...drops(), ...pool]) {
     if (out.some(o => o.p === d.p)) continue;
     const c = catOf(d.p), b = d.p.brand;
@@ -1216,11 +1229,11 @@ function spark(vals) {
 }
 function dealCard(d, isSpot) {
   const p = d.p;
-  const cfg = [p.brand, d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
+  const cfg = [p.brand, d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
     .filter(Boolean).join(' · ');
   const tail = d.drop
     ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
-    : `<span class="dl-save num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</span>`;
+    : `<span class="dl-save num">${esc(x('dealUsual').replace('{n}', money(d.below)))}</span>`;
   return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
     <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
     <small>${esc(cfg)}</small>
@@ -1230,29 +1243,40 @@ function dealCard(d, isSpot) {
     ${tail}</a>`;
 }
 // The right half of the hero was empty once the carousel went. It holds the one saving worth
-// leading with: among the most popular deals, the biggest share off the dearest shop - the same
-// product and configuration at two named shops, drawn as two bars. It changes when the prices do,
-// once a night, never while you read. On a phone it is not drawn: the deals row is right below.
+// leading with: among the most popular deals, the biggest share under the usual price. It changes
+// when the prices do, once a night, never while you read. On a phone it is not drawn: the deals
+// row is right below.
 function spotDeal(dl) {
   const pool = dl.filter(d => !d.drop).slice(0, 6);
-  return pool.reduce((a, d) => !a || d.gap / d.hi > a.gap / a.hi ? d : a, null);
+  return pool.reduce((a, d) => !a || d.below / d.mid > a.below / a.mid ? d : a, null);
 }
 function spotHTML(d) {
   if (!d) return '';
-  const p = d.p;
-  const cfg = [d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
-  const n = shopCount(offersFor(p));
-  return `<aside class="spot" aria-labelledby="spotT">
-      <span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>
-      <a class="spot-im" href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${IMG(p.id)}" alt="" decoding="async"></a>
-      <h2 class="spot-n" id="spotT"><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${cfg ? `<small>${esc(cfg)}</small>` : ''}</h2>
-      <div class="spot-bars">
-        <div class="sb best"><span>${esc(shopName(d.loShop))}</span><i style="--w:${(d.lo / d.hi * 100).toFixed(1)}%"></i><b class="num">${amd(d.lo)}</b></div>
-        <div class="sb"><span>${esc(shopName(d.hiShop))}</span><i style="--w:100%"></i><b class="num">${amd(d.hi)}</b></div>
-      </div>
-      <p class="spot-s"><b class="num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</b></p>
-      <a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))} · ${esc(nx(n, 'shops'))}</a>
-    </aside>`;
+  const p = d.p, pct = Math.round(d.below / d.mid * 100);
+  const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
+  const eb = `<span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>`;
+  const n = nx(d.shops, 'shops');
+  // PREVIEW: both designs until one is chosen
+  let spotV = 'a'; try { spotV = localStorage.getItem('spotV') || 'a'; } catch (e) { }
+  if (spotV === 'c') return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
+      ${eb}
+      <img src="${IMG(p.id)}" alt="" decoding="async">
+      <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
+      <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+        <b class="spot-p num">${amd(d.lo)}</b>
+        <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
+    </a>`;
+  return `<a class="spot spot-a" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
+      ${eb}
+      <img src="${IMG(p.id)}" alt="" decoding="async">
+      <span class="spot-b">
+        <b class="spot-n" id="spotT">${esc(fullName(p))}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+        <b class="spot-p num">${amd(d.lo)}</b>
+        <span class="spot-was">${esc(x('usuallyL'))} <s class="num">${amd(d.mid)}</s></span>
+        <span class="spot-row"><span class="spot-pill num">−${pct}%</span><span>${esc(x('atShop').replace('{shop}', shopName(d.loShop)))}</span></span>
+      </span>
+      <span class="spot-go"><span>${esc(n)}</span><span>${esc(x('checkPrices'))} →</span></span>
+    </a>`;
 }
 function mastHero() {
   const dl = deals();
@@ -1933,8 +1957,8 @@ function detailView(p) {
             ${offs.length ? `<a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>` : ''}
             <button class="btn${offs.length ? ' ghost' : ''}" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
           </div>
-          ${compareWithHTML(p)}
         </div>
+        ${compareWithHTML(p)}
         ${offs.length ? `<div class="pbar"><b class="num">${money(lo)} ֏</b><span>${esc(shopName(offs[0].shop))}</span>
           <a href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))} →</a></div>` : ''}
       </div>
@@ -2166,7 +2190,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
          is here for is the cheapest price and how much every other shop adds to it. -->
-    <span class="dl">${o.price === lo ? esc(i === 0 ? x('bestPrice') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
+    <span class="od num">${o.price === lo ? esc(i === 0 ? x('bestPrice') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
     ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 
