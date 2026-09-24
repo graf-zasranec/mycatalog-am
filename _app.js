@@ -133,7 +133,7 @@ const X = {
 
 /* ================= state ================= */
 // Saved settings - language, theme, filters, the compare list. The key carried the project's
-// working name until the site became Better; a returning visitor's settings are still under the
+// working name until the site became Better.am; a returning visitor's settings are still under the
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
@@ -875,7 +875,7 @@ function paintChrome() {
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
     + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
   paintCmpCount();
-  $('#foot').innerHTML = `<b>Better</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
+  $('#foot').innerHTML = `<b>Better.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
@@ -2526,32 +2526,32 @@ function render(keepScroll) {
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');
-  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — Better'; window.scrollTo(0, keepScroll ? y : 0); }
+  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
     const y = window.scrollY;
     main.innerHTML = offersView(byId(mo[1]));
     document.title = x('allOffers') + ' — ' + fullName(byId(mo[1]));
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
-  else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' — Better'; window.scrollTo(0, 0); }
-  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — Better'; window.scrollTo(0, 0); }
-  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — Better'; window.scrollTo(0, 0); }
+  else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' — Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — Better.am'; window.scrollTo(0, 0); }
   else if (h === '/blog' || h.startsWith('/blog/')) {
     const a = h.startsWith('/blog/') && BLOG.find(b => b.id === h.slice(6));
     main.innerHTML = a ? postView(a) : blogView();
-    document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' — Better';
+    document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' — Better.am';
     window.scrollTo(0, 0);
   }
-  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — Better'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
-  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — Better'; window.scrollTo(0, 0); }
+  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — Better.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
+  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — Better.am'; window.scrollTo(0, 0); }
   else if (h === '/search') {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — Better';
+    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — Better.am';
     window.scrollTo(0, keepScroll ? window.scrollY : 0);
   }
   else {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'Better';
+    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'Better.am';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
     // to the front page landed ~1480px past where you left, while a category page was exact.

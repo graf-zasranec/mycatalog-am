@@ -2128,14 +2128,49 @@
     "priceAmd": 199900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.9,
+   "resolution": "2360x1640",
+   "ppi": 264,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 8686,
+   "wired": 20
+  },
   "summaryEn": "Apple iPad 10.9 Wi-Fi A14 MPQA3RK/A.",
   "unsure": [
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Apple A14 Bionic",
+   "process": "5 nm",
+   "gpu": "Apple 4-core GPU"
+  },
+  "body": {
+   "weight": 477,
+   "height": 248.6,
+   "width": 179.5,
+   "thickness": 7,
+   "materials": "Recycled aluminium"
+  },
+  "connectivity": {
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "12.2 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2022-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a",
@@ -2177,7 +2212,31 @@
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Apple M2",
+   "process": "5 nm",
+   "gpu": "Apple 10-core GPU"
+  },
+  "body": {
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "12.2 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2022-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-9",
@@ -2203,8 +2262,15 @@
     "priceAmd": 139000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.2,
+   "resolution": "2160x1620",
+   "ppi": 265,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 8686
+  },
   "summaryEn": "Apple iPad 9.",
   "unsure": [
    "popularity"
@@ -2214,7 +2280,33 @@
    "Silver"
   ],
   "os": "iPadOS",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "Apple A13 Bionic",
+   "process": "7 nm",
+   "gpu": "Apple 4-core GPU"
+  },
+  "body": {
+   "weight": 487,
+   "height": 250.6,
+   "width": 174.1,
+   "thickness": 7.5,
+   "materials": "Aluminium"
+  },
+  "connectivity": {
+   "bluetooth": "4.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "8 MP, f/2.4",
+   "front": "12 MP"
+  },
+  "released": "2021-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-a16",
@@ -2229,10 +2321,14 @@
   "accent": "#C9CBD1",
   "display": {
    "size": 11,
-   "type": "Liquid Retina IPS LCD"
+   "type": "Liquid Retina IPS LCD",
+   "resolution": "2360x1640",
+   "ppi": 264
   },
   "chipset": {
-   "name": "Apple A16"
+   "name": "Apple A16",
+   "process": "4 nm",
+   "gpu": "Apple 5-core GPU"
   },
   "variants": [
    {
@@ -2264,15 +2360,26 @@
   "camera": {
    "modules": 1,
    "main": "12 MP",
-   "front": "12 MP Center Stage"
+   "front": "12 MP Center Stage",
+   "video": "4K"
   },
-  "battery": {},
+  "battery": {
+   "capacity": 8500,
+   "wired": 30
+  },
   "body": {
-   "materials": "Aluminium unibody"
+   "materials": "Aluminium unibody",
+   "weight": 477,
+   "height": 248.6,
+   "width": 179.5,
+   "thickness": 7
   },
   "connectivity": {
    "network": "Wi-Fi, or Wi-Fi + Cellular",
-   "sim": "eSIM"
+   "sim": "eSIM",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6E",
+   "nfc": false
   },
   "cardSlot": false,
   "os": "iPadOS 26",
@@ -2295,6 +2402,9 @@
    "iPad Wi-Fi 11\"",
    "Պլանշետ Apple iPad Wi-Fi 11\"",
    "iPad 11 (2025) A16"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -2317,7 +2427,8 @@
   },
   "chipset": {
    "name": "Apple M3",
-   "process": "3 nm"
+   "process": "3 nm",
+   "gpu": "Apple 9-core GPU"
   },
   "camera": {
    "modules": 1,
@@ -2329,7 +2440,8 @@
    "wired": 20
   },
   "body": {
-   "weight": 460
+   "weight": 460,
+   "materials": "Aluminium alloy"
   },
   "connectivity": {
    "network": "Wi-Fi",
@@ -2390,6 +2502,9 @@
    "iPad Air 11-inch with Wi-Fi",
    "iPad Air 11 (2025) M3",
    "iPad Air 13 M3"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -2408,7 +2523,9 @@
    "type": "Liquid Retina IPS LCD"
   },
   "chipset": {
-   "name": "Apple M4"
+   "name": "Apple M4",
+   "process": "3 nm",
+   "gpu": "Apple 10-core GPU"
   },
   "variants": [
    {
@@ -2463,15 +2580,20 @@
   "camera": {
    "modules": 1,
    "main": "12 MP",
-   "front": "12 MP Center Stage"
+   "front": "12 MP Center Stage",
+   "video": "4K"
   },
   "battery": {},
   "body": {
-   "materials": "Aluminium unibody"
+   "materials": "Aluminium unibody",
+   "ip": "IP42"
   },
   "connectivity": {
    "network": "Wi-Fi, or Wi-Fi + Cellular",
-   "sim": "eSIM"
+   "sim": "eSIM",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "nfc": false
   },
   "cardSlot": false,
   "os": "iPadOS 26",
@@ -2493,6 +2615,9 @@
    "Apple iPad Air 13 M4",
    "iPad Air 13 2026",
    "Apple iPad Air 13 2026"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -2545,7 +2670,30 @@
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Apple M2",
+   "process": "5 nm",
+   "gpu": "Apple 10-core GPU"
+  },
+  "body": {
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6E",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "12.2 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
@@ -2602,7 +2750,30 @@
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Apple M2",
+   "process": "5 nm",
+   "gpu": "Apple 10-core GPU"
+  },
+  "body": {
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6E",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "12.2 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-air-5-wi-fi-plus-cellular-2022",
@@ -2625,14 +2796,47 @@
     "priceAmd": 365000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.9,
+   "resolution": "2360x1640",
+   "ppi": 264,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 7600
+  },
   "summaryEn": "Apple iPad Air 5 Wi-Fi + Cellular 2022.",
   "unsure": [
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Apple M1",
+   "process": "5 nm",
+   "gpu": "Apple 8-core GPU"
+  },
+  "body": {
+   "weight": 460,
+   "height": 247.6,
+   "width": 178.5,
+   "thickness": 6.1,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "12 MP, f/1.8",
+   "front": "12 MP"
+  },
+  "released": "2022-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-mini-6",
@@ -2654,14 +2858,49 @@
     "priceAmd": 209000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.3,
+   "resolution": "2266x1488",
+   "ppi": 327,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5124,
+   "wired": 20
+  },
   "summaryEn": "Apple iPad Mini 6.",
   "unsure": [
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "Apple A15 Bionic",
+   "process": "5 nm",
+   "gpu": "Apple 5-core GPU"
+  },
+  "body": {
+   "weight": 293,
+   "height": 195.4,
+   "width": 134.8,
+   "thickness": 6.3,
+   "materials": "Aluminium"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 6",
+   "nfc": true
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "12 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2021-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-mini-7",
@@ -2683,14 +2922,49 @@
     "priceAmd": 224000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.3,
+   "resolution": "2266x1488",
+   "ppi": 327,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5078,
+   "wired": 20
+  },
   "summaryEn": "Apple iPad Mini 7.",
   "unsure": [
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Apple A17 Pro",
+   "process": "3 nm",
+   "gpu": "Apple 5-core GPU"
+  },
+  "body": {
+   "weight": 293,
+   "height": 195.4,
+   "width": 134.8,
+   "thickness": 6.3,
+   "materials": "Aluminium"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6E",
+   "nfc": true
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "12 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2024-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-pro-11-m4",
@@ -2712,7 +2986,8 @@
   },
   "chipset": {
    "name": "Apple M4",
-   "process": "3 nm"
+   "process": "3 nm",
+   "gpu": "Apple 10-core GPU"
   },
   "camera": {
    "modules": 1,
@@ -2724,7 +2999,8 @@
    "wired": 20
   },
   "body": {
-   "weight": 444
+   "weight": 444,
+   "materials": "Aluminium alloy"
   },
   "connectivity": {
    "network": "Wi-Fi",
@@ -2778,6 +3054,9 @@
    "iPad Pro 13 M4",
    "iPad Pro 13 Wi-Fi 2024",
    "iPad Pro 13 Wi-Fi 2024 Silver"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -2797,7 +3076,9 @@
    "refresh": 120
   },
   "chipset": {
-   "name": "Apple M5"
+   "name": "Apple M5",
+   "process": "3 nm",
+   "gpu": "Apple 10-core GPU"
   },
   "variants": [
    {
@@ -2852,15 +3133,20 @@
   "camera": {
    "modules": 1,
    "main": "12 MP",
-   "front": "12 MP Center Stage"
+   "front": "12 MP Center Stage",
+   "video": "4K"
   },
   "battery": {},
   "body": {
-   "materials": "Aluminium unibody"
+   "materials": "Aluminium unibody",
+   "ip": "IP42"
   },
   "connectivity": {
    "network": "Wi-Fi, or Wi-Fi + Cellular",
-   "sim": "eSIM"
+   "sim": "eSIM",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6E",
+   "nfc": false
   },
   "cardSlot": false,
   "os": "iPadOS 26",
@@ -2880,6 +3166,9 @@
    "Apple iPad Pro 13 M5",
    "iPad Pro 13 2025",
    "Apple iPad Pro 13 2025"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -2902,14 +3191,52 @@
     "priceAmd": 537400
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 12.9,
+   "resolution": "2732x2048",
+   "refresh": 120,
+   "ppi": 264,
+   "brightness": 1600,
+   "type": "MiniLED IPS"
+  },
+  "battery": {
+   "capacity": 7538,
+   "wired": 18
+  },
   "summaryEn": "Apple iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*.",
   "unsure": [
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Apple M2",
+   "process": "5 nm",
+   "gpu": "Apple 10-core GPU"
+  },
+  "body": {
+   "weight": 682,
+   "height": 280.6,
+   "width": 214.9,
+   "thickness": 6.4,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "12.2 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2022-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024",
@@ -2939,14 +3266,52 @@
     "priceAmd": 715000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 13,
+   "resolution": "2752x2064",
+   "refresh": 120,
+   "ppi": 265,
+   "brightness": 1600,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 10340,
+   "wired": 30
+  },
   "summaryEn": "Apple iPad Pro 13 M4 Wi-Fi + Cellular 2024.",
   "unsure": [
    "popularity"
   ],
   "os": "iPadOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Apple M4",
+   "process": "3 nm",
+   "gpu": "Apple 10-core GPU"
+  },
+  "body": {
+   "weight": 579,
+   "height": 281.6,
+   "width": 215.5,
+   "thickness": 5.1,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6E",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "12.2 MP, f/1.8",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-15",
@@ -3033,7 +3398,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-15-pro",
@@ -3058,14 +3426,54 @@
     "priceAmd": 638900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.1,
+   "resolution": "1179x2556",
+   "ppi": 461,
+   "brightness": 2000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 3274,
+   "wired": 27
+  },
   "summaryEn": "Apple iPhone 15 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "iOS",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Apple A17 Bionic",
+   "process": "3 nm",
+   "gpu": "Apple 6-core GPU"
+  },
+  "body": {
+   "weight": 187,
+   "height": 146.6,
+   "width": 70.6,
+   "thickness": 8.3,
+   "materials": "Glass",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.78",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2023-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-16",
@@ -3152,7 +3560,10 @@
    "priceAmdMax",
    "variants[].priceAmd"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-16-plus",
@@ -3176,7 +3587,8 @@
   "chipset": {
    "name": "Apple A18",
    "cpu": "6-core (2 performance + 4 efficiency)",
-   "gpu": "Apple 5-core GPU"
+   "gpu": "Apple 5-core GPU",
+   "process": "3 nm"
   },
   "variants": [
    {
@@ -3203,7 +3615,9 @@
    "video": "4K Dolby Vision at 60fps"
   },
   "battery": {
-   "wireless": 25
+   "wireless": 25,
+   "capacity": 4674,
+   "wired": 25
   },
   "body": {
    "height": 160.9,
@@ -3236,7 +3650,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-16-pro",
@@ -3260,7 +3677,8 @@
   "chipset": {
    "name": "Apple A18 Pro",
    "cpu": "6-core (2 performance + 4 efficiency)",
-   "gpu": "Apple 6-core GPU"
+   "gpu": "Apple 6-core GPU",
+   "process": "3 nm"
   },
   "variants": [
    {
@@ -3293,7 +3711,9 @@
    "video": "4K Dolby Vision up to 120fps"
   },
   "battery": {
-   "wireless": 25
+   "wireless": 25,
+   "capacity": 3582,
+   "wired": 25
   },
   "body": {
    "height": 149.6,
@@ -3325,7 +3745,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-16-pro-max",
@@ -3349,7 +3772,8 @@
   "chipset": {
    "name": "Apple A18 Pro",
    "cpu": "6-core (2 performance + 4 efficiency)",
-   "gpu": "Apple 6-core GPU"
+   "gpu": "Apple 6-core GPU",
+   "process": "3 nm"
   },
   "variants": [
    {
@@ -3377,7 +3801,9 @@
    "video": "4K Dolby Vision up to 120fps"
   },
   "battery": {
-   "wireless": 25
+   "wireless": 25,
+   "capacity": 4685,
+   "wired": 25
   },
   "body": {
    "height": 163,
@@ -3409,7 +3835,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-17",
@@ -3491,7 +3920,10 @@
    "variants[].priceAmd",
    "priceAmdMax"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-17-pro",
@@ -3550,7 +3982,8 @@
   },
   "battery": {
    "wired": 40,
-   "wireless": 25
+   "wireless": 25,
+   "capacity": 3988
   },
   "body": {
    "height": 150,
@@ -3576,7 +4009,10 @@
    "variants[].priceAmd",
    "priceAmdMax"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-17-pro-max",
@@ -3640,7 +4076,8 @@
   },
   "battery": {
    "wired": 40,
-   "wireless": 25
+   "wireless": 25,
+   "capacity": 4823
   },
   "body": {
    "height": 163.4,
@@ -3666,7 +4103,10 @@
    "variants[].priceAmd",
    "priceAmdMax"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-17e",
@@ -3683,12 +4123,14 @@
    "resolution": "2532x1170",
    "refresh": 60,
    "ppi": 460,
-   "protection": "Ceramic Shield 2"
+   "protection": "Ceramic Shield 2",
+   "brightness": 1200
   },
   "chipset": {
    "name": "Apple A19",
    "cpu": "6-core (2 performance + 4 efficiency)",
-   "gpu": "Apple 4-core GPU with Neural Accelerators"
+   "gpu": "Apple 4-core GPU with Neural Accelerators",
+   "process": "3 nm"
   },
   "variants": [
    {
@@ -3709,7 +4151,9 @@
    "video": "4K Dolby Vision at 60fps"
   },
   "battery": {
-   "wireless": 15
+   "wireless": 15,
+   "capacity": 4005,
+   "wired": 25
   },
   "body": {
    "height": 146.7,
@@ -3741,7 +4185,11 @@
    "popularity"
   ],
   "category": "phone",
-  "year": 2026
+  "year": 2026,
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-18-pro",
@@ -3763,10 +4211,15 @@
   "display": {
    "size": 6.3,
    "type": "Super Retina XDR OLED (LTPO)",
-   "refresh": 120
+   "refresh": 120,
+   "resolution": "1206x2622",
+   "ppi": 458,
+   "brightness": 3000
   },
   "chipset": {
-   "name": "Apple A20 Pro"
+   "name": "Apple A20 Pro",
+   "process": "2 nm",
+   "gpu": "Apple 7-core GPU"
   },
   "variants": [
    {
@@ -3787,13 +4240,21 @@
   ],
   "camera": {
    "modules": 3,
-   "front": "18MP"
+   "front": "18MP",
+   "main": "48 MP, f/1.6",
+   "video": "4K"
   },
-  "battery": {},
+  "battery": {
+   "capacity": 4288,
+   "wired": 40,
+   "wireless": 25
+  },
   "connectivity": {
    "network": "5G",
    "nfc": true,
-   "sim": "Nano-SIM + eSIM, or dual eSIM"
+   "sim": "Nano-SIM + eSIM, or dual eSIM",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7"
   },
   "cardSlot": false,
   "os": "iOS",
@@ -3802,6 +4263,17 @@
   "aliases": [
    "iPhone 18 Pro",
    "Apple iPhone 18 Pro"
+  ],
+  "body": {
+   "weight": 211,
+   "height": 150,
+   "width": 71.9,
+   "thickness": 8.8,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -3824,10 +4296,15 @@
   "display": {
    "size": 6.9,
    "type": "Super Retina XDR OLED (LTPO)",
-   "refresh": 120
+   "refresh": 120,
+   "resolution": "1320x2868",
+   "ppi": 458,
+   "brightness": 3000
   },
   "chipset": {
-   "name": "Apple A20 Pro"
+   "name": "Apple A20 Pro",
+   "process": "2 nm",
+   "gpu": "Apple 7-core GPU"
   },
   "variants": [
    {
@@ -3848,13 +4325,21 @@
   ],
   "camera": {
    "modules": 3,
-   "front": "18MP"
+   "front": "18MP",
+   "main": "48 MP, f/1.5",
+   "video": "4K"
   },
-  "battery": {},
+  "battery": {
+   "capacity": 5567,
+   "wired": 60,
+   "wireless": 25
+  },
   "connectivity": {
    "network": "5G",
    "nfc": true,
-   "sim": "Nano-SIM + eSIM, or dual eSIM"
+   "sim": "Nano-SIM + eSIM, or dual eSIM",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7"
   },
   "cardSlot": false,
   "os": "iOS",
@@ -3863,6 +4348,17 @@
   "aliases": [
    "iPhone 18 Pro Max",
    "Apple iPhone 18 Pro Max"
+  ],
+  "body": {
+   "weight": 249,
+   "height": 163.4,
+   "width": 78,
+   "thickness": 8.8,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -3921,7 +4417,8 @@
   },
   "battery": {
    "capacity": 3149,
-   "wireless": 20
+   "wireless": 20,
+   "wired": 20
   },
   "body": {
    "height": 156.2,
@@ -3947,7 +4444,10 @@
    "variants[].priceAmd",
    "priceAmdMax"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-mac-mini-m4",
@@ -14812,10 +15312,14 @@
    "type": "Actua OLED",
    "resolution": "1080x2424",
    "refresh": 120,
-   "protection": "Gorilla Glass Victus 2"
+   "protection": "Gorilla Glass Victus 2",
+   "ppi": 421,
+   "brightness": 2700
   },
   "chipset": {
-   "name": "Google Tensor G5"
+   "name": "Google Tensor G5",
+   "process": "3 nm",
+   "gpu": "IMG DXT 1100 MHz"
   },
   "variants": [
    {
@@ -14834,7 +15338,8 @@
    "main": "48MP, f/1.7, OIS",
    "ultrawide": "13MP, f/2.2",
    "telephoto": "10.8MP, 5x optical, OIS",
-   "front": "10.5MP Dual PD, f/2.2, autofocus"
+   "front": "10.5MP Dual PD, f/2.2, autofocus",
+   "video": "4K"
   },
   "battery": {
    "capacity": 4970,
@@ -14842,13 +15347,19 @@
    "wireless": 15
   },
   "body": {
-   "ip": "IP68"
+   "ip": "IP68",
+   "weight": 204,
+   "height": 152.8,
+   "width": 72,
+   "thickness": 8.6,
+   "materials": "Aluminium alloy"
   },
   "connectivity": {
    "network": "5G",
    "nfc": true,
    "wifi": "Wi-Fi 6E",
-   "bluetooth": "6"
+   "bluetooth": "6",
+   "sim": "Dual SIM"
   },
   "cardSlot": false,
   "os": "Android 16",
@@ -14865,6 +15376,9 @@
   ],
   "settled": [
    "notADuplicate"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -14958,7 +15472,10 @@
    "variants[].priceAmd",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-10-pro-fold-gu0np",
@@ -14980,14 +15497,56 @@
     "priceAmd": 919000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.4,
+   "resolution": "1080x2364",
+   "refresh": 120,
+   "ppi": 419,
+   "brightness": 3000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5015,
+   "wired": 27,
+   "wireless": 15
+  },
   "summaryEn": "Google Pixel 10 Pro Fold /GU0NP.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Google Tensor G5",
+   "process": "3 nm",
+   "gpu": "IMG DXT 1100 MHz"
+  },
+  "body": {
+   "weight": 258,
+   "height": 155.2,
+   "width": 76.3,
+   "thickness": 10.8,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.7",
+   "front": "10 MP",
+   "video": "4K"
+  },
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-10-pro-xl",
@@ -15007,14 +15566,56 @@
     "priceAmd": 475900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.8,
+   "resolution": "1344x2992",
+   "refresh": 120,
+   "ppi": 482,
+   "brightness": 2700,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5200,
+   "wired": 45,
+   "wireless": 25
+  },
   "summaryEn": "Google Pixel 10 Pro XL.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Google Tensor G5",
+   "process": "3 nm",
+   "gpu": "IMG DXT 1100 MHz"
+  },
+  "body": {
+   "weight": 232,
+   "height": 162.8,
+   "width": 76.6,
+   "thickness": 8.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.69",
+   "front": "42 MP",
+   "video": "8K"
+  },
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-10a",
@@ -15029,7 +15630,10 @@
   "accent": "#8FA9C4",
   "connectivity": {
    "network": "5G",
-   "nfc": true
+   "nfc": true,
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6E",
+   "sim": "Dual SIM"
   },
   "os": "Android 16",
   "variants": [
@@ -15053,6 +15657,41 @@
    "popularity",
    "colors",
    "priceAmdMax"
+  ],
+  "display": {
+   "size": 6.3,
+   "resolution": "1080x2424",
+   "refresh": 120,
+   "ppi": 421,
+   "brightness": 3000,
+   "type": "pOLED"
+  },
+  "chipset": {
+   "name": "Google Tensor G4",
+   "process": "4 nm",
+   "gpu": "Mali-G715 940 MHz"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 30
+  },
+  "body": {
+   "weight": 183,
+   "height": 153.9,
+   "width": 73,
+   "thickness": 9,
+   "materials": "Metal",
+   "ip": "IP68"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "48 MP, f/1.7",
+   "front": "13 MP",
+   "video": "4K"
+  },
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -15068,10 +15707,15 @@
   "display": {
    "size": 6.8,
    "type": "LTPO OLED",
-   "refresh": 120
+   "refresh": 120,
+   "resolution": "1344x2992",
+   "ppi": 482,
+   "brightness": 2700
   },
   "chipset": {
-   "name": "Google Tensor G6"
+   "name": "Google Tensor G6",
+   "process": "2 nm",
+   "gpu": "PowerVR C-Series CXTP-48-1536"
   },
   "variants": [
    {
@@ -15086,13 +15730,27 @@
    "ultrawide": null,
    "telephoto": null,
    "front": "42 MP",
-   "video": null
+   "video": "4K"
   },
-  "battery": {},
-  "body": {},
+  "battery": {
+   "capacity": 5115,
+   "wired": 45,
+   "wireless": 25
+  },
+  "body": {
+   "weight": 226,
+   "height": 162.7,
+   "width": 76.5,
+   "thickness": 8.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
   "connectivity": {
    "network": "5G",
-   "nfc": true
+   "nfc": true,
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "sim": "Dual SIM"
   },
   "cardSlot": false,
   "os": "Android 17",
@@ -15108,7 +15766,11 @@
    "colors",
    "popularity"
   ],
-  "year": 2026
+  "year": 2026,
+  "released": "2026-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-9",
@@ -15128,14 +15790,55 @@
     "priceAmd": 285000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.3,
+   "resolution": "1080x2424",
+   "refresh": 120,
+   "ppi": 421,
+   "brightness": 2700,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 4700,
+   "wired": 27
+  },
   "summaryEn": "Google Pixel 9.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Google Tensor G4",
+   "process": "4 nm",
+   "gpu": "Mali-G715 940 MHz"
+  },
+  "body": {
+   "weight": 198,
+   "height": 152.8,
+   "width": 72,
+   "thickness": 8.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.69",
+   "front": "10.8 MP",
+   "video": "4K"
+  },
+  "released": "2024-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-9-pro",
@@ -15155,14 +15858,55 @@
     "priceAmd": 375000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.3,
+   "resolution": "1280x2856",
+   "refresh": 120,
+   "ppi": 497,
+   "brightness": 3000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 4700,
+   "wired": 27
+  },
   "summaryEn": "Google Pixel 9 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Google Tensor G4",
+   "process": "4 nm",
+   "gpu": "Mali-G715 940 MHz"
+  },
+  "body": {
+   "weight": 199,
+   "height": 152.8,
+   "width": 72,
+   "thickness": 8.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.69",
+   "front": "50 MP",
+   "video": "8K"
+  },
+  "released": "2024-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-9-pro-xl",
@@ -15182,14 +15926,55 @@
     "priceAmd": 389000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.8,
+   "resolution": "1344x2992",
+   "refresh": 120,
+   "ppi": 482,
+   "brightness": 3000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5060,
+   "wired": 37
+  },
   "summaryEn": "Google Pixel 9 Pro XL.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Google Tensor G4",
+   "process": "4 nm",
+   "gpu": "Mali-G715 940 MHz"
+  },
+  "body": {
+   "weight": 221,
+   "height": 162.8,
+   "width": 76.6,
+   "thickness": 8.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.69",
+   "front": "50 MP",
+   "video": "8K"
+  },
+  "released": "2024-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "google-pixel-9a",
@@ -15273,6 +16058,9 @@
   "category": "phone",
   "settled": [
    "notADuplicate"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -17628,14 +18416,54 @@
     "priceAmd": 159900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "1200x2664",
+   "refresh": 120,
+   "ppi": 436,
+   "brightness": 4000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5200,
+   "wired": 100
+  },
   "summaryEn": "Honor 200.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7 Gen 3 (SM7550-AB)",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 720"
+  },
+  "body": {
+   "weight": 187,
+   "height": 161.5,
+   "width": 74.6,
+   "thickness": 7.7,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.95",
+   "front": "50 MP",
+   "video": "4K"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-200-lite-5g",
@@ -17662,15 +18490,53 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "1080x2412",
+   "refresh": 90,
+   "ppi": 394,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 35
+  },
   "summaryEn": "Honor 200 Lite 5G.",
   "unsure": [
    "popularity"
   ],
   "colors": [],
   "os": "Android, MagicOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Dimensity 6080",
+   "process": "6 nm",
+   "gpu": "ARM Mali-G57"
+  },
+  "body": {
+   "weight": 166,
+   "height": 161.1,
+   "width": 74.6,
+   "thickness": 6.8,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.8",
+   "front": "50 MP"
+  },
+  "released": "2024-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-400",
@@ -17727,7 +18593,8 @@
    "width": 74.6,
    "thickness": 7.3,
    "weight": 184,
-   "materials": "Plastic frame, glass back"
+   "materials": "Plastic frame, glass back",
+   "ip": "IP65"
   },
   "connectivity": {
    "network": "5G",
@@ -17752,6 +18619,9 @@
   ],
   "aliases": [
    "Honor 400"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -17772,14 +18642,54 @@
     "priceAmd": 109900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "1080x2412",
+   "refresh": 120,
+   "ppi": 394,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5230,
+   "wired": 35
+  },
   "summaryEn": "Honor 400 Lite.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "MediaTek Dimensity 7025",
+   "process": "6 nm",
+   "gpu": "IMG BXM-8-256"
+  },
+  "body": {
+   "weight": 171,
+   "height": 161,
+   "width": 74.6,
+   "thickness": 7.3,
+   "materials": "Plastic",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.75",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2025-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-400-pro",
@@ -17861,6 +18771,9 @@
   ],
   "aliases": [
    "Honor 400 Pro"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -17918,13 +18831,54 @@
     "priceAmd": 229900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.57,
+   "resolution": "1264x2728",
+   "refresh": 120,
+   "ppi": 458,
+   "brightness": 5000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6400,
+   "wired": 80
+  },
   "summaryEn": "Honor 600.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7 Gen 4 (SM7750-AB)",
+   "process": "4 nm",
+   "gpu": "Adreno 722"
+  },
+  "body": {
+   "weight": 190,
+   "height": 156,
+   "width": 74.7,
+   "thickness": 7.8,
+   "materials": "Glass",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "200 MP, f/1.9",
+   "front": "50 MP",
+   "video": "4K"
+  },
+  "released": "2026-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-600-lite",
@@ -17944,13 +18898,53 @@
     "priceAmd": 139900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.6,
+   "resolution": "1200x2600",
+   "refresh": 120,
+   "ppi": 434,
+   "brightness": 6500,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6520,
+   "wired": 45
+  },
   "summaryEn": "Honor 600 Lite.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "MediaTek Dimensity 7100",
+   "process": "6 nm",
+   "gpu": "Mali-G610 MC2"
+  },
+  "body": {
+   "weight": 180,
+   "height": 157.4,
+   "width": 75.3,
+   "thickness": 7.3,
+   "materials": "Glass",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.88",
+   "front": "16 MP"
+  },
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-600-pro",
@@ -17970,13 +18964,55 @@
     "priceAmd": 329900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.57,
+   "resolution": "1264x2728",
+   "refresh": 120,
+   "ppi": 458,
+   "brightness": 5000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6400,
+   "wired": 80,
+   "wireless": 50
+  },
   "summaryEn": "Honor 600 Pro.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite",
+   "process": "3 nm",
+   "gpu": "Adreno 830"
+  },
+  "body": {
+   "weight": 200,
+   "height": 156,
+   "width": 74.7,
+   "thickness": 7.8,
+   "materials": "Glass",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.9",
+   "front": "50 MP",
+   "video": "4K"
+  },
+  "released": "2026-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-band-6",
@@ -18344,6 +19380,10 @@
   "aliases": [
    "Honor Magic 7 Pro",
    "Magic 7 Pro"
+  ],
+  "cardSlot": false,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -18364,14 +19404,55 @@
     "priceAmd": 499900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.71,
+   "resolution": "1256x2808",
+   "ppi": 458,
+   "brightness": 6000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 6270,
+   "wired": 100,
+   "wireless": 80
+  },
   "summaryEn": "Honor Magic 8 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+   "process": "3 nm",
+   "gpu": "Adreno 840 1.2 GHz"
+  },
+  "body": {
+   "weight": 219,
+   "height": 161.2,
+   "width": 75,
+   "thickness": 8.3,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.6",
+   "front": "50 MP",
+   "video": "8K"
+  },
+  "released": "2025-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-magic7",
@@ -18391,14 +19472,56 @@
     "priceAmd": 299000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.78,
+   "resolution": "1264x2800",
+   "refresh": 120,
+   "ppi": 453,
+   "brightness": 5000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5650,
+   "wired": 100,
+   "wireless": 80
+  },
   "summaryEn": "Honor Magic7.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite",
+   "process": "3 nm",
+   "gpu": "Adreno 830"
+  },
+  "body": {
+   "weight": 199,
+   "height": 162.1,
+   "width": 75.8,
+   "thickness": 7.9,
+   "materials": "Plastic",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.9",
+   "front": "50 MP",
+   "video": "4K"
+  },
+  "released": "2024-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
@@ -18576,14 +19699,49 @@
     "priceAmd": 159900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 12.1,
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "ppi": 249,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 10100,
+   "wired": 35
+  },
   "summaryEn": "Honor Pad 10 5G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7 Gen 3 (SM7550-AB)",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 720"
+  },
+  "body": {
+   "weight": 525,
+   "height": 277.1,
+   "width": 179.3,
+   "thickness": 6.3,
+   "materials": "Metal"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "8 MP"
+  },
+  "released": "2025-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-8",
@@ -18603,14 +19761,48 @@
     "priceAmd": 119900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 12,
+   "resolution": "2000x1200",
+   "ppi": 225,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 7250,
+   "wired": 22.5
+  },
   "summaryEn": "Honor Pad 8.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 520,
+   "height": 278.5,
+   "width": 174.1,
+   "thickness": 6.9,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "5 MP",
+   "front": "5 MP"
+  },
+  "released": "2022-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-9-5g",
@@ -18632,13 +19824,50 @@
     "priceAmd": 134900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 12.1,
+   "resolution": "2590x1600",
+   "refresh": 120,
+   "ppi": 252,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 8300,
+   "wired": 35
+  },
   "summaryEn": "Honor Pad 9 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen1",
+   "process": "4 nm",
+   "gpu": "Adreno 710"
+  },
+  "body": {
+   "weight": 555,
+   "height": 278.3,
+   "width": 180.1,
+   "thickness": 7,
+   "materials": "Glass",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "13 MP, f/2.0",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2023-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-x7-jms-w09",
@@ -18660,13 +19889,48 @@
     "priceAmd": 59900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.7,
+   "resolution": "1340x800",
+   "ppi": 179,
+   "brightness": 650,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 7020,
+   "wired": 10
+  },
   "summaryEn": "Honor Pad X7 JMS-W09.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 365,
+   "height": 211.8,
+   "width": 124.8,
+   "thickness": 8,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2025-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-x7-lte-jms-l09",
@@ -18688,13 +19952,48 @@
     "priceAmd": 64900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.7,
+   "resolution": "1340x800",
+   "ppi": 179,
+   "brightness": 650,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 7020,
+   "wired": 10
+  },
   "summaryEn": "Honor Pad X7 LTE JMS-L09.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 365,
+   "height": 211.8,
+   "width": 124.8,
+   "thickness": 8,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2025-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-x8b-ndl2-l09",
@@ -18716,13 +20015,49 @@
     "priceAmd": 104900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 11,
+   "resolution": "1920x1200",
+   "refresh": 90,
+   "ppi": 206,
+   "brightness": 500,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 10100,
+   "wired": 22.5
+  },
   "summaryEn": "Honor Pad X8b NDL2-L09.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 496,
+   "height": 256.9,
+   "width": 168.5,
+   "thickness": 7.3,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "5 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2026-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-x8b-ndl2-w09",
@@ -18744,13 +20079,49 @@
     "priceAmd": 94900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 11,
+   "resolution": "1920x1200",
+   "refresh": 90,
+   "ppi": 206,
+   "brightness": 500,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 10100,
+   "wired": 22.5
+  },
   "summaryEn": "Honor Pad X8b NDL2-W09.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 496,
+   "height": 256.9,
+   "width": 168.5,
+   "thickness": 7.3,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "5 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2026-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-pad-x9a",
@@ -18773,13 +20144,48 @@
     "priceAmd": 179900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 11.5,
+   "resolution": "2508x1504",
+   "refresh": 120,
+   "ppi": 203,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 8300,
+   "wired": 10
+  },
   "summaryEn": "Honor Pad X9a.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 475,
+   "height": 267.3,
+   "width": 167.4,
+   "thickness": 6.8,
+   "materials": "Metal"
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "8 MP, f/2.2",
+   "front": "5 MP"
+  },
+  "released": "2025-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-watch-gs-3-rubber",
@@ -18825,14 +20231,52 @@
     "priceAmd": 39900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.56,
+   "resolution": "720x1612",
+   "refresh": 90,
+   "ppi": 269,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 5200,
+   "wired": 10
+  },
   "summaryEn": "Honor X5b Plus.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Mediatek Helio G36",
+   "process": "12 nm",
+   "gpu": "IMG PowerVR GE8320 680 MHz"
+  },
+  "body": {
+   "weight": 194,
+   "height": 163.8,
+   "width": 75.7,
+   "thickness": 8.7,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2024-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x6c",
@@ -18852,13 +20296,52 @@
     "priceAmd": 49900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.61,
+   "resolution": "720x1604",
+   "ppi": 266,
+   "brightness": 500,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 5300,
+   "wired": 35
+  },
   "summaryEn": "Honor X6c.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "MediaTek Helio G81 Ultra",
+   "process": "12 nm",
+   "gpu": "Mali-G52 MC2"
+  },
+  "body": {
+   "weight": 199,
+   "height": 164,
+   "width": 75.6,
+   "thickness": 8.4,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2025-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x7b",
@@ -18878,14 +20361,52 @@
     "priceAmd": 64900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.8,
+   "resolution": "1080x2412",
+   "ppi": 389,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5330,
+   "wired": 35
+  },
   "summaryEn": "Honor X7b.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 196,
+   "height": 166.8,
+   "width": 76.5,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "108 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2023-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x7c",
@@ -18905,14 +20426,52 @@
     "priceAmd": 77900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.77,
+   "resolution": "720x1610",
+   "ppi": 261,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 35
+  },
   "summaryEn": "Honor X7c.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, MagicOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 196,
+   "height": 166.9,
+   "width": 76.8,
+   "thickness": 8.1,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2024-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x7d",
@@ -18937,13 +20496,51 @@
     "priceAmd": 78900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.77,
+   "resolution": "720x1610",
+   "ppi": 261,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6500,
+   "wired": 35
+  },
   "summaryEn": "Honor X7d.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 208,
+   "height": 166.9,
+   "width": 76.8,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x7e",
@@ -18970,13 +20567,52 @@
     "priceAmd": 89900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.61,
+   "resolution": "720x1604",
+   "ppi": 266,
+   "brightness": 500,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 7500,
+   "wired": 45
+  },
   "summaryEn": "Honor X7E.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "MediaTek Helio G81 Ultra",
+   "process": "12 nm",
+   "gpu": "Mali-G52 MC2"
+  },
+  "body": {
+   "weight": 200,
+   "height": 163.9,
+   "width": 75.9,
+   "thickness": 8.3,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2026-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x8",
@@ -18996,8 +20632,17 @@
     "priceAmd": 98900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "1080x2388",
+   "refresh": 90,
+   "ppi": 391,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 4000,
+   "wired": 22.5
+  },
   "summaryEn": "Honor X8.",
   "unsure": [
    "popularity"
@@ -19006,7 +20651,36 @@
    "notADuplicate"
   ],
   "os": "Android, MagicOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 177,
+   "height": 163.4,
+   "width": 74.7,
+   "thickness": 7.4,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "64 MP, f/1.8",
+   "front": "16 MP"
+  },
+  "released": "2022-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x8b",
@@ -19031,8 +20705,18 @@
     "priceAmd": 94900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "1080x2412",
+   "refresh": 90,
+   "ppi": 394,
+   "brightness": 2000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 35
+  },
   "summaryEn": "Honor X8b.",
   "unsure": [
    "popularity"
@@ -19041,7 +20725,36 @@
    "notADuplicate"
   ],
   "os": "Android, MagicOS",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 166,
+   "height": 161.1,
+   "width": 74.6,
+   "thickness": 6.8,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.75",
+   "front": "50 MP"
+  },
+  "released": "2023-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x8c",
@@ -19059,7 +20772,8 @@
    "type": "AMOLED",
    "resolution": "1080x2412",
    "refresh": 90,
-   "ppi": 394
+   "ppi": 394,
+   "brightness": 2800
   },
   "chipset": {
    "name": "Qualcomm Snapdragon 685",
@@ -19080,7 +20794,11 @@
   },
   "body": {
    "weight": 179,
-   "materials": "Plastic frame and back"
+   "materials": "Plastic frame and back",
+   "height": 161,
+   "width": 74.5,
+   "thickness": 7.1,
+   "ip": "IP64"
   },
   "connectivity": {
    "network": "4G",
@@ -19110,6 +20828,10 @@
   ],
   "settled": [
    "notADuplicate"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -19135,13 +20857,53 @@
     "priceAmd": 114900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.72,
+   "resolution": "1080x2392",
+   "refresh": 120,
+   "ppi": 391,
+   "brightness": 3000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 7000,
+   "wired": 45
+  },
   "summaryEn": "Honor X8d.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6s Gen2",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 188,
+   "height": 162.9,
+   "width": 76.3,
+   "thickness": 7.5,
+   "materials": "Polycarbonate",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.75",
+   "front": "16 MP"
+  },
+  "released": "2026-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x9",
@@ -19161,8 +20923,17 @@
     "priceAmd": 117900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.81,
+   "resolution": "1080x2388",
+   "refresh": 90,
+   "ppi": 385,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 4800,
+   "wired": 66
+  },
   "summaryEn": "Honor X9.",
   "unsure": [
    "popularity"
@@ -19171,7 +20942,36 @@
    "notADuplicate"
   ],
   "os": "Android, MagicOS",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 189,
+   "height": 166.1,
+   "width": 75.8,
+   "thickness": 8.1,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "64 MP, f/1.8",
+   "front": "16 MP"
+  },
+  "released": "2022-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "honor-x9b",
@@ -19215,7 +21015,8 @@
    "width": 75.5,
    "thickness": 8,
    "weight": 185,
-   "materials": "Plastic frame, glass back"
+   "materials": "Plastic frame, glass back",
+   "ip": "IP53"
   },
   "connectivity": {
    "network": "5G",
@@ -19249,6 +21050,10 @@
   ],
   "settled": [
    "notADuplicate"
+  ],
+  "cardSlot": false,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -19296,7 +21101,8 @@
    "main": "108 MP, f/1.75, 1/1.67-inch, OIS",
    "ultrawide": "5 MP, f/2.2",
    "front": "16 MP, f/2.45",
-   "modules": 2
+   "modules": 2,
+   "video": "4K"
   },
   "battery": {
    "capacity": 6600,
@@ -19308,12 +21114,15 @@
    "width": 75.5,
    "thickness": 8,
    "weight": 189,
-   "ip": "IP65M"
+   "ip": "IP65M",
+   "materials": "Plastic"
   },
   "connectivity": {
    "network": "5G",
    "nfc": true,
-   "sim": "Dual Nano-SIM"
+   "sim": "Dual Nano-SIM",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5"
   },
   "cardSlot": false,
   "os": "Android, MagicOS",
@@ -19330,6 +21139,9 @@
   "category": "phone",
   "aliases": [
    "Honor X9c"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -19350,13 +21162,54 @@
     "priceAmd": 149900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.79,
+   "resolution": "1200x2640",
+   "refresh": 120,
+   "ppi": 437,
+   "brightness": 1200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 8300,
+   "wired": 66
+  },
   "summaryEn": "Honor X9d.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, MagicOS"
+  "os": "Android, MagicOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen4",
+   "process": "4 nm",
+   "gpu": "Adreno GPU"
+  },
+  "body": {
+   "weight": 199,
+   "height": 161.9,
+   "width": 76.1,
+   "thickness": 7.8,
+   "materials": "Plastic",
+   "ip": "IP69"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.75",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2025-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "hp-14-dq6015dx",
@@ -22133,14 +23986,47 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 9.7,
+   "resolution": "1200x800",
+   "ppi": 149,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 5
+  },
   "summaryEn": "Huawei MatePad T10.",
   "unsure": [
    "popularity"
   ],
   "os": "HarmonyOS",
-  "year": 2020
+  "year": 2020,
+  "chipset": {
+   "name": "Huawei HiSilicon Kirin 710A",
+   "process": "12 nm",
+   "gpu": "ARM Mali-G51 MP4"
+  },
+  "body": {
+   "weight": 460,
+   "height": 240.2,
+   "width": 159,
+   "thickness": 7.5
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "5 MP, f/2.2",
+   "front": "2 MP"
+  },
+  "released": "2020-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "jbl-authentics-200",
@@ -25579,14 +27465,48 @@
     "priceAmd": 74900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 9,
+   "resolution": "1340x800",
+   "ppi": 173,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 10
+  },
   "summaryEn": "Lenovo Tab M9 TB310XU ACC ZAC50096RU.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G80 (MT6769T)",
+   "process": "12 nm",
+   "gpu": "ARM Mali-G52 MC2"
+  },
+  "body": {
+   "weight": 344,
+   "height": 214.4,
+   "width": 136.7,
+   "thickness": 7.9,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "2 MP"
+  },
+  "released": "2022-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "lenovo-think-book-14-g8-irl",
@@ -29087,14 +31007,56 @@
     "priceAmd": 289900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 393,
+   "brightness": 1500,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4700,
+   "wired": 45,
+   "wireless": 15
+  },
   "summaryEn": "Nothing Phone 2.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, Nothing OS",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8+ Gen1",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 730 875 MHz"
+  },
+  "body": {
+   "weight": 201,
+   "height": 162.1,
+   "width": 76.4,
+   "thickness": 8.6,
+   "materials": "Aluminium alloy",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.88",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2023-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "nothing-phone-3",
@@ -29191,10 +31153,16 @@
   "accent": "#3C4654",
   "display": {
    "size": 6.78,
-   "type": "AMOLED"
+   "type": "AMOLED",
+   "resolution": "1272x2772",
+   "refresh": 120,
+   "ppi": 456,
+   "brightness": 1800
   },
   "chipset": {
-   "name": "Qualcomm Snapdragon 8s Gen 4"
+   "name": "Qualcomm Snapdragon 8s Gen 4",
+   "process": "4 nm",
+   "gpu": "Adreno 825"
   },
   "variants": [
    {
@@ -29209,12 +31177,26 @@
    "ultrawide": null,
    "telephoto": null,
    "front": "32 MP",
-   "video": null
+   "video": "4K"
   },
-  "battery": {},
-  "body": {},
+  "battery": {
+   "capacity": 7500,
+   "wired": 80
+  },
+  "body": {
+   "weight": 210,
+   "height": 162.5,
+   "width": 77.5,
+   "thickness": 8.5,
+   "materials": "Glass",
+   "ip": "IP65"
+  },
   "connectivity": {
-   "network": "5G"
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6E",
+   "nfc": true,
+   "sim": "Dual SIM"
   },
   "cardSlot": false,
   "os": "Android, OxygenOS",
@@ -29228,7 +31210,11 @@
    "colors",
    "popularity"
   ],
-  "year": 2026
+  "year": 2026,
+  "released": "2026-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "oppo-reno-a18",
@@ -29248,13 +31234,53 @@
     "priceAmd": 61900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.56,
+   "resolution": "720x1612",
+   "refresh": 90,
+   "ppi": 269,
+   "brightness": 720,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "OPPO Reno A18.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, ColorOS"
+  "os": "Android, ColorOS",
+  "chipset": {
+   "name": "MediaTek Helio G85 (MT6769V/CZ)",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 950MHz"
+  },
+  "body": {
+   "weight": 188,
+   "height": 163.7,
+   "width": 75,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP52"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2023-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "oppo-reno-a38",
@@ -29274,13 +31300,53 @@
     "priceAmd": 66900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.56,
+   "resolution": "720x1612",
+   "refresh": 90,
+   "ppi": 269,
+   "brightness": 720,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "OPPO Reno A38.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, ColorOS"
+  "os": "Android, ColorOS",
+  "chipset": {
+   "name": "MediaTek Helio G85 (MT6769V/CZ)",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 950MHz"
+  },
+  "body": {
+   "weight": 190,
+   "height": 163.7,
+   "width": 75,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP52"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2023-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "oppo-reno-a58",
@@ -29300,13 +31366,52 @@
     "priceAmd": 82900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.72,
+   "resolution": "1080x2400",
+   "ppi": 392,
+   "brightness": 680,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "OPPO Reno A58.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, ColorOS"
+  "os": "Android, ColorOS",
+  "chipset": {
+   "name": "MediaTek Helio G85 (MT6769V/CZ)",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 950MHz"
+  },
+  "body": {
+   "weight": 192,
+   "height": 165.7,
+   "width": 76,
+   "thickness": 8,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2023-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "oppo-reno-a78",
@@ -29326,13 +31431,53 @@
     "priceAmd": 115900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.43,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 409,
+   "brightness": 800,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 67
+  },
   "summaryEn": "OPPO Reno A78.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, ColorOS"
+  "os": "Android, ColorOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 180,
+   "height": 160,
+   "width": 73.2,
+   "thickness": 7.9,
+   "materials": "Polycarbonate",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2023-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "oppo-reno8t",
@@ -29352,14 +31497,53 @@
     "priceAmd": 149900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.43,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 409,
+   "brightness": 800,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "OPPO Reno8T.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, ColorOS",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 180,
+   "height": 160.8,
+   "width": 73.8,
+   "thickness": 7.8,
+   "materials": "Polycarbonate"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.7",
+   "front": "32 MP"
+  },
+  "released": "2023-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "philips-24-usb-c-24e1n3300a-00",
@@ -29444,7 +31628,9 @@
    "size": 6.88,
    "type": "IPS LCD",
    "resolution": "720x1640",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 260,
+   "brightness": 600
   },
   "chipset": {
    "name": "MediaTek Helio G81 Ultra",
@@ -29465,13 +31651,17 @@
   "body": {
    "weight": 204,
    "materials": "Plastic frame and back",
-   "ip": "IP52"
+   "ip": "IP52",
+   "height": 171.9,
+   "width": 77.8,
+   "thickness": 8.2
   },
   "connectivity": {
    "network": "4G",
    "bluetooth": "5.4",
    "nfc": false,
-   "sim": "Dual nano-SIM"
+   "sim": "Dual nano-SIM",
+   "wifi": "Wi-Fi 5"
   },
   "cardSlot": true,
   "os": "Android 14, HyperOS",
@@ -29499,6 +31689,9 @@
   ],
   "aliases": [
    "POCO C75"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -29521,13 +31714,53 @@
     "priceAmd": 80900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.9,
+   "resolution": "720x1600",
+   "refresh": 120,
+   "ppi": 254,
+   "brightness": 800,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 15
+  },
   "summaryEn": "POCO C81 Pro.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Unisoc Tiger T615 (T7250)",
+   "process": "12 nm",
+   "gpu": "Mali-G57 MP1"
+  },
+  "body": {
+   "weight": 208,
+   "height": 171.6,
+   "width": 79.5,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "13 MP, f/2.2",
+   "front": "8 MP"
+  },
+  "released": "2026-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "poco-c85",
@@ -29569,7 +31802,10 @@
   "body": {
    "weight": 205,
    "materials": "Plastic frame, glass front",
-   "ip": "IP64"
+   "ip": "IP64",
+   "height": 173.2,
+   "width": 81.1,
+   "thickness": 8.2
   },
   "connectivity": {
    "network": "4G",
@@ -29603,6 +31839,9 @@
   ],
   "aliases": [
    "POCO POCO C85"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -29626,14 +31865,55 @@
     "priceAmd": 256900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1440x3200",
+   "refresh": 120,
+   "ppi": 526,
+   "brightness": 3200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 90
+  },
   "summaryEn": "POCO F7 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Gen3",
+   "process": "4 nm",
+   "gpu": "Adreno 750"
+  },
+  "body": {
+   "weight": 206,
+   "height": 160.3,
+   "width": 75,
+   "thickness": 8.1,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.6",
+   "front": "20 MP",
+   "video": "8K"
+  },
+  "released": "2025-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "poco-f7-ultra",
@@ -29716,6 +31996,9 @@
   ],
   "aliases": [
    "POCO POCO F7 Ultra"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -29798,6 +32081,9 @@
   "aliases": [
    "Xiaomi Poco X7 Pro",
    "POCO POCO X7 Pro"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -29820,13 +32106,54 @@
     "priceAmd": 209900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.59,
+   "resolution": "1268x2756",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3500,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6500,
+   "wired": 100
+  },
   "summaryEn": "POCO X8 Pro 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "MediaTek Dimensity 8500 Ultra",
+   "process": "4 nm",
+   "gpu": "Mali-G720 MC8"
+  },
+  "body": {
+   "weight": 204,
+   "height": 157.5,
+   "width": 75.2,
+   "thickness": 8.4,
+   "materials": "Glass",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.5",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "realme-16",
@@ -29959,7 +32286,9 @@
   "connectivity": {
    "network": "4G LTE",
    "wifi": "Wi-Fi 5 (802.11ac)",
-   "sim": "Dual nano-SIM"
+   "sim": "Dual nano-SIM",
+   "bluetooth": "5.0",
+   "nfc": true
   },
   "cardSlot": true,
   "os": "Android 14, realme UI 5.0",
@@ -29969,7 +32298,10 @@
    "priceAmdMax",
    "variants[].priceAmd"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "realme-gt-7t",
@@ -30018,7 +32350,8 @@
   },
   "battery": {
    "capacity": 7000,
-   "wireless": 0
+   "wireless": 0,
+   "wired": 120
   },
   "body": {
    "height": 162.4,
@@ -30031,7 +32364,9 @@
   "connectivity": {
    "network": "5G",
    "nfc": true,
-   "sim": "Dual nano-SIM"
+   "sim": "Dual nano-SIM",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6"
   },
   "cardSlot": false,
   "os": "Android 15, realme UI 6",
@@ -30045,6 +32380,9 @@
   ],
   "aliases": [
    "Realme GT 7T"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -30095,14 +32433,53 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.5,
+   "resolution": "1080x2340",
+   "refresh": 90,
+   "ppi": 396,
+   "brightness": 800,
+   "type": "Super AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25
+  },
   "summaryEn": "Samsung A15.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 200,
+   "height": 160.1,
+   "width": 76.8,
+   "thickness": 8.4,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "13 MP"
+  },
+  "released": "2023-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-a25",
@@ -30127,14 +32504,54 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.5,
+   "resolution": "1080x2340",
+   "refresh": 120,
+   "ppi": 396,
+   "brightness": 1000,
+   "type": "Super AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25
+  },
   "summaryEn": "Samsung A25.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Samsung Exynos 1280",
+   "process": "5 nm",
+   "gpu": "Mali-G68 MC4"
+  },
+  "body": {
+   "weight": 197,
+   "height": 161,
+   "width": 76.5,
+   "thickness": 8.3,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "13 MP",
+   "video": "4K"
+  },
+  "released": "2023-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-eo-ic100-usb-type-c",
@@ -30456,7 +32873,10 @@
   },
   "connectivity": {
    "network": "4G LTE",
-   "sim": "Dual Nano-SIM"
+   "sim": "Dual Nano-SIM",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
   },
   "cardSlot": true,
   "os": "Android 14, One UI 6.1",
@@ -30469,7 +32889,10 @@
   "unsure": [
    "variants"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a07",
@@ -30485,11 +32908,14 @@
    "size": 6.7,
    "type": "PLS LCD",
    "resolution": "1600x720",
-   "refresh": 90
+   "refresh": 90,
+   "ppi": 262
   },
   "chipset": {
    "name": "MediaTek Helio G99",
-   "cpu": "Octa-core (2.2 GHz + 2.0 GHz)"
+   "cpu": "Octa-core (2.2 GHz + 2.0 GHz)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
   },
   "variants": [
    {
@@ -30511,7 +32937,8 @@
    "video": "1080p@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 25
   },
   "body": {
    "height": 167.4,
@@ -30546,6 +32973,9 @@
   "category": "phone",
   "settled": [
    "notADuplicate"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -30569,13 +32999,51 @@
     "priceAmd": 59900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "720x1600",
+   "ppi": 262,
+   "type": "PLS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25
+  },
   "summaryEn": "Samsung A07s.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, One UI"
+  "os": "Android, One UI",
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 188,
+   "height": 167.4,
+   "width": 77.4,
+   "thickness": 7.6,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2026-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a08",
@@ -30693,6 +33161,9 @@
   "aliases": [
    "Samsung A165",
    "A165"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -30708,11 +33179,14 @@
    "size": 6.7,
    "type": "Super AMOLED",
    "resolution": "2340x1080",
-   "refresh": 90
+   "refresh": 90,
+   "ppi": 385
   },
   "chipset": {
    "name": "Samsung Exynos 1330",
-   "cpu": "Octa-core (2.4 GHz + 2.0 GHz)"
+   "cpu": "Octa-core (2.4 GHz + 2.0 GHz)",
+   "process": "5 nm",
+   "gpu": "Mali-G68 MC4"
   },
   "variants": [
    {
@@ -30735,7 +33209,8 @@
    "video": "1080p@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 25
   },
   "body": {
    "height": 164.4,
@@ -30768,7 +33243,11 @@
    "colors"
   ],
   "category": "phone",
-  "year": 2025
+  "year": 2025,
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a26",
@@ -30852,7 +33331,10 @@
   "unsure": [
    "priceAmd"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a27",
@@ -30867,10 +33349,14 @@
    "size": 6.7,
    "type": "Super AMOLED",
    "resolution": "2340x1080",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 385
   },
   "chipset": {
-   "cpu": "Octa-core (2.4 GHz + 1.8 GHz)"
+   "cpu": "Octa-core (2.4 GHz + 1.8 GHz)",
+   "name": "Qualcomm Snapdragon 6 Gen 3",
+   "process": "4 nm",
+   "gpu": "Adreno 710"
   },
   "variants": [
    {
@@ -30893,14 +33379,16 @@
    "video": "4K@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 25
   },
   "body": {
    "height": 162.4,
    "width": 78.2,
    "thickness": 7.8,
    "weight": 200,
-   "materials": "Plastic frame, glass front"
+   "materials": "Plastic frame, glass front",
+   "ip": "IP64"
   },
   "connectivity": {
    "network": "5G",
@@ -30924,7 +33412,11 @@
    "popularity",
    "colors"
   ],
-  "category": "phone"
+  "category": "phone",
+  "released": "2026-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a34",
@@ -30949,14 +33441,54 @@
     "priceAmd": 118900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.6,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 399,
+   "type": "Super AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25
+  },
   "summaryEn": "Samsung Galaxy A34.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Dimensity 1080 (MT6877V)",
+   "process": "6 nm",
+   "gpu": "Mali-G68 MC4"
+  },
+  "body": {
+   "weight": 199,
+   "height": 161.3,
+   "width": 78.1,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.8",
+   "front": "13 MP",
+   "video": "4K"
+  },
+  "released": "2023-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a35",
@@ -30981,14 +33513,54 @@
     "priceAmd": 129900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.6,
+   "resolution": "1080x2340",
+   "refresh": 120,
+   "ppi": 403,
+   "type": "Super AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 25
+  },
   "summaryEn": "Samsung Galaxy A35.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Exynos 1380",
+   "process": "5 nm",
+   "gpu": "ARM Mali-G68 MP5"
+  },
+  "body": {
+   "weight": 209,
+   "height": 161.7,
+   "width": 78,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP67"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "13 MP",
+   "video": "4K"
+  },
+  "released": "2024-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a36",
@@ -31078,6 +33650,9 @@
    "Սմարթֆոն Samsung A366 /128GB Lime",
    "Samsung A366",
    "A366"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -31093,10 +33668,15 @@
    "size": 6.7,
    "type": "Super AMOLED",
    "resolution": "2340x1080",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 1900
   },
   "chipset": {
-   "cpu": "Octa-core (2.75 GHz + 2.0 GHz)"
+   "cpu": "Octa-core (2.75 GHz + 2.0 GHz)",
+   "name": "Exynos 1480",
+   "process": "4 nm",
+   "gpu": "Samsung Xclipse 530"
   },
   "variants": [
    {
@@ -31119,14 +33699,16 @@
    "video": "4K@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 45
   },
   "body": {
    "height": 162.9,
    "width": 78.2,
    "thickness": 7.4,
    "weight": 196,
-   "materials": "Plastic frame, glass front"
+   "materials": "Plastic frame, glass front",
+   "ip": "IP68"
   },
   "connectivity": {
    "network": "5G",
@@ -31153,7 +33735,11 @@
    "popularity",
    "colors"
   ],
-  "category": "phone"
+  "category": "phone",
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a55",
@@ -31236,6 +33822,9 @@
   "aliases": [
    "Samsung Galaxy A55",
    "Galaxy A55"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -31323,7 +33912,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-a57",
@@ -31338,10 +33930,15 @@
    "size": 6.7,
    "type": "Super AMOLED Plus",
    "resolution": "2340x1080",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 1900
   },
   "chipset": {
-   "cpu": "Octa-core (2.9 GHz + 2.6 GHz + 1.9 GHz)"
+   "cpu": "Octa-core (2.9 GHz + 2.6 GHz + 1.9 GHz)",
+   "name": "Exynos 1680",
+   "process": "4 nm",
+   "gpu": "Xclipse 550"
   },
   "variants": [
    {
@@ -31364,14 +33961,16 @@
    "video": "4K@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 45
   },
   "body": {
    "height": 161.5,
    "width": 76.8,
    "thickness": 6.9,
    "weight": 179,
-   "materials": "Aluminium frame, glass front and back"
+   "materials": "Aluminium frame, glass front and back",
+   "ip": "IP68"
   },
   "connectivity": {
    "network": "5G",
@@ -31395,7 +33994,11 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-active-2",
@@ -31880,7 +34483,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s25-edge",
@@ -31896,11 +34502,15 @@
    "size": 6.7,
    "type": "Dynamic AMOLED 2X",
    "resolution": "3120x1440",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 513,
+   "brightness": 2600
   },
   "chipset": {
    "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
-   "cpu": "Octa-core (4.47 GHz + 3.5 GHz)"
+   "cpu": "Octa-core (4.47 GHz + 3.5 GHz)",
+   "process": "3 nm",
+   "gpu": "Adreno 830"
   },
   "variants": [
    {
@@ -31922,7 +34532,8 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 3900
+   "capacity": 3900,
+   "wired": 25
   },
   "body": {
    "height": 158.2,
@@ -31953,7 +34564,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s25-fe",
@@ -31969,11 +34583,15 @@
    "size": 6.7,
    "type": "Dynamic AMOLED 2X",
    "resolution": "2340x1080",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 1900
   },
   "chipset": {
    "name": "Samsung Exynos 2400",
-   "cpu": "Deca-core (3.2 GHz + 2.9 GHz + 2.6 GHz + 1.95 GHz)"
+   "cpu": "Deca-core (3.2 GHz + 2.9 GHz + 2.6 GHz + 1.95 GHz)",
+   "process": "4 nm",
+   "gpu": "Xclipse 940"
   },
   "variants": [
    {
@@ -32001,7 +34619,9 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 4900
+   "capacity": 4900,
+   "wired": 45,
+   "wireless": 15
   },
   "body": {
    "height": 161.3,
@@ -32033,7 +34653,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s25-plus",
@@ -32113,6 +34736,10 @@
   "unsure": [
    "popularity",
    "priceAmdMax"
+  ],
+  "cardSlot": false,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -32201,7 +34828,10 @@
    "variants[].priceAmd",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s26",
@@ -32217,11 +34847,15 @@
    "size": 6.3,
    "type": "Dynamic AMOLED 2X",
    "resolution": "2340x1080",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 409,
+   "brightness": 2600
   },
   "chipset": {
    "name": "Samsung Exynos 2600",
-   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)"
+   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)",
+   "process": "2 nm",
+   "gpu": "GPU Samsung Xclipse 550"
   },
   "variants": [
    {
@@ -32244,7 +34878,9 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 4300
+   "capacity": 4300,
+   "wired": 25,
+   "wireless": 25
   },
   "body": {
    "height": 149.6,
@@ -32276,7 +34912,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s26-fe",
@@ -32291,10 +34930,15 @@
    "size": 6.7,
    "type": "Dynamic AMOLED 2X",
    "resolution": "2340x1080",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 385,
+   "brightness": 2600
   },
   "chipset": {
-   "cpu": "Deca-core (3.3 GHz + 2.74 GHz + 2.36 GHz + 1.8 GHz)"
+   "cpu": "Deca-core (3.3 GHz + 2.74 GHz + 2.36 GHz + 1.8 GHz)",
+   "name": "Samsung Exynos 2500",
+   "process": "3 nm",
+   "gpu": "Xclipse 950"
   },
   "variants": [
    {
@@ -32317,14 +34961,17 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 4900
+   "capacity": 4900,
+   "wired": 45,
+   "wireless": 25
   },
   "body": {
    "height": 161.6,
    "width": 76.9,
    "thickness": 7.4,
    "weight": 193,
-   "materials": "Aluminium frame, glass front and back"
+   "materials": "Aluminium frame, glass front and back",
+   "ip": "IP68"
   },
   "connectivity": {
    "network": "5G",
@@ -32349,7 +34996,11 @@
    "popularity"
   ],
   "category": "phone",
-  "year": 2026
+  "year": 2026,
+  "released": "2026-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s26-plus",
@@ -32365,11 +35016,15 @@
    "size": 6.7,
    "type": "Dynamic AMOLED 2X",
    "resolution": "3120x1440",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 513,
+   "brightness": 2600
   },
   "chipset": {
    "name": "Samsung Exynos 2600",
-   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)"
+   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)",
+   "process": "2 nm",
+   "gpu": "GPU Samsung Xclipse 550"
   },
   "variants": [
    {
@@ -32392,7 +35047,9 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 4900
+   "capacity": 4900,
+   "wired": 45,
+   "wireless": 25
   },
   "body": {
    "height": 158.4,
@@ -32424,7 +35081,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-s26-ultra",
@@ -32440,11 +35100,15 @@
    "size": 6.9,
    "type": "Dynamic AMOLED 2X",
    "resolution": "3120x1440",
-   "refresh": 120
+   "refresh": 120,
+   "ppi": 494,
+   "brightness": 2600
   },
   "chipset": {
    "name": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
-   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)"
+   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)",
+   "process": "3 nm",
+   "gpu": "Adreno 840 1.2 GHz"
   },
   "variants": [
    {
@@ -32472,7 +35136,9 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 60,
+   "wireless": 25
   },
   "body": {
    "height": 163.6,
@@ -32504,7 +35170,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a11",
@@ -32523,10 +35192,15 @@
   "display": {
    "size": 8.7,
    "type": "TFT LCD",
-   "touch": true
+   "touch": true,
+   "resolution": "1340x800",
+   "refresh": 90,
+   "ppi": 179
   },
   "chipset": {
-   "name": "MediaTek Helio G99"
+   "name": "MediaTek Helio G99",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
   },
   "variants": [
    {
@@ -32540,10 +35214,15 @@
     "priceAmd": 99900
    }
   ],
-  "battery": {},
+  "battery": {
+   "capacity": 5400,
+   "wired": 10
+  },
   "connectivity": {
    "network": "Wi-Fi, or LTE",
-   "wifi": "Wi-Fi 5"
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.0",
+   "nfc": false
   },
   "cardSlot": true,
   "os": "Android 15, One UI 7",
@@ -32551,7 +35230,22 @@
    "Silver",
    "Gray"
   ],
-  "summaryEn": "The cheapest Galaxy Tab — 8.7 inches, Wi-Fi or LTE."
+  "summaryEn": "The cheapest Galaxy Tab — 8.7 inches, Wi-Fi or LTE.",
+  "body": {
+   "weight": 335,
+   "height": 211,
+   "width": 124.7,
+   "thickness": 8,
+   "materials": "Magnesium alloy",
+   "ip": "IP52"
+  },
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a11-plus",
@@ -32572,10 +35266,14 @@
    "size": 11,
    "type": "TFT LCD",
    "refresh": 90,
-   "touch": true
+   "touch": true,
+   "resolution": "1920x1200",
+   "ppi": 206
   },
   "chipset": {
-   "name": "Snapdragon 6 Gen 3"
+   "name": "Snapdragon 6 Gen 3",
+   "process": "4 nm",
+   "gpu": "Arm Mali-G615 MC2"
   },
   "variants": [
    {
@@ -32589,13 +35287,23 @@
     "priceAmd": 141900
    }
   ],
-  "battery": {},
+  "battery": {
+   "capacity": 7040,
+   "wired": 25
+  },
   "body": {
-   "materials": "Aluminium unibody"
+   "materials": "Aluminium unibody",
+   "weight": 477,
+   "height": 257.1,
+   "width": 168.7,
+   "thickness": 6.9,
+   "ip": "IP52"
   },
   "connectivity": {
    "network": "Wi-Fi, or 5G",
-   "wifi": "Wi-Fi 6"
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.3",
+   "nfc": false
   },
   "cardSlot": true,
   "os": "Android 15, One UI 7",
@@ -32603,7 +35311,14 @@
    "Silver",
    "Gray"
   ],
-  "summaryEn": "Samsung's 11-inch budget tablet, sold in Wi-Fi and 5G versions."
+  "summaryEn": "Samsung's 11-inch budget tablet, sold in Wi-Fi and 5G versions.",
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a8-10-5-x200",
@@ -32626,14 +35341,48 @@
     "priceAmd": 77000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.5,
+   "resolution": "1920x1200",
+   "ppi": 216,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 7040,
+   "wired": 15
+  },
   "summaryEn": "Samsung Galaxy Tab A8 10.5 X200.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "Unisoc Tiger T618",
+   "process": "12 nm",
+   "gpu": "ARM Mali-G52 MP2"
+  },
+  "body": {
+   "weight": 508,
+   "height": 246.8,
+   "width": 161.9,
+   "thickness": 6.9,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "5 MP"
+  },
+  "released": "2021-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a8-10-5-x205",
@@ -32656,14 +35405,48 @@
     "priceAmd": 77000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.5,
+   "resolution": "1920x1200",
+   "ppi": 216,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 7040,
+   "wired": 15
+  },
   "summaryEn": "Samsung Galaxy Tab A8 10.5 X205.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "Unisoc Tiger T618",
+   "process": "12 nm",
+   "gpu": "ARM Mali-G52 MP2"
+  },
+  "body": {
+   "weight": 508,
+   "height": 246.8,
+   "width": 161.9,
+   "thickness": 6.9,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "5 MP"
+  },
+  "released": "2021-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a9-x110",
@@ -32687,14 +35470,48 @@
     "priceAmd": 55000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.7,
+   "resolution": "1340x800",
+   "ppi": 179,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 15
+  },
   "summaryEn": "Samsung Galaxy Tab A9 X110.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 366,
+   "height": 211,
+   "width": 124.7,
+   "thickness": 8,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "2 MP"
+  },
+  "released": "2023-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a9-x115",
@@ -32723,14 +35540,48 @@
     "priceAmd": 74000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.7,
+   "resolution": "1340x800",
+   "ppi": 179,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 5100,
+   "wired": 15
+  },
   "summaryEn": "Samsung Galaxy Tab A9 X115.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 366,
+   "height": 211,
+   "width": 124.7,
+   "thickness": 8,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "2 MP"
+  },
+  "released": "2023-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a9plus-x210",
@@ -32754,14 +35605,50 @@
     "priceAmd": 75000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 11,
+   "resolution": "1920x1200",
+   "refresh": 90,
+   "ppi": 206,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 7040,
+   "wired": 15
+  },
   "summaryEn": "Samsung Galaxy Tab A9+ X210.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 695 (SM6375)",
+   "process": "6 nm",
+   "gpu": "Qualcomm Adreno 619"
+  },
+  "body": {
+   "weight": 510,
+   "height": 257.1,
+   "width": 168.7,
+   "thickness": 6.9,
+   "materials": "Aluminium alloy",
+   "ip": "IP52"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "5 MP"
+  },
+  "released": "2023-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-a9plus-x216",
@@ -32789,14 +35676,50 @@
     "priceAmd": 109000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 11,
+   "resolution": "1920x1200",
+   "refresh": 90,
+   "ppi": 206,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 7040,
+   "wired": 15
+  },
   "summaryEn": "Samsung Galaxy Tab A9+ X216.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 695 (SM6375)",
+   "process": "6 nm",
+   "gpu": "Qualcomm Adreno 619"
+  },
+  "body": {
+   "weight": 510,
+   "height": 257.1,
+   "width": 168.7,
+   "thickness": 6.9,
+   "materials": "Aluminium alloy",
+   "ip": "IP52"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "5 MP"
+  },
+  "released": "2023-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-s10-fe",
@@ -32811,24 +35734,40 @@
   "display": {
    "size": 10.9,
    "resolution": "1440x2304",
-   "touch": true
+   "touch": true,
+   "refresh": 90,
+   "ppi": 249,
+   "brightness": 1750,
+   "type": "LCD IPS"
   },
   "chipset": {
-   "name": "Exynos 1580"
+   "name": "Exynos 1580",
+   "process": "4 nm",
+   "gpu": "Xclipse 540"
   },
   "camera": {
    "modules": 1,
    "main": "13 MP",
-   "front": "12 MP"
+   "front": "12 MP",
+   "video": "4K"
   },
   "battery": {
-   "capacity": 8000
+   "capacity": 8000,
+   "wired": 45
   },
   "body": {
-   "weight": 497
+   "weight": 497,
+   "height": 254.3,
+   "width": 165.8,
+   "thickness": 6,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
   },
   "connectivity": {
-   "sim": "Wi-Fi only"
+   "sim": "Wi-Fi only",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6E",
+   "nfc": false
   },
   "os": "Android 15",
   "released": "2025",
@@ -32842,6 +35781,10 @@
   ],
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -32860,11 +35803,14 @@
    "type": "Dynamic AMOLED 2X",
    "resolution": "1848x2960",
    "refresh": 120,
-   "touch": true
+   "touch": true,
+   "ppi": 239,
+   "brightness": 1750
   },
   "chipset": {
    "name": "MediaTek Dimensity 9300+",
-   "process": "4 nm"
+   "process": "4 nm",
+   "gpu": "Immortalis-G720 MC12 1300MHz"
   },
   "camera": {
    "modules": 2,
@@ -32879,7 +35825,11 @@
   },
   "body": {
    "weight": 718,
-   "ip": "IP68"
+   "ip": "IP68",
+   "height": 326.4,
+   "width": 208.6,
+   "thickness": 5.4,
+   "materials": "Aluminium alloy"
   },
   "connectivity": {
    "network": "Wi-Fi",
@@ -32904,6 +35854,9 @@
   "summaryEn": "Fourteen and a half inches of AMOLED, with the S Pen in the box.",
   "unsure": [
    "popularity"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -32919,25 +35872,41 @@
   "display": {
    "size": 14.6,
    "resolution": "1848x2960",
-   "touch": true
+   "touch": true,
+   "refresh": 120,
+   "ppi": 239,
+   "brightness": 1600,
+   "type": "AMOLED"
   },
   "chipset": {
-   "name": "Mediatek Dimensity 9400+"
+   "name": "Mediatek Dimensity 9400+",
+   "process": "3 nm",
+   "gpu": "Immortalis-G925 MC12 1,612 GHz"
   },
   "camera": {
    "modules": 2,
    "main": "13 MP",
    "ultrawide": "8 MP",
-   "front": "12 MP"
+   "front": "12 MP",
+   "video": "4K"
   },
   "battery": {
-   "capacity": 11600
+   "capacity": 11600,
+   "wired": 45
   },
   "body": {
-   "weight": 692
+   "weight": 692,
+   "height": 326.3,
+   "width": 208,
+   "thickness": 5.1,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
   },
   "connectivity": {
-   "sim": "Wi-Fi only"
+   "sim": "Wi-Fi only",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 7",
+   "nfc": false
   },
   "os": "Android 16",
   "released": "2025",
@@ -32951,6 +35920,10 @@
   ],
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -32965,25 +35938,40 @@
   "accent": "#5C6470",
   "display": {
    "size": 11,
-   "touch": true
+   "touch": true,
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "ppi": 274,
+   "type": "TFT LCD (IPS)"
   },
   "chipset": {
-   "name": "Snapdragon 8 Gen 1"
+   "name": "Snapdragon 8 Gen 1",
+   "process": "4 nm",
+   "gpu": "Adreno 730"
   },
   "camera": {
    "modules": 2,
    "main": "13 MP",
    "ultrawide": "6 MP",
-   "front": "12 MP"
+   "front": "12 MP",
+   "video": "4K"
   },
   "battery": {
-   "capacity": 8000
+   "capacity": 8000,
+   "wired": 45
   },
   "body": {
-   "weight": 503
+   "weight": 503,
+   "height": 253.8,
+   "width": 165.3,
+   "thickness": 6.3,
+   "materials": "Aluminium alloy"
   },
   "connectivity": {
-   "sim": "Wi-Fi only"
+   "sim": "Wi-Fi only",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
   },
   "os": "Android 12",
   "released": "2022",
@@ -32997,6 +35985,10 @@
   ],
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -33012,25 +36004,39 @@
   "display": {
    "size": 12.4,
    "resolution": "1752x2800",
-   "touch": true
+   "touch": true,
+   "refresh": 120,
+   "ppi": 266,
+   "type": "Super AMOLED"
   },
   "chipset": {
-   "name": "Snapdragon 8 Gen 1"
+   "name": "Snapdragon 8 Gen 1",
+   "process": "4 nm",
+   "gpu": "Adreno 730"
   },
   "camera": {
    "modules": 2,
    "main": "13 MP",
    "ultrawide": "6 MP",
-   "front": "12 MP"
+   "front": "12 MP",
+   "video": "4K"
   },
   "battery": {
-   "capacity": 10090
+   "capacity": 10090,
+   "wired": 45
   },
   "body": {
-   "weight": 567
+   "weight": 567,
+   "height": 285,
+   "width": 185,
+   "thickness": 5.7,
+   "materials": "Aluminium alloy"
   },
   "connectivity": {
-   "sim": "Wi-Fi only"
+   "sim": "Wi-Fi only",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
   },
   "os": "Android 12",
   "released": "2022",
@@ -33044,6 +36050,10 @@
   ],
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -33058,24 +36068,41 @@
   "accent": "#5C6470",
   "display": {
    "size": 11,
-   "touch": true
+   "touch": true,
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "ppi": 274,
+   "brightness": 1750,
+   "type": "AMOLED"
   },
   "chipset": {
-   "name": "Snapdragon 8 Gen 2"
+   "name": "Snapdragon 8 Gen 2",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 740"
   },
   "camera": {
    "modules": 1,
    "main": "13 MP",
-   "front": "12 MP"
+   "front": "12 MP",
+   "video": "4K"
   },
   "battery": {
-   "capacity": 8400
+   "capacity": 8400,
+   "wired": 45
   },
   "body": {
-   "weight": 498
+   "weight": 498,
+   "height": 254.3,
+   "width": 165.8,
+   "thickness": 5.9,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
   },
   "connectivity": {
-   "sim": "Wi-Fi only"
+   "sim": "Wi-Fi only",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
   },
   "os": "Android 13",
   "released": "2023",
@@ -33089,6 +36116,10 @@
   ],
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -33119,14 +36150,51 @@
     "priceAmd": 203000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.9,
+   "resolution": "2304x1440",
+   "refresh": 90,
+   "ppi": 249,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 8000,
+   "wired": 45
+  },
   "summaryEn": "Samsung Galaxy Tab S9 FE X510.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Exynos 1380",
+   "process": "5 nm",
+   "gpu": "ARM Mali-G68 MP5"
+  },
+  "body": {
+   "weight": 521,
+   "height": 254.3,
+   "width": 165.8,
+   "thickness": 6.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "12 MP, f/2.0",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2023-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -33156,14 +36224,51 @@
     "priceAmd": 246000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.9,
+   "resolution": "2304x1440",
+   "refresh": 90,
+   "ppi": 249,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 8000,
+   "wired": 45
+  },
   "summaryEn": "Samsung Galaxy Tab S9 FE X516.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Exynos 1380",
+   "process": "5 nm",
+   "gpu": "ARM Mali-G68 MP5"
+  },
+  "body": {
+   "weight": 521,
+   "height": 254.3,
+   "width": 165.8,
+   "thickness": 6.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "12 MP, f/2.0",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2023-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-tab-s9-plus",
@@ -33178,25 +36283,41 @@
   "display": {
    "size": 12.4,
    "resolution": "1752x2800",
-   "touch": true
+   "touch": true,
+   "refresh": 120,
+   "ppi": 266,
+   "brightness": 1750,
+   "type": "AMOLED"
   },
   "chipset": {
-   "name": "Snapdragon 8 Gen 2"
+   "name": "Snapdragon 8 Gen 2",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 740"
   },
   "camera": {
    "modules": 2,
    "main": "13 MP",
    "ultrawide": "8 MP",
-   "front": "12 MP"
+   "front": "12 MP",
+   "video": "4K"
   },
   "battery": {
-   "capacity": 10090
+   "capacity": 10090,
+   "wired": 45
   },
   "body": {
-   "weight": 581
+   "weight": 581,
+   "height": 285.4,
+   "width": 185.4,
+   "thickness": 5.7,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
   },
   "connectivity": {
-   "sim": "Wi-Fi only"
+   "sim": "Wi-Fi only",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
   },
   "os": "Android 13",
   "released": "2023",
@@ -33210,6 +36331,10 @@
   ],
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": true,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -33230,14 +36355,53 @@
     "priceAmd": 462900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 14.6,
+   "resolution": "2960x1848",
+   "refresh": 120,
+   "ppi": 239,
+   "brightness": 1750,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 11200,
+   "wired": 45
+  },
   "summaryEn": "Samsung Galaxy Tab S9 Ultra.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, One UI",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Gen2",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 740"
+  },
+  "body": {
+   "weight": 732,
+   "height": 326.4,
+   "width": 208.6,
+   "thickness": 5.5,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "13 MP, f/2.0",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2023-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-ultra-47mm-2024",
@@ -33620,11 +36784,14 @@
    "cover": {
     "size": 4.1,
     "resolution": "1048x948"
-   }
+   },
+   "ppi": 397
   },
   "chipset": {
    "name": "Samsung Exynos 2500",
-   "cpu": "Deca-core (3.3 GHz + 2.74 GHz + 2.36 GHz + 1.8 GHz)"
+   "cpu": "Deca-core (3.3 GHz + 2.74 GHz + 2.36 GHz + 1.8 GHz)",
+   "process": "3 nm",
+   "gpu": "Xclipse 950"
   },
   "variants": [
    {
@@ -33646,7 +36813,8 @@
    "video": "4K@60fps"
   },
   "battery": {
-   "capacity": 4300
+   "capacity": 4300,
+   "wired": 25
   },
   "body": {
    "height": 166.7,
@@ -33678,7 +36846,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-z-flip-7-fe",
@@ -33693,7 +36864,10 @@
   "accent": "#2A2A2E",
   "connectivity": {
    "network": "5G",
-   "nfc": true
+   "nfc": true,
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6",
+   "sim": "Dual SIM"
   },
   "os": "Android, One UI",
   "variants": [
@@ -33719,6 +36893,40 @@
   "aliases": [
    "Samsung Galaxy Z Flip 7 FE",
    "Galaxy Z Flip 7 FE"
+  ],
+  "display": {
+   "size": 6.7,
+   "resolution": "1080x2640",
+   "refresh": 120,
+   "ppi": 426,
+   "type": "Super AMOLED"
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2400",
+   "process": "4 nm",
+   "gpu": "Xclipse 940"
+  },
+  "battery": {
+   "capacity": 4000,
+   "wired": 25
+  },
+  "body": {
+   "weight": 187,
+   "height": 165.1,
+   "width": 71.9,
+   "thickness": 6.9,
+   "materials": "Glass",
+   "ip": "IP48"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "10.8 MP",
+   "video": "4K"
+  },
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -33738,10 +36946,14 @@
    "cover": {
     "size": 4.1,
     "resolution": "1048x948"
-   }
+   },
+   "ppi": 397
   },
   "chipset": {
-   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)"
+   "cpu": "Deca-core (3.8 GHz + 3.26 GHz + 2.76 GHz)",
+   "name": "Samsung Exynos 2600",
+   "process": "2 nm",
+   "gpu": "Samsung Xclipse 550"
   },
   "variants": [
    {
@@ -33763,14 +36975,16 @@
    "video": "4K@60fps"
   },
   "battery": {
-   "capacity": 4300
+   "capacity": 4300,
+   "wired": 25
   },
   "body": {
    "height": 166.9,
    "width": 75.4,
    "thickness": 6.1,
    "weight": 180,
-   "materials": "Armor Aluminum frame, glass front and back"
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP48"
   },
   "connectivity": {
    "network": "5G",
@@ -33796,7 +37010,11 @@
    "priceAmdMax"
   ],
   "category": "phone",
-  "year": 2026
+  "year": 2026,
+  "released": "2026-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-z-fold-7",
@@ -33820,7 +37038,9 @@
   },
   "chipset": {
    "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
-   "cpu": "Octa-core (4.47 GHz + 3.5 GHz)"
+   "cpu": "Octa-core (4.47 GHz + 3.5 GHz)",
+   "process": "3 nm",
+   "gpu": "Adreno 830"
   },
   "variants": [
    {
@@ -33843,7 +37063,8 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 4400
+   "capacity": 4400,
+   "wired": 25
   },
   "body": {
    "height": 158.4,
@@ -33875,7 +37096,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-z-fold-8",
@@ -33898,7 +37122,9 @@
   },
   "chipset": {
    "name": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
-   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)"
+   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)",
+   "process": "3 nm",
+   "gpu": "Adreno 840 1.2 GHz"
   },
   "variants": [
    {
@@ -33920,14 +37146,16 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 4800
+   "capacity": 4800,
+   "wired": 45
   },
   "body": {
    "height": 123.9,
    "width": 161.4,
    "thickness": 4.5,
    "weight": 201,
-   "materials": "Armor Aluminum frame, glass front and back"
+   "materials": "Armor Aluminum frame, glass front and back",
+   "ip": "IP48"
   },
   "connectivity": {
    "network": "5G",
@@ -33953,7 +37181,11 @@
    "priceAmdMax"
   ],
   "category": "phone",
-  "year": 2026
+  "year": 2026,
+  "released": "2026-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-galaxy-z-fold-8-ultra",
@@ -33976,7 +37208,9 @@
   },
   "chipset": {
    "name": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
-   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)"
+   "cpu": "Octa-core (4.74 GHz + 3.6 GHz)",
+   "process": "3 nm",
+   "gpu": "Adreno 840 1.2 GHz"
   },
   "variants": [
    {
@@ -33999,14 +37233,16 @@
    "video": "8K@30fps"
   },
   "battery": {
-   "capacity": 5000
+   "capacity": 5000,
+   "wired": 60
   },
   "body": {
    "height": 158.4,
    "width": 143.2,
    "thickness": 4.1,
    "weight": 215,
-   "materials": "Titanium frame, glass front and back"
+   "materials": "Titanium frame, glass front and back",
+   "ip": "IP48"
   },
   "connectivity": {
    "network": "5G",
@@ -34032,7 +37268,11 @@
    "priceAmdMax"
   ],
   "category": "phone",
-  "year": 2026
+  "year": 2026,
+  "released": "2026-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "samsung-ls22a330nhm",
@@ -37920,14 +41160,51 @@
     "priceAmd": 166900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.1,
+   "resolution": "1080x2520",
+   "ppi": 449,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5000
+  },
   "summaryEn": "Sony Xperia 10V.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 695 (SM6375)",
+   "process": "6 nm",
+   "gpu": "Qualcomm Adreno 619"
+  },
+  "body": {
+   "weight": 159,
+   "height": 155,
+   "width": 68,
+   "thickness": 8.3,
+   "materials": "Plastic",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2023-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "tcl-115c7k",
@@ -39715,14 +42992,53 @@
     "priceAmd": 143500
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.55,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 402,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4300,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi 12 Lite.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 778G (SM7325)",
+   "process": "6 nm",
+   "gpu": "Adreno 642L"
+  },
+  "body": {
+   "weight": 173,
+   "height": 159.3,
+   "width": 73.7,
+   "thickness": 7.3,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.79",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2022-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-12x",
@@ -39742,14 +43058,54 @@
     "priceAmd": 239900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.28,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 418,
+   "brightness": 1100,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi 12X.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 870 (SM8250-AC)",
+   "process": "7 nm",
+   "gpu": "Qualcomm Adreno 650"
+  },
+  "body": {
+   "weight": 176,
+   "height": 152.7,
+   "width": 69.9,
+   "thickness": 8.2,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.88",
+   "front": "32 MP",
+   "video": "8K"
+  },
+  "released": "2021-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-13-lite",
@@ -39769,14 +43125,54 @@
     "priceAmd": 189900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.55,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 402,
+   "brightness": 1000,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi 13 Lite.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7 Gen1",
+   "process": "4 nm",
+   "gpu": "Adreno 644"
+  },
+  "body": {
+   "weight": 171,
+   "height": 159.2,
+   "width": 72.7,
+   "thickness": 7.2,
+   "materials": "Polycarbonate"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2023-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-14t",
@@ -39796,14 +43192,55 @@
     "priceAmd": 194900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1220x2712",
+   "refresh": 144,
+   "ppi": 446,
+   "brightness": 4000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi 14T.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Dimensity 8300 Ultra",
+   "process": "4 nm",
+   "gpu": "Mali G615-MC6"
+  },
+  "body": {
+   "weight": 195,
+   "height": 160.5,
+   "width": 75.1,
+   "thickness": 7.8,
+   "materials": "TPU",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6E",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.7",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2024-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-15",
@@ -39888,6 +43325,9 @@
   ],
   "settled": [
    "notADuplicate"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -39949,7 +43389,10 @@
   },
   "connectivity": {
    "network": "5G",
-   "nfc": true
+   "nfc": true,
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6E",
+   "sim": "Dual SIM"
   },
   "cardSlot": false,
   "os": "Android 15, HyperOS 2",
@@ -39965,7 +43408,10 @@
    "priceAmdMax",
    "popularity"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-15t-pro",
@@ -39980,26 +43426,43 @@
   "accent": "#6E7276",
   "display": {
    "size": 6.83,
-   "resolution": "2772x1280"
+   "resolution": "2772x1280",
+   "refresh": 144,
+   "ppi": 447,
+   "brightness": 3200,
+   "type": "AMOLED"
   },
   "chipset": {
-   "name": "MediaTek Dimensity 9400+"
+   "name": "MediaTek Dimensity 9400+",
+   "process": "3 nm",
+   "gpu": "Immortalis-G925 MC12 1,612 GHz"
   },
   "camera": {
    "modules": 3,
    "main": "50 MP",
    "ultrawide": "12 MP",
    "telephoto": "50 MP",
-   "front": "32 MP"
+   "front": "32 MP",
+   "video": "8K"
   },
   "battery": {
-   "capacity": 5500
+   "capacity": 5500,
+   "wired": 90
   },
   "body": {
-   "weight": 210
+   "weight": 210,
+   "height": 162.7,
+   "width": 77.9,
+   "thickness": 8,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
   },
   "connectivity": {
-   "sim": "Dual nano-SIM"
+   "sim": "Dual nano-SIM",
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "nfc": true
   },
   "os": "Android",
   "variants": [
@@ -40021,6 +43484,10 @@
   "summaryEn": "A 6.83-inch Xiaomi on the Dimensity 9400+, with a 50 MP triple camera and a 5500 mAh battery.",
   "unsure": [
    "popularity"
+  ],
+  "cardSlot": false,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -40036,7 +43503,10 @@
   "accent": "#2E4A3A",
   "connectivity": {
    "network": "5G",
-   "nfc": true
+   "nfc": true,
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 7",
+   "sim": "Dual SIM"
   },
   "os": "Android, HyperOS",
   "variants": [
@@ -40055,6 +43525,41 @@
   "summaryEn": "Xiaomi’s 2026 flagship, sold here in 12/512.",
   "unsure": [
    "popularity"
+  ],
+  "display": {
+   "size": 6.9,
+   "resolution": "1200x2608",
+   "ppi": 416,
+   "brightness": 3500,
+   "type": "AMOLED"
+  },
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+   "process": "3 nm",
+   "gpu": "Adreno 840 1.2 GHz"
+  },
+  "battery": {
+   "capacity": 7500,
+   "wired": 100,
+   "wireless": 50
+  },
+  "body": {
+   "weight": 219,
+   "height": 162.9,
+   "width": 77.6,
+   "thickness": 8,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.69",
+   "front": "50 MP",
+   "video": "8K"
+  },
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -40083,14 +43588,55 @@
     "priceAmd": 266900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.59,
+   "resolution": "1268x2756",
+   "refresh": 120,
+   "ppi": 460,
+   "brightness": 3500,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6500,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi 17T.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2026
+  "year": 2026,
+  "chipset": {
+   "name": "MediaTek Dimensity 8500 Ultra",
+   "process": "4 nm",
+   "gpu": "Mali-G720 MC8"
+  },
+  "body": {
+   "weight": 200,
+   "height": 157.6,
+   "width": 75.2,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 6E",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.78",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2026-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-17t-pro",
@@ -40117,7 +43663,10 @@
   ],
   "connectivity": {
    "network": "5G",
-   "nfc": true
+   "nfc": true,
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "sim": "Dual SIM"
   },
   "os": "Android, HyperOS",
   "colors": [
@@ -40130,6 +43679,41 @@
    "priceAmdMax",
    "popularity",
    "colors"
+  ],
+  "display": {
+   "size": 6.83,
+   "resolution": "1280x2772",
+   "refresh": 144,
+   "ppi": 447,
+   "brightness": 3500,
+   "type": "AMOLED"
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 9500",
+   "process": "3 nm",
+   "gpu": "Mali G1 Ultra"
+  },
+  "battery": {
+   "capacity": 7000,
+   "wired": 100
+  },
+  "body": {
+   "weight": 219,
+   "height": 162.9,
+   "width": 77.5,
+   "thickness": 8.2,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.7",
+   "front": "32 MP",
+   "video": "8K"
+  },
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -40500,10 +44084,15 @@
    "size": 11.2,
    "type": "IPS LCD",
    "refresh": 144,
-   "touch": true
+   "touch": true,
+   "resolution": "3200x2136",
+   "ppi": 344,
+   "brightness": 800
   },
   "chipset": {
-   "name": "Snapdragon 7+ Gen 3"
+   "name": "Snapdragon 7+ Gen 3",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 732"
   },
   "variants": [
    {
@@ -40517,13 +44106,22 @@
     "priceAmd": 189900
    }
   ],
-  "battery": {},
+  "battery": {
+   "capacity": 8850,
+   "wired": 45
+  },
   "body": {
-   "materials": "Aluminium unibody"
+   "materials": "Aluminium unibody",
+   "weight": 500,
+   "height": 251.2,
+   "width": 173.4,
+   "thickness": 6.2
   },
   "connectivity": {
    "network": "Wi-Fi",
-   "wifi": "Wi-Fi 6"
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.4",
+   "nfc": false
   },
   "cardSlot": false,
   "os": "Android 15, HyperOS 2",
@@ -40532,7 +44130,15 @@
    "Blue",
    "Green"
   ],
-  "summaryEn": "An 11.2-inch 144 Hz tablet at a mid-range price."
+  "summaryEn": "An 11.2-inch 144 Hz tablet at a mid-range price.",
+  "camera": {
+   "main": "13 MP, f/2.2",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-pad-7-pro",
@@ -40552,10 +44158,15 @@
    "size": 11.2,
    "type": "IPS LCD",
    "refresh": 144,
-   "touch": true
+   "touch": true,
+   "resolution": "3200x2136",
+   "ppi": 344,
+   "brightness": 800
   },
   "chipset": {
-   "name": "Snapdragon 8s Gen 3"
+   "name": "Snapdragon 8s Gen 3",
+   "process": "4 nm",
+   "gpu": "Adreno 735"
   },
   "variants": [
    {
@@ -40569,13 +44180,22 @@
     "priceAmd": 259900
    }
   ],
-  "battery": {},
+  "battery": {
+   "capacity": 8850,
+   "wired": 67
+  },
   "body": {
-   "materials": "Aluminium unibody"
+   "materials": "Aluminium unibody",
+   "weight": 500,
+   "height": 251.2,
+   "width": 173.4,
+   "thickness": 6.2
   },
   "connectivity": {
    "network": "Wi-Fi",
-   "wifi": "Wi-Fi 7"
+   "wifi": "Wi-Fi 7",
+   "bluetooth": "5.3",
+   "nfc": false
   },
   "cardSlot": false,
   "os": "Android 15, HyperOS 2",
@@ -40584,7 +44204,15 @@
    "Green",
    "Blue"
   ],
-  "summaryEn": "The Pad 7 with a faster chip and Wi-Fi 7."
+  "summaryEn": "The Pad 7 with a faster chip and Wi-Fi 7.",
+  "camera": {
+   "main": "50 MP, f/1.8",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-c40",
@@ -40604,14 +44232,51 @@
     "priceAmd": 55900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.71,
+   "resolution": "720x1650",
+   "ppi": 268,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Poco C40.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "JLQ JR510",
+   "process": "11 nm",
+   "gpu": "Mali-G52"
+  },
+  "body": {
+   "weight": 204,
+   "height": 169.6,
+   "width": 76.6,
+   "thickness": 9.2,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "13 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2022-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-f4",
@@ -40631,14 +44296,55 @@
     "priceAmd": 164900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 1300,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi Poco F4.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 870 (SM8250-AC)",
+   "process": "7 nm",
+   "gpu": "Qualcomm Adreno 650"
+  },
+  "body": {
+   "weight": 195,
+   "height": 163.2,
+   "width": 75.9,
+   "thickness": 7.7,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "64 MP, f/1.79",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2022-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-f5",
@@ -40658,14 +44364,55 @@
     "priceAmd": 174900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 402,
+   "brightness": 1000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi Poco F5.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7+ Gen2",
+   "process": "4 nm",
+   "gpu": "Adreno 725"
+  },
+  "body": {
+   "weight": 181,
+   "height": 161.1,
+   "width": 74.9,
+   "thickness": 7.9,
+   "materials": "Polycarbonate",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "64 MP, f/1.79",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2023-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-f6",
@@ -40689,14 +44436,55 @@
     "priceAmd": 192000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1220x2712",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 2400,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 90
+  },
   "summaryEn": "Xiaomi Poco F6.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8s Gen3",
+   "process": "4 nm",
+   "gpu": "Adreno 735"
+  },
+  "body": {
+   "weight": 179,
+   "height": 160.5,
+   "width": 74.4,
+   "thickness": 7.8,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.6",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-f6-pro",
@@ -40724,14 +44512,54 @@
     "priceAmd": 279000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1440x3200",
+   "refresh": 120,
+   "ppi": 526,
+   "brightness": 4000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 120
+  },
   "summaryEn": "Xiaomi Poco F6 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 8 Gen2",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 740"
+  },
+  "body": {
+   "weight": 209,
+   "height": 160.9,
+   "width": 74.9,
+   "thickness": 8.2,
+   "materials": "Polycarbonate"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.6",
+   "front": "16 MP",
+   "video": "8K"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m5",
@@ -40751,14 +44579,54 @@
     "priceAmd": 61900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.58,
+   "resolution": "1080x2408",
+   "ppi": 410,
+   "brightness": 500,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Poco M5.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 201,
+   "height": 164,
+   "width": 76.1,
+   "thickness": 8.9,
+   "materials": "Metal",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP",
+   "video": "4K"
+  },
+  "released": "2022-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m6",
@@ -40778,14 +44646,54 @@
     "priceAmd": 75900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.79,
+   "resolution": "1080x2460",
+   "refresh": 90,
+   "ppi": 388,
+   "brightness": 550,
+   "type": "LTPS LCD"
+  },
+  "battery": {
+   "capacity": 5030,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Poco M6.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Helio G91",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 850MHz"
+  },
+  "body": {
+   "weight": 205,
+   "height": 168.6,
+   "width": 76.3,
+   "thickness": 8.3,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.75",
+   "front": "13 MP",
+   "video": "4K"
+  },
+  "released": "2024-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m6-pro",
@@ -40810,14 +44718,55 @@
     "priceAmd": 111900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 1800,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi Poco M6 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Helio G99 Ultra",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 181,
+   "height": 161.1,
+   "width": 75,
+   "thickness": 8,
+   "materials": "Glass",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "64 MP, f/1.79",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2024-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m7",
@@ -40850,15 +44799,56 @@
     "priceAmd": 80900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.9,
+   "resolution": "1080x2340",
+   "refresh": 144,
+   "ppi": 374,
+   "brightness": 840,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 7000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi POCO M7.",
   "unsure": [
    "popularity"
   ],
   "colors": [],
   "os": "Android, HyperOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 224,
+   "height": 171.1,
+   "width": 82,
+   "thickness": 8.6,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m7-pro-5g",
@@ -40880,14 +44870,54 @@
     "priceAmd": 95900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 405,
+   "brightness": 2100,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 5110,
+   "wired": 45
+  },
   "summaryEn": "Xiaomi Poco M7 Pro 5G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Dimensity 7025",
+   "process": "6 nm",
+   "gpu": "IMG BXM-8-256"
+  },
+  "body": {
+   "weight": 190,
+   "height": 162.4,
+   "width": 75.7,
+   "thickness": 8,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 4",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.5",
+   "front": "20 MP"
+  },
+  "released": "2024-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m8-5g",
@@ -40911,14 +44941,55 @@
     "priceAmd": 123900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.77,
+   "resolution": "1080x2392",
+   "refresh": 120,
+   "ppi": 405,
+   "brightness": 3200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5520,
+   "wired": 45
+  },
   "summaryEn": "Xiaomi POCO M8 5G.",
   "unsure": [
    "popularity"
   ],
   "colors": [],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen 3",
+   "process": "4 nm",
+   "gpu": "Adreno 710"
+  },
+  "body": {
+   "weight": 178,
+   "height": 164,
+   "width": 75.4,
+   "thickness": 7.4,
+   "materials": "Plastic",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2026-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-m8-pro-5g",
@@ -40947,13 +45018,54 @@
     "priceAmd": 196900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.83,
+   "resolution": "1280x2772",
+   "refresh": 120,
+   "ppi": 447,
+   "brightness": 3200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6500,
+   "wired": 100
+  },
   "summaryEn": "Xiaomi M8 Pro 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen4",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno"
+  },
+  "body": {
+   "weight": 207,
+   "height": 163.3,
+   "width": 78.3,
+   "thickness": 7.9,
+   "materials": "Plastic",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6E",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.6",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2026-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-x5-5g",
@@ -40976,14 +45088,54 @@
     "priceAmd": 97000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 1200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Poco X5 5G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 695 (SM6375)",
+   "process": "6 nm",
+   "gpu": "Qualcomm Adreno 619"
+  },
+  "body": {
+   "weight": 189,
+   "height": 165.9,
+   "width": 76.2,
+   "thickness": 8,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "48 MP, f/1.8",
+   "front": "13 MP"
+  },
+  "released": "2023-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-x5-pro-5g",
@@ -41003,14 +45155,55 @@
     "priceAmd": 173900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 900,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi Poco X5 Pro 5G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 778G (SM7325)",
+   "process": "6 nm",
+   "gpu": "Adreno 642L"
+  },
+  "body": {
+   "weight": 181,
+   "height": 162.9,
+   "width": 76,
+   "thickness": 7.9,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.9",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2023-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-x7",
@@ -41034,14 +45227,55 @@
     "priceAmd": 117000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1220x2712",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 2500,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5110,
+   "wired": 45
+  },
   "summaryEn": "Xiaomi Poco X7.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "MediaTek Dimensity 7300 Ultra",
+   "process": "4 nm",
+   "gpu": "Mali-G615 MC2"
+  },
+  "body": {
+   "weight": 185,
+   "height": 162.3,
+   "width": 74.4,
+   "thickness": 8.4,
+   "materials": "Polycarbonate",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.5",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2025-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-poco-x8-pro-max",
@@ -41064,14 +45298,55 @@
     "priceAmd": 269900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.83,
+   "resolution": "1280x2772",
+   "refresh": 120,
+   "ppi": 447,
+   "brightness": 3500,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 8500,
+   "wired": 100
+  },
   "summaryEn": "Xiaomi POCO X8 Pro Max.",
   "unsure": [
    "popularity"
   ],
   "colors": [],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "MediaTek Dimensity 9500s",
+   "process": "3 nm",
+   "gpu": "Immortalis-G925 MC12"
+  },
+  "body": {
+   "weight": 219,
+   "height": 163,
+   "width": 77.9,
+   "thickness": 8.2,
+   "materials": "Aluminium alloy",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "6.0",
+   "wifi": "Wi-Fi 7",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.5",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-10-2022",
@@ -41093,14 +45368,53 @@
     "priceAmd": 79900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.5,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 405,
+   "type": "LTPS LCD"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi 10 2022.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "MediaTek Helio G88",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 1000MHz"
+  },
+  "body": {
+   "weight": 181,
+   "height": 161.9,
+   "width": 75.5,
+   "thickness": 8.9,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2021-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-10a",
@@ -41122,14 +45436,51 @@
     "priceAmd": 40000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.53,
+   "resolution": "720x1600",
+   "ppi": 269,
+   "type": "TFT LCD (IPS)"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 10
+  },
   "summaryEn": "Xiaomi Redmi 10A.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Mediatek Helio G25",
+   "process": "12 nm",
+   "gpu": "IMG PowerVR GE8320 600MHz"
+  },
+  "body": {
+   "weight": 194,
+   "height": 164.9,
+   "width": 77,
+   "thickness": 9,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 4",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "13 MP, f/2.2",
+   "front": "5 MP"
+  },
+  "released": "2022-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-10c",
@@ -41149,14 +45500,51 @@
     "priceAmd": 52900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.71,
+   "resolution": "720x1650",
+   "ppi": 268,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi 10C.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 190,
+   "height": 169.6,
+   "width": 76.6,
+   "thickness": 8.3,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2022-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-12",
@@ -41176,8 +45564,18 @@
     "priceAmd": 64900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.79,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 388,
+   "brightness": 550,
+   "type": "LTPS LCD"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi 12.",
   "unsure": [
    "popularity"
@@ -41186,7 +45584,38 @@
    "notADuplicate"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G88",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 1000MHz"
+  },
+  "body": {
+   "weight": 198,
+   "height": 168.6,
+   "width": 76.3,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2023-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-12c",
@@ -41206,14 +45635,51 @@
     "priceAmd": 56900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.71,
+   "resolution": "720x1650",
+   "ppi": 268,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 10
+  },
   "summaryEn": "Xiaomi Redmi 12C.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G85 (MT6769V/CZ)",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 950MHz"
+  },
+  "body": {
+   "weight": 192,
+   "height": 168.8,
+   "width": 76.4,
+   "thickness": 8.8,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2023-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-13",
@@ -41238,8 +45704,17 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.79,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 388,
+   "type": "LTPS LCD"
+  },
+  "battery": {
+   "capacity": 5030,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi 13.",
   "unsure": [
    "popularity"
@@ -41248,7 +45723,36 @@
    "notADuplicate"
   ],
   "os": "Android, HyperOS",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Helio G91",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 850MHz"
+  },
+  "body": {
+   "weight": 198,
+   "height": 168.6,
+   "width": 76.3,
+   "thickness": 8.2,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "108 MP, f/1.8",
+   "front": "13 MP"
+  },
+  "released": "2024-05",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-13c",
@@ -41268,14 +45772,53 @@
     "priceAmd": 34900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.74,
+   "resolution": "720x1600",
+   "refresh": 90,
+   "ppi": 260,
+   "brightness": 600,
+   "type": "LTPS LCD"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi 13C.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "MediaTek Helio G85 (MT6769V/CZ)",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 950MHz"
+  },
+  "body": {
+   "weight": 192,
+   "height": 168,
+   "width": 78,
+   "thickness": 8.1,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2023-11",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-14c",
@@ -41347,7 +45890,8 @@
    "network": "4G LTE",
    "wifi": "Wi-Fi 5 (802.11 a/b/g/n/ac), dual-band",
    "bluetooth": "5.4",
-   "sim": "Dual nano-SIM"
+   "sim": "Dual nano-SIM",
+   "nfc": true
   },
   "cardSlot": true,
   "os": "Android 14, HyperOS",
@@ -41357,7 +45901,10 @@
    "priceAmdMax",
    "variants[].priceAmd"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-15",
@@ -41384,8 +45931,17 @@
     "priceAmd": 58000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.9,
+   "resolution": "1080x2340",
+   "refresh": 144,
+   "ppi": 374,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 7000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi 15.",
   "unsure": [
    "popularity"
@@ -41394,7 +45950,37 @@
    "notADuplicate"
   ],
   "os": "Android, HyperOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 685 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 224,
+   "height": 171.1,
+   "width": 82.1,
+   "thickness": 8,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-15c",
@@ -41436,7 +46022,10 @@
   "body": {
    "weight": 205,
    "materials": "Plastic frame, glass front",
-   "ip": "IP64"
+   "ip": "IP64",
+   "height": 171.6,
+   "width": 79.5,
+   "thickness": 8
   },
   "connectivity": {
    "network": "4G",
@@ -41473,6 +46062,9 @@
   "summaryEn": "Two days of battery and a 120 Hz screen for the price of a cheap phone.",
   "unsure": [
    "popularity"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -41497,13 +46089,54 @@
     "priceAmd": 114900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.9,
+   "resolution": "720x1600",
+   "refresh": 120,
+   "ppi": 254,
+   "brightness": 800,
+   "type": "LTPS LCD"
+  },
+  "battery": {
+   "capacity": 7500,
+   "wired": 45
+  },
   "summaryEn": "Xiaomi Redmi 17.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "MediaTek Helio G91",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 850MHz"
+  },
+  "body": {
+   "weight": 232,
+   "height": 170.1,
+   "width": 78.4,
+   "thickness": 8.8,
+   "materials": "Plastic",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP",
+   "video": "4K"
+  },
+  "released": "2026-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-4-active",
@@ -41767,14 +46400,52 @@
     "priceAmd": 39900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.7,
+   "resolution": "720x1650",
+   "refresh": 90,
+   "ppi": 269,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 10
+  },
   "summaryEn": "Xiaomi Redmi A3.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Mediatek Helio G36",
+   "process": "12 nm",
+   "gpu": "IMG PowerVR GE8320 680 MHz"
+  },
+  "body": {
+   "weight": 199,
+   "height": 168.3,
+   "width": 76.3,
+   "thickness": 8.3,
+   "materials": "Glass"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2024-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-a5",
@@ -41794,14 +46465,53 @@
     "priceAmd": 39900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.88,
+   "resolution": "720x1640",
+   "refresh": 120,
+   "ppi": 255,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5200,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi A5.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Unisoc Tiger T615 (T7250)",
+   "process": "12 nm",
+   "gpu": "Mali-G57 MP1"
+  },
+  "body": {
+   "weight": 193,
+   "height": 171.7,
+   "width": 77.8,
+   "thickness": 8.3,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "32 MP, f/2.0",
+   "front": "8 MP"
+  },
+  "released": "2025-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-a7-pro",
@@ -41824,13 +46534,51 @@
     "priceAmd": 63900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.88,
+   "resolution": "720x1640",
+   "refresh": 120,
+   "ppi": 255,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6000,
+   "wired": 15
+  },
   "summaryEn": "Xiaomi Redmi A7 Pro.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android"
+  "os": "Android",
+  "chipset": {
+   "name": "Unisoc Tiger T615 (T7250)",
+   "process": "12 nm",
+   "gpu": "Mali-G57 MP1"
+  },
+  "body": {
+   "weight": 208,
+   "height": 171.6,
+   "width": 79.5,
+   "thickness": 8.2,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "50 MP, f/2.2",
+   "front": "8 MP"
+  },
+  "released": "2026-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-buds-3-lite",
@@ -41941,14 +46689,55 @@
     "priceAmd": 139900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 1200,
+   "type": "Super AMOLED"
+  },
+  "battery": {
+   "capacity": 5020,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi Note 10 Pro.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 732G",
+   "process": "8 nm",
+   "gpu": "Qualcomm Adreno 618"
+  },
+  "body": {
+   "weight": 193,
+   "height": 164,
+   "width": 76.5,
+   "thickness": 8.1,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "108 MP, f/1.9",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2021-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-10s",
@@ -41968,14 +46757,54 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.43,
+   "resolution": "1080x2400",
+   "ppi": 395,
+   "brightness": 1100,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi Note 10S.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2021
+  "year": 2021,
+  "chipset": {
+   "name": "MediaTek Helio G95",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G76 MC4 720 MHz"
+  },
+  "body": {
+   "weight": 179,
+   "height": 160.5,
+   "width": 74.5,
+   "thickness": 8.3,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "64 MP, f/1.79",
+   "front": "13 MP",
+   "video": "4K"
+  },
+  "released": "2021-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-11",
@@ -41995,8 +46824,18 @@
     "priceAmd": 76900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.43,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 409,
+   "brightness": 1000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi Note 11.",
   "unsure": [
    "popularity"
@@ -42005,7 +46844,37 @@
    "notADuplicate"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 179,
+   "height": 159.9,
+   "width": 73.9,
+   "thickness": 8.1,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "50 MP, f/1.8",
+   "front": "13 MP"
+  },
+  "released": "2021-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-11-proplus-5g",
@@ -42025,14 +46894,54 @@
     "priceAmd": 175900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 399,
+   "brightness": 1200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 4500,
+   "wired": 120
+  },
   "summaryEn": "Xiaomi Redmi Note 11 Pro+ 5G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "MediaTek Dimensity 920",
+   "process": "6 nm",
+   "gpu": "Arm Mali-G68 MC4"
+  },
+  "body": {
+   "weight": 204,
+   "height": 163.6,
+   "width": 76.2,
+   "thickness": 8.3,
+   "materials": "Polycarbonate"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "108 MP, f/1.89",
+   "front": "16 MP",
+   "video": "4K"
+  },
+  "released": "2021-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-11s",
@@ -42052,14 +46961,54 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.43,
+   "resolution": "1080x2400",
+   "refresh": 90,
+   "ppi": 409,
+   "brightness": 1000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi Note 11S.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "MediaTek Helio G96",
+   "process": "12 nm",
+   "gpu": "ARM Mali-G57 MC2 900MHz"
+  },
+  "body": {
+   "weight": 179,
+   "height": 159.9,
+   "width": 73.4,
+   "thickness": 8.1,
+   "materials": "Plastic",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 4,
+   "main": "108 MP, f/1.9",
+   "front": "16 MP"
+  },
+  "released": "2022-01",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-12",
@@ -42160,7 +47109,10 @@
   "body": {
    "weight": 187,
    "materials": "Plastic frame, glass back",
-   "ip": "IP54"
+   "ip": "IP54",
+   "height": 161.1,
+   "width": 74.2,
+   "thickness": 8
   },
   "connectivity": {
    "network": "4G",
@@ -42188,6 +47140,9 @@
    "popularity",
    "priceAmdMax",
    "colors"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -42231,7 +47186,10 @@
   "body": {
    "weight": 205,
    "materials": "Plastic frame, glass back",
-   "ip": "IP68"
+   "ip": "IP68",
+   "height": 161.4,
+   "width": 74.2,
+   "thickness": 9
   },
   "connectivity": {
    "network": "5G",
@@ -42265,6 +47223,10 @@
   ],
   "settled": [
    "notADuplicate"
+  ],
+  "cardSlot": false,
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -42370,7 +47332,10 @@
   "unsure": [
    "priceAmd"
   ],
-  "category": "phone"
+  "category": "phone",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-14-pro-plus-5g",
@@ -42392,13 +47357,54 @@
     "priceAmd": 145000
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1220x2712",
+   "refresh": 120,
+   "ppi": 446,
+   "brightness": 3000,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5110,
+   "wired": 120
+  },
   "summaryEn": "Xiaomi Redmi Note 14 Pro Plus 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen3",
+   "process": "4 nm",
+   "gpu": "Adreno 810 480MHz"
+  },
+  "body": {
+   "weight": 210,
+   "height": 162.5,
+   "width": 74.7,
+   "thickness": 8.7,
+   "materials": "Polycarbonate",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.65",
+   "front": "20 MP",
+   "video": "4K"
+  },
+  "released": "2024-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-14s",
@@ -42423,8 +47429,18 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "1080x2400",
+   "refresh": 120,
+   "ppi": 395,
+   "brightness": 1300,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi Redmi Note 14S.",
   "unsure": [
    "popularity"
@@ -42433,7 +47449,37 @@
    "notADuplicate"
   ],
   "os": "Android, HyperOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "MediaTek Helio G99 Ultra",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 179,
+   "height": 161.1,
+   "width": 74.9,
+   "thickness": 8,
+   "materials": "Glass",
+   "ip": "IP64"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.65",
+   "front": "16 MP"
+  },
+  "released": "2025-03",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-15",
@@ -42502,7 +47548,10 @@
   "body": {
    "weight": 210,
    "materials": "Plastic frame, glass front",
-   "ip": "IP68/IP69K"
+   "ip": "IP68/IP69K",
+   "height": 163.6,
+   "width": 78.1,
+   "thickness": 7.9
   },
   "connectivity": {
    "network": "5G",
@@ -42539,6 +47588,9 @@
   "summaryEn": "A 200 MP sensor and a 6580 mAh battery on a screen that hits 3200 nits.",
   "unsure": [
    "popularity"
+  ],
+  "sources": [
+   "kimovil"
   ]
  },
  {
@@ -42569,13 +47621,54 @@
     "priceAmd": 199900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.83,
+   "resolution": "1280x2772",
+   "refresh": 120,
+   "ppi": 447,
+   "brightness": 3200,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 6500,
+   "wired": 100
+  },
   "summaryEn": "Xiaomi Redmi Note 15 Pro Plus 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen4",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno"
+  },
+  "body": {
+   "weight": 207,
+   "height": 163.3,
+   "width": 78.3,
+   "thickness": 7.9,
+   "materials": "Plastic",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6E",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 3,
+   "main": "200 MP, f/1.7",
+   "front": "32 MP",
+   "video": "4K"
+  },
+  "released": "2025-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-17-4g",
@@ -42597,13 +47690,53 @@
     "priceAmd": 129900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.99,
+   "resolution": "1080x2396",
+   "refresh": 120,
+   "ppi": 376,
+   "brightness": 1800,
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 7700,
+   "wired": 45
+  },
   "summaryEn": "Xiaomi Redmi Note 17 4G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6s Gen4",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 619"
+  },
+  "body": {
+   "weight": 224,
+   "height": 169.7,
+   "width": 79.1,
+   "thickness": 8.4,
+   "materials": "Polycarbonate",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "16 MP"
+  },
+  "released": "2026-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-17-5g",
@@ -42626,13 +47759,53 @@
     "priceAmd": 97900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 7,
+   "resolution": "1080x2396",
+   "refresh": 120,
+   "ppi": 375,
+   "brightness": 1800,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 7700,
+   "wired": 45
+  },
   "summaryEn": "Xiaomi Redmi Note 17 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 4 Gen 4 (SM4450-AF)",
+   "process": "4 nm",
+   "gpu": "Adreno 613"
+  },
+  "body": {
+   "weight": 225,
+   "height": 169.7,
+   "width": 79.1,
+   "thickness": 8.3,
+   "materials": "Plastic",
+   "ip": "IP65"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2026-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-17-pro-5g",
@@ -42656,13 +47829,53 @@
     "priceAmd": 135900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.83,
+   "resolution": "1280x2772",
+   "refresh": 120,
+   "ppi": 447,
+   "brightness": 3500,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 8340,
+   "wired": 67
+  },
   "summaryEn": "Xiaomi Redmi Note 17 Pro 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6s Gen4",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno 619"
+  },
+  "body": {
+   "weight": 226,
+   "height": 163.4,
+   "width": 76.5,
+   "thickness": 8.5,
+   "materials": "Polycarbonate",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "16 MP"
+  },
+  "released": "2026-07",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-note-17-pro-max-5g",
@@ -42685,13 +47898,52 @@
     "priceAmd": 174900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.83,
+   "resolution": "1280x2772",
+   "refresh": 120,
+   "ppi": 447,
+   "type": "pOLED"
+  },
+  "battery": {
+   "capacity": 9210,
+   "wired": 100
+  },
   "summaryEn": "Xiaomi Redmi Note 17 Pro Max 5G.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android, HyperOS"
+  "os": "Android, HyperOS",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 6 Gen5",
+   "process": "4 nm",
+   "gpu": "Adreno 812"
+  },
+  "body": {
+   "weight": 226,
+   "height": 163.4,
+   "width": 76.5,
+   "thickness": 8.5,
+   "materials": "Polycarbonate",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.1",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.5",
+   "front": "8 MP"
+  },
+  "released": "2026-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad",
@@ -42711,8 +47963,17 @@
     "priceAmd": 119900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 10.61,
+   "resolution": "2000x1200",
+   "refresh": 90,
+   "ppi": 220,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 8000,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi Pad.",
   "unsure": [
    "popularity"
@@ -42721,7 +47982,33 @@
    "notADuplicate"
   ],
   "os": "Android",
-  "year": 2022
+  "year": 2022,
+  "chipset": {
+   "name": "MediaTek Helio G99 (MT6789)",
+   "process": "6 nm",
+   "gpu": "Mali-G57 MC2"
+  },
+  "body": {
+   "weight": 465,
+   "height": 250.5,
+   "width": 158.1,
+   "thickness": 7.1,
+   "materials": "Metal"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP",
+   "front": "8 MP"
+  },
+  "released": "2022-10",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad-2",
@@ -42742,10 +48029,15 @@
    "size": 11,
    "type": "IPS LCD",
    "refresh": 90,
-   "touch": true
+   "touch": true,
+   "resolution": "2560x1600",
+   "ppi": 274,
+   "brightness": 600
   },
   "chipset": {
-   "name": "MediaTek Helio G100 Ultra"
+   "name": "MediaTek Helio G100 Ultra",
+   "process": "6 nm",
+   "gpu": "Arm Mali-G57 MC2"
   },
   "variants": [
    {
@@ -42759,10 +48051,15 @@
     "priceAmd": 109900
    }
   ],
-  "battery": {},
+  "battery": {
+   "capacity": 9000,
+   "wired": 18
+  },
   "connectivity": {
    "network": "Wi-Fi",
-   "wifi": "Wi-Fi 5"
+   "wifi": "Wi-Fi 5",
+   "bluetooth": "5.3",
+   "nfc": false
   },
   "cardSlot": true,
   "os": "Android 15, HyperOS 2",
@@ -42771,7 +48068,22 @@
    "Green",
    "Blue"
   ],
-  "summaryEn": "Redmi's 11-inch budget tablet with a microSD slot."
+  "summaryEn": "Redmi's 11-inch budget tablet with a microSD slot.",
+  "body": {
+   "weight": 510,
+   "height": 254.6,
+   "width": 166,
+   "thickness": 7.4,
+   "materials": "Polycarbonate",
+   "ip": "IP52"
+  },
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad-2-pro",
@@ -42794,13 +48106,50 @@
     "priceAmd": 142900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 12.1,
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "ppi": 249,
+   "brightness": 600,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 12000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi Pad 2 Pro.",
   "unsure": [
    "popularity"
   ],
-  "os": "Android"
+  "os": "Android",
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen4",
+   "process": "4 nm",
+   "gpu": "Qualcomm Adreno"
+  },
+  "body": {
+   "weight": 610,
+   "height": 279.8,
+   "width": 181.6,
+   "thickness": 7.5,
+   "materials": "Aluminium",
+   "ip": "IP53"
+  },
+  "connectivity": {
+   "bluetooth": "5.4",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "8 MP"
+  },
+  "released": "2025-09",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad-pro-5g",
@@ -42820,14 +48169,50 @@
     "priceAmd": 134900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 12.1,
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "ppi": 243,
+   "brightness": 600,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 10000,
+   "wired": 33
+  },
   "summaryEn": "Xiaomi Redmi Pad Pro 5G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen2 (SM-7435AB)",
+   "process": "4 nm",
+   "gpu": "Adreno 710"
+  },
+  "body": {
+   "weight": 571,
+   "height": 280,
+   "width": 181.9,
+   "thickness": 7.5,
+   "materials": "Aluminium"
+  },
+  "connectivity": {
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 6",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP, f/1.8",
+   "front": "8 MP"
+  },
+  "released": "2024-04",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad-se",
@@ -42847,14 +48232,49 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 11,
+   "resolution": "1920x1200",
+   "refresh": 90,
+   "ppi": 206,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 8000,
+   "wired": 10
+  },
   "summaryEn": "Xiaomi Redmi Pad SE.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2023
+  "year": 2023,
+  "chipset": {
+   "name": "Qualcomm Snapdragon 680 (SM6225)",
+   "process": "6 nm",
+   "gpu": "Adreno 610"
+  },
+  "body": {
+   "weight": 478,
+   "height": 255.5,
+   "width": 167.1,
+   "thickness": 7.6,
+   "materials": "Aluminium alloy"
+  },
+  "connectivity": {
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2023-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-pad-se-8-7-4g",
@@ -42874,14 +48294,52 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 8.7,
+   "resolution": "1340x800",
+   "refresh": 90,
+   "ppi": 179,
+   "brightness": 600,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6650,
+   "wired": 18
+  },
   "summaryEn": "Xiaomi Redmi Pad SE 8.7 4G.",
   "unsure": [
    "popularity"
   ],
   "os": "Android",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "MediaTek Helio G85 (MT6769V/CZ)",
+   "process": "12 nm",
+   "gpu": "Arm Mali-G52 MC2 950MHz"
+  },
+  "body": {
+   "weight": 370,
+   "height": 211.6,
+   "width": 125.5,
+   "thickness": 8.8,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 5",
+   "nfc": false
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "8 MP, f/2.0",
+   "front": "5 MP"
+  },
+  "released": "2024-08",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "xiaomi-redmi-smart-band-2",
@@ -44044,14 +49502,54 @@
     "priceAmd": 63900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.67,
+   "resolution": "720x1604",
+   "refresh": 120,
+   "ppi": 264,
+   "brightness": 700,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 6300,
+   "wired": 45
+  },
   "summaryEn": "Realme C71.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, realme UI",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Unisoc Tiger T615 (T7250)",
+   "process": "12 nm",
+   "gpu": "Mali-G57 MP1"
+  },
+  "body": {
+   "weight": 196,
+   "height": 165.8,
+   "width": 75.9,
+   "thickness": 7.8,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "50 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2025-06",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "apple-iphone-16e",
@@ -44084,14 +49582,54 @@
     "priceAmd": 489900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.1,
+   "resolution": "1170x2532",
+   "ppi": 457,
+   "brightness": 1200,
+   "type": "OLED"
+  },
+  "battery": {
+   "capacity": 3961,
+   "wired": 25,
+   "wireless": 25
+  },
   "summaryEn": "Apple iPhone 16e.",
   "unsure": [
    "popularity"
   ],
   "os": "iOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Apple A18 e",
+   "process": "3 nm",
+   "gpu": "Apple 4-core GPU"
+  },
+  "body": {
+   "weight": 167,
+   "height": 146.7,
+   "width": 71.5,
+   "thickness": 7.8,
+   "materials": "Glass",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "bluetooth": "5.3",
+   "wifi": "Wi-Fi 6",
+   "nfc": true,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": false,
+  "camera": {
+   "main": "48 MP, f/1.6",
+   "front": "12 MP",
+   "video": "4K"
+  },
+  "released": "2025-02",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "realme-note-60x",
@@ -44120,14 +49658,53 @@
     "priceAmd": 40900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.74,
+   "resolution": "720x1600",
+   "refresh": 90,
+   "ppi": 260,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5000,
+   "wired": 10
+  },
   "summaryEn": "Realme Note 60x.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, realme UI",
-  "year": 2024
+  "year": 2024,
+  "chipset": {
+   "name": "Unisoc Tiger T612 / T7225",
+   "process": "12 nm",
+   "gpu": "Mali-G57 MP1"
+  },
+  "body": {
+   "weight": 187,
+   "height": 167.3,
+   "width": 76.7,
+   "thickness": 7.8,
+   "materials": "Plastic",
+   "ip": "IP54"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "8 MP, f/1.8",
+   "front": "5 MP"
+  },
+  "released": "2024-12",
+  "sources": [
+   "kimovil"
+  ]
  },
  {
   "id": "poco-c71",
@@ -44159,13 +49736,51 @@
     "priceAmd": 38900
    }
   ],
-  "display": {},
-  "battery": {},
+  "display": {
+   "size": 6.88,
+   "resolution": "720x1640",
+   "refresh": 120,
+   "ppi": 255,
+   "type": "LCD IPS"
+  },
+  "battery": {
+   "capacity": 5200,
+   "wired": 15
+  },
   "summaryEn": "Xiaomi C71.",
   "unsure": [
    "popularity"
   ],
   "os": "Android, HyperOS",
-  "year": 2025
+  "year": 2025,
+  "chipset": {
+   "name": "Unisoc Tiger T615 (T7250)",
+   "process": "12 nm",
+   "gpu": "Mali-G57 MP1"
+  },
+  "body": {
+   "weight": 193,
+   "height": 171.8,
+   "width": 77.8,
+   "thickness": 8.3,
+   "materials": "Plastic"
+  },
+  "connectivity": {
+   "network": "4G",
+   "bluetooth": "5.2",
+   "wifi": "Wi-Fi 5",
+   "nfc": false,
+   "sim": "Dual SIM"
+  },
+  "cardSlot": true,
+  "camera": {
+   "modules": 2,
+   "main": "32 MP, f/2.0",
+   "front": "8 MP"
+  },
+  "released": "2025-04",
+  "sources": [
+   "kimovil"
+  ]
  }
 ]
