@@ -1,4 +1,4 @@
-<title>Better</title>
+<title>Better.am</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=swap">
 <style>
@@ -105,6 +105,7 @@ button,input,select,textarea{font:inherit;color:inherit}
    so it inherited #000 - a colour that is in no palette here - and spilled the circle it sat
    in. At this size the glyph could not be read as anything, so it is gone rather than fixed. */
 .topnav .logo .m{width:9px;height:9px;border-radius:50%;background:var(--brand);flex:none}
+.topnav .logo em{font-style:normal;color:var(--brand);font-weight:700}
 .nav{display:flex;gap:2px;flex:none}
 .nav a{padding:8px 12px;border-radius:0;font-weight:600;font-size:0.875rem;color:var(--muted);
   box-shadow:inset 0 -1px 0 transparent}
@@ -931,6 +932,22 @@ footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;al
 .post li{position:relative;padding-left:20px;color:var(--body);line-height:1.65}
 .post li::before{content:'';position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--brand)}
 .post-cta{margin-top:26px}
+.bl-im{display:block;margin:-22px -22px 6px;border-radius:var(--r-xl) var(--r-xl) 0 0;overflow:hidden;aspect-ratio:16/9;background:var(--shot)}
+.bl-card.first .bl-im{margin:-28px -28px 8px}
+.bl-im img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.bl-card:hover .bl-im img{transform:scale(1.03)}
+.post-cover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r-xl);margin:0 0 26px;background:var(--shot)}
+.post-fig{margin:22px 0 24px}
+.post-fig img{display:block;width:100%;height:auto;border-radius:var(--r-lg);background:var(--shot)}
+.post-fig figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}
+@media (max-width:640px){.bl-im,.bl-card.first .bl-im{margin:-18px -18px 6px}}
+/* the newest article on a wide screen: picture beside the text, not a 675 px banner above it */
+@media (min-width:900px){
+  .bl-card.first{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:32px;align-items:center;padding:0 32px 0 0;overflow:hidden}
+  .bl-card.first .bl-im{grid-column:1;grid-row:1/span 4;margin:0;border-radius:0;height:100%;aspect-ratio:auto;min-height:340px}
+  .bl-card.first > :not(.bl-im){grid-column:2}
+  .bl-card.first > time{margin-top:28px}.bl-card.first > .bl-go{margin-bottom:28px}
+}
 .post-src{font-size:.85rem!important;color:var(--muted)!important;margin-top:22px!important;line-height:1.7!important}
 .post-src a{color:var(--body);border-bottom:1px solid var(--line2);text-decoration:none}
 .post-src a:hover{color:var(--brand)}
@@ -1228,7 +1245,7 @@ a.store:hover .nm{color:var(--brand)}
 <a class="skip" href="#main" id="skipLink">Main</a>
 <div class="mast" id="mast">
   <div class="shell topnav">
-    <a class="logo" href="#/"><span class="m"></span>Better</a>
+    <a class="logo" href="#/"><span class="m"></span><span>Better<em>.am</em></span></a>
     <nav class="nav" id="nav"></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>

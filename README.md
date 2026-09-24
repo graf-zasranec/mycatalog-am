@@ -1,4 +1,4 @@
-# Better
+# Better.am
 
 A price comparison for the Armenian market, in Armenian, Russian and English. 1206 products in
 14 sections - phones, laptops, TVs, monitors, headphones, watches, tablets, speakers and more -
