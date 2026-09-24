@@ -37,7 +37,7 @@ const stub = {
   performance: { now: () => 0 },
   setInterval: noop, setTimeout: noop, clearTimeout: noop, requestAnimationFrame: noop,
   location: { hash: '#/', href: '' }, history: { scrollRestoration: 'auto', replaceState: noop, pushState: noop },
-  IMGDATA: {}, COLORIMG: {}, PAGEONLY: {}, COMING: { when: {}, items: [] },
+  IMGDATA: {}, COLORIMG: {}, PAGEONLY: {}, COMPARE_WITH: {}, COMING: { when: {}, items: [] },
   HISTORY: { points: {} },
 };
 

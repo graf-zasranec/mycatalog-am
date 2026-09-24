@@ -2208,72 +2208,6 @@
   ]
  },
  {
-  "id": "apple-ipad-10-a16-wi-fi-2025",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad 10 A16 Wi-Fi /2025",
-  "aliases": [
-   "iPad 10 A16 Wi-Fi /2025/"
-  ],
-  "tier": "mid",
-  "priceAmd": 215000,
-  "priceAmdMax": 215000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 215000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad 10 A16 Wi-Fi /2025.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ipad-11",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad 11",
-  "aliases": [
-   "iPad Wi-Fi 11\"",
-   "Պլանշետ Apple iPad Wi-Fi 11\""
-  ],
-  "tier": "mid",
-  "priceAmd": 189000,
-  "priceAmdMax": 231900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 189000
-   },
-   {
-    "ram": null,
-    "storage": 128,
-    "priceAmd": 231900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad 11.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a",
   "category": "tablet",
   "brand": "Apple",
@@ -2348,7 +2282,7 @@
   "name": "iPad 11 (2025) A16",
   "tier": "budget",
   "released": "2025-03",
-  "priceAmd": 231900,
+  "priceAmd": 189000,
   "priceAmdMax": 330000,
   "popularity": 80,
   "accent": "#C9CBD1",
@@ -2374,6 +2308,16 @@
     "ram": 6,
     "storage": 512,
     "priceAmd": 330000
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 215000
+   },
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 231900
    }
   ],
   "camera": {
@@ -2403,37 +2347,12 @@
    "iPad 11 A16",
    "Apple iPad A16",
    "iPad 11 2025",
-   "Apple iPad 11 2025"
-  ]
- },
- {
-  "id": "apple-ipad-air-11-inch-with-wi-fi",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Air 11-inch with Wi-Fi",
-  "aliases": [
-   "iPad Air 11-inch with Wi-Fi"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 319900,
-  "priceAmdMax": 319900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 319900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Air 11-inch with Wi-Fi.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+   "Apple iPad 11 2025",
+   "iPad 10 A16 Wi-Fi /2025",
+   "iPad 10 A16 Wi-Fi /2025/",
+   "iPad 11",
+   "iPad Wi-Fi 11\"",
+   "Պլանշետ Apple iPad Wi-Fi 11\""
   ]
  },
  {
@@ -2444,7 +2363,7 @@
   "tier": "upper-mid",
   "released": "2025-03",
   "priceAmd": 289000,
-  "priceAmdMax": 289000,
+  "priceAmdMax": 319900,
   "popularity": 54,
   "accent": "#4A6fA5",
   "display": {
@@ -2485,6 +2404,11 @@
     "ram": 8,
     "storage": 128,
     "priceAmd": 289000
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 319900
    }
   ],
   "colors": [
@@ -2502,7 +2426,8 @@
    "iPad Air 11 M3",
    "Apple iPad Air 11 M3",
    "iPad Air 11 2025",
-   "Apple iPad Air 11 2025"
+   "Apple iPad Air 11 2025",
+   "iPad Air 11-inch with Wi-Fi"
   ]
  },
  {
@@ -2910,7 +2835,7 @@
   "tier": "premium",
   "released": "2024-05",
   "priceAmd": 489000,
-  "priceAmdMax": 489000,
+  "priceAmdMax": 628900,
   "popularity": 56,
   "accent": "#2B2B2E",
   "display": {
@@ -2951,6 +2876,11 @@
     "ram": 8,
     "storage": 256,
     "priceAmd": 489000
+   },
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 628900
    }
   ],
   "colors": [
@@ -3038,36 +2968,6 @@
   ]
  },
  {
-  "id": "apple-ipad-pro-11-wi-fi",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Pro 11 Wi-Fi",
-  "aliases": [
-   "Պլանշետ iPad Pro 11 Wi-Fi"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 628900,
-  "priceAmdMax": 628900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 256,
-    "priceAmd": 628900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Pro 11 Wi-Fi.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3",
   "category": "tablet",
   "brand": "Apple",
@@ -3132,11 +3032,12 @@
   "brand": "Apple",
   "name": "iPad Pro 13 M4",
   "aliases": [
-   "iPad Pro 13 M4"
+   "iPad Pro 13 Wi-Fi 2024",
+   "iPad Pro 13 Wi-Fi 2024 Silver"
   ],
   "tier": "upper-mid",
   "priceAmd": 459000,
-  "priceAmdMax": 459000,
+  "priceAmdMax": 680000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -3144,6 +3045,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 459000
+   },
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 680000
    }
   ],
   "display": {},
@@ -3259,66 +3165,6 @@
    "Apple iPad Pro 13 M5",
    "iPad Pro 13 2025",
    "Apple iPad Pro 13 2025"
-  ]
- },
- {
-  "id": "apple-ipad-pro-13-wi-fi-2024",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Pro 13 Wi-Fi 2024",
-  "aliases": [
-   "iPad Pro 13 Wi-Fi 2024 Silver"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 680000,
-  "priceAmdMax": 680000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 512,
-    "priceAmd": 680000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Pro 13 Wi-Fi 2024.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-iphone-14-pro-max-magic-glass-box",
-  "category": "phone",
-  "brand": "Apple",
-  "name": "iPhone 14 Pro Max Magic Glass Box",
-  "aliases": [
-   "iPhone 14 Pro Max Magic Glass Box"
-  ],
-  "tier": "budget",
-  "priceAmd": 99000,
-  "priceAmdMax": 99000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPhone 14 Pro Max Magic Glass Box.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
   ]
  },
  {
@@ -4448,38 +4294,6 @@
   "summaryEn": "Apple's smallest desktop — a full M4 machine in a 12.7 cm box, screen and keyboard not included."
  },
  {
-  "id": "apple-macbook-air-13-m1-2024",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air M1 2024",
-  "aliases": [
-   "MacBook Air 13 M1 2024 Starlight"
-  ],
-  "tier": "flagship",
-  "priceAmd": 719000,
-  "priceAmdMax": 719000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 719000,
-    "size": 13
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air 13 M1 2024.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": []
- },
- {
   "id": "apple-macbook-air-13-m4",
   "category": "laptop",
   "brand": "Apple",
@@ -4663,16 +4477,24 @@
   "id": "apple-macbook-air-13-mgn63-m1-2020",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Air 13 M1 2020 MGN63",
+  "name": "MacBook Air 13 M1 2020",
   "aliases": [
    "MacBook Air 13 MGN63 M1 2020 Space Gray",
    "MacBook Air 13 MGN63 M1 2020",
    "MacBook Air MGN63 Late 2020",
-   "MacBook Air MGN63 Late 2020 Space Gray"
+   "MacBook Air MGN63 Late 2020 Space Gray",
+   "MacBook Air 13 M1 2020 MGN63",
+   "MacBook Air 13 M1 2020 MGN93",
+   "MacBook Air 13 MGN93 M1 2020 Silver",
+   "MacBook Air 13 MGN93 M1 2020",
+   "MacBook Air MGN93 Late 2020",
+   "MacBook Air MGN93 Late 2020 Silver",
+   "MacBook Air 13 MGND3 M1 2020",
+   "MacBook Air 13 MGND3 M1 2020 Gold"
   ],
   "tier": "mid",
   "priceAmd": 275000,
-  "priceAmdMax": 305000,
+  "priceAmdMax": 339000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -4690,70 +4512,10 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-air-13-mgn93-m1-2020",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air 13 M1 2020 MGN93",
-  "aliases": [
-   "MacBook Air 13 MGN93 M1 2020 Silver",
-   "MacBook Air 13 MGN93 M1 2020",
-   "MacBook Air MGN93 Late 2020",
-   "MacBook Air MGN93 Late 2020 Silver"
   ],
-  "tier": "upper-mid",
-  "priceAmd": 305000,
-  "priceAmdMax": 339000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 305000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air 13 MGN93 M1 2020.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-air-13-mgnd3-m1-2020",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air 13 MGND3 M1 2020",
-  "aliases": [
-   "MacBook Air 13 MGND3 M1 2020 Gold"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 314900,
-  "priceAmdMax": 314900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 314900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air 13 MGND3 M1 2020.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "chipset": {
+   "name": "Apple M1"
+  }
  },
  {
   "id": "apple-macbook-neo-13",
@@ -4818,13 +4580,16 @@
   "id": "apple-macbook-pro-14-2023-mtl73",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 2023 MTL73",
+  "name": "MacBook Pro 14 M3 2023",
   "aliases": [
-   "MacBook Pro 14 2023 MTL73 Space Gray"
+   "MacBook Pro 14 2023 MTL73 Space Gray",
+   "MacBook Pro 14 2023 MTL73",
+   "MacBook Pro 14 MR7J3 2023",
+   "MacBook Pro 14 MR7J3 2023 Silver"
   ],
   "tier": "upper-mid",
   "priceAmd": 692000,
-  "priceAmdMax": 692000,
+  "priceAmdMax": 720000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -4842,7 +4607,10 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "chipset": {
+   "name": "Apple M3"
+  }
  },
  {
   "id": "apple-macbook-pro-14-m4",
@@ -5200,42 +4968,13 @@
   "summaryEn": "The 14-inch Pro with the M5 Pro — more CPU and GPU cores for sustained work."
  },
  {
-  "id": "apple-macbook-pro-14-mr7j3-2023",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Pro 14 MR7J3 2023",
-  "aliases": [
-   "MacBook Pro 14 MR7J3 2023 Silver"
-  ],
-  "tier": "flagship",
-  "priceAmd": 720000,
-  "priceAmdMax": 720000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 720000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Pro 14 MR7J3 2023.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-macbook-pro-14-mrx33-2023",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 MRX33 2023",
+  "name": "MacBook Pro 14 M3 Pro 2023 (512 GB)",
   "aliases": [
-   "MacBook Pro 14 MRX33 2023 Space Black"
+   "MacBook Pro 14 MRX33 2023 Space Black",
+   "MacBook Pro 14 MRX33 2023"
   ],
   "tier": "flagship",
   "priceAmd": 889000,
@@ -5257,15 +4996,19 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "chipset": {
+   "name": "Apple M3 Pro (11-core CPU)"
+  }
  },
  {
   "id": "apple-macbook-pro-14-mrx43-2023",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 14 MRX43 2023",
+  "name": "MacBook Pro 14 M3 Pro 2023 (1 TB)",
   "aliases": [
-   "MacBook Pro 14 MRX43 2023 Space Black"
+   "MacBook Pro 14 MRX43 2023 Space Black",
+   "MacBook Pro 14 MRX43 2023"
   ],
   "tier": "flagship",
   "priceAmd": 1043000,
@@ -5287,15 +5030,21 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "chipset": {
+   "name": "Apple M3 Pro (12-core CPU)"
+  }
  },
  {
   "id": "apple-macbook-pro-16-mrw23",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Pro 16 MRW23",
+  "name": "MacBook Pro 16 M3 Max 2023",
   "aliases": [
-   "MacBook Pro 16 MRW23 Space Black"
+   "MacBook Pro 16 MRW23 Space Black",
+   "MacBook Pro 16 MRW23",
+   "MacBook Pro 16 MRW63 2023",
+   "MacBook Pro 16 MRW63 2023 Silver"
   ],
   "tier": "flagship",
   "priceAmd": 1175000,
@@ -5317,37 +5066,10 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-pro-16-mrw63-2023",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Pro 16 MRW63 2023",
-  "aliases": [
-   "MacBook Pro 16 MRW63 2023 Silver"
   ],
-  "tier": "flagship",
-  "priceAmd": 1175000,
-  "priceAmdMax": 1175000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 1175000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Pro 16 MRW63 2023.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "chipset": {
+   "name": "Apple M3 Max (14-core CPU)"
+  }
  },
  {
   "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",
@@ -5457,46 +5179,6 @@
   "variantUnit": "mm"
  },
  {
-  "id": "apple-watch-s10-42mm-with-sport-band",
-  "category": "watch",
-  "brand": "Apple",
-  "name": "Watch S10 With Sport Band",
-  "aliases": [
-   "Apple Watch S10 46mm With Sport Band",
-   "Watch S10 46mm With Sport Band",
-   "Watch S10 42mm With Sport Band",
-   "Apple Watch S10 42mm With Sport Band"
-  ],
-  "tier": "mid",
-  "priceAmd": 179900,
-  "priceAmdMax": 199900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 42,
-    "priceAmd": 179900
-   },
-   {
-    "ram": null,
-    "storage": 46,
-    "priceAmd": 199900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple Watch S10 42mm With Sport Band.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": [],
-  "variantUnit": "mm"
- },
- {
   "id": "apple-watch-se-3",
   "category": "watch",
   "brand": "Apple",
@@ -5554,8 +5236,8 @@
   "name": "Watch Series 10",
   "tier": "upper-mid",
   "released": "2024-09",
-  "priceAmd": 189000,
-  "priceAmdMax": 189000,
+  "priceAmd": 179900,
+  "priceAmdMax": 199900,
   "popularity": 58,
   "accent": "#1C1C1E",
   "variantUnit": "mm",
@@ -5582,6 +5264,11 @@
    {
     "storage": 46,
     "priceAmd": 189000
+   },
+   {
+    "ram": null,
+    "storage": 42,
+    "priceAmd": 179900
    }
   ],
   "colors": [
@@ -5596,7 +5283,12 @@
   ],
   "aliases": [
    "iWatch Series 10",
-   "Apple Watch Series 10"
+   "Apple Watch Series 10",
+   "Watch S10 With Sport Band",
+   "Apple Watch S10 46mm With Sport Band",
+   "Watch S10 46mm With Sport Band",
+   "Watch S10 42mm With Sport Band",
+   "Apple Watch S10 42mm With Sport Band"
   ]
  },
  {
@@ -10721,41 +10413,6 @@
   ]
  },
  {
-  "id": "audio-technica-ath-s220bt",
-  "category": "headphones",
-  "brand": "Audio-Technica",
-  "name": "ATH-S220BT",
-  "aliases": [
-   "Audio-Technica ATH-S220BT"
-  ],
-  "tier": "budget",
-  "released": "2021-09",
-  "priceAmd": 29900,
-  "priceAmdMax": 29900,
-  "popularity": 54,
-  "accent": "#2B2B2F",
-  "variants": [
-   {
-    "priceAmd": 29900
-   }
-  ],
-  "audio": {
-   "anc": false,
-   "form": "full",
-   "conn": "wireless"
-  },
-  "battery": {
-   "life": "60 hours"
-  },
-  "connectivity": {
-   "bluetooth": "5.0"
-  },
-  "body": {
-   "weight": 193
-  },
-  "summaryEn": "Sixty hours from a studio brand, at a price that undercuts the big names."
- },
- {
   "id": "beats-fit-pro",
   "category": "headphones",
   "brand": "Beats",
@@ -13291,34 +12948,6 @@
   ]
  },
  {
-  "id": "dell-vostro-3910",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "Vostro 3910",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 155000,
-  "priceAmdMax": 155000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 1024,
-    "priceAmd": 155000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dell Vostro 3910.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dell-wyse-5470",
   "category": "laptop",
   "brand": "Dell",
@@ -14104,40 +13733,6 @@
   ]
  },
  {
-  "id": "dyson-airstarit",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airstrait",
-  "aliases": [
-   "Dyson AirStarit (HT01) Amber Silk",
-   "Dyson AirStarit (HT01) Prussian Blue",
-   "AirStarit",
-   "AirStarit Plum",
-   "Dyson AirStarit (HT01) Jasper Plum"
-  ],
-  "tier": "mid",
-  "priceAmd": 157000,
-  "priceAmdMax": 175000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 157000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson AirStarit.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-airstarit-kanzan",
   "category": "appliance",
   "brand": "Dyson",
@@ -14421,7 +14016,6 @@
    "Dyson HT01 Airstrait™ Straightener Jasper Plum",
    "Dyson Airstrait™ Straightener HT01 Nicel / Copper",
    "Dyson Airstrait HT01",
-   "Airstrait HT01",
    "Dyson HT01 Airstrait™ Straightener Ceramic Pink",
    "Dyson Airstrait HT01 (Ceramic Pink)",
    "Airstrait HT01 (Ceramic Pink)",
@@ -14438,10 +14032,16 @@
    "Dyson Airstrait HT01 (Strawberry)",
    "Airstrait HT01 (Strawberry)",
    "Airstrait HT01 (Jasper Plum)",
-   "Dyson Airstrait HT01 (Jasper Plum)"
+   "Dyson Airstrait HT01 (Jasper Plum)",
+   "Airstrait",
+   "Dyson AirStarit (HT01) Amber Silk",
+   "Dyson AirStarit (HT01) Prussian Blue",
+   "AirStarit",
+   "AirStarit Plum",
+   "Dyson AirStarit (HT01) Jasper Plum"
   ],
   "tier": "mid",
-  "priceAmd": 189000,
+  "priceAmd": 157000,
   "priceAmdMax": 189000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -14715,11 +14315,13 @@
   "brand": "Dyson",
   "name": "Zone",
   "aliases": [
-   "Անլար ականջակալ օդի ֆիլտրով Dyson Zone (Ultra Blue/Prussian Blue)"
+   "Անլար ականջակալ օդի ֆիլտրով Dyson Zone (Ultra Blue/Prussian Blue)",
+   "Zone Absolute+",
+   "Անլար ականջակալ օդի ֆիլտրով Dyson Zone Absolute+ (Prussian Blue/Bright Copper)"
   ],
   "tier": "upper-mid",
   "priceAmd": 319900,
-  "priceAmdMax": 319900,
+  "priceAmdMax": 349900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -14744,100 +14346,6 @@
   }
  },
  {
-  "id": "dyson-zone-absoluteplus",
-  "category": "headphones",
-  "brand": "Dyson",
-  "name": "Zone Absolute+",
-  "aliases": [
-   "Անլար ականջակալ օդի ֆիլտրով Dyson Zone Absolute+ (Prussian Blue/Bright Copper)"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 349900,
-  "priceAmdMax": 349900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 349900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson Zone Absolute+.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "audio": {
-   "form": "full",
-   "conn": "wireless"
-  }
- },
- {
-  "id": "garmin-cirqa-smart-band-french-l-xl",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "CIRQA Smart Band French L/XL",
-  "aliases": [
-   "Խելացի թևնոց Garmin CIRQA Smart Band French Gray L/XL (010-04675-01)"
-  ],
-  "tier": "budget",
-  "priceAmd": 89000,
-  "priceAmdMax": 89000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 89000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin CIRQA Smart Band French L/XL.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-cirqa-smart-band-mauve-l-xl",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "CIRQA Smart Band Mauve L-XL",
-  "aliases": [
-   "Խելացի թևնոց Garmin CIRQA Smart Band Mauve L-XL (010-04675-02)"
-  ],
-  "tier": "budget",
-  "priceAmd": 89000,
-  "priceAmdMax": 89000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 89000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin CIRQA Smart Band Mauve L-XL.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "garmin-cirqa-smart-band-mauve-s-m",
   "category": "watch",
   "brand": "Garmin",
@@ -14845,8 +14353,11 @@
   "aliases": [
    "Garmin CIRQA™ Smart Band, French Gray, S-M",
    "Garmin CIRQA Smart Band",
-   "CIRQA Smart Band",
-   "Garmin CIRQA™ Smart Band, Captain Blue, S-M"
+   "Garmin CIRQA™ Smart Band, Captain Blue, S-M",
+   "CIRQA Smart Band French L/XL",
+   "Խելացի թևնոց Garmin CIRQA Smart Band French Gray L/XL (010-04675-01)",
+   "CIRQA Smart Band Mauve L-XL",
+   "Խելացի թևնոց Garmin CIRQA Smart Band Mauve L-XL (010-04675-02)"
   ],
   "tier": "budget",
   "priceAmd": 89000,
@@ -15036,41 +14547,13 @@
   "id": "garmin-fenix-8-47-mm-amoled-sapphire-carbon",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Fenix 8, AMOLED Sapphire Carbon",
+  "name": "Fenix 8 47 mm AMOLED Sapphire",
   "aliases": [
    "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon Gray Titanium",
    "Fenix 8 – 47 mm, AMOLED Sapphire Carbon",
-   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 386280,
-  "priceAmdMax": 386280,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 47,
-    "priceAmd": 386280
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "variantUnit": "mm"
- },
- {
-  "id": "garmin-fenix-8-47-mm-amoled-sapphire-spark",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Fenix 8, AMOLED Sapphire Spark",
-  "aliases": [
+   "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon",
+   "Fenix 8, AMOLED Sapphire Carbon",
+   "Fenix 8, AMOLED Sapphire Spark",
    "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark Orange Titanium",
    "Fenix 8 – 47 mm, AMOLED Sapphire Spark",
    "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark"
@@ -15089,7 +14572,7 @@
   ],
   "display": {},
   "battery": {},
-  "summaryEn": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Spark.",
+  "summaryEn": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon.",
   "unsure": [
    "popularity",
    "display",
@@ -21913,38 +21396,6 @@
   ]
  },
  {
-  "id": "hp-envy-pc-7x9x5ea",
-  "category": "desktop",
-  "brand": "HP",
-  "name": "Envy PC 7X9X5EA",
-  "aliases": [
-   "HP Envy Desktop PC 7X9X5EA",
-   "ENVY PC 7X9X5EA 32",
-   "HP ENVY Desktop PC 7X9X5EA 32"
-  ],
-  "tier": "flagship",
-  "priceAmd": 875000,
-  "priceAmdMax": 895000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 1024,
-    "priceAmd": 875000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "HP Envy PC 7X9X5EA.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "hp-g10-470g10",
   "category": "laptop",
   "brand": "HP",
@@ -27121,34 +26572,6 @@
   ]
  },
  {
-  "id": "lenovo-loq-tower-17-irr9-90x0002mgh",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "LOQ Tower 17 IRR9 90X0002MGH",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 399000,
-  "priceAmdMax": 399000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 512,
-    "priceAmd": 399000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Lenovo LOQ Tower 17 IRR9 90X0002MGH.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "lenovo-tab-m9-tb310xu-acc-zac50096ru",
   "category": "tablet",
   "brand": "Lenovo",
@@ -32121,44 +31544,6 @@
   "variantUnit": "mm"
  },
  {
-  "id": "samsung-galaxy-7-ultra-47mm-sm-l705f",
-  "category": "watch",
-  "brand": "Samsung",
-  "name": "Galaxy Watch 7 Ultra",
-  "aliases": [
-   "Samsung Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
-   "Galaxy 7 Ultra 47mm /SM-L705F",
-   "Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
-   "Galaxy Watch 7 Ultra 47mm",
-   "Samsung Galaxy Watch 7 Ultra 47mm"
-  ],
-  "tier": "mid",
-  "priceAmd": 229900,
-  "priceAmdMax": 229900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 47,
-    "priceAmd": 229900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy 7 Ultra 47mm /SM-L705F.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": [
-   "Gray"
-  ],
-  "variantUnit": "mm"
- },
- {
   "id": "samsung-galaxy-9-44mm",
   "category": "watch",
   "brand": "Samsung",
@@ -35150,18 +34535,28 @@
   "id": "samsung-galaxy-ultra-47mm-2024",
   "category": "watch",
   "brand": "Samsung",
-  "name": "Galaxy Watch Ultra 2024",
+  "name": "Galaxy Watch Ultra (2024)",
   "aliases": [
    "Samsung Galaxy Watch Ultra 47mm 2024 (Սպիտակ Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2024 (Արծաթագույն Տիտան)",
    "Samsung Galaxy Watch Ultra 47mm 2024 (Մոխրագույն Տիտան)",
    "Galaxy Ultra 47mm 2024",
    "Galaxy Watch Ultra 47mm 2024",
-   "Samsung Galaxy Watch Ultra 47mm 2024"
+   "Samsung Galaxy Watch Ultra 47mm 2024",
+   "Galaxy Watch Ultra 2024",
+   "Galaxy Watch 7 Ultra",
+   "Samsung Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
+   "Galaxy 7 Ultra 47mm /SM-L705F",
+   "Galaxy Watch 7 Ultra 47mm Gray /SM-L705F",
+   "Galaxy Watch 7 Ultra 47mm",
+   "Samsung Galaxy Watch 7 Ultra 47mm",
+   "Galaxy Watch Ultra LTE",
+   "Galaxy Watch Ultra 47mm LTE",
+   "Samsung Galaxy Watch Ultra 47mm LTE"
   ],
   "tier": "mid",
   "priceAmd": 159000,
-  "priceAmdMax": 159000,
+  "priceAmdMax": 229900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -35460,38 +34855,6 @@
    "Titanium White"
   ],
   "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance."
- },
- {
-  "id": "samsung-galaxy-watch-ultra-47mm-lte",
-  "category": "watch",
-  "brand": "Samsung",
-  "name": "Galaxy Watch Ultra LTE",
-  "aliases": [
-   "Galaxy Watch Ultra 47mm LTE",
-   "Samsung Galaxy Watch Ultra 47mm LTE"
-  ],
-  "tier": "mid",
-  "priceAmd": 211900,
-  "priceAmdMax": 211900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 47,
-    "priceAmd": 211900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Samsung Galaxy Watch Ultra 47mm LTE.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "variantUnit": "mm"
  },
  {
   "id": "samsung-galaxy-watch4-40-mm",
@@ -36494,7 +35857,7 @@
  },
  {
   "id": "samsung-odyssey-g8-oled-34-s34bg850su",
-  "category": "tv",
+  "category": "monitor",
   "brand": "Samsung",
   "name": "Odyssey G8 OLED 34” S34BG850SU",
   "aliases": [
@@ -38317,47 +37680,15 @@
   }
  },
  {
-  "id": "sennheiser-accentum-true-special-edition-atw1-se",
-  "category": "headphones",
-  "brand": "Sennheiser",
-  "name": "Accentum True Special Edition ATW1 SE",
-  "aliases": [
-   "Ականջակալ Sennheiser Accentum True Special Edition ATW1 SE կապույտ"
-  ],
-  "tier": "budget",
-  "priceAmd": 99900,
-  "priceAmdMax": 99900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sennheiser Accentum True Special Edition ATW1 SE.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "audio": {
-   "form": "tws",
-   "conn": "wireless"
-  }
- },
- {
   "id": "sennheiser-accentum-true-wireless-atw1",
   "category": "headphones",
   "brand": "Sennheiser",
   "name": "Accentum True Wireless ATW1",
   "aliases": [
    "Ականջակալ Sennheiser Accentum True Wireless ATW1 սպիտակ",
-   "Ականջակալ Sennheiser Accentum True Wireless ATW1 սև"
+   "Ականջակալ Sennheiser Accentum True Wireless ATW1 սև",
+   "Accentum True Special Edition ATW1 SE",
+   "Ականջակալ Sennheiser Accentum True Special Edition ATW1 SE կապույտ"
   ],
   "tier": "budget",
   "priceAmd": 99900,
@@ -41690,10 +41021,12 @@
   "brand": "Whoop",
   "name": "Life",
   "aliases": [
-   "Whoop Life (MG)"
+   "Whoop Life (MG)",
+   "MG life",
+   "Smart Fitness Tracker Whoop MG life"
   ],
   "tier": "mid",
-  "priceAmd": 189000,
+  "priceAmd": 188900,
   "priceAmdMax": 189000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -41707,36 +41040,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Whoop Life.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "whoop-mg-life",
-  "category": "watch",
-  "brand": "Whoop",
-  "name": "MG life",
-  "aliases": [
-   "Smart Fitness Tracker Whoop MG life"
-  ],
-  "tier": "mid",
-  "priceAmd": 188900,
-  "priceAmdMax": 188900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 188900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Whoop MG life.",
   "unsure": [
    "popularity",
    "display",

@@ -80,11 +80,13 @@ if errorlevel 1 (
   exit /b 1
 )
 
-REM Every product needs its Armenian and Russian line or the build refuses: a page with neither
-REM falls back to the English one, and those two views may not carry an English sentence.
-node tools/verdicts.mjs --write
+REM The headphone filters (type, connection, connector, noise cancelling) read fields that only
+REM this step fills in, so a model added since the last run would drop out of every one of them.
+REM It never overwrites a field somebody set by hand. The compare cards need no step: the build
+REM pairs every product itself.
+node tools\audio.mjs --write
 if errorlevel 1 (
-  echo verdicts failed
+  echo audio types failed
   exit /b 1
 )
 
@@ -101,18 +103,6 @@ if errorlevel 1 (
   echo build failed
   exit /b 1
 )
-
-REM A shop rewrites its image urls, so a product with no photograph today often has one the
-REM morning after a fresh crawl - which is exactly now. --missing asks only about the products
-REM that have none, because measuring all 1,318 to improve 200 is an hour of somebody else's
-REM bandwidth. It writes to images/_src only; turning those into cutouts is tools/cutout.py,
-REM which is run by a person because every new cutout is looked at before it goes on the site.
-REM
-REM Not a gate: no photograph is a worse page, not a wrong price.
-echo.
-echo [%date% %time%] looking for photographs of the products that have none...
-node tools/photos.mjs --missing
-if errorlevel 1 echo   photo pass failed - prices are published regardless
 
 REM Not a gate, a reading. Rows that disagree with themselves are printed so the run says what it
 REM is unsure about, instead of leaving it to be found on the site.

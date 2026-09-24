@@ -369,6 +369,17 @@ button,input,select,textarea{font:inherit;color:inherit}
 .sv .bar i{position:absolute;inset:0 auto 0 0;border-radius:3px;background:var(--apricot)}
 .sv .rng{display:flex;justify-content:space-between;white-space:nowrap;font-family:var(--mono);font-size:10px;
   color:var(--muted);margin-top:5px;letter-spacing:.05em}
+/* a fold's cover screen (280px): the saving and the top price no longer fit on one line, and the
+   sort button's label is wider than the screen - both wrap instead of pushing the page sideways */
+@media (max-width:360px){
+  .sv{grid-template-columns:56px minmax(0,1fr);gap:10px;padding:12px}
+  .sv .rng{flex-wrap:wrap;white-space:normal;gap:0 8px}
+  .fdrop{flex:0 1 auto;min-width:0;max-width:100%}
+  .fdrop>summary{height:auto;min-height:42px;padding:8px 15px;white-space:normal;max-width:100%}
+  .cbar-l h1{font-size:22px}
+  .cprice .c{padding:10px 4px}.cprice .num{font-size:0.8125rem}
+}
+.fmore[hidden],.fbar[hidden]{display:none}
 
 /* ================= buttons ================= */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 26px;
@@ -477,7 +488,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .chip.clear{background:none;color:var(--muted);padding:0 12px}
 .chip.clear:hover{color:var(--text)}
 
-.resbar{display:flex;align-items:baseline;gap:10px;margin:22px 0 14px}
+.resbar{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin:22px 0 14px}
 .resbar h1,.resbar h2{font-size:26px;font-weight:800;letter-spacing:-.035em;margin:0}
 .resbar .cnt{font-size:0.875rem;color:var(--muted);font-weight:500}
 
@@ -557,7 +568,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ================= product page — bold panel ================= */
 .crumb a:hover{color:var(--brand)}
 
-.secgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:30px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px;margin-top:30px}
 .panel-c{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 22px;box-shadow:var(--shadow-s)}
 .panel-c h3{font-size:1.0625rem;font-weight:700;display:flex;align-items:center;gap:9px;margin-bottom:6px}
 .panel-c h3 i{width:7px;height:7px;border-radius:2px;background:var(--brand);display:block}
@@ -646,6 +657,28 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .cwt em{font-style:normal;font-size:0.6875rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .cwt b{font-size:0.9375rem;font-weight:600;overflow-wrap:anywhere}
 .cwt .num{font-size:0.875rem;font-weight:700}
+.cwt .cwd{font-size:0.75rem;font-weight:600;color:var(--muted)}
+.pbar{display:none}
+@media (max-width:760px){
+  .pbar{display:flex;align-items:center;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--surface);border-top:1px solid var(--line)}
+  .pbar b{font-size:1.0625rem;white-space:nowrap}
+  .pbar span{flex:1;min-width:0;color:var(--muted);font-size:0.875rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .pbar a{flex:none;background:var(--brand);color:var(--brand-ink);text-decoration:none;font-weight:600;
+    font-size:0.875rem;padding:9px 14px;border-radius:999px;white-space:nowrap}
+  body:has(.pbar){padding-bottom:64px}
+}
+.nf{margin:40px 0 24px}.nf p{margin:6px 0 16px;color:var(--muted)}
+.nfcats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px;align-items:center}
+.nfcats span{width:100%;color:var(--muted);font-size:0.8125rem}
+.cprice{display:grid;grid-template-columns:var(--cols);border-bottom:1px solid var(--line);background:var(--surface)}
+.cprice .pad{border-right:1px solid var(--line);padding:11px 10px;font-weight:600;font-size:0.8125rem}
+.cprice .c{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px;border-right:1px solid var(--line);text-align:center;min-width:0}
+.cprice .num{font-size:1rem}
+.cprice .cshop{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.cprice .cgo{font-size:0.8125rem;font-weight:600;color:var(--brand)}
+@media (max-width:760px){.cprice .pad{display:none}}
+.ccol .cname{color:inherit;text-decoration:none}.ccol .cname:hover b{text-decoration:underline}
 
 /* the spread rail, redrawn as a hairline on cream */
 .rail{position:relative;height:20px;margin-top:14px;max-width:360px}
@@ -771,7 +804,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .cmnow .x:hover{border-color:var(--bad);color:var(--bad)}
 .pcard{cursor:pointer}
 @media (max-width:760px){
-  .chead,.ctable,.cphotos{grid-template-columns:repeat(var(--n),minmax(0,1fr))}
+  .chead,.ctable,.cphotos,.cprice{grid-template-columns:repeat(var(--n),minmax(0,1fr))}
   .ctable .k{grid-column:1/-1;justify-content:flex-start;text-align:left;border-right:0;border-bottom:0;
     padding-bottom:2px;padding-top:12px;font-weight:700;color:var(--body)}
   .ctable .c{font-size:0.8125rem;padding:6px 8px 11px}
@@ -781,6 +814,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
    collapsed and the title, the counters and the controls crowded into each other. Each group
    wraps as a unit, so they stack instead of overlapping. */
 .cbar-l,.cbar-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
+.cbar-l h1{overflow-wrap:anywhere;min-width:0;max-width:100%}
 .cbar-r{margin-left:auto}
 .sw{display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-size:0.875rem;font-weight:600;user-select:none}
 .sw input{position:absolute;opacity:0;pointer-events:none}
