@@ -247,6 +247,7 @@ button,input,select,textarea{font:inherit;color:inherit}
   font-family:var(--mono);font-size:max(10.5px,.5em);font-weight:600;letter-spacing:.04em;line-height:1;
   color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px var(--line2);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
   vertical-align:middle;white-space:nowrap;text-decoration:none}
+.ny.cur{color:var(--good);background:color-mix(in srgb,var(--good) 14%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--good) 30%,transparent)}
 .ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
 .pname .ny{font-size:max(12px,.3em);vertical-align:.55em;letter-spacing:.06em}
 .pcard h3 .ny,.dl-n .ny,.sg-n .ny,.cwt b .ny,.cname .ny{font-size:10.5px;vertical-align:.1em}
@@ -671,7 +672,8 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 /* The options column ran 250 px below the photo, most of it the "compare with" cards. They sit
    under the photo instead, side by side, and the options column spans both rows - so the photo,
    the options and the cards finish level rather than leaving a hole under the picture. */
-@media (min-width:761px){
+/* from 901px: at 900 and under the page is one column (see max-width:900 below) */
+@media (min-width:901px){
   .pgrid{grid-template-rows:auto 1fr}
   .pshotwrap{grid-column:1;grid-row:1}
   .pside{grid-column:2;grid-row:1/span 2}
@@ -715,16 +717,17 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
    hard-coded and nothing can push the column wider than the screen. min-width:0 lets a long name
    wrap inside its card instead of stretching it. */
 .cwith{margin-top:22px}
-.pgrid>.cwith .cwrow{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.pgrid>.cwith .cwrow{grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr))}
 .cwith h3{margin:0 0 10px;font-family:var(--mono);font-size:0.75rem;font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted)}
-.cwrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-.cw{display:flex;align-items:center;gap:12px;min-width:0;padding:10px 12px;border:1.5px solid var(--line2);
+.cwrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:10px}
+.cw{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:10px 12px;border:1.5px solid var(--line2);
   border-radius:14px;background:var(--surface);color:var(--text);text-decoration:none;
   transition:border-color .12s}
 .cw:hover,.cw:focus-visible{border-color:var(--text)}
-.cw img{width:64px;height:64px;object-fit:contain;flex:none}
-.cwt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cw img{width:64px;height:64px;object-fit:contain;flex:none;align-self:center}
+/* text top-aligned: the role, name and price lines sit level across the row of cards */
+.cwt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
 .cwt em{font-style:normal;font-size:0.6875rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .cwt b{font-size:0.9375rem;font-weight:600;overflow-wrap:anywhere}
 .cwt .num{font-size:0.875rem;font-weight:700}
