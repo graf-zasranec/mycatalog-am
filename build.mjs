@@ -652,6 +652,11 @@ for (const c of cats) {
 }
 // The blog, as real pages a search engine can index (the app reads the same articles from BLOG).
 // Armenian, like the rest of the static pages; the app offers all three languages.
+// {{price:<id>}} and {{diff:<a>|<b>}} are today's prices, the same as the app shows (see LIVE there)
+const livePrice = id => { const p = phones.find(q => q.id === id); return p && offersOf(p).length ? offersOf(p)[0].price : null; };
+const LIVE = s => s.replace(/\{\{price:([\w-]+)\}\}/g, (m, id) => livePrice(id) != null ? amd(livePrice(id)) : '—')
+  .replace(/\{\{diff:([\w-]+)\|([\w-]+)\}\}/g, (m, a, b) =>
+    livePrice(a) != null && livePrice(b) != null ? amd(Math.abs(livePrice(b) - livePrice(a))) : '—');
 // "## " starts a heading, "- " a list item (consecutive ones form one list), anything else a paragraph
 const bodyHTML = list => {
   let html = '', inList = false;
@@ -660,7 +665,7 @@ const bodyHTML = list => {
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>\n';
     inList = li;
-    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>\n` : li ? `<li>${esc(s.slice(2))}</li>` : `<p>${esc(s)}</p>\n`;
+    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>\n` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>\n`;
   }
   return html + (inList ? '</ul>\n' : '');
 };
@@ -677,6 +682,9 @@ if (BLOG.length) {
 </main></body></html>
 `);
   sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
+  // an article taken out of data/blog.json takes its page with it, or the old url stays live
+  for (const d of fs.readdirSync('b', { withFileTypes: true }))
+    if (d.isDirectory() && !BLOG.some(x => x.id === d.name)) fs.rmSync(`b/${d.name}`, { recursive: true, force: true });
   for (const a of BLOG) {
     const url = `${bUrl}${a.id}/`;
     const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.hy.title, description: a.hy.lead,
@@ -688,8 +696,9 @@ if (BLOG.length) {
 <nav class="bc" aria-label="Breadcrumb"><a href="../../">Better</a> › <a href="../">Բլոգ</a> › <span>${esc(a.hy.title)}</span></nav>
 <main>
 <h1>${esc(a.hy.title)}</h1>
-<p class="lead">${esc(a.hy.lead)}</p>
+<p class="lead">${LIVE(esc(a.hy.lead))}</p>
 ${bodyHTML(a.hy.body)}
+${(a.sources || []).length ? `<p class="upd">Աղբյուրներ՝ ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s => `<a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
 <p><a class="go" href="../../#/blog/${a.id}">Կարդալ Better-ում</a></p>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
 </main></body></html>
