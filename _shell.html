@@ -249,23 +249,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 .spot-e{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
 .spot-p{font-weight:800;letter-spacing:-.03em;line-height:1.05}
-/* A: a price tag - the cutout floats on the card, no photo box */
-.spot-a{grid-template-columns:128px minmax(0,1fr);gap:14px 18px;align-items:center;background:var(--surface);
-  border:1px solid var(--line);padding:20px 22px;box-shadow:var(--shadow-m)}
-.spot-a:hover{border-color:var(--text)}
-.spot-a .spot-e,.spot-a .spot-go{grid-column:1/-1}
-.spot-a img{width:128px;height:150px;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(20,19,20,.22))}
-.spot-b{display:grid;justify-items:start;min-width:0}
-.spot-a .spot-n{font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
-.spot-b small{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:3px}
-.spot-a .spot-p{font-size:32px;margin-top:10px}
-.spot-was{color:var(--muted);font-size:13px;margin-top:3px}
-.spot-was s{text-decoration-thickness:1.5px}
-.spot-row{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin-top:10px;font-size:12.5px;color:var(--body)}
-.spot-pill{font-weight:800;font-size:12.5px;padding:4px 9px;border-radius:var(--pill);background:var(--good-soft);color:var(--good)}
-.spot-go{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:12px;font-weight:700;font-size:13.5px;color:var(--body)}
-.spot-go span:last-child{color:var(--brand)}
-/* C: a poster - dark tinted panel in both themes, the product bleeding off the edge */
+/* a poster - dark tinted panel in both themes, the product bleeding off the edge */
 .spot-c{position:relative;overflow:hidden;min-height:340px;padding:24px;align-content:space-between;gap:18px;color:#fff;
   background:radial-gradient(120% 90% at 85% 25%,#6B2B2F 0%,#3A1C22 45%,#1B1116 100%);box-shadow:var(--shadow-m)}
 .spot-c .spot-e{color:#FFB4AC;position:relative}

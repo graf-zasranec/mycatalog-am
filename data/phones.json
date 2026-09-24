@@ -13258,7 +13258,7 @@
   "id": "dell-xps-9350-16gb-ultra-7",
   "category": "laptop",
   "brand": "Dell",
-  "name": "XPS 9350",
+  "name": "XPS 9350 (Ultra 7)",
   "tier": "upper-mid",
   "priceAmd": 559000,
   "priceAmdMax": 559000,
@@ -13306,7 +13306,8 @@
    "Dell XPS 9350(32GB/Ultra 7)",
    "XPS 9350(32GB/Ultra 7)",
    "XPS 9350(16GB/Ultra 7)",
-   "Dell XPS 9350(16GB/Ultra 7)"
+   "Dell XPS 9350(16GB/Ultra 7)",
+   "XPS 9350"
   ],
   "colors": []
  },
@@ -22252,8 +22253,10 @@
   "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
   "category": "laptop",
   "brand": "HP",
-  "name": "OmniBook 5 16",
-  "aliases": [],
+  "name": "OmniBook 5 16 (Ultra 5)",
+  "aliases": [
+   "OmniBook 5 16"
+  ],
   "tier": "upper-mid",
   "priceAmd": 439900,
   "priceAmdMax": 439900,
@@ -25620,11 +25623,12 @@
   "name": "IdeaPad 5 2-in-1 16IAL10",
   "aliases": [
    "Lenovo IdeaPad 5 2-in-1 16IAL10",
-   "IdeaPad 5 2-in-1 16IAL10"
+   "IdeaPad 5 2in1 16IAL10(Ultra 7)",
+   "Lenovo IdeaPad 5 2in1 16IAL10Ultra 7"
   ],
   "tier": "upper-mid",
   "released": "2025-06",
-  "priceAmd": 499900,
+  "priceAmd": 479000,
   "priceAmdMax": 499900,
   "popularity": 56,
   "accent": "#8E8E93",
@@ -25645,6 +25649,11 @@
     "ram": 16,
     "storage": 512,
     "priceAmd": 499900
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 479000
    }
   ],
   "battery": {},
@@ -25655,7 +25664,10 @@
   "colors": [
    "Gray"
   ],
-  "summaryEn": "A 16-inch convertible with a touchscreen that folds back into a tablet."
+  "summaryEn": "A 16-inch convertible with a touchscreen that folds back into a tablet.",
+  "body": {
+   "weight": 2100
+  }
  },
  {
   "id": "lenovo-ideapad-5-2in1-16ahp9-ryzen-7",
@@ -25700,51 +25712,6 @@
   ],
   "aliases": [
    "Lenovo IdeaPad 5 2in1 16AHP9Ryzen 7"
-  ]
- },
- {
-  "id": "lenovo-ideapad-5-2in1-16ial10-ultra-7",
-  "category": "laptop",
-  "brand": "Lenovo",
-  "name": "IdeaPad 5 2in1 16IAL10(Ultra 7)",
-  "tier": "mid",
-  "priceAmd": 479000,
-  "priceAmdMax": 479000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 16,
-   "type": "IPS",
-   "resolution": "1920x1200",
-   "refresh": 60,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 7 255U"
-  },
-  "graphics": {
-   "name": "Intel Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 2100
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 16-inch laptop with Ultra 7 255U.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 1024,
-    "priceAmd": 479000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Lenovo IdeaPad 5 2in1 16IAL10Ultra 7"
   ]
  },
  {

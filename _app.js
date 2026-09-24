@@ -43,7 +43,7 @@ const X = {
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ էժան', sameBest: 'նույն գինը',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենաէժան գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
     spotT: 'Օրվա գործարքը',
-    dealSave: '{shop}-ից {n} ֏ էժան', dealUsual: 'սովորական գնից {n} ֏ էժան', usuallyL: 'սովորաբար', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    dealUsual: 'սովորական գնից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -75,7 +75,7 @@ const X = {
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина', sameBest: 'та же цена',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
     spotT: 'Выгода дня',
-    dealSave: 'на {n} ֏ дешевле, чем в {shop}', dealUsual: 'на {n} ֏ ниже обычной цены', usuallyL: 'обычно', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
+    dealUsual: 'на {n} ֏ ниже обычной цены', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
@@ -110,7 +110,7 @@ const X = {
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop', sameBest: 'same price',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
     spotT: 'Deal of the day',
-    dealSave: '{n} ֏ less than {shop}', dealUsual: '{n} ֏ below the usual price', usuallyL: 'usually', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
+    dealUsual: '{n} ֏ below the usual price', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
@@ -1256,26 +1256,13 @@ function spotHTML(d) {
   const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
   const eb = `<span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>`;
   const n = nx(d.shops, 'shops');
-  // PREVIEW: both designs until one is chosen
-  let spotV = 'a'; try { spotV = localStorage.getItem('spotV') || 'a'; } catch (e) { }
-  if (spotV === 'c') return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
+  return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
       ${eb}
       <img src="${IMG(p.id)}" alt="" decoding="async">
       <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
       <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
         <b class="spot-p num">${amd(d.lo)}</b>
         <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
-    </a>`;
-  return `<a class="spot spot-a" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
-      ${eb}
-      <img src="${IMG(p.id)}" alt="" decoding="async">
-      <span class="spot-b">
-        <b class="spot-n" id="spotT">${esc(fullName(p))}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
-        <b class="spot-p num">${amd(d.lo)}</b>
-        <span class="spot-was">${esc(x('usuallyL'))} <s class="num">${amd(d.mid)}</s></span>
-        <span class="spot-row"><span class="spot-pill num">−${pct}%</span><span>${esc(x('atShop').replace('{shop}', shopName(d.loShop)))}</span></span>
-      </span>
-      <span class="spot-go"><span>${esc(n)}</span><span>${esc(x('checkPrices'))} →</span></span>
     </a>`;
 }
 function mastHero() {
