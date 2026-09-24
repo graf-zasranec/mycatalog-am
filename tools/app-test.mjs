@@ -46,7 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  GROUPS, specVal, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
+  GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -227,6 +227,14 @@ const dl = app.deals();
 is(dl.length > 3, true, 'the front page has deals to show');
 is(dl.filter(d => !d.drop && !(d.loShop !== d.hiShop && d.hi > d.lo)).map(d => d.p.id), [], 'a saving is between two different shops');
 is(Object.values(dl.reduce((m, d) => (m[d.p.brand] = (m[d.p.brand] || 0) + 1, m), {})).some(n => n > 3), false, 'no brand fills the row');
+
+/* --- names stay names in translation ----------------------------------------------- */
+// The colour vocabulary turned Apple's "Lightning" into "lightning-fast" and Xiaomi's "Light
+// Fusion" sensor into "pale Fusion" on the Russian and Armenian pages.
+for (const L of ['ru', 'hy']) {
+  is(/Lightning/.test(app.tr('none, wired Lightning', L)), true, `the Lightning connector keeps its name (${L})`);
+  is(/Light Fusion/.test(app.tr('50 MP, 23mm wide, Light Fusion 900 sensor', L)), true, `a sensor named Light Fusion keeps its name (${L})`);
+}
 
 /* --- the countdown counts down, and stops ---------------------------------------------- */
 is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');

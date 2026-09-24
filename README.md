@@ -1,125 +1,80 @@
 # Better
 
-Trilingual (hy / ru / en) smartphone catalogue for the Armenian market.
-111 products, prices in AMD, filters, product pages and side-by-side comparison.
+A price comparison for the Armenian market, in Armenian, Russian and English. 1221 products in
+14 sections - phones, laptops, TVs, monitors, headphones, watches, tablets, speakers and more -
+with prices from 21 Armenian shops, refreshed every night.
+
+It is a static site: GitHub Pages serves the repository as it is, and a nightly GitHub Action
+re-reads the shops, rebuilds and commits. There is no server and no database.
 
 ## Put it online
 
-See **DEPLOY.md**. Short version: GitHub Pages gives you a public URL and refreshes the
-prices nightly by itself; Netlify Drop gives you one in ten seconds with no account setup.
-
-## Open it
-
-- `index.html` — double-click it. Reads photos from `images/`.
-- `index.embedded.html` — same site as ONE file (photos inlined). Email it, put it anywhere.
-- `artifact.html` — head-less fragment used for the published Claude artifact.
+See **DEPLOY.md**. After buying a domain: add a `CNAME` file with it, set `SITE` in
+`build.mjs` to the new address, rebuild, and point the domain's DNS at GitHub Pages.
 
 ## Edit it
 
 | File | What it holds |
 |---|---|
-| `_shell.html` | all the CSS + page chrome |
-| `_app.js` | all the logic (filters, compare, i18n, routing) |
-| `data/phones.json` | the 88 products and their specs |
-| `data/strings.json` | every UI label in hy / ru / en |
-| `data/verdicts.json` | per-phone summary + pros/cons in hy / ru |
-| `images/<id>.jpg` | original product photo, filename = the phone's `id` |
-| `images/_src/` | photos pulled per colour from the shops (input to the cutout) |
-| `images/cut/` | transparent WebP cutouts — `<id>__main.webp` and `<id>__<colour>.webp` |
+| `_shell.html` | all the CSS and the page chrome |
+| `_app.js` | all the logic: routing, filters, compare, price chart, i18n |
+| `build.mjs` | bakes everything into `index.html`, the product and section pages under `p/` and `c/`, `sitemap.xml` and `robots.txt` |
+| `data/phones.json` | every product and its specs (the name is historical - it holds all sections) |
+| `data/prices.json` | today's offers per product, written by `scrape.mjs` |
+| `data/history.json` | cheapest price per day, and per storage size (`t`) from 24.09.2026 |
+| `data/links.csv` | pins: which product a shop url belongs to (`-` = not something we carry) |
+| `data/merged.json` | products folded into another; old links redirect to the survivor |
+| `data/terms.json` | spec vocabulary in Armenian and Russian |
+| `data/strings.json` | UI labels in all three languages |
+| `images/cut/` | transparent product cutouts, `<id>__main.webp` and `<id>__<colour>.webp` |
+| `images/thumb/` | 600 px copies of the cutouts for cards |
 
-After changing anything, run:
+After changing anything:
 
     node build.mjs
 
-That regenerates all three html files. Swapping a product photo needs no code change —
-just overwrite `images/<id>.jpg`.
+The build runs the app's self-test (`tools/app-test.mjs`) and refuses to finish if it fails, or
+if the stylesheet's braces do not balance.
+
+## Keeping the catalogue clean
+
+    node tools/merge.mjs plan.json [--write]   # fold duplicates, remove or rename products
+    node tools/audio.mjs --write               # give new headphones a type for the filters
+    node tools/prune.mjs [--write]             # drop products nothing in the country sells
+    python tools/thumbs.py --check             # rebuild thumbnails that no longer match their photo
+    python tools/photo-dupes.py                # list colours that share one photo (no dot for them)
+
+A merge moves the offers, price history and shop pins to the survivor and records the old id in
+`data/merged.json`, so a link that was already shared still lands.
+
+## Prices
+
+    node scrape.mjs --selftest   # offline check of the product/storage matcher
+    node scrape.mjs              # every shop
+    node scrape.mjs vega         # one shop; merges into the existing data
+
+The rules each shop is read under - what its robots.txt allows, which pages, how slowly - are
+written at the top of `scrape.mjs`. A shop that is down keeps last night's prices rather than
+publishing an empty catalogue.
+
+Not read at all: **list.am** (robots.txt disallows ClaudeBot) and **gsmarena.com** (disallows
+ClaudeBot, Claude-SearchBot and anthropic-ai).
+
+## Photos
+
+Product photos come from the shops' own pages and manufacturer press renders - see
+`images/SOURCES.txt`. `tools/cutout.py` cuts the product out locally with a segmentation model;
+nothing leaves the machine. They need licensing, or replacing with your own or a distributor's
+photography, before a commercial launch.
+
+## Crawlers
+
+`robots.txt` lets search engines in (Google, Bing, Yandex, DuckDuckGo, Apple) along with link
+previews (Telegram, Facebook), and asks AI crawlers and AI assistants' fetchers to stay out. The
+list is `AI_BOTS` in `build.mjs`. A crawler only reads `robots.txt` at the root of a domain, so it
+takes effect once the site has its own domain rather than a `github.io/mycatalog-am/` folder.
 
 ## Design
 
-- Colours taken from kimovil.com: ground `#F3F5FA`, indigo `#4535E4`, green `#01C778`, magenta `#F11382`
-- Type: Onest (latin + cyrillic) with Noto Sans Armenian falling through for Armenian glyphs
-- Light + dark themes, both hand-tuned. Theme button cycles auto -> light -> dark.
-
-## Product photos
-
-The product page shows a transparent cutout on a coloured panel, and swaps the photo when you
-pick a colour. Two steps produce those:
-
-    node tools/colors.mjs                       # one photo per (phone, colour), from the shop that sells it
-    pip install "rembg[cpu]" onnxruntime pillow scipy
-    python tools/cutout.py                      # all of them, or pass ids to redo a few
-
-`cutout.py` runs **isnet-general-use**, a segmentation model, locally — nothing leaves the
-machine. It replaced a hand-rolled flood fill that could only ask "is this pixel near the
-backdrop colour", which cannot tell a grey shadow plinth from a grey product, or a white watch
-strap from a white backdrop: it left podiums under half the catalogue and ate the straps of the
-other half. Three passes run on the model's mask: narrow column runs are dropped (the S Pen
-lying beside a Galaxy Ultra), small enclosed holes are filled (the model tears at a reflective
-folded screen) while large ones are kept (the gap inside a headphone headband), and the product
-is centred on a square canvas so every card frames alike.
-
-Colour photos come from the shops themselves (Vega, then iSpace) — the photo shown for a colour
-comes from a shop that actually sells it. The **main** photo is shop-sourced too for the products
-a shop stocks with a picture; the other 9 fall back to `images/_gsmarena_fallback/`.
-
-GSMArena's robots.txt disallows ClaudeBot, so nothing new is fetched from them — the fallback
-files are ones downloaded earlier in the project. Replace them with your own or a distributor's
-photography before launch.
-
-## Keeping prices fresh
-
-`refresh.cmd` re-scrapes every shop and rebuilds the site. A Windows scheduled task named
-**"MyCatalog refresh"** runs it daily at 06:00.
-
-    refresh.cmd                          # run it now
-
-    # inspect / remove the schedule
-    Get-ScheduledTask -TaskName 'MyCatalog refresh'
-    Unregister-ScheduledTask -TaskName 'MyCatalog refresh' -Confirm:$false
-
-If a scrape fails, refresh.cmd stops and keeps the previous `data/prices.json` rather than
-publishing an empty catalogue. Photos are not refreshed by it — re-run `tools/colors.mjs`
-and `python tools/cutout.py` by hand when a shop adds colours.
-
-## Real prices
-
-`node scrape.mjs` collects live prices from Armenian shops into `data/prices.json`,
-then `node build.mjs` bakes them into the site. Re-run both whenever you want fresh prices.
-
-    node scrape.mjs --selftest   # offline check of the phone/storage matcher
-    node scrape.mjs              # fetch prices from all enabled shops
-    node scrape.mjs ispace       # just one shop
-    node build.mjs               # rebuild the html
-
-Shops currently wired: **iSpace**, **Vega**, **Mobile Centre**, **Pixel**.
-
-Each shop also carries a `warranty` URL where it genuinely publishes warranty terms; the product
-page links those and names the shops that publish none rather than implying cover they don't offer.
-
-Running one shop (`node scrape.mjs vega`) MERGES into the existing data — it re-fetches only that
-shop and keeps the rest. It used to overwrite the file with a single shop's results.
-
-A phone with no scraped offer keeps its estimated price and is labelled as an estimate
-(`~` on the variant chips, "no online offers found" on the product page). Nothing is invented.
-
-### Sites deliberately NOT scraped
-
-| Site | Why |
-|---|---|
-| list.am | robots.txt: `User-agent: ClaudeBot` / `Disallow: /` |
-| yerevanmobile.am | robots.txt: `User-agent: ClaudeBot` / `Disallow: /` |
-| gsmarena.com | robots.txt disallows `ClaudeBot`, `Claude-SearchBot` and `anthropic-ai` |
-| zigzag.am | WAF returns 403 to identified crawlers; faking a browser UA would be evasion |
-
-Also checked and unusable: allcell.am and ibolit.am do not resolve, mobilecenter.am is a parked
-domain for sale (the real shop is mobile**centre**.am), ultra.am is parked, onex.am is a delivery
-service, 4u.am carries none of these models, xiaomi.am is a blog and honor.am publishes no prices.
-
-Adding a shop = one adapter in `scrape.mjs`. Check its robots.txt first.
-
-## Before this goes live
-
-- Prices for 82 of 88 models are REAL, scraped from 8 Armenian shops. The other 6 are
-  still estimates and are labelled as such in the UI. Re-run `scrape.mjs` regularly — prices go stale.
-- Product photos are manufacturer press renders — see `images/SOURCES.txt`. They need
-  licensing, or replace them with your own / the distributor's.
+- Warm ivory ground `#F7F3EC`, ink `#161C28`, brick `#9E2B25`; a hand-tuned dark theme
+- Manrope for text, IBM Plex Mono for labels, Noto Sans Armenian for Armenian

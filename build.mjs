@@ -457,8 +457,38 @@ function build({ inline, standalone }) {
   return HEAD_OPEN(appJs) + head + HEAD_CLOSE + body + script + '\n</body></html>\n';
 }
 
-fs.writeFileSync('robots.txt', `User-agent: *
+// Search engines in, AI crawlers out. The owner wants the catalogue found through search and not
+// harvested into AI training sets or answered from by AI assistants.
+//
+// Blocked: crawlers that collect for training, and the fetchers AI assistants send when a user
+// asks them something. Google-Extended and Applebot-Extended are opt-out TOKENS, not crawlers:
+// naming them keeps pages out of Gemini and Apple Intelligence without touching Google or Apple
+// search, which crawl as Googlebot and Applebot and stay allowed below.
+//
+// Allowed: everything else, which is search (Googlebot, Bingbot, YandexBot, DuckDuckBot, Applebot)
+// and the link previews (TelegramBot, facebookexternalhit, Twitterbot) that make a shared link show
+// its product. Bing's own crawler also feeds Copilot and cannot be split from Bing search, so it
+// stays in - the price of being in Bing at all.
+//
+// robots.txt is a request, not a lock: the named companies honour it, a scraper that ignores it
+// is not stopped by it.
+const AI_BOTS = [
+  'GPTBot', 'ChatGPT-User', 'OAI-SearchBot',                    // OpenAI
+  'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', // Anthropic
+  'Google-Extended', 'GoogleOther', 'GoogleOther-Image', 'GoogleOther-Video', 'Google-CloudVertexBot',
+  'Applebot-Extended',
+  'PerplexityBot', 'Perplexity-User',
+  'meta-externalagent', 'meta-externalfetcher', 'FacebookBot',
+  'Amazonbot', 'Bytespider', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler',
+  'MistralAI-User', 'DuckAssistBot', 'YouBot', 'Diffbot', 'AI2Bot', 'Ai2Bot-Dolma',
+  'PanguBot', 'Timpibot', 'ImagesiftBot', 'Omgilibot', 'omgili', 'Kangaroo Bot', 'Webzio-Extended',
+];
+fs.writeFileSync('robots.txt', AI_BOTS.map(b => `User-agent: ${b}`).join('\n') + `
+Disallow: /
+
+User-agent: *
 Allow: /
+
 Sitemap: ${SITE}sitemap.xml
 `);
 const today = new Date().toISOString().slice(0, 10);
