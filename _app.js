@@ -43,7 +43,7 @@ const X = {
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
     spotT: 'Օրվա գործարքը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
-    dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', sourcesL: 'Աղբյուրներ', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -75,7 +75,7 @@ const X = {
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
     spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
-    dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
+    dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', sourcesL: 'Источники', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
@@ -110,7 +110,7 @@ const X = {
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
     spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
-    dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
+    dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', sourcesL: 'Sources', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
@@ -2024,6 +2024,12 @@ function detailView(p) {
 // writes each one as a static page under b/ for search engines. "## " starts a heading, "- " a
 // list item (consecutive ones make one list), anything else is a paragraph.
 const postText = a => a[st.lang] || a.en;
+// An article can quote today's price: {{price:<id>}} is the product's lowest price now, and
+// {{diff:<a>|<b>}} how far apart two products are - so a post never goes stale when prices move.
+const livePrice = id => { const p = byId(id); return p && hasReal(p) ? bestOf(p) : null; };
+const LIVE = s => s.replace(/\{\{price:([\w-]+)\}\}/g, (m, id) => livePrice(id) != null ? amd(livePrice(id)) : '—')
+  .replace(/\{\{diff:([\w-]+)\|([\w-]+)\}\}/g, (m, a, b) =>
+    livePrice(a) != null && livePrice(b) != null ? amd(Math.abs(livePrice(b) - livePrice(a))) : '—');
 function postBody(list) {
   let html = '', inList = false;
   for (const s of list) {
@@ -2031,7 +2037,7 @@ function postBody(list) {
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>';
     inList = li;
-    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : li ? `<li>${esc(s.slice(2))}</li>` : `<p>${esc(s)}</p>`;
+    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>`;
   }
   return html + (inList ? '</ul>' : '');
 }
@@ -2040,7 +2046,7 @@ function blogView() {
     <header class="bl-hd"><h1>${esc(t('nav.blog'))}</h1><p>${esc(x('blogSub'))}</p></header>
     <div class="bl-grid">${BLOG.map((a, i) => { const T = postText(a); return `<a class="bl-card${i ? '' : ' first'}" href="#/blog/${esc(a.id)}">
       <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
-      <h2>${esc(T.title)}</h2><p>${esc(T.lead)}</p>
+      <h2>${esc(T.title)}</h2><p>${LIVE(esc(T.lead))}</p>
       <span class="bl-go">${esc(x('readL'))} →</span></a>`; }).join('')}</div></div>`;
 }
 function postView(a) {
@@ -2049,8 +2055,10 @@ function postView(a) {
     <article class="post">
       <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
       <h1>${esc(T.title)}</h1>
-      <p class="post-lead">${esc(T.lead)}</p>
+      <p class="post-lead">${LIVE(esc(T.lead))}</p>
       ${postBody(T.body)}
+      ${(a.sources || []).length ? `<p class="post-src">${esc(x('sourcesL'))}: ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s =>
+        `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
       ${cta ? `<p class="post-cta"><a class="btn" href="${esc(cta.href)}">${esc(cta[st.lang] || cta.en)} →</a></p>` : ''}
     </article>
     <aside class="post-more"><h2 class="sh">${esc(x('allPosts'))}</h2><div class="bl-list">${BLOG.filter(b => b !== a).map(b =>
