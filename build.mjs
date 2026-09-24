@@ -23,6 +23,8 @@ const COMING = fs.existsSync('data/coming.json') ? JSON.parse(rd('data/coming.js
 const PAGEONLY = fs.existsSync('data/pageonly.json') ? JSON.parse(rd('data/pageonly.json')) : {};
 // duplicate id -> the product it was folded into, written by tools/merge.mjs
 const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.json')) : {};
+// articles, newest first; data/blog.json holds each in hy, ru and en
+const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json')) : []).sort((a, b) => b.date.localeCompare(a.date));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
@@ -443,6 +445,7 @@ function build({ inline, standalone }) {
     + `const COMING=${JSON.stringify(COMING)};\n`
     + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
     + `const MERGED=${JSON.stringify(MERGED)};\n`
+    + `const BLOG=${JSON.stringify(BLOG)};\n`
     + `const DROPS=${JSON.stringify(DROPS)};\n`
     + `const COMPARE_WITH=${JSON.stringify(pairs(phones, PRICES.offers || {}))};\n`
     + imgdata + rd('_app.js') + '\n';
@@ -646,6 +649,53 @@ for (const c of cats) {
   fs.mkdirSync(`c/${c}`, { recursive: true });
   fs.writeFileSync(`c/${c}/index.html`, page);
   sitemapRows.push([url, today, 0.8]);
+}
+// The blog, as real pages a search engine can index (the app reads the same articles from BLOG).
+// Armenian, like the rest of the static pages; the app offers all three languages.
+// "## " starts a heading, "- " a list item (consecutive ones form one list), anything else a paragraph
+const bodyHTML = list => {
+  let html = '', inList = false;
+  for (const s of list) {
+    const li = s.startsWith('- ');
+    if (li && !inList) html += '<ul>';
+    if (!li && inList) html += '</ul>\n';
+    inList = li;
+    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>\n` : li ? `<li>${esc(s.slice(2))}</li>` : `<p>${esc(s)}</p>\n`;
+  }
+  return html + (inList ? '</ul>\n' : '');
+};
+if (BLOG.length) {
+  const bUrl = `${SITE}b/`;
+  fs.mkdirSync('b', { recursive: true });
+  fs.writeFileSync('b/index.html', HEAD({ title: 'Բլոգ | Better', desc: 'Հոդվածներ գների, համեմատման և տեխնիկայի ընտրության մասին։', url: bUrl, img: SITE + SEO.img,
+    ld: [crumbs([['Better', SITE], ['Բլոգ', bUrl]])] }) + `
+<header><a href="../">Better</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="../">Better</a> › <span>Բլոգ</span></nav>
+<main>
+<h1>Բլոգ</h1>
+<ul class="pl">${BLOG.map(a => `<li><a href="${a.id}/">${esc(a.hy.title)}</a><span>${a.date.split('-').reverse().join('.')}</span></li>`).join('\n')}</ul>
+</main></body></html>
+`);
+  sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
+  for (const a of BLOG) {
+    const url = `${bUrl}${a.id}/`;
+    const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.hy.title, description: a.hy.lead,
+      datePublished: a.date, inLanguage: 'hy', url, publisher: { '@type': 'Organization', name: 'Better' } },
+      crumbs([['Better', SITE], ['Բլոգ', bUrl], [a.hy.title, url]])];
+    fs.mkdirSync(`b/${a.id}`, { recursive: true });
+    fs.writeFileSync(`b/${a.id}/index.html`, HEAD({ title: `${a.hy.title} | Better`, desc: a.hy.lead, url, img: SITE + SEO.img, ld }) + `
+<header><a href="../../">Better</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better</a> › <a href="../">Բլոգ</a> › <span>${esc(a.hy.title)}</span></nav>
+<main>
+<h1>${esc(a.hy.title)}</h1>
+<p class="lead">${esc(a.hy.lead)}</p>
+${bodyHTML(a.hy.body)}
+<p><a class="go" href="../../#/blog/${a.id}">Կարդալ Better-ում</a></p>
+<p class="upd">${a.date.split('-').reverse().join('.')}</p>
+</main></body></html>
+`);
+    sitemapRows.push([url, a.date, 0.6]);
+  }
 }
 // A product folded into another keeps its url: the share page and any link to it that was
 // already posted or indexed send the visitor, and a crawler, to the survivor instead of a 404.

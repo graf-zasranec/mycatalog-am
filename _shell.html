@@ -240,7 +240,7 @@ button,input,select,textarea{font:inherit;color:inherit}
    serves a 58 px page title and a 15 px card title alike. */
 .ny{display:inline-block;margin-left:.45em;padding:.2em .48em .16em;border-radius:.42em;
   font-family:var(--mono);font-size:max(10.5px,.5em);font-weight:600;letter-spacing:.04em;line-height:1;
-  color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
+  color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px var(--line2);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
   vertical-align:.28em;white-space:nowrap;text-decoration:none}
 .ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
 .pname .ny{font-size:max(12px,.3em);vertical-align:.9em;letter-spacing:.06em}
@@ -562,7 +562,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .badge.na{background:#FFFFFF;color:#4A5262;border:1px solid #D9D0C2;box-shadow:none}
 .pbody{padding:12px 4px 2px;display:flex;flex-direction:column;flex:1}
 .eyebrow{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase}
-.pcard h3{font-size:1rem;font-weight:700;letter-spacing:-.02em;margin-top:3px;line-height:1.3}
+.pcard h3{font-size:1rem;font-weight:700;letter-spacing:-.02em;margin-top:3px;line-height:1.3;overflow-wrap:anywhere;min-width:0}
 .pcard h3 a::after{content:"";position:absolute;inset:0;z-index:1}
 .sc{min-width:0;display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
 /* nowrap on a chip whose text is longer than the card - "Over-ear, active noise cancellation"
@@ -572,6 +572,11 @@ button,input,select,textarea{font:inherit;color:inherit}
   padding:3px 7px;max-width:100%;overflow-wrap:anywhere}
 .pfoot{margin-top:auto;padding-top:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
 .pprice{font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+/* Two cards across a 360 px phone leave ~136 px of footer: a TV at "6 398 900 ֏" plus the 34 px
+   arrow did not fit and pushed the page sideways. The arrow is decoration - the whole card is the
+   link - so on the narrowest screens it goes, and the price steps down a size. */
+.pfoot{min-width:0}
+@media (max-width:420px){.pcard .go{display:none}.pprice{font-size:17px}}
 .pprice s{display:block;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0}
 /* A figure the data itself flags as unconfirmed. Quiet - it qualifies the number, it does not
    shout at it - and it carries its reason in a title so it is not a mystery mark. */
@@ -656,7 +661,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .cs button{width:34px;height:34px;border-radius:50%;padding:0;background:var(--c);cursor:pointer;
   border:1.5px solid var(--line2);transition:transform .12s,box-shadow .12s}
 .cs button:hover{transform:scale(1.07)}
-.cs button.on{border-color:var(--text);box-shadow:0 0 0 3px color-mix(in oklab,var(--text) 14%,transparent)}
+.cs button.on{border-color:var(--text);box-shadow:0 0 0 3px var(--line2);box-shadow:0 0 0 3px color-mix(in oklab,var(--text) 14%,transparent)}
 .bs{display:flex;gap:8px;flex-wrap:wrap}
 .bs button{height:40px;padding:0 16px;border-radius:var(--pill);cursor:pointer;font-size:0.844rem;font-weight:600;
   border:1.5px solid var(--line2);background:var(--surface);color:var(--text);transition:background .12s,border-color .12s}
@@ -708,7 +713,8 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
   .pbar span{flex:1;min-width:0;color:var(--muted);font-size:0.875rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .pbar a{flex:none;background:var(--brand);color:var(--brand-ink);text-decoration:none;font-weight:600;
     font-size:0.875rem;padding:9px 14px;border-radius:999px;white-space:nowrap}
-  body:has(.pbar){padding-bottom:64px}
+  /* a class, not body:has(.pbar): Firefox before 121 has no :has() and the bar covered the last row */
+  body.has-pbar{padding-bottom:64px}
 }
 .nf{margin:40px 0 24px}.nf p{margin:6px 0 16px;color:var(--muted)}
 .nfcats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px;align-items:center}
@@ -767,7 +773,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 }
 /* ================= compare ================= */
 .cwrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);box-shadow:var(--shadow-s);
-  margin-top:18px;overflow:clip}
+  margin-top:18px;overflow:hidden;overflow:clip}
 .chead{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line);
   display:grid;grid-template-columns:var(--cols)}
 .chead .pad{border-right:1px solid var(--line)}
@@ -896,6 +902,35 @@ footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;al
 .ft-links a:hover{color:var(--text);border-bottom-color:var(--line2)}
 @media (max-width:640px){.ft-links{margin-left:0;width:100%;border-top:1px solid var(--line);padding-top:14px}}
 /* a plain page of text: privacy, contact */
+/* ---- blog: an index of cards (the newest one wider) and a readable article column ---- */
+.bl-hd{margin:22px 0 22px}
+.bl-hd h1{font-size:clamp(32px,5vw,56px);font-weight:800;letter-spacing:-.045em;line-height:1}
+.bl-hd p{color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
+.bl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;margin-bottom:40px}
+.bl-card{display:grid;align-content:start;gap:10px;padding:22px;border-radius:var(--r-xl);background:var(--surface);
+  border:1px solid var(--line);color:var(--text);text-decoration:none;transition:border-color .15s,transform .2s cubic-bezier(.2,.8,.2,1)}
+.bl-card:hover{border-color:var(--text);transform:translateY(-2px)}
+.bl-card.first{grid-column:1/-1;background:linear-gradient(135deg,var(--surface) 55%,var(--brand-soft));padding:28px}
+.bl-card h2{font-size:21px;font-weight:800;letter-spacing:-.025em;line-height:1.2}
+.bl-card.first h2{font-size:clamp(24px,3vw,34px);max-width:26ch}
+.bl-card p{color:var(--body);font-size:.95rem;line-height:1.6;max-width:70ch}
+.bl-d{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--brand)}
+.bl-go{font-weight:700;font-size:.9rem;color:var(--brand);margin-top:4px}
+.post{max-width:68ch;margin:22px 0 10px}
+.post h1{font-size:clamp(28px,4.4vw,48px);font-weight:800;letter-spacing:-.04em;line-height:1.08;margin:10px 0 16px;overflow-wrap:anywhere}
+.post-lead{font-size:1.18rem;line-height:1.6;color:var(--text);margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--line2)}
+.post h2{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;margin:30px 0 10px}
+.post p{color:var(--body);font-size:1.02rem;line-height:1.75;margin:0 0 14px}
+.post ul{margin:0 0 16px;padding:0;list-style:none;display:grid;gap:8px}
+.post li{position:relative;padding-left:20px;color:var(--body);line-height:1.65}
+.post li::before{content:'';position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--brand)}
+.post-cta{margin-top:26px}
+.post-more{max-width:68ch;margin:30px 0 40px}
+.bl-list{display:grid;border-top:1px solid var(--line)}
+.bl-list a{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px 2px;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none;font-weight:600}
+.bl-list a:hover span{color:var(--brand)}
+.bl-list time{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+@media (max-width:640px){.bl-card,.bl-card.first{padding:18px}.bl-list a{grid-template-columns:1fr;gap:2px}}
 .doc{max-width:62ch;margin-top:26px}
 .doc h1{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1.1;margin:0 0 18px}
 .doc p{color:var(--body);font-size:1rem;line-height:1.7;margin:0 0 14px}
@@ -991,7 +1026,7 @@ a.store:hover .nm{color:var(--brand)}
 /* The difference column: one pill of one size on every row, so "Best price" and "+16 000" line up
    as a column instead of reading as two different kinds of thing. */
 .orow .od{text-align:center;font-size:12.5px;font-weight:700;line-height:1.2;padding:6px 10px;border-radius:var(--pill);white-space:nowrap;
-  background:color-mix(in srgb,var(--bad) 9%,transparent);color:var(--bad)}
+  background:var(--surface2);background:color-mix(in srgb,var(--bad) 9%,transparent);color:var(--bad)}
 .orow .ar{color:var(--muted);font-size:15px}
 .orow:hover .ar{color:var(--brand-2)}
 .orow.best{background:var(--good-soft)}
