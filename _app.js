@@ -39,13 +39,18 @@ const X = {
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
+    formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
+    connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
+    plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
+    gamingF: 'Խաղային', resF: 'Թույլատրություն',
+    spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Party', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
     waters: { splash: 'Ցանկոտումից պաշտպանված', dip: 'Ջրի մեջ ընկղման դիմացկուն' },
     heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և ընտրի՛ր', heroB: 'քո հեռախոսը',
     heroSub: 'Ամեն խանութ իր գինն է տալիս։ Մենք դրանք հավաքում ենք մեկ տեղում՝ որպեսզի գտնես հենց քեզ պետքը և չվճարես ավելին, քան պետք է։',
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
@@ -61,6 +66,11 @@ const X = {
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита',
+    formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
+    connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
+    plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
+    gamingF: 'Игровые', resF: 'Разрешение',
+    spkF: 'Тип', spks: { portable: 'Портативные', party: 'Для вечеринок', smart: 'Умные (Wi-Fi)', home: 'Домашние' },
     waters: { splash: 'Защита от брызг', dip: 'Выдерживает погружение' },
     // ru addresses the reader as вы everywhere else - the subhead below, the footer, the whole
     // interface - and only this headline used ты. Raised to вы rather than lowering the rest:
@@ -70,7 +80,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
@@ -86,6 +96,11 @@ const X = {
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
     ancF: 'Noise cancelling', waterF: 'Water resistance',
+    formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
+    connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
+    plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
+    gamingF: 'Gaming', resF: 'Resolution',
+    spkF: 'Type', spks: { portable: 'Portable', party: 'Party', smart: 'Smart (Wi-Fi)', home: 'Home' },
     waters: { splash: 'Splash resistant', dip: 'Survives a dunk' },
     heroTag: 'Just launched', heroA: 'Compare and pick', heroB: 'your next phone',
     heroSub: 'Every shop quotes its own price. We put them side by side, so you find the one you actually need and never pay more than you have to.',
@@ -107,12 +122,12 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], g5: false, nfc: false, anc: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], g5: false, nfc: false, anc: false, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
 // exists, or an array that came back as a string would all render as a broken page.
-for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops']) if (!Array.isArray(st[k])) st[k] = [];
+for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses']) if (!Array.isArray(st[k])) st[k] = [];
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
@@ -290,22 +305,15 @@ function historyHTML(p) {
 }
 const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generated.slice(5, 7) + '.' + P.generated.slice(0, 4) : '';
 
-// The two blobs the served build leaves out, fetched the first time somebody asks for a product
-// page and never on the front page - which is what saves the front page from parsing 531 KB it
-// has no use for. Once is enough per tab; a failure is silent on purpose, because the page
-// already reads correctly without either of them: the verdict falls back to the English summary
-// and the price chart simply does not appear.
+// The price history the served build leaves out, fetched the first time somebody asks for a
+// product page and never on the front page. Once is enough per tab; a failure is silent on
+// purpose - the page reads correctly without it, the price chart simply does not appear.
 let lazyDone = false;
 function loadLazy() {
   if (lazyDone || typeof LAZYDATA === 'undefined' || !LAZYDATA) return;
   lazyDone = true;
-  Promise.all([
-    fetch('data/verdicts.json').then(r => r.ok ? r.json() : null).catch(() => null),
-    fetch('data/history.json').then(r => r.ok ? r.json() : null).catch(() => null),
-  ]).then(([v, h]) => {
-    if (v) for (const row of v) { const { id, ...rest } = row; VERD[id] = rest; }
-    if (h) HISTORY = h;
-    if ((v || h) && location.hash.startsWith('#/p/')) render(true);
+  fetch('data/history.json').then(r => r.ok ? r.json() : null).catch(() => null).then(h => {
+    if (h) { HISTORY = h; if (location.hash.startsWith('#/p/')) render(true); }
   });
 }
 
@@ -409,6 +417,20 @@ const FILT = {
   g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
   nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
   anc:   { kind: 'flag', label: () => x('ancF'), of: p => !!p.audio?.anc },
+  // The columns e-catalog asks headphones about. Filled in by tools/audio.mjs from the product's
+  // name and the shops' titles; a product it could not place has no value and drops out only
+  // while that filter is on.
+  hform: { kind: 'set', arr: 'hforms', label: () => x('formF'), of: p => p.audio?.form, fmt: v => x('forms')[v] || v,
+           vals: () => ['tws', 'in-ear', 'full', 'neckband', 'open'] },
+  hconn: { kind: 'set', arr: 'hconns', label: () => x('connF'), of: p => p.audio?.conn, fmt: v => x('conns')[v] || v,
+           vals: () => ['wireless', 'wired'] },
+  hplug: { kind: 'set', arr: 'hplugs', label: () => x('plugF'), of: p => p.audio?.plug, fmt: v => x('plugs')[v] || v,
+           vals: () => ['usb-c', 'lightning', '3.5'] },
+  gaming: { kind: 'flag', label: () => x('gamingF'), of: p => !!p.audio?.gaming },
+  spk:   { kind: 'set', arr: 'spks', label: () => x('spkF'), of: p => spkOf(p), fmt: v => x('spks')[v] || v,
+           vals: () => ['portable', 'party', 'smart', 'home'] },
+  res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
+           vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
   // Ninety-six televisions and thirty-eight monitors all differ on the one thing a buyer of
   // either actually chooses between, and nothing here could ask about it until now.
   panel: { kind: 'set', arr: 'panels', label: () => x('panelF'), of: p => panelOf(p), fmt: v => v },
@@ -426,6 +448,23 @@ function panelOf(p) {
   if (!t) return null;
   return PANELS.find(k => new RegExp('\\b' + k.replace(/[-\s]/g, '[-\\s]?') + '\\b', 'i').test(t)) || null;
 }
+// Named the way a shop names it, from the long side of the panel: "2560 x 1600" is QHD.
+function resOf(p) {
+  const m = String(p.display?.resolution || '').match(/(\d{3,5})\s*[x×]\s*(\d{3,5})/);
+  if (!m) return null;
+  const w = Math.max(+m[1], +m[2]);
+  return w >= 7680 ? '8K' : w >= 3840 ? '4K' : w >= 2560 ? 'QHD' : w >= 1920 ? 'Full HD' : 'HD';
+}
+// e-catalog splits speakers by what they are for. The model line says it: a PartyBox is for a
+// party whatever its size, a HomePod or a Yandex Station is a Wi-Fi speaker you talk to, an
+// Acton or a Stanmore plugs into the wall, and the rest go in a bag. Not placed -> no value.
+const SPK = [
+  ['party', /\bpartybox\b|\bboombox\b/i],
+  ['smart', /\bhomepod\b|\bstation\b|\bsonos\b|\bauthentics\b|\bsoundtouch\b|\bgoogle\b|\bbeosound (balance|level|edge)\b/i],
+  ['home',  /\bacton\b|\bstanmore\b|\bwoburn\b|\baura studio\b|\bstudio \d\b/i],
+  ['portable', /\bflip\b|\bcharge\b|\bclip\b|\bgo \d\b|\bxtreme\b|\bsoundlink\b|\bemberton\b|\bwillen\b|\bkilburn\b|\bstockwell\b|\bmiddleton\b|\buxbridge\b|\bluna\b|\bonyx\b|\bbeosound (a1|a5|explore)\b/i],
+];
+const spkOf = p => p.category !== 'speaker' ? null : (SPK.find(([, re]) => re.test(p.name)) || [])[0] || null;
 // The year it was released, which is a fact the catalogue records, not one read off a title.
 const yearOf = p => { const m = String(p.released || '').match(/^(\d{4})/); return m ? +m[1] : null; };
 // "macOS 26", "Android 15, One UI 7" - the family is what anybody filters on, not the point release.
@@ -438,19 +477,18 @@ const osOf = p => OSES.find(o => new RegExp('\\b' + o + '\\b', 'i').test(String(
 const ASK = {
   phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
   tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5', 'touch', 'panel', 'os', 'year'],
-  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'touch', 'panel', 'os', 'year'],
   desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
   console:    ['stor', 'year'],
   ereader:    ['stor', 'scr', 'water', 'panel', 'year'],
   watch:      ['stor', 'scr', 'life', 'water', 'os', 'year'],
-  earbuds:    ['anc', 'life', 'water', 'year'],
-  headphones: ['anc', 'life', 'water', 'year'],
-  speaker:    ['life', 'water', 'year'],
+  headphones: ['hform', 'hconn', 'hplug', 'anc', 'gaming', 'life', 'water', 'year'],
+  speaker:    ['spk', 'life', 'water', 'year'],
   appliance:  ['year'],
-  monitor:    ['scr', 'hz', 'touch', 'panel', 'year'],
+  monitor:    ['scr', 'res', 'hz', 'touch', 'panel', 'year'],
   component:  ['year'],
   // A television is asked the same two questions a monitor is: how big, and how fast.
-  tv:         ['scr', 'hz', 'panel', 'os', 'year'],
+  tv:         ['scr', 'res', 'hz', 'panel', 'os', 'year'],
   drone:      ['year'],
 };
 // Brand, price and shop are questions about the purchase, not about the hardware, so they are
@@ -813,7 +851,10 @@ function filterBar() {
       <input type="range" data-f="pmin" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.from'))}">
       <input type="range" data-f="pmax" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.to'))}"></div>
       <div class="rngv"><span class="num" data-rng="min"></span><span class="num" data-rng="max"></span></div></div>`);
-  for (const k in FILT) if (k !== 'brand') h += fdrop(k, pool);
+  // In the order the section asks them, so a headphone's Type comes before its battery life and a
+  // folded bar still shows the question that matters most. Shop and anything else askable follow.
+  const order = [...new Set([...(ASK[st.cat] || []), ...Object.keys(FILT)])].filter(k => k !== 'brand');
+  for (const k of order) if (FILT[k]) h += fdrop(k, pool);
   h += `<span class="spacer"></span>`;
   h += drop('sort', `${t('sort.label')}: ${sortLabel(st.sort)}`, sortKeys().map(s =>
     `<label class="opt"><input type="radio" name="r-sort" data-f="sort" value="${s}"><span>${esc(sortLabel(s))}</span></label>`).join(''), true);
@@ -1697,8 +1738,7 @@ function compareWithHTML(p) {
 function detailView(p) {
   initSel(p);
   loadLazy();
-  const V = VERD[p.id] || {}, L = st.lang;
-  const summary = (L !== 'en' && V['s_' + L]) || p.summaryEn;
+  const L = st.lang;
   const offs = visibleOffers(p);
   const lo = offs.length ? offs[0].price : null;
   // ...and within the chosen screen: an M5 Max's two variants differ ONLY by size, so ignoring it
@@ -1758,7 +1798,8 @@ function detailView(p) {
       <div class="pgrid">
         <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
-          <p class="lede2">${esc(summary)}</p>
+          <!-- No marketing sentence here ("Largest iPhone 17 Pro, with a 6.9-inch display..."):
+               the owner wants the page to be the product, its configurations and its prices. -->
           <!-- No colour picker. Shops spell one finish eight different ways - Titanium Silverblue,
                Titanium Silver Blue, Silver Blue Titanium - so the row filled with near-duplicate
                chips that all led to the same phone. Capacity is the choice that moves the price. -->
@@ -2240,6 +2281,10 @@ function render(keepScroll) {
   const wasCat = st.cat;
   st.cat = mc !== null ? mc : (h === '/' ? '' : st.cat);
   if (st.cat !== wasCat) { pruneFilters(); if (!sortKeys().includes(st.sort)) st.sort = 'popular'; }
+  // A product folded into another by tools/merge.mjs: an old link lands on the survivor.
+  const was = h.match(/^\/(p|offers)\/(.+)$/);
+  const into = was && !byId(was[2]) && typeof MERGED !== 'undefined' && MERGED[was[2]];
+  if (into && byId(into)) { location.replace('#/' + was[1] + '/' + into); return; }
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');

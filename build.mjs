@@ -10,8 +10,6 @@ const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const STR = { hy: {}, ru: {}, en: {} };
 for (const s of JSON.parse(rd('data/strings.json'))) { STR.hy[s.key] = s.hy; STR.ru[s.key] = s.ru; STR.en[s.key] = s.en; }
-const VERD = {};
-for (const { id, ...r } of JSON.parse(rd('data/verdicts.json'))) VERD[id] = r;
 // real shop offers from scrape.mjs; optional, the site falls back to estimates without it
 const HISTORY = fs.existsSync('data/history.json') ? JSON.parse(rd('data/history.json')) : { points: {} };
 const TERMS = JSON.parse(rd('data/terms.json'));
@@ -22,6 +20,8 @@ const COMING = fs.existsSync('data/coming.json') ? JSON.parse(rd('data/coming.js
 // colour photos whose shape fights the main shot: fine on the product page, a lurch in the
 // card carousel. Regenerate with: python tools/pageonly.py
 const PAGEONLY = fs.existsSync('data/pageonly.json') ? JSON.parse(rd('data/pageonly.json')) : {};
+// duplicate id -> the product it was folded into, written by tools/merge.mjs
+const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.json')) : {};
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
@@ -95,17 +95,6 @@ if (RAMISH.length)
     dead.slice(0, 6).map(p => p.id).join(', ') + (dead.length > 6 ? ', ...' : ''));
 }
 
-// No English in the Armenian or the Russian view. A product with no summary in those languages
-// falls back to summaryEn, which is an English sentence on a page that must not have one, so it
-// is worth stopping the build over: node tools/verdicts.mjs --write writes the missing ones.
-{
-  const mute = phones.filter(p => !(VERD[p.id] && VERD[p.id].s_hy && VERD[p.id].s_ru));
-  if (mute.length) {
-    console.error(`build: ${mute.length} product(s) would show English in the hy/ru view - ` +
-      `node tools/verdicts.mjs --write: ` + mute.slice(0, 6).map(p => p.id).join(', '));
-    process.exit(1);
-  }
-}
 
 // A price series for a product that left the catalogue is dead weight nothing can render.
 for (const k of Object.keys(HISTORY.points || {}))
@@ -391,9 +380,9 @@ function build({ inline, standalone }) {
   // a file somebody mails or pastes has nothing to fetch from.
   const lazy = !inline;
   let appJs = '\n'
-    + `const DATA=${JSON.stringify(phones)};\nconst STR=${JSON.stringify(STR)};\n`
-    + (lazy ? 'let VERD={};\nlet HISTORY={points:{}};\nconst LAZYDATA=true;\n'
-            : `const VERD=${JSON.stringify(VERD)};\nconst HISTORY=${JSON.stringify(HISTORY)};\nconst LAZYDATA=false;\n`)
+    + `const DATA=${JSON.stringify(phones.map(({ summaryEn, ...p }) => p))};\nconst STR=${JSON.stringify(STR)};\n`
+    + (lazy ? 'let HISTORY={points:{}};\nconst LAZYDATA=true;\n'
+            : `const HISTORY=${JSON.stringify(HISTORY)};\nconst LAZYDATA=false;\n`)
     // Wrapping this in JSON.parse was tried and measured: 268 ms to interactive against 294 ms
     // for the literal, three loads each, same machine - 9% - and it cost 77 KB of backslashes.
     // Not worth carrying the escaping for that, so the literal stays.
@@ -401,6 +390,7 @@ function build({ inline, standalone }) {
     + `const TERMS=${JSON.stringify(TERMS)};\n`
     + `const COMING=${JSON.stringify(COMING)};\n`
     + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
+    + `const MERGED=${JSON.stringify(MERGED)};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here
@@ -487,7 +477,24 @@ p{margin:0 0 16px;color:#4A5262}a{color:#9E2B25}</style>
   fs.writeFileSync(`p/${p.id}/index.html`, page);
   shared++;
 }
-console.log(`${shared} share page(s) under p/`);
+// A product folded into another keeps its url: the share page and any link to it that was
+// already posted or indexed send the visitor, and a crawler, to the survivor instead of a 404.
+let moved = 0;
+for (const [from, to] of Object.entries(MERGED)) {
+  if (!phones.some(p => p.id === to) || phones.some(p => p.id === from)) continue;
+  fs.mkdirSync(`p/${from}`, { recursive: true });
+  fs.writeFileSync(`p/${from}/index.html`, `<!doctype html>
+<html lang="hy"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="refresh" content="0;url=../${to}/">
+<link rel="canonical" href="${SITE}p/${to}/">
+<meta name="robots" content="noindex">
+<title>Better</title>
+</head><body><a href="../${to}/">${esc(nameOf(phones.find(p => p.id === to)))}</a></body></html>
+`);
+  moved++;
+}
+console.log(`${shared} share page(s) under p/` + (moved ? `, ${moved} redirect(s) for merged products` : ''));
 
 // A mistyped product url, or one from a product that has since left the catalogue, gets
 // GitHub's own 404 - a black page in English about a repository. This one is the catalogue's,

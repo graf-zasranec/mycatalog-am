@@ -40,7 +40,7 @@ const KINDS = [
   [/հեռուստացույց|телевизор|\bSmart TV\b/i, 'tv'],
   [/Speaker system|\bSpeaker\b|բարձրախոս|колонк/i, 'speaker'],
   [/\bHeadphone\b|\bHeadset\b|ականջակալ|наушник/i, 'headphones'],
-  [/\bEarbuds\b|\bBuds\b|\bAirPods\b/i, 'earbuds'],
+  [/\bEarbuds\b|\bBuds\b|\bAirPods\b/i, 'headphones'],
   // "Tracker" and "traker" both appear, in the same export, for the same device
   [/(Smart ?)?fitness trac?k?er|\bSmart ?watch\b|\bWatch\b|ժամացույց|часы/i, 'watch'],
   [/\bStyler\b|Airwrap|hair ?dry|Supersonic|փոշեկուլ|пылесос/i, 'appliance'],
@@ -82,7 +82,7 @@ const FAMILY = [
   [/\biMac\b|\bMac mini\b|\bMac Studio\b|\bMac Pro\b|\bAll[- ]?in[- ]?One\b/i, 'desktop'],
   [/\bStudio Display\b|\bPro Display\b|\bOdyssey\b|\bUltraGear\b|\bUltraFine\b|\bProArt\b|\bZOWIE\b|\bNitro (XV|VG|KG|EI)\b/i, 'monitor'],
   [/\bPlayStation\b|\bPS5\b|\bXbox\b|\bNintendo Switch\b|\bSteam Deck\b|\bROG Ally\b|\bLegion Go\b/i, 'console'],
-  [/\bAirPods\b|\bGalaxy Buds\b|\bFreeBuds\b|\bRedmi Buds\b|\bBuds\b|\bWF-\w|\bLiveBuds\b|\bEarbuds\b|\bMomentum True\b/i, 'earbuds'],
+  [/\bAirPods\b|\bGalaxy Buds\b|\bFreeBuds\b|\bRedmi Buds\b|\bBuds\b|\bWF-\w|\bLiveBuds\b|\bEarbuds\b|\bMomentum True\b/i, 'headphones'],
   [/\bWH-\w|\bQuietComfort\b|\bBeoplay H\d|\bJBL (Tune|Live|Quantum)\b|\bHD \d{3}\b|\bSolo \d\b|\bStudio Pro\b|\bMomentum \d\b/i, 'headphones'],
   [/\bHomePod\b|\bSoundLink\b|\bBeosound\b|\bPartyBox\b|\bBoombox\b|\bCharge \d\b|\bFlip \d\b|\bClip \d\b|\bXtreme \d\b|\bGo \d\b|\bStanmore\b|\bWoburn\b|\bActon\b|\bEmberton\b|\bUxbridge\b|\bMiddleton\b|\bWillen\b|\bKilburn\b|\bOnyx Studio\b|\bSonos\b|\bYandex ?Station\b/i, 'speaker'],
   [/\bForerunner\b|\bFenix\b|\bVenu\b|\bInstinct\b|\bVivoactive\b|\bCIRQA\b|\bSmart Band\b|\bMi Band\b|\bGalaxy Watch\b|\bApple Watch\b|\bWatch (SE|Ultra|Series)\b|\bWhoop\b|\bFitbit\b/i, 'watch'],
@@ -289,3 +289,4 @@ fs.writeFileSync('data/phones.json', JSON.stringify([...phones, ...added], null,
 const old = fs.readFileSync('data/listings.csv', 'utf8').replace(/\n+$/, '');
 fs.writeFileSync('data/listings.csv', old + '\n' + csv.join('\n') + '\n');
 console.log(`\n${added.length} product(s) and ${csv.length} listing(s) written`);
+console.log("headphones: run node tools/audio.mjs --write to give the new ones a type for the filters");

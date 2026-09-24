@@ -1736,7 +1736,7 @@
  },
  {
   "id": "apple-airpods-4",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "AirPods 4",
   "tier": "mid",
@@ -1748,7 +1748,9 @@
   "audio": {
    "type": "Open-fit, no noise cancellation",
    "anc": false,
-   "transparency": false
+   "transparency": false,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "connectivity": {
@@ -1773,7 +1775,7 @@
  },
  {
   "id": "apple-airpods-4-anc",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "AirPods 4 with Active Noise Cancellation",
   "tier": "upper-mid",
@@ -1785,7 +1787,9 @@
   "audio": {
    "type": "Open-fit, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "connectivity": {
@@ -1810,7 +1814,7 @@
  },
  {
   "id": "apple-airpods-5",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "AirPods 5",
   "aliases": [
@@ -1836,7 +1840,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "apple-airpods-max-2",
@@ -1852,7 +1860,9 @@
   "audio": {
    "type": "Over-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -1885,7 +1895,7 @@
  },
  {
   "id": "apple-airpods-pro-2",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "AirPods Pro 2",
   "tier": "upper-mid",
@@ -1897,7 +1907,9 @@
   "audio": {
    "type": "In-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -1921,7 +1933,7 @@
  },
  {
   "id": "apple-airpods-pro-3",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "AirPods Pro 3",
   "tier": "flagship",
@@ -1933,7 +1945,9 @@
   "audio": {
    "type": "In-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -1957,7 +1971,7 @@
  },
  {
   "id": "apple-earpods-lightning",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "EarPods (Lightning)",
   "aliases": [
@@ -1977,7 +1991,10 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "in-ear",
+   "conn": "wired",
+   "plug": "lightning"
   },
   "connectivity": {
    "bluetooth": "none, wired Lightning"
@@ -1987,7 +2004,7 @@
  },
  {
   "id": "apple-earpods-usb-c",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "EarPods (USB-C)",
   "aliases": [
@@ -2007,7 +2024,10 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "in-ear",
+   "conn": "wired",
+   "plug": "usb-c"
   },
   "connectivity": {
    "bluetooth": "none, wired USB-C"
@@ -2056,11 +2076,13 @@
    "Apple HomePod Mini Blue",
    "Apple HomePod Mini Orange",
    "Apple HomePod Mini White",
-   "Apple HomePod Mini Yellow"
+   "Apple HomePod Mini Yellow",
+   "HomePod Mini /MJ2E3LL/A*",
+   "Apple HomePod Mini Yellow /MJ2E3LL/A*"
   ],
   "tier": "budget",
   "priceAmd": 59900,
-  "priceAmdMax": 59900,
+  "priceAmdMax": 72900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -2073,36 +2095,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple HomePod Mini.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-homepod-mini-mj2e3ll-a",
-  "category": "speaker",
-  "brand": "Apple",
-  "name": "HomePod Mini /MJ2E3LL/A*",
-  "aliases": [
-   "Apple HomePod Mini Yellow /MJ2E3LL/A*"
-  ],
-  "tier": "budget",
-  "priceAmd": 72900,
-  "priceAmdMax": 72900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 72900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple HomePod Mini /MJ2E3LL/A*.",
   "unsure": [
    "popularity",
    "display",
@@ -2251,11 +2243,12 @@
   "brand": "Apple",
   "name": "iPad 11",
   "aliases": [
-   "iPad 11"
+   "iPad Wi-Fi 11\"",
+   "Պլանշետ Apple iPad Wi-Fi 11\""
   ],
   "tier": "mid",
   "priceAmd": 189000,
-  "priceAmdMax": 189000,
+  "priceAmdMax": 231900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -2263,6 +2256,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 189000
+   },
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 231900
    }
   ],
   "display": {},
@@ -2880,10 +2878,10 @@
   "brand": "Apple",
   "name": "iPad Mini 7",
   "aliases": [
-   "iPad Mini 7"
+   "iPad Mini 7 WiFi"
   ],
   "tier": "mid",
-  "priceAmd": 224000,
+  "priceAmd": 223000,
   "priceAmdMax": 224000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -2897,36 +2895,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple iPad Mini 7.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ipad-mini-7-wifi",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Mini 7 WiFi",
-  "aliases": [
-   "iPad Mini 7 WiFi"
-  ],
-  "tier": "mid",
-  "priceAmd": 223000,
-  "priceAmdMax": 223000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 223000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Mini 7 WiFi.",
   "unsure": [
    "popularity",
    "display",
@@ -3131,8 +3099,11 @@
   "id": "apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a",
   "category": "tablet",
   "brand": "Apple",
-  "name": "iPad Pro 12.9 M2 WiFi S.Grey/MNXP3RK/A",
-  "aliases": [],
+  "name": "iPad Pro 12.9 M2 Wi-Fi",
+  "aliases": [
+   "iPad Pro 12.9 M2 WiFi S.Grey/MNXP3RK/A",
+   "iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A"
+  ],
   "tier": "upper-mid",
   "priceAmd": 505400,
   "priceAmdMax": 505400,
@@ -3148,34 +3119,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple iPad Pro 12.9 M2 WiFi S.Grey/MNXP3RK/A.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ipad-pro-12-9-m2-wifi-silver-mnxq3rk-a",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A",
-  "aliases": [],
-  "tier": "upper-mid",
-  "priceAmd": 505400,
-  "priceAmdMax": 505400,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 128,
-    "priceAmd": 505400
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A.",
   "unsure": [
    "popularity",
    "display",
@@ -3219,11 +3162,13 @@
   "brand": "Apple",
   "name": "iPad Pro 13 M4 Wi-Fi + Cellular 2024",
   "aliases": [
-   "iPad Pro 13 M4 Wi-Fi + Cellular 2024 Space Grey"
+   "iPad Pro 13 M4 Wi-Fi + Cellular 2024 Space Grey",
+   "iPad Pro 13 Wi-Fi + Cellular 2024",
+   "iPad Pro 13 Wi-Fi + Cellular 2024 Silver"
   ],
   "tier": "upper-mid",
   "priceAmd": 598000,
-  "priceAmdMax": 598000,
+  "priceAmdMax": 715000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -3231,6 +3176,11 @@
     "ram": null,
     "storage": 256,
     "priceAmd": 598000
+   },
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 715000
    }
   ],
   "display": {},
@@ -3334,66 +3284,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple iPad Pro 13 Wi-Fi 2024.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ipad-pro-13-wi-fi-plus-cellular-2024",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Pro 13 Wi-Fi + Cellular 2024",
-  "aliases": [
-   "iPad Pro 13 Wi-Fi + Cellular 2024 Silver"
-  ],
-  "tier": "flagship",
-  "priceAmd": 715000,
-  "priceAmdMax": 715000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 512,
-    "priceAmd": 715000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Pro 13 Wi-Fi + Cellular 2024.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ipad-wi-fi-11",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad Wi-Fi 11\"",
-  "aliases": [
-   "Պլանշետ Apple iPad Wi-Fi 11\""
-  ],
-  "tier": "mid",
-  "priceAmd": 231900,
-  "priceAmdMax": 231900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 128,
-    "priceAmd": 231900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad Wi-Fi 11\".",
   "unsure": [
    "popularity",
    "display",
@@ -4773,13 +4663,16 @@
   "id": "apple-macbook-air-13-mgn63-m1-2020",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Air 13 MGN63 M1 2020",
+  "name": "MacBook Air 13 M1 2020 MGN63",
   "aliases": [
-   "MacBook Air 13 MGN63 M1 2020 Space Gray"
+   "MacBook Air 13 MGN63 M1 2020 Space Gray",
+   "MacBook Air 13 MGN63 M1 2020",
+   "MacBook Air MGN63 Late 2020",
+   "MacBook Air MGN63 Late 2020 Space Gray"
   ],
   "tier": "mid",
   "priceAmd": 275000,
-  "priceAmdMax": 275000,
+  "priceAmdMax": 305000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -4803,13 +4696,16 @@
   "id": "apple-macbook-air-13-mgn93-m1-2020",
   "category": "laptop",
   "brand": "Apple",
-  "name": "MacBook Air 13 MGN93 M1 2020",
+  "name": "MacBook Air 13 M1 2020 MGN93",
   "aliases": [
-   "MacBook Air 13 MGN93 M1 2020 Silver"
+   "MacBook Air 13 MGN93 M1 2020 Silver",
+   "MacBook Air 13 MGN93 M1 2020",
+   "MacBook Air MGN93 Late 2020",
+   "MacBook Air MGN93 Late 2020 Silver"
   ],
   "tier": "upper-mid",
   "priceAmd": 305000,
-  "priceAmdMax": 305000,
+  "priceAmdMax": 339000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -4852,66 +4748,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple MacBook Air 13 MGND3 M1 2020.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-air-mgn63-late-2020",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air MGN63 Late 2020",
-  "aliases": [
-   "MacBook Air MGN63 Late 2020 Space Gray"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 305000,
-  "priceAmdMax": 305000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 305000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air MGN63 Late 2020.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-macbook-air-mgn93-late-2020",
-  "category": "laptop",
-  "brand": "Apple",
-  "name": "MacBook Air MGN93 Late 2020",
-  "aliases": [
-   "MacBook Air MGN93 Late 2020 Silver"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 339000,
-  "priceAmdMax": 339000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 339000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple MacBook Air MGN93 Late 2020.",
   "unsure": [
    "popularity",
    "display",
@@ -5545,7 +5381,7 @@
  },
  {
   "id": "apple-tws-bluetooth-headsets-3rd-generation",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Apple",
   "name": "AirPods 3rd Generation",
   "aliases": [
@@ -5572,7 +5408,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "apple-ultra-2",
@@ -6909,7 +6749,13 @@
   "summaryEn": "A gaming headset: ROG Delta S.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "usb-c",
+   "gaming": true
+  }
  },
  {
   "id": "asus-rog-strix-g16",
@@ -7368,7 +7214,12 @@
   "summaryEn": "A gaming headset: ROG Strix Go 2.4.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "asus-rog-strix-go-core",
@@ -7391,7 +7242,13 @@
   "summaryEn": "A gaming headset: ROG Strix Go Core.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5",
+   "gaming": true
+  }
  },
  {
   "id": "asus-rog-strix-scare-16-g635lx-ds96",
@@ -8169,13 +8026,18 @@
   "summaryEn": "A gaming headset: TUF Gaming H1.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "asus-tuf-gaming-h3-gun-metal",
   "category": "headphones",
   "brand": "ASUS",
-  "name": "TUF Gaming H3 Gun Metal",
+  "name": "TUF Gaming H3",
   "tier": "budget",
   "priceAmd": 37800,
   "priceAmdMax": 37800,
@@ -8192,13 +8054,22 @@
   "summaryEn": "A gaming headset: TUF Gaming H3 Gun Metal.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "aliases": [
+   "TUF Gaming H3 Gun Metal"
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5",
+   "gaming": true
+  }
  },
  {
   "id": "asus-tuf-gaming-h7-core-gun-metal",
   "category": "headphones",
   "brand": "ASUS",
-  "name": "TUF Gaming H7 Core Gun Metal",
+  "name": "TUF Gaming H7 Core",
   "tier": "budget",
   "priceAmd": 37800,
   "priceAmdMax": 37800,
@@ -8215,7 +8086,16 @@
   "summaryEn": "A gaming headset: TUF Gaming H7 Core Gun Metal.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "aliases": [
+   "TUF Gaming H7 Core Gun Metal"
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5",
+   "gaming": true
+  }
  },
  {
   "id": "asus-tuf-h3-wireless",
@@ -8243,7 +8123,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "asus-v241eak-ba06",
@@ -9625,9 +9510,9 @@
   "brand": "ASUS",
   "name": "Vivobook Pro 15 Q543MJ-U93050 OLED",
   "tier": "upper-mid",
-  "priceAmd": 690000,
+  "priceAmd": 645000,
   "priceAmdMax": 690000,
-  "popularity": 20,
+  "popularity": 40,
   "accent": "#5C6470",
   "display": {
    "size": 15.6,
@@ -9652,7 +9537,14 @@
   "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 9 185H and Nvidia GeForce RTX 3050 6 GB.",
   "unsure": [
    "popularity"
-  ]
+  ],
+  "aliases": [
+   "VivoBook Pro Q543MJ-U93050"
+  ],
+  "released": "2024",
+  "body": {
+   "weight": 1900
+  }
  },
  {
   "id": "asus-vivobook-pro-16-k6602vv-oled",
@@ -9699,47 +9591,6 @@
    "Black"
   ],
   "summaryEn": "A 16-inch 3.2K OLED creator laptop with a discrete RTX 4060."
- },
- {
-  "id": "asus-vivobook-pro-q543mj-u93050",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "VivoBook Pro Q543MJ-U93050",
-  "tier": "upper-mid",
-  "priceAmd": 645000,
-  "priceAmdMax": 645000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 15,
-   "type": "OLED",
-   "resolution": "1920x1080",
-   "refresh": 60,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 9-185H"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 3050 6GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 1900
-  },
-  "released": "2024",
-  "summaryEn": "A 15-inch laptop with Intel Core Ultra 9-185H and Nvidia Geforce RTX 3050 6GB.",
-  "variants": [
-   {
-    "ram": 24,
-    "storage": 2048,
-    "priceAmd": 645000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
  },
  {
   "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
@@ -9931,7 +9782,7 @@
   "name": "VivoBook X1404VA-I38128",
   "tier": "budget",
   "priceAmd": 189000,
-  "priceAmdMax": 189000,
+  "priceAmdMax": 199900,
   "popularity": 40,
   "accent": "#5C6470",
   "display": {
@@ -9957,41 +9808,20 @@
     "ram": 8,
     "storage": 128,
     "priceAmd": 189000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
-  "id": "asus-vivobook-x1404va-v14-i38128",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "Vivobook X1404VA-V14.I38128",
-  "aliases": [
-   "Նոթբուք Asus Vivobook X1404VA-V14.I38128"
-  ],
-  "tier": "mid",
-  "priceAmd": 199900,
-  "priceAmdMax": 199900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
+   },
    {
     "ram": null,
     "storage": null,
     "priceAmd": 199900
    }
   ],
-  "display": {},
   "battery": {},
-  "summaryEn": "ASUS Vivobook X1404VA-V14.I38128.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+   "popularity"
+  ],
+  "aliases": [
+   "Vivobook X1404VA-V14.I38128",
+   "Նոթբուք Asus Vivobook X1404VA-V14.I38128"
   ]
  },
  {
@@ -10534,40 +10364,11 @@
   "id": "asus-vz27ehf-90lm07b0-b01470",
   "category": "monitor",
   "brand": "ASUS",
-  "name": "VZ27EHF 90LM07B0-B01470",
+  "name": "VZ27EHF",
   "aliases": [
-   "ASUS VZ27EHF 90LM07B0-B01470 Մոնիտոր"
-  ],
-  "tier": "budget",
-  "priceAmd": 69900,
-  "priceAmdMax": 69900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 69900
-   }
-  ],
-  "display": {
-   "touch": false
-  },
-  "battery": {},
-  "summaryEn": "ASUS VZ27EHF 90LM07B0-B01470.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "asus-vz27ehf-w-90lm07b0-b02470",
-  "category": "monitor",
-  "brand": "ASUS",
-  "name": "VZ27EHF-W 90LM07B0-B02470",
-  "aliases": [
+   "ASUS VZ27EHF 90LM07B0-B01470 Մոնիտոր",
+   "VZ27EHF 90LM07B0-B01470",
+   "VZ27EHF-W 90LM07B0-B02470",
    "Մոնիտոր Asus VZ27EHF-W 90LM07B0-B02470"
   ],
   "tier": "budget",
@@ -10586,7 +10387,7 @@
    "touch": false
   },
   "battery": {},
-  "summaryEn": "ASUS VZ27EHF-W 90LM07B0-B02470.",
+  "summaryEn": "ASUS VZ27EHF 90LM07B0-B01470.",
   "unsure": [
    "popularity",
    "display",
@@ -10939,7 +10740,9 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "60 hours"
@@ -10982,15 +10785,20 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "beats-flex-all-day",
   "category": "headphones",
   "brand": "Beats",
-  "name": "Flex All-Day",
+  "name": "Flex",
   "aliases": [
-   "Անլար ականջակալ Beats Flex All-Day (A2295)"
+   "Անլար ականջակալ Beats Flex All-Day (A2295)",
+   "Flex All-Day"
   ],
   "tier": "budget",
   "priceAmd": 31900,
@@ -11012,18 +10820,23 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "neckband",
+   "conn": "wireless"
+  }
  },
  {
   "id": "beats-solo-true-wireless",
   "category": "headphones",
   "brand": "Beats",
-  "name": "Solo Buds True Wireless",
+  "name": "Solo Buds",
   "aliases": [
    "Ականջակալ Beats Solo Buds True Wireless (A3151 A3150 A3152)",
    "Solo True Wireless",
    "Solo Buds True Wireless (A3151 A3150 A3152)",
-   "Beats Solo Buds True Wireless (A3151 A3150 A3152)"
+   "Beats Solo Buds True Wireless (A3151 A3150 A3152)",
+   "Solo Buds True Wireless"
   ],
   "tier": "budget",
   "priceAmd": 35900,
@@ -11045,15 +10858,20 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "beats-solo4-onear",
   "category": "headphones",
   "brand": "Beats",
-  "name": "Solo4 OnEar",
+  "name": "Solo 4",
   "aliases": [
-   "Անլար ականջակալ Beats Solo4 OnEar (A3140)"
+   "Անլար ականջակալ Beats Solo4 OnEar (A3140)",
+   "Solo4 OnEar"
   ],
   "tier": "budget",
   "priceAmd": 89900,
@@ -11075,11 +10893,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "beats-studio",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Beats",
   "name": "Studio Buds",
   "aliases": [
@@ -11110,11 +10932,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "beats-studio-buds-plus",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Beats",
   "name": "Studio Buds +",
   "tier": "mid",
@@ -11126,7 +10952,9 @@
   "audio": {
    "type": "In-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -11157,11 +10985,12 @@
   "id": "beats-studio-pro-wireless",
   "category": "headphones",
   "brand": "Beats",
-  "name": "Studio Pro Wireless",
+  "name": "Studio Pro",
   "aliases": [
    "Ականջակալ Beats Studio Pro Wireless (A2924)",
    "Studio Pro Wireless Model",
-   "Ականջակալ Beats Studio Pro Wireless Model (A2924)"
+   "Ականջակալ Beats Studio Pro Wireless Model (A2924)",
+   "Studio Pro Wireless"
   ],
   "tier": "mid",
   "priceAmd": 139900,
@@ -11187,7 +11016,11 @@
   "colors": [
    "Sandstone",
    "Navy"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "benq-el2870u",
@@ -11225,14 +11058,16 @@
  },
  {
   "id": "bo-beoplay-ex",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Bang & Olufsen",
   "name": "Beoplay EX",
   "priceAmd": 209000,
   "priceAmdMax": 209000,
   "popularity": 20,
   "audio": {
-   "type": "In-ear, active noise cancellation"
+   "type": "In-ear, active noise cancellation",
+   "form": "tws",
+   "conn": "wireless"
   },
   "colors": [
    "Black Anthracite",
@@ -11267,7 +11102,9 @@
   "audio": {
    "type": "Over-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -11306,7 +11143,9 @@
   "popularity": 22,
   "audio": {
    "type": "Over-ear, adaptive noise cancellation",
-   "anc": true
+   "anc": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "up to 35 hours with ANC on"
@@ -11569,11 +11408,16 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "bose-quietcomfort-ii",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Bose",
   "name": "QuietComfort II",
   "aliases": [
@@ -11599,7 +11443,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "bose-soundlink-flex",
@@ -11733,7 +11582,9 @@
   "brand": "Bose",
   "name": "SoundSport Free",
   "aliases": [
-   "Անլար Ականջակալ Bose SoundSport Free Black"
+   "Անլար Ականջակալ Bose SoundSport Free Black",
+   "SoundSport Free Bright",
+   "Անլար Ականջակալ Bose SoundSport Free Bright Orange"
   ],
   "tier": "budget",
   "priceAmd": 99900,
@@ -11755,37 +11606,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "bose-soundsport-free-bright",
-  "category": "headphones",
-  "brand": "Bose",
-  "name": "SoundSport Free Bright",
-  "aliases": [
-   "Անլար Ականջակալ Bose SoundSport Free Bright Orange"
   ],
-  "tier": "budget",
-  "priceAmd": 99900,
-  "priceAmdMax": 99900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Bose SoundSport Free Bright.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "bose-soundtouch-10",
@@ -11821,7 +11646,7 @@
  },
  {
   "id": "bose-sport",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Bose",
   "name": "Sport",
   "aliases": [
@@ -11848,16 +11673,20 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "dell-14-plus-2in1-db04250",
   "category": "laptop",
   "brand": "Dell",
-  "name": "14 Plus 2in1 DB04250",
+  "name": "14 Plus 2-in-1 DB04250",
   "tier": "mid",
   "priceAmd": 398000,
-  "priceAmdMax": 398000,
+  "priceAmdMax": 699000,
   "popularity": 40,
   "accent": "#5C6470",
   "display": {
@@ -11884,11 +11713,20 @@
     "ram": 16,
     "storage": 1024,
     "priceAmd": 398000
+   },
+   {
+    "ram": 32,
+    "storage": 1024,
+    "priceAmd": 699000
    }
   ],
   "battery": {},
   "unsure": [
    "popularity"
+  ],
+  "aliases": [
+   "14 Plus 2in1 DB04250",
+   "Plus 2in1 DB04250"
   ]
  },
  {
@@ -12645,36 +12483,6 @@
   ]
  },
  {
-  "id": "dell-ax510-2-0",
-  "category": "speaker",
-  "brand": "Dell",
-  "name": "AX510 2.0",
-  "aliases": [
-   "Dell AX510 2.0 Speaker"
-  ],
-  "tier": "budget",
-  "priceAmd": 11000,
-  "priceAmdMax": 11000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 11000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dell AX510 2.0.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dell-g15-5520",
   "category": "laptop",
   "brand": "Dell",
@@ -13094,47 +12902,6 @@
     "ram": 32,
     "storage": 1024,
     "priceAmd": 649000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
-  "id": "dell-plus-2in1-db04250",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "Plus 2in1 DB04250",
-  "tier": "upper-mid",
-  "priceAmd": 699000,
-  "priceAmdMax": 699000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 14,
-   "type": "IPS",
-   "resolution": "1920x1200",
-   "refresh": 60,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 9-288V"
-  },
-  "graphics": {
-   "name": "Intel Arc Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1610
-  },
-  "released": "2025",
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-288V.",
-  "variants": [
-   {
-    "ram": 32,
-    "storage": 1024,
-    "priceAmd": 699000
    }
   ],
   "battery": {},
@@ -13650,10 +13417,18 @@
   "category": "laptop",
   "brand": "Dell",
   "name": "XPS 16 9640",
-  "aliases": [],
+  "aliases": [
+   "XPS 9640",
+   "Dell XPS 96401TB",
+   "Dell XPS 9640512GB",
+   "Dell XPS 9640(512GB)",
+   "XPS 9640(512GB)",
+   "XPS 9640(1TB)",
+   "Dell XPS 9640(1TB)"
+  ],
   "tier": "flagship",
   "priceAmd": 799000,
-  "priceAmdMax": 799000,
+  "priceAmdMax": 1299000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -13661,6 +13436,16 @@
     "ram": null,
     "storage": null,
     "priceAmd": 799000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 1099000
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 1299000
    }
   ],
   "display": {},
@@ -13671,7 +13456,14 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "released": "2024",
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "body": {
+   "weight": 2250
+  }
  },
  {
   "id": "dell-xps-9345-x-elite-32gb-1tb",
@@ -13915,62 +13707,6 @@
   "aliases": [
    "Dell XPS 9440RTX 4050"
   ]
- },
- {
-  "id": "dell-xps-9640-1tb",
-  "category": "laptop",
-  "brand": "Dell",
-  "name": "XPS 9640",
-  "tier": "flagship",
-  "priceAmd": 1299000,
-  "priceAmdMax": 1299000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 16.3,
-   "type": "OLED",
-   "resolution": "3840x2160",
-   "refresh": 120,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 7-155H"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 4060 8GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2250
-  },
-  "os": "Windows 11",
-  "released": "2024",
-  "summaryEn": "A 16.3-inch laptop with Intel Core Ultra 7-155H and Nvidia Geforce RTX 4060 8GB.",
-  "variants": [
-   {
-    "ram": 16,
-    "storage": 512,
-    "priceAmd": 1099000
-   },
-   {
-    "ram": 16,
-    "storage": 1024,
-    "priceAmd": 1299000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "aliases": [
-   "Dell XPS 96401TB",
-   "Dell XPS 9640512GB",
-   "Dell XPS 9640(512GB)",
-   "XPS 9640(512GB)",
-   "XPS 9640(1TB)",
-   "Dell XPS 9640(1TB)"
-  ],
-  "colors": []
  },
  {
   "id": "dell-xps-9640-rtx-4050",
@@ -14371,10 +14107,13 @@
   "id": "dyson-airstarit",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "AirStarit",
+  "name": "Airstrait",
   "aliases": [
    "Dyson AirStarit (HT01) Amber Silk",
-   "Dyson AirStarit (HT01) Prussian Blue"
+   "Dyson AirStarit (HT01) Prussian Blue",
+   "AirStarit",
+   "AirStarit Plum",
+   "Dyson AirStarit (HT01) Jasper Plum"
   ],
   "tier": "mid",
   "priceAmd": 157000,
@@ -14421,36 +14160,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Dyson AirStarit Kanzan.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-airstarit-plum",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "AirStarit Plum",
-  "aliases": [
-   "Dyson AirStarit (HT01) Jasper Plum"
-  ],
-  "tier": "mid",
-  "priceAmd": 165000,
-  "priceAmdMax": 165000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 165000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson AirStarit Plum.",
   "unsure": [
    "popularity",
    "display",
@@ -14611,106 +14320,14 @@
   ]
  },
  {
-  "id": "dyson-hd16-nural-plum",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "HD16 Supersonic Nural Jasper Plum",
-  "aliases": [
-   "Dyson HD16 Supersonic™ Nural Jasper Plum",
-   "Dyson HD16 Supersonic Nural Jasper Plum"
-  ],
-  "tier": "mid",
-  "priceAmd": 249000,
-  "priceAmdMax": 249000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 249000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD16 ™ Nural Plum.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hd16-nural-velvet",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "HD16 Supersonic Nural Red Velvet",
-  "aliases": [
-   "Dyson HD16 Supersonic™ Nural Red Velvet",
-   "Dyson HD16 Supersonic Nural Red Velvet"
-  ],
-  "tier": "mid",
-  "priceAmd": 279000,
-  "priceAmdMax": 279000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 279000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD16 ™ Nural Velvet.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hd16-vinca-blue-topaz",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "HD16 Supersonic Vinca Blue/Topaz",
-  "aliases": [
-   "Dyson HD16 Supersonic™ Vinca Blue/Topaz",
-   "Dyson HD16 Supersonic Vinca Blue/Topaz"
-  ],
-  "tier": "mid",
-  "priceAmd": 215000,
-  "priceAmdMax": 215000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 215000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HD16 ™ Vinca Blue/Topaz.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "dyson-hd18-vinca-blue-topaz",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "HD18 Supersonic Vinca Blue/Topaz",
+  "name": "Supersonic HD18",
   "aliases": [
    "Dyson HD18 Supersonic™ Vinca Blue/Topaz",
-   "Dyson HD18 Supersonic Vinca Blue/Topaz"
+   "Dyson HD18 Supersonic Vinca Blue/Topaz",
+   "HD18 Supersonic Vinca Blue/Topaz"
   ],
   "tier": "mid",
   "priceAmd": 233000,
@@ -14738,101 +14355,18 @@
   "id": "dyson-hs08-i-d",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap HS08 i.d.",
+  "name": "Airwrap i.d. HS08",
   "aliases": [
    "Styler Dyson HS08 Airwrap I.D",
    "HS08 I.D",
    "HS08 Airwrap I.D",
-   "Dyson HS08 Airwrap I.D"
-  ],
-  "tier": "mid",
-  "priceAmd": 219900,
-  "priceAmdMax": 219900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 219900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS08 I.D.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs08-id-multi-plum",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "HS08 Airwrap ID Multi- Jasper Plum",
-  "aliases": [
-   "Dyson HS08 Airwrap™ ID Multi-Styler Jasper Plum"
-  ],
-  "tier": "mid",
-  "priceAmd": 269000,
-  "priceAmdMax": 269000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 269000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS08 ™ ID Multi- Plum.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs08-id-multi-velvet-gold",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "HS08 Airwrap ID Multi- Red Velvet/Gold",
-  "aliases": [
-   "Dyson HS08 Airwrap™ ID Multi-Styler Red Velvet/Gold"
-  ],
-  "tier": "mid",
-  "priceAmd": 299000,
-  "priceAmdMax": 299000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 299000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson HS08 ™ ID Multi- Velvet/Gold.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "dyson-hs08-velvet",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS08",
-  "aliases": [
+   "Dyson HS08 Airwrap I.D",
+   "Airwrap HS08 i.d.",
+   "HS08 Airwrap ID Multi- Jasper Plum",
+   "Dyson HS08 Airwrap™ ID Multi-Styler Jasper Plum",
+   "HS08 Airwrap ID Multi- Red Velvet/Gold",
+   "Dyson HS08 Airwrap™ ID Multi-Styler Red Velvet/Gold",
+   "Airwrap HS08",
    "Dyson Airwrap HS08 Red Velvet / Gold",
    "HS08 Velvet",
    "Dyson Airwrap HS08 Strawberry Bronze / Pink",
@@ -14854,38 +14388,28 @@
    "Airwrap HS08 (Ceramic Patina)",
    "Dyson Airwrap HS08 (Ceramic Patina)",
    "Dyson Airwrap HS08",
-   "Airwrap HS08",
    "Airwrap HS08 Red Velvet / Gold"
   ],
   "tier": "mid",
-  "priceAmd": 254000,
-  "priceAmdMax": 254000,
+  "priceAmd": 219900,
+  "priceAmdMax": 299000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
    {
     "ram": null,
     "storage": null,
-    "priceAmd": 254000
+    "priceAmd": 219900
    }
   ],
   "display": {},
   "battery": {},
-  "summaryEn": "Dyson HS08 Velvet.",
+  "summaryEn": "Dyson HS08 I.D.",
   "unsure": [
    "popularity",
    "display",
    "chipset",
    "battery.capacity"
-  ],
-  "colors": [
-   "Strawberry",
-   "Vinca",
-   "Red Velvet",
-   "Vinca Blue",
-   "Strawberry Bronze",
-   "Ceramic Patina",
-   "Red"
   ]
  },
  {
@@ -14950,7 +14474,7 @@
   "id": "dyson-multi-complete-long-hs05",
   "category": "appliance",
   "brand": "Dyson",
-  "name": "Airwrap HS05 Complete Long",
+  "name": "Airwrap Multi-styler Complete Long HS05",
   "aliases": [
    "Dyson Airwrap™ multi-styler Complete Long HS05 Onyx Gold",
    "Dyson Airwrap™ multi-styler Complete Long HS05 Blue / Blush",
@@ -14968,7 +14492,24 @@
    "Airwrap HS05 Complete Long (Fuchsia)",
    "Dyson HS05 Airwrap™ Multi-styler Complete Long Strawberry Bronze/Pink",
    "Dyson Airwrap HS05 Complete Long (Strawberry)",
-   "Airwrap HS05 Complete Long (Strawberry)"
+   "Airwrap HS05 Complete Long (Strawberry)",
+   "Airwrap HS05 Complete Long",
+   "Airwrap HS05",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Rich Copper",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Topaz",
+   "Dyson Airwrap HS05 (Blue)",
+   "Airwrap HS05 (Blue)",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Fuchisa / Nickel",
+   "Dyson Airwrap HS05 (Fuchsia)",
+   "Airwrap HS05 (Fuchsia)",
+   "Dyson Airwrap™ multi-styler Complete Long HS05 Strawberry Bronze / Pink",
+   "Dyson Airwrap HS05 (Strawberry)",
+   "Airwrap HS05 (Strawberry)",
+   "Dyson HS05 Airwrap™ multi-styler Short and Coarse Prussian Blue/Rich Copper",
+   "Dyson Airwrap HS05 (Prussian Blue)",
+   "Airwrap HS05 (Prussian Blue)",
+   "Airwrap HS05 (Blue/Copper)",
+   "Dyson Airwrap HS05 (Blue/Copper)"
   ],
   "tier": "mid",
   "priceAmd": 256000,
@@ -14997,57 +14538,6 @@
    "Blue/Copper",
    "Fuchsia",
    "Strawberry"
-  ]
- },
- {
-  "id": "dyson-multi-complete-long-hs05-rich",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "Airwrap HS05",
-  "aliases": [
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Rich Copper",
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Prussian Blue / Topaz",
-   "Dyson Airwrap HS05 (Blue)",
-   "Airwrap HS05 (Blue)",
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Fuchisa / Nickel",
-   "Dyson Airwrap HS05 (Fuchsia)",
-   "Airwrap HS05 (Fuchsia)",
-   "Dyson Airwrap™ multi-styler Complete Long HS05 Strawberry Bronze / Pink",
-   "Dyson Airwrap HS05 (Strawberry)",
-   "Airwrap HS05 (Strawberry)",
-   "Dyson HS05 Airwrap™ multi-styler Short and Coarse Prussian Blue/Rich Copper",
-   "Dyson Airwrap HS05 (Prussian Blue)",
-   "Airwrap HS05 (Prussian Blue)",
-   "Airwrap HS05 (Blue/Copper)",
-   "Dyson Airwrap HS05 (Blue/Copper)"
-  ],
-  "tier": "mid",
-  "priceAmd": 258000,
-  "priceAmdMax": 258000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 209000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson ™ multi- Complete Long HS05 Rich.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": [
-   "Blue",
-   "Fuchsia",
-   "Strawberry",
-   "Prussian Blue",
-   "Blue/Copper"
   ]
  },
  {
@@ -15093,11 +14583,20 @@
    "Supersonic Nural HD16 (Ceramic)",
    "Dyson HD16 Supersonic™ Nural Strawberry Bronze/Blush Pink",
    "Dyson Supersonic Nural HD16 (Strawberry)",
-   "Supersonic Nural HD16 (Strawberry)"
+   "Supersonic Nural HD16 (Strawberry)",
+   "HD16 Supersonic Nural Jasper Plum",
+   "Dyson HD16 Supersonic™ Nural Jasper Plum",
+   "Dyson HD16 Supersonic Nural Jasper Plum",
+   "HD16 Supersonic Nural Red Velvet",
+   "Dyson HD16 Supersonic™ Nural Red Velvet",
+   "Dyson HD16 Supersonic Nural Red Velvet",
+   "HD16 Supersonic Vinca Blue/Topaz",
+   "Dyson HD16 Supersonic™ Vinca Blue/Topaz",
+   "Dyson HD16 Supersonic Vinca Blue/Topaz"
   ],
   "tier": "mid",
-  "priceAmd": 246000,
-  "priceAmdMax": 246000,
+  "priceAmd": 215000,
+  "priceAmdMax": 279000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -15238,7 +14737,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "dyson-zone-absoluteplus",
@@ -15268,7 +14771,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "garmin-cirqa-smart-band-french-l-xl",
@@ -15703,7 +15210,8 @@
   "brand": "Garmin",
   "name": "Forerunner 170",
   "aliases": [
-   "Garmin Forerunner 170 Black"
+   "Garmin Forerunner 170 Black",
+   "Forerunner 170 Whitestone"
   ],
   "tier": "mid",
   "priceAmd": 129000,
@@ -15733,7 +15241,8 @@
   "brand": "Garmin",
   "name": "Forerunner 170 Music",
   "aliases": [
-   "Garmin Forerunner 170 Music Black"
+   "Garmin Forerunner 170 Music Black",
+   "Forerunner 170 Music Whitestone"
   ],
   "tier": "mid",
   "priceAmd": 159000,
@@ -15750,62 +15259,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Garmin Forerunner 170 Music.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-forerunner-170-music-whitestone",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Forerunner 170 Music Whitestone",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 159000,
-  "priceAmdMax": 159000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 159000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Forerunner 170 Music Whitestone.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-forerunner-170-whitestone",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Forerunner 170 Whitestone",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 129000,
-  "priceAmdMax": 129000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 129000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Forerunner 170 Whitestone.",
   "unsure": [
    "popularity",
    "display",
@@ -15849,7 +15302,9 @@
   "brand": "Garmin",
   "name": "Forerunner 70",
   "aliases": [
-   "Garmin Forerunner 70 Black"
+   "Garmin Forerunner 70 Black",
+   "Forerunner 70 Citron",
+   "Forerunner 70 Whitestone"
   ],
   "tier": "mid",
   "priceAmd": 109000,
@@ -15874,69 +15329,14 @@
   ]
  },
  {
-  "id": "garmin-forerunner-70-citron",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Forerunner 70 Citron",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 109000,
-  "priceAmdMax": 109000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 109000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Forerunner 70 Citron.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-forerunner-70-whitestone",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Forerunner 70 Whitestone",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 109000,
-  "priceAmdMax": 109000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 109000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Forerunner 70 Whitestone.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "garmin-forerunner-965-black-powder",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Forerunner 965 Black/Powder Grey",
+  "name": "Forerunner 965",
   "aliases": [
    "Garmin Forerunner® 965 Black/Powder Grey",
-   "Garmin Forerunner 965 Black/Powder Grey"
+   "Garmin Forerunner 965 Black/Powder Grey",
+   "Forerunner 965 Black/Powder Grey"
   ],
   "tier": "mid",
   "priceAmd": 206100,
@@ -15964,10 +15364,11 @@
   "id": "garmin-forerunner-970",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Forerunner 970 Black",
+  "name": "Forerunner 970",
   "aliases": [
    "Garmin Forerunner® 970 Black",
-   "Garmin Forerunner 970 Black"
+   "Garmin Forerunner 970 Black",
+   "Forerunner 970 Black"
   ],
   "tier": "mid",
   "priceAmd": 296100,
@@ -16027,7 +15428,8 @@
   "brand": "Garmin",
   "name": "Instinct 2X Solar",
   "aliases": [
-   "Garmin Instinct 2X Solar Graphite"
+   "Garmin Instinct 2X Solar Graphite",
+   "Instinct 2X Solar Moss"
   ],
   "tier": "mid",
   "priceAmd": 169150,
@@ -16044,34 +15446,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Garmin Instinct 2X Solar.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-instinct-2x-solar-moss",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Instinct 2X Solar Moss",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 169150,
-  "priceAmdMax": 169150,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 169150
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Instinct 2X Solar Moss.",
   "unsure": [
    "popularity",
    "display",
@@ -16191,45 +15565,17 @@
   "variantUnit": "mm"
  },
  {
-  "id": "garmin-venu-3-leather",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Venu 3 leather",
-  "aliases": [
-   "Garmin Venu 3 Black leather"
-  ],
-  "tier": "mid",
-  "priceAmd": 179100,
-  "priceAmdMax": 179100,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 179100
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Venu 3 leather.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "garmin-venu-3-with-leather",
   "category": "watch",
   "brand": "Garmin",
   "name": "Venu 3 with Leather",
   "aliases": [
-   "Սմարթ ժամացույց Garmin Venu 3 Black Slate with Black Leather"
+   "Սմարթ ժամացույց Garmin Venu 3 Black Slate with Black Leather",
+   "Venu 3 leather",
+   "Garmin Venu 3 Black leather"
   ],
   "tier": "mid",
-  "priceAmd": 199000,
+  "priceAmd": 179100,
   "priceAmdMax": 199000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -16328,13 +15674,17 @@
   "id": "garmin-venu-x1-gps",
   "category": "watch",
   "brand": "Garmin",
-  "name": "Venu X1, GPS",
+  "name": "Venu X1",
   "aliases": [
-   "Garmin Venu X1, GPS, Black"
+   "Garmin Venu X1, GPS, Black",
+   "Venu X1, GPS",
+   "Venu X1, GPS, Moss",
+   "Venu X1 Moss",
+   "Սմարթ ժամացույց Garmin Venu X1 Moss (010-02980-03)"
   ],
   "tier": "mid",
   "priceAmd": 269100,
-  "priceAmdMax": 269100,
+  "priceAmdMax": 359000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -16347,64 +15697,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Garmin Venu X1, GPS.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-venu-x1-gps-moss",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Venu X1, GPS, Moss",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 269100,
-  "priceAmdMax": 269100,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 269100
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Venu X1, GPS, Moss.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "garmin-venu-x1-moss",
-  "category": "watch",
-  "brand": "Garmin",
-  "name": "Venu X1 Moss",
-  "aliases": [
-   "Սմարթ ժամացույց Garmin Venu X1 Moss (010-02980-03)"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 359000,
-  "priceAmdMax": 359000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 359000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Garmin Venu X1 Moss.",
   "unsure": [
    "popularity",
    "display",
@@ -16477,11 +15769,12 @@
   "id": "garmin-vivoactive-6",
   "category": "watch",
   "brand": "Garmin",
-  "name": "vivoactive 6 Lunar Gold",
+  "name": "vivoactive 6",
   "aliases": [
    "Garmin vivoactive® 6 Lunar Gold",
    "Garmin vivoactive® 6 Black",
-   "Garmin vivoactive 6 Lunar Gold"
+   "Garmin vivoactive 6 Lunar Gold",
+   "vivoactive 6 Lunar Gold"
   ],
   "tier": "mid",
   "priceAmd": 144000,
@@ -18235,8 +17528,10 @@
   "id": "hisense-55u7q",
   "category": "tv",
   "brand": "Hisense",
-  "name": "55U7Q.",
-  "aliases": [],
+  "name": "55U7Q",
+  "aliases": [
+   "55U7Q."
+  ],
   "tier": "upper-mid",
   "priceAmd": 343700,
   "priceAmdMax": 343700,
@@ -18635,8 +17930,10 @@
   "id": "hisense-65e7q",
   "category": "tv",
   "brand": "Hisense",
-  "name": "65E7Q.",
-  "aliases": [],
+  "name": "65E7Q",
+  "aliases": [
+   "65E7Q."
+  ],
   "tier": "upper-mid",
   "priceAmd": 327600,
   "priceAmdMax": 327600,
@@ -18778,8 +18075,10 @@
   "id": "hisense-65u7q",
   "category": "tv",
   "brand": "Hisense",
-  "name": "65U7Q.",
-  "aliases": [],
+  "name": "65U7Q",
+  "aliases": [
+   "65U7Q."
+  ],
   "tier": "upper-mid",
   "priceAmd": 494100,
   "priceAmdMax": 494100,
@@ -19883,10 +19182,11 @@
   "id": "honor-choice-clip-mak-me01",
   "category": "headphones",
   "brand": "Honor",
-  "name": "Choice Clip MAK-ME01",
+  "name": "Choice Earbuds Clip MAK-ME01",
   "aliases": [
    "Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMX) black",
-   "Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMR) Purple"
+   "Անլար ականջակալ Honor Choice Earbuds Clip MAK-ME01 (5504ADMR) Purple",
+   "Choice Clip MAK-ME01"
   ],
   "tier": "budget",
   "priceAmd": 25900,
@@ -19908,11 +19208,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "open",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-choice-earbuds-x3",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Honor",
   "name": "Choice Earbuds X3",
   "aliases": [
@@ -19938,11 +19242,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-choice-earbuds-x5",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Honor",
   "name": "Choice Earbuds X5",
   "aliases": [],
@@ -19966,11 +19274,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-choice-earbuds-x7e-ast-me00",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Honor",
   "name": "Choice Earbuds X7e AST-ME00",
   "aliases": [
@@ -19996,35 +19308,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "honor-choice-headphones-me01",
-  "category": "headphones",
-  "brand": "Honor",
-  "name": "Choice Headphones ME01",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 17900,
-  "priceAmdMax": 17900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 17900
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Honor Choice Headphones ME01.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-choice-infowear-2i-kch-wb01",
@@ -20074,13 +19362,15 @@
   "id": "honor-choice-ros-me01",
   "category": "headphones",
   "brand": "Honor",
-  "name": "CHOICE ROS-ME01",
+  "name": "Choice Headphones ROS-ME01",
   "aliases": [
    "Ականջակալ HONOR CHOICE ROS-ME01 Սև",
-   "Ականջակալ HONOR CHOICE ROS-ME01 սպիտակ"
+   "Ականջակալ HONOR CHOICE ROS-ME01 սպիտակ",
+   "CHOICE ROS-ME01",
+   "Choice Headphones ME01"
   ],
   "tier": "budget",
-  "priceAmd": 19900,
+  "priceAmd": 17900,
   "priceAmdMax": 19900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -20099,15 +19389,20 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-choice-x7-lite",
   "category": "headphones",
   "brand": "Honor",
-  "name": "CHOICE X7 lite",
+  "name": "Choice Earbuds X7 Lite",
   "aliases": [
-   "Անլար ականջակալ HONOR CHOICE Earbuds X7 lite"
+   "Անլար ականջակալ HONOR CHOICE Earbuds X7 lite",
+   "CHOICE X7 lite"
   ],
   "tier": "budget",
   "priceAmd": 8900,
@@ -20129,11 +19424,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-earbuds-x6",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Honor",
   "name": "Earbuds X6",
   "aliases": [],
@@ -20157,7 +19456,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "honor-magic-7-pro",
@@ -20298,48 +19601,21 @@
   ]
  },
  {
-  "id": "honor-magicbook-pro-16-3k-core-ultra-5-125h-ram-1t-win11",
-  "category": "laptop",
-  "brand": "Honor",
-  "name": "MagicBook Pro 16 3K",
-  "aliases": [
-   "HONOR MAGICBOOK PRO 16” 3K.Core Ultra 5 125H/24GB Ram/1T/Win11"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 539000,
-  "priceAmdMax": 539000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 1024,
-    "priceAmd": 539000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Honor MAGICBOOK PRO 16” 3K.Core Ultra 5 125H/ Ram/1T/Win11.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
   "category": "laptop",
   "brand": "Honor",
-  "name": "MagicBook Pro 16",
+  "name": "MagicBook Pro 16 Ultra 5 125H",
   "aliases": [
    "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 White W11H /5301AJJG",
    "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 Purple W11H /5301AJJE",
    "Honor MagicBook Pro 16 (24GB)",
-   "MagicBook Pro 16 (24GB)"
+   "MagicBook Pro 16 (24GB)",
+   "MagicBook Pro 16",
+   "MagicBook Pro 16 3K",
+   "HONOR MAGICBOOK PRO 16” 3K.Core Ultra 5 125H/24GB Ram/1T/Win11"
   ],
   "tier": "upper-mid",
-  "priceAmd": 559900,
+  "priceAmd": 539000,
   "priceAmdMax": 559900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -20348,6 +19624,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 559900
+   },
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 539000
    }
   ],
   "display": {},
@@ -24322,10 +23603,11 @@
   "brand": "JBL",
   "name": "Boombox 3",
   "aliases": [
-   "JBL Boombox 3 Black"
+   "JBL Boombox 3 Black",
+   "Boombox 3 Squad"
   ],
   "tier": "mid",
-  "priceAmd": 187000,
+  "priceAmd": 179900,
   "priceAmdMax": 187000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -24339,34 +23621,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "JBL Boombox 3.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-boombox-3-squad",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Boombox 3 Squad",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 179900,
-  "priceAmdMax": 179900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 179900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Boombox 3 Squad.",
   "unsure": [
    "popularity",
    "display",
@@ -24452,7 +23706,8 @@
    "JBL Clip 4 Orange",
    "JBL Clip 4 Green",
    "JBL Clip 4 Blue",
-   "JBL Clip 4 Black"
+   "JBL Clip 4 Black",
+   "Clip 4 Squad"
   ],
   "tier": "budget",
   "priceAmd": 21900,
@@ -24469,34 +23724,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "JBL Clip 4.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-clip-4-squad",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Clip 4 Squad",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 21900,
-  "priceAmdMax": 21900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 21900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Clip 4 Squad.",
   "unsure": [
    "popularity",
    "display",
@@ -24548,7 +23775,10 @@
    "JBL Flip 6 Pink",
    "JBL Flip 6 Green",
    "JBL Flip 6 Gray",
-   "JBL Flip 6 White"
+   "JBL Flip 6 White",
+   "Flip 6 Squared",
+   "Flip 6 Star",
+   "JBL Flip 6 Black Star"
   ],
   "tier": "budget",
   "priceAmd": 53900,
@@ -24565,64 +23795,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "JBL Flip 6.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-flip-6-squared",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Flip 6 Squared",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 53900,
-  "priceAmdMax": 53900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 53900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Flip 6 Squared.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-flip-6-star",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Flip 6 Star",
-  "aliases": [
-   "JBL Flip 6 Black Star"
-  ],
-  "tier": "budget",
-  "priceAmd": 59000,
-  "priceAmdMax": 59000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 59000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Flip 6 Star.",
   "unsure": [
    "popularity",
    "display",
@@ -24673,7 +23845,8 @@
    "JBL Go 3 White",
    "JBL Go 3 Teal",
    "JBL Go 3 Red",
-   "JBL Go 3 Blue"
+   "JBL Go 3 Blue",
+   "Go 3 Squad"
   ],
   "tier": "budget",
   "priceAmd": 16000,
@@ -24690,34 +23863,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "JBL Go 3.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-go-3-squad",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Go 3 Squad",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 16000,
-  "priceAmdMax": 16000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 16000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Go 3 Squad.",
   "unsure": [
    "popularity",
    "display",
@@ -24804,7 +23949,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-live-660-nc",
@@ -24834,7 +23984,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-live-770-nc",
@@ -24866,7 +24021,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-live-flex",
@@ -24898,14 +24058,21 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
-  "id": "jbl-live-pro-2-twc",
+  "id": "jbl-live-pro-2-tws",
   "category": "headphones",
   "brand": "JBL",
-  "name": "Live Pro 2 TWC",
+  "name": "Live Pro 2 TWS",
   "aliases": [
+   "JBL Live Pro 2 TWS Black",
+   "Live Pro 2 TWC",
    "JBL Live Pro 2 TWC Rose",
    "JBL Live Pro 2 TWC Blue",
    "JBL Live Pro 2 TWC Silver"
@@ -24924,43 +24091,17 @@
   ],
   "display": {},
   "battery": {},
-  "summaryEn": "JBL Live Pro 2 TWC.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-live-pro-2-tws",
-  "category": "headphones",
-  "brand": "JBL",
-  "name": "Live Pro 2 TWS",
-  "aliases": [
-   "JBL Live Pro 2 TWS Black"
-  ],
-  "tier": "budget",
-  "priceAmd": 65900,
-  "priceAmdMax": 65900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 65900
-   }
-  ],
-  "display": {},
-  "battery": {},
   "summaryEn": "JBL Live Pro 2 TWS.",
   "unsure": [
    "popularity",
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-partybox-1000",
@@ -25032,36 +24173,6 @@
   ]
  },
  {
-  "id": "jbl-partybox-120",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Partybox 120",
-  "aliases": [
-   "JBL Partybox 120 (Սև)"
-  ],
-  "tier": "mid",
-  "priceAmd": 159000,
-  "priceAmdMax": 203000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 159000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Partybox 120.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "jbl-partybox-310",
   "category": "speaker",
   "brand": "JBL",
@@ -25082,36 +24193,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "JBL PartyBox 310.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-partybox-320",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Partybox 320",
-  "aliases": [
-   "JBL Partybox 320 (Սև)"
-  ],
-  "tier": "mid",
-  "priceAmd": 205000,
-  "priceAmdMax": 255900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 205000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Partybox 320.",
   "unsure": [
    "popularity",
    "display",
@@ -25152,10 +24233,13 @@
   "category": "speaker",
   "brand": "JBL",
   "name": "PartyBox Club 120",
-  "aliases": [],
+  "aliases": [
+   "Partybox 120",
+   "JBL Partybox 120 (Սև)"
+  ],
   "tier": "mid",
-  "priceAmd": 184000,
-  "priceAmdMax": 184000,
+  "priceAmd": 159000,
+  "priceAmdMax": 203000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -25257,10 +24341,13 @@
   "category": "speaker",
   "brand": "JBL",
   "name": "PartyBox Stage 320",
-  "aliases": [],
+  "aliases": [
+   "Partybox 320",
+   "JBL Partybox 320 (Սև)"
+  ],
   "tier": "mid",
-  "priceAmd": 255000,
-  "priceAmdMax": 255000,
+  "priceAmd": 205000,
+  "priceAmdMax": 255900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -25348,7 +24435,13 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5",
+   "gaming": true
+  }
  },
  {
   "id": "jbl-quantum-300",
@@ -25378,11 +24471,17 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5",
+   "gaming": true
+  }
  },
  {
   "id": "jbl-tune",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "JBL",
   "name": "Tune Buds",
   "aliases": [
@@ -25418,7 +24517,12 @@
   "colors": [
    "Ghost",
    "Purple"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-tune-125-tws",
@@ -25449,11 +24553,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-tune-125bt",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "JBL",
   "name": "Tune 125BT",
   "aliases": [
@@ -25471,7 +24579,9 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "neckband",
+   "conn": "wireless"
   },
   "battery": {
    "life": "16 hours"
@@ -25509,7 +24619,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-tune-215-tws",
@@ -25540,17 +24654,25 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-tune-230-nc-tws",
   "category": "headphones",
   "brand": "JBL",
-  "name": "Tune 230 NC TWS",
-  "aliases": [],
+  "name": "Tune 230NC TWS",
+  "aliases": [
+   "Tune 230 NC TWS",
+   "Tune 230 TWS",
+   "JBL Tune 230 TWS Beige"
+  ],
   "tier": "budget",
   "priceAmd": 33000,
-  "priceAmdMax": 33000,
+  "priceAmdMax": 39900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -25568,37 +24690,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-tune-230-tws",
-  "category": "headphones",
-  "brand": "JBL",
-  "name": "Tune 230 TWS",
-  "aliases": [
-   "JBL Tune 230 TWS Beige"
   ],
-  "tier": "budget",
-  "priceAmd": 39900,
-  "priceAmdMax": 39900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 39900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Tune 230 TWS.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-tune-500-wired",
@@ -25629,7 +24726,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5"
+  }
  },
  {
   "id": "jbl-tune-520-bt",
@@ -25662,7 +24764,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-tune-530bt",
@@ -25686,7 +24792,9 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "57 hours"
@@ -25728,7 +24836,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-tune-680nc",
@@ -25752,7 +24865,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "70 hours"
@@ -25795,7 +24910,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-tune-760-nc",
@@ -25826,7 +24945,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-tune-beam",
@@ -25857,7 +24981,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-tune-flex",
@@ -25887,11 +25015,16 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "jbl-wave",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "JBL",
   "name": "Wave Buds",
   "aliases": [
@@ -25923,7 +25056,11 @@
   ],
   "colors": [
    "White"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "jbl-xtreme-3",
@@ -25932,7 +25069,8 @@
   "name": "Xtreme 3",
   "aliases": [
    "JBL Xtreme 3 Blue",
-   "JBL Xtreme 3 Black"
+   "JBL Xtreme 3 Black",
+   "Xtreme 3 Camouflage"
   ],
   "tier": "budget",
   "priceAmd": 99900,
@@ -25957,34 +25095,6 @@
   ]
  },
  {
-  "id": "jbl-xtreme-3-camouflage",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Xtreme 3 Camouflage",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 99900,
-  "priceAmdMax": 99900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Xtreme 3 Camouflage.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "jbl-xtreme-4",
   "category": "speaker",
   "brand": "JBL",
@@ -25993,7 +25103,8 @@
    "JBL Xtreme 4 (Սև)",
    "JBL Xtreme 4 (Կապույտ)",
    "JBL Xtreme 4 Blue",
-   "JBL Xtreme 4 Black"
+   "JBL Xtreme 4 Black",
+   "Xtreme 4 Squad"
   ],
   "tier": "mid",
   "priceAmd": 137000,
@@ -26010,34 +25121,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "JBL Xtreme 4.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "jbl-xtreme-4-squad",
-  "category": "speaker",
-  "brand": "JBL",
-  "name": "Xtreme 4 Squad",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 142000,
-  "priceAmdMax": 142000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 142000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "JBL Xtreme 4 Squad.",
   "unsure": [
    "popularity",
    "display",
@@ -26286,37 +25369,6 @@
   ]
  },
  {
-  "id": "lenovo-ideacentre-aio-23-8-24irh-9",
-  "category": "desktop",
-  "brand": "Lenovo",
-  "name": "IdeaCentre AIO 23. 8\" 24IRH 9",
-  "aliases": [
-   "Համակարգիչ բոլորը մեկում Lenovo IdeaCentre AIO 23. 8\" 24IRH 9 (F0HN00SSRU)",
-   "Համակարգիչ բոլորը մեկում Lenovo IdeaCentre AIO 23.8\" 24IRH 9 (F0HN00RWRU)"
-  ],
-  "tier": "upper-mid",
-  "priceAmd": 429900,
-  "priceAmdMax": 475900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 429900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Lenovo IdeaCentre AIO 23. 8\" 24IRH 9.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "lenovo-ideacentre-aio-24irh9",
   "category": "desktop",
   "brand": "Lenovo",
@@ -26324,7 +25376,10 @@
   "aliases": [
    "Համակարգիչ Lenovo IdeaCentre AIO 24IRH9 (F0HN00KRRU)",
    "Համակարգիչ Lenovo IdeaCentre AIO 24IRH9 (F0HN00KSRU)",
-   "Համակարգիչ Lenovo IdeaCentre AIO 24IRH9 (F0HN00UQRU)"
+   "Համակարգիչ Lenovo IdeaCentre AIO 24IRH9 (F0HN00UQRU)",
+   "IdeaCentre AIO 23. 8\" 24IRH 9",
+   "Համակարգիչ բոլորը մեկում Lenovo IdeaCentre AIO 23. 8\" 24IRH 9 (F0HN00SSRU)",
+   "Համակարգիչ բոլորը մեկում Lenovo IdeaCentre AIO 23.8\" 24IRH 9 (F0HN00RWRU)"
   ],
   "tier": "upper-mid",
   "priceAmd": 389900,
@@ -27545,12 +26600,13 @@
   "id": "lenovo-ideapad-slim-516irh10",
   "category": "laptop",
   "brand": "Lenovo",
-  "name": "IdeaPad Slim 516IRH10",
+  "name": "IdeaPad Slim 5 16IRH10",
   "aliases": [
    "Նոթբուք Lenovo IdeaPad Slim 516IRH10 (83HS002SRK)",
    "IdeaPad Slim 5 16IRH10 R",
    "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10 R (83J1001DRK)",
-   "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10R (83J1001ERK)"
+   "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10R (83J1001ERK)",
+   "IdeaPad Slim 516IRH10"
   ],
   "tier": "upper-mid",
   "priceAmd": 459900,
@@ -30277,34 +29333,6 @@
   ]
  },
  {
-  "id": "marshall-acton-3",
-  "category": "speaker",
-  "brand": "Marshall",
-  "name": "Acton 3",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 125000,
-  "priceAmdMax": 125000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 125000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Marshall Acton 3.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "marshall-acton-iii",
   "category": "speaker",
   "brand": "Marshall",
@@ -30312,11 +29340,12 @@
   "aliases": [
    "Marshall Acton III Cream",
    "Marshall Acton III Brown",
-   "Marshall Acton III Black"
+   "Marshall Acton III Black",
+   "Acton 3"
   ],
   "tier": "mid",
   "priceAmd": 109000,
-  "priceAmdMax": 109000,
+  "priceAmdMax": 125000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -30455,7 +29484,9 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "80+ hours"
@@ -30482,7 +29513,9 @@
   "audio": {
    "type": "On-ear, closed back",
    "anc": false,
-   "transparency": false
+   "transparency": false,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -30739,34 +29772,6 @@
   ]
  },
  {
-  "id": "marshall-woburn-3",
-  "category": "speaker",
-  "brand": "Marshall",
-  "name": "Woburn 3",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 219000,
-  "priceAmdMax": 219000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 219000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Marshall Woburn 3.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "marshall-woburn-ii",
   "category": "speaker",
   "brand": "Marshall",
@@ -30806,11 +29811,12 @@
   "name": "Woburn III",
   "aliases": [
    "Marshall Woburn III Cream",
-   "Marshall Woburn III Black"
+   "Marshall Woburn III Black",
+   "Woburn 3"
   ],
   "tier": "mid",
   "priceAmd": 189000,
-  "priceAmdMax": 189000,
+  "priceAmdMax": 219000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -30974,7 +29980,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "microsoft-xbox-controller",
@@ -31582,9 +30593,10 @@
   "id": "nothing-6974434224179",
   "category": "headphones",
   "brand": "Nothing",
-  "name": "6974434224179",
+  "name": "Headphone (1)",
   "aliases": [
-   "Nothing Headphone ( 1 ) White /6974434224179"
+   "Nothing Headphone ( 1 ) White /6974434224179",
+   "6974434224179"
   ],
   "tier": "mid",
   "priceAmd": 157000,
@@ -31606,7 +30618,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "nothing-cmf-3-pro-6974434225312",
@@ -31678,7 +30694,7 @@
  },
  {
   "id": "nothing-ear-a",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Nothing",
   "name": "Ear (a)",
   "aliases": [
@@ -31698,7 +30714,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {
    "life": "5.5 hours (24.5 with the case)"
@@ -31739,7 +30757,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "open",
+   "conn": "wireless"
+  }
  },
  {
   "id": "nothing-phone-2",
@@ -32089,7 +31111,7 @@
   "brand": "Philips",
   "name": "271V8",
   "tier": "mid",
-  "priceAmd": 79000,
+  "priceAmd": 62000,
   "priceAmdMax": 79000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -32115,43 +31137,9 @@
   "battery": {},
   "unsure": [
    "popularity"
-  ]
- },
- {
-  "id": "philips-271v8w",
-  "category": "monitor",
-  "brand": "Philips",
-  "name": "271V8W",
-  "tier": "mid",
-  "priceAmd": 62000,
-  "priceAmdMax": 62000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 27,
-   "type": "IPS",
-   "resolution": "1920 x 1080",
-   "refresh": 75,
-   "brightness": 250,
-   "touch": false
-  },
-  "connectivity": {
-   "ports": "HDMI, VGA"
-  },
-  "summaryEn": "A 27-inch IPS monitor at 75 Hz.",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 62000
-   }
   ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ],
-  "settled": [
-   "notADuplicate"
+  "aliases": [
+   "271V8W"
   ]
  },
  {
@@ -32909,9 +31897,10 @@
   "id": "samsung-eo-ic100-usb-type-c",
   "category": "headphones",
   "brand": "Samsung",
-  "name": "EO-IC100, USB Type-C",
+  "name": "Type-C Earphones",
   "aliases": [
-   "Ականջակալ Samsung EO-IC100, USB Type-C White"
+   "Ականջակալ Samsung EO-IC100, USB Type-C White",
+   "EO-IC100, USB Type-C"
   ],
   "tier": "budget",
   "priceAmd": 9900,
@@ -32933,11 +31922,16 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "in-ear",
+   "conn": "wired",
+   "plug": "usb-c"
+  }
  },
  {
   "id": "samsung-galaxy-2",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds 2",
   "aliases": [
@@ -32967,11 +31961,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "samsung-galaxy-2-pro",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds 2 Pro",
   "aliases": [
@@ -32999,11 +31997,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "samsung-galaxy-3",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds 3",
   "aliases": [
@@ -33038,11 +32040,15 @@
   ],
   "colors": [
    "Silver"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "samsung-galaxy-3-fe",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds 3 FE",
   "aliases": [
@@ -33069,7 +32075,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "samsung-galaxy-6-classic-43mm-r950",
@@ -34361,7 +33371,7 @@
  },
  {
   "id": "samsung-galaxy-buds-3-pro",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds 3 Pro",
   "aliases": [
@@ -34381,7 +33391,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {
    "life": "6 hours (20 with the case)"
@@ -34396,7 +33408,7 @@
  },
  {
   "id": "samsung-galaxy-buds-4",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds 4",
   "aliases": [
@@ -34412,7 +33424,9 @@
   "audio": {
    "type": "Open-fit, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -34437,14 +33451,15 @@
  },
  {
   "id": "samsung-galaxy-buds-4-pro",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
-  "name": "Galaxy Buds4 Pro",
+  "name": "Galaxy Buds 4 Pro",
   "aliases": [
    "Samsung Galaxy Buds 4 Pro",
    "Galaxy Buds 4 Pro Headphone",
    "Galaxy Buds4 Pro R640",
-   "Headphone Galaxy Buds4 Pro R640"
+   "Headphone Galaxy Buds4 Pro R640",
+   "Galaxy Buds4 Pro"
   ],
   "tier": "flagship",
   "released": "2025-07",
@@ -34455,7 +33470,9 @@
   "audio": {
    "type": "In-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -34480,7 +33497,7 @@
  },
  {
   "id": "samsung-galaxy-buds-core",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds Core",
   "aliases": [
@@ -34495,7 +33512,9 @@
   "audio": {
    "type": "In-ear, active noise cancellation",
    "anc": true,
-   "transparency": false
+   "transparency": false,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "variants": [
@@ -34517,7 +33536,7 @@
  },
  {
   "id": "samsung-galaxy-buds-fe",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds FE",
   "aliases": [
@@ -34535,7 +33554,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {
    "life": "6 hours (21 with the case)"
@@ -34550,7 +33571,7 @@
  },
  {
   "id": "samsung-galaxy-buds-live",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds Live",
   "aliases": [],
@@ -34574,11 +33595,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "samsung-galaxy-buds-pro-r190",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Samsung",
   "name": "Galaxy Buds Pro",
   "aliases": [
@@ -34598,7 +33623,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {
    "life": "8 hours (28 with the case)"
@@ -39255,36 +38282,6 @@
   ]
  },
  {
-  "id": "sennheiser-accentum-acaebt",
-  "category": "headphones",
-  "brand": "Sennheiser",
-  "name": "Accentum ACAEBT",
-  "aliases": [
-   "Անլար ականջակալ Sennheiser Accentum ACAEBT սպիտակ"
-  ],
-  "tier": "budget",
-  "priceAmd": 89900,
-  "priceAmdMax": 89900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 89900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sennheiser Accentum ACAEBT.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "sennheiser-accentum-plus",
   "category": "headphones",
   "brand": "Sennheiser",
@@ -39313,7 +38310,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sennheiser-accentum-true-special-edition-atw1-se",
@@ -39343,7 +38344,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sennheiser-accentum-true-wireless-atw1",
@@ -39374,15 +38379,22 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sennheiser-accentum-wireless-acaebt",
   "category": "headphones",
   "brand": "Sennheiser",
-  "name": "Accentum Wireless ACAEBT",
+  "name": "Accentum Wireless",
   "aliases": [
-   "Անլար ականջակալ Sennheiser Accentum Wireless ACAEBT սև"
+   "Անլար ականջակալ Sennheiser Accentum Wireless ACAEBT սև",
+   "Accentum Wireless ACAEBT",
+   "Accentum ACAEBT",
+   "Անլար ականջակալ Sennheiser Accentum ACAEBT սպիտակ"
   ],
   "tier": "budget",
   "priceAmd": 89900,
@@ -39404,7 +38416,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sennheiser-hd-450bt",
@@ -39434,7 +38450,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sennheiser-hd-599",
@@ -39464,7 +38484,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5"
+  }
  },
  {
   "id": "sennheiser-hd-620s",
@@ -39494,7 +38519,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wired",
+   "plug": "3.5"
+  }
  },
  {
   "id": "sennheiser-momentum-4",
@@ -39504,13 +38534,15 @@
   "tier": "flagship",
   "released": "2022-08",
   "priceAmd": 139900,
-  "priceAmdMax": 139900,
+  "priceAmdMax": 169900,
   "popularity": 48,
   "accent": "#2B2B2E",
   "audio": {
    "type": "Over-ear, adaptive noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "capacity": 0
@@ -39543,38 +38575,11 @@
   "aliases": [
    "Sennheiser Momentum 4",
    "Momentum Wireless 4",
-   "Sennheiser Momentum Wireless 4"
-  ]
- },
- {
-  "id": "sennheiser-momentum-m4aebt",
-  "category": "headphones",
-  "brand": "Sennheiser",
-  "name": "Momentum M4AEBT",
-  "aliases": [
+   "Sennheiser Momentum Wireless 4",
+   "Momentum M4AEBT",
    "Անլար ականջակալ Sennheiser Momentum M4AEBT սև"
   ],
-  "tier": "mid",
-  "priceAmd": 169900,
-  "priceAmdMax": 169900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 169900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sennheiser Momentum M4AEBT.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "display": {}
  },
  {
   "id": "sennheiser-momentum-sport-msport1",
@@ -39606,7 +38611,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sennheiser-rs-195",
@@ -39636,7 +38645,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sonos-ace",
@@ -39658,7 +38671,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "30 hours"
@@ -40235,36 +39250,6 @@
   ]
  },
  {
-  "id": "sony-playstation-pulse-elite-wireless-ps5",
-  "category": "headphones",
-  "brand": "Sony",
-  "name": "Playstation Pulse Elite wireless PS5",
-  "aliases": [
-   "Անլար ականջակալ Sony Playstation Pulse Elite wireless PS5"
-  ],
-  "tier": "budget",
-  "priceAmd": 79900,
-  "priceAmdMax": 79900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 79900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony Playstation Pulse Elite wireless PS5.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "sony-playstation-vr2",
   "category": "console",
   "brand": "Sony",
@@ -40465,13 +39450,16 @@
   "id": "sony-ps5-pulse-elite-wireless",
   "category": "headphones",
   "brand": "Sony",
-  "name": "PS5 PULSE Elite Wireless",
+  "name": "PULSE Elite Wireless Headset",
   "aliases": [
-   "Sony PS5 PULSE Elite Wireless Headset (Սպիտակ)"
+   "Sony PS5 PULSE Elite Wireless Headset (Սպիտակ)",
+   "PS5 PULSE Elite Wireless",
+   "Playstation Pulse Elite wireless PS5",
+   "Անլար ականջակալ Sony Playstation Pulse Elite wireless PS5"
   ],
   "tier": "budget",
   "priceAmd": 69000,
-  "priceAmdMax": 69000,
+  "priceAmdMax": 79900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -40489,37 +39477,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "sony-ps5-pulse-explore-wireless",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "PS5 PULSE Explore Wireless",
-  "aliases": [
-   "Sony PS5 PULSE Explore Wireless Earbuds (Սպիտակ)"
   ],
-  "tier": "budget",
-  "priceAmd": 99000,
-  "priceAmdMax": 99000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 99000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony PS5 PULSE Explore Wireless.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "sony-ps5-slim",
@@ -40611,11 +39574,13 @@
   "brand": "Sony",
   "name": "PULSE Explore",
   "aliases": [
-   "Անլար ականջակալ Sony PULSE Explore White"
+   "Անլար ականջակալ Sony PULSE Explore White",
+   "PS5 PULSE Explore Wireless",
+   "Sony PS5 PULSE Explore Wireless Earbuds (Սպիտակ)"
   ],
   "tier": "budget",
   "priceAmd": 89900,
-  "priceAmdMax": 89900,
+  "priceAmdMax": 99000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -40633,75 +39598,27 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wf-1000xm5-bce",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "WF-1000XM5/BCE",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 147900,
-  "priceAmdMax": 147900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 147900
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WF-1000XM5/BCE.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wf-1000xm5-sce",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "WF-1000XM5/SCE",
-  "aliases": [],
-  "tier": "mid",
-  "priceAmd": 147900,
-  "priceAmdMax": 147900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 147900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WF-1000XM5/SCE.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "sony-wf-1000xm5-wireless-headphones",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Sony",
-  "name": "WF-1000XM5 Wireless Headphones",
+  "name": "WF-1000XM5",
   "aliases": [
-   "Sony WF-1000XM5 Wireless Headphones Silver"
+   "Sony WF-1000XM5 Wireless Headphones Silver",
+   "WF-1000XM5 Wireless Headphones",
+   "WF-1000XM5/BCE",
+   "WF-1000XM5/SCE"
   ],
   "tier": "mid",
   "priceAmd": 139900,
-  "priceAmdMax": 139900,
+  "priceAmdMax": 147900,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -40719,15 +39636,21 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "sony-wf-c500-true-wireless",
   "category": "headphones",
   "brand": "Sony",
-  "name": "WF-C500 True Wireless",
+  "name": "WF-C500",
   "aliases": [
-   "Sony WF-C500 True Wireless (YY2952) անլար ականջակալ նարնջագույն"
+   "Sony WF-C500 True Wireless (YY2952) անլար ականջակալ նարնջագույն",
+   "WF-C500 True Wireless"
   ],
   "tier": "budget",
   "priceAmd": 37900,
@@ -40749,14 +39672,20 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sony-wf-c510-yc",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Sony",
-  "name": "WF-C510/YC",
-  "aliases": [],
+  "name": "WF-C510",
+  "aliases": [
+   "WF-C510/YC"
+  ],
   "tier": "budget",
   "priceAmd": 31900,
   "priceAmdMax": 31900,
@@ -40777,16 +39706,23 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sony-wf-c700n-gz-e",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Sony",
-  "name": "WF-C700N/GZ E",
-  "aliases": [],
+  "name": "WF-C700N",
+  "aliases": [
+   "WF-C700N/GZ E",
+   "WF-C700N/WZ E"
+  ],
   "tier": "budget",
-  "priceAmd": 54900,
+  "priceAmd": 52900,
   "priceAmdMax": 54900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -40805,39 +39741,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
- },
- {
-  "id": "sony-wf-c700n-wz-e",
-  "category": "earbuds",
-  "brand": "Sony",
-  "name": "WF-C700N/WZ E",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 52900,
-  "priceAmdMax": 52900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 52900
-   }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WF-C700N/WZ E.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sony-wf-c710n",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Sony",
   "name": "WF-C710N",
   "aliases": [
@@ -40855,7 +39767,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {
    "life": "8.5 hours (30 with the case)"
@@ -40898,7 +39812,12 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "anc": true
+  }
  },
  {
   "id": "sony-wh-1000xm6",
@@ -40914,7 +39833,9 @@
   "audio": {
    "type": "Over-ear, active noise cancellation",
    "anc": true,
-   "transparency": true
+   "transparency": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -40965,7 +39886,9 @@
    }
   ],
   "audio": {
-   "anc": false
+   "anc": false,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "50 hours"
@@ -40979,47 +39902,19 @@
   "summaryEn": "Fifty hours and 147 grams, with no noise cancelling to pay for."
  },
  {
-  "id": "sony-wh-ch720",
-  "category": "headphones",
-  "brand": "Sony",
-  "name": "WH-CH720",
-  "aliases": [
-   "Sony WH-CH720 Black Անլար ականջակալ"
-  ],
-  "tier": "budget",
-  "priceAmd": 57900,
-  "priceAmdMax": 57900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 57900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony WH-CH720.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "sony-wh-ch720n",
   "category": "headphones",
   "brand": "Sony",
   "name": "WH-CH720N",
   "aliases": [
-   "Sony WH-CH720N"
+   "Sony WH-CH720N",
+   "WH-CH720",
+   "Sony WH-CH720 Black Անլար ականջակալ"
   ],
   "tier": "mid",
   "released": "2023-02",
   "priceAmd": 39900,
-  "priceAmdMax": 39900,
+  "priceAmdMax": 57900,
   "popularity": 68,
   "accent": "#1E2126",
   "variants": [
@@ -41028,7 +39923,9 @@
    }
   ],
   "audio": {
-   "anc": true
+   "anc": true,
+   "form": "full",
+   "conn": "wireless"
   },
   "battery": {
    "life": "35 hours"
@@ -41042,14 +39939,17 @@
   "summaryEn": "Sony's cheapest proper ANC: 192 grams and thirty-five hours.",
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "display": {}
  },
  {
   "id": "sony-wh-g900n-wz-e",
   "category": "headphones",
   "brand": "Sony",
-  "name": "WH-G900N/WZ E",
-  "aliases": [],
+  "name": "WH-G900N",
+  "aliases": [
+   "WH-G900N/WZ E"
+  ],
   "tier": "mid",
   "priceAmd": 151900,
   "priceAmdMax": 151900,
@@ -41070,15 +39970,21 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless",
+   "gaming": true
+  }
  },
  {
   "id": "sony-whult900n",
   "category": "headphones",
   "brand": "Sony",
-  "name": "WHULT900N",
+  "name": "ULT WEAR WH-ULT900N",
   "aliases": [
-   "Sony WHULT900N White Անլար ականջակալ"
+   "Sony WHULT900N White Անլար ականջակալ",
+   "WHULT900N"
   ],
   "tier": "budget",
   "priceAmd": 89900,
@@ -41100,7 +40006,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "full",
+   "conn": "wireless"
+  }
  },
  {
   "id": "sony-xperia-10v",
@@ -43622,7 +42532,7 @@
  },
  {
   "id": "xiaomi-buds-6-lite",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 6 Lite",
   "aliases": [
@@ -43637,7 +42547,9 @@
   "audio": {
    "type": "In-ear, active noise cancellation",
    "anc": true,
-   "transparency": false
+   "transparency": false,
+   "form": "tws",
+   "conn": "wireless"
   },
   "battery": {},
   "body": {
@@ -43783,36 +42695,6 @@
   "display": {},
   "battery": {},
   "summaryEn": "Xiaomi Mi Electric Kettle Pro 2.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "xiaomi-mi-smart-band-8-active",
-  "category": "watch",
-  "brand": "Xiaomi",
-  "name": "Mi Smart Band 8 Active",
-  "aliases": [
-   "Xiaomi Mi Smart Band 8 Active Pink"
-  ],
-  "tier": "budget",
-  "priceAmd": 11400,
-  "priceAmdMax": 11400,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 11400
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Mi Smart Band 8 Active.",
   "unsure": [
    "popularity",
    "display",
@@ -44789,9 +43671,11 @@
   "category": "phone",
   "brand": "Xiaomi",
   "name": "Redmi 15",
-  "aliases": [],
+  "aliases": [
+   "Redmi 15 4G"
+  ],
   "tier": "budget",
-  "priceAmd": 66900,
+  "priceAmd": 58000,
   "priceAmdMax": 74900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -44800,6 +43684,11 @@
     "ram": null,
     "storage": 8,
     "priceAmd": 74900
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 58000
    }
   ],
   "display": {},
@@ -44813,36 +43702,6 @@
   ],
   "settled": [
    "notADuplicate"
-  ]
- },
- {
-  "id": "xiaomi-redmi-15-4g",
-  "category": "phone",
-  "brand": "Xiaomi",
-  "name": "Redmi 15 4G",
-  "aliases": [
-   "Redmi 15 4G"
-  ],
-  "tier": "budget",
-  "priceAmd": 58000,
-  "priceAmdMax": 58000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 58000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Redmi 15 4G.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
   ]
  },
  {
@@ -44958,7 +43817,7 @@
  },
  {
   "id": "xiaomi-redmi-4-active",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 4 Active",
   "aliases": [
@@ -44985,16 +43844,21 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-4-bhr-5846-gl",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
-  "name": "Redmi Buds 4 BHR 5846 GL",
+  "name": "Redmi Buds 4",
   "aliases": [
    "Xiaomi Redmi Buds 4 BHR 5846 GL",
-   "Redmi 4 BHR 5846 GL"
+   "Redmi 4 BHR 5846 GL",
+   "Redmi Buds 4 BHR 5846 GL"
   ],
   "tier": "budget",
   "priceAmd": 15000,
@@ -45016,11 +43880,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-4-lite",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 4 Lite",
   "aliases": [
@@ -45047,11 +43915,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-5",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 5",
   "aliases": [
@@ -45080,7 +43952,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-8-active-bhr08jtgl",
@@ -45121,7 +43997,11 @@
   "colors": [
    "White",
    "Black"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-8-lite",
@@ -45161,7 +44041,11 @@
   ],
   "colors": [
    "Black"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-a2plus",
@@ -45280,7 +44164,7 @@
  },
  {
   "id": "xiaomi-redmi-buds-3-lite",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 3 Lite",
   "aliases": [],
@@ -45304,11 +44188,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-buds-6",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 6",
   "aliases": [
@@ -45334,11 +44222,15 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-buds-6-play",
-  "category": "earbuds",
+  "category": "headphones",
   "brand": "Xiaomi",
   "name": "Redmi Buds 6 Play",
   "aliases": [],
@@ -45362,7 +44254,11 @@
    "display",
    "chipset",
    "battery.capacity"
-  ]
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless"
+  }
  },
  {
   "id": "xiaomi-redmi-note-10-pro",
@@ -47074,9 +45970,12 @@
   "category": "watch",
   "brand": "Xiaomi",
   "name": "Smart Band 8 Active",
-  "aliases": [],
+  "aliases": [
+   "Mi Smart Band 8 Active",
+   "Xiaomi Mi Smart Band 8 Active Pink"
+  ],
   "tier": "budget",
-  "priceAmd": 17000,
+  "priceAmd": 11400,
   "priceAmdMax": 17000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -47101,9 +46000,10 @@
   "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Smart Band 8 Champagne BHR7166GL",
+  "name": "Smart Band 8",
   "aliases": [
-   "Ֆիթնես-թեւնոց Xiaomi Smart Band 8 Champagne Gold (M2239B1) BHR7166GL"
+   "Ֆիթնես-թեւնոց Xiaomi Smart Band 8 Champagne Gold (M2239B1) BHR7166GL",
+   "Smart Band 8 Champagne BHR7166GL"
   ],
   "tier": "budget",
   "priceAmd": 16500,
@@ -47129,7 +46029,7 @@
  },
  {
   "id": "xiaomi-smart-ir-control",
-  "category": "speaker",
+  "category": "appliance",
   "brand": "Xiaomi",
   "name": "Smart IR Control",
   "aliases": [
@@ -47161,9 +46061,10 @@
   "id": "xiaomi-smart-mi-band-8-pro",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Smart Mi Band 8 Pro",
+  "name": "Smart Band 8 Pro",
   "aliases": [
-   "Xiaomi Smart Mi Band 8 Pro Black"
+   "Xiaomi Smart Mi Band 8 Pro Black",
+   "Smart Mi Band 8 Pro"
   ],
   "tier": "budget",
   "priceAmd": 34400,

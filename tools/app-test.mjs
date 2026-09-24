@@ -146,13 +146,20 @@ const barKeys = cat => {
     .filter(k => k !== 'sort');
 };
 const hasNone = (keys, banned) => banned.filter(k => keys.includes(k));
-is(hasNone(barKeys('earbuds'), ['ram', 'stor', 'batt', 'hz', 'scr']), [], 'earbuds are not asked about RAM or screens');
 is(hasNone(barKeys('headphones'), ['ram', 'stor', 'batt', 'hz', 'scr']), [], 'headphones are not asked about RAM or screens');
 is(hasNone(barKeys('watch'), ['ram', 'batt', 'hz', 'cam']), [], 'a watch is not asked about refresh rate or RAM');
 is(hasNone(barKeys('laptop'), ['hz', 'cam', 'g5', 'nfc']), [], 'a laptop is not asked about 5G or cameras');
 is(barKeys('phone').includes('cam'), true, 'phones are asked about the camera');
 is(barKeys('laptop').includes('cpu') && barKeys('laptop').includes('gpu'), true, 'laptops are asked about CPU and GPU');
-is(barKeys('earbuds').includes('anc'), true, 'earbuds are asked about noise cancelling');
+is(barKeys('headphones').includes('anc'), true, 'headphones are asked about noise cancelling');
+// e-catalog's headphone column: what kind, wired or not, which plug, gaming
+is(['hform', 'hconn', 'hplug', 'gaming'].filter(k => !barKeys('headphones').includes(k)), [], 'headphones are asked type, connection, connector, gaming');
+is(barKeys('speaker').includes('spk'), true, 'speakers are asked what kind');
+is(barKeys('laptop').includes('res'), true, 'laptops are asked the screen resolution');
+is(phones.filter(p => p.category === 'earbuds').map(p => p.id), [], 'earbuds and headphones are one section');
+is(phones.filter(p => p.category === 'headphones' && !p.audio?.form).map(p => p.id), [], 'every headphone has a type (node tools/audio.mjs)');
+const wired = phones.filter(p => p.audio?.conn === 'wired').map(p => p.id);
+is(['apple-earpods-usb-c', 'samsung-eo-ic100-usb-type-c'].filter(id => !wired.includes(id)), [], 'EarPods and the Samsung Type-C earphones are wired');
 // With no category chosen the page is showing phones beside fridges: only the questions that
 // apply to a purchase rather than to hardware survive.
 // With no category the bar used to offer nothing but brand, price and shop, which read as a
