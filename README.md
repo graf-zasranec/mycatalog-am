@@ -1,4 +1,4 @@
-# Impulse
+# Better
 
 Trilingual (hy / ru / en) smartphone catalogue for the Armenian market.
 111 products, prices in AMD, filters, product pages and side-by-side comparison.

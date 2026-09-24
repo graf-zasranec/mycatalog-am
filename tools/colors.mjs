@@ -12,7 +12,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';
+const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
 const OUT = path.join(ROOT, 'images', '_src');
 fs.mkdirSync(OUT, { recursive: true });
 

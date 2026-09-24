@@ -1,5 +1,5 @@
 @echo off
-REM Refresh Impulse.am prices and rebuild the site.
+REM Refresh Better prices and rebuild the site.
 REM Run by hand, or on a schedule (see README).
 REM
 REM Photos are NOT refreshed here: tools/cutout.py needs a browser to decode images,

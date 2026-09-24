@@ -1,4 +1,4 @@
-<title>Impulse</title>
+<title>Better</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=swap">
 <style>
@@ -279,13 +279,38 @@ button,input,select,textarea{font:inherit;color:inherit}
   color:var(--muted);font-size:10.5px;font-style:normal;font-weight:600;white-space:nowrap}
 /* Pages. 36 cards a page: the grid stops being 192 cards of DOM on every filter move. */
 .pager{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center;margin:26px 0 4px}
-.pager .pg{min-width:38px;height:38px;padding:0 10px;border-radius:var(--pill);cursor:pointer;
+/* Centred by the BOX, not by the font. The arrows used to be the characters ← and →, which every
+   font draws at its own size and height: in the mono face they sat small and up-left inside the
+   circle while the digits beside them sat dead centre, and a different browser picks a different
+   fallback font and a different wrong place. inline-flex puts the content in the middle whatever
+   it is, and the arrows are now drawn (see pager() in _app.js), so no font is consulted at all. */
+.pager .pg{display:inline-flex;align-items:center;justify-content:center;line-height:1;
+  min-width:38px;height:38px;padding:0 10px;border-radius:var(--pill);cursor:pointer;
   font-family:var(--mono);font-size:0.8125rem;font-weight:600;border:1.5px solid var(--line2);
   background:var(--surface);color:var(--text);transition:border-color .12s,background .12s}
 .pager .pg:hover:not(:disabled){border-color:var(--text)}
 .pager .pg.on{background:var(--text);color:var(--bg);border-color:var(--text)}
 .pager .pg:disabled{opacity:.35;cursor:default}
 .pager .gap{color:var(--muted);padding:0 2px}
+.pager .pg.step{padding:0}
+.pager .pg.step svg{width:16px;height:16px;flex:none;display:block}
+/* Which of the three rows pager() writes is on show. Chosen by width, because the thing that
+   decides whether a row fits is how many 44 px targets sit side by side - and those stay 44 px
+   on every touch screen, which is not negotiable. The full row needs ~376 px at its widest (a
+   middle page), the slim one ~276, the counter ~150. Checked at 2560, 1920, 1366, 1024, 884,
+   768, 430, 375, 344 and 280. */
+.pager .ps,.pager .pgnow{display:none}
+.pager .pgnow{font-family:var(--mono);font-size:0.8125rem;font-weight:600;color:var(--text);
+  padding:0 10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:520px){
+  .pager .pf{display:none}
+  .pager .pg.ps{display:inline-flex}
+  .pager .gap.ps{display:inline}
+}
+@media (max-width:330px){
+  .pager .pg.ps,.pager .gap.ps{display:none}
+  .pager .pgnow{display:inline-block}
+}
 @media (max-width:520px){.pager .pg{min-width:34px;height:34px;padding:0 8px}}
 /* Filter results arriving. The stagger is per-card via --d, set in gridIn(). */
 @keyframes gridin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -605,6 +630,23 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .pprice2 .save2{font-size:0.9375rem;font-weight:700;color:var(--brand);margin-top:6px}
 .pprice2 .shopn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:4px}
 .pcta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+/* "Compare with": the newer and the previous model, photo + name + price. Two across wherever two
+   cards of ~200 px fit, one above the other where they do not - auto-fit decides, so no width is
+   hard-coded and nothing can push the column wider than the screen. min-width:0 lets a long name
+   wrap inside its card instead of stretching it. */
+.cwith{margin-top:22px}
+.cwith h3{margin:0 0 10px;font-family:var(--mono);font-size:0.75rem;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted)}
+.cwrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.cw{display:flex;align-items:center;gap:12px;min-width:0;padding:10px 12px;border:1.5px solid var(--line2);
+  border-radius:14px;background:var(--surface);color:var(--text);text-decoration:none;
+  transition:border-color .12s}
+.cw:hover,.cw:focus-visible{border-color:var(--text)}
+.cw img{width:64px;height:64px;object-fit:contain;flex:none}
+.cwt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cwt em{font-style:normal;font-size:0.6875rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.cwt b{font-size:0.9375rem;font-weight:600;overflow-wrap:anywhere}
+.cwt .num{font-size:0.875rem;font-weight:700}
 
 /* the spread rail, redrawn as a hairline on cream */
 .rail{position:relative;height:20px;margin-top:14px;max-width:360px}
@@ -983,7 +1025,7 @@ a.store:hover .nm{color:var(--brand)}
 <a class="skip" href="#main" id="skipLink">Main</a>
 <div class="mast" id="mast">
   <div class="shell topnav">
-    <a class="logo" href="#/"><span class="m"></span>Impulse</a>
+    <a class="logo" href="#/"><span class="m"></span>Better</a>
     <nav class="nav" id="nav"></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>

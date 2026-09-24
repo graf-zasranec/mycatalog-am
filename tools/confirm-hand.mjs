@@ -14,7 +14,7 @@
 // alone for a person - the answer to "this page 404s" is a decision, not a default.
 import fs from 'node:fs';
 
-const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';
+const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
 const DELAY = 700;
 const dry = process.argv.includes('--dry');
 // Without these this tool only ever looked at rows carrying NO date, which made it a one-shot

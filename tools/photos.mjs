@@ -16,7 +16,7 @@ import { createHash } from 'node:crypto';
 const PLACEHOLDER = fs.existsSync('data/placeholders.json')
   ? JSON.parse(fs.readFileSync('data/placeholders.json', 'utf8')) : {};
 
-const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';   // same string scrape.mjs sends
+const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // same string scrape.mjs sends
 const SRC = 'images/_src';
 const MIN_EDGE = 700;                 // below this a photo visibly softens on the product page
 const dry = process.argv.includes('--dry');

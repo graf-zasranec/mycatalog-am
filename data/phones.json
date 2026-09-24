@@ -1616,7 +1616,8 @@
    "type": "VA",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -1648,7 +1649,8 @@
    "size": 23.8,
    "type": "IPS",
    "resolution": "1920 x 1080",
-   "refresh": 120
+   "refresh": 120,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -1681,7 +1683,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, Display port"
@@ -1719,7 +1722,9 @@
     "priceAmd": 469900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "AOC 49\" LCD AG493UCX.",
   "unsure": [
@@ -2181,66 +2186,6 @@
   ]
  },
  {
-  "id": "apple-ipad-10-2-9th-gen-wi-fi",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad 10.2 9th Gen Wi-Fi",
-  "aliases": [
-   "iPad 10.2 9th Gen Wi-Fi Silver"
-  ],
-  "tier": "mid",
-  "priceAmd": 154000,
-  "priceAmdMax": 154000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 64,
-    "priceAmd": 154000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad 10.2 9th Gen Wi-Fi.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
-  "id": "apple-ipad-10-2-9th-generation-wi-fi",
-  "category": "tablet",
-  "brand": "Apple",
-  "name": "iPad 10.2 9th Generation , , Wi-Fi",
-  "aliases": [
-   "iPad 10.2 9th Generation , , Wi-Fi, Space Gray"
-  ],
-  "tier": "mid",
-  "priceAmd": 152000,
-  "priceAmdMax": 152000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": 64,
-    "priceAmd": 152000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Apple iPad 10.2 9th Generation , , Wi-Fi.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
- },
- {
   "id": "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a",
   "category": "tablet",
   "brand": "Apple",
@@ -2366,7 +2311,11 @@
   "brand": "Apple",
   "name": "iPad 9",
   "aliases": [
-   "iPad 9"
+   "iPad 9",
+   "iPad 10.2 9th Gen Wi-Fi",
+   "iPad 10.2 9th Generation , , Wi-Fi",
+   "iPad 10.2 9th Generation Wi-Fi",
+   "iPad 10.2 (2021) Wi-Fi"
   ],
   "tier": "mid",
   "priceAmd": 139000,
@@ -2376,7 +2325,7 @@
   "variants": [
    {
     "ram": null,
-    "storage": null,
+    "storage": 64,
     "priceAmd": 139000
    }
   ],
@@ -2388,6 +2337,10 @@
    "display",
    "chipset",
    "battery.capacity"
+  ],
+  "colors": [
+   "Space Gray",
+   "Silver"
   ]
  },
  {
@@ -5578,7 +5531,9 @@
     "priceAmd": 1999000
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Apple Studio Display XDR 2026 Tilt-Height adjustable /MFEL4*.",
   "unsure": [
@@ -5992,7 +5947,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 22
+   "size": 22,
+   "touch": false
   },
   "variants": [
    {
@@ -6045,7 +6001,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 24
+   "size": 24,
+   "touch": false
   },
   "variants": [
    {
@@ -6071,7 +6028,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 27
+   "size": 27,
+   "touch": false
   },
   "variants": [
    {
@@ -6097,7 +6055,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 32
+   "size": 32,
+   "touch": false
   },
   "variants": [
    {
@@ -6123,7 +6082,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 32
+   "size": 32,
+   "touch": false
   },
   "variants": [
    {
@@ -6630,7 +6590,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 25
+   "size": 25,
+   "touch": false
   },
   "variants": [
    {
@@ -6779,7 +6740,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 32
+   "size": 32,
+   "touch": false
   },
   "variants": [
    {
@@ -6833,7 +6795,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 24
+   "size": 24,
+   "touch": false
   },
   "variants": [
    {
@@ -8014,48 +7977,6 @@
   ]
  },
  {
-  "id": "asus-tuf-fx608lm-bs96",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "TUF FX608LM-BS96",
-  "tier": "upper-mid",
-  "priceAmd": 875000,
-  "priceAmdMax": 875000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 16,
-   "type": "IPS",
-   "resolution": "2560x1600",
-   "refresh": 165,
-   "touch": false
-  },
-  "chipset": {
-   "name": "Intel Core Ultra 9-275HX"
-  },
-  "graphics": {
-   "name": "Nvidia Geforce RTX 5060 8GB",
-   "type": "discrete"
-  },
-  "body": {
-   "weight": 2200
-  },
-  "os": "DOS",
-  "released": "2024",
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX and Nvidia Geforce RTX 5060 8GB.",
-  "variants": [
-   {
-    "ram": 32,
-    "storage": 1024,
-    "priceAmd": 875000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
   "id": "asus-tuf-gaming-24-vg248q1b",
   "category": "monitor",
   "brand": "ASUS",
@@ -8066,7 +7987,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 24
+   "size": 24,
+   "touch": false
   },
   "variants": [
    {
@@ -8092,7 +8014,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 27
+   "size": 27,
+   "touch": false
   },
   "variants": [
    {
@@ -8118,7 +8041,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 27
+   "size": 27,
+   "touch": false
   },
   "variants": [
    {
@@ -8144,7 +8068,8 @@
   "popularity": 15,
   "accent": "#5C6470",
   "display": {
-   "size": 34
+   "size": 34,
+   "touch": false
   },
   "variants": [
    {
@@ -8370,7 +8295,9 @@
     "priceAmd": 55900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VA249HG.",
   "unsure": [
@@ -8400,7 +8327,9 @@
     "priceAmd": 119900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VA27DQSB-W.",
   "unsure": [
@@ -8425,7 +8354,8 @@
    "type": "TN",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "DisplayPort, HDMI, VGA"
@@ -8463,7 +8393,9 @@
     "priceAmd": 99000
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VG249Q3A 90LM09B0-B01170.",
   "unsure": [
@@ -8493,7 +8425,9 @@
     "priceAmd": 109900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VG279Q3A 90LM0990-B01170.",
   "unsure": [
@@ -8523,7 +8457,9 @@
     "priceAmd": 189900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VG32AQA1A 90LM07L0-B02370.",
   "unsure": [
@@ -10447,7 +10383,8 @@
    "type": "VA",
    "resolution": "1920 x 1080",
    "refresh": 60,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -10485,7 +10422,9 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VU279HFI-W.",
   "unsure": [
@@ -10515,7 +10454,9 @@
     "priceAmd": 59900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VY249HF-W.",
   "unsure": [
@@ -10545,7 +10486,9 @@
     "priceAmd": 77900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VY279HF-W 90LM06D2-B02170.",
   "unsure": [
@@ -10575,7 +10518,9 @@
     "priceAmd": 59900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VZ24EHF-W.",
   "unsure": [
@@ -10605,7 +10550,9 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VZ27EHF 90LM07B0-B01470.",
   "unsure": [
@@ -10635,7 +10582,9 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "ASUS VZ27EHF-W 90LM07B0-B02470.",
   "unsure": [
@@ -10868,48 +10817,6 @@
     "ram": 16,
     "storage": 512,
     "priceAmd": 599000
-   }
-  ],
-  "battery": {},
-  "unsure": [
-   "popularity"
-  ]
- },
- {
-  "id": "asus-zenbook-q410-evo",
-  "category": "laptop",
-  "brand": "ASUS",
-  "name": "ZenBook Q410-EVO",
-  "tier": "mid",
-  "priceAmd": 329000,
-  "priceAmdMax": 329000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "display": {
-   "size": 14,
-   "type": "OLED",
-   "resolution": "2880x1800",
-   "refresh": 120,
-   "touch": true
-  },
-  "chipset": {
-   "name": "Intel Core i5-13500H"
-  },
-  "graphics": {
-   "name": "Intel Iris Xe Graphics",
-   "type": "integrated"
-  },
-  "body": {
-   "weight": 1560
-  },
-  "os": "Windows 11",
-  "released": "2025",
-  "summaryEn": "A 14-inch laptop with Intel Core i5-13500H.",
-  "variants": [
-   {
-    "ram": 8,
-    "storage": 512,
-    "priceAmd": 329000
    }
   ],
   "battery": {},
@@ -11297,7 +11204,8 @@
    "type": "TN",
    "resolution": "3440 x 1440",
    "refresh": 60,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, Display port"
@@ -12409,7 +12317,9 @@
     "priceAmd": 98900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Dell 27'' E2723H.",
   "unsure": [
@@ -13101,7 +13011,8 @@
    "type": "TN",
    "resolution": "1600 x 900",
    "refresh": 60,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "DisplayPort, HDMI, VGA"
@@ -13460,7 +13371,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 100,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "DisplayPort, HDMI, VGA"
@@ -13493,7 +13405,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 100,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -22349,7 +22262,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 60,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -22385,7 +22299,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, Display port"
@@ -22421,7 +22336,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -22457,7 +22373,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 100,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -23844,7 +23761,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 100,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -24254,7 +24172,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 60,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -28848,7 +28767,9 @@
     "priceAmd": 69900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 24G411A-B.",
   "unsure": [
@@ -28878,7 +28799,9 @@
     "priceAmd": 89900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 24GS50F-B.",
   "unsure": [
@@ -28908,7 +28831,9 @@
     "priceAmd": 57900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 24U411A-B.",
   "unsure": [
@@ -28938,7 +28863,9 @@
     "priceAmd": 91900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 27GS50F-B.",
   "unsure": [
@@ -28968,7 +28895,9 @@
     "priceAmd": 124900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 27SR50F-W.",
   "unsure": [
@@ -28998,7 +28927,9 @@
     "priceAmd": 79900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 27U421A-B.",
   "unsure": [
@@ -29028,7 +28959,9 @@
     "priceAmd": 129900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 27U511SA-W.",
   "unsure": [
@@ -29058,7 +28991,9 @@
     "priceAmd": 119900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 29U531A-W.",
   "unsure": [
@@ -29088,7 +29023,9 @@
     "priceAmd": 159900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 32SR50F-W.",
   "unsure": [
@@ -29118,7 +29055,9 @@
     "priceAmd": 168900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 32UR500K-B.",
   "unsure": [
@@ -29148,7 +29087,9 @@
     "priceAmd": 239900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "LG 34GP63A-B.",
   "unsure": [
@@ -32130,7 +32071,9 @@
     "priceAmd": 82900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Philips 24\" USB-C 24E1N3300A/00.",
   "unsure": [
@@ -32155,7 +32098,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -32188,7 +32132,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 75,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -32887,7 +32832,9 @@
     "priceAmd": 59900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung 27D300GAU.",
   "unsure": [
@@ -37029,7 +36976,8 @@
    "type": "TN",
    "resolution": "1920 x 1080",
    "refresh": 60,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -37067,7 +37015,9 @@
     "priceAmd": 46900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS24D304GAU.",
   "unsure": [
@@ -37097,7 +37047,9 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS27BG400EUXEN.",
   "unsure": [
@@ -37127,7 +37079,9 @@
     "priceAmd": 209900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS27BG650EU.",
   "unsure": [
@@ -37157,7 +37111,9 @@
     "priceAmd": 85900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS27DG300EU.",
   "unsure": [
@@ -37187,7 +37143,9 @@
     "priceAmd": 129900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS32CG554EU.",
   "unsure": [
@@ -37217,7 +37175,9 @@
     "priceAmd": 149900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS32D700EAU.",
   "unsure": [
@@ -37247,7 +37207,9 @@
     "priceAmd": 199900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS32FM700UU.",
   "unsure": [
@@ -37277,7 +37239,9 @@
     "priceAmd": 149900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung LS34C500GAU.",
   "unsure": [
@@ -37302,7 +37266,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 60,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "Hdmi"
@@ -37394,7 +37359,9 @@
     "priceAmd": 1240000
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung Odyssey Ark 55” LS55CG97WNIXCI.",
   "unsure": [
@@ -37422,7 +37389,9 @@
     "priceAmd": 72000
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung Odyssey G3 24” S24AG304NR.",
   "unsure": [
@@ -37452,7 +37421,9 @@
     "priceAmd": 89900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung Odyssey G4 LS25BG400EIXCI.",
   "unsure": [
@@ -37482,7 +37453,9 @@
     "priceAmd": 149900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung Odyssey G5 S32CG552EU.",
   "unsure": [
@@ -38764,7 +38737,9 @@
     "priceAmd": 205900
    }
   ],
-  "display": {},
+  "display": {
+   "touch": false
+  },
   "battery": {},
   "summaryEn": "Samsung S27D402G.",
   "unsure": [
@@ -43478,7 +43453,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 60,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, VGA"
@@ -43699,7 +43675,8 @@
    "type": "IPS",
    "resolution": "2560 × 1440",
    "refresh": 120,
-   "brightness": 300
+   "brightness": 300,
+   "touch": false
   },
   "connectivity": {},
   "summaryEn": "A 27-inch IPS monitor at 120 Hz.",
@@ -43730,7 +43707,8 @@
    "type": "IPS",
    "resolution": "2560 x 1600",
    "refresh": 180,
-   "brightness": 350
+   "brightness": 350,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, Display port"
@@ -43763,7 +43741,8 @@
    "type": "IPS",
    "resolution": "1920 x 1080",
    "refresh": 180,
-   "brightness": 250
+   "brightness": 250,
+   "touch": false
   },
   "connectivity": {
    "ports": "HDMI, DisplayPort, AUX"

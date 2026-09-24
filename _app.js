@@ -34,7 +34,6 @@ const X = {
     tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
     any: 'Բոլորը', min: 'նվազ.', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
     dS: 'օ', hS: 'ժ', mS: 'ր',
-    share: 'Կիսվել', shared: 'Պատճենվեց',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
@@ -47,7 +46,7 @@ const X = {
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
     emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Լսափողեր', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
-    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին',
+    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
@@ -57,7 +56,6 @@ const X = {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
     any: 'Все', min: 'от', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
     dS: 'д', hS: 'ч', mS: 'м',
-    share: 'Поделиться', shared: 'Скопировано',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
@@ -73,7 +71,7 @@ const X = {
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
     emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники TWS', headphones: 'Полноразмерные наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
-    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена',
+    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
@@ -83,7 +81,6 @@ const X = {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
     any: 'All', min: 'from', newBadge: 'New', view: 'View', allFilters: 'All filters',
     dS: 'd', hS: 'h', mS: 'm',
-    share: 'Share', shared: 'Link copied',
     unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
@@ -96,7 +93,7 @@ const X = {
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
     emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
-    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price',
+    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
@@ -105,10 +102,14 @@ const X = {
 };
 
 /* ================= state ================= */
-const LS = 'mycatalog.v2';
+// Saved settings - language, theme, filters, the compare list. The key carried the project's
+// working name until the site became Better; a returning visitor's settings are still under the
+// old one, so it is READ when the new key is empty and never written again. Renaming it without
+// that would have reset everyone's language and emptied their compare list on the next visit.
+const LS = 'better.v2';
 const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], g5: false, nfc: false, anc: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
-try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); } catch (e) { }
+try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
 // exists, or an array that came back as a string would all render as a broken page.
 for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops']) if (!Array.isArray(st[k])) st[k] = [];
@@ -441,7 +442,7 @@ const ASK = {
   headphones: ['anc', 'life', 'water', 'year'],
   speaker:    ['life', 'water', 'year'],
   appliance:  ['year'],
-  monitor:    ['scr', 'hz', 'panel', 'year'],
+  monitor:    ['scr', 'hz', 'touch', 'panel', 'year'],
   component:  ['year'],
   // A television is asked the same two questions a monitor is: how big, and how fast.
   tv:         ['scr', 'hz', 'panel', 'os', 'year'],
@@ -632,11 +633,6 @@ const unsureRow = (p, key) => {
   return u.includes(f) || u.includes(f.split('.')[0]);
 };
 
-// What the address bar holds is #/p/<id>, and a fragment never reaches a server: paste one into
-// Telegram and no scraper can know which product it names, so no preview comes back. build.mjs
-// writes a real page per product at p/<id>/ carrying its title, price and picture. This is the
-// url the share button hands out - the same product, previewable.
-const shareUrl = id => location.href.split('#')[0].replace(/index\.html$/, '') + 'p/' + id + '/';
 
 /* ================= chrome ================= */
 const ICON_CHEV = '<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
@@ -664,7 +660,7 @@ function paintChrome() {
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}`
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`;
   paintCmpCount();
-  $('#foot').innerHTML = `<b>Impulse</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
+  $('#foot').innerHTML = `<b>Better</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
 }
@@ -1160,17 +1156,32 @@ function pager(total) {
   const want = new Set([1, last, st.page, st.page - 1, st.page + 1]);
   if (st.page <= 3) { want.add(2); want.add(3); }
   if (st.page >= last - 2) { want.add(last - 1); want.add(last - 2); }
-  const nums = [...want].filter(n => n >= 1 && n <= last).sort((a, b) => a - b);
-  let out = '', prev = 0;
-  for (const n of nums) {
-    if (prev && n - prev > 1) out += `<span class="gap" aria-hidden="true">…</span>`;
-    out += `<button class="pg${n === st.page ? ' on' : ''}" data-page="${n}"${n === st.page ? ' aria-current="page"' : ''}>${n}</button>`;
-    prev = n;
-  }
+  // Three versions of the row, and CSS shows the one that fits (see .pager in _shell.html). Built
+  // separately rather than by hiding some numbers of one row, because each needs its own
+  // ellipses: hiding the 2 out of "1 2 3" leaves "1 3", which reads as consecutive pages.
+  //   pf  full    <- 1 ... 4 5 6 ... 11 ->   wide screens
+  //   ps  slim    <- 1 ... 5 ... 11 ->       phones: a middle page of the full row is ~376 px of
+  //                                          44 px touch targets, wider than a 375 px phone
+  //   now         <- 5 / 11 ->               the 280 px cover screen of a folding phone
+  const row = (set, cls) => {
+    const nums = [...set].filter(n => n >= 1 && n <= last).sort((a, b) => a - b);
+    let html = '', prev = 0;
+    for (const n of nums) {
+      if (prev && n - prev > 1) html += `<span class="gap ${cls}" aria-hidden="true">…</span>`;
+      html += `<button class="pg ${cls}${n === st.page ? ' on' : ''}" data-page="${n}"${n === st.page ? ' aria-current="page"' : ''}>${n}</button>`;
+      prev = n;
+    }
+    return html;
+  };
+  const out = row(want, 'pf') + row(new Set([1, st.page, last]), 'ps')
+    + `<span class="pgnow">${st.page} / ${last}</span>`;
+  // "step", not "nav": .nav is the site navigation, and on a phone it is told to take a whole row
+  // of its own (flex 1 1 100%, order 4). The arrows shared the class, so each one was blown up
+  // into a full-width empty pill and shoved below the page numbers.
   return `<nav class="pager" aria-label="${esc(t('catalog.title'))}">
-    <button class="pg nav" data-page="${st.page - 1}"${st.page === 1 ? ' disabled' : ''} aria-label="←">←</button>
+    <button class="pg step" data-page="${st.page - 1}"${st.page === 1 ? ' disabled' : ''} aria-label="${esc(x('pgPrev'))}"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13 8H3M7 4 3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     ${out}
-    <button class="pg nav" data-page="${st.page + 1}"${st.page === last ? ' disabled' : ''} aria-label="→">→</button></nav>`;
+    <button class="pg step" data-page="${st.page + 1}"${st.page === last ? ' disabled' : ''} aria-label="${esc(x('pgNext'))}"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></nav>`;
 }
 
 // Every path that changes what is being listed must send you back to page 1 - otherwise a
@@ -1487,6 +1498,187 @@ function railHTML(offs) {
     <div class="save">${esc(x('saveUpTo'))} <b class="num">${money(hi - lo)} ֏</b></div>`;
 }
 
+// Two models to put beside this one, in the order the owner asked for: the newer model first, then
+// the previous one. The newest model has no newer, so it gets its previous model and its stronger
+// sibling instead - a Pro Max beside a Pro. Generated for every Apple and Samsung line whose
+// generations are clear; a product whose place in its line is uncertain is left out, not guessed.
+const COMPARE_WITH = {
+  'apple-airpods-4': [['apple-airpods-5', 'newer'], ['apple-tws-bluetooth-headsets-3rd-generation', 'older']],
+  'apple-airpods-4-anc': [['apple-airpods-pro-2', 'stronger'], ['apple-airpods-4', 'alternative']],
+  'apple-airpods-5': [['apple-airpods-pro-3', 'stronger'], ['apple-airpods-4', 'older']],
+  'apple-airpods-pro-2': [['apple-airpods-pro-3', 'newer'], ['apple-airpods-4-anc', 'alternative']],
+  'apple-airpods-pro-3': [['apple-airpods-5', 'alternative'], ['apple-airpods-pro-2', 'older']],
+  'apple-earpods-lightning': [['apple-earpods-usb-c', 'newer'], ['apple-airpods-5', 'stronger']],
+  'apple-earpods-usb-c': [['apple-earpods-lightning', 'older'], ['apple-airpods-5', 'stronger']],
+  'apple-homepod-2': [['apple-homepod-mini', 'alternative']],
+  'apple-homepod-mini': [['apple-homepod-2', 'stronger']],
+  'apple-homepod-mini-mj2e3ll-a': [['apple-homepod-2', 'stronger']],
+  'apple-imac-24-m4': [['apple-mac-mini-m4', 'alternative']],
+  'apple-ipad-10-9-wi-fi-a14-mpqa3rk-a': [['apple-ipad-a16', 'newer'], ['apple-ipad-9', 'older']],
+  'apple-ipad-10-a16-wi-fi-2025': [['apple-ipad-10-9-wi-fi-a14-mpqa3rk-a', 'older'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-11': [['apple-ipad-10-9-wi-fi-a14-mpqa3rk-a', 'older'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a': [['apple-ipad-pro-11-m4', 'newer'], ['apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a', 'stronger']],
+  'apple-ipad-9': [['apple-ipad-10-9-wi-fi-a14-mpqa3rk-a', 'newer'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-a16': [['apple-ipad-10-9-wi-fi-a14-mpqa3rk-a', 'older'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-air-11-m3': [['apple-ipad-air-11-m4', 'newer'], ['apple-ipad-air-11-wi-fi-2024', 'older']],
+  'apple-ipad-air-11-m4': [['apple-ipad-air-13-m4', 'stronger'], ['apple-ipad-air-11-m3', 'older']],
+  'apple-ipad-air-11-wi-fi-2024': [['apple-ipad-air-11-m3', 'newer'], ['apple-ipad-air-5-wi-fi-plus-cellular-2022', 'older']],
+  'apple-ipad-air-11-wi-fi-plus-cellular-2024': [['apple-ipad-air-11-m3', 'newer'], ['apple-ipad-air-5-wi-fi-plus-cellular-2022', 'older']],
+  'apple-ipad-air-13-m3': [['apple-ipad-air-13-m4', 'newer'], ['apple-ipad-air-13-wi-fi-2024', 'older']],
+  'apple-ipad-air-13-m4': [['apple-ipad-air-11-m4', 'alternative'], ['apple-ipad-air-13-m3', 'older']],
+  'apple-ipad-air-13-wi-fi-2024': [['apple-ipad-air-13-m3', 'newer'], ['apple-ipad-air-11-wi-fi-2024', 'alternative']],
+  'apple-ipad-air-13-wi-fi-plus-cellular-2024': [['apple-ipad-air-13-m3', 'newer'], ['apple-ipad-air-11-wi-fi-2024', 'alternative']],
+  'apple-ipad-air-5-wi-fi-plus-cellular-2022': [['apple-ipad-air-11-wi-fi-2024', 'newer'], ['apple-ipad-air-13-wi-fi-2024', 'stronger']],
+  'apple-ipad-mini-6': [['apple-ipad-mini-7', 'newer'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-mini-7': [['apple-ipad-mini-6', 'older'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-mini-7-wifi': [['apple-ipad-mini-6', 'older'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-ipad-pro-11-m4': [['apple-ipad-pro-11-m5', 'newer'], ['apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a', 'older']],
+  'apple-ipad-pro-11-m5': [['apple-ipad-pro-13-m5', 'stronger'], ['apple-ipad-pro-11-m4', 'older']],
+  'apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3': [['apple-ipad-pro-13-m4', 'newer'], ['apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a', 'alternative']],
+  'apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a': [['apple-ipad-pro-13-m4', 'newer'], ['apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a', 'alternative']],
+  'apple-ipad-pro-12-9-m2-wifi-silver-mnxq3rk-a': [['apple-ipad-pro-13-m4', 'newer'], ['apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a', 'alternative']],
+  'apple-ipad-pro-13-m4': [['apple-ipad-pro-13-m5', 'newer'], ['apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a', 'older']],
+  'apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024': [['apple-ipad-pro-13-m5', 'newer'], ['apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a', 'older']],
+  'apple-ipad-pro-13-m5': [['apple-ipad-pro-11-m5', 'alternative'], ['apple-ipad-pro-13-m4', 'older']],
+  'apple-ipad-pro-13-wi-fi-2024': [['apple-ipad-pro-13-m5', 'newer'], ['apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a', 'older']],
+  'apple-ipad-pro-13-wi-fi-plus-cellular-2024': [['apple-ipad-pro-13-m5', 'newer'], ['apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a', 'older']],
+  'apple-ipad-wi-fi-11': [['apple-ipad-10-9-wi-fi-a14-mpqa3rk-a', 'older'], ['apple-ipad-air-11-m4', 'stronger']],
+  'apple-iphone-15': [['apple-iphone-16', 'newer'], ['apple-iphone-15-pro', 'stronger']],
+  'apple-iphone-15-pro': [['apple-iphone-16-pro', 'newer'], ['apple-iphone-15', 'alternative']],
+  'apple-iphone-16': [['apple-iphone-17', 'newer'], ['apple-iphone-15', 'older']],
+  'apple-iphone-16-plus': [['apple-iphone-air', 'newer'], ['apple-iphone-16-pro', 'stronger']],
+  'apple-iphone-16-pro': [['apple-iphone-17-pro', 'newer'], ['apple-iphone-15-pro', 'older']],
+  'apple-iphone-16-pro-max': [['apple-iphone-17-pro-max', 'newer'], ['apple-iphone-16-pro', 'alternative']],
+  'apple-iphone-16e': [['apple-iphone-17e', 'newer'], ['apple-iphone-16', 'stronger']],
+  'apple-iphone-17': [['apple-iphone-17-pro', 'stronger'], ['apple-iphone-16', 'older']],
+  'apple-iphone-17-pro': [['apple-iphone-18-pro', 'newer'], ['apple-iphone-16-pro', 'older']],
+  'apple-iphone-17-pro-max': [['apple-iphone-18-pro-max', 'newer'], ['apple-iphone-16-pro-max', 'older']],
+  'apple-iphone-17e': [['apple-iphone-17', 'stronger'], ['apple-iphone-16e', 'older']],
+  'apple-iphone-18-pro': [['apple-iphone-18-pro-max', 'stronger'], ['apple-iphone-17-pro', 'older']],
+  'apple-iphone-18-pro-max': [['apple-iphone-18-pro', 'alternative'], ['apple-iphone-17-pro-max', 'older']],
+  'apple-iphone-air': [['apple-iphone-17-pro', 'stronger'], ['apple-iphone-16-plus', 'older']],
+  'apple-mac-mini-m4': [['apple-imac-24-m4', 'stronger']],
+  'apple-macbook-air-13-m1-2024': [['apple-macbook-air-13-m4', 'newer'], ['apple-macbook-pro-14-m5', 'stronger']],
+  'apple-macbook-air-13-m4': [['apple-macbook-air-13-m5', 'newer'], ['apple-macbook-air-13-m1-2024', 'older']],
+  'apple-macbook-air-13-m5': [['apple-macbook-neo-13', 'alternative'], ['apple-macbook-air-13-m4', 'older']],
+  'apple-macbook-air-13-mgn63-m1-2020': [['apple-macbook-air-13-m4', 'newer'], ['apple-macbook-pro-14-m5', 'stronger']],
+  'apple-macbook-air-13-mgn93-m1-2020': [['apple-macbook-air-13-m4', 'newer'], ['apple-macbook-pro-14-m5', 'stronger']],
+  'apple-macbook-air-13-mgnd3-m1-2020': [['apple-macbook-air-13-m4', 'newer'], ['apple-macbook-pro-14-m5', 'stronger']],
+  'apple-macbook-air-mgn63-late-2020': [['apple-macbook-air-13-m4', 'newer'], ['apple-macbook-pro-14-m5', 'stronger']],
+  'apple-macbook-air-mgn93-late-2020': [['apple-macbook-air-13-m4', 'newer'], ['apple-macbook-pro-14-m5', 'stronger']],
+  'apple-macbook-neo-13': [['apple-macbook-air-13-m5', 'stronger'], ['apple-macbook-air-13-m4', 'stronger']],
+  'apple-macbook-pro-14-2023-mtl73': [['apple-macbook-pro-14-m4', 'newer'], ['apple-macbook-pro-14-mrx33-2023', 'stronger']],
+  'apple-macbook-pro-14-m4': [['apple-macbook-pro-14-m5', 'newer'], ['apple-macbook-pro-14-2023-mtl73', 'older']],
+  'apple-macbook-pro-14-m4-max': [['apple-macbook-pro-14-m5-max', 'newer'], ['apple-macbook-pro-14-m4-pro', 'alternative']],
+  'apple-macbook-pro-14-m4-pro': [['apple-macbook-pro-14-m5-pro', 'newer'], ['apple-macbook-pro-14-mrx33-2023', 'older']],
+  'apple-macbook-pro-14-m5': [['apple-macbook-pro-14-m5-pro', 'stronger'], ['apple-macbook-pro-14-m4', 'older']],
+  'apple-macbook-pro-14-m5-max': [['apple-macbook-pro-14-m5-pro', 'alternative'], ['apple-macbook-pro-14-m4-max', 'older']],
+  'apple-macbook-pro-14-m5-pro': [['apple-macbook-pro-14-m5-max', 'stronger'], ['apple-macbook-pro-14-m4-pro', 'older']],
+  'apple-macbook-pro-14-mr7j3-2023': [['apple-macbook-pro-14-m4', 'newer'], ['apple-macbook-pro-14-mrx33-2023', 'stronger']],
+  'apple-macbook-pro-14-mrx33-2023': [['apple-macbook-pro-14-m4-pro', 'newer'], ['apple-macbook-pro-14-2023-mtl73', 'alternative']],
+  'apple-macbook-pro-14-mrx43-2023': [['apple-macbook-pro-14-m4-pro', 'newer'], ['apple-macbook-pro-14-2023-mtl73', 'alternative']],
+  'apple-macbook-pro-16-mrw23': [['apple-macbook-pro-14-m4-pro', 'newer'], ['apple-macbook-pro-14-2023-mtl73', 'alternative']],
+  'apple-macbook-pro-16-mrw63-2023': [['apple-macbook-pro-14-m4-pro', 'newer'], ['apple-macbook-pro-14-2023-mtl73', 'alternative']],
+  'apple-tws-bluetooth-headsets-3rd-generation': [['apple-airpods-4', 'newer'], ['apple-airpods-4-anc', 'stronger']],
+  'apple-ultra-2': [['apple-watch-ultra-3', 'newer'], ['apple-watch-series-10', 'alternative']],
+  'apple-watch-s10-42mm-with-sport-band': [['apple-watch-series-11', 'newer'], ['apple-ultra-2', 'stronger']],
+  'apple-watch-se-3': [['apple-watch-series-11', 'stronger'], ['apple-watch-ultra-3', 'stronger']],
+  'apple-watch-series-10': [['apple-watch-series-11', 'newer'], ['apple-ultra-2', 'stronger']],
+  'apple-watch-series-11': [['apple-watch-series-12-gps-42mm', 'newer'], ['apple-watch-series-10', 'older']],
+  'apple-watch-series-12-gps-42mm': [['apple-watch-ultra-4-gps-plus-cellular-plus-band', 'stronger'], ['apple-watch-series-11', 'older']],
+  'apple-watch-ultra-3': [['apple-watch-ultra-4-gps-plus-cellular-plus-band', 'newer'], ['apple-ultra-2', 'older']],
+  'apple-watch-ultra-4-gps-plus-cellular-plus-band': [['apple-watch-series-12-gps-42mm', 'alternative'], ['apple-watch-ultra-3', 'older']],
+  'samsung-a15': [['samsung-galaxy-a16', 'newer'], ['samsung-a25', 'stronger']],
+  'samsung-a25': [['samsung-galaxy-a26', 'newer'], ['samsung-galaxy-a35', 'stronger']],
+  'samsung-galaxy-2': [['samsung-galaxy-3', 'newer'], ['samsung-galaxy-buds-live', 'older']],
+  'samsung-galaxy-2-pro': [['samsung-galaxy-buds-3-pro', 'newer'], ['samsung-galaxy-buds-pro-r190', 'older']],
+  'samsung-galaxy-3': [['samsung-galaxy-buds-4', 'newer'], ['samsung-galaxy-2', 'older']],
+  'samsung-galaxy-3-fe': [['samsung-galaxy-3', 'stronger'], ['samsung-galaxy-buds-fe', 'older']],
+  'samsung-galaxy-6-classic-43mm-r950': [['samsung-galaxy-watch-8-classic', 'newer'], ['samsung-galaxy-7-ultra-47mm-sm-l705f', 'stronger']],
+  'samsung-galaxy-7-ultra-47mm-sm-l705f': [['samsung-galaxy-ultra-47mm-2025', 'newer'], ['samsung-galaxy-watch-7', 'alternative']],
+  'samsung-galaxy-9-44mm': [['samsung-galaxy-watch-ultra-2', 'stronger'], ['samsung-galaxy-watch-8', 'older']],
+  'samsung-galaxy-a06': [['samsung-galaxy-a07', 'newer'], ['samsung-galaxy-a16', 'stronger']],
+  'samsung-galaxy-a07': [['samsung-galaxy-a08', 'newer'], ['samsung-galaxy-a06', 'older']],
+  'samsung-galaxy-a07s': [['samsung-galaxy-a08', 'newer'], ['samsung-galaxy-a06', 'older']],
+  'samsung-galaxy-a08': [['samsung-galaxy-a07', 'older'], ['samsung-galaxy-a17', 'stronger']],
+  'samsung-galaxy-a16': [['samsung-galaxy-a17', 'newer'], ['samsung-a15', 'older']],
+  'samsung-galaxy-a17': [['samsung-galaxy-a27', 'stronger'], ['samsung-galaxy-a16', 'older']],
+  'samsung-galaxy-a26': [['samsung-galaxy-a27', 'newer'], ['samsung-a25', 'older']],
+  'samsung-galaxy-a27': [['samsung-galaxy-a37', 'stronger'], ['samsung-galaxy-a26', 'older']],
+  'samsung-galaxy-a34': [['samsung-galaxy-a35', 'newer'], ['samsung-galaxy-a55', 'stronger']],
+  'samsung-galaxy-a35': [['samsung-galaxy-a36', 'newer'], ['samsung-galaxy-a34', 'older']],
+  'samsung-galaxy-a36': [['samsung-galaxy-a37', 'newer'], ['samsung-galaxy-a35', 'older']],
+  'samsung-galaxy-a37': [['samsung-galaxy-a57', 'stronger'], ['samsung-galaxy-a36', 'older']],
+  'samsung-galaxy-a55': [['samsung-galaxy-a56', 'newer'], ['samsung-galaxy-a35', 'alternative']],
+  'samsung-galaxy-a56': [['samsung-galaxy-a57', 'newer'], ['samsung-galaxy-a55', 'older']],
+  'samsung-galaxy-a57': [['samsung-galaxy-a37', 'alternative'], ['samsung-galaxy-a56', 'older']],
+  'samsung-galaxy-active-2': [['samsung-galaxy-watch-3-41mm', 'newer'], ['samsung-galaxy-6-classic-43mm-r950', 'stronger']],
+  'samsung-galaxy-book-4-np750xgk-ks2us': [['samsung-galaxy-book-6-np760xjg', 'newer']],
+  'samsung-galaxy-book-6-np760xjg': [['samsung-galaxy-book-4-np750xgk-ks2us', 'older']],
+  'samsung-galaxy-buds-3-pro': [['samsung-galaxy-buds-4-pro', 'newer'], ['samsung-galaxy-2-pro', 'older']],
+  'samsung-galaxy-buds-4': [['samsung-galaxy-buds-4-pro', 'stronger'], ['samsung-galaxy-3', 'older']],
+  'samsung-galaxy-buds-4-pro': [['samsung-galaxy-buds-4', 'alternative'], ['samsung-galaxy-buds-3-pro', 'older']],
+  'samsung-galaxy-buds-core': [['samsung-galaxy-3-fe', 'stronger'], ['samsung-galaxy-3', 'stronger']],
+  'samsung-galaxy-buds-fe': [['samsung-galaxy-3-fe', 'newer'], ['samsung-galaxy-2', 'stronger']],
+  'samsung-galaxy-buds-live': [['samsung-galaxy-2', 'newer'], ['samsung-galaxy-buds-pro-r190', 'stronger']],
+  'samsung-galaxy-buds-pro-r190': [['samsung-galaxy-2-pro', 'newer'], ['samsung-galaxy-buds-live', 'alternative']],
+  'samsung-galaxy-fe': [['samsung-galaxy-watch-7', 'stronger'], ['samsung-galaxy-watch-fit-3', 'alternative']],
+  'samsung-galaxy-s25': [['samsung-galaxy-s26', 'newer'], ['samsung-galaxy-s25-plus', 'stronger']],
+  'samsung-galaxy-s25-edge': [['samsung-galaxy-s26-plus', 'newer'], ['samsung-galaxy-s25-ultra', 'stronger']],
+  'samsung-galaxy-s25-fe': [['samsung-galaxy-s26-fe', 'newer'], ['samsung-galaxy-s25', 'stronger']],
+  'samsung-galaxy-s25-plus': [['samsung-galaxy-s26-plus', 'newer'], ['samsung-galaxy-s25-ultra', 'stronger']],
+  'samsung-galaxy-s25-ultra': [['samsung-galaxy-s26-ultra', 'newer'], ['samsung-galaxy-s25-plus', 'alternative']],
+  'samsung-galaxy-s26': [['samsung-galaxy-s26-plus', 'stronger'], ['samsung-galaxy-s25', 'older']],
+  'samsung-galaxy-s26-fe': [['samsung-galaxy-s26', 'stronger'], ['samsung-galaxy-s25-fe', 'older']],
+  'samsung-galaxy-s26-plus': [['samsung-galaxy-s26-ultra', 'stronger'], ['samsung-galaxy-s25-plus', 'older']],
+  'samsung-galaxy-s26-ultra': [['samsung-galaxy-s26-plus', 'alternative'], ['samsung-galaxy-s25-ultra', 'older']],
+  'samsung-galaxy-tab-a11': [['samsung-galaxy-tab-a11-plus', 'stronger'], ['samsung-galaxy-tab-a9-x110', 'older']],
+  'samsung-galaxy-tab-a11-plus': [['samsung-galaxy-tab-a11', 'alternative'], ['samsung-galaxy-tab-a9plus-x210', 'older']],
+  'samsung-galaxy-tab-a8-10-5-x200': [['samsung-galaxy-tab-a9-x110', 'newer'], ['samsung-galaxy-tab-a9plus-x210', 'stronger']],
+  'samsung-galaxy-tab-a8-10-5-x205': [['samsung-galaxy-tab-a9-x110', 'newer'], ['samsung-galaxy-tab-a9plus-x210', 'stronger']],
+  'samsung-galaxy-tab-a9-x110': [['samsung-galaxy-tab-a11', 'newer'], ['samsung-galaxy-tab-a8-10-5-x200', 'older']],
+  'samsung-galaxy-tab-a9-x115': [['samsung-galaxy-tab-a11', 'newer'], ['samsung-galaxy-tab-a8-10-5-x200', 'older']],
+  'samsung-galaxy-tab-a9plus-x210': [['samsung-galaxy-tab-a11-plus', 'newer'], ['samsung-galaxy-tab-a9-x110', 'alternative']],
+  'samsung-galaxy-tab-a9plus-x216': [['samsung-galaxy-tab-a11-plus', 'newer'], ['samsung-galaxy-tab-a9-x110', 'alternative']],
+  'samsung-galaxy-tab-s10-fe': [['samsung-galaxy-tab-s10-ultra', 'stronger'], ['samsung-galaxy-tab-s9-fe-x510', 'older']],
+  'samsung-galaxy-tab-s10-ultra': [['samsung-galaxy-tab-s11-ultra', 'newer'], ['samsung-galaxy-tab-s9-ultra', 'older']],
+  'samsung-galaxy-tab-s11-ultra': [['samsung-galaxy-tab-s10-ultra', 'older'], ['samsung-galaxy-tab-s10-fe', 'older']],
+  'samsung-galaxy-tab-s8': [['samsung-galaxy-tab-s9', 'newer'], ['samsung-galaxy-tab-s8-plus', 'stronger']],
+  'samsung-galaxy-tab-s8-plus': [['samsung-galaxy-tab-s9-plus', 'newer'], ['samsung-galaxy-tab-s8', 'alternative']],
+  'samsung-galaxy-tab-s9': [['samsung-galaxy-tab-s9-plus', 'stronger'], ['samsung-galaxy-tab-s8', 'older']],
+  'samsung-galaxy-tab-s9-fe-x510': [['samsung-galaxy-tab-s10-fe', 'newer'], ['samsung-galaxy-tab-s9', 'stronger']],
+  'samsung-galaxy-tab-s9-fe-x516': [['samsung-galaxy-tab-s10-fe', 'newer'], ['samsung-galaxy-tab-s9', 'stronger']],
+  'samsung-galaxy-tab-s9-plus': [['samsung-galaxy-tab-s9-ultra', 'stronger'], ['samsung-galaxy-tab-s8-plus', 'older']],
+  'samsung-galaxy-tab-s9-ultra': [['samsung-galaxy-tab-s10-ultra', 'newer'], ['samsung-galaxy-tab-s9-plus', 'alternative']],
+  'samsung-galaxy-ultra-47mm-2024': [['samsung-galaxy-ultra-47mm-2025', 'newer'], ['samsung-galaxy-watch-7', 'alternative']],
+  'samsung-galaxy-ultra-47mm-2025': [['samsung-galaxy-watch-ultra-2', 'newer'], ['samsung-galaxy-7-ultra-47mm-sm-l705f', 'older']],
+  'samsung-galaxy-watch-3-41mm': [['samsung-galaxy-watch4-40-mm', 'newer'], ['samsung-galaxy-active-2', 'older']],
+  'samsung-galaxy-watch-7': [['samsung-galaxy-watch-8', 'newer'], ['samsung-galaxy-watch4-40-mm', 'older']],
+  'samsung-galaxy-watch-8': [['samsung-galaxy-9-44mm', 'newer'], ['samsung-galaxy-watch-7', 'older']],
+  'samsung-galaxy-watch-8-classic': [['samsung-galaxy-ultra-47mm-2025', 'stronger'], ['samsung-galaxy-6-classic-43mm-r950', 'older']],
+  'samsung-galaxy-watch-fit-3': [['samsung-galaxy-fe', 'stronger'], ['samsung-galaxy-watch-7', 'stronger']],
+  'samsung-galaxy-watch-ultra-2': [['samsung-galaxy-9-44mm', 'alternative'], ['samsung-galaxy-ultra-47mm-2025', 'older']],
+  'samsung-galaxy-watch-ultra-47mm-lte': [['samsung-galaxy-ultra-47mm-2025', 'newer'], ['samsung-galaxy-watch-7', 'alternative']],
+  'samsung-galaxy-watch4-40-mm': [['samsung-galaxy-watch-7', 'newer'], ['samsung-galaxy-watch-3-41mm', 'older']],
+  'samsung-galaxy-z-flip-7': [['samsung-galaxy-z-flip-8', 'newer'], ['samsung-galaxy-z-flip-7-fe', 'alternative']],
+  'samsung-galaxy-z-flip-7-fe': [['samsung-galaxy-z-flip-7', 'stronger'], ['samsung-galaxy-z-flip-8', 'stronger']],
+  'samsung-galaxy-z-flip-8': [['samsung-galaxy-z-flip-7', 'older'], ['samsung-galaxy-z-fold-8', 'stronger']],
+  'samsung-galaxy-z-fold-7': [['samsung-galaxy-z-fold-8', 'newer'], ['samsung-galaxy-z-fold-8-ultra', 'stronger']],
+  'samsung-galaxy-z-fold-8': [['samsung-galaxy-z-fold-8-ultra', 'stronger'], ['samsung-galaxy-z-fold-7', 'older']],
+  'samsung-galaxy-z-fold-8-ultra': [['samsung-galaxy-z-fold-8', 'alternative'], ['samsung-galaxy-z-fold-7', 'older']],
+};
+const CW_ROLE = { newer: 'cwNewer', older: 'cwOlder', stronger: 'cwStronger', alternative: 'cwAlt' };
+function compareWithHTML(p) {
+  const pairs = (COMPARE_WITH[p.id] || []).filter(([id]) => byId(id));
+  if (!pairs.length) return '';
+  const card = ([id, role]) => {
+    const q = byId(id), lo = hasReal(q) ? bestOf(q) : null;
+    return `<a class="cw" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">
+      <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" decoding="async">
+      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}</span></a>`;
+  };
+  return `<section class="cwith"><h3>${esc(x('cwTitle'))}</h3><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
+}
 function detailView(p) {
   initSel(p);
   loadLazy();
@@ -1582,10 +1774,10 @@ function detailView(p) {
             ${railHTML(offs)}
           </div>
           <div class="pcta">
-            ${offs.length ? `<a class="btn" href="#buy">${esc(x('offersTitle'))}</a>` : ''}
+            ${offs.length ? `<a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>` : ''}
             <button class="btn${offs.length ? ' ghost' : ''}" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
-            <button class="btn ghost" data-share="${esc(p.id)}">${esc(x('share'))}</button>
           </div>
+          ${compareWithHTML(p)}
         </div>
       </div>
     </div>
@@ -1684,9 +1876,14 @@ function constructView() {
         + `</div></section>`;
     }
     // what does not vary is stated once rather than asked
+    // "Same across this category" is a claim about EVERY product in it, so every one has to state
+    // the value. Counting only the products that said something announced "Touchscreen: Yes" over
+    // 78 monitors on the strength of the 3 that are touchscreens - the 75 silent ones were dropped
+    // from the count, and the only value left standing was the rare one.
     const one = (get, lbl, fmt) => {
-      const v = [...new Set(pool.map(get).filter(x => x != null && x !== ''))];
-      if (v.length === 1) fixed.push(t(lbl) + ': ' + fmt(v[0]));
+      const all = pool.map(get), known = all.filter(x => x != null && x !== '');
+      const v = [...new Set(known)];
+      if (v.length === 1 && known.length === all.length) fixed.push(t(lbl) + ': ' + fmt(v[0]));
     };
     one(p => p.display && p.display.touch, 'f.touch', v => v ? t('common.yes') : t('common.no'));
     one(p => p.graphics && p.graphics.type, 'f.graphics', v => tr(v, st.lang));
@@ -2032,25 +2229,25 @@ function render(keepScroll) {
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');
-  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — Impulse'; window.scrollTo(0, keepScroll ? y : 0); }
+  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — Better'; window.scrollTo(0, keepScroll ? y : 0); }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
     const y = window.scrollY;
     main.innerHTML = offersView(byId(mo[1]));
     document.title = x('allOffers') + ' — ' + fullName(byId(mo[1]));
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
-  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — Impulse'; window.scrollTo(0, 0); }
-  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — Impulse'; window.scrollTo(0, 0); }
-  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — Impulse'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
-  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — Impulse'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — Better'; window.scrollTo(0, 0); }
+  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — Better'; window.scrollTo(0, 0); }
+  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — Better'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
+  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — Better'; window.scrollTo(0, 0); }
   else if (h === '/search') {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — Impulse';
+    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — Better';
     window.scrollTo(0, keepScroll ? window.scrollY : 0);
   }
   else {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'Impulse';
+    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'Better';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
     // to the front page landed ~1480px past where you left, while a category page was exact.
@@ -2170,8 +2367,12 @@ document.addEventListener('click', e => {
   }
   // construct page: category card, a question chip, a brand chip
   const cc = e.target.closest('[data-ccat]');
-  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false });
-    save(); $('#main').innerHTML = constructView(); return; }
+  // Straight to the products, filters open. This used to step into a questionnaire - screen size,
+  // then brand, then a "Show 78" button - so choosing a section showed nothing until three more
+  // decisions were made. The owner wants the whole section at once, with the filters already out
+  // for whoever does want to narrow it.
+  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, page: 1 });
+    st.fopen = true; save(); location.hash = '#/c/' + st.cat; return; }
   const cq = e.target.closest('[data-cq]');
   if (cq) { const k = cq.dataset.cq, v = cq.dataset.cqv;
     if (k === 'scr') st.scrs = st.scrs.includes(v) ? st.scrs.filter(z => z !== v) : [...st.scrs, v];
@@ -2212,19 +2413,8 @@ document.addEventListener('click', e => {
     if (toggleCmp(id) && wasIn && location.hash === '#/compare') render();
     return;
   }
-  const sh = e.target.closest('[data-share]');
-  if (sh) {
-    const id = sh.dataset.share, url = shareUrl(id), nm = fullName(byId(id));
-    // navigator.share opens the phone's own sheet, which is how a link actually gets into
-    // Telegram or WhatsApp. Everywhere else, and if the sheet is dismissed, copy it instead.
-    const copy = () => navigator.clipboard?.writeText(url).then(() => {
-      const was = sh.textContent;
-      sh.textContent = x('shared');
-      setTimeout(() => { sh.textContent = was; }, 1600);
-    }, () => { });
-    if (navigator.share) navigator.share({ title: nm, url }).catch(copy); else copy();
-    return;
-  }
+  const cw = e.target.closest('[data-cw]');
+  if (cw) { st.cmp = cw.dataset.cw.split('|'); save(); return; }
   const cb = e.target.closest('[data-cmp-btn]');
   if (cb) {
     const id = cb.dataset.cmpBtn;

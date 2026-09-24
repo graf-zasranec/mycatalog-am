@@ -257,13 +257,13 @@ const offerOf = p => {
 const SEO = {
   url: SITE,
   img: 'images/cut/' + (phones.find(p => fs.existsSync(`${CUT}/${p.id}__main.webp`)) || phones[0]).id + '__main.webp',
-  title: `Impulse — ${phones.length} սարքի գներ Հայաստանի խանութներում`,
+  title: `Better — ${phones.length} սարքի գներ Հայաստանի խանութներում`,
   desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
       + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
   ld: {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Impulse',
+    name: 'Better',
     numberOfItems: phones.length,
     itemListElement: phones.map((p, i) => ({
       '@type': 'ListItem',
@@ -296,7 +296,7 @@ const COUNTER = !AN ? { tag: '', script: [], connect: [], img: [] }
   : (() => { throw new Error('data/analytics.json: unknown provider ' + AN.provider); })();
 if (AN) console.log(`visitor counter: ${AN.provider}`);
 
-const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
+const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
 
 // GitHub Pages serves no custom headers, so the policy has to travel in the document. Both
@@ -319,7 +319,7 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="description" content="${SEO.desc}">
 <link rel="canonical" href="${SEO.url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Impulse">
+<meta property="og:site_name" content="Better">
 <meta property="og:locale" content="hy_AM">
 <meta property="og:locale:alternate" content="ru_RU">
 <meta property="og:locale:alternate" content="en_US">
@@ -346,7 +346,7 @@ const HEAD_CLOSE = `</head><body>
 // the real one in. _app.js overwrites document.title per route, so this is what a crawler and
 // the first paint see, and it is the line a search result prints.
 function seoTitle(shell) {
-  return shell.replace('<title>Impulse</title>', `<title>${SEO.title}</title>`);
+  return shell.replace('<title>Better</title>', `<title>${SEO.title}</title>`);
 }
 
 function splitShell(shell) {
@@ -432,7 +432,7 @@ const shopsOf = p => new Set(((PRICES.offers && PRICES.offers[p.id]) || []).map(
 const DESC = p => {
   const n = shopsOf(p);
   return n
-    ? `\u0533\u056b\u0576\u0568\u055d ${amd(bestOf(p))}-\u056b\u0581\u055d ${n} \u056d\u0561\u0576\u0578\u0582\u0569\u056b \u0563\u0576\u0565\u0580\u056b \u0570\u0561\u0574\u0565\u0574\u0561\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576 Impulse-\u0578\u0582\u0574\u0589`
+    ? `\u0533\u056b\u0576\u0568\u055d ${amd(bestOf(p))}-\u056b\u0581\u055d ${n} \u056d\u0561\u0576\u0578\u0582\u0569\u056b \u0563\u0576\u0565\u0580\u056b \u0570\u0561\u0574\u0565\u0574\u0561\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576 Better-\u0578\u0582\u0574\u0589`
     : `\u0531\u0575\u057d \u057a\u0561\u0570\u056b\u0576 \u0570\u0561\u0575\u056f\u0561\u056f\u0561\u0576 \u056d\u0561\u0576\u0578\u0582\u0569\u0576\u0565\u0580\u0578\u0582\u0574 \u0561\u057c\u056f\u0561 \u0579\u0567\u0589`;
 };
 
@@ -441,7 +441,7 @@ for (const p of phones) {
   const card = `images/social/${p.id}.jpg`;
   const img = SITE + (fs.existsSync(card) ? card : SEO.img);
   const url = `${SITE}p/${p.id}/`;
-  const title = `${nameOf(p)} \u2014 \u0563\u056b\u0576\u0568 \u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576\u0578\u0582\u0574 | Impulse`;
+  const title = `${nameOf(p)} \u2014 \u0563\u056b\u0576\u0568 \u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576\u0578\u0582\u0574 | Better`;
   const ld = { '@context': 'https://schema.org', '@type': 'Product', name: nameOf(p),
     brand: { '@type': 'Brand', name: p.brand }, category: p.category || 'phone',
     image: img, url, offers: offerOf(p) };
@@ -454,7 +454,7 @@ for (const p of phones) {
 <meta name="description" content="${esc(DESC(p))}">
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Impulse">
+<meta property="og:site_name" content="Better">
 <meta property="og:locale" content="hy_AM">
 <meta property="og:title" content="${esc(nameOf(p))}">
 <meta property="og:description" content="${esc(DESC(p))}">
@@ -496,7 +496,7 @@ fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
-<title>Էջը չի գտնվել | Impulse</title>
+<title>Էջը չի գտնվել | Better</title>
 <meta name="robots" content="noindex">
 <style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
 display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}

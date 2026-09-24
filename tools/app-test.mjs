@@ -46,7 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, shareUrl,
+  filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -193,14 +193,6 @@ is(app.unsureRow(uns, 'f.capacity'), true, 'an unconfirmed field is marked');
 is(app.unsureRow(uns, 'f.wifi'), true, 'a whole unconfirmed block covers its rows');
 is(app.unsureRow(uns, 'f.weight'), false, 'a confirmed field is not marked');
 is(app.unsureRow({}, 'f.capacity'), false, 'nothing flagged, nothing marked');
-
-/* --- the link people hand out is the one a chat app can read ---------------------------- */
-// location.href is the page they are standing on, hash and all; the share url is the static
-// page build.mjs writes for the same product.
-stub.location.href = 'https://graf-zasranec.github.io/mycatalog-am/#/p/apple-iphone-17';
-is(app.shareUrl('apple-iphone-17'), 'https://graf-zasranec.github.io/mycatalog-am/p/apple-iphone-17/', 'share url drops the fragment');
-stub.location.href = 'http://localhost:8123/index.html#/p/x';
-is(app.shareUrl('x'), 'http://localhost:8123/p/x/', 'and index.html, which Pages does not need');
 
 /* --- the countdown counts down, and stops ---------------------------------------------- */
 is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');

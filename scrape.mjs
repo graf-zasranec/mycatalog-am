@@ -18,7 +18,7 @@
 
 import fs from 'node:fs';
 
-const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
+const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
 const DELAY_MS = 400;
 const TIMEOUT_MS = 30000;
 
@@ -200,7 +200,13 @@ try {
 const urlIn = text => String(text).match(/https?:\/\/\S+/)?.[0].replace(/[),.;]+$/, '');
 function pinnedId(text) {
   const u = urlIn(text);
-  return u ? PINS.get(u) : undefined;
+  const pin = u ? PINS.get(u) : undefined;
+  // A pin names a product. Once that product has been merged away or removed it names nothing,
+  // and obeying it anyway strands every offer on that url under an id no page reads - the two
+  // ibolit iPad 9 listings stayed filed under the ids they had before three iPad 9 entries were
+  // folded into one, because data/links.csv still said so. "-" is a real answer (not something
+  // we carry) and stays; an id we no longer have is ignored, so the ordinary matcher decides.
+  return pin !== undefined && pin !== '-' && !phoneById[pin] ? undefined : pin;
 }
 // A phone sold with earbuds in the box is neither product at either product's price. Vega's
 // "...poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg" used to match nothing only
@@ -1062,6 +1068,14 @@ if (process.argv[2] === '--selftest') {
   for (const [txt, want] of st) {
     const got = storageOf(txt);
     if (got !== want) { bad++; console.log(`FAIL storage got=${got} want=${want} <- ${txt}`); }
+  }
+  // A partial read. 100 offers last night; tonight 90 read (ordinary churn) keeps nothing extra,
+  // 50 read (the iBolit night) keeps the other 50, and a shop too small to judge is left alone.
+  const mk = n => Array.from({ length: n }, (_, i) => ({ id: 'p' + i, storage: 128, color: 'Black' }));
+  const seen = n => new Map(mk(n).map(o => [offerKey(o), o]));
+  for (const [had, read, want] of [[100, 90, 0], [100, 50, 50], [100, 71, 0], [100, 69, 31], [10, 0, 0]]) {
+    const got = keepThroughCollapse(mk(had), seen(read)).length;
+    if (got !== want) { bad++; console.log(`FAIL keepThroughCollapse had=${had} read=${read} kept=${got} want=${want}`); }
   }
   // priceAfter is the money path: a wrong number here is published as a real price.
   const NB = String.fromCharCode(160), NN = String.fromCharCode(8239);
@@ -1982,6 +1996,7 @@ if (fs.existsSync(PRICES_FILE)) {
 }
 for (const [k, s] of Object.entries(SHOPS)) if (s.disabled && !names.includes(k)) console.log(`[${s.name}] skipped — ${s.disabled}`);
 const offers = {};
+const rehomed = [];
 for (const [id, list] of Object.entries(prev.offers || {})) {
   // Hand rows are rebuilt from data/listings.csv further down, so the previous run's copies are
   // dropped here. Inheriting them made the csv write-only: a row whose url was corrected still
@@ -2011,8 +2026,24 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
   // gets the date of the file it came out of, which is when it was last confirmed present -
   // borrowing today's would be the same false claim the field exists to remove.
   for (const o of keep) if (!o.seen) o.seen = (prev.generated || '').slice(0, 10) || TODAY;
+  // The product this offer was matched to has since been merged away or removed - three listings
+  // of the same iPad 9 folded into one, say. A carried offer keeps the id it was given at crawl
+  // time, so it would sit under an id nothing reads until its shop is crawled again, and a shop
+  // that has started refusing us (iBolit, from 2026-09-21) may not offer that chance. Match it
+  // again on its own words; one that no longer names anything carried goes, as it would on a
+  // fresh crawl. Collected and applied after the loop: assigning offers[nid] here would be
+  // overwritten when the loop reaches nid itself.
+  if (!phoneById[id]) {
+    for (const o of keep) {
+      const nid = matchPhone((o.title || '') + ' ' + (o.url || ''));
+      if (nid && phoneById[nid]) rehomed.push({ ...o, id: nid });
+    }
+    continue;
+  }
   if (keep.length) offers[id] = keep;
 }
+for (const o of rehomed) (offers[o.id] ||= []).push(o);
+if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched after their product was merged or removed`);
 const report = [];
 
 // A whole run's work used to live only in memory until the very end, so anything that stopped
@@ -2080,7 +2111,7 @@ for (const key of names) {
     // than its own eSIM row for the same phone/storage/colour and got silently thrown away
     // here, before esim/tray labelling or the pairing logic below ever saw it. Three states,
     // not two, in the key as much as in the field: true, false and unstated must each survive.
-    const k = [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
+    const k = offerKey(o);
     if (!best.has(k) || o.price < best.get(k).price) best.set(k, o);
   }
   // An adapter returning nothing is not the same as a shop having nothing in stock. A WAF page,
@@ -2104,9 +2135,12 @@ for (const key of names) {
 // that failed keeps whatever date it already had, which is the point of having one.
 const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: TODAY, size: screenOf(o.title, o.id) }));
   for (const o of rows) (offers[o.id] ||= []).push(o);
+  const kept = keepThroughCollapse(had, best);
+  for (const o of kept) (offers[o.id] ||= []).push(o);
+  if (kept.length) console.log(`    read ${best.size} of the ${had.length} it had last time - the shop, not the stock: kept ${kept.length} previous offer(s) with their old dates`);
   // Written now, not at the end: this shop is read and should stay read even if the run dies in
   // the next one. Small enough that the cost is nothing beside the hour it saves.
-  done.date = TODAY; done.shops[key] = rows;
+  done.date = TODAY; done.shops[key] = rows.concat(kept);
   try { fs.writeFileSync(PARTIAL, JSON.stringify(done)); } catch { }
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
@@ -2357,6 +2391,23 @@ if (badSize) console.log(`${badSize} offer(s) claimed a screen size the product 
 let simDropped = 0;
 for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
 if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tray was priced at or below the eSIM)`);
+
+// What makes two offers the same offer: product, capacity, colour, SIM build.
+function offerKey(o) {
+  return [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
+}
+// A shop that parses to NOTHING is caught above and carried forward whole. One that answers some
+// pages and refuses the rest parses to FEWER offers, and slipped straight past that: on 2026-09-21
+// iBolit read 464 of its 755, 676 of its product pages answered 403, five products lost every price
+// they had, and the shop itself was fine - it had started refusing this machine. Night-to-night
+// churn is a percent or two. Losing more than COLLAPSE of a shop's offers in one night is the shop,
+// not its stock, so every previous offer this run could not see is kept - with its OLD date, which
+// the page prints, so it reads as stale rather than as fresh. Stale and labelled beats missing.
+function keepThroughCollapse(had, best) {
+  const COLLAPSE = 0.3;
+  if (had.length < 20 || best.size >= had.length * (1 - COLLAPSE)) return [];
+  return had.filter(o => !best.has(offerKey(o)));
+}
 
 // Declared as a function so it hoists above the --selftest block, which exercises this exact
 // code rather than a copy of it.

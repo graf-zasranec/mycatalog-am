@@ -9,7 +9,7 @@
 //   node tools/vlv-index.mjs 500        stop after 500 products (a smoke run)
 import fs from 'node:fs';
 
-const UA = 'ImpulseBot/0.1 (+price comparison; respects robots.txt)';
+const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
 const OUT = 'data/vlv-index.json';
 const DELAY = 300;
 const limit = Number(process.argv[2]) || Infinity;
