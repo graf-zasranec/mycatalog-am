@@ -38,7 +38,7 @@ const stub = {
   setInterval: noop, setTimeout: noop, clearTimeout: noop, requestAnimationFrame: noop,
   location: { hash: '#/', href: '' }, history: { scrollRestoration: 'auto', replaceState: noop, pushState: noop },
   IMGDATA: {}, COLORIMG: {}, PAGEONLY: {}, COMING: { when: {}, items: [] },
-  HISTORY: { points: {} },
+  HISTORY: JSON.parse(rd('data/history.json')),
 };
 
 // hand the module its data the same way build.mjs does, then ask for the pieces under test
@@ -46,7 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  GROUPS, specVal, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
+  GROUPS, specVal, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -212,6 +212,21 @@ for (const p of phones) for (const [, defs] of app.GROUPS) for (const [k, get] o
 is(holes.slice(0, 3), [], 'no spec value renders undefined / NaN / null');
 is(app.specVal(p => p.body.height + ' mm', { body: {} }), null, 'a missing dimension is no row, not "undefined mm"');
 is(app.specVal(() => { throw 0; }, {}), null, 'a getter that throws is no row');
+
+/* --- the price chart follows the size that was picked ---------------------------------- */
+// The old chart drew the cheapest of ANY size against the dearest of any, so a 1 TB listing
+// moved it and picking 512 GB did not. Each day now keeps a price per size.
+const i17 = phones.find(p => p.id === 'apple-iphone-17');
+const s256 = app.histSeries(i17, 256), s512 = app.histSeries(i17, 512);
+is(s256.length > 5, true, 'the smallest size keeps the history recorded before per-size prices');
+is(s512.every(v => v.v >= 300000), true, 'a bigger size never borrows the smaller size\'s price');
+is(s512.length < s256.length, true, 'a bigger size starts from the day per-size prices began');
+
+/* --- the front page deals are real savings --------------------------------------------- */
+const dl = app.deals();
+is(dl.length > 3, true, 'the front page has deals to show');
+is(dl.filter(d => !d.drop && !(d.loShop !== d.hiShop && d.hi > d.lo)).map(d => d.p.id), [], 'a saving is between two different shops');
+is(Object.values(dl.reduce((m, d) => (m[d.p.brand] = (m[d.p.brand] || 0) + 1, m), {})).some(n => n > 3), false, 'no brand fills the row');
 
 /* --- the countdown counts down, and stops ---------------------------------------------- */
 is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');

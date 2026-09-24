@@ -31,6 +31,31 @@ const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.js
 // one place that read it had the product in scope all along.
 for (const list of Object.values(PRICES.offers || {})) for (const o of list) { delete o.title; delete o.sku; delete o.image; delete o.id; }
 
+// Prices that really fell, for the front page. The history's first weeks grew from one shop to
+// nine for a new iPhone and the cheapest price fell with every shop added: that is coverage, not
+// a price cut. So a fall counts only across the latest run of days on which the SAME number of
+// shops was read, the run has to be a week long, the fall at least 5%, and the cheapest offer
+// today has to be the price the history ends on. Worked out here because the served page does not
+// carry the history until a product page asks for it.
+const DROPS = [];
+for (const p of phones) {
+  const pts = (HISTORY.points || {})[p.id], offs = ((PRICES.offers || {})[p.id] || []).slice().sort((a, b) => a.price - b.price);
+  if (!pts || pts.length < 7 || !offs.length) continue;
+  const last = pts[pts.length - 1];
+  if (last.lo !== offs[0].price || last.shops < 2) continue;   // one shop flipping between two listings is noise
+  let i = pts.length - 1;
+  while (i > 0 && pts[i - 1].shops === last.shops) i--;
+  const run = pts.slice(i);
+  if (run.length < 7) continue;
+  // the LAST day the higher price was seen, so a price that bounced back up and down again is
+  // dated from its latest fall, not its first
+  const top = run.reduce((a, b) => b.lo >= a.lo ? b : a);
+  if ((top.lo - last.lo) / top.lo < 0.05) continue;
+  DROPS.push({ id: p.id, lo: last.lo, since: top.d, fall: top.lo - last.lo, run: run.map(v => v.lo),
+    loShop: offs[0].shop, shops: last.shops, pop: p.popularity || 0 });
+}
+DROPS.sort((a, b) => b.pop - a.pop);
+
 // A configuration a shop actually sells is a real configuration. phones.json carries the spec
 // sheet, which lags: the MacBook Pro 14 sells at 512 GB, the Pixel 11 Pro XL at 12/256, and
 // neither was listed, so their cheapest offers could not be selected or even seen.
@@ -169,6 +194,7 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 const POP = Object.fromEntries(phones.map(p => [p.id, p.popularity ?? 100]));
 const colourFloor = id => ((POP[id] ?? 100) < 50 ? 500 : 600);
 
+const DUPES = fs.existsSync('data/photo-dupes.json') ? JSON.parse(rd('data/photo-dupes.json')) : {};
 function cutMap(inline, small) {
   const m = {};
   for (const f of cutFiles) {
@@ -178,6 +204,9 @@ function cutMap(inline, small) {
     // shot's width, which punished the good main shots: the Fold 8's 719px colours were thrown
     // out against its 1200px main while the Ultra's 937px ones squeaked past the same ratio.
     if (rest !== 'main' && cutW[f] < colourFloor(id)) continue;
+    // colours whose photo is another colour's photo (tools/photo-dupes.py): a dot for them would
+    // show the wrong colour, so they have no colour photo until a real one is supplied
+    if (rest !== 'main' && (DUPES[id] || []).includes(rest)) continue;
     const thumb = `images/thumb/${f}`;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
@@ -391,6 +420,7 @@ function build({ inline, standalone }) {
     + `const COMING=${JSON.stringify(COMING)};\n`
     + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
     + `const MERGED=${JSON.stringify(MERGED)};\n`
+    + `const DROPS=${JSON.stringify(DROPS)};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here

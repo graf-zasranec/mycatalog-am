@@ -39,6 +39,10 @@ const X = {
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
+    findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
+    atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ էժան', sameBest: 'նույն գինը',
+    histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենաէժան գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
+    dealSave: '{shop}-ից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -66,6 +70,10 @@ const X = {
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита',
+    findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
+    atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина', sameBest: 'та же цена',
+    histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
+    dealSave: 'на {n} ֏ дешевле, чем в {shop}', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
@@ -96,6 +104,10 @@ const X = {
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
     ancF: 'Noise cancelling', waterF: 'Water resistance',
+    findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
+    atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop', sameBest: 'same price',
+    histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
+    dealSave: '{n} ֏ less than {shop}', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
@@ -272,37 +284,130 @@ const sold = (p, field, value) => {
 const HIST = () => (typeof HISTORY !== 'undefined' && HISTORY.points) || {};
 const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : '';
 // Plot only days we actually recorded. One point is not a trend, so it says so instead.
+// The price history, for the configuration the reader has picked. It used to draw one band from
+// the cheapest offer of any size to the dearest, so the iPhone 17 band ran from a 256 GB to a
+// 512 GB price and jumped whenever a shop listed a bigger model, and picking 512 GB changed the
+// price above the chart but not the chart. Each day now keeps its cheapest price per size (t);
+// the days recorded before that only knew the cheapest of anything, which for the smallest size
+// is the same number, so that size keeps its full history and the others start from the change.
+let HCUR = null;
+function histSeries(p, stor) {
+  const sizes = [...new Set((p.variants || []).map(v => v.storage).filter(v => v != null))];
+  const key = stor != null ? String(stor) : 'base';
+  const smallest = stor == null || sizes.length < 2 || stor === Math.min(...sizes);
+  return (HIST()[p.id] || []).map(pt => ({ d: pt.d, t: Date.parse(pt.d + 'T12:00:00Z'), s: pt.shops,
+    v: pt.t && pt.t[key] != null ? pt.t[key] : (!pt.t && smallest ? pt.lo : null) })).filter(pt => pt.v != null);
+}
 function historyHTML(p) {
-  const pts = HIST()[p.id] || [];
-  if (!pts.length) return '';
-  if (pts.length < 2) return `<h2 class="sh">${esc(x('histT'))}</h2>
-    <p class="note">${esc(x('noHist'))} · ${esc(x('trackSince'))} ${esc(dmy(pts[0].d))}</p>`;
-  const W = 640, H = 120, pad = 8;
-  const lo = Math.min(...pts.map(v => v.lo)), hi = Math.max(...pts.map(v => v.hi));
-  const span = hi - lo || 1;
-  const xs = i => pad + i * (W - pad * 2) / (pts.length - 1);
-  const ys = v => pad + (1 - (v - lo) / span) * (H - pad * 2);
-  // plot the whole daily range: cheapest line, dearest line, band between them
-  const d = pts.map((v, i) => `${i ? 'L' : 'M'}${xs(i).toFixed(1)} ${ys(v.lo).toFixed(1)}`).join(' ');
-  const dHi = pts.map((v, i) => `${i ? 'L' : 'M'}${xs(i).toFixed(1)} ${ys(v.hi).toFixed(1)}`).join(' ');
-  const band = dHi + ' ' + pts.slice().reverse().map((v, i) =>
-    `L${xs(pts.length - 1 - i).toFixed(1)} ${ys(v.lo).toFixed(1)}`).join(' ') + ' Z';
-  const last = pts[pts.length - 1], first = pts[0];
-  const delta = last.lo - first.lo;
-  return `<h2 class="sh">${esc(x('histT'))}</h2>
-    <div class="hist">
-      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img"
-        aria-label="${esc(x('histT'))}: ${money(first.lo)} - ${money(last.lo)} AMD">
-        <path class="ha" d="${band}"/><path class="hh" d="${dHi}"/><path class="hl" d="${d}"/>
-        <circle class="hd" cx="${xs(pts.length - 1).toFixed(1)}" cy="${ys(last.lo).toFixed(1)}" r="4"/>
-      </svg>
-      <div class="hist-ax">
-        <span>${esc(dmy(first.d))} · ${money(first.lo)}–${money(first.hi)} ֏</span>
-        <span class="${delta < 0 ? 'dn' : delta > 0 ? 'up' : ''}">${delta === 0 ? '—' : (delta < 0 ? '↓ ' : '↑ ') + money(Math.abs(delta)) + ' ֏'}</span>
-        <span>${esc(dmy(last.d))} · ${money(last.lo)}–${money(last.hi)} ֏</span>
-      </div>
+  if (!(HIST()[p.id] || []).length) { HCUR = null; return ''; }
+  const stor = SEL.id === p.id ? SEL.storage : null;
+  const cfg = stor != null ? gb(stor, p.variantUnit) : fullName(p);
+  const S = histSeries(p, stor);
+  HCUR = S.length > 1 ? { S, cfg } : null;
+  const head = `<h2 class="sh">${esc(x('histT'))}</h2>`;
+  if (!S.length) return head + `<p class="note">${esc(x('histNone').replace('{c}', cfg))}</p>`;
+  if (S.length < 2) return head + `<p class="note">${esc(x('noHist'))} · ${esc(x('trackSince'))} ${esc(dmy(S[0].d))}</p>`;
+  const now = S[S.length - 1], low = S.reduce((a, b) => b.v < a.v ? b : a);
+  const pct = (now.v - low.v) / low.v * 100;
+  const pill = now.v <= low.v
+    ? `<span class="hp good">${esc(x('histLow').replace('{d}', dmy(S[0].d).slice(0, 5)))}</span>`
+    : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)))}</span>`;
+  return head + `<div class="hist">
+      <div class="hist-top"><b class="num">${amd(now.v)}</b>${pill}</div>
+      <p class="hist-sub">${esc(x('histLowLine').replace('{d}', dmy(S[0].d).slice(0, 5)).replace('{n}', money(low.v)).replace('{d2}', dmy(low.d).slice(0, 5)))}
+        · ${esc(x('histWhat').replace('{c}', cfg))}</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="${esc(x('histT'))}, ${esc(cfg)}: ${esc(money(S[0].v))} → ${esc(money(now.v))} ֏. ${esc(x('histKeys'))}"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
     </div>`;
 }
+// Drawn after the page is in place, at the width it actually has, so a dot is a circle and the
+// text is the size it says - the old chart stretched one fixed drawing to fit and squashed both.
+let HX = null, hIdx = -1;
+function paintHist() {
+  const svg = $('#hsvg'); HX = null;
+  if (!svg || !HCUR) return;
+  const S = HCUR.S, W = Math.max(280, svg.clientWidth), H = 210, m = { l: 62, r: 14, t: 22, b: 26 };
+  const vals = S.map(v => v.v);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = Math.max((hi - lo) * 0.18, lo * 0.02);
+  lo -= pad; hi += pad;
+  const raw = (hi - lo) / 3, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(k => k * mag).find(k => k >= raw);
+  lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step;
+  const t0 = S[0].t, t1 = S[S.length - 1].t;
+  const X = t => m.l + (t - t0) / ((t1 - t0) || 1) * (W - m.l - m.r);
+  const Y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+  let g = '';
+  for (let v = lo; v <= hi + 1; v += step)
+    g += `<line class="hg" x1="${m.l}" x2="${W - m.r}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}"/>`
+      + `<text class="ht" x="${m.l - 8}" y="${(Y(v) + 4).toFixed(1)}" text-anchor="end">${money(v)}</text>`;
+  const nT = W < 480 ? 3 : 5;
+  for (let i = 0; i < nT; i++) {
+    const t = t0 + (t1 - t0) * i / (nT - 1), d = new Date(t).toISOString().slice(0, 10);
+    g += `<text class="ht" x="${X(t).toFixed(1)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === nT - 1 ? 'end' : 'middle'}">${dmy(d).slice(0, 5)}</text>`;
+  }
+  // A day with no reading is drawn dashed: a solid line across it would claim a price nobody read.
+  const segs = [[S[0]]];
+  for (let i = 1; i < S.length; i++) {
+    if (S[i].t - S[i - 1].t > 864e5 * 1.5) { g += `<path class="hgap" d="M${X(S[i - 1].t).toFixed(1)} ${Y(S[i - 1].v).toFixed(1)} L${X(S[i].t).toFixed(1)} ${Y(S[i].v).toFixed(1)}"/>`; segs.push([]); }
+    segs[segs.length - 1].push(S[i]);
+  }
+  const line = pts => pts.map((v, i) => (i ? 'L' : 'M') + X(v.t).toFixed(1) + ' ' + Y(v.v).toFixed(1)).join(' ');
+  g = `<path class="harea" d="${line(S)} L${X(t1).toFixed(1)} ${Y(lo)} L${X(t0).toFixed(1)} ${Y(lo)} Z"/>` + g;
+  for (const sg of segs) if (sg.length > 1) g += `<path class="hl" d="${line(sg)}"/>`;
+  const low = S.reduce((a, b) => b.v < a.v ? b : a), now = S[S.length - 1];
+  if (low !== now) g += `<circle class="hlow" cx="${X(low.t).toFixed(1)}" cy="${Y(low.v).toFixed(1)}" r="5"/>`
+    + `<text class="hlab good" x="${X(low.t).toFixed(1)}" y="${(Y(low.v) + 19).toFixed(1)}" text-anchor="middle">${esc(x('histLowest'))} ${money(low.v)}</text>`;
+  g += `<circle class="hnow" cx="${X(now.t).toFixed(1)}" cy="${Y(now.v).toFixed(1)}" r="5.5"/>`
+    + `<line class="hx" id="hx" y1="${m.t - 8}" y2="${H - m.b}" visibility="hidden"/>`
+    + `<circle class="hd" id="hd" r="4.5" visibility="hidden"/>`;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = g;
+  HX = { S, X, Y, W };
+  if (hIdx >= S.length) hIdx = -1;
+}
+function histShow(i) {
+  if (!HX) return;
+  const { S, X, Y, W } = HX; hIdx = Math.max(0, Math.min(S.length - 1, i));
+  const p = S[hIdx], px = X(p.t), py = Y(p.v), cr = $('#hx'), dt = $('#hd'), tip = $('#htip');
+  cr.setAttribute('x1', px); cr.setAttribute('x2', px); cr.setAttribute('visibility', 'visible');
+  dt.setAttribute('cx', px); dt.setAttribute('cy', py); dt.setAttribute('visibility', 'visible');
+  const prev = hIdx ? S[hIdx - 1].v : p.v, dv = p.v - prev;
+  tip.innerHTML = `<span>${esc(dmy(p.d))}</span><b class="num">${amd(p.v)}</b>`
+    + (dv ? `<span class="${dv < 0 ? 'dn' : 'up'}">${dv < 0 ? '↓' : '↑'} ${money(Math.abs(dv))}</span>` : '')
+    + (p.s ? `<span>${esc(nx(p.s, 'shops'))}</span>` : '');
+  tip.hidden = false;
+  tip.style.left = Math.max(64, Math.min(W - 64, px)) + 'px';
+  tip.style.top = py + 'px';
+  tip.classList.toggle('below', py < 90);   // near the top it would cover the text above the chart
+}
+function histHide() {
+  const cr = $('#hx'), dt = $('#hd'), tip = $('#htip');
+  if (cr) cr.setAttribute('visibility', 'hidden');
+  if (dt) dt.setAttribute('visibility', 'hidden');
+  if (tip) tip.hidden = true;
+}
+const histAt = e => {
+  if (!HX) return -1;
+  const r = e.target.closest('svg').getBoundingClientRect(), k = (e.clientX - r.left) * HX.W / r.width;
+  let bi = 0, bd = Infinity;
+  HX.S.forEach((p, i) => { const d = Math.abs(HX.X(p.t) - k); if (d < bd) { bd = d; bi = i; } });
+  return bi;
+};
+document.addEventListener('pointermove', e => { if (e.target.closest && e.target.closest('#hsvg')) histShow(histAt(e)); });
+document.addEventListener('pointerdown', e => { if (e.target.closest && e.target.closest('#hsvg')) histShow(histAt(e)); });
+document.addEventListener('pointerout', e => { if (e.target.closest && e.target.closest('#hsvg') && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('#hsvg'))) histHide(); });
+document.addEventListener('focusin', e => { if (e.target.id === 'hsvg' && HX) histShow(hIdx < 0 ? HX.S.length - 1 : hIdx); });
+document.addEventListener('focusout', e => { if (e.target.id === 'hsvg') histHide(); });
+document.addEventListener('keydown', e => {
+  if (e.target.id !== 'hsvg' || !HX) return;
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); histShow((hIdx < 0 ? HX.S.length - 1 : hIdx) + (e.key === 'ArrowLeft' ? -1 : 1)); }
+  if (e.key === 'Home') { e.preventDefault(); histShow(0); }
+  if (e.key === 'End') { e.preventDefault(); histShow(HX.S.length - 1); }
+});
+let hRz;
+window.addEventListener('resize', () => { clearTimeout(hRz); hRz = setTimeout(paintHist, 120); });
 const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generated.slice(5, 7) + '.' + P.generated.slice(0, 4) : '';
 
 // The price history the served build leaves out, fetched the first time somebody asks for a
@@ -545,15 +650,21 @@ const bestTier = p => {
   for (const o of offersFor(p)) {
     if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
     const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?');
-    (byTier.get(k) || byTier.set(k, []).get(k)).push(o.price);
+    (byTier.get(k) || byTier.set(k, []).get(k)).push(o);
   }
   let best = null;
-  for (const [tier, prices] of byTier) {
-    if (prices.length < 2) continue;
-    const lo = Math.min(...prices), hi = Math.max(...prices);
-    const [stor] = tier.split('|');
+  for (const [tier, offs] of byTier) {
+    // One price per shop - its cheapest. Two colours at one shop are not a saving between shops,
+    // and the front page names the two shops, so each end has to be one.
+    const perShop = new Map();
+    offs.forEach((o, i) => { const k = o.shop ?? i; if (!perShop.has(k) || o.price < perShop.get(k).price) perShop.set(k, o); });
+    if (perShop.size < 2) continue;
+    const list = [...perShop.values()].sort((a, b) => a.price - b.price);
+    const loO = list[0], hiO = list[list.length - 1], lo = loO.price, hi = hiO.price;
+    const [stor, ram, sim] = tier.split('|');
     if (hi > lo && (!best || hi - lo > best.gap))
-      best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor };
+      best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor, ram: ram ? +ram : null,
+               esim: sim === 'e' ? true : sim === 'n' ? false : null, loShop: loO.shop, hiShop: hiO.shop, shops: list.length };
   }
   return best;
 };
@@ -814,7 +925,10 @@ const drop = (key, label, body, right) =>
 const radios = (key, vals, fmt) =>
   `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="0"><span>${esc(x('any'))}</span></label>` +
   vals.map(v => `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="${v}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${v}"></span></label>`).join('');
-const boxes = (key, vals, fmt) => vals.map(v =>
+// A list longer than a panel is tall gets a search box: forty brands is a scroll to find one.
+const FIND_AT = 8;
+const boxes = (key, vals, fmt) => (vals.length >= FIND_AT
+  ? `<input type="search" class="fsearch" data-fs="1" placeholder="${esc(x('findL'))}" aria-label="${esc(x('findL'))}" autocomplete="off">` : '') + vals.map(v =>
   `<label class="opt"><input type="checkbox" data-f="${key}" value="${esc(String(v))}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${esc(String(v))}"></span></label>`).join('');
 
 // A filter earns its place only if the items in view actually differ on it. Deriving that
@@ -845,7 +959,10 @@ function fdrop(k, pool) {
 }
 function filterBar() {
   const pool = inView();
-  let h = `<div class="fbar${st.fopen ? '' : ' folded'}">`;
+  // On a phone the same bar is a sheet from the bottom: a head to close it, and at the foot one
+  // button that applies every panel at once and says how many results that will be.
+  let h = `<div class="fbar${st.fopen ? '' : ' folded'}" id="fbar"><div class="fsheet-hd"><b>${esc(x('filtersT'))}</b>`
+    + `<button type="button" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div>`;
   h += fdrop('brand', pool);
   h += drop('price', t('filter.price'), `<div class="rngbox"><div class="rng"><span class="track"></span><span class="fill"></span>
       <input type="range" data-f="pmin" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.from'))}">
@@ -860,7 +977,8 @@ function filterBar() {
     `<label class="opt"><input type="radio" name="r-sort" data-f="sort" value="${s}"><span>${esc(sortLabel(s))}</span></label>`).join(''), true);
   // The button sits OUTSIDE the bar it folds, so folding cannot hide it.
   const n = activeFilterCount();
-  return h + `</div><button class="fmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
+  return h + `<div class="fsheet-ft"><button type="button" class="fsclr" data-rm="all">${esc(t('common.reset'))}</button><button type="button" class="fsgo" id="fsgo" data-fsgo="1">${esc(x('showN').replace('{n}', results().length))}</button></div>`
+    + `</div><button class="fmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
     ${esc(st.fopen ? x('filtersHide') : x('filtersShow'))}${n ? ` <b>${n}</b>` : ''}
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`;
 }
@@ -872,17 +990,44 @@ function activeFilterCount() {
   return n;
 }
 // Read what the panel is showing into the state, close it, and redraw once.
-function commitPanel(panel, key) {
-  if (!panel) return;
+function openSheet() {
+  document.documentElement.classList.add('fs-open');
+  $$('#fbar .fdrop:not(.r)').forEach(d => { d.open = true; });
+  paintDraftCount(null);
+  $('#fbar')?.focus?.();
+}
+// Closing without "Show" throws the drafts away: the boxes go back to what is applied.
+function closeSheet() {
+  if (!document.documentElement.classList.contains('fs-open')) return;
+  document.documentElement.classList.remove('fs-open');
+  $$('#fbar .fdrop').forEach(d => { d.open = false; d.classList.remove('dirty'); });
+  syncFilters();
+}
+// What a panel is showing, as the state it would produce - read without committing anything,
+// so the Apply button can say how many results it leads to before it is pressed.
+function panelDraft(panel, key) {
   if (key === 'price') {
     const lo = +panel.querySelector('input[data-f="pmin"]')?.value;
     const hi = +panel.querySelector('input[data-f="pmax"]')?.value;
-    st.pmin = Math.min(lo, hi); st.pmax = Math.max(lo, hi);
-  } else {
-    const f = FILT[key];
-    if (f && f.kind === 'set') st[f.arr] = [...panel.querySelectorAll('input[type="checkbox"]:checked')].map(i => i.value);
-    else if (f) { const r = panel.querySelector('input[type="radio"]:checked'); st[key] = r ? +r.value : 0; }
+    return { pmin: Math.min(lo, hi), pmax: Math.max(lo, hi) };
   }
+  const f = FILT[key];
+  if (f && f.kind === 'set') return { [f.arr]: [...panel.querySelectorAll('input[type="checkbox"]:checked')].map(i => i.value) };
+  if (f) { const r = panel.querySelector('input[type="radio"]:checked'); return { [key]: r ? +r.value : 0 }; }
+  return {};
+}
+const draftAll = () => Object.assign({}, ...$$('.fdrop.dirty:not(.r)').map(pn => panelDraft(pn, pn.dataset.drop)));
+// e-catalog puts the count next to the box you just ticked; here it is on the button you press.
+function paintDraftCount(panel) {
+  const one = panel ? panelDraft(panel, panel.dataset.drop) : {};
+  const all = { ...draftAll(), ...one };
+  const label = n => x('showN').replace('{n}', n);
+  if (panel) { const b = panel.querySelector('.fgo'); if (b) b.textContent = label(cnt(one)); }
+  const g = $('#fsgo'); if (g) g.textContent = label(cnt(all));
+}
+function commitPanel(panel, key) {
+  if (!panel) return;
+  Object.assign(st, panelDraft(panel, key));
   panel.classList.remove('dirty');
   panel.open = false;
   st.page = 1;
@@ -983,15 +1128,15 @@ function card(p) {
   const cheapest = offersFor(p)[0];
   const v = (cheapest && p.variants.find(z => z.storage === cheapest.storage))
     || p.variants[0] || {};
-  return `<article class="pcard">
-    <div class="pshot"${cycShots(p.id).length > 1 ? ` data-cyc="${esc(p.id)}"` : ''}>
+  return `<article class="pcard" data-id="${esc(p.id)}">
+    <div class="pshot">
       ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
         : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-      <img class="on" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
-      ${cycShots(p.id).length > 1 ? `<img alt="" aria-hidden="true" decoding="async" src="${BLANK}">` : ''}
+      <img class="pimg" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      ${cdotsHTML(p)}
     </div>
     <div class="pbody">
       <span class="eyebrow">${esc(p.brand)}</span>
@@ -1021,52 +1166,70 @@ function cardFacts(p, v) {
   if (p.body?.ip) f.push(esc(p.body.ip));
   return f.slice(0, 3);
 }
-const biggestSavings = (n = 3) =>
-  DATA.map(bestTier).filter(Boolean).sort((a, b) => b.gap - a.gap).slice(0, n);
-
-// The hero used to be one hardcoded iPhone. Five popular phones that actually have a photo,
-// crossfading; the rotation is a CSS animation, so there is no timer to cancel on route change.
-// Popular phones that have a photo, but never two of the same accent colour in a row - the point
-// of the carousel is that the colour keeps changing.
-const heroPicks = () => {
-  // No Ultra in the carousel. An Ultra press shot carries the S Pen leaning against the phone -
-  // correct on its own product page, wrong in a row of six that is meant to read as one shape,
-  // where the pen juts into the frame and the phone sits smaller than its neighbours to fit.
-  const pool = DATA.filter(p => (p.category || 'phone') === 'phone' && hasIMG(p.id) && !/\bultra\b/i.test(p.name))
-    .sort((a, b) => b.popularity - a.popularity);
-  // One pass per brand, then fill. Deduping on accent colour alone used to give variety by
-  // accident - it happened to pick up a Samsung - and dropping the Ultras turned the row into
-  // six iPhones. Brand first makes that variety the rule instead of a coincidence.
-  const out = [], seenBrand = new Set(), seenAccent = new Set();
-  for (const p of pool) {
-    if (seenBrand.has(p.brand)) continue;
-    seenBrand.add(p.brand); seenAccent.add((p.accent || '').toLowerCase());
-    out.push(p);
-    if (out.length === 6) break;
+// The front page used to open on one big product photo that changed every two seconds and said
+// nothing about price. It opens on the reason to be here instead: the same product in the same
+// configuration, cheapest shop against dearest, today. Nothing moves unless the reader moves it.
+//
+// A saving is only offered where it is real: one price per shop, the same capacity, RAM and SIM
+// type at both ends (bestTier), and at least an eighth off the dearest - a 3% spread is noise.
+// Popular products first, and no more than three from one section or one brand, so the row is not
+// ten iPhones.
+const DEALS_MAX = 10;
+// The prices do not change while the page is open, so the row is worked out once.
+let DEALS_CACHE = null;
+function deals() {
+  if (DEALS_CACHE) return DEALS_CACHE;
+  const out = DEALS_CACHE = [], perCat = {}, perBrand = {};
+  const pool = DATA.map(bestTier).filter(r => r && r.gap / r.hi >= 0.08)
+    .sort((a, b) => b.p.popularity - a.p.popularity || b.gap - a.gap);
+  for (const d of [...drops(), ...pool]) {
+    if (out.some(o => o.p === d.p)) continue;
+    const c = catOf(d.p), b = d.p.brand;
+    if ((perCat[c] || 0) >= 3 || (perBrand[b] || 0) >= 3) continue;
+    perCat[c] = (perCat[c] || 0) + 1; perBrand[b] = (perBrand[b] || 0) + 1; out.push(d);
+    if (out.length === DEALS_MAX) break;
   }
-  for (const p of pool) {
-    if (out.length === 6) break;
-    const c = (p.accent || '').toLowerCase();
-    if (out.includes(p) || seenAccent.has(c)) continue;
-    seenAccent.add(c); out.push(p);
-  }
-  return out.length > 1 ? out : pool.slice(0, 6);
-};
+  return out;
+}
+// Real price falls, worked out by build.mjs from the full history (the served page does not
+// carry the history until a product page asks for it). See DROPS there for what counts.
+function drops() {
+  const src = typeof DROPS !== 'undefined' ? DROPS : [];
+  return src.map(d => ({ ...d, p: byId(d.id), drop: true }))
+    .filter(d => d.p && offersFor(d.p).length && offersFor(d.p)[0].price === d.lo).slice(0, 3);
+}
+const simLbl = e => e === true ? 'eSIM' : e === false ? 'Nano-SIM' : '';
+function spark(vals) {
+  const lo = Math.min(...vals), hi = Math.max(...vals), n = vals.length - 1;
+  const X = i => 2 + i * 116 / n, Y = v => 3 + (1 - (v - lo) / ((hi - lo) || 1)) * 22;
+  return `<svg class="dl-sp" viewBox="0 0 120 28" aria-hidden="true"><path d="${vals.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(' ')}"/>`
+    + `<circle cx="${X(n).toFixed(1)}" cy="${Y(vals[n]).toFixed(1)}" r="2.6"/></svg>`;
+}
+function dealCard(d) {
+  const p = d.p;
+  const cfg = [p.brand, d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
+    .filter(Boolean).join(' · ');
+  const tail = d.drop
+    ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
+    : `<span class="dl-save num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</span>`;
+  return `<a class="dl" href="#/p/${esc(p.id)}">
+    <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
+    <small>${esc(cfg)}</small>
+    <span class="dl-n">${esc(p.name)}</span>
+    <span class="dl-p num">${amd(d.lo)}</span>
+    <span class="dl-at">${esc(shopName(d.loShop))} · ${esc(nx(d.shops || shopCount(offersFor(p)), 'shops'))}</span>
+    ${tail}</a>`;
+}
 function mastHero() {
-  const picks = heroPicks();
-  const f = picks[0] || byId('apple-iphone-17') || DATA[0];
-  const sv = biggestSavings(3);
+  const dl = deals();
   const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
   return `<div class="cv-eyebrow">${esc(x('priceMatters'))}</div>
     <div class="cv">
       <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
-      <div class="cv-m">${(picks.length ? picks : [f]).map((p, i) => `<a class="cv-s${i ? '' : ' on'}" href="#/p/${esc(p.id)}" tabindex="${i ? -1 : 0}">
-        <img src="${IMG(p.id)}" alt="${esc(fullName(p))}"${i ? '' : ' fetchpriority="high"'}></a>`).join('')}</div>
-      ${(picks.length > 1) ? `<div class="cv-dots">${picks.map((p, i) => `<button data-hero="${i}" class="${i ? '' : 'on'}" aria-label="${esc(fullName(p))}"></button>`).join('')}</div>` : ''}
       <p class="cv-sub">${esc(x('heroSub'))}</p>
       <div class="cv-acts">
         <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
-        <a class="btn ghost" href="#savings">${esc(x('heroCta'))}</a>
+        ${dl.length ? `<a class="btn ghost" href="#savings">${esc(x('heroCta'))}</a>` : ''}
       </div>
     </div>
     <div class="cv-bar">
@@ -1075,21 +1238,28 @@ function mastHero() {
       <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
       ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}
     </div>
-    ${soonHTML()}
-    ${sv.length ? `<section class="save-sec" id="savings">
-      <div class="save-hd"><h2>${esc(x('savingsT'))}</h2><p>${esc(x('savingsS'))}</p></div>
-      <div class="save-grid">${sv.map(r => `<a class="sv" href="#/p/${esc(r.p.id)}">
-        <span class="t"><img src="${THUMB(r.p.id)}" alt="" loading="lazy"></span>
-        <span>
-          <span class="nm">${esc(fullName(r.p))}${r.storage ? ` · ${esc(gb(r.storage, r.p.variantUnit))}` : ''}</span>
-          <!-- The big number on a price-comparison site has to be a price. It used to be the
-               saving, so the front page shouted 331 400 for a laptop that costs 1 899 500. -->
-          <span class="amt num">${money(r.lo)} ֏<small>${esc(x('bestPrice'))}</small></span>
-          <span class="bar"><i style="width:${Math.max(8, Math.round(r.gap / r.hi * 100))}%"></i></span>
-          <span class="rng"><span>${esc(x('saveUpTo'))} ${money(r.gap)} ֏</span><span>${money(r.hi)}</span></span>
-        </span></a>`).join('')}</div>
-    </section>` : ''}`;
+    ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT">
+      <div class="dls-hd">
+        <div><h2 id="dlsT">${esc(x('savingsT'))}</h2><p>${esc(x('savingsS'))}</p></div>
+        <div class="dls-arr"><button type="button" data-dl="-1" aria-label="${esc(x('prevL'))}" disabled>${ICON_ARR_L}</button><button type="button" data-dl="1" aria-label="${esc(x('nextL'))}">${ICON_ARR_R}</button></div>
+      </div>
+      <div class="dls-row" id="dlrow">${dl.map(dealCard).join('')}</div>
+    </section>` : ''}
+    ${soonHTML()}`;
 }
+const ICON_FILT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>';
+const ICON_ARR_L = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
+const ICON_ARR_R = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>';
+// The arrows are a convenience for a mouse; the row itself scrolls by swipe, wheel and keyboard.
+// Each arrow is disabled at its end so it never offers a move that does nothing.
+function dealEdges() {
+  const r = $('#dlrow'); if (!r) return;
+  const a = $$('[data-dl]');
+  if (a[0]) a[0].disabled = r.scrollLeft < 4;
+  if (a[1]) a[1].disabled = r.scrollLeft + r.clientWidth > r.scrollWidth - 4;
+}
+document.addEventListener('scroll', e => { if (e.target && e.target.id === 'dlrow') dealEdges(); }, true);
+window.addEventListener('resize', dealEdges);
 
 // Announced but not on sale. These are NOT in DATA: no spec sheet, no offer you can buy today,
 // so they get a strip of their own rather than a product page full of blanks. The price is the
@@ -1190,6 +1360,9 @@ function catalogView() {
     : t('catalog.title');
   return `<div class="shell">
     ${catTabs()}
+    <div class="mbar"><button type="button" class="mbar-f" data-fsheet="1">${ICON_FILT}${esc(x('filtersT'))}${activeFilterCount() ? ` <b>${activeFilterCount()}</b>` : ''}</button>
+      <span class="mbar-n" id="mbarn"></span></div>
+    <div class="fscrim" data-fsclose="1"></div>
     ${filterBar()}
     <div class="chips" id="chips"></div>
     <div class="resbar" id="results"><${hd}>${esc(title)}</${hd}><span class="cnt" id="rescnt"></span></div>
@@ -1257,11 +1430,16 @@ function refresh() {
   // typed a word, or landed on a section that is empty. Say it only when there are filters, and
   // offer the button only when it has something to undo.
   const ch = activeChips();
-  box.innerHTML = all.length ? r.map(card).join('')
+  const html = all.length ? r.map(card).join('')
     : `<div class="empty"><b>${esc(x('emptyT'))}</b>${ch.length ? esc(x('emptyS')) : ''}${
         ch.length || st.q ? `<button class="btn ghost" data-rm="all" style="margin-top:14px">${esc(t('common.reset'))}</button>` : ''}</div>`;
+  placeGrid(box, html, new Set(r.map(p => p.id)));
   const pg = $('#pager'); if (pg) pg.innerHTML = pager(all.length);
-  $('#rescnt').textContent = t('common.results_count').replace('{n}', all.length);
+  tickCount($('#rescnt'), all.length);
+  const mf = $('.mbar-f'), nf = activeFilterCount();
+  if (mf) mf.innerHTML = ICON_FILT + esc(x('filtersT')) + (nf ? ` <b>${nf}</b>` : '');
+  if ($('#mbarn')) $('#mbarn').textContent = t('common.results_count').replace('{n}', all.length);
+  if (document.documentElement.classList.contains('fs-open')) paintDraftCount(null);
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
@@ -1272,7 +1450,60 @@ function refresh() {
   if (tabs) tabs.outerHTML = catTabs();
   syncFilters(); save();
   moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
-  gridIn(box);
+}
+
+// A filter that keeps some of the cards on screen used to throw them all away and slide the whole
+// grid in again, so the cards you were looking at vanished and came back somewhere else. Now only
+// what changed moves: cards that leave fade out, the ones that stay glide to their new places
+// (FLIP: measure, swap, play the difference back), and new ones fade in. A new page or a result
+// set with nothing in common is a different list, and keeps the short staggered entrance.
+let gridT = null;
+function placeGrid(box, html, ids) {
+  clearTimeout(gridT);
+  const old = [...box.querySelectorAll(':scope > .pcard')];
+  const stay = old.filter(c => ids.has(c.dataset.id));
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (calm || !stay.length) { box.innerHTML = html; gridIn(box); return; }
+  const first = new Map(stay.map(c => [c.dataset.id, c.getBoundingClientRect()]));
+  const leaving = old.filter(c => !ids.has(c.dataset.id));
+  const swap = () => {
+    box.classList.remove('gridin');
+    box.innerHTML = html;
+    const cards = [...box.querySelectorAll(':scope > .pcard')];
+    for (const c of cards) {
+      const a = first.get(c.dataset.id), b = c.getBoundingClientRect();
+      c.style.transition = 'none';
+      if (a) c.style.transform = `translate(${a.left - b.left}px,${a.top - b.top}px)`;
+      else { c.style.opacity = '0'; c.style.transform = 'scale(.96)'; }
+    }
+    void box.offsetWidth;
+    for (const c of cards) {
+      c.style.transition = 'transform .32s cubic-bezier(.2,.8,.2,1), opacity .25s ease';
+      c.style.transform = ''; c.style.opacity = '';
+    }
+    // hand the card back to its stylesheet (hover lift) once the move is done
+    setTimeout(() => cards.forEach(c => { c.style.transition = ''; }), 360);
+  };
+  if (!leaving.length) { swap(); return; }
+  leaving.forEach(c => c.classList.add('leave'));
+  gridT = setTimeout(swap, 150);
+}
+// The result count runs to its new value instead of jumping, so the number reads as the effect
+// of what was just clicked.
+function tickCount(el, to) {
+  if (!el) return;
+  const fmt = n => t('common.results_count').replace('{n}', n);
+  const from = el._n, calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  el._n = to;
+  if (from == null || from === to || calm) { el.textContent = fmt(to); return; }
+  const t0 = performance.now();
+  const step = now => {
+    if (el._n !== to) return;                  // a newer count took over
+    const k = Math.min(1, (now - t0) / 320);
+    el.textContent = fmt(Math.round(from + (to - from) * (1 - Math.pow(1 - k, 3))));
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
 }
 
 // The grid is replaced wholesale on every filter change, so without this the result set
@@ -1381,84 +1612,49 @@ const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
 const simChoice = p => { const a = offersFor(p);
   return a.some(o => o.esim === true) && a.some(o => o.esim === false); };
 // 'main' is a copy of one of the colours under a different filename, so it would show twice
-// The second shot of a crossfading card starts empty and is filled on the first swap. An <img>
-// with no src reports naturalWidth 0, which every audit tool counts as a broken image - 62 of
-// them on the front page. A 1x1 transparent GIF is a valid, cached, 68-byte placeholder.
-const BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 // A card crossfades a product's colour photos, which only reads as one product turning around
 // if every frame is the same shape. A photo shot in the other orientation keeps its place on
 // the product page and loses only its turn here. See tools/pageonly.py.
 const SKIPCYC = (typeof PAGEONLY !== 'undefined' && PAGEONLY) || {};
 // The cycle runs inside a card, so it takes the 600 px copies. The product page keeps CIMG.
 const CTHUMB = (typeof COLORTHUMB !== 'undefined' && COLORTHUMB) || {};
-const cycShots = id => [...new Set(Object.entries(CIMG[id] || {})
-  .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k))
-  .map(([k, v]) => (CTHUMB[id] && CTHUMB[id][k]) || v))];
-
-// Cards with more than one colour photo walk through them. One timer for the whole grid, and a
-// card only advances while it is on screen: crossfading rows nobody is looking at is wasted work
-// on a slow machine. Opacity only, so there is no layout to redo.
-// Every card used to flip on the same 3s beat, so the whole grid blinked at once. Each card
-// now carries its own due time with a random gap, which desynchronises them for free - one
-// timer still drives the lot, it just asks each card whether its own moment has come.
-const CYC_MIN = 4500, CYC_SPREAD = 4000;
-const cycDue = () => performance.now() + CYC_MIN + Math.random() * CYC_SPREAD;
-setInterval(() => {
-  if (document.hidden) return;
-  const cards = $$('[data-cyc]');
-  if (!cards.length) return;          // compare, offers, privacy: nothing to cycle, read no layout
-  const now = performance.now();
-  for (const el of cards) {
-    const r = el.getBoundingClientRect();
-    if (r.bottom < 0 || r.top > innerHeight) continue;
-    // first sight of a card: give it a random moment rather than the next tick
-    if (!el._cycDue) { el._cycDue = cycDue(); continue; }
-    if (now < el._cycDue) continue;
-    cycStep(el);
-  }
-}, 500);
-// One step of a card's colour crossfade. The timer calls it on its own beat; hovering a card
-// calls it at once, so the pointer takes the wheel from the timer for as long as it is there.
-function cycStep(el) {
-  el._cycDue = cycDue();
-  const shots = cycShots(el.dataset.cyc);
-  const im = el.querySelectorAll('img');
-  if (shots.length < 2 || im.length < 2) return;
-  if (el._cycBusy) return;                     // a step already waiting on its image
-  const cur = im[0].classList.contains('on') ? im[0] : im[1];
-  const nxt = cur === im[0] ? im[1] : im[0];
-  const i = (+el.dataset.cycI || 0) + 1;
-  const src = shots[i % shots.length];
-  // Fade to it only once it can actually be painted. Setting src and adding .on in the same
-  // breath showed an EMPTY card for as long as the file took to arrive - the photo appeared
-  // only when a hover stepped it on to one already in cache, which is exactly what it looked
-  // like from the outside. nxt is opacity 0 while it loads, so nothing flickers.
-  const show = () => {
-    el._cycBusy = false;
-    el.dataset.cycI = i;
-    nxt.classList.add('on');
-    cur.classList.remove('on');
-  };
-  el._cycBusy = true;
-  nxt.src = src;
-  if (nxt.decode) nxt.decode().then(show, () => { el._cycBusy = false; });
-  else if (nxt.complete && nxt.naturalWidth) show();
-  else {
-    nxt.onload = show;
-    nxt.onerror = () => { el._cycBusy = false; };   // leave the photo that is already up
-  }
+const cycList = id => {
+  const seen = new Set();
+  return Object.entries(CIMG[id] || {})
+    .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k))
+    .map(([k, v]) => [k, (CTHUMB[id] && CTHUMB[id][k]) || v])
+    .filter(([, u]) => seen.has(u) ? false : (seen.add(u), true));
+};
+// A card's colour photos used to swap on their own - eight swaps in ten seconds across a grid -
+// and crossfade two transparent cutouts, so for a moment both phones showed at once. Now the
+// photo changes only when asked, from a row of colour dots, and the old one fades out before
+// the new one fades in.
+const CDOTS_MAX = 5;
+function cdotsHTML(p) {
+  const list = cycList(p.id);
+  if (list.length < 2) return '';
+  const names = new Map((p.colors || []).map(c => [slugOf(c), c]));
+  const nm = k => names.get(k) || k.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  return `<div class="cdots" role="group" aria-label="${esc(t('sec.colors'))}">${list.slice(0, CDOTS_MAX).map(([k, u]) =>
+    `<button type="button" class="cdot" data-cdot="${esc(u)}" data-cname="${esc(nm(k))}" style="--c:${swatch(nm(k))}" aria-label="${esc(nm(k))}" aria-pressed="false"></button>`).join('')}${
+    list.length > CDOTS_MAX ? `<span class="cmore">+${list.length - CDOTS_MAX}</span>` : ''}</div>`;
 }
-// pointerover bubbles, so one listener covers every card the grid ever renders. relatedTarget
-// tells a real entry from a move between two children of the same card.
-document.addEventListener('pointerover', e => {
-  if (!e.target.closest) return;
-  // the whole card is the hover target, not just the photo: the pointer usually arrives over the
-  // name or the price, and the photo is what should answer
-  const card = e.target.closest('.pcard');
-  if (!card || (e.relatedTarget && card.contains(e.relatedTarget))) return;
-  const cyc = card.querySelector('[data-cyc]');
-  if (cyc) cycStep(cyc);
-});
+function cardShow(btn) {
+  const shot = btn.closest('.pshot'), img = shot && shot.querySelector('.pimg');
+  if (!img || img.dataset.cur === btn.dataset.cdot) return;
+  img.dataset.cur = btn.dataset.cdot;
+  shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', b === btn));
+  const card = btn.closest('.pcard'), name = card && card.querySelector('h3 a');
+  const want = btn.dataset.cdot, pre = new Image();
+  pre.src = want;
+  img.classList.add('out');
+  const swap = () => { if (img.dataset.cur !== want) return;
+    img.src = want; img.alt = (name ? name.textContent + ' — ' : '') + btn.dataset.cname; img.classList.remove('out'); };
+  const ready = pre.decode ? pre.decode().catch(() => {}) : Promise.resolve();
+  Promise.all([ready, new Promise(r => setTimeout(r, 110))]).then(swap);
+}
+document.addEventListener('pointerover', e => { const b = e.target.closest && e.target.closest('.cdot'); if (b) cardShow(b); });
+document.addEventListener('focusin', e => { if (e.target.classList && e.target.classList.contains('cdot')) cardShow(e.target); });
 
 let SEL = { id: null, color: null, storage: null, ram: null, esim: null, size: null, band: null };
 function initSel(p) {
@@ -1544,14 +1740,33 @@ function visibleOffers(p) {
     return seen.has(k) ? false : (seen.add(k), true);
   });
 }
-function railHTML(offs) {
-  if (offs.length < 2) return '';
-  const lo = offs[0].price, hi = offs[offs.length - 1].price;
+// One row per shop: its cheapest offer for the configuration picked. The same shop listing a
+// build twice (a colour with its own page, a SIM build the row does not show) used to take two of
+// the five places at the top of the list, and two "Best price" labels.
+const perShop = offs => { const seen = new Set(); return offs.filter(o => seen.has(o.shop) ? false : (seen.add(o.shop), true)); };
+// The spread between shops, drawn to scale. Shops whose prices sit closer than a dot can be told
+// apart merge into one marker with a count; hover or focus it to read which shops and what price.
+// The two ends are named, because "354 000 - 439 000" alone does not say where to go.
+function railHTML(rows) {
+  if (rows.length < 2) return '';
+  const lo = rows[0].price, hi = rows[rows.length - 1].price;
   if (hi === lo) return '';
-  const dots = offs.map(o => `<span class="dt${o.price === lo ? ' b' : ''}" style="left:${((o.price - lo) / (hi - lo) * 100).toFixed(1)}%" title="${esc(shopName(o.shop))} · ${money(o.price)} ֏"></span>`).join('');
-  return `<div class="rail" role="img" aria-label="${esc(x('saveUpTo'))} ${money(hi - lo)} AMD"><span class="ln"></span>${dots}</div>
-    <div class="ends"><span class="num">${money(lo)} ֏</span><span class="num">${money(hi)} ֏</span></div>
-    <div class="save">${esc(x('saveUpTo'))} <b class="num">${money(hi - lo)} ֏</b></div>`;
+  const pos = v => (v - lo) / (hi - lo) * 100;
+  const groups = [];
+  for (const o of rows) {
+    const g = groups[groups.length - 1];
+    if (g && pos(o.price) - pos(g[g.length - 1].price) < 7) g.push(o); else groups.push([o]);
+  }
+  const dots = groups.map((g, i) => {
+    const at = i === 0 ? 0 : i === groups.length - 1 ? 100 : pos((g[0].price + g[g.length - 1].price) / 2);
+    const side = at < 18 ? ' l' : at > 82 ? ' r' : '';
+    const list = g.map(o => `${shopName(o.shop)} · ${money(o.price)} ֏`);
+    return `<button type="button" class="rd${g.length > 1 ? ' cl' : ''}${i === 0 ? ' best' : ''}${i === groups.length - 1 ? ' top' : ''}${side}"
+      style="left:${at.toFixed(1)}%" aria-label="${esc(list.join(', '))}">${g.length > 1 ? `<span class="rc">×${g.length}</span>` : ''}<span class="rt">${list.map(esc).join('<br>')}</span></button>`;
+  }).join('');
+  return `<div class="rail2"><span class="ln"></span>${dots}</div>
+    <div class="ends2"><span><b class="num">${money(lo)} ֏</b>${esc(shopName(rows[0].shop))}</span>
+      <span><b class="num">${money(hi)} ֏</b>${esc(shopName(rows[rows.length - 1].shop))}</span></div>`;
 }
 
 // Two models to put beside this one, in the order the owner asked for: the newer model first, then
@@ -1747,6 +1962,19 @@ function detailView(p) {
       && (SEL.size == null || v.size == null || v.size === SEL.size))
     || p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
   const shownPrice = lo ?? variant.priceAmd ?? p.priceAmd;
+  const rows = perShop(offs);
+  // what "best price" is the best price OF, said next to it: the size, and the SIM build when chosen
+  const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
+  const cfgLbl = [multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim)].filter(Boolean).join(' · ');
+  // The chart's verdict, repeated where the decision is made. Only once the history has loaded
+  // and only for the size picked - the chart's own series, so the two never disagree.
+  const hs = histSeries(p, SEL.storage);
+  let verdict = '';
+  if (hs.length > 1 && lo != null && hs[hs.length - 1].v === lo) {
+    const low = Math.min(...hs.map(v => v.v)), pct = (lo - low) / low * 100;
+    verdict = lo <= low ? `<span class="hp good">${esc(x('histLow').replace('{d}', dmy(hs[0].d).slice(0, 5)))}</span>`
+      : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)))}</span>`;
+  }
   // Every finish the maker lists. The picture follows the choice where a colour has its own
   // photo; where it does not, the main shot stays and the swatch still answers the real
   // question - whether anyone in Armenia sells it. Crossed through when nobody does.
@@ -1819,12 +2047,12 @@ function detailView(p) {
             <div class="bs">${simOpts.map(([n, want]) =>
               `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`).join('')}</div></div>` : ''}
           <div class="pprice2">
-            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}</span>
-            <b class="num">${money(shownPrice)} ֏</b>
-            ${offs.length && offs.length > 1 && offs[offs.length - 1].price > lo
-              ? `<div class="save2">${esc(x('saveUpTo'))} ${money(offs[offs.length - 1].price - lo)} ֏</div>` : ''}
-            ${offs.length ? `<div class="shopn">${esc(nx(shopCount(offs), 'shops'))}</div>` : ''}
-            ${railHTML(offs)}
+            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
+            <div class="pp-row"><b class="num">${money(shownPrice)} ֏</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
+            ${rows.length > 1 || verdict ? `<div class="pp-pills">${rows.length > 1 && rows[rows.length - 1].price > lo
+              ? `<span class="hp good">${esc(x('lessDearest').replace('{n}', money(rows[rows.length - 1].price - lo)))}</span>` : ''}${verdict}</div>` : ''}
+            ${rows.length ? `<div class="shopn">${esc(nx(rows.length, 'shops'))}</div>` : ''}
+            ${railHTML(rows)}
           </div>
           <div class="pcta">
             ${offs.length ? `<a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>` : ''}
@@ -1835,13 +2063,13 @@ function detailView(p) {
       </div>
     </div>
 
-    ${!offs.length ? '' : `<h2 class="sh" id="buy">${esc(x('offersTitle'))} <em>${offs.length}</em></h2>`}
-    ${offs.length ? `<ol class="olist" id="offList">
-      ${offs.map((o, i) => offerRow(o, lo, i, p.variantUnit, i >= OFFER_PEEK ? 'more' : '', p)).join('')}
+    ${!rows.length ? '' : `<h2 class="sh" id="buy">${esc(x('offersTitle'))} <em>${rows.length}</em></h2>`}
+    ${rows.length ? `<ol class="olist" id="offList">
+      ${rows.map((o, i) => offerRow(o, lo, i, p.variantUnit, i >= OFFER_PEEK ? 'more' : '', p)).join('')}
     </ol>
-    ${offs.length > OFFER_PEEK ? `<button class="expand" data-expand="offList" aria-expanded="false" aria-controls="offList">
-      ${esc(x('showAll'))} <b class="num">${offs.length}</b></button>` : ''}
-    ${offersFor(p).length > offs.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffers'))} → <b class="num">${offersFor(p).length}</b></a></p>` : ''}`
+    ${rows.length > OFFER_PEEK ? `<button class="expand" data-expand="offList" aria-expanded="false" aria-controls="offList">
+      ${esc(x('showAll'))} <b class="num">${rows.length}</b></button>` : ''}
+    ${offersFor(p).length > rows.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffers'))} → <b class="num">${offersFor(p).length}</b></a></p>` : ''}`
       : ''}
     ${offs.length ? `<p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>` : ''}
 
@@ -2061,7 +2289,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
          is here for is the cheapest price and how much every other shop adds to it. -->
-    <span class="dl">${o.price === lo ? esc(x('bestPrice')) : '+' + money(o.price - lo) + ' ֏'}</span>
+    <span class="dl">${o.price === lo ? esc(i === 0 ? x('bestPrice') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
     ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 
@@ -2150,6 +2378,19 @@ function compareView() {
   const cols = `200px repeat(${n + slot},minmax(0,1fr))`;
 
   let rows = '', nDiff = 0, nSame = 0;
+  // Price first: it is what people compare before anything else, and the table never had it.
+  // The cheapest shop and how many shops carry it, with the cheapest of the products marked.
+  {
+    const best = ps.map(p => offersFor(p).length ? bestOf(p) : null);
+    const ok = best.filter(v => v != null), lo = ok.length > 1 ? Math.min(...ok) : null;
+    rows += `<div class="grp">${esc(t('filter.price'))}</div><div class="k row-diff">${esc(x('bestPrice'))}</div>`
+      + ps.map((p, i) => {
+        const o = offersFor(p)[0];
+        return `<div class="c cprice${best[i] != null && best[i] === lo && new Set(ok).size > 1 ? ' best' : ''}">${o
+          ? `<b class="num">${amd(o.price)}</b><span>${esc(shopName(o.shop))} · ${esc(nx(shopCount(offersFor(p)), 'shops'))}</span>`
+          : '—'}</div>`;
+      }).join('') + (slot ? '<div class="c"></div>' : '');
+  }
   for (const [g, defs] of GROUPS) {
     rows += `<div class="grp">${esc(t(g))}</div>`;
     for (const [k, get, num, dir] of defs) {
@@ -2168,7 +2409,8 @@ function compareView() {
       // Only weakness is marked - fewer mAh, fewer pixels, less memory. Everything else keeps the
       // default colour, including a difference with no better side (iOS against Android) and a
       // value that is simply missing.
-      const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
+      // ...and the strongest value is marked too, so a row says who wins, not only who loses.
+      const mark = i => same || bi < 0 || vals[i] === '—' ? '' : vals[i] === vals[bi] ? ' best' : ' worse';
       rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
         vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
         (slot ? `<div class="c ${cls}"></div>` : '');
@@ -2188,14 +2430,13 @@ function compareView() {
     </div>
     <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
       <div class="cphotos"><div class="pad"></div>
-        ${ps.map(p => `<div class="c"><img src="${esc(THUMB(p.id))}" alt="${esc(fullName(p))}" decoding="async"></div>`).join('')}
+        ${ps.map(p => `<div class="c"><a href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${esc(THUMB(p.id))}" alt="" decoding="async"></a>
+          <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button></div>`).join('')}
         ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(addLabel(ps[0]))}">
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
-        ${ps.map(p => `<div class="ccol">
-          <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
-          <b>${esc(fullName(p))}</b></div>`).join('')}
+        ${ps.map(p => `<div class="ccol"><a class="cname" href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></div>`).join('')}
         ${slot ? `<div class="ccol"><b class="addlbl">${esc(addLabel(ps[0]))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
@@ -2252,6 +2493,7 @@ function paintCmpRes() {
 const keepsQuery = route => !(route === '' || route === '/' || route.startsWith('/c/'));
 let painted = false;
 function render(keepScroll) {
+  document.documentElement.classList.remove('fs-open');   // a route change never leaves the sheet up
   const raw = location.hash.replace(/^#/, '');
   // #buy / #results / #main are in-page anchors, not routes. They used to fall through to
   // the catalogue, throwing you off the product page you were reading.
@@ -2324,8 +2566,9 @@ function render(keepScroll) {
   const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search'].includes(h) && !h.startsWith('/offers/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
-  if (home) heroTick(); else clearTimeout(heroT);   // no slides off the front page, no timer
+  if (home) requestAnimationFrame(dealEdges);
   if (restoreY !== null) window.scrollTo(0, restoreY);
+  paintHist();
   moneyFx();
 }
 
@@ -2339,7 +2582,7 @@ let fxFlashAll = false;
 // Product page only. The animation answers "this number just changed because you changed the
 // configuration", which is a question only this page asks - on a catalogue grid the same effect
 // is 146 numbers twitching for no reason, and on first load it reads as the page still loading.
-const PRICE_SEL = '.pprice2 > b.num, .olist .orow .pr';
+const PRICE_SEL = '.pprice2 .pp-row > b.num, .olist .orow .pr';
 
 // Fires only after a capacity, RAM or colour button was pressed on a product page. Arriving at a
 // page is not a change, so nothing animates on load; a grid of 146 cards twitching at once was
@@ -2380,6 +2623,8 @@ document.addEventListener('click', e => {
   }
   // The whole card opens the product. The chevron in its corner had always been decoration
   // (aria-hidden), so it looked like a button and did nothing when clicked.
+  const cd = e.target.closest('.cdot');
+  if (cd) { cardShow(cd); return; }
   const card = e.target.closest('.pcard');
   if (card && !e.target.closest('a,button')) {
     const link = card.querySelector('h3 a[href^="#/p/"]');
@@ -2403,8 +2648,13 @@ document.addEventListener('click', e => {
   if (e.target.id === 'cmodal') { closeAdd(); return; }               // click the backdrop to close
   const add = e.target.closest('[data-add]');
   if (add) { if (toggleCmp(add.dataset.add)) { closeAdd(); render(true); } return; }
-  const dot = e.target.closest('[data-hero]');
-  if (dot) { heroGo(+dot.dataset.hero); heroTick(); return; }
+  const arr = e.target.closest('[data-dl]');
+  if (arr) {
+    const r = $('#dlrow'), c = r && r.querySelector('.dl');
+    if (c) r.scrollBy({ left: +arr.dataset.dl * (c.getBoundingClientRect().width + 12) * 2,
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    return;
+  }
   const L = e.target.closest('[data-lang]');
   if (L) { st.lang = L.dataset.lang; save(); render(true); return; }
   if (e.target.closest('#themeBtn')) {
@@ -2451,6 +2701,7 @@ document.addEventListener('click', e => {
       Object.assign(st, { q: '', pmin: PMIN, pmax: PMAX });
       for (const kk in FILT) { const f = FILT[kk]; if (f.kind === 'set') st[f.arr] = []; else st[kk] = D[kk]; }
       if ($('#q')) $('#q').value = '';
+      $$('.fdrop.dirty').forEach(d => d.classList.remove('dirty'));
     }
     else if (k === 'price') { st.pmin = PMIN; st.pmax = PMAX; }
     else if (k.includes(':')) {
@@ -2503,6 +2754,12 @@ document.addEventListener('click', e => {
     if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
     return;
   }
+  if (e.target.closest('[data-fsheet]')) { openSheet(); return; }
+  if (e.target.closest('[data-fsclose]')) { closeSheet(); return; }
+  if (e.target.closest('[data-fsgo]')) {
+    for (const pn of $$('.fdrop.dirty:not(.r)')) { Object.assign(st, panelDraft(pn, pn.dataset.drop)); pn.classList.remove('dirty'); }
+    st.page = 1; closeSheet(); refresh(); return;
+  }
   const fm = e.target.closest('[data-fmore]');
   if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
   if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
@@ -2549,12 +2806,14 @@ document.addEventListener('click', e => {
   }
   // one dropdown open at a time; click outside closes
   const d = e.target.closest('[data-drop]');
-  $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
+  if (!document.documentElement.classList.contains('fs-open'))
+    $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
 });
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter' && e.target.id === 'q') { e.preventDefault(); submitSearch(); return; }
   if (e.key !== 'Escape') return;
   closeSuggest();
+  closeSheet();
   $$('[data-drop][open]').forEach(o => o.open = false);
   closeAdd();
 });
@@ -2569,6 +2828,7 @@ document.addEventListener('change', e => {
   if (panel && f !== 'sort') {
     panel.classList.add('dirty');
     if (f === 'pmin' || f === 'pmax') paintRange(panel);
+    paintDraftCount(panel);
     return;
   }
   if (f === 'sort') { st.sort = el.value; el.closest('[data-drop]').open = false; }
@@ -2647,39 +2907,17 @@ document.addEventListener('input', e => {
     return;
   }
   if (el.id === 'cmq') { paintCmpRes(); return; }
+  if (el.dataset.fs) {
+    const q = el.value.trim().toLowerCase();
+    el.closest('.panel').querySelectorAll('.opt').forEach(o => { o.hidden = !!q && !o.textContent.toLowerCase().includes(q); });
+    return;
+  }
   if (el.dataset.f === 'pmin' || el.dataset.f === 'pmax') {
     const a = +$('[data-f="pmin"]').value, b = +$('[data-f="pmax"]').value;
     $('[data-rng="min"]').textContent = money(Math.min(a, b)) + ' ֏';
     $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
   }
 });
-// Hero carousel. A timer rather than a CSS animation: the global reduced-motion rule kills
-// animations, which froze the hero on one image. The swap still happens for everyone, and the
-// crossfade is what reduced motion drops.
-const HERO_MS = 2000;
-let heroT;
-function heroGo(n) {
-  const sl = $$('.cv-s'), dots = $$('[data-hero]');
-  if (sl.length < 2) return;
-  const i = ((n % sl.length) + sl.length) % sl.length;
-  sl.forEach((e, k) => { e.classList.toggle('on', k === i); e.tabIndex = k === i ? 0 : -1; });
-  dots.forEach((d, k) => d.classList.toggle('on', k === i));
-}
-function heroTick() {
-  clearTimeout(heroT);
-  // The money animations above are gated on reduced motion by hand, for the reason written
-  // there: a media query cannot undo a timer. This is a timer too, and it was missed. The hero
-  // kept advancing itself every seven seconds for a reader who has asked the whole system to
-  // stop moving things - which is also WCAG 2.2.2, auto-updating content with no way to stop it.
-  // The dots still work, so every slide is still reachable. It just waits to be asked.
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  heroT = setTimeout(() => {
-    const sl = $$('.cv-s');
-    if (sl.length > 1 && !document.hidden) heroGo(sl.findIndex(e => e.classList.contains('on')) + 1);
-    heroTick();
-  }, HERO_MS);
-}
-heroTick();
 
 // Going back to the catalogue should land where you left it, not at the top. Product pages
 // still open at the top - you clicked them to read them from the start.
