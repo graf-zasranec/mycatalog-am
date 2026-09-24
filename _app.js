@@ -40,10 +40,10 @@ const X = {
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
-    atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ էժան', sameBest: 'նույն գինը',
-    histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենաէժան գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
-    spotT: 'Օրվա գործարքը',
-    dealUsual: 'սովորական գնից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
+    histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
+    spotT: 'Օրվա գործարքը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
+    dealUsual: 'սովորական գնից {n} ֏ ցածր', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -56,7 +56,7 @@ const X = {
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
     emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
-    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի էժան', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
+    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի ցածր գին', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
@@ -72,9 +72,9 @@ const X = {
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита',
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
-    atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина', sameBest: 'та же цена',
+    atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
-    spotT: 'Выгода дня',
+    spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
     dealUsual: 'на {n} ֏ ниже обычной цены', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
@@ -91,7 +91,7 @@ const X = {
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
     emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
-    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
+    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
@@ -107,9 +107,9 @@ const X = {
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
     ancF: 'Noise cancelling', waterF: 'Water resistance',
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
-    atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop', sameBest: 'same price',
+    atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
-    spotT: 'Deal of the day',
+    spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
     dealUsual: '{n} ֏ below the usual price', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
@@ -123,7 +123,7 @@ const X = {
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
     emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
-    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best price', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
+    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
@@ -215,7 +215,7 @@ const BARE_BRAND = new Set(['apple', 'samsung']);
 // A tag after the name: the launch year for phones, tablets, watches and headphones - which
 // generation this is, at a glance - and the screen for TVs and monitors, where the diagonal is the
 // first thing anyone asks. Drawn, never written into the name, so search and sharing stay clean.
-const YEAR_TAG = new Set(['phone', 'tablet', 'watch', 'headphones']), SIZE_TAG = new Set(['tv', 'monitor']);
+const YEAR_TAG = new Set(['phone', 'tablet', 'watch', 'headphones', 'laptop']), SIZE_TAG = new Set(['tv', 'monitor']);
 function nameTag(p, scr) {
   if (YEAR_TAG.has(p.category)) {
     const y = p.year || +(String(p.released || '').match(/^(\d{4})/) || [])[1];
@@ -872,7 +872,8 @@ function paintChrome() {
   $('#nav').innerHTML =
     `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}`
-    + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`;
+    + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
+    + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
   paintCmpCount();
   $('#foot').innerHTML = `<b>Better</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
@@ -2017,6 +2018,44 @@ function detailView(p) {
 
 
 // Privacy and contact are the same shape: a heading and a few paragraphs from strings.json.
+/* ================= blog ================= */
+// Articles live in data/blog.json in all three languages; build.mjs inlines them as BLOG and also
+// writes each one as a static page under b/ for search engines. "## " starts a heading, "- " a
+// list item (consecutive ones make one list), anything else is a paragraph.
+const postText = a => a[st.lang] || a.en;
+function postBody(list) {
+  let html = '', inList = false;
+  for (const s of list) {
+    const li = s.startsWith('- ');
+    if (li && !inList) html += '<ul>';
+    if (!li && inList) html += '</ul>';
+    inList = li;
+    html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : li ? `<li>${esc(s.slice(2))}</li>` : `<p>${esc(s)}</p>`;
+  }
+  return html + (inList ? '</ul>' : '');
+}
+function blogView() {
+  return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
+    <header class="bl-hd"><h1>${esc(t('nav.blog'))}</h1><p>${esc(x('blogSub'))}</p></header>
+    <div class="bl-grid">${BLOG.map((a, i) => { const T = postText(a); return `<a class="bl-card${i ? '' : ' first'}" href="#/blog/${esc(a.id)}">
+      <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
+      <h2>${esc(T.title)}</h2><p>${esc(T.lead)}</p>
+      <span class="bl-go">${esc(x('readL'))} →</span></a>`; }).join('')}</div></div>`;
+}
+function postView(a) {
+  const T = postText(a), cta = a.cta && /^#\//.test(a.cta.href) ? a.cta : null;
+  return `<div class="shell"><div class="navrow">${backLink('#/blog', x('allPosts'))}</div>
+    <article class="post">
+      <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
+      <h1>${esc(T.title)}</h1>
+      <p class="post-lead">${esc(T.lead)}</p>
+      ${postBody(T.body)}
+      ${cta ? `<p class="post-cta"><a class="btn" href="${esc(cta.href)}">${esc(cta[st.lang] || cta.en)} →</a></p>` : ''}
+    </article>
+    <aside class="post-more"><h2 class="sh">${esc(x('allPosts'))}</h2><div class="bl-list">${BLOG.filter(b => b !== a).map(b =>
+      `<a href="#/blog/${esc(b.id)}"><time class="num">${esc(dmy(b.date))}</time><span>${esc(postText(b).title)}</span></a>`).join('')}</div></aside>
+  </div>`;
+}
 function docView(key, paras) {
   return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
     <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
@@ -2222,7 +2261,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
          is here for is the cheapest price and how much every other shop adds to it. -->
-    <span class="od num">${o.price === lo ? esc(i === 0 ? x('bestShort') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
+    <span class="od num">${o.price === lo ? esc(x('bestShort')) : '+' + money(o.price - lo) + ' ֏'}</span>
     ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 
@@ -2488,6 +2527,12 @@ function render(keepScroll) {
   else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' — Better'; window.scrollTo(0, 0); }
   else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — Better'; window.scrollTo(0, 0); }
   else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — Better'; window.scrollTo(0, 0); }
+  else if (h === '/blog' || h.startsWith('/blog/')) {
+    const a = h.startsWith('/blog/') && BLOG.find(b => b.id === h.slice(6));
+    main.innerHTML = a ? postView(a) : blogView();
+    document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' — Better';
+    window.scrollTo(0, 0);
+  }
   else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — Better'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
   else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — Better'; window.scrollTo(0, 0); }
   else if (h === '/search') {
@@ -2512,11 +2557,12 @@ function render(keepScroll) {
   painted = true;
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search'].includes(h) && !h.startsWith('/offers/');
+  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
   if (home) requestAnimationFrame(dealEdges);
   if (restoreY !== null) window.scrollTo(0, restoreY);
+  document.body.classList.toggle('has-pbar', !!main.querySelector('.pbar'));
   paintHist();
   moneyFx();
 }

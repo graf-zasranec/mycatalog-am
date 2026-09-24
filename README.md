@@ -26,6 +26,7 @@ See **DEPLOY.md**. After buying a domain: add a `CNAME` file with it, set `SITE`
 | `data/merged.json` | products folded into another; old links redirect to the survivor |
 | `data/terms.json` | spec vocabulary in Armenian and Russian |
 | `data/strings.json` | UI labels in all three languages |
+| `data/blog.json` | blog articles in hy, ru and en; built into the app (`#/blog`) and as static pages under `b/` |
 | `images/cut/` | transparent product cutouts, `<id>__main.webp` and `<id>__<colour>.webp` |
 | `images/thumb/` | 600 px copies of the cutouts for cards |
 
@@ -52,7 +53,7 @@ A spec the maker's sheet did not settle is listed in the product's `unsure` arra
 "unconfirmed". `tools/resolve-unsure.mjs` records how the last batch was settled: confirmed,
 corrected or deleted.
 
-Names are followed by a small tag: the launch year for phones, tablets, watches and headphones
+Names are followed by a small tag: the launch year for phones, tablets, watches, headphones and laptops
 (`year`, or the year of `released`), the screen for TVs and monitors. `tools/years.mjs` holds the
 years that are certain; a product without one shows no tag rather than a guess.
 
