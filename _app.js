@@ -727,7 +727,6 @@ const SORTS = {
   battery: (a, b) => (b.battery?.capacity || 0) - (a.battery?.capacity || 0),
   screen: (a, b) => (b.display?.size || 0) - (a.display?.size || 0),
   savings: (a, b) => spreadOf(b) - spreadOf(a),
-  performance: (a, b) => (b.chipset?.antutu || 0) - (a.chipset?.antutu || 0),
   shops: (a, b) => shopCount(offersFor(b)) - shopCount(offersFor(a)),
   ram: (a, b) => topOf(b, 'ram') - topOf(a, 'ram'),
   storage: (a, b) => topOf(b, 'storage') - topOf(a, 'storage')
@@ -736,9 +735,8 @@ const topOf = (p, k) => Math.max(0, ...(p.variants || []).map(v => v[k] || 0));
 // A sort is only worth offering when the items on screen actually carry the number: "Battery"
 // on a page of desktops sorts nothing, it just puts a dead option in the menu.
 const SORT_NEEDS = { battery: p => p.battery?.capacity, screen: p => p.display?.size,
-  ram: p => topOf(p, 'ram'), storage: p => topOf(p, 'storage'), savings: p => spreadOf(p),
-  performance: p => p.chipset?.antutu };
-const SORT_ALL = ['popular', 'price_asc', 'price_desc', 'savings', 'shops', 'newest', 'brand', 'performance', 'ram', 'storage', 'battery', 'screen'];
+  ram: p => topOf(p, 'ram'), storage: p => topOf(p, 'storage'), savings: p => spreadOf(p) };
+const SORT_ALL = ['popular', 'price_asc', 'price_desc', 'savings', 'shops', 'newest', 'brand', 'ram', 'storage', 'battery', 'screen'];
 if (!SORT_ALL.includes(st.sort)) st.sort = D.sort;   // a sort key we removed must not survive in saved state
 const sortKeys = () => { const v = inView(); return SORT_ALL.filter(k => !SORT_NEEDS[k] || v.some(SORT_NEEDS[k])); };
 const sortLabel = k => (X[st.lang].sorts && X[st.lang].sorts[k]) || t('sort.' + k);
@@ -780,7 +778,6 @@ const GROUPS = [
     ['f.process', p => p.chipset.process],
     ['f.cpu', p => p.chipset.cpu],
     ['f.gpu', p => p.graphics?.name || p.chipset?.gpu],
-    ['f.antutu', p => p.chipset?.antutu && money(p.chipset.antutu), p => p.chipset?.antutu, 1],
   ]],
   ['sec.memory', [
     // an item with nothing to choose (earbuds) or no RAM figure (a watch) shows no row at all
@@ -833,7 +830,7 @@ const FIELD_OF = {
   'f.refresh_rate': 'display.refresh', 'f.ppi': 'display.ppi', 'f.brightness': 'display.brightness',
   'f.protection': 'display.protection', 'f.touch': 'display.touch',
   'f.chipset': 'chipset.name', 'f.process': 'chipset.process', 'f.cpu': 'chipset.cpu',
-  'f.gpu': 'graphics.name', 'f.antutu': 'chipset.antutu', 'f.card_slot': 'cardSlot',
+  'f.gpu': 'graphics.name', 'f.card_slot': 'cardSlot',
   'f.main_cam': 'camera.main', 'f.ultrawide': 'camera.ultrawide', 'f.telephoto': 'camera.telephoto',
   'f.front_cam': 'camera.front', 'f.video': 'camera.video',
   'f.capacity': 'battery.capacity', 'f.charging': 'battery.wired', 'f.wireless': 'battery.wireless',
