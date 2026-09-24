@@ -1,5 +1,6 @@
 <title>Better.am</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@144,800&amp;text=bter.&amp;display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=swap">
 <style>
 /* ================= tokens ================= */
@@ -105,7 +106,8 @@ button,input,select,textarea{font:inherit;color:inherit}
    so it inherited #000 - a colour that is in no palette here - and spilled the circle it sat
    in. At this size the glyph could not be read as anything, so it is gone rather than fixed. */
 .topnav .logo .m{width:9px;height:9px;border-radius:50%;background:var(--brand);flex:none}
-.topnav .logo em{font-style:normal;color:var(--brand);font-weight:700}
+.topnav .logo .wm{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.3em;letter-spacing:-.03em;line-height:1}
+.topnav .logo em{font-style:normal;color:var(--brand)}
 .nav{display:flex;gap:2px;flex:none}
 .nav a{padding:8px 12px;border-radius:0;font-weight:600;font-size:0.875rem;color:var(--muted);
   box-shadow:inset 0 -1px 0 transparent}
@@ -1248,7 +1250,7 @@ a.store:hover .nm{color:var(--brand)}
 <a class="skip" href="#main" id="skipLink">Main</a>
 <div class="mast" id="mast">
   <div class="shell topnav">
-    <a class="logo" href="#/"><span class="m"></span><span>Better<em>.am</em></span></a>
+    <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
     <nav class="nav" id="nav"></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
