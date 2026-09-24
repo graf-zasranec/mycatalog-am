@@ -46,7 +46,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
+  GROUPS, specVal, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -193,6 +193,18 @@ is(app.unsureRow(uns, 'f.capacity'), true, 'an unconfirmed field is marked');
 is(app.unsureRow(uns, 'f.wifi'), true, 'a whole unconfirmed block covers its rows');
 is(app.unsureRow(uns, 'f.weight'), false, 'a confirmed field is not marked');
 is(app.unsureRow({}, 'f.capacity'), false, 'nothing flagged, nothing marked');
+
+/* --- no spec cell prints a formatted hole ---------------------------------------------- */
+// The comparison read the getters raw and showed "undefined × undefined × undefined mm" and
+// "NaN mAh" for every laptop and earbud missing a field. Every getter, every product.
+const holes = [];
+for (const p of phones) for (const [, defs] of app.GROUPS) for (const [k, get] of defs) {
+  const v = app.specVal(get, p);
+  if (v != null && /undefined|NaN|null/.test(String(v))) holes.push(p.id + ' ' + k);
+}
+is(holes.slice(0, 3), [], 'no spec value renders undefined / NaN / null');
+is(app.specVal(p => p.body.height + ' mm', { body: {} }), null, 'a missing dimension is no row, not "undefined mm"');
+is(app.specVal(() => { throw 0; }, {}), null, 'a getter that throws is no row');
 
 /* --- the countdown counts down, and stops ---------------------------------------------- */
 is(app.cdText('2000-01-01'), '', 'a date that has passed shows no clock');

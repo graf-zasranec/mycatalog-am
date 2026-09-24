@@ -156,7 +156,8 @@ st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id)).slice(0, MAXCMP);
 
 const BRANDS = [...new Set(DATA.map(p => p.brand))].sort();
 if (st.cat && !DATA.some(p => (p.category || 'phone') === st.cat)) st.cat = '';
-const byId = id => DATA.find(p => p.id === id);
+const BY_ID = new Map(DATA.map(p => [p.id, p]));
+const byId = id => BY_ID.get(id);
 
 /* ================= format ================= */
 const t = k => (STR[st.lang] && STR[st.lang][k]) || STR.hy[k] || k;
@@ -312,7 +313,11 @@ function loadLazy() {
 // The words someone types are rarely in the shop's order: "samsung fold" is how a person asks
 // for the Galaxy Z Fold 8, and a contiguous-substring test answers "no results" to it. Every
 // word has to appear somewhere, order free.
-const hay = p => (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase();
+// Every keystroke and every filter count asks this of all 1304 products; the text never changes.
+const HAY = new WeakMap();
+const hay = p => { let h = HAY.get(p);
+  if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase());
+  return h; };
 function hayMatch(p, q) {
   // Nothing in Armenia sells it today, so it has no business in a price-comparison list: no card
   // in the grid, no row in the search box, no entry in a category count. Its PAGE stays, and so
@@ -540,9 +545,18 @@ if (!SORT_ALL.includes(st.sort)) st.sort = D.sort;   // a sort key we removed mu
 const sortKeys = () => { const v = inView(); return SORT_ALL.filter(k => !SORT_NEEDS[k] || v.some(SORT_NEEDS[k])); };
 const sortLabel = k => (X[st.lang].sorts && X[st.lang].sorts[k]) || t('sort.' + k);
 const results = () => DATA.filter(p => matches(p, st)).sort(SORTS[st.sort] || SORTS.popular);
-const cnt = extra => DATA.filter(p => matches(p, { ...st, ...extra })).length;
+// One merged state per count, not one per product: the spread used to run 1304 times for every
+// option in every filter panel, on every repaint.
+const cnt = extra => { const s = { ...st, ...extra }; let n = 0; for (const p of DATA) if (matches(p, s)) n++; return n; };
 
 /* ================= spec table ================= */
+// A getter that formats a missing field yields "null GB" / "NaN mAh" / "undefined x undefined".
+// Both the product page and the comparison read every getter through this, so neither can print
+// one - the comparison used to show "undefined × undefined × undefined mm" for 296 products.
+const specVal = (get, p) => {
+  let v; try { v = get(p); } catch (e) { return null; }
+  return v == null || v === '' || /undefined|null|NaN/.test(String(v)) ? null : v;
+};
 const GROUPS = [
   ['sec.display', [
     ['f.screen_size', p => p.display.size + '″', p => p.display.size],
@@ -1187,6 +1201,7 @@ function pager(total) {
 // Every path that changes what is being listed must send you back to page 1 - otherwise a
 // filter applied on page 4 shows an empty grid for a reason nothing on screen explains. One
 // signature here instead of a reset in each of the nine handlers that can change it.
+let qT;
 let lastSig = null;
 function refresh() {
   const all = results(), box = $('#gridbox');
@@ -1722,10 +1737,7 @@ function detailView(p) {
 
   const specs = GROUPS.map(([g, rows]) => {
     const body = rows.map(([k, get]) => {
-      let v; try { v = get(p); } catch (e) { v = null; }
-      // A getter that formats a missing field yields "null GB" / "NaN mAh" / "undefined x undefined".
-      // Catching that here covers every getter, including ones added for future categories.
-      const bad = v == null || v === '' || /undefined|null|NaN/.test(String(v));
+      const v = specVal(get, p), bad = v == null;
       const key = k === 'f.storage' ? storageLabel(p) : k;
       const q = unsureRow(p, k) ? ` <abbr class="unsure" title="${esc(x('unsureTip'))}">${esc(x('unsureMark'))}</abbr>` : '';
       return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}${q}</dd></div>`;
@@ -2100,7 +2112,8 @@ function compareView() {
   for (const [g, defs] of GROUPS) {
     rows += `<div class="grp">${esc(t(g))}</div>`;
     for (const [k, get, num, dir] of defs) {
-      const vals = ps.map(p => { try { const v = get(p); return v == null || v === '' ? '—' : String(v); } catch (e) { return '—'; } });
+      // tr(): the product page shows these in the reader's language, and the same row here was English
+      const vals = ps.map(p => { const v = specVal(get, p); return v == null ? '—' : tr(String(v), st.lang); });
       if (vals.every(v => v === '—')) continue;
       const same = vals.every(v => v === vals[0]);
       same ? nSame++ : nDiff++;
@@ -2196,6 +2209,7 @@ function paintCmpRes() {
 // going back from a product to the results still has the results. Typing is unaffected: it
 // repaints the grid through refresh() and never reaches render().
 const keepsQuery = route => !(route === '' || route === '/' || route.startsWith('/c/'));
+let painted = false;
 function render(keepScroll) {
   const raw = location.hash.replace(/^#/, '');
   // #buy / #results / #main are in-page anchors, not routes. They used to fall through to
@@ -2253,10 +2267,13 @@ function render(keepScroll) {
     // to the front page landed ~1480px past where you left, while a category page was exact.
     restoreY = keepScroll ? window.scrollY : (remembers(h) ? (scrollMem.get(h) || 0) : 0);
   }
-  if (!keepScroll) {
+  // Only on a route CHANGE. On the first paint the browser has not moved anyone yet, and taking
+  // focus into the grid put the first Tab on a card - past the skip link, the menu and the search.
+  if (!keepScroll && painted) {
     const head = $('#main h1') || $('#main h2');
     if (head) { head.tabIndex = -1; head.focus({ preventScroll: true }); }
   }
+  painted = true;
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
   const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search'].includes(h) && !h.startsWith('/offers/');
@@ -2558,13 +2575,15 @@ function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.inne
 function setExpanded(v) { const q = $('#q'); if (q) q.setAttribute('aria-expanded', v ? 'true' : 'false'); }
 // Enter, or the search button, is what opens the results page.
 function submitSearch() {
+  // Enter inside the 140 ms debounce left the timer armed, and it reopened the suggestions on top
+  // of the results page it had just opened.
+  clearTimeout(qT);
   closeSuggest();
   const el = $('#q');
   if (el) el.blur();
   save();
   if (location.hash !== '#/search') location.hash = '#/search'; else render();
 }
-let qT;
 document.addEventListener('input', e => {
   const el = e.target;
   if (el.id === 'q') {
