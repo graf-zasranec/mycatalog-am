@@ -235,33 +235,46 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cv-h em{font-style:normal;color:var(--brand)}
 .cv-sub{color:var(--body);font-size:1.03rem;max-width:52ch;margin-top:18px}
 .cv-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-/* ---- the hero's right half: one saving, drawn as two bars ---- */
+/* ---- the tag after a name: launch year (phones, tablets, watches, headphones) or screen (TV,
+   monitor). Brick on a soft wash, in the mono face, sized from the text it follows - so one rule
+   serves a 58 px page title and a 15 px card title alike. */
+.ny{display:inline-block;margin-left:.45em;padding:.2em .48em .16em;border-radius:.42em;
+  font-family:var(--mono);font-size:max(10.5px,.5em);font-weight:600;letter-spacing:.04em;line-height:1;
+  color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
+  vertical-align:.28em;white-space:nowrap;text-decoration:none}
+.ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
+.pname .ny{font-size:max(12px,.3em);vertical-align:.9em;letter-spacing:.06em}
+.pcard h3 .ny,.dl-n .ny,.sg-n .ny,.cwt b .ny,.cname .ny{font-size:10.5px;vertical-align:.12em}
+.spot-c .ny{color:#FFD9D4;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);font-size:11px;vertical-align:.12em}
+/* ---- the hero's right half: one saving, against what shops usually ask ---- */
 .spot{display:none}
 @media (min-width:1000px){
   /* the headline, text and buttons are ONE column item, so a taller card cannot pull them apart */
-  .cv.has-spot{grid-template-columns:minmax(0,1fr) minmax(300px,380px);column-gap:56px;align-items:center}
+  .cv.has-spot{grid-template-columns:minmax(0,1fr) minmax(320px,400px);column-gap:56px;align-items:center}
   .cv.has-spot > .cv-l{grid-column:1;grid-row:1}
-  .spot{display:grid;gap:12px;grid-column:2;grid-row:1;background:var(--surface);
-    border:1px solid var(--line);border-radius:var(--r-xl);padding:18px 20px 20px;box-shadow:var(--shadow-m)}
+  .spot{display:grid;grid-column:2;grid-row:1;color:var(--text);text-decoration:none;
+    border-radius:var(--r-xl);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s,border-color .2s}
+  .spot:hover{transform:translateY(-2px)}
   /* on a wide screen the spotlight IS this deal, so the row below does not repeat it */
   .dl.is-spot{display:none}
 }
 .spot-e{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
-.spot-im{display:grid;place-items:center;background:var(--shot);border-radius:var(--r-lg);aspect-ratio:16/10;overflow:hidden}
-.spot-im img{max-width:72%;max-height:84%;width:auto;height:auto;object-fit:contain}
-.spot-n{font-size:19px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
-.spot-n a{color:var(--text)}
-.spot-n a:hover{color:var(--brand)}
-.spot-n small{display:block;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
-.spot-bars{display:grid;gap:8px}
-.sb{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:12.5px;font-weight:600;color:var(--body)}
-.sb span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sb i{display:block;height:10px;border-radius:5px;background:var(--brand);opacity:.55;width:var(--w)}
-.sb.best i{background:var(--good);opacity:1}
-.sb b{font-size:13.5px;color:var(--text);white-space:nowrap}
-.sb.best b{color:var(--good)}
-.spot-s{margin:0;font-size:13px;color:var(--good)}
-.spot .btn{justify-self:start}
+.spot-p{font-weight:800;letter-spacing:-.03em;line-height:1.05}
+/* a poster - dark tinted panel in both themes, the product bleeding off the edge */
+.spot-c{position:relative;overflow:hidden;min-height:340px;padding:24px;align-content:space-between;gap:18px;color:#fff;
+  background:radial-gradient(120% 90% at 85% 25%,#6B2B2F 0%,#3A1C22 45%,#1B1116 100%);box-shadow:var(--shadow-m)}
+.spot-c .spot-e{color:#FFB4AC;position:relative}
+.spot-c img{position:absolute;right:-36px;top:96px;width:180px;height:220px;object-fit:contain;
+  filter:drop-shadow(0 30px 40px rgba(0,0,0,.55));transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.spot-c:hover img{transform:translate(-6px,-6px) rotate(-2deg)}
+.spot-pct{position:relative;font-size:68px;font-weight:800;letter-spacing:-.05em;line-height:.9}
+.spot-pct small{display:block;font-size:13px;letter-spacing:0;font-weight:600;color:#F2D9D6;margin-top:10px;max-width:17ch;line-height:1.35}
+.spot-bot{position:relative;display:grid;gap:4px;max-width:60%}
+.spot-c .spot-n{font-size:17px;font-weight:800;line-height:1.25}
+.spot-bot small{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#F2D9D6}
+.spot-c .spot-p{font-size:26px}
+.spot-at{font-size:12.5px;color:#F2D9D6}
+@media (prefers-reduced-motion:reduce){.spot,.spot-c img{transition:none}.spot:hover,.spot-c:hover img{transform:none}}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;
   border-top:2px solid var(--apricot);padding-top:14px;margin-top:26px}
 .cv-bar div{display:flex;align-items:baseline;gap:8px}
@@ -624,7 +637,18 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .pshotwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   filter:drop-shadow(0 30px 46px rgba(20,19,20,.20))}
 .pside{padding-top:8px}
-.og{border-top:1px solid var(--line2);padding:16px 0}
+/* The options column ran 250 px below the photo, most of it the "compare with" cards. They sit
+   under the photo instead, side by side, and the options column spans both rows - so the photo,
+   the options and the cards finish level rather than leaving a hole under the picture. */
+@media (min-width:761px){
+  .pgrid{grid-template-rows:auto 1fr}
+  .pshotwrap{grid-column:1;grid-row:1}
+  .pside{grid-column:2;grid-row:1/span 2}
+  .pgrid>.cwith{grid-column:1;grid-row:2;align-self:start;margin-top:0}
+}
+.og{border-top:1px solid var(--line2);padding:13px 0}
+/* the first group sits right under the title: a rule above it separates nothing */
+.pside>.og:first-child{border-top:0;padding-top:4px}
 .og>label{display:flex;align-items:baseline;gap:8px;font-family:var(--mono);font-size:12px;
   letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:11px}
 .og>label b{color:var(--text);font-family:var(--ui);font-size:0.9375rem;font-weight:700;letter-spacing:0;text-transform:none}
@@ -660,6 +684,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
    hard-coded and nothing can push the column wider than the screen. min-width:0 lets a long name
    wrap inside its card instead of stretching it. */
 .cwith{margin-top:22px}
+.pgrid>.cwith .cwrow{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
 .cwith h3{margin:0 0 10px;font-family:var(--mono);font-size:0.75rem;font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted)}
 .cwrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
@@ -956,19 +981,21 @@ a.store:hover .nm{color:var(--brand)}
 .olist{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r-lg);overflow:hidden}
 .olist li+li{border-top:1px solid var(--line)}
-.orow{display:grid;grid-template-columns:34px minmax(0,1.1fr) minmax(0,1.4fr) auto 110px 22px;
+.orow{display:grid;grid-template-columns:34px minmax(0,1.1fr) minmax(0,1.4fr) minmax(112px,auto) 128px 22px;
   gap:14px;align-items:center;padding:15px 18px;transition:background .12s}
 .orow:hover{background:var(--surface2)}
 .orow .rk{font-size:12px;color:var(--muted);font-weight:700}
 .orow .sh{font-weight:700;font-size:0.97rem;overflow-wrap:anywhere}
 .orow .vr{font-size:0.8125rem;color:var(--muted);overflow-wrap:anywhere}
-.orow .pr{font-size:18px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
-.orow .dl{text-align:right;font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
+.orow .pr{font-size:18px;font-weight:800;letter-spacing:-.02em;white-space:nowrap;text-align:right}
+/* The difference column: one pill of one size on every row, so "Best price" and "+16 000" line up
+   as a column instead of reading as two different kinds of thing. */
+.orow .od{text-align:center;font-size:12.5px;font-weight:700;line-height:1.2;padding:6px 10px;border-radius:var(--pill);white-space:nowrap;
+  background:color-mix(in srgb,var(--bad) 9%,transparent);color:var(--bad)}
 .orow .ar{color:var(--muted);font-size:15px}
 .orow:hover .ar{color:var(--brand-2)}
 .orow.best{background:var(--good-soft)}
-.orow.best .dl{color:var(--good)}
-.orow:not(.best) .dl{color:var(--bad)}
+.orow.best .od{background:var(--good);color:var(--bg)}
 .orow.best .rk{color:var(--good)}
 .orow.best:hover{background:var(--good-soft)}
 /* A price with no page behind it. It still belongs on the list - somebody read it off a shelf -
@@ -979,7 +1006,7 @@ a.store:hover .nm{color:var(--brand)}
 @media (max-width:760px){
   .orow{grid-template-columns:28px 1fr auto;row-gap:3px;padding:13px 14px}
   .orow .vr{grid-column:2/-1;order:3}
-  .orow .dl{grid-column:2/-1;order:4;text-align:left}
+  .orow .od{grid-column:2/-1;order:4;justify-self:start;padding:3px 9px}
   .orow .ar{display:none}
 }
 

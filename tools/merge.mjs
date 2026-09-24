@@ -50,9 +50,11 @@ for (const [keepId, ...loseIds] of plan.merge || []) {
     gone.set(loseId, keepId);
     keep.aliases = [...new Set([...(keep.aliases || []), lose.name, ...(lose.aliases || [])])]
       .filter(a => a !== keep.name);
-    const have = new Set((keep.variants || []).map(v => `${v.ram ?? ''}|${v.storage ?? ''}`));
+    // the screen is part of a variant: an 11-inch and a 13-inch iPad with 256 GB are two
+    const vk = v => `${v.ram ?? ''}|${v.storage ?? ''}|${v.size ?? ''}`;
+    const have = new Set((keep.variants || []).map(vk));
     for (const v of lose.variants || [])
-      if (!have.has(`${v.ram ?? ''}|${v.storage ?? ''}`)) (keep.variants ||= []).push(v);
+      if (!have.has(vk(v))) (keep.variants ||= []).push(v);
     keep.priceAmd = Math.min(keep.priceAmd || Infinity, lose.priceAmd || Infinity);
     keep.priceAmdMax = Math.max(keep.priceAmdMax || 0, lose.priceAmdMax || 0);
     keep.popularity = Math.max(keep.popularity || 0, lose.popularity || 0);
@@ -94,7 +96,12 @@ for (const [lose, keep] of gone) {
   const byDay = new Map((history.points[keep] || []).map(x => [x.d, x]));
   for (const x of pts) {
     const y = byDay.get(x.d);
-    byDay.set(x.d, y ? { d: x.d, lo: Math.min(x.lo, y.lo), hi: Math.max(x.hi, y.hi), shops: Math.max(x.shops || 0, y.shops || 0) } : x);
+    if (!y) { byDay.set(x.d, x); continue; }
+    // the per-configuration prices too, or a merge threw away the chart's by-size history
+    const t = { ...(y.t || {}) };
+    for (const [k, v] of Object.entries(x.t || {})) t[k] = t[k] == null ? v : Math.min(t[k], v);
+    byDay.set(x.d, { d: x.d, lo: Math.min(x.lo, y.lo), hi: Math.max(x.hi, y.hi), shops: Math.max(x.shops || 0, y.shops || 0),
+      ...(Object.keys(t).length ? { t } : {}) });
   }
   history.points[keep] = [...byDay.values()].sort((a, b) => a.d.localeCompare(b.d));
 }

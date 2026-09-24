@@ -1,6 +1,6 @@
 # Better
 
-A price comparison for the Armenian market, in Armenian, Russian and English. 1221 products in
+A price comparison for the Armenian market, in Armenian, Russian and English. 1206 products in
 14 sections - phones, laptops, TVs, monitors, headphones, watches, tablets, speakers and more -
 with prices from 21 Armenian shops, refreshed every night.
 
@@ -43,6 +43,18 @@ if the stylesheet's braces do not balance.
     node tools/prune.mjs [--write]             # drop products nothing in the country sells
     python tools/thumbs.py --check             # rebuild thumbnails that no longer match their photo
     python tools/photo-dupes.py                # list colours that share one photo (no dot for them)
+
+A product sold in several screens (the iPad Air in 11 and 13 inches, a TV range) is ONE product with
+the size as a variant, like capacity - never one product per size. Names carry no colour, memory,
+screen size or year unless that is the only thing telling two generations apart (TV A 2025 / 2026).
+
+A spec the maker's sheet did not settle is listed in the product's `unsure` array and shown as
+"unconfirmed". `tools/resolve-unsure.mjs` records how the last batch was settled: confirmed,
+corrected or deleted.
+
+Names are followed by a small tag: the launch year for phones, tablets, watches and headphones
+(`year`, or the year of `released`), the screen for TVs and monitors. `tools/years.mjs` holds the
+years that are certain; a product without one shows no tag rather than a guess.
 
 A merge moves the offers, price history and shop pins to the survivor and records the old id in
 `data/merged.json`, so a link that was already shared still lands.

@@ -25,9 +25,9 @@ const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(i
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
 const U = {
-  hy: { mah: 'մԱժ', w: 'Վտ', g: 'գ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
-  ru: { mah: 'мА·ч', w: 'Вт', g: 'г', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
-  en: { mah: 'mAh', w: 'W', g: 'g', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
+  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
+  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
+  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
 };
 const X = {
   hy: {
@@ -43,7 +43,7 @@ const X = {
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ էժան', sameBest: 'նույն գինը',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենաէժան գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
     spotT: 'Օրվա գործարքը',
-    dealSave: '{shop}-ից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    dealUsual: 'սովորական գնից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -56,7 +56,7 @@ const X = {
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
     emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
-    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի էժան', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
+    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի էժան', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
@@ -75,7 +75,7 @@ const X = {
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина', sameBest: 'та же цена',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
     spotT: 'Выгода дня',
-    dealSave: 'на {n} ֏ дешевле, чем в {shop}', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
+    dealUsual: 'на {n} ֏ ниже обычной цены', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
@@ -91,7 +91,7 @@ const X = {
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
     emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
-    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
+    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
@@ -110,7 +110,7 @@ const X = {
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop', sameBest: 'same price',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
     spotT: 'Deal of the day',
-    dealSave: '{n} ֏ less than {shop}', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
+    dealUsual: '{n} ֏ below the usual price', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
@@ -123,7 +123,7 @@ const X = {
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
     emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
-    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
+    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best price', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
@@ -212,6 +212,23 @@ const nx = (n, k) => n + ' ' + plw(n, k);
 // Apple and Samsung model names already say the brand - "iPhone 17 Pro", not "Apple iPhone 17 Pro".
 // The brand is still searchable; see the query test below, which adds p.brand back in.
 const BARE_BRAND = new Set(['apple', 'samsung']);
+// A tag after the name: the launch year for phones, tablets, watches and headphones - which
+// generation this is, at a glance - and the screen for TVs and monitors, where the diagonal is the
+// first thing anyone asks. Drawn, never written into the name, so search and sharing stay clean.
+const YEAR_TAG = new Set(['phone', 'tablet', 'watch', 'headphones']), SIZE_TAG = new Set(['tv', 'monitor']);
+function nameTag(p, scr) {
+  if (YEAR_TAG.has(p.category)) {
+    const y = p.year || +(String(p.released || '').match(/^(\d{4})/) || [])[1];
+    return y ? `<span class="ny num">${y}</span>` : '';
+  }
+  if (SIZE_TAG.has(p.category)) {
+    const ss = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))].sort((a, b) => a - b);
+    const v = scr != null && ss.includes(scr) ? inch(scr)
+      : ss.length > 1 ? ss[0] + '–' + inch(ss[ss.length - 1]) : ss.length ? inch(ss[0]) : p.display?.size ? inch(p.display.size) : '';
+    return v ? `<span class="ny sz num">${v}</span>` : '';
+  }
+  return '';
+}
 const fullName = p => (BARE_BRAND.has(p.brand.toLowerCase()) || p.name.toLowerCase().startsWith(p.brand.toLowerCase()))
   ? p.name : p.brand + ' ' + p.name;
 const money = n => Math.round(n).toLocaleString('en-US').replace(/,/g, ' ');
@@ -296,18 +313,29 @@ const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) 
 // the days recorded before that only knew the cheapest of anything, which for the smallest size
 // is the same number, so that size keeps its full history and the others start from the change.
 let HCUR = null;
-function histSeries(p, stor) {
+function histSeries(p, stor, scr) {
   const sizes = [...new Set((p.variants || []).map(v => v.storage).filter(v => v != null))];
-  const key = stor != null ? String(stor) : 'base';
+  const base = stor != null ? String(stor) : 'base';
   const smallest = stor == null || sizes.length < 2 || stor === Math.min(...sizes);
+  // A product in several screens records "256@13" per screen. Days recorded before that carry one
+  // price per storage for all screens together - in practice the smallest screen's - so they
+  // stand in for the smallest screen only.
+  const screens = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))];
+  const multi = screens.length > 1;
+  const key = multi && scr != null ? base + '@' + scr : base;
+  const smallScr = !multi || scr == null || scr === Math.min(...screens);
+  const bySize = t => Object.keys(t).some(k => k.includes('@'));
   return (HIST()[p.id] || []).map(pt => ({ d: pt.d, t: Date.parse(pt.d + 'T12:00:00Z'), s: pt.shops,
-    v: pt.t && pt.t[key] != null ? pt.t[key] : (!pt.t && smallest ? pt.lo : null) })).filter(pt => pt.v != null);
+    v: pt.t && pt.t[key] != null ? pt.t[key]
+      : pt.t && multi && !bySize(pt.t) && smallScr && pt.t[base] != null ? pt.t[base]
+      : (!pt.t && smallest && smallScr ? pt.lo : null) })).filter(pt => pt.v != null);
 }
 function historyHTML(p) {
   if (!(HIST()[p.id] || []).length) { HCUR = null; return ''; }
-  const stor = SEL.id === p.id ? SEL.storage : null;
-  const cfg = stor != null ? gb(stor, p.variantUnit) : fullName(p);
-  const S = histSeries(p, stor);
+  const stor = SEL.id === p.id ? SEL.storage : null, scr = SEL.id === p.id ? SEL.size : null;
+  const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
+  const cfg = [multiScr && scr != null ? inch(scr) : '', stor != null ? gb(stor, p.variantUnit) : ''].filter(Boolean).join(' · ') || fullName(p);
+  const S = histSeries(p, stor, scr);
   HCUR = S.length > 1 ? { S, cfg } : null;
   const head = `<h2 class="sh">${esc(x('histT'))}</h2>`;
   if (!S.length) return head + `<p class="note">${esc(x('histNone').replace('{c}', cfg))}</p>`;
@@ -515,7 +543,7 @@ const FILT = {
   stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
            of: p => topOf(p, 'storage') || null, all: p => (p.variants || []).map(v => v.storage),
            fmt: v => gb(v, viewUnit()) },
-  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u('mah') },
+  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
   life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v + ' ' + x('hrs') },
@@ -653,30 +681,42 @@ function matches(p, s) {
 // sells in one size only that is harmless, but the MacBook Pro 14 M4 Pro sells at 512 GB and
 // 1 TB and all three of its offers state no capacity - so the front page promised 274 000 off
 // by putting one shop's base model beside the same shop's higher one.
-const bestTier = p => {
+// Every configuration a product is sold in (same capacity, RAM and SIM build), with one price per
+// shop - its cheapest. Two colours at one shop are not a saving between shops, and the front page
+// names the shops, so each end has to be one.
+const tiersOf = p => {
   const sizes = new Set((p.variants || []).map(v => v.storage).filter(v => v != null));
   const byTier = new Map();
   for (const o of offersFor(p)) {
     if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
-    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?');
+    // screen size too: a 13-inch and a 15-inch MacBook with the same memory are not one product
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '');
     (byTier.get(k) || byTier.set(k, []).get(k)).push(o);
   }
-  let best = null;
+  const out = [];
   for (const [tier, offs] of byTier) {
-    // One price per shop - its cheapest. Two colours at one shop are not a saving between shops,
-    // and the front page names the two shops, so each end has to be one.
     const perShop = new Map();
     offs.forEach((o, i) => { const k = o.shop ?? i; if (!perShop.has(k) || o.price < perShop.get(k).price) perShop.set(k, o); });
     if (perShop.size < 2) continue;
     const list = [...perShop.values()].sort((a, b) => a.price - b.price);
     const loO = list[0], hiO = list[list.length - 1], lo = loO.price, hi = hiO.price;
-    const [stor, ram, sim] = tier.split('|');
-    if (hi > lo && (!best || hi - lo > best.gap))
-      best = { p, lo, hi, gap: hi - lo, storage: stor === 'base' ? null : +stor, ram: ram ? +ram : null,
-               esim: sim === 'e' ? true : sim === 'n' ? false : null, loShop: loO.shop, hiShop: hiO.shop, shops: list.length };
+    // the usual price: what the middle shop asks - a real price somebody charges, and one that a
+    // single mislabelled listing at either end cannot move
+    const mid = list[list.length >> 1].price;
+    const [stor, ram, sim, size] = tier.split('|');
+    out.push({ p, lo, hi, mid, gap: hi - lo, below: mid - lo, storage: stor === 'base' ? null : +stor, ram: ram ? +ram : null,
+               size: size && new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1 ? +size : null,
+               esim: sim === 'e' ? true : sim === 'n' ? false : null, loShop: loO.shop, hiShop: hiO.shop, shops: list.length });
   }
-  return best;
+  return out;
 };
+// the widest spread between two shops for one configuration
+const bestTier = p => tiersOf(p).reduce((a, r) => r.hi > r.lo && (!a || r.gap > a.gap) ? r : a, null);
+// The front page's saving is measured against the usual price, not the dearest shop: one shop
+// listing a bigger model as the 512 GB made a "saving" of 294 000 on a phone nobody overcharges
+// for. Three shops at least, or there is no middle to speak of.
+const typTier = p => tiersOf(p).filter(r => r.shops >= 3 && r.below > 0)
+  .reduce((a, r) => !a || r.below / r.mid > a.below / a.mid ? r : a, null);
 const spreadOf = p => bestTier(p)?.gap || 0;
 const SORTS = {
   popular: (a, b) => b.popularity - a.popularity,
@@ -723,8 +763,12 @@ const GROUPS = [
     // comparison reads as two unrelated numbers. Normalised here rather than in the data, so a
     // future scrape cannot reintroduce it: always short x long, the way every spec sheet lists it.
     ['f.resolution', p => { const r = p.display?.resolution; if (!r) return null;
+      // ...short x long for what you hold upright (a phone, a watch); a TV, monitor, laptop or
+      // tablet sheet writes the long side first - 3840×2160 - and "2160×3840" reads as a typo.
       const m = /^(\d+)\s*[x×]\s*(\d+)$/.exec(String(r).trim());
-      return m ? Math.min(+m[1], +m[2]) + '×' + Math.max(+m[1], +m[2]) : r; }],
+      if (!m) return r;
+      const [a, b] = [Math.min(+m[1], +m[2]), Math.max(+m[1], +m[2])];
+      return /^(phone|watch)$/.test(p.category) ? a + '×' + b : b + '×' + a; }],
     ['f.refresh_rate', p => p.display.refresh + ' ' + u('hz'), p => p.display.refresh, 1],
     ['f.ppi', p => p.display.ppi && p.display.ppi + ' ppi', p => p.display.ppi, 1],
     ['f.brightness', p => p.display.brightness && money(p.display.brightness) + ' ' + u('nit'), p => p.display.brightness, 1],
@@ -754,7 +798,8 @@ const GROUPS = [
     ['f.video', p => p.camera.video]
   ]],
   ['sec.battery', [
-    ['f.capacity', p => money(p.battery.capacity) + ' ' + u('mah'), p => p.battery.capacity, 1],
+    // a laptop's battery is rated in watt-hours (70 Wh), not milliamp-hours - "70 mAh" read as a typo
+    ['f.capacity', p => money(p.battery.capacity) + ' ' + u(p.category === 'laptop' ? 'wh' : 'mah'), p => p.battery.capacity, 1],
     ['f.charging', p => p.battery.wired && p.battery.wired + ' ' + u('w'), p => p.battery.wired, 1],
     ['f.wireless', p => p.battery?.capacity == null ? null : p.battery.wireless ? p.battery.wireless + ' ' + u('w') : t('common.no'), p => p.battery?.wireless, 1]
   ]],
@@ -1149,7 +1194,7 @@ function card(p) {
     </div>
     <div class="pbody">
       <span class="eyebrow">${esc(p.brand)}</span>
-      <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></h3>
+      <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${nameTag(p)}</h3>
       <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
       <div class="pfoot"><span class="pprice num">${amd(bestOf(p))}
         <s>${rows.length ? esc(shopName(rows[0][0])) : esc(x('estimated'))}</s></span>
@@ -1165,11 +1210,25 @@ function card(p) {
 // catalogue read as one field. Savings are computed from the REAL spread between shops.
 // A card shows three quick facts, but a phone, a watch and a pair of earbuds do not have
 // the same three. Take whatever the item actually carries and stop at three.
+// The class a screen is sold by, from its pixels: 3840x2160 is "4K", 1920x1080 "Full HD".
+function resClass(r) {
+  const m = /(\d{3,5})\s*[x×]\s*(\d{3,5})/.exec(String(r || ''));
+  if (!m) return '';
+  const L = Math.max(+m[1], +m[2]), S = Math.min(+m[1], +m[2]);
+  return L >= 7680 ? '8K' : L >= 6144 ? '6K' : L >= 5120 ? '5K' : L >= 3840 ? '4K'
+    : S >= 1440 && L >= 3440 ? 'UWQHD' : S >= 1440 ? '2K' : L >= 1920 ? 'Full HD' : 'HD';
+}
 function cardFacts(p, v) {
+  // A TV or monitor is chosen by its screen: the size is on the name already, so the chips are
+  // what kind of picture - resolution class, panel, and for monitors the refresh rate.
+  if (SIZE_TAG.has(p.category)) {
+    return [resClass(p.display?.resolution), p.display?.type,
+      p.category === 'monitor' && p.display?.refresh ? p.display.refresh + ' ' + u('hz') : ''].filter(Boolean).map(esc);
+  }
   const f = [];
   if (p.display?.size) f.push(esc(p.display.size + String.fromCharCode(8243)));
   if (v.storage != null) f.push(esc((v.ram ? v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
-  if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u('mah'))}</span>`);
+  if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u(p.category === 'laptop' ? 'wh' : 'mah'))}</span>`);
   if (p.chipset?.name) f.push(esc(p.chipset.name));
   if (p.audio?.type) f.push(esc(tr(p.audio.type, st.lang)));
   if (p.body?.ip) f.push(esc(p.body.ip));
@@ -1177,10 +1236,11 @@ function cardFacts(p, v) {
 }
 // The front page used to open on one big product photo that changed every two seconds and said
 // nothing about price. It opens on the reason to be here instead: the same product in the same
-// configuration, cheapest shop against dearest, today. Nothing moves unless the reader moves it.
+// configuration, the cheapest shop against what shops usually ask, today. Nothing moves unless the
+// reader moves it.
 //
 // A saving is only offered where it is real: one price per shop, the same capacity, RAM and SIM
-// type at both ends (bestTier), and at least an eighth off the dearest - a 3% spread is noise.
+// type throughout (typTier), three shops at least, and 5% or more under the usual price.
 // Popular products first, and no more than three from one section or one brand, so the row is not
 // ten iPhones.
 const DEALS_MAX = 10;
@@ -1189,8 +1249,8 @@ let DEALS_CACHE = null;
 function deals() {
   if (DEALS_CACHE) return DEALS_CACHE;
   const out = DEALS_CACHE = [], perCat = {}, perBrand = {};
-  const pool = DATA.map(bestTier).filter(r => r && r.gap / r.hi >= 0.08)
-    .sort((a, b) => b.p.popularity - a.p.popularity || b.gap - a.gap);
+  const pool = DATA.map(typTier).filter(r => r && r.below / r.mid >= 0.05)
+    .sort((a, b) => b.p.popularity - a.p.popularity || b.below / b.mid - a.below / a.mid);
   for (const d of [...drops(), ...pool]) {
     if (out.some(o => o.p === d.p)) continue;
     const c = catOf(d.p), b = d.p.brand;
@@ -1216,43 +1276,41 @@ function spark(vals) {
 }
 function dealCard(d, isSpot) {
   const p = d.p;
-  const cfg = [p.brand, d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
+  const cfg = [p.brand, d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
     .filter(Boolean).join(' · ');
   const tail = d.drop
     ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
-    : `<span class="dl-save num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</span>`;
+    : `<span class="dl-save num">${esc(x('dealUsual').replace('{n}', money(d.below)))}</span>`;
   return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
     <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
     <small>${esc(cfg)}</small>
-    <span class="dl-n">${esc(p.name)}</span>
+    <span class="dl-n">${esc(p.name)}${nameTag(p)}</span>
     <span class="dl-p num">${amd(d.lo)}</span>
     <span class="dl-at">${esc(shopName(d.loShop))} · ${esc(nx(d.shops || shopCount(offersFor(p)), 'shops'))}</span>
     ${tail}</a>`;
 }
 // The right half of the hero was empty once the carousel went. It holds the one saving worth
-// leading with: among the most popular deals, the biggest share off the dearest shop - the same
-// product and configuration at two named shops, drawn as two bars. It changes when the prices do,
-// once a night, never while you read. On a phone it is not drawn: the deals row is right below.
+// leading with: among the most popular deals, the biggest share under the usual price. It changes
+// when the prices do, once a night, never while you read. On a phone it is not drawn: the deals
+// row is right below.
 function spotDeal(dl) {
   const pool = dl.filter(d => !d.drop).slice(0, 6);
-  return pool.reduce((a, d) => !a || d.gap / d.hi > a.gap / a.hi ? d : a, null);
+  return pool.reduce((a, d) => !a || d.below / d.mid > a.below / a.mid ? d : a, null);
 }
 function spotHTML(d) {
   if (!d) return '';
-  const p = d.p;
-  const cfg = [d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
-  const n = shopCount(offersFor(p));
-  return `<aside class="spot" aria-labelledby="spotT">
-      <span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>
-      <a class="spot-im" href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${IMG(p.id)}" alt="" decoding="async"></a>
-      <h2 class="spot-n" id="spotT"><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${cfg ? `<small>${esc(cfg)}</small>` : ''}</h2>
-      <div class="spot-bars">
-        <div class="sb best"><span>${esc(shopName(d.loShop))}</span><i style="--w:${(d.lo / d.hi * 100).toFixed(1)}%"></i><b class="num">${amd(d.lo)}</b></div>
-        <div class="sb"><span>${esc(shopName(d.hiShop))}</span><i style="--w:100%"></i><b class="num">${amd(d.hi)}</b></div>
-      </div>
-      <p class="spot-s"><b class="num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</b></p>
-      <a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))} · ${esc(nx(n, 'shops'))}</a>
-    </aside>`;
+  const p = d.p, pct = Math.round(d.below / d.mid * 100);
+  const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
+  const eb = `<span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>`;
+  const n = nx(d.shops, 'shops');
+  return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
+      ${eb}
+      <img src="${IMG(p.id)}" alt="" decoding="async">
+      <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
+      <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+        <b class="spot-p num">${amd(d.lo)}</b>
+        <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
+    </a>`;
 }
 function mastHero() {
   const dl = deals();
@@ -1821,7 +1879,7 @@ function compareWithHTML(p) {
     const q = byId(id), lo = hasReal(q) ? bestOf(q) : null, d = lo != null && hasReal(p) ? lo - bestOf(p) : null;
     return `<a class="cw" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">
       <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" decoding="async">
-      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a>`;
+      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}${nameTag(q)}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a>`;
   };
   return `<section class="cwith"><h3>${esc(x('cwTitle'))}</h3><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
 }
@@ -1842,10 +1900,11 @@ function detailView(p) {
   const rows = perShop(offs);
   // what "best price" is the best price OF, said next to it: the size, and the SIM build when chosen
   const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
-  const cfgLbl = [multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim)].filter(Boolean).join(' · ');
+  const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
+  const cfgLbl = [multiScr && SEL.size != null ? inch(SEL.size) : '', multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim)].filter(Boolean).join(' · ');
   // The chart's verdict, repeated where the decision is made. Only once the history has loaded
   // and only for the size picked - the chart's own series, so the two never disagree.
-  const hs = histSeries(p, SEL.storage);
+  const hs = histSeries(p, SEL.storage, SEL.size);
   let verdict = '';
   if (hs.length > 1 && lo != null && hs[hs.length - 1].v === lo) {
     const low = Math.min(...hs.map(v => v.v)), pct = (lo - low) / low * 100;
@@ -1899,7 +1958,7 @@ function detailView(p) {
         <span>${esc(p.brand)} / ${esc(X[L].tier[p.tier] || p.tier)}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
         <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
       </div>
-      <h1 class="pname">${esc(fullName(p))}</h1>
+      <h1 class="pname">${esc(fullName(p))}${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
         <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
@@ -1933,8 +1992,8 @@ function detailView(p) {
             ${offs.length ? `<a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>` : ''}
             <button class="btn${offs.length ? ' ghost' : ''}" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
           </div>
-          ${compareWithHTML(p)}
         </div>
+        ${compareWithHTML(p)}
         ${offs.length ? `<div class="pbar"><b class="num">${money(lo)} ֏</b><span>${esc(shopName(offs[0].shop))}</span>
           <a href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))} →</a></div>` : ''}
       </div>
@@ -1983,7 +2042,7 @@ const CQ = [
   ['ram',  'filter.ram',          p => (p.variants || []).map(v => v.ram),     v => v + ' ' + u('gb')],
   ['stor', 'filter.storage',      p => (p.variants || []).map(v => v.storage), v => gb(v, viewUnit())],
   ['hz',   'filter.refresh_rate', p => [p.display && p.display.refresh],       v => v + ' ' + u('hz')],
-  ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u('mah')]
+  ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah')]
 ];
 
 function constructView() {
@@ -2166,7 +2225,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
          is here for is the cheapest price and how much every other shop adds to it. -->
-    <span class="dl">${o.price === lo ? esc(i === 0 ? x('bestPrice') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
+    <span class="od num">${o.price === lo ? esc(i === 0 ? x('bestShort') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
     ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 
@@ -2212,7 +2271,7 @@ function offersView(p) {
     <div class="ofhead">
       <span class="t"><img src="${esc(colorPhoto(p, OSEL.color) || THUMB(p.id))}" alt="" loading="lazy"></span>
       <div>
-        <h1>${esc(fullName(p))}</h1>
+        <h1>${esc(fullName(p))}${nameTag(p)}</h1>
         <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
       </div>
     </div>
@@ -2328,7 +2387,7 @@ function compareView() {
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
-        ${ps.map(p => `<div class="ccol"><a class="cname" href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></div>`).join('')}
+        ${ps.map(p => `<div class="ccol"><a class="cname" href="#/p/${esc(p.id)}">${esc(fullName(p))}${nameTag(p)}</a></div>`).join('')}
         ${slot ? `<div class="ccol"><b class="addlbl">${esc(addLabel(ps[0]))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
@@ -2764,7 +2823,7 @@ function paintSuggest() {
   }
   box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
       <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
-      <span class="sg-n">${esc(fullName(p))}</span>
+      <span class="sg-n">${esc(fullName(p))}${nameTag(p)}</span>
       <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
     + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
   box.hidden = false;
