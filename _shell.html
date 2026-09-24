@@ -101,7 +101,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ============ masthead: nav, cover and catalogue are ONE ivory field ============ */
 .mast{background:var(--bg);color:var(--text)}
 .topnav{display:flex;align-items:center;gap:16px;height:74px}
-.topnav .logo{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:800;letter-spacing:-.03em;color:var(--text);flex:none}
+.topnav .logo{display:flex;align-items:center;gap:9px;font-size:23px;font-weight:800;letter-spacing:-.03em;color:var(--text);flex:none}
 /* The mark is the dot. It used to hold a 24-viewBox phone icon drawn at 9x9 with no fill set,
    so it inherited #000 - a colour that is in no palette here - and spilled the circle it sat
    in. At this size the glyph could not be read as anything, so it is gone rather than fixed. */
@@ -1199,7 +1199,7 @@ a.store:hover .nm{color:var(--brand)}
 /* ---- phones: a two-row header, sections that scroll sideways, every filter in one sheet ---- */
 @media (max-width:640px){
   .topnav{gap:4px 6px;padding-block:8px}
-  .topnav .logo{order:1;font-size:17px}
+  .topnav .logo{order:1;font-size:20px}
   .nav{order:2;flex:none;margin-left:auto}
   .nav a{padding:8px 8px;font-size:0.8125rem}
   .mast-r{display:contents}
@@ -1244,7 +1244,7 @@ a.store:hover .nm{color:var(--brand)}
 @keyframes sheetin{from{transform:translateY(100%)}to{transform:none}}
 /* a fold's cover screen (280px): the logo and three nav links (catalogue, compare, blog) do not
    fit one row - the nav takes a row of its own under the logo. Last in the sheet so it wins. */
-@media (max-width:360px){.nav{order:6;flex:1 1 100%;margin-left:0;justify-content:space-between}}
+@media (max-width:360px){.nav{order:6;flex:1 1 100%;margin-left:0;justify-content:space-between}.nav a{white-space:nowrap;padding:8px 4px;font-size:.75rem}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
