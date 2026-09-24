@@ -4721,7 +4721,12 @@
         "priceAmd": 275000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 13.3,
+      "resolution": "2560x1600",
+      "refresh": 60,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "Apple MacBook Air 13 MGN63 M1 2020.",
     "unsure": [
@@ -4736,7 +4741,13 @@
       "Silver",
       "Gold"
     ],
-    "year": 2020
+    "year": 2020,
+    "body": {
+      "weight": 1290
+    },
+    "sources": [
+      "e-catalog"
+    ]
   },
   {
     "id": "apple-macbook-neo-13",
@@ -6025,11 +6036,19 @@
         "priceAmd": 174900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "ASUS E1504G (90NB0ZT2-M011A0).",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1630
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -6188,11 +6207,19 @@
         "priceAmd": 419900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "ASUS FA506N.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 2300
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -6269,11 +6296,19 @@
         "priceAmd": 495900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "ASUS FX607V.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 2300
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -8369,7 +8404,13 @@
     "colors": [
       "Silver"
     ],
-    "summaryEn": "A 15.6-inch VivoBook with an OLED panel instead of the usual LCD."
+    "summaryEn": "A 15.6-inch VivoBook with an OLED panel instead of the usual LCD.",
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "e-catalog"
+    ]
   },
   {
     "category": "laptop",
@@ -8553,11 +8594,25 @@
         "priceAmd": 419900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 16, i7-1355U, F1605VA-WS74, W11.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1880
+    },
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -11724,13 +11779,27 @@
         "priceAmd": 419900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "Dell 15, LDC15250-7427BLK-PUS, Touch, W11.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 1900
+    },
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    },
+    "sources": [
+      "e-catalog"
+    ]
   },
   {
     "id": "dell-16-dc16250",
@@ -24015,11 +24084,25 @@
         "priceAmd": 330000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 144,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "HP Victus 15-fa0033dx 9T9R8UA.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 2300
+    },
+    "chipset": {
+      "name": "Intel Core i5-12450H"
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -25903,11 +25986,25 @@
         "priceAmd": 279900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "TN"
+    },
     "battery": {},
     "summaryEn": "Lenovo 82VG00WXUS.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1580
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -26506,11 +26603,25 @@
         "priceAmd": 429900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad 5 2-in 1, Touch, W11, 83DS0056US.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 2000
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 8845HS"
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -26803,13 +26914,24 @@
         "priceAmd": 259900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "TN"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3, 15.6”, W11, Abyss Bl 82XQ012HUS.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 1600
+    },
+    "sources": [
+      "e-catalog"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15ahp10",
@@ -27210,11 +27332,25 @@
         "priceAmd": 409900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3, Ryzen 7-8840HS ,83KA000QUS Touch, Bklit, W11.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1630
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 8840HS"
+    },
+    "sources": [
+      "e-catalog"
     ]
   },
   {
@@ -30802,13 +30938,21 @@
         "priceAmd": 445000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "MSI Cyborg 15 A12VF 043US.",
     "unsure": [
       "popularity"
     ],
-    "year": 2022
+    "year": 2022,
+    "body": {
+      "weight": 1980
+    },
+    "sources": [
+      "e-catalog"
+    ]
   },
   {
     "id": "msi-cyborg-15-a13uc-821xae",
@@ -34552,13 +34696,27 @@
         "priceAmd": 372000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "IPS"
+    },
     "battery": {},
     "summaryEn": "Samsung Galaxy Book 4 NP750XGK-KS2US.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 1550
+    },
+    "chipset": {
+      "name": "Intel Core 7-150U"
+    },
+    "sources": [
+      "e-catalog"
+    ]
   },
   {
     "id": "samsung-galaxy-book-6-np760xjg",
