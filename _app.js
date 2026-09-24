@@ -42,6 +42,7 @@ const X = {
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ էժան', sameBest: 'նույն գինը',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենաէժան գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
+    spotT: 'Օրվա գործարքը',
     dealSave: '{shop}-ից {n} ֏ էժան', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
@@ -73,6 +74,7 @@ const X = {
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина', sameBest: 'та же цена',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
+    spotT: 'Выгода дня',
     dealSave: 'на {n} ֏ дешевле, чем в {shop}', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
@@ -107,6 +109,7 @@ const X = {
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop', sameBest: 'same price',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
+    spotT: 'Deal of the day',
     dealSave: '{n} ֏ less than {shop}', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
@@ -251,7 +254,9 @@ const sold = (p, field, value) => {
   if (!list.length) return true;                      // nothing known - do not cross out the world
   if (field === 'color') {
     const want = soldKey(value);
-    return list.some(o => o.color && soldKey(o.color) === want);
+    // A shop writes the last word of a finish: "Gray" for Space Gray, "Blue" for Sky Blue.
+    return list.some(o => { const k = o.color && soldKey(o.color);
+      return k && (k === want || (k.length >= 4 && want.endsWith(k))); });
   }
   // A watch's variants are case sizes in mm, but an offer's `storage` is gigabytes, and comparing
   // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
@@ -573,8 +578,12 @@ const spkOf = p => p.category !== 'speaker' ? null : (SPK.find(([, re]) => re.te
 // The year it was released, which is a fact the catalogue records, not one read off a title.
 const yearOf = p => { const m = String(p.released || '').match(/^(\d{4})/); return m ? +m[1] : null; };
 // "macOS 26", "Android 15, One UI 7" - the family is what anybody filters on, not the point release.
-const OSES = ['iOS', 'iPadOS', 'macOS', 'watchOS', 'Android', 'Windows', 'HarmonyOS', 'Chrome OS', 'Tizen', 'webOS'];
-const osOf = p => OSES.find(o => new RegExp('\\b' + o + '\\b', 'i').test(String(p.os || ''))) || null;
+// Google TV and Wear OS are Android underneath but are what a buyer knows them as, so they come
+// before Android in the list - the first match wins.
+const OSES = ['iOS', 'iPadOS', 'macOS', 'watchOS', 'Google TV', 'Wear OS', 'Android', 'Windows', 'HarmonyOS',
+  'Chrome OS', 'Tizen', 'webOS', 'VIDAA', 'Garmin', 'DOS'];
+const osOf = p => { const v = String(p.os || '').replace(/\bwin ?1[01]\b/i, 'Windows');
+  return OSES.find(o => new RegExp('\\b' + o + '\\b', 'i').test(v)) || null; };
 // Which questions each category can be asked. The bar used to decide this purely on whether the
 // numbers varied, so AirPods were filtered by RAM and screen size and a watch by refresh rate:
 // varying is not the same as meaning something. A filter listed here still has to prove the
@@ -1205,14 +1214,14 @@ function spark(vals) {
   return `<svg class="dl-sp" viewBox="0 0 120 28" aria-hidden="true"><path d="${vals.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(' ')}"/>`
     + `<circle cx="${X(n).toFixed(1)}" cy="${Y(vals[n]).toFixed(1)}" r="2.6"/></svg>`;
 }
-function dealCard(d) {
+function dealCard(d, isSpot) {
   const p = d.p;
   const cfg = [p.brand, d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
     .filter(Boolean).join(' · ');
   const tail = d.drop
     ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
     : `<span class="dl-save num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</span>`;
-  return `<a class="dl" href="#/p/${esc(p.id)}">
+  return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
     <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
     <small>${esc(cfg)}</small>
     <span class="dl-n">${esc(p.name)}</span>
@@ -1220,16 +1229,45 @@ function dealCard(d) {
     <span class="dl-at">${esc(shopName(d.loShop))} · ${esc(nx(d.shops || shopCount(offersFor(p)), 'shops'))}</span>
     ${tail}</a>`;
 }
+// The right half of the hero was empty once the carousel went. It holds the one saving worth
+// leading with: among the most popular deals, the biggest share off the dearest shop - the same
+// product and configuration at two named shops, drawn as two bars. It changes when the prices do,
+// once a night, never while you read. On a phone it is not drawn: the deals row is right below.
+function spotDeal(dl) {
+  const pool = dl.filter(d => !d.drop).slice(0, 6);
+  return pool.reduce((a, d) => !a || d.gap / d.hi > a.gap / a.hi ? d : a, null);
+}
+function spotHTML(d) {
+  if (!d) return '';
+  const p = d.p;
+  const cfg = [d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
+  const n = shopCount(offersFor(p));
+  return `<aside class="spot" aria-labelledby="spotT">
+      <span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>
+      <a class="spot-im" href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${IMG(p.id)}" alt="" decoding="async"></a>
+      <h2 class="spot-n" id="spotT"><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${cfg ? `<small>${esc(cfg)}</small>` : ''}</h2>
+      <div class="spot-bars">
+        <div class="sb best"><span>${esc(shopName(d.loShop))}</span><i style="--w:${(d.lo / d.hi * 100).toFixed(1)}%"></i><b class="num">${amd(d.lo)}</b></div>
+        <div class="sb"><span>${esc(shopName(d.hiShop))}</span><i style="--w:100%"></i><b class="num">${amd(d.hi)}</b></div>
+      </div>
+      <p class="spot-s"><b class="num">${esc(x('dealSave').replace('{n}', money(d.gap)).replace('{shop}', shopName(d.hiShop)))}</b></p>
+      <a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))} · ${esc(nx(n, 'shops'))}</a>
+    </aside>`;
+}
 function mastHero() {
   const dl = deals();
+  const sp = spotDeal(dl);
   const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
   return `<div class="cv-eyebrow">${esc(x('priceMatters'))}</div>
-    <div class="cv">
+    <div class="cv${sp ? ' has-spot' : ''}">
+      ${spotHTML(sp)}
+      <div class="cv-l">
       <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
       <p class="cv-sub">${esc(x('heroSub'))}</p>
       <div class="cv-acts">
         <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
         ${dl.length ? `<a class="btn ghost" href="#savings">${esc(x('heroCta'))}</a>` : ''}
+      </div>
       </div>
     </div>
     <div class="cv-bar">
@@ -1243,7 +1281,7 @@ function mastHero() {
         <div><h2 id="dlsT">${esc(x('savingsT'))}</h2><p>${esc(x('savingsS'))}</p></div>
         <div class="dls-arr"><button type="button" data-dl="-1" aria-label="${esc(x('prevL'))}" disabled>${ICON_ARR_L}</button><button type="button" data-dl="1" aria-label="${esc(x('nextL'))}">${ICON_ARR_R}</button></div>
       </div>
-      <div class="dls-row" id="dlrow">${dl.map(dealCard).join('')}</div>
+      <div class="dls-row" id="dlrow">${dl.map(d => dealCard(d, d === sp)).join('')}</div>
     </section>` : ''}
     ${soonHTML()}`;
 }
