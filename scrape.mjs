@@ -785,7 +785,8 @@ if (process.argv[2] === '--selftest') {
     ['apple-ipad-pro-11-m4', 'https://redstore.am/en/product/ipad-pro-11-512gb-wifi-2024-space-black'],
     ['apple-ipad-air-11-m4', 'https://redstore.am/en/product/ipad-air-11-128gb-wifi-2026-blue'],
     ['apple-ipad-air-11-m3', 'https://redstore.am/en/product/ipad-air-11-256gb-wifi-2025-blue'],
-    ['apple-ipad-pro-13-m5', 'https://redstore.am/en/product/ipad-pro-13-512gb-wifi-2025-space-black'],
+    // (11 and 13 inch are one product now; the screen is read separately, as a variant)
+    ['apple-ipad-pro-11-m5', 'https://redstore.am/en/product/ipad-pro-13-512gb-wifi-2025-space-black'],
     // and the chip-named readings every other shop uses must keep working
     ['apple-ipad-pro-11-m4', 'https://ibolit.mobi/product/ipad-pro-11-m4-256gb-wi-fi-standard-glass-silver/'],
     ['apple-ipad-air-11-m3', 'https://www.pixel.am/am/product/ipad-air-11-m3'],
