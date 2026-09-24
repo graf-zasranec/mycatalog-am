@@ -238,14 +238,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ---- the tag after a name: launch year (phones, tablets, watches, headphones) or screen (TV,
    monitor). Brick on a soft wash, in the mono face, sized from the text it follows - so one rule
    serves a 58 px page title and a 15 px card title alike. */
-.ny{display:inline-block;margin-left:.45em;padding:.2em .48em .16em;border-radius:.42em;
+.ny{display:inline-flex;align-items:center;justify-content:center;margin-left:.45em;padding:0 .5em;height:1.75em;border-radius:.45em;
   font-family:var(--mono);font-size:max(10.5px,.5em);font-weight:600;letter-spacing:.04em;line-height:1;
   color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px var(--line2);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
-  vertical-align:.28em;white-space:nowrap;text-decoration:none}
+  vertical-align:middle;white-space:nowrap;text-decoration:none}
 .ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
-.pname .ny{font-size:max(12px,.3em);vertical-align:.9em;letter-spacing:.06em}
-.pcard h3 .ny,.dl-n .ny,.sg-n .ny,.cwt b .ny,.cname .ny{font-size:10.5px;vertical-align:.12em}
-.spot-c .ny{color:#FFD9D4;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);font-size:11px;vertical-align:.12em}
+.pname .ny{font-size:max(12px,.3em);vertical-align:.55em;letter-spacing:.06em}
+.pcard h3 .ny,.dl-n .ny,.sg-n .ny,.cwt b .ny,.cname .ny{font-size:10.5px;vertical-align:.1em}
+.spot-c .ny{color:#FFD9D4;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);font-size:11px;vertical-align:.1em}
 /* ---- the hero's right half: one saving, against what shops usually ask ---- */
 .spot{display:none}
 @media (min-width:1000px){
@@ -255,9 +255,9 @@ button,input,select,textarea{font:inherit;color:inherit}
   .spot{display:grid;grid-column:2;grid-row:1;color:var(--text);text-decoration:none;
     border-radius:var(--r-xl);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s,border-color .2s}
   .spot:hover{transform:translateY(-2px)}
-  /* on a wide screen the spotlight IS this deal, so the row below does not repeat it */
-  .dl.is-spot{display:none}
 }
+/* the spotlight IS this deal, so the row below does not repeat it */
+.dl.is-spot{display:none}
 .spot-e{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
 .spot-p{font-weight:800;letter-spacing:-.03em;line-height:1.05}
 /* a poster - dark tinted panel in both themes, the product bleeding off the edge */
@@ -275,6 +275,19 @@ button,input,select,textarea{font:inherit;color:inherit}
 .spot-c .spot-p{font-size:26px}
 .spot-at{font-size:12.5px;color:#F2D9D6}
 @media (prefers-reduced-motion:reduce){.spot,.spot-c img{transition:none}.spot:hover,.spot-c:hover img{transform:none}}
+/* Phones and tablets: the same poster, small - under the headline, one row tall */
+@media (max-width:999px){
+  .cv.has-spot > .spot{display:grid;order:2;margin-top:22px;color:#fff;text-decoration:none;border-radius:var(--r-xl)}
+  .spot-c{min-height:0;padding:16px 18px;grid-template-columns:minmax(0,1fr) 104px;grid-template-rows:auto auto auto;gap:4px 12px;align-content:start}
+  .spot-c .spot-e{grid-column:1/-1}
+  .spot-c img{position:static;grid-column:2;grid-row:2/4;width:104px;height:104px;align-self:center;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}
+  .spot-c:hover img{transform:none}
+  .spot-pct{grid-column:1;font-size:42px}
+  .spot-pct small{margin-top:6px;font-size:12px;max-width:none}
+  .spot-bot{grid-column:1;max-width:none;gap:2px;margin-top:6px}
+  .spot-c .spot-n{font-size:15px}
+  .spot-c .spot-p{font-size:21px}
+}
 .cv-bar{display:flex;flex-wrap:wrap;gap:8px 30px;align-items:baseline;
   border-top:2px solid var(--apricot);padding-top:14px;margin-top:26px}
 .cv-bar div{display:flex;align-items:baseline;gap:8px}
@@ -705,17 +718,6 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .cwt .cwd{font-size:0.75rem;font-weight:700}
 /* cheaper than the phone you are on reads green, dearer reads red - the trade-off before the click */
 .cwt .cwd.dn{color:var(--good)}.cwt .cwd.up{color:var(--bad)}
-.pbar{display:none}
-@media (max-width:760px){
-  .pbar{display:flex;align-items:center;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;
-    padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--surface);border-top:1px solid var(--line)}
-  .pbar b{font-size:1.0625rem;white-space:nowrap}
-  .pbar span{flex:1;min-width:0;color:var(--muted);font-size:0.875rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .pbar a{flex:none;background:var(--brand);color:var(--brand-ink);text-decoration:none;font-weight:600;
-    font-size:0.875rem;padding:9px 14px;border-radius:999px;white-space:nowrap}
-  /* a class, not body:has(.pbar): Firefox before 121 has no :has() and the bar covered the last row */
-  body.has-pbar{padding-bottom:64px}
-}
 .nf{margin:40px 0 24px}.nf p{margin:6px 0 16px;color:var(--muted)}
 .nfcats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px;align-items:center}
 .nfcats span{width:100%;color:var(--muted);font-size:0.8125rem}
@@ -969,11 +971,8 @@ a.store:hover .nm{color:var(--brand)}
 .cdots .cmore{font:600 10px var(--mono);color:var(--muted);margin-top:2px}
 @media (pointer:coarse){.cdot{width:30px;height:30px}}
 /* a phone card's photo is 140px tall: the column grows up from the bottom, clear of the badge */
-@media (max-width:520px){
-  .cdots{top:auto;bottom:2px;left:2px;transform:none}
-  .cdots .cdot:nth-of-type(n+4){display:none}
-  .cdots .cmore{display:none}
-}
+/* not on phones: two cards across leave a ~150 px photo, and a column of dots covered half of it */
+@media (max-width:640px){.cdots{display:none}}
 .pshot,.sim .t,.ccol .t{overflow:hidden}
 /* the compare header must grow with its content, never clip the name onto the photo */
 .ccol{min-width:0;height:auto}
