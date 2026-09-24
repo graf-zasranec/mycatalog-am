@@ -1052,6 +1052,15 @@ if (process.argv[2] === '--selftest') {
   if (screenOf('MacBook Pro 16 M5', 'apple-iphone-17-pro') !== undefined) {
     bad++; console.log('FAIL screenOf read a screen off a non-laptop');
   }
+  // tablets and TVs sold in several screens under one product
+  const TAB = 'apple-ipad-air-11-m4', TV = 'xiaomi-a-43-2026';
+  for (const [txt, id, want] of [['iPad Air 13 M4 128GB WiFi 2026 Blue', TAB, 13], ['Apple iPad Pro 11/M5/ WIFI/256gb Black', TAB, 11],
+      ['Apple iPad Pro 12.9 M2 128GB Cell SpaceGray', TAB, 12.9], ['iPad Air 11 128GB Wi-Fi 2024 Purple', TAB, 11],
+      ['iPad Air M4 128GB', TAB, undefined], ['Smart TV XIAOMI A 50 2026 (L50MB-ARU)', TV, 50],
+      ['Xiaomi TV A Pro 55 2026 QLED', TV, 55], ['Smart TV Samsung QE43Q60BA 4K UHD', TV, undefined]]) {
+    const got = screenOf(txt, id);
+    if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
+  }
   const colCases = [['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
     ['APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523)', ['Cosmic Orange', 'Deep Blue'], 'Cosmic Orange'],
     ['Apple iPhone 17 Pro', ['Cosmic Orange', 'Deep Blue'], null]];
@@ -1190,7 +1199,20 @@ async function crawlLd(urls, cap = 6) {
 // The lookahead is what keeps "16GB" and "512GB" out: a number that is immediately a unit is a
 // capacity, not a screen. Laptops only - a 15 in a phone title is not inches.
 function screenOf(title, id) {
-  if ((phoneById[id] || {}).category !== 'laptop') return undefined;
+  const cat = (phoneById[id] || {}).category;
+  // An iPad Air or Pro is one product in two screens, so the shop's title has to say which:
+  // "iPad Air 13 M4", "iPad Pro 11/M5/", "iPad Pro 12.9 M2". Here "11/M5" IS the screen - a
+  // tablet's memory never comes first - so only a slash before a digit rules a number out.
+  if (cat === 'tablet') {
+    const m = String(title || '').match(/\b(10[.,]9|12[.,]9|11|13)(?![\d.,])(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\d))/i);
+    return m ? parseFloat(m[1].replace(',', '.')) : undefined;
+  }
+  // A TV's diagonal is in its model code (Xiaomi "L43MB", "L55MB") or written out ("A Pro 43").
+  if (cat === 'tv') {
+    const t = String(title || ''), m = t.match(/\bL(\d{2,3})M[A-Z]/) || t.match(/\b(32|40|43|50|55|58|65|70|75|85|98|100)(?:\s*(?:"|″|''|inch|-inch))?\b(?!\s*(?:GB|TB|Hz|W\b))/i);
+    return m ? +m[1] : undefined;
+  }
+  if (cat !== 'laptop') return undefined;
   // Apple's real diagonals are 14.2 and 16.2, and a URL slug writes them "14-2" or "16-2" once
   // the punctuation is gone - so the decimal forms have to match a space or a dash too, and they
   // have to come first, or bare "14" would win and the lookahead would then reject it for the "2".
@@ -2558,9 +2580,13 @@ for (const [id, list] of Object.entries(offers)) {
   // price changed, and the chart could not follow the size a reader picked. The cheapest price
   // per storage size is kept alongside ('base' where the product comes in one size).
   const sizes = new Set(((phoneById[id] || {}).variants || []).map(v => v.storage).filter(v => v != null));
+  // ...and per screen, where the product comes in more than one ("256@13"): an 11-inch and a
+  // 13-inch iPad with the same storage are different prices, and the chart follows the one picked.
+  const screens = new Set(((phoneById[id] || {}).variants || []).map(v => v.size).filter(v => v != null));
   const t = {};
   for (const o of list) {
-    const k = o.storage != null ? String(o.storage) : sizes.size > 1 ? null : 'base';
+    let k = o.storage != null ? String(o.storage) : sizes.size > 1 ? null : 'base';
+    if (k && screens.size > 1) k = o.size != null ? k + '@' + o.size : null;
     if (k && (t[k] == null || o.price < t[k])) t[k] = o.price;
   }
   if (Object.keys(t).length) pt.t = t;

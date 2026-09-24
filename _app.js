@@ -25,9 +25,9 @@ const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(i
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
 const U = {
-  hy: { mah: 'մԱժ', w: 'Վտ', g: 'գ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
-  ru: { mah: 'мА·ч', w: 'Вт', g: 'г', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
-  en: { mah: 'mAh', w: 'W', g: 'g', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
+  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
+  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
+  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
 };
 const X = {
   hy: {
@@ -56,7 +56,7 @@ const X = {
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
     emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
-    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի էժան', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
+    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի էժան', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
@@ -91,7 +91,7 @@ const X = {
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
     emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка' }, emptyS: 'Попробуйте изменить фильтры.',
-    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
+    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая цена', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
@@ -123,7 +123,7 @@ const X = {
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
     emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming' }, emptyS: 'Try changing the filters.',
-    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
+    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best price', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
@@ -296,18 +296,29 @@ const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) 
 // the days recorded before that only knew the cheapest of anything, which for the smallest size
 // is the same number, so that size keeps its full history and the others start from the change.
 let HCUR = null;
-function histSeries(p, stor) {
+function histSeries(p, stor, scr) {
   const sizes = [...new Set((p.variants || []).map(v => v.storage).filter(v => v != null))];
-  const key = stor != null ? String(stor) : 'base';
+  const base = stor != null ? String(stor) : 'base';
   const smallest = stor == null || sizes.length < 2 || stor === Math.min(...sizes);
+  // A product in several screens records "256@13" per screen. Days recorded before that carry one
+  // price per storage for all screens together - in practice the smallest screen's - so they
+  // stand in for the smallest screen only.
+  const screens = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))];
+  const multi = screens.length > 1;
+  const key = multi && scr != null ? base + '@' + scr : base;
+  const smallScr = !multi || scr == null || scr === Math.min(...screens);
+  const bySize = t => Object.keys(t).some(k => k.includes('@'));
   return (HIST()[p.id] || []).map(pt => ({ d: pt.d, t: Date.parse(pt.d + 'T12:00:00Z'), s: pt.shops,
-    v: pt.t && pt.t[key] != null ? pt.t[key] : (!pt.t && smallest ? pt.lo : null) })).filter(pt => pt.v != null);
+    v: pt.t && pt.t[key] != null ? pt.t[key]
+      : pt.t && multi && !bySize(pt.t) && smallScr && pt.t[base] != null ? pt.t[base]
+      : (!pt.t && smallest && smallScr ? pt.lo : null) })).filter(pt => pt.v != null);
 }
 function historyHTML(p) {
   if (!(HIST()[p.id] || []).length) { HCUR = null; return ''; }
-  const stor = SEL.id === p.id ? SEL.storage : null;
-  const cfg = stor != null ? gb(stor, p.variantUnit) : fullName(p);
-  const S = histSeries(p, stor);
+  const stor = SEL.id === p.id ? SEL.storage : null, scr = SEL.id === p.id ? SEL.size : null;
+  const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
+  const cfg = [multiScr && scr != null ? inch(scr) : '', stor != null ? gb(stor, p.variantUnit) : ''].filter(Boolean).join(' · ') || fullName(p);
+  const S = histSeries(p, stor, scr);
   HCUR = S.length > 1 ? { S, cfg } : null;
   const head = `<h2 class="sh">${esc(x('histT'))}</h2>`;
   if (!S.length) return head + `<p class="note">${esc(x('histNone').replace('{c}', cfg))}</p>`;
@@ -515,7 +526,7 @@ const FILT = {
   stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
            of: p => topOf(p, 'storage') || null, all: p => (p.variants || []).map(v => v.storage),
            fmt: v => gb(v, viewUnit()) },
-  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u('mah') },
+  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
   life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v + ' ' + x('hrs') },
@@ -735,8 +746,12 @@ const GROUPS = [
     // comparison reads as two unrelated numbers. Normalised here rather than in the data, so a
     // future scrape cannot reintroduce it: always short x long, the way every spec sheet lists it.
     ['f.resolution', p => { const r = p.display?.resolution; if (!r) return null;
+      // ...short x long for what you hold upright (a phone, a watch); a TV, monitor, laptop or
+      // tablet sheet writes the long side first - 3840×2160 - and "2160×3840" reads as a typo.
       const m = /^(\d+)\s*[x×]\s*(\d+)$/.exec(String(r).trim());
-      return m ? Math.min(+m[1], +m[2]) + '×' + Math.max(+m[1], +m[2]) : r; }],
+      if (!m) return r;
+      const [a, b] = [Math.min(+m[1], +m[2]), Math.max(+m[1], +m[2])];
+      return /^(phone|watch)$/.test(p.category) ? a + '×' + b : b + '×' + a; }],
     ['f.refresh_rate', p => p.display.refresh + ' ' + u('hz'), p => p.display.refresh, 1],
     ['f.ppi', p => p.display.ppi && p.display.ppi + ' ppi', p => p.display.ppi, 1],
     ['f.brightness', p => p.display.brightness && money(p.display.brightness) + ' ' + u('nit'), p => p.display.brightness, 1],
@@ -766,7 +781,8 @@ const GROUPS = [
     ['f.video', p => p.camera.video]
   ]],
   ['sec.battery', [
-    ['f.capacity', p => money(p.battery.capacity) + ' ' + u('mah'), p => p.battery.capacity, 1],
+    // a laptop's battery is rated in watt-hours (70 Wh), not milliamp-hours - "70 mAh" read as a typo
+    ['f.capacity', p => money(p.battery.capacity) + ' ' + u(p.category === 'laptop' ? 'wh' : 'mah'), p => p.battery.capacity, 1],
     ['f.charging', p => p.battery.wired && p.battery.wired + ' ' + u('w'), p => p.battery.wired, 1],
     ['f.wireless', p => p.battery?.capacity == null ? null : p.battery.wireless ? p.battery.wireless + ' ' + u('w') : t('common.no'), p => p.battery?.wireless, 1]
   ]],
@@ -1181,7 +1197,7 @@ function cardFacts(p, v) {
   const f = [];
   if (p.display?.size) f.push(esc(p.display.size + String.fromCharCode(8243)));
   if (v.storage != null) f.push(esc((v.ram ? v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
-  if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u('mah'))}</span>`);
+  if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u(p.category === 'laptop' ? 'wh' : 'mah'))}</span>`);
   if (p.chipset?.name) f.push(esc(p.chipset.name));
   if (p.audio?.type) f.push(esc(tr(p.audio.type, st.lang)));
   if (p.body?.ip) f.push(esc(p.body.ip));
@@ -1853,10 +1869,11 @@ function detailView(p) {
   const rows = perShop(offs);
   // what "best price" is the best price OF, said next to it: the size, and the SIM build when chosen
   const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
-  const cfgLbl = [multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim)].filter(Boolean).join(' · ');
+  const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
+  const cfgLbl = [multiScr && SEL.size != null ? inch(SEL.size) : '', multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim)].filter(Boolean).join(' · ');
   // The chart's verdict, repeated where the decision is made. Only once the history has loaded
   // and only for the size picked - the chart's own series, so the two never disagree.
-  const hs = histSeries(p, SEL.storage);
+  const hs = histSeries(p, SEL.storage, SEL.size);
   let verdict = '';
   if (hs.length > 1 && lo != null && hs[hs.length - 1].v === lo) {
     const low = Math.min(...hs.map(v => v.v)), pct = (lo - low) / low * 100;
@@ -1994,7 +2011,7 @@ const CQ = [
   ['ram',  'filter.ram',          p => (p.variants || []).map(v => v.ram),     v => v + ' ' + u('gb')],
   ['stor', 'filter.storage',      p => (p.variants || []).map(v => v.storage), v => gb(v, viewUnit())],
   ['hz',   'filter.refresh_rate', p => [p.display && p.display.refresh],       v => v + ' ' + u('hz')],
-  ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u('mah')]
+  ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah')]
 ];
 
 function constructView() {
@@ -2177,7 +2194,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
          is here for is the cheapest price and how much every other shop adds to it. -->
-    <span class="od num">${o.price === lo ? esc(i === 0 ? x('bestPrice') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
+    <span class="od num">${o.price === lo ? esc(i === 0 ? x('bestShort') : x('sameBest')) : '+' + money(o.price - lo) + ' ֏'}</span>
     ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 
