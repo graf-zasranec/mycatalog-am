@@ -43,7 +43,7 @@ const X = {
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
     spotT: 'Օրվա գործարքը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
-    dealUsual: 'սովորական գնից {n} ֏ ցածր', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
@@ -75,7 +75,7 @@ const X = {
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
     spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
-    dealUsual: 'на {n} ֏ ниже обычной цены', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
+    dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
@@ -110,7 +110,7 @@ const X = {
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
     spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
-    dealUsual: '{n} ֏ below the usual price', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
+    dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
@@ -1914,6 +1914,9 @@ function detailView(p) {
   // question - whether anyone in Armenia sells it. Crossed through when nobody does.
   const cols = p.colors || [];
   const shot = colorPhoto(p, SEL.color) || IMG(p.id);
+  // A colour picked that has no photo of its own keeps the main shot, which is another colour -
+  // said on the picture, or the swatch reads as broken ("I clicked Blue and it is still black").
+  const otherShot = cols.length > 1 && SEL.color && !colorPhoto(p, SEL.color) && CIMG[p.id] && Object.keys(CIMG[p.id]).some(k => k !== 'main');
   // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
   // option blocks below simply do not render
   // SIM is a fact, not a choice - no shop prices a phone by its SIM tray - so these are spans,
@@ -1958,7 +1961,7 @@ function detailView(p) {
       </div>
       <h1 class="pname">${esc(fullName(p))}${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
-        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high"></div>
+        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
         <div class="pside">
           <!-- No colour picker. Shops spell one finish eight different ways - Titanium Silverblue,
                Titanium Silver Blue, Silver Blue Titanium - so the row filled with near-duplicate
