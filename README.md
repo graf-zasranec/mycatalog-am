@@ -52,6 +52,10 @@ A spec the maker's sheet did not settle is listed in the product's `unsure` arra
 "unconfirmed". `tools/resolve-unsure.mjs` records how the last batch was settled: confirmed,
 corrected or deleted.
 
+Names are followed by a small tag: the launch year for phones, tablets, watches and headphones
+(`year`, or the year of `released`), the screen for TVs and monitors. `tools/years.mjs` holds the
+years that are certain; a product without one shows no tag rather than a guess.
+
 A merge moves the offers, price history and shop pins to the survivor and records the old id in
 `data/merged.json`, so a link that was already shared still lands.
 

@@ -212,6 +212,23 @@ const nx = (n, k) => n + ' ' + plw(n, k);
 // Apple and Samsung model names already say the brand - "iPhone 17 Pro", not "Apple iPhone 17 Pro".
 // The brand is still searchable; see the query test below, which adds p.brand back in.
 const BARE_BRAND = new Set(['apple', 'samsung']);
+// A tag after the name: the launch year for phones, tablets, watches and headphones - which
+// generation this is, at a glance - and the screen for TVs and monitors, where the diagonal is the
+// first thing anyone asks. Drawn, never written into the name, so search and sharing stay clean.
+const YEAR_TAG = new Set(['phone', 'tablet', 'watch', 'headphones']), SIZE_TAG = new Set(['tv', 'monitor']);
+function nameTag(p, scr) {
+  if (YEAR_TAG.has(p.category)) {
+    const y = p.year || +(String(p.released || '').match(/^(\d{4})/) || [])[1];
+    return y ? `<span class="ny num">${y}</span>` : '';
+  }
+  if (SIZE_TAG.has(p.category)) {
+    const ss = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))].sort((a, b) => a - b);
+    const v = scr != null && ss.includes(scr) ? inch(scr)
+      : ss.length > 1 ? ss[0] + '–' + inch(ss[ss.length - 1]) : ss.length ? inch(ss[0]) : p.display?.size ? inch(p.display.size) : '';
+    return v ? `<span class="ny sz num">${v}</span>` : '';
+  }
+  return '';
+}
 const fullName = p => (BARE_BRAND.has(p.brand.toLowerCase()) || p.name.toLowerCase().startsWith(p.brand.toLowerCase()))
   ? p.name : p.brand + ' ' + p.name;
 const money = n => Math.round(n).toLocaleString('en-US').replace(/,/g, ' ');
@@ -1177,7 +1194,7 @@ function card(p) {
     </div>
     <div class="pbody">
       <span class="eyebrow">${esc(p.brand)}</span>
-      <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></h3>
+      <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${nameTag(p)}</h3>
       <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
       <div class="pfoot"><span class="pprice num">${amd(bestOf(p))}
         <s>${rows.length ? esc(shopName(rows[0][0])) : esc(x('estimated'))}</s></span>
@@ -1193,7 +1210,21 @@ function card(p) {
 // catalogue read as one field. Savings are computed from the REAL spread between shops.
 // A card shows three quick facts, but a phone, a watch and a pair of earbuds do not have
 // the same three. Take whatever the item actually carries and stop at three.
+// The class a screen is sold by, from its pixels: 3840x2160 is "4K", 1920x1080 "Full HD".
+function resClass(r) {
+  const m = /(\d{3,5})\s*[x×]\s*(\d{3,5})/.exec(String(r || ''));
+  if (!m) return '';
+  const L = Math.max(+m[1], +m[2]), S = Math.min(+m[1], +m[2]);
+  return L >= 7680 ? '8K' : L >= 6144 ? '6K' : L >= 5120 ? '5K' : L >= 3840 ? '4K'
+    : S >= 1440 && L >= 3440 ? 'UWQHD' : S >= 1440 ? '2K' : L >= 1920 ? 'Full HD' : 'HD';
+}
 function cardFacts(p, v) {
+  // A TV or monitor is chosen by its screen: the size is on the name already, so the chips are
+  // what kind of picture - resolution class, panel, and for monitors the refresh rate.
+  if (SIZE_TAG.has(p.category)) {
+    return [resClass(p.display?.resolution), p.display?.type,
+      p.category === 'monitor' && p.display?.refresh ? p.display.refresh + ' ' + u('hz') : ''].filter(Boolean).map(esc);
+  }
   const f = [];
   if (p.display?.size) f.push(esc(p.display.size + String.fromCharCode(8243)));
   if (v.storage != null) f.push(esc((v.ram ? v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
@@ -1253,7 +1284,7 @@ function dealCard(d, isSpot) {
   return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
     <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
     <small>${esc(cfg)}</small>
-    <span class="dl-n">${esc(p.name)}</span>
+    <span class="dl-n">${esc(p.name)}${nameTag(p)}</span>
     <span class="dl-p num">${amd(d.lo)}</span>
     <span class="dl-at">${esc(shopName(d.loShop))} · ${esc(nx(d.shops || shopCount(offersFor(p)), 'shops'))}</span>
     ${tail}</a>`;
@@ -1276,7 +1307,7 @@ function spotHTML(d) {
       ${eb}
       <img src="${IMG(p.id)}" alt="" decoding="async">
       <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
-      <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+      <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
         <b class="spot-p num">${amd(d.lo)}</b>
         <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
     </a>`;
@@ -1848,7 +1879,7 @@ function compareWithHTML(p) {
     const q = byId(id), lo = hasReal(q) ? bestOf(q) : null, d = lo != null && hasReal(p) ? lo - bestOf(p) : null;
     return `<a class="cw" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">
       <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" decoding="async">
-      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a>`;
+      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}${nameTag(q)}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a>`;
   };
   return `<section class="cwith"><h3>${esc(x('cwTitle'))}</h3><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
 }
@@ -1927,7 +1958,7 @@ function detailView(p) {
         <span>${esc(p.brand)} / ${esc(X[L].tier[p.tier] || p.tier)}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
         <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
       </div>
-      <h1 class="pname">${esc(fullName(p))}</h1>
+      <h1 class="pname">${esc(fullName(p))}${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
         <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
@@ -2240,7 +2271,7 @@ function offersView(p) {
     <div class="ofhead">
       <span class="t"><img src="${esc(colorPhoto(p, OSEL.color) || THUMB(p.id))}" alt="" loading="lazy"></span>
       <div>
-        <h1>${esc(fullName(p))}</h1>
+        <h1>${esc(fullName(p))}${nameTag(p)}</h1>
         <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
       </div>
     </div>
@@ -2356,7 +2387,7 @@ function compareView() {
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
-        ${ps.map(p => `<div class="ccol"><a class="cname" href="#/p/${esc(p.id)}">${esc(fullName(p))}</a></div>`).join('')}
+        ${ps.map(p => `<div class="ccol"><a class="cname" href="#/p/${esc(p.id)}">${esc(fullName(p))}${nameTag(p)}</a></div>`).join('')}
         ${slot ? `<div class="ccol"><b class="addlbl">${esc(addLabel(ps[0]))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
@@ -2792,7 +2823,7 @@ function paintSuggest() {
   }
   box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
       <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
-      <span class="sg-n">${esc(fullName(p))}</span>
+      <span class="sg-n">${esc(fullName(p))}${nameTag(p)}</span>
       <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
     + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
   box.hidden = false;

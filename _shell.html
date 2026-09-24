@@ -235,6 +235,17 @@ button,input,select,textarea{font:inherit;color:inherit}
 .cv-h em{font-style:normal;color:var(--brand)}
 .cv-sub{color:var(--body);font-size:1.03rem;max-width:52ch;margin-top:18px}
 .cv-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+/* ---- the tag after a name: launch year (phones, tablets, watches, headphones) or screen (TV,
+   monitor). Brick on a soft wash, in the mono face, sized from the text it follows - so one rule
+   serves a 58 px page title and a 15 px card title alike. */
+.ny{display:inline-block;margin-left:.45em;padding:.2em .48em .16em;border-radius:.42em;
+  font-family:var(--mono);font-size:max(10.5px,.5em);font-weight:600;letter-spacing:.04em;line-height:1;
+  color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
+  vertical-align:.28em;white-space:nowrap;text-decoration:none}
+.ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
+.pname .ny{font-size:max(12px,.3em);vertical-align:.9em;letter-spacing:.06em}
+.pcard h3 .ny,.dl-n .ny,.sg-n .ny,.cwt b .ny,.cname .ny{font-size:10.5px;vertical-align:.12em}
+.spot-c .ny{color:#FFD9D4;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);font-size:11px;vertical-align:.12em}
 /* ---- the hero's right half: one saving, against what shops usually ask ---- */
 .spot{display:none}
 @media (min-width:1000px){
