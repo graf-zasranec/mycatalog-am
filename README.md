@@ -44,6 +44,8 @@ if the stylesheet's braces do not balance.
     node tools/prune.mjs [--write]             # drop products nothing in the country sells
     python tools/thumbs.py --check             # rebuild thumbnails that no longer match their photo
     python tools/photo-dupes.py                # list colours that share one photo (no dot for them)
+    python tools/photo-audit.py [dir]          every photo fault at once, with contact sheets to look at
+    python tools/defringe.py --halo            clean the white edge a cutout keeps on the dark theme
 
 A product sold in several screens (the iPad Air in 11 and 13 inches, a TV range) is ONE product with
 the size as a variant, like capacity - never one product per size. Names carry no colour, memory,
