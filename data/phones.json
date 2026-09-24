@@ -2063,8 +2063,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "HomePod software"
  },
  {
   "id": "apple-homepod-mini",
@@ -2099,8 +2101,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "HomePod software"
  },
  {
   "id": "apple-imac-24-m4",
@@ -2204,8 +2208,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a",
@@ -2234,8 +2240,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-9",
@@ -2268,12 +2276,14 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [
    "Space Gray",
    "Silver"
-  ]
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-a16",
@@ -2528,8 +2538,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
@@ -2566,8 +2578,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-air-13-m3",
@@ -2596,8 +2610,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-air-13-m4",
@@ -2698,8 +2714,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-air-13-wi-fi-plus-cellular-2024",
@@ -2734,8 +2752,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-air-5-wi-fi-plus-cellular-2022",
@@ -2764,8 +2784,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-mini-6",
@@ -2794,8 +2816,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-mini-7",
@@ -2824,8 +2848,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-pro-11-m4",
@@ -2992,8 +3018,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a",
@@ -3023,8 +3051,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-pro-13-m4",
@@ -3059,8 +3089,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024",
@@ -3096,8 +3128,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iPadOS"
  },
  {
   "id": "apple-ipad-pro-13-m5",
@@ -3285,8 +3319,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iOS"
  },
  {
   "id": "apple-iphone-16",
@@ -4511,11 +4547,18 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "chipset": {
    "name": "Apple M1"
-  }
+  },
+  "os": "macOS",
+  "colors": [
+   "Space Gray",
+   "Silver",
+   "Gold"
+  ]
  },
  {
   "id": "apple-macbook-neo-13",
@@ -4606,11 +4649,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "chipset": {
    "name": "Apple M3"
-  }
+  },
+  "os": "macOS"
  },
  {
   "id": "apple-macbook-pro-14-m4",
@@ -4640,9 +4685,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "macOS"
  },
  {
   "id": "apple-macbook-pro-14-m4-max",
@@ -4679,9 +4726,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "macOS"
  },
  {
   "id": "apple-macbook-pro-14-m4-pro",
@@ -4995,11 +5044,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "chipset": {
    "name": "Apple M3 Pro (11-core CPU)"
-  }
+  },
+  "os": "macOS"
  },
  {
   "id": "apple-macbook-pro-14-mrx43-2023",
@@ -5029,11 +5080,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "chipset": {
    "name": "Apple M3 Pro (12-core CPU)"
-  }
+  },
+  "os": "macOS"
  },
  {
   "id": "apple-macbook-pro-16-mrw23",
@@ -5065,11 +5118,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "chipset": {
    "name": "Apple M3 Max (14-core CPU)"
-  }
+  },
+  "os": "macOS"
  },
  {
   "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",
@@ -5171,12 +5226,14 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [
    "Blue"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "watchOS"
  },
  {
   "id": "apple-watch-se-3",
@@ -5376,10 +5433,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "watchOS"
  },
  {
   "id": "apple-watch-ultra-3",
@@ -5465,8 +5524,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "watchOS"
  },
  {
   "id": "asus-22-vp228de",
@@ -14378,9 +14439,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-epix-pro-sapphire-edition-51-mm",
@@ -14411,9 +14474,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-epix-pro-standard-edition-47mm",
@@ -14444,9 +14509,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-7-pro-sapphire-solar",
@@ -14475,8 +14542,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-7x-pro-sapphire-solar-edition",
@@ -14503,8 +14572,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-8-47-mm-amoled",
@@ -14538,10 +14609,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-8-47-mm-amoled-sapphire-carbon",
@@ -14577,9 +14650,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-8-pro-47-mm-amoled",
@@ -14616,10 +14691,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-9-51mm-carbon-dlc-band",
@@ -14650,9 +14727,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-fenix-9-pro-47mm-amoled-carbon-dlc",
@@ -14683,9 +14762,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-170",
@@ -14715,8 +14796,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-170-music",
@@ -14746,8 +14829,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-570",
@@ -14776,8 +14861,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-70",
@@ -14808,8 +14895,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-965-black-powder",
@@ -14840,8 +14929,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-970",
@@ -14872,8 +14963,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-forerunner-970-010-02969-10",
@@ -14902,8 +14995,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-instinct-2x-solar",
@@ -14933,8 +15028,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-instinct-2x-solar-tactical-edition",
@@ -14961,8 +15058,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-instinct-3-50mm-amoled",
@@ -15002,10 +15101,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-instinct-3-50mm-solar",
@@ -15042,10 +15143,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-venu-3-with-leather",
@@ -15076,8 +15179,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-venu-3s-french",
@@ -15106,8 +15211,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-venu-4-45-mm",
@@ -15148,10 +15255,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-venu-x1-gps",
@@ -15184,8 +15293,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-vivoactive-5",
@@ -15215,8 +15326,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-vivoactive-5-metallic-orchid",
@@ -15245,8 +15358,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "garmin-vivoactive-6",
@@ -15278,8 +15393,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Garmin (own system)"
  },
  {
   "id": "gigabyte-gaming-a16-ga6h",
@@ -15551,8 +15668,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "google-pixel-10-pro-xl",
@@ -15579,8 +15698,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "google-pixel-10a",
@@ -15704,8 +15825,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "google-pixel-9-pro",
@@ -15732,8 +15855,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "google-pixel-9-pro-xl",
@@ -15760,8 +15885,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "google-pixel-9a",
@@ -16045,8 +16172,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-110uxnq",
@@ -16073,8 +16202,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-116uxq",
@@ -16101,8 +16232,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-32a4n",
@@ -16132,8 +16265,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-32a4q",
@@ -16163,8 +16298,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-32a5s",
@@ -16194,8 +16331,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-40a4n",
@@ -16225,8 +16364,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-40a4q",
@@ -16256,8 +16397,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-40a4s",
@@ -16287,8 +16430,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-40a5q",
@@ -16318,8 +16463,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-40a5s",
@@ -16349,8 +16496,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43a6n",
@@ -16380,8 +16529,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43a6q",
@@ -16411,8 +16562,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43a7kq",
@@ -16442,8 +16595,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43a7s",
@@ -16473,8 +16628,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43e7nq",
@@ -16501,8 +16658,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43e7q",
@@ -16529,8 +16688,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-43e7s",
@@ -16557,8 +16718,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50a6q",
@@ -16588,8 +16751,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50a6s",
@@ -16619,8 +16784,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50a7nq",
@@ -16650,8 +16817,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50a7s",
@@ -16681,8 +16850,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50e7q",
@@ -16709,8 +16880,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50e7s",
@@ -16737,8 +16910,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-50u7q",
@@ -16768,8 +16943,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55a6n",
@@ -16799,8 +16976,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55a6q",
@@ -16830,8 +17009,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55a7q",
@@ -16861,8 +17042,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55a7s",
@@ -16892,8 +17075,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55e7q",
@@ -16920,8 +17105,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55e7q-pro",
@@ -16948,8 +17135,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55e7s",
@@ -16976,8 +17165,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55e8s",
@@ -17004,8 +17195,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55u7q",
@@ -17037,8 +17230,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55u7q-pro",
@@ -17068,8 +17263,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55u7s-pro",
@@ -17099,8 +17296,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-55u8q",
@@ -17130,8 +17329,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-58a6q",
@@ -17161,8 +17362,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-58e7q",
@@ -17189,8 +17392,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a6q",
@@ -17220,8 +17425,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a6s",
@@ -17251,8 +17458,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a7nq",
@@ -17282,8 +17491,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a7q",
@@ -17313,8 +17524,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a7s",
@@ -17344,8 +17557,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a85h",
@@ -17375,8 +17590,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65a85k",
@@ -17406,8 +17623,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65e7q",
@@ -17436,8 +17655,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65e7q-pro",
@@ -17464,8 +17685,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65e7s",
@@ -17492,8 +17715,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65e8s",
@@ -17520,8 +17745,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65u7hq",
@@ -17551,8 +17778,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65u7q",
@@ -17584,8 +17813,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65u7q-pro",
@@ -17615,8 +17846,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65u7s-pro",
@@ -17646,8 +17879,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65u8q",
@@ -17677,8 +17912,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65ur8s",
@@ -17708,8 +17945,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-65uxkq",
@@ -17736,8 +17975,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75a6q",
@@ -17767,8 +18008,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75e7q",
@@ -17795,8 +18038,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75e7q-pro",
@@ -17823,8 +18068,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75e7s",
@@ -17851,8 +18098,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75e8s",
@@ -17879,8 +18128,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75u7q",
@@ -17910,8 +18161,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75u7q-pro",
@@ -17941,8 +18194,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75u7s-pro",
@@ -17972,8 +18227,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75ur8s",
@@ -18003,8 +18260,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-75ur9s",
@@ -18034,8 +18293,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85a6bg",
@@ -18065,8 +18326,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85a6q",
@@ -18096,8 +18359,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85e7q",
@@ -18124,8 +18389,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85e7s",
@@ -18152,8 +18419,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85e8s",
@@ -18180,8 +18449,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85u7q",
@@ -18211,8 +18482,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "hisense-85u7s-pro",
@@ -18242,8 +18515,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "VIDAA"
  },
  {
   "id": "honor-200",
@@ -18272,8 +18547,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-200-lite-5g",
@@ -18307,9 +18584,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-400",
@@ -18421,8 +18700,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-400-pro",
@@ -18574,8 +18855,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-600-lite",
@@ -18602,8 +18885,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-600-pro",
@@ -18630,8 +18915,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-band-6",
@@ -19052,8 +19339,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-magic7",
@@ -19080,8 +19369,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg",
@@ -19295,8 +19586,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-8",
@@ -19323,8 +19616,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-9-5g",
@@ -19353,8 +19648,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-x7-jms-w09",
@@ -19383,8 +19680,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-x7-lte-jms-l09",
@@ -19413,8 +19712,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-x8b-ndl2-l09",
@@ -19443,8 +19744,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-x8b-ndl2-w09",
@@ -19473,8 +19776,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-pad-x9a",
@@ -19504,8 +19809,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-watch-gs-3-rubber",
@@ -19560,8 +19867,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x6c",
@@ -19588,8 +19897,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x7b",
@@ -19616,8 +19927,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x7c",
@@ -19644,8 +19957,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x7d",
@@ -19677,8 +19992,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x7e",
@@ -19712,8 +20029,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x8",
@@ -19740,11 +20059,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x8b",
@@ -19776,11 +20097,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x8c",
@@ -19881,8 +20204,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x9",
@@ -19909,11 +20234,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "honor-x9b",
@@ -20109,8 +20436,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, MagicOS"
  },
  {
   "id": "hp-14-dq6015dx",
@@ -22951,8 +23280,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "HarmonyOS"
  },
  {
   "id": "jbl-authentics-200",
@@ -26598,8 +26929,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "lenovo-think-book-14-g8-irl",
@@ -27606,8 +27939,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-43nano80a6b",
@@ -27635,8 +27970,10 @@
   "summaryEn": "A 43-inch NanoCell LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-43nu850b6la",
@@ -27664,8 +28001,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-43qned70b6c",
@@ -27693,8 +28032,10 @@
   "summaryEn": "A 43-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-43ua75009la",
@@ -27722,8 +28063,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-43uq81006lb",
@@ -27750,8 +28093,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-50nu850b6la",
@@ -27779,8 +28124,10 @@
   "summaryEn": "A 50-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-50qned70b6c",
@@ -27808,8 +28155,10 @@
   "summaryEn": "A 50-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-50qned80a6a",
@@ -27837,8 +28186,10 @@
   "summaryEn": "A 50-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55nano766qa",
@@ -27868,8 +28219,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55nano816na",
@@ -27901,8 +28254,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55nu850b6la",
@@ -27930,8 +28285,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned70a6a",
@@ -27959,8 +28316,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned80a6a",
@@ -27988,8 +28347,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned80b6b",
@@ -28017,8 +28378,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned80t6a",
@@ -28046,8 +28409,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned816ra",
@@ -28077,8 +28442,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned82a6b",
@@ -28106,8 +28473,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned86a6a",
@@ -28135,8 +28504,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55qned86t6a",
@@ -28164,8 +28535,10 @@
   "summaryEn": "A 55-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-55ur81006lj",
@@ -28195,8 +28568,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65nano766qa",
@@ -28226,8 +28601,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65nu850b6la",
@@ -28255,8 +28632,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65qned70a6a",
@@ -28284,8 +28663,10 @@
   "summaryEn": "A 65-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65qned80a6a",
@@ -28313,8 +28694,10 @@
   "summaryEn": "A 65-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65qned80b6b",
@@ -28342,8 +28725,10 @@
   "summaryEn": "A 65-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65qned86t6a",
@@ -28371,8 +28756,10 @@
   "summaryEn": "A 65-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-65ua75009la",
@@ -28400,8 +28787,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-75nu850b6la",
@@ -28429,8 +28818,10 @@
   "summaryEn": "A 75-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-75qned70b6a",
@@ -28458,8 +28849,10 @@
   "summaryEn": "A 75-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-75qned85b6b",
@@ -28487,8 +28880,10 @@
   "summaryEn": "A 75-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-75qned86a6a",
@@ -28516,8 +28911,10 @@
   "summaryEn": "A 75-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-85qned70b6a",
@@ -28545,8 +28942,10 @@
   "summaryEn": "A 85-inch QNED Mini-LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled55b4rla",
@@ -28576,8 +28975,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled55c6rla",
@@ -28605,8 +29006,10 @@
   "summaryEn": "A 55-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled65b4rla",
@@ -28636,8 +29039,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled65b5rla",
@@ -28665,8 +29070,10 @@
   "summaryEn": "A 65-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled65c5rla",
@@ -28694,8 +29101,10 @@
   "summaryEn": "A 65-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled65g5rla",
@@ -28723,8 +29132,10 @@
   "summaryEn": "A 65-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "lg-oled83c4rla",
@@ -28752,8 +29163,10 @@
   "summaryEn": "A 83-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "webOS"
  },
  {
   "id": "marshall-acton-iii",
@@ -29286,8 +29699,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Windows 11"
  },
  {
   "id": "microsoft-surface-go-2",
@@ -29316,8 +29731,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Windows 11"
  },
  {
   "category": "laptop",
@@ -30211,8 +30628,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, Nothing OS"
  },
  {
   "id": "nothing-phone-3",
@@ -30381,8 +30800,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, ColorOS"
  },
  {
   "id": "oppo-reno-a38",
@@ -30409,8 +30830,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, ColorOS"
  },
  {
   "id": "oppo-reno-a58",
@@ -30437,8 +30860,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, ColorOS"
  },
  {
   "id": "oppo-reno-a78",
@@ -30465,8 +30890,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, ColorOS"
  },
  {
   "id": "oppo-reno8t",
@@ -30493,8 +30920,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, ColorOS"
  },
  {
   "id": "philips-24-usb-c-24e1n3300a-00",
@@ -30664,8 +31093,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "poco-c85",
@@ -30771,8 +31202,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "poco-f7-ultra",
@@ -30969,8 +31402,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "realme-16",
@@ -31280,8 +31715,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-a25",
@@ -31313,8 +31750,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-eo-ic100-usb-type-c",
@@ -31536,12 +31975,14 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [
    "Silver"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Wear OS, One UI Watch"
  },
  {
   "id": "samsung-galaxy-9-44mm",
@@ -31584,10 +32025,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Wear OS, One UI Watch"
  },
  {
   "id": "samsung-galaxy-a06",
@@ -31782,8 +32225,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-a08",
@@ -31815,8 +32260,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-a16",
@@ -32187,8 +32634,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-a35",
@@ -32220,8 +32669,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-a36",
@@ -32678,8 +33129,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-galaxy-book-4-np750xgk-ks2us",
@@ -33051,8 +33504,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Wear OS, One UI Watch"
  },
  {
   "id": "samsung-galaxy-s25",
@@ -33917,8 +34372,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-a8-10-5-x205",
@@ -33947,8 +34404,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-a9-x110",
@@ -33979,8 +34438,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-a9-x115",
@@ -34016,8 +34477,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-a9plus-x210",
@@ -34048,8 +34511,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-a9plus-x216",
@@ -34084,8 +34549,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-s10-fe",
@@ -34415,8 +34882,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-s9-fe-x516",
@@ -34453,8 +34922,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-tab-s9-plus",
@@ -34528,8 +34999,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, One UI"
  },
  {
   "id": "samsung-galaxy-ultra-47mm-2024",
@@ -34573,9 +35046,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Wear OS, One UI Watch"
  },
  {
   "id": "samsung-galaxy-ultra-47mm-2025",
@@ -34610,9 +35085,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Wear OS, One UI Watch"
  },
  {
   "id": "samsung-galaxy-watch-3-41mm",
@@ -34642,9 +35119,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Tizen"
  },
  {
   "id": "samsung-galaxy-watch-7",
@@ -34894,10 +35373,12 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "colors": [],
-  "variantUnit": "mm"
+  "variantUnit": "mm",
+  "os": "Wear OS, One UI Watch"
  },
  {
   "id": "samsung-galaxy-z-flip-7",
@@ -35700,8 +36181,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-mre75r95hauxpy",
@@ -35728,8 +36211,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-odyssey-ark-55-ls55cg97wnixci",
@@ -35911,8 +36396,10 @@
   "summaryEn": "A 43-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe43q7faauxru",
@@ -35940,8 +36427,10 @@
   "summaryEn": "A 43-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe43qn70hauxpy",
@@ -35971,8 +36460,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe48s90faexru",
@@ -36002,8 +36493,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe48s90haexpy",
@@ -36033,8 +36526,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe50q7faauxru",
@@ -36062,8 +36557,10 @@
   "summaryEn": "A 50-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe50qn70hauxpy",
@@ -36093,8 +36590,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55ls03bauxce",
@@ -36121,8 +36620,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55q60abuxru",
@@ -36150,8 +36651,10 @@
   "summaryEn": "A 55-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55q7faauxru",
@@ -36179,8 +36682,10 @@
   "summaryEn": "A 55-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55q7fam",
@@ -36208,8 +36713,10 @@
   "summaryEn": "A 55-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55qn80fauxru",
@@ -36237,8 +36744,10 @@
   "summaryEn": "A 55-inch Neo QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55qn80hauxpy",
@@ -36268,8 +36777,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55s85haexpy",
@@ -36296,8 +36807,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55s90hauxpy",
@@ -36327,8 +36840,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe55s95cauxru",
@@ -36356,8 +36871,10 @@
   "summaryEn": "A 55-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65q7faauxru",
@@ -36387,8 +36904,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65qn80hauxpy",
@@ -36418,8 +36937,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65qn85dbuxru",
@@ -36447,8 +36968,10 @@
   "summaryEn": "A 65-inch Neo QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65qn900duxru",
@@ -36478,8 +37001,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65qn90fauxru",
@@ -36507,8 +37032,10 @@
   "summaryEn": "A 65-inch Neo QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65qn990fuxru",
@@ -36538,8 +37065,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65s85haexpy",
@@ -36566,8 +37095,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65s90dauxru",
@@ -36595,8 +37126,10 @@
   "summaryEn": "A 65-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65s90faexru",
@@ -36624,8 +37157,10 @@
   "summaryEn": "A 65-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65s95fauxru",
@@ -36653,8 +37188,10 @@
   "summaryEn": "A 65-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe65s95hauxpy",
@@ -36684,8 +37221,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe75q60dauxru",
@@ -36713,8 +37252,10 @@
   "summaryEn": "A 75-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe75q70dauxru",
@@ -36742,8 +37283,10 @@
   "summaryEn": "A 75-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe75qn70fauxru",
@@ -36771,8 +37314,10 @@
   "summaryEn": "A 75-inch Neo QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe75qn70hauxpy",
@@ -36802,8 +37347,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe75qn80fauxru",
@@ -36831,8 +37378,10 @@
   "summaryEn": "A 75-inch Neo QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe75qn90cauxru",
@@ -36860,8 +37409,10 @@
   "summaryEn": "A 75-inch Neo QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe77s90faexru",
@@ -36891,8 +37442,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe77s95fauxru",
@@ -36920,8 +37473,10 @@
   "summaryEn": "A 77-inch OLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe83s90daexru",
@@ -36951,8 +37506,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe83s90haexpy",
@@ -36982,8 +37539,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe85q60dauxru",
@@ -37011,8 +37570,10 @@
   "summaryEn": "A 85-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe85qn800auxru",
@@ -37042,8 +37603,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe85qn90bauxce",
@@ -37073,8 +37636,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-qe85qn90cauxru",
@@ -37104,8 +37669,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-s27d402g",
@@ -37167,8 +37734,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue43m70hauxpy",
@@ -37196,8 +37765,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue43u8000huxpy",
@@ -37225,8 +37796,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue50u8000huxpy",
@@ -37254,8 +37827,10 @@
   "summaryEn": "A 50-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue55du8000uxru",
@@ -37283,8 +37858,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue55m70hauxpy",
@@ -37312,8 +37889,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue55m80hauxpy",
@@ -37343,8 +37922,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue55u8000fuxru",
@@ -37372,8 +37953,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue65m70hauxpy",
@@ -37403,8 +37986,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue65m80hauxpy",
@@ -37432,8 +38017,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue65u8000fuxru",
@@ -37461,8 +38048,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue65u8000huxpy",
@@ -37490,8 +38079,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue75m70hauxpy",
@@ -37521,8 +38112,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue75m80hauxpy",
@@ -37550,8 +38143,10 @@
   "summaryEn": "A 75-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue75u8000huxpy",
@@ -37579,8 +38174,10 @@
   "summaryEn": "A 75-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue85m80hauxpy",
@@ -37610,8 +38207,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "samsung-ue98du9000uxru",
@@ -37641,8 +38240,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Tizen"
  },
  {
   "id": "sennheiser-accentum-plus",
@@ -38057,8 +38658,10 @@
   "summaryEn": "A soundbar with eleven drivers and upward-firing Dolby Atmos.",
   "unsure": [
    "popularity",
-   "body.weight"
-  ]
+   "body.weight",
+   "os"
+  ],
+  "os": "Sonos app"
  },
  {
   "id": "sonos-era-300",
@@ -38098,8 +38701,10 @@
   ],
   "summaryEn": "Six drivers pointed up, out and sideways — Sonos built for Dolby Atmos music, not just stereo.",
   "unsure": [
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Sonos app"
  },
  {
   "id": "sony-k-43s30",
@@ -38127,8 +38732,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-50s30",
@@ -38156,8 +38763,10 @@
   "summaryEn": "A 50-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-55s30",
@@ -38185,8 +38794,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-55xr50",
@@ -38216,8 +38827,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-65s30",
@@ -38245,8 +38858,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-65xr50",
@@ -38276,8 +38891,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-65xr70",
@@ -38307,8 +38924,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-65xr80m2",
@@ -38338,8 +38957,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-75s30",
@@ -38369,8 +38990,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-75xr50",
@@ -38400,8 +39023,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-k-75xr70",
@@ -38431,8 +39056,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-kd-55x85l",
@@ -38462,8 +39089,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-kd-65x85l",
@@ -38493,8 +39122,10 @@
   "unsure": [
    "popularity",
    "display.resolution",
-   "chipset"
-  ]
+   "chipset",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "sony-playstation-dualsense-ps5",
@@ -39368,8 +39999,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android"
  },
  {
   "id": "tcl-115c7k",
@@ -39397,8 +40030,10 @@
   "summaryEn": "A 115-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-32s5k",
@@ -39425,8 +40060,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-43p7k",
@@ -39454,8 +40091,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-43v6c",
@@ -39483,8 +40122,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-43v6d",
@@ -39512,8 +40153,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-50c6k",
@@ -39541,8 +40184,10 @@
   "summaryEn": "A 50-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-50p7l",
@@ -39570,8 +40215,10 @@
   "summaryEn": "A 50-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-50s5k",
@@ -39598,8 +40245,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-50v6c",
@@ -39627,8 +40276,10 @@
   "summaryEn": "A 50-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-55c6k",
@@ -39656,8 +40307,10 @@
   "summaryEn": "A 55-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-55c7k",
@@ -39685,8 +40338,10 @@
   "summaryEn": "A 55-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-55p7k",
@@ -39714,8 +40369,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-55p8l",
@@ -39743,8 +40400,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-55v6c",
@@ -39772,8 +40431,10 @@
   "summaryEn": "A 55-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-65c6k",
@@ -39801,8 +40462,10 @@
   "summaryEn": "A 65-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-65c7l",
@@ -39830,8 +40493,10 @@
   "summaryEn": "A 65-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-65p8k",
@@ -39859,8 +40524,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-65p8l",
@@ -39888,8 +40555,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-65t6d",
@@ -39917,8 +40586,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-75c6k",
@@ -39946,8 +40617,10 @@
   "summaryEn": "A 75-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-75c7k",
@@ -39975,8 +40648,10 @@
   "summaryEn": "A 75-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-75t6d",
@@ -40004,8 +40679,10 @@
   "summaryEn": "A 75-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-75v6d",
@@ -40033,8 +40710,10 @@
   "summaryEn": "A 75-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-85p7l",
@@ -40062,8 +40741,10 @@
   "summaryEn": "A 85-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-85p8l",
@@ -40091,8 +40772,10 @@
   "summaryEn": "A 85-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-98c6k",
@@ -40120,8 +40803,10 @@
   "summaryEn": "A 98-inch QLED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "tcl-98p8k",
@@ -40149,8 +40834,10 @@
   "summaryEn": "A 98-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "toshiba-32v35me",
@@ -41221,8 +41908,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-12x",
@@ -41249,8 +41938,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-13-lite",
@@ -41277,8 +41968,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-14t",
@@ -41305,8 +41998,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-15",
@@ -41607,8 +42302,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-17t-pro",
@@ -41714,8 +42411,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-a-50-2026",
@@ -41743,8 +42442,10 @@
   "summaryEn": "A 50-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-a-65-2025",
@@ -41772,8 +42473,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-a-65-2026",
@@ -41801,8 +42504,10 @@
   "summaryEn": "A 65-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-a-pro-43-2026",
@@ -41830,8 +42535,10 @@
   "summaryEn": "A 43-inch LED television.",
   "unsure": [
    "display.resolution",
-   "popularity"
-  ]
+   "popularity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-buds-6-lite",
@@ -42160,8 +42867,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-poco-f4",
@@ -42188,8 +42897,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-poco-f5",
@@ -42216,8 +42927,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-poco-f6",
@@ -42248,8 +42961,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-f6-pro",
@@ -42284,8 +42999,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-m5",
@@ -42312,8 +43029,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-poco-m6",
@@ -42340,8 +43059,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-m6-pro",
@@ -42373,8 +43094,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-m7",
@@ -42414,9 +43137,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-m7-pro-5g",
@@ -42445,8 +43170,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-m8-5g",
@@ -42477,9 +43204,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-m8-pro-5g",
@@ -42515,8 +43244,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-x5-5g",
@@ -42546,8 +43277,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-poco-x5-pro-5g",
@@ -42574,8 +43307,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-poco-x7",
@@ -42606,8 +43341,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-poco-x8-pro-max",
@@ -42637,9 +43374,11 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
-  "colors": []
+  "colors": [],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-10-2022",
@@ -42666,8 +43405,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-10a",
@@ -42696,8 +43437,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-10c",
@@ -42724,8 +43467,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-12",
@@ -42752,11 +43497,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-12c",
@@ -42783,8 +43530,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-13",
@@ -42816,11 +43565,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-13c",
@@ -42847,8 +43598,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-14c",
@@ -42971,11 +43724,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-15c",
@@ -43085,8 +43840,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-4-active",
@@ -43345,8 +44102,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-a3",
@@ -43373,8 +44132,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-a5",
@@ -43401,8 +44162,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-a7-pro",
@@ -43432,8 +44195,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-buds-3-lite",
@@ -43558,8 +44323,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-note-10s",
@@ -43586,8 +44353,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-note-11",
@@ -43614,11 +44383,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-note-11-proplus-5g",
@@ -43645,8 +44416,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-note-11s",
@@ -43673,8 +44446,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-note-12",
@@ -43701,8 +44476,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-note-13",
@@ -43734,8 +44511,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-13-pro",
@@ -43910,8 +44689,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-14-pro",
@@ -44023,8 +44804,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-14s",
@@ -44056,11 +44839,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-15",
@@ -44087,8 +44872,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-15-pro",
@@ -44205,8 +44992,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-17-4g",
@@ -44235,8 +45024,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-17-5g",
@@ -44266,8 +45057,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-17-pro-5g",
@@ -44298,8 +45091,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-note-17-pro-max-5g",
@@ -44329,8 +45124,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  },
  {
   "id": "xiaomi-redmi-pad",
@@ -44357,11 +45154,13 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
+   "battery.capacity",
+   "os"
   ],
   "settled": [
    "notADuplicate"
-  ]
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-pad-2",
@@ -44441,8 +45240,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-pad-pro-5g",
@@ -44469,8 +45270,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-pad-se",
@@ -44497,8 +45300,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-pad-se-8-7-4g",
@@ -44525,8 +45330,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS or MIUI"
  },
  {
   "id": "xiaomi-redmi-smart-band-2",
@@ -45142,8 +45949,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-smart-band-10",
@@ -45418,8 +46227,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-tv-s-65-2025-mled",
@@ -45448,8 +46259,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Google TV"
  },
  {
   "id": "xiaomi-watch-s1",
@@ -45789,8 +46602,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, realme UI"
  },
  {
   "id": "apple-iphone-16e",
@@ -45830,8 +46645,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "iOS"
  },
  {
   "id": "realme-note-60x",
@@ -45867,8 +46684,10 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, realme UI"
  },
  {
   "id": "poco-c71",
@@ -45907,7 +46726,9 @@
    "popularity",
    "display",
    "chipset",
-   "battery.capacity"
-  ]
+   "battery.capacity",
+   "os"
+  ],
+  "os": "Android, HyperOS"
  }
 ]
