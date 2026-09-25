@@ -268,12 +268,17 @@
         "priceAmd": 413000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Acer Aspire A16-51GM-71YF.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-150U"
+    }
   },
   {
     "id": "acer-aspire-a514-56m-770k",
@@ -295,12 +300,17 @@
         "priceAmd": 322000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14
+    },
     "battery": {},
     "summaryEn": "Acer Aspire A514-56M-770K.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    }
   },
   {
     "id": "acer-aspire-al15-52",
@@ -320,12 +330,17 @@
         "priceAmd": 214000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Acer Aspire AL15-52.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1235U"
+    }
   },
   {
     "id": "acer-aspire-go-15-ag15-32p-39r2",
@@ -539,12 +554,17 @@
         "priceAmd": 192000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Acer Aspire Lite AL16-52P-32E3.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i3-1305U"
+    }
   },
   {
     "id": "acer-aspire-lite-al16-52p-59qu",
@@ -564,12 +584,17 @@
         "priceAmd": 251000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Acer Aspire Lite AL16-52P-59QU.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1334U"
+    }
   },
   {
     "id": "acer-aspire-lite-al16-54p-37j9",
@@ -674,12 +699,19 @@
         "priceAmd": 149900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "Acer Aspire Lite AlL15-36P-C0M7 N150, NX.DE1AA.001.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel N150"
+    }
   },
   {
     "id": "acer-aspire-vero-16-av16-51p-58ku",
@@ -740,12 +772,17 @@
         "priceAmd": 628000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Acer Nitro 5 AN515-45-R7SL.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 5800H"
+    }
   },
   {
     "id": "acer-nitro-5-anv15-51-93hs",
@@ -765,12 +802,17 @@
         "priceAmd": 558000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Acer Nitro 5 ANV15-51-93HS.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i9-13900H"
+    }
   },
   {
     "id": "acer-nitro-anv15-51-76er",
@@ -873,12 +915,17 @@
         "priceAmd": 503000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Acer Nitro V15 ANV15-51-789J.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    }
   },
   {
     "id": "acer-nitro-v15-anv15-52-57bb",
@@ -1023,12 +1070,17 @@
         "priceAmd": 623000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Acer Nitro V16 ANV16-71-70F7.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-14650HX"
+    }
   },
   {
     "id": "acer-predator-helios-neo-14-phn14-51-79ub",
@@ -1048,12 +1100,17 @@
         "priceAmd": 688000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14.5
+    },
     "battery": {},
     "summaryEn": "Acer Predator Helios Neo 14 PHN14-51-79UB.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-155H"
+    }
   },
   {
     "id": "acer-predator-helios-neo-16s-71-91aw",
@@ -1238,12 +1295,17 @@
         "priceAmd": 588000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Acer Predator Triton 300 PT 315-53-75 XX.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-11800H"
+    }
   },
   {
     "id": "acer-swift-3-sf314-59-75qc",
@@ -1263,12 +1325,17 @@
         "priceAmd": 295000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14
+    },
     "battery": {},
     "summaryEn": "Acer Swift 3 SF314 59 75QC.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1165G7"
+    }
   },
   {
     "id": "acer-swift-go-14-sfg14-71-52tv",
@@ -4833,7 +4900,9 @@
         "priceAmd": 692000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14.2
+    },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 14 2023 MTL73.",
     "unsure": [
@@ -5228,7 +5297,9 @@
         "priceAmd": 1043000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14.2
+    },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 14 MRX33 2023.",
     "unsure": [
@@ -5264,7 +5335,9 @@
         "priceAmd": 1175000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16.2
+    },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 16 MRW23.",
     "unsure": [
@@ -5862,12 +5935,18 @@
         "priceAmd": 429900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS B3405CCA-LY0189.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5-225H"
+    }
   },
   {
     "id": "asus-b3405cca-ly0191",
@@ -5889,12 +5968,18 @@
         "priceAmd": 498900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS B3405CCA-LY0191.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-255H"
+    }
   },
   {
     "id": "asus-b3605cca-mb0080",
@@ -5916,12 +6001,18 @@
         "priceAmd": 498900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS B3605CCA-MB0080.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-255H"
+    }
   },
   {
     "id": "asus-chromebook-cx1700cka-ws44f-m",
@@ -6071,12 +6162,18 @@
         "priceAmd": 559900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS Expert Book B5 B5405CVA.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5-120U"
+    }
   },
   {
     "id": "asus-expert-center-p400-aio-p4-40va",
@@ -6153,12 +6250,18 @@
         "priceAmd": 539900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "2560x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS ExpertBook B5 B5405CCA.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-255H"
+    }
   },
   {
     "id": "asus-expertbook-p1-p1503cva-misty",
@@ -6180,12 +6283,18 @@
         "priceAmd": 389900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS ExpertBook P1 P1503CVA Misty.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5-210H"
+    }
   },
   {
     "id": "asus-fa506n",
@@ -6208,7 +6317,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "ASUS FA506N.",
@@ -6220,7 +6330,10 @@
     },
     "sources": [
       "e-catalog"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 7535HS"
+    }
   },
   {
     "id": "asus-fa507",
@@ -6242,12 +6355,19 @@
         "priceAmd": 565900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 144
+    },
     "battery": {},
     "summaryEn": "ASUS FA507.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 7435HS"
+    }
   },
   {
     "id": "asus-fa707",
@@ -6269,12 +6389,18 @@
         "priceAmd": 549900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 17.3,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS FA707.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 7435HS"
+    }
   },
   {
     "id": "asus-fx607v",
@@ -6297,7 +6423,9 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "ASUS FX607V.",
@@ -6309,7 +6437,10 @@
     },
     "sources": [
       "e-catalog"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5-210H"
+    }
   },
   {
     "id": "asus-gaming-25-vg258qr",
@@ -6362,12 +6493,18 @@
         "priceAmd": 465900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS K3605V.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    }
   },
   {
     "id": "asus-l410ma-tb02-n4020-90nb0q15-m32880-star",
@@ -6389,12 +6526,18 @@
         "priceAmd": 129900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS L410MA-TB02 N4020, 90NB0Q15-M32880 Star.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Celeron N4020"
+    }
   },
   {
     "id": "asus-l510mads04",
@@ -6416,12 +6559,18 @@
         "priceAmd": 128900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS L510MADS04.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Celeron N4020"
+    }
   },
   {
     "id": "asus-p5405csa",
@@ -6445,12 +6594,18 @@
         "priceAmd": 469900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "ASUS P5405CSA.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5-226V"
+    }
   },
   {
     "id": "asus-proart-display-32-pa329cv",
@@ -7861,12 +8016,18 @@
         "priceAmd": 779900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS TUF Gaming A16 FA608P.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 9 8940HX"
+    }
   },
   {
     "id": "asus-tuf-gaming-fx707zc4-hx076",
@@ -8255,7 +8416,11 @@
         "priceAmd": 239900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 15, Core 3-100U, X1504VAP-C38128, W11.",
     "unsure": [
@@ -8263,7 +8428,10 @@
     ],
     "settled": [
       "notADuplicate"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 3-100U"
+    }
   },
   {
     "id": "asus-vivobook-15-f1504vap-bs54t",
@@ -8327,12 +8495,18 @@
         "priceAmd": 339900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 15 M1502N.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 150"
+    }
   },
   {
     "id": "asus-vivobook-15-x1504va",
@@ -8354,12 +8528,18 @@
         "priceAmd": 319900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 15 X1504VA.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    }
   },
   {
     "id": "asus-vivobook-15-x1505va-oled",
@@ -8428,9 +8608,12 @@
       "size": 15.6,
       "type": "2.8K OLED",
       "refresh": 120,
-      "touch": false
+      "touch": false,
+      "resolution": "1920x1080"
     },
-    "chipset": {},
+    "chipset": {
+      "name": "AMD Ryzen 5 4600H"
+    },
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
@@ -8482,12 +8665,18 @@
         "priceAmd": 419900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 16, AMD Ryzen 7-7730U, 90NB10R1-M00CH0, W11.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 7730U"
+    }
   },
   {
     "id": "asus-vivobook-16-f1605va-ws96",
@@ -8681,12 +8870,18 @@
         "priceAmd": 379900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 17.3,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 17 X1704VAP.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5-120U"
+    }
   },
   {
     "id": "asus-vivobook-e1404fa-th31",
@@ -9387,7 +9582,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core Ultra 9 185H"
@@ -9514,12 +9710,18 @@
         "priceAmd": 395900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook S14 S3407V.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5-210H"
+    }
   },
   {
     "category": "laptop",
@@ -9537,9 +9739,12 @@
       "size": 15.6,
       "type": "2.8K OLED",
       "refresh": 60,
-      "touch": false
+      "touch": false,
+      "resolution": "2880x1620"
     },
-    "chipset": {},
+    "chipset": {
+      "name": "AMD Ryzen 7 5800H"
+    },
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
@@ -9591,12 +9796,18 @@
         "priceAmd": 389900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook S16 S3607V.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5-210H"
+    }
   },
   {
     "id": "asus-vivobook-s16-s5606ma-ds96-oled",
@@ -9798,7 +10009,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i5-1235U"
@@ -10388,7 +10600,8 @@
     "display": {
       "size": 14,
       "type": "FHD+ OLED",
-      "touch": true
+      "touch": true,
+      "resolution": "2880x1800"
     },
     "chipset": {
       "name": "Intel Core Ultra 7 265H"
@@ -12425,13 +12638,18 @@
         "priceAmd": 509000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Dell Inspiron 16 Plus 7630.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    }
   },
   {
     "id": "dell-inspiron-7440-core-5",
@@ -12646,12 +12864,18 @@
         "priceAmd": 569900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Dell N2Y94.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-165U"
+    }
   },
   {
     "id": "dell-plus-16-db16250",
@@ -13000,13 +13224,19 @@
         "priceAmd": 169000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Dell Vostro 3520 i3.",
     "unsure": [
       "popularity"
     ],
-    "year": 2022
+    "year": 2022,
+    "chipset": {
+      "name": "Intel Core i3-1215U"
+    }
   },
   {
     "id": "dell-vostro-3520-i5",
@@ -13026,13 +13256,19 @@
         "priceAmd": 216000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Dell Vostro 3520 i5.",
     "unsure": [
       "popularity"
     ],
-    "year": 2022
+    "year": 2022,
+    "chipset": {
+      "name": "Intel Core i5-1235U"
+    }
   },
   {
     "id": "dell-vostro-3530-i7",
@@ -19952,14 +20188,19 @@
         "priceAmd": 539000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 W11H /5301AJJG.",
     "unsure": [
       "popularity"
     ],
     "colors": [],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core Ultra 5-125H"
+    }
   },
   {
     "id": "honor-magicbook-x16-2025",
@@ -19981,13 +20222,19 @@
         "priceAmd": 255900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Honor MagicBook X16 2025.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    }
   },
   {
     "id": "honor-magicbook-x16-2026-16-wuxga-ssd1tb",
@@ -20018,14 +20265,18 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Honor MagicBook X16 2026 16\" WUXGA /SSD1TB.",
     "unsure": [
       "popularity"
     ],
-    "year": 2026
+    "year": 2026,
+    "chipset": {
+      "name": "Intel Core Ultra 5-125H"
+    }
   },
   {
     "category": "laptop",
@@ -20043,7 +20294,8 @@
       "size": 16,
       "type": "2.5K IPS",
       "refresh": 120,
-      "touch": false
+      "touch": false,
+      "resolution": "1920x1200"
     },
     "chipset": {
       "name": "Intel Core 5 220H"
@@ -22665,13 +22917,18 @@
         "priceAmd": 363000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14
+    },
     "battery": {},
     "summaryEn": "HP EliteBook 640 G10.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    }
   },
   {
     "id": "hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet",
@@ -22813,12 +23070,17 @@
         "priceAmd": 704000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "HP Envy 16-h1023dx Touch 7Z0P3UA.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i9-13900H"
+    }
   },
   {
     "id": "hp-envy-16-h1053dx-touch-9u360ua",
@@ -22838,12 +23100,17 @@
         "priceAmd": 630000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "HP Envy 16-h1053dx Touch 9U360UA.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13700H"
+    }
   },
   {
     "id": "hp-envy-hayden-22c1",
@@ -22865,12 +23132,18 @@
         "priceAmd": 699900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "HP ENVY Hayden 22C1.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-12700H"
+    }
   },
   {
     "id": "hp-g10-470g10",
@@ -22892,12 +23165,18 @@
         "priceAmd": 429900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 17.3,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "HP G10 470G10.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    }
   },
   {
     "id": "hp-hyperx-omen-15-ga0762nr",
@@ -23899,13 +24178,18 @@
         "priceAmd": 455000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "HP ProBook 450 G10 85C38EA.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    }
   },
   {
     "id": "hp-probook-450-g9-7c196pa",
@@ -23927,13 +24211,18 @@
         "priceAmd": 380000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "HP ProBook 450 G9 7C196PA.",
     "unsure": [
       "popularity"
     ],
-    "year": 2022
+    "year": 2022,
+    "chipset": {
+      "name": "Intel Core i7-1255U"
+    }
   },
   {
     "id": "hp-s5-524sh",
@@ -24032,12 +24321,18 @@
         "priceAmd": 390000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "HP Victus 15 FA0018NQ.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-12700H"
+    }
   },
   {
     "id": "hp-victus-15-fa0020nq",
@@ -24057,12 +24352,18 @@
         "priceAmd": 390000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "HP Victus 15 FA0020NQ.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-12700H"
+    }
   },
   {
     "id": "hp-victus-15-fa0033dx-9t9r8ua",
@@ -24335,12 +24636,17 @@
         "priceAmd": 469900
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "HP Victus Clamshell Roaree 24C1.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-14450HX"
+    }
   },
   {
     "id": "huawei-led-23-8-ad80hw",
@@ -26027,12 +26333,18 @@
         "priceAmd": 149900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Lenovo 82XB00HVUS.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel N100"
+    }
   },
   {
     "id": "lenovo-82yu016tpb",
@@ -26054,12 +26366,19 @@
         "priceAmd": 299900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "Lenovo 82YU016TPB.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    }
   },
   {
     "id": "lenovo-83b40008us",
@@ -26081,12 +26400,18 @@
         "priceAmd": 319900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Lenovo 83B40008US.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    }
   },
   {
     "id": "lenovo-83f00005us",
@@ -26108,12 +26433,18 @@
         "priceAmd": 779900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.1,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "Lenovo 83F00005US.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-255HX"
+    }
   },
   {
     "id": "lenovo-83l7002nus",
@@ -26135,12 +26466,19 @@
         "priceAmd": 229900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "Lenovo 83L7002NUS.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 3-N355"
+    }
   },
   {
     "id": "lenovo-83lk0001us",
@@ -26162,12 +26500,18 @@
         "priceAmd": 349900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Lenovo 83LK0001US.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-12450HX"
+    }
   },
   {
     "id": "lenovo-83lk00cvus",
@@ -26189,12 +26533,18 @@
         "priceAmd": 439900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Lenovo 83LK00CVUS.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-12450HX"
+    }
   },
   {
     "id": "lenovo-ideacentre-aio-24irh9",
@@ -26575,7 +26925,9 @@
         "priceAmd": 479900
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad 5 2-in-1 14IRU9.",
     "unsure": [
@@ -26836,7 +27188,9 @@
         "priceAmd": 569900
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Pro 5 16IRH8.",
     "unsure": [
@@ -27233,13 +27587,18 @@
         "priceAmd": 253900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15IRU9.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core 3-100U"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15q8x10",
@@ -27304,13 +27663,19 @@
         "priceAmd": 319900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 16IRH10.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11",
@@ -27373,7 +27738,10 @@
         "priceAmd": 349900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 5 14IRH10.",
     "unsure": [
@@ -27382,7 +27750,10 @@
     "settled": [
       "notADuplicate"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-5-14irh10r",
@@ -27404,13 +27775,19 @@
         "priceAmd": 459900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 5 14IRH10R.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core 7-240H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-516irh10",
@@ -27436,13 +27813,19 @@
         "priceAmd": 489900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2880x1800"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 516IRH10.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core 5-210H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus",
@@ -27464,12 +27847,18 @@
         "priceAmd": 449900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 5i, Core 7 240H, 83J1002SUS.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 7-240H"
+    }
   },
   {
     "id": "lenovo-legion-5-15iax10",
@@ -27578,13 +27967,19 @@
         "priceAmd": 755000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "Lenovo Legion 5 Pro 16 IRX9.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core i7-14650HX"
+    }
   },
   {
     "id": "lenovo-legion-pro-5-16",
@@ -27653,12 +28048,18 @@
         "priceAmd": 680000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "Lenovo Legion Pro 5 Slim.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13700H"
+    }
   },
   {
     "id": "lenovo-legion-slim-5-14-aph8-oled-82y5000aus",
@@ -27678,13 +28079,18 @@
         "priceAmd": 599000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14
+    },
     "battery": {},
     "summaryEn": "Lenovo Legion Slim 5 14 APH8 OLED 82Y5000AUS.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "AMD Ryzen 7 7840HS"
+    }
   },
   {
     "id": "lenovo-loq-15",
@@ -27703,7 +28109,8 @@
     "display": {
       "size": 15.6,
       "type": "IPS LCD",
-      "touch": false
+      "touch": false,
+      "resolution": "2560x1440"
     },
     "chipset": {
       "name": "Intel Core i5-13450HX / i7-13645HX"
@@ -27756,13 +28163,18 @@
         "priceAmd": 475000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Lenovo LOQ 15 ARP9 83JC0000US.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "AMD Ryzen 7 7435HS"
+    }
   },
   {
     "id": "lenovo-loq-15ahp10-rtx-5050",
@@ -27874,13 +28286,20 @@
         "priceAmd": 469900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 144
+    },
     "battery": {},
     "summaryEn": "Lenovo LOQ 15IAX9.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core i5-12450HX"
+    }
   },
   {
     "id": "lenovo-loq-15irx10",
@@ -27902,13 +28321,19 @@
         "priceAmd": 599900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Lenovo LOQ 15IRX10.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core i7-14700HX"
+    }
   },
   {
     "id": "lenovo-tab-m9-tb310xu-acc-zac50096ru",
@@ -27994,13 +28419,19 @@
         "priceAmd": 389900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo Think Book 14 G8 IRL.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core 5-210H"
+    }
   },
   {
     "id": "lenovo-thinkbook-16-g8-irl",
@@ -28022,7 +28453,10 @@
         "priceAmd": 389900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkBOOK 16 G8 IRL.",
     "unsure": [
@@ -28050,13 +28484,18 @@
         "priceAmd": 439000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 1 21JN001QGP.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    }
   },
   {
     "id": "lenovo-thinkpad-e16-gen-2-21ma002xrt",
@@ -28076,13 +28515,18 @@
         "priceAmd": 520000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 2 21MA002XRT.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core Ultra 7-155H"
+    }
   },
   {
     "id": "lenovo-thinkpad-e16-gen-2-21ma004vrt",
@@ -28102,13 +28546,18 @@
         "priceAmd": 467000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 2 21MA004VRT.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core Ultra 5-125U"
+    }
   },
   {
     "id": "lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw",
@@ -28156,13 +28605,18 @@
         "priceAmd": 655000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad T16 Gen 2 21HH005AGQ.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    }
   },
   {
     "id": "lenovo-v14-g4-iru",
@@ -28440,13 +28894,18 @@
         "priceAmd": 548000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14.5
+    },
     "battery": {},
     "summaryEn": "Lenovo Yoga Pro 7 14 AHP9 83E3002ARK.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "AMD Ryzen 7 8845HS"
+    }
   },
   {
     "id": "lenovo-yoga-pro-9-16imh9",
@@ -28466,13 +28925,19 @@
         "priceAmd": 1099000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "3200x2000"
+    },
     "battery": {},
     "summaryEn": "Lenovo Yoga Pro 9 16IMH9.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core Ultra 9-185H"
+    }
   },
   {
     "id": "lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led",
@@ -28492,13 +28957,18 @@
         "priceAmd": 1165000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Lenovo Yoga Pro 9 16IMH9 83DN002RRK Mini LED.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "chipset": {
+      "name": "Intel Core Ultra 9-185H"
+    }
   },
   {
     "id": "lenovo-yoga-slim-7-14q8x9",
@@ -30753,13 +31223,19 @@
         "priceAmd": 519900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15,
+      "resolution": "2496x1664"
+    },
     "battery": {},
     "summaryEn": "Microsoft Surface 4.",
     "unsure": [
       "popularity"
     ],
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core i7-1185G7"
+    }
   },
   {
     "id": "microsoft-surface-go-2",
@@ -30781,7 +31257,10 @@
         "priceAmd": 429900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 12.4,
+      "resolution": "1536x1024"
+    },
     "battery": {},
     "summaryEn": "Microsoft Surface Go 2.",
     "unsure": [
@@ -30952,7 +31431,10 @@
     },
     "sources": [
       "e-catalog"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-12650H"
+    }
   },
   {
     "id": "msi-cyborg-15-a13uc-821xae",
@@ -30972,13 +31454,18 @@
         "priceAmd": 456000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "MSI Cyborg 15 A13UC-821XAE.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    }
   },
   {
     "id": "msi-cyborg-15-a13ve-218us",
@@ -30998,13 +31485,18 @@
         "priceAmd": 539000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "MSI Cyborg 15 A13VE-218US.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    }
   },
   {
     "id": "msi-katana-15-b13vek-1675us",
@@ -31234,13 +31726,18 @@
         "priceAmd": 220000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "MSI Modern 15 A11MU 1006XGE.",
     "unsure": [
       "popularity"
     ],
-    "year": 2021
+    "year": 2021,
+    "chipset": {
+      "name": "Intel Core i3-1115G4"
+    }
   },
   {
     "id": "msi-modern-15-b11m-006xge",
@@ -31260,12 +31757,17 @@
         "priceAmd": 305000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "MSI Modern 15 B11M 006XGE.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1195G7"
+    }
   },
   {
     "id": "msi-modern-15-b5m-008xge",
@@ -31287,12 +31789,17 @@
         "priceAmd": 247000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "MSI MODERN 15 B5M-008XGE.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 5625U"
+    }
   },
   {
     "id": "msi-raider-16-max-hx-b2wh-rtx-5070ti",

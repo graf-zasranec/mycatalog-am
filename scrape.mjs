@@ -2049,6 +2049,16 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
   // gets the date of the file it came out of, which is when it was last confirmed present -
   // borrowing today's would be the same false claim the field exists to remove.
   for (const o of keep) if (!o.seen) o.seen = (prev.generated || '').slice(0, 10) || TODAY;
+  // A pin written after the crawl decides now, not at that shop's next crawl (iBolit refuses us
+  // since 2026-09-21, so that may never come): a carried offer whose url links.csv files under
+  // another product moves there, and one filed under "-" goes. The Zenbook 14 UX3405CA carried
+  // UM3402YA/UM3406HA/UX3405MA prices, and the MacBook Pro 14 M5 Max a 16-inch one, this way.
+  for (let i = keep.length - 1; i >= 0; i--) {
+    const pin = pinnedId(keep[i].url);
+    if (pin === undefined || pin === id) continue;
+    const [o] = keep.splice(i, 1);
+    if (pin !== '-') rehomed.push({ ...o, id: pin });
+  }
   // The product this offer was matched to has since been merged away or removed - three listings
   // of the same iPad 9 folded into one, say. A carried offer keeps the id it was given at crawl
   // time, so it would sit under an id nothing reads until its shop is crawled again, and a shop

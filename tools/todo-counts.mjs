@@ -23,7 +23,7 @@ const KEY = {
   tv: ['display.size', 'display.resolution', 'display.type', 'display.refresh'],
   monitor: ['display.size', 'display.resolution', 'display.type', 'display.refresh'],
   watch: ['display.size', 'battery.capacity', 'body.weight'],
-  headphones: ['audio.type', 'connectivity.bluetooth', 'body.weight'],
+  headphones: ['audio.form', 'connectivity.bluetooth', 'body.weight'],
   speaker: ['connectivity.bluetooth', 'body.weight'],
 };
 
