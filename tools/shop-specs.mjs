@@ -26,7 +26,34 @@ const lines = h => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/
   .split('\n').map(s => s.trim()).filter(Boolean);
 
 // shop -> label/value pairs of the product's own spec block
+// REDstore prints "label | : | value" for the product first, then again lower down; the first
+// reading of each label is the product's. Its labels are mapped onto the ones read below.
+const RED = { 'Screen diagonal(inch)': 'Screen Size', 'Screen diagonal': 'Screen Size', 'Screen resolution': 'Screen Resolution',
+  'Battery capacity': 'Battery', CPU: 'CPU', Weight: 'Weight', 'Refresh rate': 'Refresh rate', 'Bluetooth version': 'Bluetooth', Bluetooth: 'Bluetooth' };
+// Pixel and Ucom print a label on one line and its value on the next. The same words occur in
+// their menus ("Bluetooth" is a menu item), so a value is taken only when it looks like one.
+const NEXT = [
+  [/^(Display size|Screen size|Diagonal)$/i, 'Screen Size', /\d(\.\d+)?\s*("|”|″|inch)/i],
+  [/^Resolution$/i, 'Screen Resolution', /\d{3,4}\s*[x×]\s*\d{3,4}/],
+  [/^(Weight|Weight \(grams\))$/i, 'Weight', /^\d+(\.\d+)?\s*(g|kg|grams)?$/i],
+  [/^(Battery|Battery capacity)$/i, 'Battery', /\d{2,5}\s*mAh/i],
+  [/^Bluetooth$/i, 'Bluetooth', /^v?\d\.\d/],
+];
+const nextLine = t => {
+  const o = {};
+  for (let i = 0; i + 1 < t.length; i++) for (const [re, key, ok] of NEXT)
+    if (!(key in o) && re.test(t[i]) && ok.test(t[i + 1])) o[key] = key === 'Weight' && !/[a-z]/i.test(t[i + 1]) ? t[i + 1] + ' g' : key === 'Bluetooth' ? 'Bluetooth ' + t[i + 1] : t[i + 1];
+  return o;
+};
 const PARSE = {
+  pixel: nextLine,
+  ucom: nextLine,
+  redstore: t => {
+    const o = {};
+    for (let i = 1; i + 1 < t.length; i++) if (t[i] === ':' && RED[t[i - 1]] && !(RED[t[i - 1]] in o)) o[RED[t[i - 1]]] = t[i + 1].replace(/&quot;/g, '"');
+    if (o.Bluetooth && !/bluetooth/i.test(o.Bluetooth)) o.Bluetooth = 'Bluetooth ' + o.Bluetooth;
+    return o;
+  },
   ibolit: t => {
     const a = t.indexOf('Specification'), b = t.findIndex((l, i) => i > a && /^(Customer Reviews|Related Products)$/.test(l));
     if (a < 0) return {};
