@@ -2568,6 +2568,15 @@ if (remem) console.log(`${remem} laptop offer(s) had memory in the capacity colu
 // Xiaomi 17 Pro Max carried the same allsell URL four times, and 328 of 1600 offers site-wide
 // were exact repeats. Deduping here rather than in each adapter covers the crawl, the hand-kept
 // listings and any adapter added later - all of them land in `offers` before this point.
+// A shop's own name for a colour, read onto ours: istyle calls the Galaxy A57's Awesome Navy
+// "Deep Blue", so picking Awesome Navy on our page skipped that offer. data/color-aliases.json
+// is written by a person (tools/color-aliases.mjs only proposes - half its guesses were wrong).
+try {
+  const AL = JSON.parse(fs.readFileSync('data/color-aliases.json', 'utf8'));
+  let n = 0;
+  for (const [id, map] of Object.entries(AL)) for (const o of offers[id] || []) if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
+  if (n) console.log(`${n} offer colour(s) renamed to the catalogue's name (data/color-aliases.json)`);
+} catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
 let deduped = 0;
 for (const [id, list] of Object.entries(offers)) {
   const seen = new Set();
