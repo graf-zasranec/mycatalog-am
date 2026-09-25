@@ -13,7 +13,9 @@ const rows = Object.values(P.offers).flat();
 // 1. Every "Go to shop" button has to land on the product. A row with no url, or one pointing at
 //    a category listing, is a button that wastes the reader's click - there were 51 and 94 of
 //    those on 2026-09-20 and both are meant to stay at zero.
-const LISTING = /[?]|\/category\/|\/brand\/|electronics(\/|\.html)/;
+// A query string marks a listing - except istyle's ?variant=N&color=N, which opens one colour
+// of one product (every istyle offer carries one since 2026-09-25).
+const LISTING = /[?](?!variant=\d+&color=\d+$)|\/category\/|\/brand\/|electronics(\/|\.html)/;
 const noLink = rows.filter(o => !o.url || !/^https?:/.test(o.url));
 const listing = rows.filter(o => o.url && LISTING.test(o.url));
 
