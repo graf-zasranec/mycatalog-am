@@ -18,6 +18,7 @@ const KEY = {
   watch: ['display.size', 'battery.capacity', 'body.weight'],
   headphones: ['audio.form', 'connectivity.bluetooth', 'body.weight'],
   speaker: ['connectivity.bluetooth', 'body.weight'],
+  tv: ['display.size', 'display.resolution', 'display.type', 'display.refresh'],
 }[cat];
 const g = (o, f) => f.split('.').reduce((a, k) => a == null ? a : a[k], o);
 const lines = h => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]+>/g, '\n')
@@ -47,8 +48,15 @@ export function cpu(v) {
   if ((m = v.match(/^(?:Apple )?(M[1-5](?: Pro| Max)?)$/i))) return `Apple ${m[1].toUpperCase().replace('PRO', 'Pro').replace('MAX', 'Max')}`;
   return null;
 }
-const inch = v => { const m = String(v || '').match(/(\d{2}(?:\.\d)?)/); return m && +m[1] >= 10 && +m[1] <= 19 ? +m[1] : null; };
-const res = v => { const m = String(v || '').match(/(\d{3,4})\s*[x×х*]\s*(\d{3,4})/); return m && +m[1] >= 1280 ? `${m[1]}x${m[2]}` : null; };
+// a screen size is only believed inside the range the section can have
+const RANGE = { laptop: [10, 19], monitor: [18, 57], watch: [0.9, 2.5], tv: [24, 120] }[cat] || [0, 0];
+const inch = v => { const m = String(v || '').replace(',', '.').match(/(\d{1,3}(?:\.\d+)?)/); return m && +m[1] >= RANGE[0] && +m[1] <= RANGE[1] ? +m[1] : null; };
+// "0.558 kg", "1․7 kg" (Armenian full stop), "5.3 g" -> grams
+const grams = v => { const m = String(v || '').replace('․', '.').match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i); if (!m) return null; const n = parseFloat(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1); return n > 0 && n < 60000 ? Math.round(n) : null; };
+// laptops and watches write 1920x1080, monitors and TVs 1920 x 1080
+const res = v => { const m = String(v || '').match(/(\d{3,4})\s*[x×х*]\s*(\d{3,4})/); if (!m || +m[1] < (cat === 'watch' ? 150 : 1280)) return null; return /monitor|tv/.test(cat) ? `${m[1]} x ${m[2]}` : `${m[1]}x${m[2]}`; };
+const bt = v => (String(v || '').match(/Bluetooth\s*v?(\d\.\d)/i) || [])[1] || null;
+const mah = v => { const m = String(v || '').match(/(\d{2,5})\s*mAh/i); return m ? +m[1] : null; };
 
 const gaps = P.filter(p => p.category === cat && KEY.some(f => g(p, f) == null || g(p, f) === ''));
 for (const p of gaps) for (const o of O[p.id] || []) {
@@ -72,7 +80,9 @@ for (const e of Object.values(got)) {
   if (codes.length && !codes.some(c => url.includes(c))) { log.foreign = (log.foreign || 0) + 1; continue; }
   const sizes = new Set((p.variants || []).map(x => x.size).filter(Boolean));
   const v = { 'display.size': inch(s['Screen Size']), 'display.resolution': res(s['Screen Resolution']), 'chipset.name': cpu(s.CPU),
-    'display.type': (String(s['Display type'] || '').match(/^(IPS|TN|OLED|VA|WVA)/) || [])[1] || null, 'display.refresh': +(String(s['Refresh rate'] || '').match(/^(\d{2,3})/) || [])[1] || null };
+    'display.type': cat === 'tv' ? ((String(s['Display type'] || '').match(/^(QLED|OLED)$/) || [])[1] || (/^D?LED$/.test(s['Display type'] || '') ? 'LED' : null))
+      : (String(s['Display type'] || '').match(/^(IPS|TN|OLED|VA|WVA)\b/) || [])[1] || null, 'display.refresh': +(String(s['Refresh rate'] || '').match(/(\d{2,3})\s*Hz/i) || [])[1] || null,
+    'body.weight': grams(s.Weight), 'connectivity.bluetooth': bt(s.Bluetooth), 'battery.capacity': cat === 'watch' ? mah(s.Battery) : null };
   for (const [f, val] of Object.entries(v)) {
     if (val == null || (sizes.size > 1 && f.startsWith('display.'))) continue;
     const [a, b] = f.split('.'), o = p[a] ||= {};
@@ -89,7 +99,7 @@ console.assert(cpu('Core Ultra 7 150U') === 'Intel Core Ultra 7-150U');
 console.assert(cpu('Core I9 - 13900H') === 'Intel Core i9-13900H');
 console.assert(cpu('Ryzen 7 7730U') === 'AMD Ryzen 7 7730U');
 console.assert(cpu('Core i7') === null);
-console.assert(res('2880x1800') === '2880x1800' && inch("16 '' FHD+") === 16 && inch('14.0 inch') === 14);
+if (cat === 'laptop') console.assert(res('2880x1800') === '2880x1800' && inch("16 '' FHD+") === 16 && inch('14.0 inch') === 14);
 console.assert(cpu('Intel® Core™ Ultra 7 Processor 255H') === 'Intel Core Ultra 7-255H');
 console.assert(cpu('Intel Ultra 5 225H') === 'Intel Core Ultra 5-225H');
 console.assert(cpu('Intel® Celeron® N4020') === 'Intel Celeron N4020' && cpu('Intel® N150') === 'Intel N150');
@@ -97,3 +107,5 @@ console.assert(cpu('Intel Core 5 120U (10 cores, up to 5.0 GHz)') === 'Intel Cor
 console.assert(cpu('AMD Ryzen™ 5 7535HS') === 'AMD Ryzen 5 7535HS' && cpu('AMD Ryzen 5 150') === 'AMD Ryzen 5 150');
 console.assert(cpu('Intel Core i5-210H') === null && cpu('Intel Core 3 N355') === 'Intel Core 3-N355' && cpu('Intel Core i7-1185G7') === 'Intel Core i7-1185G7');
 console.assert(cpu('13th Generation Intel Core i5-13420H Processor') === 'Intel Core i5-13420H' && cpu('AMD Ryzen R5 4600H') === 'AMD Ryzen 5 4600H');
+console.assert(grams('0.558 kg') === 558 && grams('1․7 kg') === 1700 && grams('5.3 g') === 5 && grams('') === null);
+console.assert(res('3840×2160') === (/monitor|tv/.test(cat) ? '3840 x 2160' : '3840x2160') && bt('Wireless, Bluetooth 5.3') === '5.3' && mah('Battery: 425 mAh') === 425);
