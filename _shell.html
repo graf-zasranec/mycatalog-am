@@ -118,7 +118,13 @@ button,input,select,textarea{font:inherit;color:inherit}
   border-bottom:1px solid var(--line2);background:none;color:var(--text);font-size:1rem}
 .srch input::placeholder{color:var(--muted)}
 .srch input:focus{outline:none;border-bottom-color:var(--brand)}
-.mast-r{display:flex;align-items:center;gap:2px;flex:none;margin-left:auto}   /* pinned right, whatever the search box leaves */
+.mast-r{display:flex;align-items:center;gap:2px;flex:none;margin-left:auto}
+/* the wordmark and the menu words sit on one text baseline, not on one centre line - centred,
+   the bigger serif "better." rode 4px lower than "Catalog" (owner, 2026-09-25) */
+.topnav>.logo,.topnav>.nav{align-self:baseline}
+/* ...and baseline alignment parks the pair at the top of the 74px bar: put the wordmark's centre
+   back on the bar's midline (it is 1.3em tall at line-height 1), the menu follows on the shared baseline */
+@media (min-width:901px){.topnav>.logo{margin-top:calc(37px - .65 * 1.3em)}}   /* pinned right, whatever the search box leaves */
 .langs{display:flex;align-items:center}
 .langs button{background:none;border:0;color:var(--muted);cursor:pointer;padding:7px 7px;
   font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;line-height:1}
