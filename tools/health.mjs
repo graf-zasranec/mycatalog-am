@@ -15,7 +15,7 @@ const rows = Object.values(P.offers).flat();
 //    those on 2026-09-20 and both are meant to stay at zero.
 // A query string marks a listing - except istyle's ?variant=N&color=N, which opens one colour
 // of one product (every istyle offer carries one since 2026-09-25).
-const LISTING = /[?](?!variant=\d+&color=\d+$)|\/category\/|\/brand\/|electronics(\/|\.html)/;
+const LISTING = /[?](?!variant=\d+&color=\d+)|\/category\/|\/brand\/|electronics(\/|\.html)/;
 const noLink = rows.filter(o => !o.url || !/^https?:/.test(o.url));
 const listing = rows.filter(o => o.url && LISTING.test(o.url));
 
