@@ -949,7 +949,10 @@ footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;al
 .bl-hd{margin:22px 0 22px}
 .bl-hd h1{font-size:clamp(32px,5vw,56px);font-weight:800;letter-spacing:-.045em;line-height:1}
 .bl-hd p{color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
-.bl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;margin-bottom:40px}
+/* wrapping row: the cards after the lead story share the full width instead of leaving empty columns */
+.bl-grid{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:40px}
+.bl-grid>.bl-card{flex:1 1 min(100%,340px);min-width:0}
+.bl-grid>.bl-card.first{flex-basis:100%}
 .bl-card{display:grid;align-content:start;gap:10px;padding:22px;border-radius:var(--r-xl);background:var(--surface);
   border:1px solid var(--line);color:var(--text);text-decoration:none;transition:border-color .15s,transform .2s cubic-bezier(.2,.8,.2,1)}
 .bl-card:hover{border-color:var(--text);transform:translateY(-2px)}
@@ -959,7 +962,11 @@ footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;al
 .bl-card p{color:var(--body);font-size:.95rem;line-height:1.6;max-width:70ch}
 .bl-d{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--brand)}
 .bl-go{font-weight:700;font-size:.9rem;color:var(--brand);margin-top:4px}
-.post{max-width:68ch;margin:22px 0 10px}
+/* a reading column centred on wide screens, not the phone column pinned to the left edge */
+.post{max-width:min(780px,100%);margin:22px auto 10px}
+@media (min-width:1600px){.post{max-width:860px}.post p,.post li{font-size:1.08rem}}
+.navrow:has(+ .post){max-width:min(780px,100%);margin-inline:auto}
+@media (min-width:1600px){.navrow:has(+ .post){max-width:860px}}
 .post h1{font-size:clamp(28px,4.4vw,48px);font-weight:800;letter-spacing:-.04em;line-height:1.08;margin:10px 0 16px;overflow-wrap:anywhere}
 .post-lead{font-size:1.18rem;line-height:1.6;color:var(--text);margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--line2)}
 .post h2{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;margin:30px 0 10px}
