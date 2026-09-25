@@ -529,9 +529,11 @@ function pixelMatrix(html, colors) {
 // attribute_values array, so the class [^{}] stops at its first brace. That is why a shop with
 // 241 products in its sitemap contributed four offers, all of them speakers.
 //
-// Colour is a hex swatch here rather than a name, so it cannot be reported; capacity and SIM
-// build can, and colours of one build are collapsed the way pixel's are - same price, and three
-// rows differing in nothing a reader can see are not three offers.
+// Colour: the value is a hex swatch, but the same object carries color_label with the name
+// ("Cosmic Orange"), and istyle opens that colour at ?variant=<variant id>&color=<value id>. So
+// every colour is its own row with its own link - the owner asked (2026-09-24) that picking a
+// colour on our page lands on that colour at istyle, not on whichever one the shop opens first.
+// One variant object can list several colours at one price; each becomes a row.
 function istyleVariants(html) {
   const j = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
   const at = j.indexOf('"variants":[');
@@ -563,14 +565,19 @@ function istyleVariants(html) {
     const q = String(attr['sim card quantity'] || '');
     const sim = /no\s*sim/i.test(q) ? true : /\d\s*sim/i.test(q) ? false : undefined;
     const cap = capOf(attr['internal memory'] || '');
-    const k = `${cap ?? ''}|${sim === true ? 'e' : sim === false ? 'n' : '?'}`;
-    const row = { price, storage: cap != null && cap >= 64 ? cap : null,
-                  esim: sim, simFromPage: sim !== undefined || undefined,
-                  inStock: Number(v.stock) > 0 };
-    const had = best.get(k);
-    // in stock beats out of stock; below that, the cheaper colour
-    if (!had || (row.inStock && !had.inStock) || (row.inStock === had.inStock && row.price < had.price))
-      best.set(k, row);
+    const colours = (v.attribute_values || []).filter(av => /^colou?r$/i.test(((av.attribute || {}).name || {}).en || ''))
+      .map(av => ({ name: ((av.color_label || {}).en || '').trim() || null, id: av.id }));
+    for (const c of colours.length ? colours : [{ name: null, id: null }]) {
+      const k = `${cap ?? ''}|${sim === true ? 'e' : sim === false ? 'n' : '?'}|${c.name || ''}`;
+      const row = { price, storage: cap != null && cap >= 64 ? cap : null,
+                    esim: sim, simFromPage: sim !== undefined || undefined,
+                    inStock: Number(v.stock) > 0, color: c.name,
+                    variant: c.name && v.id != null && c.id != null ? `?variant=${v.id}&color=${c.id}` : '' };
+      const had = best.get(k);
+      // in stock beats out of stock; below that, the cheaper one
+      if (!had || (row.inStock && !had.inStock) || (row.inStock === had.inStock && row.price < had.price))
+        best.set(k, row);
+    }
   }
   return [...best.values()];
 }
@@ -643,6 +650,29 @@ const ramOf = text => { const c = capacitiesOf(text); const lo = Math.min(...c);
 // at viva. Each spelling that reaches the page as its own word makes one phone look like two.
 const cword = w => String(w).toLowerCase().replace(/[^a-z]/g, '')
   .replace(/^grey$/, 'gray').replace(/^ice(blue)$/, 'icy$1').replace(/^icy$/, 'ice');
+// istyle's own labels, read onto the catalogue's names: "Jetblack" is Jet Black, "Levender" is
+// Lavender. Squashed spaces first, then one wrong letter in a name longer than five.
+function colorLoose(label, colors) {
+  if (!label) return null;
+  const hit = colorOf(label, colors);
+  if (hit) return hit;
+  const sq = t => String(t).toLowerCase().replace(/[^a-z]/g, '');
+  const a = sq(label);
+  const one = (x, y) => {
+    if (Math.abs(x.length - y.length) > 1) return false;
+    let i = 0, j = 0, d = 0;
+    while (i < x.length && j < y.length) {
+      if (x[i] === y[j]) { i++; j++; continue; }
+      if (++d > 1) return false;
+      if (x.length > y.length) i++; else if (y.length > x.length) j++; else { i++; j++; }
+    }
+    return d + (x.length - i) + (y.length - j) <= 1;
+  };
+  const exact = (colors || []).filter(c => sq(c) === a);
+  if (exact.length === 1) return exact[0];
+  const near = (colors || []).filter(c => a.length > 5 && one(sq(c), a));
+  return near.length === 1 ? near[0] : null;
+}
 function colorOf(text, colors) {
   const h = String(text).toLowerCase();
   let hit = null;
@@ -1015,6 +1045,16 @@ if (process.argv[2] === '--selftest') {
     const v = istyleVariants(payload).sort((a, b) => a.price - b.price);
     // "No Sim" is the eSIM-only build; "1SIM" has the tray and costs more; colours collapse
     const want = [[469000, 256, true], [499000, 256, false], [559000, 512, true]];
+    if (colorLoose('Jetblack', ['Jet Black', 'Silver']) !== 'Jet Black' || colorLoose('Levender', ['Lavender', 'Black']) !== 'Lavender'
+        || colorLoose('Cosmic Orange', ['Cosmic Orange']) !== 'Cosmic Orange' || colorLoose('Purple Fog', ['Midnight', 'Blue']) !== null) {
+      bad++; console.log('FAIL colorLoose');
+    }
+    const named = istyleVariants('&quot;variants&quot;:' + JSON.stringify([{ id: 8, price_override: 469000, is_active: true, stock: 3,
+      attribute_values: [{ id: 6, attribute: { name: { en: 'Color' } }, value: { en: '#E48448' }, color_label: { en: 'Cosmic Orange' } },
+                         { id: 9, attribute: { name: { en: 'Color' } }, value: { en: '#454962' }, color_label: { en: 'Deep Blue' } }] }]).replace(/"/g, '&quot;'));
+    if (named.length !== 2 || named[0].color !== 'Cosmic Orange' || named[0].variant !== '?variant=8&color=6' || named[1].variant !== '?variant=8&color=9') {
+      bad++; console.log('FAIL istyleVariants colours ' + JSON.stringify(named.map(r => [r.color, r.variant])));
+    }
     if (v.length !== want.length) { bad++; console.log(`FAIL istyleVariants got ${v.length}, want ${want.length}`); }
     else for (let i = 0; i < want.length; i++)
       if (v[i].price !== want[i][0] || v[i].storage !== want[i][1] || v[i].esim !== want[i][2]) {
@@ -1894,7 +1934,11 @@ const SHOPS = {
         const name = clean(decodeURIComponent(raw.split('/product/')[1] || '')).replace(/\s+/g, ' ').trim();
         const id = matchPhone(name);
         if (!id) continue;
-        const u = raw.split('/product/')[0] + '/product/' + encodeURIComponent(name);
+        // The link is built from the name exactly as the sitemap prints it: istyle's own slug for
+        // the 13.6" MacBook Air M5 carries a double space, and the collapsed one answered 404.
+        let exact = raw.split('/product/')[1] || '';
+        try { exact = decodeURIComponent(exact); } catch { }
+        const u = raw.split('/product/')[0] + '/product/' + encodeURIComponent(exact.trim());
         if (!safeUrl(u)) continue;
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
@@ -1904,7 +1948,8 @@ const SHOPS = {
         const vs = istyleVariants(html);
         if (!vs.length) continue;
         for (const v of vs)
-          out.push({ id, price: v.price, title: name, url: u,
+          out.push({ id, price: v.price, title: name, url: u + v.variant,
+            color: v.color ? colorLoose(v.color, (phoneById[id] || {}).colors) || v.color : undefined,
             storage: v.storage ?? storageOf(name), ram: ramOf(name),
             esim: v.esim, simFromPage: v.simFromPage, inStock: v.inStock });
       }

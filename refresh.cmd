@@ -98,6 +98,12 @@ if errorlevel 1 (
   exit /b 1
 )
 
+REM Specs a product is still missing (screen, resolution, chip, refresh, Bluetooth, weight) are
+REM read off the shop's own product page. Only pages not read before are fetched, a page whose
+REM url lacks the product's model code is ignored, and a field already filled is never changed -
+REM a differing reading is printed as a conflict instead. Not a gate.
+for %%c in (laptop monitor headphones speaker watch tv) do node tools\shop-specs.mjs %%c --write
+
 node build.mjs
 if errorlevel 1 (
   echo build failed
@@ -116,6 +122,14 @@ REM three used to be discovered on the live site instead of here.
 echo.
 echo [%date% %time%] state of the catalogue:
 node tools/health.mjs
+
+REM Offers filed under the wrong product: a shop page that does not name the product's model
+REM code, or a price nothing else of that product comes near (a Mac Studio sat under Beats
+REM Studio). Fix one by pinning its url in data\links.csv - to the right id, or to - if we do not
+REM carry it; the next run moves or drops it even for a shop that is not re-crawled.
+echo.
+echo [%date% %time%] offers that may be on the wrong product:
+node tools/wrong-links.mjs
 
 REM What this run CANNOT do, so it is not mistaken for having done it. notebookcentre.am names
 REM anthropic-ai and Claude-Web in its robots.txt with Disallow: / , so nothing here reads it -
