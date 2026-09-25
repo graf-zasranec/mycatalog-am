@@ -51715,5 +51715,59 @@
     "sources": [
       "kimovil"
     ]
+  },
+  {
+    "id": "starlink-standard-kit",
+    "category": "network",
+    "brand": "Starlink",
+    "name": "Standard Kit",
+    "tier": "upper-mid",
+    "priceAmd": 156000,
+    "priceAmdMax": 156000,
+    "popularity": 40,
+    "accent": "#3C4652",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 156000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "summaryEn": "Satellite internet dish with a Wi-Fi 6 router.",
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "starlink-mini-kit",
+    "category": "network",
+    "brand": "Starlink",
+    "name": "Mini Kit",
+    "tier": "upper-mid",
+    "priceAmd": 75900,
+    "priceAmdMax": 75900,
+    "popularity": 40,
+    "accent": "#3C4652",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 75900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "summaryEn": "Compact satellite internet dish with a built-in router.",
+    "unsure": [
+      "popularity"
+    ]
   }
 ]
