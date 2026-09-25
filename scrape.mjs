@@ -2577,6 +2577,15 @@ try {
   for (const [id, map] of Object.entries(AL)) for (const o of offers[id] || []) if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
   if (n) console.log(`${n} offer colour(s) renamed to the catalogue's name (data/color-aliases.json)`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
+// Hidden while the shop's own page says sold out (owner, 2026-09-25). data/soldout.json is
+// rewritten by every full `python tools/check-links.py --all`, so a restocked page comes back
+// on its own; nothing is pinned or deleted.
+try {
+  const SOLD = new Set(JSON.parse(fs.readFileSync('data/soldout.json', 'utf8')).urls || []);
+  let n = 0;
+  for (const id of Object.keys(offers)) { const k = offers[id].length; offers[id] = offers[id].filter(o => !SOLD.has(o.url)); n += k - offers[id].length; }
+  if (n) console.log(`${n} sold-out offer(s) hidden (data/soldout.json)`);
+} catch (e) { if (e.code !== 'ENOENT') console.warn('soldout.json:', e.message); }
 let deduped = 0;
 for (const [id, list] of Object.entries(offers)) {
   const seen = new Set();

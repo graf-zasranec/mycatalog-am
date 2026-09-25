@@ -226,6 +226,14 @@ def main():
             print(f'  {sh:14} {t[:44]:46} {u}   ({d.get("why", "")})')
         bad = sum(len(v) for v in b.values())
         print(f'\n{bad} link(s) worth a look, out of {len(urls)}')
+        # Sold-out pages are hidden, not removed (owner, 2026-09-25): scrape.mjs leaves every offer
+        # on this list out of the site, and the next full check - which rewrites the list - brings
+        # a restocked page back by itself.
+        import datetime
+        (ROOT / 'data' / 'soldout.json').write_text(json.dumps({
+            'checked': datetime.date.today().isoformat(),
+            'urls': sorted(u for _, _, u, _, _ in b['soldout'])}, indent=1) + '\n', encoding='utf8')
+        print(f"{len(b['soldout'])} sold-out page(s) written to data/soldout.json - hidden from the site")
         if '--xlsx' in sys.argv:
             write_xlsx(b)
         if '--prune' in sys.argv:
