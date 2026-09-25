@@ -101,7 +101,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* ============ masthead: nav, cover and catalogue are ONE ivory field ============ */
 .mast{background:var(--bg);color:var(--text)}
 .topnav{display:flex;align-items:center;gap:16px;height:74px}
-.topnav .logo{display:flex;align-items:center;gap:9px;font-size:23px;font-weight:800;letter-spacing:-.03em;color:var(--text);flex:none}
+.topnav .logo{display:flex;align-items:center;gap:9px;font-size:32px;font-weight:800;letter-spacing:-.03em;color:var(--text);flex:none}
 /* The mark is the dot. It used to hold a 24-viewBox phone icon drawn at 9x9 with no fill set,
    so it inherited #000 - a colour that is in no palette here - and spilled the circle it sat
    in. At this size the glyph could not be read as anything, so it is gone rather than fixed. */
@@ -118,13 +118,7 @@ button,input,select,textarea{font:inherit;color:inherit}
   border-bottom:1px solid var(--line2);background:none;color:var(--text);font-size:1rem}
 .srch input::placeholder{color:var(--muted)}
 .srch input:focus{outline:none;border-bottom-color:var(--brand)}
-.mast-r{display:flex;align-items:center;gap:2px;flex:none;margin-left:auto}
-/* the wordmark and the menu words sit on one text baseline, not on one centre line - centred,
-   the bigger serif "better." rode 4px lower than "Catalog" (owner, 2026-09-25) */
-.topnav>.logo,.topnav>.nav{align-self:baseline}
-/* ...and baseline alignment parks the pair at the top of the 74px bar: put the wordmark's centre
-   back on the bar's midline (it is 1.3em tall at line-height 1), the menu follows on the shared baseline */
-@media (min-width:901px){.topnav>.logo{margin-top:calc(37px - .65 * 1.3em)}}   /* pinned right, whatever the search box leaves */
+.mast-r{display:flex;align-items:center;gap:2px;flex:none;margin-left:auto}   /* pinned right, whatever the search box leaves */
 .langs{display:flex;align-items:center}
 .langs button{background:none;border:0;color:var(--muted);cursor:pointer;padding:7px 7px;
   font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;line-height:1}
@@ -1221,7 +1215,7 @@ a.store:hover .nm{color:var(--brand)}
 /* ---- phones: a two-row header, sections that scroll sideways, every filter in one sheet ---- */
 @media (max-width:640px){
   .topnav{gap:4px 6px;padding-block:8px}
-  .topnav .logo{order:1;font-size:20px}
+  .topnav .logo{order:1;font-size:25px}
   .nav{order:2;flex:none;margin-left:auto}
   .nav a{padding:8px 8px;font-size:0.8125rem}
   .mast-r{display:contents}
