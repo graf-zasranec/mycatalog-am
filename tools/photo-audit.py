@@ -92,9 +92,9 @@ def sheet(items, path, title):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    phones = json.load(open(ROOT / 'data' / 'phones.json'))
+    phones = json.load(open(ROOT / 'data' / 'phones.json', encoding='utf-8'))
     by = {p['id']: p for p in phones}
-    dupes = json.load(open(ROOT / 'data' / 'photo-dupes.json')) if (ROOT / 'data' / 'photo-dupes.json').exists() else {}
+    dupes = json.load(open(ROOT / 'data' / 'photo-dupes.json', encoding='utf-8')) if (ROOT / 'data' / 'photo-dupes.json').exists() else {}
     files = sorted(f for f in os.listdir(CUT) if f.endswith('.webp'))
     rep, hashes, sharp = {}, {}, []
     for k, f in enumerate(files):
@@ -142,7 +142,7 @@ def main():
             nophoto.append((p['id'], miss))
     stale = [f for f in files if re.match(r'(.+?)__', f).group(1) not in by]
     json.dump({'issues': rep, 'samePhoto': same, 'orphanColour': orphan, 'colourNoPhoto': nophoto, 'notInCatalogue': stale},
-              open(OUT / 'report.json', 'w'), indent=1)
+              open(OUT / 'report.json', 'w', encoding='utf-8'), indent=1)
     kinds = {}
     for f, iss in rep.items():
         for i in iss:
