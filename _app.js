@@ -1839,12 +1839,16 @@ function visibleOffers(p) {
   // The url was in this key, and the url is the one thing the row does NOT display: Notebook
   // Centre gives each colour its own page, so three colours at one price were three different
   // keys and all three survived a filter written to remove exactly them. Key on what a reader
-  // can see. The first survivor wins, which is the shop's own first colour.
-  const seen = new Set();
-  return o.filter(v => {
-    const k = [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?'].join('|');
-    return seen.has(k) ? false : (seen.add(k), true);
-  });
+  // can see. The survivor is the colour picked above when the shop lists it - istyle gives every
+  // colour its own link, and the button has to open the colour the reader chose, not the shop's
+  // first one - and otherwise the shop's own first colour.
+  const key = v => [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?'].join('|');
+  const pick = new Map();
+  for (const v of o) {
+    const had = pick.get(key(v));
+    if (!had || (SEL.color && had.color !== SEL.color && v.color === SEL.color)) pick.set(key(v), v);
+  }
+  return o.filter(v => pick.get(key(v)) === v);
 }
 // One row per shop: its cheapest offer for the configuration picked. The same shop listing a
 // build twice (a colour with its own page, a SIM build the row does not show) used to take two of
