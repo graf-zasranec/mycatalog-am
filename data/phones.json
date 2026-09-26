@@ -26938,7 +26938,13 @@
     ],
     "chipset": {
       "name": "Intel N100"
-    }
+    },
+    "body": {
+      "weight": 1550
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=82XB00HVUS"
+    ]
   },
   {
     "id": "lenovo-82yu016tpb",
@@ -26972,7 +26978,13 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 5 7520U"
-    }
+    },
+    "body": {
+      "weight": 1630
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=82YU016TPB"
+    ]
   },
   {
     "id": "lenovo-83b40008us",
@@ -27005,7 +27017,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-1335U"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83B40008US"
+    ]
   },
   {
     "id": "lenovo-83f00005us",
@@ -27038,7 +27056,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255HX"
-    }
+    },
+    "body": {
+      "weight": 1900
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83F00005US"
+    ]
   },
   {
     "id": "lenovo-83l7002nus",
@@ -27072,7 +27096,13 @@
     ],
     "chipset": {
       "name": "Intel Core 3-N355"
-    }
+    },
+    "body": {
+      "weight": 1550
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83L7002NUS"
+    ]
   },
   {
     "id": "lenovo-83lk0001us",
@@ -27106,7 +27136,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-12450HX"
-    }
+    },
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83LK0001US"
+    ]
   },
   {
     "id": "lenovo-83lk00cvus",
@@ -27140,7 +27176,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-12450HX"
-    }
+    },
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83LK00CVUS"
+    ]
   },
   {
     "id": "lenovo-ideacentre-aio-24irh9",
@@ -27535,7 +27577,13 @@
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 1500
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83DT006NRK"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us",
@@ -27799,7 +27847,13 @@
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 1950
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83AQ0024RK"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15",
@@ -27819,7 +27873,8 @@
     "display": {
       "size": 15.6,
       "type": "IPS LCD",
-      "touch": false
+      "touch": false,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i5-13420H / i7-13620H"
@@ -27849,7 +27904,13 @@
       "Gray"
     ],
     "summaryEn": "A 15.6-inch Windows laptop with a 13th-gen Core chip.",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83EM008WIN"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus",
@@ -27974,7 +28035,13 @@
       "popularity"
     ],
     "colors": [],
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 1550
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/IdeaPad_Slim_3_15IAN8?M=82XB00HVUS"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15ian8-n100",
@@ -28089,13 +28156,21 @@
         "priceAmd": 291900
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15IRH10R.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 1630
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83K4000RUS"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15iru10",
@@ -28282,7 +28357,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core i5-13420H"
-    }
+    },
+    "body": {
+      "weight": 1730
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83K2000WRK"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11",
@@ -28360,7 +28441,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core i5-13420H"
-    }
+    },
+    "body": {
+      "weight": 1390
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83HR002SRK"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-5-14irh10r",
@@ -28395,7 +28482,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core 7-240H"
-    }
+    },
+    "body": {
+      "weight": 1390
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83J0001ARK"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-516irh10",
@@ -28434,7 +28527,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core 5-210H"
-    }
+    },
+    "body": {
+      "weight": 1760
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83HS002SRK"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus",
@@ -28468,7 +28567,13 @@
     ],
     "chipset": {
       "name": "Intel Core 7-240H"
-    }
+    },
+    "body": {
+      "weight": 1850
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83J1002SUS"
+    ]
   },
   {
     "id": "lenovo-legion-5-15iax10",
@@ -28691,7 +28796,8 @@
       }
     ],
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "2880x1800"
     },
     "battery": {},
     "summaryEn": "Lenovo Legion Slim 5 14 APH8 OLED 82Y5000AUS.",
@@ -28701,7 +28807,13 @@
     "year": 2023,
     "chipset": {
       "name": "AMD Ryzen 7 7840HS"
-    }
+    },
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=82Y5000AUS"
+    ]
   },
   {
     "id": "lenovo-loq-15",
@@ -28754,7 +28866,13 @@
       "popularity",
       "colors"
     ],
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 2380
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83DV00FMRK"
+    ]
   },
   {
     "id": "lenovo-loq-15-arp9-83jc0000us",
@@ -28775,7 +28893,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Lenovo LOQ 15 ARP9 83JC0000US.",
@@ -28785,7 +28904,13 @@
     "year": 2024,
     "chipset": {
       "name": "AMD Ryzen 7 7435HS"
-    }
+    },
+    "body": {
+      "weight": 2380
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83JC0000US"
+    ]
   },
   {
     "id": "lenovo-loq-15ahp10-rtx-5050",
@@ -28911,7 +29036,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core i5-12450HX"
-    }
+    },
+    "body": {
+      "weight": 2380
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83GS00E6RK"
+    ]
   },
   {
     "id": "lenovo-loq-15irx10",
@@ -28945,7 +29076,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core i7-14700HX"
-    }
+    },
+    "body": {
+      "weight": 2400
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83JE00RNRK"
+    ]
   },
   {
     "id": "lenovo-tab-m9-tb310xu-acc-zac50096ru",
@@ -29044,7 +29181,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core 5-210H"
-    }
+    },
+    "body": {
+      "weight": 1360
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21SG008KRT"
+    ]
   },
   {
     "id": "lenovo-thinkbook-16-g8-irl",
@@ -29075,7 +29218,13 @@
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21SH008ART"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-1-21jn001qgp",
@@ -29098,7 +29247,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 1 21JN001QGP.",
@@ -29108,7 +29258,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i5-1335U"
-    }
+    },
+    "body": {
+      "weight": 1810
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21JN001QGP"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-2-21ma002xrt",
@@ -29129,7 +29285,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 2 21MA002XRT.",
@@ -29139,7 +29296,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core Ultra 7-155H"
-    }
+    },
+    "body": {
+      "weight": 1810
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21MA002XRT"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-2-21ma004vrt",
@@ -29160,7 +29323,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 2 21MA004VRT.",
@@ -29170,7 +29334,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core Ultra 5-125U"
-    }
+    },
+    "body": {
+      "weight": 1810
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21MA004VRT"
+    ]
   },
   {
     "id": "lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw",
@@ -29192,13 +29362,21 @@
         "priceAmd": 839000
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad T16 G4 16\" Ultra 7-255U /21QE0066FW.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 1760
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21QE0066FW"
+    ]
   },
   {
     "id": "lenovo-thinkpad-t16-gen-2-21hh005agq",
@@ -29219,7 +29397,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad T16 Gen 2 21HH005AGQ.",
@@ -29229,7 +29408,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i7-1355U"
-    }
+    },
+    "body": {
+      "weight": 1680
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=21HH005AGQ"
+    ]
   },
   {
     "id": "lenovo-v14-g4-iru",
@@ -29508,7 +29693,8 @@
       }
     ],
     "display": {
-      "size": 14.5
+      "size": 14.5,
+      "resolution": "3072x1920"
     },
     "battery": {},
     "summaryEn": "Lenovo Yoga Pro 7 14 AHP9 83E3002ARK.",
@@ -29518,7 +29704,13 @@
     "year": 2024,
     "chipset": {
       "name": "AMD Ryzen 7 8845HS"
-    }
+    },
+    "body": {
+      "weight": 1490
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83E3002ARK"
+    ]
   },
   {
     "id": "lenovo-yoga-pro-9-16imh9",
@@ -29550,7 +29742,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core Ultra 9-185H"
-    }
+    },
+    "body": {
+      "weight": 2050
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/Yoga_Pro_9_16IMH9?M=83DN002RRK"
+    ]
   },
   {
     "id": "lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led",
@@ -29571,7 +29769,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "3200x2000"
     },
     "battery": {},
     "summaryEn": "Lenovo Yoga Pro 9 16IMH9 83DN002RRK Mini LED.",
@@ -29581,7 +29780,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core Ultra 9-185H"
-    }
+    },
+    "body": {
+      "weight": 2050
+    },
+    "sources": [
+      "https://psref.lenovo.com/detail/?M=83DN002RRK"
+    ]
   },
   {
     "id": "lenovo-yoga-slim-7-14q8x9",
@@ -44830,12 +45035,16 @@
       }
     ],
     "display": {
-      "size": 50
+      "size": 50,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 50M550LE.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/50-m550lp-series/"
     ]
   },
   {
@@ -44973,12 +45182,17 @@
       }
     ],
     "display": {
-      "size": 55
+      "size": 55,
+      "refresh": 144,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 55Z670ME.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/55-z670mp-series-4k-uhd-smart-tv-55z670mp/"
     ]
   },
   {
@@ -45000,12 +45214,17 @@
       }
     ],
     "display": {
-      "size": 55
+      "size": 55,
+      "refresh": 144,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 55Z670RE.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/55-z670rp-series-4k-gaming-tv-55z670rp/"
     ]
   },
   {
@@ -45112,12 +45331,17 @@
       }
     ],
     "display": {
-      "size": 65
+      "size": 65,
+      "refresh": 144,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 65Z670RE.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/65-z670rp-series-4k-gaming-tv-65z670rp/"
     ]
   },
   {
@@ -45166,12 +45390,17 @@
       }
     ],
     "display": {
-      "size": 65
+      "size": 65,
+      "refresh": 165,
+      "type": "QLED Mini-LED"
     },
     "battery": {},
     "summaryEn": "Toshiba 65Z770RE.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/65-z770rp-series-4k-mini-led-165hz-65z770rp/"
     ]
   },
   {
@@ -45222,12 +45451,17 @@
       }
     ],
     "display": {
-      "size": 75
+      "size": 75,
+      "refresh": 144,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 75Z670RE.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/75-z670rp-series-4k-gaming-tv-75z670rp/"
     ]
   },
   {
@@ -45278,12 +45512,16 @@
       }
     ],
     "display": {
-      "size": 85
+      "size": 85,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 85M550LE.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/55-m550lp-series/"
     ]
   },
   {
@@ -45305,12 +45543,17 @@
       }
     ],
     "display": {
-      "size": 85
+      "size": 85,
+      "refresh": 144,
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Toshiba 85Z670ME.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://toshiba-tv.com.au/product/85-z670mp-series-4k-uhd-smart-tv-85z670mp/"
     ]
   },
   {
@@ -46410,7 +46653,8 @@
     },
     "battery": {},
     "body": {
-      "ip": "IP54"
+      "ip": "IP54",
+      "weight": 4.2
     },
     "variants": [
       {
@@ -46420,14 +46664,17 @@
       }
     ],
     "connectivity": {
-      "bluetooth": "5.4",
+      "bluetooth": "5.3",
       "wireless": "USB-C charging case"
     },
     "colors": [
       "Black",
       "White"
     ],
-    "summaryEn": "The cheap Buds 6, noise cancellation included."
+    "summaryEn": "The cheap Buds 6, noise cancellation included.",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-6-lite/specs/"
+    ]
   },
   {
     "id": "xiaomi-gaming-monitor-a27q",
@@ -46547,13 +46794,23 @@
         "priceAmd": 19000
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 1.62
+    },
+    "battery": {
+      "capacity": 233
+    },
     "summaryEn": "Xiaomi Mi Smart Band 9.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 15.8
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-9/specs/"
+    ]
   },
   {
     "id": "xiaomi-mi-smart-kettle-pro-mjhwsh02ym",
@@ -48716,7 +48973,16 @@
     "audio": {
       "form": "tws",
       "conn": "wireless"
-    }
+    },
+    "body": {
+      "weight": 4.5
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-4/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-4-lite",
@@ -48784,7 +49050,16 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 5.3
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-5/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-8-active-bhr08jtgl",
@@ -48829,7 +49104,13 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 3.8
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-8-active/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-8-lite",
@@ -48870,7 +49151,16 @@
     "audio": {
       "form": "tws",
       "conn": "wireless"
-    }
+    },
+    "body": {
+      "weight": 4.5
+    },
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-8-lite/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-a2plus",
@@ -49125,7 +49415,16 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2021
+    "year": 2021,
+    "body": {
+      "weight": 4.2
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-3-lite/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-buds-6",
@@ -49159,7 +49458,13 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 5
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-6/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-buds-6-play",
@@ -49192,7 +49497,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 3.6
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-6-play/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-10-pro",
@@ -50895,7 +51206,13 @@
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 14.9
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-smart-band-2/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-watch-2-lite",
@@ -51517,7 +51834,8 @@
       "resolution": "212x520"
     },
     "body": {
-      "ip": "5 ATM"
+      "ip": "5 ATM",
+      "weight": 15.95
     },
     "battery": {
       "capacity": 233
@@ -51536,7 +51854,10 @@
       "Black",
       "Silver"
     ],
-    "summaryEn": "Xiaomi's fitness band — the cheapest way onto your wrist."
+    "summaryEn": "Xiaomi's fitness band — the cheapest way onto your wrist.",
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-10/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-band-7",
@@ -51593,7 +51914,9 @@
         "priceAmd": 28900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.64
+    },
     "battery": {
       "capacity": 235
     },
@@ -51604,7 +51927,13 @@
     "year": 2022,
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 20.5
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-7-pro/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-band-8-active",
@@ -51627,13 +51956,23 @@
         "priceAmd": 17000
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 1.47
+    },
+    "battery": {
+      "capacity": 210
+    },
     "summaryEn": "Xiaomi Smart Band 8 Active.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 14.9
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-8-active/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
@@ -51656,7 +51995,9 @@
         "priceAmd": 16500
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.62
+    },
     "battery": {
       "capacity": 190
     },
@@ -51667,7 +52008,13 @@
     "year": 2023,
     "connectivity": {
       "bluetooth": "5.1"
-    }
+    },
+    "body": {
+      "weight": 27
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-8/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-ir-control",
@@ -51717,13 +52064,23 @@
         "priceAmd": 34400
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 1.74
+    },
+    "battery": {
+      "capacity": 289
+    },
     "summaryEn": "Xiaomi Smart Mi Band 8 Pro.",
     "unsure": [
       "popularity"
     ],
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 22.5
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-8-pro/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-watch-70mai-saphir",
