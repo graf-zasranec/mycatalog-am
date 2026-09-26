@@ -4733,7 +4733,8 @@
     "display": {
       "size": 13.6,
       "type": "Liquid Retina IPS LCD",
-      "touch": false
+      "touch": false,
+      "resolution": "2560x1664"
     },
     "chipset": {
       "name": "Apple M5",
@@ -4777,7 +4778,8 @@
       }
     ],
     "body": {
-      "materials": "Aluminium unibody"
+      "materials": "Aluminium unibody",
+      "weight": 1230
     },
     "battery": {},
     "connectivity": {
@@ -4792,7 +4794,10 @@
       "Starlight",
       "Sky Blue"
     ],
-    "summaryEn": "The 13-inch Air on M5 — the laptop most people should buy."
+    "summaryEn": "The 13-inch Air on M5 — the laptop most people should buy.",
+    "sources": [
+      "https://www.apple.com/macbook-air/specs/"
+    ]
   },
   {
     "id": "apple-macbook-air-13-mgn63-m1-2020",
@@ -5031,7 +5036,10 @@
         "size": 16
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "3024x1964",
+      "size": 14.2
+    },
     "battery": {},
     "summaryEn": "Apple Macbook PRO 14 M4 Max.",
     "unsure": [
@@ -5042,7 +5050,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://support.apple.com/en-us/121553"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-m4-pro",
@@ -5215,7 +5229,8 @@
       "size": 14.2,
       "type": "Liquid Retina XDR mini-LED",
       "refresh": 120,
-      "touch": false
+      "touch": false,
+      "resolution": "3024x1964"
     },
     "chipset": {
       "name": "Apple M5 Max",
@@ -5241,7 +5256,8 @@
       }
     ],
     "body": {
-      "materials": "Aluminium unibody"
+      "materials": "Aluminium unibody",
+      "weight": 1620
     },
     "battery": {},
     "connectivity": {
@@ -5254,7 +5270,10 @@
       "Silver",
       "Space Black"
     ],
-    "summaryEn": "The most powerful 14-inch Mac laptop — M5 Max with a 32-core GPU."
+    "summaryEn": "The most powerful 14-inch Mac laptop — M5 Max with a 32-core GPU.",
+    "sources": [
+      "https://www.apple.com/macbook-pro/specs/"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-m5-pro",
@@ -5280,7 +5299,8 @@
       "size": 14.2,
       "type": "Liquid Retina XDR mini-LED",
       "refresh": 120,
-      "touch": false
+      "touch": false,
+      "resolution": "3024x1964"
     },
     "chipset": {
       "name": "Apple M5 Pro",
@@ -5318,7 +5338,8 @@
       }
     ],
     "body": {
-      "materials": "Aluminium unibody"
+      "materials": "Aluminium unibody",
+      "weight": 1600
     },
     "battery": {},
     "connectivity": {
@@ -5331,7 +5352,10 @@
       "Silver",
       "Space Black"
     ],
-    "summaryEn": "The 14-inch Pro with the M5 Pro — more CPU and GPU cores for sustained work."
+    "summaryEn": "The 14-inch Pro with the M5 Pro — more CPU and GPU cores for sustained work.",
+    "sources": [
+      "https://www.apple.com/macbook-pro/specs/"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-mrx33-2023",
