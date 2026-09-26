@@ -285,7 +285,7 @@ for (const [id, list] of fresh) {
   for (const x of list)
     csv.push([x.shop, x.title.replace(/,/g, ' '), x.storage || '', '', x.url, x.price].join(','));
 }
-fs.writeFileSync('data/phones.json', JSON.stringify([...phones, ...added], null, 1));
+fs.writeFileSync('data/phones.json', JSON.stringify([...phones, ...added], null, 2) + '\n');
 const old = fs.readFileSync('data/listings.csv', 'utf8').replace(/\n+$/, '');
 fs.writeFileSync('data/listings.csv', old + '\n' + csv.join('\n') + '\n');
 console.log(`\n${added.length} product(s) and ${csv.length} listing(s) written`);

@@ -23,7 +23,8 @@ KEEP = {'name': 'name', 'data': 'name', 'title': 'name', 'item_page_title': 'nam
         # every shop's export calls the price something slightly different, and a row with no
         # price is dropped - so a column name missed here loses the whole file silently
         'price': 'price', 'price 1': 'price', 'price2': 'price', 'price_1': 'price',
-        'price_2': 'price', 'price_5': 'price',
+        'price_2': 'price', 'price_5': 'price', 'product_price': 'price',
+        'product_name ram_memeory_color': 'name',
         'ram': 'ram', 'memory': 'storage', 'chip': 'chip', 'videocard': 'gpu',
         'screen size': 'screen', 'screen resolution': 'resolution', 'operating system': 'os',
         'brand': 'brand', 'weight': 'weight', 'image': 'image', 'item_page_link': 'url'}
@@ -56,21 +57,36 @@ def read(path):
     if not any(head):
         head = ['web_scraper_order', 'web_scraper_start_url', 'pagination', 'name', 'price'] \
                + ['soft'] * 20
-    # iStyle's price sits under 'data' because that is what the column was called when it was
-    # clicked. 'data' means the name in the exports that also have a price column, so which one
-    # it is can only be decided per file, by whether a price column exists at all.
+    body = list(rows)
+    # No column called price: the one that holds money is the price. iStyle's sits under 'data'
+    # and mobilecentre's under 'data2', because that is what they were called when clicked - and
+    # reading 'data' as the price whenever 'price' was missing turned mobilecentre's name column,
+    # "Apple iPhone 14", into a price of 14 dram. So the column is chosen by what is in it.
     local = dict(KEEP)
-    if 'price' not in head and 'data' in head:
-        local['data'] = 'price'
+    if not any(KEEP.get(h) == 'price' for h in head):
+        money = re.compile(r'^\D{0,12}\d{1,3}([ ,. ]?\d{3})+\s*(֏|AMD|Դրամ|դր|dram)?\.?$', re.I)
+        def share(i):
+            vals = [str(r[i]).strip() for r in body if i < len(r) and r[i] is not None and str(r[i]).strip()]
+            return sum(bool(money.match(v)) for v in vals) / len(vals) if vals else 0
+        best = max(range(len(head)), key=share, default=None)
+        if best is not None and share(best) >= 0.8:
+            local[head[best]] = 'price'
     out = []
-    for r in rows:
+    for r in body:
+        # the shop's own "Out Of stock" beside a price: the catalogue lists what can be bought today
+        if any(re.fullmatch(r'\s*(out\s*of\s*stock|sold\s*out|առկա\s*չէ|нет\s*в\s*наличии)\s*', str(c or ''), re.I) for c in r):
+            continue
         row = {}
         for h, c in zip(head, r):
             k = local.get(h)
-            # first column wins: an export with both 'name' and 'item_page_title' has the fuller
-            # text in whichever came first, and the later one is usually a truncated repeat
-            if k and c is not None and str(c).strip() and k not in row:
-                row[k] = str(c).strip()
+            if not k or c is None or not str(c).strip():
+                continue
+            v = str(c).strip()
+            # the fuller name wins - "iPhone 14 512GB (Red)" over "Apple iPhone 14" - and a later
+            # column that is a truncated repeat of the first is never the longer one; for every
+            # other field the first column wins
+            if k not in row or (k == 'name' and len(v) > len(row[k])):
+                row[k] = v
         if not row.get('name') or not row.get('price'):
             continue
         row['price'] = amd(row['price'])
