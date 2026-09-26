@@ -1778,6 +1778,12 @@
     "aliases": [
       "Apple AirPods Gen 4",
       "AirPods Gen 4"
+    ],
+    "body": {
+      "weight": 4.3
+    },
+    "sources": [
+      "https://www.apple.com/airpods/compare/"
     ]
   },
   {
@@ -1817,6 +1823,12 @@
     "aliases": [
       "AirPods 4 with Active Noise Cancellation",
       "AirPods 4 ANC"
+    ],
+    "body": {
+      "weight": 4.3
+    },
+    "sources": [
+      "https://www.apple.com/airpods/compare/"
     ]
   },
   {
@@ -1960,7 +1972,8 @@
     },
     "battery": {},
     "body": {
-      "ip": "IP57"
+      "ip": "IP57",
+      "weight": 5.55
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -1976,7 +1989,10 @@
     "colors": [
       "White"
     ],
-    "summaryEn": "Apple's flagship earbuds — active noise cancellation, transparency mode and a USB-C case."
+    "summaryEn": "Apple's flagship earbuds — active noise cancellation, transparency mode and a USB-C case.",
+    "sources": [
+      "https://www.apple.com/airpods/compare/"
+    ]
   },
   {
     "id": "apple-earpods-lightning",
@@ -11090,7 +11106,13 @@
       "form": "neckband",
       "conn": "wireless"
     },
-    "year": 2020
+    "year": 2020,
+    "body": {
+      "weight": 18.6
+    },
+    "sources": [
+      "https://www.beatsbydre.com/earbuds/beats-flex"
+    ]
   },
   {
     "id": "beats-solo-true-wireless",
@@ -11126,7 +11148,13 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 5.7
+    },
+    "sources": [
+      "https://www.beatsbydre.com/earbuds/solo-buds"
+    ]
   },
   {
     "id": "beats-solo4-onear",
@@ -11284,7 +11312,13 @@
       "form": "full",
       "conn": "wireless"
     },
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 260
+    },
+    "sources": [
+      "https://www.beatsbydre.com/headphones/studio-pro-wireless"
+    ]
   },
   {
     "id": "benq-el2870u",
@@ -34487,7 +34521,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 4.7
+    },
+    "sources": [
+      "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds3-silver-sm-r530nzaaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-3-fe",
@@ -34522,8 +34562,14 @@
     },
     "year": 2025,
     "connectivity": {
-      "bluetooth": "5.2"
-    }
+      "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 5
+    },
+    "sources": [
+      "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds3-fe-grey-sm-r420nzaaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-6-classic-43mm-r950",
@@ -34569,7 +34615,13 @@
     "year": 2023,
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 52
+    },
+    "sources": [
+      "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch6-classic-43mm-black-bluetooth-sm-r950nzkains/"
+    ]
   },
   {
     "id": "samsung-galaxy-9-44mm",
@@ -35962,9 +36014,13 @@
       "bluetooth": "5.4"
     },
     "body": {
-      "ip": "IP57"
+      "ip": "IP57",
+      "weight": 5.4
     },
-    "summaryEn": "The blade-stem generation: 24-bit audio, IP57 and real-time interpreting on a Galaxy phone."
+    "summaryEn": "The blade-stem generation: 24-bit audio, IP57 and real-time interpreting on a Galaxy phone.",
+    "sources": [
+      "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds3-pro-silver-sm-r630nzaaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-4",
@@ -35990,7 +36046,8 @@
     },
     "battery": {},
     "body": {
-      "ip": "IP57"
+      "ip": "IP57",
+      "weight": 4.6
     },
     "variants": [
       {
@@ -36000,14 +36057,17 @@
       }
     ],
     "connectivity": {
-      "bluetooth": "5.4",
+      "bluetooth": "6.1",
       "wireless": "USB-C charging case"
     },
     "colors": [
       "White",
       "Black"
     ],
-    "summaryEn": "Samsung's open-fit earbuds with noise cancellation."
+    "summaryEn": "Samsung's open-fit earbuds with noise cancellation.",
+    "sources": [
+      "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds4-white-sm-r540nzwaeub/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-4-pro",
@@ -36036,7 +36096,8 @@
     },
     "battery": {},
     "body": {
-      "ip": "IP57"
+      "ip": "IP57",
+      "weight": 5.1
     },
     "variants": [
       {
@@ -36046,14 +36107,17 @@
       }
     ],
     "connectivity": {
-      "bluetooth": "5.4",
+      "bluetooth": "6.1",
       "wireless": "Wireless and USB-C charging case"
     },
     "colors": [
       "White",
       "Black"
     ],
-    "summaryEn": "Samsung's flagship earbuds — in-ear, with the strongest noise cancellation."
+    "summaryEn": "Samsung's flagship earbuds — in-ear, with the strongest noise cancellation.",
+    "sources": [
+      "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds4-pro-black-sm-r640nzkaeub/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-core",
@@ -36085,14 +36149,20 @@
       }
     ],
     "connectivity": {
-      "bluetooth": "5.3",
+      "bluetooth": "5.4",
       "wireless": "USB-C charging case"
     },
     "colors": [
       "Black",
       "White"
     ],
-    "summaryEn": "The cheap Galaxy Buds, with noise cancellation kept in."
+    "summaryEn": "The cheap Galaxy Buds, with noise cancellation kept in.",
+    "body": {
+      "weight": 5.3
+    },
+    "sources": [
+      "https://www.samsung.com/ae/audio-sound/galaxy-buds/galaxy-buds-core-white-sm-r410nzwamea/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-fe",
@@ -38276,12 +38346,11 @@
       "size": 1.5,
       "resolution": "480x480"
     },
-    "battery": {
-      "capacity": 247
-    },
+    "battery": {},
     "summaryEn": "Samsung Galaxy Ultra 47mm 2024.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.capacity"
     ],
     "variantUnit": "mm",
     "os": "Wear OS, One UI Watch",
@@ -38314,7 +38383,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 590
+    },
     "summaryEn": "Samsung Galaxy Ultra 47mm 2025.",
     "unsure": [
       "popularity"
@@ -38324,7 +38395,13 @@
     "year": 2025,
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 60.5
+    },
+    "sources": [
+      "https://www.samsung.com/sg/watches/galaxy-watch/galaxy-watch-ultra-2025-47mm-titanium-blue-lte-sm-l705fzb1xsp/"
+    ]
   },
   {
     "id": "samsung-galaxy-watch-3-41mm",
@@ -38484,7 +38561,8 @@
     },
     "body": {
       "materials": "Stainless steel case with rotating bezel",
-      "ip": "IP68, 5 ATM"
+      "ip": "IP68, 5 ATM",
+      "weight": 63.5
     },
     "battery": {
       "capacity": 445
@@ -38511,7 +38589,10 @@
       "Black",
       "White"
     ],
-    "summaryEn": "The Watch 8 with a steel case and the rotating bezel."
+    "summaryEn": "The Watch 8 with a steel case and the rotating bezel.",
+    "sources": [
+      "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch8-classic-46mm-black-bluetooth-sm-l500nzkaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-watch-fit-3",
@@ -38569,7 +38650,8 @@
     },
     "body": {
       "materials": "Titanium case",
-      "ip": "IP68, 10 ATM, MIL-STD-810H"
+      "ip": "IP68, 10 ATM, MIL-STD-810H",
+      "weight": 61.5
     },
     "battery": {
       "capacity": 800
@@ -38591,7 +38673,10 @@
       "Titanium Gray",
       "Titanium White"
     ],
-    "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance."
+    "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance.",
+    "sources": [
+      "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch-ultra2-titanium-silver-lte-sm-l715fzsaeub/"
+    ]
   },
   {
     "id": "samsung-galaxy-watch4-40-mm",
@@ -39665,12 +39750,16 @@
       "touch": false,
       "size": 32,
       "resolution": "2560 x 1440",
-      "type": "VA"
+      "type": "VA",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung Odyssey G5 S32CG552EU.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.samsung.com/it/monitors/gaming/odyssey-g5-g55c-32-inch-165hz-curved-qhd-ls32cg552euxen/"
     ]
   },
   {
@@ -41876,7 +41965,13 @@
       "form": "full",
       "conn": "wired",
       "plug": "3.5"
-    }
+    },
+    "body": {
+      "weight": 250
+    },
+    "sources": [
+      "https://us.sennheiser-hearing.com/products/hd-599"
+    ]
   },
   {
     "id": "sennheiser-hd-620s",
@@ -52312,6 +52407,474 @@
     "summaryEn": "Compact satellite internet dish with a built-in router.",
     "unsure": [
       "popularity"
+    ]
+  },
+  {
+    "id": "apple-iphone-14",
+    "category": "phone",
+    "brand": "Apple",
+    "name": "iPhone 14",
+    "tier": "upper-mid",
+    "priceAmd": 309900,
+    "priceAmdMax": 309900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 309900
+      }
+    ],
+    "display": {
+      "size": 6.1,
+      "type": "Super Retina XDR OLED",
+      "resolution": "2532x1170",
+      "refresh": 60,
+      "ppi": 460,
+      "protection": "Ceramic Shield"
+    },
+    "battery": {
+      "wired": 20,
+      "wireless": 15
+    },
+    "summaryEn": "Apple iPhone 14.",
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "released": "2022-09",
+    "colors": [
+      "Midnight",
+      "Starlight",
+      "Red",
+      "Blue",
+      "Purple",
+      "Yellow"
+    ],
+    "chipset": {
+      "name": "Apple A15 Bionic",
+      "cpu": "Hexa-core (2 performance + 4 efficiency)",
+      "gpu": "Apple 5-core GPU"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "12 MP, f/1.5, 26mm, sensor-shift OIS",
+      "ultrawide": "12 MP, f/2.4, 13mm, 120-degree",
+      "front": "12 MP, f/1.9"
+    },
+    "body": {
+      "height": 146.7,
+      "width": 71.5,
+      "thickness": 7.8,
+      "weight": 172,
+      "ip": "IP68"
+    },
+    "connectivity": {
+      "network": "5G",
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.3",
+      "nfc": true,
+      "sim": "Nano-SIM + eSIM (eSIM only in the US)"
+    },
+    "cardSlot": false,
+    "os": "iOS 16",
+    "sources": [
+      "https://support.apple.com/en-gb/111850"
+    ]
+  },
+  {
+    "id": "apple-iphone-14-pro-max",
+    "category": "phone",
+    "brand": "Apple",
+    "name": "iPhone 14 Pro Max",
+    "tier": "upper-mid",
+    "priceAmd": 359900,
+    "priceAmdMax": 359900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": 359900
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "Super Retina XDR OLED, ProMotion, Always-On",
+      "resolution": "2796x1290",
+      "refresh": 120,
+      "ppi": 460,
+      "protection": "Ceramic Shield"
+    },
+    "battery": {
+      "wired": 20,
+      "wireless": 15
+    },
+    "summaryEn": "Apple iPhone 14 Pro Max.",
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "released": "2022-09",
+    "colors": [
+      "Space Black",
+      "Silver",
+      "Gold",
+      "Deep Purple"
+    ],
+    "chipset": {
+      "name": "Apple A16 Bionic",
+      "cpu": "Hexa-core (2 performance + 4 efficiency)",
+      "gpu": "Apple 5-core GPU"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "48 MP, f/1.78, 24mm, second-generation sensor-shift OIS",
+      "ultrawide": "12 MP, f/2.2, 13mm, 120-degree",
+      "telephoto": "12 MP, f/2.8, 77mm, 3x optical zoom, OIS",
+      "front": "12 MP, f/1.9"
+    },
+    "body": {
+      "height": 160.7,
+      "width": 77.6,
+      "thickness": 7.85,
+      "weight": 240,
+      "ip": "IP68"
+    },
+    "connectivity": {
+      "network": "5G",
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.3",
+      "nfc": true,
+      "sim": "Nano-SIM + eSIM (eSIM only in the US)"
+    },
+    "cardSlot": false,
+    "os": "iOS 16",
+    "sources": [
+      "https://support.apple.com/en-gb/111846"
+    ]
+  },
+  {
+    "id": "apple-iphone-14-plus",
+    "category": "phone",
+    "brand": "Apple",
+    "name": "iPhone 14 Plus",
+    "tier": "mid",
+    "priceAmd": 269900,
+    "priceAmdMax": 269900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": 269900
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "Super Retina XDR OLED",
+      "resolution": "2778x1284",
+      "refresh": 60,
+      "ppi": 458,
+      "protection": "Ceramic Shield"
+    },
+    "battery": {
+      "wired": 20,
+      "wireless": 15
+    },
+    "summaryEn": "Apple iPhone 14 Plus.",
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "released": "2022-10",
+    "colors": [
+      "Midnight",
+      "Starlight",
+      "Red",
+      "Blue",
+      "Purple",
+      "Yellow"
+    ],
+    "chipset": {
+      "name": "Apple A15 Bionic",
+      "cpu": "Hexa-core (2 performance + 4 efficiency)",
+      "gpu": "Apple 5-core GPU"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "12 MP, f/1.5, 26mm, sensor-shift OIS",
+      "ultrawide": "12 MP, f/2.4, 13mm, 120-degree",
+      "front": "12 MP, f/1.9"
+    },
+    "body": {
+      "height": 160.8,
+      "width": 78.1,
+      "thickness": 7.8,
+      "weight": 203,
+      "ip": "IP68"
+    },
+    "connectivity": {
+      "network": "5G",
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.3",
+      "nfc": true,
+      "sim": "Nano-SIM + eSIM (eSIM only in the US)"
+    },
+    "cardSlot": false,
+    "os": "iOS 16",
+    "sources": [
+      "https://support.apple.com/en-gb/111854"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s22plus",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy S22+",
+    "tier": "upper-mid",
+    "priceAmd": 505900,
+    "priceAmdMax": 505900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 505900
+      }
+    ],
+    "display": {
+      "size": 6.6,
+      "type": "Dynamic AMOLED 2X",
+      "resolution": "2340x1080"
+    },
+    "battery": {
+      "capacity": 4500
+    },
+    "summaryEn": "Samsung Galaxy S22+.",
+    "unsure": [
+      "popularity"
+    ],
+    "released": "2022-02",
+    "colors": [
+      "Phantom Black",
+      "Phantom White",
+      "Green",
+      "Pink Gold"
+    ],
+    "chipset": {
+      "name": "Samsung Exynos 2200",
+      "process": "4 nm",
+      "cpu": "Octa-core (1x2.8 GHz Cortex-X2 + 3x2.5 GHz Cortex-A710 + 4x1.8 GHz Cortex-A510)"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP",
+      "front": "10 MP"
+    },
+    "body": {
+      "height": 157.4,
+      "width": 75.8,
+      "thickness": 7.6,
+      "weight": 195
+    },
+    "connectivity": {
+      "network": "5G"
+    },
+    "cardSlot": false,
+    "os": "Android 12",
+    "sources": [
+      "https://mobilecentre.am/product/samsung-galaxy-s22+/26818/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-fold-5",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold 5",
+    "tier": "upper-mid",
+    "priceAmd": 343900,
+    "priceAmdMax": 343900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 343900
+      }
+    ],
+    "display": {
+      "size": 7.6,
+      "type": "Foldable Dynamic AMOLED 2X",
+      "resolution": "2176x1812",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 4400
+    },
+    "summaryEn": "Samsung Galaxy Z Fold 5.",
+    "unsure": [
+      "popularity"
+    ],
+    "released": "2023-08",
+    "colors": [
+      "Icy Blue",
+      "Phantom Black",
+      "Cream"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Gen 2 for Galaxy",
+      "process": "4 nm",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 + 2x2.8 GHz Cortex-A715 + 2x2.8 GHz Cortex-A710 + 3x2.0 GHz Cortex-A510)"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP",
+      "front": "4 MP under the screen + 10 MP on the cover"
+    },
+    "body": {
+      "height": 154.9,
+      "width": 129.9,
+      "thickness": 6.1,
+      "weight": 253
+    },
+    "connectivity": {
+      "network": "5G"
+    },
+    "cardSlot": false,
+    "os": "Android 13",
+    "sources": [
+      "https://mobilecentre.am/product/samsung-galaxy-z-fold-5/29170/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-fold-6",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold 6",
+    "tier": "upper-mid",
+    "priceAmd": 511900,
+    "priceAmdMax": 511900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 511900
+      }
+    ],
+    "display": {
+      "size": 7.6,
+      "type": "Foldable Dynamic LTPO AMOLED 2X",
+      "resolution": "2160x1856",
+      "refresh": 120,
+      "brightness": 2600
+    },
+    "battery": {
+      "capacity": 4400
+    },
+    "summaryEn": "Samsung Galaxy Z Fold 6.",
+    "unsure": [
+      "popularity"
+    ],
+    "released": "2024-07",
+    "colors": [
+      "Silver Shadow",
+      "Pink",
+      "Navy"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Gen 3 for Galaxy",
+      "process": "4 nm",
+      "cpu": "Octa-core (1x3.39 GHz Cortex-X4 + 3x3.1 GHz Cortex-A720 + 2x2.9 GHz Cortex-A720 + 2x2.2 GHz Cortex-A520)"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP",
+      "front": "4 MP"
+    },
+    "body": {
+      "height": 153.5,
+      "width": 132.6,
+      "thickness": 5.6,
+      "weight": 239
+    },
+    "connectivity": {
+      "network": "5G"
+    },
+    "cardSlot": false,
+    "os": "Android 14",
+    "sources": [
+      "https://mobilecentre.am/product/samsung-galaxy-z-fold-6/30723/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a18",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy A18",
+    "tier": "mid",
+    "priceAmd": 101900,
+    "priceAmdMax": 114900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 101900
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 114900
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340x1080",
+      "refresh": 90
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "Samsung Galaxy A18.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Light Blue"
+    ],
+    "chipset": {
+      "name": "Samsung Exynos 1610",
+      "cpu": "Octa-core (2x2.4 GHz + 6x2.0 GHz Cortex-A55)"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP",
+      "front": "13 MP"
+    },
+    "body": {
+      "height": 164.4,
+      "width": 77.9,
+      "thickness": 7.7,
+      "weight": 196
+    },
+    "connectivity": {
+      "network": "4G",
+      "sim": "Dual nano-SIM"
+    },
+    "cardSlot": false,
+    "os": "Android 17",
+    "sources": [
+      "https://mobilecentre.am/product/samsung-galaxy-a18/34466/"
     ]
   }
 ]

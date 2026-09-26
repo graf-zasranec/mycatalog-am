@@ -225,8 +225,11 @@ function looksLikeBundle(text) {
     const left = h.slice(0, at).trim(), right = h.slice(at + j.length).trim();
     const words = right.split(' ').filter(Boolean);
     if (words.length < 2 || left.split(' ').filter(Boolean).length < 2) continue;
-    // a second product names itself: a word of its own and a number belonging to it
-    if (words.some(w => /^[a-z]{3,}$/.test(w)) && words.some(w => /\d/.test(w))) return true;
+    // a second product names itself: a word of its own and a number belonging to it - not the
+    // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
+    // the joiner, and reading 128GB and Red as a second product dropped every such offer.
+    const own = words.filter(w => !/^\d+(gb|tb|mb)$/.test(w) && !COLOR_WORDS.has(w));
+    if (own.some(w => /^[a-z]{3,}$/.test(w)) && own.some(w => /\d/.test(w))) return true;
   }
   return false;
 }
@@ -844,6 +847,7 @@ if (process.argv[2] === '--selftest') {
     // is its real id - which still proves the qualifier guard works: a broken guard answers
     // samsung-galaxy-s25 here.
     ['samsung-galaxy-s25-plus', 'Samsung Galaxy S25+ 256GB (Silver Shadow)'],
+    ['apple-iphone-14-plus', 'iPhone 14 Plus 128GB (Red)'],
     ['samsung-galaxy-s25', 'Samsung Galaxy S25 128GB (Navy)'],
     ['apple-iphone-17-pro', 'iphone-17-pro-512-gb-deep-blue-mg8k4af-a'],
     ['apple-iphone-17', 'apple-iphone-17-256gb-black-mg6j4af-a.html'],
