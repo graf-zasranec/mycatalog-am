@@ -14866,7 +14866,10 @@
     ],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 88
+    }
   },
   {
     "id": "garmin-epix-pro-standard-edition-47mm",
@@ -15192,14 +15195,18 @@
       }
     ],
     "display": {
-      "resolution": "390x390"
+      "resolution": "390x390",
+      "size": 1.2
     },
     "battery": {},
     "summaryEn": "Garmin Forerunner 170.",
     "unsure": [
       "popularity"
     ],
-    "os": "Garmin (own system)"
+    "os": "Garmin (own system)",
+    "body": {
+      "weight": 41
+    }
   },
   {
     "id": "garmin-forerunner-170-music",
@@ -15223,14 +15230,18 @@
       }
     ],
     "display": {
-      "resolution": "390x390"
+      "resolution": "390x390",
+      "size": 1.2
     },
     "battery": {},
     "summaryEn": "Garmin Forerunner 170 Music.",
     "unsure": [
       "popularity"
     ],
-    "os": "Garmin (own system)"
+    "os": "Garmin (own system)",
+    "body": {
+      "weight": 41
+    }
   },
   {
     "id": "garmin-forerunner-570",
@@ -15262,7 +15273,10 @@
       "popularity"
     ],
     "os": "Garmin (own system)",
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 50
+    }
   },
   {
     "id": "garmin-forerunner-70",
@@ -15287,14 +15301,18 @@
       }
     ],
     "display": {
-      "resolution": "390x390"
+      "resolution": "390x390",
+      "size": 1.2
     },
     "battery": {},
     "summaryEn": "Garmin Forerunner 70.",
     "unsure": [
       "popularity"
     ],
-    "os": "Garmin (own system)"
+    "os": "Garmin (own system)",
+    "body": {
+      "weight": 41
+    }
   },
   {
     "id": "garmin-forerunner-965-black-powder",
@@ -15319,7 +15337,8 @@
       }
     ],
     "display": {
-      "resolution": "454x454"
+      "resolution": "454x454",
+      "size": 1.4
     },
     "battery": {},
     "summaryEn": "Garmin Forerunner® 965 Black/Powder.",
@@ -15561,7 +15580,10 @@
       "popularity"
     ],
     "os": "Garmin (own system)",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 47
+    }
   },
   {
     "id": "garmin-venu-3s-french",
@@ -15640,7 +15662,10 @@
     "colors": [],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 56
+    }
   },
   {
     "id": "garmin-venu-x1-gps",
