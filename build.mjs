@@ -299,7 +299,7 @@ const offerOf = p => {
 const SEO = {
   url: SITE,
   img: 'images/cut/' + (phones.find(p => fs.existsSync(`${CUT}/${p.id}__main.webp`)) || phones[0]).id + '__main.webp',
-  title: `Better.am — ${phones.length} սարքի գներ Հայաստանի խանութներում`,
+  title: `Better.am: ${phones.length} սարքի գներ Հայաստանի խանութներում`,
   desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
       + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
   ld: {
@@ -608,7 +608,7 @@ for (const p of phones) {
       category: cat, image: img, url, offers: offerOf(p) },
     crumbs([['Better.am', SITE], [catLabel(cat), catUrl], [nameOf(p), url]]),
   ];
-  const page = HEAD({ title: `${nameOf(p)} — գինը Հայաստանում | Better.am`, desc: DESC(p), url, img, ld }) + `
+  const page = HEAD({ title: `${nameOf(p)}: գինը Հայաստանում | Better.am`, desc: DESC(p), url, img, ld }) + `
 <header><a href="../../">Better.am</a></header>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <a href="../../c/${cat}/">${esc(catLabel(cat))}</a> › <span>${esc(nameOf(p))}</span></nav>
 <main>
@@ -636,7 +636,7 @@ for (const c of cats) {
   const list = phones.filter(p => catOf(p) === c && offersOf(p).length)
     .sort((a, b) => (b.popularity || 0) - (a.popularity || 0) || bestOf(a) - bestOf(b));
   const url = `${SITE}c/${c}/`;
-  const title = `${catLabel(c)} — գները Հայաստանի խանութներում | Better.am`;
+  const title = `${catLabel(c)}: գները Հայաստանի խանութներում | Better.am`;
   const desc = `${list.length} մոդել, ${amd(Math.min(...list.map(bestOf)))}-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։`;
   const page = HEAD({ title, desc, url, img: SITE + SEO.img, ld: [crumbs([['Better.am', SITE], [catLabel(c), url]])] }) + `
 <header><a href="../../">Better.am</a></header>

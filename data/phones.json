@@ -4956,7 +4956,10 @@
     ],
     "colors": [],
     "os": "macOS",
-    "year": 2024
+    "year": 2024,
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "apple-macbook-pro-14-m4-max",
@@ -4994,7 +4997,10 @@
     ],
     "colors": [],
     "os": "macOS",
-    "year": 2024
+    "year": 2024,
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "apple-macbook-pro-14-m4-pro",
@@ -5819,7 +5825,9 @@
     "display": {
       "size": 22,
       "touch": true,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 60
     },
     "variants": [
       {
@@ -5835,7 +5843,10 @@
     ],
     "aliases": [
       "22” VT229H Touch"
-    ]
+    ],
+    "body": {
+      "weight": 3700
+    }
   },
   {
     "id": "asus-24-vz239he-w",
@@ -5850,7 +5861,9 @@
     "display": {
       "size": 24,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 75
     },
     "variants": [
       {
@@ -5866,7 +5879,10 @@
     ],
     "aliases": [
       "24” VZ239HE-W"
-    ]
+    ],
+    "body": {
+      "weight": 2700
+    }
   },
   {
     "id": "asus-27-va279hae",
@@ -5881,7 +5897,9 @@
     "display": {
       "size": 27,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "VA",
+      "refresh": 60
     },
     "variants": [
       {
@@ -5897,7 +5915,10 @@
     ],
     "aliases": [
       "27” VA279HAE"
-    ]
+    ],
+    "body": {
+      "weight": 4600
+    }
   },
   {
     "id": "asus-32-cg32uq",
@@ -5992,6 +6013,9 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-225H"
+    },
+    "body": {
+      "weight": 1450
     }
   },
   {
@@ -6025,6 +6049,9 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255H"
+    },
+    "body": {
+      "weight": 1450
     }
   },
   {
@@ -6058,6 +6085,9 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255H"
+    },
+    "body": {
+      "weight": 1830
     }
   },
   {
@@ -6071,7 +6101,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 17.3
+      "size": 17.3,
+      "resolution": "1600x900"
     },
     "chipset": {
       "name": "Intel N4500"
@@ -6092,7 +6123,10 @@
     "summaryEn": "A 17.3-inch laptop with Intel N4500.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2420
+    }
   },
   {
     "id": "asus-dual-rtx-4060-8gb",
@@ -6174,7 +6208,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "ASUS E1504G (90NB0ZT2-M011A0).",
@@ -6341,6 +6376,9 @@
     ],
     "chipset": {
       "name": "Intel Core 5-210H"
+    },
+    "body": {
+      "weight": 1610
     }
   },
   {
@@ -6506,7 +6544,9 @@
     "display": {
       "size": 25,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "TN",
+      "refresh": 165
     },
     "variants": [
       {
@@ -6522,7 +6562,10 @@
     ],
     "aliases": [
       "Gaming 25” VG258QR"
-    ]
+    ],
+    "body": {
+      "weight": 5100
+    }
   },
   {
     "id": "asus-k3605v",
@@ -6557,6 +6600,9 @@
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
+    },
+    "body": {
+      "weight": 1800
     }
   },
   {
@@ -6658,6 +6704,9 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-226V"
+    },
+    "body": {
+      "weight": 1200
     }
   },
   {
@@ -6673,7 +6722,9 @@
     "display": {
       "size": 32,
       "touch": false,
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "type": "IPS",
+      "refresh": 60
     },
     "variants": [
       {
@@ -6689,7 +6740,10 @@
     ],
     "aliases": [
       "ProArt Display 32” PA329CV"
-    ]
+    ],
+    "body": {
+      "weight": 12600
+    }
   },
   {
     "id": "asus-proart-rtx-4060-8gb",
@@ -6735,7 +6789,9 @@
     "display": {
       "size": 24,
       "touch": false,
-      "resolution": "1920 x 1200"
+      "resolution": "1920 x 1200",
+      "type": "IPS",
+      "refresh": 75
     },
     "variants": [
       {
@@ -6751,7 +6807,10 @@
     ],
     "aliases": [
       "ProArt Studio 24” PA248CNV"
-    ]
+    ],
+    "body": {
+      "weight": 6500
+    }
   },
   {
     "id": "asus-rog-ally-7",
@@ -7945,7 +8004,9 @@
     "display": {
       "size": 24,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "TN",
+      "refresh": 165
     },
     "variants": [
       {
@@ -7961,7 +8022,10 @@
     ],
     "aliases": [
       "TUF Gaming 24” VG248Q1B"
-    ]
+    ],
+    "body": {
+      "weight": 3800
+    }
   },
   {
     "id": "asus-tuf-gaming-27-vg279q1a",
@@ -7976,7 +8040,9 @@
     "display": {
       "size": 27,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 165
     },
     "variants": [
       {
@@ -7992,7 +8058,10 @@
     ],
     "aliases": [
       "TUF Gaming 27” VG279Q1A"
-    ]
+    ],
+    "body": {
+      "weight": 4400
+    }
   },
   {
     "id": "asus-tuf-gaming-27-vg279ql1a",
@@ -8007,7 +8076,9 @@
     "display": {
       "size": 27,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 165
     },
     "variants": [
       {
@@ -8023,7 +8094,10 @@
     ],
     "aliases": [
       "TUF Gaming 27” VG279QL1A"
-    ]
+    ],
+    "body": {
+      "weight": 6200
+    }
   },
   {
     "id": "asus-tuf-gaming-34-vg34vqel1a",
@@ -8088,6 +8162,9 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 9 8940HX"
+    },
+    "body": {
+      "weight": 2200
     }
   },
   {
@@ -8395,13 +8472,17 @@
       "touch": false,
       "size": 24,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 180
     },
     "battery": {},
     "summaryEn": "ASUS VG249Q3A 90LM09B0-B01170.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3500
+    }
   },
   {
     "id": "asus-vg279q3a-90lm0990-b01170",
@@ -8427,13 +8508,17 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 180
     },
     "battery": {},
     "summaryEn": "ASUS VG279Q3A 90LM0990-B01170.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4600
+    }
   },
   {
     "id": "asus-vg32aqa1a-90lm07l0-b02370",
@@ -8503,6 +8588,9 @@
     ],
     "chipset": {
       "name": "Intel Core 3-100U"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -8578,6 +8666,9 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 5 150"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -8612,6 +8703,9 @@
     ],
     "chipset": {
       "name": "Intel Core i5-1335U"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -8921,7 +9015,10 @@
       "ASUS Vivobook 16 OLED M3604",
       "Vivobook 16 OLED Ultra 7-255H",
       "Vivobook 16X OLED M3604"
-    ]
+    ],
+    "body": {
+      "weight": 1760
+    }
   },
   {
     "id": "asus-vivobook-17-x1704vap",
@@ -8955,6 +9052,9 @@
     ],
     "chipset": {
       "name": "Intel Core 5-120U"
+    },
+    "body": {
+      "weight": 2100
     }
   },
   {
@@ -9049,7 +9149,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel N305"
@@ -9066,7 +9167,10 @@
     "summaryEn": "A 14-inch laptop with Intel N305.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1380
+    }
   },
   {
     "id": "asus-vivobook-e410ka-cl4128",
@@ -9363,7 +9467,8 @@
     "display": {
       "size": 15.6,
       "type": "Full HD OLED",
-      "touch": false
+      "touch": false,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "AMD Ryzen 5 7520U"
@@ -9388,7 +9493,10 @@
       "Silver",
       "Black"
     ],
-    "summaryEn": "The cheapest OLED laptop here — a 15.6-inch VivoBook Go."
+    "summaryEn": "The cheapest OLED laptop here — a 15.6-inch VivoBook Go.",
+    "body": {
+      "weight": 1630
+    }
   },
   {
     "id": "asus-vivobook-go15-e1504ga-ws35",
@@ -9442,7 +9550,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i5-11300H"
@@ -9463,7 +9572,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i5-11300H.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1650
+    }
   },
   {
     "id": "asus-vivobook-k5504-vn-ds96",
@@ -9796,6 +9908,9 @@
     ],
     "chipset": {
       "name": "Intel Core 5-210H"
+    },
+    "body": {
+      "weight": 1400
     }
   },
   {
@@ -9883,6 +9998,9 @@
     ],
     "chipset": {
       "name": "Intel Core 5-210H"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -10021,7 +10139,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i3-1215U"
@@ -10038,7 +10157,10 @@
     "summaryEn": "A 14-inch laptop with Intel Core i3-1215U.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1400
+    }
   },
   {
     "id": "asus-vivobook-x1502za-bq2270",
@@ -10051,7 +10173,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i7-12700H"
@@ -10072,7 +10195,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1504va-nj061",
@@ -10106,7 +10232,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i5-1235U.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1504va-nj2920",
@@ -10203,7 +10332,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i7-1355U"
@@ -10229,7 +10359,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-1355U.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1504va-nj451",
@@ -10242,7 +10375,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i3-1315U"
@@ -10268,7 +10402,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i3-1315U.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1504za-u672",
@@ -10281,7 +10418,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i5-1235U"
@@ -10307,7 +10445,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i5-1235U.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1505za-ma477-oled",
@@ -10342,7 +10483,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vp247hae",
@@ -10401,13 +10545,18 @@
     "display": {
       "touch": false,
       "size": 27,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 100
     },
     "battery": {},
     "summaryEn": "ASUS VU279HFI-W.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4700
+    }
   },
   {
     "id": "asus-vy249hf-w",
@@ -10432,13 +10581,18 @@
     "display": {
       "touch": false,
       "size": 24,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 100
     },
     "battery": {},
     "summaryEn": "ASUS VY249HF-W.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3400
+    }
   },
   {
     "id": "asus-vy279hf-w-90lm06d2-b02170",
@@ -10464,13 +10618,17 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 100
     },
     "battery": {},
     "summaryEn": "ASUS VY279HF-W 90LM06D2-B02170.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4110
+    }
   },
   {
     "id": "asus-vz24ehf-w",
@@ -10557,7 +10715,8 @@
       "size": 14,
       "type": "2.8K OLED",
       "refresh": 90,
-      "touch": true
+      "touch": true,
+      "resolution": "2880x1800"
     },
     "chipset": {
       "name": "AMD Ryzen 5 7530U"
@@ -10581,7 +10740,10 @@
     "colors": [
       "Gray"
     ],
-    "summaryEn": "A 14-inch ZenBook with a 2.8K OLED touchscreen — the only touch laptop in this catalogue."
+    "summaryEn": "A 14-inch ZenBook with a 2.8K OLED touchscreen — the only touch laptop in this catalogue.",
+    "body": {
+      "weight": 1390
+    }
   },
   {
     "id": "asus-zenbook-14-um3405ga-zb-70",

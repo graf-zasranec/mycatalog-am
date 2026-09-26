@@ -3,7 +3,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const MAXCMP = 4;
-const OFFER_PEEK = 5;   // offers shown before the list asks to be expanded
+const OFFER_PEEK = 5;   // shops in the product page's price table; the rest are one link away, on the offers page
 // An explicit way back. An anchor to the logical parent, not history.back(), so it still
 // works when someone opens a product or offers link directly.
 const backLink = (href, label) =>
@@ -41,7 +41,7 @@ const X = {
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
-    histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
+    histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր {d}-ի ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
     spotT: 'Օրվա գործարքը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
     dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', sourcesL: 'Աղբյուրներ', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
@@ -51,16 +51,16 @@ const X = {
     spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Party', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
     waters: { splash: 'Ցանկոտումից պաշտպանված', dip: 'Ջրի մեջ ընկղման դիմացկուն' },
     heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և գտի՛ր', heroB: 'լավագույն գինը',
-    heroSub: 'Յուրաքանչյուր ապրանք տարբեր խանութներում ունի տարբեր գին։ Որպեսզի խնայեք ձեր ժամանակը և հավելյալ գումար չծախսեք՝ մենք հավաքել ենք մեկ տեղում։',
+    heroSub: 'Բոլոր գները՝ մեկ տեղում։ Համեմատի՛ր և ընտրի՛ր քոնը։',
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի ցածր գին', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
     sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
-    variantUnknown: 'տարբերակը նշված չէ', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', showAll: 'Ցույց տալ բոլորը', showLess: 'Թաքցնել', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', savingsS: 'Նույն ապրանքը՝ տարբեր խանութներում', priceMatters: 'Գինը կարևոր է', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
+    variantUnknown: 'տարբերակը նշված չէ', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
@@ -73,7 +73,7 @@ const X = {
     ancF: 'Шумоподавление', waterF: 'Влагозащита',
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
-    histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
+    histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума {d}', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
     spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
     dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', sourcesL: 'Источники', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
@@ -86,16 +86,16 @@ const X = {
     // interface - and only this headline used ты. Raised to вы rather than lowering the rest:
     // it is the smaller change and the register Russian retail copy is written in.
     heroTag: 'Новинка', heroA: 'Сравните и найдите', heroB: 'лучшую цену',
-    heroSub: 'Каждый магазин называет свою цену. Мы собираем их в одном месте — чтобы вы нашли именно то, что нужно, и не переплатили.',
+    heroSub: 'Все цены в одном месте. Сравните и выберите своё.',
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
     sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
-    variantUnknown: 'версия не указана', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', showAll: 'Показать все', showLess: 'Свернуть', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение — график появится через несколько дней', savingsT: 'Наибольшая выгода', savingsS: 'Один товар — разные магазины', priceMatters: 'Цена имеет значение', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
+    variantUnknown: 'версия не указана', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение. График появится через несколько дней', savingsT: 'Наибольшая выгода', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
@@ -108,7 +108,7 @@ const X = {
     ancF: 'Noise cancelling', waterF: 'Water resistance',
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
-    histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the lowest', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
+    histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the {d} low', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
     spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
     dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', sourcesL: 'Sources', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
@@ -118,16 +118,16 @@ const X = {
     spkF: 'Type', spks: { portable: 'Portable', party: 'Party', smart: 'Smart (Wi-Fi)', home: 'Home' },
     waters: { splash: 'Splash resistant', dip: 'Survives a dunk' },
     heroTag: 'Just launched', heroA: 'Compare and find', heroB: 'the best price',
-    heroSub: 'Every shop quotes its own price. We put them side by side, so you find the one you actually need and never pay more than you have to.',
+    heroSub: 'Every price in one place. Compare and choose yours.',
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
     sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
-    variantUnknown: 'variant not stated', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', showAll: 'Show all', showLess: 'Show less', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far — the chart appears after a few days', savingsT: 'Where you save most', savingsS: 'Same product, different shops', priceMatters: 'Price matters', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
+    variantUnknown: 'variant not stated', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far. The chart appears after a few days', savingsT: 'Where you save most', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
   }
 };
 
@@ -209,6 +209,14 @@ const plw = (n, k) => {
   return f[a === 1 && b !== 11 ? 0 : a > 1 && a < 5 && (b < 12 || b > 14) ? 1 : 2];
 };
 const nx = (n, k) => n + ' ' + plw(n, k);
+// "from 14 shops" inside a sentence: Russian needs the genitive after "из" ("из 21 магазина"),
+// Armenian the ablative after the number ("14 խանութից")
+const fromShops = n => st.lang === 'hy' ? n + ' խանութից'
+  : st.lang === 'ru' ? 'из ' + n + (n % 10 === 1 && n % 100 !== 11 ? ' магазина' : ' магазинов') : 'from ' + nx(n, 'shops');
+// The search hint is cut off on a phone, so phones get the short one.
+const PHONE = matchMedia('(max-width:640px)');
+const hint = () => (PHONE.matches && x('searchShort')) || t('nav.search_placeholder');
+PHONE.addEventListener('change', () => { const q = document.getElementById('q'); if (q) q.placeholder = hint(); });
 // Apple and Samsung model names already say the brand - "iPhone 17 Pro", not "Apple iPhone 17 Pro".
 // The brand is still searchable; see the query test below, which adds p.brand back in.
 const BARE_BRAND = new Set(['apple', 'samsung']);
@@ -345,7 +353,7 @@ function historyHTML(p) {
   const pct = (now.v - low.v) / low.v * 100;
   const pill = now.v <= low.v
     ? `<span class="hp good">${esc(x('histLow').replace('{d}', dmy(S[0].d).slice(0, 5)))}</span>`
-    : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)))}</span>`;
+    : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)).replace('{d}', dmy(low.d).slice(0, 5)))}</span>`;
   return head + `<div class="hist">
       <div class="hist-top"><b class="num">${amd(now.v)}</b>${pill}</div>
       <p class="hist-sub">${esc(x('histLowLine').replace('{d}', dmy(S[0].d).slice(0, 5)).replace('{n}', money(low.v)).replace('{d2}', dmy(low.d).slice(0, 5)))}
@@ -864,7 +872,7 @@ function paintChrome() {
   $('#skipLink').textContent = t('common.skip');
   $('#srchLbl').textContent = t('nav.search_placeholder');
   $('#q').setAttribute('aria-label', t('nav.search_placeholder'));
-  $('#q').placeholder = t('nav.search_placeholder');
+  $('#q').placeholder = hint();
   const go = $('#qgo'); if (go) go.setAttribute('aria-label', t('nav.search_placeholder'));
   if ($('#q').value !== st.q) $('#q').value = st.q;
   const h = location.hash.replace(/^#/, '') || '/';
@@ -873,7 +881,7 @@ function paintChrome() {
   // "Catalog" now goes, and the comparison.
   $('#nav').innerHTML =
     `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
-    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${esc(t('nav.compare'))}`
+    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${x('navCmpShort') ? `<span class="nl">${esc(t('nav.compare'))}</span><span class="ns">${esc(x('navCmpShort'))}</span>` : esc(t('nav.compare'))}`
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
     + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
   paintCmpCount();
@@ -1232,7 +1240,11 @@ function cardFacts(p, v) {
   if (v.storage != null) f.push(esc((v.ram ? v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
   if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u(p.category === 'laptop' ? 'wh' : 'mah'))}</span>`);
   if (p.chipset?.name) f.push(esc(p.chipset.name));
-  if (p.audio?.type) f.push(esc(tr(p.audio.type, st.lang)));
+  // "In-ear, active noise cancellation" is two facts; as one chip it ran to two lines on a card
+  if (p.audio?.type) {
+    f.push(esc(tr(p.audio.type, st.lang).split(/,|՝| с | без /)[0].trim()));
+    if (/active|adaptive/i.test(p.audio.type)) f.push('ANC');
+  }
   if (p.body?.ip) f.push(esc(p.body.ip));
   return f.slice(0, 3);
 }
@@ -1318,8 +1330,7 @@ function mastHero() {
   const dl = deals();
   const sp = spotDeal(dl);
   const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
-  return `<div class="cv-eyebrow">${esc(x('priceMatters'))}</div>
-    <div class="cv${sp ? ' has-spot' : ''}">
+  return `<div class="cv${sp ? ' has-spot' : ''}">
       ${spotHTML(sp)}
       <div class="cv-l">
       <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
@@ -1338,7 +1349,7 @@ function mastHero() {
     </div>
     ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT">
       <div class="dls-hd">
-        <div><h2 id="dlsT">${esc(x('savingsT'))}</h2><p>${esc(x('savingsS'))}</p></div>
+        <div><h2 id="dlsT">${esc(x('savingsT'))}</h2></div>
         <div class="dls-arr"><button type="button" data-dl="-1" aria-label="${esc(x('prevL'))}" disabled>${ICON_ARR_L}</button><button type="button" data-dl="1" aria-label="${esc(x('nextL'))}">${ICON_ARR_R}</button></div>
       </div>
       <div class="dls-row" id="dlrow">${dl.map(d => dealCard(d, d === sp)).join('')}</div>
@@ -1755,7 +1766,7 @@ function cardShow(btn) {
   pre.src = want;
   img.classList.add('out');
   const swap = () => { if (img.dataset.cur !== want) return;
-    img.src = want; img.alt = (name ? name.textContent + ' — ' : '') + btn.dataset.cname; img.classList.remove('out'); };
+    img.src = want; img.alt = (name ? name.textContent + ', ' : '') + btn.dataset.cname; img.classList.remove('out'); };
   const ready = pre.decode ? pre.decode().catch(() => {}) : Promise.resolve();
   Promise.all([ready, new Promise(r => setTimeout(r, 110))]).then(swap);
 }
@@ -1917,9 +1928,9 @@ function detailView(p) {
   const hs = histSeries(p, SEL.storage, SEL.size);
   let verdict = '';
   if (hs.length > 1 && lo != null && hs[hs.length - 1].v === lo) {
-    const low = Math.min(...hs.map(v => v.v)), pct = (lo - low) / low * 100;
+    const lowPt = hs.reduce((a, b) => b.v < a.v ? b : a), low = lowPt.v, pct = (lo - low) / low * 100;
     verdict = lo <= low ? `<span class="hp good">${esc(x('histLow').replace('{d}', dmy(hs[0].d).slice(0, 5)))}</span>`
-      : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)))}</span>`;
+      : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)).replace('{d}', dmy(lowPt.d).slice(0, 5)))}</span>`;
   }
   // Every finish the maker lists. The picture follows the choice where a colour has its own
   // photo; where it does not, the main shot stays and the swatch still answers the real
@@ -1976,19 +1987,16 @@ function detailView(p) {
       <div class="pgrid">
         <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
         <div class="pside">
-          <!-- No colour picker. Shops spell one finish eight different ways - Titanium Silverblue,
-               Titanium Silver Blue, Silver Blue Titanium - so the row filled with near-duplicate
-               chips that all led to the same phone. Capacity is the choice that moves the price. -->
-
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
+            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ', ' + esc(x('notSold'))}"
+              class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
           ${bands.length > 1 ? `<div class="og"><label>${esc(t('f.band'))}</label>
             <div class="bs">${bands.map(bv => `<button data-band="${esc(bv)}" class="${bv === SEL.band ? 'on' : ''}${sold(p, 'band', bv) ? '' : ' na'}"${sold(p, 'band', bv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${bv === SEL.band}">${esc(bv)}</button>`).join('')}</div></div>` : ''}
           ${sizes.length > 1 ? `<div class="og"><label>${esc(t('f.screen'))}</label>
             <div class="bs">${sizes.map(sv => `<button data-size="${sv}" class="${sv === SEL.size ? 'on' : ''}${sold(p, 'size', sv) ? '' : ' na'}"${sold(p, 'size', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.size}">${esc(inch(sv))}</button>`).join('')}</div></div>` : ''}
           ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
-          ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
-            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ' — ' + esc(x('notSold'))}"
-              class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
           ${stors.length > 1 ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
@@ -2013,11 +2021,10 @@ function detailView(p) {
 
     ${!rows.length ? '' : `<h2 class="sh" id="buy">${esc(x('offersTitle'))} <em>${rows.length}</em></h2>`}
     ${rows.length ? `<ol class="olist" id="offList">
-      ${rows.map((o, i) => offerRow(o, lo, i, p.variantUnit, i >= OFFER_PEEK ? 'more' : '', p)).join('')}
+      ${rows.slice(0, OFFER_PEEK).map((o, i) => offerRow(o, lo, i, p.variantUnit, '', p)).join('')}
     </ol>
-    ${rows.length > OFFER_PEEK ? `<button class="expand" data-expand="offList" aria-expanded="false" aria-controls="offList">
-      ${esc(x('showAll'))} <b class="num">${rows.length}</b></button>` : ''}
-    ${offersFor(p).length > rows.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffers'))} → <b class="num">${offersFor(p).length}</b></a></p>` : ''}`
+    ${rows.length > OFFER_PEEK || offersFor(p).length > rows.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffersN')
+      .replace('{n}', offersFor(p).length).replace('{N}', nx(offersFor(p).length, 'offersLbl')).replace('{from}', fromShops(shopCount(offersFor(p)))))} →</a></p>` : ''}`
       : ''}
     ${offs.length ? `<p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>` : ''}
 
@@ -2207,7 +2214,7 @@ const seenTag = o => {
   if (!o.seen) return ` <i class="stale" title="${esc(x('handTip'))}">${esc(x('handSeen'))}</i>`;
   if (o.seen === (P.generated || '').slice(0, 10)) return '';
   const d = o.seen.slice(8, 10) + '.' + o.seen.slice(5, 7);
-  return ` <i class="stale" title="${esc(x('seenTip'))}">${esc(d)}</i>`;
+  return ` <i class="stale" title="${esc(x('seenTip'))}">${esc(x('seenOn').replace('{d}', d))}</i>`;
 };
 
 /* ================= all offers for one model ================= */
@@ -2336,7 +2343,7 @@ function offersView(p) {
       <span class="t"><img src="${esc(colorPhoto(p, OSEL.color) || THUMB(p.id))}" alt="" loading="lazy"></span>
       <div>
         <h1>${esc(fullName(p))}${nameTag(p)}</h1>
-        <p class="ofsub">${esc(x('allOffers'))} · <b class="num">${all.length}</b> ${esc(plw(all.length, 'offersLbl'))} · <b class="num">${shopCount(all)}</b> ${esc(plw(shopCount(all), 'shops'))}</p>
+        <p class="ofsub">${esc(nx(all.length, 'offersLbl') + ' ' + fromShops(shopCount(all)))}</p>
       </div>
     </div>
     <div class="offilters">
@@ -2545,34 +2552,34 @@ function render(keepScroll) {
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');
-  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' — Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
+  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
     const y = window.scrollY;
     main.innerHTML = offersView(byId(mo[1]));
-    document.title = x('allOffers') + ' — ' + fullName(byId(mo[1]));
+    document.title = x('allOffers') + ' | ' + fullName(byId(mo[1]));
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
-  else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' — Better.am'; window.scrollTo(0, 0); }
-  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' — Better.am'; window.scrollTo(0, 0); }
-  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' — Better.am'; window.scrollTo(0, 0); }
+  else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/blog' || h.startsWith('/blog/')) {
     const a = h.startsWith('/blog/') && BLOG.find(b => b.id === h.slice(6));
     main.innerHTML = a ? postView(a) : blogView();
-    document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' — Better.am';
+    document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' | Better.am';
     window.scrollTo(0, 0);
   }
-  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' — Better.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
-  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' — Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' | Better.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
+  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/search') {
     main.innerHTML = catalogView(); refresh();
-    document.title = (st.q.trim() ? st.q.trim() + ' — ' : '') + t('nav.search_placeholder') + ' — Better.am';
+    document.title = (st.q.trim() ? st.q.trim() + ' | ' : '') + t('nav.search_placeholder') + ' | Better.am';
     window.scrollTo(0, keepScroll ? window.scrollY : 0);
   }
   else {
     main.innerHTML = catalogView(); refresh();
     // the section row scrolls sideways; the one you are in may sit past the edge or under "More"
     const on = $('.ctabs .on'); if (on) on.parentNode.scrollLeft = on.offsetLeft - on.parentNode.offsetLeft - 14;
-    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' — ' : '') + 'Better.am';
+    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' | ' : '') + 'Better.am';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
     // to the front page landed ~1480px past where you left, while a category page was exact.
@@ -2760,14 +2767,6 @@ document.addEventListener('click', e => {
       cb.textContent = on ? t('detail.in_compare') : t('detail.add_compare');
       cb.classList.toggle('ghost', on);
     }
-    return;
-  }
-  const ex = e.target.closest('[data-expand]');
-  if (ex) {
-    const list = document.getElementById(ex.dataset.expand);
-    const open = list.classList.toggle('all');
-    ex.setAttribute('aria-expanded', open);
-    ex.firstChild.textContent = (open ? x('showLess') : x('showAll')) + ' ';
     return;
   }
   const pgb = e.target.closest('[data-page]');

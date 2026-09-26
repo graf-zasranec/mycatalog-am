@@ -109,6 +109,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .topnav .logo .wm{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.3em;letter-spacing:-.03em;line-height:1}
 .topnav .logo em{font-style:normal;color:var(--brand)}
 .nav{display:flex;gap:2px;flex:none}
+.nav .ns{display:none}   /* a shorter label, for phones (see max-width:640px) */
 .nav a{padding:8px 12px;border-radius:0;font-weight:600;font-size:0.875rem;color:var(--muted);
   box-shadow:inset 0 -1px 0 transparent}
 .nav a:hover{color:var(--text)}
@@ -232,9 +233,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ---- cover: the phone overlaps the headline, apricot rule ties them ---- */
 .mast-hero{padding-block:8px 0}
-.cv-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--brand);display:flex;align-items:center;gap:10px}
-.cv-eyebrow::after{content:"";flex:1;height:1px;background:var(--line2)}
 .cv{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin-top:18px}
 .cv-h{font-size:clamp(34px,5.4vw,68px);font-weight:800;letter-spacing:-.05em;line-height:.9;max-width:16ch}
 .cv-h em{font-style:normal;color:var(--brand)}
@@ -245,8 +243,10 @@ button,input,select,textarea{font:inherit;color:inherit}
    serves a 58 px page title and a 15 px card title alike. */
 .ny{display:inline-flex;align-items:center;justify-content:center;margin-left:.45em;padding:0 .5em;height:1.75em;border-radius:.45em;
   font-family:var(--mono);font-size:max(10.5px,.5em);font-weight:600;letter-spacing:.04em;line-height:1;
-  color:var(--brand);background:var(--brand-soft);box-shadow:inset 0 0 0 1px var(--line2);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent);
+  color:var(--muted);background:transparent;box-shadow:inset 0 0 0 1px var(--line2);
   vertical-align:middle;white-space:nowrap;text-decoration:none}
+/* ^ an older year is grey; only the current year is coloured (green, below). Red is kept for
+   buttons, links and price differences (owner, 2026-09-26). */
 .ny.cur{color:var(--good);background:color-mix(in srgb,var(--good) 14%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--good) 30%,transparent)}
 .ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
 .pname .ny{font-size:max(12px,.3em);vertical-align:.55em;letter-spacing:.06em}
@@ -270,7 +270,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .spot-c{position:relative;overflow:hidden;min-height:340px;padding:24px;align-content:space-between;gap:18px;color:#fff;
   background:radial-gradient(120% 90% at 85% 25%,#6B2B2F 0%,#3A1C22 45%,#1B1116 100%);box-shadow:var(--shadow-m)}
 .spot-c .spot-e{color:#FFB4AC;position:relative}
-.spot-c img{position:absolute;right:-36px;top:96px;width:180px;height:220px;object-fit:contain;
+/* inside the card, bottom right, beside the name and price (max 60%), clear of the text above */
+.spot-c img{position:absolute;right:14px;bottom:18px;width:38%;max-width:170px;aspect-ratio:1;height:auto;object-fit:contain;
   filter:drop-shadow(0 30px 40px rgba(0,0,0,.55));transition:transform .35s cubic-bezier(.2,.8,.2,1)}
 .spot-c:hover img{transform:translate(-6px,-6px) rotate(-2deg)}
 .spot-pct{position:relative;font-size:68px;font-weight:800;letter-spacing:-.05em;line-height:.9}
@@ -390,7 +391,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .dls{margin-top:34px;outline:none}
 .dls-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:14px}
 .dls-hd h2{font-size:26px;font-weight:800;letter-spacing:-.035em}
-.dls-hd p{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
 .dls-arr{display:flex;gap:8px}
 .dls-arr button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);background:var(--surface);color:var(--text);
   display:grid;place-items:center;cursor:pointer;transition:border-color .15s,opacity .15s}
@@ -770,8 +770,15 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 @media (max-width:900px){
   .pgrid{grid-template-columns:1fr;gap:18px}
   .pshotwrap{position:static;display:grid;place-items:center;min-height:0;order:-1}
-  .pshotwrap img{position:static;width:auto;height:auto;max-width:100%;max-height:260px}
+  .pshotwrap img{position:static;width:auto;height:auto;max-width:100%;max-height:190px}
   .rail2,.ends2{max-width:none}
+  /* The price first (owner, 2026-09-26): on a phone it sat 954 px down an 812 px screen, under the
+     photo and every option. The options column dissolves into this one-column grid so the price
+     and its buttons come right under the name, then the photo, then the options. */
+  .pside{display:contents}
+  .pprice2{order:-3}
+  .pcta{order:-2}
+  .pshotwrap{order:-1}
 }
 
 /* where to buy */
@@ -1097,7 +1104,7 @@ a.store:hover .nm{color:var(--brand)}
 .hist-top>b{font-size:26px;font-weight:800;letter-spacing:-.03em}
 .hp{font-weight:700;font-size:12.5px;padding:4px 10px;border-radius:var(--pill)}
 .hp.good{background:var(--good-soft);color:var(--good)}
-.hp.warn{background:var(--brand-soft);color:var(--brand)}
+.hp.warn{background:var(--surface2);color:var(--body)}
 .hist-sub{margin:4px 0 0;color:var(--muted);font-size:13px}
 .hist-c{position:relative;margin-top:8px;touch-action:pan-y}
 .hist-c svg{display:block;width:100%;height:210px;overflow:visible;cursor:crosshair}
@@ -1120,12 +1127,6 @@ a.store:hover .nm{color:var(--brand)}
 .hist-tip .dn,.hist-tip .up{font-weight:700}
 
 /* ---- expandable offer list + all-offers page ---- */
-.olist .more{display:none}
-.olist.all .more{display:list-item}
-.expand{margin-top:10px;height:42px;padding:0 18px;border-radius:var(--pill);border:1px solid var(--line2);
-  background:var(--surface);color:var(--text);font-weight:600;font-size:0.875rem;cursor:pointer}
-.expand:hover{border-color:var(--text)}
-.expand b{color:var(--brand)}
 .allofflink{margin-top:10px;font-size:0.875rem}
 .allofflink a{color:var(--brand);font-weight:700;border-bottom:1px solid currentColor;padding-bottom:1px}
 .ofhead{display:flex;align-items:center;gap:18px;margin:14px 0 6px}
@@ -1220,7 +1221,8 @@ a.store:hover .nm{color:var(--brand)}
   .topnav{gap:4px 6px;padding-block:8px}
   .topnav .logo{order:1;font-size:25px}
   .nav{order:2;flex:none;margin-left:auto}
-  .nav a{padding:8px 8px;font-size:0.8125rem}
+  .nav a{padding:8px 5px;font-size:0.8125rem}
+  .nav .nl{display:none}.nav .ns{display:inline}
   .mast-r{display:contents}
   .th{order:3;margin-left:0}
   .srch{order:4;flex:1 1 55%}
@@ -1264,7 +1266,19 @@ a.store:hover .nm{color:var(--brand)}
 @keyframes sheetin{from{transform:translateY(100%)}to{transform:none}}
 /* a fold's cover screen (280px): the logo and three nav links (catalogue, compare, blog) do not
    fit one row - the nav takes a row of its own under the logo. Last in the sheet so it wins. */
-@media (max-width:360px){.nav{order:6;flex:1 1 100%;margin-left:0;justify-content:space-between}.nav a{white-space:nowrap;padding:8px 4px;font-size:.75rem}}
+/* 360-380 px phones (most Android): logo, menu and theme still share the first row - 16 px
+   tighter, measured: Armenian needed 342 px of 332 at 360 */
+@media (max-width:380px){.nav a{padding:8px 3px}.topnav{column-gap:4px}}
+/* the narrowest phones: menu on its own row, languages beside the logo, search across the whole row */
+@media (max-width:340px){.nav{order:6;flex:1 1 100%;margin-left:0;justify-content:space-between}.nav a{white-space:nowrap;padding:8px 4px;font-size:.75rem}.langs{order:2;margin-left:auto}.srch{flex:1 1 100%}}
+/* Armenian is written, not shouted (owner, 2026-09-26). IBM Plex Mono has no Armenian letters, so
+   these small labels fell back to widely spaced capitals of another font: hard to read, and wide
+   enough to wrap on a phone. Russian and English keep their small capitals. */
+:lang(hy) :is(.spot-e,.spot-bot small,.cv-bar span,.soon-tag,.soon .po,.dl small,.cq h3,.badge,.eyebrow,/* A figure the data itself flags as unconfirmed. Quiet - it qualifies the number,it does not
+   shout at it - and it carries its reason in a title so it is not a mystery mark. */
+.unsure,h2.sh,.pmeta,.og>label,.pprice2 .lb,.pprice2 .shopn,.cwith h3,.cwt em,.cmlbl,.bl-hd p,.pprice s,.ofl,/* Out of stock was muted grey - the quietest thing on the row,under a price you cannot buy.
+   It is the one fact that makes the rest of the row useless,so it is the loudest. */
+.orow .oos){text-transform:none;letter-spacing:.01em}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>

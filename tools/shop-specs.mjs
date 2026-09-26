@@ -96,6 +96,16 @@ for (const p of gaps) for (const o of O[p.id] || []) {
 }
 
 const log = { filled: [], same: 0, conflict: [] };
+// A shop's typo must not become a spec: zigzag gave one Sony earbud 314 g. A weight the category
+// cannot have is dropped and printed. Earbuds are per bud, as everywhere in the catalogue, so a
+// "31 g" that is the buds plus their case is dropped too rather than published as one bud.
+const RANGE_G = { watch: [10, 150], laptop: [700, 5000], speaker: [50, 45000], headphones: [15, 500] };
+const plausibleG = (p, g) => {
+  if (g == null) return null;
+  const [lo, hi] = p.category === 'headphones' && p.audio?.form === 'tws' ? [2, 15] : RANGE_G[p.category] || [1, 1e6];
+  if (g >= lo && g <= hi) return g;
+  log.implausible = (log.implausible || 0) + 1; console.log(`implausible weight ${p.id}: ${g} g, not used`); return null;
+};
 for (const e of Object.values(got)) {
   const p = P.find(x => x.id === e.id), s = e.spec;
   if (!p || !s) continue;
@@ -104,12 +114,13 @@ for (const e of Object.values(got)) {
   const codes = `${p.name} ${(p.aliases || []).join(' ')}`.split(/[\s_(),/]+/).map(t => t.toLowerCase().replace(/[^a-z0-9]/g, ''))
     .filter(t => t.length >= 5 && /\d/.test(t) && /[a-z]/.test(t) && !/^\d+(gb|tb|inch)$/.test(t));
   const url = (Object.keys(got).find(k => got[k] === e) || '').split('#')[0].toLowerCase().replace(/[^a-z0-9]/g, '');
-  if (codes.length && !codes.some(c => url.includes(c))) { log.foreign = (log.foreign || 0) + 1; continue; }
+  // a maker tool (asus-specs, garmin-specs) matched the model itself and marks its entries maker
+  if (!e.maker && codes.length && !codes.some(c => url.includes(c))) { log.foreign = (log.foreign || 0) + 1; continue; }
   const sizes = new Set((p.variants || []).map(x => x.size).filter(Boolean));
   const v = { 'display.size': inch(s['Screen Size']), 'display.resolution': res(s['Screen Resolution']), 'chipset.name': cpu(s.CPU),
     'display.type': cat === 'tv' ? ((String(s['Display type'] || '').match(/^(QLED|OLED)$/) || [])[1] || (/^D?LED$/.test(s['Display type'] || '') ? 'LED' : null))
       : (String(s['Display type'] || '').match(/^(IPS|TN|OLED|VA|WVA)\b/) || [])[1] || null, 'display.refresh': +(String(s['Refresh rate'] || '').match(/(\d{2,3})\s*Hz/i) || [])[1] || null,
-    'body.weight': grams(s.Weight), 'connectivity.bluetooth': bt(s.Bluetooth), 'battery.capacity': cat === 'watch' ? mah(s.Battery) : null };
+    'body.weight': plausibleG(p, grams(s.Weight)), 'connectivity.bluetooth': bt(s.Bluetooth), 'battery.capacity': cat === 'watch' ? mah(s.Battery) : null };
   for (const [f, val] of Object.entries(v)) {
     if (val == null || (sizes.size > 1 && f.startsWith('display.'))) continue;
     const [a, b] = f.split('.'), o = p[a] ||= {};
@@ -118,7 +129,7 @@ for (const e of Object.values(got)) {
     else log.conflict.push(`${p.id} ${f}: ours ${o[b]}, ${e.shop} page ${val}`);
   }
 }
-console.log(`filled ${log.filled.length}, confirmed ${log.same}, conflicts ${log.conflict.length}, pages of another model skipped ${log.foreign || 0}`);
+console.log(`filled ${log.filled.length}, confirmed ${log.same}, conflicts ${log.conflict.length}, pages of another model skipped ${log.foreign || 0}, implausible weights dropped ${log.implausible || 0}`);
 for (const l of log.conflict) console.log('conflict', l);
 if (write) fs.writeFileSync('data/phones.json', JSON.stringify(P, null, 2) + '\n');
 
