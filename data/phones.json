@@ -11816,6 +11816,15 @@
     "summaryEn": "Bose SoundLink Flex.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 590
+    },
+    "connectivity": {
+      "bluetooth": "4.2"
+    },
+    "sources": [
+      "https://web.archive.org/web/20260917082145/https://www.bose.com/p/service-service-all-products/bose-soundlink-flex-bluetooth-speaker/SLFLX-SPEAKERWIRELESS-CYGRN-WW.html"
     ]
   },
   {
@@ -11902,6 +11911,15 @@
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "body": {
+      "weight": 662
+    },
+    "connectivity": {
+      "bluetooth": "4.2"
+    },
+    "sources": [
+      "https://web.archive.org/web/20260620235644/https://www.bose.com/p/refurbished/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS-FR.html"
     ]
   },
   {
@@ -34800,7 +34818,13 @@
     "year": 2021,
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 5
+    },
+    "sources": [
+      "https://web.archive.org/web/20250725171933/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-graphite-sm-r177nzkaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-2-pro",
@@ -34837,7 +34861,13 @@
     "year": 2022,
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 5.5
+    },
+    "sources": [
+      "https://web.archive.org/web/20250726074413/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-pro-graphite-sm-r510nzaaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-3",
@@ -36587,7 +36617,16 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2020
+    "year": 2020,
+    "body": {
+      "weight": 5.6
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "sources": [
+      "https://web.archive.org/web/20230621000456/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-live-mystic-blue-sm-r180nzbaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-pro-r190",
@@ -36622,9 +36661,13 @@
       "bluetooth": "5.0"
     },
     "body": {
-      "ip": "IPX7"
+      "ip": "IPX7",
+      "weight": 6.3
     },
-    "summaryEn": "The 2021 Pro buds — still the only Galaxy Buds rated IPX7."
+    "summaryEn": "The 2021 Pro buds — still the only Galaxy Buds rated IPX7.",
+    "sources": [
+      "https://web.archive.org/web/20221024205724/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-pro-violet-sm-r190nzvaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-fe",
@@ -36657,7 +36700,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 26.6
+    },
+    "sources": [
+      "https://web.archive.org/web/20251211092605/https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch-fe-40mm-silver-bluetooth-sm-r861nzsaeua/"
+    ]
   },
   {
     "id": "samsung-galaxy-s25",
@@ -38846,6 +38895,12 @@
     "summaryEn": "The first 3 nm smartwatch chip, and the sensor array that came with it.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 33.8
+    },
+    "sources": [
+      "https://web.archive.org/web/20260306063049/https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch7-44mm-green-lte-sm-l315fzgaeua/"
     ]
   },
   {
@@ -39684,12 +39739,16 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "refresh": 240
+      "refresh": 240,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Samsung LS27BG400EUXEN.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20231125021313/https://www.samsung.com/uk/monitors/gaming/odyssey-g4-g40b-27-inch-ls27bg400euxxu/"
     ]
   },
   {
@@ -39817,12 +39876,16 @@
       "touch": false,
       "size": 32,
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Samsung LS32D700EAU.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20260903121201/https://www.samsung.com/uk/monitors/high-resolution/viewfinity-s7-32-inch-uhd-hdr10-ls32d700eauxxu/"
     ]
   },
   {
@@ -39882,12 +39945,16 @@
       "touch": false,
       "size": 34,
       "resolution": "3440 x 1440",
-      "refresh": 100
+      "refresh": 100,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Samsung LS34C500GAU.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20240528182507/https://www.samsung.com/uk/monitors/high-resolution/viewfinity-s5-s50gc-34-inch-ultra-wqhd-high-resolution-ls34c500gauxxu/"
     ]
   },
   {
@@ -40046,12 +40113,17 @@
     "display": {
       "touch": false,
       "size": 24,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "VA",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung Odyssey G3 24” S24AG304NR.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20220209103145/https://www.samsung.com/uk/monitors/gaming/odyssey-g30a-24-inch-144hz-freesync-ls24ag302nuxxu/"
     ]
   },
   {
@@ -40078,12 +40150,16 @@
       "touch": false,
       "size": 24.5,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 240
     },
     "battery": {},
     "summaryEn": "Samsung Odyssey G4 LS25BG400EIXCI.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20241206091935/https://www.samsung.com/uk/monitors/gaming/odyssey-g4-g40b-25-inch-ls25bg400euxxu/"
     ]
   },
   {
@@ -40145,12 +40221,17 @@
     ],
     "display": {
       "size": 34,
-      "resolution": "3440 x 1440"
+      "resolution": "3440 x 1440",
+      "type": "OLED",
+      "refresh": 175
     },
     "battery": {},
     "summaryEn": "Samsung Odyssey G8 OLED 34” S34BG850SU.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20241120183951/https://www.samsung.com/uk/monitors/gaming/odyssey-oled-g8-g85sb-34-inch-175hz-curved-ultra-wqhd-ls34bg850suxxu/"
     ]
   },
   {
