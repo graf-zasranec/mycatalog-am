@@ -1888,7 +1888,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 4.3
+    },
+    "sources": [
+      "https://www.apple.com/airpods-5/specs/"
+    ]
   },
   {
     "id": "apple-airpods-max-2",
@@ -5538,7 +5544,13 @@
     "year": 2021,
     "body": {
       "weight": 4
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/111863"
+    ]
   },
   {
     "id": "apple-ultra-2",
@@ -7019,6 +7031,9 @@
       "conn": "wired",
       "plug": "usb-c",
       "gaming": true
+    },
+    "connectivity": {
+      "bluetooth": "none, wired USB-C"
     }
   },
   {
@@ -7509,6 +7524,9 @@
       "conn": "wired",
       "plug": "3.5",
       "gaming": true
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -8369,6 +8387,9 @@
       "conn": "wired",
       "plug": "3.5",
       "gaming": true
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -8401,6 +8422,9 @@
       "conn": "wired",
       "plug": "3.5",
       "gaming": true
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -11384,7 +11408,8 @@
     },
     "battery": {},
     "body": {
-      "ip": "IPX4"
+      "ip": "IPX4",
+      "weight": 5
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -11405,6 +11430,9 @@
     "summaryEn": "Beats earbuds that pair as easily with Android as with iPhone.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.beatsbydre.com/earbuds/studio-buds-plus-wireless-noise-cancelling"
     ]
   },
   {
@@ -26417,6 +26445,9 @@
       "conn": "wired",
       "plug": "3.5",
       "gaming": true
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -26453,6 +26484,9 @@
     },
     "body": {
       "weight": 245
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -26710,7 +26744,10 @@
       "conn": "wired",
       "plug": "3.5"
     },
-    "year": 2018
+    "year": 2018,
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "jbl-tune-520-bt",
@@ -35028,6 +35065,9 @@
       "form": "in-ear",
       "conn": "wired",
       "plug": "usb-c"
+    },
+    "connectivity": {
+      "bluetooth": "none, wired USB-C"
     }
   },
   {
@@ -42521,7 +42561,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 227
+    },
+    "sources": [
+      "https://us.sennheiser-hearing.com/products/accentum-plus"
+    ]
   },
   {
     "id": "sennheiser-accentum-true-wireless-atw1",
@@ -42597,7 +42643,13 @@
     "year": 2023,
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 222
+    },
+    "sources": [
+      "https://us.sennheiser-hearing.com/products/accentum-wireless"
+    ]
   },
   {
     "id": "sennheiser-hd-450bt",
@@ -42629,7 +42681,13 @@
       "form": "full",
       "conn": "wireless"
     },
-    "year": 2019
+    "year": 2019,
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "sources": [
+      "https://us.sennheiser-hearing.com/products/hd-450bt"
+    ]
   },
   {
     "id": "sennheiser-hd-599",
@@ -42667,7 +42725,10 @@
     },
     "sources": [
       "https://us.sennheiser-hearing.com/products/hd-599"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "sennheiser-hd-620s",
@@ -42700,7 +42761,10 @@
       "conn": "wired",
       "plug": "3.5"
     },
-    "year": 2024
+    "year": 2024,
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "sennheiser-momentum-4",
@@ -43667,7 +43731,13 @@
       "conn": "wireless",
       "gaming": true
     },
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 347
+    },
+    "sources": [
+      "https://www.playstation.com/content/dam/global_pdc/cs/corporate/support/manuals/accessories/ps5-accessories/pulse-elite-wireless-headset/CFI-ZWH2_PS5_SG_Web$cs.pdf"
+    ]
   },
   {
     "id": "sony-ps5-slim",
@@ -43858,7 +43928,13 @@
     "year": 2021,
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 5.4
+    },
+    "sources": [
+      "https://helpguide.sony.net/mdr/wfc500/v1/en/contents/TP1000449913.html"
+    ]
   },
   {
     "id": "sony-wf-c510-yc",
@@ -43891,10 +43967,15 @@
       "conn": "wireless"
     },
     "year": 2024,
-    "body": {},
+    "body": {
+      "weight": 4.6
+    },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "sources": [
+      "https://helpguide.sony.net/mdr/2982/v1/en/contents/TP1001614209.html"
+    ]
   },
   {
     "id": "sony-wf-c700n-gz-e",
@@ -43966,9 +44047,13 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "ip": "IPX4"
+      "ip": "IPX4",
+      "weight": 5.2
     },
-    "summaryEn": "Sony's mid-range ANC buds, now with a clear case and a much better call mic."
+    "summaryEn": "Sony's mid-range ANC buds, now with a clear case and a much better call mic.",
+    "sources": [
+      "https://helpguide.sony.net/mdr/2986/v1/en/contents/TP1001829716.html"
+    ]
   },
   {
     "id": "sony-wh-1000xm5",
@@ -44167,7 +44252,13 @@
     },
     "body": {
       "weight": 330
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "sources": [
+      "https://helpguide.sony.net/mdr/295960/v1/en/contents/TP1000670455.html"
+    ]
   },
   {
     "id": "sony-whult900n",
@@ -44203,7 +44294,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 255
+    },
+    "sources": [
+      "https://helpguide.sony.net/mdr/2981/v1/en/print.pdf"
+    ]
   },
   {
     "id": "sony-xperia-10v",
