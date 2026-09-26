@@ -20829,7 +20829,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "3072x1920"
     },
     "battery": {},
     "summaryEn": "Honor MagicBook Pro 16\" Ultra 5-125H 24/1 W11H /5301AJJG.",
@@ -20840,7 +20841,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core Ultra 5-125H"
-    }
+    },
+    "body": {
+      "weight": 1830
+    },
+    "sources": [
+      "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/"
+    ]
   },
   {
     "id": "honor-magicbook-x16-2025",
@@ -20875,7 +20882,13 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core i5-13420H"
-    }
+    },
+    "body": {
+      "weight": 1680
+    },
+    "sources": [
+      "https://www.honor.com/global/laptops/honor-magicbook-x16-2025/spec/"
+    ]
   },
   {
     "id": "honor-magicbook-x16-2026-16-wuxga-ssd1tb",
@@ -20918,7 +20931,13 @@
     "year": 2026,
     "chipset": {
       "name": "Intel Core Ultra 5-125H"
-    }
+    },
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/"
+    ]
   },
   {
     "category": "laptop",
@@ -32422,13 +32441,19 @@
     "os": "Windows 11",
     "chipset": {
       "name": "Intel Core i7-1185G7"
-    }
+    },
+    "body": {
+      "weight": 1542
+    },
+    "sources": [
+      "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-laptop-4/documents/Ecoprofile_SurfaceLaptop4-15inch-Metal.pdf"
+    ]
   },
   {
     "id": "microsoft-surface-go-2",
     "category": "laptop",
     "brand": "Microsoft",
-    "name": "Surface Go 2",
+    "name": "Surface Laptop Go 2",
     "aliases": [
       "Նոթբուք Microsoft Surface Go 2 8ԳԲ/256ԳԲ"
     ],
@@ -32454,7 +32479,13 @@
       "popularity"
     ],
     "os": "Windows 11",
-    "year": 2020
+    "year": 2020,
+    "body": {
+      "weight": 1127
+    },
+    "sources": [
+      "https://news.microsoft.com/wp-content/uploads/prod/2022/06/Surface-Laptop-Go-2-Fact-Sheet.pdf"
+    ]
   },
   {
     "category": "laptop",
@@ -32473,7 +32504,7 @@
       "type": "PixelSense Flow",
       "refresh": 120,
       "touch": true,
-      "resolution": "1440x2304"
+      "resolution": "2304x1536"
     },
     "chipset": {
       "name": "Snapdragon X Plus"
@@ -32507,6 +32538,12 @@
       "Microsoft Surface Laptop 7",
       "Surface Laptop 7",
       "Surface Laptop 7 13.8"
+    ],
+    "body": {
+      "weight": 1340
+    },
+    "sources": [
+      "https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-product-and-services/surface/surface-laptop/surface-laptop-7th-edition/MSFT-Microsoft-Surface-Laptop-7th-Edition-Fact-Sheet.pdf"
     ]
   },
   {
