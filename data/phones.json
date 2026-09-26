@@ -272,7 +272,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Acer Aspire A16-51GM-71YF.",
@@ -281,7 +282,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-150U"
-    }
+    },
+    "body": {
+      "weight": 1880
+    },
+    "sources": [
+      "https://www.acer.com/gb-en/laptops/aspire/aspire-intel/pdp/NX.KTJEK.00D"
+    ]
   },
   {
     "id": "acer-aspire-a514-56m-770k",
@@ -304,7 +311,8 @@
       }
     ],
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Acer Aspire A514-56M-770K.",
@@ -313,7 +321,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-1355U"
-    }
+    },
+    "body": {
+      "weight": 1480
+    },
+    "sources": [
+      "https://www.acer.com/ae-en/laptops/aspire/aspire-5-intel/pdp/NX.KHCEM.002"
+    ]
   },
   {
     "id": "acer-aspire-al15-52",
@@ -532,11 +546,18 @@
         "priceAmd": 199900
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "1920x1080",
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "Acer Aspire Lite AL15-36P-32XP.",
     "unsure": [
       "popularity"
+    ],
+    "body": {},
+    "sources": [
+      "https://www.acer.com/us-en/laptops/aspire/aspire-lite/pdp/NX.DE2AA.001"
     ]
   },
   {
@@ -8260,7 +8281,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i5-12500H"
@@ -8281,6 +8303,12 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i5-12500H and Nvidia GeForce RTX 3050 4 GB.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 2600
+    },
+    "sources": [
+      "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f17-2022/techspec/"
     ]
   },
   {
@@ -9747,7 +9775,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1200"
     },
     "chipset": {
       "name": "AMD Ryzen 7 5800H"
@@ -9768,6 +9797,12 @@
     "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 5800H.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1880
+    },
+    "sources": [
+      "https://www.asus.com/bt/laptops/for-home/vivobook/vivobook-16x-m1603-amd-ryzen-5000-series/techspec/"
     ]
   },
   {
@@ -9823,7 +9858,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core Ultra 7 155H"
@@ -9844,6 +9880,12 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 7 155H and Nvidia GeForce RTX 3050 6 GB.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1900
+    },
+    "sources": [
+      "https://www.asus.com/us/laptops/for-home/everyday-use/asus-vivobook-pro-15-oled-q533/techspec/"
     ]
   },
   {
@@ -10131,6 +10173,12 @@
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 9 185H.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1500
+    },
+    "sources": [
+      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-s-16-oled-s5606/techspec/"
     ]
   },
   {
