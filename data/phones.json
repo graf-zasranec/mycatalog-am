@@ -207,7 +207,10 @@
     "unsure": [
       "popularity",
       "colors"
-    ]
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "acer-aspire-3-a325-45",
@@ -17518,7 +17521,8 @@
     "display": {
       "size": 43,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Hisense 43A7KQ.",
@@ -18776,7 +18780,8 @@
     "display": {
       "size": 65,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Hisense 65U7HQ.",
@@ -18976,7 +18981,8 @@
       }
     ],
     "display": {
-      "size": 65
+      "size": 65,
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Hisense 65UXKQ.",
@@ -19346,7 +19352,8 @@
     "display": {
       "size": 85,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Hisense 85A6BG.",
@@ -24856,7 +24863,8 @@
     "display": {
       "size": 15.6,
       "type": "IPS LCD",
-      "touch": false
+      "touch": false,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core 5 210H"
@@ -24882,7 +24890,10 @@
     "unsure": [
       "popularity",
       "colors"
-    ]
+    ],
+    "body": {
+      "weight": 2290
+    }
   },
   {
     "id": "hp-victus-15-fa0018nq",
@@ -26228,6 +26239,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 16500
     }
   },
   {
@@ -31094,7 +31108,8 @@
     "display": {
       "size": 55,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 55UR81006LJ.",
@@ -42287,7 +42302,8 @@
     "display": {
       "size": 98,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung UE98DU9000UXRU.",
@@ -43008,7 +43024,8 @@
     "display": {
       "size": 65,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-65XR80M2.",
@@ -43072,7 +43089,8 @@
     "display": {
       "size": 75,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-75XR50.",
@@ -44990,7 +45008,8 @@
     "display": {
       "size": 32,
       "type": "LED",
-      "resolution": "1366 x 768"
+      "resolution": "1366 x 768",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 32V35ME.",
@@ -45019,7 +45038,8 @@
     "display": {
       "size": 32,
       "type": "LED",
-      "resolution": "1366 x 768"
+      "resolution": "1366 x 768",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 32V35RE.",
@@ -45048,7 +45068,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43C350KE.",
@@ -45077,7 +45098,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43C350LE.",
@@ -45106,7 +45128,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43C350RE.",
@@ -45135,7 +45158,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43C450KE.",
@@ -45164,7 +45188,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43C450ME.",
@@ -45191,7 +45216,9 @@
       }
     ],
     "display": {
-      "size": 43
+      "size": 43,
+      "type": "QLED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43M450RE.",
@@ -45220,7 +45247,8 @@
     "display": {
       "size": 43,
       "type": "LED",
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 43V35RE.",
@@ -45249,7 +45277,8 @@
     "display": {
       "size": 50,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 50C350RE.",
@@ -45276,7 +45305,9 @@
       }
     ],
     "display": {
-      "size": 50
+      "size": 50,
+      "type": "QLED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 50M450RE.",
@@ -45304,7 +45335,8 @@
     ],
     "display": {
       "size": 50,
-      "type": "QLED"
+      "type": "QLED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 50M550LE.",
@@ -45336,7 +45368,8 @@
     "display": {
       "size": 50,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 50V37SE.",
@@ -45365,7 +45398,8 @@
     "display": {
       "size": 55,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 55C350NE.",
@@ -45394,7 +45428,8 @@
     "display": {
       "size": 55,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 55C350RE.",
@@ -45423,7 +45458,8 @@
     "display": {
       "size": 55,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 55C450ME.",
@@ -45514,7 +45550,9 @@
       }
     ],
     "display": {
-      "size": 55
+      "size": 55,
+      "type": "QLED",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Toshiba 55Z680SE.",
@@ -45543,7 +45581,8 @@
     "display": {
       "size": 65,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 65C350RE.",
@@ -45572,7 +45611,8 @@
     "display": {
       "size": 65,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 65C450ME.",
@@ -45631,7 +45671,9 @@
       }
     ],
     "display": {
-      "size": 65
+      "size": 65,
+      "type": "QLED",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Toshiba 65Z680SE.",
@@ -45692,7 +45734,8 @@
     "display": {
       "size": 75,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 75C350NE.",
@@ -45753,7 +45796,8 @@
     "display": {
       "size": 85,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 85C350NE.",
@@ -45781,7 +45825,8 @@
     ],
     "display": {
       "size": 85,
-      "type": "QLED"
+      "type": "QLED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 85M550LE.",
@@ -52073,7 +52118,9 @@
       }
     ],
     "display": {
-      "size": 65
+      "size": 65,
+      "type": "QLED",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Xiaomi S Pro Mini LED 65.",
