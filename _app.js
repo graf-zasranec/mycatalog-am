@@ -2318,7 +2318,8 @@ function offersView(p) {
     (!OSEL.ram || String(o.ram) === OSEL.ram) &&
     (!OSEL.size || String(o.size) === OSEL.size) &&
     (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim) &&
-    (!OSEL.color || String(o.color || '') === OSEL.color));
+    // an offer naming no colour is sold in every colour - pixel lists one row per build, any colour
+    (!OSEL.color || !o.color || o.color === OSEL.color));
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
   const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
 

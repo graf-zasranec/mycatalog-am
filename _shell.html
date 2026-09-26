@@ -718,6 +718,16 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
    wrap inside its card instead of stretching it. */
 .cwith{margin-top:22px}
 .pgrid>.cwith .cwrow{grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr))}
+/* One row of three as soon as the row can hold them (owner, 2026-09-26). At ~250 px a card, a photo
+   beside the text left 155 px for a name and its year, and "Google Pixel 9 Pro 2024" is 170 - so the
+   photo goes on top and the name keeps its line. Measured on the row, not the window: under the
+   photo the row is 457 px at a 901 px window and 796 at 1240+. Below 650 two cards cannot share a
+   row either, so under 600 it is one per row and never two-and-one. */
+.cwith{container-type:inline-size}
+@container (min-width:600px){
+  .pgrid>.cwith .cwrow{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cw{flex-direction:column;padding:10px}
+}
 .cwith h3{margin:0 0 10px;font-family:var(--mono);font-size:0.75rem;font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted)}
 .cwrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:10px}

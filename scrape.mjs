@@ -558,7 +558,9 @@ function istyleVariants(html) {
     const attr = {};
     for (const av of v.attribute_values || []) {
       const n = ((av.attribute || {}).name || {}).en;
-      if (n) attr[String(n).toLowerCase()] = (av.value || {}).en;
+      // 1 TB and 2 TB carry only an Armenian label, "1T" / "2T"
+      const val = (av.value || {}).en ?? String((av.value || {}).hy ?? '').replace(/^([0-9]+) *T$/i, '$1TB');
+      if (n) attr[String(n).toLowerCase()] = val;
     }
     // "No Sim" is the eSIM-only build and "1SIM" the one with a tray - the shop is counting
     // physical slots, so the wording is the opposite way round from every other site here.
@@ -1055,6 +1057,9 @@ if (process.argv[2] === '--selftest') {
     if (named.length !== 2 || named[0].color !== 'Cosmic Orange' || named[0].variant !== '?variant=8&color=6' || named[1].variant !== '?variant=8&color=9') {
       bad++; console.log('FAIL istyleVariants colours ' + JSON.stringify(named.map(r => [r.color, r.variant])));
     }
+    // 1 TB has only an Armenian label, "1T"
+    const tb = istyleVariants('&quot;variants&quot;:' + JSON.stringify([{ id: 1, price_override: 899000, attribute_values: [{ attribute: { name: { en: 'Internal Memory' } }, value: { hy: '1T', ru: null } }] }]).replace(/"/g, '&quot;'));
+    if (tb.length !== 1 || tb[0].storage !== 1024) { bad++; console.log('FAIL istyleVariants 1T ' + JSON.stringify(tb)); }
     if (v.length !== want.length) { bad++; console.log(`FAIL istyleVariants got ${v.length}, want ${want.length}`); }
     else for (let i = 0; i < want.length; i++)
       if (v[i].price !== want[i][0] || v[i].storage !== want[i][1] || v[i].esim !== want[i][2]) {
@@ -1946,12 +1951,15 @@ const SHOPS = {
         // this product's - the one whose price the page prints at the top - and every SKU in it
         // is a real offer: capacity and SIM build, each at its own price.
         const vs = istyleVariants(html);
+        const eOnly = /iphone 18 pro/i.test(name) || undefined;
         if (!vs.length) continue;
         for (const v of vs)
           out.push({ id, price: v.price, title: name, url: u + v.variant,
             color: v.color ? colorLoose(v.color, (phoneById[id] || {}).colors) || v.color : undefined,
             storage: v.storage ?? storageOf(name), ram: ramOf(name),
-            esim: v.esim, simFromPage: v.simFromPage, inStock: v.inStock });
+            // The iPhone 18 Pro pages state no SIM build: istyle sells them eSIM-only (owner,
+            // 2026-09-26). Only these - an iPhone 16 page without the field is the tray build.
+            esim: v.esim ?? eOnly, simFromPage: v.simFromPage ?? eOnly, inStock: v.inStock });
       }
       return out;
     }
