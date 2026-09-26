@@ -4888,7 +4888,8 @@
       }
     ],
     "body": {
-      "materials": "Aluminium unibody"
+      "materials": "Aluminium unibody",
+      "weight": 1230
     },
     "battery": {},
     "connectivity": {
@@ -4903,7 +4904,10 @@
       "Citrus",
       "Indigo"
     ],
-    "summaryEn": "The cheapest MacBook, on the A18 Pro chip rather than an M-series."
+    "summaryEn": "The cheapest MacBook, on the A18 Pro chip rather than an M-series.",
+    "sources": [
+      "https://www.apple.com/macbook-neo/specs/"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-2023-mtl73",
@@ -4941,7 +4945,13 @@
       "name": "Apple M3"
     },
     "os": "macOS",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 1550
+    },
+    "sources": [
+      "https://support.apple.com/en-us/117735"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-m4",
@@ -4975,7 +4985,13 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 1550
+    },
+    "sources": [
+      "https://support.apple.com/en-us/121552"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-m4-max",
@@ -5146,7 +5162,8 @@
       }
     ],
     "body": {
-      "materials": "Aluminium unibody"
+      "materials": "Aluminium unibody",
+      "weight": 1550
     },
     "battery": {},
     "connectivity": {
@@ -5159,7 +5176,10 @@
       "Silver",
       "Space Black"
     ],
-    "summaryEn": "The entry 14-inch Pro — XDR screen and 120 Hz on the base M5."
+    "summaryEn": "The entry 14-inch Pro — XDR screen and 120 Hz on the base M5.",
+    "sources": [
+      "https://www.apple.com/macbook-pro/specs/"
+    ]
   },
   {
     "id": "apple-macbook-pro-14-m5-max",
@@ -5345,7 +5365,13 @@
       "name": "Apple M3 Pro"
     },
     "os": "macOS",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 1610
+    },
+    "sources": [
+      "https://support.apple.com/en-us/117736"
+    ]
   },
   {
     "id": "apple-macbook-pro-16-mrw23",
@@ -5383,7 +5409,13 @@
       "name": "Apple M3 Max (14-core CPU)"
     },
     "os": "macOS",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 2160
+    },
+    "sources": [
+      "https://support.apple.com/en-us/117737"
+    ]
   },
   {
     "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",
