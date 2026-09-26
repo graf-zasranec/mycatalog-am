@@ -104,6 +104,10 @@ REM url lacks the product's model code is ignored, and a field already filled is
 REM a differing reading is printed as a conflict instead. Not a gate.
 for %%c in (laptop monitor headphones speaker watch tv) do node tools\shop-specs.mjs %%c --write
 
+REM Where each product sits inside its square photo, so the product page lines the photo up with
+REM the options beside it. Idempotent; picks up photos added by tools\cutout.py since last time.
+python tools\photo-box.py
+
 node build.mjs
 if errorlevel 1 (
   echo build failed

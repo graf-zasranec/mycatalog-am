@@ -450,6 +450,8 @@ function build({ inline, standalone }) {
     + `const BLOG=${JSON.stringify(BLOG)};\n`
     + `const DROPS=${JSON.stringify(DROPS)};\n`
     + `const COMPARE_WITH=${JSON.stringify(pairs(phones, PRICES.offers || {}))};\n`
+    // tools/photo-box.py: where each product sits inside its square cutout, for the product page
+    + `const PBOX=${fs.existsSync('data/photo-box.json') ? fs.readFileSync('data/photo-box.json', 'utf8').trim() : '{}'};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here

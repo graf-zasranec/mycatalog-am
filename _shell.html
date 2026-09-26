@@ -669,15 +669,16 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .pshotwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   filter:drop-shadow(0 30px 46px rgba(20,19,20,.20))}
 .pside{padding-top:8px}
-/* The options column ran 250 px below the photo, most of it the "compare with" cards. They sit
-   under the photo instead, side by side, and the options column spans both rows - so the photo,
-   the options and the cards finish level rather than leaving a hole under the picture. */
-/* from 901px: at 900 and under the page is one column (see max-width:900 below) */
+/* The photo box hugs the product, not its square canvas (owner, 2026-09-26: "pic and text should
+   be same level"). A cutout is a square with the product centred in it - 4% of air above a phone,
+   a fifth of the canvas above a laptop or a TV - so the product's top edge floated 30 to 150 px
+   below the first option. --t and --h come from data/photo-box.json (tools/photo-box.py): the box
+   takes the product's own height and the canvas is drawn shifted up by the air above it. */
 @media (min-width:901px){
-  .pgrid{grid-template-rows:auto 1fr}
-  .pshotwrap{grid-column:1;grid-row:1}
-  .pside{grid-column:2;grid-row:1/span 2}
-  .pgrid>.cwith{grid-column:1;grid-row:2;align-self:start;margin-top:0}
+  .pshotwrap{aspect-ratio:1 / var(--h,1);min-height:0}
+  .pshotwrap img{top:calc(var(--t,0) / var(--h,1) * -100%);bottom:auto;height:calc(100% / var(--h,1))}
+  .shot-note{top:calc(100% + 10px);bottom:auto}
+  .pside,.pside>:first-child,.pside>.og:first-child{padding-top:0;border-top:0}
 }
 .og{border-top:1px solid var(--line2);padding:13px 0}
 /* the first group sits right under the title: a rule above it separates nothing */
@@ -712,29 +713,21 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .pprice2 .pp-row>b{display:block;font-size:44px;font-weight:800;letter-spacing:-.045em;line-height:1.05;margin-top:8px}
 .pprice2 .shopn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:4px}
 .pcta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-/* "Compare with": the newer and the previous model, photo + name + price. Two across wherever two
-   cards of ~200 px fit, one above the other where they do not - auto-fit decides, so no width is
-   hard-coded and nothing can push the column wider than the screen. min-width:0 lets a long name
-   wrap inside its card instead of stretching it. */
-.cwith{margin-top:22px}
-.pgrid>.cwith .cwrow{grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr))}
-/* One row of three as soon as the row can hold them (owner, 2026-09-26). At ~250 px a card, a photo
-   beside the text left 155 px for a name and its year, and "Google Pixel 9 Pro 2024" is 170 - so the
-   photo goes on top and the name keeps its line. Measured on the row, not the window: under the
-   photo the row is 457 px at a 901 px window and 796 at 1240+. Below 650 two cards cannot share a
-   row either, so under 600 it is one per row and never two-and-one. */
-.cwith{container-type:inline-size}
-@container (min-width:600px){
-  .pgrid>.cwith .cwrow{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .cw{flex-direction:column;padding:10px}
-}
+/* "Compare with": one row under the photo and the options, on every screen (owner, 2026-09-26:
+   "wider, in one line, for every screen"). A card is a third of the row and never under 280 px,
+   the width where a phone name and its year still share a line beside the photo; where three do
+   not fit, the row scrolls sideways like the savings row on the home page instead of wrapping. */
+.cwith{margin-top:22px;grid-column:1/-1;min-width:0}
 .cwith h3{margin:0 0 10px;font-family:var(--mono);font-size:0.75rem;font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted)}
-.cwrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:10px}
-.cw{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:10px 12px;border:1.5px solid var(--line2);
+.cwrow{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(min(280px,100%),calc((100% - 20px) / 3));gap:10px;
+  overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.cw{display:flex;align-items:flex-start;gap:12px;min-width:0;scroll-snap-align:start;padding:10px 12px;border:1.5px solid var(--line2);
   border-radius:14px;background:var(--surface);color:var(--text);text-decoration:none;
   transition:border-color .12s}
 .cw:hover,.cw:focus-visible{border-color:var(--text)}
+/* inside the card: the scrolling row would clip a ring drawn outside it */
+.cw:focus-visible{outline-offset:-4px}
 .cw img{width:64px;height:64px;object-fit:contain;flex:none;align-self:center}
 /* text top-aligned: the role, name and price lines sit level across the row of cards */
 .cwt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}

@@ -1926,6 +1926,7 @@ function detailView(p) {
   // question - whether anyone in Armenia sells it. Crossed through when nobody does.
   const cols = p.colors || [];
   const shot = colorPhoto(p, SEL.color) || IMG(p.id);
+  const box = PBOX[p.id] || [0, 1000];   // the product inside its square photo, top and bottom in thousandths
   // A colour picked that has no photo of its own keeps the main shot, which is another colour -
   // said on the picture, or the swatch reads as broken ("I clicked Blue and it is still black").
   const otherShot = cols.length > 1 && SEL.color && !colorPhoto(p, SEL.color) && CIMG[p.id] && Object.keys(CIMG[p.id]).some(k => k !== 'main');
@@ -1973,7 +1974,7 @@ function detailView(p) {
       </div>
       <h1 class="pname">${esc(fullName(p))}${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
-        <div class="pshotwrap"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
+        <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
         <div class="pside">
           <!-- No colour picker. Shops spell one finish eight different ways - Titanium Silverblue,
                Titanium Silver Blue, Silver Blue Titanium - so the row filled with near-duplicate
