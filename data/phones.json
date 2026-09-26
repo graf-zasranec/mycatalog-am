@@ -13262,13 +13262,21 @@
         "priceAmd": 383000
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Dell Inspiron 7445.",
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 1710
+    },
+    "sources": [
+      "https://www.dell.com/support/manuals/en-us/inspiron-14-7445-2-in-1-laptop/inspiron-14-7445-2in1-owners-manual/dimensions-and-weight"
+    ]
   },
   {
     "id": "dell-led-e2020h",
@@ -27629,7 +27637,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i5-1335U"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/Product/IdeaPad/IdeaPad_1_15IRU7"
+    ]
   },
   {
     "id": "lenovo-ideapad-3-15itl6",
@@ -28525,7 +28539,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15IRU9.",
@@ -28535,7 +28550,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core 3-100U"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/Product/IdeaPad/IdeaPad_Slim_3_15IRU9"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15q8x10",
@@ -28979,7 +29000,8 @@
       "capacity": 80
     },
     "body": {
-      "materials": "Aluminium lid, plastic base"
+      "materials": "Aluminium lid, plastic base",
+      "weight": 2430
     },
     "connectivity": {
       "wifi": "Wi-Fi 6E",
@@ -29000,7 +29022,10 @@
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://psref.lenovo.com/Product/Legion/Legion_Pro_5_16IAX10"
+    ]
   },
   {
     "id": "lenovo-legion-pro-5-slim",
@@ -32581,7 +32606,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "MSI Cyborg 15 A12VF 043US.",
@@ -32593,7 +32619,8 @@
       "weight": 1980
     },
     "sources": [
-      "e-catalog"
+      "e-catalog",
+      "https://www.msi.com/Laptop/Cyborg-15-A12VX/Specification"
     ],
     "chipset": {
       "name": "Intel Core i7-12650H"
@@ -32618,7 +32645,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "MSI Cyborg 15 A13UC-821XAE.",
@@ -32628,7 +32656,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i7-13620H"
-    }
+    },
+    "body": {
+      "weight": 1980
+    },
+    "sources": [
+      "https://www.msi.com/Laptop/Cyborg-15-A13UX/Specification"
+    ]
   },
   {
     "id": "msi-cyborg-15-a13ve-218us",
@@ -32649,7 +32683,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "MSI Cyborg 15 A13VE-218US.",
@@ -32659,7 +32694,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i7-13620H"
-    }
+    },
+    "body": {
+      "weight": 1980
+    },
+    "sources": [
+      "https://www.msi.com/Laptop/Cyborg-15-A13VX/Specification"
+    ]
   },
   {
     "id": "msi-katana-15-b13vek-1675us",
@@ -32890,7 +32931,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "MSI Modern 15 A11MU 1006XGE.",
@@ -32900,7 +32942,13 @@
     "year": 2021,
     "chipset": {
       "name": "Intel Core i3-1115G4"
-    }
+    },
+    "body": {
+      "weight": 1600
+    },
+    "sources": [
+      "https://www.msi.com/Business-Productivity/Modern-15-A11X/Specification"
+    ]
   },
   {
     "id": "msi-modern-15-b11m-006xge",
@@ -32921,7 +32969,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "MSI Modern 15 B11M 006XGE.",
@@ -32930,7 +32979,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-1195G7"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://www.msi.com/Business-Productivity/Modern-15-B11X/Specification"
+    ]
   },
   {
     "id": "msi-modern-15-b5m-008xge",
@@ -32953,7 +33008,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "MSI MODERN 15 B5M-008XGE.",
@@ -32962,7 +33018,13 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 5 5625U"
-    }
+    },
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://www.msi.com/Business-Productivity/Modern-15-B5X/Specification"
+    ]
   },
   {
     "id": "msi-raider-16-max-hx-b2wh-rtx-5070ti",
