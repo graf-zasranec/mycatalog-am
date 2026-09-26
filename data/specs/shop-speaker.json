@@ -1427,5 +1427,29 @@
   "shop": "ucom",
   "status": 200,
   "spec": {}
+ },
+ "https://eldorado.am/en/bang-olufsen-beosound-explore": {
+  "id": "bo-beosound-explore",
+  "shop": "eldorado",
+  "status": 200,
+  "spec": {
+   "Battery": "2400 mAh"
+  }
+ },
+ "https://eldorado.am/en/acoustic-system-jbl": {
+  "id": "jbl-partybox-club-120",
+  "shop": "eldorado",
+  "status": 200,
+  "spec": {
+   "Bluetooth": "5.3"
+  }
+ },
+ "https://eldorado.am/en/jbl-partybox-on-the-go": {
+  "id": "jbl-partybox-on-the-go",
+  "shop": "eldorado",
+  "status": 200,
+  "spec": {
+   "Bluetooth": "4.2"
+  }
  }
 }

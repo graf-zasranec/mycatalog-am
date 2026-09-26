@@ -8454,7 +8454,8 @@
     "display": {
       "touch": false,
       "size": 27,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "ASUS VA27DQSB-W.",
@@ -8598,7 +8599,10 @@
     "summaryEn": "ASUS VG32AQA1A 90LM07L0-B02370.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 6800
+    }
   },
   {
     "id": "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11",
@@ -10701,7 +10705,8 @@
     "display": {
       "touch": false,
       "size": 24,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "ASUS VZ24EHF-W.",
@@ -10735,13 +10740,17 @@
     "display": {
       "touch": false,
       "size": 27,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "ASUS VZ27EHF 90LM07B0-B01470.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4100
+    }
   },
   {
     "id": "asus-zenbook-14-um3402ya-oled",
@@ -15150,7 +15159,10 @@
     ],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 78
+    }
   },
   {
     "id": "garmin-fenix-7-pro-sapphire-solar",
@@ -15985,7 +15997,10 @@
       "popularity"
     ],
     "os": "Garmin (own system)",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 26
+    }
   },
   {
     "id": "garmin-vivoactive-6",
@@ -20850,7 +20865,10 @@
       "HONOR MagicBook X16 Plus",
       "MagicBook X16 Plus",
       "Honor MagicBook X16 Plus 16"
-    ]
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "honor-pad-10-5g",
@@ -30047,7 +30065,8 @@
     "display": {
       "touch": false,
       "size": 24,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "refresh": 180
     },
     "battery": {},
     "summaryEn": "LG 24GS50F-B.",
@@ -34602,7 +34621,8 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "refresh": 100
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Samsung 27D300GAU.",
@@ -38755,7 +38775,9 @@
       "size": 1.5,
       "resolution": "480x480"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 247
+    },
     "summaryEn": "Samsung Galaxy Ultra 47mm 2024.",
     "unsure": [
       "popularity",
@@ -39707,7 +39729,8 @@
       "touch": false,
       "size": 24,
       "resolution": "1920 x 1080",
-      "refresh": 100
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Samsung LS24D304GAU.",
@@ -39811,7 +39834,8 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "refresh": 180
+      "refresh": 180,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Samsung LS27DG300EU.",
@@ -41649,7 +41673,8 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "refresh": 100
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Samsung S27D402G.",
