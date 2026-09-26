@@ -348,7 +348,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Acer Aspire AL15-52.",
@@ -357,7 +358,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-1235U"
-    }
+    },
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://store.acer.com/en-in/acer-aspire-lite-12th-gen-intel-core-i3-processor-laptop-windows-11-home-8-gb-ram-512-gb-ssd-al15-52-with-39-6-cm-15-6-full-hd-display-steel-gray-1-59-kg-un-aa3si-03n"
+    ]
   },
   {
     "id": "acer-aspire-go-15-ag15-32p-39r2",
@@ -579,7 +586,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Acer Aspire Lite AL16-52P-32E3.",
@@ -588,7 +596,10 @@
     ],
     "chipset": {
       "name": "Intel Core i3-1305U"
-    }
+    },
+    "sources": [
+      "https://store.acer.com/vi-vn/aspire-lite-16-al16-52p-572a"
+    ]
   },
   {
     "id": "acer-aspire-lite-al16-52p-59qu",
@@ -609,7 +620,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Acer Aspire Lite AL16-52P-59QU.",
@@ -618,7 +630,10 @@
     ],
     "chipset": {
       "name": "Intel Core i5-1334U"
-    }
+    },
+    "sources": [
+      "https://store.acer.com/vi-vn/aspire-lite-16-al16-52p-572a"
+    ]
   },
   {
     "id": "acer-aspire-lite-al16-54p-37j9",
@@ -807,7 +822,13 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 7 5800H"
-    }
+    },
+    "body": {
+      "weight": 2300
+    },
+    "sources": [
+      "https://store.acer.com/en-us/nitro-5-gaming-laptop-an515-45-r0fn"
+    ]
   },
   {
     "id": "acer-nitro-5-anv15-51-93hs",
@@ -828,7 +849,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Acer Nitro 5 ANV15-51-93HS.",
@@ -837,7 +859,13 @@
     ],
     "chipset": {
       "name": "Intel Core i9-13900H"
-    }
+    },
+    "body": {
+      "weight": 2110
+    },
+    "sources": [
+      "https://store.acer.com/en-us/nitro-v-15-gaming-laptop-anv15-51-717h"
+    ]
   },
   {
     "id": "acer-nitro-anv15-51-76er",
@@ -941,7 +969,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Acer Nitro V15 ANV15-51-789J.",
@@ -950,7 +979,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
-    }
+    },
+    "body": {
+      "weight": 2110
+    },
+    "sources": [
+      "https://store.acer.com/en-us/nitro-v-15-gaming-laptop-anv15-51-717h"
+    ]
   },
   {
     "id": "acer-nitro-v15-anv15-52-57bb",
@@ -1105,7 +1140,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-14650HX"
-    }
+    },
+    "body": {
+      "weight": 2500
+    },
+    "sources": [
+      "https://store.acer.com/en-us/acer-nitro-v-16-gaming-laptop-anv16-71-75mw"
+    ]
   },
   {
     "id": "acer-predator-helios-neo-14-phn14-51-79ub",
@@ -1321,7 +1362,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Acer Predator Triton 300 PT 315-53-75 XX.",
@@ -1330,7 +1372,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-11800H"
-    }
+    },
+    "body": {
+      "weight": 2000
+    },
+    "sources": [
+      "https://store.acer.com/en-us/predator-triton-300-gaming-laptop-pt315-53-75xx"
+    ]
   },
   {
     "id": "acer-swift-3-sf314-59-75qc",
@@ -1361,7 +1409,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-1165G7"
-    }
+    },
+    "body": {
+      "weight": 1200
+    },
+    "sources": [
+      "https://store.acer.com/en-us/swift-3-laptop-sf314-59-75qc"
+    ]
   },
   {
     "id": "acer-swift-go-14-sfg14-71-52tv",
