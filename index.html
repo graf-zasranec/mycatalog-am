@@ -795,15 +795,8 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 @media (max-width:900px){
   .pgrid{grid-template-columns:1fr;gap:18px}
   .pshotwrap{position:static;display:grid;place-items:center;min-height:0;order:-1}
-  .pshotwrap img{position:static;width:auto;height:auto;max-width:100%;max-height:190px}
+  .pshotwrap img{position:static;width:auto;height:auto;max-width:100%;max-height:260px}
   .rail2,.ends2{max-width:none}
-  /* The price first (owner, 2026-09-26): on a phone it sat 954 px down an 812 px screen, under the
-     photo and every option. The options column dissolves into this one-column grid so the price
-     and its buttons come right under the name, then the photo, then the options. */
-  .pside{display:contents}
-  .pprice2{order:-3}
-  .pcta{order:-2}
-  .pshotwrap{order:-1}
 }
 
 /* where to buy */
