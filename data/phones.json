@@ -2124,7 +2124,13 @@
     "os": "HomePod software",
     "body": {
       "weight": 345
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "sources": [
+      "https://www.zigzag.am/am/apple-homepod-mini-yellow-mj2e3ll-a.html"
+    ]
   },
   {
     "id": "apple-imac-24-m4",
@@ -9037,7 +9043,8 @@
     "accent": "#53565C",
     "display": {
       "size": 16,
-      "touch": false
+      "touch": false,
+      "resolution": "2880x1800"
     },
     "chipset": {
       "name": "Intel Core Ultra 7 255H"
@@ -9070,7 +9077,10 @@
     ],
     "body": {
       "weight": 1760
-    }
+    },
+    "sources": [
+      "https://www.zigzag.am/en/asus-vivobook-16-oled-ultra-7-255h-16gb-1tb-matte-gray-90nb16i2-m00640.html"
+    ]
   },
   {
     "id": "asus-vivobook-17-x1704vap",
@@ -9920,13 +9930,18 @@
         "priceAmd": 643600
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook S 15.6\" i9-13900H 16/1 CAMO W11 /K5504VA-PB99-SL*.",
     "unsure": [
       "popularity"
     ],
-    "colors": []
+    "colors": [],
+    "sources": [
+      "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html"
+    ]
   },
   {
     "id": "asus-vivobook-s14-s3407v",
@@ -23499,11 +23514,17 @@
         "priceAmd": 789000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 13.3,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "HP EliteBook 8 Flip G1i 13.3\" Ultra 5-225U W11P /A37FYET.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.zigzag.am/am/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-32gb-512gb-w11p-a37fyet.html"
     ]
   },
   {
@@ -24238,11 +24259,16 @@
         "priceAmd": 439900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16\" Ultra 5-225U 16/1 /BM0Q2EA.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea.html"
     ]
   },
   {
@@ -24263,11 +24289,16 @@
         "priceAmd": 499000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16\" Ultra 7-255U 16/1 /BK9Y8EA.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea.html"
     ]
   },
   {
@@ -29498,7 +29529,8 @@
       }
     ],
     "display": {
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "size": 16
     },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad T16 G4 16\" Ultra 7-255U /21QE0066FW.",
@@ -29510,7 +29542,8 @@
       "weight": 1760
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=21QE0066FW"
+      "https://psref.lenovo.com/detail/?M=21QE0066FW",
+      "https://www.zigzag.am/am/lenovo-thinkpad-t16-g4-16-ultra-7-255u-16gb-512gb-21qe0066fw.html"
     ]
   },
   {
@@ -33051,7 +33084,13 @@
     "year": 2025,
     "body": {
       "weight": 330
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.zigzag.am/am/nothing-headphone-1-white-6974434224179.html"
+    ]
   },
   {
     "id": "nothing-cmf-3-pro-6974434225312",
@@ -52649,7 +52688,9 @@
     "display": {},
     "chipset": {},
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
     "os": "Alice",
     "variants": [
       {
@@ -52663,6 +52704,9 @@
     "summaryEn": "Alice in a splash-proof shell, meant to leave the kitchen.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.zigzag.am/en/yandex-smart-station-street-yndx-00030-green.html"
     ]
   },
   {
