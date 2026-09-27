@@ -6256,8 +6256,12 @@
       "weight": 1630
     },
     "sources": [
-      "e-catalog"
-    ]
+      "e-catalog",
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-asus-e1504g-256gb/2087/"
+    ],
+    "chipset": {
+      "name": "Intel Core i3-N305"
+    }
   },
   {
     "id": "asus-expert-book-b5-b5405cva",
@@ -6447,7 +6451,13 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 7 7435HS"
-    }
+    },
+    "body": {
+      "weight": 2200
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/asus-tuf-gaming-a15-2022"
+    ]
   },
   {
     "id": "asus-fa707",
@@ -9869,7 +9879,13 @@
     "colors": [
       "Black"
     ],
-    "summaryEn": "A 16-inch 3.2K OLED creator laptop with a discrete RTX 4060."
+    "summaryEn": "A 16-inch 3.2K OLED creator laptop with a discrete RTX 4060.",
+    "body": {
+      "weight": 1900
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/asus-vivobook-pro-16-k6602"
+    ]
   },
   {
     "id": "asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl",
@@ -9907,8 +9923,16 @@
       "Silver"
     ],
     "sources": [
-      "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html"
-    ]
+      "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html",
+      "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-silver-w11-k5504va-pb99-sl.html",
+      "https://nanoreview.net/en/laptop/asus-vivobook-s-15-oled-k5504"
+    ],
+    "chipset": {
+      "name": "Intel Core i9-13900H"
+    },
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-s14-s3407v",
@@ -13043,6 +13067,12 @@
     "summaryEn": "A 16-inch Windows laptop with a touchscreen.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1870
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/dell-inspiron-16-5640"
     ]
   },
   {
@@ -13679,7 +13709,13 @@
     "year": 2022,
     "chipset": {
       "name": "Intel Core i3-1215U"
-    }
+    },
+    "body": {
+      "weight": 1660
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/dell-vostro-15-3520"
+    ]
   },
   {
     "id": "dell-vostro-3520-i5",
@@ -13711,7 +13747,13 @@
     "year": 2022,
     "chipset": {
       "name": "Intel Core i5-1235U"
-    }
+    },
+    "body": {
+      "weight": 1660
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/dell-vostro-15-3520"
+    ]
   },
   {
     "id": "dell-vostro-3530-i7",
@@ -22787,11 +22829,19 @@
         "priceAmd": 219900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "HP 15-FD0055.",
     "unsure": [
       "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i3-N305"
+    },
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-15-fd0055-natural-silver/2704/"
     ]
   },
   {
@@ -23149,11 +23199,19 @@
         "priceAmd": 234900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "HP 15-FD0355NIA.",
     "unsure": [
       "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1334U"
+    },
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-5-fd0355nia-12-512gb-silver/2820/"
     ]
   },
   {
@@ -23227,11 +23285,19 @@
         "priceAmd": 227900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "HP 15-FD0883NR.",
     "unsure": [
       "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i3-N305"
+    },
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-15-fd0883nr-moonlight-blue/2703/"
     ]
   },
   {
@@ -23706,10 +23772,14 @@
     ],
     "sources": [
       "https://www.zigzag.am/am/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-32gb-512gb-w11p-a37fyet.html",
-      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=A37FYET"
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=A37FYET",
+      "https://nanoreview.net/en/laptop/hp-elitebook-8-flip-g1i-13"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5 225U"
+    },
+    "body": {
+      "weight": 1400
     }
   },
   {
@@ -23912,7 +23982,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-12700H"
-    }
+    },
+    "body": {
+      "weight": 2340
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/hp-envy-16-2022"
+    ]
   },
   {
     "id": "hp-g10-470g10",
@@ -24431,12 +24507,24 @@
         "priceAmd": 287900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16-ba1000ci.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1334U"
+    },
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/hp-omnibook5-16ba1000ci-512gb-glacier-silver/2660/",
+      "https://nanoreview.net/en/laptop/hp-omnibook-5-16"
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
@@ -24468,10 +24556,14 @@
     ],
     "sources": [
       "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea.html",
-      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=BM0Q2EA"
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=BM0Q2EA",
+      "https://nanoreview.net/en/laptop/hp-omnibook-5-16"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5 225U"
+    },
+    "body": {
+      "weight": 1790
     }
   },
   {
@@ -24502,10 +24594,14 @@
     ],
     "sources": [
       "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea.html",
-      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=BK9Y8EA"
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=BK9Y8EA",
+      "https://nanoreview.net/en/laptop/hp-omnibook-5-16"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 255U"
+    },
+    "body": {
+      "weight": 1790
     }
   },
   {
@@ -24528,12 +24624,24 @@
         "priceAmd": 359900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 5 AI 16-af1003ci Ultra.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5 225U"
+    },
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-omnibook-5-ai-16-af1003ci-ultra/2814/",
+      "https://nanoreview.net/en/laptop/hp-omnibook-5-16"
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "hp-omnibook-7-16-az0595",
@@ -24625,6 +24733,12 @@
       "HP OmniBook Ultra Flip",
       "HP OmniBook Ultra Flip 14 OLED",
       "OmniBook Ultra Flip 14"
+    ],
+    "body": {
+      "weight": 1340
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/hp-omnibook-ultra-flip-14"
     ]
   },
   {
@@ -25406,8 +25520,12 @@
       "name": "Intel Core i5-14450HX"
     },
     "sources": [
-      "https://eldorado.am/en/hp-victus-clamshell-roaree-24c1-a1lj8ea"
-    ]
+      "https://eldorado.am/en/hp-victus-clamshell-roaree-24c1-a1lj8ea",
+      "https://nanoreview.net/en/laptop/hp-victus-16-2024"
+    ],
+    "body": {
+      "weight": 2330
+    }
   },
   {
     "id": "huawei-led-23-8-ad80hw",
@@ -26118,7 +26236,10 @@
     },
     "sources": [
       "https://www.jbl.com/LIVE-FLEX.html"
-    ]
+    ],
+    "body": {
+      "weight": 5.2
+    }
   },
   {
     "id": "jbl-live-pro-2-tws",
@@ -26600,7 +26721,13 @@
     "year": 2023,
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 5.4
+    },
+    "sources": [
+      "https://www.jbl.com/TUNE-BUDS.html"
+    ]
   },
   {
     "id": "jbl-tune-125-tws",
@@ -28387,8 +28514,12 @@
       "weight": 1550
     },
     "sources": [
-      "https://psref.lenovo.com/detail/IdeaPad_Slim_3_15IAN8?M=82XB00HVUS"
-    ]
+      "https://psref.lenovo.com/detail/IdeaPad_Slim_3_15IAN8?M=82XB00HVUS",
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-lenovo-ideapad-slim3-15ian8-arctic-grey/2702/"
+    ],
+    "chipset": {
+      "name": "Intel N100"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15ian8-n100",
@@ -28517,8 +28648,12 @@
       "weight": 1630
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83K4000RUS"
-    ]
+      "https://psref.lenovo.com/detail/?M=83K4000RUS",
+      "https://www.telecomarmenia.am/eshop/en/devices/lenovo-ideapad-slim-3-15irh10r/2816/"
+    ],
+    "chipset": {
+      "name": "Intel Core 5 210H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15iru10",
@@ -28540,13 +28675,21 @@
         "priceAmd": 221900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.3
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15IRU10.",
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "chipset": {
+      "name": "Intel Core 3 100U"
+    },
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-lenovo-ideapad-slim3-15iru10-grey/2712/"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15iru8-256gb",
@@ -29049,7 +29192,13 @@
     "year": 2024,
     "chipset": {
       "name": "Intel Core i7-14650HX"
-    }
+    },
+    "body": {
+      "weight": 2500
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/lenovo-legion-pro-5i-gen-9-16irx9-2024"
+    ]
   },
   {
     "id": "lenovo-legion-pro-5-16",
@@ -29741,7 +29890,10 @@
     "sources": [
       "https://psref.lenovo.com/detail/?M=21QE0066FW",
       "https://www.zigzag.am/am/lenovo-thinkpad-t16-g4-16-ultra-7-255u-16gb-512gb-21qe0066fw.html"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 255U"
+    }
   },
   {
     "id": "lenovo-thinkpad-t16-gen-2-21hh005agq",
