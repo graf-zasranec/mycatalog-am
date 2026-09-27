@@ -38807,6 +38807,58 @@
     ]
   },
   {
+    "id": "samsung-galaxy-tab-s10-lite",
+    "category": "tablet",
+    "brand": "Samsung",
+    "name": "Galaxy Tab S10 Lite",
+    "aliases": [
+      "Galaxy Tab S10 Lite",
+      "Samsung Galaxy Tab S10 Lite",
+      "Tab S10 Lite"
+    ],
+    "tier": "mid",
+    "priceAmd": 142900,
+    "priceAmdMax": 172900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 10.9,
+      "resolution": "1320x2112",
+      "touch": true,
+      "refresh": 90,
+      "type": "TFT LCD"
+    },
+    "chipset": {
+      "name": "Exynos 1380",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+    },
+    "battery": {
+      "capacity": 8000
+    },
+    "os": "Android",
+    "released": "2025-09",
+    "summaryEn": "A 10.9-inch Samsung tablet on Exynos 1380.",
+    "variants": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 142900
+      }
+    ],
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "colors": [
+      "Gray",
+      "Silver",
+      "Coral Red"
+    ],
+    "sources": [
+      "https://mobilecentre.am/product/samsung-galaxy-tab-s10-lite-wi-fi-128gb-_gray_/32418/"
+    ]
+  },
+  {
     "id": "samsung-galaxy-tab-s10-fe",
     "category": "tablet",
     "brand": "Samsung",

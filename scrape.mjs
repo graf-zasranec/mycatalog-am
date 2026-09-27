@@ -2349,6 +2349,9 @@ try {
                      && ((o.color || null) === (r.color || null)
                          || (!r.color && !o.seeded && o.price === +r.price))
                      && (o.ram ?? null) === (r.ram ?? null)
+                     // Wi-Fi vs cellular likewise: Mobile Centre's Tab S10 Lite 5G 128 Gray was
+                     // taken for its Wi-Fi 128 Gray sibling and never added.
+                     && !!(o.cell ?? cellOf(`${o.title || ''} ${o.url || ''}`)) === !!cellOf(`${r.title} ${r.url}`)
                      // ...but only between two HAND rows. A crawled row is the shop's own page
                      // read today, and it covers this configuration whatever url somebody once
                      // wrote the hand row against - which is usually a category listing, or
