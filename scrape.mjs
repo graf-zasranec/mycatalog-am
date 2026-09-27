@@ -2676,6 +2676,8 @@ try {
 // on its own; nothing is pinned or deleted.
 try {
   const SOLD = new Set(JSON.parse(fs.readFileSync('data/soldout.json', 'utf8')).urls || []);
+  // the owner's own reports live apart, because check-links rewrites soldout.json from scratch
+  try { for (const u of JSON.parse(fs.readFileSync('data/soldout-owner.json', 'utf8')).urls || []) SOLD.add(u); } catch {}
   let n = 0;
   for (const id of Object.keys(offers)) { const k = offers[id].length; offers[id] = offers[id].filter(o => !SOLD.has(o.url)); n += k - offers[id].length; }
   if (n) console.log(`${n} sold-out offer(s) hidden (data/soldout.json)`);
