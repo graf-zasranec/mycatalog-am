@@ -384,7 +384,9 @@ const storageOf = text => { const c = capacitiesOf(text); if (!c.length) return 
 const TRAY = /\b[12]\s*-?\s*sim\b|\bdual\s*sim\b|\bnano\b|սիմ|sim\s*card|\+\s*sim|sim\s*\+/i;
 // e-?sim, because 3DPlanet writes the tray-less option "E-Sim" with a hyphen. "Nano-SIM" does
 // not match it: there is no e immediately before the -sim.
-const ESIM_ONLY = t => /(^|[^a-z])e-?sim([^a-z]|$)/i.test(t) && !TRAY.test(t);
+// "eSim+eSim" (AllSell) is two eSIMs, not a tray - TRAY's "sim +" would claim it otherwise.
+const ESIM_ONLY = t => /\be-?sim\s*\+\s*e-?sim\b|\bdual\s*e-?sim\b/i.test(t)
+  || (/(^|[^a-z])e-?sim([^a-z]|$)/i.test(t) && !TRAY.test(t));
 // Three states, not two. A shop that says nothing about the SIM build is not asserting a tray,
 // and treating it as one put prices under a button the shop never agreed to: Pixel's 559 000
 // iPhone 17 Pro Max 512 GB appeared as the "Nano-SIM" price, below the 625 000 eSIM, which is
@@ -602,6 +604,9 @@ function magentoChildren(html, colors) {
   const drive = attrs.find(a => /drive|storage|internal/i.test(text(a)));
   const color = attrs.find(a => /colou?r/i.test(text(a)));
   const ram = attrs.find(a => a !== drive && /\bram\b|memory/i.test(text(a)));
+  // AllSell's iPhone 17e: "SIM card type" Nano Sim/eSim 295 500, eSim+eSim 285 500 - unread, the
+  // tray build's price was thrown away as a duplicate of the eSIM one.
+  const simA = attrs.find(a => /\bsim\b/i.test(text(a)));
   const label = (a, child) => {
     if (!a) return null;
     const want = String((cfg.index[child] || {})[a.id] ?? '');
@@ -617,7 +622,8 @@ function magentoChildren(html, colors) {
       // A colour Magento states that none of the product's own colours will map to is not a
       // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
       // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
-      color: (col && colorOf(col, colors)) || null, inStock: pr.is_in_stock !== false });
+      color: (col && colorOf(col, colors)) || null, inStock: pr.is_in_stock !== false,
+      ...(simA ? { esim: simBuild(label(simA, child) || ''), simFromPage: true } : {}) });
   }
   // A child whose colour did not map is not a DIFFERENT colour, it is an unspecified one, and
   // beside a sibling at the same price that is named it says nothing the named row has not

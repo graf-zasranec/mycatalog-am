@@ -39273,7 +39273,6 @@
     "os": "Wear OS 6, One UI Watch",
     "colors": [
       "Titanium Gray",
-      "Titanium White",
       "Titanium Silver"
     ],
     "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance.",
@@ -43583,7 +43582,10 @@
     "category": "console",
     "brand": "Sony",
     "name": "PlayStation VR2",
-    "aliases": [],
+    "aliases": [
+      "PS5 VR 2",
+      "PS5 VR2"
+    ],
     "tier": "mid",
     "priceAmd": 229000,
     "priceAmdMax": 229000,
@@ -43848,31 +43850,6 @@
       "White"
     ],
     "summaryEn": "The current PlayStation 5, smaller than the launch model, in disc and all-digital versions.",
-    "unsure": [
-      "popularity"
-    ]
-  },
-  {
-    "id": "sony-ps5-vr-2",
-    "category": "console",
-    "brand": "Sony",
-    "name": "PS5 VR 2",
-    "aliases": [],
-    "tier": "mid",
-    "priceAmd": 229000,
-    "priceAmdMax": 229000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 229000
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Sony PS5 VR 2.",
     "unsure": [
       "popularity"
     ]

@@ -2,9 +2,9 @@
  "generated": "2026-09-27",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1201,
+ "total": 1200,
  "missing": 0,
- "tooSmall": 55,
+ "tooSmall": 57,
  "products": [
   {
    "id": "jbl-clip-4",
@@ -15,6 +15,16 @@
    "query": "JBL Clip 4",
    "what": "too small",
    "width": 565
+  },
+  {
+   "id": "xiaomi-redmi-pad-se",
+   "brand": "Xiaomi",
+   "name": "Redmi Pad SE",
+   "category": "tablet",
+   "shops": 3,
+   "query": "Xiaomi Redmi Pad SE",
+   "what": "too small",
+   "width": 515
   },
   {
    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
@@ -87,6 +97,16 @@
    "width": 537
   },
   {
+   "id": "samsung-galaxy-z-fold-6",
+   "brand": "Samsung",
+   "name": "Galaxy Z Fold 6",
+   "category": "phone",
+   "shops": 2,
+   "query": "Samsung Galaxy Z Fold 6",
+   "what": "too small",
+   "width": 537
+  },
+  {
    "id": "tcl-55v6c",
    "brand": "TCL",
    "name": "55V6C",
@@ -125,6 +145,16 @@
    "query": "Xiaomi Redmi 14C",
    "what": "too small",
    "width": 525
+  },
+  {
+   "id": "xiaomi-redmi-a3",
+   "brand": "Xiaomi",
+   "name": "Redmi A3",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Redmi A3",
+   "what": "too small",
+   "width": 536
   },
   {
    "id": "xiaomi-redmi-buds-3-lite",
@@ -345,16 +375,6 @@
    "query": "Samsung Galaxy Watch4",
    "what": "too small",
    "width": 565
-  },
-  {
-   "id": "samsung-galaxy-z-fold-6",
-   "brand": "Samsung",
-   "name": "Galaxy Z Fold 6",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung Galaxy Z Fold 6",
-   "what": "too small",
-   "width": 537
   },
   {
    "id": "sennheiser-hd-450bt",
