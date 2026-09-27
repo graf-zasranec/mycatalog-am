@@ -478,7 +478,10 @@ for (let i = 0; i < todo.length; i++) {
   // carry a 5 500 earbud and a 5 900 lamp - but never written unseen, because the same figure is
   // what a recycled link looks like. Mobile Centre served a 4 000 silicone case from a url whose
   // slug still said samsung-galaxy-z-flip-7, and an instalment or a deposit reads this way too.
-  if (p.price < SUSPECT) { cheap.push([f[0], f[1], was, p.price, f[4]]); continue; }
+  // ...except earbuds and wired earphones, which really do sell under it: Redmi Buds 6 Play at
+  // 6 400, Samsung's Type-C earphones at 6 900 (owner, 2026-09-27: "no need to worry").
+  const earbud = /buds|earbuds|earphone|earpods|headphone|headset|наушник|ականջակալ/i.test(f[1] + ' ' + f[4]);
+  if (p.price < SUSPECT && !earbud) { cheap.push([f[0], f[1], was, p.price, f[4]]); continue; }
   if (was !== p.price) { moved++; console.log(`  ${f[0].padEnd(13)} ${f[1].slice(0, 40).padEnd(42)} ${f[5]} -> ${p.price}`); }
   while (f.length < 9) f.push('');
   f[5] = String(p.price); f[8] = p.day || TODAY;

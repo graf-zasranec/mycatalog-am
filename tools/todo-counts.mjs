@@ -40,7 +40,7 @@ for (const p of P) {
   for (const f of KEY[p.category] || []) if (get(p, f) == null || get(p, f) === '') { add(`specs: missing a key field (${p.category})`, p.id); break; }
   // prices
   if (offs.some(o => !o.seen || days(o.seen) > 7)) add('price: an offer not read in the last 7 days', p.id);
-  if (offs.some(o => o.price < 10000)) add('price: an offer under 10 000 AMD', p.id);
+  if (p.category !== 'headphones' && offs.some(o => o.price < 10000)) add('price: an offer under 10 000 AMD', p.id);
   if (offs.length === 1) add('price: only one shop', p.id);
   // memory: several configurations, and an offer that does not say which
   const stor = new Set((p.variants || []).map(v => v.storage).filter(Boolean));
