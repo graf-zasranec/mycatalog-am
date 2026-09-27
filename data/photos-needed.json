@@ -2,9 +2,9 @@
  "generated": "2026-09-27",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1212,
+ "total": 1206,
  "missing": 0,
- "tooSmall": 56,
+ "tooSmall": 55,
  "products": [
   {
    "id": "jbl-clip-4",
@@ -83,6 +83,16 @@
    "category": "phone",
    "shops": 2,
    "query": "Samsung Galaxy A07s",
+   "what": "too small",
+   "width": 537
+  },
+  {
+   "id": "samsung-galaxy-z-fold-6",
+   "brand": "Samsung",
+   "name": "Galaxy Z Fold 6",
+   "category": "phone",
+   "shops": 2,
+   "query": "Samsung Galaxy Z Fold 6",
    "what": "too small",
    "width": 537
   },
@@ -267,16 +277,6 @@
    "width": 566
   },
   {
-   "id": "hp-pc-maokong24i1c23",
-   "brand": "HP",
-   "name": "PC Maokong24I1C23",
-   "category": "desktop",
-   "shops": 1,
-   "query": "HP PC Maokong24I1C23",
-   "what": "too small",
-   "width": 591
-  },
-  {
    "id": "jbl-tune-125-tws",
    "brand": "JBL",
    "name": "Tune 125 TWS",
@@ -355,16 +355,6 @@
    "query": "Samsung Galaxy Watch4",
    "what": "too small",
    "width": 565
-  },
-  {
-   "id": "samsung-galaxy-z-fold-6",
-   "brand": "Samsung",
-   "name": "Galaxy Z Fold 6",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung Galaxy Z Fold 6",
-   "what": "too small",
-   "width": 537
   },
   {
    "id": "sennheiser-hd-450bt",

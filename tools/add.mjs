@@ -168,6 +168,9 @@ for (const r of rows) {
   // This catalogue carries new stock only. "iPhone 16 Pro 2SIM USED" says so on the shelf.
   if (/\bused\b|\bsecond[- ]?hand\b|\brefurb\w*\b|\bopen ?box\b|б\/у|օգտագործված/i.test(r.name))
     { refused.push(['second-hand', r]); continue; }
+  // All-in-one desktops are not carried, the iMac excepted (owner, 2026-09-27)
+  if (/\ball[- ]in[- ]one\b|\baio\b|մոնոբլոկ|моноблок/i.test(r.name) && !/\bimac\b/i.test(r.name))
+    { refused.push(['all-in-one', r]); continue; }
   // A screen protector that never says "tempered": 'glass' alone cannot be banned outright,
   // because the iPad Pro is sold with standard and nano-texture glass.
   if (/\b(uv|unipro|hydrogel|privacy)\b[^,]{0,14}\bglass\b|\bglass\b[^,]{0,10}\bprotect/i.test(r.name))
