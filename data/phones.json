@@ -5048,8 +5048,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 8,
+        "storage": 512,
         "priceAmd": 692000
       }
     ],
@@ -5516,13 +5516,12 @@
     "id": "apple-macbook-pro-16-mrw23",
     "category": "laptop",
     "brand": "Apple",
-    "name": "MacBook Pro M3 Max",
+    "name": "MacBook Pro M3 Pro",
     "aliases": [
       "MacBook Pro 16 MRW23 Space Black",
       "MacBook Pro 16 MRW23",
       "MacBook Pro 16 MRW63 2023",
-      "MacBook Pro 16 MRW63 2023 Silver",
-      "MacBook Pro 16 M3 Max 2023"
+      "MacBook Pro 16 MRW63 2023 Silver"
     ],
     "tier": "flagship",
     "priceAmd": 1175000,
@@ -5531,13 +5530,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 18,
+        "storage": 512,
         "priceAmd": 1175000
       }
     ],
     "display": {
-      "size": 16.2
+      "size": 16.2,
+      "resolution": "3456x2234"
     },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 16 MRW23.",
@@ -5545,16 +5545,17 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Apple M3 Max (14-core CPU)"
+      "name": "Apple M3 Pro (12-core CPU)"
     },
     "os": "macOS",
     "year": 2023,
     "body": {
-      "weight": 2160
+      "weight": 2140
     },
     "sources": [
       "https://support.apple.com/en-us/117737"
-    ]
+    ],
+    "released": "2023-11"
   },
   {
     "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",

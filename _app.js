@@ -25,14 +25,14 @@ const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(i
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
 const U = {
-  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
-  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
-  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
+  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', kg: 'կգ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
+  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', kg: 'кг', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
+  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', kg: 'kg', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
 };
 const X = {
   hy: {
     tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
-    any: 'Բոլորը', min: 'նվազ.', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
+    any: 'Բոլորը', min: 'նվազ.', max: 'մինչև', weightF: 'Քաշ', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
     dS: 'օ', hS: 'ժ', mS: 'ր',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
@@ -64,7 +64,7 @@ const X = {
   },
   ru: {
     tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
-    any: 'Все', min: 'от', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
+    any: 'Все', min: 'от', max: 'до', weightF: 'Вес', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
     dS: 'д', hS: 'ч', mS: 'м',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
@@ -99,7 +99,7 @@ const X = {
   },
   en: {
     tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
-    any: 'All', min: 'from', newBadge: 'New', view: 'View', allFilters: 'All filters',
+    any: 'All', min: 'from', max: 'up to', weightF: 'Weight', newBadge: 'New', view: 'View', allFilters: 'All filters',
     dS: 'd', hS: 'h', mS: 'm',
     unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
@@ -137,7 +137,7 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], g5: false, nfc: false, anc: false, gaming: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], g5: false, nfc: false, anc: false, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -152,7 +152,7 @@ if (typeof st.fopen !== 'boolean') st.fopen = false;
 // matches() then compares a number against a string and the catalogue renders empty with no
 // visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
 // every product that has no display at all.
-for (const k of ['ram', 'stor', 'batt', 'hz', 'cam', 'life', 'scrmin', 'pmin', 'pmax']) {
+for (const k of ['ram', 'stor', 'weight', 'batt', 'hz', 'cam', 'life', 'scrmin', 'pmin', 'pmax']) {
   const v = Number(st[k]);
   st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
 }
@@ -589,6 +589,11 @@ const FILT = {
   // A shop sells last year's laptop next to this year's at the same price, and the model number
   // is the only thing that says which - except here, where the catalogue already knows.
   year:  { kind: 'min', label: () => x('yearF'), of: p => yearOf(p), fmt: v => String(v) },
+  // 'yn' is Any / Yes / No (1 = yes, 2 = no); 'max' is "this much or less" - nobody wants a
+  // heavier laptop, so weight is asked from the light end. Earbuds are weighed per bud.
+  touch:  { kind: 'yn', label: () => t('f.touch'), of: p => p.display?.touch },
+  weight: { kind: 'max', label: () => x('weightF'), of: p => p.body?.weight || null,
+            fmt: v => v >= 1000 ? (v / 1000).toLocaleString(st.lang) + ' ' + u('kg') : v + ' ' + u('g') },
   os:    { kind: 'set', arr: 'oses', label: () => x('osF'), of: p => osOf(p), fmt: v => v },
 };
 // The panel is written in a dozen ways across the makers - "Liquid Retina IPS LCD", "QNED
@@ -631,15 +636,15 @@ const osOf = p => { const v = String(p.os || '').replace(/\bwin ?1[01]\b/i, 'Win
 // varying is not the same as meaning something. A filter listed here still has to prove the
 // items in view differ on it before it is drawn.
 const ASK = {
-  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
-  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'g5', 'touch', 'panel', 'os', 'year'],
-  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'touch', 'panel', 'os', 'year'],
+  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
+  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'g5', 'touch', 'panel', 'os', 'year'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'touch', 'weight', 'panel', 'os', 'year'],
   desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
   console:    ['stor', 'year'],
-  ereader:    ['stor', 'scr', 'water', 'panel', 'year'],
-  watch:      ['stor', 'scr', 'life', 'water', 'os', 'year'],
-  headphones: ['hform', 'hconn', 'hplug', 'anc', 'gaming', 'life', 'water', 'year'],
-  speaker:    ['spk', 'life', 'water', 'year'],
+  ereader:    ['stor', 'scr', 'weight', 'water', 'panel', 'year'],
+  watch:      ['stor', 'scr', 'life', 'weight', 'water', 'os', 'year'],
+  headphones: ['hform', 'hconn', 'hplug', 'anc', 'gaming', 'life', 'weight', 'water', 'year'],
+  speaker:    ['spk', 'life', 'weight', 'water', 'year'],
   appliance:  ['year'],
   monitor:    ['scr', 'res', 'hz', 'touch', 'panel', 'year'],
   component:  ['year'],
@@ -671,6 +676,8 @@ function matches(p, s) {
     // they must not slip through a "120 Hz or more" filter merely by lacking the field
     if (f.kind === 'flag') { if (s[k] && !f.of(p, s)) return false; continue; }
     if (f.kind === 'min') { if (s[k] && !(f.of(p, s) >= s[k])) return false; continue; }
+    if (f.kind === 'max') { if (s[k] && !(f.of(p, s) <= s[k])) return false; continue; }
+    if (f.kind === 'yn') { if (s[k] && f.of(p, s) !== (s[k] === 1)) return false; continue; }
     const sel = s[f.arr] || [];
     if (!sel.length) continue;
     if (k === 'shop') { if (!offersFor(p).some(o => sel.includes(o.shop))) return false; continue; }
@@ -678,8 +685,6 @@ function matches(p, s) {
     if (v == null || !sel.includes(v)) return false;
   }
   if (s.scrmin && !(p.display?.size >= s.scrmin)) return false;
-  // 1 = must have a touchscreen, 2 = must not; 0 = do not care
-  if (s.touch && p.display?.touch !== (s.touch === 1)) return false;
   return true;
 }
 // A saving is only real when it is the SAME product in the SAME configuration: cheapest shop
@@ -1022,6 +1027,16 @@ function fdrop(k, pool) {
     const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)]);
     return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
   }
+  if (f.kind === 'yn') return varies(p => f.of(p, st))
+    ? drop(k, f.label(), radios(k, [1, 2], v => v === 1 ? t('common.yes') : t('common.no'))) : '';
+  if (f.kind === 'max') {
+    // rounded up to a step a person would say - "up to 1.6 kg", not "up to 1 587 g" - and the
+    // heaviest dropped, since "up to the heaviest" is just All again
+    const r = v => { const s = v >= 1000 ? 100 : v >= 100 ? 10 : 1; return Math.ceil(v / s) * s; };
+    const all = [...new Set(inView().map(p => f.of(p, st)).filter(v => v > 0).map(r))].sort((a, b) => a - b).slice(0, -1);
+    const vals = all.length <= 6 ? all : [...new Set(Array.from({ length: 6 }, (_, i) => all[Math.round(i * (all.length - 1) / 5)]))];
+    return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, v => x('max') + ' ' + f.fmt(v))) : '';
+  }
   const vals = setVals(k, f, pool);
   return vals.length > 1 ? drop(k, f.label(), boxes(k, vals, f.fmt)) : '';
 }
@@ -1160,7 +1175,7 @@ function pruneFilters() {
     if (f.kind === 'set') st[f.arr] = (st[f.arr] || []).filter(v => pool.some(p => matches(p, { ...base, [f.arr]: [v] })));
     else if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
   }
-  for (const k of ['scrmin', 'touch'])
+  for (const k of ['scrmin'])
     if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
 }
 
@@ -1172,9 +1187,10 @@ const activeChips = () => {
     const f = FILT[k];
     if (k === 'brand') continue;                                   // already first, above the price
     if (f.kind === 'set') { for (const v of st[f.arr] || []) o.push([k + ':' + v, f.fmt(v)]); continue; }
-    if (st[k]) o.push([k, f.kind === 'flag' ? f.label() : `${x('min')} ${f.fmt(st[k])}`]);
+    if (st[k]) o.push([k, f.kind === 'flag' ? f.label()
+      : f.kind === 'yn' ? `${f.label()}: ${st[k] === 1 ? t('common.yes') : t('common.no')}`
+      : `${x(f.kind === 'max' ? 'max' : 'min')} ${f.fmt(st[k])}`]);
   }
-  if (st.touch) o.push(['touch', `${t('f.touch')}: ${st.touch === 1 ? t('common.yes') : t('common.no')}`]);
   if (st.scrmin) o.push(['scrmin', `${x('min')} ${st.scrmin}″`]);
   return o;
 };
@@ -2641,7 +2657,7 @@ document.addEventListener('click', e => {
   if (e.target.closest('.logo')) {
     e.preventDefault();
     st.q = ''; st.brands = []; st.cat = '';
-    for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch']) st[k] = D[k];
+    for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch', 'weight']) st[k] = D[k];
     st.scrs = []; st.sort = D.sort;
     save();
     if (location.hash && location.hash !== '#/') location.hash = '#/'; else render();
@@ -2720,7 +2736,7 @@ document.addEventListener('click', e => {
   // then brand, then a "Show 78" button - so choosing a section showed nothing until three more
   // decisions were made. The owner wants the whole section at once, with the filters already out
   // for whoever does want to narrow it.
-  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, page: 1 });
+  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, weight: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, page: 1 });
     st.fopen = true; save(); location.hash = '#/c/' + st.cat; return; }
   const cq = e.target.closest('[data-cq]');
   if (cq) { const k = cq.dataset.cq, v = cq.dataset.cqv;
