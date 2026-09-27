@@ -2509,6 +2509,11 @@ if (badSize) console.log(`${badSize} offer(s) claimed a screen size the product 
 for (const [id, list] of Object.entries(offers)) {
   if ((phoneById[id] || {}).category !== 'tablet') continue;
   for (const o of list) o.cell = typeof o.cell === 'boolean' ? o.cell : cellOf(o.title);
+  // The cellular build always costs more (owner, 2026-09-27). A "cellular" row at or below the
+  // cheapest Wi-Fi price for its capacity is a mislabel, and it was the one the page opened on.
+  const wifiMin = {};
+  for (const o of list) if (!o.cell) wifiMin[o.storage] = Math.min(wifiMin[o.storage] ?? Infinity, o.price);
+  for (const o of list) if (o.cell && o.price <= (wifiMin[o.storage] ?? 0)) o.cell = false;
 }
 // A capacity under 32 GB on anything but a watch is the memory read as storage: iBolit's
 // "Tab S9 Ultra 12GB 256GB X916 Beige" came through as 12. The title says the real one.

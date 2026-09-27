@@ -1707,6 +1707,12 @@ const SWATCH = {
   'Titanium Silverblue': '#8CA3B8', 'Lavender': '#C3B2DA', 'Mint': '#B9DCC7', 'Icy Blue': '#BBD3E6',
 };
 const HUE = { black:'#1D1D1F', white:'#F1F1F3', silver:'#D9DADE', grey:'#9AA0A6', gray:'#9AA0A6',
+  // makers' own names that fell to the grey fallback, so two of them drew identical dots (Dyson's
+  // Ceramic and Strawberry, 2026-09-27)
+  raspberry:'#B8325A', natural:'#C9B79C', transparent:'#E6E8EB', sandstone:'#D8C3A5', anthracite:'#3B3D42',
+  timber:'#8A6A4F', nordic:'#B9B0A2', oak:'#C8A77E', fuchsia:'#C2378B', nickel:'#A8A9AD', ceramic:'#EAD9CF',
+  patina:'#6F9C94', strawberry:'#C94F6D', lemongrass:'#D9E27A', peony:'#E7A1B0', hazel:'#8C8A73',
+  iris:'#8E8FD8', champagne:'#E4D3B4', camo:'#5E6450', ghost:'#E9EAEC', volt:'#D7F24A',
   graphite:'#3A3D42', blue:'#2F5C9E', navy:'#22345C', green:'#3E7D5A', mint:'#B9DCC7',
   red:'#B3242C', pink:'#E4A0B7', purple:'#6E4E9E', lilac:'#B9A7D6', lavender:'#C3B2DA',
   violet:'#5B3E8E', orange:'#D2743A', gold:'#D3B182', yellow:'#E6C64A', cream:'#EDE3D1',
