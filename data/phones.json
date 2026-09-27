@@ -12014,7 +12014,13 @@
       "conn": "wireless",
       "anc": true
     },
-    "year": 2021
+    "year": 2021,
+    "connectivity": {
+      "bluetooth": "5.1"
+    },
+    "sources": [
+      "https://support.bose.com/s/article/quietcomfort-45-headphones-specifications"
+    ]
   },
   {
     "id": "bose-quietcomfort-ii",
@@ -12047,7 +12053,13 @@
       "conn": "wireless",
       "anc": true
     },
-    "year": 2022
+    "year": 2022,
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://support.bose.com/s/article/quietcomfort-earbuds-ii-specifications"
+    ]
   },
   {
     "id": "bose-soundlink-flex",
@@ -12282,7 +12294,16 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2020
+    "year": 2020,
+    "connectivity": {
+      "bluetooth": "5.1"
+    },
+    "body": {
+      "weight": 6.8
+    },
+    "sources": [
+      "https://support.bose.com/s/article/sport-earbuds-specifications"
+    ]
   },
   {
     "id": "dell-14-plus-2in1-db04250",
@@ -20513,7 +20534,13 @@
     "audio": {
       "form": "open",
       "conn": "wireless"
-    }
+    },
+    "body": {
+      "weight": 5.1
+    },
+    "sources": [
+      "https://www.honor.com/sa-en/honor-choice/earbuds-clip/"
+    ]
   },
   {
     "id": "honor-choice-earbuds-x3",
@@ -20544,7 +20571,13 @@
     "audio": {
       "form": "tws",
       "conn": "wireless"
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "sources": [
+      "https://www.honor.com/global/honor-choice/earbuds-x3/"
+    ]
   },
   {
     "id": "honor-choice-earbuds-x5",
@@ -20573,7 +20606,13 @@
     "audio": {
       "form": "tws",
       "conn": "wireless"
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.honor.com/my/honor-choice/earbuds-x5/"
+    ]
   },
   {
     "id": "honor-choice-earbuds-x7e-ast-me00",
@@ -20604,7 +20643,13 @@
     "audio": {
       "form": "tws",
       "conn": "wireless"
-    }
+    },
+    "body": {
+      "weight": 4.8
+    },
+    "sources": [
+      "https://www.honor.com/global/honor-choice/earbuds-x7e/"
+    ]
   },
   {
     "id": "honor-choice-infowear-2i-kch-wb01",
@@ -20752,7 +20797,16 @@
     "audio": {
       "form": "tws",
       "conn": "wireless"
-    }
+    },
+    "body": {
+      "weight": 3.8
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.honor.com/global/audio/honor-earbuds-x6/spec/"
+    ]
   },
   {
     "id": "honor-magic-7-pro",
@@ -33678,7 +33732,13 @@
       "form": "open",
       "conn": "wireless"
     },
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 8.1
+    },
+    "sources": [
+      "https://us.nothing.tech/products/ear-open"
+    ]
   },
   {
     "id": "nothing-phone-2",
@@ -37105,9 +37165,13 @@
       "bluetooth": "5.2"
     },
     "body": {
-      "ip": "IPX2"
+      "ip": "IPX2",
+      "weight": 5.6
     },
-    "summaryEn": "ANC and wingtips at the bottom of the Galaxy Buds range."
+    "summaryEn": "ANC and wingtips at the bottom of the Galaxy Buds range.",
+    "sources": [
+      "https://www.samsung.com/ae/support/mobile-devices/galaxy-buds-fe-specifications-and-design/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-live",
@@ -49807,7 +49871,13 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 3.65
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-buds-4-active/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-4-bhr-5846-gl",
