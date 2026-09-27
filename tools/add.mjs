@@ -126,11 +126,11 @@ function modelOnly(name) {
     .split(/\s+/).filter(w => w && !HUES.has(w.toLowerCase().replace(/[^a-z]/g, '')))
     .join(' ').replace(/\s{2,}/g, ' ').replace(/^[\s|,\/-]+|[\s|,\/-]+$/g, '');
 }
+// the largest capacity in the text: "16 GB/1 TB" names RAM first, and storage is the bigger one
 const cap = t => {
-  const m = String(t ?? '').match(/(\d+)\s*(GB|TB|ԳԲ|ՏԲ)/i);
-  if (!m) return null;
-  const v = +m[1];
-  return /tb|տբ/i.test(m[2]) && v < 16 ? v * 1024 : v;
+  const all = [...String(t ?? '').matchAll(/(\d+)\s*(GB|TB|ԳԲ|ՏԲ)/gi)]
+    .map(m => /tb|տբ/i.test(m[2]) && +m[1] < 16 ? +m[1] * 1024 : +m[1]);
+  return all.length ? Math.max(...all) : null;
 };
 
 // Two shops write the same machine in a different order and the matcher, which reads left to

@@ -8407,7 +8407,7 @@
       "name": "Nvidia GeForce RTX 3050 4 GB",
       "type": "discrete"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 16,
@@ -9808,7 +9808,7 @@
       "name": "Intel Iris Plus Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 8,
@@ -9845,7 +9845,7 @@
       "name": "Intel Arc A350 4 GB",
       "type": "discrete"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 16,
@@ -9880,7 +9880,7 @@
       "name": "AMD Radeon Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 16,
@@ -10418,7 +10418,7 @@
     "chipset": {
       "name": "Intel Core i3-1215U"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 8,
@@ -10456,7 +10456,7 @@
       "name": "Intel Iris Plus Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 16,
@@ -10615,7 +10615,7 @@
       "name": "Intel Iris Plus Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 8,
@@ -10658,7 +10658,7 @@
       "name": "Intel Iris Plus Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 8,
@@ -10701,7 +10701,7 @@
       "name": "Intel Iris Plus Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 8,
@@ -10744,7 +10744,7 @@
       "name": "Intel Iris Plus Graphics",
       "type": "integrated"
     },
-    "os": "Dos",
+    "os": "DOS",
     "variants": [
       {
         "ram": 16,
@@ -21805,7 +21805,7 @@
     "os": "Android, MagicOS",
     "year": 2024,
     "chipset": {
-      "name": "Mediatek Helio G36",
+      "name": "MediaTek Helio G36",
       "process": "12 nm",
       "gpu": "IMG PowerVR GE8320 680 MHz"
     },
@@ -23851,8 +23851,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 32,
+        "ram": 32,
+        "storage": 512,
         "priceAmd": 789000
       }
     ],
@@ -24039,8 +24039,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 16,
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 699900
       }
     ],
@@ -24072,8 +24072,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 8,
+        "ram": 8,
+        "storage": 512,
         "priceAmd": 429900
       }
     ],
@@ -28727,8 +28727,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 16,
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 291900
       }
     ],
@@ -29945,8 +29945,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 16,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 839000
       }
     ],
@@ -32731,8 +32731,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 16,
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 519900
       }
     ],
@@ -32771,8 +32771,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 8,
+        "ram": 8,
+        "storage": 256,
         "priceAmd": 429900
       }
     ],
@@ -38775,7 +38775,7 @@
       "type": "AMOLED"
     },
     "chipset": {
-      "name": "Mediatek Dimensity 9400+",
+      "name": "MediaTek Dimensity 9400+",
       "process": "3 nm",
       "gpu": "Immortalis-G925 MC12 1,612 GHz"
     },
@@ -49162,7 +49162,7 @@
     "os": "Android",
     "year": 2022,
     "chipset": {
-      "name": "Mediatek Helio G25",
+      "name": "MediaTek Helio G25",
       "process": "12 nm",
       "gpu": "IMG PowerVR GE8320 600MHz"
     },
@@ -50186,7 +50186,7 @@
     "os": "Android",
     "year": 2024,
     "chipset": {
-      "name": "Mediatek Helio G36",
+      "name": "MediaTek Helio G36",
       "process": "12 nm",
       "gpu": "IMG PowerVR GE8320 680 MHz"
     },

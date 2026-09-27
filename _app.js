@@ -508,15 +508,20 @@ const cpuOf = p => {
   const n = p.chipset?.name || '';
   const a = /^Apple (M\d+(?: (?:Pro|Max|Ultra))?|A\d+(?: Pro)?)/.exec(n);
   if (a) return 'Apple ' + a[1];
-  const m = /^(Intel Core (?:Ultra )?\w+)/.exec(n) || /^(AMD Ryzen \d+)/.exec(n) || /^(Snapdragon(?: \w+)?)/.exec(n);
-  return m ? m[1] : (n || null);
+  const i = /^Intel Core (Ultra )?(\w+)/i.exec(n);
+  if (i) return 'Intel Core ' + (i[1] ? 'Ultra ' : '') + i[2].toLowerCase();
+  const m = /^AMD Ryzen (\d+)/i.exec(n) || /^Snapdragon( \w+)?/i.exec(n);
+  return m ? (/^AMD/i.test(m[0]) ? 'AMD Ryzen ' + m[1] : 'Snapdragon' + (m[1] || '')) : (n.replace(/^mediatek/i, 'MediaTek') || null);
 };
 const gpuOf = p => {
   const g = p.graphics;
   if (!g || !g.name) return null;
   if (g.type !== 'discrete') return 'integrated';
-  const m = /(GeForce RTX \d+|GeForce GTX \d+|Radeon RX \d+)/i.exec(g.name);
-  return m ? m[1] : g.name;
+  // shops write "Geforce" / "GEFORCE"; one card must be one filter row
+  const n = /\b(RTX|GTX|MX)\s*(\d{3,4})\b/i.exec(g.name);
+  if (n) return n[1].toUpperCase() === 'MX' ? `GeForce MX${n[2]}` : `GeForce ${n[1].toUpperCase()} ${n[2]}`;
+  const r = /\bRX\s*(\d{3,4}[A-Z]*)\b/i.exec(g.name);
+  return r ? `Radeon RX ${r[1].toUpperCase()}` : g.name;
 };
 // Screen bands used to be the three phone bands - under 6.3", 6.3-6.7", over 6.7" - drawn on a
 // page of laptops, where every one of them lands in the last band and the filter answers
@@ -964,7 +969,8 @@ function toggleCmp(id) {
 // [64,128,256,512] storage) could not offer the 24 GB and 2 TB the laptops brought in, and
 // offered 64 GB to a category whose smallest phone is 128.
 const steps = get => {
-  const v = [...new Set(inView().flatMap(get))].filter(n => typeof n === 'number' && n > 0).sort((a, b) => a - b);
+  // the smallest value matches everything that has the spec, so it only repeats "All"
+  const v = [...new Set(inView().flatMap(get))].filter(n => typeof n === 'number' && n > 0).sort((a, b) => a - b).slice(1);
   if (v.length <= 6) return v;
   // ponytail: evenly sampled, which is plenty for a "this much or more" filter
   return [...new Set(Array.from({ length: 6 }, (_, i) => v[Math.round(i * (v.length - 1) / 5)]))];
@@ -1014,7 +1020,7 @@ function fdrop(k, pool) {
     ? `<button class="toggle" data-f="${k}" aria-pressed="false">${esc(f.label())}</button>` : '';
   if (f.kind === 'min') {
     const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)]);
-    return vals.length > 1 && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
+    return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
   }
   const vals = setVals(k, f, pool);
   return vals.length > 1 ? drop(k, f.label(), boxes(k, vals, f.fmt)) : '';
