@@ -2172,7 +2172,16 @@
     "unsure": [
       "popularity"
     ],
-    "os": "HomePod software"
+    "os": "HomePod software",
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 2300
+    },
+    "sources": [
+      "https://www.apple.com/homepod-2nd-generation/specs/"
+    ]
   },
   {
     "id": "apple-homepod-mini",
@@ -11780,7 +11789,13 @@
     ],
     "body": {
       "weight": 558
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.1"
+    },
+    "sources": [
+      "https://support.bang-olufsen.com/hc/en-us/articles/360042884412"
+    ]
   },
   {
     "id": "bo-beosound-a5",
@@ -11927,6 +11942,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "sources": [
+      "https://support.bang-olufsen.com/hc/en-us/articles/360020068117"
     ]
   },
   {
@@ -25626,7 +25647,13 @@
       "wifi": "Wi-Fi 5"
     },
     "os": "Alexa and Google Assistant together",
-    "summaryEn": "Retro grille, modern guts: Wi-Fi, Dolby Atmos and two voice assistants at once."
+    "summaryEn": "Retro grille, modern guts: Wi-Fi, Dolby Atmos and two voice assistants at once.",
+    "body": {
+      "weight": 3120
+    },
+    "sources": [
+      "https://www.jbl.com/AUTHENTICS-200.html"
+    ]
   },
   {
     "id": "jbl-authentics-500",
@@ -25656,7 +25683,13 @@
       "wifi": "Wi-Fi 5"
     },
     "os": "Alexa and Google Assistant together",
-    "summaryEn": "A 270 W 3.1 system with Dolby Atmos, dressed as a 1970s radio."
+    "summaryEn": "A 270 W 3.1 system with Dolby Atmos, dressed as a 1970s radio.",
+    "body": {
+      "weight": 7800
+    },
+    "sources": [
+      "https://www.jbl.com/AUTHENTICS-500.html"
+    ]
   },
   {
     "id": "jbl-boombox-2",
@@ -25754,6 +25787,15 @@
     "summaryEn": "JBL Boombox 3 Wi-Fi.",
     "unsure": [
       "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 6700
+    },
+    "sources": [
+      "https://www.jbl.com/BOOMBOX-3-WIFI.html"
     ]
   },
   {
@@ -26394,7 +26436,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 11050
+    },
+    "sources": [
+      "https://www.jbl.com/PARTYBOX-CLUB-120.html"
+    ]
   },
   {
     "id": "jbl-partybox-encore-essential",
@@ -43135,7 +43183,8 @@
     },
     "connectivity": {
       "wifi": "Wi-Fi 5",
-      "wireless": "Mains powered, HDMI eARC, AirPlay 2"
+      "wireless": "Mains powered, HDMI eARC, AirPlay 2",
+      "bluetooth": "none, Wi-Fi and HDMI eARC"
     },
     "variants": [
       {
@@ -43152,7 +43201,10 @@
     "unsure": [
       "popularity"
     ],
-    "os": "Sonos app"
+    "os": "Sonos app",
+    "sources": [
+      "https://www.sonos.com/en-us/guides/arc"
+    ]
   },
   {
     "id": "sonos-era-300",
@@ -53179,7 +53231,9 @@
     "display": {},
     "chipset": {},
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
     "os": "Alice",
     "variants": [
       {
@@ -53196,7 +53250,10 @@
     ],
     "body": {
       "weight": 1500
-    }
+    },
+    "sources": [
+      "https://alice.yandex.ru/support/ru/station/meet/characteristics-gen2"
+    ]
   },
   {
     "id": "yandex-station-lite",
@@ -53301,8 +53358,12 @@
       "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/yandex-station-mini-black-yndx-00021"
-    ]
+      "https://allsell.am/en/yandex-station-mini-black-yndx-00021",
+      "https://alice.yandex.ru/support/ru/station/meet/characteristics-mini2"
+    ],
+    "body": {
+      "weight": 260
+    }
   },
   {
     "id": "yandex-station-mini-3-pro",
@@ -53317,7 +53378,9 @@
     "display": {},
     "chipset": {},
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
     "os": "Alice",
     "variants": [
       {
@@ -53331,6 +53394,12 @@
     "summaryEn": "A palm-sized Alice speaker with a Zigbee hub built in.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 438
+    },
+    "sources": [
+      "https://alice.yandex.ru/support/ru/station/meet/characteristics-mini3-pro"
     ]
   },
   {
@@ -53364,8 +53433,12 @@
       "popularity"
     ],
     "sources": [
-      "https://www.zigzag.am/en/yandex-smart-station-street-yndx-00030-green.html"
-    ]
+      "https://www.zigzag.am/en/yandex-smart-station-street-yndx-00030-green.html",
+      "https://alice.yandex.ru/support/ru/station/meet/characteristics-street"
+    ],
+    "body": {
+      "weight": 700
+    }
   },
   {
     "id": "realme-c71",
