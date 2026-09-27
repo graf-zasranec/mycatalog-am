@@ -23866,8 +23866,12 @@
       "popularity"
     ],
     "sources": [
-      "https://www.zigzag.am/am/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-32gb-512gb-w11p-a37fyet.html"
-    ]
+      "https://www.zigzag.am/am/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-32gb-512gb-w11p-a37fyet.html",
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=A37FYET"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5 225U"
+    }
   },
   {
     "id": "hp-elitebook-ultra-g1q",
@@ -23983,7 +23987,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "2560x1600"
     },
     "battery": {},
     "summaryEn": "HP Envy 16-h1023dx Touch 7Z0P3UA.",
@@ -23992,7 +23997,13 @@
     ],
     "chipset": {
       "name": "Intel Core i9-13900H"
-    }
+    },
+    "body": {
+      "weight": 2350
+    },
+    "sources": [
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=7Z0P3UA"
+    ]
   },
   {
     "id": "hp-envy-16-h1053dx-touch-9u360ua",
@@ -24013,7 +24024,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "2560x1600"
     },
     "battery": {},
     "summaryEn": "HP Envy 16-h1053dx Touch 9U360UA.",
@@ -24022,7 +24034,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-13700H"
-    }
+    },
+    "body": {
+      "weight": 2350
+    },
+    "sources": [
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=9U360UA"
+    ]
   },
   {
     "id": "hp-envy-hayden-22c1",
@@ -24610,8 +24628,12 @@
       "popularity"
     ],
     "sources": [
-      "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea.html"
-    ]
+      "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea.html",
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=BM0Q2EA"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5 225U"
+    }
   },
   {
     "id": "hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea",
@@ -24640,8 +24662,12 @@
       "popularity"
     ],
     "sources": [
-      "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea.html"
-    ]
+      "https://www.zigzag.am/am/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea.html",
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=BK9Y8EA"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 255U"
+    }
   },
   {
     "id": "hp-omnibook-5-ai-16-af1003ci-ultra",
@@ -25102,7 +25128,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "HP ProBook 450 G10 85C38EA.",
@@ -25112,7 +25139,10 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i7-1355U"
-    }
+    },
+    "sources": [
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=85C38EA"
+    ]
   },
   {
     "id": "hp-probook-450-g9-7c196pa",
@@ -25135,7 +25165,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "HP ProBook 450 G9 7C196PA.",
@@ -25145,7 +25176,10 @@
     "year": 2022,
     "chipset": {
       "name": "Intel Core i7-1255U"
-    }
+    },
+    "sources": [
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=7C196PA"
+    ]
   },
   {
     "id": "hp-s5-524sh",
@@ -47351,9 +47385,9 @@
     },
     "os": "Android, HyperOS",
     "colors": [
-      "Deep Violet",
       "Black",
-      "Gray"
+      "Deep Violet",
+      "Deep Blue"
     ],
     "summaryEn": "Xiaomi’s 2026 T-series flagship, sold here in 12/256 and 12/512.",
     "unsure": [
