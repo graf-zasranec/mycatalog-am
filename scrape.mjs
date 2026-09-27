@@ -858,8 +858,8 @@ if (process.argv[2] === '--selftest') {
     ['samsung-galaxy-s25-ultra', 'samsung-galaxy-s25-ultra-512gb'],
     ['samsung-galaxy-s25', 'samsung-galaxy-s25-256gb'],
     ['apple-iphone-17', 'Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520)'],
-    // REDstore's Pixel 10 Pro Fold was being sold as a Pixel 10 Pro, at 725,000 instead of 475,900
-    [null, 'google-pixel-10-pro-fold-16gb256gb-moonstone'],
+    // REDstore's Pixel 10 Pro Fold was being sold as a Pixel 10 Pro, at 725,000 instead of 475,900 - it is the Fold's
+    ['google-pixel-10-pro-fold-gu0np', 'google-pixel-10-pro-fold-16gb256gb-moonstone'],
     ['xiaomi-15t', 'xiaomi-15t-256gb'],
     ['poco-x7-pro', 'poco-x7-pro-512gb'],
     ['apple-iphone-17-pro-max', 'apple-iphone-17-pro-max-2tb'],
@@ -1188,7 +1188,14 @@ if (process.argv[2] === '--selftest') {
     const got = SIMPINS.has(url) ? SIMPINS.get(url) : simBuild(url);
     if (got !== want) { bad++; console.log(`FAIL  sim pin got=${got} want=${want}  <- ${url}`); }
   }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + 1} checks pass`);
+  const cellCases = [
+    ['iPad Air 11 M4 WiFi + Cellular', true], ['Apple iPad Air 13/M4/Wifi+Cellular 256', true],
+    ['iPad Pro 11 M5 256GB Wi-Fi + Cellular Space Black', true], ['Apple iPad mini 7 128GB LTE', true],
+    ['iPad Air 11 M4 128GB WiFi 2026 Blue', false], ['Apple iPad Air M4 11 128gb Lavander', false],
+    ['iPad A16 5G 128GB Silver', true], ['iPad Pro 12.9 M2 Cell Space Gray', true],
+  ];
+  for (const [title, want] of cellCases) if (cellOf(title) !== want) { bad++; console.log(`FAIL  cell got=${cellOf(title)} want=${want}  <- ${title}`); }
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + cellCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
 }
 
@@ -2465,6 +2472,8 @@ for (const [id, list] of Object.entries(offers)) {
 }
 if (outliers) console.log(`${outliers} price(s) dropped as scrape errors`);
 
+// true = Wi-Fi + Cellular, false = Wi-Fi only (see the tablet pass below)
+function cellOf(title) { return /cellular|\bcell\b|\blte\b|\b5g\b|\+\s*sim/i.test(String(title || '')); }
 function medianOf(a) { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; }
 
 // A screen size that the product is not made in is a misread, and enrich() cannot correct it:
@@ -2477,6 +2486,14 @@ for (const [id, list] of Object.entries(offers)) {
   for (const o of list) if (o.size != null && !made.has(o.size)) { delete o.size; badSize++; }
 }
 if (badSize) console.log(`${badSize} offer(s) claimed a screen size the product is not sold in - cleared`);
+
+// A tablet is sold Wi-Fi only or Wi-Fi + Cellular, one product with two prices - like its storage.
+// Shops always name the cellular model ("WiFi + Cellular", "LTE", "5G"); a title that does not is
+// the Wi-Fi one. Tablets only: a phone's "5G" is not this question.
+for (const [id, list] of Object.entries(offers)) {
+  if ((phoneById[id] || {}).category !== 'tablet') continue;
+  for (const o of list) o.cell = cellOf(o.title);
+}
 
 let simDropped = 0;
 for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);

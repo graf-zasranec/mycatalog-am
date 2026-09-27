@@ -2377,7 +2377,9 @@
       "iPad 11 Pro Wi-Fi M2 MNXG3RK/A",
       "iPad Pro 12.9 M2 Wi-Fi",
       "iPad Pro 12.9 M2 WiFi S.Grey/MNXP3RK/A",
-      "iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A"
+      "iPad Pro 12.9 M2 WiFi Silver/MNXQ3RK/A",
+      "Apple iPad Pro M2 Wi-Fi + Cellular",
+      "iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*"
     ],
     "tier": "upper-mid",
     "priceAmd": 505400,
@@ -2835,7 +2837,16 @@
       "iPad Air 13 Wi-Fi 2024 Purple",
       "iPad Air 13 Wi-Fi 2024 Space Gray",
       "iPad Air 13 Wi-Fi 2024 Blue",
-      "iPad Air 13 Wi-Fi 2024 Starlight"
+      "iPad Air 13 Wi-Fi 2024 Starlight",
+      "Apple iPad Air M2 Wi-Fi + Cellular",
+      "iPad Air 11 Wi-Fi + Cellular 2024 Blue",
+      "iPad Air 11 Wi-Fi + Cellular 2024 Purple",
+      "iPad Air 11 Wi-Fi + Cellular 2024 Starlight",
+      "iPad Air 11 Wi-Fi + Cellular 2024 Space Gray",
+      "iPad Air 11 Wi-Fi + Cellular 2024",
+      "iPad Air 13 Wi-Fi + Cellular 2024",
+      "iPad Air 13 Wi-Fi + Cellular 2024 Blue",
+      "iPad Air 13 Wi-Fi + Cellular 2024 Purple"
     ],
     "tier": "mid",
     "priceAmd": 277000,
@@ -2860,6 +2871,12 @@
         "storage": 256,
         "priceAmd": 493000,
         "size": 13
+      },
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 466000,
+        "size": 11
       }
     ],
     "display": {
@@ -2900,96 +2917,14 @@
     ]
   },
   {
-    "id": "apple-ipad-air-11-wi-fi-plus-cellular-2024",
-    "category": "tablet",
-    "brand": "Apple",
-    "name": "iPad Air M2 Wi-Fi + Cellular",
-    "aliases": [
-      "iPad Air 11 Wi-Fi + Cellular 2024 Blue",
-      "iPad Air 11 Wi-Fi + Cellular 2024 Purple",
-      "iPad Air 11 Wi-Fi + Cellular 2024 Starlight",
-      "iPad Air 11 Wi-Fi + Cellular 2024 Space Gray",
-      "iPad Air 11 Wi-Fi + Cellular 2024",
-      "iPad Air 13 Wi-Fi + Cellular 2024",
-      "iPad Air 13 Wi-Fi + Cellular 2024 Blue",
-      "iPad Air 13 Wi-Fi + Cellular 2024 Purple"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 405000,
-    "priceAmdMax": 643000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 289900,
-        "size": 11
-      },
-      {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 466000,
-        "size": 11
-      },
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 349900,
-        "size": 13
-      },
-      {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 369900,
-        "size": 13
-      }
-    ],
-    "display": {
-      "size": 11,
-      "resolution": "2360x1640"
-    },
-    "battery": {},
-    "summaryEn": "Apple iPad Air 11 Wi-Fi + Cellular 2024.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "iPadOS",
-    "year": 2024,
-    "chipset": {
-      "name": "Apple M2",
-      "process": "5 nm",
-      "gpu": "Apple 10-core GPU"
-    },
-    "body": {
-      "materials": "Aluminium alloy",
-      "weight": 462
-    },
-    "connectivity": {
-      "bluetooth": "5.3",
-      "wifi": "Wi-Fi 6E",
-      "nfc": false
-    },
-    "cardSlot": false,
-    "camera": {
-      "main": "12.2 MP, f/1.8",
-      "front": "12 MP",
-      "video": "4K"
-    },
-    "released": "2024-05",
-    "sources": [
-      "kimovil",
-      "https://support.apple.com/en-us/119894"
-    ]
-  },
-  {
     "id": "apple-ipad-air-5-wi-fi-plus-cellular-2022",
     "category": "tablet",
     "brand": "Apple",
-    "name": "iPad Air 5 Wi-Fi + Cellular",
+    "name": "iPad Air 5",
     "aliases": [
       "iPad Air 5 Wi-Fi + Cellular 2022 Space Gray",
-      "iPad Air 5 Wi-Fi + Cellular 2022"
+      "iPad Air 5 Wi-Fi + Cellular 2022",
+      "Apple iPad Air 5 Wi-Fi + Cellular"
     ],
     "tier": "upper-mid",
     "priceAmd": 365000,
@@ -3260,7 +3195,12 @@
       "iPad Pro 11 (2024) M4",
       "iPad Pro 13 M4",
       "iPad Pro 13 Wi-Fi 2024",
-      "iPad Pro 13 Wi-Fi 2024 Silver"
+      "iPad Pro 13 Wi-Fi 2024 Silver",
+      "Apple iPad Pro M4 Wi-Fi + Cellular",
+      "iPad Pro 13 M4 Wi-Fi + Cellular 2024 Space Grey",
+      "iPad Pro 13 Wi-Fi + Cellular 2024",
+      "iPad Pro 13 Wi-Fi + Cellular 2024 Silver",
+      "iPad Pro 13 M4 Wi-Fi + Cellular 2024"
     ],
     "sources": [
       "kimovil"
@@ -3379,148 +3319,6 @@
     "sources": [
       "kimovil",
       "https://www.apple.com/ipad-pro/specs/"
-    ]
-  },
-  {
-    "id": "apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3",
-    "category": "tablet",
-    "brand": "Apple",
-    "name": "iPad Pro M2 Wi-Fi + Cellular",
-    "aliases": [
-      "iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 537400,
-    "priceAmdMax": 537400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 537400
-      }
-    ],
-    "display": {
-      "size": 12.9,
-      "resolution": "2732x2048",
-      "refresh": 120,
-      "ppi": 264,
-      "brightness": 1600,
-      "type": "MiniLED IPS"
-    },
-    "battery": {
-      "capacity": 7538,
-      "wired": 18
-    },
-    "summaryEn": "Apple iPad Pro 12.9 M2 Cell SpaceGray/MP5X3*.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "iPadOS",
-    "year": 2022,
-    "chipset": {
-      "name": "Apple M2",
-      "process": "5 nm",
-      "gpu": "Apple 10-core GPU"
-    },
-    "body": {
-      "weight": 682,
-      "height": 280.6,
-      "width": 214.9,
-      "thickness": 6.4,
-      "materials": "Aluminium alloy"
-    },
-    "connectivity": {
-      "bluetooth": "5.3",
-      "wifi": "Wi-Fi 6",
-      "nfc": false
-    },
-    "cardSlot": false,
-    "camera": {
-      "modules": 3,
-      "main": "12.2 MP, f/1.8",
-      "front": "12 MP",
-      "video": "4K"
-    },
-    "released": "2022-10",
-    "sources": [
-      "kimovil"
-    ]
-  },
-  {
-    "id": "apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024",
-    "category": "tablet",
-    "brand": "Apple",
-    "name": "iPad Pro M4 Wi-Fi + Cellular",
-    "aliases": [
-      "iPad Pro 13 M4 Wi-Fi + Cellular 2024 Space Grey",
-      "iPad Pro 13 Wi-Fi + Cellular 2024",
-      "iPad Pro 13 Wi-Fi + Cellular 2024 Silver",
-      "iPad Pro 13 M4 Wi-Fi + Cellular 2024"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 598000,
-    "priceAmdMax": 715000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 598000
-      },
-      {
-        "ram": null,
-        "storage": 512,
-        "priceAmd": 715000
-      }
-    ],
-    "display": {
-      "size": 13,
-      "resolution": "2752x2064",
-      "refresh": 120,
-      "ppi": 265,
-      "brightness": 1600,
-      "type": "OLED"
-    },
-    "battery": {
-      "capacity": 10340,
-      "wired": 30
-    },
-    "summaryEn": "Apple iPad Pro 13 M4 Wi-Fi + Cellular 2024.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "iPadOS",
-    "year": 2024,
-    "chipset": {
-      "name": "Apple M4",
-      "process": "3 nm",
-      "gpu": "Apple 10-core GPU"
-    },
-    "body": {
-      "weight": 579,
-      "height": 281.6,
-      "width": 215.5,
-      "thickness": 5.1,
-      "materials": "Aluminium alloy"
-    },
-    "connectivity": {
-      "bluetooth": "5.3",
-      "wifi": "Wi-Fi 6E",
-      "nfc": false
-    },
-    "cardSlot": false,
-    "camera": {
-      "modules": 2,
-      "main": "12.2 MP, f/1.8",
-      "front": "12 MP",
-      "video": "4K"
-    },
-    "released": "2024-05",
-    "sources": [
-      "kimovil"
     ]
   },
   {

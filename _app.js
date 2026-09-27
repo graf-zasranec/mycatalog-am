@@ -45,7 +45,7 @@ const X = {
     spotT: 'Օրվա գործարքը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
     dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', sourcesL: 'Աղբյուրներ', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
-    connF: 'Միացում', conns: { wireless: 'Անլար', wired: 'Լարով' },
+    connF: 'Միացում', cellY: 'Wi-Fi + բջջային կապ', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
     gamingF: 'Խաղային', resF: 'Թույլատրություն',
     spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Party', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
@@ -77,7 +77,7 @@ const X = {
     spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
     dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', sourcesL: 'Источники', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
-    connF: 'Подключение', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
+    connF: 'Подключение', cellY: 'Wi-Fi + сотовая связь', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
     gamingF: 'Игровые', resF: 'Разрешение',
     spkF: 'Тип', spks: { portable: 'Портативные', party: 'Для вечеринок', smart: 'Умные (Wi-Fi)', home: 'Домашние' },
@@ -112,7 +112,7 @@ const X = {
     spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
     dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', sourcesL: 'Sources', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
-    connF: 'Connection', conns: { wireless: 'Wireless', wired: 'Wired' },
+    connF: 'Connection', cellY: 'Wi-Fi + Cellular', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
     gamingF: 'Gaming', resF: 'Resolution',
     spkF: 'Type', spks: { portable: 'Portable', party: 'Party', smart: 'Smart (Wi-Fi)', home: 'Home' },
@@ -710,7 +710,7 @@ const tiersOf = p => {
   for (const o of offersFor(p)) {
     if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
     // screen size too: a 13-inch and a 15-inch MacBook with the same memory are not one product
-    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '');
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '') + (o.cell ? '|c' : '');
     (byTier.get(k) || byTier.set(k, []).get(k)).push(o);
   }
   const out = [];
@@ -1304,6 +1304,7 @@ function drops() {
     .filter(d => d.p && offersFor(d.p).length && offersFor(d.p)[0].price === d.lo).slice(0, 3);
 }
 const simLbl = e => e === true ? 'eSIM' : e === false ? 'Nano-SIM' : '';
+const cellLbl = c => c === true ? x('cellY') : c === false ? 'Wi-Fi' : '';
 function spark(vals) {
   const lo = Math.min(...vals), hi = Math.max(...vals), n = vals.length - 1;
   const X = i => 2 + i * 116 / n, Y = v => 3 + (1 - (v - lo) / ((hi - lo) || 1)) * 22;
@@ -1795,7 +1796,7 @@ function cardShow(btn) {
 document.addEventListener('pointerover', e => { const b = e.target.closest && e.target.closest('.cdot'); if (b) cardShow(b); });
 document.addEventListener('focusin', e => { if (e.target.classList && e.target.classList.contains('cdot')) cardShow(e.target); });
 
-let SEL = { id: null, color: null, storage: null, ram: null, esim: null, size: null, band: null };
+let SEL = { id: null, color: null, storage: null, ram: null, esim: null, size: null, band: null, cell: null };
 function initSel(p) {
   if (SEL.id === p.id) return;
   const offs = offersFor(p);
@@ -1812,7 +1813,9 @@ function initSel(p) {
     size: (offs.find(o => o.size != null) || {}).size ?? (p.variants.find(v => v.size != null) || {}).size ?? null,
     // An Ultra with a Milanese Loop is the same watch and 50,000 dearer, so the band is a choice
     // on one page rather than three products that differ by a strap.
-    band: (p.variants.find(v => v.band) || {}).band ?? null
+    band: (p.variants.find(v => v.band) || {}).band ?? null,
+    // A tablet sold both Wi-Fi only and Wi-Fi + Cellular opens on Wi-Fi, the one most people buy
+    cell: offs.some(o => o.cell === true) && offs.some(o => o.cell === false) ? false : null
   };
   // RAM and storage are sold as a pair, so start on a combination that exists - and within the
   // chosen screen, because the 15 is not sold in every configuration the 13 is.
@@ -1864,6 +1867,7 @@ function visibleOffers(p) {
   // strict: an offer whose SIM build the shop never stated is not evidence for either button.
   // Treating "not stated" as "tray" put Pixel's 559 000 under Nano-SIM, below the 625 000 eSIM.
   if (SEL.esim != null) o = o.filter(v => v.esim === SEL.esim);
+  if (SEL.cell != null) o = o.filter(v => v.cell === SEL.cell);
   // One shop listing the same phone in four colours at one price is one offer to a reader, not
   // four. The row shows shop, capacity, SIM build and price - never the colour, because there is
   // deliberately no colour picker here - so four identical-looking rows were four ways of saying
@@ -1875,7 +1879,7 @@ function visibleOffers(p) {
   // can see. The survivor is the colour picked above when the shop lists it - istyle gives every
   // colour its own link, and the button has to open the colour the reader chose, not the shop's
   // first one - and otherwise the shop's own first colour.
-  const key = v => [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?'].join('|');
+  const key = v => [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?', v.cell ? 'c' : ''].join('|');
   const pick = new Map();
   for (const v of o) {
     const had = pick.get(key(v));
@@ -1944,7 +1948,8 @@ function detailView(p) {
   // what "best price" is the best price OF, said next to it: the size, and the SIM build when chosen
   const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
   const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
-  const cfgLbl = [multiScr && SEL.size != null ? inch(SEL.size) : '', multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim)].filter(Boolean).join(' · ');
+  const cfgLbl = [multiScr && SEL.size != null ? inch(SEL.size) : '', multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim),
+    SEL.cell != null ? cellLbl(SEL.cell) : ''].filter(Boolean).join(' · ');
   // The chart's verdict, repeated where the decision is made. Only once the history has loaded
   // and only for the size picked - the chart's own series, so the two never disagree.
   const hs = histSeries(p, SEL.storage, SEL.size);
@@ -1979,6 +1984,7 @@ function detailView(p) {
     && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
     && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
+  const cellPick = simAll.some(o => o.cell === true) && simAll.some(o => o.cell === false);
   const sizes = [...new Set(p.variants.map(v => v.size))].filter(v => v != null).sort((a, b) => a - b);
   const bands = [...new Set(p.variants.map(v => v.band))].filter(Boolean);
   const vPool = SEL.size != null && sizes.length ? p.variants.filter(v => v.size === SEL.size) : p.variants;
@@ -2024,6 +2030,9 @@ function detailView(p) {
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
             <div class="bs">${simOpts.map(([n, want]) =>
               `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`).join('')}</div></div>` : ''}
+          ${cellPick ? `<div class="og"><label>${esc(x('connF'))}</label>
+            <div class="bs">${[false, true].map(want =>
+              `<button data-cell="${want ? 1 : 0}" class="${SEL.cell === want ? 'on' : ''}" aria-pressed="${SEL.cell === want}">${esc(cellLbl(want))}</button>`).join('')}</div></div>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
             <div class="pp-row"><b class="num">${money(shownPrice)} ֏</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
@@ -2242,7 +2251,7 @@ const seenTag = o => {
 /* ================= all offers for one model ================= */
 // The product page shows offers for the CHOSEN colour/capacity. This page shows every offer
 // the shops list for the model, and lets you slice it by shop, capacity and colour.
-let OSEL = { id: null, storage: '', ram: '', size: '', esim: '', color: '' };
+let OSEL = { id: null, storage: '', ram: '', size: '', esim: '', cell: '', color: '' };
 // Arriving here from a product page you have already answered these questions - the capacity,
 // the memory, the SIM build, the colour. Asking them again, with every chip back on "any", is
 // the site forgetting what it was just told. So the first visit for a product inherits whatever
@@ -2263,6 +2272,7 @@ function initOSel(id, avail) {
     ram: take('ram', from && from.ram != null ? from.ram : ''),
     size: take('size', from && from.size != null ? from.size : ''),
     esim: take('esim', from && from.esim != null ? (from.esim ? 'e' : 'n') : ''),
+    cell: take('cell', from && from.cell != null ? (from.cell ? 'c' : 'w') : ''),
     color: take('color', (from && from.color) || '') };
 }
 
@@ -2304,6 +2314,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
         o.size != null && offerAxisVaries(of, 'size') ? esc(inch(o.size)) : '',
         offerAxisVaries(of, 'storage') ? (o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : '')) : '',
         o.ram && offerAxisVaries(of, 'ram') ? esc(o.ram + ' ' + u('gb')) : '',
+        o.cell != null && offerAxisVaries(of, 'cell') ? esc(cellLbl(o.cell)) : '',
         // The product page shows one row per build and collapses the colours behind it; this
         // page shows every one of them, and without the colour written down two rows from the
         // same shop at the same price are indistinguishable - they read as the listing being
@@ -2341,13 +2352,15 @@ function offersView(p) {
   // for whether a choice carried over from the product page can be shown - and un-shown.
   const two = a => a.length > 1 ? a : [];
   const simVals = simChoice(p) ? sims : [];
-  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(simVals), color: two(cols) });
+  const cells = [...new Set(all.map(o => o.cell === true ? 'c' : o.cell === false ? 'w' : null).filter(Boolean))].sort().reverse();
+  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(simVals), cell: two(cells), color: two(cols) });
   // filtering is by what you are buying - capacity, memory, screen, SIM build - not by which shop
   const list = all.filter(o =>
     (!OSEL.storage || String(o.storage) === OSEL.storage) &&
     (!OSEL.ram || String(o.ram) === OSEL.ram) &&
     (!OSEL.size || String(o.size) === OSEL.size) &&
     (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim) &&
+    (!OSEL.cell || (o.cell ? 'c' : 'w') === OSEL.cell) &&
     // an offer naming no colour is sold in every colour - pixel lists one row per build, any colour
     (!OSEL.color || !o.color || o.color === OSEL.color));
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
@@ -2373,6 +2386,7 @@ function offersView(p) {
       ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
       ${chips('size', sizes, t('f.screen'), inch)}
       ${chips('esim', simVals, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
+      ${chips('cell', two(cells), x('connF'), v => cellLbl(v === 'c'))}
       ${cols.length < 2 ? '' : `<div class="ofg"><span class="ofl">${esc(t('f.color'))}</span>
         <button class="ofc${OSEL.color === '' ? ' on' : ''}" data-of="color" data-ofv="">${esc(x('any'))}</button>
         <span class="cs ofcs">${cols.map(c => `<button data-of="color" data-ofv="${esc(c)}" style="--c:${swatch(c)}"
@@ -2811,7 +2825,7 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim],[data-size],[data-band]');
+  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim],[data-size],[data-band],[data-cell]');
   if (opt) {
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
@@ -2821,6 +2835,7 @@ document.addEventListener('click', e => {
       const want = opt.dataset.esim === '1';
       SEL.esim = SEL.esim === want ? null : want;
     }
+    if (opt.dataset.cell !== undefined) SEL.cell = opt.dataset.cell === '1';
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
     if (opt.dataset.band !== undefined) SEL.band = opt.dataset.band;
