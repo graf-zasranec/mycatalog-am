@@ -281,8 +281,10 @@ const sold = (p, field, value) => {
   if (field === 'color') {
     const want = soldKey(value);
     // A shop writes the last word of a finish: "Gray" for Space Gray, "Blue" for Sky Blue.
+    // An offer that names no colour stands in for every colour on the page (visibleOffers), so it
+    // keeps every swatch live; crossing them out claimed "sold out" when the shop just didn't say.
     return list.some(o => { const k = o.color && soldKey(o.color);
-      return k && (k === want || (k.length >= 4 && want.endsWith(k))); });
+      return !k || (k === want || (k.length >= 4 && want.endsWith(k))); });
   }
   // A watch's variants are case sizes in mm, but an offer's `storage` is gigabytes, and comparing
   // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
@@ -1924,9 +1926,10 @@ function compareWithHTML(p) {
   if (!pairs.length) return '';
   const card = ([id, role]) => {
     const q = byId(id), lo = hasReal(q) ? bestOf(q) : null, d = lo != null && hasReal(p) ? lo - bestOf(p) : null;
-    return `<a class="cw" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">
+    // the card opens that product; the small button beside it is the side-by-side (owner, 2026-09-27)
+    return `<div class="cwb"><a class="cwc" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">${esc(t('nav.compare'))}</a><a class="cw" href="#/p/${esc(id)}">
       <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" decoding="async">
-      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}${nameTag(q)}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a>`;
+      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}${nameTag(q)}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a></div>`;
   };
   return `<section class="cwith"><h3>${esc(x('cwTitle'))}</h3><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
 }
@@ -2011,7 +2014,7 @@ function detailView(p) {
         <span>${esc(p.brand)} / ${esc(X[L].tier[p.tier] || p.tier)}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
         <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
       </div>
-      <h1 class="pname">${esc(fullName(p))}${nameTag(p, SEL.size)}</h1>
+      <h1 class="pname"><span class="pn">${esc(fullName(p))}</span>${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
         <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
         <div class="pside">
@@ -2362,7 +2365,10 @@ function offersView(p) {
     (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim) &&
     (!OSEL.cell || (o.cell ? 'c' : 'w') === OSEL.cell) &&
     // an offer naming no colour is sold in every colour - pixel lists one row per build, any colour
-    (!OSEL.color || !o.color || o.color === OSEL.color));
+    (!OSEL.color || !o.color || o.color === OSEL.color))
+    // one row per thing a reader can tell apart: istyle's two Flip 7 pages, pixel's am/en copies
+    .filter((o, i, a) => { const k = v => [v.shop, v.price, v.storage, v.ram, v.esim, v.cell, v.color || (OSEL.color || '')].join('|');
+      return a.findIndex(v => k(v) === k(o) || (!o.color && v.color && k({ ...v, color: '' }) === k(o))) === i; });
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
   const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
 

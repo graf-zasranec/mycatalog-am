@@ -5467,7 +5467,8 @@
       "popularity"
     ],
     "colors": [
-      "Blue"
+      "Natural",
+      "Black"
     ],
     "variantUnit": "mm",
     "os": "watchOS",
@@ -16734,6 +16735,12 @@
     "released": "2024-08",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Obsidian",
+      "Porcelain",
+      "Hazel",
+      "Rose Quartz"
     ]
   },
   {
@@ -16802,6 +16809,12 @@
     "released": "2024-08",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Obsidian",
+      "Porcelain",
+      "Hazel",
+      "Rose Quartz"
     ]
   },
   {
@@ -20195,6 +20208,11 @@
     "released": "2026-04",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black",
+      "Orange",
+      "White"
     ]
   },
   {
@@ -20682,6 +20700,11 @@
     "released": "2025-10",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black",
+      "Sunrise Gold",
+      "Sky Cyan"
     ]
   },
   {
@@ -24963,8 +24986,11 @@
     "id": "hp-victus-15-fa0018nq",
     "category": "laptop",
     "brand": "HP",
-    "name": "Victus 15 FA0018NQ",
-    "aliases": [],
+    "name": "Victus 15 FA0018NQ / FA0020NQ",
+    "aliases": [
+      "Victus 15 FA0018NQ",
+      "Victus 15 FA0020NQ"
+    ],
     "tier": "upper-mid",
     "priceAmd": 390000,
     "priceAmdMax": 390000,
@@ -24988,38 +25014,11 @@
     ],
     "chipset": {
       "name": "Intel Core i7-12700H"
-    }
-  },
-  {
-    "id": "hp-victus-15-fa0020nq",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "Victus 15 FA0020NQ",
-    "aliases": [],
-    "tier": "upper-mid",
-    "priceAmd": 390000,
-    "priceAmdMax": 390000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 512,
-        "priceAmd": 390000
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080"
     },
-    "battery": {},
-    "summaryEn": "HP Victus 15 FA0020NQ.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core i7-12700H"
-    }
+    "colors": [
+      "Performance Blue",
+      "Ceramic White"
+    ]
   },
   {
     "id": "hp-victus-15-fa0033dx-9t9r8ua",
@@ -33476,6 +33475,10 @@
     "released": "2023-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Dark Grey",
+      "White"
     ]
   },
   {
@@ -33552,8 +33555,7 @@
     "os": "Android 15, Nothing OS 3.5",
     "updates": "5 OS upgrades and 7 years of security updates",
     "colors": [
-      "Black",
-      "White"
+      "Black"
     ],
     "summaryEn": "Nothing’s first true flagship: a Glyph Matrix back, three 50 MP cameras and Wi-Fi 7.",
     "unsure": [
@@ -38619,6 +38621,11 @@
     "cardSlot": true,
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite",
+      "Silver",
+      "Pink Gold"
     ]
   },
   {
@@ -38685,6 +38692,10 @@
     "cardSlot": true,
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite",
+      "Beige"
     ]
   },
   {
@@ -38966,6 +38977,10 @@
     "released": "2023-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite",
+      "Beige"
     ]
   },
   {
@@ -40259,8 +40274,10 @@
     "id": "samsung-mre55r85hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "MRE55R85HAUXPY",
-    "aliases": [],
+    "name": "Micro RGB R85H (MRE55R85HAUXPY)",
+    "aliases": [
+      "MRE55R85HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 722000,
     "priceAmdMax": 722000,
@@ -40293,8 +40310,10 @@
     "id": "samsung-mre75r95hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "MRE75R95HAUXPY",
-    "aliases": [],
+    "name": "Micro RGB R95H (MRE75R95HAUXPY)",
+    "aliases": [
+      "MRE75R95HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 2199000,
     "priceAmdMax": 2199000,
@@ -40507,7 +40526,7 @@
     "id": "samsung-qe43q60ba",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE43Q60BA",
+    "name": "QLED Q60B (QE43Q60BA)",
     "tier": "budget",
     "priceAmd": 199900,
     "priceAmdMax": 199900,
@@ -40534,13 +40553,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE43Q60BA"
     ]
   },
   {
     "id": "samsung-qe43q7faauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE43Q7FAAUXRU",
+    "name": "QLED Q7F (QE43Q7FAAUXRU)",
     "tier": "budget",
     "priceAmd": 223900,
     "priceAmdMax": 223900,
@@ -40567,14 +40589,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE43Q7FAAUXRU"
     ]
   },
   {
     "id": "samsung-qe43qn70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE43QN70HAUXPY",
-    "aliases": [],
+    "name": "Neo QLED QN70H (QE43QN70HAUXPY)",
+    "aliases": [
+      "QE43QN70HAUXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 324000,
     "priceAmdMax": 324000,
@@ -40608,8 +40635,10 @@
     "id": "samsung-qe48s90faexru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE48S90FAEXRU",
-    "aliases": [],
+    "name": "OLED S90F (QE48S90FAEXRU)",
+    "aliases": [
+      "QE48S90FAEXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 733000,
     "priceAmdMax": 733000,
@@ -40642,8 +40671,10 @@
     "id": "samsung-qe48s90haexpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE48S90HAEXPY",
-    "aliases": [],
+    "name": "OLED S90H (QE48S90HAEXPY)",
+    "aliases": [
+      "QE48S90HAEXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 799000,
     "priceAmdMax": 799000,
@@ -40677,7 +40708,7 @@
     "id": "samsung-qe50q7faauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE50Q7FAAUXRU",
+    "name": "QLED Q7F (QE50Q7FAAUXRU)",
     "tier": "mid",
     "priceAmd": 298900,
     "priceAmdMax": 298900,
@@ -40704,14 +40735,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE50Q7FAAUXRU"
     ]
   },
   {
     "id": "samsung-qe50qn70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE50QN70HAUXPY",
-    "aliases": [],
+    "name": "Neo QLED QN70H (QE50QN70HAUXPY)",
+    "aliases": [
+      "QE50QN70HAUXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 374000,
     "priceAmdMax": 374000,
@@ -40745,8 +40781,10 @@
     "id": "samsung-qe55ls03bauxce",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55LS03BAUXCE",
-    "aliases": [],
+    "name": "The Frame LS03B (QE55LS03BAUXCE)",
+    "aliases": [
+      "QE55LS03BAUXCE"
+    ],
     "tier": "upper-mid",
     "priceAmd": 429000,
     "priceAmdMax": 429000,
@@ -40780,7 +40818,7 @@
     "id": "samsung-qe55q60abuxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55Q60ABUXRU",
+    "name": "QLED Q60A (QE55Q60ABUXRU)",
     "tier": "mid",
     "priceAmd": 479900,
     "priceAmdMax": 479900,
@@ -40807,13 +40845,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE55Q60ABUXRU"
     ]
   },
   {
     "id": "samsung-qe55q7faauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55Q7FAAUXRU",
+    "name": "QLED Q7F (QE55Q7FAAUXRU)",
     "tier": "mid",
     "priceAmd": 352900,
     "priceAmdMax": 352900,
@@ -40840,13 +40881,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE55Q7FAAUXRU"
     ]
   },
   {
     "id": "samsung-qe55q7fam",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55Q7FAM",
+    "name": "QLED Q7F (QE55Q7FAM)",
     "tier": "flagship",
     "priceAmd": 4894000,
     "priceAmdMax": 4894000,
@@ -40873,13 +40917,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE55Q7FAM"
     ]
   },
   {
     "id": "samsung-qe55qn80fauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55QN80FAUXRU",
+    "name": "Neo QLED QN80F (QE55QN80FAUXRU)",
     "tier": "upper-mid",
     "priceAmd": 665900,
     "priceAmdMax": 665900,
@@ -40906,14 +40953,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE55QN80FAUXRU"
     ]
   },
   {
     "id": "samsung-qe55qn80hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55QN80HAUXPY",
-    "aliases": [],
+    "name": "Neo QLED QN80H (QE55QN80HAUXPY)",
+    "aliases": [
+      "QE55QN80HAUXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 619000,
     "priceAmdMax": 619000,
@@ -40947,8 +40999,10 @@
     "id": "samsung-qe55s85haexpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55S85HAEXPY",
-    "aliases": [],
+    "name": "OLED S85H (QE55S85HAEXPY)",
+    "aliases": [
+      "QE55S85HAEXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 679000,
     "priceAmdMax": 679000,
@@ -40982,8 +41036,10 @@
     "id": "samsung-qe55s90hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55S90HAUXPY",
-    "aliases": [],
+    "name": "OLED S90H (QE55S90HAUXPY)",
+    "aliases": [
+      "QE55S90HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 1049000,
     "priceAmdMax": 1049000,
@@ -41017,7 +41073,7 @@
     "id": "samsung-qe55s95cauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE55S95CAUXRU",
+    "name": "OLED S95C (QE55S95CAUXRU)",
     "tier": "upper-mid",
     "priceAmd": 697900,
     "priceAmdMax": 697900,
@@ -41044,14 +41100,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE55S95CAUXRU"
     ]
   },
   {
     "id": "samsung-qe65q7faauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65Q7FAAUXRU",
-    "aliases": [],
+    "name": "QLED Q7F (QE65Q7FAAUXRU)",
+    "aliases": [
+      "QE65Q7FAAUXRU"
+    ],
     "tier": "upper-mid",
     "priceAmd": 477000,
     "priceAmdMax": 477000,
@@ -41084,8 +41145,10 @@
     "id": "samsung-qe65qn80hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65QN80HAUXPY",
-    "aliases": [],
+    "name": "Neo QLED QN80H (QE65QN80HAUXPY)",
+    "aliases": [
+      "QE65QN80HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 749000,
     "priceAmdMax": 749000,
@@ -41119,7 +41182,7 @@
     "id": "samsung-qe65qn85dbuxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65QN85DBUXRU",
+    "name": "Neo QLED QN85D (QE65QN85DBUXRU)",
     "tier": "upper-mid",
     "priceAmd": 718900,
     "priceAmdMax": 718900,
@@ -41146,14 +41209,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE65QN85DBUXRU"
     ]
   },
   {
     "id": "samsung-qe65qn900duxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65QN900DUXRU",
-    "aliases": [],
+    "name": "Neo QLED QN900D (QE65QN900DUXRU)",
+    "aliases": [
+      "QE65QN900DUXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 1659000,
     "priceAmdMax": 1659000,
@@ -41186,7 +41254,7 @@
     "id": "samsung-qe65qn90fauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65QN90FAUXRU",
+    "name": "Neo QLED QN90F (QE65QN90FAUXRU)",
     "tier": "flagship",
     "priceAmd": 1307900,
     "priceAmdMax": 1307900,
@@ -41213,14 +41281,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE65QN90FAUXRU"
     ]
   },
   {
     "id": "samsung-qe65qn990fuxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65QN990FUXRU",
-    "aliases": [],
+    "name": "Neo QLED QN990F (QE65QN990FUXRU)",
+    "aliases": [
+      "QE65QN990FUXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 2729000,
     "priceAmdMax": 2729000,
@@ -41253,8 +41326,10 @@
     "id": "samsung-qe65s85haexpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65S85HAEXPY",
-    "aliases": [],
+    "name": "OLED S85H (QE65S85HAEXPY)",
+    "aliases": [
+      "QE65S85HAEXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 919000,
     "priceAmdMax": 919000,
@@ -41288,7 +41363,7 @@
     "id": "samsung-qe65s90dauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65S90DAUXRU",
+    "name": "OLED S90D (QE65S90DAUXRU)",
     "tier": "flagship",
     "priceAmd": 1199000,
     "priceAmdMax": 1199000,
@@ -41316,13 +41391,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE65S90DAUXRU"
     ]
   },
   {
     "id": "samsung-qe65s90faexru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65S90FAEXRU",
+    "name": "OLED S90F (QE65S90FAEXRU)",
     "tier": "flagship",
     "priceAmd": 1382900,
     "priceAmdMax": 1382900,
@@ -41349,13 +41427,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE65S90FAEXRU"
     ]
   },
   {
     "id": "samsung-qe65s95fauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65S95FAUXRU",
+    "name": "OLED S95F (QE65S95FAUXRU)",
     "tier": "flagship",
     "priceAmd": 1111000,
     "priceAmdMax": 1111000,
@@ -41382,14 +41463,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE65S95FAUXRU"
     ]
   },
   {
     "id": "samsung-qe65s95hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE65S95HAUXPY",
-    "aliases": [],
+    "name": "OLED S95H (QE65S95HAUXPY)",
+    "aliases": [
+      "QE65S95HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 1317000,
     "priceAmdMax": 1317000,
@@ -41423,7 +41509,7 @@
     "id": "samsung-qe75q60dauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE75Q60DAUXRU",
+    "name": "QLED Q60D (QE75Q60DAUXRU)",
     "tier": "upper-mid",
     "priceAmd": 689900,
     "priceAmdMax": 689900,
@@ -41450,13 +41536,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE75Q60DAUXRU"
     ]
   },
   {
     "id": "samsung-qe75q70dauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE75Q70DAUXRU",
+    "name": "QLED Q70D (QE75Q70DAUXRU)",
     "tier": "upper-mid",
     "priceAmd": 849900,
     "priceAmdMax": 849900,
@@ -41483,13 +41572,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE75Q70DAUXRU"
     ]
   },
   {
     "id": "samsung-qe75qn70fauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE75QN70FAUXRU",
+    "name": "Neo QLED QN70F (QE75QN70FAUXRU)",
     "tier": "upper-mid",
     "priceAmd": 690000,
     "priceAmdMax": 690000,
@@ -41517,14 +41609,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE75QN70FAUXRU"
     ]
   },
   {
     "id": "samsung-qe75qn70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE75QN70HAUXPY",
-    "aliases": [],
+    "name": "Neo QLED QN70H (QE75QN70HAUXPY)",
+    "aliases": [
+      "QE75QN70HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 722000,
     "priceAmdMax": 722000,
@@ -41558,7 +41655,7 @@
     "id": "samsung-qe75qn80fauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE75QN80FAUXRU",
+    "name": "Neo QLED QN80F (QE75QN80FAUXRU)",
     "tier": "flagship",
     "priceAmd": 1173900,
     "priceAmdMax": 1173900,
@@ -41586,13 +41683,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE75QN80FAUXRU"
     ]
   },
   {
     "id": "samsung-qe75qn90cauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE75QN90CAUXRU",
+    "name": "Neo QLED QN90C (QE75QN90CAUXRU)",
     "tier": "flagship",
     "priceAmd": 1184900,
     "priceAmdMax": 1184900,
@@ -41620,14 +41720,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE75QN90CAUXRU"
     ]
   },
   {
     "id": "samsung-qe77s90faexru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE77S90FAEXRU",
-    "aliases": [],
+    "name": "OLED S90F (QE77S90FAEXRU)",
+    "aliases": [
+      "QE77S90FAEXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 2047000,
     "priceAmdMax": 2047000,
@@ -41660,7 +41765,7 @@
     "id": "samsung-qe77s95fauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE77S95FAUXRU",
+    "name": "OLED S95F (QE77S95FAUXRU)",
     "tier": "flagship",
     "priceAmd": 1710000,
     "priceAmdMax": 1710000,
@@ -41687,14 +41792,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE77S95FAUXRU"
     ]
   },
   {
     "id": "samsung-qe83s90daexru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE83S90DAEXRU",
-    "aliases": [],
+    "name": "OLED S90D (QE83S90DAEXRU)",
+    "aliases": [
+      "QE83S90DAEXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 3119000,
     "priceAmdMax": 3119000,
@@ -41727,8 +41837,10 @@
     "id": "samsung-qe83s90haexpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE83S90HAEXPY",
-    "aliases": [],
+    "name": "OLED S90H (QE83S90HAEXPY)",
+    "aliases": [
+      "QE83S90HAEXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 2499000,
     "priceAmdMax": 2499000,
@@ -41762,7 +41874,7 @@
     "id": "samsung-qe85q60dauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE85Q60DAUXRU",
+    "name": "QLED Q60D (QE85Q60DAUXRU)",
     "tier": "flagship",
     "priceAmd": 1319000,
     "priceAmdMax": 1319000,
@@ -41789,14 +41901,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "QE85Q60DAUXRU"
     ]
   },
   {
     "id": "samsung-qe85qn800auxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE85QN800AUXRU",
-    "aliases": [],
+    "name": "Neo QLED QN800A (QE85QN800AUXRU)",
+    "aliases": [
+      "QE85QN800AUXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 2525000,
     "priceAmdMax": 2525000,
@@ -41829,8 +41946,10 @@
     "id": "samsung-qe85qn90bauxce",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE85QN90BAUXCE",
-    "aliases": [],
+    "name": "Neo QLED QN90B (QE85QN90BAUXCE)",
+    "aliases": [
+      "QE85QN90BAUXCE"
+    ],
     "tier": "flagship",
     "priceAmd": 1899000,
     "priceAmdMax": 1899000,
@@ -41863,8 +41982,10 @@
     "id": "samsung-qe85qn90cauxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "QE85QN90CAUXRU",
-    "aliases": [],
+    "name": "Neo QLED QN90C (QE85QN90CAUXRU)",
+    "aliases": [
+      "QE85QN90CAUXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 1879000,
     "priceAmdMax": 1879000,
@@ -41931,8 +42052,10 @@
     "id": "samsung-ue32f6000fuxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE32F6000FUXRU",
-    "aliases": [],
+    "name": "Full HD F6000F (UE32F6000FUXRU)",
+    "aliases": [
+      "UE32F6000FUXRU"
+    ],
     "tier": "mid",
     "priceAmd": 126000,
     "priceAmdMax": 126000,
@@ -41965,7 +42088,7 @@
     "id": "samsung-ue43m70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE43M70HAUXPY",
+    "name": "Mini LED M70H (UE43M70HAUXPY)",
     "tier": "budget",
     "priceAmd": 178000,
     "priceAmdMax": 178000,
@@ -41993,13 +42116,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE43M70HAUXPY"
     ]
   },
   {
     "id": "samsung-ue43u8000huxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE43U8000HUXPY",
+    "name": "Crystal UHD U8000H (UE43U8000HUXPY)",
     "tier": "budget",
     "priceAmd": 152000,
     "priceAmdMax": 152000,
@@ -42027,13 +42153,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE43U8000HUXPY"
     ]
   },
   {
     "id": "samsung-ue50u8000huxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE50U8000HUXPY",
+    "name": "Crystal UHD U8000H (UE50U8000HUXPY)",
     "tier": "budget",
     "priceAmd": 212000,
     "priceAmdMax": 212000,
@@ -42061,13 +42190,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE50U8000HUXPY"
     ]
   },
   {
     "id": "samsung-ue55du8000uxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE55DU8000UXRU",
+    "name": "Crystal UHD DU8000 (UE55DU8000UXRU)",
     "tier": "mid",
     "priceAmd": 359000,
     "priceAmdMax": 359000,
@@ -42094,13 +42226,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE55DU8000UXRU"
     ]
   },
   {
     "id": "samsung-ue55m70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE55M70HAUXPY",
+    "name": "Mini LED M70H (UE55M70HAUXPY)",
     "tier": "mid",
     "priceAmd": 254000,
     "priceAmdMax": 254000,
@@ -42128,14 +42263,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE55M70HAUXPY"
     ]
   },
   {
     "id": "samsung-ue55m80hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE55M80HAUXPY",
-    "aliases": [],
+    "name": "Mini LED M80H (UE55M80HAUXPY)",
+    "aliases": [
+      "UE55M80HAUXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 359000,
     "priceAmdMax": 359000,
@@ -42169,7 +42309,7 @@
     "id": "samsung-ue55u8000fuxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE55U8000FUXRU",
+    "name": "Crystal UHD U8000F (UE55U8000FUXRU)",
     "tier": "budget",
     "priceAmd": 192000,
     "priceAmdMax": 192000,
@@ -42196,14 +42336,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE55U8000FUXRU"
     ]
   },
   {
     "id": "samsung-ue65m70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE65M70HAUXPY",
-    "aliases": [],
+    "name": "Mini LED M70H (UE65M70HAUXPY)",
+    "aliases": [
+      "UE65M70HAUXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 322000,
     "priceAmdMax": 322000,
@@ -42237,7 +42382,7 @@
     "id": "samsung-ue65m80hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE65M80HAUXPY",
+    "name": "Mini LED M80H (UE65M80HAUXPY)",
     "tier": "mid",
     "priceAmd": 479000,
     "priceAmdMax": 479000,
@@ -42265,13 +42410,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE65M80HAUXPY"
     ]
   },
   {
     "id": "samsung-ue65u8000fuxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE65U8000FUXRU",
+    "name": "Crystal UHD U8000F (UE65U8000FUXRU)",
     "tier": "budget",
     "priceAmd": 247000,
     "priceAmdMax": 247000,
@@ -42298,13 +42446,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE65U8000FUXRU"
     ]
   },
   {
     "id": "samsung-ue65u8000huxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE65U8000HUXPY",
+    "name": "Crystal UHD U8000H (UE65U8000HUXPY)",
     "tier": "mid",
     "priceAmd": 314000,
     "priceAmdMax": 314000,
@@ -42332,14 +42483,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE65U8000HUXPY"
     ]
   },
   {
     "id": "samsung-ue75m70hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE75M70HAUXPY",
-    "aliases": [],
+    "name": "Mini LED M70H (UE75M70HAUXPY)",
+    "aliases": [
+      "UE75M70HAUXPY"
+    ],
     "tier": "upper-mid",
     "priceAmd": 467000,
     "priceAmdMax": 467000,
@@ -42373,7 +42529,7 @@
     "id": "samsung-ue75m80hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE75M80HAUXPY",
+    "name": "Mini LED M80H (UE75M80HAUXPY)",
     "tier": "upper-mid",
     "priceAmd": 629000,
     "priceAmdMax": 629000,
@@ -42401,13 +42557,16 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE75M80HAUXPY"
     ]
   },
   {
     "id": "samsung-ue75u8000huxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE75U8000HUXPY",
+    "name": "Crystal UHD U8000H (UE75U8000HUXPY)",
     "tier": "mid",
     "priceAmd": 403000,
     "priceAmdMax": 403000,
@@ -42435,14 +42594,19 @@
     "os": "Tizen",
     "sources": [
       "kitele"
+    ],
+    "aliases": [
+      "UE75U8000HUXPY"
     ]
   },
   {
     "id": "samsung-ue85m80hauxpy",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE85M80HAUXPY",
-    "aliases": [],
+    "name": "Mini LED M80H (UE85M80HAUXPY)",
+    "aliases": [
+      "UE85M80HAUXPY"
+    ],
     "tier": "flagship",
     "priceAmd": 839000,
     "priceAmdMax": 839000,
@@ -42476,8 +42640,10 @@
     "id": "samsung-ue98du9000uxru",
     "category": "tv",
     "brand": "Samsung",
-    "name": "UE98DU9000UXRU",
-    "aliases": [],
+    "name": "Crystal UHD DU9000 (UE98DU9000UXRU)",
+    "aliases": [
+      "UE98DU9000UXRU"
+    ],
     "tier": "flagship",
     "priceAmd": 1552000,
     "priceAmdMax": 1552000,
@@ -53350,6 +53516,10 @@
     "released": "2025-02",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {

@@ -2606,6 +2606,22 @@ try {
   for (const [id, map] of Object.entries(AL)) for (const o of offers[id] || []) if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
   if (n) console.log(`${n} offer colour(s) renamed to the catalogue's name (data/color-aliases.json)`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
+// Which colours a page really sells, per capacity, read off the page by a person (owner,
+// 2026-09-27): allsell's Flip 7 page is black only, ucom's S25+ has no Icyblue at 512. An offer in
+// another colour is dropped; one naming no colour becomes one row per listed colour.
+// { url: { "256": ["Black"], "*": [...] } } - a capacity not listed is left alone.
+try {
+  const PIN = {}, canon = u => String(u || '').replace(/\/+$/, '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2');
+  for (const [u, m] of Object.entries(JSON.parse(fs.readFileSync('data/offer-colors.json', 'utf8')))) PIN[canon(u)] = m;
+  let n = 0;
+  for (const id of Object.keys(offers)) offers[id] = offers[id].flatMap(o => {
+    const m = PIN[canon(o.url)], want = m && (m[o.storage] || m['*']);
+    if (!want) return [o];
+    n++;
+    return o.color ? (want.includes(o.color) ? [o] : []) : want.map(color => ({ ...o, color }));
+  });
+  if (n) console.log(`${n} offer(s) set to the colours their page sells (data/offer-colors.json)`);
+} catch (e) { if (e.code !== 'ENOENT') console.warn('offer-colors.json:', e.message); }
 // Hidden while the shop's own page says sold out (owner, 2026-09-25). data/soldout.json is
 // rewritten by every full `python tools/check-links.py --all`, so a restocked page comes back
 // on its own; nothing is pinned or deleted.
@@ -2615,6 +2631,12 @@ try {
   for (const id of Object.keys(offers)) { const k = offers[id].length; offers[id] = offers[id].filter(o => !SOLD.has(o.url)); n += k - offers[id].length; }
   if (n) console.log(`${n} sold-out offer(s) hidden (data/soldout.json)`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('soldout.json:', e.message); }
+// A watch with one case size: whatever a shop wrote in the capacity slot (3DPlanet's "64" for
+// the Ultra 2's 64 GB) is not a second size, and the offers page showed "49 GB / 64 GB" chips.
+for (const [id, list] of Object.entries(offers)) {
+  const p = phoneById[id], v = p?.variants || [];
+  if (p?.variantUnit === 'mm' && v.length === 1) for (const o of list) o.storage = v[0].storage;
+}
 let deduped = 0;
 for (const [id, list] of Object.entries(offers)) {
   const seen = new Set();
@@ -2626,7 +2648,7 @@ for (const [id, list] of Object.entries(offers)) {
     // in four colours at one price from one page, and without colour here those four rows are
     // one row: the phone arrived with a single swatch and the picker had nothing to pick. An
     // exact repeat still collapses, because an exact repeat repeats the colour too.
-    const k = [o.shop, o.url, o.price, o.storage ?? '', o.color ?? '', o.ram ?? '',
+    const k = [o.shop, String(o.url || '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2'), o.price, o.storage ?? '', o.color ?? '', o.ram ?? '',
                o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
