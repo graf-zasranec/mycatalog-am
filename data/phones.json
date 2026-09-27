@@ -39340,7 +39340,7 @@
       "resolution": "480x480"
     },
     "battery": {
-      "capacity": 247
+      "capacity": 590
     },
     "summaryEn": "Samsung Galaxy Ultra 47mm 2024.",
     "unsure": [
@@ -39349,7 +39349,14 @@
     ],
     "variantUnit": "mm",
     "os": "Wear OS, One UI Watch",
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 60.5
+    },
+    "sources": [
+      "https://shop.ucom.am/en/samsung-galaxy-watch-ultra-47mm-lte.html",
+      "https://redstore.am/en/product/samsung-galaxy-watch-ultra-2024-47mm-titanium-white"
+    ]
   },
   {
     "id": "samsung-galaxy-ultra-47mm-2025",
@@ -52313,7 +52320,13 @@
     "colors": [
       "Matte"
     ],
-    "year": 2024
+    "year": 2024,
+    "body": {
+      "weight": 30.6
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-watch-5-active/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-watch-5-lite",
@@ -52336,7 +52349,8 @@
       "resolution": "410x502"
     },
     "body": {
-      "ip": "5 ATM"
+      "ip": "5 ATM",
+      "weight": 29.2
     },
     "battery": {
       "capacity": 470
@@ -52357,7 +52371,10 @@
       "Silver",
       "Light Gold"
     ],
-    "summaryEn": "A budget smartwatch with built-in GPS."
+    "summaryEn": "A budget smartwatch with built-in GPS.",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-watch-5-lite/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmibook-14-jyu4618cn",
