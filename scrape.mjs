@@ -490,11 +490,14 @@ function pixelMatrix(html, colors) {
     // like instead: a capacity is a capacity in any language, a SIM build is written in Latin on
     // both, and whatever is left over is the colour. Keying on the English names read every
     // Armenian page as a single option with no capacity at all.
-    let mem = '', simVal = '', col = '';
+    // A tablet's "Internet" option (WiFi / WiFi + Cellular) was read as the colour, and the key
+    // below kept one row per capacity - so the cellular price, and every colour but one, vanished.
+    let mem = '', simVal = '', col = '', net = '';
     for (const x of v.properties || []) {
       const val = String(x.valueTitle || '').trim();
       if (!val) continue;
-      if (!simVal && /sim/i.test(val)) simVal = val;
+      if (!net && /^wi-?fi\b/i.test(val)) net = val;
+      else if (!simVal && /sim/i.test(val)) simVal = val;
       else if (!mem && capOf(val) != null) mem = val;
       else if (!col) col = val;
     }
@@ -508,13 +511,15 @@ function pixelMatrix(html, colors) {
     // the same label often carries the memory too - "8/128 GB" is both
     const mram = ramOf(p.memory || '');
     const sim = simBuild(p['sim card'] || '');
-    const k = [cap ?? '', sim === true ? 'e' : sim === false ? 'n' : '?'].join('|');
+    const color = colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || null;
+    const cell = net ? /cellular|lte|5g/i.test(net) : undefined;
+    const k = [cap ?? '', sim === true ? 'e' : sim === false ? 'n' : '?', color ?? '', cell ?? ''].join('|');
     const row = {
       price,
       storage: cap != null && cap >= 64 ? cap : null,
       ram: mram ?? (cap != null && cap < 64 ? cap : null),
       esim: sim,
-      color: colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || null,
+      color, cell,
       inStock: Number(v.quantity) > 0,
       // The shop named this build in its own variant data. That outranks anything the eSIM
       // post-pass could infer from a title, which is the same title on all eight rows.
@@ -1193,6 +1198,8 @@ if (process.argv[2] === '--selftest') {
     ['iPad Pro 11 M5 256GB Wi-Fi + Cellular Space Black', true], ['Apple iPad mini 7 128GB LTE', true],
     ['iPad Air 11 M4 128GB WiFi 2026 Blue', false], ['Apple iPad Air M4 11 128gb Lavander', false],
     ['iPad A16 5G 128GB Silver', true], ['iPad Pro 12.9 M2 Cell Space Gray', true],
+    ['Samsung Galaxy Tab A9 64GB X115 Silver', true], ['Samsung Galaxy Tab A9 64GB X110 Silver', false],
+    ['SAMSUNG Tab A11 (X130N) 128GB Gray', false], ['Samsung Galaxy Tab A11 WiFi +5G (X135G)', true],
   ];
   for (const [title, want] of cellCases) if (cellOf(title) !== want) { bad++; console.log(`FAIL  cell got=${cellOf(title)} want=${want}  <- ${title}`); }
   console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + cellCases.length + 1} checks pass`);
@@ -1565,7 +1572,7 @@ const SHOPS = {
             out.push({ id, price: mv.price,
               storage: mv.storage ?? storageOf(title) ?? storageOf(u) ?? v.storage,
               ram: mv.ram ?? undefined, esim: mv.esim, simFromPage: mv.simFromPage,
-              title, url: safe, image: img, color: mv.color || color, inStock: mv.inStock });
+              title, url: safe, image: img, color: mv.color || color, cell: mv.cell, inStock: mv.inStock });
           continue;
         }
         out.push({ id, price: cash || Math.min(...prices),
@@ -2473,7 +2480,9 @@ for (const [id, list] of Object.entries(offers)) {
 if (outliers) console.log(`${outliers} price(s) dropped as scrape errors`);
 
 // true = Wi-Fi + Cellular, false = Wi-Fi only (see the tablet pass below)
-function cellOf(title) { return /cellular|\bcell\b|\blte\b|\b5g\b|\+\s*sim/i.test(String(title || '')); }
+// Samsung's own model code says it too: a tablet code ending in 5 or 6 is the LTE/5G build
+// (X115, X205, X216, X516, X135G), one ending in 0 the Wi-Fi build (X110, X200, X510).
+function cellOf(title) { return /cellular|\bcell\b|\blte\b|\b5g\b|\+\s*sim|\b(?:sm-)?[xt]\d{2}[56]g?\b/i.test(String(title || '')); }
 function medianOf(a) { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; }
 
 // A screen size that the product is not made in is a misread, and enrich() cannot correct it:
@@ -2492,7 +2501,13 @@ if (badSize) console.log(`${badSize} offer(s) claimed a screen size the product 
 // the Wi-Fi one. Tablets only: a phone's "5G" is not this question.
 for (const [id, list] of Object.entries(offers)) {
   if ((phoneById[id] || {}).category !== 'tablet') continue;
-  for (const o of list) o.cell = cellOf(o.title);
+  for (const o of list) o.cell = typeof o.cell === 'boolean' ? o.cell : cellOf(o.title);
+}
+// A capacity under 32 GB on anything but a watch is the memory read as storage: iBolit's
+// "Tab S9 Ultra 12GB 256GB X916 Beige" came through as 12. The title says the real one.
+for (const [id, list] of Object.entries(offers)) {
+  if ((phoneById[id] || {}).variantUnit === 'mm') continue;
+  for (const o of list) if (o.storage != null && o.storage < 32) o.storage = storageOf(o.title) ?? o.storage;
 }
 
 let simDropped = 0;
@@ -2501,7 +2516,9 @@ if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tra
 
 // What makes two offers the same offer: product, capacity, colour, SIM build.
 function offerKey(o) {
-  return [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
+  // Wi-Fi vs cellular for the same reason as the SIM build: a tablet's cellular build is a dearer
+  // product, and without it here Pixel's Tab S9 Ultra Cellular lost to its own Wi-Fi row every time.
+  return [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell ? 'c' : ''].join('|');
 }
 // A shop that parses to NOTHING is caught above and carried forward whole. One that answers some
 // pages and refuses the rest parses to FEWER offers, and slipped straight past that: on 2026-09-21
@@ -2649,7 +2666,7 @@ for (const [id, list] of Object.entries(offers)) {
     // one row: the phone arrived with a single swatch and the picker had nothing to pick. An
     // exact repeat still collapses, because an exact repeat repeats the colour too.
     const k = [o.shop, String(o.url || '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2'), o.price, o.storage ?? '', o.color ?? '', o.ram ?? '',
-               o.esim === true ? 'e' : o.esim === false ? 'n' : '?'].join('|');
+               o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell ? 'c' : ''].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
 }

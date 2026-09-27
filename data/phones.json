@@ -37894,7 +37894,11 @@
     "name": "Galaxy Tab A8",
     "aliases": [
       "Samsung Galaxy Tab A8 10.5 X200 Gray",
-      "Galaxy Tab A8 10.5 X200"
+      "Galaxy Tab A8 10.5 X200",
+      "Galaxy Tab A8",
+      "Galaxy Tab A8 LTE",
+      "Samsung Galaxy Tab A8 10.5 X205 Gray",
+      "Galaxy Tab A8 10.5 X205"
     ],
     "tier": "budget",
     "priceAmd": 77000,
@@ -37949,81 +37953,27 @@
     "released": "2021-12",
     "sources": [
       "kimovil"
-    ]
-  },
-  {
-    "id": "samsung-galaxy-tab-a8-10-5-x205",
-    "category": "tablet",
-    "brand": "Samsung",
-    "name": "Galaxy Tab A8 LTE",
-    "aliases": [
-      "Samsung Galaxy Tab A8 10.5 X205 Gray",
-      "Galaxy Tab A8 10.5 X205"
     ],
-    "tier": "budget",
-    "priceAmd": 77000,
-    "priceAmdMax": 77000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 32,
-        "priceAmd": 77000
-      }
-    ],
-    "display": {
-      "size": 10.5,
-      "resolution": "1920x1200",
-      "ppi": 216,
-      "type": "TFT LCD (IPS)"
-    },
-    "battery": {
-      "capacity": 7040,
-      "wired": 15
-    },
-    "summaryEn": "Samsung Galaxy Tab A8 10.5 X205.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "Android, One UI",
-    "year": 2021,
-    "chipset": {
-      "name": "Unisoc Tiger T618",
-      "process": "12 nm",
-      "gpu": "ARM Mali-G52 MP2"
-    },
-    "body": {
-      "weight": 508,
-      "height": 246.8,
-      "width": 161.9,
-      "thickness": 6.9,
-      "materials": "Plastic"
-    },
-    "connectivity": {
-      "bluetooth": "5.0",
-      "wifi": "Wi-Fi 5",
-      "nfc": false
-    },
-    "cardSlot": true,
-    "camera": {
-      "main": "8 MP",
-      "front": "5 MP"
-    },
-    "released": "2021-12",
-    "sources": [
-      "kimovil"
+    "colors": [
+      "Gray",
+      "Silver",
+      "Pink Gold"
     ]
   },
   {
     "id": "samsung-galaxy-tab-a9-x110",
     "category": "tablet",
     "brand": "Samsung",
-    "name": "Galaxy Tab A9 X110",
+    "name": "Galaxy Tab A9",
     "aliases": [
       "Samsung Galaxy Tab A9 X110 Graphite",
       "Samsung Galaxy Tab A9 X110 Silver",
-      "Samsung Galaxy Tab A9 X110 Navy Blue"
+      "Samsung Galaxy Tab A9 X110 Navy Blue",
+      "Galaxy Tab A9 X110",
+      "Galaxy Tab A9 X115",
+      "Samsung Galaxy Tab A9 X115 Navy Blue",
+      "Samsung Galaxy Tab A9 X115 Graphite",
+      "Samsung Galaxy Tab A9 X115 Silver"
     ],
     "tier": "budget",
     "priceAmd": 43900,
@@ -38035,6 +37985,11 @@
         "ram": null,
         "storage": 64,
         "priceAmd": 55000
+      },
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": 74000
       }
     ],
     "display": {
@@ -38078,87 +38033,26 @@
     "released": "2023-10",
     "sources": [
       "kimovil"
-    ]
-  },
-  {
-    "id": "samsung-galaxy-tab-a9-x115",
-    "category": "tablet",
-    "brand": "Samsung",
-    "name": "Galaxy Tab A9 X115",
-    "aliases": [
-      "Samsung Galaxy Tab A9 X115 Navy Blue",
-      "Samsung Galaxy Tab A9 X115 Graphite",
-      "Samsung Galaxy Tab A9 X115 Silver"
     ],
-    "tier": "budget",
-    "priceAmd": 55900,
-    "priceAmdMax": 94000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 64,
-        "priceAmd": 63000
-      },
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 74000
-      }
-    ],
-    "display": {
-      "size": 8.7,
-      "resolution": "1340x800",
-      "ppi": 179,
-      "type": "TFT LCD (IPS)"
-    },
-    "battery": {
-      "capacity": 5100,
-      "wired": 15
-    },
-    "summaryEn": "Samsung Galaxy Tab A9 X115.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "Android, One UI",
-    "year": 2023,
-    "chipset": {
-      "name": "MediaTek Helio G99 (MT6789)",
-      "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
-    },
-    "body": {
-      "weight": 366,
-      "height": 211,
-      "width": 124.7,
-      "thickness": 8,
-      "materials": "Aluminium alloy"
-    },
-    "connectivity": {
-      "bluetooth": "5.0",
-      "wifi": "Wi-Fi 5",
-      "nfc": false
-    },
-    "cardSlot": true,
-    "camera": {
-      "main": "8 MP",
-      "front": "2 MP"
-    },
-    "released": "2023-10",
-    "sources": [
-      "kimovil"
+    "colors": [
+      "Graphite",
+      "Silver",
+      "Navy"
     ]
   },
   {
     "id": "samsung-galaxy-tab-a9plus-x210",
     "category": "tablet",
     "brand": "Samsung",
-    "name": "Galaxy Tab A9+ X210",
+    "name": "Galaxy Tab A9+",
     "aliases": [
       "Samsung Galaxy Tab A9+ X210 Navy Blue",
       "Samsung Galaxy Tab A9 X210 Silver",
-      "Samsung Galaxy Tab A9 X210 Graphite"
+      "Samsung Galaxy Tab A9 X210 Graphite",
+      "Galaxy Tab A9+ X210",
+      "Galaxy Tab A9+ X216",
+      "Samsung Galaxy Tab A9 X216 Silver",
+      "Samsung Galaxy Tab A9 X216 Graphite"
     ],
     "tier": "budget",
     "priceAmd": 66900,
@@ -38170,6 +38064,11 @@
         "ram": null,
         "storage": 64,
         "priceAmd": 75000
+      },
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": 109000
       }
     ],
     "display": {
@@ -38215,77 +38114,11 @@
     "released": "2023-10",
     "sources": [
       "kimovil"
-    ]
-  },
-  {
-    "id": "samsung-galaxy-tab-a9plus-x216",
-    "category": "tablet",
-    "brand": "Samsung",
-    "name": "Galaxy Tab A9+ X216",
-    "aliases": [
-      "Samsung Galaxy Tab A9 X216 Silver",
-      "Samsung Galaxy Tab A9 X216 Graphite"
     ],
-    "tier": "budget",
-    "priceAmd": 79900,
-    "priceAmdMax": 109000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 64,
-        "priceAmd": 94000
-      },
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 109000
-      }
-    ],
-    "display": {
-      "size": 11,
-      "resolution": "1920x1200",
-      "refresh": 90,
-      "ppi": 206,
-      "type": "TFT LCD (IPS)"
-    },
-    "battery": {
-      "capacity": 7040,
-      "wired": 15
-    },
-    "summaryEn": "Samsung Galaxy Tab A9+ X216.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "Android, One UI",
-    "year": 2023,
-    "chipset": {
-      "name": "Qualcomm Snapdragon 695 (SM6375)",
-      "process": "6 nm",
-      "gpu": "Qualcomm Adreno 619"
-    },
-    "body": {
-      "weight": 510,
-      "height": 257.1,
-      "width": 168.7,
-      "thickness": 6.9,
-      "materials": "Aluminium alloy",
-      "ip": "IP52"
-    },
-    "connectivity": {
-      "bluetooth": "5.0",
-      "wifi": "Wi-Fi 5",
-      "nfc": false
-    },
-    "cardSlot": true,
-    "camera": {
-      "main": "8 MP",
-      "front": "5 MP"
-    },
-    "released": "2023-10",
-    "sources": [
-      "kimovil"
+    "colors": [
+      "Graphite",
+      "Silver",
+      "Navy"
     ]
   },
   {
@@ -38352,6 +38185,11 @@
     "cardSlot": true,
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray",
+      "Silver",
+      "Blue"
     ]
   },
   {
@@ -38491,6 +38329,10 @@
     "cardSlot": true,
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray",
+      "Silver"
     ]
   },
   {
@@ -38556,6 +38398,11 @@
     "cardSlot": true,
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite",
+      "Silver",
+      "Pink Gold"
     ]
   },
   {
@@ -38702,12 +38549,18 @@
     "id": "samsung-galaxy-tab-s9-fe-x510",
     "category": "tablet",
     "brand": "Samsung",
-    "name": "Galaxy Tab S9 FE X510",
+    "name": "Galaxy Tab S9 FE",
     "aliases": [
       "Samsung Galaxy Tab S9 FE X510 Silver",
       "Samsung Galaxy Tab S9 FE X510 Mint",
       "Samsung Galaxy Tab S9 FE X510 Gray",
-      "Samsung Galaxy Tab S9 FE X510 Lavender"
+      "Samsung Galaxy Tab S9 FE X510 Lavender",
+      "Galaxy Tab S9 FE X510",
+      "Galaxy Tab S9 FE X516",
+      "Samsung Galaxy Tab S9 FE X516 Mint",
+      "Samsung Galaxy Tab S9 FE X516 Silver",
+      "Samsung Galaxy Tab S9 FE X516 Lavender",
+      "Samsung Galaxy Tab S9 FE X516 Gray"
     ],
     "tier": "mid",
     "priceAmd": 164000,
@@ -38770,80 +38623,12 @@
     "released": "2023-10",
     "sources": [
       "kimovil"
-    ]
-  },
-  {
-    "id": "samsung-galaxy-tab-s9-fe-x516",
-    "category": "tablet",
-    "brand": "Samsung",
-    "name": "Galaxy Tab S9 FE X516",
-    "aliases": [
-      "Samsung Galaxy Tab S9 FE X516 Mint",
-      "Samsung Galaxy Tab S9 FE X516 Silver",
-      "Samsung Galaxy Tab S9 FE X516 Lavender",
-      "Samsung Galaxy Tab S9 FE X516 Gray"
     ],
-    "tier": "mid",
-    "priceAmd": 209000,
-    "priceAmdMax": 247000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 209000
-      },
-      {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 246000
-      }
-    ],
-    "display": {
-      "size": 10.9,
-      "resolution": "2304x1440",
-      "refresh": 90,
-      "ppi": 249,
-      "type": "LCD IPS"
-    },
-    "battery": {
-      "capacity": 8000,
-      "wired": 45
-    },
-    "summaryEn": "Samsung Galaxy Tab S9 FE X516.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "Android, One UI",
-    "year": 2023,
-    "chipset": {
-      "name": "Exynos 1380",
-      "process": "5 nm",
-      "gpu": "ARM Mali-G68 MP5"
-    },
-    "body": {
-      "weight": 521,
-      "height": 254.3,
-      "width": 165.8,
-      "thickness": 6.5,
-      "materials": "Aluminium alloy",
-      "ip": "IP68"
-    },
-    "connectivity": {
-      "bluetooth": "5.3",
-      "wifi": "Wi-Fi 6",
-      "nfc": false
-    },
-    "cardSlot": true,
-    "camera": {
-      "main": "12 MP, f/2.0",
-      "front": "8 MP",
-      "video": "4K"
-    },
-    "released": "2023-10",
-    "sources": [
-      "kimovil"
+    "colors": [
+      "Gray",
+      "Silver",
+      "Lavender",
+      "Mint"
     ]
   },
   {
@@ -38911,6 +38696,10 @@
     "cardSlot": true,
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite",
+      "Beige"
     ]
   },
   {
@@ -38926,8 +38715,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 12,
+        "storage": 256,
         "priceAmd": 462900
       }
     ],
