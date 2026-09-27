@@ -5963,7 +5963,9 @@
     "display": {
       "size": 22,
       "touch": false,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "TN",
+      "refresh": 60
     },
     "variants": [
       {
@@ -5979,6 +5981,9 @@
     ],
     "aliases": [
       "22” VP228DE"
+    ],
+    "sources": [
+      "https://www.asus.com/uk/displays-desktops/monitors/eye-care/vp228de/techspec/"
     ]
   },
   {
@@ -6102,7 +6107,9 @@
     "display": {
       "size": 32,
       "touch": false,
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "type": "VA",
+      "refresh": 60
     },
     "variants": [
       {
@@ -6118,6 +6125,9 @@
     ],
     "aliases": [
       "32” CG32UQ"
+    ],
+    "sources": [
+      "https://www.asus.com/displays-desktops/monitors/gaming/cg32uq/techspec/"
     ]
   },
   {
@@ -6133,7 +6143,9 @@
     "display": {
       "size": 32,
       "touch": false,
-      "resolution": "3440 x 1440"
+      "resolution": "3440 x 1440",
+      "type": "VA",
+      "refresh": 165
     },
     "variants": [
       {
@@ -6149,6 +6161,9 @@
     ],
     "aliases": [
       "32” VG32VQ1BR"
+    ],
+    "sources": [
+      "https://www.asus.com/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg32vq1br/techspec/"
     ]
   },
   {
@@ -8287,7 +8302,9 @@
     "display": {
       "size": 34,
       "touch": false,
-      "resolution": "3440 x 1440"
+      "resolution": "3440 x 1440",
+      "type": "VA",
+      "refresh": 100
     },
     "variants": [
       {
@@ -8303,6 +8320,9 @@
     ],
     "aliases": [
       "TUF Gaming 34” VG34VQEL1A"
+    ],
+    "sources": [
+      "https://www.asus.com/us/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg34vqel1a/techspec/"
     ]
   },
   {
@@ -8595,12 +8615,16 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 75
     },
     "battery": {},
     "summaryEn": "ASUS VA27DQSB-W.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/displays-desktops/monitors/eye-care/va27dqsb-w/techspec/"
     ]
   },
   {
@@ -8733,7 +8757,8 @@
       "touch": false,
       "size": 32,
       "resolution": "2560 x 1440",
-      "type": "VA"
+      "type": "VA",
+      "refresh": 170
     },
     "battery": {},
     "summaryEn": "ASUS VG32AQA1A 90LM07L0-B02370.",
@@ -8742,7 +8767,10 @@
     ],
     "body": {
       "weight": 6800
-    }
+    },
+    "sources": [
+      "https://www.asus.com/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg32aqa1a/techspec/"
+    ]
   },
   {
     "id": "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11",
@@ -10875,12 +10903,16 @@
       "touch": false,
       "size": 24,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 100
     },
     "battery": {},
     "summaryEn": "ASUS VZ24EHF-W.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/displays-desktops/monitors/eye-care/vz24ehf/techspec/"
     ]
   },
   {
@@ -10910,7 +10942,8 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 100
     },
     "battery": {},
     "summaryEn": "ASUS VZ27EHF 90LM07B0-B01470.",
@@ -10919,7 +10952,10 @@
     ],
     "body": {
       "weight": 4100
-    }
+    },
+    "sources": [
+      "https://www.asus.com/us/displays-desktops/monitors/eye-care/vz27ehf/techspec/"
+    ]
   },
   {
     "id": "asus-zenbook-14-um3402ya-oled",
@@ -11208,7 +11244,9 @@
     "display": {
       "size": 15.6,
       "touch": true,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "IPS",
+      "refresh": 60
     },
     "variants": [
       {
@@ -11221,6 +11259,9 @@
     "summaryEn": "A 15.6-inch monitor.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/displays-desktops/monitors/zenscreen/zenscreen-touch-mb16aht/techspec/"
     ]
   },
   {
@@ -12034,6 +12075,12 @@
     "summaryEn": "Bose Soundlink Mini II.",
     "unsure": [
       "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "4.0"
+    },
+    "sources": [
+      "https://allsell.am/en/bose-soundlink-mini-ii"
     ]
   },
   {
@@ -12706,12 +12753,17 @@
     "display": {
       "touch": false,
       "size": 27,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "VA",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Dell 27'' E2723H.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.dell.com/en-us/shop/dell-27-monitor-e2723h/apd/210-bemi/monitors-monitor-accessories"
     ]
   },
   {
@@ -17188,6 +17240,12 @@
     "summaryEn": "Harman Kardon Studio 8.",
     "unsure": [
       "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.1"
+    },
+    "sources": [
+      "https://allsell.am/en/harman-kardon-onyx-studio-8-portable-wireless-speaker"
     ]
   },
   {
@@ -30330,12 +30388,16 @@
       "touch": false,
       "size": 24,
       "resolution": "1920 x 1080",
-      "refresh": 180
+      "refresh": 180,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "LG 24GS50F-B.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.lg.com/us/monitors/lg-24gs50f-b-gaming-monitor"
     ]
   },
   {
@@ -30394,12 +30456,17 @@
     "display": {
       "touch": false,
       "size": 27,
-      "resolution": "1920 x 1080"
+      "resolution": "1920 x 1080",
+      "type": "VA",
+      "refresh": 180
     },
     "battery": {},
     "summaryEn": "LG 27GS50F-B.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.lg.com/us/monitors/lg-27gs50f-b-gaming-monitor"
     ]
   },
   {
@@ -30426,12 +30493,16 @@
       "touch": false,
       "size": 27,
       "resolution": "1920 x 1080",
-      "type": "IPS"
+      "type": "IPS",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 27SR50F-W.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.lg.com/us/monitors/lg-27sr50f-w-smart-monitor"
     ]
   },
   {
@@ -32043,7 +32114,13 @@
     ],
     "body": {
       "weight": 700
-    }
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "sources": [
+      "https://allsell.am/en/marshall-emberton-bluetooth-portable-speaker"
+    ]
   },
   {
     "id": "marshall-emberton-iii",
@@ -40435,12 +40512,17 @@
     "display": {
       "touch": false,
       "size": 55,
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "type": "VA",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung Odyssey Ark 55” LS55CG97WNIXCI.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/ls55cg970nnxgo/SPECSHEET_LS55CG970NNXGO_v2.pdf"
     ]
   },
   {
@@ -52942,7 +53024,9 @@
     "display": {},
     "chipset": {},
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
     "os": "Alice",
     "variants": [
       {
@@ -52960,7 +53044,10 @@
     ],
     "body": {
       "weight": 230
-    }
+    },
+    "sources": [
+      "https://allsell.am/en/yandex-station-lite-yndx-00025"
+    ]
   },
   {
     "id": "yandex-station-max",
@@ -53009,7 +53096,9 @@
     "display": {},
     "chipset": {},
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
     "os": "Alice",
     "variants": [
       {
@@ -53023,6 +53112,9 @@
     "summaryEn": "The older palm-sized Alice speaker, still the cheapest way in.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://allsell.am/en/yandex-station-mini-black-yndx-00021"
     ]
   },
   {
