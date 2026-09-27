@@ -2390,7 +2390,8 @@
       }
     ],
     "display": {
-      "size": 11
+      "size": 11,
+      "resolution": "2388x1668"
     },
     "battery": {},
     "summaryEn": "Apple iPad 11 Pro Wi-Fi M2 MNXG3RK/A.",
@@ -2405,7 +2406,8 @@
       "gpu": "Apple 10-core GPU"
     },
     "body": {
-      "materials": "Aluminium alloy"
+      "materials": "Aluminium alloy",
+      "weight": 466
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -2421,7 +2423,8 @@
     },
     "released": "2022-10",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/en-us/111842"
     ]
   },
   {
@@ -2706,7 +2709,8 @@
     "accent": "#A9C4D9",
     "display": {
       "size": 11,
-      "type": "Liquid Retina IPS LCD"
+      "type": "Liquid Retina IPS LCD",
+      "resolution": "2360x1640"
     },
     "chipset": {
       "name": "Apple M4",
@@ -2772,7 +2776,8 @@
     "battery": {},
     "body": {
       "materials": "Aluminium unibody",
-      "ip": "IP42"
+      "ip": "IP42",
+      "weight": 464
     },
     "connectivity": {
       "network": "Wi-Fi, or Wi-Fi + Cellular",
@@ -2803,7 +2808,8 @@
       "Apple iPad Air 13 2026"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.apple.com/ipad-air/specs/"
     ]
   },
   {
@@ -2848,7 +2854,8 @@
       }
     ],
     "display": {
-      "size": 11
+      "size": 11,
+      "resolution": "2360x1640"
     },
     "battery": {},
     "summaryEn": "Apple iPad Air 11 Wi-Fi 2024.",
@@ -2863,7 +2870,8 @@
       "gpu": "Apple 10-core GPU"
     },
     "body": {
-      "materials": "Aluminium alloy"
+      "materials": "Aluminium alloy",
+      "weight": 462
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -2878,7 +2886,8 @@
     },
     "released": "2024-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/en-us/119894"
     ]
   },
   {
@@ -2928,7 +2937,8 @@
       }
     ],
     "display": {
-      "size": 11
+      "size": 11,
+      "resolution": "2360x1640"
     },
     "battery": {},
     "summaryEn": "Apple iPad Air 11 Wi-Fi + Cellular 2024.",
@@ -2943,7 +2953,8 @@
       "gpu": "Apple 10-core GPU"
     },
     "body": {
-      "materials": "Aluminium alloy"
+      "materials": "Aluminium alloy",
+      "weight": 462
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -2958,7 +2969,8 @@
     },
     "released": "2024-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/en-us/119894"
     ]
   },
   {
@@ -3259,7 +3271,8 @@
     "display": {
       "size": 11,
       "type": "Ultra Retina XDR OLED (tandem)",
-      "refresh": 120
+      "refresh": 120,
+      "resolution": "2420x1668"
     },
     "chipset": {
       "name": "Apple M5",
@@ -3325,7 +3338,8 @@
     "battery": {},
     "body": {
       "materials": "Aluminium unibody",
-      "ip": "IP42"
+      "ip": "IP42",
+      "weight": 444
     },
     "connectivity": {
       "network": "Wi-Fi, or Wi-Fi + Cellular",
@@ -3354,7 +3368,8 @@
       "Apple iPad Pro 13 2025"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.apple.com/ipad-pro/specs/"
     ]
   },
   {
@@ -35751,13 +35766,28 @@
         "priceAmd": 84900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6.7,
+      "resolution": "720x1600",
+      "type": "PLS LCD"
+    },
+    "battery": {
+      "capacity": 6000
+    },
     "summaryEn": "Samsung A08.",
     "unsure": [
       "popularity"
     ],
-    "os": "Android, One UI"
+    "os": "Android, One UI",
+    "body": {
+      "weight": 197
+    },
+    "camera": {
+      "main": "50 MP"
+    },
+    "sources": [
+      "https://www.samsung.com/levant/smartphones/galaxy-a/galaxy-a08-dark-blue-128gb-sm-a085fdbgmea/"
+    ]
   },
   {
     "id": "samsung-galaxy-a16",
@@ -49953,14 +49983,31 @@
         "priceAmd": 41900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6.52,
+      "resolution": "720x1600"
+    },
+    "battery": {
+      "capacity": 5000
+    },
     "summaryEn": "Xiaomi Redmi A2+.",
     "unsure": [
       "popularity"
     ],
     "os": "Android",
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "MediaTek Helio G36"
+    },
+    "body": {
+      "weight": 192
+    },
+    "camera": {
+      "main": "8 MP, f/2.0"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-a2-plus/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-a3",
@@ -50635,14 +50682,32 @@
         "priceAmd": 70700
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6.67,
+      "resolution": "1080x2400",
+      "type": "AMOLED"
+    },
+    "battery": {
+      "capacity": 5000
+    },
     "summaryEn": "Xiaomi Redmi Note 12.",
     "unsure": [
       "popularity"
     ],
     "os": "Android",
-    "year": 2023
+    "year": 2023,
+    "chipset": {
+      "name": "Qualcomm Snapdragon 685"
+    },
+    "body": {
+      "weight": 183.5
+    },
+    "camera": {
+      "main": "50 MP, f/1.8"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-note-12/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-13",
@@ -50667,13 +50732,31 @@
         "priceAmd": 78900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6.67,
+      "resolution": "1080x2400",
+      "type": "AMOLED"
+    },
+    "battery": {
+      "capacity": 5000
+    },
     "summaryEn": "Xiaomi Redmi Note 13.",
     "unsure": [
       "popularity"
     ],
-    "os": "Android, HyperOS"
+    "os": "Android, HyperOS",
+    "chipset": {
+      "name": "Qualcomm Snapdragon 685"
+    },
+    "body": {
+      "weight": 188.5
+    },
+    "camera": {
+      "main": "108 MP"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-note-13/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-13-pro",
@@ -50854,13 +50937,31 @@
         "priceAmd": 85900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6.67,
+      "resolution": "1080x2400",
+      "type": "AMOLED"
+    },
+    "battery": {
+      "capacity": 5500
+    },
     "summaryEn": "Xiaomi Redmi Note 14.",
     "unsure": [
       "popularity"
     ],
-    "os": "Android, HyperOS"
+    "os": "Android, HyperOS",
+    "chipset": {
+      "name": "MediaTek Helio G99-Ultra"
+    },
+    "body": {
+      "weight": 196.5
+    },
+    "camera": {
+      "main": "108 MP"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-note-14/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-14-pro",
@@ -51106,13 +51207,31 @@
         "priceAmd": 98900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6.77,
+      "resolution": "1080x2392",
+      "type": "AMOLED"
+    },
+    "battery": {
+      "capacity": 6000
+    },
     "summaryEn": "Xiaomi Redmi Note 15.",
     "unsure": [
       "popularity"
     ],
-    "os": "Android, HyperOS"
+    "os": "Android, HyperOS",
+    "chipset": {
+      "name": "MediaTek Helio G100-Ultra"
+    },
+    "body": {
+      "weight": 183.7
+    },
+    "camera": {
+      "main": "108 MP"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-note-15/specs/"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-15-pro",
