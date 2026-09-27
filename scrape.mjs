@@ -511,7 +511,8 @@ function pixelMatrix(html, colors) {
     // the same label often carries the memory too - "8/128 GB" is both
     const mram = ramOf(p.memory || '');
     const sim = simBuild(p['sim card'] || '');
-    const color = colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || null;
+    // an unreadable label is kept as written, so data/color-aliases.json can name it (Pixel 9's "Սև")
+    const color = colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || p.color || null;
     const cell = net ? /cellular|lte|5g/i.test(net) : undefined;
     const k = [cap ?? '', sim === true ? 'e' : sim === false ? 'n' : '?', color ?? '', cell ?? ''].join('|');
     const row = {
@@ -2506,8 +2507,11 @@ for (const [id, list] of Object.entries(offers)) {
 // A capacity under 32 GB on anything but a watch is the memory read as storage: iBolit's
 // "Tab S9 Ultra 12GB 256GB X916 Beige" came through as 12. The title says the real one.
 for (const [id, list] of Object.entries(offers)) {
-  if ((phoneById[id] || {}).variantUnit === 'mm') continue;
-  for (const o of list) if (o.storage != null && o.storage < 32) o.storage = storageOf(o.title) ?? o.storage;
+  const p = phoneById[id] || {};
+  if (p.variantUnit === 'mm' || !['phone', 'tablet', 'laptop'].includes(p.category)) continue;
+  // "12GB/512Cobalt Violet" (iBolit, S26) writes the storage bare after the slash
+  for (const o of list) if (o.storage != null && o.storage < 32)
+    o.storage = storageOf(o.title) ?? (+(/\b\d{1,2}\s*gb\s*\/\s*(\d{3,4})/i.exec(o.title) || [])[1] || null);
 }
 
 let simDropped = 0;
@@ -2620,8 +2624,22 @@ if (remem) console.log(`${remem} laptop offer(s) had memory in the capacity colu
 try {
   const AL = JSON.parse(fs.readFileSync('data/color-aliases.json', 'utf8'));
   let n = 0;
+  // Pixel reads its /am/ pages, where a colour is "Սև" or "Վարդագույն ոսկի". data/terms.json
+  // already knows the English for most of them, so an unknown label is put back into English
+  // first and then matched and aliased like any other shop's.
+  const EN = new Map();
+  for (const [en, tr] of Object.entries(TERMS_FILE)) for (const t of [].concat(tr)) if (!EN.has(String(t).toLowerCase())) EN.set(String(t).toLowerCase(), en);
+  for (const [id, list] of Object.entries(offers)) { const c = (phoneById[id] || {}).colors || [];
+    for (const o of list) if (o.color && !c.includes(o.color) && !(AL[id] || {})[o.color]) {
+      const en = EN.get(o.color.toLowerCase()); if (en) o.color = c.find(x => x.toLowerCase() === en.toLowerCase()) || en; } }
   for (const [id, map] of Object.entries(AL)) for (const o of offers[id] || []) if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
   if (n) console.log(`${n} offer colour(s) renamed to the catalogue's name (data/color-aliases.json)`);
+  // A colour that is still not one of the product's own reads as "not stated", which the page
+  // shows under every swatch - left as it was, it vanished the moment a reader picked any colour.
+  let q = 0;
+  for (const [id, list] of Object.entries(offers)) { const c = (phoneById[id] || {}).colors;
+    if (c?.length) for (const o of list) if (o.color && !c.includes(o.color)) { o.color = null; q++; } }
+  if (q) console.log(`${q} offer colour(s) the product does not come in - left unstated`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
 // Which colours a page really sells, per capacity, read off the page by a person (owner,
 // 2026-09-27): allsell's Flip 7 page is black only, ucom's S25+ has no Icyblue at 512. An offer in
@@ -2669,6 +2687,15 @@ for (const [id, list] of Object.entries(offers)) {
                o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell ? 'c' : ''].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
+}
+// The same page read twice, once with the memory or colour and once without (pixel's /am/ crawl
+// and its /en/ hand row): the vaguer copy says nothing the fuller one does not, and the offers
+// page showed Pixel 9 at 285 000 twice. Dropped only when a fuller sibling exists.
+for (const [id, list] of Object.entries(offers)) {
+  const k = o => [o.shop, String(o.url || '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2'), o.price, o.storage ?? '', o.esim ?? '', o.cell ? 'c' : ''].join('|');
+  offers[id] = list.filter(o => (o.ram != null && o.color) || !list.some(v => v !== o && k(v) === k(o)
+    && (v.ram ?? o.ram) === (o.ram ?? v.ram) && (v.color || o.color) === (o.color || v.color)
+    && (v.ram != null) + !!v.color > (o.ram != null) + !!o.color) || (deduped++, false));
 }
 if (deduped) console.log(`${deduped} duplicate offer row(s) collapsed`);
 

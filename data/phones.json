@@ -598,8 +598,12 @@
       "name": "Intel Core i3-1305U"
     },
     "sources": [
-      "https://store.acer.com/vi-vn/aspire-lite-16-al16-52p-572a"
-    ]
+      "https://store.acer.com/vi-vn/aspire-lite-16-al16-52p-572a",
+      "https://nanoreview.net/en/laptop/acer-aspire-lite-16-al16-52p"
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "acer-aspire-lite-al16-52p-59qu",
@@ -632,8 +636,12 @@
       "name": "Intel Core i5-1334U"
     },
     "sources": [
-      "https://store.acer.com/vi-vn/aspire-lite-16-al16-52p-572a"
-    ]
+      "https://store.acer.com/vi-vn/aspire-lite-16-al16-52p-572a",
+      "https://nanoreview.net/en/laptop/acer-aspire-lite-16-al16-52p"
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "acer-aspire-lite-al16-54p-37j9",
@@ -1176,7 +1184,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-155H"
-    }
+    },
+    "body": {
+      "weight": 1900
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/acer-predator-helios-neo-14-phn14-51"
+    ]
   },
   {
     "id": "acer-predator-helios-neo-16s-71-91aw",
@@ -4852,7 +4866,8 @@
       }
     ],
     "display": {
-      "size": 14.2
+      "size": 14.2,
+      "resolution": "3024x1964"
     },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 14 2023 MTL73.",
@@ -4892,13 +4907,19 @@
         "size": 14
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14.2,
+      "resolution": "3024x1964"
+    },
     "battery": {},
     "summaryEn": "Apple Macbook PRO 14 M4.",
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Black",
+      "Silver"
+    ],
     "os": "macOS",
     "year": 2024,
     "connectivity": {
@@ -4909,7 +4930,10 @@
     },
     "sources": [
       "https://support.apple.com/en-us/121552"
-    ]
+    ],
+    "chipset": {
+      "name": "Apple M4"
+    }
   },
   {
     "id": "apple-macbook-pro-14-m4-max",
@@ -4959,7 +4983,10 @@
     },
     "sources": [
       "https://support.apple.com/en-us/121553"
-    ]
+    ],
+    "chipset": {
+      "name": "Apple M4 Max"
+    }
   },
   {
     "id": "apple-macbook-pro-14-m4-pro",
@@ -5291,7 +5318,8 @@
       }
     ],
     "display": {
-      "size": 14.2
+      "size": 14.2,
+      "resolution": "3024x1964"
     },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 14 MRX33 2023.",
@@ -6263,7 +6291,13 @@
     ],
     "chipset": {
       "name": "Intel Core 5-120U"
-    }
+    },
+    "body": {
+      "weight": 1350
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/asus-expertbook-b5-b5405"
+    ]
   },
   {
     "id": "asus-expertbook-b5-b5405cca",
@@ -6296,7 +6330,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255H"
-    }
+    },
+    "body": {
+      "weight": 1350
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/asus-expertbook-b5-b5405"
+    ]
   },
   {
     "id": "asus-expertbook-p1-p1503cva-misty",
@@ -8805,7 +8845,13 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 7 7730U"
-    }
+    },
+    "body": {
+      "weight": 1880
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/asus-vivobook-16-m1605"
+    ]
   },
   {
     "id": "asus-vivobook-16-f1605va-ws96",
@@ -9856,7 +9902,10 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Green",
+      "Silver"
+    ],
     "sources": [
       "https://www.zigzag.am/am/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html"
     ]
@@ -10000,7 +10049,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 16,
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "3200x2000"
     },
     "chipset": {
       "name": "Intel Core Ultra 9 185H"
@@ -10026,7 +10076,8 @@
       "weight": 1500
     },
     "sources": [
-      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-s-16-oled-s5606/techspec/"
+      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-s-16-oled-s5606/techspec/",
+      "https://nanoreview.net/en/laptop/asus-vivobook-s-16-oled-s5606"
     ]
   },
   {
@@ -10890,6 +10941,12 @@
       "Zenbook 14 OLED UX3405",
       "ASUS Zenbook 14 UX3405CA",
       "ZenBook 14 OLED TOUCH Ultra 7-265H"
+    ],
+    "body": {
+      "weight": 1200
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/asus-zenbook-14-oled-ux3405"
     ]
   },
   {
@@ -13018,7 +13075,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i7-13620H"
-    }
+    },
+    "body": {
+      "weight": 2060
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/dell-inspiron-16-plus-7630"
+    ]
   },
   {
     "id": "dell-inspiron-7440-core-5",
@@ -13172,7 +13235,8 @@
       }
     ],
     "display": {
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "size": 14
     },
     "battery": {},
     "summaryEn": "Dell Inspiron 7445.",
@@ -13184,7 +13248,8 @@
       "weight": 1710
     },
     "sources": [
-      "https://www.dell.com/support/manuals/en-us/inspiron-14-7445-2-in-1-laptop/inspiron-14-7445-2in1-owners-manual/dimensions-and-weight"
+      "https://www.dell.com/support/manuals/en-us/inspiron-14-7445-2-in-1-laptop/inspiron-14-7445-2in1-owners-manual/dimensions-and-weight",
+      "https://nanoreview.net/en/laptop/dell-inspiron-14-7445"
     ]
   },
   {
@@ -15091,7 +15156,10 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Blue",
+      "Gray"
+    ],
     "os": "Garmin (own system)",
     "body": {
       "weight": 20
@@ -15273,7 +15341,9 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Slate Gray"
+    ],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
     "year": 2024,
@@ -15926,7 +15996,10 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Black",
+      "Gold"
+    ],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
     "year": 2025,
@@ -16479,7 +16552,8 @@
     ],
     "colors": [
       "Obsidian",
-      "Porcelain"
+      "Porcelain",
+      "Lavender"
     ],
     "summaryEn": "The cheap Pixel: Google’s camera processing without the Pro price.",
     "unsure": [
@@ -16614,9 +16688,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 12,
+        "storage": 128,
         "priceAmd": 285000
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 325000
       }
     ],
     "display": {
@@ -16667,6 +16746,12 @@
     "released": "2024-08",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Obsidian",
+      "Porcelain",
+      "Wintergreen",
+      "Peony"
     ]
   },
   {
@@ -20816,7 +20901,10 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "White",
+      "Purple"
+    ],
     "year": 2024,
     "chipset": {
       "name": "Intel Core Ultra 5-125H"
@@ -23579,7 +23667,13 @@
     "year": 2023,
     "chipset": {
       "name": "Intel Core i5-1335U"
-    }
+    },
+    "body": {
+      "weight": 1410
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/hp-elitebook-640-g10"
+    ]
   },
   {
     "id": "hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet",
@@ -24859,8 +24953,12 @@
       "name": "Intel Core i7-1355U"
     },
     "sources": [
-      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=85C38EA"
-    ]
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=85C38EA",
+      "https://nanoreview.net/en/laptop/hp-probook-450-g10"
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "hp-probook-450-g9-7c196pa",
@@ -24896,8 +24994,12 @@
       "name": "Intel Core i7-1255U"
     },
     "sources": [
-      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=7C196PA"
-    ]
+      "https://support.hp.com/us-en/product/product-specs/x/model/2101525809?sku=7C196PA",
+      "https://nanoreview.net/en/laptop/hp-probook-450-g9"
+    ],
+    "body": {
+      "weight": 1740
+    }
   },
   {
     "id": "hp-s5-524sh",
@@ -27066,7 +27168,12 @@
       "popularity"
     ],
     "colors": [
-      "White"
+      "White",
+      "Black",
+      "Blue",
+      "Pink",
+      "Light Blue",
+      "Beige"
     ],
     "audio": {
       "form": "tws",
@@ -27598,7 +27705,9 @@
       "popularity"
     ],
     "released": "2023",
-    "colors": [],
+    "colors": [
+      "Blue"
+    ],
     "year": 2023,
     "chipset": {
       "name": "Intel Core i5-1335U"
@@ -28270,7 +28379,9 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Grey"
+    ],
     "year": 2023,
     "body": {
       "weight": 1550
@@ -32066,7 +32177,8 @@
     "colors": [
       "Black",
       "Brown",
-      "Cream"
+      "Cream",
+      "Blue"
     ],
     "summaryEn": "100+ hours on a charge and wireless charging, in the on-ear shape Marshall has kept for a decade.",
     "unsure": [
@@ -35294,7 +35406,11 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Cream",
+      "Graphite",
+      "Silver"
+    ],
     "variantUnit": "mm",
     "os": "Wear OS, One UI Watch",
     "year": 2026,
@@ -35907,7 +36023,8 @@
     "colors": [
       "Black",
       "Blue",
-      "Pink"
+      "Pink",
+      "Light Green"
     ],
     "summaryEn": "A 120Hz AMOLED and a 5000 mAh battery in the budget tier, with room for a microSD card.",
     "unsure": [
@@ -37471,7 +37588,9 @@
       "Black",
       "White",
       "Cobalt Violet",
-      "Sky Blue"
+      "Sky Blue",
+      "Silver Shadow",
+      "Pink Gold"
     ],
     "summaryEn": "The compact S26 on Samsung's own Exynos 2600, with a 6.3-inch 120Hz panel and seven years of updates.",
     "unsure": [
@@ -37727,9 +37846,11 @@
     "updates": "7 years of OS and security updates",
     "colors": [
       "Black",
-      "Blue",
+      "Sky Blue",
       "Cobalt Violet",
-      "White"
+      "White",
+      "Silver Shadow",
+      "Pink Gold"
     ],
     "summaryEn": "Samsung's 2026 flagship: a 200 MP f/1.4 main camera, two telephotos and a 6.9-inch Quad HD+ panel.",
     "unsure": [
@@ -39152,7 +39273,8 @@
     "os": "Wear OS 6, One UI Watch",
     "colors": [
       "Titanium Gray",
-      "Titanium White"
+      "Titanium White",
+      "Titanium Silver"
     ],
     "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance.",
     "sources": [
@@ -39199,7 +39321,10 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Black",
+      "Gold"
+    ],
     "variantUnit": "mm",
     "os": "Wear OS, One UI Watch",
     "year": 2021,
@@ -48148,7 +48273,11 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Silver",
+      "Black",
+      "Blue"
+    ],
     "os": "Android, HyperOS",
     "year": 2025,
     "chipset": {
@@ -48290,7 +48419,11 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Black",
+      "Silver",
+      "Green"
+    ],
     "os": "Android, HyperOS",
     "chipset": {
       "name": "Qualcomm Snapdragon 6 Gen 3",
@@ -48647,7 +48780,9 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Black"
+    ],
     "os": "Android, HyperOS",
     "chipset": {
       "name": "MediaTek Dimensity 9500s",
@@ -51557,7 +51692,8 @@
     "colors": [
       "Gray",
       "Green",
-      "Blue"
+      "Blue",
+      "Lavender Purple"
     ],
     "summaryEn": "Redmi's 11-inch budget tablet with a microSD slot.",
     "body": {
@@ -52991,7 +53127,8 @@
     "colors": [
       "Yellow",
       "Black",
-      "Purple"
+      "Purple",
+      "Mint"
     ],
     "summaryEn": "The smallest Alice speaker - a voice assistant on a cable, not a stereo.",
     "unsure": [
@@ -53028,7 +53165,8 @@
     ],
     "colors": [
       "Blue",
-      "Graphite"
+      "Graphite",
+      "Beige"
     ],
     "summaryEn": "The loud one: room-filling sound and a clock face on the front.",
     "unsure": [
@@ -53062,7 +53200,8 @@
     ],
     "colors": [
       "Black",
-      "White"
+      "White",
+      "Blue"
     ],
     "summaryEn": "The older palm-sized Alice speaker, still the cheapest way in.",
     "unsure": [
@@ -53100,7 +53239,8 @@
     ],
     "colors": [
       "Black",
-      "Gray"
+      "Gray",
+      "Blue"
     ],
     "summaryEn": "A palm-sized Alice speaker with a Zigbee hub built in.",
     "unsure": [
