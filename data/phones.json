@@ -5469,7 +5469,9 @@
     "display": {
       "touch": false,
       "size": 27,
-      "resolution": "5120 x 2880"
+      "resolution": "5120 x 2880",
+      "type": "Mini-LED",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Apple Studio Display XDR 2026 Tilt-Height adjustable /MFEL4*.",
@@ -5478,7 +5480,10 @@
     ],
     "body": {
       "weight": 7000
-    }
+    },
+    "sources": [
+      "https://www.apple.com/studio-display-xdr/specs/"
+    ]
   },
   {
     "id": "apple-tws-bluetooth-headsets-3rd-generation",
