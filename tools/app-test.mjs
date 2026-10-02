@@ -130,7 +130,7 @@ is([app.pageCount(0), app.pageCount(36), app.pageCount(37)], [1, 1, 2], 'paging 
 
 /* --- freshness is not borrowed --------------------------------------------------------- */
 const today = (prices.generated || '').slice(0, 10);
-is(app.seenTag({ seen: today }), '', 'a price read today needs no tag');
+is(/\d\d\.\d\d/.test(app.seenTag({ seen: today })), true, 'a price read today shows its date too (owner, 2026-10-02)');
 is(/by hand|ձեռքով|вручную/.test(app.seenTag({})), true, 'a hand-recorded price says so');
 is(/\d\d\.\d\d/.test(app.seenTag({ seen: '2026-01-09' })), true, 'an older price shows its own day');
 

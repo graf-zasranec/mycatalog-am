@@ -444,10 +444,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* construct: category cards, then one block per question */
 .cnh{font-size:clamp(30px,4.6vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin:18px 0 0}
 .clead{color:var(--body);font-size:1.0625rem;max-width:58ch;margin:10px 0 0}
-.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:12px}
 /* the count must not push the name out of the card, at any width */
-.ccard>b{min-width:0;overflow-wrap:anywhere}.ccard .num{flex:none}
-.ccard{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;cursor:pointer;
+.ccard>b{min-width:0;overflow-wrap:break-word}.ccard .num{flex:none}
+/* count under the name at every width: beside it, it took the room an Armenian word needs and split it */
+.ccard{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;padding:16px 18px;cursor:pointer;
   border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);color:var(--text);
   font-size:1rem;font-weight:700;text-align:left;transition:border-color .12s,background .12s,color .12s}
 .ccard:hover{border-color:var(--text)}
@@ -469,8 +470,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* 1fr is minmax(auto,1fr): the tenth category's name is wider than a 390px half-column, so it
    set the column floor and the page scrolled sideways. The column may shrink, the label wraps. */
 @media (max-width:640px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .ccard{padding:13px 14px;font-size:0.9375rem}
-  .ccard b{min-width:0;overflow-wrap:anywhere}}
+  /* the count goes under the name, so an Armenian word gets the whole tile, not split mid-word */
+  .ccard{padding:13px 14px;font-size:0.9375rem;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px}
+  .ccard b{min-width:0;overflow-wrap:break-word}}
 .ctabs{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;align-items:center;margin:22px 0 4px}
 .ctabs::-webkit-scrollbar{display:none}
 .ctabs .ctab{flex:none}
@@ -587,14 +589,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .badge.na{background:#FFFFFF;color:#4A5262;border:1px solid #D9D0C2;box-shadow:none}
 .pbody{padding:12px 4px 2px;display:flex;flex-direction:column;flex:1}
 .eyebrow{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase}
-.pcard h3{font-size:1rem;font-weight:700;letter-spacing:-.02em;margin-top:3px;line-height:1.3;overflow-wrap:anywhere;min-width:0}
+.pcard h3{font-size:1rem;font-weight:700;letter-spacing:-.02em;margin-top:3px;line-height:1.3;overflow-wrap:break-word;min-width:0}
 .pcard h3 a::after{content:"";position:absolute;inset:0;z-index:1}
 .sc{min-width:0;display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
 /* nowrap on a chip whose text is longer than the card - "Over-ear, active noise cancellation"
    is 254px against a 176px card on a phone - pushed the whole page sideways. The chip wraps and
    is capped to the card instead; a taller pill costs nothing, a sideways page costs the layout. */
 .sc li{font-size:11.5px;font-weight:600;color:var(--body);background:var(--surface2);border-radius:7px;
-  padding:3px 7px;max-width:100%;overflow-wrap:anywhere}
+  padding:3px 7px;max-width:100%;overflow-wrap:break-word}
 .pfoot{margin-top:auto;padding-top:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
 .pprice{font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
 /* Two cards across a 360 px phone leave ~136 px of footer: a TV at "6 398 900 ֏" plus the 34 px
@@ -636,8 +638,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* A hard 44% column is narrower than a single Armenian word: "հաճախականություն" alone is wider
    than 118px, so the label ran out of its own box. The label takes the room it needs, gives the
    rest back when it is short, and breaks the word when even that is not enough. */
-.kv dt{color:var(--muted);flex:1 1 44%;min-width:0;overflow-wrap:anywhere;font-size:0.875rem}
-.kv dd{margin:0;font-weight:600;text-align:right;flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
+.kv dt{color:var(--muted);flex:1 1 44%;min-width:0;overflow-wrap:break-word;font-size:0.875rem}
+.kv dd{margin:0;font-weight:600;text-align:right;flex:1 1 auto;min-width:0;overflow-wrap:break-word}
 .simrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:14px}
 .sim{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:12px;display:flex;
   align-items:center;gap:12px;transition:border-color .15s,box-shadow .15s}
@@ -655,7 +657,7 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
   letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding-bottom:12px}
 /* 8.5vw peaking at 96px ran the title off the side of a wide window and at browser zoom */
 .pname{font-size:clamp(30px,5vw,58px);font-weight:800;letter-spacing:-.04em;line-height:1.02;
-  overflow-wrap:anywhere}
+  overflow-wrap:break-word}
 .pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);gap:44px;align-items:stretch;margin-top:14px}
 /* Full width of its column: the cutouts are 1200px and the column tops out around 800, so
    the big photo the page was designed around is still a downscale, never an upscale. */
@@ -738,7 +740,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 /* text top-aligned: the role, name and price lines sit level across the row of cards */
 .cwt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
 .cwt em{font-style:normal;font-size:0.6875rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.cwt b{font-size:0.9375rem;font-weight:600;overflow-wrap:anywhere}
+.cwt b{font-size:0.9375rem;font-weight:600;overflow-wrap:break-word}
 .cwt .num{font-size:0.875rem;font-weight:700}
 .cwt .cwd{font-size:0.75rem;font-weight:700}
 /* cheaper than the phone you are on reads green, dearer reads red - the trade-off before the click */
@@ -819,7 +821,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .cphotos img{max-height:clamp(84px,13vw,170px);width:auto;max-width:100%}
 .ccol:last-child{border-right:0}
 .ccol b,.ccol .cname{font-size:0.8125rem;font-weight:700;display:block;line-height:1.25;color:var(--text)}
-.ccol .cname{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px;overflow-wrap:anywhere}
+.ccol .cname{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px;overflow-wrap:break-word}
 .ccol .cname:hover{text-decoration-color:var(--brand);color:var(--brand)}
 /* on the photo's corner, where it cannot sit on top of the name */
 .cphotos .x{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:50%;
@@ -909,7 +911,7 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
    collapsed and the title, the counters and the controls crowded into each other. Each group
    wraps as a unit, so they stack instead of overlapping. */
 .cbar-l,.cbar-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
-.cbar-l h1{overflow-wrap:anywhere;min-width:0;max-width:100%}
+.cbar-l h1{overflow-wrap:break-word;min-width:0;max-width:100%}
 .cbar-r{margin-left:auto}
 .sw{display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-size:0.875rem;font-weight:600;user-select:none}
 .sw input{position:absolute;opacity:0;pointer-events:none}
@@ -953,7 +955,7 @@ footer.ft .shell{padding-block:26px;display:flex;flex-wrap:wrap;gap:14px 26px;al
 @media (min-width:1600px){.post{max-width:860px}.post p,.post li{font-size:1.08rem}}
 .navrow:has(+ .post){max-width:min(780px,100%);margin-inline:auto}
 @media (min-width:1600px){.navrow:has(+ .post){max-width:860px}}
-.post h1{font-size:clamp(28px,4.4vw,48px);font-weight:800;letter-spacing:-.04em;line-height:1.08;margin:10px 0 16px;overflow-wrap:anywhere}
+.post h1{font-size:clamp(28px,4.4vw,48px);font-weight:800;letter-spacing:-.04em;line-height:1.08;margin:10px 0 16px;overflow-wrap:break-word}
 .post-lead{font-size:1.18rem;line-height:1.6;color:var(--text);margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--line2)}
 .post h2{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;margin:30px 0 10px}
 .post p{color:var(--body);font-size:1.02rem;line-height:1.75;margin:0 0 14px}
@@ -1029,7 +1031,7 @@ a.store:hover .nm{color:var(--brand)}
 .pshot,.sim .t,.ccol .t{overflow:hidden}
 /* the compare header must grow with its content, never clip the name onto the photo */
 .ccol{min-width:0;height:auto}
-.ccol b{overflow-wrap:anywhere}
+.ccol b{overflow-wrap:break-word}
 
 
 /* touch sizing: fingers need more than the desktop hit areas */
@@ -1068,19 +1070,22 @@ a.store:hover .nm{color:var(--brand)}
 .olist{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r-lg);overflow:hidden}
 .olist li+li{border-top:1px solid var(--line)}
-.orow{display:grid;grid-template-columns:34px minmax(0,1.1fr) minmax(0,1.4fr) minmax(112px,auto) 128px 22px;
+.orow{display:grid;grid-template-columns:34px minmax(0,1.1fr) minmax(0,1.4fr) minmax(112px,auto) 128px auto;
   gap:14px;align-items:center;padding:15px 18px;transition:background .12s}
 .orow:hover{background:var(--surface2)}
 .orow .rk{font-size:12px;color:var(--muted);font-weight:700}
-.orow .sh{font-weight:700;font-size:0.97rem;overflow-wrap:anywhere}
-.orow .vr{font-size:0.8125rem;color:var(--muted);overflow-wrap:anywhere}
+.orow .sh{font-weight:700;font-size:0.97rem;overflow-wrap:break-word}
+.orow .vr{font-size:0.8125rem;color:var(--muted);overflow-wrap:break-word}
 .orow .pr{font-size:18px;font-weight:800;letter-spacing:-.02em;white-space:nowrap;text-align:right}
 /* The difference column: one pill of one size on every row, so "Best price" and "+16 000" line up
    as a column instead of reading as two different kinds of thing. */
 .orow .od{text-align:center;font-size:12.5px;font-weight:700;line-height:1.2;padding:6px 10px;border-radius:var(--pill);white-space:nowrap;
   background:var(--surface2);background:color-mix(in srgb,var(--bad) 9%,transparent);color:var(--bad)}
-.orow .ar{color:var(--muted);font-size:15px}
-.orow:hover .ar{color:var(--brand-2)}
+.orow .ar{display:inline-flex;align-items:center;gap:4px;min-height:32px;padding:0 12px;border-radius:var(--pill);
+  border:1px solid var(--line2);color:var(--text);font-size:0.8125rem;font-weight:600;white-space:nowrap}
+.orow .ar svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.orow .ar:empty{display:none}
+.orow:hover .ar{border-color:var(--brand-2);color:var(--brand-2)}
 .orow.best{background:var(--good-soft)}
 .orow.best .od{background:var(--good);color:var(--bg)}
 .orow.best .rk{color:var(--good)}
@@ -1093,8 +1098,8 @@ a.store:hover .nm{color:var(--brand)}
 @media (max-width:760px){
   .orow{grid-template-columns:28px 1fr auto;row-gap:3px;padding:13px 14px}
   .orow .vr{grid-column:2/-1;order:3}
-  .orow .od{grid-column:2/-1;order:4;justify-self:start;padding:3px 9px}
-  .orow .ar{display:none}
+  .orow .od{grid-column:2;order:4;justify-self:start;padding:3px 9px}
+  .orow .ar{grid-column:3;order:4;justify-self:end;min-height:30px;padding:0 10px}
 }
 
 

@@ -1842,9 +1842,14 @@ function initSel(p) {
   // stocks, and the page opened on it: a list price, and not one offer under it. If the opening
   // choice shows nothing, move it onto the cheapest offer that does exist - which is what the
   // comment at the top of this function always claimed it did.
-  if (offs.length && !visibleOffers(p).length) {
+  // The card quotes the cheapest offer, so the page opens on exactly that build - the iPhone 17
+  // card said 354,000 (eSIM) and the page opened on Nano-SIM at 379,000, which reads as bait
+  // (owner, 2026-10-02).
+  if (offs.length) {
     const o = offs[0];                                    // offersFor is sorted cheapest first
     if (o.size != null) SEL.size = o.size;
+    if (both && typeof o.esim === 'boolean') SEL.esim = o.esim;
+    if (SEL.cell != null && typeof o.cell === 'boolean') SEL.cell = o.cell;
     const caps = (p.variants || []).map(v => v.storage).filter(v => v != null);
     // A shop that states no capacity is quoting the base model, the same reading visibleOffers uses
     SEL.storage = o.storage ?? (caps.length ? Math.min(...caps) : SEL.storage);
@@ -2259,7 +2264,7 @@ const seenTag = o => {
   // about, and a badge saying "by hand" only invites the reader to distrust a good figure.
   if (!o.seen && o.pickOnSite) return '';
   if (!o.seen) return ` <i class="stale" title="${esc(x('handTip'))}">${esc(x('handSeen'))}</i>`;
-  if (o.seen === (P.generated || '').slice(0, 10)) return '';
+  // today's rows carry their date too: a row with no date read as "unknown", not as fresh (owner, 2026-10-02)
   const d = o.seen.slice(8, 10) + '.' + o.seen.slice(5, 7);
   return ` <i class="stale" title="${esc(x('seenTip'))}">${esc(x('seenOn').replace('{d}', d))}</i>`;
 };
@@ -2345,7 +2350,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
          is here for is the cheapest price and how much every other shop adds to it. -->
     <span class="od num">${o.price === lo ? esc(x('bestShort')) : '+' + money(o.price - lo) + ' ֏'}</span>
-    ${live ? '<span class="ar" aria-hidden="true">→</span>' : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
+    ${live ? `<span class="ar">${esc(x('goShop'))}<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span>` : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
 }
 
 function offersView(p) {
