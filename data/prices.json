@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T07:00:17.197Z",
+ "generated": "2026-10-02T07:03:17.883Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -4617,10 +4617,10 @@
     "ram": 256,
     "color": "Deep Blue",
     "colorRaw": "Blue",
-    "esim": true,
     "inStock": true,
     "shop": "yerevanmobile",
-    "seen": "2026-10-02"
+    "seen": "2026-10-02",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -4631,10 +4631,10 @@
     "ram": 256,
     "color": "Cosmic Orange",
     "colorRaw": "Orange",
-    "esim": true,
     "inStock": true,
     "shop": "yerevanmobile",
-    "seen": "2026-10-02"
+    "seen": "2026-10-02",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro-max",
@@ -7077,10 +7077,10 @@
     "ram": 256,
     "color": "Cosmic Orange",
     "colorRaw": "Orange",
-    "esim": true,
     "inStock": true,
     "shop": "yerevanmobile",
-    "seen": "2026-10-02"
+    "seen": "2026-10-02",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -7091,10 +7091,10 @@
     "ram": 256,
     "color": "Deep Blue",
     "colorRaw": "Blue",
-    "esim": true,
     "inStock": true,
     "shop": "yerevanmobile",
-    "seen": "2026-10-02"
+    "seen": "2026-10-02",
+    "esim": true
    },
    {
     "id": "apple-iphone-17-pro",
@@ -9160,7 +9160,6 @@
     "ram": 256,
     "color": "Sky Blue",
     "colorRaw": "Blue",
-    "esim": true,
     "simFromPage": true,
     "inStock": true,
     "shop": "yerevanmobile",
@@ -9219,18 +9218,6 @@
     "storage": 256,
     "ram": null,
     "color": "Cloud White",
-    "url": "https://www.yerevanmobile.am/en/apple-iphone-air.html",
-    "seeded": true,
-    "seen": "2026-10-01"
-   },
-   {
-    "id": "apple-iphone-air",
-    "shop": "yerevanmobile",
-    "title": "Apple iPhone Air",
-    "price": 395000,
-    "storage": 256,
-    "ram": null,
-    "color": "Sky Blue",
     "url": "https://www.yerevanmobile.am/en/apple-iphone-air.html",
     "seeded": true,
     "seen": "2026-10-01"
@@ -81399,20 +81386,6 @@
     "seen": "2026-09-24"
    }
   ],
-  "honor-magic-7-pro": [
-   {
-    "id": "honor-magic-7-pro",
-    "shop": "yerevanmobile",
-    "title": "Honor Magic 7 Pro",
-    "price": 379000,
-    "storage": 512,
-    "ram": null,
-    "color": "Lunar Grey",
-    "url": "https://www.yerevanmobile.am/en/honor-magic-7-pro.html",
-    "seeded": true,
-    "seen": "2026-10-01"
-   }
-  ],
   "honor-magic-8-pro": [
    {
     "id": "honor-magic-8-pro",
@@ -81634,6 +81607,20 @@
     "ram": null,
     "color": null,
     "url": "https://vega.am/en/home-appliances/phones-and-gadgets/wired-headphones/headphone-jbl-tune-125bt-bk.html",
+    "seeded": true,
+    "seen": "2026-10-01"
+   }
+  ],
+  "honor-magic-7-pro": [
+   {
+    "id": "honor-magic-7-pro",
+    "shop": "yerevanmobile",
+    "title": "Honor Magic 7 Pro",
+    "price": 379000,
+    "storage": 512,
+    "ram": null,
+    "color": "Lunar Grey",
+    "url": "https://www.yerevanmobile.am/en/honor-magic-7-pro.html",
     "seeded": true,
     "seen": "2026-10-01"
    }
