@@ -138,6 +138,9 @@ const ACCESSORY_WORDS = [
   // live here; they are catalogue categories now, so rejecting them would hide real products.
   // NOT 'glass': the iPad Pro is sold with 'standard glass' / 'nano-texture glass'.
   // Screen protectors are still caught by protector / protection / tempered / պաշտպան / защит.
+  // a studio flash's model name reads like a phone's: Godox AD600 Pro II landed on the Honor 600
+  // Pro and AD400 Pro II on the Honor 400 Pro (2026-09-28)
+  'godox', 'speedlite',
   'case', 'cover', 'bumper', 'sleeve', 'pouch', 'wallet', 'folio', 'protector',
   'protection', 'tempered', 'film', 'skin', 'charger', 'charging', 'cable', 'adapter',
   'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank', 'power bank',
@@ -622,7 +625,9 @@ function magentoChildren(html, colors) {
       // A colour Magento states that none of the product's own colours will map to is not a
       // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
       // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
-      color: (col && colorOf(col, colors)) || null, inStock: pr.is_in_stock !== false,
+      // the shop's own word rides along apart, for data/color-aliases.json to name (AllSell's
+      // "Light pink"); colour itself stays null when unmapped so enrich()'s fallbacks still run
+      color: (col && colorOf(col, colors)) || null, colorRaw: col || undefined, inStock: pr.is_in_stock !== false,
       ...(simA ? { esim: simBuild(label(simA, child) || ''), simFromPage: true } : {}) });
   }
   // A child whose colour did not map is not a DIFFERENT colour, it is an unspecified one, and
@@ -1221,13 +1226,16 @@ async function crawlLd(urls, cap = 6) {
   // sitemap lists 7,200 products; matchPhone refuses most of them without a request and the cap
   // trims the rest, but the run printed nothing at all for the 25 minutes that took, so a shop
   // doing its job was indistinguishable from a shop that had hung.
+  // Apple and Samsung get every build (owner, 2026-10-02): REDstore gives each colour x capacity x
+  // SIM build its own page, ~40 for an iPhone 18 Pro Max, and six of them was a sixth of the shop.
+  const capOf = id => /^(apple|samsung)$/i.test((phoneById[id] || {}).brand || '') ? Math.max(cap, 48) : cap;
   const want = [];
   const seen = {};
   for (const u of urls) {
     const id = matchPhone(u);
     if (!id) continue;
     seen[id] = (seen[id] || 0) + 1;
-    if (seen[id] <= cap) want.push(u);
+    if (seen[id] <= capOf(id)) want.push(u);
   }
   if (want.length > 200)
     process.stdout.write(`
@@ -1237,7 +1245,7 @@ async function crawlLd(urls, cap = 6) {
     const urlId = matchPhone(u);
     if (!urlId) continue;
     per[urlId] = (per[urlId] || 0) + 1;
-    if (per[urlId] > cap) continue;              // cap requests per model
+    if (per[urlId] > capOf(urlId)) continue;     // cap requests per model
     if (want.length > 200 && ++done % 250 === 0) process.stdout.write(`${done} `);
     const html = await get(u); await sleep(DELAY_MS);
     if (!html) continue;
@@ -2028,12 +2036,40 @@ const SHOPS = {
             for (const k of kids)
               out.push({ id, price: k.price, title, url,
                 storage: k.storage ?? storageOf(title) ?? storageOf(url),
-                ram: k.ram ?? ramOf(title), color: k.color, inStock: k.inStock !== false });
+                ram: k.ram ?? ramOf(title), color: k.color, colorRaw: k.colorRaw, esim: k.esim, simFromPage: k.simFromPage,
+                inStock: k.inStock !== false });
             continue;
           }
           out.push({ id, price, title, url,
             storage: storageOf(title) ?? storageOf(url), ram: ramOf(title), inStock: true });
         }
+      }
+      // The grids are first pages only (no ?p=), so most products never showed up in them and
+      // were typed in by hand or read by clicking every swatch in a browser. Every product page
+      // already carries all its builds as Magento jsonConfig, so each page we know of from
+      // data/listings.csv is read directly - one request per page, every colour x capacity x SIM
+      // with its own price (owner, 2026-10-02: "find the data feed behind the picker").
+      const seenUrl = new Set(out.map(o => o.url));
+      const known = new Set();
+      try {
+        for (const line of fs.readFileSync('data/listings.csv', 'utf8').split(/\r?\n/)) {
+          const f = line.split(',');
+          if (f[0] === 'yerevanmobile' && /^https:\/\/www\.yerevanmobile\.am\/en\/[^?]+\.html$/.test(f[4] || '')) known.add(f[4]);
+        }
+      } catch {}
+      for (const url of known) {
+        if (seenUrl.has(url)) continue;
+        const page = await get(url); await sleep(DELAY_MS);
+        if (!page) continue;
+        const title = clean(((page.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || '').replace(/<[^>]+>/g, ' '));
+        const id = matchPhone(title, { url }) || matchPhone(url);
+        if (!id) continue;
+        const kids = magentoChildren(page, (phoneById[id] || {}).colors);
+        for (const k of kids)
+          out.push({ id, price: k.price, title, url,
+            storage: k.storage ?? storageOf(title) ?? storageOf(url),
+            ram: k.ram ?? ramOf(title), color: k.color, colorRaw: k.colorRaw, esim: k.esim, simFromPage: k.simFromPage,
+            inStock: k.inStock !== false });
       }
       return out;
     }
@@ -2646,8 +2682,31 @@ try {
   for (const [id, list] of Object.entries(offers)) { const c = (phoneById[id] || {}).colors || [];
     for (const o of list) if (o.color && !c.includes(o.color) && !(AL[id] || {})[o.color]) {
       const en = EN.get(o.color.toLowerCase()); if (en) o.color = c.find(x => x.toLowerCase() === en.toLowerCase()) || en; } }
-  for (const [id, map] of Object.entries(AL)) for (const o of offers[id] || []) if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
+  for (const [id, map] of Object.entries(AL)) for (const o of offers[id] || []) {
+    if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
+    else if (!o.color && o.colorRaw && map[o.colorRaw]) { o.color = map[o.colorRaw]; n++; } }
   if (n) console.log(`${n} offer colour(s) renamed to the catalogue's name (data/color-aliases.json)`);
+  // An offer naming no colour often names it in its own link or title, just not the way we spell
+  // it: iBolit "lavander", REDstore "charkoal" and "blueberr", iStore "blk", Eldorado "wht", and
+  // "charcoal" for our "Awesome Charcoal". Taken only when exactly one of the product's colours
+  // fits - the whole name first, then its last word.
+  const FIX = { lavander: 'lavender', charkoal: 'charcoal', blk: 'black', wht: 'white', gry: 'gray', grey: 'gray',
+    blu: 'blue', grn: 'green', slv: 'silver', blueberr: 'blueberry', graygreen: 'gray green', pistacho: 'pistachio',
+    lightgray: 'light gray', gbgray: 'gray', squad: 'black camo', camouflage: 'black camo', fuchisa: 'fuchsia' };
+  // a shop's lavender is our Purple on some products and the other way round
+  const SYN = { lavender: 'purple', purple: 'lavender' };
+  let named = 0;
+  for (const [id, list] of Object.entries(offers)) { const cs = (phoneById[id] || {}).colors || [];
+    if (cs.length < 2) continue;
+    for (const o of list) { if (o.color) continue;
+      const w = ` ${String(o.title || '') + ' ' + urlWords(o.url)} `.toLowerCase().replace(/[^a-z]+/g, ' ')
+        .replace(/\b[a-z]+\b/g, t => FIX[t] || t);
+      const norm = c => c.toLowerCase().replace(/grey/g, 'gray').replace(/[^a-z]+/g, ' ').trim();
+      let hit = cs.filter(c => w.includes(` ${norm(c)} `));
+      if (!hit.length) hit = cs.filter(c => w.includes(` ${norm(c).split(' ').pop()} `));
+      if (!hit.length) hit = cs.filter(c => { const l = norm(c).split(' ').pop(); return SYN[l] && w.includes(` ${SYN[l]} `); });
+      if (hit.length === 1) { o.color = hit[0]; named++; } } }
+  if (named) console.log(`${named} offer colour(s) read from the shop's own link or title`);
   // A colour that is still not one of the product's own reads as "not stated", which the page
   // shows under every swatch - left as it was, it vanished the moment a reader picked any colour.
   let q = 0;

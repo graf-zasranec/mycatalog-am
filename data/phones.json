@@ -5771,7 +5771,10 @@
         "priceAmd": 218900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.96,
+      "resolution": "496x416"
+    },
     "battery": {},
     "summaryEn": "Apple Watch Series 12 GPS 42mm.",
     "unsure": [
@@ -5780,7 +5783,10 @@
     "colors": [],
     "variantUnit": "mm",
     "os": "watchOS",
-    "year": 2026
+    "year": 2026,
+    "body": {
+      "weight": 40
+    }
   },
   {
     "id": "apple-watch-ultra-3",
@@ -5863,14 +5869,19 @@
         "band": "Milanese Loop"
       }
     ],
-    "display": {},
+    "display": {
+      "resolution": "514x422"
+    },
     "battery": {},
     "summaryEn": "Apple Watch Ultra 4 GPS + Cellular + Band.",
     "unsure": [
       "popularity"
     ],
     "os": "watchOS",
-    "year": 2026
+    "year": 2026,
+    "body": {
+      "weight": 63
+    }
   },
   {
     "id": "asus-22-vp228de",
@@ -6237,7 +6248,7 @@
   {
     "id": "asus-dual-rtx-4060-8gb",
     "category": "component",
-    "brand": "Asus",
+    "brand": "ASUS",
     "name": "Dual RTX 4060",
     "tier": "mid",
     "priceAmd": 208000,
@@ -6268,7 +6279,7 @@
   {
     "id": "asus-dual-rtx-4060-ti-8gb",
     "category": "component",
-    "brand": "Asus",
+    "brand": "ASUS",
     "name": "Dual GeForce RTX 4060 Ti 8GB",
     "tier": "mid",
     "priceAmd": 267000,
@@ -6821,7 +6832,7 @@
   {
     "id": "asus-proart-rtx-4060-8gb",
     "category": "component",
-    "brand": "Asus",
+    "brand": "ASUS",
     "name": "ProArt RTX 4060",
     "tier": "mid",
     "priceAmd": 195000,
@@ -6888,7 +6899,7 @@
   {
     "id": "asus-rog-ally-7",
     "category": "console",
-    "brand": "Asus",
+    "brand": "ASUS",
     "name": "ROG Ally",
     "aliases": [
       "Asus ROG Ally 7",
@@ -6925,7 +6936,7 @@
   {
     "id": "asus-rog-ally-x",
     "category": "console",
-    "brand": "Asus",
+    "brand": "ASUS",
     "name": "ROG Ally X",
     "aliases": [
       "Asus ROG Ally X"
@@ -11440,7 +11451,8 @@
     "colors": [
       "Black/Gold",
       "Ivory",
-      "Transparent"
+      "Transparent",
+      "Cosmic Pink"
     ],
     "summaryEn": "Beats earbuds that pair as easily with Android as with iPhone.",
     "unsure": [
@@ -27473,10 +27485,12 @@
     "id": "jbl-tune-beam",
     "category": "headphones",
     "brand": "JBL",
-    "name": "Tune Beam",
+    "name": "Tune Beam 2",
     "aliases": [
       "JBL Tune Beam White",
-      "JBL Tune Beam Purple"
+      "JBL Tune Beam Purple",
+      "Tune Beam",
+      "JBL Tune Beam"
     ],
     "tier": "budget",
     "priceAmd": 35900,
@@ -33187,7 +33201,8 @@
       "Pulse Red",
       "Electric Volt",
       "Deep Pink",
-      "Astral Purple"
+      "Astral Purple",
+      "Nocturnal Vapor"
     ],
     "tier": "budget",
     "priceAmd": 37900,
@@ -35652,7 +35667,11 @@
     },
     "connectivity": {
       "bluetooth": "none, wired USB-C"
-    }
+    },
+    "colors": [
+      "Black",
+      "White"
+    ]
   },
   {
     "id": "samsung-galaxy-2",
@@ -44170,8 +44189,9 @@
     "colors": [
       "Purple",
       "Black",
-      "Red",
-      "Starlight Blue"
+      "Cosmic Red",
+      "Starlight Blue",
+      "Sterling Silver"
     ]
   },
   {
@@ -44879,7 +44899,8 @@
       "White",
       "Blue",
       "Pink",
-      "Yellow"
+      "Yellow",
+      "Beige"
     ]
   },
   {
@@ -48177,8 +48198,10 @@
     "id": "xiaomi-mi-smart-kettle-pro-mjhwsh02ym",
     "category": "appliance",
     "brand": "Xiaomi",
-    "name": "Mi Smart Kettle Pro MJHWSH02YM",
-    "aliases": [],
+    "name": "Mi Smart Kettle Pro",
+    "aliases": [
+      "Mi Smart Kettle Pro MJHWSH02YM"
+    ],
     "tier": "budget",
     "priceAmd": 32000,
     "priceAmdMax": 32000,

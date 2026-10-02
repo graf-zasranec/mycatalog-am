@@ -402,7 +402,9 @@ function splitShell(shell) {
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
   // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
-  const colorThumbs = inline ? {} : cutMap(false, true);
+  // Cards show the very photo the product page shows (owner, 2026-10-02): a separate thumbnail
+  // set kept drifting out of step with it, so there is none - THUMB() falls through to IMG().
+  const colorThumbs = {};
   // main shot: the transparent cutout when we have one, else the original photo
   // Two sizes of the same photograph. A card draws it into a box 123 px wide on a phone and was
   // being handed the 1200 px cutout the product page uses - 829 KB of images for thirteen
@@ -422,7 +424,7 @@ function build({ inline, standalone }) {
     // The embedded build carries every photo as a data URI. Inlining a second copy of all 198
     // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
     // THUMB() falls through to IMG().
-    if (!inline) thumb[p.id] = src(p.id, true);
+
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;

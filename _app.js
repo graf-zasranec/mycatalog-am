@@ -1079,7 +1079,9 @@ function activeFilterCount() {
 // Read what the panel is showing into the state, close it, and redraw once.
 function openSheet() {
   document.documentElement.classList.add('fs-open');
-  $$('#fbar .fdrop:not(.r)').forEach(d => { d.open = true; });
+  // Groups start closed (owner, 2026-10-02): opened all at once, Brand alone was a screen of
+  // ticks before Price. A group with a filter already set opens, so what is applied is seen.
+  $$('#fbar .fdrop:not(.r)').forEach(d => { d.open = !!d.querySelector('input:checked:not([value=""]):not([value="0"])'); });
   paintDraftCount(null);
   $('#fbar')?.focus?.();
 }
@@ -1146,6 +1148,9 @@ function syncFilters() {
     const d = el.dataset.cnt, i = d.indexOf(':'), k = d.slice(0, i), v = d.slice(i + 1);
     const f = FILT[k];
     el.textContent = f && f.kind === 'set' ? cnt({ [f.arr]: [v] }) : cnt({ [k]: +v });
+    // a choice that leaves nothing is not offered (owner, 2026-10-02: a search for "samsung"
+    // listed every brand in the catalogue at 0) - unless it is the one already ticked
+    const box = el.closest('label'); if (box) box.hidden = el.textContent === '0' && !box.querySelector('input:checked');
   });
   $$('[data-rng="min"]').forEach(e => e.textContent = money(st.pmin) + ' ֏');
   $$('[data-rng="max"]').forEach(e => e.textContent = money(st.pmax) + ' ֏');
@@ -1499,6 +1504,8 @@ function catalogView() {
   return `<div class="shell">
     ${catTabs()}
     <div class="mbar"><button type="button" class="mbar-f" data-fsheet="1">${ICON_FILT}${esc(x('filtersT'))}${activeFilterCount() ? ` <b>${activeFilterCount()}</b>` : ''}</button>
+      <label class="mbar-s"><span class="vh">${esc(t('sort.label'))}</span><select data-f="sort" aria-label="${esc(t('sort.label'))}">${
+        sortKeys().map(s => `<option value="${s}"${s === st.sort ? ' selected' : ''}>${esc(sortLabel(s))}</option>`).join('')}</select></label>
       <span class="mbar-n" id="mbarn"></span></div>
     <div class="fscrim" data-fsclose="1"></div>
     ${filterBar()}
@@ -2903,7 +2910,7 @@ document.addEventListener('change', e => {
     paintDraftCount(panel);
     return;
   }
-  if (f === 'sort') { st.sort = el.value; el.closest('[data-drop]').open = false; }
+  if (f === 'sort') { st.sort = el.value; const dd = el.closest('[data-drop]'); if (dd) dd.open = false; }
   else if (FILT[f] && FILT[f].kind === 'set') {
     const a = FILT[f].arr;
     st[a] = el.checked ? [...new Set([...(st[a] || []), el.value])] : (st[a] || []).filter(v => v !== el.value);

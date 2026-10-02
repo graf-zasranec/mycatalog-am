@@ -1238,6 +1238,14 @@ a.store:hover .nm{color:var(--brand)}
   .mbar-f svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
   .mbar-f b{min-width:19px;height:19px;border-radius:10px;background:var(--brand);color:var(--brand-ink);font-size:11px;display:inline-grid;place-items:center}
   .mbar-n{margin-left:auto;color:var(--muted);font-size:13px}
+  .mbar-s{min-width:0;flex:0 1 auto}
+  .mbar-f{flex:none}
+  .mbar-n{white-space:nowrap}
+  .mbar-s select{height:40px;padding:0 30px 0 14px;border-radius:var(--pill);border:1px solid var(--line2);background:var(--surface);
+    color:var(--text);font:inherit;font-size:14px;font-weight:600;width:100%;max-width:46vw;text-overflow:ellipsis;-webkit-appearance:none;appearance:none;
+    background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+    background-position:calc(100% - 17px) 18px,calc(100% - 12px) 18px;background-size:5px 5px;background-repeat:no-repeat}
+  @media (max-width:420px){.mbar-n{display:none}}
   .fbar{display:none}
   html.fs-open{overflow:hidden}
   html.fs-open .fscrim{display:block;position:fixed;inset:0;background:rgba(10,12,18,.42);z-index:89}

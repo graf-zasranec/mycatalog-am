@@ -37,10 +37,14 @@ const ageDays = (f) => {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return Infinity;     // never checked: the oldest there is
   return (Date.now() - Date.parse(d + 'T00:00:00Z')) / DAY_MS;
 };
-const FLAG_VALUES = new Set(['--recheck', '--limit'].flatMap(n => {
+const FLAG_VALUES = new Set(['--recheck', '--limit', '--brands'].flatMap(n => {
   const i = process.argv.indexOf(n);
   return i >= 0 ? [process.argv[i + 1]] : [];
 }));
+// --brands apple,samsung: only the key products (owner, 2026-10-02), read off the row's title
+const ONLY_BRANDS = (() => { const i = process.argv.indexOf('--brands'); if (i < 0) return null;
+  const words = { apple: 'apple|iphone|ipad|macbook|imac|mac mini|airpods|apple watch', samsung: 'samsung|galaxy' };
+  return new RegExp(process.argv[i + 1].split(',').map(b => words[b.trim().toLowerCase()] || b.trim()).join('|'), 'i'); })();
 const only = new Set(process.argv.slice(2).filter(a => !a.startsWith('--') && !FLAG_VALUES.has(a)));
 // notebookcentre.am names anthropic-ai and Claude-Web in robots.txt with Disallow: / , so it is
 // confirmed by a person opening the shop, never from here. Same list as tools/check-links.py.
@@ -377,6 +381,7 @@ const body = rows.slice(1).filter(l => l.trim()).map(l => l.split(','));
 let todo = body.filter(f => f.length > 5 && f[4] && /^https?:/.test(f[4])
   && (RECHECK === null ? !/^\d{4}-\d{2}-\d{2}$/.test((f[8] || '').trim()) : ageDays(f) >= RECHECK)
   && (!only.size || only.has(f[0]))
+  && (!ONLY_BRANDS || ONLY_BRANDS.test(f[1]))
   && !NEVER.some(h => f[4].includes(h))
   // a row at one of the two cached shops is only reachable if the cache happens to list it
   && (!noFetch(f[4]) || CACHE.has(tidy(f[4]))));
