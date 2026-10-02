@@ -64,10 +64,16 @@ MAXUP = 1.15       # never upscale a small source by more than this, it only add
 # servers - seconds a photo instead of ~100 s here, and it drops floor reflections the local
 # model kept. Without the key the local model runs as before.
 BRIA_KEY = os.environ.get('BRIA_API_KEY')
-if not BRIA_KEY:
+SESSION = None
+
+
+def local_alpha(img):
+    global SESSION
     from rembg import remove, new_session
-    _prov = os.environ.get('CUT_PROVIDER')
-    SESSION = new_session('bria-rmbg', **({'providers': [_prov, 'CPUExecutionProvider']} if _prov else {}))
+    if SESSION is None:
+        _prov = os.environ.get('CUT_PROVIDER')
+        SESSION = new_session('bria-rmbg', **({'providers': [_prov, 'CPUExecutionProvider']} if _prov else {}))
+    return np.array(remove(img, session=SESSION, post_process_mask=True, only_mask=True))
 
 
 # How far past the model's own edge to look for product it dropped, and how far a pixel must sit
@@ -97,9 +103,14 @@ def bria_alpha(img):
 
 
 def model_alpha(img):
+    global BRIA_KEY
     if BRIA_KEY:
-        return bria_alpha(img)
-    return np.array(remove(img, session=SESSION, post_process_mask=True, only_mask=True))
+        try:
+            return bria_alpha(img)
+        except Exception as e:  # out of credits (403) or down: the local model, not a skipped photo
+            print(f'  Bria unavailable ({e}); using the local model from here on', flush=True)
+            BRIA_KEY = None
+    return local_alpha(img)
 
 
 def cut(path: Path, solid_cat: bool = False) -> Image.Image:
