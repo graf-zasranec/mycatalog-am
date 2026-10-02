@@ -14,7 +14,6 @@ from pathlib import Path
 from PIL import Image, ImageFilter
 import numpy as np
 from scipy import ndimage
-from rembg import remove, new_session
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC, OUT = ROOT / 'images' / '_src', ROOT / 'images' / 'cut'
@@ -61,8 +60,14 @@ MAXUP = 1.15       # never upscale a small source by more than this, it only add
 # left open, the white phone whole. It costs about 100s a photo here, which is the price.
 # CUT_PROVIDER picks an onnxruntime provider. DmlExecutionProvider was tried on this machine's
 # Iris Xe and took the graphics driver down mid-inference (device removed), so this stays on CPU.
-_prov = os.environ.get('CUT_PROVIDER')
-SESSION = new_session('bria-rmbg', **({'providers': [_prov, 'CPUExecutionProvider']} if _prov else {}))
+# BRIA_API_KEY set (owner, 2026-10-02): the same Bria RMBG model, version 2.0, on Bria's own
+# servers - seconds a photo instead of ~100 s here, and it drops floor reflections the local
+# model kept. Without the key the local model runs as before.
+BRIA_KEY = os.environ.get('BRIA_API_KEY')
+if not BRIA_KEY:
+    from rembg import remove, new_session
+    _prov = os.environ.get('CUT_PROVIDER')
+    SESSION = new_session('bria-rmbg', **({'providers': [_prov, 'CPUExecutionProvider']} if _prov else {}))
 
 
 # How far past the model's own edge to look for product it dropped, and how far a pixel must sit
@@ -72,7 +77,20 @@ EDGE_REACH = 14
 EDGE_TOL = 22
 
 
+def bria_alpha(img):
+    import base64, json, urllib.request
+    buf = io.BytesIO(); img.convert('RGB').save(buf, 'PNG')
+    body = json.dumps({'image': 'data:image/png;base64,' + base64.b64encode(buf.getvalue()).decode(), 'sync': True}).encode()
+    req = urllib.request.Request('https://engine.prod.bria-api.com/v2/image/edit/remove_background', body,
+                                 {'api_token': BRIA_KEY, 'Content-Type': 'application/json'})
+    url = json.load(urllib.request.urlopen(req, timeout=180))['result']['image_url']
+    out = Image.open(io.BytesIO(urllib.request.urlopen(url, timeout=120).read())).convert('RGBA')
+    return np.array(out.getchannel('A').resize(img.size))
+
+
 def model_alpha(img):
+    if BRIA_KEY:
+        return bria_alpha(img)
     return np.array(remove(img, session=SESSION, post_process_mask=True, only_mask=True))
 
 
@@ -97,7 +115,7 @@ def cut(path: Path, solid_cat: bool = False) -> Image.Image:
         # and to a tolerance a soft shadow does not reach.
         a0 = np.array(img.getchannel("A"))
         keep = a0 > 128
-        if keep.any():
+        if keep.any() and not BRIA_KEY:  # Bria keeps the low-contrast rims itself; this re-added reflections
             rgb0 = np.array(src.convert("RGB")).astype(int)
             back0 = np.median(np.concatenate([
                 rgb0[:8, :8].reshape(-1, 3), rgb0[:8, -8:].reshape(-1, 3),
