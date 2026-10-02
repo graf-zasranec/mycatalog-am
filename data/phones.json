@@ -5894,7 +5894,8 @@
       }
     ],
     "display": {
-      "resolution": "514x422"
+      "resolution": "422x514",
+      "size": 2.04
     },
     "battery": {},
     "summaryEn": "Apple Watch Ultra 4 GPS + Cellular + Band.",
@@ -9738,7 +9739,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core i9-13900H"
@@ -9776,7 +9778,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "AMD Ryzen 7 5800H"
@@ -10043,7 +10046,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "2880x1620"
     },
     "battery": {},
     "summaryEn": "ASUS Vivobook S 15.6\" i9-13900H 16/1 CAMO W11 /K5504VA-PB99-SL*.",
@@ -11819,6 +11823,9 @@
     ],
     "body": {
       "weight": 3700
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
     }
   },
   {
@@ -12173,6 +12180,10 @@
     ],
     "body": {
       "weight": 660
+    },
+    "connectivity": {},
+    "specNA": {
+      "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
     }
   },
   {
@@ -12252,7 +12263,11 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "year": 2017
+    "year": 2017,
+    "connectivity": {},
+    "specNA": {
+      "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
+    }
   },
   {
     "id": "bose-soundtouch-10",
@@ -12285,6 +12300,9 @@
     ],
     "body": {
       "weight": 1400
+    },
+    "specNA": {
+      "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
     }
   },
   {
@@ -15559,6 +15577,9 @@
     "os": "Garmin (own system)",
     "body": {
       "weight": 20
+    },
+    "specNA": {
+      "display.size": "no screen - Garmin sells it as a \"Screenless Health & Fitness Tracker\" (garmin.com/en-US/p/1989182)"
     }
   },
   {
@@ -15863,7 +15884,8 @@
       }
     ],
     "display": {
-      "resolution": "466x466"
+      "resolution": "466x466",
+      "size": 1.5
     },
     "battery": {},
     "summaryEn": "Garmin Fenix 9, 51mm, Carbon DLC, Band.",
@@ -15899,7 +15921,8 @@
       }
     ],
     "display": {
-      "resolution": "454x454"
+      "resolution": "454x454",
+      "size": 1.4
     },
     "battery": {},
     "summaryEn": "Garmin Fenix 9 Pro 47mm, AMOLED, Carbon DLC.",
@@ -16275,7 +16298,8 @@
       }
     ],
     "display": {
-      "resolution": "176x176"
+      "resolution": "176x176",
+      "size": 1.1
     },
     "battery": {},
     "summaryEn": "Garmin Instinct 3, 50mm,Solar.",
@@ -16604,7 +16628,16 @@
       "Lavender",
       "Black",
       "Blue"
-    ]
+    ],
+    "specNA": {
+      "display.size": "no screen - store.google.com/us/product/google_fitbit_air_specs lists no display"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 12
+    }
   },
   {
     "id": "google-pixel-10",
@@ -20816,7 +20849,10 @@
     "colors": [
       "Black",
       "Purple"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "honor-choice-earbuds-x3",
@@ -21016,7 +21052,10 @@
     "colors": [
       "White",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "honor-choice-x7-lite",
@@ -23219,7 +23258,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "HP 15-FD0055.",
@@ -23592,7 +23632,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "HP 15-FD0355NIA.",
@@ -23681,7 +23722,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1366x768"
     },
     "battery": {},
     "summaryEn": "HP 15-FD0883NR.",
@@ -24122,7 +24164,8 @@
       }
     ],
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "HP EliteBook 640 G10.",
@@ -24907,7 +24950,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16-ba1000ci.",
@@ -24946,7 +24990,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16\" Ultra 5-225U 16/1 /BM0Q2EA.",
@@ -24984,7 +25029,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16\" Ultra 7-255U 16/1 /BK9Y8EA.",
@@ -25024,7 +25070,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "HP OmniBook 5 AI 16-af1003ci Ultra.",
@@ -37508,7 +37555,10 @@
         "priceAmd": 59000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.4,
+      "resolution": "360x360"
+    },
     "battery": {},
     "summaryEn": "Samsung Galaxy Active 2.",
     "unsure": [
@@ -44785,7 +44835,10 @@
     },
     "sources": [
       "https://www.playstation.com/content/dam/global_pdc/cs/corporate/support/manuals/accessories/ps5-accessories/pulse-elite-wireless-headset/CFI-ZWH2_PS5_SG_Web$cs.pdf"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "Yes (Sony states no version), plus PlayStation Link"
+    }
   },
   {
     "id": "sony-ps5-slim",
@@ -44873,7 +44926,10 @@
       "conn": "wireless",
       "gaming": true
     },
-    "year": 2023
+    "year": 2023,
+    "connectivity": {
+      "bluetooth": "Yes (Sony states no version), plus PlayStation Link"
+    }
   },
   {
     "id": "sony-wf-1000xm5-wireless-headphones",
@@ -47254,7 +47310,10 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "specNA": {
+      "display.size": "no screen - WHOOP is a screenless band (whoop.com; community.whoop.com asks for a display accessory)"
+    }
   },
   {
     "id": "whoop-peak",
@@ -47286,7 +47345,10 @@
     "colors": [
       "White",
       "Black"
-    ]
+    ],
+    "specNA": {
+      "display.size": "no screen - WHOOP is a screenless band (whoop.com; community.whoop.com asks for a display accessory)"
+    }
   },
   {
     "id": "xbox-series-s",
