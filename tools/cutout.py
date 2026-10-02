@@ -83,7 +83,15 @@ def bria_alpha(img):
     body = json.dumps({'image': 'data:image/png;base64,' + base64.b64encode(buf.getvalue()).decode(), 'sync': True}).encode()
     req = urllib.request.Request('https://engine.prod.bria-api.com/v2/image/edit/remove_background', body,
                                  {'api_token': BRIA_KEY, 'Content-Type': 'application/json'})
-    url = json.load(urllib.request.urlopen(req, timeout=180))['result']['image_url']
+    import time, urllib.error
+    for wait in (0, 15, 30, 60, 120):  # the free plan answers 429 when asked too fast
+        time.sleep(wait)
+        try:
+            url = json.load(urllib.request.urlopen(req, timeout=180))['result']['image_url']
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or wait == 120:
+                raise
     out = Image.open(io.BytesIO(urllib.request.urlopen(url, timeout=120).read())).convert('RGBA')
     return np.array(out.getchannel('A').resize(img.size))
 

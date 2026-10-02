@@ -562,7 +562,9 @@
     "unsure": [
       "popularity"
     ],
-    "body": {},
+    "body": {
+      "weight": 1590
+    },
     "sources": [
       "https://www.acer.com/us-en/laptops/aspire/aspire-lite/pdp/NX.DE2AA.001"
     ]
@@ -759,6 +761,9 @@
     ],
     "chipset": {
       "name": "Intel N150"
+    },
+    "body": {
+      "weight": 1590
     }
   },
   {
@@ -9746,7 +9751,10 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i9-13900H.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-m1503-qa-l1223-oled",
@@ -14473,10 +14481,21 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5000
+    },
     "summaryEn": "A folding camera drone.",
     "unsure": [
       "popularity"
+    ],
+    "camera": {
+      "video": "5.1K 50 fps"
+    },
+    "body": {
+      "weight": 958
+    },
+    "sources": [
+      "https://www.dji.com/global/mavic-3-pro/specs"
     ]
   },
   {
@@ -14497,10 +14516,15 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 320
+    },
     "summaryEn": "A wireless microphone set.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.dji.com/global/mic/specs"
     ]
   },
   {
@@ -14521,13 +14545,18 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 360
+    },
     "summaryEn": "A wireless microphone set.",
     "unsure": [
       "popularity"
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "sources": [
+      "https://www.dji.com/global/mic-2/specs"
     ]
   },
   {
@@ -14548,13 +14577,24 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 137
+    },
     "summaryEn": "A wireless microphone set.",
     "unsure": [
       "popularity"
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "body": {
+      "weight": 16
+    },
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "sources": [
+      "https://www.dji.com/global/mic-3/specs"
     ]
   },
   {
@@ -14575,10 +14615,21 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 114
+    },
     "summaryEn": "A wireless microphone set.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 10
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.dji.com/global/mic-mini/specs"
     ]
   },
   {
@@ -14599,13 +14650,24 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 114
+    },
     "summaryEn": "A wireless microphone set.",
     "unsure": [
       "popularity"
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "body": {
+      "weight": 11
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.dji.com/global/mic-mini-2/specs"
     ]
   },
   {
@@ -14650,10 +14712,18 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1950
+    },
     "summaryEn": "An action camera.",
     "unsure": [
       "popularity"
+    ],
+    "camera": {
+      "main": "1/1.1-inch CMOS"
+    },
+    "sources": [
+      "https://www.dji.com/global/osmo-action-6/specs"
     ]
   },
   {
@@ -14674,10 +14744,21 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1000
+    },
     "summaryEn": "A motorised gimbal for a phone.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 305
+    },
+    "connectivity": {
+      "bluetooth": "5.1"
+    },
+    "sources": [
+      "https://www.dji.com/global/osmo-mobile-6/specs"
     ]
   },
   {
@@ -14749,13 +14830,21 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 3350
+    },
     "summaryEn": "A motorised gimbal for a phone.",
     "unsure": [
       "popularity"
     ],
     "aliases": [
       "Osmo Mobile 8 P"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "sources": [
+      "https://www.dji.com/global/osmo-mobile-8/specs"
     ]
   },
   {
@@ -14775,11 +14864,25 @@
         "priceAmd": 279900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 2.0,
+      "resolution": "556x314"
+    },
+    "battery": {
+      "capacity": 1300
+    },
     "summaryEn": "A pocket camera on a motorised gimbal.",
     "unsure": [
       "popularity"
+    ],
+    "camera": {
+      "main": "1-inch CMOS"
+    },
+    "body": {
+      "weight": 179
+    },
+    "sources": [
+      "https://www.dji.com/global/osmo-pocket-3/specs"
     ]
   },
   {
@@ -14799,11 +14902,21 @@
         "priceAmd": 279900
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 2.0
+    },
+    "battery": {
+      "capacity": 1545
+    },
     "summaryEn": "A pocket camera on a motorised gimbal.",
     "unsure": [
       "popularity"
+    ],
+    "camera": {
+      "main": "1-inch CMOS"
+    },
+    "sources": [
+      "https://www.dji.com/global/osmo-pocket-4/specs"
     ]
   },
   {
@@ -23104,7 +23217,10 @@
     },
     "sources": [
       "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-15-fd0055-natural-silver/2704/"
-    ]
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "hp-15-fd0113dx",
@@ -23474,7 +23590,10 @@
     },
     "sources": [
       "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-5-fd0355nia-12-512gb-silver/2820/"
-    ]
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "hp-15-fd0531nia",
@@ -23560,7 +23679,10 @@
     },
     "sources": [
       "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-15-fd0883nr-moonlight-blue/2703/"
-    ]
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "hp-15-fd1899nr",
@@ -36415,7 +36537,10 @@
       "Dark Blue",
       "Silver",
       "Green"
-    ]
+    ],
+    "chipset": {
+      "name": "MediaTek Helio G99"
+    }
   },
   {
     "id": "samsung-galaxy-a16",
