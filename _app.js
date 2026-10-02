@@ -2718,7 +2718,7 @@ document.addEventListener('click', e => {
   if (cd) { cardShow(cd); return; }
   const card = e.target.closest('.pcard');
   if (card && !e.target.closest('a,button')) {
-    const link = card.querySelector('h3 a[href^="#/p/"]');
+    const link = card.querySelector('h2 a[href^="#/p/"]');
     if (link) { location.hash = link.getAttribute('href'); return; }
   }
   const act = e.target.closest('[data-act]');

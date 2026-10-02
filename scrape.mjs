@@ -623,7 +623,7 @@ function magentoChildren(html, colors) {
     const col = label(color, child);
     // Yerevan Mobile names its capacity option "Memory": 128GB/256GB there is storage, not RAM
     let st = capOf(label(drive, child)), rm = capOf(label(ram, child));
-    if (st == null && rm >= 32) { st = rm; rm = null; }
+    if (st == null && rm >= 32 && !/\bram\b/i.test((ram.code || '') + ' ' + (ram.label || ''))) { st = rm; rm = null; }
     out.push({ price, storage: st, ram: rm,
       // A colour Magento states that none of the product's own colours will map to is not a
       // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
