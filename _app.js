@@ -1233,7 +1233,7 @@ function card(p) {
     </div>
     <div class="pbody">
       <span class="eyebrow">${esc(p.brand)}</span>
-      <h3><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${nameTag(p)}</h3>
+      <h2><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${nameTag(p)}</h2>
       <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
       <div class="pfoot"><span class="pprice num">${amd(bestOf(p))}
         <s>${rows.length ? esc(shopName(rows[0][0])) : esc(x('estimated'))}</s></span>
@@ -1799,7 +1799,7 @@ function cardShow(btn) {
   if (!img || img.dataset.cur === btn.dataset.cdot) return;
   img.dataset.cur = btn.dataset.cdot;
   shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', b === btn));
-  const card = btn.closest('.pcard'), name = card && card.querySelector('h3 a');
+  const card = btn.closest('.pcard'), name = card && card.querySelector('h2 a');
   const want = btn.dataset.cdot, pre = new Image();
   pre.src = want;
   img.classList.add('out');
@@ -1946,10 +1946,10 @@ function compareWithHTML(p) {
     const q = byId(id), lo = hasReal(q) ? bestOf(q) : null, d = lo != null && hasReal(p) ? lo - bestOf(p) : null;
     // the card opens that product; the small button beside it is the side-by-side (owner, 2026-09-27)
     return `<div class="cwb"><a class="cwc" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">${esc(t('nav.compare'))}</a><a class="cw" href="#/p/${esc(id)}">
-      <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" decoding="async">
+      <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" loading="lazy" decoding="async">
       <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}${nameTag(q)}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a></div>`;
   };
-  return `<section class="cwith"><h3>${esc(x('cwTitle'))}</h3><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
+  return `<section class="cwith"><h2>${esc(x('cwTitle'))}</h2><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
 }
 // No marketing sentence under the title: the owner wants the page to be the product, its
 // configurations and its prices.
