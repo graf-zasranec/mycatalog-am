@@ -2137,7 +2137,10 @@
       "bluetooth": "none, wired Lightning"
     },
     "battery": {},
-    "summaryEn": "The Lightning EarPods, for every iPhone before the USB-C switch."
+    "summaryEn": "The Lightning EarPods, for every iPhone before the USB-C switch.",
+    "specNA": {
+      "body.weight": "Apple lists no weight for EarPods (apple.com shop page read 2026-10-02)"
+    }
   },
   {
     "id": "apple-earpods-usb-c",
@@ -2170,7 +2173,10 @@
       "bluetooth": "none, wired USB-C"
     },
     "battery": {},
-    "summaryEn": "The wired EarPods, now on USB-C — no charging, no pairing, no losing one."
+    "summaryEn": "The wired EarPods, now on USB-C — no charging, no pairing, no losing one.",
+    "specNA": {
+      "body.weight": "Apple lists no weight for EarPods (apple.com shop page read 2026-10-02)"
+    }
   },
   {
     "id": "apple-homepod-2",
@@ -5580,7 +5586,9 @@
       "size": 1.92,
       "resolution": "410x502"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 564
+    },
     "summaryEn": "Apple Ultra 2.",
     "unsure": [
       "popularity"
@@ -5591,7 +5599,10 @@
     ],
     "variantUnit": "mm",
     "os": "watchOS",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 61.4
+    }
   },
   {
     "id": "apple-watch-se-3",
@@ -5709,6 +5720,9 @@
     ],
     "body": {
       "weight": 29
+    },
+    "specNA": {
+      "battery.capacity": "Apple publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -5809,6 +5823,9 @@
     "year": 2026,
     "body": {
       "weight": 40
+    },
+    "specNA": {
+      "battery.capacity": "Apple publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -5906,6 +5923,9 @@
     "year": 2026,
     "body": {
       "weight": 63
+    },
+    "specNA": {
+      "battery.capacity": "Apple publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -6784,6 +6804,9 @@
     ],
     "chipset": {
       "name": "Intel Celeron N4020"
+    },
+    "body": {
+      "weight": 1570
     }
   },
   {
@@ -7034,6 +7057,9 @@
     },
     "connectivity": {
       "bluetooth": "none, wired USB-C"
+    },
+    "body": {
+      "weight": 300
     }
   },
   {
@@ -7498,6 +7524,9 @@
     },
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 290
     }
   },
   {
@@ -7530,6 +7559,9 @@
     },
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
+    },
+    "body": {
+      "weight": 252
     }
   },
   {
@@ -8366,6 +8398,9 @@
     },
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 295
     }
   },
   {
@@ -8401,6 +8436,9 @@
     },
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
+    },
+    "body": {
+      "weight": 294
     }
   },
   {
@@ -8436,6 +8474,9 @@
     },
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
+    },
+    "specNA": {
+      "body.weight": "ASUS has taken the H7 Core spec page down (redirects to the series list); no maker figure"
     }
   },
   {
@@ -8469,6 +8510,9 @@
     },
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 307
     }
   },
   {
@@ -12564,6 +12608,9 @@
     "year": 2025,
     "chipset": {
       "name": "Intel Core i5-1334U"
+    },
+    "body": {
+      "weight": 1620
     }
   },
   {
@@ -15579,7 +15626,8 @@
       "weight": 20
     },
     "specNA": {
-      "display.size": "no screen - Garmin sells it as a \"Screenless Health & Fitness Tracker\" (garmin.com/en-US/p/1989182)"
+      "display.size": "no screen - Garmin sells it as a \"Screenless Health & Fitness Tracker\" (garmin.com/en-US/p/1989182)",
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15618,6 +15666,9 @@
     "year": 2023,
     "body": {
       "weight": 88
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15656,6 +15707,9 @@
     "year": 2023,
     "body": {
       "weight": 78
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15691,6 +15745,9 @@
     "year": 2023,
     "body": {
       "weight": 73
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15724,6 +15781,9 @@
     "year": 2023,
     "body": {
       "weight": 73
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15768,6 +15828,9 @@
     "year": 2024,
     "body": {
       "weight": 73
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15816,7 +15879,10 @@
     "colors": [
       "Gray Titanium",
       "Orange Titanium"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    }
   },
   {
     "id": "garmin-fenix-8-pro-47-mm-amoled",
@@ -15858,7 +15924,10 @@
     "colors": [],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
-    "year": 2025
+    "year": 2025,
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    }
   },
   {
     "id": "garmin-fenix-9-51mm-carbon-dlc-band",
@@ -15896,6 +15965,9 @@
     "os": "Garmin (own system)",
     "body": {
       "weight": 90
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15933,6 +16005,9 @@
     "os": "Garmin (own system)",
     "body": {
       "weight": 78
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -15968,6 +16043,9 @@
     "os": "Garmin (own system)",
     "body": {
       "weight": 41
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16003,6 +16081,9 @@
     "os": "Garmin (own system)",
     "body": {
       "weight": 41
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16038,6 +16119,9 @@
     "year": 2025,
     "body": {
       "weight": 50
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16074,6 +16158,9 @@
     "os": "Garmin (own system)",
     "body": {
       "weight": 41
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16111,6 +16198,9 @@
     "year": 2023,
     "body": {
       "weight": 53
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16150,6 +16240,9 @@
     "year": 2025,
     "body": {
       "weight": 56
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16186,6 +16279,9 @@
     "year": 2023,
     "body": {
       "weight": 67
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16219,6 +16315,9 @@
     "year": 2023,
     "body": {
       "weight": 67
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16267,6 +16366,9 @@
     "year": 2025,
     "body": {
       "weight": 53
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16309,7 +16411,10 @@
     "colors": [],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
-    "year": 2025
+    "year": 2025,
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    }
   },
   {
     "id": "garmin-venu-3-with-leather",
@@ -16347,6 +16452,9 @@
     "year": 2023,
     "body": {
       "weight": 47
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16380,7 +16488,13 @@
       "popularity"
     ],
     "os": "Garmin (own system)",
-    "year": 2023
+    "year": 2023,
+    "body": {
+      "weight": 27.0
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    }
   },
   {
     "id": "garmin-venu-4-45-mm",
@@ -16432,6 +16546,9 @@
     "year": 2025,
     "body": {
       "weight": 56
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16471,6 +16588,9 @@
     "year": 2025,
     "body": {
       "weight": 34
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     }
   },
   {
@@ -16513,7 +16633,10 @@
     "colors": [
       "Black",
       "Ivory"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    }
   },
   {
     "id": "garmin-vivoactive-6",
@@ -16552,7 +16675,13 @@
     "colors": [
       "Black",
       "Gold"
-    ]
+    ],
+    "body": {
+      "weight": 36.0
+    },
+    "specNA": {
+      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    }
   },
   {
     "id": "gigabyte-gaming-a16-ga6h",
@@ -16630,7 +16759,8 @@
       "Blue"
     ],
     "specNA": {
-      "display.size": "no screen - store.google.com/us/product/google_fitbit_air_specs lists no display"
+      "display.size": "no screen - store.google.com/us/product/google_fitbit_air_specs lists no display",
+      "battery.capacity": "Google publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     },
     "connectivity": {
       "bluetooth": "5.0"
@@ -17467,7 +17597,8 @@
     },
     "battery": {},
     "body": {
-      "ip": "none"
+      "ip": "none",
+      "weight": 3600
     },
     "connectivity": {
       "bluetooth": "5.3"
@@ -17588,7 +17719,10 @@
       "Champagne",
       "Black",
       "Deep Blue"
-    ]
+    ],
+    "body": {
+      "weight": 3520
+    }
   },
   {
     "id": "harman-kardon-studio-9",
@@ -17625,7 +17759,10 @@
       "Onyx",
       "Black",
       "Gray"
-    ]
+    ],
+    "body": {
+      "weight": 3360
+    }
   },
   {
     "id": "hisense-100e7q-pro",
@@ -20801,12 +20938,17 @@
     "display": {
       "size": 1.4
     },
-    "battery": {},
+    "battery": {
+      "capacity": 180
+    },
     "summaryEn": "Honor Band 6.",
     "unsure": [
       "popularity"
     ],
-    "year": 2020
+    "year": 2020,
+    "body": {
+      "weight": 18
+    }
   },
   {
     "id": "honor-choice-clip-mak-me01",
@@ -21000,7 +21142,9 @@
       "size": 1.85,
       "resolution": "390x450"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 330
+    },
     "summaryEn": "Honor CHOICE INFOWEAR 2i KCH-WB01.",
     "unsure": [
       "popularity"
@@ -23867,7 +24011,10 @@
     "colors": [
       "Silver"
     ],
-    "summaryEn": "A 15.6-inch HP on a Core Ultra chip with 16 GB of RAM."
+    "summaryEn": "A 15.6-inch HP on a Core Ultra chip with 16 GB of RAM.",
+    "body": {
+      "weight": 1660
+    }
   },
   {
     "id": "hp-15t-dw300",
@@ -27056,7 +27203,8 @@
     "battery": {},
     "body": {
       "materials": "Plastic with metal grille, carry handle",
-      "ip": "IPX4"
+      "ip": "IPX4",
+      "weight": 6500
     },
     "connectivity": {
       "bluetooth": "5.1",
@@ -27323,6 +27471,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "specNA": {
+      "body.weight": "JBL spec sheet gives only the total with case (73 g), no per-earbud weight"
     }
   },
   {
@@ -27398,7 +27549,10 @@
     },
     "sources": [
       "https://www.jbl.com/TUNE130NCTWS-.html"
-    ]
+    ],
+    "body": {
+      "weight": 5.7
+    }
   },
   {
     "id": "jbl-tune-215-tws",
@@ -27437,6 +27591,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 5.4
     }
   },
   {
@@ -27475,6 +27632,9 @@
     "year": 2021,
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 5.1
     }
   },
   {
@@ -27828,7 +27988,10 @@
       "Purple",
       "White",
       "Teal"
-    ]
+    ],
+    "body": {
+      "weight": 5.2
+    }
   },
   {
     "id": "jbl-tune-flex",
@@ -27921,6 +28084,9 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 4.5
     }
   },
   {
@@ -29322,7 +29488,10 @@
     },
     "sources": [
       "https://www.telecomarmenia.am/eshop/en/devices/notebook-lenovo-ideapad-slim3-15iru10-grey/2712/"
-    ]
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15iru8-256gb",
@@ -34254,7 +34423,10 @@
     "colors": [
       "Dark"
     ],
-    "year": 2025
+    "year": 2025,
+    "body": {
+      "weight": 52.4
+    }
   },
   {
     "id": "nothing-cmf-pro-2",
@@ -34293,6 +34465,9 @@
     "year": 2024,
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 44.4
     }
   },
   {
@@ -36011,7 +36186,10 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "body": {
+      "weight": 18
+    }
   },
   {
     "id": "samsung-galaxy-2",
@@ -36317,6 +36495,9 @@
     "year": 2026,
     "connectivity": {
       "bluetooth": "6.0"
+    },
+    "body": {
+      "weight": 34.0
     }
   },
   {
@@ -37559,7 +37740,9 @@
       "size": 1.4,
       "resolution": "360x360"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 340
+    },
     "summaryEn": "Samsung Galaxy Active 2.",
     "unsure": [
       "popularity"
@@ -37573,7 +37756,10 @@
       "Black",
       "Silver",
       "Pinkgold"
-    ]
+    ],
+    "body": {
+      "weight": 42.0
+    }
   },
   {
     "id": "samsung-galaxy-book-4-np750xgk-ks2us",
@@ -37994,7 +38180,9 @@
     "display": {
       "size": 1.2
     },
-    "battery": {},
+    "battery": {
+      "capacity": 247
+    },
     "summaryEn": "Samsung Galaxy FE.",
     "unsure": [
       "popularity"
@@ -40116,7 +40304,8 @@
     },
     "body": {
       "materials": "Aluminium case",
-      "ip": "IP68, 5 ATM"
+      "ip": "IP68, 5 ATM",
+      "weight": 34.0
     },
     "battery": {
       "capacity": 435
@@ -40320,7 +40509,9 @@
       "size": 1.2,
       "resolution": "396x396"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 247
+    },
     "summaryEn": "Samsung Galaxy Watch4 40 mm.",
     "unsure": [
       "popularity"
@@ -43670,7 +43861,10 @@
       "White",
       "Blue",
       "Black"
-    ]
+    ],
+    "body": {
+      "weight": 5.5
+    }
   },
   {
     "id": "sennheiser-accentum-wireless-acaebt",
@@ -47312,7 +47506,11 @@
       "White"
     ],
     "specNA": {
-      "display.size": "no screen - WHOOP is a screenless band (whoop.com; community.whoop.com asks for a display accessory)"
+      "display.size": "no screen - WHOOP is a screenless band (whoop.com; community.whoop.com asks for a display accessory)",
+      "battery.capacity": "WHOOP publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    },
+    "body": {
+      "weight": 26.5
     }
   },
   {
@@ -47347,7 +47545,11 @@
       "Black"
     ],
     "specNA": {
-      "display.size": "no screen - WHOOP is a screenless band (whoop.com; community.whoop.com asks for a display accessory)"
+      "display.size": "no screen - WHOOP is a screenless band (whoop.com; community.whoop.com asks for a display accessory)",
+      "battery.capacity": "WHOOP publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
+    },
+    "body": {
+      "weight": 26.5
     }
   },
   {
@@ -50856,6 +51058,9 @@
     "year": 2023,
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 3.92
     }
   },
   {

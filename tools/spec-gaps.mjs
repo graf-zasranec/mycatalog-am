@@ -14,6 +14,11 @@ const KEY = {
   headphones: ['audio.form', 'connectivity.bluetooth'],
   speaker: ['connectivity.bluetooth'],
 };
+// --all adds weight and battery mAh (the second pass, owner 2026-10-02: "finish specs")
+if (process.argv.includes('--all')) {
+  for (const c of ['phone', 'tablet', 'laptop', 'watch', 'headphones', 'speaker']) KEY[c] = [...KEY[c], 'body.weight'];
+  for (const c of ['phone', 'tablet', 'watch']) KEY[c] = [...KEY[c], 'battery.capacity'];
+}
 const get = (o, f) => f.split('.').reduce((a, k) => a == null ? a : a[k], o);
 const left = [];
 for (const p of P) for (const f of KEY[p.category] || []) {
