@@ -54915,5 +54915,210 @@
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-a18/34466/"
     ]
+  },
+  {
+    "id": "google-pixel-11",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 11",
+    "aliases": [
+      "Google Pixel 11",
+      "Pixel 11 5G"
+    ],
+    "tier": "upper",
+    "priceAmd": 425000,
+    "priceAmdMax": 425000,
+    "popularity": 60,
+    "accent": "#C9D2DA",
+    "display": {
+      "size": 6.3,
+      "type": "OLED",
+      "refresh": 120,
+      "resolution": "1080x2424",
+      "ppi": 422,
+      "brightness": 3000
+    },
+    "chipset": {
+      "name": "Google Tensor G6"
+    },
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 425000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": null
+      }
+    ],
+    "camera": {
+      "modules": 3,
+      "main": "48 MP",
+      "front": "10.5 MP"
+    },
+    "battery": {
+      "capacity": 4985
+    },
+    "body": {
+      "weight": 196
+    },
+    "connectivity": {
+      "network": "5G",
+      "nfc": true
+    },
+    "cardSlot": false,
+    "os": "Android 17",
+    "colors": [
+      "Obsidian",
+      "Frost",
+      "Hibiscus",
+      "Pistachio"
+    ],
+    "summaryEn": "The standard Pixel 11: a 6.3-inch 120 Hz screen on Tensor G6, 12 GB of RAM and a 5x telephoto.",
+    "unsure": [
+      "popularity"
+    ],
+    "year": 2026,
+    "released": "2026-08",
+    "sources": [
+      "https://store.google.com/us/product/pixel_11_specs"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 11 Pro",
+    "aliases": [
+      "Google Pixel 11 Pro"
+    ],
+    "tier": "flagship",
+    "priceAmd": 545000,
+    "priceAmdMax": 729700,
+    "popularity": 62,
+    "accent": "#B6C3CE",
+    "display": {
+      "size": 6.3,
+      "type": "LTPO OLED",
+      "refresh": 120,
+      "resolution": "1280x2856",
+      "ppi": 495,
+      "brightness": 3600
+    },
+    "chipset": {
+      "name": "Google Tensor G6"
+    },
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 545000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": null
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 729700
+      }
+    ],
+    "camera": {
+      "modules": 3,
+      "main": "50 MP",
+      "front": "42 MP"
+    },
+    "battery": {
+      "capacity": 4850
+    },
+    "body": {
+      "weight": 204
+    },
+    "connectivity": {
+      "network": "5G",
+      "nfc": true
+    },
+    "cardSlot": false,
+    "os": "Android 17",
+    "colors": [
+      "Obsidian",
+      "Fog",
+      "Olive",
+      "Canyon"
+    ],
+    "summaryEn": "The compact Pro: a 6.3-inch LTPO screen, Tensor G6, a 48 MP 5x telephoto and a 42 MP front camera.",
+    "unsure": [
+      "popularity"
+    ],
+    "year": 2026,
+    "released": "2026-08",
+    "sources": [
+      "https://store.google.com/us/product/pixel_11_pro_specs"
+    ]
+  },
+  {
+    "id": "apple-mac-mini-m6",
+    "category": "desktop",
+    "brand": "Apple",
+    "name": "Mac mini M6",
+    "aliases": [
+      "Mac mini Apple M6",
+      "Apple Mac mini M6"
+    ],
+    "tier": "midrange",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 64,
+    "accent": "#D9DADE",
+    "display": {},
+    "chipset": {
+      "name": "Apple M6",
+      "cpu": "12-core"
+    },
+    "graphics": {
+      "name": "Apple M6 12-core GPU",
+      "cores": 12,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": null
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": null
+      },
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": null
+      }
+    ],
+    "body": {
+      "dimensions": "127 x 127 x 50 mm"
+    },
+    "battery": {},
+    "connectivity": {},
+    "cardSlot": false,
+    "os": "macOS 27",
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "Apple's smallest desktop, now on the 12-core M6.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/mac-mini/specs/"
+    ]
   }
 ]
