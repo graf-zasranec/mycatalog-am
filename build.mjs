@@ -215,10 +215,9 @@ function cutMap(inline, small) {
     // colours whose photo is another colour's photo (tools/photo-dupes.py): a dot for them would
     // show the wrong colour, so they have no colour photo until a real one is supplied
     if (rest !== 'main' && (DUPES[id] || []).includes(rest)) continue;
-    const thumb = `images/thumb/${f}`;
     (m[id] ||= {})[rest] = inline
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
-      : (small && fs.existsSync(thumb) ? thumb : `${CUT}/${f}`);
+      : `${CUT}/${f}`;
   }
   return m;
 }
@@ -405,16 +404,6 @@ function build({ inline, standalone }) {
   // Cards show the very photo the product page shows (owner, 2026-10-02): a separate thumbnail
   // set kept drifting out of step with it, so there is none - THUMB() falls through to IMG().
   const colorThumbs = {};
-  // main shot: the transparent cutout when we have one, else the original photo
-  // Two sizes of the same photograph. A card draws it into a box 123 px wide on a phone and was
-  // being handed the 1200 px cutout the product page uses - 829 KB of images for thirteen
-  // thumbnails. images/thumb holds a 600 px copy, which still clears a retina desktop card, and
-  // the full-size file is left to the two places that fill the screen with it.
-  const THUMB = 'images/thumb';
-  const src = (id, small) => {
-    const t = `${THUMB}/${id}__main.webp`;
-    return small && fs.existsSync(t) ? t : `${CUT}/${id}__main.webp`;
-  };
   const at = f => inline ? 'data:image/webp;base64,' + fs.readFileSync(f).toString('base64') : f;
   const main = {}, thumb = {};
   for (const p of [...phones, ...(COMING.items || [])]) {
