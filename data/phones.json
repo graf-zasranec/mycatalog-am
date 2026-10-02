@@ -567,7 +567,10 @@
     },
     "sources": [
       "https://www.acer.com/us-en/laptops/aspire/aspire-lite/pdp/NX.DE2AA.001"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i3-N350"
+    }
   },
   {
     "id": "acer-aspire-lite-al16-52p-32e3",
@@ -1145,7 +1148,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Acer Nitro V16 ANV16-71-70F7.",
@@ -1181,7 +1185,8 @@
       }
     ],
     "display": {
-      "size": 14.5
+      "size": 14.5,
+      "resolution": "3072x1920"
     },
     "battery": {},
     "summaryEn": "Acer Predator Helios Neo 14 PHN14-51-79UB.",
@@ -5606,7 +5611,8 @@
     },
     "body": {
       "materials": "Aluminium case",
-      "ip": "IP6X, 50 m water resistant"
+      "ip": "IP6X, 50 m water resistant",
+      "weight": 26.4
     },
     "battery": {
       "capacity": 245
@@ -5723,7 +5729,8 @@
     },
     "body": {
       "materials": "Aluminium or titanium case",
-      "ip": "IP6X, 50 m water resistant"
+      "ip": "IP6X, 50 m water resistant",
+      "weight": 36.9
     },
     "battery": {
       "capacity": 327
@@ -5822,7 +5829,8 @@
     },
     "body": {
       "materials": "Titanium case",
-      "ip": "100 m water resistant, EN13319 dive rating"
+      "ip": "100 m water resistant, EN13319 dive rating",
+      "weight": 61.6
     },
     "battery": {
       "capacity": 564
@@ -13501,7 +13509,10 @@
     "sources": [
       "https://www.dell.com/support/manuals/en-us/inspiron-14-7445-2-in-1-laptop/inspiron-14-7445-2in1-owners-manual/dimensions-and-weight",
       "https://nanoreview.net/en/laptop/dell-inspiron-14-7445"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 8640HS"
+    }
   },
   {
     "id": "dell-led-e2020h",
@@ -15647,7 +15658,8 @@
       }
     ],
     "display": {
-      "resolution": "260x260"
+      "resolution": "260x260",
+      "size": 1.3
     },
     "battery": {},
     "summaryEn": "Garmin Fenix 7 Pro Sapphire Solar.",
@@ -15679,7 +15691,8 @@
       }
     ],
     "display": {
-      "resolution": "260x260"
+      "resolution": "260x260",
+      "size": 1.4
     },
     "battery": {},
     "summaryEn": "Garmin Fenix 7X Pro – Sapphire Solar Edition.",
@@ -16138,7 +16151,8 @@
       }
     ],
     "display": {
-      "resolution": "176x176"
+      "resolution": "176x176",
+      "size": 1.1
     },
     "battery": {},
     "summaryEn": "Garmin Instinct 2X Solar.",
@@ -23786,7 +23800,8 @@
     "display": {
       "size": 15.6,
       "type": "IPS LCD",
-      "touch": false
+      "touch": false,
+      "resolution": "1920x1080"
     },
     "chipset": {
       "name": "Intel Core Ultra 7 255U"
@@ -34218,7 +34233,8 @@
       }
     ],
     "display": {
-      "resolution": "466x466"
+      "resolution": "466x466",
+      "size": 1.32
     },
     "battery": {
       "capacity": 305
@@ -37925,7 +37941,9 @@
         "priceAmd": 62000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.2
+    },
     "battery": {},
     "summaryEn": "Samsung Galaxy FE.",
     "unsure": [
@@ -39907,7 +39925,9 @@
         "priceAmd": 159000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.5
+    },
     "battery": {
       "capacity": 590
     },

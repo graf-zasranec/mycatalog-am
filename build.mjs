@@ -409,7 +409,11 @@ function build({ inline, standalone }) {
   for (const p of [...phones, ...(COMING.items || [])]) {
     const cut = `${CUT}/${p.id}__main.webp`;
     if (!fs.existsSync(cut)) { console.warn('  ! missing image for', p.id); continue; }
-    main[p.id] = at(cut);
+    // The card shows what the product page opens on: the first listed colour that has its own
+    // photo. A main shot in a finish nobody here sells (a pink Band 10 over Black/Silver) made the
+    // card promise a colour the page did not have (owner, 2026-10-02).
+    const first = (p.colors || []).map(c => (colors[p.id] || {})[c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')]).find(Boolean);
+    main[p.id] = first || at(cut);
     // The embedded build carries every photo as a data URI. Inlining a second copy of all 198
     // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
     // THUMB() falls through to IMG().
@@ -593,7 +597,10 @@ for (const p of phones) {
   const url = `${SITE}p/${p.id}/`, cat = catOf(p), catUrl = `${SITE}c/${cat}/`;
   const offs = offersOf(p), lo = offs.length ? offs[0].price : null, hi = offs.length ? offs[offs.length - 1].price : null;
   const low = low30(p), seen = offs.map(o => o.seen).filter(Boolean).sort().pop();
-  const shot = fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `../../${CUT}/${p.id}__main.webp` : null;
+  // the same photo the app shows on the card and opens the page on: the first listed colour's own
+  const firstCol = (p.colors || []).map(c => `${CUT}/${p.id}__${c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.webp`).find(f => fs.existsSync(f));
+  const hero = firstCol || (fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `${CUT}/${p.id}__main.webp` : null);
+  const shot = hero ? `../../${hero}` : null;
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Product', name: nameOf(p), brand: { '@type': 'Brand', name: p.brand },
       category: cat, image: img, url, offers: offerOf(p) },
