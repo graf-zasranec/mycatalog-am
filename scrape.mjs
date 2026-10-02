@@ -621,7 +621,10 @@ function magentoChildren(html, colors) {
     const price = Math.round(Number((pr.finalPrice || {}).amount || 0));
     if (!price || price < 5000) continue;
     const col = label(color, child);
-    out.push({ price, storage: capOf(label(drive, child)), ram: capOf(label(ram, child)),
+    // Yerevan Mobile names its capacity option "Memory": 128GB/256GB there is storage, not RAM
+    let st = capOf(label(drive, child)), rm = capOf(label(ram, child));
+    if (st == null && rm >= 32) { st = rm; rm = null; }
+    out.push({ price, storage: st, ram: rm,
       // A colour Magento states that none of the product's own colours will map to is not a
       // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
       // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
@@ -2746,6 +2749,15 @@ try {
 for (const [id, list] of Object.entries(offers)) {
   const p = phoneById[id], v = p?.variants || [];
   if (p?.variantUnit === 'mm' && v.length === 1) for (const o of list) o.storage = v[0].storage;
+}
+// RAM read off the product's own builds where its capacity allows only one: Apple sells the iPad
+// Pro M5 at 256/512 GB with 12 GB and 1/2 TB with 16 GB, and no shop title says so.
+for (const [id, list] of Object.entries(offers)) {
+  const vs = (phoneById[id] || {}).variants || [];
+  for (const o of list) if (o.ram == null && o.storage != null) {
+    const r = [...new Set(vs.filter(v => v.storage === o.storage && v.ram != null).map(v => v.ram))];
+    if (r.length === 1) o.ram = r[0];
+  }
 }
 let deduped = 0;
 for (const [id, list] of Object.entries(offers)) {

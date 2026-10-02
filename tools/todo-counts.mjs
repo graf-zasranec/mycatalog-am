@@ -35,7 +35,10 @@ for (const p of P) {
   const main = `${CUT}/${p.id}__main.webp`;
   if (!fs.existsSync(main)) add('photo: no main photo', p.id);
   else if (webpW(main) < 600) add('photo: main under 600 px', p.id);
-  for (const c of p.colors || []) if (!fs.existsSync(`${CUT}/${p.id}__${slug(c)}.webp`)) { add('photo: a colour without its own photo', p.id); break; }
+  // Only colours a shop sells need a photo; the page greys out the rest (same match as _app.js sold()).
+  const k = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+  const soldC = c => offs.some(o => !o.color || k(c) === k(o.color) || (k(o.color).length >= 4 && k(c).endsWith(k(o.color))));
+  for (const c of p.colors || []) if (soldC(c) && !fs.existsSync(`${CUT}/${p.id}__${slug(c)}.webp`)) { add('photo: a colour without its own photo', p.id); break; }
   // specs
   for (const f of KEY[p.category] || []) if (get(p, f) == null || get(p, f) === '') { add(`specs: missing a key field (${p.category})`, p.id); break; }
   // prices

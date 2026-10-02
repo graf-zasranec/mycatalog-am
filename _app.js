@@ -2034,7 +2034,7 @@ function detailView(p) {
           <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
           ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
             <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ', ' + esc(x('notSold'))}"
-              class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
+              class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na" disabled="'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
           ${bands.length > 1 ? `<div class="og"><label>${esc(t('f.band'))}</label>
             <div class="bs">${bands.map(bv => `<button data-band="${esc(bv)}" class="${bv === SEL.band ? 'on' : ''}${sold(p, 'band', bv) ? '' : ' na'}"${sold(p, 'band', bv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${bv === SEL.band}">${esc(bv)}</button>`).join('')}</div></div>` : ''}
           ${sizes.length > 1 ? `<div class="og"><label>${esc(t('f.screen'))}</label>

@@ -821,7 +821,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "summaryEn": "Acer Nitro 5 AN515-45-R7SL.",
@@ -2438,7 +2439,9 @@
       "size": 11,
       "resolution": "2388x1668"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 7538
+    },
     "summaryEn": "Apple iPad 11 Pro Wi-Fi M2 MNXG3RK/A.",
     "unsure": [
       "popularity"
@@ -2675,7 +2678,8 @@
       "video": "4K@60fps"
     },
     "battery": {
-      "wired": 20
+      "wired": 20,
+      "capacity": 7606
     },
     "body": {
       "weight": 460,
@@ -2921,7 +2925,9 @@
       "size": 11,
       "resolution": "2360x1640"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 7606
+    },
     "summaryEn": "Apple iPad Air 11 Wi-Fi 2024.",
     "unsure": [
       "popularity"
@@ -3199,7 +3205,8 @@
       "video": "4K@60fps"
     },
     "battery": {
-      "wired": 20
+      "wired": 20,
+      "capacity": 8160
     },
     "body": {
       "weight": 444,
@@ -3345,7 +3352,9 @@
       "front": "12 MP Center Stage",
       "video": "4K"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 8160
+    },
     "body": {
       "materials": "Aluminium unibody",
       "ip": "IP42",
@@ -6572,6 +6581,9 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 7 7435HS"
+    },
+    "body": {
+      "weight": 2600
     }
   },
   {
@@ -6720,6 +6732,9 @@
     ],
     "chipset": {
       "name": "Intel Celeron N4020"
+    },
+    "body": {
+      "weight": 1300
     }
   },
   {
@@ -8820,7 +8835,8 @@
     "display": {
       "size": 15.6,
       "type": "Full HD OLED",
-      "touch": false
+      "touch": false,
+      "resolution": "2880x1620"
     },
     "chipset": {
       "name": "Intel Core i5-13500H"
@@ -8903,7 +8919,10 @@
       "ASUS Vivobook 15X OLED",
       "ASUS Vivobook 15X OLED M1503",
       "Vivobook 15X OLED M1503"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11",
@@ -9368,7 +9387,8 @@
     "popularity": 20,
     "accent": "#5C6470",
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "1366x768"
     },
     "chipset": {
       "name": "Intel N4020"
@@ -9385,7 +9405,10 @@
     "summaryEn": "A 14-inch laptop with Intel N4020.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1300
+    }
   },
   {
     "id": "asus-vivobook-e510ka-br859ws",
@@ -9936,7 +9959,8 @@
       "size": 16,
       "type": "3.2K OLED",
       "refresh": 120,
-      "touch": false
+      "touch": false,
+      "resolution": "3200x2000"
     },
     "chipset": {
       "name": "Intel Core i9-13900H"
@@ -10103,7 +10127,10 @@
       "ASUS Vivobook S 15 OLED",
       "ASUS Vivobook S 15 OLED M3502QA",
       "Vivobook S 15 OLED M3502"
-    ]
+    ],
+    "body": {
+      "weight": 1800
+    }
   },
   {
     "id": "asus-vivobook-s16-s3607v",
@@ -10609,7 +10636,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "2880x1620"
     },
     "chipset": {
       "name": "Intel Core i7-12700H"
@@ -25398,7 +25426,10 @@
     "colors": [
       "Performance Blue",
       "Ceramic White"
-    ]
+    ],
+    "body": {
+      "weight": 2290
+    }
   },
   {
     "id": "hp-victus-15-fa0033dx-9t9r8ua",
@@ -28370,7 +28401,10 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83DT006NRK"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5 120U"
+    }
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us",
@@ -28642,7 +28676,10 @@
     "sources": [
       "https://psref.lenovo.com/detail/?M=83AQ0024RK",
       "https://eldorado.am/en/lenovo-ideapad-pro-5-16irh8-16-512gb-83aq0024rk"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-13500H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15",
@@ -28738,7 +28775,10 @@
     },
     "sources": [
       "e-catalog"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 40"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15ahp10",
@@ -28993,7 +29033,8 @@
       }
     ],
     "display": {
-      "size": 15.3
+      "size": 15.3,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15IRU10.",
@@ -38880,7 +38921,10 @@
     ],
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-tab-s10-lite-wi-fi-128gb-_gray_/32418/"
-    ]
+    ],
+    "body": {
+      "weight": 524
+    }
   },
   {
     "id": "samsung-galaxy-tab-s10-fe",
@@ -54491,7 +54535,8 @@
     },
     "battery": {
       "wired": 20,
-      "wireless": 15
+      "wireless": 15,
+      "capacity": 3279
     },
     "summaryEn": "Apple iPhone 14.",
     "unsure": [
@@ -54565,7 +54610,8 @@
     },
     "battery": {
       "wired": 20,
-      "wireless": 15
+      "wireless": 15,
+      "capacity": 4323
     },
     "summaryEn": "Apple iPhone 14 Pro Max.",
     "unsure": [
@@ -54638,7 +54684,8 @@
     },
     "battery": {
       "wired": 20,
-      "wireless": 15
+      "wireless": 15,
+      "capacity": 4325
     },
     "summaryEn": "Apple iPhone 14 Plus.",
     "unsure": [
