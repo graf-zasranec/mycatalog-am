@@ -805,7 +805,8 @@ if (process.argv[2] === '--selftest') {
     // The Pro is carried now, so the phone that proves the rule is the Ultra, which is not.
     ['xiaomi-15t-pro', 'Xiaomi 15T Pro'],
     [null, 'Xiaomi 15 Ultra'],
-    ['xiaomi-15t', 'Xiaomi 15T'],
+    ['xiaomi-17t', 'Xiaomi 17T'],
+    ['xiaomi-17t-pro', 'Xiaomi 17T Pro'],
     ['xiaomi-15', 'Xiaomi 15'],
     // AllSell's own misspelling, on every Apple Watch Series page it serves
     ['apple-watch-series-11', 'https://allsell.am/en/apple-watch-seria-11'],
@@ -880,7 +881,7 @@ if (process.argv[2] === '--selftest') {
     ['apple-iphone-17', 'Սմարթ հեռախոս APPLE iPhone 17 256GB (Lavender) (A3520)'],
     // REDstore's Pixel 10 Pro Fold was being sold as a Pixel 10 Pro, at 725,000 instead of 475,900 - it is the Fold's
     ['google-pixel-10-pro-fold-gu0np', 'google-pixel-10-pro-fold-16gb256gb-moonstone'],
-    ['xiaomi-15t', 'xiaomi-15t-256gb'],
+    ['xiaomi-17t', 'xiaomi-17t-256gb'],
     ['poco-x7-pro', 'poco-x7-pro-512gb'],
     ['apple-iphone-17-pro-max', 'apple-iphone-17-pro-max-2tb'],
     ['samsung-galaxy-a56', 'Samsung Galaxy A56 5G 256GB'],
@@ -2754,9 +2755,21 @@ for (const [id, list] of Object.entries(offers)) {
 // Pro M5 at 256/512 GB with 12 GB and 1/2 TB with 16 GB, and no shop title says so.
 for (const [id, list] of Object.entries(offers)) {
   const vs = (phoneById[id] || {}).variants || [];
-  for (const o of list) if (o.ram == null && o.storage != null) {
-    const r = [...new Set(vs.filter(v => v.storage === o.storage && v.ram != null).map(v => v.ram))];
-    if (r.length === 1) o.ram = r[0];
+  const known = new Set(vs.map(v => v.ram).filter(r => r != null));
+  for (const o of list) {
+    // the title says it in a form capacitiesOf misses: "4/128", "16 512GB", "(8GB)", "24GB RAM"
+    if (o.ram == null && known.size > 1) {
+      const t = o.title || '';
+      for (const re of [/\b(\d{1,2})\s*\/\s*\d{2,4}\b/, /\b(\d{1,2})\s*GB\s*RAM\b/i, /\((\d{1,2})\s*GB\)/i,
+                        /\/\s*(\d{1,2})\s*RAM\b/i, /\b(\d{1,2})\s+\d{3,4}\s*GB\b/i]) {
+        const m = t.match(re);
+        if (m && known.has(+m[1])) { o.ram = +m[1]; break; }
+      }
+    }
+    if (o.ram == null && o.storage != null) {
+      const r = [...new Set(vs.filter(v => v.storage === o.storage && v.ram != null).map(v => v.ram))];
+      if (r.length === 1) o.ram = r[0];
+    }
   }
 }
 let deduped = 0;

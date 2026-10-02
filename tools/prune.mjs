@@ -24,7 +24,7 @@ if (!dead.length || !process.argv.includes('--write')) {
 }
 
 const gone = new Set(dead.map(p => p.id));
-fs.writeFileSync('data/phones.json', JSON.stringify(phones.filter(p => !gone.has(p.id)), null, 1));
+fs.writeFileSync('data/phones.json', JSON.stringify(phones.filter(p => !gone.has(p.id)), null, 2) + '\n');
 
 // An array, so deleting by key leaves a hole that serialises as null and the build dies
 // destructuring it. Filtered, not deleted.
