@@ -1467,33 +1467,34 @@ function catTabs() {
   // has to be the number clicking it produces.
   const pool = DATA.filter(p => hayMatch(p, st.q));
   const n = c => pool.filter(p => (p.category || 'phone') === c).length;
-  const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${esc(label)}<b class="num">${count}</b></a>`;
+  const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${CAT_ICON[c] ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${CAT_ICON[c]}"/></svg>` : ''}${esc(label)}<b class="num">${count}</b></a>`;
   // A tab whose count is 0 leads to an empty page, so it is not offered. The category you are
   // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
-  // Fifteen categories wrapped to three rows and pushed the catalogue itself below the fold. The
-  // six biggest are shown, plus whichever one you are standing in, so the tab you are on is never
-  // the one that got hidden.
-  const live = cats.filter(c => n(c) > 0 || st.cat === c);
-  const cap = CAT_SHOWN[st.lang] || 5;
-  const top = [...live].sort((a, b) => n(b) - n(a)).slice(0, cap);
-  // the section you are in takes the last place rather than adding one, so the row never grows
-  if (st.cat && !top.includes(st.cat)) top[cap - 1] = st.cat;
-  const few = new Set(top);
-  const shown = live.filter(c => few.has(c));
-  const rest = live.length - shown.length;
+  // Every section, biggest first, in one row that scrolls sideways (owner, 2026-10-04): the old
+  // "Other sections 9" button did not say what was behind it.
+  const live = cats.filter(c => n(c) > 0 || st.cat === c).sort((a, b) => n(b) - n(a));
   return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
-    tab('', x('catAll'), pool.length) +
-    shown.map(c => tab(c, catName(c), n(c))).join('') +
-    // Every section, laid out and explained, is what the chooser page already is - so the button
-    // that says "more sections" goes there instead of unfolding a second row of the same chips.
-    `<a class="fmore cmore" href="#/construct">${esc(x('catsMore'))}${
-      rest > 0 ? ` <b>${rest}</b>` : ''}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a>`
-    + `</nav>`;
+    tab('', x('catAll'), pool.length) + live.map(c => tab(c, catName(c), n(c))).join('') + `</nav>`;
 }
+// One stroke icon per section, drawn on a 24px grid (stroke, no fill - see .ctab svg)
+const CAT_ICON = {
+  phone: 'M8 2.5h8a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H8A1.5 1.5 0 0 1 6.5 20V4A1.5 1.5 0 0 1 8 2.5zM11 18.5h2',
+  tablet: 'M5.5 3h13A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3zM11 18h2',
+  laptop: 'M5 5.5h14a1 1 0 0 1 1 1V16H4V6.5a1 1 0 0 1 1-1zM2 16h20l-1.2 2.5H3.2z',
+  desktop: 'M3.5 4h17a1 1 0 0 1 1 1v10.5a1 1 0 0 1-1 1h-17a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM9 20.5h6M12 16.5v4',
+  monitor: 'M3 4.5h18a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM8 20h8M12 16v4',
+  tv: 'M2.5 6h19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-19a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zM8 3l4 3 4-3M7 21h10',
+  headphones: 'M4 15v-3a8 8 0 0 1 16 0v3M4 15h3v6H5.5A1.5 1.5 0 0 1 4 19.5zM20 15h-3v6h1.5a1.5 1.5 0 0 0 1.5-1.5z',
+  speaker: 'M7 2.5h10A1.5 1.5 0 0 1 18.5 4v16a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 20V4A1.5 1.5 0 0 1 7 2.5zM12 10.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM12 5.5v.5',
+  watch: 'M8.5 6.5h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2zM9 6.5 9.5 2.5h5l.5 4M9 17.5l.5 4h5l.5-4',
+  console: 'M7 7h10a5 5 0 0 1 4.9 6l-.8 4a2.5 2.5 0 0 1-4.3 1.2L14.5 16h-5l-2.3 2.2A2.5 2.5 0 0 1 2.9 17l-.8-4A5 5 0 0 1 7 7zM7 10v4M5 12h4M15.5 11h.01M17.5 13h.01',
+  drone: 'M9 10h6v4H9zM9 10 5 6M15 10l4-4M9 14l-4 4M15 14l4 4M2.5 6h5M16.5 6h5M2.5 18h5M16.5 18h5',
+  ereader: 'M6 2.5h12a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 20V4A1.5 1.5 0 0 1 6 2.5zM8 7h8M8 10h8M8 13h5',
+  appliance: 'M7 3h10l1.5 18h-13zM6.2 8h11.6M12 12v5',
+  component: 'M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4',
+  network: 'M3 14h18v5H3zM7 16.5h.01M10 16.5h.01M8 14l-2-8M16 14l2-8',
+};
 const catName = c => (X[st.lang].cats && X[st.lang].cats[c]) || c;
-// How many sections fit one row beside "More sections": Armenian and Russian names run longer
-// than English (owner, 2026-09-24: 6 in English, 5 in Armenian and Russian).
-const CAT_SHOWN = { en: 6, hy: 5, ru: 5 };
 function catalogView() {
   // The hero carries the h1 on the front page. Every other catalogue screen - a category, a
   // search - had no h1 at all, and the one heading it did have said "Catalog" while the browser
@@ -3030,6 +3031,23 @@ window.addEventListener('hashchange', e => {
   const to = location.hash.replace(/^#/, '') || '/';
   // Leaving the comparison used to end it, so the Back button threw a comparison away. The picks
   // are not invisible state: the nav's Compare link carries their count. Only Clear all empties it.
-  render(false);
+  // A card opened from the grid hands its photo to the product page: the browser morphs one into
+  // the other (View Transitions API), so the eye follows the product instead of a page swap.
+  // Browsers without it, and anyone who asked for less motion, get the plain render.
+  const img = vtFrom; vtFrom = null;
+  if (img && img.isConnected && /^\/p\//.test(to) && document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    img.style.viewTransitionName = 'pshot';
+    const hero = () => document.getElementById('hpShot');
+    const vt = document.startViewTransition(() => {
+      img.style.viewTransitionName = '';
+      render(false);
+      if (hero()) hero().style.viewTransitionName = 'pshot';
+    });
+    // a skipped transition (hidden tab, a second click mid-flight) rejects these; the page itself is fine
+    vt.ready.catch(() => {});
+    vt.finished.catch(() => {}).then(() => { if (hero()) hero().style.viewTransitionName = ''; });
+  } else render(false);
 });
+let vtFrom = null;
+document.addEventListener('click', e => { const c = e.target.closest && e.target.closest('.pcard'); vtFrom = c ? c.querySelector('.pimg') : null; }, true);
 render();

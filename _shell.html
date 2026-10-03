@@ -1,7 +1,6 @@
 <title>Better.am</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@144,800&amp;text=bter.&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=optional">
+<!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 /* ================= tokens ================= */
 :root{
@@ -358,6 +357,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 @media (max-width:520px){.pager .pg{min-width:34px;height:34px;padding:0 8px}}
 /* Filter results arriving. The stagger is per-card via --d, set in gridIn(). */
+/* card photo -> product photo (see the hashchange handler); the rest of the page just cross-fades, quickly */
+::view-transition-group(pshot){animation-duration:.34s;animation-timing-function:cubic-bezier(.2,.7,.3,1)}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.16s}
 @keyframes gridin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes gridinFade{from{opacity:0}to{opacity:1}}
 .grid.gridin>*{animation:gridin .34s cubic-bezier(.22,.61,.36,1) both;animation-delay:var(--d,0ms)}
@@ -484,6 +486,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .ctabs .ctab:hover{border-color:var(--line2);color:var(--text)}
 .ctabs .ctab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
 .ctabs .ctab b{font-weight:600;font-size:0.8125rem;opacity:.6}
+.ctabs .ctab svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-left:-3px}
 .ctabs .cmore{height:38px;text-decoration:none}
 @media (max-width:640px){.ctabs .cmore{height:34px}}
 @media (max-width:640px){.ctabs{gap:5px;margin-top:16px}.ctabs .ctab{height:34px;padding:0 12px;font-size:0.875rem}}

@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 // any path containing a space, which is most of them on Windows.
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 const TYPES = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json',
-  '.jpg':'image/jpeg', '.png':'image/png', '.webp':'image/webp', '.txt':'text/plain', '.svg':'image/svg+xml',
+  '.jpg':'image/jpeg', '.png':'image/png', '.webp':'image/webp', '.txt':'text/plain', '.svg':'image/svg+xml', '.css':'text/css', '.woff2':'font/woff2',
   '.xml':'application/xml' };
 http.createServer((req, res) => {
   // a bare % makes decodeURIComponent throw, the handler rejects and the request never gets a
