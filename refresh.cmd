@@ -70,6 +70,12 @@ echo [%date% %time%] re-pricing the hand-entered rows...
 node tools\confirm-hand.mjs --recheck %RECHECK_DAYS% %ROW_LIMIT%
 if errorlevel 1 echo   hand-row pass failed - carrying on with the figures already in listings.csv
 
+REM Notebook Centre is not crawled like the other shops; its hand rows are re-read page by page,
+REM slowly, with the shop's permission (2026-10-03). Sold-out and deleted pages lose their rows.
+echo [%date% %time%] re-reading Notebook Centre...
+node tools\nbc-import.mjs --fetch --write
+if errorlevel 1 echo   Notebook Centre pass failed - carrying on with the figures already in listings.csv
+
 REM --fresh: the nightly job wants today's prices from every shop, not yesterday's checkpoint.
 REM Without it a run started again the same day skips the shops the last one already read, which
 REM is what somebody re-running by hand after a crash wants and the opposite of what this wants.

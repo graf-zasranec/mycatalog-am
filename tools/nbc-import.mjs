@@ -1,15 +1,20 @@
-// Notebook Centre bars automated readers, so its prices come from the owner's own Web Scraper run
-// (sitemap: Videos/Cline/notebookcentre/sitemap.json). This puts that export back into listings.csv.
+// Notebook Centre prices: read by --fetch, or from the owner's own Web Scraper export
+// (sitemap: Videos/Cline/notebookcentre/sitemap.json). Either way the result goes into listings.csv.
 //
 //   node tools/nbc-import.mjs <export.csv>            what it would do
 //   node tools/nbc-import.mjs <export.csv> --write    do it
+//   node tools/nbc-import.mjs --fetch --write         read the pages itself (refresh.cmd does this)
+//
+// --fetch exists because the shop gave the owner permission on 2026-10-03. It stays polite: plain
+// requests, one every 1.5 s, product pages only - the price is the product:price:amount meta and
+// a page whose JSON-LD availability is not InStock counts as sold out.
 //
 // A page with no price is a sold-out or deleted product: its rows are removed.
 import fs from 'node:fs';
 
-const [file] = process.argv.slice(2);
-const write = process.argv.includes('--write');
-if (!file) { console.log('usage: node tools/nbc-import.mjs <export.csv> [--write]'); process.exit(1); }
+const file = process.argv.slice(2).find(a => !a.startsWith('--'));
+const write = process.argv.includes('--write'), fetchIt = process.argv.includes('--fetch');
+if (!file && !fetchIt) { console.log('usage: node tools/nbc-import.mjs <export.csv>|--fetch [--write]'); process.exit(1); }
 
 // Web Scraper quotes every field; titles can hold commas.
 const parse = l => {
@@ -21,14 +26,30 @@ const parse = l => {
   }
   return [...out, cur];
 };
-const [head, ...lines] = fs.readFileSync(file, 'utf8').replace(/^﻿/, '').split(/\r?\n/).filter(Boolean);
+const got = {};
+if (fetchIt) {
+  const urls = [...new Set(fs.readFileSync('data/listings.csv', 'utf8').split(/\r?\n/).map(l => l.split(','))
+    .filter(f => f[0] === 'notebookcentre').map(f => f[4]))];
+  for (const u of urls) {
+    try {
+      const r = await fetch(u, { signal: AbortSignal.timeout(30000) });
+      if (r.status === 404 || r.status === 410) got[u] = 0;
+      else if (r.ok) {
+        const h = await r.text(), p = +(h.match(/product:price:amount" content="([\d.]+)/) || [])[1];
+        got[u] = /"availability":\s*"https?:\/\/schema.org\/InStock/.test(h) && p >= 10000 ? Math.round(p) : 0;
+      }   // any other failure leaves the row as it was, to be tried next run
+    } catch { }
+    await new Promise(r => setTimeout(r, 1500));
+  }
+} else {
+const [head, ...lines] = fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '').split(/\r?\n/).filter(Boolean);
 const H = parse(head), iu = H.indexOf('web-scraper-start-url'), ip = H.indexOf('price');
 if (iu < 0 || ip < 0) { console.log('export needs web-scraper-start-url and price columns, got:', H.join(', ')); process.exit(1); }
 
-const got = {};
 for (const l of lines) {
   const f = parse(l), n = +(f[ip] || '').replace(/[^\d]/g, '');
   got[f[iu]] = n >= 10000 ? n : 0;   // under 10,000 AMD is never a real device price
+}
 }
 
 const P = 'data/listings.csv', raw = fs.readFileSync(P, 'utf8'), nl = raw.includes('\r\n') ? '\r\n' : '\n';
