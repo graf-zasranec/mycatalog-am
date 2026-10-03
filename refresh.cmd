@@ -67,7 +67,7 @@ REM back, so consecutive runs work through the whole catalogue - 400 a night cov
 set RECHECK_DAYS=1
 set ROW_LIMIT=
 echo [%date% %time%] re-pricing the hand-entered rows...
-node tools\confirm-hand.mjs --recheck %RECHECK_DAYS% %ROW_LIMIT%
+node tools\confirm-hand.mjs --recheck %RECHECK_DAYS% %ROW_LIMIT% --drop-gone
 if errorlevel 1 echo   hand-row pass failed - carrying on with the figures already in listings.csv
 
 REM Notebook Centre is not crawled like the other shops; its hand rows are re-read page by page,

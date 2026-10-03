@@ -16,7 +16,13 @@ import fs from 'node:fs';
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
 const DELAY = 700;
+// Viva answers 503 after about ten requests at that pace (2026-10-03), so it is asked slowly.
+const VIVA_DELAY = 4000;
 const dry = process.argv.includes('--dry');
+// --drop-gone (refresh.cmd): a row whose page is DELETED - 404/410, or a shop's own not-found page -
+// is removed instead of reported. A sold-out page is not deleted and is still left for a person.
+const dropGone = process.argv.includes('--drop-gone');
+const dropped = new Set();
 // Without these this tool only ever looked at rows carrying NO date, which made it a one-shot
 // way to clear a backlog rather than something a nightly job can use: once every row had been
 // checked once, it found nothing to do and prices never moved again.
@@ -296,9 +302,25 @@ function istylePrice(html, f) {
   if (!rows.length) return null;
   const want = Number(f[2]) || null;
   let hit = want == null ? rows : rows.filter(r => r.caps.includes(want));
-  if (!hit.length) return null;
-  if (new Set(hit.map(r => r.price)).size !== 1) return null;
-  return { price: hit[0].price, how: 'istyle-variants', stock: hit.some(r => r.stock) };
+  if (hit.length && new Set(hit.map(r => r.price)).size === 1)
+    return { price: hit[0].price, how: 'istyle-variants', stock: hit.some(r => r.stock) };
+  // The row does not say which variant it is - a MacBook row records the RAM while the page varies
+  // by disk, an iPad or a Dyson row records nothing - so no single figure can be chosen. But if the
+  // row's own price is still one the page sells, that price stands and the row is confirmed.
+  const was = Number(f[5]) || 0;
+  if (rows.some(r => r.price === was && r.stock)) return { price: was, how: 'istyle-still-offered', stock: true };
+  return null;
+}
+
+// Viva (Bitrix) prints the product's own figure once, in #display_price; every other price on the
+// page belongs to the carousels. "Order" in place of "Buy" is still a price a person can pay.
+// A deleted product answers 200 with Viva's "page doesn't exist" body, so that is caught here too.
+function vivaPrice(html, f) {
+  if (!f[4].includes('shop.viva.am')) return null;
+  if (!/id="display_price"/.test(html) && /viva-404|doesn.t exist|գոյություն չունի/i.test(html)) return { gone: true };
+  const m = html.match(/id="display_price"[^>]*>\s*([\d,\s]+)/);
+  const n = m ? Number(m[1].replace(/[^\d]/g, '')) : 0;
+  return n >= FLOOR ? { price: n, how: 'viva-page', stock: true } : null;
 }
 
 function priceOf(html) {
@@ -439,9 +461,9 @@ for (let i = 0; i < todo.length; i++) {
     let html = '';
     try {
       const r = await fetch(readUrl(f[4]), { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
-      if (r.ok) html = await r.text(); else gone.push([f[0], f[1], f[4], 'HTTP ' + r.status]);
+      if (r.ok) html = await r.text(); else { gone.push([f[0], f[1], f[4], 'HTTP ' + r.status]); if (r.status === 404 || r.status === 410) dropped.add(f.slice(0, 5).join('|')); }
     } catch (e) { gone.push([f[0], f[1], f[4], e.name]); }
-    await sleep(DELAY);
+    await sleep(f[4].includes('shop.viva.am') ? VIVA_DELAY : DELAY);
     if (!html) continue;
     // A configurator states no price to read. Check the link instead and mark the row.
     if (isConfig(f[4])) {
@@ -462,12 +484,13 @@ for (let i = 0; i < todo.length; i++) {
         continue;
       }
     }
-    p = buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f)
+    p = vivaPrice(html, f) || buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f)
       || istylePrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
     // url that five different Dyson colours point at - five rows, five prices, one page.
     if (p && p.only && sharedKeys.has(f[0] + '|' + f[4])) { disputed.push([f[0], f[1], f[4]]); continue; }
+    if (p && p.gone) { gone.push([f[0], f[1], f[4], 'not-found page']); dropped.add(f.slice(0, 5).join('|')); continue; }
     if (!p) { nop.push([f[0], f[1], f[4]]); continue; }
   }
   how[p.how] = (how[p.how] || 0) + 1;
@@ -510,7 +533,7 @@ if (!dry) {
     else if (f.marked) changed.set(idOf(f), [null, null, 'config']);
   }
   const now = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
-  const merged = now.map((l, i) => {
+  const merged = now.filter((l, i) => !(i && dropGone && dropped.has(l.split(',').slice(0, 5).join('|')))).map((l, i) => {
     if (!i || !l.trim()) return l;
     const f = l.split(',');
     const c = f.length > 5 && changed.get(idOf(f));
@@ -521,7 +544,7 @@ if (!dry) {
     return f.join(',');
   });
   fs.writeFileSync('data/listings.csv', merged.filter(l => l.trim()).join('\n') + '\n');
-  console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now`);
+  console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now` + (dropGone && dropped.size ? `, removed ${dropped.size} whose page is deleted` : ''));
 }
 console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page`);
 if (linked) console.log(`${linked} row(s) at a shop that prices by configuration: the link opens the product they name, so the price a person read stands and the site can stop calling it unchecked`);
