@@ -432,21 +432,24 @@ function build({ inline, standalone }) {
   // because the repo root is the Pages publish root. The single-file builds keep carrying them:
   // a file somebody mails or pastes has nothing to fetch from.
   const lazy = !inline;
+  // A shop title holding '</script>' would end this script early and blank the site.
+  // < is the same character to JS, and the HTML parser never sees a tag.
+  const J = o => JSON.stringify(o).replace(/</g, '\\u003c');
   let appJs = '\n'
-    + `const DATA=${JSON.stringify(phones.map(({ summaryEn, sources, ...p }) => p))};\nconst STR=${JSON.stringify(STR)};\n`
+    + `const DATA=${J(phones.map(({ summaryEn, sources, ...p }) => p))};\nconst STR=${J(STR)};\n`
     + (lazy ? 'let HISTORY={points:{}};\nconst LAZYDATA=true;\n'
-            : `const HISTORY=${JSON.stringify(HISTORY)};\nconst LAZYDATA=false;\n`)
+            : `const HISTORY=${J(HISTORY)};\nconst LAZYDATA=false;\n`)
     // Wrapping this in JSON.parse was tried and measured: 268 ms to interactive against 294 ms
     // for the literal, three loads each, same machine - 9% - and it cost 77 KB of backslashes.
     // Not worth carrying the escaping for that, so the literal stays.
-    + `const PRICES=${JSON.stringify(PRICES)};\n`
-    + `const TERMS=${JSON.stringify(TERMS)};\n`
-    + `const COMING=${JSON.stringify(COMING)};\n`
-    + `const PAGEONLY=${JSON.stringify(PAGEONLY)};\n`
-    + `const MERGED=${JSON.stringify(MERGED)};\n`
-    + `const BLOG=${JSON.stringify(BLOG)};\n`
-    + `const DROPS=${JSON.stringify(DROPS)};\n`
-    + `const COMPARE_WITH=${JSON.stringify(pairs(phones, PRICES.offers || {}))};\n`
+    + `const PRICES=${J(PRICES)};\n`
+    + `const TERMS=${J(TERMS)};\n`
+    + `const COMING=${J(COMING)};\n`
+    + `const PAGEONLY=${J(PAGEONLY)};\n`
+    + `const MERGED=${J(MERGED)};\n`
+    + `const BLOG=${J(BLOG)};\n`
+    + `const DROPS=${J(DROPS)};\n`
+    + `const COMPARE_WITH=${J(pairs(phones, PRICES.offers || {}))};\n`
     // tools/photo-box.py: where each product sits inside its square cutout, for the product page
     + `const PBOX=${fs.existsSync('data/photo-box.json') ? fs.readFileSync('data/photo-box.json', 'utf8').trim() : '{}'};\n`
     + imgdata + rd('_app.js') + '\n';
@@ -618,7 +621,7 @@ for (const p of phones) {
 ${shot ? `<img class="shot" src="${shot}" alt="${esc(nameOf(p))}" width="360" height="360">` : ''}
 ${offs.length ? `<h2>Գները խանութներում</h2>
 <div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-${rows(offs).map(o => `<tr><td><a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a></td><td>${o.storage ? (o.storage >= 1024 ? o.storage / 1024 + ' ՏԲ' : o.storage + ' ԳԲ') : '—'}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
+${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${o.storage ? (o.storage >= 1024 ? o.storage / 1024 + ' ՏԲ' : o.storage + ' ԳԲ') : '—'}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
 </tbody></table></div>` : ''}
 ${specRows(p).length ? `<h2>Հիմնական բնութագրեր</h2>
 <dl>${specRows(p).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}

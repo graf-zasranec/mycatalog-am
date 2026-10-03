@@ -2320,7 +2320,7 @@ try {
     // just confirmed - the crawl is the only thing that ever dated an offer, and these are the
     // rows no crawl can reach. Blank still means unverified, which is the honest default.
     .map(line => { const [shop, title, cap, color, url, price, ram, check, seen] = line.split(','); return { shop, title, cap, color, url, price, ram, check, seen }; });
-  const shared = new Map();
+  const shared = new Map(), dropped = [];
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
   const rows = raw
     // A hand row's url is read ONLY when somebody pinned it AND no other row names that same
@@ -2334,7 +2334,13 @@ try {
                            : matchPhone(r.title),
                  storage: r.cap ? +r.cap : null, ram: r.ram ? +r.ram : ramOf(r.title),
                  esim: simBuild(`${r.title} ${r.url}`) }))
-    .filter(r => r.id && r.price);
+    .filter(r => r.id && r.price || (r.price && dropped.push(`${r.shop}: ${r.title}`) && false));
+  // A row that names no product used to vanish without a word - two Bose headphones lost every
+  // offer that way (2026-10-03). Say how many, and keep the list where somebody can read it.
+  if (dropped.length) {
+    console.log(`  ${dropped.length} hand row(s) match no product - data/hand-unmatched.txt`);
+    fs.writeFileSync('data/hand-unmatched.txt', dropped.join('\n') + '\n');
+  }
 
   // pixel.am serves one product page under both /am/ and /en/. The crawl reads the Armenian
   // path and a hand row was written against the English one, so comparing the two literally
