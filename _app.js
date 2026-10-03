@@ -144,6 +144,8 @@ try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getI
 // exists, or an array that came back as a string would all render as a broken page.
 for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses']) if (!Array.isArray(st[k])) st[k] = [];
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
+// ?lang=ru from the Russian/English static pages opens the app in that language
+{ const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';

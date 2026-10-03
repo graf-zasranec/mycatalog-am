@@ -529,21 +529,54 @@ const offersOf = p => ((PRICES.offers && PRICES.offers[p.id]) || []).slice().sor
 const shopsOf = p => new Set(offersOf(p).map(o => o.shop)).size;
 const shopName = k => (PRICES.shops && PRICES.shops[k] && PRICES.shops[k].name) || k;
 const ldJson = o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}<\/script>`;
-// the section names the app shows, read from its own Armenian table rather than copied here
-const CATS = (() => {
-  const m = rd('_app.js').match(/cats: \{([^}]*)\}/);
-  const o = {};
-  for (const [, k, v] of (m ? m[1] : '').matchAll(/(\w+): '([^']*)'/g)) o[k] = v;
-  return o;
-})();
+// Every static page is written three times: Armenian at the root, Russian under ru/, English under
+// en/ (owner, 2026-10-04 - people here search in Russian as much as in Armenian). Each names the
+// other two with hreflang, so a search engine shows the reader's own language.
+const LANGS = ['hy', 'ru', 'en'];
+const PRE = { hy: '', ru: 'ru/', en: 'en/' };
+// the section names the app shows, read from its own three tables (hy, ru, en, in that order)
+const CATS = Object.fromEntries([...rd('_app.js').matchAll(/cats: \{([^}]*)\}/g)].slice(0, 3).map((m, i) =>
+  [LANGS[i], Object.fromEntries([...m[1].matchAll(/(\w+): '([^']*)'/g)].map(x => [x[1], x[2]]))]));
 const catOf = p => p.category === 'earbuds' ? 'headphones' : (p.category || 'phone');
-const catLabel = c => CATS[c] || c;
+const catLabel = (c, l = 'hy') => (CATS[l] || {})[c] || c;
 // Armenian plural is the bare noun after any number, so one form is correct for all of them.
-const DESC = p => {
-  const n = shopsOf(p);
-  return n ? `Գինը՝ ${amd(bestOf(p))}-ից, ${n} խանութի գների համեմատություն Better.am-ում։`
-    : 'Այս պահին հայկական խանութներում առկա չէ։';
+const ruShops = n => n % 10 === 1 && n % 100 !== 11 ? 'магазине' : 'магазинах';
+const L = {
+  hy: { locale: 'hy_AM', from: a => `${a}-ից`,
+    desc: (a, n) => n ? `Գինը՝ ${a}-ից, ${n} խանութի գների համեմատություն Better.am-ում։` : 'Այս պահին հայկական խանութներում առկա չէ։',
+    title: n => `${n}: գինը Հայաստանում | Better.am`,
+    lead: (n, lo, k, hi, low) => `${n}-ի գինը Հայաստանում՝ ${lo}-ից, ${k} խանութում։${hi ? ` Ամենաթանկ առաջարկը՝ ${hi}։` : ''}${low ? ` Վերջին 30 օրվա ամենացածր գինը՝ ${low}։` : ''}`,
+    go: 'Համեմատել Better.am-ում', prices: 'Գները խանութներում', th: ['Խանութ', 'Տարբերակ', 'Գին'], gb: 'ԳԲ', tb: 'ՏԲ',
+    specs: 'Հիմնական բնութագրեր', sk: ['Էկրան', 'Պրոցեսոր', 'Մարտկոց', 'Քաշ', 'Թողարկում'], hz: 'Հց', mah: 'մԱժ', g: 'գ',
+    checked: 'Գները ստուգվել են՝ ',
+    ctitle: c => `${c}: գները Հայաստանի խանութներում | Better.am`,
+    cdesc: (k, a) => `${k} մոդել, ${a}-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։`,
+    cgo: 'Զտել և համեմատել Better.am-ում', models: 'Մոդելներ և գներ',
+    blog: 'Բլոգ', bdesc: 'Հոդվածներ գների, համեմատման և տեխնիկայի ընտրության մասին։', read: 'Կարդալ Better.am-ում', sources: 'Աղբյուրներ՝ ' },
+  ru: { locale: 'ru_RU', from: a => `от ${a}`,
+    desc: (a, n) => n ? `Цена от ${a}, сравнение цен в ${n} ${ruShops(n)} на Better.am.` : 'Сейчас нет в продаже в магазинах Армении.',
+    title: n => `${n}: цена в Армении | Better.am`,
+    lead: (n, lo, k, hi, low) => `Цена ${n} в Армении — от ${lo} в ${k} ${ruShops(k)}.${hi ? ` Самое дорогое предложение — ${hi}.` : ''}${low ? ` Самая низкая цена за 30 дней — ${low}.` : ''}`,
+    go: 'Сравнить на Better.am', prices: 'Цены в магазинах', th: ['Магазин', 'Вариант', 'Цена'], gb: 'ГБ', tb: 'ТБ',
+    specs: 'Основные характеристики', sk: ['Экран', 'Процессор', 'Аккумулятор', 'Вес', 'Выход'], hz: 'Гц', mah: 'мА·ч', g: 'г',
+    checked: 'Цены проверены: ',
+    ctitle: c => `${c}: цены в магазинах Армении | Better.am`,
+    cdesc: (k, a) => `Моделей: ${k}, от ${a}. Сравните цены в магазинах Армении на Better.am.`,
+    cgo: 'Фильтровать и сравнивать на Better.am', models: 'Модели и цены',
+    blog: 'Блог', bdesc: 'Статьи о ценах, сравнении и выборе техники.', read: 'Читать на Better.am', sources: 'Источники: ' },
+  en: { locale: 'en_US', from: a => `from ${a}`,
+    desc: (a, n) => n ? `From ${a}, prices compared across ${n} shop${n === 1 ? '' : 's'} on Better.am.` : 'Not currently sold in Armenian shops.',
+    title: n => `${n}: price in Armenia | Better.am`,
+    lead: (n, lo, k, hi, low) => `${n} price in Armenia: from ${lo} at ${k} shop${k === 1 ? '' : 's'}.${hi ? ` The most expensive offer is ${hi}.` : ''}${low ? ` Lowest price in the last 30 days: ${low}.` : ''}`,
+    go: 'Compare on Better.am', prices: 'Prices in shops', th: ['Shop', 'Version', 'Price'], gb: 'GB', tb: 'TB',
+    specs: 'Key specs', sk: ['Display', 'Chip', 'Battery', 'Weight', 'Released'], hz: 'Hz', mah: 'mAh', g: 'g',
+    checked: 'Prices checked: ',
+    ctitle: c => `${c}: prices in Armenian shops | Better.am`,
+    cdesc: (k, a) => `${k} models, from ${a}. Compare prices in Armenian shops on Better.am.`,
+    cgo: 'Filter and compare on Better.am', models: 'Models and prices',
+    blog: 'Blog', bdesc: 'Articles on prices, comparing and choosing tech.', read: 'Read on Better.am', sources: 'Sources: ' },
 };
+const DESC = (p, l = 'hy') => L[l].desc(amd(bestOf(p)), shopsOf(p));
 // lowest price of the last 30 days, from the history the nightly crawl keeps
 const low30 = p => {
   const pts = (HISTORY.points || {})[p.id] || [];
@@ -560,14 +593,14 @@ const movedOn = p => {
 // one row per shop and capacity, its cheapest - five colours of one phone at one price are one
 // offer to a reader, and colour names would be English on an Armenian page
 const rows = offs => { const seen = new Set(); return offs.filter(o => { const k = o.shop + '|' + (o.storage || ''); return !seen.has(k) && seen.add(k); }); };
-const specRows = p => {
-  const d = p.display || {}, c = p.chipset || {}, b = p.battery || {}, w = (p.body || {}).weight;
+const specRows = (p, l) => {
+  const d = p.display || {}, c = p.chipset || {}, b = p.battery || {}, w = (p.body || {}).weight, t = L[l];
   return [
-    ['Էկրան', [d.size && `${d.size}″`, d.resolution, d.refresh && `${d.refresh} Հց`].filter(Boolean).join(', ')],
-    ['Պրոցեսոր', c.name],
-    ['Մարտկոց', b.capacity && `${b.capacity} մԱժ`],
-    ['Քաշ', w && `${w} գ`],
-    ['Թողարկում', p.released],
+    [t.sk[0], [d.size && `${d.size}″`, d.resolution, d.refresh && `${d.refresh} ${t.hz}`].filter(Boolean).join(', ')],
+    [t.sk[1], c.name],
+    [t.sk[2], b.capacity && `${b.capacity} ${t.mah}`],
+    [t.sk[3], w && `${w} ${t.g}`],
+    [t.sk[4], p.released],
   ].filter(([, v]) => v);
 };
 const STYLE = `<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
@@ -584,17 +617,21 @@ ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:s
 ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
 @media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
 a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>`;
-const HEAD = ({ title, desc, url, img, ld }) => `<!doctype html>
-<html lang="hy"><head><meta charset="utf-8">
+// path: the page's place under the site root ('p/apple-iphone-17/'), the same in every language
+const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')
+  + `\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
+const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => `<!doctype html>
+<html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="${FAVICON}">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
+${path != null ? alts(path) : ''}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Better.am">
-<meta property="og:locale" content="hy_AM">
+<meta property="og:locale" content="${L[lang].locale}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
@@ -608,66 +645,82 @@ const crumbs = list => ({ '@context': 'https://schema.org', '@type': 'Breadcrumb
 
 let shared = 0;
 const sitemapRows = [];
-for (const p of phones) {
-  const card = `images/social/${p.id}.jpg`;
-  const img = SITE + (fs.existsSync(card) ? card : SEO.img);
-  const url = `${SITE}p/${p.id}/`, cat = catOf(p), catUrl = `${SITE}c/${cat}/`;
-  const offs = offersOf(p), lo = offs.length ? offs[0].price : null, hi = offs.length ? offs[offs.length - 1].price : null;
-  const low = low30(p), seen = offs.map(o => o.seen).filter(Boolean).sort().pop();
-  // the same photo the app shows on the card and opens the page on: the first listed colour's own
-  const firstCol = (p.colors || []).map(c => `${CUT}/${p.id}__${c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.webp`).find(f => fs.existsSync(f));
-  const hero = firstCol || (fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `${CUT}/${p.id}__main.webp` : null);
-  const shot = hero ? `../../${hero}` : null;
-  const ld = [
-    { '@context': 'https://schema.org', '@type': 'Product', name: nameOf(p), brand: { '@type': 'Brand', name: p.brand },
-      category: cat, image: img, url, offers: offerOf(p) },
-    crumbs([['Better.am', SITE], [catLabel(cat), catUrl], [nameOf(p), url]]),
-  ];
-  const page = HEAD({ title: `${nameOf(p)}: գինը Հայաստանում | Better.am`, desc: DESC(p), url, img, ld }) + `
-<header><a href="../../">Better.am</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <a href="../../c/${cat}/">${esc(catLabel(cat))}</a> › <span>${esc(nameOf(p))}</span></nav>
+const cats = [...new Set(phones.map(catOf))];
+for (const lang of LANGS) {
+  // R: back up to the site root from a page two folders deep (three under ru/ and en/)
+  const t = L[lang], pre = PRE[lang], home = SITE + pre, app = lang === 'hy' ? '' : `?lang=${lang}`;
+  const R = pre ? '../../../' : '../../';
+  for (const p of phones) {
+    const card = `images/social/${p.id}.jpg`;
+    const img = SITE + (fs.existsSync(card) ? card : SEO.img);
+    const path = `p/${p.id}/`, url = home + path, cat = catOf(p), catUrl = `${home}c/${cat}/`;
+    const offs = offersOf(p), lo = offs.length ? offs[0].price : null, hi = offs.length ? offs[offs.length - 1].price : null;
+    const low = low30(p), seen = offs.map(o => o.seen).filter(Boolean).sort().pop();
+    // the same photo the app shows on the card and opens the page on: the first listed colour's own
+    const firstCol = (p.colors || []).map(c => `${CUT}/${p.id}__${c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.webp`).find(f => fs.existsSync(f));
+    const hero = firstCol || (fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `${CUT}/${p.id}__main.webp` : null);
+    const n = nameOf(p), sr = specRows(p, lang);
+    const ld = [
+      { '@context': 'https://schema.org', '@type': 'Product', name: n, brand: { '@type': 'Brand', name: p.brand },
+        category: cat, image: img, url, offers: offerOf(p) },
+      crumbs([['Better.am', SITE + app], [catLabel(cat, lang), catUrl], [n, url]]),
+    ];
+    const page = HEAD({ title: t.title(n), desc: DESC(p, lang), url, img, ld, lang, path }) + `
+<header><a href="${R}${app}">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › <a href="${R}${pre}c/${cat}/">${esc(catLabel(cat, lang))}</a> › <span>${esc(n)}</span></nav>
 <main>
-<h1>${esc(nameOf(p))}</h1>
-<p class="lead">${lo != null ? `${esc(nameOf(p))}-ի գինը Հայաստանում՝ ${amd(lo)}-ից, ${shopsOf(p)} խանութում։${hi > lo ? ` Ամենաթանկ առաջարկը՝ ${amd(hi)}։` : ''}${low != null && low < lo ? ` Վերջին 30 օրվա ամենացածր գինը՝ ${amd(low)}։` : ''}` : esc(DESC(p))}</p>
-<a class="go" href="../../#/p/${p.id}">Համեմատել Better.am-ում</a>
-${shot ? `<img class="shot" src="${shot}" alt="${esc(nameOf(p))}" width="360" height="360">` : ''}
-${offs.length ? `<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${o.storage ? (o.storage >= 1024 ? o.storage / 1024 + ' ՏԲ' : o.storage + ' ԳԲ') : '—'}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
+<h1>${esc(n)}</h1>
+<p class="lead">${esc(lo != null ? t.lead(n, amd(lo), shopsOf(p), hi > lo ? amd(hi) : '', low != null && low < lo ? amd(low) : '') : DESC(p, lang))}</p>
+<a class="go" href="${R}${app}#/p/${p.id}">${t.go}</a>
+${hero ? `<img class="shot" src="${R}${hero}" alt="${esc(n)}" width="360" height="360">` : ''}
+${offs.length ? `<h2>${t.prices}</h2>
+<div class="tw"><table><thead><tr><th>${t.th[0]}</th><th>${t.th[1]}</th><th class="n">${t.th[2]}</th></tr></thead><tbody>
+${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${o.storage ? (o.storage >= 1024 ? o.storage / 1024 + ' ' + t.tb : o.storage + ' ' + t.gb) : '—'}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
 </tbody></table></div>` : ''}
-${specRows(p).length ? `<h2>Հիմնական բնութագրեր</h2>
-<dl>${specRows(p).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
-${seen ? `<p class="upd">Գները ստուգվել են՝ ${seen.split('-').reverse().join('.')}</p>` : ''}
+${sr.length ? `<h2>${t.specs}</h2>
+<dl>${sr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
+${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>` : ''}
 </main></body></html>
 `;
-  fs.mkdirSync(`p/${p.id}`, { recursive: true });
-  fs.writeFileSync(`p/${p.id}/index.html`, page);
-  sitemapRows.push([url, movedOn(p) || today, 0.7]);
-  shared++;
-}
-// one page per section: every product in it with its cheapest price, linking to its own page
-const cats = [...new Set(phones.map(catOf))];
-for (const c of cats) {
-  const list = phones.filter(p => catOf(p) === c && offersOf(p).length)
-    .sort((a, b) => (b.popularity || 0) - (a.popularity || 0) || bestOf(a) - bestOf(b));
-  const url = `${SITE}c/${c}/`;
-  const title = `${catLabel(c)}: գները Հայաստանի խանութներում | Better.am`;
-  const desc = `${list.length} մոդել, ${amd(Math.min(...list.map(bestOf)))}-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։`;
-  const page = HEAD({ title, desc, url, img: SITE + SEO.img, ld: [crumbs([['Better.am', SITE], [catLabel(c), url]])] }) + `
-<header><a href="../../">Better.am</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <span>${esc(catLabel(c))}</span></nav>
+    fs.mkdirSync(pre + path, { recursive: true });
+    fs.writeFileSync(`${pre}${path}index.html`, page);
+    sitemapRows.push([url, movedOn(p) || today, 0.7]);
+    shared++;
+  }
+  // One page per section, and one per brand inside it ("Samsung phones") wherever a brand has three
+  // priced products or more: every product with its cheapest price, linking to its own page.
+  const listPage = ({ list, path, label, trail, appHash, brands = [] }) => {
+    const R = '../'.repeat(path.split('/').length - 1 + (pre ? 1 : 0)), url = home + path;
+    const desc = t.cdesc(list.length, amd(Math.min(...list.map(bestOf))));
+    const page = HEAD({ title: t.ctitle(label), desc, url, img: SITE + SEO.img,
+      ld: [crumbs([['Better.am', SITE + app], ...trail.map(([n, u]) => [n, home + u]), [label, url]])], lang, path }) + `
+<header><a href="${R}${app}">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › ${trail.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a> › `).join('')}<span>${esc(label)}</span></nav>
 <main>
-<h1>${esc(catLabel(c))}</h1>
+<h1>${esc(label)}</h1>
 <p class="lead">${esc(desc)}</p>
-<a class="go" href="../../#/c/${c}">Զտել և համեմատել Better.am-ում</a>
-<h2>Մոդելներ և գներ</h2>
-<ul class="pl">${list.map(p => `<li><a href="../../p/${p.id}/">${esc(nameOf(p))}</a><span>${amd(bestOf(p))}-ից</span></li>`).join('\n')}</ul>
+<a class="go" href="${R}${app}#/${appHash}">${t.cgo}</a>
+${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
+<h2>${t.models}</h2>
+<ul class="pl">${list.map(p => `<li><a href="${R}${pre}p/${p.id}/">${esc(nameOf(p))}</a><span>${t.from(amd(bestOf(p)))}</span></li>`).join('\n')}</ul>
 <p class="upd">${today.split('-').reverse().join('.')}</p>
 </main></body></html>
 `;
-  fs.mkdirSync(`c/${c}`, { recursive: true });
-  fs.writeFileSync(`c/${c}/index.html`, page);
-  sitemapRows.push([url, today, 0.8]);
+    fs.mkdirSync(pre + path, { recursive: true });
+    fs.writeFileSync(`${pre}${path}index.html`, page);
+    sitemapRows.push([url, today, 0.8]);
+  };
+  const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  for (const c of cats) {
+    const list = phones.filter(p => catOf(p) === c && offersOf(p).length)
+      .sort((a, b) => (b.popularity || 0) - (a.popularity || 0) || bestOf(a) - bestOf(b));
+    const label = catLabel(c, lang);
+    const byBrand = Object.entries(Object.groupBy(list, p => p.brand)).filter(([, l]) => l.length >= 3)
+      .sort((x, y) => y[1].length - x[1].length);
+    for (const [brand, l] of byBrand)
+      listPage({ list: l, path: `c/${c}/${slug(brand)}/`, label: `${brand} — ${label}`, trail: [[label, `c/${c}/`]], appHash: `c/${c}` });
+    listPage({ list, path: `c/${c}/`, label, trail: [], appHash: `c/${c}`, brands: byBrand.map(([b]) => [b, `c/${c}/${slug(b)}/`]) });
+  }
 }
 // The blog, as real pages a search engine can index (the app reads the same articles from BLOG).
 // Armenian, like the rest of the static pages; the app offers all three languages.
@@ -690,39 +743,43 @@ const bodyHTML = list => {
   }
   return html + (inList ? '</ul>\n' : '');
 };
-if (BLOG.length) {
-  const bUrl = `${SITE}b/`;
-  fs.mkdirSync('b', { recursive: true });
-  fs.writeFileSync('b/index.html', HEAD({ title: 'Բլոգ | Better.am', desc: 'Հոդվածներ գների, համեմատման և տեխնիկայի ընտրության մասին։', url: bUrl, img: SITE + SEO.img,
-    ld: [crumbs([['Better.am', SITE], ['Բլոգ', bUrl]])] }) + `
-<header><a href="../">Better.am</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../">Better.am</a> › <span>Բլոգ</span></nav>
+if (BLOG.length) for (const lang of LANGS) {
+  const t = L[lang], pre = PRE[lang], home = SITE + pre, app = lang === 'hy' ? '' : `?lang=${lang}`;
+  const R1 = pre ? '../../' : '../', R2 = '../' + R1;     // back to the root from b/ and from b/<id>/
+  const bUrl = `${home}b/`;
+  fs.mkdirSync(`${pre}b`, { recursive: true });
+  fs.writeFileSync(`${pre}b/index.html`, HEAD({ title: `${t.blog} | Better.am`, desc: t.bdesc, url: bUrl, img: SITE + SEO.img,
+    ld: [crumbs([['Better.am', SITE + app], [t.blog, bUrl]])], lang, path: 'b/' }) + `
+<header><a href="${R1}${app}">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="${R1}${app}">Better.am</a> › <span>${t.blog}</span></nav>
 <main>
-<h1>Բլոգ</h1>
-<ul class="pl">${BLOG.map(a => `<li><a href="${a.id}/">${esc(a.hy.title)}</a><span>${a.date.split('-').reverse().join('.')}</span></li>`).join('\n')}</ul>
+<h1>${t.blog}</h1>
+<ul class="pl">${BLOG.map(a => `<li><a href="${a.id}/">${esc(a[lang].title)}</a><span>${a.date.split('-').reverse().join('.')}</span></li>`).join('\n')}</ul>
 </main></body></html>
 `);
   sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
   // an article taken out of data/blog.json takes its page with it, or the old url stays live
-  for (const d of fs.readdirSync('b', { withFileTypes: true }))
-    if (d.isDirectory() && !BLOG.some(x => x.id === d.name)) fs.rmSync(`b/${d.name}`, { recursive: true, force: true });
+  for (const d of fs.readdirSync(`${pre}b`, { withFileTypes: true }))
+    if (d.isDirectory() && !BLOG.some(x => x.id === d.name)) fs.rmSync(`${pre}b/${d.name}`, { recursive: true, force: true });
   for (const a of BLOG) {
-    const url = `${bUrl}${a.id}/`;
-    const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.hy.title, description: a.hy.lead,
-      datePublished: a.date, inLanguage: 'hy', url, publisher: { '@type': 'Organization', name: 'Better.am' } },
-      crumbs([['Better.am', SITE], ['Բլոգ', bUrl], [a.hy.title, url]])];
-    fs.mkdirSync(`b/${a.id}`, { recursive: true });
+    const A = a[lang], url = `${bUrl}${a.id}/`;
+    const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: A.title, description: A.lead,
+      datePublished: a.date, inLanguage: lang, url, publisher: { '@type': 'Organization', name: 'Better.am' } },
+      crumbs([['Better.am', SITE + app], [t.blog, bUrl], [A.title, url]])];
+    fs.mkdirSync(`${pre}b/${a.id}`, { recursive: true });
     const og = `images/blog/${a.id}.jpg`;
-    fs.writeFileSync(`b/${a.id}/index.html`, HEAD({ title: `${a.hy.title} | Better.am`, desc: a.hy.lead, url, img: SITE + (fs.existsSync(og) ? og : SEO.img), ld }) + `
-<header><a href="../../">Better.am</a></header>
-<nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <a href="../">Բլոգ</a> › <span>${esc(a.hy.title)}</span></nav>
+    // bodyHTML writes figure paths for a page two folders deep
+    const body = bodyHTML(A.body).replaceAll('src="../../', `src="${R2}`);
+    fs.writeFileSync(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: SITE + (fs.existsSync(og) ? og : SEO.img), ld, lang, path: `b/${a.id}/` }) + `
+<header><a href="${R2}${app}">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="${R2}${app}">Better.am</a> › <a href="../">${t.blog}</a> › <span>${esc(A.title)}</span></nav>
 <main>
-<h1>${esc(a.hy.title)}</h1>
-<p class="lead">${LIVE(esc(a.hy.lead))}</p>
-${a.cover && fs.existsSync(a.cover) ? `<img src="../../${a.cover}" alt="${esc(a.hy.title)}" width="1600" height="900" style="width:100%;height:auto;border-radius:16px;margin:4px 0 18px">` : ''}
-${bodyHTML(a.hy.body)}
-${(a.sources || []).length ? `<p class="upd">Աղբյուրներ՝ ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s => `<a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
-<p><a class="go" href="../../#/blog/${a.id}">Կարդալ Better.am-ում</a></p>
+<h1>${esc(A.title)}</h1>
+<p class="lead">${LIVE(esc(A.lead))}</p>
+${a.cover && fs.existsSync(a.cover) ? `<img src="${R2}${a.cover}" alt="${esc(A.title)}" width="1600" height="900" style="width:100%;height:auto;border-radius:16px;margin:4px 0 18px">` : ''}
+${body}
+${(a.sources || []).length ? `<p class="upd">${t.sources}${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s => `<a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
+<p><a class="go" href="${R2}${app}#/blog/${a.id}">${t.read}</a></p>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
 </main></body></html>
 `);
