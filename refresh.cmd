@@ -120,9 +120,9 @@ echo.
 echo [%date% %time%] rows that disagree with themselves:
 node tools/recheck.mjs
 
-REM The other three readings: links that go nowhere, offers nobody has confirmed, and titles on
-REM the shelves this catalogue has no entry for. All three drift quietly between runs and all
-REM three used to be discovered on the live site instead of here.
+REM The other readings: links that go nowhere and offers nobody has confirmed. Both drift quietly
+REM between runs. (The list of shop titles with no catalogue entry is no longer printed here -
+REM owner, 2026-10-03; scrape.mjs still writes data/unmatched.json for anyone who wants it.)
 echo.
 echo [%date% %time%] state of the catalogue:
 node tools/health.mjs

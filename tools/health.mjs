@@ -32,29 +32,6 @@ const unseen = rows.filter(o => !o.seen && !o.pickOnSite);
 const byShop = {};
 for (const o of unseen) byShop[o.shop] = (byShop[o.shop] || 0) + 1;
 
-// 3. Products the shops sell that this catalogue has no entry for. The scrape already writes them
-//    out; without this line nobody reads the file, and a new phone can sit on four shelves for
-//    weeks before anyone here notices it exists.
-// The raw file is every title on every shelf - 13,847 of them, including clothes dryers and
-// soap - which is a number nobody can act on. A title is worth a look when it names a brand this
-// catalogue already carries: that is not a guarantee it belongs here, but it is the difference
-// between a list somebody reads and a list somebody ignores.
-const BRANDS = new Set(PRODUCTS.map(p => String(p.brand || '').toLowerCase()).filter(Boolean));
-let fresh = 0, freshBy = {};
-try {
-  const u = JSON.parse(fs.readFileSync('data/unmatched.json', 'utf8'));
-  for (const [shop, list] of Object.entries(u.shops || {}))
-    for (const t of list) {
-      // Three shops write a plain string here and the other eleven write { title: ... }.
-      // String(t) on an object is "[object Object]", whose first word is "object", which is not
-      // a brand - so this line was counting notebookcentre, redstore and planet3d and silently
-      // skipping every other shop. The 99 it reported was three shops' worth, not fourteen.
-      const w = String(t && t.title != null ? t.title : t)
-        .toLowerCase().replace(/^[^a-z0-9]+/, '').split(/[^a-z0-9]+/)[0];
-      if (BRANDS.has(w)) { fresh++; freshBy[shop] = (freshBy[shop] || 0) + 1; }
-    }
-} catch { }
-
 // A product every shop has stopped selling. Its page is still built and still in sitemap.xml,
 // but no list on the site shows it, so this is the only place it is counted.
 const dead = PRODUCTS.filter(p => !(P.offers[p.id] || []).length).length;
@@ -63,8 +40,5 @@ console.log(`  ${noLink.length} with no link, ${listing.length} pointing at a li
 if (pick.length) console.log(`  ${pick.length} priced by configuration - no figure on the page to read; their links are checked instead`);
 console.log(`  ${unseen.length} nobody has confirmed` + (unseen.length
   ? ': ' + Object.entries(byShop).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([s, n]) => `${s} ${n}`).join(', ')
-  : ''));
-console.log(`  ${fresh} shelf title(s) from a brand we carry but with no catalogue entry` + (fresh
-  ? ': ' + Object.entries(freshBy).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([s, n]) => `${s} ${n}`).join(', ') + '  -> data/unmatched.json'
   : ''));
 if (dead) console.log(`  ${dead} product(s) nothing sells - hidden from the catalogue, page still served`);
