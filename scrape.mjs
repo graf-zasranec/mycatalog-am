@@ -2125,7 +2125,8 @@ const picked = process.argv.slice(2).filter(a => !a.startsWith('--'));
 // arrives as a spreadsheet of prices with no urls in it, and crawling seventeen shops to publish
 // numbers somebody has already read off the shelf is an hour of network for no new fact.
 const names = process.argv.includes('--handonly') ? []
-  : Object.keys(SHOPS).filter(k => picked.length ? picked.includes(k) : !SHOPS[k].disabled);
+  : Object.keys(SHOPS).filter(k => picked.length ? picked.includes(k) : !SHOPS[k].disabled && SHOPS[k].run);
+// no run(): a shop whose rows come from elsewhere (notebookcentre: tools/nbc-import.mjs)
 const unknown = picked.filter(k => !SHOPS[k]);
 if (unknown.length) { console.error('no such shop: ' + unknown.join(', ')); process.exit(1); }
 

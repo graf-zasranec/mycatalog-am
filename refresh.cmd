@@ -141,14 +141,6 @@ echo.
 echo [%date% %time%] offers that may be on the wrong product:
 node tools/wrong-links.mjs
 
-REM What this run CANNOT do, so it is not mistaken for having done it. notebookcentre.am names
-REM anthropic-ai and Claude-Web in its robots.txt with Disallow: / , so nothing here reads it -
-REM its prices and its links are confirmed by a person opening the shop, and the seen column in
-REM data/listings.csv carries the date that happened. If those dates are old, that is the job.
-echo.
-echo   notebookcentre is not crawled - its robots.txt refuses this kind of client.
-echo   Its rows are confirmed by hand; check the seen column in data\listings.csv.
-
 echo.
 echo [%date% %time%] done.
 endlocal

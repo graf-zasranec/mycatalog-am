@@ -24,7 +24,7 @@ FLOOR = 600
 # ...except for products nobody is looking at: a popularity under 10 is a handful of views a
 # month, and there a 500px picture beats the grey box that is there instead. Owner's call,
 # 2026-09-21. Kept in step with tools/cutout.py, which decides what actually gets matted.
-LOW_FLOOR, LOW_POP = 500, 50
+LOW_FLOOR, LOW_POP = 600, 50   # the temporary 500px floor ended 2026-10-04
 
 phones = json.loads((ROOT / 'data' / 'phones.json').read_text(encoding='utf8'))
 prices = json.loads((ROOT / 'data' / 'prices.json').read_text(encoding='utf8'))['offers']

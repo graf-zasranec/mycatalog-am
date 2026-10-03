@@ -26,6 +26,11 @@ const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.js
 // articles, newest first; data/blog.json holds each in hy, ru and en
 const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json')) : []).sort((a, b) => b.date.localeCompare(a.date));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
+// Popularity nobody set (unsure) was a flat default of 40 on 1,100 products, so "popular" sorted
+// them in file order. How many shops stock a product is a real, nightly-updated signal: 1 shop -> 20,
+// 8+ -> 60. A number somebody set by hand is never touched.
+for (const p of phones) if ((p.unsure || []).includes('popularity'))
+  p.popularity = Math.min(60, 14 + 6 * new Set((PRICES.offers[p.id] || []).map(o => o.shop)).size);
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
 // ("... - Warranty - AllSell") into our page and adds weight for nothing.
@@ -196,13 +201,9 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 
 // small: the 600 px copy where one exists. The product page wants the full-size colour shot;
 // the card cycling through the same colours in a 123 px box does not.
-// The same floor tools/cutout.py mattes to, and for the same reason: 600px, or 500px for a
-// product nobody is looking at, where the comparison is not 500 against 600 but 500 against a
-// swatch that changes nothing when it is clicked. Keeping this in step matters - cutout.py now
-// mattes those colours, and a floor of its own here would build cutouts the page cannot show.
-// TEMPORARY alongside its twin; see the note in tools/cutout.py.
-const POP = Object.fromEntries(phones.map(p => [p.id, p.popularity ?? 100]));
-const colourFloor = id => ((POP[id] ?? 100) < 50 ? 500 : 600);
+// The same 600px floor tools/cutout.py mattes to; a floor of its own here would build cutouts the
+// page cannot show. (A temporary 500px floor for unpopular products ran 2026-09-21 to 10-04.)
+const colourFloor = () => 600;
 
 const DUPES = fs.existsSync('data/photo-dupes.json') ? JSON.parse(rd('data/photo-dupes.json')) : {};
 function cutMap(inline, small) {
@@ -359,7 +360,7 @@ const FAVICON = 'data:image/svg+xml,' + encodeURIComponent(fs.readFileSync('imag
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="${FAVICON}">
 <meta name="description" content="${SEO.desc}">
@@ -435,30 +436,41 @@ function build({ inline, standalone }) {
   // A shop title holding '</script>' would end this script early and blank the site.
   // < is the same character to JS, and the HTML parser never sees a tag.
   const J = o => JSON.stringify(o).replace(/</g, '\\u003c');
+  // The served build keeps the products and the prices in two files of their own (owner, 2026-10-04):
+  // prices change every night, products rarely and the app code less, so a returning visitor
+  // re-downloads only what moved. Plain classic scripts, run in order before the app, so their
+  // top-level consts are the same globals the app always read and no app code had to change.
+  const products = `const DATA=${J(phones.map(({ summaryEn, sources, ...p }) => p))};\n`
+    + `const COMPARE_WITH=${J(pairs(phones, PRICES.offers || {}))};\n`
+    + `const PBOX=${fs.existsSync('data/photo-box.json') ? J(JSON.parse(rd('data/photo-box.json'))) : '{}'};\n`;
+  const prices = `const PRICES=${J(PRICES)};\nconst DROPS=${J(DROPS)};\n`;
+  let ext = '';
+  if (lazy) {
+    for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
+      fs.writeFileSync(f, body);
+      ext += `<script src="${f}?v=${crypto.createHash('sha256').update(body).digest('hex').slice(0, 10)}"><\/script>\n`;
+    }
+  }
   let appJs = '\n'
-    + `const DATA=${J(phones.map(({ summaryEn, sources, ...p }) => p))};\nconst STR=${J(STR)};\n`
+    + (lazy ? '' : products + prices)
+    + `const STR=${J(STR)};\n`
     + (lazy ? 'let HISTORY={points:{}};\nconst LAZYDATA=true;\n'
             : `const HISTORY=${J(HISTORY)};\nconst LAZYDATA=false;\n`)
     // Wrapping this in JSON.parse was tried and measured: 268 ms to interactive against 294 ms
     // for the literal, three loads each, same machine - 9% - and it cost 77 KB of backslashes.
     // Not worth carrying the escaping for that, so the literal stays.
-    + `const PRICES=${J(PRICES)};\n`
     + `const TERMS=${J(TERMS)};\n`
     + `const COMING=${J(COMING)};\n`
     + `const PAGEONLY=${J(PAGEONLY)};\n`
     + `const MERGED=${J(MERGED)};\n`
     + `const BLOG=${J(BLOG)};\n`
-    + `const DROPS=${J(DROPS)};\n`
-    + `const COMPARE_WITH=${J(pairs(phones, PRICES.offers || {}))};\n`
-    // tools/photo-box.py: where each product sits inside its square cutout, for the product page
-    + `const PBOX=${fs.existsSync('data/photo-box.json') ? fs.readFileSync('data/photo-box.json', 'utf8').trim() : '{}'};\n`
     + imgdata + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here
   // and the hash the browser computes disagree, the browser refuses to run the app at all, and
   // the page comes up blank on the machine that built it. Emit what the parser will see.
   appJs = appJs.replace(/\r\n/g, '\n');
-  const script = '\n<script>' + appJs + '<\/script>\n';
+  const script = '\n' + ext + '<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);
   return HEAD_OPEN(appJs) + head + HEAD_CLOSE + body + script + '\n</body></html>\n';

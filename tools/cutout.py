@@ -40,7 +40,7 @@ try:
         _pop[_p['id']] = _p.get('popularity', 100)
 except Exception:
     pass
-FLOOR, LOW_FLOOR, LOW_POP = 600, 500, 50
+FLOOR, LOW_FLOOR, LOW_POP = 600, 600, 50   # LOW_FLOOR back at 600: the temporary 500px floor ended 2026-10-04
 def floor_for(filename):
     return LOW_FLOOR if _pop.get(filename.split('__')[0], 100) < LOW_POP else FLOOR
 

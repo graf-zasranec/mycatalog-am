@@ -2,9 +2,9 @@
  "generated": "2026-10-03",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1396,
+ "total": 1449,
  "missing": 1,
- "tooSmall": 0,
+ "tooSmall": 2,
  "products": [
   {
    "id": "apple-iphone-13",
@@ -15,6 +15,26 @@
    "query": "Apple iPhone 13",
    "what": "missing",
    "width": 0
+  },
+  {
+   "id": "huawei-matebook-fold-ultimate-18",
+   "brand": "Huawei",
+   "name": "MateBook Fold Ultimate 18\"",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Huawei MateBook Fold Ultimate 18\"",
+   "what": "too small",
+   "width": 592
+  },
+  {
+   "id": "lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd",
+   "brand": "Lenovo",
+   "name": "V15 G5 IRL 15.6'' Intel i5-13420H FHD",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Lenovo V15 G5 IRL 15.6'' Intel i5-13420H FHD",
+   "what": "too small",
+   "width": 525
   }
  ]
 }

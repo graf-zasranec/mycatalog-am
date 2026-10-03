@@ -35,12 +35,9 @@ STATE = ROOT / '.links.json'
 # robots.txt files were read again on 2026-09-20 and three of them do not, so zigzag, yerevanmobile
 # and list.am came off the list; zigzag 403s a plain fetch but is read through scrapling, like
 # Eldorado, so its links resolve here.
-# One shop, and for a reason it states itself: notebookcentre.am's robots.txt carries
-# "User-agent: anthropic-ai / Disallow: /" and the same for Claude-Web. Getting past that would
-# mean impersonating a browser at a shop that has asked this kind of client not to come, so its
-# links are confirmed the other way - a person opens them, which is how all 219 of its rows got
-# their url and their seen date on 2026-09-20.
-NOFETCH = {'notebookcentre': "their robots.txt refuses AI crawlers by name - checked in a browser instead"}
+# notebookcentre was skipped here for its robots.txt until the shop gave the owner permission
+# (2026-10-03); every shop has now agreed, so nothing is skipped.
+NOFETCH = {}
 # "Go to shop" has to land on the product. These land on a list of them.
 LISTING = re.compile(r'/(category|collection|promo)/'
                      r'|/(iphones|smartphones|speakers|tablets|watches|headphones-and-headsets)\.html$', re.I)
