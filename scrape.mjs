@@ -802,9 +802,11 @@ if (process.argv[2] === '--selftest') {
     ['samsung-galaxy-tab-s8', 'samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
     ['samsung-galaxy-tab-s8-plus', 'Samsung Galaxy Tab S8+ 8GB/128GB WiFi X800 Graphite samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
     // splitting "15T" to recover a compressed slug must not let the plain 15 take a 15T Pro.
-    // The Pro is carried now, so the phone that proves the rule is the Ultra, which is not.
+    // The 15T Pro and the 15 Ultra are carried now (the Ultra since 2026-10-03), so the phone that
+    // proves the rule is the plain 15 Pro, which is not.
     ['xiaomi-15t-pro', 'Xiaomi 15T Pro'],
-    [null, 'Xiaomi 15 Ultra'],
+    ['xiaomi-15-ultra', 'Xiaomi 15 Ultra'],
+    [null, 'Xiaomi 15 Pro'],
     ['xiaomi-17t', 'Xiaomi 17T'],
     ['xiaomi-17t-pro', 'Xiaomi 17T Pro'],
     ['xiaomi-15', 'Xiaomi 15'],

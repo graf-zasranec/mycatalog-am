@@ -20,7 +20,7 @@ const { matchPhone, looksLikeAccessory, COLOR_WORDS } = await import('data:text/
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const BRANDS = [...new Set(phones.map(p => p.brand))]
   .concat(['OPPO', 'Vivo', 'Motorola', 'Nokia', 'ZTE', 'Infinix', 'Tecno', 'Fitbit', 'Whoop',
-           'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba'])
+           'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba', 'Dahua', 'Hori'])
   // longest first, so "Bang & Olufsen" is not read as nothing at all
   .sort((a, b) => b.length - a.length);
 const reBrand = (b, flags) => new RegExp('(^|\\s)' + b.replace(/[+&()[\]{}.*?^$|\\]/g, '\\$&') + '(\\s|$)', flags);

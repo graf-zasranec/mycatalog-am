@@ -165,8 +165,10 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 {
   const FLOOR = 600;
   const need = [];
+  const cuts = fs.readdirSync(CUT);
   for (const p of phones) {
-    const f = `${CUT}/${p.id}__main.webp`;
+    // a product shown by its colour photos alone (no __main) is not missing: the card uses them
+    const f = `${CUT}/${fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `${p.id}__main.webp` : cuts.find(c => c.startsWith(p.id + '__')) || `${p.id}__main.webp`}`;
     const shops = new Set(((PRICES.offers || {})[p.id] || []).map(o => o.shop)).size;
     const row = { id: p.id, brand: p.brand, name: p.name, category: p.category, shops,
                   // what to type into an image search to find the right thing

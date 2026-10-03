@@ -18,6 +18,9 @@ const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
 const DELAY = 700;
 // Viva answers 503 after about ten requests at that pace (2026-10-03), so it is asked slowly.
 const VIVA_DELAY = 4000;
+// Viva's firewall refuses the BetterBot name. Viva gave the owner permission on 2026-10-03, so its
+// pages are asked under this name instead - still saying who we are, just not the word it filters.
+const VIVA_UA = 'Better.am price check (+https://graf-zasranec.github.io/mycatalog-am/)';
 const dry = process.argv.includes('--dry');
 // --drop-gone (refresh.cmd): a row whose page is DELETED - 404/410, or a shop's own not-found page -
 // is removed instead of reported. A sold-out page is not deleted and is still left for a person.
@@ -460,7 +463,7 @@ for (let i = 0; i < todo.length; i++) {
     if (noFetch(f[4])) continue;          // belt and braces: these two are never asked directly
     let html = '';
     try {
-      const r = await fetch(readUrl(f[4]), { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
+      const r = await fetch(readUrl(f[4]), { headers: { 'user-agent': f[4].includes('shop.viva.am') ? VIVA_UA : UA }, signal: AbortSignal.timeout(25000) });
       if (r.ok) html = await r.text(); else { gone.push([f[0], f[1], f[4], 'HTTP ' + r.status]); if (r.status === 404 || r.status === 410) dropped.add(f.slice(0, 5).join('|')); }
     } catch (e) { gone.push([f[0], f[1], f[4], e.name]); }
     await sleep(f[4].includes('shop.viva.am') ? VIVA_DELAY : DELAY);

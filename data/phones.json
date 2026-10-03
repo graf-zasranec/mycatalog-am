@@ -2313,7 +2313,9 @@
     "name": "iPad 10",
     "aliases": [
       "iPad 10.9 Wi-Fi A14 (2022) MPQA3RK/A",
-      "iPad 10.9 Wi-Fi A14 MPQA3RK/A"
+      "iPad 10.9 Wi-Fi A14 MPQA3RK/A",
+      "iPad 109",
+      "iPad 10.9"
     ],
     "tier": "mid",
     "priceAmd": 199900,
@@ -2322,9 +2324,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 64,
         "priceAmd": 199900
+      },
+      {
+        "ram": 4,
+        "storage": 256,
+        "priceAmd": 269500
       }
     ],
     "display": {
@@ -2718,7 +2725,8 @@
       "Apple iPad Air 11 2025",
       "iPad Air 11-inch with Wi-Fi",
       "iPad Air 11 (2025) M3",
-      "iPad Air 13 M3"
+      "iPad Air 13 M3",
+      "iPad Air 13 2025"
     ],
     "sources": [
       "kimovil"
@@ -2865,7 +2873,9 @@
       "iPad Air 11 Wi-Fi + Cellular 2024",
       "iPad Air 13 Wi-Fi + Cellular 2024",
       "iPad Air 13 Wi-Fi + Cellular 2024 Blue",
-      "iPad Air 13 Wi-Fi + Cellular 2024 Purple"
+      "iPad Air 13 Wi-Fi + Cellular 2024 Purple",
+      "iPad Air 13 2024",
+      "iPad Air 11 2024"
     ],
     "tier": "mid",
     "priceAmd": 277000,
@@ -3027,9 +3037,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 64,
         "priceAmd": 209000
+      },
+      {
+        "ram": 4,
+        "storage": 256,
+        "priceAmd": null
       }
     ],
     "display": {
@@ -3097,9 +3112,19 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 8,
+        "storage": 128,
         "priceAmd": 224000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 289000
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": null
       }
     ],
     "display": {
@@ -44317,7 +44342,8 @@
     "name": "PlayStation VR2",
     "aliases": [
       "PS5 VR 2",
-      "PS5 VR2"
+      "PS5 VR2",
+      "PS VR2"
     ],
     "tier": "mid",
     "priceAmd": 229000,
@@ -55119,6 +55145,5378 @@
     "year": 2026,
     "sources": [
       "https://www.apple.com/mac-mini/specs/"
+    ]
+  },
+  {
+    "id": "xiaomi-15-ultra",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "15 Ultra",
+    "aliases": [
+      "Xiaomi 15 Ultra 16/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 449000,
+    "priceAmdMax": 449000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 449000
+      }
+    ],
+    "display": {
+      "size": 6.73,
+      "type": "LTPO AMOLED",
+      "resolution": "3200x1440",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 5410
+    },
+    "summaryEn": "Xiaomi 15 Ultra.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite",
+      "cpu": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+      "gpu": "Adreno 830"
+    },
+    "camera": {
+      "modules": 4,
+      "main": "50 MP, f/1.6, 23mm",
+      "front": "32 MP, f/2.0, 21mm",
+      "video": "8K@30fps"
+    },
+    "body": {
+      "height": 161.3,
+      "width": 75.3,
+      "thickness": 9.4,
+      "weight": 226,
+      "materials": "Glass front, glass-fiber back or silicone polymer back (eco leather), aluminum frame"
+    },
+    "released": "2025-03",
+    "colors": [
+      "Silver",
+      "Black",
+      "White"
+    ],
+    "specSource": "pixel.am product page, 2026-10-03"
+  },
+  {
+    "id": "nothing-cmf-phone-1",
+    "category": "phone",
+    "brand": "Nothing",
+    "name": "CMF Phone 1",
+    "aliases": [
+      "Nothing CMF Phone 1 8/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 159000,
+    "priceAmdMax": 159000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 159000
+      }
+    ],
+    "display": {
+      "size": 6.67,
+      "type": "AMOLED",
+      "resolution": "2400x1080",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "Nothing CMF Phone 1.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "MediaTek Dimensity 7300",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 &amp; 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G615 MC2"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.8, (wide), PDAF",
+      "front": "16 MP, f/2.0, (wide)",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 164,
+      "width": 77,
+      "thickness": 8.2,
+      "weight": 197,
+      "materials": "Glass front, plastic back or silicone polymer back (eco leather)"
+    },
+    "released": "2024-07",
+    "colors": [
+      "Light Green",
+      "Orange",
+      "Black"
+    ],
+    "specSource": "pixel.am product page, 2026-10-03"
+  },
+  {
+    "id": "nothing-phone-2a",
+    "category": "phone",
+    "brand": "Nothing",
+    "name": "Phone 2a",
+    "aliases": [
+      "Nothing Phone 2a 8/128GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 158000,
+    "priceAmdMax": 158000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 158000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "AMOLED",
+      "resolution": "2412x1080",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "Nothing Phone 2a.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "MediaTek Dimensity 7200 Pro",
+      "cpu": "Octa-core (2x2.8 GHz Cortex-A715 &amp; 6x 2.0 Cortex-A510)",
+      "gpu": "Mali-G610 MC4"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.9, 24mm",
+      "front": "32 MP, f/2.2",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 161.7,
+      "width": 76.3,
+      "thickness": 8.6,
+      "weight": 190,
+      "materials": "Glass front (Gorilla Glass 5), plastic frame, plastic back"
+    },
+    "released": "2024-03",
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "specSource": "pixel.am product page, 2026-10-03"
+  },
+  {
+    "id": "nothing-phone-3a",
+    "category": "phone",
+    "brand": "Nothing",
+    "name": "Phone 3a",
+    "aliases": [
+      "Nothing Phone 3a 8/128GB",
+      "Nothing Phone 3a 12/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 259000,
+    "priceAmdMax": 279000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 259000
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 279000
+      }
+    ],
+    "display": {
+      "size": 6.77,
+      "type": "AMOLED",
+      "resolution": "2392x1080",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "Nothing Phone 3a.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 7s Gen 3",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 &amp; 3x2.4 GHz Cortex-A720 &amp; 4x1.8 GHz Cortex-A520)",
+      "gpu": "Adreno 810"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.9, 24mm",
+      "front": "32 MP, f/2.2, 22mm",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 163.5,
+      "width": 77.5,
+      "thickness": 8.4,
+      "weight": 201,
+      "materials": "Glass front (Panda Glass), plastic frame, glass back"
+    },
+    "released": "2025-03",
+    "colors": [
+      "Blue",
+      "White",
+      "Black"
+    ],
+    "specSource": "pixel.am product page, 2026-10-03"
+  },
+  {
+    "id": "nothing-phone-1",
+    "category": "phone",
+    "brand": "Nothing",
+    "name": "Phone 1",
+    "aliases": [
+      "Nothing Phone 1 12/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 169000,
+    "priceAmdMax": 169000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 169000
+      }
+    ],
+    "display": {
+      "size": 6.55,
+      "type": "OLED",
+      "resolution": "2400x1080",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 4500
+    },
+    "summaryEn": "Nothing Phone 1.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 778G+",
+      "process": "6 nm",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A78 & 3x2.4 GHz Cortex-A78 & 4x1.9 GHz Cortex-A55)",
+      "gpu": "Adreno 642L"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.9, 24mm wide, OIS",
+      "ultrawide": "50 MP, f/2.2, 114-degree",
+      "front": "16 MP, f/2.5",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 159.2,
+      "width": 75.8,
+      "thickness": 8.3,
+      "weight": 193.5,
+      "materials": "Glass front (Gorilla Glass 5), glass back, aluminum frame"
+    },
+    "released": "2022-07",
+    "colors": [
+      "Black"
+    ],
+    "specSource": "gsmarena.com, 2026-10-03"
+  },
+  {
+    "id": "google-pixel-6a",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 6a",
+    "aliases": [
+      "Google Pixel 6a 6/128GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 159000,
+    "priceAmdMax": 159000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 159000
+      }
+    ],
+    "display": {
+      "size": 6.1,
+      "type": "OLED",
+      "resolution": "2400x1080",
+      "protection": "Gorilla Glass 3"
+    },
+    "battery": {
+      "capacity": 4410
+    },
+    "summaryEn": "Google Pixel 6a.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Google Tensor",
+      "process": "5 nm",
+      "gpu": "Mali-G78 MP20"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "12.2 MP, f/1.7, 27mm, wide",
+      "ultrawide": "12 MP, f/2.2, 17mm, 114˚ (ultrawide), 1.25µm",
+      "front": "8 MP, f/2.0, 24mm (wide), 1.12µm",
+      "video": "4K@30/60fps"
+    },
+    "body": {
+      "height": 152.2,
+      "width": 71.8,
+      "thickness": 8.9,
+      "weight": 178,
+      "materials": "Glass front (Gorilla Glass 3), aluminum frame, plastic back",
+      "ip": "IP67"
+    },
+    "released": "2022-07",
+    "specSource": "gsmarena.com/google_pixel_6a-11229.php, 2026-10-03"
+  },
+  {
+    "id": "nothing-phone-2a-plus",
+    "category": "phone",
+    "brand": "Nothing",
+    "name": "Phone 2a Plus",
+    "aliases": [
+      "Nothing Phone 2a Plus 12/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 175000,
+    "priceAmdMax": 175000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 175000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "AMOLED",
+      "resolution": "2412x1080",
+      "refresh": 120,
+      "protection": "Gorilla Glass 5"
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "Nothing Phone 2a Plus.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "MediaTek Dimensity 7350 Pro",
+      "process": "4 nm",
+      "gpu": "Mali-G610 MC4"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.9, 24mm wide",
+      "ultrawide": "50 MP, f/2.2, 114˚ (ultrawide)",
+      "front": "50 MP, f/2.2, (wide)",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 161.7,
+      "width": 76.3,
+      "thickness": 8.5,
+      "weight": 190,
+      "materials": "Glass front (Gorilla Glass 5), plastic frame, plastic back",
+      "ip": "IP54"
+    },
+    "released": "2024-08",
+    "specSource": "gsmarena.com/nothing_phone_(2a)_plus-13243.php, 2026-10-03"
+  },
+  {
+    "id": "oneplus-nord-ce4",
+    "category": "phone",
+    "brand": "OnePlus",
+    "name": "Nord CE4",
+    "aliases": [
+      "OnePlus Nord CE4 8/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 199000,
+    "priceAmdMax": 199000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 199000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "Fluid AMOLED",
+      "resolution": "2412x1080",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 5500
+    },
+    "summaryEn": "OnePlus Nord CE4.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 7 Gen 3",
+      "process": "4 nm",
+      "gpu": "Adreno 720"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.8, 26mm wide",
+      "ultrawide": "8 MP, f/2.2, 16mm, 112˚ (ultrawide)",
+      "front": "16 MP, f/2.4, 26mm (wide)",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 162.5,
+      "width": 75.3,
+      "thickness": 8.4,
+      "weight": 186,
+      "ip": "IP54"
+    },
+    "released": "2024-04",
+    "specSource": "gsmarena.com/oneplus_nord_ce4-12892.php, 2026-10-03"
+  },
+  {
+    "id": "google-pixel-6",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 6",
+    "aliases": [
+      "Google Pixel 6 8/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 209000,
+    "priceAmdMax": 209000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 209000
+      }
+    ],
+    "display": {
+      "size": 6.4,
+      "type": "AMOLED",
+      "resolution": "2400x1080",
+      "refresh": 90,
+      "protection": "Gorilla Glass Victus"
+    },
+    "battery": {
+      "capacity": 4614
+    },
+    "summaryEn": "Google Pixel 6.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Google Tensor",
+      "process": "5 nm",
+      "gpu": "Mali-G78 MP20"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.9, 25mm wide",
+      "ultrawide": "12 MP, f/2.2, 17mm, 114˚ (ultrawide), 1.25µm",
+      "front": "8 MP, f/2.0, 24mm (wide), 1.12µm",
+      "video": "4K@30/60fps"
+    },
+    "body": {
+      "height": 158.6,
+      "width": 74.8,
+      "thickness": 8.9,
+      "weight": 207,
+      "materials": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass 6), aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2021-10",
+    "specSource": "gsmarena.com/google_pixel_6-11037.php, 2026-10-03"
+  },
+  {
+    "id": "google-pixel-6-pro",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 6 Pro",
+    "aliases": [
+      "Google Pixel 6 Pro 12/128GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 209000,
+    "priceAmdMax": 209000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 128,
+        "priceAmd": 209000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "LTPO AMOLED",
+      "resolution": "3120x1440",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus"
+    },
+    "battery": {
+      "capacity": 5003
+    },
+    "summaryEn": "Google Pixel 6 Pro.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Google Tensor",
+      "process": "5 nm",
+      "gpu": "Mali-G78 MP20"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.9, 25mm wide",
+      "telephoto": "48 MP, f/3.5, 104mm (periscope telephoto)",
+      "ultrawide": "12 MP, f/2.2, 17mm, 114˚ (ultrawide), 1.25µm",
+      "front": "11.1 MP, f/2.2, 20mm (ultrawide), 1.22µm",
+      "video": "4K@30/60fps"
+    },
+    "body": {
+      "height": 163.9,
+      "width": 75.9,
+      "thickness": 8.9,
+      "weight": 210,
+      "materials": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass Victus), aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2021-10",
+    "specSource": "gsmarena.com/google_pixel_6_pro-10918.php, 2026-10-03"
+  },
+  {
+    "id": "apple-iphone-13",
+    "category": "phone",
+    "brand": "Apple",
+    "name": "iPhone 13",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 229000,
+    "priceAmdMax": 229000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 229000
+      }
+    ],
+    "display": {
+      "size": 6.1,
+      "type": "Super Retina XDR OLED",
+      "resolution": "2532x1170",
+      "protection": "Ceramic Shield glass"
+    },
+    "battery": {
+      "capacity": 3240
+    },
+    "summaryEn": "Apple iPhone 13.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Apple A15 Bionic",
+      "process": "5 nm",
+      "gpu": "Apple GPU (4-core graphics)"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "12 MP, f/1.6, 26mm wide",
+      "ultrawide": "12 MP, f/2.4, 120˚, 13mm (ultrawide)",
+      "front": "12 MP, f/2.2, 23mm (wide)",
+      "video": "4K@24/25/30/60fps"
+    },
+    "body": {
+      "height": 146.7,
+      "width": 71.5,
+      "thickness": 7.7,
+      "weight": 174,
+      "materials": "Glass front, glass back, aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2021-09",
+    "specSource": "gsmarena.com/apple_iphone_13-11103.php, 2026-10-03"
+  },
+  {
+    "id": "samsung-galaxy-s24",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy S24",
+    "aliases": [
+      "Samsung Galaxy S24 8/128GB",
+      "Samsung Galaxy S24 8/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 229000,
+    "priceAmdMax": 245000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 229000
+      },
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 245000
+      }
+    ],
+    "display": {
+      "size": 6.2,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "2340x1080",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus 2"
+    },
+    "battery": {
+      "capacity": 4000
+    },
+    "summaryEn": "Samsung Galaxy S24.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Samsung Exynos 2400",
+      "process": "4 nm",
+      "gpu": "Xclipse 940"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.8, 24mm wide",
+      "telephoto": "10 MP, f/2.4, 67mm (telephoto)",
+      "ultrawide": "12 MP, f/2.2, 13mm, 120˚ (ultrawide)",
+      "front": "12 MP, f/2.2, 26mm (wide)",
+      "video": "8K@24/30fps"
+    },
+    "body": {
+      "height": 147,
+      "width": 70.6,
+      "thickness": 7.6,
+      "weight": 167,
+      "materials": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2024-01",
+    "specSource": "gsmarena.com/samsung_galaxy_s24-12773.php, 2026-10-03"
+  },
+  {
+    "id": "google-pixel-7-pro",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 7 Pro",
+    "aliases": [
+      "Google Pixel 7 Pro 12/128GB",
+      "Google Pixel 7 Pro 12/512GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 249000,
+    "priceAmdMax": 489000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": 249000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 489000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "LTPO AMOLED",
+      "resolution": "3120x1440",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus"
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "Google Pixel 7 Pro.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Google Tensor G2",
+      "process": "5 nm",
+      "gpu": "Mali-G710 MP7"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.9, 25mm wide",
+      "telephoto": "48 MP, f/3.5, 120mm (periscope telephoto)",
+      "ultrawide": "12 MP, f/2.2, 126˚ (ultrawide)",
+      "front": "10.8 MP, f/2.2, 21mm (ultrawide)",
+      "video": "4K@30/60fps"
+    },
+    "body": {
+      "height": 162.9,
+      "width": 76.6,
+      "thickness": 8.9,
+      "weight": 212,
+      "materials": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass Victus), aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2022-10",
+    "specSource": "gsmarena.com/google_pixel_7_pro-11908.php, 2026-10-03"
+  },
+  {
+    "id": "google-pixel-8a",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 8a",
+    "aliases": [
+      "Google Pixel 8a 8/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 249000,
+    "priceAmdMax": 249000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 249000
+      }
+    ],
+    "display": {
+      "size": 6.1,
+      "type": "OLED",
+      "resolution": "2400x1080",
+      "refresh": 120,
+      "protection": "Gorilla Glass 3"
+    },
+    "battery": {
+      "capacity": 4492
+    },
+    "summaryEn": "Google Pixel 8a.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Google Tensor G3",
+      "process": "4 nm",
+      "gpu": "Mali-G715 MP7"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "64 MP (16 MP eff.), f/1.9, 26mm wide",
+      "ultrawide": "13 MP, f/2.2, 120˚ (ultrawide), 1.12µm",
+      "front": "13 MP, f/2.2, 20mm (ultrawide), 1.12µm",
+      "video": "4K@30/60fps"
+    },
+    "body": {
+      "height": 152.1,
+      "width": 72.7,
+      "thickness": 8.9,
+      "weight": 188,
+      "materials": "Glass front (Gorilla Glass 3), aluminum frame, plastic back",
+      "ip": "IP67"
+    },
+    "released": "2024-05",
+    "specSource": "gsmarena.com/google_pixel_8a-12937.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-poco-f8-pro",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "Poco F8 Pro",
+    "aliases": [
+      "Xiaomi Poco F8 Pro 12/512GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 279000,
+    "priceAmdMax": 279000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 279000
+      }
+    ],
+    "display": {
+      "size": 6.59,
+      "type": "AMOLED",
+      "resolution": "2510x1156",
+      "refresh": 560,
+      "protection": "Gorilla Glass 7i"
+    },
+    "battery": {
+      "capacity": 6210
+    },
+    "summaryEn": "Xiaomi F8 Pro.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite",
+      "process": "3 nm",
+      "gpu": "Adreno 830"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.9, 24mm wide",
+      "telephoto": "50 MP, f/2.2, 60mm (telephoto)",
+      "ultrawide": "8 MP, f/2.2, 15mm, 120˚ (ultrawide)",
+      "front": "20 MP, f/2.2, 21mm (wide)",
+      "video": "8K@30fps"
+    },
+    "body": {
+      "height": 157.5,
+      "width": 75.3,
+      "thickness": 8,
+      "weight": 199,
+      "materials": "Glass front (Gorilla Glass 7i), aluminum frame, glass back",
+      "ip": "IP68"
+    },
+    "released": "2025-11",
+    "specSource": "gsmarena.com/xiaomi_poco_f8_pro_5g-14303.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-12-pro",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "12 Pro",
+    "aliases": [
+      "Xiaomi 12 Pro 12/256GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 349000,
+    "priceAmdMax": 349000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 349000
+      }
+    ],
+    "display": {
+      "size": 6.73,
+      "type": "LTPO AMOLED",
+      "resolution": "3200x1440",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus"
+    },
+    "battery": {
+      "capacity": 4600
+    },
+    "summaryEn": "Xiaomi 12 Pro.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Gen 1",
+      "process": "4 nm",
+      "gpu": "Adreno 730"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.9, 24mm wide",
+      "telephoto": "50 MP, f/1.9, 48mm (telephoto), PDAF, 2x optical zoom",
+      "ultrawide": "50 MP, f/2.2, 115˚ (ultrawide)",
+      "front": "32 MP, f/2.5, 26mm (wide), 0.7µm",
+      "video": "8K@24fps (HDR)"
+    },
+    "body": {
+      "height": 163.6,
+      "width": 74.6,
+      "thickness": 8.2,
+      "weight": 204,
+      "materials": "Glass front (Gorilla Glass Victus), glass back, aluminum frame"
+    },
+    "released": "2021-12",
+    "specSource": "gsmarena.com/xiaomi_12_pro-11287.php, 2026-10-03"
+  },
+  {
+    "id": "oneplus-11",
+    "category": "phone",
+    "brand": "OnePlus",
+    "name": "11",
+    "aliases": [
+      "OnePlus 11 12/256GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 359000,
+    "priceAmdMax": 359000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 359000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "LTPO3 Fluid AMOLED",
+      "resolution": "3216x1440",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus"
+    },
+    "battery": {
+      "capacity": 5000
+    },
+    "summaryEn": "OnePlus 11.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Gen 2",
+      "process": "4 nm",
+      "gpu": "Adreno 740"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.8, 24mm wide",
+      "telephoto": "32 MP, f/2.0, 48mm (telephoto)",
+      "ultrawide": "48 MP, f/2.2, 115˚, (ultrawide)",
+      "front": "16 MP, f/2.5, 25mm (wide), 1.0µm",
+      "video": "8K@24fps"
+    },
+    "body": {
+      "height": 163.1,
+      "width": 74.1,
+      "thickness": 8.5,
+      "weight": 205,
+      "materials": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass 5), aluminum frame",
+      "ip": "IP64"
+    },
+    "released": "2023-01",
+    "specSource": "gsmarena.com/oneplus_11-11893.php, 2026-10-03"
+  },
+  {
+    "id": "samsung-galaxy-s24-plus",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy S24 Plus",
+    "aliases": [
+      "Samsung Galaxy S24 Plus 12/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 359000,
+    "priceAmdMax": 359000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 359000
+      }
+    ],
+    "display": {
+      "size": 6.7,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "3120x1440",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus 2"
+    },
+    "battery": {
+      "capacity": 4900
+    },
+    "summaryEn": "Samsung Galaxy S24 Plus.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Samsung Exynos 2400",
+      "process": "4 nm",
+      "gpu": "Xclipse 940"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.8, 24mm wide",
+      "telephoto": "10 MP, f/2.4, 67mm (telephoto)",
+      "ultrawide": "12 MP, f/2.2, 13mm, 120˚ (ultrawide)",
+      "front": "12 MP, f/2.2, 26mm (wide)",
+      "video": "8K@24/30fps"
+    },
+    "body": {
+      "height": 158.5,
+      "width": 75.9,
+      "thickness": 7.7,
+      "weight": 196,
+      "materials": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2024-01",
+    "specSource": "gsmarena.com/samsung_galaxy_s24+-12772.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-poco-f8-ultra",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "Poco F8 Ultra",
+    "aliases": [
+      "Xiaomi Poco F8 Ultra 16/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 369000,
+    "priceAmdMax": 369000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 369000
+      }
+    ],
+    "display": {
+      "size": 6.9,
+      "type": "AMOLED",
+      "resolution": "2608x1200",
+      "refresh": 560,
+      "protection": "Poco Shield Glass"
+    },
+    "battery": {
+      "capacity": 6500
+    },
+    "summaryEn": "Xiaomi F8 Ultra.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "process": "3 nm",
+      "gpu": "Adreno 840"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.7, 23mm wide",
+      "telephoto": "50 MP, f/3.0, 115mm (periscope telephoto)",
+      "ultrawide": "50 MP, f/2.4, 18mm, 102˚ (ultrawide)",
+      "front": "32 MP, f/2.2, 21mm (wide)",
+      "video": "8K@30fps"
+    },
+    "body": {
+      "height": 163.3,
+      "width": 77.8,
+      "thickness": 7.9,
+      "weight": 218,
+      "materials": "Glass front (Poco Shield Glass), aluminum frame, glass-fiber reinforced plastic back or silicone polymer back",
+      "ip": "IP68"
+    },
+    "released": "2025-11",
+    "specSource": "gsmarena.com/xiaomi_poco_f8_ultra_5g-14301.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-17",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "17",
+    "aliases": [
+      "Xiaomi 17 12/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 375000,
+    "priceAmdMax": 375000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 375000
+      }
+    ],
+    "display": {
+      "size": 6.3,
+      "type": "LTPO AMOLED",
+      "resolution": "2656x1220",
+      "refresh": 160,
+      "protection": "Xiaomi Shield Glass (Global), Dragon Crystal Glass (China)"
+    },
+    "battery": {
+      "capacity": 6330
+    },
+    "summaryEn": "Xiaomi 17.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "process": "3 nm",
+      "gpu": "Adreno 840"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.7, 23mm wide",
+      "telephoto": "50 MP, f/2.0, 60mm (telephoto)",
+      "ultrawide": "50 MP, f/2.4, 17mm, 102˚ (ultrawide)",
+      "front": "50 MP, f/2.2, 21mm (wide)",
+      "video": "8K@30fps (HDR)"
+    },
+    "body": {
+      "height": 151.1,
+      "width": 71.8,
+      "thickness": 8.1,
+      "weight": 191,
+      "materials": "Glass front (Dragon Crystal Glass), aluminum frame, glass back",
+      "ip": "IP68"
+    },
+    "released": "2025-09",
+    "specSource": "gsmarena.com/xiaomi_17_5g-14134.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-poco-f9-pro",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "Poco F9 Pro",
+    "aliases": [
+      "Xiaomi Poco F9 Pro 12/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 399000
+      }
+    ],
+    "display": {
+      "size": 6.59,
+      "type": "AMOLED",
+      "resolution": "2510x1156",
+      "refresh": 185,
+      "protection": "Gorilla Glass 7i"
+    },
+    "battery": {
+      "capacity": 6330
+    },
+    "summaryEn": "Xiaomi F9 Pro.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite Gen 5 V Series",
+      "process": "3 nm",
+      "gpu": "Adreno 840"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "200 MP, f/1.7, 24mm wide",
+      "telephoto": "50 MP, f/2.0, 60mm (telephoto)",
+      "ultrawide": "8 MP, f/2.3, 16mm, 112˚ (ultrawide)",
+      "front": "32 MP, f/2.2, 22mm (wide)",
+      "video": "4K@30/60fps"
+    },
+    "body": {
+      "height": 157.5,
+      "width": 75.3,
+      "thickness": 8.8,
+      "weight": 206,
+      "materials": "Glass front (Gorilla Glass 7i), aluminum frame, glass-fiber reinforced plastic back",
+      "ip": "IP68"
+    },
+    "released": "2026-09",
+    "specSource": "gsmarena.com/xiaomi_poco_f9_pro_5g-14877.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-12s-ultra",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "12S Ultra",
+    "aliases": [
+      "Xiaomi 12S Ultra 12/256GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 419000,
+    "priceAmdMax": 419000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 419000
+      }
+    ],
+    "display": {
+      "size": 6.73,
+      "type": "LTPO2 AMOLED",
+      "resolution": "3200x1440",
+      "refresh": 120,
+      "protection": "Gorilla Glass Victus"
+    },
+    "battery": {
+      "capacity": 4860
+    },
+    "summaryEn": "Xiaomi 12S Ultra.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8+ Gen 1",
+      "process": "4 nm",
+      "gpu": "Adreno 730"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.9, 23mm wide",
+      "telephoto": "48 MP, f/4.1, 120mm (periscope telephoto)",
+      "ultrawide": "48 MP, f/2.2, 13mm, 128˚ (ultrawide)",
+      "front": "32 MP, f/2.4, 25mm (wide), 0.7µm",
+      "video": "8K@24fps"
+    },
+    "body": {
+      "height": 163.2,
+      "width": 75,
+      "thickness": 9.1,
+      "weight": 225,
+      "materials": "Glass front (Gorilla Glass Victus), eco leather back, aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2022-07",
+    "specSource": "gsmarena.com/xiaomi_12s_ultra-11614.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-poco-f9-ultra",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "Poco F9 Ultra",
+    "aliases": [
+      "Xiaomi Poco F9 Ultra 16/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 459000,
+    "priceAmdMax": 459000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 459000
+      }
+    ],
+    "display": {
+      "size": 6.9,
+      "type": "AMOLED",
+      "resolution": "2608x1200",
+      "refresh": 185,
+      "protection": "Gorilla Glass 7i"
+    },
+    "battery": {
+      "capacity": 8050
+    },
+    "summaryEn": "Xiaomi F9 Ultra.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "process": "3 nm",
+      "gpu": "Adreno 840"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "200 MP, f/1.7, 24mm wide",
+      "telephoto": "50 MP, f/3.0, 114mm (periscope telephoto)",
+      "ultrawide": "50 MP, f/2.4, 17mm, 102˚ (ultrawide)",
+      "front": "32 MP, f/2.2, 22mm (wide)",
+      "video": "8K@30fps"
+    },
+    "body": {
+      "height": 163.5,
+      "width": 77.9,
+      "thickness": 8.7,
+      "weight": 235,
+      "materials": "Glass front (Gorilla Glass 7i), aluminum frame, glass-fiber reinforced plastic back",
+      "ip": "IP68"
+    },
+    "released": "2026-09",
+    "specSource": "gsmarena.com/xiaomi_poco_f9_ultra_5g-14876.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-17-ultra",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "17 Ultra",
+    "aliases": [
+      "Xiaomi 17 Ultra 16/512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 575000,
+    "priceAmdMax": 575000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 575000
+      }
+    ],
+    "display": {
+      "size": 6.9,
+      "type": "LTPO AMOLED",
+      "resolution": "2608x1200",
+      "refresh": 120,
+      "protection": "Xiaomi Shield Glass 3.0"
+    },
+    "battery": {
+      "capacity": 6000
+    },
+    "summaryEn": "Xiaomi 17 Ultra.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "process": "3 nm",
+      "gpu": "Adreno 840"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP, f/1.7, 23mm wide",
+      "telephoto": "200 MP, f/2.4-3.0, 75-100mm (periscope telephoto)",
+      "ultrawide": "50 MP, f/2.2, 14mm, 115˚ (ultrawide)",
+      "front": "50 MP, f/2.2, 21mm (wide)",
+      "video": "8K@30fps"
+    },
+    "body": {
+      "height": 162.9,
+      "width": 77.6,
+      "thickness": 8.3,
+      "weight": 218.4,
+      "materials": "Glass front, glass-fiber reinforced plastic back / silicone polymer back (eco leather), aluminum frame",
+      "ip": "IP68/IP69"
+    },
+    "released": "2026-03",
+    "specSource": "gsmarena.com/xiaomi_17_ultra_5g-14380.php, 2026-10-03"
+  },
+  {
+    "id": "google-pixel-11-pro-fold",
+    "category": "phone",
+    "brand": "Google",
+    "name": "Pixel 11 Pro Fold",
+    "aliases": [
+      "Google Pixel 11 Pro Fold 16/256GB"
+    ],
+    "tier": "flagship",
+    "priceAmd": 899000,
+    "priceAmdMax": 899000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 899000
+      }
+    ],
+    "display": {
+      "size": 8,
+      "type": "Foldable LTPO OLED",
+      "resolution": "2152x2076",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 4806
+    },
+    "summaryEn": "Google Pixel 11 Pro Fold.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Google Tensor G6",
+      "process": "3 nm",
+      "gpu": "PowerVR CXTP-48-1536"
+    },
+    "camera": {
+      "modules": 3,
+      "main": "48 MP, f/1.7, 24mm wide",
+      "telephoto": "10.8 MP, f/3.1, 112mm (telephoto)",
+      "ultrawide": "10.5 MP, f/2.2, 127˚ (ultrawide)",
+      "front": "10 MP, f/2.2, 23mm (wide)",
+      "video": "4K@24/30/60fps"
+    },
+    "body": {
+      "height": 155.2,
+      "width": 150.4,
+      "thickness": 5,
+      "weight": 239,
+      "materials": "Glass front (glass-ceramic glass) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "ip": "IP68"
+    },
+    "released": "2026-08",
+    "specSource": "gsmarena.com/google_pixel_11_pro_fold-14874.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-pad-8",
+    "category": "tablet",
+    "brand": "Xiaomi",
+    "name": "Pad 8",
+    "aliases": [
+      "Xiaomi Pad 8 8/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 209000,
+    "priceAmdMax": 209000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 209000
+      }
+    ],
+    "display": {
+      "size": 11.2,
+      "type": "IPS LCD",
+      "resolution": "3200x2136",
+      "refresh": 144
+    },
+    "battery": {
+      "capacity": 9200
+    },
+    "summaryEn": "Xiaomi Pad 8.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8s Gen 4",
+      "process": "4 nm",
+      "gpu": "Adreno 825"
+    },
+    "camera": {
+      "modules": 1,
+      "main": "13 MP, f/2.2, wide",
+      "front": "8 MP, f/2.3, (wide)",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 251.2,
+      "width": 173.4,
+      "thickness": 5.8,
+      "weight": 485,
+      "materials": "Glass front, aluminum frame, aluminum back"
+    },
+    "released": "2025-09",
+    "specSource": "gsmarena.com/xiaomi_pad_8-14184.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-pad-5",
+    "category": "tablet",
+    "brand": "Xiaomi",
+    "name": "Pad 5",
+    "aliases": [
+      "Xiaomi Pad 5 6/256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 169000,
+    "priceAmdMax": 169000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 6,
+        "storage": 256,
+        "priceAmd": 169000
+      }
+    ],
+    "display": {
+      "size": 11,
+      "type": "IPS LCD",
+      "resolution": "2560x1600",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 8720
+    },
+    "summaryEn": "Xiaomi Pad 5.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 860",
+      "process": "7 nm",
+      "gpu": "Adreno 640"
+    },
+    "camera": {
+      "modules": 1,
+      "main": "13 MP, f/2.0",
+      "front": "8 MP, f/2.0",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 254.7,
+      "width": 166.3,
+      "thickness": 6.9,
+      "weight": 511,
+      "materials": "Glass front, aluminum frame, plastic back"
+    },
+    "released": "2021-08",
+    "specSource": "gsmarena.com/xiaomi_pad_5-11042.php, 2026-10-03"
+  },
+  {
+    "id": "xiaomi-poco-pad-x1",
+    "category": "tablet",
+    "brand": "Xiaomi",
+    "name": "Poco Pad X1",
+    "aliases": [
+      "Xiaomi Poco Pad X1 8/512GB",
+      "Xiaomi Poco Pad X1",
+      "Poco Pad X1"
+    ],
+    "tier": "mid",
+    "priceAmd": 199000,
+    "priceAmdMax": 199000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 199000
+      }
+    ],
+    "display": {
+      "size": 11.2,
+      "type": "IPS LCD",
+      "resolution": "3200x2136",
+      "refresh": 144
+    },
+    "battery": {
+      "capacity": 8850
+    },
+    "summaryEn": "Xiaomi Pad X1.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 7+ Gen 3",
+      "process": "4 nm",
+      "gpu": "Adreno 732"
+    },
+    "camera": {
+      "modules": 1,
+      "main": "13 MP, f/2.2, wide",
+      "front": "8 MP, f/2.3, (wide)",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 251.2,
+      "width": 173.4,
+      "thickness": 6.2,
+      "weight": 500,
+      "materials": "Glass front, aluminum frame, aluminum back"
+    },
+    "released": "2025-11",
+    "specSource": "gsmarena.com/xiaomi_poco_pad_x1-14306.php, 2026-10-03"
+  },
+  {
+    "id": "oneplus-pad",
+    "category": "tablet",
+    "brand": "OnePlus",
+    "name": "Pad",
+    "aliases": [
+      "OnePlus Pad 8/128GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 259000,
+    "priceAmdMax": 259000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 259000
+      }
+    ],
+    "display": {
+      "size": 11.61,
+      "type": "IPS LCD",
+      "resolution": "2800x2000",
+      "refresh": 144
+    },
+    "battery": {
+      "capacity": 9510
+    },
+    "summaryEn": "OnePlus Pad.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "MediaTek Dimensity 9000",
+      "process": "4 nm",
+      "gpu": "Mali-G710 MC10"
+    },
+    "camera": {
+      "modules": 1,
+      "main": "13 MP, f/2.2, 23mm wide",
+      "front": "8 MP, f/2.3, (wide)",
+      "video": "4K@30fps"
+    },
+    "body": {
+      "height": 258,
+      "width": 189.4,
+      "thickness": 6.5,
+      "weight": 552,
+      "materials": "Glass front, aluminum back, aluminum frame"
+    },
+    "released": "2023-04",
+    "specSource": "gsmarena.com/oneplus_pad-12112.php, 2026-10-03"
+  },
+  {
+    "id": "amazon-kindle-scribe",
+    "category": "ereader",
+    "brand": "Amazon",
+    "name": "Kindle Scribe",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 249000,
+    "priceAmdMax": 249000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 64,
+        "priceAmd": 249000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Amazon Kindle Scribe.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "amazon-kindle-kids",
+    "category": "ereader",
+    "brand": "Amazon",
+    "name": "Kindle Kids",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 109000,
+    "priceAmdMax": 109000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 16,
+        "priceAmd": 109000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Amazon Kindle Kids.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "amazon-fire-hd-10-kids",
+    "category": "tablet",
+    "brand": "Amazon",
+    "name": "Fire HD 10 Kids",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 79000,
+    "priceAmdMax": 85000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 32,
+        "priceAmd": 79000
+      },
+      {
+        "ram": null,
+        "storage": 64,
+        "priceAmd": 85000
+      }
+    ],
+    "display": {
+      "size": 10.1,
+      "resolution": "1920x1200"
+    },
+    "battery": {},
+    "summaryEn": "Amazon Fire HD 10 Kids.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "specNA": {
+      "chipset.name": "sold as 11th gen (MediaTek MT8183) and 13th gen (MediaTek MT8186A) under one listing (2026-10-03)"
+    }
+  },
+  {
+    "id": "nothing-cmf-watch-pro",
+    "category": "watch",
+    "brand": "Nothing",
+    "name": "CMF Watch Pro",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 49000,
+    "priceAmdMax": 49000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49000
+      }
+    ],
+    "display": {
+      "size": 1.96,
+      "resolution": "410x502"
+    },
+    "battery": {
+      "capacity": 340
+    },
+    "summaryEn": "Nothing CMF Watch Pro.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Gray"
+    ]
+  },
+  {
+    "id": "oneplus-nord-smart-watch",
+    "category": "watch",
+    "brand": "OnePlus",
+    "name": "Nord Smart Watch",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {
+      "size": 1.78,
+      "resolution": "368x448"
+    },
+    "battery": {
+      "capacity": 230
+    },
+    "summaryEn": "OnePlus Nord Smart Watch.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Deep Blue",
+      "Midnight Black"
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-band-9-pro",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Redmi Band 9 Pro",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ],
+    "display": {
+      "size": 1.74,
+      "resolution": "336x480"
+    },
+    "battery": {
+      "capacity": 350
+    },
+    "summaryEn": "Xiaomi Redmi Band 9 Pro.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver",
+      "Rose Gold"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-fit-3",
+    "category": "watch",
+    "brand": "Samsung",
+    "name": "Galaxy Fit 3",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 22000,
+    "priceAmdMax": 22000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 22000
+      }
+    ],
+    "display": {
+      "size": 1.6,
+      "resolution": "256x402"
+    },
+    "battery": {
+      "capacity": 208
+    },
+    "summaryEn": "Samsung Galaxy Fit 3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Pink Gold",
+      "Gray"
+    ]
+  },
+  {
+    "id": "huawei-band-9",
+    "category": "watch",
+    "brand": "Huawei",
+    "name": "Band 9",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 19900,
+    "priceAmdMax": 19900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19900
+      }
+    ],
+    "display": {
+      "size": 1.47,
+      "resolution": "194x368"
+    },
+    "battery": {
+      "capacity": 180
+    },
+    "summaryEn": "Huawei Band 9.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White",
+      "Pink",
+      "Black"
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-band-9",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Redmi Band 9",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 17800,
+    "priceAmdMax": 17800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 17800
+      }
+    ],
+    "display": {
+      "size": 1.62,
+      "resolution": "192x490"
+    },
+    "battery": {
+      "capacity": 233
+    },
+    "summaryEn": "Xiaomi Redmi Band 9.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Blue",
+      "Pink"
+    ]
+  },
+  {
+    "id": "honor-band-9",
+    "category": "watch",
+    "brand": "Honor",
+    "name": "Band 9",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 17500,
+    "priceAmdMax": 17500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 17500
+      }
+    ],
+    "display": {
+      "size": 1.57,
+      "resolution": "256x402"
+    },
+    "battery": {
+      "capacity": 180
+    },
+    "summaryEn": "Honor Band 9.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-band-8",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Redmi Band 8",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 15900,
+    "priceAmdMax": 15900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 15900
+      }
+    ],
+    "display": {
+      "size": 1.62,
+      "resolution": "192x490"
+    },
+    "battery": {
+      "capacity": 190
+    },
+    "summaryEn": "Xiaomi Redmi Band 8.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "Sand"
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-band-7",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Redmi Band 7",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 15500,
+    "priceAmdMax": 15500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 15500
+      }
+    ],
+    "display": {
+      "size": 1.62,
+      "resolution": "192x490"
+    },
+    "battery": {
+      "capacity": 180
+    },
+    "summaryEn": "Xiaomi Redmi Band 7.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ]
+  },
+  {
+    "id": "apple-macbook-pro-14-m3",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro 14 M3",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 699000,
+    "priceAmdMax": 699000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 699000
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "3024x1964"
+    },
+    "battery": {},
+    "summaryEn": "Apple MacBook Pro 14 M3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver",
+      "Space Gray"
+    ],
+    "chipset": {
+      "name": "Apple M3"
+    }
+  },
+  {
+    "id": "lenovo-yoga-9-14imh9",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 9 14IMH9",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 659000,
+    "priceAmdMax": 659000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 659000
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "2880x1800"
+    },
+    "battery": {},
+    "summaryEn": "Lenovo Yoga 9 14IMH9.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-155H"
+    }
+  },
+  {
+    "id": "dell-pro-14-pc14250",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Pro 14 PC14250",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 509000,
+    "priceAmdMax": 509000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 509000
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200"
+    },
+    "battery": {},
+    "summaryEn": "Dell Pro 14 PC14250.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-265U"
+    }
+  },
+  {
+    "id": "apple-macbook-air-13-m2",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Air 13 M2",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 499000
+      }
+    ],
+    "display": {
+      "size": 13,
+      "resolution": "2560x1664"
+    },
+    "battery": {},
+    "summaryEn": "Apple MacBook Air 13 M2.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Midnight"
+    ],
+    "chipset": {
+      "name": "Apple M2"
+    }
+  },
+  {
+    "id": "xiaomi-4k-a27ui",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "4K A27Ui",
+    "aliases": [
+      "Xiaomi 4K Monitor A27Ui"
+    ],
+    "tier": "mid",
+    "priceAmd": 129000,
+    "priceAmdMax": 129000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129000
+      }
+    ],
+    "display": {
+      "type": "IPS",
+      "refresh": 60,
+      "size": 27,
+      "resolution": "3840 x 2160"
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi 4K A27Ui.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-gaming-g27qi",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "Gaming G27Qi",
+    "aliases": [
+      "Xiaomi Gaming Monitor G27Qi"
+    ],
+    "tier": "budget",
+    "priceAmd": 99000,
+    "priceAmdMax": 99000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99000
+      }
+    ],
+    "display": {
+      "type": "IPS",
+      "refresh": 180,
+      "size": 27,
+      "resolution": "2560 x 1440"
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi Gaming G27Qi.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-gaming-g27i",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "Gaming G27i",
+    "aliases": [
+      "Xiaomi Gaming Monitor G27i(2026)"
+    ],
+    "tier": "budget",
+    "priceAmd": 85000,
+    "priceAmdMax": 85000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 85000
+      }
+    ],
+    "display": {
+      "type": "IPS",
+      "refresh": 200,
+      "size": 27,
+      "resolution": "1920 x 1080"
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi Gaming G27i.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-a27qi",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "A27Qi",
+    "aliases": [
+      "Xiaomi Monitor A27Qi(2026)"
+    ],
+    "tier": "budget",
+    "priceAmd": 79000,
+    "priceAmdMax": 79000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79000
+      }
+    ],
+    "display": {
+      "type": "IPS",
+      "refresh": 120,
+      "size": 27,
+      "resolution": "2560 x 1440"
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi A27Qi.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-a24i",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "A24i",
+    "aliases": [
+      "Xiaomi Monitor A24i(2026)"
+    ],
+    "tier": "budget",
+    "priceAmd": 59000,
+    "priceAmdMax": 59000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59000
+      }
+    ],
+    "display": {
+      "type": "IPS",
+      "refresh": 144,
+      "size": 23.8,
+      "resolution": "1920 x 1080"
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi A24i.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-qe85qn85dbuxce",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "QE85QN85DBUXCE",
+    "aliases": [],
+    "tier": "flagship",
+    "priceAmd": 1599000,
+    "priceAmdMax": 1599000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1599000
+      }
+    ],
+    "display": {
+      "size": 85,
+      "type": "Neo QLED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
+    },
+    "battery": {},
+    "summaryEn": "Samsung QE85QN85DBUXCE.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "lg-oled77c46la",
+    "category": "tv",
+    "brand": "LG",
+    "name": "OLED77C46LA",
+    "aliases": [],
+    "tier": "flagship",
+    "priceAmd": 1599000,
+    "priceAmdMax": 1599000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1599000
+      }
+    ],
+    "display": {
+      "size": 77,
+      "type": "OLED",
+      "resolution": "3840 x 2160",
+      "refresh": 144
+    },
+    "battery": {},
+    "summaryEn": "LG OLED77C46LA.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "lg-oled65g46la",
+    "category": "tv",
+    "brand": "LG",
+    "name": "OLED65G46LA",
+    "aliases": [],
+    "tier": "flagship",
+    "priceAmd": 1299000,
+    "priceAmdMax": 1299000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1299000
+      }
+    ],
+    "display": {
+      "size": 65,
+      "type": "OLED",
+      "resolution": "3840 x 2160",
+      "refresh": 144
+    },
+    "battery": {},
+    "summaryEn": "LG OLED65G46LA.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "xiaomi-tv-max",
+    "category": "tv",
+    "brand": "Xiaomi",
+    "name": "TV Max",
+    "aliases": [
+      "Xiaomi TV Max(L100MA-MAXME)",
+      "Xiaomi TV Max(L86M7-ESME)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 659000,
+    "priceAmdMax": 1029000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 659000
+      }
+    ],
+    "display": {
+      "size": 86,
+      "resolution": "3840 x 2160",
+      "type": "LED"
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi TV Max.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ],
+    "specNA": {
+      "display.refresh": "sold in 86\" (120 Hz) and 100\" builds; displayspecifications lists no reliable figure for the 100\" (2026-10-03)"
+    }
+  },
+  {
+    "id": "sony-k55xr80",
+    "category": "tv",
+    "brand": "Sony",
+    "name": "K55XR80",
+    "aliases": [],
+    "tier": "flagship",
+    "priceAmd": 799000,
+    "priceAmdMax": 799000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 799000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
+    },
+    "battery": {},
+    "summaryEn": "Sony K55XR80.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "samsung-qa55q80aauxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "QA55Q80AAUXZN",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 665000,
+    "priceAmdMax": 665000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 665000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "resolution": "3840 x 2160",
+      "type": "QLED",
+      "refresh": 120
+    },
+    "battery": {},
+    "summaryEn": "Samsung QA55Q80AAUXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-qa55s90dauxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "QA55S90DAUXZN",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 639000,
+    "priceAmdMax": 639000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 639000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "resolution": "3840 x 2160",
+      "type": "OLED",
+      "refresh": 144
+    },
+    "battery": {},
+    "summaryEn": "Samsung QA55S90DAUXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-tv-s-pro-mini",
+    "category": "tv",
+    "brand": "Xiaomi",
+    "name": "TV S Pro Mini",
+    "aliases": [
+      "Xiaomi TV S Pro Mini(L75MB-SPLME)(2026)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 619000,
+    "priceAmdMax": 619000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 619000
+      }
+    ],
+    "display": {
+      "size": 75,
+      "resolution": "3840 x 2160",
+      "type": "QLED Mini-LED",
+      "refresh": 144
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi TV S Pro Mini.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-qa65q60abuxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "QA65Q60ABUXZN",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 549000,
+    "priceAmdMax": 549000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 549000
+      }
+    ],
+    "display": {
+      "size": 65,
+      "resolution": "3840 x 2160",
+      "type": "QLED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung QA65Q60ABUXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lg-oled55a26la",
+    "category": "tv",
+    "brand": "LG",
+    "name": "OLED55A26LA",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 539000,
+    "priceAmdMax": 539000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 539000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "type": "OLED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "LG OLED55A26LA.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "xiaomi-tv-s-mini",
+    "category": "tv",
+    "brand": "Xiaomi",
+    "name": "TV S Mini",
+    "aliases": [
+      "Xiaomi TV S Mini(L65MB-SPLME)(2026)",
+      "Xiaomi TV S Mini(L65MA-SPLME)(2025)",
+      "Xiaomi TV S Mini(L55MB-SPLME)(2026)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 369000,
+    "priceAmdMax": 479000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 369000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "resolution": "3840 x 2160",
+      "type": "QLED Mini-LED",
+      "refresh": 144
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi TV S Mini.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lg-55nano86vna",
+    "category": "tv",
+    "brand": "LG",
+    "name": "55NANO86VNA",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 459000,
+    "priceAmdMax": 459000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 459000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "type": "NanoCell LED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
+    },
+    "battery": {},
+    "summaryEn": "LG 55NANO86VNA.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "samsung-qe55q70tauxce",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "QE55Q70TAUXCE",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 459000,
+    "priceAmdMax": 459000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 459000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "type": "QLED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
+    },
+    "battery": {},
+    "summaryEn": "Samsung QE55Q70TAUXCE.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "sony-k65s20m2",
+    "category": "tv",
+    "brand": "Sony",
+    "name": "K65S20M2",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 419000,
+    "priceAmdMax": 419000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 419000
+      }
+    ],
+    "display": {
+      "size": 65,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Sony K65S20M2.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "samsung-qe65q60dauxce",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "QE65Q60DAUXCE",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 399000
+      }
+    ],
+    "display": {
+      "size": 65,
+      "type": "QLED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung QE65Q60DAUXCE.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "lg-55nano80vpa",
+    "category": "tv",
+    "brand": "LG",
+    "name": "55NANO80VPA",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 389000,
+    "priceAmdMax": 389000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 389000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "type": "NanoCell LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "LG 55NANO80VPA.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "samsung-ua65bu8000uxtw",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA65BU8000UXTW",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 339000,
+    "priceAmdMax": 339000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 339000
+      }
+    ],
+    "display": {
+      "size": 65,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA65BU8000UXTW.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ue65du8000uxce",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UE65DU8000UXCE",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 325000,
+    "priceAmdMax": 325000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 325000
+      }
+    ],
+    "display": {
+      "size": 65,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UE65DU8000UXCE.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "sony-k50s20m2",
+    "category": "tv",
+    "brand": "Sony",
+    "name": "K50S20M2",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 269000,
+    "priceAmdMax": 269000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 269000
+      }
+    ],
+    "display": {
+      "size": 50,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Sony K50S20M2.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "samsung-ua55bu8000uxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA55BU8000UXZN",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 265000,
+    "priceAmdMax": 265000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 265000
+      }
+    ],
+    "display": {
+      "size": 55,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA55BU8000UXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lg-50nano75vpa",
+    "category": "tv",
+    "brand": "LG",
+    "name": "50NANO75VPA",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 259000,
+    "priceAmdMax": 259000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 259000
+      }
+    ],
+    "display": {
+      "size": 50,
+      "type": "NanoCell LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "LG 50NANO75VPA.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "samsung-ua50bu8500uxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA50BU8500UXZN",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 245000,
+    "priceAmdMax": 245000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 245000
+      }
+    ],
+    "display": {
+      "size": 50,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA50BU8500UXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-tv-a-pro",
+    "category": "tv",
+    "brand": "Xiaomi",
+    "name": "TV A Pro",
+    "aliases": [
+      "Xiaomi TV A Pro(L65MB-APME)(2026)",
+      "Xiaomi TV A Pro(L43MB-APME)(2026)"
+    ],
+    "tier": "mid",
+    "priceAmd": 149000,
+    "priceAmdMax": 239000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 149000
+      }
+    ],
+    "display": {
+      "size": 43,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi TV A Pro.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-tv-a",
+    "category": "tv",
+    "brand": "Xiaomi",
+    "name": "TV A",
+    "aliases": [
+      "Xiaomi TV A(L65MB-AME)(2026)",
+      "Xiaomi TV A(L65MA-AME)(2025)",
+      "Xiaomi TV A(L55MB-AME)(2026)",
+      "Xiaomi TV A(L50MB-AME)(2026)"
+    ],
+    "tier": "mid",
+    "priceAmd": 165000,
+    "priceAmdMax": 235000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 165000
+      }
+    ],
+    "display": {
+      "size": 50,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi TV A.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ua50bu8000uxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA50BU8000UXZN",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 235000,
+    "priceAmdMax": 235000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 235000
+      }
+    ],
+    "display": {
+      "size": 50,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA50BU8000UXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ua43cu8000uxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA43CU8000UXZN",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 209000,
+    "priceAmdMax": 209000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 209000
+      }
+    ],
+    "display": {
+      "size": 43,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA43CU8000UXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ua43bu8500uxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA43BU8500UXZN",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 185000,
+    "priceAmdMax": 185000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 185000
+      }
+    ],
+    "display": {
+      "size": 43,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA43BU8500UXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ua43bu8000uxzn",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA43BU8000UXZN",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 175000,
+    "priceAmdMax": 175000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 175000
+      }
+    ],
+    "display": {
+      "size": 43,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA43BU8000UXZN.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ue43du7100uxru",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UE43DU7100UXRU",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 155000,
+    "priceAmdMax": 155000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 155000
+      }
+    ],
+    "display": {
+      "size": 43,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UE43DU7100UXRU.",
+    "unsure": [
+      "popularity",
+      "chipset"
+    ]
+  },
+  {
+    "id": "lg-32lm637bpva",
+    "category": "tv",
+    "brand": "LG",
+    "name": "32LM637BPVA",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 137000,
+    "priceAmdMax": 137000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 137000
+      }
+    ],
+    "display": {
+      "size": 32,
+      "resolution": "1366 x 768",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "LG 32LM637BPVA.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-ua32t5300auxtw",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "UA32T5300AUXTW",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 125000,
+    "priceAmdMax": 125000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 125000
+      }
+    ],
+    "display": {
+      "size": 32,
+      "resolution": "1366 x 768",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Samsung UA32T5300AUXTW.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-tv-4a",
+    "category": "tv",
+    "brand": "Xiaomi",
+    "name": "TV 4A",
+    "aliases": [
+      "Xiaomi TV 4A-(L32M5-5ARU)"
+    ],
+    "tier": "mid",
+    "priceAmd": 125000,
+    "priceAmdMax": 125000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 125000
+      }
+    ],
+    "display": {
+      "size": 32,
+      "resolution": "1366 x 768",
+      "type": "LED",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "Xiaomi TV 4A.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "marshall-bromley-750",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Bromley 750",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 489000,
+    "priceAmdMax": 489000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 489000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Bromley 750.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black Brass"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "marshall-bromley-450",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Bromley 450",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 429000,
+    "priceAmdMax": 429000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 429000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Bromley 450.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black Brass"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "sony-srs-xv900",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-XV900",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 359000,
+    "priceAmdMax": 359000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 359000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-XV900.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
+  },
+  {
+    "id": "jbl-partybox-720",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "PartyBox 720",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 339000,
+    "priceAmdMax": 339000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 339000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL PartyBox 720.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "bose-soundlink-max",
+    "category": "speaker",
+    "brand": "Bose",
+    "name": "Soundlink Max",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 299000,
+    "priceAmdMax": 299000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 299000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Bose Soundlink Max.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Blue",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "sony-mhc-v73d",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "MHC-V73D",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 299000,
+    "priceAmdMax": 299000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 299000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony MHC-V73D.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Sony lists profiles and codecs but no Bluetooth version (sony.co.uk spec page, 2026-10-03)"
+    }
+  },
+  {
+    "id": "jbl-partybox-330",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "PartyBox 330",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 289000,
+    "priceAmdMax": 289000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 289000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL PartyBox 330.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    }
+  },
+  {
+    "id": "jbl-partybox-520",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "PartyBox 520",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 255000,
+    "priceAmdMax": 255000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 255000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL PartyBox 520.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "bose-home-speaker-500",
+    "category": "speaker",
+    "brand": "Bose",
+    "name": "Home Speaker 500",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 249000,
+    "priceAmdMax": 249000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 249000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Bose Home Speaker 500.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
+  },
+  {
+    "id": "marshall-heston-sub-200",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Heston Sub 200",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 229000,
+    "priceAmdMax": 229000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 229000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Heston Sub 200.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Cream",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "jbl-partybox-130",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "PartyBox 130",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 219000,
+    "priceAmdMax": 219000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 219000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL PartyBox 130.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    }
+  },
+  {
+    "id": "jbl-boombox-4",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "BoomBox 4",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 219000,
+    "priceAmdMax": 219000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 219000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL BoomBox 4.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Blue",
+      "Squad"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "jbl-xtreme-5",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Xtreme 5",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 189000,
+    "priceAmdMax": 189000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 189000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Xtreme 5.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Squad",
+      "Blue",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    }
+  },
+  {
+    "id": "jbl-authentics-300",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Authentics 300",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 185000,
+    "priceAmdMax": 185000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 185000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Authentics 300.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "marshall-tufton",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Tufton",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 174000,
+    "priceAmdMax": 174000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 174000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Tufton.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black Brass"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "harman-kardon-aura-studio-5",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Aura Studio 5",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 169000,
+    "priceAmdMax": 169000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 169000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Aura Studio 5.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "harman-kardon-soundsticks-4",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Soundsticks 4",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 169000,
+    "priceAmdMax": 169000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 169000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Soundsticks 4.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
+  },
+  {
+    "id": "harman-kardon-soundsticks-5",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Soundsticks 5",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 168000,
+    "priceAmdMax": 168000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 168000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Soundsticks 5.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "jbl-partybox-encore-2",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "PartyBox Encore 2",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 149000,
+    "priceAmdMax": 154000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 149000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL PartyBox Encore 2.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "marshall-kilburn-iii",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Kilburn III",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 153000,
+    "priceAmdMax": 153000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 153000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Kilburn III.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Brown",
+      "Cream",
+      "Black Brass"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "marshall-stockwell-iii",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Stockwell III",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 149000,
+    "priceAmdMax": 149000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 149000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Stockwell III.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Cream Brass",
+      "Black Brass"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "sony-srs-xp500",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-XP500",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 139000,
+    "priceAmdMax": 139000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 139000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-XP500.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "marshall-acton-iv",
+    "category": "speaker",
+    "brand": "Marshall",
+    "name": "Acton IV",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 138000,
+    "priceAmdMax": 138000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 138000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Marshall Acton IV.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "beats-pill",
+    "category": "speaker",
+    "brand": "Beats",
+    "name": "Pill",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 129000,
+    "priceAmdMax": 129000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Beats Pill.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Dark Gray",
+      "Light Gray",
+      "Red",
+      "Gold",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "harman-kardon-goplus-play-3",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Go+ Play 3",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 128000,
+    "priceAmdMax": 128000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 128000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Go+ Play 3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Gray"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
+  },
+  {
+    "id": "google-home-speaker-with-gemini",
+    "category": "speaker",
+    "brand": "Google",
+    "name": "Home Speaker with Gemini",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 109000,
+    "priceAmdMax": 109000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 109000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Google Home Speaker with Gemini.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Jade",
+      "Porcelain",
+      "Hazel",
+      "Berry"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "jbl-soundbar-sb550",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "SoundBar SB550",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 104000,
+    "priceAmdMax": 104000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 104000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL SoundBar SB550.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "jbl-pulse-5",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Pulse 5",
+    "aliases": [
+      "JBL Pulse 5"
+    ],
+    "tier": "budget",
+    "priceAmd": 99000,
+    "priceAmdMax": 99000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL 5 Speaker.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "xiaomi-sound-party-portable-speaker-50w",
+    "category": "speaker",
+    "brand": "Xiaomi",
+    "name": "Sound Party Portable Speaker 50W",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Sound Party Portable Speaker 50W.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "jbl-horizon-3",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Horizon 3",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Horizon 3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Gray",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "sony-srs-ult10",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-ULT10",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-ULT10.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "jbl-charge-essential-2",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Charge Essential 2",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Charge Essential 2.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "connectivity": {
+      "bluetooth": "5.1"
+    }
+  },
+  {
+    "id": "jbl-charge-6",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Charge 6",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 64000,
+    "priceAmdMax": 64000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 64000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Charge 6.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White",
+      "Purple",
+      "Squad",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "jbl-horizon-speaker",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Horizon Speaker",
+    "aliases": [
+      "JBL Horizon Bluetooth Speaker",
+      "JBL Horizon"
+    ],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Horizon Speaker.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Gray"
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
+  },
+  {
+    "id": "jbl-flip-essential-2",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Flip Essential 2",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Flip Essential 2.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Gray"
+    ],
+    "connectivity": {
+      "bluetooth": "5.1"
+    }
+  },
+  {
+    "id": "sony-srs-xe200",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-XE200",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 49000,
+    "priceAmdMax": 49000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-XE200.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "White",
+      "Blue"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
+  },
+  {
+    "id": "xiaomi-portable-bluetooth-speaker",
+    "category": "speaker",
+    "brand": "Xiaomi",
+    "name": "Portable Bluetooth Speaker",
+    "aliases": [
+      "Xiaomi Portable Bluetooth Speaker (16W)"
+    ],
+    "tier": "budget",
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Portable Bluetooth Speaker.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Red",
+      "Blue",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "google-nest-mini",
+    "category": "speaker",
+    "brand": "Google",
+    "name": "Nest Mini",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Google Nest Mini.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Chalk"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "xiaomi-sound-outdoor-30w-speaker",
+    "category": "speaker",
+    "brand": "Xiaomi",
+    "name": "Sound Outdoor 30W Speaker",
+    "aliases": [
+      "Xiaomi Sound Outdoor 30W Bluetooth Speaker",
+      "Xiaomi Sound Outdoor 30W"
+    ],
+    "tier": "budget",
+    "priceAmd": 28000,
+    "priceAmdMax": 28000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 28000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Sound Outdoor 30W Speaker.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Red",
+      "Black",
+      "Blue"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "jbl-wind-3",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Wind 3",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 25000,
+    "priceAmdMax": 25000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Wind 3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "sony-srs-xb100",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-XB100",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 25000,
+    "priceAmdMax": 25000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-XB100.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White",
+      "Blue"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
+  },
+  {
+    "id": "xiaomi-smart-speaker",
+    "category": "speaker",
+    "brand": "Xiaomi",
+    "name": "Smart Speaker",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 25000,
+    "priceAmdMax": 25000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Speaker.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "xiaomi-smart-speaker-lite",
+    "category": "speaker",
+    "brand": "Xiaomi",
+    "name": "Smart Speaker Lite",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 23000,
+    "priceAmdMax": 23000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 23000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Speaker Lite.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.1"
+    }
+  },
+  {
+    "id": "sony-srs-xb13",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-XB13",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 21200,
+    "priceAmdMax": 21200,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 21200
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-XB13.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Blue",
+      "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
+  },
+  {
+    "id": "dahua-dhi-lm27-a200f",
+    "category": "monitor",
+    "brand": "Dahua",
+    "name": "DHI-LM27-A200F",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {
+      "type": "VA",
+      "refresh": 100,
+      "size": 27,
+      "resolution": "1920 x 1080"
+    },
+    "battery": {},
+    "summaryEn": "Dahua DHI-LM27-A200F.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dahua-dhi-lm24-a221y",
+    "category": "monitor",
+    "brand": "Dahua",
+    "name": "DHI-LM24-A221Y",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {
+      "type": "IPS",
+      "refresh": 144,
+      "size": 23.8,
+      "resolution": "1920 x 1080"
+    },
+    "battery": {},
+    "summaryEn": "Dahua DHI-LM24-A221Y.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dahua-dhi-lm24-a200y",
+    "category": "monitor",
+    "brand": "Dahua",
+    "name": "DHI-LM24-A200Y",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 37000,
+    "priceAmdMax": 37000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 37000
+      }
+    ],
+    "display": {
+      "type": "VA",
+      "refresh": 100,
+      "size": 23.8,
+      "resolution": "1920 x 1080"
+    },
+    "battery": {},
+    "summaryEn": "Dahua DHI-LM24-A200Y.",
+    "unsure": [
+      "popularity",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-edge",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Edge",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 109000,
+    "priceAmdMax": 109000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 109000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Edge.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-death-stranding-2-edition",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Death Stranding 2 Edition",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 79000,
+    "priceAmdMax": 79000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Death Stranding 2 Edition.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "hori-rwa-racing-wheel-apex-for-ps5",
+    "category": "console",
+    "brand": "Hori",
+    "name": "RWA Racing Wheel Apex for PS5",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 78000,
+    "priceAmdMax": 78000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 78000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Hori RWA Racing Wheel Apex for PS5.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-astro-bot",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Astro Bot",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Astro Bot.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-genshin-impact-edition",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Genshin Impact Edition",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 65000,
+    "priceAmdMax": 65000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 65000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Genshin Impact Edition.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-god-of-war-20th-anniversary-edition",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense God of War 20TH Anniversary Edition",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 59000,
+    "priceAmdMax": 59000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense God of War 20TH Anniversary Edition.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-hyperpop-collection-remix",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Hyperpop Collection Remix",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Hyperpop Collection Remix.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Green"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-hyperpop-collection-rhythm",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Hyperpop Collection Rhythm",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Hyperpop Collection Rhythm.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Blue"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense-hyperpop-collection-techno",
+    "category": "console",
+    "brand": "Sony",
+    "name": "PS5 DualSense Hyperpop Collection Techno",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense Hyperpop Collection Techno.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Red"
+    ]
+  },
+  {
+    "id": "sony-ps5-dualsense",
+    "category": "console",
+    "brand": "Sony",
+    "name": "DualSense Wireless Controller",
+    "aliases": [
+      "PS5 DualSense",
+      "DualSense Wireless Controller"
+    ],
+    "tier": "budget",
+    "priceAmd": 37000,
+    "priceAmdMax": 54000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 37000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony PS5 DualSense.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Alpine Green",
+      "Gray Camouflage",
+      "Chroma Teal",
+      "Galactic Purple",
+      "Starlight Blue",
+      "Cosmic Red",
+      "Pink",
+      "Black",
+      "White"
     ]
   }
 ]

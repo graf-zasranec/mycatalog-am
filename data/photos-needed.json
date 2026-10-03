@@ -2,8 +2,979 @@
  "generated": "2026-10-03",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1189,
- "missing": 0,
+ "total": 1328,
+ "missing": 97,
  "tooSmall": 0,
- "products": []
+ "products": [
+  {
+   "id": "apple-macbook-pro-14-m3",
+   "brand": "Apple",
+   "name": "MacBook Pro 14 M3",
+   "category": "laptop",
+   "shops": 2,
+   "query": "Apple MacBook Pro 14 M3",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "nothing-cmf-phone-1",
+   "brand": "Nothing",
+   "name": "CMF Phone 1",
+   "category": "phone",
+   "shops": 2,
+   "query": "Nothing CMF Phone 1",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "nothing-phone-1",
+   "brand": "Nothing",
+   "name": "Phone 1",
+   "category": "phone",
+   "shops": 2,
+   "query": "Nothing Phone 1",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-17-ultra",
+   "brand": "Xiaomi",
+   "name": "17 Ultra",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi 17 Ultra",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-f8-pro",
+   "brand": "Xiaomi",
+   "name": "Poco F8 Pro",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Poco F8 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-f8-ultra",
+   "brand": "Xiaomi",
+   "name": "Poco F8 Ultra",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Poco F8 Ultra",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-f9-pro",
+   "brand": "Xiaomi",
+   "name": "Poco F9 Pro",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Poco F9 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-f9-ultra",
+   "brand": "Xiaomi",
+   "name": "Poco F9 Ultra",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Poco F9 Ultra",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "amazon-fire-hd-10-kids",
+   "brand": "Amazon",
+   "name": "Fire HD 10 Kids",
+   "category": "tablet",
+   "shops": 1,
+   "query": "Amazon Fire HD 10 Kids",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "amazon-kindle-kids",
+   "brand": "Amazon",
+   "name": "Kindle Kids",
+   "category": "ereader",
+   "shops": 1,
+   "query": "Amazon Kindle Kids",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "amazon-kindle-scribe",
+   "brand": "Amazon",
+   "name": "Kindle Scribe",
+   "category": "ereader",
+   "shops": 1,
+   "query": "Amazon Kindle Scribe",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "apple-macbook-air-13-m2",
+   "brand": "Apple",
+   "name": "MacBook Air 13 M2",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Apple MacBook Air 13 M2",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dahua-dhi-lm24-a200y",
+   "brand": "Dahua",
+   "name": "DHI-LM24-A200Y",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Dahua DHI-LM24-A200Y",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dahua-dhi-lm24-a221y",
+   "brand": "Dahua",
+   "name": "DHI-LM24-A221Y",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Dahua DHI-LM24-A221Y",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dahua-dhi-lm27-a200f",
+   "brand": "Dahua",
+   "name": "DHI-LM27-A200F",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Dahua DHI-LM27-A200F",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "dell-pro-14-pc14250",
+   "brand": "Dell",
+   "name": "Pro 14 PC14250",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Dell Pro 14 PC14250",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "google-pixel-11-pro-fold",
+   "brand": "Google",
+   "name": "Pixel 11 Pro Fold",
+   "category": "phone",
+   "shops": 1,
+   "query": "Google Pixel 11 Pro Fold",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "google-pixel-6",
+   "brand": "Google",
+   "name": "Pixel 6",
+   "category": "phone",
+   "shops": 1,
+   "query": "Google Pixel 6",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "google-pixel-6-pro",
+   "brand": "Google",
+   "name": "Pixel 6 Pro",
+   "category": "phone",
+   "shops": 1,
+   "query": "Google Pixel 6 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "google-pixel-6a",
+   "brand": "Google",
+   "name": "Pixel 6a",
+   "category": "phone",
+   "shops": 1,
+   "query": "Google Pixel 6a",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "google-pixel-7-pro",
+   "brand": "Google",
+   "name": "Pixel 7 Pro",
+   "category": "phone",
+   "shops": 1,
+   "query": "Google Pixel 7 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "google-pixel-8a",
+   "brand": "Google",
+   "name": "Pixel 8a",
+   "category": "phone",
+   "shops": 1,
+   "query": "Google Pixel 8a",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "honor-band-9",
+   "brand": "Honor",
+   "name": "Band 9",
+   "category": "watch",
+   "shops": 1,
+   "query": "Honor Band 9",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "hori-rwa-racing-wheel-apex-for-ps5",
+   "brand": "Hori",
+   "name": "RWA Racing Wheel Apex for PS5",
+   "category": "console",
+   "shops": 1,
+   "query": "Hori RWA Racing Wheel Apex for PS5",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "huawei-band-9",
+   "brand": "Huawei",
+   "name": "Band 9",
+   "category": "watch",
+   "shops": 1,
+   "query": "Huawei Band 9",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lenovo-yoga-9-14imh9",
+   "brand": "Lenovo",
+   "name": "Yoga 9 14IMH9",
+   "category": "laptop",
+   "shops": 1,
+   "query": "Lenovo Yoga 9 14IMH9",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-32lm637bpva",
+   "brand": "LG",
+   "name": "32LM637BPVA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG 32LM637BPVA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-50nano75vpa",
+   "brand": "LG",
+   "name": "50NANO75VPA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG 50NANO75VPA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-55nano80vpa",
+   "brand": "LG",
+   "name": "55NANO80VPA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG 55NANO80VPA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-55nano86vna",
+   "brand": "LG",
+   "name": "55NANO86VNA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG 55NANO86VNA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-oled55a26la",
+   "brand": "LG",
+   "name": "OLED55A26LA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG OLED55A26LA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-oled65g46la",
+   "brand": "LG",
+   "name": "OLED65G46LA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG OLED65G46LA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "lg-oled77c46la",
+   "brand": "LG",
+   "name": "OLED77C46LA",
+   "category": "tv",
+   "shops": 1,
+   "query": "LG OLED77C46LA",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "marshall-acton-iv",
+   "brand": "Marshall",
+   "name": "Acton IV",
+   "category": "speaker",
+   "shops": 1,
+   "query": "Marshall Acton IV",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "nothing-cmf-watch-pro",
+   "brand": "Nothing",
+   "name": "CMF Watch Pro",
+   "category": "watch",
+   "shops": 1,
+   "query": "Nothing CMF Watch Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "nothing-phone-2a",
+   "brand": "Nothing",
+   "name": "Phone 2a",
+   "category": "phone",
+   "shops": 1,
+   "query": "Nothing Phone 2a",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "nothing-phone-2a-plus",
+   "brand": "Nothing",
+   "name": "Phone 2a Plus",
+   "category": "phone",
+   "shops": 1,
+   "query": "Nothing Phone 2a Plus",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "nothing-phone-3a",
+   "brand": "Nothing",
+   "name": "Phone 3a",
+   "category": "phone",
+   "shops": 1,
+   "query": "Nothing Phone 3a",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "oneplus-11",
+   "brand": "OnePlus",
+   "name": "11",
+   "category": "phone",
+   "shops": 1,
+   "query": "OnePlus 11",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "oneplus-nord-ce4",
+   "brand": "OnePlus",
+   "name": "Nord CE4",
+   "category": "phone",
+   "shops": 1,
+   "query": "OnePlus Nord CE4",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "oneplus-nord-smart-watch",
+   "brand": "OnePlus",
+   "name": "Nord Smart Watch",
+   "category": "watch",
+   "shops": 1,
+   "query": "OnePlus Nord Smart Watch",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "oneplus-pad",
+   "brand": "OnePlus",
+   "name": "Pad",
+   "category": "tablet",
+   "shops": 1,
+   "query": "OnePlus Pad",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-galaxy-fit-3",
+   "brand": "Samsung",
+   "name": "Galaxy Fit 3",
+   "category": "watch",
+   "shops": 1,
+   "query": "Samsung Galaxy Fit 3",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-galaxy-s24",
+   "brand": "Samsung",
+   "name": "Galaxy S24",
+   "category": "phone",
+   "shops": 1,
+   "query": "Samsung Galaxy S24",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-galaxy-s24-plus",
+   "brand": "Samsung",
+   "name": "Galaxy S24 Plus",
+   "category": "phone",
+   "shops": 1,
+   "query": "Samsung Galaxy S24 Plus",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-qa55q80aauxzn",
+   "brand": "Samsung",
+   "name": "QA55Q80AAUXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung QA55Q80AAUXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-qa55s90dauxzn",
+   "brand": "Samsung",
+   "name": "QA55S90DAUXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung QA55S90DAUXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-qa65q60abuxzn",
+   "brand": "Samsung",
+   "name": "QA65Q60ABUXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung QA65Q60ABUXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-qe55q70tauxce",
+   "brand": "Samsung",
+   "name": "QE55Q70TAUXCE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung QE55Q70TAUXCE",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-qe65q60dauxce",
+   "brand": "Samsung",
+   "name": "QE65Q60DAUXCE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung QE65Q60DAUXCE",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-qe85qn85dbuxce",
+   "brand": "Samsung",
+   "name": "QE85QN85DBUXCE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung QE85QN85DBUXCE",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua32t5300auxtw",
+   "brand": "Samsung",
+   "name": "UA32T5300AUXTW",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA32T5300AUXTW",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua43bu8000uxzn",
+   "brand": "Samsung",
+   "name": "UA43BU8000UXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA43BU8000UXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua43bu8500uxzn",
+   "brand": "Samsung",
+   "name": "UA43BU8500UXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA43BU8500UXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua43cu8000uxzn",
+   "brand": "Samsung",
+   "name": "UA43CU8000UXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA43CU8000UXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua50bu8000uxzn",
+   "brand": "Samsung",
+   "name": "UA50BU8000UXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA50BU8000UXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua50bu8500uxzn",
+   "brand": "Samsung",
+   "name": "UA50BU8500UXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA50BU8500UXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua55bu8000uxzn",
+   "brand": "Samsung",
+   "name": "UA55BU8000UXZN",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA55BU8000UXZN",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ua65bu8000uxtw",
+   "brand": "Samsung",
+   "name": "UA65BU8000UXTW",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UA65BU8000UXTW",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ue43du7100uxru",
+   "brand": "Samsung",
+   "name": "UE43DU7100UXRU",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UE43DU7100UXRU",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "samsung-ue65du8000uxce",
+   "brand": "Samsung",
+   "name": "UE65DU8000UXCE",
+   "category": "tv",
+   "shops": 1,
+   "query": "Samsung UE65DU8000UXCE",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-k50s20m2",
+   "brand": "Sony",
+   "name": "K50S20M2",
+   "category": "tv",
+   "shops": 1,
+   "query": "Sony K50S20M2",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-k55xr80",
+   "brand": "Sony",
+   "name": "K55XR80",
+   "category": "tv",
+   "shops": 1,
+   "query": "Sony K55XR80",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-k65s20m2",
+   "brand": "Sony",
+   "name": "K65S20M2",
+   "category": "tv",
+   "shops": 1,
+   "query": "Sony K65S20M2",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense",
+   "brand": "Sony",
+   "name": "DualSense Wireless Controller",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony DualSense Wireless Controller",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-astro-bot",
+   "brand": "Sony",
+   "name": "PS5 DualSense Astro Bot",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Astro Bot",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-death-stranding-2-edition",
+   "brand": "Sony",
+   "name": "PS5 DualSense Death Stranding 2 Edition",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Death Stranding 2 Edition",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-edge",
+   "brand": "Sony",
+   "name": "PS5 DualSense Edge",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Edge",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-genshin-impact-edition",
+   "brand": "Sony",
+   "name": "PS5 DualSense Genshin Impact Edition",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Genshin Impact Edition",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-god-of-war-20th-anniversary-edition",
+   "brand": "Sony",
+   "name": "PS5 DualSense God of War 20TH Anniversary Edition",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense God of War 20TH Anniversary Edition",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-hyperpop-collection-remix",
+   "brand": "Sony",
+   "name": "PS5 DualSense Hyperpop Collection Remix",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Hyperpop Collection Remix",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-hyperpop-collection-rhythm",
+   "brand": "Sony",
+   "name": "PS5 DualSense Hyperpop Collection Rhythm",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Hyperpop Collection Rhythm",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-ps5-dualsense-hyperpop-collection-techno",
+   "brand": "Sony",
+   "name": "PS5 DualSense Hyperpop Collection Techno",
+   "category": "console",
+   "shops": 1,
+   "query": "Sony PS5 DualSense Hyperpop Collection Techno",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-12-pro",
+   "brand": "Xiaomi",
+   "name": "12 Pro",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi 12 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-12s-ultra",
+   "brand": "Xiaomi",
+   "name": "12S Ultra",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi 12S Ultra",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-15-ultra",
+   "brand": "Xiaomi",
+   "name": "15 Ultra",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi 15 Ultra",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-17",
+   "brand": "Xiaomi",
+   "name": "17",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi 17",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-4k-a27ui",
+   "brand": "Xiaomi",
+   "name": "4K A27Ui",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Xiaomi 4K A27Ui",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-a24i",
+   "brand": "Xiaomi",
+   "name": "A24i",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Xiaomi A24i",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-a27qi",
+   "brand": "Xiaomi",
+   "name": "A27Qi",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Xiaomi A27Qi",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-gaming-g27i",
+   "brand": "Xiaomi",
+   "name": "Gaming G27i",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Xiaomi Gaming G27i",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-gaming-g27qi",
+   "brand": "Xiaomi",
+   "name": "Gaming G27Qi",
+   "category": "monitor",
+   "shops": 1,
+   "query": "Xiaomi Gaming G27Qi",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-pad-5",
+   "brand": "Xiaomi",
+   "name": "Pad 5",
+   "category": "tablet",
+   "shops": 1,
+   "query": "Xiaomi Pad 5",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-pad-8",
+   "brand": "Xiaomi",
+   "name": "Pad 8",
+   "category": "tablet",
+   "shops": 1,
+   "query": "Xiaomi Pad 8",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-poco-pad-x1",
+   "brand": "Xiaomi",
+   "name": "Poco Pad X1",
+   "category": "tablet",
+   "shops": 1,
+   "query": "Xiaomi Poco Pad X1",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-band-7",
+   "brand": "Xiaomi",
+   "name": "Redmi Band 7",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Redmi Band 7",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-band-8",
+   "brand": "Xiaomi",
+   "name": "Redmi Band 8",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Redmi Band 8",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-band-9",
+   "brand": "Xiaomi",
+   "name": "Redmi Band 9",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Redmi Band 9",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-redmi-band-9-pro",
+   "brand": "Xiaomi",
+   "name": "Redmi Band 9 Pro",
+   "category": "watch",
+   "shops": 1,
+   "query": "Xiaomi Redmi Band 9 Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-smart-speaker",
+   "brand": "Xiaomi",
+   "name": "Smart Speaker",
+   "category": "speaker",
+   "shops": 1,
+   "query": "Xiaomi Smart Speaker",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-tv-4a",
+   "brand": "Xiaomi",
+   "name": "TV 4A",
+   "category": "tv",
+   "shops": 1,
+   "query": "Xiaomi TV 4A",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-tv-a",
+   "brand": "Xiaomi",
+   "name": "TV A",
+   "category": "tv",
+   "shops": 1,
+   "query": "Xiaomi TV A",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-tv-a-pro",
+   "brand": "Xiaomi",
+   "name": "TV A Pro",
+   "category": "tv",
+   "shops": 1,
+   "query": "Xiaomi TV A Pro",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-tv-max",
+   "brand": "Xiaomi",
+   "name": "TV Max",
+   "category": "tv",
+   "shops": 1,
+   "query": "Xiaomi TV Max",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-tv-s-mini",
+   "brand": "Xiaomi",
+   "name": "TV S Mini",
+   "category": "tv",
+   "shops": 1,
+   "query": "Xiaomi TV S Mini",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-tv-s-pro-mini",
+   "brand": "Xiaomi",
+   "name": "TV S Pro Mini",
+   "category": "tv",
+   "shops": 1,
+   "query": "Xiaomi TV S Pro Mini",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "apple-iphone-13",
+   "brand": "Apple",
+   "name": "iPhone 13",
+   "category": "phone",
+   "shops": 0,
+   "query": "Apple iPhone 13",
+   "what": "missing",
+   "width": 0
+  }
+ ]
 }
