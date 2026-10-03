@@ -14,8 +14,9 @@ const rows = Object.values(P.offers).flat();
 //    a category listing, is a button that wastes the reader's click - there were 51 and 94 of
 //    those on 2026-09-20 and both are meant to stay at zero.
 // A query string marks a listing - except istyle's ?variant=N&color=N, which opens one colour
-// of one product (every istyle offer carries one since 2026-09-25).
-const LISTING = /[?](?!variant=\d+&color=\d+)|\/category\/|\/brand\/|electronics(\/|\.html)/;
+// of one product (every istyle offer carries one since 2026-09-25), and mobilecentre's
+// ?m=prod&pid=N, which is its product page.
+const LISTING = /[?](?!variant=\d+&color=\d+|m=prod&pid=\d+$)|\/category\/|\/brand\/|electronics(\/|\.html)/;
 const noLink = rows.filter(o => !o.url || !/^https?:/.test(o.url));
 const listing = rows.filter(o => o.url && LISTING.test(o.url));
 
