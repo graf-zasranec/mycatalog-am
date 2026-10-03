@@ -2,30 +2,10 @@
  "generated": "2026-10-03",
  "floorPx": 600,
  "note": "too small needs a larger original, not an enlargement",
- "total": 1328,
- "missing": 97,
+ "total": 1396,
+ "missing": 74,
  "tooSmall": 0,
  "products": [
-  {
-   "id": "apple-macbook-pro-14-m3",
-   "brand": "Apple",
-   "name": "MacBook Pro 14 M3",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Apple MacBook Pro 14 M3",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "nothing-cmf-phone-1",
-   "brand": "Nothing",
-   "name": "CMF Phone 1",
-   "category": "phone",
-   "shops": 2,
-   "query": "Nothing CMF Phone 1",
-   "what": "missing",
-   "width": 0
-  },
   {
    "id": "nothing-phone-1",
    "brand": "Nothing",
@@ -87,42 +67,22 @@
    "width": 0
   },
   {
-   "id": "amazon-fire-hd-10-kids",
-   "brand": "Amazon",
-   "name": "Fire HD 10 Kids",
-   "category": "tablet",
+   "id": "beats-powerbeats-fit",
+   "brand": "Beats",
+   "name": "PowerBeats Fit",
+   "category": "headphones",
    "shops": 1,
-   "query": "Amazon Fire HD 10 Kids",
+   "query": "Beats PowerBeats Fit",
    "what": "missing",
    "width": 0
   },
   {
-   "id": "amazon-kindle-kids",
-   "brand": "Amazon",
-   "name": "Kindle Kids",
-   "category": "ereader",
+   "id": "bose-quietcomfort-ultra-headphones-2nd-gen",
+   "brand": "Bose",
+   "name": "QuietComfort Ultra Headphones 2nd Gen",
+   "category": "headphones",
    "shops": 1,
-   "query": "Amazon Kindle Kids",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "amazon-kindle-scribe",
-   "brand": "Amazon",
-   "name": "Kindle Scribe",
-   "category": "ereader",
-   "shops": 1,
-   "query": "Amazon Kindle Scribe",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "apple-macbook-air-13-m2",
-   "brand": "Apple",
-   "name": "MacBook Air 13 M2",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Air 13 M2",
+   "query": "Bose QuietComfort Ultra Headphones 2nd Gen",
    "what": "missing",
    "width": 0
   },
@@ -157,202 +117,12 @@
    "width": 0
   },
   {
-   "id": "dell-pro-14-pc14250",
-   "brand": "Dell",
-   "name": "Pro 14 PC14250",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Dell Pro 14 PC14250",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-11-pro-fold",
-   "brand": "Google",
-   "name": "Pixel 11 Pro Fold",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 11 Pro Fold",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-6",
-   "brand": "Google",
-   "name": "Pixel 6",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 6",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-6-pro",
-   "brand": "Google",
-   "name": "Pixel 6 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 6 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-6a",
-   "brand": "Google",
-   "name": "Pixel 6a",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 6a",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-7-pro",
-   "brand": "Google",
-   "name": "Pixel 7 Pro",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 7 Pro",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "google-pixel-8a",
-   "brand": "Google",
-   "name": "Pixel 8a",
-   "category": "phone",
-   "shops": 1,
-   "query": "Google Pixel 8a",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "honor-band-9",
-   "brand": "Honor",
-   "name": "Band 9",
-   "category": "watch",
-   "shops": 1,
-   "query": "Honor Band 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "hori-rwa-racing-wheel-apex-for-ps5",
    "brand": "Hori",
    "name": "RWA Racing Wheel Apex for PS5",
    "category": "console",
    "shops": 1,
    "query": "Hori RWA Racing Wheel Apex for PS5",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "huawei-band-9",
-   "brand": "Huawei",
-   "name": "Band 9",
-   "category": "watch",
-   "shops": 1,
-   "query": "Huawei Band 9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lenovo-yoga-9-14imh9",
-   "brand": "Lenovo",
-   "name": "Yoga 9 14IMH9",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Lenovo Yoga 9 14IMH9",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-32lm637bpva",
-   "brand": "LG",
-   "name": "32LM637BPVA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG 32LM637BPVA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-50nano75vpa",
-   "brand": "LG",
-   "name": "50NANO75VPA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG 50NANO75VPA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-55nano80vpa",
-   "brand": "LG",
-   "name": "55NANO80VPA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG 55NANO80VPA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-55nano86vna",
-   "brand": "LG",
-   "name": "55NANO86VNA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG 55NANO86VNA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-oled55a26la",
-   "brand": "LG",
-   "name": "OLED55A26LA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG OLED55A26LA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-oled65g46la",
-   "brand": "LG",
-   "name": "OLED65G46LA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG OLED65G46LA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "lg-oled77c46la",
-   "brand": "LG",
-   "name": "OLED77C46LA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG OLED77C46LA",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "marshall-acton-iv",
-   "brand": "Marshall",
-   "name": "Acton IV",
-   "category": "speaker",
-   "shops": 1,
-   "query": "Marshall Acton IV",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "nothing-cmf-watch-pro",
-   "brand": "Nothing",
-   "name": "CMF Watch Pro",
-   "category": "watch",
-   "shops": 1,
-   "query": "Nothing CMF Watch Pro",
    "what": "missing",
    "width": 0
   },
@@ -367,16 +137,6 @@
    "width": 0
   },
   {
-   "id": "nothing-phone-2a-plus",
-   "brand": "Nothing",
-   "name": "Phone 2a Plus",
-   "category": "phone",
-   "shops": 1,
-   "query": "Nothing Phone 2a Plus",
-   "what": "missing",
-   "width": 0
-  },
-  {
    "id": "nothing-phone-3a",
    "brand": "Nothing",
    "name": "Phone 3a",
@@ -387,22 +147,12 @@
    "width": 0
   },
   {
-   "id": "oneplus-11",
+   "id": "oneplus-nord-buds",
    "brand": "OnePlus",
-   "name": "11",
-   "category": "phone",
+   "name": "Nord Buds",
+   "category": "headphones",
    "shops": 1,
-   "query": "OnePlus 11",
-   "what": "missing",
-   "width": 0
-  },
-  {
-   "id": "oneplus-nord-ce4",
-   "brand": "OnePlus",
-   "name": "Nord CE4",
-   "category": "phone",
-   "shops": 1,
-   "query": "OnePlus Nord CE4",
+   "query": "OnePlus Nord Buds",
    "what": "missing",
    "width": 0
   },
@@ -647,6 +397,16 @@
    "width": 0
   },
   {
+   "id": "sony-mdr-zx110",
+   "brand": "Sony",
+   "name": "MDR-ZX110",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Sony MDR-ZX110",
+   "what": "missing",
+   "width": 0
+  },
+  {
    "id": "sony-ps5-dualsense",
    "brand": "Sony",
    "name": "DualSense Wireless Controller",
@@ -733,6 +493,16 @@
    "category": "console",
    "shops": 1,
    "query": "Sony PS5 DualSense Hyperpop Collection Techno",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "sony-wf-1000xm6",
+   "brand": "Sony",
+   "name": "WF-1000XM6",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Sony WF-1000XM6",
    "what": "missing",
    "width": 0
   },
