@@ -181,6 +181,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 .orow .stale{font-style:normal;font-size:12px;padding:1px 5px;border-radius:var(--pill);
   background:var(--surface2);color:var(--muted);margin-left:6px;white-space:nowrap}
+.orow:has(.stale.old){opacity:.55}.orow:has(.stale.old):hover{opacity:1}
 
 /* ---- filters fold away: eleven chips above the results is most of a phone screen ---- */
 .fbar.folded > :nth-child(n+6){display:none}   /* folded still shows the first four (child 1 is the sheet head) */

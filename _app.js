@@ -2272,7 +2272,9 @@ const seenTag = o => {
   if (!o.seen) return ` <i class="stale" title="${esc(x('handTip'))}">${esc(x('handSeen'))}</i>`;
   // today's rows carry their date too: a row with no date read as "unknown", not as fresh (owner, 2026-10-02)
   const d = o.seen.slice(8, 10) + '.' + o.seen.slice(5, 7);
-  return ` <i class="stale" title="${esc(x('seenTip'))}">${esc(x('seenOn').replace('{d}', d))}</i>`;
+  // more than 3 days since the shop's page was read: the row fades, so a fresh price leads
+  const old = Date.now() - Date.parse(o.seen.slice(0, 10)) > 3 * 864e5 ? ' old' : '';
+  return ` <i class="stale${old}" title="${esc(x('seenTip'))}">${esc(x('seenOn').replace('{d}', d))}</i>`;
 };
 
 /* ================= all offers for one model ================= */
