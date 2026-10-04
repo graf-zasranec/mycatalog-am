@@ -57,12 +57,12 @@ async function vlvInfo(vid) {
 // The status of the last request, for the one caller that needs to tell "this page is gone"
 // from "the network hiccuped". A retry can fix the second; nothing fixes the first.
 let LAST_STATUS = 0;
-async function get(url, tries = 2) {
+async function get(url, tries = 2, ua = UA) {
   LAST_STATUS = 0;
   for (let i = 0; i < tries; i++) {
     try {
       const c = AbortSignal.timeout(TIMEOUT_MS);
-      const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,*/*' }, signal: c, redirect: 'follow' });
+      const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal: c, redirect: 'follow' });
       LAST_STATUS = r.status;
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.text();
@@ -2081,6 +2081,46 @@ const SHOPS = {
             storage: k.storage ?? storageOf(title) ?? storageOf(url),
             ram: k.ram ?? ramOf(title), color: k.color, colorRaw: k.colorRaw, esim: k.esim, simFromPage: k.simFromPage,
             inStock: k.inStock !== false });
+      }
+      return out;
+    }
+  },
+
+  // Viva (shop.viva.am) gave the owner permission on 2026-10-03; its robots.txt is "Allow: /". Its
+  // firewall answers 503 to the BetterBot name and to anything quick, so it is read under the
+  // same honest name tools/confirm-hand.mjs uses, 4 s apart. The sitemap robots.txt points at is
+  // gone (404), so the device sections are walked page by page (Bitrix ?PAGEN_1=, 12 to a page).
+  // A card names the build and colour and carries the price; a Buy button means in stock.
+  viva: {
+    name: 'Viva', site: 'https://shop.viva.am', note: 'mobile operator shop',
+    async run() {
+      const UA_VIVA = 'Better.am price check (+https://graf-zasranec.github.io/mycatalog-am/)';
+      const CATS = ['smartphones', 'tablets', 'notebook', 'routers', 'smart-things', 'accessories/watches',
+        'accessories/-/headphones', 'accessories/-/wireless_headphones', 'accessories/-/wireless-acoustics'];
+      const out = [], seen = new Set();
+      for (const cat of CATS) {
+        for (let pg = 1; pg <= 60; pg++) {
+          const html = await get(`https://shop.viva.am/en/catalog/${cat}${pg > 1 ? '?PAGEN_1=' + pg : ''}`, 2, UA_VIVA);
+          await sleep(4000);
+          const cards = html ? html.split('class="new-card-item"').slice(1) : [];
+          let fresh = 0;
+          for (const c of cards) {
+            const head = c.slice(0, 5000);
+            const title = clean((head.match(/aria-label="([^"]+)"/) || [])[1] || '');
+            const href = (head.match(/href="(\/en\/product\/[^"]+)"/) || [])[1];
+            const price = +((head.match(/nc-price-row">\s*<span data-val="([\d\s ]+)/) || [])[1] || '').replace(/\D/g, '');
+            if (!title || !href || !price) continue;
+            const url = 'https://shop.viva.am' + href;
+            if (seen.has(url)) continue;
+            seen.add(url); fresh++;
+            const id = matchPhone(title, { price, url }) || matchPhone(url);
+            if (!id) continue;
+            out.push({ id, price, title, url, storage: storageOf(title) ?? storageOf(url), ram: ramOf(title),
+              inStock: /addToBasket/.test(head) });
+          }
+          // past the last page Bitrix serves the last one again: nothing new means done
+          if (!fresh) break;
+        }
       }
       return out;
     }
