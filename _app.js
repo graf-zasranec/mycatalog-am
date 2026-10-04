@@ -137,7 +137,7 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], g5: false, nfc: false, anc: false, gaming: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], g5: false, nfc: false, anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -147,6 +147,7 @@ if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 // ?lang=ru from the Russian/English static pages opens the app in that language
 { const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
+if (![0, 1, 2].includes(st.anc)) st.anc = st.anc === true ? 1 : 0;   // a saved on/off from the old checkbox
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
 if (typeof st.q !== 'string') st.q = '';
 if (typeof st.fopen !== 'boolean') st.fopen = false;
@@ -572,7 +573,9 @@ const FILT = {
   water: { kind: 'set', arr: 'waters', label: () => x('waterF'), of: waterOf, fmt: v => x('waters')[v], vals: () => ['splash', 'dip'] },
   g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
   nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
-  anc:   { kind: 'flag', label: () => x('ancF'), of: p => !!p.audio?.anc },
+  // Any / Yes / No (owner, 2026-10-04). A model nothing marks as noise-cancelling counts as No -
+  // tools/audio.mjs reads ANC/NC off every name and shop title, and the rest were set by hand.
+  anc:   { kind: 'yn', label: () => x('ancF'), of: p => p.audio?.anc === true },
   // The columns e-catalog asks headphones about. Filled in by tools/audio.mjs from the product's
   // name and the shops' titles; a product it could not place has no value and drops out only
   // while that filter is on.
