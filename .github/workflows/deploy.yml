@@ -47,4 +47,13 @@ jobs:
           git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js index.html p c b ru en sitemap.xml
           git diff --staged --quiet && echo "no price changes" && exit 0
           git commit -m "prices: $(date -u +%Y-%m-%d)"
-          git push
+          # a code push during the crawl made this copy stale and the push was refused (twice,
+          # 2026-10-03/04): replay onto the new main, keep tonight's data, rebuild with the new code
+          git push || {
+            git fetch origin main
+            git rebase -X theirs origin/main
+            node build.mjs
+            git add data/site-prices.js data/site-products.js index.html p c b ru en sitemap.xml
+            git commit --amend --no-edit
+            git push
+          }
