@@ -57113,7 +57113,10 @@
     "colors": [
       "Pink Gold",
       "Gray"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "huawei-band-9",
@@ -61416,7 +61419,8 @@
       "form": "full",
       "conn": "wired",
       "gaming": true,
-      "anc": true
+      "anc": true,
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired USB / 3.5 mm gaming headset, no Bluetooth (jbl.com, 2026-10-03)"
@@ -62510,7 +62514,8 @@
     "colors": [],
     "audio": {
       "form": "full",
-      "conn": "wired"
+      "conn": "wired",
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
@@ -62901,7 +62906,8 @@
     "audio": {
       "conn": "wired",
       "form": "full",
-      "anc": false
+      "anc": false,
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
@@ -63019,7 +63025,8 @@
     ],
     "audio": {
       "form": "full",
-      "conn": "wired"
+      "conn": "wired",
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
@@ -63057,7 +63064,8 @@
     ],
     "audio": {
       "form": "tws",
-      "conn": "wired"
+      "conn": "wired",
+      "plug": "usb-c"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
@@ -63097,7 +63105,8 @@
     "audio": {
       "form": "full",
       "conn": "wired",
-      "gaming": true
+      "gaming": true,
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
@@ -63137,7 +63146,8 @@
     ],
     "audio": {
       "form": "full",
-      "conn": "wired"
+      "conn": "wired",
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
@@ -63176,7 +63186,8 @@
     "audio": {
       "conn": "wired",
       "form": "full",
-      "anc": false
+      "anc": false,
+      "plug": "3.5"
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
