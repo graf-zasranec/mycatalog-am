@@ -601,39 +601,141 @@
   },
   {
     "key": "privacy.p1",
-    "hy": "Այս կայքը հաշիվներ չունի, չի հավաքում անձնական տվյալներ և չի օգտագործում հետագծող cookie-ներ։",
-    "ru": "На этом сайте нет аккаунтов, он не собирает персональные данные и не использует отслеживающие cookie.",
-    "en": "This site has no accounts, collects no personal data and uses no tracking cookies."
+    "hy": "Վերջին թարմացումը՝ 2026 թ. հոկտեմբերի 4։",
+    "ru": "Последнее обновление: 4 октября 2026 г.",
+    "en": "Last updated: 4 October 2026."
   },
   {
     "key": "privacy.p2",
-    "hy": "Ընտրած լեզուն, թեման, զտիչները և համեմատության ցանկը պահվում են միայն ձեր դիտարկիչում (localStorage) և մեզ չեն ուղարկվում։ Դիտարկիչի տվյալները մաքրելը դրանք ջնջում է։",
-    "ru": "Выбранный язык, тема, фильтры и список сравнения хранятся только в вашем браузере (localStorage) и нам не отправляются. Очистка данных браузера удаляет их.",
-    "en": "Your language, theme, filters and compare list are stored only in your browser (localStorage) and are never sent to us. Clearing your browser data deletes them."
+    "hy": "Better.am-ում հաշիվներ, գրանցում և cookie-ներ չկան։ Մենք անձնական տվյալներ չենք հավաքում, չենք վաճառում և ոչ մեկին չենք փոխանցում։",
+    "ru": "На Better.am нет аккаунтов, регистрации и cookie. Мы не собираем, не продаём и никому не передаём персональные данные.",
+    "en": "Better.am has no accounts, no sign-up and no cookies. We do not collect, sell or share personal data."
   },
   {
     "key": "privacy.p3",
-    "hy": "Էջը տառատեսակները բեռնում է Google Fonts-ից. դա միակ արտաքին հարցումն է, և Google-ը դրա ընթացքում տեսնում է ձեր IP հասցեն։",
-    "ru": "Страница загружает шрифты из Google Fonts — это единственный внешний запрос, и Google при этом видит ваш IP-адрес.",
-    "en": "The page loads fonts from Google Fonts. That is the only external request, and Google sees your IP address when it happens."
+    "hy": "## Կարգավորումները մնում են ձեր սարքում",
+    "ru": "## Настройки остаются на вашем устройстве",
+    "en": "## Your settings stay on your device"
   },
   {
     "key": "privacy.p4",
-    "hy": "Խանութների հղումները տանում են այլ կայքեր, որոնք ունեն իրենց քաղաքականությունը։ Գները հավաքվում են հրապարակային էջերից և կարող են հնանալ։",
-    "ru": "Ссылки на магазины ведут на сторонние сайты с собственными политиками. Цены собираются с публичных страниц и могут устареть.",
-    "en": "Shop links lead to other sites with their own policies. Prices are collected from public pages and can go stale."
+    "hy": "Ընտրած լեզուն, թեման, զտիչները և համեմատության ցանկը պահվում են ձեր դիտարկիչի տեղային հիշողությունում (localStorage)։ Դրանք մեզ չեն ուղարկվում. դիտարկիչի տվյալները մաքրելիս դրանք ջնջվում են։",
+    "ru": "Выбранный язык, тема, фильтры и список сравнения хранятся в локальной памяти вашего браузера (localStorage). Они нам не отправляются; очистка данных браузера их удаляет.",
+    "en": "Your language, theme, filters and compare list are kept in your browser’s local storage. They are never sent to us; clearing your browser data removes them."
   },
   {
     "key": "privacy.p5",
-    "hy": "Better.am-ը կատալոգ է, ոչ թե խանութ։ Մենք ոչինչ չենք վաճառում և կողմ չենք որևէ գնման. բոլոր պատվերները կատարվում են խանութի սեփական կայքում՝ նրա պայմաններով։",
-    "ru": "Better.am — это каталог, а не магазин. Мы ничего не продаём и не являемся стороной сделки: любой заказ оформляется на собственном сайте магазина и на его условиях.",
-    "en": "Better.am is a catalogue, not a shop. We sell nothing and we are not a party to any purchase: every order is placed on the shop’s own site, under the shop’s own terms."
+    "hy": "## Հոսթինգ",
+    "ru": "## Хостинг",
+    "en": "## Hosting"
   },
   {
     "key": "privacy.p6",
-    "hy": "Գները, առկայությունը և նկարագրությունները այն են, ինչ խանութը հրապարակել էր իր էջում մեր վերջին ընթերցման պահին։ Դրանք կարող են փոխվել կամ սխալ լինել, և մենք դրանց համար պատասխանատվություն չենք կրում։ Գնելուց առաջ ստուգե՛ք խանութի էջը։",
-    "ru": "Цены, наличие и описания — это то, что магазин опубликовал на своей странице на момент нашего последнего чтения. Они могут измениться или оказаться неверными, и ответственности за них мы не несём. Перед покупкой проверьте страницу магазина.",
-    "en": "Prices, stock and descriptions are what the shop had published on its own page when we last read it. They can change or be wrong, and we take no responsibility for them. Check the shop’s page before you buy."
+    "hy": "Կայքը տեղադրված է GitHub Pages-ում։ Ինչպես ցանկացած վեբ հոսթինգ, GitHub-ը էջը բացելիս ստանում է ձեր IP հասցեն և դիտարկիչի տվյալները և կարող է դրանք պահել իր սերվերային գրանցամատյաններում՝ անվտանգության նպատակով (տե՛ս GitHub-ի գաղտնիության քաղաքականությունը)։ Բոլոր ֆայլերը՝ էջերը, լուսանկարները և տառատեսակները, բեռնվում են միայն այս կայքից. էջը չի դիմում որևէ այլ ծառայության և չի օգտագործում վերլուծական կամ գովազդային հետագծիչներ։",
+    "ru": "Сайт размещён на GitHub Pages. Как любой хостинг, GitHub при загрузке страницы получает ваш IP-адрес и данные браузера и может хранить их в серверных журналах в целях безопасности (см. политику конфиденциальности GitHub). Все файлы — страницы, фотографии и шрифты — загружаются только с этого сайта: страница не обращается к другим сервисам и не использует аналитику или рекламные трекеры.",
+    "en": "The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address and browser details when a page loads and may keep them in its server logs for security (see GitHub’s privacy statement). Every file — pages, photos and fonts — comes from this one site: the page contacts no other service and uses no analytics or advertising trackers."
+  },
+  {
+    "key": "nav.terms",
+    "hy": "Օգտագործման պայմաններ",
+    "ru": "Условия использования",
+    "en": "Terms"
+  },
+  {
+    "key": "privacy.p7",
+    "hy": "## Էլ. նամակներ",
+    "ru": "## Письма",
+    "en": "## Email"
+  },
+  {
+    "key": "privacy.p8",
+    "hy": "Եթե գրեք infobetter@proton.me հասցեին, ձեր հասցեն և նամակը կօգտագործենք միայն պատասխանելու համար և ձեր խնդրանքով կջնջենք։",
+    "ru": "Если вы напишете на infobetter@proton.me, ваш адрес и письмо будут использованы только для ответа и удалены по вашей просьбе.",
+    "en": "If you write to infobetter@proton.me, we use your address and message only to reply, and delete them on request."
+  },
+  {
+    "key": "privacy.p9",
+    "hy": "## Հղումներ խանութներին",
+    "ru": "## Ссылки на магазины",
+    "en": "## Links to shops"
+  },
+  {
+    "key": "privacy.p10",
+    "hy": "Խանութների հղումները տանում են նրանց կայքեր, որոնք ունեն իրենց գաղտնիության քաղաքականությունը և cookie-ները։ Այդ հղումներին մենք հետագծման կամ գործընկերային կոդեր չենք ավելացնում։",
+    "ru": "Ссылки на магазины ведут на их сайты, у которых свои политики конфиденциальности и cookie. Мы не добавляем к этим ссылкам отслеживающие или партнёрские коды.",
+    "en": "Links to shops take you to their own sites, which have their own privacy policies and cookies. We add no tracking or affiliate codes to those links."
+  },
+  {
+    "key": "privacy.p11",
+    "hy": "## Ձեր իրավունքները",
+    "ru": "## Ваши права",
+    "en": "## Your rights"
+  },
+  {
+    "key": "privacy.p12",
+    "hy": "«Անձնական տվյալների պաշտպանության մասին» ՀՀ օրենքի համաձայն՝ կարող եք իմանալ, թե ինչ տվյալներ ունենք ձեր մասին, և պահանջել դրանց ուղղումը կամ ջնջումը։ Քանի որ մեզ ուղարկված նամակներից բացի ոչինչ չենք պահում, գրե՛ք «Կապ» էջում նշված հասցեին։ Այս քաղաքականության փոփոխության դեպքում վերևի ամսաթիվը կթարմացվի։",
+    "ru": "По Закону РА «О защите персональных данных» вы можете узнать, какие данные о вас у нас есть, и потребовать их исправления или удаления. Поскольку кроме присланных нам писем мы ничего не храним, напишите на адрес со страницы «Контакты». Если политика изменится, изменится и дата вверху.",
+    "en": "Under the Republic of Armenia Law on Protection of Personal Data you may ask what we hold about you and have it corrected or deleted. As we keep nothing beyond emails sent to us, write to the address on the Contact page. If this policy changes, the date above changes with it."
+  },
+  {
+    "key": "terms.title",
+    "hy": "Օգտագործման պայմաններ",
+    "ru": "Условия использования",
+    "en": "Terms of use"
+  },
+  {
+    "key": "terms.p1",
+    "hy": "Վերջին թարմացումը՝ 2026 թ. հոկտեմբերի 4։ Օգտվելով Better.am-ից՝ դուք ընդունում եք այս պայմանները։",
+    "ru": "Последнее обновление: 4 октября 2026 г. Пользуясь Better.am, вы принимаете эти условия.",
+    "en": "Last updated: 4 October 2026. By using Better.am you accept these terms."
+  },
+  {
+    "key": "terms.p2",
+    "hy": "## Ինչ է Better.am-ը",
+    "ru": "## Что такое Better.am",
+    "en": "## What Better.am is"
+  },
+  {
+    "key": "terms.p3",
+    "hy": "Անվճար կատալոգ, որը համեմատում է էլեկտրոնիկայի գները Հայաստանի խանութներում։ Մենք խանութ չենք. ոչինչ չենք վաճառում, պատվերներ և վճարումներ չենք ընդունում և որևէ գնման կողմ չենք։ Յուրաքանչյուր պատվեր կատարվում է խանութի կայքում՝ նրա պայմաններով, երաշխիքով և վերադարձի կանոններով։",
+    "ru": "Бесплатный каталог, сравнивающий цены на электронику в магазинах Армении. Мы не магазин: ничего не продаём, не принимаем заказы и платежи и не являемся стороной сделки. Каждый заказ оформляется на сайте магазина — на его условиях, с его гарантией и правилами возврата.",
+    "en": "A free catalogue that compares electronics prices in shops in Armenia. We are not a shop: we sell nothing, take no orders or payments, and are not a party to any purchase. Every order is made on the shop’s own site, under its own terms, warranty and return policy."
+  },
+  {
+    "key": "terms.p4",
+    "hy": "## Գներ և տեղեկություններ",
+    "ru": "## Цены и информация",
+    "en": "## Prices and information"
+  },
+  {
+    "key": "terms.p5",
+    "hy": "Գները, առկայությունը և բնութագրերը կարդացվում են խանութների հրապարակային էջերից՝ նրանց թույլտվությամբ, և ցուցադրվում են այնպես, ինչպես էին վերջին ստուգման պահին (ամսաթիվը նշված է յուրաքանչյուր առաջարկի մոտ)։ Դրանք կարող են հնացած կամ սխալ լինել։ Գնելուց առաջ միշտ ստուգե՛ք գինը և մանրամասները խանութի էջում։ Առաջարկները դասավորված են ըստ գնի։",
+    "ru": "Цены, наличие и характеристики берутся с публичных страниц магазинов с их разрешения и показываются такими, какими были при последней проверке (дата указана у каждого предложения). Они могут устареть или оказаться неверными. Перед покупкой всегда проверяйте цену и детали на странице магазина. Предложения упорядочены по цене.",
+    "en": "Prices, stock and specifications are read from the shops’ public pages with their permission, and shown as they were when last checked (the date is shown with each offer). They can be out of date or wrong. Always confirm the price and details on the shop’s page before you buy. Offers are ordered by price."
+  },
+  {
+    "key": "terms.p6",
+    "hy": "## Անվանումներ, ապրանքանիշեր և լուսանկարներ",
+    "ru": "## Названия, товарные знаки и фотографии",
+    "en": "## Names, trademarks and photos"
+  },
+  {
+    "key": "terms.p7",
+    "hy": "Ապրանքների և ապրանքանիշերի անվանումները, լոգոները և լուսանկարները պատկանում են իրենց սեփականատերերին և օգտագործվում են միայն ապրանքը ճանաչելու համար։ Better.am-ը կապված չէ որևէ ապրանքանիշի կամ խանութի հետ և նրանց կողմից հովանավորված չէ։ Եթե այստեղ ցուցադրված նյութի իրավատերն եք և ցանկանում եք այն փոխել կամ հեռացնել, գրե՛ք infobetter@proton.me հասցեին, և մենք արագ կարձագանքենք։",
+    "ru": "Названия товаров и брендов, логотипы и фотографии принадлежат их владельцам и используются только для того, чтобы обозначить товар. Better.am не связан ни с одним брендом или магазином и не одобрен ими. Если вы правообладатель материала, показанного здесь, и хотите его изменить или удалить, напишите на infobetter@proton.me — мы оперативно отреагируем.",
+    "en": "Product and brand names, logos and product photos belong to their owners and are used only to identify products. Better.am is not affiliated with or endorsed by any brand or shop. If you own content shown here and want it changed or removed, write to infobetter@proton.me and we will act promptly."
+  },
+  {
+    "key": "terms.p8",
+    "hy": "## Օգտագործում և պատասխանատվություն",
+    "ru": "## Использование и ответственность",
+    "en": "## Use and liability"
+  },
+  {
+    "key": "terms.p9",
+    "hy": "Կայքից կարող եք ազատ օգտվել անձնական նպատակներով։ Մի՛ փորձեք խափանել կայքի աշխատանքը կամ զանգվածաբար պատճենել կատալոգը՝ այն այլ տեղ հրապարակելու համար։ Կայքը տրամադրվում է «ինչպես կա» սկզբունքով՝ առանց երաշխիքների։ Օրենքով թույլատրելի չափով Better.am-ը պատասխանատվություն չի կրում կայքից օգտվելու կամ խանութներում կատարված գնումների հետևանքով առաջացած վնասի համար։ Այս պայմանները կարգավորվում են Հայաստանի Հանրապետության օրենսդրությամբ։",
+    "ru": "Сайтом можно свободно пользоваться в личных целях. Не пытайтесь нарушить работу сайта или массово копировать каталог для публикации в другом месте. Сайт предоставляется «как есть», без гарантий. В пределах, допускаемых законом, Better.am не несёт ответственности за ущерб, возникший из-за использования сайта или покупок в магазинах. Эти условия регулируются законодательством Республики Армения.",
+    "en": "You may use Better.am freely for personal use. Do not try to disrupt the site or copy the catalogue in bulk to republish it. The site is provided “as is”, without warranties. To the extent permitted by law, Better.am is not liable for any loss arising from use of the site or from purchases made at shops. These terms are governed by the law of the Republic of Armenia."
   },
   {
     "key": "contact.title",

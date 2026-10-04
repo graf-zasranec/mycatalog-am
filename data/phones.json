@@ -65280,5 +65280,643 @@
       "name": "Intel Celeron N4500"
     },
     "body": {}
+  },
+  {
+    "id": "apple-watch-se-2",
+    "category": "watch",
+    "brand": "Apple",
+    "name": "Watch SE 2",
+    "aliases": [
+      "Apple Watch SE 2 44mm"
+    ],
+    "tier": "budget",
+    "priceAmd": 94000,
+    "priceAmdMax": 94000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 94000
+      }
+    ],
+    "display": {
+      "size": 1.78,
+      "resolution": "368x448",
+      "type": "Retina LTPO OLED"
+    },
+    "battery": {},
+    "summaryEn": "Apple Watch SE 2 44mm.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "chipset": {
+      "name": "Apple S8 SiP"
+    }
+  },
+  {
+    "id": "flyingvoice-sr3000-5g",
+    "category": "network",
+    "brand": "Flyingvoice",
+    "name": "SR3000-5G",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 249900,
+    "priceAmdMax": 249900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 249900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Flyingvoice SR3000-5G.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "tp-link-m7000-lte-hotspot",
+    "category": "network",
+    "brand": "TP-Link",
+    "name": "M7000 LTE Hotspot",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 22900,
+    "priceAmdMax": 22900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 22900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "TP-Link M7000 LTE Hotspot.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-dual-zone-air-fryer-10l",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Dual Zone Air Fryer 10L",
+    "aliases": [
+      "Xiaomi Dual Zone Air Fryer 10L Black",
+      "Xiaomi Zone Air Fryer 10L"
+    ],
+    "tier": "budget",
+    "priceAmd": 79900,
+    "priceAmdMax": 79900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Zone Air Fryer 10L.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-handheld-garment-steamer-mjgtj02lf",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Handheld Garment Steamer MJGTJ02LF",
+    "aliases": [
+      "Xiaomi Handheld Garment Steamer White MJGTJ02LF"
+    ],
+    "tier": "budget",
+    "priceAmd": 15900,
+    "priceAmdMax": 15900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 15900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Handheld Garment Steamer MJGTJ02LF.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-mijia-smart-air-purifier-6",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Mijia Smart Air Purifier 6",
+    "aliases": [
+      "Xiaomi Mĳia Smart Air Purifier 6 White BHR08MZEU",
+      "Xiaomi Mĳia Smart Air Purifier 6 BHR08MZEU"
+    ],
+    "tier": "budget",
+    "priceAmd": 97900,
+    "priceAmdMax": 97900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 97900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Mĳia Smart Air Purifier 6 BHR08MZEU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-5",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum 5",
+    "aliases": [
+      "Xiaomi Robot Vacuum 5",
+      "Xiaomi Vacuum 5"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 339900,
+    "priceAmdMax": 339900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 339900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum 5.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-5-pro",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum 5 Pro",
+    "aliases": [
+      "Xiaomi Robot Vacuum 5 Pro",
+      "Xiaomi Vacuum 5 Pro"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 389900,
+    "priceAmdMax": 389900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 389900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum 5 Pro.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-s40-pro",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum S40 Pro",
+    "aliases": [
+      "Xiaomi Robot Vacuum S40 Pro",
+      "Xiaomi Vacuum S40 Pro"
+    ],
+    "tier": "mid",
+    "priceAmd": 139900,
+    "priceAmdMax": 139900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 139900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum S40 Pro.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-x20-max",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum X20 Max",
+    "aliases": [
+      "Xiaomi Robot Vacuum X20 MAX Black",
+      "Xiaomi Vacuum X20 MAX"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 329900,
+    "priceAmdMax": 329900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 329900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum X20 MAX.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-x20-pro",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum X20 Pro",
+    "aliases": [
+      "Xiaomi Robot Vacuum X20 Pro White",
+      "Xiaomi Vacuum X20 Pro"
+    ],
+    "tier": "mid",
+    "priceAmd": 199900,
+    "priceAmdMax": 199900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 199900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum X20 Pro.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-semi-automatic-espresso-machine-bhr9798eu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Semi-automatic Espresso Machine BHR9798EU",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 47900,
+    "priceAmdMax": 47900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 47900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Semi-automatic Espresso Machine BHR9798EU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-air-fryer-6-5l",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Smart Air Fryer 6.5L",
+    "aliases": [
+      "Xiaomi Smart Air Fryer 6.5L Black",
+      "Xiaomi Smart Air Fryer 6.5L White"
+    ],
+    "tier": "budget",
+    "priceAmd": 44900,
+    "priceAmdMax": 44900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 44900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Air Fryer 6.5L.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-air-purifier-4-compact-bhr5860eu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Smart Air Purifier 4 Compact BHR5860EU",
+    "aliases": [
+      "Xiaomi Smart Air Purifier 4 Compact EU BHR5860EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 41900,
+    "priceAmdMax": 41900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 41900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Air Purifier 4 Compact BHR5860EU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-air-purifier-4-lite-bhr5274gl",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Smart Air Purifier 4 Lite BHR5274GL",
+    "aliases": [
+      "Xiaomi Smart Air Purifier 4 Lite EU BHR5274GL"
+    ],
+    "tier": "budget",
+    "priceAmd": 70900,
+    "priceAmdMax": 70900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 70900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Air Purifier 4 Lite BHR5274GL.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Smart Air Purifier 4 Pro BHR5056EU",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 120900,
+    "priceAmdMax": 120900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 120900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Air Purifier 4 Pro BHR5056EU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Smart Double Stack Air Fryer 12L BHR0883EU",
+    "aliases": [
+      "Xiaomi Smart Double Stack Air Fryer 12L Black BHR0883EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 92900,
+    "priceAmdMax": 92900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 92900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Double Stack Air Fryer 12L BHR0883EU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-scale-s200",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Smart Scale S200",
+    "aliases": [
+      "Xiaomi Smart Scale S200 Grey"
+    ],
+    "tier": "budget",
+    "priceAmd": 8900,
+    "priceAmdMax": 8900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 8900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Scale S200.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-sound-pocket",
+    "category": "speaker",
+    "brand": "Xiaomi",
+    "name": "Sound Pocket",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 8900,
+    "priceAmdMax": 8900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 8900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Sound Pocket.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "xiaomi-vacuum-cleaner-g20-lite",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum Cleaner G20 Lite",
+    "aliases": [
+      "Xiaomi Vacuum Cleaner G20 Lite White"
+    ],
+    "tier": "budget",
+    "priceAmd": 43900,
+    "priceAmdMax": 43900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 43900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum Cleaner G20 Lite.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-cleaner-g20-max",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum Cleaner G20 Max",
+    "aliases": [
+      "Xiaomi Vacuum Cleaner G20 Max Black"
+    ],
+    "tier": "mid",
+    "priceAmd": 130900,
+    "priceAmdMax": 130900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 130900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum Cleaner G20 Max.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
   }
 ]

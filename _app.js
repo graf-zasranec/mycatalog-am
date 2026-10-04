@@ -901,7 +901,7 @@ function paintChrome() {
   paintCmpCount();
   $('#foot').innerHTML = `<b>Better.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
-    + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a></span>`;
+    + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a></span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
 // of the same list pinned over the page was doing nothing but covering the last row. The header
@@ -2148,7 +2148,7 @@ function postView(a) {
 function docView(key, paras) {
   return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
     <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
-    ${paras.map(p => `<p>${esc(t(key + '.' + p))}</p>`).join('')}
+    ${paras.map(p => { const s = t(key + '.' + p); return s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : `<p>${esc(s)}</p>`; }).join('')}
     ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? (() => {
       // The page invites people to write; it needs somewhere for them to write TO. An address
       // starting with http is a link, anything else is an email - so swapping one for the other
@@ -2623,7 +2623,8 @@ function render(keepScroll) {
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
   else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' | Better.am'; window.scrollTo(0, 0); }
-  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']); document.title = t('privacy.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', Array.from({ length: 12 }, (_, i) => 'p' + (i + 1))); document.title = t('privacy.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/terms') { main.innerHTML = docView('terms', Array.from({ length: 9 }, (_, i) => 'p' + (i + 1))); document.title = t('terms.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/blog' || h.startsWith('/blog/')) {
     const a = h.startsWith('/blog/') && BLOG.find(b => b.id === h.slice(6));
@@ -2657,7 +2658,7 @@ function render(keepScroll) {
   painted = true;
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
+  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
   mh.hidden = !home;
   mh.innerHTML = home ? mastHero() : '';
   if (home) requestAnimationFrame(dealEdges);

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T05:02:52.880Z",
+ "generated": "2026-10-04T05:30:57.039Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -45759,55 +45759,11 @@
   "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a": [
    {
     "id": "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a",
-    "price": 114900,
-    "storage": 64,
-    "title": "iPad 10.2 Wi-Fi 64GB (2021) (Space Grey)",
-    "url": "https://mobilecentre.am/product/ipad-10.2-wi-fi-64gb-_2021_-_space-grey_/25946/",
-    "image": "https://mobilecentre.am/img/prodpic/eb0d0de9d3fe28dfb6a7Новый_проект__11_.png",
-    "inStock": true,
-    "ram": 4,
-    "color": null,
-    "shop": "mobilecentre",
-    "seen": "2026-10-03",
-    "cell": false
-   },
-   {
-    "id": "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a",
-    "price": 152000,
-    "title": "iPad 10.2 9th Generation , 64GB, Wi-Fi, Space Gray",
-    "url": "https://ibolit.mobi/product/ipad-10-2-9th-generation-64gb-wi-fi-space-gray/",
-    "storage": 64,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_169.jpg",
-    "sku": "IBL:6486",
-    "ram": 4,
-    "color": null,
-    "shop": "ibolit",
-    "seen": "2026-10-03",
-    "cell": false
-   },
-   {
-    "id": "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a",
-    "price": 154000,
-    "title": "iPad 10.2 9th Gen 64GB Wi-Fi Silver",
-    "url": "https://ibolit.mobi/product/ipad-10-2-9th-gen-64gb-wi-fi-silver/",
-    "storage": 64,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_398.jpg",
-    "sku": "IBL:6700",
-    "ram": 4,
-    "color": "Silver",
-    "shop": "ibolit",
-    "seen": "2026-10-03",
-    "cell": false
-   },
-   {
-    "id": "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a",
     "shop": "ucom",
     "title": "iPad 10.9 Wi-Fi A14 (2022) MPQA3RK/A",
     "price": 199900,
-    "storage": 64,
-    "ram": 4,
+    "storage": null,
+    "ram": null,
     "size": 10.9,
     "color": "Yellow",
     "url": "https://shop.ucom.am/en/ipad-wi-fi.html",
@@ -48572,19 +48528,6 @@
     "color": "Blue",
     "shop": "ibolit",
     "seen": "2026-10-03"
-   },
-   {
-    "id": "jbl-jr310",
-    "price": 29900,
-    "storage": null,
-    "title": "JBL Headphone JR310BT Kids Wireless On-Ear (Blue)",
-    "url": "https://mobilecentre.am/product/jbl-headphone-jr310bt-kids-wireless-on-ear-_blue_/26260/",
-    "image": "https://mobilecentre.am/img/prodpic/a5f8628d88247bcbae34Новый_проект_-_2021-11-02T154919.221.png",
-    "inStock": true,
-    "ram": null,
-    "color": "Blue",
-    "shop": "mobilecentre",
-    "seen": "2026-10-03"
    }
   ],
   "jbl-t220": [
@@ -50937,6 +50880,32 @@
     "seeded": true,
     "esim": false,
     "seen": "2026-10-03"
+   },
+   {
+    "id": "samsung-galaxy-a16",
+    "shop": "viva",
+    "title": "Samsung Galaxy A16 256GB Grey",
+    "price": 84900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Gray",
+    "url": "https://shop.viva.am/en/product/samsung-galaxy-a16-256gb-gray/",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-10-03"
+   },
+   {
+    "id": "samsung-galaxy-a16",
+    "shop": "viva",
+    "title": "Samsung Galaxy A16 256GB Black",
+    "price": 84900,
+    "storage": 256,
+    "ram": 8,
+    "color": "Blue Black",
+    "url": "https://shop.viva.am/en/product/samsung-galaxy-a16-256gb-black/",
+    "seeded": true,
+    "esim": false,
+    "seen": "2026-10-03"
    }
   ],
   "xiaomi-poco-m7-pro-5g": [
@@ -53251,6 +53220,36 @@
     "inStock": true,
     "shop": "pixel",
     "seen": "2026-10-03"
+   },
+   {
+    "id": "apple-ipad-9",
+    "price": 152000,
+    "title": "iPad 10.2 9th Generation , 64GB, Wi-Fi, Space Gray",
+    "url": "https://ibolit.mobi/product/ipad-10-2-9th-generation-64gb-wi-fi-space-gray/",
+    "storage": 64,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_169.jpg",
+    "sku": "IBL:6486",
+    "ram": 4,
+    "color": "Space Gray",
+    "shop": "ibolit",
+    "seen": "2026-10-03",
+    "cell": false
+   },
+   {
+    "id": "apple-ipad-9",
+    "price": 154000,
+    "title": "iPad 10.2 9th Gen 64GB Wi-Fi Silver",
+    "url": "https://ibolit.mobi/product/ipad-10-2-9th-gen-64gb-wi-fi-silver/",
+    "storage": 64,
+    "inStock": true,
+    "image": "https://ibolit.mobi/wp-content/uploads/2025/03/ispace_398.jpg",
+    "sku": "IBL:6700",
+    "ram": 4,
+    "color": "Silver",
+    "shop": "ibolit",
+    "seen": "2026-10-03",
+    "cell": false
    }
   ],
   "apple-ipad-mini-7": [
@@ -71515,20 +71514,6 @@
     "sku": "R579205674",
     "ram": null,
     "color": "Deep Blue",
-    "shop": "redstore",
-    "seen": "2026-10-03"
-   },
-   {
-    "id": "oneplus-nord-smart-watch",
-    "price": 109000,
-    "title": "OnePlus Nord Smart Watch 2 Radiant",
-    "url": "https://redstore.am/en/product/oneplus-nord-smart-watch-2-radiant",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/10/15/img-4155.jpg",
-    "sku": "R5792105685",
-    "ram": null,
-    "color": null,
     "shop": "redstore",
     "seen": "2026-10-03"
    }
@@ -93370,6 +93355,290 @@
     "url": "https://redstore.am/en/product/jbl-live-free-nc-blue",
     "seeded": true,
     "seen": "2026-10-03"
+   }
+  ],
+  "apple-watch-se-2": [
+   {
+    "id": "apple-watch-se-2",
+    "shop": "yerevanmobile",
+    "title": "Apple Watch SE 2 44mm",
+    "price": 94000,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://www.yerevanmobile.am/en/apple-watch-se-2-44mm.html",
+    "seeded": true
+   }
+  ],
+  "flyingvoice-sr3000-5g": [
+   {
+    "id": "flyingvoice-sr3000-5g",
+    "shop": "viva",
+    "title": "Flyingvoice SR3000-5G",
+    "price": 249900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/flyingvoice-sr3000-5g/",
+    "seeded": true
+   }
+  ],
+  "tp-link-m7000-lte-hotspot": [
+   {
+    "id": "tp-link-m7000-lte-hotspot",
+    "shop": "viva",
+    "title": "TP-Link M7000 LTE Hotspot",
+    "price": 22900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/tp-link-m7000-lte-hotspot/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-dual-zone-air-fryer-10l": [
+   {
+    "id": "xiaomi-dual-zone-air-fryer-10l",
+    "shop": "viva",
+    "title": "Xiaomi Dual Zone Air Fryer 10L Black",
+    "price": 79900,
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/en/product/xiaomi-dual-zone-air-fryer-10l-black/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-handheld-garment-steamer-mjgtj02lf": [
+   {
+    "id": "xiaomi-handheld-garment-steamer-mjgtj02lf",
+    "shop": "viva",
+    "title": "Xiaomi Handheld Garment Steamer White MJGTJ02LF",
+    "price": 15900,
+    "storage": null,
+    "ram": null,
+    "color": "White",
+    "url": "https://shop.viva.am/en/product/xiaomi-handheld-garment-steamer-white/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-mijia-smart-air-purifier-6": [
+   {
+    "id": "xiaomi-mijia-smart-air-purifier-6",
+    "shop": "viva",
+    "title": "Xiaomi Mĳia Smart Air Purifier 6 White BHR08MZEU",
+    "price": 97900,
+    "storage": null,
+    "ram": null,
+    "color": "White",
+    "url": "https://shop.viva.am/en/product/xiaomi-m-ia-smart-air-purifier-6-white/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-robot-vacuum-5": [
+   {
+    "id": "xiaomi-robot-vacuum-5",
+    "shop": "viva",
+    "title": "Xiaomi Robot Vacuum 5",
+    "price": 339900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-robot-vacuum-5/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-robot-vacuum-5-pro": [
+   {
+    "id": "xiaomi-robot-vacuum-5-pro",
+    "shop": "viva",
+    "title": "Xiaomi Robot Vacuum 5 Pro",
+    "price": 389900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-robot-vacuum-5-pro/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-robot-vacuum-s40-pro": [
+   {
+    "id": "xiaomi-robot-vacuum-s40-pro",
+    "shop": "viva",
+    "title": "Xiaomi Robot Vacuum S40 Pro",
+    "price": 139900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-robot-vacuum-s40-pro/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-robot-vacuum-x20-max": [
+   {
+    "id": "xiaomi-robot-vacuum-x20-max",
+    "shop": "viva",
+    "title": "Xiaomi Robot Vacuum X20 MAX Black",
+    "price": 329900,
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/en/product/xiaomi-robot-vacuum-x20-max-black/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-robot-vacuum-x20-pro": [
+   {
+    "id": "xiaomi-robot-vacuum-x20-pro",
+    "shop": "viva",
+    "title": "Xiaomi Robot Vacuum X20 Pro White",
+    "price": 199900,
+    "storage": null,
+    "ram": null,
+    "color": "White",
+    "url": "https://shop.viva.am/en/product/xiaomi-robot-vacuum-x20-pro-white/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-semi-automatic-espresso-machine-bhr9798eu": [
+   {
+    "id": "xiaomi-semi-automatic-espresso-machine-bhr9798eu",
+    "shop": "viva",
+    "title": "Xiaomi Semi-automatic Espresso Machine BHR9798EU",
+    "price": 47900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-semi-automatic-espresso-machine/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-smart-air-fryer-6-5l": [
+   {
+    "id": "xiaomi-smart-air-fryer-6-5l",
+    "shop": "viva",
+    "title": "Xiaomi Smart Air Fryer 6.5L Black",
+    "price": 44900,
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-air-fryer-6-5l-black/",
+    "seeded": true
+   },
+   {
+    "id": "xiaomi-smart-air-fryer-6-5l",
+    "shop": "viva",
+    "title": "Xiaomi Smart Air Fryer 6.5L White",
+    "price": 44900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-air-fryer-6-5l-black6429/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-smart-air-purifier-4-compact-bhr5860eu": [
+   {
+    "id": "xiaomi-smart-air-purifier-4-compact-bhr5860eu",
+    "shop": "viva",
+    "title": "Xiaomi Smart Air Purifier 4 Compact EU BHR5860EU",
+    "price": 41900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-air-purifier-4-compact-eu-bhr5860eu/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-smart-air-purifier-4-lite-bhr5274gl": [
+   {
+    "id": "xiaomi-smart-air-purifier-4-lite-bhr5274gl",
+    "shop": "viva",
+    "title": "Xiaomi Smart Air Purifier 4 Lite EU BHR5274GL",
+    "price": 70900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-air-purifier-4-lite-eu-bhr5274gl/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-smart-air-purifier-4-pro-bhr5056eu": [
+   {
+    "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
+    "shop": "viva",
+    "title": "Xiaomi Smart Air Purifier 4 Pro BHR5056EU",
+    "price": 120900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-air-purifier-4-pro/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu": [
+   {
+    "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
+    "shop": "viva",
+    "title": "Xiaomi Smart Double Stack Air Fryer 12L Black BHR0883EU",
+    "price": 92900,
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-double-stack-air-fryer-12l-black/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-smart-scale-s200": [
+   {
+    "id": "xiaomi-smart-scale-s200",
+    "shop": "viva",
+    "title": "Xiaomi Smart Scale S200 Grey",
+    "price": 8900,
+    "storage": null,
+    "ram": null,
+    "color": "Grey",
+    "url": "https://shop.viva.am/en/product/xiaomi-smart-scale-s200-grey/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-sound-pocket": [
+   {
+    "id": "xiaomi-sound-pocket",
+    "shop": "viva",
+    "title": "Xiaomi Sound Pocket",
+    "price": 8900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://shop.viva.am/en/product/xiaomi-sound-pocket/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-vacuum-cleaner-g20-lite": [
+   {
+    "id": "xiaomi-vacuum-cleaner-g20-lite",
+    "shop": "viva",
+    "title": "Xiaomi Vacuum Cleaner G20 Lite White",
+    "price": 43900,
+    "storage": null,
+    "ram": null,
+    "color": "White",
+    "url": "https://shop.viva.am/en/product/xiaomi-vacuum-cleaner-g20-lite-white/",
+    "seeded": true
+   }
+  ],
+  "xiaomi-vacuum-cleaner-g20-max": [
+   {
+    "id": "xiaomi-vacuum-cleaner-g20-max",
+    "shop": "viva",
+    "title": "Xiaomi Vacuum Cleaner G20 Max Black",
+    "price": 130900,
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "url": "https://shop.viva.am/en/product/xiaomi-vacuum-cleaner-g20-max-black/",
+    "seeded": true
    }
   ]
  }

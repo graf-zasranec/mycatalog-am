@@ -20,7 +20,7 @@ const { matchPhone, looksLikeAccessory, COLOR_WORDS } = await import('data:text/
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const BRANDS = [...new Set(phones.map(p => p.brand))]
   .concat(['OPPO', 'Vivo', 'Motorola', 'Nokia', 'ZTE', 'Infinix', 'Tecno', 'Fitbit', 'Whoop',
-           'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba', 'Dahua', 'Hori'])
+           'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba', 'Dahua', 'Hori', 'TP-Link', 'Flyingvoice'])
   // longest first, so "Bang & Olufsen" is not read as nothing at all
   .sort((a, b) => b.length - a.length);
 const reBrand = (b, flags) => new RegExp('(^|\\s)' + b.replace(/[+&()[\]{}.*?^$|\\]/g, '\\$&') + '(\\s|$)', flags);
@@ -84,10 +84,11 @@ const FAMILY = [
   [/\bPlayStation\b|\bPS5\b|\bXbox\b|\bNintendo Switch\b|\bSteam Deck\b|\bROG Ally\b|\bLegion Go\b/i, 'console'],
   [/\bAirPods\b|\bGalaxy Buds\b|\bFreeBuds\b|\bRedmi Buds\b|\bBuds\b|\bWF-\w|\bLiveBuds\b|\bEarbuds\b|\bMomentum True\b/i, 'headphones'],
   [/\bWH-\w|\bQuietComfort\b|\bBeoplay H\d|\bJBL (Tune|Live|Quantum)\b|\bHD \d{3}\b|\bSolo \d\b|\bStudio Pro\b|\bMomentum \d\b/i, 'headphones'],
-  [/\bHomePod\b|\bSoundLink\b|\bBeosound\b|\bPartyBox\b|\bBoombox\b|\bCharge \d\b|\bFlip \d\b|\bClip \d\b|\bXtreme \d\b|\bGo \d\b|\bStanmore\b|\bWoburn\b|\bActon\b|\bEmberton\b|\bUxbridge\b|\bMiddleton\b|\bWillen\b|\bKilburn\b|\bOnyx Studio\b|\bSonos\b|\bYandex ?Station\b/i, 'speaker'],
+  [/\bHomePod\b|\bSoundLink\b|\bBeosound\b|\bPartyBox\b|\bBoombox\b|\bCharge \d\b|\bFlip \d\b|\bClip \d\b|\bXtreme \d\b|\bGo \d\b|\bStanmore\b|\bWoburn\b|\bActon\b|\bEmberton\b|\bUxbridge\b|\bMiddleton\b|\bWillen\b|\bKilburn\b|\bOnyx Studio\b|\bSonos\b|\bYandex ?Station\b|\bSound Pocket\b/i, 'speaker'],
   [/\bForerunner\b|\bFenix\b|\bVenu\b|\bInstinct\b|\bVivoactive\b|\bCIRQA\b|\bSmart Band\b|\bMi Band\b|\bGalaxy Watch\b|\bApple Watch\b|\bWatch (SE|Ultra|Series)\b|\bWhoop\b|\bFitbit\b/i, 'watch'],
   [/\bKindle\b|\bPaperwhite\b|\bPocketBook\b|\breMarkable\b/i, 'ereader'],
-  [/\bAirwrap\b|\bSupersonic\b|\bAirStrait\b|\bAirStarit\b|\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir ?Purifier\b|\bVacuum\b|\bRobot Vacuum\b/i, 'appliance'],
+  [/\bAirwrap\b|\bSupersonic\b|\bAirStrait\b|\bAirStarit\b|\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir ?Purifier\b|\bVacuum\b|\bRobot Vacuum\b|\bAir Fryer\b|\bGarment Steamer\b|\bEspresso Machine\b|\bSmart Scale\b/i, 'appliance'],
+  [/\bRouter\b|\bHotspot\b|\bSR\d{4}-5G\b/i, 'network'],
   [/\bGeForce\b|\bRadeon RX\b|\bRTX \d{4}\b|\bArc A\d{3}\b/i, 'component'],
   // a phone family is the last thing asked, because "Redmi" and "Galaxy" also name tablets,
   // earbuds and watches, all of which are matched above before this line is reached
