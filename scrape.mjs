@@ -797,6 +797,18 @@ if (process.argv[2] === '--selftest') {
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
     // a laptop whose model name contains a speaker's. The shop says HP; the speaker is a JBL.
     [null, 'HP OmniBook Flip 7 16-AU0070WM'],
+    // VLV and Ucom spellings of the Xiaomi appliances added 2026-10-04 from Viva
+    ['xiaomi-robot-vacuum-5', 'XIAOMI Robot Vacuum 5 (BHR0834EU) Robot Vacuum Cleaners'],
+    ['xiaomi-robot-vacuum-5-pro', 'XIAOMI Robot Vacuum 5 Pro (BHR07WFEU) Robot Vacuum Cleaners'],
+    ['xiaomi-robot-vacuum-s40-pro', 'XIAOMI Robot Vacuum S40 Pro (BHR089REU) Robot Vacuum Cleaners'],
+    ['xiaomi-robot-vacuum-s40-pro', 'Xiaomi Robot Vacuum S40 Pro'],
+    ['xiaomi-smart-air-fryer-6-5l', 'XIAOMI Smart Air Fryer 6.5L White (BHR7358EU) Air Fryers'],
+    ['xiaomi-smart-air-purifier-4-compact-bhr5860eu', 'XIAOMI Smart Air Purifier 4 Compact (BHR5860EU) Air purifiers'],
+    ['xiaomi-smart-air-purifier-4-lite-bhr5274gl', 'XIAOMI Smart Air Purifier 4 Lite (BHR5274GL) Air purifiers'],
+    ['xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu', 'XIAOMI Smart Double Stack Air Fryer 12L Black (BHR0883EU) Air Fryers'],
+    ['xiaomi-smart-scale-s200', 'XIAOMI Smart Scale S200 Dark Grey (BHR9239GL) Scales'],
+    ['xiaomi-vacuum-cleaner-g20-lite', 'XIAOMI Vacuum Cleaner G20 Lite White (BHR8195EU) Wireless Vacuum Cleaners'],
+    ['xiaomi-vacuum-cleaner-g20-max', 'XIAOMI Vacuum Cleaner G20 Max (BHR8828EU) Wireless Vacuum Cleaners'],
     // other shops' spellings of products added 2026-10-03 (aliases in phones.json)
     ['honor-magicbook-x16-ultra-5-125h-w11h-5301argm', 'HONOR MagicBook X16 Ultra 5 125H 16GB 1TB Win (5301ARGM/BRG-X) Notebooks'],
     ['lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk', 'Laptop Lenovo Yoga 7 2-in-1 16ILL10 (83JT0028RK)'],
