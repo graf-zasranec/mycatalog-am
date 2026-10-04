@@ -1,0 +1,29 @@
+name: Better — uptime
+
+# Every 15 minutes: is better.am up and serving the catalogue? A failed run makes GitHub email the
+# repository owner, which is the whole alerting system - no outside monitoring account needed.
+# It checks content, not just a 200: a wrong DNS record would still answer 200 with someone
+# else's page.
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Front page, the price data and one product page answer with the catalogue
+        run: |
+          set -e
+          fail() { echo "::error::$1"; exit 1; }
+          home=$(curl -sfL --max-time 30 --retry 2 https://better.am/) || fail "https://better.am/ did not answer"
+          echo "$home" | grep -q 'site-prices.js' || fail "front page is not the catalogue"
+          curl -sfL --max-time 30 --retry 2 -o /dev/null https://better.am/data/site-prices.js || fail "price data missing"
+          curl -sfL --max-time 30 --retry 2 https://better.am/p/apple-iphone-17/ | grep -q 'Better.am' || fail "product page missing"
+          echo "better.am is up"
