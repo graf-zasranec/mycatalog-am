@@ -2626,7 +2626,7 @@ function render(keepScroll) {
     window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
   }
   else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' | Better.am'; window.scrollTo(0, 0); }
-  else if (h === '/privacy') { main.innerHTML = docView('privacy', Array.from({ length: 12 }, (_, i) => 'p' + (i + 1))); document.title = t('privacy.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p13', 'p14', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12']); document.title = t('privacy.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/terms') { main.innerHTML = docView('terms', Array.from({ length: 9 }, (_, i) => 'p' + (i + 1))); document.title = t('terms.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/blog' || h.startsWith('/blog/')) {

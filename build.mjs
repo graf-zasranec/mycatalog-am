@@ -626,9 +626,10 @@ const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href=
 const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? '; script-src ' + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''}; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="${FAVICON}">
 <title>${esc(title)}</title>
+${COUNTER.tag}
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
 ${path != null ? alts(path) : ''}

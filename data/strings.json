@@ -631,15 +631,27 @@
   },
   {
     "key": "privacy.p6",
-    "hy": "Կայքը տեղադրված է GitHub Pages-ում։ Ինչպես ցանկացած վեբ հոսթինգ, GitHub-ը էջը բացելիս ստանում է ձեր IP հասցեն և դիտարկիչի տվյալները և կարող է դրանք պահել իր սերվերային գրանցամատյաններում՝ անվտանգության նպատակով (տե՛ս GitHub-ի գաղտնիության քաղաքականությունը)։ Բոլոր ֆայլերը՝ էջերը, լուսանկարները և տառատեսակները, բեռնվում են միայն այս կայքից. էջը չի դիմում որևէ այլ ծառայության և չի օգտագործում վերլուծական կամ գովազդային հետագծիչներ։",
-    "ru": "Сайт размещён на GitHub Pages. Как любой хостинг, GitHub при загрузке страницы получает ваш IP-адрес и данные браузера и может хранить их в серверных журналах в целях безопасности (см. политику конфиденциальности GitHub). Все файлы — страницы, фотографии и шрифты — загружаются только с этого сайта: страница не обращается к другим сервисам и не использует аналитику или рекламные трекеры.",
-    "en": "The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address and browser details when a page loads and may keep them in its server logs for security (see GitHub’s privacy statement). Every file — pages, photos and fonts — comes from this one site: the page contacts no other service and uses no analytics or advertising trackers."
+    "hy": "Կայքը տեղադրված է GitHub Pages-ում։ Ինչպես ցանկացած վեբ հոսթինգ, GitHub-ը էջը բացելիս ստանում է ձեր IP հասցեն և դիտարկիչի տվյալները և կարող է դրանք պահել իր սերվերային գրանցամատյաններում՝ անվտանգության նպատակով (տե՛ս GitHub-ի գաղտնիության քաղաքականությունը)։ Էջերը, լուսանկարները և տառատեսակները բեռնվում են այս կայքից. գովազդային հետագծիչներ չկան։",
+    "ru": "Сайт размещён на GitHub Pages. Как любой хостинг, GitHub при загрузке страницы получает ваш IP-адрес и данные браузера и может хранить их в серверных журналах в целях безопасности (см. политику конфиденциальности GitHub). Страницы, фотографии и шрифты загружаются с этого сайта; рекламных трекеров нет.",
+    "en": "The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address and browser details when a page loads and may keep them in its server logs for security (see GitHub’s privacy statement). Pages, photos and fonts all come from this site; there are no advertising trackers."
   },
   {
     "key": "nav.terms",
     "hy": "Օգտագործման պայմաններ",
     "ru": "Условия использования",
     "en": "Terms"
+  },
+  {
+    "key": "privacy.p13",
+    "hy": "## Այցելությունների վիճակագրություն",
+    "ru": "## Статистика посещений",
+    "en": "## Visitor statistics"
+  },
+  {
+    "key": "privacy.p14",
+    "hy": "Այցելությունները հաշվում ենք GoatCounter-ով՝ գաղտնիությունը հարգող ծառայությամբ, որը cookie-ներ չի օգտագործում և անձնական տվյալներ չի պահում։ Յուրաքանչյուր դիտման համար այն գրանցում է էջի հասցեն, թե որ կայքից եք եկել, ձեր դիտարկիչը, օպերացիոն համակարգը, էկրանի չափը և երկիրը։ Ձեր IP հասցեն օգտագործվում է միայն երկիրը որոշելու և մեկ օրվա ընթացքում կրկնվող դիտումները տարբերելու համար և չի պահվում։ Այս թվերն օգտագործում ենք միայն հասկանալու համար, թե որ էջերն ու ապրանքներն են օգտակար։",
+    "ru": "Посещения мы считаем с помощью GoatCounter — сервиса, уважающего конфиденциальность: он не использует cookie и не хранит персональные данные. Для каждого просмотра он записывает адрес страницы, сайт, с которого вы пришли, браузер, операционную систему, размер экрана и страну. Ваш IP-адрес используется только для определения страны и чтобы отличать повторные просмотры в течение одного дня, и не сохраняется. Эти цифры нужны нам только для того, чтобы понимать, какие страницы и товары полезны.",
+    "en": "We count visits with GoatCounter, a privacy-friendly service that uses no cookies and stores no personal data. For each page view it records the page address, the site you came from, your browser, operating system, screen size and country. Your IP address is used only to estimate the country and to tell repeat views apart within one day, and is not stored. We use these figures only to see which pages and products are useful."
   },
   {
     "key": "privacy.p7",
