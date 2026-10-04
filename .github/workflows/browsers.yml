@@ -1,0 +1,37 @@
+name: Better — browser check
+
+# Firefox cannot run on the owner's PC (Windows blocks Playwright's build of it), so the three
+# engines are checked here instead: Chromium, Firefox and WebKit (Safari's engine), every route
+# at nine widths from 2560 to 280px. Read-only: it never commits anything.
+
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', '_app.js', '_shell.html', 'build.mjs', 'fonts/**', 'tools/browser-check.mjs']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: browsers
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4
+        with:
+          node-version: '22'
+      - name: Install Playwright and its three browsers
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0
+          npx playwright install --with-deps chromium firefox webkit
+      - name: Check every route in Chromium, Firefox and WebKit
+        env:
+          PW: ${{ github.workspace }}/node_modules/playwright
+          PW_ENGINES: chromium,firefox,webkit
+        run: node tools/browser-check.mjs

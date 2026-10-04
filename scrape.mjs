@@ -797,6 +797,11 @@ if (process.argv[2] === '--selftest') {
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
     // a laptop whose model name contains a speaker's. The shop says HP; the speaker is a JBL.
     [null, 'HP OmniBook Flip 7 16-AU0070WM'],
+    // other shops' spellings of products added 2026-10-03 (aliases in phones.json)
+    ['honor-magicbook-x16-ultra-5-125h-w11h-5301argm', 'HONOR MagicBook X16 Ultra 5 125H 16GB 1TB Win (5301ARGM/BRG-X) Notebooks'],
+    ['lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk', 'Laptop Lenovo Yoga 7 2-in-1 16ILL10 (83JT0028RK)'],
+    ['jbl-partybox-330', 'JBL PartyBox Stage 330 BLK (AM) Speakers'],
+    ['bose-noise-cancelling-700', 'Bose Noise Cancelling Headphones 700'],
     // REDstore's url for the Tab S8+ says "tab-s8"; only its title says plus. crawlLd reads
     // both, and this is the pair that makes the difference visible.
     ['samsung-galaxy-tab-s8', 'samsung-galaxy-tab-s8-8gb128gb-wifi-x800-graphite'],
@@ -2321,6 +2326,9 @@ try {
     // just confirmed - the crawl is the only thing that ever dated an offer, and these are the
     // rows no crawl can reach. Blank still means unverified, which is the honest default.
     .map(line => { const [shop, title, cap, color, url, price, ram, check, seen] = line.split(','); return { shop, title, cap, color, url, price, ram, check, seen }; });
+  // hand rows are not a crawl: their misses go to data/hand-unmatched.txt, not under whichever
+  // shop the crawl read last (that filed Zigzag's titles under Vega, iSpace, Telecom...)
+  CURSHOP = null;
   const shared = new Map(), dropped = [];
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
   const rows = raw

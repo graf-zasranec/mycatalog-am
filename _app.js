@@ -3049,5 +3049,6 @@ window.addEventListener('hashchange', e => {
   } else render(false);
 });
 let vtFrom = null;
-document.addEventListener('click', e => { const c = e.target.closest && e.target.closest('.pcard'); vtFrom = c ? c.querySelector('.pimg') : null; }, true);
+// only a click that opens the product arms the morph - not the card's compare button
+document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('.pcard a[href^="#/p/"]'); vtFrom = a ? a.closest('.pcard').querySelector('.pimg') : null; }, true);
 render();

@@ -246,7 +246,7 @@ button,input,select,textarea{font:inherit;color:inherit}
   vertical-align:middle;white-space:nowrap;text-decoration:none}
 /* ^ an older year is grey; only the current year is coloured (green, below). Red is kept for
    buttons, links and price differences (owner, 2026-09-26). */
-.ny.cur{color:var(--good);background:color-mix(in srgb,var(--good) 14%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--good) 30%,transparent)}
+.ny.cur{color:var(--good);background:var(--surface2);background:color-mix(in srgb,var(--good) 14%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--good) 30%,transparent)}
 .ny.sz{color:var(--text);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--line2)}
 /* one click selects the whole name, and the year badge never rides along into a paste (owner, 2026-09-27) */
 .pname .pn{user-select:all;-webkit-user-select:all}
@@ -1009,6 +1009,8 @@ a.store:hover .nm{color:var(--brand)}
 .store .nm em{font-style:normal;font-weight:600;font-size:11.5px;color:var(--muted);background:var(--surface2);
   border-radius:6px;padding:2px 6px;margin-left:6px}
 .pprice s{display:block;font-family:var(--mono);font-size:12px;font-weight:400;color:var(--muted);letter-spacing:.07em;text-decoration:none;text-transform:uppercase}
+/* a long shop name ("NOTEBOOK CENTRE") under the price must shrink, not push the card past a 344px screen */
+.pfoot .pprice{min-width:0}.pprice s{overflow:hidden;text-overflow:ellipsis}
 
 
 /* every product thumbnail is presented in a fixed box and letterboxed the same way,

@@ -411,11 +411,14 @@ function build({ inline, standalone }) {
   const main = {}, thumb = {};
   for (const p of [...phones, ...(COMING.items || [])]) {
     const cut = `${CUT}/${p.id}__main.webp`;
-    if (!fs.existsSync(cut)) { console.warn('  ! missing image for', p.id); continue; }
     // The card shows what the product page opens on: the first listed colour that has its own
     // photo. A main shot in a finish nobody here sells (a pink Band 10 over Black/Silver) made the
     // card promise a colour the page did not have (owner, 2026-10-02).
-    const first = (p.colors || []).map(c => (colors[p.id] || {})[c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')]).find(Boolean);
+    // A product with colour photos and no __main used to be skipped here, so every IMG() caller
+    // (compare-with cards, the hero) showed the empty placeholder for 95 products.
+    const first = (p.colors || []).map(c => (colors[p.id] || {})[c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')]).find(Boolean)
+      || Object.values(colors[p.id] || {})[0];
+    if (!first && !fs.existsSync(cut)) { console.warn('  ! missing image for', p.id); continue; }
     main[p.id] = first || at(cut);
     // The embedded build carries every photo as a data URI. Inlining a second copy of all 198
     // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
