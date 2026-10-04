@@ -20,7 +20,7 @@ const DELAY = 700;
 const VIVA_DELAY = 4000;
 // Viva's firewall refuses the BetterBot name. Viva gave the owner permission on 2026-10-03, so its
 // pages are asked under this name instead - still saying who we are, just not the word it filters.
-const VIVA_UA = 'Better.am price check (+https://graf-zasranec.github.io/mycatalog-am/)';
+const VIVA_UA = 'Better.am price check (+https://better.am/)';
 const dry = process.argv.includes('--dry');
 // --drop-gone (refresh.cmd): a row whose page is DELETED - 404/410, or a shop's own not-found page -
 // is removed instead of reported. A sold-out page is not deleted and is still left for a person.

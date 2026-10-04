@@ -2106,7 +2106,7 @@ const SHOPS = {
   viva: {
     name: 'Viva', site: 'https://shop.viva.am', note: 'mobile operator shop',
     async run() {
-      const UA_VIVA = 'Better.am price check (+https://graf-zasranec.github.io/mycatalog-am/)';
+      const UA_VIVA = 'Better.am price check (+https://better.am/)';
       const CATS = ['smartphones', 'tablets', 'notebook', 'routers', 'smart-things', 'accessories/watches',
         'accessories/-/headphones', 'accessories/-/wireless_headphones', 'accessories/-/wireless-acoustics'];
       const out = [], seen = new Set();

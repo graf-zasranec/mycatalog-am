@@ -162,7 +162,7 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 // The photo backlog, published. Every build writes what still needs a picture to a file that
 // goes live with the site, so whoever is finding images can read the current list over HTTP
 // instead of being handed a stale copy:
-//     https://graf-zasranec.github.io/mycatalog-am/data/photos-needed.json
+//     https://better.am/data/photos-needed.json
 //
 // Two different jobs, and they are not interchangeable. MISSING is a grey box on the page.
 // TOO SMALL needs a LARGER ORIGINAL and never an enlargement - a 545px picture stretched to 600
@@ -279,7 +279,7 @@ function cutMap(inline, small) {
 // emitting a sitemap of #/p/... fragments, because fragments are not indexed as separate pages.
 // What does carry weight on a single page: a real title and description, the social card, a
 // canonical, and an ItemList that names the products and their cheapest Armenian price.
-const SITE = 'https://graf-zasranec.github.io/mycatalog-am/';
+const SITE = 'https://better.am/';
 const pricesOf = p => ((PRICES.offers && PRICES.offers[p.id]) || [])
   .map(o => o.price).filter(Number.isFinite);
 const bestOf = p => { const l = pricesOf(p); return l.length ? Math.min(...l) : p.priceAmd; };
