@@ -4,7 +4,7 @@
  "note": "too small needs a larger original, not an enlargement",
  "total": 1469,
  "missing": 8,
- "tooSmall": 2,
+ "tooSmall": 3,
  "products": [
   {
    "id": "apple-iphone-13",
@@ -23,6 +23,16 @@
    "category": "appliance",
    "shops": 2,
    "query": "Xiaomi Smart Air Fryer 6.5L",
+   "what": "missing",
+   "width": 0
+  },
+  {
+   "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
+   "brand": "Xiaomi",
+   "name": "Smart Double Stack Air Fryer 12L BHR0883EU",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Xiaomi Smart Double Stack Air Fryer 12L BHR0883EU",
    "what": "missing",
    "width": 0
   },
@@ -77,14 +87,14 @@
    "width": 0
   },
   {
-   "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
-   "brand": "Xiaomi",
-   "name": "Smart Double Stack Air Fryer 12L BHR0883EU",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Xiaomi Smart Double Stack Air Fryer 12L BHR0883EU",
-   "what": "missing",
-   "width": 0
+   "id": "samsung-galaxy-a35",
+   "brand": "Samsung",
+   "name": "Galaxy A35",
+   "category": "phone",
+   "shops": 2,
+   "query": "Samsung Galaxy A35",
+   "what": "too small",
+   "width": 467
   },
   {
    "id": "huawei-matebook-fold-ultimate-18",

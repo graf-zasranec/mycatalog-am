@@ -2709,12 +2709,15 @@ if (recap) console.log(`${recap} offer(s) given the capacity their title states`
 let remem = 0;
 for (const [id, list] of Object.entries(offers)) {
   const c = (phoneById[id] || {}).category;
-  if (c !== 'laptop' && c !== 'desktop') continue;
+  // phones and tablets too: Ucom titles name only the memory ("Redmi 15 6GB"), and no phone or
+  // tablet here ships a disk under 32 GB (owner, 2026-10-04)
+  const pc = c === 'laptop' || c === 'desktop';
+  if (!pc && c !== 'phone' && c !== 'tablet') continue;
   for (const o of list) {
-    if (o.storage == null || o.storage >= 64 || !o.title) continue;
+    if (o.storage == null || o.storage >= (pc ? 64 : 32) || !o.title) continue;
     // "SSD512" and "SSD 1TB" state a capacity with no GB after the number, which capacitiesOf
     // cannot see, and that is exactly how these titles are written.
-    const ssd = [...o.title.matchAll(/SSD\s*(\d{3,4})\b/gi)].map(m => +m[1]);
+    const ssd = [...o.title.matchAll(/(?:SSD\s*|\dGB\s*\/\s*)(\d{3,4})(?!\d)/gi)].map(m => +m[1]);   // "SSD512", "12GB/512Cobalt"
     const big = [...capacitiesOf(o.title), ...ssd].filter(v => v >= 64);
     if (big.length) {
       if (o.ram == null) o.ram = o.storage;
@@ -2730,7 +2733,7 @@ for (const [id, list] of Object.entries(offers)) {
     remem++;
   }
 }
-if (remem) console.log(`${remem} laptop offer(s) had memory in the capacity column`);
+if (remem) console.log(`${remem} offer(s) had memory in the capacity column`);
 
 // Which SIM you get is normally not a choice a shop prices - but for the iPhone 17 and 18 Pro
 // families it is: REDstore sells the 18 Pro 256GB at 799,000 as dual-eSIM and 879,000 with a
