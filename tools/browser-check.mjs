@@ -6,7 +6,7 @@
 import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const pw = require(process.env.PW || 'C:/Users/hastv/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules/playwright');
+const pw = require(process.env.PW || 'playwright');
 
 const PORT = 8765, BASE = `http://127.0.0.1:${PORT}/`;
 const srv = spawn(process.execPath, ['serve.mjs', String(PORT)], { stdio: 'ignore' });

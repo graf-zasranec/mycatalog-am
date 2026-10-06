@@ -7,7 +7,8 @@ name: Better — browser check
 on:
   push:
     branches: [main]
-    paths: ['index.html', '_app.js', '_shell.html', 'build.mjs', 'fonts/**', 'tools/browser-check.mjs']
+    paths: ['index.html', '_app.js', '_shell.html', 'build.mjs', 'fonts/**', 'data/**', 'images/**', 'tools/**', 'package*.json', '.github/workflows/browsers.yml']
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -28,7 +29,7 @@ jobs:
           node-version: '22'
       - name: Install Playwright and its three browsers
         run: |
-          npm install --no-save --no-package-lock playwright@1.63.0
+          npm ci
           npx playwright install --with-deps chromium firefox webkit
       - name: Check every route in Chromium, Firefox and WebKit
         env:

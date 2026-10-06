@@ -6,7 +6,10 @@
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import path from 'node:path';
 import { pairs } from './tools/pairs.mjs';
+import { attachOfferConfigs } from './tools/offer-configs.mjs';
+import { goatScript } from './tools/analytics.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const STR = { hy: {}, ru: {}, en: {} };
@@ -26,6 +29,7 @@ const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.js
 // articles, newest first; data/blog.json holds each in hy, ru and en
 const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json')) : []).sort((a, b) => b.date.localeCompare(a.date));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
+attachOfferConfigs(phones, PRICES.offers || {});
 // Popularity nobody set (unsure) was a flat default of 40 on 1,100 products, so "popular" sorted
 // them in file order. How many shops stock a product is a real, nightly-updated signal: 1 shop -> 20,
 // 8+ -> 60. A number somebody set by hand is never touched.
@@ -40,7 +44,7 @@ for (const p of phones) if ((p.unsure || []).includes('popularity'))
 // inStock, seeded and simFromPage are the crawler's bookkeeping, and an empty field reads the same
 // as a missing one everywhere the app looks: ~100 KB of the page for nothing.
 for (const list of Object.values(PRICES.offers || {})) for (const o of list) {
-  delete o.title; delete o.sku; delete o.image; delete o.id; delete o.inStock; delete o.seeded; delete o.simFromPage;
+  delete o.title; delete o.sku; delete o.image; delete o.id; delete o.seeded; delete o.simFromPage;
   for (const k of Object.keys(o)) if (o[k] == null || o[k] === '') delete o[k];
 }
 
@@ -75,7 +79,6 @@ DROPS.sort((a, b) => b.pop - a.pop);
 for (const p of phones) {
   if (p.variantUnit === 'mm') continue;                    // watch case sizes are not capacities
   const seen = new Set((p.variants || []).map(v => `${v.ram ?? ''}|${v.storage ?? ''}`));
-  const base = (p.variants || [])[0] || {};
   const add = [];
   for (const o of (PRICES.offers && PRICES.offers[p.id]) || []) {
     // A shop typo is not a configuration, and neither is one number sitting in two fields: viva
@@ -85,11 +88,14 @@ for (const p of phones) {
     // that has wandered, not a disk.
     if (!(o.storage >= 32 && o.storage <= 8192)) continue;
     if (o.ram != null && o.storage === o.ram) continue;
-    const ram = o.ram ?? base.ram ?? null;
+    const compatible = (p.variants || []).filter(v => v.storage === o.storage && (o.size == null || v.size == null || v.size === o.size));
+    const knownRAM = [...new Set(compatible.map(v => v.ram).filter(v => v != null))];
+    const ram = o.ram ?? (knownRAM.length === 1 ? knownRAM[0] : null);
+    if (ram == null && (p.variants || []).some(v => v.ram != null)) continue;
     const k = `${ram ?? ''}|${o.storage}`;
     if (seen.has(k)) continue;
     seen.add(k);
-    add.push({ ram, storage: o.storage, priceAmd: o.price });
+    add.push({ ram, storage: o.storage, ...(o.size != null ? { size: o.size } : {}), priceAmd: o.price });
   }
   if (add.length) {
     p.variants = [...(p.variants || []), ...add]
@@ -206,6 +212,8 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 const colourFloor = () => 600;
 
 const DUPES = fs.existsSync('data/photo-dupes.json') ? JSON.parse(rd('data/photo-dupes.json')) : {};
+const COLOR_ALIASES = JSON.parse(rd('data/color-aliases.json'));
+const colourSlug = c => String(c).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 function cutMap(inline, small) {
   const m = {};
   for (const f of cutFiles) {
@@ -214,7 +222,8 @@ function cutMap(inline, small) {
     // 600px is the catalogue's floor for any photo. This used to be a fraction of the main
     // shot's width, which punished the good main shots: the Fold 8's 719px colours were thrown
     // out against its 1200px main while the Ultra's 937px ones squeaked past the same ratio.
-    if (rest !== 'main' && cutW[f] < colourFloor(id)) continue;
+    // A verified lower-resolution colour photo still answers a colour selection.
+    // Never substitute another finish solely because its image is larger.
     // colours whose photo is another colour's photo (tools/photo-dupes.py): a dot for them would
     // show the wrong colour, so they have no colour photo until a real one is supplied
     if (rest !== 'main' && (DUPES[id] || []).includes(rest)) continue;
@@ -222,8 +231,19 @@ function cutMap(inline, small) {
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
       : `${CUT}/${f}`;
   }
+  for (const [id, aliases] of Object.entries(COLOR_ALIASES)) {
+    for (const from of Object.keys(aliases)) {
+      let to = from; const visited = new Set();
+      while (aliases[to] && !visited.has(to)) { visited.add(to); to = aliases[to]; }
+      const old = colourSlug(from), canonical = colourSlug(to);
+      if (m[id]?.[old] && !m[id][canonical]) m[id][canonical] = m[id][old];
+    }
+  }
   return m;
 }
+const productImages = cutMap(false);
+const productImage = p => (p.colors || []).map(c => productImages[p.id]?.[colourSlug(c)]).find(Boolean)
+  || productImages[p.id]?.main || Object.values(productImages[p.id] || {})[0] || null;
 
 // The stylesheet must balance. One brace left open by a merge put every rule after it inside
 // "@media (max-width:760px)", and the whole desktop site shipped unstyled; one stray "}" makes a
@@ -288,19 +308,22 @@ const bestOf = p => { const l = pricesOf(p); return l.length ? Math.min(...l) : 
 // earns a price range in a search result rather than one bare number.
 const offerOf = p => {
   const l = pricesOf(p);
-  if (l.length < 2) {
-    return { '@type': 'Offer', priceCurrency: 'AMD', price: bestOf(p), availability: 'https://schema.org/InStock' };
+  if (!l.length) return undefined;
+  if (l.length === 1) {
+    const o = PRICES.offers[p.id].find(o => Number.isFinite(o.price));
+    return { '@type': 'Offer', priceCurrency: 'AMD', price: l[0],
+      ...(o.inStock === true ? { availability: 'https://schema.org/InStock' } : {}),
+      ...(o.url && /^https?:\/\//.test(o.url) ? { url: o.url } : {}) };
   }
   return {
     '@type': 'AggregateOffer', priceCurrency: 'AMD',
     lowPrice: Math.min(...l), highPrice: Math.max(...l),
     offerCount: new Set(((PRICES.offers && PRICES.offers[p.id]) || []).map(o => o.shop)).size,
-    availability: 'https://schema.org/InStock'
   };
 };
 const SEO = {
   url: SITE,
-  img: 'images/cut/' + (phones.find(p => fs.existsSync(`${CUT}/${p.id}__main.webp`)) || phones[0]).id + '__main.webp',
+  img: 'images/social/better-am.jpg',
   title: `Better.am: ${phones.length} սարքի գներ Հայաստանի խանութներում`,
   desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
       + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
@@ -310,7 +333,7 @@ const SEO = {
     name: 'Better.am',
     // the 50 most popular: every product now has its own page, which is where a crawler finds it
     numberOfItems: Math.min(50, phones.length),
-    itemListElement: phones.slice().sort((a, b) => (b.popularity || 0) - (a.popularity || 0)).slice(0, 50).map((p, i) => ({
+    itemListElement: phones.filter(p => pricesOf(p).length && productImage(p)).sort((a, b) => (b.popularity || 0) - (a.popularity || 0)).slice(0, 50).map((p, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       item: {
@@ -318,6 +341,7 @@ const SEO = {
         name: (p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name),
         brand: { '@type': 'Brand', name: p.brand },
         category: p.category || 'phone',
+        ...(productImage(p) ? { image: SITE + productImage(p) } : {}),
         url: SITE + 'p/' + p.id + '/',
         offers: offerOf(p)
       }
@@ -336,10 +360,11 @@ const COUNTER = !AN ? { tag: '', script: [], connect: [], img: [] }
       tag: `<script defer src="${AN.host || 'https://cloud.umami.is'}/script.js" data-website-id="${AN.id}"><\/script>`,
       script: [AN.host || 'https://cloud.umami.is'], connect: [AN.host || 'https://cloud.umami.is'], img: [] }
   : AN.provider === 'goatcounter' ? {
-      tag: `<script data-goatcounter="https://${AN.id}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"><\/script>`,
+      tag: `<script defer src="/data/site-analytics.js"><\/script>`,
       script: ['https://gc.zgo.at'], connect: [`https://${AN.id}.goatcounter.com`], img: [`https://${AN.id}.goatcounter.com`] }
   : (() => { throw new Error('data/analytics.json: unknown provider ' + AN.provider); })();
 if (AN) console.log(`visitor counter: ${AN.provider}`);
+if (AN?.provider === 'goatcounter') fs.writeFileSync('data/site-analytics.js', goatScript(AN.id));
 
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
@@ -378,7 +403,11 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="twitter:title" content="${SEO.title}">
 <meta name="twitter:description" content="${SEO.desc}">
 <meta name="twitter:image" content="${SEO.url}${SEO.img}">
-<script type="application/ld+json">${JSON.stringify(SEO.ld).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
+<script type="application/ld+json">${JSON.stringify([homeListLD('hy'),
+  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '#website', name: 'Better.am', alternateName: 'better.am', url: SITE, inLanguage: ['hy', 'ru', 'en'] },
+  { '@context': 'https://schema.org', '@type': 'Organization', '@id': SITE + '#organization', name: 'Better.am', url: SITE, logo: SITE + 'images/favicon.svg' }
+]).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
+${alts('')}
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>${THEME_JS}<\/script>
 ${COUNTER.tag}
@@ -427,7 +456,7 @@ function build({ inline, standalone }) {
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
-  const shell = seoTitle(rd('_shell.html'));
+  const shell = seoTitle(rd('_shell.html')).replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1">${homeContent('hy')}</main>`);
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
   // The verdict sentences and the price history are read on a PRODUCT page and nowhere else,
   // and together they are 531 KB of the 3.26 MB this file makes a browser parse before it can
@@ -514,6 +543,14 @@ Allow: /
 Sitemap: ${SITE}sitemap.xml
 `);
 const today = new Date().toISOString().slice(0, 10);
+const previousPages = fs.existsSync('data/page-manifest.json') ? JSON.parse(rd('data/page-manifest.json')) : {};
+const generatedPages = {};
+function writePage(file, html) {
+  const key = file.replaceAll('\\', '/');
+  const hash = crypto.createHash('sha256').update(html).digest('hex');
+  generatedPages[key] = { hash, modified: previousPages[key]?.hash === hash ? previousPages[key].modified : today };
+  fs.writeFileSync(file, html);
+}
 // One real page per product, and one per section. A #/p/... link says nothing to a crawler or to
 // Telegram - the fragment never reaches a server - and these used to be a meta refresh into the
 // app, which a search engine reads as "this url is the front page". Now each is a complete page:
@@ -542,6 +579,11 @@ const CATS = Object.fromEntries([...rd('_app.js').matchAll(/cats: \{([^}]*)\}/g)
   [LANGS[i], Object.fromEntries([...m[1].matchAll(/(\w+): '([^']*)'/g)].map(x => [x[1], x[2]]))]));
 const catOf = p => p.category === 'earbuds' ? 'headphones' : (p.category || 'phone');
 const catLabel = (c, l = 'hy') => (CATS[l] || {})[c] || c;
+const homeContent = lang => {
+  const pre = PRE[lang], title = { hy: 'Սարքերի գների համեմատություն Հայաստանում', ru: 'Сравнение цен на электронику в Армении', en: 'Compare electronics prices in Armenia' }[lang];
+  const method = { hy: 'Better.am-ը խանութ չէ։ Համեմատում ենք խանութների հրապարակած գները՝ նույն RAM-ի, հիշողության և այլ տարբերակների համար։ Գինը, առկայությունը, երաշխիքն ու վերադարձի պայմանները վերջնականապես ստուգեք խանութում։ Չճշտված բնութագրերը նշվում են որպես անորոշ։', ru: 'Better.am сравнивает опубликованные цены магазинов для одинаковых конфигураций RAM, накопителя и других параметров. Мы не продаём товары. Окончательную цену, наличие, гарантию и возврат уточняйте у магазина. Неподтверждённые характеристики отмечены.', en: 'Better.am compares shops’ published prices for matching RAM, storage and other configurations. We do not sell products. Confirm the final price, availability, warranty and returns with the shop. Unconfirmed specifications are marked.' }[lang];
+  return `<div class="shell"><h1>${esc(title)}</h1><p>${esc(method)}</p><nav aria-label="Categories">${cats.map(c => `<a href="${pre}c/${c}/">${esc(catLabel(c, lang))}</a>`).join(' · ')}</nav><ul>${phones.slice().sort((a, b) => b.popularity - a.popularity).slice(0, 50).map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></li>`).join('')}</ul><p><a href="${pre}b/">${esc(L[lang].blog)}</a></p></div>`;
+};
 // Armenian plural is the bare noun after any number, so one form is correct for all of them.
 const ruShops = n => n % 10 === 1 && n % 100 !== 11 ? 'магазине' : 'магазинах';
 const L = {
@@ -580,6 +622,10 @@ const L = {
     blog: 'Blog', bdesc: 'Articles on prices, comparing and choosing tech.', read: 'Read on Better.am', sources: 'Sources: ' },
 };
 const DESC = (p, l = 'hy') => L[l].desc(amd(bestOf(p)), shopsOf(p));
+const homeListLD = lang => ({ ...SEO.ld, itemListElement: SEO.ld.itemListElement.map(entry => {
+  const p = phones.find(p => entry.item.url === SITE + 'p/' + p.id + '/');
+  return { ...entry, item: { ...entry.item, ...(p ? { description: DESC(p, lang) } : {}) } };
+}) });
 // lowest price of the last 30 days, from the history the nightly crawl keeps
 const low30 = p => {
   const pts = (HISTORY.points || {})[p.id] || [];
@@ -595,13 +641,20 @@ const movedOn = p => {
 };
 // one row per shop and capacity, its cheapest - five colours of one phone at one price are one
 // offer to a reader, and colour names would be English on an Armenian page
-const rows = offs => { const seen = new Set(); return offs.filter(o => { const k = o.shop + '|' + (o.storage || ''); return !seen.has(k) && seen.add(k); }); };
+const rows = offs => { const seen = new Set(); return offs.filter(o => {
+  const k = [o.shop, o.cpu, o.storage, o.ram, o.size, o.band, o.esim, o.cell].join('|');
+  return !seen.has(k) && seen.add(k);
+}); };
+const configLabel = (p, o, t) => [o.cpu || '', o.ram != null ? o.ram + ' ' + t.gb + ' RAM' : '',
+  o.storage && p.variantUnit !== 'mm' ? (o.storage >= 1024 ? o.storage / 1024 + ' ' + t.tb : o.storage + ' ' + t.gb) : '',
+  o.size ? o.size + '″' : '', o.band || '', o.cell === true ? 'Wi-Fi + Cellular' : '',
+  o.esim === true ? 'eSIM' : o.esim === false ? 'Nano-SIM' : ''].filter(Boolean).join(' · ') || '—';
 const specRows = (p, l) => {
   const d = p.display || {}, c = p.chipset || {}, b = p.battery || {}, w = (p.body || {}).weight, t = L[l];
   return [
     [t.sk[0], [d.size && `${d.size}″`, d.resolution, d.refresh && `${d.refresh} ${t.hz}`].filter(Boolean).join(', ')],
     [t.sk[1], c.name],
-    [t.sk[2], b.capacity && `${b.capacity} ${t.mah}`],
+    [t.sk[2], b.capacity && `${b.capacity} ${p.category === 'laptop' ? 'Wh' : t.mah}`],
     [t.sk[3], w && `${w} ${t.g}`],
     [t.sk[4], p.released],
   ].filter(([, v]) => v);
@@ -626,7 +679,7 @@ const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href=
 const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? '; script-src ' + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''}; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''}; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="${FAVICON}">
 <title>${esc(title)}</title>
 ${COUNTER.tag}
@@ -656,17 +709,16 @@ for (const lang of LANGS) {
   const R = pre ? '../../../' : '../../';
   for (const p of phones) {
     const card = `images/social/${p.id}.jpg`;
-    const img = SITE + (fs.existsSync(card) ? card : SEO.img);
+    const hero = productImage(p);
+    const img = SITE + (fs.existsSync(card) ? card : hero || SEO.img);
     const path = `p/${p.id}/`, url = home + path, cat = catOf(p), catUrl = `${home}c/${cat}/`;
     const offs = offersOf(p), lo = offs.length ? offs[0].price : null, hi = offs.length ? offs[offs.length - 1].price : null;
     const low = low30(p), seen = offs.map(o => o.seen).filter(Boolean).sort().pop();
     // the same photo the app shows on the card and opens the page on: the first listed colour's own
-    const firstCol = (p.colors || []).map(c => `${CUT}/${p.id}__${c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.webp`).find(f => fs.existsSync(f));
-    const hero = firstCol || (fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `${CUT}/${p.id}__main.webp` : null);
     const n = nameOf(p), sr = specRows(p, lang);
     const ld = [
       { '@context': 'https://schema.org', '@type': 'Product', name: n, brand: { '@type': 'Brand', name: p.brand },
-        category: cat, image: img, url, offers: offerOf(p) },
+        category: cat, ...(hero ? { image: SITE + hero } : {}), description: DESC(p, lang), url, offers: offerOf(p) },
       crumbs([['Better.am', SITE + app], [catLabel(cat, lang), catUrl], [n, url]]),
     ];
     const page = HEAD({ title: t.title(n), desc: DESC(p, lang), url, img, ld, lang, path }) + `
@@ -679,7 +731,7 @@ for (const lang of LANGS) {
 ${hero ? `<img class="shot" src="${R}${hero}" alt="${esc(n)}" width="360" height="360">` : ''}
 ${offs.length ? `<h2>${t.prices}</h2>
 <div class="tw"><table><thead><tr><th>${t.th[0]}</th><th>${t.th[1]}</th><th class="n">${t.th[2]}</th></tr></thead><tbody>
-${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${o.storage ? (o.storage >= 1024 ? o.storage / 1024 + ' ' + t.tb : o.storage + ' ' + t.gb) : '—'}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
+${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${esc(configLabel(p, o, t))}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
 </tbody></table></div>` : ''}
 ${sr.length ? `<h2>${t.specs}</h2>
 <dl>${sr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
@@ -687,7 +739,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 </main></body></html>
 `;
     fs.mkdirSync(pre + path, { recursive: true });
-    fs.writeFileSync(`${pre}${path}index.html`, page);
+    writePage(`${pre}${path}index.html`, page);
     sitemapRows.push([url, movedOn(p) || today, 0.7]);
     shared++;
   }
@@ -711,7 +763,7 @@ ${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}
 </main></body></html>
 `;
     fs.mkdirSync(pre + path, { recursive: true });
-    fs.writeFileSync(`${pre}${path}index.html`, page);
+    writePage(`${pre}${path}index.html`, page);
     sitemapRows.push([url, today, 0.8]);
   };
   const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -752,7 +804,7 @@ if (BLOG.length) for (const lang of LANGS) {
   const R1 = pre ? '../../' : '../', R2 = '../' + R1;     // back to the root from b/ and from b/<id>/
   const bUrl = `${home}b/`;
   fs.mkdirSync(`${pre}b`, { recursive: true });
-  fs.writeFileSync(`${pre}b/index.html`, HEAD({ title: `${t.blog} | Better.am`, desc: t.bdesc, url: bUrl, img: SITE + SEO.img,
+  writePage(`${pre}b/index.html`, HEAD({ title: `${t.blog} | Better.am`, desc: t.bdesc, url: bUrl, img: SITE + SEO.img,
     ld: [crumbs([['Better.am', SITE + app], [t.blog, bUrl]])], lang, path: 'b/' }) + `
 <header><a href="${R1}${app}">Better.am</a></header>
 <nav class="bc" aria-label="Breadcrumb"><a href="${R1}${app}">Better.am</a> › <span>${t.blog}</span></nav>
@@ -764,17 +816,21 @@ if (BLOG.length) for (const lang of LANGS) {
   sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
   // an article taken out of data/blog.json takes its page with it, or the old url stays live
   for (const d of fs.readdirSync(`${pre}b`, { withFileTypes: true }))
-    if (d.isDirectory() && !BLOG.some(x => x.id === d.name)) fs.rmSync(`${pre}b/${d.name}`, { recursive: true, force: true });
+    // The checked output pruner below removes obsolete index pages after generation.
   for (const a of BLOG) {
     const A = a[lang], url = `${bUrl}${a.id}/`;
+    const articleImage = a.cover && fs.existsSync(a.cover) ? a.cover : fs.existsSync(`images/blog/${a.id}.jpg`) ? `images/blog/${a.id}.jpg` : null;
     const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: A.title, description: A.lead,
-      datePublished: a.date, inLanguage: lang, url, publisher: { '@type': 'Organization', name: 'Better.am' } },
+      datePublished: a.date, dateModified: a.modified || a.date, inLanguage: lang, url, mainEntityOfPage: url,
+      ...(articleImage ? { image: SITE + articleImage } : {}),
+      author: { '@type': 'Organization', name: 'Better.am', url: SITE },
+      publisher: { '@type': 'Organization', name: 'Better.am', url: SITE } },
       crumbs([['Better.am', SITE + app], [t.blog, bUrl], [A.title, url]])];
     fs.mkdirSync(`${pre}b/${a.id}`, { recursive: true });
     const og = `images/blog/${a.id}.jpg`;
     // bodyHTML writes figure paths for a page two folders deep
     const body = bodyHTML(A.body).replaceAll('src="../../', `src="${R2}`);
-    fs.writeFileSync(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: SITE + (fs.existsSync(og) ? og : SEO.img), ld, lang, path: `b/${a.id}/` }) + `
+    writePage(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: SITE + (articleImage || SEO.img), ld, lang, path: `b/${a.id}/` }) + `
 <header><a href="${R2}${app}">Better.am</a></header>
 <nav class="bc" aria-label="Breadcrumb"><a href="${R2}${app}">Better.am</a> › <a href="../">${t.blog}</a> › <span>${esc(A.title)}</span></nav>
 <main>
@@ -793,14 +849,15 @@ ${(a.sources || []).length ? `<p class="upd">${t.sources}${a.sources.filter(s =>
 // A product folded into another keeps its url: the share page and any link to it that was
 // already posted or indexed send the visitor, and a crawler, to the survivor instead of a 404.
 let moved = 0;
-for (const [from, to] of Object.entries(MERGED)) {
+for (const lang of LANGS) for (const [from, to] of Object.entries(MERGED)) {
   if (!phones.some(p => p.id === to) || phones.some(p => p.id === from)) continue;
-  fs.mkdirSync(`p/${from}`, { recursive: true });
-  fs.writeFileSync(`p/${from}/index.html`, `<!doctype html>
-<html lang="hy"><head><meta charset="utf-8">
+  const pre = PRE[lang];
+  fs.mkdirSync(`${pre}p/${from}`, { recursive: true });
+  writePage(`${pre}p/${from}/index.html`, `<!doctype html>
+<html lang="${lang}"><head><meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'">
 <meta http-equiv="refresh" content="0;url=../${to}/">
-<link rel="canonical" href="${SITE}p/${to}/">
+<link rel="canonical" href="${SITE}${pre}p/${to}/">
 <meta name="robots" content="noindex">
 <title>Better.am</title>
 </head><body><a href="../${to}/">${esc(nameOf(phones.find(p => p.id === to)))}</a></body></html>
@@ -830,13 +887,41 @@ a{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;paddin
 </div></body></html>
 `);
 
+writePage('index.html', build({ inline: false, standalone: true }));
+for (const lang of ['ru', 'en']) {
+  const pre = PRE[lang], url = SITE + pre;
+  const title = lang === 'ru' ? 'Сравнение цен на электронику в Армении | Better.am' : 'Compare electronics prices in Armenia | Better.am';
+  fs.mkdirSync(pre, { recursive: true });
+  // Real translated home pages make the root hreflang links crawlable. The interactive
+  // catalogue remains at the root, where its scripts and images resolve correctly.
+  writePage(pre + 'index.html', HEAD({ title, desc: lang === 'ru' ? 'Сравните реальные цены на телефоны, ноутбуки и другую электронику в магазинах Армении. Выбирайте конфигурацию и проверяйте предложения.' : 'Compare real prices for phones, laptops and other electronics at Armenian shops. Choose a configuration and check matching offers.', url, img: SITE + SEO.img,
+    ld: [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Better.am', url: SITE, inLanguage: lang }], lang, path: '' })
+    + `<header><a href="../?lang=${lang}">Better.am</a></header><main>${homeContent(lang).replaceAll('href="' + pre, 'href="../' + pre)}<p><a class="go" href="../?lang=${lang}">${L[lang].cgo}</a></p></main></body></html>`);
+  sitemapRows.push([url, today, 1]);
+}
+// Only generated index files inside the known publication trees are removed. Keep
+// unrelated files, and keep every translated merged-product redirect.
+const prunePages = dir => {
+  const root = path.resolve(dir), workspace = path.resolve('.');
+  if (!root.startsWith(workspace + path.sep)) throw new Error('Unsafe publication directory: ' + root);
+  if (!fs.existsSync(root)) return;
+  const walk = folder => {
+    for (const d of fs.readdirSync(folder, { withFileTypes: true })) if (d.isDirectory()) walk(path.join(folder, d.name));
+    const index = path.join(folder, 'index.html'), key = path.relative(workspace, index).replaceAll('\\', '/');
+    if (fs.existsSync(index) && !generatedPages[key]) fs.unlinkSync(index);
+    if (folder !== root && fs.readdirSync(folder).length === 0) fs.rmdirSync(folder);
+  };
+  walk(root);
+};
+for (const pre of ['', 'ru/', 'en/']) for (const tree of ['p', 'c', 'b']) prunePages(pre + tree);
+fs.writeFileSync('data/page-manifest.json', JSON.stringify(generatedPages, null, 1) + '\n');
+const modifiedAt = url => generatedPages[(new URL(url).pathname.slice(1) || '') + 'index.html']?.modified || today;
 fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>${SITE}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-${sitemapRows.map(([u, d, pr]) => ` <url><loc>${u}</loc><lastmod>${d}</lastmod><priority>${pr}</priority></url>`).join('\n')}
+ <url><loc>${SITE}</loc><lastmod>${modifiedAt(SITE)}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+${sitemapRows.map(([u, d, pr]) => ` <url><loc>${u}</loc><lastmod>${modifiedAt(u)}</lastmod><priority>${pr}</priority></url>`).join('\n')}
 </urlset>
 `);
-fs.writeFileSync('index.html', build({ inline: false, standalone: true }));
 // The two single-file builds inline every photograph as a data URI. That was ~18 MB each when
 // this was written and is 211 MB each now, so a plain build wrote 422 MB nobody asked for -
 // GitHub Pages serves index.html and nothing else, and both files are gitignored. They are

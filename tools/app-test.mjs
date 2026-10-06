@@ -9,6 +9,7 @@
 // None of them would have survived an assertion. _app.js only touches the DOM through seven
 // listeners, so the whole file loads here behind a stub rather than being sliced up.
 import fs from 'node:fs';
+import { goatScript } from './analytics.mjs';
 
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
@@ -45,6 +46,7 @@ const stub = {
 const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
+  offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
   GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
@@ -221,6 +223,9 @@ const s256 = app.histSeries(i17, 256), s512 = app.histSeries(i17, 512);
 is(s256.length > 5, true, 'the smallest size keeps the history recorded before per-size prices');
 is(s512.every(v => v.v >= 300000), true, 'a bigger size never borrows the smaller size\'s price');
 is(s512.length < s256.length, true, 'a bigger size starts from the day per-size prices began');
+const historyBuild = { id: 'test-history-build', category: 'laptop', variants: [{ ram: 8, storage: 512 }, { ram: 16, storage: 512 }] };
+stub.HISTORY.points[historyBuild.id] = [{ d: '2026-10-05', lo: 100000, shops: 1, t: { 512: 100000 } }];
+is(app.histSeries(historyBuild, 512, null, 16).length, 0, 'selected RAM never borrows ambiguous storage-only history');
 
 /* --- the front page deals are real savings --------------------------------------------- */
 const dl = app.deals();
@@ -247,5 +252,73 @@ is(app.keepsQuery('/'), false, 'the front page does not');
 is(app.keepsQuery(''), false, 'nor does a bare url');
 is(app.keepsQuery('/c/phone'), false, 'nor does a category');
 
+/* --- coupled configurations and filtered prices --------------------------------------- */
+{
+  const p = { id: '__paired_test', category: 'phone', brand: 'Example', name: 'Pair', colors: ['Black'],
+    variants: [{ ram: 8, storage: 128 }, { ram: 16, storage: 256 }], priceAmd: 100000 };
+  prices.offers[p.id] = [{ shop: 'a', ram: 8, storage: 128, price: 100000 },
+    { shop: 'b', ram: 16, storage: 256, price: 170000 }];
+  const current = { id: p.id, ram: 8, storage: 128 };
+  const next = app.chooseConfig(p, current, 'ram', 16);
+  is(next.storage, 256, '16 GB RAM selects the real paired 256 GB storage');
+  is(app.chooseConfig(p, next, 'ram', 8).storage, 128, '8 GB RAM returns to its real paired 128 GB storage');
+  is(app.chooseConfig(p, next, 'storage', 128).ram, 8, 'storage changes adapt RAM too');
+  is(app.selectionOffers(p, next)[0].price, 170000, 'selected price belongs to selected RAM/storage pair');
+  is(app.selectionOffers(p, { ...next, storage: 128 }).length, 0, 'an invented 16/128 combination has no offers');
+  is(app.catalogPrice(p, { ram: 16, stor: 0, shops: [] }), 170000, '16 GB filter never quotes the cheaper 8 GB offer');
+  is(app.catalogOffers(p, { ram: 16, stor: 0, shops: ['a'] }).length, 0, 'shop and RAM filters must match the same offer');
+  const options = app.compareOptions(p, current);
+  is(options.includes('value="128"'), true, 'comparison shows paired storage');
+  is(options.includes('value="256"'), false, 'comparison hides storage unavailable with selected RAM');
+  is(app.offerConfig({ ...p, variants: [{ ram: 8, storage: 256 }, { ram: 16, storage: 256 }] }, { storage: 256 }).ram,
+    null, 'ambiguous unstated RAM is not inferred');
+  delete prices.offers[p.id];
+  for (const key of ['f.main_cam', 'f.front_cam', 'f.sim', 'f.network', 'f.nfc', 'f.wireless'])
+    is(app.specAllowed(key, { category: 'laptop' }), false, `laptop comparison omits ${key}`);
+  is(app.specAllowed('f.front_cam', { category: 'phone' }), true, 'phone comparisons retain front camera');
+  for (const lang of ['hy', 'ru', 'en']) {
+    const before = app.st.lang; app.st.lang = lang;
+    is(app.addLabel(p), STR[lang]['compare.add_phone'], `comparison uses product wording (${lang})`);
+    app.st.lang = before;
+  }
+}
+{
+  const p = { id: '__cpu_test', brand: 'Example', name: 'Laptop', category: 'laptop', chipset: { name: 'Family', gpu: 'Unverified' }, graphics: { name: 'Old GPU' }, display: { resolution: '1920x1080' }, variants: [{ ram: 8, storage: 256 }, { ram: 16, storage: 512 }] };
+  prices.offers[p.id] = [{ cpu: 'Intel Core 5-120U', ram: 8, storage: 256, price: 200000, configSpecs: { chipset: { name: 'Intel Core 5-120U' } } },
+    { cpu: 'Intel Core 7-150U', ram: 16, storage: 512, price: 300000, configSpecs: { chipset: { name: 'Intel Core 7-150U' }, display: { resolution: '2560x1600' } } }];
+  const current = app.initialConfig(p), next = app.chooseConfig(p, current, 'cpu', 'Intel Core 7-150U');
+  is(next.ram, 16, 'CPU changes select the real RAM build');
+  is(next.storage, 512, 'CPU changes select the real storage build');
+  is(app.selectionOffers(p, next)[0].price, 300000, 'CPU comparison price belongs to its own configuration');
+  is(app.compareOptions(p, current).includes('value="16"'), false, 'RAM from a different CPU is not offered');
+  is(app.selectedProduct(p, next).display.resolution, '2560x1600', 'selected laptop uses the shop configuration display');
+  is(app.selectedProduct(p, next).chipset.gpu, undefined, 'CPU changes do not borrow unverified GPU facts');
+  is(app.selectedProduct(p, next).graphics, undefined, 'CPU changes omit unverified discrete graphics');
+  const screen = { ...p, display: { size: 13.6, resolution: '2560x1664' }, body: { weight: 1230 }, battery: { capacity: 53.8 } };
+  is(app.selectedProduct(screen, { size: 13 }).display.size, 13.6, 'a 13-inch market name retains the actual 13.6-inch diagonal');
+  const large = app.selectedProduct(screen, { size: 15, configSpecs: { display: { size: 15.3, resolution: '2880x1864' }, body: { weight: 1510 }, battery: { capacity: 66.5 } } });
+  is(large.display.size, 15.3, 'verified larger screen diagonal is used');
+  is(large.body.weight, 1510, 'larger model uses its own verified weight');
+  is(large.battery.capacity, 66.5, 'larger model uses its own verified battery');
+  is(app.selectedProduct(screen, { size: 15 }).display.resolution, undefined, 'another screen never borrows the smaller model resolution');
+  delete prices.offers[p.id];
+}
+stub.location.pathname = '/';
+stub.location.hash = '#/search?email=private@example.test';
+is(app.counterPath(), '/#/search', 'analytics omits search parameters');
+stub.location.hash = '#/p/private@example.test';
+is(app.counterPath(), '/', 'analytics rejects arbitrary product hashes');
+stub.location.hash = '#/p/apple-iphone-17?secret=private';
+is(app.counterPath(), '/#/p/apple-iphone-17', 'analytics retains only a known public product path');
+for (const signal of [{}, { doNotTrack: '1' }, { globalPrivacyControl: true }]) {
+  const scripts = [], win = {}, doc = { referrer: 'https://example.test/private?email=secret',
+    createElement: () => ({ dataset: {} }), head: { appendChild: script => scripts.push(script) } };
+  new Function('navigator', 'window', 'document', 'location', 'URL', goatScript('test'))(signal, win, doc, { pathname: '/' }, URL);
+  is(scripts.length, Object.keys(signal).length ? 0 : 1, 'counter loader honors browser privacy signal ' + JSON.stringify(signal));
+  if (scripts.length) {
+    is(win.goatcounter.referrer(), 'https://example.test', 'counter omits private referrer path and query');
+    is(win.goatcounter.title, 'Better.am', 'counter never sends a search-derived title');
+  }
+}
 console.log(bad ? `${bad} of ${n} app checks FAILED` : `app self-test: ${n} checks pass`);
 process.exit(bad ? 1 : 0);

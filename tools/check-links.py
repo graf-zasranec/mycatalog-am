@@ -41,7 +41,7 @@ NOFETCH = {}
 # "Go to shop" has to land on the product. These land on a list of them.
 LISTING = re.compile(r'/(category|collection|promo)/'
                      r'|/(iphones|smartphones|speakers|tablets|watches|headphones-and-headsets)\.html$', re.I)
-DEAD = {404, 410, 500}          # 403/429 is a shop refusing US, not a missing page
+DEAD = {404, 410}               # server errors and rate limits do not prove a missing page
 # A crawled offer is dropped when the shop says out of stock; a hand row never was, because
 # data/listings.csv carries no stock column and nothing re-read the page. Zigzag's Galaxy A06
 # sat on the site as "In stock" at 37 700 while the shop's own page said Out of stock, 35 900.
@@ -57,12 +57,45 @@ def stock_of(html):
     """True, False, or None when the page makes no machine-readable claim."""
     if not html:
         return None
-    m = SCHEMA.search(html)
-    if m:
-        return m.group(1).lower() == 'instock'
+    # Read the page's Product, excluding related products in ItemList/BreadcrumbList.
+    # A recommendation being unavailable must not hide the product being viewed.
+    products = []
+    for raw in re.findall(r'<script\b[^>]*type=[\"\x27]application/ld\+json[\"\x27][^>]*>([\s\S]*?)</script>', html, re.I):
+        try:
+            data = json.loads(raw)
+        except (ValueError, TypeError):
+            continue
+        nodes = data if isinstance(data, list) else [data]
+        for node in nodes:
+            if not isinstance(node, dict):
+                continue
+            for item in node.get('@graph', [node]):
+                if isinstance(item, dict) and 'Product' in (item.get('@type') if isinstance(item.get('@type'), list) else [item.get('@type')]):
+                    products.append(item)
+    if len(products) == 1:
+        offers = products[0].get('offers', [])
+        offers = offers if isinstance(offers, list) else [offers]
+        statuses = set()
+        for offer in offers:
+            if not isinstance(offer, dict):
+                continue
+            children = offer.get('offers', [offer])
+            children = children if isinstance(children, list) else [children]
+            for child in children:
+                if isinstance(child, dict) and child.get('availability'):
+                    statuses.add(str(child['availability']).rsplit('/', 1)[-1].lower())
+        if 'instock' in statuses:
+            return True
+        if statuses and statuses <= {'outofstock', 'soldout', 'discontinued'}:
+            return False
     m = BLOCK.search(html)
     if m:
         return m.group(1).lower() == 'in_stock'
+    # Some shop templates use inline data. Conflicting statements are unknown.
+    # Structured lists without one unambiguous primary Product stay unknown.
+    states = {m.lower() for m in SCHEMA.findall(html)} if not products else set()
+    if len(states) == 1:
+        return next(iter(states)) == 'instock'
     return None
 
 
@@ -79,39 +112,56 @@ def check_all():
         urls.setdefault(o['url'], []).append(o)
 
     done = json.loads(STATE.read_text(encoding='utf8')) if STATE.exists() else {}
+    if '--fresh' in sys.argv:
+        done = {}
     print(f'{len(urls)} distinct url(s) across {len(offers)} offer(s); {len(done)} already checked')
-    last_host = None
+    # Parallel across shops, with only one request at a time per host.
+    # Round-robin scheduling avoids filling the worker queue with one shop.
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from collections import defaultdict, deque
+    import threading
     skipped = {}
-    for i, (u, rows) in enumerate(urls.items(), 1):
-        shop = rows[0]['shop']
-        if u in done:
-            continue
-        if shop in NOFETCH:
-            # Reported, never remembered. "not fetched" is the absence of an answer, and caching
-            # it made the rule outlive itself: 56 links kept being reported as unfetchable long
-            # after the rules that skipped them were removed, because the resume step counted
-            # them as already checked and never asked the shop a single time.
-            skipped[u] = NOFETCH[shop]
-            continue
+    groups = defaultdict(deque)
+    locks = defaultdict(threading.Lock)
+    for u, rows in urls.items():
+        if u not in done:
+            if rows[0]['shop'] in NOFETCH:
+                skipped[u] = NOFETCH[rows[0]['shop']]
+            else:
+                groups[u.split('/')[2]].append(u)
+    pending = []
+    while any(groups.values()):
+        for queue in groups.values():
+            if queue:
+                pending.append(queue.popleft())
+    def probe(u):
         host = u.split('/')[2]
-        if host == last_host:
-            time.sleep(0.4)          # one at a time per host, with a gap
-        last_host = host
-        # One retry before believing it. Three redstore urls came back DNSError in a sweep where
-        # every other redstore page answered 200, and all three answer 200 on a second ask -
-        # a checker that cries broken over a blip is worse than no checker.
-        for attempt in (1, 2):
-            try:
-                r = Fetcher.get(u, impersonate='chrome', timeout=25)
-                done[u] = {'status': r.status, 'stock': stock_of(r.html_content or '')}
-                break
-            except Exception as e:
-                done[u] = {'status': 'ERR', 'why': type(e).__name__}
-                if attempt == 1:
-                    time.sleep(2)
-        if i % 25 == 0:
-            STATE.write_text(json.dumps(done), encoding='utf8')
-            print(f'  {i}/{len(urls)}', flush=True)
+        with locks[host]:
+            time.sleep(0.4)
+            for attempt in (1, 2):
+                try:
+                    r = Fetcher.get(u, impersonate='chrome', timeout=25)
+                    h = r.html_content or ''
+                    heading = re.search(r'<h1\b[^>]*>([\s\S]*?)</h1>', h, re.I)
+                    title = re.sub(r'<[^>]+>', ' ', heading.group(1)).strip() if heading else ''
+                    result = {'status': r.status, 'stock': stock_of(h), 'title': title,
+                              'checked': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}
+                    return u, result
+                except Exception as e:
+                    result = {'status': 'ERR', 'why': type(e).__name__}
+                    if attempt == 1:
+                        time.sleep(2)
+            return u, result
+    workers = next((int(a.split('=', 1)[1]) for a in sys.argv if a.startswith('--workers=')), 1)
+    workers = max(1, min(workers, 8))
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = [executor.submit(probe, u) for u in pending]
+        for i, future in enumerate(as_completed(futures), 1):
+            u, result = future.result()
+            done[u] = result
+            if i % 25 == 0:
+                STATE.write_text(json.dumps(done), encoding='utf8')
+                print(f'  {len(done)}/{len(urls)} checked', flush=True)
     STATE.write_text(json.dumps(done), encoding='utf8')
 
     # what a person clicking would actually get
@@ -149,7 +199,7 @@ def write_xlsx(b):
         print(f'  -> {out}')
         return
     # What each bucket means in plain words, so the column can be read without this file open.
-    SAY = {'dead': 'GONE - answers 404/410/500, safe to remove',
+    SAY = {'dead': 'GONE - answers 404/410, safe to remove',
            'refused': 'REFUSED our checker (403/429) - may well work in a browser, please look',
            'error': 'never answered - timed out or would not connect',
            'soldout': 'the page itself says sold out',
@@ -203,7 +253,7 @@ def main():
     if '--all' in sys.argv:
         urls, b = check_all()
         title = lambda h, n: print(f'\n== {h} ({n}) ==')
-        title('Gone - the page answers 404, 410 or 500', len(b['dead']))
+        title('Gone - the page answers 404 or 410', len(b['dead']))
         for sh, t, u, n, d in b['dead']:
             print(f'  {d["status"]}  {sh:14} {t[:44]:46} {u}')
         title('The shop refused us - somebody with a browser may still see it', len(b['refused']))

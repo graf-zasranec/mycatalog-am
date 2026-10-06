@@ -4766,8 +4766,8 @@
     },
     "battery": {},
     "connectivity": {
-      "wifi": "Wi-Fi 6E",
-      "bluetooth": "5.3"
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6.0"
     },
     "cardSlot": false,
     "os": "macOS 26",
@@ -4779,7 +4779,8 @@
     ],
     "summaryEn": "The 13-inch Air on M5 — the laptop most people should buy.",
     "sources": [
-      "https://www.apple.com/macbook-air/specs/"
+      "https://www.apple.com/macbook-air/specs/",
+      "https://support.apple.com/en-us/126320"
     ]
   },
   {
@@ -4892,7 +4893,7 @@
     "battery": {},
     "connectivity": {
       "wifi": "Wi-Fi 6E",
-      "bluetooth": "5.3"
+      "bluetooth": "6.0"
     },
     "cardSlot": false,
     "os": "macOS 26",
@@ -4904,7 +4905,8 @@
     ],
     "summaryEn": "The cheapest MacBook, on the A18 Pro chip rather than an M-series.",
     "sources": [
-      "https://www.apple.com/macbook-neo/specs/"
+      "https://www.apple.com/macbook-neo/specs/",
+      "https://support.apple.com/en-au/126322"
     ]
   },
   {
@@ -14152,12 +14154,13 @@
     ],
     "display": {
       "size": 16.3,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200 / 3840x2400"
     },
     "battery": {},
     "summaryEn": "Dell XPS 16 9640.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "display.resolution"
     ],
     "released": "2024",
     "chipset": {
@@ -38663,19 +38666,19 @@
         "priceAmd": 58900
       },
       {
-        "ram": 4,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 99900
       }
     ],
     "battery": {
-      "capacity": 5400,
-      "wired": 10
+      "capacity": 5100,
+      "wired": 15
     },
     "connectivity": {
       "network": "Wi-Fi, or LTE",
       "wifi": "Wi-Fi 5",
-      "bluetooth": "5.0",
+      "bluetooth": "5.3",
       "nfc": false
     },
     "cardSlot": true,
@@ -38690,7 +38693,6 @@
       "height": 211,
       "width": 124.7,
       "thickness": 8,
-      "materials": "Magnesium alloy",
       "ip": "IP52"
     },
     "camera": {
@@ -38698,7 +38700,10 @@
       "front": "5 MP"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/ae/tablets/galaxy-tab-a/galaxy-tab-a11-gray-64gb-sm-x133nzaamea/",
+      "https://news.samsung.com/id/galaxy-tab-a11-tablet-sejutaan-dengan-ai-untuk-dukung-aktivitas-keluarga",
+      "https://www.samsung.com/de/business/tablets/galaxy-tab-a/galaxy-tab-a11-gray-128gb-sm-x130nzaeeub/buy/"
     ]
   },
   {
@@ -38870,12 +38875,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 4,
         "storage": 64,
         "priceAmd": 55000
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 74000
       }
@@ -38909,7 +38914,7 @@
       "materials": "Aluminium alloy"
     },
     "connectivity": {
-      "bluetooth": "5.0",
+      "bluetooth": "5.3",
       "wifi": "Wi-Fi 5",
       "nfc": false
     },
@@ -38920,7 +38925,8 @@
     },
     "released": "2023-10",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/levant/tablets/galaxy-tab-a/galaxy-tab-a9-lte-mystic-navy-128gb-sm-x115ndbemea/"
     ],
     "colors": [
       "Graphite",

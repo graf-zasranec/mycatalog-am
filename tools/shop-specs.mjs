@@ -4,6 +4,8 @@
 // Resumable: pages already read are kept in data/specs/shop-<category>.json.
 //   node tools/shop-specs.mjs laptop [--write]     (fetch missing pages, then fill missing fields)
 import fs from 'node:fs';
+import { cpu } from './spec-values.mjs';
+export { cpu };
 
 const cat = process.argv[2] || 'laptop', write = process.argv.includes('--write');
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
@@ -11,6 +13,13 @@ const FILE = `data/specs/shop-${cat}.json`;
 const P = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const O = JSON.parse(fs.readFileSync('data/prices.json', 'utf8')).offers;
 const got = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, 'utf8')) : {};
+const saveCache = () => {
+  const text = JSON.stringify(got, null, 1);
+  for (let attempt = 0; ; attempt++) {
+    try { fs.writeFileSync(FILE, text); return; }
+    catch (error) { if (attempt >= 3) throw error; Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100); }
+  }
+};
 // the fields a buyer compares in each section (same list as tools/todo-counts.mjs)
 const KEY = {
   laptop: ['display.size', 'display.resolution', 'chipset.name', 'body.weight'],
@@ -19,7 +28,7 @@ const KEY = {
   headphones: ['audio.form', 'connectivity.bluetooth', 'body.weight'],
   speaker: ['connectivity.bluetooth', 'body.weight'],
   tv: ['display.size', 'display.resolution', 'display.type', 'display.refresh'],
-}[cat];
+}[cat] || ['display.size', 'connectivity.bluetooth', 'body.weight'];
 const g = (o, f) => f.split('.').reduce((a, k) => a == null ? a : a[k], o);
 const lines = h => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]+>/g, '\n')
   .replace(/&nbsp;|&#160;/g, ' ').replace(/&#215;/g, 'x').replace(/&#8211;/g, '-').replace(/&#039;/g, "'").replace(/&amp;/g, '&')
@@ -64,19 +73,8 @@ const PARSE = {
 };
 
 // our naming: Intel Core i7-1355U, Intel Core Ultra 7-258V, Intel Core 7-150U, AMD Ryzen 7 7730U, Apple M4
-export function cpu(v) {
-  v = String(v || '').replace(/[®™]/g, '').replace(/\(.*$/, '').replace(/\bProcessor\b/i, '').replace(/\s*[-–]\s*/g, ' ')
-    .replace(/\s+/g, ' ').trim().replace(/^\d+th Generation /i, '').replace(/^Intel (Ultra \d)/i, 'Intel Core $1').replace(/Ryzen R(\d)/i, 'Ryzen $1');
-  let m;
-  if ((m = v.match(/^(?:Intel )?(Celeron |Pentium (?:Silver |Gold )?)?(N\d{3,4})$/i))) return `Intel ${m[1] || ''}${m[2].toUpperCase()}`;
-  // i-series models have 4-5 digits (i5-13420H); Core 5 / Core Ultra 5 have 3 (210H, 255H, N355)
-  if ((m = v.match(/^(?:Intel )?Core (i[3579]) ?(\d{4,5}[A-Z]{0,3}\d?)$/i) || v.match(/^(?:Intel )?Core (Ultra [579]|[3579]) ?([A-Z]?\d{3}[A-Z]{0,3})$/i))) return `Intel Core ${m[1].toLowerCase().replace('ultra', 'Ultra')}-${m[2].toUpperCase()}`;
-  if ((m = v.match(/^(?:AMD )?Ryzen ([3579]|AI [579]) (?:PRO )?(\d{3,4}[A-Z]{0,3})$/i))) return `AMD Ryzen ${m[1]} ${m[2].toUpperCase()}`;
-  if ((m = v.match(/^(?:Apple )?(M[1-5](?: Pro| Max)?)$/i))) return `Apple ${m[1].toUpperCase().replace('PRO', 'Pro').replace('MAX', 'Max')}`;
-  return null;
-}
 // a screen size is only believed inside the range the section can have
-const RANGE = { laptop: [10, 19], monitor: [18, 57], watch: [0.9, 2.5], tv: [24, 120] }[cat] || [0, 0];
+const RANGE = { phone: [3, 9], tablet: [6, 17], ereader: [5, 14], laptop: [10, 19], monitor: [18, 57], watch: [0.9, 2.5], tv: [24, 120] }[cat] || [0, 0];
 const inch = v => { const m = String(v || '').replace(',', '.').match(/(\d{1,3}(?:\.\d+)?)/); return m && +m[1] >= RANGE[0] && +m[1] <= RANGE[1] ? +m[1] : null; };
 // "0.558 kg", "1․7 kg" (Armenian full stop), "5.3 g" -> grams
 const grams = v => { const m = String(v || '').replace('․', '.').match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i); if (!m) return null; const n = parseFloat(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1); return n > 0 && n < 60000 ? Math.round(n) : null; };
@@ -85,12 +83,15 @@ const res = v => { const m = String(v || '').match(/(\d{3,4})\s*[x×х*]\s*(\d{3
 const bt = v => (String(v || '').match(/Bluetooth\s*v?(\d\.\d)/i) || [])[1] || null;
 const mah = v => { const m = String(v || '').match(/(\d{2,5})\s*mAh/i); return m ? +m[1] : null; };
 
-const gaps = P.filter(p => p.category === cat && KEY.some(f => g(p, f) == null || g(p, f) === ''));
+const gaps = P.filter(p => p.category === cat && (process.argv.includes('--all') || KEY.some(f => g(p, f) == null || g(p, f) === '')));
+const checkedURLs = new Set();
 for (const p of gaps) for (const o of O[p.id] || []) {
-  if (!PARSE[o.shop] || got[o.url]) continue;
-  const r = await fetch(o.url, { headers: { 'user-agent': UA } }).catch(() => null);
-  got[o.url] = { id: p.id, shop: o.shop, status: r ? r.status : 0, spec: r && r.ok ? PARSE[o.shop](lines(await r.text())) : {} };
-  fs.writeFileSync(FILE, JSON.stringify(got, null, 1));
+  if (!PARSE[o.shop] || checkedURLs.has(o.url) || (got[o.url] && !process.argv.includes('--refresh'))
+      || (process.argv.includes('--resume-refresh') && got[o.url]?.checked?.slice(0, 10) === new Date().toISOString().slice(0, 10))) continue;
+  checkedURLs.add(o.url);
+  const r = await fetch(o.url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(25000) }).catch(() => null);
+  got[o.url] = { id: p.id, shop: o.shop, status: r ? r.status : 0, checked: new Date().toISOString(), spec: r && r.ok ? PARSE[o.shop](lines(await r.text())) : {} };
+  saveCache();
   console.log(p.id, o.shop, got[o.url].status, Object.keys(got[o.url].spec).length);
   await new Promise(r => setTimeout(r, 800));
 }
@@ -120,17 +121,21 @@ for (const e of Object.values(got)) {
   const v = { 'display.size': inch(s['Screen Size']), 'display.resolution': res(s['Screen Resolution']), 'chipset.name': cpu(s.CPU),
     'display.type': cat === 'tv' ? ((String(s['Display type'] || '').match(/^(QLED|OLED)$/) || [])[1] || (/^D?LED$/.test(s['Display type'] || '') ? 'LED' : null))
       : (String(s['Display type'] || '').match(/^(IPS|TN|OLED|VA|WVA)\b/) || [])[1] || null, 'display.refresh': +(String(s['Refresh rate'] || '').match(/(\d{2,3})\s*Hz/i) || [])[1] || null,
-    'body.weight': plausibleG(p, grams(s.Weight)), 'connectivity.bluetooth': bt(s.Bluetooth), 'battery.capacity': cat === 'watch' ? mah(s.Battery) : null };
+    'body.weight': plausibleG(p, grams(s.Weight)), 'connectivity.bluetooth': bt(s.Bluetooth), 'battery.capacity': ['phone', 'tablet', 'watch'].includes(cat) ? mah(s.Battery) : null };
   for (const [f, val] of Object.entries(v)) {
     if (val == null || (sizes.size > 1 && f.startsWith('display.'))) continue;
     const [a, b] = f.split('.'), o = p[a] ||= {};
     if (o[b] == null || o[b] === '') { o[b] = val; log.filled.push(`${p.id} ${f}=${val}`); }
-    else if (String(o[b]) === String(val) || (b === 'size' && Math.abs(o[b] - val) < 0.6)) log.same++;
+    else if (String(o[b]) === String(val) || (b === 'size' && Math.abs(o[b] - val) < 0.6)
+      || (f === 'chipset.name' && String(o[b]).split('/').some(model => cpu(model.trim()) === cpu(val)))
+      || (f === 'display.type' && String(o[b]).replace(/\b(?:LCD|\d(?:\.\d)?K)\b/gi, '').trim() === val)) log.same++;
     else log.conflict.push(`${p.id} ${f}: ours ${o[b]}, ${e.shop} page ${val}`);
   }
 }
 console.log(`filled ${log.filled.length}, confirmed ${log.same}, conflicts ${log.conflict.length}, pages of another model skipped ${log.foreign || 0}, implausible weights dropped ${log.implausible || 0}`);
 for (const l of log.conflict) console.log('conflict', l);
+const reportFile = process.argv.find(a => a.startsWith('--report='))?.slice(9);
+if (reportFile) fs.writeFileSync(reportFile, JSON.stringify(log, null, 2) + '\n');
 if (write) fs.writeFileSync('data/phones.json', JSON.stringify(P, null, 2) + '\n');
 
 console.assert(cpu('Core Ultra 7 150U') === 'Intel Core Ultra 7-150U');

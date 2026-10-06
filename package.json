@@ -1,0 +1,15 @@
+{
+  "name": "better-am-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node scrape.mjs --selftest && node tools/app-test.mjs",
+    "test:browser": "node tools/browser-check.mjs",
+    "refresh": "node tools/refresh.mjs"
+  },
+  "devDependencies": {
+    "@playwright/cli": "0.1.22",
+    "playwright": "1.63.0"
+  }
+}

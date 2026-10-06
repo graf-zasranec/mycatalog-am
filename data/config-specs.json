@@ -1,0 +1,144 @@
+{
+  "apple-macbook-air-13-m5": [
+    {
+      "size": 13,
+      "source": "https://support.apple.com/en-us/126320",
+      "specs": {
+        "display": {
+          "size": 13.6,
+          "resolution": "2560x1664",
+          "ppi": 224,
+          "brightness": 500
+        },
+        "body": {
+          "weight": 1230,
+          "height": 215,
+          "width": 304.1,
+          "thickness": 11.3
+        },
+        "battery": {
+          "capacity": 53.8
+        },
+        "connectivity": {
+          "wifi": "Wi-Fi 7",
+          "bluetooth": "6.0"
+        }
+      }
+    },
+    {
+      "size": 15,
+      "source": "https://support.apple.com/en-ie/126321",
+      "specs": {
+        "display": {
+          "size": 15.3,
+          "resolution": "2880x1864",
+          "ppi": 224,
+          "brightness": 500
+        },
+        "body": {
+          "weight": 1510,
+          "height": 237.6,
+          "width": 340.4,
+          "thickness": 11.5
+        },
+        "battery": {
+          "capacity": 66.5
+        },
+        "graphics": {
+          "name": "Apple M5 10-core GPU",
+          "cores": 10,
+          "type": "integrated"
+        },
+        "connectivity": {
+          "wifi": "Wi-Fi 7",
+          "bluetooth": "6.0"
+        }
+      }
+    }
+  ],
+  "apple-macbook-air-13-m4": [
+    {
+      "size": 13,
+      "source": "https://support.apple.com/en-ie/122209",
+      "specs": {
+        "display": {
+          "size": 13.6,
+          "resolution": "2560x1664",
+          "ppi": 224,
+          "brightness": 500
+        },
+        "body": {
+          "weight": 1240,
+          "height": 215,
+          "width": 304.1,
+          "thickness": 11.3
+        },
+        "battery": {
+          "capacity": 53.8
+        },
+        "connectivity": {
+          "wifi": "Wi-Fi 6E",
+          "bluetooth": "5.3"
+        }
+      }
+    },
+    {
+      "size": 15,
+      "source": "https://support.apple.com/en-gb/122210",
+      "specs": {
+        "display": {
+          "size": 15.3,
+          "resolution": "2880x1864",
+          "ppi": 224,
+          "brightness": 500
+        },
+        "body": {
+          "weight": 1510,
+          "height": 237.6,
+          "width": 340.4,
+          "thickness": 11.5
+        },
+        "battery": {
+          "capacity": 66.5
+        },
+        "graphics": {
+          "name": "Apple M4 10-core GPU",
+          "cores": 10,
+          "type": "integrated"
+        },
+        "connectivity": {
+          "wifi": "Wi-Fi 6E",
+          "bluetooth": "5.3"
+        }
+      }
+    }
+  ],
+  "dell-xps-16-9640": [
+    {
+      "source": "https://www.dell.com/en-uk/shop/laptops/16-new/spd/xps-16-9640-laptop",
+      "allowedDisplayResolutions": [
+        "1920x1200",
+        "3840x2400"
+      ],
+      "specs": {
+        "display": {
+          "size": 16.3
+        }
+      }
+    }
+  ],
+  "microsoft-surface-laptop-7-13": [
+    {
+      "source": "https://news.microsoft.com/wp-content/uploads/prod/sites/691/2024/05/Surface-Laptop-Fact-Sheet.pdf",
+      "specs": {
+        "display": {
+          "size": 13.8,
+          "resolution": "2304x1536",
+          "ppi": 201,
+          "refresh": 120,
+          "touch": true
+        }
+      }
+    }
+  ]
+}

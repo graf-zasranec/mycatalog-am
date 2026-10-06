@@ -667,8 +667,15 @@ async function planetModifiers(varId) {
 // ...and the smaller one is RAM, but only when the title really lists both
 // Two capacities that are the SAME capacity are one figure written twice - telecom titles the
 // Galaxy A16 "Samsung A165 256GB | 256 GB" - and the smaller of them is not a RAM size.
-const ramOf = text => { const c = capacitiesOf(text); const lo = Math.min(...c);
-  return c.length >= 2 && lo < Math.max(...c) ? lo : null; };
+const ramOf = text => {
+  const s = String(text || '');
+  const explicit = /\b(?:ram|ddr[345x]?)\s*[:=-]?\s*(\d{1,3})\s*(?:gb|գբ|гб)?\b|\b(\d{1,3})\s*(?:gb|գբ|гб)\s*(?:ram|ddr[345x]?)\b/i.exec(s);
+  if (explicit) { const n = +(explicit[1] || explicit[2]); return n <= 192 ? n : null; }
+  const c = capacitiesOf(s), lo = Math.min(...c);
+  // Two disk options (256/512 GB) and a GPU's VRAM are not system memory.
+  if (/\b(?:rtx|gtx|radeon|vram|gddr)\b/i.test(s)) return null;
+  return c.length >= 2 && lo < 256 && lo < Math.max(...c) ? lo : null;
+};
 // colour, matched against the colours we already know this phone ships in
 // Shops and manufacturers spell one colour several ways. Samsung's own name is "Awesome Grey";
 // viva slugs it "gray", REDstore "gray", eldorado "awesome-gray". "Awesome Icyblue" is "iceblue"
@@ -1040,7 +1047,9 @@ if (process.argv[2] === '--selftest') {
     ['Xiaomi 17 Pro Max 12/512GB (Black)', 12], ['Redmi Note 14 8/256GB', 8],
     ['POCO X7 Pro 12 GB / 512 GB', 12], ['Galaxy S26 Ultra 16GB/1TB', 16],
     ['Redmi Note 12 256GB', null], ['iPhone 17 Pro Max 256GB', null],
-    ['Samsung A165 256GB | 256 GB', null]];
+    ['Samsung A165 256GB | 256 GB', null], ['Laptop 16GB RAM', 16],
+    ['Laptop RAM: 32 GB DDR5', 32], ['SSD 256GB / 512GB', null],
+    ['Laptop RTX 5060 8GB 512GB', null], ['Laptop 16GB RAM RTX 5060 8GB 512GB', 16]];
   for (const [txt, want] of ramCases) {
     const got = ramOf(txt);
     if (got !== want) { bad++; console.log(`FAIL ram got=${got} want=${want} <- ${txt}`); }
@@ -1194,6 +1203,10 @@ if (process.argv[2] === '--selftest') {
     // the swatch config flag is not a stock state; it appears on every configurable product
     ['{"canDisplayShowOutOfStockStatus":true,"channel":"website"}', true],
   ];
+  const cellularCases = [['Redmi Pad SE 8.7 4G', true], ['Redmi Pad 4GB/128GB Wi-Fi', false]];
+  for (const [title, want] of cellularCases) {
+    if (cellOf(title) !== want) { bad++; console.log(`FAIL tablet cellular identity: ${title}`); }
+  }
   for (const [html, want] of stockCases) {
     const got = stockOf(html);
     if (got !== want) { bad++; console.log(`FAIL stock got=${got} want=${want} <- ${html.slice(0, 60)}`); }
@@ -2601,7 +2614,7 @@ if (outliers) console.log(`${outliers} price(s) dropped as scrape errors`);
 // true = Wi-Fi + Cellular, false = Wi-Fi only (see the tablet pass below)
 // Samsung's own model code says it too: a tablet code ending in 5 or 6 is the LTE/5G build
 // (X115, X205, X216, X516, X135G), one ending in 0 the Wi-Fi build (X110, X200, X510).
-function cellOf(title) { return /cellular|\bcell\b|\blte\b|\b5g\b|\+\s*sim|\b(?:sm-)?[xt]\d{2}[56]g?\b/i.test(String(title || '')); }
+function cellOf(title) { return /cellular|\bcell\b|\blte\b|\b[45]g\b|\+\s*sim|\b(?:sm-)?[xt]\d{2}[56]g?\b/i.test(String(title || '')); }
 function medianOf(a) { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; }
 
 // A screen size that the product is not made in is a misread, and enrich() cannot correct it:
@@ -2619,13 +2632,11 @@ if (badSize) console.log(`${badSize} offer(s) claimed a screen size the product 
 // Shops always name the cellular model ("WiFi + Cellular", "LTE", "5G"); a title that does not is
 // the Wi-Fi one. Tablets only: a phone's "5G" is not this question.
 for (const [id, list] of Object.entries(offers)) {
-  if ((phoneById[id] || {}).category !== 'tablet') continue;
-  for (const o of list) o.cell = typeof o.cell === 'boolean' ? o.cell : cellOf(o.title);
-  // The cellular build always costs more (owner, 2026-09-27). A "cellular" row at or below the
-  // cheapest Wi-Fi price for its capacity is a mislabel, and it was the one the page opened on.
-  const wifiMin = {};
-  for (const o of list) if (!o.cell) wifiMin[o.storage] = Math.min(wifiMin[o.storage] ?? Infinity, o.price);
-  for (const o of list) if (o.cell && o.price <= (wifiMin[o.storage] ?? 0)) o.cell = false;
+  const product = phoneById[id] || {};
+  if (product.category !== 'tablet') continue;
+  // Identity comes from the title/model code, not relative shop prices. Repair old
+  // false flags when the source explicitly names Cellular, LTE or a cellular model.
+  for (const o of list) o.cell = cellOf(o.title) || cellOf(product.name) || (typeof o.cell === 'boolean' ? o.cell : false);
 }
 // A capacity under 32 GB on anything but a watch is the memory read as storage: iBolit's
 // "Tab S9 Ultra 12GB 256GB X916 Beige" came through as 12. The title says the real one.
@@ -2645,7 +2656,8 @@ if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tra
 function offerKey(o) {
   // Wi-Fi vs cellular for the same reason as the SIM build: a tablet's cellular build is a dearer
   // product, and without it here Pixel's Tab S9 Ultra Cellular lost to its own Wi-Fi row every time.
-  return [o.id, o.storage ?? '?', o.color ?? '?', o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell ? 'c' : ''].join('|');
+  return [o.id, o.ram ?? '?', o.storage ?? '?', o.size ?? '?', o.band ?? '?', o.color ?? '?',
+    o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell === true ? 'c' : o.cell === false ? 'w' : '?'].join('|');
 }
 // A shop that parses to NOTHING is caught above and carried forward whole. One that answers some
 // pages and refuses the rest parses to FEWER offers, and slipped straight past that: on 2026-09-21

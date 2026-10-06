@@ -487,9 +487,9 @@
   },
   {
     "key": "compare.add_phone",
-    "hy": "Ավելացնել հեռախոս",
-    "ru": "Добавить телефон",
-    "en": "Add phone"
+    "hy": "Ավելացնել սարք",
+    "ru": "Добавить устройство",
+    "en": "Add product"
   },
   {
     "key": "compare.add_x",
@@ -511,9 +511,9 @@
   },
   {
     "key": "compare.max_reached",
-    "hy": "Կարելի է համեմատել առավելագույնը 4 հեռախոս",
-    "ru": "Можно сравнить до 4 телефонов",
-    "en": "You can compare up to 4 phones"
+    "hy": "Կարելի է համեմատել առավելագույնը 4 սարք",
+    "ru": "Можно сравнить до 4 устройств",
+    "en": "You can compare up to 4 products"
   },
   {
     "key": "compare.same_category",
@@ -601,15 +601,15 @@
   },
   {
     "key": "privacy.p1",
-    "hy": "Վերջին թարմացումը՝ 2026 թ. հոկտեմբերի 4։",
-    "ru": "Последнее обновление: 4 октября 2026 г.",
-    "en": "Last updated: 4 October 2026."
+    "hy": "Վերջին թարմացումը՝ 2026 թ. հոկտեմբերի 6։",
+    "ru": "Последнее обновление: 6 октября 2026 г.",
+    "en": "Last updated: 6 October 2026."
   },
   {
     "key": "privacy.p2",
-    "hy": "Better.am-ում հաշիվներ, գրանցում և cookie-ներ չկան։ Մենք անձնական տվյալներ չենք հավաքում, չենք վաճառում և ոչ մեկին չենք փոխանցում։",
-    "ru": "На Better.am нет аккаунтов, регистрации и cookie. Мы не собираем, не продаём и никому не передаём персональные данные.",
-    "en": "Better.am has no accounts, no sign-up and no cookies. We do not collect, sell or share personal data."
+    "hy": "Better.am-ում հաշիվներ, գրանցում և գովազդային cookie-ներ չկան։ Մենք տվյալներ չենք վաճառում։ Կարգավորումների, հոսթինգի, այցելությունների հաշվարկի և մեզ ուղարկված նամակների տվյալների մշակումը նկարագրված է ստորև։",
+    "ru": "На Better.am нет аккаунтов, регистрации и рекламных cookie. Мы не продаём данные. Ниже описана обработка данных настроек, хостинга, статистики посещений и писем, которые вы отправляете нам.",
+    "en": "Better.am has no accounts, sign-up or advertising cookies. We do not sell data. Processing of settings, hosting data, visit statistics and emails you send us is described below."
   },
   {
     "key": "privacy.p3",
@@ -649,9 +649,9 @@
   },
   {
     "key": "privacy.p14",
-    "hy": "Այցելությունները հաշվում ենք GoatCounter-ով՝ գաղտնիությունը հարգող ծառայությամբ, որը cookie-ներ չի օգտագործում և անձնական տվյալներ չի պահում։ Յուրաքանչյուր դիտման համար այն գրանցում է էջի հասցեն, թե որ կայքից եք եկել, ձեր դիտարկիչը, օպերացիոն համակարգը, էկրանի չափը և երկիրը։ Ձեր IP հասցեն օգտագործվում է միայն երկիրը որոշելու և մեկ օրվա ընթացքում կրկնվող դիտումները տարբերելու համար և չի պահվում։ Այս թվերն օգտագործում ենք միայն հասկանալու համար, թե որ էջերն ու ապրանքներն են օգտակար։",
-    "ru": "Посещения мы считаем с помощью GoatCounter — сервиса, уважающего конфиденциальность: он не использует cookie и не хранит персональные данные. Для каждого просмотра он записывает адрес страницы, сайт, с которого вы пришли, браузер, операционную систему, размер экрана и страну. Ваш IP-адрес используется только для определения страны и чтобы отличать повторные просмотры в течение одного дня, и не сохраняется. Эти цифры нужны нам только для того, чтобы понимать, какие страницы и товары полезны.",
-    "en": "We count visits with GoatCounter, a privacy-friendly service that uses no cookies and stores no personal data. For each page view it records the page address, the site you came from, your browser, operating system, screen size and country. Your IP address is used only to estimate the country and to tell repeat views apart within one day, and is not stored. We use these figures only to see which pages and products are useful."
+    "hy": "Այցելությունները հաշվում ենք GoatCounter-ով՝ առանց cookie-ների։ Այն մշակում է էջի հասցեն, հղում տվող կայքի տիրույթը, դիտարկիչը, օպերացիոն համակարգը, էկրանի չափը և երկիրը։ IP հասցեն և դիտարկիչի տվյալները կարող են ժամանակավորապես մշակվել հիշողությունում՝ երկիրը և կրկնվող այցելությունները որոշելու համար։ GoatCounter-ի քաղաքականությամբ՝ դրանք տվյալների բազայում չեն պահվում։ Որոնման տեքստն ու կամայական URL պարամետրերը հաշվիչին չենք ուղարկում։ Global Privacy Control կամ Do Not Track միացված լինելու դեպքում հաշվիչը չի բեռնվում։ Լուսանկարները, տառատեսակները և էջերը գալիս են Better.am-ից, հաշվիչը՝ GoatCounter-ից։",
+    "ru": "Посещения считает GoatCounter без cookie. Он обрабатывает адрес страницы, домен источника перехода, браузер, операционную систему, ширину экрана и страну. IP-адрес и сведения браузера могут временно обрабатываться в памяти для определения страны и повторных посещений; по политике GoatCounter они не сохраняются в базе данных. Текст поиска и произвольные параметры URL счётчику не отправляются. При включённых Global Privacy Control или Do Not Track счётчик не загружается. Фотографии, шрифты и страницы загружаются с Better.am, счётчик — с GoatCounter.",
+    "en": "GoatCounter counts visits without cookies. It processes the page path, referring domain, browser, operating system, screen width and country. IP addresses and browser details may be processed temporarily in memory to estimate location and repeated visits; GoatCounter states that these are not stored in its database. We exclude search text and arbitrary URL parameters from the counter. With Global Privacy Control or Do Not Track enabled, the counter does not load. Photos, fonts and pages come from Better.am; the counter comes from GoatCounter."
   },
   {
     "key": "privacy.p7",
@@ -685,9 +685,9 @@
   },
   {
     "key": "privacy.p12",
-    "hy": "«Անձնական տվյալների պաշտպանության մասին» ՀՀ օրենքի համաձայն՝ կարող եք իմանալ, թե ինչ տվյալներ ունենք ձեր մասին, և պահանջել դրանց ուղղումը կամ ջնջումը։ Քանի որ մեզ ուղարկված նամակներից բացի ոչինչ չենք պահում, գրե՛ք «Կապ» էջում նշված հասցեին։ Այս քաղաքականության փոփոխության դեպքում վերևի ամսաթիվը կթարմացվի։",
-    "ru": "По Закону РА «О защите персональных данных» вы можете узнать, какие данные о вас у нас есть, и потребовать их исправления или удаления. Поскольку кроме присланных нам писем мы ничего не храним, напишите на адрес со страницы «Контакты». Если политика изменится, изменится и дата вверху.",
-    "en": "Under the Republic of Armenia Law on Protection of Personal Data you may ask what we hold about you and have it corrected or deleted. As we keep nothing beyond emails sent to us, write to the address on the Contact page. If this policy changes, the date above changes with it."
+    "hy": "Տվյալների վերաբերյալ հարցերի, հասանելիության, ուղղման կամ ջնջման հարցումների համար գրե՛ք «Կապ» էջում նշված հասցեին։ Հարցումը կքննարկենք կիրառելի օրենսդրության համաձայն։ Անանուն ամփոփ վիճակագրությունը հնարավոր չէ կապել կոնկրետ այցելուի հետ։ Քաղաքականության փոփոխության դեպքում վերևի ամսաթիվը կթարմացվի։",
+    "ru": "По вопросам данных, запросам доступа, исправления или удаления напишите на адрес на странице «Контакты». Мы рассмотрим запрос в соответствии с применимым законодательством. Анонимную сводную статистику нельзя связать с конкретным посетителем. При изменении политики обновляется дата выше.",
+    "en": "For data questions or access, correction or deletion requests, write to the address on the Contact page. We will handle requests under applicable law. Anonymous aggregate statistics cannot be linked to a specific visitor. The date above changes when this policy changes."
   },
   {
     "key": "terms.title",

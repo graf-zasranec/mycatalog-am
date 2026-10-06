@@ -9,7 +9,7 @@
 // requests, one every 1.5 s, product pages only - the price is the product:price:amount meta and
 // a page whose JSON-LD availability is not InStock counts as sold out.
 //
-// A page with no price is a sold-out or deleted product: its rows are removed.
+// Remove only explicit sold-out or deleted pages; an unreadable page retains its rows.
 import fs from 'node:fs';
 
 const file = process.argv.slice(2).find(a => !a.startsWith('--'));
@@ -36,7 +36,9 @@ if (fetchIt) {
       if (r.status === 404 || r.status === 410) got[u] = 0;
       else if (r.ok) {
         const h = await r.text(), p = +(h.match(/product:price:amount" content="([\d.]+)/) || [])[1];
-        got[u] = /"availability":\s*"https?:\/\/schema.org\/InStock/.test(h) && p >= 10000 ? Math.round(p) : 0;
+        if (/"availability":\s*"https?:\/\/schema.org\/(OutOfStock|Discontinued|SoldOut)/.test(h)) got[u] = 0;
+        else if (/"availability":\s*"https?:\/\/schema.org\/InStock/.test(h) && p >= 10000) got[u] = Math.round(p);
+        else console.warn('Unrecognized price/stock; keeping previous row: ' + u);
       }   // any other failure leaves the row as it was, to be tried next run
     } catch { }
     await new Promise(r => setTimeout(r, 1500));

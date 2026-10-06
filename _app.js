@@ -144,6 +144,7 @@ try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getI
 // exists, or an array that came back as a string would all render as a broken page.
 for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses']) if (!Array.isArray(st[k])) st[k] = [];
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
+if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
 // ?lang=ru from the Russian/English static pages opens the app in that language
 { const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
@@ -272,6 +273,79 @@ const shopName = k => (P.shops && P.shops[k] && P.shops[k].name) || k;
 const shopCount = list => new Set(list.map(o => o.shop)).size;
 const shopSite = k => (P.shops && P.shops[k] && P.shops[k].site) || '#';
 const realFor = (p, storage) => { const o = offersFor(p).find(o => o.storage === storage); return o ? o.price : null; };
+// A missing RAM value is inferred only when this capacity/screen has one known RAM build.
+// It must never borrow the cheapest 8 GB offer for a selected 16 GB configuration.
+function offerConfig(p, o) {
+  const variants = (p.variants || []).filter(v =>
+    (o.storage == null || v.storage === o.storage) &&
+    (o.size == null || v.size == null || v.size === o.size));
+  const one = key => { const values = [...new Set(variants.map(v => v[key]).filter(v => v != null))];
+    return values.length === 1 ? values[0] : null; };
+  const fixedCPU = p.category === 'laptop' && !/\//.test(p.chipset?.name || '') ? p.chipset?.name : null;
+  return { ...o, ram: o.ram ?? one('ram'), storage: o.storage ?? one('storage'), size: o.size ?? one('size'), cpu: o.cpu ?? one('cpu') ?? fixedCPU ?? null };
+}
+function configPool(p) {
+  const hasRAM = (p.variants || []).some(v => v.ram != null);
+  const real = offersFor(p).map(o => offerConfig(p, o)).filter(o => o.storage != null && (!hasRAM || o.ram != null));
+  const pool = p.variantUnit === 'mm' || !real.length ? (p.variants || []) : real;
+  const seen = new Set();
+  return pool.filter(v => { const k = [v.cpu ?? '', v.ram ?? '', v.storage ?? '', v.size ?? '', v.band ?? ''].join('|');
+    return seen.has(k) ? false : (seen.add(k), true); });
+}
+function chooseConfig(p, current, axis, value) {
+  let pool = configPool(p).filter(v => v[axis] === value);
+  if (axis !== 'size' && current.size != null && pool.some(v => v.size === current.size))
+    pool = pool.filter(v => v.size === current.size);
+  const match = pool.find(v => ['cpu', 'ram', 'storage', 'size', 'band'].every(k => k === axis || current[k] == null || v[k] == null || v[k] === current[k]));
+  const next = match || pool.slice().sort((a, b) => (a.price || a.priceAmd || 0) - (b.price || b.priceAmd || 0)
+    || (a.storage || 0) - (b.storage || 0) || (a.ram || 0) - (b.ram || 0))[0];
+  return next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size', 'band'].map(k => [k, next[k] ?? null])), configSpecs: next.configSpecs || null, [axis]: value }
+    : { ...current, [axis]: value };
+}
+function selectionOffers(p, sel) {
+  const capacities = (p.variants || []).map(v => v.storage).filter(v => v != null);
+  const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
+  return offersFor(p).filter(o => {
+    const c = offerConfig(p, o);
+    return (sel.storage == null || p.variantUnit === 'mm' || c.storage === sel.storage
+        || (c.storage == null && sel.storage === Math.min(...capacities)))
+      && (sel.ram == null || c.ram === sel.ram)
+      && (sel.cpu == null || c.cpu === sel.cpu)
+      && (sel.size == null || c.size === sel.size || (screens.size < 2 && c.size == null))
+      && (!sel.band || !o.band || o.band === sel.band)
+      && (sel.esim == null || o.esim === sel.esim)
+      && (sel.cell == null || o.cell === sel.cell);
+  });
+}
+const catalogOffers = (p, s = st) => offersFor(p).filter(o => {
+  const c = offerConfig(p, o);
+  return (!s.ram || c.ram >= s.ram) && (!s.stor || c.storage >= s.stor)
+    && (!(s.shops || []).length || s.shops.includes(o.shop));
+});
+const catalogVariants = (p, s = st) => (p.variants || []).filter(v => (!s.ram || v.ram >= s.ram) && (!s.stor || v.storage >= s.stor));
+const catalogPrice = (p, s = st) => catalogOffers(p, s)[0]?.price
+  ?? (!hasReal(p) ? catalogVariants(p, s)[0]?.priceAmd ?? p.priceAmd : null);
+function initialConfig(p) {
+  const o = catalogOffers(p)[0] || offersFor(p)[0];
+  const v = o ? offerConfig(p, o) : catalogVariants(p)[0] || p.variants?.[0] || {};
+  return { id: p.id, color: o?.color || p.colors?.[0] || null, ram: v.ram ?? null,
+    storage: v.storage ?? p.variants?.[0]?.storage ?? null, size: v.size ?? null,
+    band: v.band ?? null, cpu: v.cpu ?? null, configSpecs: v.configSpecs || null, esim: typeof o?.esim === 'boolean' ? o.esim : null,
+    cell: typeof o?.cell === 'boolean' ? o.cell : null };
+}
+function selectedProduct(p, sel) {
+  const changedCPU = sel.cpu && sel.cpu !== p.chipset?.name;
+  const changedScreen = sel.size != null && p.display?.size != null && Math.abs(sel.size - p.display.size) >= 1;
+  const facts = sel.configSpecs || {};
+  const size = facts.display?.size ?? (changedScreen ? sel.size : p.display?.size ?? sel.size);
+  return { ...p, variants: [{ ...sel }],
+    graphics: facts.graphics || (changedCPU ? undefined : p.graphics),
+    chipset: { ...(changedCPU ? {} : p.chipset), ...facts.chipset, ...(sel.cpu ? { name: sel.cpu } : {}) },
+    display: { ...(changedScreen || changedCPU ? {} : p.display), ...facts.display, ...(size != null ? { size } : {}) },
+    body: { ...(changedScreen || changedCPU ? {} : p.body), ...facts.body },
+    battery: { ...(changedScreen || changedCPU ? {} : p.battery), ...facts.battery },
+    connectivity: { ...p.connectivity, ...facts.connectivity }, os: facts.os || p.os };
+}
 // A configuration the maker sells is not automatically a configuration Armenia sells. The
 // catalogue lists what the manufacturer offers; the offers say what is actually on a shelf here.
 // Anything with no offer behind it is shown struck through and grey rather than hidden, so the
@@ -327,7 +401,12 @@ const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) 
 // the days recorded before that only knew the cheapest of anything, which for the smallest size
 // is the same number, so that size keeps its full history and the others start from the change.
 let HCUR = null;
-function histSeries(p, stor, scr) {
+function histSeries(p, stor, scr, ram = null, cpu = null) {
+  // Old history records storage/screen, not RAM/CPU. An ambiguous build must
+  // not display another configuration's cheaper historical price.
+  const builds = configPool(p).filter(v => (stor == null || v.storage === stor) && (scr == null || v.size === scr));
+  if ((ram != null && new Set(builds.map(v => v.ram)).size > 1) ||
+      (cpu != null && new Set(builds.map(v => v.cpu)).size > 1)) return [];
   const sizes = [...new Set((p.variants || []).map(v => v.storage).filter(v => v != null))];
   const base = stor != null ? String(stor) : 'base';
   const smallest = stor == null || sizes.length < 2 || stor === Math.min(...sizes);
@@ -349,7 +428,7 @@ function historyHTML(p) {
   const stor = SEL.id === p.id ? SEL.storage : null, scr = SEL.id === p.id ? SEL.size : null;
   const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
   const cfg = [multiScr && scr != null ? inch(scr) : '', stor != null ? gb(stor, p.variantUnit) : ''].filter(Boolean).join(' · ') || fullName(p);
-  const S = histSeries(p, stor, scr);
+  const S = histSeries(p, stor, scr, SEL.id === p.id ? SEL.ram : null, SEL.id === p.id ? SEL.cpu : null);
   HCUR = S.length > 1 ? { S, cfg } : null;
   const head = `<h2 class="sh">${esc(x('histT'))}</h2>`;
   if (!S.length) return head + `<p class="note">${esc(x('histNone').replace('{c}', cfg))}</p>`;
@@ -675,9 +754,12 @@ const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop'
 function matches(p, s) {
   if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
   if (!hayMatch(p, s.q)) return false;
-  const pr = bestOf(p);
+  const pr = catalogPrice(p, s);
+  if ((s.ram || s.stor || (s.shops || []).length) &&
+      (hasReal(p) ? !catalogOffers(p, s).length : !catalogVariants(p, s).length)) return false;
   if (pr < s.pmin || pr > s.pmax) return false;
   for (const k in FILT) {
+    if (k === 'ram' || k === 'stor') continue; // checked jointly against actual configurations above
     const f = FILT[k];
     // an ACTIVE spec filter excludes anything without that spec: earbuds have no screen, so
     // they must not slip through a "120 Hz or more" filter merely by lacking the field
@@ -747,8 +829,8 @@ const typTier = p => tiersOf(p).filter(r => r.shops >= 3 && r.below > 0)
 const spreadOf = p => bestTier(p)?.gap || 0;
 const SORTS = {
   popular: (a, b) => b.popularity - a.popularity,
-  price_asc: (a, b) => bestOf(a) - bestOf(b),
-  price_desc: (a, b) => bestOf(b) - bestOf(a),
+  price_asc: (a, b) => catalogPrice(a) - catalogPrice(b),
+  price_desc: (a, b) => catalogPrice(b) - catalogPrice(a),
   newest: (a, b) => (b.released || '').localeCompare(a.released || ''),
   brand: (a, b) => a.brand.localeCompare(b.brand) || fullName(a).localeCompare(fullName(b)),
   battery: (a, b) => (b.battery?.capacity || 0) - (a.battery?.capacity || 0),
@@ -780,6 +862,20 @@ const specVal = (get, p) => {
   let v; try { v = get(p); } catch (e) { return null; }
   return v == null || v === '' || /undefined|null|NaN/.test(String(v)) ? null : v;
 };
+// Legacy importers filled phone-shaped fields for every category. Applicability is
+// separate from whether a value happens to exist in that old record.
+function specAllowed(key, p) {
+  const cat = catOf(p), mobile = ['phone', 'tablet'].includes(cat);
+  if (['f.main_cam', 'f.ultrawide', 'f.telephoto', 'f.front_cam', 'f.video'].includes(key)) return mobile;
+  if (['f.sim', 'f.network', 'f.nfc', 'f.wireless'].includes(key)) return mobile || cat === 'watch';
+  if (key === 'f.card_slot') return mobile || cat === 'laptop' || cat === 'camera';
+  if (['f.capacity', 'f.charging'].includes(key)) return ['phone', 'tablet', 'laptop', 'watch', 'headphones', 'speaker', 'ereader', 'drone'].includes(cat);
+  if (['f.screen_size', 'f.screen_type', 'f.resolution', 'f.refresh_rate', 'f.ppi', 'f.brightness', 'f.protection', 'f.touch'].includes(key))
+    return ['phone', 'tablet', 'laptop', 'watch', 'tv', 'monitor', 'ereader'].includes(cat);
+  if (['f.chipset', 'f.process', 'f.cpu', 'f.gpu', 'f.ram', 'f.storage', 'f.os', 'f.updates'].includes(key))
+    return ['phone', 'tablet', 'laptop', 'desktop', 'watch', 'console', 'component', 'ereader'].includes(cat);
+  return true;
+}
 const GROUPS = [
   ['sec.display', [
     ['f.screen_size', p => p.display.size + '″', p => p.display.size],
@@ -823,7 +919,7 @@ const GROUPS = [
   ]],
   ['sec.battery', [
     // a laptop's battery is rated in watt-hours (70 Wh), not milliamp-hours - "70 mAh" read as a typo
-    ['f.capacity', p => money(p.battery.capacity) + ' ' + u(p.category === 'laptop' ? 'wh' : 'mah'), p => p.battery.capacity, 1],
+    ['f.capacity', p => p.battery.capacity > 0 ? (p.category === 'laptop' ? new Intl.NumberFormat(st.lang, { maximumFractionDigits: 1 }).format(p.battery.capacity) : money(p.battery.capacity)) + ' ' + u(p.category === 'laptop' ? 'wh' : 'mah') : null, p => p.battery.capacity, 1],
     ['f.charging', p => p.battery.wired && p.battery.wired + ' ' + u('w'), p => p.battery.wired, 1],
     ['f.wireless', p => p.battery?.capacity == null ? null : p.battery.wireless ? p.battery.wireless + ' ' + u('w') : t('common.no'), p => p.battery?.wireless, 1]
   ]],
@@ -962,6 +1058,7 @@ function toggleCmp(id) {
   }
   else {
     st.cmp.push(id);
+    st.cmpConfigs[id] = SEL.id === id ? { ...SEL } : initialConfig(byId(id));
     // the plus reads as "compare this", so it goes there - the compare page carries its own
     // add slot, which is where the second and third picks come from
     if (location.hash !== '#/compare') setTimeout(() => { location.hash = '#/compare'; }, 120);
@@ -1212,7 +1309,7 @@ const activeChips = () => {
 // appears is its own best price.
 const shopRows = (p, n) => {
   const seen = new Map();
-  for (const o of offersFor(p)) if (!seen.has(o.shop)) seen.set(o.shop, o.price);
+  for (const o of catalogOffers(p)) if (!seen.has(o.shop)) seen.set(o.shop, o.price);
   return [...seen].slice(0, n);
 };
 function card(p) {
@@ -1221,11 +1318,10 @@ function card(p) {
   // it belongs to and the next two shops sit under it with their own prices.
   const rows = shopRows(p, 3);
   const rest = rows.slice(1);
-  const more = shopCount(offersFor(p)) - rows.length;
+  const more = shopCount(catalogOffers(p)) - rows.length;
   // show the configuration the displayed price actually belongs to, not simply the first variant
-  const cheapest = offersFor(p)[0];
-  const v = (cheapest && p.variants.find(z => z.storage === cheapest.storage))
-    || p.variants[0] || {};
+  const cheapest = catalogOffers(p)[0];
+  const v = cheapest ? offerConfig(p, cheapest) : catalogVariants(p)[0] || {};
   return `<article class="pcard" data-id="${esc(p.id)}">
     <div class="pshot">
       ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
@@ -1240,7 +1336,7 @@ function card(p) {
       <span class="eyebrow">${esc(p.brand)}</span>
       <h2><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${nameTag(p)}</h2>
       <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
-      <div class="pfoot"><span class="pprice num">${amd(bestOf(p))}
+      <div class="pfoot"><span class="pprice num">${amd(catalogPrice(p))}
         <s>${rows.length ? esc(shopName(rows[0][0])) : esc(x('estimated'))}</s></span>
         <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span></div>
       ${rest.length ? `<ul class="poffers">${rest.map(([sh, pr]) =>
@@ -1454,10 +1550,19 @@ setInterval(() => {
 // A counter, if one is configured, sees the first load and nothing after it: every page on this
 // site is a hash change. Both calls are optional chains, so with no counter this is three
 // property reads that find nothing.
+const counterPath = () => {
+  const h = location.hash.slice(1).split('?')[0];
+  const m = h.match(/^\/(p|offers)\/([^/]+)$/);
+  const path = m && byId(m[2]) ? h : /^\/(compare|search|privacy|terms|contact|blog)$/.test(h) ? h
+    : /^\/c\/[a-z]+$/.test(h) ? h : '/';
+  return location.pathname + (path === '/' ? '' : '#' + path);
+};
 const countView = () => {
   try {
+    if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
+    // Analytics receives public routes only, never search text, arbitrary hashes or titles.
     window.umami?.track?.();
-    window.goatcounter?.count?.({ path: location.pathname + location.hash, event: false });
+    window.goatcounter?.count?.({ path: counterPath(), title: 'Better.am', event: false });
   } catch (e) { }
 };
 
@@ -1811,89 +1916,29 @@ function cardShow(btn) {
   img.classList.add('out');
   const swap = () => { if (img.dataset.cur !== want) return;
     img.src = want; img.alt = (name ? name.textContent + ', ' : '') + btn.dataset.cname; img.classList.remove('out'); };
-  const ready = pre.decode ? pre.decode().catch(() => {}) : Promise.resolve();
-  Promise.all([ready, new Promise(r => setTimeout(r, 110))]).then(swap);
+  const ready = pre.decode ? pre.decode() : new Promise((resolve, reject) => {
+    pre.onload = resolve; pre.onerror = reject;
+    if (pre.complete) pre.naturalWidth ? resolve() : reject(new Error('Image unavailable'));
+  });
+  Promise.all([ready, new Promise(r => setTimeout(r, 110))]).then(swap).catch(() => {
+    if (img.dataset.cur !== want) return;
+    delete img.dataset.cur; img.classList.remove('out');
+    shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', false));
+  });
 }
 document.addEventListener('pointerover', e => { const b = e.target.closest && e.target.closest('.cdot'); if (b) cardShow(b); });
 document.addEventListener('focusin', e => { if (e.target.classList && e.target.classList.contains('cdot')) cardShow(e.target); });
 
 let SEL = { id: null, color: null, storage: null, ram: null, esim: null, size: null, band: null, cell: null };
 function initSel(p) {
-  if (SEL.id === p.id) return;
-  const offs = offersFor(p);
-  // start on whatever the cheapest real offer actually is
-  const both = offs.some(o => o.esim === true) && offs.some(o => o.esim === false);
-  SEL = {
-    id: p.id,
-    esim: both ? false : null,
-    color: (p.colors || []).find(c => sold(p, 'color', c)) || (p.colors || [])[0] || null,
-    storage: (offs.find(o => o.storage != null) || {}).storage ?? (p.variants[0] || {}).storage ?? null,
-    ram: null,
-    // A MacBook Air M5 is one product in two screens. Start on the screen somebody is actually
-    // selling, falling back to the first the catalogue lists.
-    size: (offs.find(o => o.size != null) || {}).size ?? (p.variants.find(v => v.size != null) || {}).size ?? null,
-    // An Ultra with a Milanese Loop is the same watch and 50,000 dearer, so the band is a choice
-    // on one page rather than three products that differ by a strap.
-    band: (p.variants.find(v => v.band) || {}).band ?? null,
-    // A tablet sold both Wi-Fi only and Wi-Fi + Cellular opens on Wi-Fi, the one most people buy
-    cell: offs.some(o => o.cell === true) && offs.some(o => o.cell === false) ? false : null
-  };
-  // RAM and storage are sold as a pair, so start on a combination that exists - and within the
-  // chosen screen, because the 15 is not sold in every configuration the 13 is.
-  const pool = SEL.size != null ? p.variants.filter(v => v.size === SEL.size) : p.variants;
-  const v0 = pool.find(v => v.storage === SEL.storage) || pool[0] || p.variants[0];
-  if (v0) { SEL.storage = v0.storage ?? SEL.storage; SEL.ram = v0.ram; } else SEL.ram = null;
-  // Everything above picks a combination the CATALOGUE lists, which is not the same as one anybody
-  // here sells. A MacBook Air M4 13-inch/16GB/512GB is a real Apple machine that no Armenian shop
-  // stocks, and the page opened on it: a list price, and not one offer under it. If the opening
-  // choice shows nothing, move it onto the cheapest offer that does exist - which is what the
-  // comment at the top of this function always claimed it did.
-  // The card quotes the cheapest offer, so the page opens on exactly that build - the iPhone 17
-  // card said 354,000 (eSIM) and the page opened on Nano-SIM at 379,000, which reads as bait
-  // (owner, 2026-10-02).
-  if (offs.length) {
-    const o = offs[0];                                    // offersFor is sorted cheapest first
-    if (o.size != null) SEL.size = o.size;
-    if (both && typeof o.esim === 'boolean') SEL.esim = o.esim;
-    if (SEL.cell != null && typeof o.cell === 'boolean') SEL.cell = o.cell;
-    const caps = (p.variants || []).map(v => v.storage).filter(v => v != null);
-    // A shop that states no capacity is quoting the base model, the same reading visibleOffers uses
-    SEL.storage = o.storage ?? (caps.length ? Math.min(...caps) : SEL.storage);
-    const vm = (p.variants || []).find(v => v.storage === SEL.storage
-      && (SEL.size == null || v.size == null || v.size === SEL.size));
-    SEL.ram = o.ram ?? (vm ? vm.ram : null);
-  }
+  if (SEL.id !== p.id) SEL = initialConfig(p);
 }
 // Narrow the offer list to the chosen options.
 // RAM and storage decide the price, so those filters are HARD: if nothing matches, the answer is
 // "no shop sells this configuration", not some other variant's price. Colour is soft, because it
 // rarely changes the price and many listings omit it.
 function visibleOffers(p) {
-  let o = offersFor(p);
-  if (SEL.storage != null && p.variants.length) {
-    // Some shops (Mobile Centre) list no capacity. That price is for the base model, so it may
-    // only stand in for the smallest tier - otherwise it would undercut a real 1 TB offer.
-    const sizes = p.variants.map(v => v.storage).filter(v => v != null);
-    const base = sizes.length ? Math.min(...sizes) : null;
-    const anySize = p.variantUnit === 'mm';   // a watch listing states no case size; it sells all of them
-    o = o.filter(v => v.storage === SEL.storage || (v.storage == null && (anySize || SEL.storage === base)));
-  }
-  if (SEL.ram != null) o = o.filter(v => v.ram == null || v.ram === SEL.ram);
-  // Strict, unlike RAM: a 14-inch and a 16-inch are different machines at different prices, so the
-  // button shows that screen's offers and nothing else - otherwise both buttons quote one number.
-  // Only where the product really is sold in more than one screen, though: on a single-screen
-  // laptop there is nothing to choose, and dropping an offer that merely never stated its size
-  // would throw away a real price for no gain.
-  const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
-  if (SEL.size != null) {
-    o = screens.size > 1 ? o.filter(v => v.size === SEL.size)
-                         : o.filter(v => v.size == null || v.size === SEL.size);
-  }
-  if (SEL.band) o = o.filter(v => !v.band || v.band === SEL.band);
-  // strict: an offer whose SIM build the shop never stated is not evidence for either button.
-  // Treating "not stated" as "tray" put Pixel's 559 000 under Nano-SIM, below the 625 000 eSIM.
-  if (SEL.esim != null) o = o.filter(v => v.esim === SEL.esim);
-  if (SEL.cell != null) o = o.filter(v => v.cell === SEL.cell);
+  const o = selectionOffers(p, SEL);
   // One shop listing the same phone in four colours at one price is one offer to a reader, not
   // four. The row shows shop, capacity, SIM build and price - never the colour, because there is
   // deliberately no colour picker here - so four identical-looking rows were four ways of saying
@@ -1979,7 +2024,7 @@ function detailView(p) {
     SEL.cell != null ? cellLbl(SEL.cell) : ''].filter(Boolean).join(' · ');
   // The chart's verdict, repeated where the decision is made. Only once the history has loaded
   // and only for the size picked - the chart's own series, so the two never disagree.
-  const hs = histSeries(p, SEL.storage, SEL.size);
+  const hs = histSeries(p, SEL.storage, SEL.size, SEL.ram, SEL.cpu);
   let verdict = '';
   if (hs.length > 1 && lo != null && hs[hs.length - 1].v === lo) {
     const lowPt = hs.reduce((a, b) => b.v < a.v ? b : a), low = lowPt.v, pct = (lo - low) / low * 100;
@@ -1994,7 +2039,7 @@ function detailView(p) {
   const box = PBOX[p.id] || [0, 1000];   // the product inside its square photo, top and bottom in thousandths
   // A colour picked that has no photo of its own keeps the main shot, which is another colour -
   // said on the picture, or the swatch reads as broken ("I clicked Blue and it is still black").
-  const otherShot = cols.length > 1 && SEL.color && !colorPhoto(p, SEL.color) && CIMG[p.id] && Object.keys(CIMG[p.id]).some(k => k !== 'main');
+  const otherShot = cols.length > 0 && SEL.color && !colorPhoto(p, SEL.color);
   // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
   // option blocks below simply do not render
   // SIM is a fact, not a choice - no shop prices a phone by its SIM tray - so these are spans,
@@ -2014,14 +2059,16 @@ function detailView(p) {
   const cellPick = simAll.some(o => o.cell === true) && simAll.some(o => o.cell === false);
   const sizes = [...new Set(p.variants.map(v => v.size))].filter(v => v != null).sort((a, b) => a - b);
   const bands = [...new Set(p.variants.map(v => v.band))].filter(Boolean);
-  const vPool = SEL.size != null && sizes.length ? p.variants.filter(v => v.size === SEL.size) : p.variants;
+  const configs = configPool(p);
+  const cpus = [...new Set(configs.map(v => v.cpu).filter(Boolean))];
+  const vPool = configs.filter(v => (SEL.size == null || v.size == null || v.size === SEL.size) && (!SEL.cpu || v.cpu === SEL.cpu));
   const rams = [...new Set(vPool.map(v => v.ram))].filter(v => v != null);
-  const stors = [...new Set(vPool.map(v => v.storage))].filter(v => v != null);
+  const stors = [...new Set(vPool.filter(v => SEL.ram == null || v.ram === SEL.ram).map(v => v.storage))].filter(v => v != null);
   const inC = st.cmp.includes(p.id);
 
   const specs = GROUPS.map(([g, rows]) => {
-    const body = rows.map(([k, get]) => {
-      const v = specVal(get, p), bad = v == null;
+    const body = rows.filter(([k]) => specAllowed(k, p)).map(([k, get]) => {
+      const v = specVal(get, selectedProduct(p, SEL)), bad = v == null;
       const key = k === 'f.storage' ? storageLabel(p) : k;
       const q = unsureRow(p, k) ? ` <abbr class="unsure" title="${esc(x('unsureTip'))}">${esc(x('unsureMark'))}</abbr>` : '';
       return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}${q}</dd></div>`;
@@ -2050,9 +2097,10 @@ function detailView(p) {
             <div class="bs">${bands.map(bv => `<button data-band="${esc(bv)}" class="${bv === SEL.band ? 'on' : ''}${sold(p, 'band', bv) ? '' : ' na'}"${sold(p, 'band', bv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${bv === SEL.band}">${esc(bv)}</button>`).join('')}</div></div>` : ''}
           ${sizes.length > 1 ? `<div class="og"><label>${esc(t('f.screen'))}</label>
             <div class="bs">${sizes.map(sv => `<button data-size="${sv}" class="${sv === SEL.size ? 'on' : ''}${sold(p, 'size', sv) ? '' : ' na'}"${sold(p, 'size', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.size}">${esc(inch(sv))}</button>`).join('')}</div></div>` : ''}
-          ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
+          ${cpus.length > 1 ? `<div class="og"><label>${esc(t('f.chipset'))}</label><div class="bs">${cpus.map(cpu => `<button data-cpu="${esc(cpu)}" class="${cpu === SEL.cpu ? 'on' : ''}" aria-pressed="${cpu === SEL.cpu}">${esc(cpu)}</button>`).join('')}</div></div>` : ''}
+          ${rams.length ? `<div class="og"><label>${esc(t('f.ram'))}</label>
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
-          ${stors.length > 1 ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
+          ${stors.length ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
             <div class="bs">${simOpts.map(([n, want]) =>
@@ -2456,43 +2504,62 @@ const bigCats = () => {
   for (const p of DATA) n[catOf(p)] = (n[catOf(p)] || 0) + 1;
   return Object.keys(n).sort((a, b) => n[b] - n[a]).slice(0, 6);
 };
+function compareConfig(p) {
+  const saved = st.cmpConfigs[p.id];
+  const pool = configPool(p);
+  const match = saved && pool.find(v => ['cpu', 'ram', 'storage', 'size'].every(k => saved[k] == null || v[k] === saved[k]));
+  return match ? { ...initialConfig(p), ...saved, configSpecs: match.configSpecs || null, id: p.id } : initialConfig(p);
+}
+function compareOptions(p, sel) {
+  const pool = configPool(p).filter(v => (sel.size == null || v.size == null || v.size === sel.size) && (!sel.cpu || v.cpu === sel.cpu));
+  const fields = [['cpu', 'f.chipset', configPool(p), v => v], ['ram', 'f.ram', pool, v => v + ' ' + u('gb')],
+    ['storage', storageLabel(p), pool.filter(v => sel.ram == null || v.ram === sel.ram), v => gb(v, p.variantUnit)],
+    ['size', 'f.screen', configPool(p), inch]];
+  return `<div class="cmp-options">${fields.map(([axis, label, source, fmt]) => {
+    const values = [...new Set(source.map(v => v[axis]).filter(v => v != null))].sort((a, b) => axis === 'cpu' ? a.localeCompare(b) : a - b);
+    if (!values.length || (axis === 'size' && values.length < 2)) return '';
+    return `<label><span class="cmp-option-label">${esc(t(label))}</span><select data-cmp-axis="${axis}" data-cmp-id="${esc(p.id)}" aria-label="${esc(fullName(p) + ': ' + t(label))}">
+      ${values.map(v => `<option value="${esc(v)}"${v === sel[axis] ? ' selected' : ''}>${esc(fmt(v))}</option>`).join('')}</select></label>`;
+  }).join('')}</div>`;
+}
 function compareView() {
   const ps = st.cmp.map(byId).filter(Boolean);
+  const selections = ps.map(compareConfig), shown = ps.map((p, i) => selectedProduct(p, selections[i]));
+  const chosenOffers = ps.map((p, i) => selectionOffers(p, selections[i]));
   // It borrowed the catalogue's "try changing the filters" - a screen with no filters on it.
   // The button below already says what to do, so the wrong sentence just goes.
-  if (!ps.length) return `<div class="shell"><div class="empty" style="margin-top:40px">
-    <h1 class="emptyh">${esc(t('compare.empty'))}</h1>
-    <a class="btn" href="#/">${esc(t('compare.add_phone'))}</a></div></div>`;
-  const n = ps.length, canAdd = n < MAXCMP, slot = n === 1 ? 1 : 0;
-  const cols = `200px repeat(${n + slot},minmax(0,1fr))`;
+  const n = ps.length, canAdd = n < MAXCMP, slot = canAdd ? 1 : 0;
+  const cols = n ? `200px repeat(${n + slot},minmax(0,1fr))` : 'minmax(0,1fr)';
 
   let rows = '', nDiff = 0, nSame = 0;
   // Price first: it is what people compare before anything else, and the table never had it.
   // The cheapest shop and how many shops carry it, with the cheapest of the products marked.
-  {
-    const best = ps.map(p => offersFor(p).length ? bestOf(p) : null);
+  if (n) {
+    const best = chosenOffers.map(list => list[0]?.price ?? null);
     const ok = best.filter(v => v != null), lo = ok.length > 1 ? Math.min(...ok) : null;
-    rows += `<div class="grp">${esc(t('filter.price'))}</div><div class="k row-diff">${esc(x('bestPrice'))}</div>`
+    rows += `<div class="grp" data-cmp-row="group:price">${esc(t('filter.price'))}</div><div class="k row-diff" data-cmp-row="label:price">${esc(x('bestPrice'))}</div>`
       + ps.map((p, i) => {
-        const o = offersFor(p)[0];
-        return `<div class="c cprice${best[i] != null && best[i] === lo && new Set(ok).size > 1 ? ' best' : ''}">${o
-          ? `<b class="num">${amd(o.price)}</b><span>${esc(shopName(o.shop))} · ${esc(nx(shopCount(offersFor(p)), 'shops'))}</span>
-            <a class="cpgo" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>`
+        const o = chosenOffers[i][0];
+        return `<div data-cmp-value="${esc(p.id)}:price" class="c cprice${best[i] != null && best[i] === lo && new Set(ok).size > 1 ? ' best' : ''}">${o
+          ? `<b class="num">${amd(o.price)}</b><span>${esc(shopName(o.shop))} · ${esc(nx(shopCount(chosenOffers[i]), 'shops'))}</span>
+            <a class="cpgo" data-cmp-open="${esc(p.id)}" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>`
           : '—'}</div>`;
-      }).join('') + (slot ? '<div class="c"></div>' : '');
+      }).join('') + (slot ? '<div class="c" data-cmp-row="empty:price"></div>' : '');
   }
   for (const [g, defs] of GROUPS) {
-    rows += `<div class="grp">${esc(t(g))}</div>`;
-    for (const [k, get, num, dir] of defs) {
+    const applicable = defs.filter(([k, get]) => shown.some(p => specAllowed(k, p) && specVal(get, p) != null));
+    if (!applicable.length) continue;
+    rows += `<div class="grp" data-cmp-row="${esc('group:' + g)}">${esc(t(g))}</div>`;
+    for (const [k, get, num, dir] of applicable) {
       // tr(): the product page shows these in the reader's language, and the same row here was English
-      const vals = ps.map(p => { const v = specVal(get, p); return v == null ? '—' : tr(String(v), st.lang); });
+      const vals = shown.map(p => { const v = specAllowed(k, p) ? specVal(get, p) : null; return v == null ? '—' : tr(String(v), st.lang); });
       if (vals.every(v => v === '—')) continue;
       const same = vals.every(v => v === vals[0]);
       same ? nSame++ : nDiff++;
       const cls = same ? 'row-same' : '';
       let bi = -1;
       if (num && dir && n > 1) {
-        const nv = ps.map(p => { try { return num(p); } catch (e) { return null; } });
+        const nv = shown.map(p => { try { return num(p); } catch (e) { return null; } });
         const ok = nv.filter(v => typeof v === 'number' && isFinite(v));
         if (ok.length > 1 && new Set(ok).size > 1) bi = nv.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok));
       }
@@ -2501,9 +2568,9 @@ function compareView() {
       // value that is simply missing.
       // The owner asked for exactly that: a green "best" beside every red one was noise.
       const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
-      rows += `<div class="k ${same ? 'row-same' : 'row-diff'}">${esc(t(k))}</div>` +
-        vals.map((v, i) => `<div class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
-        (slot ? `<div class="c ${cls}"></div>` : '');
+      rows += `<div class="k ${same ? 'row-same' : 'row-diff'}" data-cmp-row="${esc('label:' + k)}">${esc(t(k))}</div>` +
+        vals.map((v, i) => `<div data-cmp-value="${esc(ps[i].id + ':' + k)}" class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
+        (slot ? `<div class="c ${cls}" data-cmp-row="${esc('empty:' + k)}"></div>` : '');
     }
   }
   return `<div class="shell">
@@ -2518,7 +2585,7 @@ function compareView() {
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
         <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
     </div>
-    <div class="cwrap" id="cwrap" style="--cols:${cols};--n:${n}">
+    <div class="cwrap${n ? '' : ' cmp-empty'}" id="cwrap" style="--cols:${cols};--n:${n + slot}">
       <div class="cphotos"><div class="pad"></div>
         ${ps.map(p => `<div class="c"><a href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${esc(THUMB(p.id))}" alt="" decoding="async"></a>
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button></div>`).join('')}
@@ -2526,7 +2593,7 @@ function compareView() {
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
       </div>
       <div class="chead"><div class="pad"></div>
-        ${ps.map(p => `<div class="ccol"><a class="cname" href="#/p/${esc(p.id)}">${esc(fullName(p))}${nameTag(p)}</a></div>`).join('')}
+        ${ps.map((p, i) => `<div class="ccol"><a class="cname" data-cmp-open="${esc(p.id)}" href="#/p/${esc(p.id)}">${esc(fullName(p))}${nameTag(p, selections[i].size)}</a>${compareOptions(p, selections[i])}</div>`).join('')}
         ${slot ? `<div class="ccol"><b class="addlbl">${esc(addLabel(ps[0]))}</b></div>` : ''}
       </div>
       <div class="ctable">${rows}</div>
@@ -2549,8 +2616,53 @@ function compareView() {
     </div></div>`;
 }
 
+function updateComparison(p, axis, value) {
+  st.cmpConfigs[p.id] = chooseConfig(p, compareConfig(p), axis, value);
+  save();
+  const template = document.createElement('template');
+  template.innerHTML = compareView();
+  const fresh = template.content;
+  // Keep the native select itself: replacing it loses focus and visibly redraws
+  // the header. Only its valid choices and selected value need updating.
+  const controls = $$('[data-cmp-axis]').filter(control => control.dataset.cmpId === p.id);
+  const options = controls[0]?.closest('.cmp-options');
+  const freshControls = [...fresh.querySelectorAll('[data-cmp-axis]')].filter(control => control.dataset.cmpId === p.id);
+  for (const next of freshControls) {
+    const current = controls.find(control => control.dataset.cmpAxis === next.dataset.cmpAxis);
+    if (current) {
+      if (current.innerHTML !== next.innerHTML) current.innerHTML = next.innerHTML;
+      current.value = next.value;
+    } else if (options) options.appendChild(next.closest('label'));
+  }
+  for (const current of controls) if (!freshControls.some(next => next.dataset.cmpAxis === current.dataset.cmpAxis)) current.closest('label').remove();
+  const currentName = controls[0]?.closest('.ccol')?.querySelector('.cname');
+  const nextName = freshControls[0]?.closest('.ccol')?.querySelector('.cname');
+  if (currentName && nextName && currentName.innerHTML !== nextName.innerHTML) currentName.innerHTML = nextName.innerHTML;
+  const table = $('.ctable'), nextTable = fresh.querySelector('.ctable');
+  if (typeof table.getAnimations === 'function') table.getAnimations({ subtree: true }).forEach(animation => animation.cancel());
+  const key = cell => cell.dataset.cmpValue || cell.dataset.cmpRow;
+  const existing = new Map([...table.children].map(cell => [key(cell), cell]));
+  const changed = [], rows = [...nextTable.children].map(next => {
+    const current = existing.get(key(next));
+    if (!current) { if (next.dataset.cmpValue) changed.push(next); return next; }
+    if (current.innerHTML !== next.innerHTML) {
+      current.innerHTML = next.innerHTML;
+      if (current.dataset.cmpValue) changed.push(current);
+    }
+    current.className = next.className;
+    return current;
+  });
+  if (rows.length !== table.children.length || rows.some((cell, i) => cell !== table.children[i])) table.replaceChildren(...rows);
+  for (const selector of ['.dcount', '.scount']) {
+    const current = $(selector), next = fresh.querySelector(selector);
+    if (current.innerHTML !== next.innerHTML) current.innerHTML = next.innerHTML;
+  }
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) for (const cell of changed)
+    if (typeof cell.animate === 'function') cell.animate([{ opacity: 0.5 }, { opacity: 1 }], { duration: 220, easing: 'cubic-bezier(.2,.7,.2,1)' });
+}
+
 // The button says what it will add, because "Add phone" on a headphone comparison is wrong.
-const addLabel = p => t('compare.add_x').replace('{x}', (X[st.lang].cats || {})[catOf(p)] || '');
+const addLabel = p => t('compare.add_phone');
 
 // The picker only offers what can actually join this table: same product type, not already in
 // it. A query is optional - with the field empty it shows the most popular candidates.
@@ -2698,6 +2810,11 @@ function moneyFx() {
 
 /* ================= events ================= */
 document.addEventListener('click', e => {
+  const compared = e.target.closest('[data-cmp-open]');
+  if (compared) {
+    const p = byId(compared.dataset.cmpOpen);
+    if (p) SEL = { ...compareConfig(p) };
+  }
   // The wordmark is the way home. Its href is already #/, but a hash that does not change fires
   // no hashchange, so from the front page - scrolled down, a search typed, a filter on - clicking
   // it did nothing at all. Home means the top of a clean catalogue, every time.
@@ -2818,7 +2935,7 @@ document.addEventListener('click', e => {
     return;
   }
   const clr = e.target.closest('[data-act="clearcmp"]');
-  if (clr) { st.cmp = []; save(); paintTray(); render(); return; }
+  if (clr) { st.cmp = []; st.cmpConfigs = {}; save(); paintTray(); render(); return; }
   const fav = e.target.closest('[data-cmp]');
   if (fav) {
     e.preventDefault();
@@ -2858,7 +2975,7 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-esim],[data-size],[data-band],[data-cell]');
+  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-cpu],[data-esim],[data-size],[data-band],[data-cell]');
   if (opt) {
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
@@ -2872,27 +2989,8 @@ document.addEventListener('click', e => {
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
     if (opt.dataset.band !== undefined) SEL.band = opt.dataset.band;
-    if (opt.dataset.size !== undefined) {
-      SEL.size = +opt.dataset.size;
-      const pool = ph ? ph.variants.filter(v => v.size === SEL.size) : [];
-      if (pool.length && !pool.some(v => v.storage === SEL.storage && v.ram === SEL.ram)) {
-        const v = pool.slice().sort((a, b) => (a.storage || 0) - (b.storage || 0))[0];
-        if (v) { SEL.storage = v.storage; SEL.ram = v.ram; }
-      }
-    }
-    if (opt.dataset.storage !== undefined) {
-      SEL.storage = +opt.dataset.storage;
-      if (ph && !ph.variants.some(v => v.storage === SEL.storage && v.ram === SEL.ram)) {
-        const v = ph.variants.filter(v => v.storage === SEL.storage).sort((a, b) => a.ram - b.ram)[0];
-        if (v) SEL.ram = v.ram;
-      }
-    }
-    if (opt.dataset.ram !== undefined) {
-      SEL.ram = +opt.dataset.ram;
-      if (ph && !ph.variants.some(v => v.ram === SEL.ram && v.storage === SEL.storage)) {
-        const v = ph.variants.filter(v => v.ram === SEL.ram).sort((a, b) => a.storage - b.storage)[0];
-        if (v) SEL.storage = v.storage;
-      }
+    for (const axis of ['cpu', 'size', 'storage', 'ram']) {
+      if (opt.dataset[axis] !== undefined && ph) SEL = chooseConfig(ph, SEL, axis, axis === 'cpu' ? opt.dataset[axis] : +opt.dataset[axis]);
     }
     render(true);
     return;
@@ -2912,6 +3010,11 @@ document.addEventListener('keydown', e => {
 });
 document.addEventListener('change', e => {
   const el = e.target, f = el.dataset.f;
+  if (el.dataset.cmpAxis) {
+    const p = byId(el.dataset.cmpId);
+    if (p) updateComparison(p, el.dataset.cmpAxis, el.dataset.cmpAxis === 'cpu' ? el.value : +el.value);
+    return;
+  }
   if (el.id === 'diffonly') { $('#cwrap').classList.toggle('hide-same', el.checked); return; }
   if (!f) return;
   // Inside a filter panel nothing is decided until Apply. The panel marks itself changed so the
