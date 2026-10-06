@@ -1,0 +1,3177 @@
+
+const STR={"hy":{"app.tagline":"Համեմատի՛ր և ընտրի՛ր քո հեռախոսը","nav.catalog":"Կատալոգ","nav.blog":"Բլոգ","nav.compare":"Համեմատություն","nav.search_placeholder":"Փնտրել մոդել կամ բրենդ","common.reset":"Մաքրել","common.from":"Սկսած","common.to":"Մինչև","common.yes":"Այո","common.no":"Ոչ","common.results_count":"{n} արդյունք","common.demo_prices_note":"Գները ցուցադրական են և չեն թարմացվում խանութներից։","common.theme":"Թեմա","sort.label":"Դասավորում","sort.popular":"Ամենապահանջված","sort.price_asc":"Գինը՝ աճող","sort.price_desc":"Գինը՝ նվազող","sort.newest":"Նորույթներ","filter.brand":"Բրենդ","filter.price":"Գին","filter.ram":"Օպերատիվ հիշող.","filter.storage":"Հիշողություն","filter.screen_size":"Էկրանի չափ","filter.battery":"Մարտկոց","filter.refresh_rate":"Էկրանի թարմացում","sec.display":"Էկրան","sec.performance":"Հզորություն","sec.memory":"Հիշողություն","sec.camera":"Տեսախցիկ","sec.battery":"Մարտկոց","sec.body":"Կորպուս","sec.connectivity":"Կապ","sec.software":"Ծրագրակազմ","sec.colors":"Գույներ","f.color":"Գույն","f.screen_size":"Անկյունագիծ","f.screen_type":"Էկրանի տեսակ","f.resolution":"Լուծաչափ","f.refresh_rate":"Թարմացման հաճախականություն","f.ppi":"Խտություն, PPI","f.brightness":"Պայծառություն","f.protection":"Էկրանի պաշտպանություն","f.chipset":"Չիպսեթ","f.process":"Տեխնոլոգիա, նմ","f.cpu":"Պրոցեսոր","f.gpu":"Գրաֆիկա","f.ram":"Օպերատիվ հիշողություն","f.storage":"Ներքին հիշողություն","f.vram":"Ներքբերի հիշողություն","f.case_size":"Կորպուսի չափ","f.screen":"Էկրանի չափ","f.band":"Ապարանջան","offer.check_color":"ստուգե՛ք գույնը","f.card_slot":"Հիշողության քարտ","f.main_cam":"Հիմնական տեսախցիկ","f.ultrawide":"Գերլայն","f.telephoto":"Տելեֆոտո","f.front_cam":"Առջևի տեսախցիկ","f.video":"Տեսանկարահանում","f.capacity":"Տարողություն","f.charging":"Լիցքավորում","f.wireless":"Անլար լիցքավորում","f.dimensions":"Չափսեր","f.weight":"Քաշ","f.materials":"Նյութեր","f.ip_rating":"IP պաշտպանություն","f.network":"Ցանցեր","f.wifi":"Wi-Fi","f.bluetooth":"Bluetooth","f.nfc":"NFC","f.sim":"SIM քարտեր","f.ports":"Մուտքեր","f.os":"Օպերացիոն համակարգ","f.updates":"Թարմացումներ","f.released":"Թողարկում","detail.add_compare":"Համեմատել","detail.in_compare":"Ավելացված է","detail.full_specs":"Բոլոր բնութագրերը","detail.similar":"Նմանատիպ մոդելներ","compare.title":"Համեմատություն","compare.empty":"Դեռ համեմատելու բան չկա","compare.add_phone":"Ավելացնել սարք","compare.add_x":"Ավելացնել {x}","compare.clear":"Մաքրել բոլորը","compare.diff_only":"Միայն տարբերությունները","compare.max_reached":"Կարելի է համեմատել առավելագույնը 4 սարք","compare.same_category":"Համեմատել կարելի է միայն նույն տեսակի ապրանքներ","compare.in_list":"Համեմատության մեջ","catalog.title":"Կատալոգ","f.touch":"Հպումային էկրան","f.graphics":"Վիդեոքարտ","construct.title":"Կոնստրուկտոր","construct.lead":"Ընտրի՛ր՝ ինչ ես փնտրում, և մենք կցուցադրենք համապատասխանողները։","construct.pick_cat":"Ի՞նչ ես փնտրում","construct.show":"Ցույց տալ","construct.fixed":"Այս բաժնում բոլորն ունեն","construct.none":"Այս պայմաններով ոչինչ չկա. թուլացրո՛ւ մեկը։","nav.contact":"Կապ","nav.privacy":"Գաղտնիություն","privacy.title":"Գաղտնիության քաղաքականություն","privacy.p1":"Վերջին թարմացումը՝ 2026 թ. հոկտեմբերի 6։","privacy.p2":"Better.am-ում հաշիվներ, գրանցում և գովազդային cookie-ներ չկան։ Մենք տվյալներ չենք վաճառում։ Կարգավորումների, հոսթինգի, այցելությունների հաշվարկի և մեզ ուղարկված նամակների տվյալների մշակումը նկարագրված է ստորև։","privacy.p3":"## Կարգավորումները մնում են ձեր սարքում","privacy.p4":"Ընտրած լեզուն, թեման, զտիչները և համեմատության ցանկը պահվում են ձեր դիտարկիչի տեղային հիշողությունում (localStorage)։ Դրանք մեզ չեն ուղարկվում. դիտարկիչի տվյալները մաքրելիս դրանք ջնջվում են։","privacy.p5":"## Հոսթինգ","privacy.p6":"Կայքը տեղադրված է GitHub Pages-ում։ Ինչպես ցանկացած վեբ հոսթինգ, GitHub-ը էջը բացելիս ստանում է ձեր IP հասցեն և դիտարկիչի տվյալները և կարող է դրանք պահել իր սերվերային գրանցամատյաններում՝ անվտանգության նպատակով (տե՛ս GitHub-ի գաղտնիության քաղաքականությունը)։ Էջերը, լուսանկարները և տառատեսակները բեռնվում են այս կայքից. գովազդային հետագծիչներ չկան։","nav.terms":"Օգտագործման պայմաններ","privacy.p13":"## Այցելությունների վիճակագրություն","privacy.p14":"Այցելությունները հաշվում ենք GoatCounter-ով՝ առանց cookie-ների։ Այն մշակում է էջի հասցեն, հղում տվող կայքի տիրույթը, դիտարկիչը, օպերացիոն համակարգը, էկրանի չափը և երկիրը։ IP հասցեն և դիտարկիչի տվյալները կարող են ժամանակավորապես մշակվել հիշողությունում՝ երկիրը և կրկնվող այցելությունները որոշելու համար։ GoatCounter-ի քաղաքականությամբ՝ դրանք տվյալների բազայում չեն պահվում։ Որոնման տեքստն ու կամայական URL պարամետրերը հաշվիչին չենք ուղարկում։ Global Privacy Control կամ Do Not Track միացված լինելու դեպքում հաշվիչը չի բեռնվում։ Լուսանկարները, տառատեսակները և էջերը գալիս են Better.am-ից, հաշվիչը՝ GoatCounter-ից։","privacy.p7":"## Էլ. նամակներ","privacy.p8":"Եթե գրեք contact@better.am հասցեին, ձեր հասցեն և նամակը կօգտագործենք միայն պատասխանելու համար և ձեր խնդրանքով կջնջենք։","privacy.p9":"## Հղումներ խանութներին","privacy.p10":"Խանութների հղումները տանում են նրանց կայքեր, որոնք ունեն իրենց գաղտնիության քաղաքականությունը և cookie-ները։ Այդ հղումներին մենք հետագծման կամ գործընկերային կոդեր չենք ավելացնում։","privacy.p11":"## Ձեր իրավունքները","privacy.p12":"Տվյալների վերաբերյալ հարցերի, հասանելիության, ուղղման կամ ջնջման հարցումների համար գրե՛ք «Կապ» էջում նշված հասցեին։ Հարցումը կքննարկենք կիրառելի օրենսդրության համաձայն։ Անանուն ամփոփ վիճակագրությունը հնարավոր չէ կապել կոնկրետ այցելուի հետ։ Քաղաքականության փոփոխության դեպքում վերևի ամսաթիվը կթարմացվի։","terms.title":"Օգտագործման պայմաններ","terms.p1":"Վերջին թարմացումը՝ 2026 թ. հոկտեմբերի 4։ Օգտվելով Better.am-ից՝ դուք ընդունում եք այս պայմանները։","terms.p2":"## Ինչ է Better.am-ը","terms.p3":"Անվճար կատալոգ, որը համեմատում է էլեկտրոնիկայի գները Հայաստանի խանութներում։ Մենք խանութ չենք. ոչինչ չենք վաճառում, պատվերներ և վճարումներ չենք ընդունում և որևէ գնման կողմ չենք։ Յուրաքանչյուր պատվեր կատարվում է խանութի կայքում՝ նրա պայմաններով, երաշխիքով և վերադարձի կանոններով։ Կայքի բոլոր տվյալները հավաքված են հրապարակային հասանելի աղբյուրներից՝ խանութների կայքերից և արտադրողների հրապարակած բնութագրերից, և ներկայացվում են ոչ առևտրային, տեղեկատվական նպատակով։","terms.p4":"## Գներ և տեղեկություններ","terms.p5":"Գները, առկայությունը և բնութագրերը կարող են հնացած կամ սխալ լինել։ Գնելուց առաջ միշտ ստուգե՛ք գինը և մանրամասները խանութի էջում։ Առաջարկները դասավորված են ըստ գնի։","terms.p6":"## Անվանումներ, ապրանքանիշեր և լուսանկարներ","terms.p7":"Ապրանքների և ապրանքանիշերի անվանումները, լոգոները և լուսանկարները պատկանում են իրենց սեփականատերերին և օգտագործվում են միայն ապրանքը ճանաչելու համար։ Better.am-ը կապված չէ որևէ ապրանքանիշի կամ խանութի հետ և նրանց կողմից հովանավորված չէ։ Եթե այստեղ ցուցադրված նյութի իրավատերն եք և ցանկանում եք այն փոխել կամ հեռացնել, գրե՛ք contact@better.am հասցեին, և մենք արագ կարձագանքենք։","terms.p8":"## Օգտագործում և պատասխանատվություն","terms.p9":"Կայքից կարող եք ազատ օգտվել անձնական նպատակներով։ Մի՛ փորձեք խափանել կայքի աշխատանքը կամ զանգվածաբար պատճենել կատալոգը՝ այն այլ տեղ հրապարակելու համար։ Կայքը տրամադրվում է «ինչպես կա» սկզբունքով՝ առանց երաշխիքների։ Օրենքով թույլատրելի չափով Better.am-ը պատասխանատվություն չի կրում կայքից օգտվելու կամ խանութներում կատարված գնումների հետևանքով առաջացած վնասի համար։ Այս պայմանները կարգավորվում են Հայաստանի Հանրապետության օրենսդրությամբ։","contact.title":"Կապ","contact.p1":"Սխա՞լ գին, բացակայող մոդել, կամ խանութ, որը պետք է ավելացվի — գրե՛ք։","contact.p2":"Խանութներին. եթե ցանկանում եք, որ ձեր գները հայտնվեն այստեղ, ուղարկե՛ք ապրանքների ֆիդ։","contact.email":"contact@better.am","common.skip":"Անցնել բովանդակությանը"},"ru":{"app.tagline":"Сравните смартфоны — выберите свой","nav.catalog":"Каталог","nav.blog":"Блог","nav.compare":"Сравнение","nav.search_placeholder":"Модель или бренд","common.reset":"Сбросить","common.from":"От","common.to":"До","common.yes":"Да","common.no":"Нет","common.results_count":"Результатов: {n}","common.demo_prices_note":"Цены примерные: это демо-данные, а не реальные предложения магазинов.","common.theme":"Тема","sort.label":"Сортировка","sort.popular":"Популярные","sort.price_asc":"Сначала дешёвые","sort.price_desc":"Сначала дорогие","sort.newest":"Новинки","filter.brand":"Бренд","filter.price":"Цена","filter.ram":"ОЗУ","filter.storage":"Память","filter.screen_size":"Диагональ","filter.battery":"Батарея","filter.refresh_rate":"Частота обновления","sec.display":"Экран","sec.performance":"Производительность","sec.memory":"Память","sec.camera":"Камера","sec.battery":"Батарея","sec.body":"Корпус","sec.connectivity":"Связь","sec.software":"Софт","sec.colors":"Цвета","f.color":"Цвет","f.screen_size":"Диагональ","f.screen_type":"Тип экрана","f.resolution":"Разрешение","f.refresh_rate":"Частота обновления","f.ppi":"Плотность пикселей, PPI","f.brightness":"Яркость","f.protection":"Защита экрана","f.chipset":"Чипсет","f.process":"Техпроцесс, нм","f.cpu":"Процессор","f.gpu":"Графика","f.ram":"Оперативная память","f.storage":"Встроенная память","f.vram":"Видеопамять","f.case_size":"Размер корпуса","f.screen":"Размер экрана","f.band":"Ремешок","offer.check_color":"уточните цвет","f.card_slot":"Слот для карты памяти","f.main_cam":"Основная камера","f.ultrawide":"Сверхширокоугольная","f.telephoto":"Телеобъектив","f.front_cam":"Фронтальная камера","f.video":"Видеосъёмка","f.capacity":"Ёмкость","f.charging":"Зарядка","f.wireless":"Беспроводная зарядка","f.dimensions":"Размеры","f.weight":"Вес","f.materials":"Материалы","f.ip_rating":"Класс защиты IP","f.network":"Сети","f.wifi":"Wi-Fi","f.bluetooth":"Bluetooth","f.nfc":"NFC","f.sim":"SIM-карты","f.ports":"Разъёмы","f.os":"Операционная система","f.updates":"Обновления","f.released":"Дата выхода","detail.add_compare":"Сравнить","detail.in_compare":"В сравнении","detail.full_specs":"Все характеристики","detail.similar":"Похожие модели","compare.title":"Сравнение","compare.empty":"Пока нечего сравнивать","compare.add_phone":"Добавить устройство","compare.add_x":"Добавить: {x}","compare.clear":"Очистить","compare.diff_only":"Только отличия","compare.max_reached":"Можно сравнить до 4 устройств","compare.same_category":"Сравнивать можно только товары одного типа","compare.in_list":"В сравнении","catalog.title":"Каталог","f.touch":"Сенсорный экран","f.graphics":"Видеокарта","construct.title":"Конструктор","construct.lead":"Выберите, что вы ищете, и мы покажем подходящие модели.","construct.pick_cat":"Что вы ищете","construct.show":"Показать","construct.fixed":"Во всём разделе одинаково","construct.none":"Под эти условия ничего нет — ослабьте одно из них.","nav.contact":"Контакты","nav.privacy":"Конфиденциальность","privacy.title":"Политика конфиденциальности","privacy.p1":"Последнее обновление: 6 октября 2026 г.","privacy.p2":"На Better.am нет аккаунтов, регистрации и рекламных cookie. Мы не продаём данные. Ниже описана обработка данных настроек, хостинга, статистики посещений и писем, которые вы отправляете нам.","privacy.p3":"## Настройки остаются на вашем устройстве","privacy.p4":"Выбранный язык, тема, фильтры и список сравнения хранятся в локальной памяти вашего браузера (localStorage). Они нам не отправляются; очистка данных браузера их удаляет.","privacy.p5":"## Хостинг","privacy.p6":"Сайт размещён на GitHub Pages. Как любой хостинг, GitHub при загрузке страницы получает ваш IP-адрес и данные браузера и может хранить их в серверных журналах в целях безопасности (см. политику конфиденциальности GitHub). Страницы, фотографии и шрифты загружаются с этого сайта; рекламных трекеров нет.","nav.terms":"Условия использования","privacy.p13":"## Статистика посещений","privacy.p14":"Посещения считает GoatCounter без cookie. Он обрабатывает адрес страницы, домен источника перехода, браузер, операционную систему, ширину экрана и страну. IP-адрес и сведения браузера могут временно обрабатываться в памяти для определения страны и повторных посещений; по политике GoatCounter они не сохраняются в базе данных. Текст поиска и произвольные параметры URL счётчику не отправляются. При включённых Global Privacy Control или Do Not Track счётчик не загружается. Фотографии, шрифты и страницы загружаются с Better.am, счётчик — с GoatCounter.","privacy.p7":"## Письма","privacy.p8":"Если вы напишете на contact@better.am, ваш адрес и письмо будут использованы только для ответа и удалены по вашей просьбе.","privacy.p9":"## Ссылки на магазины","privacy.p10":"Ссылки на магазины ведут на их сайты, у которых свои политики конфиденциальности и cookie. Мы не добавляем к этим ссылкам отслеживающие или партнёрские коды.","privacy.p11":"## Ваши права","privacy.p12":"По вопросам данных, запросам доступа, исправления или удаления напишите на адрес на странице «Контакты». Мы рассмотрим запрос в соответствии с применимым законодательством. Анонимную сводную статистику нельзя связать с конкретным посетителем. При изменении политики обновляется дата выше.","terms.title":"Условия использования","terms.p1":"Последнее обновление: 4 октября 2026 г. Пользуясь Better.am, вы принимаете эти условия.","terms.p2":"## Что такое Better.am","terms.p3":"Бесплатный каталог, сравнивающий цены на электронику в магазинах Армении. Мы не магазин: ничего не продаём, не принимаем заказы и платежи и не являемся стороной сделки. Каждый заказ оформляется на сайте магазина — на его условиях, с его гарантией и правилами возврата. Все данные на сайте собраны из общедоступных источников — сайтов магазинов и опубликованных производителями характеристик — и представлены в некоммерческих, информационных целях.","terms.p4":"## Цены и информация","terms.p5":"Цены, наличие и характеристики могут устареть или оказаться неверными. Перед покупкой всегда проверяйте цену и детали на странице магазина. Предложения упорядочены по цене.","terms.p6":"## Названия, товарные знаки и фотографии","terms.p7":"Названия товаров и брендов, логотипы и фотографии принадлежат их владельцам и используются только для того, чтобы обозначить товар. Better.am не связан ни с одним брендом или магазином и не одобрен ими. Если вы правообладатель материала, показанного здесь, и хотите его изменить или удалить, напишите на contact@better.am — мы оперативно отреагируем.","terms.p8":"## Использование и ответственность","terms.p9":"Сайтом можно свободно пользоваться в личных целях. Не пытайтесь нарушить работу сайта или массово копировать каталог для публикации в другом месте. Сайт предоставляется «как есть», без гарантий. В пределах, допускаемых законом, Better.am не несёт ответственности за ущерб, возникший из-за использования сайта или покупок в магазинах. Эти условия регулируются законодательством Республики Армения.","contact.title":"Связаться","contact.p1":"Неверная цена, отсутствующая модель или магазин, который стоит добавить — напишите.","contact.p2":"Магазинам: если хотите, чтобы ваши цены были здесь, пришлите фид товаров.","contact.email":"contact@better.am","common.skip":"К содержимому"},"en":{"app.tagline":"Compare phones. Choose smarter.","nav.catalog":"Catalog","nav.blog":"Blog","nav.compare":"Compare","nav.search_placeholder":"Search model or brand","common.reset":"Reset","common.from":"From","common.to":"To","common.yes":"Yes","common.no":"No","common.results_count":"{n} results","common.demo_prices_note":"Prices are indicative demo data, not a live shop feed.","common.theme":"Theme","sort.label":"Sort by","sort.popular":"Popular","sort.price_asc":"Price: low to high","sort.price_desc":"Price: high to low","sort.newest":"Newest","filter.brand":"Brand","filter.price":"Price","filter.ram":"RAM","filter.storage":"Storage","filter.screen_size":"Screen size","filter.battery":"Battery","filter.refresh_rate":"Refresh rate","sec.display":"Display","sec.performance":"Performance","sec.memory":"Memory","sec.camera":"Camera","sec.battery":"Battery","sec.body":"Body","sec.connectivity":"Connectivity","sec.software":"Software","sec.colors":"Colors","f.color":"Colour","f.screen_size":"Screen size","f.screen_type":"Screen type","f.resolution":"Resolution","f.refresh_rate":"Refresh rate","f.ppi":"Pixel density","f.brightness":"Brightness","f.protection":"Protection","f.chipset":"Chipset","f.process":"Process","f.cpu":"CPU","f.gpu":"GPU","f.ram":"RAM","f.storage":"Storage","f.vram":"Video memory","f.case_size":"Case size","f.screen":"Screen size","f.band":"Band","offer.check_color":"check colour","f.card_slot":"Card slot","f.main_cam":"Main camera","f.ultrawide":"Ultrawide","f.telephoto":"Telephoto","f.front_cam":"Front camera","f.video":"Video","f.capacity":"Capacity","f.charging":"Charging","f.wireless":"Wireless charging","f.dimensions":"Dimensions","f.weight":"Weight","f.materials":"Materials","f.ip_rating":"IP rating","f.network":"Network","f.wifi":"Wi-Fi","f.bluetooth":"Bluetooth","f.nfc":"NFC","f.sim":"SIM","f.ports":"Inputs","f.os":"OS","f.updates":"Updates","f.released":"Released","detail.add_compare":"Compare","detail.in_compare":"In compare","detail.full_specs":"Full specs","detail.similar":"Similar phones","compare.title":"Compare","compare.empty":"Nothing to compare yet","compare.add_phone":"Add product","compare.add_x":"Add {x}","compare.clear":"Clear","compare.diff_only":"Differences only","compare.max_reached":"You can compare up to 4 products","compare.same_category":"You can only compare products of the same type","compare.in_list":"Models in comparison","catalog.title":"Catalog","f.touch":"Touchscreen","f.graphics":"Graphics","construct.title":"Construct","construct.lead":"Pick what you are after and we will show what matches.","construct.pick_cat":"What are you looking for","construct.show":"Show","construct.fixed":"Same across this category","construct.none":"Nothing matches — loosen one of these.","nav.contact":"Contact","nav.privacy":"Privacy","privacy.title":"Privacy policy","privacy.p1":"Last updated: 6 October 2026.","privacy.p2":"Better.am has no accounts, sign-up or advertising cookies. We do not sell data. Processing of settings, hosting data, visit statistics and emails you send us is described below.","privacy.p3":"## Your settings stay on your device","privacy.p4":"Your language, theme, filters and compare list are kept in your browser’s local storage. They are never sent to us; clearing your browser data removes them.","privacy.p5":"## Hosting","privacy.p6":"The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address and browser details when a page loads and may keep them in its server logs for security (see GitHub’s privacy statement). Pages, photos and fonts all come from this site; there are no advertising trackers.","nav.terms":"Terms","privacy.p13":"## Visitor statistics","privacy.p14":"GoatCounter counts visits without cookies. It processes the page path, referring domain, browser, operating system, screen width and country. IP addresses and browser details may be processed temporarily in memory to estimate location and repeated visits; GoatCounter states that these are not stored in its database. We exclude search text and arbitrary URL parameters from the counter. With Global Privacy Control or Do Not Track enabled, the counter does not load. Photos, fonts and pages come from Better.am; the counter comes from GoatCounter.","privacy.p7":"## Email","privacy.p8":"If you write to contact@better.am, we use your address and message only to reply, and delete them on request.","privacy.p9":"## Links to shops","privacy.p10":"Links to shops take you to their own sites, which have their own privacy policies and cookies. We add no tracking or affiliate codes to those links.","privacy.p11":"## Your rights","privacy.p12":"For data questions or access, correction or deletion requests, write to the address on the Contact page. We will handle requests under applicable law. Anonymous aggregate statistics cannot be linked to a specific visitor. The date above changes when this policy changes.","terms.title":"Terms of use","terms.p1":"Last updated: 4 October 2026. By using Better.am you accept these terms.","terms.p2":"## What Better.am is","terms.p3":"A free catalogue that compares electronics prices in shops in Armenia. We are not a shop: we sell nothing, take no orders or payments, and are not a party to any purchase. Every order is made on the shop’s own site, under its own terms, warranty and return policy. All data on the site is collected from publicly available sources, such as shops’ websites and manufacturers’ published specifications, and is presented for non-commercial, informational purposes.","terms.p4":"## Prices and information","terms.p5":"Prices, stock and specifications can be out of date or wrong. Always confirm the price and details on the shop’s page before you buy. Offers are ordered by price.","terms.p6":"## Names, trademarks and photos","terms.p7":"Product and brand names, logos and product photos belong to their owners and are used only to identify products. Better.am is not affiliated with or endorsed by any brand or shop. If you own content shown here and want it changed or removed, write to contact@better.am and we will act promptly.","terms.p8":"## Use and liability","terms.p9":"You may use Better.am freely for personal use. Do not try to disrupt the site or copy the catalogue in bulk to republish it. The site is provided “as is”, without warranties. To the extent permitted by law, Better.am is not liable for any loss arising from use of the site or from purchases made at shops. These terms are governed by the law of the Republic of Armenia.","contact.title":"Contact","contact.p1":"A wrong price, a missing model, or a shop worth adding — write in.","contact.p2":"Shops: to have your prices here, send a product feed.","contact.email":"contact@better.am","common.skip":"Skip to content"}};
+let HISTORY={points:{}};
+const LAZYDATA=true;
+const TERMS={"_note":"Descriptive vocabulary used inside spec values and colour names. Proper nouns (Cortex, Adreno, Mali, Gorilla Glass, Dolby, Wi-Fi, HyperOS, One UI, IP68, GHz, MP, nm) stay as they are - they are product names, not English words. Longest key wins; matching is case-insensitive and only on word boundaries.","At least 5 years of security updates":["Առնվազն 5 տարվա անվտանգության թարմացումներ","Не менее 5 лет обновлений безопасности"],"Apple typically ships 5-7 years of iOS upgrades":["Apple-ը սովորաբար տալիս է 5-7 տարվա iOS արդիացումներ","Apple обычно даёт 5–7 лет обновлений iOS"],"Dust and splash resistant (no official IP number published)":["Փոշու և ջրի ցայտերի դիմացկուն (պաշտոնական IP դասակարգում չի հրապարակվել)","Защита от пыли и брызг (официальный класс IP не заявлен)"],"About 5-6 years of iOS updates":["Մոտ 5-6 տարվա iOS թարմացումներ","Около 5–6 лет обновлений iOS"],"major Android updates and":["Android-ի խոշոր թարմացում և","крупных обновления Android и"],"Android version updates,":["Android-ի տարբերակի թարմացում,","обновления версии Android,"],"major Android updates (Android 15 confirmed),":["Android-ի խոշոր թարմացում (Android 15-ը հաստատված է),","крупных обновления Android (Android 15 подтверждён),"],"major Android updates,":["Android-ի խոշոր թարմացում,","крупных обновления Android,"],"years of security patches":["տարվա անվտանգության կարկատներ","лет патчей безопасности"],"years of security updates":["տարվա անվտանգության թարմացումներ","лет обновлений безопасности"],"years of OS upgrades and":["տարվա OS արդիացում և","лет обновлений ОС и"],"OS upgrades and":["OS արդիացում և","обновления ОС и"],"years of OS, security and feature updates":["տարվա OS-ի, անվտանգության և գործառույթների թարմացումներ","лет обновлений ОС, безопасности и функций"],"years of OS, security and Pixel Drop updates":["տարվա OS-ի, անվտանգության և Pixel Drop թարմացումներ","лет обновлений ОС, безопасности и Pixel Drop"],"years of OS and security updates":["տարվա OS-ի և անվտանգության թարմացումներ","лет обновлений ОС и безопасности"],"about":["մոտ","около"],"upgradable to":["արդիացվում է մինչև","обновляется до"],"Nano-SIM + eSIM (US models are dual eSIM only)":["Nano-SIM + eSIM (ԱՄՆ մոդելները միայն երկու eSIM ունեն)","Nano-SIM + eSIM (модели для США — только две eSIM)"],"Nano-SIM + eSIM (dual eSIM support)":["Nano-SIM + eSIM (երկու eSIM-ի աջակցում)","Nano-SIM + eSIM (поддержка двух eSIM)"],"Nano-SIM + eSIM (eSIM only in the US)":["Nano-SIM + eSIM (eSIM՝ միայն ԱՄՆ-ում)","Nano-SIM + eSIM (eSIM только в США)"],"Nano-SIM + eSIM, or dual nano-SIM":["Nano-SIM + eSIM, կամ երկու nano-SIM","Nano-SIM + eSIM или две nano-SIM"],"Nano-SIM and eSIM, dual standby":["Nano-SIM և eSIM, երկակի սպասման ռեժիմ","Nano-SIM и eSIM, две SIM в режиме ожидания"],"Dual eSIM only, no physical SIM tray":["Միայն երկու eSIM, ֆիզիկական SIM-բնիկ չկա","Только две eSIM, физического слота SIM нет"],"Dual nano-SIM plus a dedicated microSD slot":["Երկու nano-SIM և առանձին microSD բնիկ","Две nano-SIM плюс отдельный слот microSD"],"Dual nano-SIM (eSIM in some markets)":["Երկու nano-SIM (eSIM՝ որոշ շուկաներում)","Две nano-SIM (eSIM на некоторых рынках)"],"Dual nano-SIM; no eSIM in most markets":["Երկու nano-SIM. eSIM չկա շուկաների մեծ մասում","Две nano-SIM; eSIM отсутствует на большинстве рынков"],"Dual nano-SIM plus eSIM":["Երկու nano-SIM և eSIM","Две nano-SIM плюс eSIM"],"Dual Nano-SIM":["Երկու nano-SIM","Две nano-SIM"],"Dual nano-SIM":["Երկու nano-SIM","Две nano-SIM"],"5G (sub-6 GHz; mmWave on US models)":["5G (sub-6 GHz, mmWave՝ ԱՄՆ մոդելներում)","5G (sub-6 GHz; mmWave в моделях для США)"],"5G sub-6 GHz only (Apple C1X modem, no mmWave)":["5G միայն sub-6 GHz (Apple C1X մոդեմ, առանց mmWave)","5G только sub-6 GHz (модем Apple C1X, без mmWave)"],"Aluminum unibody with vapor chamber":["Ալյումինե միաձույլ իրան գոլորշային խցիկով","Цельный алюминиевый корпус с испарительной камерой"],"Grade 5 titanium frame":["5-րդ դասի տիտանե շրջանակ","Рамка из титана Grade 5"],"Armor Aluminum frame":["Armor ալյումինե շրջանակ","Алюминиевая рамка Armor"],"Aluminium frame":["Ալյումինե շրջանակ","Алюминиевая рамка"],"Aluminum frame":["Ալյումինե շրջանակ","Алюминиевая рамка"],"Titanium frame":["Տիտանե շրջանակ","Титановая рамка"],"Plastic frame":["Պլաստիկ շրջանակ","Пластиковая рамка"],"plastic frame":["պլաստիկ շրջանակ","пластиковая рамка"],"colour-infused matte glass back":["գունավորված մատ ապակե հետնամաս","тонированная матовая стеклянная задняя панель"],"colour-infused glass back":["գունավորված ապակե հետնամաս","тонированная стеклянная задняя панель"],"color-infused glass back with Ceramic Shield":["գունավորված ապակե հետնամաս Ceramic Shield-ով","тонированная стеклянная задняя панель с Ceramic Shield"],"composite (plastic) back":["կոմպոզիտային (պլաստիկ) հետնամաս","композитная (пластиковая) задняя панель"],"glass or vegan leather back":["ապակե կամ վեգան կաշվե հետնամաս","стеклянная или веганская кожаная задняя панель"],"glass or eco-leather back":["ապակե կամ էկո-կաշվե հետնամաս","стеклянная или экокожаная задняя панель"],"front and back":["առջևից և հետևից","спереди и сзади"],"plastic back":["պլաստիկ հետնամաս","пластиковая задняя панель"],"glass back":["ապակե հետնամաս","стеклянная задняя панель"],"Plastic front":["Առջևից պլաստիկ","Спереди пластик"],"Glass front":["Առջևից ապակի","Спереди стекло"],"glass front":["առջևից ապակի","спереди стекло"],"front":["առջևից","спереди"],"back":["հետնամաս","задняя панель"],"with Neural Accelerators":["նեյրոնային արագացուցիչներով","с нейроускорителями"],"Octa-core":["Ութմիջուկ","Восьмиядерный"],"Hexa-core":["Վեցմիջուկ","Шестиядерный"],"6-core":["6-միջուկ","6-ядерный"],"5-core":["5-միջուկ","5-ядерный"],"performance":["արտադրողական","производительных"],"efficiency":["էներգախնայող","энергоэффективных"],"2x optical-quality crop":["2x օպտիկականին համարժեք կտրվածք","2x кроп оптического качества"],"2x in-sensor telephoto crop":["2x սենսորի ներսում թելեֆոտո կտրվածք","2x телефото-кроп внутри сенсора"],"sensor-shift OIS":["սենսորի շարժով OIS","OIS сдвигом сенсора"],"autofocus macro":["ավտոֆոկուս մակրո","макро с автофокусом"],"macro focus":["մակրո ֆոկուս","макрофокус"],"autofocus":["ավտոֆոկուս","автофокус"],"ultrawide":["գերլայն","сверхширокоугольная"],"telephoto":["թելեֆոտո","телефото"],"wide":["լայնանկյուն","широкоугольная"],"sensor":["սենսոր","сенсор"],"degrees":["աստիճան","градусов"],"degree":["աստիճան","градусов"],"inch":["դյույմ","дюйм"],"slow motion":["դանդաղ շարժում","замедленная съёмка"],"spatial video":["տարածական տեսանյութ","пространственное видео"],"up to":["մինչև","до"],"via":["միջոցով","через"],"Curved":["Կոր","Изогнутый"],"Titanium":["Տիտանե","Титановый"],"Cosmic":["Տիեզերական","Космический"],"Midnight":["Միջգիշերային","Полуночный"],"Moonlight":["Լուսնային","Лунный"],"Moonstone":["Լուսնաքար","Лунный камень"],"Obsidian":["Օբսիդիան","Обсидиан"],"Porcelain":["Ճենապակի","Фарфоровый"],"Arctic Dawn":["Արկտիկական լուսաբաց","Арктический рассвет"],"Silver Shadow":["Արծաթե ստվեր","Серебристая тень"],"Nebula":["Միգամածային","Туманный"],"Aurora":["Բևեռափայլ","Полярный"],"Dreamy":["Երազային","Мечтательный"],"Starry":["Աստղային","Звёздный"],"Storm":["Փոթորկային","Штормовой"],"Eclipse":["Խավարում","Затмение"],"Lightning":["Կայծակնային","Молниеносный"],"Ultramarine":["Ուլտրամարին","Ультрамарин"],"Peony":["Խորդենի","Пионовый"],"Iris":["Հիրիկ","Ирис"],"Jadegreen":["Նեֆրիտ կանաչ","Нефритово-зелёный"],"Jetblack":["Խորը սև","Глубокий чёрный"],"Pinkgold":["Վարդագույն ոսկի","Розовое золото"],"Silverblue":["Արծաթակապույտ","Серебристо-голубой"],"Whitesilver":["Սպիտակարծաթ","Бело-серебристый"],"Rose Gold":["Վարդագույն ոսկի","Розовое золото"],"Pink Gold":["Վարդագույն ոսկի","Розовое золото"],"Space Black":["Տիեզերական սև","Космический чёрный"],"Cloud White":["Ամպի սպիտակ","Облачно-белый"],"Awesome":["",""],"Deep":["Խորը","Глубокий"],"Light":["Բաց","Светлый"],"Icy":["Սառցե","Ледяной"],"Ocean":["Օվկիանոսային","Океанский"],"Coral":["Մարջանային","Коралловый"],"Sky":["Երկնագույն","Небесный"],"Mist":["Մշուշոտ","Туманный"],"Sage":["Եղեսպակ","Шалфейный"],"Jade":["Նեֆրիտ","Нефритовый"],"Mint":["Անանուխ","Мятный"],"Olive":["Ձիթապտղի","Оливковый"],"Lime":["Լայմ","Лаймовый"],"Peach":["Դեղձի","Персиковый"],"Lavender":["Նարդոս","Лавандовый"],"Graphite":["Գրաֆիտ","Графитовый"],"Navy":["Մուգ կապույտ","Тёмно-синий"],"Teal":["Փիրուզագույն","Бирюзовый"],"Black":["Սև","Чёрный"],"White":["Սպիտակ","Белый"],"Silver":["Արծաթե","Серебристый"],"Gray":["Մոխրագույն","Серый"],"Grey":["Մոխրագույն","Серый"],"Blue":["Կապույտ","Синий"],"Green":["Կանաչ","Зелёный"],"Yellow":["Դեղին","Жёлтый"],"Gold":["Ոսկեգույն","Золотой"],"Pink":["Վարդագույն","Розовый"],"Purple":["Մանուշակագույն","Фиолетовый"],"Red":["Կարմիր","Красный"],"Orange":["Նարնջագույն","Оранжевый"],"with":["և","с"],"and":["և","и"],"or":["կամ","или"],"only":["միայն","только"],"no":["առանց","без"],"No official window; Apple's declared minimum is 5 years of security updates, and recent iPhones have received roughly 6-7 years of iOS releases":["Պաշտոնական ժամկետ չկա. Apple-ի հայտարարած նվազագույնը 5 տարվա անվտանգության թարմացումներն են, իսկ վերջին iPhone-ները ստացել են մոտ 6-7 տարվա iOS թողարկումներ","Официального срока нет: заявленный Apple минимум — 5 лет обновлений безопасности, а недавние iPhone получали примерно 6–7 лет выпусков iOS"],"macro as third module":["մակրո՝ որպես երրորդ մոդուլ","макро как третий модуль"],"optical-quality crop":["օպտիկականին համարժեք կտրվածք","кроп оптического качества"],"optical zoom":["օպտիկական զում","оптический зум"],"optical":["օպտիկական","оптический"],"periscope":["պերիսկոպ","перископ"],"tele":["թելե","теле"],"module":["մոդուլ","модуль"],"third":["երրորդ","третий"],"zoom":["զում","зум"],"quality":["որակ","качество"],"crop":["կտրվածք","кроп"],"None":["Չկա","Нет"],"as":["որպես","как"],"at":["՝","при"],"dual-band":["երկտիրույթ","двухдиапазонный"],"Jade Cyan":["Նեֆրիտ փիրուզ","Нефритово-бирюзовый"],"Cyan":["Փիրուզ","Бирюзовый"],"In-ear, active noise cancellation":["Ականջախցիկ՝ ակտիվ աղմուկի ճնշմամբ","Внутриканальные с активным шумоподавлением"],"Open-fit, active noise cancellation":["Բաց տիպի՝ ակտիվ աղմուկի ճնշմամբ","Вкладыши с активным шумоподавлением"],"Open-fit, no noise cancellation":["Բաց տիպի՝ առանց աղմուկի ճնշման","Вкладыши без шумоподавления"],"Over-ear, active noise cancellation":["Լիարժեք՝ ակտիվ աղմուկի ճնշմամբ","Полноразмерные с активным шумоподавлением"],"Wireless and USB-C charging case":["Անլար և USB-C լիցքավորման պատյան","Чехол с беспроводной и USB-C зарядкой"],"USB-C charging case":["USB-C լիցքավորման պատյան","Чехол с зарядкой USB-C"],"USB-C charging":["USB-C լիցքավորում","Зарядка USB-C"],"Aluminium ear cups, stainless steel headband":["Ալյումինե ականջակալներ, չժանգոտվող պողպատե կամար","Алюминиевые чашки, оголовье из нержавеющей стали"],"Aluminium unibody":["Ալյումինե միաձույլ իրան","Цельный алюминиевый корпус"],"Aluminium or titanium case":["Ալյումինե կամ տիտանե պատյան","Алюминиевый или титановый корпус"],"Aluminium case":["Ալյումինե պատյան","Алюминиевый корпус"],"Titanium case":["Տիտանե պատյան","Титановый корпус"],"Wi-Fi, or Wi-Fi + Cellular":["Wi-Fi կամ Wi-Fi + բջջային","Wi-Fi или Wi-Fi + Cellular"],"GPS, or GPS + Cellular":["GPS կամ GPS + բջջային","GPS или GPS + Cellular"],"GPS + Cellular, satellite messaging":["GPS + բջջային, արբանյակային հաղորդագրություններ","GPS + Cellular, спутниковые сообщения"],"water resistant":["ջրակայուն","водозащита"],"dive rating":["սուզման դասակարգում","класс для дайвинга"],"Jet Black":["Խորը սև","Глубокий чёрный"],"Purple Fog":["Մանուշակագույն մշուշ","Фиолетовый туман"],"Natural Titanium":["Բնական տիտան","Натуральный титан"],"Black Titanium":["Սև տիտան","Чёрный титан"],"integrated":["ինտեգրված","встроенная"],"discrete":["դիսկրետ","дискретная"],"Blush":["Դեղձագույն","Пудровый"],"Citrus":["Ցիտրուս","Цитрусовый"],"Indigo":["Ինդիգո","Индиго"],"Sky Blue":["Երկնագույն","Небесно-голубой"],"2x Thunderbolt 4 front, 3x Thunderbolt 4 rear, HDMI, Gigabit Ethernet":["2x Thunderbolt 4 առջևից, 3x Thunderbolt 4 հետևից, HDMI, Gigabit Ethernet","2x Thunderbolt 4 спереди, 3x Thunderbolt 4 сзади, HDMI, Gigabit Ethernet"],"3x Thunderbolt 5 rear, 2x USB-C front, HDMI, 10 Gigabit Ethernet option":["3x Thunderbolt 5 հետևից, 2x USB-C առջևից, HDMI, 10 Gigabit Ethernet ընտրովի","3x Thunderbolt 5 сзади, 2x USB-C спереди, HDMI, 10 Gigabit Ethernet опционально"],"10-core":["10-միջուկ","10-ядерный"],"12- or 14-core":["12- կամ 14-միջուկ","12- или 14-ядерный"],"Apple M4 10-core GPU":["Apple M4 10-միջուկ GPU","Apple M4 10-ядерный GPU"],"Apple M4 Pro 16- or 20-core GPU":["Apple M4 Pro 16- կամ 20-միջուկ GPU","Apple M4 Pro 16- или 20-ядерный GPU"],"Deca-core":["Տասնմիջուկ","Десятиядерный"],"depth":["խորության սենսոր","датчик глубины"],"Cobalt Violet":["Կոբալտային մանուշակագույն","Кобальтово-фиолетовый"],"Pistachio":["Ֆիստակագույն","Фисташковый"],"Icyblue":["Սառցե կապույտ","Ледяной голубой"],"Coralred":["Մարջանի կարմիր","Коралловый красный"],"Blue Shadow":["Կապույտ ստվեր","Синяя тень"],"Violet Shadow":["Մանուշակագույն ստվեր","Фиолетовая тень"],"Green Shadow":["Կանաչ ստվեր","Зелёная тень"],"Cream":["Կրեմագույն","Кремовый"],"Awesome Navy":["Մուգ կապույտ","Тёмно-синий"],"Awesome Grey":["Մոխրագույն","Серый"],"Awesome Icyblue":["Սառցե կապույտ","Ледяной голубой"],"Awesome Lilac":["Յասամանագույն","Сиреневый"],"Awesome Charcoal":["Ածխագույն","Угольный"],"Awesome Green":["Կանաչ","Зелёный"],"Light Violet":["Բաց մանուշակագույն","Светло-фиолетовый"],"plus":["և","плюс"],"Ceramic Shield 2":["Ceramic Shield 2","Ceramic Shield 2"],"Titanium frame, Ceramic Shield front, textured matte glass back":["Տիտանե շրջանակ, Ceramic Shield առջևից, մատ ապակե հետնամաս","Титановая рамка, Ceramic Shield спереди, матовая стеклянная задняя панель"],"Aluminium frame, Ceramic Shield 2 front, glass back":["Ալյումինե շրջանակ, Ceramic Shield 2 առջևից, ապակե հետնամաս","Алюминиевая рамка, Ceramic Shield 2 спереди, стеклянная задняя панель"],"6-core (2 performance + 4 efficiency)":["6-միջուկ (2 արտադրողական + 4 էներգախնայող)","6-ядерный (2 производительных + 4 энергоэффективных)"],"Apple 6-core GPU":["Apple 6-միջուկ GPU","Apple 6-ядерный GPU"],"Apple 5-core GPU":["Apple 5-միջուկ GPU","Apple 5-ядерный GPU"],"Apple 4-core GPU with Neural Accelerators":["Apple 4-միջուկ GPU նեյրոնային արագացուցիչներով","Apple 4-ядерный GPU с нейроускорителями"],"Soft Pink":["Մեղմ վարդագույն","Нежно-розовый"],"Desert Titanium":["Անապատային տիտան","Пустынный титан"],"synthetic leather ear pads":["արհեստական կաշվե ականջակալներ","амбушюры из искусственной кожи"],"Spatial audio smart speaker":["Տարածական ձայնի խելացի բարձրախոս","Умная колонка с пространственным звуком"],"Party speaker with full light show":["Խնջույքի բարձրախոս՝ լիարժեք լուսային շոուով","Вечериночная колонка с полноценным световым шоу"],"Portable stereo speaker":["Դյուրակիր ստերեո բարձրախոս","Портативная стереоколонка"],"Mains-powered stereo speaker":["Ցանցային սնուցմամբ ստերեո բարձրախոս","Стереоколонка от сети"],"On-ear, closed back":["Ականջին դրվող, փակ տիպի","Накладные, закрытого типа"],"Mains powered, RCA and 3.5 mm inputs":["Ցանցային սնուցում, RCA և 3,5 մմ մուտքեր","Питание от сети, входы RCA и 3,5 мм"],"Mains powered, Wi-Fi 6, AirPlay 2":["Ցանցային սնուցում, Wi-Fi 6, AirPlay 2","Питание от сети, Wi-Fi 6, AirPlay 2"],"Mains powered, RCA, guitar and microphone inputs":["Ցանցային սնուցում, RCA, կիթառի և խոսափողի մուտքեր","Питание от сети, входы RCA, для гитары и микрофона"],"USB-C charging, 3.5 mm jack":["USB-C լիցքավորում, 3,5 մմ բնիկ","Зарядка USB-C, разъём 3,5 мм"],"USB-C and Qi wireless charging, 3.5 mm jack":["USB-C և Qi անլար լիցքավորում, 3,5 մմ բնիկ","Зарядка USB-C и беспроводная Qi, разъём 3,5 мм"],"USB-C charging, IP54 splash resistant":["USB-C լիցքավորում, IP54 ջրի ցայտերի պաշտպանություն","Зарядка USB-C, защита от брызг IP54"],"USB-C charging, IPX4 splash resistant":["USB-C լիցքավորում, IPX4 ջրի ցայտերի պաշտպանություն","Зарядка USB-C, защита от брызг IPX4"],"Textured vinyl headband, folding hinges":["Հյուսվածքային վինիլե գլխակապ, ծալվող հոդակապեր","Оголовье из фактурного винила, складные шарниры"],"Textured vinyl, metal grille, leather strap":["Հյուսվածքային վինիլ, մետաղյա ցանց, կաշվե փոկ","Фактурный винил, металлическая решётка, кожаный ремень"],"Textured vinyl, metal grille, analogue knobs":["Հյուսվածքային վինիլ, մետաղյա ցանց, անալոգային կոճակներ","Фактурный винил, металлическая решётка, аналоговые ручки"],"Moulded polycarbonate, hourglass body":["Ձուլված պոլիկարբոնատ, ավազի ժամացույցի ձև","Литой поликарбонат, корпус в форме песочных часов"],"Plastic body, metal grille, wheels and a telescopic handle":["Պլաստիկ իրան, մետաղյա ցանց, անիվներ և հեռադիտակային բռնակ","Пластиковый корпус, металлическая решётка, колёса и телескопическая ручка"],"Anodised aluminium, lambskin ear cushions":["Անոդացված ալյումին, գառան կաշվե ականջակալներ","Анодированный алюминий, амбушюры из кожи ягнёнка"],"Plastic and fabric headband, synthetic leather ear pads":["Պլաստիկ և գործվածքային գլխակապ, արհեստական կաշվե ականջակալներ","Оголовье из пластика и ткани, амбушюры из искусственной кожи"],"Plastic headband, synthetic leather ear pads":["Պլաստիկ գլխակապ, արհեստական կաշվե ականջակալներ","Пластиковое оголовье, амбушюры из искусственной кожи"],"Plastic housing and charging case":["Պլաստիկ իրան և լիցքավորման պատյան","Пластиковый корпус и зарядный кейс"],"Plastic housing, transparent option":["Պլաստիկ իրան, թափանցիկ տարբերակ","Пластиковый корпус, есть прозрачный вариант"],"Gold Tone":["ոսկեգույն","золотистый"],"Lightgray":["բաց մոխրագույն","светло-серый"],"Natural Oak":["բնական կաղնի","натуральный дуб"],"Black Oak":["սև կաղնի","чёрный дуб"],"Amber Silk":["սաթե մետաքս","янтарный шёлк"],"Prussian Blue":["պրուսական կապույտ","прусский синий"],"amber":["սաթագույն","янтарный"],"arctic":["արկտիկական","арктический"],"brown":["շագանակագույն","коричневый"],"charcoal":["ածխագույն","угольный"],"chestnut":["շագանակե","каштановый"],"cloud":["ամպային","облачный"],"cobalt":["կոբալտային","кобальтовый"],"copper":["պղնձագույն","медный"],"dark":["մուգ","тёмный"],"dawn":["արշալույսի","рассветный"],"desert":["անապատային","пустынный"],"frost":["սառնամանիքի","морозный"],"ice":["սառցե","ледяной"],"icy":["սառցե","ледяной"],"ivory":["փղոսկրյա","слоновая кость"],"lilac":["յասամանագույն","сиреневый"],"liquid":["հեղուկ","жидкий"],"lunar":["լուսնային","лунный"],"natural":["բնական","натуральный"],"nickel":["նիկելե","никелевый"],"oak":["կաղնու","дубовый"],"prussian":["պրուսական","прусский"],"rose":["վարդագույն","розовый"],"shadow":["ստվերային","теневой"],"silk":["մետաքսյա","шёлковый"],"soft":["փափուկ","мягкий"],"space":["տիեզերական","космический"],"starlight":["աստղալույս","звёздный свет"],"transparent":["թափանցիկ","прозрачный"],"violet":["մանուշակագույն","фиолетовый"],"canyon":["Կիրճ","Каньон"],"fog":["Մշուշ","Туман"],"Paperwhite E Ink glare-free, adjustable warm light":["Paperwhite E Ink՝ առանց փայլի, կարգավորվող տաք լույսով","Paperwhite E Ink без бликов, регулируемая тёплая подсветка"],"none, wired Lightning":["չկա, լարով Lightning","нет, проводной Lightning"],"none, wired USB-C":["չկա, լարով USB-C","нет, проводной USB-C"],"none, wired 3.5 mm":["չկա, լարով 3.5 մմ","нет, проводной 3.5 мм"],"or dual eSIM":["կամ երկու eSIM","или две eSIM"],"Solid oak base, knitted fabric, aluminium":["Ամուր կաղնե հիմք, գործված գործվածք, ալյումին","Основание из массива дуба, трикотажная ткань, алюминий"],"Natural oak veneer, aluminium":["Բնական կաղնու երեսպատում, ալյումին","Шпон натурального дуба, алюминий"],"Alexa and Google Assistant together":["Alexa և Google Assistant միասին","Alexa и Google Assistant вместе"],"Plastic with metal grille, carry handle":["Պլաստիկ՝ մետաղական ցանցով, կրելու բռնակ","Пластик с металлической решёткой, ручка для переноски"],"Plastic with metal grille, wheels and telescopic handle":["Պլաստիկ՝ մետաղական ցանցով, անիվներ և ձգվող բռնակ","Пластик с металлической решёткой, колёса и телескопическая ручка"],"AMD RDNA custom, 16.7 teraflops with PSSR upscaling":["Հատուկ AMD RDNA, 16.7 տերաֆլոպս՝ PSSR մասշտաբավորմամբ","Кастомный AMD RDNA, 16,7 терафлопс с масштабированием PSSR"],"Plastic tower with removable side panels":["Պլաստիկ կորպուս՝ հանովի կողային վահանակներով","Пластиковый корпус со съёмными боковыми панелями"],"Plastic box with a round top vent":["Պլաստիկ կորպուս՝ կլոր վերին օդանցքով","Пластиковый корпус с круглой вентиляцией сверху"],"Plastic tower with a top vent":["Պլաստիկ կորպուս՝ վերին օդանցքով","Пластиковый корпус с вентиляцией сверху"],"Display port":["DisplayPort","DisplayPort"],"AMD Zen 2 custom":["Հատուկ AMD Zen 2","Кастомный AMD Zen 2"],"yes (Audible)":["այո (Audible)","да (Audible)"],"Full HD touchscreen":["Full HD սենսորային էկրան","Сенсорный экран Full HD"],"Aluminium lid, plastic base":["Ալյումինե կափարիչ, պլաստիկ հիմք","Алюминиевая крышка, пластиковое основание"],"system software":["համակարգային ծրագրակազմ","системное ПО"],"Aluminium, lambskin leather, memory-foam cushions":["Ալյումին, գառան կաշի, հիշողությամբ փրփուրե բարձիկներ","Алюминий, кожа ягнёнка, амбушюры с эффектом памяти"],"Aluminium shell":["Ալյումինե պատյան","Алюминиевый корпус"],"Polycarbonate body, interchangeable attachments":["Պոլիկարբոնատե իրան, փոխարինելի ծայրադիրներ","Корпус из поликарбоната, сменные насадки"],"Polycarbonate body, aluminium wand":["Պոլիկարբոնատե իրան, ալյումինե խողովակ","Корпус из поликарбоната, алюминиевая труба"],"Fabric-covered headband, matte plastic earcups":["Գործվածքով պատված գլխակալ, փայլատ պլաստիկ ականջակալներ","Оголовье с тканевым покрытием, матовые пластиковые чашки"],"Perforated polycarbonate grille":["Ծակոտկեն պոլիկարբոնատե ցանց","Перфорированная поликарбонатная решётка"],"Plastic, a DualSense split around the screen":["Պլաստիկ, DualSense՝ բաժանված էկրանի երկու կողմերում","Пластик, DualSense, разделённый по бокам экрана"],"Light Fusion":["Light Fusion","Light Fusion"],"Light Hunter":["Light Hunter","Light Hunter"],"Garmin (own system)":["Garmin (սեփական համակարգ)","Garmin (собственная система)"],"HyperOS or MIUI":["HyperOS կամ MIUI","HyperOS или MIUI"],"HomePod software":["HomePod ծրագրակազմ","ПО HomePod"],"Sonos app":["Sonos հավելված","приложение Sonos"],"Plastic":["Պլաստիկ","Пластик"],"Glass":["Ապակի","Стекло"],"Metal":["Մետաղ","Металл"],"Aluminium":["Ալյումին","Алюминий"],"Aluminum":["Ալյումին","Алюминий"],"Aluminium alloy":["Ալյումինե համաձուլվածք","Алюминиевый сплав"],"Magnesium alloy":["Մագնեզիումե համաձուլվածք","Магниевый сплав"],"Polycarbonate":["Պոլիկարբոնատ","Поликарбонат"],"Leather":["Կաշի","Кожа"],"Recycled aluminium":["Վերամշակված ալյումին","Переработанный алюминий"],"Dual SIM":["Երկու SIM","Две SIM-карты"],"4-core":["4-միջուկ","4-ядерный"],"7-core":["7-միջուկ","7-ядерный"],"8-core":["8-միջուկ","8-ядерный"],"9-core":["9-միջուկ","9-ядерный"],"none, Wi-Fi and HDMI eARC":["չկա, Wi-Fi և HDMI eARC","нет, Wi-Fi и HDMI eARC"]};
+const COMING={"when":{"hy":"","ru":"","en":""},"items":[],"date":""};
+const PAGEONLY={"dyson-airwrap-hs09":["amber-silk"],"samsung-galaxy-s26-fe":["graphite","pistachio"],"samsung-galaxy-tab-a11-plus":["gray","silver"],"samsung-galaxy-z-fold-7":["mint"],"xiaomi-17t-pro":["black","deep-violet"]};
+const MERGED={"honor-choice-headphones-me01":"honor-choice-ros-me01","xiaomi-mi-smart-band-8-active":"xiaomi-smart-band-8-active","garmin-venu-3-leather":"garmin-venu-3-with-leather","sennheiser-accentum-acaebt":"sennheiser-accentum-wireless-acaebt","apple-ipad-mini-7-wifi":"apple-ipad-mini-7","apple-ipad-wi-fi-11":"apple-ipad-a16","apple-ipad-pro-13-wi-fi-plus-cellular-2024":"apple-ipad-pro-11-m4","apple-ipad-pro-12-9-m2-wifi-silver-mnxq3rk-a":"apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a","apple-macbook-air-mgn63-late-2020":"apple-macbook-air-13-mgn63-m1-2020","apple-macbook-air-mgn93-late-2020":"apple-macbook-air-13-mgn63-m1-2020","asus-vivobook-pro-q543mj-u93050":"asus-vivobook-pro-15-q543mj-u93050-oled","asus-vivobook-x1404va-v14-i38128":"asus-vivobook-x1404va-i38128","asus-vz27ehf-w-90lm07b0-b02470":"asus-vz27ehf-90lm07b0-b01470","dell-plus-2in1-db04250":"dell-14-plus-2in1-db04250","dell-xps-9640-1tb":"dell-xps-16-9640","lenovo-ideacentre-aio-23-8-24irh-9":"lenovo-ideacentre-aio-24irh9","honor-magicbook-pro-16-3k-core-ultra-5-125h-ram-1t-win11":"honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg","philips-271v8w":"philips-271v8","sony-wf-1000xm5-bce":"sony-wf-1000xm5-wireless-headphones","sony-wf-1000xm5-sce":"sony-wf-1000xm5-wireless-headphones","sony-wf-c700n-wz-e":"sony-wf-c700n-gz-e","sony-wh-ch720":"sony-wh-ch720n","sony-playstation-pulse-elite-wireless-ps5":"sony-ps5-pulse-elite-wireless","dyson-hd16-nural-plum":"dyson-nural-hd16-strawberry","dyson-hd16-nural-velvet":"dyson-nural-hd16-strawberry","dyson-hd16-vinca-blue-topaz":"dyson-nural-hd16-strawberry","dyson-hs08-id-multi-plum":"dyson-hs08-i-d","dyson-hs08-id-multi-velvet-gold":"dyson-hs08-i-d","dyson-hs08-velvet":"dyson-hs08-i-d","dyson-multi-complete-long-hs05-rich":"dyson-multi-complete-long-hs05","dyson-airstarit-plum":"dyson-ht01-airstrait-straightener-plum","garmin-forerunner-170-whitestone":"garmin-forerunner-170","garmin-forerunner-170-music-whitestone":"garmin-forerunner-170-music","garmin-forerunner-70-citron":"garmin-forerunner-70","garmin-forerunner-70-whitestone":"garmin-forerunner-70","garmin-instinct-2x-solar-moss":"garmin-instinct-2x-solar","garmin-venu-x1-gps-moss":"garmin-venu-x1-gps","garmin-venu-x1-moss":"garmin-venu-x1-gps","jbl-boombox-3-squad":"jbl-boombox-3","jbl-clip-4-squad":"jbl-clip-4","jbl-go-3-squad":"jbl-go-3","jbl-xtreme-3-camouflage":"jbl-xtreme-3","jbl-xtreme-4-squad":"jbl-xtreme-4","jbl-flip-6-squared":"jbl-flip-6","jbl-flip-6-star":"jbl-flip-6","jbl-partybox-120":"jbl-partybox-club-120","jbl-partybox-320":"jbl-partybox-stage-320","jbl-tune-230-tws":"jbl-tune-230-nc-tws","xiaomi-redmi-15-4g":"xiaomi-redmi-15","sony-ps5-pulse-explore-wireless":"sony-pulse-explore","sennheiser-momentum-m4aebt":"sennheiser-momentum-4","jbl-live-pro-2-twc":"jbl-live-pro-2-tws","bose-soundsport-free-bright":"bose-soundsport-free","apple-homepod-mini-mj2e3ll-a":"apple-homepod-mini","marshall-acton-3":"marshall-acton-iii","marshall-woburn-3":"marshall-woburn-iii","apple-macbook-air-13-mgn93-m1-2020":"apple-macbook-air-13-mgn63-m1-2020","apple-macbook-air-13-mgnd3-m1-2020":"apple-macbook-air-13-mgn63-m1-2020","apple-macbook-pro-16-mrw63-2023":"apple-macbook-pro-16-mrw23","apple-macbook-pro-14-mr7j3-2023":"apple-macbook-pro-14-2023-mtl73","dyson-airstarit":"dyson-ht01-airstrait-straightener-plum","samsung-galaxy-7-ultra-47mm-sm-l705f":"samsung-galaxy-ultra-47mm-2024","samsung-galaxy-watch-ultra-47mm-lte":"samsung-galaxy-ultra-47mm-2024","apple-watch-s10-42mm-with-sport-band":"apple-watch-series-10","apple-ipad-pro-13-wi-fi-2024":"apple-ipad-pro-11-m4","apple-ipad-10-a16-wi-fi-2025":"apple-ipad-a16","apple-ipad-11":"apple-ipad-a16","garmin-cirqa-smart-band-french-l-xl":"garmin-cirqa-smart-band-mauve-s-m","garmin-cirqa-smart-band-mauve-l-xl":"garmin-cirqa-smart-band-mauve-s-m","garmin-fenix-8-47-mm-amoled-sapphire-spark":"garmin-fenix-8-47-mm-amoled-sapphire-carbon","sennheiser-accentum-true-special-edition-atw1-se":"sennheiser-accentum-true-wireless-atw1","whoop-mg-life":"whoop-life","apple-ipad-pro-11-wi-fi":"apple-ipad-pro-11-m4","apple-ipad-air-11-inch-with-wi-fi":"apple-ipad-air-11-m3","dyson-zone-absoluteplus":"dyson-zone","lenovo-ideapad-5-2in1-16ial10-ultra-7":"lenovo-ideapad-5-2in1-16","apple-ipad-air-13-m3":"apple-ipad-air-11-m3","apple-ipad-air-13-m4":"apple-ipad-air-11-m4","apple-ipad-air-13-wi-fi-2024":"apple-ipad-air-11-wi-fi-2024","apple-ipad-air-13-wi-fi-plus-cellular-2024":"apple-ipad-air-11-wi-fi-2024","apple-ipad-pro-13-m4":"apple-ipad-pro-11-m4","apple-ipad-pro-13-m5":"apple-ipad-pro-11-m5","apple-ipad-pro-12-9-m2-wifi-s-grey-mnxp3rk-a":"apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a","xiaomi-a-50-2026":"xiaomi-a-43-2026","xiaomi-a-65-2026":"xiaomi-a-43-2026","xiaomi-tv-a-pro-55-2026-qled":"xiaomi-a-pro-43-2026","apple-macbook-pro-14-mrx43-2023":"apple-macbook-pro-14-mrx33-2023","honor-magicbook-x16-2026-ultra-5":"honor-magicbook-x16-2026-16-wuxga-ssd1tb","garmin-forerunner-970-010-02969-10":"garmin-forerunner-970","garmin-vivoactive-5-metallic-orchid":"garmin-vivoactive-5","apple-ipad-air-11-wi-fi-plus-cellular-2024":"apple-ipad-air-11-wi-fi-2024","apple-ipad-pro-13-m4-wi-fi-plus-cellular-2024":"apple-ipad-pro-11-m4","apple-ipad-pro-12-9-m2-cell-spacegray-mp5x3":"apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a","hp-victus-15-fa0020nq":"hp-victus-15-fa0018nq","samsung-galaxy-tab-a8-10-5-x205":"samsung-galaxy-tab-a8-10-5-x200","samsung-galaxy-tab-a9-x115":"samsung-galaxy-tab-a9-x110","samsung-galaxy-tab-a9plus-x216":"samsung-galaxy-tab-a9plus-x210","samsung-galaxy-tab-s9-fe-x516":"samsung-galaxy-tab-s9-fe-x510","sony-ps5-vr-2":"sony-playstation-vr2","honor-pad-x8b-ndl2-l09":"honor-pad-x8b-ndl2-w09","sony-whult900n":"sony-wh-ult900n"};
+const BLOG=[{"id":"iphone-battery-life","date":"2026-10-05","cover":"images/blog/iphone-battery-life.webp","cta":{"href":"#/c/phone","en":"Compare phone prices","ru":"Сравнить цены на телефоны","hy":"Համեմատել հեռախոսների գները"},"sources":[{"name":"Apple: battery usage","url":"https://support.apple.com/en-us/102432"},{"name":"Apple: Low Power Mode","url":"https://support.apple.com/en-us/101604"},{"name":"Apple: battery performance","url":"https://support.apple.com/en-us/101575"},{"name":"Apple: charging limits","url":"https://support.apple.com/en-us/108055"},{"name":"Photo: Alex Ugolkov / Pexels","url":"https://www.pexels.com/photo/iphone-on-a-white-table-9434647/"}],"en":{"title":"How to save iPhone battery: start with what actually drains it","lead":"A few targeted changes can help your iPhone last until evening. Saving today’s charge and protecting long-term battery health are different jobs.","body":["## Check before changing settings","Open Settings → Battery and review app usage. Heavy screen use is different from an app working in the background. Compare similar days before deciding whether a change helped; there is no honest universal promise of “twice the battery life”.","## When you need more time today","- Turn on Low Power Mode in Battery settings. Depending on iOS and your model, it may be inside Power Mode. Some background work and visual effects are reduced; mail and other updates may arrive later.","- Lower an unnecessarily bright screen and choose a shorter Auto-Lock time. Keep settings comfortable enough that you can still read your screen.","- Change the background permissions of a specific heavy app only if you do not need its immediate updates. Do not disable every useful feature just to save a little charge.","## Charge limits are a different choice","On supported iPhones, Battery settings offer charging limits. A lower limit leaves less charge for today while reducing time spent fully charged. Use it when your daily routine allows; a long trip may justify a full charge.","## Is the battery wearing out?","Check Battery Health and any service recommendation. An aged battery cannot be made new by changing settings. If runtime suddenly changes, inspect app usage and recent updates before assuming you need a new phone.","Menu names vary by model and iOS version. This cover is an illustrative device photo, not a screenshot of the settings described."]},"ru":{"title":"Как экономить заряд iPhone: сначала найдите причину расхода","lead":"Несколько точечных настроек помогут дотянуть до вечера. Экономия заряда сегодня и сохранение ресурса аккумулятора — разные задачи.","body":["## Сначала проверьте расход","Откройте Настройки → Аккумулятор и посмотрите расход по приложениям. Долгая работа экрана отличается от фоновой активности. Сравнивайте похожие дни: обещать всем «вдвое больше автономности» нельзя.","## Если заряда должно хватить до вечера","- Включите режим энергосбережения в настройках аккумулятора. На некоторых версиях iOS он находится в разделе режима питания. Часть фоновой работы и эффектов сокращается; почта и другие обновления могут приходить позже.","- Уменьшите избыточную яркость и время автоблокировки. Экран должен оставаться удобным для чтения.","- Ограничьте фоновую работу конкретного приложения с большим расходом, если вам не нужны его мгновенные обновления. Отключать все полезные функции ради небольшой экономии не обязательно.","## Лимит зарядки решает другую задачу","На поддерживаемых iPhone доступны лимиты зарядки. Низкий лимит даёт меньше заряда на сегодня, но уменьшает время при полном заряде. Выбирайте его, если позволяет ваш распорядок; перед долгой поездкой может понадобиться 100%.","## Аккумулятор уже изношен?","Проверьте состояние аккумулятора и рекомендации по обслуживанию. Настройки не возвращают старому аккумулятору исходную ёмкость. При внезапном падении автономности сначала изучите расход приложений и недавние обновления.","Названия пунктов зависят от модели и iOS. На обложке — иллюстративное фото устройства, а не скриншот описанных настроек."]},"hy":{"title":"Ինչպես խնայել iPhone-ի լիցքը․ նախ գտեք ծախսի պատճառը","lead":"Մի քանի նպատակային փոփոխություն կարող է օգնել, որ լիցքը բավարարի մինչև երեկո։ Այսօրվա լիցքը խնայելն ու մարտկոցի երկարաժամկետ վիճակը պահպանելը տարբեր խնդիրներ են։","body":["## Նախ ստուգեք ծախսը","Բացեք Settings → Battery և դիտեք հավելվածների սպառումը։ Էկրանի երկար օգտագործումն ու հավելվածի ֆոնային աշխատանքը տարբեր պատճառներ են։ Համեմատեք նման օրերը․ բոլորի համար «երկու անգամ ավելի երկար աշխատանք» խոստանալը ճիշտ չէ։","## Երբ լիցքը պետք է բավարարի մինչև երեկո","- Battery բաժնում միացրեք Low Power Mode-ը։ Որոշ iOS տարբերակներում այն Power Mode ենթաբաժնում է։ Ֆոնային աշխատանքի և էֆեկտների մի մասը սահմանափակվում է․ նամակներն ու այլ թարմացումները կարող են ուշանալ։","- Նվազեցրեք չափազանց բարձր պայծառությունն ու Auto-Lock-ի սպասման ժամանակը։ Էկրանը պետք է մնա ընթեռնելի։","- Սահմանափակեք մեծ ծախս ունեցող առանձին հավելվածի ֆոնային աշխատանքը, եթե անմիջապես թարմացումներ ստանալու կարիք չունեք։ Փոքր խնայողության համար բոլոր օգտակար գործառույթներն անջատելը պարտադիր չէ։","## Լիցքավորման սահմանաչափը այլ նպատակ ունի","Աջակցվող iPhone-ներում կան լիցքավորման սահմանաչափեր։ Ավելի ցածր սահմանաչափը նվազեցնում է այսօրվա հասանելի լիցքը, բայց նաև լրիվ լիցքավորված մնալու ժամանակը։ Օգտագործեք այն, եթե ձեր առօրյան թույլ է տալիս․ երկար ուղևորությունից առաջ կարող է պետք լինել ամբողջական լիցք։","## Մարտկոցն արդեն մաշվա՞ծ է","Ստուգեք Battery Health-ը և սպասարկման առաջարկությունները։ Կարգավորումները մաշված մարտկոցին չեն վերադարձնում սկզբնական տարողությունը։ Աշխատանքի տևողության կտրուկ փոփոխության դեպքում նախ ստուգեք հավելվածների ծախսն ու վերջին թարմացումները։","Բաժինների անունները կախված են մոդելից ու iOS-ից։ Շապիկը սարքի նկար է, ոչ թե նկարագրված կարգավորումների էկրանակադր։"]}},{"id":"android-battery-life","date":"2026-10-05","cover":"images/blog/android-battery-life.webp","cta":{"href":"#/c/phone","en":"Compare Android phones","ru":"Сравнить телефоны Android","hy":"Համեմատել Android հեռախոսները"},"sources":[{"name":"Google: Android battery saving","url":"https://support.google.com/android/answer/7664692?hl=en"},{"name":"Google: Pixel battery settings","url":"https://support.google.com/pixelphone/answer/6090612?hl=en"},{"name":"Google: Pixel Battery Saver","url":"https://support.google.com/pixelphone/answer/6187458?hl=en"},{"name":"Photo: Stanley Ng / Pexels","url":"https://www.pexels.com/photo/person-holding-black-samsung-android-smartphone-4387779/"}],"en":{"title":"How to save Android battery without missing what matters","lead":"Start with the screen and Battery usage, then decide which background work you can do without. Menus differ on Samsung, Xiaomi, Pixel and other phones.","body":["## Start with the biggest drain","Open Settings and search for Battery usage. Look at what consumed power during an ordinary day. A navigation app used for hours should not be judged like an unused app running in the background.","## Make the screen work less","- Use comfortable brightness, a shorter screen timeout and automatic brightness where useful.","- On phones offering Always-on Display or a high-refresh display, try disabling the always-on feature or choosing a lower refresh rate. Decide whether the saved charge is worth the change in convenience or smoothness.","## Use the built-in battery saver","Battery Saver can help when you need to get home before charging. Restrictions depend on the phone: background activity, location work and notifications can be affected. Test essential messaging or work apps before relying on an aggressive saving mode.","## Restrict apps selectively","Keep Adaptive Battery or the maker’s equivalent optimization enabled where available. Review a high-drain app’s background allowance before restricting it; avoid treating every messenger as expendable.","## A useful routine","Choose one change, then compare a similar day. Record when you unplugged, screen use and the remaining charge. That is a better buying decision than comparing battery capacity alone.","Battery-saving settings do not repair an aged battery. Charge limits, when offered by your phone, focus on long-term wear and may reduce the charge you have today. The photo illustrates phone use; it does not show these menus."]},"ru":{"title":"Как экономить заряд Android и не пропускать важное","lead":"Начните с экрана и статистики расхода, затем решите, какую фоновую работу можно ограничить. Меню Samsung, Xiaomi, Pixel и других телефонов различаются.","body":["## Найдите главный расход","В Настройках найдите расход заряда аккумулятора. Посмотрите обычный день. Навигатор, работавший несколько часов, нельзя оценивать так же, как неиспользуемое приложение с фоновой активностью.","## Уменьшите работу экрана","- Выберите комфортную яркость, короткое время до отключения экрана и автоматическую яркость, если она удобна.","- Если доступны Always-on Display и высокая частота обновления, попробуйте отключить постоянно включённый экран или снизить частоту. Оцените, стоит ли экономия потери удобства или плавности.","## Включите встроенное энергосбережение","Режим энергосбережения полезен, когда нужно добраться домой без зарядки. Ограничения зависят от телефона: могут затронуть фоновые задачи, геолокацию и уведомления. Проверьте важные рабочие приложения и мессенджеры перед использованием строгого режима.","## Ограничивайте приложения выборочно","Оставьте адаптивную батарею или аналог производителя включённым, если функция доступна. Перед ограничением приложения с большим расходом проверьте разрешение на работу в фоне. Не жертвуйте всеми мессенджерами автоматически.","## Полезная привычка","Меняйте одну настройку и сравнивайте похожие дни. Запишите время отключения от зарядки, использование экрана и остаток заряда. Для выбора телефона это полезнее одной цифры ёмкости.","Энергосбережение не восстанавливает изношенный аккумулятор. Лимиты зарядки, если доступны, уменьшают длительный износ, но оставляют меньше заряда сегодня. Фото иллюстрирует использование телефона, а не эти меню."]},"hy":{"title":"Ինչպես խնայել Android-ի լիցքը՝ կարևոր ծանուցումները չկորցնելով","lead":"Սկսեք էկրանից ու լիցքի ծախսի վիճակագրությունից, հետո որոշեք՝ որ ֆոնային աշխատանքն է կարելի սահմանափակել։ Samsung-ի, Xiaomi-ի, Pixel-ի և այլ սարքերի բաժինները տարբեր են։","body":["## Գտեք հիմնական սպառողին","Settings-ում փնտրեք Battery usage-ը։ Դիտեք սովորական օրվա ծախսը։ Մի քանի ժամ աշխատած նավիգացիոն հավելվածն ու չօգտագործվող հավելվածի ֆոնային ակտիվությունը նույն կերպ գնահատել պետք չէ։","## Նվազեցրեք էկրանի աշխատանքը","- Ընտրեք հարմար պայծառություն, էկրանի անջատման ավելի կարճ սպասում և ավտոմատ պայծառություն, եթե այն հարմար է։","- Եթե կան Always-on Display և բարձր թարմացման հաճախականություն, փորձեք անջատել մշտապես միացված էկրանը կամ նվազեցնել հաճախականությունը։ Գնահատեք՝ լիցքի խնայողությունն արդյոք արժե հարմարավետության կամ սահունության փոփոխությանը։","## Օգտագործեք ներկառուցված խնայողության ռեժիմը","Battery Saver-ը կարող է օգնել, երբ պետք է տուն հասնել առանց լիցքավորելու։ Սահմանափակումները կախված են սարքից․ կարող են ազդել ֆոնային աշխատանքի, տեղորոշման և ծանուցումների վրա։ Խիստ ռեժիմին ապավինելուց առաջ ստուգեք կարևոր աշխատանքային հավելվածներն ու մեսենջերները։","## Հավելվածները սահմանափակեք ընտրովի","Աջակցվելու դեպքում միացված պահեք Adaptive Battery-ը կամ արտադրողի համարժեք գործառույթը։ Մեծ ծախս ունեցող հավելվածը սահմանափակելուց առաջ ստուգեք դրա ֆոնային աշխատանքի թույլտվությունը։ Բոլոր մեսենջերներից միանգամից հրաժարվել պետք չէ։","## Օգտակար սովորություն","Փոխեք մեկ կարգավորում, ապա համեմատեք նման օրերը։ Գրանցեք լիցքավորիչից անջատելու ժամը, էկրանի օգտագործումն ու մնացած լիցքը։ Սարք ընտրելու համար սա ավելի օգտակար է, քան միայն մարտկոցի տարողության թիվը։","Խնայողության կարգավորումները մաշված մարտկոցը չեն վերականգնում։ Լիցքավորման սահմանաչափերը, եթե կան, օգնում են երկարաժամկետ մաշվածությանը, բայց նվազեցնում են այսօրվա լիցքը։ Նկարը հեռախոսի օգտագործման օրինակ է, ոչ թե այս բաժինների էկրանակադր։"]}},{"id":"battery-charging-myths","date":"2026-10-05","cover":"images/blog/battery-charging-myths.webp","cta":{"href":"#/c/phone","en":"Compare phones by configuration","ru":"Сравнить конфигурации телефонов","hy":"Համեմատել հեռախոսների տարբերակները"},"sources":[{"name":"Apple: charging and maintenance","url":"https://support.apple.com/en-us/105105"},{"name":"Apple: maximizing battery performance","url":"https://www.apple.com/batteries/maximizing-performance/"},{"name":"Apple: optimized charging","url":"https://support.apple.com/en-us/108055"},{"name":"Google: charging a Pixel","url":"https://support.google.com/pixelphone/answer/7106961?hl=en"},{"name":"Google: Android battery care","url":"https://support.google.com/android/answer/7664692?hl=en"},{"name":"Photo: Circe Denyer / CC0","url":"https://www.publicdomainpictures.net/en/view-image.php?image=272956&picture=100-charged"}],"en":{"title":"Phone charging myths: 100%, overnight charging and battery health","lead":"You do not need to organize your whole day around a battery percentage. Focus on heat, suitable charging equipment and the options your phone actually supports.","body":["## Must I drain the phone to zero?","No. Modern phone batteries do not need a full discharge before charging. Google’s Android guidance explicitly says you do not need to teach a phone its capacity by repeatedly going from full to empty.","## Is an overnight charge always bad?","Apple says iPhone stops charging when full and can be left connected overnight. That does not make heat or a damaged cable harmless. Charge in a ventilated place and use equipment suitable for your phone.","## Is 80% a rule for everyone?","A supported charge limit can reduce time at high charge, but it leaves less usable charge for the day. Choose a limit that suits your routine. If you need full runtime for travel, charging to 100% is an ordinary use case, not a failure.","## Why does charging sometimes slow down?","Phones manage charging rather than taking the charger’s maximum power continuously. Apple describes reducing charging current near full charge. Temperature management and supported optimization features can also change the schedule; check the phone’s explanation before blaming the cable.","## What matters most?","Avoid leaving the phone in a hot car or direct sunlight while charging. Apple warns that temperatures above 35°C can permanently damage battery capacity. For extended storage, follow your maker’s guidance; Apple recommends about half charge.","Battery health describes wear over time; battery level describes the charge left now. A saver mode helps today, while a charging limit targets wear. Neither guarantees a particular number of extra years."]},"ru":{"title":"Мифы о зарядке телефона: 100%, ночь и состояние аккумулятора","lead":"Не нужно строить весь день вокруг процента заряда. Важнее нагрев, подходящее зарядное оборудование и функции, которые действительно поддерживает ваш телефон.","body":["## Нужно разряжать до нуля?","Нет. Современный аккумулятор телефона не требует полного разряда перед зарядкой. В рекомендациях Google для Android прямо сказано: учить телефон ёмкости повторными циклами от полного заряда до нуля не нужно.","## Зарядка ночью всегда вредна?","Apple пишет, что iPhone останавливает зарядку при полном заряде и его можно оставлять подключённым на ночь. Это не делает нагрев или повреждённый кабель безобидными. Заряжайте в проветриваемом месте подходящим оборудованием.","## 80% — обязательное правило?","Поддерживаемый лимит может сократить время при высоком заряде, но оставляет меньше заряда на день. Выбирайте предел под свой распорядок. Перед поездкой зарядить до 100% — нормальная потребность, а не ошибка.","## Почему зарядка иногда замедляется?","Телефон управляет зарядкой и не принимает максимальную мощность адаптера постоянно. Apple описывает снижение тока по мере приближения к полному заряду. Температура и оптимизация тоже могут менять расписание. Сначала прочитайте объяснение телефона, затем проверяйте кабель.","## На что обратить внимание?","Не оставляйте заряжающийся телефон в жаркой машине или под прямым солнцем. Apple предупреждает, что температура выше 35°C может необратимо снизить ёмкость. Для длительного хранения следуйте инструкции производителя; Apple рекомендует около половины заряда.","Состояние аккумулятора описывает износ, уровень заряда — оставшуюся энергию сейчас. Энергосбережение помогает сегодня, лимит зарядки направлен на износ. Ни один режим не гарантирует конкретное число дополнительных лет."]},"hy":{"title":"Հեռախոսի լիցքավորման միֆերը․ 100%, գիշերային լիցքավորում և մարտկոցի վիճակ","lead":"Պետք չէ ամբողջ օրը կազմակերպել լիցքի տոկոսի շուրջ։ Ավելի կարևոր են տաքացումը, համապատասխան լիցքավորիչն ու ձեր սարքի իրական գործառույթները։","body":["## Պե՞տք է լիցքը հասցնել զրոյի","Ոչ։ Ժամանակակից հեռախոսի մարտկոցը լիցքավորումից առաջ ամբողջությամբ դատարկելու կարիք չունի։ Google-ի Android ուղեցույցը հստակ ասում է՝ ամբողջական լիցքից մինչև դատարկ կրկնվող ցիկլերով հեռախոսին տարողությունը «սովորեցնել» պետք չէ։","## Գիշերը լիցքավորելը միշտ վնա՞ս է","Apple-ը նշում է, որ լրիվ լիցքավորվելուց հետո iPhone-ը դադարեցնում է լիցքավորումը, և այն կարելի է միացված թողնել գիշերը։ Սա չի նշանակում, որ տաքացումն ու վնասված մալուխը անվնաս են։ Լիցքավորեք օդափոխվող տեղում՝ սարքին համապատասխան պարագաներով։","## 80%-ը պարտադիր կանո՞ն է","Աջակցվող սահմանաչափը կարող է նվազեցնել բարձր լիցքի մակարդակում մնալու ժամանակը, բայց նաև պակաս լիցք թողնել օրվա համար։ Ընտրեք ձեր առօրյային հարմար սահմանաչափ։ Ուղևորությունից առաջ 100% լիցքավորելը սովորական անհրաժեշտություն է, ոչ թե սխալ։","## Ինչո՞ւ է լիցքավորումը երբեմն դանդաղում","Հեռախոսը կառավարում է լիցքավորումը և անընդհատ չի ընդունում լիցքավորիչի առավելագույն հզորությունը։ Apple-ը նկարագրում է հոսանքի նվազեցումը լրիվ լիցքին մոտենալիս։ Ջերմաստիճանն ու օպտիմալացումը նույնպես կարող են փոխել ժամանակացույցը։ Նախ կարդացեք սարքի բացատրությունը, հետո ստուգեք մալուխը։","## Ինչի՞ն ուշադրություն դարձնել","Լիցքավորվող հեռախոսը մի թողեք տաք մեքենայում կամ ուղիղ արևի տակ։ Apple-ը զգուշացնում է, որ 35°C-ից բարձր ջերմաստիճանը կարող է մշտապես վնասել տարողությանը։ Երկար պահելու համար հետևեք արտադրողի ցուցումներին․ Apple-ը խորհուրդ է տալիս մոտ կես լիցք։","Մարտկոցի վիճակը ցույց է տալիս մաշվածությունը ժամանակի ընթացքում, իսկ լիցքի մակարդակը՝ այս պահին մնացած էներգիան։ Խնայողության ռեժիմը օգնում է այսօր, լիցքավորման սահմանաչափը՝ մաշվածությանը։ Դրանցից ոչ մեկը չի երաշխավորում ծառայության կոնկրետ հավելյալ տարիներ։"]}},{"id":"apple-september-2026","date":"2026-09-24","cta":{"href":"#/p/apple-iphone-18-pro","hy":"iPhone 18 Pro-ի գները","ru":"Цены на iPhone 18 Pro","en":"iPhone 18 Pro prices"},"sources":[{"name":"Apple Newsroom: iPhone 18 Pro and iPhone 18 Pro Max","url":"https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"},{"name":"Apple Newsroom: iPhone Duo","url":"https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/"},{"name":"Apple Newsroom: John Ternus to become CEO","url":"https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/"},{"name":"MacRumors: September 9 event","url":"https://www.macrumors.com/guide/apple-september-2026-what-to-expect/"},{"name":"Benzinga: AirPods 5, Watch Series 12 and Ultra 4","url":"https://www.benzinga.com/markets/tech/26/09/61696812/apple-announced-airpods-5-watch-ultra-4-and-watch-series-12"}],"en":{"title":"What Apple showed on 9 September: iPhone 18 Pro, the foldable iPhone Duo, new Watches and AirPods 5","lead":"Apple's “Surprise and shine” event was the first under its new CEO, John Ternus. Here is what was announced, and what it costs in Armenia today.","body":["## A new CEO on stage","John Ternus, who led Apple's hardware engineering, became chief executive on 1 September; Tim Cook is now executive chairman of the board. The event in Cupertino on 9 September was his first launch.","## iPhone 18 Pro and iPhone 18 Pro Max","- The A20 Pro chip, made on a 2 nm process, with a new vapor chamber that holds its performance for longer.","- A 48 MP main camera with a variable aperture, from f/1.48 to f/4, a first for iPhone.","- Longer battery life: Apple rates the 18 Pro at up to 36 hours of video and the Pro Max at up to 45.","- A smaller Dynamic Island that shows up to three Live Activities at once.","- 2 TB of storage now on the smaller Pro as well, and four colours: burgundy, glacier, silver and black.","In the US they start at $1,199 and $1,299, $100 more than last year. In Armenia today: iPhone 18 Pro from {{price:apple-iphone-18-pro}}, iPhone 18 Pro Max from {{price:apple-iphone-18-pro-max}}.","## iPhone Duo, the first foldable iPhone","A 5.4-inch screen outside and a 7.6-inch screen inside; opened, it is the thinnest iPhone yet. It starts at $1,999 in the US and goes on sale in October. It is not sold in Armenia yet.","## No regular iPhone 18 this autumn","Apple did not show a standard iPhone 18. Reports say the more affordable models move to spring 2027, so the iPhone 17 stays the current base model.","## Apple Watch and AirPods","- Apple Watch Series 12, from $399: a new health-sensing system with larger ECG electrodes, and the ceramic case returns.","- Apple Watch Ultra 4, from $799.","- AirPods 5, from $129: active noise cancellation on both models, and Live Translation.","In Armenia today: Watch Series 12 from {{price:apple-watch-series-12-gps-42mm}}, Watch Ultra 4 from {{price:apple-watch-ultra-4-gps-plus-cellular-plus-band}}, AirPods 5 from {{price:apple-airpods-5}}."]},"ru":{"title":"Что Apple показала 9 сентября: iPhone 18 Pro, складной iPhone Duo, новые часы и AirPods 5","lead":"Презентация «Surprise and shine» стала первой при новом генеральном директоре Apple Джоне Тернусе. Что показали и сколько это стоит в Армении сегодня.","body":["## Новый глава на сцене","Джон Тернус, руководивший разработкой железа Apple, стал генеральным директором 1 сентября, а Тим Кук теперь исполнительный председатель совета директоров. Презентация 9 сентября в Купертино — его первая.","## iPhone 18 Pro и iPhone 18 Pro Max","- Чип A20 Pro по 2-нм техпроцессу и новая испарительная камера, которая дольше удерживает производительность.","- Основная камера 48 Мп с переменной диафрагмой от f/1.48 до f/4 — впервые в iPhone.","- Дольше от батареи: Apple заявляет до 36 часов видео для 18 Pro и до 45 для Pro Max.","- Уменьшенный Dynamic Island, который показывает до трёх Live Activities одновременно.","- 2 ТБ памяти теперь и в меньшем Pro, и четыре цвета: burgundy, glacier, silver и black.","В США цены начинаются с $1 199 и $1 299 — на $100 больше, чем год назад. В Армении сегодня: iPhone 18 Pro от {{price:apple-iphone-18-pro}}, iPhone 18 Pro Max от {{price:apple-iphone-18-pro-max}}.","## iPhone Duo — первый складной iPhone","Внешний экран 5,4 дюйма, внутренний — 7,6. В раскрытом виде это самый тонкий iPhone. В США от $1 999, продажи начнутся в октябре; в Армении его пока нет.","## Обычного iPhone 18 этой осенью нет","Apple не показала обычный iPhone 18. По данным СМИ, более доступные модели перенесены на весну 2027 года, так что базовой моделью остаётся iPhone 17.","## Apple Watch и AirPods","- Apple Watch Series 12 от $399: новая система датчиков здоровья с увеличенными электродами ЭКГ и возвращение керамического корпуса.","- Apple Watch Ultra 4 от $799.","- AirPods 5 от $129: активное шумоподавление в обеих моделях и Live Translation.","В Армении сегодня: Watch Series 12 от {{price:apple-watch-series-12-gps-42mm}}, Watch Ultra 4 от {{price:apple-watch-ultra-4-gps-plus-cellular-plus-band}}, AirPods 5 от {{price:apple-airpods-5}}."]},"hy":{"title":"Ինչ ցույց տվեց Apple-ը սեպտեմբերի 9-ին․ iPhone 18 Pro, ծալվող iPhone Duo, նոր ժամացույցներ և AirPods 5","lead":"Apple-ի «Surprise and shine» շնորհանդեսն առաջինն էր ընկերության նոր գործադիր տնօրեն Ջոն Տերնուսի օրոք։ Ահա թե ինչ ներկայացվեց և որքան արժե այն Հայաստանում այսօր։","body":["## Նոր ղեկավար բեմում","Ջոն Տերնուսը, որը ղեկավարում էր Apple-ի սարքերի ինժեներական մշակումը, գործադիր տնօրեն դարձավ սեպտեմբերի 1-ին, իսկ Թիմ Քուքն այժմ տնօրենների խորհրդի գործադիր նախագահն է։ Սեպտեմբերի 9-ի շնորհանդեսը Կուպերտինոյում նրա առաջինն էր։","## iPhone 18 Pro և iPhone 18 Pro Max","- A20 Pro չիպ՝ 2 նմ տեխնոլոգիայով, և նոր գոլորշային խցիկ, որն ավելի երկար է պահում արտադրողականությունը։","- 48 ՄՊ հիմնական տեսախցիկ՝ փոփոխական դիաֆրագմայով՝ f/1.48-ից մինչև f/4։ Սա առաջինն է iPhone-ում։","- Ավելի երկար մարտկոց․ Apple-ը 18 Pro-ի համար նշում է մինչև 36 ժամ տեսանյութ, Pro Max-ի համար՝ մինչև 45։","- Ավելի փոքր Dynamic Island, որը միաժամանակ ցույց է տալիս մինչև երեք Live Activity։","- 2 ՏԲ հիշողություն այժմ նաև փոքր Pro-ում, և չորս գույն՝ burgundy, glacier, silver և black։","ԱՄՆ-ում դրանց գինը սկսվում է $1,199-ից և $1,299-ից՝ նախորդ տարվանից $100-ով ավելի։ Հայաստանում այսօր՝ iPhone 18 Pro՝ {{price:apple-iphone-18-pro}}-ից, iPhone 18 Pro Max՝ {{price:apple-iphone-18-pro-max}}-ից։","## iPhone Duo՝ առաջին ծալվող iPhone-ը","Արտաքին էկրանը 5.4 դյույմ է, ներքինը՝ 7.6։ Բացված վիճակում այն մինչ օրս ամենաբարակ iPhone-ն է։ ԱՄՆ-ում գինը սկսվում է $1,999-ից, վաճառքը կսկսվի հոկտեմբերին։ Հայաստանում այն դեռ չի վաճառվում։","## Սովորական iPhone 18 այս աշնանը չկա","Apple-ը չներկայացրեց սովորական iPhone 18։ Ըստ լրատվամիջոցների՝ ավելի մատչելի մոդելները տեղափոխվել են 2027-ի գարուն, ուստի հիմնական մոդելը մնում է iPhone 17-ը։","## Apple Watch և AirPods","- Apple Watch Series 12՝ $399-ից․ առողջության չափման նոր համակարգ՝ ԷՍԳ-ի ավելի մեծ էլեկտրոդներով, և վերադառնում է կերամիկական իրանը։","- Apple Watch Ultra 4՝ $799-ից։","- AirPods 5՝ $129-ից․ ակտիվ աղմկազերծում երկու մոդելներում էլ և Live Translation։","Հայաստանում այսօր՝ Watch Series 12՝ {{price:apple-watch-series-12-gps-42mm}}-ից, Watch Ultra 4՝ {{price:apple-watch-ultra-4-gps-plus-cellular-plus-band}}-ից, AirPods 5՝ {{price:apple-airpods-5}}-ից։"]},"cover":"images/blog/apple-september-2026.webp"},{"id":"iphone-17-pro-vs-18-pro","date":"2026-09-24","cta":{"href":"#/p/apple-iphone-18-pro","hy":"iPhone 18 Pro-ի գները","ru":"Цены на iPhone 18 Pro","en":"iPhone 18 Pro prices"},"sources":[{"name":"Apple Newsroom: iPhone 18 Pro and iPhone 18 Pro Max","url":"https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"},{"name":"MacRumors: iPhone 17 Pro vs. iPhone 18 Pro","url":"https://www.macrumors.com/guide/iphone-17-pro-vs-18-pro/"},{"name":"Tom's Guide: iPhone 18 Pro Max vs iPhone 17 Pro Max","url":"https://www.tomsguide.com/phones/iphones/iphone-18-pro-max-vs-iphone-17-pro-max-comparison"},{"name":"AppleInsider: iPhone 18 Pro vs iPhone 17 Pro","url":"https://appleinsider.com/inside/iphone-18/vs/iphone-18-pro-vs-iphone-17-pro-flagships-compared"}],"en":{"title":"iPhone 17 Pro or iPhone 18 Pro: what actually changed","lead":"From the outside they are almost the same phone. The differences are inside, and in the price.","body":["## Design","The same size and shape; the 18 Pro is a few grams heavier (about 211 g against 206 g). The colours change: the 17 Pro came in Cosmic Orange, Deep Blue and Silver, the 18 Pro comes in Burgundy, Glacier, Silver and Black.","!fig:images/blog/iphone-17-18-pro-colours.webp|The iPhone 17 Pro colours (top) and the iPhone 18 Pro colours (bottom).","## Chip and cooling","A19 Pro (3 nm) against A20 Pro (2 nm). The 18 Pro also gets a redesigned vapor chamber, so it holds its speed for longer in games and video exports. The difference shows under long, heavy use rather than day to day.","## Camera","Both have three 48 MP cameras with a 4× telephoto. What is new is the main camera's variable aperture: f/1.48 for more light at night, down to f/4 for sharper group shots and landscapes. The 17 Pro's main camera is fixed at f/1.78. Video gets new tools as well, such as 4K Dolby Vision time-lapse.","## Battery","- 17 Pro: up to 33 hours of video · 18 Pro: up to 36.","- 17 Pro Max: up to 39 hours · 18 Pro Max: up to 45.","Apple quotes these for the eSIM-only models; the versions with a SIM tray are rated about two hours lower.","## Everything else","- A smaller Dynamic Island, with up to three Live Activities at once.","- Faster wired charging and a newer cellular modem.","- 2 TB of storage on the 6.3-inch Pro too, not only on the Pro Max.","## Price","In the US the 18 Pro costs $100 more than the 17 Pro did at launch ($1,199 against $1,099). In Armenia today:","- iPhone 17 Pro from {{price:apple-iphone-17-pro}}, iPhone 18 Pro from {{price:apple-iphone-18-pro}}: {{diff:apple-iphone-17-pro|apple-iphone-18-pro}} more.","- iPhone 17 Pro Max from {{price:apple-iphone-17-pro-max}}, iPhone 18 Pro Max from {{price:apple-iphone-18-pro-max}}: {{diff:apple-iphone-17-pro-max|apple-iphone-18-pro-max}} more.","These are the lowest prices for any build; the SIM tray and the storage change them, and each product page shows every option.","## Which one to buy","If you already have a 17 Pro, there is little reason to switch. From a 15 Pro or older, the 18 Pro is the bigger step: longer battery life and the better camera. If the price matters more than the newest camera, the 17 Pro is nearly the same phone for less."]},"ru":{"title":"iPhone 17 Pro или iPhone 18 Pro: что на самом деле изменилось","lead":"Снаружи это почти один и тот же телефон. Разница — внутри и в цене.","body":["## Дизайн","Размеры и форма те же; 18 Pro на несколько граммов тяжелее (около 211 г против 206 г). Меняются цвета: 17 Pro выпускался в Cosmic Orange, Deep Blue и Silver, 18 Pro — в Burgundy, Glacier, Silver и Black.","!fig:images/blog/iphone-17-18-pro-colours.webp|Цвета iPhone 17 Pro (вверху) и iPhone 18 Pro (внизу).","## Чип и охлаждение","A19 Pro (3 нм) против A20 Pro (2 нм). У 18 Pro ещё и переработанная испарительная камера, поэтому он дольше держит скорость в играх и при экспорте видео. Разница заметна под долгой нагрузкой, а не в обычном использовании.","## Камера","У обоих три камеры по 48 Мп с 4-кратным телеобъективом. Новое — переменная диафрагма основной камеры: f/1.48 для съёмки ночью и до f/4 для более резких групповых фото и пейзажей. У 17 Pro диафрагма основной камеры фиксированная, f/1.78. Видео тоже получило новые инструменты, например таймлапс в 4K Dolby Vision.","## Батарея","- 17 Pro: до 33 часов видео · 18 Pro: до 36.","- 17 Pro Max: до 39 часов · 18 Pro Max: до 45.","Apple указывает эти цифры для моделей только с eSIM; версии с лотком для SIM рассчитаны примерно на два часа меньше.","## Остальное","- Уменьшенный Dynamic Island, до трёх Live Activities одновременно.","- Более быстрая проводная зарядка и новый сотовый модем.","- 2 ТБ памяти теперь и в 6,3-дюймовом Pro, а не только в Pro Max.","## Цена","В США 18 Pro стоит на $100 больше, чем 17 Pro на старте ($1 199 против $1 099). В Армении сегодня:","- iPhone 17 Pro от {{price:apple-iphone-17-pro}}, iPhone 18 Pro от {{price:apple-iphone-18-pro}}: на {{diff:apple-iphone-17-pro|apple-iphone-18-pro}} дороже.","- iPhone 17 Pro Max от {{price:apple-iphone-17-pro-max}}, iPhone 18 Pro Max от {{price:apple-iphone-18-pro-max}}: на {{diff:apple-iphone-17-pro-max|apple-iphone-18-pro-max}} дороже.","Это самые низкие цены среди всех версий; тип SIM и объём памяти их меняют, все варианты — на странице каждого товара.","## Что выбрать","Если у вас уже 17 Pro, смысла меняться мало. С 15 Pro и более старых моделей 18 Pro — заметный шаг: дольше работает и лучше снимает. Если цена важнее новой камеры, 17 Pro — почти тот же телефон по более низкой цене."]},"hy":{"title":"iPhone 17 Pro, թե iPhone 18 Pro․ ինչն է իրականում փոխվել","lead":"Դրսից դրանք գրեթե նույն հեռախոսն են։ Տարբերությունը ներսում է և գնի մեջ։","body":["## Դիզայն","Չափերն ու ձևը նույնն են, 18 Pro-ն մի քանի գրամով ծանր է (մոտ 211 գ՝ 206 գ-ի դիմաց)։ Փոխվում են գույները․ 17 Pro-ն թողարկվել է Cosmic Orange, Deep Blue և Silver գույներով, 18 Pro-ն՝ Burgundy, Glacier, Silver և Black։","!fig:images/blog/iphone-17-18-pro-colours.webp|iPhone 17 Pro-ի գույները (վերևում) և iPhone 18 Pro-ի գույները (ներքևում)։","## Չիպ և սառեցում","A19 Pro (3 նմ)՝ A20 Pro-ի (2 նմ) դիմաց։ 18 Pro-ն ունի նաև վերամշակված գոլորշային խցիկ, ուստի խաղերում և տեսանյութ արտահանելիս ավելի երկար է պահում արագությունը։ Տարբերությունը նկատելի է երկար ծանրաբեռնվածության ժամանակ, ոչ թե առօրյա օգտագործման։","## Տեսախցիկ","Երկուսն էլ ունեն երեք 48 ՄՊ տեսախցիկ՝ 4x հեռաոսպնյակով։ Նորը հիմնական տեսախցիկի փոփոխական դիաֆրագման է՝ f/1.48 գիշերային լուսանկարների համար և մինչև f/4՝ ավելի հստակ խմբային լուսանկարների ու բնապատկերների համար։ 17 Pro-ի հիմնական տեսախցիկի դիաֆրագման ֆիքսված է՝ f/1.78։ Տեսանյութի համար էլ կան նոր գործիքներ, օրինակ՝ 4K Dolby Vision թայմլափս։","## Մարտկոց","- 17 Pro՝ մինչև 33 ժամ տեսանյութ · 18 Pro՝ մինչև 36։","- 17 Pro Max՝ մինչև 39 ժամ · 18 Pro Max՝ մինչև 45։","Apple-ը այս թվերը նշում է միայն eSIM ունեցող մոդելների համար․ SIM-ի սկուտեղով տարբերակները գնահատված են մոտ երկու ժամով պակաս։","## Մնացածը","- Ավելի փոքր Dynamic Island՝ միաժամանակ մինչև երեք Live Activity։","- Ավելի արագ լարային լիցքավորում և նոր բջջային մոդեմ։","- 2 ՏԲ հիշողությունն այժմ հասանելի է նաև 6.3 դյույմանոց Pro-ում, ոչ միայն Pro Max-ում։","## Գին","ԱՄՆ-ում 18 Pro-ն $100-ով թանկ է, քան 17 Pro-ն էր թողարկման պահին ($1,199՝ $1,099-ի դիմաց)։ Հայաստանում այսօր՝","- iPhone 17 Pro՝ {{price:apple-iphone-17-pro}}-ից, iPhone 18 Pro՝ {{price:apple-iphone-18-pro}}-ից․ {{diff:apple-iphone-17-pro|apple-iphone-18-pro}}-ով թանկ։","- iPhone 17 Pro Max՝ {{price:apple-iphone-17-pro-max}}-ից, iPhone 18 Pro Max՝ {{price:apple-iphone-18-pro-max}}-ից․ {{diff:apple-iphone-17-pro-max|apple-iphone-18-pro-max}}-ով թանկ։","Սրանք բոլոր տարբերակների մեջ ամենացածր գներն են․ SIM-ի տեսակը և հիշողության ծավալը փոխում են գինը, բոլոր տարբերակները՝ յուրաքանչյուր ապրանքի էջում։","## Որն ընտրել","Եթե արդեն ունեք 17 Pro, փոխելու իմաստը քիչ է։ 15 Pro-ից կամ ավելի հին մոդելից 18 Pro-ն նկատելի քայլ է՝ ավելի երկար մարտկոց և ավելի լավ տեսախցիկ։ Եթե գինն ավելի կարևոր է, քան նորագույն տեսախցիկը, 17 Pro-ն գրեթե նույն հեռախոսն է ավելի ցածր գնով։"]},"cover":"images/blog/iphone-17-pro-vs-18-pro.webp"},{"id":"tv-resolution-and-panels","date":"2026-09-24","cta":{"href":"#/c/tv","hy":"Բոլոր հեռուստացույցները","ru":"Все телевизоры","en":"All TVs"},"hy":{"title":"HD, Full HD, 4K, 8K, OLED, QLED, Mini-LED․ ինչ են նշանակում հեռուստացույցի պիտակները","lead":"Պատկերի մեծ մասը որոշում են երկու բան՝ որքան պիքսել ունի հեռուստացույցը և ինչ վահանակ է դրանք լուսավորում։","body":["## Լուծաչափ","- HD՝ 1366×768։ Այժմ հանդիպում է միայն փոքր, 32 դյույմանոց մոդելներում։","- Full HD՝ 1920×1080։ Բավարար է մոտ 40–43 դյույմ էկրանի համար։","- 4K (Ultra HD)՝ 3840×2160։ Ստանդարտ է 43 դյույմից սկսած, և 50 դյույմից մեծ գրեթե բոլոր հեռուստացույցները 4K են։","- 8K՝ 7680×4320։ Չորս անգամ ավելի շատ պիքսել, քան 4K-ն, բայց 8K բովանդակությունը դեռ շատ քիչ է։","Կոպիտ կանոն․ որքան մեծ է էկրանը և որքան մոտ եք նստում, այնքան կարևոր է լուծաչափը։ Երեք մետրից 43 դյույմանոց էկրանին Full HD-ի և 4K-ի տարբերությունը դժվար է նկատել, իսկ 65 դյույմանոցին՝ ակնհայտ է։","## Վահանակի տեսակը","- LED (LCD)՝ հեղուկ բյուրեղային վահանակ՝ լուսադիոդային հետնալուսավորությամբ։ Ամենատարածված և ամենամատչելի տարբերակը։","- QLED, NanoCell, QNED՝ նույնպես LCD, բայց քվանտային կետերի կամ նմանատիպ շերտով՝ ավելի հարուստ գույների համար։","- Mini-LED՝ LCD հազարավոր փոքրիկ լուսավորման գոտիներով։ Մութ հատվածները մնում են մութ, իսկ պայծառները կարող են շատ պայծառ լինել։","- OLED՝ յուրաքանչյուր պիքսել ինքն է լույս արձակում և սևի համար ամբողջովին անջատվում է։ Լավագույն կոնտրաստն ու դիտման անկյուններն են, բայց սովորաբար ամենաթանկն է՝ մեկ դյույմի հաշվով։","## Better.am-ում","Յուրաքանչյուր հեռուստացույցի քարտում երևում են էկրանի չափը, լուծաչափի դասը և վահանակի տեսակը, իսկ զտիչները թույլ են տալիս ընտրել ըստ չափի և լուծաչափի։"]},"ru":{"title":"HD, Full HD, 4K, 8K, OLED, QLED, Mini-LED: что означают надписи на телевизоре","lead":"Большую часть картинки определяют две вещи: сколько у телевизора пикселей и какая панель их подсвечивает.","body":["## Разрешение","- HD: 1366×768. Сейчас встречается только у небольших 32-дюймовых моделей.","- Full HD: 1920×1080. Достаточно примерно до 40–43 дюймов.","- 4K (Ultra HD): 3840×2160. Стандарт начиная с 43 дюймов; почти все телевизоры больше 50 дюймов — 4K.","- 8K: 7680×4320. В четыре раза больше пикселей, чем у 4K, но контента в 8K пока очень мало.","Грубое правило: чем больше экран и чем ближе вы сидите, тем важнее разрешение. С трёх метров разницу между Full HD и 4K на 43 дюймах заметить трудно, на 65 дюймах она очевидна.","## Тип панели","- LED (LCD): жидкокристаллическая панель со светодиодной подсветкой. Самый распространённый и доступный вариант.","- QLED, NanoCell, QNED: тоже LCD, но со слоем квантовых точек или похожей технологией для более насыщенных цветов.","- Mini-LED: LCD с тысячами крошечных зон подсветки. Тёмные участки остаются тёмными, а яркие могут быть очень яркими.","- OLED: каждый пиксель светится сам и полностью гаснет, показывая чёрный. Лучший контраст и углы обзора, но обычно самая высокая цена за дюйм.","## На Better.am","Карточка каждого телевизора показывает диагональ, класс разрешения и тип панели, а фильтры помогают выбрать по диагонали и разрешению."]},"en":{"title":"HD, Full HD, 4K, 8K, OLED, QLED, Mini-LED: what the TV labels mean","lead":"Two things decide most of a TV's picture: how many pixels it has and what kind of panel lights them.","body":["## Resolution","- HD: 1366×768. Found now only on small, 32-inch sets.","- Full HD: 1920×1080. Enough up to about 40–43 inches.","- 4K (Ultra HD): 3840×2160. The standard from 43 inches up; almost every set above 50 inches is 4K.","- 8K: 7680×4320. Four times the pixels of 4K, with very little 8K content to show on it yet.","A rough rule: the bigger the screen and the closer you sit, the more resolution matters. From three metres the difference between Full HD and 4K is hard to see on a 43-inch set and obvious on a 65-inch one.","## Panel type","- LED (LCD): a liquid-crystal panel lit from behind by LEDs. The most common and the most affordable.","- QLED, NanoCell, QNED: still LCD, with a quantum-dot or similar layer for richer colour.","- Mini-LED: LCD with thousands of tiny backlight zones, so dark parts of the picture stay dark and bright parts can be very bright.","- OLED: every pixel makes its own light and switches off completely for black. The best contrast and viewing angles, and usually the highest price per inch.","## On Better.am","Every TV card shows its size, resolution class and panel type, and the filters narrow the list by screen size and resolution."]},"cover":"images/blog/tv-resolution-and-panels.webp"},{"id":"esim-or-nano-sim","date":"2026-09-24","cta":{"href":"#/p/apple-iphone-17-pro","hy":"iPhone 17 Pro-ի գները","ru":"Цены на iPhone 17 Pro","en":"iPhone 17 Pro prices"},"hy":{"title":"iPhone eSIM-ով, թե Nano-SIM-ով․ որն ընտրել Հայաստանում","lead":"Վերջին iPhone Pro մոդելները Հայաստանում վաճառվում են երկու տարբերակով՝ Nano-SIM-ի սկուտեղով և առանց դրա (միայն eSIM)։ Եվ դրանց գները տարբեր են։","body":["## Ինչով են տարբերվում","Միայն eSIM տարբերակը ընդհանրապես սկուտեղ չունի․ ձեր համարը պահվում է հեռախոսում՝ որպես eSIM պրոֆիլ։ Nano-SIM տարբերակն ընդունում է ֆիզիկական քարտ և նույնպես աջակցում է eSIM։","## Նախքան eSIM ընտրելը","- Հարցրեք ձեր օպերատորին՝ արդյոք այն տրամադրում է eSIM, և ինչպես տեղափոխել համարը դրա վրա։","- Ճամփորդելիս զբոսաշրջային eSIM-երն աշխատում են երկու տարբերակներում էլ։","- Հեռախոսը փոխելիս eSIM-ը պետք է տեղափոխել նոր սարքին, իսկ քարտը բավական է պարզապես տեղափոխել։","## Գինը","Better.am-ի iPhone Pro էջերում SIM-ի ընտրությունը հիշողության ծավալի կողքին է, և յուրաքանչյուր խանութի գինը ցուցադրվում է ընտրված տարբերակի համար։ Այսպես տեսնում եք, թե այսօր որքան արժե տարբերությունը՝ առանց գուշակելու։"]},"ru":{"title":"iPhone с eSIM или с Nano-SIM: какой покупать в Армении","lead":"Последние iPhone Pro продаются в Армении в двух вариантах: с лотком для Nano-SIM и без него (только eSIM). И стоят они по-разному.","body":["## В чём разница","У версии только с eSIM вообще нет лотка: номер хранится в телефоне как профиль eSIM. Версия с Nano-SIM принимает физическую карту и тоже поддерживает eSIM.","## Прежде чем выбрать eSIM","- Узнайте у своего оператора, выдаёт ли он eSIM и как перенести на неё номер.","- В поездках туристические eSIM работают в обеих версиях.","- При смене телефона eSIM нужно перенести на новый аппарат, а карту достаточно переставить.","## Цена","На страницах iPhone Pro в Better.am выбор SIM стоит рядом с объёмом памяти, и цена каждого магазина показана для выбранной версии. Так видно, во что обходится разница сегодня, и гадать не приходится."]},"en":{"title":"eSIM or Nano-SIM iPhone: which one to buy in Armenia","lead":"Recent iPhone Pro models are sold in Armenia in two builds: with a Nano-SIM tray and without one (eSIM only). They are priced differently.","body":["## What differs","The eSIM-only build has no SIM tray at all: your number lives in the phone as an eSIM profile. The Nano-SIM build takes a physical card and supports eSIM as well.","## Before you choose eSIM","- Ask your operator whether it issues eSIMs and how to move your number to one.","- Travel eSIMs work on both builds.","- When you change phones, an eSIM has to be transferred to the new one; a card you simply move.","## The price","On Better.am's iPhone Pro pages the SIM choice sits next to storage, and every shop's price is shown for the build you pick. You see what the difference costs today instead of guessing."]},"cover":"images/blog/esim-or-nano-sim.webp"}];
+const IMGDATA={"acer-anv15-52-92dd":"images/cut/acer-anv15-52-92dd__main.webp","acer-anv15-52-99cv":"images/cut/acer-anv15-52-99cv__main.webp","acer-aspire-14-ai-a14-52mt-59dp":"images/cut/acer-aspire-14-ai-a14-52mt-59dp__main.webp","acer-aspire-14-ai-a14-52mt-701k":"images/cut/acer-aspire-14-ai-a14-52mt-701k__main.webp","acer-aspire-15":"images/cut/acer-aspire-15__steel-gray.webp","acer-aspire-3-a325-45":"images/cut/acer-aspire-3-a325-45__main.webp","acer-aspire-a16-51gm-71yf":"images/cut/acer-aspire-a16-51gm-71yf__main.webp","acer-aspire-a514-56m-770k":"images/cut/acer-aspire-a514-56m-770k__main.webp","acer-aspire-al15-52":"images/cut/acer-aspire-al15-52__main.webp","acer-aspire-go-15-ag15-32p-39r2":"images/cut/acer-aspire-go-15-ag15-32p-39r2__main.webp","acer-aspire-go-15-ag15-51p-510u":"images/cut/acer-aspire-go-15-ag15-51p-510u__main.webp","acer-aspire-go-16-ag16-71p-97w3":"images/cut/acer-aspire-go-16-ag16-71p-97w3__main.webp","acer-aspire-lite-al15-31p-c2z1":"images/cut/acer-aspire-lite-al15-31p-c2z1__main.webp","acer-aspire-lite-al15-36p-32xp":"images/cut/acer-aspire-lite-al15-36p-32xp__main.webp","acer-aspire-lite-al16-52p-32e3":"images/cut/acer-aspire-lite-al16-52p-32e3__main.webp","acer-aspire-lite-al16-52p-59qu":"images/cut/acer-aspire-lite-al16-52p-59qu__main.webp","acer-aspire-lite-al16-54p-50tq":"images/cut/acer-aspire-lite-al16-54p-50tq__main.webp","acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001":"images/cut/acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001__main.webp","acer-aspire-vero-16-av16-51p-58ku":"images/cut/acer-aspire-vero-16-av16-51p-58ku__main.webp","acer-nitro-5-an515-45-r7sl":"images/cut/acer-nitro-5-an515-45-r7sl__main.webp","acer-nitro-5-anv15-51-93hs":"images/cut/acer-nitro-5-anv15-51-93hs__main.webp","acer-nitro-anv15-51-76er":"images/cut/acer-nitro-anv15-51-76er__main.webp","acer-nitro-anv16-71-760q":"images/cut/acer-nitro-anv16-71-760q__main.webp","acer-nitro-v15-anv15-51-789j":"images/cut/acer-nitro-v15-anv15-51-789j__main.webp","acer-nitro-v15-anv15-52-57bb":"images/cut/acer-nitro-v15-anv15-52-57bb__main.webp","acer-nitro-v15-anv15-52-90gc":"images/cut/acer-nitro-v15-anv15-52-90gc__main.webp","acer-nitro-v15-anv15-52-9161":"images/cut/acer-nitro-v15-anv15-52-9161__main.webp","acer-nitro-v16-anv16-71-70f7":"images/cut/acer-nitro-v16-anv16-71-70f7__main.webp","acer-predator-helios-neo-14-phn14-51-79ub":"images/cut/acer-predator-helios-neo-14-phn14-51-79ub__main.webp","acer-predator-helios-neo-16s-71-91aw":"images/cut/acer-predator-helios-neo-16s-71-91aw__main.webp","acer-predator-helios-neo-phn14-51-90n4":"images/cut/acer-predator-helios-neo-phn14-51-90n4__main.webp","acer-predator-helios-neo-phn16-73-94zr":"images/cut/acer-predator-helios-neo-phn16-73-94zr__main.webp","acer-predator-helios-neo-phn16-73-97bp":"images/cut/acer-predator-helios-neo-phn16-73-97bp__main.webp","acer-predator-triton-300-pt-315-53-75-xx":"images/cut/acer-predator-triton-300-pt-315-53-75-xx__main.webp","acer-swift-3-sf314-59-75qc":"images/cut/acer-swift-3-sf314-59-75qc__main.webp","acer-swift-go-14-sfg14-71-52tv":"images/cut/acer-swift-go-14-sfg14-71-52tv__main.webp","acer-swift-go-14-sfg14-72t-58sh":"images/cut/acer-swift-go-14-sfg14-72t-58sh__main.webp","acer-swift-sfg16-72t-95lg":"images/cut/acer-swift-sfg16-72t-95lg__main.webp","amazon-kindle-11":"images/cut/amazon-kindle-11__black.webp","amazon-kindle-paperwhite-12":"images/cut/amazon-kindle-paperwhite-12__main.webp","amazon-kindle-paperwhite-kids-11":"images/cut/amazon-kindle-paperwhite-kids-11__main.webp","aoc-22b2hn":"images/cut/aoc-22b2hn__main.webp","aoc-24b30h2":"images/cut/aoc-24b30h2__main.webp","aoc-24v2q":"images/cut/aoc-24v2q__main.webp","aoc-49-lcd-ag493ucx":"images/cut/aoc-49-lcd-ag493ucx__main.webp","apple-airpods-4":"images/cut/apple-airpods-4__white.webp","apple-airpods-4-anc":"images/cut/apple-airpods-4-anc__white.webp","apple-airpods-5":"images/cut/apple-airpods-5__main.webp","apple-airpods-max-2":"images/cut/apple-airpods-max-2__blue.webp","apple-airpods-pro-2":"images/cut/apple-airpods-pro-2__white.webp","apple-airpods-pro-3":"images/cut/apple-airpods-pro-3__white.webp","apple-earpods-lightning":"images/cut/apple-earpods-lightning__main.webp","apple-earpods-usb-c":"images/cut/apple-earpods-usb-c__main.webp","apple-homepod-2":"images/cut/apple-homepod-2__white.webp","apple-homepod-mini":"images/cut/apple-homepod-mini__yellow.webp","apple-imac-24-m4":"images/cut/apple-imac-24-m4__silver.webp","apple-ipad-10-9-wi-fi-a14-mpqa3rk-a":"images/cut/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__silver.webp","apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a":"images/cut/apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a__main.webp","apple-ipad-9":"images/cut/apple-ipad-9__space-gray.webp","apple-ipad-a16":"images/cut/apple-ipad-a16__silver.webp","apple-ipad-air-11-m3":"images/cut/apple-ipad-air-11-m3__space-gray.webp","apple-ipad-air-11-m4":"images/cut/apple-ipad-air-11-m4__blue.webp","apple-ipad-air-11-wi-fi-2024":"images/cut/apple-ipad-air-11-wi-fi-2024__purple.webp","apple-ipad-air-5-wi-fi-plus-cellular-2022":"images/cut/apple-ipad-air-5-wi-fi-plus-cellular-2022__purple.webp","apple-ipad-mini-6":"images/cut/apple-ipad-mini-6__space-gray.webp","apple-ipad-mini-7":"images/cut/apple-ipad-mini-7__space-gray.webp","apple-ipad-pro-11-m4":"images/cut/apple-ipad-pro-11-m4__space-black.webp","apple-ipad-pro-11-m5":"images/cut/apple-ipad-pro-11-m5__main.webp","apple-iphone-15":"images/cut/apple-iphone-15__pink.webp","apple-iphone-15-pro":"images/cut/apple-iphone-15-pro__natural-titanium.webp","apple-iphone-16":"images/cut/apple-iphone-16__ultramarine.webp","apple-iphone-16-plus":"images/cut/apple-iphone-16-plus__black.webp","apple-iphone-16-pro":"images/cut/apple-iphone-16-pro__black-titanium.webp","apple-iphone-16-pro-max":"images/cut/apple-iphone-16-pro-max__black-titanium.webp","apple-iphone-17":"images/cut/apple-iphone-17__black.webp","apple-iphone-17-pro":"images/cut/apple-iphone-17-pro__cosmic-orange.webp","apple-iphone-17-pro-max":"images/cut/apple-iphone-17-pro-max__cosmic-orange.webp","apple-iphone-17e":"images/cut/apple-iphone-17e__black.webp","apple-iphone-18-pro":"images/cut/apple-iphone-18-pro__burgundy.webp","apple-iphone-18-pro-max":"images/cut/apple-iphone-18-pro-max__burgundy.webp","apple-iphone-air":"images/cut/apple-iphone-air__space-black.webp","apple-mac-mini-m4":"images/cut/apple-mac-mini-m4__silver.webp","apple-macbook-air-13-m4":"images/cut/apple-macbook-air-13-m4__sky-blue.webp","apple-macbook-air-13-m5":"images/cut/apple-macbook-air-13-m5__silver.webp","apple-macbook-air-13-mgn63-m1-2020":"images/cut/apple-macbook-air-13-mgn63-m1-2020__space-gray.webp","apple-macbook-neo-13":"images/cut/apple-macbook-neo-13__silver.webp","apple-macbook-pro-14-2023-mtl73":"images/cut/apple-macbook-pro-14-2023-mtl73__gray.webp","apple-macbook-pro-14-m4":"images/cut/apple-macbook-pro-14-m4__black.webp","apple-macbook-pro-14-m4-max":"images/cut/apple-macbook-pro-14-m4-max__black.webp","apple-macbook-pro-14-m4-pro":"images/cut/apple-macbook-pro-14-m4-pro__silver.webp","apple-macbook-pro-14-m5":"images/cut/apple-macbook-pro-14-m5__silver.webp","apple-macbook-pro-14-m5-max":"images/cut/apple-macbook-pro-14-m5-max__silver.webp","apple-macbook-pro-14-m5-pro":"images/cut/apple-macbook-pro-14-m5-pro__silver.webp","apple-macbook-pro-14-mrx33-2023":"images/cut/apple-macbook-pro-14-mrx33-2023__main.webp","apple-macbook-pro-16-mrw23":"images/cut/apple-macbook-pro-16-mrw23__black.webp","apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4":"images/cut/apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4__main.webp","apple-tws-bluetooth-headsets-3rd-generation":"images/cut/apple-tws-bluetooth-headsets-3rd-generation__main.webp","apple-ultra-2":"images/cut/apple-ultra-2__main.webp","apple-watch-se-3":"images/cut/apple-watch-se-3__midnight.webp","apple-watch-series-10":"images/cut/apple-watch-series-10__jet-black.webp","apple-watch-series-11":"images/cut/apple-watch-series-11__jet-black.webp","apple-watch-series-12-gps-42mm":"images/cut/apple-watch-series-12-gps-42mm__main.webp","apple-watch-ultra-3":"images/cut/apple-watch-ultra-3__black-titanium.webp","apple-watch-ultra-4-gps-plus-cellular-plus-band":"images/cut/apple-watch-ultra-4-gps-plus-cellular-plus-band__main.webp","asus-22-vp228de":"images/cut/asus-22-vp228de__main.webp","asus-22-vt229h-touch":"images/cut/asus-22-vt229h-touch__main.webp","asus-24-vz239he-w":"images/cut/asus-24-vz239he-w__main.webp","asus-27-va279hae":"images/cut/asus-27-va279hae__main.webp","asus-32-cg32uq":"images/cut/asus-32-cg32uq__main.webp","asus-32-vg32vq1br":"images/cut/asus-32-vg32vq1br__main.webp","asus-b3405cca-ly0189":"images/cut/asus-b3405cca-ly0189__main.webp","asus-b3405cca-ly0191":"images/cut/asus-b3405cca-ly0191__main.webp","asus-b3605cca-mb0080":"images/cut/asus-b3605cca-mb0080__main.webp","asus-chromebook-cx1700cka-ws44f-m":"images/cut/asus-chromebook-cx1700cka-ws44f-m__main.webp","asus-dual-rtx-4060-8gb":"images/cut/asus-dual-rtx-4060-8gb__main.webp","asus-dual-rtx-4060-ti-8gb":"images/cut/asus-dual-rtx-4060-ti-8gb__main.webp","asus-e1504g-90nb0zt2-m011a0":"images/cut/asus-e1504g-90nb0zt2-m011a0__main.webp","asus-expert-book-b5-b5405cva":"images/cut/asus-expert-book-b5-b5405cva__main.webp","asus-expertbook-b5-b5405cca":"images/cut/asus-expertbook-b5-b5405cca__main.webp","asus-expertbook-p1-p1503cva-misty":"images/cut/asus-expertbook-p1-p1503cva-misty__main.webp","asus-fa506n":"images/cut/asus-fa506n__main.webp","asus-fa507":"images/cut/asus-fa507__main.webp","asus-fa707":"images/cut/asus-fa707__main.webp","asus-fx607v":"images/cut/asus-fx607v__main.webp","asus-gaming-25-vg258qr":"images/cut/asus-gaming-25-vg258qr__main.webp","asus-k3605v":"images/cut/asus-k3605v__main.webp","asus-l410ma-tb02-n4020-90nb0q15-m32880-star":"images/cut/asus-l410ma-tb02-n4020-90nb0q15-m32880-star__main.webp","asus-l510mads04":"images/cut/asus-l510mads04__main.webp","asus-p5405csa":"images/cut/asus-p5405csa__main.webp","asus-proart-display-32-pa329cv":"images/cut/asus-proart-display-32-pa329cv__main.webp","asus-proart-rtx-4060-8gb":"images/cut/asus-proart-rtx-4060-8gb__main.webp","asus-proart-studio-24-pa248cnv":"images/cut/asus-proart-studio-24-pa248cnv__main.webp","asus-rog-ally-7":"images/cut/asus-rog-ally-7__main.webp","asus-rog-ally-x":"images/cut/asus-rog-ally-x__main.webp","asus-rog-delta-s":"images/cut/asus-rog-delta-s__main.webp","asus-rog-strix-g16":"images/cut/asus-rog-strix-g16__eclipse-gray.webp","asus-rog-strix-g16-g615lm-ds96":"images/cut/asus-rog-strix-g16-g615lm-ds96__main.webp","asus-rog-strix-g18-g814ph-es94":"images/cut/asus-rog-strix-g18-g814ph-es94__main.webp","asus-rog-strix-g18-g815jmr-ss74":"images/cut/asus-rog-strix-g18-g815jmr-ss74__main.webp","asus-rog-strix-g18-g815lr-is97":"images/cut/asus-rog-strix-g18-g815lr-is97__main.webp","asus-rog-strix-g614fh-os94":"images/cut/asus-rog-strix-g614fh-os94__main.webp","asus-rog-strix-g614jvr-es94":"images/cut/asus-rog-strix-g614jvr-es94__main.webp","asus-rog-strix-g615lr-ms97":"images/cut/asus-rog-strix-g615lr-ms97__main.webp","asus-rog-strix-g815lm-is96-rtx5060":"images/cut/asus-rog-strix-g815lm-is96-rtx5060__main.webp","asus-rog-strix-g815lp-is96-rtx5070":"images/cut/asus-rog-strix-g815lp-is96-rtx5070__main.webp","asus-rog-strix-go-2-4":"images/cut/asus-rog-strix-go-2-4__main.webp","asus-rog-strix-go-core":"images/cut/asus-rog-strix-go-core__main.webp","asus-rog-strix-scare-16-g635lx-ds96":"images/cut/asus-rog-strix-scare-16-g635lx-ds96__main.webp","asus-rog-zephyrus-gu605cp-g16":"images/cut/asus-rog-zephyrus-gu605cp-g16__main.webp","asus-tuf-a16-fa607nuq-ws73":"images/cut/asus-tuf-a16-fa607nuq-ws73__main.webp","asus-tuf-a18-fa808um-is74":"images/cut/asus-tuf-a18-fa808um-is74__main.webp","asus-tuf-fa506ncg-hn198":"images/cut/asus-tuf-fa506ncg-hn198__main.webp","asus-tuf-fa506ncg-hn211":"images/cut/asus-tuf-fa506ncg-hn211__main.webp","asus-tuf-fa506nfr-hn129":"images/cut/asus-tuf-fa506nfr-hn129__main.webp","asus-tuf-fa507nv-eh53":"images/cut/asus-tuf-fa507nv-eh53__main.webp","asus-tuf-fa707nug-hx154":"images/cut/asus-tuf-fa707nug-hx154__main.webp","asus-tuf-fx607vu-ds73":"images/cut/asus-tuf-fx607vu-ds73__main.webp","asus-tuf-fx607vu-rl089":"images/cut/asus-tuf-fx607vu-rl089__main.webp","asus-tuf-fx608jpr-wh74":"images/cut/asus-tuf-fx608jpr-wh74__main.webp","asus-tuf-gaming-24-vg248q1b":"images/cut/asus-tuf-gaming-24-vg248q1b__main.webp","asus-tuf-gaming-27-vg279q1a":"images/cut/asus-tuf-gaming-27-vg279q1a__main.webp","asus-tuf-gaming-27-vg279ql1a":"images/cut/asus-tuf-gaming-27-vg279ql1a__main.webp","asus-tuf-gaming-34-vg34vqel1a":"images/cut/asus-tuf-gaming-34-vg34vqel1a__main.webp","asus-tuf-gaming-a16-fa608p":"images/cut/asus-tuf-gaming-a16-fa608p__main.webp","asus-tuf-gaming-fx707zc4-hx076":"images/cut/asus-tuf-gaming-fx707zc4-hx076__main.webp","asus-tuf-gaming-h1":"images/cut/asus-tuf-gaming-h1__main.webp","asus-tuf-gaming-h3-gun-metal":"images/cut/asus-tuf-gaming-h3-gun-metal__main.webp","asus-tuf-gaming-h7-core-gun-metal":"images/cut/asus-tuf-gaming-h7-core-gun-metal__main.webp","asus-tuf-h3-wireless":"images/cut/asus-tuf-h3-wireless__main.webp","asus-va249hg":"images/cut/asus-va249hg__main.webp","asus-va27dqsb-w":"images/cut/asus-va27dqsb-w__main.webp","asus-vg245q":"images/cut/asus-vg245q__main.webp","asus-vg249q3a-90lm09b0-b01170":"images/cut/asus-vg249q3a-90lm09b0-b01170__main.webp","asus-vg279q3a-90lm0990-b01170":"images/cut/asus-vg279q3a-90lm0990-b01170__main.webp","asus-vg32aqa1a-90lm07l0-b02370":"images/cut/asus-vg32aqa1a-90lm07l0-b02370__main.webp","asus-vivobook-15-core-3-100u-x1504vap-c38128-w11":"images/cut/asus-vivobook-15-core-3-100u-x1504vap-c38128-w11__main.webp","asus-vivobook-15-f1504vap-bs54t":"images/cut/asus-vivobook-15-f1504vap-bs54t__main.webp","asus-vivobook-15-m1502n":"images/cut/asus-vivobook-15-m1502n__main.webp","asus-vivobook-15-x1504va":"images/cut/asus-vivobook-15-x1504va__main.webp","asus-vivobook-15-x1505va-oled":"images/cut/asus-vivobook-15-x1505va-oled__silver.webp","asus-vivobook-15x-m1503-oled":"images/cut/asus-vivobook-15x-m1503-oled__main.webp","asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11":"images/cut/asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11__main.webp","asus-vivobook-16-f1605va-ws96":"images/cut/asus-vivobook-16-f1605va-ws96__main.webp","asus-vivobook-16-flip-tp3607sa-is77t":"images/cut/asus-vivobook-16-flip-tp3607sa-is77t__main.webp","asus-vivobook-16-i7-1355u-f1605va-ws74-w11":"images/cut/asus-vivobook-16-i7-1355u-f1605va-ws74-w11__main.webp","asus-vivobook-16-ultra7-oled":"images/cut/asus-vivobook-16-ultra7-oled__matte-gray.webp","asus-vivobook-17-x1704vap":"images/cut/asus-vivobook-17-x1704vap__main.webp","asus-vivobook-e1404fa-th31":"images/cut/asus-vivobook-e1404fa-th31__main.webp","asus-vivobook-e1404ga-nk006w":"images/cut/asus-vivobook-e1404ga-nk006w__main.webp","asus-vivobook-e1404ga-nk053w":"images/cut/asus-vivobook-e1404ga-nk053w__main.webp","asus-vivobook-e410ka-cl4128":"images/cut/asus-vivobook-e410ka-cl4128__main.webp","asus-vivobook-e410ka-cl464":"images/cut/asus-vivobook-e410ka-cl464__main.webp","asus-vivobook-e410ma-bv2490w":"images/cut/asus-vivobook-e410ma-bv2490w__main.webp","asus-vivobook-e510ka-br859ws":"images/cut/asus-vivobook-e510ka-br859ws__main.webp","asus-vivobook-flip-14-tp3407sa-ds74t":"images/cut/asus-vivobook-flip-14-tp3407sa-ds74t__main.webp","asus-vivobook-flip-tp3604va-ws51t":"images/cut/asus-vivobook-flip-tp3604va-ws51t__main.webp","asus-vivobook-go-15-e1504fa-bq2909":"images/cut/asus-vivobook-go-15-e1504fa-bq2909__main.webp","asus-vivobook-go-15-e1504fa-oled":"images/cut/asus-vivobook-go-15-e1504fa-oled__main.webp","asus-vivobook-go15-e1504ga-ws35":"images/cut/asus-vivobook-go15-e1504ga-ws35__main.webp","asus-vivobook-k3500p-oled":"images/cut/asus-vivobook-k3500p-oled__main.webp","asus-vivobook-k5504-vn-ds96":"images/cut/asus-vivobook-k5504-vn-ds96__main.webp","asus-vivobook-m1503-qa-l1223-oled":"images/cut/asus-vivobook-m1503-qa-l1223-oled__main.webp","asus-vivobook-m1603qa-r7-12512":"images/cut/asus-vivobook-m1603qa-r7-12512__main.webp","asus-vivobook-m1605ya-mb345":"images/cut/asus-vivobook-m1605ya-mb345__main.webp","asus-vivobook-pro-15-q533mj-u73050-oled":"images/cut/asus-vivobook-pro-15-q533mj-u73050-oled__main.webp","asus-vivobook-pro-15-q543mj-u93050-oled":"images/cut/asus-vivobook-pro-15-q543mj-u93050-oled__main.webp","asus-vivobook-pro-16-k6602vv-oled":"images/cut/asus-vivobook-pro-16-k6602vv-oled__black.webp","asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl":"images/cut/asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl__main.webp","asus-vivobook-s14-s3407v":"images/cut/asus-vivobook-s14-s3407v__main.webp","asus-vivobook-s15-m3502qa-oled":"images/cut/asus-vivobook-s15-m3502qa-oled__main.webp","asus-vivobook-s16-s3607v":"images/cut/asus-vivobook-s16-s3607v__main.webp","asus-vivobook-s16-s5606ma-ds96-oled":"images/cut/asus-vivobook-s16-s5606ma-ds96-oled__main.webp","asus-vivobook-x1404va-i38128":"images/cut/asus-vivobook-x1404va-i38128__main.webp","asus-vivobook-x1404vap-v14":"images/cut/asus-vivobook-x1404vap-v14__main.webp","asus-vivobook-x1404za-i38128":"images/cut/asus-vivobook-x1404za-i38128__main.webp","asus-vivobook-x1502za-bq2270":"images/cut/asus-vivobook-x1502za-bq2270__main.webp","asus-vivobook-x1504va-nj061":"images/cut/asus-vivobook-x1504va-nj061__main.webp","asus-vivobook-x1504va-nj2920":"images/cut/asus-vivobook-x1504va-nj2920__main.webp","asus-vivobook-x1504va-nj3952":"images/cut/asus-vivobook-x1504va-nj3952__main.webp","asus-vivobook-x1504va-nj436":"images/cut/asus-vivobook-x1504va-nj436__main.webp","asus-vivobook-x1504va-nj451":"images/cut/asus-vivobook-x1504va-nj451__main.webp","asus-vivobook-x1504za-u672":"images/cut/asus-vivobook-x1504za-u672__main.webp","asus-vivobook-x1505za-ma477-oled":"images/cut/asus-vivobook-x1505za-ma477-oled__main.webp","asus-vp247hae":"images/cut/asus-vp247hae__main.webp","asus-vu279hfi-w":"images/cut/asus-vu279hfi-w__main.webp","asus-vy249hf-w":"images/cut/asus-vy249hf-w__main.webp","asus-vy279hf-w-90lm06d2-b02170":"images/cut/asus-vy279hf-w-90lm06d2-b02170__main.webp","asus-vz24ehf-w":"images/cut/asus-vz24ehf-w__main.webp","asus-vz27ehf-90lm07b0-b01470":"images/cut/asus-vz27ehf-90lm07b0-b01470__main.webp","asus-zenbook-14-um3402ya-oled":"images/cut/asus-zenbook-14-um3402ya-oled__gray.webp","asus-zenbook-14-um3405ga-zb-70":"images/cut/asus-zenbook-14-um3405ga-zb-70__main.webp","asus-zenbook-14-um3406g-ws79t":"images/cut/asus-zenbook-14-um3406g-ws79t__main.webp","asus-zenbook-14-ux3405ca-oled":"images/cut/asus-zenbook-14-ux3405ca-oled__jasper-gray.webp","asus-zenbook-flip-ux3407qa-x1p512":"images/cut/asus-zenbook-flip-ux3407qa-x1p512__main.webp","asus-zenbook-q415ma-u5512":"images/cut/asus-zenbook-q415ma-u5512__main.webp","asus-zenscreen-mb16aht-touch-screen":"images/cut/asus-zenscreen-mb16aht-touch-screen__main.webp","asus-zenscreen-mb16ahv-touch-screen":"images/cut/asus-zenscreen-mb16ahv-touch-screen__main.webp","beats-fit-pro":"images/cut/beats-fit-pro__black.webp","beats-flex-all-day":"images/cut/beats-flex-all-day__black.webp","beats-solo-true-wireless":"images/cut/beats-solo-true-wireless__red.webp","beats-solo4-onear":"images/cut/beats-solo4-onear__black.webp","beats-studio":"images/cut/beats-studio__blue.webp","beats-studio-buds-plus":"images/cut/beats-studio-buds-plus__black-gold.webp","beats-studio-pro-wireless":"images/cut/beats-studio-pro-wireless__sandstone.webp","benq-el2870u":"images/cut/benq-el2870u__main.webp","bo-beoplay-ex":"images/cut/bo-beoplay-ex__black-anthracite.webp","bo-beoplay-h95":"images/cut/bo-beoplay-h95__black.webp","bo-beoplay-hx":"images/cut/bo-beoplay-hx__black-anthracite.webp","bo-beosound-a1-2":"images/cut/bo-beosound-a1-2__gold-tone.webp","bo-beosound-a5":"images/cut/bo-beosound-a5__nordic-weave.webp","bo-beosound-balance":"images/cut/bo-beosound-balance__main.webp","bo-beosound-edge":"images/cut/bo-beosound-edge__natural.webp","bo-beosound-explore":"images/cut/bo-beosound-explore__navy.webp","bo-beosound-level":"images/cut/bo-beosound-level__natural.webp","bose-quietcomfort-45-acoustic":"images/cut/bose-quietcomfort-45-acoustic__main.webp","bose-quietcomfort-ii":"images/cut/bose-quietcomfort-ii__main.webp","bose-soundlink-flex":"images/cut/bose-soundlink-flex__black.webp","bose-soundlink-mini-ii":"images/cut/bose-soundlink-mini-ii__main.webp","bose-soundlink-revolve":"images/cut/bose-soundlink-revolve__main.webp","bose-soundlink-revolve-ii":"images/cut/bose-soundlink-revolve-ii__silver.webp","bose-soundsport-free":"images/cut/bose-soundsport-free__main.webp","bose-soundtouch-10":"images/cut/bose-soundtouch-10__main.webp","bose-sport":"images/cut/bose-sport__black.webp","dell-14-plus-2in1-db04250":"images/cut/dell-14-plus-2in1-db04250__main.webp","dell-14-plus-2in1-db04255":"images/cut/dell-14-plus-2in1-db04255__main.webp","dell-14-premium-da14250":"images/cut/dell-14-premium-da14250__main.webp","dell-15-5250":"images/cut/dell-15-5250__main.webp","dell-15-dc15250":"images/cut/dell-15-dc15250__main.webp","dell-15-dc15250-i5-16gb":"images/cut/dell-15-dc15250-i5-16gb__main.webp","dell-15-dc15250-i7-512gb":"images/cut/dell-15-dc15250-i7-512gb__main.webp","dell-15-ldc15250-7427blk-pus-touch-w11":"images/cut/dell-15-ldc15250-7427blk-pus-touch-w11__main.webp","dell-16-dc16250":"images/cut/dell-16-dc16250__main.webp","dell-16-dc16251":"images/cut/dell-16-dc16251__main.webp","dell-16-plus-2-in-1-db06250":"images/cut/dell-16-plus-2-in-1-db06250__main.webp","dell-27-e2723h":"images/cut/dell-27-e2723h__main.webp","dell-alienware-15-da15265":"images/cut/dell-alienware-15-da15265__main.webp","dell-alienware-16-aurora-ac16250-16gb-rtx-5050":"images/cut/dell-alienware-16-aurora-ac16250-16gb-rtx-5050__main.webp","dell-alienware-16-aurora-ac16250-16gb-rtx-5060":"images/cut/dell-alienware-16-aurora-ac16250-16gb-rtx-5060__main.webp","dell-alienware-16x-aurora-ac16251-rtx-5060":"images/cut/dell-alienware-16x-aurora-ac16251-rtx-5060__main.webp","dell-alienware-18-area-51-32gb-rtx-5080":"images/cut/dell-alienware-18-area-51-32gb-rtx-5080__main.webp","dell-alienware-da15260":"images/cut/dell-alienware-da15260__main.webp","dell-alienware-x16-r2":"images/cut/dell-alienware-x16-r2__main.webp","dell-g15-5520":"images/cut/dell-g15-5520__main.webp","dell-g5-15-5535":"images/cut/dell-g5-15-5535__main.webp","dell-inspiron-16":"images/cut/dell-inspiron-16__main.webp","dell-inspiron-16-plus-7630":"images/cut/dell-inspiron-16-plus-7630__main.webp","dell-inspiron-7440-core-5":"images/cut/dell-inspiron-7440-core-5__main.webp","dell-inspiron-7440-core-7":"images/cut/dell-inspiron-7440-core-7__main.webp","dell-inspiron-7440-i5":"images/cut/dell-inspiron-7440-i5__main.webp","dell-inspiron-7445":"images/cut/dell-inspiron-7445__main.webp","dell-led-e2020h":"images/cut/dell-led-e2020h__main.webp","dell-n2y94":"images/cut/dell-n2y94__main.webp","dell-plus-16-db16250":"images/cut/dell-plus-16-db16250__main.webp","dell-plus-2in1-db04250-7137":"images/cut/dell-plus-2in1-db04250-7137__main.webp","dell-plus-2in1-db04250-9168":"images/cut/dell-plus-2in1-db04250-9168__main.webp","dell-pro-14-plus-2in1-pb14250":"images/cut/dell-pro-14-plus-2in1-pb14250__main.webp","dell-pro-15-essential-pv15250":"images/cut/dell-pro-15-essential-pv15250__main.webp","dell-pro-15-essential-pv15250-core3":"images/cut/dell-pro-15-essential-pv15250-core3__main.webp","dell-pro-e2425hm":"images/cut/dell-pro-e2425hm__main.webp","dell-se2425hm":"images/cut/dell-se2425hm__main.webp","dell-vostro-3520-i3":"images/cut/dell-vostro-3520-i3__main.webp","dell-vostro-3520-i5":"images/cut/dell-vostro-3520-i5__main.webp","dell-vostro-3530-i7":"images/cut/dell-vostro-3530-i7__main.webp","dell-wyse-5470":"images/cut/dell-wyse-5470__main.webp","dell-xps-13-dx13260":"images/cut/dell-xps-13-dx13260__main.webp","dell-xps-16-9640":"images/cut/dell-xps-16-9640__main.webp","dell-xps-9345-x-elite-32gb-1tb":"images/cut/dell-xps-9345-x-elite-32gb-1tb__main.webp","dell-xps-9345-x-plus":"images/cut/dell-xps-9345-x-plus__main.webp","dell-xps-9350-16gb-ultra-7":"images/cut/dell-xps-9350-16gb-ultra-7__main.webp","dell-xps-9350-ultra-9":"images/cut/dell-xps-9350-ultra-9__main.webp","dell-xps-9440-rtx-4050":"images/cut/dell-xps-9440-rtx-4050__main.webp","dell-xps-9640-rtx-4050":"images/cut/dell-xps-9640-rtx-4050__main.webp","dji-mavic-3-pro":"images/cut/dji-mavic-3-pro__main.webp","dji-mic":"images/cut/dji-mic__main.webp","dji-mic-2":"images/cut/dji-mic-2__main.webp","dji-mic-3":"images/cut/dji-mic-3__main.webp","dji-mic-mini":"images/cut/dji-mic-mini__main.webp","dji-mic-mini-2":"images/cut/dji-mic-mini-2__main.webp","dji-osmo-360":"images/cut/dji-osmo-360__main.webp","dji-osmo-action-6":"images/cut/dji-osmo-action-6__main.webp","dji-osmo-mobile-6":"images/cut/dji-osmo-mobile-6__main.webp","dji-osmo-mobile-7":"images/cut/dji-osmo-mobile-7__main.webp","dji-osmo-mobile-7-p":"images/cut/dji-osmo-mobile-7-p__main.webp","dji-osmo-mobile-8":"images/cut/dji-osmo-mobile-8__main.webp","dji-osmo-pocket-3":"images/cut/dji-osmo-pocket-3__main.webp","dji-osmo-pocket-4":"images/cut/dji-osmo-pocket-4__main.webp","dyson-airstarit-kanzan":"images/cut/dyson-airstarit-kanzan__main.webp","dyson-airwrap-hs09":"images/cut/dyson-airwrap-hs09__amber-silk.webp","dyson-er-hd07":"images/cut/dyson-er-hd07__iron-fuchsia.webp","dyson-er-hd15":"images/cut/dyson-er-hd15__black.webp","dyson-gen5-detect":"images/cut/dyson-gen5-detect__main.webp","dyson-hd18-vinca-blue-topaz":"images/cut/dyson-hd18-vinca-blue-topaz__main.webp","dyson-hs08-i-d":"images/cut/dyson-hs08-i-d__main.webp","dyson-ht01-airstrait-straightener-plum":"images/cut/dyson-ht01-airstrait-straightener-plum__ceramic-pink.webp","dyson-multi-complete-long-hs05":"images/cut/dyson-multi-complete-long-hs05__gold.webp","dyson-nural-er":"images/cut/dyson-nural-er__main.webp","dyson-nural-hd16-strawberry":"images/cut/dyson-nural-hd16-strawberry__ceramic.webp","dyson-origin-hs05":"images/cut/dyson-origin-hs05__main.webp","dyson-r-dh17":"images/cut/dyson-r-dh17__main.webp","dyson-v12-detect-slim-cordless-vacuum-cleaner":"images/cut/dyson-v12-detect-slim-cordless-vacuum-cleaner__main.webp","dyson-zone":"images/cut/dyson-zone__main.webp","garmin-cirqa-smart-band-mauve-s-m":"images/cut/garmin-cirqa-smart-band-mauve-s-m__main.webp","garmin-epix-pro-sapphire-edition-51-mm":"images/cut/garmin-epix-pro-sapphire-edition-51-mm__main.webp","garmin-epix-pro-standard-edition-47mm":"images/cut/garmin-epix-pro-standard-edition-47mm__main.webp","garmin-fenix-7-pro-sapphire-solar":"images/cut/garmin-fenix-7-pro-sapphire-solar__main.webp","garmin-fenix-7x-pro-sapphire-solar-edition":"images/cut/garmin-fenix-7x-pro-sapphire-solar-edition__main.webp","garmin-fenix-8-47-mm-amoled":"images/cut/garmin-fenix-8-47-mm-amoled__main.webp","garmin-fenix-8-47-mm-amoled-sapphire-carbon":"images/cut/garmin-fenix-8-47-mm-amoled-sapphire-carbon__main.webp","garmin-fenix-8-pro-47-mm-amoled":"images/cut/garmin-fenix-8-pro-47-mm-amoled__main.webp","garmin-fenix-9-51mm-carbon-dlc-band":"images/cut/garmin-fenix-9-51mm-carbon-dlc-band__main.webp","garmin-fenix-9-pro-47mm-amoled-carbon-dlc":"images/cut/garmin-fenix-9-pro-47mm-amoled-carbon-dlc__main.webp","garmin-forerunner-170":"images/cut/garmin-forerunner-170__main.webp","garmin-forerunner-170-music":"images/cut/garmin-forerunner-170-music__main.webp","garmin-forerunner-570":"images/cut/garmin-forerunner-570__main.webp","garmin-forerunner-70":"images/cut/garmin-forerunner-70__main.webp","garmin-forerunner-965-black-powder":"images/cut/garmin-forerunner-965-black-powder__main.webp","garmin-forerunner-970":"images/cut/garmin-forerunner-970__main.webp","garmin-instinct-2x-solar":"images/cut/garmin-instinct-2x-solar__main.webp","garmin-instinct-2x-solar-tactical-edition":"images/cut/garmin-instinct-2x-solar-tactical-edition__main.webp","garmin-instinct-3-50mm-amoled":"images/cut/garmin-instinct-3-50mm-amoled__main.webp","garmin-instinct-3-50mm-solar":"images/cut/garmin-instinct-3-50mm-solar__main.webp","garmin-venu-3-with-leather":"images/cut/garmin-venu-3-with-leather__main.webp","garmin-venu-3s-french":"images/cut/garmin-venu-3s-french__main.webp","garmin-venu-4-45-mm":"images/cut/garmin-venu-4-45-mm__main.webp","garmin-venu-x1-gps":"images/cut/garmin-venu-x1-gps__main.webp","garmin-vivoactive-5":"images/cut/garmin-vivoactive-5__main.webp","garmin-vivoactive-6":"images/cut/garmin-vivoactive-6__main.webp","google-fitbit-air":"images/cut/google-fitbit-air__black.webp","google-pixel-10":"images/cut/google-pixel-10__obsidian.webp","google-pixel-10-pro":"images/cut/google-pixel-10-pro__moonstone.webp","google-pixel-10-pro-fold-gu0np":"images/cut/google-pixel-10-pro-fold-gu0np__moonstone.webp","google-pixel-10-pro-xl":"images/cut/google-pixel-10-pro-xl__moonstone.webp","google-pixel-10a":"images/cut/google-pixel-10a__main.webp","google-pixel-11-pro-xl":"images/cut/google-pixel-11-pro-xl__obsidian.webp","google-pixel-9":"images/cut/google-pixel-9__obsidian.webp","google-pixel-9-pro":"images/cut/google-pixel-9-pro__obsidian.webp","google-pixel-9-pro-xl":"images/cut/google-pixel-9-pro-xl__obsidian.webp","google-pixel-9a":"images/cut/google-pixel-9a__obsidian.webp","harman-kardon-aura-studio-4":"images/cut/harman-kardon-aura-studio-4__main.webp","harman-kardon-luna":"images/cut/harman-kardon-luna__black.webp","harman-kardon-onyx-studio-7":"images/cut/harman-kardon-onyx-studio-7__main.webp","harman-kardon-studio-8":"images/cut/harman-kardon-studio-8__black.webp","harman-kardon-studio-9":"images/cut/harman-kardon-studio-9__black.webp","hisense-100e7q-pro":"images/cut/hisense-100e7q-pro__main.webp","hisense-110uxnq":"images/cut/hisense-110uxnq__main.webp","hisense-116uxq":"images/cut/hisense-116uxq__main.webp","hisense-32a4n":"images/cut/hisense-32a4n__main.webp","hisense-32a4q":"images/cut/hisense-32a4q__main.webp","hisense-32a5s":"images/cut/hisense-32a5s__main.webp","hisense-40a4n":"images/cut/hisense-40a4n__main.webp","hisense-40a4q":"images/cut/hisense-40a4q__main.webp","hisense-40a4s":"images/cut/hisense-40a4s__main.webp","hisense-40a5q":"images/cut/hisense-40a5q__main.webp","hisense-40a5s":"images/cut/hisense-40a5s__main.webp","hisense-43a6n":"images/cut/hisense-43a6n__main.webp","hisense-43a6q":"images/cut/hisense-43a6q__main.webp","hisense-43a7kq":"images/cut/hisense-43a7kq__main.webp","hisense-43a7s":"images/cut/hisense-43a7s__main.webp","hisense-43e7nq":"images/cut/hisense-43e7nq__main.webp","hisense-43e7q":"images/cut/hisense-43e7q__main.webp","hisense-43e7s":"images/cut/hisense-43e7s__main.webp","hisense-50a6q":"images/cut/hisense-50a6q__main.webp","hisense-50a6s":"images/cut/hisense-50a6s__main.webp","hisense-50a7nq":"images/cut/hisense-50a7nq__main.webp","hisense-50a7s":"images/cut/hisense-50a7s__main.webp","hisense-50e7q":"images/cut/hisense-50e7q__main.webp","hisense-50e7s":"images/cut/hisense-50e7s__main.webp","hisense-50u7q":"images/cut/hisense-50u7q__main.webp","hisense-55a6n":"images/cut/hisense-55a6n__main.webp","hisense-55a6q":"images/cut/hisense-55a6q__main.webp","hisense-55a7q":"images/cut/hisense-55a7q__main.webp","hisense-55a7s":"images/cut/hisense-55a7s__main.webp","hisense-55e7q":"images/cut/hisense-55e7q__main.webp","hisense-55e7q-pro":"images/cut/hisense-55e7q-pro__main.webp","hisense-55e7s":"images/cut/hisense-55e7s__main.webp","hisense-55e8s":"images/cut/hisense-55e8s__main.webp","hisense-55u7q":"images/cut/hisense-55u7q__main.webp","hisense-55u7q-pro":"images/cut/hisense-55u7q-pro__main.webp","hisense-55u7s-pro":"images/cut/hisense-55u7s-pro__main.webp","hisense-55u8q":"images/cut/hisense-55u8q__main.webp","hisense-58a6q":"images/cut/hisense-58a6q__main.webp","hisense-58e7q":"images/cut/hisense-58e7q__main.webp","hisense-65a6q":"images/cut/hisense-65a6q__main.webp","hisense-65a6s":"images/cut/hisense-65a6s__main.webp","hisense-65a7nq":"images/cut/hisense-65a7nq__main.webp","hisense-65a7q":"images/cut/hisense-65a7q__main.webp","hisense-65a7s":"images/cut/hisense-65a7s__main.webp","hisense-65a85h":"images/cut/hisense-65a85h__main.webp","hisense-65a85k":"images/cut/hisense-65a85k__main.webp","hisense-65e7q":"images/cut/hisense-65e7q__main.webp","hisense-65e7q-pro":"images/cut/hisense-65e7q-pro__main.webp","hisense-65e7s":"images/cut/hisense-65e7s__main.webp","hisense-65e8s":"images/cut/hisense-65e8s__main.webp","hisense-65u7hq":"images/cut/hisense-65u7hq__main.webp","hisense-65u7q":"images/cut/hisense-65u7q__main.webp","hisense-65u7q-pro":"images/cut/hisense-65u7q-pro__main.webp","hisense-65u7s-pro":"images/cut/hisense-65u7s-pro__main.webp","hisense-65u8q":"images/cut/hisense-65u8q__main.webp","hisense-65ur8s":"images/cut/hisense-65ur8s__main.webp","hisense-65uxkq":"images/cut/hisense-65uxkq__main.webp","hisense-75a6q":"images/cut/hisense-75a6q__main.webp","hisense-75e7q":"images/cut/hisense-75e7q__main.webp","hisense-75e7q-pro":"images/cut/hisense-75e7q-pro__main.webp","hisense-75e7s":"images/cut/hisense-75e7s__main.webp","hisense-75e8s":"images/cut/hisense-75e8s__main.webp","hisense-75u7q":"images/cut/hisense-75u7q__main.webp","hisense-75u7q-pro":"images/cut/hisense-75u7q-pro__main.webp","hisense-75u7s-pro":"images/cut/hisense-75u7s-pro__main.webp","hisense-75ur8s":"images/cut/hisense-75ur8s__main.webp","hisense-75ur9s":"images/cut/hisense-75ur9s__main.webp","hisense-85a6bg":"images/cut/hisense-85a6bg__main.webp","hisense-85a6q":"images/cut/hisense-85a6q__main.webp","hisense-85e7q":"images/cut/hisense-85e7q__main.webp","hisense-85e7s":"images/cut/hisense-85e7s__main.webp","hisense-85e8s":"images/cut/hisense-85e8s__main.webp","hisense-85u7q":"images/cut/hisense-85u7q__main.webp","hisense-85u7s-pro":"images/cut/hisense-85u7s-pro__main.webp","honor-200":"images/cut/honor-200__main.webp","honor-200-lite-5g":"images/cut/honor-200-lite-5g__main.webp","honor-400":"images/cut/honor-400__black.webp","honor-400-lite":"images/cut/honor-400-lite__main.webp","honor-400-pro":"images/cut/honor-400-pro__black.webp","honor-5-stl-b19-5502abgj":"images/cut/honor-5-stl-b19-5502abgj__main.webp","honor-600":"images/cut/honor-600__black.webp","honor-600-lite":"images/cut/honor-600-lite__desert-gold.webp","honor-600-pro":"images/cut/honor-600-pro__black.webp","honor-band-6":"images/cut/honor-band-6__main.webp","honor-choice-clip-mak-me01":"images/cut/honor-choice-clip-mak-me01__main.webp","honor-choice-earbuds-x3":"images/cut/honor-choice-earbuds-x3__main.webp","honor-choice-earbuds-x5":"images/cut/honor-choice-earbuds-x5__main.webp","honor-choice-earbuds-x7e-ast-me00":"images/cut/honor-choice-earbuds-x7e-ast-me00__main.webp","honor-choice-infowear-2i-kch-wb01":"images/cut/honor-choice-infowear-2i-kch-wb01__main.webp","honor-choice-ros-me01":"images/cut/honor-choice-ros-me01__main.webp","honor-choice-x7-lite":"images/cut/honor-choice-x7-lite__main.webp","honor-earbuds-x6":"images/cut/honor-earbuds-x6__main.webp","honor-magic-7-pro":"images/cut/honor-magic-7-pro__lunar-gray.webp","honor-magic-8-pro":"images/cut/honor-magic-8-pro__black.webp","honor-magic7":"images/cut/honor-magic7__main.webp","honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg":"images/cut/honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg__main.webp","honor-magicbook-x16-2025":"images/cut/honor-magicbook-x16-2025__main.webp","honor-magicbook-x16-2026-16-wuxga-ssd1tb":"images/cut/honor-magicbook-x16-2026-16-wuxga-ssd1tb__main.webp","honor-magicbook-x16-plus":"images/cut/honor-magicbook-x16-plus__main.webp","honor-pad-10-5g":"images/cut/honor-pad-10-5g__main.webp","honor-pad-8":"images/cut/honor-pad-8__main.webp","honor-pad-9-5g":"images/cut/honor-pad-9-5g__main.webp","honor-pad-x7-jms-w09":"images/cut/honor-pad-x7-jms-w09__main.webp","honor-pad-x7-lte-jms-l09":"images/cut/honor-pad-x7-lte-jms-l09__main.webp","honor-pad-x8b-ndl2-w09":"images/cut/honor-pad-x8b-ndl2-w09__main.webp","honor-pad-x9a":"images/cut/honor-pad-x9a__main.webp","honor-watch-gs-3-rubber":"images/cut/honor-watch-gs-3-rubber__main.webp","honor-x5b-plus":"images/cut/honor-x5b-plus__main.webp","honor-x6c":"images/cut/honor-x6c__main.webp","honor-x7b":"images/cut/honor-x7b__main.webp","honor-x7c":"images/cut/honor-x7c__main.webp","honor-x7d":"images/cut/honor-x7d__black.webp","honor-x7e":"images/cut/honor-x7e__light-blue.webp","honor-x8":"images/cut/honor-x8__main.webp","honor-x8b":"images/cut/honor-x8b__main.webp","honor-x8c":"images/cut/honor-x8c__midnight-black.webp","honor-x8d":"images/cut/honor-x8d__gray.webp","honor-x9":"images/cut/honor-x9__main.webp","honor-x9b":"images/cut/honor-x9b__main.webp","honor-x9c":"images/cut/honor-x9c__jade-cyan.webp","honor-x9d":"images/cut/honor-x9d__gold.webp","hp-14-dq6015dx":"images/cut/hp-14-dq6015dx__main.webp","hp-14-em0002wm":"images/cut/hp-14-em0002wm__main.webp","hp-15-fc0146dx":"images/cut/hp-15-fc0146dx__main.webp","hp-15-fc0196nia":"images/cut/hp-15-fc0196nia__main.webp","hp-15-fd0055":"images/cut/hp-15-fd0055__main.webp","hp-15-fd0113dx":"images/cut/hp-15-fd0113dx__main.webp","hp-15-fd0123dx":"images/cut/hp-15-fd0123dx__main.webp","hp-15-fd0133wm":"images/cut/hp-15-fd0133wm__main.webp","hp-15-fd0153dx":"images/cut/hp-15-fd0153dx__main.webp","hp-15-fd0154wm-i5":"images/cut/hp-15-fd0154wm-i5__main.webp","hp-15-fd0180nia":"images/cut/hp-15-fd0180nia__main.webp","hp-15-fd0336nia":"images/cut/hp-15-fd0336nia__main.webp","hp-15-fd0355nia":"images/cut/hp-15-fd0355nia__main.webp","hp-15-fd0531nia":"images/cut/hp-15-fd0531nia__main.webp","hp-15-fd0883nr":"images/cut/hp-15-fd0883nr__main.webp","hp-15-fd1899nr":"images/cut/hp-15-fd1899nr__main.webp","hp-15-fd2050wm":"images/cut/hp-15-fd2050wm__main.webp","hp-15-fd2747nr":"images/cut/hp-15-fd2747nr__silver.webp","hp-15t-dw300":"images/cut/hp-15t-dw300__main.webp","hp-15t-fd100-ultra-5":"images/cut/hp-15t-fd100-ultra-5__main.webp","hp-15t-fd100-ultra-7":"images/cut/hp-15t-fd100-ultra-7__main.webp","hp-21-5-led-22fw":"images/cut/hp-21-5-led-22fw__main.webp","hp-21-5-led-m22f":"images/cut/hp-21-5-led-m22f__main.webp","hp-24-led-m24fw":"images/cut/hp-24-led-m24fw__main.webp","hp-527sf":"images/cut/hp-527sf__main.webp","hp-elitebook-640-g10":"images/cut/hp-elitebook-640-g10__main.webp","hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet":"images/cut/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet__main.webp","hp-elitebook-ultra-g1q":"images/cut/hp-elitebook-ultra-g1q__main.webp","hp-envy-15-fe1165nr":"images/cut/hp-envy-15-fe1165nr__main.webp","hp-envy-16-h1023dx-touch-7z0p3ua":"images/cut/hp-envy-16-h1023dx-touch-7z0p3ua__main.webp","hp-envy-16-h1053dx-touch-9u360ua":"images/cut/hp-envy-16-h1053dx-touch-9u360ua__main.webp","hp-envy-hayden-22c1":"images/cut/hp-envy-hayden-22c1__main.webp","hp-g10-470g10":"images/cut/hp-g10-470g10__main.webp","hp-hyperx-omen-15-ga0762nr":"images/cut/hp-hyperx-omen-15-ga0762nr__main.webp","hp-hyperx-omen-16-am2013dx":"images/cut/hp-hyperx-omen-16-am2013dx__main.webp","hp-hyperx-omen-16-ap1023dx":"images/cut/hp-hyperx-omen-16-ap1023dx__main.webp","hp-omen-16-ap0167ax":"images/cut/hp-omen-16-ap0167ax__main.webp","hp-omen-16t-wf100-rtx-4070":"images/cut/hp-omen-16t-wf100-rtx-4070__main.webp","hp-omen-slim-16-an0008tx":"images/cut/hp-omen-slim-16-an0008tx__main.webp","hp-omnibook-3-16-bu0007dx":"images/cut/hp-omnibook-3-16-bu0007dx__main.webp","hp-omnibook-3-16-bu0305dx":"images/cut/hp-omnibook-3-16-bu0305dx__main.webp","hp-omnibook-3-16-by0205dx":"images/cut/hp-omnibook-3-16-by0205dx__main.webp","hp-omnibook-3-17-dg0107dx":"images/cut/hp-omnibook-3-17-dg0107dx__main.webp","hp-omnibook-5-16-af1095cl":"images/cut/hp-omnibook-5-16-af1095cl__main.webp","hp-omnibook-5-16-ba1000ci":"images/cut/hp-omnibook-5-16-ba1000ci__main.webp","hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea":"images/cut/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea__main.webp","hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea":"images/cut/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea__main.webp","hp-omnibook-5-ai-16-af1003ci-ultra":"images/cut/hp-omnibook-5-ai-16-af1003ci-ultra__main.webp","hp-omnibook-7-16-az0595":"images/cut/hp-omnibook-7-16-az0595__main.webp","hp-omnibook-ultra-flip-14":"images/cut/hp-omnibook-ultra-flip-14__gray.webp","hp-omnibook-x-17-dd0047nr":"images/cut/hp-omnibook-x-17-dd0047nr__main.webp","hp-omnibook-x-flip-14-fm0013dx":"images/cut/hp-omnibook-x-flip-14-fm0013dx__main.webp","hp-omnibook-x-flip-16-as0023dx":"images/cut/hp-omnibook-x-flip-16-as0023dx__main.webp","hp-omnibook-x-flip-16-as0043dx":"images/cut/hp-omnibook-x-flip-16-as0043dx__main.webp","hp-omnibook-x-flip-16-be0003dx":"images/cut/hp-omnibook-x-flip-16-be0003dx__main.webp","hp-omnibook-x-flip-2in1-16t-as000":"images/cut/hp-omnibook-x-flip-2in1-16t-as000__main.webp","hp-probook-440-g10":"images/cut/hp-probook-440-g10__main.webp","hp-probook-450-g10-85c38ea":"images/cut/hp-probook-450-g10-85c38ea__main.webp","hp-probook-450-g9-7c196pa":"images/cut/hp-probook-450-g9-7c196pa__main.webp","hp-s5-524sh":"images/cut/hp-s5-524sh__main.webp","hp-victus-15":"images/cut/hp-victus-15__mica-silver.webp","hp-victus-15-fa0018nq":"images/cut/hp-victus-15-fa0018nq__performance-blue.webp","hp-victus-15-fa0033dx-9t9r8ua":"images/cut/hp-victus-15-fa0033dx-9t9r8ua__main.webp","hp-victus-15-fa2013dx":"images/cut/hp-victus-15-fa2013dx__main.webp","hp-victus-15-fa2317tx":"images/cut/hp-victus-15-fa2317tx__main.webp","hp-victus-15-fa2787nr":"images/cut/hp-victus-15-fa2787nr__main.webp","hp-victus-clamshell-roaree-24c1":"images/cut/hp-victus-clamshell-roaree-24c1__main.webp","huawei-led-23-8-ad80hw":"images/cut/huawei-led-23-8-ad80hw__main.webp","huawei-matepad-t10":"images/cut/huawei-matepad-t10__main.webp","jbl-authentics-200":"images/cut/jbl-authentics-200__black.webp","jbl-authentics-500":"images/cut/jbl-authentics-500__main.webp","jbl-boombox-2":"images/cut/jbl-boombox-2__main.webp","jbl-boombox-3":"images/cut/jbl-boombox-3__black.webp","jbl-boombox-3-wi-fi":"images/cut/jbl-boombox-3-wi-fi__main.webp","jbl-charge-5":"images/cut/jbl-charge-5__green.webp","jbl-clip-4":"images/cut/jbl-clip-4__black.webp","jbl-clip-5":"images/cut/jbl-clip-5__blue.webp","jbl-flip-6":"images/cut/jbl-flip-6__red.webp","jbl-flip-7":"images/cut/jbl-flip-7__red.webp","jbl-go-3":"images/cut/jbl-go-3__red.webp","jbl-go-4":"images/cut/jbl-go-4__black.webp","jbl-live-460-nc":"images/cut/jbl-live-460-nc__main.webp","jbl-live-660-nc":"images/cut/jbl-live-660-nc__white.webp","jbl-live-770-nc":"images/cut/jbl-live-770-nc__blue.webp","jbl-live-flex":"images/cut/jbl-live-flex__silver.webp","jbl-live-pro-2-tws":"images/cut/jbl-live-pro-2-tws__blue.webp","jbl-partybox-1000":"images/cut/jbl-partybox-1000__black.webp","jbl-partybox-110":"images/cut/jbl-partybox-110__main.webp","jbl-partybox-310":"images/cut/jbl-partybox-310__main.webp","jbl-partybox-710":"images/cut/jbl-partybox-710__main.webp","jbl-partybox-club-120":"images/cut/jbl-partybox-club-120__black.webp","jbl-partybox-encore-essential":"images/cut/jbl-partybox-encore-essential__main.webp","jbl-partybox-on-the-go":"images/cut/jbl-partybox-on-the-go__black.webp","jbl-partybox-stage-320":"images/cut/jbl-partybox-stage-320__black.webp","jbl-partybox-ultimate":"images/cut/jbl-partybox-ultimate__black.webp","jbl-quantum-200-wired":"images/cut/jbl-quantum-200-wired__main.webp","jbl-quantum-300":"images/cut/jbl-quantum-300__main.webp","jbl-tune":"images/cut/jbl-tune__ghost.webp","jbl-tune-125-tws":"images/cut/jbl-tune-125-tws__blue.webp","jbl-tune-125bt":"images/cut/jbl-tune-125bt__main.webp","jbl-tune-130-tws":"images/cut/jbl-tune-130-tws__main.webp","jbl-tune-215-tws":"images/cut/jbl-tune-215-tws__green.webp","jbl-tune-230-nc-tws":"images/cut/jbl-tune-230-nc-tws__main.webp","jbl-tune-500-wired":"images/cut/jbl-tune-500-wired__white.webp","jbl-tune-520-bt":"images/cut/jbl-tune-520-bt__black.webp","jbl-tune-530bt":"images/cut/jbl-tune-530bt__white.webp","jbl-tune-670-nc":"images/cut/jbl-tune-670-nc__black.webp","jbl-tune-680nc":"images/cut/jbl-tune-680nc__main.webp","jbl-tune-720-bt":"images/cut/jbl-tune-720-bt__black.webp","jbl-tune-760-nc":"images/cut/jbl-tune-760-nc__main.webp","jbl-tune-beam":"images/cut/jbl-tune-beam__purple.webp","jbl-tune-flex":"images/cut/jbl-tune-flex__white.webp","jbl-wave":"images/cut/jbl-wave__white.webp","jbl-xtreme-3":"images/cut/jbl-xtreme-3__black.webp","jbl-xtreme-4":"images/cut/jbl-xtreme-4__black.webp","lenovo-82vg00wxus":"images/cut/lenovo-82vg00wxus__main.webp","lenovo-82xb00hvus":"images/cut/lenovo-82xb00hvus__main.webp","lenovo-82yu016tpb":"images/cut/lenovo-82yu016tpb__main.webp","lenovo-83b40008us":"images/cut/lenovo-83b40008us__main.webp","lenovo-83f00005us":"images/cut/lenovo-83f00005us__main.webp","lenovo-83l7002nus":"images/cut/lenovo-83l7002nus__main.webp","lenovo-83lk0001us":"images/cut/lenovo-83lk0001us__main.webp","lenovo-83lk00cvus":"images/cut/lenovo-83lk00cvus__main.webp","lenovo-ideapad-1-14igl7":"images/cut/lenovo-ideapad-1-14igl7__main.webp","lenovo-ideapad-1-15amn7":"images/cut/lenovo-ideapad-1-15amn7__main.webp","lenovo-ideapad-1-15iru7":"images/cut/lenovo-ideapad-1-15iru7__blue.webp","lenovo-ideapad-3-15itl6":"images/cut/lenovo-ideapad-3-15itl6__main.webp","lenovo-ideapad-5-14ial10":"images/cut/lenovo-ideapad-5-14ial10__main.webp","lenovo-ideapad-5-14iru9":"images/cut/lenovo-ideapad-5-14iru9__main.webp","lenovo-ideapad-5-16iru9":"images/cut/lenovo-ideapad-5-16iru9__main.webp","lenovo-ideapad-5-2-in-1-14iru9":"images/cut/lenovo-ideapad-5-2-in-1-14iru9__main.webp","lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us":"images/cut/lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us__main.webp","lenovo-ideapad-5-2in1-14ahp9-ryzen-7":"images/cut/lenovo-ideapad-5-2in1-14ahp9-ryzen-7__main.webp","lenovo-ideapad-5-2in1-16":"images/cut/lenovo-ideapad-5-2in1-16__main.webp","lenovo-ideapad-5-2in1-16ahp9-ryzen-7":"images/cut/lenovo-ideapad-5-2in1-16ahp9-ryzen-7__main.webp","lenovo-ideapad-flex-5-14iau7-i3":"images/cut/lenovo-ideapad-flex-5-14iau7-i3__main.webp","lenovo-ideapad-pro-5-16irh8":"images/cut/lenovo-ideapad-pro-5-16irh8__main.webp","lenovo-ideapad-slim-3-15":"images/cut/lenovo-ideapad-slim-3-15__gray.webp","lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus":"images/cut/lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus__main.webp","lenovo-ideapad-slim-3-15ahp10":"images/cut/lenovo-ideapad-slim-3-15ahp10__main.webp","lenovo-ideapad-slim-3-15ian8":"images/cut/lenovo-ideapad-slim-3-15ian8__gray.webp","lenovo-ideapad-slim-3-15ian8-n100":"images/cut/lenovo-ideapad-slim-3-15ian8-n100__main.webp","lenovo-ideapad-slim-3-15irh10-i5":"images/cut/lenovo-ideapad-slim-3-15irh10-i5__main.webp","lenovo-ideapad-slim-3-15irh10r":"images/cut/lenovo-ideapad-slim-3-15irh10r__main.webp","lenovo-ideapad-slim-3-15iru10":"images/cut/lenovo-ideapad-slim-3-15iru10__main.webp","lenovo-ideapad-slim-3-15iru8-256gb":"images/cut/lenovo-ideapad-slim-3-15iru8-256gb__main.webp","lenovo-ideapad-slim-3-15iru9":"images/cut/lenovo-ideapad-slim-3-15iru9__main.webp","lenovo-ideapad-slim-3-15q8x10":"images/cut/lenovo-ideapad-slim-3-15q8x10__main.webp","lenovo-ideapad-slim-3-16irh10":"images/cut/lenovo-ideapad-slim-3-16irh10__main.webp","lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11":"images/cut/lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11__main.webp","lenovo-ideapad-slim-5-14irh10":"images/cut/lenovo-ideapad-slim-5-14irh10__main.webp","lenovo-ideapad-slim-5-14irh10r":"images/cut/lenovo-ideapad-slim-5-14irh10r__main.webp","lenovo-ideapad-slim-516irh10":"images/cut/lenovo-ideapad-slim-516irh10__main.webp","lenovo-ideapad-slim-5i-core-7-240h-83j1002sus":"images/cut/lenovo-ideapad-slim-5i-core-7-240h-83j1002sus__main.webp","lenovo-legion-5-15iax10":"images/cut/lenovo-legion-5-15iax10__main.webp","lenovo-legion-5-pro-16-irx9":"images/cut/lenovo-legion-5-pro-16-irx9__main.webp","lenovo-legion-pro-5-16":"images/cut/lenovo-legion-pro-5-16__eclipse-black.webp","lenovo-legion-pro-5-slim":"images/cut/lenovo-legion-pro-5-slim__main.webp","lenovo-legion-slim-5-14-aph8-oled-82y5000aus":"images/cut/lenovo-legion-slim-5-14-aph8-oled-82y5000aus__main.webp","lenovo-loq-15":"images/cut/lenovo-loq-15__luna-gray.webp","lenovo-loq-15-arp9-83jc0000us":"images/cut/lenovo-loq-15-arp9-83jc0000us__main.webp","lenovo-loq-15arp9":"images/cut/lenovo-loq-15arp9__main.webp","lenovo-loq-15iax9":"images/cut/lenovo-loq-15iax9__main.webp","lenovo-loq-15irx10":"images/cut/lenovo-loq-15irx10__main.webp","lenovo-tab-m9-tb310xu-acc-zac50096ru":"images/cut/lenovo-tab-m9-tb310xu-acc-zac50096ru__main.webp","lenovo-think-book-14-g8-irl":"images/cut/lenovo-think-book-14-g8-irl__main.webp","lenovo-thinkbook-16-g8-irl":"images/cut/lenovo-thinkbook-16-g8-irl__main.webp","lenovo-thinkpad-e16-gen-1-21jn001qgp":"images/cut/lenovo-thinkpad-e16-gen-1-21jn001qgp__main.webp","lenovo-thinkpad-e16-gen-2-21ma002xrt":"images/cut/lenovo-thinkpad-e16-gen-2-21ma002xrt__main.webp","lenovo-thinkpad-e16-gen-2-21ma004vrt":"images/cut/lenovo-thinkpad-e16-gen-2-21ma004vrt__main.webp","lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw":"images/cut/lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw__main.webp","lenovo-thinkpad-t16-gen-2-21hh005agq":"images/cut/lenovo-thinkpad-t16-gen-2-21hh005agq__main.webp","lenovo-v14-g4-iru":"images/cut/lenovo-v14-g4-iru__main.webp","lenovo-v15-g4-iru":"images/cut/lenovo-v15-g4-iru__main.webp","lenovo-yoga-7-16iml9":"images/cut/lenovo-yoga-7-16iml9__main.webp","lenovo-yoga-7-2-in-1-16akp10":"images/cut/lenovo-yoga-7-2-in-1-16akp10__main.webp","lenovo-yoga-9-13imu9":"images/cut/lenovo-yoga-9-13imu9__main.webp","lenovo-yoga-9-14ill10":"images/cut/lenovo-yoga-9-14ill10__main.webp","lenovo-yoga-pro-7-14-ahp9-83e3002ark":"images/cut/lenovo-yoga-pro-7-14-ahp9-83e3002ark__main.webp","lenovo-yoga-pro-9-16imh9":"images/cut/lenovo-yoga-pro-9-16imh9__main.webp","lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led":"images/cut/lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led__main.webp","lenovo-yoga-slim-7-14q8x9":"images/cut/lenovo-yoga-slim-7-14q8x9__main.webp","lenovo-yoga-slim-7-15ill9":"images/cut/lenovo-yoga-slim-7-15ill9__main.webp","lg-24g411a-b":"images/cut/lg-24g411a-b__main.webp","lg-24gs50f-b":"images/cut/lg-24gs50f-b__main.webp","lg-24u411a-b":"images/cut/lg-24u411a-b__main.webp","lg-27gs50f-b":"images/cut/lg-27gs50f-b__main.webp","lg-27sr50f-w":"images/cut/lg-27sr50f-w__main.webp","lg-27u421a-b":"images/cut/lg-27u421a-b__main.webp","lg-27u511sa-w":"images/cut/lg-27u511sa-w__main.webp","lg-29u531a-w":"images/cut/lg-29u531a-w__main.webp","lg-32sr50f-w":"images/cut/lg-32sr50f-w__main.webp","lg-32ur500k-b":"images/cut/lg-32ur500k-b__main.webp","lg-34gp63a-b":"images/cut/lg-34gp63a-b__main.webp","lg-43nano766qa":"images/cut/lg-43nano766qa__main.webp","lg-43nano80a6b":"images/cut/lg-43nano80a6b__main.webp","lg-43nu850b6la":"images/cut/lg-43nu850b6la__main.webp","lg-43qned70b6c":"images/cut/lg-43qned70b6c__main.webp","lg-43ua75009la":"images/cut/lg-43ua75009la__main.webp","lg-43uq81006lb":"images/cut/lg-43uq81006lb__main.webp","lg-50nu850b6la":"images/cut/lg-50nu850b6la__main.webp","lg-50qned70b6c":"images/cut/lg-50qned70b6c__main.webp","lg-50qned80a6a":"images/cut/lg-50qned80a6a__main.webp","lg-55nano766qa":"images/cut/lg-55nano766qa__main.webp","lg-55nano816na":"images/cut/lg-55nano816na__main.webp","lg-55nu850b6la":"images/cut/lg-55nu850b6la__main.webp","lg-55qned70a6a":"images/cut/lg-55qned70a6a__main.webp","lg-55qned80a6a":"images/cut/lg-55qned80a6a__main.webp","lg-55qned80b6b":"images/cut/lg-55qned80b6b__main.webp","lg-55qned80t6a":"images/cut/lg-55qned80t6a__main.webp","lg-55qned816ra":"images/cut/lg-55qned816ra__main.webp","lg-55qned82a6b":"images/cut/lg-55qned82a6b__main.webp","lg-55qned86a6a":"images/cut/lg-55qned86a6a__main.webp","lg-55qned86t6a":"images/cut/lg-55qned86t6a__main.webp","lg-55ur81006lj":"images/cut/lg-55ur81006lj__main.webp","lg-65nano766qa":"images/cut/lg-65nano766qa__main.webp","lg-65nu850b6la":"images/cut/lg-65nu850b6la__main.webp","lg-65qned70a6a":"images/cut/lg-65qned70a6a__main.webp","lg-65qned80a6a":"images/cut/lg-65qned80a6a__main.webp","lg-65qned80b6b":"images/cut/lg-65qned80b6b__main.webp","lg-65qned86t6a":"images/cut/lg-65qned86t6a__main.webp","lg-65ua75009la":"images/cut/lg-65ua75009la__main.webp","lg-75nu850b6la":"images/cut/lg-75nu850b6la__main.webp","lg-75qned70b6a":"images/cut/lg-75qned70b6a__main.webp","lg-75qned85b6b":"images/cut/lg-75qned85b6b__main.webp","lg-75qned86a6a":"images/cut/lg-75qned86a6a__main.webp","lg-85qned70b6a":"images/cut/lg-85qned70b6a__main.webp","lg-oled55b4rla":"images/cut/lg-oled55b4rla__main.webp","lg-oled55c6rla":"images/cut/lg-oled55c6rla__main.webp","lg-oled65b4rla":"images/cut/lg-oled65b4rla__main.webp","lg-oled65b5rla":"images/cut/lg-oled65b5rla__main.webp","lg-oled65c5rla":"images/cut/lg-oled65c5rla__main.webp","lg-oled65g5rla":"images/cut/lg-oled65g5rla__main.webp","lg-oled83c4rla":"images/cut/lg-oled83c4rla__main.webp","marshall-acton-iii":"images/cut/marshall-acton-iii__black.webp","marshall-emberton":"images/cut/marshall-emberton__black.webp","marshall-emberton-iii":"images/cut/marshall-emberton-iii__black.webp","marshall-kilburn-2":"images/cut/marshall-kilburn-2__main.webp","marshall-major-iv":"images/cut/marshall-major-iv__main.webp","marshall-major-v":"images/cut/marshall-major-v__black.webp","marshall-middleton":"images/cut/marshall-middleton__cream.webp","marshall-stanmore-3":"images/cut/marshall-stanmore-3__black.webp","marshall-stockwell-2":"images/cut/marshall-stockwell-2__main.webp","marshall-uxbridge":"images/cut/marshall-uxbridge__main.webp","marshall-uxbridge-google":"images/cut/marshall-uxbridge-google__main.webp","marshall-willen":"images/cut/marshall-willen__cream.webp","marshall-willen-ii":"images/cut/marshall-willen-ii__cream.webp","marshall-woburn-ii":"images/cut/marshall-woburn-ii__black.webp","marshall-woburn-iii":"images/cut/marshall-woburn-iii__black.webp","microsoft-surface-4":"images/cut/microsoft-surface-4__main.webp","microsoft-surface-go-2":"images/cut/microsoft-surface-go-2__main.webp","microsoft-surface-laptop-7-13":"images/cut/microsoft-surface-laptop-7-13__platinum.webp","microsoft-xbox":"images/cut/microsoft-xbox__main.webp","microsoft-xbox-controller":"images/cut/microsoft-xbox-controller__carbon-black.webp","msi-cyborg-15-a12vf-043us":"images/cut/msi-cyborg-15-a12vf-043us__main.webp","msi-cyborg-15-a13uc-821xae":"images/cut/msi-cyborg-15-a13uc-821xae__main.webp","msi-cyborg-15-a13ve-218us":"images/cut/msi-cyborg-15-a13ve-218us__main.webp","msi-katana-15-b13vek-1675us":"images/cut/msi-katana-15-b13vek-1675us__main.webp","msi-katana-15-hx-b14wek":"images/cut/msi-katana-15-hx-b14wek__main.webp","msi-katana-15-hx-b14wgk-016us":"images/cut/msi-katana-15-hx-b14wgk-016us__main.webp","msi-katana-15-hx-b14wgk-293us":"images/cut/msi-katana-15-hx-b14wgk-293us__main.webp","msi-modern-15-a11mu-1006xge":"images/cut/msi-modern-15-a11mu-1006xge__main.webp","msi-modern-15-b11m-006xge":"images/cut/msi-modern-15-b11m-006xge__main.webp","msi-modern-15-b5m-008xge":"images/cut/msi-modern-15-b5m-008xge__main.webp","msi-raider-16-max-hx-b2wh-rtx-5070ti":"images/cut/msi-raider-16-max-hx-b2wh-rtx-5070ti__main.webp","msi-raider-16-max-hx-b2wi-rtx-5080":"images/cut/msi-raider-16-max-hx-b2wi-rtx-5080__main.webp","msi-raider-18-hx-ai-a2xwig-rtx-5080":"images/cut/msi-raider-18-hx-ai-a2xwig-rtx-5080__main.webp","msi-thin-a15-b7uc-653xae":"images/cut/msi-thin-a15-b7uc-653xae__main.webp","nothing-6974434224179":"images/cut/nothing-6974434224179__main.webp","nothing-cmf-3-pro-6974434225312":"images/cut/nothing-cmf-3-pro-6974434225312__main.webp","nothing-cmf-pro-2":"images/cut/nothing-cmf-pro-2__main.webp","nothing-ear-a":"images/cut/nothing-ear-a__main.webp","nothing-ear-open-b182":"images/cut/nothing-ear-open-b182__main.webp","nothing-phone-2":"images/cut/nothing-phone-2__dark-gray.webp","nothing-phone-3":"images/cut/nothing-phone-3__black.webp","oneplus-nord-6":"images/cut/oneplus-nord-6__black.webp","oppo-reno-a18":"images/cut/oppo-reno-a18__main.webp","oppo-reno-a38":"images/cut/oppo-reno-a38__main.webp","oppo-reno-a58":"images/cut/oppo-reno-a58__main.webp","oppo-reno-a78":"images/cut/oppo-reno-a78__black.webp","oppo-reno8t":"images/cut/oppo-reno8t__main.webp","philips-24-usb-c-24e1n3300a-00":"images/cut/philips-24-usb-c-24e1n3300a-00__main.webp","philips-271v8":"images/cut/philips-271v8__main.webp","poco-c75":"images/cut/poco-c75__black.webp","poco-c81-pro":"images/cut/poco-c81-pro__green.webp","poco-c85":"images/cut/poco-c85__black.webp","poco-f7-pro":"images/cut/poco-f7-pro__black.webp","poco-f7-ultra":"images/cut/poco-f7-ultra__black.webp","poco-x7-pro":"images/cut/poco-x7-pro__nebula-green.webp","poco-x8-pro-5g":"images/cut/poco-x8-pro-5g__black.webp","realme-16":"images/cut/realme-16__black.webp","realme-c75":"images/cut/realme-c75__lightning-gold.webp","realme-gt-7t":"images/cut/realme-gt-7t__black.webp","samsung-27d300gau":"images/cut/samsung-27d300gau__main.webp","samsung-a15":"images/cut/samsung-a15__main.webp","samsung-a25":"images/cut/samsung-a25__main.webp","samsung-eo-ic100-usb-type-c":"images/cut/samsung-eo-ic100-usb-type-c__black.webp","samsung-galaxy-2":"images/cut/samsung-galaxy-2__graphite.webp","samsung-galaxy-2-pro":"images/cut/samsung-galaxy-2-pro__black.webp","samsung-galaxy-3":"images/cut/samsung-galaxy-3__silver.webp","samsung-galaxy-3-fe":"images/cut/samsung-galaxy-3-fe__gray.webp","samsung-galaxy-6-classic-43mm-r950":"images/cut/samsung-galaxy-6-classic-43mm-r950__black.webp","samsung-galaxy-9-44mm":"images/cut/samsung-galaxy-9-44mm__cream.webp","samsung-galaxy-a06":"images/cut/samsung-galaxy-a06__black.webp","samsung-galaxy-a07":"images/cut/samsung-galaxy-a07__black.webp","samsung-galaxy-a07s":"images/cut/samsung-galaxy-a07s__main.webp","samsung-galaxy-a08":"images/cut/samsung-galaxy-a08__silver.webp","samsung-galaxy-a16":"images/cut/samsung-galaxy-a16__blue-black.webp","samsung-galaxy-a17":"images/cut/samsung-galaxy-a17__black.webp","samsung-galaxy-a26":"images/cut/samsung-galaxy-a26__awesome-mint.webp","samsung-galaxy-a27":"images/cut/samsung-galaxy-a27__black.webp","samsung-galaxy-a34":"images/cut/samsung-galaxy-a34__main.webp","samsung-galaxy-a35":"images/cut/samsung-galaxy-a35__black.webp","samsung-galaxy-a36":"images/cut/samsung-galaxy-a36__awesome-lavender.webp","samsung-galaxy-a37":"images/cut/samsung-galaxy-a37__awesome-gray.webp","samsung-galaxy-a55":"images/cut/samsung-galaxy-a55__main.webp","samsung-galaxy-a56":"images/cut/samsung-galaxy-a56__awesome-graphite.webp","samsung-galaxy-a57":"images/cut/samsung-galaxy-a57__awesome-navy.webp","samsung-galaxy-active-2":"images/cut/samsung-galaxy-active-2__black.webp","samsung-galaxy-book-4-np750xgk-ks2us":"images/cut/samsung-galaxy-book-4-np750xgk-ks2us__main.webp","samsung-galaxy-book-6-np760xjg":"images/cut/samsung-galaxy-book-6-np760xjg__main.webp","samsung-galaxy-buds-3-pro":"images/cut/samsung-galaxy-buds-3-pro__white.webp","samsung-galaxy-buds-4":"images/cut/samsung-galaxy-buds-4__white.webp","samsung-galaxy-buds-4-pro":"images/cut/samsung-galaxy-buds-4-pro__white.webp","samsung-galaxy-buds-core":"images/cut/samsung-galaxy-buds-core__black.webp","samsung-galaxy-buds-fe":"images/cut/samsung-galaxy-buds-fe__graphite.webp","samsung-galaxy-buds-live":"images/cut/samsung-galaxy-buds-live__main.webp","samsung-galaxy-buds-pro-r190":"images/cut/samsung-galaxy-buds-pro-r190__main.webp","samsung-galaxy-fe":"images/cut/samsung-galaxy-fe__blue.webp","samsung-galaxy-s25":"images/cut/samsung-galaxy-s25__icy-blue.webp","samsung-galaxy-s25-edge":"images/cut/samsung-galaxy-s25-edge__titanium-silver.webp","samsung-galaxy-s25-fe":"images/cut/samsung-galaxy-s25-fe__icyblue.webp","samsung-galaxy-s25-plus":"images/cut/samsung-galaxy-s25-plus__icyblue.webp","samsung-galaxy-s25-ultra":"images/cut/samsung-galaxy-s25-ultra__titanium-silverblue.webp","samsung-galaxy-s26":"images/cut/samsung-galaxy-s26__black.webp","samsung-galaxy-s26-fe":"images/cut/samsung-galaxy-s26-fe__graphite.webp","samsung-galaxy-s26-plus":"images/cut/samsung-galaxy-s26-plus__black.webp","samsung-galaxy-s26-ultra":"images/cut/samsung-galaxy-s26-ultra__black.webp","samsung-galaxy-tab-a11":"images/cut/samsung-galaxy-tab-a11__silver.webp","samsung-galaxy-tab-a11-plus":"images/cut/samsung-galaxy-tab-a11-plus__silver.webp","samsung-galaxy-tab-a8-10-5-x200":"images/cut/samsung-galaxy-tab-a8-10-5-x200__gray.webp","samsung-galaxy-tab-a9-x110":"images/cut/samsung-galaxy-tab-a9-x110__graphite.webp","samsung-galaxy-tab-a9plus-x210":"images/cut/samsung-galaxy-tab-a9plus-x210__graphite.webp","samsung-galaxy-tab-s10-lite":"images/cut/samsung-galaxy-tab-s10-lite__gray.webp","samsung-galaxy-tab-s10-fe":"images/cut/samsung-galaxy-tab-s10-fe__gray.webp","samsung-galaxy-tab-s11-ultra":"images/cut/samsung-galaxy-tab-s11-ultra__gray.webp","samsung-galaxy-tab-s8":"images/cut/samsung-galaxy-tab-s8__silver.webp","samsung-galaxy-tab-s8-plus":"images/cut/samsung-galaxy-tab-s8-plus__graphite.webp","samsung-galaxy-tab-s9":"images/cut/samsung-galaxy-tab-s9__graphite.webp","samsung-galaxy-tab-s9-fe-x510":"images/cut/samsung-galaxy-tab-s9-fe-x510__gray.webp","samsung-galaxy-tab-s9-plus":"images/cut/samsung-galaxy-tab-s9-plus__graphite.webp","samsung-galaxy-tab-s9-ultra":"images/cut/samsung-galaxy-tab-s9-ultra__graphite.webp","samsung-galaxy-ultra-47mm-2024":"images/cut/samsung-galaxy-ultra-47mm-2024__titanium-white.webp","samsung-galaxy-ultra-47mm-2025":"images/cut/samsung-galaxy-ultra-47mm-2025__titanium-gray.webp","samsung-galaxy-watch-3-41mm":"images/cut/samsung-galaxy-watch-3-41mm__main.webp","samsung-galaxy-watch-7":"images/cut/samsung-galaxy-watch-7__cream.webp","samsung-galaxy-watch-8":"images/cut/samsung-galaxy-watch-8__graphite.webp","samsung-galaxy-watch-8-classic":"images/cut/samsung-galaxy-watch-8-classic__black.webp","samsung-galaxy-watch-fit-3":"images/cut/samsung-galaxy-watch-fit-3__main.webp","samsung-galaxy-watch-ultra-2":"images/cut/samsung-galaxy-watch-ultra-2__titanium-gray.webp","samsung-galaxy-watch4-40-mm":"images/cut/samsung-galaxy-watch4-40-mm__black.webp","samsung-galaxy-z-flip-7":"images/cut/samsung-galaxy-z-flip-7__blue-shadow.webp","samsung-galaxy-z-flip-7-fe":"images/cut/samsung-galaxy-z-flip-7-fe__black.webp","samsung-galaxy-z-flip-8":"images/cut/samsung-galaxy-z-flip-8__pink.webp","samsung-galaxy-z-fold-7":"images/cut/samsung-galaxy-z-fold-7__blue-shadow.webp","samsung-galaxy-z-fold-8":"images/cut/samsung-galaxy-z-fold-8__lavender.webp","samsung-galaxy-z-fold-8-ultra":"images/cut/samsung-galaxy-z-fold-8-ultra__violet-shadow.webp","samsung-ls22a330nhm":"images/cut/samsung-ls22a330nhm__main.webp","samsung-ls24d304gau":"images/cut/samsung-ls24d304gau__main.webp","samsung-ls27bg400euxen":"images/cut/samsung-ls27bg400euxen__main.webp","samsung-ls27bg650eu":"images/cut/samsung-ls27bg650eu__main.webp","samsung-ls27dg300eu":"images/cut/samsung-ls27dg300eu__main.webp","samsung-ls32cg554eu":"images/cut/samsung-ls32cg554eu__main.webp","samsung-ls32d700eau":"images/cut/samsung-ls32d700eau__main.webp","samsung-ls32fm700uu":"images/cut/samsung-ls32fm700uu__main.webp","samsung-ls34c500gau":"images/cut/samsung-ls34c500gau__main.webp","samsung-m5-ls24am506nm":"images/cut/samsung-m5-ls24am506nm__main.webp","samsung-mre55r85hauxpy":"images/cut/samsung-mre55r85hauxpy__main.webp","samsung-mre75r95hauxpy":"images/cut/samsung-mre75r95hauxpy__main.webp","samsung-odyssey-ark-55-ls55cg97wnixci":"images/cut/samsung-odyssey-ark-55-ls55cg97wnixci__main.webp","samsung-odyssey-g3-24-s24ag304nr":"images/cut/samsung-odyssey-g3-24-s24ag304nr__main.webp","samsung-odyssey-g4-ls25bg400eixci":"images/cut/samsung-odyssey-g4-ls25bg400eixci__main.webp","samsung-odyssey-g5-s32cg552eu":"images/cut/samsung-odyssey-g5-s32cg552eu__main.webp","samsung-odyssey-g8-oled-34-s34bg850su":"images/cut/samsung-odyssey-g8-oled-34-s34bg850su__main.webp","samsung-qe43q60ba":"images/cut/samsung-qe43q60ba__main.webp","samsung-qe43q7faauxru":"images/cut/samsung-qe43q7faauxru__main.webp","samsung-qe43qn70hauxpy":"images/cut/samsung-qe43qn70hauxpy__main.webp","samsung-qe48s90faexru":"images/cut/samsung-qe48s90faexru__main.webp","samsung-qe48s90haexpy":"images/cut/samsung-qe48s90haexpy__main.webp","samsung-qe50q7faauxru":"images/cut/samsung-qe50q7faauxru__main.webp","samsung-qe50qn70hauxpy":"images/cut/samsung-qe50qn70hauxpy__main.webp","samsung-qe55ls03bauxce":"images/cut/samsung-qe55ls03bauxce__main.webp","samsung-qe55q60abuxru":"images/cut/samsung-qe55q60abuxru__main.webp","samsung-qe55q7faauxru":"images/cut/samsung-qe55q7faauxru__main.webp","samsung-qe55q7fam":"images/cut/samsung-qe55q7fam__main.webp","samsung-qe55qn80fauxru":"images/cut/samsung-qe55qn80fauxru__main.webp","samsung-qe55qn80hauxpy":"images/cut/samsung-qe55qn80hauxpy__main.webp","samsung-qe55s85haexpy":"images/cut/samsung-qe55s85haexpy__main.webp","samsung-qe55s90hauxpy":"images/cut/samsung-qe55s90hauxpy__main.webp","samsung-qe55s95cauxru":"images/cut/samsung-qe55s95cauxru__main.webp","samsung-qe65q7faauxru":"images/cut/samsung-qe65q7faauxru__main.webp","samsung-qe65qn80hauxpy":"images/cut/samsung-qe65qn80hauxpy__main.webp","samsung-qe65qn85dbuxru":"images/cut/samsung-qe65qn85dbuxru__main.webp","samsung-qe65qn900duxru":"images/cut/samsung-qe65qn900duxru__main.webp","samsung-qe65qn90fauxru":"images/cut/samsung-qe65qn90fauxru__main.webp","samsung-qe65qn990fuxru":"images/cut/samsung-qe65qn990fuxru__main.webp","samsung-qe65s85haexpy":"images/cut/samsung-qe65s85haexpy__main.webp","samsung-qe65s90dauxru":"images/cut/samsung-qe65s90dauxru__main.webp","samsung-qe65s90faexru":"images/cut/samsung-qe65s90faexru__main.webp","samsung-qe65s95fauxru":"images/cut/samsung-qe65s95fauxru__main.webp","samsung-qe65s95hauxpy":"images/cut/samsung-qe65s95hauxpy__main.webp","samsung-qe75q60dauxru":"images/cut/samsung-qe75q60dauxru__main.webp","samsung-qe75q70dauxru":"images/cut/samsung-qe75q70dauxru__main.webp","samsung-qe75qn70fauxru":"images/cut/samsung-qe75qn70fauxru__main.webp","samsung-qe75qn70hauxpy":"images/cut/samsung-qe75qn70hauxpy__main.webp","samsung-qe75qn80fauxru":"images/cut/samsung-qe75qn80fauxru__main.webp","samsung-qe75qn90cauxru":"images/cut/samsung-qe75qn90cauxru__main.webp","samsung-qe77s90faexru":"images/cut/samsung-qe77s90faexru__main.webp","samsung-qe77s95fauxru":"images/cut/samsung-qe77s95fauxru__main.webp","samsung-qe83s90daexru":"images/cut/samsung-qe83s90daexru__main.webp","samsung-qe83s90haexpy":"images/cut/samsung-qe83s90haexpy__main.webp","samsung-qe85q60dauxru":"images/cut/samsung-qe85q60dauxru__main.webp","samsung-qe85qn800auxru":"images/cut/samsung-qe85qn800auxru__main.webp","samsung-qe85qn90bauxce":"images/cut/samsung-qe85qn90bauxce__main.webp","samsung-qe85qn90cauxru":"images/cut/samsung-qe85qn90cauxru__main.webp","samsung-s27d402g":"images/cut/samsung-s27d402g__main.webp","samsung-ue32f6000fuxru":"images/cut/samsung-ue32f6000fuxru__main.webp","samsung-ue43m70hauxpy":"images/cut/samsung-ue43m70hauxpy__main.webp","samsung-ue43u8000huxpy":"images/cut/samsung-ue43u8000huxpy__main.webp","samsung-ue50u8000huxpy":"images/cut/samsung-ue50u8000huxpy__main.webp","samsung-ue55du8000uxru":"images/cut/samsung-ue55du8000uxru__main.webp","samsung-ue55m70hauxpy":"images/cut/samsung-ue55m70hauxpy__main.webp","samsung-ue55m80hauxpy":"images/cut/samsung-ue55m80hauxpy__main.webp","samsung-ue55u8000fuxru":"images/cut/samsung-ue55u8000fuxru__main.webp","samsung-ue65m70hauxpy":"images/cut/samsung-ue65m70hauxpy__main.webp","samsung-ue65m80hauxpy":"images/cut/samsung-ue65m80hauxpy__main.webp","samsung-ue65u8000fuxru":"images/cut/samsung-ue65u8000fuxru__main.webp","samsung-ue65u8000huxpy":"images/cut/samsung-ue65u8000huxpy__main.webp","samsung-ue75m70hauxpy":"images/cut/samsung-ue75m70hauxpy__main.webp","samsung-ue75m80hauxpy":"images/cut/samsung-ue75m80hauxpy__main.webp","samsung-ue75u8000huxpy":"images/cut/samsung-ue75u8000huxpy__main.webp","samsung-ue85m80hauxpy":"images/cut/samsung-ue85m80hauxpy__main.webp","samsung-ue98du9000uxru":"images/cut/samsung-ue98du9000uxru__main.webp","sennheiser-accentum-plus":"images/cut/sennheiser-accentum-plus__main.webp","sennheiser-accentum-true-wireless-atw1":"images/cut/sennheiser-accentum-true-wireless-atw1__main.webp","sennheiser-accentum-wireless-acaebt":"images/cut/sennheiser-accentum-wireless-acaebt__main.webp","sennheiser-hd-450bt":"images/cut/sennheiser-hd-450bt__main.webp","sennheiser-hd-599":"images/cut/sennheiser-hd-599__main.webp","sennheiser-hd-620s":"images/cut/sennheiser-hd-620s__main.webp","sennheiser-momentum-4":"images/cut/sennheiser-momentum-4__black.webp","sennheiser-momentum-sport-msport1":"images/cut/sennheiser-momentum-sport-msport1__main.webp","sennheiser-rs-195":"images/cut/sennheiser-rs-195__main.webp","sonos-ace":"images/cut/sonos-ace__main.webp","sonos-arc":"images/cut/sonos-arc__main.webp","sonos-era-300":"images/cut/sonos-era-300__main.webp","sony-k-43s30":"images/cut/sony-k-43s30__main.webp","sony-k-50s30":"images/cut/sony-k-50s30__main.webp","sony-k-55s30":"images/cut/sony-k-55s30__main.webp","sony-k-55xr50":"images/cut/sony-k-55xr50__main.webp","sony-k-65s30":"images/cut/sony-k-65s30__main.webp","sony-k-65xr50":"images/cut/sony-k-65xr50__main.webp","sony-k-65xr70":"images/cut/sony-k-65xr70__main.webp","sony-k-65xr80m2":"images/cut/sony-k-65xr80m2__main.webp","sony-k-75s30":"images/cut/sony-k-75s30__main.webp","sony-k-75xr50":"images/cut/sony-k-75xr50__main.webp","sony-k-75xr70":"images/cut/sony-k-75xr70__main.webp","sony-kd-55x85l":"images/cut/sony-kd-55x85l__main.webp","sony-kd-65x85l":"images/cut/sony-kd-65x85l__main.webp","sony-playstation-dualsense-ps5":"images/cut/sony-playstation-dualsense-ps5__purple.webp","sony-playstation-portal":"images/cut/sony-playstation-portal__white.webp","sony-playstation-vr2":"images/cut/sony-playstation-vr2__main.webp","sony-playstation-vr2-horizon":"images/cut/sony-playstation-vr2-horizon__main.webp","sony-ps5-backbone":"images/cut/sony-ps5-backbone__main.webp","sony-ps5-driving-force-hori-racing-wheel":"images/cut/sony-ps5-driving-force-hori-racing-wheel__main.webp","sony-ps5-hd-camera":"images/cut/sony-ps5-hd-camera__main.webp","sony-ps5-pro":"images/cut/sony-ps5-pro__white.webp","sony-ps5-pulse-elite-wireless":"images/cut/sony-ps5-pulse-elite-wireless__main.webp","sony-ps5-slim":"images/cut/sony-ps5-slim__white.webp","sony-pulse-explore":"images/cut/sony-pulse-explore__main.webp","sony-wf-1000xm5-wireless-headphones":"images/cut/sony-wf-1000xm5-wireless-headphones__main.webp","sony-wf-c500-true-wireless":"images/cut/sony-wf-c500-true-wireless__main.webp","sony-wf-c510-yc":"images/cut/sony-wf-c510-yc__blue.webp","sony-wf-c700n-gz-e":"images/cut/sony-wf-c700n-gz-e__lavender.webp","sony-wf-c710n":"images/cut/sony-wf-c710n__main.webp","sony-wh-1000xm5":"images/cut/sony-wh-1000xm5__silver.webp","sony-wh-1000xm6":"images/cut/sony-wh-1000xm6__black.webp","sony-wh-ch520":"images/cut/sony-wh-ch520__pink.webp","sony-wh-ch720n":"images/cut/sony-wh-ch720n__black.webp","sony-wh-g900n-wz-e":"images/cut/sony-wh-g900n-wz-e__main.webp","sony-xperia-10v":"images/cut/sony-xperia-10v__main.webp","tcl-115c7k":"images/cut/tcl-115c7k__main.webp","tcl-32s5k":"images/cut/tcl-32s5k__main.webp","tcl-43p7k":"images/cut/tcl-43p7k__main.webp","tcl-43v6c":"images/cut/tcl-43v6c__main.webp","tcl-43v6d":"images/cut/tcl-43v6d__main.webp","tcl-50c6k":"images/cut/tcl-50c6k__main.webp","tcl-50p7l":"images/cut/tcl-50p7l__main.webp","tcl-50s5k":"images/cut/tcl-50s5k__main.webp","tcl-50v6c":"images/cut/tcl-50v6c__main.webp","tcl-55c6k":"images/cut/tcl-55c6k__main.webp","tcl-55c7k":"images/cut/tcl-55c7k__main.webp","tcl-55p7k":"images/cut/tcl-55p7k__main.webp","tcl-55p8l":"images/cut/tcl-55p8l__main.webp","tcl-55v6c":"images/cut/tcl-55v6c__main.webp","tcl-65c6k":"images/cut/tcl-65c6k__main.webp","tcl-65c7l":"images/cut/tcl-65c7l__main.webp","tcl-65p8k":"images/cut/tcl-65p8k__main.webp","tcl-65p8l":"images/cut/tcl-65p8l__main.webp","tcl-65t6d":"images/cut/tcl-65t6d__main.webp","tcl-75c6k":"images/cut/tcl-75c6k__main.webp","tcl-75c7k":"images/cut/tcl-75c7k__main.webp","tcl-75t6d":"images/cut/tcl-75t6d__main.webp","tcl-75v6d":"images/cut/tcl-75v6d__main.webp","tcl-85p7l":"images/cut/tcl-85p7l__main.webp","tcl-85p8l":"images/cut/tcl-85p8l__main.webp","tcl-98c6k":"images/cut/tcl-98c6k__main.webp","tcl-98p8k":"images/cut/tcl-98p8k__main.webp","toshiba-32v35me":"images/cut/toshiba-32v35me__main.webp","toshiba-32v35re":"images/cut/toshiba-32v35re__main.webp","toshiba-43c350ke":"images/cut/toshiba-43c350ke__main.webp","toshiba-43c350le":"images/cut/toshiba-43c350le__main.webp","toshiba-43c350re":"images/cut/toshiba-43c350re__main.webp","toshiba-43c450ke":"images/cut/toshiba-43c450ke__main.webp","toshiba-43c450me":"images/cut/toshiba-43c450me__main.webp","toshiba-43m450re":"images/cut/toshiba-43m450re__main.webp","toshiba-43v35re":"images/cut/toshiba-43v35re__main.webp","toshiba-50c350re":"images/cut/toshiba-50c350re__main.webp","toshiba-50m450re":"images/cut/toshiba-50m450re__main.webp","toshiba-50m550le":"images/cut/toshiba-50m550le__main.webp","toshiba-50v37se":"images/cut/toshiba-50v37se__main.webp","toshiba-55c350ne":"images/cut/toshiba-55c350ne__main.webp","toshiba-55c350re":"images/cut/toshiba-55c350re__main.webp","toshiba-55c450me":"images/cut/toshiba-55c450me__main.webp","toshiba-55z670me":"images/cut/toshiba-55z670me__main.webp","toshiba-55z670re":"images/cut/toshiba-55z670re__main.webp","toshiba-55z680se":"images/cut/toshiba-55z680se__main.webp","toshiba-65c350re":"images/cut/toshiba-65c350re__main.webp","toshiba-65c450me":"images/cut/toshiba-65c450me__main.webp","toshiba-65z670re":"images/cut/toshiba-65z670re__main.webp","toshiba-65z680se":"images/cut/toshiba-65z680se__main.webp","toshiba-65z770re":"images/cut/toshiba-65z770re__main.webp","toshiba-75c350ne":"images/cut/toshiba-75c350ne__main.webp","toshiba-75z670re":"images/cut/toshiba-75z670re__main.webp","toshiba-85c350ne":"images/cut/toshiba-85c350ne__main.webp","toshiba-85m550le":"images/cut/toshiba-85m550le__main.webp","toshiba-85z670me":"images/cut/toshiba-85z670me__main.webp","whoop-life":"images/cut/whoop-life__black.webp","whoop-peak":"images/cut/whoop-peak__black.webp","xbox-series-s":"images/cut/xbox-series-s__white.webp","xbox-series-x":"images/cut/xbox-series-x__black.webp","xiaomi-12-lite":"images/cut/xiaomi-12-lite__main.webp","xiaomi-12x":"images/cut/xiaomi-12x__main.webp","xiaomi-13-lite":"images/cut/xiaomi-13-lite__main.webp","xiaomi-14t":"images/cut/xiaomi-14t__gray.webp","xiaomi-15":"images/cut/xiaomi-15__black.webp","xiaomi-15t-pro":"images/cut/xiaomi-15t-pro__black.webp","xiaomi-17-pro-max":"images/cut/xiaomi-17-pro-max__green.webp","xiaomi-17t":"images/cut/xiaomi-17t__blue.webp","xiaomi-17t-pro":"images/cut/xiaomi-17t-pro__deep-violet.webp","xiaomi-1c-23-8":"images/cut/xiaomi-1c-23-8__main.webp","xiaomi-a-43-2026":"images/cut/xiaomi-a-43-2026__main.webp","xiaomi-a-65-2025":"images/cut/xiaomi-a-65-2025__main.webp","xiaomi-a-pro-43-2026":"images/cut/xiaomi-a-pro-43-2026__main.webp","xiaomi-buds-6-lite":"images/cut/xiaomi-buds-6-lite__black.webp","xiaomi-gaming-monitor-g-pro-27i":"images/cut/xiaomi-gaming-monitor-g-pro-27i__main.webp","xiaomi-gaming-monitor-g24i":"images/cut/xiaomi-gaming-monitor-g24i__main.webp","xiaomi-mi-smart-band-9":"images/cut/xiaomi-mi-smart-band-9__black.webp","xiaomi-mi-smart-kettle-pro-mjhwsh02ym":"images/cut/xiaomi-mi-smart-kettle-pro-mjhwsh02ym__main.webp","xiaomi-pad-7":"images/cut/xiaomi-pad-7__gray.webp","xiaomi-pad-7-pro":"images/cut/xiaomi-pad-7-pro__gray.webp","xiaomi-poco-c40":"images/cut/xiaomi-poco-c40__main.webp","xiaomi-poco-f4":"images/cut/xiaomi-poco-f4__black.webp","xiaomi-poco-f5":"images/cut/xiaomi-poco-f5__black.webp","xiaomi-poco-f6":"images/cut/xiaomi-poco-f6__black.webp","xiaomi-poco-f6-pro":"images/cut/xiaomi-poco-f6-pro__black.webp","xiaomi-poco-m5":"images/cut/xiaomi-poco-m5__main.webp","xiaomi-poco-m6":"images/cut/xiaomi-poco-m6__main.webp","xiaomi-poco-m6-pro":"images/cut/xiaomi-poco-m6-pro__main.webp","xiaomi-poco-m7":"images/cut/xiaomi-poco-m7__silver.webp","xiaomi-poco-m7-pro-5g":"images/cut/xiaomi-poco-m7-pro-5g__gray.webp","xiaomi-poco-m8-5g":"images/cut/xiaomi-poco-m8-5g__black.webp","xiaomi-poco-m8-pro-5g":"images/cut/xiaomi-poco-m8-pro-5g__green.webp","xiaomi-poco-x5-5g":"images/cut/xiaomi-poco-x5-5g__blue.webp","xiaomi-poco-x5-pro-5g":"images/cut/xiaomi-poco-x5-pro-5g__main.webp","xiaomi-poco-x7":"images/cut/xiaomi-poco-x7__green.webp","xiaomi-poco-x8-pro-max":"images/cut/xiaomi-poco-x8-pro-max__black.webp","xiaomi-redmi-10-2022":"images/cut/xiaomi-redmi-10-2022__main.webp","xiaomi-redmi-10a":"images/cut/xiaomi-redmi-10a__black.webp","xiaomi-redmi-10c":"images/cut/xiaomi-redmi-10c__main.webp","xiaomi-redmi-12":"images/cut/xiaomi-redmi-12__main.webp","xiaomi-redmi-12c":"images/cut/xiaomi-redmi-12c__main.webp","xiaomi-redmi-13":"images/cut/xiaomi-redmi-13__main.webp","xiaomi-redmi-13c":"images/cut/xiaomi-redmi-13c__main.webp","xiaomi-redmi-14c":"images/cut/xiaomi-redmi-14c__midnight-black.webp","xiaomi-redmi-15":"images/cut/xiaomi-redmi-15__purple.webp","xiaomi-redmi-15c":"images/cut/xiaomi-redmi-15c__midnight-black.webp","xiaomi-redmi-17":"images/cut/xiaomi-redmi-17__black.webp","xiaomi-redmi-4-active":"images/cut/xiaomi-redmi-4-active__main.webp","xiaomi-redmi-4-bhr-5846-gl":"images/cut/xiaomi-redmi-4-bhr-5846-gl__main.webp","xiaomi-redmi-4-lite":"images/cut/xiaomi-redmi-4-lite__main.webp","xiaomi-redmi-5":"images/cut/xiaomi-redmi-5__black.webp","xiaomi-redmi-8-active-bhr08jtgl":"images/cut/xiaomi-redmi-8-active-bhr08jtgl__white.webp","xiaomi-redmi-8-lite":"images/cut/xiaomi-redmi-8-lite__black.webp","xiaomi-redmi-a2plus":"images/cut/xiaomi-redmi-a2plus__main.webp","xiaomi-redmi-a3":"images/cut/xiaomi-redmi-a3__main.webp","xiaomi-redmi-a5":"images/cut/xiaomi-redmi-a5__main.webp","xiaomi-redmi-a7-pro":"images/cut/xiaomi-redmi-a7-pro__black.webp","xiaomi-redmi-buds-3-lite":"images/cut/xiaomi-redmi-buds-3-lite__main.webp","xiaomi-redmi-buds-6":"images/cut/xiaomi-redmi-buds-6__black.webp","xiaomi-redmi-buds-6-play":"images/cut/xiaomi-redmi-buds-6-play__black.webp","xiaomi-redmi-note-10-pro":"images/cut/xiaomi-redmi-note-10-pro__black.webp","xiaomi-redmi-note-10s":"images/cut/xiaomi-redmi-note-10s__main.webp","xiaomi-redmi-note-11":"images/cut/xiaomi-redmi-note-11__main.webp","xiaomi-redmi-note-11-proplus-5g":"images/cut/xiaomi-redmi-note-11-proplus-5g__main.webp","xiaomi-redmi-note-11s":"images/cut/xiaomi-redmi-note-11s__main.webp","xiaomi-redmi-note-12":"images/cut/xiaomi-redmi-note-12__main.webp","xiaomi-redmi-note-13":"images/cut/xiaomi-redmi-note-13__main.webp","xiaomi-redmi-note-13-pro":"images/cut/xiaomi-redmi-note-13-pro__midnight-black.webp","xiaomi-redmi-note-13-pro-plus":"images/cut/xiaomi-redmi-note-13-pro-plus__midnight-black.webp","xiaomi-redmi-note-14":"images/cut/xiaomi-redmi-note-14__midnight-black.webp","xiaomi-redmi-note-14-pro":"images/cut/xiaomi-redmi-note-14-pro__ocean-blue.webp","xiaomi-redmi-note-14-pro-plus-5g":"images/cut/xiaomi-redmi-note-14-pro-plus-5g__black.webp","xiaomi-redmi-note-14s":"images/cut/xiaomi-redmi-note-14s__purple.webp","xiaomi-redmi-note-15":"images/cut/xiaomi-redmi-note-15__purple.webp","xiaomi-redmi-note-15-pro":"images/cut/xiaomi-redmi-note-15-pro__black.webp","xiaomi-redmi-note-15-pro-plus-5g":"images/cut/xiaomi-redmi-note-15-pro-plus-5g__black.webp","xiaomi-redmi-note-17-4g":"images/cut/xiaomi-redmi-note-17-4g__black.webp","xiaomi-redmi-note-17-5g":"images/cut/xiaomi-redmi-note-17-5g__purple.webp","xiaomi-redmi-note-17-pro-5g":"images/cut/xiaomi-redmi-note-17-pro-5g__black.webp","xiaomi-redmi-note-17-pro-max-5g":"images/cut/xiaomi-redmi-note-17-pro-max-5g__black.webp","xiaomi-redmi-pad":"images/cut/xiaomi-redmi-pad__main.webp","xiaomi-redmi-pad-2":"images/cut/xiaomi-redmi-pad-2__gray.webp","xiaomi-redmi-pad-2-pro":"images/cut/xiaomi-redmi-pad-2-pro__graphite-gray.webp","xiaomi-redmi-pad-pro-5g":"images/cut/xiaomi-redmi-pad-pro-5g__main.webp","xiaomi-redmi-pad-se":"images/cut/xiaomi-redmi-pad-se__main.webp","xiaomi-redmi-pad-se-8-7-4g":"images/cut/xiaomi-redmi-pad-se-8-7-4g__main.webp","xiaomi-redmi-smart-band-2":"images/cut/xiaomi-redmi-smart-band-2__main.webp","xiaomi-redmi-watch-2-lite":"images/cut/xiaomi-redmi-watch-2-lite__main.webp","xiaomi-redmi-watch-5-active":"images/cut/xiaomi-redmi-watch-5-active__matte.webp","xiaomi-redmi-watch-5-lite":"images/cut/xiaomi-redmi-watch-5-lite__black.webp","xiaomi-redmibook-14-jyu4618cn":"images/cut/xiaomi-redmibook-14-jyu4618cn__main.webp","xiaomi-redmibook-14-jyu4635cn":"images/cut/xiaomi-redmibook-14-jyu4635cn__main.webp","xiaomi-redmibook-14-jyu4645cn":"images/cut/xiaomi-redmibook-14-jyu4645cn__main.webp","xiaomi-redmibook-16-jyu4617cn":"images/cut/xiaomi-redmibook-16-jyu4617cn__main.webp","xiaomi-redmibook-16-jyu4639cn":"images/cut/xiaomi-redmibook-16-jyu4639cn__main.webp","xiaomi-redmibook-16-jyu4643cn":"images/cut/xiaomi-redmibook-16-jyu4643cn__main.webp","xiaomi-redmibook-pro-14-jyu4594cn":"images/cut/xiaomi-redmibook-pro-14-jyu4594cn__main.webp","xiaomi-redmibook-pro-16-jyu4593cn":"images/cut/xiaomi-redmibook-pro-16-jyu4593cn__main.webp","xiaomi-redmibook-pro-16-jyu4649cn":"images/cut/xiaomi-redmibook-pro-16-jyu4649cn__main.webp","xiaomi-redmibook-pro-16-jyu4650cn":"images/cut/xiaomi-redmibook-pro-16-jyu4650cn__main.webp","xiaomi-s-pro-mini-led-65":"images/cut/xiaomi-s-pro-mini-led-65__main.webp","xiaomi-smart-band-10":"images/cut/xiaomi-smart-band-10__black.webp","xiaomi-smart-band-7":"images/cut/xiaomi-smart-band-7__main.webp","xiaomi-smart-band-7-pro":"images/cut/xiaomi-smart-band-7-pro__black.webp","xiaomi-smart-band-8-active":"images/cut/xiaomi-smart-band-8-active__main.webp","xiaomi-smart-band-8-champagne-bhr7166gl":"images/cut/xiaomi-smart-band-8-champagne-bhr7166gl__main.webp","xiaomi-smart-ir-control":"images/cut/xiaomi-smart-ir-control__main.webp","xiaomi-smart-mi-band-8-pro":"images/cut/xiaomi-smart-mi-band-8-pro__main.webp","xiaomi-smart-watch-70mai-saphir":"images/cut/xiaomi-smart-watch-70mai-saphir__main.webp","xiaomi-tv-s-65-2025-mled":"images/cut/xiaomi-tv-s-65-2025-mled__main.webp","xiaomi-watch-s1":"images/cut/xiaomi-watch-s1__main.webp","xiaomi-watch-s1-active":"images/cut/xiaomi-watch-s1-active__main.webp","yandex-station-2":"images/cut/yandex-station-2__blue.webp","yandex-station-lite":"images/cut/yandex-station-lite__purple.webp","yandex-station-max":"images/cut/yandex-station-max__main.webp","yandex-station-mini":"images/cut/yandex-station-mini__black.webp","yandex-station-mini-3-pro":"images/cut/yandex-station-mini-3-pro__black.webp","yandex-station-street":"images/cut/yandex-station-street__green.webp","realme-c71":"images/cut/realme-c71__main.webp","apple-iphone-16e":"images/cut/apple-iphone-16e__black.webp","realme-note-60x":"images/cut/realme-note-60x__black.webp","poco-c71":"images/cut/poco-c71__black.webp","starlink-standard-kit":"images/cut/starlink-standard-kit__main.webp","starlink-mini-kit":"images/cut/starlink-mini-kit__main.webp","apple-iphone-14":"images/cut/apple-iphone-14__midnight.webp","apple-iphone-14-pro-max":"images/cut/apple-iphone-14-pro-max__space-black.webp","apple-iphone-14-plus":"images/cut/apple-iphone-14-plus__midnight.webp","samsung-galaxy-s22plus":"images/cut/samsung-galaxy-s22plus__phantom-black.webp","samsung-galaxy-z-fold-5":"images/cut/samsung-galaxy-z-fold-5__icy-blue.webp","samsung-galaxy-z-fold-6":"images/cut/samsung-galaxy-z-fold-6__silver-shadow.webp","samsung-galaxy-a18":"images/cut/samsung-galaxy-a18__light-blue.webp","google-pixel-11":"images/cut/google-pixel-11__obsidian.webp","google-pixel-11-pro":"images/cut/google-pixel-11-pro__obsidian.webp","apple-mac-mini-m6":"images/cut/apple-mac-mini-m6__silver.webp","xiaomi-15-ultra":"images/cut/xiaomi-15-ultra__main.webp","nothing-cmf-phone-1":"images/cut/nothing-cmf-phone-1__light-green.webp","nothing-phone-2a":"images/cut/nothing-phone-2a__main.webp","nothing-phone-3a":"images/cut/nothing-phone-3a__black.webp","nothing-phone-1":"images/cut/nothing-phone-1__black.webp","google-pixel-6a":"images/cut/google-pixel-6a__main.webp","nothing-phone-2a-plus":"images/cut/nothing-phone-2a-plus__main.webp","oneplus-nord-ce4":"images/cut/oneplus-nord-ce4__main.webp","google-pixel-6":"images/cut/google-pixel-6__main.webp","google-pixel-6-pro":"images/cut/google-pixel-6-pro__main.webp","apple-iphone-13":"images/cut/apple-iphone-13__main.webp","samsung-galaxy-s24":"images/cut/samsung-galaxy-s24__main.webp","google-pixel-7-pro":"images/cut/google-pixel-7-pro__main.webp","google-pixel-8a":"images/cut/google-pixel-8a__main.webp","xiaomi-poco-f8-pro":"images/cut/xiaomi-poco-f8-pro__main.webp","xiaomi-12-pro":"images/cut/xiaomi-12-pro__main.webp","oneplus-11":"images/cut/oneplus-11__main.webp","samsung-galaxy-s24-plus":"images/cut/samsung-galaxy-s24-plus__main.webp","xiaomi-poco-f8-ultra":"images/cut/xiaomi-poco-f8-ultra__main.webp","xiaomi-17":"images/cut/xiaomi-17__main.webp","xiaomi-poco-f9-pro":"images/cut/xiaomi-poco-f9-pro__main.webp","xiaomi-12s-ultra":"images/cut/xiaomi-12s-ultra__main.webp","xiaomi-poco-f9-ultra":"images/cut/xiaomi-poco-f9-ultra__main.webp","xiaomi-17-ultra":"images/cut/xiaomi-17-ultra__main.webp","google-pixel-11-pro-fold":"images/cut/google-pixel-11-pro-fold__main.webp","xiaomi-pad-8":"images/cut/xiaomi-pad-8__main.webp","xiaomi-pad-5":"images/cut/xiaomi-pad-5__main.webp","xiaomi-poco-pad-x1":"images/cut/xiaomi-poco-pad-x1__main.webp","oneplus-pad":"images/cut/oneplus-pad__main.webp","amazon-kindle-scribe":"images/cut/amazon-kindle-scribe__main.webp","amazon-kindle-kids":"images/cut/amazon-kindle-kids__main.webp","amazon-fire-hd-10-kids":"images/cut/amazon-fire-hd-10-kids__main.webp","nothing-cmf-watch-pro":"images/cut/nothing-cmf-watch-pro__main.webp","oneplus-nord-smart-watch":"images/cut/oneplus-nord-smart-watch__deep-blue.webp","xiaomi-redmi-band-9-pro":"images/cut/xiaomi-redmi-band-9-pro__silver.webp","samsung-galaxy-fit-3":"images/cut/samsung-galaxy-fit-3__pink-gold.webp","huawei-band-9":"images/cut/huawei-band-9__white.webp","xiaomi-redmi-band-9":"images/cut/xiaomi-redmi-band-9__blue.webp","honor-band-9":"images/cut/honor-band-9__black.webp","xiaomi-redmi-band-8":"images/cut/xiaomi-redmi-band-8__black.webp","xiaomi-redmi-band-7":"images/cut/xiaomi-redmi-band-7__black.webp","apple-macbook-pro-14-m3":"images/cut/apple-macbook-pro-14-m3__main.webp","lenovo-yoga-9-14imh9":"images/cut/lenovo-yoga-9-14imh9__main.webp","dell-pro-14-pc14250":"images/cut/dell-pro-14-pc14250__main.webp","apple-macbook-air-13-m2":"images/cut/apple-macbook-air-13-m2__main.webp","xiaomi-4k-a27ui":"images/cut/xiaomi-4k-a27ui__main.webp","xiaomi-gaming-g27qi":"images/cut/xiaomi-gaming-g27qi__main.webp","xiaomi-gaming-g27i":"images/cut/xiaomi-gaming-g27i__main.webp","xiaomi-a27qi":"images/cut/xiaomi-a27qi__main.webp","xiaomi-a24i":"images/cut/xiaomi-a24i__main.webp","samsung-qe85qn85dbuxce":"images/cut/samsung-qe85qn85dbuxce__main.webp","lg-oled77c46la":"images/cut/lg-oled77c46la__main.webp","lg-oled65g46la":"images/cut/lg-oled65g46la__main.webp","xiaomi-tv-max":"images/cut/xiaomi-tv-max__main.webp","sony-k55xr80":"images/cut/sony-k55xr80__main.webp","samsung-qa55q80aauxzn":"images/cut/samsung-qa55q80aauxzn__main.webp","samsung-qa55s90dauxzn":"images/cut/samsung-qa55s90dauxzn__main.webp","xiaomi-tv-s-pro-mini":"images/cut/xiaomi-tv-s-pro-mini__main.webp","samsung-qa65q60abuxzn":"images/cut/samsung-qa65q60abuxzn__main.webp","lg-oled55a26la":"images/cut/lg-oled55a26la__main.webp","xiaomi-tv-s-mini":"images/cut/xiaomi-tv-s-mini__main.webp","lg-55nano86vna":"images/cut/lg-55nano86vna__main.webp","samsung-qe55q70tauxce":"images/cut/samsung-qe55q70tauxce__main.webp","sony-k65s20m2":"images/cut/sony-k65s20m2__main.webp","samsung-qe65q60dauxce":"images/cut/samsung-qe65q60dauxce__main.webp","lg-55nano80vpa":"images/cut/lg-55nano80vpa__main.webp","samsung-ua65bu8000uxtw":"images/cut/samsung-ua65bu8000uxtw__main.webp","samsung-ue65du8000uxce":"images/cut/samsung-ue65du8000uxce__main.webp","sony-k50s20m2":"images/cut/sony-k50s20m2__main.webp","samsung-ua55bu8000uxzn":"images/cut/samsung-ua55bu8000uxzn__main.webp","lg-50nano75vpa":"images/cut/lg-50nano75vpa__main.webp","samsung-ua50bu8500uxzn":"images/cut/samsung-ua50bu8500uxzn__main.webp","xiaomi-tv-a-pro":"images/cut/xiaomi-tv-a-pro__main.webp","xiaomi-tv-a":"images/cut/xiaomi-tv-a__main.webp","samsung-ua50bu8000uxzn":"images/cut/samsung-ua50bu8000uxzn__main.webp","samsung-ua43cu8000uxzn":"images/cut/samsung-ua43cu8000uxzn__main.webp","samsung-ua43bu8500uxzn":"images/cut/samsung-ua43bu8500uxzn__main.webp","samsung-ua43bu8000uxzn":"images/cut/samsung-ua43bu8000uxzn__main.webp","samsung-ue43du7100uxru":"images/cut/samsung-ue43du7100uxru__main.webp","lg-32lm637bpva":"images/cut/lg-32lm637bpva__main.webp","samsung-ua32t5300auxtw":"images/cut/samsung-ua32t5300auxtw__main.webp","xiaomi-tv-4a":"images/cut/xiaomi-tv-4a__main.webp","marshall-bromley-750":"images/cut/marshall-bromley-750__black-brass.webp","marshall-bromley-450":"images/cut/marshall-bromley-450__black-brass.webp","sony-srs-xv900":"images/cut/sony-srs-xv900__black.webp","jbl-partybox-720":"images/cut/jbl-partybox-720__main.webp","bose-soundlink-max":"images/cut/bose-soundlink-max__blue.webp","sony-mhc-v73d":"images/cut/sony-mhc-v73d__black.webp","jbl-partybox-330":"images/cut/jbl-partybox-330__black.webp","jbl-partybox-520":"images/cut/jbl-partybox-520__black.webp","bose-home-speaker-500":"images/cut/bose-home-speaker-500__black.webp","marshall-heston-sub-200":"images/cut/marshall-heston-sub-200__cream.webp","jbl-partybox-130":"images/cut/jbl-partybox-130__black.webp","jbl-boombox-4":"images/cut/jbl-boombox-4__blue.webp","jbl-xtreme-5":"images/cut/jbl-xtreme-5__squad.webp","jbl-authentics-300":"images/cut/jbl-authentics-300__black.webp","marshall-tufton":"images/cut/marshall-tufton__black-brass.webp","harman-kardon-aura-studio-5":"images/cut/harman-kardon-aura-studio-5__black.webp","harman-kardon-soundsticks-4":"images/cut/harman-kardon-soundsticks-4__white.webp","harman-kardon-soundsticks-5":"images/cut/harman-kardon-soundsticks-5__white.webp","jbl-partybox-encore-2":"images/cut/jbl-partybox-encore-2__black.webp","marshall-kilburn-iii":"images/cut/marshall-kilburn-iii__brown.webp","marshall-stockwell-iii":"images/cut/marshall-stockwell-iii__cream-brass.webp","sony-srs-xp500":"images/cut/sony-srs-xp500__main.webp","marshall-acton-iv":"images/cut/marshall-acton-iv__black.webp","beats-pill":"images/cut/beats-pill__dark-gray.webp","harman-kardon-goplus-play-3":"images/cut/harman-kardon-goplus-play-3__gray.webp","google-home-speaker-with-gemini":"images/cut/google-home-speaker-with-gemini__jade.webp","jbl-soundbar-sb550":"images/cut/jbl-soundbar-sb550__black.webp","jbl-pulse-5":"images/cut/jbl-pulse-5__black.webp","xiaomi-sound-party-portable-speaker-50w":"images/cut/xiaomi-sound-party-portable-speaker-50w__black.webp","jbl-horizon-3":"images/cut/jbl-horizon-3__gray.webp","sony-srs-ult10":"images/cut/sony-srs-ult10__black.webp","jbl-charge-essential-2":"images/cut/jbl-charge-essential-2__blue.webp","jbl-charge-6":"images/cut/jbl-charge-6__white.webp","jbl-horizon-speaker":"images/cut/jbl-horizon-speaker__gray.webp","jbl-flip-essential-2":"images/cut/jbl-flip-essential-2__gray.webp","sony-srs-xe200":"images/cut/sony-srs-xe200__black.webp","xiaomi-portable-bluetooth-speaker":"images/cut/xiaomi-portable-bluetooth-speaker__red.webp","google-nest-mini":"images/cut/google-nest-mini__chalk.webp","xiaomi-sound-outdoor-30w-speaker":"images/cut/xiaomi-sound-outdoor-30w-speaker__red.webp","jbl-wind-3":"images/cut/jbl-wind-3__black.webp","sony-srs-xb100":"images/cut/sony-srs-xb100__white.webp","xiaomi-smart-speaker":"images/cut/xiaomi-smart-speaker__main.webp","xiaomi-smart-speaker-lite":"images/cut/xiaomi-smart-speaker-lite__main.webp","sony-srs-xb13":"images/cut/sony-srs-xb13__blue.webp","dahua-dhi-lm27-a200f":"images/cut/dahua-dhi-lm27-a200f__main.webp","dahua-dhi-lm24-a221y":"images/cut/dahua-dhi-lm24-a221y__main.webp","dahua-dhi-lm24-a200y":"images/cut/dahua-dhi-lm24-a200y__main.webp","sony-ps5-dualsense-edge":"images/cut/sony-ps5-dualsense-edge__main.webp","sony-ps5-dualsense-death-stranding-2-edition":"images/cut/sony-ps5-dualsense-death-stranding-2-edition__main.webp","hori-rwa-racing-wheel-apex-for-ps5":"images/cut/hori-rwa-racing-wheel-apex-for-ps5__main.webp","sony-ps5-dualsense-astro-bot":"images/cut/sony-ps5-dualsense-astro-bot__main.webp","sony-ps5-dualsense-genshin-impact-edition":"images/cut/sony-ps5-dualsense-genshin-impact-edition__main.webp","sony-ps5-dualsense-god-of-war-20th-anniversary-edition":"images/cut/sony-ps5-dualsense-god-of-war-20th-anniversary-edition__main.webp","sony-ps5-dualsense-hyperpop-collection-remix":"images/cut/sony-ps5-dualsense-hyperpop-collection-remix__green.webp","sony-ps5-dualsense-hyperpop-collection-rhythm":"images/cut/sony-ps5-dualsense-hyperpop-collection-rhythm__blue.webp","sony-ps5-dualsense-hyperpop-collection-techno":"images/cut/sony-ps5-dualsense-hyperpop-collection-techno__red.webp","sony-ps5-dualsense":"images/cut/sony-ps5-dualsense__main.webp","bose-quietcomfort-ultra-headphones-2nd-gen":"images/cut/bose-quietcomfort-ultra-headphones-2nd-gen__white.webp","bose-quietcomfort-ultra":"images/cut/bose-quietcomfort-ultra__deep-plum.webp","jbl-tour-one-m3":"images/cut/jbl-tour-one-m3__light-mocha.webp","sony-wf-1000xm6":"images/cut/sony-wf-1000xm6__black.webp","marshall-monitor-iii":"images/cut/marshall-monitor-iii__black.webp","bose-quietcomfort":"images/cut/bose-quietcomfort__white.webp","bose-quietcomfort-se-wireless":"images/cut/bose-quietcomfort-se-wireless__black.webp","bose-quietcomfort-ultra-earbuds":"images/cut/bose-quietcomfort-ultra-earbuds__black.webp","jbl-tour-pro-3-tws":"images/cut/jbl-tour-pro-3-tws__black.webp","beats-powerbeats-fit":"images/cut/beats-powerbeats-fit__power-pink.webp","bose-noise-cancelling-700":"images/cut/bose-noise-cancelling-700__white.webp","jbl-tour-one-m2":"images/cut/jbl-tour-one-m2__champagne.webp","sony-inzone-h5":"images/cut/sony-inzone-h5__main.webp","bose-quietcomfort-earbuds-ii":"images/cut/bose-quietcomfort-earbuds-ii__soapstone.webp","bose-quietcomfort-earbuds":"images/cut/bose-quietcomfort-earbuds__white.webp","jbl-tour-pro-2-tws":"images/cut/jbl-tour-pro-2-tws__champagne.webp","sony-wh-ult900n":"images/cut/sony-wh-ult900n__white.webp","beats-powerbeats-pro":"images/cut/beats-powerbeats-pro__black.webp","jbl-live-780nc":"images/cut/jbl-live-780nc__beige.webp","beats-solo-3":"images/cut/beats-solo-3__gold.webp","jbl-quantum-one-nc":"images/cut/jbl-quantum-one-nc__black.webp","sony-wf-sp800n":"images/cut/sony-wf-sp800n__blue.webp","xiaomi-flipbuds-pro":"images/cut/xiaomi-flipbuds-pro__main.webp","jbl-live-680nc":"images/cut/jbl-live-680nc__white.webp","oneplus-buds-pro-3":"images/cut/oneplus-buds-pro-3__lunar-radiance.webp","jbl-soundgear-frames":"images/cut/jbl-soundgear-frames__main.webp","jbl-live-buds-3":"images/cut/jbl-live-buds-3__purple.webp","jbl-live-beam-3":"images/cut/jbl-live-beam-3__purple.webp","jbl-quantum-610":"images/cut/jbl-quantum-610__black.webp","jbl-live-free-ncplus":"images/cut/jbl-live-free-ncplus__white.webp","jbl-soundgear-clips-earclips":"images/cut/jbl-soundgear-clips-earclips__purple.webp","jbl-tour-pro-plus":"images/cut/jbl-tour-pro-plus__black.webp","jbl-soundgear-sense":"images/cut/jbl-soundgear-sense__black.webp","sony-wf-1000xm3":"images/cut/sony-wf-1000xm3__silver.webp","oneplus-buds-pro-2":"images/cut/oneplus-buds-pro-2__black.webp","jbl-endurance-peak-4":"images/cut/jbl-endurance-peak-4__purple.webp","oneplus-buds-4":"images/cut/oneplus-buds-4__storm-gray.webp","jbl-quantum-350-wireless":"images/cut/jbl-quantum-350-wireless__black.webp","xiaomi-redmi-headphones-neo":"images/cut/xiaomi-redmi-headphones-neo__sand-white.webp","oneplus-buds-pro":"images/cut/oneplus-buds-pro__matte-black.webp","marshall-minor-iv":"images/cut/marshall-minor-iv__cream.webp","oneplus-buds-3":"images/cut/oneplus-buds-3__gray.webp","jbl-under-armour-earbuds":"images/cut/jbl-under-armour-earbuds__white.webp","jbl-live-670nc":"images/cut/jbl-live-670nc__blue.webp","marshall-minor-iii":"images/cut/marshall-minor-iii__black.webp","jbl-sense-lite":"images/cut/jbl-sense-lite__purple.webp","jbl-jr470nc":"images/cut/jbl-jr470nc__pink.webp","jbl-endurance-peak-3":"images/cut/jbl-endurance-peak-3__black.webp","microsoft-modern-usb":"images/cut/microsoft-modern-usb__main.webp","jbl-reflect-contour-2":"images/cut/jbl-reflect-contour-2__black.webp","jbl-t220":"images/cut/jbl-t220__green.webp","jbl-endurance-race":"images/cut/jbl-endurance-race__black.webp","sony-wf-c500n":"images/cut/sony-wf-c500n__orange.webp","oneplus-nord-buds-2":"images/cut/oneplus-nord-buds-2__white.webp","jbl-jr320bt":"images/cut/jbl-jr320bt__purple.webp","honor-choice-tws-earbuds":"images/cut/honor-choice-tws-earbuds__main.webp","jbl-quantum-100-m2-wired":"images/cut/jbl-quantum-100-m2-wired__white.webp","oneplus-bullets-wireless-z-2":"images/cut/oneplus-bullets-wireless-z-2__black.webp","sony-mdr-xb450ap":"images/cut/sony-mdr-xb450ap__red.webp","oneplus-nord-buds":"images/cut/oneplus-nord-buds__main.webp","jbl-quantum-50-wired":"images/cut/jbl-quantum-50-wired__black.webp","jbl-jr320":"images/cut/jbl-jr320__pink.webp","google-pixel-usb-c-earbuds":"images/cut/google-pixel-usb-c-earbuds__white.webp","sony-ps4-stereo-gaming":"images/cut/sony-ps4-stereo-gaming__main.webp","jbl-jr310":"images/cut/jbl-jr310__blue.webp","sony-mdr-zx110":"images/cut/sony-mdr-zx110__white.webp","beats-studio3-wireless":"images/cut/beats-studio3-wireless__red.webp","jbl-tune-520c":"images/cut/jbl-tune-520c__black.webp","apple-mac-mini-m2":"images/cut/apple-mac-mini-m2__main.webp","hp-omen-16-core-i7-14650hx-rtx5050-c42dnea":"images/cut/hp-omen-16-core-i7-14650hx-rtx5050-c42dnea__main.webp","asus-vivobook-15-6-core-5-120u-90nb13y1-m01px0":"images/cut/asus-vivobook-15-6-core-5-120u-90nb13y1-m01px0__main.webp","asus-vivobook-17-3-core-5-120u-90nb13x2-m00j00":"images/cut/asus-vivobook-17-3-core-5-120u-90nb13x2-m00j00__main.webp","asus-tuf-16-i7-14650hx-rtx5050-90nr0na1-m003c0":"images/cut/asus-tuf-16-i7-14650hx-rtx5050-90nr0na1-m003c0__main.webp","asus-vivobook-s-16-core-5-210h-90nb1672-m009k0":"images/cut/asus-vivobook-s-16-core-5-210h-90nb1672-m009k0__main.webp","asus-vivobook-s-14-core-5-210h-90nb1682-m00720":"images/cut/asus-vivobook-s-14-core-5-210h-90nb1682-m00720__main.webp","lenovo-loq-15-6-i7-13645hx-rtx5050-83je0189rk":"images/cut/lenovo-loq-15-6-i7-13645hx-rtx5050-83je0189rk__main.webp","hp-omnibook-x-flip-16-ultra-7-258v-w11h-cl6v6ea":"images/cut/hp-omnibook-x-flip-16-ultra-7-258v-w11h-cl6v6ea__main.webp","hp-omnibook-x-flip-14-ultra-7-256v-w11h-bz2x0ea":"images/cut/hp-omnibook-x-flip-14-ultra-7-256v-w11h-bz2x0ea__main.webp","hp-omnibook-x-flip-16-ultra-7-256v-w11h-c1up1ea":"images/cut/hp-omnibook-x-flip-16-ultra-7-256v-w11h-c1up1ea__main.webp","asus-zenbook-16-oled-ryzen-ai-7-445-w11h-90nb17h2-m006f0":"images/cut/asus-zenbook-16-oled-ryzen-ai-7-445-w11h-90nb17h2-m006f0__main.webp","honor-magicbook-x16-ultra-5-125h-w11h-5301argm":"images/cut/honor-magicbook-x16-ultra-5-125h-w11h-5301argm__main.webp","hp-omnibook-x-flip-16-ultra-5-226v-w11h-cl6v7ea":"images/cut/hp-omnibook-x-flip-16-ultra-5-226v-w11h-cl6v7ea__main.webp","hp-omnibook-7-16-core-5-210h-w11h-c21n7ea":"images/cut/hp-omnibook-7-16-core-5-210h-w11h-c21n7ea__main.webp","hp-omen-16-ultra-7-255hx-rtx-5070ti-c5hz1ea":"images/cut/hp-omen-16-ultra-7-255hx-rtx-5070ti-c5hz1ea__main.webp","asus-zenbook-duo-14-5-touch-ultra-9-285h-w11-ux8406ca-is99t":"images/cut/asus-zenbook-duo-14-5-touch-ultra-9-285h-w11-ux8406ca-is99t__main.webp","asus-vivobook-15-6-touch-core-7-150u-w11-f1504vap-ih79t":"images/cut/asus-vivobook-15-6-touch-core-7-150u-w11-f1504vap-ih79t__main.webp","asus-vivobook-16-i7-1355-win11-f1605va-ws74":"images/cut/asus-vivobook-16-i7-1355-win11-f1605va-ws74__main.webp","honor-magicbook-x14-i5-13420h-w11h-5301alwg":"images/cut/honor-magicbook-x14-i5-13420h-w11h-5301alwg__main.webp","lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk":"images/cut/lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk__main.webp","hp-omnibook-x-flip-x360-16-ultra-5-226v-w11h-c1up3ea":"images/cut/hp-omnibook-x-flip-x360-16-ultra-5-226v-w11h-c1up3ea__main.webp","hp-omnibook-x-flip-x360-14-ultra-7-256v-w11h-c1um8ea":"images/cut/hp-omnibook-x-flip-x360-14-ultra-7-256v-w11h-c1um8ea__main.webp","hp-pavilion-16-r7-8840u-b2cv4ea":"images/cut/hp-pavilion-16-r7-8840u-b2cv4ea__main.webp","hp-pavilion-16-ultra-5-125u-b2cv3ea":"images/cut/hp-pavilion-16-ultra-5-125u-b2cv3ea__main.webp","honor-magicbook-x-16-pro-i5-13420h-w11h-5301ahqv":"images/cut/honor-magicbook-x-16-pro-i5-13420h-w11h-5301ahqv__main.webp","honor-magicbook-x14-pro-i5-13420h-w11h-5301ahqk":"images/cut/honor-magicbook-x14-pro-i5-13420h-w11h-5301ahqk__main.webp","apple-macbook-air-13-m3":"images/cut/apple-macbook-air-13-m3__main.webp","hp-15-6-core-5-120u-a5cv9ea":"images/cut/hp-15-6-core-5-120u-a5cv9ea__main.webp","hp-15-6-fhd-i5-1334u-9u5w4ea":"images/cut/hp-15-6-fhd-i5-1334u-9u5w4ea__main.webp","honor-magicbook-x16-i5-12450h-5301ahhp":"images/cut/honor-magicbook-x16-i5-12450h-5301ahhp__main.webp","asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94":"images/cut/asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94__main.webp","lenovo-yoga-slim-7-r5-7640s-83aa000brk":"images/cut/lenovo-yoga-slim-7-r5-7640s-83aa000brk__main.webp","apple-macbook-pro-16-m3-pro":"images/cut/apple-macbook-pro-16-m3-pro__main.webp","hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba":"images/cut/hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba__main.webp","apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4":"images/cut/apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4__main.webp","dell-vostro-3910":"images/cut/dell-vostro-3910__main.webp","oneplus-15":"images/cut/oneplus-15__main.webp","xiaomi-redmi-17c-4g":"images/cut/xiaomi-redmi-17c-4g__main.webp","xiaomi-redmi-a7":"images/cut/xiaomi-redmi-a7__main.webp","huawei-matebook-fold-ultimate-18":"images/cut/huawei-matebook-fold-ultimate-18__main.webp","acer-predator-helios-neo-16-fhd-i9-ultra-abyssal":"images/cut/acer-predator-helios-neo-16-fhd-i9-ultra-abyssal__main.webp","microsoft-surface-pro-12":"images/cut/microsoft-surface-pro-12__main.webp","acer-nitro-lite":"images/cut/acer-nitro-lite__main.webp","dell-15-6-core-i7-1355u-fhd-touch-display":"images/cut/dell-15-6-core-i7-1355u-fhd-touch-display__main.webp","asus-vivobook-16":"images/cut/asus-vivobook-16__main.webp","acer-aspire-lite-15-6-fhd-core-i5":"images/cut/acer-aspire-lite-15-6-fhd-core-i5__main.webp","lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd":"images/cut/lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd__main.webp","hp-15-6-ryzen-5-7320u-fhd":"images/cut/hp-15-6-ryzen-5-7320u-fhd__main.webp","hp-15-6-core-i5-1334u-full-hd":"images/cut/hp-15-6-core-i5-1334u-full-hd__main.webp","asus-14-fhd-x1404va-i5-1334u":"images/cut/asus-14-fhd-x1404va-i5-1334u__main.webp","hp-15-6-ryzen-3-7320u-full-hd":"images/cut/hp-15-6-ryzen-3-7320u-full-hd__main.webp","asus-15-6-hd-intel-n4500-e510k":"images/cut/asus-15-6-hd-intel-n4500-e510k__main.webp","apple-watch-se-2":"images/cut/apple-watch-se-2__main.webp","flyingvoice-sr3000-5g":"images/cut/flyingvoice-sr3000-5g__main.webp","tp-link-m7000-lte-hotspot":"images/cut/tp-link-m7000-lte-hotspot__main.webp","xiaomi-dual-zone-air-fryer-10l":"images/cut/xiaomi-dual-zone-air-fryer-10l__main.webp","xiaomi-handheld-garment-steamer-mjgtj02lf":"images/cut/xiaomi-handheld-garment-steamer-mjgtj02lf__main.webp","xiaomi-mijia-smart-air-purifier-6":"images/cut/xiaomi-mijia-smart-air-purifier-6__main.webp","xiaomi-robot-vacuum-5":"images/cut/xiaomi-robot-vacuum-5__main.webp","xiaomi-robot-vacuum-5-pro":"images/cut/xiaomi-robot-vacuum-5-pro__main.webp","xiaomi-robot-vacuum-s40-pro":"images/cut/xiaomi-robot-vacuum-s40-pro__main.webp","xiaomi-robot-vacuum-x20-max":"images/cut/xiaomi-robot-vacuum-x20-max__main.webp","xiaomi-robot-vacuum-x20-pro":"images/cut/xiaomi-robot-vacuum-x20-pro__main.webp","xiaomi-semi-automatic-espresso-machine-bhr9798eu":"images/cut/xiaomi-semi-automatic-espresso-machine-bhr9798eu__main.webp","xiaomi-smart-air-fryer-6-5l":"images/cut/xiaomi-smart-air-fryer-6-5l__main.webp","xiaomi-smart-air-purifier-4-compact-bhr5860eu":"images/cut/xiaomi-smart-air-purifier-4-compact-bhr5860eu__main.webp","xiaomi-smart-air-purifier-4-lite-bhr5274gl":"images/cut/xiaomi-smart-air-purifier-4-lite-bhr5274gl__main.webp","xiaomi-smart-air-purifier-4-pro-bhr5056eu":"images/cut/xiaomi-smart-air-purifier-4-pro-bhr5056eu__main.webp","xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu":"images/cut/xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu__main.webp","xiaomi-smart-scale-s200":"images/cut/xiaomi-smart-scale-s200__main.webp","xiaomi-sound-pocket":"images/cut/xiaomi-sound-pocket__main.webp","xiaomi-vacuum-cleaner-g20-lite":"images/cut/xiaomi-vacuum-cleaner-g20-lite__main.webp","xiaomi-vacuum-cleaner-g20-max":"images/cut/xiaomi-vacuum-cleaner-g20-max__main.webp"};
+const THUMBDATA={};
+const COLORIMG={"acer-anv15-52-92dd":{"main":"images/cut/acer-anv15-52-92dd__main.webp"},"acer-anv15-52-99cv":{"main":"images/cut/acer-anv15-52-99cv__main.webp"},"acer-aspire-14-ai-a14-52mt-59dp":{"main":"images/cut/acer-aspire-14-ai-a14-52mt-59dp__main.webp"},"acer-aspire-14-ai-a14-52mt-701k":{"main":"images/cut/acer-aspire-14-ai-a14-52mt-701k__main.webp"},"acer-aspire-15":{"main":"images/cut/acer-aspire-15__main.webp","steel-gray":"images/cut/acer-aspire-15__steel-gray.webp"},"acer-aspire-3-a325-45":{"main":"images/cut/acer-aspire-3-a325-45__main.webp"},"acer-aspire-a16-51gm-71yf":{"main":"images/cut/acer-aspire-a16-51gm-71yf__main.webp"},"acer-aspire-a514-56m-770k":{"main":"images/cut/acer-aspire-a514-56m-770k__main.webp"},"acer-aspire-al15-52":{"main":"images/cut/acer-aspire-al15-52__main.webp"},"acer-aspire-go-15-ag15-32p-39r2":{"main":"images/cut/acer-aspire-go-15-ag15-32p-39r2__main.webp"},"acer-aspire-go-15-ag15-51p-510u":{"main":"images/cut/acer-aspire-go-15-ag15-51p-510u__main.webp"},"acer-aspire-go-16-ag16-71p-97w3":{"main":"images/cut/acer-aspire-go-16-ag16-71p-97w3__main.webp"},"acer-aspire-lite-15-6-fhd-core-i5":{"main":"images/cut/acer-aspire-lite-15-6-fhd-core-i5__main.webp"},"acer-aspire-lite-al15-31p-c2z1":{"main":"images/cut/acer-aspire-lite-al15-31p-c2z1__main.webp"},"acer-aspire-lite-al15-36p-32xp":{"main":"images/cut/acer-aspire-lite-al15-36p-32xp__main.webp"},"acer-aspire-lite-al16-52p-32e3":{"main":"images/cut/acer-aspire-lite-al16-52p-32e3__main.webp"},"acer-aspire-lite-al16-52p-59qu":{"main":"images/cut/acer-aspire-lite-al16-52p-59qu__main.webp"},"acer-aspire-lite-al16-54p-50tq":{"main":"images/cut/acer-aspire-lite-al16-54p-50tq__main.webp"},"acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001":{"main":"images/cut/acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001__main.webp"},"acer-aspire-vero-16-av16-51p-58ku":{"main":"images/cut/acer-aspire-vero-16-av16-51p-58ku__main.webp"},"acer-nitro-5-an515-45-r7sl":{"main":"images/cut/acer-nitro-5-an515-45-r7sl__main.webp"},"acer-nitro-5-anv15-51-93hs":{"main":"images/cut/acer-nitro-5-anv15-51-93hs__main.webp"},"acer-nitro-anv15-51-76er":{"main":"images/cut/acer-nitro-anv15-51-76er__main.webp"},"acer-nitro-anv16-71-760q":{"main":"images/cut/acer-nitro-anv16-71-760q__main.webp"},"acer-nitro-lite":{"main":"images/cut/acer-nitro-lite__main.webp"},"acer-nitro-v15-anv15-51-789j":{"main":"images/cut/acer-nitro-v15-anv15-51-789j__main.webp"},"acer-nitro-v15-anv15-52-57bb":{"main":"images/cut/acer-nitro-v15-anv15-52-57bb__main.webp"},"acer-nitro-v15-anv15-52-90gc":{"main":"images/cut/acer-nitro-v15-anv15-52-90gc__main.webp"},"acer-nitro-v15-anv15-52-9161":{"main":"images/cut/acer-nitro-v15-anv15-52-9161__main.webp"},"acer-nitro-v16-anv16-71-70f7":{"main":"images/cut/acer-nitro-v16-anv16-71-70f7__main.webp"},"acer-predator-helios-neo-14-phn14-51-79ub":{"main":"images/cut/acer-predator-helios-neo-14-phn14-51-79ub__main.webp"},"acer-predator-helios-neo-16-fhd-i9-ultra-abyssal":{"main":"images/cut/acer-predator-helios-neo-16-fhd-i9-ultra-abyssal__main.webp"},"acer-predator-helios-neo-16s-71-91aw":{"main":"images/cut/acer-predator-helios-neo-16s-71-91aw__main.webp"},"acer-predator-helios-neo-phn14-51-90n4":{"main":"images/cut/acer-predator-helios-neo-phn14-51-90n4__main.webp"},"acer-predator-helios-neo-phn16-73-94zr":{"main":"images/cut/acer-predator-helios-neo-phn16-73-94zr__main.webp"},"acer-predator-helios-neo-phn16-73-97bp":{"main":"images/cut/acer-predator-helios-neo-phn16-73-97bp__main.webp"},"acer-predator-triton-300-pt-315-53-75-xx":{"main":"images/cut/acer-predator-triton-300-pt-315-53-75-xx__main.webp"},"acer-swift-3-sf314-59-75qc":{"main":"images/cut/acer-swift-3-sf314-59-75qc__main.webp"},"acer-swift-go-14-sfg14-71-52tv":{"main":"images/cut/acer-swift-go-14-sfg14-71-52tv__main.webp"},"acer-swift-go-14-sfg14-72t-58sh":{"main":"images/cut/acer-swift-go-14-sfg14-72t-58sh__main.webp"},"acer-swift-sfg16-72t-95lg":{"main":"images/cut/acer-swift-sfg16-72t-95lg__main.webp"},"amazon-fire-hd-10-kids":{"main":"images/cut/amazon-fire-hd-10-kids__main.webp"},"amazon-kindle-11":{"black":"images/cut/amazon-kindle-11__black.webp","main":"images/cut/amazon-kindle-11__main.webp"},"amazon-kindle-kids":{"main":"images/cut/amazon-kindle-kids__main.webp"},"amazon-kindle-paperwhite-12":{"main":"images/cut/amazon-kindle-paperwhite-12__main.webp"},"amazon-kindle-paperwhite-kids-11":{"main":"images/cut/amazon-kindle-paperwhite-kids-11__main.webp"},"amazon-kindle-scribe":{"main":"images/cut/amazon-kindle-scribe__main.webp"},"aoc-22b2hn":{"main":"images/cut/aoc-22b2hn__main.webp"},"aoc-24b30h2":{"main":"images/cut/aoc-24b30h2__main.webp"},"aoc-24v2q":{"main":"images/cut/aoc-24v2q__main.webp"},"aoc-49-lcd-ag493ucx":{"main":"images/cut/aoc-49-lcd-ag493ucx__main.webp"},"apple-airpods-4-anc":{"main":"images/cut/apple-airpods-4-anc__main.webp","white":"images/cut/apple-airpods-4-anc__white.webp"},"apple-airpods-4":{"main":"images/cut/apple-airpods-4__main.webp","white":"images/cut/apple-airpods-4__white.webp"},"apple-airpods-5":{"main":"images/cut/apple-airpods-5__main.webp"},"apple-airpods-max-2":{"blue":"images/cut/apple-airpods-max-2__blue.webp","green":"images/cut/apple-airpods-max-2__green.webp","main":"images/cut/apple-airpods-max-2__main.webp","pink":"images/cut/apple-airpods-max-2__pink.webp","purple":"images/cut/apple-airpods-max-2__purple.webp","starlight":"images/cut/apple-airpods-max-2__starlight.webp"},"apple-airpods-pro-2":{"main":"images/cut/apple-airpods-pro-2__main.webp","white":"images/cut/apple-airpods-pro-2__white.webp"},"apple-airpods-pro-3":{"main":"images/cut/apple-airpods-pro-3__main.webp","white":"images/cut/apple-airpods-pro-3__white.webp"},"apple-earpods-lightning":{"main":"images/cut/apple-earpods-lightning__main.webp"},"apple-earpods-usb-c":{"main":"images/cut/apple-earpods-usb-c__main.webp"},"apple-homepod-2":{"black":"images/cut/apple-homepod-2__black.webp","main":"images/cut/apple-homepod-2__main.webp","white":"images/cut/apple-homepod-2__white.webp"},"apple-homepod-mini":{"black":"images/cut/apple-homepod-mini__black.webp","blue":"images/cut/apple-homepod-mini__blue.webp","main":"images/cut/apple-homepod-mini__main.webp","orange":"images/cut/apple-homepod-mini__orange.webp","white":"images/cut/apple-homepod-mini__white.webp","yellow":"images/cut/apple-homepod-mini__yellow.webp"},"apple-imac-24-m4":{"main":"images/cut/apple-imac-24-m4__main.webp","silver":"images/cut/apple-imac-24-m4__silver.webp"},"apple-ipad-10-9-wi-fi-a14-mpqa3rk-a":{"blue":"images/cut/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__blue.webp","main":"images/cut/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__main.webp","pink":"images/cut/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__pink.webp","silver":"images/cut/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__silver.webp","yellow":"images/cut/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__yellow.webp"},"apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a":{"main":"images/cut/apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a__main.webp"},"apple-ipad-9":{"main":"images/cut/apple-ipad-9__main.webp","silver":"images/cut/apple-ipad-9__silver.webp","space-gray":"images/cut/apple-ipad-9__space-gray.webp"},"apple-ipad-a16":{"blue":"images/cut/apple-ipad-a16__blue.webp","main":"images/cut/apple-ipad-a16__main.webp","pink":"images/cut/apple-ipad-a16__pink.webp","silver":"images/cut/apple-ipad-a16__silver.webp","yellow":"images/cut/apple-ipad-a16__yellow.webp"},"apple-ipad-air-11-m3":{"main":"images/cut/apple-ipad-air-11-m3__main.webp","space-gray":"images/cut/apple-ipad-air-11-m3__space-gray.webp"},"apple-ipad-air-11-m4":{"blue":"images/cut/apple-ipad-air-11-m4__blue.webp","main":"images/cut/apple-ipad-air-11-m4__main.webp","purple":"images/cut/apple-ipad-air-11-m4__purple.webp","space-gray":"images/cut/apple-ipad-air-11-m4__space-gray.webp","starlight":"images/cut/apple-ipad-air-11-m4__starlight.webp"},"apple-ipad-air-11-wi-fi-2024":{"blue":"images/cut/apple-ipad-air-11-wi-fi-2024__blue.webp","gray":"images/cut/apple-ipad-air-11-wi-fi-2024__gray.webp","main":"images/cut/apple-ipad-air-11-wi-fi-2024__main.webp","purple":"images/cut/apple-ipad-air-11-wi-fi-2024__purple.webp","starlight":"images/cut/apple-ipad-air-11-wi-fi-2024__starlight.webp"},"apple-ipad-air-5-wi-fi-plus-cellular-2022":{"blue":"images/cut/apple-ipad-air-5-wi-fi-plus-cellular-2022__blue.webp","gray":"images/cut/apple-ipad-air-5-wi-fi-plus-cellular-2022__gray.webp","main":"images/cut/apple-ipad-air-5-wi-fi-plus-cellular-2022__main.webp","purple":"images/cut/apple-ipad-air-5-wi-fi-plus-cellular-2022__purple.webp"},"apple-ipad-mini-6":{"main":"images/cut/apple-ipad-mini-6__main.webp","pink":"images/cut/apple-ipad-mini-6__pink.webp","purple":"images/cut/apple-ipad-mini-6__purple.webp","space-gray":"images/cut/apple-ipad-mini-6__space-gray.webp","starlight":"images/cut/apple-ipad-mini-6__starlight.webp"},"apple-ipad-mini-7":{"blue":"images/cut/apple-ipad-mini-7__blue.webp","main":"images/cut/apple-ipad-mini-7__main.webp","purple":"images/cut/apple-ipad-mini-7__purple.webp","space-gray":"images/cut/apple-ipad-mini-7__space-gray.webp","starlight":"images/cut/apple-ipad-mini-7__starlight.webp"},"apple-ipad-pro-11-m4":{"main":"images/cut/apple-ipad-pro-11-m4__main.webp","silver":"images/cut/apple-ipad-pro-11-m4__silver.webp","space-black":"images/cut/apple-ipad-pro-11-m4__space-black.webp"},"apple-ipad-pro-11-m5":{"main":"images/cut/apple-ipad-pro-11-m5__main.webp"},"apple-iphone-13":{"main":"images/cut/apple-iphone-13__main.webp"},"apple-iphone-14-plus":{"blue":"images/cut/apple-iphone-14-plus__blue.webp","main":"images/cut/apple-iphone-14-plus__main.webp","midnight":"images/cut/apple-iphone-14-plus__midnight.webp","purple":"images/cut/apple-iphone-14-plus__purple.webp","red":"images/cut/apple-iphone-14-plus__red.webp","starlight":"images/cut/apple-iphone-14-plus__starlight.webp","yellow":"images/cut/apple-iphone-14-plus__yellow.webp"},"apple-iphone-14-pro-max":{"deep-purple":"images/cut/apple-iphone-14-pro-max__deep-purple.webp","gold":"images/cut/apple-iphone-14-pro-max__gold.webp","main":"images/cut/apple-iphone-14-pro-max__main.webp","silver":"images/cut/apple-iphone-14-pro-max__silver.webp","space-black":"images/cut/apple-iphone-14-pro-max__space-black.webp"},"apple-iphone-14":{"blue":"images/cut/apple-iphone-14__blue.webp","main":"images/cut/apple-iphone-14__main.webp","midnight":"images/cut/apple-iphone-14__midnight.webp","purple":"images/cut/apple-iphone-14__purple.webp","red":"images/cut/apple-iphone-14__red.webp","starlight":"images/cut/apple-iphone-14__starlight.webp","yellow":"images/cut/apple-iphone-14__yellow.webp"},"apple-iphone-15-pro":{"main":"images/cut/apple-iphone-15-pro__main.webp","natural-titanium":"images/cut/apple-iphone-15-pro__natural-titanium.webp"},"apple-iphone-15":{"black":"images/cut/apple-iphone-15__black.webp","blue":"images/cut/apple-iphone-15__blue.webp","green":"images/cut/apple-iphone-15__green.webp","main":"images/cut/apple-iphone-15__main.webp","pink":"images/cut/apple-iphone-15__pink.webp","yellow":"images/cut/apple-iphone-15__yellow.webp"},"apple-iphone-16-plus":{"black":"images/cut/apple-iphone-16-plus__black.webp","main":"images/cut/apple-iphone-16-plus__main.webp","pink":"images/cut/apple-iphone-16-plus__pink.webp","teal":"images/cut/apple-iphone-16-plus__teal.webp","ultramarine":"images/cut/apple-iphone-16-plus__ultramarine.webp","white":"images/cut/apple-iphone-16-plus__white.webp"},"apple-iphone-16-pro-max":{"black-titanium":"images/cut/apple-iphone-16-pro-max__black-titanium.webp","desert-titanium":"images/cut/apple-iphone-16-pro-max__desert-titanium.webp","main":"images/cut/apple-iphone-16-pro-max__main.webp","natural-titanium":"images/cut/apple-iphone-16-pro-max__natural-titanium.webp","white-titanium":"images/cut/apple-iphone-16-pro-max__white-titanium.webp"},"apple-iphone-16-pro":{"black-titanium":"images/cut/apple-iphone-16-pro__black-titanium.webp","desert-titanium":"images/cut/apple-iphone-16-pro__desert-titanium.webp","main":"images/cut/apple-iphone-16-pro__main.webp","natural-titanium":"images/cut/apple-iphone-16-pro__natural-titanium.webp","white-titanium":"images/cut/apple-iphone-16-pro__white-titanium.webp"},"apple-iphone-16e":{"black":"images/cut/apple-iphone-16e__black.webp","main":"images/cut/apple-iphone-16e__main.webp","white":"images/cut/apple-iphone-16e__white.webp"},"apple-iphone-16":{"black":"images/cut/apple-iphone-16__black.webp","main":"images/cut/apple-iphone-16__main.webp","pink":"images/cut/apple-iphone-16__pink.webp","teal":"images/cut/apple-iphone-16__teal.webp","ultramarine":"images/cut/apple-iphone-16__ultramarine.webp","white":"images/cut/apple-iphone-16__white.webp"},"apple-iphone-17-pro-max":{"cosmic-orange":"images/cut/apple-iphone-17-pro-max__cosmic-orange.webp","deep-blue":"images/cut/apple-iphone-17-pro-max__deep-blue.webp","main":"images/cut/apple-iphone-17-pro-max__main.webp","silver":"images/cut/apple-iphone-17-pro-max__silver.webp"},"apple-iphone-17-pro":{"cosmic-orange":"images/cut/apple-iphone-17-pro__cosmic-orange.webp","deep-blue":"images/cut/apple-iphone-17-pro__deep-blue.webp","main":"images/cut/apple-iphone-17-pro__main.webp","silver":"images/cut/apple-iphone-17-pro__silver.webp"},"apple-iphone-17e":{"black":"images/cut/apple-iphone-17e__black.webp","main":"images/cut/apple-iphone-17e__main.webp","soft-pink":"images/cut/apple-iphone-17e__soft-pink.webp","white":"images/cut/apple-iphone-17e__white.webp"},"apple-iphone-17":{"black":"images/cut/apple-iphone-17__black.webp","lavender":"images/cut/apple-iphone-17__lavender.webp","main":"images/cut/apple-iphone-17__main.webp","mist-blue":"images/cut/apple-iphone-17__mist-blue.webp","sage":"images/cut/apple-iphone-17__sage.webp","white":"images/cut/apple-iphone-17__white.webp"},"apple-iphone-18-pro-max":{"black":"images/cut/apple-iphone-18-pro-max__black.webp","burgundy":"images/cut/apple-iphone-18-pro-max__burgundy.webp","glacier":"images/cut/apple-iphone-18-pro-max__glacier.webp","main":"images/cut/apple-iphone-18-pro-max__main.webp","silver":"images/cut/apple-iphone-18-pro-max__silver.webp"},"apple-iphone-18-pro":{"black":"images/cut/apple-iphone-18-pro__black.webp","burgundy":"images/cut/apple-iphone-18-pro__burgundy.webp","glacier":"images/cut/apple-iphone-18-pro__glacier.webp","main":"images/cut/apple-iphone-18-pro__main.webp","silver":"images/cut/apple-iphone-18-pro__silver.webp"},"apple-iphone-air":{"cloud-white":"images/cut/apple-iphone-air__cloud-white.webp","light-gold":"images/cut/apple-iphone-air__light-gold.webp","main":"images/cut/apple-iphone-air__main.webp","sky-blue":"images/cut/apple-iphone-air__sky-blue.webp","space-black":"images/cut/apple-iphone-air__space-black.webp"},"apple-mac-mini-m2":{"main":"images/cut/apple-mac-mini-m2__main.webp"},"apple-mac-mini-m4":{"main":"images/cut/apple-mac-mini-m4__main.webp","silver":"images/cut/apple-mac-mini-m4__silver.webp"},"apple-mac-mini-m6":{"main":"images/cut/apple-mac-mini-m6__main.webp","silver":"images/cut/apple-mac-mini-m6__silver.webp"},"apple-macbook-air-13-m2":{"main":"images/cut/apple-macbook-air-13-m2__main.webp"},"apple-macbook-air-13-m3":{"main":"images/cut/apple-macbook-air-13-m3__main.webp"},"apple-macbook-air-13-m4":{"main":"images/cut/apple-macbook-air-13-m4__main.webp","midnight":"images/cut/apple-macbook-air-13-m4__midnight.webp","silver":"images/cut/apple-macbook-air-13-m4__silver.webp","sky-blue":"images/cut/apple-macbook-air-13-m4__sky-blue.webp","starlight":"images/cut/apple-macbook-air-13-m4__starlight.webp"},"apple-macbook-air-13-m5":{"main":"images/cut/apple-macbook-air-13-m5__main.webp","midnight":"images/cut/apple-macbook-air-13-m5__midnight.webp","silver":"images/cut/apple-macbook-air-13-m5__silver.webp","sky-blue":"images/cut/apple-macbook-air-13-m5__sky-blue.webp","starlight":"images/cut/apple-macbook-air-13-m5__starlight.webp"},"apple-macbook-air-13-mgn63-m1-2020":{"gold":"images/cut/apple-macbook-air-13-mgn63-m1-2020__gold.webp","main":"images/cut/apple-macbook-air-13-mgn63-m1-2020__main.webp","silver":"images/cut/apple-macbook-air-13-mgn63-m1-2020__silver.webp","space-gray":"images/cut/apple-macbook-air-13-mgn63-m1-2020__space-gray.webp"},"apple-macbook-neo-13":{"blush":"images/cut/apple-macbook-neo-13__blush.webp","citrus":"images/cut/apple-macbook-neo-13__citrus.webp","indigo":"images/cut/apple-macbook-neo-13__indigo.webp","main":"images/cut/apple-macbook-neo-13__main.webp","silver":"images/cut/apple-macbook-neo-13__silver.webp"},"apple-macbook-pro-14-2023-mtl73":{"gray":"images/cut/apple-macbook-pro-14-2023-mtl73__gray.webp","main":"images/cut/apple-macbook-pro-14-2023-mtl73__main.webp"},"apple-macbook-pro-14-m3":{"main":"images/cut/apple-macbook-pro-14-m3__main.webp"},"apple-macbook-pro-14-m4-max":{"black":"images/cut/apple-macbook-pro-14-m4-max__black.webp","main":"images/cut/apple-macbook-pro-14-m4-max__main.webp"},"apple-macbook-pro-14-m4-pro":{"main":"images/cut/apple-macbook-pro-14-m4-pro__main.webp","silver":"images/cut/apple-macbook-pro-14-m4-pro__silver.webp"},"apple-macbook-pro-14-m4":{"black":"images/cut/apple-macbook-pro-14-m4__black.webp","main":"images/cut/apple-macbook-pro-14-m4__main.webp"},"apple-macbook-pro-14-m5-max":{"main":"images/cut/apple-macbook-pro-14-m5-max__main.webp","silver":"images/cut/apple-macbook-pro-14-m5-max__silver.webp","space-black":"images/cut/apple-macbook-pro-14-m5-max__space-black.webp"},"apple-macbook-pro-14-m5-pro":{"main":"images/cut/apple-macbook-pro-14-m5-pro__main.webp","silver":"images/cut/apple-macbook-pro-14-m5-pro__silver.webp","space-black":"images/cut/apple-macbook-pro-14-m5-pro__space-black.webp"},"apple-macbook-pro-14-m5":{"main":"images/cut/apple-macbook-pro-14-m5__main.webp","silver":"images/cut/apple-macbook-pro-14-m5__silver.webp","space-black":"images/cut/apple-macbook-pro-14-m5__space-black.webp"},"apple-macbook-pro-14-mrx33-2023":{"main":"images/cut/apple-macbook-pro-14-mrx33-2023__main.webp"},"apple-macbook-pro-16-m3-pro":{"main":"images/cut/apple-macbook-pro-16-m3-pro__main.webp"},"apple-macbook-pro-16-mrw23":{"black":"images/cut/apple-macbook-pro-16-mrw23__black.webp","main":"images/cut/apple-macbook-pro-16-mrw23__main.webp"},"apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4":{"main":"images/cut/apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4__main.webp"},"apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4":{"main":"images/cut/apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4__main.webp"},"apple-tws-bluetooth-headsets-3rd-generation":{"main":"images/cut/apple-tws-bluetooth-headsets-3rd-generation__main.webp"},"apple-ultra-2":{"main":"images/cut/apple-ultra-2__main.webp"},"apple-watch-se-2":{"main":"images/cut/apple-watch-se-2__main.webp"},"apple-watch-se-3":{"main":"images/cut/apple-watch-se-3__main.webp","midnight":"images/cut/apple-watch-se-3__midnight.webp","starlight":"images/cut/apple-watch-se-3__starlight.webp"},"apple-watch-series-10":{"jet-black":"images/cut/apple-watch-series-10__jet-black.webp","main":"images/cut/apple-watch-series-10__main.webp","rose-gold":"images/cut/apple-watch-series-10__rose-gold.webp","silver":"images/cut/apple-watch-series-10__silver.webp"},"apple-watch-series-11":{"jet-black":"images/cut/apple-watch-series-11__jet-black.webp","main":"images/cut/apple-watch-series-11__main.webp","rose-gold":"images/cut/apple-watch-series-11__rose-gold.webp","silver":"images/cut/apple-watch-series-11__silver.webp","space-gray":"images/cut/apple-watch-series-11__space-gray.webp"},"apple-watch-series-12-gps-42mm":{"main":"images/cut/apple-watch-series-12-gps-42mm__main.webp"},"apple-watch-ultra-3":{"black-titanium":"images/cut/apple-watch-ultra-3__black-titanium.webp","main":"images/cut/apple-watch-ultra-3__main.webp","natural-titanium":"images/cut/apple-watch-ultra-3__natural-titanium.webp"},"apple-watch-ultra-4-gps-plus-cellular-plus-band":{"main":"images/cut/apple-watch-ultra-4-gps-plus-cellular-plus-band__main.webp"},"asus-14-fhd-x1404va-i5-1334u":{"main":"images/cut/asus-14-fhd-x1404va-i5-1334u__main.webp"},"asus-15-6-hd-intel-n4500-e510k":{"main":"images/cut/asus-15-6-hd-intel-n4500-e510k__main.webp"},"asus-22-vp228de":{"main":"images/cut/asus-22-vp228de__main.webp"},"asus-22-vt229h-touch":{"main":"images/cut/asus-22-vt229h-touch__main.webp"},"asus-24-vz239he-w":{"main":"images/cut/asus-24-vz239he-w__main.webp"},"asus-27-va279hae":{"main":"images/cut/asus-27-va279hae__main.webp"},"asus-32-cg32uq":{"main":"images/cut/asus-32-cg32uq__main.webp"},"asus-32-vg32vq1br":{"main":"images/cut/asus-32-vg32vq1br__main.webp"},"asus-b3405cca-ly0189":{"main":"images/cut/asus-b3405cca-ly0189__main.webp"},"asus-b3405cca-ly0191":{"main":"images/cut/asus-b3405cca-ly0191__main.webp"},"asus-b3605cca-mb0080":{"main":"images/cut/asus-b3605cca-mb0080__main.webp"},"asus-chromebook-cx1700cka-ws44f-m":{"main":"images/cut/asus-chromebook-cx1700cka-ws44f-m__main.webp"},"asus-dual-rtx-4060-8gb":{"main":"images/cut/asus-dual-rtx-4060-8gb__main.webp"},"asus-dual-rtx-4060-ti-8gb":{"main":"images/cut/asus-dual-rtx-4060-ti-8gb__main.webp"},"asus-e1504g-90nb0zt2-m011a0":{"main":"images/cut/asus-e1504g-90nb0zt2-m011a0__main.webp"},"asus-expert-book-b5-b5405cva":{"main":"images/cut/asus-expert-book-b5-b5405cva__main.webp"},"asus-expertbook-b5-b5405cca":{"main":"images/cut/asus-expertbook-b5-b5405cca__main.webp"},"asus-expertbook-p1-p1503cva-misty":{"main":"images/cut/asus-expertbook-p1-p1503cva-misty__main.webp"},"asus-fa506n":{"main":"images/cut/asus-fa506n__main.webp"},"asus-fa507":{"main":"images/cut/asus-fa507__main.webp"},"asus-fa707":{"main":"images/cut/asus-fa707__main.webp"},"asus-fx607v":{"main":"images/cut/asus-fx607v__main.webp"},"asus-gaming-25-vg258qr":{"main":"images/cut/asus-gaming-25-vg258qr__main.webp"},"asus-k3605v":{"main":"images/cut/asus-k3605v__main.webp"},"asus-l410ma-tb02-n4020-90nb0q15-m32880-star":{"main":"images/cut/asus-l410ma-tb02-n4020-90nb0q15-m32880-star__main.webp"},"asus-l510mads04":{"main":"images/cut/asus-l510mads04__main.webp"},"asus-p5405csa":{"main":"images/cut/asus-p5405csa__main.webp"},"asus-proart-display-32-pa329cv":{"main":"images/cut/asus-proart-display-32-pa329cv__main.webp"},"asus-proart-rtx-4060-8gb":{"main":"images/cut/asus-proart-rtx-4060-8gb__main.webp"},"asus-proart-studio-24-pa248cnv":{"main":"images/cut/asus-proart-studio-24-pa248cnv__main.webp"},"asus-rog-ally-7":{"main":"images/cut/asus-rog-ally-7__main.webp"},"asus-rog-ally-x":{"main":"images/cut/asus-rog-ally-x__main.webp"},"asus-rog-delta-s":{"main":"images/cut/asus-rog-delta-s__main.webp"},"asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94":{"main":"images/cut/asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94__main.webp"},"asus-rog-strix-g16-g615lm-ds96":{"main":"images/cut/asus-rog-strix-g16-g615lm-ds96__main.webp"},"asus-rog-strix-g16":{"eclipse-gray":"images/cut/asus-rog-strix-g16__eclipse-gray.webp","main":"images/cut/asus-rog-strix-g16__main.webp"},"asus-rog-strix-g18-g814ph-es94":{"main":"images/cut/asus-rog-strix-g18-g814ph-es94__main.webp"},"asus-rog-strix-g18-g815jmr-ss74":{"main":"images/cut/asus-rog-strix-g18-g815jmr-ss74__main.webp"},"asus-rog-strix-g18-g815lr-is97":{"main":"images/cut/asus-rog-strix-g18-g815lr-is97__main.webp"},"asus-rog-strix-g614fh-os94":{"main":"images/cut/asus-rog-strix-g614fh-os94__main.webp"},"asus-rog-strix-g614jvr-es94":{"main":"images/cut/asus-rog-strix-g614jvr-es94__main.webp"},"asus-rog-strix-g615lr-ms97":{"main":"images/cut/asus-rog-strix-g615lr-ms97__main.webp"},"asus-rog-strix-g815lm-is96-rtx5060":{"main":"images/cut/asus-rog-strix-g815lm-is96-rtx5060__main.webp"},"asus-rog-strix-g815lp-is96-rtx5070":{"main":"images/cut/asus-rog-strix-g815lp-is96-rtx5070__main.webp"},"asus-rog-strix-go-2-4":{"main":"images/cut/asus-rog-strix-go-2-4__main.webp"},"asus-rog-strix-go-core":{"main":"images/cut/asus-rog-strix-go-core__main.webp"},"asus-rog-strix-scare-16-g635lx-ds96":{"main":"images/cut/asus-rog-strix-scare-16-g635lx-ds96__main.webp"},"asus-rog-zephyrus-gu605cp-g16":{"main":"images/cut/asus-rog-zephyrus-gu605cp-g16__main.webp"},"asus-tuf-16-i7-14650hx-rtx5050-90nr0na1-m003c0":{"main":"images/cut/asus-tuf-16-i7-14650hx-rtx5050-90nr0na1-m003c0__main.webp"},"asus-tuf-a16-fa607nuq-ws73":{"main":"images/cut/asus-tuf-a16-fa607nuq-ws73__main.webp"},"asus-tuf-a18-fa808um-is74":{"main":"images/cut/asus-tuf-a18-fa808um-is74__main.webp"},"asus-tuf-fa506ncg-hn198":{"main":"images/cut/asus-tuf-fa506ncg-hn198__main.webp"},"asus-tuf-fa506ncg-hn211":{"main":"images/cut/asus-tuf-fa506ncg-hn211__main.webp"},"asus-tuf-fa506nfr-hn129":{"main":"images/cut/asus-tuf-fa506nfr-hn129__main.webp"},"asus-tuf-fa507nv-eh53":{"main":"images/cut/asus-tuf-fa507nv-eh53__main.webp"},"asus-tuf-fa707nug-hx154":{"main":"images/cut/asus-tuf-fa707nug-hx154__main.webp"},"asus-tuf-fx607vu-ds73":{"main":"images/cut/asus-tuf-fx607vu-ds73__main.webp"},"asus-tuf-fx607vu-rl089":{"main":"images/cut/asus-tuf-fx607vu-rl089__main.webp"},"asus-tuf-fx608jpr-wh74":{"main":"images/cut/asus-tuf-fx608jpr-wh74__main.webp"},"asus-tuf-gaming-24-vg248q1b":{"main":"images/cut/asus-tuf-gaming-24-vg248q1b__main.webp"},"asus-tuf-gaming-27-vg279q1a":{"main":"images/cut/asus-tuf-gaming-27-vg279q1a__main.webp"},"asus-tuf-gaming-27-vg279ql1a":{"main":"images/cut/asus-tuf-gaming-27-vg279ql1a__main.webp"},"asus-tuf-gaming-34-vg34vqel1a":{"main":"images/cut/asus-tuf-gaming-34-vg34vqel1a__main.webp"},"asus-tuf-gaming-a16-fa608p":{"main":"images/cut/asus-tuf-gaming-a16-fa608p__main.webp"},"asus-tuf-gaming-fx707zc4-hx076":{"main":"images/cut/asus-tuf-gaming-fx707zc4-hx076__main.webp"},"asus-tuf-gaming-h1":{"main":"images/cut/asus-tuf-gaming-h1__main.webp"},"asus-tuf-gaming-h3-gun-metal":{"main":"images/cut/asus-tuf-gaming-h3-gun-metal__main.webp"},"asus-tuf-gaming-h7-core-gun-metal":{"main":"images/cut/asus-tuf-gaming-h7-core-gun-metal__main.webp"},"asus-tuf-h3-wireless":{"main":"images/cut/asus-tuf-h3-wireless__main.webp"},"asus-va249hg":{"main":"images/cut/asus-va249hg__main.webp"},"asus-va27dqsb-w":{"main":"images/cut/asus-va27dqsb-w__main.webp"},"asus-vg245q":{"main":"images/cut/asus-vg245q__main.webp"},"asus-vg249q3a-90lm09b0-b01170":{"main":"images/cut/asus-vg249q3a-90lm09b0-b01170__main.webp"},"asus-vg279q3a-90lm0990-b01170":{"main":"images/cut/asus-vg279q3a-90lm0990-b01170__main.webp"},"asus-vg32aqa1a-90lm07l0-b02370":{"main":"images/cut/asus-vg32aqa1a-90lm07l0-b02370__main.webp"},"asus-vivobook-15-6-core-5-120u-90nb13y1-m01px0":{"main":"images/cut/asus-vivobook-15-6-core-5-120u-90nb13y1-m01px0__main.webp"},"asus-vivobook-15-6-touch-core-7-150u-w11-f1504vap-ih79t":{"main":"images/cut/asus-vivobook-15-6-touch-core-7-150u-w11-f1504vap-ih79t__main.webp"},"asus-vivobook-15-core-3-100u-x1504vap-c38128-w11":{"main":"images/cut/asus-vivobook-15-core-3-100u-x1504vap-c38128-w11__main.webp"},"asus-vivobook-15-f1504vap-bs54t":{"main":"images/cut/asus-vivobook-15-f1504vap-bs54t__main.webp"},"asus-vivobook-15-m1502n":{"main":"images/cut/asus-vivobook-15-m1502n__main.webp"},"asus-vivobook-15-x1504va":{"main":"images/cut/asus-vivobook-15-x1504va__main.webp"},"asus-vivobook-15-x1505va-oled":{"main":"images/cut/asus-vivobook-15-x1505va-oled__main.webp","silver":"images/cut/asus-vivobook-15-x1505va-oled__silver.webp"},"asus-vivobook-15x-m1503-oled":{"main":"images/cut/asus-vivobook-15x-m1503-oled__main.webp"},"asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11":{"main":"images/cut/asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11__main.webp"},"asus-vivobook-16-f1605va-ws96":{"main":"images/cut/asus-vivobook-16-f1605va-ws96__main.webp"},"asus-vivobook-16-flip-tp3607sa-is77t":{"main":"images/cut/asus-vivobook-16-flip-tp3607sa-is77t__main.webp"},"asus-vivobook-16-i7-1355-win11-f1605va-ws74":{"main":"images/cut/asus-vivobook-16-i7-1355-win11-f1605va-ws74__main.webp"},"asus-vivobook-16-i7-1355u-f1605va-ws74-w11":{"main":"images/cut/asus-vivobook-16-i7-1355u-f1605va-ws74-w11__main.webp"},"asus-vivobook-16-ultra7-oled":{"main":"images/cut/asus-vivobook-16-ultra7-oled__main.webp","matte-gray":"images/cut/asus-vivobook-16-ultra7-oled__matte-gray.webp"},"asus-vivobook-16":{"main":"images/cut/asus-vivobook-16__main.webp"},"asus-vivobook-17-3-core-5-120u-90nb13x2-m00j00":{"main":"images/cut/asus-vivobook-17-3-core-5-120u-90nb13x2-m00j00__main.webp"},"asus-vivobook-17-x1704vap":{"main":"images/cut/asus-vivobook-17-x1704vap__main.webp"},"asus-vivobook-e1404fa-th31":{"main":"images/cut/asus-vivobook-e1404fa-th31__main.webp"},"asus-vivobook-e1404ga-nk006w":{"main":"images/cut/asus-vivobook-e1404ga-nk006w__main.webp"},"asus-vivobook-e1404ga-nk053w":{"main":"images/cut/asus-vivobook-e1404ga-nk053w__main.webp"},"asus-vivobook-e410ka-cl4128":{"main":"images/cut/asus-vivobook-e410ka-cl4128__main.webp"},"asus-vivobook-e410ka-cl464":{"main":"images/cut/asus-vivobook-e410ka-cl464__main.webp"},"asus-vivobook-e410ma-bv2490w":{"main":"images/cut/asus-vivobook-e410ma-bv2490w__main.webp"},"asus-vivobook-e510ka-br859ws":{"main":"images/cut/asus-vivobook-e510ka-br859ws__main.webp"},"asus-vivobook-flip-14-tp3407sa-ds74t":{"main":"images/cut/asus-vivobook-flip-14-tp3407sa-ds74t__main.webp"},"asus-vivobook-flip-tp3604va-ws51t":{"main":"images/cut/asus-vivobook-flip-tp3604va-ws51t__main.webp"},"asus-vivobook-go-15-e1504fa-bq2909":{"main":"images/cut/asus-vivobook-go-15-e1504fa-bq2909__main.webp"},"asus-vivobook-go-15-e1504fa-oled":{"main":"images/cut/asus-vivobook-go-15-e1504fa-oled__main.webp"},"asus-vivobook-go15-e1504ga-ws35":{"main":"images/cut/asus-vivobook-go15-e1504ga-ws35__main.webp"},"asus-vivobook-k3500p-oled":{"main":"images/cut/asus-vivobook-k3500p-oled__main.webp"},"asus-vivobook-k5504-vn-ds96":{"main":"images/cut/asus-vivobook-k5504-vn-ds96__main.webp"},"asus-vivobook-m1503-qa-l1223-oled":{"main":"images/cut/asus-vivobook-m1503-qa-l1223-oled__main.webp"},"asus-vivobook-m1603qa-r7-12512":{"main":"images/cut/asus-vivobook-m1603qa-r7-12512__main.webp"},"asus-vivobook-m1605ya-mb345":{"main":"images/cut/asus-vivobook-m1605ya-mb345__main.webp"},"asus-vivobook-pro-15-q533mj-u73050-oled":{"main":"images/cut/asus-vivobook-pro-15-q533mj-u73050-oled__main.webp"},"asus-vivobook-pro-15-q543mj-u93050-oled":{"main":"images/cut/asus-vivobook-pro-15-q543mj-u93050-oled__main.webp"},"asus-vivobook-pro-16-k6602vv-oled":{"black":"images/cut/asus-vivobook-pro-16-k6602vv-oled__black.webp","main":"images/cut/asus-vivobook-pro-16-k6602vv-oled__main.webp"},"asus-vivobook-s-14-core-5-210h-90nb1682-m00720":{"main":"images/cut/asus-vivobook-s-14-core-5-210h-90nb1682-m00720__main.webp"},"asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl":{"main":"images/cut/asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl__main.webp"},"asus-vivobook-s-16-core-5-210h-90nb1672-m009k0":{"main":"images/cut/asus-vivobook-s-16-core-5-210h-90nb1672-m009k0__main.webp"},"asus-vivobook-s14-s3407v":{"main":"images/cut/asus-vivobook-s14-s3407v__main.webp"},"asus-vivobook-s15-m3502qa-oled":{"main":"images/cut/asus-vivobook-s15-m3502qa-oled__main.webp"},"asus-vivobook-s16-s3607v":{"main":"images/cut/asus-vivobook-s16-s3607v__main.webp"},"asus-vivobook-s16-s5606ma-ds96-oled":{"main":"images/cut/asus-vivobook-s16-s5606ma-ds96-oled__main.webp"},"asus-vivobook-x1404va-i38128":{"main":"images/cut/asus-vivobook-x1404va-i38128__main.webp"},"asus-vivobook-x1404vap-v14":{"main":"images/cut/asus-vivobook-x1404vap-v14__main.webp"},"asus-vivobook-x1404za-i38128":{"main":"images/cut/asus-vivobook-x1404za-i38128__main.webp"},"asus-vivobook-x1502za-bq2270":{"main":"images/cut/asus-vivobook-x1502za-bq2270__main.webp"},"asus-vivobook-x1504va-nj061":{"main":"images/cut/asus-vivobook-x1504va-nj061__main.webp"},"asus-vivobook-x1504va-nj2920":{"main":"images/cut/asus-vivobook-x1504va-nj2920__main.webp"},"asus-vivobook-x1504va-nj3952":{"main":"images/cut/asus-vivobook-x1504va-nj3952__main.webp"},"asus-vivobook-x1504va-nj436":{"main":"images/cut/asus-vivobook-x1504va-nj436__main.webp"},"asus-vivobook-x1504va-nj451":{"main":"images/cut/asus-vivobook-x1504va-nj451__main.webp"},"asus-vivobook-x1504za-u672":{"main":"images/cut/asus-vivobook-x1504za-u672__main.webp"},"asus-vivobook-x1505za-ma477-oled":{"main":"images/cut/asus-vivobook-x1505za-ma477-oled__main.webp"},"asus-vp247hae":{"main":"images/cut/asus-vp247hae__main.webp"},"asus-vu279hfi-w":{"main":"images/cut/asus-vu279hfi-w__main.webp"},"asus-vy249hf-w":{"main":"images/cut/asus-vy249hf-w__main.webp"},"asus-vy279hf-w-90lm06d2-b02170":{"main":"images/cut/asus-vy279hf-w-90lm06d2-b02170__main.webp"},"asus-vz24ehf-w":{"main":"images/cut/asus-vz24ehf-w__main.webp"},"asus-vz27ehf-90lm07b0-b01470":{"main":"images/cut/asus-vz27ehf-90lm07b0-b01470__main.webp"},"asus-zenbook-14-um3402ya-oled":{"gray":"images/cut/asus-zenbook-14-um3402ya-oled__gray.webp","main":"images/cut/asus-zenbook-14-um3402ya-oled__main.webp"},"asus-zenbook-14-um3405ga-zb-70":{"main":"images/cut/asus-zenbook-14-um3405ga-zb-70__main.webp"},"asus-zenbook-14-um3406g-ws79t":{"main":"images/cut/asus-zenbook-14-um3406g-ws79t__main.webp"},"asus-zenbook-14-ux3405ca-oled":{"jasper-gray":"images/cut/asus-zenbook-14-ux3405ca-oled__jasper-gray.webp","main":"images/cut/asus-zenbook-14-ux3405ca-oled__main.webp"},"asus-zenbook-16-oled-ryzen-ai-7-445-w11h-90nb17h2-m006f0":{"main":"images/cut/asus-zenbook-16-oled-ryzen-ai-7-445-w11h-90nb17h2-m006f0__main.webp"},"asus-zenbook-duo-14-5-touch-ultra-9-285h-w11-ux8406ca-is99t":{"main":"images/cut/asus-zenbook-duo-14-5-touch-ultra-9-285h-w11-ux8406ca-is99t__main.webp"},"asus-zenbook-flip-ux3407qa-x1p512":{"main":"images/cut/asus-zenbook-flip-ux3407qa-x1p512__main.webp"},"asus-zenbook-q415ma-u5512":{"main":"images/cut/asus-zenbook-q415ma-u5512__main.webp"},"asus-zenscreen-mb16aht-touch-screen":{"main":"images/cut/asus-zenscreen-mb16aht-touch-screen__main.webp"},"asus-zenscreen-mb16ahv-touch-screen":{"main":"images/cut/asus-zenscreen-mb16ahv-touch-screen__main.webp"},"beats-fit-pro":{"black":"images/cut/beats-fit-pro__black.webp","main":"images/cut/beats-fit-pro__main.webp","purple":"images/cut/beats-fit-pro__purple.webp"},"beats-flex-all-day":{"black":"images/cut/beats-flex-all-day__black.webp","main":"images/cut/beats-flex-all-day__main.webp"},"beats-pill":{"black":"images/cut/beats-pill__black.webp","dark-gray":"images/cut/beats-pill__dark-gray.webp","gold":"images/cut/beats-pill__gold.webp","light-gray":"images/cut/beats-pill__light-gray.webp","red":"images/cut/beats-pill__red.webp"},"beats-powerbeats-fit":{"gravel-gray":"images/cut/beats-powerbeats-fit__gravel-gray.webp","jet-black":"images/cut/beats-powerbeats-fit__jet-black.webp","main":"images/cut/beats-powerbeats-fit__main.webp","power-pink":"images/cut/beats-powerbeats-fit__power-pink.webp","spark-orange":"images/cut/beats-powerbeats-fit__spark-orange.webp"},"beats-powerbeats-pro":{"black":"images/cut/beats-powerbeats-pro__black.webp"},"beats-solo-3":{"black":"images/cut/beats-solo-3__black.webp","gold":"images/cut/beats-solo-3__gold.webp","red":"images/cut/beats-solo-3__red.webp"},"beats-solo-true-wireless":{"black":"images/cut/beats-solo-true-wireless__black.webp","gray":"images/cut/beats-solo-true-wireless__gray.webp","main":"images/cut/beats-solo-true-wireless__main.webp","purple":"images/cut/beats-solo-true-wireless__purple.webp","red":"images/cut/beats-solo-true-wireless__red.webp"},"beats-solo4-onear":{"black":"images/cut/beats-solo4-onear__black.webp","main":"images/cut/beats-solo4-onear__main.webp","pink":"images/cut/beats-solo4-onear__pink.webp"},"beats-studio-buds-plus":{"black-gold":"images/cut/beats-studio-buds-plus__black-gold.webp","ivory":"images/cut/beats-studio-buds-plus__ivory.webp","main":"images/cut/beats-studio-buds-plus__main.webp","transparent":"images/cut/beats-studio-buds-plus__transparent.webp"},"beats-studio-pro-wireless":{"main":"images/cut/beats-studio-pro-wireless__main.webp","navy":"images/cut/beats-studio-pro-wireless__navy.webp","sandstone":"images/cut/beats-studio-pro-wireless__sandstone.webp"},"beats-studio3-wireless":{"red":"images/cut/beats-studio3-wireless__red.webp"},"beats-studio":{"blue":"images/cut/beats-studio__blue.webp","main":"images/cut/beats-studio__main.webp"},"benq-el2870u":{"main":"images/cut/benq-el2870u__main.webp"},"bo-beoplay-ex":{"anthracite-oxygen":"images/cut/bo-beoplay-ex__anthracite-oxygen.webp","black-anthracite":"images/cut/bo-beoplay-ex__black-anthracite.webp","main":"images/cut/bo-beoplay-ex__main.webp"},"bo-beoplay-h95":{"black":"images/cut/bo-beoplay-h95__black.webp","chestnut":"images/cut/bo-beoplay-h95__chestnut.webp","gold-tone":"images/cut/bo-beoplay-h95__gold-tone.webp","main":"images/cut/bo-beoplay-h95__main.webp","navy":"images/cut/bo-beoplay-h95__navy.webp"},"bo-beoplay-hx":{"black-anthracite":"images/cut/bo-beoplay-hx__black-anthracite.webp","main":"images/cut/bo-beoplay-hx__main.webp","timber":"images/cut/bo-beoplay-hx__timber.webp"},"bo-beosound-a1-2":{"anthracite-oxygen":"images/cut/bo-beosound-a1-2__anthracite-oxygen.webp","black-anthracite":"images/cut/bo-beosound-a1-2__black-anthracite.webp","gold-tone":"images/cut/bo-beosound-a1-2__gold-tone.webp","gray-mist":"images/cut/bo-beosound-a1-2__gray-mist.webp","green":"images/cut/bo-beosound-a1-2__green.webp","main":"images/cut/bo-beosound-a1-2__main.webp","pink":"images/cut/bo-beosound-a1-2__pink.webp"},"bo-beosound-a5":{"main":"images/cut/bo-beosound-a5__main.webp","nordic-weave":"images/cut/bo-beosound-a5__nordic-weave.webp"},"bo-beosound-balance":{"main":"images/cut/bo-beosound-balance__main.webp"},"bo-beosound-edge":{"main":"images/cut/bo-beosound-edge__main.webp","natural":"images/cut/bo-beosound-edge__natural.webp"},"bo-beosound-explore":{"chestnut":"images/cut/bo-beosound-explore__chestnut.webp","gray-mist":"images/cut/bo-beosound-explore__gray-mist.webp","green":"images/cut/bo-beosound-explore__green.webp","main":"images/cut/bo-beosound-explore__main.webp","navy":"images/cut/bo-beosound-explore__navy.webp"},"bo-beosound-level":{"main":"images/cut/bo-beosound-level__main.webp","natural":"images/cut/bo-beosound-level__natural.webp"},"bose-home-speaker-500":{"black":"images/cut/bose-home-speaker-500__black.webp"},"bose-noise-cancelling-700":{"black":"images/cut/bose-noise-cancelling-700__black.webp","white":"images/cut/bose-noise-cancelling-700__white.webp"},"bose-quietcomfort-45-acoustic":{"main":"images/cut/bose-quietcomfort-45-acoustic__main.webp"},"bose-quietcomfort-earbuds-ii":{"soapstone":"images/cut/bose-quietcomfort-earbuds-ii__soapstone.webp"},"bose-quietcomfort-earbuds":{"black":"images/cut/bose-quietcomfort-earbuds__black.webp","lilac":"images/cut/bose-quietcomfort-earbuds__lilac.webp","white":"images/cut/bose-quietcomfort-earbuds__white.webp"},"bose-quietcomfort-ii":{"main":"images/cut/bose-quietcomfort-ii__main.webp"},"bose-quietcomfort-se-wireless":{"black":"images/cut/bose-quietcomfort-se-wireless__black.webp"},"bose-quietcomfort-ultra-earbuds":{"black":"images/cut/bose-quietcomfort-ultra-earbuds__black.webp","moonstone":"images/cut/bose-quietcomfort-ultra-earbuds__moonstone.webp","white":"images/cut/bose-quietcomfort-ultra-earbuds__white.webp"},"bose-quietcomfort-ultra-headphones-2nd-gen":{"black":"images/cut/bose-quietcomfort-ultra-headphones-2nd-gen__black.webp","gold":"images/cut/bose-quietcomfort-ultra-headphones-2nd-gen__gold.webp","main":"images/cut/bose-quietcomfort-ultra-headphones-2nd-gen__main.webp","violet":"images/cut/bose-quietcomfort-ultra-headphones-2nd-gen__violet.webp","white":"images/cut/bose-quietcomfort-ultra-headphones-2nd-gen__white.webp"},"bose-quietcomfort-ultra":{"black":"images/cut/bose-quietcomfort-ultra__black.webp","blue":"images/cut/bose-quietcomfort-ultra__blue.webp","deep-plum":"images/cut/bose-quietcomfort-ultra__deep-plum.webp","diamond":"images/cut/bose-quietcomfort-ultra__diamond.webp","main":"images/cut/bose-quietcomfort-ultra__main.webp","white-smoke":"images/cut/bose-quietcomfort-ultra__white-smoke.webp"},"bose-quietcomfort":{"black":"images/cut/bose-quietcomfort__black.webp","white":"images/cut/bose-quietcomfort__white.webp"},"bose-soundlink-flex":{"black":"images/cut/bose-soundlink-flex__black.webp","main":"images/cut/bose-soundlink-flex__main.webp","white":"images/cut/bose-soundlink-flex__white.webp"},"bose-soundlink-max":{"black":"images/cut/bose-soundlink-max__black.webp","blue":"images/cut/bose-soundlink-max__blue.webp"},"bose-soundlink-mini-ii":{"main":"images/cut/bose-soundlink-mini-ii__main.webp"},"bose-soundlink-revolve-ii":{"black":"images/cut/bose-soundlink-revolve-ii__black.webp","main":"images/cut/bose-soundlink-revolve-ii__main.webp","silver":"images/cut/bose-soundlink-revolve-ii__silver.webp"},"bose-soundlink-revolve":{"main":"images/cut/bose-soundlink-revolve__main.webp"},"bose-soundsport-free":{"main":"images/cut/bose-soundsport-free__main.webp"},"bose-soundtouch-10":{"main":"images/cut/bose-soundtouch-10__main.webp"},"bose-sport":{"black":"images/cut/bose-sport__black.webp","blue":"images/cut/bose-sport__blue.webp","main":"images/cut/bose-sport__main.webp"},"dahua-dhi-lm24-a200y":{"main":"images/cut/dahua-dhi-lm24-a200y__main.webp"},"dahua-dhi-lm24-a221y":{"main":"images/cut/dahua-dhi-lm24-a221y__main.webp"},"dahua-dhi-lm27-a200f":{"main":"images/cut/dahua-dhi-lm27-a200f__main.webp"},"dell-14-plus-2in1-db04250":{"main":"images/cut/dell-14-plus-2in1-db04250__main.webp"},"dell-14-plus-2in1-db04255":{"main":"images/cut/dell-14-plus-2in1-db04255__main.webp"},"dell-14-premium-da14250":{"main":"images/cut/dell-14-premium-da14250__main.webp"},"dell-15-5250":{"main":"images/cut/dell-15-5250__main.webp"},"dell-15-6-core-i7-1355u-fhd-touch-display":{"main":"images/cut/dell-15-6-core-i7-1355u-fhd-touch-display__main.webp"},"dell-15-dc15250-i5-16gb":{"main":"images/cut/dell-15-dc15250-i5-16gb__main.webp"},"dell-15-dc15250-i7-512gb":{"main":"images/cut/dell-15-dc15250-i7-512gb__main.webp"},"dell-15-dc15250":{"main":"images/cut/dell-15-dc15250__main.webp"},"dell-15-ldc15250-7427blk-pus-touch-w11":{"main":"images/cut/dell-15-ldc15250-7427blk-pus-touch-w11__main.webp"},"dell-16-dc16250":{"main":"images/cut/dell-16-dc16250__main.webp"},"dell-16-dc16251":{"main":"images/cut/dell-16-dc16251__main.webp"},"dell-16-plus-2-in-1-db06250":{"main":"images/cut/dell-16-plus-2-in-1-db06250__main.webp"},"dell-27-e2723h":{"main":"images/cut/dell-27-e2723h__main.webp"},"dell-alienware-15-da15265":{"main":"images/cut/dell-alienware-15-da15265__main.webp"},"dell-alienware-16-aurora-ac16250-16gb-rtx-5050":{"main":"images/cut/dell-alienware-16-aurora-ac16250-16gb-rtx-5050__main.webp"},"dell-alienware-16-aurora-ac16250-16gb-rtx-5060":{"main":"images/cut/dell-alienware-16-aurora-ac16250-16gb-rtx-5060__main.webp"},"dell-alienware-16x-aurora-ac16251-rtx-5060":{"main":"images/cut/dell-alienware-16x-aurora-ac16251-rtx-5060__main.webp"},"dell-alienware-18-area-51-32gb-rtx-5080":{"main":"images/cut/dell-alienware-18-area-51-32gb-rtx-5080__main.webp"},"dell-alienware-da15260":{"main":"images/cut/dell-alienware-da15260__main.webp"},"dell-alienware-x16-r2":{"main":"images/cut/dell-alienware-x16-r2__main.webp"},"dell-g15-5520":{"main":"images/cut/dell-g15-5520__main.webp"},"dell-g5-15-5535":{"main":"images/cut/dell-g5-15-5535__main.webp"},"dell-inspiron-16-plus-7630":{"main":"images/cut/dell-inspiron-16-plus-7630__main.webp"},"dell-inspiron-16":{"main":"images/cut/dell-inspiron-16__main.webp"},"dell-inspiron-7440-core-5":{"main":"images/cut/dell-inspiron-7440-core-5__main.webp"},"dell-inspiron-7440-core-7":{"main":"images/cut/dell-inspiron-7440-core-7__main.webp"},"dell-inspiron-7440-i5":{"main":"images/cut/dell-inspiron-7440-i5__main.webp"},"dell-inspiron-7445":{"main":"images/cut/dell-inspiron-7445__main.webp"},"dell-led-e2020h":{"main":"images/cut/dell-led-e2020h__main.webp"},"dell-n2y94":{"main":"images/cut/dell-n2y94__main.webp"},"dell-plus-16-db16250":{"main":"images/cut/dell-plus-16-db16250__main.webp"},"dell-plus-2in1-db04250-7137":{"main":"images/cut/dell-plus-2in1-db04250-7137__main.webp"},"dell-plus-2in1-db04250-9168":{"main":"images/cut/dell-plus-2in1-db04250-9168__main.webp"},"dell-pro-14-pc14250":{"main":"images/cut/dell-pro-14-pc14250__main.webp"},"dell-pro-14-plus-2in1-pb14250":{"main":"images/cut/dell-pro-14-plus-2in1-pb14250__main.webp"},"dell-pro-15-essential-pv15250-core3":{"main":"images/cut/dell-pro-15-essential-pv15250-core3__main.webp"},"dell-pro-15-essential-pv15250":{"main":"images/cut/dell-pro-15-essential-pv15250__main.webp"},"dell-pro-e2425hm":{"main":"images/cut/dell-pro-e2425hm__main.webp"},"dell-se2425hm":{"main":"images/cut/dell-se2425hm__main.webp"},"dell-vostro-3520-i3":{"main":"images/cut/dell-vostro-3520-i3__main.webp"},"dell-vostro-3520-i5":{"main":"images/cut/dell-vostro-3520-i5__main.webp"},"dell-vostro-3530-i7":{"main":"images/cut/dell-vostro-3530-i7__main.webp"},"dell-vostro-3910":{"main":"images/cut/dell-vostro-3910__main.webp"},"dell-wyse-5470":{"main":"images/cut/dell-wyse-5470__main.webp"},"dell-xps-13-dx13260":{"main":"images/cut/dell-xps-13-dx13260__main.webp"},"dell-xps-16-9640":{"main":"images/cut/dell-xps-16-9640__main.webp"},"dell-xps-9345-x-elite-32gb-1tb":{"main":"images/cut/dell-xps-9345-x-elite-32gb-1tb__main.webp"},"dell-xps-9345-x-plus":{"main":"images/cut/dell-xps-9345-x-plus__main.webp"},"dell-xps-9350-16gb-ultra-7":{"main":"images/cut/dell-xps-9350-16gb-ultra-7__main.webp"},"dell-xps-9350-ultra-9":{"main":"images/cut/dell-xps-9350-ultra-9__main.webp"},"dell-xps-9440-rtx-4050":{"main":"images/cut/dell-xps-9440-rtx-4050__main.webp"},"dell-xps-9640-rtx-4050":{"main":"images/cut/dell-xps-9640-rtx-4050__main.webp"},"dji-mavic-3-pro":{"main":"images/cut/dji-mavic-3-pro__main.webp"},"dji-mic-2":{"main":"images/cut/dji-mic-2__main.webp"},"dji-mic-3":{"main":"images/cut/dji-mic-3__main.webp"},"dji-mic-mini-2":{"main":"images/cut/dji-mic-mini-2__main.webp"},"dji-mic-mini":{"main":"images/cut/dji-mic-mini__main.webp"},"dji-mic":{"main":"images/cut/dji-mic__main.webp"},"dji-osmo-360":{"main":"images/cut/dji-osmo-360__main.webp"},"dji-osmo-action-6":{"main":"images/cut/dji-osmo-action-6__main.webp"},"dji-osmo-mobile-6":{"main":"images/cut/dji-osmo-mobile-6__main.webp"},"dji-osmo-mobile-7-p":{"main":"images/cut/dji-osmo-mobile-7-p__main.webp"},"dji-osmo-mobile-7":{"main":"images/cut/dji-osmo-mobile-7__main.webp"},"dji-osmo-mobile-8":{"main":"images/cut/dji-osmo-mobile-8__main.webp"},"dji-osmo-pocket-3":{"main":"images/cut/dji-osmo-pocket-3__main.webp"},"dji-osmo-pocket-4":{"main":"images/cut/dji-osmo-pocket-4__main.webp"},"dyson-airstarit-kanzan":{"main":"images/cut/dyson-airstarit-kanzan__main.webp"},"dyson-airwrap-hs09":{"amber-silk":"images/cut/dyson-airwrap-hs09__amber-silk.webp","main":"images/cut/dyson-airwrap-hs09__main.webp","nickel-copper":"images/cut/dyson-airwrap-hs09__nickel-copper.webp"},"dyson-er-hd07":{"iron-fuchsia":"images/cut/dyson-er-hd07__iron-fuchsia.webp","main":"images/cut/dyson-er-hd07__main.webp"},"dyson-er-hd15":{"black":"images/cut/dyson-er-hd15__black.webp","main":"images/cut/dyson-er-hd15__main.webp","nickel":"images/cut/dyson-er-hd15__nickel.webp"},"dyson-gen5-detect":{"main":"images/cut/dyson-gen5-detect__main.webp"},"dyson-hd18-vinca-blue-topaz":{"main":"images/cut/dyson-hd18-vinca-blue-topaz__main.webp"},"dyson-hs08-i-d":{"main":"images/cut/dyson-hs08-i-d__main.webp"},"dyson-ht01-airstrait-straightener-plum":{"ceramic-pink":"images/cut/dyson-ht01-airstrait-straightener-plum__ceramic-pink.webp","ceramic":"images/cut/dyson-ht01-airstrait-straightener-plum__ceramic.webp","jasper-plum":"images/cut/dyson-ht01-airstrait-straightener-plum__jasper-plum.webp","main":"images/cut/dyson-ht01-airstrait-straightener-plum__main.webp","prussian-blue":"images/cut/dyson-ht01-airstrait-straightener-plum__prussian-blue.webp","red-velvet":"images/cut/dyson-ht01-airstrait-straightener-plum__red-velvet.webp","strawberry":"images/cut/dyson-ht01-airstrait-straightener-plum__strawberry.webp"},"dyson-multi-complete-long-hs05":{"blue-copper":"images/cut/dyson-multi-complete-long-hs05__blue-copper.webp","blue":"images/cut/dyson-multi-complete-long-hs05__blue.webp","fuchsia":"images/cut/dyson-multi-complete-long-hs05__fuchsia.webp","gold":"images/cut/dyson-multi-complete-long-hs05__gold.webp","main":"images/cut/dyson-multi-complete-long-hs05__main.webp","strawberry":"images/cut/dyson-multi-complete-long-hs05__strawberry.webp"},"dyson-nural-er":{"main":"images/cut/dyson-nural-er__main.webp"},"dyson-nural-hd16-strawberry":{"ceramic":"images/cut/dyson-nural-hd16-strawberry__ceramic.webp","main":"images/cut/dyson-nural-hd16-strawberry__main.webp","strawberry":"images/cut/dyson-nural-hd16-strawberry__strawberry.webp"},"dyson-origin-hs05":{"main":"images/cut/dyson-origin-hs05__main.webp"},"dyson-r-dh17":{"main":"images/cut/dyson-r-dh17__main.webp"},"dyson-v12-detect-slim-cordless-vacuum-cleaner":{"main":"images/cut/dyson-v12-detect-slim-cordless-vacuum-cleaner__main.webp"},"dyson-zone":{"main":"images/cut/dyson-zone__main.webp"},"flyingvoice-sr3000-5g":{"main":"images/cut/flyingvoice-sr3000-5g__main.webp"},"garmin-cirqa-smart-band-mauve-s-m":{"main":"images/cut/garmin-cirqa-smart-band-mauve-s-m__main.webp"},"garmin-epix-pro-sapphire-edition-51-mm":{"main":"images/cut/garmin-epix-pro-sapphire-edition-51-mm__main.webp"},"garmin-epix-pro-standard-edition-47mm":{"main":"images/cut/garmin-epix-pro-standard-edition-47mm__main.webp"},"garmin-fenix-7-pro-sapphire-solar":{"main":"images/cut/garmin-fenix-7-pro-sapphire-solar__main.webp"},"garmin-fenix-7x-pro-sapphire-solar-edition":{"main":"images/cut/garmin-fenix-7x-pro-sapphire-solar-edition__main.webp"},"garmin-fenix-8-47-mm-amoled-sapphire-carbon":{"main":"images/cut/garmin-fenix-8-47-mm-amoled-sapphire-carbon__main.webp"},"garmin-fenix-8-47-mm-amoled":{"main":"images/cut/garmin-fenix-8-47-mm-amoled__main.webp"},"garmin-fenix-8-pro-47-mm-amoled":{"main":"images/cut/garmin-fenix-8-pro-47-mm-amoled__main.webp"},"garmin-fenix-9-51mm-carbon-dlc-band":{"main":"images/cut/garmin-fenix-9-51mm-carbon-dlc-band__main.webp"},"garmin-fenix-9-pro-47mm-amoled-carbon-dlc":{"main":"images/cut/garmin-fenix-9-pro-47mm-amoled-carbon-dlc__main.webp"},"garmin-forerunner-170-music":{"main":"images/cut/garmin-forerunner-170-music__main.webp"},"garmin-forerunner-170":{"main":"images/cut/garmin-forerunner-170__main.webp"},"garmin-forerunner-570":{"main":"images/cut/garmin-forerunner-570__main.webp"},"garmin-forerunner-70":{"main":"images/cut/garmin-forerunner-70__main.webp"},"garmin-forerunner-965-black-powder":{"main":"images/cut/garmin-forerunner-965-black-powder__main.webp"},"garmin-forerunner-970":{"main":"images/cut/garmin-forerunner-970__main.webp"},"garmin-instinct-2x-solar-tactical-edition":{"main":"images/cut/garmin-instinct-2x-solar-tactical-edition__main.webp"},"garmin-instinct-2x-solar":{"main":"images/cut/garmin-instinct-2x-solar__main.webp"},"garmin-instinct-3-50mm-amoled":{"main":"images/cut/garmin-instinct-3-50mm-amoled__main.webp"},"garmin-instinct-3-50mm-solar":{"main":"images/cut/garmin-instinct-3-50mm-solar__main.webp"},"garmin-venu-3-with-leather":{"main":"images/cut/garmin-venu-3-with-leather__main.webp"},"garmin-venu-3s-french":{"main":"images/cut/garmin-venu-3s-french__main.webp"},"garmin-venu-4-45-mm":{"main":"images/cut/garmin-venu-4-45-mm__main.webp"},"garmin-venu-x1-gps":{"main":"images/cut/garmin-venu-x1-gps__main.webp"},"garmin-vivoactive-5":{"main":"images/cut/garmin-vivoactive-5__main.webp"},"garmin-vivoactive-6":{"main":"images/cut/garmin-vivoactive-6__main.webp"},"google-fitbit-air":{"black":"images/cut/google-fitbit-air__black.webp","blue":"images/cut/google-fitbit-air__blue.webp","main":"images/cut/google-fitbit-air__main.webp"},"google-home-speaker-with-gemini":{"berry":"images/cut/google-home-speaker-with-gemini__berry.webp","hazel":"images/cut/google-home-speaker-with-gemini__hazel.webp","jade":"images/cut/google-home-speaker-with-gemini__jade.webp","porcelain":"images/cut/google-home-speaker-with-gemini__porcelain.webp"},"google-nest-mini":{"chalk":"images/cut/google-nest-mini__chalk.webp"},"google-pixel-10-pro-fold-gu0np":{"jade":"images/cut/google-pixel-10-pro-fold-gu0np__jade.webp","main":"images/cut/google-pixel-10-pro-fold-gu0np__main.webp","moonstone":"images/cut/google-pixel-10-pro-fold-gu0np__moonstone.webp"},"google-pixel-10-pro-xl":{"main":"images/cut/google-pixel-10-pro-xl__main.webp","moonstone":"images/cut/google-pixel-10-pro-xl__moonstone.webp","obsidian":"images/cut/google-pixel-10-pro-xl__obsidian.webp"},"google-pixel-10-pro":{"jade":"images/cut/google-pixel-10-pro__jade.webp","main":"images/cut/google-pixel-10-pro__main.webp","moonstone":"images/cut/google-pixel-10-pro__moonstone.webp","obsidian":"images/cut/google-pixel-10-pro__obsidian.webp","porcelain":"images/cut/google-pixel-10-pro__porcelain.webp"},"google-pixel-10a":{"main":"images/cut/google-pixel-10a__main.webp"},"google-pixel-10":{"frost":"images/cut/google-pixel-10__frost.webp","indigo":"images/cut/google-pixel-10__indigo.webp","lemongrass":"images/cut/google-pixel-10__lemongrass.webp","main":"images/cut/google-pixel-10__main.webp","obsidian":"images/cut/google-pixel-10__obsidian.webp"},"google-pixel-11-pro-fold":{"main":"images/cut/google-pixel-11-pro-fold__main.webp"},"google-pixel-11-pro-xl":{"canyon":"images/cut/google-pixel-11-pro-xl__canyon.webp","fog":"images/cut/google-pixel-11-pro-xl__fog.webp","main":"images/cut/google-pixel-11-pro-xl__main.webp","obsidian":"images/cut/google-pixel-11-pro-xl__obsidian.webp","olive":"images/cut/google-pixel-11-pro-xl__olive.webp"},"google-pixel-11-pro":{"fog":"images/cut/google-pixel-11-pro__fog.webp","main":"images/cut/google-pixel-11-pro__main.webp","obsidian":"images/cut/google-pixel-11-pro__obsidian.webp","olive":"images/cut/google-pixel-11-pro__olive.webp"},"google-pixel-11":{"frost":"images/cut/google-pixel-11__frost.webp","hibiscus":"images/cut/google-pixel-11__hibiscus.webp","main":"images/cut/google-pixel-11__main.webp","obsidian":"images/cut/google-pixel-11__obsidian.webp","pistachio":"images/cut/google-pixel-11__pistachio.webp"},"google-pixel-6-pro":{"main":"images/cut/google-pixel-6-pro__main.webp"},"google-pixel-6a":{"main":"images/cut/google-pixel-6a__main.webp"},"google-pixel-6":{"main":"images/cut/google-pixel-6__main.webp"},"google-pixel-7-pro":{"main":"images/cut/google-pixel-7-pro__main.webp"},"google-pixel-8a":{"main":"images/cut/google-pixel-8a__main.webp"},"google-pixel-9-pro-xl":{"hazel":"images/cut/google-pixel-9-pro-xl__hazel.webp","main":"images/cut/google-pixel-9-pro-xl__main.webp","obsidian":"images/cut/google-pixel-9-pro-xl__obsidian.webp","porcelain":"images/cut/google-pixel-9-pro-xl__porcelain.webp","rose-quartz":"images/cut/google-pixel-9-pro-xl__rose-quartz.webp"},"google-pixel-9-pro":{"hazel":"images/cut/google-pixel-9-pro__hazel.webp","main":"images/cut/google-pixel-9-pro__main.webp","obsidian":"images/cut/google-pixel-9-pro__obsidian.webp","porcelain":"images/cut/google-pixel-9-pro__porcelain.webp","rose-quartz":"images/cut/google-pixel-9-pro__rose-quartz.webp"},"google-pixel-9a":{"iris":"images/cut/google-pixel-9a__iris.webp","main":"images/cut/google-pixel-9a__main.webp","obsidian":"images/cut/google-pixel-9a__obsidian.webp","peony":"images/cut/google-pixel-9a__peony.webp","porcelain":"images/cut/google-pixel-9a__porcelain.webp"},"google-pixel-9":{"main":"images/cut/google-pixel-9__main.webp","obsidian":"images/cut/google-pixel-9__obsidian.webp","peony":"images/cut/google-pixel-9__peony.webp","porcelain":"images/cut/google-pixel-9__porcelain.webp","wintergreen":"images/cut/google-pixel-9__wintergreen.webp"},"google-pixel-usb-c-earbuds":{"white":"images/cut/google-pixel-usb-c-earbuds__white.webp"},"harman-kardon-aura-studio-4":{"main":"images/cut/harman-kardon-aura-studio-4__main.webp"},"harman-kardon-aura-studio-5":{"black":"images/cut/harman-kardon-aura-studio-5__black.webp"},"harman-kardon-goplus-play-3":{"gray":"images/cut/harman-kardon-goplus-play-3__gray.webp"},"harman-kardon-luna":{"black":"images/cut/harman-kardon-luna__black.webp","gray":"images/cut/harman-kardon-luna__gray.webp","main":"images/cut/harman-kardon-luna__main.webp"},"harman-kardon-onyx-studio-7":{"main":"images/cut/harman-kardon-onyx-studio-7__main.webp"},"harman-kardon-soundsticks-4":{"white":"images/cut/harman-kardon-soundsticks-4__white.webp"},"harman-kardon-soundsticks-5":{"black":"images/cut/harman-kardon-soundsticks-5__black.webp","white":"images/cut/harman-kardon-soundsticks-5__white.webp"},"harman-kardon-studio-8":{"black":"images/cut/harman-kardon-studio-8__black.webp","main":"images/cut/harman-kardon-studio-8__main.webp"},"harman-kardon-studio-9":{"black":"images/cut/harman-kardon-studio-9__black.webp","main":"images/cut/harman-kardon-studio-9__main.webp"},"hisense-100e7q-pro":{"main":"images/cut/hisense-100e7q-pro__main.webp"},"hisense-110uxnq":{"main":"images/cut/hisense-110uxnq__main.webp"},"hisense-116uxq":{"main":"images/cut/hisense-116uxq__main.webp"},"hisense-32a4n":{"main":"images/cut/hisense-32a4n__main.webp"},"hisense-32a4q":{"main":"images/cut/hisense-32a4q__main.webp"},"hisense-32a5s":{"main":"images/cut/hisense-32a5s__main.webp"},"hisense-40a4n":{"main":"images/cut/hisense-40a4n__main.webp"},"hisense-40a4q":{"main":"images/cut/hisense-40a4q__main.webp"},"hisense-40a4s":{"main":"images/cut/hisense-40a4s__main.webp"},"hisense-40a5q":{"main":"images/cut/hisense-40a5q__main.webp"},"hisense-40a5s":{"main":"images/cut/hisense-40a5s__main.webp"},"hisense-43a6n":{"main":"images/cut/hisense-43a6n__main.webp"},"hisense-43a6q":{"main":"images/cut/hisense-43a6q__main.webp"},"hisense-43a7kq":{"main":"images/cut/hisense-43a7kq__main.webp"},"hisense-43a7s":{"main":"images/cut/hisense-43a7s__main.webp"},"hisense-43e7nq":{"main":"images/cut/hisense-43e7nq__main.webp"},"hisense-43e7q":{"main":"images/cut/hisense-43e7q__main.webp"},"hisense-43e7s":{"main":"images/cut/hisense-43e7s__main.webp"},"hisense-50a6q":{"main":"images/cut/hisense-50a6q__main.webp"},"hisense-50a6s":{"main":"images/cut/hisense-50a6s__main.webp"},"hisense-50a7nq":{"main":"images/cut/hisense-50a7nq__main.webp"},"hisense-50a7s":{"main":"images/cut/hisense-50a7s__main.webp"},"hisense-50e7q":{"main":"images/cut/hisense-50e7q__main.webp"},"hisense-50e7s":{"main":"images/cut/hisense-50e7s__main.webp"},"hisense-50u7q":{"main":"images/cut/hisense-50u7q__main.webp"},"hisense-55a6n":{"main":"images/cut/hisense-55a6n__main.webp"},"hisense-55a6q":{"main":"images/cut/hisense-55a6q__main.webp"},"hisense-55a7q":{"main":"images/cut/hisense-55a7q__main.webp"},"hisense-55a7s":{"main":"images/cut/hisense-55a7s__main.webp"},"hisense-55e7q-pro":{"main":"images/cut/hisense-55e7q-pro__main.webp"},"hisense-55e7q":{"main":"images/cut/hisense-55e7q__main.webp"},"hisense-55e7s":{"main":"images/cut/hisense-55e7s__main.webp"},"hisense-55e8s":{"main":"images/cut/hisense-55e8s__main.webp"},"hisense-55u7q-pro":{"main":"images/cut/hisense-55u7q-pro__main.webp"},"hisense-55u7q":{"main":"images/cut/hisense-55u7q__main.webp"},"hisense-55u7s-pro":{"main":"images/cut/hisense-55u7s-pro__main.webp"},"hisense-55u8q":{"main":"images/cut/hisense-55u8q__main.webp"},"hisense-58a6q":{"main":"images/cut/hisense-58a6q__main.webp"},"hisense-58e7q":{"main":"images/cut/hisense-58e7q__main.webp"},"hisense-65a6q":{"main":"images/cut/hisense-65a6q__main.webp"},"hisense-65a6s":{"main":"images/cut/hisense-65a6s__main.webp"},"hisense-65a7nq":{"main":"images/cut/hisense-65a7nq__main.webp"},"hisense-65a7q":{"main":"images/cut/hisense-65a7q__main.webp"},"hisense-65a7s":{"main":"images/cut/hisense-65a7s__main.webp"},"hisense-65a85h":{"main":"images/cut/hisense-65a85h__main.webp"},"hisense-65a85k":{"main":"images/cut/hisense-65a85k__main.webp"},"hisense-65e7q-pro":{"main":"images/cut/hisense-65e7q-pro__main.webp"},"hisense-65e7q":{"main":"images/cut/hisense-65e7q__main.webp"},"hisense-65e7s":{"main":"images/cut/hisense-65e7s__main.webp"},"hisense-65e8s":{"main":"images/cut/hisense-65e8s__main.webp"},"hisense-65u7hq":{"main":"images/cut/hisense-65u7hq__main.webp"},"hisense-65u7q-pro":{"main":"images/cut/hisense-65u7q-pro__main.webp"},"hisense-65u7q":{"main":"images/cut/hisense-65u7q__main.webp"},"hisense-65u7s-pro":{"main":"images/cut/hisense-65u7s-pro__main.webp"},"hisense-65u8q":{"main":"images/cut/hisense-65u8q__main.webp"},"hisense-65ur8s":{"main":"images/cut/hisense-65ur8s__main.webp"},"hisense-65uxkq":{"main":"images/cut/hisense-65uxkq__main.webp"},"hisense-75a6q":{"main":"images/cut/hisense-75a6q__main.webp"},"hisense-75e7q-pro":{"main":"images/cut/hisense-75e7q-pro__main.webp"},"hisense-75e7q":{"main":"images/cut/hisense-75e7q__main.webp"},"hisense-75e7s":{"main":"images/cut/hisense-75e7s__main.webp"},"hisense-75e8s":{"main":"images/cut/hisense-75e8s__main.webp"},"hisense-75u7q-pro":{"main":"images/cut/hisense-75u7q-pro__main.webp"},"hisense-75u7q":{"main":"images/cut/hisense-75u7q__main.webp"},"hisense-75u7s-pro":{"main":"images/cut/hisense-75u7s-pro__main.webp"},"hisense-75ur8s":{"main":"images/cut/hisense-75ur8s__main.webp"},"hisense-75ur9s":{"main":"images/cut/hisense-75ur9s__main.webp"},"hisense-85a6bg":{"main":"images/cut/hisense-85a6bg__main.webp"},"hisense-85a6q":{"main":"images/cut/hisense-85a6q__main.webp"},"hisense-85e7q":{"main":"images/cut/hisense-85e7q__main.webp"},"hisense-85e7s":{"main":"images/cut/hisense-85e7s__main.webp"},"hisense-85e8s":{"main":"images/cut/hisense-85e8s__main.webp"},"hisense-85u7q":{"main":"images/cut/hisense-85u7q__main.webp"},"hisense-85u7s-pro":{"main":"images/cut/hisense-85u7s-pro__main.webp"},"honor-200-lite-5g":{"main":"images/cut/honor-200-lite-5g__main.webp"},"honor-200":{"main":"images/cut/honor-200__main.webp"},"honor-400-lite":{"main":"images/cut/honor-400-lite__main.webp"},"honor-400-pro":{"black":"images/cut/honor-400-pro__black.webp","lunar-gray":"images/cut/honor-400-pro__lunar-gray.webp","main":"images/cut/honor-400-pro__main.webp"},"honor-400":{"black":"images/cut/honor-400__black.webp","desert-gold":"images/cut/honor-400__desert-gold.webp","main":"images/cut/honor-400__main.webp","silver":"images/cut/honor-400__silver.webp"},"honor-5-stl-b19-5502abgj":{"main":"images/cut/honor-5-stl-b19-5502abgj__main.webp"},"honor-600-lite":{"desert-gold":"images/cut/honor-600-lite__desert-gold.webp","main":"images/cut/honor-600-lite__main.webp"},"honor-600-pro":{"black":"images/cut/honor-600-pro__black.webp","main":"images/cut/honor-600-pro__main.webp","orange":"images/cut/honor-600-pro__orange.webp","white":"images/cut/honor-600-pro__white.webp"},"honor-600":{"black":"images/cut/honor-600__black.webp","main":"images/cut/honor-600__main.webp"},"honor-band-6":{"main":"images/cut/honor-band-6__main.webp"},"honor-band-9":{"black":"images/cut/honor-band-9__black.webp","main":"images/cut/honor-band-9__main.webp"},"honor-choice-clip-mak-me01":{"main":"images/cut/honor-choice-clip-mak-me01__main.webp"},"honor-choice-earbuds-x3":{"main":"images/cut/honor-choice-earbuds-x3__main.webp"},"honor-choice-earbuds-x5":{"main":"images/cut/honor-choice-earbuds-x5__main.webp"},"honor-choice-earbuds-x7e-ast-me00":{"main":"images/cut/honor-choice-earbuds-x7e-ast-me00__main.webp"},"honor-choice-infowear-2i-kch-wb01":{"main":"images/cut/honor-choice-infowear-2i-kch-wb01__main.webp"},"honor-choice-ros-me01":{"main":"images/cut/honor-choice-ros-me01__main.webp"},"honor-choice-tws-earbuds":{"main":"images/cut/honor-choice-tws-earbuds__main.webp"},"honor-choice-x7-lite":{"main":"images/cut/honor-choice-x7-lite__main.webp"},"honor-earbuds-x6":{"main":"images/cut/honor-earbuds-x6__main.webp"},"honor-magic-7-pro":{"lunar-gray":"images/cut/honor-magic-7-pro__lunar-gray.webp","main":"images/cut/honor-magic-7-pro__main.webp"},"honor-magic-8-pro":{"black":"images/cut/honor-magic-8-pro__black.webp","main":"images/cut/honor-magic-8-pro__main.webp","sky-cyan":"images/cut/honor-magic-8-pro__sky-cyan.webp","sunrise-gold":"images/cut/honor-magic-8-pro__sunrise-gold.webp"},"honor-magic7":{"main":"images/cut/honor-magic7__main.webp"},"honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg":{"main":"images/cut/honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg__main.webp"},"honor-magicbook-x-16-pro-i5-13420h-w11h-5301ahqv":{"main":"images/cut/honor-magicbook-x-16-pro-i5-13420h-w11h-5301ahqv__main.webp"},"honor-magicbook-x14-i5-13420h-w11h-5301alwg":{"main":"images/cut/honor-magicbook-x14-i5-13420h-w11h-5301alwg__main.webp"},"honor-magicbook-x14-pro-i5-13420h-w11h-5301ahqk":{"main":"images/cut/honor-magicbook-x14-pro-i5-13420h-w11h-5301ahqk__main.webp"},"honor-magicbook-x16-2025":{"main":"images/cut/honor-magicbook-x16-2025__main.webp"},"honor-magicbook-x16-2026-16-wuxga-ssd1tb":{"main":"images/cut/honor-magicbook-x16-2026-16-wuxga-ssd1tb__main.webp"},"honor-magicbook-x16-i5-12450h-5301ahhp":{"main":"images/cut/honor-magicbook-x16-i5-12450h-5301ahhp__main.webp"},"honor-magicbook-x16-plus":{"main":"images/cut/honor-magicbook-x16-plus__main.webp"},"honor-magicbook-x16-ultra-5-125h-w11h-5301argm":{"main":"images/cut/honor-magicbook-x16-ultra-5-125h-w11h-5301argm__main.webp"},"honor-pad-10-5g":{"main":"images/cut/honor-pad-10-5g__main.webp"},"honor-pad-8":{"main":"images/cut/honor-pad-8__main.webp"},"honor-pad-9-5g":{"main":"images/cut/honor-pad-9-5g__main.webp"},"honor-pad-x7-jms-w09":{"main":"images/cut/honor-pad-x7-jms-w09__main.webp"},"honor-pad-x7-lte-jms-l09":{"main":"images/cut/honor-pad-x7-lte-jms-l09__main.webp"},"honor-pad-x8b-ndl2-w09":{"main":"images/cut/honor-pad-x8b-ndl2-w09__main.webp"},"honor-pad-x9a":{"main":"images/cut/honor-pad-x9a__main.webp"},"honor-watch-gs-3-rubber":{"main":"images/cut/honor-watch-gs-3-rubber__main.webp"},"honor-x5b-plus":{"main":"images/cut/honor-x5b-plus__main.webp"},"honor-x6c":{"main":"images/cut/honor-x6c__main.webp"},"honor-x7b":{"main":"images/cut/honor-x7b__main.webp"},"honor-x7c":{"main":"images/cut/honor-x7c__main.webp"},"honor-x7d":{"black":"images/cut/honor-x7d__black.webp","main":"images/cut/honor-x7d__main.webp"},"honor-x7e":{"black":"images/cut/honor-x7e__black.webp","light-blue":"images/cut/honor-x7e__light-blue.webp","main":"images/cut/honor-x7e__main.webp","midnight-black":"images/cut/honor-x7e__midnight-black.webp","orange":"images/cut/honor-x7e__orange.webp"},"honor-x8b":{"main":"images/cut/honor-x8b__main.webp"},"honor-x8c":{"main":"images/cut/honor-x8c__main.webp","midnight-black":"images/cut/honor-x8c__midnight-black.webp","moonlight-white":"images/cut/honor-x8c__moonlight-white.webp","titanium-purple":"images/cut/honor-x8c__titanium-purple.webp"},"honor-x8d":{"black":"images/cut/honor-x8d__black.webp","gray":"images/cut/honor-x8d__gray.webp","light-blue":"images/cut/honor-x8d__light-blue.webp","main":"images/cut/honor-x8d__main.webp"},"honor-x8":{"main":"images/cut/honor-x8__main.webp"},"honor-x9b":{"main":"images/cut/honor-x9b__main.webp"},"honor-x9c":{"jade-cyan":"images/cut/honor-x9c__jade-cyan.webp","main":"images/cut/honor-x9c__main.webp","titanium-purple":"images/cut/honor-x9c__titanium-purple.webp"},"honor-x9d":{"gold":"images/cut/honor-x9d__gold.webp","green":"images/cut/honor-x9d__green.webp","main":"images/cut/honor-x9d__main.webp","midnight-black":"images/cut/honor-x9d__midnight-black.webp"},"honor-x9":{"main":"images/cut/honor-x9__main.webp"},"hori-rwa-racing-wheel-apex-for-ps5":{"main":"images/cut/hori-rwa-racing-wheel-apex-for-ps5__main.webp"},"hp-14-dq6015dx":{"main":"images/cut/hp-14-dq6015dx__main.webp"},"hp-14-em0002wm":{"main":"images/cut/hp-14-em0002wm__main.webp"},"hp-15-6-core-5-120u-a5cv9ea":{"main":"images/cut/hp-15-6-core-5-120u-a5cv9ea__main.webp"},"hp-15-6-core-i5-1334u-full-hd":{"main":"images/cut/hp-15-6-core-i5-1334u-full-hd__main.webp"},"hp-15-6-fhd-i5-1334u-9u5w4ea":{"main":"images/cut/hp-15-6-fhd-i5-1334u-9u5w4ea__main.webp"},"hp-15-6-ryzen-3-7320u-full-hd":{"main":"images/cut/hp-15-6-ryzen-3-7320u-full-hd__main.webp"},"hp-15-6-ryzen-5-7320u-fhd":{"main":"images/cut/hp-15-6-ryzen-5-7320u-fhd__main.webp"},"hp-15-fc0146dx":{"main":"images/cut/hp-15-fc0146dx__main.webp"},"hp-15-fc0196nia":{"main":"images/cut/hp-15-fc0196nia__main.webp"},"hp-15-fd0055":{"main":"images/cut/hp-15-fd0055__main.webp"},"hp-15-fd0113dx":{"main":"images/cut/hp-15-fd0113dx__main.webp"},"hp-15-fd0123dx":{"main":"images/cut/hp-15-fd0123dx__main.webp"},"hp-15-fd0133wm":{"main":"images/cut/hp-15-fd0133wm__main.webp"},"hp-15-fd0153dx":{"main":"images/cut/hp-15-fd0153dx__main.webp"},"hp-15-fd0154wm-i5":{"main":"images/cut/hp-15-fd0154wm-i5__main.webp"},"hp-15-fd0180nia":{"main":"images/cut/hp-15-fd0180nia__main.webp"},"hp-15-fd0336nia":{"main":"images/cut/hp-15-fd0336nia__main.webp"},"hp-15-fd0355nia":{"main":"images/cut/hp-15-fd0355nia__main.webp"},"hp-15-fd0531nia":{"main":"images/cut/hp-15-fd0531nia__main.webp"},"hp-15-fd0883nr":{"main":"images/cut/hp-15-fd0883nr__main.webp"},"hp-15-fd1899nr":{"main":"images/cut/hp-15-fd1899nr__main.webp"},"hp-15-fd2050wm":{"main":"images/cut/hp-15-fd2050wm__main.webp"},"hp-15-fd2747nr":{"main":"images/cut/hp-15-fd2747nr__main.webp","silver":"images/cut/hp-15-fd2747nr__silver.webp"},"hp-15t-dw300":{"main":"images/cut/hp-15t-dw300__main.webp"},"hp-15t-fd100-ultra-5":{"main":"images/cut/hp-15t-fd100-ultra-5__main.webp"},"hp-15t-fd100-ultra-7":{"main":"images/cut/hp-15t-fd100-ultra-7__main.webp"},"hp-21-5-led-22fw":{"main":"images/cut/hp-21-5-led-22fw__main.webp"},"hp-21-5-led-m22f":{"main":"images/cut/hp-21-5-led-m22f__main.webp"},"hp-24-led-m24fw":{"main":"images/cut/hp-24-led-m24fw__main.webp"},"hp-527sf":{"main":"images/cut/hp-527sf__main.webp"},"hp-elitebook-640-g10":{"main":"images/cut/hp-elitebook-640-g10__main.webp"},"hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet":{"main":"images/cut/hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet__main.webp"},"hp-elitebook-ultra-g1q":{"main":"images/cut/hp-elitebook-ultra-g1q__main.webp"},"hp-envy-15-fe1165nr":{"main":"images/cut/hp-envy-15-fe1165nr__main.webp"},"hp-envy-16-h1023dx-touch-7z0p3ua":{"main":"images/cut/hp-envy-16-h1023dx-touch-7z0p3ua__main.webp"},"hp-envy-16-h1053dx-touch-9u360ua":{"main":"images/cut/hp-envy-16-h1053dx-touch-9u360ua__main.webp"},"hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba":{"main":"images/cut/hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba__main.webp"},"hp-envy-hayden-22c1":{"main":"images/cut/hp-envy-hayden-22c1__main.webp"},"hp-g10-470g10":{"main":"images/cut/hp-g10-470g10__main.webp"},"hp-hyperx-omen-15-ga0762nr":{"main":"images/cut/hp-hyperx-omen-15-ga0762nr__main.webp"},"hp-hyperx-omen-16-am2013dx":{"main":"images/cut/hp-hyperx-omen-16-am2013dx__main.webp"},"hp-hyperx-omen-16-ap1023dx":{"main":"images/cut/hp-hyperx-omen-16-ap1023dx__main.webp"},"hp-omen-16-ap0167ax":{"main":"images/cut/hp-omen-16-ap0167ax__main.webp"},"hp-omen-16-core-i7-14650hx-rtx5050-c42dnea":{"main":"images/cut/hp-omen-16-core-i7-14650hx-rtx5050-c42dnea__main.webp"},"hp-omen-16-ultra-7-255hx-rtx-5070ti-c5hz1ea":{"main":"images/cut/hp-omen-16-ultra-7-255hx-rtx-5070ti-c5hz1ea__main.webp"},"hp-omen-16t-wf100-rtx-4070":{"main":"images/cut/hp-omen-16t-wf100-rtx-4070__main.webp"},"hp-omen-slim-16-an0008tx":{"main":"images/cut/hp-omen-slim-16-an0008tx__main.webp"},"hp-omnibook-3-16-bu0007dx":{"main":"images/cut/hp-omnibook-3-16-bu0007dx__main.webp"},"hp-omnibook-3-16-bu0305dx":{"main":"images/cut/hp-omnibook-3-16-bu0305dx__main.webp"},"hp-omnibook-3-16-by0205dx":{"main":"images/cut/hp-omnibook-3-16-by0205dx__main.webp"},"hp-omnibook-3-17-dg0107dx":{"main":"images/cut/hp-omnibook-3-17-dg0107dx__main.webp"},"hp-omnibook-5-16-af1095cl":{"main":"images/cut/hp-omnibook-5-16-af1095cl__main.webp"},"hp-omnibook-5-16-ba1000ci":{"main":"images/cut/hp-omnibook-5-16-ba1000ci__main.webp"},"hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea":{"main":"images/cut/hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea__main.webp"},"hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea":{"main":"images/cut/hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea__main.webp"},"hp-omnibook-5-ai-16-af1003ci-ultra":{"main":"images/cut/hp-omnibook-5-ai-16-af1003ci-ultra__main.webp"},"hp-omnibook-7-16-az0595":{"main":"images/cut/hp-omnibook-7-16-az0595__main.webp"},"hp-omnibook-7-16-core-5-210h-w11h-c21n7ea":{"main":"images/cut/hp-omnibook-7-16-core-5-210h-w11h-c21n7ea__main.webp"},"hp-omnibook-ultra-flip-14":{"gray":"images/cut/hp-omnibook-ultra-flip-14__gray.webp","main":"images/cut/hp-omnibook-ultra-flip-14__main.webp"},"hp-omnibook-x-17-dd0047nr":{"main":"images/cut/hp-omnibook-x-17-dd0047nr__main.webp"},"hp-omnibook-x-flip-14-fm0013dx":{"main":"images/cut/hp-omnibook-x-flip-14-fm0013dx__main.webp"},"hp-omnibook-x-flip-14-ultra-7-256v-w11h-bz2x0ea":{"main":"images/cut/hp-omnibook-x-flip-14-ultra-7-256v-w11h-bz2x0ea__main.webp"},"hp-omnibook-x-flip-16-as0023dx":{"main":"images/cut/hp-omnibook-x-flip-16-as0023dx__main.webp"},"hp-omnibook-x-flip-16-as0043dx":{"main":"images/cut/hp-omnibook-x-flip-16-as0043dx__main.webp"},"hp-omnibook-x-flip-16-be0003dx":{"main":"images/cut/hp-omnibook-x-flip-16-be0003dx__main.webp"},"hp-omnibook-x-flip-16-ultra-5-226v-w11h-cl6v7ea":{"main":"images/cut/hp-omnibook-x-flip-16-ultra-5-226v-w11h-cl6v7ea__main.webp"},"hp-omnibook-x-flip-16-ultra-7-256v-w11h-c1up1ea":{"main":"images/cut/hp-omnibook-x-flip-16-ultra-7-256v-w11h-c1up1ea__main.webp"},"hp-omnibook-x-flip-16-ultra-7-258v-w11h-cl6v6ea":{"main":"images/cut/hp-omnibook-x-flip-16-ultra-7-258v-w11h-cl6v6ea__main.webp"},"hp-omnibook-x-flip-2in1-16t-as000":{"main":"images/cut/hp-omnibook-x-flip-2in1-16t-as000__main.webp"},"hp-omnibook-x-flip-x360-14-ultra-7-256v-w11h-c1um8ea":{"main":"images/cut/hp-omnibook-x-flip-x360-14-ultra-7-256v-w11h-c1um8ea__main.webp"},"hp-omnibook-x-flip-x360-16-ultra-5-226v-w11h-c1up3ea":{"main":"images/cut/hp-omnibook-x-flip-x360-16-ultra-5-226v-w11h-c1up3ea__main.webp"},"hp-pavilion-16-r7-8840u-b2cv4ea":{"main":"images/cut/hp-pavilion-16-r7-8840u-b2cv4ea__main.webp"},"hp-pavilion-16-ultra-5-125u-b2cv3ea":{"main":"images/cut/hp-pavilion-16-ultra-5-125u-b2cv3ea__main.webp"},"hp-probook-440-g10":{"main":"images/cut/hp-probook-440-g10__main.webp"},"hp-probook-450-g10-85c38ea":{"main":"images/cut/hp-probook-450-g10-85c38ea__main.webp"},"hp-probook-450-g9-7c196pa":{"main":"images/cut/hp-probook-450-g9-7c196pa__main.webp"},"hp-s5-524sh":{"main":"images/cut/hp-s5-524sh__main.webp"},"hp-victus-15-fa0018nq":{"ceramic-white":"images/cut/hp-victus-15-fa0018nq__ceramic-white.webp","main":"images/cut/hp-victus-15-fa0018nq__main.webp","performance-blue":"images/cut/hp-victus-15-fa0018nq__performance-blue.webp"},"hp-victus-15-fa0033dx-9t9r8ua":{"main":"images/cut/hp-victus-15-fa0033dx-9t9r8ua__main.webp"},"hp-victus-15-fa2013dx":{"main":"images/cut/hp-victus-15-fa2013dx__main.webp"},"hp-victus-15-fa2317tx":{"main":"images/cut/hp-victus-15-fa2317tx__main.webp"},"hp-victus-15-fa2787nr":{"main":"images/cut/hp-victus-15-fa2787nr__main.webp"},"hp-victus-15":{"main":"images/cut/hp-victus-15__main.webp","mica-silver":"images/cut/hp-victus-15__mica-silver.webp"},"hp-victus-clamshell-roaree-24c1":{"main":"images/cut/hp-victus-clamshell-roaree-24c1__main.webp"},"huawei-band-9":{"black":"images/cut/huawei-band-9__black.webp","main":"images/cut/huawei-band-9__main.webp","pink":"images/cut/huawei-band-9__pink.webp","white":"images/cut/huawei-band-9__white.webp"},"huawei-led-23-8-ad80hw":{"main":"images/cut/huawei-led-23-8-ad80hw__main.webp"},"huawei-matebook-fold-ultimate-18":{"main":"images/cut/huawei-matebook-fold-ultimate-18__main.webp"},"huawei-matepad-t10":{"main":"images/cut/huawei-matepad-t10__main.webp"},"jbl-authentics-200":{"black":"images/cut/jbl-authentics-200__black.webp","main":"images/cut/jbl-authentics-200__main.webp"},"jbl-authentics-300":{"black":"images/cut/jbl-authentics-300__black.webp"},"jbl-authentics-500":{"main":"images/cut/jbl-authentics-500__main.webp"},"jbl-boombox-2":{"main":"images/cut/jbl-boombox-2__main.webp"},"jbl-boombox-3-wi-fi":{"main":"images/cut/jbl-boombox-3-wi-fi__main.webp"},"jbl-boombox-3":{"black":"images/cut/jbl-boombox-3__black.webp","main":"images/cut/jbl-boombox-3__main.webp"},"jbl-boombox-4":{"blue":"images/cut/jbl-boombox-4__blue.webp","squad":"images/cut/jbl-boombox-4__squad.webp"},"jbl-charge-5":{"black":"images/cut/jbl-charge-5__black.webp","blue":"images/cut/jbl-charge-5__blue.webp","gray":"images/cut/jbl-charge-5__gray.webp","green":"images/cut/jbl-charge-5__green.webp","main":"images/cut/jbl-charge-5__main.webp","pink":"images/cut/jbl-charge-5__pink.webp","forest-green":"images/cut/jbl-charge-5__green.webp"},"jbl-charge-6":{"black":"images/cut/jbl-charge-6__black.webp","purple":"images/cut/jbl-charge-6__purple.webp","squad":"images/cut/jbl-charge-6__squad.webp","white":"images/cut/jbl-charge-6__white.webp"},"jbl-charge-essential-2":{"blue":"images/cut/jbl-charge-essential-2__blue.webp"},"jbl-clip-4":{"black":"images/cut/jbl-clip-4__black.webp","blue-white":"images/cut/jbl-clip-4__blue-white.webp","blue":"images/cut/jbl-clip-4__blue.webp","main":"images/cut/jbl-clip-4__main.webp","olive-orange":"images/cut/jbl-clip-4__olive-orange.webp","orange":"images/cut/jbl-clip-4__orange.webp","pink":"images/cut/jbl-clip-4__pink.webp","red":"images/cut/jbl-clip-4__red.webp","white":"images/cut/jbl-clip-4__white.webp"},"jbl-clip-5":{"black":"images/cut/jbl-clip-5__black.webp","blue":"images/cut/jbl-clip-5__blue.webp","main":"images/cut/jbl-clip-5__main.webp","pink":"images/cut/jbl-clip-5__pink.webp","purple":"images/cut/jbl-clip-5__purple.webp","red":"images/cut/jbl-clip-5__red.webp"},"jbl-endurance-peak-3":{"black":"images/cut/jbl-endurance-peak-3__black.webp"},"jbl-endurance-peak-4":{"black-and-lime":"images/cut/jbl-endurance-peak-4__black-and-lime.webp","blue":"images/cut/jbl-endurance-peak-4__blue.webp","purple":"images/cut/jbl-endurance-peak-4__purple.webp"},"jbl-endurance-race":{"black":"images/cut/jbl-endurance-race__black.webp"},"jbl-flip-6":{"black":"images/cut/jbl-flip-6__black.webp","blue":"images/cut/jbl-flip-6__blue.webp","gray":"images/cut/jbl-flip-6__gray.webp","green":"images/cut/jbl-flip-6__green.webp","main":"images/cut/jbl-flip-6__main.webp","pink":"images/cut/jbl-flip-6__pink.webp","red":"images/cut/jbl-flip-6__red.webp","teal":"images/cut/jbl-flip-6__teal.webp","white":"images/cut/jbl-flip-6__white.webp"},"jbl-flip-7":{"main":"images/cut/jbl-flip-7__main.webp","pink":"images/cut/jbl-flip-7__pink.webp","red":"images/cut/jbl-flip-7__red.webp","sand":"images/cut/jbl-flip-7__sand.webp","white":"images/cut/jbl-flip-7__white.webp"},"jbl-flip-essential-2":{"gray":"images/cut/jbl-flip-essential-2__gray.webp"},"jbl-go-3":{"black":"images/cut/jbl-go-3__black.webp","blue":"images/cut/jbl-go-3__blue.webp","main":"images/cut/jbl-go-3__main.webp","red":"images/cut/jbl-go-3__red.webp","teal":"images/cut/jbl-go-3__teal.webp","white":"images/cut/jbl-go-3__white.webp"},"jbl-go-4":{"black":"images/cut/jbl-go-4__black.webp","blue":"images/cut/jbl-go-4__blue.webp","main":"images/cut/jbl-go-4__main.webp","purple":"images/cut/jbl-go-4__purple.webp","red":"images/cut/jbl-go-4__red.webp","white":"images/cut/jbl-go-4__white.webp"},"jbl-horizon-3":{"black":"images/cut/jbl-horizon-3__black.webp","gray":"images/cut/jbl-horizon-3__gray.webp"},"jbl-horizon-speaker":{"gray":"images/cut/jbl-horizon-speaker__gray.webp"},"jbl-jr310":{"blue":"images/cut/jbl-jr310__blue.webp"},"jbl-jr320bt":{"green":"images/cut/jbl-jr320bt__green.webp","purple":"images/cut/jbl-jr320bt__purple.webp"},"jbl-jr320":{"blue":"images/cut/jbl-jr320__blue.webp","pink":"images/cut/jbl-jr320__pink.webp","purple":"images/cut/jbl-jr320__purple.webp"},"jbl-jr470nc":{"blue":"images/cut/jbl-jr470nc__blue.webp","pink":"images/cut/jbl-jr470nc__pink.webp"},"jbl-live-460-nc":{"main":"images/cut/jbl-live-460-nc__main.webp"},"jbl-live-660-nc":{"main":"images/cut/jbl-live-660-nc__main.webp","white":"images/cut/jbl-live-660-nc__white.webp"},"jbl-live-670nc":{"blue":"images/cut/jbl-live-670nc__blue.webp"},"jbl-live-680nc":{"beige":"images/cut/jbl-live-680nc__beige.webp","blue":"images/cut/jbl-live-680nc__blue.webp","white":"images/cut/jbl-live-680nc__white.webp"},"jbl-live-770-nc":{"black":"images/cut/jbl-live-770-nc__black.webp","blue":"images/cut/jbl-live-770-nc__blue.webp","gold":"images/cut/jbl-live-770-nc__gold.webp","main":"images/cut/jbl-live-770-nc__main.webp","white":"images/cut/jbl-live-770-nc__white.webp"},"jbl-live-780nc":{"beige":"images/cut/jbl-live-780nc__beige.webp","blue":"images/cut/jbl-live-780nc__blue.webp"},"jbl-live-beam-3":{"black":"images/cut/jbl-live-beam-3__black.webp","blue":"images/cut/jbl-live-beam-3__blue.webp","purple":"images/cut/jbl-live-beam-3__purple.webp"},"jbl-live-buds-3":{"black":"images/cut/jbl-live-buds-3__black.webp","purple":"images/cut/jbl-live-buds-3__purple.webp","white":"images/cut/jbl-live-buds-3__white.webp"},"jbl-live-flex":{"black":"images/cut/jbl-live-flex__black.webp","blue":"images/cut/jbl-live-flex__blue.webp","main":"images/cut/jbl-live-flex__main.webp","purple":"images/cut/jbl-live-flex__purple.webp","silver":"images/cut/jbl-live-flex__silver.webp"},"jbl-live-free-ncplus":{"blue":"images/cut/jbl-live-free-ncplus__blue.webp","white":"images/cut/jbl-live-free-ncplus__white.webp"},"jbl-live-pro-2-tws":{"black":"images/cut/jbl-live-pro-2-tws__black.webp","blue":"images/cut/jbl-live-pro-2-tws__blue.webp","main":"images/cut/jbl-live-pro-2-tws__main.webp","silver":"images/cut/jbl-live-pro-2-tws__silver.webp"},"jbl-partybox-1000":{"black":"images/cut/jbl-partybox-1000__black.webp","main":"images/cut/jbl-partybox-1000__main.webp"},"jbl-partybox-110":{"main":"images/cut/jbl-partybox-110__main.webp"},"jbl-partybox-130":{"black":"images/cut/jbl-partybox-130__black.webp"},"jbl-partybox-310":{"main":"images/cut/jbl-partybox-310__main.webp"},"jbl-partybox-330":{"black":"images/cut/jbl-partybox-330__black.webp","white":"images/cut/jbl-partybox-330__white.webp"},"jbl-partybox-520":{"black":"images/cut/jbl-partybox-520__black.webp"},"jbl-partybox-710":{"main":"images/cut/jbl-partybox-710__main.webp"},"jbl-partybox-720":{"main":"images/cut/jbl-partybox-720__main.webp"},"jbl-partybox-club-120":{"black":"images/cut/jbl-partybox-club-120__black.webp","main":"images/cut/jbl-partybox-club-120__main.webp","white":"images/cut/jbl-partybox-club-120__white.webp"},"jbl-partybox-encore-2":{"black":"images/cut/jbl-partybox-encore-2__black.webp"},"jbl-partybox-encore-essential":{"main":"images/cut/jbl-partybox-encore-essential__main.webp"},"jbl-partybox-on-the-go":{"black":"images/cut/jbl-partybox-on-the-go__black.webp","main":"images/cut/jbl-partybox-on-the-go__main.webp"},"jbl-partybox-stage-320":{"black":"images/cut/jbl-partybox-stage-320__black.webp","main":"images/cut/jbl-partybox-stage-320__main.webp"},"jbl-partybox-ultimate":{"black":"images/cut/jbl-partybox-ultimate__black.webp","main":"images/cut/jbl-partybox-ultimate__main.webp"},"jbl-pulse-5":{"black":"images/cut/jbl-pulse-5__black.webp"},"jbl-quantum-100-m2-wired":{"purple":"images/cut/jbl-quantum-100-m2-wired__purple.webp","teal":"images/cut/jbl-quantum-100-m2-wired__teal.webp","white":"images/cut/jbl-quantum-100-m2-wired__white.webp"},"jbl-quantum-200-wired":{"main":"images/cut/jbl-quantum-200-wired__main.webp"},"jbl-quantum-300":{"main":"images/cut/jbl-quantum-300__main.webp"},"jbl-quantum-350-wireless":{"black":"images/cut/jbl-quantum-350-wireless__black.webp"},"jbl-quantum-50-wired":{"black":"images/cut/jbl-quantum-50-wired__black.webp"},"jbl-quantum-610":{"black":"images/cut/jbl-quantum-610__black.webp"},"jbl-quantum-one-nc":{"black":"images/cut/jbl-quantum-one-nc__black.webp"},"jbl-reflect-contour-2":{"black":"images/cut/jbl-reflect-contour-2__black.webp"},"jbl-sense-lite":{"beige":"images/cut/jbl-sense-lite__beige.webp","black":"images/cut/jbl-sense-lite__black.webp","purple":"images/cut/jbl-sense-lite__purple.webp","white":"images/cut/jbl-sense-lite__white.webp"},"jbl-soundbar-sb550":{"black":"images/cut/jbl-soundbar-sb550__black.webp"},"jbl-soundgear-clips-earclips":{"black":"images/cut/jbl-soundgear-clips-earclips__black.webp","blue":"images/cut/jbl-soundgear-clips-earclips__blue.webp","copper":"images/cut/jbl-soundgear-clips-earclips__copper.webp","purple":"images/cut/jbl-soundgear-clips-earclips__purple.webp"},"jbl-soundgear-frames":{"main":"images/cut/jbl-soundgear-frames__main.webp"},"jbl-soundgear-sense":{"black":"images/cut/jbl-soundgear-sense__black.webp"},"jbl-t220":{"green":"images/cut/jbl-t220__green.webp"},"jbl-tour-one-m2":{"champagne":"images/cut/jbl-tour-one-m2__champagne.webp"},"jbl-tour-one-m3":{"black":"images/cut/jbl-tour-one-m3__black.webp","blue":"images/cut/jbl-tour-one-m3__blue.webp","light-mocha":"images/cut/jbl-tour-one-m3__light-mocha.webp"},"jbl-tour-pro-2-tws":{"black":"images/cut/jbl-tour-pro-2-tws__black.webp","champagne":"images/cut/jbl-tour-pro-2-tws__champagne.webp"},"jbl-tour-pro-3-tws":{"black":"images/cut/jbl-tour-pro-3-tws__black.webp"},"jbl-tour-pro-plus":{"black":"images/cut/jbl-tour-pro-plus__black.webp"},"jbl-tune-125-tws":{"blue":"images/cut/jbl-tune-125-tws__blue.webp","main":"images/cut/jbl-tune-125-tws__main.webp","white":"images/cut/jbl-tune-125-tws__white.webp"},"jbl-tune-125bt":{"main":"images/cut/jbl-tune-125bt__main.webp"},"jbl-tune-130-tws":{"main":"images/cut/jbl-tune-130-tws__main.webp"},"jbl-tune-215-tws":{"green":"images/cut/jbl-tune-215-tws__green.webp","main":"images/cut/jbl-tune-215-tws__main.webp","white":"images/cut/jbl-tune-215-tws__white.webp"},"jbl-tune-230-nc-tws":{"main":"images/cut/jbl-tune-230-nc-tws__main.webp"},"jbl-tune-500-wired":{"black":"images/cut/jbl-tune-500-wired__black.webp","main":"images/cut/jbl-tune-500-wired__main.webp","pink":"images/cut/jbl-tune-500-wired__pink.webp","white":"images/cut/jbl-tune-500-wired__white.webp"},"jbl-tune-520-bt":{"black":"images/cut/jbl-tune-520-bt__black.webp","blue":"images/cut/jbl-tune-520-bt__blue.webp","main":"images/cut/jbl-tune-520-bt__main.webp","purple":"images/cut/jbl-tune-520-bt__purple.webp","white":"images/cut/jbl-tune-520-bt__white.webp"},"jbl-tune-520c":{"black":"images/cut/jbl-tune-520c__black.webp","main":"images/cut/jbl-tune-520c__main.webp"},"jbl-tune-530bt":{"beige":"images/cut/jbl-tune-530bt__beige.webp","black":"images/cut/jbl-tune-530bt__black.webp","blue":"images/cut/jbl-tune-530bt__blue.webp","lavender":"images/cut/jbl-tune-530bt__lavender.webp","main":"images/cut/jbl-tune-530bt__main.webp","white":"images/cut/jbl-tune-530bt__white.webp"},"jbl-tune-670-nc":{"black":"images/cut/jbl-tune-670-nc__black.webp","blue":"images/cut/jbl-tune-670-nc__blue.webp","main":"images/cut/jbl-tune-670-nc__main.webp"},"jbl-tune-680nc":{"main":"images/cut/jbl-tune-680nc__main.webp"},"jbl-tune-720-bt":{"black":"images/cut/jbl-tune-720-bt__black.webp","main":"images/cut/jbl-tune-720-bt__main.webp","purple":"images/cut/jbl-tune-720-bt__purple.webp"},"jbl-tune-760-nc":{"main":"images/cut/jbl-tune-760-nc__main.webp"},"jbl-tune-beam":{"main":"images/cut/jbl-tune-beam__main.webp","purple":"images/cut/jbl-tune-beam__purple.webp","teal":"images/cut/jbl-tune-beam__teal.webp","white":"images/cut/jbl-tune-beam__white.webp"},"jbl-tune-flex":{"black":"images/cut/jbl-tune-flex__black.webp","main":"images/cut/jbl-tune-flex__main.webp","purple":"images/cut/jbl-tune-flex__purple.webp","teal":"images/cut/jbl-tune-flex__teal.webp","white":"images/cut/jbl-tune-flex__white.webp"},"jbl-tune":{"ghost":"images/cut/jbl-tune__ghost.webp","main":"images/cut/jbl-tune__main.webp","purple":"images/cut/jbl-tune__purple.webp"},"jbl-under-armour-earbuds":{"white":"images/cut/jbl-under-armour-earbuds__white.webp"},"jbl-wave":{"beige":"images/cut/jbl-wave__beige.webp","black":"images/cut/jbl-wave__black.webp","blue":"images/cut/jbl-wave__blue.webp","main":"images/cut/jbl-wave__main.webp","pink":"images/cut/jbl-wave__pink.webp","white":"images/cut/jbl-wave__white.webp"},"jbl-wind-3":{"black":"images/cut/jbl-wind-3__black.webp"},"jbl-xtreme-3":{"black-camo":"images/cut/jbl-xtreme-3__black-camo.webp","black":"images/cut/jbl-xtreme-3__black.webp","blue":"images/cut/jbl-xtreme-3__blue.webp","main":"images/cut/jbl-xtreme-3__main.webp"},"jbl-xtreme-4":{"black-camo":"images/cut/jbl-xtreme-4__black-camo.webp","black":"images/cut/jbl-xtreme-4__black.webp","blue":"images/cut/jbl-xtreme-4__blue.webp","main":"images/cut/jbl-xtreme-4__main.webp"},"jbl-xtreme-5":{"black":"images/cut/jbl-xtreme-5__black.webp","blue":"images/cut/jbl-xtreme-5__blue.webp","squad":"images/cut/jbl-xtreme-5__squad.webp"},"lenovo-82vg00wxus":{"main":"images/cut/lenovo-82vg00wxus__main.webp"},"lenovo-82xb00hvus":{"main":"images/cut/lenovo-82xb00hvus__main.webp"},"lenovo-82yu016tpb":{"main":"images/cut/lenovo-82yu016tpb__main.webp"},"lenovo-83b40008us":{"main":"images/cut/lenovo-83b40008us__main.webp"},"lenovo-83f00005us":{"main":"images/cut/lenovo-83f00005us__main.webp"},"lenovo-83l7002nus":{"main":"images/cut/lenovo-83l7002nus__main.webp"},"lenovo-83lk0001us":{"main":"images/cut/lenovo-83lk0001us__main.webp"},"lenovo-83lk00cvus":{"main":"images/cut/lenovo-83lk00cvus__main.webp"},"lenovo-ideapad-1-14igl7":{"main":"images/cut/lenovo-ideapad-1-14igl7__main.webp"},"lenovo-ideapad-1-15amn7":{"main":"images/cut/lenovo-ideapad-1-15amn7__main.webp"},"lenovo-ideapad-1-15iru7":{"blue":"images/cut/lenovo-ideapad-1-15iru7__blue.webp","main":"images/cut/lenovo-ideapad-1-15iru7__main.webp"},"lenovo-ideapad-3-15itl6":{"main":"images/cut/lenovo-ideapad-3-15itl6__main.webp"},"lenovo-ideapad-5-14ial10":{"main":"images/cut/lenovo-ideapad-5-14ial10__main.webp"},"lenovo-ideapad-5-14iru9":{"main":"images/cut/lenovo-ideapad-5-14iru9__main.webp"},"lenovo-ideapad-5-16iru9":{"main":"images/cut/lenovo-ideapad-5-16iru9__main.webp"},"lenovo-ideapad-5-2-in-1-14iru9":{"main":"images/cut/lenovo-ideapad-5-2-in-1-14iru9__main.webp"},"lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us":{"main":"images/cut/lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us__main.webp"},"lenovo-ideapad-5-2in1-14ahp9-ryzen-7":{"main":"images/cut/lenovo-ideapad-5-2in1-14ahp9-ryzen-7__main.webp"},"lenovo-ideapad-5-2in1-16ahp9-ryzen-7":{"main":"images/cut/lenovo-ideapad-5-2in1-16ahp9-ryzen-7__main.webp"},"lenovo-ideapad-5-2in1-16":{"main":"images/cut/lenovo-ideapad-5-2in1-16__main.webp"},"lenovo-ideapad-flex-5-14iau7-i3":{"main":"images/cut/lenovo-ideapad-flex-5-14iau7-i3__main.webp"},"lenovo-ideapad-pro-5-16irh8":{"main":"images/cut/lenovo-ideapad-pro-5-16irh8__main.webp"},"lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus":{"main":"images/cut/lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus__main.webp"},"lenovo-ideapad-slim-3-15ahp10":{"main":"images/cut/lenovo-ideapad-slim-3-15ahp10__main.webp"},"lenovo-ideapad-slim-3-15ian8-n100":{"main":"images/cut/lenovo-ideapad-slim-3-15ian8-n100__main.webp"},"lenovo-ideapad-slim-3-15ian8":{"gray":"images/cut/lenovo-ideapad-slim-3-15ian8__gray.webp","main":"images/cut/lenovo-ideapad-slim-3-15ian8__main.webp"},"lenovo-ideapad-slim-3-15irh10-i5":{"main":"images/cut/lenovo-ideapad-slim-3-15irh10-i5__main.webp"},"lenovo-ideapad-slim-3-15irh10r":{"main":"images/cut/lenovo-ideapad-slim-3-15irh10r__main.webp"},"lenovo-ideapad-slim-3-15iru10":{"main":"images/cut/lenovo-ideapad-slim-3-15iru10__main.webp"},"lenovo-ideapad-slim-3-15iru8-256gb":{"main":"images/cut/lenovo-ideapad-slim-3-15iru8-256gb__main.webp"},"lenovo-ideapad-slim-3-15iru9":{"main":"images/cut/lenovo-ideapad-slim-3-15iru9__main.webp"},"lenovo-ideapad-slim-3-15q8x10":{"main":"images/cut/lenovo-ideapad-slim-3-15q8x10__main.webp"},"lenovo-ideapad-slim-3-15":{"gray":"images/cut/lenovo-ideapad-slim-3-15__gray.webp","main":"images/cut/lenovo-ideapad-slim-3-15__main.webp"},"lenovo-ideapad-slim-3-16irh10":{"main":"images/cut/lenovo-ideapad-slim-3-16irh10__main.webp"},"lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11":{"main":"images/cut/lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11__main.webp"},"lenovo-ideapad-slim-5-14irh10r":{"main":"images/cut/lenovo-ideapad-slim-5-14irh10r__main.webp"},"lenovo-ideapad-slim-5-14irh10":{"main":"images/cut/lenovo-ideapad-slim-5-14irh10__main.webp"},"lenovo-ideapad-slim-516irh10":{"main":"images/cut/lenovo-ideapad-slim-516irh10__main.webp"},"lenovo-ideapad-slim-5i-core-7-240h-83j1002sus":{"main":"images/cut/lenovo-ideapad-slim-5i-core-7-240h-83j1002sus__main.webp"},"lenovo-legion-5-15iax10":{"main":"images/cut/lenovo-legion-5-15iax10__main.webp"},"lenovo-legion-5-pro-16-irx9":{"main":"images/cut/lenovo-legion-5-pro-16-irx9__main.webp"},"lenovo-legion-pro-5-16":{"eclipse-black":"images/cut/lenovo-legion-pro-5-16__eclipse-black.webp","main":"images/cut/lenovo-legion-pro-5-16__main.webp"},"lenovo-legion-pro-5-slim":{"main":"images/cut/lenovo-legion-pro-5-slim__main.webp"},"lenovo-legion-slim-5-14-aph8-oled-82y5000aus":{"main":"images/cut/lenovo-legion-slim-5-14-aph8-oled-82y5000aus__main.webp"},"lenovo-loq-15-6-i7-13645hx-rtx5050-83je0189rk":{"main":"images/cut/lenovo-loq-15-6-i7-13645hx-rtx5050-83je0189rk__main.webp"},"lenovo-loq-15-arp9-83jc0000us":{"main":"images/cut/lenovo-loq-15-arp9-83jc0000us__main.webp"},"lenovo-loq-15arp9":{"main":"images/cut/lenovo-loq-15arp9__main.webp"},"lenovo-loq-15iax9":{"main":"images/cut/lenovo-loq-15iax9__main.webp"},"lenovo-loq-15irx10":{"main":"images/cut/lenovo-loq-15irx10__main.webp"},"lenovo-loq-15":{"luna-gray":"images/cut/lenovo-loq-15__luna-gray.webp","main":"images/cut/lenovo-loq-15__main.webp"},"lenovo-tab-m9-tb310xu-acc-zac50096ru":{"main":"images/cut/lenovo-tab-m9-tb310xu-acc-zac50096ru__main.webp"},"lenovo-think-book-14-g8-irl":{"main":"images/cut/lenovo-think-book-14-g8-irl__main.webp"},"lenovo-thinkbook-16-g8-irl":{"main":"images/cut/lenovo-thinkbook-16-g8-irl__main.webp"},"lenovo-thinkpad-e16-gen-1-21jn001qgp":{"main":"images/cut/lenovo-thinkpad-e16-gen-1-21jn001qgp__main.webp"},"lenovo-thinkpad-e16-gen-2-21ma002xrt":{"main":"images/cut/lenovo-thinkpad-e16-gen-2-21ma002xrt__main.webp"},"lenovo-thinkpad-e16-gen-2-21ma004vrt":{"main":"images/cut/lenovo-thinkpad-e16-gen-2-21ma004vrt__main.webp"},"lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw":{"main":"images/cut/lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw__main.webp"},"lenovo-thinkpad-t16-gen-2-21hh005agq":{"main":"images/cut/lenovo-thinkpad-t16-gen-2-21hh005agq__main.webp"},"lenovo-v14-g4-iru":{"main":"images/cut/lenovo-v14-g4-iru__main.webp"},"lenovo-v15-g4-iru":{"main":"images/cut/lenovo-v15-g4-iru__main.webp"},"lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd":{"main":"images/cut/lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd__main.webp"},"lenovo-yoga-7-16iml9":{"main":"images/cut/lenovo-yoga-7-16iml9__main.webp"},"lenovo-yoga-7-2-in-1-16akp10":{"main":"images/cut/lenovo-yoga-7-2-in-1-16akp10__main.webp"},"lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk":{"main":"images/cut/lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk__main.webp"},"lenovo-yoga-9-13imu9":{"main":"images/cut/lenovo-yoga-9-13imu9__main.webp"},"lenovo-yoga-9-14ill10":{"main":"images/cut/lenovo-yoga-9-14ill10__main.webp"},"lenovo-yoga-9-14imh9":{"main":"images/cut/lenovo-yoga-9-14imh9__main.webp"},"lenovo-yoga-pro-7-14-ahp9-83e3002ark":{"main":"images/cut/lenovo-yoga-pro-7-14-ahp9-83e3002ark__main.webp"},"lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led":{"main":"images/cut/lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led__main.webp"},"lenovo-yoga-pro-9-16imh9":{"main":"images/cut/lenovo-yoga-pro-9-16imh9__main.webp"},"lenovo-yoga-slim-7-14q8x9":{"main":"images/cut/lenovo-yoga-slim-7-14q8x9__main.webp"},"lenovo-yoga-slim-7-15ill9":{"main":"images/cut/lenovo-yoga-slim-7-15ill9__main.webp"},"lenovo-yoga-slim-7-r5-7640s-83aa000brk":{"main":"images/cut/lenovo-yoga-slim-7-r5-7640s-83aa000brk__main.webp"},"lg-24g411a-b":{"main":"images/cut/lg-24g411a-b__main.webp"},"lg-24gs50f-b":{"main":"images/cut/lg-24gs50f-b__main.webp"},"lg-24u411a-b":{"main":"images/cut/lg-24u411a-b__main.webp"},"lg-27gs50f-b":{"main":"images/cut/lg-27gs50f-b__main.webp"},"lg-27sr50f-w":{"main":"images/cut/lg-27sr50f-w__main.webp"},"lg-27u421a-b":{"main":"images/cut/lg-27u421a-b__main.webp"},"lg-27u511sa-w":{"main":"images/cut/lg-27u511sa-w__main.webp"},"lg-29u531a-w":{"main":"images/cut/lg-29u531a-w__main.webp"},"lg-32lm637bpva":{"main":"images/cut/lg-32lm637bpva__main.webp"},"lg-32sr50f-w":{"main":"images/cut/lg-32sr50f-w__main.webp"},"lg-32ur500k-b":{"main":"images/cut/lg-32ur500k-b__main.webp"},"lg-34gp63a-b":{"main":"images/cut/lg-34gp63a-b__main.webp"},"lg-43nano766qa":{"main":"images/cut/lg-43nano766qa__main.webp"},"lg-43nano80a6b":{"main":"images/cut/lg-43nano80a6b__main.webp"},"lg-43nu850b6la":{"main":"images/cut/lg-43nu850b6la__main.webp"},"lg-43qned70b6c":{"main":"images/cut/lg-43qned70b6c__main.webp"},"lg-43ua75009la":{"main":"images/cut/lg-43ua75009la__main.webp"},"lg-43uq81006lb":{"main":"images/cut/lg-43uq81006lb__main.webp"},"lg-50nano75vpa":{"main":"images/cut/lg-50nano75vpa__main.webp"},"lg-50nu850b6la":{"main":"images/cut/lg-50nu850b6la__main.webp"},"lg-50qned70b6c":{"main":"images/cut/lg-50qned70b6c__main.webp"},"lg-50qned80a6a":{"main":"images/cut/lg-50qned80a6a__main.webp"},"lg-55nano766qa":{"main":"images/cut/lg-55nano766qa__main.webp"},"lg-55nano80vpa":{"main":"images/cut/lg-55nano80vpa__main.webp"},"lg-55nano816na":{"main":"images/cut/lg-55nano816na__main.webp"},"lg-55nano86vna":{"main":"images/cut/lg-55nano86vna__main.webp"},"lg-55nu850b6la":{"main":"images/cut/lg-55nu850b6la__main.webp"},"lg-55qned70a6a":{"main":"images/cut/lg-55qned70a6a__main.webp"},"lg-55qned80a6a":{"main":"images/cut/lg-55qned80a6a__main.webp"},"lg-55qned80b6b":{"main":"images/cut/lg-55qned80b6b__main.webp"},"lg-55qned80t6a":{"main":"images/cut/lg-55qned80t6a__main.webp"},"lg-55qned816ra":{"main":"images/cut/lg-55qned816ra__main.webp"},"lg-55qned82a6b":{"main":"images/cut/lg-55qned82a6b__main.webp"},"lg-55qned86a6a":{"main":"images/cut/lg-55qned86a6a__main.webp"},"lg-55qned86t6a":{"main":"images/cut/lg-55qned86t6a__main.webp"},"lg-55ur81006lj":{"main":"images/cut/lg-55ur81006lj__main.webp"},"lg-65nano766qa":{"main":"images/cut/lg-65nano766qa__main.webp"},"lg-65nu850b6la":{"main":"images/cut/lg-65nu850b6la__main.webp"},"lg-65qned70a6a":{"main":"images/cut/lg-65qned70a6a__main.webp"},"lg-65qned80a6a":{"main":"images/cut/lg-65qned80a6a__main.webp"},"lg-65qned80b6b":{"main":"images/cut/lg-65qned80b6b__main.webp"},"lg-65qned86t6a":{"main":"images/cut/lg-65qned86t6a__main.webp"},"lg-65ua75009la":{"main":"images/cut/lg-65ua75009la__main.webp"},"lg-75nu850b6la":{"main":"images/cut/lg-75nu850b6la__main.webp"},"lg-75qned70b6a":{"main":"images/cut/lg-75qned70b6a__main.webp"},"lg-75qned85b6b":{"main":"images/cut/lg-75qned85b6b__main.webp"},"lg-75qned86a6a":{"main":"images/cut/lg-75qned86a6a__main.webp"},"lg-85qned70b6a":{"main":"images/cut/lg-85qned70b6a__main.webp"},"lg-oled55a26la":{"main":"images/cut/lg-oled55a26la__main.webp"},"lg-oled55b4rla":{"main":"images/cut/lg-oled55b4rla__main.webp"},"lg-oled55c6rla":{"main":"images/cut/lg-oled55c6rla__main.webp"},"lg-oled65b4rla":{"main":"images/cut/lg-oled65b4rla__main.webp"},"lg-oled65b5rla":{"main":"images/cut/lg-oled65b5rla__main.webp"},"lg-oled65c5rla":{"main":"images/cut/lg-oled65c5rla__main.webp"},"lg-oled65g46la":{"main":"images/cut/lg-oled65g46la__main.webp"},"lg-oled65g5rla":{"main":"images/cut/lg-oled65g5rla__main.webp"},"lg-oled77c46la":{"main":"images/cut/lg-oled77c46la__main.webp"},"lg-oled83c4rla":{"main":"images/cut/lg-oled83c4rla__main.webp"},"marshall-acton-iii":{"black":"images/cut/marshall-acton-iii__black.webp","brown":"images/cut/marshall-acton-iii__brown.webp","cream":"images/cut/marshall-acton-iii__cream.webp","main":"images/cut/marshall-acton-iii__main.webp","midnight-blue":"images/cut/marshall-acton-iii__midnight-blue.webp"},"marshall-acton-iv":{"black":"images/cut/marshall-acton-iv__black.webp","main":"images/cut/marshall-acton-iv__main.webp"},"marshall-bromley-450":{"black-brass":"images/cut/marshall-bromley-450__black-brass.webp"},"marshall-bromley-750":{"black-brass":"images/cut/marshall-bromley-750__black-brass.webp"},"marshall-emberton-iii":{"black":"images/cut/marshall-emberton-iii__black.webp","cream":"images/cut/marshall-emberton-iii__cream.webp","main":"images/cut/marshall-emberton-iii__main.webp","midnight-blue":"images/cut/marshall-emberton-iii__midnight-blue.webp","sage":"images/cut/marshall-emberton-iii__sage.webp"},"marshall-emberton":{"black":"images/cut/marshall-emberton__black.webp","cream":"images/cut/marshall-emberton__cream.webp","green":"images/cut/marshall-emberton__green.webp","main":"images/cut/marshall-emberton__main.webp"},"marshall-heston-sub-200":{"black":"images/cut/marshall-heston-sub-200__black.webp","cream":"images/cut/marshall-heston-sub-200__cream.webp"},"marshall-kilburn-2":{"main":"images/cut/marshall-kilburn-2__main.webp"},"marshall-kilburn-iii":{"black-brass":"images/cut/marshall-kilburn-iii__black-brass.webp","brown":"images/cut/marshall-kilburn-iii__brown.webp","cream":"images/cut/marshall-kilburn-iii__cream.webp"},"marshall-major-iv":{"main":"images/cut/marshall-major-iv__main.webp"},"marshall-major-v":{"black":"images/cut/marshall-major-v__black.webp","blue":"images/cut/marshall-major-v__blue.webp","brown":"images/cut/marshall-major-v__brown.webp","cream":"images/cut/marshall-major-v__cream.webp","main":"images/cut/marshall-major-v__main.webp"},"marshall-middleton":{"black":"images/cut/marshall-middleton__black.webp","cream":"images/cut/marshall-middleton__cream.webp","main":"images/cut/marshall-middleton__main.webp"},"marshall-minor-iii":{"black":"images/cut/marshall-minor-iii__black.webp"},"marshall-minor-iv":{"cream":"images/cut/marshall-minor-iv__cream.webp"},"marshall-monitor-iii":{"black":"images/cut/marshall-monitor-iii__black.webp"},"marshall-stanmore-3":{"black":"images/cut/marshall-stanmore-3__black.webp","cream":"images/cut/marshall-stanmore-3__cream.webp","main":"images/cut/marshall-stanmore-3__main.webp"},"marshall-stockwell-2":{"main":"images/cut/marshall-stockwell-2__main.webp"},"marshall-stockwell-iii":{"black-brass":"images/cut/marshall-stockwell-iii__black-brass.webp","cream-brass":"images/cut/marshall-stockwell-iii__cream-brass.webp"},"marshall-tufton":{"black-brass":"images/cut/marshall-tufton__black-brass.webp"},"marshall-uxbridge-google":{"main":"images/cut/marshall-uxbridge-google__main.webp"},"marshall-uxbridge":{"main":"images/cut/marshall-uxbridge__main.webp"},"marshall-willen-ii":{"black":"images/cut/marshall-willen-ii__black.webp","cream":"images/cut/marshall-willen-ii__cream.webp","main":"images/cut/marshall-willen-ii__main.webp"},"marshall-willen":{"black":"images/cut/marshall-willen__black.webp","cream":"images/cut/marshall-willen__cream.webp","main":"images/cut/marshall-willen__main.webp"},"marshall-woburn-iii":{"black":"images/cut/marshall-woburn-iii__black.webp","brown":"images/cut/marshall-woburn-iii__brown.webp","cream":"images/cut/marshall-woburn-iii__cream.webp","main":"images/cut/marshall-woburn-iii__main.webp"},"marshall-woburn-ii":{"black":"images/cut/marshall-woburn-ii__black.webp","main":"images/cut/marshall-woburn-ii__main.webp"},"microsoft-modern-usb":{"main":"images/cut/microsoft-modern-usb__main.webp"},"microsoft-surface-4":{"main":"images/cut/microsoft-surface-4__main.webp"},"microsoft-surface-go-2":{"main":"images/cut/microsoft-surface-go-2__main.webp"},"microsoft-surface-laptop-7-13":{"main":"images/cut/microsoft-surface-laptop-7-13__main.webp","platinum":"images/cut/microsoft-surface-laptop-7-13__platinum.webp"},"microsoft-surface-pro-12":{"main":"images/cut/microsoft-surface-pro-12__main.webp"},"microsoft-xbox-controller":{"astral-purple":"images/cut/microsoft-xbox-controller__astral-purple.webp","carbon-black":"images/cut/microsoft-xbox-controller__carbon-black.webp","deep-pink":"images/cut/microsoft-xbox-controller__deep-pink.webp","electric-volt":"images/cut/microsoft-xbox-controller__electric-volt.webp","main":"images/cut/microsoft-xbox-controller__main.webp","nocturnal-vapor":"images/cut/microsoft-xbox-controller__nocturnal-vapor.webp","pulse-red":"images/cut/microsoft-xbox-controller__pulse-red.webp","robot-white":"images/cut/microsoft-xbox-controller__robot-white.webp","shock-blue":"images/cut/microsoft-xbox-controller__shock-blue.webp"},"microsoft-xbox":{"main":"images/cut/microsoft-xbox__main.webp"},"msi-cyborg-15-a12vf-043us":{"main":"images/cut/msi-cyborg-15-a12vf-043us__main.webp"},"msi-cyborg-15-a13uc-821xae":{"main":"images/cut/msi-cyborg-15-a13uc-821xae__main.webp"},"msi-cyborg-15-a13ve-218us":{"main":"images/cut/msi-cyborg-15-a13ve-218us__main.webp"},"msi-katana-15-b13vek-1675us":{"main":"images/cut/msi-katana-15-b13vek-1675us__main.webp"},"msi-katana-15-hx-b14wek":{"main":"images/cut/msi-katana-15-hx-b14wek__main.webp"},"msi-katana-15-hx-b14wgk-016us":{"main":"images/cut/msi-katana-15-hx-b14wgk-016us__main.webp"},"msi-katana-15-hx-b14wgk-293us":{"main":"images/cut/msi-katana-15-hx-b14wgk-293us__main.webp"},"msi-modern-15-a11mu-1006xge":{"main":"images/cut/msi-modern-15-a11mu-1006xge__main.webp"},"msi-modern-15-b11m-006xge":{"main":"images/cut/msi-modern-15-b11m-006xge__main.webp"},"msi-modern-15-b5m-008xge":{"main":"images/cut/msi-modern-15-b5m-008xge__main.webp"},"msi-raider-16-max-hx-b2wh-rtx-5070ti":{"main":"images/cut/msi-raider-16-max-hx-b2wh-rtx-5070ti__main.webp"},"msi-raider-16-max-hx-b2wi-rtx-5080":{"main":"images/cut/msi-raider-16-max-hx-b2wi-rtx-5080__main.webp"},"msi-raider-18-hx-ai-a2xwig-rtx-5080":{"main":"images/cut/msi-raider-18-hx-ai-a2xwig-rtx-5080__main.webp"},"msi-thin-a15-b7uc-653xae":{"main":"images/cut/msi-thin-a15-b7uc-653xae__main.webp"},"nothing-6974434224179":{"main":"images/cut/nothing-6974434224179__main.webp"},"nothing-cmf-3-pro-6974434225312":{"main":"images/cut/nothing-cmf-3-pro-6974434225312__main.webp"},"nothing-cmf-phone-1":{"light-green":"images/cut/nothing-cmf-phone-1__light-green.webp","main":"images/cut/nothing-cmf-phone-1__main.webp","orange":"images/cut/nothing-cmf-phone-1__orange.webp"},"nothing-cmf-pro-2":{"main":"images/cut/nothing-cmf-pro-2__main.webp"},"nothing-cmf-watch-pro":{"main":"images/cut/nothing-cmf-watch-pro__main.webp"},"nothing-ear-a":{"main":"images/cut/nothing-ear-a__main.webp"},"nothing-ear-open-b182":{"main":"images/cut/nothing-ear-open-b182__main.webp"},"nothing-phone-1":{"black":"images/cut/nothing-phone-1__black.webp","main":"images/cut/nothing-phone-1__main.webp"},"nothing-phone-2a-plus":{"main":"images/cut/nothing-phone-2a-plus__main.webp"},"nothing-phone-2a":{"main":"images/cut/nothing-phone-2a__main.webp"},"nothing-phone-2":{"dark-gray":"images/cut/nothing-phone-2__dark-gray.webp","main":"images/cut/nothing-phone-2__main.webp","white":"images/cut/nothing-phone-2__white.webp"},"nothing-phone-3a":{"black":"images/cut/nothing-phone-3a__black.webp","main":"images/cut/nothing-phone-3a__main.webp"},"nothing-phone-3":{"black":"images/cut/nothing-phone-3__black.webp","main":"images/cut/nothing-phone-3__main.webp"},"oneplus-11":{"main":"images/cut/oneplus-11__main.webp"},"oneplus-15":{"main":"images/cut/oneplus-15__main.webp"},"oneplus-buds-3":{"gray":"images/cut/oneplus-buds-3__gray.webp"},"oneplus-buds-4":{"storm-gray":"images/cut/oneplus-buds-4__storm-gray.webp"},"oneplus-buds-pro-2":{"black":"images/cut/oneplus-buds-pro-2__black.webp"},"oneplus-buds-pro-3":{"lunar-radiance":"images/cut/oneplus-buds-pro-3__lunar-radiance.webp"},"oneplus-buds-pro":{"matte-black":"images/cut/oneplus-buds-pro__matte-black.webp"},"oneplus-bullets-wireless-z-2":{"black":"images/cut/oneplus-bullets-wireless-z-2__black.webp"},"oneplus-nord-6":{"black":"images/cut/oneplus-nord-6__black.webp","fresh-mint":"images/cut/oneplus-nord-6__fresh-mint.webp","main":"images/cut/oneplus-nord-6__main.webp","silver":"images/cut/oneplus-nord-6__silver.webp"},"oneplus-nord-buds-2":{"white":"images/cut/oneplus-nord-buds-2__white.webp"},"oneplus-nord-buds":{"main":"images/cut/oneplus-nord-buds__main.webp"},"oneplus-nord-ce4":{"main":"images/cut/oneplus-nord-ce4__main.webp"},"oneplus-nord-smart-watch":{"deep-blue":"images/cut/oneplus-nord-smart-watch__deep-blue.webp","main":"images/cut/oneplus-nord-smart-watch__main.webp","midnight-black":"images/cut/oneplus-nord-smart-watch__midnight-black.webp"},"oneplus-pad":{"main":"images/cut/oneplus-pad__main.webp"},"oppo-reno-a18":{"main":"images/cut/oppo-reno-a18__main.webp"},"oppo-reno-a38":{"main":"images/cut/oppo-reno-a38__main.webp"},"oppo-reno-a58":{"main":"images/cut/oppo-reno-a58__main.webp"},"oppo-reno-a78":{"black":"images/cut/oppo-reno-a78__black.webp","green":"images/cut/oppo-reno-a78__green.webp","main":"images/cut/oppo-reno-a78__main.webp"},"oppo-reno8t":{"main":"images/cut/oppo-reno8t__main.webp"},"philips-24-usb-c-24e1n3300a-00":{"main":"images/cut/philips-24-usb-c-24e1n3300a-00__main.webp"},"philips-271v8":{"main":"images/cut/philips-271v8__main.webp"},"poco-c71":{"black":"images/cut/poco-c71__black.webp","main":"images/cut/poco-c71__main.webp"},"poco-c75":{"black":"images/cut/poco-c75__black.webp","green":"images/cut/poco-c75__green.webp","main":"images/cut/poco-c75__main.webp"},"poco-c81-pro":{"black":"images/cut/poco-c81-pro__black.webp","green":"images/cut/poco-c81-pro__green.webp","main":"images/cut/poco-c81-pro__main.webp"},"poco-c85":{"black":"images/cut/poco-c85__black.webp","green":"images/cut/poco-c85__green.webp","main":"images/cut/poco-c85__main.webp","purple":"images/cut/poco-c85__purple.webp"},"poco-f7-pro":{"black":"images/cut/poco-f7-pro__black.webp","blue":"images/cut/poco-f7-pro__blue.webp","main":"images/cut/poco-f7-pro__main.webp","silver":"images/cut/poco-f7-pro__silver.webp"},"poco-f7-ultra":{"black":"images/cut/poco-f7-ultra__black.webp","main":"images/cut/poco-f7-ultra__main.webp","yellow":"images/cut/poco-f7-ultra__yellow.webp"},"poco-x7-pro":{"main":"images/cut/poco-x7-pro__main.webp","nebula-green":"images/cut/poco-x7-pro__nebula-green.webp","obsidian-black":"images/cut/poco-x7-pro__obsidian-black.webp","poco-yellow":"images/cut/poco-x7-pro__poco-yellow.webp"},"poco-x8-pro-5g":{"black":"images/cut/poco-x8-pro-5g__black.webp","main":"images/cut/poco-x8-pro-5g__main.webp","mint-green":"images/cut/poco-x8-pro-5g__mint-green.webp","white":"images/cut/poco-x8-pro-5g__white.webp"},"realme-16":{"black":"images/cut/realme-16__black.webp","main":"images/cut/realme-16__main.webp"},"realme-c71":{"main":"images/cut/realme-c71__main.webp"},"realme-c75":{"lightning-gold":"images/cut/realme-c75__lightning-gold.webp","main":"images/cut/realme-c75__main.webp","storm-black":"images/cut/realme-c75__storm-black.webp"},"realme-gt-7t":{"black":"images/cut/realme-gt-7t__black.webp","main":"images/cut/realme-gt-7t__main.webp"},"realme-note-60x":{"black":"images/cut/realme-note-60x__black.webp","main":"images/cut/realme-note-60x__main.webp"},"samsung-27d300gau":{"main":"images/cut/samsung-27d300gau__main.webp"},"samsung-a15":{"main":"images/cut/samsung-a15__main.webp"},"samsung-a25":{"main":"images/cut/samsung-a25__main.webp"},"samsung-eo-ic100-usb-type-c":{"black":"images/cut/samsung-eo-ic100-usb-type-c__black.webp","main":"images/cut/samsung-eo-ic100-usb-type-c__main.webp","white":"images/cut/samsung-eo-ic100-usb-type-c__white.webp"},"samsung-galaxy-2-pro":{"black":"images/cut/samsung-galaxy-2-pro__black.webp","main":"images/cut/samsung-galaxy-2-pro__main.webp"},"samsung-galaxy-2":{"black":"images/cut/samsung-galaxy-2__black.webp","graphite":"images/cut/samsung-galaxy-2__graphite.webp","main":"images/cut/samsung-galaxy-2__main.webp","white":"images/cut/samsung-galaxy-2__white.webp"},"samsung-galaxy-3-fe":{"black":"images/cut/samsung-galaxy-3-fe__black.webp","gray":"images/cut/samsung-galaxy-3-fe__gray.webp","main":"images/cut/samsung-galaxy-3-fe__main.webp","white":"images/cut/samsung-galaxy-3-fe__white.webp"},"samsung-galaxy-3":{"main":"images/cut/samsung-galaxy-3__main.webp","silver":"images/cut/samsung-galaxy-3__silver.webp"},"samsung-galaxy-6-classic-43mm-r950":{"black":"images/cut/samsung-galaxy-6-classic-43mm-r950__black.webp","main":"images/cut/samsung-galaxy-6-classic-43mm-r950__main.webp","silver":"images/cut/samsung-galaxy-6-classic-43mm-r950__silver.webp"},"samsung-galaxy-9-44mm":{"cream":"images/cut/samsung-galaxy-9-44mm__cream.webp","graphite":"images/cut/samsung-galaxy-9-44mm__graphite.webp","main":"images/cut/samsung-galaxy-9-44mm__main.webp","silver":"images/cut/samsung-galaxy-9-44mm__silver.webp"},"samsung-galaxy-a06":{"black":"images/cut/samsung-galaxy-a06__black.webp","main":"images/cut/samsung-galaxy-a06__main.webp"},"samsung-galaxy-a07s":{"main":"images/cut/samsung-galaxy-a07s__main.webp"},"samsung-galaxy-a07":{"black":"images/cut/samsung-galaxy-a07__black.webp","green":"images/cut/samsung-galaxy-a07__green.webp","light-violet":"images/cut/samsung-galaxy-a07__light-violet.webp","main":"images/cut/samsung-galaxy-a07__main.webp"},"samsung-galaxy-a08":{"green":"images/cut/samsung-galaxy-a08__green.webp","main":"images/cut/samsung-galaxy-a08__main.webp","silver":"images/cut/samsung-galaxy-a08__silver.webp"},"samsung-galaxy-a16":{"blue-black":"images/cut/samsung-galaxy-a16__blue-black.webp","main":"images/cut/samsung-galaxy-a16__main.webp"},"samsung-galaxy-a17":{"black":"images/cut/samsung-galaxy-a17__black.webp","blue":"images/cut/samsung-galaxy-a17__blue.webp","gray":"images/cut/samsung-galaxy-a17__gray.webp","main":"images/cut/samsung-galaxy-a17__main.webp"},"samsung-galaxy-a18":{"light-blue":"images/cut/samsung-galaxy-a18__light-blue.webp","main":"images/cut/samsung-galaxy-a18__main.webp"},"samsung-galaxy-a26":{"awesome-black":"images/cut/samsung-galaxy-a26__awesome-black.webp","awesome-mint":"images/cut/samsung-galaxy-a26__awesome-mint.webp","awesome-peach":"images/cut/samsung-galaxy-a26__awesome-peach.webp","awesome-white":"images/cut/samsung-galaxy-a26__awesome-white.webp","main":"images/cut/samsung-galaxy-a26__main.webp"},"samsung-galaxy-a27":{"black":"images/cut/samsung-galaxy-a27__black.webp","blue":"images/cut/samsung-galaxy-a27__blue.webp","light-green":"images/cut/samsung-galaxy-a27__light-green.webp","main":"images/cut/samsung-galaxy-a27__main.webp","pink":"images/cut/samsung-galaxy-a27__pink.webp"},"samsung-galaxy-a34":{"main":"images/cut/samsung-galaxy-a34__main.webp"},"samsung-galaxy-a35":{"black":"images/cut/samsung-galaxy-a35__black.webp","main":"images/cut/samsung-galaxy-a35__main.webp"},"samsung-galaxy-a36":{"awesome-black":"images/cut/samsung-galaxy-a36__awesome-black.webp","awesome-lavender":"images/cut/samsung-galaxy-a36__awesome-lavender.webp","awesome-lime":"images/cut/samsung-galaxy-a36__awesome-lime.webp","awesome-white":"images/cut/samsung-galaxy-a36__awesome-white.webp","main":"images/cut/samsung-galaxy-a36__main.webp"},"samsung-galaxy-a37":{"awesome-gray":"images/cut/samsung-galaxy-a37__awesome-gray.webp","black":"images/cut/samsung-galaxy-a37__black.webp","main":"images/cut/samsung-galaxy-a37__main.webp","white":"images/cut/samsung-galaxy-a37__white.webp"},"samsung-galaxy-a55":{"main":"images/cut/samsung-galaxy-a55__main.webp"},"samsung-galaxy-a56":{"awesome-graphite":"images/cut/samsung-galaxy-a56__awesome-graphite.webp","awesome-light-gray":"images/cut/samsung-galaxy-a56__awesome-light-gray.webp","awesome-olive":"images/cut/samsung-galaxy-a56__awesome-olive.webp","awesome-pink":"images/cut/samsung-galaxy-a56__awesome-pink.webp","main":"images/cut/samsung-galaxy-a56__main.webp"},"samsung-galaxy-a57":{"awesome-gray":"images/cut/samsung-galaxy-a57__awesome-gray.webp","awesome-icyblue":"images/cut/samsung-galaxy-a57__awesome-icyblue.webp","awesome-lilac":"images/cut/samsung-galaxy-a57__awesome-lilac.webp","awesome-navy":"images/cut/samsung-galaxy-a57__awesome-navy.webp","main":"images/cut/samsung-galaxy-a57__main.webp"},"samsung-galaxy-active-2":{"black":"images/cut/samsung-galaxy-active-2__black.webp","main":"images/cut/samsung-galaxy-active-2__main.webp"},"samsung-galaxy-book-4-np750xgk-ks2us":{"main":"images/cut/samsung-galaxy-book-4-np750xgk-ks2us__main.webp"},"samsung-galaxy-book-6-np760xjg":{"main":"images/cut/samsung-galaxy-book-6-np760xjg__main.webp"},"samsung-galaxy-buds-3-pro":{"main":"images/cut/samsung-galaxy-buds-3-pro__main.webp","silver":"images/cut/samsung-galaxy-buds-3-pro__silver.webp","white":"images/cut/samsung-galaxy-buds-3-pro__white.webp"},"samsung-galaxy-buds-4-pro":{"black":"images/cut/samsung-galaxy-buds-4-pro__black.webp","main":"images/cut/samsung-galaxy-buds-4-pro__main.webp","white":"images/cut/samsung-galaxy-buds-4-pro__white.webp"},"samsung-galaxy-buds-4":{"black":"images/cut/samsung-galaxy-buds-4__black.webp","main":"images/cut/samsung-galaxy-buds-4__main.webp","white":"images/cut/samsung-galaxy-buds-4__white.webp"},"samsung-galaxy-buds-core":{"black":"images/cut/samsung-galaxy-buds-core__black.webp","main":"images/cut/samsung-galaxy-buds-core__main.webp","white":"images/cut/samsung-galaxy-buds-core__white.webp"},"samsung-galaxy-buds-fe":{"graphite":"images/cut/samsung-galaxy-buds-fe__graphite.webp","main":"images/cut/samsung-galaxy-buds-fe__main.webp"},"samsung-galaxy-buds-live":{"main":"images/cut/samsung-galaxy-buds-live__main.webp"},"samsung-galaxy-buds-pro-r190":{"main":"images/cut/samsung-galaxy-buds-pro-r190__main.webp"},"samsung-galaxy-fe":{"black":"images/cut/samsung-galaxy-fe__black.webp","blue":"images/cut/samsung-galaxy-fe__blue.webp","main":"images/cut/samsung-galaxy-fe__main.webp"},"samsung-galaxy-fit-3":{"gray":"images/cut/samsung-galaxy-fit-3__gray.webp","main":"images/cut/samsung-galaxy-fit-3__main.webp","pink-gold":"images/cut/samsung-galaxy-fit-3__pink-gold.webp"},"samsung-galaxy-s22plus":{"main":"images/cut/samsung-galaxy-s22plus__main.webp","phantom-black":"images/cut/samsung-galaxy-s22plus__phantom-black.webp"},"samsung-galaxy-s24-plus":{"main":"images/cut/samsung-galaxy-s24-plus__main.webp"},"samsung-galaxy-s24":{"main":"images/cut/samsung-galaxy-s24__main.webp"},"samsung-galaxy-s25-edge":{"main":"images/cut/samsung-galaxy-s25-edge__main.webp","titanium-icyblue":"images/cut/samsung-galaxy-s25-edge__titanium-icyblue.webp","titanium-jetblack":"images/cut/samsung-galaxy-s25-edge__titanium-jetblack.webp","titanium-silver":"images/cut/samsung-galaxy-s25-edge__titanium-silver.webp"},"samsung-galaxy-s25-fe":{"icyblue":"images/cut/samsung-galaxy-s25-fe__icyblue.webp","jetblack":"images/cut/samsung-galaxy-s25-fe__jetblack.webp","main":"images/cut/samsung-galaxy-s25-fe__main.webp","navy":"images/cut/samsung-galaxy-s25-fe__navy.webp","white":"images/cut/samsung-galaxy-s25-fe__white.webp"},"samsung-galaxy-s25-plus":{"icyblue":"images/cut/samsung-galaxy-s25-plus__icyblue.webp","main":"images/cut/samsung-galaxy-s25-plus__main.webp","silver-shadow":"images/cut/samsung-galaxy-s25-plus__silver-shadow.webp"},"samsung-galaxy-s25-ultra":{"main":"images/cut/samsung-galaxy-s25-ultra__main.webp","titanium-black":"images/cut/samsung-galaxy-s25-ultra__titanium-black.webp","titanium-gray":"images/cut/samsung-galaxy-s25-ultra__titanium-gray.webp","titanium-silverblue":"images/cut/samsung-galaxy-s25-ultra__titanium-silverblue.webp","titanium-whitesilver":"images/cut/samsung-galaxy-s25-ultra__titanium-whitesilver.webp"},"samsung-galaxy-s25":{"icy-blue":"images/cut/samsung-galaxy-s25__icy-blue.webp","main":"images/cut/samsung-galaxy-s25__main.webp","mint":"images/cut/samsung-galaxy-s25__mint.webp","navy":"images/cut/samsung-galaxy-s25__navy.webp","silver-shadow":"images/cut/samsung-galaxy-s25__silver-shadow.webp"},"samsung-galaxy-s26-fe":{"graphite":"images/cut/samsung-galaxy-s26-fe__graphite.webp","main":"images/cut/samsung-galaxy-s26-fe__main.webp","navy":"images/cut/samsung-galaxy-s26-fe__navy.webp","pistachio":"images/cut/samsung-galaxy-s26-fe__pistachio.webp"},"samsung-galaxy-s26-plus":{"black":"images/cut/samsung-galaxy-s26-plus__black.webp","cobalt-violet":"images/cut/samsung-galaxy-s26-plus__cobalt-violet.webp","main":"images/cut/samsung-galaxy-s26-plus__main.webp","sky-blue":"images/cut/samsung-galaxy-s26-plus__sky-blue.webp","white":"images/cut/samsung-galaxy-s26-plus__white.webp"},"samsung-galaxy-s26-ultra":{"black":"images/cut/samsung-galaxy-s26-ultra__black.webp","cobalt-violet":"images/cut/samsung-galaxy-s26-ultra__cobalt-violet.webp","main":"images/cut/samsung-galaxy-s26-ultra__main.webp","pink-gold":"images/cut/samsung-galaxy-s26-ultra__pink-gold.webp","silver-shadow":"images/cut/samsung-galaxy-s26-ultra__silver-shadow.webp","sky-blue":"images/cut/samsung-galaxy-s26-ultra__sky-blue.webp","white":"images/cut/samsung-galaxy-s26-ultra__white.webp"},"samsung-galaxy-s26":{"black":"images/cut/samsung-galaxy-s26__black.webp","cobalt-violet":"images/cut/samsung-galaxy-s26__cobalt-violet.webp","main":"images/cut/samsung-galaxy-s26__main.webp","pink-gold":"images/cut/samsung-galaxy-s26__pink-gold.webp","silver-shadow":"images/cut/samsung-galaxy-s26__silver-shadow.webp","sky-blue":"images/cut/samsung-galaxy-s26__sky-blue.webp","white":"images/cut/samsung-galaxy-s26__white.webp"},"samsung-galaxy-tab-a11-plus":{"gray":"images/cut/samsung-galaxy-tab-a11-plus__gray.webp","main":"images/cut/samsung-galaxy-tab-a11-plus__main.webp","silver":"images/cut/samsung-galaxy-tab-a11-plus__silver.webp"},"samsung-galaxy-tab-a11":{"gray":"images/cut/samsung-galaxy-tab-a11__gray.webp","main":"images/cut/samsung-galaxy-tab-a11__main.webp","silver":"images/cut/samsung-galaxy-tab-a11__silver.webp"},"samsung-galaxy-tab-a8-10-5-x200":{"gray":"images/cut/samsung-galaxy-tab-a8-10-5-x200__gray.webp","main":"images/cut/samsung-galaxy-tab-a8-10-5-x200__main.webp"},"samsung-galaxy-tab-a9-x110":{"graphite":"images/cut/samsung-galaxy-tab-a9-x110__graphite.webp","main":"images/cut/samsung-galaxy-tab-a9-x110__main.webp"},"samsung-galaxy-tab-a9plus-x210":{"graphite":"images/cut/samsung-galaxy-tab-a9plus-x210__graphite.webp","main":"images/cut/samsung-galaxy-tab-a9plus-x210__main.webp","navy":"images/cut/samsung-galaxy-tab-a9plus-x210__navy.webp","silver":"images/cut/samsung-galaxy-tab-a9plus-x210__silver.webp"},"samsung-galaxy-tab-s10-fe":{"blue":"images/cut/samsung-galaxy-tab-s10-fe__blue.webp","gray":"images/cut/samsung-galaxy-tab-s10-fe__gray.webp","main":"images/cut/samsung-galaxy-tab-s10-fe__main.webp","silver":"images/cut/samsung-galaxy-tab-s10-fe__silver.webp"},"samsung-galaxy-tab-s10-lite":{"coral-red":"images/cut/samsung-galaxy-tab-s10-lite__coral-red.webp","gray":"images/cut/samsung-galaxy-tab-s10-lite__gray.webp","main":"images/cut/samsung-galaxy-tab-s10-lite__main.webp","silver":"images/cut/samsung-galaxy-tab-s10-lite__silver.webp"},"samsung-galaxy-tab-s11-ultra":{"gray":"images/cut/samsung-galaxy-tab-s11-ultra__gray.webp","main":"images/cut/samsung-galaxy-tab-s11-ultra__main.webp","silver":"images/cut/samsung-galaxy-tab-s11-ultra__silver.webp"},"samsung-galaxy-tab-s8-plus":{"graphite":"images/cut/samsung-galaxy-tab-s8-plus__graphite.webp","main":"images/cut/samsung-galaxy-tab-s8-plus__main.webp","pink-gold":"images/cut/samsung-galaxy-tab-s8-plus__pink-gold.webp"},"samsung-galaxy-tab-s8":{"main":"images/cut/samsung-galaxy-tab-s8__main.webp","pink-gold":"images/cut/samsung-galaxy-tab-s8__pink-gold.webp","silver":"images/cut/samsung-galaxy-tab-s8__silver.webp"},"samsung-galaxy-tab-s9-fe-x510":{"gray":"images/cut/samsung-galaxy-tab-s9-fe-x510__gray.webp","lavender":"images/cut/samsung-galaxy-tab-s9-fe-x510__lavender.webp","main":"images/cut/samsung-galaxy-tab-s9-fe-x510__main.webp","mint":"images/cut/samsung-galaxy-tab-s9-fe-x510__mint.webp","silver":"images/cut/samsung-galaxy-tab-s9-fe-x510__silver.webp"},"samsung-galaxy-tab-s9-plus":{"beige":"images/cut/samsung-galaxy-tab-s9-plus__beige.webp","graphite":"images/cut/samsung-galaxy-tab-s9-plus__graphite.webp","main":"images/cut/samsung-galaxy-tab-s9-plus__main.webp"},"samsung-galaxy-tab-s9-ultra":{"beige":"images/cut/samsung-galaxy-tab-s9-ultra__beige.webp","graphite":"images/cut/samsung-galaxy-tab-s9-ultra__graphite.webp","main":"images/cut/samsung-galaxy-tab-s9-ultra__main.webp"},"samsung-galaxy-tab-s9":{"graphite":"images/cut/samsung-galaxy-tab-s9__graphite.webp","main":"images/cut/samsung-galaxy-tab-s9__main.webp"},"samsung-galaxy-ultra-47mm-2024":{"main":"images/cut/samsung-galaxy-ultra-47mm-2024__main.webp","titanium-gray":"images/cut/samsung-galaxy-ultra-47mm-2024__titanium-gray.webp","titanium-silver":"images/cut/samsung-galaxy-ultra-47mm-2024__titanium-silver.webp","titanium-white":"images/cut/samsung-galaxy-ultra-47mm-2024__titanium-white.webp"},"samsung-galaxy-ultra-47mm-2025":{"main":"images/cut/samsung-galaxy-ultra-47mm-2025__main.webp","titanium-black":"images/cut/samsung-galaxy-ultra-47mm-2025__titanium-black.webp","titanium-blue":"images/cut/samsung-galaxy-ultra-47mm-2025__titanium-blue.webp","titanium-gray":"images/cut/samsung-galaxy-ultra-47mm-2025__titanium-gray.webp","titanium-white":"images/cut/samsung-galaxy-ultra-47mm-2025__titanium-white.webp"},"samsung-galaxy-watch-3-41mm":{"main":"images/cut/samsung-galaxy-watch-3-41mm__main.webp"},"samsung-galaxy-watch-7":{"cream":"images/cut/samsung-galaxy-watch-7__cream.webp","green":"images/cut/samsung-galaxy-watch-7__green.webp","main":"images/cut/samsung-galaxy-watch-7__main.webp"},"samsung-galaxy-watch-8-classic":{"black":"images/cut/samsung-galaxy-watch-8-classic__black.webp","main":"images/cut/samsung-galaxy-watch-8-classic__main.webp","white":"images/cut/samsung-galaxy-watch-8-classic__white.webp"},"samsung-galaxy-watch-8":{"graphite":"images/cut/samsung-galaxy-watch-8__graphite.webp","main":"images/cut/samsung-galaxy-watch-8__main.webp","silver":"images/cut/samsung-galaxy-watch-8__silver.webp"},"samsung-galaxy-watch-fit-3":{"main":"images/cut/samsung-galaxy-watch-fit-3__main.webp"},"samsung-galaxy-watch-ultra-2":{"main":"images/cut/samsung-galaxy-watch-ultra-2__main.webp","titanium-gray":"images/cut/samsung-galaxy-watch-ultra-2__titanium-gray.webp","titanium-silver":"images/cut/samsung-galaxy-watch-ultra-2__titanium-silver.webp"},"samsung-galaxy-watch4-40-mm":{"black":"images/cut/samsung-galaxy-watch4-40-mm__black.webp","main":"images/cut/samsung-galaxy-watch4-40-mm__main.webp"},"samsung-galaxy-z-flip-7-fe":{"black":"images/cut/samsung-galaxy-z-flip-7-fe__black.webp","main":"images/cut/samsung-galaxy-z-flip-7-fe__main.webp","white":"images/cut/samsung-galaxy-z-flip-7-fe__white.webp"},"samsung-galaxy-z-flip-7":{"blue-shadow":"images/cut/samsung-galaxy-z-flip-7__blue-shadow.webp","coralred":"images/cut/samsung-galaxy-z-flip-7__coralred.webp","jetblack":"images/cut/samsung-galaxy-z-flip-7__jetblack.webp","main":"images/cut/samsung-galaxy-z-flip-7__main.webp","mint":"images/cut/samsung-galaxy-z-flip-7__mint.webp"},"samsung-galaxy-z-flip-8":{"graphite":"images/cut/samsung-galaxy-z-flip-8__graphite.webp","main":"images/cut/samsung-galaxy-z-flip-8__main.webp","pink":"images/cut/samsung-galaxy-z-flip-8__pink.webp"},"samsung-galaxy-z-fold-5":{"icy-blue":"images/cut/samsung-galaxy-z-fold-5__icy-blue.webp","main":"images/cut/samsung-galaxy-z-fold-5__main.webp","phantom-black":"images/cut/samsung-galaxy-z-fold-5__phantom-black.webp"},"samsung-galaxy-z-fold-6":{"main":"images/cut/samsung-galaxy-z-fold-6__main.webp","pink":"images/cut/samsung-galaxy-z-fold-6__pink.webp","silver-shadow":"images/cut/samsung-galaxy-z-fold-6__silver-shadow.webp"},"samsung-galaxy-z-fold-7":{"blue-shadow":"images/cut/samsung-galaxy-z-fold-7__blue-shadow.webp","jetblack":"images/cut/samsung-galaxy-z-fold-7__jetblack.webp","main":"images/cut/samsung-galaxy-z-fold-7__main.webp","mint":"images/cut/samsung-galaxy-z-fold-7__mint.webp","silver-shadow":"images/cut/samsung-galaxy-z-fold-7__silver-shadow.webp"},"samsung-galaxy-z-fold-8-ultra":{"cream":"images/cut/samsung-galaxy-z-fold-8-ultra__cream.webp","graphite":"images/cut/samsung-galaxy-z-fold-8-ultra__graphite.webp","green-shadow":"images/cut/samsung-galaxy-z-fold-8-ultra__green-shadow.webp","main":"images/cut/samsung-galaxy-z-fold-8-ultra__main.webp","violet-shadow":"images/cut/samsung-galaxy-z-fold-8-ultra__violet-shadow.webp"},"samsung-galaxy-z-fold-8":{"cream":"images/cut/samsung-galaxy-z-fold-8__cream.webp","graphite":"images/cut/samsung-galaxy-z-fold-8__graphite.webp","lavender":"images/cut/samsung-galaxy-z-fold-8__lavender.webp","main":"images/cut/samsung-galaxy-z-fold-8__main.webp","pistachio":"images/cut/samsung-galaxy-z-fold-8__pistachio.webp"},"samsung-ls22a330nhm":{"main":"images/cut/samsung-ls22a330nhm__main.webp"},"samsung-ls24d304gau":{"main":"images/cut/samsung-ls24d304gau__main.webp"},"samsung-ls27bg400euxen":{"main":"images/cut/samsung-ls27bg400euxen__main.webp"},"samsung-ls27bg650eu":{"main":"images/cut/samsung-ls27bg650eu__main.webp"},"samsung-ls27dg300eu":{"main":"images/cut/samsung-ls27dg300eu__main.webp"},"samsung-ls32cg554eu":{"main":"images/cut/samsung-ls32cg554eu__main.webp"},"samsung-ls32d700eau":{"main":"images/cut/samsung-ls32d700eau__main.webp"},"samsung-ls32fm700uu":{"main":"images/cut/samsung-ls32fm700uu__main.webp"},"samsung-ls34c500gau":{"main":"images/cut/samsung-ls34c500gau__main.webp"},"samsung-m5-ls24am506nm":{"main":"images/cut/samsung-m5-ls24am506nm__main.webp"},"samsung-mre55r85hauxpy":{"main":"images/cut/samsung-mre55r85hauxpy__main.webp"},"samsung-mre75r95hauxpy":{"main":"images/cut/samsung-mre75r95hauxpy__main.webp"},"samsung-odyssey-ark-55-ls55cg97wnixci":{"main":"images/cut/samsung-odyssey-ark-55-ls55cg97wnixci__main.webp"},"samsung-odyssey-g3-24-s24ag304nr":{"main":"images/cut/samsung-odyssey-g3-24-s24ag304nr__main.webp"},"samsung-odyssey-g4-ls25bg400eixci":{"main":"images/cut/samsung-odyssey-g4-ls25bg400eixci__main.webp"},"samsung-odyssey-g5-s32cg552eu":{"main":"images/cut/samsung-odyssey-g5-s32cg552eu__main.webp"},"samsung-odyssey-g8-oled-34-s34bg850su":{"main":"images/cut/samsung-odyssey-g8-oled-34-s34bg850su__main.webp"},"samsung-qa55q80aauxzn":{"main":"images/cut/samsung-qa55q80aauxzn__main.webp"},"samsung-qa55s90dauxzn":{"main":"images/cut/samsung-qa55s90dauxzn__main.webp"},"samsung-qa65q60abuxzn":{"main":"images/cut/samsung-qa65q60abuxzn__main.webp"},"samsung-qe43q60ba":{"main":"images/cut/samsung-qe43q60ba__main.webp"},"samsung-qe43q7faauxru":{"main":"images/cut/samsung-qe43q7faauxru__main.webp"},"samsung-qe43qn70hauxpy":{"main":"images/cut/samsung-qe43qn70hauxpy__main.webp"},"samsung-qe48s90faexru":{"main":"images/cut/samsung-qe48s90faexru__main.webp"},"samsung-qe48s90haexpy":{"main":"images/cut/samsung-qe48s90haexpy__main.webp"},"samsung-qe50q7faauxru":{"main":"images/cut/samsung-qe50q7faauxru__main.webp"},"samsung-qe50qn70hauxpy":{"main":"images/cut/samsung-qe50qn70hauxpy__main.webp"},"samsung-qe55ls03bauxce":{"main":"images/cut/samsung-qe55ls03bauxce__main.webp"},"samsung-qe55q60abuxru":{"main":"images/cut/samsung-qe55q60abuxru__main.webp"},"samsung-qe55q70tauxce":{"main":"images/cut/samsung-qe55q70tauxce__main.webp"},"samsung-qe55q7faauxru":{"main":"images/cut/samsung-qe55q7faauxru__main.webp"},"samsung-qe55q7fam":{"main":"images/cut/samsung-qe55q7fam__main.webp"},"samsung-qe55qn80fauxru":{"main":"images/cut/samsung-qe55qn80fauxru__main.webp"},"samsung-qe55qn80hauxpy":{"main":"images/cut/samsung-qe55qn80hauxpy__main.webp"},"samsung-qe55s85haexpy":{"main":"images/cut/samsung-qe55s85haexpy__main.webp"},"samsung-qe55s90hauxpy":{"main":"images/cut/samsung-qe55s90hauxpy__main.webp"},"samsung-qe55s95cauxru":{"main":"images/cut/samsung-qe55s95cauxru__main.webp"},"samsung-qe65q60dauxce":{"main":"images/cut/samsung-qe65q60dauxce__main.webp"},"samsung-qe65q7faauxru":{"main":"images/cut/samsung-qe65q7faauxru__main.webp"},"samsung-qe65qn80hauxpy":{"main":"images/cut/samsung-qe65qn80hauxpy__main.webp"},"samsung-qe65qn85dbuxru":{"main":"images/cut/samsung-qe65qn85dbuxru__main.webp"},"samsung-qe65qn900duxru":{"main":"images/cut/samsung-qe65qn900duxru__main.webp"},"samsung-qe65qn90fauxru":{"main":"images/cut/samsung-qe65qn90fauxru__main.webp"},"samsung-qe65qn990fuxru":{"main":"images/cut/samsung-qe65qn990fuxru__main.webp"},"samsung-qe65s85haexpy":{"main":"images/cut/samsung-qe65s85haexpy__main.webp"},"samsung-qe65s90dauxru":{"main":"images/cut/samsung-qe65s90dauxru__main.webp"},"samsung-qe65s90faexru":{"main":"images/cut/samsung-qe65s90faexru__main.webp"},"samsung-qe65s95fauxru":{"main":"images/cut/samsung-qe65s95fauxru__main.webp"},"samsung-qe65s95hauxpy":{"main":"images/cut/samsung-qe65s95hauxpy__main.webp"},"samsung-qe75q60dauxru":{"main":"images/cut/samsung-qe75q60dauxru__main.webp"},"samsung-qe75q70dauxru":{"main":"images/cut/samsung-qe75q70dauxru__main.webp"},"samsung-qe75qn70fauxru":{"main":"images/cut/samsung-qe75qn70fauxru__main.webp"},"samsung-qe75qn70hauxpy":{"main":"images/cut/samsung-qe75qn70hauxpy__main.webp"},"samsung-qe75qn80fauxru":{"main":"images/cut/samsung-qe75qn80fauxru__main.webp"},"samsung-qe75qn90cauxru":{"main":"images/cut/samsung-qe75qn90cauxru__main.webp"},"samsung-qe77s90faexru":{"main":"images/cut/samsung-qe77s90faexru__main.webp"},"samsung-qe77s95fauxru":{"main":"images/cut/samsung-qe77s95fauxru__main.webp"},"samsung-qe83s90daexru":{"main":"images/cut/samsung-qe83s90daexru__main.webp"},"samsung-qe83s90haexpy":{"main":"images/cut/samsung-qe83s90haexpy__main.webp"},"samsung-qe85q60dauxru":{"main":"images/cut/samsung-qe85q60dauxru__main.webp"},"samsung-qe85qn800auxru":{"main":"images/cut/samsung-qe85qn800auxru__main.webp"},"samsung-qe85qn85dbuxce":{"main":"images/cut/samsung-qe85qn85dbuxce__main.webp"},"samsung-qe85qn90bauxce":{"main":"images/cut/samsung-qe85qn90bauxce__main.webp"},"samsung-qe85qn90cauxru":{"main":"images/cut/samsung-qe85qn90cauxru__main.webp"},"samsung-s27d402g":{"main":"images/cut/samsung-s27d402g__main.webp"},"samsung-ua32t5300auxtw":{"main":"images/cut/samsung-ua32t5300auxtw__main.webp"},"samsung-ua43bu8000uxzn":{"main":"images/cut/samsung-ua43bu8000uxzn__main.webp"},"samsung-ua43bu8500uxzn":{"main":"images/cut/samsung-ua43bu8500uxzn__main.webp"},"samsung-ua43cu8000uxzn":{"main":"images/cut/samsung-ua43cu8000uxzn__main.webp"},"samsung-ua50bu8000uxzn":{"main":"images/cut/samsung-ua50bu8000uxzn__main.webp"},"samsung-ua50bu8500uxzn":{"main":"images/cut/samsung-ua50bu8500uxzn__main.webp"},"samsung-ua55bu8000uxzn":{"main":"images/cut/samsung-ua55bu8000uxzn__main.webp"},"samsung-ua65bu8000uxtw":{"main":"images/cut/samsung-ua65bu8000uxtw__main.webp"},"samsung-ue32f6000fuxru":{"main":"images/cut/samsung-ue32f6000fuxru__main.webp"},"samsung-ue43du7100uxru":{"main":"images/cut/samsung-ue43du7100uxru__main.webp"},"samsung-ue43m70hauxpy":{"main":"images/cut/samsung-ue43m70hauxpy__main.webp"},"samsung-ue43u8000huxpy":{"main":"images/cut/samsung-ue43u8000huxpy__main.webp"},"samsung-ue50u8000huxpy":{"main":"images/cut/samsung-ue50u8000huxpy__main.webp"},"samsung-ue55du8000uxru":{"main":"images/cut/samsung-ue55du8000uxru__main.webp"},"samsung-ue55m70hauxpy":{"main":"images/cut/samsung-ue55m70hauxpy__main.webp"},"samsung-ue55m80hauxpy":{"main":"images/cut/samsung-ue55m80hauxpy__main.webp"},"samsung-ue55u8000fuxru":{"main":"images/cut/samsung-ue55u8000fuxru__main.webp"},"samsung-ue65du8000uxce":{"main":"images/cut/samsung-ue65du8000uxce__main.webp"},"samsung-ue65m70hauxpy":{"main":"images/cut/samsung-ue65m70hauxpy__main.webp"},"samsung-ue65m80hauxpy":{"main":"images/cut/samsung-ue65m80hauxpy__main.webp"},"samsung-ue65u8000fuxru":{"main":"images/cut/samsung-ue65u8000fuxru__main.webp"},"samsung-ue65u8000huxpy":{"main":"images/cut/samsung-ue65u8000huxpy__main.webp"},"samsung-ue75m70hauxpy":{"main":"images/cut/samsung-ue75m70hauxpy__main.webp"},"samsung-ue75m80hauxpy":{"main":"images/cut/samsung-ue75m80hauxpy__main.webp"},"samsung-ue75u8000huxpy":{"main":"images/cut/samsung-ue75u8000huxpy__main.webp"},"samsung-ue85m80hauxpy":{"main":"images/cut/samsung-ue85m80hauxpy__main.webp"},"samsung-ue98du9000uxru":{"main":"images/cut/samsung-ue98du9000uxru__main.webp"},"sennheiser-accentum-plus":{"main":"images/cut/sennheiser-accentum-plus__main.webp"},"sennheiser-accentum-true-wireless-atw1":{"main":"images/cut/sennheiser-accentum-true-wireless-atw1__main.webp"},"sennheiser-accentum-wireless-acaebt":{"main":"images/cut/sennheiser-accentum-wireless-acaebt__main.webp"},"sennheiser-hd-450bt":{"main":"images/cut/sennheiser-hd-450bt__main.webp"},"sennheiser-hd-599":{"main":"images/cut/sennheiser-hd-599__main.webp"},"sennheiser-hd-620s":{"main":"images/cut/sennheiser-hd-620s__main.webp"},"sennheiser-momentum-4":{"black":"images/cut/sennheiser-momentum-4__black.webp","graphite":"images/cut/sennheiser-momentum-4__graphite.webp","main":"images/cut/sennheiser-momentum-4__main.webp","white":"images/cut/sennheiser-momentum-4__white.webp"},"sennheiser-momentum-sport-msport1":{"main":"images/cut/sennheiser-momentum-sport-msport1__main.webp"},"sennheiser-rs-195":{"main":"images/cut/sennheiser-rs-195__main.webp"},"sonos-ace":{"main":"images/cut/sonos-ace__main.webp"},"sonos-arc":{"main":"images/cut/sonos-arc__main.webp"},"sonos-era-300":{"main":"images/cut/sonos-era-300__main.webp"},"sony-inzone-h5":{"main":"images/cut/sony-inzone-h5__main.webp"},"sony-k-43s30":{"main":"images/cut/sony-k-43s30__main.webp"},"sony-k-50s30":{"main":"images/cut/sony-k-50s30__main.webp"},"sony-k-55s30":{"main":"images/cut/sony-k-55s30__main.webp"},"sony-k-55xr50":{"main":"images/cut/sony-k-55xr50__main.webp"},"sony-k-65s30":{"main":"images/cut/sony-k-65s30__main.webp"},"sony-k-65xr50":{"main":"images/cut/sony-k-65xr50__main.webp"},"sony-k-65xr70":{"main":"images/cut/sony-k-65xr70__main.webp"},"sony-k-65xr80m2":{"main":"images/cut/sony-k-65xr80m2__main.webp"},"sony-k-75s30":{"main":"images/cut/sony-k-75s30__main.webp"},"sony-k-75xr50":{"main":"images/cut/sony-k-75xr50__main.webp"},"sony-k-75xr70":{"main":"images/cut/sony-k-75xr70__main.webp"},"sony-k50s20m2":{"main":"images/cut/sony-k50s20m2__main.webp"},"sony-k55xr80":{"main":"images/cut/sony-k55xr80__main.webp"},"sony-k65s20m2":{"main":"images/cut/sony-k65s20m2__main.webp"},"sony-kd-55x85l":{"main":"images/cut/sony-kd-55x85l__main.webp"},"sony-kd-65x85l":{"main":"images/cut/sony-kd-65x85l__main.webp"},"sony-mdr-xb450ap":{"blue":"images/cut/sony-mdr-xb450ap__blue.webp","red":"images/cut/sony-mdr-xb450ap__red.webp"},"sony-mdr-zx110":{"main":"images/cut/sony-mdr-zx110__main.webp","white":"images/cut/sony-mdr-zx110__white.webp"},"sony-mhc-v73d":{"black":"images/cut/sony-mhc-v73d__black.webp"},"sony-playstation-dualsense-ps5":{"black":"images/cut/sony-playstation-dualsense-ps5__black.webp","cosmic-red":"images/cut/sony-playstation-dualsense-ps5__cosmic-red.webp","main":"images/cut/sony-playstation-dualsense-ps5__main.webp","purple":"images/cut/sony-playstation-dualsense-ps5__purple.webp","starlight-blue":"images/cut/sony-playstation-dualsense-ps5__starlight-blue.webp","sterling-silver":"images/cut/sony-playstation-dualsense-ps5__sterling-silver.webp"},"sony-playstation-portal":{"main":"images/cut/sony-playstation-portal__main.webp","white":"images/cut/sony-playstation-portal__white.webp"},"sony-playstation-vr2-horizon":{"main":"images/cut/sony-playstation-vr2-horizon__main.webp"},"sony-playstation-vr2":{"main":"images/cut/sony-playstation-vr2__main.webp"},"sony-ps4-stereo-gaming":{"main":"images/cut/sony-ps4-stereo-gaming__main.webp"},"sony-ps5-backbone":{"main":"images/cut/sony-ps5-backbone__main.webp"},"sony-ps5-driving-force-hori-racing-wheel":{"main":"images/cut/sony-ps5-driving-force-hori-racing-wheel__main.webp"},"sony-ps5-dualsense-astro-bot":{"main":"images/cut/sony-ps5-dualsense-astro-bot__main.webp"},"sony-ps5-dualsense-death-stranding-2-edition":{"main":"images/cut/sony-ps5-dualsense-death-stranding-2-edition__main.webp"},"sony-ps5-dualsense-edge":{"main":"images/cut/sony-ps5-dualsense-edge__main.webp"},"sony-ps5-dualsense-genshin-impact-edition":{"main":"images/cut/sony-ps5-dualsense-genshin-impact-edition__main.webp"},"sony-ps5-dualsense-god-of-war-20th-anniversary-edition":{"main":"images/cut/sony-ps5-dualsense-god-of-war-20th-anniversary-edition__main.webp"},"sony-ps5-dualsense-hyperpop-collection-remix":{"green":"images/cut/sony-ps5-dualsense-hyperpop-collection-remix__green.webp","main":"images/cut/sony-ps5-dualsense-hyperpop-collection-remix__main.webp"},"sony-ps5-dualsense-hyperpop-collection-rhythm":{"blue":"images/cut/sony-ps5-dualsense-hyperpop-collection-rhythm__blue.webp","main":"images/cut/sony-ps5-dualsense-hyperpop-collection-rhythm__main.webp"},"sony-ps5-dualsense-hyperpop-collection-techno":{"main":"images/cut/sony-ps5-dualsense-hyperpop-collection-techno__main.webp","red":"images/cut/sony-ps5-dualsense-hyperpop-collection-techno__red.webp"},"sony-ps5-dualsense":{"main":"images/cut/sony-ps5-dualsense__main.webp"},"sony-ps5-hd-camera":{"main":"images/cut/sony-ps5-hd-camera__main.webp"},"sony-ps5-pro":{"main":"images/cut/sony-ps5-pro__main.webp","white":"images/cut/sony-ps5-pro__white.webp"},"sony-ps5-pulse-elite-wireless":{"main":"images/cut/sony-ps5-pulse-elite-wireless__main.webp"},"sony-ps5-slim":{"main":"images/cut/sony-ps5-slim__main.webp","white":"images/cut/sony-ps5-slim__white.webp"},"sony-pulse-explore":{"main":"images/cut/sony-pulse-explore__main.webp"},"sony-srs-ult10":{"black":"images/cut/sony-srs-ult10__black.webp"},"sony-srs-xb100":{"blue":"images/cut/sony-srs-xb100__blue.webp","white":"images/cut/sony-srs-xb100__white.webp"},"sony-srs-xb13":{"blue":"images/cut/sony-srs-xb13__blue.webp"},"sony-srs-xe200":{"black":"images/cut/sony-srs-xe200__black.webp","blue":"images/cut/sony-srs-xe200__blue.webp","white":"images/cut/sony-srs-xe200__white.webp"},"sony-srs-xp500":{"main":"images/cut/sony-srs-xp500__main.webp"},"sony-srs-xv900":{"black":"images/cut/sony-srs-xv900__black.webp"},"sony-wf-1000xm3":{"silver":"images/cut/sony-wf-1000xm3__silver.webp"},"sony-wf-1000xm5-wireless-headphones":{"main":"images/cut/sony-wf-1000xm5-wireless-headphones__main.webp"},"sony-wf-1000xm6":{"black":"images/cut/sony-wf-1000xm6__black.webp","main":"images/cut/sony-wf-1000xm6__main.webp"},"sony-wf-c500-true-wireless":{"main":"images/cut/sony-wf-c500-true-wireless__main.webp"},"sony-wf-c500n":{"orange":"images/cut/sony-wf-c500n__orange.webp"},"sony-wf-c510-yc":{"blue":"images/cut/sony-wf-c510-yc__blue.webp","main":"images/cut/sony-wf-c510-yc__main.webp","yellow":"images/cut/sony-wf-c510-yc__yellow.webp"},"sony-wf-c700n-gz-e":{"green":"images/cut/sony-wf-c700n-gz-e__green.webp","lavender":"images/cut/sony-wf-c700n-gz-e__lavender.webp","main":"images/cut/sony-wf-c700n-gz-e__main.webp"},"sony-wf-c710n":{"main":"images/cut/sony-wf-c710n__main.webp"},"sony-wf-sp800n":{"blue":"images/cut/sony-wf-sp800n__blue.webp"},"sony-wh-1000xm5":{"main":"images/cut/sony-wh-1000xm5__main.webp","pink":"images/cut/sony-wh-1000xm5__pink.webp","silver":"images/cut/sony-wh-1000xm5__silver.webp"},"sony-wh-1000xm6":{"black":"images/cut/sony-wh-1000xm6__black.webp","main":"images/cut/sony-wh-1000xm6__main.webp","midnight-blue":"images/cut/sony-wh-1000xm6__midnight-blue.webp","platinum-silver":"images/cut/sony-wh-1000xm6__platinum-silver.webp"},"sony-wh-ch520":{"main":"images/cut/sony-wh-ch520__main.webp","pink":"images/cut/sony-wh-ch520__pink.webp"},"sony-wh-ch720n":{"black":"images/cut/sony-wh-ch720n__black.webp","main":"images/cut/sony-wh-ch720n__main.webp","pink":"images/cut/sony-wh-ch720n__pink.webp","white":"images/cut/sony-wh-ch720n__white.webp"},"sony-wh-g900n-wz-e":{"main":"images/cut/sony-wh-g900n-wz-e__main.webp"},"sony-wh-ult900n":{"black":"images/cut/sony-wh-ult900n__black.webp","gray":"images/cut/sony-wh-ult900n__gray.webp","white":"images/cut/sony-wh-ult900n__white.webp"},"sony-xperia-10v":{"main":"images/cut/sony-xperia-10v__main.webp"},"starlink-mini-kit":{"main":"images/cut/starlink-mini-kit__main.webp"},"starlink-standard-kit":{"main":"images/cut/starlink-standard-kit__main.webp"},"tcl-115c7k":{"main":"images/cut/tcl-115c7k__main.webp"},"tcl-32s5k":{"main":"images/cut/tcl-32s5k__main.webp"},"tcl-43p7k":{"main":"images/cut/tcl-43p7k__main.webp"},"tcl-43v6c":{"main":"images/cut/tcl-43v6c__main.webp"},"tcl-43v6d":{"main":"images/cut/tcl-43v6d__main.webp"},"tcl-50c6k":{"main":"images/cut/tcl-50c6k__main.webp"},"tcl-50p7l":{"main":"images/cut/tcl-50p7l__main.webp"},"tcl-50s5k":{"main":"images/cut/tcl-50s5k__main.webp"},"tcl-50v6c":{"main":"images/cut/tcl-50v6c__main.webp"},"tcl-55c6k":{"main":"images/cut/tcl-55c6k__main.webp"},"tcl-55c7k":{"main":"images/cut/tcl-55c7k__main.webp"},"tcl-55p7k":{"main":"images/cut/tcl-55p7k__main.webp"},"tcl-55p8l":{"main":"images/cut/tcl-55p8l__main.webp"},"tcl-55v6c":{"main":"images/cut/tcl-55v6c__main.webp"},"tcl-65c6k":{"main":"images/cut/tcl-65c6k__main.webp"},"tcl-65c7l":{"main":"images/cut/tcl-65c7l__main.webp"},"tcl-65p8k":{"main":"images/cut/tcl-65p8k__main.webp"},"tcl-65p8l":{"main":"images/cut/tcl-65p8l__main.webp"},"tcl-65t6d":{"main":"images/cut/tcl-65t6d__main.webp"},"tcl-75c6k":{"main":"images/cut/tcl-75c6k__main.webp"},"tcl-75c7k":{"main":"images/cut/tcl-75c7k__main.webp"},"tcl-75t6d":{"main":"images/cut/tcl-75t6d__main.webp"},"tcl-75v6d":{"main":"images/cut/tcl-75v6d__main.webp"},"tcl-85p7l":{"main":"images/cut/tcl-85p7l__main.webp"},"tcl-85p8l":{"main":"images/cut/tcl-85p8l__main.webp"},"tcl-98c6k":{"main":"images/cut/tcl-98c6k__main.webp"},"tcl-98p8k":{"main":"images/cut/tcl-98p8k__main.webp"},"toshiba-32v35me":{"main":"images/cut/toshiba-32v35me__main.webp"},"toshiba-32v35re":{"main":"images/cut/toshiba-32v35re__main.webp"},"toshiba-43c350ke":{"main":"images/cut/toshiba-43c350ke__main.webp"},"toshiba-43c350le":{"main":"images/cut/toshiba-43c350le__main.webp"},"toshiba-43c350re":{"main":"images/cut/toshiba-43c350re__main.webp"},"toshiba-43c450ke":{"main":"images/cut/toshiba-43c450ke__main.webp"},"toshiba-43c450me":{"main":"images/cut/toshiba-43c450me__main.webp"},"toshiba-43m450re":{"main":"images/cut/toshiba-43m450re__main.webp"},"toshiba-43v35re":{"main":"images/cut/toshiba-43v35re__main.webp"},"toshiba-50c350re":{"main":"images/cut/toshiba-50c350re__main.webp"},"toshiba-50m450re":{"main":"images/cut/toshiba-50m450re__main.webp"},"toshiba-50m550le":{"main":"images/cut/toshiba-50m550le__main.webp"},"toshiba-50v37se":{"main":"images/cut/toshiba-50v37se__main.webp"},"toshiba-55c350ne":{"main":"images/cut/toshiba-55c350ne__main.webp"},"toshiba-55c350re":{"main":"images/cut/toshiba-55c350re__main.webp"},"toshiba-55c450me":{"main":"images/cut/toshiba-55c450me__main.webp"},"toshiba-55z670me":{"main":"images/cut/toshiba-55z670me__main.webp"},"toshiba-55z670re":{"main":"images/cut/toshiba-55z670re__main.webp"},"toshiba-55z680se":{"main":"images/cut/toshiba-55z680se__main.webp"},"toshiba-65c350re":{"main":"images/cut/toshiba-65c350re__main.webp"},"toshiba-65c450me":{"main":"images/cut/toshiba-65c450me__main.webp"},"toshiba-65z670re":{"main":"images/cut/toshiba-65z670re__main.webp"},"toshiba-65z680se":{"main":"images/cut/toshiba-65z680se__main.webp"},"toshiba-65z770re":{"main":"images/cut/toshiba-65z770re__main.webp"},"toshiba-75c350ne":{"main":"images/cut/toshiba-75c350ne__main.webp"},"toshiba-75z670re":{"main":"images/cut/toshiba-75z670re__main.webp"},"toshiba-85c350ne":{"main":"images/cut/toshiba-85c350ne__main.webp"},"toshiba-85m550le":{"main":"images/cut/toshiba-85m550le__main.webp"},"toshiba-85z670me":{"main":"images/cut/toshiba-85z670me__main.webp"},"tp-link-m7000-lte-hotspot":{"main":"images/cut/tp-link-m7000-lte-hotspot__main.webp"},"whoop-life":{"black":"images/cut/whoop-life__black.webp","main":"images/cut/whoop-life__main.webp"},"whoop-peak":{"black":"images/cut/whoop-peak__black.webp","main":"images/cut/whoop-peak__main.webp"},"xbox-series-s":{"black":"images/cut/xbox-series-s__black.webp","main":"images/cut/xbox-series-s__main.webp","white":"images/cut/xbox-series-s__white.webp"},"xbox-series-x":{"black":"images/cut/xbox-series-x__black.webp","main":"images/cut/xbox-series-x__main.webp","white":"images/cut/xbox-series-x__white.webp"},"xiaomi-12-lite":{"main":"images/cut/xiaomi-12-lite__main.webp"},"xiaomi-12-pro":{"main":"images/cut/xiaomi-12-pro__main.webp"},"xiaomi-12s-ultra":{"main":"images/cut/xiaomi-12s-ultra__main.webp"},"xiaomi-12x":{"main":"images/cut/xiaomi-12x__main.webp"},"xiaomi-13-lite":{"main":"images/cut/xiaomi-13-lite__main.webp"},"xiaomi-14t":{"black":"images/cut/xiaomi-14t__black.webp","blue":"images/cut/xiaomi-14t__blue.webp","gray":"images/cut/xiaomi-14t__gray.webp","green":"images/cut/xiaomi-14t__green.webp","main":"images/cut/xiaomi-14t__main.webp"},"xiaomi-15-ultra":{"main":"images/cut/xiaomi-15-ultra__main.webp"},"xiaomi-15t-pro":{"black":"images/cut/xiaomi-15t-pro__black.webp","gray":"images/cut/xiaomi-15t-pro__gray.webp","main":"images/cut/xiaomi-15t-pro__main.webp"},"xiaomi-15":{"black":"images/cut/xiaomi-15__black.webp","green":"images/cut/xiaomi-15__green.webp","main":"images/cut/xiaomi-15__main.webp","white":"images/cut/xiaomi-15__white.webp"},"xiaomi-17-pro-max":{"black":"images/cut/xiaomi-17-pro-max__black.webp","green":"images/cut/xiaomi-17-pro-max__green.webp","main":"images/cut/xiaomi-17-pro-max__main.webp","purple":"images/cut/xiaomi-17-pro-max__purple.webp","white":"images/cut/xiaomi-17-pro-max__white.webp"},"xiaomi-17-ultra":{"main":"images/cut/xiaomi-17-ultra__main.webp"},"xiaomi-17t-pro":{"deep-blue":"images/cut/xiaomi-17t-pro__deep-blue.webp","deep-violet":"images/cut/xiaomi-17t-pro__deep-violet.webp","main":"images/cut/xiaomi-17t-pro__main.webp"},"xiaomi-17t":{"black":"images/cut/xiaomi-17t__black.webp","blue":"images/cut/xiaomi-17t__blue.webp","main":"images/cut/xiaomi-17t__main.webp","violet":"images/cut/xiaomi-17t__violet.webp"},"xiaomi-17":{"main":"images/cut/xiaomi-17__main.webp"},"xiaomi-1c-23-8":{"main":"images/cut/xiaomi-1c-23-8__main.webp"},"xiaomi-4k-a27ui":{"main":"images/cut/xiaomi-4k-a27ui__main.webp"},"xiaomi-a-43-2026":{"main":"images/cut/xiaomi-a-43-2026__main.webp"},"xiaomi-a-65-2025":{"main":"images/cut/xiaomi-a-65-2025__main.webp"},"xiaomi-a-pro-43-2026":{"main":"images/cut/xiaomi-a-pro-43-2026__main.webp"},"xiaomi-a24i":{"main":"images/cut/xiaomi-a24i__main.webp"},"xiaomi-a27qi":{"main":"images/cut/xiaomi-a27qi__main.webp"},"xiaomi-buds-6-lite":{"black":"images/cut/xiaomi-buds-6-lite__black.webp","main":"images/cut/xiaomi-buds-6-lite__main.webp","white":"images/cut/xiaomi-buds-6-lite__white.webp"},"xiaomi-dual-zone-air-fryer-10l":{"main":"images/cut/xiaomi-dual-zone-air-fryer-10l__main.webp"},"xiaomi-flipbuds-pro":{"main":"images/cut/xiaomi-flipbuds-pro__main.webp"},"xiaomi-gaming-g27i":{"main":"images/cut/xiaomi-gaming-g27i__main.webp"},"xiaomi-gaming-g27qi":{"main":"images/cut/xiaomi-gaming-g27qi__main.webp"},"xiaomi-gaming-monitor-g-pro-27i":{"main":"images/cut/xiaomi-gaming-monitor-g-pro-27i__main.webp"},"xiaomi-gaming-monitor-g24i":{"main":"images/cut/xiaomi-gaming-monitor-g24i__main.webp"},"xiaomi-handheld-garment-steamer-mjgtj02lf":{"main":"images/cut/xiaomi-handheld-garment-steamer-mjgtj02lf__main.webp"},"xiaomi-mi-smart-band-9":{"black":"images/cut/xiaomi-mi-smart-band-9__black.webp","main":"images/cut/xiaomi-mi-smart-band-9__main.webp"},"xiaomi-mi-smart-kettle-pro-mjhwsh02ym":{"main":"images/cut/xiaomi-mi-smart-kettle-pro-mjhwsh02ym__main.webp"},"xiaomi-mijia-smart-air-purifier-6":{"main":"images/cut/xiaomi-mijia-smart-air-purifier-6__main.webp"},"xiaomi-pad-5":{"main":"images/cut/xiaomi-pad-5__main.webp"},"xiaomi-pad-7-pro":{"blue":"images/cut/xiaomi-pad-7-pro__blue.webp","gray":"images/cut/xiaomi-pad-7-pro__gray.webp","green":"images/cut/xiaomi-pad-7-pro__green.webp","main":"images/cut/xiaomi-pad-7-pro__main.webp"},"xiaomi-pad-7":{"blue":"images/cut/xiaomi-pad-7__blue.webp","gray":"images/cut/xiaomi-pad-7__gray.webp","green":"images/cut/xiaomi-pad-7__green.webp","main":"images/cut/xiaomi-pad-7__main.webp"},"xiaomi-pad-8":{"main":"images/cut/xiaomi-pad-8__main.webp"},"xiaomi-poco-c40":{"main":"images/cut/xiaomi-poco-c40__main.webp"},"xiaomi-poco-f4":{"black":"images/cut/xiaomi-poco-f4__black.webp","gray":"images/cut/xiaomi-poco-f4__gray.webp","main":"images/cut/xiaomi-poco-f4__main.webp"},"xiaomi-poco-f5":{"black":"images/cut/xiaomi-poco-f5__black.webp","blue":"images/cut/xiaomi-poco-f5__blue.webp","main":"images/cut/xiaomi-poco-f5__main.webp"},"xiaomi-poco-f6-pro":{"black":"images/cut/xiaomi-poco-f6-pro__black.webp","main":"images/cut/xiaomi-poco-f6-pro__main.webp","white":"images/cut/xiaomi-poco-f6-pro__white.webp"},"xiaomi-poco-f6":{"black":"images/cut/xiaomi-poco-f6__black.webp","green":"images/cut/xiaomi-poco-f6__green.webp","main":"images/cut/xiaomi-poco-f6__main.webp","titanium":"images/cut/xiaomi-poco-f6__titanium.webp"},"xiaomi-poco-f8-pro":{"main":"images/cut/xiaomi-poco-f8-pro__main.webp"},"xiaomi-poco-f8-ultra":{"main":"images/cut/xiaomi-poco-f8-ultra__main.webp"},"xiaomi-poco-f9-pro":{"main":"images/cut/xiaomi-poco-f9-pro__main.webp"},"xiaomi-poco-f9-ultra":{"main":"images/cut/xiaomi-poco-f9-ultra__main.webp"},"xiaomi-poco-m5":{"main":"images/cut/xiaomi-poco-m5__main.webp"},"xiaomi-poco-m6-pro":{"main":"images/cut/xiaomi-poco-m6-pro__main.webp"},"xiaomi-poco-m6":{"main":"images/cut/xiaomi-poco-m6__main.webp"},"xiaomi-poco-m7-pro-5g":{"gray":"images/cut/xiaomi-poco-m7-pro-5g__gray.webp","main":"images/cut/xiaomi-poco-m7-pro-5g__main.webp","olive":"images/cut/xiaomi-poco-m7-pro-5g__olive.webp"},"xiaomi-poco-m7":{"black":"images/cut/xiaomi-poco-m7__black.webp","main":"images/cut/xiaomi-poco-m7__main.webp","silver":"images/cut/xiaomi-poco-m7__silver.webp"},"xiaomi-poco-m8-5g":{"black":"images/cut/xiaomi-poco-m8-5g__black.webp","main":"images/cut/xiaomi-poco-m8-5g__main.webp"},"xiaomi-poco-m8-pro-5g":{"black":"images/cut/xiaomi-poco-m8-pro-5g__black.webp","green":"images/cut/xiaomi-poco-m8-pro-5g__green.webp","main":"images/cut/xiaomi-poco-m8-pro-5g__main.webp"},"xiaomi-poco-pad-x1":{"main":"images/cut/xiaomi-poco-pad-x1__main.webp"},"xiaomi-poco-x5-5g":{"blue":"images/cut/xiaomi-poco-x5-5g__blue.webp","green":"images/cut/xiaomi-poco-x5-5g__green.webp","main":"images/cut/xiaomi-poco-x5-5g__main.webp"},"xiaomi-poco-x5-pro-5g":{"main":"images/cut/xiaomi-poco-x5-pro-5g__main.webp"},"xiaomi-poco-x7":{"black":"images/cut/xiaomi-poco-x7__black.webp","green":"images/cut/xiaomi-poco-x7__green.webp","main":"images/cut/xiaomi-poco-x7__main.webp","silver":"images/cut/xiaomi-poco-x7__silver.webp"},"xiaomi-poco-x8-pro-max":{"black":"images/cut/xiaomi-poco-x8-pro-max__black.webp","main":"images/cut/xiaomi-poco-x8-pro-max__main.webp"},"xiaomi-portable-bluetooth-speaker":{"blue":"images/cut/xiaomi-portable-bluetooth-speaker__blue.webp","red":"images/cut/xiaomi-portable-bluetooth-speaker__red.webp"},"xiaomi-redmi-10-2022":{"main":"images/cut/xiaomi-redmi-10-2022__main.webp"},"xiaomi-redmi-10a":{"black":"images/cut/xiaomi-redmi-10a__black.webp","main":"images/cut/xiaomi-redmi-10a__main.webp","silver":"images/cut/xiaomi-redmi-10a__silver.webp"},"xiaomi-redmi-10c":{"main":"images/cut/xiaomi-redmi-10c__main.webp"},"xiaomi-redmi-12c":{"main":"images/cut/xiaomi-redmi-12c__main.webp"},"xiaomi-redmi-12":{"main":"images/cut/xiaomi-redmi-12__main.webp"},"xiaomi-redmi-13c":{"main":"images/cut/xiaomi-redmi-13c__main.webp"},"xiaomi-redmi-13":{"main":"images/cut/xiaomi-redmi-13__main.webp"},"xiaomi-redmi-14c":{"main":"images/cut/xiaomi-redmi-14c__main.webp","midnight-black":"images/cut/xiaomi-redmi-14c__midnight-black.webp","sage-green":"images/cut/xiaomi-redmi-14c__sage-green.webp","starry-blue":"images/cut/xiaomi-redmi-14c__starry-blue.webp"},"xiaomi-redmi-15c":{"main":"images/cut/xiaomi-redmi-15c__main.webp","midnight-black":"images/cut/xiaomi-redmi-15c__midnight-black.webp","mint-green":"images/cut/xiaomi-redmi-15c__mint-green.webp","moonlight-blue":"images/cut/xiaomi-redmi-15c__moonlight-blue.webp","twilight-orange":"images/cut/xiaomi-redmi-15c__twilight-orange.webp"},"xiaomi-redmi-15":{"black":"images/cut/xiaomi-redmi-15__black.webp","gray":"images/cut/xiaomi-redmi-15__gray.webp","main":"images/cut/xiaomi-redmi-15__main.webp","midnight-black":"images/cut/xiaomi-redmi-15__midnight-black.webp","purple":"images/cut/xiaomi-redmi-15__purple.webp"},"xiaomi-redmi-17c-4g":{"main":"images/cut/xiaomi-redmi-17c-4g__main.webp"},"xiaomi-redmi-17":{"black":"images/cut/xiaomi-redmi-17__black.webp","deep-blue":"images/cut/xiaomi-redmi-17__deep-blue.webp","green":"images/cut/xiaomi-redmi-17__green.webp","main":"images/cut/xiaomi-redmi-17__main.webp","purple":"images/cut/xiaomi-redmi-17__purple.webp"},"xiaomi-redmi-4-active":{"main":"images/cut/xiaomi-redmi-4-active__main.webp"},"xiaomi-redmi-4-bhr-5846-gl":{"main":"images/cut/xiaomi-redmi-4-bhr-5846-gl__main.webp"},"xiaomi-redmi-4-lite":{"main":"images/cut/xiaomi-redmi-4-lite__main.webp"},"xiaomi-redmi-5":{"black":"images/cut/xiaomi-redmi-5__black.webp","main":"images/cut/xiaomi-redmi-5__main.webp","white":"images/cut/xiaomi-redmi-5__white.webp"},"xiaomi-redmi-8-active-bhr08jtgl":{"black":"images/cut/xiaomi-redmi-8-active-bhr08jtgl__black.webp","main":"images/cut/xiaomi-redmi-8-active-bhr08jtgl__main.webp","white":"images/cut/xiaomi-redmi-8-active-bhr08jtgl__white.webp"},"xiaomi-redmi-8-lite":{"black":"images/cut/xiaomi-redmi-8-lite__black.webp","main":"images/cut/xiaomi-redmi-8-lite__main.webp"},"xiaomi-redmi-a2plus":{"main":"images/cut/xiaomi-redmi-a2plus__main.webp"},"xiaomi-redmi-a3":{"main":"images/cut/xiaomi-redmi-a3__main.webp"},"xiaomi-redmi-a5":{"main":"images/cut/xiaomi-redmi-a5__main.webp"},"xiaomi-redmi-a7-pro":{"black":"images/cut/xiaomi-redmi-a7-pro__black.webp","blue":"images/cut/xiaomi-redmi-a7-pro__blue.webp","green":"images/cut/xiaomi-redmi-a7-pro__green.webp","main":"images/cut/xiaomi-redmi-a7-pro__main.webp","orange":"images/cut/xiaomi-redmi-a7-pro__orange.webp"},"xiaomi-redmi-a7":{"main":"images/cut/xiaomi-redmi-a7__main.webp"},"xiaomi-redmi-band-7":{"black":"images/cut/xiaomi-redmi-band-7__black.webp","main":"images/cut/xiaomi-redmi-band-7__main.webp"},"xiaomi-redmi-band-8":{"black":"images/cut/xiaomi-redmi-band-8__black.webp","main":"images/cut/xiaomi-redmi-band-8__main.webp","sand":"images/cut/xiaomi-redmi-band-8__sand.webp"},"xiaomi-redmi-band-9-pro":{"main":"images/cut/xiaomi-redmi-band-9-pro__main.webp","rose-gold":"images/cut/xiaomi-redmi-band-9-pro__rose-gold.webp","silver":"images/cut/xiaomi-redmi-band-9-pro__silver.webp"},"xiaomi-redmi-band-9":{"blue":"images/cut/xiaomi-redmi-band-9__blue.webp","main":"images/cut/xiaomi-redmi-band-9__main.webp","pink":"images/cut/xiaomi-redmi-band-9__pink.webp"},"xiaomi-redmi-buds-3-lite":{"main":"images/cut/xiaomi-redmi-buds-3-lite__main.webp"},"xiaomi-redmi-buds-6-play":{"black":"images/cut/xiaomi-redmi-buds-6-play__black.webp","blue":"images/cut/xiaomi-redmi-buds-6-play__blue.webp","main":"images/cut/xiaomi-redmi-buds-6-play__main.webp","pink":"images/cut/xiaomi-redmi-buds-6-play__pink.webp","white":"images/cut/xiaomi-redmi-buds-6-play__white.webp"},"xiaomi-redmi-buds-6":{"black":"images/cut/xiaomi-redmi-buds-6__black.webp","blue":"images/cut/xiaomi-redmi-buds-6__blue.webp","main":"images/cut/xiaomi-redmi-buds-6__main.webp"},"xiaomi-redmi-headphones-neo":{"sand-white":"images/cut/xiaomi-redmi-headphones-neo__sand-white.webp"},"xiaomi-redmi-note-10-pro":{"black":"images/cut/xiaomi-redmi-note-10-pro__black.webp","blue":"images/cut/xiaomi-redmi-note-10-pro__blue.webp","main":"images/cut/xiaomi-redmi-note-10-pro__main.webp"},"xiaomi-redmi-note-10s":{"main":"images/cut/xiaomi-redmi-note-10s__main.webp"},"xiaomi-redmi-note-11-proplus-5g":{"main":"images/cut/xiaomi-redmi-note-11-proplus-5g__main.webp"},"xiaomi-redmi-note-11s":{"main":"images/cut/xiaomi-redmi-note-11s__main.webp"},"xiaomi-redmi-note-11":{"main":"images/cut/xiaomi-redmi-note-11__main.webp"},"xiaomi-redmi-note-12":{"main":"images/cut/xiaomi-redmi-note-12__main.webp"},"xiaomi-redmi-note-13-pro-plus":{"aurora-purple":"images/cut/xiaomi-redmi-note-13-pro-plus__aurora-purple.webp","main":"images/cut/xiaomi-redmi-note-13-pro-plus__main.webp","midnight-black":"images/cut/xiaomi-redmi-note-13-pro-plus__midnight-black.webp","moonlight-white":"images/cut/xiaomi-redmi-note-13-pro-plus__moonlight-white.webp"},"xiaomi-redmi-note-13-pro":{"main":"images/cut/xiaomi-redmi-note-13-pro__main.webp","midnight-black":"images/cut/xiaomi-redmi-note-13-pro__midnight-black.webp"},"xiaomi-redmi-note-13":{"main":"images/cut/xiaomi-redmi-note-13__main.webp"},"xiaomi-redmi-note-14-pro-plus-5g":{"black":"images/cut/xiaomi-redmi-note-14-pro-plus-5g__black.webp","main":"images/cut/xiaomi-redmi-note-14-pro-plus-5g__main.webp"},"xiaomi-redmi-note-14-pro":{"aurora-purple":"images/cut/xiaomi-redmi-note-14-pro__aurora-purple.webp","main":"images/cut/xiaomi-redmi-note-14-pro__main.webp","midnight-black":"images/cut/xiaomi-redmi-note-14-pro__midnight-black.webp","ocean-blue":"images/cut/xiaomi-redmi-note-14-pro__ocean-blue.webp"},"xiaomi-redmi-note-14s":{"black":"images/cut/xiaomi-redmi-note-14s__black.webp","blue":"images/cut/xiaomi-redmi-note-14s__blue.webp","main":"images/cut/xiaomi-redmi-note-14s__main.webp","midnight-black":"images/cut/xiaomi-redmi-note-14s__midnight-black.webp","purple":"images/cut/xiaomi-redmi-note-14s__purple.webp"},"xiaomi-redmi-note-14":{"blue":"images/cut/xiaomi-redmi-note-14__blue.webp","green":"images/cut/xiaomi-redmi-note-14__green.webp","main":"images/cut/xiaomi-redmi-note-14__main.webp","midnight-black":"images/cut/xiaomi-redmi-note-14__midnight-black.webp","purple":"images/cut/xiaomi-redmi-note-14__purple.webp"},"xiaomi-redmi-note-15-pro-plus-5g":{"black":"images/cut/xiaomi-redmi-note-15-pro-plus-5g__black.webp","main":"images/cut/xiaomi-redmi-note-15-pro-plus-5g__main.webp"},"xiaomi-redmi-note-15-pro":{"black":"images/cut/xiaomi-redmi-note-15-pro__black.webp","glacier-blue":"images/cut/xiaomi-redmi-note-15-pro__glacier-blue.webp","main":"images/cut/xiaomi-redmi-note-15-pro__main.webp","mist-purple":"images/cut/xiaomi-redmi-note-15-pro__mist-purple.webp","titanium":"images/cut/xiaomi-redmi-note-15-pro__titanium.webp"},"xiaomi-redmi-note-15":{"black":"images/cut/xiaomi-redmi-note-15__black.webp","blue":"images/cut/xiaomi-redmi-note-15__blue.webp","green":"images/cut/xiaomi-redmi-note-15__green.webp","main":"images/cut/xiaomi-redmi-note-15__main.webp","purple":"images/cut/xiaomi-redmi-note-15__purple.webp"},"xiaomi-redmi-note-17-4g":{"black":"images/cut/xiaomi-redmi-note-17-4g__black.webp","main":"images/cut/xiaomi-redmi-note-17-4g__main.webp","purple":"images/cut/xiaomi-redmi-note-17-4g__purple.webp"},"xiaomi-redmi-note-17-5g":{"black":"images/cut/xiaomi-redmi-note-17-5g__black.webp","main":"images/cut/xiaomi-redmi-note-17-5g__main.webp","purple":"images/cut/xiaomi-redmi-note-17-5g__purple.webp","teal":"images/cut/xiaomi-redmi-note-17-5g__teal.webp"},"xiaomi-redmi-note-17-pro-5g":{"black":"images/cut/xiaomi-redmi-note-17-pro-5g__black.webp","main":"images/cut/xiaomi-redmi-note-17-pro-5g__main.webp","orange":"images/cut/xiaomi-redmi-note-17-pro-5g__orange.webp"},"xiaomi-redmi-note-17-pro-max-5g":{"black":"images/cut/xiaomi-redmi-note-17-pro-max-5g__black.webp","cloud-blush":"images/cut/xiaomi-redmi-note-17-pro-max-5g__cloud-blush.webp","green":"images/cut/xiaomi-redmi-note-17-pro-max-5g__green.webp","main":"images/cut/xiaomi-redmi-note-17-pro-max-5g__main.webp","purple":"images/cut/xiaomi-redmi-note-17-pro-max-5g__purple.webp"},"xiaomi-redmi-pad-2-pro":{"graphite-gray":"images/cut/xiaomi-redmi-pad-2-pro__graphite-gray.webp","main":"images/cut/xiaomi-redmi-pad-2-pro__main.webp"},"xiaomi-redmi-pad-2":{"gray":"images/cut/xiaomi-redmi-pad-2__gray.webp","main":"images/cut/xiaomi-redmi-pad-2__main.webp"},"xiaomi-redmi-pad-pro-5g":{"main":"images/cut/xiaomi-redmi-pad-pro-5g__main.webp"},"xiaomi-redmi-pad-se-8-7-4g":{"main":"images/cut/xiaomi-redmi-pad-se-8-7-4g__main.webp"},"xiaomi-redmi-pad-se":{"main":"images/cut/xiaomi-redmi-pad-se__main.webp"},"xiaomi-redmi-pad":{"main":"images/cut/xiaomi-redmi-pad__main.webp"},"xiaomi-redmi-smart-band-2":{"main":"images/cut/xiaomi-redmi-smart-band-2__main.webp"},"xiaomi-redmi-watch-2-lite":{"main":"images/cut/xiaomi-redmi-watch-2-lite__main.webp"},"xiaomi-redmi-watch-5-active":{"main":"images/cut/xiaomi-redmi-watch-5-active__main.webp","matte":"images/cut/xiaomi-redmi-watch-5-active__matte.webp"},"xiaomi-redmi-watch-5-lite":{"black":"images/cut/xiaomi-redmi-watch-5-lite__black.webp","main":"images/cut/xiaomi-redmi-watch-5-lite__main.webp"},"xiaomi-redmibook-14-jyu4618cn":{"main":"images/cut/xiaomi-redmibook-14-jyu4618cn__main.webp"},"xiaomi-redmibook-14-jyu4635cn":{"main":"images/cut/xiaomi-redmibook-14-jyu4635cn__main.webp"},"xiaomi-redmibook-14-jyu4645cn":{"main":"images/cut/xiaomi-redmibook-14-jyu4645cn__main.webp"},"xiaomi-redmibook-16-jyu4617cn":{"main":"images/cut/xiaomi-redmibook-16-jyu4617cn__main.webp"},"xiaomi-redmibook-16-jyu4639cn":{"main":"images/cut/xiaomi-redmibook-16-jyu4639cn__main.webp"},"xiaomi-redmibook-16-jyu4643cn":{"main":"images/cut/xiaomi-redmibook-16-jyu4643cn__main.webp"},"xiaomi-redmibook-pro-14-jyu4594cn":{"main":"images/cut/xiaomi-redmibook-pro-14-jyu4594cn__main.webp"},"xiaomi-redmibook-pro-16-jyu4593cn":{"main":"images/cut/xiaomi-redmibook-pro-16-jyu4593cn__main.webp"},"xiaomi-redmibook-pro-16-jyu4649cn":{"main":"images/cut/xiaomi-redmibook-pro-16-jyu4649cn__main.webp"},"xiaomi-redmibook-pro-16-jyu4650cn":{"main":"images/cut/xiaomi-redmibook-pro-16-jyu4650cn__main.webp"},"xiaomi-robot-vacuum-5-pro":{"main":"images/cut/xiaomi-robot-vacuum-5-pro__main.webp"},"xiaomi-robot-vacuum-5":{"main":"images/cut/xiaomi-robot-vacuum-5__main.webp"},"xiaomi-robot-vacuum-s40-pro":{"main":"images/cut/xiaomi-robot-vacuum-s40-pro__main.webp"},"xiaomi-robot-vacuum-x20-max":{"main":"images/cut/xiaomi-robot-vacuum-x20-max__main.webp"},"xiaomi-robot-vacuum-x20-pro":{"main":"images/cut/xiaomi-robot-vacuum-x20-pro__main.webp"},"xiaomi-s-pro-mini-led-65":{"main":"images/cut/xiaomi-s-pro-mini-led-65__main.webp"},"xiaomi-semi-automatic-espresso-machine-bhr9798eu":{"main":"images/cut/xiaomi-semi-automatic-espresso-machine-bhr9798eu__main.webp"},"xiaomi-smart-air-fryer-6-5l":{"main":"images/cut/xiaomi-smart-air-fryer-6-5l__main.webp"},"xiaomi-smart-air-purifier-4-compact-bhr5860eu":{"main":"images/cut/xiaomi-smart-air-purifier-4-compact-bhr5860eu__main.webp"},"xiaomi-smart-air-purifier-4-lite-bhr5274gl":{"main":"images/cut/xiaomi-smart-air-purifier-4-lite-bhr5274gl__main.webp"},"xiaomi-smart-air-purifier-4-pro-bhr5056eu":{"main":"images/cut/xiaomi-smart-air-purifier-4-pro-bhr5056eu__main.webp"},"xiaomi-smart-band-10":{"black":"images/cut/xiaomi-smart-band-10__black.webp","main":"images/cut/xiaomi-smart-band-10__main.webp","silver":"images/cut/xiaomi-smart-band-10__silver.webp"},"xiaomi-smart-band-7-pro":{"black":"images/cut/xiaomi-smart-band-7-pro__black.webp","main":"images/cut/xiaomi-smart-band-7-pro__main.webp"},"xiaomi-smart-band-7":{"main":"images/cut/xiaomi-smart-band-7__main.webp"},"xiaomi-smart-band-8-active":{"main":"images/cut/xiaomi-smart-band-8-active__main.webp"},"xiaomi-smart-band-8-champagne-bhr7166gl":{"main":"images/cut/xiaomi-smart-band-8-champagne-bhr7166gl__main.webp"},"xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu":{"main":"images/cut/xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu__main.webp"},"xiaomi-smart-ir-control":{"main":"images/cut/xiaomi-smart-ir-control__main.webp"},"xiaomi-smart-mi-band-8-pro":{"main":"images/cut/xiaomi-smart-mi-band-8-pro__main.webp"},"xiaomi-smart-scale-s200":{"main":"images/cut/xiaomi-smart-scale-s200__main.webp"},"xiaomi-smart-speaker-lite":{"main":"images/cut/xiaomi-smart-speaker-lite__main.webp"},"xiaomi-smart-speaker":{"main":"images/cut/xiaomi-smart-speaker__main.webp"},"xiaomi-smart-watch-70mai-saphir":{"main":"images/cut/xiaomi-smart-watch-70mai-saphir__main.webp"},"xiaomi-sound-outdoor-30w-speaker":{"black":"images/cut/xiaomi-sound-outdoor-30w-speaker__black.webp","blue":"images/cut/xiaomi-sound-outdoor-30w-speaker__blue.webp","red":"images/cut/xiaomi-sound-outdoor-30w-speaker__red.webp"},"xiaomi-sound-party-portable-speaker-50w":{"black":"images/cut/xiaomi-sound-party-portable-speaker-50w__black.webp"},"xiaomi-sound-pocket":{"main":"images/cut/xiaomi-sound-pocket__main.webp"},"xiaomi-tv-4a":{"main":"images/cut/xiaomi-tv-4a__main.webp"},"xiaomi-tv-a-pro":{"main":"images/cut/xiaomi-tv-a-pro__main.webp"},"xiaomi-tv-a":{"main":"images/cut/xiaomi-tv-a__main.webp"},"xiaomi-tv-max":{"main":"images/cut/xiaomi-tv-max__main.webp"},"xiaomi-tv-s-65-2025-mled":{"main":"images/cut/xiaomi-tv-s-65-2025-mled__main.webp"},"xiaomi-tv-s-mini":{"main":"images/cut/xiaomi-tv-s-mini__main.webp"},"xiaomi-tv-s-pro-mini":{"main":"images/cut/xiaomi-tv-s-pro-mini__main.webp"},"xiaomi-vacuum-cleaner-g20-lite":{"main":"images/cut/xiaomi-vacuum-cleaner-g20-lite__main.webp"},"xiaomi-vacuum-cleaner-g20-max":{"main":"images/cut/xiaomi-vacuum-cleaner-g20-max__main.webp"},"xiaomi-watch-s1-active":{"main":"images/cut/xiaomi-watch-s1-active__main.webp"},"xiaomi-watch-s1":{"main":"images/cut/xiaomi-watch-s1__main.webp"},"yandex-station-2":{"blue":"images/cut/yandex-station-2__blue.webp","main":"images/cut/yandex-station-2__main.webp"},"yandex-station-lite":{"main":"images/cut/yandex-station-lite__main.webp","purple":"images/cut/yandex-station-lite__purple.webp"},"yandex-station-max":{"main":"images/cut/yandex-station-max__main.webp"},"yandex-station-mini-3-pro":{"black":"images/cut/yandex-station-mini-3-pro__black.webp","blue":"images/cut/yandex-station-mini-3-pro__blue.webp","gray":"images/cut/yandex-station-mini-3-pro__gray.webp","main":"images/cut/yandex-station-mini-3-pro__main.webp"},"yandex-station-mini":{"black":"images/cut/yandex-station-mini__black.webp","main":"images/cut/yandex-station-mini__main.webp"},"yandex-station-street":{"black":"images/cut/yandex-station-street__black.webp","green":"images/cut/yandex-station-street__green.webp","main":"images/cut/yandex-station-street__main.webp"}};
+const COLORTHUMB={};
+/* ================= helpers ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const MAXCMP = 4;
+const OFFER_PEEK = 5;   // shops in the product page's price table; the rest are one link away, on the offers page
+// An explicit way back. An anchor to the logical parent, not history.back(), so it still
+// works when someone opens a product or offers link directly.
+const backLink = (href, label) =>
+  `<a class="backbtn" href="${esc(href)}"><span aria-hidden="true">←</span> ${esc(label)}</a>`;
+// local build reads images/<id>.jpg; the published build injects IMGDATA with inline data URIs
+// A product added before its photo has been sourced has no file, and a 404 renders as the
+// browser's broken-image icon - which reads as a bug rather than as a missing photo. A
+// neutral tile says what is actually true, and works on either theme. It carries width and
+// height: an SVG with only a viewBox reports naturalWidth 0, which is exactly what a genuinely
+// broken image reports, so every check that looks for one would flag it.
+const NOPHOTO = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSIxNCIgeT0iMTgiIHdpZHRoPSIzNiIgaGVpZ2h0PSIyOCIgcng9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhBOTNBNiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==';
+const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
+// Every place that draws the photo small - cards, the savings strip, compare, the tray, the
+// suggestion rows. The two that fill the screen with it (the cover carousel and the product
+// page itself) keep IMG. Falls back to the full size when no thumbnail was made, which is what
+// happens for a shot already at or under 600 px.
+const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(id);
+// IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
+const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
+
+const U = {
+  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', kg: 'կգ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
+  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', kg: 'кг', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
+  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', kg: 'kg', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
+};
+const X = {
+  hy: {
+    tier: { flagship: 'Ֆլագման', 'upper-mid': 'Բարձր միջին', mid: 'Միջին', budget: 'Բյուջետային' },
+    any: 'Բոլորը', min: 'նվազ.', max: 'մինչև', weightF: 'Քաշ', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
+    dS: 'օ', hS: 'ժ', mS: 'ր',
+    unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
+    scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
+    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
+    cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
+    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
+    findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
+    atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
+    histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր {d}-ի ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
+    spotT: 'Օրվա գործարքը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
+    dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', sourcesL: 'Աղբյուրներ', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
+    formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
+    connF: 'Միացում', cellY: 'Wi-Fi + բջջային կապ', conns: { wireless: 'Անլար', wired: 'Լարով' },
+    plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
+    gamingF: 'Խաղային', resF: 'Թույլատրություն',
+    spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Party', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
+    waters: { splash: 'Ցանկոտումից պաշտպանված', dip: 'Ջրի մեջ ընկղման դիմացկուն' },
+    heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և գտի՛ր', heroB: 'լավագույն գինը',
+    heroSub: 'Բոլոր գները՝ մեկ տեղում։ Համեմատի՛ր և ընտրի՛ր քոնը։',
+    heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
+    tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
+    footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի ցածր գին', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
+    goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
+    checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
+    sorts: { brand: 'Ապրանքանիշ (Ա–Ֆ)', battery: 'Մարտկոց', screen: 'Էկրանի չափ', savings: 'Խնայողություն', shops: 'Խանութների քանակ', ram: 'Օպերատիվ հիշողություն', storage: 'Հիշողություն' },
+    variantUnknown: 'տարբերակը նշված չէ', pickCapacity: 'Ընտրի՛ր ծավալը՝ խնայողությունը տեսնելու համար', inStock: 'Առկա է', outOfStock: 'Առկա չէ', allOffers: 'Բոլոր առաջարկները', shopLbl: 'Խանութ', histT: 'Գնի պատմություն', trackSince: 'Հետևում ենք', noHist: 'Դեռ մեկ չափում կա. գրաֆիկը կհայտնվի մի քանի օրից', savingsT: 'Ամենամեծ խնայողությունը', models: 'մոդել', offersLbl: 'առաջարկ', country: 'Հայաստան', saveUpTo: 'Խնայում ես մինչև', diffs: 'տարբերություն', same: 'նույնը', pickVariant: 'Ընտրի՛ր տարբերակը', preorder: 'Նախապատվեր', soonT: 'Շուտով'
+  },
+  ru: {
+    tier: { flagship: 'Флагман', 'upper-mid': 'Верхний средний', mid: 'Средний', budget: 'Бюджетный' },
+    any: 'Все', min: 'от', max: 'до', weightF: 'Вес', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
+    dS: 'д', hS: 'ч', mS: 'м',
+    unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
+    scrLo: 'до {x}″', scrHi: 'от {x}″',
+    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
+    cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
+    ancF: 'Шумоподавление', waterF: 'Влагозащита',
+    findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
+    atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
+    histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума {d}', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
+    spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
+    dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', sourcesL: 'Источники', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
+    formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
+    connF: 'Подключение', cellY: 'Wi-Fi + сотовая связь', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
+    plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
+    gamingF: 'Игровые', resF: 'Разрешение',
+    spkF: 'Тип', spks: { portable: 'Портативные', party: 'Для вечеринок', smart: 'Умные (Wi-Fi)', home: 'Домашние' },
+    waters: { splash: 'Защита от брызг', dip: 'Выдерживает погружение' },
+    // ru addresses the reader as вы everywhere else - the subhead below, the footer, the whole
+    // interface - and only this headline used ты. Raised to вы rather than lowering the rest:
+    // it is the smaller change and the register Russian retail copy is written in.
+    heroTag: 'Новинка', heroA: 'Сравните и найдите', heroB: 'лучшую цену',
+    heroSub: 'Все цены в одном месте. Сравните и выберите своё.',
+    heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
+    tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
+    footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети' }, emptyS: 'Попробуйте изменить фильтры.',
+    shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
+    goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
+    checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
+    sorts: { brand: 'Бренд (А–Я)', battery: 'Батарея', screen: 'Диагональ', savings: 'Экономия', shops: 'Число магазинов', ram: 'Оперативная память', storage: 'Память' },
+    variantUnknown: 'версия не указана', pickCapacity: 'Выберите объём, чтобы увидеть выгоду', inStock: 'В наличии', outOfStock: 'Нет в наличии', allOffers: 'Все предложения', shopLbl: 'Магазин', histT: 'История цены', trackSince: 'Отслеживаем с', noHist: 'Пока одно измерение. График появится через несколько дней', savingsT: 'Наибольшая выгода', models: 'моделей', offersLbl: 'предложений', country: 'Армения', saveUpTo: 'Экономия до', diffs: 'отличий', same: 'одинаково', pickVariant: 'Выберите версию', preorder: 'Предзаказ', soonT: 'Скоро'
+  },
+  en: {
+    tier: { flagship: 'Flagship', 'upper-mid': 'Upper mid', mid: 'Mid-range', budget: 'Budget' },
+    any: 'All', min: 'from', max: 'up to', weightF: 'Weight', newBadge: 'New', view: 'View', allFilters: 'All filters',
+    dS: 'd', hS: 'h', mS: 'm',
+    unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
+    scrLo: 'under {x}″', scrHi: '{x}″ and up',
+    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
+    cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
+    ancF: 'Noise cancelling', waterF: 'Water resistance',
+    findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
+    atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
+    histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the {d} low', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
+    spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
+    dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', sourcesL: 'Sources', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
+    formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
+    connF: 'Connection', cellY: 'Wi-Fi + Cellular', conns: { wireless: 'Wireless', wired: 'Wired' },
+    plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
+    gamingF: 'Gaming', resF: 'Resolution',
+    spkF: 'Type', spks: { portable: 'Portable', party: 'Party', smart: 'Smart (Wi-Fi)', home: 'Home' },
+    waters: { splash: 'Splash resistant', dip: 'Survives a dunk' },
+    heroTag: 'Just launched', heroA: 'Compare and find', heroB: 'the best price',
+    heroSub: 'Every price in one place. Compare and choose yours.',
+    heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
+    tbNote: 'Prices in dram · demo data', best: 'best',
+    footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking' }, emptyS: 'Try changing the filters.',
+    shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
+    goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
+    checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
+    sorts: { brand: 'Brand (A–Z)', battery: 'Battery', screen: 'Screen size', savings: 'Biggest saving', shops: 'Most shops', ram: 'RAM', storage: 'Storage' },
+    variantUnknown: 'variant not stated', pickCapacity: 'Pick a capacity to see the saving', inStock: 'In stock', outOfStock: 'Out of stock', allOffers: 'All offers', shopLbl: 'Shop', histT: 'Price history', trackSince: 'Tracking since', noHist: 'Only one reading so far. The chart appears after a few days', savingsT: 'Where you save most', models: 'models', offersLbl: 'offers', country: 'Armenia', saveUpTo: 'Save up to', diffs: 'differences', same: 'identical', pickVariant: 'Pick a variant', preorder: 'Pre-order', soonT: 'Coming soon'
+  }
+};
+
+/* ================= state ================= */
+// Saved settings - language, theme, filters, the compare list. The key carried the project's
+// working name until the site became Better.am; a returning visitor's settings are still under the
+// old one, so it is READ when the new key is empty and never written again. Renaming it without
+// that would have reset everyone's language and emptied their compare list on the next visit.
+const LS = 'better.v2';
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], g5: false, nfc: false, anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
+let st = { ...D };
+try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
+// Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
+// exists, or an array that came back as a string would all render as a broken page.
+for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses']) if (!Array.isArray(st[k])) st[k] = [];
+if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
+if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
+// ?lang=ru from the Russian/English static pages opens the app in that language
+{ const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
+if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
+if (![0, 1, 2].includes(st.anc)) st.anc = st.anc === true ? 1 : 0;   // a saved on/off from the old checkbox
+if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;
+if (typeof st.q !== 'string') st.q = '';
+if (typeof st.fopen !== 'boolean') st.fopen = false;
+// The numeric filters are the same kind of hazard: st.ram = "abc" passes every guard above,
+// matches() then compares a number against a string and the catalogue renders empty with no
+// visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
+// every product that has no display at all.
+for (const k of ['ram', 'stor', 'weight', 'batt', 'hz', 'cam', 'life', 'scrmin', 'pmin', 'pmax']) {
+  const v = Number(st[k]);
+  st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
+}
+if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
+st.page = Number.isFinite(+st.page) && +st.page >= 1 ? Math.floor(+st.page) : 1;
+// The screen bands are cut from whatever is in the category, so their keys are positions
+// ('lo' is not 6.3" on a page of laptops), and a band saved under the old fixed phone scale
+// would silently select the wrong third.
+st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lo', 'mid', 'hi'].includes(v)) : [];
+st.waters = Array.isArray(st.waters) ? st.waters.filter(v => ['splash', 'dip'].includes(v)) : [];
+const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
+
+// The price filter compares against each phone's CHEAPEST offer, so the slider bounds have to be
+// built from those same numbers. Using the priciest variant here left the top of the range inert.
+const _allPrices = DATA.map(p => {
+  const real = (typeof PRICES !== 'undefined' && PRICES.offers && PRICES.offers[p.id]) || [];
+  return real.length ? Math.min(...real.map(o => o.price)) : p.priceAmd;
+// One missing or malformed price would make PMIN/PMAX NaN, and every comparison against NaN is
+// false, so the catalogue would silently render empty with no clue why.
+}).filter(Number.isFinite);
+const PMIN = Math.floor(Math.min(..._allPrices) / 5000) * 5000;
+const PMAX = Math.ceil(Math.max(..._allPrices) / 5000) * 5000;
+// The saved price range was chosen against an older price list. Prices move every night now,
+// so a stale range silently hides phones that drifted outside it. Remember the bounds the
+// filter was set against and reset it whenever the catalogue's own range has changed.
+if (!st.pmin || !st.pmax || st.bounds?.[0] !== PMIN || st.bounds?.[1] !== PMAX) {
+  st.pmin = PMIN; st.pmax = PMAX;
+}
+st.bounds = [PMIN, PMAX];
+st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id)).slice(0, MAXCMP);
+
+const BRANDS = [...new Set(DATA.map(p => p.brand))].sort();
+if (st.cat && !DATA.some(p => (p.category || 'phone') === st.cat)) st.cat = '';
+const BY_ID = new Map(DATA.map(p => [p.id, p]));
+const byId = id => BY_ID.get(id);
+
+/* ================= format ================= */
+const t = k => (STR[st.lang] && STR[st.lang][k]) || STR.hy[k] || k;
+const u = k => U[st.lang][k];
+const x = k => X[st.lang][k];
+// "11 магазина" is wrong and "1 shops" is wrong. Armenian keeps the singular after any
+// numeral, so it needs no table and falls through to the plain label.
+const PL = {
+  ru: { shops: ['магазин', 'магазина', 'магазинов'],
+        models: ['модель', 'модели', 'моделей'],
+        offersLbl: ['предложение', 'предложения', 'предложений'] },
+  en: { shops: ['shop', 'shops'], models: ['model', 'models'], offersLbl: ['offer', 'offers'] }
+};
+const plw = (n, k) => {
+  const f = (PL[st.lang] || {})[k];
+  if (!f) return x(k);
+  if (f.length === 2) return f[n === 1 ? 0 : 1];
+  const a = n % 10, b = n % 100;
+  return f[a === 1 && b !== 11 ? 0 : a > 1 && a < 5 && (b < 12 || b > 14) ? 1 : 2];
+};
+const nx = (n, k) => n + ' ' + plw(n, k);
+// "from 14 shops" inside a sentence: Russian needs the genitive after "из" ("из 21 магазина"),
+// Armenian the ablative after the number ("14 խանութից")
+const fromShops = n => st.lang === 'hy' ? n + ' խանութից'
+  : st.lang === 'ru' ? 'из ' + n + (n % 10 === 1 && n % 100 !== 11 ? ' магазина' : ' магазинов') : 'from ' + nx(n, 'shops');
+// The search hint is cut off on a phone, so phones get the short one.
+const PHONE = matchMedia('(max-width:640px)');
+const hint = () => (PHONE.matches && x('searchShort')) || t('nav.search_placeholder');
+PHONE.addEventListener('change', () => { const q = document.getElementById('q'); if (q) q.placeholder = hint(); });
+// Apple and Samsung model names already say the brand - "iPhone 17 Pro", not "Apple iPhone 17 Pro".
+// The brand is still searchable; see the query test below, which adds p.brand back in.
+const BARE_BRAND = new Set(['apple', 'samsung']);
+// A tag after the name: the launch year for phones, tablets, watches and headphones - which
+// generation this is, at a glance - and the screen for TVs and monitors, where the diagonal is the
+// first thing anyone asks. Drawn, never written into the name, so search and sharing stay clean.
+const YEAR_TAG = new Set(['phone', 'tablet', 'watch', 'headphones', 'laptop']), SIZE_TAG = new Set(['tv', 'monitor']);
+function nameTag(p, scr) {
+  if (YEAR_TAG.has(p.category)) {
+    const y = p.year || +(String(p.released || '').match(/^(\d{4})/) || [])[1];
+    // this year's model reads green (owner, 2026-09-24)
+    return y ? `<span class="ny num${y >= new Date().getFullYear() ? ' cur' : ''}">${y}</span>` : '';
+  }
+  if (SIZE_TAG.has(p.category)) {
+    const ss = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))].sort((a, b) => a - b);
+    const v = scr != null && ss.includes(scr) ? inch(scr)
+      : ss.length > 1 ? ss[0] + '–' + inch(ss[ss.length - 1]) : ss.length ? inch(ss[0]) : p.display?.size ? inch(p.display.size) : '';
+    return v ? `<span class="ny sz num">${v}</span>` : '';
+  }
+  return '';
+}
+const fullName = p => (BARE_BRAND.has(p.brand.toLowerCase()) || p.name.toLowerCase().startsWith(p.brand.toLowerCase()))
+  ? p.name : p.brand + ' ' + p.name;
+const money = n => Math.round(n).toLocaleString('en-US').replace(/,/g, ' ');
+const amd = n => `${money(n)}<span class="d"> ֏</span>`;
+const relDate = s => s ? s.slice(5) + '.' + s.slice(0, 4) : '—';
+// Six months from release, computed, not a date literal that quietly ages into "everything is new".
+const isNew = p => {
+  const m = /^(\d{4})-(\d{2})/.exec(p.released || '');
+  if (!m) return false;
+  const now = new Date();
+  const age = (now.getFullYear() - +m[1]) * 12 + (now.getMonth() + 1 - +m[2]);
+  return age >= 0 && age <= 6;
+};
+// A variant is "how much storage" for a phone or tablet and "which case size" for a watch.
+// Both ride in variant.storage; the item's variantUnit decides how it is printed.
+const inch = v => v + '″';
+const storageLabel = p => p.variantUnit === 'mm' ? 'f.case_size' : p.variantUnit === 'vram' ? 'f.vram' : 'f.storage';
+const gb = (v, unit) => unit === 'mm' ? v + ' ' + u('mm')
+  : v >= 1024 ? (v / 1024) + ' TB' : v + ' ' + u('gb');
+
+/* real shop offers scraped by scrape.mjs; empty when prices.json has not been generated */
+const P = (typeof PRICES !== 'undefined' && PRICES) || { shops: {}, offers: {} };
+const offersFor = p => (P.offers && P.offers[p.id]) || [];      // pre-sorted cheapest first
+const hasReal = p => offersFor(p).length > 0;
+const bestOf = p => hasReal(p) ? offersFor(p)[0].price : p.priceAmd;
+const safeHref = u => /^https?:\/\//i.test(String(u)) ? String(u) : '#';
+const shopName = k => (P.shops && P.shops[k] && P.shops[k].name) || k;
+// one phone can have many offers per shop (storage x colour), so never count rows as shops
+const shopCount = list => new Set(list.map(o => o.shop)).size;
+const shopSite = k => (P.shops && P.shops[k] && P.shops[k].site) || '#';
+const realFor = (p, storage) => { const o = offersFor(p).find(o => o.storage === storage); return o ? o.price : null; };
+// A missing RAM value is inferred only when this capacity/screen has one known RAM build.
+// It must never borrow the cheapest 8 GB offer for a selected 16 GB configuration.
+function offerConfig(p, o) {
+  const variants = (p.variants || []).filter(v =>
+    (o.storage == null || v.storage === o.storage) &&
+    (o.size == null || v.size == null || v.size === o.size));
+  const one = key => { const values = [...new Set(variants.map(v => v[key]).filter(v => v != null))];
+    return values.length === 1 ? values[0] : null; };
+  const fixedCPU = p.category === 'laptop' && !/\//.test(p.chipset?.name || '') ? p.chipset?.name : null;
+  return { ...o, ram: o.ram ?? one('ram'), storage: o.storage ?? one('storage'), size: o.size ?? one('size'), cpu: o.cpu ?? one('cpu') ?? fixedCPU ?? null };
+}
+function configPool(p) {
+  const hasRAM = (p.variants || []).some(v => v.ram != null);
+  const real = offersFor(p).map(o => offerConfig(p, o)).filter(o => o.storage != null && (!hasRAM || o.ram != null));
+  const pool = p.variantUnit === 'mm' || !real.length ? (p.variants || []) : real;
+  const seen = new Set();
+  return pool.filter(v => { const k = [v.cpu ?? '', v.ram ?? '', v.storage ?? '', v.size ?? '', v.band ?? ''].join('|');
+    return seen.has(k) ? false : (seen.add(k), true); });
+}
+function chooseConfig(p, current, axis, value) {
+  let pool = configPool(p).filter(v => v[axis] === value);
+  if (axis !== 'size' && current.size != null && pool.some(v => v.size === current.size))
+    pool = pool.filter(v => v.size === current.size);
+  const match = pool.find(v => ['cpu', 'ram', 'storage', 'size', 'band'].every(k => k === axis || current[k] == null || v[k] == null || v[k] === current[k]));
+  const next = match || pool.slice().sort((a, b) => (a.price || a.priceAmd || 0) - (b.price || b.priceAmd || 0)
+    || (a.storage || 0) - (b.storage || 0) || (a.ram || 0) - (b.ram || 0))[0];
+  return next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size', 'band'].map(k => [k, next[k] ?? null])), configSpecs: next.configSpecs || null, [axis]: value }
+    : { ...current, [axis]: value };
+}
+function selectionOffers(p, sel) {
+  const capacities = (p.variants || []).map(v => v.storage).filter(v => v != null);
+  const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
+  return offersFor(p).filter(o => {
+    const c = offerConfig(p, o);
+    return (sel.storage == null || p.variantUnit === 'mm' || c.storage === sel.storage
+        || (c.storage == null && sel.storage === Math.min(...capacities)))
+      && (sel.ram == null || c.ram === sel.ram)
+      && (sel.cpu == null || c.cpu === sel.cpu)
+      && (sel.size == null || c.size === sel.size || (screens.size < 2 && c.size == null))
+      && (!sel.band || !o.band || o.band === sel.band)
+      && (sel.esim == null || o.esim === sel.esim)
+      && (sel.cell == null || o.cell === sel.cell);
+  });
+}
+const catalogOffers = (p, s = st) => offersFor(p).filter(o => {
+  const c = offerConfig(p, o);
+  return (!s.ram || c.ram >= s.ram) && (!s.stor || c.storage >= s.stor)
+    && (!(s.shops || []).length || s.shops.includes(o.shop));
+});
+const catalogVariants = (p, s = st) => (p.variants || []).filter(v => (!s.ram || v.ram >= s.ram) && (!s.stor || v.storage >= s.stor));
+const catalogPrice = (p, s = st) => catalogOffers(p, s)[0]?.price
+  ?? (!hasReal(p) ? catalogVariants(p, s)[0]?.priceAmd ?? p.priceAmd : null);
+function initialConfig(p) {
+  const o = catalogOffers(p)[0] || offersFor(p)[0];
+  const v = o ? offerConfig(p, o) : catalogVariants(p)[0] || p.variants?.[0] || {};
+  return { id: p.id, color: o?.color || p.colors?.[0] || null, ram: v.ram ?? null,
+    storage: v.storage ?? p.variants?.[0]?.storage ?? null, size: v.size ?? null,
+    band: v.band ?? null, cpu: v.cpu ?? null, configSpecs: v.configSpecs || null, esim: typeof o?.esim === 'boolean' ? o.esim : null,
+    cell: typeof o?.cell === 'boolean' ? o.cell : null };
+}
+function selectedProduct(p, sel) {
+  const changedCPU = sel.cpu && sel.cpu !== p.chipset?.name;
+  const changedScreen = sel.size != null && p.display?.size != null && Math.abs(sel.size - p.display.size) >= 1;
+  const facts = sel.configSpecs || {};
+  const size = facts.display?.size ?? (changedScreen ? sel.size : p.display?.size ?? sel.size);
+  return { ...p, variants: [{ ...sel }],
+    graphics: facts.graphics || (changedCPU ? undefined : p.graphics),
+    chipset: { ...(changedCPU ? {} : p.chipset), ...facts.chipset, ...(sel.cpu ? { name: sel.cpu } : {}) },
+    display: { ...(changedScreen || changedCPU ? {} : p.display), ...facts.display, ...(size != null ? { size } : {}) },
+    body: { ...(changedScreen || changedCPU ? {} : p.body), ...facts.body },
+    battery: { ...(changedScreen || changedCPU ? {} : p.battery), ...facts.battery },
+    connectivity: { ...p.connectivity, ...facts.connectivity }, os: facts.os || p.os };
+}
+// A configuration the maker sells is not automatically a configuration Armenia sells. The
+// catalogue lists what the manufacturer offers; the offers say what is actually on a shelf here.
+// Anything with no offer behind it is shown struck through and grey rather than hidden, so the
+// reader can see the choice exists and that nobody stocks it. Colours are compared through tr()'s
+// own canonical form, since one shop writes "Jet Black" where another writes "Jetblack".
+const soldKey = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+const sold = (p, field, value) => {
+  const list = offersFor(p);
+  if (!list.length) return true;                      // nothing known - do not cross out the world
+  if (field === 'color') {
+    const want = soldKey(value);
+    // A shop writes the last word of a finish: "Gray" for Space Gray, "Blue" for Sky Blue.
+    // An offer that names no colour stands in for every colour on the page (visibleOffers), so it
+    // keeps every swatch live; crossing them out claimed "sold out" when the shop just didn't say.
+    return list.some(o => { const k = o.color && soldKey(o.color);
+      return !k || (k === want || (k.length >= 4 && want.endsWith(k))); });
+  }
+  // A watch's variants are case sizes in mm, but an offer's `storage` is gigabytes, and comparing
+  // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
+  // compare, so nothing is claimed.
+  // Every answer below has to match visibleOffers exactly. They are two readings of one question -
+  // "does picking this leave anything on the page" - and when they disagreed the button contradicted
+  // the page behind it: 256 GB was crossed out on a MacBook Air M4 and clicking it showed pixel at
+  // 469 000, because that offer states no capacity and visibleOffers lets such an offer stand in for
+  // the smallest tier while this did not.
+  if (field === 'storage') {
+    if (p.variantUnit === 'mm') return true;          // a watch's variants are mm, an offer's are GB
+    if (list.some(o => o.storage === value)) return true;
+    const caps = (p.variants || []).map(v => v.storage).filter(v => v != null);
+    return caps.length > 0 && value === Math.min(...caps) && list.some(o => o.storage == null);
+  }
+  // Strict where the product really is sold in more than one screen, soft otherwise - the same
+  // split visibleOffers makes, for the same reason.
+  if (field === 'size') {
+    const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
+    return screens.size > 1 ? list.some(o => o.size === value)
+                            : list.some(o => o.size == null || o.size === value);
+  }
+  if (field === 'band') return list.some(o => !o.band || o.band === value);
+  // RAM is rarely printed by a shop, so an offer that never states it shows under every choice.
+  return list.some(o => o.ram == null || o.ram === value);
+};
+// Read through a function, not captured once: on the served build HISTORY starts empty and is
+// filled by loadLazy() the first time a product page is opened, and a value copied out at
+// startup would stay empty for the life of the tab.
+const HIST = () => (typeof HISTORY !== 'undefined' && HISTORY.points) || {};
+const dmy = d => d ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : '';
+// Plot only days we actually recorded. One point is not a trend, so it says so instead.
+// The price history, for the configuration the reader has picked. It used to draw one band from
+// the cheapest offer of any size to the dearest, so the iPhone 17 band ran from a 256 GB to a
+// 512 GB price and jumped whenever a shop listed a bigger model, and picking 512 GB changed the
+// price above the chart but not the chart. Each day now keeps its cheapest price per size (t);
+// the days recorded before that only knew the cheapest of anything, which for the smallest size
+// is the same number, so that size keeps its full history and the others start from the change.
+let HCUR = null;
+function histSeries(p, stor, scr, ram = null, cpu = null) {
+  // Old history records storage/screen, not RAM/CPU. An ambiguous build must
+  // not display another configuration's cheaper historical price.
+  const builds = configPool(p).filter(v => (stor == null || v.storage === stor) && (scr == null || v.size === scr));
+  if ((ram != null && new Set(builds.map(v => v.ram)).size > 1) ||
+      (cpu != null && new Set(builds.map(v => v.cpu)).size > 1)) return [];
+  const sizes = [...new Set((p.variants || []).map(v => v.storage).filter(v => v != null))];
+  const base = stor != null ? String(stor) : 'base';
+  const smallest = stor == null || sizes.length < 2 || stor === Math.min(...sizes);
+  // A product in several screens records "256@13" per screen. Days recorded before that carry one
+  // price per storage for all screens together - in practice the smallest screen's - so they
+  // stand in for the smallest screen only.
+  const screens = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))];
+  const multi = screens.length > 1;
+  const key = multi && scr != null ? base + '@' + scr : base;
+  const smallScr = !multi || scr == null || scr === Math.min(...screens);
+  const bySize = t => Object.keys(t).some(k => k.includes('@'));
+  return (HIST()[p.id] || []).map(pt => ({ d: pt.d, t: Date.parse(pt.d + 'T12:00:00Z'), s: pt.shops,
+    v: pt.t && pt.t[key] != null ? pt.t[key]
+      : pt.t && multi && !bySize(pt.t) && smallScr && pt.t[base] != null ? pt.t[base]
+      : (!pt.t && smallest && smallScr ? pt.lo : null) })).filter(pt => pt.v != null);
+}
+function historyHTML(p) {
+  if (!(HIST()[p.id] || []).length) { HCUR = null; return ''; }
+  const stor = SEL.id === p.id ? SEL.storage : null, scr = SEL.id === p.id ? SEL.size : null;
+  const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
+  const cfg = [multiScr && scr != null ? inch(scr) : '', stor != null ? gb(stor, p.variantUnit) : ''].filter(Boolean).join(' · ') || fullName(p);
+  const S = histSeries(p, stor, scr, SEL.id === p.id ? SEL.ram : null, SEL.id === p.id ? SEL.cpu : null);
+  HCUR = S.length > 1 ? { S, cfg } : null;
+  const head = `<h2 class="sh">${esc(x('histT'))}</h2>`;
+  if (!S.length) return head + `<p class="note">${esc(x('histNone').replace('{c}', cfg))}</p>`;
+  if (S.length < 2) return head + `<p class="note">${esc(x('noHist'))} · ${esc(x('trackSince'))} ${esc(dmy(S[0].d))}</p>`;
+  const now = S[S.length - 1], low = S.reduce((a, b) => b.v < a.v ? b : a);
+  const pct = (now.v - low.v) / low.v * 100;
+  const pill = now.v <= low.v
+    ? `<span class="hp good">${esc(x('histLow').replace('{d}', dmy(S[0].d).slice(0, 5)))}</span>`
+    : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)).replace('{d}', dmy(low.d).slice(0, 5)))}</span>`;
+  return head + `<div class="hist">
+      <div class="hist-top"><b class="num">${amd(now.v)}</b>${pill}</div>
+      <p class="hist-sub">${esc(x('histLowLine').replace('{d}', dmy(S[0].d).slice(0, 5)).replace('{n}', money(low.v)).replace('{d2}', dmy(low.d).slice(0, 5)))}
+        · ${esc(x('histWhat').replace('{c}', cfg))}</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="${esc(x('histT'))}, ${esc(cfg)}: ${esc(money(S[0].v))} → ${esc(money(now.v))} ֏. ${esc(x('histKeys'))}"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>`;
+}
+// Drawn after the page is in place, at the width it actually has, so a dot is a circle and the
+// text is the size it says - the old chart stretched one fixed drawing to fit and squashed both.
+let HX = null, hIdx = -1;
+function paintHist() {
+  const svg = $('#hsvg'); HX = null;
+  if (!svg || !HCUR) return;
+  const S = HCUR.S, W = Math.max(280, svg.clientWidth), H = 210, m = { l: 62, r: 14, t: 22, b: 26 };
+  const vals = S.map(v => v.v);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = Math.max((hi - lo) * 0.18, lo * 0.02);
+  lo -= pad; hi += pad;
+  const raw = (hi - lo) / 3, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(k => k * mag).find(k => k >= raw);
+  lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step;
+  const t0 = S[0].t, t1 = S[S.length - 1].t;
+  const X = t => m.l + (t - t0) / ((t1 - t0) || 1) * (W - m.l - m.r);
+  const Y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+  let g = '';
+  for (let v = lo; v <= hi + 1; v += step)
+    g += `<line class="hg" x1="${m.l}" x2="${W - m.r}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}"/>`
+      + `<text class="ht" x="${m.l - 8}" y="${(Y(v) + 4).toFixed(1)}" text-anchor="end">${money(v)}</text>`;
+  const nT = W < 480 ? 3 : 5;
+  for (let i = 0; i < nT; i++) {
+    const t = t0 + (t1 - t0) * i / (nT - 1), d = new Date(t).toISOString().slice(0, 10);
+    g += `<text class="ht" x="${X(t).toFixed(1)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === nT - 1 ? 'end' : 'middle'}">${dmy(d).slice(0, 5)}</text>`;
+  }
+  // A day with no reading is drawn dashed: a solid line across it would claim a price nobody read.
+  const segs = [[S[0]]];
+  for (let i = 1; i < S.length; i++) {
+    if (S[i].t - S[i - 1].t > 864e5 * 1.5) { g += `<path class="hgap" d="M${X(S[i - 1].t).toFixed(1)} ${Y(S[i - 1].v).toFixed(1)} L${X(S[i].t).toFixed(1)} ${Y(S[i].v).toFixed(1)}"/>`; segs.push([]); }
+    segs[segs.length - 1].push(S[i]);
+  }
+  const line = pts => pts.map((v, i) => (i ? 'L' : 'M') + X(v.t).toFixed(1) + ' ' + Y(v.v).toFixed(1)).join(' ');
+  g = `<path class="harea" d="${line(S)} L${X(t1).toFixed(1)} ${Y(lo)} L${X(t0).toFixed(1)} ${Y(lo)} Z"/>` + g;
+  for (const sg of segs) if (sg.length > 1) g += `<path class="hl" d="${line(sg)}"/>`;
+  const low = S.reduce((a, b) => b.v < a.v ? b : a), now = S[S.length - 1];
+  if (low !== now) g += `<circle class="hlow" cx="${X(low.t).toFixed(1)}" cy="${Y(low.v).toFixed(1)}" r="5"/>`
+    + `<text class="hlab good" x="${X(low.t).toFixed(1)}" y="${(Y(low.v) + 19).toFixed(1)}" text-anchor="middle">${esc(x('histLowest'))} ${money(low.v)}</text>`;
+  g += `<circle class="hnow" cx="${X(now.t).toFixed(1)}" cy="${Y(now.v).toFixed(1)}" r="5.5"/>`
+    + `<line class="hx" id="hx" y1="${m.t - 8}" y2="${H - m.b}" visibility="hidden"/>`
+    + `<circle class="hd" id="hd" r="4.5" visibility="hidden"/>`;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = g;
+  HX = { S, X, Y, W };
+  if (hIdx >= S.length) hIdx = -1;
+}
+function histShow(i) {
+  if (!HX) return;
+  const { S, X, Y, W } = HX; hIdx = Math.max(0, Math.min(S.length - 1, i));
+  const p = S[hIdx], px = X(p.t), py = Y(p.v), cr = $('#hx'), dt = $('#hd'), tip = $('#htip');
+  cr.setAttribute('x1', px); cr.setAttribute('x2', px); cr.setAttribute('visibility', 'visible');
+  dt.setAttribute('cx', px); dt.setAttribute('cy', py); dt.setAttribute('visibility', 'visible');
+  const prev = hIdx ? S[hIdx - 1].v : p.v, dv = p.v - prev;
+  tip.innerHTML = `<span>${esc(dmy(p.d))}</span><b class="num">${amd(p.v)}</b>`
+    + (dv ? `<span class="${dv < 0 ? 'dn' : 'up'}">${dv < 0 ? '↓' : '↑'} ${money(Math.abs(dv))}</span>` : '')
+    + (p.s ? `<span>${esc(nx(p.s, 'shops'))}</span>` : '');
+  tip.hidden = false;
+  tip.style.left = Math.max(64, Math.min(W - 64, px)) + 'px';
+  tip.style.top = py + 'px';
+  tip.classList.toggle('below', py < 90);   // near the top it would cover the text above the chart
+}
+function histHide() {
+  const cr = $('#hx'), dt = $('#hd'), tip = $('#htip');
+  if (cr) cr.setAttribute('visibility', 'hidden');
+  if (dt) dt.setAttribute('visibility', 'hidden');
+  if (tip) tip.hidden = true;
+}
+const histAt = e => {
+  if (!HX) return -1;
+  const r = e.target.closest('svg').getBoundingClientRect(), k = (e.clientX - r.left) * HX.W / r.width;
+  let bi = 0, bd = Infinity;
+  HX.S.forEach((p, i) => { const d = Math.abs(HX.X(p.t) - k); if (d < bd) { bd = d; bi = i; } });
+  return bi;
+};
+document.addEventListener('pointermove', e => { if (e.target.closest && e.target.closest('#hsvg')) histShow(histAt(e)); });
+document.addEventListener('pointerdown', e => { if (e.target.closest && e.target.closest('#hsvg')) histShow(histAt(e)); });
+document.addEventListener('pointerout', e => { if (e.target.closest && e.target.closest('#hsvg') && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('#hsvg'))) histHide(); });
+document.addEventListener('focusin', e => { if (e.target.id === 'hsvg' && HX) histShow(hIdx < 0 ? HX.S.length - 1 : hIdx); });
+document.addEventListener('focusout', e => { if (e.target.id === 'hsvg') histHide(); });
+document.addEventListener('keydown', e => {
+  if (e.target.id !== 'hsvg' || !HX) return;
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); histShow((hIdx < 0 ? HX.S.length - 1 : hIdx) + (e.key === 'ArrowLeft' ? -1 : 1)); }
+  if (e.key === 'Home') { e.preventDefault(); histShow(0); }
+  if (e.key === 'End') { e.preventDefault(); histShow(HX.S.length - 1); }
+});
+let hRz;
+window.addEventListener('resize', () => { clearTimeout(hRz); hRz = setTimeout(paintHist, 120); });
+const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generated.slice(5, 7) + '.' + P.generated.slice(0, 4) : '';
+
+// The price history the served build leaves out, fetched the first time somebody asks for a
+// product page and never on the front page. Once is enough per tab; a failure is silent on
+// purpose - the page reads correctly without it, the price chart simply does not appear.
+let lazyDone = false;
+function loadLazy() {
+  if (lazyDone || typeof LAZYDATA === 'undefined' || !LAZYDATA) return;
+  lazyDone = true;
+  fetch('data/history.json').then(r => r.ok ? r.json() : null).catch(() => null).then(h => {
+    if (h) { HISTORY = h; if (location.hash.startsWith('#/p/')) render(true); }
+  });
+}
+
+/* ================= filtering ================= */
+// The words someone types are rarely in the shop's order: "samsung fold" is how a person asks
+// for the Galaxy Z Fold 8, and a contiguous-substring test answers "no results" to it. Every
+// word has to appear somewhere, order free.
+// Every keystroke and every filter count asks this of all 1304 products; the text never changes.
+const HAY = new WeakMap();
+const hay = p => { let h = HAY.get(p);
+  if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase());
+  return h; };
+function hayMatch(p, q) {
+  // Nothing in Armenia sells it today, so it has no business in a price-comparison list: no card
+  // in the grid, no row in the search box, no entry in a category count. Its PAGE stays, and so
+  // does its line in sitemap.xml - the product is real, the url has been indexed, and somebody
+  // arriving from a search engine should land on what they looked for rather than a 404. It comes
+  // back on its own the day any shop stocks it again, because this asks the offers, not a list.
+  if (!hasReal(p)) return false;
+  const words = String(q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return true;
+  const h = hay(p);
+  return words.every(w => h.includes(w));
+}
+/* --- what a product can be asked ---------------------------------------------------- */
+// Every one of these reads a fact the catalogue already carries. Nothing is invented: a phone
+// with no camera block has no megapixel count and drops out of a camera filter rather than
+// being given a plausible one.
+const mpOf = p => { const m = /(\d+(?:\.\d+)?)\s*MP/i.exec(p.camera?.main || ''); return m ? +m[1] : null; };
+// "8.5 hours (30 with the case)" -> 8.5. The buds' own figure, not the case total, because that
+// is the number every maker prints first and the only one all of them print.
+const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\s*h/i.exec(p.battery?.life || ''); return m ? +m[1] : null; };
+// IP68 is dust 6 / water 8, IPX4 is water only, and ATM or metre figures are dive ratings.
+// Three answers a buyer actually has: nothing, survives splashes, survives being dunked.
+const waterOf = p => {
+  const v = p.body?.ip || '';
+  if (/ATM|\d+\s*m\s*water|dive/i.test(v)) return 'dip';
+  const m = /IP(?:\d|X)(\d)/i.exec(v);
+  const d = m ? +m[1] : null;
+  return d == null ? null : d >= 7 ? 'dip' : d >= 4 ? 'splash' : null;
+};
+// M5 Pro and M5 Max are different purchases; an i5 and an i7 of one generation are the same
+// aisle. So Apple keeps its suffix and Intel/AMD are cut at the tier.
+const cpuOf = p => {
+  const n = p.chipset?.name || '';
+  const a = /^Apple (M\d+(?: (?:Pro|Max|Ultra))?|A\d+(?: Pro)?)/.exec(n);
+  if (a) return 'Apple ' + a[1];
+  const i = /^Intel Core (Ultra )?(\w+)/i.exec(n);
+  if (i) return 'Intel Core ' + (i[1] ? 'Ultra ' : '') + i[2].toLowerCase();
+  const m = /^AMD Ryzen (\d+)/i.exec(n) || /^Snapdragon( \w+)?/i.exec(n);
+  return m ? (/^AMD/i.test(m[0]) ? 'AMD Ryzen ' + m[1] : 'Snapdragon' + (m[1] || '')) : (n.replace(/^mediatek/i, 'MediaTek') || null);
+};
+const gpuOf = p => {
+  const g = p.graphics;
+  if (!g || !g.name) return null;
+  if (g.type !== 'discrete') return 'integrated';
+  // shops write "Geforce" / "GEFORCE"; one card must be one filter row
+  const n = /\b(RTX|GTX|MX)\s*(\d{3,4})\b/i.exec(g.name);
+  if (n) return n[1].toUpperCase() === 'MX' ? `GeForce MX${n[2]}` : `GeForce ${n[1].toUpperCase()} ${n[2]}`;
+  const r = /\bRX\s*(\d{3,4}[A-Z]*)\b/i.exec(g.name);
+  return r ? `Radeon RX ${r[1].toUpperCase()}` : g.name;
+};
+// Screen bands used to be the three phone bands - under 6.3", 6.3-6.7", over 6.7" - drawn on a
+// page of laptops, where every one of them lands in the last band and the filter answers
+// nothing. Cut them from the sizes the category actually has instead.
+const _bandC = {};
+function bandCuts(cat) {
+  if (cat in _bandC) return _bandC[cat];
+  const v = [...new Set(DATA.filter(p => !cat || (p.category || 'phone') === cat)
+    .map(p => p.display?.size).filter(n => typeof n === 'number' && n > 0))].sort((a, b) => a - b);
+  return _bandC[cat] = v.length < 3 ? null : [v[Math.floor(v.length / 3)], v[Math.floor(v.length * 2 / 3)]];
+}
+const bandOf = (p, cat) => {
+  const c = bandCuts(cat), d = p.display?.size;
+  return (!c || d == null) ? null : d < c[0] ? 'lo' : d < c[1] ? 'mid' : 'hi';
+};
+const bandLabel = v => {
+  const c = bandCuts(st.cat);
+  if (!c) return '';
+  return v === 'lo' ? x('scrLo').replace('{x}', c[0])
+    : v === 'hi' ? x('scrHi').replace('{x}', c[1]) : c[0] + '\u2013' + c[1] + '\u2033';
+};
+
+// One table for every filter. 'min' is a "this much or more" radio, 'set' is a tick list where
+// any chosen value qualifies, 'flag' is a yes/no button. The bar, the option counts, the chips,
+// the reset and the pruning all read this, so a new filter is one entry and not six edits.
+const FILT = {
+  brand: { kind: 'set', arr: 'brands', label: () => t('filter.brand'), of: p => p.brand, fmt: v => v },
+  shop:  { kind: 'set', arr: 'shops', label: () => x('shopLbl'), of: null, fmt: v => shopName(v) },
+  // 'of' answers "does this product qualify" (its biggest variant), 'all' supplies the options
+  // (every variant), so 256 GB can be offered even where no product stops there.
+  ram:   { kind: 'min', label: () => t('filter.ram'), of: p => topOf(p, 'ram') || null,
+           all: p => (p.variants || []).map(v => v.ram), fmt: v => v + ' ' + u('gb') },
+  stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
+           of: p => topOf(p, 'storage') || null, all: p => (p.variants || []).map(v => v.storage),
+           fmt: v => gb(v, viewUnit()) },
+  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
+  hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
+  cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
+  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v + ' ' + x('hrs') },
+  scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), of: (p, s) => bandOf(p, s.cat),
+           fmt: bandLabel, vals: () => bandCuts(st.cat) ? ['lo', 'mid', 'hi'] : [] },
+  cpu:   { kind: 'set', arr: 'cpus', label: () => x('cpuF'), of: cpuOf, fmt: v => v },
+  gpu:   { kind: 'set', arr: 'gpus', label: () => x('gpuF'), of: gpuOf, fmt: v => v === 'integrated' ? x('integrated') : v },
+  water: { kind: 'set', arr: 'waters', label: () => x('waterF'), of: waterOf, fmt: v => x('waters')[v], vals: () => ['splash', 'dip'] },
+  g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
+  nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
+  // Any / Yes / No (owner, 2026-10-04). A model nothing marks as noise-cancelling counts as No -
+  // tools/audio.mjs reads ANC/NC off every name and shop title, and the rest were set by hand.
+  anc:   { kind: 'yn', label: () => x('ancF'), of: p => p.audio?.anc === true },
+  // The columns e-catalog asks headphones about. Filled in by tools/audio.mjs from the product's
+  // name and the shops' titles; a product it could not place has no value and drops out only
+  // while that filter is on.
+  hform: { kind: 'set', arr: 'hforms', label: () => x('formF'), of: p => p.audio?.form, fmt: v => x('forms')[v] || v,
+           vals: () => ['tws', 'in-ear', 'full', 'neckband', 'open'] },
+  hconn: { kind: 'set', arr: 'hconns', label: () => x('connF'), of: p => p.audio?.conn, fmt: v => x('conns')[v] || v,
+           vals: () => ['wireless', 'wired'] },
+  hplug: { kind: 'set', arr: 'hplugs', label: () => x('plugF'), of: p => p.audio?.plug, fmt: v => x('plugs')[v] || v,
+           vals: () => ['usb-c', 'lightning', '3.5'] },
+  gaming: { kind: 'flag', label: () => x('gamingF'), of: p => !!p.audio?.gaming },
+  spk:   { kind: 'set', arr: 'spks', label: () => x('spkF'), of: p => spkOf(p), fmt: v => x('spks')[v] || v,
+           vals: () => ['portable', 'party', 'smart', 'home'] },
+  res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
+           vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
+  // Ninety-six televisions and thirty-eight monitors all differ on the one thing a buyer of
+  // either actually chooses between, and nothing here could ask about it until now.
+  panel: { kind: 'set', arr: 'panels', label: () => x('panelF'), of: p => panelOf(p), fmt: v => v },
+  // A shop sells last year's laptop next to this year's at the same price, and the model number
+  // is the only thing that says which - except here, where the catalogue already knows.
+  year:  { kind: 'min', label: () => x('yearF'), of: p => yearOf(p), fmt: v => String(v) },
+  // 'yn' is Any / Yes / No (1 = yes, 2 = no); 'max' is "this much or less" - nobody wants a
+  // heavier laptop, so weight is asked from the light end. Earbuds are weighed per bud.
+  touch:  { kind: 'yn', label: () => t('f.touch'), of: p => p.display?.touch },
+  weight: { kind: 'max', label: () => x('weightF'), of: p => p.body?.weight || null,
+            fmt: v => v >= 1000 ? (v / 1000).toLocaleString(st.lang) + ' ' + u('kg') : v + ' ' + u('g') },
+  os:    { kind: 'set', arr: 'oses', label: () => x('osF'), of: p => osOf(p), fmt: v => v },
+};
+// The panel is written in a dozen ways across the makers - "Liquid Retina IPS LCD", "QNED
+// Mini-LED", "Neo QLED" - and the buyer is choosing between about five things. The most specific
+// word in the string is the one that decides, so OLED beats LED in "NanoCell LED".
+const PANELS = ['Mini-LED', 'QNED', 'Neo QLED', 'QLED', 'AMOLED', 'OLED', 'NanoCell', 'IPS', 'VA', 'TN', 'LCD', 'LED', 'E Ink'];
+function panelOf(p) {
+  const t = String(p.display?.type || '');
+  if (!t) return null;
+  return PANELS.find(k => new RegExp('\\b' + k.replace(/[-\s]/g, '[-\\s]?') + '\\b', 'i').test(t)) || null;
+}
+// Named the way a shop names it, from the long side of the panel: "2560 x 1600" is QHD.
+function resOf(p) {
+  const m = String(p.display?.resolution || '').match(/(\d{3,5})\s*[x×]\s*(\d{3,5})/);
+  if (!m) return null;
+  const w = Math.max(+m[1], +m[2]);
+  return w >= 7680 ? '8K' : w >= 3840 ? '4K' : w >= 2560 ? 'QHD' : w >= 1920 ? 'Full HD' : 'HD';
+}
+// e-catalog splits speakers by what they are for. The model line says it: a PartyBox is for a
+// party whatever its size, a HomePod or a Yandex Station is a Wi-Fi speaker you talk to, an
+// Acton or a Stanmore plugs into the wall, and the rest go in a bag. Not placed -> no value.
+const SPK = [
+  ['party', /\bpartybox\b|\bboombox\b/i],
+  ['smart', /\bhomepod\b|\bstation\b|\bsonos\b|\bauthentics\b|\bsoundtouch\b|\bgoogle\b|\bbeosound (balance|level|edge)\b/i],
+  ['home',  /\bacton\b|\bstanmore\b|\bwoburn\b|\baura studio\b|\bstudio \d\b/i],
+  ['portable', /\bflip\b|\bcharge\b|\bclip\b|\bgo \d\b|\bxtreme\b|\bsoundlink\b|\bemberton\b|\bwillen\b|\bkilburn\b|\bstockwell\b|\bmiddleton\b|\buxbridge\b|\bluna\b|\bonyx\b|\bbeosound (a1|a5|explore)\b/i],
+];
+const spkOf = p => p.category !== 'speaker' ? null : (SPK.find(([, re]) => re.test(p.name)) || [])[0] || null;
+// The year it was released, which is a fact the catalogue records, not one read off a title.
+const yearOf = p => { const m = String(p.released || '').match(/^(\d{4})/); return m ? +m[1] : null; };
+// "macOS 26", "Android 15, One UI 7" - the family is what anybody filters on, not the point release.
+// Google TV and Wear OS are Android underneath but are what a buyer knows them as, so they come
+// before Android in the list - the first match wins.
+const OSES = ['iOS', 'iPadOS', 'macOS', 'watchOS', 'Google TV', 'Wear OS', 'Android', 'Windows', 'HarmonyOS',
+  'Chrome OS', 'Tizen', 'webOS', 'VIDAA', 'Garmin', 'DOS'];
+const osOf = p => { const v = String(p.os || '').replace(/\bwin ?1[01]\b/i, 'Windows');
+  return OSES.find(o => new RegExp('\\b' + o + '\\b', 'i').test(v)) || null; };
+// Which questions each category can be asked. The bar used to decide this purely on whether the
+// numbers varied, so AirPods were filtered by RAM and screen size and a watch by refresh rate:
+// varying is not the same as meaning something. A filter listed here still has to prove the
+// items in view differ on it before it is drawn.
+const ASK = {
+  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
+  tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'g5', 'touch', 'panel', 'os', 'year'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'touch', 'weight', 'panel', 'os', 'year'],
+  desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
+  console:    ['stor', 'year'],
+  ereader:    ['stor', 'scr', 'weight', 'water', 'panel', 'year'],
+  watch:      ['stor', 'scr', 'life', 'weight', 'water', 'os', 'year'],
+  headphones: ['hform', 'hconn', 'hplug', 'anc', 'gaming', 'life', 'weight', 'water', 'year'],
+  speaker:    ['spk', 'life', 'weight', 'water', 'year'],
+  appliance:  ['year'],
+  monitor:    ['scr', 'res', 'hz', 'touch', 'panel', 'year'],
+  component:  ['year'],
+  // A television is asked the same two questions a monitor is: how big, and how fast.
+  tv:         ['scr', 'res', 'hz', 'panel', 'os', 'year'],
+  drone:      ['year'],
+  network:    ['year'],
+};
+// Brand, price and shop are questions about the purchase, not about the hardware, so they are
+// asked everywhere. A spec question needs a category: with none chosen the page is showing
+// phones beside fridges, and "16 GB or more" there is a question about some of them only.
+// With a category chosen, that category's own list decides. With none, the bar used to offer
+// nothing but brand, price and shop - which is why "All" looked like it had lost its filters.
+// A question some category in view would be asked is a fair question to ask of the whole view;
+// whether it is DRAWN still depends on the items in view actually differing on it, which is the
+// check that kept RAM off the AirPods in the first place.
+const ANY_ASK = new Set(Object.values(ASK).flat());
+const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop'
+  || (cat ? (ASK[cat] || []).includes(k) : ANY_ASK.has(k));
+
+function matches(p, s) {
+  if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
+  if (!hayMatch(p, s.q)) return false;
+  const pr = catalogPrice(p, s);
+  if ((s.ram || s.stor || (s.shops || []).length) &&
+      (hasReal(p) ? !catalogOffers(p, s).length : !catalogVariants(p, s).length)) return false;
+  if (pr < s.pmin || pr > s.pmax) return false;
+  for (const k in FILT) {
+    if (k === 'ram' || k === 'stor') continue; // checked jointly against actual configurations above
+    const f = FILT[k];
+    // an ACTIVE spec filter excludes anything without that spec: earbuds have no screen, so
+    // they must not slip through a "120 Hz or more" filter merely by lacking the field
+    if (f.kind === 'flag') { if (s[k] && !f.of(p, s)) return false; continue; }
+    if (f.kind === 'min') { if (s[k] && !(f.of(p, s) >= s[k])) return false; continue; }
+    if (f.kind === 'max') { if (s[k] && !(f.of(p, s) <= s[k])) return false; continue; }
+    if (f.kind === 'yn') { if (s[k] && f.of(p, s) !== (s[k] === 1)) return false; continue; }
+    const sel = s[f.arr] || [];
+    if (!sel.length) continue;
+    if (k === 'shop') { if (!offersFor(p).some(o => sel.includes(o.shop))) return false; continue; }
+    const v = f.of(p, s);                        // any chosen value qualifies
+    if (v == null || !sel.includes(v)) return false;
+  }
+  if (s.scrmin && !(p.display?.size >= s.scrmin)) return false;
+  return true;
+}
+// A saving is only real when it is the SAME product in the SAME configuration: cheapest shop
+// against dearest. Measured across tiers it is just the price of more storage - the Z Fold 8
+// showed a 470 000 ֏ "saving" that was a 256 GB offer against a 1 TB one.
+// "Save up to X" is a promise that the same thing costs less somewhere else, so the two prices
+// have to be the same thing. Two ways they were not:
+//
+// The eSIM build and the tray build are different hardware at different prices - the tray always
+// costs more - so a tier that mixed them reported the SIM difference as a saving. The iPhone 17
+// Pro Max 1TB read "save 234 000" by comparing a 715 000 eSIM against a 949 000 tray.
+//
+// And an offer whose capacity the shop never stated could be any configuration. Where a product
+// sells in one size only that is harmless, but the MacBook Pro 14 M4 Pro sells at 512 GB and
+// 1 TB and all three of its offers state no capacity - so the front page promised 274 000 off
+// by putting one shop's base model beside the same shop's higher one.
+// Every configuration a product is sold in (same capacity, RAM and SIM build), with one price per
+// shop - its cheapest. Two colours at one shop are not a saving between shops, and the front page
+// names the shops, so each end has to be one.
+const tiersOf = p => {
+  const sizes = new Set((p.variants || []).map(v => v.storage).filter(v => v != null));
+  const byTier = new Map();
+  for (const o of offersFor(p)) {
+    if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
+    // screen size too: a 13-inch and a 15-inch MacBook with the same memory are not one product
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '') + (o.cell ? '|c' : '');
+    (byTier.get(k) || byTier.set(k, []).get(k)).push(o);
+  }
+  const out = [];
+  for (const [tier, offs] of byTier) {
+    const perShop = new Map();
+    offs.forEach((o, i) => { const k = o.shop ?? i; if (!perShop.has(k) || o.price < perShop.get(k).price) perShop.set(k, o); });
+    if (perShop.size < 2) continue;
+    const list = [...perShop.values()].sort((a, b) => a.price - b.price);
+    const loO = list[0], hiO = list[list.length - 1], lo = loO.price, hi = hiO.price;
+    // the usual price: what the middle shop asks - a real price somebody charges, and one that a
+    // single mislabelled listing at either end cannot move
+    const mid = list[list.length >> 1].price;
+    const [stor, ram, sim, size] = tier.split('|');
+    out.push({ p, lo, hi, mid, gap: hi - lo, below: mid - lo, storage: stor === 'base' ? null : +stor, ram: ram ? +ram : null,
+               size: size && new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1 ? +size : null,
+               esim: sim === 'e' ? true : sim === 'n' ? false : null, loShop: loO.shop, hiShop: hiO.shop, shops: list.length });
+  }
+  return out;
+};
+// the widest spread between two shops for one configuration
+const bestTier = p => tiersOf(p).reduce((a, r) => r.hi > r.lo && (!a || r.gap > a.gap) ? r : a, null);
+// The front page's saving is measured against the usual price, not the dearest shop: one shop
+// listing a bigger model as the 512 GB made a "saving" of 294 000 on a phone nobody overcharges
+// for. Three shops at least, or there is no middle to speak of.
+const typTier = p => tiersOf(p).filter(r => r.shops >= 3 && r.below > 0)
+  .reduce((a, r) => !a || r.below / r.mid > a.below / a.mid ? r : a, null);
+const spreadOf = p => bestTier(p)?.gap || 0;
+const SORTS = {
+  popular: (a, b) => b.popularity - a.popularity,
+  price_asc: (a, b) => catalogPrice(a) - catalogPrice(b),
+  price_desc: (a, b) => catalogPrice(b) - catalogPrice(a),
+  newest: (a, b) => (b.released || '').localeCompare(a.released || ''),
+  brand: (a, b) => a.brand.localeCompare(b.brand) || fullName(a).localeCompare(fullName(b)),
+  battery: (a, b) => (b.battery?.capacity || 0) - (a.battery?.capacity || 0),
+  screen: (a, b) => (b.display?.size || 0) - (a.display?.size || 0),
+  savings: (a, b) => spreadOf(b) - spreadOf(a),
+  shops: (a, b) => shopCount(offersFor(b)) - shopCount(offersFor(a)),
+  ram: (a, b) => topOf(b, 'ram') - topOf(a, 'ram'),
+  storage: (a, b) => topOf(b, 'storage') - topOf(a, 'storage')
+};
+const topOf = (p, k) => Math.max(0, ...(p.variants || []).map(v => v[k] || 0));
+// A sort is only worth offering when the items on screen actually carry the number: "Battery"
+// on a page of desktops sorts nothing, it just puts a dead option in the menu.
+const SORT_NEEDS = { battery: p => p.battery?.capacity, screen: p => p.display?.size,
+  ram: p => topOf(p, 'ram'), storage: p => topOf(p, 'storage'), savings: p => spreadOf(p) };
+const SORT_ALL = ['popular', 'price_asc', 'price_desc', 'savings', 'shops', 'newest', 'brand', 'ram', 'storage', 'battery', 'screen'];
+if (!SORT_ALL.includes(st.sort)) st.sort = D.sort;   // a sort key we removed must not survive in saved state
+const sortKeys = () => { const v = inView(); return SORT_ALL.filter(k => !SORT_NEEDS[k] || v.some(SORT_NEEDS[k])); };
+const sortLabel = k => (X[st.lang].sorts && X[st.lang].sorts[k]) || t('sort.' + k);
+const results = () => DATA.filter(p => matches(p, st)).sort(SORTS[st.sort] || SORTS.popular);
+// One merged state per count, not one per product: the spread used to run 1304 times for every
+// option in every filter panel, on every repaint.
+const cnt = extra => { const s = { ...st, ...extra }; let n = 0; for (const p of DATA) if (matches(p, s)) n++; return n; };
+
+/* ================= spec table ================= */
+// A getter that formats a missing field yields "null GB" / "NaN mAh" / "undefined x undefined".
+// Both the product page and the comparison read every getter through this, so neither can print
+// one - the comparison used to show "undefined × undefined × undefined mm" for 296 products.
+const specVal = (get, p) => {
+  let v; try { v = get(p); } catch (e) { return null; }
+  return v == null || v === '' || /undefined|null|NaN/.test(String(v)) ? null : v;
+};
+// Legacy importers filled phone-shaped fields for every category. Applicability is
+// separate from whether a value happens to exist in that old record.
+function specAllowed(key, p) {
+  const cat = catOf(p), mobile = ['phone', 'tablet'].includes(cat);
+  if (['f.main_cam', 'f.ultrawide', 'f.telephoto', 'f.front_cam', 'f.video'].includes(key)) return mobile;
+  if (['f.sim', 'f.network', 'f.nfc', 'f.wireless'].includes(key)) return mobile || cat === 'watch';
+  if (key === 'f.card_slot') return mobile || cat === 'laptop' || cat === 'camera';
+  if (['f.capacity', 'f.charging'].includes(key)) return ['phone', 'tablet', 'laptop', 'watch', 'headphones', 'speaker', 'ereader', 'drone'].includes(cat);
+  if (['f.screen_size', 'f.screen_type', 'f.resolution', 'f.refresh_rate', 'f.ppi', 'f.brightness', 'f.protection', 'f.touch'].includes(key))
+    return ['phone', 'tablet', 'laptop', 'watch', 'tv', 'monitor', 'ereader'].includes(cat);
+  if (['f.chipset', 'f.process', 'f.cpu', 'f.gpu', 'f.ram', 'f.storage', 'f.os', 'f.updates'].includes(key))
+    return ['phone', 'tablet', 'laptop', 'desktop', 'watch', 'console', 'component', 'ereader'].includes(cat);
+  return true;
+}
+const GROUPS = [
+  ['sec.display', [
+    ['f.screen_size', p => p.display.size + '″', p => p.display.size],
+    ['f.screen_type', p => p.display.type],
+    // 43 entries write the long side first and 10 write it last, which side by side in a
+    // comparison reads as two unrelated numbers. Normalised here rather than in the data, so a
+    // future scrape cannot reintroduce it: always short x long, the way every spec sheet lists it.
+    ['f.resolution', p => { const r = p.display?.resolution; if (!r) return null;
+      // ...short x long for what you hold upright (a phone, a watch); a TV, monitor, laptop or
+      // tablet sheet writes the long side first - 3840×2160 - and "2160×3840" reads as a typo.
+      const m = /^(\d+)\s*[x×]\s*(\d+)$/.exec(String(r).trim());
+      if (!m) return r;
+      const [a, b] = [Math.min(+m[1], +m[2]), Math.max(+m[1], +m[2])];
+      return /^(phone|watch)$/.test(p.category) ? a + '×' + b : b + '×' + a; }],
+    ['f.refresh_rate', p => p.display.refresh + ' ' + u('hz'), p => p.display.refresh, 1],
+    ['f.ppi', p => p.display.ppi && p.display.ppi + ' ppi', p => p.display.ppi, 1],
+    ['f.brightness', p => p.display.brightness && money(p.display.brightness) + ' ' + u('nit'), p => p.display.brightness, 1],
+    ['f.protection', p => p.display?.protection],
+    ['f.touch', p => p.display?.touch == null ? null : p.display.touch ? t('common.yes') : t('common.no')]
+  ]],
+  ['sec.performance', [
+    ['f.chipset', p => p.chipset.name],
+    ['f.process', p => p.chipset.process],
+    ['f.cpu', p => p.chipset.cpu],
+    ['f.gpu', p => p.graphics?.name || p.chipset?.gpu],
+  ]],
+  ['sec.memory', [
+    // an item with nothing to choose (earbuds) or no RAM figure (a watch) shows no row at all
+    ['f.ram', p => { const v = [...new Set((p.variants || []).map(x => x.ram))].filter(x => x != null && x > 0);
+      return v.length ? v.join(' / ') + ' ' + u('gb') : null; }, p => topOf(p, 'ram'), 1],
+    ['f.storage', p => { const v = [...new Set((p.variants || []).map(x => x.storage))].filter(x => x != null);
+      return v.length ? v.map(x => gb(x, p.variantUnit)).join(' / ') : null; }, p => topOf(p, 'storage'), 1],
+    ['f.card_slot', p => p.cardSlot == null ? null : p.cardSlot ? t('common.yes') : t('common.no')]
+  ]],
+  ['sec.camera', [
+    ['f.main_cam', p => p.camera.main],
+    ['f.ultrawide', p => p.camera.ultrawide],
+    ['f.telephoto', p => p.camera.telephoto],
+    ['f.front_cam', p => p.camera.front],
+    ['f.video', p => p.camera.video]
+  ]],
+  ['sec.battery', [
+    // a laptop's battery is rated in watt-hours (70 Wh), not milliamp-hours - "70 mAh" read as a typo
+    ['f.capacity', p => p.battery.capacity > 0 ? (p.category === 'laptop' ? new Intl.NumberFormat(st.lang, { maximumFractionDigits: 1 }).format(p.battery.capacity) : money(p.battery.capacity)) + ' ' + u(p.category === 'laptop' ? 'wh' : 'mah') : null, p => p.battery.capacity, 1],
+    ['f.charging', p => p.battery.wired && p.battery.wired + ' ' + u('w'), p => p.battery.wired, 1],
+    ['f.wireless', p => p.battery?.capacity == null ? null : p.battery.wireless ? p.battery.wireless + ' ' + u('w') : t('common.no'), p => p.battery?.wireless, 1]
+  ]],
+  ['sec.body', [
+    ['f.dimensions', p => `${p.body.height} × ${p.body.width} × ${p.body.thickness} ${u('mm')}`, p => p.body.thickness, -1],
+    ['f.weight', p => p.body.weight + ' ' + u('g'), p => p.body.weight, -1],
+    ['f.materials', p => p.body.materials],
+    ['f.ip_rating', p => p.body.ip]
+  ]],
+  ['sec.connectivity', [
+    ['f.network', p => p.connectivity.network],
+    ['f.wifi', p => p.connectivity.wifi],
+    ['f.bluetooth', p => p.connectivity.bluetooth],
+    ['f.nfc', p => p.connectivity?.nfc == null ? null : p.connectivity.nfc ? t('common.yes') : t('common.no')],
+    ['f.sim', p => p.connectivity.sim],
+    ['f.ports', p => p.connectivity.ports]
+  ]],
+  ['sec.software', [
+    ['f.os', p => p.os],
+    ['f.updates', p => p.updates],
+    ['f.released', p => relDate(p.released)]
+  ]]
+];
+
+// Every product carries `unsure`: the list of fields whose value was not confirmed from the
+// maker's own sheet. The data has recorded that from the start and the page has been printing
+// those figures as fact. This says which field each spec row reads, so the ones that are not
+// certain are marked as not certain. A row with no entry here has nothing to be unsure about.
+const FIELD_OF = {
+  'f.screen_size': 'display.size', 'f.screen_type': 'display.type', 'f.resolution': 'display.resolution',
+  'f.refresh_rate': 'display.refresh', 'f.ppi': 'display.ppi', 'f.brightness': 'display.brightness',
+  'f.protection': 'display.protection', 'f.touch': 'display.touch',
+  'f.chipset': 'chipset.name', 'f.process': 'chipset.process', 'f.cpu': 'chipset.cpu',
+  'f.gpu': 'graphics.name', 'f.card_slot': 'cardSlot',
+  'f.main_cam': 'camera.main', 'f.ultrawide': 'camera.ultrawide', 'f.telephoto': 'camera.telephoto',
+  'f.front_cam': 'camera.front', 'f.video': 'camera.video',
+  'f.capacity': 'battery.capacity', 'f.charging': 'battery.wired', 'f.wireless': 'battery.wireless',
+  'f.weight': 'body.weight', 'f.materials': 'body.materials', 'f.ip_rating': 'body.ip',
+  'f.network': 'connectivity.network', 'f.wifi': 'connectivity.wifi', 'f.bluetooth': 'connectivity.bluetooth',
+  'f.nfc': 'connectivity.nfc', 'f.sim': 'connectivity.sim', 'f.ports': 'connectivity.ports',
+  'f.os': 'os', 'f.updates': 'updates', 'f.released': 'released',
+};
+// A whole block can be flagged ('connectivity', 'battery'), which covers every row inside it.
+const unsureRow = (p, key) => {
+  const f = FIELD_OF[key];
+  if (!f) return false;
+  const u = p.unsure || [];
+  return u.includes(f) || u.includes(f.split('.')[0]);
+};
+
+
+/* ================= chrome ================= */
+const ICON_CHEV = '<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
+function paintChrome() {
+  document.documentElement.lang = st.lang;
+  if (st.theme === 'auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.dataset.theme = st.theme;
+  $('#langs').innerHTML = ['hy', 'ru', 'en'].map(l =>
+    `<button data-lang="${l}" aria-pressed="${st.lang === l}">${{ hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' }[l]}</button>`).join('');
+  const tb = $('#themeBtn');
+  tb.setAttribute('aria-label', t('common.theme') + ': ' + st.theme);
+  tb.setAttribute('title', t('common.theme'));
+  $('#skipLink').textContent = t('common.skip');
+  $('#srchLbl').textContent = t('nav.search_placeholder');
+  $('#q').setAttribute('aria-label', t('nav.search_placeholder'));
+  $('#q').placeholder = hint();
+  const go = $('#qgo'); if (go) go.setAttribute('aria-label', t('nav.search_placeholder'));
+  if ($('#q').value !== st.q) $('#q').value = st.q;
+  const h = location.hash.replace(/^#/, '') || '/';
+  // The logo is home and always has been, so a second link to it in the nav said nothing. What
+  // the nav is for is the two places you cannot otherwise reach: the chooser, which is where
+  // "Catalog" now goes, and the comparison.
+  $('#nav').innerHTML =
+    `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
+    `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${x('navCmpShort') ? `<span class="nl">${esc(t('nav.compare'))}</span><span class="ns">${esc(x('navCmpShort'))}</span>` : esc(t('nav.compare'))}`
+    + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
+    + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
+  paintCmpCount();
+  $('#foot').innerHTML = `<b>Better.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
+    + `<span class="ft-note">${esc(x('disclaim'))}</span>`
+    + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a></span>`;
+}
+// The compare bar is gone: picking a product goes straight to the comparison, so a second copy
+// of the same list pinned over the page was doing nothing but covering the last row. The header
+// button that duplicated it is gone too - one way in, the nav link, which now carries the count.
+// What is kept is the dimming of cards that cannot join, and the one message that has to be
+// said out loud when a pick is refused.
+// The badge is the thing being watched when a product is added, and it was changing silently -
+// the toast said what happened somewhere else on the page. It pops only when the count GOES UP,
+// so removing one, or a plain re-render, stays quiet.
+let lastCmpN = 0;
+function paintCmpCount() {
+  const el = $('#cmpN');
+  if (!el) return;
+  // The badge lives in the nav now, which render() rewrites, so the previous count cannot be
+  // read back off the element - a re-render would always look like no change. Keep it here.
+  const was = lastCmpN;
+  lastCmpN = st.cmp.length;
+  el.textContent = st.cmp.length || '';
+  if (st.cmp.length <= was) return;
+  el.classList.remove('pop');
+  void el.offsetWidth;          // restart the animation rather than let it be ignored
+  el.classList.add('pop');
+  // drop the class once it has played, so the element does not carry a spent state around
+  el.addEventListener('animationend', () => el.classList.remove('pop'), { once: true });
+}
+function paintTray() {
+  paintCmpCount();
+  const lock = st.cmp.length ? catOf(byId(st.cmp[0])) : '';
+  $$('[data-cat][data-cmp]').forEach(b =>
+    b.classList.toggle('off', !!lock && b.dataset.cat !== lock));
+}
+// the compare limit used to fire a browser alert(); say it in the tray instead
+// BOTH timers have to be cancelled when a second message arrives: the inner one belongs to the
+// previous message and, left running, hides the new message about a second after it appears.
+let trayMsgT, trayHideT;
+function trayMsg(text) {
+  const el = $('#traymsg'); if (!el) return;
+  clearTimeout(trayMsgT); clearTimeout(trayHideT);
+  el.textContent = text; el.hidden = false;
+  requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on')));
+  trayMsgT = setTimeout(() => {
+    el.classList.remove('on');
+    trayHideT = setTimeout(() => { el.hidden = true; }, 250);   // hide after the fade, not during
+  }, 3000);
+}
+const catOf = p => (p.category || 'phone');
+function toggleCmp(id) {
+  const i = st.cmp.indexOf(id);
+  if (i >= 0) st.cmp.splice(i, 1);
+  else if (st.cmp.length >= MAXCMP) { trayMsg(t('compare.max_reached')); return false; }
+  // A laptop beside a pair of earbuds compares nothing - every row of the table is blank on one
+  // side. The first pick sets the type and the rest of the grid dims to match.
+  else if (st.cmp.length && catOf(byId(st.cmp[0])) !== catOf(byId(id))) {
+    trayMsg(t('compare.same_category')); return false;
+  }
+  else {
+    st.cmp.push(id);
+    st.cmpConfigs[id] = SEL.id === id ? { ...SEL } : initialConfig(byId(id));
+    // the plus reads as "compare this", so it goes there - the compare page carries its own
+    // add slot, which is where the second and third picks come from
+    if (location.hash !== '#/compare') setTimeout(() => { location.hash = '#/compare'; }, 120);
+  }
+  save(); paintTray();
+  const on = st.cmp.includes(id), nm = fullName(byId(id));
+  $$(`[data-cmp="${id}"]`).forEach(b => {
+    b.setAttribute('aria-pressed', on);
+    // aria-pressed alone leaves a screen reader saying "Add to compare, pressed"
+    b.setAttribute('aria-label', `${on ? t('detail.in_compare') : t('detail.add_compare')}: ${nm}`);
+  });
+  return true;
+}
+
+/* ================= filter bar ================= */
+// Filter steps are read off the items on screen. The old fixed lists ([4,6,8,12,16] RAM,
+// [64,128,256,512] storage) could not offer the 24 GB and 2 TB the laptops brought in, and
+// offered 64 GB to a category whose smallest phone is 128.
+const steps = get => {
+  // the smallest value matches everything that has the spec, so it only repeats "All"
+  const v = [...new Set(inView().flatMap(get))].filter(n => typeof n === 'number' && n > 0).sort((a, b) => a - b).slice(1);
+  if (v.length <= 6) return v;
+  // ponytail: evenly sampled, which is plenty for a "this much or more" filter
+  return [...new Set(Array.from({ length: 6 }, (_, i) => v[Math.round(i * (v.length - 1) / 5)]))];
+};
+// every product in view is a watch -> the variant number is a case size, not a capacity
+const viewUnit = () => {
+  // only the items that actually supply a number get a say: a band with no variants at all
+  // was dragging the whole watch category back to gigabytes.
+  const p = inView().filter(q => (q.variants || []).some(v => v.storage != null));
+  return p.length && p.every(q => q.variantUnit === 'mm') ? 'mm' : undefined;
+};
+// Ticking a box used to filter the page under you, so choosing three brands meant three reloads
+// of the grid and two of them were views nobody asked for. The ticks are now just ticks until
+// Apply, which is what a multi-select has always meant everywhere else.
+const APPLY = key => `<div class="fapply"><button type="button" class="fclear" data-clear="${key}">${
+  esc(x('clearF'))}</button><button type="button" class="fgo" data-apply="${key}">${esc(x('applyF'))}</button></div>`;
+const drop = (key, label, body, right) =>
+  `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel">${body}${
+    right ? '' : APPLY(key)}</div></details>`;
+const radios = (key, vals, fmt) =>
+  `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="0"><span>${esc(x('any'))}</span></label>` +
+  vals.map(v => `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="${v}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${v}"></span></label>`).join('');
+// A list longer than a panel is tall gets a search box: forty brands is a scroll to find one.
+const FIND_AT = 8;
+const boxes = (key, vals, fmt) => (vals.length >= FIND_AT
+  ? `<input type="search" class="fsearch" data-fs="1" placeholder="${esc(x('findL'))}" aria-label="${esc(x('findL'))}" autocomplete="off">` : '') + vals.map(v =>
+  `<label class="opt"><input type="checkbox" data-f="${key}" value="${esc(String(v))}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${esc(String(v))}"></span></label>`).join('');
+
+// A filter earns its place only if the items in view actually differ on it. Deriving that
+// from the data means a new category never needs a hand-written filter list.
+function inView() { return DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat); }
+function varies(get) { return new Set(inView().map(get).filter(v => v != null && v !== '')).size > 1; }
+// The values a tick-list offers: only the ones something in view actually has, so "Submersible"
+// is not offered on a page where nothing is waterproof.
+function setVals(k, f, pool) {
+  if (k === 'shop') return [...new Set(pool.flatMap(p => offersFor(p).map(o => o.shop)))]
+    .sort((a, b) => shopName(a).localeCompare(shopName(b)));
+  const have = new Set(pool.map(p => f.of(p, st)).filter(v => v != null && v !== ''));
+  return (f.vals ? f.vals() : [...have].sort()).filter(v => have.has(v));
+}
+// One filter's control - or nothing at all, when the category is never asked this question or
+// every item in view answers it the same way.
+function fdrop(k, pool) {
+  const f = FILT[k];
+  if (!askable(k)) return '';
+  if (f.kind === 'flag') return varies(p => f.of(p, st))
+    ? `<button class="toggle" data-f="${k}" aria-pressed="false">${esc(f.label())}</button>` : '';
+  if (f.kind === 'min') {
+    const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)]);
+    return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
+  }
+  if (f.kind === 'yn') return varies(p => f.of(p, st))
+    ? drop(k, f.label(), radios(k, [1, 2], v => v === 1 ? t('common.yes') : t('common.no'))) : '';
+  if (f.kind === 'max') {
+    // rounded up to a step a person would say - "up to 1.6 kg", not "up to 1 587 g" - and the
+    // heaviest dropped, since "up to the heaviest" is just All again
+    const r = v => { const s = v >= 1000 ? 100 : v >= 100 ? 10 : 1; return Math.ceil(v / s) * s; };
+    const all = [...new Set(inView().map(p => f.of(p, st)).filter(v => v > 0).map(r))].sort((a, b) => a - b).slice(0, -1);
+    const vals = all.length <= 6 ? all : [...new Set(Array.from({ length: 6 }, (_, i) => all[Math.round(i * (all.length - 1) / 5)]))];
+    return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, v => x('max') + ' ' + f.fmt(v))) : '';
+  }
+  const vals = setVals(k, f, pool);
+  return vals.length > 1 ? drop(k, f.label(), boxes(k, vals, f.fmt)) : '';
+}
+function filterBar() {
+  const pool = inView();
+  // On a phone the same bar is a sheet from the bottom: a head to close it, and at the foot one
+  // button that applies every panel at once and says how many results that will be.
+  let h = `<div class="fbar${st.fopen ? '' : ' folded'}" id="fbar"><div class="fsheet-hd"><b>${esc(x('filtersT'))}</b>`
+    + `<button type="button" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div>`;
+  h += fdrop('brand', pool);
+  h += drop('price', t('filter.price'), `<div class="rngbox"><div class="rng"><span class="track"></span><span class="fill"></span>
+      <input type="range" data-f="pmin" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.from'))}">
+      <input type="range" data-f="pmax" min="${PMIN}" max="${PMAX}" step="5000" aria-label="${esc(t('common.to'))}"></div>
+      <div class="rngv"><span class="num" data-rng="min"></span><span class="num" data-rng="max"></span></div></div>`);
+  // In the order the section asks them, so a headphone's Type comes before its battery life and a
+  // folded bar still shows the question that matters most. Shop and anything else askable follow.
+  const order = [...new Set([...(ASK[st.cat] || []), ...Object.keys(FILT)])].filter(k => k !== 'brand');
+  for (const k of order) if (FILT[k]) h += fdrop(k, pool);
+  // "All filters" sits in the row it opens, styled like "More sections" above it. Folding hides
+  // the extra filters, never this button (see .fbar.folded > .fmore).
+  const nf = activeFilterCount();
+  h += `<button class="fmore cmore" data-fmore="1" aria-expanded="${st.fopen ? 'true' : 'false'}">
+    ${esc(st.fopen ? x('filtersHide') : x('filtersShow'))}${nf ? ` <b>${nf}</b>` : ''}
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`;
+  h += `<span class="spacer"></span>`;
+  h += drop('sort', `${t('sort.label')}: ${sortLabel(st.sort)}`, sortKeys().map(s =>
+    `<label class="opt"><input type="radio" name="r-sort" data-f="sort" value="${s}"><span>${esc(sortLabel(s))}</span></label>`).join(''), true);
+  return h + `<div class="fsheet-ft"><button type="button" class="fsclr" data-rm="all">${esc(t('common.reset'))}</button><button type="button" class="fsgo" id="fsgo" data-fsgo="1">${esc(x('showN').replace('{n}', results().length))}</button></div>`
+    + `</div>`;
+}
+// how many filters are actually narrowing the list right now - shown on the button so a folded
+// bar can never hide the fact that something is filtering
+function activeFilterCount() {
+  let n = (st.pmin > PMIN || st.pmax < PMAX) ? 1 : 0;
+  for (const k in FILT) n += FILT[k].kind === 'set' ? (st[FILT[k].arr] || []).length : (st[k] ? 1 : 0);
+  return n;
+}
+// Read what the panel is showing into the state, close it, and redraw once.
+function openSheet() {
+  document.documentElement.classList.add('fs-open');
+  // Groups start closed (owner, 2026-10-02): opened all at once, Brand alone was a screen of
+  // ticks before Price. A group with a filter already set opens, so what is applied is seen.
+  $$('#fbar .fdrop:not(.r)').forEach(d => { d.open = !!d.querySelector('input:checked:not([value=""]):not([value="0"])'); });
+  paintDraftCount(null);
+  $('#fbar')?.focus?.();
+}
+// Closing without "Show" throws the drafts away: the boxes go back to what is applied.
+function closeSheet() {
+  if (!document.documentElement.classList.contains('fs-open')) return;
+  document.documentElement.classList.remove('fs-open');
+  $$('#fbar .fdrop').forEach(d => { d.open = false; d.classList.remove('dirty'); });
+  syncFilters();
+}
+// What a panel is showing, as the state it would produce - read without committing anything,
+// so the Apply button can say how many results it leads to before it is pressed.
+function panelDraft(panel, key) {
+  if (key === 'price') {
+    const lo = +panel.querySelector('input[data-f="pmin"]')?.value;
+    const hi = +panel.querySelector('input[data-f="pmax"]')?.value;
+    return { pmin: Math.min(lo, hi), pmax: Math.max(lo, hi) };
+  }
+  const f = FILT[key];
+  if (f && f.kind === 'set') return { [f.arr]: [...panel.querySelectorAll('input[type="checkbox"]:checked')].map(i => i.value) };
+  if (f) { const r = panel.querySelector('input[type="radio"]:checked'); return { [key]: r ? +r.value : 0 }; }
+  return {};
+}
+const draftAll = () => Object.assign({}, ...$$('.fdrop.dirty:not(.r)').map(pn => panelDraft(pn, pn.dataset.drop)));
+// e-catalog puts the count next to the box you just ticked; here it is on the button you press.
+function paintDraftCount(panel) {
+  const one = panel ? panelDraft(panel, panel.dataset.drop) : {};
+  const all = { ...draftAll(), ...one };
+  const label = n => x('showN').replace('{n}', n);
+  if (panel) { const b = panel.querySelector('.fgo'); if (b) b.textContent = label(cnt(one)); }
+  const g = $('#fsgo'); if (g) g.textContent = label(cnt(all));
+}
+function commitPanel(panel, key) {
+  if (!panel) return;
+  Object.assign(st, panelDraft(panel, key));
+  panel.classList.remove('dirty');
+  panel.open = false;
+  st.page = 1;
+  refresh();
+}
+// The number under a price slider, painted from the handles rather than from the state, so it
+// still follows the drag while the drag is only a draft.
+function paintRange(panel) {
+  const lo = +panel.querySelector('input[data-f="pmin"]')?.value;
+  const hi = +panel.querySelector('input[data-f="pmax"]')?.value;
+  const a = Math.min(lo, hi), b = Math.max(lo, hi), sp = PMAX - PMIN;
+  const mn = panel.querySelector('[data-rng="min"]'), mx = panel.querySelector('[data-rng="max"]');
+  if (mn) mn.textContent = money(a) + ' ֏';
+  if (mx) mx.textContent = money(b) + ' ֏';
+  const fill = panel.querySelector('.rng .fill');
+  if (fill) { fill.style.left = ((a - PMIN) / sp * 100) + '%'; fill.style.right = ((PMAX - b) / sp * 100) + '%'; }
+}
+
+function syncFilters() {
+  $$('[data-f]').forEach(el => {
+    const k = el.dataset.f;
+    if (el.tagName === 'BUTTON') { el.setAttribute('aria-pressed', !!st[k]); return; }
+    if (FILT[k] && FILT[k].kind === 'set') el.checked = (st[FILT[k].arr] || []).includes(el.value);
+    else if (k === 'pmin' || k === 'pmax') el.value = st[k];
+    else if (el.type === 'radio') el.checked = String(st[k] ?? '') === el.value;
+  });
+  $$('[data-cnt]').forEach(el => {
+    // split on the FIRST colon only: a shop id or a brand is the rest of the string
+    const d = el.dataset.cnt, i = d.indexOf(':'), k = d.slice(0, i), v = d.slice(i + 1);
+    const f = FILT[k];
+    el.textContent = f && f.kind === 'set' ? cnt({ [f.arr]: [v] }) : cnt({ [k]: +v });
+    // a choice that leaves nothing is not offered (owner, 2026-10-02: a search for "samsung"
+    // listed every brand in the catalogue at 0) - unless it is the one already ticked
+    const box = el.closest('label'); if (box) box.hidden = el.textContent === '0' && !box.querySelector('input:checked');
+  });
+  $$('[data-rng="min"]').forEach(e => e.textContent = money(st.pmin) + ' ֏');
+  $$('[data-rng="max"]').forEach(e => e.textContent = money(st.pmax) + ' ֏');
+  $$('.rng .fill').forEach(f => {
+    const sp = PMAX - PMIN;
+    f.style.left = ((st.pmin - PMIN) / sp * 100) + '%';
+    f.style.right = ((PMAX - st.pmax) / sp * 100) + '%';
+  });
+  const sd = document.querySelector('[data-drop="sort"] > summary');
+  if (sd) sd.childNodes[0].nodeValue = t('sort.label') + ': ' + sortLabel(st.sort);
+  $$('[data-drop]').forEach(d => {
+    const k = d.dataset.drop;
+    const on = k === 'price' ? (st.pmin > PMIN || st.pmax < PMAX) : k === 'sort' ? st.sort !== 'popular'
+      : FILT[k] && FILT[k].kind === 'set' ? (st[FILT[k].arr] || []).length : !!st[k];
+    d.classList.toggle('on', !!on);
+  });
+}
+// A filter set in one category follows you into the next one, where the filter bar no longer
+// shows a control for it - the touchscreen question from Construct survives onto a page of
+// desktops and empties it for a reason nothing on screen explains. So on every category change,
+// drop the filters the new category cannot satisfy at all.
+function pruneFilters() {
+  const pool = inView();
+  const base = { ...D, cat: st.cat, pmin: PMIN, pmax: PMAX };
+  for (const k in FILT) {
+    const f = FILT[k];
+    // a question this category is never asked has no control to turn it off with again
+    if (!askable(k)) { if (f.kind === 'set') st[f.arr] = []; else st[k] = D[k]; continue; }
+    if (f.kind === 'set') st[f.arr] = (st[f.arr] || []).filter(v => pool.some(p => matches(p, { ...base, [f.arr]: [v] })));
+    else if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
+  }
+  for (const k of ['scrmin'])
+    if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
+}
+
+const activeChips = () => {
+  const o = [];
+  for (const v of st.brands) o.push(['brand:' + v, v]);
+  if (st.pmin > PMIN || st.pmax < PMAX) o.push(['price', `${money(st.pmin)}–${money(st.pmax)} ֏`]);
+  for (const k in FILT) {
+    const f = FILT[k];
+    if (k === 'brand') continue;                                   // already first, above the price
+    if (f.kind === 'set') { for (const v of st[f.arr] || []) o.push([k + ':' + v, f.fmt(v)]); continue; }
+    if (st[k]) o.push([k, f.kind === 'flag' ? f.label()
+      : f.kind === 'yn' ? `${f.label()}: ${st[k] === 1 ? t('common.yes') : t('common.no')}`
+      : `${x(f.kind === 'max' ? 'max' : 'min')} ${f.fmt(st[k])}`]);
+  }
+  if (st.scrmin) o.push(['scrmin', `${x('min')} ${st.scrmin}″`]);
+  return o;
+};
+
+/* ================= catalog ================= */
+// One price per shop, cheapest first. offersFor() is already sorted, so the first time a shop
+// appears is its own best price.
+const shopRows = (p, n) => {
+  const seen = new Map();
+  for (const o of catalogOffers(p)) if (!seen.has(o.shop)) seen.set(o.shop, o.price);
+  return [...seen].slice(0, n);
+};
+function card(p) {
+  // A card used to say "3 shops" and stop there, which is the one thing a price-comparison
+  // card must not do: it names a spread without showing it. Now the big number carries the shop
+  // it belongs to and the next two shops sit under it with their own prices.
+  const rows = shopRows(p, 3);
+  const rest = rows.slice(1);
+  const more = shopCount(catalogOffers(p)) - rows.length;
+  // show the configuration the displayed price actually belongs to, not simply the first variant
+  const cheapest = catalogOffers(p)[0];
+  const v = cheapest ? offerConfig(p, cheapest) : catalogVariants(p)[0] || {};
+  return `<article class="pcard" data-id="${esc(p.id)}">
+    <div class="pshot">
+      ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
+        : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
+      <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
+        aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+      <img class="pimg" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      ${cdotsHTML(p)}
+    </div>
+    <div class="pbody">
+      <span class="eyebrow">${esc(p.brand)}</span>
+      <h2><a href="#/p/${esc(p.id)}">${esc(fullName(p))}</a>${nameTag(p)}</h2>
+      <ul class="sc">${cardFacts(p, v).map(fx => `<li>${fx}</li>`).join('')}</ul>
+      <div class="pfoot"><span class="pprice num">${amd(catalogPrice(p))}
+        <s>${rows.length ? esc(shopName(rows[0][0])) : esc(x('estimated'))}</s></span>
+        <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span></div>
+      ${rest.length ? `<ul class="poffers">${rest.map(([sh, pr]) =>
+        `<li><span>${esc(shopName(sh))}</span><b class="num">${money(pr)} ֏</b></li>`).join('')}${
+        more > 0 ? `<li class="mo">+${more}</li>` : ''}</ul>` : ''}
+    </div>
+  </article>`;
+}
+// the hero belongs to the dark masthead so nav and hero share one surface (no seam)
+// The cover and the savings strip both live in the masthead surface, so nav -> cover ->
+// catalogue read as one field. Savings are computed from the REAL spread between shops.
+// A card shows three quick facts, but a phone, a watch and a pair of earbuds do not have
+// the same three. Take whatever the item actually carries and stop at three.
+// The class a screen is sold by, from its pixels: 3840x2160 is "4K", 1920x1080 "Full HD".
+function resClass(r) {
+  const m = /(\d{3,5})\s*[x×]\s*(\d{3,5})/.exec(String(r || ''));
+  if (!m) return '';
+  const L = Math.max(+m[1], +m[2]), S = Math.min(+m[1], +m[2]);
+  return L >= 7680 ? '8K' : L >= 6144 ? '6K' : L >= 5120 ? '5K' : L >= 3840 ? '4K'
+    : S >= 1440 && L >= 3440 ? 'UWQHD' : S >= 1440 ? '2K' : L >= 1920 ? 'Full HD' : 'HD';
+}
+function cardFacts(p, v) {
+  // A TV or monitor is chosen by its screen: the size is on the name already, so the chips are
+  // what kind of picture - resolution class, panel, and for monitors the refresh rate.
+  if (SIZE_TAG.has(p.category)) {
+    return [resClass(p.display?.resolution), p.display?.type,
+      p.category === 'monitor' && p.display?.refresh ? p.display.refresh + ' ' + u('hz') : ''].filter(Boolean).map(esc);
+  }
+  const f = [];
+  if (p.display?.size) f.push(esc(p.display.size + String.fromCharCode(8243)));
+  if (v.storage != null) f.push(esc((v.ram ? v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
+  if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u(p.category === 'laptop' ? 'wh' : 'mah'))}</span>`);
+  if (p.chipset?.name) f.push(esc(p.chipset.name));
+  // "In-ear, active noise cancellation" is two facts; as one chip it ran to two lines on a card
+  if (p.audio?.type) {
+    f.push(esc(tr(p.audio.type, st.lang).split(/,|՝| с | без /)[0].trim()));
+    if (/active|adaptive/i.test(p.audio.type)) f.push('ANC');
+  }
+  if (p.body?.ip) f.push(esc(p.body.ip));
+  return f.slice(0, 3);
+}
+// The front page used to open on one big product photo that changed every two seconds and said
+// nothing about price. It opens on the reason to be here instead: the same product in the same
+// configuration, the cheapest shop against what shops usually ask, today. Nothing moves unless the
+// reader moves it.
+//
+// A saving is only offered where it is real: one price per shop, the same capacity, RAM and SIM
+// type throughout (typTier), three shops at least, and 5% or more under the usual price.
+// Popular products first, and no more than three from one section or one brand, so the row is not
+// ten iPhones.
+const DEALS_MAX = 10;
+// The prices do not change while the page is open, so the row is worked out once.
+let DEALS_CACHE = null;
+function deals() {
+  if (DEALS_CACHE) return DEALS_CACHE;
+  const out = DEALS_CACHE = [], perCat = {}, perBrand = {};
+  const pool = DATA.map(typTier).filter(r => r && r.below / r.mid >= 0.05)
+    .sort((a, b) => b.p.popularity - a.p.popularity || b.below / b.mid - a.below / a.mid);
+  for (const d of [...drops(), ...pool]) {
+    if (out.some(o => o.p === d.p)) continue;
+    const c = catOf(d.p), b = d.p.brand;
+    if ((perCat[c] || 0) >= 3 || (perBrand[b] || 0) >= 3) continue;
+    perCat[c] = (perCat[c] || 0) + 1; perBrand[b] = (perBrand[b] || 0) + 1; out.push(d);
+    if (out.length === DEALS_MAX) break;
+  }
+  return out;
+}
+// Real price falls, worked out by build.mjs from the full history (the served page does not
+// carry the history until a product page asks for it). See DROPS there for what counts.
+function drops() {
+  const src = typeof DROPS !== 'undefined' ? DROPS : [];
+  return src.map(d => ({ ...d, p: byId(d.id), drop: true }))
+    .filter(d => d.p && offersFor(d.p).length && offersFor(d.p)[0].price === d.lo).slice(0, 3);
+}
+const simLbl = e => e === true ? 'eSIM' : e === false ? 'Nano-SIM' : '';
+const cellLbl = c => c === true ? x('cellY') : c === false ? 'Wi-Fi' : '';
+function spark(vals) {
+  const lo = Math.min(...vals), hi = Math.max(...vals), n = vals.length - 1;
+  const X = i => 2 + i * 116 / n, Y = v => 3 + (1 - (v - lo) / ((hi - lo) || 1)) * 22;
+  return `<svg class="dl-sp" viewBox="0 0 120 28" aria-hidden="true"><path d="${vals.map((v, i) => (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1)).join(' ')}"/>`
+    + `<circle cx="${X(n).toFixed(1)}" cy="${Y(vals[n]).toFixed(1)}" r="2.6"/></svg>`;
+}
+function dealCard(d, isSpot) {
+  const p = d.p;
+  const cfg = [p.brand, d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
+    .filter(Boolean).join(' · ');
+  const tail = d.drop
+    ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
+    : `<span class="dl-save num">${esc(x('dealUsual').replace('{n}', money(d.below)))}</span>`;
+  return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
+    <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
+    <small>${esc(cfg)}</small>
+    <span class="dl-n">${esc(p.name)}${nameTag(p)}</span>
+    <span class="dl-p num">${amd(d.lo)}</span>
+    <span class="dl-at">${esc(shopName(d.loShop))} · ${esc(nx(d.shops || shopCount(offersFor(p)), 'shops'))}</span>
+    ${tail}</a>`;
+}
+// The right half of the hero was empty once the carousel went. It holds the one saving worth
+// leading with: among the most popular deals, the biggest share under the usual price. It changes
+// when the prices do, once a night, never while you read. On a phone it is not drawn: the deals
+// row is right below.
+function spotDeal(dl) {
+  const pool = dl.filter(d => !d.drop).slice(0, 6);
+  return pool.reduce((a, d) => !a || d.below / d.mid > a.below / a.mid ? d : a, null);
+}
+function spotHTML(d) {
+  if (!d) return '';
+  const p = d.p, pct = Math.round(d.below / d.mid * 100);
+  const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
+  const eb = `<span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>`;
+  const n = nx(d.shops, 'shops');
+  return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
+      ${eb}
+      <img src="${IMG(p.id)}" alt="" decoding="async">
+      <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
+      <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+        <b class="spot-p num">${amd(d.lo)}</b>
+        <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
+    </a>`;
+}
+function mastHero() {
+  const dl = deals();
+  const sp = spotDeal(dl);
+  const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
+  return `<div class="cv${sp ? ' has-spot' : ''}">
+      ${spotHTML(sp)}
+      <div class="cv-l">
+      <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
+      <p class="cv-sub">${esc(x('heroSub'))}</p>
+      <div class="cv-acts">
+        <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
+        ${dl.length ? `<a class="btn ghost" href="#savings">${esc(x('heroCta'))}</a>` : ''}
+      </div>
+      </div>
+    </div>
+    <div class="cv-bar">
+      <div><b class="num">${DATA.length}</b><span>${esc(plw(DATA.length, 'models'))}</span></div>
+      <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(plw(Object.keys(P.shops || {}).length, 'shops'))}</span></div>
+      <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
+      ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}
+    </div>
+    ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT">
+      <div class="dls-hd">
+        <div><h2 id="dlsT">${esc(x('savingsT'))}</h2></div>
+        <div class="dls-arr"><button type="button" data-dl="-1" aria-label="${esc(x('prevL'))}" disabled>${ICON_ARR_L}</button><button type="button" data-dl="1" aria-label="${esc(x('nextL'))}">${ICON_ARR_R}</button></div>
+      </div>
+      <div class="dls-row" id="dlrow">${dl.map(d => dealCard(d, d === sp)).join('')}</div>
+    </section>` : ''}
+    ${soonHTML()}`;
+}
+const ICON_FILT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>';
+const ICON_ARR_L = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
+const ICON_ARR_R = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>';
+// The arrows are a convenience for a mouse; the row itself scrolls by swipe, wheel and keyboard.
+// Each arrow is disabled at its end so it never offers a move that does nothing.
+function dealEdges() {
+  const r = $('#dlrow'); if (!r) return;
+  const a = $$('[data-dl]');
+  if (a[0]) a[0].disabled = r.scrollLeft < 4;
+  if (a[1]) a[1].disabled = r.scrollLeft + r.clientWidth > r.scrollWidth - 4;
+}
+document.addEventListener('scroll', e => { if (e.target && e.target.id === 'dlrow') dealEdges(); }, true);
+window.addEventListener('resize', dealEdges);
+
+// Announced but not on sale. These are NOT in DATA: no spec sheet, no offer you can buy today,
+// so they get a strip of their own rather than a product page full of blanks. The price is the
+// shop's own pre-order price and the card links straight to it, so the claim is theirs to make.
+// "from" is a PREFIX in Russian and English ("from 799 000") and a SUFFIX in Armenian
+// ("799 000 D-ic"), which is why the string itself starts with a hyphen there.
+const fromPrice = v => {
+  const f = x('from');
+  return f.startsWith('-') ? `${money(v)} ֏${f}` : `${f}${money(v)} ֏`;
+};
+// Ten o'clock Yerevan time on the day of sale - shops open, not midnight. A date that has
+// already passed returns nothing, so the strip quietly loses its clock instead of counting up.
+function cdText(iso) {
+  const ms = Date.parse(iso + 'T10:00:00+04:00') - Date.now();
+  if (!(ms > 0)) return '';
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+  return `${d}${x('dS')} ${h}${x('hS')} ${m}${x('mS')}`;
+}
+function soonHTML() {
+  const C = (typeof COMING !== 'undefined' && COMING) || { items: [] };
+  const items = C.items || [];
+  if (!items.length) return '';
+  const when = (C.when || {})[st.lang] || (C.when || {}).en || '';
+  const cd = C.date ? cdText(C.date) : '';
+  return `<section class="soon-sec">
+    <div class="soon-hd"><span class="soon-tag">${esc(x('soonT'))}</span><h2>${esc(when)}</h2>${
+      cd ? `<span class="soon-cd num" id="soon-cd" data-cd="${esc(C.date)}">${esc(cd)}</span>` : ''}</div>
+    <div class="soon-grid">${items.map(c => `<a class="soon" href="${esc(safeHref(c.url))}" target="_blank" rel="noopener noreferrer">
+      <span class="t"><img src="${esc(THUMB(c.id))}" alt="${esc(c.brand + ' ' + c.name)}" loading="lazy"></span>
+      <span>
+        <span class="nm">${esc(c.brand)} ${esc(c.name)}</span>
+        <span class="pr num">${esc(fromPrice(c.from))}</span>
+        <span class="po">${esc(x('preorder'))} · ${esc(shopName(c.shop))}</span>
+      </span>
+    </a>`).join('')}</div>
+  </section>`;
+}
+
+// Minutes are the smallest unit shown, so half a minute is close enough and nothing here
+// animates. Route changes replace the element; this finds whatever is on screen now.
+setInterval(() => {
+  const e = document.getElementById('soon-cd');
+  if (!e) return;
+  const v = cdText(e.dataset.cd);
+  if (v) e.textContent = v; else e.remove();
+}, 30000);
+
+// A counter, if one is configured, sees the first load and nothing after it: every page on this
+// site is a hash change. Both calls are optional chains, so with no counter this is three
+// property reads that find nothing.
+const counterPath = () => {
+  const h = location.hash.slice(1).split('?')[0];
+  const m = h.match(/^\/(p|offers)\/([^/]+)$/);
+  const path = m && byId(m[2]) ? h : /^\/(compare|search|privacy|terms|contact|blog)$/.test(h) ? h
+    : /^\/c\/[a-z]+$/.test(h) ? h : '/';
+  return location.pathname + (path === '/' ? '' : '#' + path);
+};
+const countView = () => {
+  try {
+    if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
+    // Analytics receives public routes only, never search text, arbitrary hashes or titles.
+    window.umami?.track?.();
+    window.goatcounter?.count?.({ path: counterPath(), title: 'Better.am', event: false });
+  } catch (e) { }
+};
+
+// Categories are navigation, not a filter: one always-visible row, current item marked.
+// Counts come from the data, so a category appears the moment its first item lands.
+function catTabs() {
+  const cats = [...new Set(DATA.map(p => p.category || 'phone'))];
+  // Counted within the active query, not over the whole catalogue: on a search for "samsung
+  // fold" the tabs used to promise "Phones 70" above three results, and the number a tab shows
+  // has to be the number clicking it produces.
+  const pool = DATA.filter(p => hayMatch(p, st.q));
+  const n = c => pool.filter(p => (p.category || 'phone') === c).length;
+  const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${CAT_ICON[c] ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${CAT_ICON[c]}"/></svg>` : ''}${esc(label)}<b class="num">${count}</b></a>`;
+  // A tab whose count is 0 leads to an empty page, so it is not offered. The category you are
+  // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
+  // Every section, biggest first, in one row that scrolls sideways (owner, 2026-10-04): the old
+  // "Other sections 9" button did not say what was behind it.
+  const live = cats.filter(c => n(c) > 0 || st.cat === c).sort((a, b) => n(b) - n(a));
+  return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
+    tab('', x('catAll'), pool.length) + live.map(c => tab(c, catName(c), n(c))).join('') + `</nav>`;
+}
+// One stroke icon per section, drawn on a 24px grid (stroke, no fill - see .ctab svg)
+const CAT_ICON = {
+  phone: 'M8 2.5h8a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H8A1.5 1.5 0 0 1 6.5 20V4A1.5 1.5 0 0 1 8 2.5zM11 18.5h2',
+  tablet: 'M5.5 3h13A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5v-15A1.5 1.5 0 0 1 5.5 3zM11 18h2',
+  laptop: 'M5 5.5h14a1 1 0 0 1 1 1V16H4V6.5a1 1 0 0 1 1-1zM2 16h20l-1.2 2.5H3.2z',
+  desktop: 'M3.5 4h17a1 1 0 0 1 1 1v10.5a1 1 0 0 1-1 1h-17a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM9 20.5h6M12 16.5v4',
+  monitor: 'M3 4.5h18a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM8 20h8M12 16v4',
+  tv: 'M2.5 6h19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-19a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zM8 3l4 3 4-3M7 21h10',
+  headphones: 'M4 15v-3a8 8 0 0 1 16 0v3M4 15h3v6H5.5A1.5 1.5 0 0 1 4 19.5zM20 15h-3v6h1.5a1.5 1.5 0 0 0 1.5-1.5z',
+  speaker: 'M7 2.5h10A1.5 1.5 0 0 1 18.5 4v16a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 20V4A1.5 1.5 0 0 1 7 2.5zM12 10.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM12 5.5v.5',
+  watch: 'M8.5 6.5h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2zM9 6.5 9.5 2.5h5l.5 4M9 17.5l.5 4h5l.5-4',
+  console: 'M7 7h10a5 5 0 0 1 4.9 6l-.8 4a2.5 2.5 0 0 1-4.3 1.2L14.5 16h-5l-2.3 2.2A2.5 2.5 0 0 1 2.9 17l-.8-4A5 5 0 0 1 7 7zM7 10v4M5 12h4M15.5 11h.01M17.5 13h.01',
+  drone: 'M9 10h6v4H9zM9 10 5 6M15 10l4-4M9 14l-4 4M15 14l4 4M2.5 6h5M16.5 6h5M2.5 18h5M16.5 18h5',
+  ereader: 'M6 2.5h12a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 20V4A1.5 1.5 0 0 1 6 2.5zM8 7h8M8 10h8M8 13h5',
+  appliance: 'M7 3h10l1.5 18h-13zM6.2 8h11.6M12 12v5',
+  component: 'M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4',
+  network: 'M3 14h18v5H3zM7 16.5h.01M10 16.5h.01M8 14l-2-8M16 14l2-8',
+};
+const catName = c => (X[st.lang].cats && X[st.lang].cats[c]) || c;
+function catalogView() {
+  // The hero carries the h1 on the front page. Every other catalogue screen - a category, a
+  // search - had no h1 at all, and the one heading it did have said "Catalog" while the browser
+  // tab said "Phones". Name the thing you are standing in, at the level it deserves.
+  const raw = location.hash.replace(/^#/, '') || '/';
+  const hd = raw === '/' ? 'h2' : 'h1';
+  const title = raw === '/search' && st.q.trim() ? st.q.trim()
+    : st.cat ? catName(st.cat)
+    : t('catalog.title');
+  return `<div class="shell">
+    ${catTabs()}
+    <div class="mbar"><button type="button" class="mbar-f" data-fsheet="1">${ICON_FILT}${esc(x('filtersT'))}${activeFilterCount() ? ` <b>${activeFilterCount()}</b>` : ''}</button>
+      <label class="mbar-s"><span class="vh">${esc(t('sort.label'))}</span><select data-f="sort" aria-label="${esc(t('sort.label'))}">${
+        sortKeys().map(s => `<option value="${s}"${s === st.sort ? ' selected' : ''}>${esc(sortLabel(s))}</option>`).join('')}</select></label>
+      <span class="mbar-n" id="mbarn"></span></div>
+    <div class="fscrim" data-fsclose="1"></div>
+    ${filterBar()}
+    <div class="chips" id="chips"></div>
+    <div class="resbar" id="results"><${hd}>${esc(title)}</${hd}><span class="cnt" id="rescnt"></span></div>
+    <div class="grid" id="gridbox"></div>
+    <div id="pager"></div>
+  </div>`;
+}
+// 192 products is 192 cards of DOM, 192 price lookups and 192 <img> the browser has to keep
+// track of, every time a filter moves. Lazy loading already spares the bytes; this spares the
+// work. 36 a page, which fills four rows on a desktop and still beats the fold on a phone.
+const PAGE = 36;
+const pageCount = n => Math.max(1, Math.ceil(n / PAGE));
+
+function pager(total) {
+  const last = pageCount(total);
+  if (last < 2) return '';
+  // first, last and the neighbours of the current page; an ellipsis stands in for the rest, so
+  // the row stays one line at 192 products and at 1920.
+  const want = new Set([1, last, st.page, st.page - 1, st.page + 1]);
+  if (st.page <= 3) { want.add(2); want.add(3); }
+  if (st.page >= last - 2) { want.add(last - 1); want.add(last - 2); }
+  // Three versions of the row, and CSS shows the one that fits (see .pager in _shell.html). Built
+  // separately rather than by hiding some numbers of one row, because each needs its own
+  // ellipses: hiding the 2 out of "1 2 3" leaves "1 3", which reads as consecutive pages.
+  //   pf  full    <- 1 ... 4 5 6 ... 11 ->   wide screens
+  //   ps  slim    <- 1 ... 5 ... 11 ->       phones: a middle page of the full row is ~376 px of
+  //                                          44 px touch targets, wider than a 375 px phone
+  //   now         <- 5 / 11 ->               the 280 px cover screen of a folding phone
+  const row = (set, cls) => {
+    const nums = [...set].filter(n => n >= 1 && n <= last).sort((a, b) => a - b);
+    let html = '', prev = 0;
+    for (const n of nums) {
+      if (prev && n - prev > 1) html += `<span class="gap ${cls}" aria-hidden="true">…</span>`;
+      html += `<button class="pg ${cls}${n === st.page ? ' on' : ''}" data-page="${n}"${n === st.page ? ' aria-current="page"' : ''}>${n}</button>`;
+      prev = n;
+    }
+    return html;
+  };
+  const out = row(want, 'pf') + row(new Set([1, st.page, last]), 'ps')
+    + `<span class="pgnow">${st.page} / ${last}</span>`;
+  // "step", not "nav": .nav is the site navigation, and on a phone it is told to take a whole row
+  // of its own (flex 1 1 100%, order 4). The arrows shared the class, so each one was blown up
+  // into a full-width empty pill and shoved below the page numbers.
+  return `<nav class="pager" aria-label="${esc(t('catalog.title'))}">
+    <button class="pg step" data-page="${st.page - 1}"${st.page === 1 ? ' disabled' : ''} aria-label="${esc(x('pgPrev'))}"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13 8H3M7 4 3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    ${out}
+    <button class="pg step" data-page="${st.page + 1}"${st.page === last ? ' disabled' : ''} aria-label="${esc(x('pgNext'))}"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></nav>`;
+}
+
+// Every path that changes what is being listed must send you back to page 1 - otherwise a
+// filter applied on page 4 shows an empty grid for a reason nothing on screen explains. One
+// signature here instead of a reset in each of the nine handlers that can change it.
+let qT;
+let lastSig = null;
+function refresh() {
+  const all = results(), box = $('#gridbox');
+  if (!box) return;
+  const sig = JSON.stringify([st.cat, st.q, st.pmin, st.pmax, st.scrmin, st.touch, st.sort,
+    ...Object.keys(FILT).map(k => FILT[k].arr ? st[FILT[k].arr] : st[k])]);
+  if (sig !== lastSig) { if (lastSig !== null) st.page = 1; lastSig = sig; }
+  const last = pageCount(all.length);
+  if (st.page > last) st.page = last;          // a filter that shrinks the set must not strand you
+  const r = all.slice((st.page - 1) * PAGE, st.page * PAGE);
+  // "Try changing the filters" was printed at a reader with no filters on - somebody who had
+  // typed a word, or landed on a section that is empty. Say it only when there are filters, and
+  // offer the button only when it has something to undo.
+  const ch = activeChips();
+  const lost = !all.length && !!st.q.trim() && !ch.length;   // a word nothing matches, no filter to undo
+  const html = all.length ? r.map(card).join('')
+    : `<div class="empty"><b>${esc(x('emptyT'))}</b>${ch.length ? esc(x('emptyS')) : ''}${
+        ch.length || st.q ? `<button class="btn ghost" data-rm="all" style="margin-top:14px">${esc(t('common.reset'))}</button>` : ''}${
+        lost ? `<div class="nfcats"><span>${esc(x('nfCats'))}</span>${bigCats().map(c => `<a class="chip" href="#/c/${esc(c)}">${esc(catName(c))}</a>`).join('')}</div>` : ''}</div>`;
+  placeGrid(box, html, new Set(r.map(p => p.id)));
+  // filters over an empty result have nothing to narrow
+  const fb = $('.fbar'), fm = $('[data-fmore]'); if (fb) fb.hidden = lost; if (fm) fm.hidden = lost;
+  const pg = $('#pager'); if (pg) pg.innerHTML = pager(all.length);
+  tickCount($('#rescnt'), all.length);
+  const mf = $('.mbar-f'), nf = activeFilterCount();
+  if (mf) mf.innerHTML = ICON_FILT + esc(x('filtersT')) + (nf ? ` <b>${nf}</b>` : '');
+  if ($('#mbarn')) $('#mbarn').textContent = t('common.results_count').replace('{n}', all.length);
+  if (document.documentElement.classList.contains('fs-open')) paintDraftCount(null);
+  $('#chips').innerHTML = ch.map(([k, l]) =>
+    `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
+    (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
+  // The tab counts are taken within the active query, so they go stale the moment the query
+  // changes - clearing the search box left "All 3" sitting above 36 cards. Repaint them here,
+  // where every filter change already lands.
+  const tabs = $('.ctabs');
+  if (tabs) tabs.outerHTML = catTabs();
+  syncFilters(); save();
+  moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
+}
+
+// A filter that keeps some of the cards on screen used to throw them all away and slide the whole
+// grid in again, so the cards you were looking at vanished and came back somewhere else. Now only
+// what changed moves: cards that leave fade out, the ones that stay glide to their new places
+// (FLIP: measure, swap, play the difference back), and new ones fade in. A new page or a result
+// set with nothing in common is a different list, and keeps the short staggered entrance.
+let gridT = null;
+function placeGrid(box, html, ids) {
+  clearTimeout(gridT);
+  const old = [...box.querySelectorAll(':scope > .pcard')];
+  const stay = old.filter(c => ids.has(c.dataset.id));
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (calm || !stay.length) { box.innerHTML = html; gridIn(box); return; }
+  const first = new Map(stay.map(c => [c.dataset.id, c.getBoundingClientRect()]));
+  const leaving = old.filter(c => !ids.has(c.dataset.id));
+  const swap = () => {
+    box.classList.remove('gridin');
+    box.innerHTML = html;
+    const cards = [...box.querySelectorAll(':scope > .pcard')];
+    for (const c of cards) {
+      const a = first.get(c.dataset.id), b = c.getBoundingClientRect();
+      c.style.transition = 'none';
+      if (a) c.style.transform = `translate(${a.left - b.left}px,${a.top - b.top}px)`;
+      else { c.style.opacity = '0'; c.style.transform = 'scale(.96)'; }
+    }
+    void box.offsetWidth;
+    for (const c of cards) {
+      c.style.transition = 'transform .32s cubic-bezier(.2,.8,.2,1), opacity .25s ease';
+      c.style.transform = ''; c.style.opacity = '';
+    }
+    // hand the card back to its stylesheet (hover lift) once the move is done
+    setTimeout(() => cards.forEach(c => { c.style.transition = ''; }), 360);
+  };
+  if (!leaving.length) { swap(); return; }
+  leaving.forEach(c => c.classList.add('leave'));
+  gridT = setTimeout(swap, 150);
+}
+// The result count runs to its new value instead of jumping, so the number reads as the effect
+// of what was just clicked.
+function tickCount(el, to) {
+  if (!el) return;
+  const fmt = n => t('common.results_count').replace('{n}', n);
+  const from = el._n, calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  el._n = to;
+  if (from == null || from === to || calm) { el.textContent = fmt(to); return; }
+  const t0 = performance.now();
+  const step = now => {
+    if (el._n !== to) return;                  // a newer count took over
+    const k = Math.min(1, (now - t0) / 320);
+    el.textContent = fmt(Math.round(from + (to - from) * (1 - Math.pow(1 - k, 3))));
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// The grid is replaced wholesale on every filter change, so without this the result set
+// teleports. One class on the container and the cards arrive in a short stagger; capped at 14
+// so a 90-product reset does not turn into a two-second wave.
+//
+// Reduced motion gets the fade WITHOUT the rise. The vestibular problem is movement, not
+// opacity, so removing the animation entirely would take away the cue that the grid changed
+// while giving nothing back.
+function gridIn(box) {
+  const cards = box.children;
+  if (!cards.length || box.firstElementChild.classList.contains('empty')) return;
+  box.classList.remove('gridin'); void box.offsetWidth;
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].style.setProperty('--d', (Math.min(i, 14) * 22) + 'ms');
+  }
+  box.classList.add('gridin');
+}
+
+/* ================= product page — bold panel + price-spread rail ================= */
+
+/* ---- spec text in the reader language -------------------------------------
+   Spec VALUES live in phones.json in English. Rather than keep 22 x 2 translated
+   copies, the descriptive vocabulary is translated once in data/terms.json and
+   substituted here. Product names (Cortex, Adreno, Gorilla Glass, One UI, IP68)
+   are deliberately left alone - they are names, not English words.
+   TR_BEGIN (build.mjs extracts everything down to TR_END and self-tests it) */
+const TERMKEYS = Object.keys(TERMS).filter(k => k !== '_note').sort((a, b) => b.length - a.length);
+const TERMLOW = TERMKEYS.map(k => k.toLowerCase());
+// no regex here: escaping kept breaking, and a letter test works for any alphabet
+const wordChar = ch => (ch >= '0' && ch <= '9') || ch.toLowerCase() !== ch.toUpperCase();
+function tr(v, lang) {
+  if (!v || lang === 'en') return v;
+  const col = lang === 'hy' ? 0 : 1;
+  const src = String(v), low = src.toLowerCase();
+  let out = '', pos = 0;
+  scan: while (pos < src.length) {
+    for (let n = 0; n < TERMKEYS.length; n++) {
+      if (!low.startsWith(TERMLOW[n], pos)) continue;
+      const k = TERMKEYS[n];
+      const before = pos ? src[pos - 1] : ' ', after = src[pos + k.length] || ' ';
+      if (wordChar(before) || wordChar(after)) continue;      // inside a longer word
+      out += TERMS[k][col]; pos += k.length; continue scan;
+    }
+    out += src[pos++];
+  }
+  return out.split('  ').join(' ').trim();
+}
+/* TR_END */
+
+
+/* ---- colour swatches ----------------------------------------------------
+   Shops name colours freely ("Awesome Lime", "Titanium Jetblack", "Icy Blue"), so a lookup
+   table goes stale the moment a new phone lands. HUE resolves the colour WORDS in the name and
+   SWATCH overrides the brand-signature finishes that must be exact. */
+const SWATCH = {
+  'Cosmic Orange': '#C8622A', 'Deep Blue': '#24405F', 'Silver': '#D9DADE', 'Space Black': '#26262A',
+  'Burgundy': '#5C2233', 'Glacier': '#C7D6E2', 'Natural Titanium': '#C6BFB4', 'Jade': '#4E8F72',
+  'Titanium Silverblue': '#8CA3B8', 'Lavender': '#C3B2DA', 'Mint': '#B9DCC7', 'Icy Blue': '#BBD3E6',
+};
+const HUE = { black:'#1D1D1F', white:'#F1F1F3', silver:'#D9DADE', grey:'#9AA0A6', gray:'#9AA0A6',
+  // makers' own names that fell to the grey fallback, so two of them drew identical dots (Dyson's
+  // Ceramic and Strawberry, 2026-09-27)
+  raspberry:'#B8325A', natural:'#C9B79C', transparent:'#E6E8EB', sandstone:'#D8C3A5', anthracite:'#3B3D42',
+  timber:'#8A6A4F', nordic:'#B9B0A2', oak:'#C8A77E', fuchsia:'#C2378B', nickel:'#A8A9AD', ceramic:'#EAD9CF',
+  patina:'#6F9C94', strawberry:'#C94F6D', lemongrass:'#D9E27A', peony:'#E7A1B0', hazel:'#8C8A73',
+  iris:'#8E8FD8', champagne:'#E4D3B4', camo:'#5E6450', ghost:'#E9EAEC', volt:'#D7F24A',
+  graphite:'#3A3D42', blue:'#2F5C9E', navy:'#22345C', green:'#3E7D5A', mint:'#B9DCC7',
+  red:'#B3242C', pink:'#E4A0B7', purple:'#6E4E9E', lilac:'#B9A7D6', lavender:'#C3B2DA',
+  violet:'#5B3E8E', orange:'#D2743A', gold:'#D3B182', yellow:'#E6C64A', cream:'#EDE3D1',
+  beige:'#DCCFBA', brown:'#6B4B37', bronze:'#9A6B4A', copper:'#B87333',
+  titanium:'#C6BFB4', charcoal:'#36393E', sand:'#D8C9AE', teal:'#2F7D80', cyan:'#4AB3C8',
+  plum:'#6B3050', burgundy:'#5C2233', ivory:'#F0EADD', jade:'#4E8F72', glacier:'#C7D6E2',
+  lime:'#9CCB3B', coral:'#E0735E', rose:'#D98A9A', sky:'#8FC2E8', aqua:'#5FBFC4',
+  olive:'#6E7248', khaki:'#BCAE87', indigo:'#3B3F8F', turquoise:'#3FB8AF', peach:'#F0B38A',
+  apricot:'#E8A96A', amber:'#D9A441', emerald:'#2F8F62', sage:'#A8B79A', steel:'#7E858C',
+  midnight:'#1B2333', starlight:'#EDE7DA', graphene:'#2E3136', obsidian:'#1A1A1C',
+  ultramarine:'#2B3FA8', blush:'#E7B9BC', citrus:'#E8B93C', pistachio:'#BFD6A0', fog:'#C2C6CB',
+  canyon:'#B5714E', lemon:'#E9DC6A', porcelain:'#EDEBE6', chestnut:'#7A4A34', moonstone:'#AFBCC8',
+  dawn:'#D9CBD6', slate:'#4C555F', frost:'#DCE6EE', onyx:'#141416' };
+const MATERIAL = new Set(['titanium','aluminium','aluminum','ceramic','steel','glass','leather','shadow','matte']);
+const _hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+const _mix = (h, amt) => {
+  const t = amt > 0 ? 255 : 0, k = Math.abs(amt);
+  return '#' + _hex(h).map(v => Math.round(v + (t - v) * k).toString(16).padStart(2, '0')).join('');
+};
+function swatch(name) {
+  if (SWATCH[name]) return SWATCH[name];
+  const words = String(name || '').toLowerCase().replace(/[^a-z]+/g, ' ').trim().split(' ').filter(Boolean);
+  let base = null, material = null;
+  for (let i = words.length - 1; i >= 0 && !base; i--) {       // colour names put the head noun last
+    const w = words[i];
+    if (MATERIAL.has(w)) { material = material || HUE[w] || null; continue; }
+    if (HUE[w]) { base = HUE[w]; break; }
+    let bestLen = 0;                                          // shops write compounds as one word
+    for (const k in HUE) if (w.endsWith(k) && k.length > bestLen) { base = HUE[k]; bestLen = k.length; }
+  }
+  base = base || material;
+  if (!base) return '#9AA0A6';
+  if (words.some(w => ['light', 'icy', 'ice', 'pale'].includes(w))) base = _mix(base, .34);
+  if (words.some(w => ['deep', 'dark', 'midnight', 'jet', 'obsidian', 'storm'].includes(w))) base = _mix(base, -.3);
+  return base;
+}
+
+const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
+const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
+// A label every row carries tells the buyer nothing. The SIM build is worth stating only
+// where there is one to choose - where this product is actually sold here in both builds,
+// which in practice is Apple, Pixel and the occasional Samsung. Everything else is a tray
+// phone from every shop that stocks it, and a "Nano-SIM" on all of its rows is noise.
+const simChoice = p => { const a = offersFor(p);
+  return a.some(o => o.esim === true) && a.some(o => o.esim === false); };
+// 'main' is a copy of one of the colours under a different filename, so it would show twice
+// A card crossfades a product's colour photos, which only reads as one product turning around
+// if every frame is the same shape. A photo shot in the other orientation keeps its place on
+// the product page and loses only its turn here. See tools/pageonly.py.
+const SKIPCYC = (typeof PAGEONLY !== 'undefined' && PAGEONLY) || {};
+// The cycle runs inside a card, so it takes the 600 px copies. The product page keeps CIMG.
+const CTHUMB = (typeof COLORTHUMB !== 'undefined' && COLORTHUMB) || {};
+const cycList = id => {
+  const seen = new Set();
+  return Object.entries(CIMG[id] || {})
+    .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k))
+    .map(([k, v]) => [k, (CTHUMB[id] && CTHUMB[id][k]) || v])
+    .filter(([, u]) => seen.has(u) ? false : (seen.add(u), true));
+};
+// A card's colour photos used to swap on their own - eight swaps in ten seconds across a grid -
+// and crossfade two transparent cutouts, so for a moment both phones showed at once. Now the
+// photo changes only when asked, from a row of colour dots, and the old one fades out before
+// the new one fades in.
+const CDOTS_MAX = 5;
+function cdotsHTML(p) {
+  const list = cycList(p.id);
+  if (list.length < 2) return '';
+  const names = new Map((p.colors || []).map(c => [slugOf(c), c]));
+  const nm = k => names.get(k) || k.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  return `<div class="cdots" role="group" aria-label="${esc(t('sec.colors'))}">${list.slice(0, CDOTS_MAX).map(([k, u]) =>
+    `<button type="button" class="cdot" data-cdot="${esc(u)}" data-cname="${esc(nm(k))}" style="--c:${swatch(nm(k))}" aria-label="${esc(nm(k))}" aria-pressed="false"></button>`).join('')}${
+    list.length > CDOTS_MAX ? `<span class="cmore">+${list.length - CDOTS_MAX}</span>` : ''}</div>`;
+}
+function cardShow(btn) {
+  const shot = btn.closest('.pshot'), img = shot && shot.querySelector('.pimg');
+  if (!img || img.dataset.cur === btn.dataset.cdot) return;
+  img.dataset.cur = btn.dataset.cdot;
+  shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', b === btn));
+  const card = btn.closest('.pcard'), name = card && card.querySelector('h2 a');
+  const want = btn.dataset.cdot, pre = new Image();
+  pre.src = want;
+  img.classList.add('out');
+  const swap = () => { if (img.dataset.cur !== want) return;
+    img.src = want; img.alt = (name ? name.textContent + ', ' : '') + btn.dataset.cname; img.classList.remove('out'); };
+  const ready = pre.decode ? pre.decode() : new Promise((resolve, reject) => {
+    pre.onload = resolve; pre.onerror = reject;
+    if (pre.complete) pre.naturalWidth ? resolve() : reject(new Error('Image unavailable'));
+  });
+  Promise.all([ready, new Promise(r => setTimeout(r, 110))]).then(swap).catch(() => {
+    if (img.dataset.cur !== want) return;
+    delete img.dataset.cur; img.classList.remove('out');
+    shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', false));
+  });
+}
+document.addEventListener('pointerover', e => { const b = e.target.closest && e.target.closest('.cdot'); if (b) cardShow(b); });
+document.addEventListener('focusin', e => { if (e.target.classList && e.target.classList.contains('cdot')) cardShow(e.target); });
+
+let SEL = { id: null, color: null, storage: null, ram: null, esim: null, size: null, band: null, cell: null };
+function initSel(p) {
+  if (SEL.id !== p.id) SEL = initialConfig(p);
+}
+// Narrow the offer list to the chosen options.
+// RAM and storage decide the price, so those filters are HARD: if nothing matches, the answer is
+// "no shop sells this configuration", not some other variant's price. Colour is soft, because it
+// rarely changes the price and many listings omit it.
+function visibleOffers(p) {
+  const o = selectionOffers(p, SEL);
+  // One shop listing the same phone in four colours at one price is one offer to a reader, not
+  // four. The row shows shop, capacity, SIM build and price - never the colour, because there is
+  // deliberately no colour picker here - so four identical-looking rows were four ways of saying
+  // the same sentence. Collapse on what the row actually displays. This also fixes the shop count
+  // and the price rail, which were counting colours as competing offers.
+  // The url was in this key, and the url is the one thing the row does NOT display: Notebook
+  // Centre gives each colour its own page, so three colours at one price were three different
+  // keys and all three survived a filter written to remove exactly them. Key on what a reader
+  // can see. The survivor is the colour picked above when the shop lists it - istyle gives every
+  // colour its own link, and the button has to open the colour the reader chose, not the shop's
+  // first one - and otherwise the shop's own first colour.
+  const key = v => [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?', v.cell ? 'c' : ''].join('|');
+  const pick = new Map();
+  for (const v of o) {
+    const had = pick.get(key(v));
+    if (!had || (SEL.color && had.color !== SEL.color && v.color === SEL.color)) pick.set(key(v), v);
+  }
+  return o.filter(v => pick.get(key(v)) === v);
+}
+// One row per shop: its cheapest offer for the configuration picked. The same shop listing a
+// build twice (a colour with its own page, a SIM build the row does not show) used to take two of
+// the five places at the top of the list, and two "Best price" labels.
+const perShop = offs => { const seen = new Set(); return offs.filter(o => seen.has(o.shop) ? false : (seen.add(o.shop), true)); };
+// The spread between shops, drawn to scale. Shops whose prices sit closer than a dot can be told
+// apart merge into one marker with a count; hover or focus it to read which shops and what price.
+// The two ends are named, because "354 000 - 439 000" alone does not say where to go.
+function railHTML(rows) {
+  if (rows.length < 2) return '';
+  const lo = rows[0].price, hi = rows[rows.length - 1].price;
+  if (hi === lo) return '';
+  const pos = v => (v - lo) / (hi - lo) * 100;
+  const groups = [];
+  for (const o of rows) {
+    const g = groups[groups.length - 1];
+    if (g && pos(o.price) - pos(g[g.length - 1].price) < 7) g.push(o); else groups.push([o]);
+  }
+  const dots = groups.map((g, i) => {
+    const at = i === 0 ? 0 : i === groups.length - 1 ? 100 : pos((g[0].price + g[g.length - 1].price) / 2);
+    // 25/75, not 18/82: a centred label on a dot at 80% ran 2px past a 280px screen
+    const side = at < 25 ? ' l' : at > 75 ? ' r' : '';
+    const list = g.map(o => `${shopName(o.shop)} · ${money(o.price)} ֏`);
+    return `<button type="button" class="rd${g.length > 1 ? ' cl' : ''}${i === 0 ? ' best' : ''}${i === groups.length - 1 ? ' top' : ''}${side}"
+      style="left:${at.toFixed(1)}%" aria-label="${esc(list.join(', '))}">${g.length > 1 ? `<span class="rc">×${g.length}</span>` : ''}<span class="rt">${list.map(esc).join('<br>')}</span></button>`;
+  }).join('');
+  return `<div class="rail2"><span class="ln"></span>${dots}</div>
+    <div class="ends2"><span><b class="num">${money(lo)} ֏</b>${esc(shopName(rows[0].shop))}</span>
+      <span><b class="num">${money(hi)} ֏</b>${esc(shopName(rows[rows.length - 1].shop))}</span></div>`;
+}
+
+// COMPARE_WITH comes from tools/pairs.mjs at build time: id -> [[otherId, role], ...]
+const CW_ROLE = { newer: 'cwNewer', older: 'cwOlder', stronger: 'cwStronger', alternative: 'cwAlt', cheaper: 'cwCheaper', stepup: 'cwStepup', bigger: 'cwBigger', smaller: 'cwSmaller' };
+function compareWithHTML(p) {
+  const pairs = (COMPARE_WITH[p.id] || []).filter(([id]) => byId(id));
+  if (!pairs.length) return '';
+  const card = ([id, role]) => {
+    const q = byId(id), lo = hasReal(q) ? bestOf(q) : null, d = lo != null && hasReal(p) ? lo - bestOf(p) : null;
+    // the card opens that product; the small button beside it is the side-by-side (owner, 2026-09-27)
+    return `<div class="cwb"><a class="cwc" href="#/compare" data-cw="${esc(p.id)}|${esc(id)}">${esc(t('nav.compare'))}</a><a class="cw" href="#/p/${esc(id)}">
+      <img src="${esc(THUMB(id))}" alt="${esc(fullName(q))}" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>${esc(x(CW_ROLE[role]))}</em><b>${esc(fullName(q))}${nameTag(q)}</b>${lo != null ? `<span class="num">${money(lo)} ֏</span>` : ''}${d ? `<span class="cwd num ${d > 0 ? 'up' : 'dn'}">${d > 0 ? '+' : '−'}${money(Math.abs(d))} ֏</span>` : ''}</span></a></div>`;
+  };
+  return `<section class="cwith"><h2>${esc(x('cwTitle'))}</h2><div class="cwrow">${pairs.map(card).join('')}</div></section>`;
+}
+// No marketing sentence under the title: the owner wants the page to be the product, its
+// configurations and its prices.
+function detailView(p) {
+  initSel(p);
+  loadLazy();
+  const L = st.lang;
+  const offs = visibleOffers(p);
+  const lo = offs.length ? offs[0].price : null;
+  // ...and within the chosen screen: an M5 Max's two variants differ ONLY by size, so ignoring it
+  // here always found the 14-inch and quoted its list price on the 16-inch page.
+  const variant = p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram
+      && (SEL.size == null || v.size == null || v.size === SEL.size))
+    || p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
+  const shownPrice = lo ?? variant.priceAmd ?? p.priceAmd;
+  const rows = perShop(offs);
+  // what "best price" is the best price OF, said next to it: the size, and the SIM build when chosen
+  const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
+  const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
+  const cfgLbl = [multiScr && SEL.size != null ? inch(SEL.size) : '', multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim),
+    SEL.cell != null ? cellLbl(SEL.cell) : ''].filter(Boolean).join(' · ');
+  // The chart's verdict, repeated where the decision is made. Only once the history has loaded
+  // and only for the size picked - the chart's own series, so the two never disagree.
+  const hs = histSeries(p, SEL.storage, SEL.size, SEL.ram, SEL.cpu);
+  let verdict = '';
+  if (hs.length > 1 && lo != null && hs[hs.length - 1].v === lo) {
+    const lowPt = hs.reduce((a, b) => b.v < a.v ? b : a), low = lowPt.v, pct = (lo - low) / low * 100;
+    verdict = lo <= low ? `<span class="hp good">${esc(x('histLow').replace('{d}', dmy(hs[0].d).slice(0, 5)))}</span>`
+      : `<span class="hp warn">${esc(x('histAbove').replace('{p}', pct < 10 ? pct.toFixed(1) : Math.round(pct)).replace('{d}', dmy(lowPt.d).slice(0, 5)))}</span>`;
+  }
+  // Every finish the maker lists. The picture follows the choice where a colour has its own
+  // photo; where it does not, the main shot stays and the swatch still answers the real
+  // question - whether anyone in Armenia sells it. Crossed through when nobody does.
+  const cols = p.colors || [];
+  const shot = colorPhoto(p, SEL.color) || IMG(p.id);
+  const box = PBOX[p.id] || [0, 1000];   // the product inside its square photo, top and bottom in thousandths
+  // A colour picked that has no photo of its own keeps the main shot, which is another colour -
+  // said on the picture, or the swatch reads as broken ("I clicked Blue and it is still black").
+  const otherShot = cols.length > 0 && SEL.color && !colorPhoto(p, SEL.color);
+  // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
+  // option blocks below simply do not render
+  // SIM is a fact, not a choice - no shop prices a phone by its SIM tray - so these are spans,
+  // not buttons. It still belongs beside the capacity: an Armenian carrier hands you a physical
+  // SIM over the counter, and a phone with no tray for it is a wasted trip. Struck through here
+  // means "this phone does not have it", the same thing it means one row down.
+  // Negated clauses are cut first, or "no eSIM in most markets" reads as eSIM support.
+  // SIM appears ONLY when a shop sells both builds and charges differently for them - the
+  // iPhone 17 and 18 Pro families, where the tray costs 80,000 more. A phone that comes one way
+  // has nothing to choose, and a row of chips you cannot act on is noise; the spec table below
+  // already says which SIMs it takes.
+  const simAll = offersFor(p);
+  const simPick = /nano/.test(((p.connectivity || {}).sim || '').toLowerCase())
+    && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
+    && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
+  const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
+  const cellPick = simAll.some(o => o.cell === true) && simAll.some(o => o.cell === false);
+  const sizes = [...new Set(p.variants.map(v => v.size))].filter(v => v != null).sort((a, b) => a - b);
+  const bands = [...new Set(p.variants.map(v => v.band))].filter(Boolean);
+  const configs = configPool(p);
+  const cpus = [...new Set(configs.map(v => v.cpu).filter(Boolean))];
+  const vPool = configs.filter(v => (SEL.size == null || v.size == null || v.size === SEL.size) && (!SEL.cpu || v.cpu === SEL.cpu));
+  const rams = [...new Set(vPool.map(v => v.ram))].filter(v => v != null);
+  const stors = [...new Set(vPool.filter(v => SEL.ram == null || v.ram === SEL.ram).map(v => v.storage))].filter(v => v != null);
+  const inC = st.cmp.includes(p.id);
+
+  const specs = GROUPS.map(([g, rows]) => {
+    const body = rows.filter(([k]) => specAllowed(k, p)).map(([k, get]) => {
+      const v = specVal(get, selectedProduct(p, SEL)), bad = v == null;
+      const key = k === 'f.storage' ? storageLabel(p) : k;
+      const q = unsureRow(p, k) ? ` <abbr class="unsure" title="${esc(x('unsureTip'))}">${esc(x('unsureMark'))}</abbr>` : '';
+      return bad ? '' : `<div class="kv"><dt>${esc(t(key))}</dt><dd>${esc(tr(v, st.lang))}${q}</dd></div>`;
+    }).join('');
+    return body ? `<section class="panel-c"><h3><i></i>${esc(t(g))}</h3><dl>${body}</dl></section>` : '';
+  }).join('');
+
+  return `<div class="shell">
+    <div class="navrow">${backLink('#/', t('nav.catalog'))}
+      <nav class="crumb"><span>${esc(p.brand)}</span><span>›</span><span>${esc(p.name)}</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>${esc(p.brand)} / ${esc(X[L].tier[p.tier] || p.tier)}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
+        <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
+      </div>
+      <h1 class="pname"><span class="pn">${esc(fullName(p))}</span>${nameTag(p, SEL.size)}</h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
+            <div class="cs">${cols.map(c => `<button data-color="${esc(c)}" style="--c:${swatch(c)}" title="${esc(c)}${sold(p, 'color', c) ? '' : ', ' + esc(x('notSold'))}"
+              class="${c === SEL.color ? 'on' : ''}${sold(p, 'color', c) ? '' : ' na" disabled="'}" aria-pressed="${c === SEL.color}" aria-label="${esc(c)}"></button>`).join('')}</div></div>` : ''}
+          ${bands.length > 1 ? `<div class="og"><label>${esc(t('f.band'))}</label>
+            <div class="bs">${bands.map(bv => `<button data-band="${esc(bv)}" class="${bv === SEL.band ? 'on' : ''}${sold(p, 'band', bv) ? '' : ' na'}"${sold(p, 'band', bv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${bv === SEL.band}">${esc(bv)}</button>`).join('')}</div></div>` : ''}
+          ${sizes.length > 1 ? `<div class="og"><label>${esc(t('f.screen'))}</label>
+            <div class="bs">${sizes.map(sv => `<button data-size="${sv}" class="${sv === SEL.size ? 'on' : ''}${sold(p, 'size', sv) ? '' : ' na'}"${sold(p, 'size', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.size}">${esc(inch(sv))}</button>`).join('')}</div></div>` : ''}
+          ${cpus.length > 1 ? `<div class="og"><label>${esc(t('f.chipset'))}</label><div class="bs">${cpus.map(cpu => `<button data-cpu="${esc(cpu)}" class="${cpu === SEL.cpu ? 'on' : ''}" aria-pressed="${cpu === SEL.cpu}">${esc(cpu)}</button>`).join('')}</div></div>` : ''}
+          ${rams.length ? `<div class="og"><label>${esc(t('f.ram'))}</label>
+            <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
+          ${stors.length ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
+            <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
+          ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
+            <div class="bs">${simOpts.map(([n, want]) =>
+              `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`).join('')}</div></div>` : ''}
+          ${cellPick ? `<div class="og"><label>${esc(x('connF'))}</label>
+            <div class="bs">${[false, true].map(want =>
+              `<button data-cell="${want ? 1 : 0}" class="${SEL.cell === want ? 'on' : ''}" aria-pressed="${SEL.cell === want}">${esc(cellLbl(want))}</button>`).join('')}</div></div>` : ''}
+          <div class="pprice2">
+            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
+            <div class="pp-row"><b class="num">${money(shownPrice)} ֏</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
+            ${rows.length > 1 || verdict ? `<div class="pp-pills">${rows.length > 1 && rows[rows.length - 1].price > lo
+              ? `<span class="hp good">${esc(x('lessDearest').replace('{n}', money(rows[rows.length - 1].price - lo)))}</span>` : ''}${verdict}</div>` : ''}
+            ${rows.length ? `<div class="shopn">${esc(nx(rows.length, 'shops'))}</div>` : ''}
+            ${railHTML(rows)}
+          </div>
+          <div class="pcta">
+            ${offs.length ? `<a class="btn" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>` : ''}
+            <button class="btn${offs.length ? ' ghost' : ''}" data-cmp-btn="${esc(p.id)}">${esc(inC ? t('detail.in_compare') : t('detail.add_compare'))}</button>
+          </div>
+        </div>
+        ${compareWithHTML(p)}
+      </div>
+    </div>
+
+    ${!rows.length ? '' : `<h2 class="sh" id="buy">${esc(x('offersTitle'))} <em>${rows.length}</em></h2>`}
+    ${rows.length ? `<ol class="olist" id="offList">
+      ${rows.slice(0, OFFER_PEEK).map((o, i) => offerRow(o, lo, i, p.variantUnit, '', p)).join('')}
+    </ol>
+    ${rows.length > OFFER_PEEK || offersFor(p).length > rows.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffersN')
+      .replace('{n}', offersFor(p).length).replace('{N}', nx(offersFor(p).length, 'offersLbl')).replace('{from}', fromShops(shopCount(offersFor(p)))))} →</a></p>` : ''}`
+      : ''}
+    ${offs.length ? `<p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>` : ''}
+
+    
+    ${historyHTML(p)}
+
+    <h2 class="sh">${esc(t('detail.full_specs'))}</h2>
+    <div class="secgrid">${specs}</div>
+
+  </div>`;
+}
+
+
+// Privacy and contact are the same shape: a heading and a few paragraphs from strings.json.
+/* ================= blog ================= */
+// Articles live in data/blog.json in all three languages; build.mjs inlines them as BLOG and also
+// writes each one as a static page under b/ for search engines. "## " starts a heading, "- " a
+// list item (consecutive ones make one list), anything else is a paragraph.
+const postText = a => a[st.lang] || a.en;
+// An article can quote today's price: {{price:<id>}} is the product's lowest price now, and
+// {{diff:<a>|<b>}} how far apart two products are - so a post never goes stale when prices move.
+const livePrice = id => { const p = byId(id); return p && hasReal(p) ? bestOf(p) : null; };
+const LIVE = s => s.replace(/\{\{price:([\w-]+)\}\}/g, (m, id) => livePrice(id) != null ? amd(livePrice(id)) : '—')
+  .replace(/\{\{diff:([\w-]+)\|([\w-]+)\}\}/g, (m, a, b) =>
+    livePrice(a) != null && livePrice(b) != null ? amd(Math.abs(livePrice(b) - livePrice(a))) : '—');
+function postBody(list) {
+  let html = '', inList = false;
+  for (const s of list) {
+    const li = s.startsWith('- ');
+    if (li && !inList) html += '<ul>';
+    if (!li && inList) html += '</ul>';
+    inList = li;
+    // "!fig:<path>|<caption>" is a picture from images/blog with its caption
+    const fig = /^!fig:(images\/blog\/[\w.-]+)\|(.*)$/.exec(s);
+    html += fig ? `<figure class="post-fig"><img src="${esc(fig[1])}" alt="${esc(fig[2])}" loading="lazy" decoding="async"><figcaption>${esc(fig[2])}</figcaption></figure>`
+      : s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>`;
+  }
+  return html + (inList ? '</ul>' : '');
+}
+function blogView() {
+  return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
+    <header class="bl-hd"><h1>${esc(t('nav.blog'))}</h1><p>${esc(x('blogSub'))}</p></header>
+    <div class="bl-grid">${BLOG.map((a, i) => { const T = postText(a); return `<a class="bl-card${i ? '' : ' first'}" href="#/blog/${esc(a.id)}">
+      ${a.cover ? `<span class="bl-im"><img src="${esc(a.cover.replace(/\.webp$/, '-card.webp'))}" alt="" loading="lazy" decoding="async"></span>` : ''}
+      <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
+      <h2>${esc(T.title)}</h2><p>${LIVE(esc(T.lead))}</p>
+      <span class="bl-go">${esc(x('readL'))} →</span></a>`; }).join('')}</div></div>`;
+}
+function postView(a) {
+  const T = postText(a), cta = a.cta && /^#\//.test(a.cta.href) ? a.cta : null;
+  return `<div class="shell"><div class="navrow">${backLink('#/blog', x('allPosts'))}</div>
+    <article class="post">
+      <time class="bl-d num" datetime="${esc(a.date)}">${esc(dmy(a.date))}</time>
+      <h1>${esc(T.title)}</h1>
+      <p class="post-lead">${LIVE(esc(T.lead))}</p>
+      ${a.cover ? `<img class="post-cover" src="${esc(a.cover)}" alt="${esc(T.title)}" decoding="async" fetchpriority="high">` : ''}
+      ${postBody(T.body)}
+      ${(a.sources || []).length ? `<p class="post-src">${esc(x('sourcesL'))}: ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s =>
+        `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
+      ${cta ? `<p class="post-cta"><a class="btn" href="${esc(cta.href)}">${esc(cta[st.lang] || cta.en)} →</a></p>` : ''}
+    </article>
+    <aside class="post-more"><h2 class="sh">${esc(x('allPosts'))}</h2><div class="bl-list">${BLOG.filter(b => b !== a).map(b =>
+      `<a href="#/blog/${esc(b.id)}"><time class="num">${esc(dmy(b.date))}</time><span>${esc(postText(b).title)}</span></a>`).join('')}</div></aside>
+  </div>`;
+}
+function docView(key, paras) {
+  return `<div class="shell"><div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
+    <article class="doc"><h1>${esc(t(key + '.title'))}</h1>
+    ${paras.map(p => { const s = t(key + '.' + p); return s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>` : `<p>${esc(s)}</p>`; }).join('')}
+    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) ? (() => {
+      // The page invites people to write; it needs somewhere for them to write TO. An address
+      // starting with http is a link, anything else is an email - so swapping one for the other
+      // is a change to data/strings.json and nothing else.
+      const c = t('contact.email'), web = /^https?:\/\//i.test(c);
+      return `<p><a href="${esc(web ? safeHref(c) : 'mailto:' + c)}"${web ? ' target="_blank" rel="noopener noreferrer"' : ''}>${esc(c.replace(/^https?:\/\//, ''))}</a></p>`;
+    })() : ''}
+    </article></div>`;
+}
+
+/* ================= construct: the same filters, asked as questions =================
+   Every question is derived from the items in the chosen category, so a new category needs
+   no code here. A question with only one possible answer is not asked - it is reported as a
+   fact instead, because a question you cannot answer two ways is not a choice. */
+const CQ = [
+  ['ram',  'filter.ram',          p => (p.variants || []).map(v => v.ram),     v => v + ' ' + u('gb')],
+  ['stor', 'filter.storage',      p => (p.variants || []).map(v => v.storage), v => gb(v, viewUnit())],
+  ['hz',   'filter.refresh_rate', p => [p.display && p.display.refresh],       v => v + ' ' + u('hz')],
+  ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah')]
+];
+
+function constructView() {
+  const catOf = p => p.category || 'phone';
+  const cats = [...new Set(DATA.map(catOf))];
+  const label = c => (X[st.lang].cats || {})[c] || c;
+  const pool = DATA.filter(p => st.cat && catOf(p) === st.cat);
+
+  const catCards = cats.map(c => `<button class="ccard${st.cat === c ? ' on' : ''}" data-ccat="${esc(c)}"
+      aria-pressed="${st.cat === c}"><b>${esc(label(c))}</b><span class="num">${DATA.filter(p => catOf(p) === c).length}</span></button>`).join('');
+
+  const chip = (key, val, text, on) =>
+    `<button class="cchip${on ? ' on' : ''}" data-cq="${esc(key)}" data-cqv="${esc(String(val))}" aria-pressed="${on}">${esc(text)}</button>`;
+
+  let questions = '';
+  const fixed = [];
+  if (st.cat) {
+    for (const [key, lbl, get, fmt] of CQ) {
+      // the same rule the filter bar follows: a category is only asked what it can answer
+      if (!askable(key)) continue;
+      const vals = [...new Set(pool.flatMap(get).filter(v => v != null && v > 0))].sort((a, b) => a - b);
+      if (vals.length < 2) continue;
+      questions += `<section class="cq"><h3>${esc(t(key === 'stor' && viewUnit() === 'mm' ? 'f.case_size' : lbl))}</h3><div class="cqrow">`
+        + chip(key, 0, x('any'), !st[key])
+        + vals.map(v => chip(key, v, x('min') + ' ' + fmt(v), String(st[key]) === String(v))).join('')
+        + `</div></section>`;
+    }
+    const sizes = askable('scr') ? [...new Set(pool.map(p => p.display && p.display.size).filter(v => v != null))].sort((a, b) => a - b) : [];
+    if (sizes.length > 1) {
+      questions += `<section class="cq"><h3>${esc(t('filter.screen_size'))}</h3><div class="cqrow">`
+        + chip('scrmin', 0, x('any'), !st.scrmin)
+        + sizes.map(v => chip('scrmin', v, x('min') + ' ' + v + String.fromCharCode(8243), String(st.scrmin) === String(v))).join('')
+        + `</div></section>`;
+    }
+    const touches = askable('touch') ? [...new Set(pool.map(p => p.display && p.display.touch).filter(v => v != null))] : [];
+    if (touches.length > 1) {
+      questions += `<section class="cq"><h3>${esc(t('f.touch'))}</h3><div class="cqrow">`
+        + chip('touch', 0, x('any'), !st.touch)
+        + chip('touch', 1, t('common.yes'), st.touch === 1)
+        + chip('touch', 2, t('common.no'), st.touch === 2)
+        + `</div></section>`;
+    }
+    const brands = [...new Set(pool.map(p => p.brand))].sort();
+    if (brands.length > 1) {
+      questions += `<section class="cq"><h3>${esc(t('filter.brand'))}</h3><div class="cqrow">`
+        + brands.map(b => `<button class="cchip${st.brands.includes(b) ? ' on' : ''}" data-cqb="${esc(b)}"
+            aria-pressed="${st.brands.includes(b)}">${esc(b)}</button>`).join('')
+        + `</div></section>`;
+    }
+    // what does not vary is stated once rather than asked
+    // "Same across this category" is a claim about EVERY product in it, so every one has to state
+    // the value. Counting only the products that said something announced "Touchscreen: Yes" over
+    // 78 monitors on the strength of the 3 that are touchscreens - the 75 silent ones were dropped
+    // from the count, and the only value left standing was the rare one.
+    const one = (get, lbl, fmt) => {
+      const all = pool.map(get), known = all.filter(x => x != null && x !== '');
+      const v = [...new Set(known)];
+      if (v.length === 1 && known.length === all.length) fixed.push(t(lbl) + ': ' + fmt(v[0]));
+    };
+    one(p => p.display && p.display.touch, 'f.touch', v => v ? t('common.yes') : t('common.no'));
+    one(p => p.graphics && p.graphics.type, 'f.graphics', v => tr(v, st.lang));
+    one(p => p.connectivity && p.connectivity.network, 'f.network', v => tr(v, st.lang));
+    one(p => p.os, 'f.os', v => tr(v, st.lang));
+  }
+
+  const hits = st.cat ? results().length : 0;
+  return `<div class="shell">
+    <div class="navrow">${backLink('#/', t('nav.catalog'))}
+      <nav class="crumb"><span>${esc(t('construct.title'))}</span></nav></div>
+    <h1 class="cnh">${esc(t('construct.title'))}</h1>
+    <p class="clead">${esc(t('construct.lead'))}</p>
+
+    <h2 class="sh" style="margin-top:24px">${esc(t('construct.pick_cat'))}</h2>
+    <div class="cgrid">${catCards}</div>
+
+    ${st.cat ? `${questions}
+      ${fixed.length ? `<p class="cfixed"><b>${esc(t('construct.fixed'))}:</b> ${fixed.map(esc).join('  ·  ')}</p>` : ''}
+      <div class="cgo">
+        ${hits
+          ? `<a class="btn" href="#/c/${esc(st.cat)}">${esc(t('construct.show'))} <b class="num">${hits}</b></a>`
+          : `<span class="cnone">${esc(t('construct.none'))}</span>
+             <button class="btn ghost" data-rm="all">${esc(t('common.reset'))}</button>`}
+      </div>` : ''}
+  </div>`;
+}
+
+// When this price was last read off the shop's own page. The file carries one timestamp, which
+// said every price was checked today - including the ones typed in by hand, which no crawl ever
+// revisits, and which is how 23 of them rotted into 404s without anyone noticing. A row that was
+// not read today says so, and one nobody can date says that instead of borrowing today's.
+const seenTag = o => {
+  // "not checked" is the wrong thing to say about a price a person read off the shelf at a shop
+  // that will not print one. Ucom shows a build's price only after you have chosen the memory,
+  // the RAM and the colour, so there is nothing on that page for a checker to read - and what CAN
+  // be checked, that the link opens the product, tools/confirm-hand.mjs checks. A row that passes
+  // gets no tag at all: the price is a person's, the link is verified, there is nothing to warn
+  // about, and a badge saying "by hand" only invites the reader to distrust a good figure.
+  if (!o.seen && o.pickOnSite) return '';
+  if (!o.seen) return ` <i class="stale" title="${esc(x('handTip'))}">${esc(x('handSeen'))}</i>`;
+  // today's rows carry their date too: a row with no date read as "unknown", not as fresh (owner, 2026-10-02)
+  const d = o.seen.slice(8, 10) + '.' + o.seen.slice(5, 7);
+  // more than 3 days since the shop's page was read: the row fades, so a fresh price leads
+  const old = Date.now() - Date.parse(o.seen.slice(0, 10)) > 3 * 864e5 ? ' old' : '';
+  return ` <i class="stale${old}" title="${esc(x('seenTip'))}">${esc(x('seenOn').replace('{d}', d))}</i>`;
+};
+
+/* ================= all offers for one model ================= */
+// The product page shows offers for the CHOSEN colour/capacity. This page shows every offer
+// the shops list for the model, and lets you slice it by shop, capacity and colour.
+let OSEL = { id: null, storage: '', ram: '', size: '', esim: '', cell: '', color: '' };
+// Arriving here from a product page you have already answered these questions - the capacity,
+// the memory, the SIM build, the colour. Asking them again, with every chip back on "any", is
+// the site forgetting what it was just told. So the first visit for a product inherits whatever
+// the product page had selected; changing a chip here is still yours to change.
+// ...but only for an axis this page actually shows a chip for. The product page filters softly
+// on memory - an offer that never states its RAM is not evidence against the 12GB you picked -
+// while this page filters strictly, and it only draws a group when there are two values to
+// choose between. Inheriting SEL.ram = 12 onto a page with no memory chips left every offer
+// filtered out by a control the reader could not see, let alone clear: the iPhone 17 Pro Max
+// opened with nothing on it at all.
+function initOSel(id, avail) {
+  if (OSEL.id === id) return;
+  const from = SEL.id === id ? SEL : null;
+  const has = (k, v) => v !== '' && (avail[k] || []).some(a => String(a) === String(v));
+  const take = (k, v) => has(k, v) ? String(v) : '';
+  OSEL = { id,
+    storage: take('storage', from && from.storage != null ? from.storage : ''),
+    ram: take('ram', from && from.ram != null ? from.ram : ''),
+    size: take('size', from && from.size != null ? from.size : ''),
+    esim: take('esim', from && from.esim != null ? (from.esim ? 'e' : 'n') : ''),
+    cell: take('cell', from && from.cell != null ? (from.cell ? 'c' : 'w') : ''),
+    color: take('color', (from && from.color) || '') };
+}
+
+// AirPods Pro 3 ship in one configuration and one colour: there is no variant to state, so
+// saying "variant not stated" reads as missing data rather than as the truth. Only ask the
+// question of a product that actually has choices.
+const hasChoices = p => {
+  const v = (p && p.variants) || [];
+  return new Set(v.map(z => z.storage)).size > 1 || new Set(v.map(z => z.ram)).size > 1
+    || ((p && p.colors) || []).length > 1;
+};
+// One value across the whole product is not a choice, and writing it on every row just repeats
+// the title: a MacBook Pro M5 Max is sold in one build, so all seven rows read "2 TB . 36 GB"
+// and the column says nothing at all. An axis earns its place on the row only where the product
+// really offers more than one of it. Counted over the variants AND the offers, because a shop
+// sometimes lists a build the variant table never described - and one shop stating the RAM while
+// the others stay silent is not a difference between them either.
+const offerAxisVaries = (p, key) => {
+  if (!p) return false;
+  const vals = [...((p.variants || []).map(v => v[key])), ...(offersFor(p) || []).map(o => o[key])];
+  return new Set(vals.filter(v => v != null)).size > 1;
+};
+function offerRow(o, lo, i, unit, cls, of, withColor) {
+  // A row with no link was still an <a>, and safeHref turns a missing url into "#" - so it looked
+  // clickable and clicking it threw you back to the front page. A price somebody read off a shelf
+  // is worth showing; pretending it leads somewhere is not. No url, no link, and no arrow.
+  const live = /^https?:\/\//i.test(String(o.url || ''));
+  const best = o.price === lo ? ' best' : '';
+  return `<li${cls ? ` class="${cls}"` : ''}>${live
+      ? `<a class="orow${best}" href="${esc(safeHref(o.url))}" target="_blank" rel="noopener noreferrer">`
+      : `<div class="orow nolink${best}">`}
+    <span class="rk num">${String(i + 1).padStart(2, '0')}</span>
+    <span class="sh">${esc(shopName(o.shop))}</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">${[
+        o.size != null && offerAxisVaries(of, 'size') ? esc(inch(o.size)) : '',
+        offerAxisVaries(of, 'storage') ? (o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : '')) : '',
+        o.ram && offerAxisVaries(of, 'ram') ? esc(o.ram + ' ' + u('gb')) : '',
+        o.cell != null && offerAxisVaries(of, 'cell') ? esc(cellLbl(o.cell)) : '',
+        // The product page shows one row per build and collapses the colours behind it; this
+        // page shows every one of them, and without the colour written down two rows from the
+        // same shop at the same price are indistinguishable - they read as the listing being
+        // duplicated rather than as the two different phones they are.
+        withColor && o.color && offerAxisVaries(of, 'color') ? `<i class="ocol"><b style="--c:${swatch(o.color)}"></b>${esc(o.color)}</i>` : '',
+      ].filter(Boolean).join(' · ')}${!(of && simChoice(of)) ? ''
+        : o.esim === true ? ' <i class="esim">eSIM</i>'
+        : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
+        ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
+    <span class="pr num">${money(o.price)} ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">${o.price === lo ? esc(x('bestShort')) : '+' + money(o.price - lo) + ' ֏'}</span>
+    ${live ? `<span class="ar">${esc(x('goShop'))}<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span>` : '<span class="ar"></span>'}${live ? '</a>' : '</div>'}</li>`;
+}
+
+function offersView(p) {
+  const all = offersFor(p);
+  const stors = [...new Set(all.map(o => o.storage).filter(v => v != null))].sort((a, b) => a - b);
+  const rams = [...new Set(all.map(o => o.ram).filter(v => v != null))].sort((a, b) => a - b);
+  const sizes = [...new Set(all.map(o => o.size).filter(v => v != null))].sort((a, b) => a - b);
+  // Three states, not two: a shop that never said which SIM build it sells is not evidence for
+  // either, so '?' is its own choice rather than being folded into Nano-SIM.
+  const sims = [...new Set(all.map(o => o.esim === true ? 'e' : o.esim === false ? 'n' : '?'))]
+    .sort((a, b) => 'ne?'.indexOf(a) - 'ne?'.indexOf(b));
+  // This page is where every colour a shop lists is visible, unlike the product page which shows
+  // one row per build - so here the colour is worth choosing by. The list comes from the
+  // CATALOGUE, not from the offers: the iPhone 17 Pro Max is sold in Cosmic Orange, Deep Blue and
+  // Silver, and reading the offers instead also offered "Black" and "Blue" - one row each, both
+  // pixel's own words for a phone Apple does not make in either. A filter is a promise that the
+  // thing exists.
+  const cols = (p.colors || []).filter(c => all.some(o => o.color === c));
+  // a group is only drawn when there are two values to pick between, so that is also the test
+  // for whether a choice carried over from the product page can be shown - and un-shown.
+  const two = a => a.length > 1 ? a : [];
+  const simVals = simChoice(p) ? sims : [];
+  const cells = [...new Set(all.map(o => o.cell === true ? 'c' : o.cell === false ? 'w' : null).filter(Boolean))].sort().reverse();
+  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(simVals), cell: two(cells), color: two(cols) });
+  // filtering is by what you are buying - capacity, memory, screen, SIM build - not by which shop
+  const list = all.filter(o =>
+    (!OSEL.storage || String(o.storage) === OSEL.storage) &&
+    (!OSEL.ram || String(o.ram) === OSEL.ram) &&
+    (!OSEL.size || String(o.size) === OSEL.size) &&
+    (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim) &&
+    (!OSEL.cell || (o.cell ? 'c' : 'w') === OSEL.cell) &&
+    // an offer naming no colour is sold in every colour - pixel lists one row per build, any colour
+    (!OSEL.color || !o.color || o.color === OSEL.color))
+    // one row per thing a reader can tell apart: istyle's two Flip 7 pages, pixel's am/en copies
+    .filter((o, i, a) => { const k = v => [v.shop, v.price, v.storage, v.ram, v.esim, v.cell, v.color || (OSEL.color || '')].join('|');
+      return a.findIndex(v => k(v) === k(o) || (!o.color && v.color && k({ ...v, color: '' }) === k(o))) === i; });
+  const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
+  const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
+
+  const chips = (key, vals, label, fmt = v => v) => vals.length < 2 ? '' :
+    `<div class="ofg"><span class="ofl">${esc(label)}</span>
+      <button class="ofc${OSEL[key] === '' ? ' on' : ''}" data-of="${key}" data-ofv="">${esc(x('any'))}</button>
+      ${vals.map(v => `<button class="ofc${String(OSEL[key]) === String(v) ? ' on' : ''}" data-of="${key}" data-ofv="${esc(String(v))}">${esc(fmt(v))}</button>`).join('')}</div>`;
+
+  return `<div class="shell">
+    <div class="navrow">${backLink('#/p/' + p.id, fullName(p))}
+      <nav class="crumb"><span>${esc(x('allOffers'))}</span></nav></div>
+    <div class="ofhead">
+      <span class="t"><img src="${esc(colorPhoto(p, OSEL.color) || THUMB(p.id))}" alt="" loading="lazy"></span>
+      <div>
+        <h1>${esc(fullName(p))}${nameTag(p)}</h1>
+        <p class="ofsub">${esc(nx(all.length, 'offersLbl') + ' ' + fromShops(shopCount(all)))}</p>
+      </div>
+    </div>
+    <div class="offilters">
+      ${chips('storage', stors, t('f.storage'), gb)}
+      ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
+      ${chips('size', sizes, t('f.screen'), inch)}
+      ${chips('esim', simVals, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
+      ${chips('cell', two(cells), x('connF'), v => cellLbl(v === 'c'))}
+      ${cols.length < 2 ? '' : `<div class="ofg"><span class="ofl">${esc(t('f.color'))}</span>
+        <button class="ofc${OSEL.color === '' ? ' on' : ''}" data-of="color" data-ofv="">${esc(x('any'))}</button>
+        <span class="cs ofcs">${cols.map(c => `<button data-of="color" data-ofv="${esc(c)}" style="--c:${swatch(c)}"
+          title="${esc(c)}" aria-label="${esc(c)}" aria-pressed="${OSEL.color === c}"
+          class="${OSEL.color === c ? 'on' : ''}"></button>`).join('')}</span></div>`}
+      <!-- the chip label is the shop's English word; the page is not -->
+    </div>
+    <div class="resbar"><h2>${esc(t('common.results_count').replace('{n}', list.length))}</h2>
+      ${(() => {
+        // A saving is only real between rows you could actually swap: same capacity.
+        // Unfiltered, this list spans 256 GB to 2 TB and the spread would be meaningless.
+        const tiers = new Set(list.map(o => o.storage ?? 'base'));
+        return list.length > 1 && hi > lo && tiers.size === 1
+          ? `<span class="cnt">${esc(x('saveUpTo'))} <b class="num">${money(hi - lo)} ֏</b></span>`
+          : (tiers.size > 1 ? `<span class="cnt">${esc(x('pickCapacity'))}</span>` : '');
+      })()}</div>
+    ${list.length ? `<ol class="olist">${list.map((o, i) => offerRow(o, lo, i, p.variantUnit, '', p, true)).join('')}</ol>`
+      : `<p class="empty" style="padding:30px 0"><b>${esc(x('noOffers'))}</b></p>`}
+    <p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>
+  </div>`;
+}
+
+/* ================= compare ================= */
+// A mistyped or outdated product link used to fall through to the catalogue without a word.
+function notFoundView() {
+  const top = DATA.filter(hasReal).sort((a, b) => b.popularity - a.popularity).slice(0, 4);
+  return `<div class="shell"><div class="empty nf">
+    <h1 class="emptyh">${esc(x('nfT'))}</h1><p>${esc(x('nfS'))}</p>
+    <a class="btn" href="#/">${esc(t('nav.catalog'))}</a></div>
+    <div class="grid">${top.map(card).join('')}</div></div>`;
+}
+// the biggest sections, for a search that found nothing
+const bigCats = () => {
+  const n = {};
+  for (const p of DATA) n[catOf(p)] = (n[catOf(p)] || 0) + 1;
+  return Object.keys(n).sort((a, b) => n[b] - n[a]).slice(0, 6);
+};
+function compareConfig(p) {
+  const saved = st.cmpConfigs[p.id];
+  const pool = configPool(p);
+  const match = saved && pool.find(v => ['cpu', 'ram', 'storage', 'size'].every(k => saved[k] == null || v[k] === saved[k]));
+  return match ? { ...initialConfig(p), ...saved, configSpecs: match.configSpecs || null, id: p.id } : initialConfig(p);
+}
+function compareOptions(p, sel) {
+  const pool = configPool(p).filter(v => (sel.size == null || v.size == null || v.size === sel.size) && (!sel.cpu || v.cpu === sel.cpu));
+  const fields = [['cpu', 'f.chipset', configPool(p), v => v], ['ram', 'f.ram', pool, v => v + ' ' + u('gb')],
+    ['storage', storageLabel(p), pool.filter(v => sel.ram == null || v.ram === sel.ram), v => gb(v, p.variantUnit)],
+    ['size', 'f.screen', configPool(p), inch]];
+  return `<div class="cmp-options">${fields.map(([axis, label, source, fmt]) => {
+    const values = [...new Set(source.map(v => v[axis]).filter(v => v != null))].sort((a, b) => axis === 'cpu' ? a.localeCompare(b) : a - b);
+    if (!values.length || (axis === 'size' && values.length < 2)) return '';
+    return `<label><span class="cmp-option-label">${esc(t(label))}</span><select data-cmp-axis="${axis}" data-cmp-id="${esc(p.id)}" aria-label="${esc(fullName(p) + ': ' + t(label))}">
+      ${values.map(v => `<option value="${esc(v)}"${v === sel[axis] ? ' selected' : ''}>${esc(fmt(v))}</option>`).join('')}</select></label>`;
+  }).join('')}</div>`;
+}
+function compareView() {
+  const ps = st.cmp.map(byId).filter(Boolean);
+  const selections = ps.map(compareConfig), shown = ps.map((p, i) => selectedProduct(p, selections[i]));
+  const chosenOffers = ps.map((p, i) => selectionOffers(p, selections[i]));
+  // It borrowed the catalogue's "try changing the filters" - a screen with no filters on it.
+  // The button below already says what to do, so the wrong sentence just goes.
+  const n = ps.length, canAdd = n < MAXCMP, slot = canAdd ? 1 : 0;
+  const cols = n ? `200px repeat(${n + slot},minmax(0,1fr))` : 'minmax(0,1fr)';
+
+  let rows = '', nDiff = 0, nSame = 0;
+  // Price first: it is what people compare before anything else, and the table never had it.
+  // The cheapest shop and how many shops carry it, with the cheapest of the products marked.
+  if (n) {
+    const best = chosenOffers.map(list => list[0]?.price ?? null);
+    const ok = best.filter(v => v != null), lo = ok.length > 1 ? Math.min(...ok) : null;
+    rows += `<div class="grp" data-cmp-row="group:price">${esc(t('filter.price'))}</div><div class="k row-diff" data-cmp-row="label:price">${esc(x('bestPrice'))}</div>`
+      + ps.map((p, i) => {
+        const o = chosenOffers[i][0];
+        return `<div data-cmp-value="${esc(p.id)}:price" class="c cprice${best[i] != null && best[i] === lo && new Set(ok).size > 1 ? ' best' : ''}">${o
+          ? `<b class="num">${amd(o.price)}</b><span>${esc(shopName(o.shop))} · ${esc(nx(shopCount(chosenOffers[i]), 'shops'))}</span>
+            <a class="cpgo" data-cmp-open="${esc(p.id)}" href="#/offers/${esc(p.id)}">${esc(x('checkPrices'))}</a>`
+          : '—'}</div>`;
+      }).join('') + (slot ? '<div class="c" data-cmp-row="empty:price"></div>' : '');
+  }
+  for (const [g, defs] of GROUPS) {
+    const applicable = defs.filter(([k, get]) => shown.some(p => specAllowed(k, p) && specVal(get, p) != null));
+    if (!applicable.length) continue;
+    rows += `<div class="grp" data-cmp-row="${esc('group:' + g)}">${esc(t(g))}</div>`;
+    for (const [k, get, num, dir] of applicable) {
+      // tr(): the product page shows these in the reader's language, and the same row here was English
+      const vals = shown.map(p => { const v = specAllowed(k, p) ? specVal(get, p) : null; return v == null ? '—' : tr(String(v), st.lang); });
+      if (vals.every(v => v === '—')) continue;
+      const same = vals.every(v => v === vals[0]);
+      same ? nSame++ : nDiff++;
+      const cls = same ? 'row-same' : '';
+      let bi = -1;
+      if (num && dir && n > 1) {
+        const nv = shown.map(p => { try { return num(p); } catch (e) { return null; } });
+        const ok = nv.filter(v => typeof v === 'number' && isFinite(v));
+        if (ok.length > 1 && new Set(ok).size > 1) bi = nv.indexOf(dir > 0 ? Math.max(...ok) : Math.min(...ok));
+      }
+      // Only weakness is marked - fewer mAh, fewer pixels, less memory. Everything else keeps the
+      // default colour, including a difference with no better side (iOS against Android) and a
+      // value that is simply missing.
+      // The owner asked for exactly that: a green "best" beside every red one was noise.
+      const mark = i => !same && bi >= 0 && vals[i] !== '—' && vals[i] !== vals[bi] ? ' worse' : '';
+      rows += `<div class="k ${same ? 'row-same' : 'row-diff'}" data-cmp-row="${esc('label:' + k)}">${esc(t(k))}</div>` +
+        vals.map((v, i) => `<div data-cmp-value="${esc(ps[i].id + ':' + k)}" class="c ${cls}${mark(i)}">${esc(v)}</div>`).join('') +
+        (slot ? `<div class="c ${cls}" data-cmp-row="${esc('empty:' + k)}"></div>` : '');
+    }
+  }
+  return `<div class="shell">
+    <div class="navrow">${backLink('#/', t('nav.catalog'))}</div>
+    <div class="cbar">
+      <div class="cbar-l"><h1 class="sh" style="margin:0">${esc(t('compare.title'))}</h1>
+        <span class="dcount"><i></i>${nDiff} ${esc(x('diffs'))}</span>
+        <span class="scount">${nSame} ${esc(x('same'))}</span></div>
+      <div class="cbar-r">
+        <label class="sw"><input type="checkbox" id="diffonly"><span class="tr"></span>${esc(t('compare.diff_only'))}</label>
+        ${canAdd ? `<button class="btn ghost sm addbtn" data-act="openadd">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>${esc(addLabel(ps[0]))}</button>` : ''}
+        <button class="btn ghost sm" data-act="clearcmp">${esc(t('compare.clear'))}</button></div>
+    </div>
+    <div class="cwrap${n ? '' : ' cmp-empty'}" id="cwrap" style="--cols:${cols};--n:${n + slot}">
+      <div class="cphotos"><div class="pad"></div>
+        ${ps.map(p => `<div class="c"><a href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${esc(THUMB(p.id))}" alt="" decoding="async"></a>
+          <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button></div>`).join('')}
+        ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(addLabel(ps[0]))}">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
+      </div>
+      <div class="chead"><div class="pad"></div>
+        ${ps.map((p, i) => `<div class="ccol"><a class="cname" data-cmp-open="${esc(p.id)}" href="#/p/${esc(p.id)}">${esc(fullName(p))}${nameTag(p, selections[i].size)}</a>${compareOptions(p, selections[i])}</div>`).join('')}
+        ${slot ? `<div class="ccol"><b class="addlbl">${esc(addLabel(ps[0]))}</b></div>` : ''}
+      </div>
+      <div class="ctable">${rows}</div>
+    </div>
+    <div class="cmodal" id="cmodal" hidden>
+      <div class="cmbox" role="dialog" aria-modal="true" aria-label="${esc(t('detail.add_compare'))}">
+        <button class="cmx" data-act="closeadd" aria-label="${esc(t('compare.clear'))}">×</button>
+        <h2>${esc(t('detail.add_compare'))}</h2>
+        <input id="cmq" type="search" autocomplete="off" placeholder="${esc(t('nav.search_placeholder'))}"
+          aria-label="${esc(t('nav.search_placeholder'))}">
+        <div id="cmres" class="cmres"></div>
+        <div class="cmnow"><span class="cmlbl">${esc(t('compare.in_list'))}</span>
+          ${ps.map(p => `<div class="cmrow">
+            <img src="${esc(THUMB(p.id))}" alt="" loading="lazy">
+            <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
+            <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div></div>`;
+}
+
+function updateComparison(p, axis, value) {
+  st.cmpConfigs[p.id] = chooseConfig(p, compareConfig(p), axis, value);
+  save();
+  const template = document.createElement('template');
+  template.innerHTML = compareView();
+  const fresh = template.content;
+  // Keep the native select itself: replacing it loses focus and visibly redraws
+  // the header. Only its valid choices and selected value need updating.
+  const controls = $$('[data-cmp-axis]').filter(control => control.dataset.cmpId === p.id);
+  const options = controls[0]?.closest('.cmp-options');
+  const freshControls = [...fresh.querySelectorAll('[data-cmp-axis]')].filter(control => control.dataset.cmpId === p.id);
+  for (const next of freshControls) {
+    const current = controls.find(control => control.dataset.cmpAxis === next.dataset.cmpAxis);
+    if (current) {
+      if (current.innerHTML !== next.innerHTML) current.innerHTML = next.innerHTML;
+      current.value = next.value;
+    } else if (options) options.appendChild(next.closest('label'));
+  }
+  for (const current of controls) if (!freshControls.some(next => next.dataset.cmpAxis === current.dataset.cmpAxis)) current.closest('label').remove();
+  const currentName = controls[0]?.closest('.ccol')?.querySelector('.cname');
+  const nextName = freshControls[0]?.closest('.ccol')?.querySelector('.cname');
+  if (currentName && nextName && currentName.innerHTML !== nextName.innerHTML) currentName.innerHTML = nextName.innerHTML;
+  const table = $('.ctable'), nextTable = fresh.querySelector('.ctable');
+  if (typeof table.getAnimations === 'function') table.getAnimations({ subtree: true }).forEach(animation => animation.cancel());
+  const key = cell => cell.dataset.cmpValue || cell.dataset.cmpRow;
+  const existing = new Map([...table.children].map(cell => [key(cell), cell]));
+  const changed = [], rows = [...nextTable.children].map(next => {
+    const current = existing.get(key(next));
+    if (!current) { if (next.dataset.cmpValue) changed.push(next); return next; }
+    if (current.innerHTML !== next.innerHTML) {
+      current.innerHTML = next.innerHTML;
+      if (current.dataset.cmpValue) changed.push(current);
+    }
+    current.className = next.className;
+    return current;
+  });
+  if (rows.length !== table.children.length || rows.some((cell, i) => cell !== table.children[i])) table.replaceChildren(...rows);
+  for (const selector of ['.dcount', '.scount']) {
+    const current = $(selector), next = fresh.querySelector(selector);
+    if (current.innerHTML !== next.innerHTML) current.innerHTML = next.innerHTML;
+  }
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) for (const cell of changed)
+    if (typeof cell.animate === 'function') cell.animate([{ opacity: 0.5 }, { opacity: 1 }], { duration: 220, easing: 'cubic-bezier(.2,.7,.2,1)' });
+}
+
+// The button says what it will add, because "Add phone" on a headphone comparison is wrong.
+const addLabel = p => t('compare.add_phone');
+
+// The picker only offers what can actually join this table: same product type, not already in
+// it. A query is optional - with the field empty it shows the most popular candidates.
+function cmpCandidates(q) {
+  const cur = st.cmp.map(byId).filter(Boolean);
+  const cat = cur.length ? catOf(cur[0]) : null;
+  // same haystack the catalogue search uses, so typing here behaves like typing up there
+  const n = (q || '').trim().toLowerCase();
+  return DATA
+    .filter(p => hasReal(p) && !st.cmp.includes(p.id) && (!cat || catOf(p) === cat))
+    .filter(p => !n || (p.brand + ' ' + fullName(p)).toLowerCase().includes(n))
+    .sort((a, b) => b.popularity - a.popularity)
+    .slice(0, 8);
+}
+function paintCmpRes() {
+  const box = $('#cmres'); if (!box) return;
+  const list = cmpCandidates($('#cmq') ? $('#cmq').value : '');
+  box.innerHTML = list.length ? list.map(p => `<button class="cmrow" data-add="${esc(p.id)}">
+      <img src="${esc(THUMB(p.id))}" alt="" loading="lazy">
+      <span><b>${esc(fullName(p))}</b><i>${amd(bestOf(p))}</i></span>
+    </button>`).join('') : `<p class="cmnone">${esc(x('emptyT'))}</p>`;
+}
+
+/* ================= router ================= */
+// The query belongs to the results page. Coming home - the wordmark, a category, or the back
+// button - left the word sitting in the box AND still filtering the grid underneath it, so the
+// front page silently showed a search you thought you had left. A product page keeps it, so
+// going back from a product to the results still has the results. Typing is unaffected: it
+// repaints the grid through refresh() and never reaches render().
+const keepsQuery = route => !(route === '' || route === '/' || route.startsWith('/c/'));
+let painted = false;
+function render(keepScroll) {
+  document.documentElement.classList.remove('fs-open');   // a route change never leaves the sheet up
+  const raw = location.hash.replace(/^#/, '');
+  // #buy / #results / #main are in-page anchors, not routes. They used to fall through to
+  // the catalogue, throwing you off the product page you were reading.
+  if (raw && raw[0] !== '/') {
+    const el = document.getElementById(raw);
+    // Focus first: a skip link that only scrolls leaves the keyboard where it was, which is the
+    // one thing the link exists to fix.
+    if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+  }
+  // Tapping a suggestion opened the product underneath and left the list of suggestions sitting
+  // on top of it. The outside-click rule cannot close it: a suggestion is a link INSIDE .srch, and
+  // that rule exists precisely to leave the search box alone while it is being used. Arriving
+  // somewhere is what ends a search, so the list closes on any route change - which covers the
+  // back button too. Typing never reaches here; it repaints through refresh().
+  closeSuggest();
+  if (!keepsQuery(raw) && st.q) { st.q = ''; save(); }
+  paintChrome(); paintTray();
+  // not on a re-render (keepScroll): one visit per route, not one per filter change
+  if (!keepScroll) countView();
+  const h = raw || '/';
+  // #/c/phones (the tab links say #/c/phone) used to leave you on "0 results - try changing the
+  // filters", with no tab marked current and no filter to change. A section nobody stocks is not
+  // a section; show the whole catalogue instead of a dead end.
+  const mc0 = h.startsWith('/c/') ? h.slice(3) : null;
+  const mc = mc0 && DATA.some(p => catOf(p) === mc0) ? mc0 : (mc0 ? '' : null);
+  // a category lives in the URL so it can be shared and the back button works
+  const wasCat = st.cat;
+  st.cat = mc !== null ? mc : (h === '/' ? '' : st.cat);
+  if (st.cat !== wasCat) { pruneFilters(); if (!sortKeys().includes(st.sort)) st.sort = 'popular'; }
+  // A product folded into another by tools/merge.mjs: an old link lands on the survivor.
+  const was = h.match(/^\/(p|offers)\/(.+)$/);
+  const into = was && !byId(was[2]) && typeof MERGED !== 'undefined' && MERGED[was[2]];
+  if (into && byId(into)) { location.replace('#/' + was[1] + '/' + into); return; }
+  const m = h.match(/^\/p\/(.+)$/);
+  let mo, restoreY = null;
+  const main = $('#main');
+  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
+  else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
+    const y = window.scrollY;
+    main.innerHTML = offersView(byId(mo[1]));
+    document.title = x('allOffers') + ' | ' + fullName(byId(mo[1]));
+    window.scrollTo(0, keepScroll ? y : 0);   // filter chips must not throw you to the top
+  }
+  else if (m || h.startsWith('/offers/')) { main.innerHTML = notFoundView(); document.title = x('nfT') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/privacy') { main.innerHTML = docView('privacy', ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p13', 'p14', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12']); document.title = t('privacy.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/terms') { main.innerHTML = docView('terms', Array.from({ length: 9 }, (_, i) => 'p' + (i + 1))); document.title = t('terms.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/contact') { main.innerHTML = docView('contact', ['p1', 'p2']); document.title = t('contact.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/blog' || h.startsWith('/blog/')) {
+    const a = h.startsWith('/blog/') && BLOG.find(b => b.id === h.slice(6));
+    main.innerHTML = a ? postView(a) : blogView();
+    document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' | Better.am';
+    window.scrollTo(0, 0);
+  }
+  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' | Better.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
+  else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' | Better.am'; window.scrollTo(0, 0); }
+  else if (h === '/search') {
+    main.innerHTML = catalogView(); refresh();
+    document.title = (st.q.trim() ? st.q.trim() + ' | ' : '') + t('nav.search_placeholder') + ' | Better.am';
+    window.scrollTo(0, keepScroll ? window.scrollY : 0);
+  }
+  else {
+    main.innerHTML = catalogView(); refresh();
+    // the section row scrolls sideways; the one you are in may sit past the edge or under "More"
+    const on = $('.ctabs .on'); if (on) on.parentNode.scrollLeft = on.offsetLeft - on.parentNode.offsetLeft - 14;
+    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' | ' : '') + 'Better.am';
+    // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
+    // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
+    // to the front page landed ~1480px past where you left, while a category page was exact.
+    restoreY = keepScroll ? window.scrollY : (remembers(h) ? (scrollMem.get(h) || 0) : 0);
+  }
+  // Only on a route CHANGE. On the first paint the browser has not moved anyone yet, and taking
+  // focus into the grid put the first Tab on a card - past the skip link, the menu and the search.
+  if (!keepScroll && painted) {
+    const head = $('#main h1') || $('#main h2');
+    if (head) { head.tabIndex = -1; head.focus({ preventScroll: true }); }
+  }
+  painted = true;
+  const mh = $('#masthero');
+  // the hero belongs to the front page only, not to a single category
+  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
+  mh.hidden = !home;
+  mh.innerHTML = home ? mastHero() : '';
+  if (home) requestAnimationFrame(dealEdges);
+  if (restoreY !== null) window.scrollTo(0, restoreY);
+  paintHist();
+  moneyFx();
+}
+
+/* ================= money animations ================= */
+// Five of them, all pointed at the number people came here for. Each is gated on reduced motion
+// by hand: the global CSS rule strips transforms and transitions, but these change text content
+// or run on a timer, and no media query can undo that.
+// Set when a capacity, RAM or colour button is clicked on a product page.
+let fxFlashAll = false;
+
+// Product page only. The animation answers "this number just changed because you changed the
+// configuration", which is a question only this page asks - on a catalogue grid the same effect
+// is 146 numbers twitching for no reason, and on first load it reads as the page still loading.
+const PRICE_SEL = '.pprice2 .pp-row > b.num, .olist .orow .pr';
+
+// Fires only after a capacity, RAM or colour button was pressed on a product page. Arriving at a
+// page is not a change, so nothing animates on load; a grid of 146 cards twitching at once was
+// noise, and a count-up on first paint just read as "still loading".
+function moneyFx() {
+  if (!fxFlashAll) return;
+  fxFlashAll = false;
+  for (const el of $$(PRICE_SEL)) {
+    el.classList.remove('fx-flash'); void el.offsetWidth; el.classList.add('fx-flash');
+    el.addEventListener('animationend', () => el.classList.remove('fx-flash'), { once: true });
+  }
+}
+
+/* ================= events ================= */
+document.addEventListener('click', e => {
+  const compared = e.target.closest('[data-cmp-open]');
+  if (compared) {
+    const p = byId(compared.dataset.cmpOpen);
+    if (p) SEL = { ...compareConfig(p) };
+  }
+  // The wordmark is the way home. Its href is already #/, but a hash that does not change fires
+  // no hashchange, so from the front page - scrolled down, a search typed, a filter on - clicking
+  // it did nothing at all. Home means the top of a clean catalogue, every time.
+  if (e.target.closest('.logo')) {
+    e.preventDefault();
+    st.q = ''; st.brands = []; st.cat = '';
+    for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch', 'weight']) st[k] = D[k];
+    st.scrs = []; st.sort = D.sort;
+    save();
+    if (location.hash && location.hash !== '#/') location.hash = '#/'; else render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  const anchor = e.target.closest('a[href^="#"]:not([href^="#/"])');
+  if (anchor) {
+    e.preventDefault();
+    const target = document.getElementById(anchor.getAttribute('href').slice(1));
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // A skip link that only scrolls leaves the keyboard where it was, which is the one thing the
+    // link exists to fix. #main carries tabindex="-1"; on #results and #savings this is a no-op.
+    target?.focus({ preventScroll: true });
+    return;
+  }
+  // The whole card opens the product. The chevron in its corner had always been decoration
+  // (aria-hidden), so it looked like a button and did nothing when clicked.
+  const cd = e.target.closest('.cdot');
+  if (cd) { cardShow(cd); return; }
+  const card = e.target.closest('.pcard');
+  if (card && !e.target.closest('a,button')) {
+    const link = card.querySelector('h2 a[href^="#/p/"]');
+    if (link) { location.hash = link.getAttribute('href'); return; }
+  }
+  const act = e.target.closest('[data-act]');
+  if (act && act.dataset.act === 'openadd') {
+    const m = $('#cmodal');
+    if (m) {
+      addOpener = document.activeElement;
+      m.hidden = false; paintCmpRes();
+      // TWO frames between leaving display:none and adding the class - one is not enough for
+      // the browser to have computed the starting style, and the fade is skipped.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        m.classList.add('on'); $('#cmq')?.focus();
+      }));
+    }
+    return;
+  }
+  if (act && act.dataset.act === 'closeadd') { closeAdd(); return; }
+  if (e.target.id === 'cmodal') { closeAdd(); return; }               // click the backdrop to close
+  const add = e.target.closest('[data-add]');
+  if (add) { if (toggleCmp(add.dataset.add)) { closeAdd(); render(true); } return; }
+  const arr = e.target.closest('[data-dl]');
+  if (arr) {
+    const r = $('#dlrow'), c = r && r.querySelector('.dl');
+    if (c) r.scrollBy({ left: +arr.dataset.dl * (c.getBoundingClientRect().width + 12) * 2,
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    return;
+  }
+  const L = e.target.closest('[data-lang]');
+  if (L) { st.lang = L.dataset.lang; save(); render(true); return; }
+  if (e.target.closest('#themeBtn')) {
+    // two themes only: white-blue and dark-blue. From 'auto', flip away from what the OS shows.
+    const osDark = matchMedia('(prefers-color-scheme:dark)').matches;
+    st.theme = st.theme === 'auto' ? (osDark ? 'light' : 'dark') : st.theme === 'dark' ? 'light' : 'dark';
+    save(); paintChrome(); return;
+  }
+  const tg = e.target.closest('button[data-f]');
+  if (tg) { const k = tg.dataset.f; st[k] = !st[k]; refresh(); return; }
+  const ap = e.target.closest('[data-apply]');
+  if (ap) { commitPanel(ap.closest('.fdrop'), ap.dataset.apply); return; }
+  const cl = e.target.closest('[data-clear]');
+  if (cl) {
+    const pn = cl.closest('.fdrop');
+    pn.querySelectorAll('input[type="checkbox"]').forEach(i => i.checked = false);
+    pn.querySelectorAll('input[type="radio"][value="0"]').forEach(i => i.checked = true);
+    pn.querySelectorAll('input[data-f="pmin"]').forEach(i => i.value = PMIN);
+    pn.querySelectorAll('input[data-f="pmax"]').forEach(i => i.value = PMAX);
+    commitPanel(pn, cl.dataset.clear);
+    return;
+  }
+  // construct page: category card, a question chip, a brand chip
+  const cc = e.target.closest('[data-ccat]');
+  // Straight to the products, filters open. This used to step into a questionnaire - screen size,
+  // then brand, then a "Show 78" button - so choosing a section showed nothing until three more
+  // decisions were made. The owner wants the whole section at once, with the filters already out
+  // for whoever does want to narrow it.
+  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, weight: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, page: 1 });
+    st.fopen = true; save(); location.hash = '#/c/' + st.cat; return; }
+  const cq = e.target.closest('[data-cq]');
+  if (cq) { const k = cq.dataset.cq, v = cq.dataset.cqv;
+    if (k === 'scr') st.scrs = st.scrs.includes(v) ? st.scrs.filter(z => z !== v) : [...st.scrs, v];
+    else st[k] = +v;
+    save(); $('#main').innerHTML = constructView(); return; }
+  const cbrand = e.target.closest('[data-cqb]');
+  if (cbrand) { const b = cbrand.dataset.cqb;
+    st.brands = st.brands.includes(b) ? st.brands.filter(z => z !== b) : st.brands.concat(b);
+    save(); $('#main').innerHTML = constructView(); return; }
+  const rm = e.target.closest('[data-rm]');
+  if (rm) {
+    const k = rm.dataset.rm;
+    if (k === 'all') {
+      Object.assign(st, { q: '', pmin: PMIN, pmax: PMAX });
+      for (const kk in FILT) { const f = FILT[kk]; if (f.kind === 'set') st[f.arr] = []; else st[kk] = D[kk]; }
+      if ($('#q')) $('#q').value = '';
+      $$('.fdrop.dirty').forEach(d => d.classList.remove('dirty'));
+    }
+    else if (k === 'price') { st.pmin = PMIN; st.pmax = PMAX; }
+    else if (k.includes(':')) {
+      const i = k.indexOf(':'), f = FILT[k.slice(0, i)];
+      if (f) st[f.arr] = (st[f.arr] || []).filter(v => v !== k.slice(i + 1));
+    }
+    else st[k] = D[k] ?? 0;
+    if (location.hash === '#/construct') { save(); $('#main').innerHTML = constructView(); return; }
+    // Let the chip collapse before the grid moves underneath it, so the reflow reads as caused
+    // by the dismissal rather than as the page jumping. Reduced motion skips the wait entirely.
+    const slow = k !== 'all' && rm.classList.contains('chip')
+      && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (slow) { rm.classList.add('gone'); setTimeout(refresh, 240); } else refresh();
+    return;
+  }
+  const clr = e.target.closest('[data-act="clearcmp"]');
+  if (clr) { st.cmp = []; st.cmpConfigs = {}; save(); paintTray(); render(); return; }
+  const fav = e.target.closest('[data-cmp]');
+  if (fav) {
+    e.preventDefault();
+    const id = fav.dataset.cmp, wasIn = st.cmp.includes(id);
+    if (toggleCmp(id) && wasIn && location.hash === '#/compare') render();
+    return;
+  }
+  const cw = e.target.closest('[data-cw]');
+  if (cw) { st.cmp = cw.dataset.cw.split('|'); save(); return; }
+  const cb = e.target.closest('[data-cmp-btn]');
+  if (cb) {
+    const id = cb.dataset.cmpBtn;
+    if (toggleCmp(id)) {
+      const on = st.cmp.includes(id);
+      cb.textContent = on ? t('detail.in_compare') : t('detail.add_compare');
+      cb.classList.toggle('ghost', on);
+    }
+    return;
+  }
+  const pgb = e.target.closest('[data-page]');
+  if (pgb && !pgb.disabled) {
+    st.page = Math.max(1, +pgb.dataset.page || 1);
+    save(); refresh();
+    const top = $('#results');
+    if (top) window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+    return;
+  }
+  if (e.target.closest('[data-fsheet]')) { openSheet(); return; }
+  if (e.target.closest('[data-fsclose]')) { closeSheet(); return; }
+  if (e.target.closest('[data-fsgo]')) {
+    for (const pn of $$('.fdrop.dirty:not(.r)')) { Object.assign(st, panelDraft(pn, pn.dataset.drop)); pn.classList.remove('dirty'); }
+    st.page = 1; closeSheet(); refresh(); return;
+  }
+  const fm = e.target.closest('[data-fmore]');
+  if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
+  if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
+  if (!e.target.closest('.srch')) closeSuggest();
+  const ofc = e.target.closest('[data-of]');
+  if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
+  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-cpu],[data-esim],[data-size],[data-band],[data-cell]');
+  if (opt) {
+    fxFlashAll = true;   // every price on the page is about to answer a different question
+    const ph = byId(SEL.id);
+    if (opt.dataset.color !== undefined) SEL.color = opt.dataset.color;
+    // second click on the chosen one clears it, so "either" is reachable without a third button
+    if (opt.dataset.esim !== undefined) {
+      const want = opt.dataset.esim === '1';
+      SEL.esim = SEL.esim === want ? null : want;
+    }
+    if (opt.dataset.cell !== undefined) SEL.cell = opt.dataset.cell === '1';
+    // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
+    // so picking one snaps the other to a combination that actually exists.
+    if (opt.dataset.band !== undefined) SEL.band = opt.dataset.band;
+    for (const axis of ['cpu', 'size', 'storage', 'ram']) {
+      if (opt.dataset[axis] !== undefined && ph) SEL = chooseConfig(ph, SEL, axis, axis === 'cpu' ? opt.dataset[axis] : +opt.dataset[axis]);
+    }
+    render(true);
+    return;
+  }
+  // one dropdown open at a time; click outside closes
+  const d = e.target.closest('[data-drop]');
+  if (!document.documentElement.classList.contains('fs-open'))
+    $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.id === 'q') { e.preventDefault(); submitSearch(); return; }
+  if (e.key !== 'Escape') return;
+  closeSuggest();
+  closeSheet();
+  $$('[data-drop][open]').forEach(o => o.open = false);
+  closeAdd();
+});
+document.addEventListener('change', e => {
+  const el = e.target, f = el.dataset.f;
+  if (el.dataset.cmpAxis) {
+    const p = byId(el.dataset.cmpId);
+    if (p) updateComparison(p, el.dataset.cmpAxis, el.dataset.cmpAxis === 'cpu' ? el.value : +el.value);
+    return;
+  }
+  if (el.id === 'diffonly') { $('#cwrap').classList.toggle('hide-same', el.checked); return; }
+  if (!f) return;
+  // Inside a filter panel nothing is decided until Apply. The panel marks itself changed so the
+  // button can say so, and the range readout still tracks the handle, because a slider whose
+  // number does not move while you drag it is broken whatever it does afterwards.
+  const panel = el.closest && el.closest('.fdrop:not(.r)');
+  if (panel && f !== 'sort') {
+    panel.classList.add('dirty');
+    if (f === 'pmin' || f === 'pmax') paintRange(panel);
+    paintDraftCount(panel);
+    return;
+  }
+  if (f === 'sort') { st.sort = el.value; const dd = el.closest('[data-drop]'); if (dd) dd.open = false; }
+  else if (FILT[f] && FILT[f].kind === 'set') {
+    const a = FILT[f].arr;
+    st[a] = el.checked ? [...new Set([...(st[a] || []), el.value])] : (st[a] || []).filter(v => v !== el.value);
+  }
+  else if (f === 'pmin') st.pmin = Math.min(+el.value, st.pmax);
+  else if (f === 'pmax') st.pmax = Math.max(+el.value, st.pmin);
+  else st[f] = +el.value;
+  refresh();
+});
+// Suggestions under the box: the fastest route to ONE product, without leaving the page you
+// are on. The full grid, with every filter, lives behind Enter or the search button.
+const SUGG_MAX = 8;
+function suggestFor(q) {
+  if (!String(q || '').trim()) return [];
+  const hit = DATA.filter(p => hayMatch(p, q));
+  // A product whose name STARTS with what was typed is what the person meant; the rest follow.
+  // Within each of those two groups, the best-known model wins: searching "playstation" should
+  // put the Pro and the Slim above a dozen controllers and headsets, and it used to do the
+  // opposite - cheapest first meant every accessory outranked the console it plugs into.
+  const w = q.trim().toLowerCase();
+  hit.sort((a, b) => (hay(b).startsWith(w) - hay(a).startsWith(w))
+    || (b.popularity - a.popularity) || bestOf(a) - bestOf(b));
+  return hit.slice(0, SUGG_MAX);
+}
+function paintSuggest() {
+  const box = $('#sugg');
+  if (!box) return;
+  const list = suggestFor(st.q);
+  const total = DATA.filter(p => hayMatch(p, st.q)).length;
+  if (!list.length) {
+    // where the results grid is on screen it already says so; say it once
+    const said = !!$('#gridbox');
+    box.innerHTML = st.q.trim() && !said ? `<p class="sg-none">${esc(x('emptyT'))}</p>` : '';
+    box.hidden = !st.q.trim() || said;
+    setExpanded(!box.hidden);
+    return;
+  }
+  box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
+      <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
+      <span class="sg-n">${esc(fullName(p))}${nameTag(p)}</span>
+      <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
+    + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
+  box.hidden = false;
+  setExpanded(true);
+}
+function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
+// the combobox has to SAY whether its list is open; it was announced closed the whole time
+function setExpanded(v) { const q = $('#q'); if (q) q.setAttribute('aria-expanded', v ? 'true' : 'false'); }
+// Enter, or the search button, is what opens the results page.
+function submitSearch() {
+  // Enter inside the 140 ms debounce left the timer armed, and it reopened the suggestions on top
+  // of the results page it had just opened.
+  clearTimeout(qT);
+  closeSuggest();
+  const el = $('#q');
+  if (el) el.blur();
+  save();
+  if (location.hash !== '#/search') location.hash = '#/search'; else render();
+}
+document.addEventListener('input', e => {
+  const el = e.target;
+  if (el.id === 'q') {
+    st.q = el.value;
+    // A keystroke used to rebuild all 111 cards. Coalesce to one repaint per pause - short
+    // enough that it still feels immediate, long enough that typing never redraws mid-word.
+    clearTimeout(qT);
+    qT = setTimeout(() => {
+      // refresh() only repaints the catalogue grid, so from a product/offers/compare page a
+      // query had nowhere to land. Go to the catalogue and let render() draw the results.
+      // typing refines whatever list you are already looking at; it never navigates on its
+      // own. Enter or the search button is what opens the results page.
+      paintSuggest();
+      if ($('#gridbox')) refresh();
+    }, 140);
+    return;
+  }
+  if (el.id === 'cmq') { paintCmpRes(); return; }
+  if (el.dataset.fs) {
+    const q = el.value.trim().toLowerCase();
+    el.closest('.panel').querySelectorAll('.opt').forEach(o => { o.hidden = !!q && !o.textContent.toLowerCase().includes(q); });
+    return;
+  }
+  if (el.dataset.f === 'pmin' || el.dataset.f === 'pmax') {
+    const a = +$('[data-f="pmin"]').value, b = +$('[data-f="pmax"]').value;
+    $('[data-rng="min"]').textContent = money(Math.min(a, b)) + ' ֏';
+    $('[data-rng="max"]').textContent = money(Math.max(a, b)) + ' ֏';
+  }
+});
+
+// Going back to the catalogue should land where you left it, not at the top. Product pages
+// still open at the top - you clicked them to read them from the start.
+// The browser restores its OWN remembered scroll on a history back, asynchronously and after
+// our scrollTo has already run, so the two fought and the catalogue landed at neither position.
+// Turning that off makes scrollMem the single source of truth.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+const scrollMem = new Map();
+const remembers = h => h === '/' || h.startsWith('/c/');
+// Fade out, then hide: hiding first would cut the transition off before it ran. Under reduced
+// motion the duration is the same but the transition is dropped, so it simply closes.
+let addOpener = null;
+function closeAdd() {
+  const m = $('#cmodal'); if (!m || m.hidden) return;
+  m.classList.remove('on');
+  setTimeout(() => { m.hidden = true; }, 200);
+  addOpener?.focus(); addOpener = null;   // put the keyboard back where it was
+}
+window.addEventListener('hashchange', e => {
+  const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
+  if (remembers(from)) scrollMem.set(from, window.scrollY);
+  const to = location.hash.replace(/^#/, '') || '/';
+  // Leaving the comparison used to end it, so the Back button threw a comparison away. The picks
+  // are not invisible state: the nav's Compare link carries their count. Only Clear all empties it.
+  // A card opened from the grid hands its photo to the product page: the browser morphs one into
+  // the other (View Transitions API), so the eye follows the product instead of a page swap.
+  // Browsers without it, and anyone who asked for less motion, get the plain render.
+  const img = vtFrom; vtFrom = null;
+  if (img && img.isConnected && /^\/p\//.test(to) && document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    img.style.viewTransitionName = 'pshot';
+    const hero = () => document.getElementById('hpShot');
+    const vt = document.startViewTransition(() => {
+      img.style.viewTransitionName = '';
+      render(false);
+      if (hero()) hero().style.viewTransitionName = 'pshot';
+    });
+    // a skipped transition (hidden tab, a second click mid-flight) rejects these; the page itself is fine
+    vt.ready.catch(() => {});
+    vt.finished.catch(() => {}).then(() => { if (hero()) hero().style.viewTransitionName = ''; });
+  } else render(false);
+});
+let vtFrom = null;
+// only a click that opens the product arms the morph - not the card's compare button
+document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('.pcard a[href^="#/p/"]'); vtFrom = a ? a.closest('.pcard').querySelector('.pimg') : null; }, true);
+render();
+

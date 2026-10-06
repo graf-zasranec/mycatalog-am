@@ -1314,6 +1314,12 @@ a.store:hover .nm{color:var(--brand)}
 .unsure,h2.sh,.pmeta,.og>label,.pprice2 .lb,.pprice2 .shopn,.cwith h2,.cwt em,.cmlbl,.bl-hd p,.pprice s,.ofl,/* Out of stock was muted grey - the quietest thing on the row,under a price you cannot buy.
    It is the one fact that makes the rest of the row useless,so it is the loudest. */
 .orow .oos){text-transform:none;letter-spacing:.01em}
+.boot-catalog{padding-top:28px;padding-bottom:28px}
+.boot-catalog h1{font-size:clamp(1.3rem,3vw,2rem);line-height:1.25;margin-bottom:12px}
+.boot-catalog .boot-method{max-width:900px;font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 20px}
+.boot-catalog .boot-categories{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.boot-catalog .boot-categories a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:var(--pill);font-size:13px;background:var(--surface)}
+@media(max-width:600px){.boot-catalog .boot-categories{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}.boot-catalog .boot-categories a{flex:0 0 auto;white-space:nowrap}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>

@@ -456,7 +456,7 @@ function build({ inline, standalone }) {
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
-  const shell = seoTitle(rd('_shell.html')).replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1">${homeContent('hy')}</main>`);
+  const shell = seoTitle(rd('_shell.html')).replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1">${homeContent('hy', true, inline ? {} : main)}</main>`);
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
   // The verdict sentences and the price history are read on a PRODUCT page and nowhere else,
   // and together they are 531 KB of the 3.26 MB this file makes a browser parse before it can
@@ -480,7 +480,7 @@ function build({ inline, standalone }) {
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
       fs.writeFileSync(f, body);
-      ext += `<script src="${f}?v=${crypto.createHash('sha256').update(body).digest('hex').slice(0, 10)}"><\/script>\n`;
+      ext += `<script defer src="${f}?v=${crypto.createHash('sha256').update(body).digest('hex').slice(0, 10)}"><\/script>\n`;
     }
   }
   let appJs = '\n'
@@ -502,7 +502,13 @@ function build({ inline, standalone }) {
   // and the hash the browser computes disagree, the browser refuses to run the app at all, and
   // the page comes up blank on the machine that built it. Emit what the parser will see.
   appJs = appJs.replace(/\r\n/g, '\n');
-  const script = '\n' + ext + '<script>' + appJs + '<\/script>\n';
+  // Download all three scripts together, then execute in document order. The crawlable
+  // catalogue stays usable while they load; an inline app would run before deferred data.
+  let script;
+  if (lazy) {
+    fs.writeFileSync('data/site-app.js', appJs);
+    script = '\n' + ext + `<script defer src="data/site-app.js?v=${crypto.createHash('sha256').update(appJs).digest('hex').slice(0, 10)}"><\/script>\n`;
+  } else script = '\n<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);
   return HEAD_OPEN(appJs) + head + HEAD_CLOSE + body + script + '\n</body></html>\n';
@@ -579,10 +585,15 @@ const CATS = Object.fromEntries([...rd('_app.js').matchAll(/cats: \{([^}]*)\}/g)
   [LANGS[i], Object.fromEntries([...m[1].matchAll(/(\w+): '([^']*)'/g)].map(x => [x[1], x[2]]))]));
 const catOf = p => p.category === 'earbuds' ? 'headphones' : (p.category || 'phone');
 const catLabel = (c, l = 'hy') => (CATS[l] || {})[c] || c;
-const homeContent = lang => {
+const homeContent = (lang, interactive = false, images = {}) => {
   const pre = PRE[lang], title = { hy: 'Սարքերի գների համեմատություն Հայաստանում', ru: 'Сравнение цен на электронику в Армении', en: 'Compare electronics prices in Armenia' }[lang];
   const method = { hy: 'Better.am-ը խանութ չէ։ Համեմատում ենք խանութների հրապարակած գները՝ նույն RAM-ի, հիշողության և այլ տարբերակների համար։ Գինը, առկայությունը, երաշխիքն ու վերադարձի պայմանները վերջնականապես ստուգեք խանութում։ Չճշտված բնութագրերը նշվում են որպես անորոշ։', ru: 'Better.am сравнивает опубликованные цены магазинов для одинаковых конфигураций RAM, накопителя и других параметров. Мы не продаём товары. Окончательную цену, наличие, гарантию и возврат уточняйте у магазина. Неподтверждённые характеристики отмечены.', en: 'Better.am compares shops’ published prices for matching RAM, storage and other configurations. We do not sell products. Confirm the final price, availability, warranty and returns with the shop. Unconfirmed specifications are marked.' }[lang];
-  return `<div class="shell"><h1>${esc(title)}</h1><p>${esc(method)}</p><nav aria-label="Categories">${cats.map(c => `<a href="${pre}c/${c}/">${esc(catLabel(c, lang))}</a>`).join(' · ')}</nav><ul>${phones.slice().sort((a, b) => b.popularity - a.popularity).slice(0, 50).map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></li>`).join('')}</ul><p><a href="${pre}b/">${esc(L[lang].blog)}</a></p></div>`;
+  const products = phones.slice().sort((a, b) => b.popularity - a.popularity).slice(0, 50);
+  const cards = interactive ? `<div class="grid">${products.map(p => {
+    const photo = images[p.id] || '';
+    return `<article class="pcard"><div class="pshot">${photo ? `<img class="pimg" src="${esc(photo)}" alt="${esc(nameOf(p))}" loading="lazy" decoding="async">` : ''}</div><div class="pbody"><span class="eyebrow">${esc(p.brand || '')}</span><h2><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></h2><div class="pfoot"><span class="pprice num">${amd(bestOf(p))}</span></div></div></article>`;
+  }).join('')}</div>` : `<ul>${products.map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></li>`).join('')}</ul>`;
+  return `<div class="shell${interactive ? ' boot-catalog' : ''}"><h1>${esc(title)}</h1><p class="boot-method">${esc(method)}</p><nav class="boot-categories" aria-label="Categories">${cats.map(c => `<a href="${pre}c/${c}/">${esc(catLabel(c, lang))}</a>`).join(interactive ? '' : ' · ')}</nav>${cards}<p><a href="${pre}b/">${esc(L[lang].blog)}</a></p></div>`;
 };
 // Armenian plural is the bare noun after any number, so one form is correct for all of them.
 const ruShops = n => n % 10 === 1 && n % 100 !== 11 ? 'магазине' : 'магазинах';
