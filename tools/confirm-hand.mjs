@@ -66,7 +66,8 @@ const NEVER = ['notebookcentre.am'];
 // the day the price was really read. A row these two do not list is left alone, never asked.
 const CACHED = [['eldorado.am', 'data/eldorado.json'], ['zigzag.am', 'data/zigzag.json']];
 const noFetch = u => CACHED.some(([host]) => u.includes(host));
-const tidy = u => String(u || '').trim().replace(/\/+$/, '').toLowerCase();
+const tidy = u => String(u || '').trim().replace(/\/+$/, '').toLowerCase()
+  .replace(/^(https?:\/\/[^/]+)\/(?:am|en|ru)(\/)/, '$1$2');
 const TODAY = new Date().toISOString().slice(0, 10);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 

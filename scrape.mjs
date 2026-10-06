@@ -1679,14 +1679,20 @@ const SHOPS = {
       //
       // robots.txt disallows /*? , /catalog/ , /index.php/ and the rest; a product page is
       // .../en/<slug>.html and is none of those, so it may be fetched.
+      // Category first pages omit older models. Revisit known product links too, so
+      // their exact configurations can be checked instead of remaining undated.
+      const known = [...Object.entries(prev.offers || {}).flatMap(([id, list]) =>
+        list.filter(o => o.shop === 'ucom' && safeUrl(o.url)).map(o => ({ ...o, id, fromBacklog: true })))];
       const seen = new Set();
-      for (const f of found) {
+      for (const f of [...found, ...known]) {
         if (seen.has(f.url)) continue;
         seen.add(f.url);
         const page = await get(f.url);
         await sleep(DELAY_MS);
         const kids = page ? magentoChildren(page, (phoneById[f.id] || {}).colors) : [];
         if (!kids.length) {
+          // No readable variants is not confirmation of an old configuration's price.
+          if (f.fromBacklog) continue;
           // a simple product, with one price and nothing to choose: the grid already had it
           out.push({ ...f, storage: storageOf(f.title) ?? storageOf(f.url), inStock: true });
           continue;
@@ -2409,7 +2415,8 @@ try {
                            : matchPhone(r.title),
                  storage: r.cap ? +r.cap : null, ram: r.ram ? +r.ram : ramOf(r.title),
                  esim: simBuild(`${r.title} ${r.url}`) }))
-    .filter(r => r.id && r.price || (r.price && dropped.push(`${r.shop}: ${r.title}`) && false));
+    .filter(r => Number.isFinite(+r.price) && +r.price > 0)
+    .filter(r => r.id || (dropped.push(`${r.shop}: ${r.title}`) && false));
   // A row that names no product used to vanish without a word - two Bose headphones lost every
   // offer that way (2026-10-03). Say how many, and keep the list where somebody can read it.
   if (dropped.length) {
@@ -2819,6 +2826,31 @@ try {
   });
   if (n) console.log(`${n} offer(s) set to the colours their page sells (data/offer-colors.json)`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('offer-colors.json:', e.message); }
+// Zero, negative and malformed prices are unavailable prices, never free configurations.
+// Apply this to carried and hand-entered offers too, before history and public data are written.
+for (const id of Object.keys(offers)) {
+  offers[id] = offers[id].filter(o => Number.isFinite(+o.price) && +o.price > 0);
+}
+// A listing that explicitly returns zero must also suppress its older hand price.
+// Match only that shop and URL: another shop or configuration remains available.
+const noPriceUrls = new Set();
+const priceUrlKey = (shop, url) => shop + '|' + String(url || '').replace(/\/+$/, '')
+  .replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2');
+for (const shop of ['eldorado', 'zigzag']) {
+  try {
+    for (const row of JSON.parse(fs.readFileSync(`data/${shop}.json`, 'utf8'))) {
+      if (row.url && row.price !== null && row.price !== '' && Number(row.price) === 0)
+        noPriceUrls.add(priceUrlKey(shop, row.url));
+    }
+  } catch (e) { if (e.code !== 'ENOENT') console.warn(`${shop} zero-price check:`, e.message); }
+}
+let noPriceCount = 0;
+for (const id of Object.keys(offers)) {
+  const before = offers[id].length;
+  offers[id] = offers[id].filter(o => !noPriceUrls.has(priceUrlKey(o.shop, o.url)));
+  noPriceCount += before - offers[id].length;
+}
+if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed because the shop now reports 0 AMD`);
 // Hidden while the shop's own page says sold out (owner, 2026-09-25). data/soldout.json is
 // rewritten by every full `python tools/check-links.py --all`, so a restocked page comes back
 // on its own; nothing is pinned or deleted.

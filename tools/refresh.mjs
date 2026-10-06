@@ -28,6 +28,7 @@ for (const category of ['laptop', 'monitor', 'headphones', 'speaker', 'watch', '
   run(process.execPath, ['tools/shop-specs.mjs', category, '--write']);
 run(python, ['tools/photo-box.py']);
 run(python, ['tools/thumbnails.py']);
+run(python, ['tools/social.py']);
 run(process.execPath, ['build.mjs'], true);
 for (const tool of ['recheck', 'health', 'wrong-links', 'variant-audit']) run(process.execPath, ['tools/' + tool + '.mjs']);
 if (process.argv.includes('--plan')) process.exit(0);

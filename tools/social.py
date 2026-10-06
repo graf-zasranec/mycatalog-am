@@ -8,6 +8,7 @@
 # no preview at all. A JPEG on the catalogue's own cream, at the 1.91:1 every card reader wants.
 import json
 import sys
+import re
 from pathlib import Path
 
 from PIL import Image
@@ -25,12 +26,16 @@ coming = json.loads((ROOT / 'data' / 'coming.json').read_text(encoding='utf8')).
 
 made = skipped = missing = 0
 for p in phones + coming:
-    src = CUT / f"{p['id']}__main.webp"
+    # Match the product page's first available finish, rather than an unrelated main shot.
+    finishes = [re.sub(r'[^a-z0-9]+', '-', c.lower()).strip('-') for c in p.get('colors', [])]
+    src = next((CUT / f"{p['id']}__{c}.webp" for c in finishes
+                if (CUT / f"{p['id']}__{c}.webp").exists()), CUT / f"{p['id']}__main.webp")
     dest = OUT / f"{p['id']}.jpg"
     if not src.exists():
         missing += 1
         continue
-    if dest.exists() and dest.stat().st_mtime >= src.stat().st_mtime:
+    marker = dest.with_suffix('.source')
+    if dest.exists() and marker.exists() and marker.read_text() == src.name and dest.stat().st_mtime >= src.stat().st_mtime:
         skipped += 1
         continue
     im = Image.open(src).convert('RGBA')
@@ -39,6 +44,7 @@ for p in phones + coming:
     # the alpha channel is the mask, so the transparent ground becomes the cream and not black
     card.paste(im, ((W - im.width) // 2, (H - im.height) // 2), im)
     card.save(dest, 'JPEG', quality=82, optimize=True, progressive=True)
+    marker.write_text(src.name)
     made += 1
 
 kb = sum(f.stat().st_size for f in OUT.glob('*.jpg')) / 1024

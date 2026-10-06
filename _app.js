@@ -284,7 +284,14 @@ const gb = (v, unit) => unit === 'mm' ? v + ' ' + u('mm')
 
 /* real shop offers scraped by scrape.mjs; empty when prices.json has not been generated */
 const P = (typeof PRICES !== 'undefined' && PRICES) || { shops: {}, offers: {} };
-const offersFor = p => (P.offers && P.offers[p.id]) || [];      // pre-sorted cheapest first
+const pricedOffers = new WeakMap();
+const offersFor = p => {
+  const list = P.offers && P.offers[p.id];
+  if (!list) return [];
+  if (!pricedOffers.has(list)) pricedOffers.set(list,
+    list.filter(o => Number.isFinite(+o.price) && +o.price > 0));
+  return pricedOffers.get(list); // pre-sorted cheapest first
+};
 const hasReal = p => offersFor(p).length > 0;
 const bestOf = p => hasReal(p) ? offersFor(p)[0].price : p.priceAmd;
 const safeHref = u => /^https?:\/\//i.test(String(u)) ? String(u) : '#';
@@ -1360,7 +1367,7 @@ function card(p) {
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-      <img class="pimg" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" loading="lazy" decoding="async">
+      <img class="pimg" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" width="480" height="480" loading="lazy" decoding="async">
       ${cdotsHTML(p)}
     </div>
     <div class="pbody">
@@ -1458,7 +1465,7 @@ function dealCard(d, isSpot) {
     ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
     : `<span class="dl-save num">${esc(x('dealUsual').replace('{n}', money(d.below)))}</span>`;
   return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
-    <span class="dl-im"><img src="${THUMB(p.id)}" alt="" loading="lazy" decoding="async"></span>
+    <span class="dl-im"><img src="${THUMB(p.id)}" alt="" width="480" height="480" loading="lazy" decoding="async"></span>
     <small>${esc(cfg)}</small>
     <span class="dl-n">${esc(p.name)}${nameTag(p)}</span>
     <span class="dl-p num">${amd(d.lo)}</span>
@@ -1481,7 +1488,7 @@ function spotHTML(d) {
   const n = nx(d.shops, 'shops');
   return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
       ${eb}
-      <img src="${IMG(p.id)}" alt="" decoding="async">
+      <img src="${THUMB(p.id)}" alt="" width="480" height="480" fetchpriority="high" loading="eager" decoding="async">
       <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
       <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
         <b class="spot-p num">${amd(d.lo)}</b>

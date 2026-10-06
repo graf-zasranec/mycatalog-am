@@ -324,7 +324,7 @@ const offerOf = p => {
 };
 const SEO = {
   url: SITE,
-  img: 'images/social/better-am.jpg',
+  img: 'images/social/better-am-hy.jpg',
   title: `Better.am: ${phones.length} սարքի գներ Հայաստանի խանութներում`,
   desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
       + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
@@ -399,7 +399,11 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta property="og:title" content="${SEO.title}">
 <meta property="og:description" content="${SEO.desc}">
 <meta property="og:url" content="${SEO.url}">
-<meta property="og:image" content="${SEO.url}${SEO.img}">
+<meta property="og:image" content="${SEO.url}${SEO.img}?v=${crypto.createHash('sha256').update(fs.readFileSync(SEO.img)).digest('hex').slice(0, 12)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Better.am — electronics price comparison in Armenia">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${SEO.title}">
 <meta name="twitter:description" content="${SEO.desc}">
@@ -423,7 +427,10 @@ const HEAD_CLOSE = `</head><body>
 // the real one in. _app.js overwrites document.title per route, so this is what a crawler and
 // the first paint see, and it is the line a search result prints.
 function seoTitle(shell) {
-  return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`);
+  // Font declarations are tiny; inline them so first paint needs no CSS round trip.
+  const fonts = rd('fonts/fonts.css').replace(/url\(([^)]+)\)/g, 'url(/fonts/$1)');
+  return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`)
+    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `<style>${fonts}</style>`);
 }
 
 function splitShell(shell) {
@@ -580,7 +587,15 @@ function writePage(file, html) {
   const key = file.replaceAll('\\', '/');
   const hash = crypto.createHash('sha256').update(html).digest('hex');
   generatedPages[key] = { hash, modified: previousPages[key]?.hash === hash ? previousPages[key].modified : today };
-  fs.writeFileSync(file, html);
+  // Windows antivirus/indexers briefly lock files in this large generated tree.
+  // Retry only transient sharing errors, and still fail if the file stays locked.
+  for (let attempt = 0; ; attempt++) {
+    try { fs.writeFileSync(file, html); break; }
+    catch (error) {
+      if (process.platform !== 'win32' || !['UNKNOWN', 'EBUSY', 'EPERM'].includes(error.code) || attempt >= 5) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100 * (attempt + 1));
+    }
+  }
 }
 // One real page per product, and one per section. A #/p/... link says nothing to a crawler or to
 // Telegram - the fragment never reaches a server - and these used to be a meta refresh into the
@@ -712,7 +727,9 @@ a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{bo
 // path: the page's place under the site root ('p/apple-iphone-17/'), the same in every language
 const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')
   + `\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
-const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => `<!doctype html>
+const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
+  if (img === SITE + SEO.img) img = SITE + `images/social/better-am-${lang}.jpg`;
+  return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''}; base-uri 'none'; form-action 'none'">
@@ -728,11 +745,15 @@ ${path != null ? alts(path) : ''}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${img}">
+<meta property="og:image" content="${img}${img.endsWith('.jpg') && fs.existsSync(img.replace(SITE, '')) ? '?v=' + crypto.createHash('sha256').update(fs.readFileSync(img.replace(SITE, ''))).digest('hex').slice(0, 12) : ''}">
+${img.includes('/images/social/') ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">' : ''}
+<meta property="og:image:alt" content="${esc(title)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${img}">
 ${ld.map(ldJson).join('\n')}
 ${STYLE}
 </head><body>`;
+};
 const crumbs = list => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList',
   itemListElement: list.map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })) });
 

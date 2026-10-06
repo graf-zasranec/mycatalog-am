@@ -68,6 +68,14 @@ const is = (got, want, what) => {
 };
 
 /* --- search: every word counts, in any order ------------------------------------------ */
+prices.offers['zero-price-check'] = [
+  { price: 0, storage: 128 }, { price: '0', storage: 256 },
+  { price: -1, storage: 512 }, { price: 'unknown', storage: 1024 },
+  { price: 99000, storage: 64 }
+];
+is(app.offersFor({ id: 'zero-price-check' }).map(o => o.storage), [64],
+  'zero and invalid prices cannot become purchasable configuration options');
+delete prices.offers['zero-price-check'];
 const fold8 = phones.find(p => p.id === 'samsung-galaxy-z-fold-8');
 is(app.hayMatch(fold8, 'samsung fold'), true, 'two words, not contiguous, still match');
 is(app.hayMatch(fold8, 'fold samsung'), true, 'word order does not matter');
