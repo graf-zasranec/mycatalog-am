@@ -1301,7 +1301,9 @@ function syncFilters() {
     else if (k === 'pmin' || k === 'pmax') el.value = st[k];
     else if (el.type === 'radio') el.checked = String(st[k] ?? '') === el.value;
   });
-  $$('[data-cnt]').forEach(el => {
+  // Counts are expensive: each choice scans the catalogue. Closed panels do not need
+  // hundreds of scans during startup or a filter change; refresh them when opened.
+  $$('.fdrop[open] [data-cnt]').forEach(el => {
     // split on the FIRST colon only: a shop id or a brand is the rest of the string
     const d = el.dataset.cnt, i = d.indexOf(':'), k = d.slice(0, i), v = d.slice(i + 1);
     const f = FILT[k];
@@ -2870,6 +2872,13 @@ function moneyFx() {
 }
 
 /* ================= events ================= */
+document.addEventListener('toggle', e => {
+  const panel = e.target;
+  if (panel.matches?.('.fdrop') && panel.open) {
+    syncFilters();
+    if (!panel.classList.contains('r')) paintDraftCount(panel);
+  }
+}, true);
 document.addEventListener('click', e => {
   const compared = e.target.closest('[data-cmp-open]');
   if (compared) {
