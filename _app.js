@@ -41,6 +41,11 @@ const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
 // page itself) keep IMG. Falls back to the full size when no thumbnail was made, which is what
 // happens for a shot already at or under 600 px.
 const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(id);
+function thumbSet(id, sizes) {
+  const src = THUMB(id);
+  return /^images\/thumb\/.+\.webp$/.test(src)
+    ? `srcset="${esc(src.replace(/\.webp$/, '-240.webp'))} 240w, ${esc(src)} 480w" sizes="${esc(sizes)}"` : '';
+}
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
@@ -1465,7 +1470,7 @@ function dealCard(d, isSpot) {
     ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
     : `<span class="dl-save num">${esc(x('dealUsual').replace('{n}', money(d.below)))}</span>`;
   return `<a class="dl${isSpot ? ' is-spot' : ''}" href="#/p/${esc(p.id)}">
-    <span class="dl-im"><img src="${THUMB(p.id)}" alt="" width="480" height="480" loading="lazy" decoding="async"></span>
+    <span class="dl-im"><img src="${THUMB(p.id)}" ${thumbSet(p.id, '(max-width:640px) 45vw, 200px')} alt="" width="480" height="480" loading="lazy" decoding="async"></span>
     <small>${esc(cfg)}</small>
     <span class="dl-n">${esc(p.name)}${nameTag(p)}</span>
     <span class="dl-p num">${amd(d.lo)}</span>
@@ -1488,7 +1493,7 @@ function spotHTML(d) {
   const n = nx(d.shops, 'shops');
   return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
       ${eb}
-      <img src="${THUMB(p.id)}" alt="" width="480" height="480" fetchpriority="high" loading="eager" decoding="async">
+      <img src="${THUMB(p.id)}" ${thumbSet(p.id, '(max-width:999px) 104px, 170px')} alt="" width="480" height="480" fetchpriority="high" loading="eager" decoding="async">
       <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
       <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
         <b class="spot-p num">${amd(d.lo)}</b>

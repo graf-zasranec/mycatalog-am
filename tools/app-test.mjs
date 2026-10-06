@@ -319,9 +319,12 @@ is(app.counterPath(), '/', 'analytics rejects arbitrary product hashes');
 stub.location.hash = '#/p/apple-iphone-17?secret=private';
 is(app.counterPath(), '/#/p/apple-iphone-17', 'analytics retains only a known public product path');
 for (const signal of [{}, { doNotTrack: '1' }, { globalPrivacyControl: true }]) {
-  const scripts = [], win = {}, doc = { referrer: 'https://example.test/private?email=secret',
+  const scripts = [], timers = [], win = {addEventListener: (event, fn) => { if (event === 'load') win.loaded = fn; }}, doc = { referrer: 'https://example.test/private?email=secret',
     createElement: () => ({ dataset: {} }), head: { appendChild: script => scripts.push(script) } };
-  new Function('navigator', 'window', 'document', 'location', 'URL', goatScript('test'))(signal, win, doc, { pathname: '/' }, URL);
+  new Function('navigator', 'window', 'document', 'location', 'URL', 'setTimeout', goatScript('test'))(signal, win, doc, { pathname: '/' }, URL, fn => timers.push(fn));
+  is(scripts.length, 0, 'counter does not compete with the initial page load');
+  win.loaded?.();
+  for (const run of timers) run();
   is(scripts.length, Object.keys(signal).length ? 0 : 1, 'counter loader honors browser privacy signal ' + JSON.stringify(signal));
   if (scripts.length) {
     is(win.goatcounter.referrer(), 'https://example.test', 'counter omits private referrer path and query');

@@ -428,9 +428,13 @@ const HEAD_CLOSE = `</head><body>
 // the first paint see, and it is the line a search result prints.
 function seoTitle(shell) {
   // Font declarations are tiny; inline them so first paint needs no CSS round trip.
-  const fonts = rd('fonts/fonts.css').replace(/url\(([^)]+)\)/g, 'url(/fonts/$1)');
+  // A late font swap can re-wrap the headline and move the whole mobile hero.
+  const fonts = rd('fonts/fonts.css').replace(/url\(([^)]+)\)/g, 'url(/fonts/$1)')
+    .replaceAll('font-display:swap', 'font-display:optional').replaceAll('font-display: swap', 'font-display: optional');
+  const preload = ['noto-sans-armenian-armenian-16.woff2', 'manrope-latin-15.woff2', 'fraunces-text-19.woff2']
+    .map(f => `<link rel="preload" href="/fonts/${f}" as="font" type="font/woff2" crossorigin>`).join('');
   return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`)
-    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `<style>${fonts}</style>`);
+    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `${preload}<style>${fonts}</style>`);
 }
 
 function splitShell(shell) {
@@ -446,7 +450,7 @@ function build({ inline, standalone }) {
   const derived = fs.existsSync('data/thumbnails.json') ? JSON.parse(rd('data/thumbnails.json')) : {};
   const small = f => {
     const dest = derived[f];
-    if (!dest || !fs.existsSync(dest) || !fs.existsSync(f)) return f;
+    if (!dest || !fs.existsSync(dest) || !fs.existsSync(dest.replace(/\.webp$/, '-240.webp')) || !fs.existsSync(f)) return f;
     const digest = crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex').slice(0, 12);
     return dest.endsWith('-' + digest + '.webp') ? dest : f;
   };
@@ -479,7 +483,11 @@ function build({ inline, standalone }) {
   const realLinks = html => html.replace(/href="#\/p\/([^"#]+)"/g, 'href="/p/$1/" data-route="#/p/$1"')
     .replace(/href="#\/c\/([^"#]+)"/g, 'href="/c/$1/" data-route="#/c/$1"')
     .replace(/href="#\/blog(?:\/([^"#]+))?"/g, (_, id) => `href="/b/${id ? id + '/' : ''}" data-route="#/blog${id ? '/' + id : ''}"`);
-  const shell = seoTitle(rd('_shell.html'))
+  const heroImage = initial.hero.match(/<img\b[^>]*fetchpriority="high"[^>]*>/)?.[0] || '';
+  const heroSrcset = heroImage.match(/\bsrcset="([^"]+)"/)?.[1];
+  const heroSizes = heroImage.match(/\bsizes="([^"]+)"/)?.[1];
+  const heroPreload = heroSrcset ? `<link rel="preload" as="image" imagesrcset="${heroSrcset}" imagesizes="${heroSizes}" fetchpriority="high">` : '';
+  const shell = seoTitle(rd('_shell.html')).replace('</head>', `${heroPreload}</head>`)
     .replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1" data-prerender="hy">${realLinks(initial.main)}</main>`)
     .replace('id="masthero" hidden></div>', `id="masthero">${realLinks(initial.hero)}</div>`)
     .replace('id="nav"></nav>', `id="nav">${realLinks(initial.nav)}</nav>`)
