@@ -3,6 +3,7 @@ import json, os, re, sys
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 from PIL import Image
+from functools import lru_cache
 
 root = Path(__file__).resolve().parent.parent
 products = {p['id']: p for p in json.loads((root/'data/phones.json').read_text(encoding='utf8'))}
@@ -12,6 +13,14 @@ for folder in ['p','c','b','ru','en']:
     pages += list((root/folder).rglob('index.html'))
 errors = []
 def fail(file, why): errors.append({'file': str(file.relative_to(root)), 'error': why})
+
+@lru_cache(maxsize=None)
+def exists(path): return Path(path).exists()
+
+@lru_cache(maxsize=None)
+def is_file(path): return Path(path).is_file()
+
+def normalized(path): return os.path.abspath(path)
 def nodes(value):
     if isinstance(value, dict):
         yield value
@@ -30,7 +39,7 @@ for file in pages:
         if not parsed.path: continue
         target=(root/unquote(parsed.path).lstrip('/')) if parsed.netloc or parsed.path.startswith('/') else file.parent/unquote(parsed.path)
         if parsed.path.endswith('/'): target/='index.html'
-        if not target.exists(): fail(file,'Missing local '+attr+': '+url)
+        if not exists(normalized(target)): fail(file,'Missing local '+attr+': '+url)
     for script in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
         try: schema=json.loads(script)
         except json.JSONDecodeError as e: fail(file,'Invalid JSON-LD '+str(e)); continue
@@ -40,7 +49,7 @@ for file in pages:
             image=item.get('image')
             if isinstance(image,str):
                 imagepath=urlsplit(image).path.lstrip('/')
-                if not (root/imagepath).is_file(): fail(file,'Missing Product image: '+image)
+                if not is_file(normalized(root/imagepath)): fail(file,'Missing Product image: '+image)
                 if file.parent.parent.name=='p' and pid in products and pid not in imagepath: fail(file,'Product image belongs to another model')
             elif file.parent.parent.name=='p' and pid in products: fail(file,'Product has no actual image')
             offer=item.get('offers')
@@ -56,7 +65,7 @@ for url in re.findall(r'<loc>(.*?)</loc>',sitemap):
     path=urlsplit(url).path.lstrip('/')
     target=root/path
     if not path or path.endswith('/'): target/='index.html'
-    if not target.is_file(): fail(root/'sitemap.xml','Missing sitemap target '+url)
+    if not is_file(normalized(target)): fail(root/'sitemap.xml','Missing sitemap target '+url)
 result={'pages':len(pages),'imageFiles':len(images),'sitemapURLs':len(re.findall(r'<loc>',sitemap)),'errors':errors}
 out=next((a.split('=',1)[1] for a in sys.argv if a.startswith('--report=')),None)
 if out: Path(out).write_text(json.dumps(result,indent=2),encoding='utf8')
