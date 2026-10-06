@@ -921,6 +921,14 @@ function specAllowed(key, p) {
   return true;
 }
 const GROUPS = [
+  ['sec.appliance', [
+    ['f.appliance_type', p => p.appliance?.type && t('appliance.' + p.appliance.type)],
+    ['f.appliance_volume', p => p.appliance?.volume && new Intl.NumberFormat(st.lang).format(p.appliance.volume) + ' ' + t('appliance.litre')],
+    ['f.appliance_power', p => p.appliance?.power && money(p.appliance.power) + ' ' + u('w')],
+    ['f.appliance_temperature', p => p.appliance?.temperature],
+    ['f.appliance_programs', p => p.appliance?.programs],
+    ['f.appliance_control', p => p.appliance?.control && t('appliance.control.' + p.appliance.control)],
+  ]],
   ['sec.display', [
     ['f.screen_size', p => p.display.size + '″', p => p.display.size],
     ['f.screen_type', p => p.display.type],
@@ -993,6 +1001,9 @@ const GROUPS = [
 // those figures as fact. This says which field each spec row reads, so the ones that are not
 // certain are marked as not certain. A row with no entry here has nothing to be unsure about.
 const FIELD_OF = {
+  'f.appliance_type': 'appliance.type', 'f.appliance_volume': 'appliance.volume',
+  'f.appliance_power': 'appliance.power', 'f.appliance_temperature': 'appliance.temperature',
+  'f.appliance_programs': 'appliance.programs', 'f.appliance_control': 'appliance.control',
   'f.screen_size': 'display.size', 'f.screen_type': 'display.type', 'f.resolution': 'display.resolution',
   'f.refresh_rate': 'display.refresh', 'f.ppi': 'display.ppi', 'f.brightness': 'display.brightness',
   'f.protection': 'display.protection', 'f.touch': 'display.touch',

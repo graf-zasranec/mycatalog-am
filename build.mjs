@@ -725,6 +725,14 @@ const specRows = (p, l) => {
     [t.sk[2], b.capacity && `${b.capacity} ${p.category === 'laptop' ? 'Wh' : t.mah}`],
     [t.sk[3], w && `${w} ${t.g}`],
     [t.sk[4], p.released],
+    ...(['type', 'volume', 'power', 'temperature', 'programs', 'control'].map(key => {
+      const a = p.appliance || {}, v = a[key];
+      const value = key === 'type' ? STR[l]['appliance.' + v]
+        : key === 'control' ? STR[l]['appliance.control.' + v]
+        : key === 'volume' ? v && `${new Intl.NumberFormat(l).format(v)} ${STR[l]['appliance.litre']}`
+        : key === 'power' ? v && `${v} ${({hy:'Վտ',ru:'Вт',en:'W'})[l]}` : v;
+      return [STR[l]['f.appliance_' + key], value];
+    })),
   ].filter(([, v]) => v);
 };
 const STYLE = `<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}

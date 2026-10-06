@@ -66055,5 +66055,311 @@
       "chipset",
       "battery.capacity"
     ]
+  },
+  {
+    "id": "dreame-air-fryer-af30",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Air Fryer AF30",
+    "aliases": [
+      "Dreame Air Fryer AF30"
+    ],
+    "tier": "budget",
+    "priceAmd": 75900,
+    "priceAmdMax": 75900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 75900
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 7,
+      "power": 2300,
+      "temperature": "50–200 °C",
+      "programs": 12
+    },
+    "summaryEn": "Dreame Air Fryer AF30.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/air-fryer-dreame-af30-white"
+    ]
+  },
+  {
+    "id": "electrolux-air-fryer-eaf5b",
+    "category": "appliance",
+    "brand": "Electrolux",
+    "name": "Air Fryer EAF5B",
+    "aliases": [
+      "Electrolux Air Fryer EAF5B"
+    ],
+    "tier": "budget",
+    "priceAmd": 82900,
+    "priceAmdMax": 82900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 82900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 5,
+      "power": 1500,
+      "temperature": "60–200 °C",
+      "programs": 8
+    },
+    "summaryEn": "Electrolux Air Fryer EAF5B.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/electrolux-eaf5b"
+    ]
+  },
+  {
+    "id": "electrolux-air-fryer-eaf7b",
+    "category": "appliance",
+    "brand": "Electrolux",
+    "name": "Air Fryer EAF7B",
+    "aliases": [
+      "Electrolux Air Fryer EAF7B"
+    ],
+    "tier": "budget",
+    "priceAmd": 97900,
+    "priceAmdMax": 97900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 97900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 7,
+      "power": 1800,
+      "temperature": "60–200 °C",
+      "programs": 6
+    },
+    "summaryEn": "Electrolux Air Fryer EAF7B.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/electrolux-eaf7b"
+    ]
+  },
+  {
+    "id": "electrolux-air-fryer-eaf7sb",
+    "category": "appliance",
+    "brand": "Electrolux",
+    "name": "Air Fryer EAF7SB",
+    "aliases": [
+      "Electrolux Air Fryer EAF7SB"
+    ],
+    "tier": "budget",
+    "priceAmd": 108900,
+    "priceAmdMax": 108900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 108900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 7,
+      "power": 1700,
+      "temperature": "60–200 °C",
+      "programs": 6,
+      "control": "touch"
+    },
+    "summaryEn": "Electrolux Air Fryer EAF7SB.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/electrolux-eaf7sb"
+    ]
+  },
+  {
+    "id": "electrolux-air-fryer-eaf12b",
+    "category": "appliance",
+    "brand": "Electrolux",
+    "name": "Air Fryer EAF12B",
+    "aliases": [
+      "Electrolux Air Fryer EAF12B"
+    ],
+    "tier": "budget",
+    "priceAmd": 129900,
+    "priceAmdMax": 129900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 12,
+      "power": 1800,
+      "temperature": "30–200 °C",
+      "programs": 5,
+      "control": "touch"
+    },
+    "summaryEn": "Electrolux Air Fryer EAF12B.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/air-fryer-electrolux-eaf12b"
+    ]
+  },
+  {
+    "id": "tefal-easy-fry-compact-ey101815",
+    "category": "appliance",
+    "brand": "Tefal",
+    "name": "Easy Fry Compact EY101815",
+    "aliases": [
+      "Tefal Easy Fry Compact EY101815"
+    ],
+    "tier": "budget",
+    "priceAmd": 33900,
+    "priceAmdMax": 33900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 33900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 1.6,
+      "power": 1400,
+      "temperature": "≤ 200 °C",
+      "control": "mechanical"
+    },
+    "summaryEn": "Tefal Easy Fry Compact EY101815.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/tefal-ey101815-easy-fry-compact"
+    ]
+  },
+  {
+    "id": "electrolux-create-5-e5af1-4gb",
+    "category": "appliance",
+    "brand": "Electrolux",
+    "name": "Create 5 E5AF1-4GB",
+    "aliases": [
+      "Electrolux Create 5 E5AF1-4GB"
+    ],
+    "tier": "budget",
+    "priceAmd": 59900,
+    "priceAmdMax": 59900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 2.5,
+      "power": 1350,
+      "temperature": "80–200 °C",
+      "control": "mechanical"
+    },
+    "summaryEn": "Electrolux Create 5 E5AF1-4GB.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/electrolux-e5af1-4gb-create-5"
+    ]
+  },
+  {
+    "id": "philips-airfryer-hd9252-90",
+    "category": "appliance",
+    "brand": "Philips",
+    "name": "Airfryer HD9252/90",
+    "aliases": [
+      "Philips Airfryer HD9252/90"
+    ],
+    "tier": "budget",
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "volume": 4.1,
+      "power": 1400,
+      "programs": 7,
+      "control": "electronic"
+    },
+    "summaryEn": "Philips Airfryer HD9252/90.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://eldorado.am/am/philips-hd9252-90"
+    ]
   }
 ]
