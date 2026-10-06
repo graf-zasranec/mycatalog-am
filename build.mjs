@@ -325,9 +325,8 @@ const offerOf = p => {
 const SEO = {
   url: SITE,
   img: 'images/social/better-am-hy.jpg',
-  title: `Better.am: ${phones.length} սարքի գներ Հայաստանի խանութներում`,
-  desc: `Հեռախոսներ, նոութբուքեր, ականջակալներ և ժամացույցներ՝ ${phones.length} մոդել, `
-      + `${Object.keys(PRICES.shops || {}).length} խանութի գներ դրամով, համեմատում և զտիչներ։`,
+  title: 'Better.am — սարքերի գների համեմատություն Հայաստանում',
+  desc: 'Համեմատեք հեռախոսների, նոութբուքերի և այլ սարքերի գները Հայաստանի խանութներում։ Ընտրեք RAM-ը, հիշողությունն ու այլ տարբերակները և գտեք լավագույն առաջարկը Better.am-ում։',
   ld: {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -381,14 +380,14 @@ const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').di
 // and no destination off this site, so nothing the page holds can be sent anywhere.
 // frame-ancestors is NOT here: a meta element cannot deliver it and the browser logs an error
 // on every load. Clickjacking cover would need a real header, which GitHub Pages does not serve.
-// the brand kit's favicon (Fraunces "b.", dot on the baseline as in the wordmark), inlined: no extra request
-const FAVICON = 'data:image/svg+xml,' + encodeURIComponent(fs.readFileSync('images/favicon.svg', 'utf8').trim()).replace(/%20/g, ' ').replace(/%3D/g, '=').replace(/%3A/g, ':').replace(/%2F/g, '/');
+// A stable, crawlable square PNG lets search engines discover the brand icon.
+const FAVICON = SITE + 'images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="icon" href="${FAVICON}">
+<link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
 <meta name="description" content="${SEO.desc}">
 <link rel="canonical" href="${SEO.url}">
 <meta property="og:type" content="website">
@@ -410,7 +409,7 @@ const HEAD_OPEN = appJs => `<!doctype html>
 <meta name="twitter:image" content="${SEO.url}${SEO.img}">
 <script type="application/ld+json">${JSON.stringify([homeListLD('hy'),
   { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '#website', name: 'Better.am', alternateName: 'better.am', url: SITE, inLanguage: ['hy', 'ru', 'en'] },
-  { '@context': 'https://schema.org', '@type': 'Organization', '@id': SITE + '#organization', name: 'Better.am', url: SITE, logo: SITE + 'images/favicon.svg' }
+  { '@context': 'https://schema.org', '@type': 'Organization', '@id': SITE + '#organization', name: 'Better.am', url: SITE, logo: SITE + 'images/brand-icon-512.png' }
 ]).replace(/</g, String.fromCharCode(92) + "u003c")}<\/script>
 ${alts('')}
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -580,11 +579,21 @@ const AI_BOTS = [
   'MistralAI-User', 'DuckAssistBot', 'YouBot', 'Diffbot', 'AI2Bot', 'Ai2Bot-Dolma',
   'PanguBot', 'Timpibot', 'ImagesiftBot', 'Omgilibot', 'omgili', 'Kangaroo Bot', 'Webzio-Extended',
 ];
-fs.writeFileSync('robots.txt', AI_BOTS.map(b => `User-agent: ${b}`).join('\n') + `
+// Default-deny crawling also covers new/unknown AI user agents. Ordinary visitors
+// are unaffected. Search indexing and social link previews retain explicit access.
+const PUBLIC_CRAWLERS = ['Googlebot', 'Bingbot', 'YandexBot', 'DuckDuckBot', 'Applebot',
+  'facebookexternalhit', 'Facebot', 'Twitterbot', 'LinkedInBot', 'WhatsApp',
+  'TelegramBot', 'Discordbot', 'Slackbot', 'Pinterestbot'];
+fs.writeFileSync('robots.txt', '# AI training, AI search, agents and dataset crawlers are not permitted.\n'
+  + AI_BOTS.map(b => `User-agent: ${b}`).join('\n') + `
 Disallow: /
 
-User-agent: *
+${PUBLIC_CRAWLERS.map(b => `User-agent: ${b}`).join('\n')}
 Allow: /
+
+# All other automated crawlers must stay out.
+User-agent: *
+Disallow: /
 
 Sitemap: ${SITE}sitemap.xml
 `);
@@ -637,10 +646,10 @@ const homeContent = (lang, interactive = false, images = {}) => {
   const pre = PRE[lang], title = { hy: 'Սարքերի գների համեմատություն Հայաստանում', ru: 'Сравнение цен на электронику в Армении', en: 'Compare electronics prices in Armenia' }[lang];
   const method = { hy: 'Better.am-ը խանութ չէ։ Համեմատում ենք խանութների հրապարակած գները՝ նույն RAM-ի, հիշողության և այլ տարբերակների համար։ Գինը, առկայությունը, երաշխիքն ու վերադարձի պայմանները վերջնականապես ստուգեք խանութում։ Չճշտված բնութագրերը նշվում են որպես անորոշ։', ru: 'Better.am сравнивает опубликованные цены магазинов для одинаковых конфигураций RAM, накопителя и других параметров. Мы не продаём товары. Окончательную цену, наличие, гарантию и возврат уточняйте у магазина. Неподтверждённые характеристики отмечены.', en: 'Better.am compares shops’ published prices for matching RAM, storage and other configurations. We do not sell products. Confirm the final price, availability, warranty and returns with the shop. Unconfirmed specifications are marked.' }[lang];
   const products = phones.slice().sort((a, b) => b.popularity - a.popularity).slice(0, 50);
-  const cards = interactive ? `<div class="grid">${products.map(p => {
+  const cards = interactive ? `<div class="grid" data-nosnippet>${products.map(p => {
     const photo = images[p.id] || '';
     return `<article class="pcard"><div class="pshot">${photo ? `<img class="pimg" src="${esc(photo)}" alt="${esc(nameOf(p))}" loading="lazy" decoding="async">` : ''}</div><div class="pbody"><span class="eyebrow">${esc(p.brand || '')}</span><h2><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></h2><div class="pfoot"><span class="pprice num">${amd(bestOf(p))}</span></div></div></article>`;
-  }).join('')}</div>` : `<ul>${products.map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></li>`).join('')}</ul>`;
+  }).join('')}</div>` : `<div data-nosnippet><ul>${products.map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></li>`).join('')}</ul></div>`;
   return `<div class="shell${interactive ? ' boot-catalog' : ''}"><h1>${esc(title)}</h1><p class="boot-method">${esc(method)}</p><nav class="boot-categories" aria-label="Categories">${cats.map(c => `<a href="${pre}c/${c}/">${esc(catLabel(c, lang))}</a>`).join(interactive ? '' : ' · ')}</nav>${cards}<p><a href="${pre}b/">${esc(L[lang].blog)}</a></p></div>`;
 };
 // Armenian plural is the bare noun after any number, so one form is correct for all of them.
@@ -741,7 +750,7 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''}; base-uri 'none'; form-action 'none'">
-<link rel="icon" href="${FAVICON}">
+<link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
 <title>${esc(title)}</title>
 ${COUNTER.tag}
 <meta name="description" content="${esc(desc)}">

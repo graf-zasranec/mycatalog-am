@@ -20,7 +20,7 @@ export function prerender(data) {
     paintChrome();
     const all=results();
     return {hero:mastHero(), main:catalogView()
-      .replace('<div class="grid" id="gridbox"></div>','<div class="grid" id="gridbox">'+all.slice(0,PAGE).map(card).join('')+'</div>')
+      .replace('<div class="grid" id="gridbox" data-nosnippet></div>','<div class="grid" id="gridbox" data-nosnippet>'+all.slice(0,PAGE).map(card).join('')+'</div>')
       .replace('<div id="pager"></div>','<div id="pager">'+pager(all.length)+'</div>')
       .replace('id="rescnt"></span>','id="rescnt">'+all.length+'</span>')
       .replace('id="mbarn"></span>','id="mbarn">'+all.length+'</span>'),

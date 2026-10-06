@@ -19,6 +19,8 @@ images/*.jpeg
 images/*.webp
 images/*.avif
 images/*.zip
+!images/favicon-96.png
+!images/brand-icon-512.png
 
 # the resume stamp is local bookkeeping, not site content
 images/cut/.pipeline

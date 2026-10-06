@@ -59,6 +59,7 @@ function thumbSet(id, sizes) {
   return /^images\/thumb\/.+\.webp$/.test(src)
     ? `srcset="${esc(src.replace(/\.webp$/, '-240.webp'))} 240w, ${esc(src)} 480w" sizes="${esc(sizes)}"` : '';
 }
+const CARD_IMAGE_SIZE = '(max-width:520px) 140px, 190px';
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
@@ -270,7 +271,7 @@ function nameTag(p, scr) {
   if (YEAR_TAG.has(p.category)) {
     const y = p.year || +(String(p.released || '').match(/^(\d{4})/) || [])[1];
     // this year's model reads green (owner, 2026-09-24)
-    return y ? `<span class="ny num${y >= new Date().getFullYear() ? ' cur' : ''}">${y}</span>` : '';
+    return y ? `<span class="ny num${y >= new Date().getFullYear() ? ' cur' : ''}" data-nosnippet>${y}</span>` : '';
   }
   if (SIZE_TAG.has(p.category)) {
     const ss = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))].sort((a, b) => a - b);
@@ -1387,7 +1388,7 @@ function card(p) {
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-      <img class="pimg" src="${THUMB(p.id)}" alt="${esc(fullName(p))}" width="480" height="480" loading="lazy" decoding="async">
+      <img class="pimg" src="${THUMB(p.id)}" ${thumbSet(p.id, CARD_IMAGE_SIZE)} alt="${esc(fullName(p))}" width="480" height="480" loading="lazy" decoding="async">
       ${cdotsHTML(p)}
     </div>
     <div class="pbody">
@@ -1510,7 +1511,7 @@ function spotHTML(d) {
       ${eb}
       <img src="${THUMB(p.id)}" ${thumbSet(p.id, '(max-width:999px) 104px, 170px')} alt="" width="480" height="480" fetchpriority="high" loading="eager" decoding="async">
       <span class="spot-pct num">−${pct}%<small>${esc(x('dealUsual').replace('{n}', money(d.below)))}</small></span>
-      <span class="spot-bot"><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+      <span class="spot-bot" data-nosnippet><b class="spot-n" id="spotT">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
         <b class="spot-p num">${amd(d.lo)}</b>
         <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
     </a>`;
@@ -1536,7 +1537,7 @@ function mastHero() {
       <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
       ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}
     </div>
-    ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT">
+    ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT" data-nosnippet>
       <div class="dls-hd">
         <div><h2 id="dlsT">${esc(x('savingsT'))}</h2></div>
         <div class="dls-arr"><button type="button" data-dl="-1" aria-label="${esc(x('prevL'))}" disabled>${ICON_ARR_L}</button><button type="button" data-dl="1" aria-label="${esc(x('nextL'))}">${ICON_ARR_R}</button></div>
@@ -1680,7 +1681,7 @@ function catalogView() {
     ${filterBar()}
     <div class="chips" id="chips"></div>
     <div class="resbar" id="results"><${hd}>${esc(title)}</${hd}><span class="cnt" id="rescnt"></span></div>
-    <div class="grid" id="gridbox"></div>
+    <div class="grid" id="gridbox" data-nosnippet></div>
     <div id="pager"></div>
   </div>`;
 }
@@ -1971,9 +1972,19 @@ function cardShow(btn) {
   shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', b === btn));
   const card = btn.closest('.pcard'), name = card && card.querySelector('h2 a');
   const want = btn.dataset.cdot, pre = new Image();
+  if (/^images\/thumb\/.+\.webp$/.test(want)) {
+    pre.srcset = `${want.replace(/\.webp$/, '-240.webp')} 240w, ${want} 480w`;
+    pre.sizes = CARD_IMAGE_SIZE;
+  }
   pre.src = want;
   img.classList.add('out');
   const swap = () => { if (img.dataset.cur !== want) return;
+    // Change responsive candidates together with the colour, otherwise the browser
+    // can keep displaying the previous colour from its old srcset.
+    if (/^images\/thumb\/.+\.webp$/.test(want)) {
+      img.srcset = `${want.replace(/\.webp$/, '-240.webp')} 240w, ${want} 480w`;
+      img.sizes = CARD_IMAGE_SIZE;
+    } else { img.removeAttribute('srcset'); img.removeAttribute('sizes'); }
     img.src = want; img.alt = (name ? name.textContent + ', ' : '') + btn.dataset.cname; img.classList.remove('out'); };
   const ready = pre.decode ? pre.decode() : new Promise((resolve, reject) => {
     pre.onload = resolve; pre.onerror = reject;

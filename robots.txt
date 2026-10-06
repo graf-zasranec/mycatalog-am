@@ -1,3 +1,4 @@
+# AI training, AI search, agents and dataset crawlers are not permitted.
 User-agent: GPTBot
 User-agent: ChatGPT-User
 User-agent: OAI-SearchBot
@@ -36,7 +37,24 @@ User-agent: Kangaroo Bot
 User-agent: Webzio-Extended
 Disallow: /
 
-User-agent: *
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: YandexBot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: WhatsApp
+User-agent: TelegramBot
+User-agent: Discordbot
+User-agent: Slackbot
+User-agent: Pinterestbot
 Allow: /
+
+# All other automated crawlers must stay out.
+User-agent: *
+Disallow: /
 
 Sitemap: https://better.am/sitemap.xml
