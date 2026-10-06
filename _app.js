@@ -3,6 +3,26 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const MAXCMP = 4;
+// Real URLs remain crawlable and work when copied or opened in another tab.
+// Ordinary clicks still use the existing client router without downloading the page.
+function canonicalLinks(root = document) {
+  const pre = st.lang === 'hy' ? '/' : '/' + st.lang + '/';
+  for (const a of root.querySelectorAll('a[href^="#/"]')) {
+    const route = a.getAttribute('href');
+    let path = null, m;
+    if ((m = route.match(/^#\/p\/([^/]+)$/)) && byId(m[1])) path = 'p/' + m[1] + '/';
+    else if ((m = route.match(/^#\/c\/([^/]+)$/)) && DATA.some(p => catOf(p) === m[1])) path = 'c/' + m[1] + '/';
+    else if (route === '#/blog') path = 'b/';
+    else if ((m = route.match(/^#\/blog\/([^/]+)$/)) && BLOG.some(b => b.id === m[1])) path = 'b/' + m[1] + '/';
+    if (path !== null) { a.dataset.route = route; a.setAttribute('href', pre + path); }
+  }
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-route]');
+  if (!a || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || a.hasAttribute('download') || (a.target && a.target !== '_self')) return;
+  e.preventDefault();
+  location.hash = a.dataset.route;
+}, true);
 const OFFER_PEEK = 5;   // shops in the product page's price table; the rest are one link away, on the offers page
 // An explicit way back. An anchor to the logical parent, not history.back(), so it still
 // works when someone opens a product or offers link directly.
@@ -275,14 +295,24 @@ const shopSite = k => (P.shops && P.shops[k] && P.shops[k].site) || '#';
 const realFor = (p, storage) => { const o = offersFor(p).find(o => o.storage === storage); return o ? o.price : null; };
 // A missing RAM value is inferred only when this capacity/screen has one known RAM build.
 // It must never borrow the cheapest 8 GB offer for a selected 16 GB configuration.
+const offerConfigCache = new WeakMap();
 function offerConfig(p, o) {
+  let cache = offerConfigCache.get(p);
+  if (!cache || cache.variants !== p.variants || cache.cpu !== p.chipset?.name) {
+    cache = { variants: p.variants, cpu: p.chipset?.name, offers: new WeakMap() };
+    offerConfigCache.set(p, cache);
+  }
+  const prior = cache.offers.get(o);
+  if (prior && prior.ram === o.ram && prior.storage === o.storage && prior.size === o.size && prior.cpu === o.cpu) return prior.config;
   const variants = (p.variants || []).filter(v =>
     (o.storage == null || v.storage === o.storage) &&
     (o.size == null || v.size == null || v.size === o.size));
   const one = key => { const values = [...new Set(variants.map(v => v[key]).filter(v => v != null))];
     return values.length === 1 ? values[0] : null; };
   const fixedCPU = p.category === 'laptop' && !/\//.test(p.chipset?.name || '') ? p.chipset?.name : null;
-  return { ...o, ram: o.ram ?? one('ram'), storage: o.storage ?? one('storage'), size: o.size ?? one('size'), cpu: o.cpu ?? one('cpu') ?? fixedCPU ?? null };
+  const config = { ...o, ram: o.ram ?? one('ram'), storage: o.storage ?? one('storage'), size: o.size ?? one('size'), cpu: o.cpu ?? one('cpu') ?? fixedCPU ?? null };
+  cache.offers.set(o, { ram: o.ram, storage: o.storage, size: o.size, cpu: o.cpu, config });
+  return config;
 }
 function configPool(p) {
   const hasRAM = (p.variants || []).some(v => v.ram != null);
@@ -318,6 +348,7 @@ function selectionOffers(p, sel) {
   });
 }
 const catalogOffers = (p, s = st) => offersFor(p).filter(o => {
+  if (!s.ram && !s.stor) return !(s.shops || []).length || s.shops.includes(o.shop);
   const c = offerConfig(p, o);
   return (!s.ram || c.ram >= s.ram) && (!s.stor || c.storage >= s.stor)
     && (!(s.shops || []).length || s.shops.includes(o.shop));
@@ -993,7 +1024,7 @@ function paintChrome() {
   // the nav is for is the two places you cannot otherwise reach: the chooser, which is where
   // "Catalog" now goes, and the comparison.
   $('#nav').innerHTML =
-    `<a href="#/construct" ${h === '/construct' ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
+    `<a href="#/catalog" ${['/catalog', '/construct'].includes(h) ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${x('navCmpShort') ? `<span class="nl">${esc(t('nav.compare'))}</span><span class="ns">${esc(x('navCmpShort'))}</span>` : esc(t('nav.compare'))}`
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
     + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
@@ -1709,6 +1740,7 @@ function refresh() {
   const tabs = $('.ctabs');
   if (tabs) tabs.outerHTML = catTabs();
   syncFilters(); save();
+  canonicalLinks();
   moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
 }
 
@@ -2732,6 +2764,8 @@ function render(keepScroll) {
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');
+  const initialHome = !painted && h === '/' && main.dataset.prerender === st.lang &&
+    !st.q && !activeFilterCount() && !st.cmp.length && st.sort === 'popular' && st.page === 1;
   if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
     const y = window.scrollY;
@@ -2749,7 +2783,7 @@ function render(keepScroll) {
     document.title = (a ? (a[st.lang] || a.en).title : t('nav.blog')) + ' | Better.am';
     window.scrollTo(0, 0);
   }
-  else if (h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' | Better.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
+  else if (h === '/catalog' || h === '/construct') { main.innerHTML = constructView(); document.title = t('construct.title') + ' | Better.am'; window.scrollTo(0, keepScroll ? window.scrollY : 0); }
   else if (h === '/compare') { main.innerHTML = compareView(); document.title = t('compare.title') + ' | Better.am'; window.scrollTo(0, 0); }
   else if (h === '/search') {
     main.innerHTML = catalogView(); refresh();
@@ -2757,10 +2791,11 @@ function render(keepScroll) {
     window.scrollTo(0, keepScroll ? window.scrollY : 0);
   }
   else {
-    main.innerHTML = catalogView(); refresh();
+    if (!initialHome) { main.innerHTML = catalogView(); refresh(); }
     // the section row scrolls sideways; the one you are in may sit past the edge or under "More"
     const on = $('.ctabs .on'); if (on) on.parentNode.scrollLeft = on.offsetLeft - on.parentNode.offsetLeft - 14;
-    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) + ' | ' : '') + 'Better.am';
+    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) :
+      ({hy:'Սարքերի գների համեմատություն Հայաստանում',ru:'Сравнение цен на технику в Армении',en:'Compare product prices in Armenia'})[st.lang]) + ' | Better.am';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
     // to the front page landed ~1480px past where you left, while a category page was exact.
@@ -2775,12 +2810,13 @@ function render(keepScroll) {
   painted = true;
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && !['/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
+  const home = !m && !mc && !['/catalog', '/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
   mh.hidden = !home;
-  mh.innerHTML = home ? mastHero() : '';
+  if (!initialHome) mh.innerHTML = home ? mastHero() : '';
   if (home) requestAnimationFrame(dealEdges);
   if (restoreY !== null) window.scrollTo(0, restoreY);
   paintHist();
+  canonicalLinks();
   moneyFx();
 }
 
@@ -2844,7 +2880,7 @@ document.addEventListener('click', e => {
   if (cd) { cardShow(cd); return; }
   const card = e.target.closest('.pcard');
   if (card && !e.target.closest('a,button')) {
-    const link = card.querySelector('h2 a[href^="#/p/"]');
+    const link = card.querySelector('h2 a[href^="#/p/"], h2 a[data-route^="#/p/"]');
     if (link) { location.hash = link.getAttribute('href'); return; }
   }
   const act = e.target.closest('[data-act]');
@@ -2926,7 +2962,7 @@ document.addEventListener('click', e => {
       if (f) st[f.arr] = (st[f.arr] || []).filter(v => v !== k.slice(i + 1));
     }
     else st[k] = D[k] ?? 0;
-    if (location.hash === '#/construct') { save(); $('#main').innerHTML = constructView(); return; }
+    if (['#/catalog', '#/construct'].includes(location.hash)) { save(); $('#main').innerHTML = constructView(); return; }
     // Let the chip collapse before the grid moves underneath it, so the reflow reads as caused
     // by the dismissal rather than as the page jumping. Reduced motion skips the wait entirely.
     const slow = k !== 'all' && rm.classList.contains('chip')
@@ -3072,6 +3108,7 @@ function paintSuggest() {
     + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
   box.hidden = false;
   setExpanded(true);
+  canonicalLinks(box);
 }
 function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
 // the combobox has to SAY whether its list is open; it was announced closed the whole time
@@ -3159,5 +3196,5 @@ window.addEventListener('hashchange', e => {
 });
 let vtFrom = null;
 // only a click that opens the product arms the morph - not the card's compare button
-document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('.pcard a[href^="#/p/"]'); vtFrom = a ? a.closest('.pcard').querySelector('.pimg') : null; }, true);
+document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('.pcard a[href^="#/p/"], .pcard a[data-route^="#/p/"]'); vtFrom = a ? a.closest('.pcard').querySelector('.pimg') : null; }, true);
 render();

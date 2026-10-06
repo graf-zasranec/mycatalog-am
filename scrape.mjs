@@ -1155,7 +1155,8 @@ if (process.argv[2] === '--selftest') {
   const TAB = 'apple-ipad-air-11-m4', TV = 'xiaomi-a-43-2026';
   for (const [txt, id, want] of [['iPad Air 13 M4 128GB WiFi 2026 Blue', TAB, 13], ['Apple iPad Pro 11/M5/ WIFI/256gb Black', TAB, 11],
       ['Apple iPad Pro 12.9 M2 128GB Cell SpaceGray', TAB, 12.9], ['iPad Air 11 128GB Wi-Fi 2024 Purple', TAB, 11],
-      ['iPad Air M4 128GB', TAB, undefined], ['Smart TV XIAOMI A 50 2026 (L50MB-ARU)', TV, 50],
+      ['iPad Air M4 128GB', TAB, undefined], ['Fire HD 10 Kids 32GB/11Gen', TAB, undefined],
+      ['Fire HD 10 Kids 32GB/13Gen', TAB, undefined], ['Smart TV XIAOMI A 50 2026 (L50MB-ARU)', TV, 50],
       ['Xiaomi TV A Pro 55 2026 QLED', TV, 55], ['Smart TV Samsung QE43Q60BA 4K UHD', TV, undefined]]) {
     const got = screenOf(txt, id);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
@@ -1319,7 +1320,7 @@ function screenOf(title, id) {
   // "iPad Air 13 M4", "iPad Pro 11/M5/", "iPad Pro 12.9 M2". Here "11/M5" IS the screen - a
   // tablet's memory never comes first - so only a slash before a digit rules a number out.
   if (cat === 'tablet') {
-    const m = String(title || '').match(/\b(10[.,]9|12[.,]9|11|13)(?![\d.,])(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\d))/i);
+    const m = String(title || '').match(/\b(10[.,]9|12[.,]9|11|13)(?![\d.,])(?!\s*(?:GB|TB|ԳԲ|ՏԲ|Gen\b|Generation\b|\/\d))/i);
     return m ? parseFloat(m[1].replace(',', '.')) : undefined;
   }
   // A TV's diagonal is in its model code (Xiaomi "L43MB", "L55MB") or written out ("A Pro 43").

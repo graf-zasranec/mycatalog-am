@@ -56971,7 +56971,10 @@
     "colors": [
       "Deep Blue",
       "Midnight Black"
-    ]
+    ],
+    "body": {
+      "weight": 52.4
+    }
   },
   {
     "id": "xiaomi-redmi-band-9-pro",
@@ -57249,10 +57252,14 @@
     "accent": "#5C6470",
     "variants": [],
     "display": {
-      "size": 14,
-      "resolution": "3024x1964"
+      "size": 14.2,
+      "resolution": "3024x1964",
+      "type": "Liquid Retina XDR",
+      "refresh": 120
     },
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "Apple MacBook Pro 14 M3.",
     "unsure": [
       "popularity",
@@ -57266,6 +57273,9 @@
     ],
     "chipset": {
       "name": "Apple M3"
+    },
+    "body": {
+      "weight": 1550
     }
   },
   {
@@ -57355,10 +57365,14 @@
       }
     ],
     "display": {
-      "size": 13,
-      "resolution": "2560x1664"
+      "size": 13.6,
+      "resolution": "2560x1664",
+      "type": "IPS",
+      "brightness": 500
     },
-    "battery": {},
+    "battery": {
+      "capacity": 52.6
+    },
     "summaryEn": "Apple MacBook Air 13 M2.",
     "unsure": [
       "popularity",
@@ -57371,6 +57385,12 @@
     ],
     "chipset": {
       "name": "Apple M2"
+    },
+    "body": {
+      "weight": 1240
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
     }
   },
   {
@@ -58607,6 +58627,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 23900
     }
   },
   {
@@ -58641,6 +58664,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 12320
     }
   },
   {
@@ -58675,6 +58701,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 26600
     }
   },
   {
@@ -58706,6 +58735,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 31000
     }
   },
   {
@@ -58741,6 +58773,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 2200
     }
   },
   {
@@ -58848,6 +58883,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 25500
     }
   },
   {
@@ -58917,6 +58955,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 7620
     }
   },
   {
@@ -58988,6 +59029,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 5890
     }
   },
   {
@@ -59058,6 +59102,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4900
     }
   },
   {
@@ -59092,6 +59139,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 4900
     }
   },
   {
@@ -59229,6 +59279,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 6400
     }
   },
   {
@@ -59265,6 +59318,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 2800
     }
   },
   {
@@ -59331,6 +59387,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 11200
     }
   },
   {
@@ -59403,6 +59462,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 680
     }
   },
   {
@@ -59544,6 +59606,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 1470
     }
   },
   {
@@ -59578,6 +59643,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 1200
     }
   },
   {
@@ -59647,6 +59715,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 650
     }
   },
   {
@@ -59681,6 +59752,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.1"
+    },
+    "body": {
+      "weight": 930
     }
   },
   {
@@ -59718,6 +59792,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 1370
     }
   },
   {
@@ -59789,6 +59866,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.1"
+    },
+    "body": {
+      "weight": 520
     }
   },
   {
@@ -59825,6 +59905,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 800
     }
   },
   {
@@ -59897,6 +59980,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 181
     }
   },
   {
@@ -59936,6 +60022,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 597
     }
   },
   {
@@ -60005,6 +60094,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 274
     }
   },
   {
@@ -60067,6 +60159,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.1"
+    },
+    "body": {
+      "weight": 460
     }
   },
   {
@@ -60102,6 +60197,9 @@
     ],
     "connectivity": {
       "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 253
     }
   },
   {
@@ -60634,6 +60732,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 278
     }
   },
   {
@@ -60716,6 +60817,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 250
     }
   },
   {
@@ -60759,6 +60863,9 @@
     },
     "connectivity": {
       "bluetooth": "5.1"
+    },
+    "body": {
+      "weight": 240
     }
   },
   {
@@ -61001,6 +61108,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 278
     }
   },
   {
@@ -61041,6 +61151,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wireless over a 2.4 GHz USB dongle; no Bluetooth (maker spec, 2026-10-03)"
+    },
+    "body": {
+      "weight": 260
     }
   },
   {
@@ -61370,6 +61483,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired USB / 3.5 mm gaming headset, no Bluetooth (jbl.com, 2026-10-03)"
+    },
+    "body": {
+      "weight": 369
     }
   },
   {
@@ -61409,6 +61525,9 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 9.8
     }
   },
   {
@@ -61526,6 +61645,9 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 5.28
     }
   },
   {
@@ -61684,6 +61806,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wireless over a 2.4 GHz USB dongle; no Bluetooth (maker spec, 2026-10-03)"
+    },
+    "body": {
+      "weight": 357
     }
   },
   {
@@ -61883,6 +62008,9 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 8.5
     }
   },
   {
@@ -62002,6 +62130,9 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 4.73
     }
   },
   {
@@ -62041,6 +62172,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wireless over a 2.4 GHz USB dongle; no Bluetooth (maker spec, 2026-10-03)"
+    },
+    "body": {
+      "weight": 252
     }
   },
   {
@@ -62119,6 +62253,9 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 4.35
     }
   },
   {
@@ -62158,6 +62295,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 7.39
     }
   },
   {
@@ -62197,6 +62337,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.8
     }
   },
   {
@@ -62274,6 +62417,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 219
     }
   },
   {
@@ -62313,6 +62459,9 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 4
     }
   },
   {
@@ -62397,6 +62546,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 196
     }
   },
   {
@@ -62710,6 +62862,9 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 124.5
     }
   },
   {
@@ -62868,6 +63023,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
+    },
+    "body": {
+      "weight": 165
     }
   },
   {
@@ -62944,6 +63102,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
+    },
+    "body": {
+      "weight": 21.5
     }
   },
   {
@@ -62987,6 +63148,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
+    },
+    "body": {
+      "weight": 116.8
     }
   },
   {
@@ -63108,6 +63272,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
+    },
+    "body": {
+      "weight": 105
     }
   },
   {
@@ -63148,6 +63315,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
+    },
+    "body": {
+      "weight": 120
     }
   },
   {
@@ -63232,6 +63402,9 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
+    },
+    "body": {
+      "weight": 150
     }
   },
   {
@@ -64286,9 +64459,12 @@
     "display": {
       "size": 13.6,
       "resolution": "2560x1664",
-      "type": "LCD"
+      "type": "LCD",
+      "brightness": 500
     },
-    "battery": {},
+    "battery": {
+      "capacity": 52.6
+    },
     "summaryEn": "Apple MacBook Air 13 M3.",
     "unsure": [
       "popularity",
@@ -64297,7 +64473,12 @@
     "chipset": {
       "name": "Apple M3"
     },
-    "body": {}
+    "body": {
+      "weight": 1240
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hp-15-6-core-5-120u-a5cv9ea",
@@ -65810,6 +65991,9 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 200
     }
   },
   {

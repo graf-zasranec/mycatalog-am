@@ -10,6 +10,7 @@ import path from 'node:path';
 import { pairs } from './tools/pairs.mjs';
 import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { goatScript } from './tools/analytics.mjs';
+import { prerender } from './tools/prerender.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const STR = { hy: {}, ru: {}, en: {} };
@@ -435,7 +436,15 @@ function build({ inline, standalone }) {
   // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
   // Cards show the very photo the product page shows (owner, 2026-10-02): a separate thumbnail
   // set kept drifting out of step with it, so there is none - THUMB() falls through to IMG().
-  const colorThumbs = {};
+  const derived = fs.existsSync('data/thumbnails.json') ? JSON.parse(rd('data/thumbnails.json')) : {};
+  const small = f => {
+    const dest = derived[f];
+    if (!dest || !fs.existsSync(dest) || !fs.existsSync(f)) return f;
+    const digest = crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex').slice(0, 12);
+    return dest.endsWith('-' + digest + '.webp') ? dest : f;
+  };
+  const colorThumbs = inline ? {} : Object.fromEntries(Object.entries(colors).map(([id, shots]) =>
+    [id, Object.fromEntries(Object.entries(shots).map(([color, f]) => [color, small(f)]))]));
   const at = f => inline ? 'data:image/webp;base64,' + fs.readFileSync(f).toString('base64') : f;
   const main = {}, thumb = {};
   for (const p of [...phones, ...(COMING.items || [])]) {
@@ -449,6 +458,7 @@ function build({ inline, standalone }) {
       || Object.values(colors[p.id] || {})[0];
     if (!first && !fs.existsSync(cut)) { console.warn('  ! missing image for', p.id); continue; }
     main[p.id] = first || at(cut);
+    if (!inline) thumb[p.id] = small(main[p.id]);
     // The embedded build carries every photo as a data URI. Inlining a second copy of all 198
     // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
     // THUMB() falls through to IMG().
@@ -456,7 +466,18 @@ function build({ inline, standalone }) {
   }
   const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
-  const shell = seoTitle(rd('_shell.html')).replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1">${homeContent('hy', true, inline ? {} : main)}</main>`);
+  const initial = prerender({DATA:phones, STR, PRICES, TERMS, HISTORY, COMING, PAGEONLY, MERGED, BLOG,
+    DROPS, IMGDATA:main, THUMBDATA:thumb, COLORIMG:colors, COLORTHUMB:colorThumbs,
+    COMPARE_WITH:pairs(phones, PRICES.offers || {}), PBOX:JSON.parse(rd('data/photo-box.json'))});
+  const realLinks = html => html.replace(/href="#\/p\/([^"#]+)"/g, 'href="/p/$1/" data-route="#/p/$1"')
+    .replace(/href="#\/c\/([^"#]+)"/g, 'href="/c/$1/" data-route="#/c/$1"')
+    .replace(/href="#\/blog(?:\/([^"#]+))?"/g, (_, id) => `href="/b/${id ? id + '/' : ''}" data-route="#/blog${id ? '/' + id : ''}"`);
+  const shell = seoTitle(rd('_shell.html'))
+    .replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1" data-prerender="hy">${realLinks(initial.main)}</main>`)
+    .replace('id="masthero" hidden></div>', `id="masthero">${realLinks(initial.hero)}</div>`)
+    .replace('id="nav"></nav>', `id="nav">${realLinks(initial.nav)}</nav>`)
+    .replace('id="langs"></span>', `id="langs">${initial.langs}</span>`)
+    .replace('id="foot"></div>', `id="foot">${initial.foot}</div>`);
   // the script BODY is hashed for the CSP, so it is built once and wrapped separately
   // The verdict sentences and the price history are read on a PRODUCT page and nowhere else,
   // and together they are 531 KB of the 3.26 MB this file makes a browser parse before it can
@@ -475,7 +496,11 @@ function build({ inline, standalone }) {
   const products = `const DATA=${J(phones.map(({ summaryEn, sources, ...p }) => p))};\n`
     + `const COMPARE_WITH=${J(pairs(phones, PRICES.offers || {}))};\n`
     + `const PBOX=${fs.existsSync('data/photo-box.json') ? J(JSON.parse(rd('data/photo-box.json'))) : '{}'};\n`;
-  const prices = `const PRICES=${J(PRICES)};\nconst DROPS=${J(DROPS)};\n`;
+  // Scraper evidence stays in prices.json; the browser uses the verified image maps,
+  // never the shop's raw image URLs or titles. Don't download those a second time.
+  const browserPrices = { ...PRICES, offers: Object.fromEntries(Object.entries(PRICES.offers || {}).map(([id, list]) =>
+    [id, list.map(({ image, title, ...offer }) => offer)])) };
+  const prices = `const PRICES=${J(browserPrices)};\nconst DROPS=${J(DROPS)};\n`;
   let ext = '';
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
@@ -632,7 +657,7 @@ const L = {
     cgo: 'Filter and compare on Better.am', models: 'Models and prices',
     blog: 'Blog', bdesc: 'Articles on prices, comparing and choosing tech.', read: 'Read on Better.am', sources: 'Sources: ' },
 };
-const DESC = (p, l = 'hy') => L[l].desc(amd(bestOf(p)), shopsOf(p));
+const DESC = (p, l = 'hy') => nameOf(p) + '. ' + L[l].desc(amd(bestOf(p)), shopsOf(p));
 const homeListLD = lang => ({ ...SEO.ld, itemListElement: SEO.ld.itemListElement.map(entry => {
   const p = phones.find(p => entry.item.url === SITE + 'p/' + p.id + '/');
   return { ...entry, item: { ...entry.item, ...(p ? { description: DESC(p, lang) } : {}) } };
@@ -758,7 +783,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
   // priced products or more: every product with its cheapest price, linking to its own page.
   const listPage = ({ list, path, label, trail, appHash, brands = [] }) => {
     const R = '../'.repeat(path.split('/').length - 1 + (pre ? 1 : 0)), url = home + path;
-    const desc = t.cdesc(list.length, amd(Math.min(...list.map(bestOf))));
+    const desc = label + '. ' + t.cdesc(list.length, amd(Math.min(...list.map(bestOf))));
     const page = HEAD({ title: t.ctitle(label), desc, url, img: SITE + SEO.img,
       ld: [crumbs([['Better.am', SITE + app], ...trail.map(([n, u]) => [n, home + u]), [label, url]])], lang, path }) + `
 <header><a href="${R}${app}">Better.am</a></header>
@@ -826,8 +851,7 @@ if (BLOG.length) for (const lang of LANGS) {
 `);
   sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
   // an article taken out of data/blog.json takes its page with it, or the old url stays live
-  for (const d of fs.readdirSync(`${pre}b`, { withFileTypes: true }))
-    // The checked output pruner below removes obsolete index pages after generation.
+  // The checked output pruner below removes obsolete index pages after generation.
   for (const a of BLOG) {
     const A = a[lang], url = `${bUrl}${a.id}/`;
     const articleImage = a.cover && fs.existsSync(a.cover) ? a.cover : fs.existsSync(`images/blog/${a.id}.jpg`) ? `images/blog/${a.id}.jpg` : null;
