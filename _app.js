@@ -1632,7 +1632,7 @@ setInterval(() => {
 const counterPath = () => {
   const h = location.hash.slice(1).split('?')[0];
   const m = h.match(/^\/(p|offers)\/([^/]+)$/);
-  const path = m && byId(m[2]) ? h : /^\/(compare|search|privacy|terms|contact|blog)$/.test(h) ? h
+  const path = m && byId(m[2]) ? h : /^\/(catalog|compare|search|privacy|terms|contact|blog)$/.test(h) ? h
     : /^\/c\/[a-z]+$/.test(h) ? h : '/';
   return location.pathname + (path === '/' ? '' : '#' + path);
 };
@@ -1641,7 +1641,8 @@ const countView = () => {
     if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
     // Analytics receives public routes only, never search text, arbitrary hashes or titles.
     window.umami?.track?.();
-    window.goatcounter?.count?.({ path: counterPath(), title: 'Better.am', event: false });
+    if (window.betterGoatCount) window.betterGoatCount(counterPath());
+    else window.goatcounter?.count?.({ path: counterPath(), title: 'Better.am', event: false });
   } catch (e) { }
 };
 

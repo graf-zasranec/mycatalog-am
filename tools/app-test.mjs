@@ -314,6 +314,8 @@ is(app.keepsQuery('/c/phone'), false, 'nor does a category');
 stub.location.pathname = '/';
 stub.location.hash = '#/search?email=private@example.test';
 is(app.counterPath(), '/#/search', 'analytics omits search parameters');
+stub.location.hash = '#/catalog';
+is(app.counterPath(), '/#/catalog', 'analytics distinguishes the catalogue from the homepage');
 stub.location.hash = '#/p/private@example.test';
 is(app.counterPath(), '/', 'analytics rejects arbitrary product hashes');
 stub.location.hash = '#/p/apple-iphone-17?secret=private';
@@ -329,6 +331,16 @@ for (const signal of [{}, { doNotTrack: '1' }, { globalPrivacyControl: true }]) 
   if (scripts.length) {
     is(win.goatcounter.referrer(), 'https://example.test', 'counter omits private referrer path and query');
     is(win.goatcounter.title, 'Better.am', 'counter never sends a search-derived title');
+    is(win.goatcounter.no_onload, true, 'counter avoids an automatic duplicate homepage view');
+    win.betterGoatCount('/#/p/apple-iphone-17');
+    win.betterGoatCount('/#/compare');
+    const views = [];
+    win.goatcounter.count = view => views.push(view);
+    scripts[0].onload();
+    is(views.map(view => view.path).join(','), '/#/p/apple-iphone-17,/#/compare', 'counter preserves product and route views before its library loads');
+    win.betterGoatCount('/#/c/laptop');
+    is(views.length, 3, 'counter sends each later navigation exactly once');
+    is(views.every(view => view.title === 'Better.am'), true, 'queued and live counter views never expose search-derived titles');
   }
 }
 console.log(bad ? `${bad} of ${n} app checks FAILED` : `app self-test: ${n} checks pass`);
