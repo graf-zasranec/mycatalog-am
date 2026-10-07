@@ -356,7 +356,7 @@ const SEO = {
 // below. data/analytics.json: { "provider": "umami", "id": "<site id>", "host": "<origin>" }
 // or { "provider": "goatcounter", "id": "<your code>" }.
 const AN = fs.existsSync('data/analytics.json') ? JSON.parse(rd('data/analytics.json')) : null;
-const COUNTER = !AN ? { tag: '', script: [], connect: [], img: [] }
+const COUNTER = !AN?.provider ? { tag: '', script: [], connect: [], img: [] }
   : AN.provider === 'umami' ? {
       tag: `<script defer src="${AN.host || 'https://cloud.umami.is'}/script.js" data-website-id="${AN.id}"><\/script>`,
       script: [AN.host || 'https://cloud.umami.is'], connect: [AN.host || 'https://cloud.umami.is'], img: [] }
@@ -372,14 +372,6 @@ if (AN?.googleMeasurementId) {
   COUNTER.script.push('https://www.googletagmanager.com');
   COUNTER.connect.push('https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.googletagmanager.com');
   fs.writeFileSync('data/site-google-analytics.js', rd('tools/google-analytics.js').replaceAll('G-VN0T8DTQWX', AN.googleMeasurementId));
-}
-if (AN?.yandexCounterId) {
-  if (!/^\d+$/.test(String(AN.yandexCounterId))) throw new Error('Invalid Yandex Metrica counter ID');
-  COUNTER.tag += '\n<script defer src="/data/site-yandex-analytics.js"><\/script>';
-  COUNTER.script.push('https://mc.yandex.ru', 'https://mc.yandex.com');
-  COUNTER.connect.push('https://mc.yandex.ru', 'https://mc.yandex.com', 'https://mc.yandex.md', 'wss://mc.yandex.ru', 'wss://mc.yandex.com');
-  COUNTER.img.push('https://mc.yandex.ru', 'https://mc.yandex.com', 'https://yandex.ru');
-  fs.writeFileSync('data/site-yandex-analytics.js', rd('tools/yandex-analytics.js').replaceAll('113520709', AN.yandexCounterId));
 }
 
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
@@ -401,7 +393,7 @@ const FAVICON = '/images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; ${AN?.yandexCounterId ? 'frame-src https://mc.yandex.ru https://mc.yandex.com https://mc.yandex.md;' : ''} base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
 <meta name="description" content="${SEO.desc}">
@@ -775,7 +767,7 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''}; ${AN?.yandexCounterId ? 'frame-src https://mc.yandex.ru https://mc.yandex.md;' : ''} base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  base-uri 'none'; form-action 'none'">
 <link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
 <title>${esc(title)}</title>
 ${COUNTER.tag}
@@ -954,7 +946,7 @@ for (const lang of LANGS) for (const [from, to] of Object.entries(MERGED)) {
   fs.mkdirSync(`${pre}p/${from}`, { recursive: true });
   writePage(`${pre}p/${from}/index.html`, `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; ${AN?.yandexCounterId ? 'frame-src https://mc.yandex.ru https://mc.yandex.md;' : ''} base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')};  base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
 <meta http-equiv="refresh" content="0;url=../${to}/">
 <link rel="canonical" href="${SITE}${pre}p/${to}/">
@@ -972,7 +964,7 @@ console.log(`${shared} product page(s) under p/, ${cats.length} section page(s) 
 fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; style-src 'unsafe-inline'; ${AN?.yandexCounterId ? 'frame-src https://mc.yandex.ru https://mc.yandex.md;' : ''} base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; style-src 'unsafe-inline';  base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
 <title>Էջը չի գտնվել | Better.am</title>
 <meta name="robots" content="noindex">
