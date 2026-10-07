@@ -1,0 +1,4 @@
+# Verified colour repair sources
+
+- sony-ps5-dualsense__galactic-purple.webp: Sony DualSense galactic-purple; official image https://gmedia.playstation.com/is/image/SIEPDC/dualsense-galactic-purple-screenshot-01-en-30nov21?fmt=png-alpha&wid=1600; source page https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/; original 1600x900; PhotoRoom transparent export; centred without enlargement, 887px canvas.
+- sony-ps5-dualsense__starlight-blue.webp: Sony DualSense starlight-blue; official image https://gmedia.playstation.com/is/image/SIEPDC/dualsense-starlight-blue-screenshot-01-en-30nov21?fmt=png-alpha&wid=1600; source page https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/; original 1600x900; PhotoRoom transparent export; centred without enlargement, 892px canvas.

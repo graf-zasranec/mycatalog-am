@@ -548,6 +548,10 @@ function pixelMatrix(html, colors) {
 // every colour is its own row with its own link - the owner asked (2026-09-24) that picking a
 // colour on our page lands on that colour at istyle, not on whichever one the shop opens first.
 // One variant object can list several colours at one price; each becomes a row.
+function istyleProductPage(value) {
+  try { const url = new URL(value); return url.origin + decodeURIComponent(url.pathname).trim(); }
+  catch { return ''; }
+}
 function istyleVariants(html) {
   const j = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
   const at = j.indexOf('"variants":[');
@@ -584,11 +588,24 @@ function istyleVariants(html) {
     const colours = (v.attribute_values || []).filter(av => /^colou?r$/i.test(((av.attribute || {}).name || {}).en || ''))
       .map(av => ({ name: ((av.color_label || {}).en || '').trim() || null, id: av.id }));
     for (const c of colours.length ? colours : [{ name: null, id: null }]) {
-      const k = `${cap ?? ''}|${sim === true ? 'e' : sim === false ? 'n' : '?'}|${c.name || ''}`;
+      const configuration = Object.entries(attr).filter(([name]) => !/^colou?r$/i.test(name)).sort(([a], [b]) => a.localeCompare(b));
+      const k = JSON.stringify([configuration, c.name]);
+      const query = new URLSearchParams();
+      if (c.id != null) query.set('color', String(c.id));
+      if (v.id != null) query.set('variant', colours.length > 1 && c.id != null ? `${v.id}_color_${c.id}` : String(v.id));
+      // iStyle's picker restores each attribute by its Armenian name and value ID.
+      for (const av of v.attribute_values || []) {
+        const names = av.attribute?.name || {};
+        if (/^colou?r$/i.test(names.en || '') || av.id == null) continue;
+        const name = names.hy || names.en;
+        if (name) query.set(name, String(av.id));
+      }
+      const ram = capOf(attr['ram'] || attr['operating memory'] || attr['random access memory'] || '');
       const row = { price, storage: cap != null && cap >= 64 ? cap : null,
+                    ram: ram != null && ram <= 192 ? ram : undefined,
                     esim: sim, simFromPage: sim !== undefined || undefined,
                     inStock: Number(v.stock) > 0, color: c.name,
-                    variant: c.name && v.id != null && c.id != null ? `?variant=${v.id}&color=${c.id}` : '' };
+                    variant: query.size ? '?' + query.toString() : '' };
       const had = best.get(k);
       // in stock beats out of stock; below that, the cheaper one
       if (!had || (row.inStock && !had.inStock) || (row.inStock === had.inStock && row.price < had.price))
@@ -1107,10 +1124,24 @@ if (process.argv[2] === '--selftest') {
     const named = istyleVariants('&quot;variants&quot;:' + JSON.stringify([{ id: 8, price_override: 469000, is_active: true, stock: 3,
       attribute_values: [{ id: 6, attribute: { name: { en: 'Color' } }, value: { en: '#E48448' }, color_label: { en: 'Cosmic Orange' } },
                          { id: 9, attribute: { name: { en: 'Color' } }, value: { en: '#454962' }, color_label: { en: 'Deep Blue' } }] }]).replace(/"/g, '&quot;'));
-    if (named.length !== 2 || named[0].color !== 'Cosmic Orange' || named[0].variant !== '?variant=8&color=6' || named[1].variant !== '?variant=8&color=9') {
+    if (named.length !== 2 || named[0].color !== 'Cosmic Orange' || named[0].variant !== '?color=6&variant=8_color_6' || named[1].variant !== '?color=9&variant=8_color_9') {
       bad++; console.log('FAIL istyleVariants colours ' + JSON.stringify(named.map(r => [r.color, r.variant])));
     }
     // 1 TB has only an Armenian label, "1T"
+    const configured = istyleVariants('"variants":' + JSON.stringify([16, 24].map((ram, i) => ({
+      id: 70 + i, price_override: 600000 + i * 100000, stock: 1,
+      attribute_values: [
+        { id: 19, attribute: { name: { en: 'Color', hy: 'Գույն' } }, color_label: { en: 'Space Black' } },
+        { id: 13, attribute: { name: { en: 'Internal Memory', hy: 'Ներքին Հիշողություն' } }, value: { hy: '1T' } },
+        { id: 90 + i, attribute: { name: { en: 'RAM', hy: 'Օպերատիվ հիշողություն' } }, value: { en: ram + ' GB' } }
+      ]
+    }))));
+    const link = new URLSearchParams(configured[0]?.variant);
+    if (configured.length !== 2 || configured[0].ram !== 16 || configured[1].ram !== 24
+        || link.get('variant') !== '70' || link.get('color') !== '19'
+        || link.get('Ներքին Հիշողություն') !== '13' || link.get('Օպերատիվ հիշողություն') !== '90') {
+      bad++; console.log('FAIL istyle exact configuration link ' + JSON.stringify(configured));
+    }
     const tb = istyleVariants('&quot;variants&quot;:' + JSON.stringify([{ id: 1, price_override: 899000, attribute_values: [{ attribute: { name: { en: 'Internal Memory' } }, value: { hy: '1T', ru: null } }] }]).replace(/"/g, '&quot;'));
     if (tb.length !== 1 || tb[0].storage !== 1024) { bad++; console.log('FAIL istyleVariants 1T ' + JSON.stringify(tb)); }
     if (v.length !== want.length) { bad++; console.log(`FAIL istyleVariants got ${v.length}, want ${want.length}`); }
@@ -2013,13 +2044,13 @@ const SHOPS = {
       for (const raw of urls) {
         // the sitemap prints the product name unencoded, spaces and all
         const name = clean(decodeURIComponent(raw.split('/product/')[1] || '')).replace(/\s+/g, ' ').trim();
-        const id = matchPhone(name);
+        let id = matchPhone(name);
         if (!id) continue;
         // The link is built from the name exactly as the sitemap prints it: istyle's own slug for
         // the 13.6" MacBook Air M5 carries a double space, and the collapsed one answered 404.
         let exact = raw.split('/product/')[1] || '';
         try { exact = decodeURIComponent(exact); } catch { }
-        const u = raw.split('/product/')[0] + '/product/' + encodeURIComponent(exact.trim());
+        const u = raw.split('/product/')[0] + '/product/' + encodeURIComponent(exact);
         if (!safeUrl(u)) continue;
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
@@ -2027,12 +2058,22 @@ const SHOPS = {
         // this product's - the one whose price the page prints at the top - and every SKU in it
         // is a real offer: capacity and SIM build, each at its own price.
         const vs = istyleVariants(html);
+        // The sitemap often omits RAM wording that the current product name includes.
+        let pageTitle = name;
+        try {
+          const encoded = html.match(/data-page="([^"]+)"/)?.[1];
+          const decoded = encoded?.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
+          pageTitle = JSON.parse(decoded).props?.product?.name?.en || name;
+        } catch {}
+
+        // The retailer calls its 2025 A16 model 'iPad 10'; it is not the older A14.
+        if (/\bipad\b/i.test(pageTitle) && /\ba16\b/i.test(pageTitle)) id = 'apple-ipad-a16';
         const eOnly = /iphone 18 pro/i.test(name) || undefined;
         if (!vs.length) continue;
         for (const v of vs)
-          out.push({ id, price: v.price, title: name, url: u + v.variant,
+          out.push({ id, price: v.price, title: clean(pageTitle), url: u + v.variant,
             color: v.color ? colorLoose(v.color, (phoneById[id] || {}).colors) || v.color : undefined,
-            storage: v.storage ?? storageOf(name), ram: ramOf(name),
+            storage: v.storage ?? storageOf(pageTitle), ram: v.ram ?? ramOf(pageTitle),
             // The iPhone 18 Pro pages state no SIM build: istyle sells them eSIM-only (owner,
             // 2026-09-26). Only these - an iPhone 16 page without the field is the tray build.
             esim: v.esim ?? eOnly, simFromPage: v.simFromPage ?? eOnly, inStock: v.inStock });
@@ -2450,6 +2491,11 @@ try {
   // tray row before the eSIM row cannot change the outcome.
   for (const r of rows) {
     const list = offers[r.id] ||= [];
+    // This adapter reads every configuration on a successfully fetched iStyle page.
+    // Older hand rows for that page cannot supply another SKU or override today's prices.
+    if (r.shop === 'istyle' && list.some(o => o.shop === 'istyle' && !o.seeded
+        && istyleProductPage(o.url) === istyleProductPage(r.url))) continue;
+
     // Colour belongs in this key as much as SIM build does: AirPods Max has no storage variant
     // at all, so every one of its colours shared the same (shop, storage, esim) key, and only
     // the first hand row ever written for a given shop could exist - iBolit's Red, Silver and
