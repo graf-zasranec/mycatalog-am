@@ -2,6 +2,7 @@
   if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
   // Measure without granting cookie storage or advertising permissions.
   gtag('consent', 'default', {
     analytics_storage: 'denied', ad_storage: 'denied',
@@ -23,8 +24,4 @@
   };
   view();
   window.addEventListener('hashchange', view);
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-VN0T8DTQWX';
-  document.head.appendChild(script);
 })();
