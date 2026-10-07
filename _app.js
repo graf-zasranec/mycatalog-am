@@ -44,7 +44,7 @@ const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(i
 function thumbSet(id, sizes) {
   const src = THUMB(id);
   return /^images\/thumb\/.+\.webp$/.test(src)
-    ? `srcset="${esc(src.replace(/\.webp$/, '-240.webp'))} 240w, ${esc(src)} 480w" sizes="${esc(sizes)}"` : '';
+    ? `srcset="${esc(src.replace(/\.webp$/, '-240.webp'))} 240w, ${esc(src.replace(/\.webp$/, '-320.webp'))} 320w, ${esc(src)} 480w" sizes="${esc(sizes)}"` : '';
 }
 const CARD_IMAGE_SIZE = '(max-width:520px) 140px, 190px';
 // IMG() falls back to a path whether the file exists or not, so it cannot answer "has a photo".
@@ -587,8 +587,11 @@ let lazyDone = false;
 function loadLazy() {
   if (lazyDone || typeof LAZYDATA === 'undefined' || !LAZYDATA) return;
   lazyDone = true;
-  fetch('data/history.json').then(r => r.ok ? r.json() : null).catch(() => null).then(h => {
-    if (h) { HISTORY = h; if (location.hash.startsWith('#/p/')) render(true); }
+  const read = url => fetch(url).then(r => r.ok ? r.json() : null).catch(() => null);
+  Promise.all([read('data/history.json'), read(DETAIL_DATA_URL)]).then(([history, extras]) => {
+    if (history) HISTORY = history;
+    if (extras) COMPARE_WITH = extras.compareWith || {};
+    if ((history || extras) && location.hash.startsWith('#/p/')) render(true);
   });
 }
 
@@ -1171,8 +1174,8 @@ const viewUnit = () => {
 const APPLY = key => `<div class="fapply"><button type="button" class="fclear" data-clear="${key}">${
   esc(x('clearF'))}</button><button type="button" class="fgo" data-apply="${key}">${esc(x('applyF'))}</button></div>`;
 const drop = (key, label, body, right) =>
-  `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel">${body}${
-    right ? '' : APPLY(key)}</div></details>`;
+  `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel"><template data-filter-options>${body}${
+    right ? '' : APPLY(key)}</template></div></details>`;
 const radios = (key, vals, fmt) =>
   `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="0"><span>${esc(x('any'))}</span></label>` +
   vals.map(v => `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="${v}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${v}"></span></label>`).join('');
@@ -2903,6 +2906,8 @@ function moneyFx() {
 document.addEventListener('toggle', e => {
   const panel = e.target;
   if (panel.matches?.('.fdrop') && panel.open) {
+    const options = panel.querySelector('template[data-filter-options]');
+    if (options) options.replaceWith(options.content.cloneNode(true));
     syncFilters();
     if (!panel.classList.contains('r')) paintDraftCount(panel);
   }

@@ -5,8 +5,8 @@
 #
 # Three different jobs, and they are not interchangeable:
 #   MISSING   nothing at all -- the page shows a grey box
-#   TOO SMALL under the 600 px floor. This one needs a LARGER ORIGINAL, never an enlargement:
-#             a 545 px picture stretched to 600 is the same picture with softer edges, and the
+#   TOO SMALL under the 700 px floor. This one needs a LARGER ORIGINAL, never an enlargement:
+#             a 545 px picture stretched to 700 is the same picture with softer edges, and the
 #             rule against it exists because that trade reads as sharpness in a file listing and
 #             as mush on the page.
 #   DEFECT    there is a photo and something is wrong with it -- see tools/imgcheck.py
@@ -20,11 +20,11 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 CUT = ROOT / 'images' / 'cut'
-FLOOR = 600
+FLOOR = 700
 # ...except for products nobody is looking at: a popularity under 10 is a handful of views a
 # month, and there a 500px picture beats the grey box that is there instead. Owner's call,
 # 2026-09-21. Kept in step with tools/cutout.py, which decides what actually gets matted.
-LOW_FLOOR, LOW_POP = 600, 50   # the temporary 500px floor ended 2026-10-04
+LOW_FLOOR, LOW_POP = 700, 50   # the temporary 500px floor ended 2026-10-04
 
 phones = json.loads((ROOT / 'data' / 'phones.json').read_text(encoding='utf8'))
 prices = json.loads((ROOT / 'data' / 'prices.json').read_text(encoding='utf8'))['offers']

@@ -22,6 +22,23 @@
     try { referrer = new URL(document.referrer).origin; } catch {}
     gtag('event', 'page_view', { page_location: location.origin + path, page_title: 'Better.am', page_referrer: referrer });
   };
+  // Queue measurements immediately, then load the library after the first render.
+  let loaded = false;
+  const load = () => {
+    if (loaded) return;
+    loaded = true;
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-VN0T8DTQWX';
+    document.head.appendChild(script);
+  };
+  const schedule = () => requestAnimationFrame(() => requestAnimationFrame(() => {
+    if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 1500 });
+    else setTimeout(load, 0);
+  }));
+  if (document.readyState === 'complete') schedule();
+  else window.addEventListener('load', schedule, { once: true });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') load(); });
   view();
   window.addEventListener('hashchange', view);
 })();

@@ -21,6 +21,11 @@ for source in sorted((root / 'images' / 'cut').glob('*.webp')):
         with Image.open(source) as image:
             image.thumbnail((240, 240), Image.Resampling.LANCZOS)
             image.save(compact, 'WEBP', quality=85, method=1)
+    medium = dest.with_name(dest.stem + '-320.webp')
+    if not medium.exists():
+        with Image.open(source) as image:
+            image.thumbnail((320, 320), Image.Resampling.LANCZOS)
+            image.save(medium, 'WEBP', quality=85, method=1)
     manifest[source.as_posix().removeprefix(root.as_posix() + '/')] = dest.as_posix().removeprefix(root.as_posix() + '/')
     before += source.stat().st_size
     after += dest.stat().st_size

@@ -368,7 +368,7 @@ if (AN) console.log(`visitor counter: ${AN.provider}`);
 if (AN?.provider === 'goatcounter') fs.writeFileSync('data/site-analytics.js', goatScript(AN.id));
 if (AN?.googleMeasurementId) {
   if (!/^G-[A-Z0-9]+$/.test(AN.googleMeasurementId)) throw new Error('Invalid Google Analytics measurement ID');
-  COUNTER.tag += `\n<script async src="https://www.googletagmanager.com/gtag/js?id=${AN.googleMeasurementId}"><\/script>\n<script defer src="/data/site-google-analytics.js"><\/script>`;
+  COUNTER.tag += `\n<script defer src="/data/site-google-analytics.js"><\/script>`;
   COUNTER.script.push('https://www.googletagmanager.com');
   COUNTER.img.push('https://www.googletagmanager.com', 'https://*.google-analytics.com');
   COUNTER.connect.push('https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.googletagmanager.com');
@@ -518,9 +518,15 @@ function build({ inline, standalone }) {
   // prices change every night, products rarely and the app code less, so a returning visitor
   // re-downloads only what moved. Plain classic scripts, run in order before the app, so their
   // top-level consts are the same globals the app always read and no app code had to change.
+  const detailExtras = { compareWith: pairs(phones, PRICES.offers || {}),
+    photoBoxes: fs.existsSync('data/photo-box.json') ? JSON.parse(rd('data/photo-box.json')) : {} };
+  const extrasBody = J({ compareWith: detailExtras.compareWith });
+  const extrasUrl = 'data/product-extras.json?v=' + crypto.createHash('sha256').update(extrasBody).digest('hex').slice(0, 10);
+  if (lazy) fs.writeFileSync('data/product-extras.json', extrasBody + '\n');
   const products = `const DATA=${J(phones.map(({ summaryEn, sources, ...p }) => p))};\n`
-    + `const COMPARE_WITH=${J(pairs(phones, PRICES.offers || {}))};\n`
-    + `const PBOX=${fs.existsSync('data/photo-box.json') ? J(JSON.parse(rd('data/photo-box.json'))) : '{}'};\n`;
+    + `const PBOX=${J(detailExtras.photoBoxes)};\n`
+    + (lazy ? `let COMPARE_WITH={};\nconst DETAIL_DATA_URL=${J(extrasUrl)};\n`
+      : `const COMPARE_WITH=${J(detailExtras.compareWith)};\n`);
   // Scraper evidence stays in prices.json; the browser uses the verified image maps,
   // never the shop's raw image URLs or titles. Don't download those a second time.
   const browserPrices = { ...PRICES, offers: Object.fromEntries(Object.entries(PRICES.offers || {}).map(([id, list]) =>
