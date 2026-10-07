@@ -40,7 +40,7 @@ try:
         _pop[_p['id']] = _p.get('popularity', 100)
 except Exception:
     pass
-FLOOR, LOW_FLOOR, LOW_POP = 600, 600, 50   # LOW_FLOOR back at 600: the temporary 500px floor ended 2026-10-04
+FLOOR, LOW_FLOOR, LOW_POP = 700, 700, 50   # Owner minimum source size, 2026-10-07
 def floor_for(filename):
     return LOW_FLOOR if _pop.get(filename.split('__')[0], 100) < LOW_POP else FLOOR
 
@@ -306,19 +306,7 @@ def main():
     # images/_src: it is the record of the best anyone publishes today, and the day a press page
     # offers something larger this picks it up again. --small mattes them regardless.
     #
-    # The floor is 600px, except for products nobody is looking at, where a 500px picture beats
-    # the grey box that is there now - which is the real comparison, not 500px against 600px.
-    # Owner's call, 2026-09-21. The threshold is 50 and not something lower because popularity is
-    # a DEFAULT of 40 on 1126 of the 1323 entries: it marks the products somebody has rated as
-    # popular rather than measuring the rest, so anything under 50 means "not singled out". The
-    # 102 entries rated 60 and above keep the 600px bar. It is still a floor and not a licence to
-    # enlarge - nothing is upscaled, here or anywhere.
-    #
-    # TEMPORARY. The owner set this to get pictures onto pages that have none today, and means to
-    # come back to it once the catalogue is filled in - both to raise the floor again and to fix
-    # the popularity field itself, which cannot currently express "nobody looks at this" because
-    # 1126 of 1323 entries carry the same default. Raise LOW_POP back toward 10, or drop
-    # LOW_FLOOR entirely, once the products below 600px have a larger original.
+    # Every new source must meet the owner's 700px minimum; popularity is no exception.
     if '--small' not in sys.argv:
         big, small = [], []
         for f in todo:

@@ -71,6 +71,6 @@ for (const id of ids) {
 }
 const best = {};
 for (const e of Object.values(ledger)) if (e.file && ids.has(e.id) && Math.min(e.w, e.h) > Math.min(best[e.id]?.w ?? 0, best[e.id]?.h ?? 0)) best[e.id] = e;
-const ok = Object.values(best).filter(e => Math.min(e.w, e.h) >= 600);
-console.log(`${ids.size} products to re-shoot; ${Object.keys(best).length} have a shop image, ${ok.length} of them 600px or more`);
+const ok = Object.values(best).filter(e => Math.min(e.w, e.h) >= 700);
+console.log(`${ids.size} products to re-shoot; ${Object.keys(best).length} have a shop image, ${ok.length} of them 700px or more`);
 fs.writeFileSync(path.join(OUT, 'best.json'), JSON.stringify(best, null, 1));

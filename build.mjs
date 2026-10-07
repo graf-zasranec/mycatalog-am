@@ -7,6 +7,7 @@ import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 import path from 'node:path';
+import { transformSync } from 'esbuild';
 import { pairs } from './tools/pairs.mjs';
 import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { goatScript } from './tools/analytics.mjs';
@@ -175,7 +176,7 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
 // TOO SMALL needs a LARGER ORIGINAL and never an enlargement - a 545px picture stretched to 600
 // is the same picture with softer edges, which is the trade this floor exists to refuse.
 {
-  const FLOOR = 600;
+  const FLOOR = 700;
   const need = [];
   const cuts = fs.readdirSync(CUT);
   for (const p of phones) {
@@ -518,8 +519,9 @@ function build({ inline, standalone }) {
   let ext = '';
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
-      fs.writeFileSync(f, body);
-      ext += `<script defer src="${f}?v=${crypto.createHash('sha256').update(body).digest('hex').slice(0, 10)}"><\/script>\n`;
+      const compact = transformSync(body, { minify: true, target: 'es2020', legalComments: 'none' }).code;
+      fs.writeFileSync(f, compact);
+      ext += `<script defer src="${f}?v=${crypto.createHash('sha256').update(compact).digest('hex').slice(0, 10)}"><\/script>\n`;
     }
   }
   let appJs = '\n'
@@ -545,6 +547,7 @@ function build({ inline, standalone }) {
   // catalogue stays usable while they load; an inline app would run before deferred data.
   let script;
   if (lazy) {
+    appJs = transformSync(appJs, { minify: true, target: 'es2020', legalComments: 'none' }).code;
     fs.writeFileSync('data/site-app.js', appJs);
     script = '\n' + ext + `<script defer src="data/site-app.js?v=${crypto.createHash('sha256').update(appJs).digest('hex').slice(0, 10)}"><\/script>\n`;
   } else script = '\n<script>' + appJs + '<\/script>\n';
@@ -581,7 +584,7 @@ const AI_BOTS = [
 ];
 // Default-deny crawling also covers new/unknown AI user agents. Ordinary visitors
 // are unaffected. Search indexing and social link previews retain explicit access.
-const PUBLIC_CRAWLERS = ['Googlebot', 'Bingbot', 'YandexBot', 'DuckDuckBot', 'Applebot',
+const PUBLIC_CRAWLERS = ['Googlebot', 'Googlebot-Image', 'Bingbot', 'YandexBot', 'DuckDuckBot', 'Applebot',
   'facebookexternalhit', 'Facebot', 'Twitterbot', 'LinkedInBot', 'WhatsApp',
   'TelegramBot', 'Discordbot', 'Slackbot', 'Pinterestbot'];
 fs.writeFileSync('robots.txt', '# AI training, AI search, agents and dataset crawlers are not permitted.\n'

@@ -928,6 +928,23 @@ const GROUPS = [
     ['f.appliance_temperature', p => p.appliance?.temperature],
     ['f.appliance_programs', p => p.appliance?.programs],
     ['f.appliance_control', p => p.appliance?.control && t('appliance.control.' + p.appliance.control)],
+    ['f.appliance_area', p => p.appliance?.area],
+    ['f.appliance_airflow', p => p.appliance?.airflow],
+    ['f.appliance_filter', p => p.appliance?.filter],
+    ['f.appliance_noise', p => p.appliance?.noise],
+    ['f.appliance_suction', p => p.appliance?.suction],
+    ['f.appliance_dust', p => p.appliance?.dust],
+    ['f.appliance_water', p => p.appliance?.water],
+    ['f.appliance_compatibility', p => p.appliance?.compatibility],
+  ]],
+  ['sec.audio', [
+    ['f.audio_form', p => p.audio?.form && x('forms')[p.audio.form]],
+    ['f.audio_connection', p => p.audio?.conn && x('conns')[p.audio.conn]],
+    ['f.audio_anc', p => p.audio?.anc == null ? null : t(p.audio.anc ? 'common.yes' : 'common.no')],
+    ['f.audio_frequency', p => p.audio?.frequency],
+    ['f.audio_driver', p => p.audio?.driver],
+    ['f.audio_impedance', p => p.audio?.impedance],
+    ['f.audio_microphone', p => p.audio?.microphone],
   ]],
   ['sec.display', [
     ['f.screen_size', p => p.display.size + '″', p => p.display.size],
@@ -970,6 +987,8 @@ const GROUPS = [
     ['f.video', p => p.camera.video]
   ]],
   ['sec.battery', [
+    ['f.runtime', p => p.battery?.life],
+    ['f.charge_time', p => p.battery?.chargeTime],
     // a laptop's battery is rated in watt-hours (70 Wh), not milliamp-hours - "70 mAh" read as a typo
     ['f.capacity', p => p.battery.capacity > 0 ? (p.category === 'laptop' ? new Intl.NumberFormat(st.lang, { maximumFractionDigits: 1 }).format(p.battery.capacity) : money(p.battery.capacity)) + ' ' + u(p.category === 'laptop' ? 'wh' : 'mah') : null, p => p.battery.capacity, 1],
     ['f.charging', p => p.battery.wired && p.battery.wired + ' ' + u('w'), p => p.battery.wired, 1],

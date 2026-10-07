@@ -19,7 +19,7 @@ from scrapling.fetchers import Fetcher
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / 'images' / '_src'
 CUT = ROOT / 'images' / 'cut'
-FLOOR = 600          # the catalogue's floor; anything under it is not worth matting
+FLOOR = 700          # the catalogue's floor; anything under it is not worth matting
 save = '--save' in sys.argv
 
 prices = json.loads((ROOT / 'data' / 'prices.json').read_text(encoding='utf-8'))

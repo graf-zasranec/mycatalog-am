@@ -128,11 +128,11 @@ function declaresAlpha(b) {
 
 // A source that arrives already cut out skips the matting model entirely - about a minute and a
 // half of this machine, per photo - and skips the tearing the model has to be guarded against.
-// So a transparent candidate wins a close call: it must still clear the 600px floor and come
+// So a transparent candidate wins a close call: it must still clear the 700px floor and come
 // within this much of the biggest candidate, because a photo too small for the canvas is not a
 // bargain at any speed.
 const ALPHA_TIEBREAK = 0.8;
-const FLOOR = 600;                    // the same floor build.mjs reports a photo as too small below
+const FLOOR = 700;                    // the same floor build.mjs reports a photo as too small below
 
 function beats(a, b) {
   // Transparency only ever decides a close call. Either side can win it, so a big opaque photo
@@ -321,9 +321,9 @@ for (const p of P) {
     refused += s.urls.length - ok.length;
     const win = await best(ok);
     if (!win) { if (dead) stale.push(`${p.id} ${s.slug}: all ${dead} shop image(s) answered 404`); continue; }
+    if (win.edge < MIN_EDGE) { weak.push(`${p.id} ${s.slug}: best source ${win.edge}px; requires ${MIN_EDGE}px`); continue; }
     if (win.edge <= haveEdge) { kept++; if (haveEdge < MIN_EDGE) weak.push(`${p.id} ${s.slug} ${haveEdge}px`); continue; }
     console.log(`  ${p.id} ${s.slug}: ${haveEdge || 'none'} -> ${win.w}x${win.h}`);
-    if (win.edge < MIN_EDGE) weak.push(`${p.id} ${s.slug} ${win.edge}px`);
     improved++;
     if (dry) continue;
     for (const old of fs.readdirSync(SRC).filter(f => f.startsWith(`${p.id}__${s.slug}.`))) fs.unlinkSync(`${SRC}/${old}`);

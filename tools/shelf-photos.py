@@ -3,7 +3,7 @@
 #
 #   python tools/shelf-photos.py .shelf-monitors-added.json
 #
-# The catalogue's 600px floor applies here like everywhere else: a picture under it is not taken,
+# The catalogue's 700px floor applies here like everywhere else: a picture under it is not taken,
 # and the product goes without one rather than with a blurred one.
 import importlib.util as iu
 import io
@@ -24,7 +24,7 @@ spec = iu.spec_from_file_location('hc', 'tools/harvest-colors.py')
 hc = iu.module_from_spec(spec)
 spec.loader.exec_module(hc)
 
-MIN = 600
+MIN = 700
 OUT = Path('images/_src')
 OUT.mkdir(parents=True, exist_ok=True)
 
