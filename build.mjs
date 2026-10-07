@@ -370,6 +370,7 @@ if (AN?.googleMeasurementId) {
   if (!/^G-[A-Z0-9]+$/.test(AN.googleMeasurementId)) throw new Error('Invalid Google Analytics measurement ID');
   COUNTER.tag += `\n<script async src="https://www.googletagmanager.com/gtag/js?id=${AN.googleMeasurementId}"><\/script>\n<script defer src="/data/site-google-analytics.js"><\/script>`;
   COUNTER.script.push('https://www.googletagmanager.com');
+  COUNTER.img.push('https://www.googletagmanager.com', 'https://*.google-analytics.com');
   COUNTER.connect.push('https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.googletagmanager.com');
   fs.writeFileSync('data/site-google-analytics.js', rd('tools/google-analytics.js').replaceAll('G-VN0T8DTQWX', AN.googleMeasurementId));
 }
@@ -441,7 +442,9 @@ function seoTitle(shell) {
   const preload = ['noto-sans-armenian-armenian-16.woff2', 'manrope-latin-15.woff2', 'fraunces-text-19.woff2']
     .map(f => `<link rel="preload" href="/fonts/${f}" as="font" type="font/woff2" crossorigin>`).join('');
   return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`)
-    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `${preload}<style>${fonts}</style>`);
+    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `${preload}<style>${fonts}</style>`)
+    .replace(/<style>([\s\S]*?)<\/style>/g, (_, css) =>
+      `<style>${transformSync(css, { loader: 'css', minify: true, legalComments: 'none' }).code}</style>`);
 }
 
 function splitShell(shell) {

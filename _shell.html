@@ -1154,6 +1154,13 @@ a.store:hover .nm{color:var(--brand)}
 .hist-tip .dn,.hist-tip .up{font-weight:700}
 
 /* ---- expandable offer list + all-offers page ---- */
+.offers-page{max-width:1240px;margin-inline:auto}
+.offers-page .orow{min-height:70px}
+.offers-page .orow .sh{margin:0;line-height:1.4}
+.offers-page .orow .vr{line-height:1.6}
+.offers-page .orow .ar{justify-content:center}
+@media (min-width:1000px){.offers-page .orow{grid-template-columns:28px minmax(140px,1fr) minmax(0,1.25fr) 112px 128px 140px}}
+@media (max-width:999px){.offers-page .orow{min-height:0;grid-template-columns:28px minmax(0,1fr) auto;row-gap:3px;padding:13px 14px}.offers-page .orow .vr{grid-column:2/-1;order:3}.offers-page .orow .od{grid-column:2;order:4;justify-self:start;padding:3px 9px}.offers-page .orow .ar{grid-column:3;order:4;justify-self:end;min-height:30px;padding:0 10px}}
 .allofflink{margin-top:10px;font-size:0.875rem}
 .allofflink a{color:var(--brand);font-weight:700;border-bottom:1px solid currentColor;padding-bottom:1px}
 .ofhead{display:flex;align-items:center;gap:18px;margin:14px 0 6px}

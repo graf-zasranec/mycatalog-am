@@ -2538,7 +2538,7 @@ function offersView(p) {
       <button class="ofc${OSEL[key] === '' ? ' on' : ''}" data-of="${key}" data-ofv="">${esc(x('any'))}</button>
       ${vals.map(v => `<button class="ofc${String(OSEL[key]) === String(v) ? ' on' : ''}" data-of="${key}" data-ofv="${esc(String(v))}">${esc(fmt(v))}</button>`).join('')}</div>`;
 
-  return `<div class="shell">
+  return `<div class="shell offers-page">
     <div class="navrow">${backLink('#/p/' + p.id, fullName(p))}
       <nav class="crumb"><span>${esc(x('allOffers'))}</span></nav></div>
     <div class="ofhead">
