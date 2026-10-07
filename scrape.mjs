@@ -2397,7 +2397,7 @@ try {
     // price off it. Without it every hand row printed "not checked" forever, including the ones
     // just confirmed - the crawl is the only thing that ever dated an offer, and these are the
     // rows no crawl can reach. Blank still means unverified, which is the honest default.
-    .map(line => { const [shop, title, cap, color, url, price, ram, check, seen] = line.split(','); return { shop, title, cap, color, url, price, ram, check, seen }; });
+    .map(line => { const [shop, title, cap, color, url, price, ram, check, seen, inStock] = line.split(','); return { shop, title, cap, color, url, price, ram, check, seen, inStock }; });
   // hand rows are not a crawl: their misses go to data/hand-unmatched.txt, not under whichever
   // shop the crawl read last (that filed Zigzag's titles under Vega, iSpace, Telecom...)
   CURSHOP = null;
@@ -2500,6 +2500,7 @@ try {
     list.push(enrich({ id: r.id, shop: r.shop, title: r.title, price: +r.price, storage: r.storage,
                 ram: r.ram ?? undefined, size: screenOf(r.title, r.id),
                 color: r.color || undefined, url: r.url, seeded: true, esim: r.esim,
+                inStock: r.inStock === 'true' ? true : r.inStock === 'false' ? false : undefined,
                 seen: /^\d{4}-\d{2}-\d{2}$/.test((r.seen || '').trim()) ? r.seen.trim() : undefined,
                 checkColor: (r.check || '').trim() === 'color' || undefined,
                 // this shop prices the configuration, not the page: tools/confirm-hand.mjs has
