@@ -37,7 +37,9 @@ try {
       // the web fonts come from Google and may be slow or blocked here; that is the network, not the site
       page.on('console', m => { if (m.type() === 'error' && !/fonts\.(googleapis|gstatic)/.test(m.text())) errs.push('console: ' + m.text()); });
       page.on('response', r => { if (r.status() === 404) errs.push('404: ' + r.url()); });
-      page.on('requestfailed', r => { if (!/fonts\.(googleapis|gstatic)|analytics|counter/.test(r.url())) errs.push('request failed: ' + r.url()); });
+      // Optional visitor-count requests must not fail the application check when
+      // the external analytics service is unavailable or blocked by the browser.
+      page.on('requestfailed', r => { if (!/fonts\.(googleapis|gstatic)|analytics|counter|https:\/\/gc\.zgo\.at\//.test(r.url())) errs.push('request failed: ' + r.url()); });
       for (const r of [...ROUTES.map(h => `index.html?r=${n}${h}`), ...STATIC]) {
         n++;
         errs.length = 0;

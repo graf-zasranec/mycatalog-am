@@ -1,6 +1,17 @@
 // Shared local/CI refresh. Each unavailable shop/cache step keeps previous data.
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
+import {acquireRefreshLock} from './refresh-lock.mjs';
+if (!process.argv.includes('--plan')) {
+  const release = acquireRefreshLock();
+  if (!release) {
+    console.error('A price refresh is already running. Let it finish before starting another.');
+    process.exit(2);
+  }
+  process.once('exit', release);
+  process.once('SIGINT', () => process.exit(130));
+  process.once('SIGTERM', () => process.exit(143));
+}
 const python = process.env.BETTER_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
 const run = (command, args, required = false) => {
   console.log('\nRefreshing: ' + args.join(' '));

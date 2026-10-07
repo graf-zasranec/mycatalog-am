@@ -381,7 +381,7 @@ const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').di
 // frame-ancestors is NOT here: a meta element cannot deliver it and the browser logs an error
 // on every load. Clickjacking cover would need a real header, which GitHub Pages does not serve.
 // A stable, crawlable square PNG lets search engines discover the brand icon.
-const FAVICON = SITE + 'images/favicon-96.png';
+const FAVICON = '/images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">

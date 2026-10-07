@@ -259,8 +259,14 @@ const rejected = id => new Set(Object.values(REJECT[id] || {})
 }
 
 let improved = 0, kept = 0, weak = [], refused = 0, stale = [];
+const photoPins = fs.existsSync('data/photo-pins.json') ? JSON.parse(fs.readFileSync('data/photo-pins.json', 'utf8')) : {};
 for (const p of P) {
   if (only.size && !only.has(p.id)) continue;
+  if (photoPins[p.id]?.main && fs.existsSync(photoPins[p.id].main)) {
+    console.log(`  = ${p.id}: preserving owner-selected photograph`);
+    kept++;
+    continue;
+  }
   const no = rejected(p.id);
   const offers = (PR.offers[p.id] || []).filter(o => o.image);
   // Nobody photographed it into the price file, but somebody linked it: read the picture off the

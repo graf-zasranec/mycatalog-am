@@ -279,6 +279,12 @@ def main():
     force = '--force' in sys.argv or '-f' in sys.argv
     since = stamp_time()
     files = sorted(f for f in os.listdir(SRC) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')))
+    pins_path = ROOT / 'data' / 'photo-pins.json'
+    pins = json.loads(pins_path.read_text(encoding='utf-8')) if pins_path.exists() else {}
+    files = [f for f in files if not (
+        pins.get(f.split('__')[0], {}).get('main')
+        and (ROOT / pins[f.split('__')[0]]['main']).exists()
+    )]
     if want:
         files = [f for f in files if any(f.startswith(w) for w in want)]
 
