@@ -366,6 +366,19 @@ const COUNTER = !AN ? { tag: '', script: [], connect: [], img: [] }
   : (() => { throw new Error('data/analytics.json: unknown provider ' + AN.provider); })();
 if (AN) console.log(`visitor counter: ${AN.provider}`);
 if (AN?.provider === 'goatcounter') fs.writeFileSync('data/site-analytics.js', goatScript(AN.id));
+if (AN?.googleMeasurementId) {
+  if (!/^G-[A-Z0-9]+$/.test(AN.googleMeasurementId)) throw new Error('Invalid Google Analytics measurement ID');
+  COUNTER.tag += '\n<script defer src="/data/site-google-analytics.js"><\/script>';
+  COUNTER.script.push('https://www.googletagmanager.com');
+  COUNTER.connect.push('https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.googletagmanager.com');
+  fs.writeFileSync('data/site-google-analytics.js', rd('tools/google-analytics.js').replaceAll('G-VN0T8DTQWX', AN.googleMeasurementId));
+}
+if (AN?.rybbitSiteId) {
+  if (!/^[a-z0-9]+$/i.test(AN.rybbitSiteId)) throw new Error('Invalid Rybbit site ID');
+  COUNTER.tag += `\n<script src="https://app.rybbit.io/api/script.js?siteId=${AN.rybbitSiteId}" defer><\/script>`;
+  COUNTER.script.push('https://app.rybbit.io');
+  COUNTER.connect.push('https://app.rybbit.io');
+}
 
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
@@ -939,7 +952,8 @@ for (const lang of LANGS) for (const [from, to] of Object.entries(MERGED)) {
   fs.mkdirSync(`${pre}p/${from}`, { recursive: true });
   writePage(`${pre}p/${from}/index.html`, `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; base-uri 'none'; form-action 'none'">
+${COUNTER.tag}
 <meta http-equiv="refresh" content="0;url=../${to}/">
 <link rel="canonical" href="${SITE}${pre}p/${to}/">
 <meta name="robots" content="noindex">
@@ -956,7 +970,8 @@ console.log(`${shared} product page(s) under p/, ${cats.length} section page(s) 
 fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+${COUNTER.tag}
 <title>Էջը չի գտնվել | Better.am</title>
 <meta name="robots" content="noindex">
 <style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
