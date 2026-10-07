@@ -30,6 +30,9 @@ try {
     const browser = await type.launch({ headless: true, ...opts });
     for (const w of WIDTHS) {
       const ctx = await browser.newContext({ viewport: { width: w, height: w < 500 ? 800 : 900 } });
+      // Route and layout checks opt out of analytics, avoiding synthetic visits and
+      // third-party network failures. Live analytics is verified separately.
+      await ctx.addInitScript(() => Object.defineProperty(navigator, 'doNotTrack', { get: () => '1' }));
       await ctx.addInitScript(s => { try { if (!localStorage.getItem('better.v2')) localStorage.setItem('better.v2', s); } catch (e) {} }, SAVED);
       const page = await ctx.newPage();
       const errs = [];

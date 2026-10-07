@@ -377,7 +377,7 @@ if (AN?.yandexCounterId) {
   if (!/^\d+$/.test(String(AN.yandexCounterId))) throw new Error('Invalid Yandex Metrica counter ID');
   COUNTER.tag += '\n<script defer src="/data/site-yandex-analytics.js"><\/script>';
   COUNTER.script.push('https://mc.yandex.ru', 'https://mc.yandex.com');
-  COUNTER.connect.push('https://mc.yandex.ru', 'https://mc.yandex.com', 'https://mc.yandex.md', 'wss://mc.yandex.ru');
+  COUNTER.connect.push('https://mc.yandex.ru', 'https://mc.yandex.com', 'https://mc.yandex.md', 'wss://mc.yandex.ru', 'wss://mc.yandex.com');
   COUNTER.img.push('https://mc.yandex.ru', 'https://mc.yandex.com', 'https://yandex.ru');
   fs.writeFileSync('data/site-yandex-analytics.js', rd('tools/yandex-analytics.js').replaceAll('113520709', AN.yandexCounterId));
 }
@@ -401,7 +401,7 @@ const FAVICON = '/images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; ${AN?.yandexCounterId ? 'frame-src https://mc.yandex.ru https://mc.yandex.md;' : ''} base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')}; ${AN?.yandexCounterId ? 'frame-src https://mc.yandex.ru https://mc.yandex.com https://mc.yandex.md;' : ''} base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
 <meta name="description" content="${SEO.desc}">
