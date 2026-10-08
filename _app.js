@@ -173,6 +173,12 @@ if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
 // ?lang=ru from the Russian/English static pages opens the app in that language
 { const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
+// Direct canonical product links hydrate the same interactive view as catalogue clicks.
+{ const direct = (location.pathname || '').match(/^\/(?:(en|ru)\/)?p\/([^/]+)\/?$/);
+  if (direct) { st.lang = direct[1] || 'hy';
+    if (!location.hash) history.replaceState(null, '', location.pathname + location.search + '#/p/' + direct[2]);
+  }
+}
 if (!['hy', 'ru', 'en'].includes(st.lang)) st.lang = D.lang;
 if (![0, 1, 2].includes(st.anc)) st.anc = st.anc === true ? 1 : 0;   // a saved on/off from the old checkbox
 if (!['auto', 'light', 'dark'].includes(st.theme)) st.theme = D.theme;

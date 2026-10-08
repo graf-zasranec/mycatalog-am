@@ -14,7 +14,7 @@ await new Promise(r => setTimeout(r, 1200));
 
 const ROUTES = ['#/', '#/c/laptop', '#/c/phone', '#/c/headphones', '#/p/apple-iphone-17', '#/offers/apple-iphone-17', '#/compare',
   '#/search', '#/p/does-not-exist'];
-const STATIC = ['p/apple-iphone-17/', 'c/phone/', 'ru/p/apple-iphone-17/', 'en/c/phone/samsung/', 'b/esim-or-nano-sim/'];
+const STATIC = ['p/apple-iphone-17/', 'c/phone/', 'ru/p/apple-iphone-17/', 'en/p/apple-iphone-18-pro/', 'en/c/phone/samsung/', 'b/esim-or-nano-sim/'];
 const WIDTHS = (process.env.PW_WIDTHS || '2560,1920,1366,1024,768,412,375,344,280').split(',').map(Number);
 // what the app keeps in localStorage: a comparison of two phones and a search nothing matches
 const SAVED = JSON.stringify({ lang: 'hy', cmp: ['apple-iphone-17-pro', 'samsung-galaxy-s26-ultra'], q: 'zzqxw' });

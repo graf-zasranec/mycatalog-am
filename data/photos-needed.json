@@ -4,18 +4,8 @@
  "note": "too small needs a larger original, not an enlargement",
  "total": 1477,
  "missing": 0,
- "tooSmall": 104,
+ "tooSmall": 93,
  "products": [
-  {
-   "id": "apple-iphone-17e",
-   "brand": "Apple",
-   "name": "iPhone 17e",
-   "category": "phone",
-   "shops": 9,
-   "query": "Apple iPhone 17e",
-   "what": "too small",
-   "width": 619
-  },
   {
    "id": "xiaomi-redmi-buds-6-play",
    "brand": "Xiaomi",
@@ -47,16 +37,6 @@
    "width": 679
   },
   {
-   "id": "jbl-charge-5",
-   "brand": "JBL",
-   "name": "Charge 5",
-   "category": "speaker",
-   "shops": 5,
-   "query": "JBL Charge 5",
-   "what": "too small",
-   "width": 646
-  },
-  {
    "id": "samsung-galaxy-buds-fe",
    "brand": "Samsung",
    "name": "Galaxy Buds FE",
@@ -77,16 +57,6 @@
    "width": 600
   },
   {
-   "id": "sony-playstation-vr2",
-   "brand": "Sony",
-   "name": "PlayStation VR2",
-   "category": "console",
-   "shops": 5,
-   "query": "Sony PlayStation VR2",
-   "what": "too small",
-   "width": 674
-  },
-  {
    "id": "apple-ipad-air-11-wi-fi-2024",
    "brand": "Apple",
    "name": "iPad Air M2",
@@ -95,16 +65,6 @@
    "query": "Apple iPad Air M2",
    "what": "too small",
    "width": 614
-  },
-  {
-   "id": "marshall-willen",
-   "brand": "Marshall",
-   "name": "Willen",
-   "category": "speaker",
-   "shops": 4,
-   "query": "Marshall Willen",
-   "what": "too small",
-   "width": 611
   },
   {
    "id": "asus-vivobook-15-x1504va",
@@ -157,16 +117,6 @@
    "width": 665
   },
   {
-   "id": "jbl-xtreme-3",
-   "brand": "JBL",
-   "name": "Xtreme 3",
-   "category": "speaker",
-   "shops": 3,
-   "query": "JBL Xtreme 3",
-   "what": "too small",
-   "width": 646
-  },
-  {
    "id": "lenovo-ideapad-slim-3-15ian8",
    "brand": "Lenovo",
    "name": "IdeaPad Slim 3 15IAN8",
@@ -185,6 +135,16 @@
    "query": "Xiaomi Redmi Buds 6 Lite",
    "what": "too small",
    "width": 611
+  },
+  {
+   "id": "xiaomi-smart-air-fryer-6-5l",
+   "brand": "Xiaomi",
+   "name": "Smart Air Fryer 6.5L",
+   "category": "appliance",
+   "shops": 3,
+   "query": "Xiaomi Smart Air Fryer 6.5L",
+   "what": "too small",
+   "width": 234
   },
   {
    "id": "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a",
@@ -225,16 +185,6 @@
    "query": "Honor 200 Lite 5G",
    "what": "too small",
    "width": 670
-  },
-  {
-   "id": "jbl-quantum-300",
-   "brand": "JBL",
-   "name": "Quantum 300",
-   "category": "headphones",
-   "shops": 2,
-   "query": "JBL Quantum 300",
-   "what": "too small",
-   "width": 699
   },
   {
    "id": "lenovo-ideapad-5-2in1-16",
@@ -317,16 +267,6 @@
    "width": 606
   },
   {
-   "id": "xiaomi-redmi-4-active",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 4 Active",
-   "category": "headphones",
-   "shops": 2,
-   "query": "Xiaomi Redmi Buds 4 Active",
-   "what": "too small",
-   "width": 696
-  },
-  {
    "id": "xiaomi-redmi-a2plus",
    "brand": "Xiaomi",
    "name": "Redmi A2+",
@@ -357,14 +297,14 @@
    "width": 688
   },
   {
-   "id": "xiaomi-smart-air-fryer-6-5l",
+   "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
    "brand": "Xiaomi",
-   "name": "Smart Air Fryer 6.5L",
+   "name": "Smart Air Purifier 4 Pro BHR5056EU",
    "category": "appliance",
    "shops": 2,
-   "query": "Xiaomi Smart Air Fryer 6.5L",
+   "query": "Xiaomi Smart Air Purifier 4 Pro BHR5056EU",
    "what": "too small",
-   "width": 234
+   "width": 636
   },
   {
    "id": "xiaomi-smart-band-7-pro",
@@ -395,16 +335,6 @@
    "query": "Acer Nitro Lite",
    "what": "too small",
    "width": 665
-  },
-  {
-   "id": "apple-macbook-pro-16-m3-pro",
-   "brand": "Apple",
-   "name": "MacBook Pro 16 M3 Pro",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Apple MacBook Pro 16 M3 Pro",
-   "what": "too small",
-   "width": 625
   },
   {
    "id": "apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4",
@@ -605,36 +535,6 @@
    "query": "Huawei MateBook Fold Ultimate 18\"",
    "what": "too small",
    "width": 592
-  },
-  {
-   "id": "jbl-boombox-3-wi-fi",
-   "brand": "JBL",
-   "name": "Boombox 3 Wi-Fi",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL Boombox 3 Wi-Fi",
-   "what": "too small",
-   "width": 684
-  },
-  {
-   "id": "jbl-partybox-110",
-   "brand": "JBL",
-   "name": "PartyBox 110",
-   "category": "speaker",
-   "shops": 1,
-   "query": "JBL PartyBox 110",
-   "what": "too small",
-   "width": 671
-  },
-  {
-   "id": "jbl-quantum-200-wired",
-   "brand": "JBL",
-   "name": "Quantum 200 Wired",
-   "category": "headphones",
-   "shops": 1,
-   "query": "JBL Quantum 200 Wired",
-   "what": "too small",
-   "width": 601
   },
   {
    "id": "lenovo-legion-5-pro-16-irx9",
@@ -955,16 +855,6 @@
    "query": "Xiaomi Semi-automatic Espresso Machine BHR9798EU",
    "what": "too small",
    "width": 441
-  },
-  {
-   "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
-   "brand": "Xiaomi",
-   "name": "Smart Air Purifier 4 Pro BHR5056EU",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Xiaomi Smart Air Purifier 4 Pro BHR5056EU",
-   "what": "too small",
-   "width": 636
   },
   {
    "id": "xiaomi-smart-band-8-champagne-bhr7166gl",

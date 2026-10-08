@@ -803,6 +803,30 @@ ${STYLE}
 const crumbs = list => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList',
   itemListElement: list.map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })) });
 
+// Reuse the app shell and deferred bundles on canonical product pages. Keep their
+// product-specific crawlable HTML and metadata while JavaScript initializes.
+const interactiveHome = build({ inline: false, standalone: true });
+const productCSS = [...interactiveHome.split('</head>')[0].matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m => m[1]).join('\n');
+fs.writeFileSync('data/site-ui.css', productCSS);
+const productCSSLink = `<link rel="stylesheet" href="/data/site-ui.css?v=${crypto.createHash('sha256').update(productCSS).digest('hex').slice(0, 10)}">`;
+function interactiveProduct(page, lang) {
+  const seoTags = /<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
+  const productHead = page.split('</head>')[0];
+  const head = interactiveHome.split('</head>')[0].replace(seoTags, '')
+    .replace(/<style>[\s\S]*?<\/style>/g, '')
+    .replace(/<link[^>]*rel="preload"[^>]*as="image"[^>]*>/g, '')
+    .replace(/(href|src)="((?:images|data)\/)/g, '$1="/$2')
+    .replace('<html lang="hy">', `<html lang="${lang}">`)
+    .replace("base-uri 'none'", "base-uri 'self'")
+    + '<base href="/">' + productCSSLink + (productHead.match(seoTags) || []).join('\n');
+  const content = page.match(/<main>([\s\S]*?)<\/main>/)[1]
+    .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
+  const body = interactiveHome.slice(interactiveHome.indexOf('</head>') + 7)
+    .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1">${content}</main>`)
+    .replace(/(<div class="shell mast-hero" id="masthero")[^>]*>[\s\S]*?<\/div>/, '$1 hidden></div>');
+  return head + '</head>' + body;
+}
+
 let shared = 0;
 const sitemapRows = [];
 const cats = [...new Set(phones.map(catOf))];
@@ -842,7 +866,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 </main></body></html>
 `;
     fs.mkdirSync(pre + path, { recursive: true });
-    writePage(`${pre}${path}index.html`, page);
+    writePage(`${pre}${path}index.html`, interactiveProduct(page, lang));
     sitemapRows.push([url, movedOn(p) || today, 0.7]);
     shared++;
   }
@@ -991,7 +1015,7 @@ a{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;paddin
 </div></body></html>
 `);
 
-writePage('index.html', build({ inline: false, standalone: true }));
+writePage('index.html', interactiveHome);
 for (const lang of ['ru', 'en']) {
   const pre = PRE[lang], url = SITE + pre;
   const title = lang === 'ru' ? 'Сравнение цен на электронику в Армении | Better.am' : 'Compare electronics prices in Armenia | Better.am';
