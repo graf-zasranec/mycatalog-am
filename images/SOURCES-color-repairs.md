@@ -42,3 +42,11 @@
 - jbl-charge-5__red.webp: exact model/finish source page https://istyle.am/en/product/JBL%20Charge%205?color=95&variant=229; original https://istyle.am/storage/products/jbl-charge5-front-red-0080-x2-20260630160111-ln7ex0.png; native 1605x1605; native transparency; visually reviewed on dark and light; one product, centred without enlargement on 1147px canvas.
 
 - jbl-go-3__green.webp: exact model/finish source page https://istyle.am/en/product/JBL%20GO%203?color=68&variant=201; original https://istyle.am/storage/products/asdasdasd-20260629173550-2anzrx.png; native 1605x1605; native transparency; visually reviewed on dark and light; one product, centred without enlargement on 1479px canvas.
+
+- apple-homepod-mini__midnight.webp: verified exact color; https://istyle.am/en/product/HomePod%20mini%202025?color=30&variant=373; original https://istyle.am/storage/products/untitleddesign-2025-05-06t171738669png-20260727184134-r3kwck.webp; native 1000x1000; one product, no enlargement; transparent export visually reviewed.
+
+- jbl-clip-4__green.webp: verified exact color; https://pl.jbl.com/JBLCLIP4GRN.html; original https://pl.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb8a2a6aa/JBL_CLIP4_HERO_OLIVE_PURPLE_YELLOW_0740_x1.png; native 1605x1605; one product, no enlargement; transparent export visually reviewed.
+
+- harman-kardon-studio-8__champagne.webp: verified exact color; https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%208?color=94&variant=190; original https://istyle.am/storage/products/51scjpb4evl-ac-jpg-20260727171228-ogdd8t.webp; native 700x700; one product, no enlargement; transparent export visually reviewed.
+
+- harman-kardon-studio-8__deep-blue.webp: verified exact color; https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%208?color=9&variant=192; original https://istyle.am/storage/products/614mlbhjhnl-ac-jpg-20260727171246-09ghab.webp; native 700x700; one product, no enlargement; transparent export visually reviewed.
