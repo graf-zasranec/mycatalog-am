@@ -497,7 +497,9 @@ function build({ inline, standalone }) {
   const heroSrcset = heroImage.match(/\bsrcset="([^"]+)"/)?.[1];
   const heroSizes = heroImage.match(/\bsizes="([^"]+)"/)?.[1];
   const heroPreload = heroSrcset ? `<link rel="preload" as="image" imagesrcset="${heroSrcset}" imagesizes="${heroSizes}" fetchpriority="high">` : '';
-  const shell = seoTitle(rd('_shell.html')).replace('</head>', `${heroPreload}</head>`)
+  // The shell is a head fragment; HEAD_CLOSE is added after splitShell below.
+  // Put the responsive hero preload before the title rather than a missing </head>.
+  const shell = seoTitle(rd('_shell.html')).replace('<title>', `${heroPreload}<title>`)
     .replace('<main id="main" tabindex="-1"></main>', `<main id="main" tabindex="-1" data-prerender="hy">${realLinks(initial.main)}</main>`)
     .replace('id="masthero" hidden></div>', `id="masthero">${realLinks(initial.hero)}</div>`)
     .replace('id="nav"></nav>', `id="nav">${realLinks(initial.nav)}</nav>`)
