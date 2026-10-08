@@ -88,6 +88,12 @@ def stock_of(html):
             return True
         if statuses and statuses <= {'outofstock', 'soldout', 'discontinued'}:
             return False
+    # Magento primary-product stock must exclude recommendation cards.
+    main = re.search(r'<div\b[^>]*class=["\']product-info-main["\'][^>]*>([\s\S]*?)(?:<div\b[^>]*class=["\']product-info-detailed["\']|<div\b[^>]*class=["\'][^"\']*block related|$)', html, re.I)
+    if main:
+        stock = re.search(r'class=["\']stock\s+(available|unavailable)["\']', main.group(1), re.I)
+        if stock:
+            return stock.group(1).lower() == 'available'
     m = BLOCK.search(html)
     if m:
         return m.group(1).lower() == 'in_stock'

@@ -60,3 +60,5 @@
 - jbl-clip-4__gray.webp: exact model/finish source page https://istyle.am/en/product/JBL%20Clip%204?color=93&variant=206; original https://istyle.am/storage/products/jbl-clip4-hero-grey-pink-0745-x2png-20260630144248-fynfti.webp; native 1605x1605; native transparency; visually reviewed on dark and light; one product, centred without enlargement on 1417px canvas.
 
 - honor-choice-ros-me01__black.webp: exact model/finish source page https://shop.ucom.am/en/honor-choice-headphones-me01.html; original https://shop.ucom.am/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/i/m/image_-_2026-05-08t082820.656_1.png; native 700x700; native transparency; exact Black headphones, one unit, visually reviewed; one product, centred without enlargement on 717px canvas.
+
+- marshall-woburn-ii__white.webp: exact model/finish source page https://www.telecomarmenia.am/eshop/en/accessories/marshall-woburn-ii-white/1141; original https://www.telecomarmenia.am/eshop/images/product/6/16672212908768.png; native 1213x1240; PhotoRoom background removal; exact White speaker, one unit, visually reviewed; one product, centred without enlargement on 937px canvas.

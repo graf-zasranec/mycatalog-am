@@ -488,6 +488,11 @@ for (let i = 0; i < todo.length; i++) {
         continue;
       }
     }
+    // A sold-out primary Magento product must not borrow a recommendation's price.
+    const primary = html.match(/<div\b[^>]*class=["']product-info-main["'][^>]*>([\s\S]*?)(?:<div\b[^>]*class=["'][^"']*(?:product-info-detailed|block related)|$)/i)?.[1];
+    if (primary && /class=["']stock\s+unavailable["']/i.test(primary)) {
+      nop.push([f[0], f[1], f[4]]); continue;
+    }
     p = vivaPrice(html, f) || buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f)
       || istylePrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
