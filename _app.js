@@ -1077,7 +1077,7 @@ function paintChrome() {
   paintCmpCount();
   $('#foot').innerHTML = `<b>Better.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
-    + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a></span>`;
+    + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a>${typeof window.gtag === 'function' ? `<button type="button" class="analytics-settings" data-analytics-settings>${({hy:'Վիճակագրության կարգավորումներ',ru:'Настройки статистики',en:'Analytics settings'})[st.lang]}</button>` : ''}</span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
 // of the same list pinned over the page was doing nothing but covering the last row. The header
