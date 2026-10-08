@@ -1173,9 +1173,13 @@ const viewUnit = () => {
 // Apply, which is what a multi-select has always meant everywhere else.
 const APPLY = key => `<div class="fapply"><button type="button" class="fclear" data-clear="${key}">${
   esc(x('clearF'))}</button><button type="button" class="fgo" data-apply="${key}">${esc(x('applyF'))}</button></div>`;
-const drop = (key, label, body, right) =>
-  `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel"><template data-filter-options>${body}${
-    right ? '' : APPLY(key)}</template></div></details>`;
+// Keep unopened controls out of the HTML parser as well as the active DOM.
+// The prerendered homepage carries only the summaries; options are made on demand.
+const filterBodies = new Map();
+const drop = (key, label, body, right) => {
+  filterBodies.set(key, body + (right ? '' : APPLY(key)));
+  return `<details class="fdrop${right ? ' r' : ''}" data-drop="${key}"><summary>${esc(label)}${ICON_CHEV}</summary><div class="panel"><template data-filter-options></template></div></details>`;
+};
 const radios = (key, vals, fmt) =>
   `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="0"><span>${esc(x('any'))}</span></label>` +
   vals.map(v => `<label class="opt"><input type="radio" name="r-${key}" data-f="${key}" value="${v}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${v}"></span></label>`).join('');
@@ -1260,7 +1264,11 @@ function openSheet() {
   document.documentElement.classList.add('fs-open');
   // Groups start closed (owner, 2026-10-02): opened all at once, Brand alone was a screen of
   // ticks before Price. A group with a filter already set opens, so what is applied is seen.
-  $$('#fbar .fdrop:not(.r)').forEach(d => { d.open = !!d.querySelector('input:checked:not([value=""]):not([value="0"])'); });
+  $$('#fbar .fdrop:not(.r)').forEach(d => {
+    const k = d.dataset.drop, f = FILT[k];
+    d.open = k === 'price' ? st.pmin > PMIN || st.pmax < PMAX
+      : f?.kind === 'set' ? !!st[f.arr]?.length : !!st[k];
+  });
   paintDraftCount(null);
   $('#fbar')?.focus?.();
 }
@@ -2908,7 +2916,11 @@ document.addEventListener('toggle', e => {
   const panel = e.target;
   if (panel.matches?.('.fdrop') && panel.open) {
     const options = panel.querySelector('template[data-filter-options]');
-    if (options) options.replaceWith(options.content.cloneNode(true));
+    if (options) {
+      if (!filterBodies.has(panel.dataset.drop)) filterBar();
+      options.innerHTML = filterBodies.get(panel.dataset.drop) || '';
+      options.replaceWith(options.content.cloneNode(true));
+    }
     syncFilters();
     if (!panel.classList.contains('r')) paintDraftCount(panel);
   }

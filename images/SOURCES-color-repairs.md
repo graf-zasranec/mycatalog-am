@@ -22,3 +22,23 @@
 - marshall-woburn-ii__white.webp: telecom exact-model/finish candidate; source page https://www.telecomarmenia.am/eshop/en/accessories/marshall-woburn-ii-white/1141; native image https://www.telecomarmenia.am/eshop/images/product/6/16672212908768.png; original 1213x1240; original transparency visually reviewed on dark and white; single product; centred without enlargement, 1143px canvas.
 
 - yandex-station-2__black.webp: ucom exact-model/finish candidate; source page https://shop.ucom.am/en/yandex-smart-station-2-00051.html; native image https://shop.ucom.am/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/1/y/1yandex_smart_station_2_00051_black.png; original 700x700; original transparency visually reviewed on dark and white; single product; centred without enlargement, 700px canvas.
+
+- bo-beosound-balance__natural-oak.webp: exact model/finish source page https://ibolit.mobi/product/beosound-balance-home-audio-system-by-bang-olufsen-natural-oak/; original https://ibolit.mobi/wp-content/uploads/2025/03/ispace_227.jpg; native 700x700; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 751px canvas.
+
+- jbl-live-660-nc__black.webp: exact model/finish source page https://istyle.am/en/product/JBL%20Live%20660NC?color=45&variant=276; original https://istyle.am/storage/products/61cjf3y4pwl-ac-sl1500-20260630220047-kwltnu.jpg; native 981x1164; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 1260px canvas.
+
+- sony-wh-ch520__blue.webp: exact model/finish source page https://www.yerevanmobile.am/en/sony-wh-ch520.html; original https://yerevanmobile.am/media/catalog/product/cache/653b63f1b0f816f6f64a6753df3ff1c4/5/2/520.jpg4.jpg; native 853x950; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 1027px canvas.
+
+- xiaomi-redmi-note-13-pro__lavender-purple.webp: exact model/finish source page https://ibolit.mobi/product/xiaomi-redmi-note-13-pro-12gb-512gb-lavender-purple/; original https://ibolit.mobi/wp-content/uploads/2025/04/nibl-138.jpg; native 700x700; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 700px canvas.
+
+- sony-srs-xb13__black.webp: exact model/finish source page https://redstore.am/en/product/sony-srs-xb13-black; original https://admin.redstore.am/storage/uploads/2025/10/26/img-8516.jpg; native 1800x1800; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 1515px canvas.
+
+- sony-ps5-dualsense-edge__black.webp: exact model/finish source page https://redstore.am/en/product/ps5-dualsense-edge-wirelss-controller-black; original https://admin.redstore.am/storage/uploads/2025/10/23/img-7846.jpeg; native 1800x1800; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 1724px canvas.
+
+- sony-ps5-dualsense-edge__white.webp: exact model/finish source page https://redstore.am/en/product/ps5-dualsense-edge-wirelss-controller-white; original https://admin.redstore.am/storage/uploads/2025/10/23/img-7840.jpg; native 1800x1800; PhotoRoom background removal; visually reviewed on dark and light; one product, centred without enlargement on 1725px canvas.
+
+- harman-kardon-studio-9__gray.webp: exact model/finish source page https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%209?color=93&variant=197; original https://istyle.am/storage/products/hk-onyx-studio-9-grey-hero-070-x1-1-20260727172323-eepr1y.png; native 1605x1605; native transparency; visually reviewed on dark and light; one product, centred without enlargement on 1482px canvas.
+
+- jbl-charge-5__red.webp: exact model/finish source page https://istyle.am/en/product/JBL%20Charge%205?color=95&variant=229; original https://istyle.am/storage/products/jbl-charge5-front-red-0080-x2-20260630160111-ln7ex0.png; native 1605x1605; native transparency; visually reviewed on dark and light; one product, centred without enlargement on 1147px canvas.
+
+- jbl-go-3__green.webp: exact model/finish source page https://istyle.am/en/product/JBL%20GO%203?color=68&variant=201; original https://istyle.am/storage/products/asdasdasd-20260629173550-2anzrx.png; native 1605x1605; native transparency; visually reviewed on dark and light; one product, centred without enlargement on 1479px canvas.
