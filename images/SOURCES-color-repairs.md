@@ -54,3 +54,5 @@
 - jbl-clip-5__white.webp: verified exact color; https://istyle.am/en/product/JBL%20Clip%205?color=97&variant=220; original https://istyle.am/storage/products/1717598848-img-2260348-20260630153430-g1sxif.jpg; native 750x750; one product, no enlargement; transparent export visually reviewed.
 
 - samsung-galaxy-a37__purple.webp: verified exact color; https://istyle.am/en/product/Samsung%20Galaxy%20A37%208G?color=32&variant=621&%D5%86%D5%A5%D6%80%D6%84%D5%AB%D5%B6+%D5%80%D5%AB%D5%B7%D5%B8%D5%B2%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6=12; original https://istyle.am/storage/products/bnh-montaznaia-oblast-1-20260801145145-tb3oce.webp; native 1200x1200; one product, no enlargement; transparent export visually reviewed.
+
+- dyson-hs08-i-d__amber-silk.webp: verified exact color; https://istyle.am/en/product/Dyson%20Airwrap%20i.d.%E2%84%A2%20HS08%20(Amber%20Silk)%20?color=51&variant=74; original https://istyle.am/storage/products/123123-20260803051849-unmhty.jpeg; native 800x800; one product, no enlargement; transparent export visually reviewed.
