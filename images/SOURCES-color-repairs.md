@@ -52,3 +52,5 @@
 - harman-kardon-studio-8__deep-blue.webp: verified exact color; https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%208?color=9&variant=192; original https://istyle.am/storage/products/614mlbhjhnl-ac-jpg-20260727171246-09ghab.webp; native 700x700; one product, no enlargement; transparent export visually reviewed.
 
 - jbl-clip-5__white.webp: verified exact color; https://istyle.am/en/product/JBL%20Clip%205?color=97&variant=220; original https://istyle.am/storage/products/1717598848-img-2260348-20260630153430-g1sxif.jpg; native 750x750; one product, no enlargement; transparent export visually reviewed.
+
+- samsung-galaxy-a37__purple.webp: verified exact color; https://istyle.am/en/product/Samsung%20Galaxy%20A37%208G?color=32&variant=621&%D5%86%D5%A5%D6%80%D6%84%D5%AB%D5%B6+%D5%80%D5%AB%D5%B7%D5%B8%D5%B2%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6=12; original https://istyle.am/storage/products/bnh-montaznaia-oblast-1-20260801145145-tb3oce.webp; native 1200x1200; one product, no enlargement; transparent export visually reviewed.
