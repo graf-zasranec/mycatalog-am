@@ -50,3 +50,5 @@
 - harman-kardon-studio-8__champagne.webp: verified exact color; https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%208?color=94&variant=190; original https://istyle.am/storage/products/51scjpb4evl-ac-jpg-20260727171228-ogdd8t.webp; native 700x700; one product, no enlargement; transparent export visually reviewed.
 
 - harman-kardon-studio-8__deep-blue.webp: verified exact color; https://istyle.am/en/product/Harman%20Kardon%20Onyx%20Studio%208?color=9&variant=192; original https://istyle.am/storage/products/614mlbhjhnl-ac-jpg-20260727171246-09ghab.webp; native 700x700; one product, no enlargement; transparent export visually reviewed.
+
+- jbl-clip-5__white.webp: verified exact color; https://istyle.am/en/product/JBL%20Clip%205?color=97&variant=220; original https://istyle.am/storage/products/1717598848-img-2260348-20260630153430-g1sxif.jpg; native 750x750; one product, no enlargement; transparent export visually reviewed.

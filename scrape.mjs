@@ -2898,6 +2898,20 @@ for (const id of Object.keys(offers)) {
   noPriceCount += before - offers[id].length;
 }
 if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed because the shop now reports 0 AMD`);
+// Do not carry prices whose exact product URLs were verified as homepage redirects.
+// A timeout or blocked request is not proof that a product is gone.
+try {
+  const {verifiedUnavailable} = await import('./tools/unavailable-offers.mjs');
+  const rows = JSON.parse(fs.readFileSync('data/unavailable-offers.json', 'utf8')).rows || [];
+  const evidence = new Map(rows.map(r => [r.url, r]));
+  let removed = 0;
+  for (const id of Object.keys(offers)) {
+    const before = offers[id].length;
+    offers[id] = offers[id].filter(o => !verifiedUnavailable(o, evidence.get(o.url)));
+    removed += before - offers[id].length;
+  }
+  if (removed) console.log(`${removed} older offer(s) removed: verified homepage redirects`);
+} catch (e) { if (e.code !== 'ENOENT') throw e; }
 // Hidden while the shop's own page says sold out (owner, 2026-09-25). data/soldout.json is
 // rewritten by every full `python tools/check-links.py --all`, so a restocked page comes back
 // on its own; nothing is pinned or deleted.
