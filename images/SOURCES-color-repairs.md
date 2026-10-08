@@ -64,3 +64,5 @@
 - marshall-woburn-ii__white.webp: exact model/finish source page https://www.telecomarmenia.am/eshop/en/accessories/marshall-woburn-ii-white/1141; original https://www.telecomarmenia.am/eshop/images/product/6/16672212908768.png; native 1213x1240; PhotoRoom background removal; exact White speaker, one unit, visually reviewed; one product, centred without enlargement on 937px canvas.
 
 - jbl-live-660-nc__black.webp: exact model/finish source page https://istyle.am/en/product/JBL%20Live%20660NC?color=45&variant=276; original https://istyle.am/storage/products/61lqpbltmbl-ac-sl1500-20260630220105-szz51z.jpg; native 746x1301; PhotoRoom background removal; exact Black headset, one unit, full frame visually reviewed; one product, centred without enlargement on 1410px canvas.
+
+- apple-airpods-pro-2__main.webp: Apple official second-generation product photograph, https://www.apple.com/newsroom/2022/09/apple-announces-the-next-generation-of-airpods-pro/ ; native1960x1566, PhotoRoom transparent cleanup, one complete retail unit (pair plus charging case), no enlargement, visually reviewed.
