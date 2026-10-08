@@ -428,3 +428,41 @@
 - marshall-willen__black.webp: https://www.pixel.am/am/product/marshall-willen-black; native original https://cdn.storech.com/uploads/products/000/000/000/000/019/373/800_1685184777-marshall-willen-black-1.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
 
 - marshall-woburn-iii__cream.webp: https://vlv.am/en/Product/37455; native original https://vlv.am/public/uploads/images/06-04-2026/69d37cfbe85f1.webp; 1280x960; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xbox-series-x__black.webp: https://www.xbox.com/en-US/consoles/xbox-series-x; native original https://cms-assets.xboxservices.com/assets/14/b5/14b5af73-466f-4584-9c7c-de5464af8c3b.png?n=642227_Hero-Gallery-0_A3_857x676.png; 857x676; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xbox-series-x__white.webp: https://www.xbox.com/en-US/consoles/xbox-series-x; native original https://cms-assets.xboxservices.com/assets/63/5d/635d513d-a5b0-46e3-a665-97dede478295.png?n=642227_Hero-Gallery-0_B3_857x676.png; 857x676; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- sony-ps5-dualsense__pink.webp: https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/buy-now/product/nova-pink/; native original https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-NovaPink01-1x1-01-28feb26$en?$native--t$; 3840x3840; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl__green.webp: https://www.zigzag.am/en/asus-vivobook-s-15-6-i9-13900h-16-1-camo-green-w11-k5504va-pb99-gr.html; native original https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/4/2/4273033-2.png; 1200x1200; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- honor-x9d__black.webp: https://vlv.am/en/Product/43013; native original https://vlv.am/public/uploads/images/02-06-2026/6a1ed8c28439b.webp; 800x800; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- samsung-galaxy-a08__dark-blue.webp: https://shop.viva.am/en/product/samsung-galaxy-a08-4gb-64gb-dark-blue/; native original https://shop.viva.am/upload/iblock/1f8/07imbl42ryxr7rioi8zgjeg0o8ekef0o.png; 3000x2000; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- samsung-galaxy-a37__awesome-green.webp: https://notebookcentre.am/en/product/samsung-galaxy-a37; native original https://notebookcentre.am/storage/products/images/202605050851145.webp; 1500x1000; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- samsung-galaxy-a55__awesome-lilac.webp: https://shop.ucom.am/en/samsung-galaxy-a55.html; native original https://shop.ucom.am/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/s/a/samsung_galaxy_a55_128gb_lavendar_1__2.png; 700x700; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- samsung-galaxy-s25-plus__navy.webp: https://www.pixel.am/en/product/samsung-galaxy-s25-plus; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/120/800_1776104128-1738493083-s25-plus-navy-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- samsung-galaxy-ultra-47mm-2024__gray.webp: https://shop.ucom.am/en/samsung-galaxy-watch-ultra-47mm-lte.html; native original https://shop.ucom.am/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/1/s/1samsung_galaxy_watch_ultra_47_titanium.webp; 700x700; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-17t__purple.webp: https://www.pixel.am/en/product/xiaomi-17t; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/216/800_1786483941-17t-violet-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-17t-pro__black.webp: https://www.pixel.am/am/product/xiaomi-17t-pro; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/217/800_1786484401-blk-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-poco-m7-pro-5g__silver.webp: https://www.pixel.am/en/product/xiaomi-poco-m7-pro; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/130/800_1776115673-1766779861-grey-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-redmi-17__navy.webp: https://3dplanet.am/en/store/product/xiaomi-redmi-17-4g; native original https://3dplanet.am/storage/images/products/655/blue21kpxkOOwu8uuijUAndpNR8jvyi4bj0N5DmJLfdt_1789378999.png; 1600x1600; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-redmi-note-13__black.webp: https://www.mi.com/uk/product/redmi-note-13/; native original https://i05.appmifile.com/159_item_uk/12/01/2024/583bc54cb8fd80e1f54beaa4e7c62dc1.png; 1600x1600; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-redmi-note-14-pro-plus-5g__mist-blue.webp: https://www.pixel.am/en/product/xiaomi-redmi-note-14-pro-plus; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/158/800_1776287009-1741887973-blue-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-redmi-note-14-pro-plus-5g__purple.webp: https://www.pixel.am/en/product/xiaomi-redmi-note-14-pro-plus; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/158/800_1776286998-1741888253-purple-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- xiaomi-15-ultra__white.webp: https://www.pixel.am/en/product/xiaomi-15-ultra; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/164/800_1776364350-1747660562-white-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- nothing-cmf-phone-1__black.webp: https://www.pixel.am/en/product/nothng-cmf-phone-1; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/171/800_1776369658-1755027192-nothing-cmf-blk-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.

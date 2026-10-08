@@ -452,6 +452,13 @@ function splitShell(shell) {
   return i < 0 ? { head: '', body: shell } : { head: shell.slice(0, i + 8), body: shell.slice(i + 8) };
 }
 
+function writeBundle(file, content) {
+  // Replace complete generated bundles atomically; Windows file watchers can
+  // briefly hold the previous file open during an in-place rewrite.
+  const temporary = file + '.tmp-' + process.pid;
+  try { fs.writeFileSync(temporary, content); fs.renameSync(temporary, file); }
+  finally { if (fs.existsSync(temporary)) fs.unlinkSync(temporary); }
+}
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
   // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
@@ -538,7 +545,7 @@ function build({ inline, standalone }) {
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
       const compact = transformSync(body, { minify: true, target: 'es2020', legalComments: 'none' }).code;
-      fs.writeFileSync(f, compact);
+      writeBundle(f, compact);
       ext += `<script defer src="${f}?v=${crypto.createHash('sha256').update(compact).digest('hex').slice(0, 10)}"><\/script>\n`;
     }
   }
@@ -566,7 +573,7 @@ function build({ inline, standalone }) {
   let script;
   if (lazy) {
     appJs = transformSync(appJs, { minify: true, target: 'es2020', legalComments: 'none' }).code;
-    fs.writeFileSync('data/site-app.js', appJs);
+    writeBundle('data/site-app.js', appJs);
     script = '\n' + ext + `<script defer src="data/site-app.js?v=${crypto.createHash('sha256').update(appJs).digest('hex').slice(0, 10)}"><\/script>\n`;
   } else script = '\n<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>

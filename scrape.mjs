@@ -251,6 +251,8 @@ function matchPhone(text, meta) {
   // digit/letter joins gives an ordinary title back unchanged and recovers the model name from a
   // compressed one, so each reading gets its own attempt instead of loosening the matcher.
   const base = norm(text);
+  // Retailer shorthand NC/ANC distinguishes the noise-cancelling AirPods 4 SKU.
+  if (/\bairpods 4 (?:nc|anc)\b/.test(base)) return 'apple-airpods-4-anc';
   // A shop writes the configuration in the middle of the name - "Pro 11 512GB WiFi 2024 Space
   // Black" - so the model and the year it is sold by never sit next to each other. Dropping the
   // capacity and the radio puts them back together. Tried LAST, so an exact reading always wins.
@@ -274,6 +276,7 @@ function matchPhone(text, meta) {
                  [detail, false], [detail.replace(/\b\d+\s?(gb|tb)\b/g, ' ').replace(/\s+/g, ' ').trim(), false]];
   for (const [v, split] of tries) {
     const id = matchIn(' ' + v + ' ', split);
+    if (id === 'jbl-tune' && /\btune\s*\d/.test(base)) return null;
     if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
   }
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
@@ -322,6 +325,9 @@ function matchIn(h, split = false) {
     const prev = h.slice(0, i).trim().split(' ').pop();
     if (prev && PREFIXES.has(prev) && !k.full.includes(prev)) return null;
     const next = h.slice(i + needle.length).trim().split(' ')[0];
+    // A numbered Tune headset cannot fall back to the unnumbered Tune Buds.
+    // Let the later split reading match 720BT as 720 BT, or leave it unmatched.
+    if (k.id === 'jbl-tune' && /^\d/.test(next || '')) continue;
     // 'ultra' marks a different phone (Galaxy S25 Ultra) but is also an Intel chip tier
     // ('Core Ultra 7 255U'), which was making every Core Ultra laptop unmatchable.
     const intelUltra = next === 'ultra' && (h.includes(' core ultra ') || h.includes(' ultra 5 ') || h.includes(' ultra 7 ') || h.includes(' ultra 9 '));
@@ -816,6 +822,10 @@ const ldOffer = p => { const o = p && p.offers; return Array.isArray(o) ? o[0] :
 /* ---------- self-test:  node scrape.mjs --selftest  (no network) ---------- */
 if (process.argv[2] === '--selftest') {
   const cases = [
+    ['jbl-tune-720-bt', 'JBL Tune 720BT'],
+    ['jbl-tune-760-nc', 'JBL Tune 760NC'],
+    [null, 'JBL Tune 570BT'],
+    ['apple-airpods-4-anc', 'AirPods 4 NC'],
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
