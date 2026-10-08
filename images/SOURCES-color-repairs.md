@@ -66,3 +66,7 @@
 - jbl-live-660-nc__black.webp: exact model/finish source page https://istyle.am/en/product/JBL%20Live%20660NC?color=45&variant=276; original https://istyle.am/storage/products/61lqpbltmbl-ac-sl1500-20260630220105-szz51z.jpg; native 746x1301; PhotoRoom background removal; exact Black headset, one unit, full frame visually reviewed; one product, centred without enlargement on 1410px canvas.
 
 - apple-airpods-pro-2__main.webp: Apple official second-generation product photograph, https://www.apple.com/newsroom/2022/09/apple-announces-the-next-generation-of-airpods-pro/ ; native1960x1566, PhotoRoom transparent cleanup, one complete retail unit (pair plus charging case), no enlargement, visually reviewed.
+
+- apple-macbook-pro-14-m4__silver.webp: exact Silver 14-inch M4 model source https://www.pixel.am/am/product/macbook-pro-14-m4; https://cdn.storech.com/uploads/products/000/000/000/000/022/077/800_1775455071-1731855910-macbook-pro-14-silver-2.png; native 800x1067 transparent packshot, single laptop, front-facing; visually reviewed, preserved source dimensions, no enlargement or background editing.
+
+- apple-macbook-pro-14-m4-max__silver.webp: exact Silver 14-inch M4 model source https://www.pixel.am/am/product/macbook-pro-14-m4-max; https://cdn.storech.com/uploads/products/000/000/000/000/022/079/800_1775456488-1731943085-macbook-pro-14-silver-2.png; native 800x1067 transparent packshot, single laptop, front-facing; visually reviewed, preserved source dimensions, no enlargement or background editing.
