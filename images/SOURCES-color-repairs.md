@@ -1034,3 +1034,7 @@
 - dell-alienware-da15260__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 1888x1427.
 
 - dell-alienware-15-da15265__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha) (DA15265 shares the Alienware 15 body); product 1888x1427.
+
+- lg-oled55b4rla__main.webp: official maker photo, transparent original; lg.com/kz product gallery original (white backdrop removed by edge flood-fill); product 1412x913.
+
+- lg-55nano816na__main.webp: official maker photo, transparent original; lg.com/kz product gallery original (white backdrop removed by edge flood-fill); product 798x513.
