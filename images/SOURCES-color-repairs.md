@@ -466,3 +466,9 @@
 - xiaomi-15-ultra__white.webp: https://www.pixel.am/en/product/xiaomi-15-ultra; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/164/800_1776364350-1747660562-white-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
 
 - nothing-cmf-phone-1__black.webp: https://www.pixel.am/en/product/nothng-cmf-phone-1; native original https://cdn.storech.com/uploads/products/000/000/000/000/022/171/800_1776369658-1755027192-nothing-cmf-blk-2-sides.png; 800x1067; exact model/color, original transparency, single retail SKU, no enlargement or recoloring. Parent dark-background review passed.
+
+- sennheiser-accentum-true-wireless-atw1__blue.webp: verified exact color; https://sennheiser.pl/o/accentum-true-wireless-blue; original https://sennheiser.pl/img/towary/1/2024_07/accentum-true-wireless-blue.png; PhotoRoom cutout 700x700; one product, no enlargement.
+
+- sony-ps5-dualsense__alpine-green.webp: verified exact color; https://allsell.am/en/ps5-dualsense-tm-wireless-controller-alpine-green; original https://allsell.am/media/catalog/product/n/e/new_project_2__20.png; PhotoRoom cutout 1100x1100; one product, no enlargement.
+
+- sony-wh-ch520__white.webp: verified exact color; https://allsell.am/en/sony-wh-ch520; original https://allsell.am/media/catalog/product/n/e/new_project_18__4_2.jpg; PhotoRoom cutout 1100x1100; one product, no enlargement.

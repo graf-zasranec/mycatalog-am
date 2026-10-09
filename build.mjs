@@ -673,11 +673,11 @@ const catLabel = (c, l = 'hy') => (CATS[l] || {})[c] || c;
 const homeContent = (lang, interactive = false, images = {}) => {
   const pre = PRE[lang], title = { hy: 'Սարքերի գների համեմատություն Հայաստանում', ru: 'Сравнение цен на электронику в Армении', en: 'Compare electronics prices in Armenia' }[lang];
   const method = { hy: 'Better.am-ը խանութ չէ։ Համեմատում ենք խանութների հրապարակած գները՝ նույն RAM-ի, հիշողության և այլ տարբերակների համար։ Գինը, առկայությունը, երաշխիքն ու վերադարձի պայմանները վերջնականապես ստուգեք խանութում։ Չճշտված բնութագրերը նշվում են որպես անորոշ։', ru: 'Better.am сравнивает опубликованные цены магазинов для одинаковых конфигураций RAM, накопителя и других параметров. Мы не продаём товары. Окончательную цену, наличие, гарантию и возврат уточняйте у магазина. Неподтверждённые характеристики отмечены.', en: 'Better.am compares shops’ published prices for matching RAM, storage and other configurations. We do not sell products. Confirm the final price, availability, warranty and returns with the shop. Unconfirmed specifications are marked.' }[lang];
-  const products = phones.slice().sort((a, b) => b.popularity - a.popularity).slice(0, 50);
+  const products = phones.filter(p => offersOf(p).length).sort((a, b) => b.popularity - a.popularity).slice(0, 50);
   const cards = interactive ? `<div class="grid" data-nosnippet>${products.map(p => {
     const photo = images[p.id] || '';
     return `<article class="pcard"><div class="pshot">${photo ? `<img class="pimg" src="${esc(photo)}" alt="${esc(nameOf(p))}" loading="lazy" decoding="async">` : ''}</div><div class="pbody"><span class="eyebrow">${esc(p.brand || '')}</span><h2><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></h2><div class="pfoot"><span class="pprice num">${amd(bestOf(p))}</span></div></div></article>`;
-  }).join('')}</div>` : `<div data-nosnippet><ul>${products.map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a></li>`).join('')}</ul></div>`;
+  }).join('')}</div>` : `<ul class="pl">${products.map(p => `<li><a href="${pre}p/${p.id}/">${esc(nameOf(p))}</a><span>${L[lang].from(amd(bestOf(p)))}</span></li>`).join('')}</ul>`;
   return `<div class="shell${interactive ? ' boot-catalog' : ''}"><h1>${esc(title)}</h1><p class="boot-method">${esc(method)}</p><nav class="boot-categories" aria-label="Categories">${cats.map(c => `<a href="${pre}c/${c}/">${esc(catLabel(c, lang))}</a>`).join(interactive ? '' : ' · ')}</nav>${cards}<p><a href="${pre}b/">${esc(L[lang].blog)}</a></p></div>`;
 };
 // Armenian plural is the bare noun after any number, so one form is correct for all of them.
@@ -693,6 +693,7 @@ const L = {
     ctitle: c => `${c}: գները Հայաստանի խանութներում | Better.am`,
     cdesc: (k, a) => `${k} մոդել, ${a}-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։`,
     cgo: 'Զտել և համեմատել Better.am-ում', models: 'Մոդելներ և գներ',
+    facts: (c, cp, w, k, lo, hi, s) => `Ամենաէժանը՝ ${c}՝ ${cp}։ Ամենաշատ խանութներում՝ ${w} (${k} խանութ)։ Գները՝ ${lo}–${hi}, ${s} խանութ։`, others: 'Այլ ապրանքանիշեր՝ ',
     blog: 'Բլոգ', bdesc: 'Հոդվածներ գների, համեմատման և տեխնիկայի ընտրության մասին։', read: 'Կարդալ Better.am-ում', sources: 'Աղբյուրներ՝ ' },
   ru: { locale: 'ru_RU', from: a => `от ${a}`,
     desc: (a, n) => n ? `Цена от ${a}, сравнение цен в ${n} ${ruShops(n)} на Better.am.` : 'Сейчас нет в продаже в магазинах Армении.',
@@ -704,6 +705,7 @@ const L = {
     ctitle: c => `${c}: цены в магазинах Армении | Better.am`,
     cdesc: (k, a) => `Моделей: ${k}, от ${a}. Сравните цены в магазинах Армении на Better.am.`,
     cgo: 'Фильтровать и сравнивать на Better.am', models: 'Модели и цены',
+    facts: (c, cp, w, k, lo, hi, s) => `Дешевле всего — ${c}, ${cp}. Больше всего предложений у ${w} (${k} ${ruShops(k)}). Цены: ${lo}–${hi}, магазинов: ${s}.`, others: 'Другие бренды: ',
     blog: 'Блог', bdesc: 'Статьи о ценах, сравнении и выборе техники.', read: 'Читать на Better.am', sources: 'Источники: ' },
   en: { locale: 'en_US', from: a => `from ${a}`,
     desc: (a, n) => n ? `From ${a}, prices compared across ${n} shop${n === 1 ? '' : 's'} on Better.am.` : 'Not currently sold in Armenian shops.',
@@ -715,6 +717,7 @@ const L = {
     ctitle: c => `${c}: prices in Armenian shops | Better.am`,
     cdesc: (k, a) => `${k} models, from ${a}. Compare prices in Armenian shops on Better.am.`,
     cgo: 'Filter and compare on Better.am', models: 'Models and prices',
+    facts: (c, cp, w, k, lo, hi, s) => `Cheapest: ${c} at ${cp}. Most widely sold: ${w} (${k} shop${k === 1 ? '' : 's'}). Prices ${lo}–${hi} across ${s} shop${s === 1 ? '' : 's'}.`, others: 'Other brands: ',
     blog: 'Blog', bdesc: 'Articles on prices, comparing and choosing tech.', read: 'Read on Better.am', sources: 'Sources: ' },
 };
 const DESC = (p, l = 'hy') => nameOf(p) + '. ' + L[l].desc(amd(bestOf(p)), shopsOf(p));
@@ -829,9 +832,22 @@ function interactiveProduct(page, lang) {
   const content = page.match(/<main>([\s\S]*?)<\/main>/)[1]
     .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
   const body = interactiveHome.slice(interactiveHome.indexOf('</head>') + 7)
-    .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1">${content}</main>`)
-    .replace(/(<div class="shell mast-hero" id="masthero")[^>]*>[\s\S]*?<\/div>/, '$1 hidden></div>');
-  return head + '</head>' + body;
+    .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1">${content}</main>`);
+  return head + '</head>' + emptyDiv(body, 'id="masthero"');
+}
+// The home masthead (cover, stats bar, savings strip) is nested divs; a lazy regex stopped at the
+// first </div> and left the stats and twenty other products' deals above every product's own h1.
+// Cut to the matching close tag and leave the empty, hidden container the app fills on Home.
+function emptyDiv(html, marker) {
+  const at = html.indexOf(marker);
+  if (at < 0) return html;
+  const open = html.lastIndexOf('<div', at), start = html.indexOf('>', at) + 1;
+  const tag = /<\/?div\b/g; tag.lastIndex = start;
+  for (let depth = 1, m; (m = tag.exec(html));) {
+    if (m[0] === '<div') depth++;
+    else if (--depth === 0) return html.slice(0, open) + html.slice(open, start - 1).replace(/\s+hidden\b/, '') + ' hidden>' + html.slice(m.index);
+  }
+  return html;
 }
 
 let shared = 0;
@@ -879,7 +895,10 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
   }
   // One page per section, and one per brand inside it ("Samsung phones") wherever a brand has three
   // priced products or more: every product with its cheapest price, linking to its own page.
-  const listPage = ({ list, path, label, trail, appHash, brands = [] }) => {
+  const listPage = ({ list, path, label, trail, appHash, brands = [], others = [] }) => {
+    // one sentence of facts only this list has, so a brand page is more than a list of links
+    const factsOf = l => { const c = l.slice().sort((a, b) => bestOf(a) - bestOf(b)), w = l.slice().sort((a, b) => shopsOf(b) - shopsOf(a))[0];
+      return t.facts(nameOf(c[0]), amd(bestOf(c[0])), nameOf(w), shopsOf(w), amd(bestOf(c[0])), amd(Math.max(...l.map(p => offersOf(p).at(-1).price))), new Set(l.flatMap(p => offersOf(p).map(o => o.shop))).size); };
     const R = '../'.repeat(path.split('/').length - 1 + (pre ? 1 : 0)), url = home + path;
     const desc = label + '. ' + t.cdesc(list.length, amd(Math.min(...list.map(bestOf))));
     const page = HEAD({ title: t.ctitle(label), desc, url, img: SITE + SEO.img,
@@ -889,6 +908,8 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 <main>
 <h1>${esc(label)}</h1>
 <p class="lead">${esc(desc)}</p>
+<p>${esc(factsOf(list))}</p>
+${others.length ? `<p>${t.others}${others.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
 <a class="go" href="${R}${app}#/${appHash}">${t.cgo}</a>
 ${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
 <h2>${t.models}</h2>
@@ -908,7 +929,8 @@ ${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}
     const byBrand = Object.entries(Object.groupBy(list, p => p.brand)).filter(([, l]) => l.length >= 3)
       .sort((x, y) => y[1].length - x[1].length);
     for (const [brand, l] of byBrand)
-      listPage({ list: l, path: `c/${c}/${slug(brand)}/`, label: `${brand} — ${label}`, trail: [[label, `c/${c}/`]], appHash: `c/${c}` });
+      listPage({ list: l, path: `c/${c}/${slug(brand)}/`, label: `${brand} — ${label}`, trail: [[label, `c/${c}/`]], appHash: `c/${c}`,
+        others: byBrand.filter(([b]) => b !== brand).map(([b]) => [b, `c/${c}/${slug(b)}/`]) });
     listPage({ list, path: `c/${c}/`, label, trail: [], appHash: `c/${c}`, brands: byBrand.map(([b]) => [b, `c/${c}/${slug(b)}/`]) });
   }
 }

@@ -19,7 +19,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    # 120 was hit on every run from 2026-10-06 (Eldorado's 7 s crawl delay alone is ~17 min);
+    # hosted runners allow 360, and a public repository's minutes are free
+    timeout-minutes: 330
     steps:
       # pinned to the commit, not the tag: a tag can be moved to point at new code,
       # and this job has contents:write on the repository it is checking out.

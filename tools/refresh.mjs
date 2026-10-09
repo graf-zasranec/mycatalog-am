@@ -16,7 +16,9 @@ const python = process.env.BETTER_PYTHON || (process.platform === 'win32' ? 'pyt
 const run = (command, args, required = false) => {
   console.log('\nRefreshing: ' + args.join(' '));
   if (process.argv.includes('--plan')) return;
+  const t0 = Date.now();
   const r = spawnSync(command, args, { stdio: 'inherit', env: { ...process.env, PYTHONUTF8: '1' } });
+  console.log(`Step took ${((Date.now() - t0) / 60000).toFixed(1)} min: ${args[0]}`);
   if (r.error || r.status !== 0) {
     if (required) process.exit(r.status || 1);
     console.warn('Step unavailable; retaining previous data: ' + (r.error?.message || r.status));
