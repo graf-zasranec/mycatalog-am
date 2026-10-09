@@ -615,10 +615,15 @@ const AI_BOTS = [
   'Amazonbot', 'Bytespider', 'CCBot', 'cohere-ai', 'cohere-training-data-crawler',
   'MistralAI-User', 'DuckAssistBot', 'YouBot', 'Diffbot', 'AI2Bot', 'Ai2Bot-Dolma',
   'PanguBot', 'Timpibot', 'ImagesiftBot', 'Omgilibot', 'omgili', 'Kangaroo Bot', 'Webzio-Extended',
+  'YandexAdditional', 'YandexAdditionalBot',                     // Yandex's AI answers (Neuro)
 ];
 // Default-deny crawling also covers new/unknown AI user agents. Ordinary visitors
 // are unaffected. Search indexing and social link previews retain explicit access.
-const PUBLIC_CRAWLERS = ['Googlebot', 'Googlebot-Image', 'Bingbot', 'YandexBot', 'DuckDuckBot', 'Applebot',
+// 'Yandex' names every Yandex search robot (images, mobile, renderer, availability check); 'YandexBot'
+// alone left the rest under the default deny, and Yandex could not render or verify the pages
+// (owner, 2026-10-09). Google-InspectionTool is Search Console's live test.
+const PUBLIC_CRAWLERS = ['Googlebot', 'Googlebot-Image', 'Google-InspectionTool', 'Storebot-Google', 'Bingbot', 'msnbot',
+  'Yandex', 'YandexBot', 'DuckDuckBot', 'Applebot',
   'facebookexternalhit', 'Facebot', 'Twitterbot', 'LinkedInBot', 'WhatsApp',
   'TelegramBot', 'Discordbot', 'Slackbot', 'Pinterestbot'];
 fs.writeFileSync('robots.txt', '# AI training, AI search, agents and dataset crawlers are not permitted.\n'
