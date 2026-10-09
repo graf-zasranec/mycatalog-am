@@ -536,3 +536,61 @@
 - apple-iphone-16e__black.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1300x1583.
 
 - apple-iphone-16e__white.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1300x1585.
+
+- beats-flex-all-day__black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2296x2400.
+
+- beats-flex-all-day__yellow.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2300x2400.
+
+- beats-pill__black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2400x819.
+
+- beats-pill__gold.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2400x819.
+
+- beats-pill__red.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2400x819.
+
+- beats-powerbeats-fit__gravel-gray.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1743x2400.
+
+- beats-powerbeats-fit__jet-black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1750x2400.
+
+- beats-powerbeats-fit__power-pink.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1736x2400.
+
+- beats-powerbeats-fit__spark-orange.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1743x2400.
+
+- beats-solo-true-wireless__black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2128x2051.
+
+- beats-solo-true-wireless__gray.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2126x2040.
+
+- beats-solo-true-wireless__purple.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2126x2040.
+
+- beats-solo-true-wireless__red.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2128x2051.
+
+- beats-solo4-onear__black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1323x2400.
+
+- beats-solo4-onear__pink.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1329x2400.
+
+- beats-solo4-onear__slate-blue.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1323x2400.
+
+- beats-studio-buds-plus__black-gold.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2203x2400.
+
+- beats-studio-buds-plus__ivory.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2216x2400.
+
+- beats-studio-buds-plus__transparent.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 2212x2400.
+
+- beats-studio-pro-wireless__navy.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1609x2400.
+
+- beats-studio-pro-wireless__sandstone.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com (Beats part-number images); product 1642x2400.
+
+- beats-studio__black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MJ4X3; product 2111x2400.
+
+- beats-studio__white.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MJ4Y3; product 2119x2400.
+
+- beats-studio__red.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MJ503; product 2113x2400.
+
+- beats-studio__blue.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MMT73; product 2109x2400.
+
+- beats-fit-pro__black.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MK2F3; product 2011x2400.
+
+- beats-fit-pro__white.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MK2G3; product 2011x2400.
+
+- beats-fit-pro__purple.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MK2H3; product 2011x2400.
+
+- beats-fit-pro__gray.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MK2J3; product 2011x2400.
