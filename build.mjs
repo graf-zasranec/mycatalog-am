@@ -375,6 +375,15 @@ if (AN?.googleMeasurementId) {
   fs.writeFileSync('data/site-google-analytics.js', rd('tools/google-analytics.js').replaceAll('G-VN0T8DTQWX', AN.googleMeasurementId));
 }
 
+// DataFast (owner, 2026-10-09): their tag as given, on every page that carries COUNTER.tag
+if (AN?.datafast) {
+  if (!/^dfid_[A-Za-z0-9]+$/.test(AN.datafast.websiteId)) throw new Error('Invalid DataFast website id');
+  COUNTER.tag += `
+<script defer data-website-id="${AN.datafast.websiteId}" data-domain="${AN.datafast.domain}" src="https://datafa.st/js/script.js"></script>`;
+  COUNTER.script.push('https://datafa.st');
+  COUNTER.connect.push('https://datafa.st');
+}
+
 const THEME_JS = `try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}`;
 const sha = js => "'sha256-" + crypto.createHash('sha256').update(js, 'utf8').digest('base64') + "'";
 
