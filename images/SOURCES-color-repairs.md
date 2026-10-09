@@ -866,3 +866,115 @@
 - asus-rog-strix-g18-g815jmr-ss74__main.webp: official maker photo, transparent original; rog.asus.com ROG Strix G18 (2025) gallery image 1, original 2400px; product 2250x1652.
 
 - asus-rog-ally-7__main.webp: official maker photo, transparent original; rog.asus.com ROG Ally (2023) gallery image 1, original 2400px; product 2157x906.
+
+- hp-15-fd0055__main.webp: official maker photo, transparent original; hp.widen.net original 2048px (hp.com US store, same chassis family): HP Laptop 15-fd0 Natural Silver front; product 1870x1453.
+
+- hp-15-fd0883nr__main.webp: official maker photo, transparent original; hp.widen.net original 2048px (hp.com US store, same chassis family): HP Laptop 15-fd0 Natural Silver front; product 1870x1453.
+
+- hp-15-fd0180nia__main.webp: official maker photo, transparent original; hp.widen.net original 2048px (hp.com US store, same chassis family): HP Laptop 15-fd0 Natural Silver front; product 1870x1453.
+
+- hp-15-fd0153dx__main.webp: official maker photo, transparent original; hp.widen.net original 2048px (hp.com US store, same chassis family): HP Laptop 15-fd0 Natural Silver angled; product 1885x1523.
+
+- hp-omnibook-x-flip-14-fm0013dx__main.webp: official maker photo, transparent original; hp.widen.net original 2048px (hp.com US store, same chassis family): OmniBook X Flip 14-fm0 front; product 1704x1451.
+
+- lenovo-ideapad-3-15itl6__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_3_15ITL6/IdeaPad_3_15ITL6_CT1_03.png; product 882x840.
+
+- lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15AMN8/IdeaPad_Slim_3_15AMN8_CT2_08.png; product 1786x1572.
+
+- lenovo-ideapad-slim-3-15irh10-i5__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_CT2_06.png; product 1796x1655.
+
+- lenovo-ideapad-slim-5-14irh10r__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_5_14IRH10R/IdeaPad_Slim_5_14IRH10R_CT2_07.png; product 1797x1469.
+
+- lenovo-legion-slim-5-14-aph8-oled-82y5000aus__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Legion/Legion_Slim_5_14APH8/Legion_Slim_5_14APH8_CT1_02.png; product 1850x1627.
+
+- lenovo-thinkbook-16-g8-irl__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkBook/ThinkBook_16_G8_IRL/ThinkBook_16_G8_IRL_CT1_03.png; product 1662x1229.
+
+- lenovo-thinkpad-e16-gen-1-21jn001qgp__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_1_Intel/ThinkPad_E16_Gen_1_Intel_CT1_01.png; product 1768x1628.
+
+- lenovo-thinkpad-e16-gen-2-21ma002xrt__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_2_Intel/ThinkPad_E16_Gen_2_Intel_CT1_01.png; product 1759x1638.
+
+- lenovo-thinkpad-e16-gen-2-21ma004vrt__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_2_Intel/ThinkPad_E16_Gen_2_Intel_CT1_01.png; product 1759x1638.
+
+- lenovo-thinkpad-t16-gen-2-21hh005agq__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_T16_Gen_2_Intel/ThinkPad_T16_Gen_2_Intel_CT1_06.png; product 1669x1235.
+
+- lenovo-v14-g4-iru__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Lenovo/Lenovo_V14_G4_IRU/Lenovo_V14_G4_IRU_CT1_03.png; product 1801x1640.
+
+- lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Lenovo/Lenovo_V15_G5_IRL/Lenovo_V15_G5_IRL_CT1_03.png; product 1692x1412.
+
+- lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Yoga/Yoga_Pro_9_16IMH9/Yoga_Pro_9_16IMH9_CT1_01.png; product 1661x1489.
+
+- lenovo-yoga-pro-9-16imh9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Yoga/Yoga_Pro_9_16IMH9/Yoga_Pro_9_16IMH9_CT1_02.png; product 1661x1489.
+
+- lenovo-yoga-slim-7-14q8x9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Yoga/Yoga_Slim_7_14Q8X9/Yoga_Slim_7_14Q8X9_CT2_03.png; product 1675x1241.
+
+- lenovo-yoga-slim-7-15ill9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Yoga/Yoga_Slim_7_15ILL9/Yoga_Slim_7_15ILL9_CT2_03.png; product 1813x1458.
+
+- lenovo-ideapad-1-14igl7__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_1_14IGL7/IdeaPad_1_14IGL7_CT1_01.png; product 898x807.
+
+- lenovo-ideapad-1-15amn7__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_1_15AMN7/IdeaPad_1_15AMN7_CT3_03.png; product 895x779.
+
+- lenovo-ideapad-flex-5-14iau7-i3__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Flex_5_14IAU7/IdeaPad_Flex_5_14IAU7_CT1_07.png; product 898x762.
+
+- lenovo-ideapad-slim-3-15ian8__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15IAN8/IdeaPad_Slim_3_15IAN8_CT1_01.png; product 1594x1515.
+
+- lenovo-ideapad-slim-3-15iru9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15IRU9/IdeaPad_Slim_3_15IRU9_CT1_02.png; product 1594x1515.
+
+- lenovo-ideapad-slim-3-16irh10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_16IRH10/IdeaPad_Slim_3_16IRH10_CT2_05.png; product 1790x1488.
+
+- lenovo-ideapad-slim-516irh10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_5_16IRH10/IdeaPad_Slim_5_16IRH10_CT2_04.png; product 1794x1111.
+
+- lenovo-yoga-pro-7-14-ahp9-83e3002ark__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px https://psrefstuff.lenovo.com/syspool/Sys/Image/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_CT1_02.png; product 1810x1673.
+
+- lenovo-ideapad-1-14igl7__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 831x653.
+
+- lenovo-ideapad-1-15amn7__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 834x643.
+
+- lenovo-ideapad-3-15itl6__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 804x768.
+
+- lenovo-ideapad-5-2in1-16__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1629x954.
+
+- lenovo-ideapad-flex-5-14iau7-i3__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 833x602.
+
+- lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1666x1291.
+
+- lenovo-ideapad-slim-3-15ian8__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1594x1515.
+
+- lenovo-ideapad-slim-3-15irh10-i5__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1664x1381.
+
+- lenovo-ideapad-slim-3-15iru9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1594x1515.
+
+- lenovo-ideapad-slim-3-16irh10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1645x1123.
+
+- lenovo-ideapad-slim-5-14irh10r__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1665x1062.
+
+- lenovo-ideapad-slim-516irh10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1660x350.
+
+- lenovo-legion-slim-5-14-aph8-oled-82y5000aus__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1766x1308.
+
+- lenovo-thinkbook-16-g8-irl__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1662x1229.
+
+- lenovo-thinkpad-e16-gen-1-21jn001qgp__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1605x1370.
+
+- lenovo-thinkpad-e16-gen-2-21ma002xrt__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1605x1370.
+
+- lenovo-thinkpad-e16-gen-2-21ma004vrt__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1605x1370.
+
+- lenovo-thinkpad-t16-gen-2-21hh005agq__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1669x1235.
+
+- lenovo-v14-g4-iru__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1673x1414.
+
+- lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1692x1412.
+
+- lenovo-yoga-9-14ill10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1167x1723.
+
+- lenovo-yoga-pro-7-14-ahp9-83e3002ark__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1677x1516.
+
+- lenovo-yoga-pro-9-16imh9-83dn002rrk-mini-led__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1661x1489.
+
+- lenovo-yoga-pro-9-16imh9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1661x1489.
+
+- lenovo-yoga-slim-7-14q8x9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1675x1241.
+
+- lenovo-yoga-slim-7-15ill9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1664x962.
+
+- lenovo-ideapad-slim-516irh10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px IdeaPad_Slim_5_16IRH10_CT1_01, badge removed; product 1664x1044.
