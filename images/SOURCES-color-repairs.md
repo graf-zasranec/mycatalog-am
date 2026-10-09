@@ -978,3 +978,27 @@
 - lenovo-yoga-slim-7-15ill9__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com), Intel/AMD badge removed; product 1664x962.
 
 - lenovo-ideapad-slim-516irh10__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px IdeaPad_Slim_5_16IRH10_CT1_01, badge removed; product 1664x1044.
+
+- apple-ipad-mini-7__main.webp: official maker photo, transparent original; Apple Store image, transparent, wid=5120 request: ipad-mini-select-wifi-spacegray-202410; product 1921x2400.
+
+- apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__main.webp: official maker photo, transparent original; Apple Store image, transparent, wid=5120 request: ipad-2022-hero-silver-wifi-select; product 2120x2400.
+
+- apple-ipad-a16__main.webp: official maker photo, transparent original; Apple Store image, transparent, wid=5120 request: ipad-2022-hero-blue-wifi-select (A16 shares the 10th-gen body); product 2120x2400.
+
+- apple-ipad-pro-11-m5__main.webp: official maker photo, transparent original; Apple Store image, transparent, wid=5120 request: ipad-pro-11-select-wifi-spaceblack-202405 (M5 shares the M4 body); product 2096x2400.
+
+- apple-iphone-16-plus__main.webp: official maker photo, transparent original; Apple Store image, transparent, wid=5120 request: iphone-16-plus-ultramarine-select-202409; product 1931x2400.
+
+- apple-macbook-pro-14-m4-max__main.webp: official maker photo, transparent original; Apple Store image mbp14-silver-select-202410 (studio backdrop removed by edge flood-fill, no AI); product 804x485.
+
+- apple-macbook-pro-14-m4-pro__main.webp: official maker photo, transparent original; Apple Store image mbp14-silver-select-202410 (studio backdrop removed by edge flood-fill, no AI); product 804x485.
+
+- apple-macbook-pro-14-m4__main.webp: official maker photo, transparent original; Apple Store image mbp14-silver-select-202410 (studio backdrop removed by edge flood-fill, no AI); product 804x485.
+
+- apple-macbook-pro-14-m5-max__main.webp: official maker photo, transparent original; Apple Store image mbp14-spaceblack-select-202410 (studio backdrop removed by edge flood-fill, no AI); product 804x485.
+
+- apple-macbook-pro-14-m5__main.webp: official maker photo, transparent original; Apple Store image mbp14-spaceblack-select-202410 (studio backdrop removed by edge flood-fill, no AI); product 804x485.
+
+- apple-macbook-pro-14-m3__main.webp: official maker photo, transparent original; Apple Store image mbp14-spacegray-select-202310 (studio backdrop removed by edge flood-fill, no AI); product 801x484.
+
+- apple-macbook-pro-16-mrw23__main.webp: official maker photo, transparent original; Apple Store image mbp16-spaceblack-select-202310 (studio backdrop removed by edge flood-fill, no AI); product 904x554.
