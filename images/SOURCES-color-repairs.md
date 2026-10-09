@@ -670,3 +670,83 @@
 - bose-quietcomfort-ultra-earbuds__moonstone.webp: official maker photo, transparent original; bose.co.uk QCUEBLE24_MoonstoneBlue_PDP_GALLERY_SF_01; product 1043x1259.
 
 - bose-quietcomfort-se-wireless__black.webp: official maker photo, transparent original; bose.co.uk QC SE page, QC45_TripleBlack_001_RGB; product 1814x2400.
+
+- dyson-ht01-airstrait-straightener-plum__red-velvet.webp: official maker photo, transparent original; dyson.com product image 594820-01 (primary, transparent); product 574x948.
+
+- dyson-ht01-airstrait-straightener-plum__jasper-plum.webp: official maker photo, transparent original; dyson.com product image 599047-01 (primary, transparent); product 362x958.
+
+- dyson-er-hd15__black.webp: official maker photo, transparent original; dyson.com product image 533902-01 (primary, transparent); product 543x1050.
+
+- dyson-er-hd15__nickel.webp: official maker photo, transparent original; dyson.com product image 389923-01 (primary, transparent); product 534x991.
+
+- dyson-er-hd15__main.webp: official maker photo, transparent original; dyson.com product image 389923-01 (primary, transparent); product 534x991.
+
+- dyson-nural-hd16-strawberry__ceramic.webp: official maker photo, transparent original; dyson.com product image 514298-01 (primary, transparent); product 415x916.
+
+- dyson-nural-hd16-strawberry__strawberry.webp: official maker photo, transparent original; dyson.com product image 561727-01 (primary, transparent); product 629x916.
+
+- dyson-nural-hd16-strawberry__main.webp: official maker photo, transparent original; dyson.com product image 561727-01 (primary, transparent); product 629x916.
+
+- dyson-multi-complete-long-hs05__blue-copper.webp: official maker photo, transparent original; dyson.com product image 395906-01 (primary, transparent); product 357x775.
+
+- dyson-multi-complete-long-hs05__gold.webp: official maker photo, transparent original; dyson.com product image 533903-01 (primary, transparent); product 469x982.
+
+- dyson-multi-complete-long-hs05__fuchsia.webp: official maker photo, transparent original; dyson.com product image 395802-01 (primary, transparent); product 487x1086.
+
+- dyson-multi-complete-long-hs05__strawberry.webp: official maker photo, transparent original; dyson.com product image 581841-01 (primary, transparent); product 522x1075.
+
+- dyson-v12-detect-slim-cordless-vacuum-cleaner__main.webp: official maker photo, transparent original; dyson.com product image 626421-01 (primary, transparent); product 690x1098.
+
+- dyson-origin-hs05__main.webp: official maker photo, transparent original; dyson.com product image 112905-01 (primary, transparent); product 364x942.
+
+- dyson-hd18-vinca-blue-topaz__main.webp: official maker photo, transparent original; dyson.com product image 440266-01 (primary, transparent); product 415x916.
+
+- sony-ps5-dualsense__chroma-teal.webp: official maker photo, transparent original; supplied by the owner 2026-10-09 (PlayStation product image, 1425 px transparent); product 1232x817.
+
+- sony-ps5-dualsense__alpine-green.webp: official maker photo, transparent original; supplied by the owner 2026-10-09 (PlayStation product image, 2048 px transparent); product 1832x1215.
+
+- samsung-galaxy-s26__black.webp: official maker photo, transparent original; samsung.com/us p6pim gallery 'Front' view (back+front), 3000px png-alpha request; product 854x1030.
+
+- samsung-galaxy-s26__cobalt-violet.webp: official maker photo, transparent original; samsung.com/us p6pim gallery 'Front' view (back+front), 3000px png-alpha request; product 854x1030.
+
+- samsung-galaxy-s26__pink-gold.webp: official maker photo, transparent original; samsung.com/us p6pim gallery 'Front' view (back+front), 3000px png-alpha request; product 854x1030.
+
+- samsung-galaxy-s26__silver-shadow.webp: official maker photo, transparent original; samsung.com/us p6pim gallery 'Front' view (back+front), 3000px png-alpha request; product 854x1030.
+
+- samsung-galaxy-s26__sky-blue.webp: official maker photo, transparent original; samsung.com/us p6pim gallery 'Front' view (back+front), 3000px png-alpha request; product 854x1030.
+
+- samsung-galaxy-s26__white.webp: official maker photo, transparent original; samsung.com/us p6pim gallery 'Front' view (back+front), 3000px png-alpha request; product 854x1030.
+
+- samsung-galaxy-a57__awesome-gray.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 928x1118.
+
+- samsung-galaxy-a57__awesome-icyblue.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 928x1118.
+
+- samsung-galaxy-a57__awesome-navy.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 928x1118.
+
+- samsung-galaxy-a37__awesome-charcoal.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 939x1127.
+
+- samsung-galaxy-a37__purple.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 939x1127.
+
+- samsung-galaxy-s26-plus__black.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 892x1092.
+
+- samsung-galaxy-s26-plus__cobalt-violet.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 892x1092.
+
+- samsung-galaxy-s26-plus__sky-blue.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 892x1092.
+
+- samsung-galaxy-s26-plus__white.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 892x1092.
+
+- samsung-galaxy-s25-fe__jetblack.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 920x1117.
+
+- samsung-galaxy-s25-fe__navy.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 920x1117.
+
+- samsung-galaxy-s25-fe__white.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 920x1117.
+
+- samsung-galaxy-s25__icy-blue.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
+
+- samsung-galaxy-s25__mint.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
+
+- samsung-galaxy-s25__navy.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
+
+- samsung-galaxy-s25__silver-shadow.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
+
+- samsung-galaxy-s25-fe__icyblue.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 920x1117.
