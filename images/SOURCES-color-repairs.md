@@ -750,3 +750,119 @@
 - samsung-galaxy-s25__silver-shadow.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
 
 - samsung-galaxy-s25-fe__icyblue.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 920x1117.
+
+- asus-27-va279hae__main.webp: official maker photo, transparent original; asus.com gallery original https://www.asus.com/media/global/gallery/c9PA3wyIV2KSHUsP_setting_xxx_0_90_end_1000.png (VA279HAE, None); product 900x634.
+
+- asus-32-cg32uq__main.webp: official maker photo, transparent original; asus.com gallery original https://www.asus.com/media/global/gallery/ath5xwnuvwbxtdjc_setting_xxx_0_90_end_1000.png (CG32UQ, None); product 849x703.
+
+- asus-b3405cca-ly0189__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/c83adbdd-9753-4259-8045-b223654ae2ee/ (ASUS ExpertBook B3 (B3405), ); product 1948x1274.
+
+- asus-b3405cca-ly0191__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/c83adbdd-9753-4259-8045-b223654ae2ee/ (ASUS ExpertBook B3 (B3405), ); product 1948x1274.
+
+- asus-b3605cca-mb0080__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/ef456468-a90d-4886-a648-5c8527935af4/ (ASUS ExpertBook B3 (B3605), Gentle Grey); product 2001x1279.
+
+- asus-expert-book-b5-b5405cva__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/1011e6a8-271d-411f-935b-46309d3adcd4/ (ASUS ExpertBook B5 (B5405), Gentle Grey); product 1946x1268.
+
+- asus-expertbook-b5-b5405cca__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/1011e6a8-271d-411f-935b-46309d3adcd4/ (ASUS ExpertBook B5 (B5405), Gentle Grey); product 1946x1268.
+
+- asus-expertbook-p1-p1503cva-misty__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/e3ec8e2c-7619-4f21-ad78-2ef3067f1928/ (ExpertBook P1 (P1503), ); product 2160x1305.
+
+- asus-fx607v__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/f69cfad3-af20-403e-ad93-1ffb91604d82/ (ASUS TUF Gaming F16 (2024), Mecha Gray); product 2160x1615.
+
+- asus-gaming-25-vg258qr__main.webp: official maker photo, transparent original; asus.com gallery original https://www.asus.com/media/global/gallery/ew8j8Enu2PgOINzl_setting_xxx_0_90_end_1000.png (VG258QR, None); product 900x808.
+
+- asus-proart-display-32-pa329cv__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/9571f24e-3d3f-417a-88ab-723ad3d3ecb0/ (ProArt Display PA329CV, None); product 2005x1698.
+
+- asus-rog-strix-g615lr-ms97__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/1A5BE9DB-F1C3-49F0-9E0C-AF3C0BDFB165 (ROG Strix G16 (2025), (rog gallery 1)); product 1946x1492.
+
+- asus-rog-strix-g815lp-is96-rtx5070__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/18C81753-EDED-4E77-9022-DDD71F7A3F31 (ROG Strix G18 (2025), (rog gallery 1)); product 2250x1652.
+
+- asus-tuf-a16-fa607nuq-ws73__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/7f8d804d-3316-4841-bc31-e931d0929719/ (ASUS TUF Gaming A16 (2024), Mecha Gray); product 2162x1617.
+
+- asus-tuf-fa707nug-hx154__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/dacca623-ae80-478e-a1b6-bfd04b355b11/ (ASUS TUF Gaming A17 (2023), Jaeger Gray); product 2246x1681.
+
+- asus-tuf-gaming-27-vg279ql1a__main.webp: official maker photo, transparent original; asus.com gallery original https://www.asus.com/media/global/gallery/ppmeys9gnztmdl4s_setting_xxx_0_90_end_1000.png (TUF GAMING VG279QL1A, None); product 846x686.
+
+- asus-va249hg__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/308e1cc1-62e2-4288-85c8-cd11d749d61c/ (VA249HG, ); product 2081x1567.
+
+- asus-vg249q3a-90lm09b0-b01170__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/1292674f-ed78-43e1-b6f2-573192db5f6b/ (TUF Gaming VG249Q3A, None); product 1991x1462.
+
+- asus-vivobook-15-m1502n__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/6cc80082-7269-4e5d-a501-21c79832db8f/ (ASUS Vivobook 15 (M1502), Cool Silver); product 2160x1269.
+
+- asus-vivobook-15-x1504va__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/d76a41bc-780e-41ef-938b-4ee8ac4a5634/ (ASUS Vivobook 15 (X1504), Cool Silver); product 2160x1274.
+
+- asus-vivobook-16-ultra7-oled__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/78f56c3a-82cb-4eca-b4b5-1180274aef25/ (ASUS Vivobook 16X OLED (M3604), Indie Black); product 2160x1348.
+
+- asus-vivobook-16__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/a6cfbd77-85f6-4de7-9727-f0810e02f0cc/ (ASUS Vivobook 16 (X1605), Indie Black); product 2400x1526.
+
+- asus-vivobook-e410ka-cl4128__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/5670817f-14c6-4ad9-b036-441be4e12284/ (ASUS Vivobook Go 14 (E410), Peacock Blue); product 2160x1463.
+
+- asus-vivobook-e410ma-bv2490w__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/5670817f-14c6-4ad9-b036-441be4e12284/ (ASUS Vivobook Go 14 (E410), Peacock Blue); product 2160x1463.
+
+- asus-vivobook-k3500p-oled__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/7314a203-99d6-4e68-bb5e-c8e6f844b29e/ (ASUS Vivobook Pro 15 OLED (K3500, 11th Gen Intel), Blue); product 2160x1380.
+
+- asus-vivobook-s16-s3607v__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/36f248fa-70de-4158-af66-25cc1c829c7a/ (ASUS Vivobook S16 (S3607); Copilot+ PC, Cool Silver); product 2279x1532.
+
+- asus-vivobook-x1404va-i38128__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/8e05f618-e30b-4f59-8970-09d828d23b9d/ (ASUS Vivobook 14 (X1404), Cool Silver); product 2160x1291.
+
+- asus-vivobook-x1404vap-v14__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/8e05f618-e30b-4f59-8970-09d828d23b9d/ (ASUS Vivobook 14 (X1404), Cool Silver); product 2160x1291.
+
+- asus-vivobook-x1404za-i38128__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/8e05f618-e30b-4f59-8970-09d828d23b9d/ (ASUS Vivobook 14 (X1404), Cool Silver); product 2160x1291.
+
+- asus-vivobook-x1502za-bq2270__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/daa0fcca-9dce-4ad7-99bb-94f5ac068618/ (ASUS Vivobook 15 (X1502), Cool Silver); product 2160x1269.
+
+- asus-vivobook-x1504va-nj061__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/d76a41bc-780e-41ef-938b-4ee8ac4a5634/ (ASUS Vivobook 15 (X1504), Cool Silver); product 2160x1274.
+
+- asus-vivobook-x1504va-nj436__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/d76a41bc-780e-41ef-938b-4ee8ac4a5634/ (ASUS Vivobook 15 (X1504), Cool Silver); product 2160x1274.
+
+- asus-vivobook-x1504va-nj451__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/d76a41bc-780e-41ef-938b-4ee8ac4a5634/ (ASUS Vivobook 15 (X1504), Cool Silver); product 2160x1274.
+
+- asus-vivobook-x1504za-u672__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/d76a41bc-780e-41ef-938b-4ee8ac4a5634/ (ASUS Vivobook 15 (X1504), Cool Silver); product 2160x1274.
+
+- asus-vivobook-x1505za-ma477-oled__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/859297d3-da9f-4807-81e8-7a2fdf14204d/ (ASUS Vivobook 15 OLED (X1505), Indie Black); product 2160x1265.
+
+- asus-zenbook-14-um3406g-ws79t__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/53d4a89d-7321-473b-bfc9-505466b60408/ (ASUS Zenbook 14 (UM3406); Copilot+ PC, Jade Black); product 2160x1476.
+
+- asus-zenbook-duo-14-5-touch-ultra-9-285h-w11-ux8406ca-is99t__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/3a8030c1-85c0-44dc-947d-3efb54d626df/ (ASUS Zenbook DUO (UX8406), Inkwell Gray); product 1923x2160.
+
+- asus-k3605v__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/dd08062b-93d2-432c-b2a4-e6b163501519/ (ASUS Vivobook 16X OLED (K3605), Indie Black#0); product 2160x1360.
+
+- asus-vivobook-15-x1505va-oled__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/a23f3054-5dd7-43fa-a875-6f3c394d00b3/ (ASUS Vivobook 15 OLED (X1505), Cool Silver#0); product 2160x1265.
+
+- asus-vivobook-16-flip-tp3607sa-is77t__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/0b0933e0-e95f-46d8-a251-54b34c570f7e/ (ASUS Vivobook 16 Flip (TP3607); Copilot+ PC, Matte Gray#0); product 2208x1541.
+
+- asus-vivobook-17-x1704vap__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/ed1905f7-19c7-49f7-a54f-0a3c9dd0f606/ (ASUS Vivobook 17 (X1704), Quiet Blue#0); product 2139x1248.
+
+- asus-vivobook-e410ka-cl464__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/813f5f34-a602-4e66-8ee4-9572aee7cd72/ (ASUS Vivobook Go 14 (E410), Peacock Blue#1); product 2160x1429.
+
+- asus-vivobook-e510ka-br859ws__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/b76652a1-01bf-4a44-8bfe-a0765540abc4/ (ASUS Vivobook Go 15 (E510), Star Black#1); product 2160x1414.
+
+- asus-vivobook-k5504-vn-ds96__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/1fbb14fc-5ca5-4188-b002-799310d1597b/ (ASUS Vivobook S 15 OLED (K5504), Black#2); product 2160x1414.
+
+- asus-vivobook-s16-s5606ma-ds96-oled__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/75e4d08d-aed5-4de7-89b2-004835cc7a1b/ (ASUS Vivobook S16 (S5606), Neutral Black#0); product 2280x1546.
+
+- asus-zenbook-flip-ux3407qa-x1p512__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/7baee8a2-ac71-4d48-a04f-8cd121fedbf0/ (ASUS Zenbook A14 (UX3407); Copilot+ PC, Zabriskie Beige#1); product 2160x1438.
+
+- asus-fa507__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/99b724c6-4c5d-4a54-a691-2e2999976e53/ (Mecha Gray#0); product 2246x1681.
+
+- asus-dual-rtx-4060-8gb__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/b346cf31-35d1-4ee2-85eb-c9c652c8136f/ (None#2); product 2220x1841.
+
+- asus-proart-rtx-4060-8gb__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/bf91e392-c908-4c09-91bb-1bfa8a8b650a/ (#2); product 2239x1725.
+
+- asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/228bc38a-45bc-4075-93fd-96db3ac8b235/ (Indie Black#0); product 2160x1372.
+
+- asus-vivobook-15-6-core-5-120u-90nb13y1-m01px0__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/c07e97f2-896a-4055-9526-21485f507b72/ (Quiet Blue#0); product 2160x1275.
+
+- asus-vivobook-17-3-core-5-120u-90nb13x2-m00j00__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/ed1905f7-19c7-49f7-a54f-0a3c9dd0f606/ (Quiet Blue#0); product 2139x1248.
+
+- asus-vivobook-16-i7-1355-win11-f1605va-ws74__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/a6cfbd77-85f6-4de7-9727-f0810e02f0cc/ (Indie Black#0); product 2400x1526.
+
+- asus-zenscreen-mb16aht-touch-screen__main.webp: official maker photo, transparent original; asus.com gallery original https://dlcdnwebimgs.asus.com/gain/ceb875a6-3187-4d50-a844-a3412a76b67c/ (None#1); product 2225x1343.
+
+- asus-rog-strix-g16-16-i9-14900hx-16-1-4060-w11-g614jvr-es94__main.webp: official maker photo, transparent original; rog.asus.com ROG Strix G16 (2024) gallery image 1, original 2400px; product 2162x1645.
+
+- asus-rog-strix-g16-g615lm-ds96__main.webp: official maker photo, transparent original; rog.asus.com ROG Strix G16 (2025) gallery image 1, original 2400px; product 1946x1492.
+
+- asus-rog-strix-g18-g815jmr-ss74__main.webp: official maker photo, transparent original; rog.asus.com ROG Strix G18 (2025) gallery image 1, original 2400px; product 2250x1652.
+
+- asus-rog-ally-7__main.webp: official maker photo, transparent original; rog.asus.com ROG Ally (2023) gallery image 1, original 2400px; product 2157x906.
