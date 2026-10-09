@@ -1038,3 +1038,45 @@
 - lg-oled55b4rla__main.webp: official maker photo, transparent original; lg.com/kz product gallery original (white backdrop removed by edge flood-fill); product 1412x913.
 
 - lg-55nano816na__main.webp: official maker photo, transparent original; lg.com/kz product gallery original (white backdrop removed by edge flood-fill); product 798x513.
+
+- poco-c85__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/499_item_uk/25/08/2025/809fbaa0584c819aa9919a1dafe44cc8.png); product 1087x1287.
+
+- poco-c71__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/910_item_uk/17/06/2025/fc12c6dc62b3b0a29e2af530394198e1.png); product 795x1296.
+
+- xiaomi-poco-m8-pro-5g__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/857_item_uk/04/01/2026/d0429f8f65fae7946d20980a57ee3325.png); product 1087x1293.
+
+- xiaomi-poco-m6__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/336_item_uk/03/06/2024/85823822d2cc062fa96f296f486b4294.png); product 1096x1296.
+
+- xiaomi-poco-x7__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/296_item_uk/26/12/2024/731fdcd0717a90cd4059e2cab0c792d5.png); product 1087x1292.
+
+- xiaomi-redmi-pad-2-pro__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/324_item_uk/07/11/2025/f31dd0331d839c6bd7ab99ecdb9ea6d3.png); product 1087x1290.
+
+- xiaomi-smart-band-10__main.webp: official maker photo, transparent original; mi.com/uk store packshot 1600px transparent (i05.appmifile.com/41_item_uk/17/06/2025/e7a446a0d79f9f5b25d08a9ce6811e37.png); product 392x1181.
+
+- xiaomi-redmi-note-14__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, Midnight Black (i05.appmifile.com/721_item_uk/06/01/2025/6edcc54244186fcd4b24310d8a3d7ef3.png); product 1087x1292.
+
+- xiaomi-15__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, White; product 1095x1292.
+
+- xiaomi-15-ultra__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, White; product 1096x1292.
+
+- xiaomi-14t__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, Black; product 1086x1293.
+
+- xiaomi-redmi-note-13__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, Blue; product 1087x1292.
+
+- xiaomi-poco-f6__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, Green; product 1087x1292.
+
+- xiaomi-poco-f6-pro__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, White; product 1087x1292.
+
+- poco-f7-ultra__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, Yellow; product 1087x1289.
+
+- xiaomi-redmi-13c__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent, Green; product 1088x1293.
+
+- xiaomi-poco-m6-pro__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1087x1294.
+
+- xiaomi-redmi-a3__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1086x1293.
+
+- xiaomi-redmi-a5__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1089x1292.
+
+- xiaomi-redmi-pad-pro-5g__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1096x1297.
+
+- xiaomi-redmi-watch-5-lite__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1048x1176.
