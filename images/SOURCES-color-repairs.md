@@ -1080,3 +1080,13 @@
 - xiaomi-redmi-pad-pro-5g__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1096x1297.
 
 - xiaomi-redmi-watch-5-lite__main.webp: official maker photo, transparent original; mi.com/uk buy-page gallery 1600px transparent; product 1048x1176.
+
+- apple-ipad-air-11-wi-fi-2024__main.webp: official maker photo, transparent original; Apple Store image (backdrop removed by edge flood-fill): ipad-air-finish-select-gallery-202405-11inch-purple-wifi; product 1401x1589.
+
+- apple-ipad-air-11-m4__main.webp: official maker photo, transparent original; Apple Store image (backdrop removed by edge flood-fill): ipad-air 11-inch purple (M4 shares the M2 body); product 1401x1589.
+
+- apple-ipad-air-5-wi-fi-plus-cellular-2022__main.webp: official maker photo, transparent original; Apple Store image (backdrop removed by edge flood-fill): ipad-air 11-inch purple (Air 5 shares the body); product 1401x1589.
+
+- apple-iphone-14-plus__main.webp: official maker photo, transparent original; Apple Store image (backdrop removed by edge flood-fill): iphone-14-finish-select-202209-6-7inch-midnight; product 1263x1729.
+
+- apple-mac-mini-m6__main.webp: official maker photo, transparent original; Apple Store image mac-mini-chip-unselect-202608-gallery-1 (backdrop removed by edge flood-fill); product 2324x926.
