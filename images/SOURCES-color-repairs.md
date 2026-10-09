@@ -1002,3 +1002,35 @@
 - apple-macbook-pro-14-m3__main.webp: official maker photo, transparent original; Apple Store image mbp14-spacegray-select-202310 (studio backdrop removed by edge flood-fill, no AI); product 801x484.
 
 - apple-macbook-pro-16-mrw23__main.webp: official maker photo, transparent original; Apple Store image mbp16-spaceblack-select-202310 (studio backdrop removed by edge flood-fill, no AI); product 904x554.
+
+- garmin-venu-3-with-leather__main.webp: official maker photo, transparent original; garmin.com product image 010-02784-01 cf-xl 1200px (white backdrop removed by edge flood-fill); product 822x1022.
+
+- garmin-vivoactive-6__main.webp: official maker photo, transparent original; garmin.com product image 010-02985-00 cf-xl 1200px (white backdrop removed by edge flood-fill); product 769x1021.
+
+- garmin-vivoactive-5__main.webp: official maker photo, transparent original; garmin.com product image 010-02862-10 cf-xl 1200px (white backdrop removed by edge flood-fill); product 769x1022.
+
+- garmin-fenix-7x-pro-sapphire-solar-edition__main.webp: official maker photo, transparent original; garmin.com product image 010-02778-10 cf-xl 1200px (white backdrop removed by edge flood-fill); product 900x959.
+
+- garmin-venu-4-45-mm__main.webp: official maker photo, transparent original; garmin.com product image 010-03014-00 cf-xl 1200px (white backdrop removed by edge flood-fill); product 819x1012.
+
+- garmin-fenix-8-47-mm-amoled-sapphire-carbon__main.webp: official maker photo, transparent original; garmin.com product image 010-02904-22 cf-xl 1200px (white backdrop removed by edge flood-fill); product 822x995.
+
+- garmin-instinct-3-50mm-solar__main.webp: official maker photo, transparent original; garmin.com product image 010-02934-00 cf-xl 1200px (white backdrop removed by edge flood-fill); product 812x1019.
+
+- garmin-forerunner-970__main.webp: official maker photo, transparent original; garmin.com product image 010-02969-00 cf-xl 1200px (white backdrop removed by edge flood-fill); product 832x1010.
+
+- garmin-forerunner-965-black-powder__main.webp: official maker photo, transparent original; garmin.com product image 010-02809-00 cf-xl 1200px (white backdrop removed by edge flood-fill); product 823x1019.
+
+- dell-pro-15-essential-pv15250__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 1984x1268.
+
+- dell-pro-15-essential-pv15250-core3__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 1984x1268.
+
+- dell-pro-14-pc14250__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 1994x1422.
+
+- dell-se2425hm__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 2000x1781.
+
+- dell-alienware-x16-r2__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 1995x1266.
+
+- dell-alienware-da15260__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 1888x1427.
+
+- dell-alienware-15-da15265__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha) (DA15265 shares the Alienware 15 body); product 1888x1427.
