@@ -594,3 +594,47 @@
 - beats-fit-pro__purple.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MK2H3; product 2011x2400.
 
 - beats-fit-pro__gray.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MK2J3; product 2011x2400.
+
+- jbl-endurance-peak-4__purple.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1368x1235.
+
+- jbl-go-4__black.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1284x1364.
+
+- jbl-live-680nc__beige.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 999x1364.
+
+- jbl-live-680nc__blue.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 999x1364.
+
+- jbl-live-680nc__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 999x1364.
+
+- jbl-live-780nc__beige.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1162x1362.
+
+- jbl-live-780nc__blue.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1162x1362.
+
+- jbl-sense-lite__black.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1367x1341.
+
+- jbl-sense-lite__purple.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1367x1341.
+
+- jbl-sense-lite__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1367x1341.
+
+- jbl-tour-pro-2-tws__black.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1206x1408.
+
+- jbl-tune-520-bt__black.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1098x1394.
+
+- jbl-tune-520-bt__blue.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1098x1394.
+
+- jbl-tune-520-bt__purple.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1098x1394.
+
+- jbl-tune-520-bt__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1098x1394.
+
+- jbl-tune-680nc__black.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1148x1364.
+
+- jbl-tune-680nc__blue.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1148x1364.
+
+- jbl-tune-680nc__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1148x1364.
+
+- jbl-tune-720-bt__black.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1186x1348.
+
+- jbl-tune-720-bt__blue.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1186x1348.
+
+- jbl-tune-720-bt__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1186x1348.
+
+- jbl-tune-flex__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1366x1261.
