@@ -506,3 +506,33 @@
 - sennheiser-momentum-sport-msport1__graphite.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1773x1705.
 
 - sennheiser-momentum-sport-msport1__olive.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1773x1755.
+
+- apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a__gray.webp: official maker photo; https://store.storeimages.cdn-apple.com (ipad finish-select images); background removed with PhotoRoom; product 1386x1570.
+
+- apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a__silver.webp: official maker photo; https://store.storeimages.cdn-apple.com (ipad finish-select images); background removed with PhotoRoom; product 1386x1570.
+
+- apple-ipad-air-11-m3__blue.webp: official maker photo; https://store.storeimages.cdn-apple.com (ipad finish-select images); background removed with PhotoRoom; product 1398x1585.
+
+- apple-ipad-air-11-m3__purple.webp: official maker photo; https://store.storeimages.cdn-apple.com (ipad finish-select images); background removed with PhotoRoom; product 1399x1585.
+
+- apple-ipad-air-11-m3__space-gray.webp: official maker photo; https://store.storeimages.cdn-apple.com (ipad finish-select images); background removed with PhotoRoom; product 1397x1584.
+
+- apple-ipad-air-11-m3__starlight.webp: official maker photo; https://store.storeimages.cdn-apple.com (ipad finish-select images); background removed with PhotoRoom; product 1399x1586.
+
+- apple-airpods-pro-2__main.webp: official maker photo, transparent original; https://store.storeimages.cdn-apple.com MTJV3; product 1949x2400.
+
+- apple-iphone-14__blue.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1192x1578.
+
+- apple-iphone-14__midnight.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1192x1578.
+
+- apple-iphone-14__purple.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1194x1579.
+
+- apple-iphone-14__red.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1192x1578.
+
+- apple-iphone-14__starlight.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1194x1580.
+
+- apple-iphone-14__yellow.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1194x1579.
+
+- apple-iphone-16e__black.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1300x1583.
+
+- apple-iphone-16e__white.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone finish-select images); background removed with PhotoRoom; product 1300x1585.
