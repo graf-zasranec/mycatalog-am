@@ -638,3 +638,35 @@
 - jbl-tune-720-bt__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1186x1348.
 
 - jbl-tune-flex__white.webp: official maker photo, transparent original; https://www.jbl.com (masterCatalog_Harman hero images); product 1366x1261.
+
+- bose-quietcomfort-ultra-headphones-2nd-gen__black.webp: official maker photo, transparent original; bose.com QCUH2 E-Comm Gallery 1; product 900x1129.
+
+- bose-quietcomfort-ultra-headphones-2nd-gen__gold.webp: official maker photo, transparent original; bose.com QCUH2 E-Comm Gallery 1; product 920x1130.
+
+- bose-quietcomfort-ultra-headphones-2nd-gen__violet.webp: official maker photo, transparent original; bose.com QCUH2 E-Comm Gallery 1; product 917x1125.
+
+- bose-quietcomfort-ultra-headphones-2nd-gen__white.webp: official maker photo, transparent original; bose.com QCUH2 E-Comm Gallery 1; product 901x1130.
+
+- bose-quietcomfort__black.webp: official maker photo, transparent original; bose.com QCH24_Black_001 (old photo showed the QC Ultra - wrong model); product 1814x2400.
+
+- bose-quietcomfort__white.webp: official maker photo, transparent original; bose.com QCH_White_400x300_x2 - only white silo Bose serves (800x600); old photo showed the QC Ultra - wrong model; product 426x561.
+
+- bose-quietcomfort-earbuds__black.webp: official maker photo, transparent original; bose.com QCEB25 ECOMM-GALLERY IMG-1; product 1305x1239.
+
+- bose-quietcomfort-earbuds__lilac.webp: official maker photo, transparent original; bose.com QCEB25 ECOMM-GALLERY IMG-1; product 1305x1239.
+
+- bose-quietcomfort-earbuds__white.webp: official maker photo, transparent original; bose.com QCEB25 ECOMM-GALLERY IMG-1; product 1305x1239.
+
+- bose-soundlink-revolve-ii__silver.webp: official maker photo, transparent original; bose.com SLRII_lux_silver_EC_hero; product 384x776.
+
+- bose-soundlink-revolve-ii__black.webp: official maker photo, transparent original; bose.com SLRII_Black_Ecom_1; product 384x777.
+
+- bose-quietcomfort-ultra__white-smoke.webp: official maker photo, transparent original; bose.co.uk QCUH_SF_PDP_Gallery_WhiteSmoke_x2_1; product 1085x1351.
+
+- bose-quietcomfort-ultra-earbuds__black.webp: official maker photo, transparent original; bose.co.uk SF_QCUEB_black_gallery_1; product 904x1025.
+
+- bose-quietcomfort-ultra-earbuds__white.webp: official maker photo, transparent original; bose.co.uk SF_QCUEB_white_gallery_1; product 909x1038.
+
+- bose-quietcomfort-ultra-earbuds__moonstone.webp: official maker photo, transparent original; bose.co.uk QCUEBLE24_MoonstoneBlue_PDP_GALLERY_SF_01; product 1043x1259.
+
+- bose-quietcomfort-se-wireless__black.webp: official maker photo, transparent original; bose.co.uk QC SE page, QC45_TripleBlack_001_RGB; product 1814x2400.

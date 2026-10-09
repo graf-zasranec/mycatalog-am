@@ -1209,9 +1209,20 @@ function setVals(k, f, pool) {
 }
 // One filter's control - or nothing at all, when the category is never asked this question or
 // every item in view answers it the same way.
+// A filter most of the section has no value for is a trap: an item with no figure drops out the
+// moment the filter is on, so "battery life 5 h+" hid 166 of 178 headphones for lack of data, not
+// because they last less (tools/filter-check.mjs, 2026-10-09). Offered only when half the section
+// can answer. Flags and yes/no read a missing value as "no", and only wired models have a plug.
+function covered(k, pool) {
+  const f = FILT[k];
+  if (k === 'brand' || k === 'shop' || k === 'hplug' || f.kind === 'flag' || f.kind === 'yn') return true;
+  const has = v => v != null && v !== '' && !(typeof v === 'number' && !v);
+  const live = pool.filter(hasReal);
+  return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 2 >= live.length;
+}
 function fdrop(k, pool) {
   const f = FILT[k];
-  if (!askable(k)) return '';
+  if (!askable(k) || !covered(k, pool)) return '';
   if (f.kind === 'flag') return varies(p => f.of(p, st))
     ? `<button class="toggle" data-f="${k}" aria-pressed="false">${esc(f.label())}</button>` : '';
   if (f.kind === 'min') {
@@ -1373,7 +1384,7 @@ function pruneFilters() {
   for (const k in FILT) {
     const f = FILT[k];
     // a question this category is never asked has no control to turn it off with again
-    if (!askable(k)) { if (f.kind === 'set') st[f.arr] = []; else st[k] = D[k]; continue; }
+    if (!askable(k) || !covered(k, pool)) { if (f.kind === 'set') st[f.arr] = []; else st[k] = D[k]; continue; }
     if (f.kind === 'set') st[f.arr] = (st[f.arr] || []).filter(v => pool.some(p => matches(p, { ...base, [f.arr]: [v] })));
     else if (st[k] && !pool.some(p => matches(p, { ...base, [k]: st[k] }))) st[k] = D[k];
   }
@@ -1554,6 +1565,8 @@ function mastHero() {
   const dl = deals();
   const sp = spotDeal(dl);
   const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
+  // what the catalogue lists: a product no shop sells today keeps its page but is not in the grid
+  const listed = DATA.filter(hasReal).length;
   return `<div class="cv${sp ? ' has-spot' : ''}">
       ${spotHTML(sp)}
       <div class="cv-l">
@@ -1566,7 +1579,7 @@ function mastHero() {
       </div>
     </div>
     <div class="cv-bar">
-      <div><b class="num">${DATA.length}</b><span>${esc(plw(DATA.length, 'models'))}</span></div>
+      <div><b class="num">${listed}</b><span>${esc(plw(listed, 'models'))}</span></div>
       <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(plw(Object.keys(P.shops || {}).length, 'shops'))}</span></div>
       <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
       ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}

@@ -1,0 +1,1 @@
+(function(s){requestAnimationFrame(function(){setTimeout(function(){s.split(' ').forEach(function(u){var e=document.createElement('script');e.src=u;e.async=false;document.head.appendChild(e)})})})})(document.currentScript.dataset.src);

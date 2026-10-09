@@ -461,6 +461,8 @@ function splitShell(shell) {
   return i < 0 ? { head: '', body: shell } : { head: shell.slice(0, i + 8), body: shell.slice(i + 8) };
 }
 
+// rAF runs just before the first frame, the timeout just after it.
+const BOOT_JS = `(function(s){requestAnimationFrame(function(){setTimeout(function(){s.split(' ').forEach(function(u){var e=document.createElement('script');e.src=u;e.async=false;document.head.appendChild(e)})})})})(document.currentScript.dataset.src);\n`;
 function writeBundle(file, content) {
   // Replace complete generated bundles atomically; Windows file watchers can
   // briefly hold the previous file open during an in-place rewrite.
@@ -550,12 +552,12 @@ function build({ inline, standalone }) {
   const browserPrices = { ...PRICES, offers: Object.fromEntries(Object.entries(PRICES.offers || {}).map(([id, list]) =>
     [id, list.map(({ image, title, ...offer }) => offer)])) };
   const prices = `const PRICES=${J(browserPrices)};\nconst DROPS=${J(DROPS)};\n`;
-  let ext = '';
+  const urls = [];
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
       const compact = transformSync(body, { minify: true, target: 'es2020', legalComments: 'none' }).code;
       writeBundle(f, compact);
-      ext += `<script defer src="${f}?v=${crypto.createHash('sha256').update(compact).digest('hex').slice(0, 10)}"><\/script>\n`;
+      urls.push(`${f}?v=${crypto.createHash('sha256').update(compact).digest('hex').slice(0, 10)}`);
     }
   }
   let appJs = '\n'
@@ -579,11 +581,16 @@ function build({ inline, standalone }) {
   appJs = appJs.replace(/\r\n/g, '\n');
   // Download all three scripts together, then execute in document order. The crawlable
   // catalogue stays usable while they load; an inline app would run before deferred data.
+  // They start AFTER the first paint: every page is prerendered, and as plain defer scripts their
+  // 450 KB landed ahead of the first frame on a phone - PageSpeed mobile put FCP at 2.9 s and LCP
+  // (the home h1, already in the HTML) at 4.8 s, score 73. async=false keeps them in order.
   let script;
   if (lazy) {
     appJs = transformSync(appJs, { minify: true, target: 'es2020', legalComments: 'none' }).code;
     writeBundle('data/site-app.js', appJs);
-    script = '\n' + ext + `<script defer src="data/site-app.js?v=${crypto.createHash('sha256').update(appJs).digest('hex').slice(0, 10)}"><\/script>\n`;
+    urls.push(`data/site-app.js?v=${crypto.createHash('sha256').update(appJs).digest('hex').slice(0, 10)}`);
+    writeBundle('data/site-boot.js', BOOT_JS);
+    script = `\n<script defer src="data/site-boot.js?v=${crypto.createHash('sha256').update(BOOT_JS).digest('hex').slice(0, 10)}" data-src="${urls.join(' ')}"><\/script>\n`;
   } else script = '\n<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);

@@ -845,6 +845,7 @@ if (process.argv[2] === '--selftest') {
     ['electrolux-air-fryer-eaf7sb', 'Air Fryer Electrolux EAF7SB'],
     ['electrolux-create-5-e5af1-4gb', 'Air Fryer Electrolux Е5AF1-4GB Create 5'],
     ['philips-airfryer-hd9252-90', 'Air Fryer Philips HD9252/90'],
+    ['philips-airfryer-hd9252-90', 'PHILIPS HD9252/90 Air Fryers'],   // VLV
     ['tefal-easy-fry-compact-ey101815', 'Air Fryer Tefal EY101815 Easy Fry Compact'],
     ['bo-beosound-a1-2', 'Speaker Bang &amp; Olufsen Beosound A1 black 2nd Gen Portable'],
     ['bo-beosound-a1-2', 'Speaker Bang &amp; Olufsen Beosound A1 pink 2nd Gen Portable speaker'],

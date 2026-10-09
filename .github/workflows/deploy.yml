@@ -49,7 +49,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           # photos-needed.json goes with them: it is published for whoever is finding
           # images, and a stale copy is worse than none.
-          git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
+          git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
           git diff --staged --quiet && echo "no price changes" && exit 0
           git commit -m "prices: $(date -u +%Y-%m-%d)"
           # a code push during the crawl made this copy stale and the push was refused (twice,
@@ -58,7 +58,7 @@ jobs:
             git fetch origin main
             git rebase -X theirs origin/main
             node build.mjs
-            git add data/site-prices.js data/site-products.js data/site-app.js data/site-ui.css data/thumbnails.json images/thumb data/page-manifest.json index.html p c b ru en sitemap.xml
+            git add data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/site-ui.css data/thumbnails.json images/thumb data/page-manifest.json index.html p c b ru en sitemap.xml
             git commit --amend --no-edit
             git push
           }
