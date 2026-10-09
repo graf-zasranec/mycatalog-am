@@ -472,3 +472,37 @@
 - sony-ps5-dualsense__alpine-green.webp: verified exact color; https://allsell.am/en/ps5-dualsense-tm-wireless-controller-alpine-green; original https://allsell.am/media/catalog/product/n/e/new_project_2__20.png; PhotoRoom cutout 1100x1100; one product, no enlargement.
 
 - sony-wh-ch520__white.webp: verified exact color; https://allsell.am/en/sony-wh-ch520; original https://allsell.am/media/catalog/product/n/e/new_project_18__4_2.jpg; PhotoRoom cutout 1100x1100; one product, no enlargement.
+
+- apple-iphone-13__blue.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone-13-finish-select-202207); background removed with PhotoRoom; product 1280x1740.
+
+- apple-iphone-13__green.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone-13-finish-select-202207); background removed with PhotoRoom; product 1279x1739.
+
+- apple-iphone-13__midnight.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone-13-finish-select-202207); background removed with PhotoRoom; product 1279x1739.
+
+- apple-iphone-13__pink.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone-13-finish-select-202207); background removed with PhotoRoom; product 1280x1740.
+
+- apple-iphone-13__starlight.webp: official maker photo; https://store.storeimages.cdn-apple.com (iphone-13-finish-select-202207); background removed with PhotoRoom; product 1281x1740.
+
+- samsung-galaxy-s24__amber-yellow.webp: official maker photo; https://images.samsung.com/is/image/samsung/p6pim/uk/2401/gallery (SM-S921B); background removed with PhotoRoom; product 841x1018.
+
+- samsung-galaxy-s24__cobalt-violet.webp: official maker photo; https://images.samsung.com/is/image/samsung/p6pim/uk/2401/gallery (SM-S921B); background removed with PhotoRoom; product 841x1018.
+
+- sennheiser-accentum-plus__black.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1565x1738.
+
+- sennheiser-accentum-plus__white.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1564x1738.
+
+- sennheiser-accentum-true-wireless-atw1__black.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1926x2096.
+
+- sennheiser-accentum-true-wireless-atw1__blue.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1926x2096.
+
+- sennheiser-accentum-true-wireless-atw1__white.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1926x2094.
+
+- sennheiser-accentum-wireless-acaebt__black.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 803x1760.
+
+- sennheiser-accentum-wireless-acaebt__white.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 804x1758.
+
+- sennheiser-momentum-sport-msport1__black.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1773x1705.
+
+- sennheiser-momentum-sport-msport1__graphite.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1773x1705.
+
+- sennheiser-momentum-sport-msport1__olive.webp: official maker photo; https://us.sennheiser-hearing.com/cdn/shop/files (official product images); background removed with PhotoRoom; product 1773x1755.
