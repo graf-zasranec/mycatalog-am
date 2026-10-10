@@ -1677,6 +1677,6 @@
 
 - apple-ipad-pro-11-m5__space-black.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/4/2/42649681_1_1.png; product 1007x1157.
 
-- apple-ipad-pro-11-m5__silver.webp: web photo, background removed with PhotoRoom; https://ipowerresale.com/cdn/shop/files/media_9a27b6c1-6732-4dfb-9cca-08c9c4706b05.png; product 785x900.
+- apple-ipad-pro-11-m5__silver.webp: web photo, background removed with PhotoRoom; https://alasil.ae/cdn/shop/files/iPad_Pro-Silver-1.webp; product 785x900.
 
 - bo-beosound-balance__black-oak.webp: web photo, background removed with PhotoRoom; https://luxussound.com/cdn/shop/products/black.jpg; product 1062x2075.
