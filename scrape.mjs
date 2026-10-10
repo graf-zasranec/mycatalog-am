@@ -1757,6 +1757,15 @@ const SHOPS = {
       // their exact configurations can be checked instead of remaining undated.
       const known = [...Object.entries(prev.offers || {}).flatMap(([id, list]) =>
         list.filter(o => o.shop === 'ucom' && safeUrl(o.url)).map(o => ({ ...o, id, fromBacklog: true })))];
+      // Ucom has no sitemap and refuses ?p=, so a product past a category's first page is only
+      // found from a list: data/ucom-seed.txt, one product url per line (e.g. from an export).
+      try {
+        for (const u of fs.readFileSync('data/ucom-seed.txt', 'utf8').split('\n').map(s => s.trim()).filter(s => s.startsWith('https://shop.ucom.am/'))) {
+          const words = u.split('/').pop().replace(/\.html$/, '').replace(/-/g, ' ');
+          const id = matchPhone(words);
+          if (id && safeUrl(u)) known.push({ id, url: u, title: words, fromBacklog: true });
+        }
+      } catch { }
       const seen = new Set();
       for (const f of [...found, ...known]) {
         if (seen.has(f.url)) continue;
