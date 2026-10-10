@@ -1174,3 +1174,39 @@
 - honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg__white.webp: official maker photo, transparent original; honor.com official product-list image (www-file.honor.com); product 560x399.
 
 - honor-choice-infowear-2i-kch-wb01__white.webp: official maker photo, transparent original; honor.com official product-list image (www-file.honor.com) (HONOR CHOICE Smart Watch 2i = rossini-smartwatch-2i); product 456x532.
+
+- xiaomi-17t__black.webp: official maker photo, transparent original; mi.com/uk buy page colour gallery image (i05.appmifile.com, 1600px transparent); product 817x1288.
+
+- xiaomi-17t__blue.webp: official maker photo, transparent original; mi.com/uk buy page colour gallery image (i05.appmifile.com, 1600px transparent); product 817x1288.
+
+- apple-ipad-mini-6__starlight.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1800px), background removed where opaque; product 1454x1468.
+
+- dyson-hs08-i-d__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1800px), background removed where opaque; product 783x1435.
+
+- dyson-hs08-i-d__bronze-pink.webp: shop photo (not maker); Armenian shop photo of this exact colour (ibolit.mobi, 700px), background removed where opaque; product 362x648.
+
+- dyson-hs08-i-d__ceramic-patina-topaz.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1800px), background removed where opaque; product 1002x1416.
+
+- dyson-hs08-i-d__jasper-plum.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1800px), background removed where opaque; product 838x1548.
+
+- dyson-hs08-i-d__pink.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1800px), background removed where opaque; product 854x1526.
+
+- dyson-hs08-i-d__red.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1800px), background removed where opaque; product 825x1506.
+
+- realme-note-60x__green.webp: shop photo (not maker); Armenian shop photo of this exact colour (mobilecentre.am, 550px), background removed where opaque; product 415x438.
+
+- samsung-galaxy-a36__awesome-lime.webp: shop photo (not maker); Armenian shop photo of this exact colour (ibolit.mobi, 700px), background removed where opaque; product 510x652.
+
+- sony-wf-1000xm6__silver.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1200px), background removed where opaque; product 609x858.
+
+- xiaomi-poco-m7__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (mobilecentre.am, 550px), background removed where opaque; product 411x488.
+
+- xiaomi-poco-m8-5g__green.webp: shop photo (not maker); Armenian shop photo of this exact colour (ibolit.mobi, 700px), background removed where opaque; product 450x526.
+
+- xiaomi-poco-m8-5g__silver.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1200px), background removed where opaque; product 752x890.
+
+- xiaomi-portable-bluetooth-speaker__black.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 320px), background removed where opaque; product 219x304.
+
+- xiaomi-redmi-note-15-pro-plus-5g__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1200px), background removed where opaque; product 672x867.
+
+- yandex-station-mini__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (allsell.am, 265px), background removed where opaque; product 265x248.
