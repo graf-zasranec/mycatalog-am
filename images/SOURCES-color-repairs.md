@@ -1108,3 +1108,7 @@
 - dji-mavic-3-pro__main.webp: official maker photo, transparent original; store.dji.com product cover 1280px transparent (se-cdn.djiits.com spu cover); product 1020x703.
 
 - nothing-cmf-watch-pro__main.webp: official maker photo, transparent original; nothing.tech product image CMF-Watch-Pro_Metallic-Grey_1.png (Shopify original, transparent); product 618x703.
+
+- lenovo-82yu016tpb__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com, V15 G4 AMN), AMD badge removed; product 1677x1399.
+
+- dell-pro-e2425hm__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 2000x1770.
