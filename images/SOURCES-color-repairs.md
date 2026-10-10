@@ -1296,3 +1296,15 @@
 - sony-wh-ch520__beige.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1887.
 
 - sony-wh-ch520__pink.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1888.
+
+- google-pixel-10a__obsidian.webp: official maker photo, transparent original; Google Store official product image (lh3.googleusercontent.com, 1024px transparent), same back pose for every colour; product 365x765.
+
+- samsung-galaxy-buds-fe__white.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 943x439.
+
+- sony-wh-ch520__black.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1885.
+
+- sony-wh-ch520__white.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1888.
+
+- sony-wh-ch520__yellow.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1889.
+
+- sony-wh-ch720n__blue.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1413x1920.
