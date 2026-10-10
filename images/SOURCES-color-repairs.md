@@ -1664,3 +1664,7 @@
 - tcl-85c7l-sqd-miniled__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/r/e/re-00107280-1.jpeg; product 879x745.
 
 - xiaomi-vacuum-6-max__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/6/c/6cc1210d5b3c8bf9fd9801b668dca8edb95c6512071ee88ee4a86e9ab118d2a5.jpg.jpeg; product 1171x795.
+
+- jbl-go-5__purple.webp: owner's photo, transparent original; product 2060x1622.
+
+- xiaomi-mjia-smart-air-purifier-6-bhr08mzeu__main.webp: owner's photo, transparent original; product 525x1177.
