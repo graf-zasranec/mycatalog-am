@@ -1436,6 +1436,22 @@ const enrich = (o) => ({
 });
 
 /* ---------- shops ---------- */
+// All 21 shops gave the owner crawling approval (2026-10-10), so a category is read page by page
+// (?p=2, ?p=3 ...) instead of its first page only. Stops at the first page that adds no product
+// link it has not seen - Magento repeats the last page for any p past the end.
+async function* catPages(base, linkRe, max = 40) {
+  const seen = new Set();
+  for (let p = 1; p <= max; p++) {
+    const html = await get(p === 1 ? base : `${base}?p=${p}`);
+    await sleep(DELAY_MS);
+    if (!html) return;
+    const links = (html.match(linkRe) || []).filter(u => !seen.has(u));
+    if (p > 1 && !links.length) return;
+    links.forEach(u => seen.add(u));
+    yield html;
+  }
+}
+
 const SHOPS = {
   ispace: {
     name: 'iSpace', site: 'https://ispace.am', note: 'Apple Premium Reseller',
@@ -1710,10 +1726,7 @@ const SHOPS = {
       const CATS = ['smartphones', 'tablets', 'smart-watches-bands', 'headphones', 'apple-products',
                     'macbooks', 'notebooks', 'tv', 'speakers', 'gadgets', 'cameras',
                     'smart-home-devices', '5g'];
-      for (const cat of CATS) {
-        const html = await get(`https://shop.ucom.am/am/${cat}.html`);
-        await sleep(DELAY_MS);
-        if (!html) continue;
+      for (const cat of CATS) for await (const html of catPages(`https://shop.ucom.am/am/${cat}.html`, /https:\/\/shop\.ucom\.am\/am\/[a-z0-9-]+\.html/g)) {
         // Magento product grid: one <a class="product-item-link"> and one data-price-amount each
         const blocks = html.split('product-item-info').slice(1);
         for (const b of blocks) {
@@ -2121,10 +2134,7 @@ const SHOPS = {
       // Accessories is left out: the catalogue does not carry them.
       const CATS = ['phones', 'tablets', 'watches', 'computers'];
       const out = [];
-      for (const cat of CATS) {
-        const html = await get(`https://www.yerevanmobile.am/en/electronics/${cat}.html`);
-        await sleep(DELAY_MS);
-        if (!html) continue;
+      for (const cat of CATS) for await (const html of catPages(`https://www.yerevanmobile.am/en/electronics/${cat}.html`, /https:\/\/www\.yerevanmobile\.am\/en\/[a-z0-9-]+\.html/g)) {
         // Magento product grid. Ucom's index-scanning does not transfer: here the anchor writes
         // href BEFORE class, so reading "the first url in the block" picks up a hover widget
         // rather than the product. Match the anchor itself.
@@ -3020,6 +3030,19 @@ const missN = [...MISSED.values()].reduce((n, m) => n + m.size, 0);
 const missPriced = [...MISSED.values()].reduce((n, m) => n + [...m.values()].filter(r => r.price).length, 0);
 console.log(`${missN} title(s) on the shelves that the catalogue has no entry for -> ${MISSF}`);
 if (missPriced) console.log(`   ${missPriced} of them carry a price and a link, so tools/add.mjs can read them`);
+
+// An offer nobody has seen on the shop's own page for STALE_DAYS is gone, not slow: on 2026-10-10
+// a hand check of the 92 rows older than three days found 26 sold out or delisted and 18 repriced.
+// Carrying them showed buyers prices they could not pay. Dropped here, after every carry-forward.
+const STALE_DAYS = 3;
+const staleCut = new Date(Date.parse(TODAY) - STALE_DAYS * 864e5).toISOString().slice(0, 10);
+let staleN = 0;
+for (const [id, list] of Object.entries(offers)) {
+  const fresh = list.filter(o => !o.seen || o.seen >= staleCut);
+  staleN += list.length - fresh.length;
+  if (fresh.length) offers[id] = fresh; else delete offers[id];
+}
+if (staleN) console.log(`${staleN} offer(s) not seen since before ${staleCut} dropped as stale`);
 
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),

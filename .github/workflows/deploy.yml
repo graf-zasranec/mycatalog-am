@@ -56,13 +56,18 @@ jobs:
           git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
           git diff --staged --quiet && echo "no price changes" && exit 0
           git commit -m "prices: $(date -u +%Y-%m-%d)"
-          # a code push during the crawl made this copy stale and the push was refused (twice,
-          # 2026-10-03/04): replay onto the new main, keep tonight's data, rebuild with the new code
-          git push || {
+          # A push made during the 3-hour crawl leaves this copy behind and the push is refused
+          # (2026-10-03/04, 10-10). Replay tonight's commit onto the new main, keep tonight's data,
+          # rebuild with the new code, and try again - three times, as pushes can land meanwhile.
+          # The refresh also leaves files it does not commit (spec caches and the like); git will
+          # not rebase over them, which is what lost the whole run on 10-10, so set them aside.
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git stash push --include-untracked -m leftovers || true
             git fetch origin main
-            git rebase -X theirs origin/main
+            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
             node build.mjs
             git add data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/site-ui.css data/thumbnails.json images/thumb data/page-manifest.json index.html p c b ru en sitemap.xml
             git commit --amend --no-edit
-            git push
-          }
+          done
+          exit 1
