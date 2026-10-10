@@ -1132,3 +1132,9 @@
 - google-pixel-10a__porcelain.webp: official maker photo, transparent original; Google Store official product image (lh3.googleusercontent.com, 1024px transparent), same back pose for every colour; product 365x765.
 
 - google-pixel-10a__lavender.webp: official maker photo, transparent original; Google Store official product image (lh3.googleusercontent.com, 1024px transparent), same back pose for every colour; product 365x765.
+
+- samsung-galaxy-s25__pinkgold.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
+
+- samsung-galaxy-s25__blueblack.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
+
+- samsung-galaxy-ultra-47mm-2024__titanium-silver.webp: official maker photo, transparent original; samsung.com/us p6pim gallery front r-perspective view, 2000px png-alpha request; product 400x484.
