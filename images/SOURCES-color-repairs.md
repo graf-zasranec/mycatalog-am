@@ -1272,3 +1272,9 @@
 - dyson-hs08-i-d__bronze-blue-pink.webp: web photo (not maker); Google Images (Large) result from cdn.microless.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 853x1599.
 
 - jbl-boombox-3__black-camo.webp: web photo (not maker); Google Images (Large) result from ca.jbl.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 1367x768.
+
+- google-pixel-10a__obsidian.webp: Google Store original, AI re-rendered at 2048px with Nano Banana (gemini.google.com) - same product/pose/colour, checked against original; product 900x1887.
+
+- yandex-station-mini__black.webp: web photo (not maker); (onbook.by via Google Images Large), Yandex Station Mini 2 without clock, black; background removed; product 886x800.
+
+- yandex-station-mini__blue.webp: same file as __main (the main shot is the blue no-clock Mini).
