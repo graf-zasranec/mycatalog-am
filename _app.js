@@ -203,21 +203,27 @@ const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch
 
 // The price filter compares against each phone's CHEAPEST offer, so the slider bounds have to be
 // built from those same numbers. Using the priciest variant here left the top of the range inert.
-const _allPrices = DATA.map(p => {
+const _cheapest = p => {
   const real = (typeof PRICES !== 'undefined' && PRICES.offers && PRICES.offers[p.id]) || [];
   return real.length ? Math.min(...real.map(o => o.price)) : p.priceAmd;
-// One missing or malformed price would make PMIN/PMAX NaN, and every comparison against NaN is
-// false, so the catalogue would silently render empty with no clue why.
-}).filter(Number.isFinite);
-const PMIN = Math.floor(Math.min(..._allPrices) / 5000) * 5000;
-const PMAX = Math.ceil(Math.max(..._allPrices) / 5000) * 5000;
-// The saved price range was chosen against an older price list. Prices move every night now,
-// so a stale range silently hides phones that drifted outside it. Remember the bounds the
-// filter was set against and reset it whenever the catalogue's own range has changed.
-if (!st.pmin || !st.pmax || st.bounds?.[0] !== PMIN || st.bounds?.[1] !== PMAX) {
-  st.pmin = PMIN; st.pmax = PMAX;
+};
+// The slider spans the section being browsed, not the whole catalogue: phones on a scale that
+// runs to a 5-million TV left the whole phone range in the first few pixels.
+let PMIN = 0, PMAX = 0;
+function setBounds() {
+  // One missing or malformed price would make PMIN/PMAX NaN, and every comparison against NaN is
+  // false, so the catalogue would silently render empty with no clue why.
+  const ps = DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat).map(_cheapest).filter(Number.isFinite);
+  PMIN = Math.floor(Math.min(...ps) / 5000) * 5000;
+  PMAX = Math.ceil(Math.max(...ps) / 5000) * 5000;
+  // The saved range was chosen against older bounds (another section, or yesterday's prices).
+  // A stale range silently hides products outside it, so reset it whenever the bounds move.
+  if (!st.pmin || !st.pmax || st.bounds?.[0] !== PMIN || st.bounds?.[1] !== PMAX) {
+    st.pmin = PMIN; st.pmax = PMAX;
+  }
+  st.bounds = [PMIN, PMAX];
 }
-st.bounds = [PMIN, PMAX];
+setBounds();
 st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id)).slice(0, MAXCMP);
 
 const BRANDS = [...new Set(DATA.map(p => p.brand))].sort();
@@ -2843,6 +2849,7 @@ function render(keepScroll) {
   const wasCat = st.cat;
   st.cat = mc !== null ? mc : (h === '/' ? '' : st.cat);
   if (st.cat !== wasCat) { pruneFilters(); if (!sortKeys().includes(st.sort)) st.sort = 'popular'; }
+  setBounds();
   // A product folded into another by tools/merge.mjs: an old link lands on the survivor.
   const was = h.match(/^\/(p|offers)\/(.+)$/);
   const into = was && !byId(was[2]) && typeof MERGED !== 'undefined' && MERGED[was[2]];
