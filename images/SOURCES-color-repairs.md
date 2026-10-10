@@ -1506,3 +1506,149 @@
 - xiaomi-gaming-g25i-2026__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1600x1255.
 
 - xiaomi-pad-8-pro__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 373x563.
+
+- asus-vivobook-15-6-r5-silver-m1502naq-bq255__main.webp: web photo (shop/maker page, background removed); https://nout.am/storage/products/MPf919d724640031/base_large.webp; product 732x433.
+
+- dreame-vacuum-d30-ultra-eua__main.webp: web photo (shop/maker page, background removed); https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/r/x/rxuqu0mwcbhgipo4j8ymifqhvdbiylyhob6-7jg38bbkwmozon0whlvihzrcw1vbxtyl4ggywi4uh5qbqluirz3a0uxeppnovruybt8ykigfxcbu66okn9vm9df9qryorbnprqhnr2r3iopusg-ktn6g_rvgkyk3sgb5ek1l7qeh1rr_c4poecb6smchpukg.jpg; product 930x930.
+
+- dreame-vacuum-l40-eub__main.webp: web photo (shop/maker page, background removed); https://vega.am/image/catalog/1HRACH/2020/2021/2025/Hoktember/Robot%20Poshekul/L40%20EUB%20(RLL42SDA)%20(4).jpg; product 1193x957.
+
+- dreame-vacuum-l40-ultra-ae__main.webp: web photo (shop/maker page, background removed); https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/b/a/base_large.jpeg; product 593x742.
+
+- dreame-vacuum-l50-ultra-ae-eua__main.webp: web photo (shop/maker page, background removed); https://ge.dreametech.com/wp-content/uploads/2026/06/Dreame-L50-Ultra-AE-Black.webp; product 880x787.
+
+- dreame-vacuum-l50s-pro-ultra-eua__main.webp: web photo (shop/maker page, background removed); https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/6/1/61f4fspn0pl._ac_sl1500_.jpg; product 1332x1200.
+
+- dreame-vacuum-x60-pro-master__main.webp: web photo (shop/maker page, background removed); https://vlv.am/public/uploads/images/16-09-2026/6aaa371e85c05.webp; product 1121x875.
+
+- dreame-vacuum-x60-ultra-complete__main.webp: web photo (shop/maker page, background removed); https://decora-group.ams3.cdn.digitaloceanspaces.com/domus/media/121525/Dreame-RLX87DE-White-(1)---Domus.jpg; product 986x936.
+
+- garmin-tactix-8-47-mm-amoled__main.webp: web photo (shop/maker page, background removed); https://m.media-amazon.com/images/I/61U2PzzX2dL._AC_UF1000,1000_QL80_.jpg; product 815x996.
+
+- garmin-tactix-8-51-mm-amoled__main.webp: web photo (shop/maker page, background removed); https://garminco.ru/upload/dev2fun.imagecompress/webp/iblock/16c/s9csbvelmmpb3jjpufj0143i1qlnjyb1.webp; product 696x848.
+
+- harman-kardon-citation-sub__black.webp: web photo (shop/maker page, background removed); https://www.hifix.co.uk/wp-content/uploads/2023/11/products-53599-1_1.jpg; product 713x710.
+
+- hp-15-6-core-3-100u-d05wsea__main.webp: web photo (shop/maker page, background removed); https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/h/p/hp-15-fc0843au-ryzen-5-laptop-pakistan-1-78721-0-150726114153316.jpg; product 868x702.
+
+- jbl-go-5__black.webp: web photo (shop/maker page, background removed); https://snpi.dell.com/snp/images/products/large/en-us~AD614432/AD614432.jpg; product 1383x1091.
+
+- jbl-tune-530c__beige.webp: web photo (shop/maker page, background removed); https://m.media-amazon.com/images/I/61s-QWTCekL.jpg; product 1331x1482.
+
+- jbl-tune-780nc__black.webp: web photo (shop/maker page, background removed); https://m.media-amazon.com/images/I/71TLeQwUHSL._AC_UF894,1000_QL80_.jpg; product 869x999.
+
+- jbl-tune-780nc__blue.webp: web photo (shop/maker page, background removed); https://m.media-amazon.com/images/I/61uZqcci1OL._AC_UF1000,1000_QL80_.jpg; product 900x1000.
+
+- lenovo-ideapad-slim-3-15-3-r7-83k700hrrk__main.webp: web photo (shop/maker page, background removed); https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15ARP10/IdeaPad_Slim_3_15ARP10_CT2_11.png; product 1656x1114.
+
+- lenovo-thinkpad-e16-g3-16-core-5-210h-21tf004rfw__main.webp: web photo (shop/maker page, background removed); https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_CT1_01.png; product 1614x1369.
+
+- lenovo-thinkpad-t16-gen-5-16-ultra-5-21wt0059fw__main.webp: web photo (shop/maker page, background removed); https://media.ldlc.com/r1600/ld/products/00/06/36/53/LD0006365346.jpg; product 1394x1043.
+
+- lenovo-thinkpad-t16-gen-5-16-ultra-7-21wt005cfw__main.webp: web photo (shop/maker page, background removed); https://media.ldlc.com/r1600/ld/products/00/06/36/53/LD0006365346.jpg; product 1394x1043.
+
+- lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1__main.webp: web photo (shop/maker page, background removed); https://www.lg.com/content/dam/channelbtb/lgcom/global/images/business/15u50t/15u50t-g_aa53j_ekhq_global_b/gallery/large02.jpg; product 1138x866.
+
+- panasonic-tx-50mx700e__main.webp: web photo (shop/maker page, background removed); https://pl.panasonic.com/wp-content/uploads/2023/11/TX-50MX700E_001.jpg; product 1920x1238.
+
+- sennheiser-accentum__main.webp: web photo (shop/maker page, background removed); https://m.media-amazon.com/images/I/71St1R5DFGL.jpg; product 1384x1841.
+
+- sony-wi-c100__blue.webp: web photo (shop/maker page, background removed); https://m.media-amazon.com/images/I/51r5oHmkC+L.jpg; product 1408x1746.
+
+- xiaomi-a27i-2026__main.webp: web photo (shop/maker page, background removed); https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-monitor-a27i-2026/m/8c582b290f2f811899a79c532cca3ed4.jpg; product 850x975.
+
+- xiaomi-vacuum-h40-bhr07xbeu__main.webp: web photo (shop/maker page, background removed); https://yerevanmobile.am/media/catalog/product/cache/07720dad39bc68bc6b838050c0f2e34d/h/4/h40_ov51_white_bhr07xbeu_1_-2000x1500.jpg; product 1055x1038.
+
+- xiaomi-vacuum-h50-bhr08gueu__main.webp: web photo (shop/maker page, background removed); https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-robot-vacuum-h50/m/xiaomirobotvacumh50_m1.jpg; product 530x662.
+
+- xiaomi-vacuum-h50-pro-bhr089neu__main.webp: web photo (shop/maker page, background removed); https://i02.appmifile.com/838_operatorx_operatorx_xm/15/01/2026/f6830a3668ddf44500b6b2c9991924e6.png; product 1000x1151.
+
+- xiaomi-vacuum-s40-bhr084aeu__main.webp: web photo (shop/maker page, background removed); https://notebookcentre.am/storage/products/images/202606121020388.webp; product 1269x610.
+
+- xiaomi-vacuum-s40c-bhr9664eu__main.webp: web photo (shop/maker page, background removed); https://i02.appmifile.com/152_item_ae/07/08/2025/f512a303ef6097d634cc5ad7090a8b7d.png; product 1115x744.
+
+- yandex-station-duo-max__main.webp: web photo (shop/maker page, background removed); https://basket-13.wbbasket.ru/vol1937/part193725/193725832/images/big/1.webp; product 800x818.
+
+- lenovo-thinkpad-e16-gen-4-16-ultra-7-21yc003tfw__main.webp: official maker photo, transparent original; https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_CT1_01.png; product 1609x1391.
+
+- asus-vivobook-15-6-r5-silver-m1502naq-bq255__main.webp: web photo, background removed with PhotoRoom; https://nout.am/storage/products/MPf919d724640031/base_large.webp; product 731x430.
+
+- dreame-vacuum-l40-eub__main.webp: web photo, background removed with PhotoRoom; https://vega.am/image/catalog/1HRACH/2020/2021/2025/Hoktember/Robot%20Poshekul/L40%20EUB%20(RLL42SDA)%20(4).jpg; product 1155x897.
+
+- dreame-vacuum-x60-ultra-complete__main.webp: web photo, background removed with PhotoRoom; https://decora-group.ams3.cdn.digitaloceanspaces.com/domus/media/121525/Dreame-RLX87DE-White-(1)---Domus.jpg; product 983x933.
+
+- harman-kardon-citation-sub__black.webp: web photo, background removed with PhotoRoom; https://www.hifix.co.uk/wp-content/uploads/2023/11/products-53599-1_1.jpg; product 703x666.
+
+- hp-15-6-core-3-100u-d05wsea__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/h/p/hp-15-fc0843au-ryzen-5-laptop-pakistan-1-78721-0-150726114153316.jpg; product 866x698.
+
+- jbl-go-5__black.webp: web photo, background removed with PhotoRoom; https://snpi.dell.com/snp/images/products/large/en-us~AD614432/AD614432.jpg; product 1379x1084.
+
+- jbl-go-5__purple.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/34/04/LD0006340427.jpg; product 741x1365.
+
+- jbl-go-5__white.webp: web photo, background removed with PhotoRoom; https://www.worldshop.eu/media/Image/desktopWidthDesktop-webp/.f5zvQmAa/Image-45814/jbl-go-5-bluetooth-speaker-white.webp; product 1031x1266.
+
+- jbl-tune-530__white.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/30/65/LD0006306501.jpg; product 1325x1474.
+
+- jbl-tune-530c__beige.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61s-QWTCekL.jpg; product 1330x1480.
+
+- jbl-tune-530c__black.webp: web photo, background removed with PhotoRoom; https://www.jbhifi.com.au/cdn/shop/files/883622-Product-0-I-639067910405139685.jpg?v=1771194316; product 1331x1482.
+
+- jbl-tune-770nc__purple.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61NudoNt44L.jpg; product 1291x1502.
+
+- jbl-tune-770nc__white.webp: web photo, background removed with PhotoRoom; https://ecityuae.ae/cdn/shop/files/6925281974564_5.jpg?v=1715391908&width=1445; product 706x818.
+
+- jbl-tune-780nc__black.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/71TLeQwUHSL._AC_UF894,1000_QL80_.jpg; product 868x966.
+
+- jbl-tune-780nc__blue.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61uZqcci1OL._AC_UF1000,1000_QL80_.jpg; product 896x997.
+
+- lenovo-ideapad-slim-3-15-3-r7-83k700hrrk__main.webp: web photo, background removed with PhotoRoom; https://psrefstuff.lenovo.com/syspool/Sys/Image/IdeaPad/IdeaPad_Slim_3_15ARP10/IdeaPad_Slim_3_15ARP10_CT2_11.png; product 1651x1109.
+
+- lenovo-thinkpad-e16-g3-16-core-5-210h-21tf004rfw__main.webp: web photo, background removed with PhotoRoom; https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_CT1_01.png; product 1609x1366.
+
+- lenovo-thinkpad-e16-gen-4-16-ultra-7-21yc003tfw__main.webp: web photo, background removed with PhotoRoom; https://psrefstuff.lenovo.com/syspool/Sys/Image/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_CT1_01.png; product 1609x1365.
+
+- lenovo-thinkpad-t16-gen-5-16-ultra-5-21wt0059fw__main.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/36/53/LD0006365346.jpg; product 1376x1010.
+
+- sennheiser-accentum__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/71St1R5DFGL.jpg; product 1376x1833.
+
+- sony-mdr-g300__white.webp: web photo, background removed with PhotoRoom; https://d1ncau8tqf99kp.cloudfront.net/converted/104775_original_local_1200x1050_v3_converted.webp; product 2005x2400.
+
+- sony-wi-c100__black.webp: web photo, background removed with PhotoRoom; https://sonyworld.eg/cdn/shop/files/wi-c100.jpg?v=1740472247&width=1080; product 488x728.
+
+- sony-wi-c100__blue.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/51r5oHmkC+L.jpg; product 1396x1738.
+
+- xiaomi-vacuum-h40-bhr07xbeu__main.webp: web photo, background removed with PhotoRoom; https://yerevanmobile.am/media/catalog/product/cache/07720dad39bc68bc6b838050c0f2e34d/h/4/h40_ov51_white_bhr07xbeu_1_-2000x1500.jpg; product 1047x1059.
+
+- xiaomi-vacuum-h50-bhr08gueu__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-robot-vacuum-h50/m/xiaomirobotvacumh50_m1.jpg; product 529x660.
+
+- xiaomi-vacuum-h50-pro-bhr089neu__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/838_operatorx_operatorx_xm/15/01/2026/f6830a3668ddf44500b6b2c9991924e6.png; product 997x1149.
+
+- xiaomi-vacuum-s40-bhr084aeu__main.webp: web photo, background removed with PhotoRoom; https://notebookcentre.am/storage/products/images/202606121020388.webp; product 1072x598.
+
+- xiaomi-vacuum-s40c-bhr9664eu__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/152_item_ae/07/08/2025/f512a303ef6097d634cc5ad7090a8b7d.png; product 1114x742.
+
+- yandex-station-duo-max__main.webp: web photo, background removed with PhotoRoom; https://basket-13.wbbasket.ru/vol1937/part193725/193725832/images/big/1.webp; product 795x814.
+
+- dreame-vacuum-d30-ultra-eua__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/r/x/rxuqu0mwcbhgipo4j8ymifqhvdbiylyhob6-7jg38bbkwmozon0whlvihzrcw1vbxtyl4ggywi4uh5qbqluirz3a0uxeppnovruybt8ykigfxcbu66okn9vm9df9qryorbnprqhnr2r3iopusg-ktn6g_rvgkyk3sgb5ek1l7qeh1rr_c4poecb6smchpukg.jpg; product 926x925.
+
+- dreame-vacuum-l40-ultra-ae__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/b/a/base_large.jpeg; product 584x736.
+
+- dreame-vacuum-l50-ultra-ae-eua__main.webp: web photo, background removed with PhotoRoom; https://ge.dreametech.com/wp-content/uploads/2026/06/Dreame-L50-Ultra-AE-Black.webp; product 877x783.
+
+- dreame-vacuum-l50s-pro-ultra-eua__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/6/1/61f4fspn0pl._ac_sl1500_.jpg; product 1329x1195.
+
+- dreame-vacuum-x60-pro-master__main.webp: web photo, background removed with PhotoRoom; https://vlv.am/public/uploads/images/16-09-2026/6aaa371e85c05.webp; product 1116x867.
+
+- garmin-epix-pro-sapphire-edition-47-mm__main.webp: web photo, background removed with PhotoRoom; https://www.granarelli.com/cdn/shop/files/EpixPro47_HR_4001.106.jpg?v=1716643302&width=1214; product 550x755.
+
+- garmin-tactix-8-47-mm-amoled__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61U2PzzX2dL._AC_UF1000,1000_QL80_.jpg; product 812x943.
+
+- garmin-tactix-8-51-mm-amoled__main.webp: web photo, background removed with PhotoRoom; https://garminco.ru/upload/dev2fun.imagecompress/webp/iblock/16c/s9csbvelmmpb3jjpufj0143i1qlnjyb1.webp; product 687x800.
+
+- honor-magicbook-x16-plus-16-core-16-1-w11h-5301alvv__main.webp: web photo, background removed with PhotoRoom; https://www-file.honor.com/content/dam/honor/lk/products/laptop/honor-magicbook-x-16-1/imgs-x16-pro/section4/sec4-laptop.png; product 2248x2125.
+
+- lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1__main.webp: web photo, background removed with PhotoRoom; https://www.lg.com/content/dam/channelbtb/lgcom/global/images/business/15u50t/15u50t-g_aa53j_ekhq_global_b/gallery/large02.jpg; product 1132x862.
+
+- panasonic-tx-50mx700e__main.webp: web photo, background removed with PhotoRoom; https://pl.panasonic.com/wp-content/uploads/2023/11/TX-50MX700E_001.jpg; product 1918x1232.
+
+- xiaomi-a27i-2026__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-monitor-a27i-2026/m/8c582b290f2f811899a79c532cca3ed4.jpg; product 851x975.
