@@ -66,9 +66,11 @@ def known_urls():
         if len(f) > 4 and f[0] == 'zigzag' and f[4].startswith('http'):
             urls.add(f[4])
     # pages the category crawl cannot reach (pagination needs a query string) - data/zigzag-seed.txt
-    seed = ROOT / 'data' / 'zigzag-seed.txt'
-    if seed.exists():
-        urls |= {l.strip() for l in seed.read_text(encoding='utf-8').splitlines() if l.startswith('http')}
+    # ...and every product page the sitemap names that matches the catalogue (tools/zigzag-sitemap.mjs)
+    for name in ('zigzag-seed.txt', 'zigzag-sitemap.txt'):
+        seed = ROOT / 'data' / name
+        if seed.exists():
+            urls |= {l.strip() for l in seed.read_text(encoding='utf-8').splitlines() if l.startswith('http')}
     prices = json.loads((ROOT / 'data' / 'prices.json').read_text(encoding='utf-8'))
     for offers in prices.get('offers', {}).values():
         for o in offers:

@@ -29,6 +29,7 @@ run(process.execPath, ['scrape.mjs', '--selftest'], true);
 // The normal local/CI command always refreshes those caches first.
 if (!process.argv.includes('--resume-prices')) {
 run(python, ['tools/eldorado-fetch.py']);
+run(process.execPath, ['tools/zigzag-sitemap.mjs']);
 run(python, ['tools/zigzag-fetch.py']);
 const limit = process.env.BETTER_ROW_LIMIT;
 run(process.execPath, ['tools/confirm-hand.mjs', '--recheck', '1', ...(limit ? ['--limit', limit] : []), '--drop-gone']);
