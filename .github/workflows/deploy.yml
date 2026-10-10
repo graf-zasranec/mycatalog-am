@@ -38,6 +38,10 @@ jobs:
       - name: Install the cache reader
         run: python -m pip install 'scrapling[fetchers]==0.4.15' 'pillow==12.3.0'
 
+      # build.mjs minifies with esbuild; without it the run scrapes for hours, then fails at the build.
+      - name: Install the build tools
+        run: npm ci --ignore-scripts
+
       - name: Refresh caches, hand rows, shop prices and build
         env:
           BETTER_ROW_LIMIT: '400'
