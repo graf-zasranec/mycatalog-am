@@ -1328,3 +1328,9 @@
 - amazon-kindle-paperwhite-12__black.webp: web photo (not maker) via Google Images Large from gadgetshouse.com.cy, real detail checked >=600px, background removed; product 814x900.
 
 - marshall-uxbridge__white.webp: web photo (not maker) via Google Images Large from mcprod.jumbo.ae, real detail 1200px, background removed; product 1032x1200.
+
+- samsung-galaxy-2__lavender.webp: official maker photo, transparent original; samsung.com/ae product gallery original (p6pim, 1920px png-alpha); product 1493x609.
+
+- samsung-galaxy-tab-a9-x110__silver.webp: official maker photo, transparent original; samsung.com/ae product gallery original (p6pim, 1920px png-alpha), back+front; product 972x1007.
+
+- samsung-galaxy-tab-a9-x110__navy.webp: official maker photo, transparent original; samsung.com/levant product gallery original (p6pim, 1920px png-alpha), back+front; product 972x1007.
