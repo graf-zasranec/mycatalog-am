@@ -1668,3 +1668,7 @@
 - jbl-go-5__purple.webp: owner's photo, transparent original; product 2060x1622.
 
 - xiaomi-mjia-smart-air-purifier-6-bhr08mzeu__main.webp: owner's photo, transparent original; product 525x1177.
+
+- jbl-quantum-100__black.webp: official maker photo, transparent original; https://uk.jbl.com/ JBL_Quantum_100_Product Image_Hero_Black_02.png; product 1193x1464.
+
+- harman-kardon-citation-one-mk3__black.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/06/32/LD0006063218.jpg; product 886x1272.
