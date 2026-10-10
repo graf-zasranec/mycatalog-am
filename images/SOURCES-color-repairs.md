@@ -1138,3 +1138,39 @@
 - samsung-galaxy-s25__blueblack.webp: official maker photo, transparent original; samsung.com/us p6pim gallery Front view (back+front), 3000px png-alpha request; product 841x1018.
 
 - samsung-galaxy-ultra-47mm-2024__titanium-silver.webp: official maker photo, transparent original; samsung.com/us p6pim gallery front r-perspective view, 2000px png-alpha request; product 400x484.
+
+- garmin-vivoactive-5__black.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed by edge flood-fill), 010-02862-10; product 769x1019.
+
+- garmin-vivoactive-5__ivory.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed by edge flood-fill), 010-02862-11; product 769x1019.
+
+- garmin-vivoactive-6__black.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed by edge flood-fill), 010-02985-00; product 769x1018.
+
+- garmin-vivoactive-6__gold.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed by edge flood-fill), 010-02985-01; product 768x1018.
+
+- garmin-venu-4-45-mm__black.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed by edge flood-fill), 010-03014-00; product 819x1006.
+
+- garmin-fenix-8-47-mm-amoled-sapphire-carbon__orange-titanium.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed by edge flood-fill), 010-02904-11; product 822x997.
+
+- garmin-venu-4-45-mm__gold.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed), 010-03013-00 Venu 4 41mm Lunar Gold - the shop's Gold listing is the 41mm; product 781x1025.
+
+- garmin-cirqa-smart-band-mauve-s-m__gray.webp: official maker photo, transparent original; garmin.com product image cf-xl (white backdrop removed), 010-04675-01 French Gray; product 655x1021.
+
+- garmin-fenix-8-47-mm-amoled-sapphire-carbon__gray-titanium.webp: official maker photo, transparent original; garmin.com product image 010-02904-22 (Carbon Gray DLC Titanium) cf-xl, same file as __main.
+
+- honor-600__white.webp: official maker photo, transparent original; same file as __main (the main shot is the White phone).
+
+- honor-600-lite__black.webp: official maker photo, transparent original; honor.com official product-list images (www-file.honor.com honor-600-lite-id-black back + front), placed side by side to match the other colours; product 488x532.
+
+- honor-x8b__midnight-black.webp: same file as __main (the main shot is Midnight Black).
+
+- honor-x8b__titanium-silver.webp: official maker photo, transparent original; honor.com/ae-en X8b spec page colour image (www-file.honor.com), back view; product 266x568.
+
+- honor-x8b__green.webp: official maker photo, transparent original; honor.com/ae-en X8b spec page colour image (www-file.honor.com), back view; product 266x568.
+
+- honor-x7d__silver.webp: official maker photo, transparent original; honor.com official product-list image (www-file.honor.com); product 248x532.
+
+- honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg__purple.webp: official maker photo, transparent original; honor.com official product-list image (www-file.honor.com); product 560x399.
+
+- honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg__white.webp: official maker photo, transparent original; honor.com official product-list image (www-file.honor.com); product 560x399.
+
+- honor-choice-infowear-2i-kch-wb01__white.webp: official maker photo, transparent original; honor.com official product-list image (www-file.honor.com) (HONOR CHOICE Smart Watch 2i = rossini-smartwatch-2i); product 456x532.
