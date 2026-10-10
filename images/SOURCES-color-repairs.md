@@ -1334,3 +1334,5 @@
 - samsung-galaxy-tab-a9-x110__silver.webp: official maker photo, transparent original; samsung.com/ae product gallery original (p6pim, 1920px png-alpha), back+front; product 972x1007.
 
 - samsung-galaxy-tab-a9-x110__navy.webp: official maker photo, transparent original; samsung.com/levant product gallery original (p6pim, 1920px png-alpha), back+front; product 972x1007.
+
+- xiaomi-redmi-pad-2__lavender-purple.webp: owner-supplied photo (PhotoRoom cutout), 2026-10-10; product 551x694.
