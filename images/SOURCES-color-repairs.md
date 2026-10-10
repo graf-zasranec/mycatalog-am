@@ -1210,3 +1210,5 @@
 - xiaomi-redmi-note-15-pro-plus-5g__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (admin.redstore.am, 1200px), background removed where opaque; product 672x867.
 
 - yandex-station-mini__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (allsell.am, 265px), background removed where opaque; product 265x248.
+
+- samsung-galaxy-buds-fe__white.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1450x674.
