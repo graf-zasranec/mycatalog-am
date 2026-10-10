@@ -1336,3 +1336,173 @@
 - samsung-galaxy-tab-a9-x110__navy.webp: official maker photo, transparent original; samsung.com/levant product gallery original (p6pim, 1920px png-alpha), back+front; product 972x1007.
 
 - xiaomi-redmi-pad-2__lavender-purple.webp: owner-supplied photo (PhotoRoom cutout), 2026-10-10; product 551x694.
+
+- asus-zep-16-i7-13620h-4060-w11-gu603vv__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 992x672.
+
+- dell-i7-13650hx-16-1-4060-j1v94-g5530-7957gry-pus__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 931x601.
+
+- dreame-vacuum-d20-pro-plus-eua__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 756x782.
+
+- dreame-vacuum-l40s-pro-ultra__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 709x1199.
+
+- dreame-vacuum-l60-ultra__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 800x773.
+
+- dreame-vacuum-matrix10-ultra-eua__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 816x1000.
+
+- dreame-vacuum-ultra-roller-complete-eua__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 552x518.
+
+- garmin-enduro-3__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 638x764.
+
+- harman-kardon-citation-200__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 457x805.
+
+- harman-kardon-citation-one-mk3__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 408x601.
+
+- harman-kardon-citation-surround__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 831x1012.
+
+- honor-pad-x9a-lte-5301amuy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1034x1024.
+
+- hp-250r-g10-15-6-core-5-120u-d7km3at__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 990x770.
+
+- hp-omnibook-3-17-3-core-3-100u-dr9v7ea__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1417x1196.
+
+- hp-omnibook-5-16-ultra-5-225u-bg7h7ea__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1417x1196.
+
+- hp-omnibook-5-16-ultra-7-255u-bg7h9ea__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1417x1196.
+
+- hp-spectre-x360-16-ultra-7-155h-16-1-4050-w11h-a23wkea__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 716x600.
+
+- jbl-quantum-100__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 971x1196.
+
+- jbl-tune-730bt__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1043x1198.
+
+- lenovo-ideapad-5-2-in-1-16-oled-i7-150u-83du003wrk__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 822x611.
+
+- lenovo-ideapad-slim-3-15-3-i5-13420h-83k1002erk__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1070x889.
+
+- lenovo-ideapad-slim-3-15-3-i7-13620h-83k10032rk__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 898x828.
+
+- lenovo-ideapad-slim-3-16-i5-13420h-83k2000wrk__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 990x674.
+
+- lenovo-thinkpad-e16-gen-4-16-ultra-5-21yc003ufw__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1174x979.
+
+- lenovo-thinkpad-x9-g1-aura-edition-15-3-ultra-7-258v-w11p-21q6006afw__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1178x948.
+
+- lg-oled55c5rla__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 773x475.
+
+- lg-oled65c6rla__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1106x693.
+
+- panasonic-tx-42mz800e__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1109x697.
+
+- panasonic-tx-43mx700e__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1498x974.
+
+- panasonic-tx-65mz800e__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 958x598.
+
+- samsung-galaxy-book3-15-6-fhd-i7-1355u-slv-np750xfg-kb2us__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1500x1019.
+
+- samsung-galaxy-book4-15-6-core-7-150u-w11-np750xgk-ks2us__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 935x634.
+
+- samsung-galaxy-book5-pro-14-touch-ultra-7-series-2-w11h-np940xha-kg1us__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1408x1060.
+
+- samsung-mre65r85hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1250x761.
+
+- samsung-mre65r95hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1252x788.
+
+- samsung-mre85r95hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1252x788.
+
+- samsung-qe100qn80fuxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 793x482.
+
+- samsung-qe115qn90fuxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1254x754.
+
+- samsung-qe43q8faauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 597x364.
+
+- samsung-qe50qn80fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 597x386.
+
+- samsung-qe55ls03fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 632x382.
+
+- samsung-qe55ls03hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1302x751.
+
+- samsung-qe55q8faauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1138x700.
+
+- samsung-qe55qn70hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1250x772.
+
+- samsung-qe55qn90fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 628x389.
+
+- samsung-qe65ls03hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1302x785.
+
+- samsung-qe65qn70fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 734x458.
+
+- samsung-qe65qn70hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1250x772.
+
+- samsung-qe65qn80fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 627x384.
+
+- samsung-qe65qn90dauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 628x390.
+
+- samsung-qe65s90haexpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1370x865.
+
+- samsung-qe65s95cauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 600x390.
+
+- samsung-qe75q7faauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1304x794.
+
+- samsung-qe75q8faauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 626x388.
+
+- samsung-qe75qn80hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 900x554.
+
+- samsung-qe75qn90fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 628x389.
+
+- samsung-qe77s85haexpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1370x866.
+
+- samsung-qe83s85faexru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 716x453.
+
+- samsung-qe85qn70hauxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1250x772.
+
+- samsung-qe85qn80fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 628x387.
+
+- samsung-qe85qn90dauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 628x390.
+
+- samsung-qe85qn90fauxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1582x996.
+
+- samsung-ue100m90huxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1370x823.
+
+- samsung-ue55u8000huxpy__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1188x752.
+
+- samsung-ue65du8500uxru__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 596x377.
+
+- sony-k-55xr80m2__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1200x694.
+
+- sony-k-85s30__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1200x759.
+
+- sony-k-85xr50__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1200x718.
+
+- sony-k-85xr70__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1198x716.
+
+- sony-k-98xr50__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1200x729.
+
+- sony-kd-43x75wl__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1206x823.
+
+- sony-kd-65x75wl__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 770x488.
+
+- sony-kd-65x80l__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 734x464.
+
+- sony-kd-75x75wl__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1478x1018.
+
+- sony-kd-75x80l__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1031x707.
+
+- sony-kd-75x85l__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1200x835.
+
+- sony-kd-85x80l__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1160x803.
+
+- sony-srs-ult30__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 772x339.
+
+- tcl-43p7l-qled__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 857x547.
+
+- tcl-50v6d-led__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 963x606.
+
+- tcl-75c7l-sqd-miniled__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 946x569.
+
+- tcl-75p8l-qled__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 890x561.
+
+- xiaomi-2k-gaming-g27qi-2026__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 937x697.
+
+- xiaomi-gaming-g25i-2026__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 1600x1255.
+
+- xiaomi-pad-8-pro__main.webp: shop photo (not maker): zigzag.am product image, real detail checked >=600px, background removed; product 373x563.
