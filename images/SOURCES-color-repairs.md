@@ -1090,3 +1090,21 @@
 - apple-iphone-14-plus__main.webp: official maker photo, transparent original; Apple Store image (backdrop removed by edge flood-fill): iphone-14-finish-select-202209-6-7inch-midnight; product 1263x1729.
 
 - apple-mac-mini-m6__main.webp: official maker photo, transparent original; Apple Store image mac-mini-chip-unselect-202608-gallery-1 (backdrop removed by edge flood-fill); product 2324x926.
+
+- dyson-er-hd07__main.webp: official maker photo, transparent original; dyson.com product image 386735-01 (Supersonic Fuchsia/Iron, primary, transparent); product 534x998.
+
+- dyson-multi-complete-long-hs05__main.webp: official maker photo, transparent original; dyson.com product image 395906-01 (Airwrap Complete Long Blue/Copper); product 357x775.
+
+- dyson-gen5-detect__main.webp: official maker photo, transparent original; dyson.com product image 447046-01 (Gen5detect Absolute Prussian Blue/Copper); product 680x1118.
+
+- sony-ps5-hd-camera__main.webp: official maker photo, transparent original; playstation.com product image hd-camera-product-thumbnail-01 (gmedia native 1920px, white backdrop removed by edge flood-fill); product 1150x506.
+
+- garmin-fenix-9-pro-47mm-amoled-carbon-dlc__main.webp: official maker photo, transparent original; garmin.com product image 010-04335-10 cf-xl (white backdrop removed by edge flood-fill); product 807x937.
+
+- garmin-fenix-9-51mm-carbon-dlc-band__main.webp: official maker photo, transparent original; garmin.com product image 010-04762-10 cf-xl (white backdrop removed by edge flood-fill); product 835x1009.
+
+- garmin-fenix-8-47-mm-amoled__main.webp: official maker photo, transparent original; garmin.com product image 010-02904-22 cf-xl (white backdrop removed by edge flood-fill); product 822x995.
+
+- dji-mavic-3-pro__main.webp: official maker photo, transparent original; store.dji.com product cover 1280px transparent (se-cdn.djiits.com spu cover); product 1020x703.
+
+- nothing-cmf-watch-pro__main.webp: official maker photo, transparent original; nothing.tech product image CMF-Watch-Pro_Metallic-Grey_1.png (Shopify original, transparent); product 618x703.
