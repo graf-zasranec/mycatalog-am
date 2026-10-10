@@ -1212,3 +1212,63 @@
 - yandex-station-mini__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (allsell.am, 265px), background removed where opaque; product 265x248.
 
 - samsung-galaxy-buds-fe__white.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1450x674.
+
+- sony-wh-ch520__black.webp: official maker photo, transparent original; electronics.sony.com product gallery (cloudfront, 1200px transparent), same pose across colours; product 544x1050.
+
+- sony-wh-ch520__yellow.webp: official maker photo, transparent original; electronics.sony.com product gallery (cloudfront, 1200px transparent), same pose across colours; product 544x1050.
+
+- sony-wh-ch520__beige.webp: official maker photo, transparent original; electronics.sony.com product gallery (cloudfront, 1200px transparent), same pose across colours; product 544x1050.
+
+- sony-wh-ch520__pink.webp: official maker photo, transparent original; electronics.sony.com product gallery (cloudfront, 1200px transparent), same pose across colours; product 544x1050.
+
+- sony-wh-ch520__white.webp: official maker photo, transparent original; electronics.sony.com product gallery (cloudfront, 1200px transparent), same pose across colours; product 545x1050.
+
+- yandex-station-lite__mint.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am / zigzag.am), background removed where opaque; product 546x531.
+
+- yandex-station-lite__yellow.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am / zigzag.am), background removed where opaque; product 453x441.
+
+- yandex-station-max__beige.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am / zigzag.am), background removed where opaque; product 417x578.
+
+- yandex-station-max__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am / zigzag.am), background removed where opaque; product 337x470.
+
+- yandex-station-max__graphite.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am / zigzag.am), background removed where opaque; product 510x705.
+
+- dyson-ht01-airstrait-straightener-plum__amber-silk.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 297x771.
+
+- harman-kardon-luna__sand.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 766x334.
+
+- honor-600-lite__gray.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 513x635.
+
+- honor-choice-clip-mak-me01__black.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 642x702.
+
+- honor-choice-clip-mak-me01__purple.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 599x652.
+
+- honor-choice-infowear-2i-kch-wb01__black.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 586x685.
+
+- honor-choice-ros-me01__white.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 567x647.
+
+- samsung-galaxy-watch4-40-mm__gold.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 418x480.
+
+- sony-wh-ch720n__blue.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 416x562.
+
+- xiaomi-redmi-pad-2-pro__purple.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 619x732.
+
+- xiaomi-redmi-pad-2__green.webp: shop photo (not maker); Armenian shop photo of this exact colour (eldorado.am), background removed where opaque; product 663x684.
+
+- samsung-galaxy-a16__gray.webp: web photo (not maker); Google Images (Large) result from techcart.com.au, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 797x982.
+
+- google-fitbit-air__lavender.webp: web photo (not maker); Google Images (Large) result from assets.products-live.ao.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 546x753.
+
+- marshall-uxbridge__black.webp: web photo (not maker); Google Images (Large) result from www.telecomarmenia.am, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 817x824.
+
+- asus-vivobook-s-15-6-i9-13900h-16-1-camo-w11-k5504va-pb99-sl__silver.webp: web photo (not maker); Google Images (Large) result from sg.store.asus.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 862x512.
+
+- dyson-hs08-i-d__kanzan-pink.webp: web photo (not maker); Google Images (Large) result from dyson-h.assetsadobe2.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 527x978.
+
+- google-fitbit-air__obsidian.webp: web photo (not maker); Google Images (Large) result from www.stapletonselectrical.ie, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 777x1000.
+
+- xiaomi-redmi-note-15-pro-plus-5g__brown.webp: web photo (not maker); Google Images (Large) result from dakauf.eu, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 493x1012.
+
+- dyson-hs08-i-d__bronze-blue-pink.webp: web photo (not maker); Google Images (Large) result from cdn.microless.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 853x1599.
+
+- jbl-boombox-3__black-camo.webp: web photo (not maker); Google Images (Large) result from ca.jbl.com, checked sharp (sharp.py >= 600px real detail), background removed (PhotoRoom/edge flood-fill); product 1367x768.
