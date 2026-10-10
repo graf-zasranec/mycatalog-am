@@ -1278,3 +1278,21 @@
 - yandex-station-mini__black.webp: web photo (not maker); (onbook.by via Google Images Large), Yandex Station Mini 2 without clock, black; background removed; product 886x800.
 
 - yandex-station-mini__blue.webp: same file as __main (the main shot is the blue no-clock Mini).
+
+- yandex-station-lite__yellow.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1322x1287.
+
+- yandex-station-lite__mint.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1588x1545.
+
+- sony-wf-1000xm6__silver.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1332x1874.
+
+- xiaomi-portable-bluetooth-speaker__black.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 628x846.
+
+- honor-choice-ros-me01__white.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1646x1881.
+
+- honor-choice-clip-mak-me01__purple.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1722x1877.
+
+- honor-choice-infowear-2i-kch-wb01__black.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1603x1876.
+
+- sony-wh-ch520__beige.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1887.
+
+- sony-wh-ch520__pink.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1888.
