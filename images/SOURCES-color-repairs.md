@@ -1652,3 +1652,15 @@
 - panasonic-tx-50mx700e__main.webp: web photo, background removed with PhotoRoom; https://pl.panasonic.com/wp-content/uploads/2023/11/TX-50MX700E_001.jpg; product 1918x1232.
 
 - xiaomi-a27i-2026__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-monitor-a27i-2026/m/8c582b290f2f811899a79c532cca3ed4.jpg; product 851x975.
+
+- dreame-pm10-smart-air-purifier__main.webp: web photo, background removed with PhotoRoom; https://dreame.sg/cdn/shop/files/DreamePM10AirPurifer_1800x.png?v=1741512222; product 699x1509.
+
+- jbl-tune-780nc__beige.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/71zjIY+WFqL._AC_UF1000,1000_QL80_.jpg; product 868x966.
+
+- jbl-tune-780nc__white.webp: web photo, background removed with PhotoRoom; https://www.worldshop.eu/media/Image/desktopWidthDesktop-webp/.fLe5790Z/Image-36667/jbl-tune-780nc-over-ear-headphones-white.webp; product 1206x1339.
+
+- samsung-mre75r85hauxpy__main.webp: web photo, background removed with PhotoRoom; https://www.did.ie/cdn/shop/files/MRE75R85HAUXXU_3.jpg?v=1779199541&width=1200; product 826x775.
+
+- tcl-85c7l-sqd-miniled__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/r/e/re-00107280-1.jpeg; product 879x745.
+
+- xiaomi-vacuum-6-max__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/6/c/6cc1210d5b3c8bf9fd9801b668dca8edb95c6512071ee88ee4a86e9ab118d2a5.jpg.jpeg; product 1171x795.
