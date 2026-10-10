@@ -1672,3 +1672,5 @@
 - jbl-quantum-100__black.webp: official maker photo, transparent original; https://uk.jbl.com/ JBL_Quantum_100_Product Image_Hero_Black_02.png; product 1193x1464.
 
 - harman-kardon-citation-one-mk3__black.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/06/32/LD0006063218.jpg; product 886x1272.
+
+- xiaomi-redmi-note-13-pro__forest-green.webp: web photo, background removed with PhotoRoom; https://api.2droida.ru/storage/products/4de076364d4f754b75b2e03120ec4bf0/3056/688112805997361b9f1993a52eecc7f1.webp; product 420x895.
