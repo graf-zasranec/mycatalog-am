@@ -4,7 +4,7 @@
  "note": "too small needs a larger original, not an enlargement",
  "total": 1477,
  "missing": 0,
- "tooSmall": 79,
+ "tooSmall": 77,
  "products": [
   {
    "id": "xiaomi-redmi-buds-6-play",
@@ -147,16 +147,6 @@
    "width": 605
   },
   {
-   "id": "philips-airfryer-hd9252-90",
-   "brand": "Philips",
-   "name": "Airfryer HD9252/90",
-   "category": "appliance",
-   "shops": 2,
-   "query": "Philips Airfryer HD9252/90",
-   "what": "too small",
-   "width": 699
-  },
-  {
    "id": "samsung-galaxy-a35",
    "brand": "Samsung",
    "name": "Galaxy A35",
@@ -225,16 +215,6 @@
    "query": "Xiaomi Redmi A2+",
    "what": "too small",
    "width": 621
-  },
-  {
-   "id": "xiaomi-redmi-note-13-pro-plus",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 13 Pro+ 5G",
-   "category": "phone",
-   "shops": 2,
-   "query": "Xiaomi Redmi Note 13 Pro+ 5G",
-   "what": "too small",
-   "width": 686
   },
   {
    "id": "xiaomi-redmi-pad",
@@ -337,6 +317,16 @@
    "width": 630
   },
   {
+   "id": "bose-soundsport-free",
+   "brand": "Bose",
+   "name": "SoundSport Free",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Bose SoundSport Free",
+   "what": "too small",
+   "width": 699
+  },
+  {
    "id": "bose-sport",
    "brand": "Bose",
    "name": "Sport",
@@ -345,16 +335,6 @@
    "query": "Bose Sport",
    "what": "too small",
    "width": 676
-  },
-  {
-   "id": "electrolux-air-fryer-eaf7b",
-   "brand": "Electrolux",
-   "name": "Air Fryer EAF7B",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Electrolux Air Fryer EAF7B",
-   "what": "too small",
-   "width": 574
   },
   {
    "id": "flyingvoice-sr3000-5g",
@@ -577,16 +557,6 @@
    "width": 675
   },
   {
-   "id": "samsung-odyssey-g4-ls25bg400eixci",
-   "brand": "Samsung",
-   "name": "Odyssey G4 LS25BG400EIXCI",
-   "category": "monitor",
-   "shops": 1,
-   "query": "Samsung Odyssey G4 LS25BG400EIXCI",
-   "what": "too small",
-   "width": 630
-  },
-  {
    "id": "samsung-odyssey-g5-s32cg552eu",
    "brand": "Samsung",
    "name": "Odyssey G5 S32CG552EU",
@@ -637,16 +607,6 @@
    "width": 686
   },
   {
-   "id": "samsung-ue55du8000uxru",
-   "brand": "Samsung",
-   "name": "Crystal UHD DU8000 (UE55DU8000UXRU)",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung Crystal UHD DU8000 (UE55DU8000UXRU)",
-   "what": "too small",
-   "width": 649
-  },
-  {
    "id": "sennheiser-hd-599",
    "brand": "Sennheiser",
    "name": "HD 599",
@@ -675,16 +635,6 @@
    "query": "TCL 43V6C",
    "what": "too small",
    "width": 615
-  },
-  {
-   "id": "tefal-easy-fry-compact-ey101815",
-   "brand": "Tefal",
-   "name": "Easy Fry Compact EY101815",
-   "category": "appliance",
-   "shops": 1,
-   "query": "Tefal Easy Fry Compact EY101815",
-   "what": "too small",
-   "width": 696
   },
   {
    "id": "toshiba-65c350re",
@@ -747,6 +697,16 @@
    "width": 608
   },
   {
+   "id": "xiaomi-redmi-note-13-pro-plus",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 13 Pro+ 5G",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi Redmi Note 13 Pro+ 5G",
+   "what": "too small",
+   "width": 686
+  },
+  {
    "id": "xiaomi-semi-automatic-espresso-machine-bhr9798eu",
    "brand": "Xiaomi",
    "name": "Semi-automatic Espresso Machine BHR9798EU",
@@ -777,14 +737,14 @@
    "width": 695
   },
   {
-   "id": "bose-soundsport-free",
-   "brand": "Bose",
-   "name": "SoundSport Free",
-   "category": "headphones",
+   "id": "electrolux-air-fryer-eaf7b",
+   "brand": "Electrolux",
+   "name": "Air Fryer EAF7B",
+   "category": "appliance",
    "shops": 0,
-   "query": "Bose SoundSport Free",
+   "query": "Electrolux Air Fryer EAF7B",
    "what": "too small",
-   "width": 699
+   "width": 574
   },
   {
    "id": "honor-x5b-plus",
@@ -795,6 +755,26 @@
    "query": "Honor X5b Plus",
    "what": "too small",
    "width": 616
+  },
+  {
+   "id": "philips-airfryer-hd9252-90",
+   "brand": "Philips",
+   "name": "Airfryer HD9252/90",
+   "category": "appliance",
+   "shops": 0,
+   "query": "Philips Airfryer HD9252/90",
+   "what": "too small",
+   "width": 699
+  },
+  {
+   "id": "tefal-easy-fry-compact-ey101815",
+   "brand": "Tefal",
+   "name": "Easy Fry Compact EY101815",
+   "category": "appliance",
+   "shops": 0,
+   "query": "Tefal Easy Fry Compact EY101815",
+   "what": "too small",
+   "width": 696
   }
  ]
 }
