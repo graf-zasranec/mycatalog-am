@@ -1532,7 +1532,9 @@
     "aliases": [
       "Amazon Kindle 11th Gen",
       "Kindle 11th Gen",
-      "Amazon Kindle 11th Gen 16GB"
+      "Amazon Kindle 11th Gen 16GB",
+      "Amazon Kindle 6\"",
+      "Kindle 6\""
     ],
     "tier": "budget",
     "released": "2022",
@@ -4705,7 +4707,9 @@
       "MacBook Air M5 15/16GB RAM",
       "MacBook Air M5 15/24GB RAM",
       "MacBook Air M5 13. RAM",
-      "MacBook Air M5 13.6/24 RAM"
+      "MacBook Air M5 13.6/24 RAM",
+      "Apple MacBook Air 13 M5",
+      "MacBook Air 13 M5"
     ],
     "tier": "upper-mid",
     "released": "2026-03",
@@ -5158,7 +5162,9 @@
       "MacBook Pro 14 M5 MDE54 Silver (2025)",
       "MacBook Pro 14 M5 MDE34 Space Black (2025)",
       "MacBook Pro 14 M5 MDE64 Silver (2025)",
-      "Apple Macbook Pro 14\"/M5/16GB RAM/1TB/MDE14/Space Black"
+      "Apple Macbook Pro 14\"/M5/16GB RAM/1TB/MDE14/Space Black",
+      "Apple MacBook Pro 14 M5",
+      "MacBook Pro 14 M5"
     ],
     "tier": "flagship",
     "released": "2025-10",
@@ -5235,7 +5241,9 @@
       "MacBook Pro 16.2-inch M5 Max",
       "MacBook Pro 16.2 M5 Max",
       "MacBook Pro 162 M5 Max",
-      "Apple Macbook Pro 14\"/M5 Max/36GB RAM/2TB/MGDU4/Space Black"
+      "Apple Macbook Pro 14\"/M5 Max/36GB RAM/2TB/MGDU4/Space Black",
+      "Apple MacBook Pro 14 M5 Max",
+      "MacBook Pro 14 M5 Max"
     ],
     "tier": "flagship",
     "released": "2025-10",
@@ -5309,7 +5317,9 @@
       "Apple Macbook Pro 14\"/M5 Pro/24GB RAM/1TB/MGDR4/Space Black",
       "Apple Macbook Pro 14\"/M5 Pro/24GB RAM/2TB/MGDT4/Space Black",
       "MacBook Pro 14 M5 Pro MGDR4 (2026)",
-      "MacBook Pro 14 M5 Pro MGDN4 Silver (2026)"
+      "MacBook Pro 14 M5 Pro MGDN4 Silver (2026)",
+      "Apple MacBook Pro 14 M5 Pro",
+      "MacBook Pro 14 M5 Pro"
     ],
     "tier": "flagship",
     "released": "2025-10",
@@ -27430,7 +27440,8 @@
     "name": "Tune 500 Wired",
     "aliases": [
       "JBL Tune 500 Wired Pink",
-      "JBL Tune 500 Wired Black"
+      "JBL Tune 500 Wired Black",
+      "JBL Tune 500"
     ],
     "tier": "budget",
     "priceAmd": 11900,
@@ -61251,7 +61262,9 @@
     "category": "headphones",
     "brand": "JBL",
     "name": "Tour Pro 2 TWS",
-    "aliases": [],
+    "aliases": [
+      "JBL Tour Pro 2"
+    ],
     "tier": "budget",
     "priceAmd": 95500,
     "priceAmdMax": 95500,
@@ -62918,7 +62931,9 @@
     "category": "headphones",
     "brand": "JBL",
     "name": "Quantum 100 M2 Wired",
-    "aliases": [],
+    "aliases": [
+      "JBL Quantum 100 M2"
+    ],
     "tier": "budget",
     "priceAmd": 19700,
     "priceAmdMax": 19700,
@@ -66382,6 +66397,2164 @@
     ],
     "sources": [
       "https://eldorado.am/am/philips-hd9252-90"
+    ]
+  },
+  {
+    "id": "sennheiser-accentum",
+    "category": "headphones",
+    "brand": "Sennheiser",
+    "name": "ACCENTUM",
+    "aliases": [
+      "Sennheiser ACCENTUM Black (4260752330558)"
+    ],
+    "tier": "budget",
+    "priceAmd": 76200,
+    "priceAmdMax": 76200,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 76200
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sennheiser ACCENTUM.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless"
+    }
+  },
+  {
+    "id": "jbl-tune-780nc",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Tune 780NC",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 57900,
+    "priceAmdMax": 57900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 57900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Tune 780NC.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White",
+      "Blue",
+      "Black",
+      "Beige"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "anc": true
+    }
+  },
+  {
+    "id": "jbl-tune-770nc",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Tune 770NC",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 51600,
+    "priceAmdMax": 51600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 51600
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Tune 770NC.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Purple",
+      "White"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "anc": true
+    }
+  },
+  {
+    "id": "sony-mdr-g300",
+    "category": "headphones",
+    "brand": "Sony",
+    "name": "MDR-G300",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 34900,
+    "priceAmdMax": 34900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 34900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony MDR-G300.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "audio": {
+      "conn": "wired",
+      "form": "full"
+    }
+  },
+  {
+    "id": "jbl-tune-730bt",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Tune 730BT",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 32900,
+    "priceAmdMax": 32900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Tune 730BT.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White",
+      "Blue",
+      "Beige"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless"
+    }
+  },
+  {
+    "id": "jbl-quantum-100",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Quantum 100",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 17900,
+    "priceAmdMax": 17900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 17900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Quantum 100.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "Blue"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "gaming": true
+    }
+  },
+  {
+    "id": "jbl-tune-530c",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Tune 530C",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 13900,
+    "priceAmdMax": 13900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Tune 530C.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "Beige"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless"
+    }
+  },
+  {
+    "id": "jbl-tune-530",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Tune 530",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 13900,
+    "priceAmdMax": 13900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Tune 530.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless"
+    }
+  },
+  {
+    "id": "sony-wi-c100",
+    "category": "headphones",
+    "brand": "Sony",
+    "name": "WI-C100",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 11900,
+    "priceAmdMax": 11900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 11900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony WI-C100.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "Blue",
+      "White"
+    ],
+    "audio": {
+      "conn": "wireless",
+      "form": "neckband"
+    }
+  },
+  {
+    "id": "hp-15-6-core-3-100u-d05wsea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "15.6\" Core 3-100U /D05WSEA",
+    "aliases": [
+      "HP Laptop 15.6\" Core 3-100U /512GB Silver /D05WSEA"
+    ],
+    "tier": "mid",
+    "priceAmd": 272000,
+    "priceAmdMax": 272000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 272000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP 15.6\" Core 3-100U /D05WSEA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "asus-vivobook-15-6-r5-silver-m1502naq-bq255",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook 15.6\" R5- Silver/M1502NAQ-BQ255",
+    "aliases": [
+      "Asus Vivobook 15.6\" R5-150 /512GB Silver/M1502NAQ-BQ255"
+    ],
+    "tier": "mid",
+    "priceAmd": 279900,
+    "priceAmdMax": 279900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 279900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "ASUS Vivobook 15.6\" R5- Silver/M1502NAQ-BQ255.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15-3-r7-83k700hrrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15.3\" R7- /83K700HRRK",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15.3\" R7-170 /512GB Grey /83K700HRRK"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 301300,
+    "priceAmdMax": 301300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 301300
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" R7- /83K700HRRK.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "hp-250r-g10-15-6-core-5-120u-d7km3at",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "250R G10 15.6\" Core 5-120U /D7KM3AT",
+    "aliases": [
+      "HP 250R G10 15.6\" Core 5-120U /512GB Jet Black /D7KM3AT"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 319000,
+    "priceAmdMax": 319000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 319000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP 250R G10 15.6\" Core 5-120U /D7KM3AT.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15-3-i5-13420h-83k1002erk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15.3\" i5-13420H /83K1002ERK",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15.3\" i5-13420H /512GB Grey /83K1002ERK"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 349000,
+    "priceAmdMax": 349000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 349000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" i5-13420H /83K1002ERK.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-16-i5-13420h-83k2000wrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 16\" i5-13420H /83K2000WRK",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 16\" i5-13420H /512GB Grey /83K2000WRK"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 349000,
+    "priceAmdMax": 349000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 349000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo IdeaPad Slim 3 16\" i5-13420H /83K2000WRK.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "hp-omnibook-3-17-3-core-3-100u-dr9v7ea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 3 17.3\" Core 3-100U /DR9V7EA",
+    "aliases": [
+      "HP OmniBook 3 17.3\" Core 3-100U /512GB Silver /DR9V7EA"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 349000,
+    "priceAmdMax": 349000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 349000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP OmniBook 3 17.3\" Core 3-100U /DR9V7EA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-e16-g3-16-core-5-210h-21tf004rfw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad E16 G3 16\" Core 5-210H /21TF004RFW",
+    "aliases": [
+      "Lenovo ThinkPad E16 G3 16\" Core 5-210H /512GB /21TF004RFW"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 360700,
+    "priceAmdMax": 360700,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 360700
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo ThinkPad E16 G3 16\" Core 5-210H /21TF004RFW.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15-3-i7-13620h-83k10032rk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15.3\" i7-13620H /83K10032RK",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 365900,
+    "priceAmdMax": 365900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 365900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" i7-13620H /83K10032RK.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "hp-omnibook-5-16-ultra-5-225u-bg7h7ea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 5 16\" Ultra 5-225U /BG7H7EA",
+    "aliases": [
+      "HP OmniBook 5 16\" Ultra 5-225U /512GB Silver /BG7H7EA"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 379000,
+    "priceAmdMax": 379000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 379000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP OmniBook 5 16\" Ultra 5-225U /BG7H7EA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-book4-15-6-core-7-150u-w11-np750xgk-ks2us",
+    "category": "laptop",
+    "brand": "Samsung",
+    "name": "Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US",
+    "aliases": [
+      "Samsung Galaxy Book4 15.6\" Core 7-150U 512/16 W11 Silver /NP750XGK-KS2US"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 389700,
+    "priceAmdMax": 389700,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 389700
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Samsung Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-book3-15-6-fhd-i7-1355u-slv-np750xfg-kb2us",
+    "category": "laptop",
+    "brand": "Samsung",
+    "name": "Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 420800,
+    "priceAmdMax": 420800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 420800
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Samsung Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "honor-magicbook-x16-plus-16-core-16-1-w11h-5301alvv",
+    "category": "laptop",
+    "brand": "Honor",
+    "name": "MagicBook X16 Plus 16\" Core 16/1 W11H /5301ALVV",
+    "aliases": [
+      "Honor MagicBook X16 Plus 16\" Core 5-220Н 16/1 Space Gray W11H /5301ALVV"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 449900,
+    "priceAmdMax": 449900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 449900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Honor MagicBook X16 Plus 16\" Core 16/1 W11H /5301ALVV.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-5-2-in-1-16-oled-i7-150u-83du003wrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad 5 2-in-1 16\" OLED i7-150U /83DU003WRK",
+    "aliases": [
+      "Lenovo IdeaPad 5 2-in-1 16\" OLED i7-150U Grey /83DU003WRK"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 458500,
+    "priceAmdMax": 458500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 458500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo IdeaPad 5 2-in-1 16\" OLED i7-150U /83DU003WRK.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "hp-omnibook-5-16-ultra-7-255u-bg7h9ea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 5 16\" Ultra 7-255U /BG7H9EA",
+    "aliases": [
+      "HP OmniBook 5 16\" Ultra 7-255U /512GB Silver /BG7H9EA"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 480000,
+    "priceAmdMax": 480000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 480000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP OmniBook 5 16\" Ultra 7-255U /BG7H9EA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1",
+    "category": "laptop",
+    "brand": "LG",
+    "name": "Gram Book 15.6\" Core i5-1334U /2. W11H /15U50T-G.ARS2U1",
+    "aliases": [
+      "LG Gram Book 15.6\" Core i5-1334U /2.5TB W11H /15U50T-G.ARS2U1"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 486900,
+    "priceAmdMax": 486900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 5120,
+        "priceAmd": 486900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "LG Gram Book 15.6\" Core i5-1334U /2. W11H /15U50T-G.ARS2U1.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-e16-gen-4-16-ultra-5-21yc003ufw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad E16 Gen 4 16\" Ultra 5- /21YC003UFW",
+    "aliases": [
+      "Lenovo ThinkPad E16 Gen 4 16\" Ultra 5-325 /512GB /21YC003UFW"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 566900,
+    "priceAmdMax": 566900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 566900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo ThinkPad E16 Gen 4 16\" Ultra 5- /21YC003UFW.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-book5-pro-14-touch-ultra-7-series-2-w11h-np940xha-kg1us",
+    "category": "laptop",
+    "brand": "Samsung",
+    "name": "Galaxy Book5 Pro 14\" Touch Ultra 7-Series 2 W11H /NP940XHA-KG1US",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 615600,
+    "priceAmdMax": 615600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 615600
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Samsung Galaxy Book5 Pro 14\" Touch Ultra 7-Series 2 W11H /NP940XHA-KG1US.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-e16-gen-4-16-ultra-7-21yc003tfw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad E16 Gen 4 16\" Ultra 7- /21YC003TFW",
+    "aliases": [
+      "Lenovo ThinkPad E16 Gen 4 16\" Ultra 7-355 /512GB /21YC003TFW"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 620900,
+    "priceAmdMax": 620900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 620900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo ThinkPad E16 Gen 4 16\" Ultra 7- /21YC003TFW.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dell-i7-13650hx-16-1-4060-j1v94-g5530-7957gry-pus",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "i7-13650HX 16/1 4060 J1V94/G5530-7957GRY-PUS*",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 638300,
+    "priceAmdMax": 638300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 638300
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dell i7-13650HX 16/1 4060 J1V94/G5530-7957GRY-PUS*.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-t16-gen-5-16-ultra-5-21wt0059fw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad T16 Gen 5 16\" Ultra 5- /21WT0059FW",
+    "aliases": [
+      "Lenovo ThinkPad T16 Gen 5 16\" Ultra 5-325 /512GB /21WT0059FW"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 683900,
+    "priceAmdMax": 683900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 683900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo ThinkPad T16 Gen 5 16\" Ultra 5- /21WT0059FW.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "asus-zep-16-i7-13620h-4060-w11-gu603vv",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "ZEP 16 i7-13620H 4060 W11 /GU603VV*",
+    "aliases": [],
+    "tier": "flagship",
+    "priceAmd": 733300,
+    "priceAmdMax": 733300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 733300
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "ASUS ZEP 16 i7-13620H 4060 W11 /GU603VV*.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-t16-gen-5-16-ultra-7-21wt005cfw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad T16 Gen 5 16\" Ultra 7- /21WT005CFW",
+    "aliases": [
+      "Lenovo ThinkPad T16 Gen 5 16\" Ultra 7-355 /512GB /21WT005CFW"
+    ],
+    "tier": "flagship",
+    "priceAmd": 742400,
+    "priceAmdMax": 742400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 742400
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo ThinkPad T16 Gen 5 16\" Ultra 7- /21WT005CFW.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "hp-spectre-x360-16-ultra-7-155h-16-1-4050-w11h-a23wkea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "Spectre x360 16\" Ultra 7-155H 16/1 4050 W11H /A23WKEA",
+    "aliases": [
+      "HP Spectre x360 16\" Ultra 7-155H 16/1 4050 W11H Black /A23WKEA"
+    ],
+    "tier": "flagship",
+    "priceAmd": 795000,
+    "priceAmdMax": 795000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 795000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP Spectre x360 16\" Ultra 7-155H 16/1 4050 W11H /A23WKEA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-x9-g1-aura-edition-15-3-ultra-7-258v-w11p-21q6006afw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V W11P /21Q6006AFW",
+    "aliases": [
+      "Lenovo ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V /1TB W11P White /21Q6006AFW"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1003600,
+    "priceAmdMax": 1003600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 1024,
+        "priceAmd": 1003600
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V W11P /21Q6006AFW.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-a27i-2026",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "A27i 2026",
+    "aliases": [
+      "Xiaomi Monitor A27i 2026 (P27FDA-RAGL)"
+    ],
+    "tier": "budget",
+    "priceAmd": 59900,
+    "priceAmdMax": 59900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi A27i 2026.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-gaming-g25i-2026",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "Gaming G25i 2026",
+    "aliases": [
+      "Xiaomi Gaming Monitor G25i 2026 (P25FEB-RGGL)"
+    ],
+    "tier": "budget",
+    "priceAmd": 75900,
+    "priceAmdMax": 75900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 75900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Gaming G25i 2026.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-2k-gaming-g27qi-2026",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "2K Gaming G27Qi 2026",
+    "aliases": [
+      "Xiaomi 2K Gaming Monitor G27Qi 2026 (P27QDB-RGGL)"
+    ],
+    "tier": "budget",
+    "priceAmd": 99900,
+    "priceAmdMax": 99900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi 2K Gaming G27Qi 2026.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-pm10-smart-air-purifier",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "PM10 Smart Air Purifier",
+    "aliases": [
+      "Dreame PM10 Smart Air Purifier (CVF24A)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 399000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame PM10 Smart Air Purifier.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-mjia-smart-air-purifier-6-bhr08mzeu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Mjia Smart Air Purifier 6 BHR08MZEU",
+    "aliases": [
+      "Xiaomi Mjia Smart Air Purifier 6 (white) (AC-M25-SC) BHR08MZEU"
+    ],
+    "tier": "mid",
+    "priceAmd": 111900,
+    "priceAmdMax": 111900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 111900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Mjia Smart Air Purifier 6 BHR08MZEU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-s40c-bhr9664eu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum S40C BHR9664EU",
+    "aliases": [
+      "Xiaomi Robot Vacuum S40C (E101) BHR9664EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 69900,
+    "priceAmdMax": 69900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum S40C BHR9664EU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-s40-bhr084aeu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum S40 BHR084AEU",
+    "aliases": [
+      "Xiaomi Robot Vacuum S40 White (OV81) BHR084AEU"
+    ],
+    "tier": "budget",
+    "priceAmd": 77000,
+    "priceAmdMax": 77000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 77000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum S40 BHR084AEU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-h40-bhr07xbeu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum H40 BHR07XBEU",
+    "aliases": [
+      "Xiaomi Robot Vacuum H40 White (OV51) BHR07XBEU"
+    ],
+    "tier": "mid",
+    "priceAmd": 109900,
+    "priceAmdMax": 109900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 109900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum H40 BHR07XBEU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-l40-eub",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum L40 EUB",
+    "aliases": [
+      "Dreame Robot Vacuum L40 EUB (RLL42SDA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 169900,
+    "priceAmdMax": 169900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 169900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum L40 EUB.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-h50-bhr08gueu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum H50 BHR08GUEU",
+    "aliases": [
+      "Xiaomi Robot Vacuum H50 (White) (OV43GL) BHR08GUEU"
+    ],
+    "tier": "mid",
+    "priceAmd": 209900,
+    "priceAmdMax": 209900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 209900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum H50 BHR08GUEU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-h50-pro-bhr089neu",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum H50 Pro BHR089NEU",
+    "aliases": [
+      "Xiaomi Robot Vacuum H50 Pro White (OV42GL) BHR089NEU"
+    ],
+    "tier": "mid",
+    "priceAmd": 259900,
+    "priceAmdMax": 259900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 259900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum H50 Pro BHR089NEU.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-d20-pro-plus-eua",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum D20 Pro Plus EUA",
+    "aliases": [
+      "Dreame Robot Vacuum D20 Pro Plus Black (RLD43SD) EUA",
+      "Dreame Robot Vacuum D20 Pro Plus White (RLD43SD) EUA"
+    ],
+    "tier": "mid",
+    "priceAmd": 279900,
+    "priceAmdMax": 279900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 279900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum D20 Pro Plus EUA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-d30-ultra-eua",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum D30 Ultra EUA",
+    "aliases": [
+      "Dreame Robot Vacuum D30 Ultra Black (RTD31TE) EUA",
+      "Dreame Robot Vacuum D30 Ultra White (RTD31TE) EUA"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 309900,
+    "priceAmdMax": 309900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 309900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum D30 Ultra EUA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-l40-ultra-ae",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum L40 Ultra AE",
+    "aliases": [
+      "Dreame Robot Vacuum L40 Ultra AE Black ( RLL77SE)",
+      "Dreame Robot Vacuum L40 Ultra AE White (RLL77SE)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399900,
+    "priceAmdMax": 399900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 399900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum L40 Ultra AE.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-l50-ultra-ae-eua",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum L50 Ultra AE EUA",
+    "aliases": [
+      "Dreame Robot Vacuum L50 Ultra AE Black (RLL51SE) EUA",
+      "Dreame Robot Vacuum L50 Ultra AE White (RLL51SE) EUA"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 409900,
+    "priceAmdMax": 409900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 409900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum L50 Ultra AE EUA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-l40s-pro-ultra",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum L40s Pro Ultra",
+    "aliases": [
+      "Dreame Robot Vacuum L40s Pro Ultra White (RLL74CE)",
+      "Dreame Robot Vacuum L40s Pro Ultra Black (RLL74CE)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 479900,
+    "priceAmdMax": 479900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 479900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum L40s Pro Ultra.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-l50s-pro-ultra-eua",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum L50s Pro Ultra EUA",
+    "aliases": [
+      "Dreame Robot Vacuum L50s Pro Ultra White (RLL88HE) EUA",
+      "Dreame Robot Vacuum L50s Pro Ultra Black (RLL88HE) EUA"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 489900,
+    "priceAmdMax": 489900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 489900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum L50s Pro Ultra EUA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-l60-ultra",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum L60 Ultra",
+    "aliases": [
+      "Dreame Robot Vacuum L60 Ultra Black (RLL37CE0) EU",
+      "Dreame Robot Vacuum L60 Ultra White (RLL37CE0) EU"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 549900,
+    "priceAmdMax": 549900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 549900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum L60 Ultra.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-vacuum-6-max",
+    "category": "appliance",
+    "brand": "Xiaomi",
+    "name": "Vacuum 6 Max",
+    "aliases": [
+      "Xiaomi Robot Vacuum 6 Max Dark Gray Silver (PV11GL) (BHR08V2EU)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 549900,
+    "priceAmdMax": 549900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 549900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Vacuum 6 Max.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-x60-ultra-complete",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum X60 Ultra Complete",
+    "aliases": [
+      "Dreame Robot Vacuum X60 Ultra Complete Black (RLX87DE)",
+      "Dreame Robot Vacuum X60 Ultra Complete White (RLX87DE)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 699900,
+    "priceAmdMax": 699900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 699900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum X60 Ultra Complete.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-ultra-roller-complete-eua",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum Ultra Roller Complete EUA",
+    "aliases": [
+      "Dreame Robot Vacuum Aqua10 Ultra Roller Complete White (RLH71DE-1) EUA",
+      "Dreame Robot Vacuum Aqua10 Ultra Roller Complete Black (RLH71DE-1) EUA"
+    ],
+    "tier": "flagship",
+    "priceAmd": 789900,
+    "priceAmdMax": 789900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 789900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum Ultra Roller Complete EUA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-matrix10-ultra-eua",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum MatriX10 Ultra EUA",
+    "aliases": [
+      "Dreame Robot Vacuum MatriX10 Ultra White (RLX95CE) EUA"
+    ],
+    "tier": "flagship",
+    "priceAmd": 919900,
+    "priceAmdMax": 919900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 919900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum MatriX10 Ultra EUA.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "dreame-vacuum-x60-pro-master",
+    "category": "appliance",
+    "brand": "Dreame",
+    "name": "Vacuum X60 Pro Master",
+    "aliases": [
+      "Dreame Robot Vacuum X60 Pro Master (RLX 97DE) EU"
+    ],
+    "tier": "flagship",
+    "priceAmd": 919900,
+    "priceAmdMax": 919900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 919900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Dreame Vacuum X60 Pro Master.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "jbl-go-5",
+    "category": "speaker",
+    "brand": "JBL",
+    "name": "Go 5",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 20500,
+    "priceAmdMax": 20500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 20500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "JBL Go 5.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Purple",
+      "White",
+      "Black"
+    ]
+  },
+  {
+    "id": "sony-srs-ult30",
+    "category": "speaker",
+    "brand": "Sony",
+    "name": "SRS-ULT30",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 75900,
+    "priceAmdMax": 75900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 75900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Sony SRS-ULT30.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ]
+  },
+  {
+    "id": "harman-kardon-citation-one-mk3",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Citation One MK3",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 90900,
+    "priceAmdMax": 90900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 90900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Citation One MK3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "Grey"
+    ]
+  },
+  {
+    "id": "harman-kardon-citation-200",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Citation 200",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 153900,
+    "priceAmdMax": 153900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 153900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Citation 200.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Grey"
+    ]
+  },
+  {
+    "id": "harman-kardon-citation-surround",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Citation Surround",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 169900,
+    "priceAmdMax": 169900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 169900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Citation Surround.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Grey"
+    ]
+  },
+  {
+    "id": "yandex-station-duo-max",
+    "category": "speaker",
+    "brand": "Yandex",
+    "name": "Station Duo Max",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 247900,
+    "priceAmdMax": 247900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 247900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Yandex Station Duo Max.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "harman-kardon-citation-sub",
+    "category": "speaker",
+    "brand": "Harman Kardon",
+    "name": "Citation Sub",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 299000,
+    "priceAmdMax": 299000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 299000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Harman Kardon Citation Sub.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Grey",
+      "Black"
+    ]
+  },
+  {
+    "id": "honor-pad-x9a-lte-5301amuy",
+    "category": "tablet",
+    "brand": "Honor",
+    "name": "Pad X9a LTE /5301AMUY",
+    "aliases": [
+      "Honor Pad X9a /256GB LTE Gray /5301AMUY"
+    ],
+    "tier": "mid",
+    "priceAmd": 179990,
+    "priceAmdMax": 179990,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 179990
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Honor Pad X9a LTE /5301AMUY.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "xiaomi-pad-8-pro",
+    "category": "tablet",
+    "brand": "Xiaomi",
+    "name": "Pad 8 Pro",
+    "aliases": [
+      "Xiaomi Pad 8 Pro /256GB Gray"
+    ],
+    "tier": "mid",
+    "priceAmd": 269900,
+    "priceAmdMax": 269900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": 269900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Pad 8 Pro.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "garmin-epix-pro-sapphire-edition-47-mm",
+    "category": "watch",
+    "brand": "Garmin",
+    "name": "epix Pro – Sapphire Edition | 47 mm",
+    "aliases": [
+      "Garmin epix Pro (Gen 2) – Sapphire Edition | 47 mm"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 327000,
+    "priceAmdMax": 327000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 327000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Garmin epix Pro – Sapphire Edition | 47 mm.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "garmin-enduro-3",
+    "category": "watch",
+    "brand": "Garmin",
+    "name": "Enduro 3",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 396000,
+    "priceAmdMax": 396000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 396000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Garmin Enduro 3.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "garmin-tactix-8-47-mm-amoled",
+    "category": "watch",
+    "brand": "Garmin",
+    "name": "Tactix 8 – 47 mm, AMOLED",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 595000,
+    "priceAmdMax": 595000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 595000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Garmin Tactix 8 – 47 mm, AMOLED.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ]
+  },
+  {
+    "id": "garmin-tactix-8-51-mm-amoled",
+    "category": "watch",
+    "brand": "Garmin",
+    "name": "Tactix 8 – 51 mm, AMOLED",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 637000,
+    "priceAmdMax": 637000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 637000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Garmin Tactix 8 – 51 mm, AMOLED.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
     ]
   }
 ]

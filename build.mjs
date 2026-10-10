@@ -325,7 +325,7 @@ const offerOf = p => {
 };
 const SEO = {
   url: SITE,
-  img: 'images/social/better-am-hy.jpg',
+  img: 'images/social/better-am.jpg',
   title: 'Better.am — սարքերի գների համեմատություն Հայաստանում',
   desc: 'Համեմատեք հեռախոսների, նոութբուքերի և այլ սարքերի գները Հայաստանի խանութներում։ Ընտրեք RAM-ը, հիշողությունն ու այլ տարբերակները և գտեք լավագույն առաջարկը Better.am-ում։',
   ld: {
@@ -805,7 +805,7 @@ a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{bo
 const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')
   + `\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
 const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
-  if (img === SITE + SEO.img) img = SITE + `images/social/better-am-${lang}.jpg`;
+  // general pages share the plain logo card (owner, 2026-10-10)
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">

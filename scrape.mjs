@@ -2262,12 +2262,38 @@ const SHOPS = {
       // catalogue: pagination is ?p=2 and search is ?q=, and both are off limits.
       let rows = [];
       try { rows = JSON.parse(fs.readFileSync('data/zigzag.json', 'utf8')); } catch { }
+      // Zigzag titles JBL and Harman Kardon by SKU code - "JBL CHARGE6BLK/T", "Harman Kardon
+      // HKCITAONEMK3GRY" - which names no model the matcher can see, so 83 listings of products
+      // the catalogue already carries went unpriced (2026-10-10). Read the code as model + colour.
+      const SKU = [['BOOMBOX4', 'Boombox 4'], ['CHARGE6', 'Charge 6'], ['CHARGE5', 'Charge 5'], ['FLIP7', 'Flip 7'],
+        ['CLIP5', 'Clip 5'], ['GO5', 'Go 5'], ['GO4', 'Go 4'], ['XTREME4', 'Xtreme 4'], ['PB130', 'PartyBox 130'],
+        ['AUTH500', 'Authentics 500'], ['AUTH300', 'Authentics 300'], ['AUTH200', 'Authentics 200'],
+        ['TBEAM2', 'Tune Beam 2'], ['TOM3AVI', 'Tour One M3'], ['TOURPRO2', 'Tour Pro 2'], ['T780NC', 'Tune 780NC'],
+        ['T770NC', 'Tune 770NC'], ['T730BT', 'Tune 730BT'], ['T680NC', 'Tune 680NC'], ['T530BT', 'Tune 530BT'],
+        ['T530C', 'Tune 530C'], ['T530', 'Tune 530'], ['T520C', 'Tune 520C'], ['T500', 'Tune 500'],
+        ['ENDURPEAK3', 'Endurance Peak 3'], ['LIVEFLEX3', 'Live Flex 3'], ['Q350WL', 'Quantum 350 Wireless'],
+        ['QTUM100M2', 'Quantum 100 M2'], ['QUANTUM100', 'Quantum 100'], ['SNDGEARSNS', 'Soundgear Sense'],
+        ['HKCITAONEMK3', 'Citation One MK3'], ['CITATION200', 'Citation 200'], ['HKAURAS5', 'Aura Studio 5'],
+        ['HKCITASURR', 'Citation Surround'], ['HKCITATIONSUB', 'Citation Sub'], ['HKGOPLAY3', 'Go + Play 3']];
+      const HUE = [['SQUAD', 'Black Camo'], ['BLK', 'Black'], ['BLU', 'Blue'], ['PUR', 'Purple'], ['WHT', 'White'],
+        ['WT', 'White'], ['PINK', 'Pink'], ['PIK', 'Pink'], ['RED', 'Red'], ['BEG', 'Beige'], ['LAV', 'Lavender'],
+        ['CYN', 'Cyan'], ['GRY', 'Grey']];
+      const fromSku = title => {
+        const m = /^(JBL|Harman Kardon)\s+([A-Z0-9/]+)$/.exec(title.replace(/#+/g, ' ').replace(/\s+/g, ' ').trim());
+        if (!m) return { title };
+        const code = m[2].split('/')[0], hit = SKU.find(([k]) => code.startsWith(k));
+        if (!hit) return { title };
+        const rest = code.slice(hit[0].length), hue = HUE.find(([k]) => rest.startsWith(k));
+        return { title: `${m[1]} ${hit[1]}`, colorRaw: hue && hue[1] };
+      };
       const out = [];
-      for (const r of rows) {
+      for (const r0 of rows) {
+        const sk = fromSku(r0.title || ''), r = { ...r0, title: sk.title };
         const id = matchPhone(r.title) || matchPhone(r.url);
         if (!id || !r.price || r.price < 5000 || !safeUrl(r.url)) continue;
         out.push({ id, price: r.price, title: r.title, url: r.url,
           storage: storageOf(r.title) ?? storageOf(r.url), ram: ramOf(r.title),
+          ...(sk.colorRaw ? { colorRaw: sk.colorRaw } : {}),
           inStock: r.inStock !== false });
       }
       return out;
