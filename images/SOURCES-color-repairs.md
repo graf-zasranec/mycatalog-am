@@ -1680,3 +1680,21 @@
 - apple-ipad-pro-11-m5__silver.webp: web photo, background removed with PhotoRoom; https://alasil.ae/cdn/shop/files/iPad_Pro-Silver-1.webp; product 785x900.
 
 - bo-beosound-balance__black-oak.webp: web photo, background removed with PhotoRoom; https://luxussound.com/cdn/shop/products/black.jpg; product 1062x2075.
+
+- apple-watch-series-10__jet-black.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/3/4/3478831.jpg; product 748x889.
+
+- bose-soundtouch-10__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/71F6FZE2PmL.jpg; product 1073x1599.
+
+- acer-aspire-a16-51gm-71yf__main.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/15/26/LD0006152675.jpg; product 1490x1099.
+
+- acer-aspire-a514-56m-770k__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/51mbm0zj-+L.jpg; product 920x683.
+
+- acer-aspire-lite-al16-52p-32e3__main.webp: web photo, background removed with PhotoRoom; https://cdn.microless.com/products/7e9bc0995b20edcd11ae24fd98d9a8c3-hi.jpg; product 1500x1119.
+
+- apple-macbook-air-13-mgnd3-m1-2020__main.webp: web photo, background removed with PhotoRoom; https://static.4u.am/origin/product/1024/Whh3OepZisnWM6L4.jpg; product 1127x1057.
+
+- asus-v241eak-ba06__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/71PLspTJCUL.jpg; product 1528x2400.
+
+- jbl-clip-4-squad__main.webp: web photo, background removed with PhotoRoom; https://cdn11.bigcommerce.com/s-ljmuy6/images/stencil/1280x1280/products/6416/30308/jbl-clip4-camo-bluetooth-speaker__86974.1702088665.jpg?c=2; product 807x1251.
+
+- sony-wf-c700n-wz-e__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61m34PGPpsL.jpg; product 1830x1809.
