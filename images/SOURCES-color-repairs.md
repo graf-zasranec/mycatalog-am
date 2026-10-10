@@ -1308,3 +1308,23 @@
 - sony-wh-ch520__yellow.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 977x1889.
 
 - sony-wh-ch720n__blue.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1413x1920.
+
+- honor-choice-clip-mak-me01__black.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1716x1880.
+
+- realme-note-60x__green.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1767x1870.
+
+- samsung-galaxy-watch4-40-mm__gold.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 818x940.
+
+- yandex-station-max__blue.webp: AI re-render (not original): original colour photo re-rendered at 2048px with Nano Banana (gemini.google.com), checked against the original - same product/colour/pose; product 1342x1874.
+
+- amazon-kindle-paperwhite-12__black.webp: web photo (not maker) via Google Images Large from gadgetshouse.com.cy, real detail checked >=600px, background removed; product 788x896.
+
+- marshall-uxbridge__white.webp: web photo (not maker) via Google Images Large from mcprod.jumbo.ae, real detail checked >=600px, background removed; product 1029x1199.
+
+- xiaomi-redmi-note-14-pro__coral-green.webp: web photo (not maker) via Google Images Large from cdn.movertix.com, real detail checked >=600px, background removed; product 867x1187.
+
+- samsung-galaxy-fe__blue.webp: web photo (not maker) via Google Images Large from m.media-amazon.com, real detail checked >=600px, background removed; product 2100x2339.
+
+- amazon-kindle-paperwhite-12__black.webp: web photo (not maker) via Google Images Large from gadgetshouse.com.cy, real detail checked >=600px, background removed; product 814x900.
+
+- marshall-uxbridge__white.webp: web photo (not maker) via Google Images Large from mcprod.jumbo.ae, real detail 1200px, background removed; product 1032x1200.
