@@ -1112,3 +1112,23 @@
 - lenovo-82yu016tpb__main.webp: official maker photo, transparent original; Lenovo PSREF original 2000px (psrefstuff.lenovo.com, V15 G4 AMN), AMD badge removed; product 1677x1399.
 
 - dell-pro-e2425hm__main.webp: official maker photo, transparent original; dell.com product gallery-1 original (i.dell.com, 2000px png-alpha); product 2000x1770.
+
+- sony-ps5-backbone__main.webp: official maker photo, transparent original; backbone.com official product image (Shopify CDN, 2406px transparent); product 2209x883.
+
+- samsung-27d300gau__main.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1608x1238.
+
+- samsung-ls24d304gau__main.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1563x1238.
+
+- samsung-ls32d700eau__main.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1750x1238.
+
+- samsung-odyssey-g4-ls25bg400eixci__main.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1496x1238.
+
+- samsung-s27d402g__main.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha); product 1564x1238.
+
+- samsung-ue55du8000uxru__main.webp: official maker photo, transparent original; samsung.com/uk product gallery original (p6pim, 1920px png-alpha), white background removed; product 1752x1076.
+
+- google-pixel-10a__obsidian.webp: official maker photo, transparent original; Google Store official product image (lh3.googleusercontent.com, 1024px transparent), same back pose for every colour; product 365x765.
+
+- google-pixel-10a__porcelain.webp: official maker photo, transparent original; Google Store official product image (lh3.googleusercontent.com, 1024px transparent), same back pose for every colour; product 365x765.
+
+- google-pixel-10a__lavender.webp: official maker photo, transparent original; Google Store official product image (lh3.googleusercontent.com, 1024px transparent), same back pose for every colour; product 365x765.
