@@ -1674,3 +1674,9 @@
 - harman-kardon-citation-one-mk3__black.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/06/32/LD0006063218.jpg; product 886x1272.
 
 - xiaomi-redmi-note-13-pro__forest-green.webp: web photo, background removed with PhotoRoom; https://api.2droida.ru/storage/products/4de076364d4f754b75b2e03120ec4bf0/3056/688112805997361b9f1993a52eecc7f1.webp; product 420x895.
+
+- apple-ipad-pro-11-m5__space-black.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/4/2/42649681_1_1.png; product 1007x1157.
+
+- apple-ipad-pro-11-m5__silver.webp: web photo, background removed with PhotoRoom; https://ipowerresale.com/cdn/shop/files/media_9a27b6c1-6732-4dfb-9cca-08c9c4706b05.png; product 785x900.
+
+- bo-beosound-balance__black-oak.webp: web photo, background removed with PhotoRoom; https://luxussound.com/cdn/shop/products/black.jpg; product 1062x2075.
