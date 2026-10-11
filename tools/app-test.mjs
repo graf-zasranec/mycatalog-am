@@ -235,6 +235,18 @@ const historyBuild = { id: 'test-history-build', category: 'laptop', variants: [
 stub.HISTORY.points[historyBuild.id] = [{ d: '2026-10-05', lo: 100000, shops: 1, t: { 512: 100000 } }];
 is(app.histSeries(historyBuild, 512, null, 16).length, 0, 'selected RAM never borrows ambiguous storage-only history');
 
+/* --- retailer colours belong to their exact storage and RAM configuration --- */
+{
+  const p = { id: 'test-shop-colour-matrix', category: 'phone', colors: ['Silver', 'Black', 'Glacier'], variants: [{ram:12,storage:256},{ram:12,storage:512}] };
+  prices.offers[p.id] = [
+    {shop:'ucom',color:'Silver',ram:12,storage:256,price:642900},
+    {shop:'ucom',color:'Black',ram:12,storage:512,price:743900},
+    {shop:'other',color:null,ram:12,storage:512,price:740000}
+  ];
+  is(app.selectionOffers(p,{color:'Silver',ram:12,storage:512}).map(o=>o.shop), ['other'], 'Silver 512 must not borrow Ucom Black 512 price');
+  is(app.selectionOffers(p,{color:'Black',ram:12,storage:512}).map(o=>o.price), [743900,740000], 'matching colour and unspecified shop colours remain available');
+}
+
 /* --- the front page deals are real savings --------------------------------------------- */
 const dl = app.deals();
 is(dl.length > 3, true, 'the front page has deals to show');

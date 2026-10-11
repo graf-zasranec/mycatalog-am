@@ -368,6 +368,7 @@ function selectionOffers(p, sel) {
       && (sel.cpu == null || c.cpu === sel.cpu)
       && (sel.size == null || c.size === sel.size || (screens.size < 2 && c.size == null))
       && (!sel.band || !o.band || o.band === sel.band)
+      && (!sel.color || !o.color || o.color === sel.color)
       && (sel.esim == null || o.esim === sel.esim)
       && (sel.cell == null || o.cell === sel.cell);
   });
@@ -2087,9 +2088,8 @@ function initSel(p) {
   if (SEL.id !== p.id) SEL = initialConfig(p);
 }
 // Narrow the offer list to the chosen options.
-// RAM and storage decide the price, so those filters are HARD: if nothing matches, the answer is
-// "no shop sells this configuration", not some other variant's price. Colour is soft, because it
-// rarely changes the price and many listings omit it.
+// A named colour must match alongside RAM and storage. A shop that omits its
+// colour remains unspecified; a differently coloured SKU is never a substitute.
 function visibleOffers(p) {
   const o = selectionOffers(p, SEL);
   // One shop listing the same phone in four colours at one price is one offer to a reader, not
