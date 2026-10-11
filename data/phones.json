@@ -4958,8 +4958,7 @@
    "MacBook Pro 14 MR7J3 2023",
    "MacBook Pro 14 MR7J3 2023 Silver",
    "MacBook Pro 14 M3 2023",
-   "MacBook Pro M3",
-   "MacBook Pro 14 M3 SG /MTL73RU/A"
+   "MacBook Pro M3"
   ],
   "tier": "upper-mid",
   "priceAmd": 692000,
@@ -4971,11 +4970,6 @@
     "ram": 8,
     "storage": 512,
     "priceAmd": 692000
-   },
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 713400
    }
   ],
   "display": {
@@ -10307,11 +10301,6 @@
     "ram": null,
     "storage": null,
     "priceAmd": 199900
-   },
-   {
-    "ram": null,
-    "storage": 128,
-    "priceAmd": 199000
    }
   ],
   "battery": {},
@@ -10320,9 +10309,7 @@
   ],
   "aliases": [
    "Vivobook X1404VA-V14.I38128",
-   "Նոթբուք Asus Vivobook X1404VA-V14.I38128",
-   "VivoBook Core i3 X1404VA-I38128",
-   "Asus VivoBook Core i3 /128GB X1404VA-I38128"
+   "Նոթբուք Asus Vivobook X1404VA-V14.I38128"
   ]
  },
  {
@@ -25103,10 +25090,9 @@
   "id": "hp-omnibook-5-ai-16-af1003ci-ultra",
   "category": "laptop",
   "brand": "HP",
-  "name": "OmniBook 5 AI 16-af1003ci",
+  "name": "OmniBook 5 AI 16-af1003ci Ultra",
   "aliases": [
-   "Նոթբուք HP OmniBook 5 AI 16-af1003ci Ultra",
-   "OmniBook 5 AI 16-af1003ci Ultra"
+   "Նոթբուք HP OmniBook 5 AI 16-af1003ci Ultra"
   ],
   "tier": "upper-mid",
   "priceAmd": 359900,
@@ -48215,13 +48201,10 @@
   "id": "xiaomi-mi-smart-band-9",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Smart Band 9",
-  "aliases": [
-   "Mi Smart Band 9",
-   "Redmi Band 9"
-  ],
+  "name": "Mi Smart Band 9",
+  "aliases": [],
   "tier": "budget",
-  "priceAmd": 17800,
+  "priceAmd": 19000,
   "priceAmdMax": 19000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -53602,11 +53585,9 @@
   "category": "watch",
   "brand": "Xiaomi",
   "name": "Smart Band 7",
-  "aliases": [
-   "Redmi Band 7"
-  ],
+  "aliases": [],
   "tier": "budget",
-  "priceAmd": 15500,
+  "priceAmd": 22900,
   "priceAmdMax": 22900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -53725,11 +53706,10 @@
   "name": "Smart Band 8",
   "aliases": [
    "Ֆիթնես-թեւնոց Xiaomi Smart Band 8 Champagne Gold (M2239B1) BHR7166GL",
-   "Smart Band 8 Champagne BHR7166GL",
-   "Redmi Band 8"
+   "Smart Band 8 Champagne BHR7166GL"
   ],
   "tier": "budget",
-  "priceAmd": 15900,
+  "priceAmd": 16500,
   "priceAmdMax": 16500,
   "popularity": 40,
   "accent": "#5C6470",
@@ -57109,10 +57089,8 @@
   "id": "xiaomi-redmi-band-9-pro",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Smart Band 9 Pro",
-  "aliases": [
-   "Redmi Band 9 Pro"
-  ],
+  "name": "Redmi Band 9 Pro",
+  "aliases": [],
   "tier": "budget",
   "priceAmd": 29000,
   "priceAmdMax": 29000,
@@ -57228,6 +57206,43 @@
   ]
  },
  {
+  "id": "xiaomi-redmi-band-9",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Band 9",
+  "aliases": [],
+  "tier": "budget",
+  "priceAmd": 17800,
+  "priceAmdMax": 17800,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 17800
+   }
+  ],
+  "display": {
+   "size": 1.62,
+   "resolution": "192x490"
+  },
+  "battery": {
+   "capacity": 233
+  },
+  "summaryEn": "Xiaomi Redmi Band 9.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "colors": [
+   "Blue",
+   "Pink"
+  ]
+ },
+ {
   "id": "honor-band-9",
   "category": "watch",
   "brand": "Honor",
@@ -57253,6 +57268,79 @@
    "capacity": 180
   },
   "summaryEn": "Honor Band 9.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "colors": [
+   "Black"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-band-8",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Band 8",
+  "aliases": [],
+  "tier": "budget",
+  "priceAmd": 15900,
+  "priceAmdMax": 15900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 15900
+   }
+  ],
+  "display": {
+   "size": 1.62,
+   "resolution": "192x490"
+  },
+  "battery": {
+   "capacity": 190
+  },
+  "summaryEn": "Xiaomi Redmi Band 8.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "colors": [
+   "Black",
+   "Sand"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-band-7",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Band 7",
+  "aliases": [],
+  "tier": "budget",
+  "priceAmd": 15500,
+  "priceAmdMax": 15500,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 15500
+   }
+  ],
+  "display": {
+   "size": 1.62,
+   "resolution": "192x490"
+  },
+  "battery": {
+   "capacity": 180
+  },
+  "summaryEn": "Xiaomi Redmi Band 7.",
   "unsure": [
    "popularity",
    "display",

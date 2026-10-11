@@ -2,17 +2,18 @@
   const urls = document.currentScript.dataset.src.split(' ');
   const main = document.getElementById('main');
   if (document.documentElement.classList.contains('route-pending')) main.dataset.loading = document.documentElement.dataset.routeLabel;
-  // Download the shared files together; execute products, price summaries, route detail, app.
-  for (const url of urls) {
-    const link = document.createElement('link'); link.rel = 'preload'; link.as = 'script'; link.href = url;
-    document.head.appendChild(link);
-  }
   const append = url => new Promise((resolve, reject) => {
     const s = document.createElement('script'); s.src = url; s.async = false;
     s.onload = resolve; s.onerror = reject; document.head.appendChild(s);
   });
   const start = async () => {
     try {
+      // Start catalogue downloads after the prerendered heading has painted.
+      // Preloading in the deferred boot script competed with first-paint fonts.
+      for (const url of urls) {
+        const link = document.createElement('link'); link.rel = 'preload'; link.as = 'script'; link.href = url;
+        document.head.appendChild(link);
+      }
       // A canonical product already has its photo and prices. Let that image
       // reach a frame before decoding the catalogue and offers on a slow CPU.
       if (main.dataset.prerenderProduct && !document.documentElement.classList.contains('route-pending')) {
