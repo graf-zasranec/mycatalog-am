@@ -1920,3 +1920,9 @@
 - hp-probook-4-g1a-ryzen-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 739x582.
 
 - hp-probook-440-g11-ultra-7-155u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 675x565.
+
+- nothing-phone-lite-6974434227026__main.webp: official maker photo, transparent original; official-style render, transparent original; product 1519x1853.
+
+- nothing-phone-pro-6974434224483__main.webp: official maker photo, transparent original; web photo, background removed; product 1120x1363.
+
+- xiaomi-pad-m1__main.webp: official maker photo, transparent original; web photo, background removed; product 542x538.

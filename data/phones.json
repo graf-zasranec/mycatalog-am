@@ -10307,6 +10307,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 199900
+   },
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 199000
    }
   ],
   "battery": {},
@@ -10315,7 +10320,9 @@
   ],
   "aliases": [
    "Vivobook X1404VA-V14.I38128",
-   "Նոթբուք Asus Vivobook X1404VA-V14.I38128"
+   "Նոթբուք Asus Vivobook X1404VA-V14.I38128",
+   "VivoBook Core i3 X1404VA-I38128",
+   "Asus VivoBook Core i3 /128GB X1404VA-I38128"
   ]
  },
  {
@@ -71843,6 +71850,192 @@
   "display": {},
   "battery": {},
   "summaryEn": "Apple MacBook Pro 16 inch M5 Pro MGEC4.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "xiaomi-pad-m1",
+  "category": "tablet",
+  "brand": "Xiaomi",
+  "name": "POCO Pad M1",
+  "aliases": [
+   "Xiaomi Poco Pad M1",
+   "Pad M1"
+  ],
+  "tier": "mid",
+  "priceAmd": 129000,
+  "priceAmdMax": 129000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 129000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Xiaomi Pad M1.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "nothing-phone-lite-6974434227026",
+  "category": "phone",
+  "brand": "Nothing",
+  "name": "Phone (3a) Lite",
+  "aliases": [
+   "Nothing Phone (3a) Lite /128GB Black /6974434227026",
+   "Phone Lite /6974434227026"
+  ],
+  "tier": "mid",
+  "priceAmd": 109000,
+  "priceAmdMax": 109000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 128,
+    "priceAmd": 109000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nothing Phone Lite /6974434227026.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "nothing-phone-pro-6974434224483",
+  "category": "phone",
+  "brand": "Nothing",
+  "name": "Phone (3a) Pro",
+  "aliases": [
+   "Nothing Phone (3a) PRO Black /6974434224483",
+   "Phone PRO /6974434224483"
+  ],
+  "tier": "mid",
+  "priceAmd": 204600,
+  "priceAmdMax": 204600,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 204600
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nothing Phone PRO /6974434224483.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-15-core-f1504va-bq338",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 15 F1504VA-BQ338",
+  "aliases": [
+   "Asus VivoBook 15 Core 7 /512GB F1504VA-BQ338",
+   "VivoBook 15 Core F1504VA-BQ338"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 359000,
+  "priceAmdMax": 359000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 359000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS VivoBook 15 Core F1504VA-BQ338.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-core-i7-x1404va-i712512",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 14 X1404VA-I712512",
+  "aliases": [
+   "Asus VivoBook Core i7 /512GB X1404VA-I712512",
+   "VivoBook Core i7 X1404VA-I712512"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 339000,
+  "priceAmdMax": 339000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 339000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS VivoBook Core i7 X1404VA-I712512.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-ultra-ux3405ma-qd993-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Zenbook 14 OLED UX3405MA-QD993",
+  "aliases": [
+   "Asus ZenBook Ultra 9 /512GB UX3405MA-QD993 OLED",
+   "ZenBook Ultra UX3405MA-QD993 OLED"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 599000,
+  "priceAmdMax": 599000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 599000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS ZenBook Ultra UX3405MA-QD993 OLED.",
   "unsure": [
    "popularity",
    "display",
