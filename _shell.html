@@ -687,7 +687,7 @@ h2.sh em{font-style:normal;color:var(--brand);padding:0;font-size:13px;margin-le
    hero and a 190px card, where it reads as a BROKEN image rather than a missing one. Pin it to
    its own size wherever it lands and let the rest of the box stay empty. */
 img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:auto;opacity:.5}
-.pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:340px}
+.pshotwrap{position:relative;align-self:start;aspect-ratio:1;min-height:0;overflow:hidden;isolation:isolate}
 .shot-note{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:2;white-space:nowrap;
   font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--body);background:var(--surface);
   border:1px solid var(--line2);border-radius:var(--pill);padding:5px 11px}
@@ -701,9 +701,9 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
    below the first option. --t and --h come from data/photo-box.json (tools/photo-box.py): the box
    takes the product's own height and the canvas is drawn shifted up by the air above it. */
 @media (min-width:901px){
-  .pshotwrap{aspect-ratio:1 / var(--h,1);min-height:0}
-  .pshotwrap img{top:calc(var(--t,0) / var(--h,1) * -100%);bottom:auto;height:calc(100% / var(--h,1))}
-  .shot-note{top:calc(100% + 10px);bottom:auto}
+  .pshotwrap{aspect-ratio:auto;height:520px;min-height:0}
+  .pshotwrap img{inset:0;width:100%;height:100%;object-fit:contain}
+  .shot-note{top:auto;bottom:10px}
   .pside,.pside>:first-child,.pside>.og:first-child{padding-top:0;border-top:0}
 }
 .og{border-top:1px solid var(--line2);padding:13px 0}
@@ -803,8 +803,8 @@ img[src^="data:image/svg"][src]{width:64px;height:64px;object-fit:none;margin:au
 .ends2 b{font-size:12.5px;color:var(--text)}
 @media (max-width:900px){
   .pgrid{grid-template-columns:1fr;gap:18px}
-  .pshotwrap{position:static;display:grid;place-items:center;min-height:0;order:-1}
-  .pshotwrap img{position:static;width:auto;height:auto;max-width:100%;max-height:260px}
+  .pshotwrap{position:relative;display:grid;place-items:center;min-height:0;height:280px;aspect-ratio:auto;order:-1}
+  .pshotwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:10px;max-width:100%;max-height:280px}
   .rail2,.ends2{max-width:none}
 }
 
