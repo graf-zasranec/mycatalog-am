@@ -14,8 +14,8 @@ import fs from 'node:fs';
 
 const src = fs.readFileSync('scrape.mjs', 'utf8');
 const body = src.slice(0, src.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]');
-const { matchPhone, looksLikeAccessory, COLOR_WORDS } = await import('data:text/javascript;base64,' +
-  Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory, COLOR_WORDS };\n', 'utf8').toString('base64'));
+const { matchPhone, looksLikeAccessory, COLOR_WORDS, ramOf } = await import('data:text/javascript;base64,' +
+  Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory, COLOR_WORDS, ramOf };\n', 'utf8').toString('base64'));
 
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const BRANDS = [...new Set(phones.map(p => p.brand))]
@@ -231,7 +231,8 @@ for (const r of rows) {
              // Some exports label the RAM column "memory", so "6/128GB" arrives with storage 6.
              // Nothing here is sold with six gigabytes of storage: of the readings available,
              // the largest real one is the capacity and the rest are memory.
-             storage: [cap(r.storage), cap(r.name)].filter(v => v >= 8).sort((a, b) => b - a)[0] ?? null, price: r.price, shop: r.shop,
+             ram: ramOf(r.name),
+             storage: [cap(r.storage), cap(r.name)].filter(v => v >= (['phone', 'tablet'].includes(kind) ? 32 : ['laptop', 'desktop'].includes(kind) ? 64 : 8)).sort((a, b) => b - a)[0] ?? null, price: r.price, shop: r.shop,
              url: r.url || '', title: r.name.replace(/\s{2,}/g, ' ').trim() });
 }
 
@@ -267,16 +268,13 @@ const added = [], csv = [];
 for (const [id, list] of fresh) {
   const o = list[0], prices = list.map(x => x.price);
   const lo = Math.min(...prices), hi = Math.max(...prices);
-  const tiers = [...new Set(list.map(x => x.storage).filter(Boolean))].sort((a, b) => a - b);
+  const configurations = [...new Map(list.map(x => [`${x.ram ?? ''}|${x.storage ?? ''}`, { ram: x.ram ?? null, storage: x.storage ?? null, priceAmd: Math.min(...list.filter(y => y.ram === x.ram && y.storage === x.storage).map(y => y.price)) }])).values()];
   added.push({
     id, category: o.category, brand: o.brand, name: o.name,
     aliases: [...new Set(list.map(x => x.alias).filter(a => a && a.toLowerCase() !== (o.brand + ' ' + o.name).toLowerCase()))],
     tier: lo < 100000 ? 'budget' : lo < 300000 ? 'mid' : lo < 700000 ? 'upper-mid' : 'flagship',
     priceAmd: lo, priceAmdMax: hi, popularity: 40, accent: '#5C6470',
-    variants: tiers.length
-      ? tiers.map(s => ({ ram: null, storage: s,
-          priceAmd: Math.min(...list.filter(x => x.storage === s).map(x => x.price)) }))
-      : [{ ram: null, storage: null, priceAmd: lo }],
+    variants: configurations,
     display: o.category === 'tv' && tvSpec(o.name)
       ? { size: tvSpec(o.name).size, type: tvSpec(o.name).type, resolution: '3840 x 2160' } : {},
     battery: {},
@@ -287,7 +285,7 @@ for (const [id, list] of fresh) {
       : ['popularity', 'display', 'chipset', 'battery.capacity'],
   });
   for (const x of list)
-    csv.push([x.shop, x.title.replace(/,/g, ' '), x.storage || '', '', x.url, x.price].join(','));
+    csv.push([x.shop, x.title.replace(/,/g, ' '), x.storage || '', '', x.url, x.price, x.ram || '', '', '', ''].join(','));
 }
 fs.writeFileSync('data/phones.json', JSON.stringify([...phones, ...added], null, 2) + '\n');
 const old = fs.readFileSync('data/listings.csv', 'utf8').replace(/\n+$/, '');

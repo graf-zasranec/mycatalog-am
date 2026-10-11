@@ -70308,7 +70308,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 303900
    }
@@ -70318,7 +70318,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 8640HS.",
+  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 8640HS, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70328,7 +70328,10 @@
   "graphics": {
    "name": "AMD Radeon Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Black"
+  ]
  },
  {
   "id": "acer-aspire-go-ag15-71pt-72ga-i7-13620h",
@@ -70345,7 +70348,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 351600
    }
@@ -70355,7 +70358,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core i7-13620H.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-13620H, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70365,7 +70368,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
@@ -70382,7 +70386,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 256,
     "priceAmd": 219000
    }
@@ -70392,7 +70396,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core i3-1305U.",
+  "summaryEn": "A 16-inch laptop with Intel Core i3-1305U, 8 GB RAM and 256 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70402,7 +70406,8 @@
   "graphics": {
    "name": "Intel Iris Xe Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "acer-aspire-lite-al16-54p-52al-i5-120u",
@@ -70419,7 +70424,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 287900
    }
@@ -70429,7 +70434,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core 5-120U.",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-120U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70439,7 +70444,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-aspire-vero-av16-51p-58ku-u5-125u",
@@ -70456,17 +70462,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 253300
    }
   ],
   "display": {
    "size": 16,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "touch": false
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70476,7 +70483,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-aspire-vero-av16-51p-7063-ultra",
@@ -70494,7 +70502,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 340600
    }
@@ -70504,7 +70512,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-155H.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-155H, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70514,7 +70522,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-nitro-5-an515-58-77z2-gaming-i7-12700h-plus-rtx3060",
@@ -70532,7 +70541,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 1024,
     "priceAmd": 739600
    }
@@ -70542,7 +70551,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H, 16 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70552,7 +70561,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 3060 6GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-nitro-v-16-anv16-72-73vj-core-7-240h",
@@ -70569,7 +70579,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 512,
     "priceAmd": 620000
    }
@@ -70579,7 +70589,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core 7-240H.",
+  "summaryEn": "A 16-inch laptop with Intel Core 7-240H, 32 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70589,7 +70599,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 5060 8GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-nitro-v16-anv16-72-933f-i9-270h-rtx5070",
@@ -70606,7 +70617,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 1024,
     "priceAmd": 799000
    }
@@ -70616,7 +70627,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core 9-270H.",
+  "summaryEn": "A 16-inch laptop with Intel Core 9-270H, 32 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70626,7 +70637,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 5070 8GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "acer-predator-helios-neo-14-phn14-51-99nm-ultra-9-185h",
@@ -70643,7 +70655,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 1024,
     "priceAmd": 957600
    }
@@ -70653,7 +70665,7 @@
    "resolution": "3072x1920"
   },
   "battery": {},
-  "summaryEn": "A 14.5-inch laptop with Intel Core Ultra 9-185H.",
+  "summaryEn": "A 14.5-inch laptop with Intel Core Ultra 9-185H, 32 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70663,7 +70675,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 4070 8GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "acer-predator-helios-neo-16s-ai",
@@ -70680,7 +70693,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 1024,
     "priceAmd": 699000
    }
@@ -70690,7 +70703,7 @@
    "resolution": "2560x1600"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX, 16 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70700,7 +70713,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 5060 8GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "acer-swift-16-ai-sf16-51t-76tg",
@@ -70717,17 +70731,19 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 1024,
     "priceAmd": 399000
    }
   ],
   "display": {
    "size": 16,
-   "resolution": "2880x1800"
+   "resolution": "2880x1800",
+   "type": "OLED",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-256V.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-256V, 16 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70754,7 +70770,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 48,
     "storage": 2048,
     "priceAmd": 2099500
    }
@@ -70764,7 +70780,7 @@
    "resolution": "3456x2234"
   },
   "battery": {},
-  "summaryEn": "A 16.2-inch laptop with Apple M5 Max.",
+  "summaryEn": "A 16.2-inch laptop with Apple M5 Max, 48 GB RAM and 2048 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70774,7 +70790,11 @@
   "graphics": {
    "name": "Apple M5 Max 32- or 40-core GPU",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Space Black"
+  ],
+  "os": "macOS"
  },
  {
   "id": "asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t",
@@ -70791,17 +70811,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 4,
     "storage": 64,
     "priceAmd": 149000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1366x768"
+   "resolution": "1366x768",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Celeron N4500.",
+  "summaryEn": "A 14-inch laptop with Intel Celeron N4500, 4 GB RAM and 64 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70811,7 +70832,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-15-core-i7-x1504za-nj247",
@@ -70828,9 +70850,14 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 295000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 320000
    }
   ],
   "display": {
@@ -70838,7 +70865,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core i7-1255U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-1255U, 8 GB RAM and 512 GB storage or 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70848,7 +70875,8 @@
   "graphics": {
    "name": "Intel Iris Xe Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-go-e1504fa-ws51-ryzen-5",
@@ -70865,7 +70893,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 229400
    }
@@ -70875,7 +70903,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 7520U.",
+  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 7520U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70885,7 +70913,8 @@
   "graphics": {
    "name": "AMD Radeon Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "asus-vivobook-m1605ya-mb011-amd-ryzen-5-7530u",
@@ -70902,17 +70931,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 280400
    }
   ],
   "display": {
    "size": 16,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "touch": false
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 7530U.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 7530U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70922,7 +70952,8 @@
   "graphics": {
    "name": "AMD Radeon Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-s14-s5406sa-qd086w-oled-core-ultra",
@@ -70940,17 +70971,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 445000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "type": "OLED"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-256V.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-256V, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70960,7 +70992,8 @@
   "graphics": {
    "name": "Intel Arc Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "asus-vivobook-s16-m3607ha-sh096-ryzen-5",
@@ -70977,7 +71010,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 349400
    }
@@ -70987,7 +71020,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 220.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 220, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -70997,7 +71030,8 @@
   "graphics": {
    "name": "AMD Radeon Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-s16-m3607ha-sh097-ryzen-7-260",
@@ -71014,7 +71048,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 1024,
     "priceAmd": 394400
    }
@@ -71024,7 +71058,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 260.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 260, 16 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71034,7 +71068,8 @@
   "graphics": {
    "name": "AMD Radeon Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-x1504va-bq4172-i5-120u",
@@ -71051,7 +71086,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 282400
    }
@@ -71061,7 +71096,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core 5-120U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core 5-120U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71071,7 +71106,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-x1504va-bq4173-i7-150u",
@@ -71088,7 +71124,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 338400
    }
@@ -71098,7 +71134,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71108,7 +71144,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-zenbook-duo-ux8406ma-ds76t-ultra-7-155h-oled",
@@ -71125,17 +71162,19 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 1024,
     "priceAmd": 625000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "type": "OLED",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155H.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155H, 16 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71145,7 +71184,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "asus-zenbook-snapdragon-x-plus-ux3407qa-x1p512",
@@ -71162,17 +71202,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 399000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Snapdragon X Plus.",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Plus, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71182,7 +71223,8 @@
   "graphics": {
    "name": "Qualcomm Adreno",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "dell-inspiron-16-plus-7640-u9-185h",
@@ -71199,17 +71241,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 500800
    }
   ],
   "display": {
    "size": 16,
-   "resolution": "2560x1600"
+   "resolution": "2560x1600",
+   "touch": false
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-185H.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-185H, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71219,7 +71262,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Pro"
  },
  {
   "id": "dell-latitude-3540-i5-1335u",
@@ -71236,7 +71280,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 256,
     "priceAmd": 337800
    }
@@ -71246,7 +71290,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1335U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1335U, 16 GB RAM and 256 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71256,7 +71300,8 @@
   "graphics": {
    "name": "Intel Iris Xe Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "dell-latitude-5450-ultra-5-125u",
@@ -71273,7 +71318,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 440300
    }
@@ -71283,7 +71328,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71293,7 +71338,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "dell-latitude-5450-ultra-7-165h",
@@ -71310,7 +71356,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 395000
    }
@@ -71320,7 +71366,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71330,7 +71376,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Pro"
  },
  {
   "id": "dell-latitude-5550-ultra",
@@ -71348,17 +71395,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 512,
     "priceAmd": 459000
    }
   ],
   "display": {
    "size": 15.6,
-   "resolution": "1920x1080"
+   "resolution": "1920x1080",
+   "touch": false
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 7-165U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 7-165U, 32 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71368,7 +71416,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Pro"
  },
  {
   "id": "dell-latitude-7455-copilotplus-snapdragon-x-plus-x1p-64",
@@ -71385,17 +71434,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 469400
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "2560x1600"
+   "resolution": "2560x1600",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Snapdragon X Plus.",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Plus, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71405,7 +71455,8 @@
   "graphics": {
    "name": "Qualcomm Adreno",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Pro"
  },
  {
   "id": "dell-latitude-7650-ultra",
@@ -71423,7 +71474,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 525000
    }
@@ -71433,7 +71484,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-165U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-165U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71443,7 +71494,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Pro"
  },
  {
   "id": "dell-vostro-3530-i5-1334u",
@@ -71460,7 +71512,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 248100
    }
@@ -71470,7 +71522,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1334U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1334U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71480,7 +71532,8 @@
   "graphics": {
    "name": "Intel Iris Xe Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "dell-xps-13-9350-touch-core-ultra-9",
@@ -71497,17 +71550,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 1024,
     "priceAmd": 969000
    }
   ],
   "display": {
    "size": 13.4,
-   "resolution": "2560x1440"
+   "resolution": "2560x1440",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 9-288V.",
+  "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 9-288V, 32 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71517,7 +71571,8 @@
   "graphics": {
    "name": "Intel Arc Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "dell-xps-16-da16250-drgg5-ultra-7-255h",
@@ -71534,7 +71589,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 1024,
     "priceAmd": 995000
    }
@@ -71544,7 +71599,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16.2-inch laptop with Intel Core Ultra 7-255H.",
+  "summaryEn": "A 16.2-inch laptop with Intel Core Ultra 7-255H, 32 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71554,7 +71609,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 5050 8GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "dell-xps-9340-u7-155h",
@@ -71571,7 +71627,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 578400
    }
@@ -71581,7 +71637,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 7-155H.",
+  "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 7-155H, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71591,7 +71647,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11 Pro"
  },
  {
   "id": "google-pixel-watch-3-45mm-lte",
@@ -71647,7 +71704,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 624400
    }
@@ -71657,7 +71714,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71667,7 +71724,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "Windows 11 Pro"
  },
  {
   "id": "hp-elitebook-6-g1i-16-ultra-7-255u",
@@ -71684,7 +71745,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 679400
    }
@@ -71694,7 +71755,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-255U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-255U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71704,7 +71765,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "Windows 11 Pro"
  },
  {
   "id": "hp-elitebook-660-g11-u5-125u",
@@ -71721,7 +71786,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 496400
    }
@@ -71731,7 +71796,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71741,7 +71806,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "hp-elitebook-8g1i13-ultra",
@@ -71759,7 +71825,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 577400
    }
@@ -71769,7 +71835,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 13.3-inch laptop with Intel Core Ultra 5-225U.",
+  "summaryEn": "A 13.3-inch laptop with Intel Core Ultra 5-225U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71779,7 +71845,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "Windows 11 Pro"
  },
  {
   "id": "hp-gaming-omen-16-n0023dx-ryzen",
@@ -71797,7 +71867,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 601400
    }
@@ -71807,7 +71877,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 6800H.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 6800H, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71817,7 +71887,8 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 3060 6GB",
    "type": "discrete"
-  }
+  },
+  "os": "Windows 11 Home"
  },
  {
   "id": "hp-omen-17-db1000-gaming-ryzen-ai-9",
@@ -71834,7 +71905,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 809400
    }
@@ -71844,7 +71915,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 17.3-inch laptop with AMD Ryzen 9 365.",
+  "summaryEn": "A 17.3-inch laptop with AMD Ryzen 9 365, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71854,7 +71925,11 @@
   "graphics": {
    "name": "Nvidia Geforce RTX 5060 8GB",
    "type": "discrete"
-  }
+  },
+  "colors": [
+   "Black"
+  ],
+  "os": "Windows 11 Home"
  },
  {
   "id": "hp-omnibook-3-16-bu0046ci-ultra-5-225u",
@@ -71871,7 +71946,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 12,
     "storage": 512,
     "priceAmd": 343400
    }
@@ -71881,7 +71956,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U, 12 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71891,7 +71966,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "DOS"
  },
  {
   "id": "hp-omnibook-5-14-fp0024ci",
@@ -71908,17 +71987,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 373000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core 5-120U.",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-120U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71928,7 +72008,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Blue"
+  ],
+  "os": "DOS"
  },
  {
   "id": "hp-omnibook-5-ai-16-cn0004ci",
@@ -71945,7 +72029,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 465000
    }
@@ -71955,7 +72039,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with Intel Core 5-320U.",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-320U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -71965,7 +72049,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "DOS"
  },
  {
   "id": "hp-omnibook-5-flip-14-fp0019ci",
@@ -71982,17 +72070,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 349000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core 3-100U.",
+  "summaryEn": "A 14-inch laptop with Intel Core 3-100U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72002,7 +72091,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Blue"
+  ],
+  "os": "DOS"
  },
  {
   "id": "hp-omnibook-5-flip-14-fp0020ci",
@@ -72019,17 +72112,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 349000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "touch": true
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core 3-100U.",
+  "summaryEn": "A 14-inch laptop with Intel Core 3-100U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72039,7 +72133,11 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "DOS"
  },
  {
   "id": "hp-omnibook-x-flip-2-in-1-14-fm0015ci-ultra-7-258v",
@@ -72056,7 +72154,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 32,
     "storage": 1024,
     "priceAmd": 555400
    }
@@ -72066,7 +72164,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-258V.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-258V, 32 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72076,7 +72174,11 @@
   "graphics": {
    "name": "Intel Arc Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "Windows 11 Home"
  },
  {
   "id": "hp-omnibook-x-flip-2-in-1-14-fm0019ci-ultra-5-226v",
@@ -72093,7 +72195,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 449400
    }
@@ -72103,7 +72205,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-226V.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-226V, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72113,7 +72215,11 @@
   "graphics": {
    "name": "Intel Arc Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "Windows 11 Home"
  },
  {
   "id": "hp-probook-4-g1a-ryzen-5",
@@ -72130,7 +72236,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 323400
    }
@@ -72140,7 +72246,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 230.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 230, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72150,7 +72256,11 @@
   "graphics": {
    "name": "AMD Radeon Graphics",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Silver"
+  ],
+  "os": "Windows 11 Pro"
  },
  {
   "id": "hp-probook-440-g11-ultra-7-155u",
@@ -72167,7 +72277,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 512,
     "priceAmd": 392400
    }
@@ -72177,7 +72287,7 @@
    "resolution": "1920x1200"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155U.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155U, 8 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72187,7 +72297,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "apple-macbook-pro-16-inch-m5-pro-mgec4",
@@ -72204,7 +72315,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 48,
     "storage": 1024,
     "priceAmd": 1549500
    }
@@ -72214,7 +72325,7 @@
    "resolution": "3456x2234"
   },
   "battery": {},
-  "summaryEn": "A 16.2-inch laptop with Apple M5 Pro.",
+  "summaryEn": "A 16.2-inch laptop with Apple M5 Pro, 48 GB RAM and 1024 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72224,7 +72335,11 @@
   "graphics": {
    "name": "Apple M5 Pro 16- or 20-core GPU",
    "type": "integrated"
-  }
+  },
+  "colors": [
+   "Space Black"
+  ],
+  "os": "macOS"
  },
  {
   "id": "xiaomi-pad-m1",
@@ -72242,8 +72357,8 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
+    "ram": 8,
+    "storage": 256,
     "priceAmd": 129000
    }
   ],
@@ -72256,7 +72371,7 @@
   "battery": {
    "capacity": 12000
   },
-  "summaryEn": "POCO Pad M1, a 12.1-inch tablet.",
+  "summaryEn": "A 12.1-inch tablet with Snapdragon 7s Gen 4, 8 GB RAM, 256 GB storage and a 12000 mAh battery.",
   "unsure": [
    "popularity"
   ],
@@ -72267,7 +72382,10 @@
    "weight": 610
   },
   "released": "2025-11",
-  "specSource": "gsmarena.com/xiaomi_poco_pad_m1-14297.php, 2026-10-11"
+  "specSource": "gsmarena.com/xiaomi_poco_pad_m1-14297.php, 2026-10-11",
+  "colors": [
+   "Gray"
+  ]
  },
  {
   "id": "nothing-phone-lite-6974434227026",
@@ -72399,7 +72517,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 359000
    }
@@ -72409,7 +72527,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72419,7 +72537,8 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  },
  {
   "id": "asus-vivobook-core-i7-x1404va-i712512",
@@ -72437,7 +72556,7 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 12,
     "storage": 512,
     "priceAmd": 339000
    }
@@ -72447,7 +72566,7 @@
    "resolution": "1920x1080"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core i7-1355U.",
+  "summaryEn": "A 14-inch laptop with Intel Core i7-1355U, 12 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72457,7 +72576,8 @@
   "graphics": {
    "name": "Intel Iris Xe Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "Windows 11"
  },
  {
   "id": "asus-zenbook-ultra-ux3405ma-qd993-oled",
@@ -72476,17 +72596,18 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 16,
     "storage": 512,
     "priceAmd": 599000
    }
   ],
   "display": {
    "size": 14,
-   "resolution": "1920x1200"
+   "resolution": "1920x1200",
+   "type": "OLED"
   },
   "battery": {},
-  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-185H.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-185H, 16 GB RAM and 512 GB storage.",
   "unsure": [
    "popularity"
   ],
@@ -72496,6 +72617,7 @@
   "graphics": {
    "name": "Intel Graphics",
    "type": "integrated"
-  }
+  },
+  "os": "DOS"
  }
 ]
