@@ -1940,3 +1940,29 @@
 - images/cut/samsung-galaxy-tab-s10-fe__gray.webp: https://www.samsung.com/us/tablets/galaxy-tab-s10-fe/buy/; Official SM-X520 front-and-back gallery photograph, exact colour and matching pose across all three colours; white background removed with PhotoRoom. Native visible product 1264x876; no enlargement or recolouring.
 - images/cut/samsung-galaxy-tab-s10-fe__silver.webp: https://www.samsung.com/us/tablets/galaxy-tab-s10-fe/buy/; Official SM-X520 front-and-back gallery photograph, exact colour and matching pose across all three colours; white background removed with PhotoRoom. Native visible product 1265x878; no enlargement or recolouring.
 - images/cut/samsung-galaxy-tab-s10-fe__blue.webp: https://www.samsung.com/us/tablets/galaxy-tab-s10-fe/buy/; Official SM-X520 front-and-back gallery photograph, exact colour and matching pose across all three colours; white background removed with PhotoRoom. Native visible product 1265x879; no enlargement or recolouring.
+
+- images/cut/apple-macbook-pro-14-m4__black.webp: https://www.apple.com/shop/product/g1ff1ll/a/; official 14-inch M4 Pro chassis in black, shared physical enclosure with M4 Max; original transparency and matching front pose. Native product (3148, 1900).
+
+- images/cut/apple-macbook-pro-14-m4__silver.webp: https://www.apple.com/shop/product/g1fc1ll/a/; official 14-inch M4 Pro chassis in silver, shared physical enclosure with M4 Max; original transparency and matching front pose. Native product (3148, 1901).
+
+- images/cut/apple-macbook-pro-14-m4-max__black.webp: https://www.apple.com/shop/product/g1ff1ll/a/; official 14-inch M4 Pro chassis in black, shared physical enclosure with M4 Max; original transparency and matching front pose. Native product (3148, 1900).
+
+- images/cut/apple-macbook-pro-14-m4-max__silver.webp: https://www.apple.com/shop/product/g1fc1ll/a/; official 14-inch M4 Pro chassis in silver, shared physical enclosure with M4 Max; original transparency and matching front pose. Native product (3148, 1901).
+
+- images/cut/apple-iphone-15-pro__black-titanium.webp: https://www.apple.com/shop/refurbished/iphone/iphone-15-pro ; official refurb-iphone-15-pro-blacktitanium-202412 front-and-back image. Native product (2795, 3443); native transparency, matching pose, no enlargement/recolouring.
+
+- images/cut/apple-iphone-15-pro__white-titanium.webp: https://www.apple.com/shop/refurbished/iphone/iphone-15-pro ; official refurb-iphone-15-pro-whitetitanium-202412 front-and-back image. Native product (2795, 3443); native transparency, matching pose, no enlargement/recolouring.
+
+- images/cut/apple-iphone-15-pro__natural-titanium.webp: https://www.apple.com/shop/refurbished/iphone/iphone-15-pro ; official refurb-iphone-15-pro-naturaltitanium-202412 front-and-back image. Native product (2795, 3443); native transparency, matching pose, no enlargement/recolouring.
+
+- images/cut/apple-iphone-15-pro__blue-titanium.webp: https://www.apple.com/shop/refurbished/iphone/iphone-15-pro ; official refurb-iphone-15-pro-bluetitanium-202412 front-and-back image. Native product (2795, 3443); native transparency, matching pose, no enlargement/recolouring.
+
+- images/cut/apple-imac-24-m4__pink.webp: https://www.apple.com/shop/refurbished/mac/imac ; official refurb-imac-pink-202502 M4 image, exact finish and matching front pose, native transparent product (2887, 2602).
+
+- images/cut/apple-imac-24-m4__orange.webp: https://www.apple.com/shop/refurbished/mac/imac ; official refurb-imac-orange-202502 M4 image, exact finish and matching front pose, native transparent product (2887, 2602).
+
+- images/cut/apple-imac-24-m4__green.webp: https://www.apple.com/shop/refurbished/mac/imac ; official refurb-imac-green-202502 M4 image, exact finish and matching front pose, native transparent product (2887, 2602).
+
+- images/cut/jbl-charge-5__green.webp and forest-green.webp: https://www.jbl.com/CHARGE5-.html ; official JBL_CHARGE5_HERO_GREEN_0025_x2.png, PhotoRoom transparent cutout, native visible product (1137, 656).
+
+- google-fitbit-air Black/Obsidian: exact finish reverified against https://www.telecomarmenia.am/eshop/en/accessories/google-fitbit-air-obsidian/2801/ and its product gallery on 2026-10-11. Restore both valid shop aliases from duplicate suppression; existing native-photo provenance retained.
