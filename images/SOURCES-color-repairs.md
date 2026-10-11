@@ -1770,3 +1770,25 @@
 - jbl-tune-730bt__white.webp: web photo, background removed with PhotoRoom; https://media.action.jo/55597/yeWoMp2UZMWVugf6RJoHYIs4bo26jtHipnwv8GrR.png; product 924x1051.
 
 - sony-wi-c100__white.webp: web photo, background removed with PhotoRoom; https://sonycentre.ie/cdn/shop/files/WIC100W.png?v=1740587431&width=1000; product 731x911.
+
+- samsung-galaxy-a55__awesome-lemon.webp: web photo, background removed with PhotoRoom; https://i5.walmartimages.ca/asr/cf589bde-4d33-4ca4-abc5-13e0f65280c1.b2541d82aae8da9bb52dfef6bec868c1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF; product 975x1241.
+
+- samsung-galaxy-s26-fe__white.webp: web photo, background removed with PhotoRoom; https://imgstore.alta.ge/images/3d8ba073-246d-4729-ba58-992ff229082e_Thumb.png; product 789x952.
+
+- xiaomi-redmi-pad-2__blue.webp: web photo, background removed with PhotoRoom; https://www.xiaomistore.tn/wp-content/uploads/2025/07/Redmi-Pad-2-Blue-1.png; product 1108x1305.
+
+- yandex-station-mini__white.webp: web photo, background removed with PhotoRoom; https://itmag.kz/upload/iblock/28/00/product_image_104300_1300030.webp; product 1196x1155.
+
+- jbl-tune-730bt__blue.webp: web photo, background removed with PhotoRoom; https://audioteceg.com/cdn/shop/files/01.LS_JBL_Tune_730BT_Product_Image_Hero_Blue.png?v=1781534578&width=1920; product 1186x1366.
+
+- jbl-tune-730bt__beige.webp: web photo, background removed with PhotoRoom; https://audioteceg.com/cdn/shop/files/01.LS_JBL_Tune_730BT_Product_Image_Hero_Beige.webp?v=1781534694&width=1920; product 1186x1366.
+
+- harman-kardon-citation-sub__grey.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/51s+HHNh7PL._AC_UF1000,1000_QL80_.jpg; product 992x938.
+
+- google-pixel-10a__lavender.webp: web photo, background removed with PhotoRoom; https://dfksb1dwoard2.cloudfront.net/media/catalog/product/g/g/gg-px10a-8128-pp_15_-2.png?width=1200&height=1200&store=default&image-type=image; product 595x958.
+
+- google-pixel-10a__porcelain.webp: web photo, background removed with PhotoRoom; https://images.ctfassets.net/m5g3wfd9m3nr/1S3OAZh2TEyjQ9JAX2YWi7/18617b97a7caabd9021c6defefc666d3/Google_Pixel_10a_Fog_FrontBack.png; product 750x1000.
+
+- google-pixel-10a__obsidian.webp: web photo, background removed with PhotoRoom; https://img-prd-pim.poorvika.com/product/Google-pixel-10a-5g-obsidian-8gb-256gb-Front-Back-View.webp; product 1531x1846.
+
+- yandex-station-lite__black.webp: web photo, background removed with PhotoRoom; https://cdn-ultra.esempla.com/storage/5393cb2a-4b98-43c5-8555-6b1f290a4877.png; product 683x484.
