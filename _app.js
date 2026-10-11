@@ -3029,6 +3029,7 @@ function render(keepScroll) {
   canonicalLinks();
   moneyFx();
   hydrateCardPhotos();
+  document.documentElement.dataset.appReady = 'true';
 }
 
 /* ================= money animations ================= */

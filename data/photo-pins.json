@@ -155,5 +155,51 @@
   "apple-mac-mini-m2": {
     "main": "images/cut/apple-mac-mini-m2__main.webp",
     "reason": "Original verified M2 photograph cropped to remove excessive transparent padding; product dimensions preserved."
+  },
+  "acer-aspire-go-ag15-71pt-72ga-i7-13620h": {
+    "main": "images/cut/acer-aspire-go-ag15-71pt-72ga-i7-13620h__main.webp",
+    "reason": "Manufacturer AG15-71P photograph; casing, keyboard, hinges and wallpaper visually matched to exact AG15-71PT-72GA retailer photograph. Native resolution and transparency preserved; no enlargement or recolouring."
+  },
+  "samsung-galaxy-tab-s10-fe": {
+    "colours": {
+      "gray": "images/cut/samsung-galaxy-tab-s10-fe__gray.webp",
+      "silver": "images/cut/samsung-galaxy-tab-s10-fe__silver.webp",
+      "blue": "images/cut/samsung-galaxy-tab-s10-fe__blue.webp"
+    },
+    "reason": "Official SM-X520 front-and-back gallery photograph, exact colour and matching pose across all three colours; white background removed with PhotoRoom. Native resolution and transparency preserved; no enlargement or recolouring."
+  },
+  "samsung-galaxy-a35": {
+    "colours": {
+      "black": "images/cut/samsung-galaxy-a35__black.webp"
+    },
+    "reason": "Official SM-A356 Awesome Navy front-and-back photograph; retailer Black alias maps to Navy. Native resolution and transparency preserved; no enlargement or recolouring."
+  },
+  "samsung-galaxy-buds-3-pro": {
+    "colours": {
+      "white": "images/cut/samsung-galaxy-buds-3-pro__white.webp",
+      "silver": "images/cut/samsung-galaxy-buds-3-pro__silver.webp"
+    },
+    "reason": "Official Galaxy Buds3 Pro SM-R630 photograph; exact finish and matching pose across White and Silver. Native resolution and transparency preserved; no enlargement or recolouring."
+  },
+  "apple-homepod-mini": {
+    "colours": {
+      "blue": "images/cut/apple-homepod-mini__blue.webp",
+      "midnight": "images/cut/apple-homepod-mini__midnight.webp"
+    },
+    "reason": "Official Apple midnight HomePod mini photograph; native transparent front pose, visually checked exact finish. Native resolution and transparency preserved; no enlargement or recolouring."
+  },
+  "samsung-galaxy-a36": {
+    "colours": {
+      "awesome-white": "images/cut/samsung-galaxy-a36__awesome-white.webp",
+      "awesome-lavender": "images/cut/samsung-galaxy-a36__awesome-lavender.webp"
+    },
+    "reason": "Official SM-A366 Awesome lavender front-and-back photograph; matching pose and native transparent edges. Native resolution and transparency preserved; no enlargement or recolouring."
+  },
+  "samsung-galaxy-tab-s11-ultra": {
+    "colours": {
+      "gray": "images/cut/samsung-galaxy-tab-s11-ultra__gray.webp",
+      "silver": "images/cut/samsung-galaxy-tab-s11-ultra__silver.webp"
+    },
+    "reason": "Official SM-X930 silver front-and-back photograph; matching pose, white background removed with PhotoRoom and cutout visually checked. Native resolution and transparency preserved; no enlargement or recolouring."
   }
 }

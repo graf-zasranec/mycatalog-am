@@ -9,10 +9,22 @@ out = root / 'images' / 'thumb'
 out.mkdir(exist_ok=True)
 manifest = {}
 previews = {}
+old_manifest = json.loads((root / 'data' / 'thumbnails.json').read_text()) if (root / 'data' / 'thumbnails.json').exists() else {}
+old_previews = json.loads((root / 'data' / 'photo-previews.json').read_text()) if (root / 'data' / 'photo-previews.json').exists() else {}
 before = after = 0
 for source in sorted((root / 'images' / 'cut').glob('*.webp')):
     digest = hashlib.sha256(source.read_bytes()).hexdigest()[:12]
     dest = out / f'{source.stem}-{digest}.webp'
+    key = source.relative_to(root).as_posix()
+    cached_preview = old_previews.get(key)
+    derivatives = [dest, dest.with_name(dest.stem + '-240.webp'), dest.with_name(dest.stem + '-320.webp')]
+    if old_manifest.get(key) == dest.relative_to(root).as_posix() and all(p.exists() for p in derivatives) and (not cached_preview or (root / cached_preview['src']).exists()):
+        manifest[key] = old_manifest[key]
+        if cached_preview:
+            previews[key] = cached_preview
+        before += source.stat().st_size
+        after += dest.stat().st_size
+        continue
     with Image.open(source) as original:
         full_width = original.width
         body = original.convert('RGBA').getchannel('A').point(lambda a: 255 if a > 128 else 0).getbbox()
