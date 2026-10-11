@@ -1792,3 +1792,5 @@
 - google-pixel-10a__obsidian.webp: web photo, background removed with PhotoRoom; https://img-prd-pim.poorvika.com/product/Google-pixel-10a-5g-obsidian-8gb-256gb-Front-Back-View.webp; product 1531x1846.
 
 - yandex-station-lite__black.webp: web photo, background removed with PhotoRoom; https://cdn-ultra.esempla.com/storage/5393cb2a-4b98-43c5-8555-6b1f290a4877.png; product 683x484.
+
+- xiaomi-15__liquid-silver.webp: official maker photo, transparent original; https://i02.appmifile.com/15_item_my/25/02/2025/04a8ddf68267c591ac37d32693d173af.png; product 1095x1292.
