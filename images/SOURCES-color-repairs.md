@@ -1756,3 +1756,17 @@
 - apple-imac-24-m4__purple.webp: owner's photo, transparent original; product 1734x1563.
 
 - apple-imac-24-m4__silver.webp: owner's photo, transparent original; product 1445x1302.
+
+- samsung-galaxy-a55__awesome-iceblue.webp: web photo, background removed with PhotoRoom; https://digitalcontent.api.tesco.com/v2/media/tescomobile/a1348743-904e-4358-b0ae-1e4cafa0c672/Samsung+Galaxy+A55+Iceblue+Hero.png?h=960&w=960; product 918x911.
+
+- samsung-galaxy-a55__awesome-navy.webp: web photo, background removed with PhotoRoom; https://digitalcontent.api.tesco.com/v2/media/tescomobile/fb52d02c-2b24-405c-9b94-64867ddae246/Samsung+Galaxy+A55+Navy+Hero.png; product 1478x1895.
+
+- samsung-galaxy-tab-s8__graphite.webp: web photo, background removed with PhotoRoom; https://roobotech.com.au/cdn/shop/files/Samsung-Galaxy-Tab-S8-Graphite-10.png?v=1737115161&width=1445; product 1041x724.
+
+- xiaomi-redmi-note-13__blue.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/994_operatorx_operatorx_opx/11/01/2024/72a71b312950178179eeb71425ef8def.png; product 1089x1294.
+
+- samsung-galaxy-z-fold-6__navy.webp: web photo, background removed with PhotoRoom; https://mcprod.hnak.com/media/catalog/product/3/0/308177_11_iumagz.png?quality=60&fit=bounds&height=&width=; product 846x1169.
+
+- jbl-tune-730bt__white.webp: web photo, background removed with PhotoRoom; https://media.action.jo/55597/yeWoMp2UZMWVugf6RJoHYIs4bo26jtHipnwv8GrR.png; product 924x1051.
+
+- sony-wi-c100__white.webp: web photo, background removed with PhotoRoom; https://sonycentre.ie/cdn/shop/files/WIC100W.png?v=1740587431&width=1000; product 731x911.
