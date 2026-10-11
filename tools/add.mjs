@@ -129,8 +129,8 @@ function modelOnly(name) {
 }
 // the largest capacity in the text: "16 GB/1 TB" names RAM first, and storage is the bigger one
 const cap = t => {
-  const all = [...String(t ?? '').matchAll(/(\d+)\s*(GB|TB|ԳԲ|ՏԲ)/gi)]
-    .map(m => /tb|տբ/i.test(m[2]) && +m[1] < 16 ? +m[1] * 1024 : +m[1]);
+  const all = [...String(t ?? '').matchAll(/(?:^|[^\p{L}\p{N}.,])(\d+(?:[.,]\d+)?)\s*(GB|TB|ԳԲ|ՏԲ)(?![\p{L}\p{N}])/giu)]
+    .map(m => { const n = Number(m[1].replace(',', '.')); return /tb|տբ/i.test(m[2]) && n < 16 ? n * 1024 : n; });
   return all.length ? Math.max(...all) : null;
 };
 

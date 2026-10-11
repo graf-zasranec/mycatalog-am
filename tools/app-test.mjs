@@ -46,7 +46,7 @@ const stub = {
 const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
-  offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
+  offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
   GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
@@ -287,6 +287,8 @@ is(app.keepsQuery('/c/phone'), false, 'nor does a category');
   is(app.selectionOffers(p, { ...next, storage: 128 }).length, 0, 'an invented 16/128 combination has no offers');
   is(app.catalogPrice(p, { ram: 16, stor: 0, shops: [] }), 170000, '16 GB filter never quotes the cheaper 8 GB offer');
   is(app.catalogOffers(p, { ram: 16, stor: 0, shops: ['a'] }).length, 0, 'shop and RAM filters must match the same offer');
+  is(app.filterValues({ ...p, variants: [...p.variants, { ram: 36, storage: 5120 }] }, 'ram'), [8, 16], 'RAM filters exclude unoffered spec builds');
+  is(app.filterValues({ ...p, variants: [...p.variants, { ram: 36, storage: 5120 }] }, 'storage'), [128, 256], 'storage filters exclude unoffered spec builds');
   const options = app.compareOptions(p, current);
   is(options.includes('value="128"'), true, 'comparison shows paired storage');
   is(options.includes('value="256"'), false, 'comparison hides storage unavailable with selected RAM');

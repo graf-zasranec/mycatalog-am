@@ -218,7 +218,11 @@ let PMIN = 0, PMAX = 0;
 function setBounds() {
   // One missing or malformed price would make PMIN/PMAX NaN, and every comparison against NaN is
   // false, so the catalogue would silently render empty with no clue why.
-  const ps = DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat).map(_cheapest).filter(Number.isFinite);
+  // A RAM, storage or shop filter can select a dearer offer than the model's
+  // cheapest one. The default slider must include every purchasable offer.
+  const ps = DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat)
+    .flatMap(p => hasReal(p) ? offersFor(p).map(o => o.price) : [_cheapest(p)])
+    .filter(Number.isFinite);
   PMIN = Math.floor(Math.min(...ps) / 5000) * 5000;
   PMAX = Math.ceil(Math.max(...ps) / 5000) * 5000;
   // The saved range was chosen against older bounds (another section, or yesterday's prices).
@@ -228,7 +232,6 @@ function setBounds() {
   }
   st.bounds = [PMIN, PMAX];
 }
-setBounds();
 st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id)).slice(0, MAXCMP);
 
 const BRANDS = [...new Set(DATA.map(p => p.brand))].sort();
@@ -316,6 +319,7 @@ const offersFor = p => {
   return pricedOffers.get(list); // pre-sorted cheapest first
 };
 const hasReal = p => offersFor(p).length > 0;
+setBounds();
 const bestOf = p => hasReal(p) ? offersFor(p)[0].price : p.priceAmd;
 const safeHref = u => /^https?:\/\//i.test(String(u)) ? String(u) : '#';
 const shopName = k => (P.shops && P.shops[k] && P.shops[k].name) || k;
@@ -385,6 +389,10 @@ const catalogOffers = (p, s = st) => offersFor(p).filter(o => {
     && (!(s.shops || []).length || s.shops.includes(o.shop));
 });
 const catalogVariants = (p, s = st) => (p.variants || []).filter(v => (!s.ram || v.ram >= s.ram) && (!s.stor || v.storage >= s.stor));
+// Filter options must describe purchasable configurations, rather than every spec
+// build listed for the model. Unknown shop configurations supply no invented value.
+const filterValues = (p, key) => (hasReal(p) ? offersFor(p).map(o => offerConfig(p, o)) : p.variants || [])
+  .map(v => v[key]).filter(v => Number.isFinite(v) && v > 0);
 const catalogPrice = (p, s = st) => catalogOffers(p, s)[0]?.price
   ?? (!hasReal(p) ? catalogVariants(p, s)[0]?.priceAmd ?? p.priceAmd : null);
 function initialConfig(p) {
@@ -729,10 +737,10 @@ const FILT = {
   shop:  { kind: 'set', arr: 'shops', label: () => x('shopLbl'), of: null, fmt: v => shopName(v) },
   // 'of' answers "does this product qualify" (its biggest variant), 'all' supplies the options
   // (every variant), so 256 GB can be offered even where no product stops there.
-  ram:   { kind: 'min', label: () => t('filter.ram'), of: p => topOf(p, 'ram') || null,
-           all: p => (p.variants || []).map(v => v.ram), fmt: v => v + ' ' + u('gb') },
+  ram:   { kind: 'min', label: () => t('filter.ram'), of: p => Math.max(0, ...filterValues(p, 'ram')) || null,
+           all: p => filterValues(p, 'ram'), fmt: v => v + ' ' + u('gb') },
   stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
-           of: p => topOf(p, 'storage') || null, all: p => (p.variants || []).map(v => v.storage),
+           of: p => Math.max(0, ...filterValues(p, 'storage')) || null, all: p => filterValues(p, 'storage'),
            fmt: v => gb(v, viewUnit()) },
   batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
@@ -2373,8 +2381,8 @@ function docView(key, paras) {
    no code here. A question with only one possible answer is not asked - it is reported as a
    fact instead, because a question you cannot answer two ways is not a choice. */
 const CQ = [
-  ['ram',  'filter.ram',          p => (p.variants || []).map(v => v.ram),     v => v + ' ' + u('gb')],
-  ['stor', 'filter.storage',      p => (p.variants || []).map(v => v.storage), v => gb(v, viewUnit())],
+  ['ram',  'filter.ram',          p => filterValues(p, 'ram'),     v => v + ' ' + u('gb')],
+  ['stor', 'filter.storage',      p => filterValues(p, 'storage'), v => gb(v, viewUnit())],
   ['hz',   'filter.refresh_rate', p => [p.display && p.display.refresh],       v => v + ' ' + u('hz')],
   ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah')]
 ];

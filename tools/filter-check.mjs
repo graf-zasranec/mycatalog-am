@@ -37,7 +37,10 @@ try {
         // independent reading of what the option promises
         const ok = p => {
           if (k === 'shop') return offersFor(p).some(o => o.shop === v);
-          if (k === 'ram' || k === 'stor') return true;     // judged on real configurations, not one field
+          if (k === 'ram' || k === 'stor') return offersFor(p).some(o => {
+            const config = offerConfig(p, o);
+            return config[k === 'stor' ? 'storage' : 'ram'] >= +v;
+          });
           const val = f.of(p, s);
           if (f.kind === 'set') return String(val) === v;
           if (f.kind === 'min') return val >= +v;
@@ -47,6 +50,16 @@ try {
         };
         const wrong = list.filter(p => !ok(p));
         if (wrong.length) out.errs.push(`${k}=${v}: ${wrong.length} listed without it, e.g. ${wrong[0].id}`);
+        if (k === 'ram' || k === 'stor') for (const p of list.filter(hasReal)) {
+          const expected = offersFor(p).filter(o => {
+            const c = offerConfig(p, o);
+            return (!s.ram || c.ram >= s.ram) && (!s.stor || c.storage >= s.stor) &&
+              (!s.shops.length || s.shops.includes(o.shop));
+          });
+          const actual = catalogOffers(p, s);
+          if (!expected.length || actual[0]?.price !== Math.min(...expected.map(o => o.price)))
+            out.errs.push(`${k}=${v}: incorrect configuration price for ${p.id}`);
+        }
         const missed = pool.filter(p => ok(p) && matches(p, { ...st, q: st.q }) && !list.includes(p));
         if (missed.length && k !== 'ram' && k !== 'stor') out.errs.push(`${k}=${v}: ${missed.length} have it but are not listed, e.g. ${missed[0].id}`);
       }

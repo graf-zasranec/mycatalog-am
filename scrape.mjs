@@ -346,7 +346,7 @@ function matchIn(h, split = false) {
 // that ran together, not a product.
 const REAL_CAPACITY = new Set([2, 3, 4, 6, 8, 12, 16, 18, 24, 32, 36, 48, 64, 96, 128, 192,
                                250, 256, 500, 512, 750, 1000, 1024, 1536, 2000, 2048, 3072,
-                               4000, 4096, 6144, 8192]);
+                               2560, 4000, 4096, 6144, 8192]);
 // "12/512GB" and "16GB/1TB" name the RAM and the storage with the unit written once, and the
 // slash is the only thing that says the first figure is a capacity at all - normalising it to a
 // space leaves "12 512gb", which is the shape of "Redmi Note 12 256GB", where the 12 is a model
@@ -363,8 +363,9 @@ function capacitiesOf(text) {
   const h = String(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   // AllSell writes the MacBook Air as "16GB I 512TB". Nothing on sale here holds more than 8 TB,
   // so a terabyte figure that large is the shop meaning gigabytes.
-  const withUnit = [...h.matchAll(/(\d+)\s*(tb|տբ|gb|գբ)(?:\s|$)/g)]
-    .map(m => { const v = +m[1], tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; })
+  const unitText = String(text).toLowerCase();
+  const withUnit = [...unitText.matchAll(/(?:^|[^\p{L}\p{N}.,])(\d+(?:[.,]\d+)?)\s*(tb|տբ|gb|գբ)(?![\p{L}\p{N}])/gu)]
+    .map(m => { const v = Number(m[1].replace(',', '.')), tb = /tb|տբ/.test(m[2]); return tb && v < 16 ? v * 1024 : v; })
     // A capacity nobody manufactures is the shop's url with the model number glued to the
     // capacity: REDstore writes "Paperwhite 12(16GB)" and slugs it "paperwhite-1216gb", which
     // was published as 1216 GB - "1.1875 TB" on the page. An Alienware read 1,625,016 GB.
@@ -1104,7 +1105,7 @@ if (process.argv[2] === '--selftest') {
     const got = capOf(txt);
     if (got !== want) { bad++; console.log(`FAIL  capOf=${got} want=${want}  <- ${txt}`); }
   }
-  const st = [['iphone 17 pro 512 gb', 512], ['2tb', 2048], ['256gb', 256], ['1 ՏԲ', 1024], ['128 ԳԲ', 128],
+  const st = [['LG Gram 64GB/2.5TB', 2560], ['LG Gram 64GB/2,5TB', 2560], ['iphone 17 pro 512 gb', 512], ['2tb', 2048], ['256gb', 256], ['1 ՏԲ', 1024], ['128 ԳԲ', 128],
     ['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 256],   // RAM listed first, storage is the larger
     ['ONEPLUS 13 16GB 512GB (Arctic Down)', 512],
     ['Apple iPhone 17', null],
