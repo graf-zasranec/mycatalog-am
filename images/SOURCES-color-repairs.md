@@ -1816,3 +1816,9 @@
 - nothing-phone-3a__black.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/21/76/LD0006217638.jpg; product 1268x1544.
 
 - nothing-phone-3a__white.webp: web photo, background removed with PhotoRoom; https://s13emagst.akamaized.net/products/87313/87312730/images/res_6995026c38cc6c43560b03901798b7cc.jpg; product 1643x1996.
+
+- honor-200-lite-5g__main.webp: web photo, background removed with PhotoRoom; https://welectronics.com/images/stories/virtuemart/product/Honor200Lite5Gcyan.jpg; product 451x552.
+
+- honor-x9b__midnight-black.webp: web photo, background removed with PhotoRoom; https://techcart.com.au/wp-content/uploads/2023/11/75939-Huawei-Honor-X9b-5G-256GB12GB-Midnight-Black.png; product 727x775.
+
+- xiaomi-redmi-note-15-pro-plus-5g__brown.webp: web photo, background removed with PhotoRoom; https://mobiltel.com.tr/file/2026/04/2547.jpg; product 683x755.
