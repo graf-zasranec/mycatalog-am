@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-fhgoVJBonFYwFZ/cRREDXEj8uYy/9wrp/zW0x/q2cMI=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-g3M4Kv+MreLYXS5KgBbwX6smnWzl2RCuRo4Xdbw9Hg0=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>JBL Authentics 300: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/jbl-authentics-300__black.webp" imagesrcset="images/thumb/jbl-authentics-300__black-1fd2bbcd692e-800.webp 800w, images/cut/jbl-authentics-300__black.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>JBL Authentics 300: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="JBL Authentics 300. Գինը՝ 169 000 ֏-ից, 6 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/jbl-authentics-300/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/jbl-authentics-300/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,27 +80,145 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>JBL Authentics 300</h1>
-<p class="lead">JBL Authentics 300-ի գինը Հայաստանում՝ 169 000 ֏-ից, 6 խանութում։ Ամենաթանկ առաջարկը՝ 195 900 ֏։</p>
-<a class="go" href="/#/p/jbl-authentics-300">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/jbl-authentics-300__black.webp" alt="JBL Authentics 300" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://www.pixel.am/am/product/jbl-authentics-300" rel="nofollow noopener">Pixel</a></td><td>—</td><td class="n">169 000 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/jbl-authentics-300-black" rel="nofollow noopener">REDstore</a></td><td>—</td><td class="n">185 000 ֏</td></tr>
-<tr><td><a href="https://istyle.am/en/product/JBL%20Authentics%20300?color=45&amp;variant=258" rel="nofollow noopener">iStyle</a></td><td>—</td><td class="n">189 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/jbl-auth300blkuk.html" rel="nofollow noopener">Zigzag</a></td><td>—</td><td class="n">189 000 ֏</td></tr>
-<tr><td><a href="https://eldorado.am/en/jbl-authentics-300" rel="nofollow noopener">Eldorado</a></td><td>—</td><td class="n">189 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/jbl-authentics-300/" rel="nofollow noopener">iBolit</a></td><td>—</td><td class="n">195 900 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Քաշ</dt><dd>4900 գ</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="jbl-authentics-300" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>JBL</span><span>›</span><span>Authentics 300</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>JBL / Միջին</span>
+        <span>6 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">JBL Authentics 300</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.136;--h:0.821"><img src="images/cut/jbl-authentics-300__black.webp" srcset="images/thumb/jbl-authentics-300__black-1fd2bbcd692e-800.webp 800w, images/cut/jbl-authentics-300__black.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="JBL Authentics 300" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          
+          
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին</span>
+            <div class="pp-row"><b class="num">169 000 ֏</b><span class="pp-at">Pixel</span></div>
+            <div class="pp-pills"><span class="hp good">ամենաթանկ խանութից 26 900 ֏ ցածր</span><span class="hp good">Ամենացածրը 03.10-ից ի վեր</span></div>
+            <div class="shopn">6 խանութ</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
+      style="left:0.0%" aria-label="Pixel · 169 000 ֏"><span class="rt">Pixel · 169 000 ֏</span></button><button type="button" class="rd"
+      style="left:59.5%" aria-label="REDstore · 185 000 ֏"><span class="rt">REDstore · 185 000 ֏</span></button><button type="button" class="rd cl r"
+      style="left:76.0%" aria-label="iStyle · 189 000 ֏, Zigzag · 189 000 ֏, Eldorado · 189 900 ֏"><span class="rc">×3</span><span class="rt">iStyle · 189 000 ֏<br>Zigzag · 189 000 ֏<br>Eldorado · 189 900 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="iBolit · 195 900 ֏"><span class="rt">iBolit · 195 900 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">169 000 ֏</b>Pixel</span>
+      <span><b class="num">195 900 ֏</b>iBolit</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/jbl-authentics-300">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="jbl-authentics-300">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="jbl-authentics-300|jbl-authentics-500">Համեմատություն</a><a class="cw" href="#/p/jbl-authentics-500">
+      <img src="images/thumb/jbl-authentics-500__main-58cd4f9b9b55.webp" alt="JBL Authentics 500" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի բարձր դաս</em><b>JBL Authentics 500</b><span class="num">199 000 ֏</span><span class="cwd num up">+30 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="jbl-authentics-300|jbl-authentics-200">Համեմատություն</a><a class="cw" href="#/p/jbl-authentics-200">
+      <img src="images/thumb/jbl-authentics-200__black-bcda3290ad22.webp" alt="JBL Authentics 200" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի ցածր գին</em><b>JBL Authentics 200</b><span class="num">129 000 ֏</span><span class="cwd num dn">−40 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="jbl-authentics-300|harman-kardon-citation-surround">Համեմատություն</a><a class="cw" href="#/p/harman-kardon-citation-surround">
+      <img src="images/thumb/harman-kardon-citation-surround__main-e56a440d286d.webp" alt="Harman Kardon Citation Surround" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Այլընտրանք</em><b>Harman Kardon Citation Surround</b><span class="num">169 900 ֏</span><span class="cwd num up">+900 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>6</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://www.pixel.am/am/product/jbl-authentics-300" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Pixel</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">169 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://redstore.am/en/product/jbl-authentics-300-black" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">185 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+16 000 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://istyle.am/en/product/JBL%20Authentics%20300?color=45&amp;variant=258" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">iStyle</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">189 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+20 000 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.zigzag.am/am/jbl-auth300blkuk.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">04</span>
+    <span class="sh">Zigzag</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">189 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+20 000 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://eldorado.am/en/jbl-authentics-300" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">05</span>
+    <span class="sh">Eldorado</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 10.10</i></span>
+    <span class="pr num">189 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+20 900 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/jbl-authentics-300">Բոլոր 7 առաջարկները 6 խանութից →</a></p>
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">169 000<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 03.10-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 03.10-ից՝ 169 000 ֏ (03.10)
+        · օրվա ամենացածր գինը՝ JBL Authentics 300</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, JBL Authentics 300: 169 000 → 169 000 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Քաշ</dt><dd>4900 գ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Bluetooth</dt><dd>5.3</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Թողարկում</dt><dd>—</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=72408a1481 data/site-prices.js?v=b32f1466e1 data/site-app.js?v=7e18285490"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=c956defe21 data/site-prices.js?v=9de5164607 data/site-app.js?v=8373382aff"></script>
 
 </body></html>

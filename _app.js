@@ -41,6 +41,11 @@ const IMG = id => (typeof IMGDATA !== 'undefined' && IMGDATA[id]) || NOPHOTO;
 // page itself) keep IMG. Falls back to the full size when no thumbnail was made, which is what
 // happens for a shot already at or under 600 px.
 const THUMB = id => (typeof THUMBDATA !== 'undefined' && THUMBDATA[id]) || IMG(id);
+const HERO_PREVIEWS = typeof HEROPREVIEWS !== 'undefined' ? HEROPREVIEWS : {};
+function productImageSet(src) {
+  const preview = HERO_PREVIEWS[src];
+  return preview ? `srcset="${esc(preview.src)} ${preview.width}w, ${esc(src)} ${preview.fullWidth}w" sizes="(max-width:760px) calc(100vw - 40px), 520px"` : '';
+}
 function thumbSet(id, sizes) {
   const src = THUMB(id);
   return /^images\/thumb\/.+\.webp$/.test(src)
@@ -368,6 +373,7 @@ function selectionOffers(p, sel) {
       && (sel.cpu == null || c.cpu === sel.cpu)
       && (sel.size == null || c.size === sel.size || (screens.size < 2 && c.size == null))
       && (!sel.band || !o.band || o.band === sel.band)
+      && (!sel.color || !o.color || o.color === sel.color)
       && (sel.esim == null || o.esim === sel.esim)
       && (sel.cell == null || o.cell === sel.cell);
   });
@@ -2087,9 +2093,8 @@ function initSel(p) {
   if (SEL.id !== p.id) SEL = initialConfig(p);
 }
 // Narrow the offer list to the chosen options.
-// RAM and storage decide the price, so those filters are HARD: if nothing matches, the answer is
-// "no shop sells this configuration", not some other variant's price. Colour is soft, because it
-// rarely changes the price and many listings omit it.
+// A named colour must match alongside RAM and storage. A shop that omits its
+// colour remains unspecified; a differently coloured SKU is never a substitute.
 function visibleOffers(p) {
   const o = selectionOffers(p, SEL);
   // One shop listing the same phone in four colours at one price is one offer to a reader, not
@@ -2240,7 +2245,7 @@ function detailView(p) {
       </div>
       <h1 class="pname"><span class="pn">${esc(fullName(p))}</span>${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
-        <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
+        <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" ${productImageSet(shot)} alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
         <div class="pside">
           <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
           ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
@@ -2900,7 +2905,14 @@ function render(keepScroll) {
   }
   const initialHome = !painted && h === '/' && main.dataset.prerender === st.lang &&
     !st.q && !activeFilterCount() && !st.cmp.length && st.sort === 'popular' && st.page === 1;
-  if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
+  if (m && byId(m[1])) {
+    const y = window.scrollY, p = byId(m[1]);
+    const initialProduct = !painted && main.dataset.prerenderProduct === p.id &&
+      main.dataset.prerenderLang === st.lang && !st.cmp.includes(p.id);
+    if (initialProduct) initSel(p);
+    else main.innerHTML = detailView(p);
+    document.title = fullName(p) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0);
+  }
   else if ((mo = h.match(/^\/offers\/(.+)$/)) && byId(mo[1])) {
     const y = window.scrollY;
     main.innerHTML = offersView(byId(mo[1]));

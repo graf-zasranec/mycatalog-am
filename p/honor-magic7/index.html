@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-fhgoVJBonFYwFZ/cRREDXEj8uYy/9wrp/zW0x/q2cMI=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-g3M4Kv+MreLYXS5KgBbwX6smnWzl2RCuRo4Xdbw9Hg0=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Honor Magic7: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/honor-magic7__main.webp" imagesrcset="images/thumb/honor-magic7__main-4c39e79460d4-800.webp 800w, images/cut/honor-magic7__main.webp 957w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Honor Magic7: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Honor Magic7. Այս պահին հայկական խանութներում առկա չէ։">
 <link rel="canonical" href="https://better.am/p/honor-magic7/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/honor-magic7/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,19 +80,65 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Honor Magic7</h1>
-<p class="lead">Honor Magic7. Այս պահին հայկական խանութներում առկա չէ։</p>
-<a class="go" href="/#/p/honor-magic7">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/honor-magic7__main.webp" alt="Honor Magic7" width="360" height="360">
+<main id="main" tabindex="-1" data-prerender-product="honor-magic7" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Honor</span><span>›</span><span>Magic7</span></nav></div>
 
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>6.78″, 1264x2800, 120 Հց</dd><dt>Պրոցեսոր</dt><dd>Qualcomm Snapdragon 8 Elite</dd><dt>Մարտկոց</dt><dd>5650 մԱժ</dd><dt>Քաշ</dt><dd>199 գ</dd><dt>Թողարկում</dt><dd>2024-10</dd></dl>
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Honor / Միջին</span>
+        <span>Գնահատված գին</span>
+      </div>
+      <h1 class="pname"><span class="pn">Honor Magic7</span><span class="ny num" data-nosnippet>2024</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.039;--h:0.921"><img src="images/cut/honor-magic7__main.webp" srcset="images/thumb/honor-magic7__main-4c39e79460d4-800.webp 800w, images/cut/honor-magic7__main.webp 957w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Honor Magic7" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          
+          
+          
+          
+          <div class="pprice2">
+            <span class="lb">Գնահատված գին</span>
+            <div class="pp-row"><b class="num">299 000 ֏</b></div>
+            
+            
+            
+          </div>
+          <div class="pcta">
+            
+            <button class="btn" data-cmp-btn="honor-magic7">Համեմատել</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-</main>
+    
+    
+    
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">299 000<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 18.09-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 18.09-ից՝ 299 000 ֏ (18.09)
+        · օրվա ամենացածր գինը՝ Honor Magic7</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, Honor Magic7: 299 000 → 299 000 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>6.78″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>OLED</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>1264×2800</dd></div><div class="kv"><dt>Թարմացման հաճախականություն</dt><dd>120 Հց</dd></div><div class="kv"><dt>Խտություն, PPI</dt><dd>453 ppi</dd></div><div class="kv"><dt>Պայծառություն</dt><dd>5 000 նիտ</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>Qualcomm Snapdragon 8 Elite</dd></div><div class="kv"><dt>Տեխնոլոգիա, նմ</dt><dd>3 nm</dd></div><div class="kv"><dt>Գրաֆիկա</dt><dd>Adreno 830</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Հիշողության քարտ</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Տեսախցիկ</h3><dl><div class="kv"><dt>Հիմնական տեսախցիկ</dt><dd>48 MP, f/1.9</dd></div><div class="kv"><dt>Առջևի տեսախցիկ</dt><dd>50 MP</dd></div><div class="kv"><dt>Տեսանկարահանում</dt><dd>4K</dd></div></dl></section><section class="panel-c"><h3><i></i>Մարտկոց</h3><dl><div class="kv"><dt>Տարողություն</dt><dd>5 650 մԱժ</dd></div><div class="kv"><dt>Լիցքավորում</dt><dd>100 Վտ</dd></div><div class="kv"><dt>Անլար լիցքավորում</dt><dd>80 Վտ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Չափսեր</dt><dd>162.1 × 75.8 × 7.9 մմ</dd></div><div class="kv"><dt>Քաշ</dt><dd>199 գ</dd></div><div class="kv"><dt>Նյութեր</dt><dd>Պլաստիկ</dd></div><div class="kv"><dt>IP պաշտպանություն</dt><dd>IP68</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Ցանցեր</dt><dd>5G</dd></div><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 7</dd></div><div class="kv"><dt>Bluetooth</dt><dd>5.4</dd></div><div class="kv"><dt>NFC</dt><dd>Այո</dd></div><div class="kv"><dt>SIM քարտեր</dt><dd>Երկու SIM</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>Android, MagicOS</dd></div><div class="kv"><dt>Թողարկում</dt><dd>10.2024</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=72408a1481 data/site-prices.js?v=b32f1466e1 data/site-app.js?v=7e18285490"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=c956defe21 data/site-prices.js?v=9de5164607 data/site-app.js?v=8373382aff"></script>
 
 </body></html>

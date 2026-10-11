@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-fhgoVJBonFYwFZ/cRREDXEj8uYy/9wrp/zW0x/q2cMI=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-g3M4Kv+MreLYXS5KgBbwX6smnWzl2RCuRo4Xdbw9Hg0=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>ASUS Vivobook 15X M1503 OLED: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/asus-vivobook-15x-m1503-oled__main.webp" imagesrcset="images/thumb/asus-vivobook-15x-m1503-oled__main-1d7c434de436-800.webp 800w, images/cut/asus-vivobook-15x-m1503-oled__main.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>ASUS Vivobook 15X M1503 OLED: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="ASUS Vivobook 15X M1503 OLED. Այս պահին հայկական խանութներում առկա չէ։">
 <link rel="canonical" href="https://better.am/p/asus-vivobook-15x-m1503-oled/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/asus-vivobook-15x-m1503-oled/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,19 +80,67 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>ASUS Vivobook 15X M1503 OLED</h1>
-<p class="lead">ASUS Vivobook 15X M1503 OLED. Այս պահին հայկական խանութներում առկա չէ։</p>
-<a class="go" href="/#/p/asus-vivobook-15x-m1503-oled">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/asus-vivobook-15x-m1503-oled__main.webp" alt="ASUS Vivobook 15X M1503 OLED" width="360" height="360">
+<main id="main" tabindex="-1" data-prerender-product="asus-vivobook-15x-m1503-oled" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>ASUS</span><span>›</span><span>Vivobook 15X M1503 OLED</span></nav></div>
 
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>15.6″, 1920x1080, 120 Հց</dd><dt>Պրոցեսոր</dt><dd>AMD Ryzen 5 4600H</dd><dt>Մարտկոց</dt><dd>70 Wh</dd><dt>Քաշ</dt><dd>1700 գ</dd><dt>Թողարկում</dt><dd>2022-08</dd></dl>
+    <div class="pstage">
+      <div class="pmeta">
+        <span>ASUS / Բյուջետային</span>
+        <span>Գնահատված գին</span>
+      </div>
+      <h1 class="pname"><span class="pn">ASUS Vivobook 15X M1503 OLED</span><span class="ny num" data-nosnippet>2022</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.23;--h:0.54"><img src="images/cut/asus-vivobook-15x-m1503-oled__main.webp" srcset="images/thumb/asus-vivobook-15x-m1503-oled__main-1d7c434de436-800.webp 800w, images/cut/asus-vivobook-15x-m1503-oled__main.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="ASUS Vivobook 15X M1503 OLED" id="hpShot" fetchpriority="high"><span class="shot-note">Լուսանկարում կարող է այլ գույն լինել</span></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          <div class="og"><label>Օպերատիվ հիշողություն</label>
+            <div class="bs"><button data-ram="8" class="on" aria-pressed="true">8 GB</button></div></div>
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="512" class="on" aria-pressed="true">512 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Գնահատված գին</span>
+            <div class="pp-row"><b class="num">214 900 ֏</b></div>
+            
+            
+            
+          </div>
+          <div class="pcta">
+            
+            <button class="btn" data-cmp-btn="asus-vivobook-15x-m1503-oled">Համեմատել</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-</main>
+    
+    
+    
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">214 900<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 13.09-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 13.09-ից՝ 214 900 ֏ (13.09)
+        · օրվա ամենացածր գինը՝ 512 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, 512 GB: 214 900 → 214 900 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>15.6″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>2.8K OLED</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>1920×1080</dd></div><div class="kv"><dt>Թարմացման հաճախականություն</dt><dd>120 Հց</dd></div><div class="kv"><dt>Հպումային էկրան</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>AMD Ryzen 5 4600H</dd></div><div class="kv"><dt>Գրաֆիկա</dt><dd>AMD Radeon Graphics</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Օպերատիվ հիշողություն</dt><dd>8 GB</dd></div><div class="kv"><dt>Ներքին հիշողություն</dt><dd>512 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Մարտկոց</h3><dl><div class="kv"><dt>Տարողություն</dt><dd>70 Վտ·ժ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Քաշ</dt><dd>1700 գ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 6</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>Windows 11</dd></div><div class="kv"><dt>Թողարկում</dt><dd>08.2022</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=72408a1481 data/site-prices.js?v=b32f1466e1 data/site-app.js?v=7e18285490"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=c956defe21 data/site-prices.js?v=9de5164607 data/site-app.js?v=8373382aff"></script>
 
 </body></html>

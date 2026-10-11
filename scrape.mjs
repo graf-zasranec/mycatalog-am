@@ -627,9 +627,12 @@ function magentoChildren(html, colors) {
   if (!cfg || !cfg.optionPrices || !cfg.index || !cfg.attributes) return [];
   const attrs = Object.values(cfg.attributes);
   const text = a => ((a.code || '') + ' ' + (a.label || ''));
-  const drive = attrs.find(a => /drive|storage|internal/i.test(text(a)));
+  const explicitRam = attrs.find(a => /\bram\b/i.test(text(a)));
+  const drive = attrs.find(a => /drive|storage|internal/i.test(text(a)))
+    || attrs.find(a => a !== explicitRam && /memory/i.test(text(a))
+      && (explicitRam || (a.options || []).some(o => capOf(o.label) >= 32)));
   const color = attrs.find(a => /colou?r/i.test(text(a)));
-  const ram = attrs.find(a => a !== drive && /\bram\b|memory/i.test(text(a)));
+  const ram = explicitRam || attrs.find(a => a !== drive && /memory/i.test(text(a)));
   // AllSell's iPhone 17e: "SIM card type" Nano Sim/eSim 295 500, eSim+eSim 285 500 - unread, the
   // tray build's price was thrown away as a duplicate of the eSIM one.
   const simA = attrs.find(a => /\bsim\b/i.test(text(a)));
@@ -641,6 +644,12 @@ function magentoChildren(html, colors) {
   };
   const out = [];
   for (const [child, pr] of Object.entries(cfg.optionPrices)) {
+    // optionPrices/index can retain sold-out SKUs. The option's products array
+    // drives the actual swatch availability; an empty array means disabled.
+    if (pr.is_in_stock === false || attrs.some(a => {
+      const option = (a.options || []).find(o => String(o.id) === String((cfg.index[child] || {})[a.id] ?? ''));
+      return option && Array.isArray(option.products) && !option.products.some(p => String(p) === child);
+    })) continue;
     const price = Math.round(Number((pr.finalPrice || {}).amount || 0));
     if (!price || price < 5000) continue;
     const col = label(color, child);
@@ -1053,6 +1062,28 @@ if (process.argv[2] === '--selftest') {
     const html = '<script>"jsonConfig":' + JSON.stringify(fakeCfg) + '</script>';
     const kids = magentoChildren(html, ['Obsidian', 'Frost', 'Indigo', 'Lemongrass']);
     if (kids[0]?.color !== null) { bad++; console.log(`FAIL  magentoChildren color=${kids[0]?.color} want=null (unmapped "Yellow")`); }
+  }
+
+  // The shop's selector sells 8/128 and 16/256, not the Cartesian product.
+  // Plain "Memory" is storage even when a separate RAM attribute follows it.
+  {
+    const cfg = { attributes: {
+      93: {id: 93, code: 'color', label: 'Color', options: [{id: 1, label: 'Black', products: ['501', '502']}]},
+      137: {id: 137, code: 'memory', label: 'Memory', options: [{id: 2, label: '128GB', products: ['501']}, {id: 3, label: '256GB', products: ['502']}]},
+      140: {id: 140, code: 'gb_ram', label: 'RAM', options: [{id: 4, label: '8GB', products: ['501']}, {id: 5, label: '16GB', products: ['502']}]}
+    }, index: {'501': {93: 1, 137: 2, 140: 4}, '502': {93: 1, 137: 3, 140: 5}},
+      optionPrices: {'501': {finalPrice: {amount: 100000}}, '502': {finalPrice: {amount: 150000}}} };
+    const kids = magentoChildren('<script>"jsonConfig":' + JSON.stringify(cfg) + '</script>', ['Black']);
+    if (JSON.stringify(kids.map(k => [k.ram, k.storage, k.price])) !== JSON.stringify([[8,128,100000],[16,256,150000]])) {
+      bad++; console.log('FAIL magentoChildren must preserve the selector RAM/storage/price pairs');
+    }
+    cfg.attributes[93].options[0].products = ['501'];
+    cfg.attributes[137].options[1].products = [];
+    cfg.attributes[140].options[1].products = [];
+    const available = magentoChildren('<script>"jsonConfig":' + JSON.stringify(cfg) + '</script>', ['Black']);
+    if (available.length !== 1 || available[0].storage !== 128) {
+      bad++; console.log('FAIL magentoChildren must reject children disabled in the shop selector');
+    }
   }
 
   const buildCases = [

@@ -2,6 +2,14 @@
 // This keeps useful content visible before JavaScript loads and avoids a second layout.
 import fs from 'node:fs';
 export function prerender(data) {
+  return renderer(data)(null, 'hy');
+}
+
+export function productRenderer(data) {
+  return renderer(data);
+}
+
+function renderer(data) {
   const noop = () => {};
   const nodes = new Map();
   const element = () => ({innerHTML:'',textContent:'',value:'',dataset:{},style:{},classList:{add:noop,remove:noop,contains:()=>false},setAttribute:noop,removeAttribute:noop,addEventListener:noop,querySelector:()=>null,querySelectorAll:()=>[]});
@@ -17,7 +25,14 @@ export function prerender(data) {
   const src = whole.slice(0,whole.lastIndexOf('\nrender();'));
   const vars = {...data,...stub};
   return new Function(...Object.keys(vars),src + `;
+    return (product, lang) => {
+    st.lang = lang;
     paintChrome();
+    if (product) {
+      SEL = initialConfig(product);
+      return {main:detailView(product), nav:document.querySelector('#nav').innerHTML,
+        langs:document.querySelector('#langs').innerHTML, foot:document.querySelector('#foot').innerHTML};
+    }
     const all=results();
     return {hero:mastHero(), main:catalogView()
       .replace('<div class="grid" id="gridbox" data-nosnippet></div>','<div class="grid" id="gridbox" data-nosnippet>'+all.slice(0,PAGE).map(card).join('')+'</div>')
@@ -26,5 +41,6 @@ export function prerender(data) {
       .replace('id="mbarn"></span>','id="mbarn">'+all.length+'</span>'),
       nav:document.querySelector('#nav').innerHTML, langs:document.querySelector('#langs').innerHTML,
       foot:document.querySelector('#foot').innerHTML};
+    };
   `)(...Object.values(vars));
 }

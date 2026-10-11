@@ -2804,6 +2804,30 @@
     "storage": 1024,
     "priceAmd": 740000,
     "size": 13
+   },
+   {
+    "ram": 12,
+    "storage": 128,
+    "size": 11,
+    "priceAmd": 329000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "size": 11,
+    "priceAmd": 399000
+   },
+   {
+    "ram": 12,
+    "storage": 128,
+    "size": 13,
+    "priceAmd": 439000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "size": 13,
+    "priceAmd": 499000
    }
   ],
   "camera": {
@@ -4326,6 +4350,11 @@
     "ram": 12,
     "storage": 1024,
     "priceAmd": 1099000
+   },
+   {
+    "ram": 12,
+    "storage": 2048,
+    "priceAmd": 1229000
    }
   ],
   "camera": {
@@ -4411,6 +4440,11 @@
     "ram": 12,
     "storage": 1024,
     "priceAmd": 1199000
+   },
+   {
+    "ram": 12,
+    "storage": 2048,
+    "priceAmd": 1219000
    }
   ],
   "camera": {
@@ -5840,7 +5874,11 @@
   "unsure": [
    "popularity"
   ],
-  "colors": [],
+  "colors": [
+   "Black",
+   "Light Gold",
+   "Space Gray"
+  ],
   "variantUnit": "mm",
   "os": "watchOS",
   "year": 2026,
@@ -5949,7 +5987,10 @@
   },
   "specNA": {
    "battery.capacity": "Apple publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-  }
+  },
+  "colors": [
+   "Natural"
+  ]
  },
  {
   "id": "asus-22-vp228de",
@@ -17084,6 +17125,16 @@
     "ram": 16,
     "storage": 256,
     "priceAmd": 587700
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 585000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 675000
    }
   ],
   "camera": {
@@ -35317,6 +35368,11 @@
     "ram": 12,
     "storage": 512,
     "priceAmd": 209900
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 174000
    }
   ],
   "display": {
@@ -36245,6 +36301,11 @@
     "ram": 4,
     "storage": 128,
     "priceAmd": 49900
+   },
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 67000
    }
   ],
   "camera": {
@@ -36539,6 +36600,11 @@
     "ram": 6,
     "storage": 128,
     "priceAmd": 74900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 99000
    }
   ],
   "camera": {
@@ -37296,6 +37362,16 @@
     "ram": 8,
     "storage": 256,
     "priceAmd": 166900
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 189000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 199000
    }
   ],
   "camera": {
@@ -40513,6 +40589,16 @@
     "ram": 16,
     "storage": 512,
     "priceAmd": 878000
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 749000
+   },
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 1039000
    }
   ],
   "camera": {
@@ -47620,6 +47706,11 @@
     "ram": 12,
     "storage": 512,
     "priceAmd": 559000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 559000
    }
   ],
   "colors": [
@@ -48711,6 +48802,11 @@
     "ram": null,
     "storage": null,
     "priceAmd": 61900
+   },
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 72900
    }
   ],
   "display": {
@@ -48760,6 +48856,9 @@
   "released": "2022-09",
   "sources": [
    "kimovil"
+  ],
+  "colors": [
+   "Black"
   ]
  },
  {
@@ -49071,6 +49170,11 @@
     "ram": 8,
     "storage": 256,
     "priceAmd": 123900
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 129000
    }
   ],
   "display": {
@@ -49440,6 +49544,11 @@
     "ram": 12,
     "storage": 512,
     "priceAmd": 269900
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 209000
    }
   ],
   "display": {
@@ -49459,7 +49568,8 @@
    "popularity"
   ],
   "colors": [
-   "Black"
+   "Black",
+   "Orange"
   ],
   "os": "Android, HyperOS",
   "chipset": {
@@ -50239,6 +50349,11 @@
     "ram": null,
     "storage": 256,
     "priceAmd": 114900
+   },
+   {
+    "ram": 4,
+    "storage": 256,
+    "priceAmd": 84000
    }
   ],
   "display": {
@@ -51792,6 +51907,11 @@
     "ram": null,
     "storage": 512,
     "priceAmd": 99900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 99000
    }
   ],
   "display": {
@@ -51868,6 +51988,11 @@
     "ram": null,
     "storage": 256,
     "priceAmd": 98900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 94000
    }
   ],
   "display": {
@@ -52156,6 +52281,11 @@
     "ram": null,
     "storage": 128,
     "priceAmd": 97900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 114000
    }
   ],
   "display": {
@@ -52224,13 +52354,24 @@
   "colors": [
    "Black",
    "Purple",
-   "Orange"
+   "Orange",
+   "Sky Blue"
   ],
   "variants": [
    {
     "ram": null,
     "storage": 256,
     "priceAmd": 135900
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 179000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 159000
    }
   ],
   "display": {
@@ -52295,7 +52436,18 @@
   "priceAmdMax": 191900,
   "popularity": 40,
   "accent": "#5C6470",
-  "variants": [],
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 189000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 209000
+   }
+  ],
   "display": {
    "size": 6.83,
    "resolution": "1280x2772",
@@ -56199,7 +56351,11 @@
    "ip": "IP68"
   },
   "released": "2025-11",
-  "specSource": "gsmarena.com/xiaomi_poco_f8_ultra_5g-14301.php, 2026-10-03"
+  "specSource": "gsmarena.com/xiaomi_poco_f8_ultra_5g-14301.php, 2026-10-03",
+  "colors": [
+   "Denim Blue",
+   "Black"
+  ]
  },
  {
   "id": "xiaomi-17",
@@ -56489,7 +56645,12 @@
    "ip": "IP68/IP69"
   },
   "released": "2026-03",
-  "specSource": "gsmarena.com/xiaomi_17_ultra_5g-14380.php, 2026-10-03"
+  "specSource": "gsmarena.com/xiaomi_17_ultra_5g-14380.php, 2026-10-03",
+  "colors": [
+   "White",
+   "Starry Green",
+   "Black"
+  ]
  },
  {
   "id": "google-pixel-11-pro-fold",
@@ -64698,6 +64859,16 @@
     "ram": null,
     "storage": 512,
     "priceAmd": 499000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 449000
+   },
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 499000
    }
   ],
   "display": {
@@ -64725,7 +64896,12 @@
    "telephoto": "50 MP periscope, 3.5x optical",
    "ultrawide": "50 MP",
    "front": "32 MP"
-  }
+  },
+  "colors": [
+   "Infinite Black",
+   "Ultra Violet",
+   "Sand Storm"
+  ]
  },
  {
   "id": "xiaomi-redmi-17c-4g",
