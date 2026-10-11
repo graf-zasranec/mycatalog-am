@@ -1966,3 +1966,9 @@
 - images/cut/jbl-charge-5__green.webp and forest-green.webp: https://www.jbl.com/CHARGE5-.html ; official JBL_CHARGE5_HERO_GREEN_0025_x2.png, PhotoRoom transparent cutout, native visible product (1137, 656).
 
 - google-fitbit-air Black/Obsidian: exact finish reverified against https://www.telecomarmenia.am/eshop/en/accessories/google-fitbit-air-obsidian/2801/ and its product gallery on 2026-10-11. Restore both valid shop aliases from duplicate suppression; existing native-photo provenance retained.
+
+- images/cut/marshall-acton-iii__white.webp: https://ktc.ua/goods/kolonka_marshall_acton_iii_cream_1006005.html ; exact Acton III Cream/Midnight Blue matched to Marshall official variant pages; identical front pose, PhotoRoom cutout visually checked, visible native product (994, 669), no enlargement/recolouring.
+
+- images/cut/marshall-acton-iii__blue.webp: https://ktc.ua/goods/kolonka_marshall_acton_iii_bluetooth_midnight_blue_1008130.html ; exact Acton III Cream/Midnight Blue matched to Marshall official variant pages; identical front pose, PhotoRoom cutout visually checked, visible native product (663, 452), no enlargement/recolouring.
+
+- Redmi Note 14S Black/Midnight Black: https://www.pixel.am/am/product/xiaomi-redmi-note-14s ; native source https://cdn.storech.com/uploads/products/000/000/000/000/022/169/800_1776368036-1749400150-14s-blk.png, transparent front-and-back product (740, 934), no enlargement/recolouring. Restore valid aliases.
