@@ -70313,15 +70313,22 @@
     "priceAmd": 303900
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Acer Aspire 15 A15-61M-R6S1 Ryzen.",
+  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 8640HS.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 8640HS"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "acer-aspire-go-ag15-71pt-72ga-i7-13620h",
@@ -70343,15 +70350,22 @@
     "priceAmd": 351600
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Acer Aspire Go AG15-71PT-72GA i7-13620H.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-13620H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
@@ -70373,15 +70387,22 @@
     "priceAmd": 219000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Acer Aspire Lite AL16-54P-3185 i3 1305U.",
+  "summaryEn": "A 16-inch laptop with Intel Core i3-1305U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i3-1305U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "acer-aspire-lite-al16-54p-52al-i5-120u",
@@ -70403,15 +70424,22 @@
     "priceAmd": 287900
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Acer Aspire Lite AL16-54P-52AL i5-120U.",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-120U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "acer-aspire-vero-av16-51p-58ku-u5-125u",
@@ -70433,15 +70461,22 @@
     "priceAmd": 253300
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Acer Aspire Vero AV16-51P-58KU U5-125U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-125U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "acer-aspire-vero-av16-51p-7063-ultra",
@@ -70464,15 +70499,22 @@
     "priceAmd": 340600
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Acer Aspire Vero AV16-51P-7063 Ultra.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-155H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "acer-nitro-5-an515-58-77z2-gaming-i7-12700h-plus-rtx3060",
@@ -70480,7 +70522,8 @@
   "brand": "Acer",
   "name": "Nitro 5 AN515-58-77Z2 GAMING i7-12700H + RTX3060",
   "aliases": [
-   "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H /1TB+512GB (NH.QFMAA.004) RTX3060"
+   "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H /1TB+512GB (NH.QFMAA.004) RTX3060",
+   "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H 16GB/1TB+512GB (NH.QFMAA.004) RTX3060"
   ],
   "tier": "flagship",
   "priceAmd": 739600,
@@ -70494,15 +70537,22 @@
     "priceAmd": 739600
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H + RTX3060.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-12700H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3060 6GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "acer-nitro-v-16-anv16-72-73vj-core-7-240h",
@@ -70524,15 +70574,22 @@
     "priceAmd": 620000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Acer Nitro V 16 ANV16-72-73VJ Core 7 240H.",
+  "summaryEn": "A 16-inch laptop with Intel Core 7-240H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 7-240H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "acer-nitro-v16-anv16-72-933f-i9-270h-rtx5070",
@@ -70554,15 +70611,22 @@
     "priceAmd": 799000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Acer Nitro V16 ANV16-72-933F i9-270H RTX5070.",
+  "summaryEn": "A 16-inch laptop with Intel Core 9-270H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 9-270H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5070 8GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "acer-predator-helios-neo-14-phn14-51-99nm-ultra-9-185h",
@@ -70584,15 +70648,22 @@
     "priceAmd": 957600
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14.5,
+   "resolution": "3072x1920"
+  },
   "battery": {},
-  "summaryEn": "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H.",
+  "summaryEn": "A 14.5-inch laptop with Intel Core Ultra 9-185H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4070 8GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "acer-predator-helios-neo-16s-ai",
@@ -70614,15 +70685,22 @@
     "priceAmd": 699000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "2560x1600"
+  },
   "battery": {},
-  "summaryEn": "Acer Predator Helios Neo 16S AI.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-275HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "acer-swift-16-ai-sf16-51t-76tg",
@@ -70644,15 +70722,22 @@
     "priceAmd": 399000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "2880x1800"
+  },
   "battery": {},
-  "summaryEn": "Acer Swift 16 AI SF16-51T-76TG.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-256V.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "apple-macbook-pro-16-inch-m5-max-mgee4",
@@ -70674,15 +70759,22 @@
     "priceAmd": 2099500
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16.2,
+   "resolution": "3456x2234"
+  },
   "battery": {},
-  "summaryEn": "Apple MacBook Pro 16 inch M5 Max MGEE4.",
+  "summaryEn": "A 16.2-inch laptop with Apple M5 Max.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Apple M5 Max"
+  },
+  "graphics": {
+   "name": "Apple M5 Max 32- or 40-core GPU",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t",
@@ -70704,15 +70796,22 @@
     "priceAmd": 149000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1366x768"
+  },
   "battery": {},
-  "summaryEn": "ASUS VivoBook 14 Flip Celeron N4500 J1400KA-DS02T.",
+  "summaryEn": "A 14-inch laptop with Intel Celeron N4500.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Celeron N4500"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-15-core-i7-x1504za-nj247",
@@ -70734,15 +70833,22 @@
     "priceAmd": 295000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook 15 Core i7 X1504ZA-NJ247.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i7-1255U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-1255U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-go-e1504fa-ws51-ryzen-5",
@@ -70764,15 +70870,22 @@
     "priceAmd": 229400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook Go E1504FA-WS51 Ryzen 5.",
+  "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 7520U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 7520U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-m1605ya-mb011-amd-ryzen-5-7530u",
@@ -70794,15 +70907,22 @@
     "priceAmd": 280400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook M1605YA-MB011 AMD Ryzen 5 7530U.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 7530U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 7530U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-s14-s5406sa-qd086w-oled-core-ultra",
@@ -70825,15 +70945,22 @@
     "priceAmd": 445000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS VivoBook S14 S5406SA-QD086W OLED Core Ultra.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-256V.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-256V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-s16-m3607ha-sh096-ryzen-5",
@@ -70855,15 +70982,22 @@
     "priceAmd": 349400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook S16 M3607HA-SH096 Ryzen 5.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 220.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 220"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-s16-m3607ha-sh097-ryzen-7-260",
@@ -70885,15 +71019,22 @@
     "priceAmd": 394400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook S16 M3607HA-SH097 Ryzen 7 260.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 260.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 260"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-x1504va-bq4172-i5-120u",
@@ -70915,15 +71056,22 @@
     "priceAmd": 282400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook X1504VA-BQ4172 i5-120U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core 5-120U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-x1504va-bq4173-i7-150u",
@@ -70945,15 +71093,22 @@
     "priceAmd": 338400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "ASUS Vivobook X1504VA-BQ4173 i7-150U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-zenbook-duo-ux8406ma-ds76t-ultra-7-155h-oled",
@@ -70975,15 +71130,22 @@
     "priceAmd": 625000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS ZenBook DUO UX8406MA-DS76T Ultra 7 155H OLED.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-zenbook-snapdragon-x-plus-ux3407qa-x1p512",
@@ -71005,15 +71167,22 @@
     "priceAmd": 399000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS ZenBook Snapdragon X Plus UX3407QA-X1P512.",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Plus.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Snapdragon X Plus"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-inspiron-16-plus-7640-u9-185h",
@@ -71035,15 +71204,22 @@
     "priceAmd": 500800
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "2560x1600"
+  },
   "battery": {},
-  "summaryEn": "Dell Inspiron 16 Plus 7640 U9-185H.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-185H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-latitude-3540-i5-1335u",
@@ -71065,15 +71241,22 @@
     "priceAmd": 337800
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Dell LATITUDE 3540 i5-1335U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1335U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-1335U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-latitude-5450-ultra-5-125u",
@@ -71095,15 +71278,22 @@
     "priceAmd": 440300
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Dell Latitude 5450 Ultra 5 125U.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-125U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-latitude-5450-ultra-7-165h",
@@ -71125,15 +71315,22 @@
     "priceAmd": 395000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Dell Latitude 5450 Ultra 7 165H.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-165H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-latitude-5550-ultra",
@@ -71156,15 +71353,22 @@
     "priceAmd": 459000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Dell Latitude 5550 Ultra.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core Ultra 7-165U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-165U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-latitude-7455-copilotplus-snapdragon-x-plus-x1p-64",
@@ -71186,15 +71390,22 @@
     "priceAmd": 469400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "2560x1600"
+  },
   "battery": {},
-  "summaryEn": "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64.",
+  "summaryEn": "A 14-inch laptop with Snapdragon X Plus.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Snapdragon X Plus"
+  },
+  "graphics": {
+   "name": "Qualcomm Adreno",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-latitude-7650-ultra",
@@ -71217,15 +71428,22 @@
     "priceAmd": 525000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Dell Latitude 7650 Ultra.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-165U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-165U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-vostro-3530-i5-1334u",
@@ -71247,15 +71465,22 @@
     "priceAmd": 248100
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "Dell Vostro 3530 i5-1334U.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core i5-1334U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-1334U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-xps-13-9350-touch-core-ultra-9",
@@ -71277,15 +71502,22 @@
     "priceAmd": 969000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 13.4,
+   "resolution": "2560x1440"
+  },
   "battery": {},
-  "summaryEn": "Dell XPS 13 9350 Touch Core Ultra 9.",
+  "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 9-288V.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-288V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "dell-xps-16-da16250-drgg5-ultra-7-255h",
@@ -71307,15 +71539,22 @@
     "priceAmd": 995000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16.2,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Dell XPS 16 DA16250-DRGG5 Ultra 7 255H.",
+  "summaryEn": "A 16.2-inch laptop with Intel Core Ultra 7-255H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "dell-xps-9340-u7-155h",
@@ -71337,15 +71576,22 @@
     "priceAmd": 578400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 13.4,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "Dell XPS 9340 U7-155H.",
+  "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 7-155H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-155H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "google-pixel-watch-3-45mm-lte",
@@ -71365,15 +71611,26 @@
     "priceAmd": 199000
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Google Pixel Watch 3 45MM LTE.",
+  "display": {
+   "size": 1.7,
+   "type": "AMOLED",
+   "resolution": "456x456"
+  },
+  "battery": {
+   "capacity": 420
+  },
+  "summaryEn": "Google Pixel Watch 3, 45 mm, LTE.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Qualcomm SW5100"
+  },
+  "body": {
+   "weight": 37
+  },
+  "released": "2024-08",
+  "specSource": "gsmarena.com/google_pixel_watch_3_45mm-13254.php, 2026-10-11"
  },
  {
   "id": "hp-elitebook-6-g1i-16-ultra-5",
@@ -71395,15 +71652,22 @@
     "priceAmd": 624400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP EliteBook 6 G1i 16 Ultra 5.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-elitebook-6-g1i-16-ultra-7-255u",
@@ -71425,15 +71689,22 @@
     "priceAmd": 679400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP EliteBook 6 G1i 16 Ultra 7 255U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 7-255U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-elitebook-660-g11-u5-125u",
@@ -71455,15 +71726,22 @@
     "priceAmd": 496400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP Elitebook 660 G11 U5-125U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-125U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-elitebook-8g1i13-ultra",
@@ -71486,15 +71764,22 @@
     "priceAmd": 577400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 13.3,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP EliteBook 8G1i13 Ultra.",
+  "summaryEn": "A 13.3-inch laptop with Intel Core Ultra 5-225U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-gaming-omen-16-n0023dx-ryzen",
@@ -71517,15 +71802,22 @@
     "priceAmd": 601400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "HP Gaming OMEN 16-N0023Dx Ryzen.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 7 6800H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 6800H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3060 6GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "hp-omen-17-db1000-gaming-ryzen-ai-9",
@@ -71547,15 +71839,22 @@
     "priceAmd": 809400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 17.3,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "HP OMEN 17-DB1000 Gaming Ryzen AI 9.",
+  "summaryEn": "A 17.3-inch laptop with AMD Ryzen 9 365.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 9 365"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  }
  },
  {
   "id": "hp-omnibook-3-16-bu0046ci-ultra-5-225u",
@@ -71577,15 +71876,22 @@
     "priceAmd": 343400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook 3 16-bu0046ci Ultra 5 225U.",
+  "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-225U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-omnibook-5-14-fp0024ci",
@@ -71607,15 +71913,22 @@
     "priceAmd": 373000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook 5 14-fp0024ci.",
+  "summaryEn": "A 14-inch laptop with Intel Core 5-120U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-120U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-omnibook-5-ai-16-cn0004ci",
@@ -71637,15 +71950,22 @@
     "priceAmd": 465000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook 5 AI 16-cn0004ci.",
+  "summaryEn": "A 16-inch laptop with Intel Core 5-320U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-320U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-omnibook-5-flip-14-fp0019ci",
@@ -71667,15 +71987,22 @@
     "priceAmd": 349000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook 5 Flip 14-fp0019ci.",
+  "summaryEn": "A 14-inch laptop with Intel Core 3-100U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 3-100U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-omnibook-5-flip-14-fp0020ci",
@@ -71697,15 +72024,22 @@
     "priceAmd": 349000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook 5 Flip 14-fp0020ci.",
+  "summaryEn": "A 14-inch laptop with Intel Core 3-100U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 3-100U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-omnibook-x-flip-2-in-1-14-fm0015ci-ultra-7-258v",
@@ -71727,15 +72061,22 @@
     "priceAmd": 555400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook X Flip 2-in-1 14-fm0015ci Ultra 7 258V.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-258V.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-omnibook-x-flip-2-in-1-14-fm0019ci-ultra-5-226v",
@@ -71757,15 +72098,22 @@
     "priceAmd": 449400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP OmniBook X Flip 2-in-1 14-fm0019ci Ultra 5 226V.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-226V.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-226V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-probook-4-g1a-ryzen-5",
@@ -71787,15 +72135,22 @@
     "priceAmd": 323400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP ProBook 4 G1A Ryzen 5.",
+  "summaryEn": "A 16-inch laptop with AMD Ryzen 5 230.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 230"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "hp-probook-440-g11-ultra-7-155u",
@@ -71817,15 +72172,22 @@
     "priceAmd": 392400
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "HP ProBook 440 G11 Ultra 7 155U.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-155U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-155U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "apple-macbook-pro-16-inch-m5-pro-mgec4",
@@ -71847,15 +72209,22 @@
     "priceAmd": 1549500
    }
   ],
-  "display": {},
+  "display": {
+   "size": 16.2,
+   "resolution": "3456x2234"
+  },
   "battery": {},
-  "summaryEn": "Apple MacBook Pro 16 inch M5 Pro MGEC4.",
+  "summaryEn": "A 16.2-inch laptop with Apple M5 Pro.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Apple M5 Pro"
+  },
+  "graphics": {
+   "name": "Apple M5 Pro 16- or 20-core GPU",
+   "type": "integrated"
+  }
  },
  {
   "id": "xiaomi-pad-m1",
@@ -71878,15 +72247,27 @@
     "priceAmd": 129000
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Pad M1.",
+  "display": {
+   "size": 12.1,
+   "type": "IPS LCD",
+   "resolution": "2560x1600",
+   "refresh": 120
+  },
+  "battery": {
+   "capacity": 12000
+  },
+  "summaryEn": "POCO Pad M1, a 12.1-inch tablet.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen 4"
+  },
+  "body": {
+   "weight": 610
+  },
+  "released": "2025-11",
+  "specSource": "gsmarena.com/xiaomi_poco_pad_m1-14297.php, 2026-10-11"
  },
  {
   "id": "nothing-phone-lite-6974434227026",
@@ -71904,20 +72285,44 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
+    "ram": 8,
     "storage": 128,
     "priceAmd": 109000
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Nothing Phone Lite /6974434227026.",
+  "display": {
+   "size": 6.77,
+   "type": "AMOLED",
+   "resolution": "2392x1084",
+   "refresh": 120
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "summaryEn": "Nothing Phone (3a) Lite.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "MediaTek Dimensity 7300 Pro"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.88, wide",
+   "front": "16 MP",
+   "video": "4K@30fps"
+  },
+  "body": {
+   "height": 164,
+   "width": 78,
+   "thickness": 8.3,
+   "weight": 199
+  },
+  "released": "2025-11",
+  "colors": [
+   "Black"
+  ],
+  "specSource": "gsmarena.com/nothing_phone_(3a)_lite-14193.php, 2026-10-11"
  },
  {
   "id": "nothing-phone-pro-6974434224483",
@@ -71926,7 +72331,8 @@
   "name": "Phone (3a) Pro",
   "aliases": [
    "Nothing Phone (3a) PRO Black /6974434224483",
-   "Phone PRO /6974434224483"
+   "Phone PRO /6974434224483",
+   "Nothing Phone (3a) PRO 12/256 Black /6974434224483"
   ],
   "tier": "mid",
   "priceAmd": 204600,
@@ -71935,20 +72341,46 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
+    "ram": 12,
+    "storage": 256,
     "priceAmd": 204600
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Nothing Phone PRO /6974434224483.",
+  "display": {
+   "size": 6.77,
+   "type": "AMOLED",
+   "resolution": "2392x1080",
+   "refresh": 120
+  },
+  "battery": {
+   "capacity": 5000
+  },
+  "summaryEn": "Nothing Phone (3a) Pro with a 3x periscope camera.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Qualcomm Snapdragon 7s Gen 3",
+   "gpu": "Adreno 810"
+  },
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.9, wide",
+   "tele": "50 MP periscope, 3x optical",
+   "front": "50 MP",
+   "video": "4K@30fps"
+  },
+  "body": {
+   "height": 163.5,
+   "width": 77.5,
+   "thickness": 8.4,
+   "weight": 211
+  },
+  "released": "2025-03",
+  "colors": [
+   "Black"
+  ],
+  "specSource": "gsmarena.com/nothing_phone_(3a)_pro-13615.php, 2026-10-11"
  },
  {
   "id": "asus-vivobook-15-core-f1504va-bq338",
@@ -71957,7 +72389,8 @@
   "name": "VivoBook 15 F1504VA-BQ338",
   "aliases": [
    "Asus VivoBook 15 Core 7 /512GB F1504VA-BQ338",
-   "VivoBook 15 Core F1504VA-BQ338"
+   "VivoBook 15 Core F1504VA-BQ338",
+   "Asus VivoBook 15 Core 7 16GB/512GB F1504VA-BQ338"
   ],
   "tier": "upper-mid",
   "priceAmd": 359000,
@@ -71971,15 +72404,22 @@
     "priceAmd": 359000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "ASUS VivoBook 15 Core F1504VA-BQ338.",
+  "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-vivobook-core-i7-x1404va-i712512",
@@ -72002,15 +72442,22 @@
     "priceAmd": 339000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080"
+  },
   "battery": {},
-  "summaryEn": "ASUS VivoBook Core i7 X1404VA-I712512.",
+  "summaryEn": "A 14-inch laptop with Intel Core i7-1355U.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-1355U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
  },
  {
   "id": "asus-zenbook-ultra-ux3405ma-qd993-oled",
@@ -72019,7 +72466,8 @@
   "name": "Zenbook 14 OLED UX3405MA-QD993",
   "aliases": [
    "Asus ZenBook Ultra 9 /512GB UX3405MA-QD993 OLED",
-   "ZenBook Ultra UX3405MA-QD993 OLED"
+   "ZenBook Ultra UX3405MA-QD993 OLED",
+   "Asus ZenBook Ultra 9 16GB/512GB UX3405MA-QD993 OLED"
   ],
   "tier": "upper-mid",
   "priceAmd": 599000,
@@ -72033,14 +72481,21 @@
     "priceAmd": 599000
    }
   ],
-  "display": {},
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
   "battery": {},
-  "summaryEn": "ASUS ZenBook Ultra UX3405MA-QD993 OLED.",
+  "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-185H.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ]
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
  }
 ]

@@ -63,6 +63,15 @@ const PARSE = {
     if (o.Bluetooth && !/bluetooth/i.test(o.Bluetooth)) o.Bluetooth = 'Bluetooth ' + o.Bluetooth;
     return o;
   },
+  // AllSell (Magento): "More Information" table, label line then value line; "15․6"" uses the Armenian full stop
+  allsell: t => {
+    const ALL = { 'Screen diagonal': 'Screen Size', 'Screen resolution': 'Screen Resolution', 'Processor type': 'CPU',
+      Weight: 'Weight', 'Battery capacity': 'Battery', Bluetooth: 'Bluetooth', 'Refresh rate': 'Refresh rate' };
+    const a = t.indexOf('Brand'), o = {};
+    if (a < 0) return o;
+    for (let i = a; i + 1 < t.length && i < a + 80; i++) if (ALL[t[i]] && !(ALL[t[i]] in o)) o[ALL[t[i]]] = t[i + 1].replace(/․/g, '.');
+    return o;
+  },
   ibolit: t => {
     const a = t.indexOf('Specification'), b = t.findIndex((l, i) => i > a && /^(Customer Reviews|Related Products)$/.test(l));
     if (a < 0) return {};
