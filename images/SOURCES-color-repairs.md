@@ -1712,3 +1712,47 @@
 - xiaomi-smart-air-fryer-6-5l__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/6/1/612102.jpg; product 735x829.
 
 - xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu__main.webp: web photo, background removed with PhotoRoom; https://nout.am/storage/products/MPebbafe74f7a644/base_large.webp; product 496x766.
+
+- oppo-reno-a18__main.webp: web photo, background removed with PhotoRoom; https://img-prd-pim.poorvika.com/product/Oppo-a18-glowing-black-128gb-4gb-Front-Back-View.png; product 1465x1830.
+
+- oppo-reno-a38__main.webp: web photo, background removed with PhotoRoom; https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/300502_0_i4lql2.png; product 1235x1542.
+
+- oppo-reno-a58__main.webp: web photo, background removed with PhotoRoom; https://img-prd-pim.poorvika.com/product/Oppo-a58-glowing-black-128gb-6gb-ram-Front-Back-Side-View.png; product 1257x1816.
+
+- samsung-galaxy-a55__awesome-lilac.webp: web photo, background removed with PhotoRoom; https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50089161_896197.png?v=1776333641; product 1167x1493.
+
+- xiaomi-poco-c40__main.webp: web photo, background removed with PhotoRoom; https://i5.walmartimages.com/asr/d4279375-9f40-46ff-8f73-442956c41072.d6192ec190e3c1eaaa8c7779e3f8c2dd.png; product 1289x1466.
+
+- xiaomi-poco-m5__main.webp: web photo, background removed with PhotoRoom; https://i01.appmifile.com/webfile/globalimg/uk-micom/pocom5-Black-800.png; product 1090x1298.
+
+- xiaomi-redmi-10-2022__main.webp: web photo, background removed with PhotoRoom; https://www.greentelcom.ph/wp-content/uploads/2023/10/CARBON-GRAY.png; product 1316x1572.
+
+- xiaomi-redmi-12__main.webp: web photo, background removed with PhotoRoom; https://api.mistore-eg.com/storage/uploads/bf4a04479378ead51e640ce552995529-1692095926.png; product 1089x1297.
+
+- xiaomi-redmi-a2plus__main.webp: web photo, background removed with PhotoRoom; https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930.png; product 1088x1295.
+
+- xiaomi-redmi-note-10s__main.webp: web photo, background removed with PhotoRoom; https://www.greentelcom.ph/wp-content/uploads/2023/10/white-3.png; product 1093x1505.
+
+- xiaomi-redmi-note-11__main.webp: web photo, background removed with PhotoRoom; https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1666350199.33692514.png; product 1088x1295.
+
+- xiaomi-redmi-note-13-pro__forest-green.webp: web photo, background removed with PhotoRoom; https://noventiqstore.ge/files/resized/products/149641.1920x1080.png; product 828x1080.
+
+- amazon-kindle-paperwhite-12__black.webp: owner's photo, transparent original; product 984x1170.
+
+- samsung-galaxy-a35__blue.webp: owner's photo, transparent original; product 1127x1438.
+
+- apple-iphone-15-pro__black-titanium.webp: owner's photo, transparent original; product 1678x2063.
+
+- asus-vivobook-go-15-e1504fa-oled__black.webp: owner's photo, transparent original; product 1497x890.
+
+- asus-vivobook-go-15-e1504fa-oled__silver.webp: owner's photo, transparent original; product 2066x1226.
+
+- garmin-cirqa-smart-band-mauve-s-m__blue.webp: owner's photo, transparent original; product 1287x2000.
+
+- honor-magic-7-pro__black.webp: owner's photo, transparent original; product 675x766.
+
+- apple-imac-24-m4__blue.webp: owner's photo, transparent original; product 1282x1154.
+
+- apple-imac-24-m4__purple.webp: owner's photo, transparent original; product 1734x1563.
+
+- apple-imac-24-m4__silver.webp: owner's photo, transparent original; product 1445x1302.
