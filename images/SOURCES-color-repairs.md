@@ -1840,3 +1840,83 @@
 - oneplus-nord-6__silver.webp: Gemini sharpened (detail only, checked against original) then PhotoRoom cut; product 1562x1863.
 
 - xiaomi-poco-x8-pro-max__black.webp: PhotoRoom cut, https://cdn.beebom.com/mobile/poco-x8-pro-max-front-and-back1.png; product 804x899.
+
+- acer-aspire-15-a15-61m-r6s1-ryzen__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 629x470.
+
+- acer-aspire-go-ag15-71pt-72ga-i7-13620h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 393x279.
+
+- acer-aspire-vero-av16-51p-58ku-u5-125u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 911x661.
+
+- acer-nitro-5-an515-58-77z2-gaming-i7-12700h-plus-rtx3060__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1050x823.
+
+- acer-nitro-v-16-anv16-72-73vj-core-7-240h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 762x601.
+
+- acer-nitro-v16-anv16-72-933f-i9-270h-rtx5070__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 877x693.
+
+- acer-predator-helios-neo-14-phn14-51-99nm-ultra-9-185h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1049x832.
+
+- acer-swift-16-ai-sf16-51t-76tg__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 413x251.
+
+- apple-macbook-pro-16-inch-m5-max-mgee4__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 943x569.
+
+- apple-macbook-pro-16-inch-m5-pro-mgec4__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 940x567.
+
+- asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 878x570.
+
+- asus-vivobook-15-core-i7-x1504za-nj247__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 778x460.
+
+- asus-vivobook-go-e1504fa-ws51-ryzen-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 828x492.
+
+- asus-vivobook-m1605ya-mb011-amd-ryzen-5-7530u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1051x564.
+
+- asus-vivobook-s14-s5406sa-qd086w-oled-core-ultra__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 829x578.
+
+- asus-vivobook-s16-m3607ha-sh096-ryzen-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 807x544.
+
+- asus-zenbook-duo-ux8406ma-ds76t-ultra-7-155h-oled__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 832x789.
+
+- asus-zenbook-snapdragon-x-plus-ux3407qa-x1p512__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 780x536.
+
+- dell-inspiron-16-plus-7640-u9-185h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1050x732.
+
+- dell-latitude-3540-i5-1335u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1034x696.
+
+- dell-latitude-5450-ultra-5-125u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 609x356.
+
+- dell-latitude-5550-ultra__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 802x526.
+
+- dell-latitude-7455-copilotplus-snapdragon-x-plus-x1p-64__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1031x725.
+
+- dell-latitude-7650-ultra__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 992x615.
+
+- dell-vostro-3530-i5-1334u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 599x380.
+
+- dell-xps-13-9350-touch-core-ultra-9__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 920x595.
+
+- dell-xps-16-da16250-drgg5-ultra-7-255h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 447x323.
+
+- google-pixel-watch-3-45mm-lte__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 971x1074.
+
+- hp-elitebook-6-g1i-16-ultra-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 713x587.
+
+- hp-elitebook-660-g11-u5-125u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 886x734.
+
+- hp-elitebook-8g1i13-ultra__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 676x572.
+
+- hp-gaming-omen-16-n0023dx-ryzen__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 922x766.
+
+- hp-omen-17-db1000-gaming-ryzen-ai-9__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 807x674.
+
+- hp-omnibook-3-16-bu0046ci-ultra-5-225u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 670x554.
+
+- hp-omnibook-5-14-fp0024ci__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 777x654.
+
+- hp-omnibook-5-ai-16-cn0004ci__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 767x648.
+
+- hp-omnibook-5-flip-14-fp0019ci__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 750x631.
+
+- hp-omnibook-x-flip-2-in-1-14-fm0015ci-ultra-7-258v__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 594x505.
+
+- hp-probook-4-g1a-ryzen-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 739x582.
+
+- hp-probook-440-g11-ultra-7-155u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 675x565.

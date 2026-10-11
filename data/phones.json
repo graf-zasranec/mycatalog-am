@@ -4924,7 +4924,8 @@
    "MacBook Pro 14 MR7J3 2023",
    "MacBook Pro 14 MR7J3 2023 Silver",
    "MacBook Pro 14 M3 2023",
-   "MacBook Pro M3"
+   "MacBook Pro M3",
+   "MacBook Pro 14 M3 SG /MTL73RU/A"
   ],
   "tier": "upper-mid",
   "priceAmd": 692000,
@@ -4936,6 +4937,11 @@
     "ram": 8,
     "storage": 512,
     "priceAmd": 692000
+   },
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 713400
    }
   ],
   "display": {
@@ -25039,9 +25045,10 @@
   "id": "hp-omnibook-5-ai-16-af1003ci-ultra",
   "category": "laptop",
   "brand": "HP",
-  "name": "OmniBook 5 AI 16-af1003ci Ultra",
+  "name": "OmniBook 5 AI 16-af1003ci",
   "aliases": [
-   "Նոթբուք HP OmniBook 5 AI 16-af1003ci Ultra"
+   "Նոթբուք HP OmniBook 5 AI 16-af1003ci Ultra",
+   "OmniBook 5 AI 16-af1003ci Ultra"
   ],
   "tier": "upper-mid",
   "priceAmd": 359900,
@@ -48110,10 +48117,13 @@
   "id": "xiaomi-mi-smart-band-9",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Mi Smart Band 9",
-  "aliases": [],
+  "name": "Smart Band 9",
+  "aliases": [
+   "Mi Smart Band 9",
+   "Redmi Band 9"
+  ],
   "tier": "budget",
-  "priceAmd": 19000,
+  "priceAmd": 17800,
   "priceAmdMax": 19000,
   "popularity": 40,
   "accent": "#5C6470",
@@ -53433,9 +53443,11 @@
   "category": "watch",
   "brand": "Xiaomi",
   "name": "Smart Band 7",
-  "aliases": [],
+  "aliases": [
+   "Redmi Band 7"
+  ],
   "tier": "budget",
-  "priceAmd": 22900,
+  "priceAmd": 15500,
   "priceAmdMax": 22900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -53554,10 +53566,11 @@
   "name": "Smart Band 8",
   "aliases": [
    "Ֆիթնես-թեւնոց Xiaomi Smart Band 8 Champagne Gold (M2239B1) BHR7166GL",
-   "Smart Band 8 Champagne BHR7166GL"
+   "Smart Band 8 Champagne BHR7166GL",
+   "Redmi Band 8"
   ],
   "tier": "budget",
-  "priceAmd": 16500,
+  "priceAmd": 15900,
   "priceAmdMax": 16500,
   "popularity": 40,
   "accent": "#5C6470",
@@ -56928,8 +56941,10 @@
   "id": "xiaomi-redmi-band-9-pro",
   "category": "watch",
   "brand": "Xiaomi",
-  "name": "Redmi Band 9 Pro",
-  "aliases": [],
+  "name": "Smart Band 9 Pro",
+  "aliases": [
+   "Redmi Band 9 Pro"
+  ],
   "tier": "budget",
   "priceAmd": 29000,
   "priceAmdMax": 29000,
@@ -57045,43 +57060,6 @@
   ]
  },
  {
-  "id": "xiaomi-redmi-band-9",
-  "category": "watch",
-  "brand": "Xiaomi",
-  "name": "Redmi Band 9",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 17800,
-  "priceAmdMax": 17800,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 17800
-   }
-  ],
-  "display": {
-   "size": 1.62,
-   "resolution": "192x490"
-  },
-  "battery": {
-   "capacity": 233
-  },
-  "summaryEn": "Xiaomi Redmi Band 9.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": [
-   "Blue",
-   "Pink"
-  ]
- },
- {
   "id": "honor-band-9",
   "category": "watch",
   "brand": "Honor",
@@ -57107,79 +57085,6 @@
    "capacity": 180
   },
   "summaryEn": "Honor Band 9.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": [
-   "Black"
-  ]
- },
- {
-  "id": "xiaomi-redmi-band-8",
-  "category": "watch",
-  "brand": "Xiaomi",
-  "name": "Redmi Band 8",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 15900,
-  "priceAmdMax": 15900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 15900
-   }
-  ],
-  "display": {
-   "size": 1.62,
-   "resolution": "192x490"
-  },
-  "battery": {
-   "capacity": 190
-  },
-  "summaryEn": "Xiaomi Redmi Band 8.",
-  "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
-  ],
-  "colors": [
-   "Black",
-   "Sand"
-  ]
- },
- {
-  "id": "xiaomi-redmi-band-7",
-  "category": "watch",
-  "brand": "Xiaomi",
-  "name": "Redmi Band 7",
-  "aliases": [],
-  "tier": "budget",
-  "priceAmd": 15500,
-  "priceAmdMax": 15500,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 15500
-   }
-  ],
-  "display": {
-   "size": 1.62,
-   "resolution": "192x490"
-  },
-  "battery": {
-   "capacity": 180
-  },
-  "summaryEn": "Xiaomi Redmi Band 7.",
   "unsure": [
    "popularity",
    "display",
@@ -70202,6 +70107,1571 @@
    "popularity",
    "display.resolution",
    "chipset"
+  ]
+ },
+ {
+  "id": "acer-aspire-15-a15-61m-r6s1-ryzen",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire 15 A15-61M-R6S1",
+  "aliases": [
+   "Acer Aspire 15 A15-61M-R6S1 Ryzen 5 /512GB",
+   "Aspire 15 A15-61M-R6S1 Ryzen"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 303900,
+  "priceAmdMax": 303900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 303900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Aspire 15 A15-61M-R6S1 Ryzen.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-aspire-go-ag15-71pt-72ga-i7-13620h",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Go AG15-71PT-72GA i7-13620H",
+  "aliases": [
+   "Acer Aspire Go AG15-71PT-72GA i7-13620H /512GB (NX.J71AA.002)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 351600,
+  "priceAmdMax": 351600,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 351600
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Aspire Go AG15-71PT-72GA i7-13620H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Lite AL16-54P-3185 i3 1305U",
+  "aliases": [
+   "Acer Aspire Lite AL16-54P-3185 i3 1305U /256GB"
+  ],
+  "tier": "mid",
+  "priceAmd": 219000,
+  "priceAmdMax": 219000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 219000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Aspire Lite AL16-54P-3185 i3 1305U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-aspire-lite-al16-54p-52al-i5-120u",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Lite AL16-54P-52AL i5-120U",
+  "aliases": [
+   "Acer Aspire Lite AL16-54P-52AL i5-120U /512GB (NX.D73EL.002)"
+  ],
+  "tier": "mid",
+  "priceAmd": 287900,
+  "priceAmdMax": 287900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 287900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Aspire Lite AL16-54P-52AL i5-120U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-aspire-vero-av16-51p-58ku-u5-125u",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Vero AV16-51P-58KU U5-125U",
+  "aliases": [
+   "Acer Aspire Vero AV16-51P-58KU U5-125U /512GB"
+  ],
+  "tier": "mid",
+  "priceAmd": 253300,
+  "priceAmdMax": 253300,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 253300
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Aspire Vero AV16-51P-58KU U5-125U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-aspire-vero-av16-51p-7063-ultra",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire Vero AV16-51P-7063",
+  "aliases": [
+   "Acer Aspire Vero AV16-51P-7063 Ultra 7 /512GB",
+   "Aspire Vero AV16-51P-7063 Ultra"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 340600,
+  "priceAmdMax": 340600,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 340600
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Aspire Vero AV16-51P-7063 Ultra.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-nitro-5-an515-58-77z2-gaming-i7-12700h-plus-rtx3060",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro 5 AN515-58-77Z2 GAMING i7-12700H + RTX3060",
+  "aliases": [
+   "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H /1TB+512GB (NH.QFMAA.004) RTX3060"
+  ],
+  "tier": "flagship",
+  "priceAmd": 739600,
+  "priceAmdMax": 739600,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 739600
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H + RTX3060.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-nitro-v-16-anv16-72-73vj-core-7-240h",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro V 16 ANV16-72-73VJ Core 7 240H",
+  "aliases": [
+   "Acer Nitro V 16 ANV16-72-73VJ Core 7 240H /512GB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 620000,
+  "priceAmdMax": 620000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 620000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Nitro V 16 ANV16-72-73VJ Core 7 240H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-nitro-v16-anv16-72-933f-i9-270h-rtx5070",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Nitro V16 ANV16-72-933F i9-270H RTX5070",
+  "aliases": [
+   "Acer Nitro V16 ANV16-72-933F i9-270H /1TB RTX5070"
+  ],
+  "tier": "flagship",
+  "priceAmd": 799000,
+  "priceAmdMax": 799000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 799000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Nitro V16 ANV16-72-933F i9-270H RTX5070.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-predator-helios-neo-14-phn14-51-99nm-ultra-9-185h",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H",
+  "aliases": [
+   "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H /1TB (NH.QRNAA.004)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 957600,
+  "priceAmdMax": 957600,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 957600
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-predator-helios-neo-16s-ai",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Predator Helios Neo 16S AI",
+  "aliases": [
+   "Acer Predator Helios Neo 16S AI (PHN16S-71-91AW) /1TB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 699000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Predator Helios Neo 16S AI.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "acer-swift-16-ai-sf16-51t-76tg",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Swift 16 AI SF16-51T-76TG",
+  "aliases": [
+   "Acer Swift 16 AI SF16-51T-76TG /1TB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 399000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Acer Swift 16 AI SF16-51T-76TG.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "apple-macbook-pro-16-inch-m5-max-mgee4",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 16 inch M5 Max MGEE4",
+  "aliases": [
+   "Apple MacBook Pro 16 inch M5 Max /2TB MGEE4 Space Black"
+  ],
+  "tier": "flagship",
+  "priceAmd": 2099500,
+  "priceAmdMax": 2099500,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 2048,
+    "priceAmd": 2099500
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Apple MacBook Pro 16 inch M5 Max MGEE4.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook 14 Flip Celeron N4500 J1400KA-DS02T",
+  "aliases": [
+   "Asus VivoBook 14 Flip Celeron N4500 /64GB J1400KA-DS02T (90NB0VK1-M005A0)"
+  ],
+  "tier": "mid",
+  "priceAmd": 149000,
+  "priceAmdMax": 149000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 64,
+    "priceAmd": 149000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS VivoBook 14 Flip Celeron N4500 J1400KA-DS02T.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-15-core-i7-x1504za-nj247",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook 15 Core i7 X1504ZA-NJ247",
+  "aliases": [
+   "Asus Vivobook 15 Core i7 /512GB X1504ZA-NJ247"
+  ],
+  "tier": "mid",
+  "priceAmd": 295000,
+  "priceAmdMax": 320000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 295000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook 15 Core i7 X1504ZA-NJ247.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-go-e1504fa-ws51-ryzen-5",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook Go E1504FA-WS51 Ryzen 5",
+  "aliases": [
+   "Asus Vivobook Go E1504FA-WS51 Ryzen 5 40 /512GB(90NB0ZR2-M07CD0)"
+  ],
+  "tier": "mid",
+  "priceAmd": 229400,
+  "priceAmdMax": 229400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 229400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook Go E1504FA-WS51 Ryzen 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-m1605ya-mb011-amd-ryzen-5-7530u",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook M1605YA-MB011 AMD Ryzen 5 7530U",
+  "aliases": [
+   "Asus Vivobook M1605YA-MB011 AMD Ryzen 5 7530U /512GB (90NB10R1-M002D0)"
+  ],
+  "tier": "mid",
+  "priceAmd": 280400,
+  "priceAmdMax": 280400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 280400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook M1605YA-MB011 AMD Ryzen 5 7530U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-s14-s5406sa-qd086w-oled-core-ultra",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "VivoBook S14 S5406SA-QD086W OLED",
+  "aliases": [
+   "Asus VivoBook S14 S5406SA-QD086W OLED Core Ultra 7 /512GB",
+   "VivoBook S14 S5406SA-QD086W OLED Core Ultra"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 445000,
+  "priceAmdMax": 445000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 445000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS VivoBook S14 S5406SA-QD086W OLED Core Ultra.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-s16-m3607ha-sh096-ryzen-5",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook S16 M3607HA-SH096 Ryzen 5",
+  "aliases": [
+   "Asus Vivobook S16 M3607HA-SH096 Ryzen 5 220 /512GB (90NB16F1-M006C0)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 349400,
+  "priceAmdMax": 349400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 349400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook S16 M3607HA-SH096 Ryzen 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-s16-m3607ha-sh097-ryzen-7-260",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook S16 M3607HA-SH097 Ryzen 7 260",
+  "aliases": [
+   "Asus Vivobook S16 M3607HA-SH097 Ryzen 7 260 /1TB (90NB16F1-M006D0)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 394400,
+  "priceAmdMax": 394400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 394400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook S16 M3607HA-SH097 Ryzen 7 260.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-bq4172-i5-120u",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook X1504VA-BQ4172 i5-120U",
+  "aliases": [
+   "Asus Vivobook X1504VA-BQ4172 i5-120U /512GB (90NB13Y2-M01TT0)"
+  ],
+  "tier": "mid",
+  "priceAmd": 282400,
+  "priceAmdMax": 282400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 282400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook X1504VA-BQ4172 i5-120U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-vivobook-x1504va-bq4173-i7-150u",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook X1504VA-BQ4173 i7-150U",
+  "aliases": [
+   "Asus Vivobook X1504VA-BQ4173 i7-150U /512GB (90NB13Y2-M01TW0)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 338400,
+  "priceAmdMax": 338400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 338400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS Vivobook X1504VA-BQ4173 i7-150U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-duo-ux8406ma-ds76t-ultra-7-155h-oled",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook DUO UX8406MA-DS76T Ultra 7 155H OLED",
+  "aliases": [
+   "Asus ZenBook DUO UX8406MA-DS76T Ultra 7 155H /1TB OLED"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 625000,
+  "priceAmdMax": 625000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 625000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS ZenBook DUO UX8406MA-DS76T Ultra 7 155H OLED.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "asus-zenbook-snapdragon-x-plus-ux3407qa-x1p512",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "ZenBook Snapdragon X Plus UX3407QA-X1P512",
+  "aliases": [
+   "Asus ZenBook Snapdragon X Plus /512GB UX3407QA-X1P512"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 399000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "ASUS ZenBook Snapdragon X Plus UX3407QA-X1P512.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-inspiron-16-plus-7640-u9-185h",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Inspiron 16 Plus 7640 U9-185H",
+  "aliases": [
+   "Dell Inspiron 16 Plus 7640 U9-185H /512GB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 500800,
+  "priceAmdMax": 500800,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 500800
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Inspiron 16 Plus 7640 U9-185H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-latitude-3540-i5-1335u",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "LATITUDE 3540 i5-1335U",
+  "aliases": [
+   "Dell LATITUDE 3540 i5-1335U /256GB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 337800,
+  "priceAmdMax": 337800,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 337800
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell LATITUDE 3540 i5-1335U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-latitude-5450-ultra-5-125u",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Latitude 5450 Ultra 5 125U",
+  "aliases": [
+   "Dell Latitude 5450 Ultra 5 125U /512GB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 440300,
+  "priceAmdMax": 440300,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 440300
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Latitude 5450 Ultra 5 125U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-latitude-5450-ultra-7-165h",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Latitude 5450 Ultra 7 165H",
+  "aliases": [
+   "Dell Latitude 5450 Ultra 7 165H /512GB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 395000,
+  "priceAmdMax": 395000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 395000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Latitude 5450 Ultra 7 165H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-latitude-5550-ultra",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Latitude 5550",
+  "aliases": [
+   "Dell Latitude 5550 Ultra 7 /512GB",
+   "Latitude 5550 Ultra"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 459000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Latitude 5550 Ultra.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-latitude-7455-copilotplus-snapdragon-x-plus-x1p-64",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Latitude 7455 Copilot+ Snapdragon X Plus X1P-64",
+  "aliases": [
+   "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64-100 /512GB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 469400,
+  "priceAmdMax": 469400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 469400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-latitude-7650-ultra",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Latitude 7650",
+  "aliases": [
+   "Dell Latitude 7650 Ultra 7 /512GB",
+   "Latitude 7650 Ultra"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 525000,
+  "priceAmdMax": 525000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 525000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Latitude 7650 Ultra.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-vostro-3530-i5-1334u",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "Vostro 3530 i5-1334U",
+  "aliases": [
+   "Dell Vostro 3530 i5-1334U /512GB"
+  ],
+  "tier": "mid",
+  "priceAmd": 248100,
+  "priceAmdMax": 248100,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 248100
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell Vostro 3530 i5-1334U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-xps-13-9350-touch-core-ultra-9",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 13 9350 Touch Core Ultra 9",
+  "aliases": [
+   "Dell XPS 13 9350 Touch Core Ultra 9 /1TB"
+  ],
+  "tier": "flagship",
+  "priceAmd": 969000,
+  "priceAmdMax": 969000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 969000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell XPS 13 9350 Touch Core Ultra 9.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-xps-16-da16250-drgg5-ultra-7-255h",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 16 DA16250-DRGG5 Ultra 7 255H",
+  "aliases": [
+   "Dell XPS 16 DA16250-DRGG5 Ultra 7 255H /1TB"
+  ],
+  "tier": "flagship",
+  "priceAmd": 995000,
+  "priceAmdMax": 995000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 995000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell XPS 16 DA16250-DRGG5 Ultra 7 255H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "dell-xps-9340-u7-155h",
+  "category": "laptop",
+  "brand": "Dell",
+  "name": "XPS 9340 U7-155H",
+  "aliases": [
+   "Dell XPS 9340 U7-155H /512GB (9DR57)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 578400,
+  "priceAmdMax": 578400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 578400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Dell XPS 9340 U7-155H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "google-pixel-watch-3-45mm-lte",
+  "category": "watch",
+  "brand": "Google",
+  "name": "Pixel Watch 3 45MM LTE",
+  "aliases": [],
+  "tier": "mid",
+  "priceAmd": 199000,
+  "priceAmdMax": 199000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 199000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Google Pixel Watch 3 45MM LTE.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-elitebook-6-g1i-16-ultra-5",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "EliteBook 6 G1i 16 Ultra 5",
+  "aliases": [
+   "HP EliteBook 6 G1i 16 Ultra 5 225 /512GB (AD4M4ET#UUQ)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 624400,
+  "priceAmdMax": 624400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 624400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP EliteBook 6 G1i 16 Ultra 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-elitebook-6-g1i-16-ultra-7-255u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "EliteBook 6 G1i 16 Ultra 7 255U",
+  "aliases": [
+   "HP EliteBook 6 G1i 16 Ultra 7 255U /512GB (A26Z2EA#UUQ)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 679400,
+  "priceAmdMax": 679400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 679400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP EliteBook 6 G1i 16 Ultra 7 255U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-elitebook-660-g11-u5-125u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Elitebook 660 G11 U5-125U",
+  "aliases": [
+   "HP Elitebook 660 G11 U5-125U /512GB (AA1E0ES#UUQ)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 496400,
+  "priceAmdMax": 496400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 496400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP Elitebook 660 G11 U5-125U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-elitebook-8g1i13-ultra",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "EliteBook 8G1i13",
+  "aliases": [
+   "HP EliteBook 8G1i13 Ultra 5 /512GB (AD3R8ET)",
+   "EliteBook 8G1i13 Ultra"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 577400,
+  "priceAmdMax": 577400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 577400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP EliteBook 8G1i13 Ultra.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-gaming-omen-16-n0023dx-ryzen",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OMEN 16-N0023Dx",
+  "aliases": [
+   "HP Gaming OMEN 16-N0023Dx Ryzen 7 /512GB (6ABH3UA#ABA)",
+   "Gaming OMEN 16-N0023Dx Ryzen"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 601400,
+  "priceAmdMax": 601400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 601400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP Gaming OMEN 16-N0023Dx Ryzen.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omen-17-db1000-gaming-ryzen-ai-9",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OMEN 17-DB1000 Gaming Ryzen AI 9",
+  "aliases": [
+   "HP OMEN 17-DB1000 Gaming Ryzen AI 9 365 /512GB (A7JP9AV-CTO-01)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 809400,
+  "priceAmdMax": 809400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 809400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OMEN 17-DB1000 Gaming Ryzen AI 9.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-16-bu0046ci-ultra-5-225u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 16-bu0046ci Ultra 5 225U",
+  "aliases": [
+   "HP OmniBook 3 16-bu0046ci Ultra 5 225U /512GB (DU8V3EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 343400,
+  "priceAmdMax": 343400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 343400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook 3 16-bu0046ci Ultra 5 225U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-5-14-fp0024ci",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 14-fp0024ci",
+  "aliases": [
+   "HP OmniBook 5 14-fp0024ci /512GB (C0EE4EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 373000,
+  "priceAmdMax": 373000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 373000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 14-fp0024ci.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-5-ai-16-cn0004ci",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 AI 16-cn0004ci",
+  "aliases": [
+   "HP OmniBook 5 AI 16-cn0004ci /512GB (DR9V5EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 465000,
+  "priceAmdMax": 465000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 465000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 AI 16-cn0004ci.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-5-flip-14-fp0019ci",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 Flip 14-fp0019ci",
+  "aliases": [
+   "HP OmniBook 5 Flip 14-fp0019ci /512GB (C1UN3EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 349000,
+  "priceAmdMax": 349000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 349000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 Flip 14-fp0019ci.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-5-flip-14-fp0020ci",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 Flip 14-fp0020ci",
+  "aliases": [
+   "HP OmniBook 5 Flip 14-fp0020ci /512GB (BY9H3EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 349000,
+  "priceAmdMax": 349000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 349000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 Flip 14-fp0020ci.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-2-in-1-14-fm0015ci-ultra-7-258v",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 2-in-1 14-fm0015ci Ultra 7 258V",
+  "aliases": [
+   "HP OmniBook X Flip 2-in-1 14-fm0015ci Ultra 7 258V /1TB (C1UM9EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 555400,
+  "priceAmdMax": 555400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 555400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook X Flip 2-in-1 14-fm0015ci Ultra 7 258V.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-x-flip-2-in-1-14-fm0019ci-ultra-5-226v",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 2-in-1 14-fm0019ci Ultra 5 226V",
+  "aliases": [
+   "HP OmniBook X Flip 2-in-1 14-fm0019ci Ultra 5 226V /512GB (BZ2X2EA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 449400,
+  "priceAmdMax": 449400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 449400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP OmniBook X Flip 2-in-1 14-fm0019ci Ultra 5 226V.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-probook-4-g1a-ryzen-5",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 4 G1A Ryzen 5",
+  "aliases": [
+   "HP ProBook 4 G1A Ryzen 5 230 /512GB (B9YM2ET)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 323400,
+  "priceAmdMax": 323400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 323400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP ProBook 4 G1A Ryzen 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "hp-probook-440-g11-ultra-7-155u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 440 G11 Ultra 7 155U",
+  "aliases": [
+   "HP ProBook 440 G11 Ultra 7 155U /512GB (B9YS8ET#UUQ)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 392400,
+  "priceAmdMax": 392400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 392400
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "HP ProBook 440 G11 Ultra 7 155U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ]
+ },
+ {
+  "id": "apple-macbook-pro-16-inch-m5-pro-mgec4",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 16 inch M5 Pro MGEC4",
+  "aliases": [
+   "MacBook Pro 16 inch M5 Pro /1TB MGEC4 Space Black"
+  ],
+  "tier": "flagship",
+  "priceAmd": 1549500,
+  "priceAmdMax": 1549500,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 1549500
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Apple MacBook Pro 16 inch M5 Pro MGEC4.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
   ]
  }
 ]
