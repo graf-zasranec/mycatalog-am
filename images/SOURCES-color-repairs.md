@@ -1794,3 +1794,25 @@
 - yandex-station-lite__black.webp: web photo, background removed with PhotoRoom; https://cdn-ultra.esempla.com/storage/5393cb2a-4b98-43c5-8555-6b1f290a4877.png; product 683x484.
 
 - xiaomi-15__liquid-silver.webp: official maker photo, transparent original; https://i02.appmifile.com/15_item_my/25/02/2025/04a8ddf68267c591ac37d32693d173af.png; product 1095x1292.
+
+- honor-x9b__emerald-green.webp: web photo, background removed with PhotoRoom; https://media-cdn.bnn.in.th/362413/Honor-X9b-Emerald-Green-1.jpg; product 639x769.
+
+- honor-x9b__sunrise-orange.webp: web photo, background removed with PhotoRoom; https://ak-asset.jarir.com/akeneo-prod/asset/e/c/1/9/ec19b6c224462da52f757c15ecfdedf868c2b377_625107.jpg; product 749x800.
+
+- honor-x5b-plus__main.webp: web photo, background removed with PhotoRoom; https://de2kqc9pq55cj.cloudfront.net/_img_productos/honor-x5b-4-256gb-negro-foto1.jpg; product 931x1120.
+
+- honor-x6c__main.webp: web photo, background removed with PhotoRoom; https://tv-it.com/storage/shada/mobiles/honor-x6c-black-1.webp; product 503x616.
+
+- honor-x7d__silver.webp: web photo, background removed with PhotoRoom; https://ak-asset.jarir.com/akeneo-prod/asset/7/f/f/5/7ff51f578639bfa5b4535c4ce1fdd02cc00777d8_666297.jpg; product 754x800.
+
+- honor-x8b__green.webp: web photo, background removed with PhotoRoom; https://welectronics.com/images/stories/virtuemart/product/HonorX8bgreen94.jpg; product 572x705.
+
+- honor-x8b__titanium-silver.webp: web photo, background removed with PhotoRoom; https://api.idea.uz/storage/products/March2024/5gbX24ZQp2iHtoLehpPm.png; product 618x728.
+
+- nothing-phone-1__black.webp: web photo, background removed with PhotoRoom; https://d2e6ccujb3mkqf.cloudfront.net/d7f2336a-2523-4ce3-905c-52233be879e7-1_d96e1540-e003-46ce-ba1d-8ad691a34203.jpg; product 685x1013.
+
+- nothing-phone-2a__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61oycK5i7qL.jpg; product 813x991.
+
+- nothing-phone-3a__black.webp: web photo, background removed with PhotoRoom; https://media.ldlc.com/r1600/ld/products/00/06/21/76/LD0006217638.jpg; product 1268x1544.
+
+- nothing-phone-3a__white.webp: web photo, background removed with PhotoRoom; https://s13emagst.akamaized.net/products/87313/87312730/images/res_6995026c38cc6c43560b03901798b7cc.jpg; product 1643x1996.
