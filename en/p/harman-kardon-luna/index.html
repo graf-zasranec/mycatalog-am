@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Harman Kardon Luna: price in Armenia | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/harman-kardon-luna__sand.webp" imagesrcset="images/thumb/harman-kardon-luna__sand-576410d0ba42-800.webp 800w, images/cut/harman-kardon-luna__sand.webp 833w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Harman Kardon Luna: price in Armenia | Better.am</title>
 <meta name="description" content="Harman Kardon Luna. From 57 900 ֏, prices compared across 7 shops on Better.am.">
 <link rel="canonical" href="https://better.am/en/p/harman-kardon-luna/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/harman-kardon-luna/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Catalog</a><a href="#/compare" >Compare<span class="c" id="cmpN"></span></a><a href="#/blog" >Blog</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,35 +73,141 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="true">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Harman Kardon Luna</h1>
-<p class="lead">Harman Kardon Luna price in Armenia: from 57 900 ֏ at 7 shops. The most expensive offer is 85 000 ֏.</p>
-<a class="go" href="/?lang=en#/p/harman-kardon-luna">Compare on Better.am</a>
-<img class="shot" src="/images/cut/harman-kardon-luna__sand.webp" alt="Harman Kardon Luna" width="360" height="360">
-<h2>Prices in shops</h2>
-<div class="tw"><table><thead><tr><th>Shop</th><th>Version</th><th class="n">Price</th></tr></thead><tbody>
-<tr><td><a href="https://eldorado.am/en/harman-kardon-luna-hklunagryeu" rel="nofollow noopener">Eldorado</a></td><td>—</td><td class="n">57 900 ֏</td></tr>
-<tr><td><a href="https://istyle.am/en/product/Harman%20Kardon%20%20LUNA?color=45&amp;variant=187" rel="nofollow noopener">iStyle</a></td><td>—</td><td class="n">68 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/harman-kardon-luna-black/" rel="nofollow noopener">iBolit</a></td><td>—</td><td class="n">69 900 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/harman-kardon-luna2blkeu-t.html" rel="nofollow noopener">Zigzag</a></td><td>—</td><td class="n">69 900 ֏</td></tr>
-<tr><td><a href="https://3dplanet.am/en/store/product/harman-kardon-luna" rel="nofollow noopener">3DPlanet</a></td><td>—</td><td class="n">72 000 ֏</td></tr>
-<tr><td><a href="https://allsell.am/en/harman-kardon-luna-portable-wireless-bluetooth-speaker" rel="nofollow noopener">AllSell</a></td><td>—</td><td class="n">74 900 ֏</td></tr>
-<tr><td><a href="https://vlv.am/en/Product/48552" rel="nofollow noopener">VLV</a></td><td>—</td><td class="n">79 900 ֏</td></tr>
-</tbody></table></div>
-<h2>Key specs</h2>
-<dl><dt>Weight</dt><dd>735 g</dd><dt>Released</dt><dd>2024-09</dd></dl>
-<p class="upd">Prices checked: 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="harman-kardon-luna" data-prerender-lang="en"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Catalog</a>
+      <nav class="crumb"><span>Harman Kardon</span><span>›</span><span>Luna</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Harman Kardon / Mid-range</span>
+        <span>4 shops · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Harman Kardon Luna</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.218;--h:0.563"><img src="images/cut/harman-kardon-luna__sand.webp" srcset="images/thumb/harman-kardon-luna__sand-576410d0ba42-800.webp 800w, images/cut/harman-kardon-luna__sand.webp 833w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Harman Kardon Luna" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          <div class="og"><label>Colors<b id="colName">Sand</b></label>
+            <div class="cs"><button data-color="Sand" style="--c:#D8C9AE" title="Sand"
+              class="on" aria-pressed="true" aria-label="Sand"></button><button data-color="Black" style="--c:#1D1D1F" title="Black"
+              class="" aria-pressed="false" aria-label="Black"></button><button data-color="Gray" style="--c:#9AA0A6" title="Gray"
+              class="" aria-pressed="false" aria-label="Gray"></button></div></div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="pprice2">
+            <span class="lb">Best price</span>
+            <div class="pp-row"><b class="num">57 900 ֏</b><span class="pp-at">at Eldorado</span></div>
+            <div class="pp-pills"><span class="hp good">27 100 ֏ less than the dearest shop</span><span class="hp good">Lowest since 13.09</span></div>
+            <div class="shopn">4 shops</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
+      style="left:0.0%" aria-label="Eldorado · 57 900 ֏"><span class="rt">Eldorado · 57 900 ֏</span></button><button type="button" class="rd"
+      style="left:44.3%" aria-label="Zigzag · 69 900 ֏"><span class="rt">Zigzag · 69 900 ֏</span></button><button type="button" class="rd"
+      style="left:62.7%" aria-label="AllSell · 74 900 ֏"><span class="rt">AllSell · 74 900 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="iStyle · 85 000 ֏"><span class="rt">iStyle · 85 000 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">57 900 ֏</b>Eldorado</span>
+      <span><b class="num">85 000 ֏</b>iStyle</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/harman-kardon-luna">Check prices</a>
+            <button class="btn ghost" data-cmp-btn="harman-kardon-luna">Compare</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Compare with</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="harman-kardon-luna|harman-kardon-onyx-studio-7">Compare</a><a class="cw" href="#/p/harman-kardon-onyx-studio-7">
+      <img src="images/thumb/harman-kardon-onyx-studio-7__main-0c8019e9257e.webp" alt="Harman Kardon Onyx Studio 7" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Step up</em><b>Harman Kardon Onyx Studio 7</b><span class="num">79 000 ֏</span><span class="cwd num up">+21 100 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="harman-kardon-luna|marshall-willen-ii">Compare</a><a class="cw" href="#/p/marshall-willen-ii">
+      <img src="images/thumb/marshall-willen-ii__cream-75493e7c8a97.webp" alt="Marshall Willen II" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Alternative</em><b>Marshall Willen II</b><span class="num">59 000 ֏</span><span class="cwd num up">+1 100 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Prices in Armenian shops <em>4</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://eldorado.am/en/harman-kardon-luna-hklunagryeu" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Eldorado</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="chk" title="The shop publishes no page for this colour: the link goes to the same model">check colour</i> <i class="stale" title="The day this price was last read from the shop">checked 10.10</i></span>
+    <span class="pr num">57 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Best</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.zigzag.am/am/harman-kardon-luna2blkeu-t.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">Zigzag</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="chk" title="The shop publishes no page for this colour: the link goes to the same model">check colour</i> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">69 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+12 000 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://allsell.am/en/harman-kardon-luna-portable-wireless-bluetooth-speaker" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">AllSell</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="chk" title="The shop publishes no page for this colour: the link goes to the same model">check colour</i> <i class="stale" title="The day this price was last read from the shop">checked 10.10</i></span>
+    <span class="pr num">74 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+17 000 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://istyle.am/en/product/Harman%20Kardon%20%20LUNA%202?color=144&amp;variant=774" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">04</span>
+    <span class="sh">iStyle</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">85 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+27 100 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/harman-kardon-luna">All 12 offers from 7 shops →</a></p>
+    <p class="note">Prices taken from the shops’ own sites · Updated 11.10.2026</p>
+
+    
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">57 900<span class="d"> ֏</span></b><span class="hp good">Lowest since 13.09</span></div>
+      <p class="hist-sub">Lowest since 13.09: 57 900 ֏ on 25.09
+        · cheapest shop each day, Harman Kardon Luna</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, Harman Kardon Luna: 68 900 → 57 900 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Full specs</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Battery</h3><dl><div class="kv"><dt>Operating time</dt><dd>12 hours</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Weight</dt><dd>735 g</dd></div><div class="kv"><dt>IP rating</dt><dd>IP67</dd></div></dl></section><section class="panel-c"><h3><i></i>Connectivity</h3><dl><div class="kv"><dt>Bluetooth</dt><dd>5.3</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>Released</dt><dd>09.2024</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

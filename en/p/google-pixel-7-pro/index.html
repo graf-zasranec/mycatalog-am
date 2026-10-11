@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Google Pixel 7 Pro: price in Armenia | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/google-pixel-7-pro__main.webp" imagesrcset="images/thumb/google-pixel-7-pro__main-391bd7f593ca-800.webp 800w, images/cut/google-pixel-7-pro__main.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Google Pixel 7 Pro: price in Armenia | Better.am</title>
 <meta name="description" content="Google Pixel 7 Pro. From 249 000 ֏, prices compared across 2 shops on Better.am.">
 <link rel="canonical" href="https://better.am/en/p/google-pixel-7-pro/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/google-pixel-7-pro/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Catalog</a><a href="#/compare" >Compare<span class="c" id="cmpN"></span></a><a href="#/blog" >Blog</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,31 +73,113 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="true">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Google Pixel 7 Pro</h1>
-<p class="lead">Google Pixel 7 Pro price in Armenia: from 249 000 ֏ at 2 shops. The most expensive offer is 489 000 ֏.</p>
-<a class="go" href="/?lang=en#/p/google-pixel-7-pro">Compare on Better.am</a>
-<img class="shot" src="/images/cut/google-pixel-7-pro__main.webp" alt="Google Pixel 7 Pro" width="360" height="360">
-<h2>Prices in shops</h2>
-<div class="tw"><table><thead><tr><th>Shop</th><th>Version</th><th class="n">Price</th></tr></thead><tbody>
-<tr><td><a href="https://redstore.am/en/product/google-pixel-7-pro-12gb128gb-obsidian" rel="nofollow noopener">REDstore</a></td><td>12 GB RAM · 128 GB · Nano-SIM</td><td class="n">249 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/google-pixel-7-pro-5g-12-128gb-ga03463-gb-snow.html" rel="nofollow noopener">Zigzag</a></td><td>12 GB RAM · 128 GB · Nano-SIM</td><td class="n">378 300 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/google-pixel-7-pro-12gb512gb-obsidian" rel="nofollow noopener">REDstore</a></td><td>12 GB RAM · 512 GB · Nano-SIM</td><td class="n">489 000 ֏</td></tr>
-</tbody></table></div>
-<h2>Key specs</h2>
-<dl><dt>Display</dt><dd>6.7″, 3120x1440, 120 Hz</dd><dt>Chip</dt><dd>Google Tensor G2</dd><dt>Battery</dt><dd>5000 mAh</dd><dt>Weight</dt><dd>212 g</dd><dt>Released</dt><dd>2022-10</dd></dl>
-<p class="upd">Prices checked: 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="google-pixel-7-pro" data-prerender-lang="en"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Catalog</a>
+      <nav class="crumb"><span>Google</span><span>›</span><span>Pixel 7 Pro</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Google / Mid-range</span>
+        <span>2 shops · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Google Pixel 7 Pro</span><span class="ny num" data-nosnippet>2022</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.04;--h:0.92"><img src="images/cut/google-pixel-7-pro__main.webp" srcset="images/thumb/google-pixel-7-pro__main-391bd7f593ca-800.webp 800w, images/cut/google-pixel-7-pro__main.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Google Pixel 7 Pro" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          <div class="og"><label>RAM</label>
+            <div class="bs"><button data-ram="12" class="on" aria-pressed="true">12 GB</button></div></div>
+          <div class="og"><label>Storage</label>
+            <div class="bs"><button data-storage="128" class="on" aria-pressed="true">128 GB</button><button data-storage="512" class="" aria-pressed="false">512 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Best price · 128 GB · Nano-SIM</span>
+            <div class="pp-row"><b class="num">249 000 ֏</b><span class="pp-at">at REDstore</span></div>
+            <div class="pp-pills"><span class="hp good">141 900 ֏ less than the dearest shop</span><span class="hp good">Lowest since 03.10</span></div>
+            <div class="shopn">2 shops</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
+      style="left:0.0%" aria-label="REDstore · 249 000 ֏"><span class="rt">REDstore · 249 000 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="Zigzag · 390 900 ֏"><span class="rt">Zigzag · 390 900 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">249 000 ֏</b>REDstore</span>
+      <span><b class="num">390 900 ֏</b>Zigzag</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/google-pixel-7-pro">Check prices</a>
+            <button class="btn ghost" data-cmp-btn="google-pixel-7-pro">Compare</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Compare with</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="google-pixel-7-pro|google-pixel-9">Compare</a><a class="cw" href="#/p/google-pixel-9">
+      <img src="images/thumb/google-pixel-9__obsidian-8dd1db450fa6.webp" alt="Google Pixel 9" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Step up</em><b>Google Pixel 9<span class="ny num" data-nosnippet>2024</span></b><span class="num">285 000 ֏</span><span class="cwd num up">+36 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="google-pixel-7-pro|google-pixel-9a">Compare</a><a class="cw" href="#/p/google-pixel-9a">
+      <img src="images/thumb/google-pixel-9a__obsidian-67007432a93f.webp" alt="Google Pixel 9a" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Cheaper</em><b>Google Pixel 9a<span class="ny num" data-nosnippet>2025</span></b><span class="num">232 300 ֏</span><span class="cwd num dn">−16 700 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="google-pixel-7-pro|apple-iphone-14">Compare</a><a class="cw" href="#/p/apple-iphone-14">
+      <img src="images/thumb/apple-iphone-14__midnight-9e95da06714d.webp" alt="iPhone 14" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Alternative</em><b>iPhone 14<span class="ny num" data-nosnippet>2022</span></b><span class="num">249 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Prices in Armenian shops <em>2</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://redstore.am/en/product/google-pixel-7-pro-12gb128gb-obsidian" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">128 GB <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">249 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Best</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.zigzag.am/am/google-pixel-7-pro-5g-12-128gb-obsidian.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">Zigzag</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">128 GB <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">390 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+141 900 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/google-pixel-7-pro">All 7 offers from 2 shops →</a></p>
+    <p class="note">Prices taken from the shops’ own sites · Updated 11.10.2026</p>
+
+    
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">249 000<span class="d"> ֏</span></b><span class="hp good">Lowest since 03.10</span></div>
+      <p class="hist-sub">Lowest since 03.10: 249 000 ֏ on 03.10
+        · cheapest shop each day, 128 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, 128 GB: 249 000 → 249 000 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Full specs</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Display</h3><dl><div class="kv"><dt>Screen size</dt><dd>6.7″</dd></div><div class="kv"><dt>Screen type</dt><dd>LTPO AMOLED</dd></div><div class="kv"><dt>Resolution</dt><dd>1440×3120</dd></div><div class="kv"><dt>Refresh rate</dt><dd>120 Hz</dd></div><div class="kv"><dt>Protection</dt><dd>Gorilla Glass Victus</dd></div></dl></section><section class="panel-c"><h3><i></i>Performance</h3><dl><div class="kv"><dt>Chipset</dt><dd>Google Tensor G2</dd></div><div class="kv"><dt>Process</dt><dd>5 nm</dd></div><div class="kv"><dt>GPU</dt><dd>Mali-G710 MP7</dd></div></dl></section><section class="panel-c"><h3><i></i>Memory</h3><dl><div class="kv"><dt>RAM</dt><dd>12 GB</dd></div><div class="kv"><dt>Storage</dt><dd>128 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Camera</h3><dl><div class="kv"><dt>Main camera</dt><dd>50 MP, f/1.9, 25mm wide</dd></div><div class="kv"><dt>Ultrawide</dt><dd>12 MP, f/2.2, 126˚ (ultrawide)</dd></div><div class="kv"><dt>Telephoto</dt><dd>48 MP, f/3.5, 120mm (periscope telephoto)</dd></div><div class="kv"><dt>Front camera</dt><dd>10.8 MP, f/2.2, 21mm (ultrawide)</dd></div><div class="kv"><dt>Video</dt><dd>4K@30/60fps</dd></div></dl></section><section class="panel-c"><h3><i></i>Battery</h3><dl><div class="kv"><dt>Capacity</dt><dd>5 000 mAh</dd></div><div class="kv"><dt>Wireless charging</dt><dd>No</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Dimensions</dt><dd>162.9 × 76.6 × 8.9 mm</dd></div><div class="kv"><dt>Weight</dt><dd>212 g</dd></div><div class="kv"><dt>Materials</dt><dd>Glass front (Gorilla Glass Victus), glass back (Gorilla Glass Victus), aluminum frame</dd></div><div class="kv"><dt>IP rating</dt><dd>IP68</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>Released</dt><dd>10.2022</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Apple MacBook Air M4: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/apple-macbook-air-13-m4__silver.webp" imagesrcset="images/thumb/apple-macbook-air-13-m4__silver-014cee1fd6b3-800.webp 800w, images/cut/apple-macbook-air-13-m4__silver.webp 1000w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Apple MacBook Air M4: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Apple MacBook Air M4. Գինը՝ 469 000 ֏-ից, 3 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/apple-macbook-air-13-m4/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/apple-macbook-air-13-m4/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,32 +80,95 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Apple MacBook Air M4</h1>
-<p class="lead">Apple MacBook Air M4-ի գինը Հայաստանում՝ 469 000 ֏-ից, 3 խանութում։ Ամենաթանկ առաջարկը՝ 834 000 ֏։</p>
-<a class="go" href="/#/p/apple-macbook-air-13-m4">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/apple-macbook-air-13-m4__sky-blue.webp" alt="Apple MacBook Air M4" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://www.pixel.am/am/product/macbook-air-13-m4" rel="nofollow noopener">Pixel</a></td><td>16 ԳԲ RAM · 13″</td><td class="n">469 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/macbook-air-13-mw103-m4-16gb512gb-starlight/" rel="nofollow noopener">iBolit</a></td><td>16 ԳԲ RAM · 512 ԳԲ · 13″</td><td class="n">499 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/apple-macbook-air-15-m4-10-10-16-256-blue-mc7a4ru-a.html" rel="nofollow noopener">Zigzag</a></td><td>16 ԳԲ RAM · 256 ԳԲ · 15″</td><td class="n">519 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/macbook-air-15-mc7a4-m4-16gb256gb-sky-blue/" rel="nofollow noopener">iBolit</a></td><td>16 ԳԲ RAM · 256 ԳԲ · 15″</td><td class="n">535 000 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/macbook-air-15-m4" rel="nofollow noopener">Pixel</a></td><td>16 ԳԲ RAM · 15″</td><td class="n">539 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/macbook-air-15-mw1m3-m4-16gb512gb-midnight/" rel="nofollow noopener">iBolit</a></td><td>16 ԳԲ RAM · 512 ԳԲ · 15″</td><td class="n">589 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/macbook-air-13-mc654-m4-24gb512gb-silver/" rel="nofollow noopener">iBolit</a></td><td>24 ԳԲ RAM · 512 ԳԲ · 13″</td><td class="n">635 000 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/macbook-air-13-m4" rel="nofollow noopener">Pixel</a></td><td>24 ԳԲ RAM · 13″</td><td class="n">639 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/macbook-air-15-mc6l4-m4-24gb512gb-midnight/" rel="nofollow noopener">iBolit</a></td><td>24 ԳԲ RAM · 512 ԳԲ · 15″</td><td class="n">715 000 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/macbook-air-15-m4" rel="nofollow noopener">Pixel</a></td><td>24 ԳԲ RAM · 512 ԳԲ · 15″</td><td class="n">719 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/apple-macbook-air-15-m4-10-10-24-512-blue-mc7d4.html" rel="nofollow noopener">Zigzag</a></td><td>512 ԳԲ · 15″</td><td class="n">729 900 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>13.6″, 2560x1664</dd><dt>Պրոցեսոր</dt><dd>Apple M4</dd><dt>Քաշ</dt><dd>1240 գ</dd><dt>Թողարկում</dt><dd>2025-03</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="apple-macbook-air-13-m4" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Apple</span><span>›</span><span>MacBook Air M4</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Apple / Բարձր միջին</span>
+        <span>1 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">MacBook Air M4</span><span class="ny num" data-nosnippet>2025</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.196;--h:0.608"><img src="images/cut/apple-macbook-air-13-m4__silver.webp" srcset="images/thumb/apple-macbook-air-13-m4__silver-014cee1fd6b3-800.webp 800w, images/cut/apple-macbook-air-13-m4__silver.webp 1000w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="MacBook Air M4" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          <div class="og"><label>Գույներ<b id="colName">Silver</b></label>
+            <div class="cs"><button data-color="Sky Blue" style="--c:#2F5C9E" title="Sky Blue"
+              class="" aria-pressed="false" aria-label="Sky Blue"></button><button data-color="Silver" style="--c:#D9DADE" title="Silver"
+              class="on" aria-pressed="true" aria-label="Silver"></button><button data-color="Starlight" style="--c:#EDE7DA" title="Starlight"
+              class="" aria-pressed="false" aria-label="Starlight"></button><button data-color="Midnight" style="--c:#131924" title="Midnight"
+              class="" aria-pressed="false" aria-label="Midnight"></button></div></div>
+          
+          <div class="og"><label>Էկրանի չափ</label>
+            <div class="bs"><button data-size="13" class="on" aria-pressed="true">13″</button><button data-size="15" class="" aria-pressed="false">15″</button></div></div>
+          
+          <div class="og"><label>Օպերատիվ հիշողություն</label>
+            <div class="bs"><button data-ram="16" class="on" aria-pressed="true">16 GB</button><button data-ram="24" class="" aria-pressed="false">24 GB</button></div></div>
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="512" class="" aria-pressed="false">512 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին · 13″ · 256 GB</span>
+            <div class="pp-row"><b class="num">469 000 ֏</b><span class="pp-at">Pixel</span></div>
+            <div class="pp-pills"><span class="hp good">Ամենացածրը 08.09-ից ի վեր</span></div>
+            <div class="shopn">1 խանութ</div>
+            
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/apple-macbook-air-13-m4">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="apple-macbook-air-13-m4">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="apple-macbook-air-13-m4|apple-macbook-air-13-m5">Համեմատություն</a><a class="cw" href="#/p/apple-macbook-air-13-m5">
+      <img src="images/thumb/apple-macbook-air-13-m5__silver-fb7f9aa04730.webp" alt="MacBook Air M5" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Նոր մոդել</em><b>MacBook Air M5<span class="ny num cur" data-nosnippet>2026</span></b><span class="num">509 000 ֏</span><span class="cwd num up">+40 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="apple-macbook-air-13-m4|apple-macbook-air-13-mgn63-m1-2020">Համեմատություն</a><a class="cw" href="#/p/apple-macbook-air-13-mgn63-m1-2020">
+      <img src="images/thumb/apple-macbook-air-13-mgn63-m1-2020__space-gray-ebc5e28be028.webp" alt="MacBook Air M1" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Նախորդ մոդել</em><b>MacBook Air M1<span class="ny num" data-nosnippet>2020</span></b><span class="num">275 000 ֏</span><span class="cwd num dn">−194 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="apple-macbook-air-13-m4|lenovo-ideapad-5-2in1-14ahp9-ryzen-7">Համեմատություն</a><a class="cw" href="#/p/lenovo-ideapad-5-2in1-14ahp9-ryzen-7">
+      <img src="images/thumb/lenovo-ideapad-5-2in1-14ahp9-ryzen-7__main-7d5dc3c155c5.webp" alt="Lenovo IdeaPad 5 2in1 14AHP9(Ryzen 7)" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Այլընտրանք</em><b>Lenovo IdeaPad 5 2in1 14AHP9(Ryzen 7)<span class="ny num" data-nosnippet>2024</span></b><span class="num">469 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>1</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://www.pixel.am/am/product/macbook-air-13-m4" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Pixel</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">13″ · տարբերակը նշված չէ · 16 GB <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">469 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/apple-macbook-air-13-m4">Բոլոր 27 առաջարկները 3 խանութից →</a></p>
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">469 000<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 08.09-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 08.09-ից՝ 469 000 ֏ (14.09)
+        · օրվա ամենացածր գինը՝ 13″ · 256 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, 13″ · 256 GB: 593 000 → 469 000 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>13.6″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>հեղուկ Retina IPS LCD</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>2560×1664</dd></div><div class="kv"><dt>Խտություն, PPI</dt><dd>224 ppi</dd></div><div class="kv"><dt>Պայծառություն</dt><dd>500 նիտ</dd></div><div class="kv"><dt>Հպումային էկրան</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>Apple M4</dd></div><div class="kv"><dt>Պրոցեսոր</dt><dd>10-միջուկ</dd></div><div class="kv"><dt>Գրաֆիկա</dt><dd>Apple M4 8- կամ 10-միջուկ GPU</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Օպերատիվ հիշողություն</dt><dd>16 GB</dd></div><div class="kv"><dt>Ներքին հիշողություն</dt><dd>256 GB</dd></div><div class="kv"><dt>Հիշողության քարտ</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Մարտկոց</h3><dl><div class="kv"><dt>Տարողություն</dt><dd>53,8 Վտ·ժ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Չափսեր</dt><dd>215 × 304.1 × 11.3 մմ</dd></div><div class="kv"><dt>Քաշ</dt><dd>1240 գ</dd></div><div class="kv"><dt>Նյութեր</dt><dd>Ալյումինե միաձույլ իրան</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 6E</dd></div><div class="kv"><dt>Bluetooth</dt><dd>5.3</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>macOS 26</dd></div><div class="kv"><dt>Թողարկում</dt><dd>03.2025</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

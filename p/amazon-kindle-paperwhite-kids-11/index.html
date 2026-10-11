@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Amazon Kindle Paperwhite Kids (11th gen): գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/amazon-kindle-paperwhite-kids-11__main.webp" imagesrcset="images/thumb/amazon-kindle-paperwhite-kids-11__main-ab6df688d37e-800.webp 800w, images/cut/amazon-kindle-paperwhite-kids-11__main.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Amazon Kindle Paperwhite Kids (11th gen): գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Amazon Kindle Paperwhite Kids (11th gen). Գինը՝ 75 000 ֏-ից, 1 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/amazon-kindle-paperwhite-kids-11/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/amazon-kindle-paperwhite-kids-11/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,22 +80,84 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Amazon Kindle Paperwhite Kids (11th gen)</h1>
-<p class="lead">Amazon Kindle Paperwhite Kids (11th gen)-ի գինը Հայաստանում՝ 75 000 ֏-ից, 1 խանութում։</p>
-<a class="go" href="/#/p/amazon-kindle-paperwhite-kids-11">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/amazon-kindle-paperwhite-kids-11__main.webp" alt="Amazon Kindle Paperwhite Kids (11th gen)" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://www.yerevanmobile.am/en/amazon-kindle-kids-paperwhite-11-gen.html" rel="nofollow noopener">Yerevan Mobile</a></td><td>16 ԳԲ</td><td class="n">75 000 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>6.8″</dd><dt>Թողարկում</dt><dd>2021-10</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="amazon-kindle-paperwhite-kids-11" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Amazon</span><span>›</span><span>Kindle Paperwhite Kids (11th gen)</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Amazon / Բյուջետային</span>
+        <span>1 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Amazon Kindle Paperwhite Kids (11th gen)</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.04;--h:0.92"><img src="images/cut/amazon-kindle-paperwhite-kids-11__main.webp" srcset="images/thumb/amazon-kindle-paperwhite-kids-11__main-ab6df688d37e-800.webp 800w, images/cut/amazon-kindle-paperwhite-kids-11__main.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Amazon Kindle Paperwhite Kids (11th gen)" id="hpShot" fetchpriority="high"><span class="shot-note">Լուսանկարում կարող է այլ գույն լինել</span></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="16" class="on" aria-pressed="true">16 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին</span>
+            <div class="pp-row"><b class="num">75 000 ֏</b><span class="pp-at">Yerevan Mobile</span></div>
+            <div class="pp-pills"><span class="hp good">Ամենացածրը 13.09-ից ի վեր</span></div>
+            <div class="shopn">1 խանութ</div>
+            
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/amazon-kindle-paperwhite-kids-11">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="amazon-kindle-paperwhite-kids-11">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="amazon-kindle-paperwhite-kids-11|amazon-kindle-paperwhite-12">Համեմատություն</a><a class="cw" href="#/p/amazon-kindle-paperwhite-12">
+      <img src="images/thumb/amazon-kindle-paperwhite-12__black-895987c7815b.webp" alt="Amazon Kindle Paperwhite (12th gen)" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի բարձր դաս</em><b>Amazon Kindle Paperwhite (12th gen)</b><span class="num">79 000 ֏</span><span class="cwd num up">+4 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>1</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://www.yerevanmobile.am/en/amazon-kindle-kids-paperwhite-11-gen.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Yerevan Mobile</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">75 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">75 000<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 13.09-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 13.09-ից՝ 75 000 ֏ (13.09)
+        · օրվա ամենացածր գինը՝ 16 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, 16 GB: 75 000 → 75 000 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>6.8″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>Paperwhite E Ink՝ առանց փայլի, կարգավորվող տաք լույսով</dd></div><div class="kv"><dt>Խտություն, PPI</dt><dd>300 ppi</dd></div><div class="kv"><dt>Հպումային էկրան</dt><dd>Այո</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Ներքին հիշողություն</dt><dd>16 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Մարտկոց</h3><dl><div class="kv"><dt>Աշխատանքի տևողություն</dt><dd>մինչև 10 weeks</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>IP պաշտպանություն</dt><dd>IPX8</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 5</dd></div><div class="kv"><dt>Bluetooth</dt><dd>այո (Audible)</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>Kindle OS</dd></div><div class="kv"><dt>Թողարկում</dt><dd>10.2021</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

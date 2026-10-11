@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Acer Nitro V15 ANV15-52-57BB: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/acer-nitro-v15-anv15-52-57bb__main.webp" imagesrcset="images/thumb/acer-nitro-v15-anv15-52-57bb__main-6d1267a5eebd-800.webp 800w, images/cut/acer-nitro-v15-anv15-52-57bb__main.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Acer Nitro V15 ANV15-52-57BB: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Acer Nitro V15 ANV15-52-57BB. Այս պահին հայկական խանութներում առկա չէ։">
 <link rel="canonical" href="https://better.am/p/acer-nitro-v15-anv15-52-57bb/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/acer-nitro-v15-anv15-52-57bb/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,19 +80,67 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Acer Nitro V15 ANV15-52-57BB</h1>
-<p class="lead">Acer Nitro V15 ANV15-52-57BB. Այս պահին հայկական խանութներում առկա չէ։</p>
-<a class="go" href="/#/p/acer-nitro-v15-anv15-52-57bb">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/acer-nitro-v15-anv15-52-57bb__main.webp" alt="Acer Nitro V15 ANV15-52-57BB" width="360" height="360">
+<main id="main" tabindex="-1" data-prerender-product="acer-nitro-v15-anv15-52-57bb" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Acer</span><span>›</span><span>Nitro V15 ANV15-52-57BB</span></nav></div>
 
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>15″, 1920x1080, 144 Հց</dd><dt>Պրոցեսոր</dt><dd>Intel Core i5-13420H</dd><dt>Քաշ</dt><dd>2100 գ</dd><dt>Թողարկում</dt><dd>2025</dd></dl>
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Acer / Միջին</span>
+        <span>Գնահատված գին</span>
+      </div>
+      <h1 class="pname"><span class="pn">Acer Nitro V15 ANV15-52-57BB</span><span class="ny num" data-nosnippet>2025</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.172;--h:0.655"><img src="images/cut/acer-nitro-v15-anv15-52-57bb__main.webp" srcset="images/thumb/acer-nitro-v15-anv15-52-57bb__main-6d1267a5eebd-800.webp 800w, images/cut/acer-nitro-v15-anv15-52-57bb__main.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Acer Nitro V15 ANV15-52-57BB" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          <div class="og"><label>Օպերատիվ հիշողություն</label>
+            <div class="bs"><button data-ram="16" class="on" aria-pressed="true">16 GB</button></div></div>
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="512" class="on" aria-pressed="true">512 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Գնահատված գին</span>
+            <div class="pp-row"><b class="num">429 000 ֏</b></div>
+            
+            
+            
+          </div>
+          <div class="pcta">
+            
+            <button class="btn" data-cmp-btn="acer-nitro-v15-anv15-52-57bb">Համեմատել</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-</main>
+    
+    
+    
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">459 000<span class="d"> ֏</span></b><span class="hp warn">7.0%-ով բարձր 15.09-ի ամենացածրից</span></div>
+      <p class="hist-sub">Ամենացածրը 15.09-ից՝ 429 000 ֏ (15.09)
+        · օրվա ամենացածր գինը՝ 512 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, 512 GB: 429 000 → 459 000 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>15″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>IPS</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>1920×1080</dd></div><div class="kv"><dt>Թարմացման հաճախականություն</dt><dd>144 Հց</dd></div><div class="kv"><dt>Հպումային էկրան</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>Intel Core i5-13420H</dd></div><div class="kv"><dt>Գրաֆիկա</dt><dd>Nvidia Geforce RTX 5050 8GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Օպերատիվ հիշողություն</dt><dd>16 GB</dd></div><div class="kv"><dt>Ներքին հիշողություն</dt><dd>512 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Քաշ</dt><dd>2100 գ</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>DOS</dd></div><div class="kv"><dt>Թողարկում</dt><dd>.2025</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

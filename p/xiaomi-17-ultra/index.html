@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Xiaomi 17 Ultra: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/xiaomi-17-ultra__main.webp" imagesrcset="images/thumb/xiaomi-17-ultra__main-5f5bdcfce828-800.webp 800w, images/cut/xiaomi-17-ultra__main.webp 1189w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Xiaomi 17 Ultra: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Xiaomi 17 Ultra. Գինը՝ 575 000 ֏-ից, 5 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/xiaomi-17-ultra/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/xiaomi-17-ultra/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,26 +80,121 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Xiaomi 17 Ultra</h1>
-<p class="lead">Xiaomi 17 Ultra-ի գինը Հայաստանում՝ 575 000 ֏-ից, 5 խանութում։ Ամենաթանկ առաջարկը՝ 595 000 ֏։</p>
-<a class="go" href="/#/p/xiaomi-17-ultra">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/xiaomi-17-ultra__main.webp" alt="Xiaomi 17 Ultra" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://redstore.am/en/product/xiaomi-17-ultra-16gb512gb-black" rel="nofollow noopener">REDstore</a></td><td>16 ԳԲ RAM · 512 ԳԲ · Nano-SIM</td><td class="n">575 000 ֏</td></tr>
-<tr><td><a href="https://3dplanet.am/en/store/product/xiaomi-17-ultra" rel="nofollow noopener">3DPlanet</a></td><td>16 ԳԲ RAM · 512 ԳԲ</td><td class="n">575 000 ֏</td></tr>
-<tr><td><a href="https://www.yerevanmobile.am/en/xiaomi-17-ultra.html" rel="nofollow noopener">Yerevan Mobile</a></td><td>16 ԳԲ RAM · 512 ԳԲ · Nano-SIM</td><td class="n">575 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/xiaomi-17-ultra-16gb-512gb-black.html" rel="nofollow noopener">Zigzag</a></td><td>16 ԳԲ RAM · 512 ԳԲ · Nano-SIM</td><td class="n">589 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/xiaomi-17-ultra-16-512/" rel="nofollow noopener">iBolit</a></td><td>16 ԳԲ RAM · 512 ԳԲ</td><td class="n">595 000 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>6.9″, 2608x1200, 120 Հց</dd><dt>Պրոցեսոր</dt><dd>Qualcomm Snapdragon 8 Elite Gen 5</dd><dt>Մարտկոց</dt><dd>6000 մԱժ</dd><dt>Քաշ</dt><dd>218.4 գ</dd><dt>Թողարկում</dt><dd>2026-03</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="xiaomi-17-ultra" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Xiaomi</span><span>›</span><span>17 Ultra</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Xiaomi / Բարձր միջին</span>
+        <span>3 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Xiaomi 17 Ultra</span><span class="ny num cur" data-nosnippet>2026</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.039;--h:0.921"><img src="images/cut/xiaomi-17-ultra__main.webp" srcset="images/thumb/xiaomi-17-ultra__main-5f5bdcfce828-800.webp 800w, images/cut/xiaomi-17-ultra__main.webp 1189w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Xiaomi 17 Ultra" id="hpShot" fetchpriority="high"><span class="shot-note">Լուսանկարում կարող է այլ գույն լինել</span></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          <div class="og"><label>Գույներ<b id="colName">Black</b></label>
+            <div class="cs"><button data-color="White" style="--c:#F1F1F3" title="White"
+              class="" aria-pressed="false" aria-label="White"></button><button data-color="Starry Green" style="--c:#3E7D5A" title="Starry Green"
+              class="" aria-pressed="false" aria-label="Starry Green"></button><button data-color="Black" style="--c:#1D1D1F" title="Black"
+              class="on" aria-pressed="true" aria-label="Black"></button></div></div>
+          
+          
+          
+          <div class="og"><label>Օպերատիվ հիշողություն</label>
+            <div class="bs"><button data-ram="16" class="on" aria-pressed="true">16 GB</button></div></div>
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="512" class="on" aria-pressed="true">512 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին · Nano-SIM</span>
+            <div class="pp-row"><b class="num">575 000 ֏</b><span class="pp-at">REDstore</span></div>
+            <div class="pp-pills"><span class="hp good">ամենաթանկ խանութից 14 900 ֏ ցածր</span><span class="hp good">Ամենացածրը 03.10-ից ի վեր</span></div>
+            <div class="shopn">3 խանութ</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd cl best l"
+      style="left:0.0%" aria-label="REDstore · 575 000 ֏, Yerevan Mobile · 575 000 ֏"><span class="rc">×2</span><span class="rt">REDstore · 575 000 ֏<br>Yerevan Mobile · 575 000 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="Zigzag · 589 900 ֏"><span class="rt">Zigzag · 589 900 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">575 000 ֏</b>REDstore</span>
+      <span><b class="num">589 900 ֏</b>Zigzag</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/xiaomi-17-ultra">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="xiaomi-17-ultra">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-17-ultra|xiaomi-17-pro-max">Համեմատություն</a><a class="cw" href="#/p/xiaomi-17-pro-max">
+      <img src="images/thumb/xiaomi-17-pro-max__green-9bf981e3428a.webp" alt="Xiaomi 17 Pro Max" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի ցածր գին</em><b>Xiaomi 17 Pro Max<span class="ny num cur" data-nosnippet>2026</span></b><span class="num">499 000 ֏</span><span class="cwd num dn">−76 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-17-ultra|google-pixel-11-pro-xl">Համեմատություն</a><a class="cw" href="#/p/google-pixel-11-pro-xl">
+      <img src="images/thumb/google-pixel-11-pro-xl__obsidian-16a4993bd0a1.webp" alt="Google Pixel 11 Pro XL" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Այլընտրանք</em><b>Google Pixel 11 Pro XL<span class="ny num cur" data-nosnippet>2026</span></b><span class="num">579 000 ֏</span><span class="cwd num up">+4 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>3</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://redstore.am/en/product/xiaomi-17-ultra-16gb512gb-black" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">575 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow best" href="https://www.yerevanmobile.am/en/xiaomi-17-ultra.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">Yerevan Mobile</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">575 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.zigzag.am/am/xiaomi-17-ultra-16gb-512gb-black.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">Zigzag</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">589 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+14 900 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/xiaomi-17-ultra">Բոլոր 8 առաջարկները 5 խանութից →</a></p>
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">575 000<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 03.10-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 03.10-ից՝ 575 000 ֏ (03.10)
+        · օրվա ամենացածր գինը՝ 512 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, 512 GB: 575 000 → 575 000 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>6.9″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>LTPO AMOLED</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>1200×2608</dd></div><div class="kv"><dt>Թարմացման հաճախականություն</dt><dd>120 Հց</dd></div><div class="kv"><dt>Էկրանի պաշտպանություն</dt><dd>Xiaomi Shield Ապակի 3.0</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>Qualcomm Snapdragon 8 Elite Gen 5</dd></div><div class="kv"><dt>Տեխնոլոգիա, նմ</dt><dd>3 nm</dd></div><div class="kv"><dt>Գրաֆիկա</dt><dd>Adreno 840</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Օպերատիվ հիշողություն</dt><dd>16 GB</dd></div><div class="kv"><dt>Ներքին հիշողություն</dt><dd>512 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Տեսախցիկ</h3><dl><div class="kv"><dt>Հիմնական տեսախցիկ</dt><dd>50 MP, f/1.7, 23mm լայնանկյուն</dd></div><div class="kv"><dt>Գերլայն</dt><dd>50 MP, f/2.2, 14mm, 115˚ (գերլայն)</dd></div><div class="kv"><dt>Տելեֆոտո</dt><dd>200 MP, f/2.4-3.0, 75-100mm (պերիսկոպ թելեֆոտո)</dd></div><div class="kv"><dt>Առջևի տեսախցիկ</dt><dd>50 MP, f/2.2, 21mm (լայնանկյուն)</dd></div><div class="kv"><dt>Տեսանկարահանում</dt><dd>8K@30fps</dd></div></dl></section><section class="panel-c"><h3><i></i>Մարտկոց</h3><dl><div class="kv"><dt>Տարողություն</dt><dd>6 000 մԱժ</dd></div><div class="kv"><dt>Անլար լիցքավորում</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Չափսեր</dt><dd>162.9 × 77.6 × 8.3 մմ</dd></div><div class="kv"><dt>Քաշ</dt><dd>218.4 գ</dd></div><div class="kv"><dt>Նյութեր</dt><dd>Առջևից ապակի, Ապակի-fiber reinforced պլաստիկ հետնամաս / silicone polymer հետնամաս (eco Կաշի), Ալյումինե շրջանակ</dd></div><div class="kv"><dt>IP պաշտպանություն</dt><dd>IP68/IP69</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Թողարկում</dt><dd>03.2026</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

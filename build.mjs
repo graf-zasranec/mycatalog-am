@@ -11,10 +11,11 @@ import { transformSync } from 'esbuild';
 import { pairs } from './tools/pairs.mjs';
 import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { goatScript } from './tools/analytics.mjs';
-import { prerender } from './tools/prerender.mjs';
+import { prerender, productRenderer } from './tools/prerender.mjs';
 import { pack, unpackSource } from './tools/compact-data.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
+const heroPreviews = fs.existsSync('data/photo-previews.json') ? JSON.parse(rd('data/photo-previews.json')) : {};
 const STR = { hy: {}, ru: {}, en: {} };
 for (const s of JSON.parse(rd('data/strings.json'))) { STR.hy[s.key] = s.hy; STR.ru[s.key] = s.ru; STR.en[s.key] = s.en; }
 // real shop offers from scrape.mjs; optional, the site falls back to estimates without it
@@ -464,7 +465,7 @@ function splitShell(shell) {
 }
 
 // rAF runs just before the first frame, the timeout just after it.
-const ROUTE_START_JS = `(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();`;
+const ROUTE_START_JS = `(function(){var h=location.hash,p=location.pathname.match(/\\/p\\/([a-z0-9-]+)\\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();`;
 const BOOT_JS = rd('tools/site-boot.js');
 
 function writeBundle(file, content) {
@@ -472,6 +473,7 @@ function writeBundle(file, content) {
   try { fs.writeFileSync(temporary, content); fs.renameSync(temporary, file); }
   finally { if (fs.existsSync(temporary)) fs.unlinkSync(temporary); }
 }
+let renderProduct;
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
   // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
@@ -507,9 +509,11 @@ function build({ inline, standalone }) {
   }
   let imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
-  const initial = prerender({DATA:phones, STR, PRICES, TERMS, HISTORY, COMING, PAGEONLY, MERGED, BLOG,
+  const renderData = {DATA:phones, STR, PRICES, TERMS, HISTORY, COMING, PAGEONLY, MERGED, BLOG,
     DROPS, IMGDATA:main, THUMBDATA:thumb, COLORIMG:colors, COLORTHUMB:colorThumbs,
-    COMPARE_WITH:pairs(phones, PRICES.offers || {}), PBOX:JSON.parse(rd('data/photo-box.json'))});
+    COMPARE_WITH:pairs(phones, PRICES.offers || {}), PBOX:JSON.parse(rd('data/photo-box.json')), HEROPREVIEWS:heroPreviews};
+  const initial = prerender(renderData);
+  if (!inline && !renderProduct) renderProduct = productRenderer(renderData);
   const realLinks = html => html.replace(/href="#\/p\/([^"#]+)"/g, 'href="/p/$1/" data-route="#/p/$1"')
     .replace(/href="#\/c\/([^"#]+)"/g, 'href="/c/$1/" data-route="#/c/$1"')
     .replace(/href="#\/blog(?:\/([^"#]+))?"/g, (_, id) => `href="/b/${id ? id + '/' : ''}" data-route="#/blog${id ? '/' + id : ''}"`);
@@ -553,8 +557,9 @@ function build({ inline, standalone }) {
     fs.mkdirSync('data/details', {recursive:true});
     for (let start = 0; start < phones.length; start += chunkSize) {
       const index = start / chunkSize, ids = new Set(phones.slice(start,start+chunkSize).map(p => p.id));
-      const payload = {offers:pick(PRICES.offers,ids), colors:pick(colors,ids), thumbs:pick(colorThumbs,ids),history:pick(HISTORY.points || {},ids),compareWith:pick(detailExtras.compareWith,ids)};
-      const body = `(()=>{const d=betterUnpack(${J(pack(payload))});Object.assign(PRICES.offers,d.offers);Object.assign(COLORIMG,d.colors);Object.assign(COLORTHUMB,d.thumbs);Object.assign(COMPARE_WITH,d.compareWith);Object.assign(window.betterDetailHistory ||= {},d.history);if(typeof HISTORY!=='undefined')Object.assign(HISTORY.points,d.history);(window.betterDetailChunks ||= []).push(${index});})();`;
+      const previews = Object.fromEntries(Object.entries(heroPreviews).filter(([file]) => ids.has(file.split('/').pop().split('__')[0])));
+      const payload = {offers:pick(PRICES.offers,ids), colors:pick(colors,ids), thumbs:pick(colorThumbs,ids),history:pick(HISTORY.points || {},ids),compareWith:pick(detailExtras.compareWith,ids),previews};
+      const body = `(()=>{const d=betterUnpack(${J(pack(payload))});Object.assign(PRICES.offers,d.offers);Object.assign(COLORIMG,d.colors);Object.assign(COLORTHUMB,d.thumbs);Object.assign(COMPARE_WITH,d.compareWith);Object.assign(HEROPREVIEWS,d.previews);Object.assign(window.betterDetailHistory ||= {},d.history);if(typeof HISTORY!=='undefined')Object.assign(HISTORY.points,d.history);(window.betterDetailChunks ||= []).push(${index});})();`;
       const compact = transformSync(body,{minify:true,target:'es2020'}).code;
       const f = `data/details/chunk-${index}.js`;
       writeBundle(f,compact);
@@ -563,7 +568,7 @@ function build({ inline, standalone }) {
     imgdata = `const {IMGDATA,THUMBDATA,COLORIMG,COLORTHUMB}=\n${compactJ({IMGDATA:main,THUMBDATA:thumb,COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds)})};\n`;
   }
   const products = (lazy ? unpackSource : '') + `const DATA=${compactJ(phones.map(({ summaryEn, sources, ...p },i) => lazy ? {...p,_detailChunk:Math.floor(i/chunkSize)} : p))};\n`
-    + (lazy ? `const DETAIL_CHUNKS=${J(chunkUrls)};\n` + imgdata : '')
+    + (lazy ? `const DETAIL_CHUNKS=${J(chunkUrls)};\nconst HEROPREVIEWS={};\n` + imgdata : '')
     + `const PBOX=${compactJ(detailExtras.photoBoxes)};\n`
     + (lazy ? `let COMPARE_WITH={};\nconst DETAIL_DATA_URL=${J(extrasUrl)};\n`
       : `const COMPARE_WITH=${J(detailExtras.compareWith)};\n`);
@@ -860,7 +865,13 @@ const interactiveHome = build({ inline: false, standalone: true });
 const productCSS = [...interactiveHome.split('</head>')[0].matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m => m[1]).join('\n');
 fs.writeFileSync('data/site-ui.css', productCSS);
 const productCSSLink = `<link rel="stylesheet" href="/data/site-ui.css?v=${crypto.createHash('sha256').update(productCSS).digest('hex').slice(0, 10)}">`;
-function interactiveProduct(page, lang) {
+function interactiveProduct(page, lang, product) {
+  const rendered = renderProduct(product, lang);
+  const image = rendered.main.match(/<img[^>]*id="hpShot"[^>]*>/)?.[0];
+  const photo = image?.match(/src="([^"]+)"/)?.[1];
+  const set = image?.match(/srcset="([^"]+)"/)?.[1];
+  const sizes = image?.match(/sizes="([^"]+)"/)?.[1];
+  const preload = photo ? `<link rel="preload" as="image" href="/${photo}"${set ? ` imagesrcset="${set}" imagesizes="${sizes}"` : ''} fetchpriority="high">` : '';
   const seoTags = /<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
   const productHead = page.split('</head>')[0];
   const head = interactiveHome.split('</head>')[0].replace(seoTags, '')
@@ -869,11 +880,13 @@ function interactiveProduct(page, lang) {
     .replace(/(href|src)="((?:images|data)\/)/g, '$1="/$2')
     .replace('<html lang="hy">', `<html lang="${lang}">`)
     .replace("base-uri 'none'", "base-uri 'self'")
-    + '<base href="/">' + productCSSLink + (productHead.match(seoTags) || []).join('\n');
-  const content = page.match(/<main>([\s\S]*?)<\/main>/)[1]
+    + '<base href="/">' + preload + productCSSLink + (productHead.match(seoTags) || []).join('\n');
+  const content = rendered.main
     .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
   const body = interactiveHome.slice(interactiveHome.indexOf('</head>') + 7)
-    .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1">${content}</main>`);
+    .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1" data-prerender-product="${product.id}" data-prerender-lang="${lang}">${content}</main>`)
+    .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/, `$1${rendered.nav}</nav>`)
+    .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/, `$1${rendered.langs}</span>`);
   return head + '</head>' + emptyDiv(body, 'id="masthero"');
 }
 // The home masthead (cover, stats bar, savings strip) is nested divs; a lazy regex stopped at the
@@ -930,7 +943,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 </main></body></html>
 `;
     fs.mkdirSync(pre + path, { recursive: true });
-    writePage(`${pre}${path}index.html`, interactiveProduct(page, lang));
+    writePage(`${pre}${path}index.html`, interactiveProduct(page, lang, p));
     sitemapRows.push([url, movedOn(p) || today, 0.7]);
     shared++;
   }

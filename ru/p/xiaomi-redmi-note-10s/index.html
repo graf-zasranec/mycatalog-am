@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Xiaomi Redmi Note 10S: цена в Армении | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/xiaomi-redmi-note-10s__main.webp" imagesrcset="images/thumb/xiaomi-redmi-note-10s__main-9acf7f0c9d43-800.webp 800w, images/cut/xiaomi-redmi-note-10s__main.webp 1636w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Xiaomi Redmi Note 10S: цена в Армении | Better.am</title>
 <meta name="description" content="Xiaomi Redmi Note 10S. Цена от 69 900 ֏, сравнение цен в 1 магазине на Better.am.">
 <link rel="canonical" href="https://better.am/ru/p/xiaomi-redmi-note-10s/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/xiaomi-redmi-note-10s/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Каталог</a><a href="#/compare" >Сравнение<span class="c" id="cmpN"></span></a><a href="#/blog" >Блог</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,29 +73,95 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="true">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Xiaomi Redmi Note 10S</h1>
-<p class="lead">Цена Xiaomi Redmi Note 10S в Армении — от 69 900 ֏ в 1 магазине.</p>
-<a class="go" href="/?lang=ru#/p/xiaomi-redmi-note-10s">Сравнить на Better.am</a>
-<img class="shot" src="/images/cut/xiaomi-redmi-note-10s__main.webp" alt="Xiaomi Redmi Note 10S" width="360" height="360">
-<h2>Цены в магазинах</h2>
-<div class="tw"><table><thead><tr><th>Магазин</th><th>Вариант</th><th class="n">Цена</th></tr></thead><tbody>
-<tr><td><a href="https://shop.ucom.am/en/xiaomi-redmi-note-10s.html" rel="nofollow noopener">Ucom</a></td><td>64 ГБ · Nano-SIM</td><td class="n">69 900 ֏</td></tr>
-</tbody></table></div>
-<h2>Основные характеристики</h2>
-<dl><dt>Экран</dt><dd>6.43″, 1080x2400</dd><dt>Процессор</dt><dd>MediaTek Helio G95</dd><dt>Аккумулятор</dt><dd>5000 мА·ч</dd><dt>Вес</dt><dd>179 г</dd><dt>Выход</dt><dd>2021-03</dd></dl>
-<p class="upd">Цены проверены: 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="xiaomi-redmi-note-10s" data-prerender-lang="ru"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Каталог</a>
+      <nav class="crumb"><span>Xiaomi</span><span>›</span><span>Redmi Note 10S</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Xiaomi / Бюджетный</span>
+        <span>1 магазин · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Xiaomi Redmi Note 10S</span><span class="ny num" data-nosnippet>2021</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.039;--h:0.921"><img src="images/cut/xiaomi-redmi-note-10s__main.webp" srcset="images/thumb/xiaomi-redmi-note-10s__main-9acf7f0c9d43-800.webp 800w, images/cut/xiaomi-redmi-note-10s__main.webp 1636w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Xiaomi Redmi Note 10S" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          
+          <div class="og"><label>Встроенная память</label>
+            <div class="bs"><button data-storage="64" class="on" aria-pressed="true">64 ГБ</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Лучшая цена · Nano-SIM</span>
+            <div class="pp-row"><b class="num">69 900 ֏</b><span class="pp-at">в Ucom</span></div>
+            <div class="pp-pills"><span class="hp good">Самая низкая с 18.09</span></div>
+            <div class="shopn">1 магазин</div>
+            
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/xiaomi-redmi-note-10s">Проверить цены</a>
+            <button class="btn ghost" data-cmp-btn="xiaomi-redmi-note-10s">Сравнить</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Сравнить с</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-redmi-note-10s|xiaomi-redmi-note-11">Сравнение</a><a class="cw" href="#/p/xiaomi-redmi-note-11">
+      <img src="images/thumb/xiaomi-redmi-note-11__main-ce4e414883a6.webp" alt="Xiaomi Redmi Note 11" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Классом выше</em><b>Xiaomi Redmi Note 11<span class="ny num" data-nosnippet>2022</span></b><span class="num">76 900 ֏</span><span class="cwd num up">+7 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-redmi-note-10s|xiaomi-redmi-note-14">Сравнение</a><a class="cw" href="#/p/xiaomi-redmi-note-14">
+      <img src="images/thumb/xiaomi-redmi-note-14__midnight-black-0680f1287536.webp" alt="Xiaomi Redmi Note 14" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Дешевле</em><b>Xiaomi Redmi Note 14</b><span class="num">66 900 ֏</span><span class="cwd num dn">−3 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-redmi-note-10s|realme-c75">Сравнение</a><a class="cw" href="#/p/realme-c75">
+      <img src="images/thumb/realme-c75__lightning-gold-0803062880c0.webp" alt="Realme C75" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Альтернатива</em><b>Realme C75<span class="ny num" data-nosnippet>2024</span></b><span class="num">69 900 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Цены в магазинах Армении <em>1</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://shop.ucom.am/en/xiaomi-redmi-note-10s.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Ucom</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Эта цена в последний раз проверялась в этот день">проверено 11.10</i></span>
+    <span class="pr num">69 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Лучшая</span>
+    <span class="ar">В магазин<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    
+    <p class="note">Цены взяты с сайтов магазинов · Обновлено 11.10.2026</p>
+
+    
+    <h2 class="sh">История цены</h2><div class="hist">
+      <div class="hist-top"><b class="num">69 900<span class="d"> ֏</span></b><span class="hp good">Самая низкая с 18.09</span></div>
+      <p class="hist-sub">Минимум с 18.09: 69 900 ֏ (18.09)
+        · самая низкая цена дня, 64 ГБ</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="История цены, 64 ГБ: 69 900 → 69 900 ֏. Стрелки читают каждый день"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Все характеристики</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Экран</h3><dl><div class="kv"><dt>Диагональ</dt><dd>6.43″</dd></div><div class="kv"><dt>Тип экрана</dt><dd>AMOLED</dd></div><div class="kv"><dt>Разрешение</dt><dd>1080×2400</dd></div><div class="kv"><dt>Плотность пикселей, PPI</dt><dd>395 ppi</dd></div><div class="kv"><dt>Яркость</dt><dd>1 100 нит</dd></div></dl></section><section class="panel-c"><h3><i></i>Производительность</h3><dl><div class="kv"><dt>Чипсет</dt><dd>MediaTek Helio G95</dd></div><div class="kv"><dt>Техпроцесс, нм</dt><dd>12 nm</dd></div><div class="kv"><dt>Графика</dt><dd>Arm Mali-G76 MC4 720 MHz</dd></div></dl></section><section class="panel-c"><h3><i></i>Память</h3><dl><div class="kv"><dt>Встроенная память</dt><dd>64 ГБ</dd></div><div class="kv"><dt>Слот для карты памяти</dt><dd>Да</dd></div></dl></section><section class="panel-c"><h3><i></i>Камера</h3><dl><div class="kv"><dt>Основная камера</dt><dd>64 MP, f/1.79</dd></div><div class="kv"><dt>Фронтальная камера</dt><dd>13 MP</dd></div><div class="kv"><dt>Видеосъёмка</dt><dd>4K</dd></div></dl></section><section class="panel-c"><h3><i></i>Батарея</h3><dl><div class="kv"><dt>Ёмкость</dt><dd>5 000 мА·ч</dd></div><div class="kv"><dt>Зарядка</dt><dd>33 Вт</dd></div><div class="kv"><dt>Беспроводная зарядка</dt><dd>Нет</dd></div></dl></section><section class="panel-c"><h3><i></i>Корпус</h3><dl><div class="kv"><dt>Размеры</dt><dd>160.5 × 74.5 × 8.3 мм</dd></div><div class="kv"><dt>Вес</dt><dd>179 г</dd></div><div class="kv"><dt>Материалы</dt><dd>Пластик</dd></div><div class="kv"><dt>Класс защиты IP</dt><dd>IP53</dd></div></dl></section><section class="panel-c"><h3><i></i>Связь</h3><dl><div class="kv"><dt>Сети</dt><dd>4G</dd></div><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 5</dd></div><div class="kv"><dt>Bluetooth</dt><dd>5.0</dd></div><div class="kv"><dt>NFC</dt><dd>Да</dd></div><div class="kv"><dt>SIM-карты</dt><dd>Две SIM-карты</dd></div></dl></section><section class="panel-c"><h3><i></i>Софт</h3><dl><div class="kv"><dt>Операционная система</dt><dd>Android</dd></div><div class="kv"><dt>Дата выхода</dt><dd>03.2021</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

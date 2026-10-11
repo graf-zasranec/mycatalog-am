@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Samsung Galaxy A17 5G: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/samsung-galaxy-a17__black.webp" imagesrcset="images/thumb/samsung-galaxy-a17__black-a9a10b31a02f-800.webp 800w, images/cut/samsung-galaxy-a17__black.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Samsung Galaxy A17 5G: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Samsung Galaxy A17 5G. Գինը՝ 62 900 ֏-ից, 11 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/samsung-galaxy-a17/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/samsung-galaxy-a17/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,50 +80,117 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Samsung Galaxy A17 5G</h1>
-<p class="lead">Samsung Galaxy A17 5G-ի գինը Հայաստանում՝ 62 900 ֏-ից, 11 խանութում։ Ամենաթանկ առաջարկը՝ 99 600 ֏։</p>
-<a class="go" href="/#/p/samsung-galaxy-a17">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/samsung-galaxy-a17__black.webp" alt="Samsung Galaxy A17 5G" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://shop.viva.am/en/product/samsung-galaxy-a17-4gb-128gb-black/" rel="nofollow noopener">Viva</a></td><td>4 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">62 900 ֏</td></tr>
-<tr><td><a href="https://notebookcentre.am/en/product/samsung-galaxy-a17-light-blue" rel="nofollow noopener">Notebook Centre</a></td><td>128 ԳԲ</td><td class="n">65 000 ֏</td></tr>
-<tr><td><a href="https://allsell.am/en/samsung-galaxy-a17" rel="nofollow noopener">AllSell</a></td><td>4 ԳԲ RAM · 128 ԳԲ</td><td class="n">65 600 ֏</td></tr>
-<tr><td><a href="https://shop.ucom.am/am/samsung-galaxy-a17.html" rel="nofollow noopener">Ucom</a></td><td>4 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">65 900 ֏</td></tr>
-<tr><td><a href="https://shop.viva.am/en/product/samsung-galaxy-a17-6gb-128gb-black5884/" rel="nofollow noopener">Viva</a></td><td>6 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">66 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/samsung-galaxy-a17-4-128black/" rel="nofollow noopener">iBolit</a></td><td>4 ԳԲ RAM · 128 ԳԲ</td><td class="n">70 000 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/samsung-galaxy-a17-4gb128gb-black" rel="nofollow noopener">REDstore</a></td><td>4 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">71 000 ֏</td></tr>
-<tr><td><a href="https://3dplanet.am/en/store/product/samsung-galaxy-a17" rel="nofollow noopener">3DPlanet</a></td><td>128 ԳԲ</td><td class="n">71 000 ֏</td></tr>
-<tr><td><a href="https://www.yerevanmobile.am/en/samsung-galaxy-a17.html" rel="nofollow noopener">Yerevan Mobile</a></td><td>4 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">72 000 ֏</td></tr>
-<tr><td><a href="https://mobilecentre.am/product/samsung-galaxy-a17-_4gb_128gb_/32485/" rel="nofollow noopener">Mobile Centre</a></td><td>4 ԳԲ RAM · 128 ԳԲ</td><td class="n">72 900 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/samsung-galaxy-a17" rel="nofollow noopener">Pixel</a></td><td>4 ԳԲ RAM · 128 ԳԲ</td><td class="n">72 900 ֏</td></tr>
-<tr><td><a href="https://allsell.am/en/samsung-galaxy-a17" rel="nofollow noopener">AllSell</a></td><td>6 ԳԲ RAM · 128 ԳԲ</td><td class="n">76 600 ֏</td></tr>
-<tr><td><a href="https://mobilecentre.am/product/samsung-galaxy-a17/32488/" rel="nofollow noopener">Mobile Centre</a></td><td>6 ԳԲ RAM · 128 ԳԲ</td><td class="n">77 900 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/samsung-galaxy-a17-6gb128gb-black" rel="nofollow noopener">REDstore</a></td><td>6 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">79 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/samsung-galaxy-a17-6-128gbblack/" rel="nofollow noopener">iBolit</a></td><td>6 ԳԲ RAM · 128 ԳԲ</td><td class="n">79 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/samsung-galaxy-a17-6-128gb-black.html" rel="nofollow noopener">Zigzag</a></td><td>6 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">79 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/samsung-galaxy-a17-8-128gb-5gblue/" rel="nofollow noopener">iBolit</a></td><td>8 ԳԲ RAM · 128 ԳԲ</td><td class="n">82 000 ֏</td></tr>
-<tr><td><a href="https://www.yerevanmobile.am/en/samsung-galaxy-a17.html" rel="nofollow noopener">Yerevan Mobile</a></td><td>6 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">82 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/samsung-galaxy-a17-8-256gb-black.html" rel="nofollow noopener">Zigzag</a></td><td>8 ԳԲ RAM · 256 ԳԲ · Nano-SIM</td><td class="n">82 900 ֏</td></tr>
-<tr><td><a href="https://shop.viva.am/en/product/samsung-galaxy-a17-8gb-256gb-light-blue89714965/" rel="nofollow noopener">Viva</a></td><td>8 ԳԲ RAM · 256 ԳԲ · Nano-SIM</td><td class="n">83 900 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/samsung-galaxy-a17-8gb128gb-light-blue" rel="nofollow noopener">REDstore</a></td><td>8 ԳԲ RAM · 128 ԳԲ · Nano-SIM</td><td class="n">85 000 ֏</td></tr>
-<tr><td><a href="https://mobilecentre.am/product/samsung-galaxy-a17-8gb_256gb-_light-blue_/32491/" rel="nofollow noopener">Mobile Centre</a></td><td>8 ԳԲ RAM · 256 ԳԲ</td><td class="n">95 900 ֏</td></tr>
-<tr><td><a href="https://shop.ucom.am/am/samsung-galaxy-a17.html" rel="nofollow noopener">Ucom</a></td><td>8 ԳԲ RAM · 256 ԳԲ · Nano-SIM</td><td class="n">95 900 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/samsung-galaxy-a17-8gb256gb-black" rel="nofollow noopener">REDstore</a></td><td>8 ԳԲ RAM · 256 ԳԲ · Nano-SIM</td><td class="n">97 000 ֏</td></tr>
-<tr><td><a href="https://3dplanet.am/en/store/product/samsung-galaxy-a17" rel="nofollow noopener">3DPlanet</a></td><td>256 ԳԲ</td><td class="n">97 000 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/samsung-galaxy-a17-8-256gb-5gblack/" rel="nofollow noopener">iBolit</a></td><td>8 ԳԲ RAM · 256 ԳԲ</td><td class="n">97 000 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/samsung-galaxy-a17" rel="nofollow noopener">Pixel</a></td><td>8 ԳԲ RAM · 256 ԳԲ</td><td class="n">97 900 ֏</td></tr>
-<tr><td><a href="https://www.yerevanmobile.am/en/samsung-galaxy-a17.html" rel="nofollow noopener">Yerevan Mobile</a></td><td>8 ԳԲ RAM · 256 ԳԲ · Nano-SIM</td><td class="n">99 000 ֏</td></tr>
-<tr><td><a href="https://allsell.am/en/samsung-galaxy-a17" rel="nofollow noopener">AllSell</a></td><td>8 ԳԲ RAM · 256 ԳԲ</td><td class="n">99 600 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>6.7″, 2340x1080, 90 Հց</dd><dt>Պրոցեսոր</dt><dd>Samsung Exynos 1330</dd><dt>Մարտկոց</dt><dd>5000 մԱժ</dd><dt>Քաշ</dt><dd>192 գ</dd><dt>Թողարկում</dt><dd>2025-08</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="samsung-galaxy-a17" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Samsung</span><span>›</span><span>Galaxy A17 5G</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Samsung / Բյուջետային</span>
+        <span>3 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Galaxy A17 5G</span><span class="ny num" data-nosnippet>2025</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.04;--h:0.92"><img src="images/cut/samsung-galaxy-a17__black.webp" srcset="images/thumb/samsung-galaxy-a17__black-a9a10b31a02f-800.webp 800w, images/cut/samsung-galaxy-a17__black.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Galaxy A17 5G" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          <div class="og"><label>Գույներ<b id="colName">Black</b></label>
+            <div class="cs"><button data-color="Black" style="--c:#1D1D1F" title="Black"
+              class="on" aria-pressed="true" aria-label="Black"></button><button data-color="Blue" style="--c:#2F5C9E" title="Blue"
+              class="" aria-pressed="false" aria-label="Blue"></button><button data-color="Gray" style="--c:#9AA0A6" title="Gray"
+              class="" aria-pressed="false" aria-label="Gray"></button></div></div>
+          
+          
+          
+          <div class="og"><label>Օպերատիվ հիշողություն</label>
+            <div class="bs"><button data-ram="4" class="on" aria-pressed="true">4 GB</button><button data-ram="6" class="" aria-pressed="false">6 GB</button><button data-ram="8" class="" aria-pressed="false">8 GB</button></div></div>
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="128" class="on" aria-pressed="true">128 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին · 128 GB · Nano-SIM</span>
+            <div class="pp-row"><b class="num">62 900 ֏</b><span class="pp-at">Viva</span></div>
+            <div class="pp-pills"><span class="hp good">ամենաթանկ խանութից 9 100 ֏ ցածր</span></div>
+            <div class="shopn">3 խանութ</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
+      style="left:0.0%" aria-label="Viva · 62 900 ֏"><span class="rt">Viva · 62 900 ֏</span></button><button type="button" class="rd r"
+      style="left:89.0%" aria-label="REDstore · 71 000 ֏"><span class="rt">REDstore · 71 000 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="Yerevan Mobile · 72 000 ֏"><span class="rt">Yerevan Mobile · 72 000 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">62 900 ֏</b>Viva</span>
+      <span><b class="num">72 000 ֏</b>Yerevan Mobile</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/samsung-galaxy-a17">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="samsung-galaxy-a17">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="samsung-galaxy-a17|samsung-galaxy-a27">Համեմատություն</a><a class="cw" href="#/p/samsung-galaxy-a27">
+      <img src="images/thumb/samsung-galaxy-a27__black-b06893e37ad7.webp" alt="Galaxy A27 5G" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի հզոր</em><b>Galaxy A27 5G<span class="ny num cur" data-nosnippet>2026</span></b><span class="num">108 000 ֏</span><span class="cwd num up">+45 100 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="samsung-galaxy-a17|samsung-galaxy-a16">Համեմատություն</a><a class="cw" href="#/p/samsung-galaxy-a16">
+      <img src="images/thumb/samsung-galaxy-a16__blue-black-1e8c0722b7b3.webp" alt="Galaxy A16 5G" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Նախորդ մոդել</em><b>Galaxy A16 5G<span class="ny num" data-nosnippet>2024</span></b><span class="num">56 900 ֏</span><span class="cwd num dn">−6 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="samsung-galaxy-a17|oppo-reno-a18">Համեմատություն</a><a class="cw" href="#/p/oppo-reno-a18">
+      <img src="images/thumb/oppo-reno-a18__main-a4f855bfc8cd.webp" alt="OPPO Reno A18" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Այլընտրանք</em><b>OPPO Reno A18<span class="ny num" data-nosnippet>2023</span></b><span class="num">61 900 ֏</span><span class="cwd num dn">−1 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>3</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://shop.viva.am/en/product/samsung-galaxy-a17-4gb-128gb-black/" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Viva</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">128 GB · 4 GB <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">62 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://redstore.am/en/product/samsung-galaxy-a17-4gb128gb-black" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">128 GB · 4 GB <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">71 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+8 100 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.yerevanmobile.am/en/samsung-galaxy-a17.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">Yerevan Mobile</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">128 GB · 4 GB <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">72 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+9 100 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/samsung-galaxy-a17">Բոլոր 62 առաջարկները 11 խանութից →</a></p>
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><p class="note">128 GB-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից</p>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>6.7″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>Super AMOLED</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>1080×2340</dd></div><div class="kv"><dt>Թարմացման հաճախականություն</dt><dd>90 Հց</dd></div><div class="kv"><dt>Խտություն, PPI</dt><dd>385 ppi</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>Samsung Exynos 1330</dd></div><div class="kv"><dt>Տեխնոլոգիա, նմ</dt><dd>5 nm</dd></div><div class="kv"><dt>Պրոցեսոր</dt><dd>Ութմիջուկ (2.4 GHz + 2.0 GHz)</dd></div><div class="kv"><dt>Գրաֆիկա</dt><dd>Mali-G68 MC4</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Օպերատիվ հիշողություն</dt><dd>4 GB</dd></div><div class="kv"><dt>Ներքին հիշողություն</dt><dd>128 GB</dd></div><div class="kv"><dt>Հիշողության քարտ</dt><dd>Այո</dd></div></dl></section><section class="panel-c"><h3><i></i>Տեսախցիկ</h3><dl><div class="kv"><dt>Հիմնական տեսախցիկ</dt><dd>50 MP, f/1.8</dd></div><div class="kv"><dt>Գերլայն</dt><dd>5 MP, f/2.2</dd></div><div class="kv"><dt>Տելեֆոտո</dt><dd>2 MP, f/2.4, մակրո ֆոկուս</dd></div><div class="kv"><dt>Առջևի տեսախցիկ</dt><dd>13 MP</dd></div><div class="kv"><dt>Տեսանկարահանում</dt><dd>1080p@30fps</dd></div></dl></section><section class="panel-c"><h3><i></i>Մարտկոց</h3><dl><div class="kv"><dt>Տարողություն</dt><dd>5 000 մԱժ</dd></div><div class="kv"><dt>Լիցքավորում</dt><dd>25 Վտ</dd></div><div class="kv"><dt>Անլար լիցքավորում</dt><dd>Ոչ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Չափսեր</dt><dd>164.4 × 77.9 × 7.5 մմ</dd></div><div class="kv"><dt>Քաշ</dt><dd>192 գ</dd></div><div class="kv"><dt>Նյութեր</dt><dd>Պլաստիկ շրջանակ, Առջևից ապակի</dd></div><div class="kv"><dt>IP պաշտպանություն</dt><dd>IP54</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Ցանցեր</dt><dd>5G</dd></div><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 5</dd></div><div class="kv"><dt>Bluetooth</dt><dd>5.3</dd></div><div class="kv"><dt>NFC</dt><dd>Այո</dd></div><div class="kv"><dt>SIM քարտեր</dt><dd>Երկու nano-SIM և առանձին microSD բնիկ</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>Android, One UI</dd></div><div class="kv"><dt>Թարմացումներ</dt><dd>6 տարվա OS-ի և անվտանգության թարմացումներ</dd></div><div class="kv"><dt>Թողարկում</dt><dd>08.2025</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

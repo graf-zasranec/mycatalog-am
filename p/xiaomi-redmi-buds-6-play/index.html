@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Xiaomi Redmi Buds 6 Play: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/xiaomi-redmi-buds-6-play__black.webp" imagesrcset="images/thumb/xiaomi-redmi-buds-6-play__black-b1062d8dfa57-800.webp 800w, images/cut/xiaomi-redmi-buds-6-play__black.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Xiaomi Redmi Buds 6 Play: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Xiaomi Redmi Buds 6 Play. Գինը՝ 5 900 ֏-ից, 7 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/xiaomi-redmi-buds-6-play/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/xiaomi-redmi-buds-6-play/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,28 +80,148 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Xiaomi Redmi Buds 6 Play</h1>
-<p class="lead">Xiaomi Redmi Buds 6 Play-ի գինը Հայաստանում՝ 5 900 ֏-ից, 7 խանութում։ Ամենաթանկ առաջարկը՝ 9 900 ֏։ Վերջին 30 օրվա ամենացածր գինը՝ 5 500 ֏։</p>
-<a class="go" href="/#/p/xiaomi-redmi-buds-6-play">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/xiaomi-redmi-buds-6-play__black.webp" alt="Xiaomi Redmi Buds 6 Play" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://eldorado.am/en/redmi-buds-6-play-black-m2420e1-bhr8776gl" rel="nofollow noopener">Eldorado</a></td><td>—</td><td class="n">5 900 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/xiaomi-redmi-buds-6-play-black" rel="nofollow noopener">REDstore</a></td><td>—</td><td class="n">6 400 ֏</td></tr>
-<tr><td><a href="https://shop.ucom.am/en/xiaomi-redmi-buds-6.html" rel="nofollow noopener">Ucom</a></td><td>—</td><td class="n">6 500 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/xiaomi-redmi-buds-6-play-black-bhr8776gl.html" rel="nofollow noopener">Zigzag</a></td><td>—</td><td class="n">6 500 ֏</td></tr>
-<tr><td><a href="https://shop.viva.am/en/product/redmi-buds-6-play-black-m2420e1196/" rel="nofollow noopener">Viva</a></td><td>—</td><td class="n">7 900 ֏</td></tr>
-<tr><td><a href="https://mobilecentre.am/product/xiaomi-redmi-buds-6-play-headphone-bhr8773gl-_white_/32107/" rel="nofollow noopener">Mobile Centre</a></td><td>—</td><td class="n">9 900 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/xiaomi-buds-6-play" rel="nofollow noopener">Pixel</a></td><td>—</td><td class="n">9 900 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Քաշ</dt><dd>3.6 գ</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="xiaomi-redmi-buds-6-play" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Xiaomi</span><span>›</span><span>Redmi Buds 6 Play</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Xiaomi / Բյուջետային</span>
+        <span>5 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Xiaomi Redmi Buds 6 Play</span><span class="ny num" data-nosnippet>2024</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.04;--h:0.92"><img src="images/cut/xiaomi-redmi-buds-6-play__black.webp" srcset="images/thumb/xiaomi-redmi-buds-6-play__black-b1062d8dfa57-800.webp 800w, images/cut/xiaomi-redmi-buds-6-play__black.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Xiaomi Redmi Buds 6 Play" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          <div class="og"><label>Գույներ<b id="colName">Black</b></label>
+            <div class="cs"><button data-color="Black" style="--c:#1D1D1F" title="Black"
+              class="on" aria-pressed="true" aria-label="Black"></button><button data-color="White" style="--c:#F1F1F3" title="White"
+              class="" aria-pressed="false" aria-label="White"></button><button data-color="Pink" style="--c:#E4A0B7" title="Pink"
+              class="" aria-pressed="false" aria-label="Pink"></button><button data-color="Blue" style="--c:#2F5C9E" title="Blue"
+              class="" aria-pressed="false" aria-label="Blue"></button></div></div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին</span>
+            <div class="pp-row"><b class="num">5 900 ֏</b><span class="pp-at">Eldorado</span></div>
+            <div class="pp-pills"><span class="hp good">ամենաթանկ խանութից 4 000 ֏ ցածր</span><span class="hp warn">7.3%-ով բարձր 20.09-ի ամենացածրից</span></div>
+            <div class="shopn">5 խանութ</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
+      style="left:0.0%" aria-label="Eldorado · 5 900 ֏"><span class="rt">Eldorado · 5 900 ֏</span></button><button type="button" class="rd cl l"
+      style="left:13.8%" aria-label="REDstore · 6 400 ֏, Zigzag · 6 500 ֏"><span class="rc">×2</span><span class="rt">REDstore · 6 400 ֏<br>Zigzag · 6 500 ֏</span></button><button type="button" class="rd"
+      style="left:50.0%" aria-label="Viva · 7 900 ֏"><span class="rt">Viva · 7 900 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="Pixel · 9 900 ֏"><span class="rt">Pixel · 9 900 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">5 900 ֏</b>Eldorado</span>
+      <span><b class="num">9 900 ֏</b>Pixel</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/xiaomi-redmi-buds-6-play">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="xiaomi-redmi-buds-6-play">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-redmi-buds-6-play|xiaomi-redmi-buds-6">Համեմատություն</a><a class="cw" href="#/p/xiaomi-redmi-buds-6">
+      <img src="images/thumb/xiaomi-redmi-buds-6__black-1f9a602cc458.webp" alt="Xiaomi Redmi Buds 6" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի բարձր դաս</em><b>Xiaomi Redmi Buds 6</b><span class="num">6 900 ֏</span><span class="cwd num up">+1 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="xiaomi-redmi-buds-6-play|sony-mdr-zx110">Համեմատություն</a><a class="cw" href="#/p/sony-mdr-zx110">
+      <img src="images/thumb/sony-mdr-zx110__white-86731a456b85.webp" alt="Sony MDR-ZX110" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Այլընտրանք</em><b>Sony MDR-ZX110</b><span class="num">6 500 ֏</span><span class="cwd num up">+600 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>5</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://eldorado.am/en/redmi-buds-6-play-black-m2420e1-bhr8776gl" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Eldorado</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 10.10</i></span>
+    <span class="pr num">5 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://redstore.am/en/product/xiaomi-redmi-buds-6-play-black" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">6 400 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+500 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.zigzag.am/am/xiaomi-redmi-buds-6-play-black-bhr8776gl.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">Zigzag</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">6 500 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+600 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://shop.viva.am/en/product/redmi-buds-6-play-black-m2420e1196/" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">04</span>
+    <span class="sh">Viva</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">7 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+2 000 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.pixel.am/am/product/xiaomi-buds-6-play" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">05</span>
+    <span class="sh">Pixel</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">9 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+4 000 ֏</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/xiaomi-redmi-buds-6-play">Բոլոր 13 առաջարկները 7 խանութից →</a></p>
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">5 900<span class="d"> ֏</span></b><span class="hp warn">7.3%-ով բարձր 20.09-ի ամենացածրից</span></div>
+      <p class="hist-sub">Ամենացածրը 18.09-ից՝ 5 500 ֏ (20.09)
+        · օրվա ամենացածր գինը՝ Xiaomi Redmi Buds 6 Play</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, Xiaomi Redmi Buds 6 Play: 6 500 → 5 900 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Ձայն</h3><dl><div class="kv"><dt>Ականջակալների տեսակ</dt><dd>Անլար (TWS)</dd></div><div class="kv"><dt>Միացման տեսակ</dt><dd>Անլար</dd></div><div class="kv"><dt>Հաճախականությունների միջակայք</dt><dd>20 Hz–20 kHz</dd></div><div class="kv"><dt>Բարձրախոսի չափ</dt><dd>10 mm</dd></div><div class="kv"><dt>Դիմադրություն</dt><dd>16 Ω</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Քաշ</dt><dd>3.6 գ</dd></div></dl></section><section class="panel-c"><h3><i></i>Կապ</h3><dl><div class="kv"><dt>Bluetooth</dt><dd>5.4</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Թողարկում</dt><dd>—</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

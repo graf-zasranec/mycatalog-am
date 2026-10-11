@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Apple AirPods Pro 2: price in Armenia | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/apple-airpods-pro-2__white.webp" imagesrcset="images/thumb/apple-airpods-pro-2__white-c9e0ef4f6e1f-800.webp 800w, images/cut/apple-airpods-pro-2__white.webp 2609w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Apple AirPods Pro 2: price in Armenia | Better.am</title>
 <meta name="description" content="Apple AirPods Pro 2. From 83 500 ֏, prices compared across 7 shops on Better.am.">
 <link rel="canonical" href="https://better.am/en/p/apple-airpods-pro-2/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/apple-airpods-pro-2/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Catalog</a><a href="#/compare" >Compare<span class="c" id="cmpN"></span></a><a href="#/blog" >Blog</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,35 +73,151 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="true">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Apple AirPods Pro 2</h1>
-<p class="lead">Apple AirPods Pro 2 price in Armenia: from 83 500 ֏ at 7 shops. The most expensive offer is 124 900 ֏.</p>
-<a class="go" href="/?lang=en#/p/apple-airpods-pro-2">Compare on Better.am</a>
-<img class="shot" src="/images/cut/apple-airpods-pro-2__white.webp" alt="Apple AirPods Pro 2" width="360" height="360">
-<h2>Prices in shops</h2>
-<div class="tw"><table><thead><tr><th>Shop</th><th>Version</th><th class="n">Price</th></tr></thead><tbody>
-<tr><td><a href="https://allsell.am/en/airpods-pro-2-type-c" rel="nofollow noopener">AllSell</a></td><td>—</td><td class="n">83 500 ֏</td></tr>
-<tr><td><a href="https://www.pixel.am/am/product/airpods-pro-2-type-c" rel="nofollow noopener">Pixel</a></td><td>—</td><td class="n">83 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/apple-airpods-pro-2-usb-c/" rel="nofollow noopener">iBolit</a></td><td>—</td><td class="n">83 900 ֏</td></tr>
-<tr><td><a href="https://www.yerevanmobile.am/en/apple-airpods-pro-2-type-c.html" rel="nofollow noopener">Yerevan Mobile</a></td><td>—</td><td class="n">84 000 ֏</td></tr>
-<tr><td><a href="https://notebookcentre.am/en/product/apple-airpods-pro-2-type-c" rel="nofollow noopener">Notebook Centre</a></td><td>—</td><td class="n">84 000 ֏</td></tr>
-<tr><td><a href="https://3dplanet.am/en/store/product/apple-airpods-pro-2" rel="nofollow noopener">3DPlanet</a></td><td>—</td><td class="n">89 000 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/apple-airpods-pro-2nd-generation-mqd83ru-a.html" rel="nofollow noopener">Zigzag</a></td><td>—</td><td class="n">124 900 ֏</td></tr>
-</tbody></table></div>
-<h2>Key specs</h2>
-<dl><dt>Weight</dt><dd>5 g</dd><dt>Released</dt><dd>2022-09</dd></dl>
-<p class="upd">Prices checked: 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="apple-airpods-pro-2" data-prerender-lang="en"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Catalog</a>
+      <nav class="crumb"><span>Apple</span><span>›</span><span>AirPods Pro 2</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Apple / Upper mid</span>
+        <span>7 shops · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">AirPods Pro 2</span><span class="ny num" data-nosnippet>2022</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.039;--h:0.921"><img src="images/cut/apple-airpods-pro-2__white.webp" srcset="images/thumb/apple-airpods-pro-2__white-c9e0ef4f6e1f-800.webp 800w, images/cut/apple-airpods-pro-2__white.webp 2609w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="AirPods Pro 2" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          
+          
+          
+          
+          <div class="pprice2">
+            <span class="lb">Best price</span>
+            <div class="pp-row"><b class="num">83 500 ֏</b><span class="pp-at">at AllSell</span></div>
+            <div class="pp-pills"><span class="hp good">41 400 ֏ less than the dearest shop</span><span class="hp good">Lowest since 08.09</span></div>
+            <div class="shopn">7 shops</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd cl best l"
+      style="left:0.0%" aria-label="AllSell · 83 500 ֏, Pixel · 83 900 ֏, iBolit · 83 900 ֏, Yerevan Mobile · 84 000 ֏, Notebook Centre · 84 000 ֏"><span class="rc">×5</span><span class="rt">AllSell · 83 500 ֏<br>Pixel · 83 900 ֏<br>iBolit · 83 900 ֏<br>Yerevan Mobile · 84 000 ֏<br>Notebook Centre · 84 000 ֏</span></button><button type="button" class="rd l"
+      style="left:13.3%" aria-label="3DPlanet · 89 000 ֏"><span class="rt">3DPlanet · 89 000 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="Zigzag · 124 900 ֏"><span class="rt">Zigzag · 124 900 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">83 500 ֏</b>AllSell</span>
+      <span><b class="num">124 900 ֏</b>Zigzag</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/apple-airpods-pro-2">Check prices</a>
+            <button class="btn ghost" data-cmp-btn="apple-airpods-pro-2">Compare</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Compare with</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="apple-airpods-pro-2|apple-airpods-pro-3">Compare</a><a class="cw" href="#/p/apple-airpods-pro-3">
+      <img src="images/thumb/apple-airpods-pro-3__white-1e5de74588df.webp" alt="AirPods Pro 3" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Newer model</em><b>AirPods Pro 3<span class="ny num" data-nosnippet>2025</span></b><span class="num">98 000 ֏</span><span class="cwd num up">+14 500 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="apple-airpods-pro-2|apple-airpods-4-anc">Compare</a><a class="cw" href="#/p/apple-airpods-4-anc">
+      <img src="images/thumb/apple-airpods-4-anc__white-fd71a198a5db.webp" alt="AirPods 4 with Active Noise Cancellation" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Cheaper</em><b>AirPods 4 with Active Noise Cancellation<span class="ny num" data-nosnippet>2024</span></b><span class="num">69 900 ֏</span><span class="cwd num dn">−13 600 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="apple-airpods-pro-2|beats-fit-pro">Compare</a><a class="cw" href="#/p/beats-fit-pro">
+      <img src="images/thumb/beats-fit-pro__black-4369db250d01.webp" alt="Beats Fit Pro" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Alternative</em><b>Beats Fit Pro<span class="ny num" data-nosnippet>2021</span></b><span class="num">84 000 ֏</span><span class="cwd num up">+500 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Prices in Armenian shops <em>7</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://allsell.am/en/airpods-pro-2-type-c" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">AllSell</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 10.10</i></span>
+    <span class="pr num">83 500 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Best</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.pixel.am/am/product/airpods-pro-2-type-c" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">Pixel</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">83 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+400 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://ibolit.mobi/product/apple-airpods-pro-2-usb-c/" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">iBolit</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">83 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+400 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://www.yerevanmobile.am/en/apple-airpods-pro-2-type-c.html" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">04</span>
+    <span class="sh">Yerevan Mobile</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 10.10</i></span>
+    <span class="pr num">84 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+500 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://notebookcentre.am/en/product/apple-airpods-pro-2-type-c" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">05</span>
+    <span class="sh">Notebook Centre</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">84 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+500 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/apple-airpods-pro-2">All 8 offers from 7 shops →</a></p>
+    <p class="note">Prices taken from the shops’ own sites · Updated 11.10.2026</p>
+
+    
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">83 500<span class="d"> ֏</span></b><span class="hp good">Lowest since 08.09</span></div>
+      <p class="hist-sub">Lowest since 08.09: 83 500 ֏ on 11.09
+        · cheapest shop each day, AirPods Pro 2</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, AirPods Pro 2: 89 900 → 83 500 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Full specs</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Audio</h3><dl><div class="kv"><dt>Headphone design</dt><dd>True wireless (TWS)</dd></div><div class="kv"><dt>Connection type</dt><dd>Wireless</dd></div><div class="kv"><dt>Active noise cancellation</dt><dd>Yes</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Weight</dt><dd>5 g</dd></div><div class="kv"><dt>IP rating</dt><dd>IP54</dd></div></dl></section><section class="panel-c"><h3><i></i>Connectivity</h3><dl><div class="kv"><dt>Bluetooth</dt><dd>5.3</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>Released</dt><dd>09.2022</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

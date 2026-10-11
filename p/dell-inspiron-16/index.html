@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Dell Inspiron 16: գինը Հայաստանում | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/dell-inspiron-16__main.webp" imagesrcset="images/thumb/dell-inspiron-16__main-001d647e693f-800.webp 800w, images/cut/dell-inspiron-16__main.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Dell Inspiron 16: գինը Հայաստանում | Better.am</title>
 <meta name="description" content="Dell Inspiron 16. Գինը՝ 289 900 ֏-ից, 2 խանութի գների համեմատություն Better.am-ում։">
 <link rel="canonical" href="https://better.am/p/dell-inspiron-16/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/dell-inspiron-16/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="#/blog" >Բլոգ</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -82,23 +80,89 @@
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Dell Inspiron 16</h1>
-<p class="lead">Dell Inspiron 16-ի գինը Հայաստանում՝ 289 900 ֏-ից, 2 խանութում։ Ամենաթանկ առաջարկը՝ 465 000 ֏։</p>
-<a class="go" href="/#/p/dell-inspiron-16">Համեմատել Better.am-ում</a>
-<img class="shot" src="/images/cut/dell-inspiron-16__main.webp" alt="Dell Inspiron 16" width="360" height="360">
-<h2>Գները խանութներում</h2>
-<div class="tw"><table><thead><tr><th>Խանութ</th><th>Տարբերակ</th><th class="n">Գին</th></tr></thead><tbody>
-<tr><td><a href="https://mobilecentre.am/product/dell-pc-notebook-inspiron-16-_-core-5-120u-_-8gb-ram-_-512gb-ssd-_-16-inch-wuxga-touch-_-win11-_ice-blue_/34336/" rel="nofollow noopener">Mobile Centre</a></td><td>8 ԳԲ RAM · 512 ԳԲ · 16″</td><td class="n">289 900 ֏</td></tr>
-<tr><td><a href="https://allsell.am/en/dell-inspiron-16-5640-i7-150u-16gb-i-1tb" rel="nofollow noopener">AllSell</a></td><td>16 ԳԲ RAM · 1 ՏԲ · 16″</td><td class="n">465 000 ֏</td></tr>
-</tbody></table></div>
-<h2>Հիմնական բնութագրեր</h2>
-<dl><dt>Էկրան</dt><dd>16″, 1920x1200</dd><dt>Պրոցեսոր</dt><dd>Intel Core 5 120U</dd><dt>Քաշ</dt><dd>1870 գ</dd></dl>
-<p class="upd">Գները ստուգվել են՝ 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="dell-inspiron-16" data-prerender-lang="hy"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Կատալոգ</a>
+      <nav class="crumb"><span>Dell</span><span>›</span><span>Inspiron 16</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Dell / Միջին</span>
+        <span>1 խանութ · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Dell Inspiron 16</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.195;--h:0.602"><img src="images/cut/dell-inspiron-16__main.webp" srcset="images/thumb/dell-inspiron-16__main-001d647e693f-800.webp 800w, images/cut/dell-inspiron-16__main.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Dell Inspiron 16" id="hpShot" fetchpriority="high"><span class="shot-note">Լուսանկարում կարող է այլ գույն լինել</span></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          <div class="og"><label>Օպերատիվ հիշողություն</label>
+            <div class="bs"><button data-ram="8" class="on" aria-pressed="true">8 GB</button><button data-ram="16" class="" aria-pressed="false">16 GB</button></div></div>
+          <div class="og"><label>Ներքին հիշողություն</label>
+            <div class="bs"><button data-storage="512" class="on" aria-pressed="true">512 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Լավագույն գին · 512 GB</span>
+            <div class="pp-row"><b class="num">289 900 ֏</b><span class="pp-at">Mobile Centre</span></div>
+            <div class="pp-pills"><span class="hp good">Ամենացածրը 14.09-ից ի վեր</span></div>
+            <div class="shopn">1 խանութ</div>
+            
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/dell-inspiron-16">Ստուգել գները</a>
+            <button class="btn ghost" data-cmp-btn="dell-inspiron-16">Համեմատել</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Համեմատել՝</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="dell-inspiron-16|dell-inspiron-7440-core-5">Համեմատություն</a><a class="cw" href="#/p/dell-inspiron-7440-core-5">
+      <img src="images/thumb/dell-inspiron-7440-core-5__main-edf70c74e55d.webp" alt="Dell Inspiron 7440(Core 5)" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի բարձր դաս</em><b>Dell Inspiron 7440(Core 5)<span class="ny num" data-nosnippet>2024</span></b><span class="num">329 000 ֏</span><span class="cwd num up">+39 100 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="dell-inspiron-16|dell-16-dc16251">Համեմատություն</a><a class="cw" href="#/p/dell-16-dc16251">
+      <img src="images/thumb/dell-16-dc16251__main-18917c9a2b52.webp" alt="Dell 16-DC16251" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Ավելի ցածր գին</em><b>Dell 16-DC16251<span class="ny num" data-nosnippet>2025</span></b><span class="num">275 000 ֏</span><span class="cwd num dn">−14 900 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="dell-inspiron-16|lenovo-v14-g4-iru">Համեմատություն</a><a class="cw" href="#/p/lenovo-v14-g4-iru">
+      <img src="images/thumb/lenovo-v14-g4-iru__main-8dfe5d3f5167.webp" alt="Lenovo V14 G4 IRU" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Այլընտրանք</em><b>Lenovo V14 G4 IRU<span class="ny num" data-nosnippet>2023</span></b><span class="num">289 000 ֏</span><span class="cwd num dn">−900 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Գներ Հայաստանի խանութներում <em>1</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://mobilecentre.am/product/dell-pc-notebook-inspiron-16-_-core-5-120u-_-8gb-ram-_-512gb-ssd-_-16-inch-wuxga-touch-_-win11-_ice-blue_/34336/" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">Mobile Centre</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr">512 GB · 8 GB <i class="stale" title="Այս գինը վերջին անգամ ստուգվել է այս օրը">ստուգված՝ 11.10</i></span>
+    <span class="pr num">289 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Լավագույն</span>
+    <span class="ar">Դեպի խանութ<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/dell-inspiron-16">Բոլոր 2 առաջարկները 2 խանութից →</a></p>
+    <p class="note">Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</p>
+
+    
+    <h2 class="sh">Գնի պատմություն</h2><div class="hist">
+      <div class="hist-top"><b class="num">289 900<span class="d"> ֏</span></b><span class="hp good">Ամենացածրը 14.09-ից ի վեր</span></div>
+      <p class="hist-sub">Ամենացածրը 14.09-ից՝ 289 900 ֏ (14.09)
+        · օրվա ամենացածր գինը՝ 512 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Գնի պատմություն, 512 GB: 289 900 → 289 900 ֏. Սլաքներով կարդացեք ամեն օրը"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Բոլոր բնութագրերը</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Էկրան</h3><dl><div class="kv"><dt>Անկյունագիծ</dt><dd>16″</dd></div><div class="kv"><dt>Էկրանի տեսակ</dt><dd>WUXGA IPS LCD</dd></div><div class="kv"><dt>Լուծաչափ</dt><dd>1920×1200</dd></div><div class="kv"><dt>Հպումային էկրան</dt><dd>Այո</dd></div></dl></section><section class="panel-c"><h3><i></i>Հզորություն</h3><dl><div class="kv"><dt>Չիպսեթ</dt><dd>Intel Core 5 120U</dd></div></dl></section><section class="panel-c"><h3><i></i>Հիշողություն</h3><dl><div class="kv"><dt>Օպերատիվ հիշողություն</dt><dd>8 GB</dd></div><div class="kv"><dt>Ներքին հիշողություն</dt><dd>512 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Կորպուս</h3><dl><div class="kv"><dt>Քաշ</dt><dd>1870 գ</dd></div></dl></section><section class="panel-c"><h3><i></i>Ծրագրակազմ</h3><dl><div class="kv"><dt>Օպերացիոն համակարգ</dt><dd>Windows 11</dd></div><div class="kv"><dt>Թողարկում</dt><dd>—</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

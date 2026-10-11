@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Samsung A15: price in Armenia | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/samsung-a15__main.webp" imagesrcset="images/thumb/samsung-a15__main-a05f36185dfd-800.webp 800w, images/cut/samsung-a15__main.webp 1047w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Samsung A15: price in Armenia | Better.am</title>
 <meta name="description" content="Samsung A15. Not currently sold in Armenian shops.">
 <link rel="canonical" href="https://better.am/en/p/samsung-a15/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/samsung-a15/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Catalog</a><a href="#/compare" >Compare<span class="c" id="cmpN"></span></a><a href="#/blog" >Blog</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,26 +73,73 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="true">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Samsung A15</h1>
-<p class="lead">Samsung A15. Not currently sold in Armenian shops.</p>
-<a class="go" href="/?lang=en#/p/samsung-a15">Compare on Better.am</a>
-<img class="shot" src="/images/cut/samsung-a15__main.webp" alt="Samsung A15" width="360" height="360">
+<main id="main" tabindex="-1" data-prerender-product="samsung-a15" data-prerender-lang="en"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Catalog</a>
+      <nav class="crumb"><span>Samsung</span><span>›</span><span>A15</span></nav></div>
 
-<h2>Key specs</h2>
-<dl><dt>Display</dt><dd>6.5″, 1080x2340, 90 Hz</dd><dt>Chip</dt><dd>MediaTek Helio G99 (MT6789)</dd><dt>Battery</dt><dd>5000 mAh</dd><dt>Weight</dt><dd>200 g</dd><dt>Released</dt><dd>2023-12</dd></dl>
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Samsung / Budget</span>
+        <span>Estimated price</span>
+      </div>
+      <h1 class="pname"><span class="pn">A15</span><span class="ny num" data-nosnippet>2023</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.04;--h:0.92"><img src="images/cut/samsung-a15__main.webp" srcset="images/thumb/samsung-a15__main-a05f36185dfd-800.webp 800w, images/cut/samsung-a15__main.webp 1047w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="A15" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          
+          <div class="og"><label>Storage</label>
+            <div class="bs"><button data-storage="256" class="on" aria-pressed="true">256 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Estimated price</span>
+            <div class="pp-row"><b class="num">69 900 ֏</b></div>
+            
+            
+            
+          </div>
+          <div class="pcta">
+            
+            <button class="btn" data-cmp-btn="samsung-a15">Compare</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-</main>
+    
+    
+    
+
+    
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">69 900<span class="d"> ֏</span></b><span class="hp good">Lowest since 18.09</span></div>
+      <p class="hist-sub">Lowest since 18.09: 69 900 ֏ on 18.09
+        · cheapest shop each day, 256 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, 256 GB: 69 900 → 69 900 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Full specs</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Display</h3><dl><div class="kv"><dt>Screen size</dt><dd>6.5″</dd></div><div class="kv"><dt>Screen type</dt><dd>Super AMOLED</dd></div><div class="kv"><dt>Resolution</dt><dd>1080×2340</dd></div><div class="kv"><dt>Refresh rate</dt><dd>90 Hz</dd></div><div class="kv"><dt>Pixel density</dt><dd>396 ppi</dd></div><div class="kv"><dt>Brightness</dt><dd>800 nits</dd></div></dl></section><section class="panel-c"><h3><i></i>Performance</h3><dl><div class="kv"><dt>Chipset</dt><dd>MediaTek Helio G99 (MT6789)</dd></div><div class="kv"><dt>Process</dt><dd>6 nm</dd></div><div class="kv"><dt>GPU</dt><dd>Mali-G57 MC2</dd></div></dl></section><section class="panel-c"><h3><i></i>Memory</h3><dl><div class="kv"><dt>Storage</dt><dd>256 GB</dd></div><div class="kv"><dt>Card slot</dt><dd>Yes</dd></div></dl></section><section class="panel-c"><h3><i></i>Camera</h3><dl><div class="kv"><dt>Main camera</dt><dd>50 MP, f/1.8</dd></div><div class="kv"><dt>Front camera</dt><dd>13 MP</dd></div></dl></section><section class="panel-c"><h3><i></i>Battery</h3><dl><div class="kv"><dt>Capacity</dt><dd>5 000 mAh</dd></div><div class="kv"><dt>Charging</dt><dd>25 W</dd></div><div class="kv"><dt>Wireless charging</dt><dd>No</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Dimensions</dt><dd>160.1 × 76.8 × 8.4 mm</dd></div><div class="kv"><dt>Weight</dt><dd>200 g</dd></div><div class="kv"><dt>Materials</dt><dd>Plastic</dd></div></dl></section><section class="panel-c"><h3><i></i>Connectivity</h3><dl><div class="kv"><dt>Network</dt><dd>4G</dd></div><div class="kv"><dt>Wi-Fi</dt><dd>Wi-Fi 5</dd></div><div class="kv"><dt>Bluetooth</dt><dd>5.2</dd></div><div class="kv"><dt>NFC</dt><dd>Yes</dd></div><div class="kv"><dt>SIM</dt><dd>Dual SIM</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>OS</dt><dd>Android, One UI</dd></div><div class="kv"><dt>Released</dt><dd>12.2023</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

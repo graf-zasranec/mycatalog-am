@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>ASUS VivoBook E410MA-BV2490W: цена в Армении | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/asus-vivobook-e410ma-bv2490w__main.webp" imagesrcset="images/thumb/asus-vivobook-e410ma-bv2490w__main-2a9e695944f9-800.webp 800w, images/cut/asus-vivobook-e410ma-bv2490w__main.webp 2348w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>ASUS VivoBook E410MA-BV2490W: цена в Армении | Better.am</title>
 <meta name="description" content="ASUS VivoBook E410MA-BV2490W. Цена от 133 000 ֏, сравнение цен в 1 магазине на Better.am.">
 <link rel="canonical" href="https://better.am/ru/p/asus-vivobook-e410ma-bv2490w/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/asus-vivobook-e410ma-bv2490w/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Каталог</a><a href="#/compare" >Сравнение<span class="c" id="cmpN"></span></a><a href="#/blog" >Блог</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,29 +73,96 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="true">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>ASUS VivoBook E410MA-BV2490W</h1>
-<p class="lead">Цена ASUS VivoBook E410MA-BV2490W в Армении — от 133 000 ֏ в 1 магазине.</p>
-<a class="go" href="/?lang=ru#/p/asus-vivobook-e410ma-bv2490w">Сравнить на Better.am</a>
-<img class="shot" src="/images/cut/asus-vivobook-e410ma-bv2490w__main.webp" alt="ASUS VivoBook E410MA-BV2490W" width="360" height="360">
-<h2>Цены в магазинах</h2>
-<div class="tw"><table><thead><tr><th>Магазин</th><th>Вариант</th><th class="n">Цена</th></tr></thead><tbody>
-<tr><td><a href="https://ibolit.mobi/product/asus-vivobook-e410ma-bv2490w/" rel="nofollow noopener">iBolit</a></td><td>Intel N4020 · 4 ГБ RAM · 512 ГБ</td><td class="n">133 000 ֏</td></tr>
-</tbody></table></div>
-<h2>Основные характеристики</h2>
-<dl><dt>Экран</dt><dd>14″, 1366x768</dd><dt>Процессор</dt><dd>Intel N4020</dd><dt>Вес</dt><dd>1300 г</dd></dl>
-<p class="upd">Цены проверены: 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="asus-vivobook-e410ma-bv2490w" data-prerender-lang="ru"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Каталог</a>
+      <nav class="crumb"><span>ASUS</span><span>›</span><span>VivoBook E410MA-BV2490W</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>ASUS / Бюджетный</span>
+        <span>1 магазин · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">ASUS VivoBook E410MA-BV2490W</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.188;--h:0.624"><img src="images/cut/asus-vivobook-e410ma-bv2490w__main.webp" srcset="images/thumb/asus-vivobook-e410ma-bv2490w__main-2a9e695944f9-800.webp 800w, images/cut/asus-vivobook-e410ma-bv2490w__main.webp 2348w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="ASUS VivoBook E410MA-BV2490W" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          <div class="og"><label>Оперативная память</label>
+            <div class="bs"><button data-ram="4" class="on" aria-pressed="true">4 ГБ</button></div></div>
+          <div class="og"><label>Встроенная память</label>
+            <div class="bs"><button data-storage="512" class="on" aria-pressed="true">512 ГБ</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Лучшая цена</span>
+            <div class="pp-row"><b class="num">133 000 ֏</b><span class="pp-at">в iBolit</span></div>
+            <div class="pp-pills"><span class="hp good">Самая низкая с 16.09</span></div>
+            <div class="shopn">1 магазин</div>
+            
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/asus-vivobook-e410ma-bv2490w">Проверить цены</a>
+            <button class="btn ghost" data-cmp-btn="asus-vivobook-e410ma-bv2490w">Сравнить</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Сравнить с</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="asus-vivobook-e410ma-bv2490w|asus-vivobook-e1404fa-th31">Сравнение</a><a class="cw" href="#/p/asus-vivobook-e1404fa-th31">
+      <img src="images/thumb/asus-vivobook-e1404fa-th31__main-cfdcf520ac48.webp" alt="ASUS VivoBook E1404FA-TH31" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Классом выше</em><b>ASUS VivoBook E1404FA-TH31<span class="ny num" data-nosnippet>2023</span></b><span class="num">179 000 ֏</span><span class="cwd num up">+46 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="asus-vivobook-e410ma-bv2490w|asus-vivobook-e510ka-br859ws">Сравнение</a><a class="cw" href="#/p/asus-vivobook-e510ka-br859ws">
+      <img src="images/thumb/asus-vivobook-e510ka-br859ws__main-eb3896cc69ce.webp" alt="ASUS VivoBook E510KA-BR859WS" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Дешевле</em><b>ASUS VivoBook E510KA-BR859WS<span class="ny num" data-nosnippet>2024</span></b><span class="num">129 000 ֏</span><span class="cwd num dn">−4 000 ֏</span></span></a></div><div class="cwb"><a class="cwc" href="#/compare" data-cw="asus-vivobook-e410ma-bv2490w|dell-wyse-5470">Сравнение</a><a class="cw" href="#/p/dell-wyse-5470">
+      <img src="images/thumb/dell-wyse-5470__main-099d49bfdac4.webp" alt="Dell Wyse 5470" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Альтернатива</em><b>Dell Wyse 5470<span class="ny num" data-nosnippet>2025</span></b><span class="num">129 000 ֏</span><span class="cwd num dn">−4 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Цены в магазинах Армении <em>1</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://ibolit.mobi/product/asus-vivobook-e410ma-bv2490w/" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">iBolit</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="Эта цена в последний раз проверялась в этот день">проверено 11.10</i></span>
+    <span class="pr num">133 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Лучшая</span>
+    <span class="ar">В магазин<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    
+    <p class="note">Цены взяты с сайтов магазинов · Обновлено 11.10.2026</p>
+
+    
+    <h2 class="sh">История цены</h2><div class="hist">
+      <div class="hist-top"><b class="num">133 000<span class="d"> ֏</span></b><span class="hp good">Самая низкая с 16.09</span></div>
+      <p class="hist-sub">Минимум с 16.09: 133 000 ֏ (16.09)
+        · самая низкая цена дня, 512 ГБ</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="История цены, 512 ГБ: 133 000 → 133 000 ֏. Стрелки читают каждый день"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Все характеристики</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Экран</h3><dl><div class="kv"><dt>Диагональ</dt><dd>14″</dd></div><div class="kv"><dt>Разрешение</dt><dd>1366×768</dd></div></dl></section><section class="panel-c"><h3><i></i>Производительность</h3><dl><div class="kv"><dt>Чипсет</dt><dd>Intel N4020</dd></div></dl></section><section class="panel-c"><h3><i></i>Память</h3><dl><div class="kv"><dt>Оперативная память</dt><dd>4 ГБ</dd></div><div class="kv"><dt>Встроенная память</dt><dd>512 ГБ</dd></div></dl></section><section class="panel-c"><h3><i></i>Корпус</h3><dl><div class="kv"><dt>Вес</dt><dd>1300 г</dd></div></dl></section><section class="panel-c"><h3><i></i>Софт</h3><dl><div class="kv"><dt>Операционная система</dt><dd>Win11</dd></div><div class="kv"><dt>Дата выхода</dt><dd>—</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

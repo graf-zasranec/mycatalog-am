@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Google Pixel 11 Pro Fold: price in Armenia | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/google-pixel-11-pro-fold__main.webp" imagesrcset="images/thumb/google-pixel-11-pro-fold__main-30ff7b33207c-800.webp 800w, images/cut/google-pixel-11-pro-fold__main.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Google Pixel 11 Pro Fold: price in Armenia | Better.am</title>
 <meta name="description" content="Google Pixel 11 Pro Fold. From 899 000 ֏, prices compared across 1 shop on Better.am.">
 <link rel="canonical" href="https://better.am/en/p/google-pixel-11-pro-fold/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/google-pixel-11-pro-fold/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Catalog</a><a href="#/compare" >Compare<span class="c" id="cmpN"></span></a><a href="#/blog" >Blog</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,29 +73,92 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="true">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Google Pixel 11 Pro Fold</h1>
-<p class="lead">Google Pixel 11 Pro Fold price in Armenia: from 899 000 ֏ at 1 shop.</p>
-<a class="go" href="/?lang=en#/p/google-pixel-11-pro-fold">Compare on Better.am</a>
-<img class="shot" src="/images/cut/google-pixel-11-pro-fold__main.webp" alt="Google Pixel 11 Pro Fold" width="360" height="360">
-<h2>Prices in shops</h2>
-<div class="tw"><table><thead><tr><th>Shop</th><th>Version</th><th class="n">Price</th></tr></thead><tbody>
-<tr><td><a href="https://redstore.am/en/product/google-pixel-11-pro-fold-16gb256gb-obsidian" rel="nofollow noopener">REDstore</a></td><td>16 GB RAM · 256 GB · Nano-SIM</td><td class="n">899 000 ֏</td></tr>
-</tbody></table></div>
-<h2>Key specs</h2>
-<dl><dt>Display</dt><dd>8″, 2152x2076, 120 Hz</dd><dt>Chip</dt><dd>Google Tensor G6</dd><dt>Battery</dt><dd>4806 mAh</dd><dt>Weight</dt><dd>239 g</dd><dt>Released</dt><dd>2026-08</dd></dl>
-<p class="upd">Prices checked: 11.10.2026</p>
-</main>
+<main id="main" tabindex="-1" data-prerender-product="google-pixel-11-pro-fold" data-prerender-lang="en"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Catalog</a>
+      <nav class="crumb"><span>Google</span><span>›</span><span>Pixel 11 Pro Fold</span></nav></div>
+
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Google / Flagship / New</span>
+        <span>1 shop · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Google Pixel 11 Pro Fold</span><span class="ny num cur" data-nosnippet>2026</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.04;--h:0.92"><img src="images/cut/google-pixel-11-pro-fold__main.webp" srcset="images/thumb/google-pixel-11-pro-fold__main-30ff7b33207c-800.webp 800w, images/cut/google-pixel-11-pro-fold__main.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Google Pixel 11 Pro Fold" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          
+          
+          
+          
+          <div class="og"><label>RAM</label>
+            <div class="bs"><button data-ram="16" class="on" aria-pressed="true">16 GB</button></div></div>
+          <div class="og"><label>Storage</label>
+            <div class="bs"><button data-storage="256" class="on" aria-pressed="true">256 GB</button></div></div>
+          
+          
+          <div class="pprice2">
+            <span class="lb">Best price · Nano-SIM</span>
+            <div class="pp-row"><b class="num">899 000 ֏</b><span class="pp-at">at REDstore</span></div>
+            <div class="pp-pills"><span class="hp good">Lowest since 03.10</span></div>
+            <div class="shopn">1 shop</div>
+            
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/google-pixel-11-pro-fold">Check prices</a>
+            <button class="btn ghost" data-cmp-btn="google-pixel-11-pro-fold">Compare</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Compare with</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="google-pixel-11-pro-fold|google-pixel-10-pro-fold-gu0np">Compare</a><a class="cw" href="#/p/google-pixel-10-pro-fold-gu0np">
+      <img src="images/thumb/google-pixel-10-pro-fold-gu0np__moonstone-15e0403c66a4.webp" alt="Google Pixel 10 Pro Fold" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Cheaper</em><b>Google Pixel 10 Pro Fold<span class="ny num" data-nosnippet>2025</span></b><span class="num">725 000 ֏</span><span class="cwd num dn">−174 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Prices in Armenian shops <em>1</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://redstore.am/en/product/google-pixel-11-pro-fold-16gb256gb-obsidian" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">899 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Best</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    
+    <p class="note">Prices taken from the shops’ own sites · Updated 11.10.2026</p>
+
+    
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">899 000<span class="d"> ֏</span></b><span class="hp good">Lowest since 03.10</span></div>
+      <p class="hist-sub">Lowest since 03.10: 899 000 ֏ on 03.10
+        · cheapest shop each day, 256 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, 256 GB: 899 000 → 899 000 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Full specs</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Display</h3><dl><div class="kv"><dt>Screen size</dt><dd>8″</dd></div><div class="kv"><dt>Screen type</dt><dd>Foldable LTPO OLED</dd></div><div class="kv"><dt>Resolution</dt><dd>2076×2152</dd></div><div class="kv"><dt>Refresh rate</dt><dd>120 Hz</dd></div></dl></section><section class="panel-c"><h3><i></i>Performance</h3><dl><div class="kv"><dt>Chipset</dt><dd>Google Tensor G6</dd></div><div class="kv"><dt>Process</dt><dd>3 nm</dd></div><div class="kv"><dt>GPU</dt><dd>PowerVR CXTP-48-1536</dd></div></dl></section><section class="panel-c"><h3><i></i>Memory</h3><dl><div class="kv"><dt>RAM</dt><dd>16 GB</dd></div><div class="kv"><dt>Storage</dt><dd>256 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Camera</h3><dl><div class="kv"><dt>Main camera</dt><dd>48 MP, f/1.7, 24mm wide</dd></div><div class="kv"><dt>Ultrawide</dt><dd>10.5 MP, f/2.2, 127˚ (ultrawide)</dd></div><div class="kv"><dt>Telephoto</dt><dd>10.8 MP, f/3.1, 112mm (telephoto)</dd></div><div class="kv"><dt>Front camera</dt><dd>10 MP, f/2.2, 23mm (wide)</dd></div><div class="kv"><dt>Video</dt><dd>4K@24/30/60fps</dd></div></dl></section><section class="panel-c"><h3><i></i>Battery</h3><dl><div class="kv"><dt>Capacity</dt><dd>4 806 mAh</dd></div><div class="kv"><dt>Wireless charging</dt><dd>No</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Dimensions</dt><dd>155.2 × 150.4 × 5 mm</dd></div><div class="kv"><dt>Weight</dt><dd>239 g</dd></div><div class="kv"><dt>Materials</dt><dd>Glass front (glass-ceramic glass) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame</dd></div><div class="kv"><dt>IP rating</dt><dd>IP68</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>Released</dt><dd>08.2026</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>

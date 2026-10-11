@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-r0GRW7OAZ5CNKHjrmxas3IyvGgcx0WGzwzMInfe7DRc=' 'sha256-g3oYv/thNAc3+QpBRlaXzdVhTllNcwDnRLbvg/3WzIo=' https://gc.zgo.at https://www.googletagmanager.com https://datafa.st; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://datafa.st;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-yvtzopF4JX6R6fDssLkCzjm8yP00l1A05OVfBKRIN3A=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
 
@@ -30,14 +30,12 @@
 
 
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
-<script>(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
+<script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
-<script defer src="/data/site-google-analytics.js"></script>
-<script defer data-website-id="dfid_raKYMc7Q66nse7R4M2Ffp" data-domain="better.am" src="https://datafa.st/js/script.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
-<base href="/"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Microsoft Xbox Wireless Controller: price in Armenia | Better.am</title>
+<base href="/"><link rel="preload" as="image" href="/images/cut/microsoft-xbox-controller__shock-blue.webp" imagesrcset="images/thumb/microsoft-xbox-controller__shock-blue-bdfb1ef5ee41-800.webp 800w, images/cut/microsoft-xbox-controller__shock-blue.webp 1200w" imagesizes="(max-width:760px) calc(100vw - 40px), 520px" fetchpriority="high"><link rel="stylesheet" href="/data/site-ui.css?v=bab662efc8"><title>Microsoft Xbox Wireless Controller: price in Armenia | Better.am</title>
 <meta name="description" content="Microsoft Xbox Wireless Controller. From 31 900 ֏, prices compared across 6 shops on Better.am.">
 <link rel="canonical" href="https://better.am/en/p/microsoft-xbox-controller/">
 <link rel="alternate" hreflang="hy" href="https://better.am/p/microsoft-xbox-controller/">
@@ -65,7 +63,7 @@
 <div class="mast" id="mast">
   <div class="shell topnav">
     <a class="logo" href="#/" aria-label="Better.am"><span class="wm">better<em>.</em></span></a>
-    <nav class="nav" id="nav"><a href="#/catalog" >Կատալոգ</a><a href="#/compare" ><span class="nl">Համեմատություն</span><span class="ns">Համեմատել</span><span class="c" id="cmpN"></span></a><a href="/b/" data-route="#/blog" >Բլոգ</a></nav>
+    <nav class="nav" id="nav"><a href="#/catalog" >Catalog</a><a href="#/compare" >Compare<span class="c" id="cmpN"></span></a><a href="#/blog" >Blog</a></nav>
     <div class="srch">
       <label class="vh" for="q" id="srchLbl">Search</label>
       <input type="search" id="q" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
@@ -75,33 +73,130 @@
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
-      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="true">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="false">ENG</button></span>
+      <span class="langs" id="langs"><button data-lang="hy" aria-pressed="false">ՀԱՅ</button><button data-lang="ru" aria-pressed="false">РУС</button><button data-lang="en" aria-pressed="true">ENG</button></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
     </span>
   </div>
   <div class="shell mast-hero" id="masthero" hidden></div>
 </div>
-<main id="main" tabindex="-1">
-<h1>Microsoft Xbox Wireless Controller</h1>
-<p class="lead">Microsoft Xbox Wireless Controller price in Armenia: from 31 900 ֏ at 6 shops. The most expensive offer is 45 000 ֏.</p>
-<a class="go" href="/?lang=en#/p/microsoft-xbox-controller">Compare on Better.am</a>
-<img class="shot" src="/images/cut/microsoft-xbox-controller__carbon-black.webp" alt="Microsoft Xbox Wireless Controller" width="360" height="360">
-<h2>Prices in shops</h2>
-<div class="tw"><table><thead><tr><th>Shop</th><th>Version</th><th class="n">Price</th></tr></thead><tbody>
-<tr><td><a href="https://allsell.am/en/xbox-x-s-controller" rel="nofollow noopener">AllSell</a></td><td>—</td><td class="n">31 900 ֏</td></tr>
-<tr><td><a href="https://www.zigzag.am/am/microsoft-xbox-controller-series-s-x-white.html" rel="nofollow noopener">Zigzag</a></td><td>—</td><td class="n">33 900 ֏</td></tr>
-<tr><td><a href="https://3dplanet.am/en/store/product/xbox-wireless-controller" rel="nofollow noopener">3DPlanet</a></td><td>—</td><td class="n">35 000 ֏</td></tr>
-<tr><td><a href="https://eldorado.am/en/microsoft-xbox-controller-series-deep-pink" rel="nofollow noopener">Eldorado</a></td><td>—</td><td class="n">36 900 ֏</td></tr>
-<tr><td><a href="https://ibolit.mobi/product/xbox-wireless-controller-robot-carbon-black/" rel="nofollow noopener">iBolit</a></td><td>—</td><td class="n">38 000 ֏</td></tr>
-<tr><td><a href="https://redstore.am/en/product/xbox-wireless-controller-robot-pulse-red" rel="nofollow noopener">REDstore</a></td><td>—</td><td class="n">45 000 ֏</td></tr>
-</tbody></table></div>
+<main id="main" tabindex="-1" data-prerender-product="microsoft-xbox-controller" data-prerender-lang="en"><div class="shell">
+    <div class="navrow"><a class="backbtn" href="#/"><span aria-hidden="true">←</span> Catalog</a>
+      <nav class="crumb"><span>Microsoft</span><span>›</span><span>Xbox Wireless Controller</span></nav></div>
 
-<p class="upd">Prices checked: 11.10.2026</p>
-</main>
+    <div class="pstage">
+      <div class="pmeta">
+        <span>Microsoft / Budget</span>
+        <span>3 shops · 11.10.2026</span>
+      </div>
+      <h1 class="pname"><span class="pn">Microsoft Xbox Wireless Controller</span></h1>
+      <div class="pgrid">
+        <div class="pshotwrap" style="--t:0.175;--h:0.65"><img src="images/cut/microsoft-xbox-controller__shock-blue.webp" srcset="images/thumb/microsoft-xbox-controller__shock-blue-bdfb1ef5ee41-800.webp 800w, images/cut/microsoft-xbox-controller__shock-blue.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 520px" alt="Microsoft Xbox Wireless Controller" id="hpShot" fetchpriority="high"></div>
+        <div class="pside">
+          <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
+          <div class="og"><label>Colors<b id="colName">Shock Blue</b></label>
+            <div class="cs"><button data-color="Carbon Black" style="--c:#1D1D1F" title="Carbon Black"
+              class="" aria-pressed="false" aria-label="Carbon Black"></button><button data-color="Robot White" style="--c:#F1F1F3" title="Robot White"
+              class="" aria-pressed="false" aria-label="Robot White"></button><button data-color="Shock Blue" style="--c:#2F5C9E" title="Shock Blue"
+              class="on" aria-pressed="true" aria-label="Shock Blue"></button><button data-color="Pulse Red" style="--c:#B3242C" title="Pulse Red"
+              class="" aria-pressed="false" aria-label="Pulse Red"></button><button data-color="Electric Volt" style="--c:#D7F24A" title="Electric Volt"
+              class="" aria-pressed="false" aria-label="Electric Volt"></button><button data-color="Deep Pink" style="--c:#a07080" title="Deep Pink"
+              class="" aria-pressed="false" aria-label="Deep Pink"></button><button data-color="Astral Purple" style="--c:#6E4E9E" title="Astral Purple"
+              class="" aria-pressed="false" aria-label="Astral Purple"></button><button data-color="Nocturnal Vapor" style="--c:#9AA0A6" title="Nocturnal Vapor"
+              class="" aria-pressed="false" aria-label="Nocturnal Vapor"></button></div></div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="pprice2">
+            <span class="lb">Best price</span>
+            <div class="pp-row"><b class="num">31 900 ֏</b><span class="pp-at">at AllSell</span></div>
+            <div class="pp-pills"><span class="hp good">13 100 ֏ less than the dearest shop</span><span class="hp good">Lowest since 20.09</span></div>
+            <div class="shopn">3 shops</div>
+            <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
+      style="left:0.0%" aria-label="AllSell · 31 900 ֏"><span class="rt">AllSell · 31 900 ֏</span></button><button type="button" class="rd"
+      style="left:46.6%" aria-label="iBolit · 38 000 ֏"><span class="rt">iBolit · 38 000 ֏</span></button><button type="button" class="rd top r"
+      style="left:100.0%" aria-label="REDstore · 45 000 ֏"><span class="rt">REDstore · 45 000 ֏</span></button></div>
+    <div class="ends2"><span><b class="num">31 900 ֏</b>AllSell</span>
+      <span><b class="num">45 000 ֏</b>REDstore</span></div>
+          </div>
+          <div class="pcta">
+            <a class="btn" href="#/offers/microsoft-xbox-controller">Check prices</a>
+            <button class="btn ghost" data-cmp-btn="microsoft-xbox-controller">Compare</button>
+          </div>
+        </div>
+        <section class="cwith"><h2>Compare with</h2><div class="cwrow"><div class="cwb"><a class="cwc" href="#/compare" data-cw="microsoft-xbox-controller|sony-ps5-dualsense">Compare</a><a class="cw" href="#/p/sony-ps5-dualsense">
+      <img src="images/thumb/sony-ps5-dualsense__alpine-green-517aacc210d4.webp" alt="Sony DualSense Wireless Controller" width="64" height="64" loading="lazy" decoding="async">
+      <span class="cwt"><em>Alternative</em><b>Sony DualSense Wireless Controller</b><span class="num">34 900 ֏</span><span class="cwd num up">+3 000 ֏</span></span></a></div></div></section>
+      </div>
+    </div>
+
+    <h2 class="sh" id="buy">Prices in Armenian shops <em>3</em></h2>
+    <ol class="olist" id="offList">
+      <li><a class="orow best" href="https://allsell.am/en/xbox-x-s-controller" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">01</span>
+    <span class="sh">AllSell</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 10.10</i></span>
+    <span class="pr num">31 900 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">Best</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://ibolit.mobi/product/xbox-wireless-controller-robot-shock-blue/" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">02</span>
+    <span class="sh">iBolit</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">38 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+6 100 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li><li><a class="orow" href="https://redstore.am/en/product/xbox-wireless-controller-shock-blue" target="_blank" rel="noopener noreferrer">
+    <span class="rk num">03</span>
+    <span class="sh">REDstore</span>
+    <!-- Every axis the buyer is choosing between, in one order on every row: screen, capacity,
+         memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
+         two rows at different prices with nothing on them to say why. Anything the shop did not
+         state is simply absent rather than guessed at. -->
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 11.10</i></span>
+    <span class="pr num">45 000 ֏</span>
+    <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
+         "stock not known" said nothing at all, so the column was two thirds noise. What a reader
+         is here for is the cheapest price and how much every other shop adds to it. -->
+    <span class="od num">+13 100 ֏</span>
+    <span class="ar">Go to shop<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></span></a></li>
+    </ol>
+    <p class="allofflink"><a href="#/offers/microsoft-xbox-controller">All 19 offers from 6 shops →</a></p>
+    <p class="note">Prices taken from the shops’ own sites · Updated 11.10.2026</p>
+
+    
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">31 900<span class="d"> ֏</span></b><span class="hp good">Lowest since 20.09</span></div>
+      <p class="hist-sub">Lowest since 20.09: 31 900 ֏ on 20.09
+        · cheapest shop each day, Microsoft Xbox Wireless Controller</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, Microsoft Xbox Wireless Controller: 31 900 → 31 900 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
+
+    <h2 class="sh">Full specs</h2>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>Released</dt><dd>—</dd></div></dl></section></div>
+
+  </div></main>
 <footer class="ft"><div class="shell" id="foot"><b>Better.am</b><span>Գները վերցված են խանութների կայքերից · Թարմացվել է 11.10.2026</span><span class="ft-note">Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում</span><span class="ft-links"><a href="#/contact">Կապ</a><a href="#/privacy">Գաղտնիություն</a><a href="#/terms">Օգտագործման պայմաններ</a></span></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 
-<script defer src="data/site-boot.js?v=393ef226fd" data-src="data/site-products.js?v=8043b288be data/site-prices.js?v=4fcb240660 data/site-app.js?v=837a18bffb"></script>
+<script defer src="data/site-boot.js?v=e989f95287" data-src="data/site-products.js?v=5ac6acbc0e data/site-prices.js?v=4fcb240660 data/site-app.js?v=cafb73a291"></script>
 
 </body></html>
