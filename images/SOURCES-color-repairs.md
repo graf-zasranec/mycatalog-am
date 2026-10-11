@@ -1706,3 +1706,9 @@
 - xiaomi-mijia-smart-air-purifier-6__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/23_item_sg/25/09/2025/df9a45bf11f1753f2d665b185614d70c.png; product 526x1178.
 
 - xiaomi-semi-automatic-espresso-machine-bhr9798eu__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/775_operatorx_operatorx_xm/02/02/2026/154c4f2362c911192c7492a6568615ae.png; product 1044x1176.
+
+- lenovo-ideapad-slim-3-15-3-i7-13620h-83k10032rk__main.webp: official maker photo, transparent original; intel badge removed from previous cut; product 832x691.
+
+- xiaomi-smart-air-fryer-6-5l__main.webp: web photo, background removed with PhotoRoom; https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/6/1/612102.jpg; product 735x829.
+
+- xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu__main.webp: web photo, background removed with PhotoRoom; https://nout.am/storage/products/MPebbafe74f7a644/base_large.webp; product 496x766.
