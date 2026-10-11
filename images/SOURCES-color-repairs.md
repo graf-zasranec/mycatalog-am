@@ -1698,3 +1698,11 @@
 - jbl-clip-4-squad__main.webp: web photo, background removed with PhotoRoom; https://cdn11.bigcommerce.com/s-ljmuy6/images/stencil/1280x1280/products/6416/30308/jbl-clip4-camo-bluetooth-speaker__86974.1702088665.jpg?c=2; product 807x1251.
 
 - sony-wf-c700n-wz-e__main.webp: web photo, background removed with PhotoRoom; https://m.media-amazon.com/images/I/61m34PGPpsL.jpg; product 1830x1809.
+
+- electrolux-air-fryer-eaf7b__main.webp: web photo, background removed with PhotoRoom; https://static.4u.am/origin/product/1024/0018028_14636.png; product 1215x1277.
+
+- flyingvoice-sr3000-5g__main.webp: web photo, background removed with PhotoRoom; https://flyingvoice.com.ru/upload/iblock/dca/coyqi3w5eg9swuchpzzg36kc7z40dxl6.png; product 542x763.
+
+- xiaomi-mijia-smart-air-purifier-6__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/23_item_sg/25/09/2025/df9a45bf11f1753f2d665b185614d70c.png; product 526x1178.
+
+- xiaomi-semi-automatic-espresso-machine-bhr9798eu__main.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/775_operatorx_operatorx_xm/02/02/2026/154c4f2362c911192c7492a6568615ae.png; product 1044x1176.
