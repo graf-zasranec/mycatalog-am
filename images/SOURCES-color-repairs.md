@@ -1822,3 +1822,21 @@
 - honor-x9b__midnight-black.webp: web photo, background removed with PhotoRoom; https://techcart.com.au/wp-content/uploads/2023/11/75939-Huawei-Honor-X9b-5G-256GB12GB-Midnight-Black.png; product 727x775.
 
 - xiaomi-redmi-note-15-pro-plus-5g__brown.webp: web photo, background removed with PhotoRoom; https://mobiltel.com.tr/file/2026/04/2547.jpg; product 683x755.
+
+- oneplus-nord-ce4__main.webp: web photo, background removed with PhotoRoom; recut of previous photo (podium removed); product 854x1098.
+
+- poco-f7-pro__black.webp: web photo, background removed with PhotoRoom; https://www.timobile.bg/wp-content/uploads/2025/05/70001-xiaomi-poco-f7-pro-2-600x930.jpg; product 600x930.
+
+- poco-f7-pro__silver.webp: web photo, background removed with PhotoRoom; https://welectronics.com/images/stories/virtuemart/product/Xiaomi Poco F7 Pro silver9.jpg; product 645x1000.
+
+- xiaomi-14t__blue.webp: web photo, background removed with PhotoRoom; https://welectronics.com/images/stories/virtuemart/product/xiaomi14tblue6.png; product 1404x1708.
+
+- xiaomi-14t__gray.webp: web photo, background removed with PhotoRoom; https://www.xiaomistore.tn/wp-content/uploads/2024/11/Xiaomi-14T-Titan-Gray.png; product 1088x1293.
+
+- xiaomi-poco-f5__black.webp: web photo, background removed with PhotoRoom; https://i02.appmifile.com/783_item_id_poco/16/06/2023/3c67f2e88fafb9537ae11b6063ac3d79.png (black pair cropped from group shot); product 721x1298.
+
+- honor-400-pro__black.webp: Gemini sharpened (detail only, checked against original) then PhotoRoom cut; product 1390x1775.
+
+- oneplus-nord-6__silver.webp: Gemini sharpened (detail only, checked against original) then PhotoRoom cut; product 1562x1863.
+
+- xiaomi-poco-x8-pro-max__black.webp: PhotoRoom cut, https://cdn.beebom.com/mobile/poco-x8-pro-max-front-and-back1.png; product 804x899.
