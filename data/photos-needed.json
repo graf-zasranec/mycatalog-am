@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-10",
+ "generated": "2026-10-11",
  "floorPx": 700,
  "note": "too small needs a larger original, not an enlargement",
  "total": 1603,
@@ -11,7 +11,7 @@
    "brand": "Xiaomi",
    "name": "Redmi Buds 6 Play",
    "category": "headphones",
-   "shops": 6,
+   "shops": 7,
    "query": "Xiaomi Redmi Buds 6 Play",
    "what": "too small",
    "width": 608
@@ -21,7 +21,7 @@
    "brand": "Xiaomi",
    "name": "Redmi Note 14S",
    "category": "phone",
-   "shops": 6,
+   "shops": 7,
    "query": "Xiaomi Redmi Note 14S",
    "what": "too small",
    "width": 635
@@ -31,7 +31,7 @@
    "brand": "Honor",
    "name": "X9d",
    "category": "phone",
-   "shops": 5,
+   "shops": 6,
    "query": "Honor X9d",
    "what": "too small",
    "width": 679
@@ -41,7 +41,7 @@
    "brand": "Samsung",
    "name": "Galaxy Buds FE",
    "category": "headphones",
-   "shops": 5,
+   "shops": 6,
    "query": "Samsung Galaxy Buds FE",
    "what": "too small",
    "width": 612
@@ -61,7 +61,7 @@
    "brand": "Honor",
    "name": "400",
    "category": "phone",
-   "shops": 3,
+   "shops": 4,
    "query": "Honor 400",
    "what": "too small",
    "width": 634
@@ -71,7 +71,7 @@
    "brand": "Honor",
    "name": "400 Pro",
    "category": "phone",
-   "shops": 3,
+   "shops": 4,
    "query": "Honor 400 Pro",
    "what": "too small",
    "width": 686
@@ -81,10 +81,40 @@
    "brand": "Honor",
    "name": "Choice Earbuds X7 Lite",
    "category": "headphones",
-   "shops": 3,
+   "shops": 4,
    "query": "Honor Choice Earbuds X7 Lite",
    "what": "too small",
    "width": 665
+  },
+  {
+   "id": "xiaomi-smart-air-fryer-6-5l",
+   "brand": "Xiaomi",
+   "name": "Smart Air Fryer 6.5L",
+   "category": "appliance",
+   "shops": 4,
+   "query": "Xiaomi Smart Air Fryer 6.5L",
+   "what": "too small",
+   "width": 234
+  },
+  {
+   "id": "honor-200",
+   "brand": "Honor",
+   "name": "200",
+   "category": "phone",
+   "shops": 3,
+   "query": "Honor 200",
+   "what": "too small",
+   "width": 650
+  },
+  {
+   "id": "honor-200-lite-5g",
+   "brand": "Honor",
+   "name": "200 Lite 5G",
+   "category": "phone",
+   "shops": 3,
+   "query": "Honor 200 Lite 5G",
+   "what": "too small",
+   "width": 670
   },
   {
    "id": "lenovo-ideapad-slim-3-15ian8",
@@ -97,6 +127,16 @@
    "width": 672
   },
   {
+   "id": "samsung-galaxy-a35",
+   "brand": "Samsung",
+   "name": "Galaxy A35",
+   "category": "phone",
+   "shops": 3,
+   "query": "Samsung Galaxy A35",
+   "what": "too small",
+   "width": 467
+  },
+  {
    "id": "xiaomi-buds-6-lite",
    "brand": "Xiaomi",
    "name": "Redmi Buds 6 Lite",
@@ -105,16 +145,6 @@
    "query": "Xiaomi Redmi Buds 6 Lite",
    "what": "too small",
    "width": 611
-  },
-  {
-   "id": "xiaomi-smart-air-fryer-6-5l",
-   "brand": "Xiaomi",
-   "name": "Smart Air Fryer 6.5L",
-   "category": "appliance",
-   "shops": 3,
-   "query": "Xiaomi Smart Air Fryer 6.5L",
-   "what": "too small",
-   "width": 234
   },
   {
    "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
@@ -127,6 +157,26 @@
    "width": 636
   },
   {
+   "id": "xiaomi-smart-band-7-pro",
+   "brand": "Xiaomi",
+   "name": "Smart Band 7 Pro",
+   "category": "watch",
+   "shops": 3,
+   "query": "Xiaomi Smart Band 7 Pro",
+   "what": "too small",
+   "width": 605
+  },
+  {
+   "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
+   "brand": "Xiaomi",
+   "name": "Smart Double Stack Air Fryer 12L BHR0883EU",
+   "category": "appliance",
+   "shops": 3,
+   "query": "Xiaomi Smart Double Stack Air Fryer 12L BHR0883EU",
+   "what": "too small",
+   "width": 234
+  },
+  {
    "id": "garmin-epix-pro-sapphire-edition-51-mm",
    "brand": "Garmin",
    "name": "epix Pro – Sapphire Edition",
@@ -135,26 +185,6 @@
    "query": "Garmin epix Pro – Sapphire Edition",
    "what": "too small",
    "width": 684
-  },
-  {
-   "id": "honor-200",
-   "brand": "Honor",
-   "name": "200",
-   "category": "phone",
-   "shops": 2,
-   "query": "Honor 200",
-   "what": "too small",
-   "width": 650
-  },
-  {
-   "id": "honor-200-lite-5g",
-   "brand": "Honor",
-   "name": "200 Lite 5G",
-   "category": "phone",
-   "shops": 2,
-   "query": "Honor 200 Lite 5G",
-   "what": "too small",
-   "width": 670
   },
   {
    "id": "lenovo-ideapad-5-2in1-16",
@@ -167,14 +197,84 @@
    "width": 605
   },
   {
-   "id": "samsung-galaxy-a35",
-   "brand": "Samsung",
-   "name": "Galaxy A35",
-   "category": "phone",
+   "id": "lg-55qned86t6a",
+   "brand": "LG",
+   "name": "55QNED86T6A",
+   "category": "tv",
    "shops": 2,
-   "query": "Samsung Galaxy A35",
+   "query": "LG 55QNED86T6A",
    "what": "too small",
-   "width": 467
+   "width": 669
+  },
+  {
+   "id": "lg-65qned86t6a",
+   "brand": "LG",
+   "name": "65QNED86T6A",
+   "category": "tv",
+   "shops": 2,
+   "query": "LG 65QNED86T6A",
+   "what": "too small",
+   "width": 684
+  },
+  {
+   "id": "lg-oled83c4rla",
+   "brand": "LG",
+   "name": "OLED83C4RLA",
+   "category": "tv",
+   "shops": 2,
+   "query": "LG OLED83C4RLA",
+   "what": "too small",
+   "width": 675
+  },
+  {
+   "id": "nothing-cmf-pro-2",
+   "brand": "Nothing",
+   "name": "CMF Watch Pro 2",
+   "category": "watch",
+   "shops": 2,
+   "query": "Nothing CMF Watch Pro 2",
+   "what": "too small",
+   "width": 619
+  },
+  {
+   "id": "philips-airfryer-hd9252-90",
+   "brand": "Philips",
+   "name": "Airfryer HD9252/90",
+   "category": "appliance",
+   "shops": 2,
+   "query": "Philips Airfryer HD9252/90",
+   "what": "too small",
+   "width": 699
+  },
+  {
+   "id": "samsung-qe65qn85dbuxru",
+   "brand": "Samsung",
+   "name": "Neo QLED QN85D (QE65QN85DBUXRU)",
+   "category": "tv",
+   "shops": 2,
+   "query": "Samsung Neo QLED QN85D (QE65QN85DBUXRU)",
+   "what": "too small",
+   "width": 682
+  },
+  {
+   "id": "samsung-qe65s90dauxru",
+   "brand": "Samsung",
+   "name": "OLED S90D (QE65S90DAUXRU)",
+   "category": "tv",
+   "shops": 2,
+   "query": "Samsung OLED S90D (QE65S90DAUXRU)",
+   "what": "too small",
+   "width": 682
+  },
+  {
+   "id": "samsung-qe75qn90cauxru",
+   "brand": "Samsung",
+   "name": "Neo QLED QN90C (QE75QN90CAUXRU)",
+   "category": "tv",
+   "shops": 2,
+   "query": "Samsung Neo QLED QN90C (QE75QN90CAUXRU)",
+   "what": "too small",
+   "width": 699
   },
   {
    "id": "samsung-qe85q60dauxru",
@@ -185,6 +285,16 @@
    "query": "Samsung QLED Q60D (QE85Q60DAUXRU)",
    "what": "too small",
    "width": 686
+  },
+  {
+   "id": "sennheiser-hd-599",
+   "brand": "Sennheiser",
+   "name": "HD 599",
+   "category": "headphones",
+   "shops": 2,
+   "query": "Sennheiser HD 599",
+   "what": "too small",
+   "width": 614
   },
   {
    "id": "tcl-43v6c",
@@ -247,6 +357,16 @@
    "width": 606
   },
   {
+   "id": "xiaomi-redmi-5",
+   "brand": "Xiaomi",
+   "name": "Redmi Buds 5",
+   "category": "headphones",
+   "shops": 2,
+   "query": "Xiaomi Redmi Buds 5",
+   "what": "too small",
+   "width": 672
+  },
+  {
    "id": "xiaomi-redmi-a2plus",
    "brand": "Xiaomi",
    "name": "Redmi A2+",
@@ -255,6 +375,16 @@
    "query": "Xiaomi Redmi A2+",
    "what": "too small",
    "width": 621
+  },
+  {
+   "id": "xiaomi-redmi-note-13-pro-plus",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 13 Pro+ 5G",
+   "category": "phone",
+   "shops": 2,
+   "query": "Xiaomi Redmi Note 13 Pro+ 5G",
+   "what": "too small",
+   "width": 686
   },
   {
    "id": "xiaomi-redmi-pad",
@@ -267,24 +397,14 @@
    "width": 688
   },
   {
-   "id": "xiaomi-smart-band-7-pro",
+   "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
    "brand": "Xiaomi",
-   "name": "Smart Band 7 Pro",
+   "name": "Smart Band 8",
    "category": "watch",
    "shops": 2,
-   "query": "Xiaomi Smart Band 7 Pro",
+   "query": "Xiaomi Smart Band 8",
    "what": "too small",
-   "width": 605
-  },
-  {
-   "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
-   "brand": "Xiaomi",
-   "name": "Smart Double Stack Air Fryer 12L BHR0883EU",
-   "category": "appliance",
-   "shops": 2,
-   "query": "Xiaomi Smart Double Stack Air Fryer 12L BHR0883EU",
-   "what": "too small",
-   "width": 234
+   "width": 692
   },
   {
    "id": "acer-nitro-lite",
@@ -467,36 +587,6 @@
    "width": 646
   },
   {
-   "id": "lg-55qned86t6a",
-   "brand": "LG",
-   "name": "55QNED86T6A",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG 55QNED86T6A",
-   "what": "too small",
-   "width": 669
-  },
-  {
-   "id": "lg-65qned86t6a",
-   "brand": "LG",
-   "name": "65QNED86T6A",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG 65QNED86T6A",
-   "what": "too small",
-   "width": 684
-  },
-  {
-   "id": "lg-oled83c4rla",
-   "brand": "LG",
-   "name": "OLED83C4RLA",
-   "category": "tv",
-   "shops": 1,
-   "query": "LG OLED83C4RLA",
-   "what": "too small",
-   "width": 675
-  },
-  {
    "id": "msi-cyborg-15-a13uc-821xae",
    "brand": "MSI",
    "name": "Cyborg 15 A13UC-821XAE",
@@ -515,16 +605,6 @@
    "query": "MSI Cyborg 15 A13VE-218US",
    "what": "too small",
    "width": 667
-  },
-  {
-   "id": "nothing-cmf-pro-2",
-   "brand": "Nothing",
-   "name": "CMF Watch Pro 2",
-   "category": "watch",
-   "shops": 1,
-   "query": "Nothing CMF Watch Pro 2",
-   "what": "too small",
-   "width": 619
   },
   {
    "id": "nothing-ear-open-b182",
@@ -587,46 +667,6 @@
    "width": 674
   },
   {
-   "id": "samsung-qe65qn85dbuxru",
-   "brand": "Samsung",
-   "name": "Neo QLED QN85D (QE65QN85DBUXRU)",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung Neo QLED QN85D (QE65QN85DBUXRU)",
-   "what": "too small",
-   "width": 682
-  },
-  {
-   "id": "samsung-qe65s90dauxru",
-   "brand": "Samsung",
-   "name": "OLED S90D (QE65S90DAUXRU)",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung OLED S90D (QE65S90DAUXRU)",
-   "what": "too small",
-   "width": 682
-  },
-  {
-   "id": "samsung-qe75qn90cauxru",
-   "brand": "Samsung",
-   "name": "Neo QLED QN90C (QE75QN90CAUXRU)",
-   "category": "tv",
-   "shops": 1,
-   "query": "Samsung Neo QLED QN90C (QE75QN90CAUXRU)",
-   "what": "too small",
-   "width": 699
-  },
-  {
-   "id": "sennheiser-hd-599",
-   "brand": "Sennheiser",
-   "name": "HD 599",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Sennheiser HD 599",
-   "what": "too small",
-   "width": 614
-  },
-  {
    "id": "sony-playstation-dualsense-ps5",
    "brand": "Sony",
    "name": "Playstation DualSense PS5",
@@ -677,16 +717,6 @@
    "width": 524
   },
   {
-   "id": "xiaomi-redmi-5",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 5",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 5",
-   "what": "too small",
-   "width": 672
-  },
-  {
    "id": "xiaomi-redmi-note-10s",
    "brand": "Xiaomi",
    "name": "Redmi Note 10S",
@@ -697,16 +727,6 @@
    "width": 608
   },
   {
-   "id": "xiaomi-redmi-note-13-pro-plus",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 13 Pro+ 5G",
-   "category": "phone",
-   "shops": 1,
-   "query": "Xiaomi Redmi Note 13 Pro+ 5G",
-   "what": "too small",
-   "width": 686
-  },
-  {
    "id": "xiaomi-semi-automatic-espresso-machine-bhr9798eu",
    "brand": "Xiaomi",
    "name": "Semi-automatic Espresso Machine BHR9798EU",
@@ -715,16 +735,6 @@
    "query": "Xiaomi Semi-automatic Espresso Machine BHR9798EU",
    "what": "too small",
    "width": 441
-  },
-  {
-   "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
-   "brand": "Xiaomi",
-   "name": "Smart Band 8",
-   "category": "watch",
-   "shops": 1,
-   "query": "Xiaomi Smart Band 8",
-   "what": "too small",
-   "width": 692
   },
   {
    "id": "xiaomi-smart-watch-70mai-saphir",
@@ -755,16 +765,6 @@
    "query": "Honor X5b Plus",
    "what": "too small",
    "width": 616
-  },
-  {
-   "id": "philips-airfryer-hd9252-90",
-   "brand": "Philips",
-   "name": "Airfryer HD9252/90",
-   "category": "appliance",
-   "shops": 0,
-   "query": "Philips Airfryer HD9252/90",
-   "what": "too small",
-   "width": 699
   },
   {
    "id": "tefal-easy-fry-compact-ey101815",
