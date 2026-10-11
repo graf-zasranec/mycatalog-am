@@ -658,6 +658,61 @@ const HAY = new WeakMap();
 const hay = p => { let h = HAY.get(p);
   if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase());
   return h; };
+const SEARCH_CACHE = new Map();
+const searchWords = q => String(q || '').normalize('NFKC').toLowerCase().match(/[\p{L}]+|\d+/gu) || [];
+function typoDistance(a, b, limit) {
+  if (Math.abs(a.length - b.length) > limit) return limit + 1;
+  let prev = Array.from({length:b.length + 1}, (_, i) => i), before;
+  for (let i = 1; i <= a.length; i++) {
+    const row = [i];
+    for (let j = 1; j <= b.length; j++) {
+      row[j] = Math.min(row[j-1] + 1, prev[j] + 1, prev[j-1] + (a[i-1] !== b[j-1]));
+      if (i > 1 && j > 1 && a[i-1] === b[j-2] && a[i-2] === b[j-1]) row[j] = Math.min(row[j], before[j-2] + 1);
+    }
+    if (Math.min(...row) > limit) return limit + 1;
+    before = prev; prev = row;
+  }
+  return prev[b.length];
+}
+function searchMatches(q) {
+  const key = String(q || '').normalize('NFKC').trim().toLowerCase().slice(0, 120);
+  if (SEARCH_CACHE.has(key)) return SEARCH_CACHE.get(key);
+  const words = searchWords(key), pool = DATA.filter(hasReal), hits = new Map();
+  const exactWord = (w, text, tokens) => /^\d+$/.test(w) ? tokens.includes(w) : text.includes(w);
+  for (const p of pool) {
+    const text = hay(p), modelTokens = searchWords(fullName(p));
+    if (words.every(w => exactWord(w, text, modelTokens))) hits.set(p.id, 0);
+  }
+  let fuzzy = false;
+  if (!hits.size && words.length && words.length <= 8) {
+    fuzzy = true;
+    for (const p of pool) {
+      const text = hay(p), tokens = searchWords(text), modelTokens = searchWords(fullName(p)); let score = 0;
+      for (const w of words) {
+        if (exactWord(w, text, modelTokens)) continue;
+        // Model numbers and short words must match; only names earn typo correction.
+        if (/^\d+$/.test(w) || w.length < 4) { score = Infinity; break; }
+        const limit = w.length >= 7 ? 2 : 1;
+        const distance = Math.min(...tokens.filter(v => !/\d/.test(v)).map(v => typoDistance(w, v, limit)));
+        if (distance > limit) { score = Infinity; break; }
+        score += distance;
+      }
+      if (Number.isFinite(score)) hits.set(p.id, score);
+    }
+  }
+  const answer = {hits, fuzzy};
+  if (SEARCH_CACHE.size >= 8) SEARCH_CACHE.delete(SEARCH_CACHE.keys().next().value);
+  SEARCH_CACHE.set(key, answer);
+  return answer;
+}
+const didYouMean = () => ({hy:'Գուցե նկատի ունեիք՝',ru:'Возможно, вы имели в виду:',en:'Did you mean:'})[st.lang] || 'Did you mean:';
+function searchHint(q) {
+  if (!String(q || '').trim()) return '';
+  const match = searchMatches(q);
+  if (!match.fuzzy || !match.hits.size) return '';
+  return `<p class="search-hint">${esc(didYouMean())} ${suggestFor(q).slice(0,3).map(p =>
+    `<button type="button" class="chip" data-correct="${esc(fullName(p))}">${esc(fullName(p))}</button>`).join(' ')}</p>`;
+}
 function hayMatch(p, q) {
   // Nothing in Armenia sells it today, so it has no business in a price-comparison list: no card
   // in the grid, no row in the search box, no entry in a category count. Its PAGE stays, and so
@@ -665,10 +720,8 @@ function hayMatch(p, q) {
   // arriving from a search engine should land on what they looked for rather than a 404. It comes
   // back on its own the day any shop stocks it again, because this asks the offers, not a list.
   if (!hasReal(p)) return false;
-  const words = String(q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
-  if (!words.length) return true;
-  const h = hay(p);
-  return words.every(w => h.includes(w));
+  if (!String(q || '').trim()) return true;
+  return searchMatches(q).hits.has(p.id);
 }
 /* --- what a product can be asked ---------------------------------------------------- */
 // Every one of these reads a fact the catalogue already carries. Nothing is invented: a phone
@@ -1777,6 +1830,7 @@ function catalogView() {
     ${filterBar()}
     <div class="chips" id="chips"></div>
     <div class="resbar" id="results"><${hd}>${esc(title)}</${hd}><span class="cnt" id="rescnt"></span></div>
+    <div id="searchhint" aria-live="polite">${searchHint(st.q)}</div>
     <div class="grid" id="gridbox" data-nosnippet></div>
     <div id="pager"></div>
   </div>`;
@@ -1831,6 +1885,7 @@ let lastSig = null;
 function refresh() {
   setTimeout(hydrateCardPhotos,0);
   const all = results(), box = $('#gridbox');
+  const hint = $('#searchhint'); if (hint) hint.innerHTML = searchHint(st.q);
   if (!box) return;
   const sig = JSON.stringify([st.cat, st.q, st.pmin, st.pmax, st.scrmin, st.touch, st.sort,
     ...Object.keys(FILT).map(k => FILT[k].arr ? st[FILT[k].arr] : st[k])]);
@@ -3176,6 +3231,8 @@ document.addEventListener('click', e => {
   }
   const fm = e.target.closest('[data-fmore]');
   if (fm) { st.fopen = !st.fopen; save(); render(true); return; }
+  const correction = e.target.closest('[data-correct]');
+  if (correction) { st.q = correction.dataset.correct; $('#q').value = st.q; submitSearch(); return; }
   if (e.target.closest('#qgo') || e.target.closest('[data-sgall]')) { submitSearch(); return; }
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
@@ -3253,7 +3310,8 @@ function suggestFor(q) {
   // put the Pro and the Slim above a dozen controllers and headsets, and it used to do the
   // opposite - cheapest first meant every accessory outranked the console it plugs into.
   const w = q.trim().toLowerCase();
-  hit.sort((a, b) => (hay(b).startsWith(w) - hay(a).startsWith(w))
+  const scores = searchMatches(q).hits;
+  hit.sort((a, b) => (scores.get(a.id) - scores.get(b.id)) || (hay(b).startsWith(w) - hay(a).startsWith(w))
     || (b.popularity - a.popularity) || bestOf(a) - bestOf(b));
   return hit.slice(0, SUGG_MAX);
 }
@@ -3270,7 +3328,7 @@ function paintSuggest() {
     setExpanded(!box.hidden);
     return;
   }
-  box.innerHTML = list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
+  box.innerHTML = (searchMatches(st.q).fuzzy ? `<p class="sg-none">${esc(didYouMean())}</p>` : '') + list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
       <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
       <span class="sg-n">${esc(fullName(p))}${nameTag(p)}</span>
       <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')

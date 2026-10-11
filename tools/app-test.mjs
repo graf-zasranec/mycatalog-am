@@ -45,7 +45,7 @@ const stub = {
 // hand the module its data the same way build.mjs does, then ask for the pieces under test
 const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
-const exports_ = `; return { hayMatch, bestTier, visibleOffers, matches, offersFor, bestOf,
+const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
   offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
   GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
@@ -81,6 +81,15 @@ is(app.hayMatch(fold8, 'samsung fold'), true, 'two words, not contiguous, still 
 is(app.hayMatch(fold8, 'fold samsung'), true, 'word order does not matter');
 is(app.hayMatch(fold8, ''), true, 'an empty query matches everything');
 is(app.hayMatch(fold8, 'samsung flip'), false, 'a word that is absent fails the whole query');
+is(app.hayMatch(fold8, 'samusng fold'), true, 'transposed brand letters suggest the correct model');
+is(app.hayMatch(fold8, 'samsng fold'), true, 'one missing brand letter still finds the product');
+is(app.hayMatch(fold8, 'samusng fold 9'), false, 'typo correction never changes a model number');
+is(app.hayMatch(phones.find(p => p.id === 'apple-iphone-16-pro'), 'iphnoe 18 pro'), false,
+  'a chipset number cannot substitute for the requested model number');
+is(app.searchMatches('samsung fold').fuzzy, false, 'exact queries do not mix in fuzzy matches');
+is(app.suggestFor('zzzzzzzzzz').length, 0, 'unrelated text does not invent suggestions');
+is(app.typoDistance('iphnoe', 'iphone', 1), 1, 'adjacent transposition counts as one typo');
+is(app.hayMatch(fold8, 'ＳＡＭＳＵＮＧ fold'), true, 'Unicode equivalent letters normalize correctly');
 
 /* --- savings: the two prices must be the same thing ------------------------------------ */
 const tierOf = offs => {
