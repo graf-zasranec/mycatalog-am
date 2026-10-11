@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test": "node scrape.mjs --selftest && node tools/app-test.mjs",
+    "test": "node tools/compact-data-test.mjs && node scrape.mjs --selftest && node tools/app-test.mjs",
     "test:browser": "node tools/browser-check.mjs",
     "refresh": "node tools/refresh.mjs"
   },

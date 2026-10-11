@@ -2,6 +2,11 @@
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
+/* Deep hash routes reserve the viewport before the application loads. */
+.route-pending #masthero{display:none!important}
+.route-pending #main{min-height:calc(100svh - 130px)}
+.route-pending #main>*{display:none!important}
+.route-pending #main::before{content:attr(data-loading);display:block;padding:48px 24px;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
 /* ================= tokens ================= */
 :root{
   --bg:#F7F3EC; --surface:#FFFFFF; --surface2:#F1EBE1; --shot:#EFE9DF;

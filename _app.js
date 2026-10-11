@@ -595,8 +595,36 @@ const updatedOn = () => P.generated ? P.generated.slice(8, 10) + '.' + P.generat
 // The price history the served build leaves out, fetched the first time somebody asks for a
 // product page and never on the front page. Once is enough per tab; a failure is silent on
 // purpose - the page reads correctly without it, the price chart simply does not appear.
+// Detail chunks share requests across products; failed requests remain retryable.
+const detailRequests = new Map();
+const detailReady = p => typeof DETAIL_CHUNKS === 'undefined' || (window.betterDetailChunks || []).includes(p._detailChunk);
+function ensureDetail(p) {
+  if (detailReady(p)) return Promise.resolve();
+  const n = p._detailChunk;
+  if (detailRequests.has(n)) return detailRequests.get(n);
+  const promise = new Promise((resolve,reject) => {
+    const script = document.createElement('script');script.src=DETAIL_CHUNKS[n];
+    script.onload=resolve;script.onerror=()=>{script.remove();reject(new Error('Detail unavailable'))};
+    document.head.appendChild(script);
+  }).finally(()=>detailRequests.delete(n));
+  detailRequests.set(n,promise);return promise;
+}
+function hydrateCardPhotos() {
+  if (typeof DETAIL_CHUNKS === 'undefined') return;
+  const cards = [...document.querySelectorAll('.pcard[data-id]')];
+  const needed = cards.map(el=>byId(el.dataset.id)).filter(p=>p && p.colors?.length>1 && !CIMG[p.id]);
+  if (!needed.length) return;
+  Promise.all(needed.map(ensureDetail)).then(()=>{
+    for (const el of cards) {
+      if (!el.isConnected || el.querySelector('.cdots')) continue;
+      const p=byId(el.dataset.id), shot=el.querySelector('.pshot');
+      if(p && shot) shot.insertAdjacentHTML('beforeend',cdotsHTML(p));
+    }
+  }).catch(()=>{});
+}
 let lazyDone = false;
 function loadLazy() {
+  if (typeof DETAIL_CHUNKS !== 'undefined') return;
   if (lazyDone || typeof LAZYDATA === 'undefined' || !LAZYDATA) return;
   lazyDone = true;
   const read = url => fetch(url).then(r => r.ok ? r.json() : null).catch(() => null);
@@ -1787,6 +1815,7 @@ function pager(total) {
 let qT;
 let lastSig = null;
 function refresh() {
+  setTimeout(hydrateCardPhotos,0);
   const all = results(), box = $('#gridbox');
   if (!box) return;
   const sig = JSON.stringify([st.cat, st.q, st.pmin, st.pmax, st.scrmin, st.touch, st.sort,
@@ -2857,6 +2886,18 @@ function render(keepScroll) {
   const m = h.match(/^\/p\/(.+)$/);
   let mo, restoreY = null;
   const main = $('#main');
+  const routeMatch = m || h.match(/^\/offers\/(.+)$/);
+  const routeProduct = routeMatch && byId(routeMatch[1]);
+  if(routeProduct && !detailReady(routeProduct)) {
+    document.documentElement.classList.add('route-pending');
+    main.dataset.loading=({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[st.lang];
+    ensureDetail(routeProduct).then(()=>{if(location.hash.replace(/^#/,'')===h)render(keepScroll)}).catch(()=>{
+      if(location.hash.replace(/^#/,'')!==h)return;
+      document.documentElement.classList.remove('route-pending');
+      main.innerHTML=`<div class="shell empty"><h1>${esc(({hy:'Տվյալները չբեռնվեցին',ru:'Не удалось загрузить данные',en:'Could not load product data'})[st.lang])}</h1><button class="btn" data-detail-retry>${esc(({hy:'Կրկին փորձել',ru:'Повторить',en:'Retry'})[st.lang])}</button></div>`;
+    });
+    return;
+  }
   const initialHome = !painted && h === '/' && main.dataset.prerender === st.lang &&
     !st.q && !activeFilterCount() && !st.cmp.length && st.sort === 'popular' && st.page === 1;
   if (m && byId(m[1])) { const y = window.scrollY; main.innerHTML = detailView(byId(m[1])); document.title = fullName(byId(m[1])) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0); }
@@ -2901,6 +2942,7 @@ function render(keepScroll) {
     if (head) { head.tabIndex = -1; head.focus({ preventScroll: true }); }
   }
   painted = true;
+  document.documentElement.classList.remove('route-pending');
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
   const home = !m && !mc && !['/catalog', '/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
@@ -2911,6 +2953,7 @@ function render(keepScroll) {
   paintHist();
   canonicalLinks();
   moneyFx();
+  hydrateCardPhotos();
 }
 
 /* ================= money animations ================= */
@@ -3303,4 +3346,7 @@ window.addEventListener('hashchange', e => {
 let vtFrom = null;
 // only a click that opens the product arms the morph - not the card's compare button
 document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('.pcard a[href^="#/p/"], .pcard a[data-route^="#/p/"]'); vtFrom = a ? a.closest('.pcard').querySelector('.pimg') : null; }, true);
+
+document.addEventListener('click',e=>{if(e.target.closest('[data-detail-retry]'))render(true)});
+
 render();

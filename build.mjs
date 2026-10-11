@@ -12,6 +12,7 @@ import { pairs } from './tools/pairs.mjs';
 import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender } from './tools/prerender.mjs';
+import { pack, unpackSource } from './tools/compact-data.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const STR = { hy: {}, ru: {}, en: {} };
@@ -403,7 +404,7 @@ const FAVICON = '/images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(ROUTE_START_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
 <meta name="description" content="${SEO.desc}">
@@ -432,6 +433,7 @@ const HEAD_OPEN = appJs => `<!doctype html>
 ${alts('')}
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <script>${THEME_JS}<\/script>
+<script>${ROUTE_START_JS}<\/script>
 ${COUNTER.tag}
 `;
 const HEAD_CLOSE = `</head><body>
@@ -462,10 +464,10 @@ function splitShell(shell) {
 }
 
 // rAF runs just before the first frame, the timeout just after it.
-const BOOT_JS = `(function(s){requestAnimationFrame(function(){setTimeout(function(){s.split(' ').forEach(function(u){var e=document.createElement('script');e.src=u;e.async=false;document.head.appendChild(e)})})})})(document.currentScript.dataset.src);\n`;
+const ROUTE_START_JS = `(function(){var h=location.hash;if(h.indexOf('#/')===0&&h!=='#/'){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();`;
+const BOOT_JS = rd('tools/site-boot.js');
+
 function writeBundle(file, content) {
-  // Replace complete generated bundles atomically; Windows file watchers can
-  // briefly hold the previous file open during an in-place rewrite.
   const temporary = file + '.tmp-' + process.pid;
   try { fs.writeFileSync(temporary, content); fs.renameSync(temporary, file); }
   finally { if (fs.existsSync(temporary)) fs.unlinkSync(temporary); }
@@ -503,7 +505,7 @@ function build({ inline, standalone }) {
     // THUMB() falls through to IMG().
 
   }
-  const imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
+  let imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
   const initial = prerender({DATA:phones, STR, PRICES, TERMS, HISTORY, COMING, PAGEONLY, MERGED, BLOG,
     DROPS, IMGDATA:main, THUMBDATA:thumb, COLORIMG:colors, COLORTHUMB:colorThumbs,
@@ -543,15 +545,33 @@ function build({ inline, standalone }) {
   const extrasBody = J({ compareWith: detailExtras.compareWith });
   const extrasUrl = 'data/product-extras.json?v=' + crypto.createHash('sha256').update(extrasBody).digest('hex').slice(0, 10);
   if (lazy) fs.writeFileSync('data/product-extras.json', extrasBody + '\n');
-  const products = `const DATA=${J(phones.map(({ summaryEn, sources, ...p }) => p))};\n`
-    + `const PBOX=${J(detailExtras.photoBoxes)};\n`
+  const compactJ = o => lazy ? `betterUnpack(${J(pack(o))})` : J(o);
+  const chunkSize = 48, chunkUrls = [];
+  const firstIds = new Set([...initial.main.matchAll(/data-id="([^"]+)"/g)].map(m => m[1]));
+  const pick = (map, ids) => Object.fromEntries([...ids].filter(id => map[id]).map(id => [id, map[id]]));
+  if (lazy) {
+    fs.mkdirSync('data/details', {recursive:true});
+    for (let start = 0; start < phones.length; start += chunkSize) {
+      const index = start / chunkSize, ids = new Set(phones.slice(start,start+chunkSize).map(p => p.id));
+      const payload = {offers:pick(PRICES.offers,ids), colors:pick(colors,ids), thumbs:pick(colorThumbs,ids),history:pick(HISTORY.points || {},ids),compareWith:pick(detailExtras.compareWith,ids)};
+      const body = `(()=>{const d=betterUnpack(${J(pack(payload))});Object.assign(PRICES.offers,d.offers);Object.assign(COLORIMG,d.colors);Object.assign(COLORTHUMB,d.thumbs);Object.assign(COMPARE_WITH,d.compareWith);Object.assign(window.betterDetailHistory ||= {},d.history);if(typeof HISTORY!=='undefined')Object.assign(HISTORY.points,d.history);(window.betterDetailChunks ||= []).push(${index});})();`;
+      const compact = transformSync(body,{minify:true,target:'es2020'}).code;
+      const f = `data/details/chunk-${index}.js`;
+      writeBundle(f,compact);
+      chunkUrls.push(f+'?v='+crypto.createHash('sha256').update(compact).digest('hex').slice(0,10));
+    }
+    imgdata = `const {IMGDATA,THUMBDATA,COLORIMG,COLORTHUMB}=\n${compactJ({IMGDATA:main,THUMBDATA:thumb,COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds)})};\n`;
+  }
+  const products = (lazy ? unpackSource : '') + `const DATA=${compactJ(phones.map(({ summaryEn, sources, ...p },i) => lazy ? {...p,_detailChunk:Math.floor(i/chunkSize)} : p))};\n`
+    + (lazy ? `const DETAIL_CHUNKS=${J(chunkUrls)};\n` + imgdata : '')
+    + `const PBOX=${compactJ(detailExtras.photoBoxes)};\n`
     + (lazy ? `let COMPARE_WITH={};\nconst DETAIL_DATA_URL=${J(extrasUrl)};\n`
       : `const COMPARE_WITH=${J(detailExtras.compareWith)};\n`);
   // Scraper evidence stays in prices.json; the browser uses the verified image maps,
   // never the shop's raw image URLs or titles. Don't download those a second time.
   const browserPrices = { ...PRICES, offers: Object.fromEntries(Object.entries(PRICES.offers || {}).map(([id, list]) =>
-    [id, list.map(({ image, title, ...offer }) => offer)])) };
-  const prices = `const PRICES=${J(browserPrices)};\nconst DROPS=${J(DROPS)};\n`;
+    [id, list.map(({ image, title, url, ...offer }) => lazy ? offer : {...offer,url})])) };
+  const prices = `const PRICES=${compactJ(browserPrices)};\nconst DROPS=${J(DROPS)};\n`;
   const urls = [];
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
@@ -563,7 +583,7 @@ function build({ inline, standalone }) {
   let appJs = '\n'
     + (lazy ? '' : products + prices)
     + `const STR=${J(STR)};\n`
-    + (lazy ? 'let HISTORY={points:{}};\nconst LAZYDATA=true;\n'
+    + (lazy ? 'let HISTORY={points:window.betterDetailHistory || {}};\nconst LAZYDATA=true;\n'
             : `const HISTORY=${J(HISTORY)};\nconst LAZYDATA=false;\n`)
     // Wrapping this in JSON.parse was tried and measured: 268 ms to interactive against 294 ms
     // for the literal, three loads each, same machine - 9% - and it cost 77 KB of backslashes.
@@ -572,8 +592,8 @@ function build({ inline, standalone }) {
     + `const COMING=${J(COMING)};\n`
     + `const PAGEONLY=${J(PAGEONLY)};\n`
     + `const MERGED=${J(MERGED)};\n`
-    + `const BLOG=${J(BLOG)};\n`
-    + imgdata + rd('_app.js') + '\n';
+    + `const BLOG=${compactJ(BLOG)};\n`
+    + (lazy ? '' : imgdata) + rd('_app.js') + '\n';
   // The CSP pins a sha256 of this script and the HTML parser normalises CRLF to LF before it
   // hashes. A Windows checkout with core.autocrlf=true hands us CRLF, so the hash written here
   // and the hash the browser computes disagree, the browser refuses to run the app at all, and
