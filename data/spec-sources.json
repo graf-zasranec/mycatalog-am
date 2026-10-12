@@ -93,5 +93,12 @@
     "value": "Metal",
     "source": "https://www.samsung.com/nz/tablets/galaxy-tab-a/galaxy-tab-a8-wifi-pink-gold-64gb-sm-x200nidexnz/",
     "verified": "Samsung explicitly describes a sleek metal body, 6.9mm. No RAM configuration inferred from a different capacity."
+  },
+  {
+    "id": "bose-quietcomfort-45-acoustic",
+    "field": "battery.life",
+    "value": "up to 24 hours",
+    "source": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/pressroom/2021/bose_updates_the_headphone_that_redefined_headphones/BOSE_INTRODUCES_QUIETCOMFORT_045-Australia_Final.pdf",
+    "verified": "Official QC45 launch press release explicitly states up to 24 hours; not QC Ultra or 2023 QuietComfort."
   }
 ]

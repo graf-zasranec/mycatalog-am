@@ -2017,3 +2017,5 @@
 2026-10-12: PS5 Pro White now uses the existing reviewed Pro master (three black panel stripes), matching the Slim master camera pose and 1104px visible height. Removed inconsistent alternative kit pose; no enlargement or generated details.
 
 2026-10-12: Galaxy Tab A8 X200 Silver and Pink Gold use Samsung Philippines native 2000px transparent front-and-back gallery renders (530771722, 530771728), identical pose, 1080px visible product, no upscale. Manufacturer NZ page corrects body material to Metal.
+
+2026-10-12: Playstation DualSense PS5 reuses reviewed exact-model native Black, Cosmic Red, Galactic Purple and Starlight Blue masters documented above. Existing Sterling Silver retained and recentered. All five visible controllers 800px wide, 900px transparent canvas, no upscaling; Purple fallback matches first catalogue colour.
