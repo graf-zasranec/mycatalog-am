@@ -2005,3 +2005,5 @@
 - images/cut/jbl-quantum-100__black.webp: https://de.jbl.com/QUANTUM100.html?dwvar_QUANTUM100_color=Black-GLOBAL-Current ; original transparent native 1605px hero, visible product (1195, 1468), matching pose, no enlargement.
 
 - images/cut/jbl-quantum-100__blue.webp: https://de.jbl.com/QUANTUM100.html?dwvar_QUANTUM100_color=Blue-GLOBAL-Current ; original transparent native 1605px hero, visible product (1197, 1468), matching pose, no enlargement.
+
+- images/cut/bose-quietcomfort-se-wireless__black.webp: https://redstore.am/en/product/bose-quietcomfort-se-wireless-black ; exact Black SE shop photo img-6232.jpg, 1800px native source, PhotoRoom background removal, clean outline replacing white-halo cutout; visible product 1155x1532, no enlargement.
