@@ -1976,3 +1976,5 @@
 - images/cut/apple-macbook-air-13-m2__midnight.webp: https://www.apple.com/shop/product/g1604ll/a/refurbished-13-inch-macbook-air-apple-m2-chip-with-8%E2%80%91core-cpu-and-8%E2%80%91core-gpu-midnight ; https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-macbook-air-m2-midnight-202208?wid=4000&hei=3072&fmt=png-alpha&qlt=90&.v=1659114484307 ; original visible product (3323, 2012), exact Midnight, native transparency, no enlargement/recolouring.
 
 - images/cut/apple-imac-24-m4__yellow.webp: https://www.apple.com/shop/buy-mac/imac/24-inch-yellow-m4-chip-10-core-cpu-10-core-gpu-16gb-memory-256gb-storage-standard-glass-stand ; official imac-specs-select-202601-yellow-10-10, PhotoRoom background removal, visible product (1141, 1030), no enlargement/recolouring.
+
+- images/cut/honor-5-stl-b19-5502abgj__green.webp: https://www.zigzag.am/am/honor-watch-5-green-stl-b19-5502abgj.html ; gallery 3469545_1.jpg, PhotoRoom background removal only, visible product (588, 700), no enlargement/recolouring.
