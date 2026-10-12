@@ -54,5 +54,37 @@
     "value": 76,
     "source": "https://www.acer.com/us-en/laptops/nitro/nitro-v-16/pdp/NH.U2EAA.002",
     "verified": "Exact model suffix and listed CPU/RAM/storage/resolution match manufacturer SKU; weight in grams, laptop battery in Wh."
+  },
+  {
+    "id": "dell-latitude-5450-ultra-5-125u",
+    "field": "display.type",
+    "value": "IPS LCD",
+    "source": "https://www.dell.com/support/manuals/fr-be/latitude-14-5450-laptop/latitude-5450-owners-manual/display?guid=guid-e6d7ade4-919c-40d4-8ff7-2d71f9d47962&lang=en-us",
+    "researchSource": "https://nanoreview.net/en/laptop/dell-latitude-5450",
+    "verified": "NanoReview checked against Dell manual: all three supported FHD panel options are IPS and 60Hz. Touch/brightness/battery differ by configuration and were left unfilled."
+  },
+  {
+    "id": "dell-latitude-5450-ultra-5-125u",
+    "field": "display.refresh",
+    "value": 60,
+    "source": "https://www.dell.com/support/manuals/fr-be/latitude-14-5450-laptop/latitude-5450-owners-manual/display?guid=guid-e6d7ade4-919c-40d4-8ff7-2d71f9d47962&lang=en-us",
+    "researchSource": "https://nanoreview.net/en/laptop/dell-latitude-5450",
+    "verified": "NanoReview checked against Dell manual: all three supported FHD panel options are IPS and 60Hz. Touch/brightness/battery differ by configuration and were left unfilled."
+  },
+  {
+    "id": "dell-latitude-5450-ultra-7-165h",
+    "field": "display.type",
+    "value": "IPS LCD",
+    "source": "https://www.dell.com/support/manuals/fr-be/latitude-14-5450-laptop/latitude-5450-owners-manual/display?guid=guid-e6d7ade4-919c-40d4-8ff7-2d71f9d47962&lang=en-us",
+    "researchSource": "https://nanoreview.net/en/laptop/dell-latitude-5450",
+    "verified": "NanoReview checked against Dell manual: all three supported FHD panel options are IPS and 60Hz. Touch/brightness/battery differ by configuration and were left unfilled."
+  },
+  {
+    "id": "dell-latitude-5450-ultra-7-165h",
+    "field": "display.refresh",
+    "value": 60,
+    "source": "https://www.dell.com/support/manuals/fr-be/latitude-14-5450-laptop/latitude-5450-owners-manual/display?guid=guid-e6d7ade4-919c-40d4-8ff7-2d71f9d47962&lang=en-us",
+    "researchSource": "https://nanoreview.net/en/laptop/dell-latitude-5450",
+    "verified": "NanoReview checked against Dell manual: all three supported FHD panel options are IPS and 60Hz. Touch/brightness/battery differ by configuration and were left unfilled."
   }
 ]

@@ -71404,80 +71404,84 @@
     "os": "DOS"
   },
   {
-    "id": "dell-latitude-5450-ultra-5-125u",
-    "category": "laptop",
-    "brand": "Dell",
-    "name": "Latitude 5450 Ultra 5 125U",
-    "aliases": [
-      "Dell Latitude 5450 Ultra 5 125U /512GB"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 440300,
-    "priceAmdMax": 440300,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 440300
-      }
-    ],
-    "display": {
-      "size": 14,
-      "resolution": "1920x1080"
-    },
-    "battery": {},
-    "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core Ultra 5-125U"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "os": "DOS"
+   "id": "dell-latitude-5450-ultra-5-125u",
+   "category": "laptop",
+   "brand": "Dell",
+   "name": "Latitude 5450 Ultra 5 125U",
+   "aliases": [
+    "Dell Latitude 5450 Ultra 5 125U /512GB"
+   ],
+   "tier": "upper-mid",
+   "priceAmd": 440300,
+   "priceAmdMax": 440300,
+   "popularity": 40,
+   "accent": "#5C6470",
+   "variants": [
+    {
+     "ram": 16,
+     "storage": 512,
+     "priceAmd": 440300
+    }
+   ],
+   "display": {
+    "size": 14,
+    "resolution": "1920x1080",
+    "type": "IPS LCD",
+    "refresh": 60
+   },
+   "battery": {},
+   "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
+   "unsure": [
+    "popularity"
+   ],
+   "chipset": {
+    "name": "Intel Core Ultra 5-125U"
+   },
+   "graphics": {
+    "name": "Intel Graphics",
+    "type": "integrated"
+   },
+   "os": "DOS"
   },
   {
-    "id": "dell-latitude-5450-ultra-7-165h",
-    "category": "laptop",
-    "brand": "Dell",
-    "name": "Latitude 5450 Ultra 7 165H",
-    "aliases": [
-      "Dell Latitude 5450 Ultra 7 165H /512GB"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 395000,
-    "priceAmdMax": 395000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 395000
-      }
-    ],
-    "display": {
-      "size": 14,
-      "resolution": "1920x1080"
-    },
-    "battery": {},
-    "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H, 16 GB RAM and 512 GB storage.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core Ultra 7-165H"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "os": "Windows 11 Pro"
+   "id": "dell-latitude-5450-ultra-7-165h",
+   "category": "laptop",
+   "brand": "Dell",
+   "name": "Latitude 5450 Ultra 7 165H",
+   "aliases": [
+    "Dell Latitude 5450 Ultra 7 165H /512GB"
+   ],
+   "tier": "upper-mid",
+   "priceAmd": 395000,
+   "priceAmdMax": 395000,
+   "popularity": 40,
+   "accent": "#5C6470",
+   "variants": [
+    {
+     "ram": 16,
+     "storage": 512,
+     "priceAmd": 395000
+    }
+   ],
+   "display": {
+    "size": 14,
+    "resolution": "1920x1080",
+    "type": "IPS LCD",
+    "refresh": 60
+   },
+   "battery": {},
+   "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H, 16 GB RAM and 512 GB storage.",
+   "unsure": [
+    "popularity"
+   ],
+   "chipset": {
+    "name": "Intel Core Ultra 7-165H"
+   },
+   "graphics": {
+    "name": "Intel Graphics",
+    "type": "integrated"
+   },
+   "os": "Windows 11 Pro"
   },
   {
     "id": "dell-latitude-5550-ultra",

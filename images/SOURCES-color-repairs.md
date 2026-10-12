@@ -1972,3 +1972,5 @@
 - images/cut/marshall-acton-iii__blue.webp: https://ktc.ua/goods/kolonka_marshall_acton_iii_bluetooth_midnight_blue_1008130.html ; exact Acton III Cream/Midnight Blue matched to Marshall official variant pages; identical front pose, PhotoRoom cutout visually checked, visible native product (663, 452), no enlargement/recolouring.
 
 - Redmi Note 14S Black/Midnight Black: https://www.pixel.am/am/product/xiaomi-redmi-note-14s ; native source https://cdn.storech.com/uploads/products/000/000/000/000/022/169/800_1776368036-1749400150-14s-blk.png, transparent front-and-back product (740, 934), no enlargement/recolouring. Restore valid aliases.
+
+- images/cut/apple-macbook-air-13-m2__midnight.webp: https://www.apple.com/shop/product/g1604ll/a/refurbished-13-inch-macbook-air-apple-m2-chip-with-8%E2%80%91core-cpu-and-8%E2%80%91core-gpu-midnight ; https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-macbook-air-m2-midnight-202208?wid=4000&hei=3072&fmt=png-alpha&qlt=90&.v=1659114484307 ; original visible product (3323, 2012), exact Midnight, native transparency, no enlargement/recolouring.
