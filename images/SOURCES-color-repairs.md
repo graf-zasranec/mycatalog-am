@@ -2013,3 +2013,7 @@
 - images/cut/xbox-series-x__white.webp: https://www.xbox.com/en-US/consoles/xbox-series-x ; official 1TB white front hero, native product (515, 617), clean transparent master, no enlargement.
 
 - images/cut/xbox-series-x__black-2048.webp: https://www.xbox.com/en-US/consoles/xbox-series-x ; native official 2TB Galaxy Black Special Edition front, visible product (514, 617); used only for 2048GB Black selection, excluded from colour cycling.
+
+2026-10-12: PS5 Pro White now uses the existing reviewed Pro master (three black panel stripes), matching the Slim master camera pose and 1104px visible height. Removed inconsistent alternative kit pose; no enlargement or generated details.
+
+2026-10-12: Galaxy Tab A8 X200 Silver and Pink Gold use Samsung Philippines native 2000px transparent front-and-back gallery renders (530771722, 530771728), identical pose, 1080px visible product, no upscale. Manufacturer NZ page corrects body material to Metal.
