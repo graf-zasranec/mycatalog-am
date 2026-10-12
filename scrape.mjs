@@ -2335,7 +2335,7 @@ const SHOPS = {
         out.push({ id, price: r.price, title: r.title, url: r.url,
           storage: storageOf(r.title) ?? storageOf(r.url), ram: ramOf(r.title),
           ...(sk.colorRaw ? { colorRaw: sk.colorRaw } : {}),
-          inStock: r.inStock !== false });
+          inStock: r.inStock === true });
       }
       return out;
     }

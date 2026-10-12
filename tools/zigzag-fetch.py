@@ -23,6 +23,7 @@ import time
 from pathlib import Path
 
 from scrapling.fetchers import Fetcher
+from zigzag_stock import stock_of
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'data' / 'zigzag.json'
@@ -110,8 +111,9 @@ for i, u in enumerate(urls, 1):
         'url': u,
         'title': re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', title.group(1))).strip() if title else '',
         'price': round(float(price.group(1))),
-        # Magento prints this on a page you cannot buy from
-        'inStock': 'out-of-stock' not in html.lower(),
+        # Zigzag uses out_stock / in_stock on its own availability element.
+        # Related cards must not override the main product's stock status.
+        'inStock': stock_of(html),
         'image': UNCACHE.sub('/', og.group(1)) if og else None,
     })
     if i % 25 == 0:
