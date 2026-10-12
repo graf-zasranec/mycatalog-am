@@ -1981,3 +1981,7 @@
 
 - images/cut/garmin-fenix-8-47-mm-amoled__slate-gray.webp: https://www.garmin.com/en-GB/p/1228429/pn/010-02904-00/ ; official cf-xl render, matched to https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-slate-gray.html, PhotoRoom background removal only, visible product (681, 795), no enlargement/recolouring.
 - images/cut/garmin-fenix-8-47-mm-amoled__main.webp: same verified Slate Gray 010-02904-00 render as __slate-gray; replaces the previous incorrect Carbon Gray Titanium default.
+
+- images/cut/apple-macbook-pro-16-inch-m5-pro-mgec4__space-black.webp: same reviewed exact-model __main / Downloads apple-macbook-pro-16-inch-m5-pro-mgec4.png; AllSell live heading confirmed Space Black on 2026-10-12.
+
+- images/cut/apple-macbook-pro-16-inch-m5-max-mgee4__space-black.webp: same reviewed exact-model __main / Downloads apple-macbook-pro-16-inch-m5-max-mgee4.png; AllSell live heading confirmed Space Black on 2026-10-12.
