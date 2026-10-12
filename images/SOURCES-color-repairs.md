@@ -2019,3 +2019,9 @@
 2026-10-12: Galaxy Tab A8 X200 Silver and Pink Gold use Samsung Philippines native 2000px transparent front-and-back gallery renders (530771722, 530771728), identical pose, 1080px visible product, no upscale. Manufacturer NZ page corrects body material to Metal.
 
 2026-10-12: Playstation DualSense PS5 reuses reviewed exact-model native Black, Cosmic Red, Galactic Purple and Starlight Blue masters documented above. Existing Sterling Silver retained and recentered. All five visible controllers 800px wide, 900px transparent canvas, no upscaling; Purple fallback matches first catalogue colour.
+
+2026-10-12: CMF Watch Pro Gray uses REDstore exact Gray source https://admin.redstore.am/storage/uploads/2025/10/16/img-4147.jpg (1024px); Watch 3 Pro Dark uses exact Zigzag Dark Grey SKU6974434225312 gallery smartwatch-cmf-by-nothing-5-1775118145.png (823px); Sony SRS-ULT30 Black uses Zigzag exact BCE gallery172047.jpeg (1200px). PhotoRoom exports reviewed on dark; clean transparency, native details retained, no upscaling; named colour and fallback masters corrected.
+
+2026-10-12: Kindle Paperwhite Kids11 Black named mapping added after matching existing front/back master against shop exact model source https://www.yerevanmobile.am/en/amazon-kindle-kids-paperwhite-11-gen.html and original61kmlian9pl._ac_sl1500_.jpg. Native detail retained, reviewed clean transparency, existing product height1104px.
+
+2026-10-12: Galaxy S22+ Phantom White/Green and Fold5 Cream use Samsung native transparent front-and-back gallery assets, exact SM-S906/SM-F946 pages preserved in .codex source ledger; native visible height1125-1231px, cropped and downsampled only, no generated details.
