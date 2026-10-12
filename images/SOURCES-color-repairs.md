@@ -2001,3 +2001,7 @@
 - images/cut/apple-ipad-air-11-wi-fi-2024__gray.webp: https://www.apple.com/ca/shop/product/fuwc3cl/a/Refurbished-11-inch-iPad-Air-M2-Wi-Fi-128GB-Space-Grey ; exact 2024 M2 Apple front/back render; PhotoRoom background removal; visible product [849, 964]; common 1100x1200 canvas, no enlargement/recolouring.
 
 - images/cut/harman-kardon-citation-200__black.webp: https://www.harmankardon.de/outlet/HKCITATION200BLKEU.html ; native transparent hero; visible product (606, 1068); VLV https://vlv.am/en/Product/27793 explicitly identifies Black.
+
+- images/cut/jbl-quantum-100__black.webp: https://de.jbl.com/QUANTUM100.html?dwvar_QUANTUM100_color=Black-GLOBAL-Current ; original transparent native 1605px hero, visible product (1195, 1468), matching pose, no enlargement.
+
+- images/cut/jbl-quantum-100__blue.webp: https://de.jbl.com/QUANTUM100.html?dwvar_QUANTUM100_color=Blue-GLOBAL-Current ; original transparent native 1605px hero, visible product (1197, 1468), matching pose, no enlargement.
