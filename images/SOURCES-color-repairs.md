@@ -1978,3 +1978,6 @@
 - images/cut/apple-imac-24-m4__yellow.webp: https://www.apple.com/shop/buy-mac/imac/24-inch-yellow-m4-chip-10-core-cpu-10-core-gpu-16gb-memory-256gb-storage-standard-glass-stand ; official imac-specs-select-202601-yellow-10-10, PhotoRoom background removal, visible product (1141, 1030), no enlargement/recolouring.
 
 - images/cut/honor-5-stl-b19-5502abgj__green.webp: https://www.zigzag.am/am/honor-watch-5-green-stl-b19-5502abgj.html ; gallery 3469545_1.jpg, PhotoRoom background removal only, visible product (588, 700), no enlargement/recolouring.
+
+- images/cut/garmin-fenix-8-47-mm-amoled__slate-gray.webp: https://www.garmin.com/en-GB/p/1228429/pn/010-02904-00/ ; official cf-xl render, matched to https://www.zigzag.am/am/garmin-fenix-8-47-mm-amoled-slate-gray.html, PhotoRoom background removal only, visible product (681, 795), no enlargement/recolouring.
+- images/cut/garmin-fenix-8-47-mm-amoled__main.webp: same verified Slate Gray 010-02904-00 render as __slate-gray; replaces the previous incorrect Carbon Gray Titanium default.
