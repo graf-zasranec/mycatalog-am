@@ -68376,7 +68376,8 @@
       "battery.capacity"
     ],
     "colors": [
-      "Grey"
+      "Grey",
+      "Black"
     ]
   },
   {
@@ -70461,48 +70462,48 @@
     "os": "Windows 11 Home"
   },
   {
-   "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
-   "category": "laptop",
-   "brand": "Acer",
-   "name": "Aspire Lite AL16-54P-3185 i3 1305U",
-   "aliases": [
-    "Acer Aspire Lite AL16-54P-3185 i3 1305U /256GB"
-   ],
-   "tier": "mid",
-   "priceAmd": 219000,
-   "priceAmdMax": 219000,
-   "popularity": 40,
-   "accent": "#5C6470",
-   "variants": [
-    {
-     "ram": 8,
-     "storage": 256,
-     "priceAmd": 219000
+    "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Aspire Lite AL16-54P-3185 i3 1305U",
+    "aliases": [
+      "Acer Aspire Lite AL16-54P-3185 i3 1305U /256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 219000,
+    "priceAmdMax": 219000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 219000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "type": "IPS LCD",
+      "refresh": 60,
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core i3-1305U, 8 GB RAM and 256 GB storage.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i3-1305U"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "os": "DOS",
+    "body": {
+      "weight": 1530
     }
-   ],
-   "display": {
-    "size": 16,
-    "resolution": "1920x1200",
-    "type": "IPS LCD",
-    "refresh": 60,
-    "touch": false
-   },
-   "battery": {},
-   "summaryEn": "A 16-inch laptop with Intel Core i3-1305U, 8 GB RAM and 256 GB storage.",
-   "unsure": [
-    "popularity"
-   ],
-   "chipset": {
-    "name": "Intel Core i3-1305U"
-   },
-   "graphics": {
-    "name": "Intel Iris Xe Graphics",
-    "type": "integrated"
-   },
-   "os": "DOS",
-   "body": {
-    "weight": 1530
-   }
   },
   {
     "id": "acer-aspire-lite-al16-54p-52al-i5-120u",
@@ -70660,47 +70661,47 @@
     "os": "Windows 11 Home"
   },
   {
-   "id": "acer-nitro-v-16-anv16-72-73vj-core-7-240h",
-   "category": "laptop",
-   "brand": "Acer",
-   "name": "Nitro V 16 ANV16-72-73VJ Core 7 240H",
-   "aliases": [
-    "Acer Nitro V 16 ANV16-72-73VJ Core 7 240H /512GB"
-   ],
-   "tier": "upper-mid",
-   "priceAmd": 620000,
-   "priceAmdMax": 620000,
-   "popularity": 40,
-   "accent": "#5C6470",
-   "variants": [
-    {
-     "ram": 32,
-     "storage": 512,
-     "priceAmd": 620000
-    }
-   ],
-   "display": {
-    "size": 16,
-    "resolution": "1920x1200",
-    "type": "IPS LCD",
-    "refresh": 180,
-    "touch": false
-   },
-   "battery": {
-    "capacity": 76
-   },
-   "summaryEn": "A 16-inch laptop with Intel Core 7-240H, 32 GB RAM and 512 GB storage.",
-   "unsure": [
-    "popularity"
-   ],
-   "chipset": {
-    "name": "Intel Core 7-240H"
-   },
-   "graphics": {
-    "name": "Nvidia Geforce RTX 5060 8GB",
-    "type": "discrete"
-   },
-   "os": "Windows 11 Home"
+    "id": "acer-nitro-v-16-anv16-72-73vj-core-7-240h",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V 16 ANV16-72-73VJ Core 7 240H",
+    "aliases": [
+      "Acer Nitro V 16 ANV16-72-73VJ Core 7 240H /512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 620000,
+    "priceAmdMax": 620000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 620000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "type": "IPS LCD",
+      "refresh": 180,
+      "touch": false
+    },
+    "battery": {
+      "capacity": 76
+    },
+    "summaryEn": "A 16-inch laptop with Intel Core 7-240H, 32 GB RAM and 512 GB storage.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core 7-240H"
+    },
+    "graphics": {
+      "name": "Nvidia Geforce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home"
   },
   {
     "id": "acer-nitro-v16-anv16-72-933f-i9-270h-rtx5070",
@@ -71404,84 +71405,84 @@
     "os": "DOS"
   },
   {
-   "id": "dell-latitude-5450-ultra-5-125u",
-   "category": "laptop",
-   "brand": "Dell",
-   "name": "Latitude 5450 Ultra 5 125U",
-   "aliases": [
-    "Dell Latitude 5450 Ultra 5 125U /512GB"
-   ],
-   "tier": "upper-mid",
-   "priceAmd": 440300,
-   "priceAmdMax": 440300,
-   "popularity": 40,
-   "accent": "#5C6470",
-   "variants": [
-    {
-     "ram": 16,
-     "storage": 512,
-     "priceAmd": 440300
-    }
-   ],
-   "display": {
-    "size": 14,
-    "resolution": "1920x1080",
-    "type": "IPS LCD",
-    "refresh": 60
-   },
-   "battery": {},
-   "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
-   "unsure": [
-    "popularity"
-   ],
-   "chipset": {
-    "name": "Intel Core Ultra 5-125U"
-   },
-   "graphics": {
-    "name": "Intel Graphics",
-    "type": "integrated"
-   },
-   "os": "DOS"
+    "id": "dell-latitude-5450-ultra-5-125u",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Latitude 5450 Ultra 5 125U",
+    "aliases": [
+      "Dell Latitude 5450 Ultra 5 125U /512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 440300,
+    "priceAmdMax": 440300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 440300
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080",
+      "type": "IPS LCD",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5-125U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "DOS"
   },
   {
-   "id": "dell-latitude-5450-ultra-7-165h",
-   "category": "laptop",
-   "brand": "Dell",
-   "name": "Latitude 5450 Ultra 7 165H",
-   "aliases": [
-    "Dell Latitude 5450 Ultra 7 165H /512GB"
-   ],
-   "tier": "upper-mid",
-   "priceAmd": 395000,
-   "priceAmdMax": 395000,
-   "popularity": 40,
-   "accent": "#5C6470",
-   "variants": [
-    {
-     "ram": 16,
-     "storage": 512,
-     "priceAmd": 395000
-    }
-   ],
-   "display": {
-    "size": 14,
-    "resolution": "1920x1080",
-    "type": "IPS LCD",
-    "refresh": 60
-   },
-   "battery": {},
-   "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H, 16 GB RAM and 512 GB storage.",
-   "unsure": [
-    "popularity"
-   ],
-   "chipset": {
-    "name": "Intel Core Ultra 7-165H"
-   },
-   "graphics": {
-    "name": "Intel Graphics",
-    "type": "integrated"
-   },
-   "os": "Windows 11 Pro"
+    "id": "dell-latitude-5450-ultra-7-165h",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Latitude 5450 Ultra 7 165H",
+    "aliases": [
+      "Dell Latitude 5450 Ultra 7 165H /512GB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 395000,
+    "priceAmdMax": 395000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 395000
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080",
+      "type": "IPS LCD",
+      "refresh": 60
+    },
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 7-165H, 16 GB RAM and 512 GB storage.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-165H"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11 Pro"
   },
   {
     "id": "dell-latitude-5550-ultra",
