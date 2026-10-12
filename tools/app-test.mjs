@@ -48,7 +48,7 @@ const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
   offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow,
+  GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -243,6 +243,13 @@ is(s512.length < s256.length, true, 'a bigger size starts from the day per-size 
 const historyBuild = { id: 'test-history-build', category: 'laptop', variants: [{ ram: 8, storage: 512 }, { ram: 16, storage: 512 }] };
 stub.HISTORY.points[historyBuild.id] = [{ d: '2026-10-05', lo: 100000, shops: 1, t: { 512: 100000 } }];
 is(app.histSeries(historyBuild, 512, null, 16).length, 0, 'selected RAM never borrows ambiguous storage-only history');
+stub.COLORIMG['test-edition-photo'] = { black: 'standard.webp', 'black-2048': 'galaxy.webp', white: 'digital.webp' };
+is(app.colorPhoto({id:'test-edition-photo'}, 'Black', 2048), 'galaxy.webp', '2TB selects the verified special-edition photo');
+is(app.colorPhoto({id:'test-edition-photo'}, 'Black', 1024), 'standard.webp', '1TB keeps its standard Black photo');
+is(app.colorPhoto({id:'test-edition-photo'}, 'White', 1024), 'digital.webp', 'White uses its own digital-edition photo');
+const xboxPhotoProduct = phones.find(p => p.id === 'xbox-series-x');
+const galaxyChoice = app.chooseConfig(xboxPhotoProduct, {...app.initialConfig(xboxPhotoProduct),color:'White'},'storage',2048);
+is(galaxyChoice.color, 'Black', 'choosing 2TB moves an unavailable White finish to a verified Black offer');
 
 /* --- retailer colours belong to their exact storage and RAM configuration --- */
 {

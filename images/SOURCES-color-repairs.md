@@ -2007,3 +2007,9 @@
 - images/cut/jbl-quantum-100__blue.webp: https://de.jbl.com/QUANTUM100.html?dwvar_QUANTUM100_color=Blue-GLOBAL-Current ; original transparent native 1605px hero, visible product (1197, 1468), matching pose, no enlargement.
 
 - images/cut/bose-quietcomfort-se-wireless__black.webp: https://redstore.am/en/product/bose-quietcomfort-se-wireless-black ; exact Black SE shop photo img-6232.jpg, 1800px native source, PhotoRoom background removal, clean outline replacing white-halo cutout; visible product 1155x1532, no enlargement.
+
+- images/cut/xbox-series-x__black.webp: https://www.xbox.com/en-US/consoles/xbox-series-x ; official 1TB black front hero, native product (662, 619), clean transparent master, no enlargement.
+
+- images/cut/xbox-series-x__white.webp: https://www.xbox.com/en-US/consoles/xbox-series-x ; official 1TB white front hero, native product (515, 617), clean transparent master, no enlargement.
+
+- images/cut/xbox-series-x__black-2048.webp: https://www.xbox.com/en-US/consoles/xbox-series-x ; native official 2TB Galaxy Black Special Edition front, visible product (514, 617); used only for 2048GB Black selection, excluded from colour cycling.

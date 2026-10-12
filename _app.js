@@ -363,8 +363,14 @@ function chooseConfig(p, current, axis, value) {
   const match = pool.find(v => ['cpu', 'ram', 'storage', 'size', 'band'].every(k => k === axis || current[k] == null || v[k] == null || v[k] === current[k]));
   const next = match || pool.slice().sort((a, b) => (a.price || a.priceAmd || 0) - (b.price || b.priceAmd || 0)
     || (a.storage || 0) - (b.storage || 0) || (a.ram || 0) - (b.ram || 0))[0];
-  return next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size', 'band'].map(k => [k, next[k] ?? null])), configSpecs: next.configSpecs || null, [axis]: value }
+  const chosen = next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size', 'band'].map(k => [k, next[k] ?? null])), configSpecs: next.configSpecs || null, [axis]: value }
     : { ...current, [axis]: value };
+  if (chosen.color && !selectionOffers(p, chosen).length) {
+    const available = selectionOffers(p, { ...chosen, color: null });
+    const match = available.find(o => o.color && (p.colors || []).includes(o.color));
+    if (match) chosen.color = match.color;
+  }
+  return chosen;
 }
 function selectionOffers(p, sel) {
   const capacities = (p.variants || []).map(v => v.storage).filter(v => v != null);
@@ -2088,7 +2094,10 @@ function swatch(name) {
 
 const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
 const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const colorPhoto = (p, c) => (c && CIMG[p.id] && CIMG[p.id][slugOf(c)]) || null;
+const colorPhoto = (p, c, storage = null) => {
+  const photos = CIMG[p.id], key = c && slugOf(c);
+  return (photos && key && ((storage != null && photos[key + '-' + storage]) || photos[key])) || null;
+};
 // A label every row carries tells the buyer nothing. The SIM build is worth stating only
 // where there is one to choose - where this product is actually sold here in both builds,
 // which in practice is Apple, Pixel and the occasional Samsung. Everything else is a tray
@@ -2262,7 +2271,7 @@ function detailView(p) {
   // photo; where it does not, the main shot stays and the swatch still answers the real
   // question - whether anyone in Armenia sells it. Crossed through when nobody does.
   const cols = p.colors || [];
-  const shot = colorPhoto(p, SEL.color) || IMG(p.id);
+  const shot = colorPhoto(p, SEL.color, SEL.storage) || IMG(p.id);
   const box = PBOX[p.id] || [0, 1000];   // the product inside its square photo, top and bottom in thousandths
   // A colour picked that has no photo of its own keeps the main shot, which is another colour -
   // said on the picture, or the swatch reads as broken ("I clicked Blue and it is still black").
@@ -2289,8 +2298,8 @@ function detailView(p) {
   const configs = configPool(p);
   const cpus = [...new Set(configs.map(v => v.cpu).filter(Boolean))];
   const vPool = configs.filter(v => (SEL.size == null || v.size == null || v.size === SEL.size) && (!SEL.cpu || v.cpu === SEL.cpu));
-  const rams = [...new Set(vPool.map(v => v.ram))].filter(v => v != null);
-  const stors = [...new Set(vPool.filter(v => SEL.ram == null || v.ram === SEL.ram).map(v => v.storage))].filter(v => v != null);
+  const rams = [...new Set(vPool.map(v => v.ram))].filter(v => v != null).sort((a, b) => a - b);
+  const stors = [...new Set(vPool.filter(v => SEL.ram == null || v.ram === SEL.ram).map(v => v.storage))].filter(v => v != null).sort((a, b) => a - b);
   const inC = st.cmp.includes(p.id);
 
   const specs = GROUPS.map(([g, rows]) => {
@@ -2325,7 +2334,7 @@ function detailView(p) {
           ${sizes.length > 1 ? `<div class="og"><label>${esc(t('f.screen'))}</label>
             <div class="bs">${sizes.map(sv => `<button data-size="${sv}" class="${sv === SEL.size ? 'on' : ''}${sold(p, 'size', sv) ? '' : ' na'}"${sold(p, 'size', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.size}">${esc(inch(sv))}</button>`).join('')}</div></div>` : ''}
           ${cpus.length > 1 ? `<div class="og"><label>${esc(t('f.chipset'))}</label><div class="bs">${cpus.map(cpu => `<button data-cpu="${esc(cpu)}" class="${cpu === SEL.cpu ? 'on' : ''}" aria-pressed="${cpu === SEL.cpu}">${esc(cpu)}</button>`).join('')}</div></div>` : ''}
-          ${rams.length ? `<div class="og"><label>${esc(t('f.ram'))}</label>
+          ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
             <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
           ${stors.length ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
@@ -2682,7 +2691,7 @@ function offersView(p) {
     <div class="navrow">${backLink('#/p/' + p.id, fullName(p))}
       <nav class="crumb"><span>${esc(x('allOffers'))}</span></nav></div>
     <div class="ofhead">
-      <span class="t"><img src="${esc(colorPhoto(p, OSEL.color) || THUMB(p.id))}" alt="" loading="lazy"></span>
+      <span class="t"><img src="${esc(colorPhoto(p, OSEL.color, OSEL.storage || null) || THUMB(p.id))}" alt="" loading="lazy"></span>
       <div>
         <h1>${esc(fullName(p))}${nameTag(p)}</h1>
         <p class="ofsub">${esc(nx(all.length, 'offersLbl') + ' ' + fromShops(shopCount(all)))}</p>
@@ -2744,7 +2753,7 @@ function compareOptions(p, sel) {
     ['size', 'f.screen', configPool(p), inch]];
   return `<div class="cmp-options">${fields.map(([axis, label, source, fmt]) => {
     const values = [...new Set(source.map(v => v[axis]).filter(v => v != null))].sort((a, b) => axis === 'cpu' ? a.localeCompare(b) : a - b);
-    if (!values.length || (axis === 'size' && values.length < 2)) return '';
+    if (!values.length || (['size', 'ram'].includes(axis) && values.length < 2)) return '';
     return `<label><span class="cmp-option-label">${esc(t(label))}</span><select data-cmp-axis="${axis}" data-cmp-id="${esc(p.id)}" aria-label="${esc(fullName(p) + ': ' + t(label))}">
       ${values.map(v => `<option value="${esc(v)}"${v === sel[axis] ? ' selected' : ''}>${esc(fmt(v))}</option>`).join('')}</select></label>`;
   }).join('')}</div>`;
@@ -2814,7 +2823,7 @@ function compareView() {
     </div>
     <div class="cwrap${n ? '' : ' cmp-empty'}" id="cwrap" style="--cols:${cols};--n:${n + slot}">
       <div class="cphotos"><div class="pad"></div>
-        ${ps.map(p => `<div class="c"><a href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${esc(THUMB(p.id))}" alt="" decoding="async"></a>
+        ${ps.map((p, i) => `<div class="c"><a href="#/p/${esc(p.id)}" tabindex="-1" aria-hidden="true"><img src="${esc((CTHUMB[p.id] || {})[slugOf(selections[i].color) + '-' + selections[i].storage] || (CTHUMB[p.id] || {})[slugOf(selections[i].color)] || colorPhoto(p, selections[i].color, selections[i].storage) || THUMB(p.id))}" alt="" decoding="async"></a>
           <button class="x" data-cmp="${esc(p.id)}" aria-label="${esc(t('compare.clear'))}: ${esc(fullName(p))}">×</button></div>`).join('')}
         ${slot ? `<div class="c"><button class="addslot" data-act="openadd" aria-label="${esc(addLabel(ps[0]))}">
           <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>` : ''}
@@ -2978,7 +2987,13 @@ function render(keepScroll) {
     const y = window.scrollY, p = byId(m[1]);
     const initialProduct = !painted && main.dataset.prerenderProduct === p.id &&
       main.dataset.prerenderLang === st.lang && !st.cmp.includes(p.id);
-    if (initialProduct) initSel(p);
+    if (initialProduct) {
+      initSel(p);
+      // The retained server markup contains an empty SVG. Seed its history
+      // context just as detailView does, so paintHist can draw it without
+      // replacing the page or reloading the product photo.
+      historyHTML(p);
+    }
     else main.innerHTML = detailView(p);
     document.title = fullName(p) + ' | Better.am'; window.scrollTo(0, keepScroll ? y : 0);
   }
