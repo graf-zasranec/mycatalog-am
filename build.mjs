@@ -13,6 +13,7 @@ import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender, productRenderer } from './tools/prerender.mjs';
 import { pack, unpackSource } from './tools/compact-data.mjs';
+import { canonicalColors } from './tools/canonical-colors.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const heroPreviews = fs.existsSync('data/photo-previews.json') ? JSON.parse(rd('data/photo-previews.json')) : {};
@@ -217,6 +218,9 @@ const colourFloor = () => 600;
 
 const DUPES = fs.existsSync('data/photo-dupes.json') ? JSON.parse(rd('data/photo-dupes.json')) : {};
 const COLOR_ALIASES = JSON.parse(rd('data/color-aliases.json'));
+// The refresh already canonicalizes shop offers. Apply the same curated names to product
+// choices so obsolete aliases do not survive as duplicate, disabled swatches.
+for (const p of phones) p.colors = canonicalColors(p.id, p.colors, COLOR_ALIASES);
 const colourSlug = c => String(c).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 function cutMap(inline, small) {
   const m = {};

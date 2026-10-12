@@ -1985,3 +1985,17 @@
 - images/cut/apple-macbook-pro-16-inch-m5-pro-mgec4__space-black.webp: same reviewed exact-model __main / Downloads apple-macbook-pro-16-inch-m5-pro-mgec4.png; AllSell live heading confirmed Space Black on 2026-10-12.
 
 - images/cut/apple-macbook-pro-16-inch-m5-max-mgee4__space-black.webp: same reviewed exact-model __main / Downloads apple-macbook-pro-16-inch-m5-max-mgee4.png; AllSell live heading confirmed Space Black on 2026-10-12.
+
+- images/cut/harman-kardon-citation-200__grey.webp: https://www.harmankardon.de/outlet/HKCITATION200GRYEU.html ; Official transparent native 1605px hero; visible product [607, 1059], no enlargement/recolouring.
+
+- images/cut/harman-kardon-citation-surround__grey.webp: https://www.zigzag.am/am/harman-kardon-hkcitasurrgry.html ; Exact shop gallery 172625-5.jpg; PhotoRoom background removal; single speaker view; visible product [381, 989], no enlargement/recolouring.
+
+- images/cut/harman-kardon-citation-one-mk3__grey.webp: https://www.zigzag.am/am/harman-kardon-hkcitaonemk3gry.html ; Exact MkIII Grey SKU gallery 17263132-1.png; PhotoRoom background removal; visible product [491, 693], no enlargement/recolouring.
+
+- images/cut/apple-ipad-air-11-wi-fi-2024__blue.webp: https://www.apple.com/shop/product/fuwh3ll/a/Refurbished-11-inch-iPad-Air-M2-Wi-Fi-256GB-Blue ; exact 2024 M2 Apple front/back render; PhotoRoom background removal; visible product [849, 964]; common 1100x1200 canvas, no enlargement/recolouring.
+
+- images/cut/apple-ipad-air-11-wi-fi-2024__purple.webp: https://www.apple.com/shop/product/fuwf3ll/a/Refurbished-11-inch-iPad-Air-M2-Wi-Fi-128GB-Purple ; exact 2024 M2 Apple front/back render; PhotoRoom background removal; visible product [849, 964]; common 1100x1200 canvas, no enlargement/recolouring.
+
+- images/cut/apple-ipad-air-11-wi-fi-2024__starlight.webp: https://www.apple.com/shop/product/fuwe3ll/a/Refurbished-11-inch-iPad-Air-M2-Wi-Fi-128GB-Starlight ; exact 2024 M2 Apple front/back render; PhotoRoom background removal; visible product [849, 964]; common 1100x1200 canvas, no enlargement/recolouring.
+
+- images/cut/apple-ipad-air-11-wi-fi-2024__gray.webp: https://www.apple.com/ca/shop/product/fuwc3cl/a/Refurbished-11-inch-iPad-Air-M2-Wi-Fi-128GB-Space-Grey ; exact 2024 M2 Apple front/back render; PhotoRoom background removal; visible product [849, 964]; common 1100x1200 canvas, no enlargement/recolouring.
