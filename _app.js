@@ -1212,6 +1212,13 @@ function paintCmpCount() {
 }
 function paintTray() {
   paintCmpCount();
+  const selection = $('#compareSelection');
+  if (selection) {
+    const show = st.cmp.length > 0 && location.hash !== '#/compare';
+    selection.hidden = !show;
+    selection.innerHTML = `<a class="btn primary" href="#/compare">${esc(t('nav.compare'))} <span>${st.cmp.length}</span> →</a>`;
+    document.body.classList.toggle('has-compare-selection', show);
+  }
   const lock = st.cmp.length ? catOf(byId(st.cmp[0])) : '';
   $$('[data-cat][data-cmp]').forEach(b =>
     b.classList.toggle('off', !!lock && b.dataset.cat !== lock));
@@ -1245,7 +1252,6 @@ function toggleCmp(id) {
     st.cmpConfigs[id] = SEL.id === id ? { ...SEL } : initialConfig(byId(id));
     // the plus reads as "compare this", so it goes there - the compare page carries its own
     // add slot, which is where the second and third picks come from
-    if (location.hash !== '#/compare') setTimeout(() => { location.hash = '#/compare'; }, 120);
   }
   save(); paintTray();
   const on = st.cmp.includes(id), nm = fullName(byId(id));

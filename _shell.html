@@ -1336,6 +1336,11 @@ a.store:hover .nm{color:var(--brand)}
 .boot-catalog .boot-categories{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
 .boot-catalog .boot-categories a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:var(--pill);font-size:13px;background:var(--surface)}
 @media(max-width:600px){.boot-catalog .boot-categories{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}.boot-catalog .boot-categories a{flex:0 0 auto;white-space:nowrap}}
+.compare-selection{position:fixed;bottom:max(20px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:80;padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 32px #0002}
+.compare-selection[hidden]{display:none}
+.compare-selection a{display:flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:12px 24px;white-space:nowrap}
+.compare-selection span{font-variant-numeric:tabular-nums}
+.has-compare-selection{padding-bottom:100px}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
@@ -1362,3 +1367,4 @@ a.store:hover .nm{color:var(--brand)}
 <main id="main" tabindex="-1"></main>
 <footer class="ft"><div class="shell" id="foot"></div></footer>
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
+<div class="compare-selection" id="compareSelection" hidden></div>
