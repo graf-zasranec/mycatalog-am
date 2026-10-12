@@ -704,6 +704,14 @@ const ramOf = text => {
   const s = String(text || '');
   const explicit = /\b(?:ram|ddr[345x]?)\s*[:=-]?\s*(\d{1,3})\s*(?:gb|գբ|гб)?\b|\b(\d{1,3})\s*(?:gb|գբ|гб)\s*(?:ram|ddr[345x]?)\b/i.exec(s);
   if (explicit) { const n = +(explicit[1] || explicit[2]); return n <= 192 ? n : null; }
+  // MacBook shops omit units in "10/10 16/512": the first pair is chip cores,
+  // the second is RAM/storage. Do not apply this to phone model/storage names.
+  if (/\bmacbook\b/i.test(s)) {
+    for (const m of s.matchAll(/(?:^|[^\p{L}\p{N}])(\d+)\s*\/\s*(\d+)(?![\p{L}\p{N}])/gu)) {
+      const ram = +m[1], disk = +m[2];
+      if (REAL_CAPACITY.has(ram) && ram <= 192 && REAL_CAPACITY.has(disk) && disk >= 64 && ram < disk) return ram;
+    }
+  }
   const c = capacitiesOf(s), lo = Math.min(...c);
   // Two disk options (256/512 GB) and a GPU's VRAM are not system memory.
   if (/\b(?:rtx|gtx|radeon|vram|gddr)\b/i.test(s)) return null;
@@ -1120,6 +1128,11 @@ if (process.argv[2] === '--selftest') {
     ['dell-alienware-16-aurora-ac1625016gb-rtx-5060', null],
     ['Xiaomi 17 Pro Max 12/512GB (Black)', 512], ['Galaxy S26 Ultra 16GB/1TB', 1024]];
   const ramCases = [['SAMSUNG Galaxy S25 Ultra 5G SM-S938B/DS 12GB 256GB', 12], ['XIAOMI POCO X7 Pro 5G 8GB 256GB (Black)', 8],
+    ['Apple MacBook Pro 14 M5 10/10 16/512 Silver /MDE44', 16],
+    ['Apple MacBook Pro 14 M5 10/10 24/1TB Silver', 24],
+    ['Apple MacBook Air M5 13 16/512 Midnight', 16],
+    ['Apple MacBook Pro M5 10/10', null],
+    ['iPhone 16/128 Black', null],
     ['iPhone 17 Pro, 256 ԳԲ, Silver', null],
     // "12/512GB" writes the unit once, and the slash is the only thing separating it from
     // "Redmi Note 12 256GB", where the 12 is a model number and there is no RAM figure at all.

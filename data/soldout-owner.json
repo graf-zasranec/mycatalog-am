@@ -1,5 +1,5 @@
 {
-  "note": "Sold out per the owner, read off the shop's page by a person. tools/check-links.py rewrites data/soldout.json and cannot see these; remove a line when the shop has it again.",
+  "note": "Manually verified shop-page exclusions. Review and remove a URL when the shop confirms it is available again; automatic cache refreshes cannot override these checks.",
   "urls": [
     "https://istyle.am/en/product/Apple%20Watch%20Ultra%202",
     "https://www.pixel.am/am/product/xiaomi-pad-7-pro",
@@ -11,6 +11,12 @@
     "https://shop.ucom.am/am/iphone-18-pro-max.html",
     "https://shop.ucom.am/en/xiaomi-redmi-13c.html",
     "https://shop.ucom.am/en/honor-x5b-plus.html",
-    "https://shop.ucom.am/am/samsung-galaxy-a06-4gb.html"
+    "https://shop.ucom.am/am/samsung-galaxy-a06-4gb.html",
+    "https://www.zigzag.am/am/apple-macbook-pro-14-m5-10-10-16-512-black.html",
+    "https://www.zigzag.am/am/apple-macbook-pro-14-m5-10-10-16-1tb-black.html",
+    "https://www.zigzag.am/am/apple-macbook-pro-14-m5-10-10-16-1tb-silver.html",
+    "https://www.zigzag.am/am/apple-macbook-pro-14-m5-10-10-24-1tb-silver.html",
+    "https://www.zigzag.am/am/apple-macbook-pro-14-m5-10-10-32gb-1tb-silver-mj3e4.html",
+    "https://www.zigzag.am/am/playstation-5-pro-console-digital-ps5.html"
   ]
 }

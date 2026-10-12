@@ -2025,3 +2025,5 @@
 2026-10-12: Kindle Paperwhite Kids11 Black named mapping added after matching existing front/back master against shop exact model source https://www.yerevanmobile.am/en/amazon-kindle-kids-paperwhite-11-gen.html and original61kmlian9pl._ac_sl1500_.jpg. Native detail retained, reviewed clean transparency, existing product height1104px.
 
 2026-10-12: Galaxy S22+ Phantom White/Green and Fold5 Cream use Samsung native transparent front-and-back gallery assets, exact SM-S906/SM-F946 pages preserved in .codex source ledger; native visible height1125-1231px, cropped and downsampled only, no generated details.
+
+2026-10-12: iPad Air M2 Purple PhotoRoom recut repaired manually with Guided Restore for actual rear panel; clean front/back PNG exported at1100x1200. Identical Apple poses/canvas verified across Blue/Gray/Starlight (zero missing interior pixels under shared mask); cleaned edge alpha applied only to same-pose cutouts, original RGB/details unchanged. All four reviewed on light/dark, full product height965px.
