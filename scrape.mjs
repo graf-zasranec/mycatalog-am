@@ -722,7 +722,7 @@ const ramOf = text => {
 // viva slugs it "gray", REDstore "gray", eldorado "awesome-gray". "Awesome Icyblue" is "iceblue"
 // at viva. Each spelling that reaches the page as its own word makes one phone look like two.
 const cword = w => String(w).toLowerCase().replace(/[^a-z]/g, '')
-  .replace(/^grey$/, 'gray').replace(/^ice(blue)$/, 'icy$1').replace(/^icy$/, 'ice');
+  .replace(/^grey$/, 'gray').replace(/^ice(blue)$/, 'icy$1').replace(/^icy$/, 'ice').replace(/^burgand$/, 'burgundy');
 // istyle's own labels, read onto the catalogue's names: "Jetblack" is Jet Black, "Levender" is
 // Lavender. Squashed spaces first, then one wrong letter in a name longer than five.
 function colorLoose(label, colors) {
@@ -751,6 +751,9 @@ function colorOf(text, colors) {
   let hit = null;
   for (const c of colors || []) if (h.includes(String(c).toLowerCase()) && (!hit || c.length > hit.length)) hit = c;
   if (hit) return hit;
+  // AllSell's iPhone 18 swatch says Blue, while its selected SKU says Glacier.
+  // Only the verified four-colour palette permits this retailer shorthand.
+  if (h.trim() === 'blue' && ['Glacier', 'Burgundy', 'Black', 'Silver'].every(c => (colors || []).includes(c))) return 'Glacier';
   // The shop wrote the distinctive half and dropped the house adjective: every shop selling the
   // Galaxy A57 slugs it "navy", and the catalogue calls it "Awesome Navy". Match on the last
   // word when it names exactly ONE of this product's colours, so the row reports the catalogue's
@@ -824,6 +827,11 @@ function mcCash(block) {
   // while the product page runs them together. Allow either.
   const m = block.match(/Գին՝\s*(?:<\/span>)?\s*([\d,  ]+)\s*դր/);
   return m ? +m[1].replace(/[^0-9]/g, '') : 0;
+}
+function mcRam(html, title) {
+  const m = String(html || '').match(/class="dlabel"[^>]*>\s*Օպերատիվ հիշողություն\s*<\/div>\s*<div[^>]*class="value"[^>]*>\s*(\d+)\s*GB\s*<\/div>/i);
+  const value = m ? +m[1] : null;
+  return value != null && REAL_CAPACITY.has(value) && value <= 192 ? value : ramOf(title);
 }
 
 function pixelCash(html) {
@@ -1044,6 +1052,15 @@ if (process.argv[2] === '--selftest') {
   for (const [html, want] of mcCases) {
     const got = mcCash(html);
     if (got !== want) { bad++; console.log(`FAIL  mcCash=${got} want=${want}`); }
+  }
+  for (const [html, title, want] of [
+    ['<div class="dlabel">Օպերատիվ հիշողություն</div><div class="value">8 GB</div>', 'Galaxy Tab S10 Lite 256GB', 8],
+    ['<div class="dlabel">Օպերատիվ հիշողություն</div><div class="value">6 GB</div>', 'Galaxy Tab S10 Lite 128GB', 6],
+    ['<div class="dlabel">Հիշողություն</div><div class="value">256GB</div>', 'Galaxy Tab S10 Lite 256GB', null],
+    ['', 'Redmi Note 17 Pro Max 8GB/512GB', 8],
+  ]) {
+    const got = mcRam(html, title);
+    if (got !== want) { bad++; console.log(`FAIL mcRam=${got} want=${want}`); }
   }
 
   const pixCases = [
@@ -1276,6 +1293,9 @@ if (process.argv[2] === '--selftest') {
     const got = safeUrl(txt);
     if (!!got !== ok) { bad++; console.log(`FAIL url got=${got} want=${ok ? 'accepted' : 'rejected'} <- ${txt}`); }
   }
+  colCases.push(['Burgand', ['Black', 'Burgundy', 'Silver'], 'Burgundy'],
+    ['Blue', ['Black', 'Burgundy', 'Glacier', 'Silver'], 'Glacier'],
+    ['Blue', ['Black', 'Silver'], null]);
   for (const [txt, cols, want] of colCases) {
     const got = colorOf(txt, cols);
     if (got !== want) { bad++; console.log(`FAIL colour got=${got} want=${want} <- ${txt}`); }
@@ -1642,7 +1662,7 @@ const SHOPS = {
           }
           // A sibling was reached from another page and carries no listing price of its own; the
           // page states it, and mcCash reads the cash figure rather than the instalment one.
-          const price = h.price || mcCash(page || '');
+          const price = mcCash(page || '') || h.price;
           if (!price || price < 5000) continue;
           // The SIM build comes from the page's own og:title and NOT from the url. This shop's
           // slug is decoration - the id is what resolves, and they disagree: /33157/ is slugged
@@ -1651,7 +1671,7 @@ const SHOPS = {
           // stale slug a veto over what the page actually says. Marked as read from the page so
           // the eSIM post-pass leaves it alone.
           const said = simBuild(title);
-          out.push({ id: h.id, price, storage: storageOf(title) ?? storageOf(h.url), title, url: h.url,
+          out.push({ id: h.id, price, storage: storageOf(title) ?? storageOf(h.url), ram: mcRam(page, title), title, url: h.url,
             esim: said, simFromPage: said !== undefined || undefined,
             image: img && safeUrl(img) ? img : null, inStock: true });
         }
