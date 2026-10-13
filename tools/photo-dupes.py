@@ -12,6 +12,7 @@
 # (Natural and Desert Titanium) about 4. Anything under 2 is one photo.
 import itertools
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -20,6 +21,19 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 CUT = ROOT / 'images' / 'cut'
 SAME = 2.0
+ALIASES = json.loads((ROOT / 'data' / 'color-aliases.json').read_text(encoding='utf8'))
+
+def canonical(pid, slug):
+    mapping = ALIASES.get(pid, {})
+    for label in mapping:
+        if re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-') != slug:
+            continue
+        seen = set()
+        while label in mapping and label not in seen:
+            seen.add(label)
+            label = mapping[label]
+        return re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-')
+    return slug
 
 def look(p):
     return Image.open(p).convert('RGBA').resize((32, 32)).tobytes()
@@ -37,6 +51,8 @@ out = {}
 for pid, cols in by.items():
     bad = set()
     for a, b in itertools.combinations(sorted(cols), 2):
+        if canonical(pid, a) == canonical(pid, b):
+            continue  # Two names for the same finish are expected to share a photograph.
         if dist(cols[a], cols[b]) < SAME:
             bad.update((a, b))
     if bad:

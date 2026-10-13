@@ -4,7 +4,7 @@
  "note": "too small needs a larger original, not an enlargement",
  "total": 1658,
  "missing": 3,
- "tooSmall": 62,
+ "tooSmall": 48,
  "products": [
   {
    "id": "xiaomi-redmi-band-7",
@@ -37,46 +37,6 @@
    "width": 0
   },
   {
-   "id": "honor-x9d",
-   "brand": "Honor",
-   "name": "X9d",
-   "category": "phone",
-   "shops": 6,
-   "query": "Honor X9d",
-   "what": "too small",
-   "width": 679
-  },
-  {
-   "id": "xiaomi-redmi-buds-6-play",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 6 Play",
-   "category": "headphones",
-   "shops": 6,
-   "query": "Xiaomi Redmi Buds 6 Play",
-   "what": "too small",
-   "width": 608
-  },
-  {
-   "id": "xiaomi-redmi-note-14s",
-   "brand": "Xiaomi",
-   "name": "Redmi Note 14S",
-   "category": "phone",
-   "shops": 6,
-   "query": "Xiaomi Redmi Note 14S",
-   "what": "too small",
-   "width": 635
-  },
-  {
-   "id": "samsung-galaxy-buds-fe",
-   "brand": "Samsung",
-   "name": "Galaxy Buds FE",
-   "category": "headphones",
-   "shops": 5,
-   "query": "Samsung Galaxy Buds FE",
-   "what": "too small",
-   "width": 612
-  },
-  {
    "id": "samsung-galaxy-watch-ultra-2",
    "brand": "Samsung",
    "name": "Galaxy Watch Ultra 2",
@@ -85,26 +45,6 @@
    "query": "Samsung Galaxy Watch Ultra 2",
    "what": "too small",
    "width": 600
-  },
-  {
-   "id": "honor-400",
-   "brand": "Honor",
-   "name": "400",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor 400",
-   "what": "too small",
-   "width": 634
-  },
-  {
-   "id": "honor-400-pro",
-   "brand": "Honor",
-   "name": "400 Pro",
-   "category": "phone",
-   "shops": 4,
-   "query": "Honor 400 Pro",
-   "what": "too small",
-   "width": 686
   },
   {
    "id": "honor-choice-x7-lite",
@@ -117,16 +57,6 @@
    "width": 665
   },
   {
-   "id": "lenovo-ideapad-slim-3-15ian8",
-   "brand": "Lenovo",
-   "name": "IdeaPad Slim 3 15IAN8",
-   "category": "laptop",
-   "shops": 3,
-   "query": "Lenovo IdeaPad Slim 3 15IAN8",
-   "what": "too small",
-   "width": 672
-  },
-  {
    "id": "xiaomi-buds-6-lite",
    "brand": "Xiaomi",
    "name": "Redmi Buds 6 Lite",
@@ -135,16 +65,6 @@
    "query": "Xiaomi Redmi Buds 6 Lite",
    "what": "too small",
    "width": 611
-  },
-  {
-   "id": "xiaomi-redmi-pad",
-   "brand": "Xiaomi",
-   "name": "Redmi Pad",
-   "category": "tablet",
-   "shops": 3,
-   "query": "Xiaomi Redmi Pad",
-   "what": "too small",
-   "width": 688
   },
   {
    "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
@@ -175,26 +95,6 @@
    "query": "Honor 200",
    "what": "too small",
    "width": 650
-  },
-  {
-   "id": "lenovo-ideapad-5-2in1-16",
-   "brand": "Lenovo",
-   "name": "IdeaPad 5 2-in-1 16IAL10",
-   "category": "laptop",
-   "shops": 2,
-   "query": "Lenovo IdeaPad 5 2-in-1 16IAL10",
-   "what": "too small",
-   "width": 605
-  },
-  {
-   "id": "samsung-galaxy-a35",
-   "brand": "Samsung",
-   "name": "Galaxy A35",
-   "category": "phone",
-   "shops": 2,
-   "query": "Samsung Galaxy A35",
-   "what": "too small",
-   "width": 467
   },
   {
    "id": "samsung-qe85q60dauxru",
@@ -235,16 +135,6 @@
    "query": "TCL 65C6K",
    "what": "too small",
    "width": 609
-  },
-  {
-   "id": "xiaomi-smart-band-7-pro",
-   "brand": "Xiaomi",
-   "name": "Smart Band 7 Pro",
-   "category": "watch",
-   "shops": 2,
-   "query": "Xiaomi Smart Band 7 Pro",
-   "what": "too small",
-   "width": 605
   },
   {
    "id": "xiaomi-smart-band-8-champagne-bhr7166gl",
@@ -355,16 +245,6 @@
    "query": "Honor Choice Earbuds X5",
    "what": "too small",
    "width": 610
-  },
-  {
-   "id": "honor-magicbook-x16-plus",
-   "brand": "Honor",
-   "name": "MagicBook X16 Plus",
-   "category": "laptop",
-   "shops": 1,
-   "query": "Honor MagicBook X16 Plus",
-   "what": "too small",
-   "width": 625
   },
   {
    "id": "honor-watch-gs-3-rubber",
@@ -517,16 +397,6 @@
    "width": 699
   },
   {
-   "id": "samsung-galaxy-s22plus",
-   "brand": "Samsung",
-   "name": "Galaxy S22+",
-   "category": "phone",
-   "shops": 1,
-   "query": "Samsung Galaxy S22+",
-   "what": "too small",
-   "width": 625
-  },
-  {
    "id": "samsung-ls27bg650eu",
    "brand": "Samsung",
    "name": "LS27BG650EU",
@@ -605,16 +475,6 @@
    "query": "Toshiba 65Z680SE",
    "what": "too small",
    "width": 670
-  },
-  {
-   "id": "xiaomi-redmi-5",
-   "brand": "Xiaomi",
-   "name": "Redmi Buds 5",
-   "category": "headphones",
-   "shops": 1,
-   "query": "Xiaomi Redmi Buds 5",
-   "what": "too small",
-   "width": 672
   },
   {
    "id": "xiaomi-redmi-note-13-pro-plus",

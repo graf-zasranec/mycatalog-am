@@ -18,6 +18,7 @@ const PLACEHOLDER = fs.existsSync('data/placeholders.json')
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // same string scrape.mjs sends
 const SRC = 'images/_src';
+fs.mkdirSync(SRC, {recursive: true});
 const MIN_EDGE = 700;                 // below this a photo visibly softens on the product page
 const dry = process.argv.includes('--dry');
 // Named products only, when any are named. Re-measuring 1,425 products to improve ten of them is
