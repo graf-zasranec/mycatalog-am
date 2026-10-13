@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T07:05:33.412Z",
+ "generated": "2026-10-13T10:15:40.262Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -77245,7 +77245,7 @@
     "price": 495900,
     "title": "Laptop Lenovo LOQ 15IRX9 (83DV00FMRK) Luna Grey",
     "url": "https://eldorado.am/en/laptop-lenovo-loq-15irx9-83dv00fmrk-luna-grey",
-    "storage": 1024,
+    "storage": 512,
     "ram": 16,
     "inStock": true,
     "color": "Luna Gray",
@@ -90090,7 +90090,7 @@
     "price": 329900,
     "title": "Notebook ASUS Vivobook 15 X1504VA (X1504VA-BQ4056)",
     "url": "https://eldorado.am/en/asus-vivobook-15-x1504va-x1504va-bq4056",
-    "storage": null,
+    "storage": 512,
     "ram": 16,
     "inStock": true,
     "size": 15,
@@ -93311,7 +93311,7 @@
     "price": 94900,
     "title": "Tablet Honor Pad X8b NDL2-W09 (5301ARMH) Space Gray",
     "url": "https://eldorado.am/en/tablet-honor-pad-x8b-ndl2-w09-5301armh-space-gray",
-    "storage": 256,
+    "storage": 128,
     "ram": 4,
     "inStock": true,
     "color": "Gray",
@@ -94660,7 +94660,7 @@
     "price": 639900,
     "title": "Laptop Lenovo LOQ 15IRX10 (83JE00RNRK) Luna Grey",
     "url": "https://eldorado.am/en/laptop-lenovo-loq-15irx10-83je00rnrk-luna-grey",
-    "storage": null,
+    "storage": 512,
     "ram": 16,
     "inStock": true,
     "color": "Grey",
@@ -95220,7 +95220,7 @@
     "price": 59900,
     "title": "Tablet Honor Pad X7 JMS-W09 (5504ADQH) gray",
     "url": "https://eldorado.am/en/tablet-honor-pad-x7-jms-w09-5504adqh-gray",
-    "storage": null,
+    "storage": 128,
     "ram": 4,
     "inStock": true,
     "color": "Gray",
@@ -95254,7 +95254,7 @@
     "price": 169900,
     "title": "Tablet HONOR Pad X9a (5301AMVJ) Gray",
     "url": "https://eldorado.am/en/tablet-honor-pad-x9a-5301amvj-gray",
-    "storage": null,
+    "storage": 128,
     "ram": 6,
     "inStock": true,
     "color": "Gray",
@@ -96325,7 +96325,9 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 119900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "sennheiser-momentum-sport-msport1": [
@@ -96339,7 +96341,9 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 119900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sennheiser-momentum-sport-msport1",
@@ -96351,7 +96355,9 @@
     "inStock": true,
     "color": "Olive",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 119900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sennheiser-momentum-sport-msport1",
@@ -96363,7 +96369,9 @@
     "inStock": true,
     "color": "Graphite",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 119900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "sennheiser-momentum-4": [
@@ -96377,7 +96385,9 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 129900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sennheiser-momentum-4",
@@ -96389,19 +96399,9 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
-   {
-    "id": "sennheiser-momentum-4",
-    "shop": "eldorado",
-    "title": "Sennheiser Momentum 4",
-    "price": 129900,
-    "storage": null,
-    "ram": null,
-    "color": "Graphite",
-    "url": "https://eldorado.am/en/sennheiser-momentum-wireless-4-grafit",
-    "seeded": true,
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 129900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sennheiser-momentum-4",
@@ -96437,6 +96437,19 @@
     "inStock": true,
     "color": null,
     "shop": "zigzag",
+    "seen": "2026-10-13"
+   },
+   {
+    "id": "sennheiser-momentum-4",
+    "shop": "eldorado",
+    "title": "Sennheiser Momentum Wireless 4 Grafit Headphone",
+    "price": 169900,
+    "storage": null,
+    "ram": null,
+    "color": "Graphite",
+    "url": "https://eldorado.am/en/sennheiser-momentum-wireless-4-grafit",
+    "seeded": true,
+    "inStock": true,
     "seen": "2026-10-13"
    }
   ],
@@ -96475,11 +96488,13 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 219900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sonos-ace",
-    "price": 219900,
+    "price": 261900,
     "title": "Wireless Headset Sonos Ace (ACEG1R21) White",
     "url": "https://eldorado.am/en/sonos-ace-aceg1r21-white",
     "storage": null,
@@ -96487,22 +96502,12 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 219900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-43v6c": [
-   {
-    "id": "tcl-43v6c",
-    "price": 149900,
-    "title": "Smart TV TCL 43V6C",
-    "url": "https://eldorado.am/en/tcl-43v6c",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "tcl-43v6c",
     "price": 149900,
@@ -96514,21 +96519,23 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
-   }
-  ],
-  "samsung-qe43q7faauxru": [
+   },
    {
-    "id": "samsung-qe43q7faauxru",
-    "price": 157000,
-    "title": "Smart TV Samsung QE43Q7FAAUXRU",
-    "url": "https://eldorado.am/en/smart-tv-samsung-qe43q7faauxru",
+    "id": "tcl-43v6c",
+    "price": 149900,
+    "title": "Smart TV TCL 43V6C",
+    "url": "https://eldorado.am/en/tcl-43v6c",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
+    "seen": "2026-10-13",
+    "oldPrice": 149900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   }
+  ],
+  "samsung-qe43q7faauxru": [
    {
     "id": "samsung-qe43q7faauxru",
     "price": 157000,
@@ -96540,6 +96547,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-12"
+   },
+   {
+    "id": "samsung-qe43q7faauxru",
+    "price": 157000,
+    "title": "Smart TV Samsung QE43Q7FAAUXRU",
+    "url": "https://eldorado.am/en/smart-tv-samsung-qe43q7faauxru",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 157000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "xiaomi-a-43-2026": [
@@ -96554,7 +96575,9 @@
     "size": 43,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 149900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "xiaomi-a-43-2026",
@@ -96571,7 +96594,7 @@
    },
    {
     "id": "xiaomi-a-43-2026",
-    "price": 179900,
+    "price": 187900,
     "title": "Smart TV XIAOMI A 50 2026 (L50MB-ARU)",
     "url": "https://eldorado.am/en/smart-tv-xiaomi-a-50-2026-l50mb-aru",
     "storage": null,
@@ -96580,7 +96603,9 @@
     "size": 50,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 179900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "xiaomi-a-43-2026",
@@ -96593,7 +96618,9 @@
     "size": 65,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 279900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-43p7k": [
@@ -96607,7 +96634,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 159900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "tcl-43p7k",
@@ -96634,7 +96663,9 @@
     "size": 43,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 169000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-43ua75009la": [
@@ -96648,7 +96679,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 177900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-43nu850b6la": [
@@ -96662,22 +96695,12 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 178900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe50q7faauxru": [
-   {
-    "id": "samsung-qe50q7faauxru",
-    "price": 209000,
-    "title": "Smart TV Samsung QE50Q7FAAUXRU",
-    "url": "https://eldorado.am/en/smart-tv-samsung-qe50q7faauxru",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "samsung-qe50q7faauxru",
     "price": 209000,
@@ -96689,21 +96712,23 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
-   }
-  ],
-  "tcl-50v6c": [
+   },
    {
-    "id": "tcl-50v6c",
-    "price": 209900,
-    "title": "Smart TV TCL 50V6C",
-    "url": "https://eldorado.am/en/tcl-50v6c",
+    "id": "samsung-qe50q7faauxru",
+    "price": 209000,
+    "title": "Smart TV Samsung QE50Q7FAAUXRU",
+    "url": "https://eldorado.am/en/smart-tv-samsung-qe50q7faauxru",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
+    "seen": "2026-10-13",
+    "oldPrice": 209000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   }
+  ],
+  "tcl-50v6c": [
    {
     "id": "tcl-50v6c",
     "price": 209900,
@@ -96715,6 +96740,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "tcl-50v6c",
+    "price": 209900,
+    "title": "Smart TV TCL 50V6C",
+    "url": "https://eldorado.am/en/tcl-50v6c",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 209900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-43qned70b6c": [
@@ -96728,7 +96767,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 215900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-43nano80a6b": [
@@ -96742,7 +96783,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 219900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-55p7k": [
@@ -96756,7 +96799,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 229900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "tcl-55p7k",
@@ -96775,18 +96820,6 @@
    {
     "id": "tcl-50p7l",
     "price": 234500,
-    "title": "Smart TV TCL 50P7L",
-    "url": "https://eldorado.am/en/tcl-50p7l",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
-   {
-    "id": "tcl-50p7l",
-    "price": 234500,
     "title": "TCL 50P7L QLED@",
     "url": "https://www.zigzag.am/am/tcl-50p7l-qledat.html",
     "storage": null,
@@ -96795,21 +96828,23 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
-   }
-  ],
-  "samsung-qe55q7faauxru": [
+   },
    {
-    "id": "samsung-qe55q7faauxru",
-    "price": 247000,
-    "title": "Smart TV Samsung QE55Q7FAAUXRU",
-    "url": "https://eldorado.am/en/samsung-qe55q7faauxru",
+    "id": "tcl-50p7l",
+    "price": 234500,
+    "title": "Smart TV TCL 50P7L",
+    "url": "https://eldorado.am/en/tcl-50p7l",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
+    "seen": "2026-10-13",
+    "oldPrice": 234500,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   }
+  ],
+  "samsung-qe55q7faauxru": [
    {
     "id": "samsung-qe55q7faauxru",
     "price": 247000,
@@ -96821,6 +96856,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "samsung-qe55q7faauxru",
+    "price": 247000,
+    "title": "Smart TV Samsung QE55Q7FAAUXRU",
+    "url": "https://eldorado.am/en/samsung-qe55q7faauxru",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 247000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-50nu850b6la": [
@@ -96834,7 +96883,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 247900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-50qned70b6c": [
@@ -96848,7 +96899,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 278900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ue55du8000uxru": [
@@ -96862,7 +96915,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 279000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-ue55du8000uxru",
@@ -96888,22 +96943,12 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 287900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ue55m70hauxpy": [
-   {
-    "id": "samsung-ue55m70hauxpy",
-    "price": 299000,
-    "title": "Smart TV Samsung UE55M70HAUXPY",
-    "url": "https://eldorado.am/en/samsung-ue55m70hauxpy",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "samsung-ue55m70hauxpy",
     "price": 299000,
@@ -96915,6 +96960,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "samsung-ue55m70hauxpy",
+    "price": 299000,
+    "title": "Smart TV Samsung UE55M70HAUXPY",
+    "url": "https://eldorado.am/en/samsung-ue55m70hauxpy",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 299000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-50qned80a6a": [
@@ -96928,7 +96987,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 299900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "lg-50qned80a6a",
@@ -96954,7 +97015,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 307900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-55qned80a6a": [
@@ -96968,7 +97031,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 309900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-55qned70a6a": [
@@ -96982,22 +97047,12 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 309900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-50c6k": [
-   {
-    "id": "tcl-50c6k",
-    "price": 309900,
-    "title": "Smart TV TCL 50C6K",
-    "url": "https://eldorado.am/en/tcl-50c6k",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "tcl-50c6k",
     "price": 309900,
@@ -97009,6 +97064,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-12"
+   },
+   {
+    "id": "tcl-50c6k",
+    "price": 309900,
+    "title": "Smart TV TCL 50C6K",
+    "url": "https://eldorado.am/en/tcl-50c6k",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 309900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-55qned80t6a": [
@@ -97022,7 +97091,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 319900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "xiaomi-a-65-2025": [
@@ -97041,7 +97112,7 @@
    },
    {
     "id": "xiaomi-a-65-2025",
-    "price": 279900,
+    "price": 339900,
     "title": "Smart TV XIAOMI LED A 65 2025 (L65MA-ARU)",
     "url": "https://eldorado.am/en/xiaomi-led-a-65-2025-l65ma-aru",
     "storage": null,
@@ -97050,7 +97121,9 @@
     "size": 65,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 279900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-65ua75009la": [
@@ -97064,22 +97137,12 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 349900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-55p8l": [
-   {
-    "id": "tcl-55p8l",
-    "price": 359900,
-    "title": "Smart TV TCL 55P8L",
-    "url": "https://eldorado.am/en/tcl-55p8l",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "tcl-55p8l",
     "price": 359900,
@@ -97091,6 +97154,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "tcl-55p8l",
+    "price": 359900,
+    "title": "Smart TV TCL 55P8L",
+    "url": "https://eldorado.am/en/tcl-55p8l",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 359900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-65nu850b6la": [
@@ -97104,7 +97181,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 367900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-55qned80b6b": [
@@ -97118,14 +97197,16 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 372900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe55q60abuxru": [
    {
     "id": "samsung-qe55q60abuxru",
     "price": 399000,
-    "title": "Smart TV Samsung 55'' QLED 4K Q60AB (QE55Q60ABUXRU)",
+    "title": "Smart TV Samsung 55'' QLED 4K Q60AB  (QE55Q60ABUXRU)",
     "url": "https://eldorado.am/en/samsung-qe55q60abuxru",
     "storage": null,
     "ram": null,
@@ -97133,22 +97214,12 @@
     "size": 55,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-65p8k": [
-   {
-    "id": "tcl-65p8k",
-    "price": 399900,
-    "title": "Smart TV TCL 65P8K",
-    "url": "https://eldorado.am/en/smart-tv-tcl-65p8k",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "tcl-65p8k",
     "price": 399900,
@@ -97160,6 +97231,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-12"
+   },
+   {
+    "id": "tcl-65p8k",
+    "price": 399900,
+    "title": "Smart TV TCL 65P8K",
+    "url": "https://eldorado.am/en/smart-tv-tcl-65p8k",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-55qned82a6b": [
@@ -97173,22 +97258,12 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-75t6d": [
-   {
-    "id": "tcl-75t6d",
-    "price": 415900,
-    "title": "Smart TV TCL 75T6D",
-    "url": "https://eldorado.am/en/tcl-75t6d",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "tcl-75t6d",
     "price": 415900,
@@ -97200,21 +97275,23 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
-   }
-  ],
-  "lg-55qned86a6a": [
+   },
    {
-    "id": "lg-55qned86a6a",
-    "price": 419900,
-    "title": "Smart TV LG 55QNED86A6A",
-    "url": "https://eldorado.am/en/smart-tv-lg-55qned86a6a",
+    "id": "tcl-75t6d",
+    "price": 415900,
+    "title": "Smart TV TCL 75T6D",
+    "url": "https://eldorado.am/en/tcl-75t6d",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
+    "seen": "2026-10-13",
+    "oldPrice": 415900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   }
+  ],
+  "lg-55qned86a6a": [
    {
     "id": "lg-55qned86a6a",
     "price": 419900,
@@ -97226,6 +97303,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "lg-55qned86a6a",
+    "price": 419900,
+    "title": "Smart TV LG 55QNED86A6A",
+    "url": "https://eldorado.am/en/smart-tv-lg-55qned86a6a",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 419900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-55qned86t6a": [
@@ -97239,7 +97330,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 429900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "lg-55qned86t6a",
@@ -97258,18 +97351,6 @@
    {
     "id": "tcl-65p8l",
     "price": 459900,
-    "title": "Smart TV TCL 65P8L",
-    "url": "https://eldorado.am/en/tcl-65p8l",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
-   {
-    "id": "tcl-65p8l",
-    "price": 459900,
     "title": "TCL 65P8L QLED",
     "url": "https://www.zigzag.am/am/tcl-65p8l-qledat.html",
     "storage": null,
@@ -97278,21 +97359,23 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
-   }
-  ],
-  "tcl-75v6d": [
+   },
    {
-    "id": "tcl-75v6d",
+    "id": "tcl-65p8l",
     "price": 459900,
-    "title": "Smart TV TCL 75V6D",
-    "url": "https://eldorado.am/en/tcl-75v6d",
+    "title": "Smart TV TCL 65P8L",
+    "url": "https://eldorado.am/en/tcl-65p8l",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
+    "seen": "2026-10-13",
+    "oldPrice": 459900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   }
+  ],
+  "tcl-75v6d": [
    {
     "id": "tcl-75v6d",
     "price": 459900,
@@ -97304,6 +97387,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "tcl-75v6d",
+    "price": 459900,
+    "title": "Smart TV TCL 75V6D",
+    "url": "https://eldorado.am/en/tcl-75v6d",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 459900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-65qned80b6b": [
@@ -97317,7 +97414,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 494900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-65qned86t6a": [
@@ -97331,7 +97430,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 499900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "lg-65qned86t6a",
@@ -97357,21 +97458,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   }
-  ],
-  "tcl-75c7k": [
-   {
-    "id": "tcl-75c7k",
-    "price": 538900,
-    "title": "Smart TV TCL 75C7K",
-    "url": "https://eldorado.am/en/smart-tv-tcl-75c7k",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 522900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-65c7l": [
@@ -97385,7 +97474,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 543900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "tcl-65c7l",
@@ -97404,18 +97495,6 @@
    {
     "id": "tcl-85p7l",
     "price": 559900,
-    "title": "Smart TV TCL 85P7L",
-    "url": "https://eldorado.am/en/tcl-85p7l",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
-   {
-    "id": "tcl-85p7l",
-    "price": 559900,
     "title": "TCL 85P7L QLED@",
     "url": "https://www.zigzag.am/am/tcl-85p7l-qledat.html",
     "storage": null,
@@ -97424,6 +97503,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "tcl-85p7l",
+    "price": 559900,
+    "title": "Smart TV TCL 85P7L",
+    "url": "https://eldorado.am/en/tcl-85p7l",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 559900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-65qned80a6a": [
@@ -97437,7 +97530,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 611900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe55s95cauxru": [
@@ -97464,7 +97559,9 @@
     "size": 55,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 629000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-75qned70b6a": [
@@ -97478,7 +97575,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 632900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe75q60dauxru": [
@@ -97492,7 +97591,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 689000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-qe75q60dauxru",
@@ -97518,7 +97619,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 719000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-qe65qn85dbuxru",
@@ -97544,7 +97647,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 729900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-85qned70b6a": [
@@ -97558,7 +97663,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 773900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe75q70dauxru": [
@@ -97572,7 +97679,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 799000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-qe75q70dauxru",
@@ -97591,18 +97700,6 @@
    {
     "id": "tcl-85p8l",
     "price": 869900,
-    "title": "Smart TV TCL 85P8L",
-    "url": "https://eldorado.am/en/tcl-85p8l",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
-   {
-    "id": "tcl-85p8l",
-    "price": 869900,
     "title": "TCL 85P8L QLED@",
     "url": "https://www.zigzag.am/am/tcl-85p8l-qledat.html",
     "storage": null,
@@ -97611,6 +97708,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "tcl-85p8l",
+    "price": 869900,
+    "title": "Smart TV TCL 85P8L",
+    "url": "https://eldorado.am/en/tcl-85p8l",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 869900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-oled65b5rla": [
@@ -97624,22 +97735,12 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 899900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe65qn90fauxru": [
-   {
-    "id": "samsung-qe65qn90fauxru",
-    "price": 916000,
-    "title": "Smart TV Samsung QE65QN90FAUXRU",
-    "url": "https://eldorado.am/en/smart-tv-samsung-qe65qn90fauxru",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "samsung-qe65qn90fauxru",
     "price": 916000,
@@ -97651,6 +97752,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "samsung-qe65qn90fauxru",
+    "price": 916000,
+    "title": "Smart TV Samsung QE65QN90FAUXRU",
+    "url": "https://eldorado.am/en/smart-tv-samsung-qe65qn90fauxru",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 916000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-qe65s90dauxru": [
@@ -97664,7 +97779,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 989000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-qe65s90dauxru",
@@ -97702,7 +97819,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 989000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-98p8k": [
@@ -97716,7 +97835,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 989900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "tcl-98p8k",
@@ -97735,7 +97856,7 @@
    {
     "id": "samsung-qe75qn90cauxru",
     "price": 999000,
-    "title": "Smart TV Samsung QE75QN90CAUXRU 75\" Neo QLED 4K",
+    "title": "Smart TV  Samsung QE75QN90CAUXRU 75\" Neo QLED 4K",
     "url": "https://eldorado.am/en/samsung-qe75qn90cauxru-75-neo-qled-4k",
     "storage": null,
     "ram": null,
@@ -97743,7 +97864,9 @@
     "size": 75,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 999000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-qe75qn90cauxru",
@@ -97762,18 +97885,6 @@
    {
     "id": "lg-oled55c6rla",
     "price": 1016900,
-    "title": "Smart TV LG OLED55C6RLA",
-    "url": "https://eldorado.am/en/smart-tv-lg-oled55c6rla",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
-   {
-    "id": "lg-oled55c6rla",
-    "price": 1016900,
     "title": "LG OLED55C6RLA",
     "url": "https://www.zigzag.am/am/lg-oled55c6rla.html",
     "storage": null,
@@ -97782,6 +97893,20 @@
     "color": null,
     "shop": "zigzag",
     "seen": "2026-10-13"
+   },
+   {
+    "id": "lg-oled55c6rla",
+    "price": 1016900,
+    "title": "Smart TV LG OLED55C6RLA",
+    "url": "https://eldorado.am/en/smart-tv-lg-oled55c6rla",
+    "storage": null,
+    "ram": null,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 1016900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-75qned86a6a": [
@@ -97795,7 +97920,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 1079900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-75qned85b6b": [
@@ -97809,7 +97936,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 1097900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-oled65c5rla": [
@@ -97823,7 +97952,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 1099900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "lg-oled65c5rla",
@@ -97849,7 +97980,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 1399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "tcl-98c6k": [
@@ -97863,13 +97996,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 1499000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-oled83c4rla": [
    {
     "id": "lg-oled83c4rla",
-    "price": 3299000,
+    "price": 2399900,
     "title": "Smart TV LG OLED83C4RLA",
     "url": "https://eldorado.am/en/lg-oled83c4rla",
     "storage": null,
@@ -97877,7 +98012,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 3299000,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "lg-oled83c4rla",
@@ -97903,7 +98040,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 2429900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "samsung-qe77s95fauxru",
@@ -97921,7 +98060,7 @@
   "tcl-115c7k": [
    {
     "id": "tcl-115c7k",
-    "price": 6398900,
+    "price": 4792000,
     "title": "Smart TV TCL 115C7K",
     "url": "https://eldorado.am/en/tcl-115c7k",
     "storage": null,
@@ -97929,21 +98068,25 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 6398900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "bo-beosound-explore": [
    {
     "id": "bo-beosound-explore",
-    "price": 69900,
-    "title": "Speaker Bang &amp; Olufsen Beosound Explore",
+    "price": 88900,
+    "title": "Speaker Bang & Olufsen Beosound Explore",
     "url": "https://eldorado.am/en/bang-olufsen-beosound-explore",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 69900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "bo-beosound-explore",
@@ -98043,7 +98186,7 @@
    },
    {
     "id": "sonos-era-300",
-    "price": 229900,
+    "price": 279900,
     "title": "Speaker Stereo Sonos Era 300 White",
     "url": "https://eldorado.am/en/sonos-era-300-white",
     "storage": null,
@@ -98051,25 +98194,29 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 229900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sonos-era-300",
-    "price": 229900,
-    "title": "Speaker Stereo Sonos Era 300 Black",
+    "price": 279900,
+    "title": "Speaker Stereo  Sonos Era 300 Black",
     "url": "https://eldorado.am/en/sonos-era-300-black",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 229900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "sonos-arc": [
    {
     "id": "sonos-arc",
-    "price": 459900,
+    "price": 552900,
     "title": "soundbar Soundbar Sonos Arc Black (ARCG1EU1BLK)",
     "url": "https://eldorado.am/en/sonos-arc-black-arcg1eu1blk",
     "storage": null,
@@ -98077,11 +98224,13 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 459900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sonos-arc",
-    "price": 459900,
+    "price": 552900,
     "title": "Soundbar Sonos Arc White (ARCG1EU1)",
     "url": "https://eldorado.am/en/sonos-arc-white-arcg1eu1",
     "storage": null,
@@ -98089,7 +98238,9 @@
     "inStock": true,
     "color": "White",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 459900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-l510mads04": [
@@ -98098,12 +98249,14 @@
     "price": 128900,
     "title": "Laptop Asus L510MADS04",
     "url": "https://eldorado.am/en/asus-l510mads04",
-    "storage": null,
-    "ram": null,
+    "storage": 128,
+    "ram": 4,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 128900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-l410ma-tb02-n4020-90nb0q15-m32880-star": [
@@ -98112,12 +98265,14 @@
     "price": 129900,
     "title": "Laptop Asus L410MA-TB02 N4020, 90NB0Q15-M32880 Star Black",
     "url": "https://eldorado.am/en/asus-l410ma-tb02-n4020-90nb0q15-m32880-star-black",
-    "storage": null,
-    "ram": null,
+    "storage": 64,
+    "ram": 4,
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 129900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001": [
@@ -98126,69 +98281,79 @@
     "price": 149900,
     "title": "Laptop Acer Aspire Lite AlL15-36P-C0M7 N150, NX.DE1AA.001 Light Silver",
     "url": "https://eldorado.am/en/acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001-light-silver",
-    "storage": null,
-    "ram": null,
+    "storage": 128,
+    "ram": 4,
     "inStock": true,
     "color": "Light Silver",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 149900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-82xb00hvus": [
    {
     "id": "lenovo-82xb00hvus",
-    "price": 142900,
+    "price": 149900,
     "title": "Laptop Lenovo 82XB00HVUS",
     "url": "https://eldorado.am/en/lenovo-82xb00hvus",
-    "storage": null,
-    "ram": null,
+    "storage": 128,
+    "ram": 4,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 142900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-83l7002nus": [
    {
     "id": "lenovo-83l7002nus",
-    "price": 199900,
+    "price": 229900,
     "title": "Laptop Lenovo 83L7002NUS",
     "url": "https://eldorado.am/en/lenovo-83l7002nus",
-    "storage": null,
-    "ram": null,
+    "storage": 128,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 199900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11": [
    {
     "id": "asus-vivobook-15-core-3-100u-x1504vap-c38128-w11",
-    "price": 215900,
+    "price": 239900,
     "title": "Laptop ASUS Vivobook 15, Core 3-100U, X1504VAP-C38128, W11, Quiet Blue",
     "url": "https://eldorado.am/en/asus-vivobook-15-core-3-100u-x1504vap-c38128-w11-quiet-blue",
-    "storage": null,
-    "ram": null,
+    "storage": 128,
+    "ram": 8,
     "inStock": true,
     "size": 15,
     "color": "Blue",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 215900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-82vg00wxus": [
    {
     "id": "lenovo-82vg00wxus",
-    "price": 249900,
+    "price": 279900,
     "title": "Laptop Lenovo 82VG00WXUS",
     "url": "https://eldorado.am/en/laptop-lenovo-82vg00wxus",
-    "storage": null,
-    "ram": null,
+    "storage": 256,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 249900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-15-m1502n": [
@@ -98197,170 +98362,194 @@
     "price": 279900,
     "title": "Laptop Asus Vivobook 15 M1502N (M1502NAQ-BQ255)",
     "url": "https://eldorado.am/en/laptop-asus-vivobook-15-m1502n-m1502naq-bq255",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "size": 15,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 279900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus": [
    {
     "id": "lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus",
-    "price": 239900,
+    "price": 289900,
     "title": "Laptop Lenovo IdeaPad Slim 3, 15.6”, W11, Abyss Bl 82XQ012HUS",
     "url": "https://eldorado.am/en/lenovo-ideapad-slim-3-15-6-w11-abyss-bl-82xq012hus",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 8,
     "inStock": true,
     "size": 15,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 239900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-82yu016tpb": [
    {
     "id": "lenovo-82yu016tpb",
-    "price": 269900,
+    "price": 299900,
     "title": "Laptop Lenovo 82YU016TPB",
     "url": "https://eldorado.am/en/lenovo-82yu016tpb",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 269900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-83b40008us": [
    {
     "id": "lenovo-83b40008us",
-    "price": 315900,
+    "price": 335900,
     "title": "Laptop Lenovo 83B40008US",
     "url": "https://eldorado.am/en/laptop-lenovo-83b40008us",
-    "storage": null,
-    "ram": null,
+    "storage": 256,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 315900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-slim-3-16irh10": [
    {
     "id": "lenovo-ideapad-slim-3-16irh10",
-    "price": 329900,
+    "price": 379900,
     "title": "Laptop Lenovo IdeaPad Slim 3 16IRH10 (83K2000WRK)",
     "url": "https://eldorado.am/en/lenovo-ideapad-slim-3-16irh10-83k2000wrk",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 329900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-83lk0001us": [
    {
     "id": "lenovo-83lk0001us",
-    "price": 369900,
+    "price": 389900,
     "title": "Laptop Lenovo 83LK0001US",
     "url": "https://eldorado.am/en/laptop-lenovo-83lk0001us",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 8,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 369900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-17-x1704vap": [
    {
     "id": "asus-vivobook-17-x1704vap",
-    "price": 359900,
+    "price": 395900,
     "title": "Notebook ASUS Vivobook 17 X1704VAP (X1704VA-AU1017)",
     "url": "https://eldorado.am/en/asus-vivobook-17-x1704vap-x1704va-au1017",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 359900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-expertbook-p1-p1503cva-misty": [
    {
     "id": "asus-expertbook-p1-p1503cva-misty",
-    "price": 369900,
+    "price": 409900,
     "title": "Laptop Asus ExpertBook P1 P1503CVA (P1503CVA-S72252) Misty Grey",
     "url": "https://eldorado.am/en/laptop-asus-expertbook-p1-p1503cva-p1503cva-s72252-misty-grey",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": "Grey",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 369900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-think-book-14-g8-irl": [
    {
     "id": "lenovo-think-book-14-g8-irl",
-    "price": 379900,
+    "price": 409900,
     "title": "Notebook Lenovo Think Book 14 G8 IRL (21SG008KRT)",
     "url": "https://eldorado.am/en/lenovo-think-book-14-g8-irl-21sg008krt",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "size": 14,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 379900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11": [
    {
     "id": "lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11",
-    "price": 389900,
+    "price": 409900,
     "title": "Laptop Lenovo IdeaPad Slim 3, Ryzen 7-8840HS ,83KA000QUS Touch, Bklit, W11",
     "url": "https://eldorado.am/en/lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 389900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-s14-s3407v": [
    {
     "id": "asus-vivobook-s14-s3407v",
-    "price": 389900,
+    "price": 419900,
     "title": "Laptop ASUS Vivobook S14 S3407V (S3407VA-LY084)",
     "url": "https://eldorado.am/en/asus-vivobook-s14-s3407v-s3407va-ly084",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 389900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-16-i7-1355u-f1605va-ws74-w11": [
    {
     "id": "asus-vivobook-16-i7-1355u-f1605va-ws74-w11",
-    "price": 399900,
+    "price": 419900,
     "title": "Laptop ASUS Vivobook 16, i7-1355U, F1605VA-WS74, W11, Black",
     "url": "https://eldorado.am/en/asus-vivobook-16-i7-1355u-f1605va-ws74-w11-black",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "size": 16,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11": [
@@ -98379,93 +98568,105 @@
    },
    {
     "id": "asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11",
-    "price": 389900,
+    "price": 419900,
     "title": "Laptop ASUS Vivobook 16, AMD Ryzen 7-7730U, 90NB10R1-M00CH0, W11",
     "url": "https://eldorado.am/en/asus-vivobook-16-amd-ryzen-7-7730u-90nb10r1-m00ch0-w11",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 16,
     "inStock": true,
     "size": 16,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 389900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "dell-15-ldc15250-7427blk-pus-touch-w11": [
    {
     "id": "dell-15-ldc15250-7427blk-pus-touch-w11",
-    "price": 399900,
+    "price": 419900,
     "title": "Laptop DELL 15, LDC15250-7427BLK-PUS, Touch, W11, Black",
     "url": "https://eldorado.am/en/dell-15-ldc15250-7427blk-pus-touch-w11-black",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "size": 15,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-s16-s3607v": [
    {
     "id": "asus-vivobook-s16-s3607v",
-    "price": 399900,
+    "price": 429900,
     "title": "Notebook ASUS Vivobook S16 S3607V (S3607VA-RP095)",
     "url": "https://eldorado.am/en/asus-vivobook-s16-s3607v-s3607va-rp095",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us": [
    {
     "id": "lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us",
-    "price": 399900,
+    "price": 429900,
     "title": "Laptop Lenovo IdeaPad 5 2-in 1, Touch, W11, Grey 83DS0056US",
     "url": "https://eldorado.am/en/lenovo-ideapad-5-2-in-1-touch-w11-grey-83ds0056us",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 16,
     "inStock": true,
     "color": "Grey",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus": [
    {
     "id": "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus",
-    "price": 429900,
+    "price": 449900,
     "title": "Laptop Lenovo IdeaPad Slim 5i, Core 7 240H, 83J1002SUS Luna Grey",
     "url": "https://eldorado.am/en/lenovo-ideapad-slim-5i-core-7-240h-83j1002sus-luna-grey",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": "Grey",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 429900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-b3405cca-ly0189": [
    {
     "id": "asus-b3405cca-ly0189",
-    "price": 419900,
+    "price": 459900,
     "title": "Laptop ASUS B3405CCA-LY0189 (90NX08L1-M006P0)",
     "url": "https://eldorado.am/en/laptop-asus-b3405cca-ly0189-90nx08l1-m006p0",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 419900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "hp-g10-470g10": [
    {
     "id": "hp-g10-470g10",
-    "price": 399900,
+    "price": 489900,
     "title": "Notebook HP G10 470G10 8GB/512 GB (859V4EA)",
     "url": "https://eldorado.am/en/hp-g10-470g10-8gb-512-gb-859v4ea",
     "storage": 512,
@@ -98473,7 +98674,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 399900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "honor-magicbook-x16-plus": [
@@ -98483,26 +98686,16 @@
     "title": "HONOR MagicBook X16 Plus 2025 (5301AMBC)",
     "url": "https://eldorado.am/en/honor-magicbook-x16-plus-2025-5301ambc",
     "storage": 1024,
-    "ram": 16,
+    "ram": 32,
     "inStock": true,
     "color": "Space Gray",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 489900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-p5405csa": [
-   {
-    "id": "asus-p5405csa",
-    "price": 479900,
-    "title": "Laptop ASUS P5405CSA (P5405CSA-NZ0147) (90NX0861-M005D0)",
-    "url": "https://eldorado.am/en/laptop-asus-p5405csa-p5405csa-nz0147-90nx0861-m005d0",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
-   },
    {
     "id": "asus-p5405csa",
     "price": 495000,
@@ -98516,152 +98709,222 @@
     "color": null,
     "shop": "ibolit",
     "seen": "2026-10-12"
+   },
+   {
+    "id": "asus-p5405csa",
+    "price": 499900,
+    "title": "Laptop ASUS P5405CSA (P5405CSA-NZ0147) (90NX0861-M005D0)",
+    "url": "https://eldorado.am/en/laptop-asus-p5405csa-p5405csa-nz0147-90nx0861-m005d0",
+    "storage": 512,
+    "ram": 16,
+    "inStock": true,
+    "color": null,
+    "shop": "eldorado",
+    "seen": "2026-10-13",
+    "oldPrice": 479900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   },
+   {
+    "id": "asus-p5405csa",
+    "shop": "eldorado",
+    "title": "Laptop ASUS P5405CSA (P5405CSA-NZ0209) (90NX0861-M008B0)",
+    "price": 639900,
+    "storage": 1024,
+    "ram": 32,
+    "color": null,
+    "url": "https://eldorado.am/en/laptop-asus-p5405csa-p5405csa-nz0209-90nx0861-m008b0",
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-13"
    }
   ],
   "asus-k3605v": [
    {
     "id": "asus-k3605v",
-    "price": 459900,
+    "price": 499900,
     "title": "Laptop ASUS K3605V (K3605VC-RP473) (90NB11D1-M00N20)",
     "url": "https://eldorado.am/en/laptop-asus-k3605v-k3605vc-rp473-90nb11d1-m00n20",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 459900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   },
+   {
+    "id": "asus-k3605v",
+    "shop": "eldorado",
+    "title": "Laptop ASUS K3605V (K3605VC-RP475) (90NB11D1-M00N40)",
+    "price": 539900,
+    "storage": 1024,
+    "ram": 16,
+    "color": null,
+    "url": "https://eldorado.am/en/laptop-asus-k3605v-k3605vc-rp475-90nb11d1-m00n40",
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-13"
    }
   ],
   "lenovo-ideapad-slim-5-14irh10r": [
    {
     "id": "lenovo-ideapad-slim-5-14irh10r",
-    "price": 459900,
+    "price": 499900,
     "title": "Laptop Lenovo IdeaPad Slim 5 14IRH10R (83J0001ARK)",
     "url": "https://eldorado.am/en/laptop-lenovo-ideapad-slim-5-14irh10r-83j0001ark",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 32,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 459900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-slim-516irh10": [
    {
     "id": "lenovo-ideapad-slim-516irh10",
-    "price": 429900,
+    "price": 499900,
     "title": "Notebook Lenovo IdeaPad Slim 5 16IRH10 R (83J1001DRK)",
     "url": "https://eldorado.am/en/lenovo-ideapad-slim-5-16irh10-r-83j1001drk",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 429900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+   },
+   {
+    "id": "lenovo-ideapad-slim-516irh10",
+    "shop": "eldorado",
+    "title": "Laptop Lenovo IdeaPad Slim 5 16IRH10R (83J1001ERK)",
+    "price": 499900,
+    "storage": 1024,
+    "ram": 32,
+    "color": null,
+    "url": "https://eldorado.am/en/laptop-lenovo-ideapad-slim-5-16irh10r-83j1001erk",
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-13"
+   },
+   {
+    "id": "lenovo-ideapad-slim-516irh10",
+    "shop": "eldorado",
+    "title": "Laptop Lenovo IdeaPad Slim 516IRH10 (83HS002SRK)",
+    "price": 529900,
+    "storage": 1024,
+    "ram": 32,
+    "color": null,
+    "url": "https://eldorado.am/en/laptop-lenovo-ideapad-slim-516irh10-83hs002srk",
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-13"
    }
   ],
   "lenovo-83lk00cvus": [
    {
     "id": "lenovo-83lk00cvus",
-    "price": 439900,
+    "price": 499900,
     "title": "Laptop Lenovo 83LK00CVUS",
     "url": "https://eldorado.am/en/laptop-lenovo-83lk00cvus",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 439900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-loq-15iax9": [
    {
     "id": "lenovo-loq-15iax9",
-    "price": 499900,
+    "price": 529900,
     "title": "Laptop Lenovo LOQ 15IAX9 (83GS005DRK)",
     "url": "https://eldorado.am/en/laptop-lenovo-loq-15iax9-83gs005drk",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 499900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "hp-victus-clamshell-roaree-24c1": [
    {
     "id": "hp-victus-clamshell-roaree-24c1",
-    "price": 449900,
+    "price": 539900,
     "title": "HP Victus Clamshell Roaree 24C1 (A1LJ8EA) Notebook",
     "url": "https://eldorado.am/en/hp-victus-clamshell-roaree-24c1-a1lj8ea",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 449900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-b3605cca-mb0080": [
    {
     "id": "asus-b3605cca-mb0080",
-    "price": 519900,
+    "price": 549900,
     "title": "Laptop ASUS B3605CCA-MB0080 (90NX08N1-M00340)",
     "url": "https://eldorado.am/en/laptop-asus-b3605cca-mb0080-90nx08n1-m00340",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 519900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-b3405cca-ly0191": [
    {
     "id": "asus-b3405cca-ly0191",
-    "price": 519900,
+    "price": 549900,
     "title": "Laptop ASUS B3405CCA-LY0191 (90NX08L1-M006U0)",
     "url": "https://eldorado.am/en/laptop-asus-b3405cca-ly0191-90nx08l1-m006u0",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 519900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-expertbook-b5-b5405cca": [
    {
     "id": "asus-expertbook-b5-b5405cca",
-    "price": 519900,
+    "price": 579900,
     "title": "Laptop Asus ExpertBook B5 B5405CCA (B5405CCA-NZ1264)",
     "url": "https://eldorado.am/en/laptop-asus-expertbook-b5-b5405cca-b5405cca-nz1264",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 32,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
-   }
-  ],
-  "asus-fa707": [
-   {
-    "id": "asus-fa707",
-    "price": 529900,
-    "title": "Laptop ASUS FA707 (FA707NUR-HX057) (90NR0JL5-M002W0)",
-    "url": "https://eldorado.am/en/laptop-asus-fa707-fa707nur-hx057-90nr0jl5-m002w0",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 519900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-ideapad-pro-5-16irh8": [
    {
     "id": "lenovo-ideapad-pro-5-16irh8",
-    "price": 569900,
+    "price": 598900,
     "title": "Laptop Lenovo IdeaPad Pro 5 16IRH8 16/512GB (83AQ0024RK)",
     "url": "https://eldorado.am/en/lenovo-ideapad-pro-5-16irh8-16-512gb-83aq0024rk",
     "storage": 512,
@@ -98669,8 +98932,10 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10",
-    "size": 16
+    "seen": "2026-10-13",
+    "size": 16,
+    "oldPrice": 569900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk": [
@@ -98689,21 +98954,23 @@
    },
    {
     "id": "lenovo-yoga-7-2in1-16-ultra-7-256v-83jt0028rk",
-    "price": 559900,
+    "price": 598900,
     "title": "Laptop Lenovo Yoga 7 2-in-1 16ILL10 (83JT0028RK)",
     "url": "https://eldorado.am/en/lenovo-83jt0028rk",
     "storage": 1024,
-    "ram": null,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 559900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "microsoft-surface-4": [
    {
     "id": "microsoft-surface-4",
-    "price": 489900,
+    "price": 599900,
     "title": "Laptop Microsoft Surface 4 16GB/1TB",
     "url": "https://eldorado.am/en/laptop-microsoft-surface-laptop-4-16gb-1tb",
     "storage": 1024,
@@ -98711,21 +98978,25 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 489900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-fa507": [
    {
     "id": "asus-fa507",
-    "price": 559900,
+    "price": 599900,
     "title": "Laptop ASUS FA507 (FA507NVR-LP040) (90NR0JK5-M00230)",
     "url": "https://eldorado.am/en/laptop-asus-fa507-fa507nvr-lp040-90nr0jk5-m00230",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 559900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-expert-book-b5-b5405cva": [
@@ -98734,32 +99005,36 @@
     "price": 599900,
     "title": "Notebook ASUS Expert Book B5 B5405CVA ( B5405CVA-LY0592)",
     "url": "https://eldorado.am/en/asus-expert-book-b5-b5405cva-b5405cva-ly0592",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 599900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "dell-n2y94": [
    {
     "id": "dell-n2y94",
-    "price": 599900,
+    "price": 629900,
     "title": "Laptop DELL N2Y94",
     "url": "https://eldorado.am/en/laptop-dell-n2y94",
-    "storage": null,
-    "ram": null,
+    "storage": 256,
+    "ram": 32,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 599900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "hp-envy-hayden-22c1": [
    {
     "id": "hp-envy-hayden-22c1",
-    "price": 599900,
+    "price": 799000,
     "title": "Notebook HP ENVY Hayden 22C1 16 GB/1 TB (6Y9T0EA)",
     "url": "https://eldorado.am/en/hp-envy-hayden-22c1-16-gb-1-tb-6y9t0ea",
     "storage": 1024,
@@ -98767,7 +99042,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 599900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vivobook-pro-15-q543mj-u93050-oled": [
@@ -98802,7 +99079,7 @@
    },
    {
     "id": "asus-vivobook-pro-15-q543mj-u93050-oled",
-    "price": 795900,
+    "price": 859900,
     "title": "Laptop Asus Vivobook PRO Q543MJ-U93050 CORE ULTRA 9 Earl Gray",
     "url": "https://eldorado.am/en/asus-vivobook-pro-q543mj-u93050-core-ultra-9-earl-grey",
     "storage": 2048,
@@ -98810,35 +99087,41 @@
     "inStock": true,
     "color": "Grey",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 795900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-tuf-gaming-a16-fa608p": [
    {
     "id": "asus-tuf-gaming-a16-fa608p",
-    "price": 795900,
+    "price": 859900,
     "title": "Laptop ASUS TUF Gaming A16 FA608P (FA608PM-RV041)",
     "url": "https://eldorado.am/en/asus-tuf-gaming-a16-fa608p-fa608pm-rv041",
-    "storage": null,
-    "ram": null,
+    "storage": 1024,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 795900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lenovo-83f00005us": [
    {
     "id": "lenovo-83f00005us",
-    "price": 849900,
+    "price": 959900,
     "title": "Laptop Lenovo 83F00005US",
     "url": "https://eldorado.am/en/laptop-lenovo-83f00005us",
-    "storage": null,
-    "ram": null,
+    "storage": 512,
+    "ram": 16,
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 849900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-24g411a-b": [
@@ -98852,7 +99135,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 59900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls24d304gau": [
@@ -98866,13 +99151,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 59900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vz24ehf-w": [
    {
     "id": "asus-vz24ehf-w",
-    "price": 59900,
+    "price": 63900,
     "title": "Monitor ASUS VZ24EHF-W (90LM07C2-B01470)",
     "url": "https://eldorado.am/en/monitor-asus-vz24ehf-w-90lm07c2-b01470",
     "storage": null,
@@ -98880,7 +99167,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 59900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-27u421a-b": [
@@ -98894,13 +99183,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 73900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vz27ehf-90lm07b0-b01470": [
    {
     "id": "asus-vz27ehf-90lm07b0-b01470",
-    "price": 68900,
+    "price": 75900,
     "title": "ASUS VZ27EHF 90LM07B0-B01470 Monitor",
     "url": "https://eldorado.am/en/asus-vz27ehf-90lm07b0-b01470",
     "storage": null,
@@ -98908,13 +99199,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 68900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-27d300gau": [
    {
     "id": "samsung-27d300gau",
-    "price": 59900,
+    "price": 75900,
     "title": "Monitor Samsung 27D300GAU Black",
     "url": "https://eldorado.am/en/samsung-27d300gau-black",
     "storage": null,
@@ -98922,7 +99215,9 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 59900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-24gs50f-b": [
@@ -98936,13 +99231,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 89900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "philips-24-usb-c-24e1n3300a-00": [
    {
     "id": "philips-24-usb-c-24e1n3300a-00",
-    "price": 75900,
+    "price": 96900,
     "title": "Monitor Philips 24\" USB-C 24E1N3300A/00",
     "url": "https://eldorado.am/en/philips-24-usb-c-24e1n3300a-00",
     "storage": null,
@@ -98950,13 +99247,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 75900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vg249q3a-90lm09b0-b01170": [
    {
     "id": "asus-vg249q3a-90lm09b0-b01170",
-    "price": 92900,
+    "price": 99000,
     "title": "Monitor Asus VG249Q3A 90LM09B0-B01170",
     "url": "https://eldorado.am/en/asus-vg249q3a-90lm09b0-b01170",
     "storage": null,
@@ -98964,7 +99263,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 92900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-27gs50f-b": [
@@ -98978,13 +99279,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 99900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls27dg300eu": [
    {
     "id": "samsung-ls27dg300eu",
-    "price": 82900,
+    "price": 99900,
     "title": "Monitor Samsung LS27DG300EU",
     "url": "https://eldorado.am/en/samsung-ls27dg300eu",
     "storage": null,
@@ -98992,13 +99295,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 82900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "dell-27-e2723h": [
    {
     "id": "dell-27-e2723h",
-    "price": 98900,
+    "price": 105900,
     "title": "Monitor Dell 27'' E2723H",
     "url": "https://eldorado.am/en/monitor-dell-27-e2723h",
     "storage": null,
@@ -99006,13 +99311,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 98900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vu279hfi-w": [
    {
     "id": "asus-vu279hfi-w",
-    "price": 98900,
+    "price": 109900,
     "title": "Monitor ASUS VU279HFI-W (90LM09IT-B01K70)",
     "url": "https://eldorado.am/en/monitor-asus-vu279hfi-w-90lm09it-b01k70",
     "storage": null,
@@ -99020,13 +99327,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 98900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-odyssey-g4-ls25bg400eixci": [
    {
     "id": "samsung-odyssey-g4-ls25bg400eixci",
-    "price": 85900,
+    "price": 117900,
     "title": "Monitor Samsung Odyssey G4 LS25BG400EIXCI",
     "url": "https://eldorado.am/en/samsung-odyssey-g4-ls25bg400eixci",
     "storage": null,
@@ -99034,13 +99343,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 85900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-va27dqsb-w": [
    {
     "id": "asus-va27dqsb-w",
-    "price": 113900,
+    "price": 119900,
     "title": "Monitor ASUS VA27DQSB-W (90LM06H4-B02370)",
     "url": "https://eldorado.am/en/asus-va27dqsb-w-90lm06h4-b02370",
     "storage": null,
@@ -99048,7 +99359,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 113900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-29u531a-w": [
@@ -99062,13 +99375,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 119900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls27bg400euxen": [
    {
     "id": "samsung-ls27bg400euxen",
-    "price": 99900,
+    "price": 119900,
     "title": "Monitor Samsung LS27BG400EUXEN",
     "url": "https://eldorado.am/en/samsung-ls27bg400euxen",
     "storage": null,
@@ -99076,7 +99391,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 99900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-27sr50f-w": [
@@ -99104,7 +99421,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 124900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-27u511sa-w": [
@@ -99118,7 +99437,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 129900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-32ur500k-b": [
@@ -99132,13 +99453,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 168900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-odyssey-g5-s32cg552eu": [
    {
     "id": "samsung-odyssey-g5-s32cg552eu",
-    "price": 149900,
+    "price": 177000,
     "title": "Monitor Samsung Odyssey G5 S32CG552EU",
     "url": "https://eldorado.am/en/samsung-odyssey-g5-s32cg552eu",
     "storage": null,
@@ -99146,13 +99469,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 149900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls32d700eau": [
    {
     "id": "samsung-ls32d700eau",
-    "price": 149900,
+    "price": 179000,
     "title": "Monitor Samsung LS32D700EAU",
     "url": "https://eldorado.am/en/samsung-ls32d700eau",
     "storage": null,
@@ -99160,7 +99485,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 149900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls34c500gau": [
@@ -99174,13 +99501,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 189900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-vg32aqa1a-90lm07l0-b02370": [
    {
     "id": "asus-vg32aqa1a-90lm07l0-b02370",
-    "price": 189900,
+    "price": 205900,
     "title": "ASUS VG32AQA1A 90LM07L0-B02370 Monitor",
     "url": "https://eldorado.am/en/asus-vg32aqa1a-90lm07l0-b02370",
     "storage": null,
@@ -99188,7 +99517,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 189900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "lg-34gp63a-b": [
@@ -99202,13 +99533,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 219900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-s27d402g": [
    {
     "id": "samsung-s27d402g",
-    "price": 199900,
+    "price": 229900,
     "title": "Monitor Samsung S27D402G Black",
     "url": "https://eldorado.am/en/samsung-s27d402g-black",
     "storage": null,
@@ -99216,13 +99549,15 @@
     "inStock": true,
     "color": "Black",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 199900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls32fm700uu": [
    {
     "id": "samsung-ls32fm700uu",
-    "price": 179900,
+    "price": 229900,
     "title": "Monitor Samsung LS32FM700UU",
     "url": "https://eldorado.am/en/samsung-ls32fm700uu",
     "storage": null,
@@ -99230,13 +99565,15 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 179900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "samsung-ls27bg650eu": [
    {
     "id": "samsung-ls27bg650eu",
-    "price": 199900,
+    "price": 249900,
     "title": "Monitor Samsung LS27BG650EU",
     "url": "https://eldorado.am/en/samsung-ls27bg650eu",
     "storage": null,
@@ -99244,33 +99581,39 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 199900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "sony-playstation-dualsense-ps5": [
    {
     "id": "sony-playstation-dualsense-ps5",
     "price": 37900,
-    "title": "Wireless Controller Sony Playstation DualSense PS5 Wireless Controller Purple",
+    "title": "Wireless Controller Sony  Playstation DualSense PS5 Wireless Controller Purple",
     "url": "https://eldorado.am/en/playstation-dualsense-ps5-wireless-controller-purple",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": "Purple",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 37900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sony-playstation-dualsense-ps5",
     "price": 37900,
-    "title": "Wireless Controller Sony Playstation DualSense PS5 Wireless Controller Starlight Blue",
+    "title": "Wireless Controller Sony  Playstation DualSense PS5 Wireless Controller Starlight Blue",
     "url": "https://eldorado.am/en/playstation-dualsense-ps5-wireless-controller-starlight-blue",
     "storage": null,
     "ram": null,
     "inStock": true,
     "color": "Starlight Blue",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 37900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sony-playstation-dualsense-ps5",
@@ -99282,7 +99625,9 @@
     "inStock": true,
     "color": "Sterling Silver",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 37900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    },
    {
     "id": "sony-playstation-dualsense-ps5",
@@ -99294,7 +99639,9 @@
     "inStock": true,
     "color": "Cosmic Red",
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 37900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "xiaomi-smart-air-purifier-4-pro-bhr5056eu": [
@@ -99333,7 +99680,9 @@
     "inStock": true,
     "color": null,
     "shop": "eldorado",
-    "seen": "2026-10-10"
+    "seen": "2026-10-13",
+    "oldPrice": 139900,
+    "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
    }
   ],
   "asus-rog-strix-g16": [
@@ -102878,14 +103227,15 @@
    {
     "id": "xiaomi-redmi-pad-2-pro",
     "shop": "eldorado",
-    "title": "Պլանշետ Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) Graphite Gray",
-    "price": 142900,
+    "title": "Tablet Xiaomi Redmi Pad 2 Pro 8GB/256GB RU (25099RP13G) Graphite Gray",
+    "price": 147900,
     "storage": 256,
     "ram": 8,
     "color": "Graphite Gray",
     "url": "https://eldorado.am/en/tablet-redmi-pad-2-pro-8gb-256gb-ru-25099rp13g-graphite-gray",
     "seeded": true,
-    "seen": "2026-10-10",
+    "inStock": true,
+    "seen": "2026-10-13",
     "cell": false
    }
   ],
@@ -103869,14 +104219,15 @@
    {
     "id": "garmin-cirqa-smart-band-mauve-s-m",
     "shop": "eldorado",
-    "title": "Խելացի թևնոց Garmin CIRQA Smart Band Mauve L-XL (010-04675-02)",
+    "title": "Smart band Garmin CIRQA Mauve L-XL (010-04675-02)",
     "price": 89000,
     "storage": null,
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/en/garmin-cirqatm-smart-band-mauve-l-xl-010-04675-02",
     "seeded": true,
-    "seen": "2026-10-10"
+    "inStock": true,
+    "seen": "2026-10-13"
    }
   ],
   "garmin-enduro-3": [
@@ -105740,50 +106091,54 @@
    {
     "id": "yandex-station-max",
     "shop": "eldorado",
-    "title": "Yandex Station Max YNDX-00053 Beige",
+    "title": "Խելացի բարձրախոս Yandex YNDX-00053 Max",
     "price": 194900,
     "storage": null,
     "ram": null,
     "color": "Beige",
     "url": "https://eldorado.am/am/jandeks-maks-s-alisoj-s-zigbee-bezhevyj",
     "seeded": true,
-    "seen": "2026-10-10"
+    "inStock": true,
+    "seen": "2026-10-13"
    },
    {
     "id": "yandex-station-max",
     "shop": "eldorado",
-    "title": "Yandex Station Max YNDX-00053Z",
+    "title": "Խելացի բարձրախոս Yandex YNDX-00053Z",
     "price": 194900,
     "storage": null,
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/am/jandeks-yndx-00053z",
     "seeded": true,
-    "seen": "2026-10-10"
+    "inStock": true,
+    "seen": "2026-10-13"
    },
    {
     "id": "yandex-station-max",
     "shop": "eldorado",
-    "title": "Yandex Station Max YNDX-00053K",
+    "title": "Խելացի բարձրախոս Yandex YNDX-00053K",
     "price": 194900,
     "storage": null,
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/am/smart-speaker-yandex-yndx-00053k",
     "seeded": true,
-    "seen": "2026-10-10"
+    "inStock": true,
+    "seen": "2026-10-13"
    },
    {
     "id": "yandex-station-max",
     "shop": "eldorado",
-    "title": "Yandex Station Max YNDX-00053T",
+    "title": "Խելացի բարձրախոս YNDX-00053T",
     "price": 194900,
     "storage": null,
     "ram": null,
     "color": null,
     "url": "https://eldorado.am/am/smart-speaker-yndx-00053t",
     "seeded": true,
-    "seen": "2026-10-10"
+    "inStock": true,
+    "seen": "2026-10-13"
    }
   ],
   "samsung-galaxy-s24-plus": [
@@ -107056,20 +107411,6 @@
     "seen": "2026-10-11"
    }
   ],
-  "microsoft-surface-go-2": [
-   {
-    "id": "microsoft-surface-go-2",
-    "shop": "eldorado",
-    "title": "Նոթբուք Microsoft Surface Go 2 8ԳԲ/256ԳԲ",
-    "price": 359900,
-    "storage": 256,
-    "ram": 8,
-    "color": null,
-    "url": "https://eldorado.am/en/microsoft-surface-laptop-go-2",
-    "seeded": true,
-    "seen": "2026-10-10"
-   }
-  ],
   "hisense-75e8s": [
    {
     "id": "hisense-75e8s",
@@ -108093,6 +108434,21 @@
     "ram": null,
     "color": null,
     "url": "https://shop.viva.am/en/product/flyingvoice-sr3000-5g/",
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-13"
+   }
+  ],
+  "microsoft-surface-go-2": [
+   {
+    "id": "microsoft-surface-go-2",
+    "shop": "eldorado",
+    "title": "Laptop Microsoft Surface Go 2 8GB/256GB",
+    "price": 499900,
+    "storage": 256,
+    "ram": 8,
+    "color": null,
+    "url": "https://eldorado.am/en/microsoft-surface-laptop-go-2",
     "seeded": true,
     "inStock": true,
     "seen": "2026-10-13"
