@@ -315,7 +315,7 @@ const offersFor = p => {
   const list = P.offers && P.offers[p.id];
   if (!list) return [];
   if (!pricedOffers.has(list)) pricedOffers.set(list,
-    list.filter(o => Number.isFinite(+o.price) && +o.price > 0));
+    list.filter(o => o.inStock !== false && Number.isFinite(+o.price) && +o.price > 0));
   return pricedOffers.get(list); // pre-sorted cheapest first
 };
 const hasReal = p => offersFor(p).length > 0;
@@ -377,8 +377,8 @@ function selectionOffers(p, sel) {
   const screens = new Set((p.variants || []).map(v => v.size).filter(v => v != null));
   return offersFor(p).filter(o => {
     const c = offerConfig(p, o);
-    return (sel.storage == null || p.variantUnit === 'mm' || c.storage === sel.storage
-        || (c.storage == null && sel.storage === Math.min(...capacities)))
+    return (sel.storage == null || c.storage === sel.storage
+        || (p.variantUnit !== 'mm' && c.storage == null && sel.storage === Math.min(...capacities)))
       && (sel.ram == null || c.ram === sel.ram)
       && (sel.cpu == null || c.cpu === sel.cpu)
       && (sel.size == null || c.size === sel.size || (screens.size < 2 && c.size == null))
@@ -2113,8 +2113,9 @@ const SKIPCYC = (typeof PAGEONLY !== 'undefined' && PAGEONLY) || {};
 const CTHUMB = (typeof COLORTHUMB !== 'undefined' && COLORTHUMB) || {};
 const cycList = id => {
   const seen = new Set();
+  const palette = new Set((byId(id)?.colors || []).map(slugOf));
   return Object.entries(CIMG[id] || {})
-    .filter(([k]) => k !== 'main' && !(SKIPCYC[id] || []).includes(k))
+    .filter(([k]) => palette.has(k) && !(SKIPCYC[id] || []).includes(k))
     .map(([k, v]) => [k, (CTHUMB[id] && CTHUMB[id][k]) || v])
     .filter(([, u]) => seen.has(u) ? false : (seen.add(u), true));
 };

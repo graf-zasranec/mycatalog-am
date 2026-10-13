@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { cpu } from './spec-values.mjs';
+import { cpu, storageGB } from './spec-values.mjs';
 // The same source cache used by shop-specs.mjs. Configuration facts belong to
 // the offer whose page stated them, rather than every build of a model family.
 export function attachOfferConfigs(products, offers) {
@@ -24,9 +24,9 @@ export function attachOfferConfigs(products, offers) {
       const builds = new Set((offers[p.id] || []).filter(row => row.url === o.url).map(row => [row.ram, row.storage, row.size].join('|')));
       if (builds.size === 1) {
         const ram = /^\s*(\d+)\s*GB\s*$/i.exec(String(s.RAM || ''));
-        const storage = /^\s*(\d+(?:\.\d+)?)\s*(GB|TB)\s*$/i.exec(String(s.Memory || ''));
+        const storage = storageGB(s.Memory);
         if (ram) o.ram = +ram[1];
-        if (storage) o.storage = +storage[1] * (storage[2].toUpperCase() === 'TB' ? 1024 : 1);
+        if (storage != null) o.storage = storage;
       }
       o.cpu = model;
       const display = {};

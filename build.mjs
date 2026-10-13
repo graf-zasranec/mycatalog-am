@@ -13,7 +13,7 @@ import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender, productRenderer } from './tools/prerender.mjs';
 import { pack, unpackSource } from './tools/compact-data.mjs';
-import { canonicalColors } from './tools/canonical-colors.mjs';
+import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 const heroPreviews = fs.existsSync('data/photo-previews.json') ? JSON.parse(rd('data/photo-previews.json')) : {};
@@ -239,14 +239,7 @@ function cutMap(inline, small) {
       ? 'data:image/webp;base64,' + fs.readFileSync(`${CUT}/${f}`).toString('base64')
       : `${CUT}/${f}`;
   }
-  for (const [id, aliases] of Object.entries(COLOR_ALIASES)) {
-    for (const from of Object.keys(aliases)) {
-      let to = from; const visited = new Set();
-      while (aliases[to] && !visited.has(to)) { visited.add(to); to = aliases[to]; }
-      const old = colourSlug(from), canonical = colourSlug(to);
-      if (m[id]?.[old] && !m[id][canonical]) m[id][canonical] = m[id][old];
-    }
-  }
+  for (const id of Object.keys(m)) m[id] = canonicalColorPhotos(id, m[id], COLOR_ALIASES);
   return m;
 }
 const productImages = cutMap(false);

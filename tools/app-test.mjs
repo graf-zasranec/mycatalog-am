@@ -48,7 +48,7 @@ const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
   offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
-  GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto,
+  GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -76,6 +76,23 @@ prices.offers['zero-price-check'] = [
 is(app.offersFor({ id: 'zero-price-check' }).map(o => o.storage), [64],
   'zero and invalid prices cannot become purchasable configuration options');
 delete prices.offers['zero-price-check'];
+const availabilityProduct = {id: 'availability-check', category: 'phone', variants: [{ram: 8, storage: 128}]};
+prices.offers[availabilityProduct.id] = [
+  {price: 47000, inStock: false, ram: 8, storage: 128, shop: 'yerevanmobile'},
+  {price: 65000, inStock: true, ram: 8, storage: 128, shop: 'pixel'},
+  {price: 70000, ram: 8, storage: 128, shop: 'viva'}
+];
+is(app.offersFor(availabilityProduct).map(o => o.shop), ['pixel', 'viva'], 'explicit sold-out records cannot reappear through hand or carried data');
+is(app.bestOf(availabilityProduct), 65000, 'a cheaper sold-out price cannot become the catalogue minimum');
+is(app.selectionOffers(availabilityProduct, {ram: 8, storage: 128}).length, 2, 'selected configuration excludes sold-out rows');
+delete prices.offers[availabilityProduct.id];
+const caseProduct = {id: 'watch-case-check',category:'watch',variantUnit:'mm',variants:[{storage:42},{storage:46}]};
+prices.offers[caseProduct.id] = [
+  {price:200000,storage:42}, {price:210000,storage:46}, {price:190000,storage:null}
+];
+is(app.selectionOffers(caseProduct,{storage:42}).map(o=>o.storage),[42],'a 42 mm Watch selection excludes 46 mm and unknown case sizes');
+is(app.selectionOffers(caseProduct,{storage:46}).map(o=>o.storage),[46],'a 46 mm Watch selection excludes 42 mm and unknown case sizes');
+delete prices.offers[caseProduct.id];
 const fold8 = phones.find(p => p.id === 'samsung-galaxy-z-fold-8');
 is(app.hayMatch(fold8, 'samsung fold'), true, 'two words, not contiguous, still match');
 is(app.hayMatch(fold8, 'fold samsung'), true, 'word order does not matter');
@@ -243,6 +260,8 @@ is(s512.length < s256.length, true, 'a bigger size starts from the day per-size 
 const historyBuild = { id: 'test-history-build', category: 'laptop', variants: [{ ram: 8, storage: 512 }, { ram: 16, storage: 512 }] };
 stub.HISTORY.points[historyBuild.id] = [{ d: '2026-10-05', lo: 100000, shops: 1, t: { 512: 100000 } }];
 is(app.histSeries(historyBuild, 512, null, 16).length, 0, 'selected RAM never borrows ambiguous storage-only history');
+stub.COLORIMG['apple-iphone-13'] = {main:'main.webp',blue:'blue.webp',green:'green.webp',midnight:'midnight.webp',pink:'pink.webp',starlight:'starlight.webp','midnight-512':'other-build.webp',unknown:'unknown.webp'};
+is(app.cycList('apple-iphone-13').map(([color])=>color).join(','), 'blue,green,midnight,pink,starlight', 'catalog dots use only the canonical declared palette, not main/configuration/unknown image keys');
 stub.COLORIMG['test-edition-photo'] = { black: 'standard.webp', 'black-2048': 'galaxy.webp', white: 'digital.webp' };
 is(app.colorPhoto({id:'test-edition-photo'}, 'Black', 2048), 'galaxy.webp', '2TB selects the verified special-edition photo');
 is(app.colorPhoto({id:'test-edition-photo'}, 'Black', 1024), 'standard.webp', '1TB keeps its standard Black photo');

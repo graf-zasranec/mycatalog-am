@@ -1,9 +1,13 @@
 import assert from 'node:assert/strict';
-import {canonicalColors} from './canonical-colors.mjs';
+import {canonicalColors, canonicalColorPhotos} from './canonical-colors.mjs';
 const aliases={honor:{Black:'Midnight Black',Silver:'Titanium Silver'},redmi:{'Midnight Black':'Black',Titanium:'Gray','Titan Gray':'Titanium'}};
 assert.deepEqual(canonicalColors('honor',['Green','Black','Midnight Black','Titanium Silver','Silver'],aliases),['Green','Midnight Black','Titanium Silver']);
 assert.deepEqual(canonicalColors('redmi',['Purple','Gray','Black','Midnight Black','Titanium'],aliases),['Purple','Gray','Black']);
 assert.deepEqual(canonicalColors('redmi',['Titan Gray'],aliases),['Gray']);
 assert.deepEqual(canonicalColors('unmapped',['Space Gray','Gray'],aliases),['Space Gray','Gray']);
 assert.deepEqual(canonicalColors('cycle',['Black','Gray'],{cycle:{Black:'Gray',Gray:'Black'}}),['Black','Gray']);
-console.log('CANONICAL_COLORS_PASS: five alias, chain, distinction and cycle cases');
+assert.deepEqual(canonicalColorPhotos('honor', {black:'alias.webp','midnight-black':'canonical.webp',main:'main.webp'}, aliases), {'midnight-black':'canonical.webp',main:'main.webp'});
+assert.deepEqual(canonicalColorPhotos('redmi', {titanium:'gray.webp','titan-gray':'gray2.webp',purple:'purple.webp'}, aliases), {gray:'gray.webp',purple:'purple.webp'});
+assert.deepEqual(canonicalColorPhotos('honor', {'black-2048':'special.webp',black:'standard.webp'}, aliases), {'midnight-black-2048':'special.webp','midnight-black':'standard.webp'});
+assert.deepEqual(canonicalColorPhotos('cycle', {black:'b.webp',gray:'g.webp'}, {cycle:{Black:'Gray',Gray:'Black'}}), {black:'b.webp',gray:'g.webp'});
+console.log('CANONICAL_COLORS_PASS: palettes, photo aliases, special configurations and cycles');

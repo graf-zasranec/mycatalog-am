@@ -1,0 +1,33 @@
+{
+  "check": "Own product purchase form; recommendation cart controls ignored",
+  "pages": [
+    {
+      "url": "https://shop.ucom.am/en/apple-watch-ultra-4-gps-cellular-milanese-loop.html",
+      "status": 200,
+      "form": true,
+      "button": null,
+      "h1": "Apple Watch Ultra 4 GPS + Cellular + Milanese Loop"
+    },
+    {
+      "url": "https://www.yerevanmobile.am/en/google-pixel-10a.html",
+      "status": 200,
+      "form": true,
+      "button": null,
+      "h1": "Google Pixel 10a"
+    },
+    {
+      "url": "https://www.yerevanmobile.am/en/apple-iphone-16-pro.html",
+      "status": 200,
+      "form": true,
+      "button": null,
+      "h1": "Apple iPhone 16 Pro"
+    },
+    {
+      "url": "https://www.yerevanmobile.am/en/xiaomi-redmi-a7.html",
+      "status": 200,
+      "form": true,
+      "button": null,
+      "h1": "Xiaomi Redmi A7"
+    }
+  ]
+}

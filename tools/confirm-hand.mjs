@@ -394,8 +394,8 @@ for (const [host, file] of CACHED) {
   let n = 0;
   for (const c of list) {
     const price = Math.round(Number(c && c.price));
-    if (!c || !c.url || !(price >= FLOOR) || (host === 'eldorado.am' && !/^\d{4}-\d{2}-\d{2}$/.test(c.checked || ''))) continue;
-    CACHE.set(tidy(c.url), { price, how: host.split('.')[0] + '-listing', stock: c.inStock !== false, day: host === 'eldorado.am' ? c.checked : day, title: c.title || '' });
+    if (!c || !c.url || !(price >= FLOOR) || (['eldorado.am', 'zigzag.am'].includes(host) && !/^\d{4}-\d{2}-\d{2}$/.test(c.checked || ''))) continue;
+    CACHE.set(tidy(c.url), { price, how: host.split('.')[0] + '-listing', stock: c.inStock !== false, day: c.checked || day, title: c.title || '' });
     n++;
   }
   console.log(`${file}: ${n} listing(s), read ${day}`);

@@ -20,10 +20,11 @@ import json
 import re
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 from scrapling.fetchers import Fetcher
-from zigzag_stock import stock_of
+from zigzag_stock import stock_of, price_of
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'data' / 'zigzag.json'
@@ -41,8 +42,6 @@ CATEGORIES = [
 PRODUCT = re.compile(r'https://www\.zigzag\.am/am/[a-z0-9][a-z0-9\-]*\.html')
 # The product's OWN price. A Zigzag page carries dozens of data-price-amount values because it
 # recommends other products, so scope to the main product block before reading one.
-MAIN = re.compile(r'product-info-main(.*?)(?:</section>|<footer)', re.S | re.I)
-FINAL = re.compile(r'data-price-amount="([\d.]+)"\s+data-price-type="finalPrice"', re.I)
 TITLE = re.compile(r'<title>\s*(.*?)\s*(?:\s-\sZigzag)?\s*</title>', re.S | re.I)
 OGIMG = re.compile(r'property="og:image"[^>]+content="([^"]+)"', re.I)
 UNCACHE = re.compile(r'/cache/[0-9a-f]{32}/')
@@ -80,44 +79,64 @@ def known_urls():
     return urls
 
 
-urls = known_urls()
-print(f'{len(urls)} product page(s) the catalogue already links')
-for cat in CATEGORIES:
-    html = get(f'https://www.zigzag.am/am/{cat}.html')
-    time.sleep(DELAY)
-    found = {u for u in PRODUCT.findall(html) if not u.endswith(f'/{cat}.html')}
-    new = found - urls
-    urls |= found
-    print(f'  {cat}: +{len(new)}')
+def main():
+    urls = known_urls()
+    print(f'{len(urls)} product page(s) the catalogue already links')
+    for cat in CATEGORIES:
+        html = get(f'https://www.zigzag.am/am/{cat}.html')
+        time.sleep(DELAY)
+        found = {u for u in PRODUCT.findall(html) if not u.endswith(f'/{cat}.html')}
+        new = found - urls
+        urls |= found
+        print(f'  {cat}: +{len(new)}')
 
-urls = sorted(u for u in urls if '?' not in u)
-rows, gone = [], 0
-for i, u in enumerate(urls, 1):
-    html = get(u)
-    time.sleep(DELAY)
-    block = MAIN.search(html) if html else None
-    price = FINAL.search(block.group(1)) if block else None
-    if not price:
-        gone += 1
-        continue
-    title = TITLE.search(html)
-    # The page is open anyway, and 48 products in this catalogue are sold by zigzag ALONE and have
-    # no photograph at all. og:image is the shop's own main shot; the url it gives points at
-    # Magento's resized copy under /cache/<32 hex>/, and the original sits beside it without that
-    # segment. Taken from the meta tag rather than the page body on purpose - a listing page also
-    # carries brand logos and neighbouring products, and one of those became a product photo twice.
-    og = OGIMG.search(html)
-    rows.append({
-        'url': u,
-        'title': re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', title.group(1))).strip() if title else '',
-        'price': round(float(price.group(1))),
-        # Zigzag uses out_stock / in_stock on its own availability element.
-        # Related cards must not override the main product's stock status.
-        'inStock': stock_of(html),
-        'image': UNCACHE.sub('/', og.group(1)) if og else None,
-    })
-    if i % 25 == 0:
-        print(f'  {i}/{len(urls)}', flush=True)
+    urls = sorted(u for u in urls if '?' not in u)
+    previous = []
+    try:
+        previous = json.loads(OUT.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        pass
+    canonical = lambda u: re.sub(r'/(?:am|en|ru)/', '/', u, count=1)
+    dates = {canonical(o['url']): o.get('seen') for offers in json.loads((ROOT/'data/prices.json').read_text(encoding='utf-8')).get('offers', {}).values() for o in offers if o.get('shop') == 'zigzag'}
+    rows = {canonical(r['url']): dict(r, checked=r.get('checked') or dates.get(canonical(r['url']))) for r in previous if r.get('url')}
+    gone, checked = 0, 0
+    for i, u in enumerate(urls, 1):
+        html = get(u)
+        time.sleep(DELAY)
+        price = price_of(html) if html else None
+        if price is None:
+            gone += 1
+            continue
+        stock = stock_of(html)
+        if stock is None:
+            gone += 1
+            continue  # Unknown/blocked markup keeps its old date; never assumed available.
+        title = TITLE.search(html)
+        # The page is open anyway, and 48 products in this catalogue are sold by zigzag ALONE and have
+        # no photograph at all. og:image is the shop's own main shot; the url it gives points at
+        # Magento's resized copy under /cache/<32 hex>/, and the original sits beside it without that
+        # segment. Taken from the meta tag rather than the page body on purpose - a listing page also
+        # carries brand logos and neighbouring products, and one of those became a product photo twice.
+        og = OGIMG.search(html)
+        rows[canonical(u)] = {
+            'url': u,
+            'title': re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', title.group(1))).strip() if title else '',
+            'price': price,
+            # Zigzag uses out_stock / in_stock on its own availability element.
+            # Related cards must not override the main product's stock status.
+            'inStock': stock,
+            'checked': datetime.now(timezone.utc).date().isoformat(),
+            'checkedAt': datetime.now(timezone.utc).isoformat(),
+            'image': UNCACHE.sub('/', og.group(1)) if og else None,
+        }
+        checked += 1
+        if i % 25 == 0:
+            print(f'  {i}/{len(urls)}', flush=True)
 
-OUT.write_text(json.dumps(rows, ensure_ascii=False), encoding='utf-8')
-print(f'done: {len(rows)} priced, {gone} with no price -> {OUT.relative_to(ROOT)}')
+    temporary = OUT.with_suffix('.json.tmp')
+    temporary.write_bytes((json.dumps(list(rows.values()), ensure_ascii=False) + '\n').encode('utf-8'))
+    temporary.replace(OUT)
+    print(f'done: {checked} confirmed, {gone} unresolved (previous dates retained), {len(rows)} cached -> {OUT.relative_to(ROOT)}')
+
+if __name__ == '__main__':
+    main()

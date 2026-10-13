@@ -1,3 +1,24 @@
+// A shop occasionally labels its 512 GB SSD "512 TB". Never multiply a
+// capacity already expressed as a GB-sized number into an impossible laptop SSD.
+export function storageGB(value) {
+  const m = /^\s*(\d+(?:\.\d+)?)\s*(GB|TB)\s*$/i.exec(String(value || ''));
+  if (!m) return null;
+  const n = +m[1];
+  const gb = m[2].toUpperCase() === 'TB' && n < 16 ? n * 1024 : n;
+  return [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192].includes(gb) ? gb : null;
+}
+
+export function caseSize(offer, allowed) {
+  for (const text of [offer.title, offer.url]) {
+    const matches = [...String(text || '').matchAll(/\b(\d{2})\s*(?:mm\b|մմ)/gi)]
+      .map(m => +m[1]).filter(n => allowed.includes(n));
+    const unique = [...new Set(matches)];
+    if (unique.length === 1) return unique[0];
+    if (unique.length > 1) return null;
+  }
+  return null;
+}
+
 export function cpu(v) {
   v = String(v || '').replace(/[®™]/g, '').replace(/\(.*$/, '').replace(/\bProcessor\b/i, '').replace(/\s*[-–]\s*/g, ' ')
     .replace(/\s+/g, ' ').trim().replace(/^\d+th Generation /i, '').replace(/^Intel (Ultra \d)/i, 'Intel Core $1').replace(/Ryzen R(\d)/i, 'Ryzen $1');

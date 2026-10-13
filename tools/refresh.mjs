@@ -26,6 +26,8 @@ const run = (command, args, required = false) => {
 };
 run(process.execPath, ['scrape.mjs', '--selftest'], true);
 run(python, ['tools/eldorado-data-test.py'], true);
+run(python, ['tools/test_zigzag_stock.py'], true);
+run(python, ['tools/test_zigzag_fetch.py'], true);
 const eldoradoOnly = process.argv.includes('--eldorado-only') || process.env.BETTER_REFRESH_SCOPE === 'eldorado';
 if (eldoradoOnly) {
   run(python, ['tools/eldorado-fetch.py', '--offers-only', '--recheck-hours', '0'], true);

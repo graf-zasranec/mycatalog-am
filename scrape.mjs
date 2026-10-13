@@ -17,6 +17,8 @@
 // a phone with no offers keeps its estimated price in phones.json and is labelled as such.
 
 import fs from 'node:fs';
+import { purchasableOffer, magentoCartState, unavailableSourceKeys } from './tools/cache-availability.mjs';
+import { caseSize } from './tools/spec-values.mjs';
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
 const DELAY_MS = 400;
@@ -2230,7 +2232,10 @@ const SHOPS = {
           // colours there and reached us as one row, which is also why its two rows sat on the
           // site at the same price with nothing to tell them apart.
           const page = await get(url); await sleep(DELAY_MS);
-          const kids = page ? magentoChildren(page, (phoneById[id] || {}).colors) : [];
+          if (!page) continue;
+          const cartState = magentoCartState(page);
+          if (cartState === false) { out.push({ id, price, title, url, inStock: false }); continue; }
+          const kids = magentoChildren(page, (phoneById[id] || {}).colors);
           if (kids.length) {
             for (const k of kids)
               out.push({ id, price: k.price, title, url,
@@ -2239,7 +2244,7 @@ const SHOPS = {
                 inStock: k.inStock !== false });
             continue;
           }
-          out.push({ id, price, title, url,
+          if (cartState === true) out.push({ id, price, title, url,
             storage: storageOf(title) ?? storageOf(url), ram: ramOf(title), inStock: true });
         }
       }
@@ -2263,6 +2268,8 @@ const SHOPS = {
         const title = clean(((page.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || '').replace(/<[^>]+>/g, ' '));
         const id = matchPhone(title, { url }) || matchPhone(url);
         if (!id) continue;
+        const cartState = magentoCartState(page);
+        if (cartState === false) { out.push({ id, title, url, price: 0, inStock: false }); continue; }
         const kids = magentoChildren(page, (phoneById[id] || {}).colors);
         for (const k of kids)
           out.push({ id, price: k.price, title, url,
@@ -2365,9 +2372,9 @@ const SHOPS = {
       for (const r0 of rows) {
         const sk = fromSku(r0.title || ''), r = { ...r0, title: sk.title };
         const id = matchPhone(r.title) || matchPhone(r.url);
-        if (!id || !r.price || r.price < 5000 || !safeUrl(r.url)) continue;
+        if (!id || !r.price || r.price < 5000 || !safeUrl(r.url) || !/^\d{4}-\d{2}-\d{2}$/.test(r.checked || '')) continue;
         out.push({ id, price: r.price, title: r.title, url: r.url,
-          storage: storageOf(r.title) ?? storageOf(r.url), ram: ramOf(r.title),
+          storage: storageOf(r.title) ?? storageOf(r.url), ram: ramOf(r.title), seen: r.checked, checkedAt: r.checkedAt,
           ...(sk.colorRaw ? { colorRaw: sk.colorRaw } : {}),
           inStock: r.inStock === true });
       }
@@ -2481,11 +2488,13 @@ if (!fresh && fs.existsSync(PARTIAL)) {
   } catch { }
 }
 
+const sourceUnavailable = new Set();
 for (const key of names) {
   const s = SHOPS[key];
   CURSHOP = key;
   // Already read today, in a run that did not finish. Take it rather than ask the shop again.
   if (done.shops[key]) {
+    for (const blocked of unavailableSourceKeys(key, done.shops[key])) sourceUnavailable.add(blocked);
     for (const o of done.shops[key]) (offers[o.id] ||= []).push(o);
     const models = new Set(done.shops[key].map(o => o.id));
     console.log(`[${s.name}] ${done.shops[key].length} offers across ${models.size} models (already read today)`);
@@ -2503,6 +2512,7 @@ for (const key of names) {
     report.push({ shop: key, offers: kept.length, models: new Set(kept.map(o => o.id)).size, stale: true });
     continue;
   }
+  for (const blocked of unavailableSourceKeys(key, got)) sourceUnavailable.add(blocked);
   // keep the cheapest offer per (phone, storage)
   const best = new Map();
   // Two different reasons, counted apart. A sold-out listing is perfectly plausible; calling it
@@ -2553,7 +2563,7 @@ const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TOD
   if (kept.length) console.log(`    read ${best.size} of the ${had.length} it had last time - the shop, not the stock: kept ${kept.length} previous offer(s) with their old dates`);
   // Written now, not at the end: this shop is read and should stay read even if the run dies in
   // the next one. Small enough that the cost is nothing beside the hour it saves.
-  done.date = TODAY; done.shops[key] = rows.concat(kept);
+  done.date = TODAY; done.shops[key] = rows.concat(kept, got.filter(o => o.inStock === false));
   try { fs.writeFileSync(PARTIAL, JSON.stringify(done)); } catch { }
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';
@@ -3017,20 +3027,18 @@ try {
 // Zero, negative and malformed prices are unavailable prices, never free configurations.
 // Apply this to carried and hand-entered offers too, before history and public data are written.
 for (const id of Object.keys(offers)) {
-  offers[id] = offers[id].filter(o => Number.isFinite(+o.price) && +o.price > 0);
+  offers[id] = offers[id].filter(purchasableOffer);
 }
-// A listing that explicitly returns zero must also suppress its older hand price.
+// A sold-out or zero-price listing must also suppress its older hand price.
 // Match only that shop and URL: another shop or configuration remains available.
-const noPriceUrls = new Set();
-const priceUrlKey = (shop, url) => shop + '|' + String(url || '').replace(/\/+$/, '')
-  .replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2');
+const {cacheOfferKey, unavailableCacheKeys} = await import('./tools/cache-availability.mjs');
+const noPriceUrls = new Set(sourceUnavailable);
+const priceUrlKey = cacheOfferKey;
 for (const shop of ['eldorado', 'zigzag']) {
   try {
-    for (const row of JSON.parse(fs.readFileSync(`data/${shop}.json`, 'utf8'))) {
-      if (row.url && row.price !== null && row.price !== '' && Number(row.price) === 0)
-        noPriceUrls.add(priceUrlKey(shop, row.url));
-    }
-  } catch (e) { if (e.code !== 'ENOENT') console.warn(`${shop} zero-price check:`, e.message); }
+    for (const key of unavailableCacheKeys(shop, JSON.parse(fs.readFileSync(`data/${shop}.json`, 'utf8'))))
+      noPriceUrls.add(key);
+  } catch (e) { if (e.code !== 'ENOENT') console.warn(`${shop} availability check:`, e.message); }
 }
 let noPriceCount = 0;
 for (const id of Object.keys(offers)) {
@@ -3038,7 +3046,7 @@ for (const id of Object.keys(offers)) {
   offers[id] = offers[id].filter(o => !noPriceUrls.has(priceUrlKey(o.shop, o.url)));
   noPriceCount += before - offers[id].length;
 }
-if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed because the shop now reports 0 AMD`);
+if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed: shop reports unavailable or 0 AMD`);
 // Do not carry prices whose exact product URLs were verified as homepage redirects.
 // A timeout or blocked request is not proof that a product is gone.
 try {
@@ -3080,7 +3088,10 @@ try {
 // the Ultra 2's 64 GB) is not a second size, and the offers page showed "49 GB / 64 GB" chips.
 for (const [id, list] of Object.entries(offers)) {
   const p = phoneById[id], v = p?.variants || [];
-  if (p?.variantUnit === 'mm' && v.length === 1) for (const o of list) o.storage = v[0].storage;
+  if (p?.variantUnit === 'mm') for (const o of list) {
+    if (v.length === 1) o.storage = v[0].storage;
+    else if (o.storage == null) o.storage = caseSize(o, v.map(row => row.storage));
+  }
 }
 // RAM read off the product's own builds where its capacity allows only one: Apple sells the iPad
 // Pro M5 at 256/512 GB with 12 GB and 1/2 TB with 16 GB, and no shop title says so.

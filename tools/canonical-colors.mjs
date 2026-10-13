@@ -10,3 +10,19 @@ export function canonicalColors(id, colors, aliases) {
     return color;
   }))];
 }
+
+export function canonicalColorPhotos(id, photos, aliases) {
+  const result = {...photos};
+  const slug = value => String(value).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  for (const label of Object.keys(aliases[id] || {})) {
+    const old = slug(label), target = slug(canonicalColors(id, [label], aliases)[0]);
+    if (old === target) continue; // Ambiguous cycles keep their original entries.
+    for (const [key, photo] of Object.entries(photos)) {
+      if (key !== old && !new RegExp('^' + old + '-\\d+$').test(key)) continue;
+      const canonical = target + key.slice(old.length);
+      result[canonical] ||= photo;
+      delete result[key];
+    }
+  }
+  return result;
+}

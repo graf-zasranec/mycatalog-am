@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {cacheOfferKey, unavailableCacheKeys, purchasableOffer, magentoCartState, unavailableSourceKeys} from './cache-availability.mjs';
+const url = 'https://www.zigzag.am/am/samsung-galaxy-a06-4gb-64gb-black.html';
+const rows = [{url, price: 35900, inStock: false}];
+const excluded = new Set(unavailableCacheKeys('zigzag', rows));
+const oldHand = {shop: 'zigzag', url: url.replace('/am/', '/en/'), price: 35900, inStock: true, seeded: true};
+assert.equal(excluded.has(cacheOfferKey(oldHand.shop, oldHand.url)), true, 'a hand price must not resurrect known sold-out stock');
+assert.equal(excluded.has(cacheOfferKey('another-shop', url)), false);
+assert.equal(excluded.has(cacheOfferKey('zigzag', url.replace('black', 'blue'))), false);
+assert.equal(unavailableCacheKeys('zigzag', [{url, price: 35900, inStock: true}]).length, 0);
+assert.equal(unavailableCacheKeys('zigzag', [{url, price: 35900, inStock: null}]).length, 0, 'unknown is not explicit sold-out evidence');
+assert.equal(unavailableCacheKeys('zigzag', [{url, price: 0, inStock: true}]).length, 1);
+assert.equal(unavailableCacheKeys('zigzag', [{url, price: null}]).length, 0);
+assert.equal(purchasableOffer({price: 47000, inStock: false, seeded: true}), false);
+assert.equal(purchasableOffer({price: 47000, inStock: true}), true);
+assert.equal(purchasableOffer({price: 47000}), true, 'unknown stock is not proof of unavailability');
+assert.equal(purchasableOffer({price: 0, inStock: true}), false);
+console.log('CACHE_AVAILABILITY_PASS: sold-out hand rows, locale aliases, shop/config isolation and unknown states');
+
+assert.equal(magentoCartState('<form id="product_addtocart_form"><h1>Phone</h1></form><aside><button id="product-addtocart-button">Buy recommendation</button></aside>'), false);
+assert.equal(magentoCartState('<form id="product_addtocart_form"><button id="product-addtocart-button">Buy</button></form>'), true);
+assert.equal(magentoCartState('<html>Access denied</html>'), null);
+assert.equal(magentoCartState('<form id="product_addtocart_form"><button id="product-addtocart-button" disabled>Choose variant</button></form>'), null);
+assert.equal(unavailableSourceKeys('yerevanmobile',[{url,inStock:false}]).length,1);
+assert.equal(unavailableSourceKeys('yerevanmobile',[{url,inStock:false},{url,inStock:true}]).length,0,'one unavailable child cannot hide an available sibling');
