@@ -14543,7 +14543,7 @@
       },
       {
         "id": "sony-wh-ch720n",
-        "price": 39900,
+        "price": 57900,
         "title": "Wireless headphones Sony WH-CH720N Blue",
         "url": "https://eldorado.am/en/sony-wh-ch720n-blue",
         "storage": null,
@@ -14553,11 +14553,11 @@
         "shop": "eldorado",
         "seen": "2026-10-13",
         "oldPrice": 39900,
-        "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+        "method": "Follow-up browser verification: earlier sale price superseded by current rendered price"
       },
       {
         "id": "sony-wh-ch720n",
-        "price": 39900,
+        "price": 57900,
         "title": "Sony WH-CH720 Black Wireless headphones",
         "url": "https://eldorado.am/en/sony-wh-ch720-black",
         "storage": null,
@@ -14567,11 +14567,11 @@
         "shop": "eldorado",
         "seen": "2026-10-13",
         "oldPrice": 39900,
-        "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+        "method": "Follow-up browser verification: earlier sale price superseded by current rendered price"
       },
       {
         "id": "sony-wh-ch720n",
-        "price": 39900,
+        "price": 57900,
         "title": "Sony WH-CH720N White Wireless headphones",
         "url": "https://eldorado.am/en/sony-wh-ch720n-white",
         "storage": null,
@@ -14581,7 +14581,7 @@
         "shop": "eldorado",
         "seen": "2026-10-13",
         "oldPrice": 39900,
-        "method": "Reviewed exact shop product name, primary displayed final price, configuration/specification fields and primary purchase availability"
+        "method": "Follow-up browser verification: earlier sale price superseded by current rendered price"
       },
       {
         "id": "jbl-tune-flex",
@@ -18813,5 +18813,15 @@
       }
     ],
     "held": []
+  },
+  "followupSonyBrowser": {
+    "checked": "2026-10-13",
+    "urls": [
+      "https://eldorado.am/en/sony-wh-ch720n-blue",
+      "https://eldorado.am/en/sony-wh-ch720-black",
+      "https://eldorado.am/en/sony-wh-ch720n-white"
+    ],
+    "price": 57900,
+    "previous": 39900
   }
 }
