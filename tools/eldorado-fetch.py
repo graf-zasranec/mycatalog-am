@@ -10,6 +10,7 @@
 #   python tools/eldorado-fetch.py
 import argparse
 import csv
+import re
 import json
 from datetime import datetime, timezone
 from urllib.parse import urlparse
@@ -92,7 +93,7 @@ def known_offers():
     for pid, offers in read_json(ROOT / 'data/prices.json', {}).get('offers', {}).items():
         for offer in offers:
             if offer.get('shop') == 'eldorado' and offer.get('url'):
-                row = dict(offer, title=offer.get('title', pid), checked=offer.get('seen'), detailVerified=False)
+                row = dict(offer, id=pid, title=offer.get('title', pid), checked=offer.get('seen'), detailVerified=False)
                 rows[offer['url']] = row
     # Include hand-only URLs, not just whatever the last merge happened to retain.
     path = ROOT / 'data/listings.csv'
@@ -123,6 +124,7 @@ def main():
     day = now.date().isoformat()
     cached = {r['url']: r for r in read_json(OUT, []) if r.get('url')}
     known = known_offers()
+    products = {p['id']: p for p in read_json(ROOT / 'data/phones.json', [])}
     report = dict(started=now.isoformat(), checked=[], changed=[], unavailable=[], failed=[])
     for url, old in known.items():
         cached.setdefault(url, old)
@@ -172,6 +174,11 @@ def main():
             if not html:
                 raise ValueError('Request failed; previous price and verification date retained')
             current = product_row(html, url)
+            category = products.get(known[url].get('id'), {}).get('category')
+            memory_product = category in ['phone', 'tablet', 'laptop', 'desktop'] or (category is None and bool(re.search(r'\b(?:smartphone|iphone|tablet|notebook|laptop|macbook|desktop|computer)\b', current['title'], re.I)))
+            if not memory_product:
+                current.pop('ram', None)
+                current.pop('storage', None)
             row = dict(old, **current)
             row['checked'] = day
             row['checkedAt'] = datetime.now(timezone.utc).isoformat()
