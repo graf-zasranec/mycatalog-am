@@ -1839,12 +1839,15 @@ const SHOPS = {
         seen.add(f.url);
         const page = await get(f.url);
         await sleep(DELAY_MS);
-        const kids = page ? magentoChildren(page, (phoneById[f.id] || {}).colors) : [];
+        if (!page) continue;
+        const cartState = magentoCartState(page);
+        if (cartState === false) { out.push({ ...f, price: f.price || 0, inStock: false }); continue; }
+        const kids = magentoChildren(page, (phoneById[f.id] || {}).colors);
         if (!kids.length) {
           // No readable variants is not confirmation of an old configuration's price.
           if (f.fromBacklog) continue;
           // a simple product, with one price and nothing to choose: the grid already had it
-          out.push({ ...f, storage: storageOf(f.title) ?? storageOf(f.url), inStock: true });
+          if (cartState === true) out.push({ ...f, storage: storageOf(f.title) ?? storageOf(f.url), inStock: true });
           continue;
         }
         for (const k of kids)
