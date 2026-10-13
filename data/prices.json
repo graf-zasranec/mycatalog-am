@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T20:32:12.289Z",
+ "generated": "2026-10-13T20:41:10.000Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -54249,20 +54249,6 @@
   "apple-ipad-pro-11-m4": [
    {
     "id": "apple-ipad-pro-11-m4",
-    "price": 179900,
-    "title": "Apple Magic KB iPad Pro 11\" M4 EN Black /MWR23*",
-    "url": "https://www.zigzag.am/am/apple-magic-kb-ipad-pro-11-m4-en-black-mwr23.html",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "size": 11,
-    "color": "Space Black",
-    "shop": "zigzag",
-    "seen": "2026-10-13",
-    "cell": false
-   },
-   {
-    "id": "apple-ipad-pro-11-m4",
     "price": 419000,
     "storage": 256,
     "ram": 8,
@@ -65440,20 +65426,6 @@
     "shop": "zigzag",
     "seen": "2026-10-13",
     "cell": true
-   },
-   {
-    "id": "honor-pad-10-5g",
-    "shop": "eldorado",
-    "title": "Tablet Honor Pad 10 5G 8GB/256GB (5301APED) Gray",
-    "price": 214900,
-    "storage": 256,
-    "ram": 8,
-    "color": "Gray",
-    "url": "https://eldorado.am/en/honor-pad-10-5g-8gb-256gb-5301aped-gray",
-    "seeded": true,
-    "inStock": true,
-    "seen": "2026-10-13",
-    "cell": true
    }
   ],
   "xiaomi-redmi-pad-pro-5g": [
@@ -69840,7 +69812,8 @@
     "seen": "2026-10-13",
     "checkedAt": "2026-10-13T15:22:40.202316+00:00",
     "inStock": true,
-    "shop": "eldorado"
+    "shop": "eldorado",
+    "size": 16
    },
    {
     "id": "lenovo-ideapad-5-2-in-1-14iru9",
@@ -69853,7 +69826,8 @@
     "seen": "2026-10-13",
     "checkedAt": "2026-10-13T15:22:50.905406+00:00",
     "inStock": true,
-    "shop": "eldorado"
+    "shop": "eldorado",
+    "size": 16
    }
   ],
   "microsoft-xbox-controller": [
@@ -85013,7 +84987,8 @@
     "seen": "2026-10-13",
     "checkedAt": "2026-10-13T15:32:52.797560+00:00",
     "inStock": true,
-    "shop": "eldorado"
+    "shop": "eldorado",
+    "size": 15
    }
   ],
   "apple-ultra-2": [
@@ -98909,7 +98884,8 @@
     "seen": "2026-10-13",
     "checkedAt": "2026-10-13T16:07:01.473583+00:00",
     "inStock": true,
-    "shop": "eldorado"
+    "shop": "eldorado",
+    "size": 16
    }
   ],
   "microsoft-surface-4": [

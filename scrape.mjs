@@ -17,8 +17,6 @@
 // a phone with no offers keeps its estimated price in phones.json and is labelled as such.
 
 import fs from 'node:fs';
-import { purchasableOffer, magentoCartState, unavailableSourceKeys } from './tools/cache-availability.mjs';
-import { caseSize } from './tools/spec-values.mjs';
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
 const DELAY_MS = 400;
@@ -146,7 +144,7 @@ const ACCESSORY_WORDS = [
   'case', 'cover', 'bumper', 'sleeve', 'pouch', 'wallet', 'folio', 'protector',
   'protection', 'tempered', 'film', 'skin', 'charger', 'charging', 'cable', 'adapter',
   'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank', 'power bank',
-  'airtag', 'pencil', 'keyboard', 'stylus', 'dongle', 'hub',
+  'airtag', 'pencil', 'keyboard', 'magic kb', 'stylus', 'dongle', 'hub',
   'պատյան', 'պաշտպան', 'լիցքավոր', 'մալուխ', 'ադապտեր',
   'чехол', 'защит', 'кабел', 'зарядн', 'адаптер', 'держател',
   'накладк', 'бампер', 'пленк', 'плёнк'
@@ -1002,6 +1000,8 @@ if (process.argv[2] === '--selftest') {
     ['apple-iphone-15', 'iPhone 15, 128 ԳԲ, Pink'],
   ];
   let bad = 0;
+  cases.push([null, 'Apple Magic KB iPad Pro 11" M4 EN Black /MWR23'],
+    [null, 'https://www.zigzag.am/am/apple-magic-kb-ipad-pro-11-m4.html']);
   for (const [want, txt] of cases) {
     const got = matchPhone(txt);
     if (got !== want) { bad++; console.log(`FAIL  got=${got}  want=${want}  <- ${txt}`); }
@@ -2465,6 +2465,10 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
 for (const o of rehomed) (offers[o.id] ||= []).push(o);
 if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched after their product was merged or removed`);
 const report = [];
+// Parser-only audit tools stop at this marker; runtime helpers belong after it.
+import { purchasableOffer, magentoCartState, unavailableSourceKeys } from './tools/cache-availability.mjs';
+import { caseSize } from './tools/spec-values.mjs';
+
 
 // A whole run's work used to live only in memory until the very end, so anything that stopped
 // the process - and on this machine that means the OS reclaiming memory - threw away every shop
@@ -3027,7 +3031,8 @@ try {
 // Zero, negative and malformed prices are unavailable prices, never free configurations.
 // Apply this to carried and hand-entered offers too, before history and public data are written.
 for (const id of Object.keys(offers)) {
-  offers[id] = offers[id].filter(purchasableOffer);
+  offers[id] = offers[id].filter(o => purchasableOffer(o)
+    && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title)));
 }
 // A sold-out or zero-price listing must also suppress its older hand price.
 // Match only that shop and URL: another shop or configuration remains available.
