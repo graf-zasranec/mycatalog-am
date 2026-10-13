@@ -12,6 +12,7 @@
 //   node tools/photos.mjs --dry      report what it would change
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
+import {canonicalColors} from './canonical-colors.mjs';
 
 const PLACEHOLDER = fs.existsSync('data/placeholders.json')
   ? JSON.parse(fs.readFileSync('data/placeholders.json', 'utf8')) : {};
@@ -181,6 +182,7 @@ async function best(urls) {
 
 const P = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const PR = JSON.parse(fs.readFileSync('data/prices.json', 'utf8'));
+const colorAliases = JSON.parse(fs.readFileSync('data/color-aliases.json', 'utf8'));
 // A record of what each saved source measured, so a re-run does not re-download to learn what it
 // already knows. It is a cache, not data: images/_src is gitignored, so on a fresh clone there is
 // none, and the honest answer to that is to measure again rather than to refuse to run.
@@ -263,11 +265,7 @@ let improved = 0, kept = 0, weak = [], refused = 0, stale = [];
 const photoPins = fs.existsSync('data/photo-pins.json') ? JSON.parse(fs.readFileSync('data/photo-pins.json', 'utf8')) : {};
 for (const p of P) {
   if (only.size && !only.has(p.id)) continue;
-  if (photoPins[p.id]?.main && fs.existsSync(photoPins[p.id].main)) {
-    console.log(`  = ${p.id}: preserving owner-selected photograph`);
-    kept++;
-    continue;
-  }
+  const pinnedMain = photoPins[p.id]?.main && fs.existsSync(photoPins[p.id].main);
   const no = rejected(p.id);
   const offers = (PR.offers[p.id] || []).filter(o => o.image);
   // Nobody photographed it into the price file, but somebody linked it: read the picture off the
@@ -302,8 +300,9 @@ for (const p of P) {
   if (!offers.length && !PRESS[p.id]) continue;
   // one job per slot: the main shot, plus one per colour the shops actually photograph
   const slots = [{ slug: 'main', color: null, urls: [...Object.values(PRESS[p.id] || {}), ...offers.map(o => o.image)] }];
-  for (const c of p.colors || []) {
-    const urls = offers.filter(o => o.color === c).map(o => o.image);
+  const offeredColors = canonicalColors(p.id, [...new Set([...(p.colors || []), ...offers.map(o => o.color).filter(Boolean)])], colorAliases);
+  for (const c of offeredColors) {
+    const urls = offers.filter(o => o.color && canonicalColors(p.id,[o.color],colorAliases)[0] === c).map(o => o.image);
     // A colour slot used to exist only where an OFFER carried a picture of that colour, so a
     // hand-collected photo of a colour no shop had photographed into the price file could only
     // ever be used as the main shot. If a named source has that colour, the slot is worth making.
@@ -311,6 +310,7 @@ for (const p of P) {
   }
   for (const s of slots) { const press = (PRESS[p.id] || {})[s.slug]; if (press) s.urls = [press, ...s.urls]; }
   for (const s of slots) {
+    if ((s.slug === 'main' && pinnedMain) || (photoPins[p.id]?.colours?.[s.slug] && fs.existsSync(photoPins[p.id].colours[s.slug]))) { kept++; continue; }
     const have = (man[p.id] || []).find(e => e.slug === s.slug);
     // A hand-picked shot wins on framing, not on pixel count: the shops sell the Smart Band 10
     // with a 550px photo of the wrong thing, which beat a correct 590px crop on size alone and
