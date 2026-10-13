@@ -2469,7 +2469,7 @@ for (const o of rehomed) (offers[o.id] ||= []).push(o);
 if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched after their product was merged or removed`);
 const report = [];
 // Parser-only audit tools stop at this marker; runtime helpers belong after it.
-import { purchasableOffer, magentoCartState, unavailableSourceKeys } from './tools/cache-availability.mjs';
+import { purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows } from './tools/cache-availability.mjs';
 import { caseSize } from './tools/spec-values.mjs';
 
 
@@ -2570,7 +2570,7 @@ const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TOD
   if (kept.length) console.log(`    read ${best.size} of the ${had.length} it had last time - the shop, not the stock: kept ${kept.length} previous offer(s) with their old dates`);
   // Written now, not at the end: this shop is read and should stay read even if the run dies in
   // the next one. Small enough that the cost is nothing beside the hour it saves.
-  done.date = TODAY; done.shops[key] = rows.concat(kept, got.filter(o => o.inStock === false));
+  done.date = TODAY; done.shops[key] = checkpointShopRows(key, rows, kept, got);
   try { fs.writeFileSync(PARTIAL, JSON.stringify(done)); } catch { }
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';

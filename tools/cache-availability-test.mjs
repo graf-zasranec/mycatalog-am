@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {cacheOfferKey, unavailableCacheKeys, purchasableOffer, magentoCartState, unavailableSourceKeys} from './cache-availability.mjs';
+import {cacheOfferKey, unavailableCacheKeys, purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows} from './cache-availability.mjs';
 const url = 'https://www.zigzag.am/am/samsung-galaxy-a06-4gb-64gb-black.html';
 const rows = [{url, price: 35900, inStock: false}];
 const excluded = new Set(unavailableCacheKeys('zigzag', rows));
@@ -23,3 +23,9 @@ assert.equal(magentoCartState('<html>Access denied</html>'), null);
 assert.equal(magentoCartState('<form id="product_addtocart_form"><button id="product-addtocart-button" disabled>Choose variant</button></form>'), null);
 assert.equal(unavailableSourceKeys('yerevanmobile',[{url,inStock:false}]).length,1);
 assert.equal(unavailableSourceKeys('yerevanmobile',[{url,inStock:false},{url,inStock:true}]).length,0,'one unavailable child cannot hide an available sibling');
+const resumed = checkpointShopRows('zigzag',[],[oldHand],[{url,inStock:false}]);
+assert.deepEqual(unavailableSourceKeys('zigzag',resumed),[cacheOfferKey('zigzag',url)],'fresh sold-out evidence survives checkpoint and locale aliases');
+assert.equal(resumed.filter(purchasableOffer).length,0,'resume cannot restore carried available row for confirmed unavailable URL');
+const mixed = [{url,inStock:false},{url,price:47000,inStock:true}];
+assert.equal(unavailableSourceKeys('zigzag',checkpointShopRows('zigzag',[mixed[1]],[oldHand],mixed)).length,0,'available sibling still prevents whole-URL exclusion');
+assert.equal(checkpointShopRows('another-shop',[],[oldHand],[{url:url.replace('black','blue'),inStock:false}]).filter(purchasableOffer).length,1,'unrelated configuration remains carried');

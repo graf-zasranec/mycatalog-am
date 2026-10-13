@@ -41,5 +41,11 @@ class FetchTests(unittest.TestCase):
     def test_related_price_cannot_fill_missing_primary_price(self):
         self.assertIsNone(price_of('<div class="product-info-main">Phone</div><section><span data-price-type="finalPrice" data-price-amount="39900"></span></section>'))
 
+    def test_explicit_sold_out_without_price_invalidates_old_available_cache(self):
+        row = self.refresh('<div class="product-info-main"><div class="stock out_stock">Out of stock</div></div>')
+        self.assertIs(row['inStock'],False)
+        self.assertIsNone(row['price'])
+        self.assertIn('checkedAt',row)
+
 if __name__ == '__main__':
     unittest.main()

@@ -104,11 +104,8 @@ def main():
         html = get(u)
         time.sleep(DELAY)
         price = price_of(html) if html else None
-        if price is None:
-            gone += 1
-            continue
-        stock = stock_of(html)
-        if stock is None:
+        stock = stock_of(html) if html else None
+        if stock is None or (price is None and stock is not False):
             gone += 1
             continue  # Unknown/blocked markup keeps its old date; never assumed available.
         title = TITLE.search(html)

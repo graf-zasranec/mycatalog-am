@@ -29,3 +29,9 @@ export function unavailableSourceKeys(shop, rows) {
   }
   return [...groups].filter(([,group]) => group.every(o => o.inStock === false)).map(([key]) => key);
 }
+
+export function checkpointShopRows(shop, rows, kept, fresh) {
+  const unavailable = new Set(unavailableSourceKeys(shop, fresh));
+  const surviving = kept.filter(o => !unavailable.has(cacheOfferKey(shop, o.url)));
+  return rows.concat(surviving, fresh.filter(o => o.inStock === false));
+}
