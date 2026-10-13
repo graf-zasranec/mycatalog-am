@@ -2123,10 +2123,11 @@ const SHOPS = {
       try { rows = JSON.parse(fs.readFileSync('data/eldorado.json', 'utf8')); } catch { }
       const out = [];
       for (const r of rows) {
-        const id = matchPhone(r.title);
-        if (!id || !r.price || r.price < 5000 || !safeUrl(r.url)) continue;
+        const id = (PINS.has(r.url) ? matchPhone(r.url) : matchPhone(r.title)) || r.id;
+        if (!id || !r.price || r.price < 5000 || !safeUrl(r.url) || !/^\d{4}-\d{2}-\d{2}$/.test(r.checked || '')) continue;
         out.push({ id, price: r.price, title: r.title, url: r.url,
-          storage: storageOf(r.title), ram: ramOf(r.title), inStock: r.inStock !== false });
+          storage: phoneById[id]?.variantUnit === 'mm' ? storageOf(r.title) : (r.storage ?? storageOf(r.title)),
+          ram: r.ram ?? ramOf(r.title), color: r.color || undefined, seen: r.checked, checkedAt: r.checkedAt, inStock: r.inStock !== false });
       }
       return out;
     }
@@ -2545,7 +2546,7 @@ for (const key of names) {
   }
   // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
 // that failed keeps whatever date it already had, which is the point of having one.
-const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: TODAY, size: screenOf(o.title, o.id) }));
+const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TODAY, size: screenOf(o.title, o.id) }));
   for (const o of rows) (offers[o.id] ||= []).push(o);
   const kept = keepThroughCollapse(had, best);
   for (const o of kept) (offers[o.id] ||= []).push(o);
@@ -3052,13 +3053,25 @@ try {
   }
   if (removed) console.log(`${removed} older offer(s) removed: verified homepage redirects`);
 } catch (e) { if (e.code !== 'ENOENT') throw e; }
+// A current exact Eldorado page wins over its older hand row, including when a sale
+// expires or the fixed SKU changes RAM. Category cards cannot suppress product evidence.
+try {
+  const {exactEldoradoEvidence, keepEldoradoOffer} = await import('./tools/eldorado-offers.mjs');
+  const evidence = exactEldoradoEvidence(JSON.parse(fs.readFileSync('data/eldorado.json', 'utf8')));
+  for (const id of Object.keys(offers)) offers[id] = offers[id].filter(o => keepEldoradoOffer(o, evidence, phoneById[id]));
+} catch (e) { if (e.code !== 'ENOENT') throw e; }
 // Hidden while the shop's own page says sold out (owner, 2026-09-25). data/soldout.json is
 // rewritten by every full `python tools/check-links.py --all`, so a restocked page comes back
 // on its own; nothing is pinned or deleted.
 try {
   const SOLD = new Set(JSON.parse(fs.readFileSync('data/soldout.json', 'utf8')).urls || []);
   // the owner's own reports live apart, because check-links rewrites soldout.json from scratch
-  try { for (const u of JSON.parse(fs.readFileSync('data/soldout-owner.json', 'utf8')).urls || []) SOLD.add(u); } catch {}
+  try {
+    const restocked = new Set(JSON.parse(fs.readFileSync('data/eldorado.json', 'utf8'))
+      .filter(r => r.detailVerified && r.inStock === true && r.checked === TODAY).map(r => r.url));
+    for (const u of JSON.parse(fs.readFileSync('data/soldout-owner.json', 'utf8')).urls || [])
+      if (!restocked.has(u)) SOLD.add(u);
+  } catch {}
   let n = 0;
   for (const id of Object.keys(offers)) { const k = offers[id].length; offers[id] = offers[id].filter(o => !SOLD.has(o.url)); n += k - offers[id].length; }
   if (n) console.log(`${n} sold-out offer(s) hidden (data/soldout.json)`);

@@ -8,13 +8,17 @@
 #
 #   pip install "scrapling[fetchers]"
 #   python tools/eldorado-fetch.py
+import argparse
+import csv
 import json
-import re
+from datetime import datetime, timezone
+from urllib.parse import urlparse
 import sys
 import time
 from pathlib import Path
 
 from scrapling.fetchers import Fetcher
+from eldorado_data import category_rows, product_row
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'data' / 'eldorado.json'
@@ -46,7 +50,7 @@ CATEGORIES = [
 
 # <a class="product_name combo_link" href="...">TITLE</a> ... data-price-amount="89900"
 #
-# Take the finalPrice and nothing else. A discounted card prints TWO prices, oldPrice first and
+# Legacy card markup reference: take the finalPrice and nothing else. A discounted card prints TWO prices, oldPrice first and
 # finalPrice after it, so matching the first data-price-amount reads the struck-through price the
 # shop is no longer asking - which is how 26 catalogue entries came to sit above what Eldorado
 # actually charges. Every card carries a finalPrice, discounted or not (checked across the
@@ -59,13 +63,6 @@ CATEGORIES = [
 # twice before, so the path must be /media/catalog/product/; and the src on the card points at
 # Magento's resized copy under /cache/<32 hex>/, where the original beside it is larger - 800x800
 # against the card's thumbnail.
-CARD = re.compile(
-    r'<img[^>]+src="(https://eldorado\.am/media/catalog/product/[^"]+)"[^>]*>'
-    r'.{0,4000}?'
-    r'class="product_name combo_link"\s+href="([^"]+)"\s*>\s*(.*?)\s*</a>'
-    r'(.{0,2000}?)data-price-amount="([\d.]+)"\s+data-price-type="finalPrice"',
-    re.S)
-UNCACHE = re.compile(r'/cache/[0-9a-f]{32}/')
 
 
 def get(url):
@@ -77,31 +74,133 @@ def get(url):
         return ''
 
 
-rows, seen = [], set()
-for cat in CATEGORIES:
-    for page in range(1, PAGES + 1):
-        url = f'https://eldorado.am/en/{cat}' + (f'?p={page}' if page > 1 else '')
-        html = get(url)
-        time.sleep(DELAY)
-        if not html or len(html) < 20000:
-            break
-        found = 0
-        for img, href, title, between, price in CARD.findall(html):
-            if href in seen:
-                continue
-            seen.add(href)
-            rows.append({
-                'url': href,
-                'title': re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', title)).strip(),
-                'price': round(float(price)),
-                # Magento prints class="stock unavailable" on a sold-out card
-                'inStock': 'stock unavailable' not in between,
-                'image': UNCACHE.sub('/', img),
-            })
-            found += 1
-        print(f'{cat} p{page}: {found}', flush=True)
-        if not found:
-            break
+def read_json(path, fallback):
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return fallback
 
-OUT.write_text(json.dumps(rows, ensure_ascii=False), encoding='utf-8')
-print(f'done: {len(rows)} listings -> {OUT.relative_to(ROOT)}')
+
+def save(path, value):
+    temporary = path.with_suffix(path.suffix + '.tmp')
+    temporary.write_bytes((json.dumps(value, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
+    temporary.replace(path)
+
+
+def known_offers():
+    rows = {}
+    for pid, offers in read_json(ROOT / 'data/prices.json', {}).get('offers', {}).items():
+        for offer in offers:
+            if offer.get('shop') == 'eldorado' and offer.get('url'):
+                row = dict(offer, title=offer.get('title', pid), checked=offer.get('seen'), detailVerified=False)
+                rows[offer['url']] = row
+    # Include hand-only URLs, not just whatever the last merge happened to retain.
+    path = ROOT / 'data/listings.csv'
+    if path.exists():
+        for fields in csv.reader(path.open(encoding='utf-8', newline='')):
+            if len(fields) < 6 or fields[0] != 'eldorado' or not fields[4].startswith('https://eldorado.am/'):
+                continue
+            if fields[4] not in rows:
+                try:
+                    rows[fields[4]] = dict(url=fields[4], title=fields[1], price=int(fields[5]),
+                                          checked=fields[8] if len(fields) > 8 else None, detailVerified=False)
+                except ValueError:
+                    pass
+    # Previously unavailable pages can come back; confirm their own purchase control.
+    for url in read_json(ROOT / 'data/soldout-owner.json', {}).get('urls', []):
+        if url.startswith('https://eldorado.am/'):
+            rows.setdefault(url, dict(url=url, title='', price=0, checked=None, detailVerified=False))
+    return rows
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Eldorado discovery plus direct verification of known offers')
+    parser.add_argument('--offers-only', action='store_true', help='Skip discovery; verify existing product URLs')
+    parser.add_argument('--recheck-hours', type=float, default=4, help='Age of direct verification before checking again; 0 forces all')
+    parser.add_argument('--limit', type=int, default=0, help='Bound direct checks for diagnostics')
+    args = parser.parse_args()
+    now = datetime.now(timezone.utc)
+    day = now.date().isoformat()
+    cached = {r['url']: r for r in read_json(OUT, []) if r.get('url')}
+    known = known_offers()
+    report = dict(started=now.isoformat(), checked=[], changed=[], unavailable=[], failed=[])
+    for url, old in known.items():
+        cached.setdefault(url, old)
+    if not args.offers_only:
+        for cat in CATEGORIES:
+            seen = set()
+            for page in range(1, PAGES + 1):
+                url = f'https://eldorado.am/en/{cat}' + (f'?p={page}' if page > 1 else '')
+                html = get(url)
+                time.sleep(DELAY)
+                if not html:
+                    report['failed'].append(dict(url=url, reason='Category request failed; retained cache'))
+                    break
+                found = 0
+                for row in category_rows(html):
+                    if row['url'] in seen:
+                        continue
+                    seen.add(row['url'])
+                    found += 1
+                    # A card may discover a product, but cannot override a known product's
+                    # current purchase availability or newer exact-page verification.
+                    if row['url'] not in known:
+                        cached[row['url']] = dict(row, checked=day, checkedAt=datetime.now(timezone.utc).isoformat())
+                print(f'{cat} p{page}: {found}', flush=True)
+                if not found:
+                    break
+    targets = []
+    for url in known:
+        parsed = urlparse(url)
+        if parsed.hostname != 'eldorado.am' or parsed.query:
+            continue
+        old = cached[url]
+        try:
+            checked = datetime.fromisoformat(old.get('checkedAt', ''))
+            age = (now - checked).total_seconds() / 3600
+        except (ValueError, TypeError):
+            age = float('inf')
+        if not old.get('detailVerified') or age >= args.recheck_hours:
+            targets.append(url)
+    if args.limit:
+        targets = targets[:args.limit]
+    print(f'Direct product checks: {len(targets)}; delay {DELAY}s', flush=True)
+    for index, url in enumerate(targets, 1):
+        old = cached[url]
+        try:
+            html = get(url)
+            if not html:
+                raise ValueError('Request failed; previous price and verification date retained')
+            current = product_row(html, url)
+            row = dict(old, **current)
+            row['checked'] = day
+            row['checkedAt'] = datetime.now(timezone.utc).isoformat()
+            cached[url] = row
+            report['checked'].append(url)
+            if row['price'] != old.get('price') or row.get('ram') != old.get('ram') or row.get('storage') != old.get('storage'):
+                report['changed'].append(dict(url=url, before={k: old.get(k) for k in ['price', 'ram', 'storage']},
+                                              after={k: row.get(k) for k in ['price', 'ram', 'storage']}))
+            if not row['inStock']:
+                report['unavailable'].append(url)
+        except (ValueError, TypeError) as exc:
+            report['failed'].append(dict(url=url, reason=str(exc)))
+        # Checkpoint each verified page. Interruption never loses earlier work, and a failed
+        # page keeps its own checked timestamp even when the cache file is rewritten.
+        save(OUT, list(cached.values()))
+        save(ROOT / 'data/eldorado-refresh-report.json', report)
+        print(f'Eldorado {index}/{len(targets)}: {len(report["changed"])} changed; {len(report["failed"])} unresolved', flush=True)
+        time.sleep(DELAY)
+    if not cached:
+        print('No verified listings: retained previous cache', file=sys.stderr)
+        return 1
+    save(OUT, list(cached.values()))
+    report['finished'] = datetime.now(timezone.utc).isoformat()
+    save(ROOT / 'data/eldorado-refresh-report.json', report)
+    print(f'Eldorado: {len(report["checked"])} exact pages checked, {len(report["changed"])} changes, '
+          f'{len(report["unavailable"])} unavailable, {len(report["failed"])} unresolved', flush=True)
+    return 1 if not report['checked'] and report['failed'] else 0
+
+
+if __name__ == '__main__':
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    raise SystemExit(main())

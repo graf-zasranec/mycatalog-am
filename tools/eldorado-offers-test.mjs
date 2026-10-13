@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {exactEldoradoEvidence, keepEldoradoOffer} from './eldorado-offers.mjs';
+const url = 'https://eldorado.am/en/sony-wh-ch720n-blue';
+const row = {url, price: 57900, checked: '2026-10-13', inStock: true, detailVerified: true};
+const old = {shop: 'eldorado', url, price: 39900, seen: '2026-10-13'};
+const evidence = exactEldoradoEvidence([row]);
+assert.equal(keepEldoradoOffer(old, evidence), false, 'expired sale hand row cannot survive');
+assert.equal(keepEldoradoOffer({...old, price: 57900}, evidence), true);
+assert.equal(keepEldoradoOffer({...old, url: 'https://eldorado.am/en/sony-wh-ch720-black'}, evidence), true, 'another colour keeps its own price');
+assert.equal(keepEldoradoOffer(old, exactEldoradoEvidence([{...row, inStock: false}])), false);
+assert.equal(keepEldoradoOffer(old, exactEldoradoEvidence([{...row, detailVerified: false}])), true, 'category card cannot supersede exact/manual page');
+assert.equal(keepEldoradoOffer({...old, seen: '2026-10-14'}, evidence), true, 'newer manual correction wins');
+const config = exactEldoradoEvidence([{...row, ram: 8, storage: 256}]);
+assert.equal(keepEldoradoOffer({...old, price: 57900, ram: 4, storage: 128}, config, {category: 'tablet'}), false);
+assert.equal(keepEldoradoOffer({...old, price: 57900, ram: 8, storage: 256}, config, {category: 'tablet'}), true);
+assert.equal(keepEldoradoOffer({...old, price: 57900, storage: 43}, config, {category: 'watch', variantUnit: 'mm'}), true, 'watch case size is not internal GB storage');
+assert.equal(keepEldoradoOffer(old, exactEldoradoEvidence([{...row, checked: null}])), true, 'undated cache is not fresh evidence');
+console.log('ELDORADO_OFFERS_PASS: expired sale, exact colour, stock, source/date and configuration checks');

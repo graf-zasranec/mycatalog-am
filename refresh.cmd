@@ -1,7 +1,9 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-REM Same refresh pipeline as GitHub Actions. Optional: set BETTER_ROW_LIMIT=400
+REM Same refresh pipeline as GitHub Actions, including exact Eldorado product checks.
+REM Optional: set BETTER_ROW_LIMIT=400 (other hand rows; Eldorado has its own full pass).
+REM To recheck only Eldorado: refresh.cmd --eldorado-only
 where node >nul 2>nul
 if errorlevel 1 (
   echo Node.js was not found. Install Node.js or open a terminal where node is available.

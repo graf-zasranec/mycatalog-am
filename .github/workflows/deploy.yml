@@ -7,7 +7,15 @@ on:
   schedule:
     - cron: '0 19 * * *'     # 23:00 Yerevan (UTC+4) - the day's prices, after the shops close
     - cron: '0 3 * * *'      # 07:00 Yerevan - so the morning page is not last night's
-  workflow_dispatch:          # lets you run it by hand from the Actions tab
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Shop refresh scope
+        type: choice
+        default: all
+        options:
+          - all
+          - eldorado
 
 permissions:
   contents: write             # to commit the refreshed prices + history
@@ -21,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     # 120 was hit on every run from 2026-10-06 (Eldorado's 7 s crawl delay alone is ~17 min);
     # hosted runners allow 360, and a public repository's minutes are free
-    timeout-minutes: 330
+    timeout-minutes: 360
     steps:
       # pinned to the commit, not the tag: a tag can be moved to point at new code,
       # and this job has contents:write on the repository it is checking out.
@@ -36,7 +44,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install the cache reader
-        run: python -m pip install 'scrapling[fetchers]==0.4.15' 'pillow==12.3.0'
+        run: python -m pip install 'scrapling[fetchers]==0.4.15' 'pillow==12.3.0' 'beautifulsoup4==4.15.0'
 
       # build.mjs minifies with esbuild; without it the run scrapes for hours, then fails at the build.
       - name: Install the build tools
@@ -45,6 +53,7 @@ jobs:
       - name: Refresh caches, hand rows, shop prices and build
         env:
           BETTER_ROW_LIMIT: '400'
+          BETTER_REFRESH_SCOPE: ${{ inputs.scope || 'all' }}
         run: node tools/refresh.mjs
 
       - name: Commit refreshed prices and history
@@ -53,11 +62,11 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           # photos-needed.json goes with them: it is published for whoever is finding
           # images, and a stale copy is worse than none.
-          git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
+          git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
           git diff --staged --quiet && echo "no price changes" && exit 0
           git commit -m "prices: $(date -u +%Y-%m-%d)"
           # A push made during the 3-hour crawl leaves this copy behind and the push is refused
-          # (2026-10-03/04, 10-10). Replay tonight's commit onto the new main, keep tonight's data,
+          # (2026-10-03/04, 10-10). Replay tonight's commit onto the new main; keep newer main corrections on conflicts,
           # rebuild with the new code, and try again - three times, as pushes can land meanwhile.
           # The refresh also leaves files it does not commit (spec caches and the like); git will
           # not rebase over them, which is what lost the whole run on 10-10, so set them aside.
@@ -65,7 +74,7 @@ jobs:
             git push && exit 0
             git stash push --include-untracked -m leftovers || true
             git fetch origin main
-            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+            git rebase -X ours origin/main || { git rebase --abort; exit 1; }
             node build.mjs
             git add data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb data/page-manifest.json index.html p c b ru en sitemap.xml
             git commit --amend --no-edit
