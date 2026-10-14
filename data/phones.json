@@ -14652,6 +14652,10 @@
     },
     "sources": [
       "https://www.dji.com/global/mic-mini/specs"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {
@@ -52902,6 +52906,10 @@
     "released": "2024-08",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite Gray",
+      "Gray"
     ]
   },
   {
@@ -56517,7 +56525,12 @@
       "ip": "IP68"
     },
     "released": "2026-09",
-    "specSource": "gsmarena.com/xiaomi_poco_f9_pro_5g-14877.php, 2026-10-03"
+    "specSource": "gsmarena.com/xiaomi_poco_f9_pro_5g-14877.php, 2026-10-03",
+    "colors": [
+      "Black",
+      "White",
+      "Green"
+    ]
   },
   {
     "id": "xiaomi-12s-ultra",
@@ -57011,6 +57024,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Jade"
     ]
   },
   {
@@ -57078,7 +57094,12 @@
     ],
     "specNA": {
       "chipset.name": "sold as 11th gen (MediaTek MT8183) and 13th gen (MediaTek MT8186A) under one listing (2026-10-03)"
-    }
+    },
+    "colors": [
+      "Pink",
+      "Black",
+      "Purple"
+    ]
   },
   {
     "id": "nothing-cmf-watch-pro",
@@ -66024,6 +66045,10 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {
@@ -68298,6 +68323,10 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {
@@ -72840,5 +72869,43 @@
       "type": "integrated"
     },
     "os": "DOS"
+  },
+  {
+    "id": "amazon-kindle-scribe-colorsoft",
+    "category": "ereader",
+    "brand": "Amazon",
+    "name": "Kindle Scribe Colorsoft",
+    "aliases": [
+      "Amazon Kindle Scribe Colorsoft",
+      "Kindle Scribe Colorsoft Premium Pen"
+    ],
+    "tier": "mid",
+    "priceAmd": 379000,
+    "priceAmdMax": 379000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 32,
+        "priceAmd": 379000
+      }
+    ],
+    "display": {
+      "size": 11,
+      "type": "Color e-paper"
+    },
+    "battery": {},
+    "summaryEn": "Amazon Kindle Scribe Colorsoft with Premium Pen.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Graphite"
+    ],
+    "specSource": "https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color; exact Colorsoft model separated from 10.2-inch Scribe, 2026-10-14"
   }
 ]
