@@ -511,8 +511,11 @@
   "xiaomi-poco-f8-pro": {
     "colours": {
       "blue": "images/cut/xiaomi-poco-f8-pro__blue.webp",
-      "titanium-silver": "images/cut/xiaomi-poco-f8-pro__titanium-silver.webp"
-    }
+      "titanium-silver": "images/cut/xiaomi-poco-f8-pro__titanium-silver.webp",
+      "black": "images/cut/xiaomi-poco-f8-pro__black.webp"
+    },
+    "main": "images/cut/xiaomi-poco-f8-pro__main.webp",
+    "reason": "Exact MobileTrade Black front/back source, Gemini detail-only upscale expressly authorized by owner, PhotoRoom transparency; reviewed 2026-10-14. Original source 800px with 594px body; enhanced source 2048px. Replaces promotional screen overlay."
   },
   "xiaomi-pad-5": {
     "colours": {
@@ -533,12 +536,14 @@
   },
   "dreame-vacuum-l50-ultra-ae-eua": {
     "colours": {
-      "black": "images/cut/dreame-vacuum-l50-ultra-ae-eua__black.webp"
+      "black": "images/cut/dreame-vacuum-l50-ultra-ae-eua__black.webp",
+      "white": "images/cut/dreame-vacuum-l50-ultra-ae-eua__white.webp"
     }
   },
   "dreame-vacuum-l50s-pro-ultra-eua": {
     "colours": {
-      "black": "images/cut/dreame-vacuum-l50s-pro-ultra-eua__black.webp"
+      "black": "images/cut/dreame-vacuum-l50s-pro-ultra-eua__black.webp",
+      "white": "images/cut/dreame-vacuum-l50s-pro-ultra-eua__white.webp"
     }
   },
   "samsung-galaxy-a07s": {
@@ -550,7 +555,8 @@
   },
   "dreame-vacuum-d30-ultra-eua": {
     "colours": {
-      "white": "images/cut/dreame-vacuum-d30-ultra-eua__white.webp"
+      "white": "images/cut/dreame-vacuum-d30-ultra-eua__white.webp",
+      "black": "images/cut/dreame-vacuum-d30-ultra-eua__black.webp"
     }
   },
   "xiaomi-17": {
@@ -562,6 +568,45 @@
     "colours": {
       "gray": "images/cut/xiaomi-pad-8__gray.webp",
       "green": "images/cut/xiaomi-pad-8__green.webp"
+    }
+  },
+  "dreame-vacuum-l40-ultra-ae": {
+    "colours": {
+      "black": "images/cut/dreame-vacuum-l40-ultra-ae__black.webp"
+    }
+  },
+  "dreame-vacuum-l40s-pro-ultra": {
+    "colours": {
+      "white": "images/cut/dreame-vacuum-l40s-pro-ultra__white.webp",
+      "black": "images/cut/dreame-vacuum-l40s-pro-ultra__black.webp"
+    }
+  },
+  "dreame-vacuum-x60-ultra-complete": {
+    "colours": {
+      "white": "images/cut/dreame-vacuum-x60-ultra-complete__white.webp",
+      "black": "images/cut/dreame-vacuum-x60-ultra-complete__black.webp"
+    }
+  },
+  "apple-watch-se-2": {
+    "colours": {
+      "starlight": "images/cut/apple-watch-se-2__starlight.webp",
+      "silver": "images/cut/apple-watch-se-2__silver.webp",
+      "midnight": "images/cut/apple-watch-se-2__midnight.webp"
+    },
+    "main": "images/cut/apple-watch-se-2__main.webp"
+  },
+  "xiaomi-smart-scale-s200": {
+    "colours": {
+      "dark-grey": "images/cut/xiaomi-smart-scale-s200__dark-grey.webp"
+    },
+    "main": "images/cut/xiaomi-smart-scale-s200__main.webp"
+  },
+  "yandex-station-duo-max": {
+    "colours": {
+      "beige": "images/cut/yandex-station-duo-max__beige.webp",
+      "red": "images/cut/yandex-station-duo-max__red.webp",
+      "black": "images/cut/yandex-station-duo-max__black.webp",
+      "green": "images/cut/yandex-station-duo-max__green.webp"
     }
   }
 }
