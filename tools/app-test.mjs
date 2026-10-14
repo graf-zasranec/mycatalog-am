@@ -46,7 +46,7 @@ const stub = {
 const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
-  offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareOptions, specAllowed, addLabel, counterPath,
+  offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareConfig, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, hay, fullName, sold,
   GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
@@ -308,6 +308,30 @@ is(app.keepsQuery(''), false, 'nor does a bare url');
 is(app.keepsQuery('/c/phone'), false, 'nor does a category');
 
 /* --- coupled configurations and filtered prices --------------------------------------- */
+{
+  const p = {id:'__colour_cell_pair',category:'tablet',colors:['Blue','Purple','Silver','Yellow'],variants:[{ram:4,storage:64},{ram:4,storage:256}]};
+  prices.offers[p.id]=[{shop:'a',price:200000,ram:4,storage:64,color:'Blue',cell:false},
+    {shop:'b',price:329000,ram:4,storage:256,color:'Purple',cell:false},
+    {shop:'c',price:220000,ram:4,storage:64,color:'Purple',cell:true},
+    {shop:'d',price:230000,ram:4,storage:64,color:'Silver',cell:true}];
+  const start={id:p.id,ram:4,storage:64,color:'Blue',cell:false};
+  const purple=app.chooseConfig(p,start,'color','Purple');
+  is(purple.cell,false,'colour choice keeps Wi-Fi when a Wi-Fi configuration exists');
+  is(purple.storage,256,'colour choice adjusts storage when needed to retain connectivity');
+  is(app.selectionOffers(p,purple)[0]?.price,329000,'colour selection quotes its available configuration');
+  app.st.cmpConfigs[p.id]={...start,color:'Purple'};
+  const restored=app.compareConfig(p);
+  is(restored.storage,256,'saved comparison repairs old incompatible colour/storage choice');
+  is(app.selectionOffers(p,restored)[0]?.price,329000,'restored comparison has a verified price');
+  delete app.st.cmpConfigs[p.id];
+  prices.offers[p.id]=[{shop:'a',price:200000,ram:4,storage:256,color:'Yellow',cell:false},
+    {shop:'b',price:220000,ram:4,storage:64,color:'Silver',cell:true}];
+  const small=app.chooseConfig(p,{id:p.id,ram:4,storage:256,color:'Yellow',cell:false},'storage',64);
+  is(small.cell,true,'storage choice changes connectivity when only Cellular exists');
+  is(small.color,'Silver','storage choice uses the available colour');
+  is(app.selectionOffers(p,small)[0]?.price,220000,'storage transition retains a purchasable offer');
+  delete prices.offers[p.id];
+}
 {
   const p = { id: '__paired_test', category: 'phone', brand: 'Example', name: 'Pair', colors: ['Black'],
     variants: [{ ram: 8, storage: 128 }, { ram: 16, storage: 256 }], priceAmd: 100000 };

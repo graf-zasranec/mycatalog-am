@@ -357,13 +357,27 @@ function configPool(p) {
     return seen.has(k) ? false : (seen.add(k), true); });
 }
 function chooseConfig(p, current, axis, value) {
-  let pool = configPool(p).filter(v => v[axis] === value);
-  if (axis !== 'size' && current.size != null && pool.some(v => v.size === current.size))
-    pool = pool.filter(v => v.size === current.size);
-  const match = pool.find(v => ['cpu', 'ram', 'storage', 'size', 'band'].every(k => k === axis || current[k] == null || v[k] == null || v[k] === current[k]));
-  const next = match || pool.slice().sort((a, b) => (a.price || a.priceAmd || 0) - (b.price || b.priceAmd || 0)
-    || (a.storage || 0) - (b.storage || 0) || (a.ram || 0) - (b.ram || 0))[0];
-  const chosen = next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size', 'band'].map(k => [k, next[k] ?? null])), configSpecs: next.configSpecs || null, [axis]: value }
+  if (value == null) return {...current, [axis]: value}; // Clearing SIM relaxes the current selection.
+  const presentationAxis = ['color', 'band', 'cell', 'esim'].includes(axis);
+  const hasRAM = (p.variants || []).some(v => v.ram != null);
+  const real = (presentationAxis ? selectionOffers(p, {[axis]: value}) : offersFor(p))
+    .map(o => offerConfig(p, o)).filter(o => presentationAxis || (o.storage != null && (!hasRAM || o.ram != null)));
+  // Keep colour and connectivity siblings: configPool intentionally deduplicates them for dropdown values.
+  const pool = real.length ? real.filter(v => presentationAxis || v[axis] === value)
+    : configPool(p).filter(v => v[axis] === value);
+  const preference = ['size', 'cpu', 'cell', 'esim', 'color', 'band', 'ram', 'storage'];
+  const next = pool.slice().sort((a,b) => {
+    for (const k of preference) {
+      if (k === axis || current[k] == null) continue;
+      const difference = Number(b[k] === current[k]) - Number(a[k] === current[k]);
+      if (difference) return difference;
+    }
+    return (a.price || a.priceAmd || 0) - (b.price || b.priceAmd || 0)
+      || (a.storage || 0) - (b.storage || 0) || (a.ram || 0) - (b.ram || 0);
+  })[0];
+  const chosen = next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size'].map(k => [k, next[k] ?? null])),
+    band: next.band ?? current.band, color: next.color ?? current.color,
+    cell: next.cell ?? null, esim: next.esim ?? null, configSpecs: next.configSpecs || null, [axis]: value }
     : { ...current, [axis]: value };
   if (chosen.color && !selectionOffers(p, chosen).length) {
     const available = selectionOffers(p, { ...chosen, color: null });
@@ -2745,7 +2759,14 @@ function compareConfig(p) {
   const saved = st.cmpConfigs[p.id];
   const pool = configPool(p);
   const match = saved && pool.find(v => ['cpu', 'ram', 'storage', 'size'].every(k => saved[k] == null || v[k] === saved[k]));
-  return match ? { ...initialConfig(p), ...saved, configSpecs: match.configSpecs || null, id: p.id } : initialConfig(p);
+  const restored = match ? { ...initialConfig(p), ...saved, configSpecs: match.configSpecs || null, id: p.id } : initialConfig(p);
+  if (saved && hasReal(p) && !selectionOffers(p, restored).length) {
+    const repaired = restored.color ? chooseConfig(p, restored, 'color', restored.color) : restored;
+    st.cmpConfigs[p.id] = selectionOffers(p, repaired).length ? repaired : initialConfig(p);
+    save();
+    return st.cmpConfigs[p.id];
+  }
+  return restored;
 }
 function compareOptions(p, sel) {
   const pool = configPool(p).filter(v => (sel.size == null || v.size == null || v.size === sel.size) && (!sel.cpu || v.cpu === sel.cpu));
@@ -2972,10 +2993,12 @@ function render(keepScroll) {
   const main = $('#main');
   const routeMatch = m || h.match(/^\/offers\/(.+)$/);
   const routeProduct = routeMatch && byId(routeMatch[1]);
-  if(routeProduct && !detailReady(routeProduct)) {
+  const routeDetails = h === '/compare' ? st.cmp.map(byId).filter(Boolean) : routeProduct ? [routeProduct] : [];
+  const pendingDetails = routeDetails.filter(p => !detailReady(p));
+  if(pendingDetails.length) {
     document.documentElement.classList.add('route-pending');
     main.dataset.loading=({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[st.lang];
-    ensureDetail(routeProduct).then(()=>{if(location.hash.replace(/^#/,'')===h)render(keepScroll)}).catch(()=>{
+    Promise.all(pendingDetails.map(ensureDetail)).then(()=>{if(location.hash.replace(/^#/,'')===h)render(keepScroll)}).catch(()=>{
       if(location.hash.replace(/^#/,'')!==h)return;
       document.documentElement.classList.remove('route-pending');
       main.innerHTML=`<div class="shell empty"><h1>${esc(({hy:'Տվյալները չբեռնվեցին',ru:'Не удалось загрузить данные',en:'Could not load product data'})[st.lang])}</h1><button class="btn" data-detail-retry>${esc(({hy:'Կրկին փորձել',ru:'Повторить',en:'Retry'})[st.lang])}</button></div>`;
@@ -3262,18 +3285,19 @@ document.addEventListener('click', e => {
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
   const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-cpu],[data-esim],[data-size],[data-band],[data-cell]');
   if (opt) {
+    if (opt.disabled) return;
     fxFlashAll = true;   // every price on the page is about to answer a different question
     const ph = byId(SEL.id);
-    if (opt.dataset.color !== undefined) SEL.color = opt.dataset.color;
+    if (opt.dataset.color !== undefined && ph) SEL = chooseConfig(ph, SEL, 'color', opt.dataset.color);
     // second click on the chosen one clears it, so "either" is reachable without a third button
     if (opt.dataset.esim !== undefined) {
       const want = opt.dataset.esim === '1';
-      SEL.esim = SEL.esim === want ? null : want;
+      SEL = ph ? chooseConfig(ph, SEL, 'esim', SEL.esim === want ? null : want) : {...SEL, esim: want};
     }
-    if (opt.dataset.cell !== undefined) SEL.cell = opt.dataset.cell === '1';
+    if (opt.dataset.cell !== undefined && ph) SEL = chooseConfig(ph, SEL, 'cell', opt.dataset.cell === '1');
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
-    if (opt.dataset.band !== undefined) SEL.band = opt.dataset.band;
+    if (opt.dataset.band !== undefined && ph) SEL = chooseConfig(ph, SEL, 'band', opt.dataset.band);
     for (const axis of ['cpu', 'size', 'storage', 'ram']) {
       if (opt.dataset[axis] !== undefined && ph) SEL = chooseConfig(ph, SEL, axis, axis === 'cpu' ? opt.dataset[axis] : +opt.dataset[axis]);
     }
