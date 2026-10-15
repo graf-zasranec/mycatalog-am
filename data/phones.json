@@ -73706,5 +73706,88 @@
     "chipset": {
       "name": "Apple H1"
     }
+  },
+  {
+    "id": "xiaomi-14t-pro",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "14T Pro",
+    "aliases": [
+      "Xiaomi 14T Pro"
+    ],
+    "tier": "mid",
+    "priceAmd": 245000,
+    "priceAmdMax": 345000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "storage": 256,
+        "priceAmd": 245000,
+        "ram": 12
+      },
+      {
+        "storage": 512,
+        "priceAmd": 250000,
+        "ram": 12
+      },
+      {
+        "storage": 1024,
+        "priceAmd": 345000,
+        "ram": 12
+      }
+    ],
+    "battery": {
+      "capacity": 5000,
+      "wired": 120,
+      "wireless": 50
+    },
+    "summaryEn": "Xiaomi 14T Pro.",
+    "sources": [
+      "https://appzone.am/en/Assortment/xiaomi-14t-pro/",
+      "https://www.mi.com/global/product/xiaomi-14t-pro/specs/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Titan Blue",
+      "Titan Gray",
+      "Titan Black"
+    ],
+    "released": "2024-09",
+    "chipset": {
+      "name": "MediaTek Dimensity 9300+",
+      "process": "4 nm",
+      "gpu": "Immortalis-G720 MC12"
+    },
+    "display": {
+      "size": 6.67,
+      "type": "AMOLED",
+      "resolution": "1220x2712",
+      "refresh": 144,
+      "ppi": 446,
+      "brightness": 4000
+    },
+    "camera": {
+      "modules": 3,
+      "main": "50 MP + 50 MP + 12 MP",
+      "front": "32 MP",
+      "video": "8K"
+    },
+    "body": {
+      "height": 160.4,
+      "width": 75.1,
+      "thickness": 8.39,
+      "weight": 209,
+      "ip": "IP68"
+    },
+    "connectivity": {
+      "network": "5G",
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "5.4",
+      "nfc": true
+    },
+    "os": "Xiaomi HyperOS"
   }
 ]
