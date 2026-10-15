@@ -1943,9 +1943,9 @@
     "brand": "Apple",
     "name": "AirPods Max 2",
     "tier": "flagship",
-    "released": "2024-09",
-    "priceAmd": 318900,
-    "priceAmdMax": 324900,
+    "released": "2026-03",
+    "priceAmd": 239000,
+    "priceAmdMax": 318900,
     "popularity": 55,
     "accent": "#1F2430",
     "audio": {
@@ -1955,36 +1955,40 @@
       "form": "full",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "playback": 20
+    },
     "body": {
       "materials": "Aluminium ear cups, stainless steel headband",
-      "weight": 385
+      "weight": 386.2
     },
     "connectivity": {
-      "bluetooth": "5.0",
+      "bluetooth": "5.3",
       "wireless": "USB-C charging"
     },
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 318900
+        "priceAmd": 239000
       }
     ],
     "colors": [
       "Midnight",
-      "Blue",
       "Starlight",
+      "Blue",
       "Purple",
-      "Orange",
-      "Pink",
-      "Green"
+      "Orange"
     ],
-    "summaryEn": "Apple's over-ear headphones, now charging over USB-C.",
+    "summaryEn": "Apple AirPods Max 2 (2026), H2 headphones with USB-C charging.",
     "aliases": [
-      "AirPods Max",
-      "AirPods Max (Type-C)",
-      "Apple AirPods Max"
+      "Apple AirPods Max 2"
+    ],
+    "year": 2026,
+    "chipset": {
+      "name": "Apple H2"
+    },
+    "sources": [
+      "https://www.apple.com/airpods-max/specs/",
+      "https://www.apple.com/newsroom/2026/03/apple-introduces-airpods-max-2-powered-by-h2/"
     ]
   },
   {
@@ -13804,7 +13808,8 @@
       "popularity"
     ],
     "aliases": [
-      "Dell Pro 15 EssentialPV15250"
+      "Dell Pro 15 EssentialPV15250",
+      "Dell Pro Essential PV15250 Core i7 1355U"
     ],
     "year": 2025
   },
@@ -29226,7 +29231,8 @@
       "popularity"
     ],
     "aliases": [
-      "Lenovo IdeaPad Slim 3 15IRH10I5"
+      "Lenovo IdeaPad Slim 3 15IRH10I5",
+      "Lenovo IdeaPad Slim 3 15IRH10"
     ],
     "year": 2025
   },
@@ -73006,5 +73012,699 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "lenovo-v15-g4",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "V15 G4",
+    "aliases": [
+      "Lenovo V15 G4"
+    ],
+    "tier": "mid",
+    "priceAmd": 225000,
+    "priceAmdMax": 225000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 225000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo V15 G4.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-v15-g4/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    }
+  },
+  {
+    "id": "lenovo-slim-3-15amn8",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "SLIM 3 15AMN8",
+    "aliases": [
+      "Lenovo SLIM 3 15AMN8"
+    ],
+    "tier": "mid",
+    "priceAmd": 264000,
+    "priceAmdMax": 264000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 264000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo SLIM 3 15AMN8.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-slim-3-15amn8/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "display": {
+      "size": 15.6
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "asus-vivobook-x1504va",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "VIVOBOOK X1504VA",
+    "aliases": [
+      "Asus VIVOBOOK X1504VA"
+    ],
+    "tier": "mid",
+    "priceAmd": 182000,
+    "priceAmdMax": 182000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 182000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "ASUS VIVOBOOK X1504VA.",
+    "sources": [
+      "https://appzone.am/en/Assortment/vivobook-x1504va/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6,
+      "type": "IPS"
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core 3-100U"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    }
+  },
+  {
+    "id": "dell-pro-16-pc16250",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Pro 16 PC16250",
+    "aliases": [
+      "DELL PRO 16 PC16250 512GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 282000,
+    "priceAmdMax": 292000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 282000
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 292000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Dell Pro 16 PC16250.",
+    "sources": [
+      "https://appzone.am/en/Assortment/dell-pro-16-pc16250-512gb/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 16,
+      "type": "IPS"
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core 5-120U"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    }
+  },
+  {
+    "id": "hp-15-fc0074nia-d01qyea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "15-fc0074nia (D01QYEA)",
+    "aliases": [
+      "HP 15-fc0074nia (D01QYEA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 285000,
+    "priceAmdMax": 285000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 285000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP 15-fc0074nia (D01QYEA).",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-15-fc0074nia-d01qyea/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset"
+    ],
+    "display": {
+      "size": 15.6,
+      "type": "IPS"
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "AMD Ryzen 7 7730U"
+    }
+  },
+  {
+    "id": "lenovo-thinkpad-x1-carbon-gen13-tp00150b",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "THINKPAD X1 CARBON GEN13 TP00150B",
+    "aliases": [
+      "LENOVO THINKPAD X1 CARBON GEN13 TP00150B"
+    ],
+    "tier": "mid",
+    "priceAmd": 749000,
+    "priceAmdMax": 749000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 749000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo THINKPAD X1 CARBON GEN13 TP00150B.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen13-tp00150b/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "display": {
+      "size": 14
+    },
+    "os": "Windows 11 PRO"
+  },
+  {
+    "id": "lenovo-thinkpad-x1-carbon-gen12-tp00150a",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "THINKPAD X1 CARBON GEN12 TP00150A",
+    "aliases": [
+      "Lenovo THINKPAD X1 CARBON GEN12 TP00150A"
+    ],
+    "tier": "mid",
+    "priceAmd": 575000,
+    "priceAmdMax": 575000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 575000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo THINKPAD X1 CARBON GEN12 TP00150A.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen12-tp00150a/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "display": {
+      "size": 14
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "hp-15-intel-core-5-120u",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "15",
+    "aliases": [
+      "HP LAPTOP 15"
+    ],
+    "tier": "mid",
+    "priceAmd": 235000,
+    "priceAmdMax": 235000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 235000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP 15.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-laptop-15/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core 5-120U"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    }
+  },
+  {
+    "id": "asus-vivobook-m1807ha-db79",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook M1807HA-DB79",
+    "aliases": [
+      "Asus Vivobook M1807HA-DB79"
+    ],
+    "tier": "mid",
+    "priceAmd": 389000,
+    "priceAmdMax": 389000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 389000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "ASUS Vivobook M1807HA-DB79.",
+    "sources": [
+      "https://appzone.am/en/Assortment/asus-vivobook-m1807ha-db79/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset"
+    ],
+    "display": {
+      "size": 18,
+      "type": "IPS"
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "AMD Ryzen 7 260"
+    }
+  },
+  {
+    "id": "lenovo-v15-g3",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "V15 G3",
+    "aliases": [
+      "LENOVO V15 G3"
+    ],
+    "tier": "mid",
+    "priceAmd": 225000,
+    "priceAmdMax": 225000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 225000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo V15 G3.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-v15-g3/"
+    ],
+    "unsure": [
+      "popularity",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6,
+      "type": "IPS"
+    },
+    "os": "Windows 11",
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    }
+  },
+  {
+    "id": "dell-vostro-15-3530-intel-core-i3-1315u",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "VOSTRO 15 3530",
+    "aliases": [
+      "DELL VOSTRO 15 3530"
+    ],
+    "tier": "mid",
+    "priceAmd": 215000,
+    "priceAmdMax": 215000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 215000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Dell VOSTRO 15 3530.",
+    "sources": [
+      "https://appzone.am/en/Assortment/dell-vostro-15-3530/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6,
+      "type": "IPS"
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core i3-1315U"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    }
+  },
+  {
+    "id": "lenovo-loq-15ahp11-83tn000erk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "LOQ 15AHP11 (83TN000ERK)",
+    "aliases": [
+      "Lenovo LOQ 15AHP11 (83TN000ERK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 559000,
+    "priceAmdMax": 559000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 559000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo LOQ 15AHP11 (83TN000ERK).",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-loq-15ahp11-83tn000erk/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6,
+      "refresh": 144
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "AMD Ryzen 7 250"
+    },
+    "graphics": {
+      "name": "GeForce RTX 5050 8GB",
+      "type": "discrete"
+    }
+  },
+  {
+    "id": "msi-katana-15hx-b14wgk",
+    "category": "laptop",
+    "brand": "MSI",
+    "name": "KATANA 15HX B14WGK",
+    "aliases": [
+      "MSI KATANA 15HX B14WGK"
+    ],
+    "tier": "mid",
+    "priceAmd": 825000,
+    "priceAmdMax": 825000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 825000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "MSI KATANA 15HX B14WGK.",
+    "sources": [
+      "https://appzone.am/en/Assortment/katana-15hx-b14wgk/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6,
+      "refresh": 144
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core i9-14900HX"
+    },
+    "graphics": {
+      "name": "RTX 5070 8GB",
+      "type": "discrete"
+    }
+  },
+  {
+    "id": "hp-hyperx-omen-16-am2715nr",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "HYPERX OMEN 16-AM2715NR",
+    "aliases": [
+      "HP HYPERX OMEN 16-AM2715NR"
+    ],
+    "tier": "mid",
+    "priceAmd": 749000,
+    "priceAmdMax": 749000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 749000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP HYPERX OMEN 16-AM2715NR.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hyperx-omen-16-am2715nr/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset",
+      "graphics"
+    ],
+    "display": {
+      "size": 16,
+      "refresh": 165
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core Ultra 7-356H"
+    },
+    "graphics": {
+      "name": "RTX 5070 8GB",
+      "type": "discrete"
+    }
+  },
+  {
+    "id": "msi-vector-16hx-ai-a2xwig",
+    "category": "laptop",
+    "brand": "MSI",
+    "name": "VECTOR 16HX AI A2XWIG",
+    "aliases": [
+      "MSI VECTOR 16HX AI A2XWIG"
+    ],
+    "tier": "mid",
+    "priceAmd": 1058000,
+    "priceAmdMax": 1058000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 1058000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "MSI VECTOR 16HX AI A2XWIG.",
+    "sources": [
+      "https://appzone.am/en/Assortment/vector-16hx-ai-a2xwig/"
+    ],
+    "unsure": [
+      "popularity",
+      "chipset"
+    ],
+    "display": {
+      "size": 16,
+      "refresh": 240
+    },
+    "os": "Windows 11",
+    "chipset": {
+      "name": "Intel Core Ultra 9-275HX"
+    }
+  },
+  {
+    "id": "lenovo-loq-15ahp10",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "LOQ 15AHP10",
+    "aliases": [
+      "Lenovo LOQ 15AHP10"
+    ],
+    "tier": "mid",
+    "priceAmd": 539000,
+    "priceAmdMax": 539000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 539000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo LOQ 15AHP10.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-loq-15ahp10/"
+    ],
+    "unsure": [
+      "popularity",
+      "graphics"
+    ],
+    "display": {
+      "size": 15.6,
+      "refresh": 144
+    },
+    "os": "Windows 11",
+    "graphics": {
+      "name": "GeForce RTX 5050 8GB",
+      "type": "discrete"
+    }
+  },
+  {
+    "id": "apple-airpods-max-usb-c-2024",
+    "category": "headphones",
+    "brand": "Apple",
+    "name": "AirPods Max (USB-C, 2024)",
+    "aliases": [
+      "AirPods Max (2024)"
+    ],
+    "tier": "mid",
+    "priceAmd": 169000,
+    "priceAmdMax": 239000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "priceAmd": 169000
+      }
+    ],
+    "battery": {
+      "playback": 20
+    },
+    "summaryEn": "Apple AirPods Max (USB-C, 2024).",
+    "sources": [
+      "https://appzone.am/en/Assortment/airpods-max-2024/",
+      "https://support.apple.com/en-gb/121205"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Starlight",
+      "Midnight",
+      "Blue",
+      "Purple",
+      "Orange"
+    ],
+    "released": "2024-09",
+    "audio": {
+      "type": "Over-ear, active noise cancellation",
+      "anc": true,
+      "transparency": true,
+      "form": "full",
+      "conn": "wireless"
+    },
+    "body": {
+      "weight": 386.2,
+      "materials": "Aluminium ear cups, stainless steel headband"
+    },
+    "connectivity": {
+      "bluetooth": "5.0",
+      "wireless": "USB-C charging"
+    },
+    "chipset": {
+      "name": "Apple H1"
+    }
   }
 ]

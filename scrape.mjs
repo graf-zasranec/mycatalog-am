@@ -236,7 +236,22 @@ function looksLikeBundle(text) {
   }
   return false;
 }
+function airpodsMaxId(text) {
+  let raw=String(text||'');try{raw=decodeURIComponent(raw);}catch{}
+  const h=tokenized(raw).replace(/  +/g,' ');
+  if(!/\bairpods max\b/.test(h))return undefined;
+  if(looksLikeAccessory(raw))return null;
+  const gen2=/\bairpods max 2\b|\b2026\b/.test(h);
+  const legacy=/\blightning\b|\ba2096\b|\b2020\b|\bpink\b|\bgreen\b|\bsky blue\b/.test(h);
+  const usb=/\btype c\b|\busb c\b|\b2024\b/.test(h);
+  if(legacy||(gen2&&/\b2024\b/.test(h)))return null;
+  if(gen2)return 'apple-airpods-max-2';
+  if(usb)return 'apple-airpods-max-usb-c-2024';
+  return null; // Port/generation is required; bare Max spans incompatible versions.
+}
 function matchPhone(text, meta) {
+  const maxId=airpodsMaxId(text);
+  if(maxId!==undefined)return maxId&&phoneById[maxId]?maxId:null;
   // A human reading data/links.csv and correcting the id column has settled this page for good.
   // Checked before every heuristic below, because a heuristic is a guess and this is a reading:
   // no amount of cleverness about titles should be allowed to re-open a question already answered.
@@ -852,6 +867,13 @@ if (process.argv[2] === '--selftest') {
     ['jbl-tune-760-nc', 'JBL Tune 760NC'],
     [null, 'JBL Tune 570BT'],
     ['apple-airpods-4-anc', 'AirPods 4 NC'],
+    ['apple-airpods-max-2','Apple AirPods Max 2 Type-C Midnight'],
+    ['apple-airpods-max-usb-c-2024','Apple AirPods Max (2024) Midnight'],
+    ['apple-airpods-max-usb-c-2024','https://shop.test/airpods-max-type-c-midnight'],
+    [null,'Apple AirPods Max Lightning Pink'],
+    [null,'AirPods Max 2 Type-C Pink'],
+    [null,'Apple AirPods Max'],
+    [null,'Case for AirPods Max 2'],
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
@@ -3201,6 +3223,15 @@ for (const [id, list] of Object.entries(offers)) {
 }
 if (staleN) console.log(`${staleN} offer(s) not seen since before ${staleCut} dropped as stale`);
 
+// Reconcile old hand/cache IDs too, so stale pins cannot mix Max generations again.
+const maxRows=[];
+for(const id of ['apple-airpods-max-2','apple-airpods-max-usb-c-2024']){
+  maxRows.push(...(offers[id]||[]));delete offers[id];
+}
+for(const o of maxRows){
+  const id=airpodsMaxId((o.title||'')+' '+(o.url||'')+' '+(o.color||''));
+  if(id&&phoneById[id])(offers[id]||=[]).push({...o,id});
+}
 fs.writeFileSync('data/prices.json', JSON.stringify({
   generated: new Date().toISOString(),
   shops, offers
