@@ -2035,6 +2035,9 @@ const SHOPS = {
       // Their sitemap lists four pages and no products, so the store index and the category
       // pages it links to are the crawl. robots.txt forbids query strings, so the filtered
       // category links (?brands[]=3) are dropped here rather than requested.
+      const {collectSmartGlasses} = await import('./tools/smart-glasses.mjs');
+      const reviewed = await collectSmartGlasses({get, pause: () => sleep(DELAY_MS)});
+      const reviewedUrls = new Set(reviewed.map(o => o.url.replace('www.', '').replace(/\/$/, '')));
       const pages = new Set(['https://3dplanet.am/en/store']);
       const prods = new Set();
       for (const page of pages) {                 // a Set visits values added while iterating
@@ -2045,8 +2048,9 @@ const SHOPS = {
           else if (pages.size < 40) pages.add(m[1]);
         }
       }
-      const out = [];
+      const out = [...reviewed];
       for (const u of prods) {
+        if (reviewedUrls.has(u.replace('www.', '').replace(/\/$/, ''))) continue;
         const id = matchPhone(u); if (!id) continue;
         const html = await get(u); await sleep(DELAY_MS);
         if (!html || !safeUrl(u)) continue;
