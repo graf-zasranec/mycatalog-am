@@ -26,6 +26,9 @@ const run = (command, args, required = false) => {
 };
 run(process.execPath, ['scrape.mjs', '--selftest'], true);
 run(process.execPath, ['tools/asbc-test.mjs'], true);
+run(process.execPath, ['tools/appzone-test.mjs'], true);
+run(process.execPath, ['tools/likemobile-test.mjs'], true);
+run(process.execPath, ['tools/miarmenia-test.mjs'], true);
 run(python, ['tools/eldorado-data-test.py'], true);
 run(python, ['tools/test_zigzag_stock.py'], true);
 run(python, ['tools/test_zigzag_fetch.py'], true);

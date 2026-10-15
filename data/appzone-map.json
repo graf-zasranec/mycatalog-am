@@ -1,0 +1,790 @@
+{
+  "https://appzone.am/en/Assortment/iphone-15/": {
+    "id": "apple-iphone-15",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Blue",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s25-fe/": {
+    "id": "samsung-galaxy-s25-fe",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Icyblue",
+      "black": "Jetblack",
+      "white": "White"
+    },
+    "holdColors": [
+      "purple"
+    ],
+    "note": "Purple is not a verified S25 FE finish; do not relabel as Navy."
+  },
+  "https://appzone.am/en/Assortment/apple-iphone-18-pro-max-esim/": {
+    "id": "apple-iphone-18-pro-max",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "maroon": "Burgundy",
+      "lightsteelblue": "Glacier",
+      "silver": "Silver",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-14t-pro/": {
+    "id": "xiaomi-14t-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Titan Blue",
+      "gray": "Titan Gray",
+      "black": "Titan Black"
+    },
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/iphone-17-pro/": {
+    "id": "apple-iphone-17-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Deep Blue",
+      "white": "Silver",
+      "orange": "Cosmic Orange"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-15-2/": {
+    "id": "xiaomi-redmi-15",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "grey": "Gray",
+      "black": "Black"
+    },
+    "holdColors": [
+      "blue"
+    ],
+    "note": "Shop calls this Ultramarine and reuses one image. Cannot confirm Purple."
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s26-ultra/": {
+    "id": "samsung-galaxy-s26-ultra",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Sky Blue",
+      "black": "Black",
+      "white": "White",
+      "thistle": "Cobalt Violet",
+      "purple": "Cobalt Violet"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-15c/": {
+    "id": "xiaomi-redmi-15c",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "green": "Mint Green",
+      "blue": "Moonlight Blue",
+      "black": "Midnight Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s26-plus/": {
+    "id": "samsung-galaxy-s26-plus",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Sky Blue",
+      "black": "Black",
+      "white": "White",
+      "thistle": "Cobalt Violet",
+      "purple": "Cobalt Violet"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a07/": {
+    "id": "samsung-galaxy-a07",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "green": "Green",
+      "purple": "Light Violet",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s26-fe/": {
+    "id": "samsung-galaxy-s26-fe",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "darkseagreen": "Pistachio",
+      "gray": "Graphite"
+    },
+    "holdColors": [
+      "thistle"
+    ],
+    "note": "Lavender has no confirmed corresponding model finish."
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a17/": {
+    "id": "samsung-galaxy-a17",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Shop omits 4G/5G identity and processor. Do not assume 5G."
+  },
+  "https://appzone.am/en/Assortment/apple-iphone-18-pro-max-nano-sim/": {
+    "id": "apple-iphone-18-pro-max",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "maroon": "Burgundy",
+      "lightsteelblue": "Glacier",
+      "silver": "Silver",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s26/": {
+    "id": "samsung-galaxy-s26",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Sky Blue",
+      "black": "Black",
+      "white": "White",
+      "thistle": "Cobalt Violet",
+      "purple": "Cobalt Violet"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s25-ultra/": {
+    "id": "samsung-galaxy-s25-ultra",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "blue": "Titanium Silverblue",
+      "gray": "Titanium Gray",
+      "black": "Titanium Black",
+      "silver": "Titanium Whitesilver"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-z-flip8/": {
+    "id": "samsung-galaxy-z-flip-8",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "black": "Graphite",
+      "white": "Cream",
+      "pink": "Pink"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-z-fold-8-ultra/": {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "purple": "Violet Shadow",
+      "black": "Graphite",
+      "white": "Cream"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-z-fold-8/": {
+    "id": "samsung-galaxy-z-fold-8",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "purple": "Lavender",
+      "black": "Graphite",
+      "white": "Cream"
+    }
+  },
+  "https://appzone.am/en/Assortment/apple-iphone-18-pro-nano-sim/": {
+    "id": "apple-iphone-18-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "maroon": "Burgundy",
+      "lightsteelblue": "Glacier",
+      "silver": "Silver",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/lenovo-v15-g4/": {
+    "id": "lenovo-v15-g4",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/hp-15-fd0558nia-bl8p8ea/": {
+    "id": "hp-15-fd0558nia-bl8p8ea",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/hp-laptop-17/": {
+    "id": "hp-17-amd-ryzen-5-7430u",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/lenovo-ideapad-slim-3-15irh10/": {
+    "id": "lenovo-ideapad-slim-3-15irh10",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/hp-zbook-firefly-16-g11/": {
+    "id": "hp-zbook-firefly-16-g11",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/asus-chromebook-cx3402cv/": {
+    "id": "asus-chromebook-cx3402cv",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/hp-probook-455-g8-45n89es-16/": {
+    "id": "hp-probook-455-g8-45n89es-16",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/omnibook-3-16-by0205dx/": {
+    "id": "hp-omnibook-3-16-by0205dx",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-ideapad-slim-3-15ian8/": {
+    "id": "lenovo-ideapad-slim-3-15ian8",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-slim-3-15amn8/": {
+    "id": "lenovo-slim-3-15amn8",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/asus-zenbook-q415ma-u5512/": {
+    "id": "asus-zenbook-q415ma-u5512",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/vivobook-x1504va/": {
+    "id": "asus-vivobook-x1504va",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/dell-pro-16-pc16250-512gb/": {
+    "id": "dell-pro-16-pc16250",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/hp-15-fc0074nia-d01qyea/": {
+    "id": "hp-15-fc0074nia-d01qyea",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/pavilion-15-eg3040ci/": {
+    "id": "hp-pavilion-15-eg3040ci",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/hp-laptop-15-fd0154wm/": {
+    "id": "hp-15-fd0154wm-i5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Model CPU identity conflicts between shop title, table and known SKU."
+  },
+  "https://appzone.am/en/Assortment/lenovo-thinkbook-14-g9/": {
+    "id": "lenovo-thinkbook-14-g9",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/dell-pro-14-pc14250/": {
+    "id": "dell-pro-14-pc14250",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/dell-xps-16-9640/": {
+    "id": "dell-xps-16-9640",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/acer-aspire-go16-ag16-71p-97w3/": {
+    "id": "acer-aspire-go-16-ag16-71p-97w3",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-ideapad-1-15iru7/": {
+    "id": "lenovo-ideapad-1-15iru7",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/hp-laptop-17-cp2025dx/": {
+    "id": "hp-17-cp2025dx",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/dell-inspiron-16-plus-7640/": {
+    "id": "dell-inspiron-16-plus-7640-intel-core-ultra-9-185h",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-17-x1704va-au1017/": {
+    "id": "asus-vivobook-17-x1704va-au1017",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/laptop-348-g7/": {
+    "id": "hp-348-g7",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "ignoreSpecBlocks": [
+      "chipset"
+    ],
+    "note": "Invalid processor spelling i3-1011U omitted.",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen13-tp00150b/": {
+    "id": "lenovo-thinkpad-x1-carbon-gen13-tp00150b",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/legion-5-15iax10/": {
+    "id": "lenovo-legion-5-15iax10",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Shop lists 16-inch display and Ultra 7-255U for a 15IAX10; requires SKU confirmation."
+  },
+  "https://appzone.am/en/Assortment/dell-pro-14-dc14250/": {
+    "id": "dell-pro-14-dc14250",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Title DC14250 conflicts with PC14250 gallery. Confirm exact model first."
+  },
+  "https://appzone.am/en/Assortment/hp-laptop-15-fc0303ci/": {
+    "id": "hp-15-fc0303ci",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/dell-pro-essential-pv15250-core-i7-1355u/": {
+    "id": "dell-pro-essential-pv15250-core-i7-1355u",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/omnibook-3-17-dg0107dx/": {
+    "id": "hp-omnibook-3-17-dg0107dx",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen12-tp00150a/": {
+    "id": "lenovo-thinkpad-x1-carbon-gen12-tp00150a",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "ignoreSpecBlocks": [
+      "chipset"
+    ]
+  },
+  "https://appzone.am/en/Assortment/dell-vostro-15-dc15250/": {
+    "id": "dell-15-dc15250",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-go-14-e410ka-cl4128/": {
+    "id": "asus-vivobook-e410ka-cl4128",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/hp-laptop-15/": {
+    "id": "hp-15-intel-core-5-120u",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-m1807ha-db79/": {
+    "id": "asus-vivobook-m1807ha-db79",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-v15-g3/": {
+    "id": "lenovo-v15-g3",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/ideapad-5-2in1-15akp10/": {
+    "id": "lenovo-ideapad-5-2in1-15akp10",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Title says 15AKP10 but table and description say 14-inch. Exact SKU needed."
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-14-m4-pro-24gb-512gb/": {
+    "id": "apple-macbook-pro-14-m4-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 14
+  },
+  "https://appzone.am/en/Assortment/dell-vostro-15-3530/": {
+    "id": "dell-vostro-15-3530-intel-core-i3-1315u",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/macbook-neo-13-a18-pro-8gb-256gb/": {
+    "id": "apple-macbook-neo-13",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "yellow": "Citrus",
+      "blue": "Indigo",
+      "pink": "Blush"
+    }
+  },
+  "https://appzone.am/en/Assortment/dell-pro-16/": {
+    "id": "dell-pro-16-pc16250",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-loq-15ahp11-83tn000erk/": {
+    "id": "lenovo-loq-15ahp11-83tn000erk",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-16-m5-pro-48gb-1tb/": {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 16
+  },
+  "https://appzone.am/en/Assortment/acer-nitro-v15-anv15-52-74sd/": {
+    "id": "acer-nitro-v15-anv15-52-74sd",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/katana-15hx-b14wgk/": {
+    "id": "msi-katana-15hx-b14wgk",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/lenovo-yoga-pro-7-14ahp9-83e3002ark/": {
+    "id": "lenovo-yoga-pro-7-14-ahp9-83e3002ark",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-16-m5-pro-24gb-1tb/": {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 16
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-14-m5-24gb-1tb/": {
+    "id": "apple-macbook-pro-14-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 14
+  },
+  "https://appzone.am/en/Assortment/hp-probook-455-g8-45n87es/": {
+    "id": "hp-probook-455-g8-45n87es",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/hp-15-fd0113dx-c0cm1ua/": {
+    "id": "hp-15-fd0113dx",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/macbook-air-13-m5-512gb/": {
+    "id": "apple-macbook-air-13-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "size": 13
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-14-m4-pro-24gb-1tb/": {
+    "id": "apple-macbook-pro-14-m4-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 14
+  },
+  "https://appzone.am/en/Assortment/macbook-neo-13-a18-pro-8gb-512gb/": {
+    "id": "apple-macbook-neo-13",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "yellow": "Citrus",
+      "blue": "Indigo",
+      "pink": "Blush"
+    }
+  },
+  "https://appzone.am/en/Assortment/hyperx-omen-16-am2715nr/": {
+    "id": "hp-hyperx-omen-16-am2715nr",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-14-m5-pro-24gb-1tb/": {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 14
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-16-2-m4-pro-24gb-512gb/": {
+    "id": "apple-macbook-pro-14-m4-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 16
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-14-m5-pro-24gb-2tb/": {
+    "id": "apple-macbook-pro-14-m5-pro",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "size": 14
+  },
+  "https://appzone.am/en/Assortment/macbook-air-15-m5-16gb-512gb/": {
+    "id": "apple-macbook-air-13-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "size": 15
+  },
+  "https://appzone.am/en/Assortment/vector-16hx-ai-a2xwig/": {
+    "id": "msi-vector-16hx-ai-a2xwig",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "ignoreSpecBlocks": [
+      "graphics"
+    ]
+  },
+  "https://appzone.am/en/Assortment/macbook-air-15-m5-16gb-1tb/": {
+    "id": "apple-macbook-air-13-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "size": 15
+  },
+  "https://appzone.am/en/Assortment/katana-15-b13vek/": {
+    "id": "msi-katana-15-b13vek",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/lenovo-loq-15ahp10/": {
+    "id": "lenovo-loq-15ahp10",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/macbook-pro-14-m5-max-36gb-2tb/": {
+    "id": "apple-macbook-pro-14-m5-max",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Silver",
+      "black": "Space Black"
+    },
+    "hold": true,
+    "reason": "36GB title conflicts with 32GB specification and description.",
+    "size": 14
+  },
+  "https://appzone.am/en/Assortment/acer-swift-3-sf314-59-75qc/": {
+    "id": "acer-swift-3-sf314-59-75qc",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "ignoreSpecBlocks": [
+      "display"
+    ],
+    "size": 14,
+    "note": "SF314 is a 14-inch model; shop copied a 15.6-inch display row."
+  },
+  "https://appzone.am/en/Assortment/macbook-air-13-m5-24gb-1tb/": {
+    "id": "apple-macbook-air-13-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "size": 13
+  },
+  "https://appzone.am/en/Assortment/hp-laptop-17-cn4071cl-b9lq4ua/": {
+    "id": "hp-17-cn4071cl-b9lq4ua",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/macbook-air-15-m5-24gb-1tb/": {
+    "id": "apple-macbook-air-13-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "size": 15
+  },
+  "https://appzone.am/en/Assortment/macbook-air-13-m5-16gb-1tb/": {
+    "id": "apple-macbook-air-13-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "size": 13
+  },
+  "https://appzone.am/en/Assortment/acer-nitro-v16s-ai-anv16s-41-r3q0/": {
+    "id": "acer-nitro-v16s-ai-anv16s-41-r3q0",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Awaiting a verified product photo with at least 600px of visible product detail."
+  },
+  "https://appzone.am/en/Assortment/apple-airpods-5/": {
+    "id": "apple-airpods-5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/airpods-5-wireless/": {
+    "id": "apple-airpods-5-wireless-charging-case",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/airpods-4/": {
+    "id": "apple-airpods-4",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/apple-airpods-pro-3/": {
+    "id": "apple-airpods-pro-3",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/airpods-4-with-active-noise-cancellation/": {
+    "id": "apple-airpods-4-anc",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/apple-airpods-pro-2-type-c/": {
+    "id": "apple-airpods-pro-2",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors"
+  },
+  "https://appzone.am/en/Assortment/airpods-max-2024/": {
+    "id": "apple-airpods-max-usb-c-2024",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Starlight",
+      "black": "Midnight",
+      "blue": "Blue",
+      "purple": "Purple",
+      "orange": "Orange"
+    }
+  },
+  "https://appzone.am/en/Assortment/airpods-max-type-c/": {
+    "id": "apple-airpods-max-usb-c-2024",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "silver": "Starlight",
+      "black": "Midnight",
+      "blue": "Blue",
+      "purple": "Purple",
+      "orange": "Orange"
+    }
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-2025-11-0-wifi/": {
+    "id": "apple-ipad-a16",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "hold": true,
+    "reason": "Capacity is absent in selector, specifications and description."
+  },
+  "https://appzone.am/en/Assortment/ipad-air-13-m4-wi-fi/": {
+    "id": "apple-ipad-air-11-m4",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "gray": "Space Gray",
+      "white": "Starlight",
+      "blue": "Blue"
+    },
+    "cell": false,
+    "size": 13
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-air-11-m4/": {
+    "id": "apple-ipad-air-11-m4",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "gray": "Space Gray",
+      "white": "Starlight",
+      "blue": "Blue",
+      "purple": "Purple"
+    },
+    "cell": false,
+    "size": 11
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-mini-7/": {
+    "id": "apple-ipad-mini-7",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "gray": "Space Gray",
+      "white": "Starlight",
+      "blue": "Blue",
+      "purple": "Purple"
+    },
+    "cell": false
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-pro-13/": {
+    "id": "apple-ipad-pro-11-m5",
+    "reviewed": "2026-10-15",
+    "method": "Browser product page and configuration selectors",
+    "colors": {
+      "black": "Space Black",
+      "white": "Silver"
+    },
+    "size": 13
+  }
+}

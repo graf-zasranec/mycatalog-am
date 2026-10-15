@@ -1520,6 +1520,21 @@ async function* catPages(base, linkRe, max = 40) {
 }
 
 const SHOPS = {
+  likemobile: {
+    name:'LikeMobile',site:'https://likemobile.am',note:'Exact catalogue SKU prices and stock',
+    async run(){const {collectLikeMobile}=await import('./tools/likemobile.mjs');return collectLikeMobile({get,pause:()=>sleep(DELAY_MS),match:matchPhone});}
+  },
+  miarmenia: {
+    name:'Mi Armenia',site:'https://miarmenia.am',note:'Reviewed product pages and cash prices',
+    async run(){const {collectMiArmenia}=await import('./tools/miarmenia.mjs');return collectMiArmenia({get,pause:()=>sleep(DELAY_MS)});}
+  },
+  appzone: {
+    name:'AppZone',site:'https://appzone.am',note:'Phones, laptops, headphones and tablets — exact shop configurations',
+    async run(){
+      const {collectAppzone}=await import('./tools/appzone.mjs');
+      return collectAppzone({get,match:matchPhone,pause:()=>sleep(DELAY_MS),products:phones});
+    }
+  },
   asbc: {
     name: 'ASBC', site: 'https://catalog.asbc.am', note: 'Apple products — public retail prices',
     async run() {
@@ -2570,9 +2585,12 @@ for (const key of names) {
   }
   // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
 // that failed keeps whatever date it already had, which is the point of having one.
-const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TODAY, size: screenOf(o.title, o.id) }));
+const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TODAY, size: ['appzone','likemobile','miarmenia'].includes(key) ? o.size ?? screenOf(o.title, o.id) : screenOf(o.title, o.id) }));
   for (const o of rows) (offers[o.id] ||= []).push(o);
-  const kept = keepThroughCollapse(had, best);
+  // AppZone reads every reviewed parent page and its complete variant inventory.
+  // Failed pages throw and retain the previous shop; a successful read must not
+  // revive a sold-out child variant just because its sibling remains available.
+  const kept = ['appzone','likemobile','miarmenia'].includes(key) ? [] : keepThroughCollapse(had, best);
   for (const o of kept) (offers[o.id] ||= []).push(o);
   if (kept.length) console.log(`    read ${best.size} of the ${had.length} it had last time - the shop, not the stock: kept ${kept.length} previous offer(s) with their old dates`);
   // Written now, not at the end: this shop is read and should stay read even if the run dies in

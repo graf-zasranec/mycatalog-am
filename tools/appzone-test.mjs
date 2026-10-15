@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {readAppzone, appzoneOffers,reviewAppzoneOffer} from './appzone.mjs';
+const variation=(memory,price=77000)=>({attributes:{'attribute_pa_memory':memory,'attribute_pa_color':'black'},display_price:price,is_in_stock:true,is_purchasable:true,variation_is_active:true,variation_is_visible:true,variation_id:123,image:{full_src:'https://appzone.am/black.png'}});
+const page={title:'Xiaomi Redmi 15',url:'https://appzone.am/en/Assortment/xiaomi-redmi-15-2/',specs:{},variations:[variation('6-128gb',63000),variation('8-256gb')],image:null,description:''};
+const rows=appzoneOffers(page);
+assert.deepEqual(rows.map(o=>[o.ram,o.storage,o.price]),[[6,128,63000],[8,256,77000]]);
+assert.equal(appzoneOffers({...page,variations:[variation('2tb-2')]} )[0].storage,2048);
+assert.equal(appzoneOffers({...page,variations:[{...variation('256-gb'),attributes:{'attribute_pa_memory':'256-gb','attribute_pa_ram':'16gb-2'}}]})[0].ram,16);
+assert.equal(appzoneOffers({...page,variations:[variation('256-gb',0)]}).length,0);
+assert.equal(appzoneOffers({...page,variations:[{...variation('256-gb'),is_in_stock:false}]})[0].inStock,false);
+assert.equal(appzoneOffers({...page,variations:[{...variation('256-gb'),is_purchasable:false}]})[0].inStock,false);
+const html=`<h1 class="product_title entry-title">Lenovo V15 G4</h1><div class="woocommerce-product-details__short-description"><p>8GB RAM | 512GB SSD</p></div><table class="woocommerce-product-attributes shop_attributes"><tr><th>Working memory</th><td>8GB DDR4</td></tr><tr><th>Memory</th><td>512GB</td></tr></table><p class="price"><del><bdi>249000 AMD</bdi></del><ins><bdi>225000 AMD</bdi></ins></p><button class="single_add_to_cart_button button alt">Add to cart</button>`;
+const simple=readAppzone(html,page.url);
+assert.equal(simple.title,'Lenovo V15 G4');assert.equal(simple.price,225000);
+assert.equal(appzoneOffers(simple)[0].ram,8);assert.equal(appzoneOffers(simple)[0].storage,512);
+assert.equal(appzoneOffers(readAppzone(html.replace('button alt','button alt disabled'),page.url))[0].inStock,false);
+assert.equal(appzoneOffers(readAppzone(html.replace('Add to cart','Out of stock'),page.url))[0].inStock,false);
+assert.throws(()=>readAppzone('<h1>Access denied</h1>',page.url),/AppZone/);
+const encoded=JSON.stringify([variation('8-256gb')]).replaceAll('"','&quot;');
+assert.equal(readAppzone(`<h1 class="product_title">Redmi 15</h1><form class="variations_form cart" data-product_variations='${encoded}'></form>`,page.url).variations.length,1);
+assert.equal(reviewAppzoneOffer(rows[0],{category:'phone'},{id:'redmi',hold:true}),null);
+assert.equal(reviewAppzoneOffer(rows[0],{category:'phone',variants:[{ram:6,storage:128}]},{id:'redmi',colors:{black:'Black'}}).color,'Black');
+assert.equal(reviewAppzoneOffer(rows[0],{category:'phone'},{id:'redmi',colors:{}}),null);
+assert.equal(reviewAppzoneOffer({...rows[0],ram:null},{category:'phone',variants:[{ram:6,storage:128}]},{id:'redmi',colors:{black:'Black'}}).ram,6);
+assert.equal(appzoneOffers({...simple,description:'8GB DDR4 RAM | 512GB SSD',specs:{Memory:'512GB'}})[0].ram,8);
+assert.equal(appzoneOffers({...simple,specs:{Processor:'Apple M5 10-core'}})[0].configSpecs.chipset.name,'Apple M5');
+console.log('AppZone parser: exact pairs, prices, stock and markup checks passed');
+
+const {existingConfiguration}=await import('./appzone.mjs');
+assert.equal(existingConfiguration({category:'phone',variants:[{ram:12,storage:256}]},{ram:12,storage:128}),false);
+assert.equal(existingConfiguration({category:'phone',variants:[{ram:12,storage:256}]},{ram:12,storage:256}),true);
+
