@@ -1520,6 +1520,13 @@ async function* catPages(base, linkRe, max = 40) {
 }
 
 const SHOPS = {
+  asbc: {
+    name: 'ASBC', site: 'https://catalog.asbc.am', note: 'Apple products — public retail prices',
+    async run() {
+      const {collectAsbc}=await import('./tools/asbc.mjs');
+      return collectAsbc({get,match:matchPhone,pause:()=>sleep(DELAY_MS)});
+    }
+  },
   ispace: {
     name: 'iSpace', site: 'https://ispace.am', note: 'Apple Premium Reseller',
     async run() {

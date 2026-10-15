@@ -5871,7 +5871,8 @@
     "colors": [
       "Black",
       "Light Gold",
-      "Space Gray"
+      "Space Gray",
+      "Dark Bronze"
     ],
     "variantUnit": "mm",
     "os": "watchOS",
@@ -72907,5 +72908,103 @@
       "Graphite"
     ],
     "specSource": "https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color; exact Colorsoft model separated from 10.2-inch Scribe, 2026-10-14"
+  },
+  {
+    "id": "apple-airpods-5-wireless-charging-case",
+    "category": "headphones",
+    "brand": "Apple",
+    "name": "AirPods 5 with Wireless Charging Case",
+    "aliases": [
+      "AirPods 5 with Wireless Charging Case",
+      "Apple AirPods 5 Wireless"
+    ],
+    "tier": "mid",
+    "priceAmd": 79900,
+    "priceAmdMax": 79900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79900
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "display": {},
+    "battery": {},
+    "audio": {
+      "form": "tws",
+      "conn": "wireless",
+      "anc": true,
+      "driver": null
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.3,
+      "ip": "IP57"
+    },
+    "summaryEn": "Wireless earbuds with active noise cancellation, Bluetooth 5.3 and a wireless charging case.",
+    "sources": [
+      "https://catalog.asbc.am/en/product/mkft4ze-a"
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "apple-tv-4k-2022",
+    "category": "streamer",
+    "brand": "Apple",
+    "name": "TV 4K (3rd generation)",
+    "aliases": [
+      "Apple TV 4K Wi-Fi + Ethernet with 128GB storage Model A2843",
+      "Apple TV 4K A2843",
+      "Apple TV MN893RU/A"
+    ],
+    "tier": "mid",
+    "released": "2022",
+    "priceAmd": 148900,
+    "priceAmdMax": 148900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": 148900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "display": {},
+    "battery": {},
+    "chipset": {
+      "name": "Apple A15 Bionic"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.0",
+      "ports": "HDMI 2.1; Gigabit Ethernet"
+    },
+    "body": {
+      "width": 93,
+      "height": 31,
+      "weight": 214,
+      "thickness": 93
+    },
+    "os": "tvOS",
+    "summaryEn": "A2843 streaming media player with A15 Bionic, 128 GB storage, Wi-Fi 6, Gigabit Ethernet, HDMI 2.1 and Siri Remote. HDMI cable sold separately.",
+    "sources": [
+      "https://catalog.asbc.am/en/product/apple-tv-mn893rua"
+    ],
+    "unsure": [
+      "popularity"
+    ]
   }
 ]
