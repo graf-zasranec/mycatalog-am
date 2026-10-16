@@ -2882,8 +2882,9 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // A human's '!' still wins: this is a rule about a shop, and a rule can have an exception.
 // viva, istore, vega and redstore import the same way, confirmed by the owner on 2026-09-21:
 // if their listing does not say otherwise in its own name, it is the nano tray.
+// istyle and asbc too (owner, 2026-10-16: "istyle and asbc are nano sim").
 const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace',
-  'viva', 'istore', 'vega', 'redstore']);
+  'viva', 'istore', 'vega', 'redstore', 'istyle', 'asbc']);
 // Only where a SIM build means anything. A laptop has no tray to charge more for, and stamping
 // one on it would put a nano-SIM badge on a MacBook.
 const HAS_SIM = new Set(phones.filter(p => p.category === 'phone').map(p => p.id));
@@ -2897,7 +2898,7 @@ for (const [id, list] of Object.entries(offers)) {
     // A build the ADAPTER read out of the shop's own variant data is not a guess and is not
     // re-derived here. pixel gives all eight builds of a phone the same title, so re-reading
     // that title would collapse the distinction the page went to the trouble of stating.
-    const b = o.simFromPage ? o.esim
+    const b = o.simFromPage && o.esim !== undefined ? o.esim
       : SIMPINS.has(o.url) ? SIMPINS.get(o.url)
       : said !== undefined ? said
       : (NANO_ONLY.has(o.shop) && HAS_SIM.has(id)) ? false
