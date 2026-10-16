@@ -12,7 +12,11 @@ previews = {}
 old_manifest = json.loads((root / 'data' / 'thumbnails.json').read_text()) if (root / 'data' / 'thumbnails.json').exists() else {}
 old_previews = json.loads((root / 'data' / 'photo-previews.json').read_text()) if (root / 'data' / 'photo-previews.json').exists() else {}
 before = after = 0
+# Draft assets stay on disk but are not shipped until their product is accepted.
+product_ids = {p['id'] for p in json.loads((root / 'data' / 'phones.json').read_text(encoding='utf-8'))}
 for source in sorted((root / 'images' / 'cut').glob('*.webp')):
+    if source.stem.split('__')[0] not in product_ids:
+        continue
     digest = hashlib.sha256(source.read_bytes()).hexdigest()[:12]
     dest = out / f'{source.stem}-{digest}.webp'
     key = source.relative_to(root).as_posix()

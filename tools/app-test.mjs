@@ -366,6 +366,8 @@ is(app.keepsQuery('/c/phone'), false, 'nor does a category');
   for (const key of ['f.main_cam', 'f.front_cam', 'f.sim', 'f.network', 'f.nfc', 'f.wireless'])
     is(app.specAllowed(key, { category: 'laptop' }), false, `laptop comparison omits ${key}`);
   is(app.specAllowed('f.front_cam', { category: 'phone' }), true, 'phone comparisons retain front camera');
+  is(app.specAllowed('f.capacity', {category:'appliance'}), true, 'battery-powered appliance retains its stated capacity');
+  for (const key of ['f.wireless','f.ram','f.storage','f.front_cam']) is(app.specAllowed(key, {category:'appliance'}), false, 'vacuum omits inapplicable '+key);
   for (const key of ['f.main_cam', 'f.video', 'f.storage']) is(app.specAllowed(key, {category:'smartglasses'}), true, 'smart glasses support '+key);
   for (const key of ['f.front_cam', 'f.ram', 'f.screen_size', 'f.sim']) is(app.specAllowed(key, {category:'smartglasses'}), false, 'smart glasses omit '+key);
   for (const lang of ['hy', 'ru', 'en']) {

@@ -152,7 +152,8 @@ for (const k of Object.keys(HISTORY.points || {}))
 // transparent cutouts made by tools/cutout.mjs: images/cut/<phoneId>__<colourSlug>.webp
 // "<id>__main.webp" is the default shot; the rest are per-colour.
 const CUT = 'images/cut';
-const cutFiles = fs.existsSync(CUT) ? fs.readdirSync(CUT).filter(f => f.endsWith('.webp')) : [];
+const photoProductIds = new Set(phones.map(p => p.id));
+const cutFiles = fs.existsSync(CUT) ? fs.readdirSync(CUT).filter(f => f.endsWith('.webp') && photoProductIds.has(f.split('__')[0])) : [];
 
 // WebP width, read straight out of the header - the product page prefers the colour shot over
 // the main one, and 30 colour photos were a third of the main's resolution, so the card looked

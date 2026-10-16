@@ -1047,7 +1047,7 @@ function specAllowed(key, p) {
   if (['f.main_cam', 'f.ultrawide', 'f.telephoto', 'f.front_cam', 'f.video'].includes(key)) return mobile;
   if (['f.sim', 'f.network', 'f.nfc', 'f.wireless'].includes(key)) return mobile || cat === 'watch';
   if (key === 'f.card_slot') return mobile || cat === 'laptop' || cat === 'camera';
-  if (['f.capacity', 'f.charging'].includes(key)) return ['phone', 'tablet', 'laptop', 'watch', 'headphones', 'speaker', 'ereader', 'drone'].includes(cat);
+  if (['f.capacity', 'f.charging'].includes(key)) return ['phone', 'tablet', 'laptop', 'watch', 'headphones', 'speaker', 'ereader', 'drone', 'appliance'].includes(cat);
   if (['f.screen_size', 'f.screen_type', 'f.resolution', 'f.refresh_rate', 'f.ppi', 'f.brightness', 'f.protection', 'f.touch'].includes(key))
     return ['phone', 'tablet', 'laptop', 'watch', 'tv', 'monitor', 'ereader'].includes(cat);
   if (['f.chipset', 'f.process', 'f.cpu', 'f.gpu', 'f.ram', 'f.storage', 'f.os', 'f.updates'].includes(key))

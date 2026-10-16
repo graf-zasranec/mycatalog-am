@@ -65855,14 +65855,30 @@
     "priceAmd": 139900
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Vacuum S40 Pro.",
+  "battery": {
+   "capacity": 5200
+  },
+  "summaryEn": "Xiaomi Robot Vacuum S40 Pro. Robot vacuum with 15,000 Pa suction, an extendable side brush and mop, LDS navigation, a 430 mL dustbin and a 310 mL water tank.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+   "popularity"
+  ],
+  "appliance": {
+   "type": "robot_vacuum",
+   "power": 160,
+   "suction": "15000 Pa",
+   "dust": "430 mL",
+   "water": "310 mL",
+   "area": "≤180 m²"
+  },
+  "body": {
+   "weight": 4200,
+   "height": 99,
+   "width": 355,
+   "thickness": 350
+  },
+  "sources": [
+   "https://www.mi.com/global/product/xiaomi-robot-vacuum-s40-pro/",
+   "https://www.mi.com/global/product/xiaomi-robot-vacuum-s40-pro/specs/"
   ]
  },
  {
@@ -67799,14 +67815,33 @@
     "priceAmd": 77000
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Vacuum S40 BHR084AEU.",
+  "battery": {
+   "capacity": 5200,
+   "life": "≤180 min"
+  },
+  "summaryEn": "Xiaomi Robot Vacuum S40 (BHR084AEU). Robot vacuum with 10,000 Pa suction, LDS navigation, a 520 mL dustbin, a 270 mL water tank and up to 180 minutes of runtime under manufacturer test conditions.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+   "popularity"
+  ],
+  "appliance": {
+   "type": "robot_vacuum",
+   "power": 70,
+   "suction": "10000 Pa",
+   "dust": "520 mL",
+   "water": "270 mL"
+  },
+  "body": {
+   "weight": 4120,
+   "height": 98,
+   "width": 340,
+   "thickness": 340
+  },
+  "colors": [
+   "White"
+  ],
+  "sources": [
+   "https://www.mi.com/global/product/xiaomi-robot-vacuum-s40/",
+   "https://www.mi.com/global/product/xiaomi-robot-vacuum-s40/specs/"
   ]
  },
  {
@@ -67873,9 +67908,10 @@
   "id": "xiaomi-vacuum-h50-bhr08gueu",
   "category": "appliance",
   "brand": "Xiaomi",
-  "name": "Vacuum H50 BHR08GUEU",
+  "name": "Robot Vacuum H50",
   "aliases": [
-   "Xiaomi Robot Vacuum H50 (White) (OV43GL) BHR08GUEU"
+   "Xiaomi Robot Vacuum H50 (White) (OV43GL) BHR08GUEU",
+   "Xiaomi Robot Vacuum H50"
   ],
   "tier": "mid",
   "priceAmd": 209900,
@@ -67889,23 +67925,42 @@
     "priceAmd": 209900
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Vacuum H50 BHR08GUEU.",
+  "battery": {
+   "capacity": 5200
+  },
+  "summaryEn": "Xiaomi Robot Vacuum H50. Robot vacuum with 10,000 Pa suction, LDS navigation, rotating mop pads and an all-in-one base station for mop washing and dust collection.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+   "popularity"
+  ],
+  "appliance": {
+   "type": "robot_vacuum",
+   "power": 55,
+   "suction": "10000 Pa",
+   "water": "4 L",
+   "area": "≤240 m²"
+  },
+  "body": {
+   "weight": 3700,
+   "height": 93,
+   "width": 355,
+   "thickness": 353.5
+  },
+  "colors": [
+   "White"
+  ],
+  "sources": [
+   "https://www.mi.com/sg/product/xiaomi-robot-vacuum-h50/",
+   "https://www.mi.com/sg/product/xiaomi-robot-vacuum-h50/specs/"
   ]
  },
  {
   "id": "xiaomi-vacuum-h50-pro-bhr089neu",
   "category": "appliance",
   "brand": "Xiaomi",
-  "name": "Vacuum H50 Pro BHR089NEU",
+  "name": "Robot Vacuum H50 Pro",
   "aliases": [
-   "Xiaomi Robot Vacuum H50 Pro White (OV42GL) BHR089NEU"
+   "Xiaomi Robot Vacuum H50 Pro White (OV42GL) BHR089NEU",
+   "Xiaomi Robot Vacuum H50 Pro"
   ],
   "tier": "mid",
   "priceAmd": 259900,
@@ -67919,14 +67974,32 @@
     "priceAmd": 259900
    }
   ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Xiaomi Vacuum H50 Pro BHR089NEU.",
+  "battery": {
+   "capacity": 5200
+  },
+  "summaryEn": "Xiaomi Robot Vacuum H50 Pro. Robot vacuum with 15,000 Pa suction, extendable side brush and mop, LDS navigation and an all-in-one dock that washes and dries the mops.",
   "unsure": [
-   "popularity",
-   "display",
-   "chipset",
-   "battery.capacity"
+   "popularity"
+  ],
+  "appliance": {
+   "type": "robot_vacuum",
+   "power": 55,
+   "suction": "15000 Pa",
+   "water": "4 L",
+   "area": "≤240 m²"
+  },
+  "body": {
+   "weight": 3900,
+   "height": 93,
+   "width": 355,
+   "thickness": 353.5
+  },
+  "colors": [
+   "White"
+  ],
+  "sources": [
+   "https://www.mi.com/global/product/xiaomi-robot-vacuum-h50-pro/",
+   "https://www.mi.com/global/product/xiaomi-robot-vacuum-h50-pro/specs/"
   ]
  },
  {
@@ -74332,5 +74405,141 @@
    "type": "discrete"
   },
   "os": "Windows 11"
+ },
+ {
+  "id": "xiaomi-vacuum-cleaner-p30",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Vacuum Cleaner P30",
+  "aliases": [
+   "Xiaomi Vacuum Cleaner P30"
+  ],
+  "tier": "mid",
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 43900
+   }
+  ],
+  "unsure": [
+   "popularity"
+  ],
+  "appliance": {
+   "type": "cordless_vacuum",
+   "power": 180,
+   "suction": "22000 Pa",
+   "dust": "200 mL"
+  },
+  "battery": {
+   "capacity": 2000,
+   "life": "≤40 min"
+  },
+  "body": {
+   "weight": 1460
+  },
+  "summaryEn": "Xiaomi Vacuum Cleaner P30. Cordless vacuum cleaner with 22,000 Pa maximum suction, a 200 mL dust compartment and up to 40 minutes of runtime in Eco mode.",
+  "colors": [
+   "White"
+  ],
+  "sources": [
+   "https://www.mi.com/global/product/xiaomi-vacuum-cleaner-p30/",
+   "https://www.mi.com/global/product/xiaomi-vacuum-cleaner-p30/specs/"
+  ],
+  "priceAmd": 43900,
+  "priceAmdMax": 43900
+ },
+ {
+  "id": "xiaomi-truclean-w20-wet-dry-vacuum",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Truclean W20 Wet Dry Vacuum",
+  "aliases": [
+   "Xiaomi Truclean W20 Wet Dry Vacuum"
+  ],
+  "tier": "mid",
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 95000
+   }
+  ],
+  "unsure": [
+   "popularity"
+  ],
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "power": 200,
+   "suction": "15000 Pa",
+   "water": "780 mL"
+  },
+  "battery": {
+   "capacity": 2500,
+   "life": "≤30 min"
+  },
+  "body": {
+   "weight": 4200,
+   "height": 1093,
+   "width": 271,
+   "thickness": 230
+  },
+  "summaryEn": "Xiaomi Truclean W20 Wet Dry Vacuum. Wet and dry floor cleaner with 15,000 Pa suction, a 780 mL clean-water tank, a 550 mL dirty-water tank and approximately 30 minutes of runtime.",
+  "colors": [
+   "White"
+  ],
+  "sources": [
+   "https://www.mi.com/global/product/xiaomi-truclean-w20-wet-dry-vacuum/",
+   "https://www.mi.com/global/product/xiaomi-truclean-w20-wet-dry-vacuum/specs/"
+  ],
+  "priceAmd": 95000,
+  "priceAmdMax": 95000
+ },
+ {
+  "id": "dreame-h11-core",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "H11 Core",
+  "aliases": [
+   "Dreame H11 Core"
+  ],
+  "tier": "mid",
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 89900
+   }
+  ],
+  "unsure": [
+   "popularity"
+  ],
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "power": 170,
+   "suction": "6000 Pa",
+   "water": "900 mL"
+  },
+  "battery": {
+   "capacity": 2500,
+   "life": "≤22 min",
+   "chargeTime": "≤4.5 h"
+  },
+  "body": {},
+  "summaryEn": "Dreame H11 Core. Wet and dry floor cleaner with 6,000 Pa suction, a 900 mL clean-water tank, a 500 mL used-water tank and up to 22 minutes of runtime.",
+  "colors": [
+   "Gray"
+  ],
+  "sources": [
+   "https://global.dreametech.com/products/h11-core"
+  ],
+  "priceAmd": 89900,
+  "priceAmdMax": 89900
  }
 ]
