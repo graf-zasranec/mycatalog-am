@@ -5,8 +5,8 @@ name: Better — refresh prices
 
 on:
   schedule:
-    - cron: '0 19 * * *'     # 23:00 Yerevan (UTC+4) - the day's prices, after the shops close
-    - cron: '0 3 * * *'      # 07:00 Yerevan - so the morning page is not last night's
+    - cron: '0 20 * * *'     # 00:00 Yerevan (UTC+4) - main run, done ~03:30: fresh prices and stock by morning
+    - cron: '0 10 * * *'     # 14:00 Yerevan - catches daytime price changes
   workflow_dispatch:
     inputs:
       scope:
@@ -66,7 +66,9 @@ jobs:
         # Leave time to save completed shops before the hosted runner's six-hour limit.
         timeout-minutes: 330
         env:
-          BETTER_ROW_LIMIT: '400'
+          BETTER_ROW_LIMIT: '400' # the full pass is stock-check.yml's job; this run is already ~5.5 of its 6 hours
+          SCRAPE_LANES: '4'       # four shops fetched at once; each still one page at a time
+          BETTER_FORCE_SCRAPLING: '1' # AllSell/iStore refuse GitHub's servers to a plain request (approved shops)
           BETTER_REFRESH_SCOPE: ${{ inputs.scope || 'all' }}
           BETTER_REFRESH_RESUME: ${{ github.run_attempt > 1 && '1' || '0' }}
         run: node tools/refresh.mjs

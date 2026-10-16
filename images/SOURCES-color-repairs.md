@@ -2029,3 +2029,33 @@
 2026-10-12: iPad Air M2 Purple PhotoRoom recut repaired manually with Guided Restore for actual rear panel; clean front/back PNG exported at1100x1200. Identical Apple poses/canvas verified across Blue/Gray/Starlight (zero missing interior pixels under shared mask); cleaned edge alpha applied only to same-pose cutouts, original RGB/details unchanged. All four reviewed on light/dark, full product height965px.
 
 2026-10-12: Offered-colour mappings verified against exact shop photos: POCO M5 Black Ucom1xiaomi_poco_m5_6gb128gb_black.png; Nothing Phone3a Lite Black SKU6974434227026 and Phone3a Pro Black SKU6974434224483 Zigzag exact gallery; Apple WatchUltra4 Natural Ucomnatural_titanium_ocean_band_translucent_gray_pdp_image_position_1. Existing visually reviewed front/back phone masters and natural-case watch master mapped to named finish, no image alteration or upscale; product pixels1296/1849/1363/857 respectively.
+
+- dyson-hs08-i-d__amber-silk.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 518x999.
+
+- dyson-hs08-i-d__bronze-pink.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 533x1027.
+
+- dyson-hs08-i-d__kanzan-pink.webp: official maker photo, transparent original; previous cutout; Bluetooth badge removed; product 410x767.
+
+- dyson-ht01-airstrait-straightener-plum__strawberry.webp: official maker photo, transparent original; Dyson official product photo, transparent original; product 368x952.
+
+- dyson-ht01-airstrait-straightener-plum__red-velvet.webp: official maker photo, transparent original; Dyson official product photo, transparent original; case cropped out; product 166x948.
+
+- dyson-ht01-airstrait-straightener-plum__ceramic.webp: official maker photo, transparent original; Dyson official product photo, transparent original; product 323x855.
+
+- dyson-multi-complete-long-hs05__blue.webp: official maker photo, transparent original; Dyson official product photo, transparent original (Blue/Blush Complete Long); product 469x1006.
+
+- dyson-multi-complete-long-hs05__nickel-copper.webp: official maker photo, transparent original; Dyson official product photo (400714-01), transparent original; product 500x1075.
+
+- dyson-hs08-i-d__blue.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 537x998.
+
+- dyson-hs08-i-d__ceramic-patina-topaz.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 538x998.
+
+- dyson-hs08-i-d__jasper-plum.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 516x986.
+
+- dyson-hs08-i-d__pink.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 525x944.
+
+- dyson-hs08-i-d__kanzan-pink.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 516x986.
+
+- dyson-hs08-i-d__red.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 970x1456.
+
+- dyson-hs08-i-d__red.webp: official maker photo, transparent original; Dyson official product photo; white card and Bluetooth badge removed; product 652x1211.

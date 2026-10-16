@@ -40,4 +40,7 @@
     }
   };
   requestAnimationFrame(() => setTimeout(start, 0));
+  // Installable app (owner, 2026-10-16): registered after load so it never delays the first paint.
+  if ('serviceWorker' in navigator && location.protocol === 'https:')
+    addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
 })();

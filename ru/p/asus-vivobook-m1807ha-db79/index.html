@@ -1,9 +1,19 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-jygJAWncBwMF+FSHTeQueCYJRsSAhPWjikYyTWThSd4=' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com; connect-src 'self' https://grafzasranec.goatcounter.com;  base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' 'sha256-fmYZ4iT3SH/3k/O727dBflnh3VGHhSkonYAUgFWz+Pk=' 'sha256-znqv4+g8xtTYgNlC7aEDBBo6MeEp2WH/FMQRJQ+lhnM=' https://gc.zgo.at https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com;  base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12151D" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Better.am">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
 
@@ -32,6 +42,7 @@
 <script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script>
 <script>(function(){var h=location.hash,p=location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();</script>
 <script defer src="/data/site-analytics.js"></script>
+<script defer src="/data/site-google-analytics.js"></script>
 
 <!-- fonts are self-hosted (owner, 2026-10-04): Google Fonts often arrived late and the page fell back to system type -->
 <link rel="preload" href="/fonts/noto-sans-armenian-armenian-16.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/manrope-latin-15.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-text-19.woff2" as="font" type="font/woff2" crossorigin>
@@ -88,7 +99,7 @@
       </div>
       <h1 class="pname"><span class="pn">ASUS Vivobook M1807HA-DB79</span></h1>
       <div class="pgrid">
-        <div class="pshotwrap" style="--t:0;--h:1"><img src="images/cut/asus-vivobook-m1807ha-db79__main.webp"  alt="ASUS Vivobook M1807HA-DB79" id="hpShot" fetchpriority="high"></div>
+        <div class="pshotwrap" style="--t:0.206;--h:0.588"><img src="images/cut/asus-vivobook-m1807ha-db79__main.webp"  alt="ASUS Vivobook M1807HA-DB79" id="hpShot" fetchpriority="high"></div>
         <div class="pside">
           <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
           
@@ -153,6 +164,6 @@
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 <div class="compare-selection" id="compareSelection" hidden></div>
 
-<script defer src="data/site-boot.js?v=0fce016702" data-src="data/site-products.js?v=9eab60973c data/site-prices.js?v=c0c0fd1e80 data/site-app.js?v=8f28090169"></script>
+<script defer src="data/site-boot.js?v=1c38d52b11" data-src="data/site-products.js?v=990592f4e0 data/site-prices.js?v=ca647f2b48 data/site-app.js?v=ce7aafe3e8"></script>
 
 </body></html>

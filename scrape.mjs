@@ -17,6 +17,11 @@
 // a phone with no offers keeps its estimated price in phones.json and is labelled as such.
 
 import fs from 'node:fs';
+import { spawn } from 'node:child_process';
+import { AsyncLocalStorage } from 'node:async_hooks';
+// Shops are fetched several at a time (SCRAPE_LANES); each one's "current shop" and "last status"
+// live in its own store so concurrent shops cannot overwrite each other's.
+const LANE = new AsyncLocalStorage();
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
 const DELAY_MS = 400;
@@ -57,18 +62,49 @@ async function vlvInfo(vid) {
 // The status of the last request, for the one caller that needs to tell "this page is gone"
 // from "the network hiccuped". A retry can fix the second; nothing fixes the first.
 let LAST_STATUS = 0;
+const setStatus = v => { LAST_STATUS = v; const s = LANE.getStore(); if (s) s.status = v; };
+const lastStatus = () => LANE.getStore()?.status ?? LAST_STATUS;
+// AllSell answers GitHub's servers 403 and iStore returns nothing there (owner, 2026-10-16: the
+// morning prices must be complete). Both approved crawling, so when a plain request comes back
+// empty, the page is asked again through tools/scrapling-get.py - the reader Eldorado and Zigzag use.
+const SCRAPLING_HOSTS = new Set(['allsell.am', 'www.allsell.am', 'istore.am', 'www.istore.am']);
+let scraplingProc = null, scraplingQueue = Promise.resolve(), scraplingBuf = '', scraplingWaiters = [];
+const scraplingGet = url => (scraplingQueue = scraplingQueue.then(() => new Promise(done => {
+  if (!scraplingProc) {
+
+    scraplingProc = spawn(process.env.BETTER_PYTHON || (process.platform === 'win32' ? 'python' : 'python3'), ['tools/scrapling-get.py'], { stdio: ['pipe', 'pipe', 'inherit'] });
+    scraplingProc.stdout.setEncoding('utf8');
+    scraplingProc.stdout.on('data', d => {
+      scraplingBuf += d; let i;
+      while ((i = scraplingBuf.indexOf('\n')) >= 0) { const line = scraplingBuf.slice(0, i); scraplingBuf = scraplingBuf.slice(i + 1); scraplingWaiters.shift()?.(line); }
+    });
+    scraplingProc.on('exit', () => { scraplingProc = null; for (const w of scraplingWaiters.splice(0)) w('{"status":0,"html":""}'); });
+    scraplingProc.unref();
+  }
+  scraplingWaiters.push(line => { try { const r = JSON.parse(line); setStatus(r.status); done(r.html || ''); } catch { done(''); } });
+  scraplingProc.stdin.write(url + '\n');
+})));
 async function get(url, tries = 2, ua = UA) {
-  LAST_STATUS = 0;
+  let host = ''; try { host = new URL(url).hostname; } catch { }
+  // BETTER_FORCE_SCRAPLING=1: skip the plain request these hosts refuse (CI), or test the route locally.
+  if (process.env.BETTER_FORCE_SCRAPLING && SCRAPLING_HOSTS.has(host)) return await scraplingGet(url);
+  const html = await plainGet(url, tries, ua);
+  if (html) return html;
+  if (!SCRAPLING_HOSTS.has(host) || lastStatus() === 404) return html;
+  return await scraplingGet(url);
+}
+async function plainGet(url, tries = 2, ua = UA) {
+  setStatus(0);
   for (let i = 0; i < tries; i++) {
     try {
       const c = AbortSignal.timeout(TIMEOUT_MS);
       const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal: c, redirect: 'follow' });
-      LAST_STATUS = r.status;
+      setStatus(r.status);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.text();
     } catch (e) {
       // A 404 is an answer. Asking again wastes a request and the wait in front of it.
-      if (LAST_STATUS >= 400 && LAST_STATUS < 500) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
+      if (lastStatus() >= 400 && lastStatus() < 500) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       if (i === tries - 1) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       await sleep(1200);
     }
@@ -173,7 +209,7 @@ function looksLikeAccessory(text) {
 }
 // Which shop is being crawled right now, so a title nothing in the catalogue answers to can be
 // filed under it. Deciding what to add next used to be guesswork; this makes it a reading.
-let CURSHOP = '';
+let CURSHOP_SEQ = '';
 const MISSED = new Map();
 // data/links.csv, column 0 against column 9: the id a human gave a shop page. Most call sites
 // below pass the url either alone or glued to the shop's title, so the url is read back out of
@@ -296,6 +332,7 @@ function matchPhone(text, meta) {
   }
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
   // title, so a title wins when both readings of the same item miss.
+  const CURSHOP = LANE.getStore()?.shop ?? CURSHOP_SEQ;
   if (CURSHOP && !/^https?:/i.test(text)) {
     // Record what the shop was asking as well as what it called the thing. A title on its own is
     // a thing to type in by hand; a title with a price and a page is a row tools/add.mjs can turn
@@ -2133,7 +2170,7 @@ const SHOPS = {
       for (const vid of (ids.length ? ids : SEEDS)) {
         const u = `https://vlv.am/en/Product/${vid}`;
         const html = await get(u); await sleep(DELAY_MS);
-        if (!html && LAST_STATUS === 404) withdrawn.push(vid);
+        if (!html && lastStatus() === 404) withdrawn.push(vid);
         if (!html || !safeUrl(u)) continue;
         const p = ldProduct(html), o = ldOffer(p);
         const title = clean((p && p.name) || (html.match(/<title>([^<]*)<\/title>/) || [])[1] || '')
@@ -2544,10 +2581,34 @@ if (!fresh && fs.existsSync(PARTIAL)) {
   } catch { }
 }
 
+// node scrape.mjs --probe <shop> : run one shop's reader, print what it found, write nothing.
+if (process.argv.includes('--probe')) {
+  const key = process.argv[process.argv.indexOf('--probe') + 1];
+  const got = await LANE.run({ shop: key, status: 0 }, () => SHOPS[key].run());
+  console.log(`\n${key}: ${got.length} offers, ${new Set(got.map(o => o.id)).size} models`);
+  for (const o of got.slice(0, 40)) console.log(`  ${o.id} | ${o.price} | ${o.storage ?? ''} | ${o.inStock} | ${o.url}`);
+  process.exit(0);
+}
 const sourceUnavailable = new Set();
+// Fetch first, several shops at once (owner, 2026-10-16: the nightly run hit GitHub's 6-hour cap).
+// Each shop is still asked one page at a time at its own pace - only different shops overlap.
+// The results are then processed below in the usual order, so the output does not change.
+const LANES = Math.max(1, +process.env.SCRAPE_LANES || 1);
+const fetched = new Map();
+{
+  const queue = names.filter(k => !done.shops[k]);
+  await Promise.all(Array.from({ length: Math.min(LANES, queue.length) }, async () => {
+    while (queue.length) {
+      const key = queue.shift(), t0 = Date.now();
+      try { fetched.set(key, { got: await LANE.run({ shop: key, status: 0 }, () => SHOPS[key].run()) }); }
+      catch (e) { fetched.set(key, { error: e }); }
+      if (LANES > 1) console.log(`  [${SHOPS[key].name}] fetched in ${((Date.now() - t0) / 60000).toFixed(1)} min`);
+    }
+  }));
+}
 for (const key of names) {
   const s = SHOPS[key];
-  CURSHOP = key;
+  CURSHOP_SEQ = key;
   // Already read today, in a run that did not finish. Take it rather than ask the shop again.
   if (done.shops[key]) {
     for (const blocked of unavailableSourceKeys(key, done.shops[key])) sourceUnavailable.add(blocked);
@@ -2559,7 +2620,8 @@ for (const key of names) {
   }
   process.stdout.write(`[${s.name}] `);
   let got = [], threw = false;
-  try { got = await s.run(); } catch (e) { threw = true; console.warn('adapter failed:', e.message); }
+  const f = fetched.get(key) || {};
+  if (f.error) { threw = true; console.warn('adapter failed:', f.error.message); } else got = f.got || [];
   if (threw) {
     // keep what this shop had last night rather than dropping every one of its prices
     const kept = Object.values(prev.offers || {}).flat().filter(o => o.shop === key);
@@ -2651,7 +2713,7 @@ try {
     .map(line => { const [shop, title, cap, color, url, price, ram, check, seen, inStock] = line.split(','); return { shop, title, cap, color, url, price, ram, check, seen, inStock }; });
   // hand rows are not a crawl: their misses go to data/hand-unmatched.txt, not under whichever
   // shop the crawl read last (that filed Zigzag's titles under Vega, iSpace, Telecom...)
-  CURSHOP = null;
+  CURSHOP_SEQ = null;
   const shared = new Map(), dropped = [];
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
   const rows = raw

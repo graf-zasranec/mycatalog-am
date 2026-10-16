@@ -326,7 +326,7 @@ const SEO = {
   url: SITE,
   img: 'images/social/better-am.jpg',
   title: 'Better.am — սարքերի գների համեմատություն Հայաստանում',
-  desc: 'Համեմատեք հեռախոսների, նոութբուքերի և այլ սարքերի գները Հայաստանի խանութներում։ Ընտրեք RAM-ը, հիշողությունն ու այլ տարբերակները և գտեք լավագույն առաջարկը Better.am-ում։',
+  desc: 'Համեմատեք հեռախոսների, նոութբուքերի և այլ սարքերի գները Հայաստանի խանութներում և գտեք լավագույն առաջարկը։',
   ld: {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -402,9 +402,19 @@ const FAVICON = '/images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(ROUTE_START_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(ROUTE_START_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12151D" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Better.am">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="description" content="${SEO.desc}">
 <link rel="canonical" href="${SEO.url}">
 <meta property="og:type" content="website">
@@ -799,6 +809,7 @@ const specRows = (p, l) => {
     [t.sk[2], b.capacity && `${b.capacity} ${p.category === 'laptop' ? 'Wh' : t.mah}`],
     [t.sk[3], w && `${w} ${t.g}`],
     [t.sk[4], p.released],
+    [({hy:'Գրաֆիկա',ru:'Видеокарта',en:'Graphics'})[l], p.category === 'laptop' && (p.graphics || {}).name],
     ...(['type', 'volume', 'power', 'temperature', 'programs', 'control'].map(key => {
       const a = p.appliance || {}, v = a[key];
       const value = key === 'type' ? STR[l]['appliance.' + v]
@@ -831,8 +842,18 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12151D" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Better.am">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon" type="image/png" sizes="96x96" href="${FAVICON}">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>${esc(title)}</title>
 ${COUNTER.tag}
 <meta name="description" content="${esc(desc)}">
@@ -876,7 +897,7 @@ function interactiveProduct(page, lang, product) {
     .replace(/<link[^>]*rel="preload"[^>]*as="image"[^>]*>/g, '')
     .replace(/(href|src)="((?:images|data)\/)/g, '$1="/$2')
     .replace('<html lang="hy">', `<html lang="${lang}">`)
-    .replace("base-uri 'none'", "base-uri 'self'")
+    .replace("manifest-src 'self'; worker-src 'self'; base-uri 'none'", "base-uri 'self'")
     + '<base href="/">' + preload + productCSSLink + (productHead.match(seoTags) || []).join('\n');
   const content = rendered.main
     .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
@@ -936,6 +957,10 @@ ${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="$
 </tbody></table></div>` : ''}
 ${sr.length ? `<h2>${t.specs}</h2>
 <dl>${sr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
+${(() => { const base = lo != null ? lo : bestOf(p) || 0;
+  const near = phones.filter(q => q.id !== p.id && catOf(q) === cat && bestOf(q)).sort((x, y) => Math.abs(bestOf(x) - base) - Math.abs(bestOf(y) - base)).slice(0, 8);
+  return near.length ? `<h2>${({hy:'Նման մոդելներ',ru:'Похожие модели',en:'Similar models'})[lang]}</h2>
+<ul class="sim">${near.map(q => `<li><a href="${R}${pre}p/${q.id}/">${esc(nameOf(q))}</a> — ${t.from(amd(bestOf(q)))}</li>`).join('')}</ul>` : ''; })()}
 ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>` : ''}
 </main></body></html>
 `;
@@ -1061,7 +1086,7 @@ for (const lang of LANGS) for (const [from, to] of Object.entries(MERGED)) {
   fs.mkdirSync(`${pre}p/${from}`, { recursive: true });
   writePage(`${pre}p/${from}/index.html`, `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')};  base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
 <meta http-equiv="refresh" content="0;url=../${to}/">
 <link rel="canonical" href="${SITE}${pre}p/${to}/">
@@ -1079,7 +1104,7 @@ console.log(`${shared} product page(s) under p/, ${cats.length} section page(s) 
 fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; style-src 'unsafe-inline';  base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; style-src 'unsafe-inline';  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
 <title>Էջը չի գտնվել | Better.am</title>
 <meta name="robots" content="noindex">

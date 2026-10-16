@@ -449,7 +449,7 @@ if (LIMIT > 0 && todo.length > LIMIT) {
   todo = todo.slice(0, LIMIT);
 }
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
-let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], cheap = [], linked = 0;
+let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], cheap = [], linked = 0, soldOut = 0;
 for (let i = 0; i < todo.length; i++) {
   const f = todo[i];
   let p = CACHE.get(tidy(f[4])) || null;
@@ -491,7 +491,9 @@ for (let i = 0; i < todo.length; i++) {
     // A sold-out primary Magento product must not borrow a recommendation's price.
     const primary = html.match(/<div\b[^>]*class=["']product-info-main["'][^>]*>([\s\S]*?)(?:<div\b[^>]*class=["'][^"']*(?:product-info-detailed|block related)|$)/i)?.[1];
     if (primary && /class=["']stock\s+unavailable["']/i.test(primary)) {
-      nop.push([f[0], f[1], f[4]]); continue;
+      // Sold out on the shop's own page (owner, 2026-10-16): hidden until the page says in stock again.
+      while (f.length < 10) f.push('');
+      f[8] = TODAY; f[9] = 'false'; soldOut++; continue;
     }
     p = vivaPrice(html, f) || buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f)
       || istylePrice(html, f) || priceOf(html);
@@ -522,6 +524,9 @@ for (let i = 0; i < todo.length; i++) {
   if (was !== p.price) { moved++; console.log(`  ${f[0].padEnd(13)} ${f[1].slice(0, 40).padEnd(42)} ${f[5]} -> ${p.price}`); }
   while (f.length < 9) f.push('');
   f[5] = String(p.price); f[8] = p.day || TODAY;
+  // The page's own stock claim decides whether the row is shown; an unknown keeps what the row had.
+  // og-meta / itemprop / magento-main judge stock from the whole page (related cards included): not trusted.
+  if ((p.stock === false || p.stock === true) && !['og-meta', 'itemprop', 'magento-main'].includes(p.how)) { while (f.length < 10) f.push(''); if (p.stock === false) soldOut++; f[9] = String(p.stock); }
   ok++;
   if (i % 50 === 49) console.log(`  ... ${i + 1}/${todo.length}`);
 }
@@ -538,7 +543,7 @@ if (!dry) {
   const idOf = f => f.slice(0, 5).join('|');
   const changed = new Map();
   for (const f of todo) {
-    if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(idOf(f), [f[5], f[8], null]);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(idOf(f), [f[5], f[8], null, f[9]]);
     else if (f.marked) changed.set(idOf(f), [null, null, 'config']);
   }
   const now = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
@@ -549,13 +554,14 @@ if (!dry) {
     if (!c) return l;
     while (f.length < 9) f.push('');
     if (c[0] != null) { f[5] = c[0]; f[8] = c[1]; }
+    if (c[3] === 'true' || c[3] === 'false') { while (f.length < 10) f.push(''); f[9] = c[3]; }
     if (c[2] && !(f[7] || '').trim()) f[7] = c[2];
     return f.join(',');
   });
   fs.writeFileSync('data/listings.csv', merged.filter(l => l.trim()).join('\n') + '\n');
   console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now` + (dropGone && dropped.size ? `, removed ${dropped.size} whose page is deleted` : ''));
 }
-console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page`);
+console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page; ${soldOut} sold out there (hidden until back in stock)`);
 if (linked) console.log(`${linked} row(s) at a shop that prices by configuration: the link opens the product they name, so the price a person read stands and the site can stop calling it unchecked`);
 console.log('read from:', Object.entries(how).map(([k, v]) => `${k} ${v}`).join(', ') || 'nothing');
 if (nop.length) { console.log(`\n${nop.length} page(s) with no price this could read:`); for (const n of nop.slice(0, 15)) console.log('  ', n[0].padEnd(13), n[1].slice(0, 38).padEnd(40), n[2].slice(0, 60)); }

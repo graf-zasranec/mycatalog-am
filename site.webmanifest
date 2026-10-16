@@ -1,0 +1,23 @@
+{
+  "name": "Better.am — գների համեմատություն",
+  "short_name": "Better.am",
+  "description": "Համեմատեք սարքերի գները Հայաստանի խանութներում",
+  "lang": "hy",
+  "id": "/",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F3EC",
+  "theme_color": "#F7F3EC",
+  "categories": ["shopping", "utilities"],
+  "icons": [
+    { "src": "/images/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/images/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Հեռախոսներ", "url": "/c/phone/", "icons": [{ "src": "/images/favicon-192.png", "sizes": "192x192" }] },
+    { "name": "Նոութբուքեր", "url": "/c/laptop/", "icons": [{ "src": "/images/favicon-192.png", "sizes": "192x192" }] }
+  ]
+}
