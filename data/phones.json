@@ -74332,5 +74332,1904 @@
    "type": "discrete"
   },
   "os": "Windows 11"
+ },
+ {
+  "id": "hp-probook-450-g9-i5-1235u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Probook 450 G9 i5-1235U",
+  "aliases": [
+   "HP Probook 450 G9 i5-1235U /512GB (5Y3T1EA#BH5)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 449400,
+  "priceAmdMax": 449400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 449400
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1366x768"
+  },
+  "battery": {},
+  "summaryEn": "HP Probook 450 G9 i5-1235U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-1235U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-probook-460-g11-ultra-5-125u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 460 G11 Ultra 5 125U",
+  "aliases": [
+   "HP ProBook 460 G11 Ultra 5 125U /512GB (A38BGET)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 488400,
+  "priceAmdMax": 488400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 488400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "HP ProBook 460 G11 Ultra 5 125U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-125U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-probook-4g1i16-ultra-5-225u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 4G1i16 Ultra 5 225U",
+  "aliases": [
+   "HP ProBook 4G1i16 Ultra 5 225U /512GB (CT1G8ET#UUQ)",
+   "HP ProBook 4G1i16 Ultra 5 225U /512GB (D0VG0ET)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 500400,
+  "priceAmdMax": 501400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 500400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "HP ProBook 4G1i16 Ultra 5 225U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-probook-4g1i16-ultra-7-255h",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 4G1i16 Ultra 7 255H",
+  "aliases": [
+   "HP ProBook 4G1i16 Ultra 7 255H /1TB (C7GF4ET#UUQ)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 635400,
+  "priceAmdMax": 635400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 635400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "HP ProBook 4G1i16 Ultra 7 255H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-probook-4g1i16-ultra-7-255u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "ProBook 4G1i16 Ultra 7 255U",
+  "aliases": [
+   "HP ProBook 4G1i16 Ultra 7 255U /512GB (CW9E0ET)",
+   "HP ProBook 4G1i16 Ultra 7 255U /512GB (D0VG1ET#UUQ)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 545400,
+  "priceAmdMax": 630400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 545400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "HP ProBook 4G1i16 Ultra 7 255U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-victus-15-fa2082wm-core-i5",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-fa2082wm Core i5",
+  "aliases": [
+   "HP Victus 15-fa2082wm Core i5 /512GB (B5EQ3UA)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 449000,
+  "priceAmdMax": 449000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 449000
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "summaryEn": "HP Victus 15-fa2082wm Core i5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  }
+ },
+ {
+  "id": "hp-victus-15-fa2120nia-i7-240h",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "VICTUS 15-FA2120NIA i7-240H",
+  "aliases": [
+   "HP VICTUS 15-FA2120NIA i7-240H /512GB (D15FCEA#BH5)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 658400,
+  "priceAmdMax": 658400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 658400
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "summaryEn": "HP VICTUS 15-FA2120NIA i7-240H.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 7-240H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "jbl-headphones-live-300tws",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Live 300TWS",
+  "aliases": [
+   "Headphones JBL Live 300TWS",
+   "Headphones Live 300TWS"
+  ],
+  "tier": "budget",
+  "priceAmd": 85000,
+  "priceAmdMax": 85000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 85000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL Headphones Live 300TWS.",
+  "unsure": [
+   "popularity"
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-5-2-in-1-14ial10-ultra-7-255u",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 2-in-1 14IAL10 Ultra 7 255U",
+  "aliases": [
+   "Lenovo IdeaPad 5 2-in-1 14IAL10 Ultra 7 255U /512GB (83KR004LRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 485400,
+  "priceAmdMax": 485400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 485400
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad 5 2-in-1 14IAL10 Ultra 7 255U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-5-2-in-1-14irh9-i5-13420h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 2-in-1 14IRH9 i5-13420H",
+  "aliases": [
+   "Lenovo IdeaPad 5 2-in-1 14IRH9 i5-13420H /512GB (83KX007VRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 358400,
+  "priceAmdMax": 358400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 358400
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad 5 2-in-1 14IRH9 i5-13420H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-13420H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-5-pro-14iap7-i5-1240p",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad 5 Pro 14IAP7 i5-1240P",
+  "aliases": [
+   "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P /512GB (82SH005PRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 498400,
+  "priceAmdMax": 498400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 498400
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "2240x1400"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-1240P"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 2050 4GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-gaming-3-16arh7-amd-ryzen-r5-6600h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H",
+  "aliases": [
+   "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H /512GB (82SC007ARK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 579400,
+  "priceAmdMax": 579400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 579400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 6600H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 Ti 4GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-gaming-3-16iah7-i5-12450h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Gaming 3 16IAH7 i5-12450H",
+  "aliases": [
+   "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H /512GB (82SA00CWRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 547400,
+  "priceAmdMax": 547400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 547400
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-12450H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 Ti 4GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15iph11-ultra-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IPH11 Ultra 7",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 15IPH11 Ultra 7 355 /512GB (83UR001QRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 393400,
+  "priceAmdMax": 393400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 393400
+   }
+  ],
+  "display": {
+   "size": 15.3,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 3 15IPH11 Ultra 7.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-355"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-15irh10-i7-13620h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 15IRH10 i7-13620H",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 15IRH10 i7-13620H /1TB (83K100CSRM)",
+   "Lenovo IdeaPad Slim 3 15IRH10 i7-13620H /512GB (83K1002GRK)",
+   "Lenovo IdeaPad Slim 3 15IRH10 i7-13620H /512GB (83K100YTFU)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 356400,
+  "priceAmdMax": 371400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 356400
+   },
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 371400
+   }
+  ],
+  "display": {
+   "size": 15.3,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 3 15IRH10 i7-13620H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-5-8640hs",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 16AHP10 Ryzen 5 8640HS",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 5 8640HS /512GB (83KB0001RK)",
+   "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 5 8640HS /512GB (83KB000BRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 342400,
+  "priceAmdMax": 342400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 342400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 5 8640HS.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 8640HS"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-7-8840hs",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 16AHP10 Ryzen 7 8840HS",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 7 8840HS /512GB (83KB0007RK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 425400,
+  "priceAmdMax": 425400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 425400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 7 8840HS.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 8840HS"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-16iph11-ultra-5-322",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 16IPH11 Ultra 5 322",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 16IPH11 Ultra 5 322 /1TB (83US000ERK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 409400,
+  "priceAmdMax": 409400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 409400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 3 16IPH11 Ultra 5 322.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-322"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-3-17iwc11-i5-320",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 3 17IWC11 i5-320",
+  "aliases": [
+   "Lenovo IdeaPad Slim 3 17IWC11 i5-320 /1TB (83VS003YRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 519400,
+  "priceAmdMax": 519400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 519400
+   }
+  ],
+  "display": {
+   "size": 17.3,
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 3 17IWC11 i5-320.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-320"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-5-16agp11-ryzen-ai-5",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 5 16AGP11 Ryzen AI 5",
+  "aliases": [
+   "Lenovo IdeaPad Slim 5 16AGP11 Ryzen AI 5 430 /512GB (83S2000PRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 499400,
+  "priceAmdMax": 499400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 499400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 5 16AGP11 Ryzen AI 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen AI 5 430"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-5-16ahp11-ryzen-5",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 5 16AHP11 Ryzen 5",
+  "aliases": [
+   "Lenovo IdeaPad Slim 5 16AHP11 Ryzen 5 240 /512GB (83S40027RK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 509400,
+  "priceAmdMax": 509400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 509400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 5 16AHP11 Ryzen 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 5 240"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-ideapad-slim-5-16iph11-ultra-5",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "IdeaPad Slim 5 16IPH11 Ultra 5",
+  "aliases": [
+   "Lenovo IdeaPad Slim 5 16IPH11 Ultra 5 322 /512GB (83S6006HRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 493400,
+  "priceAmdMax": 493400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 493400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo IdeaPad Slim 5 16IPH11 Ultra 5.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-322"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-legion-5-15ahp10-ryzen-7-260",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 15AHP10 Ryzen 7 260",
+  "aliases": [
+   "Lenovo Legion 5 15AHP10 Ryzen 7 260 /1TB (83M0003YRK)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 864400,
+  "priceAmdMax": 864400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 864400
+   }
+  ],
+  "display": {
+   "size": 15,
+   "resolution": "2560x1600"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Legion 5 15AHP10 Ryzen 7 260.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 260"
+  }
+ },
+ {
+  "id": "lenovo-legion-5-15ahp11-ryzen-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 15AHP11 Ryzen 7",
+  "aliases": [
+   "Lenovo Legion 5 15AHP11 Ryzen 7 250 /512GB (83Q7000MRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 616400,
+  "priceAmdMax": 616400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 616400
+   }
+  ],
+  "display": {
+   "size": 15.3,
+   "resolution": "2560x1600"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Legion 5 15AHP11 Ryzen 7.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 250"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-legion-5-15akp10-ryzen-ai-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 15AKP10 Ryzen AI 7",
+  "aliases": [
+   "Lenovo Legion 5 15AKP10 Ryzen AI 7 350 /512GB (83F1003JRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 623400,
+  "priceAmdMax": 623400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 623400
+   }
+  ],
+  "display": {
+   "size": 15,
+   "resolution": "2560x1600"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Legion 5 15AKP10 Ryzen AI 7.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 350"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5050 8GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-legion-5-15irx10-i7-14700hx",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 15IRX10 i7-14700HX",
+  "aliases": [
+   "Lenovo Legion 5 15IRX10 i7-14700HX /1TB (83LY000MUS)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 658400,
+  "priceAmdMax": 658400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 658400
+   }
+  ],
+  "display": {
+   "size": 15.1,
+   "type": "OLED",
+   "resolution": "2560x1600",
+   "refresh": 165
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Legion 5 15IRX10 i7-14700HX.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-14700HX"
+  }
+ },
+ {
+  "id": "lenovo-legion-5-16irx9-core-i5",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 16IRX9 Core i5",
+  "aliases": [
+   "Lenovo Legion 5 16IRX9 Core i5 /512GB (83DG000DRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 623400,
+  "priceAmdMax": 623400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 623400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "2560x1600",
+   "refresh": 165
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Legion 5 16IRX9 Core i5.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-13450HX"
+  }
+ },
+ {
+  "id": "lenovo-legion-5-16irx9-i5-13450hx",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Legion 5 16IRX9 i5-13450HX",
+  "aliases": [
+   "Lenovo Legion 5 16IRX9 i5-13450HX /512GB (83DG000BRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 531400,
+  "priceAmdMax": 531400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 531400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "2560x1600"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Legion 5 16IRX9 i5-13450HX.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-13450HX"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 4050 6GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-legion-go-2",
+  "category": "console",
+  "brand": "Lenovo",
+  "name": "LEGION GO 2",
+  "aliases": [],
+  "tier": "flagship",
+  "priceAmd": 899900,
+  "priceAmdMax": 899900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 899900
+   }
+  ],
+  "display": {
+   "size": 8.8,
+   "type": "OLED",
+   "resolution": "1920x1200",
+   "refresh": 144
+  },
+  "battery": {
+   "capacity": 74
+  },
+  "summaryEn": "Lenovo LEGION GO 2.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen Z2 Extreme"
+  },
+  "released": "2025-10",
+  "graphics": {
+   "name": "AMD Radeon 890M",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-14-g8-irl-core",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 14 G8 IRL",
+  "aliases": [
+   "Lenovo ThinkBook 14 G8 IRL Core 5 /512GB (21SG008KRT)",
+   "ThinkBook 14 G8 IRL Core"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 405000,
+  "priceAmdMax": 405000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 405000
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 14 G8 IRL Core.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-210H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-14-g9-irl-i5-210h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 14 G9 IRL i5-210H",
+  "aliases": [
+   "Lenovo ThinkBook 14 G9 IRL i5-210H /512GB (21UY005PGX)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 445400,
+  "priceAmdMax": 445400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 445400
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 14 G9 IRL i5-210H.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-210H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-16-g8-ial-ultra-5-135h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 16 G8 IAL Ultra 5 135H",
+  "aliases": [
+   "Lenovo ThinkBook 16 G8 IAL Ultra 5 135H /512GB (21SK00FCFW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 450400,
+  "priceAmdMax": 450400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 450400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 5 135H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-135H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-16-g8-ial-ultra-7-255h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 16 G8 IAL Ultra 7 255H",
+  "aliases": [
+   "Lenovo ThinkBook 16 G8 IAL Ultra 7 255H /512GB (21SK007UFW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 614400,
+  "priceAmdMax": 614400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 614400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 7 255H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-16-g8-ial-ultra-9-185h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 16 G8 IAL Ultra 9 185H",
+  "aliases": [
+   "Lenovo ThinkBook 16 G8 IAL Ultra 9 185H /512GB (21SK00JVGX)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 560400,
+  "priceAmdMax": 872400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 560400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 9 185H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-185H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-16-g9-ipl-ultra-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 16 G9 IPL Ultra 7",
+  "aliases": [
+   "Lenovo ThinkBook 16 G9 IPL Ultra 7 355 /512GB (21UR0065FW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 554400,
+  "priceAmdMax": 554400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 554400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 16 G9 IPL Ultra 7.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-355"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkbook-16-g9-irl-i7-240h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkBook 16 G9 IRL i7-240H",
+  "aliases": [
+   "Lenovo ThinkBook 16 G9 IRL i7-240H /512GB (21US004SFW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 533400,
+  "priceAmdMax": 533400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 533400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkBook 16 G9 IRL i7-240H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core 7-240H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e14-gen-7-ultra-5-225u",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E14 Gen 7 Ultra 5 225U",
+  "aliases": [
+   "Lenovo ThinkPad E14 Gen 7 Ultra 5 225U /512GB (21SX004UFW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 525400,
+  "priceAmdMax": 525400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 525400
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E14 Gen 7 Ultra 5 225U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e16-g4-ultra-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E16 G4 Ultra 7",
+  "aliases": [
+   "Lenovo ThinkPad E16 G4 Ultra 7 355 /512GB (21YC003TFW)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 711400,
+  "priceAmdMax": 711400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 711400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E16 G4 Ultra 7.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-355"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e16-gen-3-i5-210h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E16 Gen 3 i5-210H",
+  "aliases": [
+   "Lenovo ThinkPad E16 Gen 3 i5-210H /512GB (21TF004RFW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 437400,
+  "priceAmdMax": 437400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 437400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "type": "IPS",
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E16 Gen 3 i5-210H.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-210H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e16-gen-3-ultra-5-225u",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E16 Gen 3 Ultra 5 225U",
+  "aliases": [
+   "Lenovo ThinkPad E16 Gen 3 Ultra 5 225U /512GB (21SR0048FW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 521400,
+  "priceAmdMax": 521400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 521400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 5 225U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-225U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e16-gen-3-ultra-7-255h",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E16 Gen 3 Ultra 7 255H",
+  "aliases": [
+   "Lenovo ThinkPad E16 Gen 3 Ultra 7 255H /512GB (21SR0049FW)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 653400,
+  "priceAmdMax": 653400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 653400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 7 255H.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e16-gen-3-ultra-7-258v",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E16 Gen 3 Ultra 7 258V",
+  "aliases": [
+   "Lenovo ThinkPad E16 Gen 3 Ultra 7 258V /512GB (22AY005GGX)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 765400,
+  "priceAmdMax": 765400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 765400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 7 258V.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-thinkpad-e16-i5-1335u",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "ThinkPad E16 i5-1335U",
+  "aliases": [
+   "Lenovo ThinkPad E16 i5-1335U /512GB (21JN001QGP)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 434400,
+  "priceAmdMax": 434400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 434400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo ThinkPad E16 i5-1335U.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core i5-1335U"
+  },
+  "graphics": {
+   "name": "Intel Iris Xe Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-yoga-27iah10-ultra-9-285h",
+  "category": "desktop",
+  "brand": "Lenovo",
+  "name": "Yoga 27IAH10 Ultra 9 285H",
+  "aliases": [
+   "Համակարգիչ Lenovo Yoga 27IAH10 Ultra 9 285H /1TB (F0J20033RU)",
+   "Համակարգիչ Lenovo Yoga 27IAH10 Ultra 9 285H /1TB (F0J20046RU)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 865400,
+  "priceAmdMax": 984400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 865400
+   }
+  ],
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "3840x2160"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Yoga 27IAH10 Ultra 9 285H.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-285H"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-yoga-32ill10-ultra-7-258v",
+  "category": "desktop",
+  "brand": "Lenovo",
+  "name": "Yoga 32ILL10 Ultra 7 258V",
+  "aliases": [
+   "Համակարգիչ Lenovo Yoga 32ILL10 Ultra 7 258V /1TB (F0HX0018RU)",
+   "Համակարգիչ Lenovo Yoga 32ILL10 Ultra 7 258V /1TB (F0HX001ERU)",
+   "Համակարգիչ Lenovo Yoga 32ILL10 Ultra 7 258V /1TB (F0HX001FRU)"
+  ],
+  "tier": "flagship",
+  "priceAmd": 1039400,
+  "priceAmdMax": 1266400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 1039400
+   }
+  ],
+  "display": {
+   "size": 31.5,
+   "type": "IPS",
+   "resolution": "3840x2160"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Yoga 32ILL10 Ultra 7 258V.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-258V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-yoga-pro-7-14ahp9-ryzen-7-8845hs",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga Pro 7 14AHP9 Ryzen 7 8845HS",
+  "aliases": [
+   "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 8845HS /1TB (83E3001LRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 574400,
+  "priceAmdMax": 574400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 574400
+   }
+  ],
+  "display": {
+   "size": 14.5,
+   "resolution": "3072x1920"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 8845HS.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 8845HS"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 3050 6GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "lenovo-yoga-pro-7-14ahp9-ryzen-7",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga Pro 7 14AHP9 Ryzen 7",
+  "aliases": [
+   "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 /1TB (83E3002ARK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 499000,
+  "priceAmdMax": 499000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 499000
+   }
+  ],
+  "display": {
+   "size": 14.5,
+   "type": "IPS",
+   "resolution": "2880x1800",
+   "refresh": 120
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Yoga Pro 7 14AHP9 Ryzen 7.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen 7 8845HS"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-yoga-slim-7-14ill10-ultra-5-226v",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga Slim 7 14ILL10 Ultra 5 226V",
+  "aliases": [
+   "Lenovo Yoga Slim 7 14ILL10 Ultra 5 226V /1TB (83JX000DRK)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 539400,
+  "priceAmdMax": 539400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 539400
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "2880x1800"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Yoga Slim 7 14ILL10 Ultra 5 226V.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-226V"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
  }
 ]
