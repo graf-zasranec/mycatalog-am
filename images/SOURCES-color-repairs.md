@@ -2159,3 +2159,5 @@
 - hp-17-amd-ryzen-5-7430u__main.webp: official maker photo, transparent original; AppZone listing photo cut in PhotoRoom (logged-in), 2026-10-16; product 985x754.
 
 - hp-pavilion-15-eg3040ci__main.webp: official maker photo, transparent original; AppZone listing photo cut in PhotoRoom (logged-in), 2026-10-16; product 505x386.
+
+- hp-pavilion-15-eg3040ci__main.webp: official maker photo, transparent original; AppZone listing photo upscaled 4x in Gemini then cut in PhotoRoom, 2026-10-16; product 1951x1486.
