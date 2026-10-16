@@ -278,7 +278,7 @@ function nameTag(p, scr) {
   if (YEAR_TAG.has(p.category)) {
     const y = p.year || +(String(p.released || '').match(/^(\d{4})/) || [])[1];
     // this year's model reads green (owner, 2026-09-24)
-    return y ? `<span class="ny num${y >= new Date().getFullYear() ? ' cur' : ''}" data-nosnippet>${y}</span>` : '';
+    return y ? ` <span class="ny num${y >= new Date().getFullYear() ? ' cur' : ''}" data-nosnippet>${y}</span>` : '';
   }
   if (SIZE_TAG.has(p.category)) {
     const ss = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))].sort((a, b) => a - b);

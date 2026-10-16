@@ -676,6 +676,7 @@ Allow: /
 User-agent: *
 Disallow: /
 
+Sitemap: ${SITE}sitemap-index.xml
 Sitemap: ${SITE}sitemap.xml
 `);
 const today = new Date().toISOString().slice(0, 10);
@@ -1154,6 +1155,24 @@ fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
  <url><loc>${SITE}</loc><lastmod>${modifiedAt(SITE)}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 ${sitemapRows.map(([u, d, pr]) => ` <url><loc>${u}</loc><lastmod>${modifiedAt(u)}</lastmod><priority>${pr}</priority></url>`).join('\n')}
 </urlset>
+`);
+// Search Console stuck on "Couldn't fetch" for sitemap.xml since 2026-10-06 (owner, 2026-10-16): a
+// fresh index URL with one small sitemap per language gets read anew. sitemap.xml stays for old links.
+const langOf = u => /^\/(ru|en)\//.exec(new URL(u).pathname)?.[1] || 'hy';
+const indexParts = [];
+for (const lang of ['hy', 'ru', 'en']) {
+  const rows = [[SITE, null, 1], ...sitemapRows].filter(([u]) => langOf(u) === lang);
+  fs.writeFileSync(`sitemap-${lang}.xml`, `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${rows.map(([u, , pr]) => ` <url><loc>${u}</loc><lastmod>${modifiedAt(u)}</lastmod><priority>${pr}</priority></url>`).join('\n')}
+</urlset>
+`);
+  indexParts.push(` <sitemap><loc>${SITE}sitemap-${lang}.xml</loc><lastmod>${today}</lastmod></sitemap>`);
+}
+fs.writeFileSync('sitemap-index.xml', `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${indexParts.join('\n')}
+</sitemapindex>
 `);
 // The two single-file builds inline every photograph as a data URI. That was ~18 MB each when
 // this was written and is 211 MB each now, so a plain build wrote 422 MB nobody asked for -
