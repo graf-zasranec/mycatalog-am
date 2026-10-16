@@ -35013,6 +35013,11 @@
   "variants": [
    {
     "ram": 4,
+    "storage": 128,
+    "priceAmd": 52900
+   },
+   {
+    "ram": 4,
     "storage": 256,
     "priceAmd": 80900
    }
@@ -50243,9 +50248,14 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 58000
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 65000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 74000
    }
   ],
   "display": {
@@ -50407,6 +50417,11 @@
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 79900
+   },
    {
     "ram": null,
     "storage": 256,
@@ -52271,7 +52286,13 @@
   "priceAmdMax": 129900,
   "popularity": 40,
   "accent": "#5C6470",
-  "variants": [],
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 256,
+    "priceAmd": 115900
+   }
+  ],
   "display": {
    "size": 6.99,
    "resolution": "1080x2396",
@@ -52344,6 +52365,11 @@
     "ram": null,
     "storage": 128,
     "priceAmd": 97900
+   },
+   {
+    "ram": 6,
+    "storage": 256,
+    "priceAmd": 111920
    },
    {
     "ram": 8,
@@ -52422,19 +52448,24 @@
   ],
   "variants": [
    {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 116720
+   },
+   {
     "ram": null,
     "storage": 256,
     "priceAmd": 135900
    },
    {
     "ram": 8,
-    "storage": 512,
-    "priceAmd": 179000
+    "storage": 256,
+    "priceAmd": 159000
    },
    {
     "ram": 8,
-    "storage": 256,
-    "priceAmd": 159000
+    "storage": 512,
+    "priceAmd": 179000
    }
   ],
   "display": {
@@ -52719,7 +52750,18 @@
   "priceAmdMax": 142900,
   "popularity": 40,
   "accent": "#5C6470",
-  "variants": [],
+  "variants": [
+   {
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 92900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 129000
+   }
+  ],
   "display": {
    "size": 12.1,
    "resolution": "2560x1600",
@@ -52782,9 +52824,9 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 134900
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 149000
    }
   ],
   "display": {
@@ -52901,9 +52943,9 @@
   "accent": "#5C6470",
   "variants": [
    {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 69900
+    "ram": 6,
+    "storage": 128,
+    "priceAmd": 69000
    }
   ],
   "display": {
@@ -56531,6 +56573,11 @@
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 325900
+   },
    {
     "ram": 12,
     "storage": 512,
@@ -77102,6 +77149,92 @@
   ],
   "unsure": [
    "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-bluetooth-speaker-essential",
+  "category": "speaker",
+  "brand": "Xiaomi",
+  "name": "Bluetooth Speaker Essential",
+  "aliases": [
+   "Xiaomi Bluetooth Speaker Essential"
+  ],
+  "tier": "budget",
+  "priceAmd": 19900,
+  "priceAmdMax": 19900,
+  "popularity": 35,
+  "accent": "#2B2D31",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 19900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "capacity": 1000
+  },
+  "audio": {
+   "power": "5 W"
+  },
+  "connectivity": {
+   "bluetooth": "6.0"
+  },
+  "body": {
+   "weight": 200
+  },
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "Pocket Xiaomi speaker: 5 W, Bluetooth 6.0, stereo pairing and up to 10 speakers linked.",
+  "sources": [
+   "https://www.mi.com/uk/product/xiaomi-bluetooth-speaker-essential/specs/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-desktop-speaker",
+  "category": "speaker",
+  "brand": "Xiaomi",
+  "name": "Desktop Speaker",
+  "aliases": [
+   "Xiaomi Desktop Speaker"
+  ],
+  "tier": "budget",
+  "priceAmd": 15900,
+  "priceAmdMax": 15900,
+  "popularity": 35,
+  "accent": "#2B2D31",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 15900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {},
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "USB-C, USB-A, AUX in"
+  },
+  "body": {
+   "weight": 670
+  },
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "Xiaomi soundbar-style desktop speaker with RGB light, Bluetooth 5.3, USB and AUX input.",
+  "sources": [
+   "https://www.mi.com/global/product/xiaomi-desktop-speaker/specs/"
+  ],
+  "unsure": [
+   "popularity",
+   "audio.power"
   ]
  }
 ]

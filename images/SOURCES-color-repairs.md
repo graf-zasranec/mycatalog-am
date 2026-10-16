@@ -2161,3 +2161,7 @@
 - hp-pavilion-15-eg3040ci__main.webp: official maker photo, transparent original; AppZone listing photo cut in PhotoRoom (logged-in), 2026-10-16; product 505x386.
 
 - hp-pavilion-15-eg3040ci__main.webp: official maker photo, transparent original; AppZone listing photo upscaled 4x in Gemini then cut in PhotoRoom, 2026-10-16; product 1951x1486.
+
+- xiaomi-bluetooth-speaker-essential__main.webp: official maker photo, transparent original; mi.com official render (Essential cut in PhotoRoom by Codex); Mi Armenia speaker import 2026-10-16; product 875x1152.
+
+- xiaomi-desktop-speaker__main.webp: official maker photo, transparent original; mi.com official render (Essential cut in PhotoRoom by Codex); Mi Armenia speaker import 2026-10-16; product 1296x620.
