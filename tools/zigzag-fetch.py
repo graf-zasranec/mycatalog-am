@@ -28,7 +28,7 @@ from zigzag_stock import stock_of, price_of
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'data' / 'zigzag.json'
-DELAY = 3
+DELAY = 2  # 3 s took 115 min for ~1700 pages with only 12 refusals (2026-10-16 night log)
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
