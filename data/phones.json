@@ -77236,5 +77236,1345 @@
    "popularity",
    "audio.power"
   ]
+ },
+ {
+  "id": "xiaomi-redmi-buds-8-pro",
+  "category": "headphones",
+  "brand": "Xiaomi",
+  "name": "Redmi Buds 8 Pro",
+  "aliases": [
+   "Xiaomi Redmi Buds 8 Pro"
+  ],
+  "tier": "budget",
+  "priceAmd": 41900,
+  "priceAmdMax": 41900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 41900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "life": "≤8.5 h (35 h with case)"
+  },
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true,
+   "driver": "Coaxial triple driver (11 mm dynamic)"
+  },
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "summaryEn": "Xiaomi Redmi Buds 8 Pro.",
+  "sources": [
+   "https://miarmenia.am/en/product/660/xiaomi-redmi-buds-8-pro"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-router-ac1200",
+  "category": "network",
+  "brand": "Xiaomi",
+  "name": "Router AC1200",
+  "aliases": [
+   "Xiaomi Router AC1200"
+  ],
+  "tier": "budget",
+  "priceAmd": 17900,
+  "priceAmdMax": 17900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 17900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 5, 2.4/5 GHz, 1167 Mbps"
+  },
+  "summaryEn": "Xiaomi Router AC1200.",
+  "sources": [
+   "https://miarmenia.am/en/product/552/xiaomi-router-ac1200"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-router-ax1500",
+  "category": "network",
+  "brand": "Xiaomi",
+  "name": "Router AX1500",
+  "aliases": [
+   "Wi-Fi Xiaomi Router AX1500"
+  ],
+  "tier": "budget",
+  "priceAmd": 22900,
+  "priceAmdMax": 22900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 22900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 6, 2.4/5 GHz, 1500 Mbps, Mesh"
+  },
+  "summaryEn": "Xiaomi Router AX1500.",
+  "sources": [
+   "https://miarmenia.am/en/product/464/wi-fi-%D5%A5%D6%80%D5%A9%D5%B8%D6%82%D5%B2%D5%AB%D5%B9-xiaomi-router-ax1500"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-router-4a",
+  "category": "network",
+  "brand": "Xiaomi",
+  "name": "Router 4A",
+  "aliases": [
+   "Wi-Fi Xiaomi Router 4A"
+  ],
+  "tier": "budget",
+  "priceAmd": 14900,
+  "priceAmdMax": 14900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 14900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi 5, 2.4/5 GHz, 1167 Mbps, 4 antennas"
+  },
+  "summaryEn": "Xiaomi Router 4A.",
+  "sources": [
+   "https://miarmenia.am/en/product/463/wi-fi-%D5%A5%D6%80%D5%A9%D5%B8%D6%82%D5%B2%D5%AB%D5%B9-xiaomi-router-4a"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-mijia-capsule-coffee-machine",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Mijia Capsule Coffee Machine",
+  "aliases": [
+   "Mijia capsule coffee machine"
+  ],
+  "tier": "budget",
+  "priceAmd": 54900,
+  "priceAmdMax": 54900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 54900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "coffee_machine",
+   "water": "600 mL"
+  },
+  "summaryEn": "Xiaomi Mijia Capsule Coffee Machine.",
+  "sources": [
+   "https://miarmenia.am/en/product/642/mijia-capsule-coffee-machine"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-mijia-smart-steam-air-fryer-7l",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Mijia Smart Steam Air Fryer 7L",
+  "aliases": [
+   "Mijia Smart Steam Air Fryer 7L"
+  ],
+  "tier": "budget",
+  "priceAmd": 71000,
+  "priceAmdMax": 71000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 71000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "air_fryer",
+   "volume": 7,
+   "control": "app"
+  },
+  "summaryEn": "Xiaomi Mijia Smart Steam Air Fryer 7L.",
+  "sources": [
+   "https://miarmenia.am/en/product/641/mijia-smart-steam-air-fryer-7l"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-smart-kettle-2-pro",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Smart Kettle 2 Pro",
+  "aliases": [
+   "Xiaomi Smart Kettle 2 Pro"
+  ],
+  "tier": "budget",
+  "priceAmd": 28900,
+  "priceAmdMax": 28900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 28900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "kettle",
+   "power": 1800,
+   "volume": 1.7,
+   "temperature": "1–100 °C",
+   "control": "app"
+  },
+  "summaryEn": "Xiaomi Smart Kettle 2 Pro.",
+  "sources": [
+   "https://miarmenia.am/en/product/495/%D5%A7%D5%AC%D5%A5%D5%AF%D5%BF%D6%80%D5%A1%D5%AF%D5%A1%D5%B6-%D5%A9%D5%A5%D5%B5%D5%B6%D5%AB%D5%AF-xiaomi-smart-kettle-2-pro"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-curved-gaming-g34wqi",
+  "category": "monitor",
+  "brand": "Xiaomi",
+  "name": "Curved Gaming Monitor G34WQi",
+  "aliases": [
+   "Xiaomi Curved Gaming Monitor G34WQi"
+  ],
+  "tier": "mid",
+  "priceAmd": 165900,
+  "priceAmdMax": 165900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 165900
+   }
+  ],
+  "display": {
+   "size": 34,
+   "resolution": "3440 x 1440",
+   "refresh": 180,
+   "type": "VA curved",
+   "brightness": "350 nits"
+  },
+  "battery": {},
+  "body": {
+   "weight": 6900
+  },
+  "summaryEn": "Xiaomi Curved Gaming Monitor G34WQi.",
+  "sources": [
+   "https://miarmenia.am/en/product/528/xiaomi-curved-gaming-monitor-g34wqi",
+   "https://www.mi.com/my/product/xiaomi-curved-gaming-monitor-g34wqi/specs/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "msi-thin-15-b12ve-2836xru",
+  "category": "laptop",
+  "brand": "MSI",
+  "name": "Thin 15 B12VE-2836XRU",
+  "aliases": [
+   "MSI Thin 15 B12VE-2836XRU"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 589900,
+  "priceAmdMax": 589900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 589900
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1920 x 1080",
+   "refresh": 144,
+   "type": "IPS-level"
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core i7-12650H"
+  },
+  "graphics": {
+   "name": "NVIDIA GeForce RTX 4050 6GB",
+   "type": "discrete"
+  },
+  "summaryEn": "MSI Thin 15 B12VE-2836XRU.",
+  "sources": [
+   "https://miarmenia.am/en/product/625/msi-thin-15-b12ve-2836xru"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-bluetooth-speaker-mini",
+  "category": "speaker",
+  "brand": "Xiaomi",
+  "name": "Bluetooth Speaker Mini",
+  "aliases": [
+   "Xiaomi Bluetooth Speaker Mini"
+  ],
+  "tier": "budget",
+  "priceAmd": 17900,
+  "priceAmdMax": 17900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 17900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "capacity": 2000,
+   "life": "≤8 h"
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "body": {
+   "ip": "IP67"
+  },
+  "summaryEn": "Xiaomi Bluetooth Speaker Mini.",
+  "sources": [
+   "https://miarmenia.am/en/product/670/xiaomi-bluetooth-speaker-mini"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-soundbar-pro-2-1",
+  "category": "speaker",
+  "brand": "Xiaomi",
+  "name": "Soundbar Pro 2.1ch",
+  "aliases": [
+   "Xiaomi Soundbar Pro 2.1 ch"
+  ],
+  "tier": "budget",
+  "priceAmd": 89900,
+  "priceAmdMax": 89900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 89900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "power": "300 W"
+  },
+  "connectivity": {
+   "bluetooth": "5.3",
+   "wireless": "HDMI ARC, optical, coaxial"
+  },
+  "summaryEn": "Xiaomi Soundbar Pro 2.1ch.",
+  "sources": [
+   "https://miarmenia.am/en/product/553/xiaomi-soundbar-pro-2.1-ch"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-mijia-smart-air-purifier-max",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Mijia Smart Air Purifier Max",
+  "aliases": [
+   "Mijia Smart Air Purifier Max"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 239900,
+  "priceAmdMax": 239900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 239900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "air_purifier",
+   "area": "≤108 m²",
+   "control": "app"
+  },
+  "summaryEn": "Xiaomi Mijia Smart Air Purifier Max.",
+  "sources": [
+   "https://miarmenia.am/en/product/639/mijia-smart-air-purifier-max"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-smart-air-purifier-elite",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Smart Air Purifier Elite",
+  "aliases": [
+   "Xiaomi Smart Air Purifier elite"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 199900,
+  "priceAmdMax": 199900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 199900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "air_purifier",
+   "area": "≤125 m²",
+   "control": "app"
+  },
+  "summaryEn": "Xiaomi Smart Air Purifier Elite.",
+  "sources": [
+   "https://miarmenia.am/en/product/640/xiaomi-smart-air-purifier-elite"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "yandex-station-mini-3",
+  "category": "speaker",
+  "brand": "Yandex",
+  "name": "Station Mini 3",
+  "aliases": [
+   "Yandex Smart Speaker Mini 3"
+  ],
+  "tier": "budget",
+  "priceAmd": 63900,
+  "priceAmdMax": 63900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 63900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "power": "12 W"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wifi": "Wi-Fi 2.4/5 GHz"
+  },
+  "summaryEn": "Yandex Station Mini 3.",
+  "sources": [
+   "https://miarmenia.am/en/product/601/yandex-smart-speaker-mini-3"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "yandex-station-midi",
+  "category": "speaker",
+  "brand": "Yandex",
+  "name": "Station Midi",
+  "aliases": [
+   "Yandex Smart Speaker Midi"
+  ],
+  "tier": "budget",
+  "priceAmd": 99900,
+  "priceAmdMax": 99900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 99900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "power": "24 W"
+  },
+  "body": {
+   "weight": 900
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi"
+  },
+  "summaryEn": "Yandex Station Midi.",
+  "sources": [
+   "https://miarmenia.am/en/product/603/yandex-smart-speaker-midi"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-body-composition-scale-s400",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Body Composition Scale S400",
+  "aliases": [
+   "Mi Body Composition Scale S400"
+  ],
+  "tier": "budget",
+  "priceAmd": 11900,
+  "priceAmdMax": 11900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 11900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "scale"
+  },
+  "summaryEn": "Xiaomi Body Composition Scale S400.",
+  "sources": [
+   "https://miarmenia.am/en/product/140/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%AF%D5%B7%D5%A5%D5%BC%D6%84-mi-body-composition-scale-s400"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-h15-mix",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "H15 Mix Wet and Dry Vacuum",
+  "aliases": [
+   "Dreame H15 Mix Wet and Dry Vacuum"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 389900,
+  "priceAmdMax": 389900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 389900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "life": "≤75 min",
+   "chargeTime": "≤4 h"
+  },
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "power": 400,
+   "suction": "23000 Pa",
+   "water": "780 mL"
+  },
+  "summaryEn": "Dreame H15 Mix Wet and Dry Vacuum.",
+  "sources": [
+   "https://miarmenia.am/en/product/546/%D5%B1%D5%A5%D5%BC%D6%84%D5%AB-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC-dreame-h15-mix-wet-and-dry-vacuum"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-tv-stick-4k-2nd-gen",
+  "category": "streamer",
+  "brand": "Xiaomi",
+  "name": "TV Stick 4K (2nd Gen)",
+  "aliases": [
+   "Xiaomi Mi TV Stick 4K 2nd Gen"
+  ],
+  "tier": "budget",
+  "priceAmd": 29900,
+  "priceAmdMax": 29900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 2,
+    "storage": 8,
+    "priceAmd": 29900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "connectivity": {
+   "wifi": "Wi-Fi"
+  },
+  "summaryEn": "Xiaomi TV Stick 4K (2nd Gen).",
+  "sources": [
+   "https://miarmenia.am/en/product/472/%D5%B0%D5%A5%D5%BC%D5%B8%D6%82%D5%BD%D5%BF%D5%A1%D5%BF%D5%A5%D5%BD%D5%A1%D5%B5%D5%AB%D5%B6-%D5%AF%D6%81%D5%B8%D6%80%D5%A4-xiaomi-mi-tv-stick-4k-2nd-gen"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-f25-ace-pro",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "F25 Ace Pro",
+  "aliases": [
+   "Roborock F25 Ace Pro"
+  ],
+  "tier": "mid",
+  "priceAmd": 220900,
+  "priceAmdMax": 220900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 220900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "suction": "25000 Pa"
+  },
+  "summaryEn": "Roborock F25 Ace Pro.",
+  "sources": [
+   "https://miarmenia.am/en/product/654/roborock-f25-ace-pro"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-f25-ultra",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "F25 Ultra",
+  "aliases": [
+   "Roborock F25 Ultra"
+  ],
+  "tier": "mid",
+  "priceAmd": 254900,
+  "priceAmdMax": 254900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 254900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "suction": "23000 Pa"
+  },
+  "summaryEn": "Roborock F25 Ultra.",
+  "sources": [
+   "https://miarmenia.am/en/product/688/roborock-f25-ultra"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-tv-box-s-3rd-gen",
+  "category": "streamer",
+  "brand": "Xiaomi",
+  "name": "TV Box S (3rd Gen)",
+  "aliases": [
+   "Xiaomi TV Box S 3nd Gen"
+  ],
+  "tier": "budget",
+  "priceAmd": 35900,
+  "priceAmdMax": 35900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 2,
+    "storage": 32,
+    "priceAmd": 35900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "chipset": {
+   "name": "Quad-core 2.5 GHz, ARM G310 V2"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6"
+  },
+  "summaryEn": "Xiaomi TV Box S (3rd Gen).",
+  "sources": [
+   "https://miarmenia.am/en/product/359/%D5%B0%D5%A5%D5%BC%D5%B8%D6%82%D5%BD%D5%BF%D5%A1%D5%BF%D5%A5%D5%BD%D5%A1%D5%B5%D5%AB%D5%B6-%D5%AF%D6%81%D5%B8%D6%80%D5%A4-xiaomi-tv-box-s-3nd-gen"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-qrevo-c-pro",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "Qrevo C Pro",
+  "aliases": [
+   "Roborock Qrevo C Pro"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 314900,
+  "priceAmdMax": 314900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 314900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum",
+   "suction": "18500 Pa"
+  },
+  "summaryEn": "Roborock Qrevo C Pro.",
+  "sources": [
+   "https://miarmenia.am/en/product/657/roborock-qrevo-c-pro"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-handheld-vacuum-g30-max",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Handheld Vacuum Cleaner G30 Max",
+  "aliases": [
+   "Xiaomi Handheld Vacuum Cleaner G30 Max"
+  ],
+  "tier": "mid",
+  "priceAmd": 189900,
+  "priceAmdMax": 189900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 189900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "life": "≤90 min",
+   "chargeTime": "≤4 h"
+  },
+  "appliance": {
+   "type": "cordless_vacuum",
+   "power": 520,
+   "suction": "25000 Pa",
+   "dust": "600 mL"
+  },
+  "summaryEn": "Xiaomi Handheld Vacuum Cleaner G30 Max.",
+  "sources": [
+   "https://miarmenia.am/en/product/638/xiaomi-handheld-vacuum-cleaner-g30-max"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-saros-z70",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "Saros Z70",
+  "aliases": [
+   "Roborock Saros Z70"
+  ],
+  "tier": "flagship",
+  "priceAmd": 899900,
+  "priceAmdMax": 899900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 899900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock robot vacuum with the OmniGrip arm that picks up socks and light objects up to 300 g.",
+  "sources": [
+   "https://miarmenia.am/en/product/629/roborock-saros-z70"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-x50-master",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "X50 Master",
+  "aliases": [
+   "Dreame Robot X50 Master"
+  ],
+  "tier": "flagship",
+  "priceAmd": 639900,
+  "priceAmdMax": 639900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 639900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum",
+   "suction": "20000 Pa"
+  },
+  "summaryEn": "Dreame X50 Master.",
+  "sources": [
+   "https://miarmenia.am/en/product/544/%D5%BC%D5%B8%D5%A2%D5%B8%D5%BF-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC-dreame-robot-x50-master"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-h12-dual",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "H12 Dual Wet and Dry",
+  "aliases": [
+   "Dreame H12 Dual Wet and Dry"
+  ],
+  "tier": "mid",
+  "priceAmd": 219900,
+  "priceAmdMax": 219900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 219900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "capacity": 2500,
+   "life": "≤60 min",
+   "chargeTime": "≤4.5 h"
+  },
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "power": 300,
+   "suction": "16000 Pa",
+   "water": "900 mL"
+  },
+  "summaryEn": "Dreame H12 Dual Wet and Dry.",
+  "sources": [
+   "https://miarmenia.am/en/product/441/%D5%B1%D5%A5%D5%BC%D6%84%D5%AB-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC-dreame-h12-dual-wet-and-dry"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-r20-ultra-aquacycle",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "R20 Ultra AquaCycle",
+  "aliases": [
+   "Dreame Vacuum Cleaner R20 Ultra AquaCycle"
+  ],
+  "tier": "mid",
+  "priceAmd": 259990,
+  "priceAmdMax": 259990,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 259990
+   }
+  ],
+  "display": {},
+  "battery": {
+   "capacity": 2900,
+   "life": "≤40 min",
+   "chargeTime": "≤4 h"
+  },
+  "appliance": {
+   "type": "cordless_vacuum",
+   "power": 570,
+   "suction": "27000 Pa",
+   "dust": "600 mL"
+  },
+  "summaryEn": "Dreame R20 Ultra AquaCycle.",
+  "sources": [
+   "https://miarmenia.am/en/product/435/%D5%B1%D5%A5%D5%BC%D6%84%D5%AB-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC-dreame-vacuum-cleaner-r20-ultra-aquacycle"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-r10s",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "R10S Cordless Vacuum",
+  "aliases": [
+   "Dreame R10S Cordless Vacuum Cleaner"
+  ],
+  "tier": "budget",
+  "priceAmd": 89900,
+  "priceAmdMax": 89900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 89900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "capacity": 2500,
+   "life": "≤70 min",
+   "chargeTime": "≤3.5 h"
+  },
+  "appliance": {
+   "type": "cordless_vacuum",
+   "power": 350,
+   "suction": "20000 Pa",
+   "dust": "600 mL"
+  },
+  "summaryEn": "Dreame R10S Cordless Vacuum.",
+  "sources": [
+   "https://miarmenia.am/en/product/433/%D5%B1%D5%A5%D5%BC%D6%84%D5%AB-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC-dreame-r10s-cordless-vacuum-cleaner"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-truclean-w30-pro",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Truclean W30 Pro Wet Dry Vacuum",
+  "aliases": [
+   "Xiaomi Truclean W30 Pro (BHR08GYEU)",
+   "Xiaomi Truclean W30 Pro"
+  ],
+  "tier": "budget",
+  "priceAmd": 129900,
+  "priceAmdMax": 139000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 129900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "life": "≤40 min"
+  },
+  "appliance": {
+   "type": "wet_dry_vacuum"
+  },
+  "summaryEn": "Xiaomi Truclean W30 Pro Wet Dry Vacuum.",
+  "sources": [
+   "https://miarmenia.am/en/product/459/%D5%B1%D5%A5%D5%BC%D6%84%D5%AB-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC-xiaomi-truclean-w30-pro-wet-dry-vacuum"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-vacuum-cleaner-g20",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Vacuum Cleaner G20",
+  "aliases": [
+   "Xiaomi Vacuum Cleaner G20"
+  ],
+  "tier": "budget",
+  "priceAmd": 89900,
+  "priceAmdMax": 89900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 89900
+   }
+  ],
+  "display": {},
+  "battery": {
+   "life": "≤60 min",
+   "chargeTime": "≤4 h"
+  },
+  "appliance": {
+   "type": "cordless_vacuum",
+   "power": 460,
+   "suction": "25000 Pa",
+   "dust": "600 mL"
+  },
+  "summaryEn": "Xiaomi Vacuum Cleaner G20.",
+  "sources": [
+   "https://miarmenia.am/en/product/224/%D5%B1%D5%A5%D5%BC%D6%84%D5%AB-%D6%83%D5%B8%D5%B7%D5%A5%D5%AF%D5%B8%D6%82%D5%AC--xiaomi--vacuum-cleaner-g20"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-watch-6",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Watch 6",
+  "aliases": [
+   "Redmi Watch 6"
+  ],
+  "tier": "budget",
+  "priceAmd": 55900,
+  "priceAmdMax": 55900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 55900
+   }
+  ],
+  "display": {
+   "size": 2.07,
+   "resolution": "432x514",
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 550
+  },
+  "body": {
+   "weight": 31,
+   "ip": "5ATM"
+  },
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "summaryEn": "Xiaomi Redmi Watch 6.",
+  "sources": [
+   "https://miarmenia.am/en/product/667/redmi-watch-6",
+   "https://www.mi.com/global/product/redmi-watch-6/specs/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-watch-6-lite",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Watch 6 Lite",
+  "aliases": [
+   "Redmi Watch 6 Lite"
+  ],
+  "tier": "budget",
+  "priceAmd": 35900,
+  "priceAmdMax": 35900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 35900
+   }
+  ],
+  "display": {
+   "size": 1.96,
+   "resolution": "410x502",
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 470
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "Xiaomi Redmi Watch 6 Lite.",
+  "sources": [
+   "https://miarmenia.am/en/product/666/redmi-watch-6-lite",
+   "https://www.mi.com/au/product/redmi-watch-6-lite/specs/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-watch-6-active",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Redmi Watch 6 Active",
+  "aliases": [
+   "Redmi Watch 6 Active"
+  ],
+  "tier": "budget",
+  "priceAmd": 23900,
+  "priceAmdMax": 23900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 23900
+   }
+  ],
+  "display": {
+   "size": 1.85,
+   "resolution": "390x450",
+   "type": "AMOLED"
+  },
+  "battery": {
+   "capacity": 470
+  },
+  "body": {
+   "weight": 26,
+   "ip": "IP68"
+  },
+  "summaryEn": "Xiaomi Redmi Watch 6 Active.",
+  "sources": [
+   "https://miarmenia.am/en/product/665/redmi-watch-6-active"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-smart-band-11-active",
+  "category": "watch",
+  "brand": "Xiaomi",
+  "name": "Smart Band 11 Active",
+  "aliases": [
+   "Xiaomi Smart Band 11 Active"
+  ],
+  "tier": "budget",
+  "priceAmd": 19900,
+  "priceAmdMax": 19900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 19900
+   }
+  ],
+  "display": {
+   "size": 1.47,
+   "resolution": "172x320",
+   "type": "TFT"
+  },
+  "battery": {
+   "capacity": 300
+  },
+  "summaryEn": "Xiaomi Smart Band 11 Active.",
+  "sources": [
+   "https://miarmenia.am/en/product/668/xiaomi-smart-band-11-active"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-pad-2-9-7",
+  "category": "tablet",
+  "brand": "Xiaomi",
+  "name": "Redmi Pad 2 9.7\"",
+  "aliases": [
+   "Redmi Pad 2 9.7"
+  ],
+  "tier": "budget",
+  "priceAmd": 74900,
+  "priceAmdMax": 74900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 74900
+   }
+  ],
+  "display": {
+   "size": 9.7,
+   "resolution": "2048 x 1280",
+   "type": "IPS LCD",
+   "refresh": 120
+  },
+  "battery": {
+   "capacity": 7500,
+   "wired": "33W"
+  },
+  "camera": {
+   "main": "8 MP",
+   "front": "5 MP"
+  },
+  "summaryEn": "Xiaomi Redmi Pad 2 9.7\".",
+  "sources": [
+   "https://miarmenia.am/en/product/566/redmi-pad-2-9.7"
+  ],
+  "unsure": [
+   "popularity",
+   "chipset"
+  ]
+ },
+ {
+  "id": "xiaomi-redmi-pad-2-9-7-4g",
+  "category": "tablet",
+  "brand": "Xiaomi",
+  "name": "Redmi Pad 2 9.7\" 4G",
+  "aliases": [
+   "Redmi Pad 2 9.7 4G"
+  ],
+  "tier": "budget",
+  "priceAmd": 83900,
+  "priceAmdMax": 83900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 128,
+    "priceAmd": 83900
+   }
+  ],
+  "display": {
+   "size": 9.7,
+   "resolution": "2048 x 1280",
+   "type": "IPS LCD",
+   "refresh": 120
+  },
+  "battery": {
+   "capacity": 7500,
+   "wired": "33W"
+  },
+  "camera": {
+   "main": "8 MP",
+   "front": "5 MP"
+  },
+  "summaryEn": "Xiaomi Redmi Pad 2 9.7\" 4G.",
+  "sources": [
+   "https://miarmenia.am/en/product/565/redmi-pad-2-9.7-4g"
+  ],
+  "unsure": [
+   "popularity",
+   "chipset"
+  ]
  }
 ]

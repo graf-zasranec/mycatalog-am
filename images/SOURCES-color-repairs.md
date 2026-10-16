@@ -2165,3 +2165,79 @@
 - xiaomi-bluetooth-speaker-essential__main.webp: official maker photo, transparent original; mi.com official render (Essential cut in PhotoRoom by Codex); Mi Armenia speaker import 2026-10-16; product 875x1152.
 
 - xiaomi-desktop-speaker__main.webp: official maker photo, transparent original; mi.com official render (Essential cut in PhotoRoom by Codex); Mi Armenia speaker import 2026-10-16; product 1296x620.
+
+- xiaomi-curved-gaming-g34wqi__main.webp: official maker photo, transparent original; official transparent packshot (mi.com 36_item_my / roborock.com Saros_Z70_Silver_ID); Mi Armenia import 2026-10-16; product 1297x814.
+
+- roborock-saros-z70__main.webp: official maker photo, transparent original; official transparent packshot (mi.com 36_item_my / roborock.com Saros_Z70_Silver_ID); Mi Armenia import 2026-10-16; product 710x757.
+
+- dreame-h12-dual__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 571x622.
+
+- dreame-h15-mix__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 825x629.
+
+- dreame-r10s__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 458x777.
+
+- dreame-r20-ultra-aquacycle__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 526x798.
+
+- dreame-x50-master__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 725x473.
+
+- msi-thin-15-b12ve-2836xru__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 758x491.
+
+- roborock-f25-ace-pro__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 361x682.
+
+- roborock-f25-ultra__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 263x730.
+
+- roborock-qrevo-c-pro__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 494x586.
+
+- xiaomi-bluetooth-speaker-mini__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 427x648.
+
+- xiaomi-body-composition-scale-s400__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 638x638.
+
+- xiaomi-handheld-vacuum-g30-max__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 323x776.
+
+- xiaomi-mijia-capsule-coffee-machine__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 537x593.
+
+- xiaomi-mijia-smart-air-purifier-max__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 320x675.
+
+- xiaomi-mijia-smart-steam-air-fryer-7l__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 579x747.
+
+- xiaomi-redmi-buds-8-pro__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 804x804.
+
+- xiaomi-redmi-pad-2-9-7-4g__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 441x608.
+
+- xiaomi-redmi-pad-2-9-7__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 662x787.
+
+- xiaomi-redmi-watch-6-active__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 672x741.
+
+- xiaomi-redmi-watch-6-lite__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 731x798.
+
+- xiaomi-redmi-watch-6__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 707x812.
+
+- xiaomi-router-4a__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 707x594.
+
+- xiaomi-router-ac1200__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 554x495.
+
+- xiaomi-router-ax1500__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 783x566.
+
+- xiaomi-smart-air-purifier-elite__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 304x726.
+
+- xiaomi-smart-band-11-active__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 523x707.
+
+- xiaomi-smart-kettle-2-pro__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 538x757.
+
+- xiaomi-soundbar-pro-2-1__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 713x372.
+
+- xiaomi-truclean-w30-pro__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 226x707.
+
+- xiaomi-tv-box-s-3rd-gen__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 625x626.
+
+- xiaomi-tv-stick-4k-2nd-gen__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 777x639.
+
+- xiaomi-vacuum-cleaner-g20__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 292x803.
+
+- yandex-station-midi__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 648x688.
+
+- yandex-station-mini-3__main.webp: official maker photo, transparent original; Mi Armenia gallery photo cut in PhotoRoom (logged-in), 2026-10-16; product 696x506.
+
+- xiaomi-curved-gaming-g34wqi__main.webp: official maker photo, transparent original; official transparent packshot (mi.com / roborock.com); Mi Armenia import 2026-10-16; product 1297x814.
+
+- roborock-saros-z70__main.webp: official maker photo, transparent original; official transparent packshot (mi.com / roborock.com); Mi Armenia import 2026-10-16; product 710x757.
