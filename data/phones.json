@@ -1891,7 +1891,9 @@
   "summaryEn": "The same open-fit shape as AirPods 4, with noise cancellation added.",
   "aliases": [
    "AirPods 4 with Active Noise Cancellation",
-   "AirPods 4 ANC"
+   "AirPods 4 ANC",
+   "Apple AirPods 4 with ANC /MXP93*",
+   "Apple AirPods 4 with ANC /MXP93ZE/A"
   ],
   "body": {
    "weight": 4.3
@@ -52262,7 +52264,8 @@
   "brand": "Xiaomi",
   "name": "Redmi Note 17 4G",
   "aliases": [
-   "Xiaomi Redmi Note 17 4G /256GB Black"
+   "Xiaomi Redmi Note 17 4G /256GB Black",
+   "Xiaomi Redmi Note 17 4G 8GB/256GB Sky Teal"
   ],
   "tier": "mid",
   "priceAmd": 129900,
@@ -67725,7 +67728,9 @@
     "priceAmd": 99900
    }
   ],
-  "display": {},
+  "display": {
+   "size": 27
+  },
   "battery": {},
   "summaryEn": "Xiaomi 2K Gaming G27Qi 2026.",
   "unsure": [
@@ -76440,5 +76445,529 @@
   ],
   "priceAmd": 89900,
   "priceAmdMax": 89900
+ },
+ {
+  "id": "asus-vivobook-15-core-5-315-90nb17i1-m01m10",
+  "category": "laptop",
+  "brand": "ASUS",
+  "name": "Vivobook 15 Core 5 315 (90NB17I1-M01M10)",
+  "aliases": [
+   "Asus Vivobook 15.6\" Core 5-315 /512GB Blue W11H /90NB17I1-M01M10",
+   "ASUS Vivobook 15.6\" Core 5- W11H /90NB17I1-M01M10",
+   "Asus Vivobook 15.6\" Core 5-315 16GB/512GB Blue W11H /90NB17I1-M01M10"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 501900,
+  "priceAmdMax": 501900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 501900
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "type": "IPS",
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "summaryEn": "ASUS Vivobook 15.6\" Core 5- W11H /90NB17I1-M01M10.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 5-315"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-omnibook-5-16-oled-ultra-5-322",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 16 OLED Ultra 5 322",
+  "aliases": [
+   "HP OmniBook 5 16\" OLED Ultra 5-322 /512GB W11H",
+   "HP OmniBook 5 16\" OLED Ultra 5- W11H"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 663000,
+  "priceAmdMax": 663000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 663000
+   }
+  ],
+  "display": {
+   "size": 16,
+   "type": "OLED",
+   "resolution": "2048x1280"
+  },
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 16\" OLED Ultra 5- W11H.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 5-322"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-omnibook-17-dp0105dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 17-DP0105DX",
+  "aliases": [
+   "HP OMNIBOOK 17-DP0105DX"
+  ],
+  "tier": "mid",
+  "priceAmd": 244000,
+  "priceAmdMax": 244000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 244000
+   }
+  ],
+  "display": {
+   "size": 17.3,
+   "type": "IPS",
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "summaryEn": "HP OMNIBOOK 17-DP0105DX.",
+  "unsure": [
+   "popularity",
+   "chipset"
+  ],
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-omnibook-5-flip-14-fp0023dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 Flip 14-fp0023dx",
+  "aliases": [
+   "HP OmniBook 5 Flip 14-fp0023dx Touch (B86Q7UA)",
+   "HP OmniBook 5 Flip 14-fp0023dx Touch"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 330000,
+  "priceAmdMax": 330000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 330000
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1200",
+   "touch": true
+  },
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 Flip 14-fp0023dx Touch.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core 7-150U"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-omen-16-an011-ultra-9-285h",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OMEN 16-AN011 Ultra 9 285H",
+  "aliases": [
+   "HP Omen 16-AN011 Ultra 9 285H I (BM7B9UA#ABA)",
+   "HP Omen 16-AN011 Ultra 9 285H I"
+  ],
+  "tier": "flagship",
+  "priceAmd": 1030400,
+  "priceAmdMax": 1030400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 1030400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "2560x1600"
+  },
+  "battery": {},
+  "summaryEn": "HP Omen 16-AN011 Ultra 9 285H I.",
+  "unsure": [
+   "popularity",
+   "display",
+   "chipset",
+   "battery.capacity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 9-285H"
+  }
+ },
+ {
+  "id": "hp-omen-24",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "OMEN 24",
+  "aliases": [
+   "Hp Omen 24 (780D9AA)",
+   "HP Omen 24"
+  ],
+  "tier": "budget",
+  "priceAmd": 87000,
+  "priceAmdMax": 87000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 87000
+   }
+  ],
+  "display": {
+   "size": 23.8,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 165
+  },
+  "battery": {},
+  "summaryEn": "HP Omen 24.",
+  "unsure": [
+   "popularity",
+   "chipset"
+  ]
+ },
+ {
+  "id": "hp-omen-25i",
+  "category": "monitor",
+  "brand": "HP",
+  "name": "OMEN 25i",
+  "aliases": [
+   "HP OMEN 25i Gaming"
+  ],
+  "tier": "mid",
+  "priceAmd": 119400,
+  "priceAmdMax": 119400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 119400
+   }
+  ],
+  "display": {
+   "size": 24.5,
+   "type": "IPS",
+   "resolution": "1920 x 1080",
+   "refresh": 165
+  },
+  "battery": {},
+  "summaryEn": "HP OMEN 25i Gaming.",
+  "unsure": [
+   "popularity",
+   "chipset"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-16-by0015-ryzen-5",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 16-BY0015 Ryzen 5",
+  "aliases": [
+   "HP OmniBook 3 16-BY0015 Ryzen 5 40 I (D7NF2UA#ABA)",
+   "HP OmniBook 3 16-BY0015 Ryzen 5 40 I"
+  ],
+  "tier": "mid",
+  "priceAmd": 255400,
+  "priceAmdMax": 255400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 255400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200",
+   "touch": true
+  },
+  "battery": {},
+  "summaryEn": "HP OmniBook 3 16-BY0015 Ryzen 5 40 I.",
+  "unsure": [
+   "popularity",
+   "chipset"
+  ],
+  "graphics": {
+   "name": "AMD Radeon 610M",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-omnibook-5-16-cd0070-ultra-7-355",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 5 16-CD0070 Ultra 7 355",
+  "aliases": [
+   "HP OmniBook 5 16-CD0070 Ultra 7 355 I (CQ4K7UA#ABA)",
+   "HP OmniBook 5 16-CD0070 Ultra 7 355 I"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 503400,
+  "priceAmdMax": 503400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 503400
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200",
+   "touch": true
+  },
+  "battery": {},
+  "summaryEn": "HP OmniBook 5 16-CD0070 Ultra 7 355 I.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-355"
+  },
+  "graphics": {
+   "name": "Intel Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-omnibook-x-flip-16-ar0033dx",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook X Flip 16 Ryzen AI 7 350 (16-ar0033dx)",
+  "aliases": [
+   "HP OmniBook X FlipNGAI 16\" TouchScreen Ryzen AI 7-350 I1TB ( 16ar-0033dx )",
+   "HP OmniBook X FlipNGAI 16\" TouchScreen Ryzen AI 7-350 I1TB"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 439000,
+  "priceAmdMax": 439000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 439000
+   }
+  ],
+  "display": {
+   "size": 16,
+   "resolution": "1920x1200",
+   "touch": true
+  },
+  "battery": {},
+  "summaryEn": "HP OmniBook X FlipNGAI 16\" TouchScreen Ryzen AI 7-350 I1TB.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "AMD Ryzen AI 7 350"
+  },
+  "graphics": {
+   "name": "AMD Radeon 860M",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "hp-victus-15-fa2115nia-rtx-5060",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Victus 15-fa2115nia RTX 5060",
+  "aliases": [
+   "HP Victus 15.6\" FHD i7-Geforce RTX 5060 I (15-fa2115nia)",
+   "HP Victus 15.6\" FHD i7-Geforce RTX 5060 I"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 619000,
+  "priceAmdMax": 619000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 619000
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "summaryEn": "HP Victus 15.6\" FHD i7-Geforce RTX 5060 I.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core i7-13620H"
+  },
+  "graphics": {
+   "name": "Nvidia Geforce RTX 5060 8GB",
+   "type": "discrete"
+  }
+ },
+ {
+  "id": "apple-macbook-pro-16-m1-pro-mk183",
+  "category": "laptop",
+  "brand": "Apple",
+  "name": "MacBook Pro 16 M1 Pro (MK183)",
+  "aliases": [
+   "Macbook Pro 16\" M1 Pro I MK183 Grey",
+   "Apple Macbook Pro 16\" M1 Pro I MK183"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 699000
+   }
+  ],
+  "display": {
+   "size": 16.2,
+   "resolution": "3456x2234"
+  },
+  "battery": {},
+  "summaryEn": "Apple Macbook Pro 16\" M1 Pro I MK183.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Apple M1 Pro"
+  },
+  "graphics": {
+   "name": "Apple M1 Pro 16-core GPU",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "lenovo-yoga-27iah10-ultra-7-255h",
+  "category": "desktop",
+  "brand": "Lenovo",
+  "name": "Yoga 27IAH10 Ultra 7 255H",
+  "aliases": [
+   "Lenovo AIO Yoga 27\" Ultra 7-255H 16GB/1TB Grey W11H /F0J20032RU"
+  ],
+  "tier": "flagship",
+  "priceAmd": 688400,
+  "priceAmdMax": 688400,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 688400
+   }
+  ],
+  "display": {
+   "size": 27,
+   "type": "IPS",
+   "resolution": "3840x2160"
+  },
+  "battery": {},
+  "summaryEn": "Lenovo Yoga 27 all-in-one with Intel Core Ultra 7 255H.",
+  "unsure": [
+   "popularity"
+  ],
+  "chipset": {
+   "name": "Intel Core Ultra 7-255H"
+  },
+  "graphics": {
+   "name": "Intel Arc Graphics",
+   "type": "integrated"
+  }
+ },
+ {
+  "id": "marshall-motif-ii-anc",
+  "category": "headphones",
+  "brand": "Marshall",
+  "name": "Motif II ANC",
+  "aliases": [
+   "Headphones Marshall Motif II ANC True Wireless Earphones",
+   "Marshall Motif II ANC"
+  ],
+  "tier": "mid",
+  "priceAmd": 74900,
+  "priceAmdMax": 74900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 74900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": true
+  },
+  "connectivity": {
+   "bluetooth": "5.3"
+  },
+  "released": "2023",
+  "summaryEn": "Marshall Motif II ANC true wireless earbuds.",
+  "unsure": [
+   "popularity"
+  ]
  }
 ]

@@ -2125,3 +2125,31 @@
 - lenovo-yoga-pro-7-14ahp9-ryzen-7-8845hs__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 879x639.
 
 - lenovo-yoga-slim-7-14ill10-ultra-5-226v__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 836x609.
+
+- apple-macbook-pro-16-m1-pro-mk183__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 865x528.
+
+- asus-vivobook-15-core-5-315-90nb17i1-m01m10__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 656x389.
+
+- hp-omen-16-an011-ultra-9-285h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 749x676.
+
+- hp-omen-24__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 787x549.
+
+- hp-omen-25i__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 767x531.
+
+- hp-omnibook-17-dp0105dx__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 543x447.
+
+- hp-omnibook-3-16-by0015-ryzen-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 639x525.
+
+- hp-omnibook-5-16-cd0070-ultra-7-355__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 667x532.
+
+- hp-omnibook-5-16-oled-ultra-5-322__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1393x1173.
+
+- hp-omnibook-5-flip-14-fp0023dx__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 485x407.
+
+- hp-omnibook-x-flip-16-ar0033dx__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 956x839.
+
+- hp-victus-15-fa2115nia-rtx-5060__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1010x858.
+
+- lenovo-yoga-27iah10-ultra-7-255h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1001x981.
+
+- marshall-motif-ii-anc__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 934x527.
