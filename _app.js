@@ -2403,7 +2403,17 @@ function detailView(p) {
     <h2 class="sh">${esc(t('detail.full_specs'))}</h2>
     <div class="secgrid">${specs}</div>
 
+    ${similarHTML(p)}
   </div>`;
+}
+// Similar models (owner, 2026-10-16): the four on sale in the same section nearest in price. It
+// links every product page to its neighbours, which is how a crawler finds pages beyond the home.
+function similarHTML(p) {
+  const base = catalogPrice(p) || 0, cat = catOf(p);
+  const near = DATA.filter(q => q.id !== p.id && catOf(q) === cat && hasReal(q))
+    .sort((a, b) => Math.abs(catalogPrice(a) - base) - Math.abs(catalogPrice(b) - base)).slice(0, 4);
+  return near.length ? `<h2 class="sh">${esc(({ hy: 'Նմանատիպ մոդելներ', ru: 'Похожие модели', en: 'Similar models' })[st.lang] || 'Similar models')}</h2>
+    <div class="grid">${near.map(card).join('')}</div>` : '';
 }
 
 

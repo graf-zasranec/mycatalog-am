@@ -897,7 +897,7 @@ function interactiveProduct(page, lang, product) {
     .replace(/<link[^>]*rel="preload"[^>]*as="image"[^>]*>/g, '')
     .replace(/(href|src)="((?:images|data)\/)/g, '$1="/$2')
     .replace('<html lang="hy">', `<html lang="${lang}">`)
-    .replace("manifest-src 'self'; worker-src 'self'; base-uri 'none'", "base-uri 'self'")
+    .replace("base-uri 'none'", "base-uri 'self'")
     + '<base href="/">' + preload + productCSSLink + (productHead.match(seoTags) || []).join('\n');
   const content = rendered.main
     .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
