@@ -1270,6 +1270,10 @@ if (process.argv[2] === '--selftest') {
     const v = istyleVariants(payload).sort((a, b) => a.price - b.price);
     // "No Sim" is the eSIM-only build; "1SIM" has the tray and costs more; colours collapse
     const want = [[469000, 256, true], [499000, 256, false], [559000, 512, true]];
+    const unknownSim = istyleVariants('"variants":' + JSON.stringify([mk(537000, "256 GB", "", 10)]));
+    if (unknownSim.length !== 1 || unknownSim[0].esim !== undefined || unknownSim[0].simFromPage !== undefined) {
+      bad++; console.log("FAIL istyle missing SIM must stay unknown");
+    }
     if (colorLoose('Jetblack', ['Jet Black', 'Silver']) !== 'Jet Black' || colorLoose('Levender', ['Lavender', 'Black']) !== 'Lavender'
         || colorLoose('Cosmic Orange', ['Cosmic Orange']) !== 'Cosmic Orange' || colorLoose('Purple Fog', ['Midnight', 'Blue']) !== null) {
       bad++; console.log('FAIL colorLoose');
@@ -2276,15 +2280,13 @@ const SHOPS = {
 
         // The retailer calls its 2025 A16 model 'iPad 10'; it is not the older A14.
         if (/\bipad\b/i.test(pageTitle) && /\ba16\b/i.test(pageTitle)) id = 'apple-ipad-a16';
-        const eOnly = /iphone 18 pro/i.test(name) || undefined;
         if (!vs.length) continue;
         for (const v of vs)
           out.push({ id, price: v.price, title: clean(pageTitle), url: u + v.variant,
             color: v.color ? colorLoose(v.color, (phoneById[id] || {}).colors) || v.color : undefined,
             storage: v.storage ?? storageOf(pageTitle), ram: v.ram ?? ramOf(pageTitle),
-            // The iPhone 18 Pro pages state no SIM build: istyle sells them eSIM-only (owner,
-            // 2026-09-26). Only these - an iPhone 16 page without the field is the tray build.
-            esim: v.esim ?? eOnly, simFromPage: v.simFromPage ?? eOnly, inStock: v.inStock });
+            // Missing SIM information is unknown; preserve only the exact variant attribute.
+            esim: v.esim, simFromPage: v.simFromPage, inStock: v.inStock });
       }
       return out;
     }

@@ -2059,3 +2059,69 @@
 - dyson-hs08-i-d__red.webp: official maker photo, transparent original; Dyson official product photo, transparent original; Bluetooth badge removed; product 970x1456.
 
 - dyson-hs08-i-d__red.webp: official maker photo, transparent original; Dyson official product photo; white card and Bluetooth badge removed; product 652x1211.
+
+- hp-probook-450-g9-i5-1235u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 947x622.
+
+- hp-probook-460-g11-ultra-5-125u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 794x645.
+
+- hp-probook-4g1i16-ultra-5-225u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 666x523.
+
+- hp-victus-15-fa2082wm-core-i5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 710x608.
+
+- hp-victus-15-fa2120nia-i7-240h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 658x561.
+
+- jbl-headphones-live-300tws__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 760x687.
+
+- lenovo-ideapad-5-2-in-1-14ial10-ultra-7-255u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 819x782.
+
+- lenovo-ideapad-5-2-in-1-14irh9-i5-13420h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 840x525.
+
+- lenovo-ideapad-5-pro-14iap7-i5-1240p__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1036x635.
+
+- lenovo-ideapad-gaming-3-16arh7-amd-ryzen-r5-6600h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 956x866.
+
+- lenovo-ideapad-slim-3-15iph11-ultra-7__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 791x531.
+
+- lenovo-ideapad-slim-3-16ahp10-ryzen-5-8640hs__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 759x618.
+
+- lenovo-ideapad-slim-3-17iwc11-i5-320__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 732x575.
+
+- lenovo-ideapad-slim-5-16agp11-ryzen-ai-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 716x585.
+
+- lenovo-ideapad-slim-5-16iph11-ultra-5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 750x613.
+
+- lenovo-legion-5-15ahp10-ryzen-7-260__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 748x719.
+
+- lenovo-legion-5-15ahp11-ryzen-7__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 721x646.
+
+- lenovo-legion-5-15akp10-ryzen-ai-7__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 947x814.
+
+- lenovo-legion-5-15irx10-i7-14700hx__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 753x724.
+
+- lenovo-legion-5-16irx9-core-i5__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1048x997.
+
+- lenovo-legion-5-16irx9-i5-13450hx__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1048x997.
+
+- lenovo-legion-go-2__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 856x403.
+
+- lenovo-thinkbook-14-g8-irl-core__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 747x544.
+
+- lenovo-thinkbook-16-g8-ial-ultra-5-135h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1001x720.
+
+- lenovo-thinkbook-16-g9-ipl-ultra-7__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 732x527.
+
+- lenovo-thinkbook-16-g9-irl-i7-240h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1035x746.
+
+- lenovo-thinkpad-e14-gen-7-ultra-5-225u__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 727x595.
+
+- lenovo-thinkpad-e16-g4-ultra-7__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 724x592.
+
+- lenovo-thinkpad-e16-gen-3-i5-210h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 1042x847.
+
+- lenovo-yoga-27iah10-ultra-9-285h__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 726x831.
+
+- lenovo-yoga-32ill10-ultra-7-258v__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 782x593.
+
+- lenovo-yoga-pro-7-14ahp9-ryzen-7-8845hs__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 879x639.
+
+- lenovo-yoga-slim-7-14ill10-ultra-5-226v__main.webp: official maker photo, transparent original; web photo, background removed with PhotoRoom; product 836x609.
