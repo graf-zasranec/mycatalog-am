@@ -1,6 +1,7 @@
 // Shared local/CI refresh. Each unavailable shop/cache step keeps previous data.
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
+import {preparedCheckpoint} from './refresh-recovery.mjs';
 import {acquireRefreshLock} from './refresh-lock.mjs';
 if (!process.argv.includes('--plan')) {
   const release = acquireRefreshLock();
@@ -25,6 +26,7 @@ const run = (command, args, required = false) => {
   }
 };
 run(process.execPath, ['scrape.mjs', '--selftest'], true);
+run(process.execPath, ['tools/refresh-recovery-test.mjs'], true);
 run(process.execPath, ['tools/asbc-test.mjs'], true);
 run(process.execPath, ['tools/appzone-test.mjs'], true);
 run(process.execPath, ['tools/likemobile-test.mjs'], true);
@@ -34,6 +36,9 @@ run(python, ['tools/eldorado-data-test.py'], true);
 run(python, ['tools/test_zigzag_stock.py'], true);
 run(python, ['tools/test_zigzag_fetch.py'], true);
 const eldoradoOnly = process.argv.includes('--eldorado-only') || process.env.BETTER_REFRESH_SCOPE === 'eldorado';
+const retry = process.env.BETTER_REFRESH_RESUME === '1';
+let prepared=false;
+try { prepared=retry&&preparedCheckpoint(JSON.parse(fs.readFileSync('.refresh-prepared.json','utf8')),'all'); } catch {}
 if (eldoradoOnly) {
   run(python, ['tools/eldorado-fetch.py', '--offers-only', '--recheck-hours', '0'], true);
   run(process.execPath, ['tools/confirm-hand.mjs', 'eldorado', '--recheck', '0']);
@@ -41,15 +46,16 @@ if (eldoradoOnly) {
 } else {
 // Resume only after the preparation stages have completed in an interrupted run.
 // The normal local/CI command always refreshes those caches first.
-if (!process.argv.includes('--resume-prices')) {
+if (!process.argv.includes('--resume-prices') && !prepared) {
 run(python, ['tools/eldorado-fetch.py']);
 run(process.execPath, ['tools/zigzag-sitemap.mjs']);
 run(python, ['tools/zigzag-fetch.py']);
 const limit = process.env.BETTER_ROW_LIMIT;
 run(process.execPath, ['tools/confirm-hand.mjs', '--recheck', '1', ...(limit ? ['--limit', limit] : []), '--drop-gone']);
 run(process.execPath, ['tools/nbc-import.mjs', '--fetch', '--write']);
+if (!process.argv.includes('--plan')) fs.writeFileSync('.refresh-prepared.json',JSON.stringify({scope:'all',preparedAt:new Date().toISOString()}));
 }
-run(process.execPath, ['scrape.mjs', '--fresh'], true);
+run(process.execPath, ['scrape.mjs', ...(prepared ? ['--resume-checkpoint'] : ['--fresh'])], true);
 run(process.execPath, ['tools/audio.mjs', '--write'], true);
 run(process.execPath, ['tools/links.mjs'], true);
 for (const category of ['laptop', 'monitor', 'headphones', 'speaker', 'watch', 'tv'])

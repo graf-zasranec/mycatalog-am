@@ -2518,6 +2518,7 @@ if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched a
 const report = [];
 // Parser-only audit tools stop at this marker; runtime helpers belong after it.
 import { purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows } from './tools/cache-availability.mjs';
+import {resumablePartial} from './tools/refresh-recovery.mjs';
 import { caseSize } from './tools/spec-values.mjs';
 
 
@@ -2535,7 +2536,7 @@ let done = { date: '', shops: {} };
 if (!fresh && fs.existsSync(PARTIAL)) {
   try {
     const d = JSON.parse(fs.readFileSync(PARTIAL, 'utf8'));
-    if (d.date === TODAY) {
+    if (resumablePartial(d, TODAY, process.argv.includes('--resume-checkpoint'))) {
       done = d;
       const have = Object.keys(done.shops).filter(k => names.includes(k));
       if (have.length) console.log(`resuming: ${have.length} shop(s) already read today (${have.join(', ')}) - --fresh to ignore`);
@@ -2621,7 +2622,7 @@ const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TOD
   if (kept.length) console.log(`    read ${best.size} of the ${had.length} it had last time - the shop, not the stock: kept ${kept.length} previous offer(s) with their old dates`);
   // Written now, not at the end: this shop is read and should stay read even if the run dies in
   // the next one. Small enough that the cost is nothing beside the hour it saves.
-  done.date = TODAY; done.shops[key] = checkpointShopRows(key, rows, kept, got);
+  done.date = TODAY; done.savedAt = new Date().toISOString(); done.shops[key] = checkpointShopRows(key, rows, kept, got);
   try { fs.writeFileSync(PARTIAL, JSON.stringify(done)); } catch { }
   const models = new Set([...best.values()].map(o => o.id));
   const collapse = had.length >= 20 && best.size < had.length * 0.25 ? `  <- COLLAPSED from ${had.length}` : '';

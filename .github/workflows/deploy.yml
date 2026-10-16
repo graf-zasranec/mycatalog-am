@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write             # to commit the refreshed prices + history
+  actions: read               # restore this run's checkpoint on its single retry
 
 concurrency:
   group: refresh
@@ -50,11 +51,46 @@ jobs:
       - name: Install the build tools
         run: npm ci --ignore-scripts
 
+      - name: Restore interrupted refresh checkpoint
+        if: github.run_attempt > 1
+        continue-on-error: true # older runs may not have saved a checkpoint
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: refresh-checkpoint
+          path: .
+          github-token: ${{ github.token }}
+          run-id: ${{ github.run_id }}
+
       - name: Refresh caches, hand rows, shop prices and build
+        id: prices
+        # Leave time to save completed shops before the hosted runner's six-hour limit.
+        timeout-minutes: 330
         env:
           BETTER_ROW_LIMIT: '400'
           BETTER_REFRESH_SCOPE: ${{ inputs.scope || 'all' }}
+          BETTER_REFRESH_RESUME: ${{ github.run_attempt > 1 && '1' || '0' }}
         run: node tools/refresh.mjs
+
+      - name: Save interrupted refresh checkpoint
+        if: always() && steps.prices.outcome != 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: refresh-checkpoint
+          retention-days: 2
+          overwrite: true
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: |
+            .scrape-partial.json
+            .refresh-prepared.json
+            data/eldorado.json
+            data/eldorado-refresh-report.json
+            data/zigzag.json
+            data/listings.csv
+            data/links.csv
+            data/prices.json
+            data/history.json
+            data/phones.json
 
       - name: Commit refreshed prices and history
         run: |

@@ -1,0 +1,14 @@
+import assert from'node:assert/strict';import{preparedCheckpoint,resumablePartial,retryDecision}from'./refresh-recovery.mjs';
+const now=Date.parse('2026-10-16T04:00:00Z'),stamp='2026-10-16T00:00:00Z';
+assert(preparedCheckpoint({scope:'all',preparedAt:stamp},'all',now));
+assert(!preparedCheckpoint({scope:'eldorado',preparedAt:stamp},'all',now));
+assert(!preparedCheckpoint({scope:'all',preparedAt:'2026-10-15T00:00:00Z'},'all',now));
+assert(resumablePartial({date:'2026-10-16'},'2026-10-16',false,now));
+const partial={date:'2026-10-15',savedAt:stamp,shops:{pixel:[{seen:'2026-10-15',price:100}]}};
+assert(!resumablePartial(partial,'2026-10-16',false,now));assert(resumablePartial(partial,'2026-10-16',true,now));assert.equal(partial.shops.pixel[0].seen,'2026-10-15');
+assert(!resumablePartial({...partial,savedAt:'2026-10-15T00:00:00Z'},'2026-10-16',true,now));
+const repo='graf-zasranec/mycatalog-am',run={id:1,head_repository:{full_name:repo},head_branch:'main',name:'Better — refresh prices',status:'completed',conclusion:'cancelled',run_attempt:1,created_at:'2026-10-16T00:00:00Z'};
+assert.equal(retryDecision(run,[],repo),null);
+assert(retryDecision({...run,run_attempt:2},[],repo));assert(retryDecision({...run,conclusion:'success'},[],repo));assert(retryDecision({...run,head_repository:{full_name:'fork/repo'}},[],repo));
+assert(retryDecision(run,[{...run,id:2,created_at:'2026-10-16T01:00:00Z'}],repo));assert(retryDecision(run,[{...run,id:2,created_at:'2026-10-15T00:00:00Z',status:'in_progress'}],repo));
+console.log('REFRESH_RECOVERY_PASS: one retry, overlap protection, scoped checkpoint expiry and unchanged source dates');
