@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readLikeMobile,likeMobileRows,likeMobileMemory} from './likemobile.mjs';
+import {readLikeMobile,likeMobileRows,likeMobileMemory,readLikeMobileProduct} from './likemobile.mjs';
 const child={id:7,type:'simple',qty:[2],isProductInStock:true,images:['likemobile/product/7/a.webp'],flats:[{locale:'en',name:'Redmi 15 8/256GB (Black)',status:1,price:'79 000',special_price:69000,special_price_from:'2026-10-01',special_price_to:'2026-10-16'}]};
 const page={selectedRate:{code:'AMD'},productsList:{data:[child]}};
 const html=p=>`<a href="/en/redmi-black">Redmi 15 8/256GB (Black)</a><script type="application/json" id="__NEXT_DATA__">${JSON.stringify({props:{pageProps:p}})}</script>`;
@@ -16,3 +16,10 @@ assert.throws(()=>readLikeMobile('<h1>Access denied</h1>'),/missing/);
 assert.deepEqual(likeMobileMemory('Redmi 15 8/256GB (Black)'),{ram:8,storage:256});
 assert.deepEqual(likeMobileMemory('HP 15 FD0355NIA','Ram - 16GB DDR4 Rom - 512GB SSD'),{ram:16,storage:512});
 console.log('LikeMobile: exact visible links, current sale, child stock and currency checks passed');
+
+const detailChild={...child,flats:[{...child.flats[0],url_key:'redmi-black'}]};
+const detail={selectedRate:{code:'AMD'},productSlug:'redmi-black',serverSideProduct:{type:'configurable',price:1,variants:[{...detailChild,id:8,flats:[{...detailChild.flats[0],url_key:'redmi-white',price:1000}]},detailChild]}};
+assert.equal(readLikeMobileProduct(html(detail),'https://likemobile.am/en/redmi-black','2026-10-15').price,69000);
+assert.throws(()=>readLikeMobileProduct(html(detail),'https://likemobile.am/en/redmi-white'),/identity/);
+assert.throws(()=>readLikeMobileProduct(html({...detail,serverSideProduct:{...detail.serverSideProduct,variants:[detailChild,detailChild]}}),'https://likemobile.am/en/redmi-black'),/ambiguous/);
+console.log('LikeMobile detail: exact child, parent/related minima rejected');

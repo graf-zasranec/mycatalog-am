@@ -76,6 +76,15 @@ prices.offers['zero-price-check'] = [
 is(app.offersFor({ id: 'zero-price-check' }).map(o => o.storage), [64],
   'zero and invalid prices cannot become purchasable configuration options');
 delete prices.offers['zero-price-check'];
+prices.offers['unsorted-import-check'] = [
+  {price: 99000, shop: 'pixel'}, {price: 45000, shop: 'viva'}, {price: 70000, shop: 'ucom'}
+];
+is(app.offersFor({id:'unsorted-import-check'}).map(o=>o.price), [45000,70000,99000],
+  'reviewed offers appended out of order still produce an ascending price rail');
+is(app.bestOf({id:'unsorted-import-check'}),45000,'an appended cheaper offer becomes the minimum');
+is(prices.offers['unsorted-import-check'].map(o=>o.price),[99000,45000,70000],
+  'sorting offers for display does not mutate the source records');
+delete prices.offers['unsorted-import-check'];
 const availabilityProduct = {id: 'availability-check', category: 'phone', variants: [{ram: 8, storage: 128}]};
 prices.offers[availabilityProduct.id] = [
   {price: 47000, inStock: false, ram: 8, storage: 128, shop: 'yerevanmobile'},
@@ -279,7 +288,7 @@ is(galaxyChoice.color, 'Black', 'choosing 2TB moves an unavailable White finish 
     {shop:'other',color:null,ram:12,storage:512,price:740000}
   ];
   is(app.selectionOffers(p,{color:'Silver',ram:12,storage:512}).map(o=>o.shop), ['other'], 'Silver 512 must not borrow Ucom Black 512 price');
-  is(app.selectionOffers(p,{color:'Black',ram:12,storage:512}).map(o=>o.price), [743900,740000], 'matching colour and unspecified shop colours remain available');
+  is(app.selectionOffers(p,{color:'Black',ram:12,storage:512}).map(o=>o.price), [740000,743900], 'matching colour and unspecified shop colours remain available cheapest first');
 }
 
 /* --- the front page deals are real savings --------------------------------------------- */

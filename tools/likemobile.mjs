@@ -41,6 +41,21 @@ export function likeMobileRows({page,links},today=new Date().toISOString().slice
   });
 }
 
+// Hand verification of an exact shop link must use its selected SKU, never a
+// configurable parent's minimum or a related product's price.
+export function readLikeMobileProduct(html,url,today) {
+  const parsed=readLikeMobile(html),page=parsed.page,root=page.serverSideProduct;
+  const slug=decodeURIComponent(new URL(url).pathname.split('/').filter(Boolean).at(-1));
+  if(!root||page.productSlug!==slug)throw new Error('LikeMobile detail identity missing');
+  const candidates=root.type==='simple'?[root]:(root.variants||[]);
+  const exact=candidates.filter(p=>p.type==='simple'&&p.flats?.some(f=>f.locale==='en'&&f.url_key===slug));
+  if(exact.length!==1)throw new Error('LikeMobile detail SKU is ambiguous');
+  const title=exact[0].flats.find(f=>f.locale==='en').name.trim();
+  const rows=likeMobileRows({page:{...page,productsList:{data:exact}},links:new Map([[title,new Set([url])]])},today);
+  if(rows.length!==1)throw new Error('LikeMobile detail price missing');
+  return rows[0];
+}
+
 export async function collectLikeMobile({get,pause,match}) {
   const reviews=JSON.parse(fs.readFileSync('data/likemobile-map.json','utf8'));
   const products=new Map(JSON.parse(fs.readFileSync('data/phones.json','utf8')).map(p=>[p.id,p]));

@@ -9202,15 +9202,15 @@
       "Նոթբուք ASUS Vivobook 17 X1704VAP (X1704VA-AU1017)"
     ],
     "tier": "upper-mid",
-    "priceAmd": 379900,
-    "priceAmdMax": 379900,
+    "priceAmd": 315000,
+    "priceAmdMax": 395900,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 379900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 315000
       }
     ],
     "display": {
@@ -17591,13 +17591,13 @@
     ],
     "tier": "upper-mid",
     "released": "2020-10",
-    "priceAmd": 109900,
+    "priceAmd": 79000,
     "priceAmdMax": 109900,
     "popularity": 62,
     "accent": "#26262A",
     "variants": [
       {
-        "priceAmd": 109900
+        "priceAmd": 79000
       }
     ],
     "audio": {
@@ -17612,7 +17612,12 @@
     "connectivity": {
       "bluetooth": "5.0"
     },
-    "summaryEn": "A 50 W ring on a chrome stand — the one that looks like furniture."
+    "summaryEn": "A 50 W ring on a chrome stand — the one that looks like furniture.",
+    "colors": [
+      "Black",
+      "Gray",
+      "Blue"
+    ]
   },
   {
     "id": "harman-kardon-studio-8",
@@ -26903,15 +26908,15 @@
     "name": "PartyBox 710",
     "aliases": [],
     "tier": "mid",
-    "priceAmd": 299900,
-    "priceAmdMax": 299900,
+    "priceAmd": 285000,
+    "priceAmdMax": 440900,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
         "ram": null,
         "storage": null,
-        "priceAmd": 299900
+        "priceAmd": 285000
       }
     ],
     "display": {},
@@ -26928,6 +26933,9 @@
     },
     "sources": [
       "https://www.jbl.com/PARTYBOX-710-.html"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -26981,13 +26989,13 @@
     ],
     "tier": "upper-mid",
     "released": "2023-04",
-    "priceAmd": 169900,
-    "priceAmdMax": 169900,
+    "priceAmd": 129900,
+    "priceAmdMax": 179900,
     "popularity": 67,
     "accent": "#1A1C20",
     "variants": [
       {
-        "priceAmd": 169900
+        "priceAmd": 129900
       }
     ],
     "audio": {
@@ -27003,7 +27011,10 @@
     "connectivity": {
       "bluetooth": "5.1"
     },
-    "summaryEn": "A hundred watts, a light show and a microphone input, on wheels-free 12 kg."
+    "summaryEn": "A hundred watts, a light show and a microphone input, on wheels-free 12 kg.",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-partybox-on-the-go",
@@ -32822,13 +32833,13 @@
     ],
     "tier": "mid",
     "released": "2021-03",
-    "priceAmd": 53900,
+    "priceAmd": 39000,
     "priceAmdMax": 53900,
     "popularity": 64,
     "accent": "#101012",
     "variants": [
       {
-        "priceAmd": 53900
+        "priceAmd": 39000
       }
     ],
     "audio": {
@@ -32845,7 +32856,10 @@
     "body": {
       "weight": 165
     },
-    "summaryEn": "Eighty hours on a charge, wireless charging, and it folds into a coat pocket."
+    "summaryEn": "Eighty hours on a charge, wireless charging, and it folds into a coat pocket.",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "marshall-major-v",
@@ -33581,14 +33595,14 @@
     "id": "msi-katana-15-b13vek-1675us",
     "category": "laptop",
     "brand": "MSI",
-    "name": "Katana 15 B13VEK-1675US",
+    "name": "Katana 15 B13VEK",
     "tier": "mid",
-    "priceAmd": 459000,
-    "priceAmdMax": 459000,
+    "priceAmd": 479000,
+    "priceAmdMax": 479000,
     "popularity": 40,
     "accent": "#5C6470",
     "display": {
-      "size": 15,
+      "size": 15.6,
       "type": "IPS",
       "resolution": "1920x1080",
       "refresh": 144,
@@ -33598,7 +33612,7 @@
       "name": "Intel Core i7-13620H"
     },
     "graphics": {
-      "name": "Nvidia Geforce RTX 5050 8GB",
+      "name": "NVIDIA GeForce RTX 4050 6GB",
       "type": "discrete"
     },
     "body": {
@@ -33606,17 +33620,29 @@
     },
     "os": "Windows 11",
     "released": "2023",
-    "summaryEn": "A 15-inch laptop with Intel Core i7-13620H and Nvidia Geforce RTX 5050 8GB.",
+    "summaryEn": "A 15.6-inch gaming laptop with Intel Core i7-13620H, GeForce RTX 4050 6GB and a 144 Hz Full HD display.",
     "variants": [
       {
         "ram": 16,
-        "storage": 512,
-        "priceAmd": 459000
+        "storage": 1024,
+        "priceAmd": 479000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 53.5
+    },
     "unsure": [
       "popularity"
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.2"
+    },
+    "sources": [
+      "https://storage-asset.msi.com/excelSku/us/nb/Katana%2015%20B13VEK-1675US.pdf"
+    ],
+    "aliases": [
+      "MSI Katana 15 B13VEK-1675US"
     ]
   },
   {
@@ -44415,8 +44441,8 @@
     ],
     "tier": "midrange",
     "released": "2023-11",
-    "priceAmd": 125000,
-    "priceAmdMax": 125000,
+    "priceAmd": 109900,
+    "priceAmdMax": 129900,
     "popularity": 44,
     "accent": "#E4E6EA",
     "display": {
@@ -44430,7 +44456,7 @@
       {
         "ram": null,
         "storage": null,
-        "priceAmd": 125000
+        "priceAmd": 109900
       }
     ],
     "battery": {
@@ -60786,15 +60812,15 @@
       "DualSense Wireless Controller"
     ],
     "tier": "budget",
-    "priceAmd": 37000,
-    "priceAmdMax": 54000,
+    "priceAmd": 34900,
+    "priceAmdMax": 58900,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
         "ram": null,
         "storage": null,
-        "priceAmd": 37000
+        "priceAmd": 34900
       }
     ],
     "display": {},
@@ -73993,5 +74019,483 @@
       "bluetooth": "5.3"
     },
     "summaryEn": "Ray-Ban Meta Wayfarer Gen 2 smart glasses with Cosmic Blue frames, Transitions Sapphire lenses and 50 mm lens width. 12 MP camera, 32 GB storage and up to 8 hours of battery life."
+  },
+  {
+    "id": "hp-15-fd0558nia-bl8p8ea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "15-fd0558nia (BL8P8EA)",
+    "aliases": [
+      "HP 15-fd0558nia (BL8P8EA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 330000,
+    "priceAmdMax": 330000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 330000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP 15-fd0558nia (BL8P8EA).",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-15-fd0558nia-bl8p8ea/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    },
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "hp-zbook-firefly-16-g11",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ZBOOK FIREFLY 16 G11",
+    "aliases": [
+      "HP ZBOOK FIREFLY 16 G11"
+    ],
+    "tier": "mid",
+    "priceAmd": 394000,
+    "priceAmdMax": 394000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 394000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP ZBOOK FIREFLY 16 G11.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-zbook-firefly-16-g11/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7-165U"
+    },
+    "display": {
+      "size": 16
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "asus-chromebook-cx3402cv",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "CHROMEBOOK CX3402CV",
+    "aliases": [
+      "ASUS CHROMEBOOK CX3402CV"
+    ],
+    "tier": "mid",
+    "priceAmd": 139000,
+    "priceAmdMax": 139000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 139000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "ASUS CHROMEBOOK CX3402CV.",
+    "sources": [
+      "https://appzone.am/en/Assortment/asus-chromebook-cx3402cv/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i3-1315U"
+    },
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    },
+    "os": "ChromeOS"
+  },
+  {
+    "id": "hp-probook-455-g8-45n89es-16",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 455 G8 (45N89ES/16)",
+    "aliases": [
+      "HP ProBook 455 G8 (45N89ES/16)"
+    ],
+    "tier": "mid",
+    "priceAmd": 285000,
+    "priceAmdMax": 285000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 285000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP ProBook 455 G8 (45N89ES/16).",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-probook-455-g8-45n89es-16/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 5600U"
+    },
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "lenovo-thinkbook-14-g9",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "THINKBOOK 14 G9",
+    "aliases": [
+      "Lenovo THINKBOOK 14 G9"
+    ],
+    "tier": "mid",
+    "priceAmd": 378000,
+    "priceAmdMax": 378000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 378000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Lenovo THINKBOOK 14 G9.",
+    "sources": [
+      "https://appzone.am/en/Assortment/lenovo-thinkbook-14-g9/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core 7-240H"
+    },
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "hp-17-cp2025dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "17-CP2025DX",
+    "aliases": [
+      "HP LAPTOP 17-CP2025DX"
+    ],
+    "tier": "mid",
+    "priceAmd": 239000,
+    "priceAmdMax": 239000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 239000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP 17-CP2025DX.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-laptop-17-cp2025dx/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    },
+    "display": {
+      "size": 17.3,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "dell-inspiron-16-plus-7640-intel-core-ultra-9-185h",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Inspiron 16 Plus 7640",
+    "aliases": [
+      "Dell Inspiron 16 Plus 7640"
+    ],
+    "tier": "mid",
+    "priceAmd": 479000,
+    "priceAmdMax": 479000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 479000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Dell Inspiron 16 Plus 7640.",
+    "sources": [
+      "https://appzone.am/en/Assortment/dell-inspiron-16-plus-7640/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 9-185H"
+    },
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "hp-15-fc0303ci",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "15-FC0303CI",
+    "aliases": [
+      "HP LAPTOP 15-FC0303CI"
+    ],
+    "tier": "mid",
+    "priceAmd": 235000,
+    "priceAmdMax": 235000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 235000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP 15-FC0303CI.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-laptop-15-fc0303ci/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    },
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "graphics": {
+      "name": "INTEGRATED",
+      "type": "integrated"
+    },
+    "os": "Windows 11 PRO"
+  },
+  {
+    "id": "acer-nitro-v15-anv15-52-74sd",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V15 ANV15-52-74SD",
+    "aliases": [
+      "Acer Nitro V15 ANV15-52-74SD"
+    ],
+    "tier": "mid",
+    "priceAmd": 585000,
+    "priceAmdMax": 585000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 585000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Acer Nitro V15 ANV15-52-74SD.",
+    "sources": [
+      "https://appzone.am/en/Assortment/acer-nitro-v15-anv15-52-74sd/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    },
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "refresh": 165,
+      "resolution": "1920x1080"
+    },
+    "graphics": {
+      "name": "GeForce RTX5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "hp-probook-455-g8-45n87es",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 455 G8 (45N87ES)",
+    "aliases": [
+      "HP ProBook 455 G8 (45N87ES)"
+    ],
+    "tier": "mid",
+    "priceAmd": 309000,
+    "priceAmdMax": 309000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 309000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP ProBook 455 G8 (45N87ES).",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-probook-455-g8-45n87es/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 5800U"
+    },
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "hp-17-cn4071cl-b9lq4ua",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "17-cn4071cl (B9LQ4UA)",
+    "aliases": [
+      "HP Laptop 17-cn4071cl (B9LQ4UA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 395000,
+    "priceAmdMax": 395000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 395000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "HP 17-cn4071cl (B9LQ4UA).",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-laptop-17-cn4071cl-b9lq4ua/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core 7-150U"
+    },
+    "display": {
+      "size": 17.3,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "os": "Windows 11"
+  },
+  {
+    "id": "acer-nitro-v16s-ai-anv16s-41-r3q0",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V16S AI ANV16S-41-R3Q0",
+    "aliases": [
+      "Acer Nitro V16S AI ANV16S-41-R3Q0"
+    ],
+    "tier": "mid",
+    "priceAmd": 675000,
+    "priceAmdMax": 675000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 675000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "Acer Nitro V16S AI ANV16S-41-R3Q0.",
+    "sources": [
+      "https://appzone.am/en/Assortment/acer-nitro-v16s-ai-anv16s-41-r3q0/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 260"
+    },
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "refresh": 165,
+      "resolution": "2560x1600"
+    },
+    "graphics": {
+      "name": "GeForce RTX5070 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11"
   }
 ]

@@ -315,8 +315,9 @@ const offersFor = p => {
   const list = P.offers && P.offers[p.id];
   if (!list) return [];
   if (!pricedOffers.has(list)) pricedOffers.set(list,
-    list.filter(o => o.inStock !== false && Number.isFinite(+o.price) && +o.price > 0));
-  return pricedOffers.get(list); // pre-sorted cheapest first
+    list.filter(o => o.inStock !== false && Number.isFinite(+o.price) && +o.price > 0)
+      .sort((a, b) => +a.price - +b.price));
+  return pricedOffers.get(list); // sort once, including offers appended by reviewed imports
 };
 const hasReal = p => offersFor(p).length > 0;
 setBounds();

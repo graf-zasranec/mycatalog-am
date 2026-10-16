@@ -84,7 +84,7 @@ def main():
     if not bb:
         raise SystemExit(f'{pid}: source is fully transparent')
     c = im.crop(bb)
-    side = min(SIDE, int(max(c.size) * 1.06))
+    side = max(700, min(SIDE, int(max(c.size) * 1.06)))  # frame without upscaling product pixels
     if max(c.size) > side * 0.94:
         c.thumbnail((int(side * 0.94), int(side * 0.94)), Image.LANCZOS)
     out = Image.new('RGBA', (side, side), (0, 0, 0, 0))
