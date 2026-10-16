@@ -76969,5 +76969,129 @@
   "unsure": [
    "popularity"
   ]
+ },
+ {
+  "id": "hp-17-amd-ryzen-5-7430u",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "17 Ryzen 5 7430U",
+  "aliases": [
+   "HP LAPTOP 17"
+  ],
+  "tier": "mid",
+  "priceAmd": 225000,
+  "priceAmdMax": 225000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 225000
+   }
+  ],
+  "display": {
+   "size": 17.3,
+   "type": "IPS",
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "chipset": {
+   "name": "AMD Ryzen 5 7430U"
+  },
+  "graphics": {
+   "name": "AMD Radeon Graphics",
+   "type": "integrated"
+  },
+  "os": "Windows 11",
+  "summaryEn": "HP 17 Ryzen 5 7430U with AMD Ryzen 5 7430U.",
+  "sources": [
+   "https://appzone.am/en/Assortment/hp-laptop-17/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-pavilion-15-eg3040ci",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "Pavilion 15-eg3040ci",
+  "aliases": [
+   "HP PAVILION 15-EG3040CI"
+  ],
+  "tier": "mid",
+  "priceAmd": 217000,
+  "priceAmdMax": 217000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 217000
+   }
+  ],
+  "display": {
+   "size": 15.6,
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core i3-1315U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "os": "Windows 11",
+  "summaryEn": "HP Pavilion 15-eg3040ci with Intel Core i3-1315U.",
+  "sources": [
+   "https://appzone.am/en/Assortment/pavilion-15-eg3040ci/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-348-g7",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "348 G7 Core i3-10110U",
+  "aliases": [
+   "HP LAPTOP 348 G7"
+  ],
+  "tier": "mid",
+  "priceAmd": 165000,
+  "priceAmdMax": 165000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 165000
+   }
+  ],
+  "display": {
+   "size": 14,
+   "resolution": "1920x1080"
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core i3-10110U"
+  },
+  "graphics": {
+   "name": "Intel UHD Graphics",
+   "type": "integrated"
+  },
+  "os": "Windows 11",
+  "summaryEn": "HP 348 G7 Core i3-10110U with Intel Core i3-10110U.",
+  "sources": [
+   "https://appzone.am/en/Assortment/laptop-348-g7/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
  }
 ]
