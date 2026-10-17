@@ -573,11 +573,12 @@ function pixelMatrix(html, colors) {
     // wholesalePrice is the CASH price - see pixelCash() - while "price" is the instalment
     // figure. Reading the wrong one inflated every pixel offer by about a tenth.
     // The cash price sits 3-9% under the instalment one. Far below that it is a typo on pixel's
-    // side (iPhone 17 512GB eSIM: 494 000 instalment, 364 000 "cash", the 256GB's level), so the
-    // instalment price stands rather than a phantom deal.
+    // side (iPhone 17 512GB eSIM: 494 000 instalment, 364 000 "cash", the 256GB's level). The
+    // instalment figure is no stand-in - it is not a cash price and outranked the dearer tray
+    // build - so the variant is left out until the shop fixes it.
     const ws = Number(v.wholesalePrice), list = Number(v.price);
-    const price = Math.round(ws > 0 && !(list > 0 && ws < list * 0.85) ? ws
-      : Number(v.salePrice) > 0 ? Number(v.salePrice) : list);
+    if (ws > 0 && list > 0 && ws < list * 0.85) continue;
+    const price = Math.round(ws > 0 ? ws : Number(v.salePrice) > 0 ? Number(v.salePrice) : list);
     if (!(price > 1000)) continue;
     const cap = capOf(p.memory);
     // the same label often carries the memory too - "8/128 GB" is both
@@ -1254,8 +1255,8 @@ if (process.argv[2] === '--selftest') {
   {
     const m = pixelMatrix(PXV, null).sort((a, b) => a.price - b.price);
     // two capacities, the tray build kept apart from the eSIM one at the same capacity, and a
-    // "cash" price 26% under the instalment one read as the typo it is
-    const want = [[299000, 128, undefined], [339000, 256, undefined], [494000, 512, undefined], [559000, 256, false]];
+    // "cash" price 26% under the instalment one dropped as the typo it is
+    const want = [[299000, 128, undefined], [339000, 256, undefined], [559000, 256, false]];
     if (m.length !== want.length) { bad++; console.log(`FAIL pixelMatrix got ${m.length} sku(s), want ${want.length}`); }
     else for (let i = 0; i < want.length; i++) {
       const g = m[i];
