@@ -81,7 +81,11 @@ const scraplingGet = url => (scraplingQueue = scraplingQueue.then(() => new Prom
     scraplingProc.on('exit', () => { scraplingProc = null; for (const w of scraplingWaiters.splice(0)) w('{"status":0,"html":""}'); });
     scraplingProc.unref();
   }
-  scraplingWaiters.push(line => { try { const r = JSON.parse(line); setStatus(r.status); done(r.html || ''); } catch { done(''); } });
+  // The helper stays alive between requests, but its pipes hold Node open only while a request is
+  // pending: left referenced, the finished refresh never exited and ran into the 330-minute limit.
+  const hold = on => { for (const s of [scraplingProc?.stdin, scraplingProc?.stdout]) on ? s?.ref?.() : s?.unref?.(); };
+  scraplingWaiters.push(line => { if (scraplingWaiters.length === 0) hold(false); try { const r = JSON.parse(line); setStatus(r.status); done(r.html || ''); } catch { done(''); } });
+  hold(true);
   scraplingProc.stdin.write(url + '\n');
 })));
 async function get(url, tries = 2, ua = UA) {
