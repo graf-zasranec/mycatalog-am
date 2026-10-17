@@ -2441,3 +2441,13 @@
 - xiaomi-redmi-buds-8-active__main.webp: official maker photo, transparent original; mi.com official render, cut on Adobe website; product 394x542.
 
 - dreame-h15s__main.webp: official maker photo, transparent original; official Dreame transparent render; product 521x949.
+
+- meta-fury-black-polarized-grey__main.webp: official maker photo, transparent original; meta.com official transparent render; product 868x405.
+
+- meta-fury-black-transitions-grey__main.webp: official maker photo, transparent original; meta.com official render, cut on Adobe website; product 1398x593.
+
+- meta-starfire-kylie-edition-black-black__main.webp: official maker photo, transparent original; meta.com official transparent render; product 861x373.
+
+- meta-starfire-kylie-edition-black-transitions-grey__main.webp: official maker photo, transparent original; meta.com official render, cut on Adobe website; product 1380x533.
+
+- meta-ray-ban-display__main.webp: official maker photo, transparent original; Allsell listing photo (glasses + Neural Band), cut on Adobe website; product 518x149.
