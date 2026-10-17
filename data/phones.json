@@ -14963,33 +14963,6 @@
   ]
  },
  {
-  "id": "dyson-airstarit-kanzan",
-  "category": "appliance",
-  "brand": "Dyson",
-  "name": "AirStarit Kanzan",
-  "aliases": [
-   "Dyson AirStarit (HT01) Kanzan Pink"
-  ],
-  "tier": "mid",
-  "priceAmd": 162000,
-  "priceAmdMax": 162000,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 162000
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Dyson AirStarit Kanzan.",
-  "unsure": [
-   "popularity"
-  ]
- },
- {
   "id": "dyson-airwrap-hs09",
   "category": "appliance",
   "brand": "Dyson",
@@ -15266,7 +15239,8 @@
    "Dyson AirStarit (HT01) Prussian Blue",
    "AirStarit",
    "AirStarit Plum",
-   "Dyson AirStarit (HT01) Jasper Plum"
+   "Dyson AirStarit (HT01) Jasper Plum",
+   "Dyson AirStarit (HT01) Kanzan Pink"
   ],
   "tier": "mid",
   "priceAmd": 157000,
@@ -15293,7 +15267,9 @@
    "Red Velvet",
    "Strawberry",
    "Jasper Plum",
-   "Amber Silk"
+   "Amber Silk",
+   "Kanzan Pink",
+   "Apricot Topaz"
   ]
  },
  {
@@ -44411,40 +44387,6 @@
   ]
  },
  {
-  "id": "sony-playstation-dualsense-ps5",
-  "category": "console",
-  "brand": "Sony",
-  "name": "Playstation DualSense PS5",
-  "aliases": [
-   "Sony Playstation DualSense PS5 մոխրագույն"
-  ],
-  "tier": "budget",
-  "priceAmd": 37900,
-  "priceAmdMax": 37900,
-  "popularity": 40,
-  "accent": "#5C6470",
-  "variants": [
-   {
-    "ram": null,
-    "storage": null,
-    "priceAmd": 37900
-   }
-  ],
-  "display": {},
-  "battery": {},
-  "summaryEn": "Sony Playstation DualSense PS5.",
-  "unsure": [
-   "popularity"
-  ],
-  "colors": [
-   "Purple",
-   "Black",
-   "Cosmic Red",
-   "Starlight Blue",
-   "Sterling Silver"
-  ]
- },
- {
   "id": "sony-playstation-portal",
   "category": "console",
   "brand": "Sony",
@@ -44727,13 +44669,12 @@
   "id": "sony-ps5-slim",
   "category": "console",
   "brand": "Sony",
-  "name": "PlayStation 5 Slim",
+  "name": "PlayStation 5 Slim (Disc)",
   "aliases": [
    "Sony PS5 Slim",
    "PS5 Slim",
    "PlayStation 5 Slim",
-   "Playstation5 Slim",
-   "PlayStation5 Slim Digital"
+   "Playstation5 Slim"
   ],
   "tier": "upper-mid",
   "released": "2023-11",
@@ -44771,7 +44712,7 @@
   "colors": [
    "White"
   ],
-  "summaryEn": "The current PlayStation 5, smaller than the launch model, in disc and all-digital versions.",
+  "summaryEn": "The current PlayStation 5 Slim with the Ultra HD Blu-ray disc drive.",
   "unsure": [
    "popularity"
   ]
@@ -60764,7 +60705,8 @@
   "name": "DualSense Wireless Controller",
   "aliases": [
    "PS5 DualSense",
-   "DualSense Wireless Controller"
+   "DualSense Wireless Controller",
+   "Sony Playstation DualSense PS5 մոխրագույն"
   ],
   "tier": "budget",
   "priceAmd": 34900,
@@ -60796,7 +60738,9 @@
    "Cosmic Red",
    "Pink",
    "Black",
-   "White"
+   "White",
+   "Purple",
+   "Sterling Silver"
   ]
  },
  {
@@ -82519,5 +82463,192 @@
    "popularity"
   ],
   "notes": "51 mm is the high-bridge fit (RW4013F) of the Headliner Gen 2."
+ },
+ {
+  "id": "sony-ps5-slim-digital",
+  "category": "console",
+  "brand": "Sony",
+  "name": "PlayStation 5 Slim Digital Edition",
+  "aliases": [
+   "PS5 Slim Digital Edition",
+   "PlayStation 5 Slim Digital",
+   "PlayStation5 Slim Digital",
+   "Sony PS5 Slim Digital Edition"
+  ],
+  "tier": "upper-mid",
+  "released": "2023-11",
+  "priceAmd": 309000,
+  "priceAmdMax": 324900,
+  "popularity": 55,
+  "accent": "#E4E6EA",
+  "display": {},
+  "chipset": {
+   "name": "AMD Zen 2 custom",
+   "cpu": "8-core"
+  },
+  "graphics": {
+   "name": "AMD RDNA 2, 10.3 teraflops",
+   "type": "integrated"
+  },
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 309000
+   }
+  ],
+  "battery": {},
+  "body": {
+   "materials": "Plastic tower with removable side panels"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6",
+   "bluetooth": "5.1",
+   "ports": "HDMI 2.1, 2x USB-C, 2x USB-A, Gigabit Ethernet"
+  },
+  "cardSlot": false,
+  "os": "PlayStation 5 system software",
+  "colors": [
+   "White"
+  ],
+  "summaryEn": "The current PlayStation 5 Slim without a disc drive: games are downloaded only.",
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "apple-airpods-max-lightning-2020",
+  "category": "headphones",
+  "brand": "Apple",
+  "name": "AirPods Max (Lightning, 2020)",
+  "aliases": [
+   "Apple AirPods Max"
+  ],
+  "tier": "mid",
+  "released": "2020-12",
+  "priceAmd": 190000,
+  "priceAmdMax": 190000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "priceAmd": 190000
+   }
+  ],
+  "colors": [
+   "Space Gray",
+   "Sky Blue",
+   "Silver",
+   "Pink",
+   "Green"
+  ],
+  "battery": {
+   "playback": 20
+  },
+  "audio": {
+   "type": "Over-ear, active noise cancellation",
+   "anc": true,
+   "transparency": true,
+   "form": "full",
+   "conn": "wireless"
+  },
+  "body": {
+   "weight": 384.8,
+   "materials": "Aluminium ear cups, stainless steel headband"
+  },
+  "connectivity": {
+   "bluetooth": "5.0",
+   "wireless": "Lightning charging"
+  },
+  "chipset": {
+   "name": "Apple H1"
+  },
+  "summaryEn": "The original Apple AirPods Max from 2020, charged over Lightning: active noise cancellation, Transparency mode, spatial audio, 20 hours of battery.",
+  "sources": [
+   "https://likemobile.am/en/apple-airpods-max-",
+   "https://support.apple.com/en-us/111853"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-l50-ultra",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "L50 Ultra Robot Vacuum",
+  "aliases": [
+   "Dreame L50 Ultra"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 599900,
+  "priceAmdMax": 599900,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 599900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {
+   "capacity": 6400
+  },
+  "appliance": {
+   "type": "robot_vacuum",
+   "suctionPa": 20000,
+   "runtime": 200
+  },
+  "summaryEn": "Dreame L50 Ultra robot vacuum and mop: up to 20,000 Pa suction, 6,400 mAh battery for up to 200 minutes, ProLeap threshold climbing, mop pads that lift 10.5 mm on carpet, and a self-emptying dock with a 3.2 L bag.",
+  "sources": [
+   "https://miarmenia.am/en/product/628/dreame-l50-ultra"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "xiaomi-air-fryer-6-5l",
+  "category": "appliance",
+  "brand": "Xiaomi",
+  "name": "Air Fryer 6.5L",
+  "aliases": [
+   "Xiaomi Air Fryer 6,5 L",
+   "Xiaomi Air Fryer 6.5L"
+  ],
+  "tier": "budget",
+  "priceAmd": 44900,
+  "priceAmdMax": 44900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 44900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "air_fryer",
+   "power": 1700,
+   "capacity": "6.5 L"
+  },
+  "summaryEn": "Xiaomi Air Fryer 6.5L (not the app-connected Smart model): 1700 W, 40-210 C, 7 cooking modes and 101 recipes.",
+  "sources": [
+   "https://miarmenia.am/en/product/519/%D5%B3%D5%A1%D6%80%D5%BA%D5%A1%D5%BB%D5%A5%D5%BC%D5%B8%D6%81-xiaomi-air-fryer-6%2C5-l"
+  ],
+  "unsure": [
+   "popularity"
+  ]
  }
 ]

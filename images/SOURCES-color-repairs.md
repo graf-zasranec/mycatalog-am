@@ -2459,3 +2459,16 @@
 - ray-ban-meta-skyler-gen-2-shiny-black-transitions-graphite-green-size52__main.webp: official maker photo, transparent original; meta.com official render, cut on Adobe website; product 1406x605.
 
 - ray-ban-meta-headliner-gen-2-shiny-black-g15-green-size51__main.webp: same frame/lens as the 50 mm product, its photo reused.
+
+- sony-ps5-slim__main.webp: official maker photo, transparent original; zigzag 'CD version' listing photo (disc drive visible), cut on Adobe website; product 591x599.
+
+- apple-airpods-max-lightning-2020__space-gray.webp: official maker photo, transparent original; apple.com official 2020 render; product 929x691.
+
+- apple-airpods-max-lightning-2020__sky-blue.webp: official maker photo, transparent original; apple.com official 2020 render; product 929x691.
+
+- dreame-l50-ultra__main.webp: official maker photo, transparent original; Mi Armenia listing photo, cut on Adobe website; product 508x722.
+
+- xiaomi-air-fryer-6-5l__main.webp: official maker photo, transparent original; Mi Armenia listing photo, cut on Adobe website; product 490x569.
+
+- sony-ps5-slim-digital__main.webp: the former sony-ps5-slim photo (no disc slot = Digital Edition).
+- dyson-ht01-airstrait-straightener-plum__kanzan-pink.webp: from the merged dyson-airstarit-kanzan product.
