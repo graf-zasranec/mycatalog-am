@@ -2484,3 +2484,215 @@
 - samsung-galaxy-tab-s9-fe-plus__light-green.webp: official maker photo, transparent original; Mobile Centre listing photo, cut on Adobe website; product 494x345.
 
 - apple-iphone-duo__main.webp: official maker photo, transparent original; Pixel listing render (transparent); product 791x516.
+
+- acer-aspire-15-a15-51m-nx-kxter-002__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1216x875.
+
+- asus-va27uqsb__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 2178x1889.
+
+- dell-p2723qe__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 857x772.
+
+- dell-se2422h__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 552x426.
+
+- dreame-d10s-rls3l__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1239x1235.
+
+- dreame-x50-ultra-complete__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 194x240.
+
+- hisense-100u7q-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1800x1046.
+
+- hisense-100u7q__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 914x542.
+
+- hisense-120l9g__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 847x591.
+
+- hisense-24n3g-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1717x1320.
+
+- hisense-27g6k-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1667x1411.
+
+- hisense-27g7k-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1265x1089.
+
+- hisense-27n3g-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1707x1312.
+
+- hisense-32a5q__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 721x452.
+
+- hisense-34g6k-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1760x1158.
+
+- hisense-55a85n__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 895x543.
+
+- hisense-55u6kq__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 923x587.
+
+- hisense-ax3120q__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 666x291.
+
+- hisense-ax5140q__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 745x327.
+
+- hisense-h50-lite__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 383x530.
+
+- hisense-hs2100__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 890x599.
+
+- hisense-hs3100__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1135x894.
+
+- hisense-hs5100__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1136x837.
+
+- hisense-party-rocker-one__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 665x1232.
+
+- hisense-rvcls144ab__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1241x1239.
+
+- honor-choice-speaker-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 463x176.
+
+- hp-15-fd2001ci-bm0q5ea__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 537x417.
+
+- hp-omnibook-3-16-bu0045ci-dr9v4ea__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 640x538.
+
+- hp-omnibook-3-17-dk0004ci-dr9v6ea__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 643x507.
+
+- jbl-bar-1000-mk2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1042x709.
+
+- jbl-bar-1000-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 830x600.
+
+- jbl-bar-500-mk2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 458x373.
+
+- jbl-bar-800-mk2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 779x507.
+
+- jbl-endurance-race-2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 420x310.
+
+- jbl-endurance-run-2-bt__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 458x399.
+
+- jbl-partybox-on-the-go-2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 456x263.
+
+- jbl-quantum-350-wireless-q350wl__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 600x564.
+
+- jbl-soundbar-sb580__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 458x173.
+
+- jbl-tune-110__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 320x494.
+
+- jbl-tune-305c__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 241x440.
+
+- jbl-tune-310c__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 870x1105.
+
+- karcher-af20__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 369x539.
+
+- karcher-af30__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 741x1220.
+
+- karcher-af50-signature-line__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 687x1223.
+
+- karcher-rcf3__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1250x1258.
+
+- karcher-rcv5__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1004x877.
+
+- lenovo-32p-30__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1042x807.
+
+- lenovo-d27-40__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 589x446.
+
+- lenovo-d32-40__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 722x530.
+
+- lenovo-l27q-4a__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 594x537.
+
+- lenovo-tab-p11-tb-j606l__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 901x569.
+
+- lenovo-v15-g5-irl-83gw00grfw__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1076x893.
+
+- lenovo-v16-g8-irl-21sh008lrt__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1064x767.
+
+- lenovo-yoga-slim-7-14iml9-83dj0095ru__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 430x310.
+
+- lg-27us550-w__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 695x700.
+
+- lg-np3530__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 587x237.
+
+- nokia-105-4g__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 213x495.
+
+- nokia-106__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1105x1542.
+
+- nokia-110__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 364x486.
+
+- nokia-210__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 418x500.
+
+- nokia-3310-ds__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 982x1280.
+
+- panasonic-rp-hje118-earphones__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 892x690.
+
+- panasonic-sc-bmax10__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 456x894.
+
+- panasonic-sc-bmax5__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 332x434.
+
+- panasonic-sc-tmax15__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 336x579.
+
+- panasonic-sc-tmax45__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 209x476.
+
+- philips-223v5lhsb2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 772x577.
+
+- roborock-q8-max__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1255x1251.
+
+- roborock-qrevo-curvx__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1268x1301.
+
+- roborock-qrevo-edge-2-pro__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 416x540.
+
+- roborock-s8-maxv-ultra__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 429x519.
+
+- roborock-s8-plus__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 990x986.
+
+- roborock-saros-20-sonic-complete__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 474x538.
+
+- samsung-hw-a450__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 798x272.
+
+- samsung-hw-a45c__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 595x447.
+
+- samsung-hw-b650d__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 576x440.
+
+- samsung-hw-b650f__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1248x402.
+
+- samsung-hw-b750f__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1248x356.
+
+- samsung-hw-q600c__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 898x403.
+
+- samsung-hw-q800h__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1061x202.
+
+- samsung-hw-q930h__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1062x168.
+
+- samsung-hw-q990h__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1062x156.
+
+- samsung-lc24f396fhixci__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 481x579.
+
+- samsung-lf24t350fhixci__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 682x541.
+
+- samsung-ls32ag520pixci__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 634x512.
+
+- samsung-mx-st50b__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 133x300.
+
+- samsung-mx-st90b__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 192x442.
+
+- samsung-qe77s85faexru__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 904x572.
+
+- samsung-qe83s95haexpy__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1188x736.
+
+- samsung-ue50m70hauxpy__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 882x557.
+
+- samsung-ue85u8000huxpy__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 710x434.
+
+- samsung-vr20m7070wd__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1201x1251.
+
+- samsung-vr30t85513w__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 1258x1256.
+
+- sony-ht-b600__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 924x349.
+
+- sony-ht-s350__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 574x301.
+
+- sony-ht-s40r__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 804x496.
+
+- sony-ht-s60__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 351x302.
+
+- sony-k-77xr80__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 905x547.
+
+- sony-mhc-v13__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 367x342.
+
+- sony-srs-xg500__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 773x600.
+
+- sony-ult-field-5__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 294x135.
+
+- sony-wi-c200__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 242x301.
+
+- toshiba-75c350me__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 907x573.
+
+- yandex-station-lite-2__main.webp: official maker photo, transparent original; VLV listing photo (transparent or cut on Adobe website); product 486x414.
+
+- apple-iphone-duo__night-sky.webp: official maker photo, transparent original; apple.com store render, transparent, 2400px; product 1980x1285.
+
+- apple-iphone-duo__star-white.webp: official maker photo, transparent original; apple.com store render, transparent, 2400px; product 1981x1285.

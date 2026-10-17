@@ -83038,22 +83038,22 @@
   },
   "variants": [
    {
-    "ram": null,
+    "ram": 12,
     "storage": 256,
     "priceAmd": 1119000
    },
    {
-    "ram": null,
+    "ram": 12,
     "storage": 512,
     "priceAmd": 1119000
    },
    {
-    "ram": null,
+    "ram": 12,
     "storage": 1024,
     "priceAmd": 1119000
    },
    {
-    "ram": null,
+    "ram": 12,
     "storage": 2048,
     "priceAmd": 1119000
    }
@@ -83076,16 +83076,3401 @@
   },
   "os": "iOS 27",
   "colors": [
-   "Black"
+   "Night Sky",
+   "Star White"
   ],
   "summaryEn": "Apple's first foldable: a 7.6-inch inner and 5.4-inch outer Super Retina XDR display, A20 Pro, 48 MP dual camera, titanium body 5.2 mm thin unfolded, 254 g.",
   "sources": [
    "https://www.pixel.am/am/product/iphone-duo",
-   "https://www.phonearena.com/news/the-new-iphone-duo-is-here_id183191"
+   "https://www.phonearena.com/news/the-new-iphone-duo-is-here_id183191",
+   "https://www.apple.com/shop/buy-iphone/iphone-duo"
   ],
   "unsure": [
-   "popularity",
-   "colors"
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-100u7q-pro",
+  "category": "tv",
+  "brand": "Hisense",
+  "name": "100U7Q PRO",
+  "aliases": [
+   "Hisense 100U7Q PRO"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 1999000,
+  "priceAmdMax": 1999000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1999000
+   }
+  ],
+  "display": {
+   "size": 100
+  },
+  "battery": {},
+  "summaryEn": "Hisense 100U7Q PRO.",
+  "sources": [
+   "https://vlv.am/en/Product/40411"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-100u7q",
+  "category": "tv",
+  "brand": "Hisense",
+  "name": "100U7Q",
+  "aliases": [
+   "Hisense 100U7Q"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 1699000,
+  "priceAmdMax": 1699000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1699000
+   }
+  ],
+  "display": {
+   "size": 100
+  },
+  "battery": {},
+  "summaryEn": "Hisense 100U7Q.",
+  "sources": [
+   "https://vlv.am/en/Product/38792"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-32a5q",
+  "category": "tv",
+  "brand": "Hisense",
+  "name": "32A5Q",
+  "aliases": [
+   "Hisense 32A5Q"
+  ],
+  "tier": "budget",
+  "priceAmd": 105000,
+  "priceAmdMax": 105000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 105000
+   }
+  ],
+  "display": {
+   "size": 32
+  },
+  "battery": {},
+  "summaryEn": "Hisense 32A5Q.",
+  "sources": [
+   "https://vlv.am/en/Product/45198"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-55a85n",
+  "category": "tv",
+  "brand": "Hisense",
+  "name": "55A85N",
+  "aliases": [
+   "Hisense 55A85N"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 889000,
+  "priceAmdMax": 889000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 889000
+   }
+  ],
+  "display": {
+   "size": 55
+  },
+  "battery": {},
+  "summaryEn": "Hisense 55A85N.",
+  "sources": [
+   "https://vlv.am/en/Product/35869"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-55u6kq",
+  "category": "tv",
+  "brand": "Hisense",
+  "name": "55U6KQ",
+  "aliases": [
+   "Hisense 55U6KQ"
+  ],
+  "tier": "mid",
+  "priceAmd": 399000,
+  "priceAmdMax": 399000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 399000
+   }
+  ],
+  "display": {
+   "size": 55
+  },
+  "battery": {},
+  "summaryEn": "Hisense 55U6KQ.",
+  "sources": [
+   "https://vlv.am/en/Product/27898"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-ax3120q",
+  "category": "speaker",
+  "brand": "Hisense",
+  "name": "AX3120Q",
+  "aliases": [
+   "Hisense AX3120Q"
+  ],
+  "tier": "budget",
+  "priceAmd": 118200,
+  "priceAmdMax": 118200,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 118200
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense AX3120Q.",
+  "sources": [
+   "https://vlv.am/en/Product/42045"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-ax5140q",
+  "category": "speaker",
+  "brand": "Hisense",
+  "name": "AX5140Q",
+  "aliases": [
+   "Hisense AX5140Q"
+  ],
+  "tier": "mid",
+  "priceAmd": 158700,
+  "priceAmdMax": 158700,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 158700
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense AX5140Q.",
+  "sources": [
+   "https://vlv.am/en/Product/42044"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-hs2100",
+  "category": "speaker",
+  "brand": "Hisense",
+  "name": "HS2100",
+  "aliases": [
+   "Hisense HS2100"
+  ],
+  "tier": "budget",
+  "priceAmd": 69000,
+  "priceAmdMax": 69000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense HS2100.",
+  "sources": [
+   "https://vlv.am/en/Product/33175"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-hs3100",
+  "category": "speaker",
+  "brand": "Hisense",
+  "name": "HS3100",
+  "aliases": [
+   "Hisense HS3100"
+  ],
+  "tier": "budget",
+  "priceAmd": 79000,
+  "priceAmdMax": 79000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 79000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense HS3100.",
+  "sources": [
+   "https://vlv.am/en/Product/33176"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-hs5100",
+  "category": "speaker",
+  "brand": "Hisense",
+  "name": "HS5100",
+  "aliases": [
+   "Hisense HS5100"
+  ],
+  "tier": "budget",
+  "priceAmd": 99000,
+  "priceAmdMax": 99000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 99000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense HS5100.",
+  "sources": [
+   "https://vlv.am/en/Product/33177"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-rvcls144ab",
+  "category": "appliance",
+  "brand": "Hisense",
+  "name": "RVCLS144AB",
+  "aliases": [
+   "Hisense RVCLS144AB"
+  ],
+  "tier": "mid",
+  "priceAmd": 179900,
+  "priceAmdMax": 179900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 179900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Hisense RVCLS144AB.",
+  "sources": [
+   "https://vlv.am/en/Product/31324"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lg-np3530",
+  "category": "speaker",
+  "brand": "LG",
+  "name": "NP3530",
+  "aliases": [
+   "LG NP3530"
+  ],
+  "tier": "budget",
+  "priceAmd": 69000,
+  "priceAmdMax": 69000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "LG NP3530.",
+  "sources": [
+   "https://vlv.am/en/Product/4607"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "nokia-105-4g",
+  "category": "phone",
+  "brand": "Nokia",
+  "name": "105 4G",
+  "aliases": [
+   "NOKIA 105 4G Black"
+  ],
+  "tier": "budget",
+  "priceAmd": 19900,
+  "priceAmdMax": 19900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 19900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nokia 105 4G.",
+  "sources": [
+   "https://vlv.am/en/Product/48133"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "nokia-106",
+  "category": "phone",
+  "brand": "Nokia",
+  "name": "106",
+  "aliases": [
+   "NOKIA 106 Charcoal/Black"
+  ],
+  "tier": "budget",
+  "priceAmd": 12900,
+  "priceAmdMax": 12900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 12900
+   }
+  ],
+  "colors": [
+   "Charcoal/Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nokia 106.",
+  "sources": [
+   "https://vlv.am/en/Product/29638"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "nokia-110",
+  "category": "phone",
+  "brand": "Nokia",
+  "name": "110",
+  "aliases": [
+   "NOKIA 110 CHARCOAL"
+  ],
+  "tier": "budget",
+  "priceAmd": 12900,
+  "priceAmdMax": 12900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 12900
+   }
+  ],
+  "colors": [
+   "CHARCOAL"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nokia 110.",
+  "sources": [
+   "https://vlv.am/en/Product/42380"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "panasonic-rp-hje118-earphones",
+  "category": "headphones",
+  "brand": "Panasonic",
+  "name": "RP-HJE118 Earphones",
+  "aliases": [
+   "PANASONIC RP-HJE118GUK Black",
+   "PANASONIC RP-HJE118GUS Silver",
+   "PANASONIC RP-HJE118GUV Violet"
+  ],
+  "tier": "budget",
+  "priceAmd": 2900,
+  "priceAmdMax": 2900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 2900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wired",
+   "form": "in-ear"
+  },
+  "summaryEn": "Panasonic RP-HJE118 Earphones.",
+  "sources": [
+   "https://vlv.am/en/Product/32093",
+   "https://vlv.am/en/Product/32094",
+   "https://vlv.am/en/Product/32095"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-qe77s85faexru",
+  "category": "tv",
+  "brand": "Samsung",
+  "name": "QE77S85FAEXRU",
+  "aliases": [
+   "SAMSUNG QE77S85FAEXRU"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 1771000,
+  "priceAmdMax": 1771000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1771000
+   }
+  ],
+  "display": {
+   "size": 77
+  },
+  "battery": {},
+  "summaryEn": "Samsung QE77S85FAEXRU.",
+  "sources": [
+   "https://vlv.am/en/Product/38118"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-qe83s95haexpy",
+  "category": "tv",
+  "brand": "Samsung",
+  "name": "QE83S95HAEXPY",
+  "aliases": [
+   "SAMSUNG QE83S95HAEXPY"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 2599000,
+  "priceAmdMax": 2599000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 2599000
+   }
+  ],
+  "display": {
+   "size": 83
+  },
+  "battery": {},
+  "summaryEn": "Samsung QE83S95HAEXPY.",
+  "sources": [
+   "https://vlv.am/en/Product/46673"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-ue50m70hauxpy",
+  "category": "tv",
+  "brand": "Samsung",
+  "name": "UE50M70HAUXPY",
+  "aliases": [
+   "SAMSUNG UE50M70HAUXPY"
+  ],
+  "tier": "mid",
+  "priceAmd": 269000,
+  "priceAmdMax": 269000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 269000
+   }
+  ],
+  "display": {
+   "size": 50
+  },
+  "battery": {},
+  "summaryEn": "Samsung UE50M70HAUXPY.",
+  "sources": [
+   "https://vlv.am/en/Product/46661"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-ue85u8000huxpy",
+  "category": "tv",
+  "brand": "Samsung",
+  "name": "UE85U8000HUXPY",
+  "aliases": [
+   "SAMSUNG UE85U8000HUXPY"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 699000,
+  "priceAmdMax": 699000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 699000
+   }
+  ],
+  "display": {
+   "size": 85
+  },
+  "battery": {},
+  "summaryEn": "Samsung UE85U8000HUXPY.",
+  "sources": [
+   "https://vlv.am/en/Product/48203"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ht-b600",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "HT-B600",
+  "aliases": [
+   "SONY HT-B600"
+  ],
+  "tier": "mid",
+  "priceAmd": 244900,
+  "priceAmdMax": 244900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 244900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony HT-B600.",
+  "sources": [
+   "https://vlv.am/en/Product/44211"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ht-s40r",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "HT-S40R",
+  "aliases": [
+   "SONY HT-S40R"
+  ],
+  "tier": "mid",
+  "priceAmd": 166900,
+  "priceAmdMax": 166900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 166900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony HT-S40R.",
+  "sources": [
+   "https://vlv.am/en/Product/18354"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ht-s60",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "HT-S60",
+  "aliases": [
+   "SONY HT-S60"
+  ],
+  "tier": "mid",
+  "priceAmd": 284900,
+  "priceAmdMax": 284900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 284900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony HT-S60.",
+  "sources": [
+   "https://vlv.am/en/Product/41525"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-k-77xr80",
+  "category": "tv",
+  "brand": "Sony",
+  "name": "K-77XR80",
+  "aliases": [
+   "SONY K-77XR80"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 1898900,
+  "priceAmdMax": 1898900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 1898900
+   }
+  ],
+  "display": {
+   "size": 77
+  },
+  "battery": {},
+  "summaryEn": "Sony K-77XR80.",
+  "sources": [
+   "https://vlv.am/en/Product/34659"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-mhc-v13",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "MHC-V13",
+  "aliases": [
+   "SONY MHC-V13"
+  ],
+  "tier": "mid",
+  "priceAmd": 156900,
+  "priceAmdMax": 156900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 156900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony MHC-V13.",
+  "sources": [
+   "https://vlv.am/en/Product/15683"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "toshiba-75c350me",
+  "category": "tv",
+  "brand": "Toshiba",
+  "name": "75C350ME",
+  "aliases": [
+   "TOSHIBA 75C350ME"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 485800,
+  "priceAmdMax": 485800,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 485800
+   }
+  ],
+  "display": {
+   "size": 75
+  },
+  "battery": {},
+  "summaryEn": "Toshiba 75C350ME.",
+  "sources": [
+   "https://vlv.am/en/Product/31735"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "acer-aspire-15-a15-51m-nx-kxter-002",
+  "category": "laptop",
+  "brand": "Acer",
+  "name": "Aspire 15 A15-51M (NX.KXTER.002)",
+  "aliases": [
+   "ACER A 15-51M 15.6 FHD/Intel Core 5 120U/8/512Gb (NX.KXTER.002)"
+  ],
+  "tier": "mid",
+  "priceAmd": 329900,
+  "priceAmdMax": 329900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 329900
+   }
+  ],
+  "display": {
+   "size": 15.6
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core 5 120U"
+  },
+  "summaryEn": "Acer Aspire 15 A15-51M (NX.KXTER.002).",
+  "sources": [
+   "https://vlv.am/en/Product/34992"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "asus-va27uqsb",
+  "category": "monitor",
+  "brand": "Asus",
+  "name": "VA27UQSB",
+  "aliases": [
+   "ASUS 27\" VA27UQSB"
+  ],
+  "tier": "mid",
+  "priceAmd": 159900,
+  "priceAmdMax": 159900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 159900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Asus VA27UQSB.",
+  "sources": [
+   "https://vlv.am/en/Product/38488"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-se2422h",
+  "category": "monitor",
+  "brand": "Dell",
+  "name": "SE2422H",
+  "aliases": [
+   "DELL 23.8\" (SE2422H)"
+  ],
+  "tier": "budget",
+  "priceAmd": 74900,
+  "priceAmdMax": 74900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 74900
+   }
+  ],
+  "display": {
+   "size": 23.8
+  },
+  "battery": {},
+  "summaryEn": "Dell SE2422H.",
+  "sources": [
+   "https://vlv.am/en/Product/18330"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dell-p2723qe",
+  "category": "monitor",
+  "brand": "Dell",
+  "name": "P2723QE",
+  "aliases": [
+   "DELL 27\" (P2723QE)"
+  ],
+  "tier": "mid",
+  "priceAmd": 219900,
+  "priceAmdMax": 219900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 219900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Dell P2723QE.",
+  "sources": [
+   "https://vlv.am/en/Product/46984"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-d10s-rls3l",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "D10s (RLS3L)",
+  "aliases": [
+   "DREAME D10S (RLS3L)"
+  ],
+  "tier": "mid",
+  "priceAmd": 179900,
+  "priceAmdMax": 179900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 179900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Dreame D10s (RLS3L).",
+  "sources": [
+   "https://vlv.am/en/Product/26415"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "dreame-x50-ultra-complete",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "X50 Ultra Complete (RLX85CE-4)",
+  "aliases": [
+   "DREAME X50 Ultra Complete White (RLX85CE-4)(065452)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 699900,
+  "priceAmdMax": 699900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 699900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Dreame X50 Ultra Complete (RLX85CE-4).",
+  "sources": [
+   "https://vlv.am/en/Product/38408"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-24n3g-pro",
+  "category": "monitor",
+  "brand": "Hisense",
+  "name": "24N3G-PRO",
+  "aliases": [
+   "Hisense 24N3G-PRO"
+  ],
+  "tier": "budget",
+  "priceAmd": 58900,
+  "priceAmdMax": 58900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 58900
+   }
+  ],
+  "display": {
+   "size": 23.8
+  },
+  "battery": {},
+  "summaryEn": "Hisense 24N3G-PRO.",
+  "sources": [
+   "https://vlv.am/en/Product/39704"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-27g6k-pro",
+  "category": "monitor",
+  "brand": "Hisense",
+  "name": "27G6K-PRO",
+  "aliases": [
+   "Hisense 27G6K-PRO"
+  ],
+  "tier": "budget",
+  "priceAmd": 125900,
+  "priceAmdMax": 125900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 125900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Hisense 27G6K-PRO.",
+  "sources": [
+   "https://vlv.am/en/Product/39703"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-27g7k-pro",
+  "category": "monitor",
+  "brand": "Hisense",
+  "name": "27G7K-PRO",
+  "aliases": [
+   "Hisense 27G7K-PRO"
+  ],
+  "tier": "mid",
+  "priceAmd": 259900,
+  "priceAmdMax": 259900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 259900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Hisense 27G7K-PRO.",
+  "sources": [
+   "https://vlv.am/en/Product/39702"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-27n3g-pro",
+  "category": "monitor",
+  "brand": "Hisense",
+  "name": "27N3G-PRO",
+  "aliases": [
+   "Hisense 27N3G-PRO"
+  ],
+  "tier": "budget",
+  "priceAmd": 69900,
+  "priceAmdMax": 69900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Hisense 27N3G-PRO.",
+  "sources": [
+   "https://vlv.am/en/Product/39705"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-34g6k-pro",
+  "category": "monitor",
+  "brand": "Hisense",
+  "name": "34G6K-PRO",
+  "aliases": [
+   "Hisense 34G6K-PRO"
+  ],
+  "tier": "budget",
+  "priceAmd": 145900,
+  "priceAmdMax": 145900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 145900
+   }
+  ],
+  "display": {
+   "size": 34
+  },
+  "battery": {},
+  "summaryEn": "Hisense 34G6K-PRO.",
+  "sources": [
+   "https://vlv.am/en/Product/39706"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-120l9g",
+  "category": "tv",
+  "brand": "Hisense",
+  "name": "120L9G Laser Cinema",
+  "aliases": [
+   "Hisense CINEMA120-A/120L9G"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 2499000,
+  "priceAmdMax": 2499000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 2499000
+   }
+  ],
+  "display": {
+   "size": 120
+  },
+  "battery": {},
+  "summaryEn": "Hisense 120L9G Laser Cinema.",
+  "sources": [
+   "https://vlv.am/en/Product/20493"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-h50-lite",
+  "category": "phone",
+  "brand": "Hisense",
+  "name": "H50 Lite",
+  "aliases": [
+   "Hisense H50 Lite 4/64GB Black"
+  ],
+  "tier": "budget",
+  "priceAmd": 64900,
+  "priceAmdMax": 64900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 64900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense H50 Lite.",
+  "sources": [
+   "https://vlv.am/en/Product/17954"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hisense-party-rocker-one",
+  "category": "speaker",
+  "brand": "Hisense",
+  "name": "Party Rocker One",
+  "aliases": [
+   "Hisense PARTY ROCKER ONE"
+  ],
+  "tier": "budget",
+  "priceAmd": 145000,
+  "priceAmdMax": 145000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 145000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Hisense Party Rocker One.",
+  "sources": [
+   "https://vlv.am/en/Product/33333"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "honor-choice-speaker-pro",
+  "category": "speaker",
+  "brand": "Honor",
+  "name": "Choice Speaker Pro",
+  "aliases": [
+   "HONOR HONOR Choice Speaker Pro (Black)"
+  ],
+  "tier": "budget",
+  "priceAmd": 27900,
+  "priceAmdMax": 27900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 27900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Honor Choice Speaker Pro.",
+  "sources": [
+   "https://vlv.am/en/Product/35506"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-15-fd2001ci-bm0q5ea",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "AI 15-fd2001ci (BM0Q5EA)",
+  "aliases": [
+   "HP AI 15-fd2001ci Ultra 5 225U 16GB SSD512 15.6\" (BM0Q5EA)"
+  ],
+  "tier": "mid",
+  "priceAmd": 369900,
+  "priceAmdMax": 369900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 369900
+   }
+  ],
+  "display": {
+   "size": 15.6
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core Ultra 5 225U"
+  },
+  "summaryEn": "HP AI 15-fd2001ci (BM0Q5EA).",
+  "sources": [
+   "https://vlv.am/en/Product/45620"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-16-bu0045ci-dr9v4ea",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 16-bu0045ci (DR9V4EA)",
+  "aliases": [
+   "HP OmniBook 3 16-bu0045ci Core 5 120U 16GB SSD512 16\" (DR9V4EA)"
+  ],
+  "tier": "mid",
+  "priceAmd": 429900,
+  "priceAmdMax": 429900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 429900
+   }
+  ],
+  "display": {
+   "size": 16
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core 5 120U"
+  },
+  "summaryEn": "HP OmniBook 3 16-bu0045ci (DR9V4EA).",
+  "sources": [
+   "https://vlv.am/en/Product/48352"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "hp-omnibook-3-17-dk0004ci-dr9v6ea",
+  "category": "laptop",
+  "brand": "HP",
+  "name": "OmniBook 3 17-dk0004ci (DR9V6EA)",
+  "aliases": [
+   "HP OmniBook 3 17-dk0004ci Core 5 120U 16GB SSD512 17.3\" DR9V6EA"
+  ],
+  "tier": "mid",
+  "priceAmd": 449900,
+  "priceAmdMax": 449900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 449900
+   }
+  ],
+  "display": {
+   "size": 17.3
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core 5 120U"
+  },
+  "summaryEn": "HP OmniBook 3 17-dk0004ci (DR9V6EA).",
+  "sources": [
+   "https://vlv.am/en/Product/48809"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-bar-1000-mk2",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Bar 1000 MK2",
+  "aliases": [
+   "JBL BAR1000M2 BLK"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 559000,
+  "priceAmdMax": 559000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 559000
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL Bar 1000 MK2.",
+  "sources": [
+   "https://vlv.am/en/Product/41676"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-bar-1000-pro",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Bar 1000 Pro",
+  "aliases": [
+   "JBL BAR1000PRO BLK"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 559900,
+  "priceAmdMax": 559900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 559900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL Bar 1000 Pro.",
+  "sources": [
+   "https://vlv.am/en/Product/25034"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-bar-500-mk2",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Bar 500 MK2",
+  "aliases": [
+   "JBL BAR500M2 BLK"
+  ],
+  "tier": "mid",
+  "priceAmd": 332000,
+  "priceAmdMax": 332000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 332000
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL Bar 500 MK2.",
+  "sources": [
+   "https://vlv.am/en/Product/39917"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-bar-800-mk2",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "Bar 800 MK2",
+  "aliases": [
+   "JBL BAR800M2 BLK"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 459000
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL Bar 800 MK2.",
+  "sources": [
+   "https://vlv.am/en/Product/39918"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-endurance-race-2",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Endurance Race 2",
+  "aliases": [
+   "JBL ENDURACE 2 BLK"
+  ],
+  "tier": "budget",
+  "priceAmd": 39900,
+  "priceAmdMax": 39900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 39900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wireless",
+   "form": "in-ear"
+  },
+  "summaryEn": "JBL Endurance Race 2.",
+  "sources": [
+   "https://vlv.am/en/Product/37958"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-endurance-run-2-bt",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Endurance Run 2 BT",
+  "aliases": [
+   "JBL ENDURRUN2BT BLK"
+  ],
+  "tier": "budget",
+  "priceAmd": 21900,
+  "priceAmdMax": 21900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 21900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wireless",
+   "form": "in-ear"
+  },
+  "summaryEn": "JBL Endurance Run 2 BT.",
+  "sources": [
+   "https://vlv.am/en/Product/28481"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-partybox-on-the-go-2",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "PartyBox On-The-Go 2",
+  "aliases": [
+   "JBL PARTYBOX OTG 2 (AM)"
+  ],
+  "tier": "mid",
+  "priceAmd": 179000,
+  "priceAmdMax": 179000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 179000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL PartyBox On-The-Go 2.",
+  "sources": [
+   "https://vlv.am/en/Product/48772"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-quantum-350-wireless-q350wl",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Quantum 350 Wireless",
+  "aliases": [
+   "JBL Q350WL BLK"
+  ],
+  "tier": "budget",
+  "priceAmd": 44000,
+  "priceAmdMax": 44000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 44000
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wired",
+   "form": "over-ear"
+  },
+  "summaryEn": "JBL Quantum 350 Wireless.",
+  "sources": [
+   "https://vlv.am/en/Product/18606"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-soundbar-sb580",
+  "category": "speaker",
+  "brand": "JBL",
+  "name": "SoundBar SB580",
+  "aliases": [
+   "JBL SB580 BLK"
+  ],
+  "tier": "mid",
+  "priceAmd": 184900,
+  "priceAmdMax": 184900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 184900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "JBL SoundBar SB580.",
+  "sources": [
+   "https://vlv.am/en/Product/37951"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-tune-110",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Tune 110",
+  "aliases": [
+   "JBL T110 BLK",
+   "JBL T110 WHT"
+  ],
+  "tier": "budget",
+  "priceAmd": 4900,
+  "priceAmdMax": 4900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 4900
+   }
+  ],
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wired",
+   "form": "in-ear"
+  },
+  "summaryEn": "JBL Tune 110.",
+  "sources": [
+   "https://vlv.am/en/Product/15746",
+   "https://vlv.am/en/Product/15747"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-tune-305c",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Tune 305C",
+  "aliases": [
+   "JBL T305C WHT"
+  ],
+  "tier": "budget",
+  "priceAmd": 8900,
+  "priceAmdMax": 8900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 8900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wired",
+   "form": "in-ear"
+  },
+  "summaryEn": "JBL Tune 305C.",
+  "sources": [
+   "https://vlv.am/en/Product/37956"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "jbl-tune-310c",
+  "category": "headphones",
+  "brand": "JBL",
+  "name": "Tune 310C",
+  "aliases": [
+   "JBL T310C BLU"
+  ],
+  "tier": "budget",
+  "priceAmd": 8900,
+  "priceAmdMax": 8900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 8900
+   }
+  ],
+  "colors": [
+   "Blue"
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wired",
+   "form": "in-ear"
+  },
+  "summaryEn": "JBL Tune 310C.",
+  "sources": [
+   "https://vlv.am/en/Product/44158"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "karcher-af20",
+  "category": "appliance",
+  "brand": "Karcher",
+  "name": "AF 20 Air Purifier",
+  "aliases": [
+   "KARCHER AF20 1.024-820.0"
+  ],
+  "tier": "budget",
+  "priceAmd": 85000,
+  "priceAmdMax": 85000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 85000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Karcher AF 20 Air Purifier.",
+  "sources": [
+   "https://vlv.am/en/Product/32069"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "karcher-af30",
+  "category": "appliance",
+  "brand": "Karcher",
+  "name": "AF 30 Air Purifier",
+  "aliases": [
+   "KARCHER AF30 1.024-821.0"
+  ],
+  "tier": "budget",
+  "priceAmd": 149000,
+  "priceAmdMax": 149000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 149000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Karcher AF 30 Air Purifier.",
+  "sources": [
+   "https://vlv.am/en/Product/31380"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "karcher-af50-signature-line",
+  "category": "appliance",
+  "brand": "Karcher",
+  "name": "AF 50 Signature Line Air Purifier",
+  "aliases": [
+   "KARCHER AF50 Signature Line 1.024-826.0"
+  ],
+  "tier": "mid",
+  "priceAmd": 240000,
+  "priceAmdMax": 240000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 240000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Karcher AF 50 Signature Line Air Purifier.",
+  "sources": [
+   "https://vlv.am/en/Product/37637"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "karcher-rcf3",
+  "category": "appliance",
+  "brand": "Karcher",
+  "name": "RCF 3 Robot Vacuum",
+  "aliases": [
+   "KARCHER RCF3 1.269-660.0"
+  ],
+  "tier": "mid",
+  "priceAmd": 289000,
+  "priceAmdMax": 289000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 289000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Karcher RCF 3 Robot Vacuum.",
+  "sources": [
+   "https://vlv.am/en/Product/33928"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "karcher-rcv5",
+  "category": "appliance",
+  "brand": "Karcher",
+  "name": "RCV 5 Robot Vacuum",
+  "aliases": [
+   "KARCHER RCV5 SET1 9.790-117.0"
+  ],
+  "tier": "budget",
+  "priceAmd": 119200,
+  "priceAmdMax": 119200,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 119200
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Karcher RCV 5 Robot Vacuum.",
+  "sources": [
+   "https://vlv.am/en/Product/48136"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-v16-g8-irl-21sh008lrt",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "16 G8 IRL (21SH008LRT)",
+  "aliases": [
+   "LENOVO 16 G8 IRL Core 3 100U 8GB SSD512 16\" (21SH008LRT)"
+  ],
+  "tier": "mid",
+  "priceAmd": 309900,
+  "priceAmdMax": 309900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 309900
+   }
+  ],
+  "display": {
+   "size": 16
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core 3 100U"
+  },
+  "summaryEn": "Lenovo 16 G8 IRL (21SH008LRT).",
+  "sources": [
+   "https://vlv.am/en/Product/43785"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-d27-40",
+  "category": "monitor",
+  "brand": "Lenovo",
+  "name": "D27-40",
+  "aliases": [
+   "LENOVO 27\" D27-40 (67A3KAC6EU)"
+  ],
+  "tier": "budget",
+  "priceAmd": 79900,
+  "priceAmdMax": 79900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 79900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Lenovo D27-40.",
+  "sources": [
+   "https://vlv.am/en/Product/38042"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-l27q-4a",
+  "category": "monitor",
+  "brand": "Lenovo",
+  "name": "L27q-4A",
+  "aliases": [
+   "LENOVO 27\" L27q-4A (67BFGAC6EU)"
+  ],
+  "tier": "budget",
+  "priceAmd": 125900,
+  "priceAmdMax": 125900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 125900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "Lenovo L27q-4A.",
+  "sources": [
+   "https://vlv.am/en/Product/36233"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-32p-30",
+  "category": "monitor",
+  "brand": "Lenovo",
+  "name": "32p-30",
+  "aliases": [
+   "LENOVO 31.5\" 32p-30 (66C9UAC1EU)"
+  ],
+  "tier": "mid",
+  "priceAmd": 209900,
+  "priceAmdMax": 209900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 209900
+   }
+  ],
+  "display": {
+   "size": 31.5
+  },
+  "battery": {},
+  "summaryEn": "Lenovo 32p-30.",
+  "sources": [
+   "https://vlv.am/en/Product/40773"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-d32-40",
+  "category": "monitor",
+  "brand": "Lenovo",
+  "name": "D32-40",
+  "aliases": [
+   "LENOVO 31.5\" D32-40 (66FCGAC2EU)"
+  ],
+  "tier": "budget",
+  "priceAmd": 104900,
+  "priceAmdMax": 104900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 104900
+   }
+  ],
+  "display": {
+   "size": 31.5
+  },
+  "battery": {},
+  "summaryEn": "Lenovo D32-40.",
+  "sources": [
+   "https://vlv.am/en/Product/40452"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-tab-p11-tb-j606l",
+  "category": "tablet",
+  "brand": "Lenovo",
+  "name": "Tab P11 (TB-J606L)",
+  "aliases": [
+   "LENOVO Tab P11 TB-J606L 4/64GB (ZA7S0116RU) Platinum Grey"
+  ],
+  "tier": "budget",
+  "priceAmd": 139900,
+  "priceAmdMax": 139900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 4,
+    "storage": 64,
+    "priceAmd": 139900
+   }
+  ],
+  "colors": [
+   "Platinum Grey"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Lenovo Tab P11 (TB-J606L).",
+  "sources": [
+   "https://vlv.am/en/Product/20827"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-v15-g5-irl-83gw00grfw",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "V15 G5 IRL (83GW00GRFW)",
+  "aliases": [
+   "LENOVO V15 G5 IRL Core 5 120U 16GB SSD512 15.6\" (83GW00GRFW)"
+  ],
+  "tier": "mid",
+  "priceAmd": 349900,
+  "priceAmdMax": 349900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 512,
+    "priceAmd": 349900
+   }
+  ],
+  "display": {
+   "size": 15.6
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core 5 120U"
+  },
+  "summaryEn": "Lenovo V15 G5 IRL (83GW00GRFW).",
+  "sources": [
+   "https://vlv.am/en/Product/43789"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lenovo-yoga-slim-7-14iml9-83dj0095ru",
+  "category": "laptop",
+  "brand": "Lenovo",
+  "name": "Yoga Slim 7 14IML9 (83DJ0095RU)",
+  "aliases": [
+   "LENOVO Yoga Slim 7 14IML9 Ultra 5 16GB SSD 1TB W11 (83DJ0095RU)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 589900,
+  "priceAmdMax": 589900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": 16,
+    "storage": 1024,
+    "priceAmd": 589900
+   }
+  ],
+  "display": {
+   "size": 14
+  },
+  "battery": {},
+  "chipset": {
+   "name": "Intel Core Ultra 5"
+  },
+  "summaryEn": "Lenovo Yoga Slim 7 14IML9 (83DJ0095RU).",
+  "sources": [
+   "https://vlv.am/en/Product/40774"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "lg-27us550-w",
+  "category": "monitor",
+  "brand": "LG",
+  "name": "27US550-W",
+  "aliases": [
+   "LG 27\" 27US550-W"
+  ],
+  "tier": "mid",
+  "priceAmd": 169900,
+  "priceAmdMax": 169900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 169900
+   }
+  ],
+  "display": {
+   "size": 27
+  },
+  "battery": {},
+  "summaryEn": "LG 27US550-W.",
+  "sources": [
+   "https://vlv.am/en/Product/46985"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "nokia-210",
+  "category": "phone",
+  "brand": "Nokia",
+  "name": "210 (TA-1139)",
+  "aliases": [
+   "NOKIA 210 (TA-1139) Grey"
+  ],
+  "tier": "budget",
+  "priceAmd": 19900,
+  "priceAmdMax": 19900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 19900
+   }
+  ],
+  "colors": [
+   "Grey"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nokia 210 (TA-1139).",
+  "sources": [
+   "https://vlv.am/en/Product/26006"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "nokia-3310-ds",
+  "category": "phone",
+  "brand": "Nokia",
+  "name": "3310 Dual SIM",
+  "aliases": [
+   "NOKIA 3310 D/S Gray"
+  ],
+  "tier": "budget",
+  "priceAmd": 29900,
+  "priceAmdMax": 29900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 29900
+   }
+  ],
+  "colors": [
+   "Gray"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Nokia 3310 Dual SIM.",
+  "sources": [
+   "https://vlv.am/en/Product/31014"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "panasonic-sc-bmax5",
+  "category": "speaker",
+  "brand": "Panasonic",
+  "name": "SC-BMAX5",
+  "aliases": [
+   "PANASONIC SC-BMAX5WW-K"
+  ],
+  "tier": "budget",
+  "priceAmd": 134900,
+  "priceAmdMax": 134900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 134900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Panasonic SC-BMAX5.",
+  "sources": [
+   "https://vlv.am/en/Product/38726"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "panasonic-sc-bmax10",
+  "category": "speaker",
+  "brand": "Panasonic",
+  "name": "SC-BMAX10",
+  "aliases": [
+   "PANASONIC SC-BMAX10WWK"
+  ],
+  "tier": "mid",
+  "priceAmd": 179900,
+  "priceAmdMax": 179900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 179900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Panasonic SC-BMAX10.",
+  "sources": [
+   "https://vlv.am/en/Product/38725"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "panasonic-sc-tmax15",
+  "category": "speaker",
+  "brand": "Panasonic",
+  "name": "SC-TMAX15",
+  "aliases": [
+   "PANASONIC SC-TMAX15GSK"
+  ],
+  "tier": "mid",
+  "priceAmd": 154900,
+  "priceAmdMax": 154900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 154900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Panasonic SC-TMAX15.",
+  "sources": [
+   "https://vlv.am/en/Product/38724"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "panasonic-sc-tmax45",
+  "category": "speaker",
+  "brand": "Panasonic",
+  "name": "SC-TMAX45",
+  "aliases": [
+   "PANASONIC SC-TMAX45GSK"
+  ],
+  "tier": "mid",
+  "priceAmd": 239900,
+  "priceAmdMax": 239900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 239900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Panasonic SC-TMAX45.",
+  "sources": [
+   "https://vlv.am/en/Product/38723"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "philips-223v5lhsb2",
+  "category": "monitor",
+  "brand": "Philips",
+  "name": "223V5LHSB2",
+  "aliases": [
+   "PHILIPS 223V5LHSB2/89"
+  ],
+  "tier": "budget",
+  "priceAmd": 65900,
+  "priceAmdMax": 65900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 65900
+   }
+  ],
+  "display": {
+   "size": 21.5
+  },
+  "battery": {},
+  "summaryEn": "Philips 223V5LHSB2.",
+  "sources": [
+   "https://vlv.am/en/Product/18844"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-s8-plus",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "S8+",
+  "aliases": [
+   "Roborock S8+ White (S8P02-02/S80ULT+AED06HRR)"
+  ],
+  "tier": "mid",
+  "priceAmd": 325000,
+  "priceAmdMax": 325000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 325000
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock S8+.",
+  "sources": [
+   "https://vlv.am/en/Product/30560"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-b650d",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-B650D",
+  "aliases": [
+   "SAMSUNG HW-B650D/RU"
+  ],
+  "tier": "budget",
+  "priceAmd": 139900,
+  "priceAmdMax": 139900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 139900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-B650D.",
+  "sources": [
+   "https://vlv.am/en/Product/37344"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-b650f",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-B650F",
+  "aliases": [
+   "SAMSUNG HW-B650F/RU"
+  ],
+  "tier": "budget",
+  "priceAmd": 129000,
+  "priceAmdMax": 129000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 129000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-B650F.",
+  "sources": [
+   "https://vlv.am/en/Product/47862"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-b750f",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-B750F",
+  "aliases": [
+   "SAMSUNG HW-B750F/RU"
+  ],
+  "tier": "mid",
+  "priceAmd": 159000,
+  "priceAmdMax": 159000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 159000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-B750F.",
+  "sources": [
+   "https://vlv.am/en/Product/47863"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-q600c",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-Q600C",
+  "aliases": [
+   "SAMSUNG HW-Q600C/RU"
+  ],
+  "tier": "mid",
+  "priceAmd": 209900,
+  "priceAmdMax": 209900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 209900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-Q600C.",
+  "sources": [
+   "https://vlv.am/en/Product/37345"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-q800h",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-Q800H",
+  "aliases": [
+   "SAMSUNG HW-Q800H/RU"
+  ],
+  "tier": "mid",
+  "priceAmd": 299000,
+  "priceAmdMax": 299000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 299000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-Q800H.",
+  "sources": [
+   "https://vlv.am/en/Product/47864"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-q930h",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-Q930H",
+  "aliases": [
+   "SAMSUNG HW-Q930H/RU"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 459000,
+  "priceAmdMax": 459000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 459000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-Q930H.",
+  "sources": [
+   "https://vlv.am/en/Product/47866"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-q990h",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-Q990H",
+  "aliases": [
+   "SAMSUNG HW-Q990H/RU"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 649000,
+  "priceAmdMax": 649000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 649000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-Q990H.",
+  "sources": [
+   "https://vlv.am/en/Product/47865"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-a450",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-A450",
+  "aliases": [
+   "SAMSUNG HWA450/RU"
+  ],
+  "tier": "budget",
+  "priceAmd": 127000,
+  "priceAmdMax": 127000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 127000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-A450.",
+  "sources": [
+   "https://vlv.am/en/Product/17931"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-hw-a45c",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "HW-A45C",
+  "aliases": [
+   "SAMSUNG HWA45C/RU"
+  ],
+  "tier": "mid",
+  "priceAmd": 157000,
+  "priceAmdMax": 157000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 157000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung HW-A45C.",
+  "sources": [
+   "https://vlv.am/en/Product/19353"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-lc24f396fhixci",
+  "category": "monitor",
+  "brand": "Samsung",
+  "name": "C24F396FHI",
+  "aliases": [
+   "SAMSUNG LC24F396FHIXCI"
+  ],
+  "tier": "budget",
+  "priceAmd": 79900,
+  "priceAmdMax": 79900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 79900
+   }
+  ],
+  "display": {
+   "size": 24
+  },
+  "battery": {},
+  "summaryEn": "Samsung C24F396FHI.",
+  "sources": [
+   "https://vlv.am/en/Product/20482"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-lf24t350fhixci",
+  "category": "monitor",
+  "brand": "Samsung",
+  "name": "F24T350FHI",
+  "aliases": [
+   "SAMSUNG LF24T350FHIXCI"
+  ],
+  "tier": "budget",
+  "priceAmd": 69900,
+  "priceAmdMax": 69900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 69900
+   }
+  ],
+  "display": {
+   "size": 24
+  },
+  "battery": {},
+  "summaryEn": "Samsung F24T350FHI.",
+  "sources": [
+   "https://vlv.am/en/Product/16537"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-ls32ag520pixci",
+  "category": "monitor",
+  "brand": "Samsung",
+  "name": "Odyssey G5 S32AG520PI",
+  "aliases": [
+   "SAMSUNG LS32AG520PIXCI"
+  ],
+  "tier": "mid",
+  "priceAmd": 239900,
+  "priceAmdMax": 239900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 239900
+   }
+  ],
+  "display": {
+   "size": 32
+  },
+  "battery": {},
+  "summaryEn": "Samsung Odyssey G5 S32AG520PI.",
+  "sources": [
+   "https://vlv.am/en/Product/20485"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-mx-st50b",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "Sound Tower MX-ST50B",
+  "aliases": [
+   "SAMSUNG MX-ST50B/RU"
+  ],
+  "tier": "mid",
+  "priceAmd": 239900,
+  "priceAmdMax": 239900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 239900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung Sound Tower MX-ST50B.",
+  "sources": [
+   "https://vlv.am/en/Product/37347"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-mx-st90b",
+  "category": "speaker",
+  "brand": "Samsung",
+  "name": "Sound Tower MX-ST90B",
+  "aliases": [
+   "SAMSUNG MX-ST90B/RU"
+  ],
+  "tier": "mid",
+  "priceAmd": 399900,
+  "priceAmdMax": 399900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 399900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Samsung Sound Tower MX-ST90B.",
+  "sources": [
+   "https://vlv.am/en/Product/37348"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-vr20m7070wd",
+  "category": "appliance",
+  "brand": "Samsung",
+  "name": "VR20M7070WD Robot Vacuum",
+  "aliases": [
+   "SAMSUNG VR20M7070WD/EV"
+  ],
+  "tier": "mid",
+  "priceAmd": 299000,
+  "priceAmdMax": 299000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 299000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Samsung VR20M7070WD Robot Vacuum.",
+  "sources": [
+   "https://vlv.am/en/Product/20910"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-vr30t85513w",
+  "category": "appliance",
+  "brand": "Samsung",
+  "name": "Jet Bot+ VR30T85513W",
+  "aliases": [
+   "SAMSUNG VR30T85513W/EV"
+  ],
+  "tier": "mid",
+  "priceAmd": 205000,
+  "priceAmdMax": 205000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 205000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Samsung Jet Bot+ VR30T85513W.",
+  "sources": [
+   "https://vlv.am/en/Product/20738"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ht-s350",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "HT-S350",
+  "aliases": [
+   "SONY HTS350"
+  ],
+  "tier": "mid",
+  "priceAmd": 225000,
+  "priceAmdMax": 225000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 225000
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony HT-S350.",
+  "sources": [
+   "https://vlv.am/en/Product/12384"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-srs-xg500",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "SRS-XG500",
+  "aliases": [
+   "SONY SRSXG500B"
+  ],
+  "tier": "budget",
+  "priceAmd": 149500,
+  "priceAmdMax": 149500,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 149500
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony SRS-XG500.",
+  "sources": [
+   "https://vlv.am/en/Product/18672"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-ult-field-5",
+  "category": "speaker",
+  "brand": "Sony",
+  "name": "ULT Field 5 (SRS-ULT50)",
+  "aliases": [
+   "SONY ULT FIELD 5 (SRS-ULT50/BZE) Black"
+  ],
+  "tier": "budget",
+  "priceAmd": 142900,
+  "priceAmdMax": 142900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 142900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Sony ULT Field 5 (SRS-ULT50).",
+  "sources": [
+   "https://vlv.am/en/Product/45158"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "sony-wi-c200",
+  "category": "headphones",
+  "brand": "Sony",
+  "name": "WI-C200",
+  "aliases": [
+   "SONY WIC200W"
+  ],
+  "tier": "budget",
+  "priceAmd": 8900,
+  "priceAmdMax": 8900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 8900
+   }
+  ],
+  "display": {},
+  "battery": {},
+  "audio": {
+   "conn": "wireless",
+   "form": "in-ear"
+  },
+  "summaryEn": "Sony WI-C200.",
+  "sources": [
+   "https://vlv.am/en/Product/19755"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "yandex-station-lite-2",
+  "category": "speaker",
+  "brand": "Yandex",
+  "name": "Station Lite 2",
+  "aliases": [
+   "YANDEX Lite 2 Pink (YNDX-00026PNK)"
+  ],
+  "tier": "budget",
+  "priceAmd": 41900,
+  "priceAmdMax": 41900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 41900
+   }
+  ],
+  "colors": [
+   "Pink"
+  ],
+  "display": {},
+  "battery": {},
+  "summaryEn": "Yandex Station Lite 2.",
+  "sources": [
+   "https://vlv.am/en/Product/48356"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-q8-max",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "Q8 Max",
+  "aliases": [
+   "Roborock Q8 Max White (Q8M02-02/Q80ULL)"
+  ],
+  "tier": "mid",
+  "priceAmd": 229900,
+  "priceAmdMax": 229900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 229900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock Q8 Max.",
+  "sources": [
+   "https://vlv.am/en/Product/33181"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-qrevo-curvx",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "Qrevo CurvX",
+  "aliases": [
+   "Roborock Qrevo CurvX White (QRCX02-02)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 629000,
+  "priceAmdMax": 629000,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 629000
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock Qrevo CurvX.",
+  "sources": [
+   "https://vlv.am/en/Product/46349"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-qrevo-edge-2-pro",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "Qrevo Edge 2 Pro",
+  "aliases": [
+   "Roborock Qrevo Edge 2 Pro White (QE2P02-02)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 599900,
+  "priceAmdMax": 599900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 599900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock Qrevo Edge 2 Pro.",
+  "sources": [
+   "https://vlv.am/en/Product/48743"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-s8-maxv-ultra",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "S8 MaxV Ultra",
+  "aliases": [
+   "Roborock S8 MaxV Ultra White (S8MVU02-02)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 499900,
+  "priceAmdMax": 499900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 499900
+   }
+  ],
+  "colors": [
+   "White"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock S8 MaxV Ultra.",
+  "sources": [
+   "https://vlv.am/en/Product/37963"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "roborock-saros-20-sonic-complete",
+  "category": "appliance",
+  "brand": "Roborock",
+  "name": "Saros 20 Sonic Complete",
+  "aliases": [
+   "Roborock Saros 20 Sonic Complete Black (S20SC52-00)"
+  ],
+  "tier": "upper-mid",
+  "priceAmd": 799900,
+  "priceAmdMax": 799900,
+  "popularity": 35,
+  "accent": "#5C6470",
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 799900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "display": {},
+  "battery": {},
+  "appliance": {
+   "type": "robot_vacuum"
+  },
+  "summaryEn": "Roborock Saros 20 Sonic Complete.",
+  "sources": [
+   "https://vlv.am/en/Product/48744"
+  ],
+  "unsure": [
+   "popularity"
   ]
  }
 ]
