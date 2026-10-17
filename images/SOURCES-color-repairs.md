@@ -3122,3 +3122,159 @@
 - xiaomi-air-fryer-4-5l-bhr8234eu__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 401x505.
 
 - hisense-hvc20e3h2tpa__main.webp: official maker photo, transparent original; Amazon.de product photo, Adobe cut (2026-10-17); product 1047x1479.
+
+- nothing-cmf-buds-2a__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 265x465.
+
+- nothing-cmf-buds-2a__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 265x465.
+
+- apple-earpods-3-5mm__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 265x488.
+
+- belkin-usb-c-in-ear__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 233x383.
+
+- belkin-usb-c-in-ear__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 233x383.
+
+- belkin-usb-c-in-ear__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 245x336.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2s__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 364x334.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2s__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 364x334.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 262x366.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 262x366.
+
+- jbl-live-flex-3__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 332x318.
+
+- jbl-live-flex-3__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 332x318.
+
+- belkin-soundform-move-plus__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 325x352.
+
+- belkin-soundform-move-plus__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 325x352.
+
+- realme-buds-t310__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 281x291.
+
+- realme-buds-t310__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 281x291.
+
+- realme-buds-t110__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 329x314.
+
+- realme-buds-t110__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 329x314.
+
+- realme-buds-air-6-pro__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 289x387.
+
+- realme-buds-air-6-pro__Blue.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 289x387.
+
+- realme-buds-air-6__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 291x382.
+
+- realme-buds-air-6__Green.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 291x382.
+
+- realme-buds-air-5__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 304x412.
+
+- realme-buds-air-5__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 304x412.
+
+- realme-buds-air-5-pro__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 301x405.
+
+- realme-buds-air-5-pro__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 301x405.
+
+- realme-buds-air-5-pro__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 316x426.
+
+- belkin-soundform-rise__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 328x349.
+
+- belkin-soundform-rise__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 328x349.
+
+- belkin-soundform-rise__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 335x357.
+
+- anker-soundcore-p2i__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 233x361.
+
+- anker-soundcore-p2i__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 233x361.
+
+- realme-buds-air-3__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 281x323.
+
+- realme-buds-air-3__Dark Blue.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 281x323.
+
+- realme-techlife-buds-t100__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 305x292.
+
+- realme-techlife-buds-t100__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 305x292.
+
+- xiaomi-buds-3__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 292x346.
+
+- xiaomi-buds-3__Gloss White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 292x346.
+
+- xiaomi-buds-3__Carbon Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 294x350.
+
+- jbl-wave-300-tws__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 315x242.
+
+- jbl-wave-300-tws__Pink.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 315x242.
+
+- jbl-jr460nc__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 319x388.
+
+- jbl-jr460nc__Pink.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 319x388.
+
+- xiaomi-redmi-buds-3__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 347x389.
+
+- xiaomi-redmi-buds-3__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 347x389.
+
+- realme-buds-q2__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 324x415.
+
+- realme-buds-q2__Blue.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 324x415.
+
+- realme-buds-q2__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 301x386.
+
+- xiaomi-redmi-buds-3-pro__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 296x407.
+
+- xiaomi-redmi-buds-3-pro__Graphite Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 296x407.
+
+- xiaomi-redmi-buds-3-pro__Glacier Grey.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 293x380.
+
+- jbl-live-pro-tws__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 339x329.
+
+- jbl-live-pro-tws__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 339x329.
+
+- jbl-jr310bt__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 311x413.
+
+- jbl-jr310bt__Blue.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 311x413.
+
+- realme-buds-air-pro__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 320x408.
+
+- realme-buds-air-pro__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 320x408.
+
+- realme-buds-air-pro__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 336x430.
+
+- nokia-e3500__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 238x350.
+
+- nokia-e3500__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 238x350.
+
+- nokia-e3500__Blue.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 226x335.
+
+- jbl-everest-110__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 191x383.
+
+- jbl-everest-110__Gunmetal.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 191x383.
+
+- beats-studio-wireless__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 329x443.
+
+- beats-studio-wireless__Red.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 329x443.
+
+- beats-solo-hd__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 324x404.
+
+- beats-solo-hd__Pink.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 324x404.
+
+- samsung-gear-circle__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 403x330.
+
+- samsung-gear-circle__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 403x330.
+
+- samsung-galaxy-buds__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 427x324.
+
+- samsung-galaxy-buds__Yellow.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 427x324.
+
+- jbl-tune-205__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 302x413.
+
+- jbl-tune-205__White Rose Gold.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 302x413.
+
+- jbl-tune-205__White Gold.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 301x432.
+
+- jbl-tune-205__White Silver.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 335x341.
+
+- jbl-tune-205__Black.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 327x443.
+
+- jbl-tune-210__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 297x457.
+
+- jbl-tune-210__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 297x457.
