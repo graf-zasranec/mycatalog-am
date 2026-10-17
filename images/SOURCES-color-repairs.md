@@ -2696,3 +2696,427 @@
 - apple-iphone-duo__night-sky.webp: official maker photo, transparent original; apple.com store render, transparent, 2400px; product 1980x1285.
 
 - apple-iphone-duo__star-white.webp: official maker photo, transparent original; apple.com store render, transparent, 2400px; product 1981x1285.
+
+- bosch-bgc05aaa1__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1340x1374.
+
+- bosch-tka4m233__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 663x857.
+
+- bosch-tka6a041__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 549x825.
+
+- braun-gs3012bg__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 241x508.
+
+- braun-gs3013gr__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 196x442.
+
+- braun-gs3024bl__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 409x925.
+
+- braun-gs5011pu__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 439x568.
+
+- braun-gs5031bl__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 807x993.
+
+- braun-gs7088cp__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 587x763.
+
+- braun-hf3000ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 347x417.
+
+- braun-hf3030ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 401x473.
+
+- braun-hf5030ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 536x598.
+
+- braun-hf5034ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 635x707.
+
+- braun-hf5054ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 488x576.
+
+- braun-hf5055ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 727x858.
+
+- braun-hf5075ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1003x1186.
+
+- braun-kf1100__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 543x801.
+
+- braun-kf3100__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 472x830.
+
+- braun-kf3120__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 502x905.
+
+- braun-kf7020-bk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 360x540.
+
+- braun-td3030ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 542x472.
+
+- braun-td5030ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 773x567.
+
+- braun-td5053ibk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 591x491.
+
+- de-longhi-ec230__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 309x292.
+
+- de-longhi-ec685__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 296x598.
+
+- de-longhi-ec885__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 401x593.
+
+- de-longhi-ec890__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 347x522.
+
+- de-longhi-ec9155__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 646x861.
+
+- de-longhi-ec9255__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 268x373.
+
+- de-longhi-ec9455__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 284x376.
+
+- de-longhi-ec9555__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 640x893.
+
+- de-longhi-ecam12-121__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 934x1618.
+
+- de-longhi-ecam22-110__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 367x495.
+
+- de-longhi-ecam22-114__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 906x1326.
+
+- de-longhi-ecam22-117__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 340x585.
+
+- de-longhi-ecam220-21__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 590x653.
+
+- de-longhi-ecam220-22__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 921x1560.
+
+- de-longhi-ecam220-31__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 388x597.
+
+- de-longhi-ecam220-50__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 250x445.
+
+- de-longhi-ecam220-51__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 389x445.
+
+- de-longhi-ecam290-21__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 926x1396.
+
+- de-longhi-ecam290-31__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 328x578.
+
+- de-longhi-ecam290-61__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 307x540.
+
+- de-longhi-ecam290-81__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 920x1646.
+
+- de-longhi-ecam290-85__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 405x496.
+
+- de-longhi-ecam320-60__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 316x493.
+
+- de-longhi-ecam320-70__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 303x493.
+
+- de-longhi-ecam380-85__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 326x566.
+
+- de-longhi-ecam380-95__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 298x500.
+
+- de-longhi-ecam450-86__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 336x497.
+
+- de-longhi-ecam470-85__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 292x485.
+
+- de-longhi-ecam550-65__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 504x544.
+
+- de-longhi-ecam610-55__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 294x498.
+
+- de-longhi-ecam610-74__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 293x496.
+
+- de-longhi-ecam630-55__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 465x581.
+
+- de-longhi-ecam630-75__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 869x622.
+
+- de-longhi-ecam650-55__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 374x584.
+
+- de-longhi-ecam650-75__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 266x412.
+
+- de-longhi-ecam650-85__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 441x600.
+
+- de-longhi-eci341__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 483x894.
+
+- de-longhi-ecp31-21__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 560x876.
+
+- de-longhi-epam960-75glm__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 363x594.
+
+- de-longhi-exam420-55-wxl__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 520x497.
+
+- de-longhi-exam440-55__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 354x385.
+
+- de-longhi-exam441-55__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 325x497.
+
+- de-longhi-fh2101-1w__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 501x558.
+
+- de-longhi-icm15210-1__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 502x888.
+
+- de-longhi-icm16210__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 237x597.
+
+- de-longhi-icm17210__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 456x881.
+
+- dreame-ahd51-pocket__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 306x534.
+
+- dreame-ahd52-pocket-ultra__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 889x867.
+
+- dreame-ahg11a-hairdryer-mini__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 468x691.
+
+- dreame-ahx01a-pilot-smart-ai__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 578x546.
+
+- dreame-ama10a-hairdryer-aero-straight__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 71x494.
+
+- dreame-amf18a-airstyle-pro__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 315x360.
+
+- dreame-ams01a-airstyle-pro-hi__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 528x563.
+
+- dreame-azd20a-dazzle__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 843x906.
+
+- dreame-r10-pro-aqua-vzv15a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 132x583.
+
+- dreame-r10s-pro-vzv23a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1037x1094.
+
+- dreame-r20-ultra-vrv57f__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 259x385.
+
+- dreame-z40-station-vzv33a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 535x1037.
+
+- dyson-cyclone-v10-submarine-4446__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 333x540.
+
+- dyson-ds60-piston-animal-submarine-2969__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 319x535.
+
+- hisense-h06afbs1s3__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 379x481.
+
+- hisense-haf1350dr__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 387x345.
+
+- hisense-haf1600d__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 414x497.
+
+- hisense-haf1800d__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 504x617.
+
+- hisense-haf1800dcd__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 574x494.
+
+- hisense-haf1900d__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 414x497.
+
+- hisense-haf2100dcd__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 588x446.
+
+- hisense-haf2700dcd__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 722x542.
+
+- hisense-haf2700dha__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 504x406.
+
+- hisense-haf2900d__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 800x605.
+
+- hisense-haf3300dhcd__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 577x483.
+
+- hisense-hescm15dbk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 733x998.
+
+- hisense-hescm20lp__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 445x520.
+
+- hisense-hfc433170a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 127x517.
+
+- hisense-hvc20e1h2ca__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 360x509.
+
+- hisense-hvc6133wii__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 324x770.
+
+- hisense-hvc613410bk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 280x586.
+
+- hisense-hvc6134bk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 228x582.
+
+- hisense-hvc6264bk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 174x445.
+
+- hisense-hvc6264w-hsn__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 356x680.
+
+- hisense-hvc6463da__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 281x1252.
+
+- hisense-hvc6464a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 106x458.
+
+- hisense-hvc646541a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 122x483.
+
+- hisense-hvc646630a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 129x602.
+
+- hisense-hvc6664bk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 195x388.
+
+- hisense-hvc676451da__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 322x515.
+
+- hisense-hvc676999da__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 714x1181.
+
+- hisense-hvc9401bk__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 572x1264.
+
+- karcher-ad4-premium__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 545x504.
+
+- karcher-fcv4-wet-and-dry__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 522x592.
+
+- karcher-kfl1-wet-and-dry__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 959x1090.
+
+- karcher-kva2__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 738x1157.
+
+- karcher-kwd1-w-v__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 811x1221.
+
+- karcher-puzzi-8-1-go-further__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 587x437.
+
+- karcher-se2-spot__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1029x1030.
+
+- karcher-se3-compact-home__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1115x1000.
+
+- karcher-se4-go-further__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 541x580.
+
+- karcher-vc2-kap__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 896x1380.
+
+- karcher-vc6-cordless-our-family__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 975x1181.
+
+- karcher-vch4uv-clean__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1074x964.
+
+- karcher-wd1__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 591x525.
+
+- karcher-wd3-s-v-17-4-20__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1132x1396.
+
+- karcher-wd3-v-17-4-20__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 471x538.
+
+- karcher-wd4-s-go-further__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 537x555.
+
+- karcher-wd4-s-v-20-5-22__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1043x1375.
+
+- karcher-wd5p-v-25-5-22__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 365x539.
+
+- karcher-wd5s-v-25-5-22__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1382x978.
+
+- karcher-wd6p-s-v-30-6-22-t__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1206x1236.
+
+- lg-a9lslim__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 113x430.
+
+- lg-a9n-core__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 332x920.
+
+- lg-vc5420nhtcg__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 518x767.
+
+- lg-vc5420nhtw__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 198x295.
+
+- lg-vc83209uha__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 721x870.
+
+- lg-vc83209uhas__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 359x436.
+
+- lg-vk69662n__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 922x1380.
+
+- lg-vk89609hq__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 352x594.
+
+- panasonic-eh-na65-k865__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 366x395.
+
+- panasonic-eh-nd65-k865__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 447x571.
+
+- panasonic-eh-ne66-k865__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 517x594.
+
+- panasonic-eh-ne83-k865__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 596x575.
+
+- panasonic-eh-ne85-k865__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 517x685.
+
+- panasonic-mc-cg521r149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 485x593.
+
+- panasonic-mc-cg525r149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 385x598.
+
+- panasonic-mc-cg711__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 357x598.
+
+- panasonic-mc-cl601a149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 378x602.
+
+- panasonic-mc-cl605k149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 776x1245.
+
+- panasonic-mc-sb30jw049__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 552x825.
+
+- panasonic-mc-sbr40c946__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 192x440.
+
+- panasonic-mc-sbr70k946__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 147x337.
+
+- panasonic-mc-yl631r149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 365x583.
+
+- panasonic-mc-yl633g149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 356x593.
+
+- panasonic-mc-yl635t149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 763x1377.
+
+- panasonic-mc-yl637s149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 244x444.
+
+- panasonic-mc-yl690a149__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 877x1367.
+
+- panasonic-nf-bc1000kxe__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 486x367.
+
+- panasonic-nf-cc500sxe__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 751x980.
+
+- panasonic-nf-cc600ats__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 776x994.
+
+- panasonic-ni-ghd015wtv__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 302x595.
+
+- philips-bhd272-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 478x572.
+
+- philips-bhd274-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 512x579.
+
+- philips-bhd302-30__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 567x550.
+
+- philips-bhd308-10__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 546x552.
+
+- philips-bhd321-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 681x1118.
+
+- philips-bhd350-10__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 531x586.
+
+- philips-bhd360-20__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 511x583.
+
+- philips-bhd500-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 449x570.
+
+- philips-bhd501-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 457x577.
+
+- philips-bhd504-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 468x580.
+
+- philips-bhd514-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 493x581.
+
+- philips-bhd628-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 235x478.
+
+- philips-bhd720-10__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 378x582.
+
+- philips-fc6722-01__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 281x572.
+
+- philips-fc8586-01__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 518x386.
+
+- philips-hd7462-20__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 329x514.
+
+- philips-hd9270-90__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1059x1073.
+
+- philips-hps910-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 486x546.
+
+- philips-hps920-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 520x550.
+
+- philips-na110-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 386x453.
+
+- philips-na120-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 612x720.
+
+- philips-na332-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 558x569.
+
+- philips-sm7580-00__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 763x832.
+
+- philips-sth3020-16__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 958x1171.
+
+- philips-sth5030-20__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 596x455.
+
+- philips-xb2142-08__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 379x586.
+
+- philips-xc3031-61__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 1015x1157.
+
+- philips-xc3133-01__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 308x1087.
+
+- philips-xc7055-01__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 509x936.
+
+- roborock-f25-ace-combo-wd5m6a512-00-02__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 217x486.
+
+- roborock-h60-ultra-h10a1a51-07__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 213x576.
+
+- samsung-vc18m2110sb__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 887x1273.
+
+- samsung-vc18m2150sg__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 477x350.
+
+- samsung-vc18m21b0s2__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 968x1387.
+
+- samsung-vc18m3160vg__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 327x500.
+
+- samsung-vc20m255awb__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 421x597.
+
+- samsung-vc20m257awr__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 960x1366.
+
+- samsung-vcc4326s3a__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 253x402.
+
+- samsung-vcc5241s3k__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 476x598.
+
+- samsung-vcc5251v3r__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 264x570.
+
+- samsung-vcc8835v37__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 240x440.
+
+- samsung-vcc8836v36__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 320x588.
+
+- samsung-vcc8837v3p__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 387x685.
+
+- samsung-vcc885bh36__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 750x1377.
+
+- samsung-vcc885hh3p__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 745x1373.
+
+- samsung-vcc8876h35__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 760x1379.
+
+- samsung-vs15a6031r4__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 394x601.
+
+- toshiba-vc-cl3000xc__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 258x882.
+
+- toshiba-vc-cls1c__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 302x749.
+
+- toshiba-vc-clx50c__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 165x643.
+
+- xiaomi-air-fryer-4-5l-bhr8234eu__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 401x505.
