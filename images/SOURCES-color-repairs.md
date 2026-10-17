@@ -2451,3 +2451,11 @@
 - meta-starfire-kylie-edition-black-transitions-grey__main.webp: official maker photo, transparent original; meta.com official render, cut on Adobe website; product 1380x533.
 
 - meta-ray-ban-display__main.webp: official maker photo, transparent original; Allsell listing photo (glasses + Neural Band), cut on Adobe website; product 518x149.
+
+- samsung-galaxy-s24-fe__graphite.webp: official maker photo, transparent original; samsung.com/uk official render (back+front), cut on Adobe website; product 570x703.
+
+- samsung-galaxy-s24-fe__gray.webp: official maker photo, transparent original; samsung.com/uk official render (back+front), cut on Adobe website; product 570x703.
+
+- ray-ban-meta-skyler-gen-2-shiny-black-transitions-graphite-green-size52__main.webp: official maker photo, transparent original; meta.com official render, cut on Adobe website; product 1406x605.
+
+- ray-ban-meta-headliner-gen-2-shiny-black-g15-green-size51__main.webp: same frame/lens as the 50 mm product, its photo reused.

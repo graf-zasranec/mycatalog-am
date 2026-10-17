@@ -82341,5 +82341,183 @@
    "https://allsell.am/en/meta-ray-ban-display",
    "https://www.meta.com/ai-glasses/meta-ray-ban-display/"
   ]
+ },
+ {
+  "id": "samsung-galaxy-s24-fe",
+  "brand": "Samsung",
+  "name": "Galaxy S24 FE",
+  "tier": "midrange",
+  "released": "2024-10",
+  "priceAmd": 199000,
+  "priceAmdMax": 199000,
+  "popularity": 55,
+  "accent": "#5C6470",
+  "display": {
+   "size": 6.7,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2340x1080",
+   "refresh": 120,
+   "ppi": 385
+  },
+  "chipset": {
+   "name": "Samsung Exynos 2400e",
+   "process": "4 nm",
+   "gpu": "Xclipse 940"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 199000
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 199000
+   },
+   {
+    "ram": 8,
+    "storage": 512,
+    "priceAmd": 199000
+   }
+  ],
+  "camera": {
+   "modules": 3,
+   "main": "50 MP, f/1.8, OIS",
+   "ultrawide": "12 MP, f/2.2",
+   "telephoto": "8 MP, f/2.4, 3x optical zoom",
+   "front": "10 MP",
+   "video": "8K@30fps"
+  },
+  "battery": {
+   "capacity": 4700,
+   "wired": 25,
+   "wireless": 15
+  },
+  "body": {
+   "height": 162,
+   "width": 77.3,
+   "thickness": 8,
+   "weight": 213,
+   "materials": "Aluminium frame, glass front and back",
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "network": "5G",
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3",
+   "nfc": true
+  },
+  "cardSlot": false,
+  "os": "Android, One UI",
+  "updates": "7 years of OS and security updates",
+  "colors": [
+   "Blue",
+   "Graphite",
+   "Gray",
+   "Mint",
+   "Yellow"
+  ],
+  "category": "phone",
+  "summaryEn": "Samsung Galaxy S24 FE: 6.7-inch 120 Hz AMOLED, Exynos 2400e, triple camera with 3x telephoto, 4,700 mAh battery and 7 years of updates.",
+  "sources": [
+   "https://www.samsung.com/uk/smartphones/galaxy-s24-fe/buy/",
+   "https://likemobile.am/en/samsung-galaxy-s24-fe-8256gb-gray"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "ray-ban-meta-skyler-gen-2-shiny-black-transitions-graphite-green-size52",
+  "category": "smartglasses",
+  "brand": "Ray-Ban",
+  "name": "Meta Skyler Gen 2 — Shiny Black / Transitions Graphite Green (52 mm)",
+  "aliases": [
+   "RayBan Meta Wayfarer Gen 2 RW4014 Shiny Black Transition Graphite Green S52"
+  ],
+  "priceAmd": 279000,
+  "priceAmdMax": 279000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "colors": [
+   "Black"
+  ],
+  "variants": [
+   {
+    "storage": 32,
+    "priceAmd": 279000
+   }
+  ],
+  "glasses": {
+   "style": "Skyler",
+   "frame": "Shiny Black",
+   "lens": "Transitions Graphite Green",
+   "lensWidth": 52,
+   "runtime": 8
+  },
+  "camera": {
+   "main": "12 MP",
+   "video": "3K / 30 fps"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "Ray-Ban Meta Skyler Gen 2 smart glasses with Shiny Black frames and Transitions Graphite Green lenses, 52 mm lens width. 12 MP camera, 32 GB storage and up to 8 hours of battery life.",
+  "sources": [
+   "https://redstore.am/en/product/rayban-meta-wayfarer-gen-2-rw4014-shiny-black-transition-graphite-green-s52",
+   "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-green-transitions-gen-2/"
+  ],
+  "unsure": [
+   "popularity"
+  ],
+  "notes": "REDstore titles this \"Wayfarer Gen 2 RW4014\"; RW4014 is the Skyler (Gen 2) per ray-ban.com."
+ },
+ {
+  "id": "ray-ban-meta-headliner-gen-2-shiny-black-g15-green-size51",
+  "category": "smartglasses",
+  "brand": "Ray-Ban",
+  "name": "Meta Headliner Gen 2 — Shiny Black / G-15 Green (51 mm, high-bridge fit)",
+  "aliases": [
+   "RayBan Meta Headliner Gen 2 RW4013(Shiny Black/G15 Green)S51"
+  ],
+  "priceAmd": 259000,
+  "priceAmdMax": 259000,
+  "popularity": 40,
+  "accent": "#5C6470",
+  "colors": [
+   "Black"
+  ],
+  "variants": [
+   {
+    "storage": 32,
+    "priceAmd": 259000
+   }
+  ],
+  "glasses": {
+   "style": "Headliner",
+   "frame": "Shiny Black",
+   "lens": "G-15 Green",
+   "lensWidth": 51,
+   "runtime": 8
+  },
+  "camera": {
+   "main": "12 MP",
+   "video": "3K / 30 fps"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi 6E",
+   "bluetooth": "5.3"
+  },
+  "summaryEn": "Ray-Ban Meta Headliner Gen 2 smart glasses with Shiny Black frames and G-15 Green lenses, 51 mm lens width in the high-bridge fit. 12 MP camera, 32 GB storage and up to 8 hours of battery life.",
+  "sources": [
+   "https://redstore.am/en/product/rayban-meta-headliner-gen-2-rw4013shiny-blackg15-greens51",
+   "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-gen-2/"
+  ],
+  "unsure": [
+   "popularity"
+  ],
+  "notes": "51 mm is the high-bridge fit (RW4013F) of the Headliner Gen 2."
  }
 ]
