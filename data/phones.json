@@ -51895,7 +51895,7 @@
   ],
   "tier": "mid",
   "priceAmd": 145000,
-  "priceAmdMax": 145000,
+  "priceAmdMax": 172000,
   "popularity": 40,
   "accent": "#5C6470",
   "variants": [
@@ -65737,7 +65737,7 @@
    "Xiaomi Zone Air Fryer 10L"
   ],
   "tier": "budget",
-  "priceAmd": 79900,
+  "priceAmd": 63900,
   "priceAmdMax": 79900,
   "popularity": 40,
   "accent": "#5C6470",
@@ -73895,7 +73895,7 @@
   "brand": "Ray-Ban",
   "name": "Meta Wayfarer Gen 2 — Black / Transitions Graphite Green (50 mm)",
   "priceAmd": 259000,
-  "priceAmdMax": 259000,
+  "priceAmdMax": 279000,
   "popularity": 45,
   "accent": "#5C6470",
   "colors": [
@@ -73929,7 +73929,7 @@
   "brand": "Ray-Ban",
   "name": "Meta Wayfarer Gen 2 — Black / Transitions Graphite Green (53 mm)",
   "priceAmd": 259000,
-  "priceAmdMax": 259000,
+  "priceAmdMax": 279000,
   "popularity": 45,
   "accent": "#5C6470",
   "colors": [
@@ -82055,6 +82055,86 @@
   ],
   "unsure": [
    "popularity"
+  ]
+ },
+ {
+  "tier": "budget",
+  "popularity": 35,
+  "accent": "#5C6470",
+  "display": {},
+  "battery": {
+   "life": "up to 37 h with case"
+  },
+  "unsure": [
+   "popularity"
+  ],
+  "id": "xiaomi-redmi-buds-8-active",
+  "category": "headphones",
+  "brand": "Xiaomi",
+  "name": "Redmi Buds 8 Active",
+  "aliases": [
+   "Redmi Buds 8 Active"
+  ],
+  "priceAmd": 10900,
+  "priceAmdMax": 10900,
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 10900
+   }
+  ],
+  "colors": [
+   "Black"
+  ],
+  "audio": {
+   "form": "tws",
+   "conn": "wireless",
+   "anc": false
+  },
+  "connectivity": {
+   "bluetooth": "5.4"
+  },
+  "summaryEn": "Xiaomi Redmi Buds 8 Active true wireless earbuds: 14.2 mm titanium driver, dual-mic AI call noise reduction, Bluetooth 5.4, up to 37 hours with the case.",
+  "sources": [
+   "https://miarmenia.am/en/product/615/redmi-buds-8-active",
+   "https://www.mi.com/global/product/redmi-buds-8-active/"
+  ]
+ },
+ {
+  "tier": "mid",
+  "popularity": 35,
+  "accent": "#5C6470",
+  "display": {},
+  "battery": {},
+  "unsure": [
+   "popularity"
+  ],
+  "id": "dreame-h15s",
+  "category": "appliance",
+  "brand": "Dreame",
+  "name": "H15S Wet and Dry Vacuum",
+  "aliases": [
+   "Dreame H15S"
+  ],
+  "priceAmd": 319900,
+  "priceAmdMax": 319900,
+  "variants": [
+   {
+    "ram": null,
+    "storage": null,
+    "priceAmd": 319900
+   }
+  ],
+  "appliance": {
+   "type": "wet_dry_vacuum",
+   "power": 400,
+   "suctionPa": 21000
+  },
+  "summaryEn": "Dreame H15S wet and dry vacuum: 21,000 Pa suction from a 400 W brushless motor, lies flat to 14 cm, 780 ml clean and 700 ml dirty water tanks.",
+  "sources": [
+   "https://miarmenia.am/en/product/631/dreame-h15s",
+   "https://dk.dreametech.com/products/h15s-vad-tor-stovsuger"
   ]
  }
 ]

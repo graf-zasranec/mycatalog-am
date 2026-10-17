@@ -2437,3 +2437,7 @@
 - xiaomi-redmi-pad-pro__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 485x571.
 
 - xiaomi-robot-vacuum-x20-plus-bhr8124eu__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 384x649.
+
+- xiaomi-redmi-buds-8-active__main.webp: official maker photo, transparent original; mi.com official render, cut on Adobe website; product 394x542.
+
+- dreame-h15s__main.webp: official maker photo, transparent original; official Dreame transparent render; product 521x949.
