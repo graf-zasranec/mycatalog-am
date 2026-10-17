@@ -3278,3 +3278,443 @@
 - jbl-tune-210__main.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 297x457.
 
 - jbl-tune-210__White.webp: official maker photo, transparent original; Mobile Centre photo, Adobe cut (2026-10-18); product 297x457.
+
+- xiaomi-air-fryer-4-5l-bhr8234eu__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 401x504.
+
+- nothing-cmf-buds-2a__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 265x465.
+
+- nothing-cmf-buds-2a__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 265x465.
+
+- apple-earpods-3-5mm__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 265x488.
+
+- belkin-usb-c-in-ear__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x383.
+
+- belkin-usb-c-in-ear__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x383.
+
+- belkin-usb-c-in-ear__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 245x336.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2s__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 364x334.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2s__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 364x334.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 262x366.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 262x366.
+
+- jbl-live-flex-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 332x318.
+
+- jbl-live-flex-3__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 332x318.
+
+- belkin-soundform-move-plus__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 325x352.
+
+- belkin-soundform-move-plus__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 325x352.
+
+- realme-buds-t310__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x291.
+
+- realme-buds-t310__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x291.
+
+- realme-buds-t110__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x314.
+
+- realme-buds-t110__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x314.
+
+- realme-buds-air-6-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 289x387.
+
+- realme-buds-air-6-pro__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 289x387.
+
+- realme-buds-air-6__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 291x382.
+
+- realme-buds-air-6__Green.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 291x382.
+
+- realme-buds-air-5__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 304x412.
+
+- realme-buds-air-5__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 304x412.
+
+- realme-buds-air-5-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x405.
+
+- realme-buds-air-5-pro__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x405.
+
+- realme-buds-air-5-pro__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 316x426.
+
+- belkin-soundform-rise__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 328x349.
+
+- belkin-soundform-rise__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 328x349.
+
+- belkin-soundform-rise__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 335x357.
+
+- anker-soundcore-p2i__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x361.
+
+- anker-soundcore-p2i__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x361.
+
+- realme-buds-air-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x323.
+
+- realme-buds-air-3__Dark Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x323.
+
+- realme-techlife-buds-t100__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 305x292.
+
+- realme-techlife-buds-t100__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 305x292.
+
+- xiaomi-buds-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 292x346.
+
+- xiaomi-buds-3__Gloss White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 292x346.
+
+- xiaomi-buds-3__Carbon Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 294x350.
+
+- jbl-wave-300-tws__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 315x242.
+
+- jbl-wave-300-tws__Pink.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 315x242.
+
+- jbl-jr460nc__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 319x388.
+
+- jbl-jr460nc__Pink.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 319x388.
+
+- xiaomi-redmi-buds-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 347x389.
+
+- xiaomi-redmi-buds-3__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 347x389.
+
+- realme-buds-q2__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x415.
+
+- realme-buds-q2__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x415.
+
+- realme-buds-q2__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x386.
+
+- xiaomi-redmi-buds-3-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 296x407.
+
+- xiaomi-redmi-buds-3-pro__Graphite Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 296x407.
+
+- xiaomi-redmi-buds-3-pro__Glacier Grey.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 293x380.
+
+- jbl-live-pro-tws__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 339x329.
+
+- jbl-live-pro-tws__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 339x329.
+
+- jbl-jr310bt__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 311x413.
+
+- jbl-jr310bt__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 311x413.
+
+- realme-buds-air-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 320x408.
+
+- realme-buds-air-pro__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 320x408.
+
+- realme-buds-air-pro__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 336x430.
+
+- nokia-e3500__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 238x350.
+
+- nokia-e3500__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 238x350.
+
+- nokia-e3500__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 226x335.
+
+- jbl-everest-110__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 191x383.
+
+- jbl-everest-110__Gunmetal.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 191x383.
+
+- beats-studio-wireless__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x443.
+
+- beats-studio-wireless__Red.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x443.
+
+- beats-solo-hd__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x404.
+
+- beats-solo-hd__Pink.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x404.
+
+- samsung-gear-circle__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 403x330.
+
+- samsung-gear-circle__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 403x330.
+
+- samsung-galaxy-buds__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 427x324.
+
+- samsung-galaxy-buds__Yellow.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 427x324.
+
+- jbl-tune-205__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 302x412.
+
+- jbl-tune-205__White Rose Gold.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 302x412.
+
+- jbl-tune-205__White Gold.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x431.
+
+- jbl-tune-205__White Silver.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 335x341.
+
+- jbl-tune-205__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 327x442.
+
+- jbl-tune-210__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 297x456.
+
+- jbl-tune-210__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 297x456.
+
+- braun-gs3012bg__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 362x762.
+
+- braun-gs3013gr__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 652x1471.
+
+- braun-hf3030ibk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 401x473.
+
+- braun-hf5054ibk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 488x576.
+
+- braun-td3030ibk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 722x629.
+
+- braun-td5053ibk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 708x589.
+
+- de-longhi-ec230__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 774x729.
+
+- de-longhi-ec685__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1012x2042.
+
+- de-longhi-ec885__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 668x987.
+
+- de-longhi-ec890__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 463x696.
+
+- de-longhi-ecam220-31__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 388x597.
+
+- de-longhi-ecam220-50__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 375x670.
+
+- de-longhi-ecam220-51__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 586x670.
+
+- de-longhi-ecam290-31__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1121x1975.
+
+- de-longhi-ecam290-61__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 924x1620.
+
+- de-longhi-ecam550-65__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 504x544.
+
+- de-longhi-ecam650-55__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1278x1994.
+
+- de-longhi-ecam650-75__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 356x550.
+
+- de-longhi-exam420-55-wxl__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 783x747.
+
+- de-longhi-icm16210__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 811x2041.
+
+- dreame-ahx01a-pilot-smart-ai__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1156x1093.
+
+- dreame-amf18a-airstyle-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1050x1201.
+
+- dreame-ams01a-airstyle-pro-hi__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 704x751.
+
+- dreame-r10-pro-aqua-vzv15a__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 143x632.
+
+- dreame-r20-ultra-vrv57f__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 863x1284.
+
+- hisense-haf1800dcd__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1387x1191.
+
+- hisense-haf2100dcd__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 682x515.
+
+- hisense-haf2700dha__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 504x406.
+
+- hisense-hescm20lp__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 888x1038.
+
+- hisense-hvc613410bk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 556x1169.
+
+- hisense-hvc6134bk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 240x610.
+
+- hisense-hvc646630a__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 133x630.
+
+- hisense-hvc6664bk__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 195x388.
+
+- karcher-ad4-premium__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 545x504.
+
+- karcher-puzzi-8-1-go-further__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1254x933.
+
+- karcher-se4-go-further__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 901x967.
+
+- karcher-wd4-s-go-further__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 1432x1482.
+
+- karcher-wd5p-v-25-5-22__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 365x539.
+
+- lg-a9lslim__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 377x1432.
+
+- lg-vc5420nhtw__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 364x542.
+
+- lg-vc83209uhas__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 479x582.
+
+- lg-vk89609hq__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 753x1265.
+
+- panasonic-mc-cg711__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 832x1393.
+
+- philips-fc6722-01__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x572.
+
+- philips-fc8586-01__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 689x514.
+
+- philips-hd7462-20__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 350x548.
+
+- philips-xb2142-08__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 379x586.
+
+- roborock-f25-ace-combo-wd5m6a512-00-02__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 217x486.
+
+- roborock-h60-ultra-h10a1a51-07__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 283x768.
+
+- samsung-vc18m2150sg__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 645x473.
+
+- samsung-vc18m3160vg__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 327x500.
+
+- samsung-vcc4326s3a__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x483.
+
+- samsung-vcc5241s3k__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 476x598.
+
+- samsung-vcc5251v3r__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 264x570.
+
+- samsung-vcc8835v37__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x596.
+
+- samsung-vs15a6031r4__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 394x600.
+
+- xiaomi-air-fryer-4-5l-bhr8234eu__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 401x504.
+
+- nothing-cmf-buds-2a__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 265x465.
+
+- nothing-cmf-buds-2a__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 265x465.
+
+- apple-earpods-3-5mm__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 265x488.
+
+- belkin-usb-c-in-ear__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x383.
+
+- belkin-usb-c-in-ear__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x383.
+
+- belkin-usb-c-in-ear__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 245x336.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2s__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 364x334.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2s__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 364x334.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 262x366.
+
+- xiaomi-mi-true-wireless-earbuds-basic-2__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 262x366.
+
+- jbl-live-flex-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 332x318.
+
+- jbl-live-flex-3__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 332x318.
+
+- belkin-soundform-move-plus__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 325x352.
+
+- belkin-soundform-move-plus__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 325x352.
+
+- realme-buds-t310__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x291.
+
+- realme-buds-t310__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x291.
+
+- realme-buds-t110__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x314.
+
+- realme-buds-t110__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x314.
+
+- realme-buds-air-6-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 289x387.
+
+- realme-buds-air-6-pro__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 289x387.
+
+- realme-buds-air-6__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 291x382.
+
+- realme-buds-air-6__Green.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 291x382.
+
+- realme-buds-air-5__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 304x412.
+
+- realme-buds-air-5__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 304x412.
+
+- realme-buds-air-5-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x405.
+
+- realme-buds-air-5-pro__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x405.
+
+- realme-buds-air-5-pro__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 316x426.
+
+- belkin-soundform-rise__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 328x349.
+
+- belkin-soundform-rise__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 328x349.
+
+- belkin-soundform-rise__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 335x357.
+
+- anker-soundcore-p2i__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x361.
+
+- anker-soundcore-p2i__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 233x361.
+
+- realme-buds-air-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x323.
+
+- realme-buds-air-3__Dark Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 281x323.
+
+- realme-techlife-buds-t100__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 305x292.
+
+- realme-techlife-buds-t100__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 305x292.
+
+- xiaomi-buds-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 292x346.
+
+- xiaomi-buds-3__Gloss White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 292x346.
+
+- xiaomi-buds-3__Carbon Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 294x350.
+
+- jbl-wave-300-tws__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 315x242.
+
+- jbl-wave-300-tws__Pink.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 315x242.
+
+- jbl-jr460nc__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 319x388.
+
+- jbl-jr460nc__Pink.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 319x388.
+
+- xiaomi-redmi-buds-3__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 347x389.
+
+- xiaomi-redmi-buds-3__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 347x389.
+
+- realme-buds-q2__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x415.
+
+- realme-buds-q2__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x415.
+
+- realme-buds-q2__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x386.
+
+- xiaomi-redmi-buds-3-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 296x407.
+
+- xiaomi-redmi-buds-3-pro__Graphite Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 296x407.
+
+- xiaomi-redmi-buds-3-pro__Glacier Grey.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 293x380.
+
+- jbl-live-pro-tws__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 339x329.
+
+- jbl-live-pro-tws__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 339x329.
+
+- jbl-jr310bt__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 311x413.
+
+- jbl-jr310bt__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 311x413.
+
+- realme-buds-air-pro__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 320x408.
+
+- realme-buds-air-pro__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 320x408.
+
+- realme-buds-air-pro__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 336x430.
+
+- nokia-e3500__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 238x350.
+
+- nokia-e3500__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 238x350.
+
+- nokia-e3500__Blue.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 226x335.
+
+- jbl-everest-110__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 191x383.
+
+- jbl-everest-110__Gunmetal.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 191x383.
+
+- beats-studio-wireless__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x443.
+
+- beats-studio-wireless__Red.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 329x443.
+
+- beats-solo-hd__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x404.
+
+- beats-solo-hd__Pink.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 324x404.
+
+- samsung-gear-circle__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 403x330.
+
+- samsung-gear-circle__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 403x330.
+
+- samsung-galaxy-buds__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 427x324.
+
+- samsung-galaxy-buds__Yellow.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 427x324.
+
+- jbl-tune-205__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 302x412.
+
+- jbl-tune-205__White Rose Gold.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 302x412.
+
+- jbl-tune-205__White Gold.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 301x431.
+
+- jbl-tune-205__White Silver.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 335x341.
+
+- jbl-tune-205__Black.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 327x442.
+
+- jbl-tune-210__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 297x456.
+
+- jbl-tune-210__White.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 297x456.
+
+- de-longhi-ecam290-85__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 609x745.
+
+- de-longhi-ecam380-95__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 298x500.
+
+- hisense-hfc433170a__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 127x515.
+
+- hisense-hvc20e1h2ca__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 360x509.
+
+- panasonic-mc-cl601a149__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 378x600.
+
+- panasonic-nf-bc1000kxe__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 567x428.
