@@ -2271,3 +2271,169 @@
 - ray-ban-meta-wayfarer-gen-2-matte-black-transitions-grey-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 972x297.
 
 - ray-ban-meta-wayfarer-gen-2-matte-black-transitions-grey-size53__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 889x310.
+
+- apple-airpods-3rd-generation__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 584x564.
+
+- beats-powerbeats-pro-2__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 909x582.
+
+- berg-vc1569r__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 338x632.
+
+- bose-soundlink-revolve-plus-ii__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 309x712.
+
+- braun-kf7120bk__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 381x700.
+
+- de-longhi-ec235-bk__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 536x544.
+
+- de-longhi-ecam450-65-g__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 729x656.
+
+- de-longhi-essenza-en85-b__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 395x602.
+
+- dreame-g10-pro__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 309x645.
+
+- dreame-h15-pro-heat__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 358x790.
+
+- dreame-m1-robot-vacuum-rpm1ga__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 675x529.
+
+- gorenje-vc1801sfabkr__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 490x733.
+
+- gorenje-vc1825sfbkr__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 456x722.
+
+- gorenje-vc1901g2a__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 676x688.
+
+- gorenje-vc2001tabkg__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 617x725.
+
+- gorenje-vc2222glbu__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 631x658.
+
+- haier-le32k5500t__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 1200x802.
+
+- haier-le43k6500tf__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 851x563.
+
+- harman-kardon-omni-10-plus__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 429x407.
+
+- hisense-43a6k__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 918x561.
+
+- hisense-50a6n__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 965x611.
+
+- hisense-55a63h__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 641x402.
+
+- hisense-hvc6234w__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 160x662.
+
+- hisense-rvcl144ab__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 639x461.
+
+- jbl-jr-pop__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 216x487.
+
+- jbl-partybox-encore__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 521x629.
+
+- jbl-playlist__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 595x295.
+
+- jbl-soundbar-1000__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 636x460.
+
+- jbl-soundbar-1300__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 633x451.
+
+- jbl-soundbar-500__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 558x518.
+
+- jbl-soundbar-800__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 653x457.
+
+- jbl-soundbar-sb270__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 550x431.
+
+- jbl-soundgear-bta__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 594x215.
+
+- jbl-wind-2__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 465x530.
+
+- jvc-lt32m395s__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 903x593.
+
+- jvc-lt32m590__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 759x500.
+
+- karcher-fcv-3eu__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 655x725.
+
+- karcher-kb5__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 312x716.
+
+- karcher-se-5-eu__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 470x563.
+
+- lg-32lq630b6la__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 955x612.
+
+- lg-43nano796pc__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 622x399.
+
+- lg-43ut81006la__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 649x428.
+
+- lg-50ur78006lk__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 683x426.
+
+- lg-55nano80t6a__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 630x394.
+
+- lg-55ur78006lk__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 683x426.
+
+- lg-vc73189nhtr__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 597x725.
+
+- logitech-g29-driving-force-racing-wheel__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 700x400.
+
+- logitech-g923-trueforce-racing-wheel__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 724x333.
+
+- marshall-emberton-ii__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 570x280.
+
+- marshall-monitor-ii-anc__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 526x609.
+
+- nokia-150-2023__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 365x548.
+
+- panasonic-mc-cg713__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 449x698.
+
+- panasonic-mc-cg715__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 774x998.
+
+- panasonic-mc-cg717r149__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 781x994.
+
+- panasonic-mc-cl603g149__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 556x996.
+
+- philips-ste3150-20__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 140x746.
+
+- philips-xb2042-01__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 825x885.
+
+- philips-xd3030-01__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 320x404.
+
+- razer-hammerhead-hyperspeed__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 328x282.
+
+- samsung-ue43au7540uxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 482x313.
+
+- samsung-ue43du8000uxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 868x533.
+
+- samsung-ue43u8000fuxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 569x348.
+
+- samsung-ue50au7140uxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 493x325.
+
+- samsung-ue50u8000fuxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 569x348.
+
+- samsung-ue55bu8000uxce__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 468x288.
+
+- samsung-ue55bu8500uxce__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 460x292.
+
+- samsung-ue55du7100uxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 704x470.
+
+- samsung-ue85cu7100uxru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 906x585.
+
+- samsung-vc18m21c0vr__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 440x650.
+
+- samsung-vc20m251awb__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 449x717.
+
+- sony-ps4-gold-wireless-headset__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 289x474.
+
+- sony-pulse-3d-wireless-headset__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 561x614.
+
+- tefal-dt2022e1__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 335x717.
+
+- tefal-dt3050e1__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 488x729.
+
+- toshiba-50c350me__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 934x591.
+
+- toshiba-55c350me__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 560x355.
+
+- toshiba-65c350me__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 1436x903.
+
+- xiaomi-a-l43ma-afru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 667x430.
+
+- xiaomi-a-l43ma-auru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 667x430.
+
+- xiaomi-a2-l32m8-a2ru__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 689x452.
+
+- xiaomi-mijia-handheld-garment-steamer-mjgtj01__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 335x525.
+
+- xiaomi-redmi-pad-pro__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 485x571.
+
+- xiaomi-robot-vacuum-x20-plus-bhr8124eu__main.webp: LikeMobile shop photo, background removed on PhotoRoom/Adobe website; LikeMobile 2026-10-17; product 384x649.
