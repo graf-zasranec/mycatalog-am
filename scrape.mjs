@@ -572,8 +572,12 @@ function pixelMatrix(html, colors) {
     const p = { memory: mem, color: col, 'sim card': simVal };
     // wholesalePrice is the CASH price - see pixelCash() - while "price" is the instalment
     // figure. Reading the wrong one inflated every pixel offer by about a tenth.
-    const price = Math.round(Number(v.wholesalePrice) > 0 ? Number(v.wholesalePrice)
-      : Number(v.salePrice) > 0 ? Number(v.salePrice) : Number(v.price));
+    // The cash price sits 3-9% under the instalment one. Far below that it is a typo on pixel's
+    // side (iPhone 17 512GB eSIM: 494 000 instalment, 364 000 "cash", the 256GB's level), so the
+    // instalment price stands rather than a phantom deal.
+    const ws = Number(v.wholesalePrice), list = Number(v.price);
+    const price = Math.round(ws > 0 && !(list > 0 && ws < list * 0.85) ? ws
+      : Number(v.salePrice) > 0 ? Number(v.salePrice) : list);
     if (!(price > 1000)) continue;
     const cap = capOf(p.memory);
     // the same label often carries the memory too - "8/128 GB" is both
@@ -1243,11 +1247,15 @@ if (process.argv[2] === '--selftest') {
       properties: [{ title: 'Գույն', valueTitle: 'Black' },
                    { title: 'Հիշողություն', valueTitle: '256 ԳԲ' },
                    { title: 'Սիմ Քարտ', valueTitle: 'Nano-SIM+eSIM' }] },
+    { quantity: 3, price: 494000, salePrice: 0, wholesalePrice: 364000,   // pixel's own typo, 2026-10-17
+      properties: [{ title: 'Գույն', valueTitle: 'Black' },
+                   { title: 'Հիշողություն', valueTitle: '512 ԳԲ' }] },
   ]) + ';';
   {
     const m = pixelMatrix(PXV, null).sort((a, b) => a.price - b.price);
-    // two capacities, and the tray build kept apart from the eSIM one at the same capacity
-    const want = [[299000, 128, undefined], [339000, 256, undefined], [559000, 256, false]];
+    // two capacities, the tray build kept apart from the eSIM one at the same capacity, and a
+    // "cash" price 26% under the instalment one read as the typo it is
+    const want = [[299000, 128, undefined], [339000, 256, undefined], [494000, 512, undefined], [559000, 256, false]];
     if (m.length !== want.length) { bad++; console.log(`FAIL pixelMatrix got ${m.length} sku(s), want ${want.length}`); }
     else for (let i = 0; i < want.length; i++) {
       const g = m[i];
@@ -1335,7 +1343,8 @@ if (process.argv[2] === '--selftest') {
     ['MacBook Pro M5 Max 16GB RAM', undefined],   // a capacity is not a screen
     ['MacBook Pro M5 512GB', undefined],
     ['Macbook Air M5 16/512 MDHE4LLA Midnight', undefined],   // 16 GB of memory, not a 16" Air
-    ['Macbook Air M5 13 16/512 Midnight', 13]];               // ...and the screen still reads
+    ['Macbook Air M5 13 16/512 Midnight', 13],
+    ['Macbook Pro 16 /M5 Pro/24GB RAM', 16]];                  // istyle: "16 /M5" is the screen, only "/digit" is memory               // ...and the screen still reads
   for (const [txt, want] of scrCases) {
     const got = screenOf(txt, LAP);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
@@ -1533,7 +1542,7 @@ function screenOf(title, id) {
   // A bare digit afterwards is NOT a reason to refuse any more: it was there to stop "14 2" being
   // read as a plain 14, and the decimal forms above now match that case themselves, first. Keeping
   // it also threw away "Macbook Air M5 13 16/512", where the 13 is exactly what we are after.
-  const m = String(title || '').match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/))/i);
+  const m = String(title || '').match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\s*\d))/i);
   if (!m) return undefined;
   return Math.trunc(parseFloat(m[1].replace(/[\s-]/, '.')));
 }
