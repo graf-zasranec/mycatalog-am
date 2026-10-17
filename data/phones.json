@@ -2637,7 +2637,8 @@
    "iPad 11",
    "iPad Wi-Fi 11\"",
    "Պլանշետ Apple iPad Wi-Fi 11\"",
-   "iPad 11 (2025) A16"
+   "iPad 11 (2025) A16",
+   "Apple iPad 2025"
   ],
   "sources": [
    "kimovil"
@@ -2880,7 +2881,8 @@
    "iPad Air 13 M4",
    "Apple iPad Air 13 M4",
    "iPad Air 13 2026",
-   "Apple iPad Air 13 2026"
+   "Apple iPad Air 13 2026",
+   "iPad 11 Air M4"
   ],
   "sources": [
    "kimovil",
@@ -3140,7 +3142,15 @@
   "brand": "Apple",
   "name": "iPad Mini 7",
   "aliases": [
-   "iPad Mini 7 WiFi"
+   "iPad Mini 7 WiFi",
+   "A2993",
+   "A2995",
+   "MXN73",
+   "MXN63",
+   "MXN83",
+   "MXN93",
+   "MXNA3",
+   "MXPP3"
   ],
   "tier": "mid",
   "priceAmd": 223000,
@@ -5851,7 +5861,9 @@
    "Apple Watch Series 12 GPS 46mm",
    "Watch Series 12 GPS 46mm",
    "Watch Series 12 GPS 42mm",
-   "Apple Watch Series 12 GPS 42mm"
+   "Apple Watch Series 12 GPS 42mm",
+   "Apple Watch Series 12 42mm",
+   "Apple Watch Series 12 46mm"
   ],
   "tier": "mid",
   "priceAmd": 194900,
@@ -5950,7 +5962,8 @@
   "aliases": [
    "Apple Watch Ultra 4 GPS + Cellular + Ocean Band",
    "Watch Ultra 4 GPS + Cellular + Trail Loop",
-   "Watch Ultra 4 GPS + Cellular + Milanese Loop"
+   "Watch Ultra 4 GPS + Cellular + Milanese Loop",
+   "Apple Watch Ultra 4"
   ],
   "tier": "upper-mid",
   "priceAmd": 384900,
@@ -14999,7 +15012,8 @@
    "Styler Dyson HS09 Airwrap Co-anda2x",
    "HS09 Co-anda2x",
    "Dyson HS09 Airwrap Co-anda2x",
-   "HS09 Airwrap Co-anda2x"
+   "HS09 Airwrap Co-anda2x",
+   "Airwrap Co-anda2x HS09"
   ]
  },
  {
@@ -15012,7 +15026,8 @@
    "Supersonic HD07 (Iron Fuchsia)",
    "Dyson Supersonic HD07 (Iron Fuchsia)",
    "Supersonic Iron/Fuchsia (HD07)",
-   "Supersonic Schwarz / Nickel BBN (HD07)"
+   "Supersonic Schwarz / Nickel BBN (HD07)",
+   "Dyson HD07 Supersonic"
   ],
   "tier": "mid",
   "priceAmd": 192000,
@@ -15177,7 +15192,8 @@
    "Airwrap HS08 (Ceramic Patina)",
    "Dyson Airwrap HS08 (Ceramic Patina)",
    "Dyson Airwrap HS08",
-   "Airwrap HS08 Red Velvet / Gold"
+   "Airwrap HS08 Red Velvet / Gold",
+   "HS08 Airwrap ID"
   ],
   "tier": "mid",
   "priceAmd": 184000,
@@ -15240,7 +15256,8 @@
    "AirStarit",
    "AirStarit Plum",
    "Dyson AirStarit (HT01) Jasper Plum",
-   "Dyson AirStarit (HT01) Kanzan Pink"
+   "Dyson AirStarit (HT01) Kanzan Pink",
+   "Airsrait HT01"
   ],
   "tier": "mid",
   "priceAmd": 157000,
@@ -15311,7 +15328,8 @@
    "Dyson Airwrap HS05 (Prussian Blue)",
    "Airwrap HS05 (Prussian Blue)",
    "Airwrap HS05 (Blue/Copper)",
-   "Dyson Airwrap HS05 (Blue/Copper)"
+   "Dyson Airwrap HS05 (Blue/Copper)",
+   "Dyson HS05 Airwrap multi-styler Complete Long"
   ],
   "tier": "mid",
   "priceAmd": 199000,
@@ -15392,7 +15410,8 @@
    "Dyson HD16 Supersonic Nural Red Velvet",
    "HD16 Supersonic Vinca Blue/Topaz",
    "Dyson HD16 Supersonic™ Vinca Blue/Topaz",
-   "Dyson HD16 Supersonic Vinca Blue/Topaz"
+   "Dyson HD16 Supersonic Vinca Blue/Topaz",
+   "Supersonic HD16"
   ],
   "tier": "mid",
   "priceAmd": 215000,
@@ -38463,6 +38482,9 @@
   "category": "phone",
   "sources": [
    "kimovil"
+  ],
+  "aliases": [
+   "Samsung Galaxy 26"
   ]
  },
  {
@@ -72901,7 +72923,8 @@
    "Apple TV 4K A2843",
    "Apple TV MN893RU/A",
    "Apple TV 4K WiBACF Ethernet 128GB MN893RU/A",
-   "Apple TV MN893 (128GB) 4K (Wi-Fi, Ethernet) 2022 MN893LL/A"
+   "Apple TV MN893 (128GB) 4K (Wi-Fi, Ethernet) 2022 MN893LL/A",
+   "MN873"
   ],
   "tier": "mid",
   "released": "2022",
@@ -82649,6 +82672,420 @@
   ],
   "unsure": [
    "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-tab-s12-ultra",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S12 Ultra",
+  "tier": "flagship",
+  "released": "2026",
+  "priceAmd": 590900,
+  "priceAmdMax": 913900,
+  "popularity": 50,
+  "accent": "#5C6470",
+  "display": {
+   "size": 14.6,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2960x1848",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 9500",
+   "process": "3 nm",
+   "cpu": "1x4.21 GHz C1-Ultra + 3x3.5 GHz C1-Premium + 4x2.7 GHz C1-Pro"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 590900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 676900
+   },
+   {
+    "ram": 12,
+    "storage": 1024,
+    "priceAmd": 848900
+   }
+  ],
+  "camera": {
+   "main": "13 MP + 8 MP",
+   "front": "12 MP"
+  },
+  "battery": {
+   "capacity": 11600
+  },
+  "body": {
+   "height": 326.3,
+   "width": 208.5,
+   "thickness": 5.1,
+   "weight": 692
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi",
+   "bluetooth": true
+  },
+  "cardSlot": true,
+  "os": "Android, One UI",
+  "colors": [
+   "Gray",
+   "Silver"
+  ],
+  "summaryEn": "Samsung Galaxy Tab S12 Ultra: 14.6-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9500, 12 GB RAM, 11,600 mAh battery, S Pen in the box.",
+  "sources": [
+   "https://mobilecentre.am/product/samsung-galaxy-tab-s12-ultra-wi-fi-256gb-_gray_/34491/",
+   "https://www.samsung.com/uk/tablets/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-tab-s12-plus",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S12+",
+  "tier": "flagship",
+  "released": "2026",
+  "priceAmd": 508900,
+  "priceAmdMax": 594900,
+  "popularity": 50,
+  "accent": "#5C6470",
+  "display": {
+   "size": 12.6,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2800x1752",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 9500",
+   "process": "3 nm",
+   "cpu": "1x4.21 GHz C1-Ultra + 3x3.5 GHz C1-Premium + 4x2.7 GHz C1-Pro"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 508900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 594900
+   }
+  ],
+  "camera": {
+   "main": "13 MP",
+   "front": "12 MP"
+  },
+  "battery": {
+   "capacity": 10600
+  },
+  "body": {
+   "height": 289.5,
+   "width": 187.8,
+   "thickness": 5.3,
+   "weight": 553
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi",
+   "bluetooth": true
+  },
+  "cardSlot": true,
+  "os": "Android, One UI",
+  "colors": [
+   "Gray",
+   "Silver"
+  ],
+  "summaryEn": "Samsung Galaxy Tab S12+: 12.6-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9500, 12 GB RAM, 10,600 mAh battery, S Pen in the box.",
+  "sources": [
+   "https://mobilecentre.am/product/samsung-galaxy-tab-s12+-wi-fi-256gb-_gray_/34477/",
+   "https://www.samsung.com/uk/tablets/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-tab-s11",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S11",
+  "tier": "upper-mid",
+  "released": "2025",
+  "priceAmd": 299000,
+  "priceAmdMax": 397900,
+  "popularity": 50,
+  "accent": "#5C6470",
+  "display": {
+   "size": 11,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2560x1600",
+   "refresh": 120,
+   "brightness": 1600
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 9400+",
+   "process": "3 nm",
+   "cpu": "1x3.63 GHz Cortex-X925 + 3x3.3 GHz Cortex-X4 + 4x2.4 GHz Cortex-A720"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 128,
+    "priceAmd": 299000
+   },
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 397900
+   }
+  ],
+  "camera": {
+   "main": "13 MP",
+   "front": "12 MP"
+  },
+  "battery": {
+   "capacity": 8400
+  },
+  "body": {
+   "height": 253.8,
+   "width": 165.3,
+   "thickness": 5.5,
+   "weight": 469
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi",
+   "bluetooth": true
+  },
+  "cardSlot": true,
+  "os": "Android, One UI",
+  "colors": [
+   "Gray",
+   "Silver"
+  ],
+  "summaryEn": "Samsung Galaxy Tab S11: 11-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9400+, 12 GB RAM, 8,400 mAh battery, S Pen in the box.",
+  "sources": [
+   "https://mobilecentre.am/product/samsung-galaxy-tab-s11-wi-fi-128gb-_gray_/32456/",
+   "https://www.samsung.com/uk/tablets/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-tab-s10-plus",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S10+",
+  "tier": "upper-mid",
+  "released": "2024",
+  "priceAmd": 413900,
+  "priceAmdMax": 413900,
+  "popularity": 50,
+  "accent": "#5C6470",
+  "display": {
+   "size": 12.4,
+   "type": "Dynamic AMOLED 2X",
+   "resolution": "2800x1752",
+   "refresh": 120
+  },
+  "chipset": {
+   "name": "MediaTek Dimensity 9300+",
+   "process": "4 nm",
+   "cpu": "1x3.25 GHz Cortex-X4 + 3x2.85 GHz Cortex-X4 + 4x2.0 GHz Cortex-A720"
+  },
+  "variants": [
+   {
+    "ram": 12,
+    "storage": 256,
+    "priceAmd": 413900
+   },
+   {
+    "ram": 12,
+    "storage": 512,
+    "priceAmd": 413900
+   }
+  ],
+  "camera": {
+   "main": "13 MP + 8 MP",
+   "front": "12 MP"
+  },
+  "battery": {
+   "capacity": 10090
+  },
+  "body": {
+   "height": 285.4,
+   "width": 185.4,
+   "thickness": 5.6,
+   "weight": 571
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi",
+   "bluetooth": true
+  },
+  "cardSlot": true,
+  "os": "Android, One UI",
+  "colors": [
+   "Silver",
+   "Moonstone Gray"
+  ],
+  "summaryEn": "Samsung Galaxy Tab S10+: 12.4-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9300+, 12 GB RAM, 10,090 mAh battery, S Pen in the box.",
+  "sources": [
+   "https://mobilecentre.am/product/samsung-galaxy-tab-s10+-wi-fi-512gb-_silver_/31078/",
+   "https://www.samsung.com/uk/tablets/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "samsung-galaxy-tab-s9-fe-plus",
+  "category": "tablet",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S9 FE+",
+  "tier": "midrange",
+  "released": "2023",
+  "priceAmd": 220900,
+  "priceAmdMax": 251900,
+  "popularity": 50,
+  "accent": "#5C6470",
+  "display": {
+   "size": 12.4,
+   "type": "IPS LCD",
+   "resolution": "2560x1600",
+   "refresh": 90
+  },
+  "chipset": {
+   "name": "Samsung Exynos 1380",
+   "process": "5 nm",
+   "cpu": "4x2.4 GHz Cortex-A78 + 4x2.0 GHz Cortex-A55"
+  },
+  "variants": [
+   {
+    "ram": 8,
+    "storage": 128,
+    "priceAmd": 220900
+   },
+   {
+    "ram": 8,
+    "storage": 256,
+    "priceAmd": 251900
+   }
+  ],
+  "camera": {
+   "main": "8 MP + 8 MP",
+   "front": "12 MP"
+  },
+  "battery": {
+   "capacity": 10090
+  },
+  "body": {
+   "height": 285.4,
+   "width": 185.4,
+   "thickness": 6.5,
+   "weight": 628,
+   "ip": "IP68"
+  },
+  "connectivity": {
+   "wifi": "Wi-Fi",
+   "bluetooth": true
+  },
+  "cardSlot": true,
+  "os": "Android, One UI",
+  "colors": [
+   "Light Green",
+   "Light Pink",
+   "Silver",
+   "Gray"
+  ],
+  "summaryEn": "Samsung Galaxy Tab S9 FE+: 12.4-inch IPS LCD display, Samsung Exynos 1380, 8 GB RAM, 10,090 mAh battery, S Pen in the box.",
+  "sources": [
+   "https://mobilecentre.am/product/samsung-galaxy-tab-s9-fe+-wi-fi-128gb-_light-green_/29382/",
+   "https://www.samsung.com/uk/tablets/"
+  ],
+  "unsure": [
+   "popularity"
+  ]
+ },
+ {
+  "id": "apple-iphone-duo",
+  "category": "phone",
+  "brand": "Apple",
+  "name": "iPhone Duo",
+  "tier": "flagship",
+  "released": "2026-10",
+  "priceAmd": 1119000,
+  "priceAmdMax": 1119000,
+  "popularity": 70,
+  "accent": "#2B3445",
+  "display": {
+   "size": 7.6,
+   "type": "LTPO Super Retina XDR OLED",
+   "resolution": "2670x1878",
+   "refresh": 120,
+   "brightness": 3000,
+   "cover": "5.4-inch Super Retina XDR"
+  },
+  "chipset": {
+   "name": "Apple A20 Pro",
+   "gpu": "Apple GPU (7-core)"
+  },
+  "variants": [
+   {
+    "ram": null,
+    "storage": 256,
+    "priceAmd": 1119000
+   },
+   {
+    "ram": null,
+    "storage": 512,
+    "priceAmd": 1119000
+   },
+   {
+    "ram": null,
+    "storage": 1024,
+    "priceAmd": 1119000
+   },
+   {
+    "ram": null,
+    "storage": 2048,
+    "priceAmd": 1119000
+   }
+  ],
+  "camera": {
+   "modules": 2,
+   "main": "48 MP"
+  },
+  "body": {
+   "height": 164.6,
+   "width": 117.8,
+   "thickness": 5.2,
+   "weight": 254,
+   "materials": "Grade 5 titanium frame and hinge, Ceramic Shield front and back",
+   "folded": "117.8 x 84.1 x 11.3 mm"
+  },
+  "connectivity": {
+   "network": "5G",
+   "sim": "eSIM + eSIM"
+  },
+  "os": "iOS 27",
+  "colors": [
+   "Black"
+  ],
+  "summaryEn": "Apple's first foldable: a 7.6-inch inner and 5.4-inch outer Super Retina XDR display, A20 Pro, 48 MP dual camera, titanium body 5.2 mm thin unfolded, 254 g.",
+  "sources": [
+   "https://www.pixel.am/am/product/iphone-duo",
+   "https://www.phonearena.com/news/the-new-iphone-duo-is-here_id183191"
+  ],
+  "unsure": [
+   "popularity",
+   "colors"
   ]
  }
 ]

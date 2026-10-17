@@ -2472,3 +2472,15 @@
 
 - sony-ps5-slim-digital__main.webp: the former sony-ps5-slim photo (no disc slot = Digital Edition).
 - dyson-ht01-airstrait-straightener-plum__kanzan-pink.webp: from the merged dyson-airstarit-kanzan product.
+
+- samsung-galaxy-tab-s12-ultra__gray.webp: official maker photo, transparent original; samsung.com/uk colour render (back+front), cut on Adobe website; product 574x334.
+
+- samsung-galaxy-tab-s12-plus__gray.webp: official maker photo, transparent original; Mobile Centre listing photo, cut on Adobe website; product 466x322.
+
+- samsung-galaxy-tab-s11__gray.webp: official maker photo, transparent original; samsung.com/uk colour render (back+front), cut on Adobe website; product 619x318.
+
+- samsung-galaxy-tab-s10-plus__silver.webp: official maker photo, transparent original; Mobile Centre listing photo, cut on Adobe website; product 365x255.
+
+- samsung-galaxy-tab-s9-fe-plus__light-green.webp: official maker photo, transparent original; Mobile Centre listing photo, cut on Adobe website; product 494x345.
+
+- apple-iphone-duo__main.webp: official maker photo, transparent original; Pixel listing render (transparent); product 791x516.
