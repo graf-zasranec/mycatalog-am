@@ -2241,3 +2241,33 @@
 - xiaomi-curved-gaming-g34wqi__main.webp: official maker photo, transparent original; official transparent packshot (mi.com / roborock.com); Mi Armenia import 2026-10-16; product 1297x814.
 
 - roborock-saros-z70__main.webp: official maker photo, transparent original; official transparent packshot (mi.com / roborock.com); Mi Armenia import 2026-10-16; product 710x757.
+
+- oakley-meta-hstn-black-clear__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 994x352.
+
+- oakley-meta-hstn-black-prizm-black-polarized__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1198x425.
+
+- oakley-meta-hstn-black-transitions-amethyst__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 962x375.
+
+- oakley-meta-hstn-brown-smoke-prizm-deep-water-polarized__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1016x477.
+
+- oakley-meta-hstn-warm-grey-prizm-ruby__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1163x414.
+
+- ray-ban-meta-headliner-gen-2-matte-black-clear-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1199x421.
+
+- ray-ban-meta-headliner-gen-2-matte-black-polar-gradient-graphite-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1190x418.
+
+- ray-ban-meta-headliner-gen-2-shiny-black-g15-green-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 934x326.
+
+- ray-ban-meta-headliner-gen-2-shiny-black-transitions-sapphire-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1196x419.
+
+- ray-ban-meta-skyler-gen-2-shiny-black-g15-green-size52__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 726x254.
+
+- ray-ban-meta-wayfarer-gen-2-matte-black-clear-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 943x302.
+
+- ray-ban-meta-wayfarer-gen-2-matte-black-polar-gradient-graphite-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 758x263.
+
+- ray-ban-meta-wayfarer-gen-2-matte-black-polar-gradient-graphite-size53__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 1196x417.
+
+- ray-ban-meta-wayfarer-gen-2-matte-black-transitions-grey-size50__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 972x297.
+
+- ray-ban-meta-wayfarer-gen-2-matte-black-transitions-grey-size53__main.webp: official maker photo, transparent original; REDstore listing render (Luxottica official) cut in PhotoRoom (logged-in), 2026-10-17; product 889x310.
