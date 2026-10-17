@@ -3120,3 +3120,5 @@
 - toshiba-vc-clx50c__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 165x643.
 
 - xiaomi-air-fryer-4-5l-bhr8234eu__main.webp: official maker photo, transparent original; VLV product photo (2026-10-17); product 401x505.
+
+- hisense-hvc20e3h2tpa__main.webp: official maker photo, transparent original; Amazon.de product photo, Adobe cut (2026-10-17); product 1047x1479.
