@@ -79262,21 +79262,26 @@
     "audio": {
       "form": "tws",
       "conn": "wireless",
-      "anc": true
+      "anc": true,
+      "transparency": true
     },
     "body": {
       "ip": "IPX4"
     },
-    "summaryEn": "Beats Powerbeats Pro 2.",
+    "summaryEn": "Workout earbuds with adjustable earhooks, active noise cancellation, Transparency mode, heart-rate monitoring, the Apple H2 chip and up to 10 hours of playback (45 hours with the charging case).",
     "sources": [
       "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-electric-orange",
       "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-quick-sand",
       "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-hyper-purple",
-      "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-jet-black"
+      "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-jet-black",
+      "https://www.apple.com/shop/product/mx733ll/a/powerbeats-pro-2-high-performance-earbuds-quick-sand"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Apple H2"
+    }
   },
   {
     "id": "jbl-wind-2",
@@ -79612,18 +79617,34 @@
       "Black"
     ],
     "display": {},
-    "battery": {},
-    "body": {
-      "ip": "IP67"
+    "battery": {
+      "life": "30+ h",
+      "chargeTime": "3 h"
     },
-    "summaryEn": "Marshall Emberton II.",
+    "body": {
+      "ip": "IP67",
+      "weight": 700,
+      "height": 68,
+      "width": 160,
+      "thickness": 76
+    },
+    "summaryEn": "Compact stereo Bluetooth speaker with 30+ hours of playback, IP67 dust and water resistance, USB-C charging and a 700 g body.",
     "sources": [
       "https://likemobile.am/en/marshall-emberton-ii-cream",
-      "https://likemobile.am/en/marshall-emberton-ii"
+      "https://likemobile.am/en/marshall-emberton-ii",
+      "https://www.marshall.com/us/en/product/emberton-ii?pid=1006788"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.1",
+      "ports": "USB-C (charging)"
+    },
+    "audio": {
+      "frequency": "60–20,000 Hz",
+      "driver": "2 × 2″ full-range drivers; 2 passive radiators"
+    }
   },
   {
     "id": "bose-soundlink-revolve-plus-ii",
@@ -79953,7 +79974,10 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000,
+      "suction": "430 W",
+      "dust": "6 L"
     },
     "summaryEn": "Panasonic MC-CG713 Canister Vacuum.",
     "sources": [
@@ -80028,7 +80052,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2100,
+      "noise": "65 dB"
     },
     "summaryEn": "Panasonic MC-CG715 Canister Vacuum.",
     "sources": [
@@ -82572,7 +82598,8 @@
       "Green"
     ],
     "battery": {
-      "playback": 20
+      "playback": 20,
+      "life": "≤20 h (ANC enabled)"
     },
     "audio": {
       "type": "Over-ear, active noise cancellation",
@@ -82595,7 +82622,8 @@
     "summaryEn": "The original Apple AirPods Max from 2020, charged over Lightning: active noise cancellation, Transparency mode, spatial audio, 20 hours of battery.",
     "sources": [
       "https://likemobile.am/en/apple-airpods-max-",
-      "https://support.apple.com/en-us/111853"
+      "https://support.apple.com/en-us/111858",
+      "https://www.apple.com/newsroom/2020/12/apple-introduces-airpods-max-the-magic-of-airpods-in-a-stunning-over-ear-design/"
     ],
     "unsure": [
       "popularity"
@@ -86508,7 +86536,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 700
     },
     "summaryEn": "Bosch BGC05AAA1 Vacuum Cleaner.",
     "sources": [
@@ -87041,7 +87070,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1000
     },
     "summaryEn": "Braun KF1100 Coffee Maker.",
     "sources": [
@@ -87324,7 +87354,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1300,
+      "volume": 1.1
     },
     "summaryEn": "De'Longhi EC685 Coffee Maker.",
     "sources": [
@@ -87365,7 +87397,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "volume": 1.1
     },
     "summaryEn": "De'Longhi EC885 Coffee Maker.",
     "sources": [
@@ -87476,7 +87509,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1400,
+      "volume": 1.7
     },
     "summaryEn": "De'Longhi EC9255 Coffee Machine.",
     "sources": [
@@ -87551,7 +87586,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "volume": 2
     },
     "summaryEn": "De'Longhi EC9555 Coffee Machine.",
     "sources": [
@@ -87839,7 +87875,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM220.50 Coffee Machine.",
     "sources": [
@@ -87986,7 +88024,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM290.61 Coffee Machine.",
     "sources": [
@@ -88097,7 +88137,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450
     },
     "summaryEn": "De'Longhi ECAM320.60 Coffee Machine.",
     "sources": [
@@ -88725,7 +88766,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.4
     },
     "summaryEn": "De'Longhi EXAM440.55 Coffee Machine.",
     "sources": [
@@ -88940,7 +88983,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1300
     },
     "summaryEn": "Dreame AHD51 Pocket Hair Dryer.",
     "sources": [
@@ -88979,7 +89023,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1500
     },
     "summaryEn": "Dreame AHD52 Pocket Ultra Hair Dryer.",
     "sources": [
@@ -89020,7 +89065,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1200
     },
     "summaryEn": "Dreame AHG11A Hairdryer Mini.",
     "sources": [
@@ -89126,7 +89172,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1300
     },
     "summaryEn": "Dreame AMF18A AirStyle Pro Hair Dryer.",
     "sources": [
@@ -89892,7 +89939,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 800
     },
     "summaryEn": "Hisense HVC20E1H2CA Vacuum Cleaner.",
     "sources": [
@@ -89925,7 +89973,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 800
     },
     "summaryEn": "Hisense HVC20E3H2TPA Vacuum Cleaner.",
     "sources": [
@@ -90387,7 +90436,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 600
     },
     "summaryEn": "Karcher AD4 Premium Vacuum Cleaner.",
     "sources": [
@@ -90519,7 +90569,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher KWD1 W V Vacuum Cleaner.",
     "sources": [
@@ -90684,7 +90735,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1100
     },
     "summaryEn": "Karcher VC2 KAP Vacuum Cleaner.",
     "sources": [
@@ -90750,7 +90802,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 500
     },
     "summaryEn": "Karcher VCH4UV Clean Vacuum Cleaner.",
     "sources": [
@@ -90816,7 +90869,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher WD3 S V-17/4/20 Vacuum Cleaner.",
     "sources": [
@@ -90849,7 +90903,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher WD3 V-17/4/20 Vacuum Cleaner.",
     "sources": [
@@ -90882,7 +90937,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher WD4 S Go!Further Vacuum Cleaner.",
     "sources": [
@@ -90915,7 +90971,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher WD4 S V-20/5/22 Vacuum Cleaner.",
     "sources": [
@@ -90948,7 +91005,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1100
     },
     "summaryEn": "Karcher WD5P V-25/5/22 Vacuum Cleaner.",
     "sources": [
@@ -90981,7 +91039,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1100
     },
     "summaryEn": "Karcher WD5S V-25/5/22 Vacuum Cleaner.",
     "sources": [
@@ -91014,7 +91073,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1300
     },
     "summaryEn": "Karcher WD6P S V-30/6/22/T Vacuum Cleaner.",
     "sources": [
@@ -91113,7 +91173,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "LG VC5420NHTCG Vacuum Cleaner.",
     "sources": [
@@ -91146,7 +91207,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "LG VC5420NHTW Vacuum Cleaner.",
     "sources": [
@@ -91179,7 +91241,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "LG VC83209UHA Vacuum Cleaner.",
     "sources": [
@@ -91212,7 +91275,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "LG VC83209UHAS Vacuum Cleaner.",
     "sources": [
@@ -91245,7 +91309,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1600
     },
     "summaryEn": "LG VK69662N Vacuum Cleaner.",
     "sources": [
@@ -91278,7 +91343,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "LG VK89609HQ Vacuum Cleaner.",
     "sources": [
@@ -91479,7 +91545,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1400
     },
     "summaryEn": "Panasonic MC-CG521R149 Vacuum Cleaner.",
     "sources": [
@@ -91515,7 +91582,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1700
     },
     "summaryEn": "Panasonic MC-CG525R149 Vacuum Cleaner.",
     "sources": [
@@ -91553,7 +91621,11 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1900,
+      "noise": "65 dB",
+      "suction": "410 W",
+      "dust": "6 L"
     },
     "summaryEn": "Panasonic MC-CG711 Vacuum Cleaner.",
     "sources": [
@@ -91562,7 +91634,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5000
+    }
   },
   {
     "id": "panasonic-mc-cl601a149",
@@ -91590,7 +91665,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1600
     },
     "summaryEn": "Panasonic MC-CL601A149 Vacuum Cleaner.",
     "sources": [
@@ -91626,7 +91702,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "Panasonic MC-CL605K149 Vacuum Cleaner.",
     "sources": [
@@ -91761,7 +91838,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1700
     },
     "summaryEn": "Panasonic MC-YL631R149 Vacuum Cleaner.",
     "sources": [
@@ -91797,7 +91875,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "Panasonic MC-YL633G149 Vacuum Cleaner.",
     "sources": [
@@ -91833,7 +91912,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Panasonic MC-YL635T149 Vacuum Cleaner.",
     "sources": [
@@ -91869,7 +91949,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2300
     },
     "summaryEn": "Panasonic MC-YL637S149 Vacuum Cleaner.",
     "sources": [
@@ -91905,7 +91986,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1500
     },
     "summaryEn": "Panasonic MC-YL690A149 Vacuum Cleaner.",
     "sources": [
@@ -92532,7 +92614,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Philips FC8586/01 Vacuum Cleaner.",
     "sources": [
@@ -92895,7 +92978,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 850
     },
     "summaryEn": "Philips XB2142/08 Vacuum Cleaner.",
     "sources": [
@@ -93099,7 +93183,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VC18M2110SB Vacuum Cleaner.",
     "sources": [
@@ -93132,7 +93217,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VC18M2150SG Vacuum Cleaner.",
     "sources": [
@@ -93165,7 +93251,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VC18M21B0S2 Vacuum Cleaner.",
     "sources": [
@@ -93198,7 +93285,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VC18M3160VG Vacuum Cleaner.",
     "sources": [
@@ -93231,7 +93319,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "Samsung VC20M255AWB Vacuum Cleaner.",
     "sources": [
@@ -93264,7 +93353,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "Samsung VC20M257AWR Vacuum Cleaner.",
     "sources": [
@@ -93297,7 +93387,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1600
     },
     "summaryEn": "Samsung VCC4326S3A Vacuum Cleaner.",
     "sources": [
@@ -93330,7 +93421,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VCC5241S3K Vacuum Cleaner.",
     "sources": [
@@ -93363,7 +93455,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VCC5251V3R Vacuum Cleaner.",
     "sources": [
@@ -93396,7 +93489,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Samsung VCC8835V37 Vacuum Cleaner.",
     "sources": [
@@ -93429,7 +93523,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Samsung VCC8836V36 Vacuum Cleaner.",
     "sources": [
@@ -93462,7 +93557,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Samsung VCC8837V3P Vacuum Cleaner.",
     "sources": [
@@ -93495,7 +93591,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Samsung VCC885BH36 Vacuum Cleaner.",
     "sources": [
@@ -93528,7 +93625,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Samsung VCC885HH3P Vacuum Cleaner.",
     "sources": [
@@ -93561,7 +93659,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2200
     },
     "summaryEn": "Samsung VCC8876H35 Vacuum Cleaner.",
     "sources": [

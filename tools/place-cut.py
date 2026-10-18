@@ -80,7 +80,9 @@ def main():
         im = Image.fromarray(alpha_from_white(np.array(im.convert('RGB')).astype(np.float32)), 'RGBA')
     else:
         im = im.convert('RGBA')
-    bb = im.split()[3].getbbox()
+    # Some PhotoRoom PNGs leave alpha1 across the otherwise invisible background.
+    # Frame the visible object, so that residue cannot shrink it into a tiny photo.
+    bb = im.getchannel('A').point(lambda a: 255 if a > 2 else 0).getbbox()
     if not bb:
         raise SystemExit(f'{pid}: source is fully transparent')
     c = im.crop(bb)
