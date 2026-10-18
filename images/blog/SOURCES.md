@@ -7,3 +7,7 @@ Retrieved 5 October 2026. Real photographs, cropped to 16:9 and compressed for t
 - `battery-charging-myths.webp`, `.jpg`, `-card.webp`: Circe Denyer, [100 Charged](https://www.publicdomainpictures.net/en/view-image.php?image=272956&picture=100-charged), CC0/public domain as stated on the source page.
 
 `images/social/better-am.jpg` is a locally rendered Better.am brand card. It contains no stock photograph.
+
+# iPhone Duo article
+
+Retrieved 18 October 2026. `iphone-duo-in-armenia.webp`, `.jpg`, `-card.webp` and `iphone-duo-colours.webp` are composed locally from Apple's own iPhone Duo product renders (apple.com finish-select images, Night Sky and Star White), the same renders the iPhone Duo product page uses. Product imagery (c) Apple Inc.

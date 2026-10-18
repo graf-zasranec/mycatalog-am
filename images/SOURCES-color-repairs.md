@@ -3718,3 +3718,5 @@
 - panasonic-mc-cl601a149__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 378x600.
 
 - panasonic-nf-bc1000kxe__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 567x428.
+
+- remarkable-2__main.webp: official maker photo, transparent original; Yerevan Mobile photo, Adobe cut (2026-10-18); product 728x972.
