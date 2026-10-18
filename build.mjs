@@ -885,7 +885,7 @@ const interactiveHome = build({ inline: false, standalone: true });
 const productCSS = [...interactiveHome.split('</head>')[0].matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m => m[1]).join('\n');
 fs.writeFileSync('data/site-ui.css', productCSS);
 const productCSSLink = `<link rel="stylesheet" href="/data/site-ui.css?v=${crypto.createHash('sha256').update(productCSS).digest('hex').slice(0, 10)}">`;
-function interactiveProduct(page, lang, product) {
+function interactiveProduct(page, lang, product, relLinks = '') {
   const rendered = renderProduct(product, lang);
   const image = rendered.main.match(/<img[^>]*id="hpShot"[^>]*>/)?.[0];
   const photo = image?.match(/src="([^"]+)"/)?.[1];
@@ -906,7 +906,8 @@ function interactiveProduct(page, lang, product) {
   const body = interactiveHome.slice(interactiveHome.indexOf('</head>') + 7)
     .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1" data-prerender-product="${product.id}" data-prerender-lang="${lang}">${content}</main>`)
     .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/, `$1${rendered.nav}</nav>`)
-    .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/, `$1${rendered.langs}</span>`);
+    .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/, `$1${rendered.langs}</span>`)
+    .replace('<footer class="ft">', `<footer class="ft"><nav class="shell" aria-label="${esc(catLabel(catOf(product), lang))}">${relLinks}</nav>`);
   return head + '</head>' + emptyDiv(body, 'id="masthero"');
 }
 // The home masthead (cover, stats bar, savings strip) is nested divs; a lazy regex stopped at the
@@ -940,6 +941,13 @@ for (const lang of LANGS) {
     const low = low30(p), seen = offs.map(o => o.seen).filter(Boolean).sort().pop();
     // the same photo the app shows on the card and opens the page on: the first listed colour's own
     const n = nameOf(p), sr = specRows(p, lang);
+    const base = lo != null ? lo : bestOf(p) || 0;
+    const near = phones.filter(q => q.id !== p.id && catOf(q) === cat && bestOf(q)).sort((x, y) => Math.abs(bestOf(x) - base) - Math.abs(bestOf(y) - base)).slice(0, 8);
+    const simLabel = ({hy:'Նման մոդելներ',ru:'Похожие модели',en:'Similar models'})[lang];
+    // The app redraws #main with #/ links, which Google does not follow, so every product page was a
+    // dead end for the crawler (2026-10-18: product pages "Discovered - currently not indexed").
+    // These plain links sit in the footer, outside what the app redraws.
+    const relLinks = `<span class="ft-links"><a href="/${pre}c/${cat}/">${esc(catLabel(cat, lang))}</a>${near.length ? `<span>${simLabel}:</span>${near.map(q => `<a href="/${pre}p/${q.id}/">${esc(nameOf(q))}</a>`).join('')}` : ''}</span>`;
     const ld = [
       { '@context': 'https://schema.org', '@type': 'Product', name: n, brand: { '@type': 'Brand', name: p.brand },
         category: cat, ...(hero ? { image: SITE + hero } : {}), description: DESC(p, lang), url, offers: offerOf(p) },
@@ -959,15 +967,13 @@ ${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="$
 </tbody></table></div>` : ''}
 ${sr.length ? `<h2>${t.specs}</h2>
 <dl>${sr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
-${(() => { const base = lo != null ? lo : bestOf(p) || 0;
-  const near = phones.filter(q => q.id !== p.id && catOf(q) === cat && bestOf(q)).sort((x, y) => Math.abs(bestOf(x) - base) - Math.abs(bestOf(y) - base)).slice(0, 8);
-  return near.length ? `<h2>${({hy:'Նման մոդելներ',ru:'Похожие модели',en:'Similar models'})[lang]}</h2>
-<ul class="sim">${near.map(q => `<li><a href="${R}${pre}p/${q.id}/">${esc(nameOf(q))}</a> — ${t.from(amd(bestOf(q)))}</li>`).join('')}</ul>` : ''; })()}
+${near.length ? `<h2>${simLabel}</h2>
+<ul class="sim">${near.map(q => `<li><a href="${R}${pre}p/${q.id}/">${esc(nameOf(q))}</a> — ${t.from(amd(bestOf(q)))}</li>`).join('')}</ul>` : ''}
 ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>` : ''}
 </main></body></html>
 `;
     fs.mkdirSync(pre + path, { recursive: true });
-    writePage(`${pre}${path}index.html`, interactiveProduct(page, lang, p));
+    writePage(`${pre}${path}index.html`, interactiveProduct(page, lang, p, relLinks));
     sitemapRows.push([url, movedOn(p) || today, 0.7]);
     shared++;
   }
