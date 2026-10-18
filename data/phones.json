@@ -93938,47 +93938,6 @@
     ]
   },
   {
-    "id": "belkin-usb-c-in-ear",
-    "category": "headphones",
-    "brand": "Belkin",
-    "name": "USB-C In-Ear Headphones",
-    "aliases": [
-      "Belkin USB-C In-Ear Headphones G3H0002btBLK (Black)",
-      "Belkin USB-C In-Ear Headphone G3H0002btWHT (White)"
-    ],
-    "tier": "budget",
-    "priceAmd": 13000,
-    "priceAmdMax": 13000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 13000
-      }
-    ],
-    "colors": [
-      "Black",
-      "White"
-    ],
-    "display": {},
-    "battery": {},
-    "audio": {
-      "form": "in-ear",
-      "conn": "wired",
-      "plug": "usb-c"
-    },
-    "summaryEn": "Belkin USB-C In-Ear Headphones.",
-    "sources": [
-      "https://mobilecentre.am/product/belkin-usb-c-in-ear-headphones-g3h0002btblk-_black_/31874/",
-      "https://mobilecentre.am/product/belkin-usb-c-in-ear-headphone-g3h0002btwht-_white_/28969/"
-    ],
-    "unsure": [
-      "popularity"
-    ]
-  },
-  {
     "id": "xiaomi-mi-true-wireless-earbuds-basic-2s",
     "category": "headphones",
     "brand": "Xiaomi",
@@ -94085,43 +94044,6 @@
     "summaryEn": "JBL Live Flex 3.",
     "sources": [
       "https://mobilecentre.am/product/jbl-live-flex-3-true-wireless-noise-cancelling-earphones-with-display-_black_/31305/"
-    ],
-    "unsure": [
-      "popularity"
-    ]
-  },
-  {
-    "id": "belkin-soundform-move-plus",
-    "category": "headphones",
-    "brand": "Belkin",
-    "name": "Soundform Move Plus",
-    "aliases": [
-      "Belkin Soundform Move Plus Headphone (Black)"
-    ],
-    "tier": "budget",
-    "priceAmd": 19900,
-    "priceAmdMax": 19900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 19900
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {},
-    "battery": {},
-    "audio": {
-      "form": "tws",
-      "conn": "wireless"
-    },
-    "summaryEn": "Belkin Soundform Move Plus.",
-    "sources": [
-      "https://mobilecentre.am/product/belkin-soundform-move-plus-headphone-_black_/31297/"
     ],
     "unsure": [
       "popularity"
@@ -94342,60 +94264,33 @@
       "Black"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "playback": 10,
+      "life": "Up to 10 h; 40 h with case (ANC off, AAC, 50% volume); 7 h / 28 h with ANC"
+    },
     "audio": {
       "form": "tws",
       "conn": "wireless",
-      "anc": true
+      "anc": true,
+      "driver": "11 mm bass + 6 mm micro-planar tweeter",
+      "frequency": "20 Hz–40 kHz",
+      "transparency": true
     },
     "summaryEn": "Realme Buds Air 5 Pro.",
     "sources": [
       "https://mobilecentre.am/product/realme-headphone-buds-air-5-pro-_white_/31210/",
-      "https://mobilecentre.am/product/realme-headphone-buds-air-5-pro-_black_/31209/"
+      "https://mobilecentre.am/product/realme-headphone-buds-air-5-pro-_black_/31209/",
+      "https://www.realme.com/in/realme-buds-air-5-pro"
     ],
     "unsure": [
       "popularity"
-    ]
-  },
-  {
-    "id": "belkin-soundform-rise",
-    "category": "headphones",
-    "brand": "Belkin",
-    "name": "Soundform Rise",
-    "aliases": [
-      "Belkin SOUNDFORM Rise True Wireless Earbuds AUC004btWH (White)",
-      "Belkin SOUNDFORM Rise True Wireless Earbuds AUC004btBK (Black)"
     ],
-    "tier": "budget",
-    "priceAmd": 24900,
-    "priceAmdMax": 24900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 24900
-      }
-    ],
-    "colors": [
-      "White",
-      "Black"
-    ],
-    "display": {},
-    "battery": {},
-    "audio": {
-      "form": "tws",
-      "conn": "wireless"
+    "connectivity": {
+      "bluetooth": "5.3"
     },
-    "summaryEn": "Belkin Soundform Rise.",
-    "sources": [
-      "https://mobilecentre.am/product/belkin-soundform-rise-true-wireless-earbuds-auc004btwh-_white_/30348/",
-      "https://mobilecentre.am/product/belkin-soundform-rise-true-wireless-earbuds-auc004btbk-_black_/30347/"
-    ],
-    "unsure": [
-      "popularity"
-    ]
+    "body": {
+      "ip": "IPX5 (earbuds only)"
+    }
   },
   {
     "id": "anker-soundcore-p2i",
@@ -94535,20 +94430,33 @@
       "Gloss White"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "playback": 7,
+      "life": "Up to 7 h; 32 h with case (ANC off, AAC, 50% volume)"
+    },
     "audio": {
       "form": "tws",
       "conn": "wireless",
-      "anc": true
+      "anc": true,
+      "impedance": "32 Ω",
+      "transparency": true
     },
     "summaryEn": "Xiaomi Buds 3.",
     "sources": [
       "https://mobilecentre.am/product/xiaomi-buds-3-gloss-bhr5526gl-_m2111e1_-white/27341/",
-      "https://mobilecentre.am/product/xiaomi-buds-3-carbon-black-bhr5527gl-_m2111e1_/27340/"
+      "https://mobilecentre.am/product/xiaomi-buds-3-carbon-black-bhr5527gl-_m2111e1_/27340/",
+      "https://www.mi.com/global/product/xiaomi-buds-3/specs/",
+      "https://www.mi.com/global/product/xiaomi-buds-3/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "body": {
+      "ip": "IP55 (earbuds only)"
+    }
   },
   {
     "id": "jbl-wave-300-tws",
@@ -94691,13 +94599,13 @@
     "battery": {},
     "audio": {
       "form": "tws",
-      "conn": "wireless",
-      "anc": true
+      "conn": "wireless"
     },
-    "summaryEn": "Realme Buds Q2.",
+    "summaryEn": "Realme Buds Q2 in Black or Blue, with environmental noise reduction for calls and an 88 ms gaming mode. The manufacturer lists up to 20 hours of total battery life.",
     "sources": [
       "https://mobilecentre.am/product/realme-headphone-buds-q2-_blue_/26487/",
-      "https://mobilecentre.am/product/realme-headphone-buds-q2-_black_/26486/"
+      "https://mobilecentre.am/product/realme-headphone-buds-q2-_black_/26486/",
+      "https://www.realme.com/my/newsroom/realme-aiot-grand-launch-season3"
     ],
     "unsure": [
       "popularity"
@@ -94729,20 +94637,29 @@
       "Glacier Grey"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "playback": 6,
+      "life": "Up to 6 h; 28 h with case (ANC off, AAC, 50% volume)",
+      "chargeTime": "Earbuds: approx. 1 h; case: approx. 2.5 h (wired)"
+    },
     "audio": {
       "form": "tws",
       "conn": "wireless",
-      "anc": true
+      "anc": true,
+      "impedance": "32 Ω"
     },
     "summaryEn": "Xiaomi Redmi Buds 3 Pro.",
     "sources": [
       "https://mobilecentre.am/product/xiaomi-redmi-buds-3-pro-_twsej01zm_--graphite-black/26384/",
-      "https://mobilecentre.am/product/xiaomi-redmi-buds-3-pro-_twsej01zm_-glacier-grey/26383/"
+      "https://mobilecentre.am/product/xiaomi-redmi-buds-3-pro-_twsej01zm_-glacier-grey/26383/",
+      "https://www.mi.com/global/product/redmi-buds-3-pro/specs/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "jbl-live-pro-tws",
@@ -94845,20 +94762,33 @@
       "Black"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "playback": 6,
+      "life": "Up to 6 h; 25 h with case (ANC off, AAC, 50% volume); 5 h / 20 h with ANC",
+      "chargeTime": "Earbuds: 1 h; earbuds and case: 2 h"
+    },
     "audio": {
       "form": "tws",
       "conn": "wireless",
-      "anc": true
+      "anc": true,
+      "driver": "10 mm",
+      "transparency": true
     },
     "summaryEn": "Realme Buds Air Pro.",
     "sources": [
       "https://mobilecentre.am/product/realme-headphone-buds-air-pro-_white_/25815/",
-      "https://mobilecentre.am/product/realme-headphone-buds-air-pro-_black_/25814/"
+      "https://mobilecentre.am/product/realme-headphone-buds-air-pro-_black_/25814/",
+      "https://www.realme.com/au/realme-buds-air-pro"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "body": {
+      "ip": "IPX4 (earbuds only)"
+    }
   },
   {
     "id": "nokia-e3500",
@@ -94886,19 +94816,32 @@
       "Blue"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "chargeTime": "2 h"
+    },
     "audio": {
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "10 mm",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "16 Ω",
+      "transparency": true
     },
     "summaryEn": "Nokia E3500.",
     "sources": [
       "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_white_/23497/",
-      "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_blue_/23496/"
+      "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_blue_/23496/",
+      "https://www.nokia.com/sites/default/files/2023-11/nokia-cat-e3500-v4-20200704.pdf"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "body": {
+      "ip": "IPX5"
+    }
   },
   {
     "id": "jbl-everest-110",
