@@ -23,3 +23,10 @@ assert.equal(readLikeMobileProduct(html(detail),'https://likemobile.am/en/redmi-
 assert.throws(()=>readLikeMobileProduct(html(detail),'https://likemobile.am/en/redmi-white'),/identity/);
 assert.throws(()=>readLikeMobileProduct(html({...detail,serverSideProduct:{...detail.serverSideProduct,variants:[detailChild,detailChild]}}),'https://likemobile.am/en/redmi-black'),/ambiguous/);
 console.log('LikeMobile detail: exact child, parent/related minima rejected');
+
+const curatedMap=JSON.parse((await import('node:fs')).readFileSync('data/likemobile-map.json','utf8'));
+assert.equal(curatedMap['https://likemobile.am/en/sony-ps5-slim-digital-edition'].id,'sony-ps5-slim-digital','Digital edition must stay on the Digital product across refreshes');
+const priceOffers=JSON.parse((await import('node:fs')).readFileSync('data/prices.json','utf8')).offers;
+for(const [id,offers] of Object.entries(priceOffers))for(const offer of offers)
+  if(offer.url==='https://likemobile.am/en/sony-ps5-slim-digital-edition')
+    assert.equal(id,'sony-ps5-slim-digital','Published Digital offer must belong to the Digital product');

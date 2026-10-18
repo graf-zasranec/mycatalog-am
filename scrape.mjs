@@ -546,12 +546,13 @@ function pixelVariants(html, colors) {
 //
 // Colour is collapsed to one row per build, because pixel prices every colour of a build
 // identically and three rows differing only in a word read as the listing repeated.
-function pixelMatrix(html, colors) {
+function pixelMatrix(html, colors, productId) {
   const m = html.match(/var\s+PRODUCT_VARIANTS\s*=\s*(\[[\s\S]*?\]);/);
   if (!m) return [];
   let vs;
   try { vs = JSON.parse(m[1]); } catch { return []; }
   const best = new Map();
+  let reviewedHold = false;
   for (const v of vs) {
     // The property NAMES are whatever language the page is in - the crawl reads /am/, where they
     // are Գույն, Հիշողություն and Սիմ Քարտ - so each one is recognised by what its value looks
@@ -572,12 +573,14 @@ function pixelMatrix(html, colors) {
     const p = { memory: mem, color: col, 'sim card': simVal };
     // wholesalePrice is the CASH price - see pixelCash() - while "price" is the instalment
     // figure. Reading the wrong one inflated every pixel offer by about a tenth.
-    // The cash price sits 3-9% under the instalment one. Far below that it is a typo on pixel's
-    // side (iPhone 17 512GB eSIM: 494 000 instalment, 364 000 "cash", the 256GB's level). The
-    // instalment figure is no stand-in - it is not a cash price and outranked the dearer tray
-    // build - so the variant is left out until the shop fixes it.
+    // Hold only the exact reviewed iPhone 17 512GB cash typo (2026-10-17).
+    // Cash/installment percentage differences alone are not evidence of a bad price.
     const ws = Number(v.wholesalePrice), list = Number(v.price);
-    if (ws > 0 && list > 0 && ws < list * 0.85) continue;
+    if (productId === 'apple-iphone-17' && capOf(mem) === 512 &&
+        simBuild(simVal) !== false && ws === 364000 && list === 494000) {
+      reviewedHold = true;
+      continue;
+    }
     const price = Math.round(ws > 0 ? ws : Number(v.salePrice) > 0 ? Number(v.salePrice) : list);
     if (!(price > 1000)) continue;
     const cap = capOf(p.memory);
@@ -602,7 +605,9 @@ function pixelMatrix(html, colors) {
     const had = best.get(k);
     if (!had || row.price < had.price) best.set(k, row);
   }
-  return [...best.values()];
+  const rows = [...best.values()];
+  if (reviewedHold) rows.reviewedHold = true;
+  return rows;
 }
 // istyle publishes every SKU of a product as a JSON array in the page, HTML-escaped. One
 // iPhone 17 Pro is ten variants there - two SIM builds, three capacities, two colours - and the
@@ -1253,9 +1258,9 @@ if (process.argv[2] === '--selftest') {
                    { title: 'Հիշողություն', valueTitle: '512 ԳԲ' }] },
   ]) + ';';
   {
-    const m = pixelMatrix(PXV, null).sort((a, b) => a.price - b.price);
+    const m = pixelMatrix(PXV, null, 'apple-iphone-17').sort((a, b) => a.price - b.price);
     // two capacities, the tray build kept apart from the eSIM one at the same capacity, and a
-    // "cash" price 26% under the instalment one dropped as the typo it is
+    // exact reviewed bad cash price omitted only for this model/configuration
     const want = [[299000, 128, undefined], [339000, 256, undefined], [559000, 256, false]];
     if (m.length !== want.length) { bad++; console.log(`FAIL pixelMatrix got ${m.length} sku(s), want ${want.length}`); }
     else for (let i = 0; i < want.length; i++) {
@@ -1264,6 +1269,16 @@ if (process.argv[2] === '--selftest') {
         bad++; console.log(`FAIL pixelMatrix ${g.price}/${g.storage}/${g.esim} want ${want[i].join('/')}`);
       }
     }
+  }
+  {
+    const sale = 'var PRODUCT_VARIANTS = ' + JSON.stringify([{quantity:3,price:494000,wholesalePrice:364000,
+      properties:[{valueTitle:'Black'},{valueTitle:'512 GB'},{valueTitle:'eSIM'}]}]) + ';';
+    const valid = pixelMatrix(sale, null, 'apple-iphone-16');
+    if (valid.length !== 1 || valid[0].price !== 364000) { bad++; console.log('FAIL Pixel legitimate deep cash discount must remain visible'); }
+    const held = pixelMatrix(sale, null, 'apple-iphone-17');
+    if (held.length || !held.reviewedHold) { bad++; console.log('FAIL Pixel exact reviewed typo must not fall back to the page price'); }
+    const recovered = pixelMatrix(sale.replace('364000','464000'), null, 'apple-iphone-17');
+    if (recovered.length !== 1 || recovered[0].price !== 464000) { bad++; console.log('FAIL Pixel corrected cash price must recover'); }
   }
   // istyle's variant payload, HTML-escaped exactly as the page carries it. Every variant object
   // holds a nested attribute_values array, which is what the old /\{[^{}]*\}/ reader could not
@@ -1861,8 +1876,8 @@ const SHOPS = {
         // - a page with a single SKU says nothing the cash price has not already said, and going
         // through the matrix for it would swap a figure read off the page for one read out of a
         // blob for no gain.
-        const matrix = pixelMatrix(h, cols);
-        if (matrix.length > 1) {
+        const matrix = pixelMatrix(h, cols, id);
+        if (matrix.length > 1 || matrix.reviewedHold) {
           for (const mv of matrix)
             out.push({ id, price: mv.price,
               storage: mv.storage ?? storageOf(title) ?? storageOf(u) ?? v.storage,
