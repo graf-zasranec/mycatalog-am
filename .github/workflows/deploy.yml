@@ -73,6 +73,18 @@ jobs:
           BETTER_REFRESH_RESUME: ${{ github.run_attempt > 1 && '1' || '0' }}
         run: node tools/refresh.mjs
 
+      # What the shops sell that the catalogue lacks - input for the new-model check. An artifact,
+      # not a commit: the repo root is the public Pages site and this file is gitignored for that.
+      - name: Save unmatched shop listings
+        if: always() && steps.prices.outcome == 'success'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: unmatched
+          retention-days: 7
+          overwrite: true
+          if-no-files-found: warn
+          path: data/unmatched.json
+
       - name: Save interrupted refresh checkpoint
         if: always() && steps.prices.outcome != 'success'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
