@@ -36,9 +36,11 @@ const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" 
   .replace(/[^a-z0-9]+/g, ' ').replace(/ seria /g, ' series ').replace(/\s+/g, ' ').trim();
 
 async function vlvInfo(vid) {
+  // plain setTimeout for the same reason as plainGet below: AbortSignal.timeout does not keep Node alive
+  const ac = new AbortController(), timer = setTimeout(() => ac.abort(new Error('timeout')), TIMEOUT_MS);
   try {
     const r = await fetch(`https://vlv.am/api/product-info/${vid}`, { method: 'POST', redirect: 'follow',
-      signal: AbortSignal.timeout(TIMEOUT_MS),
+      signal: ac.signal,
       headers: { 'user-agent': UA, 'content-type': 'application/json', accept: 'application/json' }, body: '{}' });
     if (!r.ok) return 0;
     const t = await r.text();
@@ -56,7 +58,7 @@ async function vlvInfo(vid) {
       .filter(x => /\.(webp|jpe?g|png)$/i.test(x));
     const image = gal.length ? 'https://vlv.am/public/' + gal[0].replace(/^\/+/, '') : '';
     return { price: promo || sell, image };
-  } catch { return { price: 0, image: '' }; }
+  } catch { return { price: 0, image: '' }; } finally { clearTimeout(timer); }
 }
 
 // The status of the last request, for the one caller that needs to tell "this page is gone"
@@ -100,9 +102,12 @@ async function get(url, tries = 2, ua = UA) {
 async function plainGet(url, tries = 2, ua = UA) {
   setStatus(0);
   for (let i = 0; i < tries; i++) {
+    // A plain setTimeout, not AbortSignal.timeout: that timer does not keep Node alive, and on
+    // 2026-10-18 a request left pending with no socket let the run exit 13 mid-REDstore instead
+    // of timing out. tools/stall-exit-test.mjs reproduces it.
+    const ac = new AbortController(), timer = setTimeout(() => ac.abort(new Error('timeout')), TIMEOUT_MS);
     try {
-      const c = AbortSignal.timeout(TIMEOUT_MS);
-      const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal: c, redirect: 'follow' });
+      const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal: ac.signal, redirect: 'follow' });
       setStatus(r.status);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.text();
@@ -111,7 +116,7 @@ async function plainGet(url, tries = 2, ua = UA) {
       if (lastStatus() >= 400 && lastStatus() < 500) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       if (i === tries - 1) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       await sleep(1200);
-    }
+    } finally { clearTimeout(timer); }
   }
   return '';
 }

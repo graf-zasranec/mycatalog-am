@@ -36,6 +36,7 @@ const runAsync = (command, args) => new Promise(done => {
 });
 run(process.execPath, ['scrape.mjs', '--selftest'], true);
 run(process.execPath, ['tools/refresh-recovery-test.mjs'], true);
+run(process.execPath, ['tools/stall-exit-test.mjs'], true);
 run(process.execPath, ['tools/asbc-test.mjs'], true);
 run(process.execPath, ['tools/appzone-test.mjs'], true);
 run(process.execPath, ['tools/likemobile-test.mjs'], true);
