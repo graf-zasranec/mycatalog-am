@@ -10,4 +10,7 @@ assert.deepEqual(canonicalColorPhotos('honor', {black:'alias.webp','midnight-bla
 assert.deepEqual(canonicalColorPhotos('redmi', {titanium:'gray.webp','titan-gray':'gray2.webp',purple:'purple.webp'}, aliases), {gray:'gray.webp',purple:'purple.webp'});
 assert.deepEqual(canonicalColorPhotos('honor', {'black-2048':'special.webp',black:'standard.webp'}, aliases), {'midnight-black-2048':'special.webp','midnight-black':'standard.webp'});
 assert.deepEqual(canonicalColorPhotos('cycle', {black:'b.webp',gray:'g.webp'}, {cycle:{Black:'Gray',Gray:'Black'}}), {black:'b.webp',gray:'g.webp'});
-console.log('CANONICAL_COLORS_PASS: palettes, photo aliases, special configurations and cycles');
+assert.deepEqual(canonicalColorPhotos('unmapped', {Black:'Black.webp','Dark Blue':'Dark Blue.webp',main:'main.webp'}, {}), {black:'Black.webp','dark-blue':'Dark Blue.webp',main:'main.webp'});
+assert.deepEqual(canonicalColorPhotos('honor', {Black:'alias.webp','Midnight Black':'canonical.webp'}, aliases), {'midnight-black':'canonical.webp'});
+assert.deepEqual(canonicalColorPhotos('unmapped', {Black:'legacy.webp',black:'preferred.webp','White-2048':'white.webp'}, {}), {black:'preferred.webp','white-2048':'white.webp'});
+console.log('CANONICAL_COLORS_PASS: palettes, normalized photo keys, aliases, special configurations and cycles');
