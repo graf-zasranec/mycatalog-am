@@ -94089,8 +94089,8 @@
       }
     ],
     "colors": [
-      "White",
-      "Black"
+      "Sunrise Beige",
+      "Astral Black"
     ],
     "display": {},
     "battery": {
@@ -94986,6 +94986,50 @@
     "summaryEn": "A 10.3-inch E Ink paper tablet for handwriting, reading and PDF notes.",
     "sources": [
       "https://www.yerevanmobile.am/en/remarkable-2-paper-tablet.html"
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "smeg-bcc02",
+    "category": "appliance",
+    "brand": "SMEG",
+    "name": "BCC02 Coffee Machine",
+    "aliases": [
+      "SMEG BCC02RDMEU"
+    ],
+    "tier": "mid",
+    "priceAmd": 459900,
+    "priceAmdMax": 459900,
+    "popularity": 35,
+    "accent": "#D05A4E",
+    "variants": [
+      {
+        "priceAmd": 459900
+      }
+    ],
+    "colors": [
+      "Red"
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_machine",
+      "power": 1350,
+      "volume": 1.4
+    },
+    "body": {
+      "height": 336,
+      "width": 180,
+      "thickness": 433,
+      "weight": 8400,
+      "materials": "Plastic body, aluminium front panel"
+    },
+    "summaryEn": "SMEG BCC02 automatic bean-to-cup coffee machine with an integrated grinder, steam wand, 1.4 L water tank and 19 bar pump. Red BCC02RDMEU version.",
+    "sources": [
+      "https://vlv.am/en/Product/39521",
+      "https://www.smeg.com/al/produkte/BCC02RDMEU"
     ],
     "unsure": [
       "popularity"
