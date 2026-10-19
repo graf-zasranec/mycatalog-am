@@ -701,7 +701,7 @@ function istyleVariants(html) {
 }
 // A Magento configurable page describes every one of its real SKUs here: per-child price,
 // stock, colour and capacity. One page therefore yields several offers, each true.
-function magentoChildren(html, colors) {
+function magentoChildren(html, colors, aliases = {}) {
   const cfg = jsonAfter(html, '"jsonConfig":');
   if (!cfg || !cfg.optionPrices || !cfg.index || !cfg.attributes) return [];
   const attrs = Object.values(cfg.attributes);
@@ -741,7 +741,7 @@ function magentoChildren(html, colors) {
       // a fifth swatch next to the four the product actually ships in. Unmapped is unstated.
       // the shop's own word rides along apart, for data/color-aliases.json to name (AllSell's
       // "Light pink"); colour itself stays null when unmapped so enrich()'s fallbacks still run
-      color: (col && colorOf(col, colors)) || null, colorRaw: col || undefined, inStock: pr.is_in_stock !== false,
+      color: (col && colorOf(aliases[col] || col, colors)) || null, colorRaw: col || undefined, inStock: pr.is_in_stock !== false,
       ...(simA ? { esim: simBuild(label(simA, child) || ''), simFromPage: true } : {}) });
   }
   // A child whose colour did not map is not a DIFFERENT colour, it is an unspecified one, and
@@ -1910,6 +1910,8 @@ const SHOPS = {
     name: 'Ucom', site: 'https://shop.ucom.am', note: 'operator shop',
     async run() {
       const out = [], found = [];
+      // Resolve verified shop labels before the shared child filter drops unmapped siblings.
+      const aliases = fs.existsSync('data/color-aliases.json') ? JSON.parse(fs.readFileSync('data/color-aliases.json', 'utf8')) : {};
       // robots.txt disallows every URL with a query string, so pagination is off limits and
       // each category contributes only its first page. Categories, not pages, give breadth.
       // Their own nav links 32 category pages and this used to walk five of them. Breadth is the
@@ -1968,7 +1970,7 @@ const SHOPS = {
         if (!page) continue;
         const cartState = magentoCartState(page);
         if (cartState === false) { out.push({ ...f, price: f.price || 0, inStock: false }); continue; }
-        const kids = magentoChildren(page, (phoneById[f.id] || {}).colors);
+        const kids = magentoChildren(page, (phoneById[f.id] || {}).colors, aliases[f.id] || {});
         if (!kids.length) {
           // No readable variants is not confirmation of an old configuration's price.
           if (f.fromBacklog) continue;
@@ -1979,7 +1981,7 @@ const SHOPS = {
         for (const k of kids)
           out.push({ id: f.id, title: f.title, url: f.url, image: f.image,
                      price: k.price, storage: k.storage ?? storageOf(f.title) ?? storageOf(f.url),
-                     ram: k.ram, color: k.color, inStock: k.inStock !== false });
+                     ram: k.ram, color: k.color, colorRaw: k.colorRaw, inStock: k.inStock !== false });
       }
       return out;
     }
