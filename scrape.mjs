@@ -28,6 +28,16 @@ const DELAY_MS = 400;
 const TIMEOUT_MS = 30000;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+// Every shop request ends by TIMEOUT_MS, whether or not fetch honours the abort. Twice (2026-10-18
+// and -19) REDstore was left awaiting a request that held no socket and ignored its abort; with
+// nothing else keeping Node alive the whole refresh exited 13 and saved nothing. The race settles
+// the wait itself, and a plain setTimeout keeps Node alive (AbortSignal.timeout's timer does not).
+// tools/stall-exit-test.mjs reproduces both cases.
+function timed(work) {
+  const ac = new AbortController(); let timer;
+  const dead = new Promise((_, reject) => { timer = setTimeout(() => { const e = new Error('timeout'); ac.abort(e); reject(e); }, TIMEOUT_MS); });
+  return Promise.race([work(ac.signal), dead]).finally(() => clearTimeout(timer));
+}
 // A shop's own misspelling of a word it uses across its whole catalogue. AllSell slugs the
 // Apple Watch Series 11 ".../apple-watch-seria-11", which matched nothing, so a watch it
 // sells at 155,400 was absent from the site altogether. "seria" names nothing else here, so
@@ -36,14 +46,13 @@ const norm = s => String(s).toLowerCase().split(String.fromCharCode(43)).join(" 
   .replace(/[^a-z0-9]+/g, ' ').replace(/ seria /g, ' series ').replace(/\s+/g, ' ').trim();
 
 async function vlvInfo(vid) {
-  // plain setTimeout for the same reason as plainGet below: AbortSignal.timeout does not keep Node alive
-  const ac = new AbortController(), timer = setTimeout(() => ac.abort(new Error('timeout')), TIMEOUT_MS);
   try {
-    const r = await fetch(`https://vlv.am/api/product-info/${vid}`, { method: 'POST', redirect: 'follow',
-      signal: ac.signal,
-      headers: { 'user-agent': UA, 'content-type': 'application/json', accept: 'application/json' }, body: '{}' });
-    if (!r.ok) return 0;
-    const t = await r.text();
+    const t = await timed(async signal => {
+      const r = await fetch(`https://vlv.am/api/product-info/${vid}`, { method: 'POST', redirect: 'follow', signal,
+        headers: { 'user-agent': UA, 'content-type': 'application/json', accept: 'application/json' }, body: '{}' });
+      return r.ok ? r.text() : null;
+    });
+    if (t == null) return 0;
     // Regex literals, not RegExp(string): a built-up pattern needs the backslash doubled, and
     // getting that wrong fails silently - every product falls back and the fix looks applied.
     const promo = Number((t.match(/"promo_price":(\d+)/) || [])[1]) || 0;
@@ -58,7 +67,7 @@ async function vlvInfo(vid) {
       .filter(x => /\.(webp|jpe?g|png)$/i.test(x));
     const image = gal.length ? 'https://vlv.am/public/' + gal[0].replace(/^\/+/, '') : '';
     return { price: promo || sell, image };
-  } catch { return { price: 0, image: '' }; } finally { clearTimeout(timer); }
+  } catch { return { price: 0, image: '' }; }
 }
 
 // The status of the last request, for the one caller that needs to tell "this page is gone"
@@ -102,21 +111,19 @@ async function get(url, tries = 2, ua = UA) {
 async function plainGet(url, tries = 2, ua = UA) {
   setStatus(0);
   for (let i = 0; i < tries; i++) {
-    // A plain setTimeout, not AbortSignal.timeout: that timer does not keep Node alive, and on
-    // 2026-10-18 a request left pending with no socket let the run exit 13 mid-REDstore instead
-    // of timing out. tools/stall-exit-test.mjs reproduces it.
-    const ac = new AbortController(), timer = setTimeout(() => ac.abort(new Error('timeout')), TIMEOUT_MS);
     try {
-      const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal: ac.signal, redirect: 'follow' });
-      setStatus(r.status);
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return await r.text();
+      return await timed(async signal => {
+        const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal, redirect: 'follow' });
+        setStatus(r.status);
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      });
     } catch (e) {
       // A 404 is an answer. Asking again wastes a request and the wait in front of it.
       if (lastStatus() >= 400 && lastStatus() < 500) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       if (i === tries - 1) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       await sleep(1200);
-    } finally { clearTimeout(timer); }
+    }
   }
   return '';
 }
