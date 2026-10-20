@@ -749,8 +749,10 @@
   },
   "de-longhi-ecam290-61": {
     "colours": {
-      "black": "images/cut/de-longhi-ecam290-61__black.webp"
-    }
+      "black": "images/cut/de-longhi-ecam290-61__black.webp",
+      "silver-black": "images/cut/de-longhi-ecam290-61__silver-black.webp"
+    },
+    "reason": "Exact ECAM290.61.SB Silver/Black VLV gallery photo, native 902x902 original saved in images/_src; crop removes two detached drinks at right, original attached cup retained. Adobe background removal, one-pixel outer matte cleanup. Product 733px high, no upscale or recolouring."
   },
   "apple-airpods-max-lightning-2020": {
     "colours": {
@@ -901,5 +903,11 @@
       "blue": "images/cut/realme-buds-q2__blue.webp"
     },
     "reason": "Exact global RMA2010 realme Buds Q2 Black/Blue manufacturer renders from official Bangladesh/Pakistan product page; matching poses, case and two earbuds. Adobe background removal and banner-text cleanup outside the product; native pixels, no upscale or recolouring."
+  },
+  "samsung-galaxy-tab-s12-ultra": {
+    "colours": {
+      "silver": "images/cut/samsung-galaxy-tab-s12-ultra__silver.webp"
+    },
+    "reason": "Exact Samsung SM-X940 Silver official 800x600 front-and-back press image, PhotoRoom free transparent cutout. Native product over 700px wide; no enlargement or recolouring. Manually reviewed on dark background."
   }
 }
