@@ -685,8 +685,10 @@
     "colours": {
       "blue": "images/cut/panasonic-mc-cg713__blue.webp",
       "black": "images/cut/panasonic-mc-cg713__black.webp",
-      "red": "images/cut/panasonic-mc-cg713__red.webp"
-    }
+      "red": "images/cut/panasonic-mc-cg713__red.webp",
+      "white": "images/cut/panasonic-mc-cg713__white.webp"
+    },
+    "reason": "Exact MC-CG713W149 White/Black Raneen merchant photo, complete vacuum with hose and head in frame. Adobe transparent export; native visible product 627px, no enlargement."
   },
   "panasonic-mc-cg715": {
     "colours": {
@@ -763,10 +765,11 @@
   },
   "de-longhi-ec9555": {
     "colours": {
-      "black": "images/cut/de-longhi-ec9555__black.webp"
+      "black": "images/cut/de-longhi-ec9555__black.webp",
+      "metal": "images/cut/de-longhi-ec9555__metal.webp"
     },
     "main": "images/cut/de-longhi-ec9555__main.webp",
-    "reason": "Exact verified finish, reviewed on2026-10-18; retain matching angle and transparent cutout."
+    "reason": "Exact EC9555.M Metal packshot from Briscoes, detached drink excluded, attached espresso glasses retained. Adobe transparent export; native visible product 971px, no enlargement."
   },
   "samsung-galaxy-s24-fe": {
     "colours": {
@@ -802,8 +805,10 @@
   },
   "de-longhi-ecam220-50": {
     "colours": {
-      "beige": "images/cut/de-longhi-ecam220-50__beige.webp"
-    }
+      "beige": "images/cut/de-longhi-ecam220-50__beige.webp",
+      "titanium-black": "images/cut/de-longhi-ecam220-50__titanium-black.webp"
+    },
+    "reason": "Exact ECAM220.50.TB Titanium/Black, EAN 8004399039124; merchant full-machine perspective photo, Adobe background removal and edge decontamination. Native visible product 780px, no enlargement or recolouring; Beige remains its own exact image."
   },
   "nokia-e3500": {
     "colours": {
@@ -916,5 +921,12 @@
       "white": "images/cut/de-longhi-ecam320-60__white.webp"
     },
     "reason": "Exact official ECAM320.60.B Black and ECAM320.60.W White manufacturer packshots, detached drinks cropped, free PhotoRoom transparent exports. Native visible products 669/672px tall; matching pose and scale, visually reviewed without enlargement or recolouring."
+  },
+  "de-longhi-ec9255": {
+    "colours": {
+      "metal": "images/cut/de-longhi-ec9255__metal.webp",
+      "titanium": "images/cut/de-longhi-ec9255__titanium.webp"
+    },
+    "reason": "Exact EC9255.M Metal and EC9255.T Titanium merchant images; matching frontal pose, detached drinks cropped without clipping the wand. Adobe Metal and free PhotoRoom Titanium background removal, native visible products 687px/765px, no enlargement or recolouring."
   }
 }
