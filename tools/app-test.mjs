@@ -275,6 +275,13 @@ stub.COLORIMG['test-edition-photo'] = { black: 'standard.webp', 'black-2048': 'g
 is(app.colorPhoto({id:'test-edition-photo'}, 'Black', 2048), 'galaxy.webp', '2TB selects the verified special-edition photo');
 is(app.colorPhoto({id:'test-edition-photo'}, 'Black', 1024), 'standard.webp', '1TB keeps its standard Black photo');
 is(app.colorPhoto({id:'test-edition-photo'}, 'White', 1024), 'digital.webp', 'White uses its own digital-edition photo');
+stub.COLORIMG['test-single-main'] = {main:'single.webp'};
+is(app.colorPhoto({id:'test-single-main',colors:['Black']}, 'Black'), 'single.webp', 'one declared finish can use its main-only photograph without a false warning');
+is(app.colorPhoto({id:'test-single-main',colors:['Black']}, 'White'), null, 'single-finish fallback never answers a different selected colour');
+is(app.colorPhoto({id:'test-single-main',colors:['Black','White']}, 'Black'), null, 'multi-colour missing photos still require the general-photo warning');
+stub.COLORIMG['test-single-main'].white = 'white.webp';
+is(app.colorPhoto({id:'test-single-main',colors:['Black']}, 'Black'), null, 'a conflicting named photo prevents assuming the main image matches the single finish');
+delete stub.COLORIMG['test-single-main'];
 const xboxPhotoProduct = phones.find(p => p.id === 'xbox-series-x');
 const galaxyChoice = app.chooseConfig(xboxPhotoProduct, {...app.initialConfig(xboxPhotoProduct),color:'White'},'storage',2048);
 is(galaxyChoice.color, 'Black', 'choosing 2TB moves an unavailable White finish to a verified Black offer');

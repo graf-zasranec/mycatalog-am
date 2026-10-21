@@ -2122,7 +2122,15 @@ const CIMG = (typeof COLORIMG !== 'undefined' && COLORIMG) || {};
 const slugOf = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const colorPhoto = (p, c, storage = null) => {
   const photos = CIMG[p.id], key = c && slugOf(c);
-  return (photos && key && ((storage != null && photos[key + '-' + storage]) || photos[key])) || null;
+  const exact = photos && key && ((storage != null && photos[key + '-' + storage]) || photos[key]);
+  if (exact) return exact;
+  // A one-finish product may legitimately have only a main photograph. Do not
+  // imply that its colour is wrong, but never borrow this fallback for another
+  // selected finish or when a named photo contradicts the declared palette.
+  const palette = [...new Set((p.colors || []).map(slugOf))];
+  return photos?.main && palette.length === 1 && palette[0] === key
+    && Object.keys(photos).every(k => k === 'main' || k === key || k.startsWith(key + '-') && /^\d+$/.test(k.slice(key.length + 1)))
+    ? photos.main : null;
 };
 // A label every row carries tells the buyer nothing. The SIM build is worth stating only
 // where there is one to choose - where this product is actually sold here in both builds,
@@ -2302,7 +2310,7 @@ function detailView(p) {
   const box = PBOX[p.id] || [0, 1000];   // the product inside its square photo, top and bottom in thousandths
   // A colour picked that has no photo of its own keeps the main shot, which is another colour -
   // said on the picture, or the swatch reads as broken ("I clicked Blue and it is still black").
-  const otherShot = cols.length > 0 && SEL.color && !colorPhoto(p, SEL.color);
+  const otherShot = cols.length > 0 && SEL.color && !colorPhoto(p, SEL.color, SEL.storage);
   // earbuds have one SKU and no capacity to pick, so both lists come back empty and the
   // option blocks below simply do not render
   // SIM is a fact, not a choice - no shop prices a phone by its SIM tray - so these are spans,
