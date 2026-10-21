@@ -532,6 +532,13 @@ function colorTranslated(label, colors) {
 // pixel.am states its variants in plain HTML. A dimension with exactly ONE option is the variant
 // on sale and can be reported; a dimension with several cannot, because the page carries a single
 // price and attributing it to one combination would be a guess.
+function pixelStock(html) {
+  const state = html.match(/<span[^>]*>\s*(?:Stock Status|Հասանելիություն|Наличие)\s*:?\s*<\/span>\s*<span[^>]*>([\s\S]*?)<\/span>/i);
+  if (!state) return null;
+  const text = clean(state[1]);
+  if (/call|զանգ|уточн|звон|out of stock|առկա չէ|нет/i.test(text)) return false;
+  return /in stock|առկա է|в наличии/i.test(text) ? true : null;
+}
 function pixelVariants(html, colors) {
   const out = { storage: null, color: null };
   for (const m of html.matchAll(/<div class="variant-property"[\s\S]*?<input/g)) {
@@ -1430,6 +1437,13 @@ if (process.argv[2] === '--selftest') {
     // an attribute after the anchor is still inside the tag: the colour must not be the price
     ['<span class="price is-action" style="color: #000000"> 397' + NB + '900 </span>', 'class="price is-action"', 397900],
   ];
+  const pixelStockCases = [
+    ['<span>Stock Status:</span><span>Call to 044477747</span><span>In Stock</span>', false],
+    ['<span class="mr5">Հասանելիություն:</span><span>Զանգահարեք 044477747</span><span class="exist-icon">Առկա է</span>', false],
+    ['<span>Stock Status:</span><span>In Stock</span>', true],
+    ['<div>Related product In Stock</div>', null]
+  ];
+  for (const [html, want] of pixelStockCases) if (pixelStock(html) !== want) { bad++; console.log('FAIL Pixel primary availability'); }
   const stockCases = [
     ['<div class="stock available" title="Availability"><span>In stock</span></div>', true],
     ['<div class="stock unavailable" title="Availability"><span>Out of stock</span></div>', false],
@@ -1863,6 +1877,9 @@ const SHOPS = {
         const id = matchPhone(title + ' ' + u);
         const safe = safeUrl(u);
         if (!id || !safe) continue;
+        // A title can retain an old price after Pixel replaces the price/cart with
+        // "Call". Read the primary availability label, never related-product stock.
+        if (pixelStock(h) === false) { out.push({id, title, url:safe, price:0, inStock:false}); continue; }
         // the 800_ render is the shot the shop displays, so its filename names the variant on show
         let shot = null;
         for (let at = h.indexOf('/uploads/products/'); at >= 0 && !shot; at = h.indexOf('/uploads/products/', at + 1)) {
