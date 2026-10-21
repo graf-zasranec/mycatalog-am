@@ -79,8 +79,10 @@ export function reviewAppzoneOffer(offer,product,review) {
   return o;
 }
 
-export async function collectAppzone({get,match,pause,products}) {
-  const reviews=JSON.parse(fs.readFileSync('data/appzone-map.json','utf8'));
+export async function collectAppzone({get,match,pause,products,
+  reviews=JSON.parse(fs.readFileSync('data/appzone-map.json','utf8')),
+  previous=Object.values(JSON.parse(fs.readFileSync('data/prices.json','utf8')).offers||{}).flat(),
+  warn=console.warn}) {
   const urls=new Set(Object.keys(reviews));
   for(const category of ['phones','computers','headphones','tablets']){
     let url=`https://appzone.am/en/product-category/${category}/`;
@@ -95,11 +97,18 @@ export async function collectAppzone({get,match,pause,products}) {
   }
   const out=[];
   for(const url of urls){
+    try {
     const html=await get(url);await pause();const page=readAppzone(html,url);
     let review=reviews[url];
     if(!review){match(page.title,{price:page.price||appzoneOffers(page)[0]?.price,url});continue;}
     const product=products.find(p=>p.id===review.id);if(!product)continue;
     for(const raw of appzoneOffers(page)){const o=reviewAppzoneOffer(raw,product,review);if(o)out.push(o);}
+    } catch(error) {
+      // A failed sibling must not discard fresh prices from the other parent pages.
+      // Preserve only this URL and its original check date; do not claim a fresh read.
+      const kept=previous.filter(o=>o.shop==='appzone'&&o.url===url&&!o.seeded);
+      out.push(...kept);warn(`AppZone unresolved ${url}: ${error.message}; retained ${kept.length} previous offers with original dates`);
+    }
   }
   return out;
 }

@@ -42,6 +42,7 @@ run(process.execPath, ['tools/asbc-test.mjs'], true);
 run(process.execPath, ['tools/appzone-test.mjs'], true);
 run(process.execPath, ['tools/likemobile-test.mjs'], true);
 run(process.execPath, ['tools/miarmenia-test.mjs'], true);
+run(process.execPath, ['tools/page-refresh-test.mjs'], true);
 run(process.execPath, ['tools/smart-glasses-test.mjs'], true);
 run(python, ['tools/eldorado-data-test.py'], true);
 run(python, ['tools/test_zigzag_stock.py'], true);

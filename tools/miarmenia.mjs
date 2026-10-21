@@ -27,16 +27,24 @@ export function miReviewMatches(page,review) {
     !(page.ram && review.ram && page.ram!==review.ram) &&
     !(page.storage && review.storage && page.storage!==review.storage);
 }
-export async function collectMiArmenia({get,pause}) {
-  const reviews=JSON.parse(fs.readFileSync('data/miarmenia-map.json','utf8')),rows=[];
-  const products=new Map(JSON.parse(fs.readFileSync('data/phones.json','utf8')).map(p=>[p.id,p]));
+export async function collectMiArmenia({get,pause,
+  reviews=JSON.parse(fs.readFileSync('data/miarmenia-map.json','utf8')),
+  products=JSON.parse(fs.readFileSync('data/phones.json','utf8')),
+  previous=Object.values(JSON.parse(fs.readFileSync('data/prices.json','utf8')).offers||{}).flat(),
+  warn=console.warn}) {
+  const rows=[],productMap=new Map(products.map(p=>[p.id,p]));
   for(const [url,review]of Object.entries(reviews)){
+    try {
     const page=readMiArmenia(await get(url),url);await pause();
-    if(!miReviewMatches(page,review)||!products.has(review.id)||!existingConfiguration(products.get(review.id),review)){
+    if(!miReviewMatches(page,review)||!productMap.has(review.id)||!existingConfiguration(productMap.get(review.id),review)){
       rows.push({id:review.id,title:page.title,url,price:0,inStock:false});continue;
     }
     const {reviewed,title,...config}=review;
     rows.push({title:page.title,url,price:page.price,inStock:page.inStock,...config});
+    } catch(error) {
+      const kept=previous.filter(o=>o.shop==='miarmenia'&&o.url===url&&!o.seeded);
+      rows.push(...kept);warn(`MiArmenia unresolved ${url}: ${error.message}; retained ${kept.length} previous offers with original dates`);
+    }
   }
   return rows;
 }

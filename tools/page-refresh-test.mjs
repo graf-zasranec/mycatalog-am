@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {collectAppzone} from './appzone.mjs';
+import {collectMiArmenia} from './miarmenia.mjs';
+const a='https://appzone.am/en/Assortment/broken/',b='https://appzone.am/en/Assortment/live/';
+const previous=[{id:'old',shop:'appzone',url:a,price:60000,seen:'2026-10-16',storage:128,ram:6,color:'Black'}];
+const html='<h1 class="product_title">Headphones</h1><p class="price">45000 AMD</p><button class="single_add_to_cart_button">Add to cart</button>';
+const rows=await collectAppzone({get:async u=>u.includes('product-category')?`<a href="${b}">x</a>`:u===a?null:html,match:()=>{},pause:async()=>{},products:[{id:'new',category:'headphones',colors:['Black']}],reviews:{[a]:{id:'old'},[b]:{id:'new'}},previous,warn:()=>{}});
+assert.equal(rows.find(o=>o.id==='old').seen,'2026-10-16');
+assert.equal(rows.find(o=>o.id==='new').price,45000);
+assert.equal(rows.find(o=>o.id==='new').seen,undefined);
+const m1='https://miarmenia.am/en/product/1',m2='https://miarmenia.am/en/product/2';
+const mr=await collectMiArmenia({get:async u=>u===m1?null:'<h1>Speaker</h1><li id="old-price">15900 AMD</li><div id="productCart"><a id="add-to-cart">Add to Cart</a></div>',pause:async()=>{},reviews:{[m1]:{id:'old'},[m2]:{id:'new'}},products:[{id:'old',category:'speaker'},{id:'new',category:'speaker'}],previous:[{id:'old',shop:'miarmenia',url:m1,price:19900,seen:'2026-10-16'}],warn:()=>{}});
+assert.equal(mr.find(o=>o.id==='old').seen,'2026-10-16');assert.equal(mr.find(o=>o.id==='new').price,15900);
+console.log('Per-page recovery: failed page keeps its date; healthy siblings refresh');
