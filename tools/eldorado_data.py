@@ -13,7 +13,11 @@ def product_row(html, url):
     title = heading.get_text(' ', strip=True)
     button = form.select_one('#product-addtocart-button')
     if button:
-        stock = not button.has_attr('disabled') and 'disabled' not in button.get('class', [])
+        # Magento also enables this control for pre-orders. It must not make a
+        # future delivery count as an immediately available shop offer.
+        preorder = re.search(r'pre[\s-]*order|նախապատվ|предзаказ',
+                             button.get_text(' ', strip=True), re.I)
+        stock = not button.has_attr('disabled') and 'disabled' not in button.get('class', []) and not preorder
     elif re.search(r'notify|out of stock|unavailable|առկա չէ|ծանուց', primary.get_text(' ', strip=True), re.I):
         stock = False
     else:

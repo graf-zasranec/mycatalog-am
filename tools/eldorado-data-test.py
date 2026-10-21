@@ -39,6 +39,13 @@ class EldoradoDataTests(unittest.TestCase):
         self.assertFalse(product_row(page('<span data-price-type="finalPrice" data-price-amount="57900"></span>',
                                          '<button id="product-addtocart-button" disabled></button>'), 'url')['inStock'])
 
+    def test_enabled_preorder_control_is_not_in_stock(self):
+        for label in ['PRE ORDER', 'Pre-order', 'Նախապատվեր', 'Предзаказ']:
+            with self.subTest(label=label):
+                html = page('<span data-price-type="finalPrice" data-price-amount="27900"></span>',
+                            '<button id="product-addtocart-button">' + label + '</button>')
+                self.assertFalse(product_row(html, 'url')['inStock'])
+
     def test_blocked_or_changed_layout_is_not_success(self):
         for html in ['<h1>Sorry, you have been blocked</h1>', page('', control='')]:
             with self.assertRaises(ValueError):
