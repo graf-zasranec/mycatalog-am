@@ -470,6 +470,26 @@
       "reason": "primary_product_sold_out",
       "stock": "unavailable",
       "checked": "2026-10-08"
+    },
+    {
+      "url": "https://redstore.am/en/product/bose-quietcomfort-ultra-earbuds-black",
+      "finalUrl": "https://redstore.am/en/product/bose-quietcomfort-ultra-earbuds-black",
+      "status": 200,
+      "reason": "primary_product_missing",
+      "checked": "2026-10-21",
+      "productFound": false,
+      "primaryBuyBoxFound": false,
+      "evidence": "Normal browser loaded a generic Product page with no product heading, no price and no purchase controls; saved HTML also has no Product structured data."
+    },
+    {
+      "url": "https://redstore.am/en/product/bose-quietcomfort-ultra-earbuds-white",
+      "finalUrl": "https://redstore.am/en/product/bose-quietcomfort-ultra-earbuds-white",
+      "status": 200,
+      "reason": "primary_product_missing",
+      "checked": "2026-10-21",
+      "productFound": false,
+      "primaryBuyBoxFound": false,
+      "evidence": "Normal browser loaded a generic Product page with no product heading, no price and no purchase controls; saved HTML also has no Product structured data."
     }
   ]
 }

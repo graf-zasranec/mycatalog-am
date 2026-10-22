@@ -722,6 +722,7 @@ function magentoChildren(html, colors, aliases = {}) {
   // AllSell's iPhone 17e: "SIM card type" Nano Sim/eSim 295 500, eSim+eSim 285 500 - unread, the
   // tray build's price was thrown away as a duplicate of the eSIM one.
   const simA = attrs.find(a => /\bsim\b/i.test(text(a)));
+  const diagonal = attrs.find(a => /screen.?diagonal|case.?size|screen.?size/i.test(text(a)));
   const label = (a, child) => {
     if (!a) return null;
     const want = String((cfg.index[child] || {})[a.id] ?? '');
@@ -742,6 +743,11 @@ function magentoChildren(html, colors, aliases = {}) {
     // Yerevan Mobile names its capacity option "Memory": 128GB/256GB there is storage, not RAM
     let st = capOf(label(drive, child)), rm = capOf(label(ram, child));
     if (st == null && rm >= 32 && !/\bram\b/i.test((ram.code || '') + ' ' + (ram.label || ''))) { st = rm; rm = null; }
+    // Legacy watch offers use storage for case millimetres. Keep the selected
+    // child's case with its price instead of borrowing the page's default size.
+    const caseLabel = label(diagonal, child);
+    const caseMm = /^\s*(\d{2})\s*(?:mm|մմ)\s*$/i.exec(caseLabel || '');
+    if (st == null && caseMm) st = +caseMm[1];
     out.push({ price, storage: st, ram: rm,
       // A colour Magento states that none of the product's own colours will map to is not a
       // colour we can trust - AllSell's Pixel 10 said "Yellow" and it was published verbatim,
@@ -834,7 +840,13 @@ function colorLoose(label, colors) {
 function colorOf(text, colors) {
   const h = String(text).toLowerCase();
   let hit = null;
-  for (const c of colors || []) if (h.includes(String(c).toLowerCase()) && (!hit || c.length > hit.length)) hit = c;
+  // A colour must be a complete word/phrase: Bluetooth is not Blue and
+  // Redmi is not Red. Prefer the longest complete finish (Midnight Black).
+  for (const c of colors || []) {
+    const literal = String(c).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const whole = new RegExp('(^|[^\\p{L}\\p{N}])' + literal + '(?=$|[^\\p{L}\\p{N}])', 'iu');
+    if (whole.test(h) && (!hit || c.length > hit.length)) hit = c;
+  }
   if (hit) return hit;
   // AllSell's iPhone 18 swatch says Blue, while its selected SKU says Glacier.
   // Only the verified four-colour palette permits this retailer shorthand.
@@ -1206,6 +1218,13 @@ if (process.argv[2] === '--selftest') {
     }
   }
 
+  // Watch case selectors are millimetres, not missing memory capacities.
+  {
+    const cfg = {attributes:{222:{id:222,code:'screen_diagonal',label:'Screen diagonal',options:[{id:1,label:'40 mm',products:['1']},{id:2,label:'44mm',products:['2']}]}},index:{1:{222:1},2:{222:2}},optionPrices:{1:{finalPrice:{amount:89500}},2:{finalPrice:{amount:94500}}}};
+    const kids=magentoChildren('<script>"jsonConfig":'+JSON.stringify(cfg)+'</script>');
+    if(JSON.stringify(kids.map(k=>[k.storage,k.price]))!==JSON.stringify([[40,89500],[44,94500]])){bad++;console.log('FAIL Magento watch case sizes must retain their own prices');}
+  }
+
   const buildCases = [
     [true, 'iPhone 17 Pro Max 512GB Silver Esim'], [true, 'E-Sim'],
     [false, '1 Սիմ քարտ + Esim'], [false, 'iphone-17-pro-max-512gb-sim-deep-blue'],
@@ -1397,7 +1416,11 @@ if (process.argv[2] === '--selftest') {
     const got = screenOf(txt, id);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
   }
-  const colCases = [['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
+  const colCases = [
+    ['Xiaomi Sound Outdoor Bluetooth Speaker Red', ['Red','Black','Blue'], 'Red'],
+    ['Redmi Watch', ['Red','Black','Blue'], null],
+    ['BlackBerry', ['Black','Blue'], null],
+    ['iPhone 17 Pro, 256 ԳԲ, Deep Blue', ['Cosmic Orange', 'Deep Blue', 'Silver'], 'Deep Blue'],
     ['APPLE iPhone 17 Pro 256GB (Cosmic Orange) (A3523)', ['Cosmic Orange', 'Deep Blue'], 'Cosmic Orange'],
     ['Apple iPhone 17 Pro', ['Cosmic Orange', 'Deep Blue'], null]];
   const urlCases = [['https://vega.am/x.html', true], ['http://shop.am/x', true],
@@ -2466,6 +2489,25 @@ const SHOPS = {
           // past the last page Bitrix serves the last one again: nothing new means done
           if (!fresh) break;
         }
+      }
+      // Reviewed newer-template URLs need their primary buy control read directly.
+      // Listing cards and an enabled pre-order button do not prove immediate stock.
+      const {vivaProductPage} = await import('./tools/viva-data.mjs');
+      let reviewed = [];
+      try { reviewed = JSON.parse(fs.readFileSync('data/viva-reviewed-pages.json', 'utf8')); }
+      catch (e) { if (e.code !== 'ENOENT') throw e; }
+      const pageKey = u => String(u).replace(/\/$/, '').replace(/^(https?:\/\/[^/]+)\/(?:en|am|ru)\//i, '$1/');
+      for (const config of reviewed) {
+        const u = new URL(config.url);
+        if (u.hostname !== 'shop.viva.am' || !u.pathname.startsWith('/product/') || !phoneById[config.id]) continue;
+        const html = await get(config.url, 2, UA_VIVA); await sleep(4000);
+        const row = vivaProductPage(html);
+        if (!row || row.inStock == null || clean(row.title) !== config.expectedTitle) {
+          console.warn('Viva reviewed SKU unresolved:', config.url); continue;
+        }
+        for (let i = out.length - 1; i >= 0; i--) if (pageKey(out[i].url) === pageKey(config.url)) out.splice(i, 1);
+        const {expectedTitle, ...dimensions} = config;
+        out.push({...dimensions, ...row, title:clean(row.title), detailVerified:true});
       }
       return out;
     }

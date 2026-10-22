@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {vivaProductPage} from './viva-data.mjs';
+const primary=button=>'<div class="viva-info-col"><h1>Apple Watch Series 12 GPS 42mm</h1><div><span id="display_price">218,900 ֏</span></div>'+button+'</div><div><span id="display_price">9,000 ֏</span><a class="viva-buy-btn" onclick="addToCart(this,2)">Buy</a></div>';
+const normal=primary('<a class="viva-buy-btn" id="buy" onclick="addToCart(this,1)">Buy</a>');
+assert.deepEqual(vivaProductPage(normal),{title:'Apple Watch Series 12 GPS 42mm',price:218900,inStock:true});
+assert.equal(vivaProductPage(primary('<a class="viva-buy-btn pre_order_button" data-pre_order_date="18.09.2026">Order</a>')).inStock,false);
+assert.equal(vivaProductPage(primary('<a class="viva-buy-btn">Call</a>')).inStock,null);
+assert.equal(vivaProductPage(primary('<a class="viva-buy-btn" aria-disabled="true" onclick="addToCart(this,1)">Buy</a>')).inStock,false);
+assert.equal(vivaProductPage('<h1>Related item</h1><span id="display_price">9000</span>'),null);
+const reviewed=JSON.parse((await import('node:fs')).readFileSync(new URL('../data/viva-reviewed-pages.json',import.meta.url),'utf8'));
+assert.ok(reviewed.filter(v=>v.id==='apple-watch-ultra-4-gps-plus-cellular-plus-band').every(v=>v.storage==null),'fixed 49mm case must not become a storage tier');
+console.log('6 Viva primary-product and case-configuration checks pass');

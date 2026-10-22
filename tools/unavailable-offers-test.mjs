@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {verifiedUnavailable} from './unavailable-offers.mjs';
+const url='https://redstore.am/en/product/bose-quietcomfort-ultra-earbuds-black';
+const offer={url,shop:'redstore',seen:'2026-10-19'};
+const evidence={url,finalUrl:url,status:200,reason:'primary_product_missing',checked:'2026-10-21',productFound:false,primaryBuyBoxFound:false};
+assert.equal(verifiedUnavailable(offer,evidence),true,'a hand-verified empty retailer product page must suppress its carried price');
+assert.equal(verifiedUnavailable({...offer,seen:'2026-10-22'},evidence),false,'a later successful scrape may restore the product');
+assert.equal(verifiedUnavailable(offer,{...evidence,status:403}),false,'a blocked request is not proof of a missing product');
+assert.equal(verifiedUnavailable(offer,{...evidence,productFound:true}),false);
+assert.equal(verifiedUnavailable(offer,{...evidence,primaryBuyBoxFound:true}),false);
+assert.equal(verifiedUnavailable({...offer,shop:'allsell'},evidence),false,'shop-specific evidence must not cross retailers');
+console.log('6 unavailable-offer checks pass');
