@@ -67691,7 +67691,11 @@
     ],
     "audio": {
       "form": "full",
-      "conn": "wireless"
+      "conn": "wired",
+      "plug": "usb-c"
+    },
+    "connectivity": {
+      "bluetooth": "none, wired USB-C"
     }
   },
   {
@@ -67726,7 +67730,11 @@
     ],
     "audio": {
       "form": "full",
-      "conn": "wireless"
+      "conn": "wired",
+      "plug": "usb-c"
+    },
+    "connectivity": {
+      "bluetooth": "none, wired USB-C"
     }
   },
   {
@@ -69584,7 +69592,10 @@
     "colors": [
       "Grey",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "harman-kardon-citation-surround",
@@ -69652,7 +69663,10 @@
       "Black",
       "Green",
       "Red"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "harman-kardon-citation-sub",
@@ -74210,7 +74224,8 @@
     ],
     "display": {
       "size": 15.6,
-      "type": "IPS"
+      "type": "IPS",
+      "resolution": "1920x1080"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74485,7 +74500,8 @@
     ],
     "display": {
       "size": 18,
-      "type": "IPS"
+      "type": "IPS",
+      "resolution": "1920x1200"
     },
     "os": "Windows 11",
     "chipset": {
@@ -80603,7 +80619,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "jbl-soundbar-1300",
@@ -80633,7 +80652,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0 (detachable surrounds 5.2)"
+    }
   },
   {
     "id": "jbl-soundbar-1000",
@@ -80663,7 +80685,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "jbl-soundbar-800",
@@ -80693,7 +80718,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "jbl-soundbar-500",
@@ -80723,7 +80751,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "jbl-soundbar-sb270",
@@ -80753,7 +80784,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "jbl-playlist",
@@ -80783,7 +80817,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "jbl-partybox-encore",
@@ -80978,7 +81015,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "jbl-jr-pop",
@@ -81011,7 +81051,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "JBL manuals disagree (4.1 in EN/FR, 4.2 in DE/DA) (checked 2026-10-23)"
+    }
   },
   {
     "id": "sony-pulse-3d-wireless-headset",
@@ -84465,7 +84508,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hisense-ax5140q",
@@ -84495,7 +84541,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hisense-hs2100",
@@ -84525,7 +84574,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hisense-hs3100",
@@ -84555,7 +84607,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hisense-hs5100",
@@ -84585,7 +84640,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hisense-rvcls144ab",
@@ -84648,7 +84706,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "nokia-105-4g",
@@ -84982,7 +85043,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "sony-ht-s40r",
@@ -85012,7 +85076,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "sony-ht-s60",
@@ -85042,7 +85109,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "sony-k-77xr80",
@@ -85107,7 +85177,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "toshiba-75c350me",
@@ -85672,7 +85745,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "hp-15-fd2001ci-bm0q5ea",
@@ -85849,7 +85925,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "JBL does not state it; retailers disagree (5.0 vs 5.3) (checked 2026-10-23)"
+    }
   },
   {
     "id": "jbl-bar-500-mk2",
@@ -85882,7 +85961,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "jbl-bar-800-mk2",
@@ -85915,7 +85997,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "jbl-endurance-race-2",
@@ -86103,7 +86188,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "jbl-tune-110",
@@ -86855,7 +86943,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "panasonic-sc-bmax10",
@@ -86885,7 +86976,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "panasonic-sc-tmax15",
@@ -86948,7 +87042,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "philips-223v5lhsb2",
@@ -87082,7 +87179,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-hw-b750f",
@@ -87112,7 +87212,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-hw-q600c",
@@ -87142,7 +87245,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-hw-q800h",
@@ -87172,7 +87278,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-hw-q930h",
@@ -87202,7 +87311,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-hw-q990h",
@@ -87265,7 +87377,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-hw-a45c",
@@ -87295,7 +87410,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-lc24f396fhixci",
@@ -87430,7 +87548,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "samsung-mx-st90b",
@@ -87460,7 +87581,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "samsung-vr20m7070wd",
@@ -87556,7 +87680,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "sony-srs-xg500",
@@ -87586,7 +87713,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Sony does not state it; retailers disagree (4.2 vs 5.0) (checked 2026-10-23)"
+    }
   },
   {
     "id": "sony-ult-field-5",
@@ -95881,7 +96011,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "jbl-jr460nc",
@@ -96281,7 +96414,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.1"
+    }
   },
   {
     "id": "beats-studio-wireless",
@@ -96319,7 +96455,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    }
   },
   {
     "id": "beats-solo-hd",
