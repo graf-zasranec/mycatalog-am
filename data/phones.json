@@ -23363,14 +23363,19 @@
     "aliases": [],
     "tier": "mid",
     "priceAmd": 149900,
-    "priceAmdMax": 149900,
+    "priceAmdMax": 159900,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 149900
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 159900
       }
     ],
     "display": {
@@ -24672,7 +24677,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 704000
       }
@@ -24709,7 +24714,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 630000
       }
@@ -25837,7 +25842,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 455000
       }
@@ -25878,7 +25883,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 380000
       }
@@ -26043,7 +26048,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 330000
       }
@@ -30233,7 +30238,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 599000
       }
@@ -30330,7 +30335,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 475000
       }
@@ -30653,7 +30658,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 439000
       }
@@ -30691,7 +30696,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 520000
       }
@@ -30729,7 +30734,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 467000
       }
@@ -30808,7 +30813,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 655000
       }
@@ -31185,7 +31190,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 64,
         "storage": 1024,
         "priceAmd": 1165000
       }
@@ -33854,7 +33859,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 445000
       }
@@ -33893,7 +33898,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 456000
       }
@@ -33931,7 +33936,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 539000
       }
@@ -34149,7 +34154,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 256,
         "priceAmd": 220000
       }
@@ -34187,7 +34192,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 305000
       }
@@ -34226,7 +34231,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 247000
       }
@@ -37971,7 +37976,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 372000
       }
@@ -64844,7 +64849,9 @@
     "chipset": {
       "name": "Intel Core Ultra 5-125H"
     },
-    "body": {}
+    "body": {
+      "weight": 1750
+    }
   },
   {
     "id": "hp-omnibook-x-flip-16-ultra-5-226v-w11h-cl6v7ea",
@@ -73382,7 +73389,8 @@
     ],
     "display": {
       "size": 16,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "A 16-inch laptop with Intel Core 5-320U, 16 GB RAM and 512 GB storage.",
@@ -73399,7 +73407,10 @@
     "colors": [
       "Silver"
     ],
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1770
+    }
   },
   {
     "id": "hp-omnibook-5-flip-14-fp0019ci",
@@ -74144,7 +74155,8 @@
     ],
     "display": {
       "size": 15.6,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 60
     },
     "os": "Windows 11",
     "chipset": {
@@ -74153,6 +74165,9 @@
     "graphics": {
       "name": "INTEGRATED",
       "type": "integrated"
+    },
+    "body": {
+      "weight": 1650
     }
   },
   {
@@ -79748,8 +79763,8 @@
       "refresh": 120
     },
     "battery": {
-      "capacity": 7500,
-      "wired": "33W"
+      "capacity": 7600,
+      "wired": 18
     },
     "camera": {
       "main": "8 MP",
@@ -79768,6 +79783,9 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 6s 4G Gen 2"
+    },
+    "body": {
+      "weight": 406
     }
   },
   {
@@ -79797,8 +79815,8 @@
       "refresh": 120
     },
     "battery": {
-      "capacity": 7500,
-      "wired": "33W"
+      "capacity": 7600,
+      "wired": 18
     },
     "camera": {
       "main": "8 MP",
@@ -79818,6 +79836,9 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 6s 4G Gen 2"
+    },
+    "body": {
+      "weight": 401
     }
   },
   {
@@ -81092,7 +81113,7 @@
     ],
     "colors": [
       "Black",
-      "Gray"
+      "Gray Camouflage"
     ],
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
@@ -82236,9 +82257,14 @@
     ],
     "display": {
       "size": 12.1,
-      "resolution": "2560x1600"
+      "resolution": "2560x1600",
+      "refresh": 120,
+      "type": "LCD"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 10000,
+      "wired": 33
+    },
     "summaryEn": "Xiaomi Redmi Pad Pro.",
     "sources": [
       "https://likemobile.am/en/xiaomi-redmi-pad-pro-8256gb"
@@ -82248,6 +82274,9 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 7s Gen 2"
+    },
+    "body": {
+      "weight": 571
     }
   },
   {
@@ -84778,7 +84807,9 @@
       "size": 1.8,
       "resolution": "120x160"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1000
+    },
     "summaryEn": "Nokia 106.",
     "sources": [
       "https://vlv.am/en/Product/29638"
@@ -84789,6 +84820,9 @@
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
       "camera.main": "no camera (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 79.4
     }
   },
   {
@@ -84818,7 +84852,9 @@
       "size": 1.8,
       "resolution": "120x160"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1000
+    },
     "summaryEn": "Nokia 110.",
     "sources": [
       "https://vlv.am/en/Product/42380"
@@ -84831,6 +84867,9 @@
     },
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 79.6
     }
   },
   {
@@ -85239,7 +85278,9 @@
     ],
     "display": {
       "size": 15.6,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "TN"
     },
     "battery": {},
     "chipset": {
@@ -85251,7 +85292,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1770
+    }
   },
   {
     "id": "asus-va27uqsb",
@@ -85664,9 +85708,12 @@
     ],
     "display": {
       "size": 6.55,
-      "resolution": "720x1600"
+      "resolution": "720x1600",
+      "refresh": 60
     },
-    "battery": {},
+    "battery": {
+      "capacity": 5100
+    },
     "summaryEn": "Hisense H50 Lite.",
     "sources": [
       "https://vlv.am/en/Product/17954"
@@ -86710,9 +86757,12 @@
     ],
     "display": {
       "size": 11,
-      "resolution": "2000x1200"
+      "resolution": "2000x1200",
+      "refresh": 60
     },
-    "battery": {},
+    "battery": {
+      "capacity": 7700
+    },
     "summaryEn": "Lenovo Tab P11 (TB-J606L).",
     "sources": [
       "https://vlv.am/en/Product/20827"
@@ -86722,6 +86772,12 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 662"
+    },
+    "body": {
+      "weight": 490
+    },
+    "camera": {
+      "main": "13 MP"
     }
   },
   {
@@ -86782,7 +86838,8 @@
     ],
     "display": {
       "size": 14,
-      "resolution": "2880x1800"
+      "resolution": "2880x1800",
+      "refresh": 120
     },
     "battery": {},
     "chipset": {
@@ -86794,7 +86851,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1490
+    }
   },
   {
     "id": "lg-27us550-w",
@@ -86858,7 +86918,9 @@
       "size": 2.4,
       "resolution": "240x320"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1020
+    },
     "summaryEn": "Nokia 210 (TA-1139).",
     "sources": [
       "https://vlv.am/en/Product/26006"
@@ -86871,6 +86933,9 @@
     },
     "camera": {
       "main": "0.3 MP (VGA), LED flash"
+    },
+    "body": {
+      "weight": 82
     }
   },
   {
@@ -86900,7 +86965,9 @@
       "size": 2.4,
       "resolution": "240x320"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1200
+    },
     "summaryEn": "Nokia 3310 Dual SIM.",
     "sources": [
       "https://vlv.am/en/Product/31014"
