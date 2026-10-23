@@ -266,9 +266,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 413000
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 433000
       }
     ],
     "display": {
@@ -570,7 +570,10 @@
     ],
     "chipset": {
       "name": "Intel Core i3-N350"
-    }
+    },
+    "colors": [
+      "Light Silver"
+    ]
   },
   {
     "id": "acer-aspire-lite-al16-52p-32e3",
@@ -705,8 +708,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 128,
         "priceAmd": 149900
       }
     ],
@@ -726,7 +729,10 @@
     },
     "body": {
       "weight": 1590
-    }
+    },
+    "colors": [
+      "Light Silver"
+    ]
   },
   {
     "id": "acer-aspire-vero-16-av16-51p-58ku",
@@ -1381,9 +1387,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 295000
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 269000
       }
     ],
     "display": {
@@ -1941,6 +1947,9 @@
     },
     "sources": [
       "https://www.apple.com/airpods-5/specs/"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -2148,7 +2157,10 @@
     "summaryEn": "The wired EarPods, now on USB-C — no charging, no pairing, no losing one.",
     "specNA": {
       "body.weight": "Apple lists no weight for EarPods (apple.com shop page read 2026-10-02)"
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "apple-homepod-2",
@@ -2568,6 +2580,16 @@
     },
     "variants": [
       {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 215000
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 231900
+      },
+      {
         "ram": 6,
         "storage": 128,
         "priceAmd": 231900
@@ -2581,16 +2603,6 @@
         "ram": 6,
         "storage": 512,
         "priceAmd": 330000
-      },
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 215000
-      },
-      {
-        "ram": null,
-        "storage": 128,
-        "priceAmd": 231900
       }
     ],
     "camera": {
@@ -2698,19 +2710,7 @@
         "size": 11
       },
       {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 304000,
-        "size": 11
-      },
-      {
-        "ram": null,
-        "storage": 512,
-        "priceAmd": 359000,
-        "size": 11
-      },
-      {
-        "ram": null,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 335000,
         "size": 13
@@ -2718,8 +2718,20 @@
       {
         "ram": null,
         "storage": 256,
+        "priceAmd": 304000,
+        "size": 11
+      },
+      {
+        "ram": null,
+        "storage": 256,
         "priceAmd": 375000,
         "size": 13
+      },
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": 359000,
+        "size": 11
       }
     ],
     "colors": [
@@ -2776,44 +2788,8 @@
       },
       {
         "ram": 8,
-        "storage": 256,
-        "priceAmd": 372000,
-        "size": 11
-      },
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 530000,
-        "size": 11
-      },
-      {
-        "ram": 8,
-        "storage": 1024,
-        "priceAmd": 620000,
-        "size": 11
-      },
-      {
-        "ram": 8,
         "storage": 128,
         "priceAmd": 439000,
-        "size": 13
-      },
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 449000,
-        "size": 13
-      },
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 650000,
-        "size": 13
-      },
-      {
-        "ram": 8,
-        "storage": 1024,
-        "priceAmd": 740000,
         "size": 13
       },
       {
@@ -2824,21 +2800,57 @@
       },
       {
         "ram": 12,
+        "storage": 128,
+        "size": 13,
+        "priceAmd": 439000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 372000,
+        "size": 11
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 449000,
+        "size": 13
+      },
+      {
+        "ram": 12,
         "storage": 256,
         "size": 11,
         "priceAmd": 399000
       },
       {
         "ram": 12,
-        "storage": 128,
-        "size": 13,
-        "priceAmd": 439000
-      },
-      {
-        "ram": 12,
         "storage": 256,
         "size": 13,
         "priceAmd": 499000
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 530000,
+        "size": 11
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 650000,
+        "size": 13
+      },
+      {
+        "ram": 8,
+        "storage": 1024,
+        "priceAmd": 620000,
+        "size": 11
+      },
+      {
+        "ram": 8,
+        "storage": 1024,
+        "priceAmd": 740000,
+        "size": 13
       }
     ],
     "camera": {
@@ -2923,13 +2935,13 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 277000,
         "size": 11
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 319900,
         "size": 13
@@ -3278,16 +3290,16 @@
         "size": 11
       },
       {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 459000,
+        "size": 13
+      },
+      {
         "ram": null,
         "storage": 512,
         "priceAmd": 479000,
         "size": 11
-      },
-      {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 459000,
-        "size": 13
       },
       {
         "ram": null,
@@ -3354,27 +3366,15 @@
       },
       {
         "ram": 12,
-        "storage": 512,
-        "priceAmd": 559000,
-        "size": 11
-      },
-      {
-        "ram": 16,
-        "storage": 1024,
-        "priceAmd": 950000,
-        "size": 11
-      },
-      {
-        "ram": 16,
-        "storage": 2048,
-        "priceAmd": 1100000,
-        "size": 11
-      },
-      {
-        "ram": 12,
         "storage": 256,
         "priceAmd": 575000,
         "size": 13
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 559000,
+        "size": 11
       },
       {
         "ram": 12,
@@ -3385,8 +3385,20 @@
       {
         "ram": 16,
         "storage": 1024,
+        "priceAmd": 950000,
+        "size": 11
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 1200000,
         "size": 13
+      },
+      {
+        "ram": 16,
+        "storage": 2048,
+        "priceAmd": 1100000,
+        "size": 11
       },
       {
         "ram": 16,
@@ -4702,16 +4714,16 @@
         "size": 13
       },
       {
-        "ram": 24,
-        "storage": 512,
-        "priceAmd": 649000,
-        "size": 13
-      },
-      {
         "ram": 16,
         "storage": 512,
         "priceAmd": 717900,
         "size": 15
+      },
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": 649000,
+        "size": 13
       },
       {
         "ram": 24,
@@ -4795,18 +4807,6 @@
       },
       {
         "ram": 16,
-        "storage": 1024,
-        "priceAmd": 810900,
-        "size": 13
-      },
-      {
-        "ram": 24,
-        "storage": 1024,
-        "priceAmd": 910900,
-        "size": 13
-      },
-      {
-        "ram": 16,
         "storage": 512,
         "priceAmd": 763900,
         "size": 15
@@ -4814,8 +4814,20 @@
       {
         "ram": 16,
         "storage": 1024,
+        "priceAmd": 810900,
+        "size": 13
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 910900,
         "size": 15
+      },
+      {
+        "ram": 24,
+        "storage": 1024,
+        "priceAmd": 910900,
+        "size": 13
       }
     ],
     "body": {
@@ -4868,9 +4880,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 275000
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 279900
       }
     ],
     "display": {
@@ -5032,10 +5044,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": null,
-        "priceAmd": 669000,
-        "size": 14
+        "priceAmd": 669000
       }
     ],
     "display": {
@@ -5082,16 +5093,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 1299000,
-        "size": 14
+        "ram": 36,
+        "storage": 1024,
+        "priceAmd": 1299000
       },
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 1499000,
-        "size": 16
+        "ram": 48,
+        "storage": 1024,
+        "priceAmd": 1799000
       }
     ],
     "display": {
@@ -5166,22 +5175,27 @@
     "os": "macOS Sequoia",
     "variants": [
       {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1229000,
+        "size": 16
+      },
+      {
         "ram": 24,
         "storage": 512,
         "priceAmd": 899000,
         "size": 14
       },
       {
+        "ram": 48,
+        "storage": 512,
+        "priceAmd": 1329000
+      },
+      {
         "ram": 24,
         "storage": 1024,
         "priceAmd": 999000,
         "size": 14
-      },
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 1229000,
-        "size": 16
       }
     ],
     "colors": [
@@ -5244,6 +5258,16 @@
       "type": "integrated"
     },
     "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 789000
+      },
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": 889000
+      },
       {
         "ram": 16,
         "storage": 1024,
@@ -5334,6 +5358,11 @@
         "storage": 2048,
         "priceAmd": 2230900,
         "size": 16
+      },
+      {
+        "ram": 48,
+        "storage": 2048,
+        "priceAmd": 2533900
       }
     ],
     "body": {
@@ -5407,12 +5436,6 @@
       },
       {
         "ram": 24,
-        "storage": 2048,
-        "priceAmd": 1527900,
-        "size": 14
-      },
-      {
-        "ram": 24,
         "storage": 1024,
         "priceAmd": 1524900,
         "size": 16
@@ -5422,6 +5445,17 @@
         "storage": 1024,
         "priceAmd": 1826900,
         "size": 16
+      },
+      {
+        "ram": 24,
+        "storage": 2048,
+        "priceAmd": 1527900,
+        "size": 14
+      },
+      {
+        "ram": 48,
+        "storage": 2048,
+        "priceAmd": 1875000
       }
     ],
     "body": {
@@ -5494,6 +5528,9 @@
     },
     "sources": [
       "https://support.apple.com/en-us/117736"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -5624,6 +5661,9 @@
     },
     "sources": [
       "https://support.apple.com/en-us/111863"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -6246,9 +6286,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 429900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 459900
       }
     ],
     "display": {
@@ -6282,9 +6322,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 498900
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 549900
       }
     ],
     "display": {
@@ -6318,9 +6358,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 498900
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 549900
       }
     ],
     "display": {
@@ -6491,9 +6531,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 559900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 599900
       }
     ],
     "display": {
@@ -6570,9 +6610,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 389900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 409900
       }
     ],
     "display": {
@@ -6589,7 +6629,10 @@
     },
     "body": {
       "weight": 1610
-    }
+    },
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "asus-fa506n",
@@ -6646,9 +6689,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 565900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 599900
       }
     ],
     "display": {
@@ -6802,9 +6845,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 465900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499900
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 539900
       }
     ],
     "display": {
@@ -6839,8 +6887,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 64,
         "priceAmd": 129900
       }
     ],
@@ -6858,7 +6906,10 @@
     },
     "body": {
       "weight": 1300
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "asus-l510mads04",
@@ -6875,8 +6926,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 128,
         "priceAmd": 128900
       }
     ],
@@ -6913,9 +6964,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 469900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499900
+      },
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 639900
       }
     ],
     "display": {
@@ -8311,9 +8367,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 779900
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 859900
       }
     ],
     "display": {
@@ -8749,8 +8805,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 8,
+        "storage": 128,
         "priceAmd": 239900
       }
     ],
@@ -8773,7 +8829,10 @@
     },
     "body": {
       "weight": 1700
-    }
+    },
+    "colors": [
+      "Blue"
+    ]
   },
   {
     "id": "asus-vivobook-15-f1504vap-bs54t",
@@ -8832,9 +8891,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 339900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 389900
       }
     ],
     "display": {
@@ -8868,8 +8927,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 319900
       }
     ],
@@ -9013,8 +9072,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 419900
       }
     ],
@@ -9137,8 +9196,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 419900
       }
     ],
@@ -9161,6 +9220,9 @@
     },
     "sources": [
       "e-catalog"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -10016,7 +10078,10 @@
     "released": "2024",
     "body": {
       "weight": 1900
-    }
+    },
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "asus-vivobook-pro-16-k6602vv-oled",
@@ -10134,9 +10199,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 395900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 419900
       }
     ],
     "display": {
@@ -10227,9 +10292,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 389900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 429900
       }
     ],
     "display": {
@@ -10322,14 +10387,14 @@
     "summaryEn": "A 14-inch laptop with Intel Core i3-1315U.",
     "variants": [
       {
-        "ram": 8,
-        "storage": 128,
-        "priceAmd": 189000
-      },
-      {
         "ram": null,
         "storage": null,
         "priceAmd": 199900
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 189000
       }
     ],
     "battery": {},
@@ -10339,6 +10404,9 @@
     "aliases": [
       "Vivobook X1404VA-V14.I38128",
       "Նոթբուք Asus Vivobook X1404VA-V14.I38128"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -12178,7 +12246,10 @@
     ],
     "body": {
       "weight": 670
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "bose-soundlink-revolve",
@@ -12212,7 +12283,10 @@
     "connectivity": {},
     "specNA": {
       "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
-    }
+    },
+    "colors": [
+      "Gray"
+    ]
   },
   {
     "id": "bose-soundlink-revolve-ii",
@@ -12331,7 +12405,10 @@
     },
     "specNA": {
       "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "bose-sport",
@@ -12577,6 +12654,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 255000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 255000
       }
     ],
     "display": {
@@ -12595,7 +12677,10 @@
     },
     "body": {
       "weight": 1620
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "dell-15-dc15250-i5-16gb",
@@ -12708,8 +12793,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 419900
       }
     ],
@@ -12733,6 +12818,9 @@
     },
     "sources": [
       "e-catalog"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -13334,6 +13422,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 289900
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 465000
       }
     ],
     "battery": {},
@@ -13366,7 +13459,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 509000
       }
@@ -13537,7 +13630,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 383000
       }
@@ -13612,9 +13705,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 569900
+        "ram": 32,
+        "storage": 256,
+        "priceAmd": 629900
       }
     ],
     "display": {
@@ -13835,6 +13928,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 349000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 379800
       }
     ],
     "battery": {},
@@ -13974,7 +14072,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 169000
       }
@@ -14012,7 +14110,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 512,
         "priceAmd": 216000
       }
@@ -14790,6 +14888,9 @@
     },
     "sources": [
       "https://www.dji.com/global/osmo-action-6/specs"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -15163,6 +15264,9 @@
     "summaryEn": "Dyson HD18 ™ Vinca Blue/Topaz.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -15565,7 +15669,10 @@
     },
     "body": {
       "weight": 595
-    }
+    },
+    "colors": [
+      "Blue"
+    ]
   },
   {
     "id": "garmin-cirqa-smart-band-mauve-s-m",
@@ -15731,7 +15838,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-fenix-7x-pro-sapphire-solar-edition",
@@ -15951,7 +16061,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-fenix-9-pro-47mm-amoled-carbon-dlc",
@@ -16029,7 +16142,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-forerunner-170-music",
@@ -16067,7 +16183,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-forerunner-570",
@@ -16105,7 +16224,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-forerunner-70",
@@ -16144,7 +16266,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-forerunner-965-black-powder",
@@ -16184,7 +16309,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Yellow"
+    ]
   },
   {
     "id": "garmin-forerunner-970",
@@ -16226,7 +16354,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-instinct-2x-solar",
@@ -16265,7 +16396,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Graphite"
+    ]
   },
   {
     "id": "garmin-instinct-2x-solar-tactical-edition",
@@ -16438,7 +16572,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-venu-3s-french",
@@ -16477,7 +16614,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "garmin-venu-4-45-mm",
@@ -16574,7 +16714,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "garmin-vivoactive-5",
@@ -16984,9 +17127,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 256,
         "priceAmd": 475900
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 569000
       }
     ],
     "display": {
@@ -17147,14 +17295,14 @@
     },
     "variants": [
       {
-        "ram": 16,
-        "storage": 256,
-        "priceAmd": 587700
-      },
-      {
         "ram": 12,
         "storage": 256,
         "priceAmd": 585000
+      },
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 587700
       },
       {
         "ram": 16,
@@ -17302,9 +17450,19 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 128,
         "priceAmd": 375000
+      },
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 399000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 479000
       }
     ],
     "display": {
@@ -17376,9 +17534,19 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 128,
         "priceAmd": 389000
+      },
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 404000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 449000
       }
     ],
     "display": {
@@ -17554,7 +17722,10 @@
     "connectivity": {
       "bluetooth": "5.3"
     },
-    "summaryEn": "A transparent dome with a light show inside and 130 W under it."
+    "summaryEn": "A transparent dome with a light show inside and 130 W under it.",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "harman-kardon-luna",
@@ -20246,7 +20417,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 159900
       }
@@ -20298,6 +20469,9 @@
     "released": "2024-05",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Green"
     ]
   },
   {
@@ -20406,6 +20580,11 @@
       },
       {
         "ram": 12,
+        "storage": 256,
+        "priceAmd": 184900
+      },
+      {
+        "ram": 12,
         "storage": 512,
         "priceAmd": 184900
       }
@@ -20472,7 +20651,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 109900
       }
@@ -20524,6 +20703,9 @@
     "released": "2025-04",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Green"
     ]
   },
   {
@@ -20669,7 +20851,17 @@
         "priceAmd": 199900
       },
       {
-        "ram": null,
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 199900
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 209900
+      },
+      {
+        "ram": 8,
         "storage": 512,
         "priceAmd": 229900
       }
@@ -20740,7 +20932,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 139900
       }
@@ -20811,7 +21003,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 512,
         "priceAmd": 329900
       }
@@ -21063,7 +21255,10 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "honor-choice-infowear-2i-kch-wb01",
@@ -21192,7 +21387,10 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "honor-earbuds-x6",
@@ -21587,14 +21785,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": 16,
-        "storage": 1024,
-        "priceAmd": 369900
-      },
-      {
         "ram": null,
         "storage": null,
         "priceAmd": 329900
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 369900
       }
     ],
     "display": {
@@ -21654,6 +21852,11 @@
         "ram": 16,
         "storage": 1024,
         "priceAmd": 369900
+      },
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 489900
       }
     ],
     "colors": [
@@ -21687,7 +21890,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 159900
       }
@@ -21734,6 +21937,9 @@
     "released": "2025-05",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -21877,8 +22083,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 128,
         "priceAmd": 59900
       }
     ],
@@ -21923,6 +22129,9 @@
     "released": "2025-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -21987,6 +22196,9 @@
     "released": "2025-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -22007,6 +22219,11 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
+      {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 94900
+      },
       {
         "ram": 6,
         "storage": 256,
@@ -22055,6 +22272,9 @@
     "released": "2026-02",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -22071,7 +22291,18 @@
     "priceAmdMax": 179900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 169900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 179900
+      }
+    ],
     "display": {
       "size": 11.5,
       "resolution": "2508x1504",
@@ -22113,6 +22344,9 @@
     "released": "2025-04",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -22407,6 +22641,9 @@
     "released": "2024-10",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Green"
     ]
   },
   {
@@ -22427,7 +22664,17 @@
         "priceAmd": 68900
       },
       {
-        "ram": null,
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 68900
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 69000
+      },
+      {
+        "ram": 8,
         "storage": 256,
         "priceAmd": 78900
       }
@@ -22503,7 +22750,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 256,
         "priceAmd": 89900
       }
@@ -22628,6 +22875,9 @@
     "released": "2022-03",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -22648,7 +22898,7 @@
         "priceAmd": 84900
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 94900
       }
@@ -22705,10 +22955,8 @@
     ],
     "colors": [
       "Green",
-      "Black",
       "Midnight Black",
-      "Titanium Silver",
-      "Silver"
+      "Titanium Silver"
     ]
   },
   {
@@ -22802,12 +23050,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 104900
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 114900
       }
@@ -23303,6 +23551,9 @@
     "battery": {},
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Natural Silver"
     ]
   },
   {
@@ -23384,7 +23635,10 @@
     ],
     "body": {
       "weight": 1590
-    }
+    },
+    "colors": [
+      "Natural Silver"
+    ]
   },
   {
     "id": "hp-15-fd0113dx",
@@ -23509,6 +23763,9 @@
     "battery": {},
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Natural Silver"
     ]
   },
   {
@@ -23807,7 +24064,10 @@
     ],
     "body": {
       "weight": 1590
-    }
+    },
+    "colors": [
+      "Blue"
+    ]
   },
   {
     "id": "hp-15-fd1899nr",
@@ -23886,11 +24146,19 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 289000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 335000
       }
     ],
     "battery": {},
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Natural Silver"
     ]
   },
   {
@@ -25039,7 +25307,10 @@
     ],
     "body": {
       "weight": 1790
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
@@ -25833,6 +26104,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 349000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 380000
       }
     ],
     "battery": {},
@@ -25939,9 +26215,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 469900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 539900
       }
     ],
     "display": {
@@ -26136,6 +26412,9 @@
     },
     "sources": [
       "https://www.jbl.com/AUTHENTICS-500.html"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -26170,7 +26449,10 @@
     "connectivity": {
       "bluetooth": "5.1"
     },
-    "summaryEn": "Eighty watts and a day of battery, in something you carry by a handle."
+    "summaryEn": "Eighty watts and a day of battery, in something you carry by a handle.",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-boombox-3",
@@ -26247,6 +26529,9 @@
     },
     "sources": [
       "https://www.jbl.com/BOOMBOX-3-WIFI.html"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -27189,7 +27474,10 @@
     },
     "body": {
       "weight": 274
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-quantum-300",
@@ -27228,7 +27516,10 @@
     },
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-tune",
@@ -27360,6 +27651,9 @@
     },
     "sources": [
       "https://www.jbl.com/TUNE125BT-.html"
+    ],
+    "colors": [
+      "Coral"
     ]
   },
   {
@@ -27401,7 +27695,10 @@
     ],
     "body": {
       "weight": 5.7
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "jbl-tune-215-tws",
@@ -27484,7 +27781,10 @@
     },
     "body": {
       "weight": 5.1
-    }
+    },
+    "colors": [
+      "Beige"
+    ]
   },
   {
     "id": "jbl-tune-500-wired",
@@ -27795,6 +28095,9 @@
     },
     "sources": [
       "https://www.jbl.com/TUNE760NC-.html"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -28043,8 +28346,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 8,
+        "storage": 256,
         "priceAmd": 279900
       }
     ],
@@ -28124,8 +28427,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 299900
       }
     ],
@@ -28164,9 +28467,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 319900
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 335900
       }
     ],
     "display": {
@@ -28203,9 +28506,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 779900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 959900
       }
     ],
     "display": {
@@ -28242,8 +28545,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 8,
+        "storage": 128,
         "priceAmd": 229900
       }
     ],
@@ -28282,9 +28585,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 349900
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 389900
       }
     ],
     "display": {
@@ -28322,9 +28625,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 439900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499900
       }
     ],
     "display": {
@@ -28673,9 +28976,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 479900
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 559900
       }
     ],
     "display": {
@@ -28713,8 +29021,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 429900
       }
     ],
@@ -28737,6 +29045,9 @@
     },
     "sources": [
       "e-catalog"
+    ],
+    "colors": [
+      "Grey"
     ]
   },
   {
@@ -28947,7 +29258,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 569900
       }
@@ -29045,9 +29356,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 259900
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 289900
       }
     ],
     "display": {
@@ -29107,6 +29418,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 249000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 445400
       }
     ],
     "battery": {},
@@ -29251,6 +29567,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 265000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 312400
       }
     ],
     "battery": {},
@@ -29343,7 +29664,10 @@
     ],
     "body": {
       "weight": 1590
-    }
+    },
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15iru8-256gb",
@@ -29491,9 +29815,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 319900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 379900
       }
     ],
     "display": {
@@ -29532,8 +29856,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 409900
       }
     ],
@@ -29616,9 +29940,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 459900
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 499900
       }
     ],
     "display": {
@@ -29661,9 +29985,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 489900
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 499900
       }
     ],
     "display": {
@@ -29702,8 +30026,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 512,
         "priceAmd": 449900
       }
     ],
@@ -29725,6 +30049,9 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83J1002SUS"
+    ],
+    "colors": [
+      "Grey"
     ]
   },
   {
@@ -30063,6 +30390,11 @@
         "ram": 12,
         "storage": 512,
         "priceAmd": 379000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 489000
       }
     ],
     "battery": {},
@@ -30087,9 +30419,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 469900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 529900
       }
     ],
     "display": {
@@ -30129,9 +30461,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 599900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 699900
       }
     ],
     "display": {
@@ -30152,6 +30484,9 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83JE00RNRK"
+    ],
+    "colors": [
+      "Grey"
     ]
   },
   {
@@ -30215,6 +30550,9 @@
     "released": "2022-12",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Grey"
     ]
   },
   {
@@ -30233,9 +30571,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 389900
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 409900
       }
     ],
     "display": {
@@ -30530,6 +30868,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 289000
+      },
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 337400
       }
     ],
     "battery": {},
@@ -30766,7 +31109,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 548000
       }
@@ -33031,7 +33374,10 @@
     "connectivity": {
       "bluetooth": "5.2"
     },
-    "summaryEn": "A 1.4 kg Marshall that still runs a full day on one charge."
+    "summaryEn": "A 1.4 kg Marshall that still runs a full day on one charge.",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "marshall-uxbridge",
@@ -33099,7 +33445,10 @@
     },
     "body": {
       "weight": 1390
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "marshall-willen",
@@ -34119,6 +34468,9 @@
     },
     "sources": [
       "https://www.zigzag.am/am/nothing-headphone-1-white-6974434224179.html"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -34202,7 +34554,10 @@
     },
     "body": {
       "weight": 44.4
-    }
+    },
+    "colors": [
+      "Blue"
+    ]
   },
   {
     "id": "nothing-ear-a",
@@ -34281,7 +34636,10 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "nothing-phone-2",
@@ -34583,6 +34941,9 @@
     "released": "2023-09",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -34649,6 +35010,9 @@
     "released": "2023-09",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -34714,6 +35078,9 @@
     "released": "2023-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Green"
     ]
   },
   {
@@ -34850,6 +35217,9 @@
     "released": "2023-02",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -35178,7 +35548,18 @@
     "priceAmdMax": 256900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 218000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 229000
+      }
+    ],
     "display": {
       "size": 6.67,
       "resolution": "1440x3200",
@@ -35353,6 +35734,11 @@
       },
       {
         "ram": 12,
+        "storage": 256,
+        "priceAmd": 149700
+      },
+      {
+        "ram": 12,
         "storage": 512,
         "priceAmd": 185000
       }
@@ -35420,14 +35806,19 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": 12,
-        "storage": 512,
-        "priceAmd": 209900
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 149000
       },
       {
         "ram": 8,
         "storage": 512,
         "priceAmd": 174000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 209900
       }
     ],
     "display": {
@@ -35590,6 +35981,11 @@
       },
       {
         "ram": 8,
+        "storage": 128,
+        "priceAmd": 69900
+      },
+      {
+        "ram": 8,
         "storage": 256,
         "priceAmd": 90000
       }
@@ -35746,6 +36142,9 @@
     "summaryEn": "Samsung 27D300GAU.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -35884,6 +36283,9 @@
     "released": "2023-12",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -36431,6 +36833,11 @@
         "ram": 4,
         "storage": 64,
         "priceAmd": 59900
+      },
+      {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 64000
       }
     ],
     "display": {
@@ -36503,8 +36910,18 @@
     "variants": [
       {
         "ram": 4,
+        "storage": 64,
+        "priceAmd": 71000
+      },
+      {
+        "ram": 4,
         "storage": 128,
         "priceAmd": 84900
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 97900
       }
     ],
     "display": {
@@ -36660,6 +37077,11 @@
         "ram": 6,
         "storage": 128,
         "priceAmd": 74900
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 82000
       },
       {
         "ram": 8,
@@ -36956,6 +37378,9 @@
     "released": "2023-03",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Yellow"
     ]
   },
   {
@@ -37151,6 +37576,11 @@
       "gpu": "Samsung Xclipse 530"
     },
     "variants": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 119000
+      },
       {
         "ram": 8,
         "storage": 128,
@@ -38531,6 +38961,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 336900
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 409900
       }
     ],
     "camera": {
@@ -38701,6 +39136,11 @@
         "ram": 12,
         "storage": 512,
         "priceAmd": 499000
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "priceAmd": 629000
       },
       {
         "ram": 16,
@@ -39081,12 +39521,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 4,
         "storage": 64,
         "priceAmd": 75000
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 128,
         "priceAmd": 109000
       }
@@ -39178,6 +39618,11 @@
         "ram": 6,
         "storage": 128,
         "priceAmd": 142900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 154900
       }
     ],
     "unsure": [
@@ -39252,6 +39697,11 @@
         "ram": 8,
         "storage": 128,
         "priceAmd": 179000
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 229000
       }
     ],
     "unsure": [
@@ -39687,6 +40137,11 @@
     "released": "2023",
     "summaryEn": "A 12.4-inch tablet on Snapdragon 8 Gen 2.",
     "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 359900
+      },
       {
         "ram": 12,
         "storage": 512,
@@ -40566,6 +41021,16 @@
         "ram": 12,
         "storage": 512,
         "priceAmd": 758000
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "priceAmd": 1069000
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 1066900
       }
     ],
     "camera": {
@@ -40649,14 +41114,14 @@
         "priceAmd": 788000
       },
       {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 878000
-      },
-      {
         "ram": 12,
         "storage": 512,
         "priceAmd": 749000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 878000
       },
       {
         "ram": 16,
@@ -42834,6 +43299,9 @@
     "summaryEn": "Samsung S27D402G.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -43640,7 +44108,10 @@
     ],
     "body": {
       "weight": 238
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "sennheiser-hd-599",
@@ -43857,7 +44328,10 @@
     },
     "body": {
       "weight": 340
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "sonos-ace",
@@ -44497,6 +44971,9 @@
     "summaryEn": "Sony PlayStation VR2.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -44599,6 +45076,9 @@
     "summaryEn": "Sony PS5 HD Camera.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -44696,7 +45176,10 @@
     ],
     "connectivity": {
       "bluetooth": "Yes (Sony states no version), plus PlayStation Link"
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "sony-ps5-slim",
@@ -44786,7 +45269,10 @@
     "year": 2023,
     "connectivity": {
       "bluetooth": "Yes (Sony states no version), plus PlayStation Link"
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "sony-wf-1000xm5-wireless-headphones",
@@ -44828,7 +45314,10 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "sony-wf-c500-true-wireless",
@@ -44870,6 +45359,9 @@
     },
     "sources": [
       "https://helpguide.sony.net/mdr/wfc500/v1/en/contents/TP1000449913.html"
+    ],
+    "colors": [
+      "Orange"
     ]
   },
   {
@@ -44998,6 +45490,9 @@
     "summaryEn": "Sony's mid-range ANC buds, now with a clear case and a much better call mic.",
     "sources": [
       "https://helpguide.sony.net/mdr/2986/v1/en/contents/TP1001829716.html"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -45288,6 +45783,9 @@
     "released": "2023-05",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -47354,6 +47852,9 @@
     "released": "2022-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Green"
     ]
   },
   {
@@ -47501,7 +48002,18 @@
     "priceAmdMax": 194900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 179000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 189000
+      }
+    ],
     "display": {
       "size": 6.67,
       "resolution": "1220x2712",
@@ -48540,9 +49052,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 164900
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 207900
       }
     ],
     "display": {
@@ -48688,7 +49200,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 174900
+      },
+      {
+        "ram": 12,
         "storage": 512,
         "priceAmd": 192000
       }
@@ -48764,12 +49281,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 512,
         "priceAmd": 236000
       },
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 279000
       }
@@ -48843,6 +49360,11 @@
         "ram": null,
         "storage": null,
         "priceAmd": 61900
+      },
+      {
+        "ram": 4,
+        "storage": 64,
+        "priceAmd": 53900
       },
       {
         "ram": 4,
@@ -49035,6 +49557,9 @@
     "released": "2024-01",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Purple"
     ]
   },
   {
@@ -49136,7 +49661,18 @@
     "priceAmdMax": 95900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 92000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 99000
+      }
+    ],
     "display": {
       "size": 6.67,
       "resolution": "1080x2400",
@@ -49217,6 +49753,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 129000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 119000
       }
     ],
     "display": {
@@ -49289,6 +49830,11 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 149000
+      },
       {
         "ram": 12,
         "storage": 256,
@@ -49370,7 +49916,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 97000
       }
@@ -49507,7 +50053,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 106000
+      },
+      {
+        "ram": 12,
         "storage": 512,
         "priceAmd": 117000
       }
@@ -49584,13 +50135,13 @@
     "variants": [
       {
         "ram": 12,
-        "storage": 512,
-        "priceAmd": 269900
+        "storage": 256,
+        "priceAmd": 209000
       },
       {
         "ram": 12,
-        "storage": 256,
-        "priceAmd": 209000
+        "storage": 512,
+        "priceAmd": 269900
       }
     ],
     "display": {
@@ -49661,9 +50212,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 79900
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 53900
       }
     ],
     "display": {
@@ -49729,7 +50280,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 2,
         "storage": 32,
         "priceAmd": 40000
       }
@@ -49861,9 +50412,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 64900
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 55900
       }
     ],
     "display": {
@@ -49932,9 +50483,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 56900
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 48900
       }
     ],
     "display": {
@@ -49981,6 +50532,9 @@
     "released": "2023-01",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite Gray"
     ]
   },
   {
@@ -50054,6 +50608,9 @@
     "released": "2024-05",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -50229,6 +50786,11 @@
       },
       {
         "ram": 8,
+        "storage": 128,
+        "priceAmd": 69900
+      },
+      {
+        "ram": 8,
         "storage": 256,
         "priceAmd": 74000
       }
@@ -50287,8 +50849,7 @@
       "Purple",
       "Gray",
       "Black",
-      "Midnight Black",
-      "Titanium"
+      "Midnight Black"
     ]
   },
   {
@@ -50357,6 +50918,11 @@
         "priceAmd": 58900
       },
       {
+        "ram": 4,
+        "storage": 256,
+        "priceAmd": 56000
+      },
+      {
         "ram": 8,
         "storage": 256,
         "priceAmd": 65900
@@ -50406,6 +50972,11 @@
         "ram": 4,
         "storage": 256,
         "priceAmd": 84000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 109000
       }
     ],
     "display": {
@@ -50547,6 +51118,9 @@
     },
     "sources": [
       "https://www.mi.com/global/product/redmi-buds-4/specs/"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -50932,6 +51506,11 @@
     "variants": [
       {
         "ram": 4,
+        "storage": 64,
+        "priceAmd": 49000
+      },
+      {
+        "ram": 4,
         "storage": 128,
         "priceAmd": 63900
       }
@@ -51025,6 +51604,9 @@
     },
     "sources": [
       "https://www.mi.com/global/product/redmi-buds-3-lite/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -51477,7 +52059,17 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 57900
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 66900
+      },
+      {
+        "ram": 8,
         "storage": 256,
         "priceAmd": 70700
       }
@@ -51622,6 +52214,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 84900
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 127000
       }
     ],
     "colors": [
@@ -51736,7 +52333,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 66900
+      },
+      {
+        "ram": 8,
         "storage": 256,
         "priceAmd": 85900
       }
@@ -51815,6 +52417,11 @@
       },
       {
         "ram": 12,
+        "storage": 256,
+        "priceAmd": 126800
+      },
+      {
+        "ram": 12,
         "storage": 512,
         "priceAmd": 175000
       }
@@ -51874,14 +52481,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": 12,
-        "storage": 512,
-        "priceAmd": 172000
-      },
-      {
         "ram": 8,
         "storage": 256,
         "priceAmd": 161000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 172000
       }
     ],
     "display": {
@@ -51951,19 +52558,24 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 84900
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 89900
       },
       {
-        "ram": null,
-        "storage": 512,
-        "priceAmd": 99900
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 84900
       },
       {
         "ram": 8,
         "storage": 256,
         "priceAmd": 99000
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 99900
       }
     ],
     "display": {
@@ -52037,7 +52649,17 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 77000
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 89900
+      },
+      {
+        "ram": 8,
         "storage": 256,
         "priceAmd": 98900
       },
@@ -52146,6 +52768,11 @@
         "priceAmd": 134900
       },
       {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 156900
+      },
+      {
         "ram": 12,
         "storage": 512,
         "priceAmd": 152900
@@ -52183,12 +52810,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 175900
       },
       {
-        "ram": null,
+        "ram": 12,
         "storage": 512,
         "priceAmd": 199900
       }
@@ -52266,6 +52893,11 @@
         "ram": 6,
         "storage": 256,
         "priceAmd": 115900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 129900
       }
     ],
     "display": {
@@ -52337,7 +52969,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 128,
         "priceAmd": 97900
       },
@@ -52428,7 +53060,7 @@
         "priceAmd": 116720
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 135900
       },
@@ -52583,9 +53215,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 119900
+        "ram": 3,
+        "storage": 64,
+        "priceAmd": 99000
       }
     ],
     "display": {
@@ -52633,6 +53265,9 @@
     "released": "2022-10",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Graphite Gray"
     ]
   },
   {
@@ -52669,6 +53304,11 @@
         "ram": 4,
         "storage": 128,
         "priceAmd": 89900
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 83900
       },
       {
         "ram": 8,
@@ -52970,8 +53610,7 @@
       "kimovil"
     ],
     "colors": [
-      "Graphite Gray",
-      "Gray"
+      "Graphite Gray"
     ]
   },
   {
@@ -53011,6 +53650,9 @@
     },
     "sources": [
       "https://www.mi.com/global/product/redmi-smart-band-2/specs/"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -53047,7 +53689,10 @@
     "year": 2021,
     "body": {
       "weight": 35
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-redmi-watch-5-active",
@@ -53711,7 +54356,10 @@
     },
     "body": {
       "weight": 14
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-smart-band-7-pro",
@@ -53793,6 +54441,9 @@
     },
     "sources": [
       "https://www.mi.com/global/product/xiaomi-smart-band-8-active/specs/"
+    ],
+    "colors": [
+      "Pink"
     ]
   },
   {
@@ -53839,8 +54490,7 @@
     ],
     "colors": [
       "Sand",
-      "Black",
-      "Gold"
+      "Black"
     ]
   },
   {
@@ -53907,6 +54557,9 @@
     },
     "sources": [
       "https://www.mi.com/global/product/xiaomi-smart-band-8-pro/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -54291,12 +54944,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 128,
         "priceAmd": 52900
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 63900
       }
@@ -54348,6 +55001,9 @@
     "released": "2025-06",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -54533,7 +55189,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 4,
         "storage": 64,
         "priceAmd": 32900
       },
@@ -54660,7 +55316,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 512,
         "priceAmd": 309900
       }
@@ -54735,7 +55391,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 128,
         "priceAmd": 359900
       }
@@ -54809,9 +55465,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 128,
         "priceAmd": 269900
+      },
+      {
+        "ram": 6,
+        "storage": 512,
+        "priceAmd": 359900
       }
     ],
     "display": {
@@ -55009,6 +55670,16 @@
         "ram": 12,
         "storage": 256,
         "priceAmd": 511900
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 570900
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "priceAmd": 699600
       }
     ],
     "display": {
@@ -55076,6 +55747,11 @@
         "ram": 6,
         "storage": 128,
         "priceAmd": 114900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 140900
       }
     ],
     "display": {
@@ -55402,13 +56078,13 @@
     "variants": [
       {
         "ram": 8,
-        "storage": 256,
-        "priceAmd": 159000
+        "storage": 128,
+        "priceAmd": 119900
       },
       {
         "ram": 8,
-        "storage": 128,
-        "priceAmd": 119900
+        "storage": 256,
+        "priceAmd": 159000
       }
     ],
     "display": {
@@ -55588,6 +56264,11 @@
     "accent": "#5C6470",
     "variants": [
       {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 177900
+      },
+      {
         "ram": 12,
         "storage": 256,
         "priceAmd": 169000
@@ -55686,7 +56367,10 @@
       "ip": "IP67"
     },
     "released": "2022-07",
-    "specSource": "gsmarena.com/google_pixel_6a-11229.php, 2026-10-03"
+    "specSource": "gsmarena.com/google_pixel_6a-11229.php, 2026-10-03",
+    "colors": [
+      "Charcoal"
+    ]
   },
   {
     "id": "nothing-phone-2a-plus",
@@ -55703,7 +56387,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 256,
         "priceAmd": 175000
       }
@@ -55743,7 +56427,10 @@
       "ip": "IP54"
     },
     "released": "2024-08",
-    "specSource": "gsmarena.com/nothing_phone_(2a)_plus-13243.php, 2026-10-03"
+    "specSource": "gsmarena.com/nothing_phone_(2a)_plus-13243.php, 2026-10-03",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "oneplus-nord-ce4",
@@ -55931,6 +56618,11 @@
         "ram": 4,
         "storage": 128,
         "priceAmd": 229000
+      },
+      {
+        "ram": 4,
+        "storage": 512,
+        "priceAmd": 469900
       }
     ],
     "display": {
@@ -55997,7 +56689,7 @@
         "priceAmd": 229000
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 245000
       }
@@ -56062,7 +56754,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 128,
         "priceAmd": 249000
       },
@@ -56169,7 +56861,10 @@
       "ip": "IP67"
     },
     "released": "2024-05",
-    "specSource": "gsmarena.com/google_pixel_8a-12937.php, 2026-10-03"
+    "specSource": "gsmarena.com/google_pixel_8a-12937.php, 2026-10-03",
+    "colors": [
+      "Obsidian"
+    ]
   },
   {
     "id": "xiaomi-poco-f8-pro",
@@ -56185,6 +56880,11 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 239700
+      },
       {
         "ram": 12,
         "storage": 512,
@@ -56249,7 +56949,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 256,
         "priceAmd": 349000
       }
@@ -56310,7 +57010,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 256,
         "priceAmd": 359000
       }
@@ -56351,7 +57051,10 @@
       "ip": "IP64"
     },
     "released": "2023-01",
-    "specSource": "gsmarena.com/oneplus_11-11893.php, 2026-10-03"
+    "specSource": "gsmarena.com/oneplus_11-11893.php, 2026-10-03",
+    "colors": [
+      "Green"
+    ]
   },
   {
     "id": "samsung-galaxy-s24-plus",
@@ -56426,6 +57129,11 @@
     "accent": "#5C6470",
     "variants": [
       {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 329700
+      },
+      {
         "ram": 16,
         "storage": 512,
         "priceAmd": 369000
@@ -56488,7 +57196,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 512,
         "priceAmd": 375000
       }
@@ -56618,7 +57326,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 256,
         "priceAmd": 419000
       }
@@ -56659,7 +57367,10 @@
       "ip": "IP68"
     },
     "released": "2022-07",
-    "specSource": "gsmarena.com/xiaomi_12s_ultra-11614.php, 2026-10-03"
+    "specSource": "gsmarena.com/xiaomi_12s_ultra-11614.php, 2026-10-03",
+    "colors": [
+      "Dark Green"
+    ]
   },
   {
     "id": "xiaomi-poco-f9-ultra",
@@ -56717,7 +57428,10 @@
       "ip": "IP68"
     },
     "released": "2026-09",
-    "specSource": "gsmarena.com/xiaomi_poco_f9_ultra_5g-14876.php, 2026-10-03"
+    "specSource": "gsmarena.com/xiaomi_poco_f9_ultra_5g-14876.php, 2026-10-03",
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-17-ultra",
@@ -56837,7 +57551,10 @@
       "ip": "IP68"
     },
     "released": "2026-08",
-    "specSource": "gsmarena.com/google_pixel_11_pro_fold-14874.php, 2026-10-03"
+    "specSource": "gsmarena.com/google_pixel_11_pro_fold-14874.php, 2026-10-03",
+    "colors": [
+      "Obsidian"
+    ]
   },
   {
     "id": "xiaomi-pad-8",
@@ -56854,7 +57571,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 209000
       }
@@ -56911,6 +57628,11 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 170900
+      },
       {
         "ram": 6,
         "storage": 256,
@@ -57067,7 +57789,10 @@
       "materials": "Glass front, aluminum back, aluminum frame"
     },
     "released": "2023-04",
-    "specSource": "gsmarena.com/oneplus_pad-12112.php, 2026-10-03"
+    "specSource": "gsmarena.com/oneplus_pad-12112.php, 2026-10-03",
+    "colors": [
+      "Green"
+    ]
   },
   {
     "id": "amazon-kindle-scribe",
@@ -57419,7 +58144,13 @@
     "priceAmdMax": 699000,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 713400
+      }
+    ],
     "display": {
       "size": 14.2,
       "resolution": "3024x1964",
@@ -61314,7 +62045,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "colors": [],
+    "colors": [
+      "White"
+    ],
     "audio": {
       "conn": "wireless",
       "gaming": true,
@@ -61857,7 +62590,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "colors": [],
+    "colors": [
+      "Onyx"
+    ],
     "audio": {
       "conn": "wireless",
       "form": "open",
@@ -63625,7 +64360,10 @@
     },
     "body": {
       "weight": 1180
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omen-16-core-i7-14650hx-rtx5050-c42dnea",
@@ -63643,7 +64381,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 1024,
         "priceAmd": 799000
       }
@@ -63665,7 +64403,10 @@
     },
     "body": {
       "weight": 2400
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "asus-vivobook-15-6-core-5-120u-90nb13y1-m01px0",
@@ -63721,7 +64462,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 379000
       }
@@ -63741,7 +64482,10 @@
     "chipset": {
       "name": "Intel Core 5-120U"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Blue"
+    ]
   },
   {
     "id": "asus-tuf-16-i7-14650hx-rtx5050-90nr0na1-m003c0",
@@ -63759,7 +64503,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 633900
       }
@@ -63779,7 +64523,10 @@
     "chipset": {
       "name": "Intel Core i7-14650HX"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Gray"
+    ]
   },
   {
     "id": "asus-vivobook-s-16-core-5-210h-90nb1672-m009k0",
@@ -63797,7 +64544,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 449000
       }
@@ -63817,7 +64564,10 @@
     "chipset": {
       "name": "Intel Core 5-210H"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Gray"
+    ]
   },
   {
     "id": "asus-vivobook-s-14-core-5-210h-90nb1682-m00720",
@@ -63835,7 +64585,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 366600
       }
@@ -63854,7 +64604,10 @@
     "chipset": {
       "name": "Intel Core 5-210H"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Gray"
+    ]
   },
   {
     "id": "lenovo-loq-15-6-i7-13645hx-rtx5050-83je0189rk",
@@ -63872,7 +64625,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 550600
       }
@@ -63890,7 +64643,10 @@
     "chipset": {
       "name": "Intel Core i7-13645HX"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-16-ultra-7-258v-w11h-cl6v6ea",
@@ -63908,7 +64664,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 1024,
         "priceAmd": 659000
       }
@@ -63926,7 +64682,10 @@
     "chipset": {
       "name": "Intel Core Ultra 7-258V"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-14-ultra-7-256v-w11h-bz2x0ea",
@@ -63944,7 +64703,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 615000
       }
@@ -63962,7 +64721,10 @@
     "chipset": {
       "name": "Intel Core Ultra 7-256V"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-16-ultra-7-256v-w11h-c1up1ea",
@@ -63980,7 +64742,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 626000
       }
@@ -64000,7 +64762,10 @@
     "chipset": {
       "name": "Intel Core Ultra 7-256V"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "asus-zenbook-16-oled-ryzen-ai-7-445-w11h-90nb17h2-m006f0",
@@ -64018,7 +64783,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 1024,
         "priceAmd": 842100
       }
@@ -64037,7 +64802,10 @@
     "chipset": {
       "name": "AMD Ryzen AI 7 445"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "honor-magicbook-x16-ultra-5-125h-w11h-5301argm",
@@ -64056,7 +64824,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 379900
       }
@@ -64094,7 +64862,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 549000
       }
@@ -64115,7 +64883,10 @@
     },
     "body": {
       "weight": 2100
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omnibook-7-16-core-5-210h-w11h-c21n7ea",
@@ -64133,7 +64904,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 409000
       }
@@ -64154,7 +64925,10 @@
     },
     "body": {
       "weight": 1800
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omen-16-ultra-7-255hx-rtx-5070ti-c5hz1ea",
@@ -64212,7 +64986,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 2048,
         "priceAmd": 985800
       }
@@ -64234,7 +65008,10 @@
     },
     "body": {
       "weight": 1800
-    }
+    },
+    "colors": [
+      "Gray"
+    ]
   },
   {
     "id": "asus-vivobook-15-6-touch-core-7-150u-w11-f1504vap-ih79t",
@@ -64371,7 +65148,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 515600
       }
@@ -64411,7 +65188,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 499000
       }
@@ -64433,7 +65210,10 @@
     },
     "body": {
       "weight": 1400
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-x360-14-ultra-7-256v-w11h-c1um8ea",
@@ -64451,7 +65231,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 575000
       }
@@ -64472,7 +65252,10 @@
     },
     "body": {
       "weight": 1380
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-pavilion-16-r7-8840u-b2cv4ea",
@@ -64581,7 +65364,10 @@
     "chipset": {
       "name": "Intel Core i5-13420H"
     },
-    "body": {}
+    "body": {},
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "honor-magicbook-x14-pro-i5-13420h-w11h-5301ahqk",
@@ -64633,7 +65419,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 949000
       }
@@ -64660,7 +65446,10 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "colors": [
+      "Gray"
+    ]
   },
   {
     "id": "hp-15-6-core-5-120u-a5cv9ea",
@@ -64865,7 +65654,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 18,
         "storage": 512,
         "priceAmd": 1179500
       }
@@ -64886,7 +65675,10 @@
     },
     "body": {
       "weight": 2160
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba",
@@ -65004,19 +65796,19 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 12,
         "storage": 256,
         "priceAmd": 449000
-      },
-      {
-        "ram": null,
-        "storage": 512,
-        "priceAmd": 499000
       },
       {
         "ram": 12,
         "storage": 256,
         "priceAmd": 449000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499000
       },
       {
         "ram": 16,
@@ -65115,9 +65907,9 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 47000
+        "ram": 3,
+        "storage": 64,
+        "priceAmd": 46700
       }
     ],
     "display": {
@@ -65155,8 +65947,13 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": null,
+        "priceAmd": 1899000
+      },
+      {
+        "ram": 32,
+        "storage": 2048,
         "priceAmd": 1899000
       }
     ],
@@ -65735,6 +66532,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -65765,6 +66565,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -65798,6 +66601,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -66155,6 +66961,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -66187,7 +66996,6 @@
       "battery.capacity"
     ],
     "colors": [
-      "Grey",
       "Dark Grey"
     ]
   },
@@ -66253,6 +67061,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -66635,7 +67446,10 @@
     "audio": {
       "form": "full",
       "conn": "wireless"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-tune-780nc",
@@ -67158,7 +67972,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 360700
       }
@@ -67904,6 +68718,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -68303,6 +69120,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Dark Gray Silver"
     ]
   },
   {
@@ -68403,6 +69223,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -68705,9 +69528,14 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 269900
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 279000
       }
     ],
     "display": {},
@@ -68718,6 +69546,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -72998,6 +73829,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 225000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 249000
       }
     ],
     "battery": {},
@@ -73114,9 +73950,19 @@
     "accent": "#5C6470",
     "variants": [
       {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 249000
+      },
+      {
         "ram": 16,
         "storage": 512,
         "priceAmd": 282000
+      },
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 573800
       },
       {
         "ram": 16,
@@ -73268,8 +74114,23 @@
     "variants": [
       {
         "ram": 8,
+        "storage": 256,
+        "priceAmd": 205000
+      },
+      {
+        "ram": 8,
         "storage": 512,
         "priceAmd": 235000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 283400
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 361400
       }
     ],
     "battery": {},
@@ -73293,7 +74154,10 @@
     "graphics": {
       "name": "INTEGRATED",
       "type": "integrated"
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "asus-vivobook-m1807ha-db79",
@@ -74464,7 +75328,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 24,
         "storage": 512,
         "priceAmd": 449400
       }
@@ -74504,7 +75368,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 488400
       }
@@ -74545,7 +75409,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 500400
       }
@@ -74585,7 +75449,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 635400
       }
@@ -74626,7 +75490,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 545400
       }
@@ -74666,7 +75530,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 449000
       }
@@ -74702,7 +75566,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 658400
       }
@@ -74775,7 +75639,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 485400
       }
@@ -74815,7 +75679,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 358400
       }
@@ -74855,7 +75719,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 498400
       }
@@ -74895,7 +75759,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 579400
       }
@@ -74935,7 +75799,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 547400
       }
@@ -74975,7 +75839,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 393400
       }
@@ -75017,12 +75881,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 356400
       },
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 371400
       }
@@ -75063,7 +75927,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 342400
       }
@@ -75103,7 +75967,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 425400
       }
@@ -75143,7 +76007,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 336400
+      },
+      {
+        "ram": 24,
         "storage": 1024,
         "priceAmd": 409400
       }
@@ -75183,7 +76052,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 497400
+      },
+      {
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 519400
       }
@@ -75223,7 +76097,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 499400
       }
@@ -75263,7 +76137,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 509400
       }
@@ -75303,7 +76177,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 493400
       }
@@ -75343,7 +76217,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 1024,
         "priceAmd": 864400
       }
@@ -75379,7 +76253,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 616400
       }
@@ -75419,7 +76293,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 623400
       }
@@ -75529,7 +76403,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 531400
       }
@@ -75610,7 +76484,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 405000
       }
@@ -75650,7 +76524,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 445400
       }
@@ -75687,7 +76561,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 450400
       }
@@ -75727,7 +76601,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 614400
       }
@@ -75807,7 +76681,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 554400
       }
@@ -75847,7 +76721,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 533400
       }
@@ -75887,7 +76761,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 525400
       }
@@ -75927,7 +76801,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 711400
       }
@@ -76005,7 +76879,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 521400
       }
@@ -76045,7 +76919,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 653400
       }
@@ -76085,7 +76959,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 512,
         "priceAmd": 765400
       }
@@ -76125,7 +76999,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 512,
         "priceAmd": 434400
       }
@@ -76244,7 +77118,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 574400
       }
@@ -76323,7 +77197,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 539400
       }
@@ -76522,7 +77396,10 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "colors": [
+      "Blue"
+    ]
   },
   {
     "id": "hp-omnibook-5-16-oled-ultra-5-322",
@@ -76561,7 +77438,10 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "colors": [
+      "Silver"
+    ]
   },
   {
     "id": "hp-omnibook-17-dp0105dx",
@@ -76931,7 +77811,10 @@
     "graphics": {
       "name": "Apple M1 Pro 16-core GPU",
       "type": "integrated"
-    }
+    },
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "lenovo-yoga-27iah10-ultra-7-255h",
@@ -76969,7 +77852,10 @@
     "graphics": {
       "name": "Intel Arc Graphics",
       "type": "integrated"
-    }
+    },
+    "colors": [
+      "Grey"
+    ]
   },
   {
     "id": "marshall-motif-ii-anc",
@@ -77006,6 +77892,9 @@
     "summaryEn": "Marshall Motif II ANC true wireless earbuds.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -77771,6 +78660,10 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Orange",
+      "Pink"
     ]
   },
   {
@@ -77804,6 +78697,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Dark Grey"
     ]
   },
   {
@@ -77910,6 +78806,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -77944,6 +78843,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -78014,6 +78916,10 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {
@@ -78120,6 +79026,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -78276,6 +79185,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -78359,6 +79271,11 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black",
+      "Blue",
+      "Silver Gray"
     ]
   },
   {
@@ -78518,6 +79435,9 @@
     "unsure": [
       "popularity",
       "chipset"
+    ],
+    "colors": [
+      "Graphite Gray"
     ]
   },
   {
@@ -78561,6 +79481,10 @@
     "unsure": [
       "popularity",
       "chipset"
+    ],
+    "colors": [
+      "Graphite Gray",
+      "Silver"
     ]
   },
   {
@@ -79604,7 +80528,10 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "marshall-emberton-ii",
@@ -79689,6 +80616,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Silver"
     ]
   },
   {
@@ -79787,6 +80717,10 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black",
+      "Gray"
     ]
   },
   {
@@ -82589,6 +83523,11 @@
         "ram": 12,
         "storage": 1024,
         "priceAmd": 848900
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 848900
       }
     ],
     "camera": {
@@ -82852,6 +83791,11 @@
       },
       {
         "ram": 8,
+        "storage": 256,
+        "priceAmd": 251900
+      },
+      {
+        "ram": 12,
         "storage": 256,
         "priceAmd": 251900
       }
@@ -86614,6 +87558,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White Purple"
     ]
   },
   {
