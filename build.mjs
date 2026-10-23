@@ -685,7 +685,9 @@ const previousPages = fs.existsSync('data/page-manifest.json') ? JSON.parse(rd('
 const generatedPages = {};
 function writePage(file, html) {
   const key = file.replaceAll('\\', '/');
-  const hash = crypto.createHash('sha256').update(html).digest('hex');
+  // Asset cache-busters and CSP script hashes change on every build; leaving them in made every
+  // page's sitemap lastmod "today", so Google learned to ignore it. Hash the page's own content.
+  const hash = crypto.createHash('sha256').update(html.replace(/\?v=[0-9a-f]+/g, '').replace(/'sha256-[^']+'/g, '')).digest('hex');
   generatedPages[key] = { hash, modified: previousPages[key]?.hash === hash ? previousPages[key].modified : today };
   // Windows antivirus/indexers briefly lock files in this large generated tree.
   // Retry only transient sharing errors, and still fail if the file stays locked.
