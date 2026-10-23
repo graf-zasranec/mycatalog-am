@@ -21,7 +21,9 @@
     const route = location.hash.slice(1).split('?')[0];
     const publicRoute = /^\/(?:p|offers|c|blog)\/[a-z0-9-]+$/.test(route)
       || /^\/(?:compare|search|privacy|terms|contact|blog|catalog)$/.test(route);
-    const path = location.pathname + (publicRoute ? '#' + route : '');
+    // GA drops everything after '#', so app routes are reported as their real page paths (/ru/p/<id>/).
+    const lang = /^\/(ru|en)\//.test(location.pathname) ? location.pathname.slice(0, 3) : '';
+    const path = publicRoute ? lang + route + '/' : location.pathname;
     if (path === lastPath) return;
     lastPath = path;
     let referrer = '';

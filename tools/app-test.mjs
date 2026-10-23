@@ -47,7 +47,7 @@ const names = ['DATA', 'STR', 'PRICES', 'VERD', 'TERMS', ...Object.keys(stub)];
 const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
   offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareConfig, compareOptions, specAllowed, addLabel, counterPath,
-  activeFilterCount, seenTag, pageCount, hay, fullName, sold,
+  activeFilterCount, seenTag, pageCount, offerRow, hay, fullName, sold,
   GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
@@ -205,6 +205,7 @@ is(phones.filter(p => p.category === 'earbuds').map(p => p.id), [], 'earbuds and
 is(phones.filter(p => p.category === 'headphones' && !p.audio?.form).map(p => p.id), [], 'every headphone has a type (node tools/audio.mjs)');
 const wired = phones.filter(p => p.audio?.conn === 'wired').map(p => p.id);
 is(['apple-earpods-usb-c', 'samsung-eo-ic100-usb-type-c'].filter(id => !wired.includes(id)), [], 'EarPods and the Samsung Type-C earphones are wired');
+is(/data-shop="istyle" data-pid="apple-iphone-17-pro" data-price="455000"/.test(app.offerRow({ shop: 'istyle', url: 'https://istyle.am/x', price: 455000 }, 455000, 0, null, '', { id: 'apple-iphone-17-pro' })), true, 'shop links carry shop, product and price for the click tracker');
 // With no category chosen the page is showing phones beside fridges: only the questions that
 // apply to a purchase rather than to hardware survive.
 // With no category the bar used to offer nothing but brand, price and shop, which read as a

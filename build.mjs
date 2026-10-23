@@ -965,7 +965,7 @@ for (const lang of LANGS) {
 ${hero ? `<img class="shot" src="${R}${hero}" alt="${esc(n)}" width="360" height="360">` : ''}
 ${offs.length ? `<h2>${t.prices}</h2>
 <div class="tw"><table><thead><tr><th>${t.th[0]}</th><th>${t.th[1]}</th><th class="n">${t.th[2]}</th></tr></thead><tbody>
-${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${esc(configLabel(p, o, t))}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
+${rows(offs).map(o => `<tr><td>${/^https?:\/\//i.test(o.url || '') ? `<a href="${esc(o.url)}" rel="nofollow noopener" data-shop="${esc(o.shop)}" data-pid="${esc(p.id)}" data-price="${o.price || ''}">${esc(shopName(o.shop))}</a>` : esc(shopName(o.shop))}</td><td>${esc(configLabel(p, o, t))}</td><td class="n">${amd(o.price)}</td></tr>`).join('\n')}
 </tbody></table></div>` : ''}
 ${sr.length ? `<h2>${t.specs}</h2>
 <dl>${sr.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}

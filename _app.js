@@ -1811,6 +1811,18 @@ const counterPath = () => {
     : /^\/c\/[a-z]+$/.test(h) ? h : '/';
   return location.pathname + (path === '/' ? '' : '#' + path);
 };
+// Every click through to a shop's page: which shop, which product, at what price. GA sends it only
+// with the visitor's consent; GoatCounter is cookie-free and records it as an event path.
+document.addEventListener('click', e => {
+  const a = e.target.closest?.('a[data-shop]');
+  if (!a) return;
+  const { shop, pid, price } = a.dataset;
+  try {
+    window.gtag?.('event', 'shop_click', { shop, product_id: pid, value: +price || undefined, currency: 'AMD', link_url: a.href, transport_type: 'beacon' });
+    if (!(navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1'))
+      window.goatcounter?.count?.({ path: `shop-click/${shop}/${pid}`, title: `${shop} · ${pid}`, event: true });
+  } catch (err) { }
+}, true);
 const countView = () => {
   try {
     if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
@@ -2672,7 +2684,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
   const live = /^https?:\/\//i.test(String(o.url || ''));
   const best = o.price === lo ? ' best' : '';
   return `<li${cls ? ` class="${cls}"` : ''}>${live
-      ? `<a class="orow${best}" href="${esc(safeHref(o.url))}" target="_blank" rel="noopener noreferrer">`
+      ? `<a class="orow${best}" href="${esc(safeHref(o.url))}" target="_blank" rel="noopener noreferrer" data-shop="${esc(o.shop)}" data-pid="${esc(of?.id || '')}" data-price="${o.price || ''}">`
       : `<div class="orow nolink${best}">`}
     <span class="rk num">${String(i + 1).padStart(2, '0')}</span>
     <span class="sh">${esc(shopName(o.shop))}</span>
