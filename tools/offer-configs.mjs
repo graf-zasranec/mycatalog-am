@@ -3,6 +3,16 @@ import { cpu, storageGB } from './spec-values.mjs';
 // The same source cache used by shop-specs.mjs. Configuration facts belong to
 // the offer whose page stated them, rather than every build of a model family.
 export function attachOfferConfigs(products, offers) {
+  // Some retailers put the watch case diameter in the shared capacity field.
+  // Selectable-case families already print that field as mm. Fixed-case watches
+  // must keep it separate from actual 32/64GB flash and from strap variants.
+  const diameters = new Set([38, 40, 41, 42, 43, 44, 45, 46, 47, 49]);
+  for (const p of products) if (p.category === 'watch' && p.variantUnit !== 'mm') {
+    for (const o of offers[p.id] || []) if (diameters.has(o.storage)) {
+      o.caseSize = o.storage;
+      o.storage = null;
+    }
+  }
   const file = 'data/specs/shop-laptop.json';
   if (!fs.existsSync(file)) return 0;
   const pages = JSON.parse(fs.readFileSync(file, 'utf8'));

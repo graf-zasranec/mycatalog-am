@@ -13,3 +13,11 @@ assert.equal(caseSize({title:'Watch 42mm / 46mm'},[42,46]),null,'configurable pa
 assert.equal(caseSize({title:'Watch 64GB'},[42,46]),null);
 assert.equal(caseSize({title:'Apple Watch Series 12 GPS 42մմ Սև'},[42,46]),42);
 console.log('SPEC_VALUES_PASS: real laptop cache, capacity units and exact watch case sizes');
+
+const watchOffers={fixed:[{title:'Watch Ultra 4 49mm',storage:49},{title:'Watch Ultra 4 64GB',storage:64}],cases:[{title:'Watch Series 11 46mm',storage:46}]};
+attachOfferConfigs([{id:'fixed',category:'watch'},{id:'cases',category:'watch',variantUnit:'mm'}],watchOffers);
+assert.equal(watchOffers.fixed[0].storage,null,'49mm case cannot become 49GB storage');
+assert.equal(watchOffers.fixed[0].caseSize,49,'retain the physical case measurement');
+assert.equal(watchOffers.fixed[1].storage,64,'real 64GB flash must stay unchanged');
+assert.equal(watchOffers.cases[0].storage,46,'existing mm families retain their case selector');
+console.log('WATCH_CASE_UNITS_PASS: fixed case, real flash and selectable cases stay distinct');
