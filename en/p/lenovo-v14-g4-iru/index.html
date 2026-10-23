@@ -110,7 +110,7 @@
           
           
           <div class="og"><label>RAM</label>
-            <div class="bs"><button data-ram="8" class="on" aria-pressed="true">8 GB</button><button data-ram="16" class="" aria-pressed="false">16 GB</button></div></div>
+            <div class="bs"><button data-ram="8" class="" aria-pressed="false">8 GB</button><button data-ram="16" class="" aria-pressed="false">16 GB</button></div></div>
           <div class="og"><label>Storage</label>
             <div class="bs"><button data-storage="256" class="on" aria-pressed="true">256 GB</button></div></div>
           
@@ -118,7 +118,7 @@
           <div class="pprice2">
             <span class="lb">Best price</span>
             <div class="pp-row"><b class="num">289 000 ֏</b><span class="pp-at">at REDstore</span></div>
-            <div class="pp-pills"><span class="hp good">9 400 ֏ less than the dearest shop</span></div>
+            <div class="pp-pills"><span class="hp good">9 400 ֏ less than the dearest shop</span><span class="hp good">Lowest since 15.09</span></div>
             <div class="shopn">2 shops</div>
             <div class="rail2"><span class="ln"></span><button type="button" class="rd best l"
       style="left:0.0%" aria-label="REDstore · 289 000 ֏"><span class="rt">REDstore · 289 000 ֏</span></button><button type="button" class="rd top r"
@@ -150,7 +150,7 @@
          memory, SIM build. A row that states only some of them is not tidier, it is ambiguous -
          two rows at different prices with nothing on them to say why. Anything the shop did not
          state is simply absent rather than guessed at. -->
-    <span class="vr">8 GB <i class="stale" title="The day this price was last read from the shop">checked 23.10</i></span>
+    <span class="vr"> <i class="stale" title="The day this price was last read from the shop">checked 23.10</i></span>
     <span class="pr num">289 000 ֏</span>
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader
@@ -175,10 +175,17 @@
     <p class="note">Prices taken from the shops’ own sites · Updated 23.10.2026</p>
 
     
-    <h2 class="sh">Price history</h2><p class="note">Price history for 256 GB starts with the next nightly update</p>
+    <h2 class="sh">Price history</h2><div class="hist">
+      <div class="hist-top"><b class="num">289 000<span class="d"> ֏</span></b><span class="hp good">Lowest since 15.09</span></div>
+      <p class="hist-sub">Lowest since 15.09: 289 000 ֏ on 15.09
+        · cheapest shop each day, 256 GB</p>
+      <div class="hist-c"><svg id="hsvg" role="img" tabindex="0"
+        aria-label="Price history, 256 GB: 289 000 → 289 000 ֏. Arrow keys read each day"></svg>
+        <div class="hist-tip" id="htip" hidden></div></div>
+    </div>
 
     <h2 class="sh">Full specs</h2>
-    <div class="secgrid"><section class="panel-c"><h3><i></i>Display</h3><dl><div class="kv"><dt>Screen size</dt><dd>14″</dd></div><div class="kv"><dt>Screen type</dt><dd>IPS</dd></div><div class="kv"><dt>Resolution</dt><dd>1920×1080</dd></div><div class="kv"><dt>Refresh rate</dt><dd>60 Hz</dd></div><div class="kv"><dt>Touchscreen</dt><dd>No</dd></div></dl></section><section class="panel-c"><h3><i></i>Performance</h3><dl><div class="kv"><dt>Chipset</dt><dd>Intel Core i7-13620H</dd></div><div class="kv"><dt>GPU</dt><dd>Intel UHD Graphics</dd></div></dl></section><section class="panel-c"><h3><i></i>Memory</h3><dl><div class="kv"><dt>RAM</dt><dd>8 GB</dd></div><div class="kv"><dt>Storage</dt><dd>256 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Weight</dt><dd>1430 g</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>OS</dt><dd>DOS</dd></div><div class="kv"><dt>Released</dt><dd>.2023</dd></div></dl></section></div>
+    <div class="secgrid"><section class="panel-c"><h3><i></i>Display</h3><dl><div class="kv"><dt>Screen size</dt><dd>14″</dd></div><div class="kv"><dt>Screen type</dt><dd>IPS</dd></div><div class="kv"><dt>Resolution</dt><dd>1920×1080</dd></div><div class="kv"><dt>Refresh rate</dt><dd>60 Hz</dd></div><div class="kv"><dt>Touchscreen</dt><dd>No</dd></div></dl></section><section class="panel-c"><h3><i></i>Performance</h3><dl><div class="kv"><dt>Chipset</dt><dd>Intel Core i7-13620H</dd></div><div class="kv"><dt>GPU</dt><dd>Intel UHD Graphics</dd></div></dl></section><section class="panel-c"><h3><i></i>Memory</h3><dl><div class="kv"><dt>Storage</dt><dd>256 GB</dd></div></dl></section><section class="panel-c"><h3><i></i>Body</h3><dl><div class="kv"><dt>Weight</dt><dd>1430 g</dd></div></dl></section><section class="panel-c"><h3><i></i>Software</h3><dl><div class="kv"><dt>OS</dt><dd>DOS</dd></div><div class="kv"><dt>Released</dt><dd>.2023</dd></div></dl></section></div>
 
     <h2 class="sh">Similar models</h2>
     <div class="grid"><article class="pcard" data-id="acer-aspire-lite-15-6-fhd-core-i5">
@@ -259,6 +266,6 @@
 <p class="toast" id="traymsg" role="status" aria-live="polite" hidden></p>
 <div class="compare-selection" id="compareSelection" hidden></div>
 
-<script defer src="data/site-boot.js?v=1c38d52b11" data-src="data/site-products.js?v=98e206cf2c data/site-prices.js?v=4df31cb2b8 data/site-app.js?v=678506edc5"></script>
+<script defer src="data/site-boot.js?v=1c38d52b11" data-src="data/site-products.js?v=38e40b0db1 data/site-prices.js?v=0aadd986bc data/site-app.js?v=678506edc5"></script>
 
 </body></html>
