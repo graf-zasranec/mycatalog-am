@@ -22,7 +22,8 @@ export function reviewAllsellSpecs(html) {
   if(titleRam!=null&&tableRam!=null&&titleRam!==tableRam)conflicts.push('ram');
   if(titleStorage!=null&&tableStorage!=null&&titleStorage!==tableStorage)conflicts.push('storage');
   if(a&&b&&a!==b)conflicts.push('cpu');
-  return {title,ram:tableRam??titleRam,storage:tableStorage??titleStorage,conflicts};
+  const verified = !!(titleRam && tableRam && titleStorage && tableStorage && a && b && !conflicts.length);
+  return {title,ram:tableRam??titleRam,storage:tableStorage??titleStorage,conflicts,verified};
 }
 
 export function specOfferAllowed(offer, holds) {

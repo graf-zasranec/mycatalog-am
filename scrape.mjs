@@ -2140,7 +2140,7 @@ const SHOPS = {
         }
         out.push({ id, price, storage: review?.storage ?? storageOf(title) ?? storageOf(u),
           ...(review?.ram != null ? {ram:review.ram} : {}),
-          ...(review ? {specReviewed:new Date().toISOString().slice(0,10)} : {}),
+          ...(review?.verified ? {specReviewed:new Date().toISOString().slice(0,10)} : {}),
           title: review?.title || title, url: u, inStock, image: img });
       }
       return out;

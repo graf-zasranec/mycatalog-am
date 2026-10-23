@@ -9,6 +9,8 @@ assert.deepEqual(reviewAllsellSpecs(page('Acer Nitro i7-12700H 16GB I 1TB+512GB'
 const dell=reviewAllsellSpecs(page('Dell LATITUDE 3540 i5-1335U 16GB I 256GB',{'RAM':'16GB','Internal memory':'256 GB','Processor type':'Intel Core i5-1335U'}));
 assert.deepEqual(dell.conflicts,[]);
 assert.equal(dell.ram,16);assert.equal(dell.storage,256);
+assert.equal(dell.verified,true,'agreeing RAM, storage and CPU can clear a fixed-SKU review');
+assert.equal(reviewAllsellSpecs('<h1>Dell LATITUDE 3540 16GB I 256GB</h1>').verified,false,'missing primary specs cannot release a hold');
 assert.deepEqual(reviewAllsellSpecs('<title>Old 8GB 128GB</title>'+page('Laptop 16GB I 512GB',{'RAM':'16GB','Internal memory':'512 GB'})).conflicts,[],'use primary H1 rather than stale metadata or related products');
 assert.deepEqual(reviewAllsellSpecs('<h1>Phone 256GB</h1>').conflicts,[],'absence of a comparison is not a conflict');
 console.log('ALLSELL_SPECS_PASS: RAM, CPU, dual-SSD conflicts and agreeing current title/table');
