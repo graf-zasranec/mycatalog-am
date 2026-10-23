@@ -2098,6 +2098,7 @@ const SHOPS = {
   allsell: {
     name: 'AllSell', site: 'https://allsell.am', note: 'electronics retailer',
     async run() {
+      const {reviewAllsellSpecs} = await import('./tools/allsell-specs.mjs');
       // Magento, and its robots.txt names the sitemaps. Same shape as iStore: filter the sitemap
       // by matchPhone first so only pages that can be one of our products are fetched.
       const xml = await get('https://allsell.am/media/sitemap/en.xml');
@@ -2131,7 +2132,16 @@ const SHOPS = {
         // the capacity came from parsing a title.
         const kids = magentoChildren(html, (phoneById[id] || {}).colors);
         if (kids.length) { for (const k of kids) out.push({ id, title, url: u, image: img, ...k }); continue; }
-        out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock, image: img });
+        const review = phoneById[id]?.category === 'laptop' ? reviewAllsellSpecs(html) : null;
+        if (review?.conflicts.length) {
+          console.warn(`AllSell configuration held (${review.conflicts.join(', ')}): ${u}`);
+          out.push({id, price, title:review.title || title, url:u, inStock, specConflict:review.conflicts});
+          continue;
+        }
+        out.push({ id, price, storage: review?.storage ?? storageOf(title) ?? storageOf(u),
+          ...(review?.ram != null ? {ram:review.ram} : {}),
+          ...(review ? {specReviewed:new Date().toISOString().slice(0,10)} : {}),
+          title: review?.title || title, url: u, inStock, image: img });
       }
       return out;
     }
@@ -2741,6 +2751,7 @@ for (const key of names) {
   // implausible in the log made a third of AllSell's catalogue look like a parsing fault.
   let soldOut = 0, tooCheap = 0;
   for (const raw of got) {
+    if (raw.specConflict?.length) continue; // Evidence stays in the checkpoint, not in public offers.
     const o = enrich(raw);
     // A price on a sold-out page is not an offer anyone can take, so it has no business on a
     // price-comparison site. Only an explicit false counts - adapters that cannot read stock
@@ -3256,6 +3267,12 @@ for (const id of Object.keys(offers)) {
   offers[id] = offers[id].filter(o => purchasableOffer(o)
     && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title)));
 }
+// A price-only refresh must not silently release a hardware contradiction.
+try {
+  const {specOfferAllowed} = await import('./tools/allsell-specs.mjs');
+  const holds = JSON.parse(fs.readFileSync('data/price-review-holds.json', 'utf8'));
+  for (const id of Object.keys(offers)) offers[id] = offers[id].filter(o => specOfferAllowed(o, holds));
+} catch (e) { if (e.code !== 'ENOENT') throw e; }
 // A sold-out or zero-price listing must also suppress its older hand price.
 // Match only that shop and URL: another shop or configuration remains available.
 const {cacheOfferKey, unavailableCacheKeys} = await import('./tools/cache-availability.mjs');

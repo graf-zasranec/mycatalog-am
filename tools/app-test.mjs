@@ -269,6 +269,26 @@ is(s512.length < s256.length, true, 'a bigger size starts from the day per-size 
 const historyBuild = { id: 'test-history-build', category: 'laptop', variants: [{ ram: 8, storage: 512 }, { ram: 16, storage: 512 }] };
 stub.HISTORY.points[historyBuild.id] = [{ d: '2026-10-05', lo: 100000, shops: 1, t: { 512: 100000 } }];
 is(app.histSeries(historyBuild, 512, null, 16).length, 0, 'selected RAM never borrows ambiguous storage-only history');
+
+// A fixed-capacity watch's model minimum includes shops whose feed omitted flash.
+const fixedHistory = {id:'test-fixed-history',category:'watch',variants:[{storage:64}]};
+stub.HISTORY.points[fixedHistory.id] = [
+  {d:'2026-10-20',lo:359000,shops:4,t:{base:359000,64:377000}},
+  {d:'2026-10-21',lo:359000,shops:4,t:{49:359000,64:377000}},
+  {d:'2026-10-22',lo:350000,shops:4,t:{32:350000,64:377000}},
+];
+is(app.histSeries(fixedHistory,64).map(pt=>pt.v),[359000,359000,377000],
+  'fixed flash includes unlabelled shops and legacy case sizes, never a different historical flash capacity');
+const screenHistory={id:'test-screen-history',category:'tablet',variants:[{storage:256,size:11},{storage:256,size:13}]};
+stub.HISTORY.points[screenHistory.id]=[{d:'2026-10-20',lo:200000,shops:2,t:{'256@11':200000,'256@13':300000}}];
+is(app.histSeries(screenHistory,256,13).map(pt=>pt.v),[300000],'fixed storage still isolates the selected screen');
+const tierHistory={id:'test-tier-history',category:'phone',variants:[{storage:256},{storage:512}]};
+stub.HISTORY.points[tierHistory.id]=[{d:'2026-10-20',lo:200000,shops:2,t:{base:200000,512:300000}}];
+is(app.histSeries(tierHistory,512).map(pt=>pt.v),[300000],'unknown capacity prices never enter a multi-capacity tier');
+delete stub.HISTORY.points[fixedHistory.id];
+delete stub.HISTORY.points[screenHistory.id];
+delete stub.HISTORY.points[tierHistory.id];
+
 stub.COLORIMG['apple-iphone-13'] = {main:'main.webp',blue:'blue.webp',green:'green.webp',midnight:'midnight.webp',pink:'pink.webp',starlight:'starlight.webp','midnight-512':'other-build.webp',unknown:'unknown.webp'};
 is(app.cycList('apple-iphone-13').map(([color])=>color).join(','), 'blue,green,midnight,pink,starlight', 'catalog dots use only the canonical declared palette, not main/configuration/unknown image keys');
 stub.COLORIMG['test-edition-photo'] = { black: 'standard.webp', 'black-2048': 'galaxy.webp', white: 'digital.webp' };

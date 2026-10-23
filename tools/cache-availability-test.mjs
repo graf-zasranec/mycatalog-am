@@ -29,3 +29,9 @@ assert.equal(resumed.filter(purchasableOffer).length,0,'resume cannot restore ca
 const mixed = [{url,inStock:false},{url,price:47000,inStock:true}];
 assert.equal(unavailableSourceKeys('zigzag',checkpointShopRows('zigzag',[mixed[1]],[oldHand],mixed)).length,0,'available sibling still prevents whole-URL exclusion');
 assert.equal(checkpointShopRows('another-shop',[],[oldHand],[{url:url.replace('black','blue'),inStock:false}]).filter(purchasableOffer).length,1,'unrelated configuration remains carried');
+const conflict={url,price:339000,inStock:true,specConflict:['ram']};
+assert.equal(purchasableOffer(conflict),false,'conflicting hardware is withheld without claiming the shop is sold out');
+assert.deepEqual(unavailableSourceKeys('allsell',[conflict]),[cacheOfferKey('allsell',url)]);
+const held=checkpointShopRows('allsell',[],[{...oldHand,shop:'allsell'}],[conflict]);
+assert.equal(held.filter(purchasableOffer).length,0,'resume cannot resurrect an older offer for a conflicting fixed SKU');
+assert.deepEqual(unavailableSourceKeys('allsell',held),[cacheOfferKey('allsell',url)],'conflict evidence survives checkpoint');

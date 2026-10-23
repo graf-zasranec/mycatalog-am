@@ -1,7 +1,7 @@
 export const cacheOfferKey = (shop, url) => shop + '|' + String(url || '').replace(/\/+$/, '')
   .replace(/^(https?:\/\/[^/]+)\/(?:am|en|ru)(\/)/i, '$1$2');
 
-export const purchasableOffer = o => o.inStock !== false && Number.isFinite(+o.price) && +o.price > 0;
+export const purchasableOffer = o => !o.specConflict?.length && o.inStock !== false && Number.isFinite(+o.price) && +o.price > 0;
 
 export function unavailableCacheKeys(shop, rows) {
   return rows.filter(row => row.url && (row.inStock === false ||
@@ -27,11 +27,11 @@ export function unavailableSourceKeys(shop, rows) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(row);
   }
-  return [...groups].filter(([,group]) => group.every(o => o.inStock === false)).map(([key]) => key);
+  return [...groups].filter(([,group]) => group.every(o => o.inStock === false || o.specConflict?.length)).map(([key]) => key);
 }
 
 export function checkpointShopRows(shop, rows, kept, fresh) {
   const unavailable = new Set(unavailableSourceKeys(shop, fresh));
   const surviving = kept.filter(o => !unavailable.has(cacheOfferKey(shop, o.url)));
-  return rows.concat(surviving, fresh.filter(o => o.inStock === false));
+  return rows.concat(surviving, fresh.filter(o => o.inStock === false || o.specConflict?.length));
 }

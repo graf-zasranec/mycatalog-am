@@ -498,19 +498,29 @@ function histSeries(p, stor, scr, ram = null, cpu = null) {
   const builds = configPool(p).filter(v => (stor == null || v.storage === stor) && (scr == null || v.size === scr));
   if ((ram != null && new Set(builds.map(v => v.ram)).size > 1) ||
       (cpu != null && new Set(builds.map(v => v.cpu)).size > 1)) return [];
-  const sizes = [...new Set((p.variants || []).map(v => v.storage).filter(v => v != null))];
+  const known = [...(p.variants || []), ...configPool(p)];
+  const sizes = [...new Set(known.map(v => v.storage).filter(v => v != null))];
   const base = stor != null ? String(stor) : 'base';
   const smallest = stor == null || sizes.length < 2 || stor === Math.min(...sizes);
   // A product in several screens records "256@13" per screen. Days recorded before that carry one
   // price per storage for all screens together - in practice the smallest screen's - so they
   // stand in for the smallest screen only.
-  const screens = [...new Set((p.variants || []).map(v => v.size).filter(v => v != null))];
+  const screens = [...new Set(known.map(v => v.size).filter(v => v != null))];
   const multi = screens.length > 1;
   const key = multi && scr != null ? base + '@' + scr : base;
   const smallScr = !multi || scr == null || scr === Math.min(...screens);
   const bySize = t => Object.keys(t).some(k => k.includes('@'));
+  // A fixed hardware build has one model-level price, even when some shops
+  // omit its capacity. Recover that coverage only if the historical tier keys
+  // cannot refer to another capacity or screen. Never rewrite recorded history.
+  const fixed = stor != null && sizes.length === 1 && sizes[0] === stor && !multi
+    && ['ram', 'cpu'].every(k => new Set(known.map(v => v[k]).filter(v => v != null)).size <= 1);
+  const caseKeys = p.category === 'watch' && p.variantUnit !== 'mm'
+    ? new Set(['38','40','41','42','43','44','45','46','47','49']) : new Set();
+  const fullCoverage = pt => fixed && pt.lo != null && Object.keys(pt.t || {}).every(k =>
+    k === base || k === 'base' || caseKeys.has(k));
   return (HIST()[p.id] || []).map(pt => ({ d: pt.d, t: Date.parse(pt.d + 'T12:00:00Z'), s: pt.shops,
-    v: pt.t && pt.t[key] != null ? pt.t[key]
+    v: fullCoverage(pt) ? pt.lo : pt.t && pt.t[key] != null ? pt.t[key]
       : pt.t && multi && !bySize(pt.t) && smallScr && pt.t[base] != null ? pt.t[base]
       : (!pt.t && smallest && smallScr ? pt.lo : null) })).filter(pt => pt.v != null);
 }

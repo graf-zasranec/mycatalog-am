@@ -49,7 +49,7 @@ for (const p of phones) if ((p.unsure || []).includes('popularity'))
 // inStock, seeded and simFromPage are the crawler's bookkeeping, and an empty field reads the same
 // as a missing one everywhere the app looks: ~100 KB of the page for nothing.
 for (const list of Object.values(PRICES.offers || {})) for (const o of list) {
-  delete o.title; delete o.sku; delete o.image; delete o.id; delete o.seeded; delete o.simFromPage;
+  delete o.title; delete o.sku; delete o.image; delete o.id; delete o.seeded; delete o.simFromPage; delete o.specReviewed; delete o.specConflict;
   for (const k of Object.keys(o)) if (o[k] == null || o[k] === '') delete o[k];
 }
 
