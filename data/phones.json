@@ -96762,5 +96762,575 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "amazfit-gtr-42mm",
+    "category": "watch",
+    "brand": "Amazfit",
+    "name": "GTR 42mm",
+    "aliases": [
+      "Amazfit GTR 42mm"
+    ],
+    "tier": "budget",
+    "released": "2019-09",
+    "popularity": 30,
+    "accent": "#2B2D31",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.2,
+      "resolution": "390x390"
+    },
+    "battery": {
+      "capacity": 195
+    },
+    "body": {
+      "weight": 25.5,
+      "ip": "5 ATM"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "colors": [
+      "Red",
+      "Space Grey",
+      "Pink"
+    ],
+    "summaryEn": "Amazfit's round 42 mm AMOLED watch with a 1.2-inch screen and up to 12 days on a charge.",
+    "sources": [
+      "https://us.amazfit.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 39000,
+    "priceAmdMax": 79900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ]
+  },
+  {
+    "id": "amazfit-gtr-47mm",
+    "category": "watch",
+    "brand": "Amazfit",
+    "name": "GTR 47mm",
+    "aliases": [
+      "Amazfit GTR 47mm"
+    ],
+    "tier": "budget",
+    "released": "2019-09",
+    "popularity": 30,
+    "accent": "#2B2D31",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.39,
+      "resolution": "454x454"
+    },
+    "battery": {
+      "capacity": 410
+    },
+    "body": {
+      "weight": 36,
+      "ip": "5 ATM"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "colors": [
+      "Space Grey",
+      "Aluminium"
+    ],
+    "summaryEn": "The bigger GTR: a 1.39-inch AMOLED screen and a 410 mAh battery rated for up to 24 days.",
+    "sources": [
+      "https://us.amazfit.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 49000,
+    "priceAmdMax": 79900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49000
+      }
+    ]
+  },
+  {
+    "id": "amazfit-gts",
+    "category": "watch",
+    "brand": "Amazfit",
+    "name": "GTS",
+    "aliases": [
+      "Amazfit GTS"
+    ],
+    "tier": "budget",
+    "released": "2019-09",
+    "popularity": 30,
+    "accent": "#2B2D31",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.65,
+      "resolution": "348x442"
+    },
+    "battery": {
+      "capacity": 220
+    },
+    "body": {
+      "weight": 24.8,
+      "ip": "5 ATM"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "colors": [
+      "Pink"
+    ],
+    "summaryEn": "Amazfit's square-screen watch: a 1.65-inch AMOLED display in an aluminium case.",
+    "sources": [
+      "https://us.amazfit.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 79900,
+    "priceAmdMax": 79900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79900
+      }
+    ]
+  },
+  {
+    "id": "amazfit-t-rex",
+    "category": "watch",
+    "brand": "Amazfit",
+    "name": "T-Rex",
+    "aliases": [
+      "Amazfit T-Rex"
+    ],
+    "tier": "budget",
+    "released": "2020-01",
+    "popularity": 30,
+    "accent": "#2B2D31",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.3,
+      "resolution": "360x360"
+    },
+    "battery": {
+      "capacity": 390
+    },
+    "body": {
+      "weight": 58,
+      "ip": "5 ATM",
+      "materials": "MIL-STD-810G"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "colors": [
+      "Black",
+      "Green"
+    ],
+    "summaryEn": "A rugged outdoor watch tested to MIL-STD-810G, with GPS and up to 20 days of battery.",
+    "sources": [
+      "https://us.amazfit.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 89900,
+    "priceAmdMax": 89900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 89900
+      }
+    ]
+  },
+  {
+    "id": "bowers-wilkins-pi6",
+    "category": "headphones",
+    "brand": "Bowers & Wilkins",
+    "name": "Pi6",
+    "aliases": [
+      "B&W Pi6",
+      "B & W Pi6 S2 Headphone"
+    ],
+    "tier": "premium",
+    "released": "2024-09",
+    "popularity": 30,
+    "accent": "#3A3D42",
+    "audio": {
+      "anc": true,
+      "form": "tws",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "8 hours, 24 with the case"
+    },
+    "body": {
+      "ip": "IP54"
+    },
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "colors": [
+      "Storm Grey"
+    ],
+    "summaryEn": "Bowers & Wilkins' noise-cancelling earbuds with aptX Adaptive and Bluetooth 5.4.",
+    "sources": [
+      "https://www.bowerswilkins.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 119900,
+    "priceAmdMax": 129900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119900
+      }
+    ]
+  },
+  {
+    "id": "bowers-wilkins-px8",
+    "category": "headphones",
+    "brand": "Bowers & Wilkins",
+    "name": "PX8",
+    "aliases": [
+      "B&W PX8",
+      "B &W PX8 Flagship Headphone"
+    ],
+    "tier": "flagship",
+    "released": "2022-10",
+    "popularity": 32,
+    "accent": "#B8A58A",
+    "audio": {
+      "anc": true,
+      "form": "full",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "30 hours"
+    },
+    "body": {
+      "weight": 320,
+      "materials": "Aluminium arms, Nappa leather"
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "colors": [
+      "Tan"
+    ],
+    "summaryEn": "Bowers & Wilkins' flagship over-ear headphones: carbon drivers, aluminium and leather, 30 hours.",
+    "sources": [
+      "https://www.bowerswilkins.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 219900,
+    "priceAmdMax": 219900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 219900
+      }
+    ]
+  },
+  {
+    "id": "bowers-wilkins-zeppelin",
+    "category": "speaker",
+    "brand": "Bowers & Wilkins",
+    "name": "Zeppelin",
+    "aliases": [
+      "B&W Zeppelin",
+      "B & W Zeppelin Wireless Speaker"
+    ],
+    "tier": "premium",
+    "released": "2021-10",
+    "popularity": 26,
+    "accent": "#2E3033",
+    "audio": {
+      "type": "Wireless home speaker"
+    },
+    "battery": {},
+    "body": {
+      "weight": 6500
+    },
+    "connectivity": {
+      "bluetooth": "5.0",
+      "wifi": "Wi-Fi, AirPlay 2"
+    },
+    "colors": [
+      "Midnight Grey"
+    ],
+    "summaryEn": "The 2021 Zeppelin: a 240 W streaming speaker with AirPlay 2, Spotify Connect and aptX Adaptive.",
+    "sources": [
+      "https://www.bowerswilkins.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 349900,
+    "priceAmdMax": 349900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 349900
+      }
+    ]
+  },
+  {
+    "id": "bowers-wilkins-formation-wedge",
+    "category": "speaker",
+    "brand": "Bowers & Wilkins",
+    "name": "Formation Wedge",
+    "aliases": [
+      "B&W Formation Wedge",
+      "B & W Formation Wedge"
+    ],
+    "tier": "premium",
+    "released": "2019-04",
+    "popularity": 22,
+    "accent": "#D9D9D6",
+    "audio": {
+      "type": "Wireless home speaker"
+    },
+    "battery": {},
+    "body": {
+      "weight": 6500
+    },
+    "connectivity": {
+      "bluetooth": "4.1",
+      "wifi": "Wi-Fi, AirPlay 2"
+    },
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "Bowers & Wilkins' 240 W wedge-shaped room speaker for the Formation multi-room system.",
+    "sources": [
+      "https://www.bowerswilkins.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 519000,
+    "priceAmdMax": 519000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 519000
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-buds",
+    "category": "headphones",
+    "brand": "Motorola",
+    "name": "Moto Buds",
+    "aliases": [
+      "Motorola Motobuds",
+      "Motorola Moto Buds"
+    ],
+    "tier": "budget",
+    "released": "2024-04",
+    "popularity": 25,
+    "accent": "#3B3F44",
+    "audio": {
+      "anc": true,
+      "form": "tws",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "9 hours"
+    },
+    "body": {
+      "ip": "IPX4"
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "colors": [],
+    "summaryEn": "Motorola's noise-cancelling earbuds with 12.4 mm drivers and Bluetooth 5.3.",
+    "sources": [
+      "https://shop.ucom.am/am/motorola-motobuds.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 35900,
+    "priceAmdMax": 35900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 35900
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-buds-bass",
+    "category": "headphones",
+    "brand": "Motorola",
+    "name": "Moto Buds Bass",
+    "aliases": [
+      "Motorola Moto Buds Bass"
+    ],
+    "tier": "budget",
+    "released": "2025",
+    "popularity": 22,
+    "accent": "#2F3236",
+    "audio": {
+      "anc": true,
+      "form": "tws",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "41 hours with the case"
+    },
+    "body": {
+      "ip": "IPX4"
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "colors": [],
+    "summaryEn": "Bass-tuned Moto earbuds with 50 dB noise cancelling, LDAC and up to 41 hours with the case.",
+    "sources": [
+      "https://shop.ucom.am/am/motorola-moto-buds-bass.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 15900,
+    "priceAmdMax": 15900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 15900
+      }
+    ]
+  },
+  {
+    "id": "viewsonic-pa503s",
+    "category": "projector",
+    "brand": "ViewSonic",
+    "name": "PA503S",
+    "aliases": [
+      "ViewSonic PA503S"
+    ],
+    "tier": "budget",
+    "released": "2017",
+    "popularity": 18,
+    "accent": "#E9E9E7",
+    "display": {
+      "type": "DLP, 3600 lm",
+      "resolution": "800x600"
+    },
+    "battery": {},
+    "colors": [],
+    "summaryEn": "ViewSonic's 3600-lumen DLP projector for offices and classrooms, 800x600 native.",
+    "sources": [
+      "https://www.viewsonic.com/global/products/projectors/PA503S"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 209000,
+    "priceAmdMax": 209000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 209000
+      }
+    ]
+  },
+  {
+    "id": "viewsonic-pa700w",
+    "category": "projector",
+    "brand": "ViewSonic",
+    "name": "PA700W",
+    "aliases": [
+      "ViewSonic PA700W"
+    ],
+    "tier": "budget",
+    "released": "2023",
+    "popularity": 18,
+    "accent": "#E9E9E7",
+    "display": {
+      "type": "DLP, 4500 lm",
+      "resolution": "1280x800"
+    },
+    "battery": {},
+    "colors": [],
+    "summaryEn": "ViewSonic's 4500-lumen DLP projector for offices and classrooms, 1280x800 native.",
+    "sources": [
+      "https://www.viewsonic.com/global/products/projectors/PA700W"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 275000,
+    "priceAmdMax": 275000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 275000
+      }
+    ]
+  },
+  {
+    "id": "viewsonic-pa700x",
+    "category": "projector",
+    "brand": "ViewSonic",
+    "name": "PA700X",
+    "aliases": [
+      "ViewSonic PA700X"
+    ],
+    "tier": "budget",
+    "released": "2023",
+    "popularity": 18,
+    "accent": "#E9E9E7",
+    "display": {
+      "type": "DLP, 4500 lm",
+      "resolution": "1024x768"
+    },
+    "battery": {},
+    "colors": [],
+    "summaryEn": "ViewSonic's 4500-lumen DLP projector for offices and classrooms, 1024x768 native.",
+    "sources": [
+      "https://www.viewsonic.com/global/products/projectors/PA700X"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 259000,
+    "priceAmdMax": 259000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 259000
+      }
+    ]
   }
 ]
