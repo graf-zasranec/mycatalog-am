@@ -67449,7 +67449,10 @@
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "jbl-tune-780nc",
@@ -67488,6 +67491,9 @@
       "form": "full",
       "conn": "wireless",
       "anc": true
+    },
+    "connectivity": {
+      "bluetooth": "6.0"
     }
   },
   {
@@ -67527,6 +67533,9 @@
       "form": "full",
       "conn": "wireless",
       "anc": true
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
     }
   },
   {
@@ -67563,6 +67572,9 @@
       "conn": "wired",
       "form": "full",
       "plug": "3.5"
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -67600,6 +67612,9 @@
     "audio": {
       "form": "full",
       "conn": "wireless"
+    },
+    "connectivity": {
+      "bluetooth": "6.0"
     }
   },
   {
@@ -67635,8 +67650,12 @@
     ],
     "audio": {
       "form": "full",
-      "conn": "wireless",
-      "gaming": true
+      "conn": "wired",
+      "gaming": true,
+      "plug": "3.5"
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -67745,6 +67764,9 @@
     "audio": {
       "conn": "wireless",
       "form": "neckband"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
     }
   },
   {
@@ -67767,7 +67789,9 @@
         "priceAmd": 272000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6
+    },
     "battery": {},
     "summaryEn": "HP 15.6\" Core 3-100U /D05WSEA.",
     "unsure": [
@@ -67775,7 +67799,13 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 3 100U"
+    },
+    "specNA": {
+      "display.resolution": "HP SKU D05WSEA not found in any spec sheet (checked 2026-10-23)"
+    }
   },
   {
     "id": "asus-vivobook-15-6-r5-silver-m1502naq-bq255",
@@ -67797,7 +67827,10 @@
         "priceAmd": 279900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 15.6\" R5- Silver/M1502NAQ-BQ255.",
     "unsure": [
@@ -67805,7 +67838,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 150"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15-3-r7-83k700hrrk",
@@ -67827,7 +67863,10 @@
         "priceAmd": 301300
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" R7- /83K700HRRK.",
     "unsure": [
@@ -67835,7 +67874,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 7 7735HS"
+    }
   },
   {
     "id": "hp-250r-g10-15-6-core-5-120u-d7km3at",
@@ -67857,7 +67899,10 @@
         "priceAmd": 319000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "HP 250R G10 15.6\" Core 5-120U /D7KM3AT.",
     "unsure": [
@@ -67865,7 +67910,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5 120U"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15-3-i5-13420h-83k1002erk",
@@ -67887,7 +67935,10 @@
         "priceAmd": 349000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" i5-13420H /83K1002ERK.",
     "unsure": [
@@ -67895,7 +67946,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-16-i5-13420h-83k2000wrk",
@@ -67917,7 +67971,10 @@
         "priceAmd": 349000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 16\" i5-13420H /83K2000WRK.",
     "unsure": [
@@ -67925,7 +67982,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    }
   },
   {
     "id": "hp-omnibook-3-17-3-core-3-100u-dr9v7ea",
@@ -67947,7 +68007,10 @@
         "priceAmd": 349000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 17.3,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 3 17.3\" Core 3-100U /DR9V7EA.",
     "unsure": [
@@ -67955,7 +68018,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 3 100U"
+    }
   },
   {
     "id": "lenovo-thinkpad-e16-g3-16-core-5-210h-21tf004rfw",
@@ -67977,7 +68043,10 @@
         "priceAmd": 360700
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 G3 16\" Core 5-210H /21TF004RFW.",
     "unsure": [
@@ -67985,7 +68054,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5 210H"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-15-3-i7-13620h-83k10032rk",
@@ -68005,7 +68077,10 @@
         "priceAmd": 365900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" i7-13620H /83K10032RK.",
     "unsure": [
@@ -68013,7 +68088,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    }
   },
   {
     "id": "hp-omnibook-5-16-ultra-5-225u-bg7h7ea",
@@ -68035,7 +68113,10 @@
         "priceAmd": 379000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16\" Ultra 5-225U /BG7H7EA.",
     "unsure": [
@@ -68043,7 +68124,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5 225U"
+    }
   },
   {
     "id": "samsung-galaxy-book4-15-6-core-7-150u-w11-np750xgk-ks2us",
@@ -68065,7 +68149,10 @@
         "priceAmd": 389700
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Samsung Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US.",
     "unsure": [
@@ -68073,7 +68160,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 7 150U"
+    }
   },
   {
     "id": "samsung-galaxy-book3-15-6-fhd-i7-1355u-slv-np750xfg-kb2us",
@@ -68093,7 +68183,10 @@
         "priceAmd": 420800
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Samsung Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*.",
     "unsure": [
@@ -68101,7 +68194,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    }
   },
   {
     "id": "honor-magicbook-x16-plus-16-core-16-1-w11h-5301alvv",
@@ -68123,7 +68219,9 @@
         "priceAmd": 449900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16
+    },
     "battery": {},
     "summaryEn": "Honor MagicBook X16 Plus 16\" Core 16/1 W11H /5301ALVV.",
     "unsure": [
@@ -68131,7 +68229,13 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 5 220H"
+    },
+    "specNA": {
+      "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2560x1600 (checked 2026-10-23)"
+    }
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-16-oled-i7-150u-83du003wrk",
@@ -68153,7 +68257,10 @@
         "priceAmd": 458500
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2048x1280"
+    },
     "battery": {},
     "summaryEn": "Lenovo IdeaPad 5 2-in-1 16\" OLED i7-150U /83DU003WRK.",
     "unsure": [
@@ -68161,7 +68268,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core 7 150U"
+    }
   },
   {
     "id": "hp-omnibook-5-16-ultra-7-255u-bg7h9ea",
@@ -68183,7 +68293,10 @@
         "priceAmd": 480000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "HP OmniBook 5 16\" Ultra 7-255U /BG7H9EA.",
     "unsure": [
@@ -68191,7 +68304,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 255U"
+    }
   },
   {
     "id": "lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1",
@@ -68213,7 +68329,10 @@
         "priceAmd": 486900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "LG Gram Book 15.6\" Core i5-1334U /2. W11H /15U50T-G.ARS2U1.",
     "unsure": [
@@ -68221,7 +68340,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i5-1334U"
+    }
   },
   {
     "id": "lenovo-thinkpad-e16-gen-4-16-ultra-5-21yc003ufw",
@@ -68243,7 +68365,10 @@
         "priceAmd": 566900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 4 16\" Ultra 5- /21YC003UFW.",
     "unsure": [
@@ -68251,7 +68376,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5"
+    }
   },
   {
     "id": "samsung-galaxy-book5-pro-14-touch-ultra-7-series-2-w11h-np940xha-kg1us",
@@ -68271,7 +68399,10 @@
         "priceAmd": 615600
       }
     ],
-    "display": {},
+    "display": {
+      "size": 14,
+      "resolution": "2880x1800"
+    },
     "battery": {},
     "summaryEn": "Samsung Galaxy Book5 Pro 14\" Touch Ultra 7-Series 2 W11H /NP940XHA-KG1US.",
     "unsure": [
@@ -68279,7 +68410,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 (Series 2)"
+    }
   },
   {
     "id": "lenovo-thinkpad-e16-gen-4-16-ultra-7-21yc003tfw",
@@ -68301,7 +68435,10 @@
         "priceAmd": 620900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad E16 Gen 4 16\" Ultra 7- /21YC003TFW.",
     "unsure": [
@@ -68309,7 +68446,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7"
+    }
   },
   {
     "id": "dell-i7-13650hx-16-1-4060-j1v94-g5530-7957gry-pus",
@@ -68329,7 +68469,10 @@
         "priceAmd": 638300
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
     "battery": {},
     "summaryEn": "Dell i7-13650HX 16/1 4060 J1V94/G5530-7957GRY-PUS*.",
     "unsure": [
@@ -68337,7 +68480,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13650HX"
+    }
   },
   {
     "id": "lenovo-thinkpad-t16-gen-5-16-ultra-5-21wt0059fw",
@@ -68359,7 +68505,10 @@
         "priceAmd": 683900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad T16 Gen 5 16\" Ultra 5- /21WT0059FW.",
     "unsure": [
@@ -68367,7 +68516,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5"
+    }
   },
   {
     "id": "asus-zep-16-i7-13620h-4060-w11-gu603vv",
@@ -68387,7 +68539,10 @@
         "priceAmd": 733300
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "ASUS ZEP 16 i7-13620H 4060 W11 /GU603VV*.",
     "unsure": [
@@ -68395,7 +68550,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    }
   },
   {
     "id": "lenovo-thinkpad-t16-gen-5-16-ultra-7-21wt005cfw",
@@ -68417,7 +68575,10 @@
         "priceAmd": 742400
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad T16 Gen 5 16\" Ultra 7- /21WT005CFW.",
     "unsure": [
@@ -68425,7 +68586,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7"
+    }
   },
   {
     "id": "hp-spectre-x360-16-ultra-7-155h-16-1-4050-w11h-a23wkea",
@@ -68447,7 +68611,10 @@
         "priceAmd": 795000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 16,
+      "resolution": "2880x1800"
+    },
     "battery": {},
     "summaryEn": "HP Spectre x360 16\" Ultra 7-155H 16/1 4050 W11H /A23WKEA.",
     "unsure": [
@@ -68455,7 +68622,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 155H"
+    }
   },
   {
     "id": "lenovo-thinkpad-x9-g1-aura-edition-15-3-ultra-7-258v-w11p-21q6006afw",
@@ -68477,7 +68647,10 @@
         "priceAmd": 1003600
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.3,
+      "resolution": "2880x1800"
+    },
     "battery": {},
     "summaryEn": "Lenovo ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V W11P /21Q6006AFW.",
     "unsure": [
@@ -68485,7 +68658,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 258V"
+    }
   },
   {
     "id": "xiaomi-a27i-2026",
@@ -68508,7 +68684,9 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "1920x1080",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Xiaomi A27i 2026.",
@@ -68517,7 +68695,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "specNA": {
+      "display.type": "Xiaomi's spec page does not name the panel type (checked 2026-10-23)"
+    }
   },
   {
     "id": "xiaomi-gaming-g25i-2026",
@@ -68539,7 +68720,12 @@
         "priceAmd": 75900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 24.5,
+      "resolution": "1920x1080",
+      "refresh": 240,
+      "type": "Fast IPS"
+    },
     "battery": {},
     "summaryEn": "Xiaomi Gaming G25i 2026.",
     "unsure": [
@@ -68570,7 +68756,9 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "2560x1440",
+      "refresh": 200
     },
     "battery": {},
     "summaryEn": "Xiaomi 2K Gaming G27Qi 2026.",
@@ -68579,7 +68767,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "specNA": {
+      "display.type": "Xiaomi's spec page does not name the panel type (checked 2026-10-23)"
+    }
   },
   {
     "id": "dreame-pm10-smart-air-purifier",
@@ -69289,7 +69480,10 @@
       "Purple",
       "White",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    }
   },
   {
     "id": "sony-srs-ult30",
@@ -69320,7 +69514,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "harman-kardon-citation-one-mk3",
@@ -69352,7 +69549,10 @@
     "colors": [
       "Black",
       "Grey"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "harman-kardon-citation-200",
@@ -69415,7 +69615,10 @@
     ],
     "colors": [
       "Grey"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wireless link to a Citation soundbar"
+    }
   },
   {
     "id": "yandex-station-duo-max",
@@ -69481,7 +69684,10 @@
     "colors": [
       "Grey",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wireless link to a Citation soundbar"
+    }
   },
   {
     "id": "honor-pad-x9a-lte-5301amuy",
@@ -69503,7 +69709,10 @@
         "priceAmd": 179990
       }
     ],
-    "display": {},
+    "display": {
+      "size": 11.5,
+      "resolution": "2508x1504"
+    },
     "battery": {},
     "summaryEn": "Honor Pad X9a LTE /5301AMUY.",
     "unsure": [
@@ -69511,7 +69720,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 685"
+    }
   },
   {
     "id": "xiaomi-pad-8-pro",
@@ -69538,7 +69750,10 @@
         "priceAmd": 279000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 11.2,
+      "resolution": "3200x2136"
+    },
     "battery": {},
     "summaryEn": "Xiaomi Pad 8 Pro.",
     "unsure": [
@@ -69549,7 +69764,10 @@
     ],
     "colors": [
       "Gray"
-    ]
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 8 Elite"
+    }
   },
   {
     "id": "garmin-epix-pro-sapphire-edition-47-mm",
@@ -69571,7 +69789,9 @@
         "priceAmd": 327000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.3
+    },
     "battery": {},
     "summaryEn": "Garmin epix Pro – Sapphire Edition | 47 mm.",
     "unsure": [
@@ -69599,7 +69819,9 @@
         "priceAmd": 396000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.4
+    },
     "battery": {},
     "summaryEn": "Garmin Enduro 3.",
     "unsure": [
@@ -69627,7 +69849,9 @@
         "priceAmd": 595000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.3
+    },
     "battery": {},
     "summaryEn": "Garmin Tactix 8 – 47 mm, AMOLED.",
     "unsure": [
@@ -69655,7 +69879,9 @@
         "priceAmd": 637000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.4
+    },
     "battery": {},
     "summaryEn": "Garmin Tactix 8 – 51 mm, AMOLED.",
     "unsure": [
@@ -69686,7 +69912,8 @@
     "display": {
       "size": 55,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "LG OLED55C5RLA.",
@@ -69717,7 +69944,8 @@
     "display": {
       "size": 65,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG OLED65C6RLA.",
@@ -69748,7 +69976,8 @@
     "display": {
       "size": 42,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Panasonic TX-42MZ800E.",
@@ -69779,7 +70008,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 50
     },
     "battery": {},
     "summaryEn": "Panasonic TX-43MX700E.",
@@ -69810,7 +70040,8 @@
     "display": {
       "size": 50,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 50
     },
     "battery": {},
     "summaryEn": "Panasonic TX-50MX700E.",
@@ -69841,7 +70072,8 @@
     "display": {
       "size": 65,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Panasonic TX-65MZ800E.",
@@ -69872,7 +70104,8 @@
     "display": {
       "size": 65,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung MRE65R85HAUXPY.",
@@ -69903,7 +70136,8 @@
     "display": {
       "size": 65,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung MRE65R95HAUXPY.",
@@ -69934,7 +70168,8 @@
     "display": {
       "size": 75,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung MRE75R85HAUXPY.",
@@ -69965,7 +70200,8 @@
     "display": {
       "size": 85,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung MRE85R95HAUXPY.",
@@ -69996,7 +70232,8 @@
     "display": {
       "size": 100,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE100QN80FUXRU.",
@@ -70027,7 +70264,8 @@
     "display": {
       "size": 115,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE115QN90FUXRU.",
@@ -70058,7 +70296,8 @@
     "display": {
       "size": 43,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung QE43Q8FAAUXRU.",
@@ -70089,7 +70328,8 @@
     "display": {
       "size": 50,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE50QN80FAUXRU.",
@@ -70120,7 +70360,8 @@
     "display": {
       "size": 55,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE55LS03FAUXRU.",
@@ -70151,7 +70392,8 @@
     "display": {
       "size": 55,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE55LS03HAUXPY.",
@@ -70182,7 +70424,8 @@
     "display": {
       "size": 55,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE55Q8FAAUXRU.",
@@ -70213,7 +70456,8 @@
     "display": {
       "size": 55,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE55QN70HAUXPY.",
@@ -70244,7 +70488,8 @@
     "display": {
       "size": 55,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE55QN90FAUXRU.",
@@ -70275,7 +70520,8 @@
     "display": {
       "size": 65,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE65LS03HAUXPY.",
@@ -70306,7 +70552,8 @@
     "display": {
       "size": 65,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE65QN70FAUXRU.",
@@ -70337,7 +70584,8 @@
     "display": {
       "size": 65,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE65QN70HAUXPY.",
@@ -70368,7 +70616,8 @@
     "display": {
       "size": 65,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE65QN80FAUXRU.",
@@ -70399,7 +70648,8 @@
     "display": {
       "size": 65,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE65QN90DAUXRU.",
@@ -70430,7 +70680,8 @@
     "display": {
       "size": 65,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE65S90HAEXPY.",
@@ -70461,7 +70712,8 @@
     "display": {
       "size": 65,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE65S95CAUXRU.",
@@ -70492,7 +70744,8 @@
     "display": {
       "size": 75,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung QE75Q7FAAUXRU.",
@@ -70523,7 +70776,8 @@
     "display": {
       "size": 75,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE75Q8FAAUXRU.",
@@ -70554,7 +70808,8 @@
     "display": {
       "size": 75,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE75QN80HAUXPY.",
@@ -70585,7 +70840,8 @@
     "display": {
       "size": 75,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE75QN90FAUXRU.",
@@ -70616,7 +70872,8 @@
     "display": {
       "size": 77,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE77S85HAEXPY.",
@@ -70647,7 +70904,8 @@
     "display": {
       "size": 83,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE83S85FAEXRU.",
@@ -70678,7 +70936,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE85QN70HAUXPY.",
@@ -70709,7 +70968,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE85QN80FAUXRU.",
@@ -70740,7 +71000,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE85QN90DAUXRU.",
@@ -70771,7 +71032,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE85QN90FAUXRU.",
@@ -70802,7 +71064,8 @@
     "display": {
       "size": 100,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung UE100M90HUXPY.",
@@ -70833,7 +71096,8 @@
     "display": {
       "size": 55,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung UE55U8000HUXPY.",
@@ -70864,7 +71128,8 @@
     "display": {
       "size": 65,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung UE65DU8500UXRU.",
@@ -70895,7 +71160,8 @@
     "display": {
       "size": 55,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-55XR80M2.",
@@ -70926,7 +71192,8 @@
     "display": {
       "size": 85,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony K-85S30.",
@@ -70957,7 +71224,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-85XR50.",
@@ -70988,7 +71256,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-85XR70.",
@@ -71019,7 +71288,8 @@
     "display": {
       "size": 98,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-98XR50.",
@@ -71050,7 +71320,8 @@
     "display": {
       "size": 43,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony KD-43X75WL.",
@@ -71081,7 +71352,8 @@
     "display": {
       "size": 65,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony KD-65X75WL.",
@@ -71112,7 +71384,8 @@
     "display": {
       "size": 65,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony KD-65X80L.",
@@ -71143,7 +71416,8 @@
     "display": {
       "size": 75,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony KD-75X75WL.",
@@ -71174,7 +71448,8 @@
     "display": {
       "size": 75,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony KD-75X80L.",
@@ -71205,7 +71480,8 @@
     "display": {
       "size": 75,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony KD-75X85L.",
@@ -71236,7 +71512,8 @@
     "display": {
       "size": 85,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Sony KD-85X80L.",
@@ -71267,7 +71544,8 @@
     "display": {
       "size": 43,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "TCL 43P7L QLED.",
@@ -71298,7 +71576,8 @@
     "display": {
       "size": 50,
       "type": "LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "TCL 50V6D LED.",
@@ -71329,7 +71608,8 @@
     "display": {
       "size": 75,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "TCL 75C7L SQD-MiniLED.",
@@ -71360,7 +71640,8 @@
     "display": {
       "size": 75,
       "type": "QLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "TCL 75P8L QLED.",
@@ -71391,7 +71672,8 @@
     "display": {
       "size": 85,
       "type": "Mini LED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "TCL 85C7L SQD-MiniLED.",
@@ -73888,9 +74170,13 @@
       "popularity"
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "specNA": {
+      "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with Ryzen 3 7320U or Ryzen 5 7520U (checked 2026-10-23)"
+    }
   },
   {
     "id": "asus-vivobook-x1504va",
@@ -74025,7 +74311,8 @@
     ],
     "display": {
       "size": 15.6,
-      "type": "IPS"
+      "type": "IPS",
+      "resolution": "1920x1080"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74063,7 +74350,11 @@
     "display": {
       "size": 14
     },
-    "os": "Windows 11 PRO"
+    "os": "Windows 11 PRO",
+    "specNA": {
+      "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2.8K OLED (checked 2026-10-23)",
+      "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with several Core Ultra chips (checked 2026-10-23)"
+    }
   },
   {
     "id": "lenovo-thinkpad-x1-carbon-gen12-tp00150a",
@@ -74096,7 +74387,11 @@
     "display": {
       "size": 14
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "specNA": {
+      "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2.8K OLED (checked 2026-10-23)",
+      "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with several Core Ultra chips (checked 2026-10-23)"
+    }
   },
   {
     "id": "hp-15-intel-core-5-120u",
@@ -74228,7 +74523,8 @@
     ],
     "display": {
       "size": 15.6,
-      "type": "IPS"
+      "type": "IPS",
+      "resolution": "1920x1080"
     },
     "os": "Windows 11",
     "graphics": {
@@ -74271,7 +74567,8 @@
     ],
     "display": {
       "size": 15.6,
-      "type": "IPS"
+      "type": "IPS",
+      "resolution": "1920x1080"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74314,7 +74611,8 @@
     ],
     "display": {
       "size": 15.6,
-      "refresh": 144
+      "refresh": 144,
+      "resolution": "1920x1200"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74357,7 +74655,8 @@
     ],
     "display": {
       "size": 15.6,
-      "refresh": 144
+      "refresh": 144,
+      "resolution": "1920x1080"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74400,7 +74699,8 @@
     ],
     "display": {
       "size": 16,
-      "refresh": 165
+      "refresh": 165,
+      "resolution": "1920x1200"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74442,7 +74742,8 @@
     ],
     "display": {
       "size": 16,
-      "refresh": 240
+      "refresh": 240,
+      "resolution": "2560x1600"
     },
     "os": "Windows 11",
     "chipset": {
@@ -74911,7 +75212,10 @@
       "name": "INTEGRATED",
       "type": "integrated"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "specNA": {
+      "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2560x1600 (checked 2026-10-23)"
+    }
   },
   {
     "id": "asus-chromebook-cx3402cv",
@@ -77477,6 +77781,9 @@
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
+    },
+    "specNA": {
+      "chipset.name": "HP model 17-dp0105dx not found in any spec sheet (checked 2026-10-23)"
     }
   },
   {
@@ -77657,6 +77964,9 @@
     "graphics": {
       "name": "AMD Radeon 610M",
       "type": "integrated"
+    },
+    "specNA": {
+      "chipset.name": "Listed only as \"Ryzen 5\"; exact chip not published (checked 2026-10-23)"
     }
   },
   {
@@ -78652,7 +78962,8 @@
       "weight": 900
     },
     "connectivity": {
-      "wifi": "Wi-Fi"
+      "wifi": "Wi-Fi",
+      "bluetooth": "5.0"
     },
     "summaryEn": "Yandex Station Midi.",
     "sources": [
@@ -79438,7 +79749,10 @@
     ],
     "colors": [
       "Graphite Gray"
-    ]
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 6s 4G Gen 2"
+    }
   },
   {
     "id": "xiaomi-redmi-pad-2-9-7-4g",
@@ -79485,7 +79799,10 @@
     "colors": [
       "Graphite Gray",
       "Silver"
-    ]
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 6s 4G Gen 2"
+    }
   },
   {
     "id": "ray-ban-meta-wayfarer-gen-2-matte-black-clear-size50",
@@ -80220,6 +80537,9 @@
     ],
     "chipset": {
       "name": "Apple H2"
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
     }
   },
   {
@@ -80250,7 +80570,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "jbl-soundgear-bta",
@@ -80490,7 +80813,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.1"
+    }
   },
   {
     "id": "marshall-monitor-ii-anc",
@@ -80619,7 +80945,10 @@
     ],
     "colors": [
       "Silver"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "harman-kardon-omni-10-plus",
@@ -80721,7 +81050,10 @@
     "colors": [
       "Black",
       "Gray"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    }
   },
   {
     "id": "logitech-g923-trueforce-racing-wheel",
@@ -80785,7 +81117,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "logitech-g29-driving-force-racing-wheel",
@@ -80856,7 +81191,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    }
   },
   {
     "id": "nokia-150-2023",
@@ -80881,7 +81219,10 @@
     "colors": [
       "Black"
     ],
-    "display": {},
+    "display": {
+      "size": 2.4,
+      "resolution": "240x320"
+    },
     "battery": {},
     "summaryEn": "Nokia 150 (2023).",
     "sources": [
@@ -80889,7 +81230,13 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "camera": {
+      "main": "0.3 MP (VGA), LED flash"
+    },
+    "specNA": {
+      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
+    }
   },
   {
     "id": "panasonic-mc-cg713",
@@ -81844,7 +82191,10 @@
         "priceAmd": 121000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 12.1,
+      "resolution": "2560x1600"
+    },
     "battery": {},
     "summaryEn": "Xiaomi Redmi Pad Pro.",
     "sources": [
@@ -81852,7 +82202,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 7s Gen 2"
+    }
   },
   {
     "id": "lg-32lq630b6la",
@@ -83930,7 +84283,10 @@
       }
     ],
     "display": {
-      "size": 100
+      "size": 100,
+      "refresh": 165,
+      "resolution": "3840 x 2160",
+      "type": "Mini LED"
     },
     "battery": {},
     "summaryEn": "Hisense 100U7Q PRO.",
@@ -83962,7 +84318,10 @@
       }
     ],
     "display": {
-      "size": 100
+      "size": 100,
+      "refresh": 165,
+      "resolution": "3840 x 2160",
+      "type": "QLED"
     },
     "battery": {},
     "summaryEn": "Hisense 100U7Q.",
@@ -83994,7 +84353,10 @@
       }
     ],
     "display": {
-      "size": 32
+      "size": 32,
+      "resolution": "1920 x 1080",
+      "type": "QLED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Hisense 32A5Q.",
@@ -84026,7 +84388,10 @@
       }
     ],
     "display": {
-      "size": 55
+      "size": 55,
+      "resolution": "3840 x 2160",
+      "type": "OLED",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Hisense 55A85N.",
@@ -84058,7 +84423,10 @@
       }
     ],
     "display": {
-      "size": 55
+      "size": 55,
+      "resolution": "3840 x 2160",
+      "type": "Mini LED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Hisense 55U6KQ.",
@@ -84305,7 +84673,10 @@
     "colors": [
       "Black"
     ],
-    "display": {},
+    "display": {
+      "size": 1.8,
+      "resolution": "120x160"
+    },
     "battery": {},
     "summaryEn": "Nokia 105 4G.",
     "sources": [
@@ -84313,7 +84684,11 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
+      "camera.main": "no camera (checked 2026-10-23)"
+    }
   },
   {
     "id": "nokia-106",
@@ -84338,7 +84713,10 @@
     "colors": [
       "Charcoal/Black"
     ],
-    "display": {},
+    "display": {
+      "size": 1.8,
+      "resolution": "120x160"
+    },
     "battery": {},
     "summaryEn": "Nokia 106.",
     "sources": [
@@ -84346,7 +84724,11 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
+      "camera.main": "no camera (checked 2026-10-23)"
+    }
   },
   {
     "id": "nokia-110",
@@ -84371,7 +84753,10 @@
     "colors": [
       "CHARCOAL"
     ],
-    "display": {},
+    "display": {
+      "size": 1.8,
+      "resolution": "120x160"
+    },
     "battery": {},
     "summaryEn": "Nokia 110.",
     "sources": [
@@ -84379,7 +84764,13 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "camera": {
+      "main": "QVGA"
+    },
+    "specNA": {
+      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
+    }
   },
   {
     "id": "panasonic-rp-hje118-earphones",
@@ -84418,7 +84809,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "samsung-qe77s85faexru",
@@ -84441,7 +84835,10 @@
       }
     ],
     "display": {
-      "size": 77
+      "size": 77,
+      "resolution": "3840 x 2160",
+      "type": "OLED",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Samsung QE77S85FAEXRU.",
@@ -84473,7 +84870,10 @@
       }
     ],
     "display": {
-      "size": 83
+      "size": 83,
+      "resolution": "3840 x 2160",
+      "type": "OLED",
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE83S95HAEXPY.",
@@ -84505,7 +84905,10 @@
       }
     ],
     "display": {
-      "size": 50
+      "size": 50,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung UE50M70HAUXPY.",
@@ -84537,7 +84940,10 @@
       }
     ],
     "display": {
-      "size": 85
+      "size": 85,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung UE85U8000HUXPY.",
@@ -84659,7 +85065,10 @@
       }
     ],
     "display": {
-      "size": 77
+      "size": 77,
+      "resolution": "3840 x 2160",
+      "type": "OLED",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "Sony K-77XR80.",
@@ -84721,7 +85130,10 @@
       }
     ],
     "display": {
-      "size": 75
+      "size": 75,
+      "resolution": "3840 x 2160",
+      "type": "LED",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Toshiba 75C350ME.",
@@ -84753,7 +85165,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "chipset": {
@@ -84788,7 +85201,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "3840x2160",
+      "refresh": 60,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Asus VA27UQSB.",
@@ -84820,7 +85236,10 @@
       }
     ],
     "display": {
-      "size": 23.8
+      "size": 23.8,
+      "resolution": "1920x1080",
+      "refresh": 75,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Dell SE2422H.",
@@ -84852,7 +85271,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "3840x2160",
+      "refresh": 60,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Dell P2723QE.",
@@ -84953,7 +85375,10 @@
       }
     ],
     "display": {
-      "size": 23.8
+      "size": 23.8,
+      "resolution": "1920x1080",
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Hisense 24N3G-PRO.",
@@ -84985,7 +85410,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "2560x1440",
+      "refresh": 240,
+      "type": "Fast IPS"
     },
     "battery": {},
     "summaryEn": "Hisense 27G6K-PRO.",
@@ -85017,7 +85445,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "3840x2160",
+      "refresh": 160,
+      "type": "Fast IPS, Mini LED"
     },
     "battery": {},
     "summaryEn": "Hisense 27G7K-PRO.",
@@ -85049,7 +85480,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "1920x1080",
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Hisense 27N3G-PRO.",
@@ -85081,7 +85515,9 @@
       }
     ],
     "display": {
-      "size": 34
+      "size": 34,
+      "resolution": "3440x1440",
+      "refresh": 180
     },
     "battery": {},
     "summaryEn": "Hisense 34G6K-PRO.",
@@ -85090,7 +85526,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "display.type": "Hisense's page does not name the panel type (checked 2026-10-23)"
+    }
   },
   {
     "id": "hisense-120l9g",
@@ -85113,7 +85552,10 @@
       }
     ],
     "display": {
-      "size": 120
+      "size": 120,
+      "resolution": "3840 x 2160",
+      "type": "Laser (TriChroma)",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Hisense 120L9G Laser Cinema.",
@@ -85147,7 +85589,10 @@
     "colors": [
       "Black"
     ],
-    "display": {},
+    "display": {
+      "size": 6.55,
+      "resolution": "720x1600"
+    },
     "battery": {},
     "summaryEn": "Hisense H50 Lite.",
     "sources": [
@@ -85155,7 +85600,13 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Unisoc T610"
+    },
+    "camera": {
+      "main": "48 MP (Sony IMX586)"
+    }
   },
   {
     "id": "hisense-party-rocker-one",
@@ -85185,7 +85636,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "honor-choice-speaker-pro",
@@ -85241,7 +85695,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "chipset": {
@@ -85276,7 +85731,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "chipset": {
@@ -85311,7 +85767,8 @@
       }
     ],
     "display": {
-      "size": 17.3
+      "size": 17.3,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "chipset": {
@@ -85356,7 +85813,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "jbl-bar-1000-pro",
@@ -85492,7 +85952,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "jbl-endurance-run-2-bt",
@@ -85529,7 +85992,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "jbl-partybox-on-the-go-2",
@@ -85559,7 +86025,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "jbl-quantum-350-wireless-q350wl",
@@ -85598,7 +86067,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    }
   },
   {
     "id": "jbl-soundbar-sb580",
@@ -85679,6 +86151,9 @@
     ],
     "body": {
       "weight": 12.7
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
     }
   },
   {
@@ -85717,7 +86192,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "jbl-tune-310c",
@@ -85755,7 +86233,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired USB-C"
+    }
   },
   {
     "id": "karcher-af20",
@@ -85961,7 +86442,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "1920x1200"
     },
     "battery": {},
     "chipset": {
@@ -85996,7 +86478,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "1920x1080",
+      "refresh": 75,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Lenovo D27-40.",
@@ -86028,7 +86513,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "2560x1440",
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Lenovo L27q-4A.",
@@ -86060,7 +86548,10 @@
       }
     ],
     "display": {
-      "size": 31.5
+      "size": 31.5,
+      "resolution": "3840x2160",
+      "refresh": 60,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Lenovo 32p-30.",
@@ -86092,7 +86583,10 @@
       }
     ],
     "display": {
-      "size": 31.5
+      "size": 31.5,
+      "resolution": "1920x1080",
+      "refresh": 75,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Lenovo D32-40.",
@@ -86126,7 +86620,10 @@
     "colors": [
       "Platinum Grey"
     ],
-    "display": {},
+    "display": {
+      "size": 11,
+      "resolution": "2000x1200"
+    },
     "battery": {},
     "summaryEn": "Lenovo Tab P11 (TB-J606L).",
     "sources": [
@@ -86134,7 +86631,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "Qualcomm Snapdragon 662"
+    }
   },
   {
     "id": "lenovo-v15-g5-irl-83gw00grfw",
@@ -86157,7 +86657,8 @@
       }
     ],
     "display": {
-      "size": 15.6
+      "size": 15.6,
+      "resolution": "1920x1080"
     },
     "battery": {},
     "chipset": {
@@ -86192,7 +86693,8 @@
       }
     ],
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "2880x1800"
     },
     "battery": {},
     "chipset": {
@@ -86227,7 +86729,10 @@
       }
     ],
     "display": {
-      "size": 27
+      "size": 27,
+      "resolution": "3840x2160",
+      "refresh": 60,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "LG 27US550-W.",
@@ -86261,7 +86766,10 @@
     "colors": [
       "Grey"
     ],
-    "display": {},
+    "display": {
+      "size": 2.4,
+      "resolution": "240x320"
+    },
     "battery": {},
     "summaryEn": "Nokia 210 (TA-1139).",
     "sources": [
@@ -86269,7 +86777,13 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "chipset": {
+      "name": "MediaTek MT6260A"
+    },
+    "camera": {
+      "main": "0.3 MP (VGA), LED flash"
+    }
   },
   {
     "id": "nokia-3310-ds",
@@ -86294,7 +86808,10 @@
     "colors": [
       "Gray"
     ],
-    "display": {},
+    "display": {
+      "size": 2.4,
+      "resolution": "240x320"
+    },
     "battery": {},
     "summaryEn": "Nokia 3310 Dual SIM.",
     "sources": [
@@ -86302,7 +86819,13 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "camera": {
+      "main": "2 MP, LED flash"
+    },
+    "specNA": {
+      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
+    }
   },
   {
     "id": "panasonic-sc-bmax5",
@@ -86392,7 +86915,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "panasonic-sc-tmax45",
@@ -86445,7 +86971,10 @@
       }
     ],
     "display": {
-      "size": 21.5
+      "size": 21.5,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "TN"
     },
     "battery": {},
     "summaryEn": "Philips 223V5LHSB2.",
@@ -86520,7 +87049,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "samsung-hw-b650f",
@@ -86700,7 +87232,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "samsung-hw-a450",
@@ -86783,7 +87318,10 @@
       }
     ],
     "display": {
-      "size": 24
+      "size": 24,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "VA, curved"
     },
     "battery": {},
     "summaryEn": "Samsung C24F396FHI.",
@@ -86815,7 +87353,10 @@
       }
     ],
     "display": {
-      "size": 24
+      "size": 24,
+      "resolution": "1920x1080",
+      "refresh": 75,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Samsung F24T350FHI.",
@@ -86847,7 +87388,10 @@
       }
     ],
     "display": {
-      "size": 32
+      "size": 32,
+      "resolution": "2560x1440",
+      "refresh": 165,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Samsung Odyssey G5 S32AG520PI.",
@@ -87075,7 +87619,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "sony-wi-c200",
@@ -87109,7 +87656,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "yandex-station-lite-2",
@@ -87146,7 +87696,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "roborock-q8-max",
@@ -94691,7 +95244,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "apple-earpods-3-5mm",
@@ -94728,7 +95284,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "xiaomi-mi-true-wireless-earbuds-basic-2s",
@@ -94765,7 +95324,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "xiaomi-mi-true-wireless-earbuds-basic-2",
@@ -94802,7 +95364,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "jbl-live-flex-3",
@@ -94843,7 +95408,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "realme-buds-t310",
@@ -94881,7 +95449,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "realme-buds-t110",
@@ -94918,7 +95489,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "realme-buds-air-6-pro",
@@ -94956,7 +95530,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "realme-buds-air-6",
@@ -94994,7 +95571,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "realme-buds-air-5",
@@ -95032,7 +95612,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "realme-buds-air-5-pro",
@@ -95123,7 +95706,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "realme-buds-air-3",
@@ -95161,7 +95747,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "realme-techlife-buds-t100",
@@ -95198,7 +95787,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "xiaomi-buds-3",
@@ -95327,7 +95919,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "xiaomi-redmi-buds-3",
@@ -95364,7 +95959,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "realme-buds-q2",
@@ -95405,7 +96003,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "xiaomi-redmi-buds-3-pro",
@@ -95493,7 +96094,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "jbl-jr310bt",
@@ -95530,7 +96134,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "realme-buds-air-pro",
@@ -95750,7 +96357,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "samsung-gear-circle",
@@ -95787,7 +96397,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.1"
+    }
   },
   {
     "id": "samsung-galaxy-buds",
@@ -95824,7 +96437,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "jbl-tune-205",
@@ -95871,7 +96487,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "jbl-tune-210",
@@ -95909,7 +96528,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
   },
   {
     "id": "remarkable-2",
