@@ -40817,7 +40817,8 @@
     },
     "summaryEn": "Samsung Galaxy Watch4 40 mm.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "colors": [
       "Black",
@@ -40828,7 +40829,13 @@
     "year": 2021,
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 25.9
+    },
+    "sources": [
+      "https://www.samsung.com/global/galaxy/galaxy-watch4/specs/"
+    ]
   },
   {
     "id": "samsung-galaxy-z-flip-7",
@@ -58133,7 +58140,8 @@
       "battery.capacity"
     ],
     "specNA": {
-      "chipset.name": "sold as 11th gen (MediaTek MT8183) and 13th gen (MediaTek MT8186A) under one listing (2026-10-03)"
+      "chipset.name": "sold as 11th gen (MediaTek MT8183) and 13th gen (MediaTek MT8186A) under one listing (2026-10-03)",
+      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
     },
     "colors": [
       "Pink",
@@ -58252,11 +58260,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Silver",
       "Rose Gold"
+    ],
+    "body": {
+      "weight": 24.5
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-9-pro/specs/"
     ]
   },
   {
@@ -58336,12 +58351,19 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White",
       "Pink",
       "Black"
+    ],
+    "body": {
+      "weight": 14
+    },
+    "sources": [
+      "https://consumer.huawei.com/en/wearables/band9/specs/"
     ]
   },
   {
@@ -58375,10 +58397,17 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 14
+    },
+    "sources": [
+      "https://www.honor.com/global/wearables/honor-band-9/"
     ]
   },
   {
@@ -61858,7 +61887,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 250
+    },
+    "sources": [
+      "https://wibi.com.kw/products/bose-quietcomfort-ultra-wireless-noise-cancelling-over-ear-headphones-3-5-mm-bluetooth-usb-type-c-deep-plum"
+    ]
   },
   {
     "id": "jbl-tour-one-m3",
@@ -62066,7 +62101,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black"
@@ -62078,7 +62114,13 @@
     },
     "connectivity": {
       "bluetooth": "5.1"
-    }
+    },
+    "body": {
+      "weight": 240
+    },
+    "sources": [
+      "https://www.bose.com/p/headphones/bose-quietcomfort-se-headphones"
+    ]
   },
   {
     "id": "bose-quietcomfort-ultra-earbuds",
@@ -62107,7 +62149,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black",
@@ -62121,7 +62164,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 6.24
+    },
+    "sources": [
+      "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds"
+    ]
   },
   {
     "id": "jbl-tour-pro-3-tws",
@@ -62235,7 +62284,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White",
@@ -62248,7 +62298,13 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 254
+    },
+    "sources": [
+      "https://www.bose.com/p/headphones/bose-noise-cancelling-headphones-700"
+    ]
   },
   {
     "id": "jbl-tour-one-m2",
@@ -62416,7 +62472,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White",
@@ -62430,7 +62487,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 8.5
+    },
+    "sources": [
+      "https://www.bose.com/p/earbuds/bose-quietcomfort-earbuds"
+    ]
   },
   {
     "id": "jbl-tour-pro-2-tws",
@@ -62551,7 +62614,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black"
@@ -62563,7 +62627,13 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 20.3
+    },
+    "sources": [
+      "https://www.beatsbydre.com/earbuds/powerbeats-pro"
+    ]
   },
   {
     "id": "jbl-live-780nc",
@@ -62604,7 +62674,13 @@
     },
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 260
+    },
+    "sources": [
+      "https://www.smartprix.com/mobile_headphones/jbl_tune_770nc_wireless_headph_vs_jbl_live_780nc_wireless_headph-cpd1uern069k_pd1tjiark7y.php"
+    ]
   },
   {
     "id": "beats-solo-3",
@@ -62646,7 +62722,13 @@
     },
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 215
+    },
+    "sources": [
+      "https://mightygadget.co.uk/beats-studio-pro-vs-studio-3-vs-solo-3-compared-whats-the-difference"
+    ]
   },
   {
     "id": "jbl-quantum-one-nc",
@@ -62979,7 +63061,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 5
+    },
+    "sources": [
+      "https://synced.sg/blogs/news/jbl-live-buds-3-vs-jbl-live-beam-3"
+    ]
   },
   {
     "id": "jbl-quantum-610",
@@ -63257,7 +63345,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black"
@@ -63269,7 +63358,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 4.9
+    },
+    "sources": [
+      "https://www.oneplus.com/global/buds-pro-2/specs"
+    ]
   },
   {
     "id": "jbl-endurance-peak-4",
@@ -64049,7 +64144,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White"
@@ -64061,7 +64157,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 4.7
+    },
+    "sources": [
+      "https://www.oneplus.com/global/nord-buds-2/specs"
+    ]
   },
   {
     "id": "jbl-jr320bt",
@@ -64609,7 +64711,13 @@
     },
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 260
+    },
+    "sources": [
+      "https://mightygadget.co.uk/beats-studio-pro-vs-studio-3-vs-solo-3-compared-whats-the-difference"
+    ]
   },
   {
     "id": "jbl-tune-520c",
@@ -66456,6 +66564,9 @@
     },
     "body": {
       "weight": 686
+    },
+    "specNA": {
+      "battery.capacity": "Microsoft gives the battery in watt-hours, not mAh (checked 2026-10-24)"
     }
   },
   {
@@ -66885,7 +66996,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Apple S8 SiP"
@@ -66895,7 +67007,16 @@
       "Silver",
       "Starlight"
     ],
-    "variantUnit": "mm"
+    "variantUnit": "mm",
+    "body": {
+      "weight": 26.4
+    },
+    "sources": [
+      "https://support.apple.com/kb/SP877"
+    ],
+    "specNA": {
+      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
+    }
   },
   {
     "id": "flyingvoice-sr3000-5g",
@@ -67986,7 +68107,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 232
+    },
+    "sources": [
+      "https://ko.ifixit.com/Topic/JBL_Tune_770NC"
+    ]
   },
   {
     "id": "sony-mdr-g300",
@@ -70412,7 +70539,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
+    }
   },
   {
     "id": "garmin-enduro-3",
@@ -70444,8 +70574,18 @@
       "display",
       "chipset",
       "battery.capacity",
-      "battery.life"
-    ]
+      "battery.life",
+      "body.weight"
+    ],
+    "body": {
+      "weight": 63
+    },
+    "sources": [
+      "https://www.garmin.com/en-US/p/896691"
+    ],
+    "specNA": {
+      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
+    }
   },
   {
     "id": "garmin-tactix-8-47-mm-amoled",
@@ -70475,7 +70615,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
+    }
   },
   {
     "id": "garmin-tactix-8-51-mm-amoled",
@@ -70505,7 +70648,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
+    }
   },
   {
     "id": "lg-oled55c5rla",
@@ -81812,7 +81958,8 @@
       "transparency": true
     },
     "body": {
-      "ip": "IPX4"
+      "ip": "IPX4",
+      "weight": 8.7
     },
     "summaryEn": "Workout earbuds with adjustable earhooks, active noise cancellation, Transparency mode, heart-rate monitoring, the Apple H2 chip and up to 10 hours of playback (45 hours with the charging case).",
     "sources": [
@@ -81820,7 +81967,8 @@
       "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-quick-sand",
       "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-hyper-purple",
       "https://likemobile.am/en/powerbeats-pro-2-high-performance-earbuds-jet-black",
-      "https://www.apple.com/shop/product/mx733ll/a/powerbeats-pro-2-high-performance-earbuds-quick-sand"
+      "https://www.apple.com/shop/product/mx733ll/a/powerbeats-pro-2-high-performance-earbuds-quick-sand",
+      "https://pimcontent1.ingrammicro.com/mx/assets/media/brochure/0b61189_0b61189.pdf"
     ],
     "unsure": [
       "popularity"
@@ -82158,17 +82306,22 @@
     },
     "summaryEn": "Marshall Monitor II A.N.C..",
     "sources": [
-      "https://likemobile.am/en/marshall-monitor-ii-anc"
+      "https://likemobile.am/en/marshall-monitor-ii-anc",
+      "https://www.marshall.com/global/en/product/monitor-ii-a-n-c"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.0"
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "body": {
+      "weight": 320
+    }
   },
   {
     "id": "marshall-emberton-ii",
@@ -97000,13 +97153,17 @@
     },
     "summaryEn": "Realme Buds Air 6 Pro.",
     "sources": [
-      "https://mobilecentre.am/product/realme-headphone-buds-air-6-pro-_blue_/31214/"
+      "https://mobilecentre.am/product/realme-headphone-buds-air-6-pro-_blue_/31214/",
+      "https://m.gsmarena.com/realme_buds_air6_pro_review-amp-63864.php"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.5
     }
   },
   {
@@ -97041,13 +97198,17 @@
     },
     "summaryEn": "Realme Buds Air 6.",
     "sources": [
-      "https://mobilecentre.am/product/realme-headphone-buds-air-6-_green_/31212/"
+      "https://mobilecentre.am/product/realme-headphone-buds-air-6-_green_/31212/",
+      "https://www.digit.in/audio/realme-buds-air-6-true-wireless-earbuds.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.5
     }
   },
   {
@@ -97916,13 +98077,18 @@
     },
     "summaryEn": "Samsung Galaxy Buds.",
     "sources": [
-      "https://mobilecentre.am/product/samsung-headphone-galaxy-buds-_yellow_/13181/"
+      "https://mobilecentre.am/product/samsung-headphone-galaxy-buds-_yellow_/13181/",
+      "https://www.samsung.com/global/galaxy/galaxy-buds/"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 5.6
     }
   },
   {
