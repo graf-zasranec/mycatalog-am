@@ -45487,6 +45487,12 @@
     },
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 6.1
+    },
+    "sources": [
+      "https://manuals.plus/m/d2ced660b90f87807dba5a75bfcc72917c53f638c0785c02ce8f4cd86e04efc4"
     ]
   },
   {
@@ -60044,7 +60050,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black",
@@ -60052,7 +60059,13 @@
     ],
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 17100
+    },
+    "sources": [
+      "https://www.speakerranking.com/compare/jbl-partybox-130-vs-jbl-partybox-330/"
+    ]
   },
   {
     "id": "jbl-partybox-520",
@@ -60199,7 +60212,13 @@
     ],
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 11300
+    },
+    "sources": [
+      "https://www.jbl.com/PARTYBOX-130.html"
+    ]
   },
   {
     "id": "jbl-boombox-4",
@@ -60264,7 +60283,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Squad",
@@ -60273,7 +60293,13 @@
     ],
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 2900
+    },
+    "sources": [
+      "https://www.speakerranking.com/compare/jbl-partybox-encore-2-vs-jbl-xtreme-5/"
+    ]
   },
   {
     "id": "jbl-authentics-300",
@@ -60886,7 +60912,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 780
+    },
+    "sources": [
+      "https://www.jbl.com.my/bluetooth-portables/HORIZON-3.html"
+    ]
   },
   {
     "id": "sony-srs-ult10",
@@ -61264,7 +61296,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 230
+    },
+    "sources": [
+      "https://www.jbl.com/power-sports-audio/WIND3-.html"
+    ]
   },
   {
     "id": "sony-srs-xb100",
@@ -61855,7 +61893,13 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 264
+    },
+    "sources": [
+      "https://www.bose.com.au/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html"
+    ]
   },
   {
     "id": "bose-quietcomfort-ultra",
@@ -64482,7 +64526,13 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 4.82
+    },
+    "sources": [
+      "https://www.oneplus.com/us/oneplus-nord-buds"
+    ]
   },
   {
     "id": "jbl-quantum-50-wired",
@@ -68119,7 +68169,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White",
@@ -68134,7 +68185,13 @@
     },
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 225
+    },
+    "sources": [
+      "https://versus.com/en/jbl-tune-770nc-vs-jbl-tune-780nc"
+    ]
   },
   {
     "id": "jbl-tune-770nc",
@@ -70297,7 +70354,13 @@
     ],
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 230
+    },
+    "sources": [
+      "https://www.jbl.com/GO-5.html"
+    ]
   },
   {
     "id": "sony-srs-ult30",
@@ -82494,16 +82557,21 @@
     "battery": {},
     "summaryEn": "Bose SoundLink Revolve+ II.",
     "sources": [
-      "https://likemobile.am/en/bose-soundlink-revolve-iiad"
+      "https://likemobile.am/en/bose-soundlink-revolve-iiad",
+      "https://fullspecs.net/bluetooth-speaker/bose/soundlink-revolve-plus-ii-specifications/"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "colors": [
       "Silver"
     ],
     "connectivity": {
       "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 900
     }
   },
   {
@@ -87446,13 +87514,17 @@
     "battery": {},
     "summaryEn": "JBL Bar 1000 MK2.",
     "sources": [
-      "https://vlv.am/en/Product/41676"
+      "https://vlv.am/en/Product/41676",
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw1cfd242c/pdfs/JBL_BAR_1000MK2_Specsheet_EN.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 5500
     }
   },
   {
@@ -88835,13 +88907,17 @@
     "battery": {},
     "summaryEn": "Samsung HW-Q600C.",
     "sources": [
-      "https://vlv.am/en/Product/37345"
+      "https://vlv.am/en/Product/37345",
+      "https://e-catalog.com/cmp/147171/hw-q600c-vs-hw-b650/"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 3800
     }
   },
   {
@@ -88934,13 +89010,17 @@
     "battery": {},
     "summaryEn": "Samsung HW-Q990H.",
     "sources": [
-      "https://vlv.am/en/Product/47865"
+      "https://vlv.am/en/Product/47865",
+      "https://www.whathifi.com/tv-home-cinema/soundbars/samsung-hw-q990h"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 7300
     }
   },
   {
@@ -89303,13 +89383,17 @@
     "battery": {},
     "summaryEn": "Sony SRS-XG500.",
     "sources": [
-      "https://vlv.am/en/Product/18672"
+      "https://vlv.am/en/Product/18672",
+      "https://www.rtings.com/speaker/reviews/sony/srs-xg500"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Sony does not state it; retailers disagree (4.2 vs 5.0) (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 5600
     }
   },
   {
@@ -89339,13 +89423,18 @@
     "battery": {},
     "summaryEn": "Sony ULT Field 5 (SRS-ULT50).",
     "sources": [
-      "https://vlv.am/en/Product/45158"
+      "https://vlv.am/en/Product/45158",
+      "https://versus.com/en/bose-soundlink-revolve-ii-vs-sony-ult-field-5"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 3300
     }
   },
   {
@@ -97808,13 +97897,18 @@
     "sources": [
       "https://mobilecentre.am/product/xiaomi-redmi-buds-3-pro-_twsej01zm_--graphite-black/26384/",
       "https://mobilecentre.am/product/xiaomi-redmi-buds-3-pro-_twsej01zm_-glacier-grey/26383/",
-      "https://www.mi.com/global/product/redmi-buds-3-pro/specs/"
+      "https://www.mi.com/global/product/redmi-buds-3-pro/specs/",
+      "https://www.mi.com/global/product/redmi-buds-3/"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 4.9
     }
   },
   {
