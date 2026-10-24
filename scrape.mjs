@@ -3296,6 +3296,13 @@ for (const id of Object.keys(offers)) {
     && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title))
     && !/\boutlet\b|աութլեթ/i.test(o.title || ''));
 }
+// A capacity no device is sold in is a misreading, not a configuration: Telecom's Tab M9 came
+// through as 9216 GB and offered every tablet shopper a '9 TB' filter (2026-10-24). Only where the
+// number means storage - a watch keeps its case size in the same field.
+for (const id of Object.keys(offers)) {
+  if (!['phone', 'tablet', 'laptop', 'desktop', 'console'].includes(phoneById[id]?.category)) continue;
+  for (const o of offers[id]) if (o.storage != null && !REAL_CAPACITY.has(+o.storage)) o.storage = null;
+}
 // A price-only refresh must not release a hardware contradiction or change
 // a model's processor identity through a cached/manual/direct adapter ID.
 {

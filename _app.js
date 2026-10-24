@@ -69,7 +69,9 @@ const X = {
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ', days: 'օր',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
-    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ',
+    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ', frameF: 'Շրջանակ', lensF: 'Ոսպնյակներ',
+    lenses: { clear: 'Թափանցիկ', sun: 'Արևային', transitions: 'Ֆոտոքրոմիկ (Transitions)' },
+    kinds: { console: 'Կոնսոլ', handheld: 'Ձեռքի կոնսոլ', controller: 'Ջոյստիկ', wheel: 'Ղեկ', vr: 'VR ակնոց', drone: 'Դրոն', camera: 'Տեսախցիկ', gimbal: 'Ստաբիլիզատոր', mic: 'Միկրոֆոն', other: 'Այլ' },
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր {d}-ի ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
@@ -102,7 +104,9 @@ const X = {
     scrLo: 'до {x}″', scrHi: 'от {x}″',
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч', days: 'дн.',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
-    ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти',
+    ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти', frameF: 'Оправа', lensF: 'Линзы',
+    lenses: { clear: 'Прозрачные', sun: 'Солнцезащитные', transitions: 'Фотохромные (Transitions)' },
+    kinds: { console: 'Консоль', handheld: 'Портативная консоль', controller: 'Геймпад', wheel: 'Руль', vr: 'VR-гарнитура', drone: 'Дрон', camera: 'Камера', gimbal: 'Стабилизатор', mic: 'Микрофон', other: 'Другое' },
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума {d}', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
@@ -138,7 +142,9 @@ const X = {
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h', days: 'days',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
-    ancF: 'Noise cancelling', waterF: 'Water resistance', chargeF: 'Fast charging', wlessF: 'Wireless charging', sdF: 'Memory card slot',
+    ancF: 'Noise cancelling', waterF: 'Water resistance', chargeF: 'Fast charging', wlessF: 'Wireless charging', sdF: 'Memory card slot', frameF: 'Frame', lensF: 'Lenses',
+    lenses: { clear: 'Clear', sun: 'Sun', transitions: 'Transitions (photochromic)' },
+    kinds: { console: 'Console', handheld: 'Handheld', controller: 'Controller', wheel: 'Racing wheel', vr: 'VR headset', drone: 'Drone', camera: 'Camera', gimbal: 'Gimbal', mic: 'Microphone', other: 'Other' },
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the {d} low', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
@@ -171,12 +177,12 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, chg: 0, wless: false, sd: false, anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, chg: 0, wless: false, sd: false, gstyles: [], glenses: [], kinds: [], anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
 // exists, or an array that came back as a string would all render as a broken page.
-for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses', 'atypes']) if (!Array.isArray(st[k])) st[k] = [];
+for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses', 'atypes', 'gstyles', 'glenses', 'kinds']) if (!Array.isArray(st[k])) st[k] = [];
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
 // ?lang=ru from the Russian/English static pages opens the app in that language
@@ -830,7 +836,7 @@ const FILT = {
   stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
            of: p => Math.max(0, ...filterValues(p, 'storage')) || null, all: p => filterValues(p, 'storage'),
            fmt: v => gb(v, viewUnit()) },
-  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
+  batt:  { kind: 'min', nice: true, label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
   // a watch lasts days, earbuds hours: kept in hours underneath, shown in days from two up
@@ -848,6 +854,12 @@ const FILT = {
   chg:   { kind: 'min', label: () => x('chargeF'), of: p => p.battery?.wired || null, fmt: v => v + ' ' + u('w') },
   wless: { kind: 'flag', label: () => x('wlessF'), of: p => p.battery?.wireless > 0 },
   sd:    { kind: 'flag', label: () => x('sdF'), of: p => p.cardSlot === true },
+  // Smart glasses are chosen like glasses: the frame, then the lenses (2026-10-24).
+  gstyle: { kind: 'set', arr: 'gstyles', label: () => x('frameF'), of: p => p.glasses?.style || null, fmt: v => v },
+  glens:  { kind: 'set', arr: 'glenses', label: () => x('lensF'), of: p => lensOf(p), fmt: v => x('lenses')[v] || v, vals: () => ['clear', 'sun', 'transitions'] },
+  // Two sections hold more than their name says: 'consoles' is also controllers, wheels and VR,
+  // and 'drones' is mostly DJI's microphones, action cameras and gimbals. Read off the model name.
+  kind:   { kind: 'set', arr: 'kinds', label: () => x('atypeF'), of: p => kindOf(p), fmt: v => x('kinds')[v] || v },
   // Any / Yes / No (owner, 2026-10-04). A model nothing marks as noise-cancelling counts as No -
   // tools/audio.mjs reads ANC/NC off every name and shop title, and the rest were set by hand.
   anc:   { kind: 'yn', label: () => x('ancF'), of: p => p.audio?.anc === true },
@@ -864,7 +876,7 @@ const FILT = {
   spk:   { kind: 'set', arr: 'spks', label: () => x('spkF'), of: p => spkOf(p), fmt: v => x('spks')[v] || v,
            vals: () => ['portable', 'party', 'smart', 'home'] },
   atype: { kind: 'set', arr: 'atypes', label: () => x('atypeF'), of: p => p.appliance?.type, fmt: v => t('appliance.' + v) },
-  apower: { kind: 'min', label: () => x('powerF'), of: p => p.appliance?.power || null, fmt: v => money(v) + ' ' + u('w') },
+  apower: { kind: 'min', nice: true, label: () => x('powerF'), of: p => p.appliance?.power || null, fmt: v => money(v) + ' ' + u('w') },
   avol:  { kind: 'min', label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
   res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
            vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
@@ -906,6 +918,13 @@ const SPK = [
   ['home',  /\bacton\b|\bstanmore\b|\bwoburn\b|\baura studio\b|\bstudio \d\b/i],
   ['portable', /\bflip\b|\bcharge\b|\bclip\b|\bgo \d\b|\bxtreme\b|\bsoundlink\b|\bemberton\b|\bwillen\b|\bkilburn\b|\bstockwell\b|\bmiddleton\b|\buxbridge\b|\bluna\b|\bonyx\b|\bbeosound (a1|a5|explore)\b/i],
 ];
+const lensOf = p => { const l = String(p.glasses?.lens || ''); return !l ? null : /transitions/i.test(l) ? 'transitions' : /^clear\b/i.test(l) ? 'clear' : 'sun'; };
+const KINDS = {
+  console: [['wheel', /\bwheel\b|driving force|\bg9\d\d\b|\bg29\b/i], ['vr', /\bvr\d?\b/i], ['handheld', /\bally\b|legion go|\bportal\b/i],
+            ['controller', /dualsense|controller|backbone/i], ['console', /playstation 5|\bps5 (pro|slim)\b|xbox series/i], ['other', /./]],
+  drone:   [['mic', /\bmic\b/i], ['drone', /mavic|\bmini \d|\bair \d|avata|\bneo\b/i], ['gimbal', /osmo mobile|\brs ?\d/i], ['camera', /osmo|pocket|action|360/i], ['other', /./]],
+};
+const kindOf = p => { const k = KINDS[p.category]; return k ? (k.find(([, re]) => re.test(p.name)) || [])[0] || null : null; };
 const spkOf = p => p.category !== 'speaker' ? null : (SPK.find(([, re]) => re.test(p.name)) || [])[0] || null;
 // The year it was released, which is a fact the catalogue records, not one read off a title.
 const yearOf = p => { const m = String(p.released || '').match(/^(\d{4})/); return m ? +m[1] : null; };
@@ -925,7 +944,7 @@ const ASK = {
   tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'g5', 'touch', 'panel', 'os', 'year'],
   laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'hz', 'touch', 'weight', 'panel', 'os', 'year'],
   desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
-  console:    ['stor', 'year'],
+  console:    ['kind', 'stor', 'year'],
   ereader:    ['stor', 'scr', 'weight', 'water', 'panel', 'year'],
   watch:      ['stor', 'scr', 'life', 'weight', 'water', 'os', 'year'],
   headphones: ['hform', 'hconn', 'hplug', 'anc', 'gaming', 'life', 'weight', 'water', 'year'],
@@ -939,10 +958,10 @@ const ASK = {
   component:  ['year'],
   // A television is asked the same two questions a monitor is: how big, and how fast.
   tv:         ['scr', 'res', 'hz', 'panel', 'os', 'year'],
-  drone:      ['year'],
+  drone:      ['kind', 'year'],
   network:    ['year'],
   streamer:   ['stor', 'year'],
-  smartglasses: ['year'],
+  smartglasses: ['gstyle', 'glens', 'year'],
   projector:  ['res', 'year'],
 };
 // Brand, price and shop are questions about the purchase, not about the hardware, so they are
@@ -1327,12 +1346,22 @@ function toggleCmp(id) {
 // Filter steps are read off the items on screen. The old fixed lists ([4,6,8,12,16] RAM,
 // [64,128,256,512] storage) could not offer the 24 GB and 2 TB the laptops brought in, and
 // offered 64 GB to a category whose smallest phone is 128.
-const steps = get => {
+// A threshold a person would say: '4 000 mAh or more', not '4 288 mAh or more'. Rounding DOWN keeps
+// every product the exact value matched, so the counts beside the options stay true.
+const niceDown = v => v >= 1000 ? Math.floor(v / 500) * 500 : v >= 100 ? Math.floor(v / 50) * 50 : v >= 20 ? Math.floor(v / 5) * 5 : Math.floor(v);
+const steps = (get, nice) => {
   // the smallest value matches everything that has the spec, so it only repeats "All"
-  const v = [...new Set(inView().flatMap(get))].filter(n => typeof n === 'number' && n > 0).sort((a, b) => a - b).slice(1);
+  const all = inView().flatMap(get).filter(n => typeof n === 'number' && n > 0).map(n => nice ? niceDown(n) : n).sort((a, b) => a - b);
+  const v = [...new Set(all)].slice(1);
   if (v.length <= 6) return v;
-  // ponytail: evenly sampled, which is plenty for a "this much or more" filter
-  return [...new Set(Array.from({ length: 6 }, (_, i) => v[Math.round(i * (v.length - 1) / 5)]))];
+  // Discrete specs (RAM, storage, Hz, megapixels) are few named steps: keep them evenly sampled
+  // so 32 and 64 GB are still offered on laptops where most have 16.
+  if (!nice) return [...new Set(Array.from({ length: 6 }, (_, i) => v[Math.round(i * (v.length - 1) / 5)]))];
+  // Sampled where the PRODUCTS are, not evenly across distinct values: phone batteries crowd
+  // around 5 000 mAh, and even spacing over 1 000-9 000 skipped the one figure most people
+  // compare (2026-10-24). Six cut points at product quantiles, always above the smallest value.
+  const cuts = [...new Set(Array.from({ length: 6 }, (_, i) => all[Math.min(all.length - 1, Math.round((i + 1) * all.length / 7))]))];
+  return cuts.filter(c => c > all[0]);
 };
 // every product in view is a watch -> the variant number is a case size, not a capacity
 const viewUnit = () => {
@@ -1397,7 +1426,7 @@ function fdrop(k, pool) {
   if (f.kind === 'flag') return varies(p => f.of(p, st))
     ? `<button class="toggle" data-f="${k}" aria-pressed="false">${esc(f.label())}</button>` : '';
   if (f.kind === 'min') {
-    const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)]);
+    const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)], f.nice);
     return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
   }
   if (f.kind === 'yn') return varies(p => f.of(p, st))

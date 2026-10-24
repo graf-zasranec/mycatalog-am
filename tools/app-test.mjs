@@ -201,6 +201,11 @@ is(barKeys('headphones').includes('anc'), true, 'headphones are asked about nois
 is(['chg', 'wless', 'sd', 'water'].filter(k => !barKeys('phone').includes(k)), [], 'phones are asked about charging, card slot and water resistance');
 is(barKeys('laptop').includes('hz'), true, 'laptops are asked about refresh rate');
 is(barKeys('vacuum').includes('apower'), true, 'vacuums are asked about power');
+// sections with no spec questions before (2026-10-24): glasses by frame and lens, and a type for
+// the two sections whose name undersells them
+is(['gstyle', 'glens'].filter(k => !barKeys('smartglasses').includes(k)), [], 'smart glasses are asked frame and lenses');
+is(barKeys('console').includes('kind') && barKeys('drone').includes('kind'), true, 'consoles and drones are asked their type');
+is(phones.filter(p => p.category === 'drone' && /\bmic\b/i.test(p.name)).map(p => app.FILT.kind.of(p)).filter(k => k !== 'mic'), [], 'every DJI Mic is a microphone, Mic Mini 2 included');
 // e-catalog's headphone column: what kind, wired or not, which plug, gaming
 is(['hform', 'hconn', 'hplug', 'gaming'].filter(k => !barKeys('headphones').includes(k)), [], 'headphones are asked type, connection, connector, gaming');
 is(barKeys('speaker').includes('spk'), true, 'speakers are asked what kind');
