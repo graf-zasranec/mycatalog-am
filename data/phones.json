@@ -63031,7 +63031,13 @@
     },
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 231
+    },
+    "sources": [
+      "https://www.jbl.com/LIVE680NC.html"
+    ]
   },
   {
     "id": "oneplus-buds-pro-3",
@@ -63163,7 +63169,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 4.6
+    },
+    "sources": [
+      "https://www.bhphotovideo.com/c/product/1808931-REG/jbl_jbllivebuds3blkam_live_buds_3_true.html"
+    ]
   },
   {
     "id": "jbl-live-beam-3",
@@ -64271,7 +64283,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Orange"
@@ -64282,7 +64295,13 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 5.4
+    },
+    "sources": [
+      "https://www.sony.co.in/electronics/support/wireless-headphones-bluetooth-headphones/wf-c500/specifications"
+    ]
   },
   {
     "id": "oneplus-nord-buds-2",
@@ -68208,7 +68227,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 222
+    },
+    "sources": [
+      "https://www.soundguys.com/sennheiser-accentum-wireless-review-100972/"
+    ]
   },
   {
     "id": "jbl-tune-780nc",
@@ -68431,7 +68456,13 @@
     },
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
-    }
+    },
+    "body": {
+      "weight": 220
+    },
+    "sources": [
+      "https://www.jbl.com/gaming-headsets/QUANTUM100.html"
+    ]
   },
   {
     "id": "jbl-tune-530c",
@@ -68471,7 +68502,13 @@
     },
     "connectivity": {
       "bluetooth": "none, wired USB-C"
-    }
+    },
+    "body": {
+      "weight": 143
+    },
+    "sources": [
+      "https://www.jbl.com/TUNE530C-USB-C.html"
+    ]
   },
   {
     "id": "jbl-tune-530",
@@ -68557,7 +68594,13 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 20
+    },
+    "sources": [
+      "https://www.sony.co.in/electronics/support/wireless-headphones-bluetooth-headphones/wi-c100/specifications"
+    ]
   },
   {
     "id": "hp-15-6-core-3-100u-d05wsea",
@@ -88085,13 +88128,17 @@
     },
     "summaryEn": "JBL Tune 305C.",
     "sources": [
-      "https://vlv.am/en/Product/37956"
+      "https://vlv.am/en/Product/37956",
+      "https://in.jbl.com/in-ear-headphones/TUNE305C-USB-C.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
+    },
+    "body": {
+      "weight": 15.3
     }
   },
   {
@@ -88126,13 +88173,17 @@
     },
     "summaryEn": "JBL Tune 310C.",
     "sources": [
-      "https://vlv.am/en/Product/44158"
+      "https://vlv.am/en/Product/44158",
+      "https://www.jbl.com/earbuds/TUNE310C-USB-C.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "none, wired USB-C"
+    },
+    "body": {
+      "weight": 14.3
     }
   },
   {
@@ -89697,13 +89748,18 @@
     },
     "summaryEn": "Sony WI-C200.",
     "sources": [
-      "https://vlv.am/en/Product/19755"
+      "https://vlv.am/en/Product/19755",
+      "https://versus.com/en/sony-wi-c100-vs-sony-wi-c200"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 19
     }
   },
   {
@@ -97456,13 +97512,17 @@
     },
     "summaryEn": "JBL Live Flex 3.",
     "sources": [
-      "https://mobilecentre.am/product/jbl-live-flex-3-true-wireless-noise-cancelling-earphones-with-display-_black_/31305/"
+      "https://mobilecentre.am/product/jbl-live-flex-3-true-wireless-noise-cancelling-earphones-with-display-_black_/31305/",
+      "https://ro.harmanaudio.com/LIVEFLEX3.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.5
     }
   },
   {
@@ -98892,7 +98952,8 @@
       "life": "8 hours, 24 with the case"
     },
     "body": {
-      "ip": "IP54"
+      "ip": "IP54",
+      "weight": 7
     },
     "connectivity": {
       "bluetooth": "5.4"
@@ -98902,7 +98963,8 @@
     ],
     "summaryEn": "Bowers & Wilkins' noise-cancelling earbuds with aptX Adaptive and Bluetooth 5.4.",
     "sources": [
-      "https://www.bowerswilkins.com/"
+      "https://www.bowerswilkins.com/",
+      "https://bowerswilkins.com/en-us/product/wireless-earbuds/pi6/300966.html"
     ],
     "unsure": [
       "popularity"
