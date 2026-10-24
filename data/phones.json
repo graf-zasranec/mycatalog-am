@@ -60028,7 +60028,13 @@
     ],
     "specNA": {
       "connectivity.bluetooth": "Sony lists profiles and codecs but no Bluetooth version (sony.co.uk spec page, 2026-10-03)"
-    }
+    },
+    "body": {
+      "weight": 21200
+    },
+    "sources": [
+      "https://www.sony.co.uk/electronics/hi-fi-systems/mhc-v73d/specifications"
+    ]
   },
   {
     "id": "jbl-partybox-330",
@@ -86192,13 +86198,17 @@
     "battery": {},
     "summaryEn": "Hisense AX5140Q.",
     "sources": [
-      "https://vlv.am/en/Product/42044"
+      "https://vlv.am/en/Product/42044",
+      "https://manuals.plus/m/9a826d748192000fb066ed733cdc053d972c89f6393796c9d274e77d771c0ebf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 2700
     }
   },
   {
@@ -86225,13 +86235,18 @@
     "battery": {},
     "summaryEn": "Hisense HS2100.",
     "sources": [
-      "https://vlv.am/en/Product/33175"
+      "https://vlv.am/en/Product/33175",
+      "https://www.cherrypicksreviews.com/sound-bars/hisense"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 2200
     }
   },
   {
@@ -86291,13 +86306,18 @@
     "battery": {},
     "summaryEn": "Hisense HS5100.",
     "sources": [
-      "https://vlv.am/en/Product/33177"
+      "https://vlv.am/en/Product/33177",
+      "https://device.report/hisense/hs5100"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 1590
     }
   },
   {
@@ -86850,13 +86870,17 @@
     "battery": {},
     "summaryEn": "Sony MHC-V13.",
     "sources": [
-      "https://vlv.am/en/Product/15683"
+      "https://vlv.am/en/Product/15683",
+      "https://www.sony.co.in/electronics/hi-fi-systems/mhc-v13/specifications"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 8100
     }
   },
   {
@@ -87395,13 +87419,17 @@
     "battery": {},
     "summaryEn": "Hisense Party Rocker One.",
     "sources": [
-      "https://vlv.am/en/Product/33333"
+      "https://vlv.am/en/Product/33333",
+      "https://uk.hisense.com/products/audio/portable-speakers/LOUDSPEAKER-PARTY-ROCKER-ONE-HSN/p/000000000020011156"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 9500
     }
   },
   {
@@ -87664,13 +87692,17 @@
     "battery": {},
     "summaryEn": "JBL Bar 500 MK2.",
     "sources": [
-      "https://vlv.am/en/Product/39917"
+      "https://vlv.am/en/Product/39917",
+      "https://global.jbl.com/soundbars/BAR-500MK2.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 2900
     }
   },
   {
@@ -88688,13 +88720,17 @@
     "battery": {},
     "summaryEn": "Panasonic SC-BMAX5.",
     "sources": [
-      "https://vlv.am/en/Product/38726"
+      "https://vlv.am/en/Product/38726",
+      "https://help.na.panasonic.com/answers/features-and-specifications-home-audio-sc-bmax10e-ww-sc-bmax5e-ww/"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 6500
     }
   },
   {
@@ -88721,13 +88757,17 @@
     "battery": {},
     "summaryEn": "Panasonic SC-BMAX10.",
     "sources": [
-      "https://vlv.am/en/Product/38725"
+      "https://vlv.am/en/Product/38725",
+      "https://help.na.panasonic.com/answers/features-and-specifications-home-audio-sc-bmax10e-ww-sc-bmax5e-ww/"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 9300
     }
   },
   {
@@ -88754,13 +88794,17 @@
     "battery": {},
     "summaryEn": "Panasonic SC-TMAX15.",
     "sources": [
-      "https://vlv.am/en/Product/38724"
+      "https://vlv.am/en/Product/38724",
+      "https://www.panasonic.com/ae/consumer/home-entertainment/audio/mini-systems/sc-tmax15.specs.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 9000
     }
   },
   {
@@ -88787,13 +88831,17 @@
     "battery": {},
     "summaryEn": "Panasonic SC-TMAX45.",
     "sources": [
-      "https://vlv.am/en/Product/38723"
+      "https://vlv.am/en/Product/38723",
+      "https://www.panasonic.com/ae/consumer/home-entertainment/audio/mini-systems/sc-tmax45.html"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 12000
     }
   },
   {
@@ -88924,13 +88972,17 @@
     "battery": {},
     "summaryEn": "Samsung HW-B650F.",
     "sources": [
-      "https://vlv.am/en/Product/47862"
+      "https://vlv.am/en/Product/47862",
+      "https://www.samsung.com/levant/audio-devices/soundbar/b650f-black-hw-b650f-zn/"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 2200
     }
   },
   {
@@ -89309,13 +89361,18 @@
     "battery": {},
     "summaryEn": "Samsung Sound Tower MX-ST50B.",
     "sources": [
-      "https://vlv.am/en/Product/37347"
+      "https://vlv.am/en/Product/37347",
+      "https://www.theaureview.com/technology/tech-review-the-samsung-mx-st50b-sound-tower/"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 11900
     }
   },
   {
@@ -89342,13 +89399,17 @@
     "battery": {},
     "summaryEn": "Samsung Sound Tower MX-ST90B.",
     "sources": [
-      "https://vlv.am/en/Product/37348"
+      "https://vlv.am/en/Product/37348",
+      "https://www.shi.com/product/44604685/Samsung-Sound-Tower-MX-ST90B"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 24500
     }
   },
   {
