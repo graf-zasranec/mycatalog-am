@@ -60151,7 +60151,13 @@
     ],
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 2150
+    },
+    "sources": [
+      "https://www.bhphotovideo.com/c/product/1433104-REG/bose_795345_1100_home_speaker_500_wireless.html"
+    ]
   },
   {
     "id": "marshall-heston-sub-200",
@@ -60460,7 +60466,13 @@
     ],
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 4432
+    },
+    "sources": [
+      "https://www.harmankardon.com/home-audio/HK+SOUNDSTICKS+4.html"
+    ]
   },
   {
     "id": "harman-kardon-soundsticks-5",
@@ -60761,7 +60773,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 4700
+    },
+    "sources": [
+      "https://www.harmankardon.com/bluetooth-speakers/GO-PLAY-3.html"
+    ]
   },
   {
     "id": "google-home-speaker-with-gemini",
@@ -60798,7 +60816,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 396
+    },
+    "sources": [
+      "https://store.google.com/gb/product/google_home_speaker_specs?hl=en-GB"
+    ]
   },
   {
     "id": "jbl-soundbar-sb550",
@@ -60832,7 +60856,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 2500
+    },
+    "sources": [
+      "https://www.jbl.com/SB550.html"
+    ]
   },
   {
     "id": "jbl-pulse-5",
@@ -70584,7 +70614,13 @@
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    }
+    },
+    "body": {
+      "weight": 3300
+    },
+    "sources": [
+      "https://yandex.ru/alice/support/station/meet/characteristics-duo-max.html"
+    ]
   },
   {
     "id": "harman-kardon-citation-sub",
@@ -80556,7 +80592,8 @@
     },
     "summaryEn": "Yandex Station Mini 3.",
     "sources": [
-      "https://miarmenia.am/en/product/601/yandex-smart-speaker-mini-3"
+      "https://miarmenia.am/en/product/601/yandex-smart-speaker-mini-3",
+      "https://doctorhead.ru/blog/obzor-yandeks-stantsii-mini-3-kak-zvuchit-chem-otlichaetsya-i-stoit-li-obnovlyatsya_abc/"
     ],
     "unsure": [
       "popularity"
@@ -80565,7 +80602,10 @@
       "Green",
       "Gray",
       "Purple"
-    ]
+    ],
+    "body": {
+      "weight": 326
+    }
   },
   {
     "id": "yandex-station-midi",
@@ -82282,13 +82322,17 @@
     "battery": {},
     "summaryEn": "JBL SoundBar 1300.",
     "sources": [
-      "https://likemobile.am/en/jbl-soundbar-1300"
+      "https://likemobile.am/en/jbl-soundbar-1300",
+      "https://in.jbl.com/BarSeries/BAR-1300.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0 (detachable surrounds 5.2)"
+    },
+    "body": {
+      "weight": 4300
     }
   },
   {
@@ -82315,13 +82359,17 @@
     "battery": {},
     "summaryEn": "JBL SoundBar 1000.",
     "sources": [
-      "https://likemobile.am/en/jbl-soundbar-1000"
+      "https://likemobile.am/en/jbl-soundbar-1000",
+      "https://www.jbl.com/soundbars/BAR-1000-.html"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 3700
     }
   },
   {
@@ -82480,13 +82528,17 @@
     "battery": {},
     "summaryEn": "JBL PartyBox Encore.",
     "sources": [
-      "https://likemobile.am/en/jbl-partybox-encore"
+      "https://likemobile.am/en/jbl-partybox-encore",
+      "https://in.jbl.com/PARTYBOX-ENCORE-.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.1"
+    },
+    "body": {
+      "weight": 6300
     }
   },
   {
@@ -87656,13 +87708,18 @@
     "battery": {},
     "summaryEn": "JBL Bar 1000 Pro.",
     "sources": [
-      "https://vlv.am/en/Product/25034"
+      "https://vlv.am/en/Product/25034",
+      "https://global.jbl.com/soundbars/BAR-1000-.html"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "specNA": {
       "connectivity.bluetooth": "JBL does not state it; retailers disagree (5.0 vs 5.3) (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 3700
     }
   },
   {
@@ -87932,13 +87989,17 @@
     "battery": {},
     "summaryEn": "JBL SoundBar SB580.",
     "sources": [
-      "https://vlv.am/en/Product/37951"
+      "https://vlv.am/en/Product/37951",
+      "https://www.jbl.com/soundbars/SB580.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 2600
     }
   },
   {
@@ -88939,13 +89000,18 @@
     "battery": {},
     "summaryEn": "Samsung HW-B650D.",
     "sources": [
-      "https://vlv.am/en/Product/37344"
+      "https://vlv.am/en/Product/37344",
+      "https://images.samsung.com/is/content/samsung/assets/au/audio-devices/soundbar-product-specs/B650-product-specs.pdf"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 3100
     }
   },
   {
@@ -89009,13 +89075,18 @@
     "battery": {},
     "summaryEn": "Samsung HW-B750F.",
     "sources": [
-      "https://vlv.am/en/Product/47863"
+      "https://vlv.am/en/Product/47863",
+      "https://e-catalog.com/cmp/179443/hw-b750f-vs-hw-b650/"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 3200
     }
   },
   {
@@ -89190,13 +89261,18 @@
     "battery": {},
     "summaryEn": "Samsung HW-A450.",
     "sources": [
-      "https://vlv.am/en/Product/17931"
+      "https://vlv.am/en/Product/17931",
+      "https://e-catalog.com/SAMSUNG-HW-A450.htm"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 1500
     }
   },
   {
