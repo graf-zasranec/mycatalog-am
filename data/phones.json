@@ -16637,7 +16637,8 @@
     "battery": {},
     "summaryEn": "Garmin Instinct 3, 50mm,Solar.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "colors": [],
     "variantUnit": "mm",
@@ -16645,7 +16646,13 @@
     "year": 2025,
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "body": {
+      "weight": 58
+    },
+    "sources": [
+      "https://versus.com/en/garmin-fenix-8-solar-vs-garmin-instinct-3-solar-50mm"
+    ]
   },
   {
     "id": "garmin-venu-3-with-leather",
@@ -60407,7 +60414,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 4200
+    },
+    "sources": [
+      "https://uk.harmanaudio.com/AURA-STUDIO-5.html"
+    ]
   },
   {
     "id": "harman-kardon-soundsticks-4",
@@ -60587,7 +60600,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 1300
+    },
+    "sources": [
+      "https://www.techradar.com/audio/wireless-bluetooth-speakers/marshall-stockwell-iii-review"
+    ]
   },
   {
     "id": "sony-srs-xp500",
@@ -60655,7 +60674,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 2650
+    },
+    "sources": [
+      "https://www.marshall.com/us/en/product/acton-iv?pid=1009789"
+    ]
   },
   {
     "id": "beats-pill",
@@ -66565,12 +66590,17 @@
     "chipset": {
       "name": "Unisoc T7250"
     },
-    "body": {},
+    "body": {
+      "weight": 193
+    },
     "camera": {
       "modules": 1,
       "main": "13 MP",
       "front": "8 MP"
-    }
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-a7/specs/"
+    ]
   },
   {
     "id": "huawei-matebook-fold-ultimate-18",
@@ -70394,7 +70424,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 1200
+    },
+    "sources": [
+      "https://www.sony-asia.com/electronics/support/speakers-wireless-speakers/srs-ult30/specifications"
+    ]
   },
   {
     "id": "harman-kardon-citation-one-mk3",
@@ -70421,7 +70457,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black",
@@ -70429,7 +70466,13 @@
     ],
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 2000
+    },
+    "sources": [
+      "https://www.ldlc.com/en/product/PB00570369.html"
+    ]
   },
   {
     "id": "harman-kardon-citation-200",
@@ -81208,11 +81251,15 @@
     "summaryEn": "Xiaomi Redmi Watch 6 Lite.",
     "sources": [
       "https://miarmenia.am/en/product/666/redmi-watch-6-lite",
-      "https://www.mi.com/au/product/redmi-watch-6-lite/specs/"
+      "https://www.mi.com/au/product/redmi-watch-6-lite/specs/",
+      "https://www.mi.com/global/product/redmi-watch-6-lite/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 27.8
+    }
   },
   {
     "id": "xiaomi-redmi-watch-6-active",
@@ -81284,11 +81331,15 @@
     },
     "summaryEn": "Xiaomi Smart Band 11 Active.",
     "sources": [
-      "https://miarmenia.am/en/product/668/xiaomi-smart-band-11-active"
+      "https://miarmenia.am/en/product/668/xiaomi-smart-band-11-active",
+      "https://www.gizguide.com/2026/09/xiaomi-smart-band-11-active-redmi-watch-6-lite-ph-price.html"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 18
+    }
   },
   {
     "id": "xiaomi-redmi-pad-2-9-7",
@@ -82853,10 +82904,13 @@
       "size": 2.4,
       "resolution": "240x320"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1450
+    },
     "summaryEn": "Nokia 150 (2023).",
     "sources": [
-      "https://likemobile.am/en/nokia-150-2023-black"
+      "https://likemobile.am/en/nokia-150-2023-black",
+      "https://www.gizmochina.com/product/nokia-150-2023/"
     ],
     "unsure": [
       "popularity"
@@ -82866,6 +82920,9 @@
     },
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 106.3
     }
   },
   {
@@ -86336,13 +86393,17 @@
       "size": 1.8,
       "resolution": "120x160"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1450
+    },
     "summaryEn": "Nokia 105 4G.",
     "sources": [
-      "https://vlv.am/en/Product/48133"
+      "https://vlv.am/en/Product/48133",
+      "https://www.mysmartprix.com/mobile/nokia-150-2023-msp23768"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.capacity"
     ],
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
@@ -86680,13 +86741,17 @@
     "battery": {},
     "summaryEn": "Sony HT-S40R.",
     "sources": [
-      "https://vlv.am/en/Product/18354"
+      "https://vlv.am/en/Product/18354",
+      "https://www.sony-mea.com/en/electronics/support/sound-bars-home-theater-systems-sound-bars/ht-s40r/specifications"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 2000
     }
   },
   {
@@ -86713,13 +86778,17 @@
     "battery": {},
     "summaryEn": "Sony HT-S60.",
     "sources": [
-      "https://vlv.am/en/Product/41525"
+      "https://vlv.am/en/Product/41525",
+      "https://www.sony-asia.com/electronics/support/sound-bars-home-theater-systems-sound-bars-surround-speakers/ht-s60/specifications"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 2600
     }
   },
   {
@@ -87285,16 +87354,21 @@
     },
     "summaryEn": "Hisense H50 Lite.",
     "sources": [
-      "https://vlv.am/en/Product/17954"
+      "https://vlv.am/en/Product/17954",
+      "https://www.devicespecifications.com/en/model/d14d573e"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Unisoc T610"
     },
     "camera": {
       "main": "48 MP (Sony IMX586)"
+    },
+    "body": {
+      "weight": 225
     }
   },
   {
@@ -87626,13 +87700,17 @@
     "battery": {},
     "summaryEn": "JBL Bar 800 MK2.",
     "sources": [
-      "https://vlv.am/en/Product/39918"
+      "https://vlv.am/en/Product/39918",
+      "https://jblstore.com.ph/products/jbl-bar-800mk2"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 5000
     }
   },
   {
@@ -88569,16 +88647,21 @@
     },
     "summaryEn": "Nokia 3310 Dual SIM.",
     "sources": [
-      "https://vlv.am/en/Product/31014"
+      "https://vlv.am/en/Product/31014",
+      "https://www.gsmarena.com/nokia_3310_(2017)-8605.php"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "camera": {
       "main": "2 MP, LED flash"
     },
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 79.6
     }
   },
   {
@@ -88944,13 +89027,17 @@
     "battery": {},
     "summaryEn": "Samsung HW-Q800H.",
     "sources": [
-      "https://vlv.am/en/Product/47864"
+      "https://vlv.am/en/Product/47864",
+      "https://www.samsung.com/in/audio-devices/soundbar/q800h-black-hw-q800h-xl/"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 5100
     }
   },
   {
@@ -88977,13 +89064,17 @@
     "battery": {},
     "summaryEn": "Samsung HW-Q930H.",
     "sources": [
-      "https://vlv.am/en/Product/47866"
+      "https://vlv.am/en/Product/47866",
+      "https://www.samsung.com/uk/audio-devices/soundbar/q930h-black-hw-q930h-xu/"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 5300
     }
   },
   {
@@ -89350,13 +89441,17 @@
     "battery": {},
     "summaryEn": "Sony HT-S350.",
     "sources": [
-      "https://vlv.am/en/Product/12384"
+      "https://vlv.am/en/Product/12384",
+      "https://www.sony-asia.com/electronics/support/sound-bars-home-theater-systems-sound-bars-surround-speakers/ht-s350/specifications"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 2400
     }
   },
   {
