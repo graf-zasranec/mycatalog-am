@@ -58237,6 +58237,12 @@
     ],
     "colors": [
       "Gray"
+    ],
+    "body": {
+      "weight": 31.1
+    },
+    "sources": [
+      "https://m.gsmarena.com/nothing_cmf_watch_pro-14219.php"
     ]
   },
   {
@@ -63755,7 +63761,13 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 263
+    },
+    "sources": [
+      "https://www.mi.com/global/product/redmi-headphones-neo/specs/"
+    ]
   },
   {
     "id": "oneplus-buds-pro",
@@ -64178,7 +64190,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [],
     "audio": {
@@ -64188,7 +64201,13 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
-    }
+    },
+    "body": {
+      "weight": 150
+    },
+    "sources": [
+      "https://shop.teqex.co.uk/microsoft-modern-usb-c-headset-wired-head-band-office-call-center-usb-type-c-black-i6s-00010.html"
+    ]
   },
   {
     "id": "jbl-reflect-contour-2",
@@ -86705,7 +86724,8 @@
     "summaryEn": "Nokia 105 4G.",
     "sources": [
       "https://vlv.am/en/Product/48133",
-      "https://www.mysmartprix.com/mobile/nokia-150-2023-msp23768"
+      "https://www.mysmartprix.com/mobile/nokia-150-2023-msp23768",
+      "https://www.hmd.com/en_int/nokia-105-4g/specs"
     ],
     "unsure": [
       "popularity",
@@ -86714,6 +86734,9 @@
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
       "camera.main": "no camera (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 93
     }
   },
   {
@@ -98698,13 +98721,18 @@
     },
     "summaryEn": "Beats Studio Wireless.",
     "sources": [
-      "https://mobilecentre.am/product/headphone-beats-studio-wireless-_red_/23439/"
+      "https://mobilecentre.am/product/headphone-beats-studio-wireless-_red_/23439/",
+      "https://www.productindetail.com/cs/comparison-beats-studio-wireless-vs-sennheiser-hd-2-30g"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 260
     }
   },
   {
