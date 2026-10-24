@@ -43,7 +43,8 @@ const KINDS = [
   [/\bEarbuds\b|\bBuds\b|\bAirPods\b/i, 'headphones'],
   // "Tracker" and "traker" both appear, in the same export, for the same device
   [/(Smart ?)?fitness trac?k?er|\bSmart ?watch\b|\bWatch\b|ժամացույց|часы/i, 'watch'],
-  [/\bStyler\b|Airwrap|hair ?dry|Supersonic|փոշեկուլ|пылесос/i, 'appliance'],
+  [/\bStyler\b|Airwrap|hair ?dry|Supersonic/i, 'haircare'],
+  [/փոշեկուլ|пылесос/i, 'vacuum'],
   [/\bSmartphone\b|Սմարթֆոն|Սմարթ ?հեռախոս|смартфон/i, 'phone'],
 ];
 // A shop's own section is a better witness than a word that is not there: a row scraped off
@@ -87,7 +88,11 @@ const FAMILY = [
   [/\bHomePod\b|\bSoundLink\b|\bBeosound\b|\bPartyBox\b|\bBoombox\b|\bCharge \d\b|\bFlip \d\b|\bClip \d\b|\bXtreme \d\b|\bGo \d\b|\bStanmore\b|\bWoburn\b|\bActon\b|\bEmberton\b|\bUxbridge\b|\bMiddleton\b|\bWillen\b|\bKilburn\b|\bOnyx Studio\b|\bSonos\b|\bYandex ?Station\b|\bSound Pocket\b/i, 'speaker'],
   [/\bForerunner\b|\bFenix\b|\bVenu\b|\bInstinct\b|\bVivoactive\b|\bCIRQA\b|\bSmart Band\b|\bMi Band\b|\bGalaxy Watch\b|\bApple Watch\b|\bWatch (SE|Ultra|Series)\b|\bWhoop\b|\bFitbit\b/i, 'watch'],
   [/\bKindle\b|\bPaperwhite\b|\bPocketBook\b|\breMarkable\b/i, 'ereader'],
-  [/\bAirwrap\b|\bSupersonic\b|\bAirStrait\b|\bAirStarit\b|\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir ?Purifier\b|\bVacuum\b|\bRobot Vacuum\b|\bAir Fryer\b|\bGarment Steamer\b|\bEspresso Machine\b|\bSmart Scale\b/i, 'appliance'],
+  [/\bAirwrap\b|\bSupersonic\b|\bAirStrait\b|\bAirStarit\b/i, 'haircare'],
+  [/\bVacuum\b/i, 'vacuum'],
+  [/\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir Fryer\b/i, 'kitchen'],
+  [/\bEspresso Machine\b|\bCoffee Machine\b/i, 'coffee'],
+  [/\bAir ?Purifier\b|\bGarment Steamer\b|\bSmart Scale\b/i, 'appliance'],
   [/\bRouter\b|\bHotspot\b|\bSR\d{4}-5G\b/i, 'network'],
   [/\bGeForce\b|\bRadeon RX\b|\bRTX \d{4}\b|\bArc A\d{3}\b/i, 'component'],
   // a phone family is the last thing asked, because "Redmi" and "Galaxy" also name tablets,
