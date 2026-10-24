@@ -1066,6 +1066,7 @@ const cnt = extra => { const s = { ...st, ...extra }; let n = 0; for (const p of
 // one - the comparison used to show "undefined × undefined × undefined mm" for 296 products.
 const specVal = (get, p) => {
   let v; try { v = get(p); } catch (e) { return null; }
+  if (v === true || v === false) return t(v ? 'common.yes' : 'common.no');   // a bare yes/no, e.g. Bluetooth on five Galaxy Tabs
   return v == null || v === '' || /undefined|null|NaN/.test(String(v)) ? null : v;
 };
 // Legacy importers filled phone-shaped fields for every category. Applicability is

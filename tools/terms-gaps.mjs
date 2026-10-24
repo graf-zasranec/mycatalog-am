@@ -39,7 +39,14 @@ const NAMES = new Set(`apple google samsung qualcomm snapdragon mediatek helio d
  intel nvidia geforce rtx gtx amd ryzen radeon arc uhd iris xe windows macos watchos chrome dos qled qned neo nanocell hdmi vga
  displayport thunderbolt gigabit ethernet gps corning armor oryon phoenix alice wva atm zen rdna pdaf microsd wear ppi fps ois
  mali immortalis xbox playstation huawei xiaomi celeron athlon pixelsense truedepth wuxga wqxga fhd qhd uhd sip kindle ink
- nothing sonos jbl bose dualsense imagination c-series mil-std everest sawtooth`.split(/\s+/).filter(Boolean));
+ nothing sonos jbl bose dualsense imagination c-series mil-std everest sawtooth
+ tws vidaa tizen webos garmin ipx usb-c cortex a x g c home wayfarer watch galaxy transitions anc headliner meta hstn iphone mmwave
+ link khz cmos sony prizm dlp paperwhite audible homepod tandem prores raw log genlock mimo extreme actua boost cxtp harmonyos alexa
+ assistant armorshell light hunter fluid poco dragon crystal series citation sapphire skyler fury starfire kylie edition premium airplay
+ lightning sequoia pixel drop playtime flow mohs turbo earc portal pssr aux imx trichroma tvos chromeos qvga panda nappa ray-ban
+ amethyst ruby water aac mbps sim graphics core for wear oneui
+ mil std sub always full mesh dual pd video wireless xbox
+ os on cellular grade rf`.split(/\s+/).filter(Boolean));
 
 const gaps = new Map();
 for (const p of P) for (const [, defs] of app.GROUPS) for (const [k, get] of defs) {
@@ -47,10 +54,11 @@ for (const p of P) for (const [, defs] of app.GROUPS) for (const [k, get] of def
   if (v == null) continue;
   for (const lang of ['hy', 'ru']) {
     // product names that contain an ordinary word: Intel Core i7, Intel Arc Graphics, Center Stage
-    const out = app.tr(String(v), lang).replace(/\b(Intel )?Core (Ultra|i\d)\b|\b(Arc|UHD|Iris Xe|Radeon|Adreno|Iris)( \w+)? Graphics\b|\bCenter Stage\b|\bShield Glass\b|\bGorilla Glass\b/gi, ' ');
+    const out = app.tr(String(v), lang).replace(/\b(Intel )?Core (Ultra|i\d)\b|\b(Arc|UHD|Iris Xe|Radeon|Adreno|Iris)( \w+)? Graphics\b|\bCenter Stage\b|\bShield Glass\b|\bGorilla Glass\b|\bCrystal Glass\b|\bPrizm( [A-Z][a-z]+){1,2}\b/gi, ' ');
     for (const w of out.match(/[A-Za-z][A-Za-z-]{2,}/g) || []) {
       const lw = w.toLowerCase();
-      if (NAMES.has(lw) || lw.split('-').every(x => NAMES.has(x) || /^\d/.test(x))) continue;
+      // a hyphen can carry an Armenian or Russian ending ("SIM-ով", "ANC-ом"): the empty part is not a word
+      if (NAMES.has(lw) || lw.split('-').filter(Boolean).every(x => NAMES.has(x) || /^\d/.test(x))) continue;
       const g = gaps.get(lw) || { n: 0, ex: `${p.id} ${k}: "${String(v).slice(0, 60)}"` };
       g.n++; gaps.set(lw, g);
     }
