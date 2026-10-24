@@ -52905,7 +52905,10 @@
       "Blue",
       "Green",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "xiaomi-redmi-note-15-pro",
@@ -56278,7 +56281,10 @@
       "Black",
       "White"
     ],
-    "specSource": "pixel.am product page, 2026-10-03"
+    "specSource": "pixel.am product page, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "6.0"
+    }
   },
   {
     "id": "nothing-cmf-phone-1",
@@ -56344,7 +56350,10 @@
       "Orange",
       "Black"
     ],
-    "specSource": "pixel.am product page, 2026-10-03"
+    "specSource": "pixel.am product page, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "nothing-phone-2a",
@@ -56402,7 +56411,10 @@
       "White",
       "Black"
     ],
-    "specSource": "pixel.am product page, 2026-10-03"
+    "specSource": "pixel.am product page, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "nothing-phone-3a",
@@ -56467,7 +56479,10 @@
       "White",
       "Black"
     ],
-    "specSource": "pixel.am product page, 2026-10-03"
+    "specSource": "pixel.am product page, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "nothing-phone-1",
@@ -56531,7 +56546,10 @@
     "colors": [
       "Black"
     ],
-    "specSource": "gsmarena.com, 2026-10-03"
+    "specSource": "gsmarena.com, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "google-pixel-6a",
@@ -58436,7 +58454,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-155H"
-    }
+    },
+    "body": {
+      "weight": 1320
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_9_2_in_1_14IMH9/Yoga_9_2_in_1_14IMH9_Spec.pdf"
+    ]
   },
   {
     "id": "dell-pro-14-pc14250",
@@ -64939,9 +64963,14 @@
     "chipset": {
       "name": "Intel Core i7-13645HX"
     },
-    "body": {},
+    "body": {
+      "weight": 2400
+    },
     "colors": [
       "Grey"
+    ],
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15IRX10/LOQ_15IRX10_Spec.pdf"
     ]
   },
   {
@@ -65935,7 +65964,12 @@
     "chipset": {
       "name": "AMD Ryzen 5 7640S"
     },
-    "body": {}
+    "body": {
+      "weight": 1280
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Slim_7_14APU8/Yoga_Slim_7_14APU8_Spec.pdf"
+    ]
   },
   {
     "id": "apple-macbook-pro-16-m3-pro",
@@ -66450,7 +66484,9 @@
     "chipset": {
       "name": "Intel Core i7-1355U"
     },
-    "body": {}
+    "body": {
+      "weight": 1880
+    }
   },
   {
     "id": "acer-aspire-lite-15-6-fhd-core-i5",
@@ -66522,7 +66558,12 @@
     "chipset": {
       "name": "Intel Core i5-13420H"
     },
-    "body": {}
+    "body": {
+      "weight": 1610
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Lenovo/Lenovo_V15_G5_IRL/Lenovo_V15_G5_IRL_Spec.pdf"
+    ]
   },
   {
     "id": "hp-15-6-ryzen-5-7320u-fhd",
@@ -68149,6 +68190,9 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 5 150"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -68188,8 +68232,12 @@
     "sources": [
       "https://ultra.md/tehnica-computer/laptopuri/lenovo-ideapad-slim-3-15arp10-153-60-hz-16-gb-512-gb-amd-ryzen-7-170-fara-so-luna-grey",
       "https://darwin.md/laptop-lenovo-ideapad-slim-3-15arp10-ryzen-7-170-16-gb-512-gb-vga-integrata-gray.html",
-      "https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/ideapad-s-series-netbooks/lenovo-ideapad-slim-3-15arp10/83k7/83k700hrrk/documentation"
-    ]
+      "https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/ideapad-s-series-netbooks/lenovo-ideapad-slim-3-15arp10/83k7/83k700hrrk/documentation",
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15ARP10/IdeaPad_Slim_3_15ARP10_Spec.pdf"
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "hp-250r-g10-15-6-core-5-120u-d7km3at",
@@ -68261,7 +68309,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
-    }
+    },
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-16-i5-13420h-83k2000wrk",
@@ -68297,7 +68351,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
-    }
+    },
+    "body": {
+      "weight": 1680
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IRH10/IdeaPad_Slim_3_16IRH10_Spec.pdf"
+    ]
   },
   {
     "id": "hp-omnibook-3-17-3-core-3-100u-dr9v7ea",
@@ -68369,7 +68429,13 @@
     ],
     "chipset": {
       "name": "Intel Core 5 210H"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15-3-i7-13620h-83k10032rk",
@@ -68403,7 +68469,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
-    }
+    },
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_Spec.pdf"
+    ]
   },
   {
     "id": "hp-omnibook-5-16-ultra-5-225u-bg7h7ea",
@@ -68583,7 +68655,13 @@
     ],
     "chipset": {
       "name": "Intel Core 7 150U"
-    }
+    },
+    "body": {
+      "weight": 2000
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_16IRU9/IdeaPad_5_2_in_1_16IRU9_Spec.pdf"
+    ]
   },
   {
     "id": "hp-omnibook-5-16-ultra-7-255u-bg7h9ea",
@@ -68691,7 +68769,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 5"
-    }
+    },
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "samsung-galaxy-book5-pro-14-touch-ultra-7-series-2-w11h-np940xha-kg1us",
@@ -68761,7 +68845,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7"
-    }
+    },
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "dell-i7-13650hx-16-1-4060-j1v94-g5530-7957gry-pus",
@@ -68831,7 +68921,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 5"
-    }
+    },
+    "body": {
+      "weight": 1630
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T16_Gen_5_Intel/ThinkPad_T16_Gen_5_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "asus-zep-16-i7-13620h-4060-w11-gu603vv",
@@ -68901,7 +68997,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7"
-    }
+    },
+    "body": {
+      "weight": 1630
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T16_Gen_5_Intel/ThinkPad_T16_Gen_5_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "hp-spectre-x360-16-ultra-7-155h-16-1-4050-w11h-a23wkea",
@@ -68973,7 +69075,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 258V"
-    }
+    },
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X9_15_Gen_1/ThinkPad_X9_15_Gen_1_Spec.pdf"
+    ]
   },
   {
     "id": "xiaomi-a27i-2026",
@@ -72563,7 +72671,10 @@
       "name": "Intel Iris Xe Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-go-e1504fa-ws51-ryzen-5",
@@ -72601,7 +72712,10 @@
       "name": "AMD Radeon Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1630
+    }
   },
   {
     "id": "asus-vivobook-m1605ya-mb011-amd-ryzen-5-7530u",
@@ -72640,7 +72754,10 @@
       "name": "AMD Radeon Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1880
+    }
   },
   {
     "id": "asus-vivobook-s14-s5406sa-qd086w-oled-core-ultra",
@@ -72680,7 +72797,10 @@
       "name": "Intel Arc Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1300
+    }
   },
   {
     "id": "asus-vivobook-s16-m3607ha-sh096-ryzen-5",
@@ -72718,7 +72838,10 @@
       "name": "AMD Radeon Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-s16-m3607ha-sh097-ryzen-7-260",
@@ -72756,7 +72879,10 @@
       "name": "AMD Radeon Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1504va-bq4172-i5-120u",
@@ -72794,7 +72920,10 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-x1504va-bq4173-i7-150u",
@@ -72832,7 +72961,10 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-zenbook-duo-ux8406ma-ds76t-ultra-7-155h-oled",
@@ -74199,7 +74331,10 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-core-i7-x1404va-i712512",
@@ -74495,7 +74630,8 @@
     "battery": {},
     "summaryEn": "Lenovo SLIM 3 15AMN8.",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-slim-3-15amn8/"
+      "https://appzone.am/en/Assortment/lenovo-slim-3-15amn8/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15AMN8/IdeaPad_Slim_3_15AMN8_Spec.pdf"
     ],
     "unsure": [
       "popularity"
@@ -74507,6 +74643,9 @@
     "os": "Windows 11",
     "specNA": {
       "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with Ryzen 3 7320U or Ryzen 5 7520U (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 1620
     }
   },
   {
@@ -74551,6 +74690,9 @@
     "graphics": {
       "name": "INTEGRATED",
       "type": "integrated"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -74711,7 +74853,8 @@
     "battery": {},
     "summaryEn": "Lenovo THINKPAD X1 CARBON GEN12 TP00150A.",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen12-tp00150a/"
+      "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen12-tp00150a/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_Gen_12/ThinkPad_X1_Carbon_Gen_12_Spec.pdf"
     ],
     "unsure": [
       "popularity"
@@ -74723,6 +74866,9 @@
     "specNA": {
       "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2.8K OLED (checked 2026-10-23)",
       "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with several Core Ultra chips (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 1080
     }
   },
   {
@@ -74808,6 +74954,9 @@
     "os": "Windows 11",
     "chipset": {
       "name": "AMD Ryzen 7 260"
+    },
+    "body": {
+      "weight": 2600
     }
   },
   {
@@ -74833,7 +74982,8 @@
     "battery": {},
     "summaryEn": "Lenovo V15 G3.",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-v15-g3/"
+      "https://appzone.am/en/Assortment/lenovo-v15-g3/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/Lenovo/Lenovo_V15_G3_IAP/Lenovo_V15_G3_IAP_Spec.pdf"
     ],
     "unsure": [
       "popularity",
@@ -74851,6 +75001,9 @@
     },
     "chipset": {
       "name": "Intel Core i3-1215U"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -74920,7 +75073,8 @@
     "battery": {},
     "summaryEn": "Lenovo LOQ 15AHP11 (83TN000ERK).",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-loq-15ahp11-83tn000erk/"
+      "https://appzone.am/en/Assortment/lenovo-loq-15ahp11-83tn000erk/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15AHP11/LOQ_15AHP11_Spec.pdf"
     ],
     "unsure": [
       "popularity",
@@ -74939,6 +75093,9 @@
     "graphics": {
       "name": "GeForce RTX 5050 8GB",
       "type": "discrete"
+    },
+    "body": {
+      "weight": 2100
     }
   },
   {
@@ -75091,7 +75248,8 @@
     "battery": {},
     "summaryEn": "Lenovo LOQ 15AHP10.",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-loq-15ahp10/"
+      "https://appzone.am/en/Assortment/lenovo-loq-15ahp10/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15AHP10/LOQ_15AHP10_Spec.pdf"
     ],
     "unsure": [
       "popularity",
@@ -75109,6 +75267,9 @@
     },
     "chipset": {
       "name": "AMD Ryzen 5 220"
+    },
+    "body": {
+      "weight": 2400
     }
   },
   {
@@ -75574,7 +75735,10 @@
       "name": "INTEGRATED",
       "type": "integrated"
     },
-    "os": "ChromeOS"
+    "os": "ChromeOS",
+    "body": {
+      "weight": 1440
+    }
   },
   {
     "id": "hp-probook-455-g8-45n89es-16",
@@ -75637,7 +75801,8 @@
     "battery": {},
     "summaryEn": "Lenovo THINKBOOK 14 G9.",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-thinkbook-14-g9/"
+      "https://appzone.am/en/Assortment/lenovo-thinkbook-14-g9/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G9_IRL/ThinkBook_14_G9_IRL_Spec.pdf"
     ],
     "unsure": [
       "popularity"
@@ -75650,7 +75815,10 @@
       "resolution": "1920x1200",
       "touch": true
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1360
+    }
   },
   {
     "id": "hp-17-cp2025dx",
@@ -76284,7 +76452,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1600
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_14IAL10/IdeaPad_5_2_in_1_14IAL10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-14irh9-i5-13420h",
@@ -76324,7 +76498,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1600
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_14IRH9/IdeaPad_5_2_in_1_14IRH9_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-pro-14iap7-i5-1240p",
@@ -76364,7 +76544,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 2050 4GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 1420
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_Pro_14IAP7/IdeaPad_5_Pro_14IAP7_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-gaming-3-16arh7-amd-ryzen-r5-6600h",
@@ -76404,7 +76590,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 3050 Ti 4GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 2500
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16ARH7/IdeaPad_Gaming_3_16ARH7_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-gaming-3-16iah7-i5-12450h",
@@ -76444,7 +76636,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 3050 Ti 4GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 2600
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16IAH7/IdeaPad_Gaming_3_16IAH7_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15iph11-ultra-7",
@@ -76484,7 +76682,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IPH11/IdeaPad_Slim_3_15IPH11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15irh10-i7-13620h",
@@ -76531,7 +76735,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-5-8640hs",
@@ -76572,7 +76782,13 @@
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1680
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16AHP10/IdeaPad_Slim_3_16AHP10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-7-8840hs",
@@ -76612,7 +76828,13 @@
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1680
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16AHP10/IdeaPad_Slim_3_16AHP10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-16iph11-ultra-5-322",
@@ -76657,7 +76879,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1680
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IPH11/IdeaPad_Slim_3_16IPH11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-17iwc11-i5-320",
@@ -76702,7 +76930,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 2030
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_17IWC11/IdeaPad_Slim_3_17IWC11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-5-16agp11-ryzen-ai-5",
@@ -76742,7 +76976,13 @@
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1850
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16AGP11/IdeaPad_Slim_5_16AGP11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-5-16ahp11-ryzen-5",
@@ -76782,7 +77022,13 @@
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1810
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16AHP11/IdeaPad_Slim_5_16AHP11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-5-16iph11-ultra-5",
@@ -76822,7 +77068,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1850
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16IPH11/IdeaPad_Slim_5_16IPH11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-5-15ahp10-ryzen-7-260",
@@ -76858,7 +77110,13 @@
     ],
     "chipset": {
       "name": "AMD Ryzen 7 260"
-    }
+    },
+    "body": {
+      "weight": 2100
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP10/Legion_5_15AHP10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-5-15ahp11-ryzen-7",
@@ -76898,7 +77156,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 5050 8GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 1870
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP11/Legion_5_15AHP11_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-5-15akp10-ryzen-ai-7",
@@ -76938,7 +77202,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 5050 8GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 2000
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AKP10/Legion_5_15AKP10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-5-15irx10-i7-14700hx",
@@ -76973,7 +77243,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-14700HX"
-    }
+    },
+    "body": {
+      "weight": 2100
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15IRX10/Legion_5_15IRX10_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-5-16irx9-core-i5",
@@ -77008,7 +77284,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-13450HX"
-    }
+    },
+    "body": {
+      "weight": 2360
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_16IRX9/Legion_5_16IRX9_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-5-16irx9-i5-13450hx",
@@ -77048,7 +77330,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 4050 6GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 2360
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_16IRX9/Legion_5_16IRX9_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-legion-go-2",
@@ -77129,7 +77417,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1360
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G8_IRL/ThinkBook_14_G8_IRL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkbook-14-g9-irl-i5-210h",
@@ -77166,7 +77460,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1360
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G9_IRL/ThinkBook_14_G9_IRL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-5-135h",
@@ -77206,7 +77506,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-7-255h",
@@ -77246,7 +77552,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-9-185h",
@@ -77293,7 +77605,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkbook-16-g9-ipl-ultra-7",
@@ -77333,7 +77651,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G9_IPL/ThinkBook_16_G9_IPL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkbook-16-g9-irl-i7-240h",
@@ -77373,7 +77697,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G9_IRL/ThinkBook_16_G9_IRL_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e14-gen-7-ultra-5-225u",
@@ -77413,7 +77743,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1320
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E14_Gen_7_Intel/ThinkPad_E14_Gen_7_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-g4-ultra-7",
@@ -77453,7 +77789,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-i5-210h",
@@ -77491,7 +77833,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-ultra-5-225u",
@@ -77531,7 +77879,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-ultra-7-255h",
@@ -77571,7 +77925,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-ultra-7-258v",
@@ -77611,7 +77971,13 @@
     "graphics": {
       "name": "Intel Arc Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-i5-1335u",
@@ -77651,7 +78017,13 @@
     "graphics": {
       "name": "Intel Iris Xe Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_1_Intel/ThinkPad_E16_Gen_1_Intel_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-yoga-27iah10-ultra-9-285h",
@@ -77770,7 +78142,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 3050 6GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 1490
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-yoga-pro-7-14ahp9-ryzen-7",
@@ -77809,7 +78187,13 @@
     "graphics": {
       "name": "AMD Radeon Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1490
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_Spec.pdf"
+    ]
   },
   {
     "id": "lenovo-yoga-slim-7-14ill10-ultra-5-226v",
@@ -77849,7 +78233,13 @@
     "graphics": {
       "name": "Intel Arc Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1190
+    },
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Slim_7_14ILL10/Yoga_Slim_7_14ILL10_Spec.pdf"
+    ]
   },
   {
     "id": "xiaomi-vacuum-cleaner-p30",
@@ -84626,7 +85016,10 @@
       "https://www.phonearena.com/news/the-new-iphone-duo-is-here_id183191",
       "https://www.apple.com/shop/buy-iphone/iphone-duo"
     ],
-    "unsure": []
+    "unsure": [],
+    "battery": {
+      "capacity": 4883
+    }
   },
   {
     "id": "hisense-100u7q-pro",
@@ -86880,11 +87273,15 @@
     },
     "summaryEn": "Lenovo 16 G8 IRL (21SH008LRT).",
     "sources": [
-      "https://vlv.am/en/Product/43785"
+      "https://vlv.am/en/Product/43785",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IRL/ThinkBook_16_G8_IRL_Spec.pdf"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "lenovo-d27-40",
@@ -87104,11 +87501,15 @@
     },
     "summaryEn": "Lenovo V15 G5 IRL (83GW00GRFW).",
     "sources": [
-      "https://vlv.am/en/Product/43789"
+      "https://vlv.am/en/Product/43789",
+      "https://psref.lenovo.com/syspool/Sys/PDF/Lenovo/Lenovo_V15_G5_IRL/Lenovo_V15_G5_IRL_Spec.pdf"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1610
+    }
   },
   {
     "id": "lenovo-yoga-slim-7-14iml9-83dj0095ru",
