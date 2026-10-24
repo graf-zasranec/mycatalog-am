@@ -62,3 +62,6 @@ assert.equal(specOfferAllowed({title:'Honor MagicBook Pro 16 Ultra 5-125H 24/1 P
 const honorOffers={[honorID]:[wrongHonor]};attachOfferConfigs([{id:honorID,category:'laptop'}],honorOffers);
 assert.equal(honorOffers[honorID].length,0,'build-time gate cannot reinstate mismatched Honor configuration');
 console.log('FINAL_REVIEW_REGRESSIONS_PASS: bare processors and fixed-CPU Honor identity');
+
+const actualHolds=JSON.parse(fs.readFileSync('data/price-review-holds.json'));
+for(const lang of ['am','en','ru']) assert.equal(specOfferAllowed({title:'Samsung Galaxy A16 5G',url:`https://shop.ucom.am/${lang}/samsung-galaxy-a16.html`},actualHolds,'samsung-galaxy-a16'),false,'verified G99/LTE page cannot return through a carried 5G title');

@@ -3128,5 +3128,21 @@
     "source": "https://www.hmd.com/en_int/nokia-150-2023/specs",
     "checked": "2026-10-24",
     "verified": "Exact2023 manufacturer page confirms published body dimensions/weight,1450mAh,IP52,polycarbonate back,2G,MiniSIM,MicroUSB and audio jack,S30+,microSD. RAM/storage deliberately remain unknown because manufacturer does not publish them."
+  },
+  {
+    "id": "samsung-galaxy-a16",
+    "field": "chipset",
+    "value": {
+      "name": "Samsung Exynos 1330 / MediaTek Dimensity 6300"
+    },
+    "source": "https://www.pixel.am/product/samsung-galaxy-a16",
+    "verified": "Pixel confirms Dimensity 6300. Family also has Exynos 1330; exact regional CPU remains source-specific, and unverified process/core/GPU precision is removed. Pixel offers carry their own verified chipset."
+  },
+  {
+    "id": "xiaomi-redmi-a5",
+    "field": "battery.wired",
+    "value": 15,
+    "source": "https://www.mi.com/global/product/redmi-a5/specs/",
+    "verified": "Manufacturer specifies 15W charging, not the previously carried 18W."
   }
 ]

@@ -140,5 +140,17 @@
         }
       }
     }
+  ],
+  "samsung-galaxy-a16": [
+    {
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-a16",
+      "source": "https://www.pixel.am/product/samsung-galaxy-a16",
+      "verified": "2026-10-24: primary page explicitly lists Dimensity 6300 and GSM/HSPA/LTE/5G. Applies only to this exact merchant page, including its locale variants.",
+      "specs": {
+        "chipset": {
+          "name": "MediaTek Dimensity 6300"
+        }
+      }
+    }
   ]
 }

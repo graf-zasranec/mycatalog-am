@@ -60,9 +60,12 @@ export function attachOfferConfigs(products, offers) {
   }
   const verifiedFile = 'data/config-specs.json';
   const verified = fs.existsSync(verifiedFile) ? JSON.parse(fs.readFileSync(verifiedFile, 'utf8')) : {};
+  const pageKey = url => String(url || '').replace(/\/+$/, '').replace(/^(https?:\/\/[^/]+)\/(?:am|en|ru)\//, '$1/');
   for (const p of products) for (const o of offers[p.id] || []) {
-    const facts = verified[p.id]?.find(row => row.size == null || row.size === o.size);
+    const facts = verified[p.id]?.find(row => (row.size == null || row.size === o.size)
+      && (!row.url || pageKey(row.url) === pageKey(o.url)));
     if (facts) {
+      if (facts.url && facts.specs?.chipset?.name) o.cpu = facts.specs.chipset.name;
       const previous = o.configSpecs || {};
       o.configSpecs = { ...previous };
       for (const [block, values] of Object.entries(facts.specs || {})) o.configSpecs[block] = { ...previous[block], ...values };

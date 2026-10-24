@@ -37002,10 +37002,7 @@
       "protection": "Corning Gorilla Glass Victus"
     },
     "chipset": {
-      "name": "Samsung Exynos 1330",
-      "process": "5 nm",
-      "cpu": "Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
-      "gpu": "Mali-G68 MP2"
+      "name": "Samsung Exynos 1330 / MediaTek Dimensity 6300"
     },
     "variants": [
       {
@@ -37062,7 +37059,8 @@
     ],
     "summaryEn": "A budget Samsung with an AMOLED 90Hz screen, 5G and an unusually long six-year update commitment.",
     "unsure": [
-      "variants"
+      "variants",
+      "chipset"
     ],
     "category": "phone",
     "aliases": [],
@@ -51469,7 +51467,7 @@
     },
     "battery": {
       "capacity": 5200,
-      "wired": 18
+      "wired": 15
     },
     "summaryEn": "Xiaomi Redmi A5.",
     "unsure": [

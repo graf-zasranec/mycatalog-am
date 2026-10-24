@@ -4,24 +4,24 @@
     "url": "https://allsell.am/en/asus-vivobook-core-i7-12gb-i-512gb-x1404va-i712512",
     "sourceRow": "allsell,Asus VivoBook Core i7 12GB/512GB X1404VA-I712512,512,,https://allsell.am/en/asus-vivobook-core-i7-12gb-i-512gb-x1404va-i712512,339000,12,,,",
     "reason": "Title: 12GB RAM. Specification table: 16GB RAM. Exact configuration remains unconfirmed.",
-    "checked": "2026-10-23"
+    "checked": "2026-10-24"
   },
   {
     "id": "hp-omnibook-x-flip-16-ar0033dx",
     "url": "https://allsell.am/en/hp-omnibook-x-flipngai-16-touchscreen-ryzen-ai-7-350-24gb-i1tb",
-    "checked": "2026-10-23",
+    "checked": "2026-10-24",
     "reason": "Title: 24GB RAM. Specification table: 16GB RAM. Exact configuration remains unconfirmed."
   },
   {
     "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
     "url": "https://allsell.am/en/acer-aspire-lite-al15-36p-32xp-i3-n350-8gb-i-128gb-nx-de2aa-001",
-    "checked": "2026-10-23",
+    "checked": "2026-10-24",
     "reason": "Title: Core i3-1305U. Specification table: Core i3-N350. Exact configuration remains unconfirmed."
   },
   {
     "id": "acer-nitro-5-an515-58-77z2-gaming-i7-12700h-plus-rtx3060",
     "url": "https://allsell.am/en/acer-nitro-5-an515-58-77z2-16gb-i-1tb",
-    "checked": "2026-10-23",
+    "checked": "2026-10-24",
     "reason": "Title: 1TB + 512GB SSD. Specification table: 1TB SSD. Exact configuration remains unconfirmed."
   },
   {
@@ -38,5 +38,11 @@
     "url": "https://www.zigzag.am/am/honor-magicbook-pro-16-ultra-9-285h-32gb-1tb-rtx5060-w11h-white-5301apwk.html",
     "checked": "2026-10-24",
     "reason": "Exact merchant title identifies Core Ultra 9-285H /5301APWK, incompatible with fixed Core Ultra 5-125H /5301AJJG. Not a memory variant of this product."
+  },
+  {
+    "id": "samsung-galaxy-a16",
+    "url": "https://shop.ucom.am/am/samsung-galaxy-a16.html",
+    "checked": "2026-10-24",
+    "reason": "Fresh primary page names Helio G99 and explicitly 5G: No. Both selectable 8/256GB children (13845,13849) expose only merchant inventory SKUs, with no A166/5G identity. Excluded from A16 5G until exact hardware is verified."
   }
 ]

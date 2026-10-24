@@ -21,3 +21,11 @@ assert.equal(watchOffers.fixed[0].caseSize,49,'retain the physical case measurem
 assert.equal(watchOffers.fixed[1].storage,64,'real 64GB flash must stay unchanged');
 assert.equal(watchOffers.cases[0].storage,46,'existing mm families retain their case selector');
 console.log('WATCH_CASE_UNITS_PASS: fixed case, real flash and selectable cases stay distinct');
+
+const a16='samsung-galaxy-a16',pixel='https://www.pixel.am/am/product/samsung-galaxy-a16';
+const regional={[a16]:[{url:pixel,shop:'pixel',ram:4,storage:128},{url:pixel.replace('/am/','/en/'),shop:'pixel',ram:8,storage:256},{url:'https://another-shop.am/a16',ram:4,storage:128}]};
+attachOfferConfigs([{id:a16,category:'phone'}],regional);
+assert.equal(regional[a16][0].cpu,'MediaTek Dimensity 6300','Pixel primary chipset stays attached to its offer');
+assert.equal(regional[a16][1].configSpecs.chipset.name,'MediaTek Dimensity 6300','locale variants refer to the same verified page');
+assert.equal(regional[a16][2].cpu,undefined,'another retailer cannot inherit Pixel regional chipset');
+console.log('REGIONAL_CHIPSET_PASS: exact source only, across source locales');
