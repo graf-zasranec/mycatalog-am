@@ -58494,7 +58494,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-265U"
-    }
+    },
+    "body": {
+      "weight": 1360
+    },
+    "sources": [
+      "https://www.notebookcheck-cn.com/Dell-Pro-14-PC14250.1173633.0.html"
+    ]
   },
   {
     "id": "apple-macbook-air-13-m2",
@@ -64884,9 +64890,14 @@
     "chipset": {
       "name": "Intel Core 5-210H"
     },
-    "body": {},
+    "body": {
+      "weight": 1700
+    },
     "colors": [
       "Gray"
+    ],
+    "sources": [
+      "https://www.notebookcheck.net/Asus-Vivobook-S16-S3607VA.1090608.0.html"
     ]
   },
   {
@@ -64924,9 +64935,14 @@
     "chipset": {
       "name": "Intel Core 5-210H"
     },
-    "body": {},
+    "body": {
+      "weight": 1400
+    },
     "colors": [
       "Gray"
+    ],
+    "sources": [
+      "https://online.challenger.sg/products/asus-vb-s3407ca-sf143w-u7-255h-16gb-1tb-14"
     ]
   },
   {
@@ -65007,9 +65023,14 @@
     "chipset": {
       "name": "Intel Core Ultra 7-258V"
     },
-    "body": {},
+    "body": {
+      "weight": 1880
+    },
     "colors": [
       "Silver"
+    ],
+    "sources": [
+      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
     ]
   },
   {
@@ -65046,9 +65067,14 @@
     "chipset": {
       "name": "Intel Core Ultra 7-256V"
     },
-    "body": {},
+    "body": {
+      "weight": 1380
+    },
     "colors": [
       "Silver"
+    ],
+    "sources": [
+      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
     ]
   },
   {
@@ -65087,9 +65113,14 @@
     "chipset": {
       "name": "Intel Core Ultra 7-256V"
     },
-    "body": {},
+    "body": {
+      "weight": 1880
+    },
     "colors": [
       "Silver"
+    ],
+    "sources": [
+      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
     ]
   },
   {
@@ -65613,12 +65644,18 @@
     "summaryEn": "HP Pavilion 16\" R7-8840U /B2CV4EA.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "AMD Ryzen 7 8840U"
     },
-    "body": {}
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-Pavilion-16-af0075ng.984162.0.html"
+    ]
   },
   {
     "id": "hp-pavilion-16-ultra-5-125u-b2cv3ea",
@@ -65654,7 +65691,12 @@
     "chipset": {
       "name": "Intel Core Ultra 5-125U"
     },
-    "body": {}
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-Pavilion-16-af0075ng.984162.0.html"
+    ]
   },
   {
     "id": "honor-magicbook-x-16-pro-i5-13420h-w11h-5301ahqv",
@@ -65691,9 +65733,14 @@
     "chipset": {
       "name": "Intel Core i5-13420H"
     },
-    "body": {},
+    "body": {
+      "weight": 1750
+    },
     "colors": [
       "Silver"
+    ],
+    "sources": [
+      "https://m.gsmarena.com/honor_unveils_magicbook_x_14_pro_and_x_16_pro_in_india-news-61971.php"
     ]
   },
   {
@@ -65731,7 +65778,12 @@
     "chipset": {
       "name": "Intel Core i5-13420H"
     },
-    "body": {}
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://m.gsmarena.com/honor_unveils_magicbook_x_14_pro_and_x_16_pro_in_india-news-61971.php"
+    ]
   },
   {
     "id": "apple-macbook-air-13-m3",
@@ -66408,12 +66460,18 @@
     "summaryEn": "Acer Nitro Lite.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
     },
-    "body": {}
+    "body": {
+      "weight": 1950
+    },
+    "sources": [
+      "https://www.notebookcheck.net/Acer-Nitro-V16-AI-ANV16-61.1076931.0.html"
+    ]
   },
   {
     "id": "dell-15-6-core-i7-1355u-fhd-touch-display",
@@ -66593,12 +66651,18 @@
     "summaryEn": "HP 15.6'' Ryzen 5-7320U FHD.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "AMD Ryzen 5 7320U"
     },
-    "body": {}
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
+    ]
   },
   {
     "id": "hp-15-6-core-i5-1334u-full-hd",
@@ -66630,12 +66694,18 @@
     "summaryEn": "HP 15.6'' Core i5-1334U Full HD.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i5-1334U"
     },
-    "body": {}
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
+    ]
   },
   {
     "id": "asus-14-fhd-x1404va-i5-1334u",
@@ -66701,12 +66771,18 @@
     "summaryEn": "HP 15.6'' Ryzen 3-7320U Full HD.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "AMD Ryzen 3 7320U"
     },
-    "body": {}
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
+    ]
   },
   {
     "id": "asus-15-6-hd-intel-n4500-e510k",
@@ -68147,14 +68223,21 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core 3 100U"
     },
     "specNA": {
       "display.resolution": "HP SKU D05WSEA not found in any spec sheet (checked 2026-10-23)"
-    }
+    },
+    "body": {
+      "weight": 1590
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
+    ]
   },
   {
     "id": "asus-vivobook-15-6-r5-silver-m1502naq-bq255",
@@ -68393,7 +68476,13 @@
     ],
     "chipset": {
       "name": "Intel Core 3 100U"
-    }
+    },
+    "body": {
+      "weight": 2010
+    },
+    "sources": [
+      "https://kelaptop.com/de/hp-omnibook-3-17-dk0003ns-d44c1ea"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-g3-16-core-5-210h-21tf004rfw",
@@ -68511,7 +68600,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 5 225U"
-    }
+    },
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://www.paradigit.ie/hp-omnibook-5-16-ba1564nd/80069069/product"
+    ]
   },
   {
     "id": "samsung-galaxy-book4-15-6-core-7-150u-w11-np750xgk-ks2us",
@@ -68547,7 +68642,13 @@
     ],
     "chipset": {
       "name": "Intel Core 7 150U"
-    }
+    },
+    "body": {
+      "weight": 1550
+    },
+    "sources": [
+      "https://smartprix.com/laptops/samsung-galaxy-book-4-np750xgk-ks2in-laptop-ppd15ob5rtps"
+    ]
   },
   {
     "id": "samsung-galaxy-book3-15-6-fhd-i7-1355u-slv-np750xfg-kb2us",
@@ -68612,14 +68713,21 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core 5 220H"
     },
     "specNA": {
       "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2560x1600 (checked 2026-10-23)"
-    }
+    },
+    "body": {
+      "weight": 1790
+    },
+    "sources": [
+      "https://www.notebookcheck.net/Honor-MagicBook-X16-Plus-2024.892027.0.html"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-16-oled-i7-150u-83du003wrk",
@@ -68697,7 +68805,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 255U"
-    }
+    },
+    "body": {
+      "weight": 1770
+    },
+    "sources": [
+      "https://www.paradigit.ie/hp-omnibook-5-16-ba1564nd/80069069/product"
+    ]
   },
   {
     "id": "lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1",
@@ -68885,7 +68999,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-13650HX"
-    }
+    },
+    "body": {
+      "weight": 2650
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-g15-5530-2023-vs-dell-inspiron-16-plus-7630"
+    ]
   },
   {
     "id": "lenovo-thinkpad-t16-gen-5-16-ultra-5-21wt0059fw",
@@ -68961,7 +69081,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
-    }
+    },
+    "body": {
+      "weight": 2000
+    },
+    "sources": [
+      "https://www.notebookcheck.net/Asus-ROG-Zephyrus-G16-GU603VV.713853.0.html"
+    ]
   },
   {
     "id": "lenovo-thinkpad-t16-gen-5-16-ultra-7-21wt005cfw",
@@ -72192,7 +72318,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1800
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/acer-aspire-go-15-ag15-71-vs-hp-probook-4-g1a-14"
+    ]
   },
   {
     "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
@@ -72274,7 +72406,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1500
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1849767"
+    ]
   },
   {
     "id": "acer-aspire-vero-av16-51p-7063-ultra",
@@ -72352,7 +72490,13 @@
       "name": "Nvidia Geforce RTX 3060 6GB",
       "type": "discrete"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 2500
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/Acer-Nitro-5-AN515-58-vs-Acer-Nitro-5-AN517-41"
+    ]
   },
   {
     "id": "acer-nitro-v-16-anv16-72-73vj-core-7-240h",
@@ -72395,7 +72539,13 @@
       "name": "Nvidia Geforce RTX 5060 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 2400
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1820495"
+    ]
   },
   {
     "id": "acer-nitro-v16-anv16-72-933f-i9-270h-rtx5070",
@@ -72433,7 +72583,13 @@
       "name": "Nvidia Geforce RTX 5070 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2400
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1820495"
+    ]
   },
   {
     "id": "acer-predator-helios-neo-14-phn14-51-99nm-ultra-9-185h",
@@ -72471,7 +72627,13 @@
       "name": "Nvidia Geforce RTX 4070 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1900
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1621716"
+    ]
   },
   {
     "id": "acer-predator-helios-neo-16s-ai",
@@ -72500,7 +72662,8 @@
     "battery": {},
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-275HX, 16 GB RAM and 1024 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-275HX"
@@ -72509,7 +72672,13 @@
       "name": "Nvidia Geforce RTX 5060 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2200
+    },
+    "sources": [
+      "https://www.notebookcheck.net/Acer-Predator-Helios-Neo-16S-AI-PHN16S-I51-Reviews-and-Specs.1336363.0.html"
+    ]
   },
   {
     "id": "acer-swift-16-ai-sf16-51t-76tg",
@@ -72548,7 +72717,13 @@
     "graphics": {
       "name": "Intel Arc Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1500
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1669060"
+    ]
   },
   {
     "id": "apple-macbook-pro-16-inch-m5-max-mgee4",
@@ -73034,7 +73209,8 @@
     "battery": {},
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 9-185H, 16 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-185H"
@@ -73043,7 +73219,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1900
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-inspiron-16-plus-7640-vs-dell-inspiron-15-3535"
+    ]
   },
   {
     "id": "dell-latitude-3540-i5-1335u",
@@ -73081,7 +73263,13 @@
       "name": "Intel Iris Xe Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1810
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-latitude-3540-vs-dell-latitude-7650"
+    ]
   },
   {
     "id": "dell-latitude-5450-ultra-5-125u",
@@ -73121,7 +73309,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://laptopmedia.com/sg/laptop-specs/dell-latitude-5450-5/specs/"
+    ]
   },
   {
     "id": "dell-latitude-5450-ultra-7-165h",
@@ -73161,7 +73355,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://laptopmedia.com/sg/laptop-specs/dell-latitude-5450-5/specs/"
+    ]
   },
   {
     "id": "dell-latitude-5550-ultra",
@@ -73201,7 +73401,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://www.shi.com/product/48079102/Dell-Latitude-5550-(Version-2024)"
+    ]
   },
   {
     "id": "dell-latitude-7455-copilotplus-snapdragon-x-plus-x1p-64",
@@ -73240,7 +73446,13 @@
       "name": "Qualcomm Adreno",
       "type": "integrated"
     },
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1440
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-latitude-7455-vs-dell-latitude-7650"
+    ]
   },
   {
     "id": "dell-latitude-7650-ultra",
@@ -73279,7 +73491,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1830
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-latitude-7455-vs-dell-latitude-7650"
+    ]
   },
   {
     "id": "dell-vostro-3530-i5-1334u",
@@ -73356,7 +73574,13 @@
       "name": "Intel Arc Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1180
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-xps-13-9350-2024-vs-dell-xps-15-9530-2023"
+    ]
   },
   {
     "id": "dell-xps-16-da16250-drgg5-ultra-7-255h",
@@ -73394,7 +73618,13 @@
       "name": "Nvidia Geforce RTX 5050 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2060
+    },
+    "sources": [
+      "https://www.dell.com/en-us/shop/dell-laptops/xps-16-laptop/spd/dell-da16250-laptop"
+    ]
   },
   {
     "id": "dell-xps-9340-u7-155h",
@@ -73756,7 +73986,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1640
+    },
+    "sources": [
+      "https://technave.com/gadget/HP-OmniBook-3-16-inch-Next-Gen-AI-Intel-Price-in-Malaysia-Spec-46164.html"
+    ]
   },
   {
     "id": "hp-omnibook-5-14-fp0024ci",
@@ -73798,7 +74034,13 @@
     "colors": [
       "Blue"
     ],
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-OmniBook-5-Flip-14-fp0000.1095995.0.html"
+    ]
   },
   {
     "id": "hp-omnibook-5-ai-16-cn0004ci",
@@ -73886,7 +74128,13 @@
     "colors": [
       "Blue"
     ],
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-OmniBook-5-Flip-14-fp0000.1095995.0.html"
+    ]
   },
   {
     "id": "hp-omnibook-5-flip-14-fp0020ci",
@@ -73928,7 +74176,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-OmniBook-5-Flip-14-fp0000.1095995.0.html"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-2-in-1-14-fm0015ci-ultra-7-258v",
@@ -73970,7 +74224,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1380
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-2-in-1-14-fm0019ci-ultra-5-226v",
@@ -74012,7 +74272,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1380
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
+    ]
   },
   {
     "id": "hp-probook-4-g1a-ryzen-5",
@@ -74733,7 +74999,8 @@
     "battery": {},
     "summaryEn": "Dell Pro 16 PC16250.",
     "sources": [
-      "https://appzone.am/en/Assortment/dell-pro-16-pc16250-512gb/"
+      "https://appzone.am/en/Assortment/dell-pro-16-pc16250-512gb/",
+      "https://www.shi.com/product/50592833/Dell-Pro-16-PC16250-AI-PC"
     ],
     "unsure": [
       "popularity",
@@ -74752,6 +75019,9 @@
     "graphics": {
       "name": "INTEGRATED",
       "type": "integrated"
+    },
+    "body": {
+      "weight": 1920
     }
   },
   {
@@ -74777,7 +75047,8 @@
     "battery": {},
     "summaryEn": "HP 15-fc0074nia (D01QYEA).",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-15-fc0074nia-d01qyea/"
+      "https://appzone.am/en/Assortment/hp-15-fc0074nia-d01qyea/",
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
     ],
     "unsure": [
       "popularity",
@@ -74791,6 +75062,9 @@
     "os": "Windows 11",
     "chipset": {
       "name": "AMD Ryzen 7 7730U"
+    },
+    "body": {
+      "weight": 1590
     }
   },
   {
@@ -74894,12 +75168,14 @@
     "battery": {},
     "summaryEn": "HP 15 with Intel Core 5-120U, 8GB RAM and 512GB SSD.",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-15/"
+      "https://appzone.am/en/Assortment/hp-laptop-15/",
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
     ],
     "unsure": [
       "popularity",
       "chipset",
-      "graphics"
+      "graphics",
+      "body.weight"
     ],
     "display": {
       "size": 15.6,
@@ -74915,7 +75191,10 @@
     },
     "colors": [
       "Silver"
-    ]
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "asus-vivobook-m1807ha-db79",
@@ -75121,7 +75400,8 @@
     "battery": {},
     "summaryEn": "MSI KATANA 15HX B14WGK.",
     "sources": [
-      "https://appzone.am/en/Assortment/katana-15hx-b14wgk/"
+      "https://appzone.am/en/Assortment/katana-15hx-b14wgk/",
+      "https://www.notebookcheck.net/MSI-Katana-15-HX-B14WGK-i7-14650HX.1243320.0.html"
     ],
     "unsure": [
       "popularity",
@@ -75140,6 +75420,9 @@
     "graphics": {
       "name": "RTX 5070 8GB",
       "type": "discrete"
+    },
+    "body": {
+      "weight": 2400
     }
   },
   {
@@ -75638,10 +75921,12 @@
     "battery": {},
     "summaryEn": "HP 15-fd0558nia (BL8P8EA).",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-15-fd0558nia-bl8p8ea/"
+      "https://appzone.am/en/Assortment/hp-15-fd0558nia-bl8p8ea/",
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i7-1355U"
@@ -75651,7 +75936,10 @@
       "type": "IPS",
       "resolution": "1920x1080"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "hp-zbook-firefly-16-g11",
@@ -75843,7 +76131,8 @@
     "battery": {},
     "summaryEn": "HP 17-CP2025DX.",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-17-cp2025dx/"
+      "https://appzone.am/en/Assortment/hp-laptop-17-cp2025dx/",
+      "https://laptopmedia.com/?p=1255262"
     ],
     "unsure": [
       "popularity"
@@ -75860,7 +76149,10 @@
       "name": "INTEGRATED",
       "type": "integrated"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2070
+    }
   },
   {
     "id": "dell-inspiron-16-plus-7640-intel-core-ultra-9-185h",
@@ -75885,10 +76177,12 @@
     "battery": {},
     "summaryEn": "Dell Inspiron 16 Plus 7640.",
     "sources": [
-      "https://appzone.am/en/Assortment/dell-inspiron-16-plus-7640/"
+      "https://appzone.am/en/Assortment/dell-inspiron-16-plus-7640/",
+      "https://laptopdecision.com/compare/dell-inspiron-16-plus-7640-vs-dell-inspiron-15-3535"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-185H"
@@ -75897,7 +76191,10 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1900
+    }
   },
   {
     "id": "hp-15-fc0303ci",
@@ -75922,7 +76219,8 @@
     "battery": {},
     "summaryEn": "HP 15-FC0303CI.",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-15-fc0303ci/"
+      "https://appzone.am/en/Assortment/hp-laptop-15-fc0303ci/",
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
     ],
     "unsure": [
       "popularity"
@@ -75939,7 +76237,10 @@
       "name": "INTEGRATED",
       "type": "integrated"
     },
-    "os": "Windows 11 PRO"
+    "os": "Windows 11 PRO",
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "acer-nitro-v15-anv15-52-74sd",
@@ -75964,7 +76265,8 @@
     "battery": {},
     "summaryEn": "Acer Nitro V15 ANV15-52-74SD.",
     "sources": [
-      "https://appzone.am/en/Assortment/acer-nitro-v15-anv15-52-74sd/"
+      "https://appzone.am/en/Assortment/acer-nitro-v15-anv15-52-74sd/",
+      "https://www.notebookcheck.net/Acer-Nitro-V15-ANV15-52.1097051.0.html"
     ],
     "unsure": [
       "popularity"
@@ -75982,7 +76284,10 @@
       "name": "GeForce RTX5060 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2100
+    }
   },
   {
     "id": "hp-probook-455-g8-45n87es",
@@ -76045,7 +76350,8 @@
     "battery": {},
     "summaryEn": "HP 17-cn4071cl (B9LQ4UA).",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-17-cn4071cl-b9lq4ua/"
+      "https://appzone.am/en/Assortment/hp-laptop-17-cn4071cl-b9lq4ua/",
+      "https://www.sparepartworld.com/hp/notebook/17-serie/17-cn4000/"
     ],
     "unsure": [
       "popularity"
@@ -76058,7 +76364,10 @@
       "type": "IPS",
       "resolution": "1920x1080"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2080
+    }
   },
   {
     "id": "acer-nitro-v16s-ai-anv16s-41-r3q0",
@@ -76083,10 +76392,12 @@
     "battery": {},
     "summaryEn": "Acer Nitro V16S AI ANV16S-41-R3Q0.",
     "sources": [
-      "https://appzone.am/en/Assortment/acer-nitro-v16s-ai-anv16s-41-r3q0/"
+      "https://appzone.am/en/Assortment/acer-nitro-v16s-ai-anv16s-41-r3q0/",
+      "https://www.notebookcheck.net/Acer-Nitro-V16-AI-ANV16-61.1076931.0.html"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "AMD Ryzen 7 260"
@@ -76101,7 +76412,10 @@
       "name": "GeForce RTX5070 8GB",
       "type": "discrete"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 2100
+    }
   },
   {
     "id": "hp-probook-450-g9-i5-1235u",
@@ -76339,7 +76653,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
-    }
+    },
+    "body": {
+      "weight": 2290
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-Victus-15-fa2000ng.1186034.0.html"
+    ]
   },
   {
     "id": "hp-victus-15-fa2120nia-i7-240h",
@@ -76376,7 +76696,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 5050 8GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 2290
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-Victus-15-fa2000ng.1186034.0.html"
+    ]
   },
   {
     "id": "jbl-headphones-live-300tws",
@@ -78460,6 +78786,12 @@
     },
     "colors": [
       "Silver"
+    ],
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop-compare/hp-omnibook-5-16-2026-vs-hp-omnibook-5-14-2026"
     ]
   },
   {
@@ -78538,7 +78870,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-OmniBook-5-Flip-14-fp0000.1095995.0.html"
+    ]
   },
   {
     "id": "hp-omen-16-an011-ultra-9-285h",
@@ -78682,7 +79020,13 @@
     },
     "specNA": {
       "chipset.name": "Listed only as \"Ryzen 5\"; exact chip not published (checked 2026-10-23)"
-    }
+    },
+    "body": {
+      "weight": 1640
+    },
+    "sources": [
+      "https://technave.com/gadget/HP-OmniBook-3-16-inch-Laptop-16-Price-in-Malaysia-Spec-46163.html"
+    ]
   },
   {
     "id": "hp-omnibook-5-16-cd0070-ultra-7-355",
@@ -78721,7 +79065,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop-compare/hp-omnibook-5-16-2026-vs-hp-omnibook-5-14-2026"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-16-ar0033dx",
@@ -78760,7 +79110,13 @@
     "graphics": {
       "name": "AMD Radeon 860M",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1880
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
+    ]
   },
   {
     "id": "hp-victus-15-fa2115nia-rtx-5060",
@@ -78790,7 +79146,8 @@
     "battery": {},
     "summaryEn": "HP Victus 15.6\" FHD i7-Geforce RTX 5060 I.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
@@ -78798,7 +79155,13 @@
     "graphics": {
       "name": "Nvidia Geforce RTX 5060 8GB",
       "type": "discrete"
-    }
+    },
+    "body": {
+      "weight": 2290
+    },
+    "sources": [
+      "https://www.notebookcheck.net/HP-Victus-15-fa2000ng.1186034.0.html"
+    ]
   },
   {
     "id": "apple-macbook-pro-16-m1-pro-mk183",
@@ -78958,11 +79321,16 @@
     "os": "Windows 11",
     "summaryEn": "HP 17 Ryzen 5 7430U with AMD Ryzen 5 7430U.",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-17/"
+      "https://appzone.am/en/Assortment/hp-laptop-17/",
+      "https://laptopmedia.com/?p=1255262"
     ],
     "unsure": [
-      "popularity"
-    ]
+      "popularity",
+      "body.weight"
+    ],
+    "body": {
+      "weight": 2070
+    }
   },
   {
     "id": "hp-pavilion-15-eg3040ci",
@@ -86514,11 +86882,16 @@
     },
     "summaryEn": "HP AI 15-fd2001ci (BM0Q5EA).",
     "sources": [
-      "https://vlv.am/en/Product/45620"
+      "https://vlv.am/en/Product/45620",
+      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
     ],
     "unsure": [
-      "popularity"
-    ]
+      "popularity",
+      "body.weight"
+    ],
+    "body": {
+      "weight": 1590
+    }
   },
   {
     "id": "hp-omnibook-3-16-bu0045ci-dr9v4ea",
@@ -86550,11 +86923,15 @@
     },
     "summaryEn": "HP OmniBook 3 16-bu0045ci (DR9V4EA).",
     "sources": [
-      "https://vlv.am/en/Product/48352"
+      "https://vlv.am/en/Product/48352",
+      "https://technave.com/gadget/HP-OmniBook-3-16-inch-Next-Gen-AI-Intel-Price-in-Malaysia-Spec-46164.html"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1640
+    }
   },
   {
     "id": "hp-omnibook-3-17-dk0004ci-dr9v6ea",
@@ -86586,11 +86963,15 @@
     },
     "summaryEn": "HP OmniBook 3 17-dk0004ci (DR9V6EA).",
     "sources": [
-      "https://vlv.am/en/Product/48809"
+      "https://vlv.am/en/Product/48809",
+      "https://kelaptop.com/de/hp-omnibook-3-17-dk0003ns-d44c1ea"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2010
+    }
   },
   {
     "id": "jbl-bar-1000-mk2",
@@ -98400,7 +98781,8 @@
     "os": "Windows 11",
     "summaryEn": "A 16-inch 240 Hz gaming laptop with AMD Ryzen AI 7 350 and Nvidia GeForce RTX 5070 8GB.",
     "sources": [
-      "https://appzone.am/en/Assortment/omen-max-16-ak004/"
+      "https://appzone.am/en/Assortment/omen-max-16-ak004/",
+      "https://www.notebookcheck.net/HP-Omen-Max-16-ak0000.1188764.0.html"
     ],
     "unsure": [
       "popularity"
@@ -98413,6 +98795,9 @@
         "storage": 1024,
         "priceAmd": 679000
       }
-    ]
+    ],
+    "body": {
+      "weight": 2660
+    }
   }
 ]
