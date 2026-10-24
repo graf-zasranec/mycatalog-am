@@ -34,13 +34,16 @@ function modelIdentityAllowed(id, offer) {
     return !/(?:lite|light|лайт)[\s_-]*2\b|yndx[\s_-]*00026/i.test(identity);
   if (id === 'samsung-galaxy-a16')
     return !/\b(?:sm[\s_-]*)?a165[a-z0-9]*\b|\ba16\b[^\n]{0,20}\b(?:lte|4g)\b/i.test(identity);
-  if (id !== 'hp-15-intel-core-5-120u') return true;
+  const hp = id === 'hp-15-intel-core-5-120u';
+  const honor = id === 'honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg';
+  if (!hp && !honor) return true;
   const fields = [offer.title, offer.cpu, offer.configSpecs?.chipset?.name]
     .map(v => String(v || '').toLowerCase().replace(/[\u2010-\u2015\u2212]/g, '-'));
-  const expected = /\b(?:intel\s+)?core\s*5[\s-]*120u\b/g;
-  if (!fields.some(v => /\bcore\s*5[\s-]*120u\b/.test(v))) return false;
+  const expected = hp ? /\b(?:intel\s+)?core\s*5[\s-]*120u\b/g
+    : /\b(?:intel\s+)?(?:core\s*)?ultra\s*5[\s-]*125h\b/g;
+  if (!fields.some(v => new RegExp(expected.source).test(v))) return false;
   // Any explicit competing processor defeats another positive source field.
-  const competing = /\b(?:core\s*(?:i[3579]|ultra|[3579])|i[3579][\s-]*(?:[a-z][\s-]*)?\d|ryzen|celeron|pentium|athlon|snapdragon|intel\s+(?:n\d|processor)|apple\s+m[1-9])/;
+  const competing = /\b(?:core\s*(?:i[3579]|ultra|[3579])|ultra\s*[3579]|n\d{2,3}\b|i[3579][\s-]*(?:[a-z][\s-]*)?\d|ryzen|celeron|pentium|athlon|snapdragon|intel\s+(?:n\d|processor)|apple\s+m[1-9])/;
   return fields.every(v => !competing.test(v.replace(expected, '')));
 }
 

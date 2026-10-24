@@ -51,3 +51,14 @@ assert.equal(specOfferAllowed({title:'Samsung Galaxy A16',url:'https://www.telec
 assert.equal(specOfferAllowed({title:'Samsung Galaxy A16 5G SM-A166P'}, [], 'samsung-galaxy-a16'),true);
 assert.equal(specOfferAllowed({title:'Samsung Galaxy A16'}, [], 'samsung-galaxy-a16'),true,'generic primary listing with separately verified 5G specs remains accepted');
 console.log('MODEL_GENERATION_PASS: Lite/Lite2 and A165 LTE/A16 5G remain separated');
+
+for(const title of ['HP 15-FD2006ci Ultra 5 225U 16GB I 1TB (BK2X0EA#UUQ)','HP 15 N100 8GB/256GB'])
+  assert.equal(specOfferAllowed({title,cpu:'Intel Core 5-120U'},[],target),false,'bare merchant CPU defeats stale positive: '+title);
+const honorID='honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg';
+const wrongHonor={title:'Honor MagicBook Pro 16 Ultra 9-285H 32GB/1TB RTX5060 W11H White /5301APWK',ram:32,storage:1024,price:859900};
+assert.equal(specOfferAllowed(wrongHonor,[],honorID),false,'Ultra9 cannot verify Ultra5 canonical RAM');
+assert.equal(specOfferAllowed({...wrongHonor,cpu:'Intel Core Ultra 5-125H'},[],honorID),false,'conflicting source defeats carried CPU');
+assert.equal(specOfferAllowed({title:'Honor MagicBook Pro 16 Ultra 5-125H 24/1 Purple W11H /5301AJJE'},[],honorID),true);
+const honorOffers={[honorID]:[wrongHonor]};attachOfferConfigs([{id:honorID,category:'laptop'}],honorOffers);
+assert.equal(honorOffers[honorID].length,0,'build-time gate cannot reinstate mismatched Honor configuration');
+console.log('FINAL_REVIEW_REGRESSIONS_PASS: bare processors and fixed-CPU Honor identity');
