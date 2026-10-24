@@ -24938,7 +24938,13 @@
     ],
     "chipset": {
       "name": "Intel Core i7-1355U"
-    }
+    },
+    "body": {
+      "weight": 2080
+    },
+    "sources": [
+      "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08479498"
+    ]
   },
   {
     "id": "hp-hyperx-omen-15-ga0762nr",
@@ -66726,12 +66732,18 @@
     "summaryEn": "Acer Predator Helios Neo 16'' FHD i9 Ultra Abyssal.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-275HX"
     },
-    "body": {}
+    "body": {
+      "weight": 2700
+    },
+    "sources": [
+      "https://www.acer.com/ae-en/predator/laptops/helios/helios-neo-16-ai/pdp/NH.QVQEM.001"
+    ]
   },
   {
     "id": "microsoft-surface-pro-12",
@@ -68760,11 +68772,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core 5 120U"
-    }
+    },
+    "body": {
+      "weight": 1520
+    },
+    "sources": [
+      "https://support.hp.com/au-en/document/ish_7751519-7751693-16"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15-3-i5-13420h-83k1002erk",
@@ -72757,6 +72776,12 @@
     },
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 1620
+    },
+    "sources": [
+      "https://www.acer.com/gb-en/laptops/aspire/aspire-amd/pdp/NX.J9DEK.00P"
     ]
   },
   {
@@ -72929,7 +72954,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 1800
+    },
+    "sources": [
+      "https://www.acer.com/gb-en/laptops/aspire/aspire-vero-16/pdp/NX.KV7EK.008"
+    ]
   },
   {
     "id": "acer-nitro-5-an515-58-77z2-gaming-i7-12700h-plus-rtx3060",
@@ -73279,7 +73310,8 @@
     "battery": {},
     "summaryEn": "A 14-inch laptop with Intel Celeron N4500, 4 GB RAM and 64 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Celeron N4500"
@@ -73288,7 +73320,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1500
+    },
+    "sources": [
+      "https://www.asus.com/ca-en/laptops/for-home/vivobook/vivobook-go-14-flip-j1400/"
+    ]
   },
   {
     "id": "asus-vivobook-15-core-i7-x1504za-nj247",
@@ -74382,7 +74420,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1300
+    },
+    "sources": [
+      "https://support.hp.com/hr-en/document/ish_12121035-12121079-16"
+    ]
   },
   {
     "id": "hp-gaming-omen-16-n0023dx-ryzen",
@@ -79518,11 +79562,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-285H"
-    }
+    },
+    "body": {
+      "weight": 2430
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop/hp-omen-16-2025"
+    ]
   },
   {
     "id": "hp-omen-24",
