@@ -26,7 +26,26 @@ export function reviewAllsellSpecs(html) {
   return {title,ram:tableRam??titleRam,storage:tableStorage??titleStorage,conflicts,verified};
 }
 
-export function specOfferAllowed(offer, holds) {
+// HP's generic "15" family spans incompatible processors. Only merchant
+// evidence can establish this entry; catalogue specifications cannot do so.
+function modelIdentityAllowed(id, offer) {
+  const identity = `${offer.title || ''} ${offer.url || ''}`;
+  if (id === 'yandex-station-lite')
+    return !/(?:lite|light|лайт)[\s_-]*2\b|yndx[\s_-]*00026/i.test(identity);
+  if (id === 'samsung-galaxy-a16')
+    return !/\b(?:sm[\s_-]*)?a165[a-z0-9]*\b|\ba16\b[^\n]{0,20}\b(?:lte|4g)\b/i.test(identity);
+  if (id !== 'hp-15-intel-core-5-120u') return true;
+  const fields = [offer.title, offer.cpu, offer.configSpecs?.chipset?.name]
+    .map(v => String(v || '').toLowerCase().replace(/[\u2010-\u2015\u2212]/g, '-'));
+  const expected = /\b(?:intel\s+)?core\s*5[\s-]*120u\b/g;
+  if (!fields.some(v => /\bcore\s*5[\s-]*120u\b/.test(v))) return false;
+  // Any explicit competing processor defeats another positive source field.
+  const competing = /\b(?:core\s*(?:i[3579]|ultra|[3579])|i[3579][\s-]*(?:[a-z][\s-]*)?\d|ryzen|celeron|pentium|athlon|snapdragon|intel\s+(?:n\d|processor)|apple\s+m[1-9])/;
+  return fields.every(v => !competing.test(v.replace(expected, '')));
+}
+
+export function specOfferAllowed(offer, holds, id = offer.id) {
+  if (!modelIdentityAllowed(id, offer)) return false;
   if (offer.specConflict?.length) return false;
   const key=u=>String(u||'').replace(/\/+$/,'').replace(/^(https?:\/\/[^/]+)\/(?:en|am|ru)\//,'$1/');
   const hold=holds.find(row=>key(row.url)===key(offer.url));

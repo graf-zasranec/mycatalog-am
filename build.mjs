@@ -200,7 +200,8 @@ for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { 
   fs.writeFileSync('data/photos-needed.json', JSON.stringify({
     generated: new Date().toISOString().slice(0, 10),
     floorPx: FLOOR,
-    note: 'too small needs a larger original, not an enlargement',
+    measurement: 'canvas width only',
+    note: 'too small needs a larger original, not an enlargement; canvas width does not establish visible-product resolution, model, finish or cutout quality. Run tools/photo-audit.py for visual-product quality review.',
     total: phones.length,
     missing: need.filter(n => n.what === 'missing').length,
     tooSmall: need.filter(n => n.what === 'too small').length,

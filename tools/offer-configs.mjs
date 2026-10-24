@@ -6,7 +6,7 @@ import { cpu, storageGB } from './spec-values.mjs';
 export function attachOfferConfigs(products, offers) {
   const holdFile = 'data/price-review-holds.json';
   const holds = fs.existsSync(holdFile) ? JSON.parse(fs.readFileSync(holdFile, 'utf8')) : [];
-  for (const id of Object.keys(offers)) offers[id] = offers[id].filter(o => specOfferAllowed(o, holds));
+  for (const id of Object.keys(offers)) offers[id] = offers[id].filter(o => specOfferAllowed(o, holds, id));
   // Some retailers put the watch case diameter in the shared capacity field.
   // Selectable-case families already print that field as mm. Fixed-case watches
   // must keep it separate from actual 32/64GB flash and from strap variants.

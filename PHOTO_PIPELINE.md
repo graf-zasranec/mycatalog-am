@@ -20,6 +20,7 @@ These are script handoffs, not one automatic pipeline command. Choose a source r
 2. Save a replacement source under the expected `<id>__<color>` name in `images/_src/`.
 3. Run `python tools/cutout.py [product-id]__`.
 4. Run `python tools/imgcheck.py [product-id]__`; inspect the product in context or review `photo-audit/` findings. A clean heuristic report is not proof the photo is correct.
+   Resolution is measured on the visible product (alpha above 128), with a 600px long-edge floor. Transparent canvas padding does not increase native detail. Preserve source pixels; obtain a larger exact original rather than enlarge a small image.
 5. Confirm the color slug or alias and that `build.mjs` selects the intended cutout.
 6. Run `python tools/thumbnails.py`, then `npm run build` when publishing updated image assets.
 

@@ -38,6 +38,10 @@ def check(path: Path):
         bad.append(f'product fills only {frac*100:.1f}% of the frame')
     if max(w, h) < 600:
         bad.append(f'canvas only {w}x{h} - the source was too small to fill 1200px')
+    ys, xs = np.nonzero(body)
+    native_edge = max(int(xs.max() - xs.min() + 1), int(ys.max() - ys.min() + 1))
+    if native_edge < 600:
+        bad.append(f'visible product only {native_edge}px - transparent canvas padding does not add native detail')
 
     # There is deliberately NO rule here for white specks left inside a product, though that is
     # the fault that started this file. Four rules were tried and all of them fail, because a

@@ -296,7 +296,8 @@
  "google-fitbit-air": {
   "colours": {
    "black": "images/cut/google-fitbit-air__black.webp",
-   "obsidian": "images/cut/google-fitbit-air__obsidian.webp"
+   "obsidian": "images/cut/google-fitbit-air__obsidian.webp",
+   "lavender": "images/cut/google-fitbit-air__lavender.webp"
   },
   "reason": "Exact Obsidian finish manually matched to current Team product gallery; Black is the shop alias, so identical images must remain available for both labels."
  },
@@ -653,7 +654,7 @@
   "colours": {
    "graphite": "images/cut/amazon-kindle-scribe-colorsoft__graphite.webp"
   },
-  "main": "images/cut/amazon-kindle-scribe-colorsoft__main.webp",
+  "main": "images/cut/amazon-kindle-scribe-colorsoft__graphite.webp",
   "reason": "Owner-selected photo from Downloads, 2026-10-14; preserve supplied design and colour"
  },
  "amazon-fire-hd-10-kids": {
@@ -746,7 +747,7 @@
    "metal": "images/cut/de-longhi-ec685__metal.webp",
    "red": "images/cut/de-longhi-ec685__red.webp",
    "white": "images/cut/de-longhi-ec685__white.webp",
-   "black": "images\\cut\\de-longhi-ec685__black.webp"
+   "black": "images/cut/de-longhi-ec685__black.webp"
   }
  },
  "de-longhi-ecam290-61": {
@@ -1093,6 +1094,58 @@
  "bowers-wilkins-formation-wedge": {
   "colours": {
    "silver": "images/cut/bowers-wilkins-formation-wedge__silver.webp"
+  },
+  "main": "images/cut/bowers-wilkins-formation-wedge__silver.webp"
+ },
+ "jbl-tune-125bt": {
+  "main": "images/cut/jbl-tune-125bt__coral.webp",
+  "colours": {
+   "coral": "images/cut/jbl-tune-125bt__coral.webp"
   }
+ },
+ "oppo-reno-a18": {
+  "main": "images/cut/oppo-reno-a18__blue.webp",
+  "colours": {
+   "blue": "images/cut/oppo-reno-a18__blue.webp"
+  }
+ },
+ "oppo-reno-a58": {
+  "main": "images/cut/oppo-reno-a58__green.webp",
+  "colours": {
+   "green": "images/cut/oppo-reno-a58__green.webp"
+  }
+ },
+ "realme-c71": {
+  "main": "images/cut/realme-c71__white.webp",
+  "colours": {
+   "white": "images/cut/realme-c71__white.webp"
+  }
+ },
+ "xiaomi-vacuum-6-max": {
+  "main": "images/cut/xiaomi-vacuum-6-max__dark-gray-silver.webp",
+  "colours": {
+   "dark-gray-silver": "images/cut/xiaomi-vacuum-6-max__dark-gray-silver.webp"
+  }
+ },
+ "tp-link-m7000-lte-hotspot": {
+  "main": "images/cut/tp-link-m7000-lte-hotspot__main.webp"
+ },
+ "xiaomi-smart-band-8-active": {
+  "main": "images/cut/xiaomi-smart-band-8-active__pink.webp",
+  "colours": {
+   "pink": "images/cut/xiaomi-smart-band-8-active__pink.webp"
+  }
+ },
+ "yandex-station-lite": {
+  "main": "images/cut/yandex-station-lite__main.webp"
+ },
+ "hp-omnibook-3-17-3-core-3-100u-dr9v7ea": {
+  "main": "images/cut/hp-omnibook-3-17-3-core-3-100u-dr9v7ea__main.webp"
+ },
+ "hp-omnibook-5-16-ultra-5-225u-bg7h7ea": {
+  "main": "images/cut/hp-omnibook-5-16-ultra-5-225u-bg7h7ea__main.webp"
+ },
+ "hp-omnibook-5-16-ultra-7-255u-bg7h9ea": {
+  "main": "images/cut/hp-omnibook-5-16-ultra-7-255u-bg7h9ea__main.webp"
  }
 }

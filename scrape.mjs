@@ -3270,12 +3270,14 @@ for (const id of Object.keys(offers)) {
     && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title))
     && !/\boutlet\b|աութլեթ/i.test(o.title || ''));
 }
-// A price-only refresh must not silently release a hardware contradiction.
-try {
+// A price-only refresh must not release a hardware contradiction or change
+// a model's processor identity through a cached/manual/direct adapter ID.
+{
   const {specOfferAllowed} = await import('./tools/allsell-specs.mjs');
-  const holds = JSON.parse(fs.readFileSync('data/price-review-holds.json', 'utf8'));
-  for (const id of Object.keys(offers)) offers[id] = offers[id].filter(o => specOfferAllowed(o, holds));
-} catch (e) { if (e.code !== 'ENOENT') throw e; }
+  const holds = fs.existsSync('data/price-review-holds.json')
+    ? JSON.parse(fs.readFileSync('data/price-review-holds.json', 'utf8')) : [];
+  for (const id of Object.keys(offers)) offers[id] = offers[id].filter(o => specOfferAllowed(o, holds, id));
+}
 // A sold-out or zero-price listing must also suppress its older hand price.
 // Match only that shop and URL: another shop or configuration remains available.
 const {cacheOfferKey, unavailableCacheKeys} = await import('./tools/cache-availability.mjs');
