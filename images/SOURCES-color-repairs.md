@@ -3720,3 +3720,4 @@
 - panasonic-nf-bc1000kxe__main.webp: official maker photo, transparent original; Full-res cut via Adobe mask (2026-10-18); product 567x428.
 
 - remarkable-2__main.webp: official maker photo, transparent original; Yerevan Mobile photo, Adobe cut (2026-10-18); product 728x972.
+- apple-watch-series-10__silver.webp (2026-10-24): replaced yellow Solo Loop photo with Silver Aluminium + Denim Sport Band; https://ibolit.mobi/wp-content/uploads/2025/03/red1216_1.jpg (700x700), background removed with PhotoRoom; product 389x462 scaled to the 1200 canvas.
