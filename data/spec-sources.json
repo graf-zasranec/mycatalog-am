@@ -3005,5 +3005,128 @@
     ],
     "checked": "2026-10-24",
     "verified": "Exact existing MTM is consistent across catalogue identity,alias,historical merchant listing,independent primary merchant pages,and officialLenovo support family identity. Merchants agreeRyzen7-170/16GB/512GB; current7735HS chipset is the isolated conflict. Proposed correction is scoped to chipset name plus dependent exact-configuration RAM/storage fill; parent decides whether identity evidence is sufficient."
+  },
+  {
+    "id": "hp-15-fd0355nia",
+    "field": "variants.ram",
+    "value": 12,
+    "configuration": {
+      "storage": 512
+    },
+    "source": "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-5-fd0355nia-12-512gb-silver/2820/",
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/en/devices/notebook-hp-5-fd0355nia-12-512gb-silver/2820/"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Fresh exact model15-FD0355NIA and CPUi5-1334U now agree with catalogue; primary table explicitly lists12GB RAM and512GB SSD; sold out, so no live offer added."
+  },
+  {
+    "id": "xiaomi-redmi-a3",
+    "field": "variants.ram",
+    "value": 4,
+    "configuration": {
+      "storage": 128
+    },
+    "source": "https://www.mi.com/uk/product/redmi-a3/specs/",
+    "sources": [
+      "https://www.mi.com/uk/product/redmi-a3/specs/",
+      "https://mobilecentre.am/product/xiaomi-redmi-a3/30199/"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Manufacturer confirms physical4/128 HelioG36 configuration; exact saved local retail title and web-indexed primary page agree. Direct retail route now404; availability not asserted. Existing estimated price unchanged."
+  },
+  {
+    "id": "xiaomi-redmi-a5",
+    "field": "variants.ram",
+    "value": 4,
+    "configuration": {
+      "storage": 128
+    },
+    "source": "https://www.mi.com/global/product/redmi-a5/specs/",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-a5/specs/",
+      "https://www.mobilecentre.am/index.php?m=prod&pid=33832"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Manufacturer distinguishes4GB physical RAM from8GB virtual extension; live primary retailer title explicitly4GB/128GB at39900, sold out. No new offer or availability inferred."
+  },
+  {
+    "id": "xiaomi-redmi-13c",
+    "field": "variants.ram",
+    "value": 4,
+    "configuration": {
+      "storage": 128
+    },
+    "source": "https://www.mi.com/global/product/redmi-13c/specs/",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-13c/specs/",
+      "https://shop.ucom.am/en/xiaomi-redmi-13c.html"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Exact Ucom H1/SKU explicitly Redmi13C4GB, HelioG85; table is family range4/8GB rather than an8GB-only claim. Manufacturer maps4GB model to128GB; sold-out SKU, no offer added."
+  },
+  {
+    "id": "xiaomi-redmi-note-13",
+    "field": "variants.ram",
+    "value": 6,
+    "configuration": {
+      "storage": 128
+    },
+    "source": "https://www.zigzag.am/am/xiaomi-redmi-note-13-6gb-128gb-midnight-black-ru-23124ra7eo.html",
+    "sources": [
+      "https://www.zigzag.am/am/xiaomi-redmi-note-13-6gb-128gb-midnight-black-ru-23124ra7eo.html",
+      "https://www.mi.com/global/product/redmi-note-13/specs/"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Exact23124RA7EO primary H1 and table confirm6/128, Snapdragon685 and4G; manufacturer confirms. Existing estimated price retained; current sold-out shop price not published as live."
+  },
+  {
+    "id": "xiaomi-redmi-note-13",
+    "field": "variants.ram",
+    "value": 8,
+    "configuration": {
+      "storage": 256
+    },
+    "source": "https://www.mi.com/global/product/redmi-note-13/specs/",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-note-13/specs/"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Exact4G Snapdragon685 manufacturer lists256GB only paired with8GB physical RAM. Avoided mixed-network retailer table. Only missing RAM filled, existing estimate unchanged."
+  },
+  {
+    "id": "acer-predator-helios-neo-16-fhd-i9-ultra-abyssal",
+    "field": "variants.ram",
+    "value": 16,
+    "configuration": {
+      "storage": 1024
+    },
+    "source": "https://www.yerevanmobile.am/am/acer-notebook-predator-helios-neo-16-fhd-i9-ultra-abyssal.html",
+    "sources": [
+      "https://www.yerevanmobile.am/am/acer-notebook-predator-helios-neo-16-fhd-i9-ultra-abyssal.html"
+    ],
+    "checked": "2026-10-24",
+    "verified": "Fresh exact retailer listing explicitly16GB RAM/1TB SSD agrees with existing offer. Merchant confirms only CoreUltra9 family, so unproven275HX specificity is removed and chipset flagged until exact SKU known."
+  },
+  {
+    "id": "nokia-210",
+    "field": "variants.ram",
+    "value": 0.00390625,
+    "configuration": {
+      "storage": 0.015625
+    },
+    "source": "https://device.report/m/a01dc6a9c508dce64bb22b63c7ed4dffbcf5b79d6d2a25f783570474f496ed89.pdf",
+    "sources": [
+      "https://device.report/m/a01dc6a9c508dce64bb22b63c7ed4dffbcf5b79d6d2a25f783570474f496ed89.pdf"
+    ],
+    "checked": "2026-10-24",
+    "verified": "HMD-authored2019 Nokia210 DualSIM technical sheet p5 explicitly16MB ROM/4MB RAM, matching TA1139 catalogue model,82g and1020mAh. PDF mirror directHTTP403; web PDF text verified. Stored in existingGB numeric schema; UI regression verifies MB display, never4GB."
+  },
+  {
+    "id": "nokia-150-2023",
+    "field": "body/battery/connectivity/os/cardSlot/year",
+    "source": "https://www.hmd.com/en_int/nokia-150-2023/specs",
+    "checked": "2026-10-24",
+    "verified": "Exact2023 manufacturer page confirms published body dimensions/weight,1450mAh,IP52,polycarbonate back,2G,MiniSIM,MicroUSB and audio jack,S30+,microSD. RAM/storage deliberately remain unknown because manufacturer does not publish them."
   }
 ]

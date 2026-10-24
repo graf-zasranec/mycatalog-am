@@ -48,7 +48,7 @@ const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
   offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareConfig, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, offerRow, hay, fullName, sold,
-  GROUPS, FILT, filterBodies, results, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList,
+  GROUPS, FILT, filterBodies, results, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList, gb, cardFacts,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -274,6 +274,24 @@ for (const p of phones) for (const [, defs] of app.GROUPS) for (const [k, get] o
 is(holes.slice(0, 3), [], 'no spec value renders undefined / NaN / null');
 is(app.specVal(p => p.body.height + ' mm', { body: {} }), null, 'a missing dimension is no row, not "undefined mm"');
 is(app.specVal(() => { throw 0; }, {}), null, 'a getter that throws is no row');
+
+// Manufacturer feature-phone memory is published in MB, not fractional GB.
+{
+  const lang = app.st.lang;
+  const feature = {category:'phone',variants:[{ram:4/1024,storage:16/1024}]};
+  const memory = app.GROUPS.find(([key])=>key==='sec.memory')[1];
+  for(const [locale,unit] of [['en','MB'],['ru','МБ'],['hy','ՄԲ']]) {
+    app.st.lang=locale;
+    is(app.gb(16/1024), '16 '+unit, 'sub-GB storage keeps manufacturer MB units '+locale);
+    is(app.specVal(memory.find(([key])=>key==='f.ram')[1],feature),'4 '+unit,'RAM specs use MB '+locale);
+    is(app.cardFacts(feature,feature.variants[0])[0], '4 '+unit+' / 16 '+unit, 'card memory keeps both small units '+locale);
+  }
+  app.st.lang='en';
+  is(app.gb(128),'128 GB','ordinary storage formatting remains');
+  is(app.gb(1024),'1 TB','terabyte formatting remains');
+  is(app.gb(44,'mm'),'44 mm','watch case sizes remain');
+  app.st.lang=lang;
+}
 
 /* --- the price chart follows the size that was picked ---------------------------------- */
 // The old chart drew the cheapest of ANY size against the dearest of any, so a 1 TB listing

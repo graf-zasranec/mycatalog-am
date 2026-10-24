@@ -23973,8 +23973,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 12,
+        "storage": 512,
         "priceAmd": 234900
       }
     ],
@@ -50646,8 +50646,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 128,
         "priceAmd": 34900
       }
     ],
@@ -50696,7 +50696,9 @@
     },
     "released": "2023-11",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-13c/specs/",
+      "https://shop.ucom.am/en/xiaomi-redmi-13c.html"
     ]
   },
   {
@@ -51386,8 +51388,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 128,
         "priceAmd": 39900
       }
     ],
@@ -51435,7 +51437,9 @@
     },
     "released": "2024-02",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/uk/product/redmi-a3/specs/",
+      "https://mobilecentre.am/product/xiaomi-redmi-a3/30199/"
     ]
   },
   {
@@ -51451,8 +51455,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 4,
+        "storage": 128,
         "priceAmd": 39900
       }
     ],
@@ -51501,7 +51505,9 @@
     },
     "released": "2025-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-a5/specs/",
+      "https://www.mobilecentre.am/index.php?m=prod&pid=33832"
     ]
   },
   {
@@ -52129,12 +52135,12 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 6,
         "storage": 128,
         "priceAmd": 69900
       },
       {
-        "ram": null,
+        "ram": 8,
         "storage": 256,
         "priceAmd": 78900
       }
@@ -52162,7 +52168,8 @@
       "main": "108 MP"
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-note-13/specs/"
+      "https://www.mi.com/global/product/redmi-note-13/specs/",
+      "https://www.zigzag.am/am/xiaomi-redmi-note-13-6gb-128gb-midnight-black-ru-23124ra7eo.html"
     ],
     "colors": [
       "Black",
@@ -66007,8 +66014,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 16,
+        "storage": 1024,
         "priceAmd": 735000
       }
     ],
@@ -66020,12 +66027,16 @@
     "summaryEn": "Acer Predator Helios Neo 16'' FHD i9 Ultra Abyssal.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "chipset.name"
     ],
     "chipset": {
-      "name": "Intel Core Ultra 9-275HX"
+      "name": "Intel Core Ultra 9"
     },
-    "body": {}
+    "body": {},
+    "sources": [
+      "https://www.yerevanmobile.am/am/acer-notebook-predator-helios-neo-16-fhd-i9-ultra-abyssal.html"
+    ]
   },
   {
     "id": "microsoft-surface-pro-12",
@@ -81293,10 +81304,13 @@
       "size": 2.4,
       "resolution": "240x320"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 1450
+    },
     "summaryEn": "Nokia 150 (2023).",
     "sources": [
-      "https://likemobile.am/en/nokia-150-2023-black"
+      "https://likemobile.am/en/nokia-150-2023-black",
+      "https://www.hmd.com/en_int/nokia-150-2023/specs"
     ],
     "unsure": [
       "popularity"
@@ -81306,7 +81320,23 @@
     },
     "specNA": {
       "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
-    }
+    },
+    "body": {
+      "height": 130.95,
+      "width": 50.6,
+      "thickness": 15.15,
+      "weight": 106.3,
+      "materials": "Polycarbonate back",
+      "ip": "IP52"
+    },
+    "connectivity": {
+      "network": "2G",
+      "sim": "Mini-SIM",
+      "ports": "Micro-USB (1.1), 3.5 mm headphone jack"
+    },
+    "os": "S30+",
+    "cardSlot": true,
+    "year": 2023
   },
   {
     "id": "panasonic-mc-cg713",
@@ -86912,8 +86942,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 0.00390625,
+        "storage": 0.015625,
         "priceAmd": 19900
       }
     ],
@@ -86929,7 +86959,8 @@
     },
     "summaryEn": "Nokia 210 (TA-1139).",
     "sources": [
-      "https://vlv.am/en/Product/26006"
+      "https://vlv.am/en/Product/26006",
+      "https://device.report/m/a01dc6a9c508dce64bb22b63c7ed4dffbcf5b79d6d2a25f783570474f496ed89.pdf"
     ],
     "unsure": [
       "popularity"

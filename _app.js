@@ -56,9 +56,9 @@ const CARD_IMAGE_SIZE = '(max-width:520px) 140px, 190px';
 const hasIMG = id => typeof IMGDATA !== 'undefined' && !!IMGDATA[id];
 
 const U = {
-  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', kg: 'կգ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB' },
-  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', kg: 'кг', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ' },
-  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', kg: 'kg', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB' }
+  hy: { wh: 'Վտ·ժ', mah: 'մԱժ', w: 'Վտ', g: 'գ', kg: 'կգ', mm: 'մմ', hz: 'Հց', nit: 'նիտ', gb: 'GB', mb: 'ՄԲ' },
+  ru: { wh: 'Вт·ч', mah: 'мА·ч', w: 'Вт', g: 'г', kg: 'кг', mm: 'мм', hz: 'Гц', nit: 'нит', gb: 'ГБ', mb: 'МБ' },
+  en: { wh: 'Wh', mah: 'mAh', w: 'W', g: 'g', kg: 'kg', mm: 'mm', hz: 'Hz', nit: 'nits', gb: 'GB', mb: 'MB' }
 };
 const X = {
   hy: {
@@ -309,6 +309,7 @@ const isNew = p => {
 const inch = v => v + '″';
 const storageLabel = p => p.variantUnit === 'mm' ? 'f.case_size' : p.variantUnit === 'vram' ? 'f.vram' : 'f.storage';
 const gb = (v, unit) => unit === 'mm' ? v + ' ' + u('mm')
+  : v > 0 && v < 1 ? +(v * 1024).toFixed(3) + ' ' + u('mb')
   : v >= 1024 ? (v / 1024) + ' TB' : v + ' ' + u('gb');
 
 /* real shop offers scraped by scrape.mjs; empty when prices.json has not been generated */
@@ -825,7 +826,7 @@ const FILT = {
   // 'of' answers "does this product qualify" (its biggest variant), 'all' supplies the options
   // (every variant), so 256 GB can be offered even where no product stops there.
   ram:   { kind: 'min', label: () => t('filter.ram'), of: p => Math.max(0, ...filterValues(p, 'ram')) || null,
-           all: p => filterValues(p, 'ram'), fmt: v => v + ' ' + u('gb') },
+           all: p => filterValues(p, 'ram'), fmt: v => gb(v) },
   stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
            of: p => Math.max(0, ...filterValues(p, 'storage')) || null, all: p => filterValues(p, 'storage'),
            fmt: v => gb(v, viewUnit()) },
@@ -1135,7 +1136,7 @@ const GROUPS = [
   ['sec.memory', [
     // an item with nothing to choose (earbuds) or no RAM figure (a watch) shows no row at all
     ['f.ram', p => { const v = [...new Set((p.variants || []).map(x => x.ram))].filter(x => x != null && x > 0);
-      return v.length ? v.join(' / ') + ' ' + u('gb') : null; }, p => topOf(p, 'ram'), 1],
+      return v.length ? v.some(x => x < 1) ? v.map(x => gb(x)).join(' / ') : v.join(' / ') + ' ' + u('gb') : null; }, p => topOf(p, 'ram'), 1],
     ['f.storage', p => { const v = [...new Set((p.variants || []).map(x => x.storage))].filter(x => x != null);
       return v.length ? v.map(x => gb(x, p.variantUnit)).join(' / ') : null; }, p => topOf(p, 'storage'), 1],
     ['f.card_slot', p => p.cardSlot == null ? null : p.cardSlot ? t('common.yes') : t('common.no')]
@@ -1631,7 +1632,7 @@ function cardFacts(p, v) {
   }
   const f = [];
   if (p.display?.size) f.push(esc(p.display.size + String.fromCharCode(8243)));
-  if (v.storage != null) f.push(esc((v.ram ? v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
+  if (v.storage != null) f.push(esc((v.ram ? v.ram < 1 ? gb(v.ram) + ' / ' : v.ram + '/' : '') + gb(v.storage, p.variantUnit)));
   if (p.battery?.capacity) f.push(`<span class="num">${money(p.battery.capacity)} ${esc(u(p.category === 'laptop' ? 'wh' : 'mah'))}</span>`);
   if (p.chipset?.name) f.push(esc(p.chipset.name));
   // "In-ear, active noise cancellation" is two facts; as one chip it ran to two lines on a card
@@ -1685,7 +1686,7 @@ function spark(vals) {
 }
 function dealCard(d, isSpot) {
   const p = d.p;
-  const cfg = [p.brand, d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)]
+  const cfg = [p.brand, d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? gb(d.ram) : '', simLbl(d.esim)]
     .filter(Boolean).join(' · ');
   const tail = d.drop
     ? `<span class="dl-save dn num">${esc(x('dealDrop').replace('{n}', money(d.fall)).replace('{d}', dmy(d.since).slice(0, 5)))}</span>${spark(d.run)}`
@@ -1709,7 +1710,7 @@ function spotDeal(dl) {
 function spotHTML(d) {
   if (!d) return '';
   const p = d.p, pct = Math.round(d.below / d.mid * 100);
-  const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? d.ram + ' ' + u('gb') : '', simLbl(d.esim)].filter(Boolean).join(' · ');
+  const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? gb(d.ram) : '', simLbl(d.esim)].filter(Boolean).join(' · ');
   const eb = `<span class="spot-e">${esc(x('spotT'))} · ${esc(updatedOn().slice(0, 5))}</span>`;
   const n = nx(d.shops, 'shops');
   return `<a class="spot spot-c" href="#/p/${esc(p.id)}" aria-labelledby="spotT">
@@ -2396,7 +2397,7 @@ function detailView(p) {
             <div class="bs">${sizes.map(sv => `<button data-size="${sv}" class="${sv === SEL.size ? 'on' : ''}${sold(p, 'size', sv) ? '' : ' na'}"${sold(p, 'size', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.size}">${esc(inch(sv))}</button>`).join('')}</div></div>` : ''}
           ${cpus.length > 1 ? `<div class="og"><label>${esc(t('f.chipset'))}</label><div class="bs">${cpus.map(cpu => `<button data-cpu="${esc(cpu)}" class="${cpu === SEL.cpu ? 'on' : ''}" aria-pressed="${cpu === SEL.cpu}">${esc(cpu)}</button>`).join('')}</div></div>` : ''}
           ${rams.length > 1 ? `<div class="og"><label>${esc(t('f.ram'))}</label>
-            <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${r} ${esc(u('gb'))}</button>`).join('')}</div></div>` : ''}
+            <div class="bs">${rams.map(r => `<button data-ram="${r}" class="${r === SEL.ram ? 'on' : ''}${sold(p, 'ram', r) ? '' : ' na'}"${sold(p, 'ram', r) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${r === SEL.ram}">${esc(gb(r))}</button>`).join('')}</div></div>` : ''}
           ${stors.length ? `<div class="og"><label>${esc(t(storageLabel(p)))}</label>
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
@@ -2521,7 +2522,7 @@ function docView(key, paras) {
    no code here. A question with only one possible answer is not asked - it is reported as a
    fact instead, because a question you cannot answer two ways is not a choice. */
 const CQ = [
-  ['ram',  'filter.ram',          p => filterValues(p, 'ram'),     v => v + ' ' + u('gb')],
+  ['ram',  'filter.ram',          p => filterValues(p, 'ram'),     v => gb(v)],
   ['stor', 'filter.storage',      p => filterValues(p, 'storage'), v => gb(v, viewUnit())],
   ['hz',   'filter.refresh_rate', p => [p.display && p.display.refresh],       v => v + ' ' + u('hz')],
   ['batt', 'filter.battery',      p => [p.battery && p.battery.capacity],      v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah')]
@@ -2696,7 +2697,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
     <span class="vr">${[
         o.size != null && offerAxisVaries(of, 'size') ? esc(inch(o.size)) : '',
         offerAxisVaries(of, 'storage') ? (o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : '')) : '',
-        o.ram && offerAxisVaries(of, 'ram') ? esc(o.ram + ' ' + u('gb')) : '',
+        o.ram && offerAxisVaries(of, 'ram') ? esc(gb(o.ram)) : '',
         o.cell != null && offerAxisVaries(of, 'cell') ? esc(cellLbl(o.cell)) : '',
         // The product page shows one row per build and collapses the colours behind it; this
         // page shows every one of them, and without the colour written down two rows from the
@@ -2769,7 +2770,7 @@ function offersView(p) {
     </div>
     <div class="offilters">
       ${chips('storage', stors, t('f.storage'), gb)}
-      ${chips('ram', rams, t('f.ram'), v => v + ' ' + u('gb'))}
+      ${chips('ram', rams, t('f.ram'), v => gb(v))}
       ${chips('size', sizes, t('f.screen'), inch)}
       ${chips('esim', simVals, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
       ${chips('cell', two(cells), x('connF'), v => cellLbl(v === 'c'))}
@@ -2825,7 +2826,7 @@ function compareConfig(p) {
 }
 function compareOptions(p, sel) {
   const pool = configPool(p).filter(v => (sel.size == null || v.size == null || v.size === sel.size) && (!sel.cpu || v.cpu === sel.cpu));
-  const fields = [['cpu', 'f.chipset', configPool(p), v => v], ['ram', 'f.ram', pool, v => v + ' ' + u('gb')],
+  const fields = [['cpu', 'f.chipset', configPool(p), v => v], ['ram', 'f.ram', pool, v => gb(v)],
     ['storage', storageLabel(p), pool.filter(v => sel.ram == null || v.ram === sel.ram), v => gb(v, p.variantUnit)],
     ['size', 'f.screen', configPool(p), inch]];
   return `<div class="cmp-options">${fields.map(([axis, label, source, fmt]) => {
