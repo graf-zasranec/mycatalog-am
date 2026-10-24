@@ -67,7 +67,7 @@ const X = {
     dS: 'օ', hS: 'ժ', mS: 'ր',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
-    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ', days: 'օր',
+    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ', mins: 'րոպե', days: 'օր',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ', frameF: 'Շրջանակ', lensF: 'Ոսպնյակներ',
     lenses: { clear: 'Թափանցիկ', sun: 'Արևային', transitions: 'Ֆոտոքրոմիկ (Transitions)' },
@@ -89,7 +89,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց', streamer: 'Մեդիա նվագարկիչներ', smartglasses: 'Խելացի ակնոցներ', vacuum: 'Փոշեկուլներ', coffee: 'Սրճեփեր', haircare: 'Մազերի խնամք', kitchen: 'Խոհանոցային տեխնիկա', projector: 'Պրոյեկտորներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց', streamer: 'Մեդիա նվագարկիչներ', smartglasses: 'Խելացի ակնոցներ', vacuum: 'Փոշեկուլներ', coffee: 'Սրճեփեր', haircare: 'Մազերի խնամք', grooming: 'Սափրում և խնամք', kitchen: 'Խոհանոցային տեխնիկա', projector: 'Պրոյեկտորներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի ցածր գին', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
@@ -102,7 +102,7 @@ const X = {
     dS: 'д', hS: 'ч', mS: 'м',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
-    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч', days: 'дн.',
+    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч', mins: 'мин', days: 'дн.',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти', frameF: 'Оправа', lensF: 'Линзы',
     lenses: { clear: 'Прозрачные', sun: 'Солнцезащитные', transitions: 'Фотохромные (Transitions)' },
@@ -127,7 +127,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети', streamer: 'Медиаплееры', smartglasses: 'Умные очки', vacuum: 'Пылесосы', coffee: 'Кофемашины', haircare: 'Уход за волосами', kitchen: 'Кухонная техника', projector: 'Проекторы' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети', streamer: 'Медиаплееры', smartglasses: 'Умные очки', vacuum: 'Пылесосы', coffee: 'Кофемашины', haircare: 'Уход за волосами', grooming: 'Бритьё и уход', kitchen: 'Кухонная техника', projector: 'Проекторы' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
@@ -140,7 +140,7 @@ const X = {
     dS: 'd', hS: 'h', mS: 'm',
     unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
-    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h', days: 'days',
+    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h', mins: 'min', days: 'days',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
     ancF: 'Noise cancelling', waterF: 'Water resistance', chargeF: 'Fast charging', wlessF: 'Wireless charging', sdF: 'Memory card slot', frameF: 'Frame', lensF: 'Lenses',
     lenses: { clear: 'Clear', sun: 'Sun', transitions: 'Transitions (photochromic)' },
@@ -162,7 +162,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking', streamer: 'Streaming players', smartglasses: 'Smart glasses', vacuum: 'Vacuum cleaners', coffee: 'Coffee machines', haircare: 'Hair care', kitchen: 'Kitchen', projector: 'Projectors' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking', streamer: 'Streaming players', smartglasses: 'Smart glasses', vacuum: 'Vacuum cleaners', coffee: 'Coffee machines', haircare: 'Hair care', grooming: 'Shaving & grooming', kitchen: 'Kitchen', projector: 'Projectors' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
@@ -771,7 +771,7 @@ const mpOf = p => { const m = /(\d+(?:\.\d+)?)\s*MP/i.exec(p.camera?.main || '')
 // "8.5 hours (30 with the case)" -> 8.5. The buds' own figure, not the case total, because that
 // is the number every maker prints first and the only one all of them print.
 // "14 days" is how every watch maker quotes it; read as hours so one scale serves both
-const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\+?\s*(h|day)/i.exec(p.battery?.life || ''); return m ? +m[1] * (/^d/i.test(m[2]) ? 24 : 1) : null; };
+const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\+?\s*(h|day|min)/i.exec(p.battery?.life || ''); return m ? +m[1] * (/^d/i.test(m[2]) ? 24 : /^m/i.test(m[2]) ? 1 / 60 : 1) : null; };
 // IP68 is dust 6 / water 8, IPX4 is water only, and ATM or metre figures are dive ratings.
 // Three answers a buyer actually has: nothing, survives splashes, survives being dunked.
 const waterOf = p => {
@@ -840,7 +840,7 @@ const FILT = {
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
   // a watch lasts days, earbuds hours: kept in hours underneath, shown in days from two up
-  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v >= 48 && v % 24 === 0 ? v / 24 + ' ' + x('days') : v + ' ' + x('hrs') },
+  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v >= 48 && v % 24 === 0 ? v / 24 + ' ' + x('days') : v < 2 && v % 1 ? Math.round(v * 60) + ' ' + x('mins') : v + ' ' + x('hrs') },
   scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), of: (p, s) => bandOf(p, s.cat),
            fmt: bandLabel, vals: () => bandCuts(st.cat) ? ['lo', 'mid', 'hi'] : [] },
   cpu:   { kind: 'set', arr: 'cpus', label: () => x('cpuF'), of: cpuOf, fmt: v => v },
@@ -953,6 +953,7 @@ const ASK = {
   vacuum:     ['atype', 'apower', 'batt', 'weight', 'year'],
   coffee:     ['apower', 'avol', 'year'],
   haircare:   ['atype', 'apower', 'year'],
+  grooming:   ['atype', 'life', 'year'],
   kitchen:    ['atype', 'avol', 'apower', 'year'],
   monitor:    ['scr', 'res', 'hz', 'touch', 'panel', 'year'],
   component:  ['year'],
@@ -1921,6 +1922,7 @@ const CAT_ICON = {
   vacuum: 'M14 3v12M14 15l-5 4H5a1.5 1.5 0 0 1 0-3h4l5-1M11 5.5h6v3.5h-6z',
   coffee: 'M5 9h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5zM16 11h1.5a2.5 2.5 0 0 1 0 5H16M8.5 3c0 1.5 1 1.5 1 3M12.5 3c0 1.5 1 1.5 1 3',
   haircare: 'M4 8a5 5 0 1 0 10 0 5 5 0 0 0-10 0zM14 6h6v4h-6M10 13v8h3',
+  grooming: 'M8 3h8v5H8zM9 8h6l-1 13h-4zM8 5H6M18 5h-2',
   kitchen: 'M5 8h14v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3zM3 8h18M9 4.5h6M12 4.5V8',
   component: 'M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4',
   network: 'M3 14h18v5H3zM7 16.5h.01M10 16.5h.01M8 14l-2-8M16 14l2-8',
