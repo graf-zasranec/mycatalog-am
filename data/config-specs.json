@@ -152,5 +152,43 @@
         }
       }
     }
+  ],
+  "lenovo-yoga-slim-7-14iml9-83dj0095ru": [
+    {
+      "url": "https://vlv.am/en/Product/40774",
+      "source": "https://psref.lenovo.com/Detail/2398?M=83DJ0095RU",
+      "verified": "Exact part83DJ0095RU manufacturer-authored PSREF. Merchant family title saysSlim7 but exact part isYoga7 2-in-1; retain fixedpart hardware facts.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core Ultra 5 125H"
+        },
+        "graphics": {
+          "name": "Intel Arc Graphics",
+          "type": "integrated"
+        },
+        "display": {
+          "size": 14,
+          "resolution": "2880x1800",
+          "refresh": 120,
+          "type": "OLED",
+          "touch": true,
+          "brightness": 400
+        },
+        "battery": {
+          "capacity": 71
+        },
+        "body": {
+          "weight": 1490,
+          "width": 317.72,
+          "height": 222.13,
+          "thickness": 16.64
+        },
+        "connectivity": {
+          "wifi": "Wi-Fi 6E",
+          "bluetooth": "5.3",
+          "ports": "1x USB-A 5Gbps, Always On; 2x USB-C Thunderbolt 4 / USB4 40Gbps, USB PD 3.1, DisplayPort 2.1; 1x HDMI 2.1, up to 4K/60Hz; 1x 3.5mm headphone/microphone combo; 1x microSD card reader"
+        }
+      }
+    }
   ]
 }
