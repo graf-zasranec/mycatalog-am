@@ -61464,7 +61464,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 628
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-speaker-ir-control/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-speaker-lite",
@@ -70820,7 +70826,13 @@
     ],
     "connectivity": {
       "bluetooth": "none, wireless link to a Citation soundbar"
-    }
+    },
+    "body": {
+      "weight": 14350
+    },
+    "sources": [
+      "https://support.harmanaudio.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw49d831ad/pdfs/HK_Citation_Subwoofer_Spec_Sheet_English.pdf"
+    ]
   },
   {
     "id": "honor-pad-x9a-lte-5301amuy",
@@ -80680,11 +80692,13 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "ip": "IP67"
+      "ip": "IP67",
+      "weight": 330
     },
     "summaryEn": "Xiaomi Bluetooth Speaker Mini.",
     "sources": [
-      "https://miarmenia.am/en/product/670/xiaomi-bluetooth-speaker-mini"
+      "https://miarmenia.am/en/product/670/xiaomi-bluetooth-speaker-mini",
+      "https://www.mi.com/my/product/xiaomi-bluetooth-speaker-mini/"
     ],
     "unsure": [
       "popularity"
@@ -82492,13 +82506,17 @@
     "battery": {},
     "summaryEn": "JBL Wind 2.",
     "sources": [
-      "https://likemobile.am/en/jbl-wind-2"
+      "https://likemobile.am/en/jbl-wind-2",
+      "https://support.jbl.com/in/en/speakers/CONNECTED+ACCESSORIES+WIND.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 370
     }
   },
   {
@@ -82739,13 +82757,17 @@
     "battery": {},
     "summaryEn": "JBL Playlist.",
     "sources": [
-      "https://likemobile.am/en/jbl-playlist"
+      "https://likemobile.am/en/jbl-playlist",
+      "https://www.digitec.ch/en/s1/product/jbl-playlist-bluetooth-speaker-6305779"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 1120
     }
   },
   {
@@ -82987,13 +83009,17 @@
     "battery": {},
     "summaryEn": "JBL JR POP.",
     "sources": [
-      "https://likemobile.am/en/jbl-jr-pop-red"
+      "https://likemobile.am/en/jbl-jr-pop-red",
+      "https://support.jbl.com/id/en/speakers/speakers-portable/JR+POP.html"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "JBL manuals disagree (4.1 in EN/FR, 4.2 in DE/DA) (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 120
     }
   },
   {
@@ -87780,13 +87806,18 @@
     "battery": {},
     "summaryEn": "Honor Choice Speaker Pro.",
     "sources": [
-      "https://vlv.am/en/Product/35506"
+      "https://vlv.am/en/Product/35506",
+      "https://box.co.uk/5504aavq-honor-choice-speaker-pro-black"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 635
     }
   },
   {
@@ -98504,13 +98535,17 @@
     },
     "summaryEn": "JBL Live Pro+ TWS.",
     "sources": [
-      "https://mobilecentre.am/product/jbl-headphone-live-pro-tws-true-wireless-noise-cancelling-_white_/26267/"
+      "https://mobilecentre.am/product/jbl-headphone-live-pro-tws-true-wireless-noise-cancelling-_white_/26267/",
+      "https://support.jbl.com/ca/en/headphones/headphones-in-ear-grp/headphones-in-ear/LIVE-PRO-PLUS-TWS-.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 10
     }
   },
   {
@@ -98544,13 +98579,17 @@
     },
     "summaryEn": "JBL JR310BT.",
     "sources": [
-      "https://mobilecentre.am/product/jbl-headphone-jr310bt-kids-wireless-on-ear-_blue_/26260/"
+      "https://mobilecentre.am/product/jbl-headphone-jr310bt-kids-wireless-on-ear-_blue_/26260/",
+      "https://support.jbl.com/us/en/headphones/JR310BT-.html"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 115
     }
   },
   {
