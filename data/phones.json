@@ -9974,6 +9974,12 @@
     "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 5800H.",
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1705
+    },
+    "sources": [
+      "https://www.notebookcheck.net/Asus-VivoBook-15-X-Series.772311.0.html"
     ]
   },
   {
@@ -64770,7 +64776,12 @@
     "chipset": {
       "name": "Intel Core 5-120U"
     },
-    "body": {}
+    "body": {
+      "weight": 1700
+    },
+    "sources": [
+      "https://online.challenger.sg/products/asus-vb-x1504va-bq5343w-core-7-150u-16gb-1tb-15-6q-blue"
+    ]
   },
   {
     "id": "asus-vivobook-17-3-core-5-120u-90nb13x2-m00j00",
@@ -64808,9 +64819,14 @@
     "chipset": {
       "name": "Intel Core 5-120U"
     },
-    "body": {},
+    "body": {
+      "weight": 2100
+    },
     "colors": [
       "Blue"
+    ],
+    "sources": [
+      "https://www.sparepartworld.com/asus/notebook/vivobook-serie/vivobook-17-x1704va/"
     ]
   },
   {
@@ -64844,14 +64860,20 @@
     "summaryEn": "ASUS TUF 16\" i7-14650HX RTX5050 /90NR0NA1-M003C0.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i7-14650HX"
     },
-    "body": {},
+    "body": {
+      "weight": 2200
+    },
     "colors": [
       "Gray"
+    ],
+    "sources": [
+      "https://www.notebookcheck.net/Asus-TUF-Gaming-F16-FX607VJ.1064720.0.html"
     ]
   },
   {
@@ -66096,7 +66118,12 @@
     "chipset": {
       "name": "Intel Core i9-13900H"
     },
-    "body": {}
+    "body": {
+      "weight": 2300
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1152115"
+    ]
   },
   {
     "id": "apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4",
@@ -66735,12 +66762,18 @@
     "summaryEn": "ASUS 14'' FHD X1404VA i5-1334U.",
     "unsure": [
       "popularity",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i5-1334U"
     },
-    "body": {}
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-14-x1404/techspec/"
+    ]
   },
   {
     "id": "hp-15-6-ryzen-3-7320u-full-hd",
@@ -68678,11 +68711,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i7-1355U"
-    }
+    },
+    "body": {
+      "weight": 1580
+    },
+    "sources": [
+      "https://www.samsung.com/us/computing/galaxy-books/galaxy-book3/"
+    ]
   },
   {
     "id": "honor-magicbook-x16-plus-16-core-16-1-w11h-5301alvv",
@@ -68847,7 +68887,13 @@
     ],
     "chipset": {
       "name": "Intel Core i5-1334U"
-    }
+    },
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://www.notebookcheck.net/LG-gram-Book-15U50T.1077540.0.html"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-4-16-ultra-5-21yc003ufw",
@@ -68919,11 +68965,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 (Series 2)"
-    }
+    },
+    "body": {
+      "weight": 1230
+    },
+    "sources": [
+      "https://www.samsung.com/us/computing/galaxy-books/galaxy-book5-pro/"
+    ]
   },
   {
     "id": "lenovo-thinkpad-e16-gen-4-16-ultra-7-21yc003tfw",
@@ -69165,7 +69218,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 155H"
-    }
+    },
+    "body": {
+      "weight": 1950
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop-compare/hp-spectre-x360-16-2024-vs-hp-spectre-x360-14-2024"
+    ]
   },
   {
     "id": "lenovo-thinkpad-x9-g1-aura-edition-15-3-ultra-7-258v-w11p-21q6006afw",
@@ -72752,7 +72811,8 @@
     "battery": {},
     "summaryEn": "A 16.2-inch laptop with Apple M5 Max, 48 GB RAM and 2048 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Apple M5 Max"
@@ -72764,7 +72824,13 @@
     "colors": [
       "Space Black"
     ],
-    "os": "macOS"
+    "os": "macOS",
+    "body": {
+      "weight": 2150
+    },
+    "sources": [
+      "https://www.apple.com/macbook-pro/specs/"
+    ]
   },
   {
     "id": "asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t",
@@ -73535,7 +73601,13 @@
       "name": "Intel Iris Xe Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1630
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/dell-vostro-15-3530-vs-Dell-Vostro-15-3500"
+    ]
   },
   {
     "id": "dell-xps-13-9350-touch-core-ultra-9",
@@ -73653,7 +73725,8 @@
     "battery": {},
     "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 7-155H, 8 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-155H"
@@ -73662,7 +73735,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1190
+    },
+    "sources": [
+      "https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-9340-laptop"
+    ]
   },
   {
     "id": "google-pixel-watch-3-45mm-lte",
@@ -73742,7 +73821,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop-compare/hp-probook-4-g1i-16-vs-hp-elitebook-6-g1i-16"
+    ]
   },
   {
     "id": "hp-elitebook-6-g1i-16-ultra-7-255u",
@@ -73783,7 +73868,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://nanoreview.net/en/laptop-compare/hp-probook-4-g1i-16-vs-hp-elitebook-6-g1i-16"
+    ]
   },
   {
     "id": "hp-elitebook-660-g11-u5-125u",
@@ -73814,7 +73905,8 @@
     "battery": {},
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 5-125U, 16 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-125U"
@@ -73823,7 +73915,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1740
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/hp-elitebook-660-g11-vs-hp-zbook-firefly-14-g9"
+    ]
   },
   {
     "id": "hp-elitebook-8g1i13-ultra",
@@ -74357,7 +74455,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1390
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/hp-probook-440-g11-vs-HP-ProBook-455-G8"
+    ]
   },
   {
     "id": "apple-macbook-pro-16-inch-m5-pro-mgec4",
@@ -74386,7 +74490,8 @@
     "battery": {},
     "summaryEn": "A 16.2-inch laptop with Apple M5 Pro, 48 GB RAM and 1024 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Apple M5 Pro"
@@ -74398,7 +74503,13 @@
     "colors": [
       "Space Black"
     ],
-    "os": "macOS"
+    "os": "macOS",
+    "body": {
+      "weight": 2140
+    },
+    "sources": [
+      "https://www.apple.com/macbook-pro/specs/"
+    ]
   },
   {
     "id": "xiaomi-pad-m1",
@@ -74630,7 +74741,8 @@
     "battery": {},
     "summaryEn": "A 14-inch laptop with Intel Core i7-1355U, 12 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i7-1355U"
@@ -74639,7 +74751,13 @@
       "name": "Intel Iris Xe Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-14-x1404/techspec/"
+    ]
   },
   {
     "id": "asus-zenbook-ultra-ux3405ma-qd993-oled",
@@ -74671,7 +74789,8 @@
     "battery": {},
     "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-185H, 16 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-185H"
@@ -74680,7 +74799,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "DOS"
+    "os": "DOS",
+    "body": {
+      "weight": 1200
+    },
+    "sources": [
+      "https://www.asus.com/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/techspec/"
+    ]
   },
   {
     "id": "amazon-kindle-scribe-colorsoft",
@@ -75090,10 +75215,12 @@
     "battery": {},
     "summaryEn": "Lenovo THINKPAD X1 CARBON GEN13 TP00150B.",
     "sources": [
-      "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen13-tp00150b/"
+      "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen13-tp00150b/",
+      "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/lenovo-thinkpad-x1-carbon-gen-13-aura-edition-14-inch-intel/len101t0101"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "display": {
       "size": 14
@@ -75102,6 +75229,9 @@
     "specNA": {
       "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2.8K OLED (checked 2026-10-23)",
       "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with several Core Ultra chips (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 986
     }
   },
   {
@@ -75308,7 +75438,8 @@
     "battery": {},
     "summaryEn": "Dell VOSTRO 15 3530.",
     "sources": [
-      "https://appzone.am/en/Assortment/dell-vostro-15-3530/"
+      "https://appzone.am/en/Assortment/dell-vostro-15-3530/",
+      "https://laptopdecision.com/compare/dell-vostro-15-3530-vs-Dell-Vostro-15-3500"
     ],
     "unsure": [
       "popularity",
@@ -75327,6 +75458,9 @@
     "graphics": {
       "name": "INTEGRATED",
       "type": "integrated"
+    },
+    "body": {
+      "weight": 1630
     }
   },
   {
@@ -75448,12 +75582,14 @@
     "battery": {},
     "summaryEn": "HP HYPERX OMEN 16-AM2715NR.",
     "sources": [
-      "https://appzone.am/en/Assortment/hyperx-omen-16-am2715nr/"
+      "https://appzone.am/en/Assortment/hyperx-omen-16-am2715nr/",
+      "https://www.notebookcheck.net/HP-Omen-16-2024.826491.0.html"
     ],
     "unsure": [
       "popularity",
       "chipset",
-      "graphics"
+      "graphics",
+      "body.weight"
     ],
     "display": {
       "size": 16,
@@ -75467,6 +75603,9 @@
     "graphics": {
       "name": "RTX 5070 8GB",
       "type": "discrete"
+    },
+    "body": {
+      "weight": 2430
     }
   },
   {
@@ -75492,11 +75631,13 @@
     "battery": {},
     "summaryEn": "MSI VECTOR 16HX AI A2XWIG.",
     "sources": [
-      "https://appzone.am/en/Assortment/vector-16hx-ai-a2xwig/"
+      "https://appzone.am/en/Assortment/vector-16hx-ai-a2xwig/",
+      "https://www.msi.com/Laptop/Vector-16-HX-AI-A2XWX/Specification"
     ],
     "unsure": [
       "popularity",
-      "chipset"
+      "chipset",
+      "body.weight"
     ],
     "display": {
       "size": 16,
@@ -75506,6 +75647,9 @@
     "os": "Windows 11",
     "chipset": {
       "name": "Intel Core Ultra 9-275HX"
+    },
+    "body": {
+      "weight": 2700
     }
   },
   {
@@ -75964,10 +76108,12 @@
     "battery": {},
     "summaryEn": "HP ZBOOK FIREFLY 16 G11.",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-zbook-firefly-16-g11/"
+      "https://appzone.am/en/Assortment/hp-zbook-firefly-16-g11/",
+      "https://laptopmedia.com/laptop-specs/hp-zbook-firefly-16-g11-5/specs/"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-165U"
@@ -75982,6 +76128,9 @@
     "os": "Windows 11",
     "specNA": {
       "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2560x1600 (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 1720
     }
   },
   {
@@ -76051,10 +76200,12 @@
     "battery": {},
     "summaryEn": "HP ProBook 455 G8 (45N89ES/16).",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-probook-455-g8-45n89es-16/"
+      "https://appzone.am/en/Assortment/hp-probook-455-g8-45n89es-16/",
+      "https://laptopdecision.com/compare/hp-probook-440-g11-vs-HP-ProBook-455-G8"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "AMD Ryzen 5 5600U"
@@ -76064,7 +76215,10 @@
       "type": "IPS",
       "resolution": "1920x1080"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1740
+    }
   },
   {
     "id": "lenovo-thinkbook-14-g9",
@@ -76312,10 +76466,12 @@
     "battery": {},
     "summaryEn": "HP ProBook 455 G8 (45N87ES).",
     "sources": [
-      "https://appzone.am/en/Assortment/hp-probook-455-g8-45n87es/"
+      "https://appzone.am/en/Assortment/hp-probook-455-g8-45n87es/",
+      "https://laptopdecision.com/compare/hp-probook-440-g11-vs-HP-ProBook-455-G8"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "chipset": {
       "name": "AMD Ryzen 7 5800U"
@@ -76325,7 +76481,10 @@
       "type": "IPS",
       "resolution": "1920x1080"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1740
+    }
   },
   {
     "id": "hp-17-cn4071cl-b9lq4ua",
@@ -76447,7 +76606,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Intel Core i5-1235U"
@@ -76455,7 +76615,13 @@
     "graphics": {
       "name": "Intel Iris Xe Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1740
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/HP-ProBook-450-G9-vs-hp-probook-440-g11"
+    ]
   },
   {
     "id": "hp-probook-460-g11-ultra-5-125u",
@@ -76495,7 +76661,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1740
+    },
+    "sources": [
+      "https://laptopdecision.com/compare/hp-probook-460-g11-vs-HP-ProBook-450-G8"
+    ]
   },
   {
     "id": "hp-probook-4g1i16-ultra-5-225u",
@@ -76536,7 +76708,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1795705"
+    ]
   },
   {
     "id": "hp-probook-4g1i16-ultra-7-255h",
@@ -76576,7 +76754,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1795705"
+    ]
   },
   {
     "id": "hp-probook-4g1i16-ultra-7-255u",
@@ -76617,7 +76801,13 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://laptopmedia.com/?p=1795705"
+    ]
   },
   {
     "id": "hp-victus-15-fa2082wm-core-i5",
@@ -79202,6 +79392,12 @@
     },
     "colors": [
       "Grey"
+    ],
+    "body": {
+      "weight": 2100
+    },
+    "sources": [
+      "https://support.apple.com/kb/SP858"
     ]
   },
   {
@@ -79822,11 +80018,16 @@
     },
     "summaryEn": "MSI Thin 15 B12VE-2836XRU.",
     "sources": [
-      "https://miarmenia.am/en/product/625/msi-thin-15-b12ve-2836xru"
+      "https://miarmenia.am/en/product/625/msi-thin-15-b12ve-2836xru",
+      "https://www.msi.com/Laptop/Thin-15-B12VX/Specification"
     ],
     "unsure": [
-      "popularity"
-    ]
+      "popularity",
+      "body.weight"
+    ],
+    "body": {
+      "weight": 1860
+    }
   },
   {
     "id": "xiaomi-bluetooth-speaker-mini",
