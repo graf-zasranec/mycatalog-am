@@ -21328,7 +21328,8 @@
     "battery": {},
     "summaryEn": "Honor Choice Earbuds X5.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "audio": {
       "form": "tws",
@@ -21339,8 +21340,12 @@
       "bluetooth": "5.3"
     },
     "sources": [
-      "https://www.honor.com/my/honor-choice/earbuds-x5/"
-    ]
+      "https://www.honor.com/my/honor-choice/earbuds-x5/",
+      "https://versus.com/en/honor-earbuds-x5"
+    ],
+    "body": {
+      "weight": 7.6
+    }
   },
   {
     "id": "honor-choice-earbuds-x7e-ast-me00",
@@ -21516,6 +21521,12 @@
     },
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 4.2
+    },
+    "sources": [
+      "https://www.honor.com/global/honor-choice/earbuds-x7-lite/"
     ]
   },
   {
@@ -61980,7 +61991,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 6.5
+    },
+    "sources": [
+      "https://www.gsmarena.com/sony_wf1000xm6_review_-news-71510.php"
+    ]
   },
   {
     "id": "marshall-monitor-iii",
@@ -62212,7 +62229,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 5.6
+    },
+    "sources": [
+      "https://www.jbl.com/TOUR-PRO-3.html"
+    ]
   },
   {
     "id": "beats-powerbeats-fit",
@@ -62540,7 +62563,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 6.1
+    },
+    "sources": [
+      "https://hometheaterreview.com/vs/jbl-tour-pro-2-true-wireless-earbuds-vs-jbl-tour-pro-3-true-wireless-earbuds-comparison/"
+    ]
   },
   {
     "id": "sony-wh-ult900n",
@@ -62980,7 +63009,13 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 52
+    },
+    "sources": [
+      "https://manuals.plus/jbl/soundgear-frames-audio-glasses-manual"
+    ]
   },
   {
     "id": "jbl-live-buds-3",
@@ -63155,7 +63190,13 @@
     },
     "connectivity": {
       "bluetooth": "5.1"
-    }
+    },
+    "body": {
+      "weight": 6.8
+    },
+    "sources": [
+      "https://www.popsci.com/reviews/jbl-live-free-review/"
+    ]
   },
   {
     "id": "jbl-soundgear-clips-earclips",
@@ -63197,7 +63238,13 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 6.5
+    },
+    "sources": [
+      "https://global.jbl.com/SOUNDGEAR-CLIPS.html"
+    ]
   },
   {
     "id": "jbl-tour-pro-plus",
@@ -63408,7 +63455,13 @@
     },
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 10.5
+    },
+    "sources": [
+      "https://www.jbl.com/ENDURANCE-PEAK-4.html"
+    ]
   },
   {
     "id": "oneplus-buds-4",
@@ -63921,7 +63974,13 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 25
+    },
+    "sources": [
+      "https://www.jbl.com/ENDURANCE-PEAK-3.html"
+    ]
   },
   {
     "id": "microsoft-modern-usb",
@@ -64278,7 +64337,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White",
@@ -64293,7 +64353,13 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
-    }
+    },
+    "body": {
+      "weight": 220
+    },
+    "sources": [
+      "https://www.91mobiles.com/list-of-headphones/jbl-headphones-price-list-in-india"
+    ]
   },
   {
     "id": "oneplus-bullets-wireless-z-2",
@@ -68195,7 +68261,13 @@
     },
     "connectivity": {
       "bluetooth": "6.0"
-    }
+    },
+    "body": {
+      "weight": 218
+    },
+    "sources": [
+      "https://global.jbl.com/over-ear-headphones/TUNE730BT.html"
+    ]
   },
   {
     "id": "jbl-quantum-100",
@@ -68303,7 +68375,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "White"
@@ -68315,7 +68388,13 @@
     },
     "connectivity": {
       "bluetooth": "none, wired USB-C"
-    }
+    },
+    "body": {
+      "weight": 152
+    },
+    "sources": [
+      "https://global.jbl.com/on-ear-headphones/TUNE530BT.html"
+    ]
   },
   {
     "id": "sony-wi-c100",
@@ -79628,6 +79707,12 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 4.31
+    },
+    "sources": [
+      "https://www.marshall.com/us/en/product/motif-ii-anc?pid=1006450"
     ]
   },
   {
@@ -79880,11 +79965,15 @@
     },
     "summaryEn": "Xiaomi Redmi Buds 8 Pro.",
     "sources": [
-      "https://miarmenia.am/en/product/660/xiaomi-redmi-buds-8-pro"
+      "https://miarmenia.am/en/product/660/xiaomi-redmi-buds-8-pro",
+      "https://www.yankodesign.com/2026/02/28/redmi-buds-8-pro-review-this-e69-90-earbud-punches-way-above-its-weight/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5.3
+    }
   },
   {
     "id": "xiaomi-router-ac1200",
@@ -87620,13 +87709,18 @@
     },
     "summaryEn": "JBL Quantum 350 Wireless.",
     "sources": [
-      "https://vlv.am/en/Product/18606"
+      "https://vlv.am/en/Product/18606",
+      "https://www.productindetail.com/cs/comparison-jbl-quantum-100-vs-jbl-quantum-350-wireless"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 252
     }
   },
   {
@@ -96870,13 +96964,17 @@
     },
     "summaryEn": "Nothing CMF Buds 2A.",
     "sources": [
-      "https://mobilecentre.am/product/cmf-by-nothing-buds-2a-headphone-_black_/33024/"
+      "https://mobilecentre.am/product/cmf-by-nothing-buds-2a-headphone-_black_/33024/",
+      "https://www.smartprix.com/mobile_headphones/cmf_buds_2a_vs_realme_buds_t310_true_wireless-cpd1qz6hkzn3_pd11nzdvxho.php"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 4.3
     }
   },
   {
@@ -96917,6 +97015,9 @@
     ],
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
+    },
+    "specNA": {
+      "body.weight": "Apple lists no weight for EarPods (checked 2026-10-24)"
     }
   },
   {
@@ -97075,13 +97176,17 @@
     },
     "summaryEn": "Realme Buds T310.",
     "sources": [
-      "https://mobilecentre.am/product/realme-headphone-buds-t310-_white_/31220/"
+      "https://mobilecentre.am/product/realme-headphone-buds-t310-_white_/31220/",
+      "https://www.gadgetpilipinas.net/2024/08/realme-buds-t310-review/"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 4.2
     }
   },
   {
@@ -97246,13 +97351,18 @@
     },
     "summaryEn": "Realme Buds Air 5.",
     "sources": [
-      "https://mobilecentre.am/product/realme-headphone-buds-air-5-_white_/31211/"
+      "https://mobilecentre.am/product/realme-headphone-buds-air-5-_white_/31211/",
+      "https://www.facecebu.net/2023/10/unboxed-realme-buds-air-5-specs-and.html"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.4
     }
   },
   {
@@ -97515,13 +97625,17 @@
     },
     "summaryEn": "JBL Wave 300 TWS.",
     "sources": [
-      "https://mobilecentre.am/product/jbl-wave-300tws-true-wireless-in-ear-headphone-_pink_/26722/"
+      "https://mobilecentre.am/product/jbl-wave-300tws-true-wireless-in-ear-headphone-_pink_/26722/",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa1b91d9c/pdfs/JBL_Wave_300TWS_SpecSheet_Global_English.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 3.85
     }
   },
   {
@@ -97596,13 +97710,17 @@
     },
     "summaryEn": "Xiaomi Redmi Buds 3.",
     "sources": [
-      "https://mobilecentre.am/product/xiaomi-redmi-buds-3-_m2104e1_-bhr5174gl-_white_/26552/"
+      "https://mobilecentre.am/product/xiaomi-redmi-buds-3-_m2104e1_-bhr5174gl-_white_/26552/",
+      "https://www.mi.com/global/product/redmi-buds-3/specs/"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 4.5
     }
   },
   {
