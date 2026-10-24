@@ -178,7 +178,8 @@ const PREFIXES = new Set(['note', 'redmi', 'poco', 'nord']);
 
 // A second-hand phone is not the product. The catalogue prices new stock only, and
 // ibolit's "used-17-pro-max-256-blue" was sitting in the Xiaomi 17 Pro Max's offer list.
-const SECONDHAND = ['used', 'refurbished', 'renewed', 'preowned', 'уценка', 'восстановленный'];
+// 'outlet' (owner 2026-10-24): Zigzag's outlet units are used promo stock, sometimes damaged and not returnable.
+const SECONDHAND = ['used', 'refurbished', 'renewed', 'preowned', 'уценка', 'восстановленный', 'outlet', 'աութլեթ'];
 
 // Shops list accessories under the phone's own name ("Clear Case with MagSafe for iPhone 15"),
 // and those were being priced AS the phone. Anything that names an accessory, or is sold
@@ -948,6 +949,7 @@ if (process.argv[2] === '--selftest') {
     ['jbl-tune-720-bt', 'JBL Tune 720BT'],
     ['jbl-tune-760-nc', 'JBL Tune 760NC'],
     [null, 'JBL Tune 570BT'],
+    [null, 'Dyson Supersonic HD16 hair dryer Red Velvet/Gold - outlet'],
     ['apple-airpods-4-anc', 'AirPods 4 NC'],
     ['apple-airpods-max-2','Apple AirPods Max 2 Type-C Midnight'],
     ['apple-airpods-max-usb-c-2024','Apple AirPods Max (2024) Midnight'],
@@ -3265,7 +3267,8 @@ try {
 // Apply this to carried and hand-entered offers too, before history and public data are written.
 for (const id of Object.keys(offers)) {
   offers[id] = offers[id].filter(o => purchasableOffer(o)
-    && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title)));
+    && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title))
+    && !/\boutlet\b|աութլեթ/i.test(o.title || ''));
 }
 // A price-only refresh must not silently release a hardware contradiction.
 try {
