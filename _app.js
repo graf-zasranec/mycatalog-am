@@ -1354,8 +1354,10 @@ const boxes = (key, vals, fmt) => (vals.length >= FIND_AT
   `<label class="opt"><input type="checkbox" data-f="${key}" value="${esc(String(v))}"><span>${esc(fmt(v))}</span><span class="n num" data-cnt="${key}:${esc(String(v))}"></span></label>`).join('');
 
 // A filter earns its place only if the items in view actually differ on it. Deriving that
-// from the data means a new category never needs a hand-written filter list.
-function inView() { return DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat); }
+// from the data means a new category never needs a hand-written filter list. Only what a shop
+// sells today counts: the grid hides the rest (hayMatch), so a brand or CPU taken from them was
+// an option that emptied the page - Meta, Starlink and Karcher all did (2026-10-24).
+function inView() { return DATA.filter(p => (!st.cat || (p.category || 'phone') === st.cat) && hasReal(p)); }
 function varies(get) { return new Set(inView().map(get).filter(v => v != null && v !== '')).size > 1; }
 // The values a tick-list offers: only the ones something in view actually has, so "Submersible"
 // is not offered on a page where nothing is waterproof.

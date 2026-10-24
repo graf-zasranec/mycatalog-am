@@ -48,7 +48,7 @@ const vals = [phones, STR, prices, VERD, TERMS, ...Object.values(stub)];
 const exports_ = `; return { hayMatch, searchMatches, typoDistance, suggestFor, bestTier, visibleOffers, matches, offersFor, bestOf,
   offerConfig, configPool, chooseConfig, selectionOffers, catalogOffers, catalogPrice, filterValues, initialConfig, selectedProduct, compareConfig, compareOptions, specAllowed, addLabel, counterPath,
   activeFilterCount, seenTag, pageCount, offerRow, hay, fullName, sold,
-  GROUPS, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList,
+  GROUPS, FILT, filterBodies, results, specVal, tr, histSeries, deals, filterBar, askable, keepsQuery, waterOf, mpOf, hoursOf, cpuOf, bandCuts, shopRows, cdText, unsureRow, colorPhoto, cycList,
   get st(){return st}, set st(v){st = v}, get SEL(){return SEL}, set SEL(v){SEL = v}, PMIN, PMAX };`;
 // The file ends by painting the page. There is no page here, and a stub DOM deep enough to
 // satisfy the renderer would be a second implementation to keep in step with the first - so the
@@ -214,6 +214,22 @@ is(/data-shop="istyle" data-pid="apple-iphone-17-pro" data-price="455000"/.test(
 is(barKeys('').length > 3, true, 'the whole catalogue can still be asked spec questions');
 is(hasNone(barKeys('headphones'), ['ram', 'stor', 'cpu', 'gpu']), [], 'headphones are not asked about RAM or CPUs');
 is(barKeys('').includes('shop'), true, 'the shop filter applies everywhere');
+// every option the bar offers has to lead somewhere: one taken from a product no shop sells
+// today (hidden from the grid) emptied the page - Meta, Starlink, Karcher (2026-10-24)
+{
+  const dead = [], clean = { ...app.st, q: '', fopen: true, pmin: app.PMIN, pmax: app.PMAX };
+  for (const k in app.FILT) if (app.FILT[k].kind === 'set') clean[app.FILT[k].arr] = []; else clean[k] = 0;
+  for (const cat of ['', ...new Set(phones.map(p => p.category || 'phone'))]) {
+    app.st = { ...clean, cat };
+    app.filterBodies.clear();
+    const bar = app.filterBar();
+    for (const k of ['brand', 'cpu']) for (const [, v] of (bar + [...app.filterBodies.values()].join('')).matchAll(new RegExp(`data-f="${k}" value="([^"]+)"`, 'g'))) {
+      app.st = { ...clean, cat, [k === 'brand' ? 'brands' : 'cpus']: [v.replace(/&#39;/g, "'").replace(/&amp;/g, '&')] };
+      if (!app.results().length) dead.push(`${cat || 'all'}:${k}:${v}`);
+    }
+  }
+  is(dead, [], 'no brand or CPU option leads to an empty page');
+}
 app.st = { ...app.st, cat: '', fopen: false };
 
 // Construct asks the same questions the bar does, so a watch is not asked about milliamp-hours
