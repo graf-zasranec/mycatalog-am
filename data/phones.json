@@ -16109,7 +16109,8 @@
     "battery": {},
     "summaryEn": "Garmin Fenix 8 Pro – 47 mm, AMOLED.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "colors": [],
     "variantUnit": "mm",
@@ -16117,7 +16118,13 @@
     "year": 2025,
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "body": {
+      "weight": 77
+    },
+    "sources": [
+      "https://garminrumors.com/models/fenix-8-pro/"
+    ]
   },
   {
     "id": "garmin-fenix-9-51mm-carbon-dlc-band",
@@ -58180,6 +58187,12 @@
       "Pink",
       "Black",
       "Purple"
+    ],
+    "body": {
+      "weight": 670
+    },
+    "sources": [
+      "https://www.amazon.com/Amazon_Fire_HD_10_Kids/dp/B0BL5TKDVG"
     ]
   },
   {
@@ -70605,7 +70618,13 @@
     ],
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 2850
+    },
+    "sources": [
+      "https://www.harmanaudio.com/CITATION+200-.html"
+    ]
   },
   {
     "id": "harman-kardon-citation-surround",
@@ -70743,17 +70762,27 @@
       "size": 11.5,
       "resolution": "2508x1504"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 8300
+    },
     "summaryEn": "Honor Pad X9a LTE /5301AMUY.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 685"
-    }
+    },
+    "body": {
+      "weight": 475
+    },
+    "sources": [
+      "https://www.gsmarena.com/honor_pad_x9a-13751.php",
+      "https://www.honor.com/global/tablets/honor-pad-x9a/"
+    ]
   },
   {
     "id": "xiaomi-pad-8-pro",
@@ -70784,7 +70813,9 @@
       "size": 11.2,
       "resolution": "3200x2136"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 9200
+    },
     "summaryEn": "Xiaomi Pad 8 Pro.",
     "unsure": [
       "popularity",
@@ -70797,7 +70828,13 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite"
-    }
+    },
+    "body": {
+      "weight": 485
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-pad-8-pro/"
+    ]
   },
   {
     "id": "garmin-epix-pro-sapphire-edition-47-mm",
@@ -70830,11 +70867,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "specNA": {
       "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
-    }
+    },
+    "body": {
+      "weight": 70
+    },
+    "sources": [
+      "https://versus.com/en/garmin-epix-pro-gen-2-sapphire-47mm-vs-garmin-fenix-8-amoled-sapphire"
+    ]
   },
   {
     "id": "garmin-enduro-3",
@@ -70906,11 +70950,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "specNA": {
       "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
-    }
+    },
+    "body": {
+      "weight": 73
+    },
+    "sources": [
+      "https://versus.com/en/garmin-fenix-8-pro-vs-garmin-tactix-8"
+    ]
   },
   {
     "id": "garmin-tactix-8-51-mm-amoled",
@@ -70939,11 +70990,18 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "specNA": {
       "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
-    }
+    },
+    "body": {
+      "weight": 96
+    },
+    "sources": [
+      "https://wiki.garminrumors.com/Tactix_8"
+    ]
   },
   {
     "id": "lg-oled55c5rla",
@@ -82490,13 +82548,17 @@
     "battery": {},
     "summaryEn": "JBL SoundBar 800.",
     "sources": [
-      "https://likemobile.am/en/jbl-soundbar-800"
+      "https://likemobile.am/en/jbl-soundbar-800",
+      "https://jbl.com/soundbars/BAR-800-.html"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 3400
     }
   },
   {
@@ -82523,13 +82585,17 @@
     "battery": {},
     "summaryEn": "JBL SoundBar 500.",
     "sources": [
-      "https://likemobile.am/en/jbl-soundbar-500"
+      "https://likemobile.am/en/jbl-soundbar-500",
+      "https://www.jbl.com/soundbars/BAR-500-.html"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 2800
     }
   },
   {
@@ -88000,13 +88066,17 @@
     "battery": {},
     "summaryEn": "JBL PartyBox On-The-Go 2.",
     "sources": [
-      "https://vlv.am/en/Product/48772"
+      "https://vlv.am/en/Product/48772",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf992c52b/pdfs/JBL_PARTYBOX_On_The_GO_2_OM_Global_EN_V3.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 6360
     }
   },
   {
