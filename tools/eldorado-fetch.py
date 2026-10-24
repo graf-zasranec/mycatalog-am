@@ -47,6 +47,29 @@ CATEGORIES = [
     'games-and-entertainment/game-consoles',
     'dyson-products-eldorado/dyson-hair-care-armenia-eldorado',
     'dyson-products-eldorado/dyson-vacuum-cleaners-eldorado',
+    # appliances and personal care (2026-10-24): the catalogue carries these sections and
+    # Eldorado stocks them, but none of its offers were read
+    'small-appliances/personal-care-products/shavers',
+    'small-appliances/personal-care-products/epilators',
+    'small-appliances/personal-care-products/clippers',
+    'small-appliances/personal-care-products/hair-dryers',
+    'small-appliances/personal-care-products/electric-toothbrush',
+    'small-appliances/household-devices/irons',
+    'small-appliances/household-devices/kattles',
+    'small-appliances/household-devices/blenders',
+    'small-appliances/household-devices/mixers',
+    'small-appliances/household-devices/juicers',
+    'small-appliances/household-devices/food-processors',
+    'small-appliances/food-preparation-devices/toasters',
+    'small-appliances/food-preparation-devices/grill',
+    'small-appliances/food-preparation-devices/airfryers',
+    'small-appliances/coffee-machines-and-coffee-makers/coffee-machines',
+    'small-appliances/coffee-machines-and-coffee-makers/filter-coffee-machines',
+    'small-appliances/cleaning-equipments/vacuum-cleaners',
+    'small-appliances/cleaning-equipments/cordless-vacuum-cleaners',
+    'small-appliances/cleaning-equipments/robot-vacuum-cleaner',
+    'climate/humidifiers',
+    'climate/air-purifiers',
 ]
 
 # <a class="product_name combo_link" href="...">TITLE</a> ... data-price-amount="89900"
