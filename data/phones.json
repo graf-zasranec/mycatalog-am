@@ -12439,7 +12439,8 @@
     "battery": {},
     "summaryEn": "Bose SoundSport Free.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "audio": {
       "form": "tws",
@@ -12449,7 +12450,13 @@
     "connectivity": {},
     "specNA": {
       "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
-    }
+    },
+    "body": {
+      "weight": 9
+    },
+    "sources": [
+      "https://gadgetguy.com.au/product/bose-soundsport-free-wireless-earphones-best-earbuds-yet-review/"
+    ]
   },
   {
     "id": "bose-soundtouch-10",
@@ -62403,7 +62410,13 @@
     },
     "specNA": {
       "connectivity.bluetooth": "Beats lists Class 1 Bluetooth and no version number (beatsbydre.com, 2026-10-03)"
-    }
+    },
+    "body": {
+      "weight": 5.78
+    },
+    "sources": [
+      "https://ie.selectonline.com/beats-earphones-wireless-powerbeats-fit"
+    ]
   },
   {
     "id": "bose-noise-cancelling-700",
@@ -63009,7 +63022,13 @@
     },
     "connectivity": {
       "bluetooth": "5.2"
-    }
+    },
+    "body": {
+      "weight": 6.1
+    },
+    "sources": [
+      "https://www.notebookcheck.net/Xiaomi-FlipBuds-Pro-TWS-review-The-best-True-Wireless-in-ears-under-200-Euros.548150.0.html"
+    ]
   },
   {
     "id": "jbl-live-680nc",
@@ -63407,7 +63426,8 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "body.weight"
     ],
     "colors": [
       "Black"
@@ -63419,7 +63439,13 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 7.5
+    },
+    "sources": [
+      "https://support.jbl.com/gb/en/headphones/TOUR-PRO-TWS-.html"
+    ]
   },
   {
     "id": "jbl-soundgear-sense",
@@ -64543,7 +64569,13 @@
     },
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 27
+    },
+    "sources": [
+      "https://www.digit.in/audio/oneplus-bullets-z2-wireless-neckband.html"
+    ]
   },
   {
     "id": "sony-mdr-xb450ap",
@@ -64759,7 +64791,13 @@
     },
     "specNA": {
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
-    }
+    },
+    "body": {
+      "weight": 15
+    },
+    "sources": [
+      "https://store.google.com/us/product/usb_c_earbuds"
+    ]
   },
   {
     "id": "sony-ps4-stereo-gaming",
@@ -82941,10 +82979,12 @@
     },
     "summaryEn": "Sony PULSE 3D Wireless Headset.",
     "sources": [
-      "https://likemobile.am/en/sony-playstation-5-pulse-3d-wireless-headset"
+      "https://likemobile.am/en/sony-playstation-5-pulse-3d-wireless-headset",
+      "https://mein-mmo.de/en/sonys-pulse-3d-convinces-in-the-test-but-fails-on-my-head,925482"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "colors": [
       "Black",
@@ -82952,6 +82992,9 @@
     ],
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 292
     }
   },
   {
@@ -85141,8 +85184,12 @@
     "summaryEn": "Xiaomi Redmi Buds 8 Active true wireless earbuds: 14.2 mm titanium driver, dual-mic AI call noise reduction, Bluetooth 5.4, up to 37 hours with the case.",
     "sources": [
       "https://miarmenia.am/en/product/615/redmi-buds-8-active",
-      "https://www.mi.com/global/product/redmi-buds-8-active/"
-    ]
+      "https://www.mi.com/global/product/redmi-buds-8-active/",
+      "https://www.mi.com/ae-en/product/redmi-buds-8-active/specs/"
+    ],
+    "body": {
+      "weight": 3.8
+    }
   },
   {
     "tier": "mid",
@@ -97589,13 +97636,17 @@
     },
     "summaryEn": "Xiaomi Mi True Wireless Earbuds Basic 2.",
     "sources": [
-      "https://mobilecentre.am/product/xiaomi-mi-true-wireless-earbuds-basic-2-bhr4272-_black_/31313/"
+      "https://mobilecentre.am/product/xiaomi-mi-true-wireless-earbuds-basic-2-bhr4272-_black_/31313/",
+      "https://www.mi.com/uk/product/mi-true-wireless-earbuds-basic-2/specs"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 4.1
     }
   },
   {
@@ -99258,7 +99309,8 @@
       "life": "9 hours"
     },
     "body": {
-      "ip": "IPX4"
+      "ip": "IPX4",
+      "weight": 5
     },
     "connectivity": {
       "bluetooth": "5.3"
@@ -99266,10 +99318,12 @@
     "colors": [],
     "summaryEn": "Motorola's noise-cancelling earbuds with 12.4 mm drivers and Bluetooth 5.3.",
     "sources": [
-      "https://shop.ucom.am/am/motorola-motobuds.html"
+      "https://shop.ucom.am/am/motorola-motobuds.html",
+      "https://smartprix.com/mobile_headphones/motorola-moto-buds-true-wireless-earbuds-ppd1hezjl6xc"
     ],
     "unsure": [
-      "popularity"
+      "popularity",
+      "body.weight"
     ],
     "priceAmd": 35900,
     "priceAmdMax": 35900,
