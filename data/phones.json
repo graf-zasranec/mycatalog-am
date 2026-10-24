@@ -36384,7 +36384,10 @@
       "Samsung Galaxy Buds 2",
       "Samsung Galaxy Buds 2 White",
       "Samsung Galaxy Buds 2 Black",
-      "Galaxy 2"
+      "Galaxy 2",
+      "Samsung Galaxy Buds2",
+      "Galaxy Buds2 R177",
+      "Samsung Galaxy Buds2 R177"
     ],
     "tier": "budget",
     "priceAmd": 42000,
@@ -36399,8 +36402,10 @@
       }
     ],
     "display": {},
-    "battery": {},
-    "summaryEn": "Samsung Galaxy 2.",
+    "battery": {
+      "life": "5 hours with ANC (20 with the case)"
+    },
+    "summaryEn": "Small, light Galaxy earbuds with active noise cancelling at a budget price.",
     "unsure": [
       "popularity"
     ],
@@ -36414,17 +36419,21 @@
       "bluetooth": "5.2"
     },
     "body": {
-      "weight": 5
+      "weight": 5,
+      "ip": "IPX2"
     },
     "sources": [
-      "https://web.archive.org/web/20250725171933/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-graphite-sm-r177nzkaeua/"
+      "https://web.archive.org/web/20250725171933/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-graphite-sm-r177nzkaeua/",
+      "https://www.samsung.com/global/galaxy/galaxy-buds2/specs/"
     ],
     "colors": [
       "Graphite",
       "Lavender",
       "White",
-      "Black"
-    ]
+      "Black",
+      "Green"
+    ],
+    "released": "2021-08"
   },
   {
     "id": "samsung-galaxy-2-pro",
@@ -36434,7 +36443,10 @@
     "aliases": [
       "Galaxy Buds 2 Pro",
       "Samsung Galaxy Buds 2 Pro",
-      "Galaxy 2 Pro"
+      "Galaxy 2 Pro",
+      "Samsung Galaxy Buds2 Pro",
+      "Galaxy Buds2 Pro R510",
+      "Samsung Galaxy Buds2 Pro R510"
     ],
     "tier": "budget",
     "priceAmd": 48000,
@@ -36449,8 +36461,10 @@
       }
     ],
     "display": {},
-    "battery": {},
-    "summaryEn": "Samsung Galaxy 2 Pro.",
+    "battery": {
+      "life": "5 hours with ANC (18 with the case)"
+    },
+    "summaryEn": "Samsung's 2022 flagship earbuds: 24-bit audio, active noise cancelling and IPX7.",
     "unsure": [
       "popularity"
     ],
@@ -36464,16 +36478,19 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 5.5
+      "weight": 5.5,
+      "ip": "IPX7"
     },
     "sources": [
-      "https://web.archive.org/web/20250726074413/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-pro-graphite-sm-r510nzaaeua/"
+      "https://web.archive.org/web/20250726074413/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds2-pro-graphite-sm-r510nzaaeua/",
+      "https://www.samsung.com/global/galaxy/galaxy-buds2-pro/specs/"
     ],
     "colors": [
       "Purple",
       "White",
       "Black"
-    ]
+    ],
+    "released": "2022-08"
   },
   {
     "id": "samsung-galaxy-3",
@@ -97688,110 +97705,6 @@
         "ram": null,
         "storage": null,
         "priceAmd": 219500
-      }
-    ]
-  },
-  {
-    "id": "samsung-galaxy-buds-2-pro",
-    "category": "headphones",
-    "brand": "Samsung",
-    "name": "Galaxy Buds2 Pro",
-    "aliases": [
-      "Samsung Galaxy Buds2 Pro",
-      "Samsung Galaxy Buds 2 Pro",
-      "Galaxy Buds2 Pro R510",
-      "Samsung Galaxy Buds2 Pro R510"
-    ],
-    "tier": "mid",
-    "released": "2022-08",
-    "popularity": 55,
-    "accent": "#2B2B2E",
-    "audio": {
-      "anc": true,
-      "form": "tws",
-      "conn": "wireless"
-    },
-    "battery": {
-      "life": "5 hours with ANC (18 with the case)"
-    },
-    "connectivity": {
-      "bluetooth": "5.3"
-    },
-    "body": {
-      "ip": "IPX7",
-      "weight": 5.5
-    },
-    "colors": [
-      "White",
-      "Black",
-      "Light Purple"
-    ],
-    "summaryEn": "Samsung's 2022 flagship earbuds: 24-bit audio, active noise cancelling and IPX7.",
-    "sources": [
-      "https://www.samsung.com/global/galaxy/galaxy-buds2-pro/specs/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 46900,
-    "priceAmdMax": 46900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 46900
-      }
-    ]
-  },
-  {
-    "id": "samsung-galaxy-buds-2",
-    "category": "headphones",
-    "brand": "Samsung",
-    "name": "Galaxy Buds2",
-    "aliases": [
-      "Samsung Galaxy Buds2",
-      "Samsung Galaxy Buds 2",
-      "Galaxy Buds2 R177",
-      "Samsung Galaxy Buds2 R177"
-    ],
-    "tier": "budget",
-    "released": "2021-08",
-    "popularity": 50,
-    "accent": "#3F4A3A",
-    "audio": {
-      "anc": true,
-      "form": "tws",
-      "conn": "wireless"
-    },
-    "battery": {
-      "life": "5 hours with ANC (20 with the case)"
-    },
-    "connectivity": {
-      "bluetooth": "5.2"
-    },
-    "body": {
-      "ip": "IPX2",
-      "weight": 5
-    },
-    "colors": [
-      "White",
-      "Black",
-      "Green"
-    ],
-    "summaryEn": "Small, light Galaxy earbuds with active noise cancelling at a budget price.",
-    "sources": [
-      "https://www.samsung.com/global/galaxy/galaxy-buds2/specs/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 35900,
-    "priceAmdMax": 35900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 35900
       }
     ]
   },
