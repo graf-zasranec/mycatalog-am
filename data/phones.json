@@ -97352,5 +97352,472 @@
         "priceAmd": 259000
       }
     ]
+  },
+  {
+    "id": "xiaomi-redmi-17-5g",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "Redmi 17 5G",
+    "aliases": [
+      "Xiaomi Redmi 17 5G",
+      "Redmi 17 5G"
+    ],
+    "tier": "budget",
+    "released": "2026-08",
+    "popularity": 40,
+    "accent": "#2F4A6B",
+    "display": {
+      "size": 6.9,
+      "type": "IPS LCD",
+      "resolution": "720x1600",
+      "refresh": 120,
+      "brightness": 825,
+      "protection": "Gorilla Glass 7i"
+    },
+    "chipset": {
+      "name": "Qualcomm Snapdragon 4 Gen 5",
+      "process": "4 nm",
+      "gpu": "Adreno"
+    },
+    "camera": {
+      "modules": 2,
+      "main": "50 MP, f/1.8",
+      "front": "8 MP, f/2.05"
+    },
+    "battery": {
+      "capacity": 7500,
+      "wired": 45
+    },
+    "body": {
+      "weight": 232,
+      "ip": "IP64",
+      "height": 170.12,
+      "width": 78.42,
+      "thickness": 8.8
+    },
+    "connectivity": {
+      "network": "5G",
+      "bluetooth": "5.1",
+      "sim": "Hybrid dual SIM"
+    },
+    "cardSlot": true,
+    "os": "Android 16, HyperOS 3",
+    "colors": [
+      "Black",
+      "Blue"
+    ],
+    "summaryEn": "The 5G Redmi 17: a Snapdragon 4 Gen 5 and a 7500 mAh battery behind a 6.9-inch 120 Hz screen.",
+    "sources": [
+      "https://www.fonearena.com/blog/?p=489084",
+      "https://www.mi.com/np/product/redmi-17-5g/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 104900,
+    "priceAmdMax": 104900,
+    "variants": [
+      {
+        "ram": 4,
+        "storage": 256,
+        "priceAmd": 104900
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-smart-band-10-pro",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Smart Band 10 Pro",
+    "aliases": [
+      "Xiaomi Smart Band 10 Pro"
+    ],
+    "tier": "budget",
+    "released": "2026-05",
+    "popularity": 60,
+    "accent": "#1B1B1F",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.74,
+      "resolution": "336x480"
+    },
+    "battery": {
+      "capacity": 350,
+      "life": "21 days"
+    },
+    "body": {
+      "ip": "5 ATM",
+      "weight": 21.6
+    },
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "colors": [
+      "Black",
+      "Rose",
+      "Silver"
+    ],
+    "summaryEn": "The Smart Band with its own GPS: a 1.74-inch AMOLED screen and up to 21 days on a charge.",
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-10-pro/specs/",
+      "https://www.androidauthority.com/xiaomi-smart-band-10-pro-global-launch-3670474/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 49000,
+    "priceAmdMax": 49000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49000
+      }
+    ]
+  },
+  {
+    "id": "huawei-watch-gt-5-46mm",
+    "category": "watch",
+    "brand": "Huawei",
+    "name": "Watch GT 5 46mm",
+    "aliases": [
+      "Huawei Watch GT 5 46mm",
+      "Huawei Watch GT5 46mm"
+    ],
+    "tier": "mid",
+    "released": "2024-09",
+    "popularity": 55,
+    "accent": "#2E3F5C",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.43,
+      "resolution": "466x466"
+    },
+    "battery": {
+      "capacity": 524,
+      "life": "14 days"
+    },
+    "body": {
+      "ip": "5 ATM",
+      "weight": 48
+    },
+    "connectivity": {
+      "bluetooth": "5.2",
+      "nfc": true
+    },
+    "os": "HarmonyOS",
+    "colors": [
+      "Blue"
+    ],
+    "summaryEn": "Huawei's round everyday watch: a 1.43-inch AMOLED screen and up to two weeks between charges.",
+    "sources": [
+      "https://consumer.huawei.com/bd/wearables/watch-gt5/specs"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 139000,
+    "priceAmdMax": 139000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 139000
+      }
+    ]
+  },
+  {
+    "id": "amazfit-bip-6",
+    "category": "watch",
+    "brand": "Amazfit",
+    "name": "Bip 6",
+    "aliases": [
+      "Amazfit Bip 6"
+    ],
+    "tier": "budget",
+    "released": "2025-04",
+    "popularity": 45,
+    "accent": "#8C8478",
+    "display": {
+      "type": "AMOLED",
+      "size": 1.97,
+      "resolution": "390x450"
+    },
+    "battery": {
+      "capacity": 340,
+      "life": "14 days"
+    },
+    "body": {
+      "ip": "5 ATM",
+      "weight": 27.9
+    },
+    "colors": [
+      "Stone"
+    ],
+    "summaryEn": "Amazfit's budget smartwatch: a 1.97-inch AMOLED screen, GPS and two weeks on a charge.",
+    "sources": [
+      "https://us.amazfit.com/products/bip-6"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 59000,
+    "priceAmdMax": 59000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59000
+      }
+    ]
+  },
+  {
+    "id": "marshall-milton-anc",
+    "category": "headphones",
+    "brand": "Marshall",
+    "name": "Milton A.N.C.",
+    "aliases": [
+      "Marshall Milton ANC",
+      "Marshall Milton A.N.C.",
+      "Milton ANC Portable On-Ear Headphone"
+    ],
+    "tier": "mid",
+    "released": "2025-05",
+    "popularity": 45,
+    "accent": "#101012",
+    "audio": {
+      "anc": true,
+      "form": "full",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "50 hours with ANC (80 without)"
+    },
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "body": {
+      "weight": 200
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "Marshall's on-ear noise cancelling: 50 hours with ANC on, 80 with it off, and a battery you can replace.",
+    "sources": [
+      "https://www.channelnews.com.au/marshall-takes-on-sony-and-bose-with-80-hour-milton-anc-headphones/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 84900,
+    "priceAmdMax": 84900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 84900
+      }
+    ]
+  },
+  {
+    "id": "dyson-ontrac",
+    "category": "headphones",
+    "brand": "Dyson",
+    "name": "OnTrac",
+    "aliases": [
+      "Dyson OnTrac",
+      "Dyson On Trac",
+      "Dyson OnTrac WP02",
+      "Dyson On Trac WP02 Headphones"
+    ],
+    "tier": "flagship",
+    "released": "2024-08",
+    "popularity": 40,
+    "accent": "#3A3D42",
+    "audio": {
+      "anc": true,
+      "form": "full",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "55 hours"
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 451
+    },
+    "colors": [
+      "Black",
+      "Deep Blue",
+      "Orange"
+    ],
+    "summaryEn": "Dyson's over-ear headphones: 40 dB of noise cancelling and up to 55 hours on a charge.",
+    "sources": [
+      "https://www.dyson.com/headphones/ontrac/cnc-aluminum"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 219500,
+    "priceAmdMax": 219500,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 219500
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-buds-2-pro",
+    "category": "headphones",
+    "brand": "Samsung",
+    "name": "Galaxy Buds2 Pro",
+    "aliases": [
+      "Samsung Galaxy Buds2 Pro",
+      "Samsung Galaxy Buds 2 Pro",
+      "Galaxy Buds2 Pro R510",
+      "Samsung Galaxy Buds2 Pro R510"
+    ],
+    "tier": "mid",
+    "released": "2022-08",
+    "popularity": 55,
+    "accent": "#2B2B2E",
+    "audio": {
+      "anc": true,
+      "form": "tws",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "5 hours with ANC (18 with the case)"
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "ip": "IPX7",
+      "weight": 5.5
+    },
+    "colors": [
+      "White",
+      "Black",
+      "Light Purple"
+    ],
+    "summaryEn": "Samsung's 2022 flagship earbuds: 24-bit audio, active noise cancelling and IPX7.",
+    "sources": [
+      "https://www.samsung.com/global/galaxy/galaxy-buds2-pro/specs/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 46900,
+    "priceAmdMax": 46900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 46900
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-buds-2",
+    "category": "headphones",
+    "brand": "Samsung",
+    "name": "Galaxy Buds2",
+    "aliases": [
+      "Samsung Galaxy Buds2",
+      "Samsung Galaxy Buds 2",
+      "Galaxy Buds2 R177",
+      "Samsung Galaxy Buds2 R177"
+    ],
+    "tier": "budget",
+    "released": "2021-08",
+    "popularity": 50,
+    "accent": "#3F4A3A",
+    "audio": {
+      "anc": true,
+      "form": "tws",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "5 hours with ANC (20 with the case)"
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "body": {
+      "ip": "IPX2",
+      "weight": 5
+    },
+    "colors": [
+      "White",
+      "Black",
+      "Green"
+    ],
+    "summaryEn": "Small, light Galaxy earbuds with active noise cancelling at a budget price.",
+    "sources": [
+      "https://www.samsung.com/global/galaxy/galaxy-buds2/specs/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 35900,
+    "priceAmdMax": 35900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 35900
+      }
+    ]
+  },
+  {
+    "id": "hp-omen-max-16-ak004",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OMEN MAX 16-AK004 Ryzen AI 7 350 RTX 5070",
+    "aliases": [
+      "HP OMEN MAX 16-AK004",
+      "OMEN MAX 16-AK004"
+    ],
+    "tier": "upper-mid",
+    "released": "2025",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "2560x1600",
+      "refresh": 240,
+      "touch": false
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 7 350"
+    },
+    "graphics": {
+      "name": "Nvidia GeForce RTX 5070 8GB",
+      "type": "discrete"
+    },
+    "battery": {},
+    "os": "Windows 11",
+    "summaryEn": "A 16-inch 240 Hz gaming laptop with AMD Ryzen AI 7 350 and Nvidia GeForce RTX 5070 8GB.",
+    "sources": [
+      "https://appzone.am/en/Assortment/omen-max-16-ak004/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 679000,
+    "priceAmdMax": 679000,
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 679000
+      }
+    ]
   }
 ]
