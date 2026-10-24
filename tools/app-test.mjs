@@ -193,10 +193,14 @@ const barKeys = cat => {
 const hasNone = (keys, banned) => banned.filter(k => keys.includes(k));
 is(hasNone(barKeys('headphones'), ['ram', 'stor', 'batt', 'hz', 'scr']), [], 'headphones are not asked about RAM or screens');
 is(hasNone(barKeys('watch'), ['ram', 'batt', 'hz', 'cam']), [], 'a watch is not asked about refresh rate or RAM');
-is(hasNone(barKeys('laptop'), ['hz', 'cam', 'g5', 'nfc']), [], 'a laptop is not asked about 5G or cameras');
+is(hasNone(barKeys('laptop'), ['cam', 'g5', 'nfc']), [], 'a laptop is not asked about 5G or cameras');
 is(barKeys('phone').includes('cam'), true, 'phones are asked about the camera');
 is(barKeys('laptop').includes('cpu') && barKeys('laptop').includes('gpu'), true, 'laptops are asked about CPU and GPU');
 is(barKeys('headphones').includes('anc'), true, 'headphones are asked about noise cancelling');
+// e-catalog's phone column (2026-10-24): charging watts, wireless charging, card slot, water
+is(['chg', 'wless', 'sd', 'water'].filter(k => !barKeys('phone').includes(k)), [], 'phones are asked about charging, card slot and water resistance');
+is(barKeys('laptop').includes('hz'), true, 'laptops are asked about refresh rate');
+is(barKeys('vacuum').includes('apower'), true, 'vacuums are asked about power');
 // e-catalog's headphone column: what kind, wired or not, which plug, gaming
 is(['hform', 'hconn', 'hplug', 'gaming'].filter(k => !barKeys('headphones').includes(k)), [], 'headphones are asked type, connection, connector, gaming');
 is(barKeys('speaker').includes('spk'), true, 'speakers are asked what kind');

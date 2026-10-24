@@ -69,7 +69,7 @@ const X = {
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
-    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
+    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ',
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր {d}-ի ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
@@ -102,7 +102,7 @@ const X = {
     scrLo: 'до {x}″', scrHi: 'от {x}″',
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
-    ancF: 'Шумоподавление', waterF: 'Влагозащита',
+    ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти',
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума {d}', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
@@ -138,7 +138,7 @@ const X = {
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
     cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
-    ancF: 'Noise cancelling', waterF: 'Water resistance',
+    ancF: 'Noise cancelling', waterF: 'Water resistance', chargeF: 'Fast charging', wlessF: 'Wireless charging', sdF: 'Memory card slot',
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the {d} low', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
@@ -171,7 +171,7 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, chg: 0, wless: false, sd: false, anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -840,6 +840,12 @@ const FILT = {
   water: { kind: 'set', arr: 'waters', label: () => x('waterF'), of: waterOf, fmt: v => x('waters')[v], vals: () => ['splash', 'dip'] },
   g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
   nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
+  // e-catalog's charging questions (2026-10-24): the wired watts the maker quotes, whether it
+  // charges on a pad at all, and whether a microSD card fits. Unstated counts as no only while
+  // the filter is on, as everywhere else.
+  chg:   { kind: 'min', label: () => x('chargeF'), of: p => p.battery?.wired || null, fmt: v => v + ' ' + u('w') },
+  wless: { kind: 'flag', label: () => x('wlessF'), of: p => p.battery?.wireless > 0 },
+  sd:    { kind: 'flag', label: () => x('sdF'), of: p => p.cardSlot === true },
   // Any / Yes / No (owner, 2026-10-04). A model nothing marks as noise-cancelling counts as No -
   // tools/audio.mjs reads ANC/NC off every name and shop title, and the rest were set by hand.
   anc:   { kind: 'yn', label: () => x('ancF'), of: p => p.audio?.anc === true },
@@ -913,9 +919,9 @@ const osOf = p => { const v = String(p.os || '').replace(/\bwin ?1[01]\b/i, 'Win
 // varying is not the same as meaning something. A filter listed here still has to prove the
 // items in view differ on it before it is drawn.
 const ASK = {
-  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
+  phone:      ['ram', 'stor', 'batt', 'chg', 'hz', 'scr', 'weight', 'cam', 'water', 'g5', 'nfc', 'wless', 'sd', 'panel', 'os', 'year'],
   tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'g5', 'touch', 'panel', 'os', 'year'],
-  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'touch', 'weight', 'panel', 'os', 'year'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'hz', 'touch', 'weight', 'panel', 'os', 'year'],
   desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
   console:    ['stor', 'year'],
   ereader:    ['stor', 'scr', 'weight', 'water', 'panel', 'year'],
@@ -1378,7 +1384,9 @@ function covered(k, pool) {
   if (k === 'brand' || k === 'shop' || k === 'hplug' || f.kind === 'flag' || f.kind === 'yn') return true;
   const has = v => v != null && v !== '' && !(typeof v === 'number' && !v);
   const live = pool.filter(hasReal);
-  return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 2 >= live.length;
+  // Two in five, not half (2026-10-24): 45% of laptops state a refresh rate and 45% of vacuums a
+  // wattage - the gaming laptops and the corded vacuums, exactly the buyers who ask.
+  return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 5 >= live.length * 2;
 }
 function fdrop(k, pool) {
   const f = FILT[k];
@@ -3261,7 +3269,7 @@ document.addEventListener('click', e => {
   // then brand, then a "Show 78" button - so choosing a section showed nothing until three more
   // decisions were made. The owner wants the whole section at once, with the filters already out
   // for whoever does want to narrow it.
-  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, weight: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, page: 1 });
+  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, weight: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, chg: 0, wless: false, sd: false, page: 1 });
     st.fopen = true; save(); location.hash = '#/c/' + st.cat; return; }
   const cq = e.target.closest('[data-cq]');
   if (cq) { const k = cq.dataset.cq, v = cq.dataset.cqv;
