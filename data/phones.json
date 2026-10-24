@@ -1834,7 +1834,9 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "connectivity": {
       "bluetooth": "5.3",
       "wireless": "USB-C charging case"
@@ -1879,7 +1881,9 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "connectivity": {
       "bluetooth": "5.3",
       "wireless": "Wireless and USB-C charging case"
@@ -2024,7 +2028,9 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "body": {
       "ip": "IP54",
       "weight": 5
@@ -2063,7 +2069,9 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "body": {
       "ip": "IP57",
       "weight": 5.55
@@ -5746,7 +5754,8 @@
       "resolution": "410x502"
     },
     "battery": {
-      "capacity": 564
+      "capacity": 564,
+      "life": "36 hours"
     },
     "summaryEn": "Apple Ultra 2.",
     "unsure": [
@@ -5785,7 +5794,8 @@
       "weight": 26.4
     },
     "battery": {
-      "capacity": 245
+      "capacity": 245,
+      "life": "24 hours"
     },
     "connectivity": {
       "network": "GPS, or GPS + Cellular",
@@ -5841,7 +5851,9 @@
     "chipset": {
       "name": "Apple S10 SiP"
     },
-    "battery": {},
+    "battery": {
+      "life": "18 hours"
+    },
     "connectivity": {
       "bluetooth": "5.3",
       "wifi": "Wi-Fi 4",
@@ -5906,7 +5918,8 @@
       "weight": 36.9
     },
     "battery": {
-      "capacity": 327
+      "capacity": 327,
+      "life": "24 hours"
     },
     "connectivity": {
       "network": "GPS, or GPS + Cellular",
@@ -6018,7 +6031,8 @@
       "weight": 61.6
     },
     "battery": {
-      "capacity": 564
+      "capacity": 564,
+      "life": "42 hours"
     },
     "connectivity": {
       "network": "GPS + Cellular, satellite messaging",
@@ -11445,7 +11459,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Beats Fit Pro.",
     "unsure": [
       "popularity"
@@ -11491,7 +11507,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "12 hours"
+    },
     "summaryEn": "Beats Flex All-Day.",
     "unsure": [
       "popularity"
@@ -11540,10 +11558,13 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "18 hours"
+    },
     "summaryEn": "Beats Solo True Wireless.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "audio": {
       "form": "tws",
@@ -11588,7 +11609,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 hours"
+    },
     "summaryEn": "Beats Solo4 OnEar.",
     "unsure": [
       "popularity"
@@ -11677,7 +11700,9 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "9 hours"
+    },
     "body": {
       "ip": "IPX4",
       "weight": 5
@@ -11731,7 +11756,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "40 hours"
+    },
     "summaryEn": "Beats Studio Pro Wireless.",
     "unsure": [
       "popularity"
@@ -12476,7 +12503,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "summaryEn": "Bose Sport.",
     "unsure": [
       "popularity"
@@ -15791,7 +15820,9 @@
       "size": 1.4,
       "resolution": "454x454"
     },
-    "battery": {},
+    "battery": {
+      "life": "31 days"
+    },
     "summaryEn": "Garmin epix Pro – Sapphire Edition 51 mm.",
     "unsure": [
       "popularity"
@@ -15832,7 +15863,9 @@
       "size": 1.3,
       "resolution": "416x416"
     },
-    "battery": {},
+    "battery": {
+      "life": "16 days"
+    },
     "summaryEn": "Garmin epix Pro – Standard Edition 47mm.",
     "unsure": [
       "popularity"
@@ -15871,10 +15904,13 @@
       "resolution": "260x260",
       "size": 1.3
     },
-    "battery": {},
+    "battery": {
+      "life": "18 days"
+    },
     "summaryEn": "Garmin Fenix 7 Pro Sapphire Solar.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -15910,10 +15946,13 @@
       "resolution": "260x260",
       "size": 1.4
     },
-    "battery": {},
+    "battery": {
+      "life": "28 days"
+    },
     "summaryEn": "Garmin Fenix 7X Pro – Sapphire Solar Edition.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -15953,7 +15992,9 @@
       "size": 1.4,
       "resolution": "454x454"
     },
-    "battery": {},
+    "battery": {
+      "life": "16 days"
+    },
     "summaryEn": "Garmin Fenix 8 – 47 mm, AMOLED.",
     "unsure": [
       "popularity"
@@ -16003,7 +16044,9 @@
       "size": 1.4,
       "resolution": "454x454"
     },
-    "battery": {},
+    "battery": {
+      "life": "16 days"
+    },
     "summaryEn": "Garmin Fenix 8 – 47 mm, AMOLED Sapphire Carbon.",
     "unsure": [
       "popularity"
@@ -16257,10 +16300,13 @@
       "size": 1.4,
       "resolution": "454x454"
     },
-    "battery": {},
+    "battery": {
+      "life": "11 days"
+    },
     "summaryEn": "Garmin Forerunner 570.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2025,
@@ -16342,7 +16388,9 @@
       "resolution": "454x454",
       "size": 1.4
     },
-    "battery": {},
+    "battery": {
+      "life": "23 days"
+    },
     "summaryEn": "Garmin Forerunner® 965 Black/Powder.",
     "unsure": [
       "popularity"
@@ -16387,10 +16435,13 @@
       "size": 1.4,
       "resolution": "454x454"
     },
-    "battery": {},
+    "battery": {
+      "life": "15 days"
+    },
     "summaryEn": "Garmin Forerunner® 970.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2025,
@@ -16429,10 +16480,13 @@
       "resolution": "176x176",
       "size": 1.1
     },
-    "battery": {},
+    "battery": {
+      "life": "40 days"
+    },
     "summaryEn": "Garmin Instinct 2X Solar.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -16468,10 +16522,13 @@
       "size": 1.1,
       "resolution": "176x176"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 days"
+    },
     "summaryEn": "Garmin Instinct 2X Solar – Tactical Edition.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -16517,10 +16574,13 @@
       "size": 1.2,
       "resolution": "390x390"
     },
-    "battery": {},
+    "battery": {
+      "life": "24 days"
+    },
     "summaryEn": "Garmin Instinct 3, 50mm,AMOLED.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "colors": [],
     "variantUnit": "mm",
@@ -16605,7 +16665,9 @@
       "size": 1.4,
       "resolution": "454x454"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Garmin Venu 3 with Leather.",
     "unsure": [
       "popularity"
@@ -16647,10 +16709,13 @@
       "size": 1.2,
       "resolution": "390x390"
     },
-    "battery": {},
+    "battery": {
+      "life": "10 days"
+    },
     "summaryEn": "Garmin Venu 3s French.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -16791,7 +16856,9 @@
       "size": 1.2,
       "resolution": "390x390"
     },
-    "battery": {},
+    "battery": {
+      "life": "11 days"
+    },
     "summaryEn": "Garmin Vivoactive 5.",
     "unsure": [
       "popularity"
@@ -16836,10 +16903,13 @@
       "size": 1.2,
       "resolution": "390x390"
     },
-    "battery": {},
+    "battery": {
+      "life": "11 days"
+    },
     "summaryEn": "Garmin vivoactive® 6.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "os": "Garmin (own system)",
     "year": 2025,
@@ -21130,11 +21200,13 @@
       "size": 1.4
     },
     "battery": {
-      "capacity": 180
+      "capacity": 180,
+      "life": "14 days"
     },
     "summaryEn": "Honor Band 6.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "year": 2020,
     "body": {
@@ -26920,7 +26992,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 hours"
+    },
     "summaryEn": "JBL Live 460 NC.",
     "unsure": [
       "popularity"
@@ -26962,7 +27036,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 hours"
+    },
     "summaryEn": "JBL Live 660 NC.",
     "unsure": [
       "popularity"
@@ -27008,7 +27084,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "65 hours"
+    },
     "summaryEn": "JBL Live 770 NC.",
     "unsure": [
       "popularity"
@@ -27058,7 +27136,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "JBL Live Flex.",
     "unsure": [
       "popularity"
@@ -27110,7 +27190,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "JBL Live Pro 2 TWS.",
     "unsure": [
       "popularity"
@@ -27631,7 +27713,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "JBL Tune 125 TWS.",
     "unsure": [
       "popularity"
@@ -27801,7 +27885,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "JBL Tune 230 NC TWS.",
     "unsure": [
       "popularity"
@@ -27892,7 +27978,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "57 hours"
+    },
     "summaryEn": "JBL Tune 520 BT.",
     "unsure": [
       "popularity"
@@ -27983,7 +28071,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "70 hours"
+    },
     "summaryEn": "JBL Tune 670 NC.",
     "unsure": [
       "popularity"
@@ -28066,7 +28156,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "76 hours"
+    },
     "summaryEn": "JBL Tune 720 BT.",
     "unsure": [
       "popularity"
@@ -28112,7 +28204,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 hours"
+    },
     "summaryEn": "JBL Tune 760 NC.",
     "unsure": [
       "popularity"
@@ -28160,7 +28254,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "12 hours"
+    },
     "summaryEn": "JBL Tune Beam.",
     "unsure": [
       "popularity"
@@ -28204,7 +28300,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "JBL Tune Flex.",
     "unsure": [
       "popularity"
@@ -33281,7 +33379,9 @@
       "form": "full",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "100 hours"
+    },
     "body": {
       "materials": "Textured vinyl headband, folding hinges",
       "weight": 178
@@ -34585,11 +34685,13 @@
       "size": 1.32
     },
     "battery": {
-      "capacity": 305
+      "capacity": 305,
+      "life": "11 days"
     },
     "summaryEn": "Nothing CMF PRO 2.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "year": 2024,
     "connectivity": {
@@ -34661,7 +34763,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "Nothing Ear Open B182.",
     "unsure": [
       "popularity"
@@ -36519,7 +36623,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Samsung Galaxy 3.",
     "unsure": [
       "popularity"
@@ -36565,7 +36671,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Samsung Galaxy 3 FE.",
     "unsure": [
       "popularity"
@@ -36621,7 +36729,8 @@
       "resolution": "432x432"
     },
     "battery": {
-      "capacity": 300
+      "capacity": 300,
+      "life": "40 hours"
     },
     "summaryEn": "Samsung Galaxy 6 Classic 43mm R950.",
     "unsure": [
@@ -38349,7 +38458,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Samsung Galaxy Buds Live.",
     "unsure": [
       "popularity"
@@ -38436,7 +38547,8 @@
       "size": 1.2
     },
     "battery": {
-      "capacity": 247
+      "capacity": 247,
+      "life": "40 hours"
     },
     "summaryEn": "Samsung Galaxy FE.",
     "unsure": [
@@ -40328,7 +40440,8 @@
       "resolution": "480x480"
     },
     "battery": {
-      "capacity": 590
+      "capacity": 590,
+      "life": "100 hours"
     },
     "summaryEn": "Samsung Galaxy Ultra 47mm 2024.",
     "unsure": [
@@ -40469,7 +40582,8 @@
       "process": "3 nm"
     },
     "battery": {
-      "capacity": 425
+      "capacity": 425,
+      "life": "40 hours"
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -40523,7 +40637,8 @@
       "weight": 34
     },
     "battery": {
-      "capacity": 435
+      "capacity": 435,
+      "life": "40 hours"
     },
     "variantUnit": "mm",
     "variants": [
@@ -40576,7 +40691,8 @@
       "weight": 63.5
     },
     "battery": {
-      "capacity": 445
+      "capacity": 445,
+      "life": "40 hours"
     },
     "variantUnit": "mm",
     "variants": [
@@ -44004,7 +44120,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 hours"
+    },
     "summaryEn": "Sennheiser Accentum Plus.",
     "unsure": [
       "popularity"
@@ -44053,7 +44171,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "Sennheiser Accentum True Wireless ATW1.",
     "unsure": [
       "popularity"
@@ -44100,7 +44220,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 hours"
+    },
     "summaryEn": "Sennheiser Accentum Wireless ACAEBT.",
     "unsure": [
       "popularity"
@@ -44146,7 +44268,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "Sennheiser HD 450BT.",
     "unsure": [
       "popularity"
@@ -44269,7 +44393,8 @@
       "conn": "wireless"
     },
     "battery": {
-      "capacity": 0
+      "capacity": 0,
+      "life": "60 hours"
     },
     "body": {
       "weight": 293,
@@ -44327,7 +44452,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Sennheiser Momentum Sport MSPORT1.",
     "unsure": [
       "popularity"
@@ -45214,7 +45341,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "Sony PS5 PULSE Elite Wireless.",
     "unsure": [
       "popularity"
@@ -45313,7 +45442,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "summaryEn": "Sony PULSE Explore.",
     "unsure": [
       "popularity"
@@ -45355,7 +45486,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "Sony WF-1000XM5 Wireless Headphones.",
     "unsure": [
       "popularity"
@@ -45398,7 +45531,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "Sony WF-C500 True Wireless.",
     "unsure": [
       "popularity"
@@ -45442,7 +45577,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "11 hours"
+    },
     "summaryEn": "Sony WF-C510/YC.",
     "unsure": [
       "popularity"
@@ -45488,7 +45625,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7.5 hours"
+    },
     "summaryEn": "Sony WF-C700N/GZ E.",
     "unsure": [
       "popularity"
@@ -45575,7 +45714,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "Sony WH-1000XM5.",
     "unsure": [
       "popularity"
@@ -45615,7 +45756,9 @@
       "form": "full",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "body": {
       "materials": "Plastic frame, synthetic leather ear pads",
       "weight": 254
@@ -48721,7 +48864,9 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "battery": {},
+    "battery": {
+      "life": "7 hours"
+    },
     "body": {
       "ip": "IP54",
       "weight": 4.2
@@ -48839,7 +48984,8 @@
       "size": 1.62
     },
     "battery": {
-      "capacity": 233
+      "capacity": 233,
+      "life": "21 days"
     },
     "summaryEn": "Xiaomi Mi Smart Band 9.",
     "unsure": [
@@ -51104,10 +51250,13 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "summaryEn": "Xiaomi Redmi 4 Active.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "audio": {
       "form": "tws",
@@ -51192,10 +51341,13 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "summaryEn": "Xiaomi Redmi 4 Lite.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "audio": {
       "form": "tws",
@@ -51233,10 +51385,13 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "Xiaomi Redmi 5.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "audio": {
       "form": "tws",
@@ -51633,7 +51788,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "summaryEn": "Xiaomi Redmi Buds 3 Lite.",
     "unsure": [
       "popularity"
@@ -51721,7 +51878,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7.5 hours"
+    },
     "summaryEn": "Xiaomi Redmi Buds 6 Play.",
     "unsure": [
       "popularity"
@@ -53685,7 +53844,8 @@
       "resolution": "172x320"
     },
     "battery": {
-      "capacity": 210
+      "capacity": 210,
+      "life": "14 days"
     },
     "summaryEn": "Xiaomi Redmi Smart Band 2.",
     "unsure": [
@@ -53727,11 +53887,13 @@
       "resolution": "360x320"
     },
     "battery": {
-      "capacity": 262
+      "capacity": 262,
+      "life": "10 days"
     },
     "summaryEn": "Xiaomi Redmi Watch 2 Lite.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "year": 2021,
     "body": {
@@ -53769,7 +53931,8 @@
       "size": 2
     },
     "battery": {
-      "capacity": 470
+      "capacity": 470,
+      "life": "18 days"
     },
     "summaryEn": "Xiaomi Redmi Watch 5 Active.",
     "unsure": [
@@ -53812,7 +53975,8 @@
       "weight": 29.2
     },
     "battery": {
-      "capacity": 470
+      "capacity": 470,
+      "life": "18 days"
     },
     "variants": [
       {
@@ -54345,7 +54509,8 @@
       "weight": 15.95
     },
     "battery": {
-      "capacity": 233
+      "capacity": 233,
+      "life": "21 days"
     },
     "variants": [
       {
@@ -54391,7 +54556,8 @@
       "resolution": "192x490"
     },
     "battery": {
-      "capacity": 180
+      "capacity": 180,
+      "life": "14 days"
     },
     "summaryEn": "Xiaomi Smart Band 7.",
     "unsure": [
@@ -54430,7 +54596,8 @@
       "size": 1.64
     },
     "battery": {
-      "capacity": 235
+      "capacity": 235,
+      "life": "12 days"
     },
     "summaryEn": "Xiaomi Smart Band 7 Pro.",
     "unsure": [
@@ -54476,7 +54643,8 @@
       "size": 1.47
     },
     "battery": {
-      "capacity": 210
+      "capacity": 210,
+      "life": "14 days"
     },
     "summaryEn": "Xiaomi Smart Band 8 Active.",
     "unsure": [
@@ -54519,11 +54687,13 @@
       "size": 1.62
     },
     "battery": {
-      "capacity": 190
+      "capacity": 190,
+      "life": "16 days"
     },
     "summaryEn": "Xiaomi Smart Band 8 Champagne BHR7166GL.",
     "unsure": [
-      "popularity"
+      "popularity",
+      "battery.life"
     ],
     "year": 2023,
     "connectivity": {
@@ -54592,7 +54762,8 @@
       "size": 1.74
     },
     "battery": {
-      "capacity": 289
+      "capacity": 289,
+      "life": "14 days"
     },
     "summaryEn": "Xiaomi Smart Mi Band 8 Pro.",
     "unsure": [
@@ -54704,7 +54875,8 @@
       "resolution": "466x466"
     },
     "battery": {
-      "capacity": 470
+      "capacity": 470,
+      "life": "12 days"
     },
     "summaryEn": "Xiaomi Watch S1.",
     "unsure": [
@@ -54737,7 +54909,8 @@
       "resolution": "466x466"
     },
     "battery": {
-      "capacity": 470
+      "capacity": 470,
+      "life": "12 days"
     },
     "summaryEn": "Xiaomi Watch S1 Active.",
     "unsure": [
@@ -57967,7 +58140,8 @@
       "resolution": "410x502"
     },
     "battery": {
-      "capacity": 340
+      "capacity": 340,
+      "life": "13 days"
     },
     "summaryEn": "Nothing CMF Watch Pro.",
     "unsure": [
@@ -58003,14 +58177,16 @@
       "resolution": "368x448"
     },
     "battery": {
-      "capacity": 230
+      "capacity": 230,
+      "life": "10 days"
     },
     "summaryEn": "OnePlus Nord Smart Watch.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "Deep Blue",
@@ -58084,7 +58260,8 @@
       "resolution": "256x402"
     },
     "battery": {
-      "capacity": 208
+      "capacity": 208,
+      "life": "13 days"
     },
     "summaryEn": "Samsung Galaxy Fit 3.",
     "unsure": [
@@ -58127,7 +58304,8 @@
       "resolution": "194x368"
     },
     "battery": {
-      "capacity": 180
+      "capacity": 180,
+      "life": "14 days"
     },
     "summaryEn": "Huawei Band 9.",
     "unsure": [
@@ -58165,7 +58343,8 @@
       "resolution": "256x402"
     },
     "battery": {
-      "capacity": 180
+      "capacity": 180,
+      "life": "14 days"
     },
     "summaryEn": "Honor Band 9.",
     "unsure": [
@@ -61574,7 +61753,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "Bose QuietComfort Ultra Headphones 2nd Gen.",
     "unsure": [
       "popularity",
@@ -61749,7 +61930,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "70 hours"
+    },
     "summaryEn": "Marshall III Headphones.",
     "unsure": [
       "popularity",
@@ -61794,7 +61977,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "24 hours"
+    },
     "summaryEn": "Bose QuietComfort.",
     "unsure": [
       "popularity",
@@ -61837,7 +62022,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "24 hours"
+    },
     "summaryEn": "Bose QuietComfort SE Wireless.",
     "unsure": [
       "popularity",
@@ -61876,7 +62063,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Bose QuietComfort Ultra Earbuds.",
     "unsure": [
       "popularity",
@@ -61956,7 +62145,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7 hours"
+    },
     "summaryEn": "Beats PowerBeats Fit.",
     "unsure": [
       "popularity",
@@ -62000,7 +62191,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "20 hours"
+    },
     "summaryEn": "Bose Noise Cancelling 700.",
     "unsure": [
       "popularity",
@@ -62040,7 +62233,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "JBL Tour One M2.",
     "unsure": [
       "popularity",
@@ -62084,13 +62279,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "28 hours"
+    },
     "summaryEn": "Sony Inzone H5.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "White"
@@ -62130,7 +62328,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Bose QuietComfort Earbuds II.",
     "unsure": [
       "popularity",
@@ -62172,7 +62372,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Bose QuietComfort Earbuds.",
     "unsure": [
       "popularity",
@@ -62215,7 +62417,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "JBL Tour Pro 2 TWS.",
     "unsure": [
       "popularity",
@@ -62259,7 +62463,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "Sony WH-ULT900N.",
     "unsure": [
       "popularity",
@@ -62383,7 +62589,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "40 hours"
+    },
     "summaryEn": "Beats Solo 3.",
     "unsure": [
       "popularity",
@@ -62467,7 +62675,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "9 hours"
+    },
     "summaryEn": "Sony WF-SP800N.",
     "unsure": [
       "popularity",
@@ -62587,7 +62797,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "OnePlus Buds Pro 3.",
     "unsure": [
       "popularity",
@@ -62668,7 +62880,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "JBL Live Buds 3.",
     "unsure": [
       "popularity",
@@ -62750,13 +62964,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "40 hours"
+    },
     "summaryEn": "JBL Quantum 610.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "Black"
@@ -62952,7 +63169,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Sony WF-1000XM3.",
     "unsure": [
       "popularity",
@@ -62994,7 +63213,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "9 hours"
+    },
     "summaryEn": "OnePlus Buds Pro 2.",
     "unsure": [
       "popularity",
@@ -63116,13 +63337,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "22 hours"
+    },
     "summaryEn": "JBL Quantum 350 Wireless.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "Black"
@@ -63197,7 +63421,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7 hours"
+    },
     "summaryEn": "OnePlus Buds Pro.",
     "unsure": [
       "popularity",
@@ -63239,7 +63465,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7 hours"
+    },
     "summaryEn": "Marshall Minor IV.",
     "unsure": [
       "popularity",
@@ -63281,7 +63509,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "OnePlus Buds 3.",
     "unsure": [
       "popularity",
@@ -63361,7 +63591,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "65 hours"
+    },
     "summaryEn": "JBL Live 670NC.",
     "unsure": [
       "popularity",
@@ -63403,13 +63635,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "5 hours"
+    },
     "summaryEn": "Marshall Minor III.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "Black"
@@ -63532,7 +63767,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "JBL Endurance Peak 3.",
     "unsure": [
       "popularity",
@@ -63610,13 +63847,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 hours"
+    },
     "summaryEn": "JBL Reflect Contour 2.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "Black"
@@ -63765,7 +64005,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7 hours"
+    },
     "summaryEn": "OnePlus Nord Buds 2.",
     "unsure": [
       "popularity",
@@ -63806,13 +64048,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "JBL JR320BT.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ],
     "colors": [
       "Purple",
@@ -63928,7 +64173,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 hours"
+    },
     "summaryEn": "OnePlus Bullets Wireless Z 2.",
     "unsure": [
       "popularity",
@@ -64011,7 +64258,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "7 hours"
+    },
     "summaryEn": "OnePlus Nord Buds.",
     "unsure": [
       "popularity",
@@ -66478,7 +66727,9 @@
       "resolution": "368x448",
       "type": "Retina LTPO OLED"
     },
-    "battery": {},
+    "battery": {
+      "life": "18 hours"
+    },
     "summaryEn": "Apple Watch SE 2 44mm.",
     "unsure": [
       "popularity",
@@ -69859,7 +70110,9 @@
     "display": {
       "size": 1.3
     },
-    "battery": {},
+    "battery": {
+      "life": "16 days"
+    },
     "summaryEn": "Garmin epix Pro – Sapphire Edition | 47 mm.",
     "unsure": [
       "popularity",
@@ -69889,13 +70142,16 @@
     "display": {
       "size": 1.4
     },
-    "battery": {},
+    "battery": {
+      "life": "36 days"
+    },
     "summaryEn": "Garmin Enduro 3.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity"
+      "battery.capacity",
+      "battery.life"
     ]
   },
   {
@@ -96839,7 +97095,8 @@
       "resolution": "390x390"
     },
     "battery": {
-      "capacity": 195
+      "capacity": 195,
+      "life": "12 days"
     },
     "body": {
       "weight": 25.5,
@@ -96888,7 +97145,8 @@
       "resolution": "454x454"
     },
     "battery": {
-      "capacity": 410
+      "capacity": 410,
+      "life": "24 days"
     },
     "body": {
       "weight": 36,
@@ -96936,7 +97194,8 @@
       "resolution": "348x442"
     },
     "battery": {
-      "capacity": 220
+      "capacity": 220,
+      "life": "14 days"
     },
     "body": {
       "weight": 24.8,
@@ -96983,7 +97242,8 @@
       "resolution": "360x360"
     },
     "battery": {
-      "capacity": 390
+      "capacity": 390,
+      "life": "20 days"
     },
     "body": {
       "weight": 58,

@@ -67,7 +67,7 @@ const X = {
     dS: 'օ', hS: 'ժ', mS: 'ր',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
-    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
+    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ', days: 'օր',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ',
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
@@ -100,7 +100,7 @@ const X = {
     dS: 'д', hS: 'ч', mS: 'м',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
-    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
+    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч', days: 'дн.',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти',
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
@@ -136,7 +136,7 @@ const X = {
     dS: 'd', hS: 'h', mS: 'm',
     unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
-    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
+    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h', days: 'days',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
     ancF: 'Noise cancelling', waterF: 'Water resistance', chargeF: 'Fast charging', wlessF: 'Wireless charging', sdF: 'Memory card slot',
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
@@ -764,7 +764,8 @@ function hayMatch(p, q) {
 const mpOf = p => { const m = /(\d+(?:\.\d+)?)\s*MP/i.exec(p.camera?.main || ''); return m ? +m[1] : null; };
 // "8.5 hours (30 with the case)" -> 8.5. The buds' own figure, not the case total, because that
 // is the number every maker prints first and the only one all of them print.
-const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\s*h/i.exec(p.battery?.life || ''); return m ? +m[1] : null; };
+// "14 days" is how every watch maker quotes it; read as hours so one scale serves both
+const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\+?\s*(h|day)/i.exec(p.battery?.life || ''); return m ? +m[1] * (/^d/i.test(m[2]) ? 24 : 1) : null; };
 // IP68 is dust 6 / water 8, IPX4 is water only, and ATM or metre figures are dive ratings.
 // Three answers a buyer actually has: nothing, survives splashes, survives being dunked.
 const waterOf = p => {
@@ -832,7 +833,8 @@ const FILT = {
   batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
-  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v + ' ' + x('hrs') },
+  // a watch lasts days, earbuds hours: kept in hours underneath, shown in days from two up
+  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v >= 48 && v % 24 === 0 ? v / 24 + ' ' + x('days') : v + ' ' + x('hrs') },
   scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), of: (p, s) => bandOf(p, s.cat),
            fmt: bandLabel, vals: () => bandCuts(st.cat) ? ['lo', 'mid', 'hi'] : [] },
   cpu:   { kind: 'set', arr: 'cpus', label: () => x('cpuF'), of: cpuOf, fmt: v => v },
