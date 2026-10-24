@@ -100006,5 +100006,436 @@
     "body": {
       "weight": 2660
     }
+  },
+  {
+    "id": "xiaomi-poco-c95-pro",
+    "category": "phone",
+    "brand": "Xiaomi",
+    "name": "POCO C95 Pro",
+    "aliases": [
+      "Xiaomi Poco C95 Pro",
+      "Poco C95 Pro",
+      "POCO C95 Pro"
+    ],
+    "tier": "budget",
+    "released": "2026-10",
+    "popularity": 40,
+    "accent": "#2F4A6B",
+    "display": {
+      "size": 6.9,
+      "type": "IPS LCD",
+      "resolution": "720x1600",
+      "refresh": 120,
+      "brightness": 825,
+      "protection": "Gorilla Glass 7i"
+    },
+    "chipset": {
+      "name": "MediaTek Helio G91 Ultra",
+      "process": "12 nm",
+      "gpu": "Mali-G52 MC2"
+    },
+    "battery": {
+      "capacity": 7500,
+      "wired": 45
+    },
+    "body": {
+      "ip": "IP64"
+    },
+    "connectivity": {
+      "network": "4G"
+    },
+    "os": "Android 16, HyperOS 3",
+    "colors": [
+      "Black",
+      "Blue"
+    ],
+    "summaryEn": "A budget 4G POCO with a 7500 mAh battery, 45 W charging and a 6.9-inch 120 Hz screen.",
+    "sources": [
+      "https://www.fonearena.com/blog/?p=493996",
+      "https://www.mi.com/sa-en/product/poco-c95-pro/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 92900,
+    "priceAmdMax": 108900,
+    "variants": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 92900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 108900
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-watch-5",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Redmi Watch 5",
+    "aliases": [
+      "Xiaomi Redmi Watch 5",
+      "Redmi Watch 5"
+    ],
+    "tier": "budget",
+    "released": "2025-01",
+    "popularity": 40,
+    "accent": "#6E6A8C",
+    "display": {
+      "size": 2.07,
+      "type": "AMOLED",
+      "resolution": "432x514"
+    },
+    "battery": {
+      "capacity": 550,
+      "life": "24 days"
+    },
+    "body": {
+      "ip": "5ATM",
+      "weight": 33.5
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "colors": [
+      "Purple"
+    ],
+    "summaryEn": "Xiaomi's budget watch with a 2.07-inch AMOLED screen and up to 24 days on a charge.",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-watch-5/specs/"
+    ],
+    "unsure": [
+      "popularity",
+      "body.weight"
+    ],
+    "priceAmd": 69000,
+    "priceAmdMax": 69000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69000
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-watch-2",
+    "category": "watch",
+    "brand": "Google",
+    "name": "Pixel Watch 2",
+    "aliases": [
+      "Google Pixel Watch 2",
+      "Pixel Watch 2"
+    ],
+    "tier": "mid",
+    "released": "2023-10",
+    "popularity": 40,
+    "accent": "#3C4652",
+    "display": {
+      "size": 1.2,
+      "type": "AMOLED",
+      "resolution": "384x384"
+    },
+    "chipset": {
+      "name": "Qualcomm SW5100"
+    },
+    "battery": {
+      "capacity": 306,
+      "life": "24 h"
+    },
+    "body": {
+      "ip": "5ATM, IP68",
+      "weight": 31
+    },
+    "colors": [
+      "Black",
+      "Blue",
+      "Porcelain"
+    ],
+    "summaryEn": "Google's 41 mm round Wear OS watch with Fitbit health tracking and a day of battery.",
+    "sources": [
+      "https://store.google.com/product/pixel_watch_2_specs"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 169000,
+    "priceAmdMax": 169000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 169000
+      }
+    ]
+  },
+  {
+    "id": "nothing-cmf-headphone-pro",
+    "category": "headphones",
+    "brand": "Nothing",
+    "name": "CMF Headphone Pro",
+    "aliases": [
+      "CMF Headphone Pro",
+      "CMF Headphones Pro",
+      "Nothing CMF Headphones Pro",
+      "CMF by Nothing Headphone Pro"
+    ],
+    "tier": "budget",
+    "released": "2025-09",
+    "popularity": 40,
+    "accent": "#7FB8A8",
+    "audio": {
+      "anc": true,
+      "form": "full",
+      "conn": "wireless"
+    },
+    "battery": {
+      "life": "50 hours with ANC (100 without)"
+    },
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 283
+    },
+    "colors": [
+      "Light Green"
+    ],
+    "summaryEn": "CMF's over-ear noise cancelling headphones: LDAC, 50 hours with ANC and up to 100 without.",
+    "sources": [
+      "https://www.soundguys.com/cmf-headphone-pro-review-a-solid-b-side-146595/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 59000,
+    "priceAmdMax": 59000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59000
+      }
+    ]
+  },
+  {
+    "id": "asus-zenbook-duo-ux8407aa",
+    "category": "laptop",
+    "brand": "Asus",
+    "name": "Zenbook Duo UX8407AA Ultra 9 386H",
+    "aliases": [
+      "Asus Zenbook Duo UX8407AA",
+      "Zenbook Duo UX8407AA",
+      "Asus Zenbook Duo(UX8407AA-PSX9T)"
+    ],
+    "tier": "flagship",
+    "released": "2026-01",
+    "popularity": 40,
+    "accent": "#3C4652",
+    "display": {
+      "size": 14,
+      "type": "OLED",
+      "resolution": "2880x1800",
+      "refresh": 144,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9 386H"
+    },
+    "graphics": {
+      "name": "Intel Arc",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 99
+    },
+    "body": {
+      "weight": 1650
+    },
+    "os": "Windows 11",
+    "summaryEn": "A dual-screen laptop: two 14-inch 3K 144 Hz OLED touchscreens, a detachable keyboard and a 99 Wh battery.",
+    "sources": [
+      "https://redstore.am/en/product/asus-zenbook-duoux8407aa-psx9t",
+      "https://online.challenger.sg/products/asus-zb-ux8407aa-sn152w-u9-386h-32gb-1tb-14-cp-t"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 999000,
+    "priceAmdMax": 999000,
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 999000
+      }
+    ]
+  },
+  {
+    "id": "lenovo-yoga-7i-2-in-1-14iph11",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 7i 2-in-1 14IPH11 Ultra 7 355",
+    "aliases": [
+      "Lenovo Yoga 7i 2in1 14IPH11",
+      "Yoga 7i 2-in-1 14IPH11",
+      "Lenovo Yoga 7 2-in-1 14IPH11"
+    ],
+    "tier": "upper-mid",
+    "released": "2026",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 355"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "body": {
+      "weight": 1380
+    },
+    "os": "Windows 11",
+    "summaryEn": "A 14-inch convertible with Intel Core Ultra 7 355, a pen-ready touchscreen and a 70 Wh battery.",
+    "sources": [
+      "https://redstore.am/en/product/lenovo-yoga-7i-2in1-14iph11",
+      "https://www.notebookcheck.net/Lenovo-Yoga-7-2-in-1-14IPH11.1309320.0.html"
+    ],
+    "unsure": [
+      "popularity",
+      "display.resolution",
+      "body.weight"
+    ],
+    "priceAmd": 799000,
+    "priceAmdMax": 799000,
+    "variants": [
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": 799000
+      }
+    ]
+  },
+  {
+    "id": "hp-elitebook-8-g1i-14",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "EliteBook 8 G1i 14 Ultra 5 235U",
+    "aliases": [
+      "HP EliteBook 8 G1i 14",
+      "HP ELITEBOOK 8 G1i 14",
+      "EliteBook 8 G1i 14"
+    ],
+    "tier": "upper-mid",
+    "released": "2025",
+    "popularity": 40,
+    "accent": "#8A9099",
+    "display": {
+      "size": 14,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 5 235U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "battery": {
+      "capacity": 62
+    },
+    "body": {
+      "weight": 1390
+    },
+    "os": "Windows 11",
+    "summaryEn": "HP's 14-inch business laptop with Intel Core Ultra 5 235U and 32 GB of RAM.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-elitebook-8-g1i-14/",
+      "https://www.bechtle.com/ie/shop/hp-elitebook-8-g1i-14-u5-16-512gb--6011388-01--p"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 369000,
+    "priceAmdMax": 369000,
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 256,
+        "priceAmd": 369000
+      }
+    ]
+  },
+  {
+    "id": "microsoft-surface-laptop-8-15",
+    "category": "laptop",
+    "brand": "Microsoft",
+    "name": "Surface Laptop 8 15\"",
+    "aliases": [
+      "Microsoft Surface Laptop 15",
+      "Surface Laptop 15",
+      "Surface Laptop (8th Edition) 15",
+      "Microsoft Surface Laptop 8 15"
+    ],
+    "tier": "flagship",
+    "released": "2026",
+    "popularity": 40,
+    "accent": "#3C4652",
+    "display": {
+      "size": 15,
+      "type": "PixelSense Flow",
+      "resolution": "2496x1664",
+      "refresh": 120,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Snapdragon X2 Elite"
+    },
+    "graphics": {
+      "name": "Qualcomm Adreno",
+      "type": "integrated"
+    },
+    "battery": {
+      "life": "19 h"
+    },
+    "os": "Windows 11",
+    "colors": [
+      "Black",
+      "Dune",
+      "Platinum"
+    ],
+    "summaryEn": "Microsoft's 15-inch Arm laptop on the Snapdragon X2 Elite, with a 120 Hz touchscreen.",
+    "sources": [
+      "https://www.jbhifi.com.au/products/microsoft-surface-laptop-15-inch-snapdragon-x2-elite-512gb-16gb-black-8th-edition",
+      "https://redstore.am/en/product/microsoft-surface-laptop-15black"
+    ],
+    "unsure": [
+      "popularity",
+      "display.resolution",
+      "display.refresh"
+    ],
+    "priceAmd": 999000,
+    "priceAmdMax": 999000,
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 999000
+      }
+    ]
   }
 ]
