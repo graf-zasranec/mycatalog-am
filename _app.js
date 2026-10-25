@@ -1770,28 +1770,63 @@ function spotHTML(d) {
         <span class="spot-at">${esc(shopName(d.loShop))} · ${esc(n)}</span></span>
     </a>`;
 }
+// The front page opens on things, not a slogan (owner, 2026-10-25: the headline "is obvious that it's
+// AI generated"). A bento: the deal of the day, the search with what the catalogue holds, and the
+// biggest sections with their cheapest price. The h1 stays for search engines and screen readers.
+function bnDeal(d) {
+  if (!d) return '';
+  const p = d.p;
+  const cfg = [d.size ? inch(d.size) : '', d.storage ? gb(d.storage, p.variantUnit) : '', d.ram ? gb(d.ram) : '', simLbl(d.esim)].filter(Boolean).join(' · ');
+  const save = d.drop ? d.fall : d.below;
+  return `<a class="bn-t bn-d" href="#/p/${esc(p.id)}">
+    <span class="bn-e">${esc(x('spotT'))}${updatedOn() ? ' · ' + esc(updatedOn().slice(0, 5)) : ''}</span>
+    ${save ? `<span class="bn-sv num">−${money(save)} ֏</span>` : ''}
+    <img src="${THUMB(p.id)}" ${thumbSet(p.id, '(max-width:640px) 60vw, 460px')} alt="" width="480" height="480" fetchpriority="high" loading="eager" decoding="async">
+    <span class="bn-db" data-nosnippet>
+      <b class="bn-dn">${esc(fullName(p))}${nameTag(p)}</b>${cfg ? `<small>${esc(cfg)}</small>` : ''}
+      <b class="bn-dp num">${amd(d.lo)}</b>
+      <span class="bn-da">${esc(shopName(d.loShop))} · ${esc(nx(d.shops || shopCount(offersFor(p)), 'shops'))}${!d.drop && d.below ? ' · ' + esc(x('dealUsual').replace('{n}', money(d.below))) : ''}</span>
+    </span>
+  </a>`;
+}
+// The seven sections with the most models on sale, each shown by its most popular model with a photo.
+function bnCats() {
+  const by = {};
+  for (const p of DATA) {
+    if (!hasReal(p)) continue;
+    const c = catOf(p), o = by[c] || (by[c] = { cat: c, n: 0, lo: Infinity, p: null });
+    o.n++; o.lo = Math.min(o.lo, offersFor(p)[0].price);
+    if (IMG(p.id) !== NOPHOTO && (!o.p || p.popularity > o.p.popularity)) o.p = p;
+  }
+  return Object.values(by).filter(c => c.p).sort((a, b) => b.n - a.n).slice(0, 7);
+}
+const bnPopular = () => DATA.filter(hasReal).sort((a, b) => b.popularity - a.popularity).slice(0, 4);
 function mastHero() {
   const dl = deals();
   const sp = spotDeal(dl);
   const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
   // what the catalogue lists: a product no shop sells today keeps its page but is not in the grid
   const listed = DATA.filter(hasReal).length;
-  return `<div class="cv${sp ? ' has-spot' : ''}">
-      ${spotHTML(sp)}
-      <div class="cv-l">
-      <h1 class="cv-h">${esc(x('heroA'))} <em>${esc(x('heroB'))}</em></h1>
-      <p class="cv-sub">${esc(x('heroSub'))}</p>
-      <div class="cv-acts">
-        <a class="btn" href="#results">${esc(x('heroCta2'))}</a>
-        ${dl.length ? `<a class="btn ghost" href="#savings">${esc(x('heroCta'))}</a>` : ''}
+  return `<h1 class="vh">${esc(x('heroA'))} ${esc(x('heroB'))}</h1>
+    <div class="bn">
+      ${bnDeal(sp || dl.find(d => !d.drop))}
+      <div class="bn-t bn-q">
+        <div class="bn-st">
+          <div><b class="num">${money(listed)}</b><span>${esc(plw(listed, 'models'))}</span></div>
+          <div><b class="num">${money(offersTotal)}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
+          <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(plw(Object.keys(P.shops || {}).length, 'shops'))}</span></div>
+        </div>
+        <div>
+          <label class="bn-box" for="q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>${esc(x('searchShort'))}</label>
+          <div class="bn-chips">${bnPopular().map(p => `<a href="#/p/${esc(p.id)}">${esc(p.brand + ' ' + p.name)}</a>`).join('')}</div>
+        </div>
       </div>
-      </div>
-    </div>
-    <div class="cv-bar">
-      <div><b class="num">${listed}</b><span>${esc(plw(listed, 'models'))}</span></div>
-      <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(plw(Object.keys(P.shops || {}).length, 'shops'))}</span></div>
-      <div><b class="num">${offersTotal}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
-      ${updatedOn() ? `<div><b class="num">${esc(updatedOn())}</b><span>${esc(x('updated'))}</span></div>` : ''}
+      ${bnCats().map((c, i) => `<a class="bn-t bn-c bn-c${i}" href="#/c/${esc(c.cat)}">
+        <b>${esc(catName(c.cat))}</b>
+        <span class="bn-f num">${esc(fromPrice(c.lo))}</span>
+        <span class="bn-n">${esc(nx(c.n, 'models'))}</span>
+        <img src="${THUMB(c.p.id)}" ${thumbSet(c.p.id, '(max-width:640px) 40vw, 220px')} alt="" width="480" height="480" loading="${i < 3 ? 'eager' : 'lazy'}" decoding="async">
+      </a>`).join('')}
     </div>
     ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT" data-nosnippet>
       <div class="dls-hd">
