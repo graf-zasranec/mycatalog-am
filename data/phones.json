@@ -95934,7 +95934,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips BHD272/00 Hair Dryer.",
     "sources": [
@@ -95942,6 +95943,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -95967,7 +95971,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200
     },
     "summaryEn": "Philips BHD274/00 Hair Dryer.",
     "sources": [
@@ -95975,6 +95980,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96000,7 +96008,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1600
     },
     "summaryEn": "Philips BHD302/30 Hair Dryer.",
     "sources": [
@@ -96008,6 +96017,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96033,7 +96045,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1600
     },
     "summaryEn": "Philips BHD308/10 Hair Dryer.",
     "sources": [
@@ -96041,6 +96054,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96066,7 +96082,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1600
     },
     "summaryEn": "Philips BHD321/00 Hair Dryer.",
     "sources": [
@@ -96099,7 +96116,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips BHD350/10 Hair Dryer.",
     "sources": [
@@ -96132,7 +96150,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips BHD360/20 Hair Dryer.",
     "sources": [
@@ -96165,7 +96184,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips BHD500/00 Hair Dryer.",
     "sources": [
@@ -96173,6 +96193,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -96198,7 +96221,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips BHD501/00 Hair Dryer.",
     "sources": [
@@ -96206,6 +96230,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -96231,7 +96258,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips BHD504/00 Hair Dryer.",
     "sources": [
@@ -96239,6 +96267,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96264,7 +96295,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2300
     },
     "summaryEn": "Philips BHD514/00 Hair Dryer.",
     "sources": [
@@ -96272,6 +96304,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96297,7 +96332,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1800
     },
     "summaryEn": "Philips BHD628/00 Hair Dryer.",
     "sources": [
@@ -96330,7 +96366,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1800
     },
     "summaryEn": "Philips BHD720/10 Hair Dryer.",
     "sources": [
@@ -96363,7 +96400,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "noise": "80 dB"
     },
     "summaryEn": "Philips FC6722/01 Cordless Vacuum.",
     "sources": [
@@ -96371,7 +96409,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1800
+    }
   },
   {
     "id": "philips-fc8586-01",
@@ -96397,7 +96438,8 @@
     "battery": {},
     "appliance": {
       "type": "canister_vacuum",
-      "power": 1800
+      "power": 1800,
+      "noise": "82 dB"
     },
     "summaryEn": "Philips FC8586/01 Vacuum Cleaner.",
     "sources": [
@@ -96405,6 +96447,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 5200
+    },
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -96430,7 +96478,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1000
     },
     "summaryEn": "Philips HD7462/20 Coffee Maker.",
     "sources": [
@@ -96438,6 +96487,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1900
+    },
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96463,7 +96518,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2000
     },
     "summaryEn": "Philips HD9270/90 Air Fryer.",
     "sources": [
@@ -96471,6 +96527,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96496,7 +96555,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "summaryEn": "Philips HPS910/00 Hair Dryer.",
     "sources": [
@@ -96529,7 +96589,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2300
     },
     "summaryEn": "Philips HPS920/00 Hair Dryer.",
     "sources": [
@@ -96537,6 +96598,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96562,7 +96626,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1300
     },
     "summaryEn": "Philips NA110/00 Air Fryer.",
     "sources": [
@@ -96570,6 +96635,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96595,7 +96663,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1500
     },
     "summaryEn": "Philips NA120/00 Air Fryer.",
     "sources": [
@@ -96603,6 +96672,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96628,7 +96700,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700
     },
     "summaryEn": "Philips NA332/00 Air Fryer.",
     "sources": [
@@ -96636,6 +96709,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 5600
+    },
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96661,7 +96740,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 230
     },
     "summaryEn": "Philips SM7580/00 Coffee Machine.",
     "sources": [
@@ -96669,7 +96749,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 8000
+    }
   },
   {
     "id": "philips-sth3020-16",
@@ -96694,7 +96777,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1000
     },
     "summaryEn": "Philips STH3020/16 Garment Steamer.",
     "sources": [
@@ -96702,7 +96786,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1100
+    }
   },
   {
     "id": "philips-sth5030-20",
@@ -96727,7 +96814,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1300
     },
     "summaryEn": "Philips STH5030/20 Garment Steamer.",
     "sources": [
@@ -96735,7 +96823,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 720
+    }
   },
   {
     "id": "philips-xb2142-08",
@@ -96761,7 +96852,8 @@
     "battery": {},
     "appliance": {
       "type": "canister_vacuum",
-      "power": 850
+      "power": 850,
+      "noise": "77 dB"
     },
     "summaryEn": "Philips XB2142/08 Vacuum Cleaner.",
     "sources": [
@@ -96794,7 +96886,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 18
     },
     "summaryEn": "Philips XC3031/61 Cordless Vacuum.",
     "sources": [
@@ -96802,6 +96895,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1500
+    },
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -96825,9 +96924,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 25
     },
     "summaryEn": "Philips XC3133/01 Cordless Vacuum.",
     "sources": [
@@ -96835,6 +96937,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1500
+    },
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -96858,9 +96966,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "80 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "noise": "80 dB"
     },
     "summaryEn": "Philips XC7055/01 Cordless Vacuum.",
     "sources": [
@@ -96868,6 +96979,12 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "body": {
+      "weight": 1700
+    },
+    "colors": [
+      "Iron Grey"
     ]
   },
   {
@@ -102006,7 +102123,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_clipper"
+      "type": "hair_clipper",
+      "power": 15
     },
     "battery": {},
     "colors": [
@@ -102045,7 +102163,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_clipper"
+      "type": "hair_clipper",
+      "power": 15
     },
     "battery": {},
     "colors": [
@@ -102167,7 +102286,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_clipper"
+      "type": "hair_clipper",
+      "power": 15
     },
     "battery": {},
     "colors": [
@@ -102248,7 +102368,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_clipper"
+      "type": "hair_clipper",
+      "power": 15
     },
     "battery": {},
     "colors": [
@@ -102673,7 +102794,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 30
     },
     "battery": {},
     "summaryEn": "Philips hair curler BHB862/00.",
@@ -102745,7 +102867,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "130-210˚С"
     },
     "battery": {},
     "summaryEn": "Philips hair curler BHB872/00.",
@@ -102926,7 +103049,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 18
     },
     "battery": {},
     "summaryEn": "Philips hair styler BHH777/00.",
@@ -102964,7 +103088,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "210˚C"
     },
     "battery": {},
     "summaryEn": "Philips hair styler BHH811/00.",
@@ -102999,7 +103124,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 52
     },
     "battery": {},
     "summaryEn": "Philips hair styler BHH880/00.",
@@ -103037,7 +103163,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "220 °C"
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS375/00.",
@@ -103151,7 +103278,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 53
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS510/00.",
@@ -103188,7 +103316,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 53
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS515/00.",
@@ -103225,7 +103354,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "120 °C – 230 °C",
+      "power": 53
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS520/00.",
@@ -103262,7 +103393,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "230˚C",
+      "power": 53
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS530/00.",
@@ -106466,7 +106599,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 6.2
+      "volume": 6.2,
+      "power": 2000,
+      "temperature": "40 - 240°C"
     },
     "battery": {},
     "summaryEn": "Ninja Air Fryer MAX PRO AF180EU: 6.2 L.",
@@ -106503,7 +106638,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 10.4
+      "volume": 10.4,
+      "power": 2470,
+      "temperature": "40°C - 240°C"
     },
     "battery": {},
     "summaryEn": "Ninja Foodi FlexDrawer AF500EU: 10.4 L.",
