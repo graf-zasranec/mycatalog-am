@@ -15215,7 +15215,8 @@
       "Dyson HS09 Airwrap Co-anda2x",
       "HS09 Airwrap Co-anda2x",
       "Airwrap Co-anda2x HS09"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dyson-er-hd07",
@@ -15250,7 +15251,10 @@
     ],
     "colors": [
       "Iron Fuchsia"
-    ]
+    ],
+    "appliance": {
+      "power": 1600
+    }
   },
   {
     "id": "dyson-er-hd15",
@@ -15287,7 +15291,10 @@
     "colors": [
       "Black",
       "Nickel"
-    ]
+    ],
+    "appliance": {
+      "power": 1600
+    }
   },
   {
     "id": "dyson-gen5-detect",
@@ -15325,7 +15332,8 @@
     ],
     "aliases": [
       "Dyson Gen5 Detect"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dyson-hd18-vinca-blue-topaz",
@@ -15357,7 +15365,8 @@
     ],
     "colors": [
       "Blue"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dyson-hs08-i-d",
@@ -15426,7 +15435,10 @@
       "Pink",
       "Bronze Pink",
       "Red"
-    ]
+    ],
+    "appliance": {
+      "power": 1300
+    }
   },
   {
     "id": "dyson-ht01-airstrait-straightener-plum",
@@ -15491,7 +15503,10 @@
       "Amber Silk",
       "Kanzan Pink",
       "Apricot Topaz"
-    ]
+    ],
+    "appliance": {
+      "power": 1600
+    }
   },
   {
     "id": "dyson-multi-complete-long-hs05",
@@ -15560,7 +15575,10 @@
       "Fuchsia",
       "Strawberry",
       "Nickel/Copper"
-    ]
+    ],
+    "appliance": {
+      "power": 1300
+    }
   },
   {
     "id": "dyson-nural-er",
@@ -15591,7 +15609,10 @@
     "summaryEn": "Dyson Nural™ er.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "appliance": {
+      "power": 1600
+    }
   },
   {
     "id": "dyson-nural-hd16-strawberry",
@@ -15638,7 +15659,10 @@
     "colors": [
       "Ceramic",
       "Strawberry"
-    ]
+    ],
+    "appliance": {
+      "power": 1600
+    }
   },
   {
     "id": "dyson-origin-hs05",
@@ -15665,7 +15689,8 @@
     "summaryEn": "Dyson ™ Origin HS05.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dyson-r-dh17",
@@ -15693,7 +15718,8 @@
     "summaryEn": "Dyson r™ DH17.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dyson-v12-detect-slim-cordless-vacuum-cleaner",
@@ -15718,7 +15744,8 @@
     "summaryEn": "Dyson V12 Detect Slim Cordless Vacuum Cleaner.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dyson-zone",
@@ -49086,7 +49113,8 @@
     "summaryEn": "Xiaomi Mi Smart Kettle Pro MJHWSH02YM.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-pad-7",
@@ -54802,7 +54830,8 @@
     "summaryEn": "Xiaomi Smart IR Control.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-smart-mi-band-8-pro",
@@ -67433,7 +67462,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "appliance": {
+      "power": 2700
+    }
   },
   {
     "id": "xiaomi-handheld-garment-steamer-mjgtj02lf",
@@ -67466,7 +67498,8 @@
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-mijia-smart-air-purifier-6",
@@ -67502,7 +67535,8 @@
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-robot-vacuum-5",
@@ -67526,14 +67560,17 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "140 min"
+    },
     "summaryEn": "Xiaomi Vacuum 5.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-robot-vacuum-5-pro",
@@ -67564,7 +67601,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-robot-vacuum-s40-pro",
@@ -67642,7 +67680,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {
+      "power": 55
+    }
   },
   {
     "id": "xiaomi-robot-vacuum-x20-pro",
@@ -67673,7 +67714,10 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {
+      "power": 55
+    }
   },
   {
     "id": "xiaomi-semi-automatic-espresso-machine-bhr9798eu",
@@ -67701,7 +67745,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-smart-air-fryer-6-5l",
@@ -67736,7 +67781,11 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {
+      "power": 1800,
+      "volume": 6.5
+    }
   },
   {
     "id": "xiaomi-smart-air-purifier-4-compact-bhr5860eu",
@@ -67767,7 +67816,11 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {},
+    "body": {
+      "weight": 3000
+    }
   },
   {
     "id": "xiaomi-smart-air-purifier-4-lite-bhr5274gl",
@@ -67798,7 +67851,13 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {
+      "power": 33
+    },
+    "body": {
+      "weight": 4800
+    }
   },
   {
     "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
@@ -67828,7 +67887,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
@@ -67862,7 +67922,11 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "appliance": {
+      "power": 2800,
+      "volume": 12
+    }
   },
   {
     "id": "xiaomi-smart-scale-s200",
@@ -67895,7 +67959,8 @@
     ],
     "colors": [
       "Dark Grey"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-sound-pocket",
@@ -67952,7 +68017,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Xiaomi Vacuum Cleaner G20 Lite.",
     "unsure": [
       "popularity",
@@ -67962,7 +68029,13 @@
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "appliance": {
+      "power": 215
+    },
+    "body": {
+      "weight": 2500
+    }
   },
   {
     "id": "xiaomi-vacuum-cleaner-g20-max",
@@ -67985,14 +68058,22 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Xiaomi Vacuum Cleaner G20 Max.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {
+      "power": 520
+    },
+    "body": {
+      "weight": 4200
+    }
   },
   {
     "id": "dreame-air-fryer-af30",
@@ -69910,7 +69991,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-vacuum-s40c-bhr9664eu",
@@ -69940,7 +70022,13 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {
+      "power": 55
+    },
+    "body": {
+      "weight": 4500
+    }
   },
   {
     "id": "xiaomi-vacuum-s40-bhr084aeu",
@@ -70022,7 +70110,8 @@
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-l40-eub",
@@ -70052,7 +70141,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-vacuum-h50-bhr08gueu",
@@ -70181,7 +70271,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-d30-ultra-eua",
@@ -70216,7 +70307,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-l40-ultra-ae",
@@ -70251,7 +70343,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-l50-ultra-ae-eua",
@@ -70286,7 +70379,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-l40s-pro-ultra",
@@ -70321,7 +70415,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-l50s-pro-ultra-eua",
@@ -70356,7 +70451,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-l60-ultra",
@@ -70391,7 +70487,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "xiaomi-vacuum-6-max",
@@ -70414,7 +70511,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "140 min"
+    },
     "summaryEn": "Xiaomi Vacuum 6 Max.",
     "unsure": [
       "popularity",
@@ -70424,7 +70523,8 @@
     ],
     "colors": [
       "Dark Gray Silver"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-x60-ultra-complete",
@@ -70459,7 +70559,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-ultra-roller-complete-eua",
@@ -70494,7 +70595,8 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-matrix10-ultra-eua",
@@ -70527,7 +70629,8 @@
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "dreame-vacuum-x60-pro-master",
@@ -70557,7 +70660,8 @@
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "appliance": {}
   },
   {
     "id": "jbl-go-5",
@@ -81048,7 +81152,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "appliance": {
       "type": "wet_dry_vacuum",
       "suction": "25000 Pa"
@@ -81161,7 +81267,8 @@
     "battery": {},
     "appliance": {
       "type": "robot_vacuum",
-      "suction": "18500 Pa"
+      "suction": "18500 Pa",
+      "power": 60
     },
     "summaryEn": "Roborock Qrevo C Pro.",
     "sources": [
@@ -81173,7 +81280,10 @@
     "colors": [
       "Black",
       "White"
-    ]
+    ],
+    "body": {
+      "weight": 11700
+    }
   },
   {
     "id": "xiaomi-handheld-vacuum-g30-max",
@@ -81237,7 +81347,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 66
     },
     "summaryEn": "Roborock robot vacuum with the OmniGrip arm that picks up socks and light objects up to 300 g.",
     "sources": [
@@ -81245,7 +81356,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5000
+    }
   },
   {
     "id": "dreame-x50-master",
@@ -81271,7 +81385,8 @@
     "battery": {},
     "appliance": {
       "type": "robot_vacuum",
-      "suction": "20000 Pa"
+      "suction": "20000 Pa",
+      "power": 75
     },
     "summaryEn": "Dreame X50 Master.",
     "sources": [
@@ -81282,7 +81397,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "body": {
+      "weight": 4350
+    }
   },
   {
     "id": "dreame-h12-dual",
@@ -83470,7 +83588,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000
     },
     "summaryEn": "Berg VC1569R.",
     "sources": [
@@ -83707,7 +83826,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 1800
     },
     "summaryEn": "Samsung VC18M21C0VR.",
     "sources": [
@@ -83715,7 +83835,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4600
+    }
   },
   {
     "id": "philips-xb2042-01",
@@ -83774,7 +83897,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 2000,
+      "noise": "83 dB"
     },
     "summaryEn": "Philips XD3030/01.",
     "sources": [
@@ -83875,7 +84000,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher SE 5 EU.",
     "sources": [
@@ -83906,7 +84032,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -83916,7 +84044,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 800
+    }
   },
   {
     "id": "hisense-rvcl144ab",
@@ -83939,7 +84070,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "150 min"
+    },
     "appliance": {
       "type": "robot_vacuum"
     },
@@ -83949,7 +84082,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3400
+    }
   },
   {
     "id": "hisense-hvc6234w",
@@ -85854,7 +85990,8 @@
     "appliance": {
       "type": "robot_vacuum",
       "suctionPa": 20000,
-      "runtime": 200
+      "runtime": 200,
+      "power": 75
     },
     "summaryEn": "Dreame L50 Ultra robot vacuum and mop: up to 20,000 Pa suction, 6,400 mAh battery for up to 200 minutes, ProLeap threshold climbing, mop pads that lift 10.5 mm on carpet, and a self-emptying dock with a 3.2 L bag.",
     "sources": [
@@ -85862,7 +85999,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4300
+    }
   },
   {
     "id": "xiaomi-air-fryer-6-5l",
@@ -86708,7 +86848,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "150 min"
+    },
     "appliance": {
       "type": "robot_vacuum"
     },
@@ -86718,7 +86860,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 9000
+    }
   },
   {
     "id": "lg-np3530",
@@ -87466,7 +87611,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 46
     },
     "summaryEn": "Dreame D10s (RLS3L).",
     "sources": [
@@ -87474,7 +87620,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3700
+    }
   },
   {
     "id": "dreame-x50-ultra-complete",
@@ -87510,7 +87659,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 15000
+    }
   },
   {
     "id": "hisense-24n3g-pro",
@@ -88617,7 +88769,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "120 min"
+    },
     "appliance": {
       "type": "robot_vacuum"
     },
@@ -88627,7 +88781,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4500
+    }
   },
   {
     "id": "karcher-rcv5",
@@ -88652,7 +88809,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 36
     },
     "summaryEn": "Karcher RCV 5 Robot Vacuum.",
     "sources": [
@@ -88660,7 +88818,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3900
+    }
   },
   {
     "id": "lenovo-v16-g8-irl-21sh008lrt",
@@ -89330,9 +89491,13 @@
       "White"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "360 min"
+    },
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 69,
+      "volume": 0.3
     },
     "summaryEn": "Roborock S8+.",
     "sources": [
@@ -89340,7 +89505,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4800
+    }
   },
   {
     "id": "samsung-hw-b650d",
@@ -89875,9 +90043,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "90 min"
+    },
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 130
     },
     "summaryEn": "Samsung VR20M7070WD Robot Vacuum.",
     "sources": [
@@ -89885,7 +90056,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4300
+    }
   },
   {
     "id": "samsung-vr30t85513w",
@@ -89908,9 +90082,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "90 min"
+    },
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 60
     },
     "summaryEn": "Samsung Jet Bot+ VR30T85513W.",
     "sources": [
@@ -89918,7 +90095,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3400
+    }
   },
   {
     "id": "sony-ht-s350",
@@ -90146,9 +90326,13 @@
       "White"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "180 min"
+    },
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 59,
+      "volume": 0.35
     },
     "summaryEn": "Roborock Q8 Max.",
     "sources": [
@@ -90184,7 +90368,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 60
     },
     "summaryEn": "Roborock Qrevo CurvX.",
     "sources": [
@@ -90192,7 +90377,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4500
+    }
   },
   {
     "id": "roborock-qrevo-edge-2-pro",
@@ -90220,7 +90408,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 60
     },
     "summaryEn": "Roborock Qrevo Edge 2 Pro.",
     "sources": [
@@ -90228,7 +90417,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4700
+    }
   },
   {
     "id": "roborock-s8-maxv-ultra",
@@ -90256,7 +90448,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 60
     },
     "summaryEn": "Roborock S8 MaxV Ultra.",
     "sources": [
@@ -90264,7 +90457,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5200
+    }
   },
   {
     "id": "roborock-saros-20-sonic-complete",
@@ -90292,7 +90488,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 65
     },
     "summaryEn": "Roborock Saros 20 Sonic Complete.",
     "sources": [
@@ -90300,7 +90497,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5000
+    }
   },
   {
     "id": "bosch-bgc05aaa1",
@@ -90359,7 +90559,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1200,
+      "volume": 1.4
     },
     "summaryEn": "Bosch TKA4M233 Coffee Maker.",
     "sources": [
@@ -90367,7 +90569,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2500
+    }
   },
   {
     "id": "bosch-tka6a041",
@@ -90392,7 +90597,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1200,
+      "volume": 1.25
     },
     "summaryEn": "Bosch TKA6A041 Coffee Maker.",
     "sources": [
@@ -90400,7 +90607,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2200
+    }
   },
   {
     "id": "braun-gs3012bg",
@@ -90425,7 +90635,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1100
     },
     "summaryEn": "Braun GS3012BG Garment Steamer.",
     "sources": [
@@ -90433,7 +90644,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1170
+    }
   },
   {
     "id": "braun-gs3013gr",
@@ -90458,7 +90672,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1100
     },
     "summaryEn": "Braun GS3013GR Garment Steamer.",
     "sources": [
@@ -90466,7 +90681,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1170
+    }
   },
   {
     "id": "braun-gs3024bl",
@@ -90491,7 +90709,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1100
     },
     "summaryEn": "Braun GS3024BL Garment Steamer.",
     "sources": [
@@ -90524,7 +90743,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1200
     },
     "summaryEn": "Braun GS5011PU Garment Steamer.",
     "sources": [
@@ -90535,7 +90755,10 @@
     ],
     "colors": [
       "White Purple"
-    ]
+    ],
+    "body": {
+      "weight": 1000
+    }
   },
   {
     "id": "braun-gs5031bl",
@@ -90560,7 +90783,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1200
     },
     "summaryEn": "Braun GS5031BL Garment Steamer.",
     "sources": [
@@ -90568,7 +90792,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1040
+    }
   },
   {
     "id": "braun-gs7088cp",
@@ -90593,7 +90820,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1600
     },
     "summaryEn": "Braun GS7088CP Garment Steamer.",
     "sources": [
@@ -90601,7 +90829,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1000
+    }
   },
   {
     "id": "braun-hf3000ibk",
@@ -90626,7 +90857,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1500,
+      "volume": 4.3
     },
     "summaryEn": "Braun HF3000IBK Air Fryer.",
     "sources": [
@@ -90659,7 +90892,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1500,
+      "volume": 4.3
     },
     "summaryEn": "Braun HF3030IBK Air Fryer.",
     "sources": [
@@ -90692,7 +90927,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 5.7
     },
     "summaryEn": "Braun HF5030IBK Air Fryer.",
     "sources": [
@@ -90725,7 +90962,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 6
     },
     "summaryEn": "Braun HF5034IBK Air Fryer.",
     "sources": [
@@ -90758,7 +90997,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2000,
+      "volume": 6
     },
     "summaryEn": "Braun HF5054IBK Air Fryer.",
     "sources": [
@@ -90791,7 +91032,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2000,
+      "volume": 6
     },
     "summaryEn": "Braun HF5055IBK Air Fryer.",
     "sources": [
@@ -90824,7 +91067,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2000,
+      "volume": 6
     },
     "summaryEn": "Braun HF5075IBK Air Fryer.",
     "sources": [
@@ -90832,7 +91077,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5600
+    }
   },
   {
     "id": "braun-kf1100",
@@ -90900,7 +91148,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1000,
+      "volume": 1.3
     },
     "summaryEn": "Braun KF3100 Coffee Maker.",
     "sources": [
@@ -90908,7 +91158,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1900
+    }
   },
   {
     "id": "braun-kf3120",
@@ -90936,7 +91189,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1000,
+      "volume": 1.3
     },
     "summaryEn": "Braun KF3120 Coffee Maker.",
     "sources": [
@@ -90944,7 +91199,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3200
+    }
   },
   {
     "id": "braun-kf7020-bk",
@@ -90969,7 +91227,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1000,
+      "volume": 1.5
     },
     "summaryEn": "Braun KF7020.BK Coffee Maker.",
     "sources": [
@@ -90977,7 +91237,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2800
+    }
   },
   {
     "id": "braun-td3030ibk",
@@ -91002,7 +91265,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1500,
+      "volume": 8
     },
     "summaryEn": "Braun TD3030IBK Air Fryer.",
     "sources": [
@@ -91068,7 +91333,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2850,
+      "volume": 10
     },
     "summaryEn": "Braun TD5053IBK Air Fryer.",
     "sources": [
@@ -91104,7 +91371,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1100
     },
     "summaryEn": "De'Longhi EC230 Coffee Maker.",
     "sources": [
@@ -91190,7 +91458,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "volume": 1.1
+      "volume": 1.1,
+      "power": 1300
     },
     "summaryEn": "De'Longhi EC885 Coffee Maker.",
     "sources": [
@@ -91227,7 +91496,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450
     },
     "summaryEn": "De'Longhi EC890 Coffee Maker.",
     "sources": [
@@ -91235,7 +91505,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4200
+    }
   },
   {
     "id": "de-longhi-ec9155",
@@ -91263,7 +91536,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "volume": 1.7
     },
     "summaryEn": "De'Longhi EC9155 Coffee Machine.",
     "sources": [
@@ -91340,7 +91614,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.7
     },
     "summaryEn": "De'Longhi EC9455 Coffee Machine.",
     "sources": [
@@ -91348,7 +91624,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 10000
+    }
   },
   {
     "id": "de-longhi-ec9555",
@@ -91416,7 +91695,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM12.121 Coffee Machine.",
     "sources": [
@@ -91452,7 +91733,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM22.110 Coffee Machine.",
     "sources": [
@@ -91488,7 +91771,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM22.114 Coffee Machine.",
     "sources": [
@@ -91524,7 +91809,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450
     },
     "summaryEn": "De'Longhi ECAM22.117 Coffee Machine.",
     "sources": [
@@ -91560,7 +91846,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM220.21 Coffee Machine.",
     "sources": [
@@ -91568,7 +91856,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 8000
+    }
   },
   {
     "id": "de-longhi-ecam220-22",
@@ -91593,7 +91884,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM220.22 Coffee Machine.",
     "sources": [
@@ -91629,7 +91922,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM220.31 Coffee Machine.",
     "sources": [
@@ -91706,7 +92001,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM220.51 Coffee Machine.",
     "sources": [
@@ -91742,7 +92039,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM290.21 Coffee Machine.",
     "sources": [
@@ -91778,7 +92077,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM290.31 Coffee Machine.",
     "sources": [
@@ -91855,7 +92156,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM290.81 Coffee Machine.",
     "sources": [
@@ -91891,7 +92194,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM290.85 Coffee Machine.",
     "sources": [
@@ -91967,7 +92272,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.9
     },
     "summaryEn": "De'Longhi ECAM320.70 Coffee Machine.",
     "sources": [
@@ -92003,7 +92310,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM380.85 Coffee Machine.",
     "sources": [
@@ -92039,7 +92348,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM380.95 Coffee Machine.",
     "sources": [
@@ -92075,7 +92386,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM450.86 Coffee Machine.",
     "sources": [
@@ -92111,7 +92424,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM470.85 Coffee Machine.",
     "sources": [
@@ -92147,7 +92462,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 2
     },
     "summaryEn": "De'Longhi ECAM550.65 Coffee Machine.",
     "sources": [
@@ -92183,7 +92500,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 2.2
     },
     "summaryEn": "De'Longhi ECAM610.55 Coffee Machine.",
     "sources": [
@@ -92219,7 +92538,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 2.2
     },
     "summaryEn": "De'Longhi ECAM610.74 Coffee Machine.",
     "sources": [
@@ -92252,7 +92573,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 2.2
     },
     "summaryEn": "De'Longhi ECAM630.55 Coffee Machine.",
     "sources": [
@@ -92285,7 +92608,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 2.2
     },
     "summaryEn": "De'Longhi ECAM630.75 Coffee Machine.",
     "sources": [
@@ -92318,7 +92643,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 0.4
     },
     "summaryEn": "De'Longhi ECAM650.55 Coffee Machine.",
     "sources": [
@@ -92326,7 +92653,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 12500
+    }
   },
   {
     "id": "de-longhi-ecam650-75",
@@ -92351,7 +92681,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450
     },
     "summaryEn": "De'Longhi ECAM650.75 Coffee Machine.",
     "sources": [
@@ -92359,7 +92690,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 12500
+    }
   },
   {
     "id": "de-longhi-ecam650-85",
@@ -92384,7 +92718,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 2
     },
     "summaryEn": "De'Longhi ECAM650.85 Coffee Machine.",
     "sources": [
@@ -92392,7 +92728,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 12500
+    }
   },
   {
     "id": "de-longhi-eci341",
@@ -92417,7 +92756,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1100,
+      "volume": 1
     },
     "summaryEn": "De'Longhi ECI341 Coffee Maker.",
     "sources": [
@@ -92425,7 +92766,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4500
+    }
   },
   {
     "id": "de-longhi-ecp31-21",
@@ -92450,7 +92794,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1100,
+      "volume": 1.18
     },
     "summaryEn": "De'Longhi ECP31.21 Coffee Maker.",
     "sources": [
@@ -92458,7 +92804,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4000
+    }
   },
   {
     "id": "de-longhi-epam960-75glm",
@@ -92516,7 +92865,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450,
+      "volume": 1.4
     },
     "summaryEn": "De'Longhi EXAM420.55.WXL Coffee Machine.",
     "sources": [
@@ -92599,7 +92950,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450
     },
     "summaryEn": "De'Longhi EXAM441.55 Coffee Machine.",
     "sources": [
@@ -92632,7 +92984,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1400
     },
     "summaryEn": "De'Longhi FH2101/1W Air Fryer.",
     "sources": [
@@ -92640,7 +92993,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 5200
+    }
   },
   {
     "id": "de-longhi-icm15210-1",
@@ -92668,7 +93024,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 900,
+      "volume": 1.25
     },
     "summaryEn": "De'Longhi ICM15210.1 Coffee Maker.",
     "sources": [
@@ -92676,7 +93034,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "de-longhi-icm16210",
@@ -92704,7 +93065,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1000,
+      "volume": 1.25
     },
     "summaryEn": "De'Longhi ICM16210 Coffee Maker.",
     "sources": [
@@ -92737,7 +93100,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1800,
+      "volume": 1.25
     },
     "summaryEn": "De'Longhi ICM17210 Coffee Maker.",
     "sources": [
@@ -92745,7 +93110,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2200
+    }
   },
   {
     "id": "dreame-ahd51-pocket",
@@ -92893,7 +93261,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1600
     },
     "summaryEn": "Dreame AHX01A Pilot Smart AI Hair Dryer.",
     "sources": [
@@ -92926,7 +93295,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 1600
     },
     "summaryEn": "Dreame AMA10A Hairdryer Aero Straight.",
     "sources": [
@@ -93002,7 +93372,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1400
     },
     "summaryEn": "Dreame AMS01A AirStyle Pro HI Hair Dryer.",
     "sources": [
@@ -93038,7 +93409,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1400
     },
     "summaryEn": "Dreame AZD20A Dazzle Hair Dryer.",
     "sources": [
@@ -93069,9 +93441,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "90 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 150
     },
     "summaryEn": "Dreame R10 Pro Aqua (VZV15A) Cordless Vacuum.",
     "sources": [
@@ -93079,7 +93454,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "dreame-r10s-pro-vzv23a",
@@ -93102,7 +93480,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "65 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -93145,7 +93525,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2200
+    }
   },
   {
     "id": "dreame-z40-station-vzv33a",
@@ -93168,9 +93551,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "70 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 855
     },
     "summaryEn": "Dreame Z40 Station (VZV33A) Cordless Vacuum.",
     "sources": [
@@ -93178,7 +93564,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 11000
+    }
   },
   {
     "id": "dyson-cyclone-v10-submarine-4446",
@@ -93201,7 +93590,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -93234,9 +93625,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "70 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 900
     },
     "summaryEn": "Dyson DS60 Piston Animal Submarine (2969) Cordless Vacuum.",
     "sources": [
@@ -93269,7 +93663,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 6.3
     },
     "summaryEn": "Hisense H06AFBS1S3 Air Fryer.",
     "sources": [
@@ -93302,7 +93698,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "volume": 6.7
     },
     "summaryEn": "Hisense HAF1350DR Air Fryer.",
     "sources": [
@@ -93335,7 +93732,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1600,
+      "volume": 5.2
     },
     "summaryEn": "Hisense HAF1600D Air Fryer.",
     "sources": [
@@ -93368,7 +93767,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1850,
+      "volume": 5.7
     },
     "summaryEn": "Hisense HAF1800D Air Fryer.",
     "sources": [
@@ -93376,7 +93777,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 7000
+    }
   },
   {
     "id": "hisense-haf1800dcd",
@@ -93401,7 +93805,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1850,
+      "volume": 6.3
     },
     "summaryEn": "Hisense HAF1800DCD Air Fryer.",
     "sources": [
@@ -93434,7 +93840,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1800,
+      "volume": 7
     },
     "summaryEn": "Hisense HAF1900D Air Fryer.",
     "sources": [
@@ -93467,7 +93875,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2100,
+      "volume": 8
     },
     "summaryEn": "Hisense HAF2100DCD Air Fryer.",
     "sources": [
@@ -93500,7 +93910,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "volume": 11
     },
     "summaryEn": "Hisense HAF2700DCD Air Fryer.",
     "sources": [
@@ -93533,7 +93944,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1800,
+      "volume": 7.2
     },
     "summaryEn": "Hisense HAF2700DHA Air Fryer.",
     "sources": [
@@ -93566,7 +93979,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 5.3
     },
     "summaryEn": "Hisense HAF2900D Air Fryer.",
     "sources": [
@@ -93599,7 +94014,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 3300,
+      "volume": 11
     },
     "summaryEn": "Hisense HAF3300DHCD Air Fryer.",
     "sources": [
@@ -93632,7 +94049,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1100,
+      "volume": 1.5
     },
     "summaryEn": "Hisense HESCM15DBK Coffee Maker.",
     "sources": [
@@ -93640,7 +94059,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3600
+    }
   },
   {
     "id": "hisense-hescm20lp",
@@ -93665,7 +94087,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1450
     },
     "summaryEn": "Hisense HESCM20LP Coffee Maker.",
     "sources": [
@@ -93673,7 +94096,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3600
+    }
   },
   {
     "id": "hisense-hfc433170a",
@@ -93696,9 +94122,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 220
     },
     "summaryEn": "Hisense HFC433170A Cordless Vacuum.",
     "sources": [
@@ -93706,7 +94135,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 7000
+    }
   },
   {
     "id": "hisense-hvc20e1h2ca",
@@ -93799,7 +94231,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 110
     },
     "summaryEn": "Hisense HVC6133WII Cordless Vacuum.",
     "sources": [
@@ -93807,7 +94240,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2500
+    }
   },
   {
     "id": "hisense-hvc613410bk",
@@ -93830,9 +94266,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "45 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 110
     },
     "summaryEn": "Hisense HVC613410BK Cordless Vacuum.",
     "sources": [
@@ -93840,7 +94279,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2300
+    }
   },
   {
     "id": "hisense-hvc6134bk",
@@ -93863,9 +94305,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "45 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 110
     },
     "summaryEn": "Hisense HVC6134BK Cordless Vacuum.",
     "sources": [
@@ -93873,7 +94318,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2300
+    }
   },
   {
     "id": "hisense-hvc6264bk",
@@ -93896,9 +94344,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "45 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 150
     },
     "summaryEn": "Hisense HVC6264BK Cordless Vacuum.",
     "sources": [
@@ -93906,7 +94357,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3000
+    }
   },
   {
     "id": "hisense-hvc6264w-hsn",
@@ -93929,9 +94383,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "45 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 150
     },
     "summaryEn": "Hisense HVC6264W HSN Cordless Vacuum.",
     "sources": [
@@ -93939,7 +94396,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3000
+    }
   },
   {
     "id": "hisense-hvc6463da",
@@ -93964,7 +94424,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 400
     },
     "summaryEn": "Hisense HVC6463DA Cordless Vacuum.",
     "sources": [
@@ -93972,7 +94433,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4800
+    }
   },
   {
     "id": "hisense-hvc6464a",
@@ -93997,7 +94461,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 400
     },
     "summaryEn": "Hisense HVC6464A Cordless Vacuum.",
     "sources": [
@@ -94005,7 +94470,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3500
+    }
   },
   {
     "id": "hisense-hvc646541a",
@@ -94028,9 +94496,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "20 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 190
     },
     "summaryEn": "Hisense HVC646541A Cordless Vacuum.",
     "sources": [
@@ -94038,7 +94509,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4200
+    }
   },
   {
     "id": "hisense-hvc646630a",
@@ -94063,7 +94537,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 120
     },
     "summaryEn": "Hisense HVC646630A Cordless Vacuum.",
     "sources": [
@@ -94071,7 +94546,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4000
+    }
   },
   {
     "id": "hisense-hvc6664bk",
@@ -94096,7 +94574,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 400
     },
     "summaryEn": "Hisense HVC6664BK Cordless Vacuum.",
     "sources": [
@@ -94104,7 +94583,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3500
+    }
   },
   {
     "id": "hisense-hvc676451da",
@@ -94129,7 +94611,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 400
     },
     "summaryEn": "Hisense HVC676451DA Cordless Vacuum.",
     "sources": [
@@ -94137,7 +94620,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 8900
+    }
   },
   {
     "id": "hisense-hvc676999da",
@@ -94162,7 +94648,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 400
     },
     "summaryEn": "Hisense HVC676999DA Cordless Vacuum.",
     "sources": [
@@ -94195,7 +94682,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 120
     },
     "summaryEn": "Hisense HVC9401BK Cordless Vacuum.",
     "sources": [
@@ -94203,7 +94691,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1200
+    }
   },
   {
     "id": "karcher-ad4-premium",
@@ -94260,9 +94751,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "45 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 180
     },
     "summaryEn": "Karcher FCV4 (Wet and Dry) Cordless Vacuum.",
     "sources": [
@@ -94295,7 +94789,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 160
     },
     "summaryEn": "Karcher KFL1 (Wet and Dry) Cordless Vacuum.",
     "sources": [
@@ -94303,7 +94798,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 7800
+    }
   },
   {
     "id": "karcher-kva2",
@@ -94336,7 +94834,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4100
+    }
   },
   {
     "id": "karcher-kwd1-w-v",
@@ -94395,7 +94896,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 1200
     },
     "summaryEn": "Karcher PUZZI 8/1 Go!Further Spray-Extraction Cleaner.",
     "sources": [
@@ -94403,7 +94905,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 8600
+    }
   },
   {
     "id": "karcher-se2-spot",
@@ -94428,7 +94933,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 450
     },
     "summaryEn": "Karcher SE2 Spot Spray-Extraction Cleaner.",
     "sources": [
@@ -94461,7 +94967,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 500
     },
     "summaryEn": "Karcher SE3 COMPACT HOME Spray-Extraction Cleaner.",
     "sources": [
@@ -94469,7 +94976,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4300
+    }
   },
   {
     "id": "karcher-se4-go-further",
@@ -94494,7 +95004,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 1000
     },
     "summaryEn": "Karcher SE4 Go!Further Spray-Extraction Cleaner.",
     "sources": [
@@ -94561,7 +95072,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 250
     },
     "summaryEn": "Karcher VC6 Cordless Our Family Cordless Vacuum.",
     "sources": [
@@ -94628,7 +95140,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 230
     },
     "summaryEn": "Karcher WD1 Vacuum Cleaner.",
     "sources": [
@@ -94636,7 +95149,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 3100
+    }
   },
   {
     "id": "karcher-wd3-s-v-17-4-20",
@@ -94899,7 +95415,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 150
     },
     "summaryEn": "LG A9LSLIM Cordless Vacuum.",
     "sources": [
@@ -94907,7 +95424,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1900
+    }
   },
   {
     "id": "lg-a9n-core",
@@ -94930,9 +95450,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "50 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 450
     },
     "summaryEn": "LG A9N-CORE Cordless Vacuum.",
     "sources": [
@@ -94940,7 +95463,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2300
+    }
   },
   {
     "id": "lg-vc5420nhtcg",
@@ -95169,7 +95695,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1800
     },
     "summaryEn": "Panasonic EH-NA65-K865 Hair Dryer.",
     "sources": [
@@ -95202,7 +95729,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "summaryEn": "Panasonic EH-ND65-K865 Hair Dryer.",
     "sources": [
@@ -95235,7 +95763,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "summaryEn": "Panasonic EH-NE66-K865 Hair Dryer.",
     "sources": [
@@ -95268,7 +95797,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2500
     },
     "summaryEn": "Panasonic EH-NE83-K865 Hair Dryer.",
     "sources": [
@@ -95301,7 +95831,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2300
     },
     "summaryEn": "Panasonic EH-NE85-K865 Hair Dryer.",
     "sources": [
@@ -95526,7 +96057,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "20 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -95536,7 +96069,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1600
+    }
   },
   {
     "id": "panasonic-mc-sbr40c946",
@@ -95561,7 +96097,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 135
     },
     "summaryEn": "Panasonic MC-SBR40C946 Cordless Vacuum.",
     "sources": [
@@ -95569,7 +96106,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2100
+    }
   },
   {
     "id": "panasonic-mc-sbr70k946",
@@ -95594,7 +96134,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 135
     },
     "summaryEn": "Panasonic MC-SBR70K946 Cordless Vacuum.",
     "sources": [
@@ -95602,7 +96143,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2700
+    }
   },
   {
     "id": "panasonic-mc-yl631r149",
@@ -95911,7 +96455,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 1570
     },
     "summaryEn": "Panasonic NI-GHD015WTV Garment Steamer.",
     "sources": [
@@ -95919,7 +96464,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 750
+    }
   },
   {
     "id": "philips-bhd272-00",
@@ -97031,7 +97579,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4700
+    }
   },
   {
     "id": "roborock-h60-ultra-h10a1a51-07",
@@ -97059,7 +97610,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 210
     },
     "summaryEn": "Roborock H60 Ultra (H10A1A51-07) Cordless Vacuum.",
     "sources": [
@@ -97067,7 +97619,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1500
+    }
   },
   {
     "id": "samsung-vc18m2110sb",
@@ -97602,7 +98157,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 410
     },
     "summaryEn": "Samsung VS15A6031R4 Cordless Vacuum.",
     "sources": [
@@ -97610,7 +98166,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2300
+    }
   },
   {
     "id": "toshiba-vc-cl3000xc",
@@ -97635,7 +98194,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 300
     },
     "summaryEn": "Toshiba VC-CL3000XC Cordless Vacuum.",
     "sources": [
@@ -97643,7 +98203,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 4700
+    }
   },
   {
     "id": "toshiba-vc-cls1c",
@@ -97668,7 +98231,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 120
     },
     "summaryEn": "Toshiba VC-CLS1C Cordless Vacuum.",
     "sources": [
@@ -97676,7 +98240,10 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1200
+    }
   },
   {
     "id": "toshiba-vc-clx50c",
@@ -97699,9 +98266,12 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "45 min"
+    },
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 180
     },
     "summaryEn": "Toshiba VC-CLX50C Cordless Vacuum.",
     "sources": [
@@ -97735,7 +98305,9 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1500,
+      "volume": 4.5
     },
     "summaryEn": "Xiaomi Air Fryer 4.5L (BHR8234EU).",
     "sources": [
@@ -103212,7 +103784,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 1400
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS376/00.",
@@ -105308,7 +105881,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hand_mixer"
+      "type": "hand_mixer",
+      "power": 300
     },
     "battery": {},
     "summaryEn": "Philips hand mixer HR3706/00.",
@@ -107212,7 +107786,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "stand_mixer",
-      "volume": 6.6
+      "volume": 6.6,
+      "power": 375
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Stand Mixer 5KSM70SHX: 6.6 L.",
@@ -108398,7 +108973,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2470
     },
     "battery": {},
     "summaryEn": "Ninja Double Stack XL SL451EU.",
@@ -109010,7 +109586,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1200
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer BAB5510E.",
@@ -109398,7 +109975,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 700
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer BAB2676TTE.",
@@ -110935,7 +111513,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer BAB7000IE.",
@@ -112364,7 +112943,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "stand_mixer"
+      "type": "stand_mixer",
+      "power": 400
     },
     "battery": {},
     "summaryEn": "Kenwood Mixer with Bowl MX271.",
@@ -113217,7 +113797,9 @@
     "appliance": {
       "type": "robot_vacuum"
     },
-    "battery": {},
+    "battery": {
+      "life": "85 min"
+    },
     "summaryEn": "iRobot Robot Vacuum Roomba i3+.",
     "sources": [
       "https://eldorado.am/en/irobot-roomba-i3-plus"
@@ -113251,7 +113833,9 @@
     "appliance": {
       "type": "robot_vacuum"
     },
-    "battery": {},
+    "battery": {
+      "life": "75 min"
+    },
     "summaryEn": "iRobot Robot Vacuum Roomba i7.",
     "sources": [
       "https://eldorado.am/en/irobot-roomba-i7"
@@ -113855,7 +114439,8 @@
       "type": "air_purifier",
       "noise": "24–54 dB",
       "area": "88 m²",
-      "programs": 3
+      "programs": 3,
+      "power": 50
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier V201S-AEUR.",
@@ -113930,7 +114515,8 @@
       "type": "air_purifier",
       "noise": "26–55 dB",
       "area": "147 m²",
-      "programs": 2
+      "programs": 2,
+      "power": 49
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier C601S-WEU.",
@@ -114005,7 +114591,8 @@
       "type": "air_purifier",
       "noise": "56 dB",
       "area": "130 m²",
-      "programs": 4
+      "programs": 4,
+      "power": 70
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier EL551S-AEUR.",
@@ -116994,7 +117581,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 180
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier U700.",
