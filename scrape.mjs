@@ -205,7 +205,9 @@ const ACCESSORY_WORDS = [
 // a phone is never sold "for" another phone
 const FOR_WORDS = [' for iphone', ' for galaxy', ' for redmi', ' for poco', ' for pixel',
   ' for honor', ' for realme', ' for oneplus', ' for xiaomi',
-  ' для iphone', ' для galaxy', ' для redmi', ' для xiaomi'];
+  ' для iphone', ' для galaxy', ' для redmi', ' для xiaomi',
+  // a replacement part names the device it fits: "Filter for BONECO H300" is not the H300
+  'filter for'];
 // No regex here on purpose: every escaped pattern written into this file so far has lost its
 // backslashes in editing, and a silently-broken normaliser means accessories pass as phones.
 // A letter is any char whose upper and lower case differ - true for Latin, Cyrillic, Armenian.
@@ -219,7 +221,8 @@ function tokenized(text) {
   return out + ' ';
 }
 function looksLikeAccessory(text) {
-  const h = tokenized(text).replace(/  +/g, ' ');
+  // "Refrigerators (Top Mount)" names where the freezer sits, not a wall mount
+  const h = tokenized(text).replace(/  +/g, ' ').replace(/ (top|bottom) mount /g, ' ');
   if (ACCESSORY_WORDS.some(w => h.includes(' ' + w + ' '))) return true;
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
@@ -284,6 +287,10 @@ function looksLikeBundle(text) {
     // "M5 chip with 10C CPU, 8C GPU" is Apple's own spec line, not a second product: iStore
     // writes it into every MacBook slug, and all of them were thrown away as bundles.
     if (/^\d+ ?c\b|^\d+ ?core\b|\b(cpu|gpu)\b/.test(right)) continue;
+    // "Ninja Food Processor with Auto-IQ (BN650EU)": Auto-IQ is Ninja's programme feature
+    if (/^auto ?iq\b/.test(right)) continue;
+    // "Shark ... with AED" / "... and stain remover": a feature of the one product, not a second
+    if (/^(aed|stain remover)\b/.test(right)) continue;
     // a second product names itself: a word of its own and a number belonging to it - not the
     // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
     // the joiner, and reading 128GB and Red as a second product dropped every such offer.

@@ -18,13 +18,19 @@ self.addEventListener('fetch', e => {
   const url = new URL(req.url);
   if (req.method !== 'GET' || url.origin !== location.origin) return;   // shops, analytics: untouched
   if (STATIC.test(url.pathname) || (VERSIONED.test(url.pathname) && /^[a-f0-9]{10}$/.test(url.searchParams.get('v') || ''))) {
-    e.respondWith(caches.open(VERSION).then(async c => {
-      const hit = await c.match(req);
-      if (hit) return hit;
+    e.respondWith((async () => {
+      let c;
+      try {
+        c = await caches.open(VERSION);
+        const hit = await c.match(req);
+        if (hit) return hit;
+      } catch { /* Storage may be unavailable; the network still works. */ }
       const res = await fetch(req);
-      if (res.ok) await c.put(req, res.clone());
+      if (res.ok && c) {
+        try { await c.put(req, res.clone()); } catch { /* A full cache must not discard the response. */ }
+      }
       return res;
-    }));
+    })());
     return;
   }
   e.respondWith((async () => {

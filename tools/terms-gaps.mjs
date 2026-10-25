@@ -31,7 +31,7 @@ const app = new Function(...names, src.slice(0, src.lastIndexOf('\nrender();')) 
   P, STR, { shops: {}, offers: {} }, {}, TERMS, ...Object.values(stub));
 
 // names, not words: they stay in Latin letters in every language
-const NAMES = new Set(`apple google oneblade samsung qualcomm snapdragon mediatek helio dimensity exynos tensor kirin hisilicon unisoc tiger jlq
+const NAMES = new Set(`apple google oneblade gbps micro-usb samsung qualcomm snapdragon mediatek helio dimensity exynos tensor kirin hisilicon unisoc tiger jlq
  adreno mali immortalis xclipse powervr img arm dxt bxm ios ipados android hyperos miui oneui one ui magicos oxygenos coloros realme
  wi fi wifi bluetooth nfc oled amoled lcd ips pls tft ltps ltpo miniled mini led poled super retina xdr dynamic promotion lte esim
  sim nano ghz mhz mp mpx nm mah usb type gorilla victus ceramic shield bionic pro max ultra plus gen lite elite gpu cpu soc hdr

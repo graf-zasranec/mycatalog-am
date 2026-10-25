@@ -29,15 +29,15 @@ assert.deepEqual(appended, ['products.js', 'prices.js', 'detail.js', 'app.js'], 
 // Model CacheStorage and the network boundary; run the real service worker's
 // fetch handler so version changes and unversioned prices exercise its branches.
 const entries = new Map(), calls = [], listeners = {};
-let revision = 'first';
+let revision = 'first', failWrites = false, failOpen = false, failRead = false;
 const cache = {
-  match: async req => entries.get(req.url)?.clone(),
-  put: async (req, res) => { entries.set(req.url, res.clone()); }
+  match: async req => { if (failRead) throw new Error('cache read unavailable'); return entries.get(req.url)?.clone(); },
+  put: async (req, res) => { if (failWrites) throw new Error('QuotaExceededError'); entries.set(req.url, res.clone()); }
 };
 vm.runInNewContext(fs.readFileSync('sw.js', 'utf8'), {
   URL, location: { origin: 'https://better.am' },
   self: { addEventListener: (name, f) => { listeners[name] = f; } },
-  caches: { open: async () => cache, match: cache.match },
+  caches: { open: async () => { if (failOpen) throw new Error('cache unavailable'); return cache; }, match: cache.match },
   fetch: async req => { calls.push(req.url); return new Response(revision); }
 });
 async function read(path) {
@@ -61,4 +61,10 @@ assert.equal(await read('/en/'), 'fourth', 'HTML always checks for current bundl
 assert.equal(await read('/data/site-app.js?v=invalid'), 'fourth');
 revision = 'fifth';
 assert.equal(await read('/data/site-app.js?v=invalid'), 'fifth', 'only valid content-hash versions are immutable');
+failWrites = true;
+assert.equal(await read('/data/site-app.js?v=555555aaaa'), 'fifth', 'storage exhaustion cannot discard a successful asset download');
+failWrites = false; failRead = true;
+assert.equal(await read('/data/site-app.js?v=666666aaaa'), 'fifth', 'a failed cache read falls back to the network');
+failRead = false; failOpen = true;
+assert.equal(await read('/data/site-app.js?v=777777aaaa'), 'fifth', 'unavailable CacheStorage cannot disable startup');
 console.log('STARTUP_PASS: slow photos, ordered data, cached reopening and fresh price versions');
