@@ -44,6 +44,7 @@ const KINDS = [
   // "Tracker" and "traker" both appear, in the same export, for the same device
   [/(Smart ?)?fitness trac?k?er|\bSmart ?watch\b|\bWatch\b|ժամացույց|часы/i, 'watch'],
   [/\bStyler\b|Airwrap|hair ?dry|Supersonic/i, 'haircare'],
+  [/\bShaver|\bTrimmer|OneBlade|Multigroom|Hair ?clipper|Bodygroom/i, 'grooming'],
   [/փոշեկուլ|пылесос/i, 'vacuum'],
   [/\bSmartphone\b|Սմարթֆոն|Սմարթ ?հեռախոս|смартфон/i, 'phone'],
 ];

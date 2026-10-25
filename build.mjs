@@ -1013,6 +1013,7 @@ ${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}
   for (const c of cats) {
     const list = phones.filter(p => catOf(p) === c && offersOf(p).length)
       .sort((a, b) => (b.popularity || 0) - (a.popularity || 0) || bestOf(a) - bestOf(b));
+    if (!list.length) continue;   // a new section has no prices until its first nightly crawl
     const label = catLabel(c, lang);
     const byBrand = Object.entries(Object.groupBy(list, p => p.brand)).filter(([, l]) => l.length >= 3)
       .sort((x, y) => y[1].length - x[1].length);

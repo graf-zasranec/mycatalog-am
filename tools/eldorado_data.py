@@ -48,7 +48,9 @@ def product_row(html, url):
 def category_rows(html):
     soup = BeautifulSoup(html, 'html.parser')
     rows = []
-    for card in soup.select('.product-item'):
+    # Eldorado renamed the card wrapper (by 2026-10-24 it is li.product-item-loader); the old
+    # selector matched nothing and every aisle read as empty.
+    for card in soup.select('.product-item') or soup.select('li.product-item-loader'):
         name = card.select_one('a.product_name.combo_link')
         price = card.select_one('[data-price-type="finalPrice"][data-price-amount]')
         if not name or not price:

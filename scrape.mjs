@@ -281,6 +281,9 @@ function looksLikeBundle(text) {
     const left = h.slice(0, at).trim(), right = h.slice(at + j.length).trim();
     const words = right.split(' ').filter(Boolean);
     if (words.length < 2 || left.split(' ').filter(Boolean).length < 2) continue;
+    // "M5 chip with 10C CPU, 8C GPU" is Apple's own spec line, not a second product: iStore
+    // writes it into every MacBook slug, and all of them were thrown away as bundles.
+    if (/^\d+ ?c\b|^\d+ ?core\b|\b(cpu|gpu)\b/.test(right)) continue;
     // a second product names itself: a word of its own and a number belonging to it - not the
     // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
     // the joiner, and reading 128GB and Red as a second product dropped every such offer.
@@ -2076,6 +2079,24 @@ const SHOPS = {
       // look like one of our phones are fetched. robots.txt disallows /product/search - unused.
       const xml = await get('https://istore.am/sitemaps/sitemap-products-1.xml');
       await sleep(DELAY_MS);
+      // iStore answers 403 to GitHub's runners (every nightly since the move logged "0 offers
+      // across 0 of 2270 models") but serves a home connection normally. So whoever CAN read it
+      // leaves the rows in data/istore.json - the owner's Mac does, daily, with a launchd job
+      // (~/Movies/Claude code/better-jobs/istore-local.sh) - and a run that is refused prices from that file instead, as long
+      // as it is no more than three days old. The rows are re-matched here, never trusted by id.
+      if (!xml) {
+        let saved = null;
+        try { saved = JSON.parse(fs.readFileSync('data/istore.json', 'utf8')); } catch { }
+        const age = saved?.fetched ? (Date.parse(TODAY) - Date.parse(saved.fetched)) / 864e5 : Infinity;
+        if (!(age <= 3)) { console.warn(`  [iStore] refused, and data/istore.json is ${saved ? age + ' days old' : 'missing'}`); return []; }
+        const back = [];
+        for (const r of saved.rows || []) {
+          const id = matchPhone(r.url);
+          if (id && r.price && safeUrl(r.url)) back.push({ ...r, id, inStock: true, seen: saved.fetched });
+        }
+        console.log(`  [iStore] refused live; ${back.length} offers from data/istore.json (${saved.fetched})`);
+        return back;
+      }
       const urls = [...xml.matchAll(/<loc>(https:\/\/istore\.am\/product\/[^<]+)<\/loc>/g)].map(m => m[1]);
       const out = [], perPhone = {};
       for (const u of urls) {
@@ -2085,14 +2106,19 @@ const SHOPS = {
         if (perPhone[id] > 8) continue;               // cap requests per model
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
-        // ".price is-action" is the live price; ".price text-muted" is the struck-through old one
-        const price = priceAfter(html, 'class="price is-action"');
+        // ".price is-action" is a sale price; ".price " (trailing space) is the price of anything
+        // not on sale - iPhone 17, most MacBooks - which this used to skip, so iStore priced 10
+        // models out of the hundreds it sells. ".price text-muted" is the struck-through old one.
+        const price = priceAfter(html, 'class="price is-action"') || priceAfter(html, 'class="price "');
         const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
         if (!price || !title) continue;
         if (!safeUrl(u)) continue;
         out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock: true,
           image: (html.match(/https:\/\/istore\.am\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null });
       }
+      // what a refused run will price from (see above); the id is left out on purpose
+      if (out.length) fs.writeFileSync('data/istore.json', JSON.stringify({ fetched: TODAY,
+        rows: out.map(({ id, ...r }) => r) }, null, 1) + '\n');
       return out;
     }
   },
@@ -3269,6 +3295,13 @@ for (const id of Object.keys(offers)) {
   offers[id] = offers[id].filter(o => purchasableOffer(o)
     && !(phoneById[id]?.category === 'tablet' && looksLikeAccessory(o.title))
     && !/\boutlet\b|աութլեթ/i.test(o.title || ''));
+}
+// A capacity no device is sold in is a misreading, not a configuration: Telecom's Tab M9 came
+// through as 9216 GB and offered every tablet shopper a '9 TB' filter (2026-10-24). Only where the
+// number means storage - a watch keeps its case size in the same field.
+for (const id of Object.keys(offers)) {
+  if (!['phone', 'tablet', 'laptop', 'desktop', 'console'].includes(phoneById[id]?.category)) continue;
+  for (const o of offers[id]) if (o.storage != null && !REAL_CAPACITY.has(+o.storage)) o.storage = null;
 }
 // A price-only refresh must not release a hardware contradiction or change
 // a model's processor identity through a cached/manual/direct adapter ID.

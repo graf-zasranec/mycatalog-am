@@ -67,9 +67,11 @@ const X = {
     dS: 'օ', hS: 'ժ', mS: 'ր',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
     scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
-    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ',
+    cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ', mins: 'րոպե', days: 'օր',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
-    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն',
+    ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ', frameF: 'Շրջանակ', lensF: 'Ոսպնյակներ',
+    lenses: { clear: 'Թափանցիկ', sun: 'Արևային', transitions: 'Ֆոտոքրոմիկ (Transitions)' },
+    kinds: { console: 'Կոնսոլ', handheld: 'Ձեռքի կոնսոլ', controller: 'Ջոյստիկ', wheel: 'Ղեկ', vr: 'VR ակնոց', drone: 'Դրոն', camera: 'Տեսախցիկ', gimbal: 'Ստաբիլիզատոր', mic: 'Միկրոֆոն', other: 'Այլ' },
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր {d}-ի ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
@@ -87,7 +89,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց', streamer: 'Մեդիա նվագարկիչներ', smartglasses: 'Խելացի ակնոցներ', vacuum: 'Փոշեկուլներ', coffee: 'Սրճեփեր', haircare: 'Մազերի խնամք', kitchen: 'Խոհանոցային տեխնիկա', projector: 'Պրոյեկտորներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց', streamer: 'Մեդիա նվագարկիչներ', smartglasses: 'Խելացի ակնոցներ', vacuum: 'Փոշեկուլներ', coffee: 'Սրճեփեր', haircare: 'Մազերի խնամք', grooming: 'Անձնական խնամք', kitchen: 'Խոհանոցային տեխնիկա', projector: 'Պրոյեկտորներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի ցածր գին', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
@@ -100,9 +102,11 @@ const X = {
     dS: 'д', hS: 'ч', mS: 'м',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
     scrLo: 'до {x}″', scrHi: 'от {x}″',
-    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч',
+    cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч', mins: 'мин', days: 'дн.',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
-    ancF: 'Шумоподавление', waterF: 'Влагозащита',
+    ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти', frameF: 'Оправа', lensF: 'Линзы',
+    lenses: { clear: 'Прозрачные', sun: 'Солнцезащитные', transitions: 'Фотохромные (Transitions)' },
+    kinds: { console: 'Консоль', handheld: 'Портативная консоль', controller: 'Геймпад', wheel: 'Руль', vr: 'VR-гарнитура', drone: 'Дрон', camera: 'Камера', gimbal: 'Стабилизатор', mic: 'Микрофон', other: 'Другое' },
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума {d}', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
@@ -123,7 +127,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети', streamer: 'Медиаплееры', smartglasses: 'Умные очки', vacuum: 'Пылесосы', coffee: 'Кофемашины', haircare: 'Уход за волосами', kitchen: 'Кухонная техника', projector: 'Проекторы' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети', streamer: 'Медиаплееры', smartglasses: 'Умные очки', vacuum: 'Пылесосы', coffee: 'Кофемашины', haircare: 'Уход за волосами', grooming: 'Личный уход', kitchen: 'Кухонная техника', projector: 'Проекторы' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
@@ -136,9 +140,11 @@ const X = {
     dS: 'd', hS: 'h', mS: 'm',
     unsureMark: 'unconfirmed', unsureTip: "Not confirmed against the maker's own spec sheet",
     scrLo: 'under {x}″', scrHi: '{x}″ and up',
-    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h',
+    cameraF: 'Main camera', mp: 'MP', lifeF: 'Battery life', hrs: 'h', mins: 'min', days: 'days',
     cpuF: 'Processor', gpuF: 'Graphics', integrated: 'Integrated',
-    ancF: 'Noise cancelling', waterF: 'Water resistance',
+    ancF: 'Noise cancelling', waterF: 'Water resistance', chargeF: 'Fast charging', wlessF: 'Wireless charging', sdF: 'Memory card slot', frameF: 'Frame', lensF: 'Lenses',
+    lenses: { clear: 'Clear', sun: 'Sun', transitions: 'Transitions (photochromic)' },
+    kinds: { console: 'Console', handheld: 'Handheld', controller: 'Controller', wheel: 'Racing wheel', vr: 'VR headset', drone: 'Drone', camera: 'Camera', gimbal: 'Gimbal', mic: 'Microphone', other: 'Other' },
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the {d} low', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
@@ -156,7 +162,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking', streamer: 'Streaming players', smartglasses: 'Smart glasses', vacuum: 'Vacuum cleaners', coffee: 'Coffee machines', haircare: 'Hair care', kitchen: 'Kitchen', projector: 'Projectors' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking', streamer: 'Streaming players', smartglasses: 'Smart glasses', vacuum: 'Vacuum cleaners', coffee: 'Coffee machines', haircare: 'Hair care', grooming: 'Personal care', kitchen: 'Kitchen', projector: 'Projectors' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
@@ -171,12 +177,12 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, chg: 0, wless: false, sd: false, gstyles: [], glenses: [], kinds: [], anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
 // exists, or an array that came back as a string would all render as a broken page.
-for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses', 'atypes']) if (!Array.isArray(st[k])) st[k] = [];
+for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', 'hplugs', 'spks', 'reses', 'atypes', 'gstyles', 'glenses', 'kinds']) if (!Array.isArray(st[k])) st[k] = [];
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
 // ?lang=ru from the Russian/English static pages opens the app in that language
@@ -765,7 +771,8 @@ function hayMatch(p, q) {
 const mpOf = p => { const m = /(\d+(?:\.\d+)?)\s*MP/i.exec(p.camera?.main || ''); return m ? +m[1] : null; };
 // "8.5 hours (30 with the case)" -> 8.5. The buds' own figure, not the case total, because that
 // is the number every maker prints first and the only one all of them print.
-const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\s*h/i.exec(p.battery?.life || ''); return m ? +m[1] : null; };
+// "14 days" is how every watch maker quotes it; read as hours so one scale serves both
+const hoursOf = p => { const m = /(\d+(?:\.\d+)?)\+?\s*(h|day|min)/i.exec(p.battery?.life || ''); return m ? +m[1] * (/^d/i.test(m[2]) ? 24 : /^m/i.test(m[2]) ? 1 / 60 : 1) : null; };
 // IP68 is dust 6 / water 8, IPX4 is water only, and ATM or metre figures are dive ratings.
 // Three answers a buyer actually has: nothing, survives splashes, survives being dunked.
 const waterOf = p => {
@@ -830,10 +837,11 @@ const FILT = {
   stor:  { kind: 'min', label: () => viewUnit() === 'mm' ? t('f.case_size') : t('filter.storage'),
            of: p => Math.max(0, ...filterValues(p, 'storage')) || null, all: p => filterValues(p, 'storage'),
            fmt: v => gb(v, viewUnit()) },
-  batt:  { kind: 'min', label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
+  batt:  { kind: 'min', nice: true, label: () => t('filter.battery'), of: p => p.battery?.capacity, fmt: v => money(v) + ' ' + u(st.cat === 'laptop' ? 'wh' : 'mah') },
   hz:    { kind: 'min', label: () => t('filter.refresh_rate'), of: p => p.display?.refresh, fmt: v => v + ' ' + u('hz') },
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
-  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v + ' ' + x('hrs') },
+  // a watch lasts days, earbuds hours: kept in hours underneath, shown in days from two up
+  life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v >= 48 && v % 24 === 0 ? v / 24 + ' ' + x('days') : v < 2 && v % 1 ? Math.round(v * 60) + ' ' + x('mins') : v + ' ' + x('hrs') },
   scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), of: (p, s) => bandOf(p, s.cat),
            fmt: bandLabel, vals: () => bandCuts(st.cat) ? ['lo', 'mid', 'hi'] : [] },
   cpu:   { kind: 'set', arr: 'cpus', label: () => x('cpuF'), of: cpuOf, fmt: v => v },
@@ -841,6 +849,18 @@ const FILT = {
   water: { kind: 'set', arr: 'waters', label: () => x('waterF'), of: waterOf, fmt: v => x('waters')[v], vals: () => ['splash', 'dip'] },
   g5:    { kind: 'flag', label: () => '5G', of: p => /5G/i.test(p.connectivity?.network || '') },
   nfc:   { kind: 'flag', label: () => 'NFC', of: p => !!p.connectivity?.nfc },
+  // e-catalog's charging questions (2026-10-24): the wired watts the maker quotes, whether it
+  // charges on a pad at all, and whether a microSD card fits. Unstated counts as no only while
+  // the filter is on, as everywhere else.
+  chg:   { kind: 'min', label: () => x('chargeF'), of: p => p.battery?.wired || null, fmt: v => v + ' ' + u('w') },
+  wless: { kind: 'flag', label: () => x('wlessF'), of: p => p.battery?.wireless > 0 },
+  sd:    { kind: 'flag', label: () => x('sdF'), of: p => p.cardSlot === true },
+  // Smart glasses are chosen like glasses: the frame, then the lenses (2026-10-24).
+  gstyle: { kind: 'set', arr: 'gstyles', label: () => x('frameF'), of: p => p.glasses?.style || null, fmt: v => v },
+  glens:  { kind: 'set', arr: 'glenses', label: () => x('lensF'), of: p => lensOf(p), fmt: v => x('lenses')[v] || v, vals: () => ['clear', 'sun', 'transitions'] },
+  // Two sections hold more than their name says: 'consoles' is also controllers, wheels and VR,
+  // and 'drones' is mostly DJI's microphones, action cameras and gimbals. Read off the model name.
+  kind:   { kind: 'set', arr: 'kinds', label: () => x('atypeF'), of: p => kindOf(p), fmt: v => x('kinds')[v] || v },
   // Any / Yes / No (owner, 2026-10-04). A model nothing marks as noise-cancelling counts as No -
   // tools/audio.mjs reads ANC/NC off every name and shop title, and the rest were set by hand.
   anc:   { kind: 'yn', label: () => x('ancF'), of: p => p.audio?.anc === true },
@@ -857,7 +877,7 @@ const FILT = {
   spk:   { kind: 'set', arr: 'spks', label: () => x('spkF'), of: p => spkOf(p), fmt: v => x('spks')[v] || v,
            vals: () => ['portable', 'party', 'smart', 'home'] },
   atype: { kind: 'set', arr: 'atypes', label: () => x('atypeF'), of: p => p.appliance?.type, fmt: v => t('appliance.' + v) },
-  apower: { kind: 'min', label: () => x('powerF'), of: p => p.appliance?.power || null, fmt: v => money(v) + ' ' + u('w') },
+  apower: { kind: 'min', nice: true, label: () => x('powerF'), of: p => p.appliance?.power || null, fmt: v => money(v) + ' ' + u('w') },
   avol:  { kind: 'min', label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
   res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
            vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
@@ -899,6 +919,13 @@ const SPK = [
   ['home',  /\bacton\b|\bstanmore\b|\bwoburn\b|\baura studio\b|\bstudio \d\b/i],
   ['portable', /\bflip\b|\bcharge\b|\bclip\b|\bgo \d\b|\bxtreme\b|\bsoundlink\b|\bemberton\b|\bwillen\b|\bkilburn\b|\bstockwell\b|\bmiddleton\b|\buxbridge\b|\bluna\b|\bonyx\b|\bbeosound (a1|a5|explore)\b/i],
 ];
+const lensOf = p => { const l = String(p.glasses?.lens || ''); return !l ? null : /transitions/i.test(l) ? 'transitions' : /^clear\b/i.test(l) ? 'clear' : 'sun'; };
+const KINDS = {
+  console: [['wheel', /\bwheel\b|driving force|\bg9\d\d\b|\bg29\b/i], ['vr', /\bvr\d?\b/i], ['handheld', /\bally\b|legion go|\bportal\b/i],
+            ['controller', /dualsense|controller|backbone/i], ['console', /playstation 5|\bps5 (pro|slim)\b|xbox series/i], ['other', /./]],
+  drone:   [['mic', /\bmic\b/i], ['drone', /mavic|\bmini \d|\bair \d|avata|\bneo\b/i], ['gimbal', /osmo mobile|\brs ?\d/i], ['camera', /osmo|pocket|action|360/i], ['other', /./]],
+};
+const kindOf = p => { const k = KINDS[p.category]; return k ? (k.find(([, re]) => re.test(p.name)) || [])[0] || null : null; };
 const spkOf = p => p.category !== 'speaker' ? null : (SPK.find(([, re]) => re.test(p.name)) || [])[0] || null;
 // The year it was released, which is a fact the catalogue records, not one read off a title.
 const yearOf = p => { const m = String(p.released || '').match(/^(\d{4})/); return m ? +m[1] : null; };
@@ -914,11 +941,11 @@ const osOf = p => { const v = String(p.os || '').replace(/\bwin ?1[01]\b/i, 'Win
 // varying is not the same as meaning something. A filter listed here still has to prove the
 // items in view differ on it before it is drawn.
 const ASK = {
-  phone:      ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'cam', 'g5', 'nfc', 'panel', 'os', 'year'],
+  phone:      ['ram', 'stor', 'batt', 'chg', 'hz', 'scr', 'weight', 'cam', 'water', 'g5', 'nfc', 'wless', 'sd', 'panel', 'os', 'year'],
   tablet:     ['ram', 'stor', 'batt', 'hz', 'scr', 'weight', 'g5', 'touch', 'panel', 'os', 'year'],
-  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'touch', 'weight', 'panel', 'os', 'year'],
+  laptop:     ['ram', 'stor', 'cpu', 'gpu', 'scr', 'res', 'hz', 'touch', 'weight', 'panel', 'os', 'year'],
   desktop:    ['ram', 'stor', 'cpu', 'gpu', 'scr', 'touch', 'panel', 'os', 'year'],
-  console:    ['stor', 'year'],
+  console:    ['kind', 'stor', 'year'],
   ereader:    ['stor', 'scr', 'weight', 'water', 'panel', 'year'],
   watch:      ['stor', 'scr', 'life', 'weight', 'water', 'os', 'year'],
   headphones: ['hform', 'hconn', 'hplug', 'anc', 'gaming', 'life', 'weight', 'water', 'year'],
@@ -927,15 +954,16 @@ const ASK = {
   vacuum:     ['atype', 'apower', 'batt', 'weight', 'year'],
   coffee:     ['apower', 'avol', 'year'],
   haircare:   ['atype', 'apower', 'year'],
+  grooming:   ['atype', 'life', 'year'],
   kitchen:    ['atype', 'avol', 'apower', 'year'],
   monitor:    ['scr', 'res', 'hz', 'touch', 'panel', 'year'],
   component:  ['year'],
   // A television is asked the same two questions a monitor is: how big, and how fast.
   tv:         ['scr', 'res', 'hz', 'panel', 'os', 'year'],
-  drone:      ['year'],
+  drone:      ['kind', 'year'],
   network:    ['year'],
   streamer:   ['stor', 'year'],
-  smartglasses: ['year'],
+  smartglasses: ['gstyle', 'glens', 'year'],
   projector:  ['res', 'year'],
 };
 // Brand, price and shop are questions about the purchase, not about the hardware, so they are
@@ -1059,6 +1087,7 @@ const cnt = extra => { const s = { ...st, ...extra }; let n = 0; for (const p of
 // one - the comparison used to show "undefined × undefined × undefined mm" for 296 products.
 const specVal = (get, p) => {
   let v; try { v = get(p); } catch (e) { return null; }
+  if (v === true || v === false) return t(v ? 'common.yes' : 'common.no');   // a bare yes/no, e.g. Bluetooth on five Galaxy Tabs
   return v == null || v === '' || /undefined|null|NaN/.test(String(v)) ? null : v;
 };
 // Legacy importers filled phone-shaped fields for every category. Applicability is
@@ -1319,12 +1348,22 @@ function toggleCmp(id) {
 // Filter steps are read off the items on screen. The old fixed lists ([4,6,8,12,16] RAM,
 // [64,128,256,512] storage) could not offer the 24 GB and 2 TB the laptops brought in, and
 // offered 64 GB to a category whose smallest phone is 128.
-const steps = get => {
+// A threshold a person would say: '4 000 mAh or more', not '4 288 mAh or more'. Rounding DOWN keeps
+// every product the exact value matched, so the counts beside the options stay true.
+const niceDown = v => v >= 1000 ? Math.floor(v / 500) * 500 : v >= 100 ? Math.floor(v / 50) * 50 : v >= 20 ? Math.floor(v / 5) * 5 : Math.floor(v);
+const steps = (get, nice) => {
   // the smallest value matches everything that has the spec, so it only repeats "All"
-  const v = [...new Set(inView().flatMap(get))].filter(n => typeof n === 'number' && n > 0).sort((a, b) => a - b).slice(1);
+  const all = inView().flatMap(get).filter(n => typeof n === 'number' && n > 0).map(n => nice ? niceDown(n) : n).sort((a, b) => a - b);
+  const v = [...new Set(all)].slice(1);
   if (v.length <= 6) return v;
-  // ponytail: evenly sampled, which is plenty for a "this much or more" filter
-  return [...new Set(Array.from({ length: 6 }, (_, i) => v[Math.round(i * (v.length - 1) / 5)]))];
+  // Discrete specs (RAM, storage, Hz, megapixels) are few named steps: keep them evenly sampled
+  // so 32 and 64 GB are still offered on laptops where most have 16.
+  if (!nice) return [...new Set(Array.from({ length: 6 }, (_, i) => v[Math.round(i * (v.length - 1) / 5)]))];
+  // Sampled where the PRODUCTS are, not evenly across distinct values: phone batteries crowd
+  // around 5 000 mAh, and even spacing over 1 000-9 000 skipped the one figure most people
+  // compare (2026-10-24). Six cut points at product quantiles, always above the smallest value.
+  const cuts = [...new Set(Array.from({ length: 6 }, (_, i) => all[Math.min(all.length - 1, Math.round((i + 1) * all.length / 7))]))];
+  return cuts.filter(c => c > all[0]);
 };
 // every product in view is a watch -> the variant number is a case size, not a capacity
 const viewUnit = () => {
@@ -1379,7 +1418,9 @@ function covered(k, pool) {
   if (k === 'brand' || k === 'shop' || k === 'hplug' || f.kind === 'flag' || f.kind === 'yn') return true;
   const has = v => v != null && v !== '' && !(typeof v === 'number' && !v);
   const live = pool.filter(hasReal);
-  return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 2 >= live.length;
+  // Two in five, not half (2026-10-24): 45% of laptops state a refresh rate and 45% of vacuums a
+  // wattage - the gaming laptops and the corded vacuums, exactly the buyers who ask.
+  return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 5 >= live.length * 2;
 }
 function fdrop(k, pool) {
   const f = FILT[k];
@@ -1387,7 +1428,7 @@ function fdrop(k, pool) {
   if (f.kind === 'flag') return varies(p => f.of(p, st))
     ? `<button class="toggle" data-f="${k}" aria-pressed="false">${esc(f.label())}</button>` : '';
   if (f.kind === 'min') {
-    const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)]);
+    const vals = steps(p => f.all ? f.all(p) : [f.of(p, st)], f.nice);
     return vals.length && varies(p => f.of(p, st)) ? drop(k, f.label(), radios(k, vals, f.fmt)) : '';
   }
   if (f.kind === 'yn') return varies(p => f.of(p, st))
@@ -1882,6 +1923,7 @@ const CAT_ICON = {
   vacuum: 'M14 3v12M14 15l-5 4H5a1.5 1.5 0 0 1 0-3h4l5-1M11 5.5h6v3.5h-6z',
   coffee: 'M5 9h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5zM16 11h1.5a2.5 2.5 0 0 1 0 5H16M8.5 3c0 1.5 1 1.5 1 3M12.5 3c0 1.5 1 1.5 1 3',
   haircare: 'M4 8a5 5 0 1 0 10 0 5 5 0 0 0-10 0zM14 6h6v4h-6M10 13v8h3',
+  grooming: 'M8 3h8v5H8zM9 8h6l-1 13h-4zM8 5H6M18 5h-2',
   kitchen: 'M5 8h14v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3zM3 8h18M9 4.5h6M12 4.5V8',
   component: 'M7 7h10v10H7zM10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4',
   network: 'M3 14h18v5H3zM7 16.5h.01M10 16.5h.01M8 14l-2-8M16 14l2-8',
@@ -3262,7 +3304,7 @@ document.addEventListener('click', e => {
   // then brand, then a "Show 78" button - so choosing a section showed nothing until three more
   // decisions were made. The owner wants the whole section at once, with the filters already out
   // for whoever does want to narrow it.
-  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, weight: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, page: 1 });
+  if (cc) { st.cat = cc.dataset.ccat; Object.assign(st, { q: '', scrmin: 0, touch: 0, weight: 0, brands: [], ram: 0, stor: 0, batt: 0, hz: 0, scrs: [], g5: false, nfc: false, chg: 0, wless: false, sd: false, page: 1 });
     st.fopen = true; save(); location.hash = '#/c/' + st.cat; return; }
   const cq = e.target.closest('[data-cq]');
   if (cq) { const k = cq.dataset.cq, v = cq.dataset.cqv;
