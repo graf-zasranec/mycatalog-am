@@ -685,8 +685,9 @@ function istyleVariants(html) {
     }
     // "No Sim" is the eSIM-only build and "1SIM" the one with a tray - the shop is counting
     // physical slots, so the wording is the opposite way round from every other site here.
+    // The iPhone 18 line labels the tray-less build plainly "esim" (value 11) next to "1SIM".
     const q = String(attr['sim card quantity'] || '');
-    const sim = /no\s*sim/i.test(q) ? true : /\d\s*sim/i.test(q) ? false : undefined;
+    const sim = /no\s*sim|^\s*e-?sim\s*$/i.test(q) ? true : /\d\s*sim/i.test(q) ? false : undefined;
     const cap = capOf(attr['internal memory'] || '');
     const colours = (v.attribute_values || []).filter(av => /^colou?r$/i.test(((av.attribute || {}).name || {}).en || ''))
       .map(av => ({ name: ((av.color_label || {}).en || '').trim() || null, id: av.id }));
@@ -1377,6 +1378,8 @@ if (process.argv[2] === '--selftest') {
         || link.get('Ներքին Հիշողություն') !== '13' || link.get('Օպերատիվ հիշողություն') !== '90') {
       bad++; console.log('FAIL istyle exact configuration link ' + JSON.stringify(configured));
     }
+    const es = istyleVariants('"variants":' + JSON.stringify([{ id: 742, price_override: 549000, attribute_values: [{ attribute: { name: { en: 'SIM card quantity' } }, value: { en: 'esim' } }] }]));
+    if (es.length !== 1 || es[0].esim !== true) { bad++; console.log('FAIL istyle "esim" is the eSIM-only build ' + JSON.stringify(es)); }
     const tb = istyleVariants('&quot;variants&quot;:' + JSON.stringify([{ id: 1, price_override: 899000, attribute_values: [{ attribute: { name: { en: 'Internal Memory' } }, value: { hy: '1T', ru: null } }] }]).replace(/"/g, '&quot;'));
     if (tb.length !== 1 || tb[0].storage !== 1024) { bad++; console.log('FAIL istyleVariants 1T ' + JSON.stringify(tb)); }
     if (v.length !== want.length) { bad++; console.log(`FAIL istyleVariants got ${v.length}, want ${want.length}`); }
