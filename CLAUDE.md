@@ -23,3 +23,4 @@ After changing files under `tools/`, run `graphify update tools`, copy `tools/gr
 
 - The user explicitly approved these six additional brands on 2026-10-19: Amazfit, SMEG, Bang & Olufsen, Bowers & Wilkins, Motorola and ViewSonic. Follow the scoped product list in `.codex/reports/2026-10-18-check/NEW-BRANDS-FOR-CODEX.md`; other new brands still require approval.
 - The user approved four more brands on 2026-10-24: Ninja, Oral-B, Midea and KitchenAid.
+- The user approved seven more on 2026-10-25: BaByliss, Ariete, Kenwood, Boneco, Levoit, Shark and iRobot.
