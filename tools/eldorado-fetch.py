@@ -70,6 +70,13 @@ CATEGORIES = [
     'small-appliances/cleaning-equipments/robot-vacuum-cleaner',
     'climate/humidifiers',
     'climate/air-purifiers',
+    # large appliances (2026-10-25): the catalogue's largeappliance section
+    'climate/air-conditioners',
+    'large-home-appliances/large-kitchen-appliences/refrigerators',
+    'large-home-appliances/large-kitchen-appliences/freezers',
+    'large-home-appliances/large-kitchen-appliences/dishwashers',
+    'large-home-appliances/washing-machines-and-dryers/washing-machines',
+    'large-home-appliances/washing-machines-and-dryers/dryers',
 ]
 
 # <a class="product_name combo_link" href="...">TITLE</a> ... data-price-amount="89900"
