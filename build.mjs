@@ -10,6 +10,7 @@ import path from 'node:path';
 import { transformSync } from 'esbuild';
 import { pairs } from './tools/pairs.mjs';
 import { attachOfferConfigs } from './tools/offer-configs.mjs';
+import { megabytePhoneMemory } from './tools/spec-values.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender, productRenderer } from './tools/prerender.mjs';
 import { pack, unpackSource } from './tools/compact-data.mjs';
@@ -122,11 +123,11 @@ for (const p of phones) {
 const RAMISH = [];
 for (const p of phones)
   for (const v of p.variants || []) {
-    if (!p.variantUnit && v.storage != null && v.storage < 8) {
+    if (!p.variantUnit && v.storage != null && v.storage < 8 && !megabytePhoneMemory(p, v)) {
       console.error(`build: ${p.id} says ${v.storage} GB of storage - a dropped TB?`);
       process.exit(1);
     }
-    if (!p.variantUnit && v.storage != null && v.storage < 32 &&
+    if (!p.variantUnit && v.storage != null && v.storage < 32 && !megabytePhoneMemory(p, v) &&
         ['phone', 'tablet', 'laptop', 'desktop'].includes(p.category))
       RAMISH.push(`${p.id} (${p.category}) ${v.storage} GB`);
   }

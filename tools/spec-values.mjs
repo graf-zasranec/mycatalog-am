@@ -30,3 +30,8 @@ export function cpu(v) {
   if ((m = v.match(/^(?:Apple )?(M[1-5](?: Pro| Max)?)$/i))) return `Apple ${m[1].toUpperCase().replace('PRO', 'Pro').replace('MAX', 'Max')}`;
   return null;
 }
+
+export function megabytePhoneMemory(product, variant) {
+  return product.category === 'phone' && product.connectivity?.network === '2G'
+    && [variant.ram, variant.storage].every(n => Number.isFinite(n) && n > 0 && n < 1 && Number.isInteger(n * 1024));
+}

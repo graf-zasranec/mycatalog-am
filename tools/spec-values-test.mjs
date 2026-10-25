@@ -29,3 +29,10 @@ assert.equal(regional[a16][0].cpu,'MediaTek Dimensity 6300','Pixel primary chips
 assert.equal(regional[a16][1].configSpecs.chipset.name,'MediaTek Dimensity 6300','locale variants refer to the same verified page');
 assert.equal(regional[a16][2].cpu,undefined,'another retailer cannot inherit Pixel regional chipset');
 console.log('REGIONAL_CHIPSET_PASS: exact source only, across source locales');
+
+const {megabytePhoneMemory}=await import('./spec-values.mjs');
+const feature={category:'phone',connectivity:{network:'2G'}};
+assert.equal(megabytePhoneMemory(feature,{ram:4/1024,storage:16/1024}),true,'manufacturer MB feature-phone memory is valid in the shared GB schema');
+for(const variant of [{ram:8,storage:1},{ram:8,storage:.5},{ram:null,storage:16/1024},{ram:0,storage:0},{ram:4/1024,storage:-1}])assert.equal(megabytePhoneMemory(feature,variant),false,'malformed or dropped-TB values retain the build guard');
+assert.equal(megabytePhoneMemory({category:'laptop'}, {ram:4/1024,storage:16/1024}),false);
+console.log('MB_BUILD_GUARD_PASS: exact whole-MB 2G phone memory and malformed/dropped-TB protection');
