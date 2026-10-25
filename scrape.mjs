@@ -221,7 +221,8 @@ function tokenized(text) {
   return out + ' ';
 }
 function looksLikeAccessory(text) {
-  const h = tokenized(text).replace(/  +/g, ' ');
+  // "Refrigerators (Top Mount)" names where the freezer sits, not a wall mount
+  const h = tokenized(text).replace(/  +/g, ' ').replace(/ (top|bottom) mount /g, ' ');
   if (ACCESSORY_WORDS.some(w => h.includes(' ' + w + ' '))) return true;
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
