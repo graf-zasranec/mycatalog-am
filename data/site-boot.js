@@ -14,15 +14,8 @@
         const link = document.createElement('link'); link.rel = 'preload'; link.as = 'script'; link.href = url;
         document.head.appendChild(link);
       }
-      // A canonical product already has its photo and prices. Let that image
-      // reach a frame before decoding the catalogue and offers on a slow CPU.
-      if (main.dataset.prerenderProduct && !document.documentElement.classList.contains('route-pending')) {
-        const photo = document.getElementById('hpShot');
-        if (photo?.decode) await Promise.race([
-          photo.decode().catch(() => {}), new Promise(resolve => setTimeout(resolve, 2500))
-        ]);
-        await new Promise(resolve => requestAnimationFrame(() => setTimeout(resolve, 0)));
-      }
+      // The prerendered photo loads independently at high priority. A slow image
+      // must not delay working colour, configuration and shop controls.
       await Promise.all([append(urls[0]), append(urls[1])]);
       const m = location.hash.match(/^#\/(?:p|offers)\/([a-z0-9-]+)$/) || location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);
       const p = m && DATA.find(p => p.id === m[1]);

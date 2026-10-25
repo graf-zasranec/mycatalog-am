@@ -30,6 +30,17 @@ export function reviewAllsellSpecs(html) {
 // evidence can establish this entry; catalogue specifications cannot do so.
 function modelIdentityAllowed(id, offer) {
   const identity = `${offer.title || ''} ${offer.url || ''}`;
+  if (id === 'xiaomi-redmi-buds-6') {
+    return /\bredmi[\s_-]*buds[\s_-]*6\b/i.test(identity)
+      && !/\bredmi[\s_-]*buds[\s_-]*6[\s_-]*(?:active|lite|play|pro)\b|\bm2344e1\b/i.test(identity);
+  }
+  if (id === 'xiaomi-redmi-buds-6-active') {
+    if (/\bredmi[\s_-]*buds[\s_-]*6[\s_-]*(?:lite|play|pro)\b/i.test(identity)) return false;
+    return /\bredmi[\s_-]*buds[\s_-]*6[\s_-]*active\b|\bm2344e1\b/i.test(identity);
+  }
+  if (id === 'xiaomi-buds-6')
+    return /\bxiaomi[\s_-]*buds[\s_-]*6\b/i.test(identity)
+      && !/\bredmi\b|\bbuds[\s_-]*6[\s_-]*(?:active|lite|play|pro)\b/i.test(identity);
   if (id === 'yandex-station-lite')
     return !/(?:lite|light|лайт)[\s_-]*2\b|yndx[\s_-]*00026/i.test(identity);
   if (id === 'samsung-galaxy-a16')

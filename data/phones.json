@@ -79905,24 +79905,28 @@
       "HP OmniBook X FlipNGAI 16\" TouchScreen Ryzen AI 7-350 I1TB"
     ],
     "tier": "upper-mid",
-    "priceAmd": 439000,
-    "priceAmdMax": 439000,
+    "priceAmd": 480000,
+    "priceAmdMax": 480000,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
         "ram": 24,
-        "storage": null,
-        "priceAmd": 439000
+        "storage": 1024,
+        "priceAmd": 480000
       }
     ],
     "display": {
       "size": 16,
       "resolution": "1920x1200",
-      "touch": true
+      "touch": true,
+      "type": "IPS",
+      "brightness": 400
     },
-    "battery": {},
-    "summaryEn": "HP OmniBook X FlipNGAI 16\" TouchScreen Ryzen AI 7-350 I1TB.",
+    "battery": {
+      "capacity": 68
+    },
+    "summaryEn": "HP OmniBook X Flip 16-ar0033dx: Ryzen AI 7 350, 24GB onboard memory, 1TB SSD and a 16-inch 2K IPS touchscreen.",
     "unsure": [
       "popularity"
     ],
@@ -79934,11 +79938,17 @@
       "type": "integrated"
     },
     "body": {
-      "weight": 1880
+      "weight": 1900
     },
     "sources": [
-      "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14"
-    ]
+      "https://allsell.am/en/hp-omnibook-x-flipngai-16-touchscreen-ryzen-ai-7-350-24gb-i1tb",
+      "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet"
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "5.3"
+    },
+    "os": "Windows 11 Home"
   },
   {
     "id": "hp-victus-15-fa2115nia-rtx-5060",

@@ -3262,5 +3262,78 @@
     "value": "2G",
     "source": "https://device.report/m/a01dc6a9c508dce64bb22b63c7ed4dffbcf5b79d6d2a25f783570474f496ed89.pdf",
     "verified": "Exact Nokia210 DualSIM manufacturer2019datasheet page5 GSM900/1800; sameTA1139hardware memory proof."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "display.type",
+    "value": "IPS",
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet, specifications page2."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "display.brightness",
+    "value": 400,
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet, specifications page2."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "battery.capacity",
+    "value": 68,
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet, specifications page2."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "connectivity.wifi",
+    "value": "Wi-Fi 6E",
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet, specifications page2."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "connectivity.bluetooth",
+    "value": "5.3",
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet, specifications page2."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "body.weight",
+    "value": 1900,
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet:4.18lb unpackaged, rounded to1.90kg; replaces generic-family1880g claim."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "os",
+    "value": "Windows 11 Home",
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "checked": "2026-10-25",
+    "verified": "Exact HP16-ar0033dx manufacturer-authored datasheet, specifications page2."
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-ar0033dx",
+    "field": "variants",
+    "value": [
+      {
+        "ram": 24,
+        "storage": 1024
+      }
+    ],
+    "source": "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+    "sources": [
+      "https://files.bbystatic.com/E5%2BrwfzVSaaZy%2BHaOYnfFw%3D%3D/Datasheet",
+      "https://allsell.am/en/hp-omnibook-x-flipngai-16-touchscreen-ryzen-ai-7-350-24gb-i1tb"
+    ],
+    "checked": "2026-10-25",
+    "verified": "Exact factory24GB/1TB confirmed by HP sheet and corrected current AllSell H1/table; price480000AMD separately read from current retailer, in stock."
   }
 ]

@@ -65,3 +65,18 @@ console.log('FINAL_REVIEW_REGRESSIONS_PASS: bare processors and fixed-CPU Honor 
 
 const actualHolds=JSON.parse(fs.readFileSync('data/price-review-holds.json'));
 for(const lang of ['am','en','ru']) assert.equal(specOfferAllowed({title:'Samsung Galaxy A16 5G',url:`https://shop.ucom.am/${lang}/samsung-galaxy-a16.html`},actualHolds,'samsung-galaxy-a16'),false,'verified G99/LTE page cannot return through a carried 5G title');
+
+const buds6BaseID='xiaomi-redmi-buds-6';
+assert.equal(specOfferAllowed({title:'Redmi Buds 6',url:'https://www.pixel.am/am/product/xiaomi-buds-6'},[],buds6BaseID),true);
+for(const title of ['Redmi Buds 6 Active','Redmi Buds 6 Lite','Redmi Buds 6 Play','Xiaomi Buds 6'])
+  assert.equal(specOfferAllowed({title},[],buds6BaseID),false,'another product cannot enter Redmi Buds 6: '+title);
+const buds6ActiveID='xiaomi-redmi-buds-6-active';
+for(const title of ['Xiaomi Redmi Buds 6','Redmi Buds 6 Lite','Redmi Buds 6 Play','Xiaomi Buds 6'])
+  assert.equal(specOfferAllowed({title,url:'https://example.test/redmi-buds-6'},[],buds6ActiveID),false,'another Buds 6 model cannot enter the Active product: '+title);
+assert.equal(specOfferAllowed({title:'Redmi Buds 6 Active Black'},[],buds6ActiveID),true);
+assert.equal(specOfferAllowed({title:'Wireless earbuds',url:'https://shop.viva.am/en/product/redmi-buds-6-active-black-m2344e1/'},[],buds6ActiveID),true);
+assert.equal(specOfferAllowed({title:'Xiaomi M2344E1'},[],buds6ActiveID),true);
+assert.equal(specOfferAllowed({title:'Redmi Buds 6 Lite',url:'https://example.test/redmi-buds-6-active'},[],buds6ActiveID),false,'an explicit competing model defeats an Active URL');
+console.log('BUDS6_ACTIVE_IDENTITY_PASS: Active hardware stays separate from base, Lite and Play');
+assert.equal(specOfferAllowed({title:'Xiaomi Buds 6'},[],'xiaomi-buds-6'),true);
+assert.equal(specOfferAllowed({title:'Redmi Buds 6 Active',url:'https://example.test/xiaomi-buds-6'},[],'xiaomi-buds-6'),false);
