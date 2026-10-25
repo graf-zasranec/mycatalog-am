@@ -284,6 +284,8 @@ function looksLikeBundle(text) {
     // "M5 chip with 10C CPU, 8C GPU" is Apple's own spec line, not a second product: iStore
     // writes it into every MacBook slug, and all of them were thrown away as bundles.
     if (/^\d+ ?c\b|^\d+ ?core\b|\b(cpu|gpu)\b/.test(right)) continue;
+    // "Ninja Food Processor with Auto-IQ (BN650EU)": Auto-IQ is Ninja's programme feature
+    if (/^auto ?iq\b/.test(right)) continue;
     // a second product names itself: a word of its own and a number belonging to it - not the
     // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
     // the joiner, and reading 128GB and Red as a second product dropped every such offer.
