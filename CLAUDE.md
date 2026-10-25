@@ -25,4 +25,3 @@ After changing files under `tools/`, run `graphify update tools`, copy `tools/gr
 - The user approved four more brands on 2026-10-24: Ninja, Oral-B, Midea and KitchenAid.
 - The user approved seven more on 2026-10-25: BaByliss, Ariete, Kenwood, Boneco, Levoit, Shark and iRobot.
 - And for large appliances on 2026-10-25: Hitachi, Carrier, Mitsubishi Electric and Zanussi.
-- And for large appliances on 2026-10-25: Hitachi, Carrier, Mitsubishi Electric and Zanussi.
