@@ -106610,7 +106610,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "kettle",
-      "volume": 1.25
+      "volume": 1.25,
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "KitchenAid Kettle 5KEK1222: 1.25 L.",
@@ -106656,7 +106657,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "kettle",
-      "volume": 1.7
+      "volume": 1.7,
+      "power": 2400,
+      "temperature": "50°C - 100°C"
     },
     "battery": {},
     "summaryEn": "KitchenAid Kettle 5KEK1701: 1.7 L.",
@@ -106683,7 +106686,10 @@
       "Almond Cream",
       "Empire Red",
       "Pistachio"
-    ]
+    ],
+    "body": {
+      "weight": 1300
+    }
   },
   {
     "id": "kitchenaid-5kek1722",
@@ -106787,7 +106793,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 180
     },
     "battery": {},
     "summaryEn": "KitchenAid Hand Blender 5KHBV83.",
@@ -106929,7 +106936,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "stand_mixer",
-      "volume": 4.8
+      "volume": 4.8,
+      "power": 300
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Stand Mixer 5KSM175PS: 4.8 L.",
@@ -106975,7 +106983,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "stand_mixer",
-      "volume": 4.8
+      "volume": 4.8,
+      "power": 300
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Stand Mixer 5KSM185PS: 4.8 L.",
@@ -107015,7 +107024,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "stand_mixer",
-      "volume": 4.8
+      "volume": 4.8,
+      "power": 300
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Stand Mixer 5KSM180WS: 4.8 L.",
@@ -107095,7 +107105,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "stand_mixer",
-      "volume": 6.9
+      "volume": 6.9,
+      "power": 325
     },
     "battery": {},
     "summaryEn": "KitchenAid Professional Stand Mixer 5KSM7990X: 6.9 L.",
@@ -107135,7 +107146,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "food_processor",
-      "volume": 1.7
+      "volume": 1.7,
+      "power": 250
     },
     "battery": {},
     "summaryEn": "KitchenAid Food Processor 5KFP0719: 1.7 L.",
@@ -107181,7 +107193,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "food_processor",
-      "volume": 1.19
+      "volume": 1.19,
+      "power": 240
     },
     "battery": {},
     "summaryEn": "KitchenAid Food Chopper 5KFC0516: 1.19 L.",
@@ -107227,7 +107240,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "food_processor",
-      "volume": 2.1
+      "volume": 2.1,
+      "power": 250
     },
     "battery": {},
     "summaryEn": "KitchenAid Food Processor 5KFP0921: 2.1 L.",
@@ -107267,7 +107281,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "food_processor",
-      "volume": 3.1
+      "volume": 3.1,
+      "power": 400
     },
     "battery": {},
     "summaryEn": "KitchenAid Food Processor 5KFP1319: 3.1 L.",
@@ -107306,7 +107321,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 1100
     },
     "battery": {},
     "summaryEn": "KitchenAid Toaster 5KMT2115.",
@@ -107351,7 +107367,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 980
     },
     "battery": {},
     "summaryEn": "KitchenAid Toaster 5KMT2109.",
@@ -107398,7 +107415,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 1250
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Toaster 5KMT2204.",
@@ -107438,7 +107456,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "kettle",
-      "volume": 1.7
+      "volume": 1.7,
+      "power": 3000
     },
     "battery": {},
     "summaryEn": "Ninja Perfect Temperature Kettle KT200EU: 1.7 L.",
@@ -107476,7 +107495,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "kettle",
-      "volume": 1.7
+      "volume": 1.7,
+      "power": 3000
     },
     "battery": {},
     "summaryEn": "Ninja Perfect Temperature Kettle KT201EU: 1.7 L.",
@@ -107514,7 +107534,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 1000,
+      "volume": 2.1
     },
     "battery": {},
     "summaryEn": "Ninja Food Processor with Auto-iQ BN650EU.",
@@ -107549,7 +107571,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1200,
+      "volume": 2.1
     },
     "battery": {},
     "summaryEn": "Ninja 2-in-1 Blender with Auto-iQ BN750EU.",
@@ -107583,7 +107607,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1200,
+      "programs": 15
     },
     "battery": {},
     "summaryEn": "Ninja Detect Power Blender Pro TB201EU.",
@@ -107617,7 +107643,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000
     },
     "battery": {},
     "summaryEn": "Ninja Foodi Blender and Soup Maker HB150EU.",
@@ -107652,7 +107679,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 1200
     },
     "battery": {},
     "summaryEn": "Ninja 3-in-1 Food Processor with Auto-iQ BN800EU.",
@@ -107686,7 +107714,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 150
     },
     "battery": {},
     "summaryEn": "Ninja Cold Press Juicer JC151EU.",
@@ -107720,7 +107749,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 2400
     },
     "battery": {},
     "summaryEn": "Ninja Foodi 3-in-1 Toaster, Grill and Panini Press ST202EU.",
@@ -107754,7 +107784,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 1450,
+      "temperature": "60 - 260 °C"
     },
     "battery": {},
     "summaryEn": "Ninja Sizzle Grill GR101EU.",
@@ -107788,7 +107820,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 1760,
+      "temperature": "40 - 265°C"
     },
     "battery": {},
     "summaryEn": "Ninja Foodi Grill AG301EU.",
@@ -107825,7 +107859,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 2460,
+      "volume": 3.8,
+      "temperature": "40°C – 260°C"
     },
     "battery": {},
     "summaryEn": "Ninja Foodi MAX Health Grill and Air Fryer AG551EU.",
@@ -107860,7 +107897,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 2400,
+      "volume": 5.8,
+      "temperature": "260 °C",
+      "programs": 7
     },
     "battery": {},
     "summaryEn": "Ninja Woodfire Electric BBQ Grill OG701EU.",
@@ -107894,7 +107935,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 1700,
+      "temperature": "370 °C",
+      "programs": 8
     },
     "battery": {},
     "summaryEn": "Ninja Woodfire Outdoor Oven OO101EU.",
@@ -107931,7 +107975,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 5.2
+      "volume": 5.2,
+      "power": 1750,
+      "temperature": "40 - 230°C"
     },
     "battery": {},
     "summaryEn": "Ninja Air Fryer MAX AF160EU: 5.2 L.",
@@ -107971,7 +108017,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 4.7
+      "volume": 4.7,
+      "power": 1750,
+      "programs": 4
     },
     "battery": {},
     "summaryEn": "Ninja Air Fryer PRO AF140EU: 4.7 L.",
@@ -108011,7 +108059,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 7.6
+      "volume": 7.6,
+      "power": 2400,
+      "temperature": "40 - 240°C"
     },
     "battery": {},
     "summaryEn": "Ninja Foodi Dual Zone AF300EU: 7.6 L.",
@@ -108047,7 +108097,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 9.5
+      "volume": 9.5,
+      "power": 2470,
+      "programs": 9
     },
     "battery": {},
     "summaryEn": "Ninja Foodi MAX Dual Zone AF400EU: 9.5 L.",
@@ -108083,7 +108135,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 9.5
+      "volume": 9.5,
+      "power": 2470,
+      "programs": 6
     },
     "battery": {},
     "summaryEn": "Ninja Foodi MAX Dual Zone AF451EU: 9.5 L.",
@@ -108120,7 +108174,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "volume": 9.5
+      "volume": 9.5,
+      "power": 2470,
+      "programs": 6
     },
     "battery": {},
     "summaryEn": "Ninja Double Stack XL SL400EU: 9.5 L.",
@@ -108159,7 +108215,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1780
     },
     "battery": {},
     "summaryEn": "Ninja SFP700EU.",
@@ -108231,7 +108288,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Hair Clipper E786E.",
     "sources": [
       "https://eldorado.am/en/babyliss-e786e"
@@ -108265,7 +108324,9 @@
     "appliance": {
       "type": "body_groomer"
     },
-    "battery": {},
+    "battery": {
+      "life": "70 min"
+    },
     "summaryEn": "BaByliss Body Groomer BG120E.",
     "sources": [
       "https://eldorado.am/en/babyliss-bg120e"
@@ -108333,7 +108394,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Hair Clipper E974E.",
     "sources": [
       "https://eldorado.am/en/trimmer-babyliss-e974e"
@@ -108349,7 +108412,10 @@
         "storage": null,
         "priceAmd": 14900
       }
-    ]
+    ],
+    "body": {
+      "weight": 190
+    }
   },
   {
     "id": "babyliss-e976e",
@@ -108367,7 +108433,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Hair Clipper E976E.",
     "sources": [
       "https://eldorado.am/en/babyliss-e976e"
@@ -108471,7 +108539,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "1 h"
+    },
     "summaryEn": "BaByliss Hair Clipper 7756PE.",
     "sources": [
       "https://eldorado.am/en/babyliss-7756pe"
@@ -108487,7 +108557,10 @@
         "storage": null,
         "priceAmd": 19900
       }
-    ]
+    ],
+    "body": {
+      "weight": 260
+    }
   },
   {
     "id": "babyliss-e977e",
@@ -108505,7 +108578,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Hair Clipper E977E.",
     "sources": [
       "https://eldorado.am/en/clipper-babyliss-e977e"
@@ -108573,7 +108648,9 @@
     "appliance": {
       "type": "multigroom"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Multi-Trimmer MT727E.",
     "sources": [
       "https://eldorado.am/en/trimmer-kit-babyliss-mt727e"
@@ -108589,7 +108666,10 @@
         "storage": null,
         "priceAmd": 24900
       }
-    ]
+    ],
+    "body": {
+      "weight": 200
+    }
   },
   {
     "id": "babyliss-mt860e",
@@ -108605,7 +108685,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "multigroom"
+      "type": "multigroom",
+      "power": 220
     },
     "battery": {},
     "summaryEn": "BaByliss Multi-Trimmer MT860E.",
@@ -108641,7 +108722,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "160 min"
+    },
     "summaryEn": "BaByliss Hair Clipper E990E.",
     "sources": [
       "https://eldorado.am/en/clipper-babyliss-e990e"
@@ -108674,7 +108757,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 5344E.",
@@ -108708,7 +108792,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hot_air_brush"
+      "type": "hot_air_brush",
+      "power": 300
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS86E.",
@@ -108743,7 +108828,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 65
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C-325.",
@@ -108811,7 +108897,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 65,
+      "temperature": "180 °C",
+      "programs": 10
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C332E.",
@@ -108846,7 +108935,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6704WE.",
@@ -108882,7 +108972,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_curler",
-      "power": 45
+      "power": 45,
+      "temperature": "180°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C319E.",
@@ -108916,7 +109007,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "160 - 210°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C454E.",
@@ -109089,7 +109181,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6704E.",
@@ -109193,7 +109286,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100,
+      "programs": 6
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6709DE.",
@@ -109227,7 +109322,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 110,
+      "temperature": "120-210°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron 2165CE.",
@@ -109296,7 +109393,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 41,
+      "temperature": "230 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST255E.",
@@ -109330,7 +109429,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D374DE.",
@@ -109364,7 +109464,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "110 - 180°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C338E.",
@@ -109398,7 +109499,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "160 - 210°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C456E.",
@@ -109432,7 +109534,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "160 - 210°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C457E.",
@@ -109501,7 +109604,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "power": 41
+      "power": 41,
+      "temperature": "235°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST516E.",
@@ -109535,7 +109639,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 46
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C451E.",
@@ -109570,7 +109675,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6719DE.",
@@ -109604,7 +109710,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100,
+      "programs": 3
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 5336NPE.",
@@ -109639,7 +109747,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6710DE.",
@@ -109657,7 +109766,10 @@
         "storage": null,
         "priceAmd": 19900
       }
-    ]
+    ],
+    "body": {
+      "weight": 450
+    }
   },
   {
     "id": "babyliss-5912pe",
@@ -109673,7 +109785,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 5912PE.",
@@ -109707,7 +109820,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6713DE.",
@@ -109845,7 +109959,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hot_air_brush"
+      "type": "hot_air_brush",
+      "power": 650
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS950E.",
@@ -109880,7 +109995,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2300,
+      "programs": 6
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6714E.",
@@ -109915,7 +110032,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hot_air_brush"
+      "type": "hot_air_brush",
+      "power": 650,
+      "programs": 2
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS952E.",
@@ -109950,7 +110069,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "power": 42
+      "power": 42,
+      "temperature": "140 - 235°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST394E.",
@@ -110018,7 +110138,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hot_air_brush"
+      "type": "hot_air_brush",
+      "power": 700
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS773E.",
@@ -110052,7 +110173,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 67
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST492E.",
@@ -110086,7 +110208,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200,
+      "programs": 3
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D566E.",
@@ -110121,7 +110245,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2400
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6716DE.",
@@ -110139,7 +110264,10 @@
         "storage": null,
         "priceAmd": 27900
       }
-    ]
+    ],
+    "body": {
+      "weight": 800
+    }
   },
   {
     "id": "babyliss-6740de",
@@ -110156,7 +110284,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2400
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer 6740DE.",
@@ -110190,7 +110319,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "235 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST212PE.",
@@ -110224,7 +110354,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "205°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Multi-Styler C115E.",
@@ -110259,7 +110390,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "140 - 235°C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST259E.",
@@ -110293,7 +110425,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "185 - 205 ⁰C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron 2660NPE.",
@@ -110329,7 +110462,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hot_air_brush",
-      "power": 1000
+      "power": 1000,
+      "programs": 2
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS960E.",
@@ -110363,7 +110497,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hot_air_brush"
+      "type": "hot_air_brush",
+      "power": 1000
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS95E.",
@@ -110398,7 +110533,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "power": 125
+      "power": 125,
+      "temperature": "5 (150°C - 230°C)"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST496E.",
@@ -110433,7 +110569,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 67,
+      "temperature": "235 °C",
+      "programs": 5
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST482E.",
@@ -110468,7 +110607,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "200 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST485E.",
@@ -110502,7 +110642,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2600
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer BAB6990IE.",
@@ -110536,7 +110677,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200,
+      "programs": 3
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D665E.",
@@ -110570,7 +110713,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 900
     },
     "battery": {},
     "summaryEn": "Shark SmoothStyle Heated Brush HT212EU.",
@@ -110605,7 +110749,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "210 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST596E.",
@@ -110623,7 +110768,10 @@
         "storage": null,
         "priceAmd": 59900
       }
-    ]
+    ],
+    "body": {
+      "weight": 900
+    }
   },
   {
     "id": "babyliss-bab7000ie",
@@ -110710,7 +110858,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 1700
     },
     "battery": {},
     "summaryEn": "Shark Multi-Styler HD352EU.",
@@ -110745,7 +110894,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 1650
     },
     "battery": {},
     "summaryEn": "Shark Multi-Styler HD446EU.",
@@ -110763,7 +110913,10 @@
         "storage": null,
         "priceAmd": 113900
       }
-    ]
+    ],
+    "body": {
+      "weight": 700
+    }
   },
   {
     "id": "ariete-00c2846",
@@ -110780,7 +110933,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ariete Kettle 00C2846.",
@@ -110815,7 +110970,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ariete Kettle 00C2847.",
@@ -110850,7 +111007,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ariete Kettle 00C2874.",
@@ -110890,7 +111049,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 2000,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ariete Vintage Kettle 00C2869.",
@@ -110972,7 +111133,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 1850,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ariete Capri Kettle 00C28690CAR0.",
@@ -111007,7 +111170,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 1850,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ariete Positano Kettle 00C28690PAR0.",
@@ -111042,7 +111207,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 400,
+      "volume": 0.6
     },
     "battery": {},
     "summaryEn": "Ariete Vintage Food Chopper 00C0438.",
@@ -111078,7 +111245,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 500,
+      "volume": 1
     },
     "battery": {},
     "summaryEn": "Ariete Breakfast Blender 00C0576.",
@@ -111114,7 +111283,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000
     },
     "battery": {},
     "summaryEn": "Ariete Hand Blender 00C0602.",
@@ -111149,7 +111319,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000
     },
     "battery": {},
     "summaryEn": "Ariete Hand Blender 00C0898.",
@@ -111189,7 +111360,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000,
+      "volume": 1.5
     },
     "battery": {},
     "summaryEn": "Ariete Blender 00C0583.",
@@ -111231,7 +111404,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000,
+      "volume": 1
     },
     "battery": {},
     "summaryEn": "Ariete Capri Blender 00C05830CAR0.",
@@ -111266,7 +111441,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000,
+      "volume": 1
     },
     "battery": {},
     "summaryEn": "Ariete Positano Blender 00C05830PAR0.",
@@ -111302,7 +111479,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hand_mixer"
+      "type": "hand_mixer",
+      "power": 450
     },
     "battery": {},
     "summaryEn": "Ariete Breakfast Hand Mixer 00C1545.",
@@ -111385,7 +111563,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hand_mixer"
+      "type": "hand_mixer",
+      "power": 450
     },
     "battery": {},
     "summaryEn": "Ariete Vintage Hand Mixer 00C1548.",
@@ -111425,7 +111604,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "stand_mixer"
+      "type": "stand_mixer",
+      "power": 300,
+      "volume": 2.4
     },
     "battery": {},
     "summaryEn": "Ariete Mixer with Bowl 00C1565.",
@@ -111461,7 +111642,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "stand_mixer"
+      "type": "stand_mixer",
+      "power": 1200,
+      "volume": 8
     },
     "battery": {},
     "summaryEn": "Ariete Gourmet Mixer with Bowl 00C1575.",
@@ -111479,7 +111662,10 @@
         "storage": null,
         "priceAmd": 69900
       }
-    ]
+    ],
+    "body": {
+      "weight": 4980
+    }
   },
   {
     "id": "ariete-00c15880car0",
@@ -111496,7 +111682,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "stand_mixer"
+      "type": "stand_mixer",
+      "power": 2400,
+      "volume": 5.5
     },
     "battery": {},
     "summaryEn": "Ariete Capri Mixer with Bowl 00C15880CAR0.",
@@ -111514,7 +111702,10 @@
         "storage": null,
         "priceAmd": 92900
       }
-    ]
+    ],
+    "body": {
+      "weight": 6100
+    }
   },
   {
     "id": "ariete-00c15880par0",
@@ -111531,7 +111722,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "stand_mixer"
+      "type": "stand_mixer",
+      "power": 2400,
+      "volume": 5.5
     },
     "battery": {},
     "summaryEn": "Ariete Positano Mixer with Bowl 00C15880PAR0.",
@@ -111549,7 +111742,10 @@
         "storage": null,
         "priceAmd": 92900
       }
-    ]
+    ],
+    "body": {
+      "weight": 6100
+    }
   },
   {
     "id": "ariete-00c1589",
@@ -111567,7 +111763,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "stand_mixer"
+      "type": "stand_mixer",
+      "power": 1600,
+      "volume": 5.5
     },
     "battery": {},
     "summaryEn": "Ariete Moderna Mixer with Bowl 00C1589.",
@@ -111585,7 +111783,10 @@
         "storage": null,
         "priceAmd": 136900
       }
-    ]
+    ],
+    "body": {
+      "weight": 6950
+    }
   },
   {
     "id": "ariete-00c0173",
@@ -111602,7 +111803,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 700
     },
     "battery": {},
     "summaryEn": "Ariete Juicer 00C0173.",
@@ -111637,7 +111839,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 85
     },
     "battery": {},
     "summaryEn": "Ariete Capri Juicer 00C04130CAR0.",
@@ -111672,7 +111875,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 85
     },
     "battery": {},
     "summaryEn": "Ariete Positano Juicer 00C04130PAR0.",
@@ -111706,7 +111910,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 700
     },
     "battery": {},
     "summaryEn": "Kenwood Juicer JE 680.",
@@ -111724,7 +111929,10 @@
         "storage": null,
         "priceAmd": 59900
       }
-    ]
+    ],
+    "body": {
+      "weight": 3715
+    }
   },
   {
     "id": "ariete-00c0177",
@@ -111741,7 +111949,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 400
     },
     "battery": {},
     "summaryEn": "Ariete Juicer 00C0177.",
@@ -111857,7 +112066,8 @@
     "appliance": {
       "type": "food_processor",
       "power": 650,
-      "volume": 1.3
+      "volume": 1.3,
+      "noise": "80 dB"
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor FDP22.000GY.",
@@ -111875,7 +112085,10 @@
         "storage": null,
         "priceAmd": 33900
       }
-    ]
+    ],
+    "body": {
+      "weight": 2300
+    }
   },
   {
     "id": "kenwood-fdm100ba",
@@ -111964,7 +112177,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 800,
+      "volume": 2.1
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor FDM304SS.",
@@ -111982,7 +112197,10 @@
         "storage": null,
         "priceAmd": 75900
       }
-    ]
+    ],
+    "body": {
+      "weight": 4600
+    }
   },
   {
     "id": "kenwood-mx271",
@@ -112034,7 +112252,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1000
     },
     "battery": {},
     "summaryEn": "Kenwood Soup Maker Blender CBL30.000CP.",
@@ -112104,7 +112323,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 1200
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor KVL85.004SI.",
@@ -112144,7 +112364,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 810
     },
     "battery": {},
     "summaryEn": "Ariete Vintage Toaster 00C0155.",
@@ -112186,7 +112407,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 810
     },
     "battery": {},
     "summaryEn": "Ariete Capri Toaster 00C01551CAR0.",
@@ -112221,7 +112443,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toaster"
+      "type": "toaster",
+      "power": 750
     },
     "battery": {},
     "summaryEn": "Ariete Toaster 00C1980.",
@@ -112256,7 +112479,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "Ariete Electric Grill 00C1918.",
@@ -112292,7 +112516,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "grill"
+      "type": "grill",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "Ariete Electric Grill 00C1934.",
@@ -112327,7 +112552,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 8,
+      "programs": 8
     },
     "battery": {},
     "summaryEn": "Ariete Air Fryer 00C4623.",
@@ -112362,7 +112590,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1300,
+      "volume": 1.1
     },
     "battery": {},
     "summaryEn": "Ariete Coffee Machine 00M1399.",
@@ -112397,7 +112627,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1100,
+      "volume": 0.6
     },
     "battery": {},
     "summaryEn": "Ariete Coffee Machine 00M1301.",
@@ -112432,7 +112664,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 700
     },
     "battery": {},
     "summaryEn": "Ariete Canister Vacuum J-Force 00P275300AR0.",
@@ -112467,7 +112700,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 800,
+      "noise": "78 dB"
     },
     "battery": {},
     "summaryEn": "Ariete Canister Vacuum Jet Force 00P279150AR0.",
@@ -112501,7 +112736,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 450
     },
     "battery": {},
     "summaryEn": "Shark Wet and Dry Vacuum PX200EUT.",
@@ -112538,7 +112774,9 @@
     "appliance": {
       "type": "cordless_vacuum"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Shark Cordless Vacuum IZ201EU.",
     "sources": [
       "https://eldorado.am/en/cordless-with-duo-clean-zero-m-shark-iz201eu"
@@ -112571,7 +112809,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 240,
+      "noise": "80 dB"
     },
     "battery": {},
     "summaryEn": "Shark Cordless Vacuum IW1611EU.",
@@ -112605,7 +112845,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "wet_dry_vacuum"
+      "type": "wet_dry_vacuum",
+      "power": 170,
+      "noise": "86 dB"
     },
     "battery": {},
     "summaryEn": "Shark Wet and Dry Vacuum WD210EU.",
@@ -112623,7 +112865,10 @@
         "storage": null,
         "priceAmd": 134900
       }
-    ]
+    ],
+    "body": {
+      "weight": 3950
+    }
   },
   {
     "id": "shark-iz400eu",
@@ -112640,7 +112885,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 309,
+      "noise": "85 dB"
     },
     "battery": {},
     "summaryEn": "Shark Cordless Vacuum IZ400EU.",
@@ -112658,7 +112905,10 @@
         "storage": null,
         "priceAmd": 143900
       }
-    ]
+    ],
+    "body": {
+      "weight": 4070
+    }
   },
   {
     "id": "shark-iz420eut",
@@ -112674,7 +112924,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 309,
+      "noise": "85 dB"
     },
     "battery": {},
     "summaryEn": "Shark Cordless Vacuum IZ420EUT.",
@@ -112709,7 +112961,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 240,
+      "noise": "80 dB"
     },
     "battery": {},
     "summaryEn": "Shark Cordless Vacuum IW3611EU.",
@@ -112744,7 +112998,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 380,
+      "noise": "86 dB"
     },
     "battery": {},
     "summaryEn": "Shark Cordless Vacuum IP3251EUT.",
@@ -112880,7 +113136,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 20,
+      "volume": 3.6,
+      "noise": "20 dB",
+      "area": "47 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier U201A.",
@@ -112915,7 +113175,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 25,
+      "noise": "28 dB"
     },
     "battery": {},
     "summaryEn": "Levoit Humidifier D302-WEU.",
@@ -112933,7 +113195,10 @@
         "storage": null,
         "priceAmd": 34900
       }
-    ]
+    ],
+    "body": {
+      "weight": 1000
+    }
   },
   {
     "id": "boneco-u250",
@@ -112950,7 +113215,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 20,
+      "volume": 3.5,
+      "noise": "41 dB"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier U250.",
@@ -112984,9 +113252,13 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 26,
+      "noise": "30 dB"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Levoit Humidifier Classic 300S.",
     "sources": [
       "https://eldorado.am/en/levoit-classic-300-s"
@@ -113019,7 +113291,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 28,
+      "noise": "28 dB",
+      "area": "up to 55 m²",
+      "programs": 3
     },
     "battery": {},
     "summaryEn": "Levoit Humidifier M101S-WEUR.",
@@ -113053,7 +113329,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "volume": 3.8,
+      "noise": "44 dB",
+      "area": "30 m²/75 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier E200.",
@@ -113087,7 +113366,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 23,
+      "volume": 4.5,
+      "noise": "30 dB",
+      "area": "50 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier W200.",
@@ -113156,7 +113439,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 20,
+      "volume": 4.5,
+      "noise": "27 dB",
+      "area": "50 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Hybrid Humidifier and Air Purifier W210.",
@@ -113226,7 +113513,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 30,
+      "volume": 12,
+      "noise": "55 dB",
+      "area": "60 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier W400.",
@@ -113266,7 +113557,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "volume": 10,
+      "noise": "25 dB",
+      "area": "150 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Hybrid Humidifier and Air Purifier H700.",
@@ -113300,7 +113594,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 32,
+      "area": "up to 70 m²"
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier Core 200S.",
@@ -113334,7 +113630,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 23,
+      "noise": "22–50 dB",
+      "area": "up to 50 m²"
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier Core 300S.",
@@ -113386,7 +113685,10 @@
         "storage": null,
         "priceAmd": 99000
       }
-    ]
+    ],
+    "body": {
+      "weight": 3320
+    }
   },
   {
     "id": "levoit-v201s-aeur",
@@ -113403,7 +113705,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "noise": "24–54 dB",
+      "area": "88 m²",
+      "programs": 3
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier V201S-AEUR.",
@@ -113455,7 +113760,10 @@
         "storage": null,
         "priceAmd": 124900
       }
-    ]
+    ],
+    "body": {
+      "weight": 3320
+    }
   },
   {
     "id": "levoit-c601s-weu",
@@ -113472,7 +113780,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "noise": "26–55 dB",
+      "area": "147 m²",
+      "programs": 2
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier C601S-WEU.",
@@ -113506,7 +113817,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 30,
+      "noise": "64 dB",
+      "area": "28 m²"
     },
     "battery": {},
     "summaryEn": "Boneco Air Purifier P500.",
@@ -113541,7 +113855,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "noise": "56 dB",
+      "area": "130 m²",
+      "programs": 4
     },
     "battery": {},
     "summaryEn": "Levoit Air Purifier EL551S-AEUR.",
@@ -113612,7 +113929,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "temperature": "3"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C1700E.",
