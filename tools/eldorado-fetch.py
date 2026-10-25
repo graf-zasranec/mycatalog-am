@@ -174,6 +174,9 @@ def main():
                 print(f'{cat} p{page}: {found}', flush=True)
                 if not found:
                     break
+            # checkpoint each aisle: a run cut short (the Mac sleeping, a closed session) keeps
+            # what it has read instead of losing two hours of listings
+            save(OUT, list(cached.values()))
     targets = []
     for url in known:
         parsed = urlparse(url)
