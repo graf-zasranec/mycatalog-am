@@ -108881,7 +108881,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 45
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C319E.",
@@ -109018,7 +109019,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 37
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST250E.",
@@ -109121,7 +109123,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D572DE.",
@@ -109258,7 +109261,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 37
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C450E.",
@@ -109496,7 +109500,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 41
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST516E.",
@@ -109805,7 +109810,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 52
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST397E.",
@@ -109943,7 +109949,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 42
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST394E.",
@@ -110321,7 +110328,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hot_air_brush"
+      "type": "hot_air_brush",
+      "power": 1000
     },
     "battery": {},
     "summaryEn": "BaByliss Hot Air Brush AS960E.",
@@ -110389,7 +110397,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 125
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST496E.",
@@ -110665,7 +110674,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 1700
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D6555DE.",
@@ -110922,7 +110932,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Kenwood Kettle SJM490.",
@@ -110940,7 +110952,10 @@
         "storage": null,
         "priceAmd": 28900
       }
-    ]
+    ],
+    "body": {
+      "weight": 1200
+    }
   },
   {
     "id": "ariete-00c28690car0",
@@ -111323,7 +111338,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hand_mixer"
+      "type": "hand_mixer",
+      "power": 450
     },
     "battery": {},
     "summaryEn": "Kenwood Hand Mixer HMP30.",
@@ -111346,7 +111362,10 @@
     "colors": [
       "Black",
       "Silver"
-    ]
+    ],
+    "body": {
+      "weight": 1100
+    }
   },
   {
     "id": "ariete-00c1548",
@@ -111756,7 +111775,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 200,
+      "volume": 1.3
     },
     "battery": {},
     "summaryEn": "Kenwood Juicer JMP601SI.",
@@ -111774,7 +111795,10 @@
         "storage": null,
         "priceAmd": 115900
       }
-    ]
+    ],
+    "body": {
+      "weight": 4400
+    }
   },
   {
     "id": "kenwood-jmp85-000si",
@@ -111791,7 +111815,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "juicer"
+      "type": "juicer",
+      "power": 230,
+      "volume": 0.6
     },
     "battery": {},
     "summaryEn": "Kenwood Juicer JMP85.000SI.",
@@ -111809,7 +111835,10 @@
         "storage": null,
         "priceAmd": 119900
       }
-    ]
+    ],
+    "body": {
+      "weight": 4300
+    }
   },
   {
     "id": "kenwood-fdp22-000gy",
@@ -111826,7 +111855,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 650,
+      "volume": 1.3
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor FDP22.000GY.",
@@ -111894,7 +111925,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 800,
+      "volume": 1.2
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor FDM301SS.",
@@ -111912,7 +111945,10 @@
         "storage": null,
         "priceAmd": 65900
       }
-    ]
+    ],
+    "body": {
+      "weight": 3600
+    }
   },
   {
     "id": "kenwood-fdm304ss",
@@ -112032,7 +112068,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 1000,
+      "volume": 4.3
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor KHC29A.X0SI.",
@@ -113591,6 +113629,2025 @@
         "ram": null,
         "storage": null,
         "priceAmd": 39900
+      }
+    ]
+  },
+  {
+    "id": "kenwood-sb055wg",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Blender SB055WG",
+    "aliases": [
+      "Kenwood SB055WG",
+      "KENWOOD SB055WG",
+      "SB055WG",
+      "KENWOOD SB055WG Blenders"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "blender",
+      "power": 300,
+      "volume": 0.5
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Blender SB055WG: 300 W, 0.5 L, 3.0 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/246"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 20900,
+    "priceAmdMax": 20900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 20900
+      }
+    ],
+    "body": {
+      "weight": 3000
+    }
+  },
+  {
+    "id": "kenwood-mg515",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Meat Grinder MG515",
+    "aliases": [
+      "Kenwood MG515",
+      "KENWOOD MG515",
+      "MG515",
+      "KENWOOD MG515 Meat Grinders"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "meat_grinder",
+      "power": 1600
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Meat Grinder MG515: 1600 W, 5.6 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/1493"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 84000,
+    "priceAmdMax": 84000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 84000
+      }
+    ],
+    "body": {
+      "weight": 5600
+    }
+  },
+  {
+    "id": "kenwood-mg510",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Meat Grinder MG510",
+    "aliases": [
+      "Kenwood MG510",
+      "KENWOOD MG510",
+      "MG510",
+      "KENWOOD MG510 Meat Grinders"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "meat_grinder",
+      "power": 1600
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Meat Grinder MG510: 1600 W, 5.3 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/6642",
+      "https://likemobile.am/en/kenwood-mg510"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 66000,
+    "priceAmdMax": 84000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 66000
+      }
+    ],
+    "body": {
+      "weight": 5300
+    }
+  },
+  {
+    "id": "kenwood-kvc3100s",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KVC3100S",
+    "aliases": [
+      "Kenwood KVC3100S",
+      "KENWOOD KVC3100S",
+      "KVC3100S",
+      "KENWOOD KVC3100S Kitchen Machines"
+    ],
+    "tier": "flagship",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KVC3100S: 1000 W, 7.3 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/6987"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 159900,
+    "priceAmdMax": 159900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 159900
+      }
+    ],
+    "body": {
+      "weight": 7300
+    }
+  },
+  {
+    "id": "kenwood-tcx751rd",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Toaster TCX751RD",
+    "aliases": [
+      "Kenwood TCX751RD",
+      "KENWOOD TCX751RD",
+      "TCX751RD",
+      "KENWOOD TCX751RD Toasters"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "toaster",
+      "power": 900
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Toaster TCX751RD: 900 W, 1.6 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/7016"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "body": {
+      "weight": 1600
+    }
+  },
+  {
+    "id": "kenwood-zjg112cl",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kettle ZJG112CL",
+    "aliases": [
+      "Kenwood ZJG112CL",
+      "KENWOOD ZJG112CL",
+      "ZJG112CL",
+      "KENWOOD ZJG112CL Kettle"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kettle ZJG112CL: 2200 W, 1.7 L, 1.5 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/11606"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 38900,
+    "priceAmdMax": 38900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 38900
+      }
+    ],
+    "body": {
+      "weight": 1500
+    }
+  },
+  {
+    "id": "kenwood-je280a",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Citrus Juicer JE280A",
+    "aliases": [
+      "Kenwood JE280A",
+      "KENWOOD JE280A",
+      "JE280A",
+      "KENWOOD JE280A Citrus Juicers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "juicer",
+      "power": 40
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Citrus Juicer JE280A: 40 W.",
+    "sources": [
+      "https://vlv.am/en/Product/14783"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 12500,
+    "priceAmdMax": 12500,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 12500
+      }
+    ]
+  },
+  {
+    "id": "kenwood-mg520",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Meat Grinder MG520",
+    "aliases": [
+      "Kenwood MG520",
+      "KENWOOD MG520",
+      "MG520",
+      "KENWOOD MG520 Meat Grinders"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "meat_grinder",
+      "power": 1600
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Meat Grinder MG520: 1600 W, 5.3 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/14784"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 105900,
+    "priceAmdMax": 105900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 105900
+      }
+    ],
+    "body": {
+      "weight": 5300
+    }
+  },
+  {
+    "id": "kenwood-hmp32-a0wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Mixer with Bowl HMP32.A0WH",
+    "aliases": [
+      "Kenwood HMP32.A0WH",
+      "KENWOOD HMP32.A0WH",
+      "HMP32.A0WH",
+      "KENWOOD HMP32.A0WH Stand Mixers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 450
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Mixer with Bowl HMP32.A0WH: 450 W, 2.5 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/15989",
+      "https://likemobile.am/en/kenwood-hmp32a0wh"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 26000,
+    "priceAmdMax": 29900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 26000
+      }
+    ],
+    "body": {
+      "weight": 2500
+    }
+  },
+  {
+    "id": "kenwood-jmp600wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Juicer JMP600WH",
+    "aliases": [
+      "Kenwood JMP600WH",
+      "KENWOOD JMP600WH",
+      "JMP600WH",
+      "KENWOOD JMP600WH Juicers"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "juicer",
+      "power": 150,
+      "volume": 1.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Juicer JMP600WH: 150 W, 1.3 L.",
+    "sources": [
+      "https://vlv.am/en/Product/15990"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 95000,
+    "priceAmdMax": 95000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 95000
+      }
+    ]
+  },
+  {
+    "id": "kenwood-blp41-c0wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Blender BLP41.C0WH",
+    "aliases": [
+      "Kenwood BLP41.C0WH",
+      "KENWOOD BLP41.C0WH",
+      "BLP41.C0WH",
+      "KENWOOD BLP41.C0WH Blenders"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "blender",
+      "power": 650,
+      "volume": 2
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Blender BLP41.C0WH: 650 W, 2 L.",
+    "sources": [
+      "https://vlv.am/en/Product/16276"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 33900,
+    "priceAmdMax": 33900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 33900
+      }
+    ]
+  },
+  {
+    "id": "kenwood-mg700",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Meat Grinder MG700",
+    "aliases": [
+      "Kenwood MG700",
+      "KENWOOD MG700",
+      "MG700",
+      "KENWOOD MG700 Meat Grinders"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "meat_grinder",
+      "power": 2000
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Meat Grinder MG700: 2000 W, 7.0 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/18339",
+      "https://likemobile.am/en/kenwood-mg700"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 119000,
+    "priceAmdMax": 139900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119000
+      }
+    ],
+    "body": {
+      "weight": 7000
+    }
+  },
+  {
+    "id": "kenwood-kmx760a",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KMX760A",
+    "aliases": [
+      "Kenwood KMX760A",
+      "KENWOOD KMX760A",
+      "KMX760A",
+      "Kenwood KMX760ABC",
+      "KMX760ABC",
+      "KENWOOD KMX760ABC Kitchen Machines",
+      "Kenwood KMX760ACH",
+      "KMX760ACH",
+      "KENWOOD KMX760ACH Kitchen Machines",
+      "Kenwood KMX760AGD",
+      "KMX760AGD",
+      "KENWOOD KMX760AGD Kitchen Machines"
+    ],
+    "tier": "flagship",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 5
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KMX760A: 1000 W, 5 L, 9.1 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/18618",
+      "https://vlv.am/en/Product/18621",
+      "https://vlv.am/en/Product/25000"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 229900,
+    "priceAmdMax": 229900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 229900
+      }
+    ],
+    "colors": [
+      "Black",
+      "Silver",
+      "Champagne"
+    ],
+    "body": {
+      "weight": 9100
+    }
+  },
+  {
+    "id": "kenwood-chp61-100wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Food Chopper CHP61.100WH",
+    "aliases": [
+      "Kenwood CHP61.100WH",
+      "KENWOOD CHP61.100WH",
+      "CHP61.100WH",
+      "KENWOOD CHP61.100WH Choppers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "food_processor",
+      "power": 500,
+      "volume": 0.5
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Food Chopper CHP61.100WH: 500 W, 0.5 L, 1.1 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/19307"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 21900,
+    "priceAmdMax": 21900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 21900
+      }
+    ],
+    "body": {
+      "weight": 1100
+    }
+  },
+  {
+    "id": "kenwood-hmp54-000si",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Mixer with Bowl HMP54.000SI",
+    "aliases": [
+      "Kenwood HMP54.000SI",
+      "KENWOOD HMP54.000SI",
+      "HMP54.000SI",
+      "KENWOOD HMP54.000SI Stand Mixers"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 650,
+      "volume": 3.5
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Mixer with Bowl HMP54.000SI: 650 W, 3.5 L, 2.5 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/19321"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 51900,
+    "priceAmdMax": 51900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 51900
+      }
+    ],
+    "body": {
+      "weight": 2550
+    }
+  },
+  {
+    "id": "kenwood-hmp10-000wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Hand Mixer HMP10.000WH",
+    "aliases": [
+      "Kenwood HMP10.000WH",
+      "KENWOOD HMP10.000WH",
+      "HMP10.000WH",
+      "KENWOOD HMP10.000WH Hand Mixers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hand_mixer",
+      "power": 300
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Hand Mixer HMP10.000WH: 300 W, 0.8 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/19330"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 13900,
+    "priceAmdMax": 13900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13900
+      }
+    ],
+    "body": {
+      "weight": 850
+    }
+  },
+  {
+    "id": "kenwood-mg516",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Meat Grinder MG516",
+    "aliases": [
+      "Kenwood MG516",
+      "KENWOOD MG516",
+      "MG516",
+      "KENWOOD MG516 Meat Grinders"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "meat_grinder",
+      "power": 1600
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Meat Grinder MG516: 1600 W, 5.3 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/24994"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 99900,
+    "priceAmdMax": 99900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99900
+      }
+    ],
+    "body": {
+      "weight": 5300
+    }
+  },
+  {
+    "id": "kenwood-jmp400wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Juicer JMP400WH",
+    "aliases": [
+      "Kenwood JMP400WH",
+      "KENWOOD JMP400WH",
+      "JMP400WH",
+      "KENWOOD JMP400WH Juicers"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "juicer",
+      "power": 140,
+      "volume": 1.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Juicer JMP400WH: 140 W, 1.3 L, 3.9 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/25003"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 79900,
+    "priceAmdMax": 79900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79900
+      }
+    ],
+    "body": {
+      "weight": 3920
+    }
+  },
+  {
+    "id": "kenwood-blp41-a0wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Blender BLP41.A0WH",
+    "aliases": [
+      "Kenwood BLP41.A0WH",
+      "KENWOOD BLP41.A0WH",
+      "BLP41.A0WH",
+      "KENWOOD BLP41.A0WH Blenders"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "blender",
+      "power": 650,
+      "volume": 1.5
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Blender BLP41.A0WH: 650 W, 1.5 L, 2.0 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/25005",
+      "https://likemobile.am/en/blender-kenwood-blp41a0wh"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 29900,
+    "priceAmdMax": 29900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29900
+      }
+    ],
+    "body": {
+      "weight": 1960
+    }
+  },
+  {
+    "id": "kenwood-chp61-000wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Food Chopper CHP61.000WH",
+    "aliases": [
+      "Kenwood CHP61.000WH",
+      "KENWOOD CHP61.000WH",
+      "CHP61.000WH",
+      "KENWOOD CHP61.000WH Choppers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "food_processor",
+      "power": 500,
+      "volume": 0.5
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Food Chopper CHP61.000WH: 500 W, 0.5 L, 1.1 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/27437"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 21900,
+    "priceAmdMax": 21900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 21900
+      }
+    ],
+    "body": {
+      "weight": 1100
+    }
+  },
+  {
+    "id": "kenwood-zjx650rd",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kettle ZJX650RD",
+    "aliases": [
+      "Kenwood ZJX650RD",
+      "KENWOOD ZJX650RD",
+      "ZJX650RD",
+      "KENWOOD ZJX650RD Kettle"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kettle ZJX650RD: 2200 W, 1 L, 1.1 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/28225"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 35000,
+    "priceAmdMax": 35000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 35000
+      }
+    ],
+    "body": {
+      "weight": 1100
+    }
+  },
+  {
+    "id": "kenwood-zjp04-a0gy",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kettle ZJP04.A0GY",
+    "aliases": [
+      "Kenwood ZJP04.A0GY",
+      "KENWOOD ZJP04.A0GY",
+      "ZJP04.A0GY",
+      "KENWOOD ZJP04.A0GY Kettle"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kettle ZJP04.A0GY: 2200 W, 1.7 L, 1.0 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/29838"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 21900,
+    "priceAmdMax": 21900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 21900
+      }
+    ],
+    "body": {
+      "weight": 1000
+    }
+  },
+  {
+    "id": "kenwood-khc29a-r0si",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KHC29A.R0SI",
+    "aliases": [
+      "Kenwood KHC29A.R0SI",
+      "KENWOOD KHC29A.R0SI",
+      "KHC29A.R0SI",
+      "KENWOOD KHC29A.R0SI Kitchen Machines"
+    ],
+    "tier": "flagship",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 4.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KHC29A.R0SI: 1000 W, 4.3 L.",
+    "sources": [
+      "https://vlv.am/en/Product/31604"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 179000,
+    "priceAmdMax": 179000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 179000
+      }
+    ]
+  },
+  {
+    "id": "kenwood-chp80-000si",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Food Chopper CHP80.000SI",
+    "aliases": [
+      "Kenwood CHP80.000SI",
+      "KENWOOD CHP80.000SI",
+      "CHP80.000SI",
+      "KENWOOD CHP80.000SI Choppers"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "food_processor",
+      "power": 800
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Food Chopper CHP80.000SI: 800 W, 2.3 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/32349"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 41900,
+    "priceAmdMax": 41900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 41900
+      }
+    ],
+    "body": {
+      "weight": 2290
+    }
+  },
+  {
+    "id": "kenwood-zjm810rd",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kettle ZJM810RD",
+    "aliases": [
+      "Kenwood ZJM810RD",
+      "KENWOOD ZJM810RD",
+      "ZJM810RD",
+      "KENWOOD ZJM810RD Kettle"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.6
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kettle ZJM810RD: 2200 W, 1.6 L, 1.4 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/32364"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 48900,
+    "priceAmdMax": 48900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 48900
+      }
+    ],
+    "body": {
+      "weight": 1400
+    }
+  },
+  {
+    "id": "kenwood-fdp22-130",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Food Processor FDP22.130",
+    "aliases": [
+      "Kenwood FDP22.130",
+      "KENWOOD FDP22.130",
+      "FDP22.130",
+      "Kenwood FDP22.130GY",
+      "FDP22.130GY",
+      "KENWOOD FDP22.130GY Food Processors",
+      "Kenwood FDP22.130RD",
+      "FDP22.130RD",
+      "KENWOOD FDP22.130RD Food Processors"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "food_processor",
+      "power": 650,
+      "volume": 1.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Food Processor FDP22.130: 650 W, 1.3 L.",
+    "sources": [
+      "https://vlv.am/en/Product/33493",
+      "https://vlv.am/en/Product/34581"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 43900,
+    "priceAmdMax": 43900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 43900
+      }
+    ],
+    "colors": [
+      "Blue",
+      "Copper"
+    ]
+  },
+  {
+    "id": "kenwood-khc29a-m0si",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KHC29A.M0SI",
+    "aliases": [
+      "Kenwood KHC29A.M0SI",
+      "KENWOOD KHC29A.M0SI",
+      "KHC29A.M0SI",
+      "KENWOOD KHC29A.M0SI Kitchen Machines"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 4.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KHC29A.M0SI: 1000 W, 4.3 L, 4.5 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/34583",
+      "https://likemobile.am/en/kenwood-khc29am0si"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 139000,
+    "priceAmdMax": 159000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 139000
+      }
+    ],
+    "body": {
+      "weight": 4500
+    }
+  },
+  {
+    "id": "kenwood-kzm35-000",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KZM35.000",
+    "aliases": [
+      "Kenwood KZM35.000",
+      "KENWOOD KZM35.000",
+      "KZM35.000",
+      "Kenwood KZM35.000GY",
+      "KZM35.000GY",
+      "KENWOOD KZM35.000GY Kitchen Machines",
+      "Kenwood KZM35.000RD",
+      "KZM35.000RD",
+      "KENWOOD KZM35.000RD Kitchen Machines",
+      "Kenwood KZM35.000GR",
+      "KZM35.000GR",
+      "KENWOOD KZM35.000GR Kitchen Machines"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 800,
+      "volume": 4
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KZM35.000: 800 W, 4 L.",
+    "sources": [
+      "https://vlv.am/en/Product/35573",
+      "https://vlv.am/en/Product/36462",
+      "https://vlv.am/en/Product/44040"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 129000,
+    "priceAmdMax": 129000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129000
+      }
+    ],
+    "colors": [
+      "Blue",
+      "Clay Red",
+      "Green"
+    ]
+  },
+  {
+    "id": "kenwood-hmp40-000",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Hand Mixer HMP40.000",
+    "aliases": [
+      "Kenwood HMP40.000",
+      "KENWOOD HMP40.000",
+      "HMP40.000",
+      "Kenwood HMP40.000GY",
+      "HMP40.000GY",
+      "KENWOOD HMP40.000GY Hand Mixers",
+      "Kenwood HMP40.000RD",
+      "HMP40.000RD",
+      "KENWOOD HMP40.000RD Hand Mixers",
+      "Kenwood HMP40.000GR",
+      "HMP40.000GR",
+      "KENWOOD HMP40.000GR Hand Mixers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hand_mixer",
+      "power": 350
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Hand Mixer HMP40.000: 350 W, 1.2 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/37233",
+      "https://vlv.am/en/Product/37234",
+      "https://vlv.am/en/Product/44098"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 25900,
+    "priceAmdMax": 25900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25900
+      }
+    ],
+    "colors": [
+      "Light Blue",
+      "Red",
+      "Green"
+    ],
+    "body": {
+      "weight": 1200
+    }
+  },
+  {
+    "id": "babyliss-5911e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Dryer 5911E",
+    "aliases": [
+      "BaByliss 5911E",
+      "BABYLISS 5911E",
+      "5911E",
+      "BABYLISS 5911E Hairdryers",
+      "Babyliss 5911E"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 2000
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Dryer 5911E: 2000 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39155",
+      "https://likemobile.am/en/fen-babyliss-5911e"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 26000,
+    "priceAmdMax": 34900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 26000
+      }
+    ]
+  },
+  {
+    "id": "babyliss-as136e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hot Air Brush AS136E",
+    "aliases": [
+      "BaByliss AS136E",
+      "BABYLISS AS136E",
+      "AS136E",
+      "BABYLISS AS136E Hairdryer-Brushes"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hot_air_brush",
+      "power": 1000
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hot Air Brush AS136E: 1000 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39160"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 39900,
+    "priceAmdMax": 39900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-as6550e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hot Air Brush AS6550E",
+    "aliases": [
+      "BaByliss AS6550E",
+      "BABYLISS AS6550E",
+      "AS6550E",
+      "BABYLISS AS6550E Hairdryer-Brushes"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hot_air_brush",
+      "power": 1500
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hot Air Brush AS6550E: 1500 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39162"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 59900,
+    "priceAmdMax": 59900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-as774e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hot Air Brush AS774E",
+    "aliases": [
+      "BaByliss AS774E",
+      "BABYLISS AS774E",
+      "AS774E",
+      "BABYLISS AS774E Hairdryer-Brushes"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hot_air_brush",
+      "power": 1000
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hot Air Brush AS774E: 1000 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39163"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 39900,
+    "priceAmdMax": 39900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-d215de",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Dryer D215DE",
+    "aliases": [
+      "BaByliss D215DE",
+      "BABYLISS D215DE",
+      "D215DE",
+      "BABYLISS D215DE Hairdryers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 2000
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Dryer D215DE: 2000 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39169"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 17900,
+    "priceAmdMax": 17900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 17900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-d563de",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Dryer D563DE",
+    "aliases": [
+      "BaByliss D563DE",
+      "BABYLISS D563DE",
+      "D563DE",
+      "BABYLISS D563DE Hairdryers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 2100
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Dryer D563DE: 2100 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39170"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 14900,
+    "priceAmdMax": 14900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 14900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-d570de",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Dryer D570DE",
+    "aliases": [
+      "BaByliss D570DE",
+      "BABYLISS D570DE",
+      "D570DE",
+      "BABYLISS D570DE Hairdryers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 2200
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Dryer D570DE: 2200 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39171"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 16900,
+    "priceAmdMax": 16900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 16900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-d781e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Dryer D781E",
+    "aliases": [
+      "BaByliss D781E",
+      "BABYLISS D781E",
+      "D781E",
+      "BABYLISS D781E Hairdryers",
+      "Babyliss D781E"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 2300
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Dryer D781E: 2300 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39174",
+      "https://likemobile.am/en/fen-babyliss-d781e"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 29000,
+    "priceAmdMax": 35900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ]
+  },
+  {
+    "id": "babyliss-st298e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Straightener ST298E",
+    "aliases": [
+      "BaByliss ST298E",
+      "BABYLISS ST298E",
+      "ST298E",
+      "BABYLISS ST298E Hairstylers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_styler",
+      "power": 41
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Straightener ST298E: 41 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39176"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 25900,
+    "priceAmdMax": 25900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-st391e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Straightener ST391E",
+    "aliases": [
+      "BaByliss ST391E",
+      "BABYLISS ST391E",
+      "ST391E",
+      "BABYLISS ST391E Hairstylers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_styler",
+      "power": 41
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Straightener ST391E: 41 W.",
+    "sources": [
+      "https://vlv.am/en/Product/39177"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 29900,
+    "priceAmdMax": 29900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29900
+      }
+    ]
+  },
+  {
+    "id": "kenwood-khc29a-j0wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KHC29A.J0WH",
+    "aliases": [
+      "Kenwood KHC29A.J0WH",
+      "KENWOOD KHC29A.J0WH",
+      "KHC29A.J0WH",
+      "KENWOOD KHC29A.J0WH Kitchen Machines"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 4.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KHC29A.J0WH: 1000 W, 4.3 L.",
+    "sources": [
+      "https://vlv.am/en/Product/39849"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 129900,
+    "priceAmdMax": 129900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129900
+      }
+    ]
+  },
+  {
+    "id": "kenwood-fdp23-380",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Food Processor FDP23.380",
+    "aliases": [
+      "Kenwood FDP23.380",
+      "KENWOOD FDP23.380",
+      "FDP23.380",
+      "Kenwood FDP23.380GY",
+      "FDP23.380GY",
+      "KENWOOD FDP23.380GY Food Processors",
+      "Kenwood FDP23.380GR",
+      "FDP23.380GR",
+      "KENWOOD FDP23.380GR Food Processors",
+      "Kenwood FDP23.380RD",
+      "FDP23.380RD",
+      "KENWOOD FDP23.380RD Food Processors"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "food_processor",
+      "power": 650,
+      "volume": 1.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Food Processor FDP23.380: 650 W, 1.3 L, 2.8 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/43656",
+      "https://vlv.am/en/Product/43657",
+      "https://vlv.am/en/Product/45701"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 53900,
+    "priceAmdMax": 53900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 53900
+      }
+    ],
+    "body": {
+      "weight": 2820
+    },
+    "colors": [
+      "Blue",
+      "Green",
+      "Copper"
+    ]
+  },
+  {
+    "id": "kenwood-khc30-000wh",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KHC30.000WH",
+    "aliases": [
+      "Kenwood KHC30.000WH",
+      "KENWOOD KHC30.000WH",
+      "KHC30.000WH",
+      "KENWOOD KHC30.000WH Kitchen Machines"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KHC30.000WH: 1000 W.",
+    "sources": [
+      "https://vlv.am/en/Product/44099"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 84000,
+    "priceAmdMax": 84000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 84000
+      }
+    ]
+  },
+  {
+    "id": "babyliss-as965e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hot Air Brush AS965E",
+    "aliases": [
+      "BaByliss AS965E",
+      "BABYLISS AS965E",
+      "AS965E",
+      "BABYLISS AS965E Hairdryer-Brushes"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hot_air_brush",
+      "power": 1000
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hot Air Brush AS965E: 1000 W.",
+    "sources": [
+      "https://vlv.am/en/Product/44328"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 44900,
+    "priceAmdMax": 44900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 44900
+      }
+    ]
+  },
+  {
+    "id": "kenwood-fdp23-140",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Food Processor FDP23.140",
+    "aliases": [
+      "Kenwood FDP23.140",
+      "KENWOOD FDP23.140",
+      "FDP23.140",
+      "Kenwood FDP23.140GY",
+      "FDP23.140GY",
+      "KENWOOD FDP23.140GY Food Processors",
+      "Kenwood FDP23.140GR",
+      "FDP23.140GR",
+      "KENWOOD FDP23.140GR Food Processors",
+      "Kenwood FDP23.140RD",
+      "FDP23.140RD",
+      "KENWOOD FDP23.140RD Food Processors"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "food_processor",
+      "power": 650,
+      "volume": 1.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Food Processor FDP23.140: 650 W, 1.3 L, 2.3 kg.",
+    "sources": [
+      "https://vlv.am/en/Product/44331",
+      "https://vlv.am/en/Product/44332",
+      "https://vlv.am/en/Product/45702"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 43900,
+    "priceAmdMax": 43900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 43900
+      }
+    ],
+    "body": {
+      "weight": 2280
+    },
+    "colors": [
+      "Blue",
+      "Green",
+      "Copper"
+    ]
+  },
+  {
+    "id": "kenwood-khc30-070gy",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KHC30.070GY",
+    "aliases": [
+      "Kenwood KHC30.070GY",
+      "KENWOOD KHC30.070GY",
+      "KHC30.070GY",
+      "KENWOOD KHC30.070GY Kitchen Machines"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 4.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KHC30.070GY: 1000 W, 4.3 L.",
+    "sources": [
+      "https://vlv.am/en/Product/44333"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 129900,
+    "priceAmdMax": 129900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129900
+      }
+    ]
+  },
+  {
+    "id": "kenwood-khc30-050gy",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kitchen Machine KHC30.050GY",
+    "aliases": [
+      "Kenwood KHC30.050GY",
+      "KENWOOD KHC30.050GY",
+      "KHC30.050GY",
+      "KENWOOD KHC30.050GY Kitchen Machines"
+    ],
+    "tier": "upper-mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 4.3
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kitchen Machine KHC30.050GY: 1000 W, 4.3 L.",
+    "sources": [
+      "https://vlv.am/en/Product/45530"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 115900,
+    "priceAmdMax": 115900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 115900
+      }
+    ]
+  },
+  {
+    "id": "babyliss-d212e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Hair Dryer D212E",
+    "aliases": [
+      "BaByliss D212E",
+      "BABYLISS D212E",
+      "D212E",
+      "Babyliss D212E"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_dryer"
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Hair Dryer D212E.",
+    "sources": [
+      "https://likemobile.am/en/fen-babyliss-d212e"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ]
+  },
+  {
+    "id": "babyliss-ms22e",
+    "category": "haircare",
+    "brand": "BaByliss",
+    "name": "Multi-Styler MS22E",
+    "aliases": [
+      "BaByliss MS22E",
+      "BABYLISS MS22E",
+      "MS22E",
+      "BABYLISS MS22E 170C"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hair_styler"
+    },
+    "battery": {},
+    "summaryEn": "BaByliss Multi-Styler MS22E.",
+    "sources": [
+      "https://likemobile.am/en/babyliss-ms22e-170c-"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 26000,
+    "priceAmdMax": 26000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 26000
+      }
+    ]
+  },
+  {
+    "id": "kenwood-blp300wh12",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Blender BLP300WH12",
+    "aliases": [
+      "Kenwood BLP300WH12",
+      "KENWOOD BLP300WH12",
+      "BLP300WH12"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "blender"
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Blender BLP300WH12.",
+    "sources": [
+      "https://likemobile.am/en/blender-kenwood-blp300wh12"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 27000,
+    "priceAmdMax": 27000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 27000
+      }
+    ]
+  },
+  {
+    "id": "kenwood-mg360",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Meat Grinder MG360",
+    "aliases": [
+      "Kenwood MG360",
+      "KENWOOD MG360",
+      "MG360"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "meat_grinder"
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Meat Grinder MG360.",
+    "sources": [
+      "https://likemobile.am/en/kenwood-mg360"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 57000,
+    "priceAmdMax": 57000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 57000
+      }
+    ]
+  },
+  {
+    "id": "kenwood-sjm110",
+    "category": "kitchen",
+    "brand": "Kenwood",
+    "name": "Kettle SJM110",
+    "aliases": [
+      "Kenwood SJM110",
+      "KENWOOD SJM110",
+      "SJM110"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "kettle"
+    },
+    "battery": {},
+    "summaryEn": "Kenwood Kettle SJM110.",
+    "sources": [
+      "https://likemobile.am/en/kenwood-sjm110"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
       }
     ]
   }
