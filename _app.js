@@ -81,7 +81,7 @@ const X = {
     connF: 'Միացում', cellY: 'Wi-Fi + բջջային կապ', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
     gamingF: 'Խաղային', resF: 'Թույլատրություն',
-    atypeF: 'Տեսակ', powerF: 'Հզորություն', volF: 'Ծավալ',
+    atypeF: 'Տեսակ', powerF: 'Հզորություն', volF: 'Ծավալ', loadF: 'Բեռնվածություն', btuF: 'Սառեցման հզորություն', setsF: 'Սպասքի լրակազմեր', setsU: 'լրակազմ',
     spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Party', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
     waters: { splash: 'Ցանկոտումից պաշտպանված', dip: 'Ջրի մեջ ընկղման դիմացկուն' },
     heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և գտի՛ր', heroB: 'լավագույն գինը',
@@ -116,7 +116,7 @@ const X = {
     connF: 'Подключение', cellY: 'Wi-Fi + сотовая связь', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
     gamingF: 'Игровые', resF: 'Разрешение',
-    atypeF: 'Тип', powerF: 'Мощность', volF: 'Объём',
+    atypeF: 'Тип', powerF: 'Мощность', volF: 'Объём', loadF: 'Загрузка', btuF: 'Мощность охлаждения', setsF: 'Комплекты посуды', setsU: 'компл.',
     spkF: 'Тип', spks: { portable: 'Портативные', party: 'Для вечеринок', smart: 'Умные (Wi-Fi)', home: 'Домашние' },
     waters: { splash: 'Защита от брызг', dip: 'Выдерживает погружение' },
     // ru addresses the reader as вы everywhere else - the subhead below, the footer, the whole
@@ -154,7 +154,7 @@ const X = {
     connF: 'Connection', cellY: 'Wi-Fi + Cellular', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
     gamingF: 'Gaming', resF: 'Resolution',
-    atypeF: 'Type', powerF: 'Power', volF: 'Capacity',
+    atypeF: 'Type', powerF: 'Power', volF: 'Capacity', loadF: 'Load', btuF: 'Cooling power', setsF: 'Place settings', setsU: 'place settings',
     spkF: 'Type', spks: { portable: 'Portable', party: 'Party', smart: 'Smart (Wi-Fi)', home: 'Home' },
     waters: { splash: 'Splash resistant', dip: 'Survives a dunk' },
     heroTag: 'Just launched', heroA: 'Compare and find', heroB: 'the best price',
@@ -177,7 +177,7 @@ const X = {
 // old one, so it is READ when the new key is empty and never written again. Renaming it without
 // that would have reset everyone's language and emptied their compare list on the next visit.
 const LS = 'better.v2';
-const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, g5: false, nfc: false, chg: 0, wless: false, sd: false, gstyles: [], glenses: [], kinds: [], anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
+const D = { lang: 'hy', theme: 'auto', cat: '', q: '', scrmin: 0, touch: 0, brands: [], shops: [], pmin: 0, pmax: 0, bounds: null, ram: 0, stor: 0, weight: 0, scrs: [], batt: 0, hz: 0, cam: 0, life: 0, cpus: [], gpus: [], waters: [], hforms: [], hconns: [], hplugs: [], spks: [], reses: [], atypes: [], apower: 0, avol: 0, aload: 0, abtu: 0, asets: 0, g5: false, nfc: false, chg: 0, wless: false, sd: false, gstyles: [], glenses: [], kinds: [], anc: 0, gaming: false, sort: 'popular', page: 1, cmp: [] };
 let st = { ...D };
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2') || '{}')); } catch (e) { }
 // Saved state is user-editable and outlives releases: a language we dropped, a sort that no longer
@@ -878,6 +878,9 @@ const FILT = {
            vals: () => ['portable', 'party', 'smart', 'home'] },
   atype: { kind: 'set', arr: 'atypes', label: () => x('atypeF'), of: p => p.appliance?.type, fmt: v => t('appliance.' + v) },
   apower: { kind: 'min', nice: true, label: () => x('powerF'), of: p => p.appliance?.power || null, fmt: v => money(v) + ' ' + u('w') },
+  aload: { kind: 'min', label: () => x('loadF'), of: p => p.appliance?.load || null, fmt: v => v + ' ' + u('kg') },
+  abtu:  { kind: 'min', nice: true, label: () => x('btuF'), of: p => p.appliance?.btu || null, fmt: v => money(v) + ' BTU' },
+  asets: { kind: 'min', label: () => x('setsF'), of: p => p.appliance?.settings || null, fmt: v => v + ' ' + x('setsU') },
   avol:  { kind: 'min', label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
   res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
            vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
@@ -955,7 +958,7 @@ const ASK = {
   coffee:     ['apower', 'avol', 'year'],
   haircare:   ['atype', 'apower', 'year'],
   grooming:   ['atype', 'life', 'year'],
-  largeappliance: ['atype', 'apower', 'year'],
+  largeappliance: ['atype', 'avol', 'aload', 'abtu', 'asets', 'year'],
   kitchen:    ['atype', 'avol', 'apower', 'year'],
   monitor:    ['scr', 'res', 'hz', 'touch', 'panel', 'year'],
   component:  ['year'],
@@ -1117,6 +1120,9 @@ const GROUPS = [
     ['f.appliance_type', p => p.appliance?.type && t('appliance.' + p.appliance.type)],
     ['f.appliance_volume', p => p.appliance?.volume && new Intl.NumberFormat(st.lang).format(p.appliance.volume) + ' ' + t('appliance.litre')],
     ['f.appliance_power', p => p.appliance?.power && money(p.appliance.power) + ' ' + u('w')],
+    ['f.appliance_load', p => p.appliance?.load && new Intl.NumberFormat(st.lang).format(p.appliance.load) + ' ' + u('kg')],
+    ['f.appliance_btu', p => p.appliance?.btu && money(p.appliance.btu) + ' BTU'],
+    ['f.appliance_settings', p => p.appliance?.settings && p.appliance.settings + ' ' + x('setsU')],
     ['f.appliance_temperature', p => p.appliance?.temperature],
     ['f.appliance_programs', p => p.appliance?.programs],
     ['f.appliance_control', p => p.appliance?.control && t('appliance.control.' + p.appliance.control)],
