@@ -61,6 +61,12 @@ assert.equal(await read('/en/'), 'fourth', 'HTML always checks for current bundl
 assert.equal(await read('/data/site-app.js?v=invalid'), 'fourth');
 revision = 'fifth';
 assert.equal(await read('/data/site-app.js?v=invalid'), 'fifth', 'only valid content-hash versions are immutable');
+const style = '/data/site-ui.123456abcd.css?v=123456abcd';
+assert.equal(await read(style), 'fifth');
+revision = 'style-update';
+assert.equal(await read(style), 'fifth', 'fingerprinted styles reuse the local cache');
+assert.equal(await read('/data/site-ui.abcdef1234.css?v=abcdef1234'), 'style-update', 'a new stylesheet pathname cannot reuse the previous design');
+revision = 'fifth';
 failWrites = true;
 assert.equal(await read('/data/site-app.js?v=555555aaaa'), 'fifth', 'storage exhaustion cannot discard a successful asset download');
 failWrites = false; failRead = true;

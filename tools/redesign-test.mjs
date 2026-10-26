@@ -28,7 +28,9 @@ for(const [file,lang]of[['index.html','hy'],['en/index.html','en'],['ru/index.ht
  const html=fs.readFileSync(file,'utf8');
  assert.ok(html.includes('data-prerender="'+lang+'"'),file+' is interactive/prerendered');
  assert.ok(html.includes('class="bx-filter-sidebar"'),file+' reserves sidebar before hydration');
- assert.ok(html.includes('/data/site-ui.css?v='),file+' uses shared versioned CSS');
+ const stylePath=html.split('href="/data/site-ui.')[1]?.split('"')[0];
+ assert.match(stylePath||'',/^[a-f0-9]{10}[.]css[?]v=[a-f0-9]{10}$/,file+' gives changed styles a new pathname, even when a CDN ignores query strings');
+ assert.equal(fs.readFileSync('data/site-ui.'+stylePath.split('?')[0],'utf8'),fs.readFileSync('data/site-ui.css','utf8'),file+' referenced CSS matches generated design');
  const preload=html.match(/<link[^>]*rel="preload"[^>]*imagesrcset="([^"]+)"/);
  assert.ok(preload,file+' preloads responsive hero');
  assert.ok(preload[1].split(',').every(v=>v.trim().startsWith('/images/')),file+' preload paths resolve before locale base element');

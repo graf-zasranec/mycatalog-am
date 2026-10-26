@@ -889,7 +889,12 @@ const crumbs = list => ({ '@context': 'https://schema.org', '@type': 'Breadcrumb
 const interactiveHome = build({ inline: false, standalone: true });
 const productCSS = [...interactiveHome.split('</head>')[0].matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m => m[1]).join('\n');
 fs.writeFileSync('data/site-ui.css', productCSS);
-const productCSSLink = `<link rel="stylesheet" href="/data/site-ui.css?v=${crypto.createHash('sha256').update(productCSS).digest('hex').slice(0, 10)}">`;
+// Some edge caches reuse a response across query versions. A changed pathname
+// prevents a new HTML release from receiving the previous design's stylesheet.
+const productCSSHash = crypto.createHash('sha256').update(productCSS).digest('hex').slice(0, 10);
+const productCSSFile = `data/site-ui.${productCSSHash}.css`;
+fs.writeFileSync(productCSSFile, productCSS);
+const productCSSLink = `<link rel="stylesheet" href="/${productCSSFile}?v=${productCSSHash}">`;
 // Reopening Home reuses the same content-hashed stylesheet as product pages.
 const sharedHome=interactiveHome.replace(/<style>[\s\S]*?<\/style>/g,'').replace('</head>',productCSSLink+'</head>');
 
