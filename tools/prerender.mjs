@@ -1,6 +1,13 @@
 // Render the initial catalogue with the same functions as the interactive app.
 // This keeps useful content visible before JavaScript loads and avoids a second layout.
 import fs from 'node:fs';
+// Native lazy-loading can fetch several screens ahead. Keep the first row
+// native, and activate more distant initial photos near the viewport instead.
+export function deferCataloguePhotos(html) {
+  let index = 0;
+  return html.replace(/<img class="pimg"[^>]*>/g, image => index++ < 4 ? image
+    : `<template data-card-photo>${image}</template><noscript data-card-photo>${image}</noscript>`);
+}
 export function prerender(data) {
   return renderer(data)(null, 'hy');
 }
@@ -24,7 +31,7 @@ function renderer(data) {
   const whole = fs.readFileSync('_app.js','utf8');
   const src = whole.slice(0,whole.lastIndexOf('\nrender();'));
   const vars = {...data,...stub};
-  return new Function(...Object.keys(vars),src + String.raw`;
+  const render = new Function(...Object.keys(vars),src + String.raw`;
     return (product, lang) => {
     st.lang = lang;
     paintChrome();
@@ -45,4 +52,9 @@ function renderer(data) {
       foot:document.querySelector('#foot').innerHTML};
     };
   `)(...Object.values(vars));
+  return (product, lang) => {
+    const result = render(product, lang);
+    if (!product) result.main = deferCataloguePhotos(result.main);
+    return result;
+  };
 }

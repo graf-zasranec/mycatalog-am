@@ -38,19 +38,41 @@ export const unpackSource = `const betterUnpack=${unpack.toString()};\n`;
 // filenames within its dictionary window instead of receiving distant maps.
 export function groupCatalogue(products, maps) {
   const ids = new Set(products.map(p => p.id));
+  const encode = (value, id) => {
+    if (typeof value === 'string') {
+      if (value.startsWith('images/cut/' + id)) return '\u0001' + value.slice(('images/cut/' + id).length);
+      if (value.startsWith('images/thumb/' + id)) return '\u0002' + value.slice(('images/thumb/' + id).length);
+      return /^[\u0000-\u0002]/.test(value) ? '\u0000' + value : value;
+    }
+    if (Array.isArray(value)) return value.map(v => encode(v, id));
+    return value && typeof value === 'object'
+      ? Object.fromEntries(Object.entries(value).map(([k,v]) => [k,encode(v,id)])) : value;
+  };
   return {
+    paths: 1,
     rows: products.map(p => [p, Object.fromEntries(Object.entries(maps)
-      .filter(([, map]) => Object.hasOwn(map, p.id)).map(([key, map]) => [key, map[p.id]]))]),
+      .filter(([, map]) => Object.hasOwn(map, p.id)).map(([key, map]) => [key, encode(map[p.id],p.id)]))]),
     extra: Object.fromEntries(Object.entries(maps).map(([key, map]) =>
       [key, Object.fromEntries(Object.entries(map).filter(([id]) => !ids.has(id)))]))
   };
 }
 
-export function restoreCatalogue({rows, extra}) {
+export function restoreCatalogue({rows, extra, paths}) {
+  const decode = (value, id) => {
+    if (typeof value === 'string') {
+      if (value[0] === '\u0000') return value.slice(1);
+      if (value[0] === '\u0001') return 'images/cut/' + id + value.slice(1);
+      if (value[0] === '\u0002') return 'images/thumb/' + id + value.slice(1);
+      return value;
+    }
+    if (Array.isArray(value)) return value.map(v => decode(v, id));
+    return value && typeof value === 'object'
+      ? Object.fromEntries(Object.entries(value).map(([k,v]) => [k,decode(v,id)])) : value;
+  };
   const maps = Object.fromEntries(Object.entries(extra).map(([key, map]) => [key, {...map}]));
   const DATA = rows.map(([product, assets]) => {
     for (const [key, value] of Object.entries(assets))
-      Object.defineProperty(maps[key], product.id, {value, enumerable:true, writable:true, configurable:true});
+      Object.defineProperty(maps[key], product.id, {value:paths ? decode(value,product.id) : value, enumerable:true, writable:true, configurable:true});
     return product;
   });
   return {DATA, ...maps};

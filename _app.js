@@ -685,7 +685,13 @@ function hydrateCardPhotos() {
   }).catch(()=>{});
 }
 window.matchMedia('(min-width: 801px)').addEventListener('change', e => {
-  if (e.matches) hydrateCardPhotos();
+  if (e.matches) {
+    if (document.documentElement.classList.contains('fs-open')) {
+      closeSheet(); bxCloseFilterFocus();
+      document.querySelector('.bx-filter-quick')?.focus({preventScroll:true});
+    }
+    hydrateCardPhotos();
+  }
 });
 let lazyDone = false;
 function loadLazy() {

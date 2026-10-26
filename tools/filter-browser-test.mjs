@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {spawn} from 'node:child_process';
-import {chromium,webkit} from 'playwright';
+import {chromium,firefox,webkit} from 'playwright';
 const port=8770,base=process.env.FILTER_BASE||`http://127.0.0.1:${port}`;
 const catalogue=new Map(JSON.parse(fs.readFileSync('data/phones.json','utf8')).map(p=>[p.id,p]));
 const server=process.env.FILTER_BASE?null:spawn(process.execPath,['serve.mjs',String(port)],{stdio:'ignore'});
@@ -10,7 +10,7 @@ if(server)await new Promise(r=>setTimeout(r,700));
 let checks=0;
 try{
 for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
- const browser=await ({chromium,webkit})[engine].launch();
+ const browser=await ({chromium,firefox,webkit})[engine].launch();
  try{for(const width of [390,1440])for(const lang of ['en','ru','hy']){
   const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce',hasTouch:width<800});
   await ctx.addInitScript(()=>Object.defineProperty(navigator,'doNotTrack',{get:()=> '1'}));

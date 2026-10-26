@@ -36,3 +36,12 @@ jobs:
           PW: ${{ github.workspace }}/node_modules/playwright
           PW_ENGINES: chromium,firefox,webkit
         run: node tools/browser-check.mjs
+      - name: Check image loading, responsive controls and filters in all browsers
+        env:
+          IMAGE_ENGINES: chromium,firefox,webkit
+          RESPONSIVE_ENGINES: chromium,firefox,webkit
+          FILTER_ENGINES: chromium,firefox,webkit
+        run: |
+          node tools/image-loading-browser-test.mjs
+          node tools/responsive-interaction-test.mjs
+          node tools/filter-browser-test.mjs

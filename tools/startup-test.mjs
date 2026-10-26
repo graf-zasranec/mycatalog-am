@@ -6,7 +6,7 @@ import vm from 'node:vm';
 // gaining working controls. Exercise the actual boot script with decode pending.
 const appended = [];
 const priorities = [];
-const main = { dataset: { prerenderProduct: 'honor-x8c' } };
+const main = { dataset: { prerenderProduct: 'honor-x8c' }, querySelectorAll:()=>[] };
 const boot = {
   document: {
     currentScript: { dataset: { src: 'products.js prices.js app.js' } },

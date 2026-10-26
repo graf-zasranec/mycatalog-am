@@ -1541,6 +1541,8 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
 #results :is(h1,h2)>.bx-category-icon{display:none}
 /* Compact mobile cards use the product page for colour selection. */
 @media(max-width:800px){.pcard .cdots{display:none}}
+/* Two readable product columns beside the filters on portrait tablets. */
+@media(min-width:801px) and (max-width:1000px){#gridbox.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 </style>
 
