@@ -30,3 +30,10 @@ const {existingConfiguration}=await import('./appzone.mjs');
 assert.equal(existingConfiguration({category:'phone',variants:[{ram:12,storage:256}]},{ram:12,storage:128}),false);
 assert.equal(existingConfiguration({category:'phone',variants:[{ram:12,storage:256}]},{ram:12,storage:256}),true);
 
+
+const laptopProduct={category:'laptop',brand:'HP',variants:[{ram:16,storage:1024}]};
+const changedCpu={...rows[0],color:null,ram:16,storage:1024,configSpecs:{chipset:{name:'AMD Ryzen AI 9 365'}}};
+assert.equal(reviewAppzoneOffer(changedCpu,laptopProduct,{id:'hp',cpu:'AMD Ryzen AI 7 350'}),null,'A saved review must not replace a changed current processor');
+const currentCpu={...changedCpu,configSpecs:{chipset:{name:'AMD Ryzen AI 7 350'}}};
+assert.equal(reviewAppzoneOffer(currentCpu,laptopProduct,{id:'hp',cpu:'AMD Ryzen AI 7 350'}).cpu,'AMD Ryzen AI 7 350');
+console.log('APPZONE_CPU_REVIEW_PASS: current merchant processor conflicts rejected');

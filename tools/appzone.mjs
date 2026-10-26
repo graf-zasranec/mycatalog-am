@@ -64,7 +64,12 @@ export function reviewAppzoneOffer(offer,product,review) {
   if(review.storage!=null)o.storage=review.storage;
   if(review.ram!=null)o.ram=review.ram;
   if(review.size!=null)o.size=review.size;
-  if(review.cpu){o.configSpecs ||= {};o.configSpecs.chipset={name:review.cpu};}
+  if(review.cpu){
+    const current=o.configSpecs?.chipset?.name;
+    const normalized=value=>String(cpu(value)||value).toLowerCase().replace(/[^a-z0-9]/g,'');
+    if(current&&normalized(current)!==normalized(review.cpu))return null;
+    o.configSpecs={...o.configSpecs,chipset:{name:current||review.cpu}};
+  }
   if(o.size!=null&&product.variants?.some(v=>v.size===Math.floor(o.size)))o.size=Math.floor(o.size);
   if(o.ram==null&&o.storage!=null){const ram=[...new Set((product.variants||[]).filter(v=>v.storage===o.storage&&(v.size==null||o.size==null||v.size===o.size)).map(v=>v.ram).filter(v=>v!=null))];if(ram.length===1){o.ram=ram[0];o.ramFromCatalog=true;}}
   if(review.cell!=null)o.cell=review.cell;

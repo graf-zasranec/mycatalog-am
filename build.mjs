@@ -828,11 +828,15 @@ const specRows = (p, l) => {
     [t.sk[3], w && `${w} ${t.g}`],
     [t.sk[4], p.released],
     [({hy:'Գրաֆիկա',ru:'Видеокарта',en:'Graphics'})[l], p.category === 'laptop' && (p.graphics || {}).name],
-    ...(['type', 'volume', 'power', 'temperature', 'programs', 'control'].map(key => {
-      const a = p.appliance || {}, v = a[key];
+    ...(['type', 'volume', 'power', 'load', 'btu', 'settings', 'wet_dry', 'power_range', 'power_source', 'batteries', 'speeds', 'temperature', 'programs', 'control'].map(key => {
+      const a = p.appliance || {}, v = a[key === 'power_source' ? 'powerSource' : key === 'power_range' ? 'powerRange' : key === 'wet_dry' ? 'wetDry' : key];
       const value = key === 'type' ? STR[l]['appliance.' + v]
         : key === 'control' ? STR[l]['appliance.control.' + v]
-        : key === 'volume' ? v && `${new Intl.NumberFormat(l).format(v)} ${STR[l]['appliance.litre']}`
+        : key === 'volume' ? v ? `${new Intl.NumberFormat(l).format(v)} ${STR[l]['appliance.litre']}` : Object.entries(a.volumeByVariant || {}).map(([model,volume]) => `${model}: ${new Intl.NumberFormat(l).format(volume)} ${STR[l]['appliance.litre']}`).join(' / ')
+        : key === 'wet_dry' ? v == null ? null : STR[l][v ? 'common.yes' : 'common.no']
+        : key === 'power_source' ? STR[l]['appliance.power_source.' + v]
+        : key === 'load' ? v && `${v} ${({hy:'կգ',ru:'кг',en:'kg'})[l]}`
+        : key === 'btu' ? v && `${v} BTU`
         : key === 'power' ? v && `${v} ${({hy:'Վտ',ru:'Вт',en:'W'})[l]}` : v;
       return [STR[l]['f.appliance_' + key], value];
     })),

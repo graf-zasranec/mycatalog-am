@@ -1134,8 +1134,13 @@ const GROUPS = [
   ]],
   ['sec.appliance', [
     ['f.appliance_type', p => p.appliance?.type && t('appliance.' + p.appliance.type)],
-    ['f.appliance_volume', p => p.appliance?.volume && new Intl.NumberFormat(st.lang).format(p.appliance.volume) + ' ' + t('appliance.litre')],
+    ['f.appliance_volume', p => p.appliance?.volume ? new Intl.NumberFormat(st.lang).format(p.appliance.volume) + ' ' + t('appliance.litre') : Object.entries(p.appliance?.volumeByVariant || {}).map(([model,volume]) => model + ': ' + new Intl.NumberFormat(st.lang).format(volume) + ' ' + t('appliance.litre')).join(' / ')],
     ['f.appliance_power', p => p.appliance?.power && money(p.appliance.power) + ' ' + u('w')],
+    ['f.appliance_power_range', p => p.appliance?.powerRange],
+    ['f.appliance_power_source', p => p.appliance?.powerSource && t('appliance.power_source.' + p.appliance.powerSource)],
+    ['f.appliance_wet_dry', p => p.appliance?.wetDry == null ? null : p.appliance.wetDry ? t('common.yes') : t('common.no')],
+    ['f.appliance_batteries', p => p.appliance?.batteries],
+    ['f.appliance_speeds', p => p.appliance?.speeds],
     ['f.appliance_load', p => p.appliance?.load && new Intl.NumberFormat(st.lang).format(p.appliance.load) + ' ' + u('kg')],
     ['f.appliance_btu', p => p.appliance?.btu && money(p.appliance.btu) + ' BTU'],
     ['f.appliance_settings', p => p.appliance?.settings && p.appliance.settings + ' ' + x('setsU')],
@@ -1235,6 +1240,10 @@ const GROUPS = [
 // certain are marked as not certain. A row with no entry here has nothing to be unsure about.
 const FIELD_OF = {
   'f.appliance_type': 'appliance.type', 'f.appliance_volume': 'appliance.volume',
+  'f.appliance_wet_dry': 'appliance.wetDry',
+  'f.appliance_power_range': 'appliance.powerRange',
+  'f.appliance_power_source': 'appliance.powerSource', 'f.appliance_batteries': 'appliance.batteries', 'f.appliance_speeds': 'appliance.speeds',
+  'f.appliance_load': 'appliance.load', 'f.appliance_btu': 'appliance.btu', 'f.appliance_settings': 'appliance.settings',
   'f.appliance_power': 'appliance.power', 'f.appliance_temperature': 'appliance.temperature',
   'f.appliance_programs': 'appliance.programs', 'f.appliance_control': 'appliance.control',
   'f.screen_size': 'display.size', 'f.screen_type': 'display.type', 'f.resolution': 'display.resolution',

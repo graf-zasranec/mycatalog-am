@@ -103132,7 +103132,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "nose_trimmer"
+      "type": "nose_trimmer",
+      "wetDry": true,
+      "powerSource": "battery",
+      "batteries": "1 × AA"
     },
     "battery": {},
     "colors": [
@@ -103140,7 +103143,9 @@
     ],
     "summaryEn": "Philips Nose Trimmer Series 1000 nose and ear trimmer, washable.",
     "sources": [
-      "https://vlv.am/en/Product/18599"
+      "https://vlv.am/en/Product/18599",
+      "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+      "https://www.documents.philips.com/assets/20220424/dad5bbf30d92472c9d84ae81006bd4ae.pdf"
     ],
     "unsure": [
       "popularity",
@@ -103154,7 +103159,10 @@
         "storage": null,
         "priceAmd": 5900
       }
-    ]
+    ],
+    "body": {
+      "ip": "IPX7"
+    }
   },
   {
     "id": "philips-nt1650-16",
@@ -103171,7 +103179,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "nose_trimmer"
+      "type": "nose_trimmer",
+      "powerSource": "battery",
+      "batteries": "1 × AA"
     },
     "battery": {},
     "colors": [
@@ -103179,7 +103189,8 @@
     ],
     "summaryEn": "Philips Nose Trimmer Series 1000 nose and ear trimmer, washable.",
     "sources": [
-      "https://vlv.am/en/Product/26438"
+      "https://vlv.am/en/Product/26438",
+      "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf"
     ],
     "unsure": [
       "popularity",
@@ -103193,7 +103204,10 @@
         "storage": null,
         "priceAmd": 11900
       }
-    ]
+    ],
+    "body": {
+      "ip": "IPX7"
+    }
   },
   {
     "id": "philips-nt3650-16",
@@ -103210,7 +103224,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "nose_trimmer"
+      "type": "nose_trimmer",
+      "powerSource": "battery",
+      "batteries": "AA"
     },
     "battery": {},
     "colors": [
@@ -103218,7 +103234,8 @@
     ],
     "summaryEn": "Philips Nose Trimmer Series 3000 nose and ear trimmer, washable.",
     "sources": [
-      "https://vlv.am/en/Product/15662"
+      "https://vlv.am/en/Product/15662",
+      "https://www.philips.com.ph/c-m-pe/face-stylers-and-grooming-kits/detail-and-nose-trimmers/all"
     ],
     "unsure": [
       "popularity",
@@ -103516,12 +103533,16 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "powerRange": "60–65 W",
+      "temperature": "130–200 °C"
     },
     "battery": {},
     "summaryEn": "Philips hair curler BHB868/00.",
     "sources": [
-      "https://likemobile.am/en/philips-bhb86800"
+      "https://likemobile.am/en/philips-bhb86800",
+      "https://www.documents.philips.com/assets/20220415/d5a07f8f373f48c19c83ae78009b3132.pdf",
+      "https://www.documents.philips.com/assets/20220423/db9a7a096f8a4dbb973cae8000538002.pdf"
     ],
     "unsure": [
       "popularity"
@@ -103551,12 +103572,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_curler",
-      "temperature": "130-210˚С"
+      "temperature": "130-210˚С",
+      "power": 42
     },
     "battery": {},
     "summaryEn": "Philips hair curler BHB872/00.",
     "sources": [
-      "https://likemobile.am/en/philips-bhb87200"
+      "https://likemobile.am/en/philips-bhb87200",
+      "https://www.jarcomputers.com/images/custom/docs/ea1174ab-2e43-4970-8509-b1afc3836722-162523743826.pdf"
     ],
     "unsure": [
       "popularity"
@@ -103585,12 +103608,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "powerRange": "32–34 W",
+      "temperature": "170 / 190 / 210 °C"
     },
     "battery": {},
     "summaryEn": "Philips hair curler BHB876/00.",
     "sources": [
-      "https://vlv.am/en/Product/12846"
+      "https://vlv.am/en/Product/12846",
+      "https://media.dm-static.com/images/v1748857748/products/pim/3081382_korisnicki_prirucnik/Korisnicki_prirucnik_BHB876_i_vodic_za_brzi_pocetak.pdf"
     ],
     "unsure": [
       "popularity"
@@ -103660,12 +103686,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "powerRange": "2100–2300 W"
     },
     "battery": {},
     "summaryEn": "Philips hair dryer HP8281/00.",
     "sources": [
-      "https://likemobile.am/en/fen-philips-hp828100"
+      "https://likemobile.am/en/fen-philips-hp828100",
+      "https://www.documents.philips.com/assets/20220616/8739605f0eb243ddae73aeb6012147a1.pdf"
     ],
     "unsure": [
       "popularity"
@@ -103772,12 +103800,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "210˚C"
+      "temperature": "210˚C",
+      "power": 35
     },
     "battery": {},
     "summaryEn": "Philips hair styler BHH811/00.",
     "sources": [
-      "https://likemobile.am/en/philips-bhh81100"
+      "https://likemobile.am/en/philips-bhh81100",
+      "https://api.tehnoteka.rs/uploads/2023/04/uputstvo-za-upotrebu-philips-stajler-za-kosu-bhh811-00-644cd0a4e8551.pdf"
     ],
     "unsure": [
       "popularity",
@@ -103847,13 +103877,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "220 °C"
+      "temperature": "180 / 220 °C"
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS375/00.",
     "sources": [
       "https://vlv.am/en/Product/11956",
-      "https://likemobile.am/en/philips-bhs37500"
+      "https://likemobile.am/en/philips-bhs37500",
+      "https://www.documents.philips.com/assets/20220605/0b1b183314454c93a132aeab007cb495.pdf"
     ],
     "unsure": [
       "popularity"
@@ -103924,13 +103955,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "160–230 °C"
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS378/00.",
     "sources": [
       "https://vlv.am/en/Product/13503",
-      "https://likemobile.am/en/philips-bhs37800"
+      "https://likemobile.am/en/philips-bhs37800",
+      "https://www.documents.philips.com/assets/20220605/88ca650e9a204061b939aeab007f334f.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104117,12 +104150,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "230°C"
+      "temperature": "230°C",
+      "powerRange": "50–53 W"
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS742/00.",
     "sources": [
-      "https://vlv.am/en/Product/30681"
+      "https://vlv.am/en/Product/30681",
+      "https://s3.zoommer.ge/site/manual/philips-hair-iron-bhs752-00.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104152,12 +104187,15 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "102-230°C"
+      "temperature": "120–230 °C",
+      "powerRange": "50–53 W"
     },
     "battery": {},
     "summaryEn": "Philips hair straightener BHS752/00.",
     "sources": [
-      "https://vlv.am/en/Product/27665"
+      "https://vlv.am/en/Product/27665",
+      "https://s3.zoommer.ge/site/manual/philips-hair-iron-bhs752-00.pdf",
+      "https://www.philips.co.uk/c-p/BHS752_00/7000-series-straightener/overview?reviews-page=22"
     ],
     "unsure": [
       "popularity"
@@ -104189,12 +104227,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 2
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE225/00.",
     "sources": [
-      "https://likemobile.am/en/epilator-philips-bre22500"
+      "https://likemobile.am/en/epilator-philips-bre22500",
+      "https://www.documents.philips.com/assets/20220609/c8a310edc6244b7ea383aeaf008d7c32.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104223,13 +104264,16 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 1
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE227/00.",
     "sources": [
       "https://vlv.am/en/Product/38834",
-      "https://likemobile.am/en/epilator-philips-bre22700"
+      "https://likemobile.am/en/epilator-philips-bre22700",
+      "https://www.documents.philips.com/assets/20250507/75351b9da89749278fefb2d600bed79e.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104261,13 +104305,16 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 1
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE228/00.",
     "sources": [
       "https://vlv.am/en/Product/38835",
-      "https://likemobile.am/en/epilator-philips-bre22800"
+      "https://likemobile.am/en/epilator-philips-bre22800",
+      "https://www.philips.com.sg/shop/SG_Passion/personal-care/hair-removal/epilator-series-2000-corded-epilator/p/BRE228_00"
     ],
     "unsure": [
       "popularity"
@@ -104300,12 +104347,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 2
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE235/00.",
     "sources": [
-      "https://likemobile.am/en/epilator-philips-bre235"
+      "https://likemobile.am/en/epilator-philips-bre235",
+      "https://www.documents.philips.com/assets/20240703/00fc4242d7c844bcb3fdb1a200bba23d.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104334,12 +104384,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 2
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE247/00.",
     "sources": [
-      "https://vlv.am/en/Product/38832"
+      "https://vlv.am/en/Product/38832",
+      "https://www.documents.philips.com/assets/20250407/238137e6fa1a4c709f72b2b8012d985e.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104371,12 +104424,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 2
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE257/00.",
     "sources": [
-      "https://vlv.am/en/Product/38831"
+      "https://vlv.am/en/Product/38831",
+      "https://www.documents.philips.com/assets/20250407/e092d6762c634c55827eb2b8012d998c.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104408,12 +104464,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "mains",
+      "speeds": 2
     },
     "battery": {},
     "summaryEn": "Philips epilator BRE285/00.",
     "sources": [
-      "https://likemobile.am/en/epilator-philips-bre28500"
+      "https://likemobile.am/en/epilator-philips-bre28500",
+      "https://www.documents.philips.com/assets/20220602/f2828ca92f5a424db57faea800014071.pdf"
     ],
     "unsure": [
       "popularity"
@@ -104520,12 +104579,17 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "epilator"
+      "type": "epilator",
+      "powerSource": "rechargeable"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min",
+      "chargeTime": "3 h"
+    },
     "summaryEn": "Philips epilator BRE711/00.",
     "sources": [
-      "https://vlv.am/en/Product/46720"
+      "https://vlv.am/en/Product/46720",
+      "https://www.documents.philips.com/assets/20251216/4379d07e58b8452f9e8db3b500ed866c.pdf"
     ],
     "unsure": [
       "popularity"
@@ -105259,12 +105323,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "toothbrush"
+      "type": "toothbrush",
+      "powerSource": "rechargeable",
+      "batteries": "Li-ion"
     },
     "battery": {},
     "summaryEn": "Philips Sonicare Electric Toothbrush HX6322/04.",
     "sources": [
-      "https://vlv.am/en/Product/12077"
+      "https://vlv.am/en/Product/12077",
+      "https://www.philips.com/c-p/HX6322_04/for-kids-sonic-electric-toothbrush"
     ],
     "unsure": [
       "popularity"
@@ -105509,12 +105576,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "water_flosser"
+      "type": "water_flosser",
+      "programs": 4
     },
     "battery": {},
     "summaryEn": "Philips Sonicare Power Flosser HX3911/40.",
     "sources": [
-      "https://vlv.am/en/Product/26446"
+      "https://vlv.am/en/Product/26446",
+      "https://www.documents.philips.com/assets/20201027/9733f0a813c34421b67fac6100a8b166.pdf"
     ],
     "unsure": [
       "popularity"
@@ -106301,7 +106370,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "iron"
+      "type": "iron",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "Philips steam iron DST2020/30.",
@@ -106775,12 +106845,16 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 27,
+      "area": "78 m²",
+      "noise": "18–50 dB"
     },
     "battery": {},
     "summaryEn": "Philips air purifier AC1711/90.",
     "sources": [
-      "https://www.zigzag.am/am/philips-ac1711-90.html"
+      "https://www.zigzag.am/am/philips-ac1711-90.html",
+      "https://www.documents.philips.com/assets/20220622/c1faf8ba6cfd4aa79cc9aebc01461413.pdf"
     ],
     "unsure": [
       "popularity",
@@ -106794,7 +106868,10 @@
         "storage": null,
         "priceAmd": 137000
       }
-    ]
+    ],
+    "body": {
+      "weight": 4100
+    }
   },
   {
     "id": "philips-amf765-30",
@@ -106883,12 +106960,17 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 19.6,
+      "volume": 3,
+      "area": "38 m²",
+      "noise": "19–21 dB(A)"
     },
     "battery": {},
     "summaryEn": "Philips humidifier HU1509/00.",
     "sources": [
-      "https://www.zigzag.am/am/philips-hu1509-00-air-humidifiers.html"
+      "https://www.zigzag.am/am/philips-hu1509-00-air-humidifiers.html",
+      "https://www.philips.ae/c-p/HU1509_00/air-humidifier"
     ],
     "unsure": [
       "popularity"
@@ -110768,12 +110850,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "temperature": "180 / 200 / 235 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST251PE.",
     "sources": [
-      "https://eldorado.am/en/hair-straightener-babyliss-st251pe"
+      "https://eldorado.am/en/hair-straightener-babyliss-st251pe",
+      "https://www.babyliss.com/pl-pl/denim-luxe-styler-ST251PE.html"
     ],
     "unsure": [
       "popularity"
@@ -111667,12 +111751,13 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "210 °C"
+      "temperature": "170–210 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST596E.",
     "sources": [
-      "https://eldorado.am/en/babyliss-st596e"
+      "https://eldorado.am/en/babyliss-st596e",
+      "https://www.babyliss.com/nl-nl/steam-luxe-styler-ST596E.html"
     ],
     "unsure": [
       "popularity"
@@ -113022,7 +113107,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "food_processor"
+      "type": "food_processor",
+      "power": 500,
+      "speeds": 1
     },
     "battery": {},
     "summaryEn": "Kenwood Food Processor FDM100BA.",
@@ -114257,12 +114344,14 @@
       "type": "humidifier",
       "volume": 3.8,
       "noise": "44 dB",
-      "area": "30 m²/75 m²"
+      "area": "30 m²",
+      "powerRange": "2.2–5.7 W"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier E200.",
     "sources": [
-      "https://eldorado.am/en/boneco-e200"
+      "https://eldorado.am/en/boneco-e200",
+      "https://www.boneco.com/media/2505/download/Manual_E200_Humidifier_Evaporator_BONECO_all_languages.pdf?v=1"
     ],
     "unsure": [
       "popularity"
@@ -114404,12 +114493,17 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 11.6,
+      "volume": 4.5,
+      "area": "50 m²",
+      "noise": "28–51 dB(A)"
     },
     "battery": {},
     "summaryEn": "Boneco Humidifier H300.",
     "sources": [
-      "https://eldorado.am/en/boneco-h300"
+      "https://eldorado.am/en/boneco-h300",
+      "https://www.boneco.com/products/h300?variant=55623676330370"
     ],
     "unsure": [
       "popularity"
@@ -114422,7 +114516,10 @@
         "storage": null,
         "priceAmd": 149900
       }
-    ]
+    ],
+    "body": {
+      "weight": 5300
+    }
   },
   {
     "id": "boneco-w400",
@@ -114864,12 +114961,13 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_curler",
-      "temperature": "3"
+      "temperature": "190 / 210 / 230 °C"
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C1700E.",
     "sources": [
-      "https://eldorado.am/en/surling-iron-babyliss-c1700e"
+      "https://eldorado.am/en/surling-iron-babyliss-c1700e",
+      "https://www.babyliss.com/on/demandware.static/-/Sites-ml-babyliss-Library/fr_BE/v1753703558956/information-booklets/C1700E_IB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -116817,7 +116915,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 450,
+      "volume": 1.6,
+      "speeds": 2
     },
     "battery": {},
     "summaryEn": "Kenwood Blender BLP300WH12.",
@@ -116923,13 +117024,15 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 6
     },
     "battery": {},
     "summaryEn": "Midea Washing Machine MF01610US40.",
     "sources": [
       "https://redstore.am/en/product/avtvomat-lvacqi-meqena-midea-mf01610us40w",
-      "https://likemobile.am/en/washing-machine-midea-mf01610us40t"
+      "https://likemobile.am/en/washing-machine-midea-mf01610us40t",
+      "https://mideaarmenia.am/midea-mf01610us40-w"
     ],
     "unsure": [
       "popularity",
@@ -117282,12 +117385,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "freezer"
+      "type": "freezer",
+      "volume": 290
     },
     "battery": {},
     "summaryEn": "Midea Chest Freezer MDRC405FZF01GL.",
     "sources": [
-      "https://redstore.am/en/product/sarcaran-midea-mdrc405fzf01gl"
+      "https://redstore.am/en/product/sarcaran-midea-mdrc405fzf01gl",
+      "https://element.am/en/product/midea-freezer-mdrc405fzf01gl"
     ],
     "unsure": [
       "popularity"
@@ -117316,7 +117421,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "dishwasher"
+      "type": "dishwasher",
+      "settings": 10
     },
     "battery": {},
     "summaryEn": "Midea Dishwasher MFD45S110S.",
@@ -117822,12 +117928,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 42650
     },
     "battery": {},
     "summaryEn": "Hisense Air Conditioner AMW-42U4SE-F15E.",
     "sources": [
-      "https://vlv.am/en/Product/3890"
+      "https://vlv.am/en/Product/3890",
+      "https://docs.breez.ru/catalog/hisense/hi-vnutrennie-kanal-free-match-dc-inverter/hi-vnutrennie-kanal-free-match-dc-inverter-service-manual-or.pdf"
     ],
     "unsure": [
       "popularity"
@@ -118234,12 +118342,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 27978
     },
     "battery": {},
     "summaryEn": "Hisense Air Conditioner AMW4-28U4SAD1/R410.",
     "sources": [
-      "https://vlv.am/en/Product/5434"
+      "https://vlv.am/en/Product/5434",
+      "https://docs.breez.ru/catalog/hisense/hi-vnutrennie-kanal-free-match-dc-inverter/hi-vnutrennie-kanal-free-match-dc-inverter-service-manual-or.pdf"
     ],
     "unsure": [
       "popularity"
@@ -122297,12 +122407,14 @@
     "appliance": {
       "type": "air_conditioner",
       "power": 1420,
-      "area": "42 m²"
+      "area": "42 m²",
+      "btu": 15704
     },
     "battery": {},
     "summaryEn": "Toshiba Air Conditioner RAS-16J2AVRG/KVRG-E: energy class A++.",
     "sources": [
-      "https://vlv.am/en/Product/26967"
+      "https://vlv.am/en/Product/26967",
+      "https://www.toshiba-aircon.ro/pdf/catalog-rezidential-toshiba-airc-on-2020.pdf"
     ],
     "unsure": [
       "popularity"
@@ -124942,12 +125054,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_conditioner",
-      "noise": "64 dB"
+      "noise": "64 dB",
+      "btu": 27300
     },
     "battery": {},
     "summaryEn": "Hisense Air Conditioner AMW4-27U4RJC/R32.",
     "sources": [
-      "https://vlv.am/en/Product/32586"
+      "https://vlv.am/en/Product/32586",
+      "https://hisense-klima.hu/wp-content/uploads/2025/07/Hisense-Hi-Multi-catalog-2025-web.pdf"
     ],
     "unsure": [
       "popularity"
@@ -126550,12 +126664,14 @@
     "appliance": {
       "type": "air_conditioner",
       "power": 3610,
-      "area": "120 m²"
+      "area": "120 m²",
+      "btu": 42650
     },
     "battery": {},
     "summaryEn": "Hisense Air Conditioner AMW5-42U4RTA.",
     "sources": [
-      "https://vlv.am/en/Product/38459"
+      "https://vlv.am/en/Product/38459",
+      "https://www.hisense.es/wp-content/uploads/2021/04/Hisense-Fichas-AA-Multi5.pdf"
     ],
     "unsure": [
       "popularity"
@@ -129587,12 +129703,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "freezer"
+      "type": "freezer",
+      "volume": 382
     },
     "battery": {},
     "summaryEn": "Hisense Freezer FC-67DD4P.",
     "sources": [
-      "https://vlv.am/en/Product/42035"
+      "https://vlv.am/en/Product/42035",
+      "https://vlv.am/api/product-info/42035"
     ],
     "unsure": [
       "popularity"
@@ -134241,7 +134359,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 24000,
+      "power": 2500,
+      "noise": "47 dB"
     },
     "battery": {},
     "summaryEn": "Carrier Air Conditioner 42QHG024CS/38QHG024CS.",
@@ -134559,7 +134680,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 359
     },
     "battery": {},
     "summaryEn": "Toshiba Refrigerator GR-AG475UBZ-C.",
@@ -134628,7 +134750,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "37 dB"
+      "noise": "37 dB",
+      "volume": 367
     },
     "battery": {},
     "summaryEn": "Samsung Refrigerator RB37A5000SA/WT.",
@@ -134696,7 +134819,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 387
     },
     "battery": {},
     "summaryEn": "LG Refrigerator LBB509EQYW.",
@@ -134767,7 +134891,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "37 dB"
+      "noise": "37 dB",
+      "volume": 367
     },
     "battery": {},
     "summaryEn": "Samsung Refrigerator RB37A5491EL/W.",
@@ -134837,7 +134962,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 360
     },
     "battery": {},
     "summaryEn": "Electrolux Refrigerator RNT7ME34G1.",
@@ -134907,7 +135033,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "37 dB"
+      "noise": "37 dB",
+      "volume": 417
     },
     "battery": {},
     "summaryEn": "TCL Refrigerator P417BFB.",
@@ -134942,7 +135069,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "39 dB"
+      "noise": "39 dB",
+      "volume": 460
     },
     "battery": {},
     "summaryEn": "Samsung Refrigerator RT47CG6442S9WT.",
@@ -135189,7 +135317,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "37 dB"
+      "noise": "37 dB",
+      "volume": 524
     },
     "battery": {},
     "summaryEn": "Samsung Refrigerator RT53DG7B60S9WR.",
@@ -135259,7 +135388,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "35 dB"
+      "noise": "35 dB",
+      "volume": 521
     },
     "battery": {},
     "summaryEn": "TCL Refrigerator C521CDB.",
@@ -135399,7 +135529,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "40 dB"
+      "noise": "40 dB",
+      "volume": 505
     },
     "battery": {},
     "summaryEn": "Bosch Refrigerator KGN56CX30U.",
@@ -135433,7 +135564,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 366
     },
     "battery": {},
     "summaryEn": "Bosch Refrigerator KGN39LR3AR.",
@@ -135468,7 +135600,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "noise": "39 dB"
+      "noise": "39 dB",
+      "volume": 431
     },
     "battery": {},
     "summaryEn": "Samsung Refrigerator RF44A5002S9/WT.",
@@ -135576,7 +135709,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 573
     },
     "battery": {},
     "summaryEn": "Bosch Refrigerator KAN90VI20R.",
@@ -135650,7 +135784,10 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "dishwasher",
-      "power": 1180
+      "power": 1180,
+      "settings": 6,
+      "programs": 6,
+      "noise": "50 dB"
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher ESF2400OS.",
@@ -135686,7 +135823,8 @@
     "appliance": {
       "type": "dishwasher",
       "noise": "46 dB",
-      "programs": 8
+      "programs": 8,
+      "settings": 13
     },
     "battery": {},
     "summaryEn": "Hisense Dishwasher HS622E90X.",
@@ -135710,11 +135848,13 @@
     "id": "toshiba-dw-10f4-cis",
     "category": "largeappliance",
     "brand": "Toshiba",
-    "name": "Dishwasher DW-10F4-CIS",
+    "name": "Dishwasher DW-10F4(B)-CIS",
     "aliases": [
       "Toshiba DW-10F4-CIS",
       "TOSHIBA DW-10F4-CIS",
-      "DW-10F4-CIS"
+      "DW-10F4-CIS",
+      "DW-10F4(B)-CIS",
+      "Toshiba DW-10F4(B)-CIS"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -135726,7 +135866,7 @@
       "settings": 10
     },
     "battery": {},
-    "summaryEn": "Toshiba Dishwasher DW-10F4-CIS.",
+    "summaryEn": "Toshiba Dishwasher DW-10F4(B)-CIS.",
     "sources": [
       "https://eldorado.am/en/toshiba-dw-10f4-b-cis"
     ],
@@ -135759,7 +135899,8 @@
     "appliance": {
       "type": "dishwasher",
       "noise": "44 dB",
-      "programs": 8
+      "programs": 8,
+      "settings": 13
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher SEA94720SW.",
@@ -135794,7 +135935,9 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "dishwasher",
-      "noise": "46 dB"
+      "noise": "46 dB",
+      "settings": 9,
+      "programs": 8
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher SES42201SX.",
@@ -135828,7 +135971,10 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "dishwasher"
+      "type": "dishwasher",
+      "settings": 9,
+      "programs": 5,
+      "noise": "50 dB"
     },
     "battery": {},
     "summaryEn": "Bosch Dishwasher SPS25DW03R.",
@@ -135902,7 +136048,8 @@
       "type": "dishwasher",
       "power": 1950,
       "noise": "44 dB",
-      "programs": 8
+      "programs": 8,
+      "settings": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher ESM48310SW.",
@@ -135977,7 +136124,8 @@
       "type": "dishwasher",
       "power": 1950,
       "noise": "44 dB",
-      "programs": 8
+      "programs": 8,
+      "settings": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher ESM64831SX.",
@@ -136001,11 +136149,13 @@
     "id": "toshiba-dw-16f1-cis",
     "category": "largeappliance",
     "brand": "Toshiba",
-    "name": "Dishwasher DW-16F1-CIS",
+    "name": "Dishwasher DW-16F1(BS)-CIS",
     "aliases": [
       "Toshiba DW-16F1-CIS",
       "TOSHIBA DW-16F1-CIS",
-      "DW-16F1-CIS"
+      "DW-16F1-CIS",
+      "DW-16F1(BS)-CIS",
+      "Toshiba DW-16F1(BS)-CIS"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -136016,7 +136166,7 @@
       "settings": 16
     },
     "battery": {},
-    "summaryEn": "Toshiba Dishwasher DW-16F1-CIS.",
+    "summaryEn": "Toshiba Dishwasher DW-16F1(BS)-CIS.",
     "sources": [
       "https://eldorado.am/en/toshiba-dw-16f1-bs-cis"
     ],
@@ -136048,7 +136198,8 @@
     "appliance": {
       "type": "dishwasher",
       "noise": "41 dB",
-      "programs": 10
+      "programs": 10,
+      "settings": 14
     },
     "battery": {},
     "summaryEn": "LG Dishwasher DFB325HM.",
@@ -136192,7 +136343,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 7,
+      "programs": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Washing Machine EW6S4R27W.",
@@ -136226,7 +136379,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 7
     },
     "battery": {},
     "summaryEn": "Electrolux Washing Machine EWS6307BE.",
@@ -136297,7 +136451,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 6,
+      "programs": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Washing Machine EW6S3R26S.",
@@ -136513,7 +136669,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 7,
+      "programs": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Washing Machine EW6S4R27BX.",
@@ -137059,7 +137217,8 @@
     "appliance": {
       "type": "washing_machine",
       "noise": "42 dB",
-      "programs": 14
+      "programs": 14,
+      "load": 7
     },
     "battery": {},
     "summaryEn": "LG Washing Machine F2R3HYL6P.",
@@ -137314,7 +137473,8 @@
     "appliance": {
       "type": "washing_machine",
       "power": 1040,
-      "programs": 14
+      "programs": 14,
+      "load": 11
     },
     "battery": {},
     "summaryEn": "Samsung Washing Machine WW11BGA047TELP.",
@@ -137385,7 +137545,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "washing_machine",
-      "programs": 12
+      "programs": 12,
+      "load": 11
     },
     "battery": {},
     "summaryEn": "LG Washing Machine F4X5EYPY6.",
@@ -137421,7 +137582,8 @@
     "appliance": {
       "type": "washing_machine",
       "noise": "72 dB",
-      "programs": 14
+      "programs": 14,
+      "load": 9
     },
     "battery": {},
     "summaryEn": "Electrolux Washer-Dryer EW7W2492.",
@@ -137491,7 +137653,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 10,
+      "programs": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Washer-Dryer EW7WR361S.",
@@ -137598,7 +137762,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 10,
+      "programs": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Washing Machine EW9F1R61B.",
@@ -137776,7 +137942,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "washing_machine",
-      "noise": "54 dB"
+      "noise": "54 dB",
+      "load": 12
     },
     "battery": {},
     "summaryEn": "LG Washer-Dryer W4W8BVPKZHM.",
@@ -137812,7 +137979,8 @@
     "appliance": {
       "type": "dryer",
       "noise": "63 dB",
-      "programs": 15
+      "programs": 15,
+      "load": 9
     },
     "battery": {},
     "summaryEn": "Hisense Dryer DHQA90.",
@@ -137849,7 +138017,8 @@
       "type": "dryer",
       "power": 700,
       "noise": "66 dB",
-      "programs": 14
+      "programs": 14,
+      "load": 8
     },
     "battery": {},
     "summaryEn": "Electrolux Dryer EW6D18CWJE.",
@@ -137883,7 +138052,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "dryer"
+      "type": "dryer",
+      "load": 8,
+      "programs": 12
     },
     "battery": {},
     "summaryEn": "Electrolux Dryer EW6CR428W.",
@@ -137916,7 +138087,9 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "dryer"
+      "type": "dryer",
+      "load": 8,
+      "programs": 8
     },
     "battery": {},
     "summaryEn": "LG Dryer RH80T2SP7RM.",
@@ -138025,7 +138198,8 @@
     "appliance": {
       "type": "dryer",
       "power": 520,
-      "programs": 15
+      "programs": 15,
+      "load": 9
     },
     "battery": {},
     "summaryEn": "Samsung Dryer DV90BB5245ABLP.",
@@ -138060,7 +138234,8 @@
     "appliance": {
       "type": "dryer",
       "noise": "59 dB",
-      "programs": 14
+      "programs": 14,
+      "load": 9
     },
     "battery": {},
     "summaryEn": "LG Dryer RH90V5PVTN.",
@@ -138095,7 +138270,8 @@
     "appliance": {
       "type": "dryer",
       "noise": "60 dB",
-      "programs": 14
+      "programs": 14,
+      "load": 10
     },
     "battery": {},
     "summaryEn": "LG Dryer RH10V9PV2W.",
@@ -138169,7 +138345,11 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volumeByVariant": {
+        "LBB459EMYW": 341,
+        "LBB459EQYW": 344
+      }
     },
     "battery": {},
     "summaryEn": "LG Refrigerator LBB459.",
@@ -138215,7 +138395,8 @@
       "type": "dishwasher",
       "power": 1950,
       "noise": "44 dB",
-      "programs": 8
+      "programs": 8,
+      "settings": 13
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher ESA47210.",
@@ -138260,7 +138441,8 @@
     "appliance": {
       "type": "dishwasher",
       "noise": "44 dB",
-      "programs": 8
+      "programs": 8,
+      "settings": 14
     },
     "battery": {},
     "summaryEn": "Electrolux Dishwasher SEM94830.",
@@ -138417,12 +138599,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 344
     },
     "battery": {},
     "summaryEn": "LG Refrigerator GR-B459FQFW.",
     "sources": [
-      "https://eldorado.am/en/lg-gr-b459fqfw"
+      "https://eldorado.am/en/lg-gr-b459fqfw",
+      "https://www.lg.com/ae/refrigerators/lg-gr-b459fqfw"
     ],
     "unsure": [
       "popularity"
@@ -138453,12 +138637,14 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 387
     },
     "battery": {},
     "summaryEn": "LG Refrigerator GR-B509FMFW.",
     "sources": [
-      "https://eldorado.am/en/lg-gr-b509fmfw"
+      "https://eldorado.am/en/lg-gr-b509fmfw",
+      "https://www.lg.com/ae/refrigerators/lg-gr-b509fmfw"
     ],
     "unsure": [
       "popularity"

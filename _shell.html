@@ -1554,6 +1554,22 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
 @media(max-width:800px){.bx-deal-date{display:none}}
 @media(max-width:600px){.shell{padding-inline:16px}.bx-categories{margin-inline:-16px;padding-inline:16px}}
 
+
+/* Catalogue refinement: readable secondary labels and steady control spacing. */
+.ny.cur{color:var(--text);background:var(--good-soft)}
+.bx-category-count{color:var(--body)}
+.bx-category-choice:has(input:checked) .bx-category-count{color:var(--text)}
+@media(min-width:801px){
+ .bx-category-choice,.bx-filter-form :is(legend,.bx-field),.bx-check-grid label{font-size:13px}
+ .bx-filter-quick{font-size:13px;min-height:38px;padding:7px 12px}
+ .bx-price-inputs label,.bx-budgets button,.bx-flag,.bx-filter-actions button{font-size:13px}
+}
+@media(max-width:600px){
+ .bx-categories .bx-category:first-child{padding-left:5px}
+ .pcard h2{font-size:14px;line-height:1.4}
+ .pcard .pbody{padding:12px}
+}
+
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>

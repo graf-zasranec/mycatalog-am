@@ -3335,5 +3335,1075 @@
     ],
     "checked": "2026-10-25",
     "verified": "Exact factory24GB/1TB confirmed by HP sheet and corrected current AllSell H1/table; price480000AMD separately read from current retailer, in stock."
+  },
+  {
+    "id": "midea-mf01610us40",
+    "field": "appliance.load",
+    "value": 6,
+    "source": "https://mideaarmenia.am/midea-mf01610us40-w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Լվացքի քանակությունը (կգ): 6; corroborated by MF01610US40/T own table and manufacturer at 6 Kg. | MF01610US40/T Washing capacity (kg): 6 | MF01610US40/T Rated Washing Capacity 6 Kg; manufacturer programs15 conflicts retailer16, so no programs proposed.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "midea-mdrc405fzf01gl",
+    "field": "appliance.volume",
+    "value": 290,
+    "source": "https://element.am/en/product/midea-freezer-mdrc405fzf01gl",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Total capacity (l) 290; same exact model in supplier EPREL sheet Fiche_564489_EN.pdf: Total volume 290 l. | MDRC405FZF01GL Total volume 290 l; 4-star compartment290.0 l.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "midea-mfd45s110s",
+    "field": "appliance.settings",
+    "value": 10,
+    "source": "https://redstore.am/en/product/spasq-lvanalvou-meqena-midea-mfd45s110s",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (sets) 10",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-amw-42u4se-f15e",
+    "field": "appliance.btu",
+    "value": 42650,
+    "source": "https://docs.breez.ru/catalog/hisense/hi-vnutrennie-kanal-free-match-dc-inverter/hi-vnutrennie-kanal-free-match-dc-inverter-service-manual-or.pdf",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: PDF p19: AMW-42U4SE Cooling 12.5 kW, 42650 Btu/h. Manufacturer 2025 catalogue compatibility table p12 names AMW125U4SE+F15(E), bridging F15E branch box suffix. | PDF p19: AMW-42U4SE Cooling 12.5 kW, 42650 Btu/h. Manufacturer 2025 catalogue compatibility table p12 names AMW125U4SE+F15(E), bridging F15E branch box suffix. | p12 compatibility table AMW125U4SE+F15(E); factory AMW-42U4SE, nominal 12500 W.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-amw4-28u4sad1-r410",
+    "field": "appliance.btu",
+    "value": 27978,
+    "source": "https://docs.breez.ru/catalog/hisense/hi-vnutrennie-kanal-free-match-dc-inverter/hi-vnutrennie-kanal-free-match-dc-inverter-service-manual-or.pdf",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: PDF p13, fifth model column AMW4-28U4SAD1, R410A: Cooling 8.2 kW, 27978 Btu/h. Use visually inspected PDF, not old text extraction (which says 28000). | PDF p13, fifth model column AMW4-28U4SAD1, R410A: Cooling 8.2 kW, 27978 Btu/h. Use visually inspected PDF, not old text extraction (which says 28000).",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "toshiba-ras-16j2avrg-kvrg-e",
+    "field": "appliance.btu",
+    "value": 15704,
+    "source": "https://www.toshiba-aircon.ro/pdf/catalog-rezidential-toshiba-airc-on-2020.pdf",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: PDF p26 third model column RAS-16J2AVRG-E / RAS-B16J2KVRG-E: Cooling 4.6 kW, 15.704 BTU/h (dot is thousands separator). | PDF p26 third model column RAS-16J2AVRG-E / RAS-B16J2KVRG-E: Cooling 4.6 kW, 15.704 BTU/h (dot is thousands separator).",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-amw4-27u4rjc-r32",
+    "field": "appliance.btu",
+    "value": 27300,
+    "source": "https://hisense-klima.hu/wp-content/uploads/2025/07/Hisense-Hi-Multi-catalog-2025-web.pdf",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: PDF p12 left table: factory AMW4-27U4RJC, R32, nominal cooling capacity 8000 W. Converted 8000 × 3.412141633 = 27297.13 BTU/h, rounded to nearest 100 BTU/h (27300). This is a documented unit conversion, not a model-code inference. | PDF p12 left table: factory AMW4-27U4RJC, R32, nominal cooling capacity 8000 W. Converted 8000 × 3.412141633 = 27297.13 BTU/h, rounded to nearest 100 BTU/h (27300). This is a documented unit conversion, not a model-code inference.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-amw5-42u4rta",
+    "field": "appliance.btu",
+    "value": 42650,
+    "source": "https://www.hisense.es/wp-content/uploads/2021/04/Hisense-Fichas-AA-Multi5.pdf",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: PDF p1: AMW5-42U4RTA R32, Cooling 12.5 kW, 42650 Btu/h. | PDF p1: AMW5-42U4RTA R32, Cooling 12.5 kW, 42650 Btu/h.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-fc-67dd4p",
+    "field": "appliance.volume",
+    "value": 382,
+    "source": "https://vlv.am/api/product-info/42035",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Volume: 382 litr",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "carrier-42qhg024cs-38qhg024cs",
+    "field": "appliance.btu",
+    "value": 24000,
+    "source": "https://eldorado.am/en/carrier-42qhg024cs-38qhg024cs",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Air conditioner power (BTU): 24000; own full indoor/outdoor pair title.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "carrier-42qhg024cs-38qhg024cs",
+    "field": "appliance.power",
+    "value": 2500,
+    "source": "https://eldorado.am/en/carrier-42qhg024cs-38qhg024cs",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Air conditioner power (BTU): 24000; own full indoor/outdoor pair title.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "carrier-42qhg024cs-38qhg024cs",
+    "field": "appliance.noise",
+    "value": "47 dB",
+    "source": "https://eldorado.am/en/carrier-42qhg024cs-38qhg024cs",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Air conditioner power (BTU): 24000; own full indoor/outdoor pair title.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "toshiba-gr-ag475ubz-c",
+    "field": "appliance.volume",
+    "value": 359,
+    "source": "https://eldorado.am/en/toshiba-gr-ag475ubz-c-xb",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 359",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-rb37a5000sa-wt",
+    "field": "appliance.volume",
+    "value": 367,
+    "source": "https://eldorado.am/en/samsung-rb37a5000sa-wt",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 367",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-lbb509eqyw",
+    "field": "appliance.volume",
+    "value": 387,
+    "source": "https://eldorado.am/en/lg-lbb509eqyw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 387",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-rb37a5491el-w",
+    "field": "appliance.volume",
+    "value": 367,
+    "source": "https://eldorado.am/en/samsung-rb37a5491el-w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 367",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-rnt7me34g1",
+    "field": "appliance.volume",
+    "value": 360,
+    "source": "https://eldorado.am/en/electrolux-rnt7me34g1",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 360",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "tcl-p417bfb",
+    "field": "appliance.volume",
+    "value": 417,
+    "source": "https://eldorado.am/en/tcl-p417bfb",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Total refrigerator volume - 417 L Refrigerator volume - 276 L Freezer volume - 141 L Energy efficiency class - E Energy consumption - 0.98 kWh/day Cooling system - No Frost Compressor type - Inverter Climate class - SN/N/ST/T Noise level - 37 dB Control type - Electronic Display - LED Dimensions (W×D×H) - 703 × 670 × 1850 mm",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-rt47cg6442s9wt",
+    "field": "appliance.volume",
+    "value": 460,
+    "source": "https://eldorado.am/en/samsung-rt47cg6442s9wt",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 460",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-rt53dg7b60s9wr",
+    "field": "appliance.volume",
+    "value": 524,
+    "source": "https://eldorado.am/en/samsung-rt53dg7b60s9wr",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 524",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "tcl-c521cdb",
+    "field": "appliance.volume",
+    "value": 521,
+    "source": "https://eldorado.am/en/tcl-c521cdb",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Total refrigerator capacity - 521 L Refrigerator compartment capacity - 351 L Freezer compartment capacity - 170 L Defrosting system - No Frost Energy efficiency class - E Noise level - 35 dB Control type - electronic Number of shelves in the refrigerator compartment - 4 Shelf material - tempered glass Vegetable and fruit drawer - yes Dimensions (W×D×H) - 833 × 640 × 1900 mm",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "bosch-kgn56cx30u",
+    "field": "appliance.volume",
+    "value": 505,
+    "source": "https://eldorado.am/en/bosch-kgn56cx30u",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Refrigerator total volume - 505 l Useful fridge volume - 400 l Useful freezer volume - 105 l Number of shelves in the refrigerator compartment - 3 Number of freezer shelves - 3 Defrosting type - No Frost Energy saving class - A+ Noise level - 40 dB Shelf material - glass Freezing power - 18 kg/day Annual energy consumption - 414 kWh/year Dimensions - 193 x 80 x 70 cm",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "bosch-kgn39lr3ar",
+    "field": "appliance.volume",
+    "value": 366,
+    "source": "https://eldorado.am/en/bosch-kgn39lr3ar",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 366",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-rf44a5002s9-wt",
+    "field": "appliance.volume",
+    "value": 431,
+    "source": "https://eldorado.am/en/samsung-rf44a5002s9-wt",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 431",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "bosch-kan90vi20r",
+    "field": "appliance.volume",
+    "value": 573,
+    "source": "https://eldorado.am/en/bosch-kan90vi20r",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: The total volume (Liter): 573",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-esf2400os",
+    "field": "appliance.settings",
+    "value": 6,
+    "source": "https://eldorado.am/en/electrolux-esf2400os",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 6",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-esf2400os",
+    "field": "appliance.programs",
+    "value": 6,
+    "source": "https://eldorado.am/en/electrolux-esf2400os",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 6",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-esf2400os",
+    "field": "appliance.noise",
+    "value": "50 dB",
+    "source": "https://eldorado.am/en/electrolux-esf2400os",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 6",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-hs622e90x",
+    "field": "appliance.settings",
+    "value": 13,
+    "source": "https://eldorado.am/en/hisense-hs622e90x",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 13",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-sea94720sw",
+    "field": "appliance.settings",
+    "value": 13,
+    "source": "https://eldorado.am/en/electrolux-sea94720sw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 13",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ses42201sx",
+    "field": "appliance.settings",
+    "value": 9,
+    "source": "https://eldorado.am/en/electrolux-ses42201sx",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 9",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ses42201sx",
+    "field": "appliance.programs",
+    "value": 8,
+    "source": "https://eldorado.am/en/electrolux-ses42201sx",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 9",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "bosch-sps25dw03r",
+    "field": "appliance.settings",
+    "value": 9,
+    "source": "https://eldorado.am/en/catalog/product/view/id/5892/s/_bosch_sps25dw03r/category/99/",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 9",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "bosch-sps25dw03r",
+    "field": "appliance.programs",
+    "value": 5,
+    "source": "https://eldorado.am/en/catalog/product/view/id/5892/s/_bosch_sps25dw03r/category/99/",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 9",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "bosch-sps25dw03r",
+    "field": "appliance.noise",
+    "value": "50 dB",
+    "source": "https://eldorado.am/en/catalog/product/view/id/5892/s/_bosch_sps25dw03r/category/99/",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 9",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-esm48310sw",
+    "field": "appliance.settings",
+    "value": 14,
+    "source": "https://eldorado.am/en/dishwasher-electrolux-esm48310sw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 14",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-esm64831sx",
+    "field": "appliance.settings",
+    "value": 14,
+    "source": "https://eldorado.am/en/dishwasher-electrolux-esm64831sx",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 14",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-dfb325hm",
+    "field": "appliance.settings",
+    "value": 14,
+    "source": "https://eldorado.am/en/lg-dfb325hm",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 14",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6s4r27w",
+    "field": "appliance.load",
+    "value": 7,
+    "source": "https://eldorado.am/en/electrolux-ew6s4r27w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 7 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6s4r27w",
+    "field": "appliance.programs",
+    "value": 14,
+    "source": "https://eldorado.am/en/electrolux-ew6s4r27w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 7 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ews6307be",
+    "field": "appliance.load",
+    "value": 7,
+    "source": "https://eldorado.am/en/electrolux-ews6307be",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 7 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6s3r26s",
+    "field": "appliance.load",
+    "value": 6,
+    "source": "https://eldorado.am/en/electrolux-ew6s3r26s",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 6 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6s3r26s",
+    "field": "appliance.programs",
+    "value": 14,
+    "source": "https://eldorado.am/en/electrolux-ew6s3r26s",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 6 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6s4r27bx",
+    "field": "appliance.load",
+    "value": 7,
+    "source": "https://eldorado.am/en/electrolux-ew6s4r27bx",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 7 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6s4r27bx",
+    "field": "appliance.programs",
+    "value": 14,
+    "source": "https://eldorado.am/en/electrolux-ew6s4r27bx",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 7 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-f2r3hyl6p",
+    "field": "appliance.load",
+    "value": 7,
+    "source": "https://eldorado.am/en/lg-f2r3hyl6p",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 7 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-ww11bga047telp",
+    "field": "appliance.load",
+    "value": 11,
+    "source": "https://eldorado.am/en/washing-machine-samsung-ww11bga047telp",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Linen volume - 11 kg Winding speed - 1400 rpm Number of programs - 14 Washing class - A Energy saving class - A Power consumption - 1.04 kW/h Water consumption - 66 l/cycle Screen - yes Power supply - 220-240V/50-60 Hz Dimensions - 60 x 85 x 60 cm",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-f4x5eypy6",
+    "field": "appliance.load",
+    "value": 11,
+    "source": "https://eldorado.am/en/lg-f4x5eypy6",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 11 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew7w2492",
+    "field": "appliance.load",
+    "value": 9,
+    "source": "https://eldorado.am/en/electrolux-ew7w2492",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 9 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew7wr361s",
+    "field": "appliance.load",
+    "value": 10,
+    "source": "https://eldorado.am/en/electrolux-ew7wr361s-white",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 10 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew7wr361s",
+    "field": "appliance.programs",
+    "value": 14,
+    "source": "https://eldorado.am/en/electrolux-ew7wr361s-white",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 10 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew9f1r61b",
+    "field": "appliance.load",
+    "value": 10,
+    "source": "https://eldorado.am/en/electrolux-ew9f1r61b",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 10 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew9f1r61b",
+    "field": "appliance.programs",
+    "value": 14,
+    "source": "https://eldorado.am/en/electrolux-ew9f1r61b",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 10 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-w4w8bvpkzhm",
+    "field": "appliance.load",
+    "value": 12,
+    "source": "https://eldorado.am/en/lg-w4w8bvpkzhm",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 12 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "hisense-dhqa90",
+    "field": "appliance.load",
+    "value": 9,
+    "source": "https://eldorado.am/en/hisense-dhqa90",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 9 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6d18cwje",
+    "field": "appliance.load",
+    "value": 8,
+    "source": "https://eldorado.am/en/electrolux-ew6d18cwje",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 8 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6cr428w",
+    "field": "appliance.load",
+    "value": 8,
+    "source": "https://eldorado.am/en/electrolux-ew6cr428w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 8 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-ew6cr428w",
+    "field": "appliance.programs",
+    "value": 12,
+    "source": "https://eldorado.am/en/electrolux-ew6cr428w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 8 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-rh80t2sp7rm",
+    "field": "appliance.load",
+    "value": 8,
+    "source": "https://eldorado.am/en/dryer-lg-rh80t2sp7rm",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 8 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-rh80t2sp7rm",
+    "field": "appliance.programs",
+    "value": 8,
+    "source": "https://eldorado.am/en/dryer-lg-rh80t2sp7rm",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 8 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "samsung-dv90bb5245ablp",
+    "field": "appliance.load",
+    "value": 9,
+    "source": "https://eldorado.am/en/samsung-dv90bb5245ablp",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 9 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-rh90v5pvtn",
+    "field": "appliance.load",
+    "value": 9,
+    "source": "https://eldorado.am/en/lg-rh90v5pvtn",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 9 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-rh10v9pv2w",
+    "field": "appliance.load",
+    "value": 10,
+    "source": "https://eldorado.am/en/lg-rh10v9pv2w",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Maximum download: 10 kg",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-esa47210",
+    "field": "appliance.settings",
+    "value": 13,
+    "source": "https://eldorado.am/en/dishwasher-electrolux-esa47210sw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 13 | Capacity (set): 13",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "electrolux-sem94830",
+    "field": "appliance.settings",
+    "value": 14,
+    "source": "https://eldorado.am/en/electrolux-sem94830sw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: Capacity (set): 14 | Capacity (set): 14",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-grb459fqfw",
+    "field": "appliance.volume",
+    "value": 344,
+    "source": "https://www.lg.com/ae/refrigerators/lg-gr-b459fqfw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: GR-B459FQFW: 344L NatureFRESH Refrigerator",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-grb509fmfw",
+    "field": "appliance.volume",
+    "value": 387,
+    "source": "https://www.lg.com/ae/refrigerators/lg-gr-b509fmfw",
+    "verified": "Exact product identity and principal field reviewed in its own manufacturer or retailer specification. Evidence: GR-B509FMFW: 387L NatureFRESH Fridge",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1620-15",
+    "field": "body.ip",
+    "value": "IPX7",
+    "source": "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7 | Wet & Dry: Showerproof; Cleaning: Fully washable",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1620-15",
+    "field": "appliance.wetDry",
+    "value": true,
+    "source": "https://www.documents.philips.com/assets/20220424/dad5bbf30d92472c9d84ae81006bd4ae.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7 | Wet & Dry: Showerproof; Cleaning: Fully washable",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1620-15",
+    "field": "appliance.powerSource",
+    "value": "battery",
+    "source": "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7 | Wet & Dry: Showerproof; Cleaning: Fully washable",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1620-15",
+    "field": "appliance.batteries",
+    "value": "1 × AA",
+    "source": "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7 | Wet & Dry: Showerproof; Cleaning: Fully washable",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1650-16",
+    "field": "body.ip",
+    "value": "IPX7",
+    "source": "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1650-16",
+    "field": "appliance.powerSource",
+    "value": "battery",
+    "source": "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt1650-16",
+    "field": "appliance.batteries",
+    "value": "1 × AA",
+    "source": "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+    "verified": "Manufacturer electrical declaration names exact model/suffix and establishes IPX7 and one AA cell; no mains wattage is applicable. Evidence: NT1650/16; NT1620/15; 1,5 VDC (1 X PILA AA); IPX7",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt3650-16",
+    "field": "appliance.powerSource",
+    "value": "battery",
+    "source": "https://www.philips.com.ph/c-m-pe/face-stylers-and-grooming-kits/detail-and-nose-trimmers/all",
+    "verified": "Exact manufacturer model listing confirms AA battery operation. Washable head is not inferred to mean showerproof; no unsupported IP rating proposed. New power-source row needed to display fact. Evidence: NT3650/16; Fully washable, AA battery",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-nt3650-16",
+    "field": "appliance.batteries",
+    "value": "AA",
+    "source": "https://www.philips.com.ph/c-m-pe/face-stylers-and-grooming-kits/detail-and-nose-trimmers/all",
+    "verified": "Exact manufacturer model listing confirms AA battery operation. Washable head is not inferred to mean showerproof; no unsupported IP rating proposed. New power-source row needed to display fact. Evidence: NT3650/16; Fully washable, AA battery",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhb868-00",
+    "field": "appliance.powerRange",
+    "value": "60–65 W",
+    "source": "https://www.documents.philips.com/assets/20220415/d5a07f8f373f48c19c83ae78009b3132.pdf",
+    "verified": "Manufacturer manual electrical rating and exact datasheet support 60–65W and130–200°C. Evidence: BHB868; 110-240 V; 50-60 Hz; 60-65 W | BHB868/00; Temperature range: 130 °C - 200 °C",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhb868-00",
+    "field": "appliance.temperature",
+    "value": "130–200 °C",
+    "source": "https://www.documents.philips.com/assets/20220423/db9a7a096f8a4dbb973cae8000538002.pdf",
+    "verified": "Manufacturer manual electrical rating and exact datasheet support 60–65W and130–200°C. Evidence: BHB868; 110-240 V; 50-60 Hz; 60-65 W | BHB868/00; Temperature range: 130 °C - 200 °C",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhb872-00",
+    "field": "appliance.power",
+    "value": 42,
+    "source": "https://www.jarcomputers.com/images/custom/docs/ea1174ab-2e43-4970-8509-b1afc3836722-162523743826.pdf",
+    "verified": "Original manufacturer instruction leaflet explicitly rates BHB872 at42W; no inference from barrel temperature. Evidence: Model: BHB872; Input rating: 110-240V~ 50-60 Hz 42 W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhb876-00",
+    "field": "appliance.powerRange",
+    "value": "32–34 W",
+    "source": "https://media.dm-static.com/images/v1748857748/products/pim/3081382_korisnicki_prirucnik/Korisnicki_prirucnik_BHB876_i_vodic_za_brzi_pocetak.pdf",
+    "verified": "Manufacturer manual names BHB876 and establishes32–34W nameplate range and three exact heat settings. Evidence: BHB876, BHB878; 110–240 V; 50–60 Hz; 32–34 W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhb876-00",
+    "field": "appliance.temperature",
+    "value": "170 / 190 / 210 °C",
+    "source": "https://media.dm-static.com/images/v1748857748/products/pim/3081382_korisnicki_prirucnik/Korisnicki_prirucnik_BHB876_i_vodic_za_brzi_pocetak.pdf",
+    "verified": "Manufacturer manual names BHB876 and establishes32–34W nameplate range and three exact heat settings. Evidence: BHB876, BHB878; 110–240 V; 50–60 Hz; 32–34 W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hp8281-00",
+    "field": "appliance.powerRange",
+    "value": "2100–2300 W",
+    "source": "https://www.documents.philips.com/assets/20220616/8739605f0eb243ddae73aeb6012147a1.pdf",
+    "verified": "Exact manufacturer HP8281/00 datasheet supplies2100–2300W; 2100–2300W matches own merchant table. Evidence: HP8281/00; Wattage:2100-2300 W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhh811-00",
+    "field": "appliance.power",
+    "value": 35,
+    "source": "https://api.tehnoteka.rs/uploads/2023/04/uputstvo-za-upotrebu-philips-stajler-za-kosu-bhh811-00-644cd0a4e8551.pdf",
+    "verified": "Manufacturer instruction manual explicitly prints35W input rating for BHH811. Evidence: BHH811; 110-240V~ 50-60Hz 35 W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhs375-00",
+    "field": "appliance.temperature",
+    "value": "180 / 220 °C",
+    "source": "https://www.documents.philips.com/assets/20220605/0b1b183314454c93a132aeab007cb495.pdf",
+    "verified": "Exact official datasheet gives two real temperatures but omits operating watts. Retailer ratings conflict40/50/53W; standby<0.5W must not be used as operating power. Evidence: BHS375/00; Styling temperature:180°C /220°C",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhs378-00",
+    "field": "appliance.temperature",
+    "value": "160–230 °C",
+    "source": "https://www.documents.philips.com/assets/20220605/88ca650e9a204061b939aeab007f334f.pdf",
+    "verified": "Exact manufacturer datasheet supports160–230°C but omits operating watts. Retailers conflict50/55W;53–55W evidence for regional/50 suffix is not transferred to/00. Evidence: BHS378/00; Styling temperature:160°C -230°C",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhs742-00",
+    "field": "appliance.powerRange",
+    "value": "50–53 W",
+    "source": "https://s3.zoommer.ge/site/manual/philips-hair-iron-bhs752-00.pdf",
+    "verified": "Original manufacturer manual explicitly names BHS742/BHS752 and50–53W input rating. Evidence: BHS732,BHS742,BHS752;110-240V;50-60Hz;50-53W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhs752-00",
+    "field": "appliance.powerRange",
+    "value": "50–53 W",
+    "source": "https://s3.zoommer.ge/site/manual/philips-hair-iron-bhs752-00.pdf",
+    "verified": "Original manufacturer manual explicitly names BHS742/BHS752 and50–53W input rating. Evidence: BHS732,BHS742,BHS752;110-240V;50-60Hz;50-53W | Styling temperature120°C -230°C",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bhs752-00",
+    "field": "appliance.temperature",
+    "value": "120–230 °C",
+    "source": "https://www.philips.co.uk/c-p/BHS752_00/7000-series-straightener/overview?reviews-page=22",
+    "verified": "Original manufacturer manual explicitly names BHS742/BHS752 and50–53W input rating. Evidence: BHS732,BHS742,BHS752;110-240V;50-60Hz;50-53W | Styling temperature120°C -230°C",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre225-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.documents.philips.com/assets/20220609/c8a310edc6244b7ea383aeaf008d7c32.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre225-00",
+    "field": "appliance.speeds",
+    "value": 2,
+    "source": "https://www.documents.philips.com/assets/20220609/c8a310edc6244b7ea383aeaf008d7c32.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre227-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.documents.philips.com/assets/20250507/75351b9da89749278fefb2d600bed79e.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded | Exact manufacturer datasheet gives corded operation and speed count.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre227-00",
+    "field": "appliance.speeds",
+    "value": 1,
+    "source": "https://www.documents.philips.com/assets/20250507/75351b9da89749278fefb2d600bed79e.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded | Exact manufacturer datasheet gives corded operation and speed count.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre228-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.philips.com.sg/shop/SG_Passion/personal-care/hair-removal/epilator-series-2000-corded-epilator/p/BRE228_00",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre228-00",
+    "field": "appliance.speeds",
+    "value": 1,
+    "source": "https://www.philips.com.sg/shop/SG_Passion/personal-care/hair-removal/epilator-series-2000-corded-epilator/p/BRE228_00",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre235-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.documents.philips.com/assets/20240703/00fc4242d7c844bcb3fdb1a200bba23d.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre235-00",
+    "field": "appliance.speeds",
+    "value": 2,
+    "source": "https://www.documents.philips.com/assets/20240703/00fc4242d7c844bcb3fdb1a200bba23d.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre247-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.documents.philips.com/assets/20250407/238137e6fa1a4c709f72b2b8012d985e.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded | Exact manufacturer datasheet gives corded operation and speed count.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre247-00",
+    "field": "appliance.speeds",
+    "value": 2,
+    "source": "https://www.documents.philips.com/assets/20250407/238137e6fa1a4c709f72b2b8012d985e.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded | Exact manufacturer datasheet gives corded operation and speed count.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre257-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.documents.philips.com/assets/20250407/e092d6762c634c55827eb2b8012d998c.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre257-00",
+    "field": "appliance.speeds",
+    "value": 2,
+    "source": "https://www.documents.philips.com/assets/20250407/e092d6762c634c55827eb2b8012d998c.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre285-00",
+    "field": "appliance.powerSource",
+    "value": "mains",
+    "source": "https://www.documents.philips.com/assets/20220602/f2828ca92f5a424db57faea800014071.pdf",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded | 2 speed setting(s)",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre285-00",
+    "field": "appliance.speeds",
+    "value": 2,
+    "source": "https://likemobile.am/en/epilator-philips-bre28500",
+    "verified": "Exact manufacturer/merchant evidence confirms corded operation and speed count; new power-source/speed rows needed. No runtime, operating watts or wet-use claim invented. Evidence: Corded | 2 speed setting(s)",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre711-00",
+    "field": "battery.life",
+    "value": "60 min",
+    "source": "https://www.documents.philips.com/assets/20251216/4379d07e58b8452f9e8db3b500ed866c.pdf",
+    "verified": "Exact BRE711 manufacturer family manual establishes60min cordless runtime and3h charging; independent current exact-suffix retailer listing corroborates60min. Evidence: BRE711; charging panel3hr; runtime60min",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre711-00",
+    "field": "battery.chargeTime",
+    "value": "3 h",
+    "source": "https://www.documents.philips.com/assets/20251216/4379d07e58b8452f9e8db3b500ed866c.pdf",
+    "verified": "Exact BRE711 manufacturer family manual establishes60min cordless runtime and3h charging; independent current exact-suffix retailer listing corroborates60min. Evidence: BRE711; charging panel3hr; runtime60min",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-bre711-00",
+    "field": "appliance.powerSource",
+    "value": "rechargeable",
+    "source": "https://www.documents.philips.com/assets/20251216/4379d07e58b8452f9e8db3b500ed866c.pdf",
+    "verified": "Exact BRE711 manufacturer family manual establishes60min cordless runtime and3h charging; independent current exact-suffix retailer listing corroborates60min. Evidence: BRE711; charging panel3hr; runtime60min",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hx6322-04",
+    "field": "appliance.powerSource",
+    "value": "rechargeable",
+    "source": "https://www.philips.com/c-p/HX6322_04/for-kids-sonic-electric-toothbrush",
+    "verified": "Manufacturer exact model page confirms rechargeable lithium-ion battery. Its two intensity/power modes are not mislabeled as programs. New power-source row needed. Evidence: Battery:Rechargeable;Battery type:Lithium ION",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hx6322-04",
+    "field": "appliance.batteries",
+    "value": "Li-ion",
+    "source": "https://www.philips.com/c-p/HX6322_04/for-kids-sonic-electric-toothbrush",
+    "verified": "Manufacturer exact model page confirms rechargeable lithium-ion battery. Its two intensity/power modes are not mislabeled as programs. New power-source row needed. Evidence: Battery:Rechargeable;Battery type:Lithium ION",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hx3911-40",
+    "field": "appliance.programs",
+    "value": 4,
+    "source": "https://www.documents.philips.com/assets/20201027/9733f0a813c34421b67fac6100a8b166.pdf",
+    "verified": "Exact manufacturer datasheet lists four actual named operating modes, suitable for appliance.programs. Evidence: Modes:Clean,Deep Clean+,Sensitive,Massage",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-dst2020-30",
+    "field": "appliance.power",
+    "value": 2000,
+    "source": "https://likemobile.am/en/philips-dst202030",
+    "verified": "Own selected merchant product identity and description table explicitly give2000W; unrelated recommended products excluded. Evidence: Philips DST2020/30;Power(W):2000",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-ac1711-90",
+    "field": "appliance.power",
+    "value": 27,
+    "source": "https://www.documents.philips.com/assets/20220622/c1faf8ba6cfd4aa79cc9aebc01461413.pdf",
+    "verified": "Manufacturer exact AC1711/90 datasheet distinguishes maximum27W from<=0.2W standby and supplies room/noise/product-weight fields. Evidence: Max.power consumption27W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-ac1711-90",
+    "field": "appliance.area",
+    "value": "78 m²",
+    "source": "https://www.documents.philips.com/assets/20220622/c1faf8ba6cfd4aa79cc9aebc01461413.pdf",
+    "verified": "Manufacturer exact AC1711/90 datasheet distinguishes maximum27W from<=0.2W standby and supplies room/noise/product-weight fields. Evidence: Max.power consumption27W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-ac1711-90",
+    "field": "appliance.noise",
+    "value": "18–50 dB",
+    "source": "https://www.documents.philips.com/assets/20220622/c1faf8ba6cfd4aa79cc9aebc01461413.pdf",
+    "verified": "Manufacturer exact AC1711/90 datasheet distinguishes maximum27W from<=0.2W standby and supplies room/noise/product-weight fields. Evidence: Max.power consumption27W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-ac1711-90",
+    "field": "body.weight",
+    "value": 4100,
+    "source": "https://www.documents.philips.com/assets/20220622/c1faf8ba6cfd4aa79cc9aebc01461413.pdf",
+    "verified": "Manufacturer exact AC1711/90 datasheet distinguishes maximum27W from<=0.2W standby and supplies room/noise/product-weight fields. Evidence: Max.power consumption27W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hu1509-00",
+    "field": "appliance.power",
+    "value": 19.6,
+    "source": "https://www.philips.ae/c-p/HU1509_00/air-humidifier",
+    "verified": "Exact manufacturer HU1509/00 page supplies maximum19.6W,3L tank,38m² room and19–21dB(A). Water-tank runtime is not mislabeled as battery life. Evidence: Maximum power19,6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hu1509-00",
+    "field": "appliance.volume",
+    "value": 3,
+    "source": "https://www.philips.ae/c-p/HU1509_00/air-humidifier",
+    "verified": "Exact manufacturer HU1509/00 page supplies maximum19.6W,3L tank,38m² room and19–21dB(A). Water-tank runtime is not mislabeled as battery life. Evidence: Maximum power19,6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hu1509-00",
+    "field": "appliance.area",
+    "value": "38 m²",
+    "source": "https://www.philips.ae/c-p/HU1509_00/air-humidifier",
+    "verified": "Exact manufacturer HU1509/00 page supplies maximum19.6W,3L tank,38m² room and19–21dB(A). Water-tank runtime is not mislabeled as battery life. Evidence: Maximum power19,6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "philips-hu1509-00",
+    "field": "appliance.noise",
+    "value": "19–21 dB(A)",
+    "source": "https://www.philips.ae/c-p/HU1509_00/air-humidifier",
+    "verified": "Exact manufacturer HU1509/00 page supplies maximum19.6W,3L tank,38m² room and19–21dB(A). Water-tank runtime is not mislabeled as battery life. Evidence: Maximum power19,6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "babyliss-st251pe",
+    "field": "appliance.temperature",
+    "value": "180 / 200 / 235 °C",
+    "source": "https://www.babyliss.com/pl-pl/denim-luxe-styler-ST251PE.html",
+    "verified": "Operating wattage remains unresolved:exact retailer specifications conflict41/49/50W; manufacturer page establishes180/200/235°C but does not publish watts. Evidence: Own exact product page and specification table reviewed; conflicting electrical ratings not imported. | 3temperature settings180°C,200°C,235°C | No exact manufacturer electrical-rating search result found for the queried target models.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "babyliss-st596e",
+    "field": "appliance.temperature",
+    "value": "170–210 °C",
+    "source": "https://www.babyliss.com/nl-nl/steam-luxe-styler-ST596E.html",
+    "verified": "Operating wattage remains unresolved:Eldorado210W duplicates max temperature and conflicts with56W sellers; no safe wattage selected. Evidence: Own exact product page and specification table reviewed; conflicting electrical ratings not imported. | 5temperatuurinstellingen170˚C-210˚C | No exact manufacturer electrical-rating search result found for the queried target models.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "kenwood-fdm100ba",
+    "field": "appliance.power",
+    "value": 500,
+    "source": "https://eldorado.am/en/kenwood-fdm100ba",
+    "verified": "Own current exact FDM100BA product table gives500W and one speed; recommendations excluded. Evidence: Food processor KENWOOD FDM100BA;Power(W)500",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "kenwood-fdm100ba",
+    "field": "appliance.speeds",
+    "value": 1,
+    "source": "https://eldorado.am/en/kenwood-fdm100ba",
+    "verified": "Own current exact FDM100BA product table gives500W and one speed; recommendations excluded. Evidence: Food processor KENWOOD FDM100BA;Power(W)500",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-e200",
+    "field": "appliance.powerRange",
+    "value": "2.2–5.7 W",
+    "source": "https://www.boneco.com/media/2505/download/Manual_E200_Humidifier_Evaporator_BONECO_all_languages.pdf?v=1",
+    "verified": "Manufacturer E200 manual provides 2.2–5.7W and clarifies30m² floor area/75m³ room volume. Evidence: E200;Power consumption2.2–5.7W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-e200",
+    "field": "appliance.area",
+    "value": "30 m²",
+    "source": "https://www.boneco.com/media/2505/download/Manual_E200_Humidifier_Evaporator_BONECO_all_languages.pdf?v=1",
+    "verified": "Manufacturer E200 manual provides 2.2–5.7W and clarifies30m² floor area/75m³ room volume. Evidence: E200;Power consumption2.2–5.7W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-h300",
+    "field": "appliance.power",
+    "value": 11.6,
+    "source": "https://www.boneco.com/products/h300?variant=55623676330370",
+    "verified": "Current manufacturer H300 page gives operating maximum11.6W,4.5L tank,50m²,28–51dB(A),5.3kg empty weight; takes precedence over retailer10W/5.5kg. Evidence: Level6:11.6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-h300",
+    "field": "appliance.volume",
+    "value": 4.5,
+    "source": "https://www.boneco.com/products/h300?variant=55623676330370",
+    "verified": "Current manufacturer H300 page gives operating maximum11.6W,4.5L tank,50m²,28–51dB(A),5.3kg empty weight; takes precedence over retailer10W/5.5kg. Evidence: Level6:11.6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-h300",
+    "field": "appliance.area",
+    "value": "50 m²",
+    "source": "https://www.boneco.com/products/h300?variant=55623676330370",
+    "verified": "Current manufacturer H300 page gives operating maximum11.6W,4.5L tank,50m²,28–51dB(A),5.3kg empty weight; takes precedence over retailer10W/5.5kg. Evidence: Level6:11.6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-h300",
+    "field": "appliance.noise",
+    "value": "28–51 dB(A)",
+    "source": "https://www.boneco.com/products/h300?variant=55623676330370",
+    "verified": "Current manufacturer H300 page gives operating maximum11.6W,4.5L tank,50m²,28–51dB(A),5.3kg empty weight; takes precedence over retailer10W/5.5kg. Evidence: Level6:11.6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "boneco-h300",
+    "field": "body.weight",
+    "value": 5300,
+    "source": "https://www.boneco.com/products/h300?variant=55623676330370",
+    "verified": "Current manufacturer H300 page gives operating maximum11.6W,4.5L tank,50m²,28–51dB(A),5.3kg empty weight; takes precedence over retailer10W/5.5kg. Evidence: Level6:11.6W",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "babyliss-c1700e",
+    "field": "appliance.temperature",
+    "value": "190 / 210 / 230 °C",
+    "source": "https://www.babyliss.com/on/demandware.static/-/Sites-ml-babyliss-Library/fr_BE/v1753703558956/information-booklets/C1700E_IB.pdf",
+    "verified": "Operating wattage remains unresolved:33W appears only in retailer results; manufacturer manual confirms actual190/210/230°C heat settings, replacing the invalid existing3 value. Evidence: Own exact product page and specification table reviewed; conflicting electrical ratings not imported. | 3temperature settings190°C,210°C,230°C | No exact manufacturer electrical-rating search result found for the queried target models.",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "kenwood-blp300wh12",
+    "field": "appliance.power",
+    "value": 450,
+    "source": "https://likemobile.am/en/blender-kenwood-blp300wh12",
+    "verified": "Own selected merchant model BLP300WH12 metadata gives450W,1.6L jug and two speeds plus pulse. Capacity not inferred from model name. Evidence: Kenwood BLP300WH12;Compact450W countertop blender",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "kenwood-blp300wh12",
+    "field": "appliance.volume",
+    "value": 1.6,
+    "source": "https://likemobile.am/en/blender-kenwood-blp300wh12",
+    "verified": "Own selected merchant model BLP300WH12 metadata gives450W,1.6L jug and two speeds plus pulse. Capacity not inferred from model name. Evidence: Kenwood BLP300WH12;Compact450W countertop blender",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "kenwood-blp300wh12",
+    "field": "appliance.speeds",
+    "value": 2,
+    "source": "https://likemobile.am/en/blender-kenwood-blp300wh12",
+    "verified": "Own selected merchant model BLP300WH12 metadata gives450W,1.6L jug and two speeds plus pulse. Capacity not inferred from model name. Evidence: Kenwood BLP300WH12;Compact450W countertop blender",
+    "checked": "2026-10-27"
+  },
+  {
+    "id": "lg-lbb459",
+    "field": "appliance.volumeByVariant",
+    "value": {
+      "LBB459EMYW": 341,
+      "LBB459EQYW": 344
+    },
+    "source": "https://eldorado.am/en/lg-lbb459emyw",
+    "additionalSources": [
+      "https://eldorado.am/en/lg-lbb459eqyw"
+    ],
+    "verified": "Separate exact own-product specification tables give LBB459EMYW341L and LBB459EQYW344L. Shared catalogue record keeps both named variant capacities; no shared volume invented.",
+    "checked": "2026-10-27"
   }
 ]
