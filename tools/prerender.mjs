@@ -24,7 +24,7 @@ function renderer(data) {
   const whole = fs.readFileSync('_app.js','utf8');
   const src = whole.slice(0,whole.lastIndexOf('\nrender();'));
   const vars = {...data,...stub};
-  return new Function(...Object.keys(vars),src + `;
+  return new Function(...Object.keys(vars),src + String.raw`;
     return (product, lang) => {
     st.lang = lang;
     paintChrome();
@@ -34,11 +34,13 @@ function renderer(data) {
         langs:document.querySelector('#langs').innerHTML, foot:document.querySelector('#foot').innerHTML};
     }
     const all=results();
-    return {hero:mastHero(), main:catalogView()
+    let renderedMain=catalogView()
       .replace('<div class="grid" id="gridbox" data-nosnippet></div>','<div class="grid" id="gridbox" data-nosnippet>'+all.slice(0,PAGE).map(card).join('')+'</div>')
       .replace('<div id="pager"></div>','<div id="pager">'+pager(all.length)+'</div>')
       .replace('id="rescnt"></span>','id="rescnt">'+all.length+'</span>')
-      .replace('id="mbarn"></span>','id="mbarn">'+all.length+'</span>'),
+      .replace('id="mbarn"></span>','id="mbarn">'+all.length+'</span>');
+    if(typeof bxFilterForm==='function'){const sidebar='<aside class="bx-filter-sidebar" aria-label="'+esc(x('filtersT'))+'" data-signature="'+esc(bxFilterSignature())+'">'+bxFilterForm(filterBar())+'</aside>';renderedMain=renderedMain.replace('<div class="fbar',sidebar+'<div class="fbar');const sort=renderedMain.match(/<details class="fdrop r"[\s\S]*?<\/details>/)?.[0];if(sort)renderedMain=renderedMain.replace(sort,'').replace(/(id="rescnt">[\s\S]*?<\/span>)/,'$1'+sort);}
+    return {hero:mastHero(),main:renderedMain,
       nav:document.querySelector('#nav').innerHTML, langs:document.querySelector('#langs').innerHTML,
       foot:document.querySelector('#foot').innerHTML};
     };

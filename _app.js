@@ -17,12 +17,13 @@ function canonicalLinks(root = document) {
     if (path !== null) { a.dataset.route = route; a.setAttribute('href', pre + path); }
   }
 }
-document.addEventListener('click', e => {
-  const a = e.target.closest('a[data-route]');
+function routeLinkClick(e) {
+  const a = e.target.closest('a[data-route],a[href^="#/"]:not(.logo):not([data-bx-mobile-home])');
   if (!a || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || a.hasAttribute('download') || (a.target && a.target !== '_self')) return;
   e.preventDefault();
-  location.hash = a.dataset.route;
-}, true);
+  location.hash = a.dataset.route || a.getAttribute('href');
+}
+document.addEventListener('click',routeLinkClick,true);
 const OFFER_PEEK = 5;   // shops in the product page's price table; the rest are one link away, on the offers page
 // An explicit way back. An anchor to the logical parent, not history.back(), so it still
 // works when someone opens a product or offers link directly.
@@ -187,6 +188,7 @@ if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
 // ?lang=ru from the Russian/English static pages opens the app in that language
 { const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
+{ const home=(location.pathname||'').match(/^\/(en|ru)\/?$/);if(home)st.lang=home[1]; }
 // Direct canonical product links hydrate the same interactive view as catalogue clicks.
 { const direct = (location.pathname || '').match(/^\/(?:(en|ru)\/)?p\/([^/]+)\/?$/);
   if (direct) { st.lang = direct[1] || 'hy';
@@ -224,19 +226,21 @@ const _cheapest = p => {
 // The slider spans the section being browsed, not the whole catalogue: phones on a scale that
 // runs to a 5-million TV left the whole phone range in the first few pixels.
 let PMIN = 0, PMAX = 0;
-function setBounds() {
+function priceBounds(cat) {
   // One missing or malformed price would make PMIN/PMAX NaN, and every comparison against NaN is
   // false, so the catalogue would silently render empty with no clue why.
   // A RAM, storage or shop filter can select a dearer offer than the model's
   // cheapest one. The default slider must include every purchasable offer.
-  const ps = DATA.filter(p => !st.cat || (p.category || 'phone') === st.cat)
+  const ps = DATA.filter(p => !cat || (p.category || 'phone') === cat)
     .flatMap(p => hasReal(p) ? offersFor(p).map(o => o.price) : [_cheapest(p)])
     .filter(Number.isFinite);
-  PMIN = Math.floor(Math.min(...ps) / 5000) * 5000;
-  PMAX = Math.ceil(Math.max(...ps) / 5000) * 5000;
+  return {min:ps.length?Math.floor(Math.min(...ps)/5000)*5000:0,max:ps.length?Math.ceil(Math.max(...ps)/5000)*5000:0};
+}
+function setBounds() {
+  const bounds=priceBounds(st.cat);PMIN=bounds.min;PMAX=bounds.max;
   // The saved range was chosen against older bounds (another section, or yesterday's prices).
   // A stale range silently hides products outside it, so reset it whenever the bounds move.
-  if (!st.pmin || !st.pmax || st.bounds?.[0] !== PMIN || st.bounds?.[1] !== PMAX) {
+  if (!Number.isFinite(st.pmin) || !Number.isFinite(st.pmax) || st.bounds?.[0] !== PMIN || st.bounds?.[1] !== PMAX) {
     st.pmin = PMIN; st.pmax = PMAX;
   }
   st.bounds = [PMIN, PMAX];
@@ -1488,6 +1492,7 @@ function activeFilterCount() {
 // Read what the panel is showing into the state, close it, and redraw once.
 function openSheet() {
   document.documentElement.classList.add('fs-open');
+  if(document.querySelector('.bx-filter-sidebar'))return; // The visible form owns its draft controls.
   // Groups start closed (owner, 2026-10-02): opened all at once, Brand alone was a screen of
   // ticks before Price. A group with a filter already set opens, so what is applied is seen.
   $$('#fbar .fdrop:not(.r)').forEach(d => {
@@ -1801,42 +1806,8 @@ function bnCats() {
   return Object.values(by).filter(c => c.p).sort((a, b) => b.n - a.n).slice(0, 7);
 }
 const bnPopular = () => DATA.filter(hasReal).sort((a, b) => b.popularity - a.popularity).slice(0, 4);
-function mastHero() {
-  const dl = deals();
-  const sp = spotDeal(dl);
-  const offersTotal = Object.values(P.offers || {}).reduce((n, a) => n + a.length, 0);
-  // what the catalogue lists: a product no shop sells today keeps its page but is not in the grid
-  const listed = DATA.filter(hasReal).length;
-  return `<h1 class="vh">${esc(x('heroA'))} ${esc(x('heroB'))}</h1>
-    <div class="bn">
-      ${bnDeal(sp || dl.find(d => !d.drop))}
-      <div class="bn-t bn-q">
-        <div class="bn-st">
-          <div><b class="num">${money(listed)}</b><span>${esc(plw(listed, 'models'))}</span></div>
-          <div><b class="num">${money(offersTotal)}</b><span>${esc(plw(offersTotal, 'offersLbl'))}</span></div>
-          <div><b class="num">${Object.keys(P.shops || {}).length}</b><span>${esc(plw(Object.keys(P.shops || {}).length, 'shops'))}</span></div>
-        </div>
-        <div>
-          <label class="bn-box" for="q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>${esc(x('searchShort'))}</label>
-          <div class="bn-chips">${bnPopular().map(p => `<a href="#/p/${esc(p.id)}">${esc(p.brand + ' ' + p.name)}</a>`).join('')}</div>
-        </div>
-      </div>
-      ${bnCats().map((c, i) => `<a class="bn-t bn-c bn-c${i}" href="#/c/${esc(c.cat)}">
-        <b>${esc(catName(c.cat))}</b>
-        <span class="bn-f num">${esc(fromPrice(c.lo))}</span>
-        <span class="bn-n">${esc(nx(c.n, 'models'))}</span>
-        <img src="${THUMB(c.p.id)}" ${thumbSet(c.p.id, '(max-width:640px) 40vw, 220px')} alt="" width="480" height="480" loading="${i < 3 ? 'eager' : 'lazy'}" decoding="async">
-      </a>`).join('')}
-    </div>
-    ${dl.length ? `<section class="dls" id="savings" tabindex="-1" aria-labelledby="dlsT" data-nosnippet>
-      <div class="dls-hd">
-        <div><h2 id="dlsT">${esc(x('savingsT'))}</h2></div>
-        <div class="dls-arr"><button type="button" data-dl="-1" aria-label="${esc(x('prevL'))}" disabled>${ICON_ARR_L}</button><button type="button" data-dl="1" aria-label="${esc(x('nextL'))}">${ICON_ARR_R}</button></div>
-      </div>
-      <div class="dls-row" id="dlrow">${dl.map(d => dealCard(d, d === sp)).join('')}</div>
-    </section>` : ''}
-    ${soonHTML()}`;
-}
+function mastHero(){return bxMastHero();}
+
 const ICON_FILT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>';
 const ICON_ARR_L = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
 const ICON_ARR_R = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>';
@@ -1931,22 +1902,8 @@ const countView = () => {
 
 // Categories are navigation, not a filter: one always-visible row, current item marked.
 // Counts come from the data, so a category appears the moment its first item lands.
-function catTabs() {
-  const cats = [...new Set(DATA.map(p => p.category || 'phone'))];
-  // Counted within the active query, not over the whole catalogue: on a search for "samsung
-  // fold" the tabs used to promise "Phones 70" above three results, and the number a tab shows
-  // has to be the number clicking it produces.
-  const pool = DATA.filter(p => hayMatch(p, st.q));
-  const n = c => pool.filter(p => (p.category || 'phone') === c).length;
-  const tab = (c, label, count) => `<a class="ctab${(st.cat || '') === c ? ' on' : ''}" href="#${c ? '/c/' + c : '/'}"${(st.cat || '') === c ? ' aria-current=\"page\"' : ''}>${CAT_ICON[c] ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${CAT_ICON[c]}"/></svg>` : ''}${esc(label)}<b class="num">${count}</b></a>`;
-  // A tab whose count is 0 leads to an empty page, so it is not offered. The category you are
-  // standing in stays even at 0, otherwise it vanishes from under you the moment you over-filter.
-  // Every section, biggest first, in one row that scrolls sideways (owner, 2026-10-04): the old
-  // "Other sections 9" button did not say what was behind it.
-  const live = cats.filter(c => n(c) > 0 || st.cat === c).sort((a, b) => n(b) - n(a));
-  return `<nav class="ctabs" aria-label="${esc(t('catalog.title'))}">` +
-    tab('', x('catAll'), pool.length) + live.map(c => tab(c, catName(c), n(c))).join('') + `</nav>`;
-}
+function catTabs(){return "";}
+
 // One stroke icon per section, drawn on a 24px grid (stroke, no fill - see .ctab svg)
 const CAT_ICON = {
   phone: 'M8 2.5h8a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H8A1.5 1.5 0 0 1 6.5 20V4A1.5 1.5 0 0 1 8 2.5zM11 18.5h2',
@@ -3615,4 +3572,56 @@ document.addEventListener('click', e => { const a = e.target.closest && e.target
 
 document.addEventListener('click',e=>{if(e.target.closest('[data-detail-retry]'))render(true)});
 
+/* Approved Bento/Wine presentation; native catalogue data and pricing stay above. */
+const BX_WORDS={"en":{"better":"Better prices.","picks":"Popular picks, compared across Armenian shops.","deal":"Deal of the day","vsMedian":"vs median shop price","models":"models","offers":"offers","shops":"shops","from":"from","phone":"Phones","laptop":"Laptops","tv":"TVs","headphones":"Audio","kitchen":"Kitchen","vacuum":"Vacuums","watch":"Watches"},"ru":{"better":"Лучшие цены.","picks":"Популярные товары в магазинах Армении.","deal":"Предложение дня","vsMedian":"относительно медианной цены","models":"моделей","offers":"предложений","shops":"магазинов","from":"от","phone":"Телефоны","laptop":"Ноутбуки","tv":"Телевизоры","headphones":"Аудио","kitchen":"Кухня","vacuum":"Пылесосы","watch":"Часы"},"hy":{"better":"Ավելի լավ գներ։","picks":"Հայտնի ապրանքներ՝ Հայաստանի խանութներից։","deal":"Օրվա առաջարկը","vsMedian":"խանութների միջնագնի համեմատ","models":"մոդել","offers":"առաջարկ","shops":"խանութ","from":"սկսած","phone":"Հեռախոսներ","laptop":"Նոթբուքեր","tv":"Հեռուստացույցներ","headphones":"Աուդիո","kitchen":"Խոհանոց","vacuum":"Փոշեկուլներ","watch":"Ժամացույցներ"}};
+const BX_DATA={"hero":{"id":"apple-iphone-18-pro","photo":"images/bento/apple-iphone-18-pro-800-c9939905a9.webp"},"categories":[{"id":"phone","name":"Phones","product":"samsung-galaxy-s26-ultra","count":198,"min":11900,"photo":"images/bento/samsung-galaxy-s26-ultra-800-1e8ce53916.webp"},{"id":"laptop","name":"Laptops","product":"apple-macbook-air-13-m5","count":396,"min":109000,"photo":"images/bento/apple-macbook-air-13-m5-800-d723dc514a.webp"},{"id":"tv","name":"TVs","product":"lg-oled55c6rla","count":368,"min":85000,"photo":"images/bento/lg-oled55c6rla-800-0a76bd0558.webp"},{"id":"headphones","name":"Audio","product":"sony-wh-1000xm6","count":239,"min":3900,"photo":"images/bento/sony-wh-1000xm6-800-eaf270cb6b.webp"},{"id":"kitchen","name":"Kitchen","product":"kitchenaid-5ksm175ps","count":84,"min":9500,"photo":"images/bento/kitchenaid-5ksm175ps-800-65fbccbfc6.webp"},{"id":"vacuum","name":"Vacuums","product":"dyson-v12-detect-slim-cordless-vacuum-cleaner","count":163,"min":39000,"photo":"images/bento/dyson-v12-complete-800-06c74d8a58.webp"},{"id":"watch","name":"Watches","product":"apple-watch-series-11","count":92,"min":11400,"photo":"images/bento/apple-watch-series-11-800-2e01847c5f.webp"}]};
+const BX_ASSETS={"images/bento/apple-iphone-18-pro-800-c9939905a9.webp":[{"src":"images/bento/apple-iphone-18-pro-96-14437ada47.webp","width":96,"bytes":2262},{"src":"images/bento/apple-iphone-18-pro-160-f592f5865e.webp","width":160,"bytes":3646},{"src":"images/bento/apple-iphone-18-pro-320-c9d42a02fb.webp","width":320,"bytes":8440},{"src":"images/bento/apple-iphone-18-pro-480-5f61deeda0.webp","width":480,"bytes":15170},{"src":"images/bento/apple-iphone-18-pro-800-c9939905a9.webp","width":800,"bytes":59686}],"images/bento/samsung-galaxy-s26-ultra-800-1e8ce53916.webp":[{"src":"images/bento/samsung-galaxy-s26-ultra-96-3dabb31680.webp","width":96,"bytes":2468},{"src":"images/bento/samsung-galaxy-s26-ultra-160-924bf39e54.webp","width":160,"bytes":3850},{"src":"images/bento/samsung-galaxy-s26-ultra-320-bdd1a15b5e.webp","width":320,"bytes":8518},{"src":"images/bento/samsung-galaxy-s26-ultra-480-b9ecf708bb.webp","width":480,"bytes":13680},{"src":"images/bento/samsung-galaxy-s26-ultra-800-1e8ce53916.webp","width":800,"bytes":25214}],"images/bento/apple-macbook-air-13-m5-800-d723dc514a.webp":[{"src":"images/bento/apple-macbook-air-13-m5-96-76648fcfbb.webp","width":96,"bytes":2746},{"src":"images/bento/apple-macbook-air-13-m5-160-d0e7b51517.webp","width":160,"bytes":5270},{"src":"images/bento/apple-macbook-air-13-m5-320-3eb014bad1.webp","width":320,"bytes":12812},{"src":"images/bento/apple-macbook-air-13-m5-480-b6abf1b9c3.webp","width":480,"bytes":21040},{"src":"images/bento/apple-macbook-air-13-m5-800-d723dc514a.webp","width":800,"bytes":38356}],"images/bento/lg-oled55c6rla-800-0a76bd0558.webp":[{"src":"images/bento/lg-oled55c6rla-96-b3f7b72550.webp","width":96,"bytes":2068},{"src":"images/bento/lg-oled55c6rla-160-3482a6988b.webp","width":160,"bytes":3836},{"src":"images/bento/lg-oled55c6rla-320-142cd299f3.webp","width":320,"bytes":9786},{"src":"images/bento/lg-oled55c6rla-480-fa24319944.webp","width":480,"bytes":16148},{"src":"images/bento/lg-oled55c6rla-800-0a76bd0558.webp","width":800,"bytes":31224}],"images/bento/sony-wh-1000xm6-800-eaf270cb6b.webp":[{"src":"images/bento/sony-wh-1000xm6-96-7e9b10b27a.webp","width":96,"bytes":2898},{"src":"images/bento/sony-wh-1000xm6-160-72cc8d39ea.webp","width":160,"bytes":4982},{"src":"images/bento/sony-wh-1000xm6-320-333511c4fd.webp","width":320,"bytes":10356},{"src":"images/bento/sony-wh-1000xm6-480-f728fc0fae.webp","width":480,"bytes":16108},{"src":"images/bento/sony-wh-1000xm6-800-eaf270cb6b.webp","width":800,"bytes":28488}],"images/bento/kitchenaid-5ksm175ps-800-65fbccbfc6.webp":[{"src":"images/bento/kitchenaid-5ksm175ps-96-b1a1efa912.webp","width":96,"bytes":4550},{"src":"images/bento/kitchenaid-5ksm175ps-160-44f0a5c6ef.webp","width":160,"bytes":8140},{"src":"images/bento/kitchenaid-5ksm175ps-320-ab99cc07ad.webp","width":320,"bytes":17690},{"src":"images/bento/kitchenaid-5ksm175ps-480-7fcd8b9c26.webp","width":480,"bytes":28100},{"src":"images/bento/kitchenaid-5ksm175ps-800-65fbccbfc6.webp","width":800,"bytes":44500}],"images/bento/dyson-v12-complete-800-06c74d8a58.webp":[{"src":"images/bento/dyson-v12-complete-96-068a369686.webp","width":96,"bytes":1496},{"src":"images/bento/dyson-v12-complete-160-376e225365.webp","width":160,"bytes":2596},{"src":"images/bento/dyson-v12-complete-320-15053eee24.webp","width":320,"bytes":5316},{"src":"images/bento/dyson-v12-complete-480-cd1d818123.webp","width":480,"bytes":8436},{"src":"images/bento/dyson-v12-complete-800-06c74d8a58.webp","width":800,"bytes":15636}],"images/bento/apple-watch-series-11-800-2e01847c5f.webp":[{"src":"images/bento/apple-watch-series-11-96-26173371eb.webp","width":96,"bytes":3894},{"src":"images/bento/apple-watch-series-11-160-3782fe62d5.webp","width":160,"bytes":6520},{"src":"images/bento/apple-watch-series-11-320-ee76288007.webp","width":320,"bytes":13844},{"src":"images/bento/apple-watch-series-11-480-66b7c678ef.webp","width":480,"bytes":22294},{"src":"images/bento/apple-watch-series-11-800-2e01847c5f.webp","width":800,"bytes":39018}]};
+const bxText=k=>(BX_WORDS[st.lang]||BX_WORDS.en)[k]||BX_WORDS.en[k]||k;
+function bxIcon(kind){const paths={phone:'<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/>',laptop:'<rect x="4" y="3" width="16" height="13" rx="1.5"/><path d="m4 16-2 4h20l-2-4"/>',tv:'<rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8m-4-4v4"/>',headphones:'<path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="2" y="12" width="5" height="9" rx="2"/><rect x="17" y="12" width="5" height="9" rx="2"/>',kitchen:'<path d="M5 3v5m3-5v5M2 3v5c0 3 6 3 6 0M5 10v11m13-8h3V3c-4 0-6 8-3 10Zm0 0v8"/>',vacuum:'<path d="m15 3-6 15m-4 0h9l2 4H3Zm9-14 4 2 2-4-4-2Z"/>',watch:'<rect x="6" y="6" width="12" height="12" rx="3"/><path d="m8 6 1-4h6l1 4m-8 12 1 4h6l1-4m-4-8v3l2 1"/>'};return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[kind]||paths.phone}</svg>`;}
+function bxPhoto(src,alt,hero=false){const a=BX_ASSETS[src]||[],fallback=a.find(x=>x.width>=480)||a.at(-1);return `<img src="${esc(fallback?.src||src)}" ${a.length?`srcset="${a.map(x=>`${esc(x.src)} ${x.width}w`).join(',')}" sizes="${hero?'(max-width:800px) 54vw,500px':'(max-width:800px) 48px,380px'}"`:''} alt="${esc(alt)}" width="800" height="800" decoding="async" ${hero?'fetchpriority="high"':'loading="lazy"'}>`;}
+function bxHeroOffers(){const p=byId(BX_DATA.hero.id);if(!p)return[];const list=offersFor(p).filter(o=>+o.ram===12&&+o.storage===2048&&o.esim===false&&(!o.color||o.color==='Burgundy')).slice().sort((a,b)=>a.price-b.price);return [...new Map(list.slice().reverse().map(o=>[o.shop,o])).values()].sort((a,b)=>a.price-b.price);}
+function bxMastHero(){const h=BX_DATA.hero,p=byId(h.id),rows=bxHeroOffers(),lo=rows[0]?.price,sorted=rows.map(o=>o.price),mid=sorted.length?(sorted[Math.floor((sorted.length-1)/2)]+sorted[Math.ceil((sorted.length-1)/2)])/2:0;const saving=lo?Math.round(mid-lo):0;const listed=DATA.filter(hasReal).length;return `<section class="bx-grid" aria-label="Better.am">
+<a class="bx-deal" href="#/p/${esc(h.id)}" data-bx-deal="${esc(h.id)}"><span class="bx-kicker">${esc(bxText('deal'))} · ${esc(updatedOn().slice(0,5))}</span>${saving>0?`<span class="bx-save">−${money(saving)} ֏</span><span class="bx-baseline">${esc(bxText('vsMedian'))}</span>`:''}${bxPhoto(h.photo,fullName(p),true)}<div class="bx-deal-copy"><h1>${esc(p.name)}</h1><p class="bx-config">${esc(gb(2048))} · ${esc(gb(12))} · Nano-SIM · ${rows.length} ${esc(bxText('shops'))}</p><p class="bx-price">${lo?money(lo)+' ֏':'—'}</p><div class="bx-bars">${rows.slice(0,2).map((o,i)=>`<div><span>${esc(shopName(o.shop))}</span><i><b style="width:${Math.round(lo/o.price*100)}%"></b></i><strong>${money(o.price)}</strong></div>`).join('')}</div></div></a>
+<section class="bx-summary" aria-label="${esc(bxText('better'))}"><div class="bx-stats">${[[listed,'models'],[Object.values(P.offers||{}).reduce((n,a)=>n+a.length,0),'offers'],[Object.keys(P.shops||{}).length,'shops']].map(([n,k])=>`<div><b>${money(n)}</b><span>${esc(bxText(k))}</span></div>`).join('')}</div><div><h2>${esc(bxText('better'))}</h2><p>${esc(bxText('picks'))}</p></div><div class="bx-suggest">${['Apple','Samsung','Sony','Dyson'].map(q=>`<button type="button" data-bx-search="${q}">${q}</button>`).join('')}</div></section>
+<div class="bx-categories">${BX_DATA.categories.map(c=>{const cat=catOf(byId(c.product)||{category:c.id});const pool=DATA.filter(p=>catOf(p)===cat&&hasReal(p)),min=Math.min(...pool.map(p=>offersFor(p)[0]?.price).filter(v=>v>0));return `<a class="bx-category bx-${c.id}" href="#/c/${esc(cat)}"><h2>${esc(bxText(c.id))}</h2><p>${esc(bxText('from'))} <b>${Number.isFinite(min)?money(min)+' ֏':'—'}</b></p><span class="bx-art">${bxPhoto(c.photo,byId(c.product)?.name||bxText(c.id))}</span><span class="bx-count">${pool.length} ${esc(bxText('models'))}</span><span class="bx-type">${bxIcon(c.id)}</span></a>`;}).join('')}</div></section>`;}
+
+function bxObserveHeader(){const h=document.querySelector('.topnav');if(!h)return;const update=()=>document.documentElement.style.setProperty('--bx-header-height',Math.ceil(h.getBoundingClientRect().height)+'px');new ResizeObserver(update).observe(h);update();}
+function bxPlaceSort(){const bar=document.querySelector('#fbar'),row=document.querySelector('#results'),sort=bar?.querySelector('[data-drop=sort]');if(sort&&row)row.append(sort);}
+function bxObserveCatalogue(){const main=document.querySelector('#main');if(main)new MutationObserver(bxPlaceSort).observe(main,{childList:true});bxPlaceSort();}
+function bxDecorateCatalogue(){for(const card of document.querySelectorAll('.ccard[data-ccat]'))if(!card.querySelector('.bx-category-icon'))card.insertAdjacentHTML('afterbegin',bxCategoryIcon(card.dataset.ccat));const heading=document.querySelector('#results h1,#results h2');heading?.querySelectorAll('.bx-category-icon').forEach(icon=>icon.remove());document.querySelectorAll('#nav a>.bx-category-icon').forEach(icon=>icon.remove());}
+function bxWatchCatalogueIcons(){const main=document.querySelector('#main');if(main)new MutationObserver(bxDecorateCatalogue).observe(main,{childList:true});bxDecorateCatalogue();}
+
+// Restore the earlier visible form presentation using the original full-catalogue filter definitions.
+const BX_FILTER_WORDS={en:{category:'Category',all:'All categories',more:'More filters',find:'Find a brand',budget:'Up to'},ru:{category:'Категория',all:'Все категории',more:'Другие фильтры',find:'Найти бренд',budget:'До'},hy:{category:'Բաժին',all:'Բոլոր բաժինները',more:'Այլ զտիչներ',find:'Գտնել բրենդ',budget:'Մինչև'}};
+const bxFilterWord=k=>(BX_FILTER_WORDS[st.lang]||BX_FILTER_WORDS.en)[k];
+function bxPriceRange(low,high,minimum=PMIN,maximum=PMAX){const max=high===''?maximum:+high,min=low===''?Math.min(minimum,max):+low;return {min,max,valid:Number.isFinite(min)&&Number.isFinite(max)&&min>=0&&max>=min};}
+function bxFilterSignature(){return JSON.stringify([st.lang,st.cat,st.pmin,st.pmax,...Object.keys(FILT).map(k=>FILT[k].arr?st[FILT[k].arr]:st[k])]);}
+function bxFilterOptions(k){if(k==='ram'||k==='stor'){const vals=[...new Set(inView().flatMap(p=>FILT[k].all(p)).filter(v=>typeof v==='number'&&v>0))].sort((a,b)=>a-b);return [{value:'0',label:x('any')},...vals.map(v=>({value:String(v),label:FILT[k].fmt(v)}))];}const decode=s=>s.replace(/&(amp|lt|gt|quot|#39);/g,(_,k)=>({amp:'&',lt:'<',gt:'>',quot:'\"','#39':"'"}[k]));return [...(filterBodies.get(k)||'').matchAll(/<label class="opt"><input type="radio"[^>]*value="([^"]*)"[^>]*><span>([\s\S]*?)<\/span>/g)].map(m=>({value:decode(m[1]),label:decode(m[2])}));}
+function bxFilterGroup(k,pool){const f=FILT[k];if(!f)return'';const label=esc(f.label());if(f.kind==='set'){const vals=setVals(k,f,pool);if(vals.length<2)return'';return `<fieldset class="bx-fieldset" data-bx-set="${k}"><legend>${label}</legend>${k==='brand'?`<input class="bx-brand-find" type="search" placeholder="${esc(bxFilterWord('find'))}" aria-label="${esc(bxFilterWord('find'))}">`:''}<div class="bx-check-grid">${vals.map(v=>`<label><input type="checkbox" name="${k}" value="${esc(String(v))}" data-bx-field="${k}" ${(st[f.arr]||[]).includes(v)?'checked':''}><span>${esc(f.fmt?f.fmt(v):v)}</span></label>`).join('')}</div></fieldset>`;}
+if(f.kind==='flag')return `<label class="bx-flag"><input type="checkbox" data-bx-field="${k}" ${st[k]?'checked':''}><span>${label}</span></label>`;
+const options=bxFilterOptions(k);if(options.length<2)return'';return `<label class="bx-field">${label}<select name="${k}" data-bx-field="${k}">${options.map(o=>`<option value="${esc(o.value)}" ${String(st[k]||0)===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`;}
+function bxFilterForm(barHTML){if(!filterBodies.has('price'))filterBar();const pool=inView(),bar=barHTML||document.querySelector('#fbar')?.outerHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${bxCategoryChoices(cats)}${bxFilterGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}">${esc(bxFilterWord('budget'))} ${money(n)}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxFilterGroup('shop',pool)}<div class="bx-spec-fields">${keys.map(k=>bxFilterGroup(k,pool)).join('')}</div><div class="bx-flag-fields">${flags.map(k=>bxFilterGroup(k,pool)).join('')}</div></div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
+function bxRestoreFilters(force=false){const bar=document.querySelector('#fbar');if(!bar)return;let panel=document.querySelector('.bx-filter-sidebar');const signature=bxFilterSignature();if(panel&&!force&&panel.dataset.signature===signature)return;if(!panel){panel=document.createElement('aside');panel.className='bx-filter-sidebar';panel.setAttribute('aria-label',x('filtersT'));bar.before(panel);}panel.dataset.signature=signature;panel.innerHTML=bxFilterForm();}
+function bxStartFilters(){const main=document.querySelector('#main');if(main)new MutationObserver(()=>bxRestoreFilters()).observe(main,{childList:true});bxRestoreFilters();}
+document.addEventListener('click',e=>{const budget=e.target.closest('[data-bx-budget]');if(budget){const form=budget.closest('form');form.querySelector('[data-bx-min]').value='';form.querySelector('[data-bx-max]').value=budget.dataset.bxBudget;form.querySelector('[data-bx-max]').setCustomValidity('');}if(e.target.closest('[data-fsheet]')){bxFilterInvoker=e.target.closest('[data-fsheet]');bxRestoreFilters(true);const panel=document.querySelector('.bx-filter-sidebar');panel?.setAttribute('role','dialog');panel?.setAttribute('aria-modal','true');panel?.querySelector('.bx-filter-close')?.focus();}if(e.target.closest('[data-fsclose]'))bxCloseFilterFocus();if(e.target.closest('[data-rm]'))queueMicrotask(()=>bxRestoreFilters(true));});
+document.addEventListener('input',e=>{if(e.target.matches('[data-bx-min],[data-bx-max]'))e.target.closest('form').querySelector('[data-bx-max]').setCustomValidity('');if(!e.target.matches('.bx-brand-find'))return;const query=e.target.value.toLocaleLowerCase(st.lang);for(const label of e.target.closest('fieldset').querySelectorAll('.bx-check-grid label'))label.hidden=!label.textContent.toLocaleLowerCase(st.lang).includes(query);});
+document.addEventListener('submit',e=>{if(!e.target.matches('.bx-filter-form'))return;e.preventDefault();const form=e.target,lo=form.querySelector('[data-bx-min]'),hi=form.querySelector('[data-bx-max]');const cat=form.querySelector('[data-bx-category]:checked').value,changed=cat!==st.cat,bounds=priceBounds(cat);const {min,max,valid}=bxPriceRange(lo.value,hi.value,bounds.min,bounds.max);if(!valid){hi.setCustomValidity(st.lang==='ru'?'Максимум должен быть не меньше минимума':st.lang==='hy'?'Առավելագույնը պետք է մեծ կամ հավասար լինի նվազագույնին':'Maximum must be at least the minimum');hi.reportValidity();hi.addEventListener('input',()=>hi.setCustomValidity(''),{once:true});return;}hi.setCustomValidity('');const next={pmin:min,pmax:max,page:1};for(const group of form.querySelectorAll('[data-bx-set]')){const k=group.dataset.bxSet;next[FILT[k].arr]=[...group.querySelectorAll('input:checked')].map(el=>el.value);}for(const el of form.querySelectorAll('select[data-bx-field],.bx-flag input'))next[el.dataset.bxField]=el.type==='checkbox'?el.checked:+el.value;if(changed){st.cat=cat;setBounds();if(hi.value==='')next.pmax=PMAX;if(lo.value==='')next.pmin=Math.min(PMIN,next.pmax);}Object.assign(st,next);if(changed){pruneFilters();if(!sortKeys().includes(st.sort))st.sort='popular';}closeSheet();bxCloseFilterFocus();save();if(changed){location.hash=cat?'#/c/'+cat:'#/';}else{refresh();bxRestoreFilters(true);} });
+
+let bxFilterInvoker=null;function bxCloseFilterFocus(){const mobile=document.querySelector('.bx-mobile-nav');if(mobile)mobile.inert=false;const panel=document.querySelector('.bx-filter-sidebar');panel?.removeAttribute('role');panel?.removeAttribute('aria-modal');if(bxFilterInvoker?.isConnected)bxFilterInvoker.focus();bxFilterInvoker=null;}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!document.documentElement.classList.contains('fs-open'))bxCloseFilterFocus();return;}if(e.key!=='Tab'||!document.documentElement.classList.contains('fs-open'))return;const panel=document.querySelector('.bx-filter-sidebar');if(!panel)return;const els=[...panel.querySelectorAll('button,input,select,a[href]')].filter(el=>!el.disabled&&el.getClientRects().length);const first=els[0],last=els.at(-1);if((e.shiftKey&&document.activeElement===first)||(!e.shiftKey&&document.activeElement===last)||!panel.contains(document.activeElement)){e.preventDefault();(e.shiftKey?last:first)?.focus();}});
+function bxCategoryIcon(category=''){const grid='M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z';return `<svg class="bx-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${esc(CAT_ICON[category]||grid)}"/></svg>`;}
+function bxCategoryChoices(cats){const pool=DATA.filter(hasReal),count=c=>c?pool.filter(p=>catOf(p)===c).length:pool.length;const primary=['phone','laptop','tv','headphones','kitchen','vacuum','watch'].filter(c=>cats.includes(c));const others=cats.filter(c=>!primary.includes(c)).sort((a,b)=>count(b)-count(a));const row=c=>`<label class="bx-category-choice"><input type="radio" name="category" value="${esc(c)}" data-bx-category ${st.cat===c?'checked':''}><span class="bx-category-symbol">${bxCategoryIcon(c)}</span><span class="bx-category-label">${esc(c?catName(c):bxFilterWord('all'))}</span><span class="bx-category-count num">${count(c)}</span></label>`;const more=({en:'More categories',ru:'Ещё категории',hy:'Այլ բաժիններ'})[st.lang];return `<fieldset class="bx-category-fieldset"><legend>${esc(bxFilterWord('category'))}</legend><div class="bx-category-choices">${['',...primary].map(row).join('')}</div><details class="bx-more-categories" ${others.includes(st.cat)?'open':''}><summary>${esc(more)} <span>${others.length}</span></summary><div class="bx-category-choices">${others.map(row).join('')}</div></details></fieldset>`;}
+
+// Approved mobile C: compact offer, swipeable category photos, sticky search, bottom navigation.
+let bxMobilePendingCategory=false;
+function bxMobileIcon(kind){const paths={home:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/>',category:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',compare:'<path d="M8 3v18M16 3v18M3 7h18M3 17h18"/>'};return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[kind]}</svg>`;}
+function bxMobileLabels(){return({en:{home:'Home',category:'Category',compare:'Compare',nav:'Main navigation'},ru:{home:'Главная',category:'Категории',compare:'Сравнить',nav:'Основная навигация'},hy:{home:'Գլխավոր',category:'Բաժիններ',compare:'Համեմատել',nav:'Հիմնական նավարկում'}})[st.lang]||{home:'Home',category:'Category',compare:'Compare',nav:'Main navigation'};}
+function bxMobileCategory(){const trigger=document.querySelector('[data-fsheet]');if(!trigger){bxMobilePendingCategory=true;location.hash='#/';return;}bxMobilePendingCategory=false;trigger.click();bxFilterInvoker=document.querySelector('[data-bx-mobile-category]');}
+function bxSyncMobileNav(){let nav=document.querySelector('.bx-mobile-nav');if(!nav){nav=document.createElement('nav');nav.className='bx-mobile-nav';document.body.append(nav);}const w=bxMobileLabels(),route=location.hash.replace(/^#/,'')||'/',key=JSON.stringify([st.lang,route,st.cmp.length]);if(nav.dataset.signature!==key){nav.dataset.signature=key;nav.setAttribute('aria-label',w.nav);nav.innerHTML=`<a href="#/" data-bx-mobile-home ${route==='/'?'aria-current="page"':''}>${bxMobileIcon('home')}<span>${esc(w.home)}</span></a><button type="button" data-bx-mobile-category aria-haspopup="dialog" aria-expanded="false" ${/^\/(c\/|catalog|construct)/.test(route)?'aria-current="page"':''}>${bxMobileIcon('category')}<span>${esc(w.category)}</span></button><a href="#/compare" ${route==='/compare'?'aria-current="page"':''}>${bxMobileIcon('compare')}<span>${esc(w.compare)}</span><b ${st.cmp.length?'':'hidden'}>${st.cmp.length}</b></a>`;}const opened=document.documentElement.classList.contains('fs-open');nav.inert=opened;nav.querySelector('[data-bx-mobile-category]')?.setAttribute('aria-expanded',String(opened));if(bxMobilePendingCategory&&document.querySelector('#fbar'))bxMobileCategory();}
+function bxStartMobileC(){const main=document.querySelector('#main'),selection=document.querySelector('#compareSelection');if(main)new MutationObserver(bxSyncMobileNav).observe(main,{childList:true});if(selection)new MutationObserver(bxSyncMobileNav).observe(selection,{childList:true,subtree:true});new MutationObserver(bxSyncMobileNav).observe(document.documentElement,{attributes:true,attributeFilter:['class']});bxSyncMobileNav();}
+document.addEventListener('click',e=>{if(e.target.closest('[data-bx-mobile-home]')){e.preventDefault();document.querySelector('.logo')?.click();}if(e.target.closest('[data-bx-mobile-category]'))bxMobileCategory();});
+
+document.addEventListener('click',e=>{const deal=e.target.closest('[data-bx-deal]');if(deal&&!e.ctrlKey&&!e.metaKey){const p=byId(deal.dataset.bxDeal);if(p)SEL={...initialConfig(p),id:p.id,storage:2048,ram:12,esim:false,color:'Burgundy'};}const q=e.target.closest('[data-bx-search]');if(q){st.q=q.dataset.bxSearch;save();if(location.hash==='#/search')render();else location.hash='/search';}});
+
 render();
+bxObserveHeader();bxObserveCatalogue();bxWatchCatalogueIcons();bxStartFilters();bxStartMobileC();
