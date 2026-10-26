@@ -65,6 +65,26 @@ class EldoradoDataTests(unittest.TestCase):
                '<li class="product-item"><a class="product_name combo_link" href="b">B</a><span data-price-type="finalPrice" data-price-amount="50000"></span></li>'
         self.assertEqual([r['url'] for r in category_rows(html)], ['b'])
 
+    def test_catalogue_sources_seed_only_exact_merchant_product_urls_without_identity_pin(self):
+        spec = importlib.util.spec_from_file_location('eldorado_fetch_sources_test', Path(__file__).with_name('eldorado-fetch.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / 'data').mkdir()
+            exact = 'https://eldorado.am/en/air-conditioner-tcl-tac-09chsd-zg31i'
+            products = [dict(id='tcl-model', name='TCL model', sources=[exact,
+                'https://eldorado.am/en/climate', 'https://eldorado.am.evil.test/en/fake',
+                'https://eldorado.am/en/item?search=x', 'https://other.am/en/model'])]
+            (root / 'data/phones.json').write_text(json.dumps(products), encoding='utf-8')
+            with patch.object(module, 'ROOT', root):
+                rows = module.known_offers()
+            self.assertIn(exact, rows)
+            self.assertEqual(rows[exact]['price'], 0)
+            self.assertFalse(rows[exact]['detailVerified'])
+            self.assertNotIn('id', rows[exact])
+            self.assertEqual(list(rows), [exact])
+
     def test_failed_refresh_preserves_cache_and_its_old_date(self):
         self.run_refresh('', 1, 39900, '2026-10-10')
 

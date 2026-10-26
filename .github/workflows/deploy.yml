@@ -112,7 +112,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           # photos-needed.json goes with them: it is published for whoever is finding
           # images, and a stale copy is worse than none.
-          git add data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
+          git add 'data/site-*.js' 'data/site-ui*.css' data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb images/social data/page-manifest.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en sitemap.xml
+          node tools/release-assets.mjs --staged
           git diff --staged --quiet && echo "no price changes" && exit 0
           git commit -m "prices: $(date -u +%Y-%m-%d)"
           # A push made during the 3-hour crawl leaves this copy behind and the push is refused
@@ -126,7 +127,8 @@ jobs:
             git fetch origin main
             git rebase -X ours origin/main || { git rebase --abort; exit 1; }
             node build.mjs
-            git add data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb data/page-manifest.json index.html p c b ru en sitemap.xml
+            git add 'data/site-*.js' 'data/site-ui*.css' data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/site-ui.css data/thumbnails.json images/thumb data/page-manifest.json index.html p c b ru en sitemap.xml
+            node tools/release-assets.mjs --staged
             git commit --amend --no-edit
           done
           exit 1

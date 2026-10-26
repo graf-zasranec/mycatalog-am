@@ -18,7 +18,6 @@ import sys
 import time
 from pathlib import Path
 
-from scrapling.fetchers import Fetcher
 from eldorado_data import category_rows, product_row
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -98,6 +97,7 @@ CATEGORIES = [
 
 def get(url):
     try:
+        from scrapling.fetchers import Fetcher
         p = Fetcher.get(url, impersonate='chrome', timeout=40)
         return p.html_content if p.status == 200 else ''
     except Exception as e:
@@ -137,6 +137,20 @@ def known_offers():
                                           checked=fields[8] if len(fields) > 8 else None, detailVerified=False)
                 except ValueError:
                     pass
+    # A newly imported model can have only an exact merchant source URL: it
+    # has not entered prices/listings yet and aisle discovery may miss it.
+    # These are verification seeds, never offers or model identity pins.
+    for product in read_json(ROOT / 'data/phones.json', []):
+        for url in product.get('sources', []):
+            if not isinstance(url, str):
+                continue
+            parsed = urlparse(url)
+            parts = parsed.path.strip('/').split('/')
+            if (parsed.scheme != 'https' or parsed.netloc != 'eldorado.am'
+                    or parsed.query or parsed.fragment or len(parts) != 2
+                    or parts[0] not in ['en', 'am', 'ru'] or '-' not in parts[1]):
+                continue
+            rows.setdefault(url, dict(url=url, title='', price=0, checked=None, detailVerified=False))
     # Previously unavailable pages can come back; confirm their own purchase control.
     for url in read_json(ROOT / 'data/soldout-owner.json', {}).get('urls', []):
         if url.startswith('https://eldorado.am/'):
