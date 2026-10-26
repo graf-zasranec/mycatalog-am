@@ -14,6 +14,7 @@ import { megabytePhoneMemory } from './tools/spec-values.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender, productRenderer } from './tools/prerender.mjs';
 import { pack, unpackSource, groupCatalogue, catalogueSource } from './tools/compact-data.mjs';
+import { catalogueIndex } from './tools/catalogue-index.mjs';
 import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
@@ -567,6 +568,8 @@ function build({ inline, standalone }) {
   if (lazy) fs.writeFileSync('data/product-extras.json', extrasBody + '\n');
   const compactJ = o => lazy ? `betterUnpack(${J(pack(o))})` : J(o);
   const chunkSize = 48, chunkUrls = [];
+  const fullProducts = phones.map(({summaryEn,sources,...p},i) => lazy ? {...p,_detailChunk:Math.floor(i/chunkSize)} : p);
+  const fullModels = Object.fromEntries(fullProducts.map(p=>[p.id,p]));
   const firstIds = new Set([...initial.main.matchAll(/data-id="([^"]+)"/g)].map(m => m[1]));
   const pick = (map, ids) => Object.fromEntries([...ids].filter(id => map[id]).map(id => [id, map[id]]));
   if (lazy) {
@@ -574,8 +577,8 @@ function build({ inline, standalone }) {
     for (let start = 0; start < phones.length; start += chunkSize) {
       const index = start / chunkSize, ids = new Set(phones.slice(start,start+chunkSize).map(p => p.id));
       const previews = Object.fromEntries(Object.entries(heroPreviews).filter(([file]) => ids.has(file.split('/').pop().split('__')[0])));
-      const payload = {offers:pick(PRICES.offers,ids), colors:pick(colors,ids), thumbs:pick(colorThumbs,ids),history:pick(HISTORY.points || {},ids),compareWith:pick(detailExtras.compareWith,ids),previews};
-      const body = `(()=>{const d=betterUnpack(${J(pack(payload))});Object.assign(PRICES.offers,d.offers);Object.assign(COLORIMG,d.colors);Object.assign(COLORTHUMB,d.thumbs);Object.assign(COMPARE_WITH,d.compareWith);Object.assign(HEROPREVIEWS,d.previews);Object.assign(window.betterDetailHistory ||= {},d.history);if(typeof HISTORY!=='undefined')Object.assign(HISTORY.points,d.history);(window.betterDetailChunks ||= []).push(${index});})();`;
+      const payload = {models:pick(fullModels,ids),offers:pick(PRICES.offers,ids), colors:pick(colors,ids), thumbs:pick(colorThumbs,ids),history:pick(HISTORY.points || {},ids),compareWith:pick(detailExtras.compareWith,ids),previews};
+      const body = `(()=>{const d=betterUnpack(${J(pack(payload))});for(const [id,full]of Object.entries(d.models||{})){const p=DATA.find(p=>p.id===id);if(p)Object.assign(p,full);}Object.assign(PRICES.offers,d.offers);Object.assign(COLORIMG,d.colors);Object.assign(COLORTHUMB,d.thumbs);Object.assign(COMPARE_WITH,d.compareWith);Object.assign(HEROPREVIEWS,d.previews);Object.assign(window.betterDetailHistory ||= {},d.history);if(typeof HISTORY!=='undefined')Object.assign(HISTORY.points,d.history);(window.betterDetailChunks ||= []).push(${index});})();`;
       const compact = transformSync(body,{minify:true,target:'es2020'}).code;
       const f = `data/details/chunk-${index}.js`;
       const url = writeBundle(f,compact);
@@ -584,7 +587,7 @@ function build({ inline, standalone }) {
     }
     imgdata = `const {IMGDATA,THUMBDATA,COLORIMG,COLORTHUMB}=\n${compactJ({IMGDATA:main,THUMBDATA:thumb,COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds)})};\n`;
   }
-  const coreProducts = phones.map(({ summaryEn, sources, ...p },i) => lazy ? {...p,_detailChunk:Math.floor(i/chunkSize)} : p);
+  const coreProducts = lazy ? fullProducts.map(catalogueIndex) : fullProducts;
   const catalogue = lazy ? groupCatalogue(coreProducts, {IMGDATA:main,THUMBDATA:thumb,
     COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds),PBOX:detailExtras.photoBoxes}) : null;
   const products = (lazy ? unpackSource + catalogueSource
