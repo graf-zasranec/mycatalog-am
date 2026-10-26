@@ -23,7 +23,11 @@ try{for(const name of (process.env.RESPONSIVE_ENGINES||'chromium,webkit').split(
   await p.keyboard.press('Shift+Tab');
   assert.ok(await p.locator('.bx-filter-sidebar').evaluate(el=>el.contains(document.activeElement)),'modal retains keyboard focus');
   await p.setViewportSize({width:1024,height:768});
-  await p.waitForTimeout(100);
+  // WebKit can deliver the media-query change after the viewport command returns.
+  await p.waitForFunction(()=>!document.documentElement.classList.contains('fs-open'),null,{timeout:5000}).catch(async error=>{
+   const state=await p.evaluate(()=>({width:innerWidth,desktop:matchMedia('(min-width: 801px)').matches,classes:document.documentElement.className,sidebar:getComputedStyle(document.querySelector('.bx-filter-sidebar')).position}));
+   throw new Error(`${name}/${lang}/${theme}: resize did not close modal: ${JSON.stringify(state)}; ${error.message}`);
+  });
   assert.equal(await p.locator('html.fs-open').count(),0,'desktop resize closes mobile modal and unlocks scrolling');
   assert.equal(await p.locator('.bx-filter-sidebar[aria-modal]').count(),0,'desktop sidebar is not a modal');
   for(const [width,height]of [[320,568],[568,320],[720,450],[800,600],[801,600],[820,1180],[1024,768],[1440,900],[2560,1080]]){

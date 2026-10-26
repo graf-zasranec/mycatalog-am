@@ -4,6 +4,11 @@ const harness="import assert from 'node:assert/strict';\n"+fs.readFileSync('tool
  .replace("from './analytics.mjs'",'from '+JSON.stringify(new URL('./analytics.mjs',import.meta.url).href))
  .replace('PMIN, PMAX };','PMIN, PMAX, bxFilterForm, bxFilterOptions, bxFilterSignature, bxHeroOffers, mastHero, bxPriceRange, routeLinkClick, priceBounds, bxFilterDraftHTML };');
 const checks=`
+const {prerender,productRenderer}=await import(${JSON.stringify(new URL('./prerender.mjs',import.meta.url).href)});
+const renderData={DATA:phones,STR,PRICES:prices,TERMS,HISTORY:stub.HISTORY,COMING:stub.COMING,PAGEONLY:{},MERGED:{},BLOG:[],IMGDATA:{},THUMBDATA:{},COLORIMG:{},COLORTHUMB:{},COMPARE_WITH:{}};
+assert.ok(!prerender(renderData).main.includes('data-card-photo'),'standalone consumers retain native photos without the served boot loader');
+assert.ok(prerender(renderData,{deferPhotos:true}).main.includes('data-card-photo'),'served catalogue opts into controlled loading');
+assert.ok(!productRenderer(renderData)(null,'en').main.includes('data-card-photo'),'renderer defaults preserve single-file exports');
 const tvBounds=app.priceBounds('tv');assert.equal(app.bxPriceRange('1000000','',tvBounds.min,tvBounds.max).valid,true,'blank maximum uses target TVs range');
 assert.equal(app.bxPriceRange('','100000',105000,2500000).valid,true,'blank minimum permits a cheaper category budget');
 assert.equal(app.bxPriceRange('200000','100000').valid,false,'explicit reversed price range rejected');

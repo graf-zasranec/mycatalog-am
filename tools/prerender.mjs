@@ -8,15 +8,15 @@ export function deferCataloguePhotos(html) {
   return html.replace(/<img class="pimg"[^>]*>/g, image => index++ < 4 ? image
     : `<template data-card-photo>${image}</template><noscript data-card-photo>${image}</noscript>`);
 }
-export function prerender(data) {
-  return renderer(data)(null, 'hy');
+export function prerender(data, options) {
+  return renderer(data, options)(null, 'hy');
 }
 
-export function productRenderer(data) {
-  return renderer(data);
+export function productRenderer(data, options) {
+  return renderer(data, options);
 }
 
-function renderer(data) {
+function renderer(data, {deferPhotos = false} = {}) {
   const noop = () => {};
   const nodes = new Map();
   const element = () => ({innerHTML:'',textContent:'',value:'',dataset:{},style:{},classList:{add:noop,remove:noop,contains:()=>false},setAttribute:noop,removeAttribute:noop,addEventListener:noop,querySelector:()=>null,querySelectorAll:()=>[]});
@@ -54,7 +54,7 @@ function renderer(data) {
   `)(...Object.values(vars));
   return (product, lang) => {
     const result = render(product, lang);
-    if (!product) result.main = deferCataloguePhotos(result.main);
+    if (!product && deferPhotos) result.main = deferCataloguePhotos(result.main);
     return result;
   };
 }

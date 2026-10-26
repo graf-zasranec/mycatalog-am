@@ -527,8 +527,8 @@ function build({ inline, standalone }) {
   const renderData = {DATA:phones, STR, PRICES, TERMS, HISTORY, COMING, PAGEONLY, MERGED, BLOG,
     DROPS, IMGDATA:main, THUMBDATA:thumb, COLORIMG:colors, COLORTHUMB:colorThumbs,
     COMPARE_WITH:pairs(phones, PRICES.offers || {}), PBOX:JSON.parse(rd('data/photo-box.json')), HEROPREVIEWS:heroPreviews};
-  const initial = prerender(renderData);
-  if (!inline && !renderProduct) renderProduct = productRenderer(renderData);
+  const initial = prerender(renderData, {deferPhotos:!inline});
+  if (!inline && !renderProduct) renderProduct = productRenderer(renderData, {deferPhotos:true});
   const realLinks = html => html.replace(/href="#\/p\/([^"#]+)"/g, 'href="/p/$1/" data-route="#/p/$1"')
     .replace(/href="#\/c\/([^"#]+)"/g, 'href="/c/$1/" data-route="#/c/$1"')
     .replace(/href="#\/blog(?:\/([^"#]+))?"/g, (_, id) => `href="/b/${id ? id + '/' : ''}" data-route="#/blog${id ? '/' + id : ''}"`);
