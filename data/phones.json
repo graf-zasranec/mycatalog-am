@@ -15216,7 +15216,9 @@
       "HS09 Airwrap Co-anda2x",
       "Airwrap Co-anda2x HS09"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "hair_styler"
+    }
   },
   {
     "id": "dyson-er-hd07",
@@ -15307,7 +15309,9 @@
     "priceAmdMax": 435000,
     "popularity": 38,
     "accent": "#1F3A5F",
-    "battery": {},
+    "battery": {
+      "life": "70 min"
+    },
     "body": {
       "weight": 3500,
       "materials": "Polycarbonate body, aluminium wand"
@@ -15333,7 +15337,9 @@
     "aliases": [
       "Dyson Gen5 Detect"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "cordless_vacuum"
+    }
   },
   {
     "id": "dyson-hd18-vinca-blue-topaz",
@@ -15366,7 +15372,10 @@
     "colors": [
       "Blue"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 1700
+    }
   },
   {
     "id": "dyson-hs08-i-d",
@@ -15690,7 +15699,10 @@
     "unsure": [
       "popularity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "hair_styler",
+      "power": 1300
+    }
   },
   {
     "id": "dyson-r-dh17",
@@ -15719,7 +15731,9 @@
     "unsure": [
       "popularity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "hair_dryer"
+    }
   },
   {
     "id": "dyson-v12-detect-slim-cordless-vacuum-cleaner",
@@ -15740,12 +15754,16 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Dyson V12 Detect Slim Cordless Vacuum Cleaner.",
     "unsure": [
       "popularity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "cordless_vacuum"
+    }
   },
   {
     "id": "dyson-zone",
@@ -49114,7 +49132,10 @@
     "unsure": [
       "popularity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "kettle",
+      "power": 1800
+    }
   },
   {
     "id": "xiaomi-pad-7",
@@ -67499,7 +67520,10 @@
     "colors": [
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "garment_steamer",
+      "power": 1300
+    }
   },
   {
     "id": "xiaomi-mijia-smart-air-purifier-6",
@@ -67536,7 +67560,9 @@
     "colors": [
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "air_purifier"
+    }
   },
   {
     "id": "xiaomi-robot-vacuum-5",
@@ -67602,7 +67628,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "xiaomi-robot-vacuum-s40-pro",
@@ -67746,7 +67774,10 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "coffee_machine",
+      "power": 1350
+    }
   },
   {
     "id": "xiaomi-smart-air-fryer-6-5l",
@@ -67817,7 +67848,10 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {},
+    "appliance": {
+      "type": "air_purifier",
+      "power": 27
+    },
     "body": {
       "weight": 3000
     }
@@ -67888,7 +67922,10 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "air_purifier",
+      "power": 50
+    }
   },
   {
     "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
@@ -67960,7 +67997,9 @@
     "colors": [
       "Dark Grey"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "scale"
+    }
   },
   {
     "id": "xiaomi-sound-pocket",
@@ -69992,7 +70031,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "air_purifier"
+    }
   },
   {
     "id": "xiaomi-vacuum-s40c-bhr9664eu",
@@ -70111,7 +70152,9 @@
     "colors": [
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "wet_dry_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-l40-eub",
@@ -70142,7 +70185,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "xiaomi-vacuum-h50-bhr08gueu",
@@ -70264,7 +70309,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "285 min"
+    },
     "summaryEn": "Dreame Vacuum D20 Pro Plus EUA.",
     "unsure": [
       "popularity",
@@ -70272,7 +70319,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-d30-ultra-eua",
@@ -70296,7 +70345,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "230 min"
+    },
     "summaryEn": "Dreame Vacuum D30 Ultra EUA.",
     "unsure": [
       "popularity",
@@ -70308,7 +70359,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-l40-ultra-ae",
@@ -70332,7 +70385,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "194 min"
+    },
     "summaryEn": "Dreame Vacuum L40 Ultra AE.",
     "unsure": [
       "popularity",
@@ -70344,7 +70399,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-l50-ultra-ae-eua",
@@ -70368,7 +70425,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "200 min"
+    },
     "summaryEn": "Dreame Vacuum L50 Ultra AE EUA.",
     "unsure": [
       "popularity",
@@ -70380,7 +70439,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-l40s-pro-ultra",
@@ -70416,7 +70477,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-l50s-pro-ultra-eua",
@@ -70452,7 +70515,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-l60-ultra",
@@ -70488,7 +70553,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "xiaomi-vacuum-6-max",
@@ -70560,7 +70627,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-ultra-roller-complete-eua",
@@ -70596,7 +70665,9 @@
       "Black",
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-matrix10-ultra-eua",
@@ -70619,7 +70690,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "260 min"
+    },
     "summaryEn": "Dreame Vacuum MatriX10 Ultra EUA.",
     "unsure": [
       "popularity",
@@ -70630,7 +70703,9 @@
     "colors": [
       "White"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "dreame-vacuum-x60-pro-master",
@@ -70653,7 +70728,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "165 min"
+    },
     "summaryEn": "Dreame Vacuum X60 Pro Master.",
     "unsure": [
       "popularity",
@@ -70661,7 +70738,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "appliance": {}
+    "appliance": {
+      "type": "robot_vacuum"
+    }
   },
   {
     "id": "jbl-go-5",
@@ -80923,7 +81002,8 @@
     "appliance": {
       "type": "air_purifier",
       "area": "≤125 m²",
-      "control": "app"
+      "control": "app",
+      "power": 60
     },
     "summaryEn": "Xiaomi Smart Air Purifier Elite.",
     "sources": [
@@ -81191,7 +81271,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "appliance": {
       "type": "wet_dry_vacuum",
       "suction": "23000 Pa"
@@ -88696,7 +88778,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "power": 35
     },
     "summaryEn": "Karcher AF 30 Air Purifier.",
     "sources": [
@@ -91300,7 +91383,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2400
     },
     "summaryEn": "Braun TD5030IBK Air Fryer.",
     "sources": [
@@ -91658,7 +91742,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "volume": 2
+      "volume": 2,
+      "power": 1550
     },
     "summaryEn": "De'Longhi EC9555 Coffee Machine.",
     "sources": [
@@ -92832,7 +92917,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1550
     },
     "summaryEn": "De'Longhi EPAM960.75GLM Coffee Machine.",
     "sources": [
@@ -93515,7 +93601,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "90 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -93699,7 +93787,8 @@
     "battery": {},
     "appliance": {
       "type": "air_fryer",
-      "volume": 6.7
+      "volume": 6.7,
+      "power": 1350
     },
     "summaryEn": "Hisense HAF1350DR Air Fryer.",
     "sources": [
@@ -93911,7 +94000,8 @@
     "battery": {},
     "appliance": {
       "type": "air_fryer",
-      "volume": 11
+      "volume": 11,
+      "power": 2700
     },
     "summaryEn": "Hisense HAF2700DCD Air Fryer.",
     "sources": [
@@ -94824,7 +94914,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -96356,7 +96448,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 2450
     },
     "summaryEn": "Panasonic NF-BC1000KXE Air Fryer.",
     "sources": [
@@ -96389,7 +96482,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1450
     },
     "summaryEn": "Panasonic NF-CC500SXE Air Fryer.",
     "sources": [
@@ -96422,7 +96516,8 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1450
     },
     "summaryEn": "Panasonic NF-CC600ATS Air Fryer.",
     "sources": [
@@ -96956,7 +97051,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "30 min"
+    },
     "appliance": {
       "type": "cordless_vacuum",
       "noise": "80 dB"
@@ -97569,7 +97666,9 @@
       "Black"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "appliance": {
       "type": "cordless_vacuum"
     },
@@ -102500,7 +102599,9 @@
       "type": "body_groomer",
       "wetDry": true
     },
-    "battery": {},
+    "battery": {
+      "life": "100 min"
+    },
     "colors": [
       "Black"
     ],
@@ -104343,7 +104444,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Philips Epilator Series 8000 BRE708/00.",
     "sources": [
       "https://vlv.am/en/Product/46721"
@@ -104380,7 +104483,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Philips Epilator Series 8000 BRE710/00.",
     "sources": [
       "https://vlv.am/en/Product/15795"
@@ -104454,7 +104559,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Philips epilator BRE718/00.",
     "sources": [
       "https://vlv.am/en/Product/46719"
@@ -104491,7 +104598,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Philips Epilator Series 9000 BRE719/00.",
     "sources": [
       "https://vlv.am/en/Product/46718"
@@ -104528,7 +104637,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "Philips Epilator Series 9000 BRE728/00.",
     "sources": [
       "https://vlv.am/en/Product/46717"
@@ -104565,7 +104676,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Philips Epilator Series 8000 BRE730/10.",
     "sources": [
       "https://vlv.am/en/Product/26448"
@@ -104602,7 +104715,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Philips Epilator Series 8000 BRE735/00.",
     "sources": [
       "https://vlv.am/en/Product/16682"
@@ -104639,7 +104754,9 @@
     "appliance": {
       "type": "epilator"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Philips Epilator Series 8000 BRE740/10.",
     "sources": [
       "https://vlv.am/en/Product/16683"
@@ -104676,7 +104793,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX3651/11.",
     "sources": [
       "https://vlv.am/en/Product/18446"
@@ -104710,7 +104829,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX3651/12.",
     "sources": [
       "https://vlv.am/en/Product/18600"
@@ -104744,7 +104865,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX3671/13.",
     "sources": [
       "https://vlv.am/en/Product/38826"
@@ -104778,7 +104901,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX3671/14.",
     "sources": [
       "https://vlv.am/en/Product/18601"
@@ -104812,7 +104937,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX3673/11.",
     "sources": [
       "https://vlv.am/en/Product/28337"
@@ -104846,7 +104973,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX3673/14.",
     "sources": [
       "https://vlv.am/en/Product/18602"
@@ -104880,7 +105009,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX3675/15: two handles in the box.",
     "sources": [
       "https://vlv.am/en/Product/25016"
@@ -104914,7 +105045,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX4021/01.",
     "sources": [
       "https://vlv.am/en/Product/46727"
@@ -104948,7 +105081,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX4022/04.",
     "sources": [
       "https://vlv.am/en/Product/46722"
@@ -104982,7 +105117,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX4033/26.",
     "sources": [
       "https://vlv.am/en/Product/46723"
@@ -105016,7 +105153,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX4033/27.",
     "sources": [
       "https://vlv.am/en/Product/46724"
@@ -105050,7 +105189,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare 3100 Electric Toothbrush HX4033/32.",
     "sources": [
       "https://vlv.am/en/Product/46725"
@@ -105084,7 +105225,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX6232/41: two handles in the box.",
     "sources": [
       "https://vlv.am/en/Product/12061"
@@ -105152,7 +105295,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX6352/42.",
     "sources": [
       "https://vlv.am/en/Product/28339"
@@ -105186,7 +105331,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX6511/02.",
     "sources": [
       "https://vlv.am/en/Product/17519"
@@ -105220,7 +105367,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX6800/87.",
     "sources": [
       "https://vlv.am/en/Product/25018"
@@ -105254,7 +105403,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Philips Sonicare Electric Toothbrush HX6803/04.",
     "sources": [
       "https://vlv.am/en/Product/25934"
@@ -105288,7 +105439,9 @@
     "appliance": {
       "type": "water_flosser"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 days"
+    },
     "summaryEn": "Philips Sonicare Power Flosser HX3826/31.",
     "sources": [
       "https://vlv.am/en/Product/35157"
@@ -105322,7 +105475,9 @@
     "appliance": {
       "type": "water_flosser"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 days"
+    },
     "summaryEn": "Philips Sonicare Power Flosser HX3826/33.",
     "sources": [
       "https://vlv.am/en/Product/37170"
@@ -105737,7 +105892,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 350
     },
     "battery": {},
     "summaryEn": "Philips blender HR2602/00.",
@@ -105771,7 +105927,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 800
     },
     "battery": {},
     "summaryEn": "Philips hand blender HR2621/90.",
@@ -106033,7 +106190,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "coffee_machine"
+      "type": "coffee_machine",
+      "power": 1080
     },
     "battery": {},
     "summaryEn": "Philips drip coffee maker HD7459/20.",
@@ -106326,7 +106484,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "iron"
+      "type": "iron",
+      "power": 2300
     },
     "battery": {},
     "summaryEn": "Philips steam iron GC2672/40.",
@@ -106360,7 +106519,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "iron"
+      "type": "iron",
+      "power": 2400
     },
     "battery": {},
     "summaryEn": "Philips steam iron GC3675/30.",
@@ -106544,7 +106704,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 12
     },
     "battery": {},
     "summaryEn": "Philips air purifier AC0651/10.",
@@ -106579,7 +106740,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 21
     },
     "battery": {},
     "summaryEn": "Philips PureProtect Mini 900 Air Purifier AC0920/10.",
@@ -106648,7 +106810,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 40
     },
     "battery": {},
     "summaryEn": "Philips Air Performer AMF765/30.",
@@ -106683,7 +106846,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "Philips Air Performer AMF870/35.",
@@ -107103,7 +107267,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "microwave",
-      "volume": 20
+      "volume": 20,
+      "power": 700
     },
     "battery": {},
     "summaryEn": "Midea AM720C2MV Microwave: 20 L.",
@@ -107143,7 +107308,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "microwave",
-      "volume": 20
+      "volume": 20,
+      "power": 700
     },
     "battery": {},
     "summaryEn": "Midea MM720C2MV Microwave: 20 L.",
@@ -107259,7 +107425,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "grill",
-      "volume": 5.7
+      "volume": 5.7,
+      "power": 1760
     },
     "battery": {},
     "summaryEn": "Ninja Foodi Grill and Air Fryer EG351: 5.7 L.",
@@ -107294,7 +107461,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "multicooker",
-      "volume": 7.5
+      "volume": 7.5,
+      "power": 1760
     },
     "battery": {},
     "summaryEn": "Ninja Foodi MAX 14-in-1 SmartLid OL750EU: 7.5 L.",
@@ -107429,7 +107597,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "kettle",
-      "volume": 1.7
+      "volume": 1.7,
+      "power": 2400
     },
     "battery": {},
     "summaryEn": "KitchenAid Kettle 5KEK1722: 1.7 L.",
@@ -107471,7 +107640,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "kettle",
-      "volume": 1.5
+      "volume": 1.5,
+      "power": 2400
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Kettle 5KEK1522: 1.5 L.",
@@ -107564,7 +107734,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "blender"
+      "type": "blender",
+      "power": 1200
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Blender 5KSB4026.",
@@ -107611,7 +107782,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hand_mixer"
+      "type": "hand_mixer",
+      "power": 85
     },
     "battery": {},
     "summaryEn": "KitchenAid Hand Mixer 5KHM5110.",
@@ -109083,7 +109255,9 @@
     "appliance": {
       "type": "multigroom"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Multi-Trimmer MT726E.",
     "sources": [
       "https://eldorado.am/en/babyliss-mt726e"
@@ -109193,7 +109367,9 @@
     "appliance": {
       "type": "beard_trimmer"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Beard Trimmer T831E.",
     "sources": [
       "https://eldorado.am/en/babyliss-t831e"
@@ -109227,7 +109403,9 @@
     "appliance": {
       "type": "multigroom"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Multi-Trimmer MT725E.",
     "sources": [
       "https://eldorado.am/en/babyliss-mt725e"
@@ -109337,7 +109515,9 @@
     "appliance": {
       "type": "hair_clipper"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min"
+    },
     "summaryEn": "BaByliss Hair Clipper E978E.",
     "sources": [
       "https://eldorado.am/en/babyliss-e978e"
@@ -109732,7 +109912,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_curler",
-      "temperature": "160 - 210°C"
+      "temperature": "160 - 210°C",
+      "power": 36
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C454E.",
@@ -109766,7 +109947,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 25
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C449E.",
@@ -109800,7 +109982,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 64
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C453E.",
@@ -109871,7 +110054,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_curler"
+      "type": "hair_curler",
+      "power": 56
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C452E.",
@@ -110190,7 +110374,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_curler",
-      "temperature": "110 - 180°C"
+      "temperature": "110 - 180°C",
+      "power": 90
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C338E.",
@@ -110260,7 +110445,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_curler",
-      "temperature": "160 - 210°C"
+      "temperature": "160 - 210°C",
+      "power": 57
     },
     "battery": {},
     "summaryEn": "BaByliss Curling Iron C457E.",
@@ -110294,7 +110480,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 49
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST914PE.",
@@ -110615,7 +110802,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 48
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST620E.",
@@ -110829,7 +111017,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2100
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D773DE.",
@@ -111045,7 +111234,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "235 °C"
+      "temperature": "235 °C",
+      "power": 49
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST212PE.",
@@ -111080,7 +111270,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "205°C"
+      "temperature": "205°C",
+      "power": 32
     },
     "battery": {},
     "summaryEn": "BaByliss Multi-Styler C115E.",
@@ -111116,7 +111307,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "hair_styler",
-      "temperature": "140 - 235°C"
+      "temperature": "140 - 235°C",
+      "power": 36
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Straightener ST259E.",
@@ -113763,7 +113955,9 @@
     "appliance": {
       "type": "robot_vacuum"
     },
-    "battery": {},
+    "battery": {
+      "life": "75 min"
+    },
     "summaryEn": "iRobot Robot Vacuum Braava Jet m6.",
     "sources": [
       "https://eldorado.am/en/irobot-braava-jet-m6"
@@ -114136,7 +114330,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "power": 23
     },
     "battery": {},
     "summaryEn": "Boneco Hybrid Humidifier and Air Purifier W200A.",
@@ -114291,7 +114486,8 @@
       "type": "humidifier",
       "volume": 10,
       "noise": "25 dB",
-      "area": "150 m²"
+      "area": "150 m²",
+      "power": 27
     },
     "battery": {},
     "summaryEn": "Boneco Hybrid Humidifier and Air Purifier H700.",
@@ -114398,7 +114594,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 26
     },
     "battery": {},
     "summaryEn": "Shark Air Purifier HP150EU.",
@@ -114474,7 +114671,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 54
     },
     "battery": {},
     "summaryEn": "Shark Air Purifier HP300EU.",
@@ -114630,7 +114828,9 @@
     "appliance": {
       "type": "robot_vacuum"
     },
-    "battery": {},
+    "battery": {
+      "life": "75 min"
+    },
     "summaryEn": "iRobot Robot Vacuum Roomba i7+.",
     "sources": [
       "https://eldorado.am/en/irobot-roomba-i7-plus"
@@ -116546,7 +116746,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_dryer"
+      "type": "hair_dryer",
+      "power": 2000
     },
     "battery": {},
     "summaryEn": "BaByliss Hair Dryer D212E.",
@@ -116581,7 +116782,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 39
     },
     "battery": {},
     "summaryEn": "BaByliss Multi-Styler MS22E.",
@@ -116649,7 +116851,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "meat_grinder"
+      "type": "meat_grinder",
+      "power": 1400
     },
     "battery": {},
     "summaryEn": "Kenwood Meat Grinder MG360.",
@@ -116683,7 +116886,8 @@
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 2200
     },
     "battery": {},
     "summaryEn": "Kenwood Kettle SJM110.",
@@ -138290,7 +138494,9 @@
     "appliance": {
       "type": "toothbrush"
     },
-    "battery": {},
+    "battery": {
+      "life": "14 days"
+    },
     "summaryEn": "Oral-B Pulsonic Slim Luxe 4000 Sonic Toothbrush.",
     "sources": [
       "https://eldorado.am/en/oral-pulsonic-slim-luxe-4000-platin"
