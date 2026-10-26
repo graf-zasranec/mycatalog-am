@@ -1539,6 +1539,8 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
 /* The heading spans both columns. IDs in :is() formerly overrode the class rule. */
 #main>.shell:has(>#gridbox)>#results.resbar{grid-column:1/-1;grid-row:1;justify-content:flex-start;text-align:left}
 #results :is(h1,h2)>.bx-category-icon{display:none}
+/* Compact mobile cards use the product page for colour selection. */
+@media(max-width:800px){.pcard .cdots{display:none}}
 
 </style>
 
