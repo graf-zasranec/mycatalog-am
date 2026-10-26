@@ -13,7 +13,7 @@ import { attachOfferConfigs } from './tools/offer-configs.mjs';
 import { megabytePhoneMemory } from './tools/spec-values.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender, productRenderer } from './tools/prerender.mjs';
-import { pack, unpackSource } from './tools/compact-data.mjs';
+import { pack, unpackSource, groupCatalogue, catalogueSource } from './tools/compact-data.mjs';
 import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
@@ -482,8 +482,13 @@ function writeBundle(file, content) {
   const temporary = file + '.tmp-' + process.pid;
   try { fs.writeFileSync(temporary, content); fs.renameSync(temporary, file); }
   finally { if (fs.existsSync(temporary)) fs.unlinkSync(temporary); }
+  const hash = crypto.createHash('sha256').update(content).digest('hex').slice(0, 10);
+  const fingerprinted = file.replace(/(\.[^.]+)$/, `.${hash}$1`);
+  if (!fs.existsSync(fingerprinted)) fs.writeFileSync(fingerprinted, content);
+  return `${fingerprinted}?v=${hash}`;
 }
 let renderProduct;
+const detailUrlsById = new Map();
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
   // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
@@ -573,14 +578,19 @@ function build({ inline, standalone }) {
       const body = `(()=>{const d=betterUnpack(${J(pack(payload))});Object.assign(PRICES.offers,d.offers);Object.assign(COLORIMG,d.colors);Object.assign(COLORTHUMB,d.thumbs);Object.assign(COMPARE_WITH,d.compareWith);Object.assign(HEROPREVIEWS,d.previews);Object.assign(window.betterDetailHistory ||= {},d.history);if(typeof HISTORY!=='undefined')Object.assign(HISTORY.points,d.history);(window.betterDetailChunks ||= []).push(${index});})();`;
       const compact = transformSync(body,{minify:true,target:'es2020'}).code;
       const f = `data/details/chunk-${index}.js`;
-      writeBundle(f,compact);
-      chunkUrls.push(f+'?v='+crypto.createHash('sha256').update(compact).digest('hex').slice(0,10));
+      const url = writeBundle(f,compact);
+      chunkUrls.push(url);
+      for (const id of ids) detailUrlsById.set(id, url);
     }
     imgdata = `const {IMGDATA,THUMBDATA,COLORIMG,COLORTHUMB}=\n${compactJ({IMGDATA:main,THUMBDATA:thumb,COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds)})};\n`;
   }
-  const products = (lazy ? unpackSource : '') + `const DATA=${compactJ(phones.map(({ summaryEn, sources, ...p },i) => lazy ? {...p,_detailChunk:Math.floor(i/chunkSize)} : p))};\n`
-    + (lazy ? `const DETAIL_CHUNKS=${J(chunkUrls)};\nconst HEROPREVIEWS={};\n` + imgdata : '')
-    + `const PBOX=${compactJ(detailExtras.photoBoxes)};\n`
+  const coreProducts = phones.map(({ summaryEn, sources, ...p },i) => lazy ? {...p,_detailChunk:Math.floor(i/chunkSize)} : p);
+  const catalogue = lazy ? groupCatalogue(coreProducts, {IMGDATA:main,THUMBDATA:thumb,
+    COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds),PBOX:detailExtras.photoBoxes}) : null;
+  const products = (lazy ? unpackSource + catalogueSource
+      + `const {DATA,IMGDATA,THUMBDATA,COLORIMG,COLORTHUMB,PBOX}=betterCatalogue(${compactJ(catalogue)});\n`
+      + `const DETAIL_CHUNKS=${J(chunkUrls)};\nconst HEROPREVIEWS={};\n`
+      : `const DATA=${J(coreProducts)};\nconst PBOX=${J(detailExtras.photoBoxes)};\n`)
     + (lazy ? `let COMPARE_WITH={};\nconst DETAIL_DATA_URL=${J(extrasUrl)};\n`
       : `const COMPARE_WITH=${J(detailExtras.compareWith)};\n`);
   // Scraper evidence stays in prices.json; the browser uses the verified image maps,
@@ -592,8 +602,7 @@ function build({ inline, standalone }) {
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
       const compact = transformSync(body, { minify: true, target: 'es2020', legalComments: 'none' }).code;
-      writeBundle(f, compact);
-      urls.push(`${f}?v=${crypto.createHash('sha256').update(compact).digest('hex').slice(0, 10)}`);
+      urls.push(writeBundle(f, compact));
     }
   }
   let appJs = '\n'
@@ -623,10 +632,9 @@ function build({ inline, standalone }) {
   let script;
   if (lazy) {
     appJs = transformSync(appJs, { minify: true, target: 'es2020', legalComments: 'none' }).code;
-    writeBundle('data/site-app.js', appJs);
-    urls.push(`data/site-app.js?v=${crypto.createHash('sha256').update(appJs).digest('hex').slice(0, 10)}`);
-    writeBundle('data/site-boot.js', BOOT_JS);
-    script = `\n<script defer src="data/site-boot.js?v=${crypto.createHash('sha256').update(BOOT_JS).digest('hex').slice(0, 10)}" data-src="${urls.join(' ')}"><\/script>\n`;
+    urls.push(writeBundle('data/site-app.js', appJs));
+    const bootUrl = writeBundle('data/site-boot.js', BOOT_JS);
+    script = `\n<script defer src="${bootUrl}" data-src="${urls.join(' ')}"><\/script>\n`;
   } else script = '\n<script>' + appJs + '<\/script>\n';
   if (!standalone) return shell + script;          // the artifact platform supplies the <head>
   const { head, body } = splitShell(shell);
@@ -905,6 +913,8 @@ function interactiveProduct(page, lang, product, relLinks = '') {
   const set = image?.match(/srcset="([^"]+)"/)?.[1];
   const sizes = image?.match(/sizes="([^"]+)"/)?.[1];
   const preload = photo ? `<link rel="preload" as="image" href="/${photo}"${set ? ` imagesrcset="${set}" imagesizes="${sizes}"` : ''} fetchpriority="high">` : '';
+  const detailUrl = detailUrlsById.get(product.id);
+  const detailPreload = detailUrl ? `<link rel="preload" as="script" href="/${detailUrl}" fetchpriority="low">` : '';
   const seoTags = /<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
   const productHead = page.split('</head>')[0];
   const head = interactiveHome.split('</head>')[0].replace(seoTags, '')
@@ -913,7 +923,7 @@ function interactiveProduct(page, lang, product, relLinks = '') {
     .replace(/(href|src)="((?:images|data)\/)/g, '$1="/$2')
     .replace('<html lang="hy">', `<html lang="${lang}">`)
     .replace("base-uri 'none'", "base-uri 'self'")
-    + '<base href="/">' + preload + productCSSLink + (productHead.match(seoTags) || []).join('\n');
+    + '<base href="/">' + preload + detailPreload + productCSSLink + (productHead.match(seoTags) || []).join('\n');
   const content = rendered.main
     .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
   const body = interactiveHome.slice(interactiveHome.indexOf('</head>') + 7)

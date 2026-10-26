@@ -2,7 +2,7 @@ import fs from'node:fs';
 // Reuse the catalogue's real isolated data/DOM harness, adding presentation exports.
 const harness="import assert from 'node:assert/strict';\n"+fs.readFileSync('tools/app-test.mjs','utf8').split('let bad = 0, n = 0;')[0]
  .replace("from './analytics.mjs'",'from '+JSON.stringify(new URL('./analytics.mjs',import.meta.url).href))
- .replace('PMIN, PMAX };','PMIN, PMAX, bxFilterForm, bxFilterOptions, bxFilterSignature, bxHeroOffers, mastHero, bxPriceRange, routeLinkClick, priceBounds };');
+ .replace('PMIN, PMAX };','PMIN, PMAX, bxFilterForm, bxFilterOptions, bxFilterSignature, bxHeroOffers, mastHero, bxPriceRange, routeLinkClick, priceBounds, bxFilterDraftHTML };');
 const checks=`
 const tvBounds=app.priceBounds('tv');assert.equal(app.bxPriceRange('1000000','',tvBounds.min,tvBounds.max).valid,true,'blank maximum uses target TVs range');
 assert.equal(app.bxPriceRange('','100000',105000,2500000).valid,true,'blank minimum permits a cheaper category budget');
@@ -19,6 +19,13 @@ const form=app.bxFilterForm();
 assert.ok(form.includes('data-bx-set="brand"'),'cold prerender hydration retains brand choices');
 assert.ok(app.filterBodies.has('price'),'native option bodies initialized without opening hidden panels');
 assert.ok(app.bxFilterOptions('stor').some(v=>v.value==='256'),'actual256GB option remains');
+const applied=app.st,bodies=[...app.filterBodies];
+const headphoneDraft=app.bxFilterDraftHTML({...applied,cat:'headphones'});
+assert.ok(headphoneDraft.includes('data-bx-set="hform"'),'category draft offers headphone-specific type');
+assert.ok(!headphoneDraft.includes('value="Dell"'),'category draft excludes unrelated brands');
+assert.ok(!headphoneDraft.includes('data-bx-field="scr"'),'category draft excludes irrelevant screen filters');
+assert.equal(app.st,applied,'category preview preserves applied state identity');
+assert.deepEqual([...app.filterBodies],bodies,'category preview preserves original toolbar cache');
 assert.ok(app.mastHero().includes('bx-categories'),'approved desktop tiles remain');
 const css=fs.readFileSync('_shell.html','utf8');
 assert.ok(!css.includes('>:is(.chips,.resbar,#searchhint,#gridbox,#pager)'), 'conflicting high-specificity heading rule removed');

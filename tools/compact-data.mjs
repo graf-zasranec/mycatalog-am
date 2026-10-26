@@ -33,3 +33,27 @@ export function unpack([schemas, strings, data]) {
 }
 
 export const unpackSource = `const betterUnpack=${unpack.toString()};\n`;
+
+// Keep each model beside its image paths: gzip can reuse the model name in the
+// filenames within its dictionary window instead of receiving distant maps.
+export function groupCatalogue(products, maps) {
+  const ids = new Set(products.map(p => p.id));
+  return {
+    rows: products.map(p => [p, Object.fromEntries(Object.entries(maps)
+      .filter(([, map]) => Object.hasOwn(map, p.id)).map(([key, map]) => [key, map[p.id]]))]),
+    extra: Object.fromEntries(Object.entries(maps).map(([key, map]) =>
+      [key, Object.fromEntries(Object.entries(map).filter(([id]) => !ids.has(id)))]))
+  };
+}
+
+export function restoreCatalogue({rows, extra}) {
+  const maps = Object.fromEntries(Object.entries(extra).map(([key, map]) => [key, {...map}]));
+  const DATA = rows.map(([product, assets]) => {
+    for (const [key, value] of Object.entries(assets))
+      Object.defineProperty(maps[key], product.id, {value, enumerable:true, writable:true, configurable:true});
+    return product;
+  });
+  return {DATA, ...maps};
+}
+
+export const catalogueSource = `const betterCatalogue=${restoreCatalogue.toString()};\n`;

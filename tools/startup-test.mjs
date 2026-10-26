@@ -5,6 +5,7 @@ import vm from 'node:vm';
 // A slow hero download must not prevent an already rendered product page from
 // gaining working controls. Exercise the actual boot script with decode pending.
 const appended = [];
+const priorities = [];
 const main = { dataset: { prerenderProduct: 'honor-x8c' } };
 const boot = {
   document: {
@@ -12,7 +13,7 @@ const boot = {
     documentElement: { classList: { contains: () => false }, lang: 'en' },
     getElementById: id => id === 'main' ? main : { decode: () => new Promise(() => {}) },
     createElement: tag => ({ tag }),
-    head: { appendChild: el => { if (el.tag === 'script') { appended.push(el.src); queueMicrotask(() => el.onload()); } } }
+    head: { appendChild: el => { if (el.tag === 'script') { appended.push(el.src); priorities.push(el.fetchPriority); queueMicrotask(() => el.onload()); } } }
   },
   DATA: [{ id: 'honor-x8c', _detailChunk: 0 }], DETAIL_CHUNKS: ['detail.js'],
   location: { hash: '', pathname: '/en/p/honor-x8c/', protocol: 'http:' },
@@ -25,6 +26,7 @@ boot.setTimeout = (f, delay = 0) => { if (!delay) queueMicrotask(f); return 0; }
 vm.runInNewContext(fs.readFileSync('tools/site-boot.js', 'utf8'), boot);
 await new Promise(resolve => setImmediate(resolve));
 assert.deepEqual(appended, ['products.js', 'prices.js', 'detail.js', 'app.js'], 'image decoding cannot hold product controls hostage');
+assert.deepEqual(priorities,['high','high','high','high'],'post-paint interactive data takes priority over offscreen images');
 
 // Model CacheStorage and the network boundary; run the real service worker's
 // fetch handler so version changes and unversioned prices exercise its branches.
@@ -59,6 +61,14 @@ assert.equal(await read('/en/'), 'third');
 revision = 'fourth';
 assert.equal(await read('/en/'), 'fourth', 'HTML always checks for current bundle versions');
 assert.equal(await read('/data/site-app.js?v=invalid'), 'fourth');
+revision = 'fifth';
+const appBundle = '/data/site-app.123456abcd.js?v=123456abcd';
+assert.equal(await read(appBundle),'fifth');
+revision = 'new-app';
+assert.equal(await read(appBundle),'fifth','fingerprinted application code reopens from local cache');
+assert.equal(await read('/data/details/chunk-0.abcdef1234.js?v=abcdef1234'),'new-app');
+revision = 'new-details';
+assert.equal(await read('/data/details/chunk-0.abcdef1234.js?v=abcdef1234'),'new-app','fingerprinted product details reuse cache');
 revision = 'fifth';
 assert.equal(await read('/data/site-app.js?v=invalid'), 'fifth', 'only valid content-hash versions are immutable');
 const style = '/data/site-ui.123456abcd.css?v=123456abcd';

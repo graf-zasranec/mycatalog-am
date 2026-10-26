@@ -3,7 +3,7 @@
   const main = document.getElementById('main');
   if (document.documentElement.classList.contains('route-pending')) main.dataset.loading = document.documentElement.dataset.routeLabel;
   const append = url => new Promise((resolve, reject) => {
-    const s = document.createElement('script'); s.src = url; s.async = false;
+    const s = document.createElement('script'); s.src = url; s.async = false; s.fetchPriority = 'high';
     s.onload = resolve; s.onerror = reject; document.head.appendChild(s);
   });
   const start = async () => {
@@ -12,6 +12,7 @@
       // Preloading in the deferred boot script competed with first-paint fonts.
       for (const url of urls) {
         const link = document.createElement('link'); link.rel = 'preload'; link.as = 'script'; link.href = url;
+        link.fetchPriority = 'high';
         document.head.appendChild(link);
       }
       // The prerendered photo loads independently at high priority. A slow image

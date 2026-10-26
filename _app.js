@@ -670,6 +670,9 @@ function ensureDetail(p) {
 }
 function hydrateCardPhotos() {
   if (typeof DETAIL_CHUNKS === 'undefined') return;
+  // Mobile cards have no colour dots; loading whole detail chunks for hidden
+  // swatches competed with the controls and the images people can actually see.
+  if (window.matchMedia('(max-width: 800px)').matches) return;
   const cards = [...document.querySelectorAll('.pcard[data-id]')];
   const needed = cards.map(el=>byId(el.dataset.id)).filter(p=>p && p.colors?.length>1 && !CIMG[p.id]);
   if (!needed.length) return;
@@ -681,6 +684,9 @@ function hydrateCardPhotos() {
     }
   }).catch(()=>{});
 }
+window.matchMedia('(min-width: 801px)').addEventListener('change', e => {
+  if (e.matches) hydrateCardPhotos();
+});
 let lazyDone = false;
 function loadLazy() {
   if (typeof DETAIL_CHUNKS !== 'undefined') return;
@@ -2473,7 +2479,7 @@ function detailView(p) {
       : ''}
     ${offs.length ? `<p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>` : ''}
 
-    
+
     ${historyHTML(p)}
 
     <h2 class="sh">${esc(t('detail.full_specs'))}</h2>
@@ -3600,12 +3606,66 @@ function bxFilterOptions(k){if(k==='ram'||k==='stor'){const vals=[...new Set(inV
 function bxFilterGroup(k,pool){const f=FILT[k];if(!f)return'';const label=esc(f.label());if(f.kind==='set'){const vals=setVals(k,f,pool);if(vals.length<2)return'';return `<fieldset class="bx-fieldset" data-bx-set="${k}"><legend>${label}</legend>${k==='brand'?`<input class="bx-brand-find" type="search" placeholder="${esc(bxFilterWord('find'))}" aria-label="${esc(bxFilterWord('find'))}">`:''}<div class="bx-check-grid">${vals.map(v=>`<label><input type="checkbox" name="${k}" value="${esc(String(v))}" data-bx-field="${k}" ${(st[f.arr]||[]).includes(v)?'checked':''}><span>${esc(f.fmt?f.fmt(v):v)}</span></label>`).join('')}</div></fieldset>`;}
 if(f.kind==='flag')return `<label class="bx-flag"><input type="checkbox" data-bx-field="${k}" ${st[k]?'checked':''}><span>${label}</span></label>`;
 const options=bxFilterOptions(k);if(options.length<2)return'';return `<label class="bx-field">${label}<select name="${k}" data-bx-field="${k}">${options.map(o=>`<option value="${esc(o.value)}" ${String(st[k]||0)===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`;}
-function bxFilterForm(barHTML){if(!filterBodies.has('price'))filterBar();const pool=inView(),bar=barHTML||document.querySelector('#fbar')?.outerHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${bxCategoryChoices(cats)}${bxFilterGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}">${esc(bxFilterWord('budget'))} ${money(n)}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxFilterGroup('shop',pool)}<div class="bx-spec-fields">${keys.map(k=>bxFilterGroup(k,pool)).join('')}</div><div class="bx-flag-fields">${flags.map(k=>bxFilterGroup(k,pool)).join('')}</div></div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
+function bxFilterForm(barHTML){const pool=inView(),bar=barHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${bxCategoryChoices(cats)}${bxFilterGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}">${esc(bxFilterWord('budget'))} ${money(n)}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxFilterGroup('shop',pool)}<div class="bx-spec-fields">${keys.map(k=>bxFilterGroup(k,pool)).join('')}</div><div class="bx-flag-fields">${flags.map(k=>bxFilterGroup(k,pool)).join('')}</div></div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
 function bxRestoreFilters(force=false){const bar=document.querySelector('#fbar');if(!bar)return;let panel=document.querySelector('.bx-filter-sidebar');const signature=bxFilterSignature();if(panel&&!force&&panel.dataset.signature===signature)return;if(!panel){panel=document.createElement('aside');panel.className='bx-filter-sidebar';panel.setAttribute('aria-label',x('filtersT'));bar.before(panel);}panel.dataset.signature=signature;panel.innerHTML=bxFilterForm();}
 function bxStartFilters(){const main=document.querySelector('#main');if(main)new MutationObserver(()=>bxRestoreFilters()).observe(main,{childList:true});bxRestoreFilters();}
 document.addEventListener('click',e=>{const budget=e.target.closest('[data-bx-budget]');if(budget){const form=budget.closest('form');form.querySelector('[data-bx-min]').value='';form.querySelector('[data-bx-max]').value=budget.dataset.bxBudget;form.querySelector('[data-bx-max]').setCustomValidity('');}if(e.target.closest('[data-fsheet]')){bxFilterInvoker=e.target.closest('[data-fsheet]');bxRestoreFilters(true);const panel=document.querySelector('.bx-filter-sidebar');panel?.setAttribute('role','dialog');panel?.setAttribute('aria-modal','true');panel?.querySelector('.bx-filter-close')?.focus();}if(e.target.closest('[data-fsclose]'))bxCloseFilterFocus();if(e.target.closest('[data-rm]'))queueMicrotask(()=>bxRestoreFilters(true));});
 document.addEventListener('input',e=>{if(e.target.matches('[data-bx-min],[data-bx-max]'))e.target.closest('form').querySelector('[data-bx-max]').setCustomValidity('');if(!e.target.matches('.bx-brand-find'))return;const query=e.target.value.toLocaleLowerCase(st.lang);for(const label of e.target.closest('fieldset').querySelectorAll('.bx-check-grid label'))label.hidden=!label.textContent.toLocaleLowerCase(st.lang).includes(query);});
-document.addEventListener('submit',e=>{if(!e.target.matches('.bx-filter-form'))return;e.preventDefault();const form=e.target,lo=form.querySelector('[data-bx-min]'),hi=form.querySelector('[data-bx-max]');const cat=form.querySelector('[data-bx-category]:checked').value,changed=cat!==st.cat,bounds=priceBounds(cat);const {min,max,valid}=bxPriceRange(lo.value,hi.value,bounds.min,bounds.max);if(!valid){hi.setCustomValidity(st.lang==='ru'?'Максимум должен быть не меньше минимума':st.lang==='hy'?'Առավելագույնը պետք է մեծ կամ հավասար լինի նվազագույնին':'Maximum must be at least the minimum');hi.reportValidity();hi.addEventListener('input',()=>hi.setCustomValidity(''),{once:true});return;}hi.setCustomValidity('');const next={pmin:min,pmax:max,page:1};for(const group of form.querySelectorAll('[data-bx-set]')){const k=group.dataset.bxSet;next[FILT[k].arr]=[...group.querySelectorAll('input:checked')].map(el=>el.value);}for(const el of form.querySelectorAll('select[data-bx-field],.bx-flag input'))next[el.dataset.bxField]=el.type==='checkbox'?el.checked:+el.value;if(changed){st.cat=cat;setBounds();if(hi.value==='')next.pmax=PMAX;if(lo.value==='')next.pmin=Math.min(PMIN,next.pmax);}Object.assign(st,next);if(changed){pruneFilters();if(!sortKeys().includes(st.sort))st.sort='popular';}closeSheet();bxCloseFilterFocus();save();if(changed){location.hash=cat?'#/c/'+cat:'#/';}else{refresh();bxRestoreFilters(true);} });
+// Keep category changes in the form until Apply, while showing the selected
+// category's real brands/specifications immediately. Rendering a draft must not
+// mutate the catalogue state, price bounds or the native toolbar's option cache.
+function bxReadFilterForm(form) {
+  const cat=form.querySelector('[data-bx-category]:checked').value;
+  const bounds=priceBounds(cat);
+  const range=bxPriceRange(form.querySelector('[data-bx-min]').value,form.querySelector('[data-bx-max]').value,bounds.min,bounds.max);
+  const next={...st,cat,pmin:range.min,pmax:range.max,bounds:[bounds.min,bounds.max],page:1};
+  for(const [k,f]of Object.entries(FILT))next[f.arr||k]=f.arr?[]:D[k];
+  for(const group of form.querySelectorAll('[data-bx-set]'))
+    next[FILT[group.dataset.bxSet].arr]=[...group.querySelectorAll('input:checked')].map(el=>el.value);
+  for(const el of form.querySelectorAll('select[data-bx-field],.bx-flag input'))
+    next[el.dataset.bxField]=el.type==='checkbox'?el.checked:+el.value;
+  return {next,valid:range.valid};
+}
+function bxFilterDraftHTML(next) {
+  const applied=st,min=PMIN,max=PMAX,bodies=new Map(filterBodies);
+  try {
+    st={...next};const bounds=priceBounds(st.cat);PMIN=bounds.min;PMAX=bounds.max;
+    pruneFilters();
+    return bxFilterForm();
+  }finally{
+    st=applied;PMIN=min;PMAX=max;filterBodies.clear();
+    for(const [key,value]of bodies)filterBodies.set(key,value);
+  }
+}
+document.addEventListener('change',e=>{
+  if(!e.target.matches('[data-bx-category]'))return;
+  const form=e.target.closest('form'),panel=form.closest('.bx-filter-sidebar');
+  const low=form.querySelector('[data-bx-min]').value,high=form.querySelector('[data-bx-max]').value;
+  const cat=e.target.value,scroll=panel.scrollTop;
+  const {next}=bxReadFilterForm(form);
+  form.outerHTML=bxFilterDraftHTML(next);
+  const replacement=panel.querySelector('form');
+  replacement.querySelector('[data-bx-min]').value=low;
+  replacement.querySelector('[data-bx-max]').value=high;
+  const selected=[...replacement.querySelectorAll('[data-bx-category]')].find(el=>el.value===cat);
+  selected?.focus({preventScroll:true});panel.scrollTop=scroll;
+});
+document.addEventListener('submit',e=>{
+  if(!e.target.matches('.bx-filter-form'))return;
+  e.preventDefault();
+  const form=e.target,hi=form.querySelector('[data-bx-max]');
+  const {next,valid}=bxReadFilterForm(form);
+  if(!valid){
+    hi.setCustomValidity(st.lang==='ru'?'Максимум должен быть не меньше минимума':st.lang==='hy'?'Առավելագույնը պետք է մեծ կամ հավասար լինի նվազագույնին':'Maximum must be at least the minimum');
+    hi.reportValidity();return;
+  }
+  hi.setCustomValidity('');const changed=next.cat!==st.cat;
+  Object.assign(st,next);setBounds();pruneFilters();
+  if(!sortKeys().includes(st.sort))st.sort='popular';
+  closeSheet();bxCloseFilterFocus();save();
+  if(changed)location.hash=st.cat?'#/c/'+st.cat:'#/';
+  else{refresh();bxRestoreFilters(true);}
+});
 
 let bxFilterInvoker=null;function bxCloseFilterFocus(){const mobile=document.querySelector('.bx-mobile-nav');if(mobile)mobile.inert=false;const panel=document.querySelector('.bx-filter-sidebar');panel?.removeAttribute('role');panel?.removeAttribute('aria-modal');if(bxFilterInvoker?.isConnected)bxFilterInvoker.focus();bxFilterInvoker=null;}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!document.documentElement.classList.contains('fs-open'))bxCloseFilterFocus();return;}if(e.key!=='Tab'||!document.documentElement.classList.contains('fs-open'))return;const panel=document.querySelector('.bx-filter-sidebar');if(!panel)return;const els=[...panel.querySelectorAll('button,input,select,a[href]')].filter(el=>!el.disabled&&el.getClientRects().length);const first=els[0],last=els.at(-1);if((e.shiftKey&&document.activeElement===first)||(!e.shiftKey&&document.activeElement===last)||!panel.contains(document.activeElement)){e.preventDefault();(e.shiftKey?last:first)?.focus();}});

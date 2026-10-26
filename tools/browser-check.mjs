@@ -55,7 +55,7 @@ try {
         // loading details. A fixed 350ms delay could navigate away mid-download
         // and report Safari's cancellation against the following route.
         // Wait for the real application and route, retaining all request errors.
-        if (await page.locator('script[src*="site-boot.js"]').count()) await page.waitForFunction(() => document.documentElement.dataset.appReady === 'true' &&
+        if (await page.locator('script[data-src][src*="site-boot"]').count()) await page.waitForFunction(() => document.documentElement.dataset.appReady === 'true' &&
           !document.documentElement.classList.contains('route-pending'), null, { timeout: 15000 }).catch(e => { throw new Error(`${name} ${w}px ${r}: application not ready; ${errs.join('; ')}; ${e.message}`); });
         await page.waitForTimeout(350);
         const m = await page.evaluate(() => ({

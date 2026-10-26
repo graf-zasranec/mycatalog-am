@@ -5,7 +5,7 @@
 // photo is replaced, so they stay network-first like everything else.
 const VERSION = 'better-v1';
 const STATIC = /^\/(fonts\/|images\/thumb\/)/;
-const VERSIONED = /^\/data\/(?:site-(?:products|prices|app|boot)\.js|site-ui(?:\.[a-f0-9]{10})?\.css|details\/chunk-\d+\.js|product-extras\.json)$/;
+const VERSIONED = /^\/data\/(?:site-(?:products|prices|app|boot)(?:\.[a-f0-9]{10})?\.js|site-ui(?:\.[a-f0-9]{10})?\.css|details\/chunk-\d+(?:\.[a-f0-9]{10})?\.js|product-extras\.json)$/;
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil((async () => {
