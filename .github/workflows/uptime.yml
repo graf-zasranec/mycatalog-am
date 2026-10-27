@@ -23,7 +23,9 @@ jobs:
           set -e
           fail() { echo "::error::$1"; exit 1; }
           home=$(curl -sfL --max-time 30 --retry 2 https://better.am/) || fail "https://better.am/ did not answer"
-          echo "$home" | grep -q 'site-prices.js' || fail "front page is not the catalogue"
-          curl -sfL --max-time 30 --retry 2 -o /dev/null https://better.am/data/site-prices.js || fail "price data missing"
-          curl -sfL --max-time 30 --retry 2 https://better.am/p/apple-iphone-17/ | grep -q 'Better.am' || fail "product page missing"
+          price_asset=$(grep -oE 'data/site-prices(\.[a-f0-9]+)?\.js' <<< "$home" | head -n 1) || fail "front page is not the catalogue"
+          test -n "$price_asset" || fail "front page has no price data reference"
+          curl -sfL --max-time 30 --retry 2 -o /dev/null "https://better.am/$price_asset" || fail "referenced price data missing"
+          product=$(curl -sfL --max-time 30 --retry 2 https://better.am/p/apple-iphone-17/) || fail "product page missing"
+          grep -q 'Better.am' <<< "$product" || fail "product page is not the catalogue"
           echo "better.am is up"
