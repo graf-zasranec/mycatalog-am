@@ -13,6 +13,10 @@ try {
   assert.throws(()=>releaseAssets(root), /ENOENT/, 'missing lazy detail bundle must fail too');
   fs.writeFileSync(path.join(root,'data/details/chunk-1.123abc.js'),'detail');
   assert.equal(releaseAssets(root).length,3);
+  fs.appendFileSync(path.join(root,'data/site-products.123abc.js'),'const DETAIL_DATA_URL="data/product-extras.json?v=proof";');
+  assert.throws(()=>releaseAssets(root),/ENOENT/,'missing fallback JSON must fail too');
+  fs.writeFileSync(path.join(root,'data/product-extras.json'),'{}');
+  assert.equal(releaseAssets(root).length,4);
   assert.throws(()=>releaseAssets(root,{staged:true}), /not staged/);
   console.log('RELEASE_ASSETS_TEST_PASS: omitted index/detail assets and unstaged files rejected');
 } finally { fs.rmSync(root,{recursive:true,force:true}); }

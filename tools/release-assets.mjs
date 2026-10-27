@@ -19,6 +19,7 @@ export function releaseAssets(root, {staged = false} = {}) {
     if (!/site-products\.[a-f0-9]+\.js$/.test(file)) continue;
     const text = fs.readFileSync(path.join(root, file), 'utf8');
     for (const m of text.matchAll(/data\/details\/chunk-\d+\.[a-f0-9]+\.js/g)) assets.add(m[0]);
+    for (const m of text.matchAll(/data\/product-extras\.json/g)) assets.add(m[0]);
   }
   for (const file of assets) {
     const built = fs.readFileSync(path.join(root, file));
