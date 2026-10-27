@@ -1,0 +1,891 @@
+{
+  "repairs": [
+    {
+      "id": "dyson-er-hd07",
+      "set": {
+        "appliance.type": "hair_dryer"
+      },
+      "sources": [
+        "https://eldorado.am/en/dyson-supersonic-schwarz-nickel-bbn-hd07",
+        "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-er-hd15",
+      "set": {
+        "appliance.type": "hair_dryer"
+      },
+      "sources": [
+        "https://3dplanet.am/en/store/product/dyson-supersonic-hd15-nickel-copper",
+        "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-hs08-i-d",
+      "set": {
+        "appliance.type": "hair_styler"
+      },
+      "sources": [
+        "https://redstore.am/en/product/dyson-airwrap-hs08-vinca-bluetopaz"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-ht01-airstrait-straightener-plum",
+      "set": {
+        "appliance.type": "hair_styler"
+      },
+      "sources": [
+        "https://likemobile.am/en/dyson-airstrait-ht01-nicelcopper"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-multi-complete-long-hs05",
+      "set": {
+        "appliance.type": "hair_styler"
+      },
+      "sources": [
+        "https://likemobile.am/en/dyson-airwrap-complete-long-volumise-hs05prussian-bluecopper"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-nural-er",
+      "set": {
+        "appliance.type": "hair_dryer"
+      },
+      "sources": [
+        "https://eldorado.am/en/dyson-hd16-supersonic-nural-ceramic-pink-cprg-113407-01",
+        "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-nural-hd16-strawberry",
+      "set": {
+        "appliance.type": "hair_dryer"
+      },
+      "sources": [
+        "https://www.zigzag.am/am/dyson-supersonic-nural-hd16-hair-dryer-ceramic-pink.html",
+        "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+      ],
+      "evidenceNote": "Exact current retailer title identifies this hair dryer/styler. Existing numeric power left unchanged. HT01 is grouped under the existing hair_styler enum; no new enum invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dyson-r-dh17",
+      "set": {
+        "name": "Supersonic r HD17",
+        "aliases": [
+          "Dyson Supersonic r™ DH17",
+          "Dyson Supersonic r DH17",
+          "Supersonic r DH17",
+          "Dyson Supersonic r HD17"
+        ],
+        "appliance.power": 1700,
+        "body.weight": 325,
+        "appliance.airflow": "12.4 L/s",
+        "appliance.noise": "80.1 dBA"
+      },
+      "sources": [
+        "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers",
+        "https://www.dyson.co.uk/hair-care/hair-dryers/supersonic-r/straight-wavy-ceramic-pink-rose-gold"
+      ],
+      "evidenceNote": "Manufacturer parts catalogue identifies consumer Supersonic r as HD17 and Professional as HD18. DH17 is a transposition in the current title. ID remains stable; old title retained as alias. Numeric values come from the consumer 230V UK product, not the PRO sheet or 127V US sheet. No offer/price invented.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-smart-ir-control",
+      "set": {
+        "category": "speaker",
+        "name": "Smart Speaker (IR Control)",
+        "aliases": [
+          "Xiaomi Smart Speaker IR Control",
+          "Smart IR Control",
+          "Xiaomi L05G"
+        ],
+        "body.weight": 628,
+        "body.height": 140,
+        "body.width": 95,
+        "body.thickness": 95,
+        "connectivity.bluetooth": "5.0",
+        "connectivity.wifi": "802.11a/b/g/n/ac, 2.4/5 GHz",
+        "audio.driver": "1.5″"
+      },
+      "sources": [
+        "https://www.mi.com/in/product/xiaomi-smart-speaker-ir-control/specs/"
+      ],
+      "evidenceNote": "L05G is a mains-powered smart speaker, not a generic IR remote. 12V/1A is the input supply and is NOT claimed as speaker output wattage.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-dual-zone-air-fryer-10l",
+      "set": {
+        "appliance.type": "air_fryer",
+        "appliance.volume": 10
+      },
+      "sources": [
+        "https://www.mi.com/global/product/xiaomi-dual-zone-air-fryer-10l/specs/"
+      ],
+      "evidenceNote": "MAF-D1001 EU 2700W/10L. Do not substitute another region or two 5L basket assumption; official basket volumes3.5+6.5L.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-smart-air-fryer-6-5l",
+      "set": {
+        "appliance.type": "air_fryer",
+        "body.weight": 5400,
+        "connectivity.wifi": "802.11b/g/n, 2.4 GHz"
+      },
+      "sources": [
+        "https://www.mi.com/uk/product/xiaomi-smart-air-fryer-6-5-liter/specs/"
+      ],
+      "evidenceNote": "MAF10 220–240V/1800W; net weight5.4kg, not6.5kg gross.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-smart-air-purifier-4-lite-bhr5274gl",
+      "set": {
+        "appliance.type": "air_purifier",
+        "appliance.area": "25–43 m²",
+        "appliance.airflow": "360 m³/h CADR",
+        "appliance.noise": "≤61 dBA"
+      },
+      "sources": [
+        "https://www.mi.com/global/product/xiaomi-smart-air-purifier-4-lite/specs/"
+      ],
+      "evidenceNote": "AC-M17-SC; manufacturer coverage and particle CADR.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-smart-double-stack-air-fryer-12l-bhr0883eu",
+      "set": {
+        "appliance.type": "air_fryer",
+        "body.weight": 10000
+      },
+      "sources": [
+        "https://www.mi.com/global/product/xiaomi-smart-double-stack-air-fryer-12l/specs/"
+      ],
+      "evidenceNote": "MAF-DS1201 220–240V EU variant is2800W,12L,10kgnet. Packaging dimensions deliberately not used as product dimensions.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-mijia-smart-air-purifier-6",
+      "set": {
+        "appliance.power": 40,
+        "appliance.noise": "32 dBA (sleep)",
+        "body.weight": 5200,
+        "body.height": 555,
+        "body.width": 250,
+        "body.thickness": 250
+      },
+      "sources": [
+        "https://www.mi.com/my/product/mijia-smart-air-purifier-6/specs/"
+      ],
+      "evidenceNote": "AC-M25-SC, rated200–240V50/60Hz;32dBA is sleep mode, not maximum.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-robot-vacuum-5-pro",
+      "set": {
+        "appliance.power": 55,
+        "appliance.wetDry": true,
+        "battery.capacity": 5200,
+        "body.weight": 3970,
+        "body.height": 88,
+        "body.width": 350,
+        "body.thickness": 350
+      },
+      "sources": [
+        "https://www.mi.com/sg/product/xiaomi-robot-vacuum-5-pro/specs/"
+      ],
+      "evidenceNote": "OV21GL robot55W, nominal5200mAh(rated4800). Do not confuse dock530Wdust/1600Whotwash with robot input.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-smart-scale-s200",
+      "set": {
+        "body.weight": 1200,
+        "body.height": 24.5,
+        "body.width": 280,
+        "body.thickness": 280,
+        "connectivity.bluetooth": "5.4 LE",
+        "appliance.powerSource": "battery",
+        "appliance.batteries": "3 × AAA"
+      },
+      "sources": [
+        "https://www.mi.com/ke/product/xiaomi-smart-scale-s200/specs/"
+      ],
+      "evidenceNote": "MJTZC02YM. Rated450mW deliberately not mapped to an integer-watt field. Scale measures0.1–150kg with0.05kg steps; no new unsupported schema keys.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-body-composition-scale-s400",
+      "set": {
+        "body.weight": 1450,
+        "body.height": 24.55,
+        "body.width": 300,
+        "body.thickness": 300,
+        "connectivity.bluetooth": "5.0 LE",
+        "appliance.powerSource": "battery",
+        "appliance.batteries": "3 × AAA"
+      },
+      "sources": [
+        "https://www.mi.com/au/product/xiaomi-body-composition-scale-s400/specs/"
+      ],
+      "evidenceNote": "MJTZC01YM; nominal4.5V. Do not conflate S200/S400 dimensions, BLE generation or minimum increments.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-pm10-smart-air-purifier",
+      "set": {
+        "appliance.airflow": "300 m³/h CADR",
+        "appliance.filter": "H13",
+        "appliance.noise": "32–60 dBA",
+        "appliance.speeds": "1–10"
+      },
+      "sources": [
+        "https://ca.dreametech.com/pages/airpursue-series"
+      ],
+      "evidenceNote": "PM10 column only:300m3/h,H13,10speeds,sleep32/max60dBA. PM20 has400m3/h and heater; do not transfer either. Coverage omitted because page has conflicting1690sq.ft versus100m² presentations.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-vacuum-h40-bhr07xbeu",
+      "set": {
+        "name": "Robot Vacuum H40 BHR07XBEU",
+        "aliases": [
+          "Xiaomi Robot Vacuum H40 White (OV51) BHR07XBEU",
+          "Vacuum H40 BHR07XBEU",
+          "Xiaomi Robot Vacuum H40",
+          "OV51"
+        ],
+        "appliance.type": "robot_vacuum",
+        "appliance.power": 70,
+        "appliance.wetDry": true,
+        "battery.capacity": 5200,
+        "body.weight": 3670,
+        "body.height": 97,
+        "body.width": 340,
+        "body.thickness": 340
+      },
+      "sources": [
+        "https://www.mi.com/uk/product/xiaomi-robot-vacuum-h40/specs/"
+      ],
+      "evidenceNote": "OV51 is a robot vacuum; current wet_dry_vacuum enum is misleading. Main-unit dimensions/weight/power are separate from OV51JCZ dock.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-vacuum-l40-eub",
+      "set": {
+        "appliance.power": 75,
+        "appliance.suction": "13,000 Pa",
+        "appliance.wetDry": true,
+        "appliance.area": "≤200 m²",
+        "appliance.noise": "65 dB",
+        "appliance.water": "300 mL",
+        "battery.capacity": 5200,
+        "battery.life": "≤180 min",
+        "body.weight": 3700,
+        "body.height": 97,
+        "body.width": 350,
+        "body.thickness": 350
+      },
+      "sources": [
+        "https://www.zigzag.am/en/dreame-robot-vacuum-l40-eub-rll42sda.html"
+      ],
+      "evidenceNote": "Exact RLL42SDA retailer specification. Declared up-to runtime/coverage are not independent performance tests.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-vacuum-l40s-pro-ultra",
+      "set": {
+        "appliance.suction": "19,000 Pa",
+        "appliance.wetDry": true,
+        "appliance.area": "≤200 m²",
+        "appliance.noise": "74 dB",
+        "battery.capacity": 5200,
+        "battery.life": "≤3 h"
+      },
+      "sources": [
+        "https://www.zigzag.am/en/dreame-robot-vacuum-l40s-pro-ultra-black-rll74ce.html"
+      ],
+      "evidenceNote": "Exact RLL74CE. Retailer600W ambiguous likely dock; not imported into robot power.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-vacuum-l50s-pro-ultra-eua",
+      "set": {
+        "appliance.power": 75,
+        "appliance.suction": "30,000 Pa",
+        "appliance.wetDry": true,
+        "appliance.dust": "250 mL",
+        "battery.capacity": 5200,
+        "body.weight": 4040,
+        "body.height": 103.8,
+        "body.width": 350,
+        "body.thickness": 350
+      },
+      "sources": [
+        "https://fr.dreametech.com/products/dreame-l50s-pro-ultra-noir-robot-aspirateur-laveur",
+        "https://dreametech.zendesk.com/hc/es/article_attachments/57240542931481"
+      ],
+      "evidenceNote": "Official EU L50s Pro Ultra dimensions/weight/suction/nominal battery. Official RLL88HE manual robot75W explicitly separated from RCLE0565dock700/640W. Battery manual4.8Ah is rated; retail nominal5200mAh retained consistently with other models.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-vacuum-l60-ultra",
+      "set": {
+        "appliance.suction": "35,000 Pa",
+        "appliance.wetDry": true,
+        "battery.capacity": 5200
+      },
+      "sources": [
+        "https://global.dreametech.com/products/l60-ultra",
+        "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      ],
+      "evidenceNote": "L60Ultra only, not Pro/FE/PE. Global and US agree35kPa/5200mAh but differ height/weight/dustbox; those region-dependent fields intentionally withheld pending exactRLL37CE0EU manual. Existing enum alreadyrobot_vacuum.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-vacuum-x60-ultra-complete",
+      "set": {
+        "appliance.power": 75,
+        "appliance.wetDry": true,
+        "battery.capacity": 6400
+      },
+      "sources": [
+        "https://global.dreametech.com/pages/x60-ultra-complete-user-manual",
+        "https://support.dreametech.com/hc/en-us/article_attachments/15593655201039",
+        "https://ru.dreametech.com/product/rlx87de"
+      ],
+      "evidenceNote": "Exact RLX87DE manual confirms75Wrobot. Manufacturer RLX87DE product page6400mAh; localretailer5200mAh differs. Suction/dustbox/runtime/weight withheld due manufacturer/merchant inconsistencies rather than copied retailer36kPa/4kg. Battery rated5.8Ah differs nominal6.4Ah; common nominalcapacityfield used.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "dreame-vacuum-ultra-roller-complete-eua",
+      "set": {
+        "name": "Vacuum Aqua10 Ultra Roller Complete EUA",
+        "aliases": [
+          "Dreame Robot Vacuum Aqua10 Ultra Roller Complete White (RLH71DE-1) EUA",
+          "Dreame Robot Vacuum Aqua10 Ultra Roller Complete Black (RLH71DE-1) EUA",
+          "Vacuum Ultra Roller Complete EUA",
+          "Dreame Aqua10 Ultra Roller Complete"
+        ],
+        "appliance.suction": "30,000 Pa",
+        "appliance.wetDry": true,
+        "appliance.dust": "220 mL",
+        "battery.capacity": 6400,
+        "body.weight": 5800
+      },
+      "sources": [
+        "https://dreametech.com.tr/products/dreame-aqua10-ultra-roller-complete-robot-supurge",
+        "https://de.dreametech.com/products/aqua10-ultra-roller-complete-saugroboter-landing"
+      ],
+      "evidenceNote": "Exact Aqua10UltraRollerComplete, not Track or baseRoller. Robot5.8kg,dust220mL, battery6400mAh,suction30000Pa. Retractable sensor creates two heights, so scalarheight omitted; dockclean4L/dirty3.5Lnotrobotwatertank.",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "xiaomi-poco-c95-pro",
+      "set": {
+        "camera.main": "50 MP, f/1.8",
+        "camera.front": "8 MP, f/2.05",
+        "camera.video": "1080p@30fps",
+        "body.weight": 232,
+        "body.height": 170.12,
+        "body.width": 78.42,
+        "body.thickness": 8.8,
+        "connectivity.bluetooth": "5.4",
+        "connectivity.wifi": "2.4/5 GHz"
+      },
+      "sources": [
+        "https://www.mi.com/global/product/poco-c95-pro/specs/"
+      ],
+      "evidenceNote": "Official POCO C95Pro, notC75/Redmi15C:50MPmain+unspecifiedauxiliary,8MPfront. Do not invent auxiliaryresolution. ExistingHelioG91Ultra/7500mAh45W retained.",
+      "checked": "2026-10-27"
+    }
+  ],
+  "newProducts": [
+    {
+      "id": "logitech-h110",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-h110",
+          "sku": "30331",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h110-retailer.html",
+          "exactModel": "h110",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/id-id/shop/p/h110-wired-headset",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h110-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-h111",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-h111",
+          "sku": "30332",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h111-retailer.html",
+          "exactModel": "h111",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-in/product/stereo-headset-h111",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h111-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": [
+        "Cable length omitted: current official hydration has invalid 1.8 mm; retailer says1.8m and older official body says2.35m."
+      ]
+    },
+    {
+      "id": "logitech-h340",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-h340-black",
+          "sku": "38688",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h340-black-retailer.html",
+          "exactModel": "h340",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logi.com/en-us/shop/p/h340-usb-pc-noise-cancelling-mic.981-000507",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h340-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-h390",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-h390",
+          "sku": "38689",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h390-retailer.html",
+          "exactModel": "h390",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-us/shop/p/h390-usb-headset.981-000406",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h390-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.driver",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": [
+        "USB-C version intentionally not included; Armenian retailer detail and selected image show USB-A."
+      ]
+    },
+    {
+      "id": "logitech-h540",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/computer-headset-logitech-h540-usb",
+          "sku": "48728",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/computer-headset-logitech-h540-usb-retailer.html",
+          "exactModel": "h540",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-us/shop/p/h540-usb-computer-noise-cancelling",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-h540-official-alternate.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-960",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-pc960",
+          "sku": "55757",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-pc960-retailer.html",
+          "exactModel": "960",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-ca/shop/p/960-usb-pc-mac-headset.981-000100",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-960-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-g332",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-g332",
+          "sku": "30333",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-g332-retailer.html",
+          "exactModel": "g332",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://eldorado.am/en/logitech-g332",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.frequency",
+            "connectivity.bluetooth",
+            "summaryEn"
+          ],
+          "note": "Retailer exact-model detail; microphone frequency unit typo is omitted."
+        }
+      ],
+      "omitted": [
+        "Driver size/weight absent from verified retail detail; do not infer from G432."
+      ]
+    },
+    {
+      "id": "logitech-g432",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-g432",
+          "sku": "38412",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-g432-retailer.html",
+          "exactModel": "g432",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitechg.com/en-us/shop/p/g432-7-1-surround-sound-gaming-headset",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-g432-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.plug",
+            "audio.gaming",
+            "audio.driver",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-zone-300",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-headset-zone-300-black-bt-n-a-emea28-93",
+          "sku": "50837",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-headset-zone-300-black-bt-n-a-emea28-93-retailer.html",
+          "exactModel": "zone-300",
+          "inStock": true
+        },
+        {
+          "url": "https://eldorado.am/en/logitech-headset-zone-300-off-white-bt-n-a-emea28-935",
+          "sku": "50838",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-headset-zone-300-off-white-bt-n-a-emea28-935-retailer.html",
+          "exactModel": "zone-300",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logi.com/en-us/shop/p/zone-300-wireless-headset.981-001406",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-zone-300-official-alternate.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.driver",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "body.weight",
+            "battery.life"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-zone-vibe-100",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-zone-vibe-100-graphite",
+          "sku": "53455",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-zone-vibe-100-graphite-retailer.html",
+          "exactModel": "zone-vibe-100",
+          "inStock": true
+        },
+        {
+          "url": "https://eldorado.am/en/logitech-zone-vibe-100-off-white-m-n-a00167-bt-ww-standalone",
+          "sku": "53467",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-zone-vibe-100-off-white-m-n-a00167-bt-ww-standalone-retailer.html",
+          "exactModel": "zone-vibe-100",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-us/shop/p/zone-vibe-100-wireless",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-zone-vibe-100-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.driver",
+            "audio.frequency",
+            "connectivity.bluetooth",
+            "body.weight",
+            "battery.life"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-g733",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-g733-lightspeed-wireless-rgb-gaming-headset-black",
+          "sku": "53464",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-g733-lightspeed-wireless-rgb-gaming-headset-black-retailer.html",
+          "exactModel": "g733",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitechg.com/en-us/shop/p/g733-rgb-wireless-headset",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-g733-official.html",
+          "fields": [
+            "audio.form",
+            "audio.conn",
+            "audio.gaming",
+            "audio.driver",
+            "audio.frequency",
+            "audio.impedance",
+            "connectivity.bluetooth",
+            "connectivity.wireless",
+            "body.weight",
+            "battery.life"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-z150",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-z150-stereo-speakers-midnight-black",
+          "sku": "53565",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-z150-stereo-speakers-midnight-black-retailer.html",
+          "exactModel": "z150",
+          "inStock": true
+        },
+        {
+          "url": "https://eldorado.am/en/logitech-z150",
+          "sku": "39661",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-z150-retailer.html",
+          "exactModel": "z150",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-eu/shop/p/z150-compact-stereo-speakers.980-000815",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-z150-official.html",
+          "fields": [
+            "audio.power",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-z207",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-z207-bluetooth-stereo-speakers-white",
+          "sku": "53466",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-z207-bluetooth-stereo-speakers-white-retailer.html",
+          "exactModel": "z207",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitech.com/en-us/shop/p/z207-stereo-speakers-bluetooth",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-z207-official.html",
+          "fields": [
+            "audio.power",
+            "connectivity.bluetooth",
+            "body.weight"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": []
+    },
+    {
+      "id": "logitech-f710",
+      "retailerPages": [
+        {
+          "url": "https://eldorado.am/en/logitech-f710-wireless-gamepad-silver",
+          "sku": "59058",
+          "liveChecked": "2026-10-27",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-f710-wireless-gamepad-silver-retailer.html",
+          "exactModel": "f710",
+          "inStock": true
+        }
+      ],
+      "specSources": [
+        {
+          "url": "https://www.logitechg.com/en-us/shop/p/f710-wireless-gamepad.940-000117",
+          "localHtml": ".codex/reports/2026-10-27-ci-speed-catalogue/catalogue/evidence/logitech-f710-official.html",
+          "fields": [
+            "connectivity.wireless"
+          ],
+          "note": "Manufacturer exact-model specifications. Rendered image confirms form and finish; no manufacturer regional part number is attributed to Armenian stock."
+        }
+      ],
+      "omitted": [
+        "Retailer dimensions appear to be packaging; omitted. No battery runtime claim."
+      ]
+    }
+  ],
+  "additional": {
+    "id": "sennheiser-momentum-4",
+    "patch": {
+      "battery": {
+        "capacity": 700
+      }
+    },
+    "preserveExistingBatteryFields": true,
+    "source": "https://support.sennheiser-hearing.com/hc/en-sg/articles/37791406604189-MOMENTUM-4-Wireless-Specifications",
+    "additionalSource": "https://cdn.sennheiser-hearing.com/product-documents/product-downloads/momentum-4-wireless/Instruction%20manual%20MOMENTUM%204%20Wireless/Instruction_manual_MOMENTUM_4_Wireless.pdf",
+    "identity": "MOMENTUM 4 Wireless, model M4AEBT; official support explicitly700mAh; manual page39 3.7V700mAh2.59Wh. Existingcapacity0isplaceholdernotactualspec.",
+    "checked": "2026-10-27"
+  },
+  "simHardware": {
+    "baselineSHA256": {
+      "scrape.mjs": "b045af6ce4958a46d062d922fb416186e97e894e2a8d69f752c191b1c06d79e7",
+      "tools/offer-configs.mjs": "f67929167838cda2cb230f701c41c50c2c1c4d6616ab5750f5ea43a46276c647"
+    },
+    "id": "apple-iphone-duo",
+    "scope": "Only this exact id; all other models retain adapter/pin/title/shop policy precedence.",
+    "sources": [
+      "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+      "https://www.apple.com/uk/iphone-duo/specs/",
+      "https://support.apple.com/en-sg/148588",
+      "https://support.apple.com/zh-cn/148588"
+    ],
+    "evidence": "Global newsroom explicitly describes worldwide eSIM-only. US/UK/SG and mainlandChina technicalspecs excludephysicalSIM. No regionaltrayexception claimed.",
+    "date": "2026-10-27"
+  }
+}

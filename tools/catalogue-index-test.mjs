@@ -27,5 +27,10 @@ for(const lang of ['hy','en','ru']){
 }
 const sample=phones.find(p=>p.aliases?.length);assert.ok(!('aliases' in indexedPhones.find(p=>p.id===sample.id)),'non-rendered aliases are deferred');
 assert.equal(phones.find(p=>p.aliases?.length).aliases.length>0,true,'original records untouched');
+// Detail-only annotations must not ride the initial listing download. Canonical input stays intact.
+const annotations={id:'annotation-control',unsure:['body.weight'],specNA:{'camera.front':'Not published'},updates:{os:7},specSource:'https://example.com/specs',settled:true,notes:'Evidence',releaseDate:'2026-10-27',priceAmdMax:120000};
+const initial=catalogueIndex(annotations);
+for(const key of Object.keys(annotations).filter(k=>k!=='id'))assert.ok(!(key in initial),'detail metadata deferred: '+key);
+assert.equal(annotations.notes,'Evidence','canonical detail metadata untouched');
 console.log('CATALOGUE_INDEX_PASS: '+compared+' model/category pairs, every facet, search and multilingual card preserved');`;
 await import('data:text/javascript;base64,'+Buffer.from(harness+checks).toString('base64'));

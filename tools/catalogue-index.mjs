@@ -2,7 +2,7 @@
 // The full model is restored by the existing product-detail chunk before use.
 export function catalogueIndex(product) {
   const index={...product};
-  for(const key of ['aliases','accent','tier'])delete index[key];
+  for(const key of ['aliases','accent','tier','unsure','specNA','updates','specSource','settled','notes','releaseDate','priceAmdMax'])delete index[key];
   const detailOnly={
     display:['ppi','brightness'],chipset:['process','gpu'],
     camera:['front','video','ultrawide','telephoto','modules','sensor','ois','digitalZoom'],

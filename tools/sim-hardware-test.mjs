@@ -1,0 +1,26 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {specOfferAllowed} from './allsell-specs.mjs';
+import {cpu,storageGB} from './spec-values.mjs';
+import {modelEsimOnly} from './sim-hardware.mjs';
+const read=file=>fs.readFileSync(file,'utf8');
+const scrape=read('scrape.mjs'),actual=fs.readFileSync('scrape.mjs','utf8');
+const parse=actual.slice(actual.indexOf('const TRAY ='),actual.indexOf('// A shop states BOTH figures'));
+const block=scrape.slice(scrape.indexOf('const NANO_ONLY ='),scrape.indexOf('// The physical nano tray ALWAYS'));
+const run=new Function('phones','offers','SIMPINS','modelEsimOnly',parse+block+'\nreturn offers;');
+const ids=['apple-iphone-duo','apple-iphone-17-pro','apple-iphone-18-pro','samsung-galaxy-s26'];
+const phones=ids.map(id=>({id,category:'phone'}));
+const make=()=>Object.fromEntries(ids.map(id=>[id,[{shop:'telecom',url:'https://s/'+id+'/default',price:123000,title:'Product'}, {shop:'pixel',url:'https://s/'+id+'/page',price:124000,title:'Product',simFromPage:true,esim:false}, {shop:'pixel',url:'https://s/'+id+'/pinned',price:125000,title:'Product'}, {shop:'other',url:'https://s/'+id+'/e',price:126000,title:'Product dual eSIM'}, {shop:'other',url:'https://s/'+id+'/n',price:127000,title:'Product Nano SIM'}, {shop:'other',url:'https://s/'+id+'/unknown',price:128000,title:'Product'}]]));
+const pins=new Map(ids.map(id=>['https://s/'+id+'/pinned',false]));
+const baseline=make();for(const id of ids){const expected=[false,false,false,true,false,undefined];baseline[id].forEach((o,i)=>{if(expected[i]===undefined)delete o.esim;else o.esim=expected[i]});}
+const offers=run(phones,make(),pins,modelEsimOnly);let n=0,bad=0;const check=(label,f)=>{n++;try{f()}catch(e){bad++;console.error('FAIL '+label+': '+e.message.slice(0,200));}};
+check('exact model only',()=>{assert.equal(modelEsimOnly('apple-iphone-duo'),true);for(const id of ['apple-iphone-duo-max','apple-iphone-17-pro','samsung-galaxy-s26',null,''])assert.equal(modelEsimOnly(id),undefined)});
+for(const o of offers['apple-iphone-duo'])check('Duo scraper '+o.url,()=>assert.equal(o.esim,true));
+for(const id of ids.slice(1))check('other model precedence '+id,()=>assert.deepEqual(offers[id],baseline[id]));
+check('no altered price/url metadata',()=>{const without=o=>o.map(({esim,...row})=>row);assert.deepEqual(without(offers['apple-iphone-duo']),without(make()['apple-iphone-duo']));});
+let attachSource=read('tools/offer-configs.mjs').replace(/^import .*;\n/gm,'').replace('export function attachOfferConfigs','function attachOfferConfigs');
+const attach=new Function('fs','specOfferAllowed','cpu','storageGB','modelEsimOnly',attachSource+'\nreturn attachOfferConfigs;')(fs,specOfferAllowed,cpu,storageGB,modelEsimOnly);
+const buildOffers=make(),before=structuredClone(buildOffers);attach(phones,buildOffers);
+for(const o of buildOffers['apple-iphone-duo'])check('Duo build '+o.url,()=>assert.equal(o.esim,true));
+for(const id of ids.slice(1))check('build preserves other models '+id,()=>assert.deepEqual(buildOffers[id],before[id]));
+check('build preserves Duo source price/url/metadata',()=>{const strip=a=>a.map(({esim,...r})=>r);assert.deepEqual(strip(buildOffers['apple-iphone-duo']),strip(before['apple-iphone-duo']));});
+console.log(JSON.stringify({cases:n,failed:bad,mode:'production'}));if(bad)process.exit(1);console.log('DUO_SIM_HARDWARE_PASS');

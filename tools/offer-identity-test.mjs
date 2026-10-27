@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const source=fs.readFileSync('scrape.mjs','utf8');
+const code=source.slice(source.indexOf('function restoreOfferIdentity('),source.indexOf('const TODAY = new Date().toISOString().slice(0, 10);',source.indexOf('function restoreOfferIdentity(')));
+const restoreOfferIdentity=new Function(code+';return restoreOfferIdentity')();
+const products=[{id:'ninja-eg351'},{id:'ninja-ol750eu'}];
+const rows={'ninja-eg351':[{shop:'a',price:109900,url:'https://shop/eg351',seen:'2026-10-26'}],undefined:[{shop:'b',price:169900,title:'Ninja OL750EU',url:'https://shop/ol750eu',seen:'2026-10-25'}],removed:[{title:'unrelated',price:1000}]};
+const repaired=restoreOfferIdentity(rows,products,text=>text.includes('OL750EU')?'ninja-ol750eu':null);
+assert.deepEqual(repaired['ninja-eg351'][0],{...rows['ninja-eg351'][0],id:'ninja-eg351'});
+assert.deepEqual(repaired['ninja-ol750eu'][0],{...rows.undefined[0],id:'ninja-ol750eu'});
+assert.ok(!('undefined' in repaired)&&!('removed' in repaired));
+const adapterFailedRows=Object.values(repaired).flat();
+const carried={};for(const row of adapterFailedRows)(carried[row.id]||=[]).push(row);
+assert.deepEqual(carried,repaired,'failure/collapse carry-over preserves bucket identity and prices/dates');
+assert.equal(rows['ninja-eg351'][0].id,undefined,'original untouched');
+assert.deepEqual(restoreOfferIdentity(repaired,products,()=>null),repaired,'idempotent');
+console.log('OFFER_IDENTITY_PASS: legacy buckets, exact re-match, unknown exclusion and failure-path roundtrip');

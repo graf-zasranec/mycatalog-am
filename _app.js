@@ -716,9 +716,24 @@ function loadLazy() {
 // Every keystroke and every filter count asks this of all 1304 products; the text never changes.
 const HAY = new WeakMap();
 const hay = p => { let h = HAY.get(p);
-  if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '')).toLowerCase());
+  if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '') + (p.category === 'laptop' ? ' laptop' : p.category === 'tablet' ? ' tablet' : '')).toLowerCase());
   return h; };
 const SEARCH_CACHE = new Map();
+// Local brand names are aliases of the same query, never of a model number.
+// Prefixes of at least three letters work only when every matching alias agrees.
+const SEARCH_ALIASES = new Map([
+  ['սամսունգ','samsung'],['самсунг','samsung'],['այֆոն','iphone'],['айфон','iphone'],
+  ['նոութբուք','laptop'],['նոթբուք','laptop'],['ноутбук','laptop'],
+  ['էյսեր','acer'],['эйсер','acer'],['ռեդմի','redmi'],['редми','redmi'],
+  ['հուավեյ','huawei'],['хуавей','huawei'],['хуавэй','huawei'],
+  ['պլանշետ','tablet'],['планшет','tablet'],['էփլ','apple'],['էպլ','apple'],['эпл','apple'],['эппл','apple']
+]);
+const canonicalSearch = q => String(q || '').normalize('NFKC').toLowerCase().slice(0,120).replace(/[\p{L}]+/gu, word => {
+  if (SEARCH_ALIASES.has(word)) return SEARCH_ALIASES.get(word);
+  if (word.length < 3 || !/[^\x00-\x7f]/.test(word)) return word;
+  const choices = new Set([...SEARCH_ALIASES].filter(([alias]) => alias.startsWith(word)).map(([,name]) => name));
+  return choices.size === 1 ? [...choices][0] : word;
+});
 const searchWords = q => String(q || '').normalize('NFKC').toLowerCase().match(/[\p{L}]+|\d+/gu) || [];
 function typoDistance(a, b, limit) {
   if (Math.abs(a.length - b.length) > limit) return limit + 1;
@@ -735,7 +750,7 @@ function typoDistance(a, b, limit) {
   return prev[b.length];
 }
 function searchMatches(q) {
-  const key = String(q || '').normalize('NFKC').trim().toLowerCase().slice(0, 120);
+  const key = canonicalSearch(q).trim();
   if (SEARCH_CACHE.has(key)) return SEARCH_CACHE.get(key);
   const words = searchWords(key), pool = DATA.filter(hasReal), hits = new Map();
   // Keep typed model codes together: the c in Qualcomm is not the c in X8c.

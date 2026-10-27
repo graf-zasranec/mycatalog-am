@@ -32,19 +32,46 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Check sweep concurrency and checkpoint recovery
+        run: python tools/stock-sweep-test.py
+
       - name: Install the page reader
         run: python -m pip install 'scrapling[fetchers]==0.4.15' 'beautifulsoup4==4.15.0'
+
+      # The URL cache is valid only for retries of this run. A new nightly run
+      # must re-read every URL rather than inherit yesterday's stock status.
+      - name: Restore this run's stock checkpoint
+        if: github.run_attempt > 1
+        continue-on-error: true      # a first attempt may have failed before saving one
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: stock-checkpoint-${{ github.run_id }}
+          path: .
 
       - name: Re-read every hand row (price, date, sold out)
         timeout-minutes: 200
         run: node tools/confirm-hand.mjs --recheck 1 --drop-gone
 
       - name: Sold-out sweep of every offer
+        id: sweep
         timeout-minutes: 120
-        continue-on-error: true      # a partial sweep is still saved below
+        continue-on-error: true      # commit completed hand rows before reporting a failed sweep
         env:
           PYTHONUTF8: '1'
-        run: python tools/check-links.py --all
+        run: python tools/check-links.py --all --workers=4
+
+      - name: Preserve the stock checkpoint
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: stock-checkpoint-${{ github.run_id }}
+          overwrite: true
+          retention-days: 2
+          include-hidden-files: true
+          path: |
+            .links.json
+            data/listings.csv
+            data/soldout.json
 
       - name: Commit hand rows and the sold-out list
         run: |
@@ -59,4 +86,10 @@ jobs:
             git fetch origin main
             git rebase -X ours origin/main || { git rebase --abort; exit 1; }
           done
+          exit 1
+
+      - name: Report an incomplete stock sweep
+        if: always() && steps.sweep.outcome == 'failure'
+        run: |
+          echo "::error::Stock sweep failed or timed out; completed hand-row changes were preserved, but sold-out coverage was not refreshed."
           exit 1

@@ -8,6 +8,7 @@
 //
 // Nothing is written. The fix is to correct the id column in data/links.csv, which pins it.
 import fs from 'node:fs';
+import {modelEsimOnly} from './sim-hardware.mjs';
 
 // the crawler's own matcher, so "what would this title match on its own?" is asked with exactly
 // the code that assigned the id in the first place
@@ -76,7 +77,7 @@ for (const r of rows) {
   // An official representative imports through the official channel and that channel brings the
   // nano tray only. One of their pages claiming an eSIM-only build is either a reading of the
   // wrong words or a shop that is not the representative we think it is.
-  if (on('sim') && OFFICIAL.has(r.shop) && r.esim === 'esim' && byId.get(r.id)?.category === 'phone')
+  if (on('sim') && modelEsimOnly(r.id) !== true && OFFICIAL.has(r.shop) && r.esim === 'esim' && byId.get(r.id)?.category === 'phone')
     flag('sim', r, `${r.shop} is an official rep - nano tray only`);
 
   // A price far outside what every other shop charges is usually a different product, an

@@ -28,7 +28,7 @@ const KIND = /phone|notebook|laptop|watch|headphone|headset|earbuds|buds|tws|iph
 const NOT = /\b(ferrari|lagerfeld|guess|bmw|mercedes|polo|silicone|woven|shield|monogram|shell|loop|sport band|outlet|case|cover|glass|film|cable|charger|adapter|strap|holder|stand|bag|sleeve|protector|mount|dock|hub|mouse|keyboard|stylus|pencil|tips|power ?bank|router|ssd|monitor|tv|speaker|soundbar|microphone|game|chair|keris)\b|чехол|кабель|ремешок|стекло/i;
 const wanted = t => BRAND.test(t) && KIND.test(t) && !NOT.test(t) && !looksLikeAccessory(t) && !matchPhone(bare(t));
 // a known model in a memory size the catalogue has not listed is not a new product
-const bare = t => t.replace(/\d+\s*(gb|tb)|\d+\s*\/\s*\d+\s*(gb|tb)?/gi, ' ').replace(/\s+/g, ' ');
+const bare = t => t.replace(/\b\d+\s*(gb|tb)\b|\b\d+\s*\/\s*\d+\s*(gb|tb)?\b/gi, ' ').replace(/\s+/g, ' ');
 
 const out = {};
 const put = (shop, line) => (out[shop] ||= new Set()).add(line);

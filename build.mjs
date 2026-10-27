@@ -17,6 +17,7 @@ import { pack, unpackSource, groupCatalogue, catalogueSource } from './tools/com
 import { catalogueIndex } from './tools/catalogue-index.mjs';
 import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
 import { assertCaseStableBrands } from './tools/brand-integrity.mjs';
+import { assertCatalogueData } from './tools/catalogue-validation.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 assertCaseStableBrands(phones);
@@ -38,6 +39,7 @@ const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.js
 // articles, newest first; data/blog.json holds each in hy, ru and en
 const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json')) : []).sort((a, b) => b.date.localeCompare(a.date));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
+assertCatalogueData(phones, PRICES.offers || {});
 attachOfferConfigs(phones, PRICES.offers || {});
 // Popularity nobody set (unsure) was a flat default of 40 on 1,100 products, so "popular" sorted
 // them in file order. How many shops stock a product is a real, nightly-updated signal: 1 shop -> 20,
@@ -601,7 +603,13 @@ function build({ inline, standalone }) {
   // Scraper evidence stays in prices.json; the browser uses the verified image maps,
   // never the shop's raw image URLs or titles. Don't download those a second time.
   const browserPrices = { ...PRICES, offers: Object.fromEntries(Object.entries(PRICES.offers || {}).map(([id, list]) =>
-    [id, list.map(({ image, title, url, ...offer }) => lazy ? offer : {...offer,url})])) };
+    [id, list.map(({ image, title, url, ...offer }) => {
+      if (!lazy) return {...offer,url};
+      // Verification timestamps stay in the full detail chunk. Listing prices,
+      // freshness and every configuration remain in the startup payload.
+      const {checkedAt, ...listing} = offer;
+      return listing;
+    })])) };
   const prices = `const PRICES=${compactJ(browserPrices)};\nconst DROPS=${J(DROPS)};\n`;
   const urls = [];
   if (lazy) {

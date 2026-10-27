@@ -15255,8 +15255,13 @@
       "Iron Fuchsia"
     ],
     "appliance": {
-      "power": 1600
-    }
+      "power": 1600,
+      "type": "hair_dryer"
+    },
+    "sources": [
+      "https://eldorado.am/en/dyson-supersonic-schwarz-nickel-bbn-hd07",
+      "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+    ]
   },
   {
     "id": "dyson-er-hd15",
@@ -15295,8 +15300,13 @@
       "Nickel"
     ],
     "appliance": {
-      "power": 1600
-    }
+      "power": 1600,
+      "type": "hair_dryer"
+    },
+    "sources": [
+      "https://3dplanet.am/en/store/product/dyson-supersonic-hd15-nickel-copper",
+      "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+    ]
   },
   {
     "id": "dyson-gen5-detect",
@@ -15446,8 +15456,12 @@
       "Red"
     ],
     "appliance": {
-      "power": 1300
-    }
+      "power": 1300,
+      "type": "hair_styler"
+    },
+    "sources": [
+      "https://redstore.am/en/product/dyson-airwrap-hs08-vinca-bluetopaz"
+    ]
   },
   {
     "id": "dyson-ht01-airstrait-straightener-plum",
@@ -15514,8 +15528,12 @@
       "Apricot Topaz"
     ],
     "appliance": {
-      "power": 1600
-    }
+      "power": 1600,
+      "type": "hair_styler"
+    },
+    "sources": [
+      "https://likemobile.am/en/dyson-airstrait-ht01-nicelcopper"
+    ]
   },
   {
     "id": "dyson-multi-complete-long-hs05",
@@ -15586,8 +15604,12 @@
       "Nickel/Copper"
     ],
     "appliance": {
-      "power": 1300
-    }
+      "power": 1300,
+      "type": "hair_styler"
+    },
+    "sources": [
+      "https://likemobile.am/en/dyson-airwrap-complete-long-volumise-hs05prussian-bluecopper"
+    ]
   },
   {
     "id": "dyson-nural-er",
@@ -15620,8 +15642,13 @@
       "popularity"
     ],
     "appliance": {
-      "power": 1600
-    }
+      "power": 1600,
+      "type": "hair_dryer"
+    },
+    "sources": [
+      "https://eldorado.am/en/dyson-hd16-supersonic-nural-ceramic-pink-cprg-113407-01",
+      "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+    ]
   },
   {
     "id": "dyson-nural-hd16-strawberry",
@@ -15670,8 +15697,13 @@
       "Strawberry"
     ],
     "appliance": {
-      "power": 1600
-    }
+      "power": 1600,
+      "type": "hair_dryer"
+    },
+    "sources": [
+      "https://www.zigzag.am/am/dyson-supersonic-nural-hd16-hair-dryer-ceramic-pink.html",
+      "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers"
+    ]
   },
   {
     "id": "dyson-origin-hs05",
@@ -15708,10 +15740,12 @@
     "id": "dyson-r-dh17",
     "category": "haircare",
     "brand": "Dyson",
-    "name": "Supersonic r DH17",
+    "name": "Supersonic r HD17",
     "aliases": [
       "Dyson Supersonic r™ DH17",
-      "Dyson Supersonic r DH17"
+      "Dyson Supersonic r DH17",
+      "Supersonic r DH17",
+      "Dyson Supersonic r HD17"
     ],
     "tier": "mid",
     "priceAmd": 229000,
@@ -15732,8 +15766,18 @@
       "popularity"
     ],
     "appliance": {
-      "type": "hair_dryer"
-    }
+      "type": "hair_dryer",
+      "power": 1700,
+      "airflow": "12.4 L/s",
+      "noise": "80.1 dBA"
+    },
+    "body": {
+      "weight": 325
+    },
+    "sources": [
+      "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers",
+      "https://www.dyson.co.uk/hair-care/hair-dryers/supersonic-r/straight-wavy-ceramic-pink-rose-gold"
+    ]
   },
   {
     "id": "dyson-v12-detect-slim-cordless-vacuum-cleaner",
@@ -25645,7 +25689,7 @@
     "display": {
       "size": 16,
       "type": "IPS",
-      "resolution": "2048×1280",
+      "resolution": "2048x1280",
       "refresh": 120,
       "touch": true
     },
@@ -34588,7 +34632,7 @@
     "display": {
       "size": 18,
       "type": "Mini-LED",
-      "resolution": "3840×2400",
+      "resolution": "3840x2400",
       "refresh": 120,
       "touch": false
     },
@@ -44490,7 +44534,7 @@
       "conn": "wireless"
     },
     "battery": {
-      "capacity": 0,
+      "capacity": 700,
       "life": "60 hours"
     },
     "body": {
@@ -44524,7 +44568,10 @@
       "Momentum M4AEBT",
       "Անլար ականջակալ Sennheiser Momentum M4AEBT սև"
     ],
-    "display": {}
+    "display": {},
+    "sources": [
+      "https://support.sennheiser-hearing.com/hc/en-sg/articles/37791406604189-MOMENTUM-4-Wireless-Specifications"
+    ]
   },
   {
     "id": "sennheiser-momentum-sport-msport1",
@@ -54828,11 +54875,13 @@
   },
   {
     "id": "xiaomi-smart-ir-control",
-    "category": "appliance",
+    "category": "speaker",
     "brand": "Xiaomi",
-    "name": "Smart IR Control",
+    "name": "Smart Speaker (IR Control)",
     "aliases": [
-      "Xiaomi Smart Speaker IR Control"
+      "Xiaomi Smart Speaker IR Control",
+      "Smart IR Control",
+      "Xiaomi L05G"
     ],
     "tier": "budget",
     "priceAmd": 22600,
@@ -54852,7 +54901,23 @@
     "unsure": [
       "popularity"
     ],
-    "appliance": {}
+    "appliance": {},
+    "body": {
+      "weight": 628,
+      "height": 140,
+      "width": 95,
+      "thickness": 95
+    },
+    "connectivity": {
+      "bluetooth": "5.0",
+      "wifi": "802.11a/b/g/n/ac, 2.4/5 GHz"
+    },
+    "audio": {
+      "driver": "1.5″"
+    },
+    "sources": [
+      "https://www.mi.com/in/product/xiaomi-smart-speaker-ir-control/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-mi-band-8-pro",
@@ -67485,8 +67550,13 @@
       "Black"
     ],
     "appliance": {
-      "power": 2700
-    }
+      "power": 2700,
+      "type": "air_fryer",
+      "volume": 10
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-dual-zone-air-fryer-10l/specs/"
+    ]
   },
   {
     "id": "xiaomi-handheld-garment-steamer-mjgtj02lf",
@@ -67561,8 +67631,19 @@
       "White"
     ],
     "appliance": {
-      "type": "air_purifier"
-    }
+      "type": "air_purifier",
+      "power": 40,
+      "noise": "32 dBA (sleep)"
+    },
+    "body": {
+      "weight": 5200,
+      "height": 555,
+      "width": 250,
+      "thickness": 250
+    },
+    "sources": [
+      "https://www.mi.com/my/product/mijia-smart-air-purifier-6/specs/"
+    ]
   },
   {
     "id": "xiaomi-robot-vacuum-5",
@@ -67620,7 +67701,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200
+    },
     "summaryEn": "Xiaomi Vacuum 5 Pro.",
     "unsure": [
       "popularity",
@@ -67629,8 +67712,19 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "power": 55,
+      "wetDry": true
+    },
+    "body": {
+      "weight": 3970,
+      "height": 88,
+      "width": 350,
+      "thickness": 350
+    },
+    "sources": [
+      "https://www.mi.com/sg/product/xiaomi-robot-vacuum-5-pro/specs/"
+    ]
   },
   {
     "id": "xiaomi-robot-vacuum-s40-pro",
@@ -67815,8 +67909,18 @@
     ],
     "appliance": {
       "power": 1800,
-      "volume": 6.5
-    }
+      "volume": 6.5,
+      "type": "air_fryer"
+    },
+    "body": {
+      "weight": 5400
+    },
+    "connectivity": {
+      "wifi": "802.11b/g/n, 2.4 GHz"
+    },
+    "sources": [
+      "https://www.mi.com/uk/product/xiaomi-smart-air-fryer-6-5-liter/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-air-purifier-4-compact-bhr5860eu",
@@ -67887,11 +67991,18 @@
       "battery.capacity"
     ],
     "appliance": {
-      "power": 33
+      "power": 33,
+      "type": "air_purifier",
+      "area": "25–43 m²",
+      "airflow": "360 m³/h CADR",
+      "noise": "≤61 dBA"
     },
     "body": {
       "weight": 4800
-    }
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-air-purifier-4-lite/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-air-purifier-4-pro-bhr5056eu",
@@ -67962,8 +68073,15 @@
     ],
     "appliance": {
       "power": 2800,
-      "volume": 12
-    }
+      "volume": 12,
+      "type": "air_fryer"
+    },
+    "body": {
+      "weight": 10000
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-double-stack-air-fryer-12l/specs/"
+    ]
   },
   {
     "id": "xiaomi-smart-scale-s200",
@@ -67998,8 +68116,22 @@
       "Dark Grey"
     ],
     "appliance": {
-      "type": "scale"
-    }
+      "type": "scale",
+      "powerSource": "battery",
+      "batteries": "3 × AAA"
+    },
+    "body": {
+      "weight": 1200,
+      "height": 24.5,
+      "width": 280,
+      "thickness": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.4 LE"
+    },
+    "sources": [
+      "https://www.mi.com/ke/product/xiaomi-smart-scale-s200/specs/"
+    ]
   },
   {
     "id": "xiaomi-sound-pocket",
@@ -70032,8 +70164,15 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_purifier"
-    }
+      "type": "air_purifier",
+      "airflow": "300 m³/h CADR",
+      "filter": "H13",
+      "noise": "32–60 dBA",
+      "speeds": "1–10"
+    },
+    "sources": [
+      "https://ca.dreametech.com/pages/airpursue-series"
+    ]
   },
   {
     "id": "xiaomi-vacuum-s40c-bhr9664eu",
@@ -70124,9 +70263,12 @@
     "id": "xiaomi-vacuum-h40-bhr07xbeu",
     "category": "vacuum",
     "brand": "Xiaomi",
-    "name": "Vacuum H40 BHR07XBEU",
+    "name": "Robot Vacuum H40 BHR07XBEU",
     "aliases": [
-      "Xiaomi Robot Vacuum H40 White (OV51) BHR07XBEU"
+      "Xiaomi Robot Vacuum H40 White (OV51) BHR07XBEU",
+      "Vacuum H40 BHR07XBEU",
+      "Xiaomi Robot Vacuum H40",
+      "OV51"
     ],
     "tier": "mid",
     "priceAmd": 109900,
@@ -70141,7 +70283,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200
+    },
     "summaryEn": "Xiaomi Vacuum H40 BHR07XBEU.",
     "unsure": [
       "popularity",
@@ -70153,8 +70297,19 @@
       "White"
     ],
     "appliance": {
-      "type": "wet_dry_vacuum"
-    }
+      "type": "robot_vacuum",
+      "power": 70,
+      "wetDry": true
+    },
+    "body": {
+      "weight": 3670,
+      "height": 97,
+      "width": 340,
+      "thickness": 340
+    },
+    "sources": [
+      "https://www.mi.com/uk/product/xiaomi-robot-vacuum-h40/specs/"
+    ]
   },
   {
     "id": "dreame-vacuum-l40-eub",
@@ -70177,7 +70332,10 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200,
+      "life": "≤180 min"
+    },
     "summaryEn": "Dreame Vacuum L40 EUB.",
     "unsure": [
       "popularity",
@@ -70186,8 +70344,23 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "power": 75,
+      "suction": "13,000 Pa",
+      "wetDry": true,
+      "area": "≤200 m²",
+      "noise": "65 dB",
+      "water": "300 mL"
+    },
+    "body": {
+      "weight": 3700,
+      "height": 97,
+      "width": 350,
+      "thickness": 350
+    },
+    "sources": [
+      "https://www.zigzag.am/en/dreame-robot-vacuum-l40-eub-rll42sda.html"
+    ]
   },
   {
     "id": "xiaomi-vacuum-h50-bhr08gueu",
@@ -70465,7 +70638,10 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200,
+      "life": "≤3 h"
+    },
     "summaryEn": "Dreame Vacuum L40s Pro Ultra.",
     "unsure": [
       "popularity",
@@ -70478,8 +70654,15 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "suction": "19,000 Pa",
+      "wetDry": true,
+      "area": "≤200 m²",
+      "noise": "74 dB"
+    },
+    "sources": [
+      "https://www.zigzag.am/en/dreame-robot-vacuum-l40s-pro-ultra-black-rll74ce.html"
+    ]
   },
   {
     "id": "dreame-vacuum-l50s-pro-ultra-eua",
@@ -70503,7 +70686,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200
+    },
     "summaryEn": "Dreame Vacuum L50s Pro Ultra EUA.",
     "unsure": [
       "popularity",
@@ -70516,8 +70701,22 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "power": 75,
+      "suction": "30,000 Pa",
+      "wetDry": true,
+      "dust": "250 mL"
+    },
+    "body": {
+      "weight": 4040,
+      "height": 103.8,
+      "width": 350,
+      "thickness": 350
+    },
+    "sources": [
+      "https://fr.dreametech.com/products/dreame-l50s-pro-ultra-noir-robot-aspirateur-laveur",
+      "https://dreametech.zendesk.com/hc/es/article_attachments/57240542931481"
+    ]
   },
   {
     "id": "dreame-vacuum-l60-ultra",
@@ -70541,7 +70740,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200
+    },
     "summaryEn": "Dreame Vacuum L60 Ultra.",
     "unsure": [
       "popularity",
@@ -70554,8 +70755,14 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "suction": "35,000 Pa",
+      "wetDry": true
+    },
+    "sources": [
+      "https://global.dreametech.com/products/l60-ultra",
+      "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+    ]
   },
   {
     "id": "xiaomi-vacuum-6-max",
@@ -70615,7 +70822,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 6400
+    },
     "summaryEn": "Dreame Vacuum X60 Ultra Complete.",
     "unsure": [
       "popularity",
@@ -70628,17 +70837,26 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "power": 75,
+      "wetDry": true
+    },
+    "sources": [
+      "https://global.dreametech.com/pages/x60-ultra-complete-user-manual",
+      "https://support.dreametech.com/hc/en-us/article_attachments/15593655201039",
+      "https://ru.dreametech.com/product/rlx87de"
+    ]
   },
   {
     "id": "dreame-vacuum-ultra-roller-complete-eua",
     "category": "vacuum",
     "brand": "Dreame",
-    "name": "Vacuum Ultra Roller Complete EUA",
+    "name": "Vacuum Aqua10 Ultra Roller Complete EUA",
     "aliases": [
       "Dreame Robot Vacuum Aqua10 Ultra Roller Complete White (RLH71DE-1) EUA",
-      "Dreame Robot Vacuum Aqua10 Ultra Roller Complete Black (RLH71DE-1) EUA"
+      "Dreame Robot Vacuum Aqua10 Ultra Roller Complete Black (RLH71DE-1) EUA",
+      "Vacuum Ultra Roller Complete EUA",
+      "Dreame Aqua10 Ultra Roller Complete"
     ],
     "tier": "flagship",
     "priceAmd": 789900,
@@ -70653,7 +70871,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 6400
+    },
     "summaryEn": "Dreame Vacuum Ultra Roller Complete EUA.",
     "unsure": [
       "popularity",
@@ -70666,8 +70886,18 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
-    }
+      "type": "robot_vacuum",
+      "suction": "30,000 Pa",
+      "wetDry": true,
+      "dust": "220 mL"
+    },
+    "body": {
+      "weight": 5800
+    },
+    "sources": [
+      "https://dreametech.com.tr/products/dreame-aqua10-ultra-roller-complete-robot-supurge",
+      "https://de.dreametech.com/products/aqua10-ultra-roller-complete-saugroboter-landing"
+    ]
   },
   {
     "id": "dreame-vacuum-matrix10-ultra-eua",
@@ -81126,18 +81356,30 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "scale"
+      "type": "scale",
+      "powerSource": "battery",
+      "batteries": "3 × AAA"
     },
     "summaryEn": "Xiaomi Body Composition Scale S400.",
     "sources": [
-      "https://miarmenia.am/en/product/140/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%AF%D5%B7%D5%A5%D5%BC%D6%84-mi-body-composition-scale-s400"
+      "https://miarmenia.am/en/product/140/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%AF%D5%B7%D5%A5%D5%BC%D6%84-mi-body-composition-scale-s400",
+      "https://www.mi.com/au/product/xiaomi-body-composition-scale-s400/specs/"
     ],
     "unsure": [
       "popularity"
     ],
     "colors": [
       "Dark Grey"
-    ]
+    ],
+    "body": {
+      "weight": 1450,
+      "height": 24.55,
+      "width": 300,
+      "thickness": 300
+    },
+    "connectivity": {
+      "bluetooth": "5.0 LE"
+    }
   },
   {
     "id": "dreame-h15-mix",
@@ -88644,7 +88886,8 @@
       }
     ],
     "colors": [
-      "White"
+      "White",
+      "Red"
     ],
     "display": {},
     "battery": {},
@@ -88656,7 +88899,8 @@
     "summaryEn": "JBL Tune 305C.",
     "sources": [
       "https://vlv.am/en/Product/37956",
-      "https://in.jbl.com/in-ear-headphones/TUNE305C-USB-C.html"
+      "https://in.jbl.com/in-ear-headphones/TUNE305C-USB-C.html",
+      "https://redstore.am/en/product/jbl-tune-305c-red"
     ],
     "unsure": [
       "popularity"
@@ -100879,10 +101123,16 @@
       "wired": 45
     },
     "body": {
-      "ip": "IP64"
+      "ip": "IP64",
+      "weight": 232,
+      "height": 170.12,
+      "width": 78.42,
+      "thickness": 8.8
     },
     "connectivity": {
-      "network": "4G"
+      "network": "4G",
+      "bluetooth": "5.4",
+      "wifi": "2.4/5 GHz"
     },
     "os": "Android 16, HyperOS 3",
     "colors": [
@@ -100892,7 +101142,8 @@
     "summaryEn": "A budget 4G POCO with a 7500 mAh battery, 45 W charging and a 6.9-inch 120 Hz screen.",
     "sources": [
       "https://www.fonearena.com/blog/?p=493996",
-      "https://www.mi.com/sa-en/product/poco-c95-pro/"
+      "https://www.mi.com/sa-en/product/poco-c95-pro/",
+      "https://www.mi.com/global/product/poco-c95-pro/specs/"
     ],
     "unsure": [
       "popularity"
@@ -100910,7 +101161,12 @@
         "storage": 256,
         "priceAmd": 108900
       }
-    ]
+    ],
+    "camera": {
+      "main": "50 MP, f/1.8",
+      "front": "8 MP, f/2.05",
+      "video": "1080p@30fps"
+    }
   },
   {
     "id": "xiaomi-redmi-watch-5",
@@ -118436,7 +118692,8 @@
     "battery": {},
     "summaryEn": "Hitachi Fridge R-W660PUC7: 540 L, No Frost, energy class A+.",
     "sources": [
-      "https://vlv.am/en/Product/10522"
+      "https://vlv.am/en/Product/10522",
+      "https://vlv.am/en/Product/13352"
     ],
     "unsure": [
       "popularity"
@@ -118451,7 +118708,7 @@
       }
     ],
     "colors": [
-      "Black glass"
+      "White"
     ]
   },
   {
@@ -138702,5 +138959,659 @@
     "colors": [
       "Platinum"
     ]
+  },
+  {
+    "id": "logitech-h110",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "H110 Stereo Headset",
+    "aliases": [
+      "Headphone with microphone LOGITECH H110",
+      "Logitech H110 Stereo Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 6500,
+    "priceAmdMax": 6500,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 6500
+      }
+    ],
+    "summaryEn": "Wired on-ear stereo headset with separate 3.5 mm audio and microphone plugs and a rotating boom microphone.",
+    "colors": [
+      "Dark Grey"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-h110",
+      "https://www.logitech.com/id-id/shop/p/h110-wired-headset"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "3.5",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "32 Ω"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 74
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired dual 3.5 mm. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-h111",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "H111 Stereo Headset",
+    "aliases": [
+      "Headphone LOGITECH H111",
+      "Logitech H111 Stereo Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 6900,
+    "priceAmdMax": 6900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 6900
+      }
+    ],
+    "summaryEn": "Wired on-ear stereo headset with a single 3.5 mm connector and a rotating boom microphone.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-h111",
+      "https://www.logitech.com/en-in/product/stereo-headset-h111"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "3.5",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "32 Ω"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 74
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired 3.5 mm. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-h340",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "H340 USB Headset",
+    "aliases": [
+      "Headphone with microphone LOGITECH H340 Black",
+      "Logitech H340 USB Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 14900,
+    "priceAmdMax": 14900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 14900
+      }
+    ],
+    "summaryEn": "Lightweight USB-A stereo headset with a noise-reducing microphone and a 1.8 m cable.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-h340-black",
+      "https://www.logi.com/en-us/shop/p/h340-usb-pc-noise-cancelling-mic.981-000507"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "USB-A",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "22 Ω"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 100
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired USB-A. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-h390",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "H390 USB Headset",
+    "aliases": [
+      "Headphone with microphone LOGITECH H390",
+      "Logitech H390 USB Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 17900,
+    "priceAmdMax": 17900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 17900
+      }
+    ],
+    "summaryEn": "USB-A stereo headset with 30 mm drivers, a noise-canceling microphone, inline volume and mute controls, and a 1.9 m cable.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-h390",
+      "https://www.logitech.com/en-us/shop/p/h390-usb-headset.981-000406"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "USB-A",
+      "driver": "30 mm",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "32 Ω"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 197
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired USB-A. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-h540",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "H540 USB Headset",
+    "aliases": [
+      "Computer headset Logitech H540 USB",
+      "Logitech H540 USB Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 23900,
+    "priceAmdMax": 23900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 23900
+      }
+    ],
+    "summaryEn": "USB-A stereo headset with on-ear volume and mute controls, a noise-canceling microphone and a 1.8 m cable.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/computer-headset-logitech-h540-usb",
+      "https://www.logitech.com/en-us/shop/p/h540-usb-computer-noise-cancelling"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "USB-A",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "20 Ω"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 120
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired USB-A. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-960",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "960 USB Headset",
+    "aliases": [
+      "Headphones with microphone LOGITECH PC960",
+      "Logitech 960 USB Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 15900,
+    "priceAmdMax": 15900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 15900
+      }
+    ],
+    "summaryEn": "USB-A computer headset with a noise-canceling boom microphone, inline audio controls and a 2.4 m cable.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-pc960",
+      "https://www.logitech.com/en-ca/shop/p/960-usb-pc-mac-headset.981-000100"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "USB-A",
+      "frequency": "100 Hz–10 kHz",
+      "impedance": "32 Ω"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 120
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired USB-A. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-g332",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "G332 Gaming Headset",
+    "aliases": [
+      "Headphone Logitech G332",
+      "Logitech G332 Gaming Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 32000,
+    "priceAmdMax": 32000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32000
+      }
+    ],
+    "summaryEn": "Wired over-ear gaming headset with a boom microphone, 3.5 mm connection and a 2 m cable.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-g332"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wired",
+      "plug": "3.5",
+      "gaming": true,
+      "frequency": "20 Hz–20 kHz"
+    },
+    "connectivity": {},
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired 3.5 mm. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-g432",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "G432 Gaming Headset",
+    "aliases": [
+      "Headphone with microphone LOGITECH G432",
+      "Logitech G432 Gaming Headset"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 39900,
+    "priceAmdMax": 39900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39900
+      }
+    ],
+    "summaryEn": "Wired gaming headset with 50 mm drivers, a flip-to-mute microphone, 3.5 mm audio and an included USB DAC.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-g432",
+      "https://www.logitechg.com/en-us/shop/p/g432-7-1-surround-sound-gaming-headset"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wired",
+      "plug": "3.5 + USB",
+      "gaming": true,
+      "driver": "50 mm",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "39 Ω passive"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 280
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired 3.5 mm or USB DAC. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-zone-300",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "Zone 300",
+    "aliases": [
+      "Headphone with microphone LOGITECH Zone 300 (BLACK-BT-N/A-EMEA28-93)",
+      "Headphone with microphone LOGITECH Headset  Zone 300 (OFF-WHITE-BT-N/A-EMEA28-935)",
+      "Logitech Zone 300"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 49900,
+    "priceAmdMax": 49900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49900
+      }
+    ],
+    "summaryEn": "Bluetooth 5.3 on-ear headset with dual microphones, multipoint pairing, 30 mm drivers and up to 20 hours of listening.",
+    "colors": [
+      "Black",
+      "Off-white"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-headset-zone-300-black-bt-n-a-emea28-93",
+      "https://eldorado.am/en/logitech-headset-zone-300-off-white-bt-n-a-emea28-935",
+      "https://www.logi.com/en-us/shop/p/zone-300-wireless-headset.981-001406"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wireless",
+      "driver": "30 mm",
+      "frequency": "50 Hz–20 kHz",
+      "impedance": "32 Ω"
+    },
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 122
+    },
+    "battery": {
+      "life": "Up to 20 hours listening; up to 16 hours talk time"
+    }
+  },
+  {
+    "id": "logitech-zone-vibe-100",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "Zone Vibe 100",
+    "aliases": [
+      "Logitech Zone Vibe 100 Graphite Wireless Headphones",
+      "Logitech Zone Vibe 100 OFF White M/N A00167 BT WW Standalone Wireless Headphones",
+      "Logitech Zone Vibe 100"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 62900,
+    "priceAmdMax": 62900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 62900
+      }
+    ],
+    "summaryEn": "Bluetooth 5.2 over-ear headset with 40 mm drivers, a flip-to-mute microphone and up to 20 hours of listening.",
+    "colors": [
+      "Graphite",
+      "Off-white"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-zone-vibe-100-graphite",
+      "https://eldorado.am/en/logitech-zone-vibe-100-off-white-m-n-a00167-bt-ww-standalone",
+      "https://www.logitech.com/en-us/shop/p/zone-vibe-100-wireless"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "driver": "40 mm",
+      "frequency": "20 Hz–20 kHz"
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 185
+    },
+    "battery": {
+      "life": "Up to 20 hours listening; up to 18 hours talk time"
+    }
+  },
+  {
+    "id": "logitech-g733",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "G733 LIGHTSPEED",
+    "aliases": [
+      "Logitech G733 Lightspeed Wireless RGB Gaming Headset Black Wireless Headphones",
+      "Logitech G733 LIGHTSPEED"
+    ],
+    "tier": "mid",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 78900,
+    "priceAmdMax": 78900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 78900
+      }
+    ],
+    "summaryEn": "LIGHTSPEED wireless gaming headset with 40 mm PRO-G drivers, a detachable boom microphone and up to 29 hours of battery life with lighting off.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-g733-lightspeed-wireless-rgb-gaming-headset-black",
+      "https://www.logitechg.com/en-us/shop/p/g733-rgb-wireless-headset"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "gaming": true,
+      "driver": "40 mm PRO-G",
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "39 Ω passive"
+    },
+    "connectivity": {
+      "wireless": "LIGHTSPEED, up to 20 m"
+    },
+    "body": {
+      "weight": 278
+    },
+    "battery": {
+      "life": "Up to 29 hours without lighting; up to 20 hours with default lighting"
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; 2.4 GHz LIGHTSPEED USB receiver. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-z150",
+    "category": "speaker",
+    "brand": "Logitech",
+    "name": "Z150 Stereo Speakers",
+    "aliases": [
+      "Speakers Logitech Z150 Stereo Midnight Black",
+      "Speaker   LOGITECH Z150",
+      "Logitech Z150 Stereo Speakers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 16900,
+    "priceAmdMax": 16900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 16900
+      }
+    ],
+    "summaryEn": "Compact wired stereo speaker pair with 3 W RMS output, a headphone socket and front volume controls.",
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-z150-stereo-speakers-midnight-black",
+      "https://eldorado.am/en/logitech-z150",
+      "https://www.logitech.com/en-eu/shop/p/z150-compact-stereo-speakers.980-000815"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "power": "3 W RMS / 6 W peak"
+    },
+    "connectivity": {},
+    "body": {
+      "weight": 550
+    },
+    "specNA": {
+      "connectivity.bluetooth": "No Bluetooth; wired 3.5 mm. Exact-model manufacturer/retailer specification."
+    }
+  },
+  {
+    "id": "logitech-z207",
+    "category": "speaker",
+    "brand": "Logitech",
+    "name": "Z207 Bluetooth Stereo Speakers",
+    "aliases": [
+      "Speaker Logitech Z207 Bluetooth Stereo White",
+      "Logitech Z207 Bluetooth Stereo Speakers"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 29900,
+    "priceAmdMax": 29900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29900
+      }
+    ],
+    "summaryEn": "Bluetooth 4.2 stereo speakers with 5 W RMS output, a 3.5 mm input and a headphone socket.",
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-z207-bluetooth-stereo-speakers-white",
+      "https://www.logitech.com/en-us/shop/p/z207-stereo-speakers-bluetooth"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "power": "5 W RMS / 10 W peak"
+    },
+    "connectivity": {
+      "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 1000
+    }
+  },
+  {
+    "id": "logitech-f710",
+    "category": "console",
+    "brand": "Logitech",
+    "name": "F710 Wireless Gamepad",
+    "aliases": [
+      "Wireless GamePad Logitech F710 silver",
+      "Logitech F710 Wireless Gamepad"
+    ],
+    "tier": "budget",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "priceAmd": 23900,
+    "priceAmdMax": 23900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 23900
+      }
+    ],
+    "summaryEn": "Wireless PC gamepad with a 2.4 GHz USB nano receiver, dual vibration, XInput/DirectInput support and two AA batteries.",
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://eldorado.am/en/logitech-f710-wireless-gamepad-silver",
+      "https://www.logitechg.com/en-us/shop/p/f710-wireless-gamepad.940-000117"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "connectivity": {
+      "wireless": "2.4 GHz USB nano receiver"
+    }
   }
 ]

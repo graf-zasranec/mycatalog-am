@@ -1,0 +1,13 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {goatScript} from './analytics.mjs';
+const base=fs.readFileSync('_app.js','utf8'),candidate=base;
+const harness=fs.readFileSync('tools/app-test.mjs','utf8').split('let bad = 0')[0].replace(/^import .*;\n/gm,'');
+const load=source=>new Function('fs','goatScript',harness+'\nreturn {app,phones};')({...fs,readFileSync:(file,...args)=>file==='_app.js'?source:fs.readFileSync(file,...args)},goatScript);
+const {app,phones}=load(candidate);
+const ids=(a,q)=>[...a.searchMatches(q).hits.keys()].sort();let n=0,bad=0;
+const check=(label,f)=>{n++;try{f()}catch(e){bad++;console.error('FAIL '+label+': '+e.message.slice(0,300));}};
+const aliasCases=[['սամսունգ','samsung'],['самсунг','samsung'],['այֆոն','iphone'],['айфон','iphone'],['էյսեր','acer'],['эйсер','acer'],['ռեդմի','redmi'],['редми','redmi'],['հուավեյ','huawei'],['хуавей','huawei'],['хуавэй','huawei'],['էփլ','apple'],['эппл','apple'],['сам','samsung'],['սամ','samsung'],['այֆ','iphone'],['ռեդ','redmi'],['самсунг s26','samsung s26'],['սամսունգ s26','samsung s26'],['айфон18','iphone18'],['АЙФОН 18','iphone 18'],['ռեդմի note 14','redmi note 14']];
+for(const [local,latin] of aliasCases)check(local,()=>{assert.ok(ids(app,latin).length>0,'Latinpositivecontrolmustfindactualproduct');assert.deepEqual(ids(app,local),ids(app,latin));});
+for(const [local,cat] of [['նոութբուք','laptop'],['նոթբուք','laptop'],['ноутбук','laptop'],['ноут','laptop'],['նոութ','laptop'],['պլանշետ','tablet'],['планшет','tablet'],['պլան','tablet']])check(local,()=>{const want=phones.filter(p=>p.category===cat&&app.offersFor(p).length).map(p=>p.id).sort();assert.ok(want.length);assert.deepEqual(ids(app,local),want);});
+for(const q of ['самсунг s9999','սամսունգ s9999','айфон ноутбук','айфон 9999','մըկլք','са','սա'])check('negative '+q,()=>assert.equal(ids(app,q).length,0));
+check('mixedcategory',()=>{const got=ids(app,'acer ноутбук');assert.ok(got.length);assert.ok(got.every(id=>phones.find(p=>p.id===id).category==='laptop'));});
+console.log(JSON.stringify({cases:n,failed:bad,mode:'production'}));if(bad)process.exit(1);console.log('LOCAL_SEARCH_PASS');

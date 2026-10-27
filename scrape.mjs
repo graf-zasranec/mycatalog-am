@@ -2043,7 +2043,7 @@ const SHOPS = {
   },
 
   telecom: {
-    name: 'Telecom Armenia', site: 'https://www.telecomarmenia.am', note: 'operator shop',
+    name: 'Telecom Armenia', site: 'https://www.telecomarmenia.am/hy/', note: 'operator shop',
     async run() {
       const out = [];
       // Listing pages carry no price at all, so each matched product page is fetched. The page
@@ -2638,12 +2638,24 @@ if (unknown.length) { console.error('no such shop: ' + unknown.join(', ')); proc
 
 // Running one shop must not throw away the others. Start from what is already on disk and
 // replace only the shops this run actually covers.
+// Older snapshots sometimes omit each row's id and rely on the containing key.
+// Restore that identity before adapter failure/collapse paths flatten the buckets.
+function restoreOfferIdentity(buckets, products, match) {
+  const known=new Set(products.map(p=>p.id)), result={};
+  for (const [bucket,rows] of Object.entries(buckets||{})) for (const row of rows) {
+    const id=known.has(bucket)?bucket:match(`${row.title||''} ${row.url||''}`);
+    if (known.has(id)) (result[id]||=[]).push({...row,id});
+  }
+  return result;
+}
+
 const TODAY = new Date().toISOString().slice(0, 10);
 const PRICES_FILE = 'data/prices.json';
 let prev = { shops: {}, offers: {} };
 if (fs.existsSync(PRICES_FILE)) {
   try { prev = JSON.parse(fs.readFileSync(PRICES_FILE, 'utf8')); } catch { }
 }
+prev.offers = restoreOfferIdentity(prev.offers, phones, matchPhone);
 for (const [k, s] of Object.entries(SHOPS)) if (s.disabled && !names.includes(k)) console.log(`[${s.name}] skipped — ${s.disabled}`);
 const offers = {};
 const rehomed = [];
@@ -2705,6 +2717,7 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
 for (const o of rehomed) (offers[o.id] ||= []).push(o);
 if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched after their product was merged or removed`);
 const report = [];
+import {modelEsimOnly} from './tools/sim-hardware.mjs';
 // Parser-only audit tools stop at this marker; runtime helpers belong after it.
 import { purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows } from './tools/cache-availability.mjs';
 import {resumablePartial} from './tools/refresh-recovery.mjs';
@@ -3014,7 +3027,7 @@ for (const k of names) shops[k] = { name: SHOPS[k].name, site: SHOPS[k].site, no
 // Without an entry here the offer row would print the raw key - "miarmenia" rather than "Mi Armenia".
 const HAND = {
   miarmenia: { name: 'Mi Armenia', site: 'https://miarmenia.am', note: 'Xiaomi brand store' },
-  mtech: { name: 'MTech', site: 'https://www.mtech.am', note: 'electronics retailer' },
+  mtech: { name: 'MTech', site: 'https://www.mtech.am/en_us', note: 'electronics retailer' },
   zigzag: { name: 'Zigzag', site: 'https://www.zigzag.am', note: 'electronics retailer' },
   // Viva's own shop, added 2026-09-20 from an export the owner took that day. Its robots.txt is
   // "Allow: /" with a sitemap and its product pages carry ld+json prices, so this is a shop that
@@ -3049,7 +3062,9 @@ for (const [id, list] of Object.entries(offers)) {
     // A build the ADAPTER read out of the shop's own variant data is not a guess and is not
     // re-derived here. pixel gives all eight builds of a phone the same title, so re-reading
     // that title would collapse the distinction the page went to the trouble of stating.
-    const b = o.simFromPage && o.esim !== undefined ? o.esim
+    const hardware = modelEsimOnly(id);
+    const b = hardware !== undefined ? hardware
+      : o.simFromPage && o.esim !== undefined ? o.esim
       : SIMPINS.has(o.url) ? SIMPINS.get(o.url)
       : said !== undefined ? said
       : (NANO_ONLY.has(o.shop) && HAS_SIM.has(id)) ? false

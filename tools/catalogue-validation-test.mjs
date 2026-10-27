@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {catalogueProblems,assertCatalogueData} from './catalogue-validation.mjs';
+const p={id:'wired',category:'headphones',audio:{form:'on-ear'},specNA:{'connectivity.bluetooth':'Manufacturer: wired only'}};
+assert.deepEqual(catalogueProblems([p],{wired:[{price:6500}]}),[],'verified not-applicable fields and legacy bucket identities are valid');
+assert.match(catalogueProblems([{...p,specNA:{}}]).join('\n'),/missing connectivity.bluetooth/);
+for(const capacity of [0,-1,'700',NaN])assert.match(catalogueProblems([{...p,battery:{capacity}}]).join('\n'),/invalid battery/);
+assert.deepEqual(catalogueProblems([{...p,battery:{life:'60 hours'}}]),[],'unknown capacity is not zero');
+assert.match(catalogueProblems([p],{undefined:[{price:1000}]}).join('\n'),/unknown offer bucket/);
+assert.match(catalogueProblems([p],{wired:[{id:'other'}]}).join('\n'),/conflicting offer id/);
+const products=JSON.parse(fs.readFileSync('data/phones.json')),prices=JSON.parse(fs.readFileSync('data/prices.json'));
+assertCatalogueData(products,prices.offers);
+console.log('CATALOGUE_DATA_PASS: core fields or explicit evidence, positive published capacities and valid offer identities');

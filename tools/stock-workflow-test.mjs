@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const workflow=fs.readFileSync('.github/workflows/stock-check.yml','utf8');
+assert.match(workflow,/python tools\/check-links\.py --all --workers=4/,'bounded cross-host workers complete the sweep');
+assert.match(workflow,/id: sweep/,'capture outcome separately from continue-on-error');
+assert.match(workflow,/if: always\(\) && steps\.sweep\.outcome == 'failure'[\s\S]*exit 1/,'an incomplete sweep must fail the run');
+assert.match(workflow,/name: Restore this run's stock checkpoint[\s\S]*if: github\.run_attempt > 1[\s\S]*name: stock-checkpoint-\$\{\{ github\.run_id \}\}/,'only resume this run, never stale checks from another day');
+assert.match(workflow,/name: Preserve the stock checkpoint[\s\S]*if: always\(\)[\s\S]*include-hidden-files: true[\s\S]*\.links\.json/,'timeout recovery includes hidden progress');
+const preserve=workflow.indexOf('name: Preserve the stock checkpoint'),commit=workflow.indexOf('name: Commit hand rows'),fail=workflow.indexOf('name: Report an incomplete stock sweep');
+assert.ok(preserve<commit&&commit<fail,'save progress then commit completed rows before reporting failure');
+assert.match(workflow,/retention-days: 2/,'expire this short lived recovery record');
+console.log('STOCK_WORKFLOW_PASS: bounded sweep, honest failure and same-run checkpoint recovery');
