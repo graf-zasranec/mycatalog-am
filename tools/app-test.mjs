@@ -117,6 +117,13 @@ is(app.suggestFor('zzzzzzzzzz').length, 0, 'unrelated text does not invent sugge
 is(app.typoDistance('iphnoe', 'iphone', 1), 1, 'adjacent transposition counts as one typo');
 is(app.hayMatch(fold8, 'ＳＡＭＳＵＮＧ fold'), true, 'Unicode equivalent letters normalize correctly');
 
+// The model code is one identity: the c in Qualcomm cannot turn X8d into X8c.
+is(app.hayMatch(phones.find(p => p.id === 'honor-x8d'), 'honor x8c'), false, 'alphanumeric model suffix cannot come from chipset text');
+is(app.suggestFor('honor x8b')[0]?.id, 'honor-x8b', 'exact X8b model ranks first');
+is(app.suggestFor('honor x8c').length, 0, 'unavailable exact model cannot be replaced by another suffix');
+is(app.hayMatch(phones.find(p => p.id === 'apple-iphone-18-pro'), 'iphone18 pro'), true, 'joined model name and number stay searchable');
+is(app.hayMatch(phones.find(p => p.id === 'honor-x8b'), 'hnoor x8b'), true, 'brand typo correction preserves exact model code');
+
 /* --- savings: the two prices must be the same thing ------------------------------------ */
 const tierOf = offs => {
   const fake = { id: 'x', variants: [{ storage: 256, ram: 8 }, { storage: 512, ram: 8 }] };

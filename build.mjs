@@ -16,8 +16,10 @@ import { prerender, productRenderer } from './tools/prerender.mjs';
 import { pack, unpackSource, groupCatalogue, catalogueSource } from './tools/compact-data.mjs';
 import { catalogueIndex } from './tools/catalogue-index.mjs';
 import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
+import { assertCaseStableBrands } from './tools/brand-integrity.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
+assertCaseStableBrands(phones);
 const heroPreviews = fs.existsSync('data/photo-previews.json') ? JSON.parse(rd('data/photo-previews.json')) : {};
 const STR = { hy: {}, ru: {}, en: {} };
 for (const s of JSON.parse(rd('data/strings.json'))) { STR.hy[s.key] = s.hy; STR.ru[s.key] = s.ru; STR.en[s.key] = s.en; }

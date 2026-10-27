@@ -204,7 +204,7 @@ if (typeof st.fopen !== 'boolean') st.fopen = false;
 // matches() then compares a number against a string and the catalogue renders empty with no
 // visible cause. A junk st.scr is worse - it is truthy, so the screen block runs and hides
 // every product that has no display at all.
-for (const k of ['ram', 'stor', 'weight', 'batt', 'hz', 'cam', 'life', 'scrmin', 'pmin', 'pmax']) {
+for (const k of Object.keys(D).filter(k => typeof D[k] === 'number' && !['anc', 'touch', 'page'].includes(k))) {
   const v = Number(st[k]);
   st[k] = Number.isFinite(v) && v >= 0 ? v : D[k];
 }
@@ -248,6 +248,8 @@ function setBounds() {
 st.cmp = st.cmp.filter(id => DATA.some(p => p.id === id)).slice(0, MAXCMP);
 
 const BRANDS = [...new Set(DATA.map(p => p.brand))].sort();
+const BRAND_SPELLINGS = new Map(BRANDS.map(brand => [brand.toLowerCase(), brand]));
+st.brands = [...new Set(st.brands.filter(brand => typeof brand === 'string').map(brand => BRAND_SPELLINGS.get(brand.trim().toLowerCase())).filter(Boolean))];
 if (st.cat && !DATA.some(p => (p.category || 'phone') === st.cat)) st.cat = '';
 const BY_ID = new Map(DATA.map(p => [p.id, p]));
 const byId = id => BY_ID.get(id);
@@ -735,9 +737,14 @@ function searchMatches(q) {
   const key = String(q || '').normalize('NFKC').trim().toLowerCase().slice(0, 120);
   if (SEARCH_CACHE.has(key)) return SEARCH_CACHE.get(key);
   const words = searchWords(key), pool = DATA.filter(hasReal), hits = new Map();
+  // Keep typed model codes together: the c in Qualcomm is not the c in X8c.
+  // Word/number spacing remains flexible (iphone18 still finds iPhone 18).
+  const codes = [...key.matchAll(/[\p{L}]+\d+[\p{L}\d]*|\d+[\p{L}]+[\p{L}\d]*/gu)]
+    .map(match => new RegExp(searchWords(match[0]).join('[\\s._-]*'), 'u'));
   const exactWord = (w, text, tokens) => /^\d+$/.test(w) ? tokens.includes(w) : text.includes(w);
   for (const p of pool) {
     const text = hay(p), modelTokens = searchWords(fullName(p));
+    if (!codes.every(pattern => pattern.test(text))) continue;
     if (words.every(w => exactWord(w, text, modelTokens))) hits.set(p.id, 0);
   }
   let fuzzy = false;
@@ -745,6 +752,7 @@ function searchMatches(q) {
     fuzzy = true;
     for (const p of pool) {
       const text = hay(p), tokens = searchWords(text), modelTokens = searchWords(fullName(p)); let score = 0;
+      if (!codes.every(pattern => pattern.test(text))) continue;
       for (const w of words) {
         if (exactWord(w, text, modelTokens)) continue;
         // Model numbers and short words must match; only names earn typo correction.
@@ -3245,9 +3253,9 @@ document.addEventListener('click', e => {
   // it did nothing at all. Home means the top of a clean catalogue, every time.
   if (e.target.closest('.logo')) {
     e.preventDefault();
-    st.q = ''; st.brands = []; st.cat = '';
-    for (const k of ['ram', 'stor', 'batt', 'hz', 'scrmin', 'touch', 'weight']) st[k] = D[k];
-    st.scrs = []; st.sort = D.sort;
+    st.q = ''; st.cat = '';
+    for (const k in FILT) { const f = FILT[k]; if (f.kind === 'set') st[f.arr] = []; else st[k] = D[k]; }
+    Object.assign(st, { scrmin: 0, pmin: 0, pmax: 0, bounds: null, page: 1, sort: D.sort });
     save();
     if (location.hash && location.hash !== '#/') location.hash = '#/'; else render();
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -3340,7 +3348,7 @@ document.addEventListener('click', e => {
   if (rm) {
     const k = rm.dataset.rm;
     if (k === 'all') {
-      Object.assign(st, { q: '', pmin: PMIN, pmax: PMAX });
+      Object.assign(st, { q: '', scrmin: 0, pmin: PMIN, pmax: PMAX });
       for (const kk in FILT) { const f = FILT[kk]; if (f.kind === 'set') st[f.arr] = []; else st[kk] = D[kk]; }
       if ($('#q')) $('#q').value = '';
       $$('.fdrop.dirty').forEach(d => d.classList.remove('dirty'));
@@ -3429,8 +3437,21 @@ document.addEventListener('click', e => {
     $$('[data-drop][open]').forEach(o => { if (o !== d) o.open = false; });
 });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && e.target.id === 'q') { e.preventDefault(); submitSearch(); return; }
+  if (e.target.id === 'q' && !e.isComposing && e.keyCode !== 229) {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      if (moveSuggest(e.key === 'ArrowDown' ? 1 : -1)) e.preventDefault();
+      return;
+    }
+    if (e.key === 'Enter') {
+      e.preventDefault(); clearTimeout(qT);
+      const option = activeSuggestion();
+      if (option) option.click(); else submitSearch();
+      return;
+    }
+    if (e.key === 'Tab') closeSuggest();
+  }
   if (e.key !== 'Escape') return;
+  if (e.target.id === 'q') { e.preventDefault(); clearTimeout(qT); }
   closeSuggest();
   closeSheet();
   $$('[data-drop][open]').forEach(o => o.open = false);
@@ -3494,16 +3515,35 @@ function paintSuggest() {
     setExpanded(!box.hidden);
     return;
   }
-  box.innerHTML = (searchMatches(st.q).fuzzy ? `<p class="sg-none">${esc(didYouMean())}</p>` : '') + list.map(p => `<a class="sg-i" href="#/p/${esc(p.id)}">
+  $('#q')?.removeAttribute('aria-activedescendant');
+  box.innerHTML = (searchMatches(st.q).fuzzy ? `<p class="sg-none">${esc(didYouMean())}</p>` : '') + list.map((p, i) => `<a class="sg-i" id="sg-option-${i}" role="option" aria-selected="false" tabindex="-1" href="#/p/${esc(p.id)}">
       <img src="${esc(THUMB(p.id))}" alt="" loading="lazy" decoding="async">
       <span class="sg-n">${esc(fullName(p))}${nameTag(p)}</span>
       <span class="sg-p num">${amd(bestOf(p))}</span></a>`).join('')
-    + (total > list.length ? `<button class="sg-all" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
+    + (total > list.length ? `<button class="sg-all" id="sg-option-all" role="option" aria-selected="false" tabindex="-1" data-sgall="1">${esc(x('seeAll'))} (${total})</button>` : '');
   box.hidden = false;
   setExpanded(true);
   canonicalLinks(box);
 }
-function closeSuggest() { const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
+function closeSuggest() { $('#q')?.removeAttribute('aria-activedescendant'); const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
+function activeSuggestion() {
+  const box = $('#sugg'), id = $('#q')?.getAttribute('aria-activedescendant');
+  return box && !box.hidden && id ? [...box.querySelectorAll('[role="option"]')].find(el => el.id === id) : null;
+}
+function moveSuggest(direction) {
+  clearTimeout(qT);
+  const box = $('#sugg'), q = $('#q');
+  if (!box || !q) return false;
+  if (box.hidden) paintSuggest();
+  const options = [...box.querySelectorAll('[role="option"]')];
+  if (box.hidden || !options.length) return false;
+  const current = options.findIndex(el => el.id === q.getAttribute('aria-activedescendant'));
+  const next = current < 0 ? (direction > 0 ? 0 : options.length - 1) : (current + direction + options.length) % options.length;
+  for (const [index, el] of options.entries()) el.setAttribute('aria-selected', String(index === next));
+  q.setAttribute('aria-activedescendant', options[next].id);
+  options[next].scrollIntoView({block:'nearest'});
+  return true;
+}
 // the combobox has to SAY whether its list is open; it was announced closed the whole time
 function setExpanded(v) { const q = $('#q'); if (q) q.setAttribute('aria-expanded', v ? 'true' : 'false'); }
 // Enter, or the search button, is what opens the results page.
@@ -3521,6 +3561,8 @@ document.addEventListener('input', e => {
   const el = e.target;
   if (el.id === 'q') {
     st.q = el.value;
+    // An edited query invalidates the old keyboard selection before the debounce.
+    closeSuggest();
     // A keystroke used to rebuild all 111 cards. Coalesce to one repaint per pause - short
     // enough that it still feels immediate, long enough that typing never redraws mid-word.
     clearTimeout(qT);

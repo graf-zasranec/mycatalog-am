@@ -41,7 +41,9 @@ jobs:
           IMAGE_ENGINES: chromium,firefox,webkit
           RESPONSIVE_ENGINES: chromium,firefox,webkit
           FILTER_ENGINES: chromium,firefox,webkit
+          INTERACTION_ENGINES: chromium,firefox,webkit
         run: |
           node tools/image-loading-browser-test.mjs
           node tools/responsive-interaction-test.mjs
           node tools/filter-browser-test.mjs
+          node tools/interaction-regressions-browser-test.mjs
