@@ -636,7 +636,7 @@ function build({ inline, standalone }) {
   // (the home h1, already in the HTML) at 4.8 s, score 73. async=false keeps them in order.
   let script;
   if (lazy) {
-    appJs = transformSync(appJs, { minify: true, target: 'es2020', legalComments: 'none' }).code;
+    appJs = transformSync(appJs, { minify: true, target: 'es2020', charset: 'utf8', legalComments: 'none' }).code;
     urls.push(writeBundle('data/site-app.js', appJs));
     const bootUrl = writeBundle('data/site-boot.js', BOOT_JS);
     script = `\n<script defer src="${bootUrl}" data-src="${urls.join(' ')}"><\/script>\n`;
@@ -1168,13 +1168,13 @@ for (const lang of ['ru','en']) {
   const seoTags=/<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
   const translatedHead=HEAD({title,desc:lang==='ru'?'Сравните реальные цены на электронику в магазинах Армении.':'Compare real electronics prices across Armenian shops.',url,img:SITE+SEO.img,ld:[homeListLD(lang),{'@context':'https://schema.org','@type':'WebSite',name:'Better.am',url:SITE,inLanguage:lang}],lang,path:''}).split('</head>')[0];
   let head=sharedHome.split('</head>')[0].replace(seoTags,'').replace('<html lang="hy">','<html lang="'+lang+'">').replace("base-uri 'none'","base-uri 'self'")+'<base href="/">'+(translatedHead.match(seoTags)||[]).join('\n');
-  const links=html=>html.replace(/href="#\/p\/([^"#]+)"/g,(_,id)=>'href="/'+pre+'p/'+id+'/" data-route="#/p/'+id+'"').replace(/href="#\/c\/([^"#]+)"/g,(_,cat)=>'href="/'+pre+'c/'+cat+'/" data-route="#/c/'+cat+'"');
+  const links=html=>html.replace(/href="#\/p\/([^"#]+)"/g,(_,id)=>'href="/'+pre+'p/'+id+'/" data-route="#/p/'+id+'"').replace(/href="#\/c\/([^"#]+)"/g,(_,cat)=>'href="/'+pre+'c/'+cat+'/" data-route="#/c/'+cat+'"').replace(/href="#\/blog(?:\/([^"#]+))?"/g,(_,id)=>'href="/'+pre+'b/'+(id?id+'/':'')+'" data-route="#/blog'+(id?'/'+id:'')+'"');
   let body=emptyDiv(sharedHome.slice(sharedHome.indexOf('</head>')+7),'id="masthero"');
   body=body.replace(/(<div[^>]*id="masthero"[^>]*>)\s*<\/div>/,(_,open)=>open.replace(/\s+hidden\b/,'')+links(rendered.hero)+'</div>')
     .replace(/<main id="main"[\s\S]*?<\/main>/,'<main id="main" tabindex="-1" data-prerender="'+lang+'">'+links(rendered.main)+'</main>')
-    .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/,'$1'+rendered.nav+'</nav>')
+    .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/,'$1'+links(rendered.nav)+'</nav>')
     .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/,'$1'+rendered.langs+'</span>')
-    .replace(/(<div class="shell" id="foot">)[\s\S]*?<\/div><\/footer>/,'$1'+rendered.foot+'</div></footer>');
+    .replace(/(<div class="shell" id="foot">)[\s\S]*?<\/div><\/footer>/,'$1'+links(rendered.foot)+'</div></footer>');
   writePage(pre+'index.html',head+'</head>'+body);sitemapRows.push([url,today,1]);
 }
 // Only generated index files inside the known publication trees are removed. Keep

@@ -34,6 +34,7 @@ function renderer(data, {deferPhotos = false} = {}) {
   const render = new Function(...Object.keys(vars),src + String.raw`;
     return (product, lang) => {
     st.lang = lang;
+    location.hash = product ? '#/p/' + product.id : '#/';
     paintChrome();
     if (product) {
       SEL = initialConfig(product);

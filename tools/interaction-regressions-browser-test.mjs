@@ -7,7 +7,7 @@ const server=process.env.INTERACTION_BASE?null:spawn(process.execPath,['serve.mj
 if(server)await new Promise(resolve=>setTimeout(resolve,700));
 const engines=(process.env.INTERACTION_ENGINES||'chromium').split(',');let checks=0;const failures=[];
 try { for(const name of engines){const browser=await({chromium,firefox,webkit})[name].launch(name==='chromium'&&process.env.TEST_CHROMIUM_EXECUTABLE?{executablePath:process.env.TEST_CHROMIUM_EXECUTABLE}:{});
-try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const scenario of ['brands','keyboard','saved-filter','home-reset','legacy-reset']){
+try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const scenario of ['brands','keyboard','saved-filter','home-reset','legacy-reset','focus-ring']){
  const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});
  if(scenario==='saved-filter')await ctx.addInitScript(()=>localStorage.setItem('better.v2',JSON.stringify({cat:'largeappliance',apower:'invalid',avol:-1,aload:'Infinity',abtu:'abc',asets:'abc',chg:'abc',pmin:0,pmax:1e9,bounds:[0,1e9]})));
  if(scenario==='home-reset')await ctx.addInitScript(()=>localStorage.setItem('better.v2',JSON.stringify({cat:'largeappliance',apower:1000,shops:['eldorado'],cmp:['honor-x8d'],pmin:0,pmax:1e9,bounds:[0,1e9]})));
@@ -34,6 +34,11 @@ try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const s
   if(width<801)await p.locator('[data-bx-mobile-category]').click();
   await p.locator('.bx-filter-form [data-rm="all"]').click();
   assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('better.v2')).scrmin),0,'Reset clears legacy screen threshold');checks++;
+ }else if(scenario==='focus-ring'){
+  const q=p.locator('#q');await q.press('Shift+Tab');await p.keyboard.press('Tab');
+  const ring=await q.evaluate(el=>({style:getComputedStyle(el).outlineStyle,width:parseFloat(getComputedStyle(el).outlineWidth)}));
+  assert.notEqual(ring.style,'none','keyboard search focus has an actual outline');assert.ok(ring.width>=2,'focus outline is visible');checks+=2;
+  const langs=await p.locator('#langs a[data-lang]').count();assert.equal(langs,3,'language choices are crawlable anchors');checks++;
  }else{
   const q=p.locator('#q');await q.fill('honor x8d');await p.locator('#sugg').waitFor({state:'visible'});await q.press('ArrowDown');
   const active=await q.getAttribute('aria-activedescendant');assert.ok(active,'ArrowDown activates a suggestion');

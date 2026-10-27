@@ -30,6 +30,15 @@ export function reviewAllsellSpecs(html) {
 // evidence can establish this entry; catalogue specifications cannot do so.
 function modelIdentityAllowed(id, offer) {
   const identity = `${offer.title || ''} ${offer.url || ''}`;
+  // The model is fixed at65 inches; a cheaper55-inch sibling is a different TV.
+  if (id === 'xiaomi-s-pro-mini-led-65') {
+    let source = identity;
+    try { source = decodeURIComponent(source); } catch {}
+    const sizes = [...source.matchAll(/\bl(\d{2,3})mb\b|\b(\d{2,3})(?=\s*(?:["'″]|inches?\b))/gi)]
+      .map(m => +(m[1] || m[2]));
+    return sizes.length > 0 && sizes.every(size => size === 65);
+  }
+
   if (id === 'xiaomi-redmi-buds-6') {
     return /\bredmi[\s_-]*buds[\s_-]*6\b/i.test(identity)
       && !/\bredmi[\s_-]*buds[\s_-]*6[\s_-]*(?:active|lite|play|pro)\b|\bm2344e1\b/i.test(identity);

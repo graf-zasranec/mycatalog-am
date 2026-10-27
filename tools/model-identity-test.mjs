@@ -28,6 +28,14 @@ const carried={[target]:[{title:'HP 15 Core 3-100U',price:100000,ram:8,storage:5
 attachOfferConfigs([{id:target,category:'laptop',name:'15 (Core 5-120U)'}],carried);
 assert.equal(carried[target].length,0,'build-time configuration attachment also guards rows without embedded IDs');
 
+// A55-inch TV may not supply the65-inch model's headline price.
+const tv='xiaomi-s-pro-mini-led-65';
+const wrongTv={title:'Xiaomi TV S Pro Mini LED 55" 2026 (L55MB-SME)',url:'https://www.zigzag.am/am/xiaomi-tv-s-pro-mini-led-55-2026-l55mb-sme.html'};
+assert.equal(specOfferAllowed(wrongTv,[],tv),false,'55-inch source cannot price65-inch catalogue TV');
+for(const title of ['Xiaomi TV S Pro Mini LED 65" 2026 (L65MB-SME)',"Xiaomi TV S Pro Mini Led 65'' 2026",'XIAOMI S Pro Mini LED 65 (L65MB-SRU)'])
+ assert.equal(specOfferAllowed({title},[],tv),true,'exact65-inch sources remain available');
+assert.equal(specOfferAllowed({title:'Xiaomi TV S Pro Mini LED'},[],tv),false,'unlabelled size does not establish65-inch identity');
+
 const scraper=fs.readFileSync('scrape.mjs','utf8');
 const prefix=scraper.slice(0,scraper.indexOf('const report = [];')).replace('process.argv.slice(2)','[]');
 const {matchPhone}=await import('data:text/javascript;base64,'+Buffer.from(prefix+'\nexport {matchPhone};').toString('base64'));

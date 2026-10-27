@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js');
 /* ================= helpers ================= */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -1278,12 +1279,20 @@ const unsureRow = (p, key) => {
 
 /* ================= chrome ================= */
 const ICON_CHEV = '<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
+function languageHref(lang) {
+  const pre = lang === 'hy' ? '/' : '/' + lang + '/';
+  const route = location.hash || '#/';
+  const product = route.match(/^#\/p\/([a-z0-9-]+)$/);
+  const category = route.match(/^#\/c\/([a-z0-9-]+)$/);
+  const article = route.match(/^#\/blog(?:\/([a-z0-9-]+))?$/);
+  return pre + (product ? 'p/' + product[1] + '/' : category ? 'c/' + category[1] + '/' : article ? 'b/' + (article[1] ? article[1] + '/' : '') : '');
+}
 function paintChrome() {
   document.documentElement.lang = st.lang;
   if (st.theme === 'auto') document.documentElement.removeAttribute('data-theme');
   else document.documentElement.dataset.theme = st.theme;
   $('#langs').innerHTML = ['hy', 'ru', 'en'].map(l =>
-    `<button data-lang="${l}" aria-pressed="${st.lang === l}">${{ hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' }[l]}</button>`).join('');
+    `<a href="${languageHref(l)}" data-lang="${l}" lang="${l}" hreflang="${l}"${st.lang === l ? ' aria-current="page"' : ''}>${{ hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' }[l]}</a>`).join('');
   const tb = $('#themeBtn');
   tb.setAttribute('aria-label', t('common.theme') + ': ' + st.theme);
   tb.setAttribute('title', t('common.theme'));
@@ -1305,6 +1314,7 @@ function paintChrome() {
   paintCmpCount();
   $('#foot').innerHTML = `<b>Better.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
+    + `<nav class="ft-categories" aria-label="${esc(t('nav.catalog'))}">${[...new Set(DATA.map(catOf))].sort((a,b)=>catName(a).localeCompare(catName(b),st.lang)).map(cat=>`<a href="${st.lang === 'hy' ? '/' : '/' + st.lang + '/'}c/${esc(cat)}/" data-route="#/c/${esc(cat)}">${esc(catName(cat))}</a>`).join('')}</nav>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a>${typeof window.gtag === 'function' ? `<button type="button" class="analytics-settings" data-analytics-settings>${({hy:'Վիճակագրության կարգավորումներ',ru:'Настройки статистики',en:'Analytics settings'})[st.lang]}</button>` : ''}</span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
@@ -2364,7 +2374,7 @@ function railHTML(rows) {
     const side = at < 25 ? ' l' : at > 75 ? ' r' : '';
     const list = g.map(o => `${shopName(o.shop)} · ${money(o.price)} ֏`);
     return `<button type="button" class="rd${g.length > 1 ? ' cl' : ''}${i === 0 ? ' best' : ''}${i === groups.length - 1 ? ' top' : ''}${side}"
-      style="left:${at.toFixed(1)}%" aria-label="${esc(list.join(', '))}">${g.length > 1 ? `<span class="rc">×${g.length}</span>` : ''}<span class="rt">${list.map(esc).join('<br>')}</span></button>`;
+      style="left:${at.toFixed(1)}%" aria-label="${esc(list.join(', '))}">${g.length > 1 ? `<span class="rc">×${g.length}</span>` : ''}<span class="rt" aria-hidden="true">${list.map(esc).join('<br>')}</span></button>`;
   }).join('');
   return `<div class="rail2"><span class="ln"></span>${dots}</div>
     <div class="ends2"><span><b class="num">${money(lo)} ֏</b>${esc(shopName(rows[0].shop))}</span>
@@ -2445,7 +2455,7 @@ function detailView(p) {
     return body ? `<section class="panel-c"><h3><i></i>${esc(t(g))}</h3><dl>${body}</dl></section>` : '';
   }).join('');
 
-  return `<div class="shell">
+  return `<div class="shell product-page">
     <div class="navrow">${backLink('#/', t('nav.catalog'))}
       <nav class="crumb"><span>${esc(p.brand)}</span><span>›</span><span>${esc(p.name)}</span></nav></div>
 
@@ -3306,7 +3316,7 @@ document.addEventListener('click', e => {
     return;
   }
   const L = e.target.closest('[data-lang]');
-  if (L) { st.lang = L.dataset.lang; save(); render(true); return; }
+  if (L) { if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); st.lang = L.dataset.lang; save(); render(true); return; }
   if (e.target.closest('#themeBtn')) {
     // two themes only: white-blue and dark-blue. From 'auto', flip away from what the OS shows.
     const osDark = matchMedia('(prefers-color-scheme:dark)').matches;
