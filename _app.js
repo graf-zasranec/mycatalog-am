@@ -436,10 +436,15 @@ const filterValues = (p, key) => (hasReal(p) ? offersFor(p).map(o => offerConfig
 const catalogPrice = (p, s = st) => catalogOffers(p, s)[0]?.price
   ?? (!hasReal(p) ? catalogVariants(p, s)[0]?.priceAmd ?? p.priceAmd : null);
 function initialConfig(p) {
-  const o = catalogOffers(p)[0] || offersFor(p)[0];
-  const v = o ? offerConfig(p, o) : catalogVariants(p)[0] || p.variants?.[0] || {};
+  // A new product visit starts at its real lowest price, independently of listing
+  // filters. For equal prices prefer the smaller purchasable memory combination.
+  const all=offersFor(p),minimum=all[0]?.price;
+  const smaller=(a,b)=>['storage','ram'].reduce((n,k)=>n||((a[k]??Number.MAX_SAFE_INTEGER)-(b[k]??Number.MAX_SAFE_INTEGER)),0);
+  const o=all.filter(o=>+o.price===+minimum).slice().sort((a,b)=>smaller(offerConfig(p,a),offerConfig(p,b)))[0];
+  const v = o ? offerConfig(p, o) : (p.variants||[]).slice().sort(smaller)[0] || {};
+  const capacities=(p.variants||[]).map(v=>v.storage).filter(v=>v!=null);
   return { id: p.id, color: o?.color || p.colors?.[0] || null, ram: v.ram ?? null,
-    storage: v.storage ?? p.variants?.[0]?.storage ?? null, size: v.size ?? null,
+    storage: v.storage ?? (p.variantUnit!=='mm'&&capacities.length?Math.min(...capacities):null), size: v.size ?? null,
     band: v.band ?? null, cpu: v.cpu ?? null, configSpecs: v.configSpecs || null, esim: typeof o?.esim === 'boolean' ? o.esim : null,
     cell: typeof o?.cell === 'boolean' ? o.cell : null };
 }
@@ -3673,6 +3678,9 @@ window.addEventListener('hashchange', e => {
   const from = new URL(e.oldURL).hash.replace(/^#/, '') || '/';
   if (remembers(from)) scrollMem.set(from, window.scrollY);
   const to = location.hash.replace(/^#/, '') || '/';
+  // Coming back from the catalogue is a fresh visit, even to the same model.
+  // Option/theme/language rerenders and explicit comparison links keep their choice.
+  if(from.startsWith('/')&&!/^\/(?:p|offers)\//.test(from)&&from!=='/compare'&&/^\/p\//.test(to))SEL={id:null};
   // Leaving the comparison used to end it, so the Back button threw a comparison away. The picks
   // are not invisible state: the nav's Compare link carries their count. Only Clear all empties it.
   // A card opened from the grid hands its photo to the product page: the browser morphs one into
@@ -3705,9 +3713,9 @@ const BX_ASSETS={"images/bento/apple-iphone-18-pro-800-c9939905a9.webp":[{"src":
 const bxText=k=>(BX_WORDS[st.lang]||BX_WORDS.en)[k]||BX_WORDS.en[k]||k;
 function bxIcon(kind){const paths={phone:'<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/>',laptop:'<rect x="4" y="3" width="16" height="13" rx="1.5"/><path d="m4 16-2 4h20l-2-4"/>',tv:'<rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8m-4-4v4"/>',headphones:'<path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="2" y="12" width="5" height="9" rx="2"/><rect x="17" y="12" width="5" height="9" rx="2"/>',kitchen:'<path d="M5 3v5m3-5v5M2 3v5c0 3 6 3 6 0M5 10v11m13-8h3V3c-4 0-6 8-3 10Zm0 0v8"/>',vacuum:'<path d="m15 3-6 15m-4 0h9l2 4H3Zm9-14 4 2 2-4-4-2Z"/>',watch:'<rect x="6" y="6" width="12" height="12" rx="3"/><path d="m8 6 1-4h6l1 4m-8 12 1 4h6l1-4m-4-8v3l2 1"/>'};return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[kind]||paths.phone}</svg>`;}
 function bxPhoto(src,alt,hero=false){const a=BX_ASSETS[src]||[],fallback=a.find(x=>x.width>=480)||a.at(-1);return `<img src="${esc(fallback?.src||src)}" ${a.length?`srcset="${a.map(x=>`${esc(x.src)} ${x.width}w`).join(',')}" sizes="${hero?'(max-width:800px) 54vw,500px':'(max-width:800px) 48px,380px'}"`:''} alt="${esc(alt)}" width="800" height="800" decoding="async" ${hero?'fetchpriority="high"':'loading="lazy"'}>`;}
-function bxHeroOffers(){const p=byId(BX_DATA.hero.id);if(!p)return[];const list=offersFor(p).filter(o=>+o.ram===12&&+o.storage===2048&&o.esim===false&&(!o.color||o.color==='Burgundy')).slice().sort((a,b)=>a.price-b.price);return [...new Map(list.slice().reverse().map(o=>[o.shop,o])).values()].sort((a,b)=>a.price-b.price);}
-function bxMastHero(){const h=BX_DATA.hero,p=byId(h.id),rows=bxHeroOffers(),lo=rows[0]?.price,sorted=rows.map(o=>o.price),mid=sorted.length?(sorted[Math.floor((sorted.length-1)/2)]+sorted[Math.ceil((sorted.length-1)/2)])/2:0;const saving=lo?Math.round(mid-lo):0;const listed=DATA.filter(hasReal).length;return `<section class="bx-grid" aria-label="Better.am">
-<a class="bx-deal" href="#/p/${esc(h.id)}" data-bx-deal="${esc(h.id)}">${saving>0?`<span class="bx-save">−${money(saving)} ֏</span><span class="bx-baseline">${esc(bxText('vsMedian'))}</span>`:''}${bxPhoto(h.photo,fullName(p),true)}<div class="bx-deal-copy"><h1>${esc(p.name)}</h1><p class="bx-config">${esc(gb(2048))} · ${esc(gb(12))} · Nano-SIM · ${rows.length} ${esc(bxText('shops'))}</p><p class="bx-price">${lo?money(lo)+' ֏':'—'}</p><p class="bx-deal-date">${esc(bxText('deal'))} · ${esc(updatedOn().slice(0,5))}</p><div class="bx-bars">${rows.slice(0,2).map((o,i)=>`<div><span>${esc(shopName(o.shop))}</span><i><b style="width:${Math.round(lo/o.price*100)}%"></b></i><strong>${money(o.price)}</strong></div>`).join('')}</div></div></a>
+function bxHeroOffers(){const p=byId(BX_DATA.hero.id);if(!p)return[];const list=selectionOffers(p,initialConfig(p)).slice().sort((a,b)=>a.price-b.price);return [...new Map(list.slice().reverse().map(o=>[o.shop,o])).values()].sort((a,b)=>a.price-b.price);}
+function bxMastHero(){const h=BX_DATA.hero,p=byId(h.id),config=initialConfig(p),rows=bxHeroOffers(),lo=rows[0]?.price,sorted=rows.map(o=>o.price),mid=sorted.length?(sorted[Math.floor((sorted.length-1)/2)]+sorted[Math.ceil((sorted.length-1)/2)])/2:0;const saving=lo?Math.round(mid-lo):0;const listed=DATA.filter(hasReal).length;return `<section class="bx-grid" aria-label="Better.am">
+<a class="bx-deal" href="#/p/${esc(h.id)}" data-bx-deal="${esc(h.id)}">${saving>0?`<span class="bx-save">−${money(saving)} ֏</span><span class="bx-baseline">${esc(bxText('vsMedian'))}</span>`:''}${bxPhoto(h.photo,fullName(p),true)}<div class="bx-deal-copy"><h1>${esc(p.name)}</h1><p class="bx-config">${[config.storage!=null?gb(config.storage):'',config.ram!=null?gb(config.ram):'',config.esim===true?'eSIM':config.esim===false?'Nano-SIM':''].filter(Boolean).map(esc).join(' · ')} · ${rows.length} ${esc(bxText('shops'))}</p><p class="bx-price">${lo?money(lo)+' ֏':'—'}</p><p class="bx-deal-date">${esc(bxText('deal'))} · ${esc(updatedOn().slice(0,5))}</p><div class="bx-bars">${rows.slice(0,2).map((o,i)=>`<div><span>${esc(shopName(o.shop))}</span><i><b style="width:${Math.round(lo/o.price*100)}%"></b></i><strong>${money(o.price)}</strong></div>`).join('')}</div></div></a>
 <section class="bx-summary" aria-label="${esc(bxText('better'))}"><div class="bx-stats">${[[listed,'models'],[Object.values(P.offers||{}).reduce((n,a)=>n+a.length,0),'offers'],[Object.keys(P.shops||{}).length,'shops']].map(([n,k])=>`<div><b>${money(n)}</b><span>${esc(bxText(k))}</span></div>`).join('')}</div><div><h2>${esc(bxText('better'))}</h2><p>${esc(bxText('picks'))}</p></div><div class="bx-suggest">${['Apple','Samsung','Sony','Dyson'].map(q=>`<button type="button" data-bx-search="${q}">${q}</button>`).join('')}</div></section>
 <div class="bx-categories">${BX_DATA.categories.map(c=>{const cat=catOf(byId(c.product)||{category:c.id});const pool=DATA.filter(p=>catOf(p)===cat&&hasReal(p)),min=Math.min(...pool.map(p=>offersFor(p)[0]?.price).filter(v=>v>0));return `<a class="bx-category bx-${c.id}" href="#/c/${esc(cat)}"><h2>${esc(bxText(c.id))}</h2><p>${esc(bxText('from'))} <b>${Number.isFinite(min)?money(min)+' ֏':'—'}</b></p><span class="bx-art">${bxPhoto(c.photo,byId(c.product)?.name||bxText(c.id))}</span><span class="bx-count">${pool.length} ${esc(bxText('models'))}</span><span class="bx-type">${bxIcon(c.id)}</span></a>`;}).join('')}</div></section>`;}
 
@@ -3801,7 +3809,7 @@ function bxSyncMobileNav(){let nav=document.querySelector('.bx-mobile-nav');if(!
 function bxStartMobileC(){const main=document.querySelector('#main'),selection=document.querySelector('#compareSelection');if(main)new MutationObserver(bxSyncMobileNav).observe(main,{childList:true});if(selection)new MutationObserver(bxSyncMobileNav).observe(selection,{childList:true,subtree:true});new MutationObserver(bxSyncMobileNav).observe(document.documentElement,{attributes:true,attributeFilter:['class']});bxSyncMobileNav();}
 document.addEventListener('click',e=>{if(e.target.closest('[data-bx-mobile-home]')){e.preventDefault();document.querySelector('.logo')?.click();}if(e.target.closest('[data-bx-mobile-category]'))bxMobileCategory();});
 
-document.addEventListener('click',e=>{const deal=e.target.closest('[data-bx-deal]');if(deal&&!e.ctrlKey&&!e.metaKey){const p=byId(deal.dataset.bxDeal);if(p)SEL={...initialConfig(p),id:p.id,storage:2048,ram:12,esim:false,color:'Burgundy'};}const q=e.target.closest('[data-bx-search]');if(q){st.q=q.dataset.bxSearch;save();if(location.hash==='#/search')render();else location.hash='/search';}});
+document.addEventListener('click',e=>{const q=e.target.closest('[data-bx-search]');if(q){st.q=q.dataset.bxSearch;save();if(location.hash==='#/search')render();else location.hash='/search';}});
 
 render();
 bxObserveHeader();bxObserveCatalogue();bxWatchCatalogueIcons();bxStartFilters();bxStartMobileC();

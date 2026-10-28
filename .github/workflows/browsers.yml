@@ -43,9 +43,11 @@ jobs:
           FILTER_ENGINES: chromium,firefox,webkit
           INTERACTION_ENGINES: chromium,firefox,webkit
           PRODUCT_STARTUP_ENGINES: chromium,firefox,webkit
+          CHEAPEST_ENGINES: chromium,firefox,webkit
         run: |
           node tools/image-loading-browser-test.mjs
           node tools/responsive-interaction-test.mjs
           node tools/filter-browser-test.mjs
           node tools/interaction-regressions-browser-test.mjs
           node tools/product-startup-browser-test.mjs
+          node tools/cheapest-config-browser-test.mjs
