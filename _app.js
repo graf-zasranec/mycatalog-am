@@ -237,7 +237,9 @@ function priceBounds(cat) {
     .filter(Number.isFinite);
   return {min:ps.length?Math.floor(Math.min(...ps)/5000)*5000:0,max:ps.length?Math.ceil(Math.max(...ps)/5000)*5000:0};
 }
+const catalogueReady = () => !window.betterCatalogueState || window.betterCatalogueState.ready;
 function setBounds() {
+  if(!catalogueReady())return;
   const bounds=priceBounds(st.cat);PMIN=bounds.min;PMAX=bounds.max;
   // The saved range was chosen against older bounds (another section, or yesterday's prices).
   // A stale range silently hides products outside it, so reset it whenever the bounds move.
@@ -714,7 +716,7 @@ function loadLazy() {
 // for the Galaxy Z Fold 8, and a contiguous-substring test answers "no results" to it. Every
 // word has to appear somewhere, order free.
 // Every keystroke and every filter count asks this of all 1304 products; the text never changes.
-const HAY = new WeakMap();
+let HAY = new WeakMap();
 const hay = p => { let h = HAY.get(p);
   if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '') + (p.category === 'laptop' ? ' laptop' : p.category === 'tablet' ? ' tablet' : '')).toLowerCase());
   return h; };
@@ -3096,6 +3098,21 @@ function paintCmpRes() {
     </button>`).join('') : `<p class="cmnone">${esc(x('emptyT'))}</p>`;
 }
 
+// A partial product startup keeps every identity, but global views/search must
+// wait for complete listing specifications and offers. Reconcile caches once.
+let catalogueReconciled = catalogueReady();
+function ensureCatalogue() {
+  const state=window.betterCatalogueState;
+  if(!state)return Promise.resolve();
+  return state.load().then(()=>{
+    if(!catalogueReconciled){HAY=new WeakMap();SEARCH_CACHE.clear();filterBodies.clear();catalogueReconciled=true;}
+  });
+}
+function catalogueFailure(main) {
+  document.documentElement.classList.remove('route-pending');
+  main.innerHTML=`<div class="shell empty"><h1>${esc(({hy:'Տվյալները չբեռնվեցին',ru:'Не удалось загрузить данные',en:'Could not load product data'})[st.lang])}</h1><button class="btn" data-detail-retry>${esc(({hy:'Կրկին փորձել',ru:'Повторить',en:'Retry'})[st.lang])}</button></div>`;
+}
+let catalogueRenderTicket=0;
 /* ================= router ================= */
 // The query belongs to the results page. Coming home - the wordmark, a category, or the back
 // button - left the word sitting in the box AND still filtering the grid underneath it, so the
@@ -3107,13 +3124,23 @@ let painted = false;
 function render(keepScroll) {
   document.documentElement.classList.remove('fs-open');   // a route change never leaves the sheet up
   const raw = location.hash.replace(/^#/, '');
+  const initialId=document.getElementById('main')?.dataset.prerenderProduct;
+  const localProduct=initialId && (raw==='/p/'+initialId||raw==='/offers/'+initialId||(raw&&raw[0]!=='/'&&document.getElementById(raw)));
+  const ticket=++catalogueRenderTicket;
+  if(!catalogueReady()&&!localProduct){
+    const main=$('#main');document.documentElement.classList.add('route-pending');
+    main.dataset.loading=({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[st.lang];
+    ensureCatalogue().then(()=>{if(ticket===catalogueRenderTicket)render(keepScroll)}).catch(()=>{if(ticket===catalogueRenderTicket)catalogueFailure(main)});
+    return;
+  }
+
   // #buy / #results / #main are in-page anchors, not routes. They used to fall through to
   // the catalogue, throwing you off the product page you were reading.
   if (raw && raw[0] !== '/') {
     const el = document.getElementById(raw);
     // Focus first: a skip link that only scrolls leaves the keyboard where it was, which is the
     // one thing the link exists to fix.
-    if (el && $('#main').innerHTML) { el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    if (el && $('#main').innerHTML) { document.documentElement.classList.remove('route-pending'); el.focus({ preventScroll: true }); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
   }
   // Tapping a suggestion opened the product underneath and left the list of suggestions sitting
   // on top of it. The outside-click rule cannot close it: a suggestion is a link INSIDE .srch, and
@@ -3514,6 +3541,7 @@ document.addEventListener('change', e => {
 // Suggestions under the box: the fastest route to ONE product, without leaving the page you
 // are on. The full grid, with every filter, lives behind Enter or the search button.
 const SUGG_MAX = 8;
+let suggestionTicket = 0;
 function suggestFor(q) {
   if (!String(q || '').trim()) return [];
   const hit = DATA.filter(p => hayMatch(p, q));
@@ -3528,6 +3556,14 @@ function suggestFor(q) {
   return hit.slice(0, SUGG_MAX);
 }
 function paintSuggest() {
+  if(!String(st.q||'').trim()){closeSuggest();return;}
+  if(!catalogueReady()){
+    const query=st.q,ticket=suggestionTicket;
+    ensureCatalogue().then(()=>{if(ticket===suggestionTicket&&st.q===query&&document.activeElement===$('#q'))paintSuggest()}).catch(()=>{
+      const box=$('#sugg');if(ticket!==suggestionTicket||!box||st.q!==query||!query.trim()||document.activeElement!==$('#q'))return;
+      box.innerHTML=`<button type="button" data-catalogue-search-retry>${esc(({hy:'Կրկին փորձել',ru:'Повторить',en:'Retry search'})[st.lang])}</button>`;box.hidden=false;setExpanded(true);
+    });return;
+  }
   const box = $('#sugg');
   if (!box) return;
   const list = suggestFor(st.q);
@@ -3550,7 +3586,7 @@ function paintSuggest() {
   setExpanded(true);
   canonicalLinks(box);
 }
-function closeSuggest() { $('#q')?.removeAttribute('aria-activedescendant'); const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
+function closeSuggest() { suggestionTicket++; $('#q')?.removeAttribute('aria-activedescendant'); const b = $('#sugg'); if (b) { b.hidden = true; b.innerHTML = ''; } setExpanded(false); }
 function activeSuggestion() {
   const box = $('#sugg'), id = $('#q')?.getAttribute('aria-activedescendant');
   return box && !box.hidden && id ? [...box.querySelectorAll('[role="option"]')].find(el => el.id === id) : null;
@@ -3582,6 +3618,8 @@ function submitSearch() {
   save();
   if (location.hash !== '#/search') location.hash = '#/search'; else render();
 }
+document.addEventListener('focusin',e=>{if(e.target.id==='q'&&!catalogueReady())ensureCatalogue().catch(()=>{})});
+document.addEventListener('click',e=>{if(e.target.closest('[data-catalogue-search-retry]')){$('#q')?.focus();paintSuggest()}});
 document.addEventListener('input', e => {
   const el = e.target;
   if (el.id === 'q') {

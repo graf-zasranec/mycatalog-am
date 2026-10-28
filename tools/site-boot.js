@@ -1,5 +1,6 @@
 (() => {
   const urls = document.currentScript.dataset.src.split(' ');
+  const seedUrl = document.currentScript.dataset.productSeed;
   const main = document.getElementById('main');
   // Photos work before the catalogue code downloads. A noscript copy keeps the
   // same photos available to visitors and crawlers without JavaScript.
@@ -44,14 +45,17 @@
     try {
       // Start catalogue downloads after the prerendered heading has painted.
       // Preloading in the deferred boot script competed with first-paint fonts.
-      for (const url of urls) {
+      const route = location.hash.match(/^#\/(?:p|offers)\/([a-z0-9-]+)$/) || (!location.hash || !location.hash.startsWith('#/') ? location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/) : null);
+      const seeded = seedUrl && route?.[1] === main.dataset.prerenderProduct;
+      for (const url of seeded ? [seedUrl,urls[2]] : urls) {
         const link = document.createElement('link'); link.rel = 'preload'; link.as = 'script'; link.href = url;
         link.fetchPriority = 'high';
         document.head.appendChild(link);
       }
       // The prerendered photo loads independently at high priority. A slow image
       // must not delay working colour, configuration and shop controls.
-      await Promise.all([append(urls[0]), append(urls[1])]);
+      if(seeded) await append(seedUrl);
+      else await Promise.all([append(urls[0]), append(urls[1])]);
       const m = location.hash.match(/^#\/(?:p|offers)\/([a-z0-9-]+)$/) || location.pathname.match(/\/p\/([a-z0-9-]+)\/?$/);
       const p = m && DATA.find(p => p.id === m[1]);
       if (p && DETAIL_CHUNKS[p._detailChunk]) await append(DETAIL_CHUNKS[p._detailChunk]);

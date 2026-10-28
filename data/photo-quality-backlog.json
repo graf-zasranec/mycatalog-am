@@ -1,7 +1,7 @@
 {
-  "checked": "2026-10-27",
-  "basis": "344 baseline models without any600px visible-body cutout; all have existing photos.19verified repairs integrated. Native detail cannot be created by padding/enlargement.",
-  "remaining": 325,
+  "checked": "2026-10-28",
+  "basis": "344 baseline models without any600px visible-body cutout;19verified repairs integrated27Oct and11additional models repaired28Oct. All models have photos; remaining queue is native photo quality, not missing photos. No enlargement.",
+  "remaining": 314,
   "products": [
     {
       "id": "honor-200-lite-5g",
@@ -13,18 +13,6 @@
       ],
       "attempts": [],
       "disposition": "recovered-native-canvas-below600"
-    },
-    {
-      "id": "marshall-willen",
-      "beforeVisibleLong": 537,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://cdn.storech.com/uploads/store-media-files/000/000/000/000/001/559/1685184902-willen-cream-ixel-.png",
-        "https://cdn.storech.com/uploads/products/000/000/000/000/019/374/800_1685185237-marshall-willen-cream-1.png",
-        "https://ibolit.mobi/wp-content/uploads/2025/03/red1835_1.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600"
     },
     {
       "id": "sony-playstation-vr2",
@@ -86,16 +74,6 @@
       "sourceAuditDisposition": "candidate-review",
       "sourceURLs": [
         "https://ubicross-assets.fra1.digitaloceanspaces.com/9053/productIcon/6ab7c5db811c1.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600"
-    },
-    {
-      "id": "jbl-wind-2",
-      "beforeVisibleLong": 528,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://likemobile.am/storage/likemobile/product/14980/dfe8690a4de8c8e831e30c06a448fbce.webp"
       ],
       "attempts": [],
       "disposition": "recovered-visible-body-below600"
@@ -333,22 +311,6 @@
       ],
       "attempts": [],
       "disposition": "recovered-native-canvas-below600"
-    },
-    {
-      "id": "jbl-quantum-350-wireless-q350wl",
-      "beforeVisibleLong": 599,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://vlv.am/public/uploads/images/12-03-2026/69b2b43a57910.webp"
-      ],
-      "attempts": [
-        {
-          "url": "https://vlv.am/public/uploads/images/21-02-2023/63f4d6a4dc1db.webp",
-          "page": "https://vlv.am/en/Product/18606",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "disposition": "recovered-visible-body-below600"
     },
     {
       "id": "sony-ht-s350",
@@ -2862,16 +2824,6 @@
       "disposition": "recovered-visible-body-below600"
     },
     {
-      "id": "bosch-sps2hmi54q",
-      "beforeVisibleLong": 500,
-      "sourceAuditDisposition": "native-source-resolution-limit",
-      "sourceURLs": [
-        "https://vlv.am/public/uploads/images/28-08-2025/68b04c27650ee.webp"
-      ],
-      "attempts": [],
-      "disposition": "recovered-native-canvas-below600"
-    },
-    {
       "id": "hisense-rl3b303sewe1",
       "beforeVisibleLong": 515,
       "sourceAuditDisposition": "native-source-resolution-limit",
@@ -3115,16 +3067,6 @@
       ],
       "attempts": [],
       "disposition": "recovered-visible-body-below600"
-    },
-    {
-      "id": "bosch-smv6ecx08e",
-      "beforeVisibleLong": 530,
-      "sourceAuditDisposition": "native-source-resolution-limit",
-      "sourceURLs": [
-        "https://vlv.am/public/uploads/images/11-05-2026/6a01868527fa9.webp"
-      ],
-      "attempts": [],
-      "disposition": "recovered-native-canvas-below600"
     },
     {
       "id": "lg-dfc811fl",
@@ -3395,36 +3337,6 @@
       "disposition": "apple-foreground-mask-unresolved"
     },
     {
-      "id": "bosch-kgn49aibt",
-      "beforeVisibleLong": 576,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://eldorado.am/media/catalog/product/b/o/bosch_kgn49aibt_1.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600"
-    },
-    {
-      "id": "bosch-kgn56cx30u",
-      "beforeVisibleLong": 590,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://eldorado.am/media/catalog/product/b/o/bosch_kgn56cx30u.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600"
-    },
-    {
-      "id": "bosch-kgn39lr3ar",
-      "beforeVisibleLong": 579,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://eldorado.am/media/catalog/product/5/b/5bf23052a73a9ccd5f3d5d82b4ba148a.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600"
-    },
-    {
       "id": "samsung-rf44a5002s9-wt",
       "beforeVisibleLong": 591,
       "sourceAuditDisposition": "candidate-review",
@@ -3485,16 +3397,6 @@
       "disposition": "recovered-native-canvas-below600"
     },
     {
-      "id": "bosch-sps25dw03r",
-      "beforeVisibleLong": 572,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://eldorado.am/media/catalog/product/6/a/6a12f449790ed7be96d77aa4c7d9c1c1.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600"
-    },
-    {
       "id": "lg-dfb325hm",
       "beforeVisibleLong": 451,
       "sourceAuditDisposition": "native-source-resolution-limit",
@@ -3550,16 +3452,6 @@
       "sourceAuditDisposition": "native-source-resolution-limit",
       "sourceURLs": [
         "https://eldorado.am/media/catalog/product/b/o/bosch_waj2006epl_6_.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-native-canvas-below600"
-    },
-    {
-      "id": "bosch-wan2417epl",
-      "beforeVisibleLong": 472,
-      "sourceAuditDisposition": "native-source-resolution-limit",
-      "sourceURLs": [
-        "https://eldorado.am/media/catalog/product/b/o/bosch_wan2417epl.jpg"
       ],
       "attempts": [],
       "disposition": "recovered-native-canvas-below600"
@@ -3765,16 +3657,6 @@
       "disposition": "recovered-native-canvas-below600"
     },
     {
-      "id": "bosch-wtm85251by",
-      "beforeVisibleLong": 463,
-      "sourceAuditDisposition": "native-source-resolution-limit",
-      "sourceURLs": [
-        "https://eldorado.am/media/catalog/product/b/o/bosch_wtm85251by.jpg"
-      ],
-      "attempts": [],
-      "disposition": "recovered-native-canvas-below600"
-    },
-    {
       "id": "samsung-dv90bb5245ablp",
       "beforeVisibleLong": 562,
       "sourceAuditDisposition": "candidate-review",
@@ -3844,5 +3726,22 @@
       "attempts": [],
       "disposition": "recovered-visible-body-below600"
     }
-  ]
+  ],
+  "latestSourceReview": {
+    "officialSourceAttempts": "data/photo-sources-2026-10-28.json",
+    "repairedModels": [
+      "bosch-kgn39lr3ar",
+      "bosch-kgn49aibt",
+      "bosch-kgn56cx30u",
+      "bosch-smv6ecx08e",
+      "bosch-sps25dw03r",
+      "bosch-sps2hmi54q",
+      "bosch-wan2417epl",
+      "bosch-wtm85251by",
+      "jbl-quantum-350-wireless-q350wl",
+      "jbl-wind-2",
+      "marshall-willen"
+    ],
+    "remainingSourceLimits": "Existing per-model dispositions retained; unfound exact larger sources are unresolved, not impossible. Marshall small PLP sources rejected; exact larger front originals used with Apple Vision."
+  }
 }

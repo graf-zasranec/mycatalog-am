@@ -7,7 +7,7 @@ Shared starting point for Claude Code and Codex when tracing or changing product
 | Stage | Input → output | Entry points |
 |---|---|---|
 | Source | Retailer offer/page image URL → `images/_src/<id>__<color>.<ext>` | `tools/colors.mjs` selects offer photos, including per-color images. `tools/shelf-photos.py` and `tools/shop-photos.py` download missing photos. `tools/find-images.py` fills URLs in `data/wanted-images.csv`; it does not download image files. |
-| Background removal | `images/_src/` → transparent, trimmed `images/cut/<id>__<color>.webp` | `python tools/cutout.py [product-id]__`; `tools/place-cut.py` handles already-transparent sources or explicit white/flood matting. The selectors are filename prefixes; include `__` to avoid matching a longer product ID with the same prefix. |
+| Background removal | `images/_src/` → transparent, trimmed `images/cut/<id>__<color>.webp` | On the Mac, use `tools/vision-cutout.swift` (Apple Vision, the native Remove Background engine), as requested by the owner. Keep existing manufacturer alpha when present. Preserve originals, review the complete body, trim padding and only downscale. |
 | Quality review | `images/cut/*.webp` → findings and contact sheets | `python tools/imgcheck.py [product-id]__`; add `--sheet` for a contact sheet. `python tools/photo-audit.py` writes a report and visual sheets under `photo-audit/`. `python tools/defringe.py --halo` repairs cutouts flagged for halos. Findings need visual review. |
 | Color selection | Cutout filename slug → product/color image map | `build.mjs` reads `images/cut/`, applies `data/color-aliases.json`, skips known duplicate-color photos, and chooses a matching color with fallbacks. |
 | Derivatives and site | Cutouts → `images/thumb/` at 480/320/240px and `data/thumbnails.json` → generated pages/assets | Run `python tools/thumbnails.py`, then `npm run build` when publishing. `_app.js` uses the 240px and 320px files in responsive `srcset` values. |
@@ -18,7 +18,7 @@ These are script handoffs, not one automatic pipeline command. Choose a source r
 
 1. Identify the product ID and source URL/offer. Check for existing source and cutout files.
 2. Save a replacement source under the expected `<id>__<color>` name in `images/_src/`.
-3. Run `python tools/cutout.py [product-id]__`.
+3. Keep native transparency when the source already has it. Otherwise compile `tools/vision-cutout.swift` with `swiftc -O` and run its executable with the input file and a **new** output PNG path. This is the owner's approved Mac background-removal workflow; do not substitute rembg. Inspect the result before converting to WebP. Preserve source pixels and never enlarge a small body or let a placement helper upscale it.
 4. Run `python tools/imgcheck.py [product-id]__`; inspect the product in context or review `photo-audit/` findings. A clean heuristic report is not proof the photo is correct.
    Resolution is measured on the visible product (alpha above 128), with a 600px long-edge floor. Transparent canvas padding does not increase native detail. Preserve source pixels; obtain a larger exact original rather than enlarge a small image.
 5. Confirm the color slug or alias and that `build.mjs` selects the intended cutout.

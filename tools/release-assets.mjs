@@ -21,11 +21,20 @@ export function releaseAssets(root, {staged = false} = {}) {
     for (const m of text.matchAll(/data\/details\/chunk-\d+\.[a-f0-9]+\.js/g)) assets.add(m[0]);
     for (const m of text.matchAll(/data\/product-extras\.json/g)) assets.add(m[0]);
   }
+  const startupManifest=path.join(root,'data/startup-manifest.json');
+  if(fs.existsSync(startupManifest)){
+    const manifest=JSON.parse(fs.readFileSync(startupManifest,'utf8'));assets.add('data/startup-manifest.json');
+    for(const url of [manifest.catalogue,...Object.values(manifest.categories)]){
+      const file=url.split('?')[0];
+      if(!/^data\/startup\/(?:catalogue|category-[a-z]+)\.[a-f0-9]{10}\.js$/.test(file))throw new Error('Invalid startup asset path');
+      assets.add(file);
+    }
+  }
   for (const file of assets) {
     const built = fs.readFileSync(path.join(root, file));
     if (staged) {
       let published;
-      try { published = execFileSync('git', ['show', ':' + file], {cwd: root, stdio: ['ignore', 'pipe', 'pipe']}); }
+      try { published = execFileSync('git', ['show', ':' + file], {cwd: root, stdio: ['ignore', 'pipe', 'pipe'],maxBuffer:Math.max(1024*1024,built.length+1024)}); }
       catch { throw new Error('Release asset is not staged: ' + file); }
       if (!built.equals(published)) throw new Error('Staged release asset differs from built asset: ' + file);
     }

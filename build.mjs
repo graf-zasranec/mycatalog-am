@@ -18,6 +18,7 @@ import { catalogueIndex } from './tools/catalogue-index.mjs';
 import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
 import { assertCaseStableBrands } from './tools/brand-integrity.mjs';
 import { assertCatalogueData } from './tools/catalogue-validation.mjs';
+import {categorySeed,productSeedSource,fullCatalogueSource}from'./tools/product-startup.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 assertCaseStableBrands(phones);
@@ -494,6 +495,7 @@ function writeBundle(file, content) {
 }
 let renderProduct;
 const detailUrlsById = new Map();
+const productSeedUrls = new Map();
 function build({ inline, standalone }) {
   const colors = cutMap(inline);
   // the same colour shots at 600 px, for the card that cycles through them in a 123 px box
@@ -611,6 +613,19 @@ function build({ inline, standalone }) {
       return listing;
     })])) };
   const prices = `const PRICES=${compactJ(browserPrices)};\nconst DROPS=${J(DROPS)};\n`;
+  if(lazy){
+    fs.mkdirSync('data/startup',{recursive:true});
+    const maps={IMGDATA:main,THUMBDATA:thumb,COLORIMG:pick(colors,firstIds),COLORTHUMB:pick(colorThumbs,firstIds),PBOX:detailExtras.photoBoxes};
+    const minify=source=>transformSync(source,{minify:true,target:'es2020',charset:'utf8',legalComments:'none'}).code;
+    const catalogueUrl=writeBundle('data/startup/catalogue.js',minify(fullCatalogueSource({catalogue,prices:browserPrices,drops:DROPS})));
+    for(const category of new Set(coreProducts.map(p=>p.category||'phone'))){
+      const seed=categorySeed(coreProducts,maps,browserPrices,DROPS,category);
+      const body=productSeedSource(seed,{chunks:chunkUrls,extrasUrl,catalogueUrl});
+      productSeedUrls.set(category,writeBundle(`data/startup/category-${category}.js`,minify(body)));
+    }
+    fs.writeFileSync('data/startup-manifest.json',JSON.stringify({catalogue:catalogueUrl,categories:Object.fromEntries(productSeedUrls)},null,2)+'\n');
+  }
+
   const urls = [];
   if (lazy) {
     for (const [f, body] of [['data/site-products.js', products], ['data/site-prices.js', prices]]) {
@@ -943,7 +958,9 @@ function interactiveProduct(page, lang, product, relLinks = '') {
     + '<base href="/">' + preload + detailPreload + productCSSLink + (productHead.match(seoTags) || []).join('\n');
   const content = rendered.main
     .replace(/(href|src)="(?:\.\.\/)+/g, '$1="/');
+  const seedUrl=productSeedUrls.get(product.category||'phone');
   const body = interactiveHome.slice(interactiveHome.indexOf('</head>') + 7)
+    .replace(/(<script\b[^>]*\bdata-src="[^"]+")/,`$1 data-product-seed="${seedUrl}"`)
     .replace(/<main id="main"[\s\S]*?<\/main>/, `<main id="main" tabindex="-1" data-prerender-product="${product.id}" data-prerender-lang="${lang}">${content}</main>`)
     .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/, `$1${rendered.nav}</nav>`)
     .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/, `$1${rendered.langs}</span>`)
