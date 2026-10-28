@@ -13,6 +13,11 @@
 // It never invents a link. A row with no url, or one whose page is gone, is reported and left
 // alone for a person - the answer to "this page 404s" is a decision, not a default.
 import fs from 'node:fs';
+import {parseCsv,formatCsvRow,handRowKey,mergeConfirmedHandRows} from './hand-csv.mjs';
+import {createHandReader} from './hand-fetch.mjs';
+import {istyleVariants} from './istyle-variants.mjs';
+import {gzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';
 const DELAY = 700;
@@ -90,6 +95,7 @@ const SUSPECT = 10000;
 // Because the page prices each build separately, a pixel url shared by rows of different
 // capacities is NOT the trap the guard further down exists for: this can answer each of them.
 const BUILDS = ['pixel.am'];
+const MATRIX = ['pixel.am','istyle.am'];
 // ucom is NOT on that list and must not be added. Its pages are Magento and do carry the whole
 // configurable matrix, so reading them looks easy - but the page does not show a capacity's price
 // until that capacity is chosen, and what it serves until then is the base build. Confirming from
@@ -127,36 +133,64 @@ const NOISE = new Set(['the', 'and', 'with', 'for', 'new', 'gb', 'tb', 'mm', 'wi
 // gives both sides the same shape; the reverse is NOT split, or "8gb" would become a stray "8"
 // that no capacity rule could then discard. A lone digit is kept - the comment above is right
 // that "AirPods 4" is not "AirPods Pro 3" - while a lone letter goes.
-const nwords = z => [...new Set(String(z).toLowerCase().split('+').join(' plus ')
-  .replace(/([a-z])(\d)/g, '$1 $2')
+const nwords = z => [...new Set(String(z).toLowerCase().replace(/\b\d+\s*(?:gb)?\s*[/+]\s*\d+\s*(?:gb|tb)\b/g,' ').replace(/\b\d+(?:\.\d+)?\s*(?:gb|tb|mb|mm)\b/g,' ').split('+').join(' plus ')
+  .replace(/\b(galaxy)(?=[aszmf]\d)/g,'$1 ').replace(/\b(iphone|pixel|flip|fold|note|redmi|poco)(?=\d)/g,'$1 ').replace(/(\d)(pro|max|plus|ultra|mini|fe|lite)\b/g,'$1 $2')
   .match(/[a-z0-9]+/g) || [])]
   .filter(w => (w.length > 1 || /\d/.test(w)) && !NOISE.has(w) && !/^\d+(gb|tb|mb)$/.test(w));
 function namesTheProduct(html, title) {
   const h1 = (html.match(/<h1[^>]*>([\s\S]{0,200}?)<\/h1>/i) || [])[1] || '';
   const tt = (html.match(/<title[^>]*>([\s\S]{0,200}?)<\/title>/i) || [])[1] || '';
-  const page = nwords((h1 + ' ' + tt).replace(/<[^>]+>/g, ' '));
+  const page = nwords((h1 || tt).replace(/<[^>]+>/g, ' '));
   if (!page.length) return false;
   const mine = nwords(title);
   if (!mine.length) return false;
   // Either side may be the fuller one. Ucom writes "Yandex Smart Speaker Station Mini" where the
   // row says "Yandex Station Mini", and "iPhone 18 Pro" where the row says "Apple iPhone 18 Pro
   // 256GB Burgundy". One of the two has to sit inside the other; which one does not matter.
+  const numbers=mine.filter(w=>/\d/.test(w));
+  if(numbers.length&&!numbers.every(w=>page.includes(w)))return false;
+  if(['tab','pad','ipad','watch','airpods'].some(w=>mine.includes(w)!==page.includes(w)))return false;
+  const qualifiers = ['pro','max','plus','ultra','mini','air','fe','lite','neo','xl','fold','flip','active'];
+  if (qualifiers.some(q => mine.includes(q) !== page.includes(q))) return false;
   const shared = page.filter(w => mine.includes(w)).length;
   const bare = z => String(z).toLowerCase().replace(/[^a-z0-9]/g, '');
   return Math.max(shared / page.length, shared / mine.length) >= 0.8
     || bare(title).includes(bare(page.join('')));
 }
+const memoryText = s => String(s || '').replace(/գբ|гб/gi,'GB').replace(/տբ|тб/gi,'TB');
 const capOf = s => {
-  const m = String(s || '').match(/([\d.]+)\s*(TB|GB)/i);
-  return m ? Math.round(parseFloat(m[1]) * (/tb/i.test(m[2]) ? 1024 : 1)) : null;
+  const units = [...memoryText(s).matchAll(/([\d.]+)\s*(TB|GB)/gi)]
+    .map(m => Math.round(parseFloat(m[1]) * (/tb/i.test(m[2]) ? 1024 : 1)));
+  return units.length ? Math.max(...units) : null;
 };
+const ramOf = s => {
+  const t = memoryText(s);
+  const pair = t.match(/\b(\d+)\s*(?:GB)?\s*[/+]\s*\d+\s*(?:GB|TB)\b/i);
+  const marked = t.match(/\b(\d+)\s*GB\s*RAM\b|\bRAM\s*[:=]?\s*(\d+)\s*GB\b/i);
+  const units = [...t.matchAll(/\b(\d+)\s*(?:GB|TB)\b/gi)];
+  return pair ? +pair[1] : marked ? +(marked[1] || marked[2]) : units.length > 1 && +units[0][1] <= 32 ? +units[0][1] : null;
+};
+const colorOf = s => {
+  const t=String(s||'').trim().toLowerCase().replace(/gray/g,'grey').replace(/[-_]+/g,' ').replace(/\s+/g,' ');
+  return ({'սպիտակ':'white','սև':'black','սեւ':'black','կապույտ':'blue','մոխրագույն':'grey','կանաչ':'green','վարդագույն':'pink','մանուշակագույն':'purple','դեղին':'yellow','նարնջագույն':'orange','կարմիր':'red','արծաթագույն':'silver','ոսկեգույն':'gold','բեժ':'beige'})[t]||t;
+};
+const radioOf = s => /cellular|\blte\b|\b[45]g\b/i.test(s || '') ? true : /wi[ -]?fi/i.test(s || '') ? false : undefined;
 // pixel sells the SIM build as its own axis: the 256 GB iPhone 17 Pro Max is 514,000 as eSIM-only
 // and 559,000 with the nano tray, one capacity at two prices. Without reading it, capacity and
 // colour matched both variants and the ambiguity guard below refused every pixel iPhone there is.
 // Three states, as in scrape.mjs's simBuild: eSIM-only, a tray the shop named, or not stated.
 // pixel writes the tray build "Nano-SIM+eSIM", so the nano test has to run BEFORE the esim one.
-const simOf = v => !v ? undefined : /nano|dual/i.test(v) ? false
+const simOf = v => !v ? undefined : /nano|physical|tray|(?:dual|[12])\s*sim\b|(?:^|[^a-z])sim(?:[^a-z]|$)/i.test(v) ? false
   : /(^|[^a-z])e-?sim([^a-z]|$)/i.test(v) ? true : undefined;
+
+function handConfigurationFits(f,title) {
+  const cap=capOf(title),wantedCap=Number(f[2])||null,ram=ramOf(title),wantedRam=Number(f[6])||null;
+  if(cap!=null&&wantedCap!=null&&cap!==wantedCap)return false;
+  if(ram!=null&&wantedRam!=null&&ram!==wantedRam)return false;
+  const sim=simOf(title),wantedSim=simOf(f[1]);
+  if(sim!==undefined&&wantedSim!==undefined&&sim!==wantedSim)return false;
+  return true;
+}
 
 function buildPrice(html, f) {
   if (!BUILDS.some(h => f[4].includes(h))) return null;
@@ -172,12 +206,13 @@ function buildPrice(html, f) {
         // products were reported as pages with no price while the price was on the page.
         // A capacity is a capacity in any language; a SIM build is written in Latin on all of
         // them; whatever is left is the colour. Same rule as scrape.mjs's pixelMatrix.
-        let mem = '', simVal = '', col = '';
+        let mem = '', simVal = '', col = '', radio; let ram = null;
         for (const x of v.properties || []) {
           const val = String(x.valueTitle || '').trim();
           if (!val) continue;
           if (!simVal && /sim/i.test(val)) simVal = val;
-          else if (!mem && capOf(val) != null) mem = val;
+          else if (radioOf(val) !== undefined) radio = radioOf(val);
+          else if (capOf(val) != null) { if (!mem || capOf(val) > capOf(mem)) mem = val; ram ??= ramOf(val); }
           else if (!col) col = val;
         }
         const p = { memory: mem, color: col, 'sim card': simVal };
@@ -190,7 +225,7 @@ function buildPrice(html, f) {
         // uniformly, which is what gave it away - a whole shop does not reprice by 10% overnight.
         const price = Math.round(Number(v.wholesalePrice) > 0 ? Number(v.wholesalePrice)
           : Number(v.salePrice) > 0 ? Number(v.salePrice) : Number(v.price));
-        return { price, stock: Number(v.quantity) > 0, cap: capOf(p.memory), color: p.color || '', sim: simOf(p['sim card']) };
+        return { price, stock: Number(v.quantity) > 0, cap: capOf(p.memory), color: p.color || '', sim: simOf(p['sim card']), ram, radio };
       }).filter(v => v.price >= FLOOR);
     } catch { }
   }
@@ -202,7 +237,9 @@ function buildPrice(html, f) {
     const a = html.match(/class="[^"]*cash-price[^"]*"[^>]*>([\s\S]{0,160}?)<\/(?:div|span|p)>/i);
     const n = a && Number((String(a[1]).replace(/<[^>]+>/g, ' ').match(/[\d, ]{4,}/g) || [''])
       .map(x => Number(x.replace(/[^\d]/g, ''))).filter(x => x >= FLOOR)[0] || 0);
-    vs = n >= FLOOR ? [{ price: n, stock: true, cap: null, color: '', only: true }] : [];
+    const stock = /Stock Status\s*[:：]?\s*(?:<[^>]+>\s*)*(?:Out of stock|Sold out)/i.test(html) ? false
+      : /Stock Status\s*[:：]?\s*(?:<[^>]+>\s*)*In Stock/i.test(html) ? true : undefined;
+    vs = n >= FLOOR ? [{ price: n, stock, cap: null, color: '', only: true }] : [];
   }
   if (!vs.length) return null;
   const cap = Number(f[2]) || null, col = (f[3] || '').trim().toLowerCase();
@@ -213,11 +250,15 @@ function buildPrice(html, f) {
   // product's price. Where several rows share such a url the guard further down still refuses
   // them, which is the case this exactness was protecting against.
   let hit = vs.filter(v => v.only || cap == null || v.cap === cap);
-  if (col) { const c = hit.filter(v => v.color.toLowerCase() === col); if (c.length) hit = c; }
+  if (col) hit = hit.filter(v => !v.only && colorOf(v.color) === colorOf(col));
+  const wantRam = Number(f[6]) || null;
+  if (wantRam != null) hit = hit.filter(v => v.ram === wantRam);
+  const wantRadio = /cellular|wi[ -]?fi|\b(?:ipad|tablet|tab|pad)\b/i.test(f[1]) ? radioOf(f[1]) : undefined;
+  if (wantRadio !== undefined) hit = hit.filter(v => v.radio === wantRadio);
   // A row that does not say which build it is stays ambiguous and is refused below - that is the
   // right answer, not a gap: 514,000 and 559,000 are both this phone at this capacity.
   const rsim = simOf(f[1]);
-  if (rsim !== undefined) { const c = hit.filter(v => v.sim === rsim); if (c.length) hit = c; }
+  if (rsim !== undefined) hit = hit.filter(v => v.sim === rsim);
   if (!hit.length) return null;
   // Still several builds at different prices, and the row does not say which one it is. If
   // exactly one of them costs what the row ALREADY says, that is the row, and its price has not
@@ -233,7 +274,7 @@ function buildPrice(html, f) {
   // Several builds that all cost the same are not an ambiguity - there is nothing to disagree
   // about. Several at different prices are, and this tool does not guess between them.
   if (hit.length > 1 && new Set(hit.map(v => v.price)).size !== 1) return null;
-  return { price: hit[0].price, how: hit[0].only ? 'pixel-cash' : 'pixel-builds', stock: hit[0].stock, only: !!hit[0].only };
+  return { price: hit[0].price, how: hit[0].only ? 'pixel-cash' : 'pixel-builds', stock: hit.some(v => v.stock === true) ? true : hit.every(v => v.stock === false) ? false : undefined, only: !!hit[0].only };
 }
 
 // mobilecentre prints three figures on a product page and only one is what a person pays.
@@ -249,7 +290,7 @@ function mobilecentrePrice(html, f) {
   const m = html.slice(i, i + 3000).match(/Գին[՝:]?[\s\S]{0,300}?([\d][\d,\s]{3,12})\s*դր/);
   if (!m) return null;
   const n = Number(String(m[1]).replace(/[^\d]/g, ''));
-  return n >= FLOOR ? { price: n, how: 'mobilecentre-cash', stock: true } : null;
+  return n >= FLOOR ? { price: n, how: 'mobilecentre-cash', stock: priceOf(html)?.stock } : null;
 }
 
 // Telecom Armenia states its price in plain markup and nowhere else - no ld+json, no og meta,
@@ -266,7 +307,7 @@ function telecomPrice(html, f) {
   const m = html.slice(i, i + 300).match(/>\s*([\d][\d,  \s]{3,12})/);
   if (!m) return null;
   const n = Number(String(m[1]).replace(/[^\d]/g, ''));
-  return n >= FLOOR ? { price: n, how: 'telecom-page', stock: true } : null;
+  return n >= FLOOR ? { price: n, how: 'telecom-page', stock: priceOf(html)?.stock } : null;
 }
 
 // istyle states every SKU of a product as a JSON array in the page, HTML-escaped, and states
@@ -280,40 +321,21 @@ function telecomPrice(html, f) {
 // are, and this does not guess between them.
 function istylePrice(html, f) {
   if (!f[4].includes('istyle.am')) return null;
-  const j = html.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'");
-  const at = j.indexOf('"variants":[');
-  if (at < 0) return null;
-  const start = j.indexOf('[', at);
-  const BS = String.fromCharCode(92);
-  let depth = 0, i = start, instr = false, esc = false;
-  for (; i < j.length; i++) {
-    const c = j[i];
-    if (instr) { if (esc) esc = false; else if (c === BS) esc = true; else if (c === '"') instr = false; continue; }
-    if (c === '"') instr = true;
-    else if (c === '[') depth++;
-    else if (c === ']' && --depth === 0) break;
-  }
-  let arr;
-  try { arr = JSON.parse(j.slice(start, i + 1)); } catch { return null; }
-  const rows = [];
-  for (const v of arr) {
-    if (v.is_active === false) continue;
-    const price = Math.round(Number(v.is_on_sale && v.sale_price ? v.sale_price : v.price_override));
-    if (!(price >= FLOOR)) continue;
-    const caps = (v.attribute_values || []).map(a => capOf((a.value || {}).en)).filter(x => x != null);
-    rows.push({ price, caps, stock: Number(v.stock) > 0 });
-  }
-  if (!rows.length) return null;
-  const want = Number(f[2]) || null;
-  let hit = want == null ? rows : rows.filter(r => r.caps.includes(want));
-  if (hit.length && new Set(hit.map(r => r.price)).size === 1)
-    return { price: hit[0].price, how: 'istyle-variants', stock: hit.some(r => r.stock) };
-  // The row does not say which variant it is - a MacBook row records the RAM while the page varies
-  // by disk, an iPad or a Dyson row records nothing - so no single figure can be chosen. But if the
-  // row's own price is still one the page sells, that price stands and the row is confirmed.
-  const was = Number(f[5]) || 0;
-  if (rows.some(r => r.price === was && r.stock)) return { price: was, how: 'istyle-still-offered', stock: true };
-  return null;
+  const variants=istyleVariants(html);
+  const query=new URL(f[4]).searchParams;
+  const want=Number(f[2])||null,legacyRam=want!=null&&want<=192&&/\bRAM\b/i.test(f[1]);
+  const ram=Number(f[6])||(legacyRam?want:null),storage=legacyRam?null:want;
+  const sim=simOf(f[1]),color=colorOf(f[3]);
+  let hit=variants.filter(v=>{
+    const selected=new URLSearchParams(v.variant);
+    const wantedID=query.get('variant');
+    if(wantedID && selected.get('variant')!==wantedID && selected.get('variant')?.split('_color_')[0]!==wantedID)return false;
+    if(query.has('color')&&selected.get('color')!==query.get('color'))return false;
+    return (storage==null||v.storage===storage)&&(ram==null||v.ram===ram)
+      &&(!color||colorOf(v.color)===color)&&(sim===undefined||v.esim===sim);
+  });
+  if(!hit.length||new Set(hit.map(v=>v.price)).size!==1)return null;
+  return {price:hit[0].price,how:'istyle-variants',stock:hit.some(v=>v.inStock)};
 }
 
 // Viva (Bitrix) prints the product's own figure once, in #display_price; every other price on the
@@ -324,7 +346,7 @@ function vivaPrice(html, f) {
   if (!/id="display_price"/.test(html) && /viva-404|doesn.t exist|գոյություն չունի/i.test(html)) return { gone: true };
   const m = html.match(/id="display_price"[^>]*>\s*([\d,\s]+)/);
   const n = m ? Number(m[1].replace(/[^\d]/g, '')) : 0;
-  return n >= FLOOR ? { price: n, how: 'viva-page', stock: true } : null;
+  return n >= FLOOR ? { price: n, how: 'viva-page', stock: priceOf(html)?.stock } : null;
 }
 
 function priceOf(html) {
@@ -336,7 +358,7 @@ function priceOf(html) {
         if (/product/i.test(n['@type'] || '') && n.offers) {
           const o = Array.isArray(n.offers) ? n.offers[0] : n.offers;
           const p = Number(o.price ?? o.lowPrice);
-          if (p >= FLOOR) return { price: Math.round(p), how: 'ld+json', stock: /InStock/i.test(String(o.availability || '')) };
+          if (p >= FLOOR) return { price: Math.round(p), how: 'ld+json', stock: /(?:^|[/#])InStock$/i.test(String(o.availability||'')) ? true : /(?:^|[/#])(?:OutOfStock|SoldOut)$/i.test(String(o.availability||'')) ? false : undefined };
         }
         for (const v of Object.values(n)) { const r = walk(v); if (r) return r; }
         return null;
@@ -395,15 +417,16 @@ for (const [host, file] of CACHED) {
   for (const c of list) {
     const price = Math.round(Number(c && c.price));
     if (!c || !c.url || !(price >= FLOOR) || (['eldorado.am', 'zigzag.am'].includes(host) && !/^\d{4}-\d{2}-\d{2}$/.test(c.checked || ''))) continue;
-    CACHE.set(tidy(c.url), { price, how: host.split('.')[0] + '-listing', stock: c.inStock !== false, day: c.checked || day, title: c.title || '' });
+    CACHE.set(tidy(c.url), { price, how: host.split('.')[0] + '-listing', stock: typeof c.inStock === 'boolean' ? c.inStock : undefined, day: c.checked || day, title: c.title || '' });
     n++;
   }
   console.log(`${file}: ${n} listing(s), read ${day}`);
 }
 
-const rows = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
+const rows = parseCsv(fs.readFileSync('data/listings.csv', 'utf8'));
 const head = rows[0];
-const body = rows.slice(1).filter(l => l.trim()).map(l => l.split(','));
+const body = rows.slice(1);
+const originalBody = body.map(row=>[...row]);
 let todo = body.filter(f => f.length > 5 && f[4] && /^https?:/.test(f[4])
   && (RECHECK === null ? !/^\d{4}-\d{2}-\d{2}$/.test((f[8] || '').trim()) : ageDays(f) >= RECHECK)
   && (!only.size || only.has(f[0]))
@@ -421,17 +444,17 @@ let todo = body.filter(f => f.length > 5 && f[4] && /^https?:/.test(f[4])
 // capacity at all, so that guard let them through. The evidence that matters is simply this: if
 // the rows themselves disagree about what this url costs, one page cannot settle any of them.
 const configs = new Map();
-for (const f of todo) {
-  const k = f[0] + '|' + f[4];
-  (configs.get(k) || configs.set(k, new Set()).get(k)).add((f[2] || '') + '/' + (f[6] || '') + '/' + (f[5] || ''));
+for (const f of body) {
+  const k = f[0] + '|' + tidy(f[4]);
+  (configs.get(k) || configs.set(k, new Set()).get(k)).add(JSON.stringify([f[2]||'',f[6]||'',f[5]||'',colorOf(f[3]),simOf(f[1])]));
 }
-const shared = todo.filter(f => configs.get(f[0] + '|' + f[4]).size > 1);
-const sharedKeys = new Set(shared.map(f => f[0] + '|' + f[4]));
+const shared = todo.filter(f => configs.get(f[0] + '|' + tidy(f[4])).size > 1);
+const sharedKeys = new Set(shared.map(f => f[0] + '|' + tidy(f[4])));
 if (sharedKeys.size) console.log(`${shared.length} row(s) share ${sharedKeys.size} url(s) but disagree on the capacity or the price - one page cannot settle them, skipped`);
 // A page that prices each BUILD separately is not the trap this guard exists for - it can answer
 // each row on its own terms. But only the page can say whether it does that, so those rows stay
 // in the run and are judged after it has been read, further down.
-todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + f[4]) || BUILDS.some(h => f[4].includes(h)));
+todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + tidy(f[4])) || MATRIX.some(h => f[4].includes(h)));
 // ...and a CONFIG shop's rows are never skipped for that reason either: a url shared by every
 // capacity is exactly what a configurator looks like, and the question asked of it is the link,
 // not the price.
@@ -449,25 +472,37 @@ if (LIMIT > 0 && todo.length > LIMIT) {
   todo = todo.slice(0, LIMIT);
 }
 console.log(`${todo.length} row(s) to confirm${only.size ? ' at ' + [...only].join(', ') : ''}${dry ? '  (dry)' : ''}\n`);
+const readHandPage = createHandReader({
+  pause: url => sleep(url.includes('shop.viva.am') ? VIVA_DELAY : DELAY),
+  onPage: (url, result) => {
+    const dir = process.env.BETTER_HAND_EVIDENCE_DIR;
+    if (!dir) return;
+    fs.mkdirSync(dir, {recursive:true});
+    const name = createHash('sha256').update(url).digest('hex');
+    if (result.html) fs.writeFileSync(`${dir}/${name}.html.gz`, gzipSync(result.html));
+    fs.writeFileSync(`${dir}/${name}.json`, JSON.stringify({url,status:result.status,checkedAt:new Date().toISOString(),sha256:result.html?createHash('sha256').update(result.html).digest('hex'):null,requested:result.status!=='host-blocked'}));
+  }
+});
+const confirmed = new Set();
 let ok = 0, moved = 0, gone = [], nop = [], how = {}, wild = [], wrongLink = [], disputed = [], cheap = [], linked = 0, soldOut = 0;
 for (let i = 0; i < todo.length; i++) {
   const f = todo[i];
   let p = CACHE.get(tidy(f[4])) || null;
   if (p && p.title) {
     const mine = brandsIn(f[1]), theirs = brandsIn(p.title);
-    if (mine.length && theirs.length && !mine.some(b => theirs.includes(b))) {
+    if ((mine.length && theirs.length && !mine.some(b => theirs.includes(b))) || !namesTheProduct('<h1>'+p.title+'</h1>',f[1]) || !handConfigurationFits(f,p.title)) {
       wrongLink.push([f[0], f[1], p.title, f[4]]);
       continue;
     }
   }
   if (!p) {
     if (noFetch(f[4])) continue;          // belt and braces: these two are never asked directly
-    let html = '';
-    try {
-      const r = await fetch(readUrl(f[4]), { headers: { 'user-agent': f[4].includes('shop.viva.am') ? VIVA_UA : UA }, signal: AbortSignal.timeout(25000) });
-      if (r.ok) html = await r.text(); else { gone.push([f[0], f[1], f[4], 'HTTP ' + r.status]); if (r.status === 404 || r.status === 410) dropped.add(f.slice(0, 5).join('|')); }
-    } catch (e) { gone.push([f[0], f[1], f[4], e.name]); }
-    await sleep(f[4].includes('shop.viva.am') ? VIVA_DELAY : DELAY);
+    const page = await readHandPage(readUrl(f[4]), {headers:{'user-agent':f[4].includes('shop.viva.am')?VIVA_UA:UA},signal:AbortSignal.timeout(25000)});
+    const html = page.html;
+    if (!html) {
+      gone.push([f[0],f[1],f[4],String(page.status)]);
+      if (page.status === 404 || page.status === 410) dropped.add(handRowKey(f));
+    }
     if (!html) continue;
     // A configurator states no price to read. Check the link instead and mark the row.
     if (isConfig(f[4])) {
@@ -483,25 +518,27 @@ for (let i = 0; i < todo.length; i++) {
     const head = (html.match(/<h1[^>]*>([\s\S]{0,160}?)<\/h1>/i) || [])[1] || '';
     if (head) {
       const mine = brandsIn(f[1]), theirs = brandsIn(head.replace(/<[^>]+>/g, ' '));
-      if (mine.length && theirs.length && !mine.some(b => theirs.includes(b))) {
+      if ((mine.length && theirs.length && !mine.some(b => theirs.includes(b))) || !namesTheProduct(html,f[1]) || (!MATRIX.some(h=>f[4].includes(h))&&!handConfigurationFits(f,head.replace(/<[^>]+>/g,' ')))) {
         wrongLink.push([f[0], f[1], head.replace(/<[^>]+>/g, ' ').trim().slice(0, 44), f[4]]);
         continue;
       }
     }
+    if (!head && !namesTheProduct(html,f[1])) { wrongLink.push([f[0],f[1],'unverified primary model',f[4]]);continue; }
     // A sold-out primary Magento product must not borrow a recommendation's price.
     const primary = html.match(/<div\b[^>]*class=["']product-info-main["'][^>]*>([\s\S]*?)(?:<div\b[^>]*class=["'][^"']*(?:product-info-detailed|block related)|$)/i)?.[1];
     if (primary && /class=["']stock\s+unavailable["']/i.test(primary)) {
       // Sold out on the shop's own page (owner, 2026-10-16): hidden until the page says in stock again.
       while (f.length < 10) f.push('');
-      f[8] = TODAY; f[9] = 'false'; soldOut++; continue;
+      f[8] = TODAY; f[9] = 'false'; confirmed.add(handRowKey(f)); soldOut++; continue;
     }
-    p = vivaPrice(html, f) || buildPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f)
-      || istylePrice(html, f) || priceOf(html);
+    p = BUILDS.some(h => f[4].includes(h)) ? buildPrice(html, f)
+      : f[4].includes('istyle.am') ? istylePrice(html, f)
+      : vivaPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
     // url that five different Dyson colours point at - five rows, five prices, one page.
-    if (p && p.only && sharedKeys.has(f[0] + '|' + f[4])) { disputed.push([f[0], f[1], f[4]]); continue; }
-    if (p && p.gone) { gone.push([f[0], f[1], f[4], 'not-found page']); dropped.add(f.slice(0, 5).join('|')); continue; }
+    if (p && p.only && sharedKeys.has(f[0] + '|' + tidy(f[4]))) { disputed.push([f[0], f[1], f[4]]); continue; }
+    if (p && p.gone) { gone.push([f[0], f[1], f[4], 'not-found page']); dropped.add(handRowKey(f)); continue; }
     if (!p) { nop.push([f[0], f[1], f[4]]); continue; }
   }
   how[p.how] = (how[p.how] || 0) + 1;
@@ -527,7 +564,7 @@ for (let i = 0; i < todo.length; i++) {
   // The page's own stock claim decides whether the row is shown; an unknown keeps what the row had.
   // og-meta / itemprop / magento-main judge stock from the whole page (related cards included): not trusted.
   if ((p.stock === false || p.stock === true) && !['og-meta', 'itemprop', 'magento-main'].includes(p.how)) { while (f.length < 10) f.push(''); if (p.stock === false) soldOut++; f[9] = String(p.stock); }
-  ok++;
+  confirmed.add(handRowKey(f)); ok++;
   if (i % 50 === 49) console.log(`  ... ${i + 1}/${todo.length}`);
 }
 // Re-read the file and apply only what this run confirmed, keyed by the row's own shop and url.
@@ -540,25 +577,15 @@ if (!dry) {
   // url alone kept only the last of them in this map and then stamped its price onto all four -
   // 949,000 and 714,000 and 559,000 all became 514,000, which is the flattening the capacity
   // guard further up exists to prevent, arriving by the back door after that guard had passed.
-  const idOf = f => f.slice(0, 5).join('|');
+  const idOf = handRowKey;
   const changed = new Map();
   for (const f of todo) {
-    if (/^\d{4}-\d{2}-\d{2}$/.test(f[8] || '')) changed.set(idOf(f), [f[5], f[8], null, f[9]]);
+    if (confirmed.has(idOf(f))) changed.set(idOf(f), [f[5], f[8], null, f[9]]);
     else if (f.marked) changed.set(idOf(f), [null, null, 'config']);
   }
-  const now = fs.readFileSync('data/listings.csv', 'utf8').split('\n');
-  const merged = now.filter((l, i) => !(i && dropGone && dropped.has(l.split(',').slice(0, 5).join('|')))).map((l, i) => {
-    if (!i || !l.trim()) return l;
-    const f = l.split(',');
-    const c = f.length > 5 && changed.get(idOf(f));
-    if (!c) return l;
-    while (f.length < 9) f.push('');
-    if (c[0] != null) { f[5] = c[0]; f[8] = c[1]; }
-    if (c[3] === 'true' || c[3] === 'false') { while (f.length < 10) f.push(''); f[9] = c[3]; }
-    if (c[2] && !(f[7] || '').trim()) f[7] = c[2];
-    return f.join(',');
-  });
-  fs.writeFileSync('data/listings.csv', merged.filter(l => l.trim()).join('\n') + '\n');
+  const now = parseCsv(fs.readFileSync('data/listings.csv', 'utf8'));
+  const merged = [now[0],...mergeConfirmedHandRows(now.slice(1),originalBody,changed,dropGone?dropped:new Set())];
+  fs.writeFileSync('data/listings.csv', merged.map(formatCsvRow).join('\n') + '\n');
   console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now` + (dropGone && dropped.size ? `, removed ${dropped.size} whose page is deleted` : ''));
 }
 console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page; ${soldOut} sold out there (hidden until back in stock)`);

@@ -37,7 +37,7 @@ for(const title of ['Xiaomi TV S Pro Mini LED 65" 2026 (L65MB-SME)',"Xiaomi TV S
 assert.equal(specOfferAllowed({title:'Xiaomi TV S Pro Mini LED'},[],tv),false,'unlabelled size does not establish65-inch identity');
 
 const scraper=fs.readFileSync('scrape.mjs','utf8');
-const prefix=scraper.slice(0,scraper.indexOf('const report = [];')).replace('process.argv.slice(2)','[]');
+const prefix=scraper.slice(0,scraper.indexOf('const report = [];')).replace('process.argv.slice(2)','[]').replace(/from ['\"](\.\/tools\/[^'\"]+)['\"]/g,(_,file)=>"from '"+new URL('../'+file,import.meta.url).href+"'");
 const {matchPhone}=await import('data:text/javascript;base64,'+Buffer.from(prefix+'\nexport {matchPhone};').toString('base64'));
 for(const offer of source.filter(o=>o.shop!=='appzone'))
   assert.equal(matchPhone(offer.url),null,'reviewed wrong-model URL remains denied: '+offer.shop);

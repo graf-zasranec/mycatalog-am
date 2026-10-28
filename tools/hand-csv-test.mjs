@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';import fs from'node:fs';
+const {parseCsv,formatCsvRow,handRowKey}=await import('./hand-csv.mjs');
+const r=['allsell','Airfryer Ninja EG351 5,7L','','Black','https://shop/eg351','109900','','exact-page','2026-10-26','true'];
+assert.deepEqual(parseCsv(formatCsvRow(r)+'\r\n')[0],r);
+assert.deepEqual(parseCsv('a,b\n"quoted, title","a ""quote""\nand line"\n'),[['a','b'],['quoted, title','a "quote"\nand line']]);
+assert.notEqual(handRowKey([...r.slice(0,6),'8',...r.slice(7)]),handRowKey([...r.slice(0,6),'12',...r.slice(7)]),'RAM distinguishes configurations at same URL');
+const rows=parseCsv(fs.readFileSync('data/listings.csv','utf8'));assert.ok(rows.length>1);for(const row of rows)assert.equal(row.length,10);
+for(const row of rows.slice(1)){assert.ok(!row[4]||/^https?:/.test(row[4]));assert.ok(Number.isFinite(Number(row[5]))&&Number(row[5])>=0)}
+for(const f of ['tools/confirm-hand.mjs','scrape.mjs'])assert.ok(fs.readFileSync(f,'utf8').includes('parseCsv('),'production reader uses quoted CSV parser: '+f);
+console.log('HAND_CSV_PASS: quoted commas/quotes/newlines, complete '+(rows.length-1)+' rows and RAM identity');
+const {mergeConfirmedHandRows}=await import('./hand-csv.mjs');
+const a=['shop','Phone','256','Black','https://shop/phone','100000','8','','2026-10-21','true'];
+const b=[...a];b[5]='120000';b[6]='12';
+const concurrent=[...b];concurrent[5]='125000';
+const edits=new Map([[handRowKey(a),['95000','2026-10-28',null,'true']],[handRowKey(b),['110000','2026-10-28',null,'true']]]);
+const merged=mergeConfirmedHandRows([a,concurrent],[a,b],edits);
+assert.equal(merged[0][5],'95000');assert.equal(merged[1][5],'125000','do not overwrite a newer concurrent same-day hand edit');
+assert.equal(merged[0][6],'8');assert.equal(merged[1][6],'12');
+assert.deepEqual(mergeConfirmedHandRows([a],[a],new Map()),[a],'failed/unconfirmed rows do not enter merge');
+console.log('HAND_MERGE_PASS: RAM identity, confirmation-only merge and concurrent-edit preservation');

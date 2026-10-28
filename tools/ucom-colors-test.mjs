@@ -2,7 +2,7 @@ process.on('uncaughtException',e=>{console.error(e.message);process.exit(1);});
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const source=fs.readFileSync('scrape.mjs','utf8');
-const prefix=source.slice(0,source.indexOf('const report = [];')).replace('process.argv.slice(2)','[]');
+const prefix=source.slice(0,source.indexOf('const report = [];')).replace('process.argv.slice(2)','[]').replace(/from ['\"](\.\/tools\/[^'\"]+)['\"]/g,(_,file)=>"from '"+new URL('../'+file,import.meta.url).href+"'");
 const harness=`
 import {magentoCartState} from "${new URL('./cache-availability.mjs',import.meta.url).href}";
 export async function fixture(page,colors,aliases){

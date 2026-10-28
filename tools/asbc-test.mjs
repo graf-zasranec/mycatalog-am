@@ -27,7 +27,7 @@ const parsed=readAsbc(`<script id="__NUXT_DATA__" type="application/json">${JSON
 assert.equal(parsed.products[0].name,'iPhone 16'); assert.equal(parsed.total,1);
 assert.throws(()=>readAsbc('<html>unavailable</html>'),/ASBC/);
 const scraper=fs.readFileSync('scrape.mjs','utf8');
-const body=scraper.slice(0,scraper.indexOf('const report = [];')).replace('process.argv.slice(2)','[]');
+const body=scraper.slice(0,scraper.indexOf('const report = [];')).replace('process.argv.slice(2)','[]').replace(/from ['\"](\.\/tools\/[^'\"]+)['\"]/g,(_,file)=>"from '"+new URL('../'+file,import.meta.url).href+"'");
 const {matchPhone}=await import('data:text/javascript;base64,'+Buffer.from(body+'\nexport {matchPhone};').toString('base64'));
 assert.equal(matchPhone(asbcMatchName({...base,name:'AirPods 5 with Wireless Charging Case, Model A3439'})),'apple-airpods-5-wireless-charging-case');
 assert.equal(matchPhone(asbcMatchName({...base,name:'Apple TV 4K Wi-Fi + Ethernet with 128GB storage, Model A2843'})),'apple-tv-4k-2022');
