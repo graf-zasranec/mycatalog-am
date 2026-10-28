@@ -5,6 +5,237 @@
  "note": "too small needs a larger original, not an enlargement; canvas width does not establish visible-product resolution, model, finish or cutout quality. Run tools/photo-audit.py for visual-product quality review.",
  "total": 3261,
  "missing": 0,
- "tooSmall": 0,
- "products": []
+ "tooSmall": 23,
+ "products": [
+  {
+   "id": "kenwood-fdm301ss",
+   "brand": "Kenwood",
+   "name": "Food Processor FDM301SS",
+   "category": "kitchen",
+   "shops": 2,
+   "query": "Kenwood Food Processor FDM301SS",
+   "what": "too small",
+   "width": 401
+  },
+  {
+   "id": "samsung-rb31fernds9-wt",
+   "brand": "Samsung",
+   "name": "Fridge RB31FERNDS9/WT 310 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Samsung Fridge RB31FERNDS9/WT 310 L",
+   "what": "too small",
+   "width": 339
+  },
+  {
+   "id": "samsung-rt62k7110sl-wt",
+   "brand": "Samsung",
+   "name": "Fridge RT62K7110SL/WT 618 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Samsung Fridge RT62K7110SL/WT 618 L",
+   "what": "too small",
+   "width": 553
+  },
+  {
+   "id": "toshiba-gr-rf610we-pms-06",
+   "brand": "Toshiba",
+   "name": "Fridge GR-RF610WE-PMS(06) 457 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Toshiba Fridge GR-RF610WE-PMS(06) 457 L",
+   "what": "too small",
+   "width": 470
+  },
+  {
+   "id": "toshiba-gr-rt468we-pmj-06",
+   "brand": "Toshiba",
+   "name": "Fridge GR-RT468WE-PMJ(06) 338 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Toshiba Fridge GR-RT468WE-PMJ(06) 338 L",
+   "what": "too small",
+   "width": 451
+  },
+  {
+   "id": "babyliss-e976e",
+   "brand": "BaByliss",
+   "name": "Hair Clipper E976E",
+   "category": "grooming",
+   "shops": 1,
+   "query": "BaByliss Hair Clipper E976E",
+   "what": "too small",
+   "width": 354
+  },
+  {
+   "id": "bosch-kgn39ijea",
+   "brand": "Bosch",
+   "name": "Refrigerator KGN39IJEA",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Bosch Refrigerator KGN39IJEA",
+   "what": "too small",
+   "width": 553
+  },
+  {
+   "id": "electrolux-esf2400os",
+   "brand": "Electrolux",
+   "name": "Dishwasher ESF2400OS",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Electrolux Dishwasher ESF2400OS",
+   "what": "too small",
+   "width": 619
+  },
+  {
+   "id": "hisense-ap-12hw4gqcs00",
+   "brand": "Hisense",
+   "name": "Air Conditioner AP-12HW4GQCS00 12000 BTU",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Hisense Air Conditioner AP-12HW4GQCS00 12000 BTU",
+   "what": "too small",
+   "width": 686
+  },
+  {
+   "id": "hisense-h50-lite",
+   "brand": "Hisense",
+   "name": "H50 Lite",
+   "category": "phone",
+   "shops": 1,
+   "query": "Hisense H50 Lite",
+   "what": "too small",
+   "width": 330
+  },
+  {
+   "id": "hisense-hvc676451da",
+   "brand": "Hisense",
+   "name": "HVC676451DA Cordless Vacuum",
+   "category": "vacuum",
+   "shops": 1,
+   "query": "Hisense HVC676451DA Cordless Vacuum",
+   "what": "too small",
+   "width": 652
+  },
+  {
+   "id": "hitachi-r-vg660puc7-1",
+   "brand": "Hitachi",
+   "name": "Fridge R-VG660PUC7-1 550 L",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Hitachi Fridge R-VG660PUC7-1 550 L",
+   "what": "too small",
+   "width": 415
+  },
+  {
+   "id": "kenwood-blp41-a0wh",
+   "brand": "Kenwood",
+   "name": "Blender BLP41.A0WH",
+   "category": "kitchen",
+   "shops": 1,
+   "query": "Kenwood Blender BLP41.A0WH",
+   "what": "too small",
+   "width": 308
+  },
+  {
+   "id": "kenwood-chp61-100wh",
+   "brand": "Kenwood",
+   "name": "Food Chopper CHP61.100WH",
+   "category": "kitchen",
+   "shops": 1,
+   "query": "Kenwood Food Chopper CHP61.100WH",
+   "what": "too small",
+   "width": 352
+  },
+  {
+   "id": "kenwood-fdm304ss",
+   "brand": "Kenwood",
+   "name": "Food Processor FDM304SS",
+   "category": "kitchen",
+   "shops": 1,
+   "query": "Kenwood Food Processor FDM304SS",
+   "what": "too small",
+   "width": 411
+  },
+  {
+   "id": "kenwood-zjm810rd",
+   "brand": "Kenwood",
+   "name": "Kettle ZJM810RD",
+   "category": "kitchen",
+   "shops": 1,
+   "query": "Kenwood Kettle ZJM810RD",
+   "what": "too small",
+   "width": 684
+  },
+  {
+   "id": "realme-buds-air-3",
+   "brand": "Realme",
+   "name": "Buds Air 3",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Realme Buds Air 3",
+   "what": "too small",
+   "width": 569
+  },
+  {
+   "id": "samsung-rb37a5000sa-wt",
+   "brand": "Samsung",
+   "name": "Refrigerator RB37A5000SA/WT",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Samsung Refrigerator RB37A5000SA/WT",
+   "what": "too small",
+   "width": 366
+  },
+  {
+   "id": "samsung-rb38t630esa-ef",
+   "brand": "Samsung",
+   "name": "Refrigerator RB38T630ESA/EF",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Samsung Refrigerator RB38T630ESA/EF",
+   "what": "too small",
+   "width": 367
+  },
+  {
+   "id": "samsung-rs80f65m1w-wt",
+   "brand": "Samsung",
+   "name": "Fridge RS80F65M1W/WT 646 L",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Samsung Fridge RS80F65M1W/WT 646 L",
+   "what": "too small",
+   "width": 612
+  },
+  {
+   "id": "samsung-rt47cg6442s9wt",
+   "brand": "Samsung",
+   "name": "Refrigerator RT47CG6442S9WT",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Samsung Refrigerator RT47CG6442S9WT",
+   "what": "too small",
+   "width": 471
+  },
+  {
+   "id": "samsung-ww90t554cax-ld",
+   "brand": "Samsung",
+   "name": "Washing Machine WW90T554CAX/LD",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Samsung Washing Machine WW90T554CAX/LD",
+   "what": "too small",
+   "width": 536
+  },
+  {
+   "id": "xiaomi-poco-c95-pro",
+   "brand": "Xiaomi",
+   "name": "POCO C95 Pro",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi POCO C95 Pro",
+   "what": "too small",
+   "width": 310
+  }
+ ]
 }

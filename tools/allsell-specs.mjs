@@ -32,6 +32,7 @@ function modelIdentityAllowed(id, offer) {
   const identity = `${offer.title || ''} ${offer.url || ''}`;
   // "Wave" alone is also a coffeeware pattern. Flex, 300TWS and Buds 2 are
   // different hardware; cached rows must pass this gate as well as new matches.
+  if (id === 'honor-pad-x8b-ndl2-w09' && /ndl2[\s_-]*l09\b/i.test(identity)) return false;
   if (id === 'jbl-wave') {
     if (/\bwave[\s_-]*(?:flex|300[\s_-]*tws)|\bwave[\s_-]*buds[\s_-]*2\b/i.test(identity)) return false;
     return /\bjbl[\s_-]*wave[\s_-]*buds\b/i.test(identity);

@@ -3,6 +3,13 @@ import re
 from bs4 import BeautifulSoup
 
 
+def primary_color(title):
+    labels = {'wht':'White','white':'White','blk':'Black','black':'Black','blu':'Blue','blue':'Blue','grey':'Grey','gray':'Grey','silver':'Silver','gold':'Gold','green':'Green','pink':'Pink','purple':'Purple','red':'Red','beige':'Beige','navy':'Navy','mint':'Mint','teal':'Teal','inox':'Inox'}
+    matches = re.findall(r'(?<![A-Za-z])(light[ -]blue|dark[ -]blue|'+'|'.join(labels)+r')(?![A-Za-z])', title, re.I)
+    finishes = {labels.get(m.lower(),m.title()) for m in matches}
+    return next(iter(finishes)) if len(finishes) == 1 else None
+
+
 def product_row(html, url):
     soup = BeautifulSoup(html, 'html.parser')
     heading = soup.find('h1')
@@ -29,6 +36,9 @@ def product_row(html, url):
     if prices[0] <= 0 and stock:
         raise ValueError('In-stock product has no positive cash price')
     row = dict(url=url, title=title, price=prices[0], inStock=stock, detailVerified=True)
+    finish = primary_color(title)
+    if finish is not None:
+        row['color'] = finish
     # Keep each fixed SKU's configuration. The title can omit RAM and storage.
     detailed = soup.select_one('.product-info-detailed')
     text = detailed.get_text(' ', strip=True) if detailed else ''

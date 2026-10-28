@@ -100,3 +100,7 @@ const wave={'jbl-wave':[{title:'Easy Life 1762/WAVE coffee cup set 6 pcs',price:
 attachOfferConfigs([{id:'jbl-wave',category:'headphones'}],wave);
 assert.deepEqual(wave['jbl-wave'].map(o=>o.price),[19900],'build cannot publish coffeeware as the minimum earbud price');
 console.log('WAVE_BUDS_IDENTITY_PASS: coffeeware, Flex and second generation excluded');
+const pad='honor-pad-x8b-ndl2-w09';
+assert.equal(specOfferAllowed({title:'Honor Pad X8b NDL2-L09 6GB/256GB',url:'https://eldorado.am/en/honor-pad-x8b-ndl2-w09'},[],pad),false,'L09 evidence cannot enter fixed W09 hardware through an old URL');
+assert.equal(specOfferAllowed({title:'Honor Pad X8b NDL2-W09 4GB/128GB'},[],pad),true);
+console.log('PAD_X8B_IDENTITY_PASS: conflicting L09 and W09 hardware kept separate');

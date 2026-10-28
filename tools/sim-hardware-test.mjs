@@ -13,6 +13,15 @@ const make=()=>Object.fromEntries(ids.map(id=>[id,[{shop:'telecom',url:'https://
 const pins=new Map(ids.map(id=>['https://s/'+id+'/pinned',false]));
 const baseline=make();for(const id of ids){const expected=[false,false,false,true,false,undefined];baseline[id].forEach((o,i)=>{if(expected[i]===undefined)delete o.esim;else o.esim=expected[i]});}
 const offers=run(phones,make(),pins,modelEsimOnly);let n=0,bad=0;const check=(label,f)=>{n++;try{f()}catch(e){bad++;console.error('FAIL '+label+': '+e.message.slice(0,200));}};
+check('iBolit Black 256GB SIM uses physical tray',()=>{
+  const url='https://ibolit.mobi/product/apple-iphone-18-pro-256gb-sim-black/';
+  const row=read('data/links.csv').split(/\r?\n/).map(line=>line.split(',')).find(r=>r[9]===url);
+  assert.ok(row,'exact offer remains indexed');
+  assert.equal(row[6],'nano!','owner confirmed physical SIM on 2026-10-29');
+  const offer={shop:'ibolit',title:row[3],url,price:619000,storage:256,color:'Black'};
+  const result=run(phones,{'apple-iphone-18-pro':[offer]},new Map([[url,row[6]==='esim!']]),modelEsimOnly);
+  assert.equal(result['apple-iphone-18-pro'][0].esim,false);
+});
 check('exact model only',()=>{assert.equal(modelEsimOnly('apple-iphone-duo'),true);for(const id of ['apple-iphone-duo-max','apple-iphone-17-pro','samsung-galaxy-s26',null,''])assert.equal(modelEsimOnly(id),undefined)});
 for(const o of offers['apple-iphone-duo'])check('Duo scraper '+o.url,()=>assert.equal(o.esim,true));
 for(const id of ids.slice(1))check('other model precedence '+id,()=>assert.deepEqual(offers[id],baseline[id]));

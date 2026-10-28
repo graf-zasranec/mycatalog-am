@@ -490,6 +490,191 @@
       "productFound": false,
       "primaryBuyBoxFound": false,
       "evidence": "Normal browser loaded a generic Product page with no product heading, no price and no purchase controls; saved HTML also has no Product structured data."
+    },
+    {
+      "url": "https://www.zigzag.am/am/apple-watch-se-3-gps-40mm-midnight-midnight-sport-band-s-m-meh94.html",
+      "shop": "zigzag",
+      "status": 200,
+      "reason": "exact_variant_sold_out",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T14:11:09.723808+00:00",
+      "scope": {
+        "storage": 40,
+        "color": "Midnight"
+      },
+      "stock": false
+    },
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/hy/smartphones/xiaomi-redmi-13-black/1845/",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:36.147Z"
+    },
+    {
+      "url": "https://www.zigzag.am/am/lenovo-loq-15-6-i7-13645hx-16gb-512gb-rtx5050-luna-grey-83je0189rk.html",
+      "shop": "zigzag",
+      "status": 200,
+      "reason": "exact_variant_sold_out",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T14:40:11.736874+00:00",
+      "scope": {
+        "storage": 512
+      },
+      "stock": false
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-aspire-go-ag15-71pt-72ga-i7-13620h-16gb-i-512gb-nx-j71aa-002",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:52.968Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-aspire-lite-al15-36p-32xp-i3-n350-8gb-i-128gb-nx-de2aa-001",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:54.271Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-aspire-vero-av16-51p-7063-u7-155h-16gb-i-512gb",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:55.544Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-nitro-v-16-anv16-72-73vj-core-7-240h-32gb-i-512gb",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:56.792Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-nitro-v16-anv16-72-933f-32gb-i-1tb",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:58.061Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-predator-helios-neo-16s-ai-phn16s-71-91aw-16gb-i-1tb",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:41:59.350Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-swift-16-ai-sf16-51t-76tg-16gb-i-1tb",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:00.614Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/asus-vivobook-14-flip-celeron-n4500-4gb-i-64gb-j1400ka-ds02t-90nb0vk1-m005a0",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:02.237Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/asus-vivobook-core-i3-8gb-i-128gb-x1404va-i38128",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:03.693Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/hp-gaming-omen-16-n0023dx-ryzen-7-16gb-i-512gb-6abh3ua-aba",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:05.043Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/hp-omnibook-5-14-fp0024ci-8gb-i-512gb-c0ee4ea",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:06.344Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/lenovo-ideapad-slim-3-16ahp10-ryzen-5-8640hs-16gb-i-512gb-83kb000brk",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:07.652Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/lenovo-legion-5-15akp10-83f1003jrk-16gb-i-512gb",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:08.951Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/lenovo-legion-5-16irx9-i5-13450hx-16gb-i-512gb-83dg000brk",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:10.207Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/lenovo-thinkpad-e16-i5-1335u-16gb-i-512gb-21jn001qgp",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:11.532Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/hp-15-fd2050wm-16gb-i-512gb-d4jk5ua-16",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:47.580Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/acer-swift-3-sf314-59-75qc",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:42:54.737Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/hp-15-fd0113dx-8gb-i-128gb-c0cm1ua",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:43:59.760Z"
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/asus-va249hg-90lm02w0-b01171",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-10-28",
+      "checkedAt": "2026-10-28T20:44:23.017Z"
     }
   ]
 }

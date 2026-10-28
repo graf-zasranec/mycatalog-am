@@ -101,14 +101,19 @@ const scraplingGet = url => (scraplingQueue = scraplingQueue.then(() => new Prom
   hold(true);
   scraplingProc.stdin.write(url + '\n');
 })));
+// Actual successful URL reads allow later same-day stock evidence to restore an offer.
+// Cached rows and unread siblings never inherit a timestamp from the run itself.
+const FETCH_CHECKED = new Map();
 async function get(url, tries = 2, ua = UA) {
   let host = ''; try { host = new URL(url).hostname; } catch { }
-  // BETTER_FORCE_SCRAPLING=1: skip the plain request these hosts refuse (CI), or test the route locally.
-  if (process.env.BETTER_FORCE_SCRAPLING && SCRAPLING_HOSTS.has(host)) return await scraplingGet(url);
-  const html = await plainGet(url, tries, ua);
-  if (html) return html;
-  if (!SCRAPLING_HOSTS.has(host) || lastStatus() === 404) return html;
-  return await scraplingGet(url);
+  let html;
+  if (process.env.BETTER_FORCE_SCRAPLING && SCRAPLING_HOSTS.has(host)) html = await scraplingGet(url);
+  else {
+    html = await plainGet(url, tries, ua);
+    if (!html && SCRAPLING_HOSTS.has(host) && lastStatus() !== 404) html = await scraplingGet(url);
+  }
+  if (html && lastStatus() === 200) FETCH_CHECKED.set(url, new Date().toISOString());
+  return html;
 }
 async function plainGet(url, tries = 2, ua = UA) {
   setStatus(0);
@@ -238,9 +243,8 @@ const MISSED = new Map();
 // whatever was handed in rather than asking all twenty-odd of them to pass it separately.
 const PINS = new Map();
 // ...and column 6, the SIM build, when it is written with a '!' after it. A shop can state the
-// build wrongly on its own page: iBolit slugs the iPhone 18 Pro eSIM build '...-256gb-sim-...'
-// and the tray build '...-esim-...', so every reading off that url is backwards and no amount of
-// care with the words can recover it. Without the bang the column is just what the crawl derived
+// build wrongly on its own page. Pins are exact-URL evidence, never a rule that a retailer's
+// SIM/eSIM labels are all reversed. Without the bang the column is what the crawl derived
 // and is re-derived freely; with it, somebody checked.
 const SIMPINS = new Map();
 try {
@@ -2778,7 +2782,7 @@ for (const key of names) {
   }
   // Read from the shop's own page just now, so it is dated. An offer carried over from a shop
 // that failed keeps whatever date it already had, which is the point of having one.
-const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TODAY, size: ['appzone','likemobile','miarmenia'].includes(key) ? o.size ?? screenOf(o.title, o.id) : screenOf(o.title, o.id) }));
+const rows = [...best.values()].map(o => ({ ...o, shop: key, seen: o.seen ?? TODAY, checkedAt: o.checkedAt ?? (!o.seen ? FETCH_CHECKED.get(o.url) : undefined), size: ['appzone','likemobile','miarmenia'].includes(key) ? o.size ?? screenOf(o.title, o.id) : screenOf(o.title, o.id) }));
   for (const o of rows) (offers[o.id] ||= []).push(o);
   // AppZone reads every reviewed parent page and its complete variant inventory.
   // Failed pages throw and retain the previous shop; a successful read must not
@@ -3297,11 +3301,15 @@ if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed: shop repo
 try {
   const {verifiedUnavailable} = await import('./tools/unavailable-offers.mjs');
   const rows = JSON.parse(fs.readFileSync('data/unavailable-offers.json', 'utf8')).rows || [];
-  const evidence = new Map(rows.map(r => [r.url, r]));
+  const evidence = new Map();
+  for (const row of rows) {
+    if (!evidence.has(row.url)) evidence.set(row.url, []);
+    evidence.get(row.url).push(row);
+  }
   let removed = 0;
   for (const id of Object.keys(offers)) {
     const before = offers[id].length;
-    offers[id] = offers[id].filter(o => !verifiedUnavailable(o, evidence.get(o.url)));
+    offers[id] = offers[id].filter(o => !(evidence.get(o.url) || []).some(row => verifiedUnavailable(o, row)));
     removed += before - offers[id].length;
   }
   if (removed) console.log(`${removed} older offer(s) removed: verified homepage redirects`);

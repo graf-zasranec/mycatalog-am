@@ -1,5 +1,5 @@
 import fs from'node:fs';import {istyleVariants} from './istyle-variants.mjs';import {createHandReader} from './hand-fetch.mjs';import {parseCsv,formatCsvRow,handRowKey,mergeConfirmedHandRows} from './hand-csv.mjs';import vm from'node:vm';import assert from'node:assert/strict';
-const src=fs.readFileSync('tools/confirm-hand.mjs','utf8');const ctx={mergeConfirmedHandRows,URL,URLSearchParams,istyleVariants,createHandReader,parseCsv,formatCsvRow,handRowKey,fs,process:{argv:[]},console,Date,Set,Map,Number,JSON,String,RegExp,Math,setTimeout};vm.createContext(ctx);vm.runInContext(src.slice(0,src.indexOf('const CACHE = new Map()')).replace(/^import[^;]+;/gm,'')+';this.p={buildPrice,istylePrice,capOf,namesTheProduct,handConfigurationFits,priceOf};',ctx);const p=ctx.p;
+const src=fs.readFileSync('tools/confirm-hand.mjs','utf8');const ctx={mergeConfirmedHandRows,URL,URLSearchParams,istyleVariants,createHandReader,parseCsv,formatCsvRow,handRowKey,fs,process:{argv:[]},console,Date,Set,Map,Number,JSON,String,RegExp,Math,setTimeout};vm.createContext(ctx);vm.runInContext(src.slice(0,src.indexOf('const CACHE = new Map()')).replace(/^import[^;]+;/gm,'')+';this.p={buildPrice,istylePrice,capOf,namesTheProduct,handConfigurationFits,priceOf,genericConfigurationPage};',ctx);const p=ctx.p;
 const pixel=vs=>'<script>var PRODUCT_VARIANTS = '+JSON.stringify(vs)+';</script>';
 const v=(memory,color='Black',sim='eSIM',price=320000,stock=1)=>({properties:[memory,color,sim].filter(Boolean).map(valueTitle=>({valueTitle})),wholesalePrice:price,quantity:stock});
 const row=(title='Apple iPhone 17 eSIM',capacity=256,color='Black',price=320000,ram='')=>['pixel',title,String(capacity),color,'https://www.pixel.am/am/product/iphone17',String(price),String(ram)];
@@ -38,3 +38,7 @@ assert.equal(p.namesTheProduct('<h1>HP Notebook 15.6 Core i5 15-fd0098dx</h1>','
 assert.equal(p.handConfigurationFits(row(),'Apple iPhone 17 SIM 256GB'),false);
 assert.equal(p.priceOf('<script type="application/ld+json">'+JSON.stringify({'@type':'Product',offers:{price:320000}})+'</script>').stock,undefined);
 console.log('HAND_PRICE_VARIANTS_PASS: exact color/RAM/storage/SIM/radio, availability and model qualifiers');
+assert.equal(p.priceOf('<meta property="product:price:amount" content="120000"><script>{"canDisplayShowOutOfStockStatus":true}</script>')?.stock,undefined,'a price meta and generic Magento property prove no stock state');
+
+assert.equal(p.genericConfigurationPage('<script>{"jsonConfig":{"attributes":{"storage":{}}}}</script>'),true,'generic Magento base price is not a selected capacity price');
+assert.equal(p.genericConfigurationPage('<script>{"price":120000}</script>'),false,'simple source price remains readable');

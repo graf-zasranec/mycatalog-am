@@ -60,6 +60,15 @@ class EldoradoDataTests(unittest.TestCase):
                                extra='<div class="product-info-detailed">Storage - 128 GB RAM - 4 GB</div>'), 'url')
         self.assertEqual((row['ram'], row['storage']), (4, 128))
 
+    def test_primary_finish_replaces_inherited_default_color(self):
+        html = page('<span data-price-type="finalPrice" data-price-amount="10900"></span>').replace('Sony WH-CH720N Blue','Redmi Buds 8 lite BHR08OLGL White')
+        row = product_row(html,'https://eldorado.am/en/bhr08olgl-white')
+        self.assertEqual(row.get('color'),'White')
+
+    def test_color_is_a_whole_primary_title_word(self):
+        html = page('<span data-price-type="finalPrice" data-price-amount="10900"></span>').replace('Sony WH-CH720N Blue','Wireless Bluetooth headphones')
+        self.assertNotIn('color',product_row(html,'url'))
+
     def test_card_boundaries_do_not_borrow_next_card_price(self):
         html = '<li class="product-item"><a class="product_name combo_link" href="a">A</a></li>' \
                '<li class="product-item"><a class="product_name combo_link" href="b">B</a><span data-price-type="finalPrice" data-price-amount="50000"></span></li>'

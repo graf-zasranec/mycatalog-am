@@ -349,6 +349,12 @@ function vivaPrice(html, f) {
   return n >= FLOOR ? { price: n, how: 'viva-page', stock: priceOf(html)?.stock } : null;
 }
 
+// A configurable Magento page's generic price can belong to its cheapest child.
+// Only a reader that resolves the requested configuration may confirm that price.
+function genericConfigurationPage(html) {
+  return /["']jsonConfig["']\s*:\s*\{\s*["']attributes["']\s*:/i.test(html);
+}
+
 function priceOf(html) {
   for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
@@ -369,16 +375,16 @@ function priceOf(html) {
   }
   let m = html.match(/<meta[^>]+property="product:price:amount"[^>]+content="([\d.]+)"/i)
        || html.match(/<meta[^>]+content="([\d.]+)"[^>]+property="product:price:amount"/i);
-  if (m && +m[1] >= FLOOR) return { price: Math.round(+m[1]), how: 'og-meta', stock: !/out-of-stock|OutOfStock/i.test(html) };
+  if (m && +m[1] >= FLOOR) return { price: Math.round(+m[1]), how: 'og-meta', stock: undefined };
   m = html.match(/itemprop="price"[^>]*content="([\d.]+)"/i);
-  if (m && +m[1] >= FLOOR) return { price: Math.round(+m[1]), how: 'itemprop', stock: !/out-of-stock|OutOfStock/i.test(html) };
+  if (m && +m[1] >= FLOOR) return { price: Math.round(+m[1]), how: 'itemprop', stock: undefined };
   // Magento prints dozens of these on one page for its recommendations, so take the one inside
   // the main product block and nowhere else.
   const main = html.match(/product-info-main([\s\S]{0,8000})/i);
   if (main) {
     const f = main[1].match(/data-price-amount="([\d.]+)"[^>]*data-price-type="finalPrice"/i)
            || main[1].match(/data-price-amount="([\d.]+)"/i);
-    if (f && +f[1] >= FLOOR) return { price: Math.round(+f[1]), how: 'magento-main', stock: !/out-of-stock/i.test(html) };
+    if (f && +f[1] >= FLOOR) return { price: Math.round(+f[1]), how: 'magento-main', stock: undefined };
   }
   return null;
 }
@@ -531,6 +537,7 @@ for (let i = 0; i < todo.length; i++) {
       while (f.length < 10) f.push('');
       f[8] = TODAY; f[9] = 'false'; confirmed.add(handRowKey(f)); soldOut++; continue;
     }
+    if (!MATRIX.some(h=>f[4].includes(h)) && genericConfigurationPage(html)) { disputed.push([f[0],f[1],f[4]]); continue; }
     p = BUILDS.some(h => f[4].includes(h)) ? buildPrice(html, f)
       : f[4].includes('istyle.am') ? istylePrice(html, f)
       : vivaPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
