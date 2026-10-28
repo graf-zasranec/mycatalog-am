@@ -51,6 +51,10 @@ jobs:
       - name: Install the build tools
         run: npm ci --ignore-scripts
 
+      # Validate both real staging commands before spending hours crawling.
+      - name: Validate publication and recovery before crawling
+        run: node tools/release-assets-test.mjs
+
       - name: Restore interrupted refresh checkpoint
         if: github.run_attempt > 1
         continue-on-error: true # older runs may not have saved a checkpoint
@@ -85,27 +89,6 @@ jobs:
           if-no-files-found: warn
           path: data/unmatched.json
 
-      - name: Save interrupted refresh checkpoint
-        if: always() && steps.prices.outcome != 'success'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: refresh-checkpoint
-          retention-days: 2
-          overwrite: true
-          include-hidden-files: true
-          if-no-files-found: warn
-          path: |
-            .scrape-partial.json
-            .refresh-prepared.json
-            data/eldorado.json
-            data/eldorado-refresh-report.json
-            data/zigzag.json
-            data/listings.csv
-            data/links.csv
-            data/prices.json
-            data/history.json
-            data/phones.json
-
       - name: Commit refreshed prices and history
         run: |
           git config user.name  "mycatalog-bot"
@@ -132,3 +115,24 @@ jobs:
             git commit --amend --no-edit
           done
           exit 1
+
+      - name: Save interrupted refresh checkpoint
+        if: always() && (steps.prices.outcome != 'success' || failure())
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: refresh-checkpoint
+          retention-days: 2
+          overwrite: true
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: |
+            .scrape-partial.json
+            .refresh-prepared.json
+            data/eldorado.json
+            data/eldorado-refresh-report.json
+            data/zigzag.json
+            data/listings.csv
+            data/links.csv
+            data/prices.json
+            data/history.json
+            data/phones.json

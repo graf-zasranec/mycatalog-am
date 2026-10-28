@@ -88,3 +88,15 @@ assert.equal(specOfferAllowed({title:'Redmi Buds 6 Lite',url:'https://example.te
 console.log('BUDS6_ACTIVE_IDENTITY_PASS: Active hardware stays separate from base, Lite and Play');
 assert.equal(specOfferAllowed({title:'Xiaomi Buds 6'},[],'xiaomi-buds-6'),true);
 assert.equal(specOfferAllowed({title:'Redmi Buds 6 Active',url:'https://example.test/xiaomi-buds-6'},[],'xiaomi-buds-6'),false);
+
+// Wave is also a coffeeware pattern; Wave Flex and Buds 2 are different earbuds.
+for (const title of ['Easy Life 1762/WAVE coffee cup set 6 pcs','JBL Wave Flex 2 Black','JBL Wave Buds 2 White'])
+  assert.equal(specOfferAllowed({title},[],'jbl-wave'),false,'Wave Buds identity rejects '+title);
+for (const title of ['JBL Wave Buds WHT Wireless headphones','JBL Wave Buds Black','JBL Wave Buds MIT'])
+  assert.equal(specOfferAllowed({title},[],'jbl-wave'),true,'verified original Wave Buds survives');
+assert.equal(specOfferAllowed({title:'Wireless earbuds',url:'https://eldorado.am/en/jbl-wave-buds-wht'},[],'jbl-wave'),true);
+assert.equal(specOfferAllowed({title:'JBL Wave Flex 2',url:'https://example.test/jbl-wave-buds'},[],'jbl-wave'),false,'conflicting source title defeats a generic positive URL');
+const wave={'jbl-wave':[{title:'Easy Life 1762/WAVE coffee cup set 6 pcs',price:15500},{title:'JBL Wave Buds WHT Wireless headphones',price:19900}]};
+attachOfferConfigs([{id:'jbl-wave',category:'headphones'}],wave);
+assert.deepEqual(wave['jbl-wave'].map(o=>o.price),[19900],'build cannot publish coffeeware as the minimum earbud price');
+console.log('WAVE_BUDS_IDENTITY_PASS: coffeeware, Flex and second generation excluded');

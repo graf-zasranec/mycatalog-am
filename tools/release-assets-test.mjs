@@ -44,3 +44,11 @@ try {
   }
   console.log('RELEASE_ASSETS_TEST_PASS: omitted index/detail assets and unstaged files rejected');
 } finally { fs.rmSync(root,{recursive:true,force:true}); }
+
+// A completed crawl can fail while committing; its data must still be recoverable.
+const workflow=fs.readFileSync('.github/workflows/deploy.yml','utf8');
+const checkpoint=workflow.indexOf('- name: Save interrupted refresh checkpoint');
+assert.ok(checkpoint>workflow.indexOf('- name: Commit refreshed prices and history'),'save checkpoint after the commit step so publication failures are captured');
+assert.match(workflow.slice(checkpoint),/if:.*always\(\).*failure\(\)/,'a successful crawl followed by failed publication must save a checkpoint');
+assert.ok(workflow.indexOf('run: node tools/release-assets-test.mjs')<workflow.indexOf('- name: Refresh caches, hand rows, shop prices and build'),'exercise actual staging commands before the expensive crawl');
+console.log('REFRESH_PUBLICATION_RECOVERY_PASS: fail-fast staging preflight and post-publication failure checkpoint');

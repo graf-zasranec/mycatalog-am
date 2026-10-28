@@ -30,6 +30,13 @@ export function reviewAllsellSpecs(html) {
 // evidence can establish this entry; catalogue specifications cannot do so.
 function modelIdentityAllowed(id, offer) {
   const identity = `${offer.title || ''} ${offer.url || ''}`;
+  // "Wave" alone is also a coffeeware pattern. Flex, 300TWS and Buds 2 are
+  // different hardware; cached rows must pass this gate as well as new matches.
+  if (id === 'jbl-wave') {
+    if (/\bwave[\s_-]*(?:flex|300[\s_-]*tws)|\bwave[\s_-]*buds[\s_-]*2\b/i.test(identity)) return false;
+    return /\bjbl[\s_-]*wave[\s_-]*buds\b/i.test(identity);
+  }
+
   // The model is fixed at65 inches; a cheaper55-inch sibling is a different TV.
   if (id === 'xiaomi-s-pro-mini-led-65') {
     let source = identity;
