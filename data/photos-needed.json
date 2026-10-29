@@ -5,7 +5,7 @@
  "note": "too small needs a larger original, not an enlargement; canvas width does not establish visible-product resolution, model, finish or cutout quality. Run tools/photo-audit.py for visual-product quality review.",
  "total": 3261,
  "missing": 0,
- "tooSmall": 23,
+ "tooSmall": 24,
  "products": [
   {
    "id": "kenwood-fdm301ss",
@@ -166,6 +166,16 @@
    "query": "Kenwood Kettle ZJM810RD",
    "what": "too small",
    "width": 684
+  },
+  {
+   "id": "ninja-af400eu",
+   "brand": "Ninja",
+   "name": "Foodi MAX Dual Zone AF400EU",
+   "category": "kitchen",
+   "shops": 1,
+   "query": "Ninja Foodi MAX Dual Zone AF400EU",
+   "what": "too small",
+   "width": 662
   },
   {
    "id": "realme-buds-air-3",

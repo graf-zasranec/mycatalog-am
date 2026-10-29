@@ -1,0 +1,90 @@
+{
+  "integrated": "2026-10-30",
+  "models": 3,
+  "photos": [
+    {
+      "id": "honor-200-lite-5g",
+      "color": "main",
+      "destination": "images/cut/honor-200-lite-5g__main.webp",
+      "sha256": "d59c84bbfae5b948255af9991849e433667981e608e016427f64033948e3d896",
+      "source": "images/_src/honor-200-lite-5g__main.png",
+      "sourceSha256": "ade42fdc6c6baba6ba710caecd729529b0bf17b312e9b5f7a0120a248e8889c3",
+      "sourcePage": "https://www.honor.com/uk/phones/honor-200-lite/",
+      "sourceImageURL": "https://www-file.honor.com/content/dam/honor/uk/products/smartphone/honor-200-lite/assets/imgs/section-cmf/cmf-black-in.png",
+      "checked": "2026-10-30",
+      "method": "native-alpha",
+      "nativeDimensions": [
+        1334,
+        1594
+      ],
+      "outputDimensions": [
+        1298,
+        1519
+      ],
+      "visibleLong": 1511,
+      "review": "Midnight Black, exact official CMF asset with complete front and back; no catalogue color assignment changed.",
+      "before": {
+        "backup": ".codex/reports/2026-10-30-text-links-pics/originals/images/cut/honor-200-lite-5g__main.webp",
+        "sha256": "beb452ebc8e5f1f31f83d2679dfb2ad5cbde96705251b46a549fbb3e078b268b"
+      },
+      "sourceBefore": null,
+      "processing": "Native alpha retained; transparent padding, no enlargement."
+    },
+    {
+      "id": "jbl-soundgear-bta",
+      "color": "main",
+      "destination": "images/cut/jbl-soundgear-bta__main.webp",
+      "sha256": "3b73693a72c85f2ef6ba98a805303ba6992edc61ce2fcfdcc5613119b2ec2f31",
+      "source": "images/_src/jbl-soundgear-bta__main.png",
+      "sourceSha256": "b502389e5a7686f663a78d608b48df6c5ccabc60da34d9484f02d0c32dfaab9d",
+      "sourcePage": "https://www.jbl.com/JBLSOUNDGEARBABLK.html",
+      "sourceImageURL": "https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwbdc9fac9/JBL_Soundgear_Hero-1605x1605px.png",
+      "checked": "2026-10-30",
+      "method": "native-alpha",
+      "nativeDimensions": [
+        1605,
+        1605
+      ],
+      "outputDimensions": [
+        1497,
+        1023
+      ],
+      "visibleLong": 1276,
+      "review": "Exact black Soundgear BTA manufacturer hero; complete speaker body, controls and logo; transparent negative space retained.",
+      "before": {
+        "backup": ".codex/reports/2026-10-30-text-links-pics/originals/images/cut/jbl-soundgear-bta__main.webp",
+        "sha256": "5af594bfc931f348a0dee9ccadad5582968c5ee6f9b23a9335fbf902f11889cd"
+      },
+      "sourceBefore": null,
+      "processing": "Native alpha retained; transparent padding, no enlargement."
+    },
+    {
+      "id": "ninja-af400eu",
+      "color": "main",
+      "destination": "images/cut/ninja-af400eu__main.webp",
+      "sha256": "c6b1c9f07fb86ee38b6f0d2e47a354c91fb5ae5eb77dda44b5ad4479b9fb373e",
+      "source": "images/_src/ninja-af400eu__main.png",
+      "sourceSha256": "3bc021245e69204563eead2aeec3ca4b699464c5d7044f61c4b861ca0db0e2a1",
+      "sourcePage": "https://www.elgiganten.dk/product/hjem-rengoring-kokkenudstyr/kokkenudstyr/airfryer/ninja-airfryer-af400eu/611441",
+      "sourceImageURL": "https://next-media.elkjop.com/image/dv_web_D1800010021744387/611441/ninja-airfryer-af400eu.jpg",
+      "checked": "2026-10-30",
+      "method": "apple-vision",
+      "nativeDimensions": [
+        640,
+        528
+      ],
+      "outputDimensions": [
+        662,
+        551
+      ],
+      "visibleLong": 630,
+      "review": "Exact AF400EU black/silver unit, complete lid, both drawers, handles and feet; manufacturer model/GTIN confirmed in source page.",
+      "before": {
+        "backup": ".codex/reports/2026-10-30-text-links-pics/originals/images/cut/ninja-af400eu__main.webp",
+        "sha256": "0c51e19039eed39883d4d9e9a807767b7938da6af47869ed67fc15eb80f328db"
+      },
+      "sourceBefore": null,
+      "processing": "Native crop and transparent canvas padding only, no resampling; Ninja Apple Vision edge decontamination via tools/defringe.py."
+    }
+  ]
+}

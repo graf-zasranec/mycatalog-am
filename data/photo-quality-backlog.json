@@ -1,26 +1,8 @@
 {
-  "checked": "2026-10-29",
-  "basis": "344baseline models without a600px visible native cutout;19verified repairs27Oct,11additional28Oct,and60additional verified29Oct. All models have photos;remaining queue is native/exact photo quality,no enlargement.",
-  "remaining": 254,
+  "checked": "2026-10-30",
+  "basis": "344baseline models without a600px visible native cutout;19verified repairs27Oct,11additional28Oct,and60additional verified29Oct. All models have photos;remaining queue is native/exact photo quality,no enlargement. Three additional exact-model original photo upgrades on30Oct; data/photo-sources-2026-10-30.json.",
+  "remaining": 251,
   "products": [
-    {
-      "id": "honor-200-lite-5g",
-      "beforeVisibleLong": 552,
-      "sourceAuditDisposition": "native-source-resolution-limit",
-      "sourceURLs": [
-        "https://shop.ucom.am/media/catalog/product/1/_/1_honor_200_lite_8gb256gb_midnight_black.png?___store=am",
-        "https://shop.ucom.am/media/catalog/product/1/_/1_honor_200_lite_8gb256gb_midnight_black.webp"
-      ],
-      "attempts": [],
-      "disposition": "recovered-native-canvas-below600",
-      "latestReview": {
-        "reviewed": "2026-10-29",
-        "sourceChecked": "2026-10-28",
-        "status": "unresolved-exact-source",
-        "limitation": "200 Lite 5G: exact-name research preserved across 2 page attempts (1 failed/blocked). 3 downloaded candidates; largest canvas 532px, largest processed body 0px. No verified clean complete exact-model/finish native600px body in preserved evidence; failed requests and individual measurements linked. No enlargement or inferred replacement used.",
-        "report": ".codex/reports/2026-10-28-photos-hand/photos-electronics/results.json"
-      }
-    },
     {
       "id": "sony-playstation-vr2",
       "beforeVisibleLong": 579,
@@ -108,23 +90,6 @@
         "status": "source-limited",
         "limitation": "No larger exact full-product/finish original qualified",
         "report": ".codex/reports/2026-10-28-photos-hand/photos-appliances/results.json"
-      }
-    },
-    {
-      "id": "jbl-soundgear-bta",
-      "beforeVisibleLong": 592,
-      "sourceAuditDisposition": "candidate-review",
-      "sourceURLs": [
-        "https://likemobile.am/storage/likemobile/product/14979/d68f12bb0e87020856c1738dea4f2c2e.webp"
-      ],
-      "attempts": [],
-      "disposition": "recovered-visible-body-below600",
-      "latestReview": {
-        "reviewed": "2026-10-29",
-        "sourceChecked": "2026-10-28",
-        "status": "unresolved-exact-source",
-        "limitation": "Soundgear BTA: exact-name research preserved across 3 page attempts (2 failed/blocked). 3 downloaded candidates; largest canvas 744px, largest processed body 592px. No verified clean complete exact-model/finish native600px body in preserved evidence; failed requests and individual measurements linked. No enlargement or inferred replacement used.",
-        "report": ".codex/reports/2026-10-28-photos-hand/photos-electronics/results.json"
       }
     },
     {
@@ -1797,26 +1762,6 @@
       "attempts": [
         {
           "page": "https://eldorado.am/en/ninja-af300eu",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        }
-      ],
-      "disposition": "no-supported-source-recovered-in-bounded-pass",
-      "latestReview": {
-        "reviewed": "2026-10-29",
-        "sourceChecked": "2026-10-28",
-        "status": "source-limited",
-        "limitation": "No larger exact full-product/finish original qualified",
-        "report": ".codex/reports/2026-10-28-photos-hand/photos-appliances/results.json"
-      }
-    },
-    {
-      "id": "ninja-af400eu",
-      "beforeVisibleLong": 555,
-      "sourceAuditDisposition": "no-supported-source-recovered",
-      "sourceURLs": [],
-      "attempts": [
-        {
-          "page": "https://eldorado.am/en/ninja-foodi-max-af400eu",
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
