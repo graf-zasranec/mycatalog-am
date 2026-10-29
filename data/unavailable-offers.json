@@ -675,6 +675,30 @@
       "reason": "http_not_found",
       "checked": "2026-10-28",
       "checkedAt": "2026-10-28T20:44:23.017Z"
+    },
+    {
+      "url": "https://redstore.am/en/product/harman-kardon-go-play-3-gray",
+      "finalUrl": "https://redstore.am/en/product/harman-kardon-go-play-3-gray",
+      "shop": "redstore",
+      "status": 200,
+      "reason": "primary_product_missing",
+      "checked": "2026-10-29",
+      "checkedAt": "2026-10-29T07:29:34.695612+00:00",
+      "productFound": false,
+      "primaryBuyBoxFound": false,
+      "verification": "Current exact HTTP200capture has generic Product title. Brave rendered page after hydration has empty main heading, placeholder image, no product title,price or buy box. Harman on-site search also found no matching product."
+    },
+    {
+      "url": "https://redstore.am/en/product/xiaomi-tv-s-pro-minil75mb-splme2026",
+      "finalUrl": "https://redstore.am/en/product/xiaomi-tv-s-pro-minil75mb-splme2026",
+      "shop": "redstore",
+      "status": 200,
+      "reason": "primary_product_missing",
+      "checked": "2026-10-29",
+      "checkedAt": "2026-10-29T07:29:34.695612+00:00",
+      "productFound": false,
+      "primaryBuyBoxFound": false,
+      "verification": "Current exact HTTP200capture has generic Product title. Brave rendered page after hydration has empty main heading, placeholder image, no product title,price or buy box."
     }
   ]
 }

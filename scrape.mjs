@@ -1581,7 +1581,7 @@ const urlWords = u => {
   try { s = decodeURIComponent(s); } catch { /* a stray % is not a reason to lose the whole url */ }
   return s.replace(/[^a-zA-Z0-9]+/g, ' ');
 };
-const enrich = (o) => ({
+const enrich = (o, {allowSoleColor = true} = {}) => ({
   ...o,
   storage: o.storage ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
   ram: o.ram ?? ramOf(o.title),
@@ -1597,7 +1597,7 @@ const enrich = (o) => ({
   // that publishes an image gets it now, which is 32 more offers that can say what they are.
   color: o.color ?? colorOf(o.title + ' ' + urlWords(o.url), (phoneById[o.id] || {}).colors)
     ?? (o.image ? colorFromImage(o.image, (phoneById[o.id] || {}).colors) : null)
-    ?? soleValue((phoneById[o.id] || {}).colors)
+    ?? (allowSoleColor ? soleValue((phoneById[o.id] || {}).colors) : null)
     ?? colorWords(urlWords(o.url))
 });
 
@@ -2624,7 +2624,8 @@ for (const [id, list] of Object.entries(prev.offers || {})) {
     // stated rather than a conclusion drawn from a title, and is not re-derivable from one:
     // pixel gives all eight builds of a phone the same title.
     const { esim, ...rest } = o;
-    return enrich(o.simFromPage ? o : rest);
+    // A previously unknown/quarantined finish needs merchant evidence, not a palette guess.
+    return enrich(o.simFromPage ? o : rest, {allowSoleColor: false});
   });
   // An offer we are not re-fetching keeps the date it already had. One that predates the field
   // gets the date of the file it came out of, which is when it was last confirmed present -
