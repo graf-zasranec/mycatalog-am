@@ -4,7 +4,24 @@ import {specOfferAllowed} from './allsell-specs.mjs';
 import { cpu, storageGB } from './spec-values.mjs';
 // The same source cache used by shop-specs.mjs. Configuration facts belong to
 // the offer whose page stated them, rather than every build of a model family.
+// Exact browser-verified axes fill omitted source metadata; they never change a
+// price/check date or overwrite an axis explicitly stated by the merchant.
+export function attachVerifiedOfferAxes(offers, verified) {
+  if (!verified) verified = fs.existsSync('data/config-specs.json') ? JSON.parse(fs.readFileSync('data/config-specs.json','utf8')) : {};
+  const key = value => { try { const url=new URL(value); url.hash=''; url.searchParams.sort(); return url.href; } catch { return null; } };
+  let count=0;
+  for (const [id, rows] of Object.entries(verified)) for (const fact of rows) {
+    if (!fact.offerAxes || !fact.url || !fact.shop || !/^\d{4}-\d{2}-\d{2}$/.test(fact.checked||'')) continue;
+    const target=key(fact.url); if(!target) continue;
+    for(const offer of offers[id]||[]) if(offer.shop===fact.shop && key(offer.url)===target) {
+      for(const axis of ['storage','ram']) if(offer[axis]==null && Number.isFinite(fact.offerAxes[axis]) && fact.offerAxes[axis]>0) { offer[axis]=fact.offerAxes[axis]; count++; }
+    }
+  }
+  return count;
+}
+
 export function attachOfferConfigs(products, offers) {
+  attachVerifiedOfferAxes(offers);
   // Fixed worldwide hardware takes precedence over a retailer's default SIM policy.
   for (const p of products) {
     const hardware = modelEsimOnly(p.id);

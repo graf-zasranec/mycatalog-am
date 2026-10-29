@@ -26,7 +26,7 @@ check('exact model only',()=>{assert.equal(modelEsimOnly('apple-iphone-duo'),tru
 for(const o of offers['apple-iphone-duo'])check('Duo scraper '+o.url,()=>assert.equal(o.esim,true));
 for(const id of ids.slice(1))check('other model precedence '+id,()=>assert.deepEqual(offers[id],baseline[id]));
 check('no altered price/url metadata',()=>{const without=o=>o.map(({esim,...row})=>row);assert.deepEqual(without(offers['apple-iphone-duo']),without(make()['apple-iphone-duo']));});
-let attachSource=read('tools/offer-configs.mjs').replace(/^import .*;\n/gm,'').replace('export function attachOfferConfigs','function attachOfferConfigs');
+let attachSource=read('tools/offer-configs.mjs').replace(/^import .*;\n/gm,'').replace(/export function /g,'function ');
 const attach=new Function('fs','specOfferAllowed','cpu','storageGB','modelEsimOnly',attachSource+'\nreturn attachOfferConfigs;')(fs,specOfferAllowed,cpu,storageGB,modelEsimOnly);
 const buildOffers=make(),before=structuredClone(buildOffers);attach(phones,buildOffers);
 for(const o of buildOffers['apple-iphone-duo'])check('Duo build '+o.url,()=>assert.equal(o.esim,true));

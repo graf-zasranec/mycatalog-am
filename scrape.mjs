@@ -2943,6 +2943,8 @@ if (seeded) console.log(`\n${seeded} hand-recorded listing(s) filled gaps the cr
 // capacity costs. If that price falls inside exactly ONE tier's band and outside every other,
 // the tier is not a guess - AllSell's 278 500 iPhone 15 sits inside the 128 GB band (262 000 to
 // 299 900) and nowhere near the 256 GB one, so it is a 128 GB. Ambiguous prices stay unstated.
+// Retain exact manually verified selection facts when a retailer omits an axis.
+{ const {attachVerifiedOfferAxes}=await import('./tools/offer-configs.mjs'); attachVerifiedOfferAxes(offers); }
 let placed = 0;
 for (const list of Object.values(offers)) {
   const band = new Map();
