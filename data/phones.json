@@ -139691,5 +139691,73 @@
         "priceAmd": 769000
       }
     ]
+  },
+  {
+    "id": "hp-envy-pc-7x9x5ea",
+    "category": "desktop",
+    "brand": "HP",
+    "name": "Envy Desktop PC 7X9X5EA",
+    "aliases": [
+      "HP Envy Desktop PC 7X9X5EA"
+    ],
+    "tier": "flagship",
+    "priceAmd": 875000,
+    "priceAmdMax": 875000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 875000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP Envy Desktop PC 7X9X5EA: Intel Core i7-13700, NVIDIA GeForce RTX 4070 Ti 12 GB, 16 GB RAM, 1 TB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13700"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4070 Ti 12 GB"
+    },
+    "sources": []
+  },
+  {
+    "id": "lenovo-loq-tower-17-irr9-90x0002mgh",
+    "category": "desktop",
+    "brand": "Lenovo",
+    "name": "LOQ Tower 17IRR9 90X0002MGH",
+    "aliases": [
+      "Desktop Lenovo LOQ Tower 17 IRR9 90X0002MGH"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 399000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo LOQ Tower 17IRR9 90X0002MGH: Intel Core i5-14400F, NVIDIA GeForce RTX 3050 6 GB, 32 GB RAM, 512 GB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i5-14400F"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 6 GB"
+    },
+    "sources": []
   }
 ]
