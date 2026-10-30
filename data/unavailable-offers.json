@@ -720,6 +720,20 @@
         }
       ],
       "verification": "Repeated exact English-product URL HTTP500, more than five minutes apart. The default, Russian and Armenian routes also return500. Transport unavailability only; original price and stock row retained; later successful source timestamp restores."
+    },
+    {
+      "index": 49,
+      "url": "https://allsell.am/en/hp-victus-15-fa2120nia-i7-240h-16gb-i-512gb-d15fcea-bh5",
+      "documentTitle": "404 Not Found",
+      "primaryText": "404\nSomething went wrong\nThe page you are looking for may be removed if its name has changed or it is temporarily unavailable\nGo Home page",
+      "productFound": false,
+      "primaryBuyBoxFound": false,
+      "searchSKU": "D15FCEA",
+      "searchResult": "Your search returned no results.",
+      "shop": "allsell",
+      "reason": "browser_page_not_found",
+      "checked": "2026-10-30",
+      "checkedAt": "2026-10-30T10:00:27.585Z"
     }
   ]
 }

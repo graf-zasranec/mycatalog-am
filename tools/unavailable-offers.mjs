@@ -1,5 +1,17 @@
 // Dated evidence for unusable destinations or explicit primary-product sold-out stock.
 export function verifiedUnavailable(offer, evidence) {
+  if (evidence?.reason === 'browser_page_not_found') {
+    // Record the rendered result without inventing an HTTP status hidden by a challenge.
+    if (offer.shop !== 'allsell' || evidence.shop !== offer.shop || evidence.url !== offer.url
+        || !/^https:\/\/allsell\.am\/en\/[^/?]+$/.test(evidence.url)
+        || evidence.documentTitle !== '404 Not Found' || !/^404\s+Something went wrong\b/.test(evidence.primaryText || '')
+        || evidence.productFound !== false || evidence.primaryBuyBoxFound !== false
+        || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.checked || '')
+        || !Number.isFinite(Date.parse(evidence.checkedAt))) return false;
+    if (offer.seen && offer.seen > evidence.checked) return false;
+    if (offer.checkedAt && Date.parse(offer.checkedAt) > Date.parse(evidence.checkedAt)) return false;
+    return true;
+  }
   if (evidence?.reason === 'repeated_http_server_error') {
     // Transport failure is not a stock claim. Require repeated checks of this
     // exact destination; a later successful source read restores its quote.
