@@ -67632,7 +67632,7 @@
     "appliance": {
       "type": "air_purifier",
       "power": 40,
-      "noise": "32 dBA (sleep)"
+      "noise": "32 dBA"
     },
     "body": {
       "weight": 5200,
@@ -138607,7 +138607,8 @@
       "volumeByVariant": {
         "LBB459EMYW": 341,
         "LBB459EQYW": 344
-      }
+      },
+      "volume": 341
     },
     "battery": {},
     "summaryEn": "LG Refrigerator LBB459.",
@@ -139326,7 +139327,7 @@
       "gaming": true,
       "driver": "50 mm",
       "frequency": "20 Hz–20 kHz",
-      "impedance": "39 Ω passive"
+      "impedance": "39 Ω"
     },
     "connectivity": {},
     "body": {
@@ -139385,7 +139386,7 @@
       "weight": 122
     },
     "battery": {
-      "life": "Up to 20 hours listening; up to 16 hours talk time"
+      "life": "20 h"
     }
   },
   {
@@ -139436,7 +139437,7 @@
       "weight": 185
     },
     "battery": {
-      "life": "Up to 20 hours listening; up to 18 hours talk time"
+      "life": "20 h"
     }
   },
   {
@@ -139477,7 +139478,7 @@
       "gaming": true,
       "driver": "40 mm PRO-G",
       "frequency": "20 Hz–20 kHz",
-      "impedance": "39 Ω passive"
+      "impedance": "39 Ω"
     },
     "connectivity": {
       "wireless": "LIGHTSPEED, up to 20 m"
@@ -139486,7 +139487,7 @@
       "weight": 278
     },
     "battery": {
-      "life": "Up to 29 hours without lighting; up to 20 hours with default lighting"
+      "life": "29 h"
     },
     "specNA": {
       "connectivity.bluetooth": "No Bluetooth; 2.4 GHz LIGHTSPEED USB receiver. Exact-model manufacturer/retailer specification."
