@@ -104,3 +104,8 @@ const pad='honor-pad-x8b-ndl2-w09';
 assert.equal(specOfferAllowed({title:'Honor Pad X8b NDL2-L09 6GB/256GB',url:'https://eldorado.am/en/honor-pad-x8b-ndl2-w09'},[],pad),false,'L09 evidence cannot enter fixed W09 hardware through an old URL');
 assert.equal(specOfferAllowed({title:'Honor Pad X8b NDL2-W09 4GB/128GB'},[],pad),true);
 console.log('PAD_X8B_IDENTITY_PASS: conflicting L09 and W09 hardware kept separate');
+
+const telecomRedmi='https://www.telecomarmenia.am/eshop/hy/smartphones/xiaomi-redmi-note-17-8-256gb-black/2945/';
+assert.equal(matchPhone('Xiaomi Redmi Note 17 '+telecomRedmi),'xiaomi-redmi-note-17-4g','primary Snapdragon 6s 4G/LTE source must remain under the 4G model');
+assert.equal(matchPhone('Xiaomi Redmi Note 17 5G'),'xiaomi-redmi-note-17-5g','unrelated explicit 5G model stays separate');
+console.log('TELECOM_REDMI_LINK_PASS');

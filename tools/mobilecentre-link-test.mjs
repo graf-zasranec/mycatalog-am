@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const source=fs.readFileSync('scrape.mjs','utf8');
+const start=source.indexOf('  mobilecentre: {');
+const adapter=source.slice(start,source.indexOf('\n  pixel: {',start));
+const safeUrl=new Function(source.slice(source.indexOf('function safeUrl('),source.indexOf('// A double quote',source.indexOf('function safeUrl(')))+';return safeUrl;')();
+const black='https://mobilecentre.am/product/realme-c75-8gb_256gb-_black_/31558/';
+const gold='https://mobilecentre.am/product/realme-c75-8gb_256gb-_gold_/31559/';
+const rawBlack=black.replace('/31558/','\r\n/31558/');
+const rawGold=gold.replace('/31559/','\t/31559/');
+const requested=[];
+const get=async url=>{
+ requested.push(url);
+ assert.ok(!/[\r\n\t]/.test(url),'adapter must request the normalized destination');
+ if(url.includes('/category/'))return url.includes('/phones/')?`<div class="listitem"><a href="${rawBlack}"><h3>Realme C75</h3></a></div>`:'';
+ assert.ok([black,gold].includes(url),'no invented destination');
+ return `<meta property="og:title" content="Mobile Centre. - Realme C75 8GB/256GB (${url===black?'Black':'Gold'})"><a href="${rawBlack}">black</a><a href="${rawGold}">gold</a>`;
+};
+const run=new Function('get','sleep','DELAY_MS','clean','mcCash','safeUrl','matchPhone','storageOf','mcRam','simBuild','return ({'+adapter+'}).mobilecentre.run();');
+const offers=await run(get,async()=>{},0,s=>s.replace(/<[^>]+>/g,''),()=>79900,safeUrl,()=>'realme-c75',()=>256,()=>8,()=>undefined);
+assert.deepEqual(offers.map(o=>o.url).sort(),[black,gold].sort());
+for(const url of [black,gold])assert.equal(requested.filter(u=>u===url).length,1,'normalized sibling is deduplicated');
+console.log('MOBILECENTRE_LINK_PASS: normalized listing and sibling destinations requested and saved once');

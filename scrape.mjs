@@ -1752,7 +1752,7 @@ const SHOPS = {
         const blocks = html.split('class="listitem"').slice(1);
         if (!blocks.length) continue;
         for (const b of blocks) {
-          const url = (b.match(/href="(https:\/\/mobilecentre\.am\/product\/[^"]+)"/) || [])[1];
+          const url = safeUrl((b.match(/href="(https:\/\/mobilecentre\.am\/product\/[^"]+)"/) || [])[1]);
           const title = clean((b.match(/<h3[^>]*>([\s\S]{2,120}?)<\/h3>/) || [])[1] || '');
           // Two numbers again. data-price belongs to the credit calculator and is the
           // instalment total - the listing labels it "Ապառիկ գին". The price a buyer pays is
@@ -1784,7 +1784,7 @@ const SHOPS = {
           const title = og ? (og.includes(SEP) ? og.slice(og.indexOf(SEP) + SEP.length) : og) : h.title;
           const img = page && (page.match(/property="og:image" content="([^"]+)"/) || [])[1];
           for (const m of (page || '').matchAll(/href="(https:\/\/mobilecentre\.am\/product\/[^"]*?\/\d+\/)"/g)) {
-            const u2 = m[1];
+            const u2 = safeUrl(m[1]);
             if (seenU.has(u2) || !safeUrl(u2)) continue;
             // a sibling build of THIS product, not one of the shop's recommendations
             const id2 = matchPhone(u2);
