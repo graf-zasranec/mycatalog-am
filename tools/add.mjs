@@ -80,6 +80,7 @@ function tvSpec(model) {
 // want of this table. Every entry here is a real product line, not a guess about one.
 const FAMILY = [
   [/\bMacBook\b|\bThinkPad\b|\bIdeaPad\b|\bVivobook\b|\bZenbook\b|\bExpertBook\b|\bOmniBook\b|\bProBook\b|\bEliteBook\b|\bPavilion\b|\bEnvy\b|\bVictus\b|\bOmen\b|\bInspiron\b|\bLatitude\b|\bVostro\b|\bXPS\b|\bAspire\b|\bNitro\b|\bPredator\b|\bSwift\b|\bTravelMate\b|\bMagicBook\b|\bMateBook\b|\bGalaxy Book\b|\bSurface Laptop\b|\bLegion\b|\bLOQ\b|\bYoga\b|\bROG\b|\bTUF\b|\bKatana\b|\bModern\b|\bCyborg\b|\bRedmiBook\b/i, 'laptop'],
+  [/\bWacom\b|\bIntuos\b|\bCintiq\b|\bGraphics? Tablet\b|\bPen Tablet\b/i, 'graphicstablet'],
   [/\biPad\b|\bGalaxy Tab\b|\bHonor Pad\b|\bMatePad\b|\bRedmi Pad\b|\bMi Pad\b|\bLenovo Tab\b|\bSurface Pro\b/i, 'tablet'],
   [/\biMac\b|\bMac mini\b|\bMac Studio\b|\bMac Pro\b|\bAll[- ]?in[- ]?One\b/i, 'desktop'],
   [/\bStudio Display\b|\bPro Display\b|\bOdyssey\b|\bUltraGear\b|\bUltraFine\b|\bProArt\b|\bZOWIE\b|\bNitro (XV|VG|KG|EI)\b/i, 'monitor'],
@@ -93,7 +94,9 @@ const FAMILY = [
   [/\bVacuum\b/i, 'vacuum'],
   [/\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir Fryer\b/i, 'kitchen'],
   [/\bEspresso Machine\b|\bCoffee Machine\b/i, 'coffee'],
-  [/\bAir ?Purifier\b|\bGarment Steamer\b|\bSmart Scale\b/i, 'appliance'],
+  [/\bAir ?Purifier\b/i, 'purifier'],
+  [/\bAir Conditioner\b|\bWater Heater\b|\bHeater\b|\bBoiler\b|\bDehumidifier\b|\bHumidifier\b/i, 'climate'],
+  [/\bGarment Steamer\b|\bSmart Scale\b/i, 'appliance'],
   [/\bRouter\b|\bHotspot\b|\bSR\d{4}-5G\b/i, 'network'],
   [/\bGeForce\b|\bRadeon RX\b|\bRTX \d{4}\b|\bArc A\d{3}\b/i, 'component'],
   // a phone family is the last thing asked, because "Redmi" and "Galaxy" also name tablets,

@@ -26,3 +26,4 @@ After changing files under `tools/`, run `graphify update tools`, copy `tools/gr
 - The user approved seven more on 2026-10-25: BaByliss, Ariete, Kenwood, Boneco, Levoit, Shark and iRobot.
 - And for large appliances on 2026-10-25: Hitachi, Carrier, Mitsubishi Electric and Zanussi.
 - Mitsubishi Heavy Industries air conditioners approved on 2026-10-26 ("find clean 2").
+- The owner approved on 2026-10-30: Gorenje (this lifts the earlier exclusion), Wacom, Gree, Ariston, Mova and Fujifilm (Instax instant cameras), plus three new sections: Air purifiers (`purifier`), Climate (`climate`: air conditioners, heaters, water heaters, humidifiers) and Graphics tablets (`graphicstablet`). Huion and XP-Pen are not approved.
