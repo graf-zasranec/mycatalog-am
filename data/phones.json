@@ -80926,7 +80926,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "water": "600 mL"
+      "water": "600 mL",
+      "power": 1400
     },
     "summaryEn": "Xiaomi Mijia Capsule Coffee Machine.",
     "sources": [
@@ -80961,7 +80962,8 @@
     "appliance": {
       "type": "air_fryer",
       "volume": 7,
-      "control": "app"
+      "control": "app",
+      "power": 1850
     },
     "summaryEn": "Xiaomi Mijia Smart Steam Air Fryer 7L.",
     "sources": [
@@ -81198,7 +81200,8 @@
     "appliance": {
       "type": "air_purifier",
       "area": "≤108 m²",
-      "control": "app"
+      "control": "app",
+      "power": 70
     },
     "summaryEn": "Xiaomi Mijia Smart Air Purifier Max.",
     "sources": [
