@@ -3299,8 +3299,9 @@ for (const id of Object.keys(offers)) {
   noPriceCount += before - offers[id].length;
 }
 if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed: shop reports unavailable or 0 AMD`);
-// Do not carry prices whose exact product URLs were verified as homepage redirects.
-// A timeout or blocked request is not proof that a product is gone.
+// Do not carry prices whose exact product destinations were verified unavailable.
+// A timeout or blocked request is not proof that a product is gone. Repeated
+// server-error evidence is transport unavailability, never a stock assertion.
 try {
   const {verifiedUnavailable} = await import('./tools/unavailable-offers.mjs');
   const rows = JSON.parse(fs.readFileSync('data/unavailable-offers.json', 'utf8')).rows || [];
@@ -3315,7 +3316,7 @@ try {
     offers[id] = offers[id].filter(o => !(evidence.get(o.url) || []).some(row => verifiedUnavailable(o, row)));
     removed += before - offers[id].length;
   }
-  if (removed) console.log(`${removed} older offer(s) removed: verified homepage redirects`);
+  if (removed) console.log(`${removed} older offer(s) removed: verified unavailable destinations`);
 } catch (e) { if (e.code !== 'ENOENT') throw e; }
 // A current exact Eldorado page wins over its older hand row, including when a sale
 // expires or the fixed SKU changes RAM. Category cards cannot suppress product evidence.

@@ -699,6 +699,27 @@
       "productFound": false,
       "primaryBuyBoxFound": false,
       "verification": "Current exact HTTP200capture has generic Product title. Brave rendered page after hydration has empty main heading, placeholder image, no product title,price or buy box."
+    },
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/33286",
+      "status": 500,
+      "reason": "repeated_http_server_error",
+      "checked": "2026-10-30",
+      "checkedAt": "2026-10-29T23:53:57.991000+00:00",
+      "attempts": [
+        {
+          "url": "https://vlv.am/en/Product/33286",
+          "status": 500,
+          "checkedAt": "2026-10-29T23:37:56.164604+00:00"
+        },
+        {
+          "url": "https://vlv.am/en/Product/33286",
+          "status": 500,
+          "checkedAt": "2026-10-29T23:53:57.991000+00:00"
+        }
+      ],
+      "verification": "Repeated exact English-product URL HTTP500, more than five minutes apart. The default, Russian and Armenian routes also return500. Transport unavailability only; original price and stock row retained; later successful source timestamp restores."
     }
   ]
 }

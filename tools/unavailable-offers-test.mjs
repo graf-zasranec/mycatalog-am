@@ -25,3 +25,12 @@ for(const patch of [{storage:512},{ram:12},{color:'White'},{esim:false},{ram:und
 assert.equal(verifiedUnavailable(variant,{...sold,scope:{}}),false,'variant evidence must specify a scope');
 assert.equal(verifiedUnavailable(variant,{...sold,stock:undefined}),false,'unknown stock cannot hide a configuration');
 console.log('EXACT_VARIANT_STOCK_PASS');
+// A verified repeatedly failing destination is hidden without inventing stock status.
+const brokenURL='https://vlv.am/en/Product/33286';
+const repeated={url:brokenURL,shop:'vlv',status:500,reason:'repeated_http_server_error',checked:'2026-10-30',checkedAt:'2026-10-30T07:20:00Z',attempts:[{url:brokenURL,status:500,checkedAt:'2026-10-30T07:00:00Z'},{url:brokenURL,status:500,checkedAt:'2026-10-30T07:20:00Z'}]};
+const oldQuote={url:brokenURL,shop:'vlv',seen:'2026-10-29',inStock:true};
+assert.equal(verifiedUnavailable(oldQuote,repeated),true,'repeatedly failing exact destination cannot remain an active purchase link');
+for(const patch of [{url:brokenURL+'0'},{shop:'other'},{seen:'2026-10-31'},{checkedAt:'2026-10-30T07:21:00Z'}])assert.equal(verifiedUnavailable({...oldQuote,...patch},repeated),false,'wrong target or later successful check survives');
+for(const patch of [{status:403},{status:429},{status:404},{checkedAt:'invalid'},{checked:'invalid'},{attempts:repeated.attempts.slice(0,1)},{attempts:[repeated.attempts[0],{...repeated.attempts[1],status:200}]},{attempts:[repeated.attempts[0],{...repeated.attempts[1],url:brokenURL+'0'}]},{attempts:[repeated.attempts[0],{...repeated.attempts[1],checkedAt:'2026-10-30T07:00:10Z'}]}])assert.equal(verifiedUnavailable(oldQuote,{...repeated,...patch}),false,'insufficient or invalid failure evidence cannot hide a quote');
+assert.equal(oldQuote.inStock,true,'transport failure does not change recorded stock');
+console.log('REPEATED_SERVER_LINK_PASS: exact target, multiple failures, recovery and stock preserved');

@@ -1,5 +1,24 @@
-// Dated evidence for exact redirects or explicit primary-product sold-out stock.
+// Dated evidence for unusable destinations or explicit primary-product sold-out stock.
 export function verifiedUnavailable(offer, evidence) {
+  if (evidence?.reason === 'repeated_http_server_error') {
+    // Transport failure is not a stock claim. Require repeated checks of this
+    // exact destination; a later successful source read restores its quote.
+    const serverErrors = [500, 502, 503, 504];
+    const checkedAt = Date.parse(evidence.checkedAt);
+    const attempts = evidence.attempts;
+    if (offer.shop !== 'vlv' || evidence.shop !== offer.shop || evidence.url !== offer.url
+        || !serverErrors.includes(evidence.status) || !Number.isFinite(checkedAt)
+        || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.checked || '')
+        || !Array.isArray(attempts) || attempts.length < 2) return false;
+    if (attempts.some(a => a.url !== offer.url || !serverErrors.includes(a.status)
+        || !Number.isFinite(Date.parse(a.checkedAt)))) return false;
+    const times = attempts.map(a => Date.parse(a.checkedAt));
+    if (Math.max(...times) !== checkedAt || Math.max(...times) - Math.min(...times) < 300000) return false;
+    if (offer.seen && offer.seen > evidence.checked) return false;
+    if (offer.checkedAt && Date.parse(offer.checkedAt) > checkedAt) return false;
+    return true;
+  }
+
   if (evidence?.reason === 'exact_variant_sold_out') {
     if (evidence.url !== offer.url || evidence.shop !== offer.shop || evidence.status !== 200
         || evidence.stock !== false || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.checked || '')
