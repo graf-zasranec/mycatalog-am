@@ -11,7 +11,7 @@ import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
 const UA = 'BetterBot/1.0 (+https://better.am)';
-const src = fs.readFileSync('scrape.mjs', 'utf8');
+const src = fs.readFileSync('scrape.mjs', 'utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const body = src.slice(0, src.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]');
 const { matchPhone, looksLikeAccessory } = await import('data:text/javascript;base64,' +
   Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory };\n', 'utf8').toString('base64'));

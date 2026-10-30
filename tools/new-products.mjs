@@ -12,8 +12,12 @@ import { execFileSync } from 'node:child_process';
 const UA = 'BetterBot/1.0 (+https://better.am)';
 const src = fs.readFileSync('scrape.mjs', 'utf8');
 const body = src.slice(0, src.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]');
-const { matchPhone, looksLikeAccessory } = await import('data:text/javascript;base64,' +
-  Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory };\n', 'utf8').toString('base64'));
+// Written beside scrape.mjs, not imported as a data: URL: scrape.mjs now imports ./tools/*.mjs
+// by relative path, which a data: URL has no base to resolve against.
+const tmp = `.new-products-${process.pid}.mjs`;
+fs.writeFileSync(tmp, body + '\nexport { matchPhone, looksLikeAccessory };\n');
+let matchPhone, looksLikeAccessory;
+try { ({ matchPhone, looksLikeAccessory } = await import('../' + tmp)); } finally { fs.rmSync(tmp, { force: true }); }
 
 const P = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const KINDS = new Set(['phone', 'laptop', 'watch', 'headphones']);

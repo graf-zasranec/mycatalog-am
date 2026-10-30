@@ -9,7 +9,7 @@
 // It writes nothing. Deciding what to add is a judgement, and the file is evidence for it.
 import fs from 'node:fs';
 
-const src = fs.readFileSync('scrape.mjs', 'utf8');
+const src = fs.readFileSync('scrape.mjs', 'utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 // the scraper ends by crawling; everything above the shop loop is the matcher and its tables
 const cut = src.indexOf('const report = [];');
 // That slice still carries the scraper's own argument parsing, which would read OUR arguments as

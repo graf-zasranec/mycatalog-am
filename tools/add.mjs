@@ -12,7 +12,7 @@
 // filled in. What is refused is printed, so the refusals can be read rather than trusted.
 import fs from 'node:fs';
 
-const src = fs.readFileSync('scrape.mjs', 'utf8');
+const src = fs.readFileSync('scrape.mjs', 'utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const body = src.slice(0, src.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]');
 const { matchPhone, looksLikeAccessory, COLOR_WORDS, ramOf } = await import('data:text/javascript;base64,' +
   Buffer.from(body + '\nexport { matchPhone, looksLikeAccessory, COLOR_WORDS, ramOf };\n', 'utf8').toString('base64'));

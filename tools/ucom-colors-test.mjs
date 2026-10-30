@@ -1,7 +1,7 @@
 process.on('uncaughtException',e=>{console.error(e.message);process.exit(1);});
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-const source=fs.readFileSync('scrape.mjs','utf8');
+const source=fs.readFileSync('scrape.mjs','utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const prefix=source.slice(0,source.indexOf('const report = [];')).replace('process.argv.slice(2)','[]').replace(/from ['\"](\.\/tools\/[^'\"]+)['\"]/g,(_,file)=>"from '"+new URL('../'+file,import.meta.url).href+"'");
 const harness=`
 import {magentoCartState} from "${new URL('./cache-availability.mjs',import.meta.url).href}";

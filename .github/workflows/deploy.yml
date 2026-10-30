@@ -6,7 +6,7 @@ name: Better — refresh prices
 on:
   schedule:
     - cron: '0 20 * * *'     # 00:00 Yerevan (UTC+4) - main run, done ~03:30: fresh prices and stock by morning
-    - cron: '0 10 * * *'     # 14:00 Yerevan - catches daytime price changes
+    - cron: '0 7 * * *'      # 11:00 Yerevan (owner, 2026-10-30) - catches morning price changes
   workflow_dispatch:
     inputs:
       scope:

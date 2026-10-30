@@ -67610,7 +67610,7 @@
     "appliance": {
       "type": "air_purifier",
       "power": 40,
-      "noise": "32 dBA (sleep)"
+      "noise": "32 dBA"
     },
     "body": {
       "weight": 5200,
@@ -67679,7 +67679,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 5200
+      "capacity": 5200,
+      "life": "140 min"
     },
     "summaryEn": "Xiaomi Vacuum 5 Pro.",
     "unsure": [
@@ -70261,7 +70262,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 5200
+      "capacity": 5200,
+      "life": "180 min"
     },
     "summaryEn": "Xiaomi Vacuum H40 BHR07XBEU.",
     "unsure": [
@@ -80902,7 +80904,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "water": "600 mL"
+      "water": "600 mL",
+      "power": 1400
     },
     "summaryEn": "Xiaomi Mijia Capsule Coffee Machine.",
     "sources": [
@@ -80937,7 +80940,8 @@
     "appliance": {
       "type": "air_fryer",
       "volume": 7,
-      "control": "app"
+      "control": "app",
+      "power": 1850
     },
     "summaryEn": "Xiaomi Mijia Smart Steam Air Fryer 7L.",
     "sources": [
@@ -81174,7 +81178,8 @@
     "appliance": {
       "type": "air_purifier",
       "area": "≤108 m²",
-      "control": "app"
+      "control": "app",
+      "power": 70
     },
     "summaryEn": "Xiaomi Mijia Smart Air Purifier Max.",
     "sources": [
@@ -138583,7 +138588,8 @@
       "volumeByVariant": {
         "LBB459EMYW": 341,
         "LBB459EQYW": 344
-      }
+      },
+      "volume": 341
     },
     "battery": {},
     "summaryEn": "LG Refrigerator LBB459.",
@@ -139302,7 +139308,7 @@
       "gaming": true,
       "driver": "50 mm",
       "frequency": "20 Hz–20 kHz",
-      "impedance": "39 Ω passive"
+      "impedance": "39 Ω"
     },
     "connectivity": {},
     "body": {
@@ -139361,7 +139367,7 @@
       "weight": 122
     },
     "battery": {
-      "life": "Up to 20 hours listening; up to 16 hours talk time"
+      "life": "20 h"
     }
   },
   {
@@ -139412,7 +139418,7 @@
       "weight": 185
     },
     "battery": {
-      "life": "Up to 20 hours listening; up to 18 hours talk time"
+      "life": "20 h"
     }
   },
   {
@@ -139453,7 +139459,7 @@
       "gaming": true,
       "driver": "40 mm PRO-G",
       "frequency": "20 Hz–20 kHz",
-      "impedance": "39 Ω passive"
+      "impedance": "39 Ω"
     },
     "connectivity": {
       "wireless": "LIGHTSPEED, up to 20 m"
@@ -139462,7 +139468,7 @@
       "weight": 278
     },
     "battery": {
-      "life": "Up to 29 hours without lighting; up to 20 hours with default lighting"
+      "life": "29 h"
     },
     "specNA": {
       "connectivity.bluetooth": "No Bluetooth; 2.4 GHz LIGHTSPEED USB receiver. Exact-model manufacturer/retailer specification."
@@ -139590,5 +139596,149 @@
     "connectivity": {
       "wireless": "2.4 GHz USB nano receiver"
     }
+  },
+  {
+    "id": "mitsubishi-heavy-industries-srk50zsp-w",
+    "category": "largeappliance",
+    "brand": "Mitsubishi Heavy Industries",
+    "name": "Air Conditioner SRK50ZSP-W",
+    "aliases": [
+      "Mitsubishi Heavy Industries SRK50ZSP-W",
+      "MITSUBISHI HEAVY INDUSTRIES SRK50ZSP-W",
+      "SRK50ZSP-W",
+      "Mitsubishi SRC/SRK50ZSP-W",
+      "Mitsubishi Heavy SRK50ZSP-W",
+      "SRC50ZSP-W"
+    ],
+    "tier": "flagship",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000
+    },
+    "battery": {},
+    "summaryEn": "Mitsubishi Heavy Industries Air Conditioner SRK50ZSP-W.",
+    "sources": [
+      "https://eldorado.am/en/mitsubishi-src-srk50zsp-w-18000-btu"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 560000,
+    "priceAmdMax": 560000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 560000
+      }
+    ]
+  },
+  {
+    "id": "mitsubishi-heavy-industries-srk63zr-w",
+    "category": "largeappliance",
+    "brand": "Mitsubishi Heavy Industries",
+    "name": "Air Conditioner SRK63ZR-W",
+    "aliases": [
+      "Mitsubishi Heavy Industries SRK63ZR-W",
+      "MITSUBISHI HEAVY INDUSTRIES SRK63ZR-W",
+      "SRK63ZR-W",
+      "Mitsubishi SRC/SRK63ZR-W",
+      "Mitsubishi Heavy SRK63ZR-W",
+      "SRC63ZR-W"
+    ],
+    "tier": "flagship",
+    "popularity": 35,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 22000
+    },
+    "battery": {},
+    "summaryEn": "Mitsubishi Heavy Industries Air Conditioner SRK63ZR-W.",
+    "sources": [
+      "https://eldorado.am/en/mitsubishi-src-srk63zr-w-18000-btu"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 769000,
+    "priceAmdMax": 769000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 769000
+      }
+    ]
+  },
+  {
+    "id": "hp-envy-pc-7x9x5ea",
+    "category": "desktop",
+    "brand": "HP",
+    "name": "Envy Desktop PC 7X9X5EA",
+    "aliases": [
+      "HP Envy Desktop PC 7X9X5EA"
+    ],
+    "tier": "flagship",
+    "priceAmd": 875000,
+    "priceAmdMax": 875000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 875000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "HP Envy Desktop PC 7X9X5EA: Intel Core i7-13700, NVIDIA GeForce RTX 4070 Ti 12 GB, 16 GB RAM, 1 TB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i7-13700"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4070 Ti 12 GB"
+    },
+    "sources": []
+  },
+  {
+    "id": "lenovo-loq-tower-17-irr9-90x0002mgh",
+    "category": "desktop",
+    "brand": "Lenovo",
+    "name": "LOQ Tower 17IRR9 90X0002MGH",
+    "aliases": [
+      "Desktop Lenovo LOQ Tower 17 IRR9 90X0002MGH"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 399000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Lenovo LOQ Tower 17IRR9 90X0002MGH: Intel Core i5-14400F, NVIDIA GeForce RTX 3050 6 GB, 32 GB RAM, 512 GB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i5-14400F"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 6 GB"
+    },
+    "sources": []
   }
 ]
