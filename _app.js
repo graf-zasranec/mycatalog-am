@@ -925,10 +925,10 @@ const FILT = {
            vals: () => ['portable', 'party', 'smart', 'home'] },
   atype: { kind: 'set', arr: 'atypes', label: () => x('atypeF'), of: p => p.appliance?.type, fmt: v => t('appliance.' + v) },
   apower: { kind: 'min', nice: true, label: () => x('powerF'), of: p => p.appliance?.power || null, fmt: v => money(v) + ' ' + u('w') },
-  aload: { kind: 'min', label: () => x('loadF'), of: p => p.appliance?.load || null, fmt: v => v + ' ' + u('kg') },
-  abtu:  { kind: 'min', nice: true, label: () => x('btuF'), of: p => p.appliance?.btu || null, fmt: v => money(v) + ' BTU' },
-  asets: { kind: 'min', label: () => x('setsF'), of: p => p.appliance?.settings || null, fmt: v => v + ' ' + x('setsU') },
-  avol:  { kind: 'min', label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
+  aload: { kind: 'min', scope: p => ['washing_machine', 'dryer'].includes(p.appliance?.type), label: () => x('loadF'), of: p => p.appliance?.load || null, fmt: v => v + ' ' + u('kg') },
+  abtu:  { kind: 'min', nice: true, scope: p => p.appliance?.type === 'air_conditioner', label: () => x('btuF'), of: p => p.appliance?.btu || null, fmt: v => money(v) + ' BTU' },
+  asets: { kind: 'min', scope: p => p.appliance?.type === 'dishwasher', label: () => x('setsF'), of: p => p.appliance?.settings || null, fmt: v => v + ' ' + x('setsU') },
+  avol:  { kind: 'min', scope: p => p.category !== 'largeappliance' || ['fridge', 'freezer'].includes(p.appliance?.type), label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
   res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
            vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
   // Ninety-six televisions and thirty-eight monitors all differ on the one thing a buyer of
@@ -1489,7 +1489,9 @@ function covered(k, pool) {
   const f = FILT[k];
   if (k === 'brand' || k === 'shop' || k === 'hplug' || f.kind === 'flag' || f.kind === 'yn') return true;
   const has = v => v != null && v !== '' && !(typeof v === 'number' && !v);
-  const live = pool.filter(hasReal);
+  // A filter that only one kind of item can answer (a washer's load, an air conditioner's BTU) is
+  // measured against that kind, not the whole section: fridges have no load to state.
+  const live = pool.filter(hasReal).filter(p => !f.scope || f.scope(p));
   // Two in five, not half (2026-10-24): 45% of laptops state a refresh rate and 45% of vacuums a
   // wattage - the gaming laptops and the corded vacuums, exactly the buyers who ask.
   return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 5 >= live.length * 2;
