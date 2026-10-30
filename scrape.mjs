@@ -311,14 +311,21 @@ function airpodsMaxId(text) {
   if(!/\bairpods max\b/.test(h))return undefined;
   if(looksLikeAccessory(raw))return null;
   const gen2=/\bairpods max 2\b|\b2026\b/.test(h);
-  const legacy=/\blightning\b|\ba2096\b|\b2020\b|\bpink\b|\bgreen\b|\bsky blue\b/.test(h);
-  const usb=/\btype c\b|\busb c\b|\b2024\b/.test(h);
-  if(legacy||(gen2&&/\b2024\b/.test(h)))return null;
+  const legacy=/\blightning\b|\ba2096\b|\b2020\b|\bpink\b|\bgreen\b|\bsky blue\b|\bsilver\b|\bspace gr[ae]y\b|\bmgy[a-z]\d\b/.test(h);
+  const usb=/\btype c\b|\busb c\b|\b2024\b|\ba3184\b/.test(h);
+  // The 2020 Lightning model is a product of its own (owner, 2026-10-30): iBolit and Eldorado still
+  // sell it. A title mixing a Lightning-era sign with a newer port or generation stays unread.
+  if((legacy&&(gen2||usb))||(gen2&&/\b2024\b/.test(h)))return null;
+  if(legacy)return 'apple-airpods-max-lightning-2020';
   if(gen2)return 'apple-airpods-max-2';
   if(usb)return 'apple-airpods-max-usb-c-2024';
   return null; // Port/generation is required; bare Max spans incompatible versions.
 }
 function matchPhone(text, meta) {
+  // The pin first, as the comment below says, ahead of the AirPods Max reading too: iBolit's
+  // "Apple AirPods Max  Red" is the Pink 2020 model and only data/links.csv can say so.
+  const pinned = pinnedId(text);
+  if (pinned !== undefined) return pinned === '-' ? null : pinned;
   const maxId=airpodsMaxId(text);
   if(maxId!==undefined)return maxId&&phoneById[maxId]?maxId:null;
   // A human reading data/links.csv and correcting the id column has settled this page for good.
@@ -908,7 +915,9 @@ if (process.argv[2] === '--selftest') {
     ['apple-airpods-max-2','Apple AirPods Max 2 Type-C Midnight'],
     ['apple-airpods-max-usb-c-2024','Apple AirPods Max (2024) Midnight'],
     ['apple-airpods-max-usb-c-2024','https://shop.test/airpods-max-type-c-midnight'],
-    [null,'Apple AirPods Max Lightning Pink'],
+    ['apple-airpods-max-lightning-2020','Apple AirPods Max Lightning Pink'],
+    ['apple-airpods-max-lightning-2020','AirPods Max Wireless headphones Green Model A2096'],
+    ['apple-airpods-max-lightning-2020','Apple AirPods Max  Sky Blue'],
     [null,'AirPods Max 2 Type-C Pink'],
     [null,'Apple AirPods Max'],
     [null,'Case for AirPods Max 2'],

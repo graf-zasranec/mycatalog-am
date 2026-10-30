@@ -98,7 +98,8 @@ CATEGORIES = [
 def get(url):
     try:
         from scrapling.fetchers import Fetcher
-        p = Fetcher.get(url, impersonate='chrome', timeout=40)
+        from shop_access import headers_for   # tools/ is on sys.path: this script lives there
+        p = Fetcher.get(url, impersonate='chrome', timeout=40, headers=headers_for(url))
         return p.html_content if p.status == 200 else ''
     except Exception as e:
         print(f'  ! {url}: {e}', file=sys.stderr)

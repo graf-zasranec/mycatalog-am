@@ -86215,7 +86215,10 @@
     "brand": "Apple",
     "name": "AirPods Max (Lightning, 2020)",
     "aliases": [
-      "Apple AirPods Max"
+      "Apple AirPods Max",
+      "AirPods Max Lightning",
+      "AirPods Max A2096",
+      "AirPods Max 2020"
     ],
     "tier": "mid",
     "released": "2020-12",
@@ -139748,5 +139751,139 @@
       "name": "NVIDIA GeForce RTX 3050 6 GB"
     },
     "sources": []
+  },
+  {
+    "id": "samsung-galaxy-a16-4g",
+    "category": "phone",
+    "brand": "Samsung",
+    "name": "Galaxy A16 4G",
+    "aliases": [
+      "Samsung A165",
+      "Galaxy A165",
+      "SM-A165F",
+      "Galaxy A16 LTE",
+      "Samsung Galaxy A16 4G"
+    ],
+    "tier": "budget",
+    "popularity": 45,
+    "accent": "#33404f",
+    "released": "2024-10",
+    "priceAmd": 84900,
+    "priceAmdMax": 84900,
+    "display": {
+      "size": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "1080x2340",
+      "refresh": 90
+    },
+    "chipset": {
+      "name": "MediaTek Helio G99"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 84900
+      }
+    ],
+    "camera": {
+      "main": "50 MP, f/1.8",
+      "ultrawide": "5 MP, f/2.2",
+      "front": "13 MP, f/2.0",
+      "modules": 3
+    },
+    "battery": {
+      "capacity": 5000,
+      "wired": 25,
+      "wireless": 0
+    },
+    "body": {
+      "height": 164.4,
+      "width": 77.9,
+      "thickness": 7.9,
+      "weight": 200,
+      "ip": "IP54"
+    },
+    "connectivity": {
+      "network": "4G",
+      "bluetooth": "5.3",
+      "sim": "Dual Nano-SIM"
+    },
+    "cardSlot": true,
+    "os": "Android 14, One UI 6.1",
+    "updates": "6 Android version updates, 6 years of security patches",
+    "colors": [
+      "Gray"
+    ],
+    "summaryEn": "The 4G Galaxy A16 (SM-A165): the same 6.7-inch 90 Hz AMOLED body as the 5G model, with a MediaTek Helio G99.",
+    "sources": [
+      "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a165-256gb-grey/2078/"
+    ],
+    "unsure": [
+      "popularity",
+      "camera"
+    ]
+  },
+  {
+    "id": "asus-rog-strix-gs-ax5400",
+    "category": "network",
+    "brand": "ASUS",
+    "name": "ROG Strix GS-AX5400",
+    "aliases": [
+      "Asus ROG Strix GS-AX5400",
+      "GS-AX5400"
+    ],
+    "tier": "upper-mid",
+    "popularity": 30,
+    "accent": "#3C4652",
+    "priceAmd": 115000,
+    "priceAmdMax": 115000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 115000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 6 (AX5400), dual-band"
+    },
+    "summaryEn": "ASUS ROG Strix gaming router: dual-band Wi-Fi 6 up to 5400 Mbps, four antennas.",
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "asus-rog-strix-gs-ax3000",
+    "category": "network",
+    "brand": "ASUS",
+    "name": "ROG Strix GS-AX3000",
+    "aliases": [
+      "Asus ROG Strix GS-AX3000",
+      "GS-AX3000"
+    ],
+    "tier": "mid",
+    "popularity": 30,
+    "accent": "#3C4652",
+    "priceAmd": 79000,
+    "priceAmdMax": 79000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 79000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 6 (AX3000), dual-band"
+    },
+    "summaryEn": "ASUS ROG Strix gaming router: dual-band Wi-Fi 6 up to 3000 Mbps, four antennas.",
+    "unsure": [
+      "popularity"
+    ]
   }
 ]
