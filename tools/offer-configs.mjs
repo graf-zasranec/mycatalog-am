@@ -14,6 +14,9 @@ export function attachVerifiedOfferAxes(offers, verified) {
     if (!fact.offerAxes || !fact.url || !fact.shop || !/^\d{4}-\d{2}-\d{2}$/.test(fact.checked||'')) continue;
     const target=key(fact.url); if(!target) continue;
     for(const offer of offers[id]||[]) if(offer.shop===fact.shop && key(offer.url)===target) {
+      // Shared product pages can sell different RAM at each storage capacity.
+      if (fact.matchAxes && !Object.entries(fact.matchAxes).every(([axis,value]) =>
+        ['storage','ram','size'].includes(axis) && Number.isFinite(value) && value>0 && offer[axis]===value)) continue;
       for(const axis of ['storage','ram']) if(offer[axis]==null && Number.isFinite(fact.offerAxes[axis]) && fact.offerAxes[axis]>0) { offer[axis]=fact.offerAxes[axis]; count++; }
     }
   }
