@@ -2,7 +2,7 @@
 // unambiguous RAM contradictions and adds configurations backed by those offers.
 // No network and no speculative RAM inferred from relative prices.
 import fs from 'node:fs';
-const src = fs.readFileSync('scrape.mjs', 'utf8');
+const src = fs.readFileSync('scrape.mjs', 'utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const marker = src.indexOf('const report = [];');
 if (marker < 0) throw new Error('Scraper parser marker missing');
 const { ramOf, capacitiesOf } = await import('data:text/javascript;base64,' + Buffer.from(

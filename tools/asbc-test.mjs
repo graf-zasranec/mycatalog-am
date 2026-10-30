@@ -26,7 +26,7 @@ const nuxt=[['ShallowReactive',1],{data:2},['ShallowReactive',3],{'category-ipho
 const parsed=readAsbc(`<script id="__NUXT_DATA__" type="application/json">${JSON.stringify(nuxt)}</script>`);
 assert.equal(parsed.products[0].name,'iPhone 16'); assert.equal(parsed.total,1);
 assert.throws(()=>readAsbc('<html>unavailable</html>'),/ASBC/);
-const scraper=fs.readFileSync('scrape.mjs','utf8');
+const scraper=fs.readFileSync('scrape.mjs','utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const body=scraper.slice(0,scraper.indexOf('const report = [];')).replace('process.argv.slice(2)','[]').replace(/from ['\"](\.\/tools\/[^'\"]+)['\"]/g,(_,file)=>"from '"+new URL('../'+file,import.meta.url).href+"'");
 const {matchPhone}=await import('data:text/javascript;base64,'+Buffer.from(body+'\nexport {matchPhone};').toString('base64'));
 assert.equal(matchPhone(asbcMatchName({...base,name:'AirPods 5 with Wireless Charging Case, Model A3439'})),'apple-airpods-5-wireless-charging-case');

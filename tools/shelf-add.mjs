@@ -10,7 +10,7 @@ import fs from 'node:fs';
 
 // The crawler's own matcher, so a machine the catalogue already carries under a different
 // spelling is recognised rather than added twice.
-const scr = fs.readFileSync('scrape.mjs', 'utf8');
+const scr = fs.readFileSync('scrape.mjs', 'utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const mod = 'data:text/javascript;base64,' + Buffer.from(
   scr.slice(0, scr.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]') +
   '\nexport { matchPhone };\n', 'utf8').toString('base64');

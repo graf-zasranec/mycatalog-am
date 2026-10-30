@@ -12,7 +12,7 @@ import {modelEsimOnly} from './sim-hardware.mjs';
 
 // the crawler's own matcher, so "what would this title match on its own?" is asked with exactly
 // the code that assigned the id in the first place
-const src = fs.readFileSync('scrape.mjs', 'utf8');
+const src = fs.readFileSync('scrape.mjs', 'utf8').replaceAll("from './tools/", "from '" + new URL('./', import.meta.url).href); // a data: module has no base for scrape.mjs's relative imports
 const body = src.slice(0, src.indexOf('const report = [];')).replace('process.argv.slice(2)', '[]');
 const { matchPhone, colorOf } = await import('data:text/javascript;base64,' +
   Buffer.from(body + '\nexport { matchPhone, colorOf };\n', 'utf8').toString('base64'));
