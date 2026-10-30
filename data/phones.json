@@ -15195,7 +15195,8 @@
       "Airwrap Co-anda2x HS09"
     ],
     "appliance": {
-      "type": "hair_styler"
+      "type": "hair_styler",
+      "power": 1700
     }
   },
   {
@@ -87955,7 +87956,9 @@
       "White"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "220 min"
+    },
     "appliance": {
       "type": "robot_vacuum"
     },
@@ -91847,7 +91850,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "volume": 1.7
+      "volume": 1.7,
+      "power": 1400
     },
     "summaryEn": "De'Longhi EC9155 Coffee Machine.",
     "sources": [
@@ -139183,10 +139187,14 @@
     "id": "logitech-960",
     "category": "headphones",
     "brand": "Logitech",
-    "name": "960 USB Headset",
+    "name": "PC 960 USB Headset",
     "aliases": [
       "Headphones with microphone LOGITECH PC960",
-      "Logitech 960 USB Headset"
+      "Logitech 960 USB Headset",
+      "Logitech PC960",
+      "LOGITECH PC960",
+      "PC960",
+      "PC 960"
     ],
     "tier": "budget",
     "popularity": 35,
