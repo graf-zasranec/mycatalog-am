@@ -5036,7 +5036,9 @@
       "MacBook Pro 14 MR7J3 2023",
       "MacBook Pro 14 MR7J3 2023 Silver",
       "MacBook Pro 14 M3 2023",
-      "MacBook Pro M3"
+      "MacBook Pro M3",
+      "Apple MacBook Pro 14 M3 8/10 8/512 SG /MTL73RU/A",
+      "MacBook Pro 14 M3"
     ],
     "tier": "upper-mid",
     "priceAmd": 692000,
@@ -5052,9 +5054,13 @@
     ],
     "display": {
       "size": 14.2,
-      "resolution": "3024x1964"
+      "resolution": "3024x1964",
+      "type": "Liquid Retina XDR",
+      "refresh": 120
     },
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "Apple MacBook Pro 14 2023 MTL73.",
     "unsure": [
       "popularity"
@@ -5071,8 +5077,8 @@
       "https://support.apple.com/en-us/117735"
     ],
     "colors": [
-      "Gray",
-      "Silver"
+      "Silver",
+      "Space Gray"
     ]
   },
   {
@@ -5598,7 +5604,9 @@
       "MacBook Pro 16 MRW23",
       "MacBook Pro 16 MRW63 2023",
       "MacBook Pro 16 MRW63 2023 Silver",
-      "MacBook Pro M3 Pro"
+      "MacBook Pro M3 Pro",
+      "Apple MacBook Pro 16 M3Pro 12/18 18/512 Black /MRW13RU/A",
+      "MacBook Pro 16 M3 Pro"
     ],
     "tier": "flagship",
     "priceAmd": 1175000,
@@ -5614,7 +5622,8 @@
     ],
     "display": {
       "size": 16.2,
-      "resolution": "3456x2234"
+      "resolution": "3456x2234",
+      "type": "LCD"
     },
     "battery": {},
     "summaryEn": "Apple MacBook Pro 16 MRW23.",
@@ -28151,7 +28160,8 @@
     "aliases": [
       "JBL Tune 530BT",
       "JBL T530BT",
-      "JBL T530BT Lavender"
+      "JBL T530BT Lavender",
+      "Tune 530"
     ],
     "tier": "budget",
     "priceAmd": 23900,
@@ -28166,7 +28176,8 @@
     "audio": {
       "anc": false,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "plug": "usb-c"
     },
     "battery": {
       "life": "57 hours"
@@ -51582,7 +51593,8 @@
       "Xiaomi Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL",
       "Redmi Buds 8 Active (White) (M2537E1) BHR08JUGL",
       "Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL",
-      "Xiaomi Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL"
+      "Xiaomi Redmi Buds 8 Active (Black) (M2537E1) BHR08JTGL",
+      "Redmi Buds 8 Active"
     ],
     "tier": "budget",
     "priceAmd": 10900,
@@ -51597,7 +51609,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "up to 37 h with case"
+    },
     "summaryEn": "Xiaomi Redmi 8 Active BHR08JTGL.",
     "unsure": [
       "popularity"
@@ -58589,53 +58603,6 @@
     "sources": [
       "https://www.honor.com/global/wearables/honor-band-9/"
     ]
-  },
-  {
-    "id": "apple-macbook-pro-14-m3",
-    "category": "laptop",
-    "brand": "Apple",
-    "name": "MacBook Pro 14 M3",
-    "aliases": [
-      "Apple MacBook Pro 14 M3 8/10 8/512 SG /MTL73RU/A"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 699000,
-    "priceAmdMax": 699000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 713400
-      }
-    ],
-    "display": {
-      "size": 14.2,
-      "resolution": "3024x1964",
-      "type": "Liquid Retina XDR",
-      "refresh": 120
-    },
-    "battery": {
-      "capacity": 70
-    },
-    "summaryEn": "Apple MacBook Pro 14 M3.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "colors": [
-      "Silver",
-      "Space Gray"
-    ],
-    "chipset": {
-      "name": "Apple M3"
-    },
-    "body": {
-      "weight": 1550
-    }
   },
   {
     "id": "lenovo-yoga-9-14imh9",
@@ -66583,47 +66550,6 @@
     ]
   },
   {
-    "id": "apple-macbook-pro-16-m3-pro",
-    "category": "laptop",
-    "brand": "Apple",
-    "name": "MacBook Pro 16 M3 Pro",
-    "aliases": [
-      "Apple MacBook Pro 16 M3Pro 12/18 18/512 Black /MRW13RU/A"
-    ],
-    "tier": "flagship",
-    "priceAmd": 1179500,
-    "priceAmdMax": 1179500,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 18,
-        "storage": 512,
-        "priceAmd": 1179500
-      }
-    ],
-    "display": {
-      "size": 16.2,
-      "resolution": "3456x2234",
-      "type": "LCD"
-    },
-    "battery": {},
-    "summaryEn": "Apple MacBook Pro 16 M3 Pro.",
-    "unsure": [
-      "popularity",
-      "battery.capacity"
-    ],
-    "chipset": {
-      "name": "Apple M3 Pro"
-    },
-    "body": {
-      "weight": 2160
-    },
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "hp-envy-16-i9-13900h-16-1-4060-w11-7z0p3ua-aba",
     "category": "laptop",
     "brand": "HP",
@@ -68884,52 +68810,6 @@
     },
     "sources": [
       "https://www.jbl.com/TUNE530C-USB-C.html"
-    ]
-  },
-  {
-    "id": "jbl-tune-530",
-    "category": "headphones",
-    "brand": "JBL",
-    "name": "Tune 530",
-    "aliases": [],
-    "tier": "budget",
-    "priceAmd": 13900,
-    "priceAmdMax": 13900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 13900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "JBL Tune 530.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity",
-      "body.weight"
-    ],
-    "colors": [
-      "White"
-    ],
-    "audio": {
-      "form": "full",
-      "conn": "wired",
-      "plug": "usb-c"
-    },
-    "connectivity": {
-      "bluetooth": "none, wired USB-C"
-    },
-    "body": {
-      "weight": 152
-    },
-    "sources": [
-      "https://global.jbl.com/on-ear-headphones/TUNE530BT.html"
     ]
   },
   {
@@ -85711,54 +85591,6 @@
     "unsure": [
       "popularity"
     ]
-  },
-  {
-    "tier": "budget",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "display": {},
-    "battery": {
-      "life": "up to 37 h with case"
-    },
-    "unsure": [
-      "popularity"
-    ],
-    "id": "xiaomi-redmi-buds-8-active",
-    "category": "headphones",
-    "brand": "Xiaomi",
-    "name": "Redmi Buds 8 Active",
-    "aliases": [
-      "Redmi Buds 8 Active"
-    ],
-    "priceAmd": 10900,
-    "priceAmdMax": 10900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 10900
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "audio": {
-      "form": "tws",
-      "conn": "wireless",
-      "anc": false
-    },
-    "connectivity": {
-      "bluetooth": "5.4"
-    },
-    "summaryEn": "Xiaomi Redmi Buds 8 Active true wireless earbuds: 14.2 mm titanium driver, dual-mic AI call noise reduction, Bluetooth 5.4, up to 37 hours with the case.",
-    "sources": [
-      "https://miarmenia.am/en/product/615/redmi-buds-8-active",
-      "https://www.mi.com/global/product/redmi-buds-8-active/",
-      "https://www.mi.com/ae-en/product/redmi-buds-8-active/specs/"
-    ],
-    "body": {
-      "weight": 3.8
-    }
   },
   {
     "tier": "mid",
@@ -121728,7 +121560,11 @@
       "Hitachi R-B410PUC6",
       "HITACHI R-B410PUC6",
       "R-B410PUC6",
-      "HITACHI R-B410PUC6 BSL Refrigerators (Bottom Mount)"
+      "HITACHI R-B410PUC6 BSL Refrigerators (Bottom Mount)",
+      "Hitachi R-B410PUC6 PWH",
+      "HITACHI R-B410PUC6 PWH",
+      "R-B410PUC6 PWH",
+      "Refrigerator R-B410PUC6 PWH"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -130267,7 +130103,11 @@
       "Toshiba DW-10F4(B)-CIS",
       "TOSHIBA DW-10F4(B)-CIS",
       "DW-10F4(B)-CIS",
-      "TOSHIBA DW-10F4(B)-CIS Dishwashers"
+      "TOSHIBA DW-10F4(B)-CIS Dishwashers",
+      "Toshiba DW-10F4-CIS",
+      "TOSHIBA DW-10F4-CIS",
+      "DW-10F4-CIS",
+      "Dishwasher DW-10F4(B)-CIS"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -130344,7 +130184,11 @@
       "Toshiba DW-16F1(BS)-CIS",
       "TOSHIBA DW-16F1(BS)-CIS",
       "DW-16F1(BS)-CIS",
-      "TOSHIBA DW-16F1(BS)-CIS Dishwashers"
+      "TOSHIBA DW-16F1(BS)-CIS Dishwashers",
+      "Toshiba DW-16F1-CIS",
+      "TOSHIBA DW-16F1-CIS",
+      "DW-16F1-CIS",
+      "Dishwasher DW-16F1(BS)-CIS"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -134900,41 +134744,6 @@
     ]
   },
   {
-    "id": "hitachi-r-b410puc6-pwh",
-    "category": "largeappliance",
-    "brand": "Hitachi",
-    "name": "Refrigerator R-B410PUC6 PWH",
-    "aliases": [
-      "Hitachi R-B410PUC6 PWH",
-      "HITACHI R-B410PUC6 PWH",
-      "R-B410PUC6 PWH"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "fridge",
-      "volume": 330
-    },
-    "battery": {},
-    "summaryEn": "Hitachi Refrigerator R-B410PUC6 PWH.",
-    "sources": [
-      "https://eldorado.am/en/hitachi-r-b410puc6-pwh"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 347900,
-    "priceAmdMax": 347900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 347900
-      }
-    ]
-  },
-  {
     "id": "toshiba-gr-ag475ubz-c",
     "category": "largeappliance",
     "brand": "Toshiba",
@@ -136113,45 +135922,6 @@
     ]
   },
   {
-    "id": "toshiba-dw-10f4-cis",
-    "category": "largeappliance",
-    "brand": "Toshiba",
-    "name": "Dishwasher DW-10F4(B)-CIS",
-    "aliases": [
-      "Toshiba DW-10F4-CIS",
-      "TOSHIBA DW-10F4-CIS",
-      "DW-10F4-CIS",
-      "DW-10F4(B)-CIS",
-      "Toshiba DW-10F4(B)-CIS"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "dishwasher",
-      "noise": "44 dB",
-      "programs": 8,
-      "settings": 10
-    },
-    "battery": {},
-    "summaryEn": "Toshiba Dishwasher DW-10F4(B)-CIS.",
-    "sources": [
-      "https://eldorado.am/en/toshiba-dw-10f4-b-cis"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 219900,
-    "priceAmdMax": 219900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 219900
-      }
-    ]
-  },
-  {
     "id": "electrolux-sea94720sw",
     "category": "largeappliance",
     "brand": "Electrolux",
@@ -136410,44 +136180,6 @@
         "ram": null,
         "storage": null,
         "priceAmd": 294900
-      }
-    ]
-  },
-  {
-    "id": "toshiba-dw-16f1-cis",
-    "category": "largeappliance",
-    "brand": "Toshiba",
-    "name": "Dishwasher DW-16F1(BS)-CIS",
-    "aliases": [
-      "Toshiba DW-16F1-CIS",
-      "TOSHIBA DW-16F1-CIS",
-      "DW-16F1-CIS",
-      "DW-16F1(BS)-CIS",
-      "Toshiba DW-16F1(BS)-CIS"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "dishwasher",
-      "noise": "42 dB",
-      "settings": 16
-    },
-    "battery": {},
-    "summaryEn": "Toshiba Dishwasher DW-16F1(BS)-CIS.",
-    "sources": [
-      "https://eldorado.am/en/toshiba-dw-16f1-bs-cis"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 329900,
-    "priceAmdMax": 329900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 329900
       }
     ]
   },
