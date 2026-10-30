@@ -4692,7 +4692,8 @@
       "MacBook Air 15 M4",
       "MacBook Air 15.3-inch M4",
       "MacBook Air 15.3 M4",
-      "MacBook Air 153 M4"
+      "MacBook Air 153 M4",
+      "MacBook Air 13 M4"
     ],
     "released": "2025-03",
     "priceAmd": 469000,
@@ -45892,7 +45893,8 @@
     "aliases": [
       "Sony WH-1000XM5 (YY2954) անլար ականջակալ արծաթագույն",
       "WH-1000XM5/SME",
-      "WH-1000XM5/BME"
+      "WH-1000XM5/BME",
+      "Sony WH1000XM5"
     ],
     "tier": "mid",
     "priceAmd": 199900,
@@ -51912,7 +51914,8 @@
     "name": "Redmi A7 Pro",
     "aliases": [
       "XIAOMI Redmi A7 Pro 4/128GB Mist Blue",
-      "XIAOMI Redmi A7 Pro 4/128GB Black"
+      "XIAOMI Redmi A7 Pro 4/128GB Black",
+      "Xiaomi A7 Pro"
     ],
     "tier": "budget",
     "priceAmd": 63900,
@@ -56542,7 +56545,8 @@
     "aliases": [
       "Nothing CMF Phone 1 8/256GB",
       "Սմարթֆոն NOTHING CMF 1 (8/128) սև A015",
-      "Սմարթֆոն NOTHING CMF 1 (8/128) Կանաչ A015"
+      "Սմարթֆոն NOTHING CMF 1 (8/128) Կանաչ A015",
+      "Nothing CMF 1"
     ],
     "tier": "mid",
     "priceAmd": 159000,
@@ -62408,7 +62412,9 @@
     "category": "headphones",
     "brand": "Bose",
     "name": "QuietComfort Ultra Earbuds",
-    "aliases": [],
+    "aliases": [
+      "Bose QuietComfort Ultra NC Earbuds"
+    ],
     "tier": "mid",
     "priceAmd": 139000,
     "priceAmdMax": 139000,
@@ -81824,7 +81830,8 @@
     "brand": "Xiaomi",
     "name": "Redmi Watch 6",
     "aliases": [
-      "Redmi Watch 6"
+      "Redmi Watch 6",
+      "Redmi Smart Watch 6"
     ],
     "tier": "budget",
     "priceAmd": 55900,
@@ -81873,7 +81880,8 @@
     "brand": "Xiaomi",
     "name": "Redmi Watch 6 Lite",
     "aliases": [
-      "Redmi Watch 6 Lite"
+      "Redmi Watch 6 Lite",
+      "Redmi Smart Watch 6 Lite"
     ],
     "tier": "budget",
     "priceAmd": 35900,
@@ -81917,7 +81925,8 @@
     "brand": "Xiaomi",
     "name": "Redmi Watch 6 Active",
     "aliases": [
-      "Redmi Watch 6 Active"
+      "Redmi Watch 6 Active",
+      "Redmi Smart Watch 6 Active"
     ],
     "tier": "budget",
     "priceAmd": 23900,
@@ -81957,7 +81966,8 @@
     "brand": "Xiaomi",
     "name": "Smart Band 11 Active",
     "aliases": [
-      "Xiaomi Smart Band 11 Active"
+      "Xiaomi Smart Band 11 Active",
+      "Redmi Smart Band 11 Active"
     ],
     "tier": "budget",
     "priceAmd": 19900,
@@ -139654,5 +139664,188 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "xiaomi-watch-s5-46mm",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Watch S5 46mm",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 99000,
+    "priceAmdMax": 99000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99000
+      }
+    ],
+    "display": {
+      "size": 1.48,
+      "type": "AMOLED",
+      "resolution": "480x480"
+    },
+    "battery": {
+      "capacity": 815,
+      "life": "21 days"
+    },
+    "summaryEn": "A 46 mm smartwatch with a 1.48-inch AMOLED screen and up to 21 days of battery.",
+    "unsure": [
+      "popularity"
+    ],
+    "body": {
+      "weight": 46
+    },
+    "os": "HyperOS",
+    "released": "2026",
+    "year": 2026,
+    "colors": [
+      "Black",
+      "Silver",
+      "Green",
+      "Deep Blue"
+    ]
+  },
+  {
+    "id": "lenovo-legion-pro-7-16afr10h",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Legion Pro 7 16AFR10H",
+    "aliases": [
+      "LEGION PRO 7 16AFR10H"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1290000,
+    "priceAmdMax": 1290000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 2048,
+        "priceAmd": 1290000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "type": "OLED",
+      "resolution": "2560x1600",
+      "refresh": 240,
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "A 16-inch OLED 240 Hz gaming laptop with AMD Ryzen 9 9955HX and Nvidia GeForce RTX 5070 Ti.",
+    "unsure": [
+      "popularity",
+      "body.weight"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 9 9955HX"
+    },
+    "graphics": {
+      "name": "Nvidia GeForce RTX 5070 Ti 12GB",
+      "type": "discrete"
+    },
+    "body": {
+      "weight": 2620
+    },
+    "os": "Windows 11",
+    "released": "2025",
+    "year": 2025
+  },
+  {
+    "id": "asus-vivobook-s16-flip-x360-2in1",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook S16 Flip",
+    "aliases": [
+      "VIVOBOOK S16 FLIP X360 2IN1"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 460000,
+    "priceAmdMax": 460000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 460000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "A 16-inch 2-in-1 touch laptop with a 360-degree hinge and Intel Core i9-13900H.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "Intel Core i9-13900H"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1900
+    },
+    "os": "Windows 11",
+    "released": "2023",
+    "year": 2023
+  },
+  {
+    "id": "asus-zenbook-um5606ga-ss022w",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Zenbook S16 UM5606GA",
+    "aliases": [
+      "ZenBook UM5606GA-SS022W"
+    ],
+    "tier": "flagship",
+    "priceAmd": 809000,
+    "priceAmdMax": 809000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 809000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "type": "OLED",
+      "resolution": "2880x1800",
+      "refresh": 120,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "A 16-inch 120 Hz OLED ultrabook with AMD Ryzen AI 9 465, about 1.5 kg.",
+    "unsure": [
+      "popularity"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen AI 9 465"
+    },
+    "graphics": {
+      "name": "AMD Radeon 880M",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1500
+    },
+    "os": "Windows 11",
+    "released": "2026",
+    "year": 2026
   }
 ]
