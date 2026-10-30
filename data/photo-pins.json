@@ -758,11 +758,14 @@
   "reason": "Exact ECAM290.61.SB Silver/Black VLV gallery photo, native 902x902 original saved in images/_src; crop removes two detached drinks at right, original attached cup retained. Adobe background removal, one-pixel outer matte cleanup. Product 733px high, no upscale or recolouring."
  },
  "apple-airpods-max-lightning-2020": {
+  "main": "images/cut/apple-airpods-max-lightning-2020__main.webp",
   "colours": {
    "silver": "images/cut/apple-airpods-max-lightning-2020__silver.webp",
    "pink": "images/cut/apple-airpods-max-lightning-2020__pink.webp",
-   "green": "images/cut/apple-airpods-max-lightning-2020__green.webp"
-  }
+   "green": "images/cut/apple-airpods-max-lightning-2020__green.webp",
+   "sky-blue": "images/cut/apple-airpods-max-lightning-2020__sky-blue.webp"
+  },
+  "reason": "Sky Blue and main added 2026-10-30 from iBolit shop photos cut with Apple Vision."
  },
  "de-longhi-ec9555": {
   "colours": {
@@ -6381,5 +6384,20 @@
  "logitech-960": {
   "main": "images/cut/logitech-960__main.webp",
   "reason": "Existing cut of the shop photo (logitech-960__black), now pinned as the main photo."
+ },
+"asus-rog-strix-gs-ax5400": {
+  "main": "images/cut/asus-rog-strix-gs-ax5400__main.webp",
+  "reason": "iBolit shop photo cut with Apple Vision."
+ },
+ "asus-rog-strix-gs-ax3000": {
+  "main": "images/cut/asus-rog-strix-gs-ax3000__main.webp",
+  "reason": "iBolit shop photo cut with Apple Vision."
+ },
+ "samsung-galaxy-a16-4g": {
+  "main": "images/cut/samsung-galaxy-a16-4g__main.webp",
+  "colours": {
+   "gray": "images/cut/samsung-galaxy-a16-4g__gray.webp"
+  },
+  "reason": "Same Gray cut as samsung-galaxy-a16: the 4G and 5G Galaxy A16 share one body; Telecom's own photos carry marketing text."
  }
 }
