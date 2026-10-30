@@ -71,7 +71,11 @@
       retry.onclick = () => location.reload(); notice.appendChild(retry); main.prepend(notice);
     }
   };
-  requestAnimationFrame(() => setTimeout(start, 0));
+  // Waiting for the first paint protects a prerendered page's heading. A deep link (#/c/tv) has
+  // nothing prerendered to protect - route-pending hides #main and paints only "Loading..." - so it
+  // starts at once: on a slow phone the wait held its first content back by about half a second.
+  if (document.documentElement.classList.contains('route-pending')) start();
+  else requestAnimationFrame(() => setTimeout(start, 0));
   // Installable app (owner, 2026-10-16): registered after load so it never delays the first paint.
   if ('serviceWorker' in navigator && location.protocol === 'https:')
     addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
