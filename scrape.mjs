@@ -3460,7 +3460,13 @@ for (const [id, list] of Object.entries(offers)) {
   if (ref && lo < ref * 0.45) { console.warn(`    ! history skipped ${id}: lo ${lo} implausible vs ${ref}`); continue; }
   if (hi / lo > 3) { console.warn(`    ! history skipped ${id}: spread ${lo}-${hi} too wide`); continue; }
   const prev = (hist.points[id] || []).filter(pt => pt.d !== day).slice(-1)[0];
-  if (prev && Math.abs(lo - prev.lo) / prev.lo > 0.5) {
+  // A jump is held back as a probable bad read - but only while it is new. Compared with the last
+  // RECORDED point, a real move (the cheap shop sold out, a new configuration) was refused every
+  // night for ever: 17 series had stopped on 2026-10-13..24 (MacBook Air M3 489 000 -> 949 000),
+  // freezing their chart and price-drop figures. Once the new level has stood for over two days it
+  // is the price, and the guards above still stop the implausible readings.
+  const settled = prev && Date.parse(day) - Date.parse(prev.d) > 2 * 864e5;
+  if (prev && Math.abs(lo - prev.lo) / prev.lo > 0.5 && !settled) {
     console.warn(`    ! history skipped ${id}: ${prev.lo} -> ${lo} is a >50% jump`); continue;
   }
   const arr = (hist.points[id] ||= []);
