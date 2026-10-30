@@ -1396,6 +1396,28 @@
         "ram": 12
       },
       "basis": "Apple confirms12GB unified memory for both11-inch and13-inch M4 iPad Air, all capacities/connectivity. Fill missing offer RAM only; prices/dates preserved."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi-cellular.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 128
+      },
+      "matchAxes": {
+        "ram": 12
+      }
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi-cellular.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 128
+      },
+      "matchAxes": {
+        "ram": 12
+      }
     }
   ],
   "apple-macbook-pro-14-m5-pro": [
@@ -1420,6 +1442,66 @@
         "storage": 1024
       },
       "basis": "Exact MPN in primary H1; RAM and SSD storage stated in primary product specification rows."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdr4space-black",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 24
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdr4space-black",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 1024
+      },
+      "matchAxes": {
+        "ram": 24
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdn4silver",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 24
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-pro-mgdn4silver",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 1024
+      },
+      "matchAxes": {
+        "ram": 24
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-162-m5-pro-mgea4space-black",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 24
+      },
+      "matchAxes": {
+        "storage": 1024
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-162-m5-pro-mge44silver",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 24
+      },
+      "matchAxes": {
+        "storage": 1024
+      }
     }
   ],
   "apple-macbook-pro-14-m5": [
@@ -1477,6 +1559,44 @@
         "storage": 1024
       },
       "basis": "Exact MPN in primary H1; RAM and SSD storage stated in primary product specification rows."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-mde04space-black",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 16
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-mde04space-black",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 512
+      },
+      "matchAxes": {
+        "ram": 16
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-mde44silver",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 16
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-mde44silver",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 512
+      },
+      "matchAxes": {
+        "ram": 16
+      }
     }
   ],
   "honor-x6c": [
@@ -2125,6 +2245,405 @@
       },
       "offerAxes": {
         "ram": 6
+      }
+    }
+  ],
+  "apple-ipad-air-5-wi-fi-plus-cellular-2022": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/ipad-air-5-256gb-wifi-purple-1",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 256
+      }
+    }
+  ],
+  "apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a": [
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/en/ipad-pro-wi-fi.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "apple-macbook-pro-14-m5-max": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-162-m5-max-mged4space-black",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 36
+      },
+      "matchAxes": {
+        "storage": 2048
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-162-m5-max-mge74silver",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 36
+      },
+      "matchAxes": {
+        "storage": 2048
+      }
+    }
+  ],
+  "dell-14-plus-2in1-db04250": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-14-plus-2in1-db04250",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 16
+      },
+      "matchAxes": {
+        "storage": 1024
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-plus-2in1-db04250",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 32
+      },
+      "matchAxes": {
+        "storage": 1024
+      }
+    }
+  ],
+  "dell-15-dc15250": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-15-dc15250i5",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "dell-alienware-18-area-51-32gb-rtx-5080": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-alienware-18-area-5132gbrtx-5080",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 1024
+      },
+      "matchAxes": {
+        "ram": 32
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-alienware-18-area-5164gbrtx-5080",
+      "checked": "2026-10-30",
+      "matchAxes": {
+        "storage": 2048
+      },
+      "offerAxes": {
+        "ram": 64
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-alienware-18-area-5164gbrtx-5080",
+      "checked": "2026-10-30",
+      "matchAxes": {
+        "storage": 64
+      },
+      "correctAxes": {
+        "storage": 2048
+      },
+      "offerAxes": {
+        "ram": 64
+      }
+    }
+  ],
+  "dell-pro-15-essential-pv15250": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-pro-15-essentialpv15250",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "dell-wyse-5470": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-wyse-5470",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 4
+      },
+      "matchAxes": {
+        "storage": 256
+      }
+    }
+  ],
+  "dell-xps-9350-16gb-ultra-7": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-xps-935016gbultra-7",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 512
+      },
+      "matchAxes": {
+        "ram": 16
+      }
+    }
+  ],
+  "honor-magicbook-x16-2026-16-wuxga-ssd1tb": [
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/honor-magicbook-x16-2026.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 16
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "honor-pad-8": [
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/en/honor-pad-8.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 6
+      },
+      "matchAxes": {
+        "storage": 128
+      }
+    }
+  ],
+  "hp-15-fd2050wm": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-15-fd2050wm",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "hp-15-fd0531nia": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-15-fd0531nia",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 4
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-15-fd0531nia",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 256
+      },
+      "matchAxes": {
+        "ram": 4
+      }
+    }
+  ],
+  "hp-15-fd0153dx": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-15-fd0153dx512gb",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "hp-elitebook-ultra-g1q": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-elitebook-ultra-g1q",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 32
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-elitebook-ultra-g1q",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 512
+      },
+      "matchAxes": {
+        "ram": 32
+      }
+    }
+  ],
+  "hp-victus-15-fa2013dx": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-victus-15-fa2013dx",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "lenovo-ideapad-slim-3-15irh10-i5": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/lenovo-ideapad-slim-3-15irh10i5",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 512
+      }
+    }
+  ],
+  "lenovo-ideapad-5-2in1-16": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/lenovo-ideapad-5-2in1-16ial10ultra-7",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 16
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/lenovo-ideapad-5-2in1-16ial10ultra-7",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 1024
+      },
+      "matchAxes": {
+        "ram": 16
+      }
+    }
+  ],
+  "lenovo-v14-g4-iru": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/lenovo-v14-g4-iru",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 256
+      }
+    }
+  ],
+  "xiaomi-redmi-pad": [
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/en/xiaomi-redmi-pad.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 4
+      },
+      "matchAxes": {
+        "storage": 128
+      }
+    }
+  ],
+  "xiaomi-redmi-pad-se": [
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-pad-se-8gb.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 256
+      }
+    }
+  ],
+  "samsung-galaxy-tab-s11": [
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-s11-x730-1.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 12
+      }
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-s11-x730-1.html",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 128
+      },
+      "matchAxes": {
+        "ram": 12
+      }
+    }
+  ],
+  "lenovo-ideapad-1-15iru7": [
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-lenovo-ideapad1-15iru7-abyss-blue/2711/",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 8
+      },
+      "matchAxes": {
+        "storage": 256
+      }
+    }
+  ],
+  "lenovo-ideapad-slim-3-15ian8": [
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-lenovo-ideapad-slim3-15ian8-arctic-grey/2702/",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "ram": 4
+      }
+    },
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/hy/devices/notebook-lenovo-ideapad-slim3-15ian8-arctic-grey/2702/",
+      "checked": "2026-10-30",
+      "offerAxes": {
+        "storage": 128
+      },
+      "matchAxes": {
+        "ram": 4
       }
     }
   ]
