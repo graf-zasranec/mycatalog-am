@@ -1705,7 +1705,10 @@
     "summaryEn": "The base Kindle: a 6-inch anti-glare E Ink screen, 16 GB and USB-C charging.",
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 158
+    }
   },
   {
     "id": "amazon-kindle-paperwhite-12",
@@ -60459,8 +60462,15 @@
         "priceAmd": 249000
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 10.2,
+      "type": "Paperwhite E Ink glare-free, adjustable warm light",
+      "ppi": 300,
+      "touch": true
+    },
+    "battery": {
+      "life": "up to 12 weeks"
+    },
     "summaryEn": "Amazon Kindle Scribe.",
     "unsure": [
       "popularity",
@@ -60470,7 +60480,11 @@
     ],
     "colors": [
       "Jade"
-    ]
+    ],
+    "connectivity": {
+      "network": "Wi-Fi"
+    },
+    "os": "Kindle OS"
   },
   {
     "id": "amazon-kindle-kids",
@@ -60490,15 +60504,27 @@
         "priceAmd": 109000
       }
     ],
-    "display": {},
-    "battery": {},
+    "display": {
+      "size": 6,
+      "type": "E Ink, anti-glare",
+      "ppi": 300,
+      "touch": true
+    },
+    "battery": {
+      "life": "up to 6 weeks"
+    },
     "summaryEn": "Amazon Kindle Kids.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "connectivity": {
+      "network": "Wi-Fi"
+    },
+    "os": "Kindle OS",
+    "released": "2022"
   },
   {
     "id": "amazon-fire-hd-10-kids",
@@ -67458,7 +67484,12 @@
     "colors": [
       "Silver"
     ],
-    "os": "macOS Ventura"
+    "os": "macOS Ventura",
+    "graphics": {
+      "name": "Apple M2 10-core GPU",
+      "type": "integrated"
+    },
+    "released": "2023-01"
   },
   {
     "id": "hp-omen-16-core-i7-14650hx-rtx5050-c42dnea",
@@ -68980,6 +69011,10 @@
     ],
     "chipset": {
       "name": "Intel Core i3-12100"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics 730",
+      "type": "integrated"
     }
   },
   {
@@ -78418,7 +78453,8 @@
     ],
     "display": {
       "size": 11,
-      "type": "Color e-paper"
+      "type": "Color e-paper",
+      "touch": true
     },
     "battery": {},
     "summaryEn": "Amazon Kindle Scribe Colorsoft with Premium Pen.",
@@ -78431,7 +78467,12 @@
     "colors": [
       "Graphite"
     ],
-    "specSource": "https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color; exact Colorsoft model separated from 10.2-inch Scribe, 2026-10-14"
+    "specSource": "https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color; exact Colorsoft model separated from 10.2-inch Scribe, 2026-10-14",
+    "connectivity": {
+      "network": "Wi-Fi"
+    },
+    "os": "Kindle OS",
+    "released": "2025"
   },
   {
     "id": "apple-airpods-5-wireless-charging-case",
@@ -79494,7 +79535,8 @@
       "style": "Wayfarer",
       "lens": "Clear",
       "lensWidth": 53,
-      "runtime": 8
+      "runtime": 8,
+      "frame": "Shiny Black"
     },
     "camera": {
       "main": "12 MP",
@@ -79528,7 +79570,8 @@
       "style": "Wayfarer",
       "lens": "G-15 Green",
       "lensWidth": 50,
-      "runtime": 8
+      "runtime": 8,
+      "frame": "Shiny Black"
     },
     "camera": {
       "main": "12 MP",
@@ -79562,7 +79605,8 @@
       "style": "Wayfarer",
       "lens": "G-15 Green",
       "lensWidth": 53,
-      "runtime": 8
+      "runtime": 8,
+      "frame": "Shiny Black"
     },
     "camera": {
       "main": "12 MP",
@@ -79596,7 +79640,8 @@
       "style": "Wayfarer",
       "lens": "Transitions Graphite Green",
       "lensWidth": 50,
-      "runtime": 8
+      "runtime": 8,
+      "frame": "Shiny Black"
     },
     "camera": {
       "main": "12 MP",
@@ -79630,7 +79675,8 @@
       "style": "Wayfarer",
       "lens": "Transitions Graphite Green",
       "lensWidth": 53,
-      "runtime": 8
+      "runtime": 8,
+      "frame": "Shiny Black"
     },
     "camera": {
       "main": "12 MP",
@@ -79664,7 +79710,8 @@
       "style": "Wayfarer",
       "lens": "Transitions Sapphire",
       "lensWidth": 50,
-      "runtime": 8
+      "runtime": 8,
+      "frame": "Cosmic Blue"
     },
     "camera": {
       "main": "12 MP",
@@ -84266,7 +84313,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "roborock-f25-ace-pro",
@@ -84380,7 +84428,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "roborock-qrevo-c-pro",
@@ -142562,7 +142611,8 @@
       "name": "Intel Core i7-13700"
     },
     "graphics": {
-      "name": "NVIDIA GeForce RTX 4070 Ti 12 GB"
+      "name": "NVIDIA GeForce RTX 4070 Ti 12 GB",
+      "type": "discrete"
     },
     "sources": []
   },
@@ -142596,7 +142646,8 @@
       "name": "Intel Core i5-14400F"
     },
     "graphics": {
-      "name": "NVIDIA GeForce RTX 3050 6 GB"
+      "name": "NVIDIA GeForce RTX 3050 6 GB",
+      "type": "discrete"
     },
     "sources": []
   },
@@ -143777,7 +143828,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 80
+      "volume": 80,
+      "power": 2000
     },
     "body": {
       "weight": 16700
@@ -144063,7 +144115,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 80
+      "volume": 80,
+      "power": 2500
     },
     "colors": [
       "White"
@@ -144761,7 +144814,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 50
+      "volume": 50,
+      "power": 2000
     },
     "colors": [
       "White"
@@ -144799,7 +144853,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 80
+      "volume": 80,
+      "power": 2000
     },
     "year": null
   },
@@ -144959,7 +145014,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 80
+      "volume": 80,
+      "power": 2000
     },
     "year": null
   },
@@ -144995,7 +145051,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 100
+      "volume": 100,
+      "power": 2000
     },
     "year": null
   },
@@ -145198,7 +145255,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 50
+      "volume": 50,
+      "power": 2000
     },
     "year": null
   },
@@ -145234,7 +145292,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 50
+      "volume": 50,
+      "power": 2000
     },
     "year": null
   },
@@ -145269,7 +145328,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 80
+      "volume": 80,
+      "power": 2000
     },
     "year": null
   },
@@ -145304,7 +145364,8 @@
     ],
     "appliance": {
       "type": "water_heater",
-      "volume": 100
+      "volume": 100,
+      "power": 2000
     },
     "year": null
   },
@@ -146847,7 +146908,10 @@
       "type": "pen_tablet"
     },
     "body": {
-      "weight": 230
+      "weight": 230,
+      "height": 210,
+      "width": 146,
+      "thickness": 8.7
     },
     "colors": [
       "White"
@@ -146996,7 +147060,8 @@
     "camera": {
       "main": "24.2 MP APS-C CMOS",
       "video": "4K 30p, Full HD 120p"
-    }
+    },
+    "released": "2023-02"
   },
   {
     "id": "canon-eos-r100",
@@ -147032,7 +147097,10 @@
       "type": "mirrorless"
     },
     "body": {
-      "weight": 356
+      "weight": 356,
+      "height": 116.3,
+      "width": 85.5,
+      "thickness": 68.8
     },
     "colors": [
       "Black"
@@ -147041,7 +147109,8 @@
     "camera": {
       "main": "24.1 MP APS-C CMOS",
       "video": "4K 24p (cropped), Full HD 60p"
-    }
+    },
+    "released": "2023-05"
   },
   {
     "id": "canon-eos-r10",
@@ -147077,7 +147146,10 @@
       "type": "mirrorless"
     },
     "body": {
-      "weight": 429
+      "weight": 429,
+      "height": 122.5,
+      "width": 87.8,
+      "thickness": 83.4
     },
     "colors": [
       "Black"
@@ -147086,7 +147158,8 @@
     "camera": {
       "main": "24.2 MP APS-C CMOS",
       "video": "4K 60p (cropped), 4K 30p oversampled"
-    }
+    },
+    "released": "2022-07"
   },
   {
     "id": "canon-eos-r7",
@@ -147215,7 +147288,10 @@
       "type": "mirrorless"
     },
     "body": {
-      "weight": 403
+      "weight": 403,
+      "height": 120,
+      "width": 66.9,
+      "thickness": 59.7
     },
     "colors": [
       "Black"
@@ -147224,7 +147300,8 @@
     "camera": {
       "main": "24.2 MP APS-C CMOS",
       "video": "4K 30p"
-    }
+    },
+    "released": "2019-02"
   },
   {
     "id": "sony-alpha-7s-iii",
@@ -147261,7 +147338,10 @@
       "type": "mirrorless"
     },
     "body": {
-      "weight": 699
+      "weight": 699,
+      "height": 128.9,
+      "width": 96.9,
+      "thickness": 80.8
     },
     "colors": [
       "Black"
@@ -147270,7 +147350,8 @@
     "camera": {
       "main": "12.1 MP full-frame CMOS",
       "video": "4K 120p, 10-bit 4:2:2"
-    }
+    },
+    "released": "2020-09"
   },
   {
     "id": "fujifilm-instax-pal",
