@@ -845,7 +845,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Acer Nitro 5 AN515-45-R7SL.",
     "unsure": [
       "popularity"
@@ -857,7 +859,8 @@
       "weight": 2300
     },
     "sources": [
-      "https://store.acer.com/en-us/nitro-5-gaming-laptop-an515-45-r0fn"
+      "https://store.acer.com/en-us/nitro-5-gaming-laptop-an515-45-r0fn",
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -1495,7 +1498,9 @@
       "size": 14,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "Acer Swift 3 SF314 59 75QC.",
     "unsure": [
       "popularity"
@@ -1507,7 +1512,8 @@
       "weight": 1200
     },
     "sources": [
-      "https://store.acer.com/en-us/swift-3-laptop-sf314-59-75qc"
+      "https://store.acer.com/en-us/swift-3-laptop-sf314-59-75qc",
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -25787,9 +25793,14 @@
         "priceAmd": 379000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 51
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -26373,9 +26384,14 @@
         "priceAmd": 399000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 41
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -26637,9 +26653,14 @@
         "priceAmd": 459000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -26735,9 +26756,14 @@
         "priceAmd": 479000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 83
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -30175,11 +30201,16 @@
         "priceAmd": 359000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://nanoreview.net/"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-14iru9",
@@ -31520,7 +31551,9 @@
       "size": 16,
       "resolution": "2560x1600"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "Lenovo Legion 5 Pro 16 IRX9.",
     "unsure": [
       "popularity"
@@ -31533,7 +31566,8 @@
       "weight": 2500
     },
     "sources": [
-      "https://nanoreview.net/en/laptop/lenovo-legion-pro-5i-gen-9-16irx9-2024"
+      "https://nanoreview.net/en/laptop/lenovo-legion-pro-5i-gen-9-16irx9-2024",
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -39703,7 +39737,9 @@
         "priceAmd": 529000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 61.2
+    },
     "unsure": [
       "popularity"
     ],
@@ -39712,7 +39748,10 @@
     ],
     "connectivity": {
       "wifi": "Wi-Fi 7"
-    }
+    },
+    "sources": [
+      "https://nanoreview.net/"
+    ]
   },
   {
     "id": "samsung-galaxy-buds-3-pro",
@@ -76574,7 +76613,9 @@
       "resolution": "2560x1600",
       "touch": true
     },
-    "battery": {},
+    "battery": {
+      "capacity": 54
+    },
     "summaryEn": "A 14-inch laptop with Snapdragon X Plus, 16 GB RAM and 512 GB storage.",
     "unsure": [
       "popularity"
@@ -76591,7 +76632,8 @@
       "weight": 1440
     },
     "sources": [
-      "https://laptopdecision.com/compare/dell-latitude-7455-vs-dell-latitude-7650"
+      "https://laptopdecision.com/compare/dell-latitude-7455-vs-dell-latitude-7650",
+      "https://nanoreview.net/"
     ]
   },
   {
@@ -77275,7 +77317,9 @@
       "resolution": "1920x1200",
       "refresh": 60
     },
-    "battery": {},
+    "battery": {
+      "capacity": 59
+    },
     "summaryEn": "A 16-inch laptop with Intel Core 5-320U, 16 GB RAM and 512 GB storage.",
     "unsure": [
       "popularity"
@@ -77293,7 +77337,10 @@
     "os": "DOS",
     "body": {
       "weight": 1770
-    }
+    },
+    "sources": [
+      "https://nanoreview.net/"
+    ]
   },
   {
     "id": "hp-omnibook-5-flip-14-fp0019ci",
@@ -79473,11 +79520,14 @@
         "priceAmd": 239000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 41
+    },
     "summaryEn": "HP 17-CP2025DX.",
     "sources": [
       "https://appzone.am/en/Assortment/hp-laptop-17-cp2025dx/",
-      "https://laptopmedia.com/?p=1255262"
+      "https://laptopmedia.com/?p=1255262",
+      "https://nanoreview.net/"
     ],
     "unsure": [
       "popularity"
