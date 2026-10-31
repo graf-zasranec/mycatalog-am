@@ -50897,7 +50897,8 @@
     ],
     "appliance": {
       "type": "kettle",
-      "power": 1800
+      "power": 1800,
+      "volume": 1.5
     }
   },
   {
@@ -86868,7 +86869,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "power": 1450
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM450.65.G.",
     "sources": [
@@ -86902,7 +86904,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "power": 1100
+      "power": 1100,
+      "volume": 1
     },
     "summaryEn": "De'Longhi EC235.BK.",
     "sources": [
@@ -89227,7 +89230,8 @@
     "appliance": {
       "type": "air_fryer",
       "power": 1700,
-      "capacity": "6.5 L"
+      "capacity": "6.5 L",
+      "volume": 6.5
     },
     "summaryEn": "Xiaomi Air Fryer 6.5L (not the app-connected Smart model): 1700 W, 40-210 C, 7 cooking modes and 101 recipes.",
     "sources": [
@@ -94630,7 +94634,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "power": 1100
+      "power": 1100,
+      "volume": 1
     },
     "summaryEn": "De'Longhi EC230 Coffee Maker.",
     "sources": [
@@ -95495,7 +95500,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "power": 1450
+      "power": 1450,
+      "volume": 1.8
     },
     "summaryEn": "De'Longhi ECAM320.60 Coffee Machine.",
     "sources": [
@@ -95942,7 +95948,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "power": 1450
+      "power": 1450,
+      "volume": 2
     },
     "summaryEn": "De'Longhi ECAM650.75 Coffee Machine.",
     "sources": [
@@ -96212,7 +96219,8 @@
     "battery": {},
     "appliance": {
       "type": "coffee_machine",
-      "power": 1450
+      "power": 1450,
+      "volume": 1.4
     },
     "summaryEn": "De'Longhi EXAM441.55 Coffee Machine.",
     "sources": [
@@ -99624,7 +99632,8 @@
     "battery": {},
     "appliance": {
       "type": "air_fryer",
-      "power": 2450
+      "power": 2450,
+      "volume": 9.6
     },
     "summaryEn": "Panasonic NF-BC1000KXE Air Fryer.",
     "sources": [
@@ -99658,7 +99667,8 @@
     "battery": {},
     "appliance": {
       "type": "air_fryer",
-      "power": 1450
+      "power": 1450,
+      "volume": 5
     },
     "summaryEn": "Panasonic NF-CC500SXE Air Fryer.",
     "sources": [
@@ -99692,7 +99702,8 @@
     "battery": {},
     "appliance": {
       "type": "air_fryer",
-      "power": 1450
+      "power": 1450,
+      "volume": 6
     },
     "summaryEn": "Panasonic NF-CC600ATS Air Fryer.",
     "sources": [
@@ -100531,7 +100542,8 @@
     "battery": {},
     "appliance": {
       "type": "air_fryer",
-      "power": 1700
+      "power": 1700,
+      "volume": 6.2
     },
     "summaryEn": "Philips NA332/00 Air Fryer.",
     "sources": [
@@ -111069,7 +111081,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "blender",
-      "power": 1200
+      "power": 1200,
+      "volume": 1.4
     },
     "battery": {},
     "summaryEn": "KitchenAid Artisan Blender 5KSB4026.",
@@ -111837,7 +111850,8 @@
     "appliance": {
       "type": "blender",
       "power": 1200,
-      "programs": 15
+      "programs": 15,
+      "volume": 2.1
     },
     "battery": {},
     "summaryEn": "Ninja Detect Power Blender Pro TB201EU.",
@@ -111872,7 +111886,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "blender",
-      "power": 1000
+      "power": 1000,
+      "volume": 1.7
     },
     "battery": {},
     "summaryEn": "Ninja Foodi Blender and Soup Maker HB150EU.",
@@ -112444,7 +112459,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "power": 1780
+      "power": 1780,
+      "volume": 12.5
     },
     "battery": {},
     "summaryEn": "Ninja SFP700EU.",
@@ -112480,7 +112496,8 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "air_fryer",
-      "power": 2470
+      "power": 2470,
+      "volume": 9.5
     },
     "battery": {},
     "summaryEn": "Ninja Double Stack XL SL451EU.",
