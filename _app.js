@@ -928,7 +928,9 @@ const FILT = {
   aload: { kind: 'min', scope: p => ['washing_machine', 'dryer'].includes(p.appliance?.type), label: () => x('loadF'), of: p => p.appliance?.load || null, fmt: v => v + ' ' + u('kg') },
   abtu:  { kind: 'min', nice: true, scope: p => p.appliance?.type === 'air_conditioner', label: () => x('btuF'), of: p => p.appliance?.btu || null, fmt: v => money(v) + ' BTU' },
   asets: { kind: 'min', scope: p => p.appliance?.type === 'dishwasher', label: () => x('setsF'), of: p => p.appliance?.settings || null, fmt: v => v + ' ' + x('setsU') },
-  avol:  { kind: 'min', scope: p => p.category !== 'largeappliance' || ['fridge', 'freezer'].includes(p.appliance?.type), label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
+  // In Climate only a water heater has a tank to measure; an air conditioner or a convector has none.
+  avol:  { kind: 'min', scope: p => p.category === 'climate' ? p.appliance?.type === 'water_heater'
+                                  : p.category !== 'largeappliance' || ['fridge', 'freezer'].includes(p.appliance?.type), label: () => x('volF'), of: p => p.appliance?.volume || null, fmt: v => v + ' ' + t('appliance.litre') },
   res:   { kind: 'set', arr: 'reses', label: () => x('resF'), of: p => resOf(p), fmt: v => v,
            vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
   // Ninety-six televisions and thirty-eight monitors all differ on the one thing a buyer of
@@ -1018,7 +1020,7 @@ const ASK = {
   projector:  ['res', 'year'],
   purifier:   ['apower', 'year'],
   // Air conditioners, heaters, water heaters and humidifiers: the type first, then how strong.
-  climate:    ['atype', 'abtu', 'apower', 'year'],
+  climate:    ['atype', 'abtu', 'avol', 'apower', 'year'],
   graphicstablet: ['year'],
 };
 // Brand, price and shop are questions about the purchase, not about the hardware, so they are
