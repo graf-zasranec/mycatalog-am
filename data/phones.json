@@ -5112,14 +5112,15 @@
     "id": "apple-macbook-pro-14-m4-max",
     "category": "laptop",
     "brand": "Apple",
-    "name": "MacBook Pro M4 Max",
+    "name": "MacBook Pro 14 M4 Max",
     "aliases": [
-      "Macbook PRO 14 M4 Max",
-      "Macbook PRO 16 M4 Max"
+      "MacBook Pro 14 M4 Max",
+      "MacBook Pro 14.2 M4 Max",
+      "MacBook Pro 14 M4Max"
     ],
     "tier": "flagship",
     "priceAmd": 1299000,
-    "priceAmdMax": 1499000,
+    "priceAmdMax": 1299000,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
@@ -5127,6 +5128,74 @@
         "ram": 36,
         "storage": 1024,
         "priceAmd": 1299000
+      }
+    ],
+    "display": {
+      "size": 14.2,
+      "type": "Liquid Retina XDR",
+      "resolution": "1964x3024",
+      "refresh": 120,
+      "ppi": 254,
+      "brightness": 1600,
+      "touch": false
+    },
+    "battery": {
+      "capacity": 72.4
+    },
+    "summaryEn": "The M4 Max in the 14-inch body: up to 16 CPU and 40 GPU cores, Thunderbolt 5.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Space Black",
+      "Silver"
+    ],
+    "os": "macOS Sequoia",
+    "connectivity": {
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "5.3",
+      "wireless": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3"
+    },
+    "body": {
+      "height": 312.6,
+      "width": 221.2,
+      "thickness": 15.5,
+      "weight": 1620,
+      "materials": "Aluminium unibody"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/121553"
+    ],
+    "chipset": {
+      "name": "Apple M4 Max",
+      "process": "3 nm",
+      "cpu": "14-core (10 performance + 4 efficiency)",
+      "gpu": "32-core GPU"
+    },
+    "released": "2024-10"
+  },
+  {
+    "id": "apple-macbook-pro-16-m4-max",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro 16 M4 Max",
+    "aliases": [
+      "MacBook Pro 16 M4 Max",
+      "MacBook Pro 16.2 M4 Max",
+      "MacBook Pro 16 M4Max",
+      "Apple MacBook Pro 16 M4Max 14/32 36/1TB Black /MX303*",
+      "Apple MacBook Pro 16 M4Max 14/32 36/1 Black /MX303"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1599000,
+    "priceAmdMax": 1799000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 36,
+        "storage": 1024,
+        "priceAmd": 1599000
       },
       {
         "ram": 48,
@@ -5135,42 +5204,58 @@
       }
     ],
     "display": {
-      "resolution": "3024x1964",
-      "size": 14.2
+      "size": 16.2,
+      "type": "Liquid Retina XDR",
+      "resolution": "2234x3456",
+      "refresh": 120,
+      "ppi": 254,
+      "brightness": 1600,
+      "touch": false
     },
-    "battery": {},
-    "summaryEn": "Apple Macbook PRO 14 M4 Max.",
+    "battery": {
+      "capacity": 100
+    },
+    "summaryEn": "The M4 Max in the 16-inch body: up to 16 CPU and 40 GPU cores, a 100 Wh battery and Thunderbolt 5.",
     "unsure": [
       "popularity"
     ],
     "colors": [
-      "Black",
+      "Space Black",
       "Silver"
     ],
-    "os": "macOS",
-    "year": 2024,
+    "os": "macOS Sequoia",
     "connectivity": {
-      "bluetooth": "5.3"
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "5.3",
+      "wireless": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3"
     },
     "body": {
-      "weight": 1620
+      "height": 355.7,
+      "width": 248.1,
+      "thickness": 16.8,
+      "weight": 2150,
+      "materials": "Aluminium unibody"
     },
     "sources": [
-      "https://support.apple.com/en-us/121553"
+      "https://support.apple.com/en-us/121554"
     ],
     "chipset": {
-      "name": "Apple M4 Max"
-    }
+      "name": "Apple M4 Max",
+      "process": "3 nm",
+      "cpu": "14-core (10 performance + 4 efficiency)",
+      "gpu": "32-core GPU"
+    },
+    "released": "2024-10"
   },
   {
     "id": "apple-macbook-pro-14-m4-pro",
     "category": "laptop",
     "brand": "Apple",
-    "name": "MacBook Pro M4 Pro",
+    "name": "MacBook Pro 14 M4 Pro",
     "tier": "flagship",
     "released": "2024-10",
-    "priceAmd": 899000,
-    "priceAmdMax": 1229000,
+    "priceAmd": 825000,
+    "priceAmdMax": 1199000,
     "popularity": 62,
     "accent": "#2E2E30",
     "display": {
@@ -5195,7 +5280,7 @@
       "height": 312.6,
       "width": 221.2,
       "thickness": 15.5,
-      "weight": 1550,
+      "weight": 1600,
       "materials": "Aluminium unibody"
     },
     "connectivity": {
@@ -5208,31 +5293,17 @@
       {
         "ram": 24,
         "storage": 512,
-        "size": 16,
-        "priceAmd": 1109000
-      },
-      {
-        "ram": 48,
-        "storage": 512,
-        "size": 16,
-        "priceAmd": 1329000
-      },
-      {
-        "ram": 24,
-        "storage": 512,
-        "priceAmd": 899000,
-        "size": 14
-      },
-      {
-        "ram": 48,
-        "storage": 512,
-        "priceAmd": 1329000
+        "priceAmd": 825000
       },
       {
         "ram": 24,
         "storage": 1024,
-        "priceAmd": 999000,
-        "size": 14
+        "priceAmd": 999000
+      },
+      {
+        "ram": 48,
+        "storage": 512,
+        "priceAmd": 1199000
       }
     ],
     "colors": [
@@ -5245,12 +5316,84 @@
       "priceAmdMax"
     ],
     "aliases": [
-      "Macbook PRO 16 M4 Pro",
+      "MacBook Pro 14 M4 Pro",
+      "MacBook Pro 14.2 M4 Pro",
+      "MacBook Pro 14 M4Pro",
       "MacBook Pro 14 M4 Pro MX2J3 (2024) Space Black",
-      "Apple Macbook Pro 16.2\"/M4 Pro/24GB RAM/512GB/MX2X3/Space Black",
-      "Apple Macbook Pro 16.2\"/M4 Pro/24GB RAM/512GB SSD/MX2T3/Silver",
+      "MacBook Pro 14 M4 Pro MX2E3 (2024) Silver",
       "Apple Macbook Pro 14.2\"/M4 Pro/24GB RAM/1TB SSD/MX2J3/Space Black",
       "Apple Macbook Pro 14.2\"/M4 Pro/24GB RAM/512GB SSD/MX2H3/Space Black"
+    ]
+  },
+  {
+    "id": "apple-macbook-pro-16-m4-pro",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro 16 M4 Pro",
+    "tier": "flagship",
+    "released": "2024-10",
+    "priceAmd": 1079000,
+    "priceAmdMax": 1329000,
+    "popularity": 55,
+    "accent": "#2E2E30",
+    "display": {
+      "size": 16.2,
+      "type": "Liquid Retina XDR",
+      "resolution": "2234x3456",
+      "refresh": 120,
+      "ppi": 254,
+      "brightness": 1600,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Apple M4 Pro",
+      "process": "3 nm",
+      "cpu": "14-core (10 performance + 4 efficiency)",
+      "gpu": "20-core GPU"
+    },
+    "battery": {
+      "capacity": 100
+    },
+    "body": {
+      "height": 355.7,
+      "width": 248.1,
+      "thickness": 16.8,
+      "weight": 2140,
+      "materials": "Aluminium unibody"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "5.3",
+      "wireless": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3"
+    },
+    "os": "macOS Sequoia",
+    "variants": [
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": 1079000
+      },
+      {
+        "ram": 48,
+        "storage": 512,
+        "priceAmd": 1329000
+      }
+    ],
+    "colors": [
+      "Space Black",
+      "Silver"
+    ],
+    "summaryEn": "The M4 Pro in the 16-inch body: 14 CPU cores, 20 GPU cores, a 100 Wh battery and Thunderbolt 5.",
+    "unsure": [
+      "popularity",
+      "priceAmdMax"
+    ],
+    "aliases": [
+      "MacBook Pro 16 M4 Pro",
+      "MacBook Pro 16.2 M4 Pro",
+      "MacBook Pro 16 M4Pro",
+      "Apple Macbook Pro 16.2\"/M4 Pro/24GB RAM/512GB/MX2X3/Space Black",
+      "Apple Macbook Pro 16.2\"/M4 Pro/24GB RAM/512GB SSD/MX2T3/Silver"
     ]
   },
   {
