@@ -20,7 +20,9 @@ const { matchPhone, looksLikeAccessory, COLOR_WORDS, ramOf } = await import('dat
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const BRANDS = [...new Set(phones.map(p => p.brand))]
   .concat(['OPPO', 'Vivo', 'Motorola', 'Nokia', 'ZTE', 'Infinix', 'Tecno', 'Fitbit', 'Whoop',
-           'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba', 'Dahua', 'Hori', 'TP-Link', 'Flyingvoice'])
+           'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba', 'Dahua', 'Hori', 'TP-Link', 'Flyingvoice',
+           // approved by the owner 2026-10-30
+           'Ariston', 'Mova', 'Gorenje', 'Gree', 'Wacom', 'Fujifilm'])
   // longest first, so "Bang & Olufsen" is not read as nothing at all
   .sort((a, b) => b.length - a.length);
 const reBrand = (b, flags) => new RegExp('(^|\\s)' + b.replace(/[+&()[\]{}.*?^$|\\]/g, '\\$&') + '(\\s|$)', flags);
@@ -93,6 +95,9 @@ const FAMILY = [
   [/\bAirwrap\b|\bSupersonic\b|\bAirStrait\b|\bAirStarit\b/i, 'haircare'],
   [/\bVacuum\b/i, 'vacuum'],
   [/\bElectric Kettle\b|\bKettle\b|\bBlender\b|\bAir Fryer\b/i, 'kitchen'],
+  [/\bJuicer\b|\bHand Mixer\b|\bStand Mixer\b|\bMeat Grinder\b|\bMicrowave\b|\bFood Slicer\b|\bChopper\b|\bBread Maker\b|\bFood Processor\b/i, 'kitchen'],
+  [/\bWashing Machine\b|\bWasher Dryer\b|\bDishwasher\b|\bRefrigerator\b|\bFridge\b|\bFreezer\b/i, 'largeappliance'],
+  [/\bSteam Iron\b/i, 'appliance'],
   [/\bEspresso Machine\b|\bCoffee Machine\b/i, 'coffee'],
   [/\bAir ?Purifier\b/i, 'purifier'],
   [/\bAir Conditioner\b|\bWater Heater\b|\bHeater\b|\bBoiler\b|\bDehumidifier\b|\bHumidifier\b/i, 'climate'],

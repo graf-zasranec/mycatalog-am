@@ -88827,12 +88827,13 @@
     "brand": "Karcher",
     "name": "AF 20 Air Purifier",
     "aliases": [
-      "KARCHER AF20 1.024-820.0"
+      "KARCHER AF20 1.024-820.0",
+      "AF20 1.024-820.0 Air Purifier"
     ],
     "tier": "budget",
     "priceAmd": 85000,
     "priceAmdMax": 85000,
-    "popularity": 35,
+    "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
@@ -88861,20 +88862,25 @@
       "width": 220,
       "thickness": 220,
       "height": 346
-    }
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
   },
   {
     "id": "karcher-af30",
-    "category": "vacuum",
+    "category": "purifier",
     "brand": "Karcher",
     "name": "AF 30 Air Purifier",
     "aliases": [
-      "KARCHER AF30 1.024-821.0"
+      "KARCHER AF30 1.024-821.0",
+      "AF30 1.024-821.0 Air Purifier"
     ],
     "tier": "budget",
     "priceAmd": 149000,
     "priceAmdMax": 149000,
-    "popularity": 35,
+    "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
@@ -88886,7 +88892,7 @@
     "display": {},
     "battery": {},
     "appliance": {
-      "type": "robot_vacuum",
+      "type": "air_purifier",
       "power": 35
     },
     "summaryEn": "Karcher AF 30 Air Purifier.",
@@ -88895,7 +88901,11 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "colors": [
+      "White"
+    ],
+    "year": null
   },
   {
     "id": "karcher-af50-signature-line",
@@ -88903,12 +88913,13 @@
     "brand": "Karcher",
     "name": "AF 50 Signature Line Air Purifier",
     "aliases": [
-      "KARCHER AF50 Signature Line 1.024-826.0"
+      "KARCHER AF50 Signature Line 1.024-826.0",
+      "AF50 Signature Line 1.024-826.0 Air Purifier"
     ],
     "tier": "mid",
     "priceAmd": 240000,
     "priceAmdMax": 240000,
-    "popularity": 35,
+    "popularity": 40,
     "accent": "#5C6470",
     "variants": [
       {
@@ -88937,7 +88948,11 @@
       "width": 290,
       "thickness": 290,
       "height": 580
-    }
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
   },
   {
     "id": "karcher-rcf3",
@@ -139847,5 +139862,3624 @@
     "os": "Windows 11",
     "released": "2026",
     "year": 2026
+  },
+  {
+    "id": "ariston-pro1-r80v-1-8k-pl-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "PRO1 R80V 1.8K PL Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 89900,
+    "priceAmdMax": 89900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 89900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston PRO1 R80V 1.8K PL Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1800,
+      "volume": 80
+    },
+    "body": {
+      "weight": 19000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-pro1-r-abs120v-1-8k-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "PRO1 R ABS120V 1.8K Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 123000,
+    "priceAmdMax": 123000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 123000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston PRO1 R ABS120V 1.8K Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1800,
+      "volume": 120
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-pro1-r-abs150v-1-8k-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "PRO1 R ABS150V 1.8K Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 145000,
+    "priceAmdMax": 145000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 145000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston PRO1 R ABS150V 1.8K Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1800,
+      "volume": 150
+    },
+    "body": {
+      "weight": 32500
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-pro1-r50v-1-5k-pl-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "PRO1 R50V 1.5K PL Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 72900,
+    "priceAmdMax": 72900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 72900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston PRO1 R50V 1.5K PL Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 50
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-pro1-r80h-1-8k-pl-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "PRO1 R80H 1.8K PL Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 105000,
+    "priceAmdMax": 105000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 105000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston PRO1 R80H 1.8K PL Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1800,
+      "volume": 80
+    },
+    "body": {
+      "weight": 22000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-sg1-80v-1-5k-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "SG1 80V 1.5K Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 81000,
+    "priceAmdMax": 81000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 81000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston SG1 80V 1.5K Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 80
+    },
+    "body": {
+      "weight": 24000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-sg1-100v-1-5k-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "SG1 100V 1.5K Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 94900,
+    "priceAmdMax": 94900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 94900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston SG1 100V 1.5K Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 100
+    },
+    "body": {
+      "weight": 26000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-pro1-r100v-1-8k-pl-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "PRO1 R100V 1.8K PL Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 99900,
+    "priceAmdMax": 99900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston PRO1 R100V 1.8K PL Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1800,
+      "volume": 100
+    },
+    "body": {
+      "weight": 23000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-clas-xc-28-ff-ng-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CLAS XC 28 FF NG Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 466500,
+    "priceAmdMax": 466500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 466500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CLAS XC 28 FF NG Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "ariston-cares-xc-24-ff-ng-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CARES XC 24 FF NG Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 312900,
+    "priceAmdMax": 312900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 312900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CARES XC 24 FF NG Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "ariston-clas-one-24-rdc-condens-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CLAS ONE 24 RDC CONDENS Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 553500,
+    "priceAmdMax": 553500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 553500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CLAS ONE 24 RDC CONDENS Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-royal-flash-wh-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 Royal Flash WH Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 171900,
+    "priceAmdMax": 171900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 171900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 Royal Flash WH Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 80
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh50-trend-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH50 Trend Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 65900,
+    "priceAmdMax": 65900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 65900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH50 Trend Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 50
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-trend-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 Trend Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 76900,
+    "priceAmdMax": 76900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 76900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 Trend Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 80
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-briliant-next-ech-bne2000-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "Brilliant Next ECH/BNE2000 Heater",
+    "aliases": [
+      "Briliant Next ECH/BNE2000 Heater"
+    ],
+    "tier": "budget",
+    "priceAmd": 75900,
+    "priceAmdMax": 75900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 75900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux Briliant Next ECH/BNE2000 Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "heater",
+      "power": 2000
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-citadel-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 Citadel Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 140900,
+    "priceAmdMax": 140900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 140900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 Citadel Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 80
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh100-trend-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH100 Trend Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 87900,
+    "priceAmdMax": 87900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 87900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH100 Trend Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 100
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh100-citadel-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH100 Citadel Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 159900,
+    "priceAmdMax": 159900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 159900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH100 Citadel Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 100
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-royal-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 Royal Water Heater",
+    "aliases": [
+      "ELECTROLUX EWH80 Royal Silver Water Heater"
+    ],
+    "tier": "mid",
+    "priceAmd": 171900,
+    "priceAmdMax": 171900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 171900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 Royal Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 80
+    },
+    "colors": [
+      "Silver"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-taptronic-s-3-3kw-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "TAPTRONIC S 3.3kw Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 25900,
+    "priceAmdMax": 25900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux TAPTRONIC S 3.3kw Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 3300
+    },
+    "year": null
+  },
+  {
+    "id": "ariston-clas-xc-35-ff-ng-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CLAS XC 35 FF NG Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 516500,
+    "priceAmdMax": 516500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 516500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CLAS XC 35 FF NG Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-major-lzr3-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 Major LZR3 Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 168900,
+    "priceAmdMax": 168900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 168900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 Major LZR3 Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 80
+    },
+    "body": {
+      "weight": 16700
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh50-royal-flash-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH50 Royal Flash Water Heater",
+    "aliases": [
+      "ELECTROLUX EWH50 Royal Flash White Water Heater",
+      "ELECTROLUX EWH50 Royal Flash Silver Water Heater"
+    ],
+    "tier": "mid",
+    "priceAmd": 125900,
+    "priceAmdMax": 138900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 125900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH50 Royal Flash Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 50
+    },
+    "body": {
+      "weight": 17600
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh100-major-lzr3-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH100 Major LZR3 Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 192900,
+    "priceAmdMax": 192900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 192900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH100 Major LZR3 Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 100
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ech-bmi2000-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "ECH/BMI2000 Heater",
+    "aliases": [
+      "ELECTROLUX Marble ECH/BMI2000 Heater"
+    ],
+    "tier": "budget",
+    "priceAmd": 87900,
+    "priceAmdMax": 87900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 87900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux ECH/BMI2000 Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "heater",
+      "power": 2000
+    },
+    "body": {
+      "weight": 7900
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh50-citadel-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH50 Citadel Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 112900,
+    "priceAmdMax": 112900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 112900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH50 Citadel Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 50
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-sg1-50v-1-5k-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "SG1 50V 1.5K Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 68900,
+    "priceAmdMax": 68900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 68900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston SG1 50V 1.5K Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 50
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-j20-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "J20 Vacuum",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 57900,
+    "priceAmdMax": 57900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 57900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova J20 Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "body": {
+      "weight": 3600
+    },
+    "colors": [
+      "Grey"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-velis-tech-pw-abse-80-1-5-2-5kw-water-heater",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "Velis tech PW ABSE 80 1.5/2.5KW Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 216000,
+    "priceAmdMax": 216000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 216000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston Velis tech PW ABSE 80 1.5/2.5KW Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 80
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-fd20-pro-air-fryer",
+    "category": "kitchen",
+    "brand": "Mova",
+    "name": "FD20 Pro Air Fryer",
+    "aliases": [
+      "MOVA FD20 Pro Black Air Fryer"
+    ],
+    "tier": "budget",
+    "priceAmd": 94900,
+    "priceAmdMax": 94900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 94900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova FD20 Pro Air Fryer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 2700
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh-80-azr-eec-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH 80 AZR EEC Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 126900,
+    "priceAmdMax": 126900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 126900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH 80 AZR EEC Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 80
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh-100-azr-eec-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH 100 AZR EEC Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 143900,
+    "priceAmdMax": 143900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 143900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH 100 AZR EEC Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 1500,
+      "volume": 100
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh-50-azr-eec-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH 50 AZR EEC Water Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 99500,
+    "priceAmdMax": 99500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH 50 AZR EEC Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "power": 2000,
+      "volume": 50
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-clas-one-30-rdc-condens-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CLAS ONE 30 RDC CONDENS Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 638500,
+    "priceAmdMax": 638500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 638500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CLAS ONE 30 RDC CONDENS Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-efh-s-1115-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EFH/S-1115 Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 13900,
+    "priceAmdMax": 13900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EFH/S-1115 Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "heater",
+      "power": 1500
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-taptronic-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "TAPTRONIC Water Heater",
+    "aliases": [
+      "ELECTROLUX TAPTRONIC WHITE Water Heater",
+      "ELECTROLUX TAPTRONIC BLACK Water Heater"
+    ],
+    "tier": "budget",
+    "priceAmd": 16900,
+    "priceAmdMax": 16900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 16900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux TAPTRONIC Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater"
+    },
+    "year": null,
+    "colors": [
+      "White",
+      "Black"
+    ]
+  },
+  {
+    "id": "ariston-clas-one-35-rdc-condens-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CLAS ONE 35 RDC CONDENS Gas Boiler",
+    "aliases": [],
+    "tier": "flagship",
+    "priceAmd": 703500,
+    "priceAmdMax": 703500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 703500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CLAS ONE 35 RDC CONDENS Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "ariston-cares-x24-cf-ng-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CARES X24 CF NG Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 406500,
+    "priceAmdMax": 406500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 406500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CARES X24 CF NG Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-eifh-c-2-eec-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EIFH/C-2 EEC Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 13300,
+    "priceAmdMax": 13300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13300
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EIFH/C-2 EEC Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "heater",
+      "power": 2200
+    },
+    "colors": [
+      "Blue"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-e30-ultra-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "E30 Ultra Vacuum",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 259900,
+    "priceAmdMax": 259900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 259900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova E30 Ultra Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum"
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-metalish-af10-pro-air-fryer",
+    "category": "kitchen",
+    "brand": "Mova",
+    "name": "Metalish AF10 Pro Air Fryer",
+    "aliases": [
+      "MOVA Metalish AF10 Pro Black Air Fryer"
+    ],
+    "tier": "budget",
+    "priceAmd": 57900,
+    "priceAmdMax": 57900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 57900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova Metalish AF10 Pro Air Fryer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 1550
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-rapid-dig-invertor-ech-ri2000-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "Rapid Digital Inverter ECH/RI2000 Heater",
+    "aliases": [
+      "Rapid Dig.Invertor ECH/RI2000 Heater"
+    ],
+    "tier": "budget",
+    "priceAmd": 49900,
+    "priceAmdMax": 49900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux Rapid Dig.Invertor ECH/RI2000 Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "heater",
+      "power": 2000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ech-ecn2000m-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "ECH/ECN2000M Heater",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 27900,
+    "priceAmdMax": 27900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 27900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux ECH/ECN2000M Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "heater",
+      "power": 2000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-eap2075d-air-purifier",
+    "category": "purifier",
+    "brand": "Electrolux",
+    "name": "EAP2075D Air Purifier",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 112900,
+    "priceAmdMax": 112900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 112900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EAP2075D Air Purifier.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_purifier",
+      "power": 60
+    },
+    "body": {
+      "weight": 5400
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-flip10",
+    "category": "haircare",
+    "brand": "Mova",
+    "name": "Flip10",
+    "aliases": [
+      "MOVA Flip10 Styler"
+    ],
+    "tier": "budget",
+    "priceAmd": 59900,
+    "priceAmdMax": 59900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova Flip10.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hair_dryer",
+      "power": 1400
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-master-10",
+    "category": "haircare",
+    "brand": "Mova",
+    "name": "Master 10 Multistyler",
+    "aliases": [
+      "MOVA Master 10 Styler",
+      "Master 10"
+    ],
+    "tier": "mid",
+    "priceAmd": 144900,
+    "priceAmdMax": 144900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 144900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova Master 10.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hair_styler",
+      "power": 1600
+    },
+    "colors": [
+      "Lunar Silver",
+      "Sakura Pink"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh50-formax-dl-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH50 Formax DL Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 112900,
+    "priceAmdMax": 112900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 112900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH50 Formax DL Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 50
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-centurio-iq-invertor-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 CENTURIO IQ INVERTOR Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 152900,
+    "priceAmdMax": 152900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 152900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 CENTURIO IQ INVERTOR Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 80
+    },
+    "year": null
+  },
+  {
+    "id": "mova-fd10s-pro-air-fryer",
+    "category": "kitchen",
+    "brand": "Mova",
+    "name": "FD10s Pro Air Fryer",
+    "aliases": [
+      "MOVA FD10s Pro Black Air Fryer",
+      "MOVA FD10s Pro White Air Fryer"
+    ],
+    "tier": "budget",
+    "priceAmd": 65900,
+    "priceAmdMax": 65900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 65900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova FD10s Pro Air Fryer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 1800
+    },
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-s70-pro-roller-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "S70 Pro Roller Vacuum",
+    "aliases": [
+      "MOVA S70 Pro Roller White Vacuum"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 499900,
+    "priceAmdMax": 499900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 499900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova S70 Pro Roller Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "power": 80
+    },
+    "body": {
+      "weight": 5000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "ariston-clas-xc-24-ff-ng-gas-boiler",
+    "category": "climate",
+    "brand": "Ariston",
+    "name": "CLAS XC 24 FF NG Gas Boiler",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 416500,
+    "priceAmdMax": 416500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 416500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Ariston CLAS XC 24 FF NG Gas Boiler.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "boiler"
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-centurio-iq-3-0-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 CENTURIO IQ 3.0 Water Heater",
+    "aliases": [
+      "ELECTROLUX EWH80 CENTURIO IQ 3.0 SILVER Water Heater"
+    ],
+    "tier": "mid",
+    "priceAmd": 175900,
+    "priceAmdMax": 175900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 175900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 CENTURIO IQ 3.0 Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 80
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh100-centurio-iq-3-0-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH100 CENTURIO IQ 3.0 Water Heater",
+    "aliases": [
+      "ELECTROLUX EWH100 CENTURIO IQ 3.0 SILVER Water Heater"
+    ],
+    "tier": "mid",
+    "priceAmd": 199500,
+    "priceAmdMax": 199500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 199500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH100 CENTURIO IQ 3.0 Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 100
+    },
+    "year": null
+  },
+  {
+    "id": "mova-z60-ultra-roller-complete-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "Z60 Ultra Roller Complete Vacuum",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 699900,
+    "priceAmdMax": 699900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 699900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova Z60 Ultra Roller Complete Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "power": 75
+    },
+    "body": {
+      "weight": 4700
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-m50-ultra-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "M50 Ultra Vacuum",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 279900,
+    "priceAmdMax": 279900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 279900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova M50 Ultra Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "cordless_vacuum",
+      "power": 450
+    },
+    "body": {
+      "weight": 8900
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-e40-ultra-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "E40 Ultra Vacuum",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 289900,
+    "priceAmdMax": 289900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 289900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova E40 Ultra Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "power": 75
+    },
+    "body": {
+      "weight": 4000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": null
+  },
+  {
+    "id": "mova-s7-vacuum",
+    "category": "vacuum",
+    "brand": "Mova",
+    "name": "S7 Vacuum",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 115900,
+    "priceAmdMax": 115900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 115900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Mova S7 Vacuum.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "cordless_vacuum",
+      "power": 535
+    },
+    "body": {
+      "weight": 1900
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh50-centurio-iq-invertor-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH50 CENTURIO IQ INVERTOR Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 145000,
+    "priceAmdMax": 145000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 145000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH50 CENTURIO IQ INVERTOR Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 50
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh50-centurio-iq-3-0-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH50 CENTURIO IQ 3.0 Water Heater",
+    "aliases": [
+      "ELECTROLUX EWH50 CENTURIO IQ 3.0 SILVER Water Heater"
+    ],
+    "tier": "mid",
+    "priceAmd": 149900,
+    "priceAmdMax": 149900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 149900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH50 CENTURIO IQ 3.0 Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 50
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh80-smart-inverter-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH80 SMART INVERTER Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 196900,
+    "priceAmdMax": 196900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 196900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH80 SMART INVERTER Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 80
+    },
+    "year": null
+  },
+  {
+    "id": "electrolux-ewh100-smart-inverter-water-heater",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "EWH100 SMART INVERTER Water Heater",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 209900,
+    "priceAmdMax": 209900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 209900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Electrolux EWH100 SMART INVERTER Water Heater.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "water_heater",
+      "volume": 100
+    },
+    "year": null
+  },
+  {
+    "id": "gorenje-atcm730t-coffee-machine",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "ATCM730T Coffee Machine",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje ATCM730T Coffee Machine.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "coffee_machine"
+    }
+  },
+  {
+    "id": "gorenje-bm910w-bread-maker",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "BM910W Bread Maker",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 65000,
+    "priceAmdMax": 65000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 65000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje BM910W Bread Maker.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "bread_maker",
+      "power": 910
+    }
+  },
+  {
+    "id": "gorenje-escm15cd-coffee-machine",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "ESCM15CD Coffee Machine",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 53000,
+    "priceAmdMax": 53000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 53000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje ESCM15CD Coffee Machine.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "coffee_machine"
+    }
+  },
+  {
+    "id": "gorenje-escm15dbk-coffee-machine",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "ESCM15DBK Coffee Machine",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 49000,
+    "priceAmdMax": 49000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje ESCM15DBK Coffee Machine.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "coffee_machine"
+    }
+  },
+  {
+    "id": "gorenje-fh21fpw-freezer",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "FH21FPW Freezer",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 129000,
+    "priceAmdMax": 129000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje FH21FPW Freezer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "freezer",
+      "volume": 198
+    }
+  },
+  {
+    "id": "gorenje-gs520e15s-dishwasher",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "GS520E15S Dishwasher",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 199000,
+    "priceAmdMax": 199000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 199000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje GS520E15S Dishwasher.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "dishwasher",
+      "settings": 9
+    }
+  },
+  {
+    "id": "gorenje-gs643c90x-dishwasher",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "GS643C90X Dishwasher",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 229000,
+    "priceAmdMax": 229000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 229000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje GS643C90X Dishwasher.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "dishwasher",
+      "settings": 16
+    }
+  },
+  {
+    "id": "gorenje-gs673b90x-dishwasher",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "GS673B90X Dishwasher",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 269000,
+    "priceAmdMax": 269000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 269000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje GS673B90X Dishwasher.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "dishwasher",
+      "settings": 16
+    }
+  },
+  {
+    "id": "gorenje-hbc802qw-blender",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "HBC802QW Blender",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 20000,
+    "priceAmdMax": 20000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 20000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje HBC802QW Blender.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "blender"
+    }
+  },
+  {
+    "id": "gorenje-hbc806qw-blender",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "HBC806QW Blender",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 26800,
+    "priceAmdMax": 26800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 26800
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje HBC806QW Blender.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "blender"
+    }
+  },
+  {
+    "id": "gorenje-hbc807qb-hand-blender",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "HBC807QB Hand Blender",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 28900,
+    "priceAmdMax": 28900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 28900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje HBC807QB Hand Blender.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hand_blender",
+      "power": 800
+    }
+  },
+  {
+    "id": "gorenje-hbx1000eb-hand-blender",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "HBX1000EB Hand Blender",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 30000,
+    "priceAmdMax": 30000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 30000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje HBX1000EB Hand Blender.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hand_blender",
+      "power": 1000
+    }
+  },
+  {
+    "id": "gorenje-hbx1000xe-hand-blender",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "HBX1000XE Hand Blender",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 29500,
+    "priceAmdMax": 29500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje HBX1000XE Hand Blender.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hand_blender",
+      "power": 1000
+    }
+  },
+  {
+    "id": "gorenje-hbx601xg-hand-blender",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "HBX601XG Hand Blender",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 10000,
+    "priceAmdMax": 10000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 10000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje HBX601XG Hand Blender.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hand_blender"
+    }
+  },
+  {
+    "id": "gorenje-jc400be-juicer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "JC400BE Juicer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje JC400BE Juicer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "juicer",
+      "power": 400
+    }
+  },
+  {
+    "id": "gorenje-jc900e-juicer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "JC900E Juicer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje JC900E Juicer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "juicer",
+      "power": 900
+    }
+  },
+  {
+    "id": "gorenje-k15dws-kettle",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "K15DWS Kettle",
+    "aliases": [
+      "GORENJE K15DWS Electric Kettle"
+    ],
+    "tier": "budget",
+    "priceAmd": 19000,
+    "priceAmdMax": 19000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje K15DWS Kettle.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "volume": 1.5
+    }
+  },
+  {
+    "id": "gorenje-k15orab-kettle",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "K15ORAB Kettle",
+    "aliases": [
+      "GORENJE K15ORAB Electric Kettle"
+    ],
+    "tier": "budget",
+    "priceAmd": 22000,
+    "priceAmdMax": 22000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 22000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje K15ORAB Kettle.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "volume": 1.5
+    }
+  },
+  {
+    "id": "gorenje-k17gdwii-kettle",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "K17GDWII Kettle",
+    "aliases": [
+      "GORENJE K17GDWII Electric Kettle"
+    ],
+    "tier": "budget",
+    "priceAmd": 18000,
+    "priceAmdMax": 18000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 18000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje K17GDWII Kettle.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "volume": 1.7
+    }
+  },
+  {
+    "id": "gorenje-k17gxg-kettle",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "K17GXG Kettle",
+    "aliases": [
+      "GORENJE K17GXG Electric Kettle"
+    ],
+    "tier": "budget",
+    "priceAmd": 13000,
+    "priceAmdMax": 13000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje K17GXG Kettle.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "power": 2200,
+      "volume": 1.7
+    }
+  },
+  {
+    "id": "gorenje-m450xg-hand-mixer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "M450XG Hand Mixer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 10000,
+    "priceAmdMax": 10000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 10000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje M450XG Hand Mixer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hand_mixer",
+      "power": 450
+    }
+  },
+  {
+    "id": "gorenje-m500dc-hand-mixer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "M500DC Hand Mixer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 15000,
+    "priceAmdMax": 15000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 15000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje M500DC Hand Mixer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "hand_mixer",
+      "power": 500
+    }
+  },
+  {
+    "id": "gorenje-mg2202xe-meat-grinder",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "MG2202XE Meat Grinder",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 53000,
+    "priceAmdMax": 53000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 53000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje MG2202XE Meat Grinder.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "meat_grinder"
+    }
+  },
+  {
+    "id": "gorenje-mmc600xg-stand-mixer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "MMC600XG Stand Mixer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 54000,
+    "priceAmdMax": 54000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 54000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje MMC600XG Stand Mixer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 600
+    }
+  },
+  {
+    "id": "gorenje-mmc800cw-stand-mixer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "MMC800CW Stand Mixer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 63000,
+    "priceAmdMax": 63000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 63000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje MMC800CW Stand Mixer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 800
+    }
+  },
+  {
+    "id": "gorenje-mo17e1s-microwave",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "MO17E1S Microwave",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje MO17E1S Microwave.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 17
+    }
+  },
+  {
+    "id": "gorenje-mo20a4xh-microwave",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "MO20A4XH Microwave",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje MO20A4XH Microwave.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 20
+    }
+  },
+  {
+    "id": "gorenje-nrs8182kx-refrigerator",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "NRS8182KX Refrigerator",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 379000,
+    "priceAmdMax": 379000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 379000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje NRS8182KX Refrigerator.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "fridge",
+      "volume": 441
+    }
+  },
+  {
+    "id": "gorenje-r401w-food-slicer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "R401W Food Slicer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 29000,
+    "priceAmdMax": 29000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje R401W Food Slicer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "food_slicer",
+      "power": 401
+    }
+  },
+  {
+    "id": "gorenje-r607a-food-slicer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "R607A Food Slicer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 49000,
+    "priceAmdMax": 49000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje R607A Food Slicer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "food_slicer"
+    }
+  },
+  {
+    "id": "gorenje-r708a-food-slicer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "R708A Food Slicer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 56000,
+    "priceAmdMax": 56000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 56000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje R708A Food Slicer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "food_slicer"
+    }
+  },
+  {
+    "id": "gorenje-r902a-food-slicer",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "R902A Food Slicer",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 83000,
+    "priceAmdMax": 83000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 83000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje R902A Food Slicer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "food_slicer"
+    }
+  },
+  {
+    "id": "gorenje-rea35kc-air-conditioner",
+    "category": "climate",
+    "brand": "Gorenje",
+    "name": "REA35KC Air Conditioner",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 198000,
+    "priceAmdMax": 198000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 198000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje REA35KC Air Conditioner.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000
+    }
+  },
+  {
+    "id": "gorenje-rea53kc-air-conditioner",
+    "category": "climate",
+    "brand": "Gorenje",
+    "name": "REA53KC Air Conditioner",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 279000,
+    "priceAmdMax": 279000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 279000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje REA53KC Air Conditioner.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000
+    }
+  },
+  {
+    "id": "gorenje-s400xg-chopper",
+    "category": "kitchen",
+    "brand": "Gorenje",
+    "name": "S400XG Chopper",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 10000,
+    "priceAmdMax": 10000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 10000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje S400XG Chopper.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "chopper"
+    }
+  },
+  {
+    "id": "gorenje-sih2200rbc-steam",
+    "category": "appliance",
+    "brand": "Gorenje",
+    "name": "SIH2200RBC Steam Iron",
+    "aliases": [
+      "Gorenje SIH2200RBC Steam Iron"
+    ],
+    "tier": "budget",
+    "priceAmd": 14000,
+    "priceAmdMax": 14000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 14000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje SIH2200RBC Steam.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "iron",
+      "power": 2400
+    }
+  },
+  {
+    "id": "gorenje-sih2600blc-steam",
+    "category": "appliance",
+    "brand": "Gorenje",
+    "name": "SIH2600BLC Steam Iron",
+    "aliases": [
+      "Gorenje SIH2600BLC Steam Iron"
+    ],
+    "tier": "budget",
+    "priceAmd": 19000,
+    "priceAmdMax": 19000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje SIH2600BLC Steam.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "iron",
+      "power": 2600
+    }
+  },
+  {
+    "id": "gorenje-tcm350w-coffee-machine",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "TCM350W Coffee Machine",
+    "aliases": [],
+    "tier": "budget",
+    "priceAmd": 14000,
+    "priceAmdMax": 14000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 14000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje TCM350W Coffee Machine.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "coffee_machine",
+      "power": 350
+    }
+  },
+  {
+    "id": "gorenje-w2nhpi62scss-washing-machine",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "W2NHPI62SCSS Washing Machine",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 149000,
+    "priceAmdMax": 149000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 149000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje W2NHPI62SCSS Washing Machine.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 6
+    }
+  },
+  {
+    "id": "gorenje-w3nhei74sas-washing-machine",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "W3NHEI74SAS Washing Machine",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 179000,
+    "priceAmdMax": 179000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 179000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje W3NHEI74SAS Washing Machine.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 7
+    }
+  },
+  {
+    "id": "gorenje-wd2pa964adw-washer-dryer",
+    "category": "largeappliance",
+    "brand": "Gorenje",
+    "name": "WD2PA964ADW Washer Dryer",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 239000,
+    "priceAmdMax": 239000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 239000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gorenje WD2PA964ADW Washer Dryer.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 9
+    }
+  },
+  {
+    "id": "gree-gwh18agd-k6dna1d-o-air-conditioner",
+    "category": "climate",
+    "brand": "Gree",
+    "name": "GWH18AGD-K6DNA1D/O Air Conditioner",
+    "aliases": [],
+    "tier": "mid",
+    "priceAmd": 289000,
+    "priceAmdMax": 289000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 289000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gree GWH18AGD-K6DNA1D/O Air Conditioner.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000
+    }
+  },
+  {
+    "id": "gree-gwh24agd-k6dna1c-o-air-conditioner",
+    "category": "climate",
+    "brand": "Gree",
+    "name": "GWH24AGD-K6DNA1C/O Air Conditioner",
+    "aliases": [],
+    "tier": "upper-mid",
+    "priceAmd": 379000,
+    "priceAmdMax": 379000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 379000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Gree GWH24AGD-K6DNA1C/O Air Conditioner.",
+    "unsure": [
+      "popularity",
+      "display",
+      "chipset",
+      "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000
+    }
   }
 ]
