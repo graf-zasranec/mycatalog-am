@@ -22615,7 +22615,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
       "process": "3 nm",
-      "gpu": "Adreno 840 1.2 GHz"
+      "gpu": "Adreno 840 1.2 GHz",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "body": {
       "weight": 219,
@@ -22689,7 +22690,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
       "process": "3 nm",
-      "gpu": "Adreno 830"
+      "gpu": "Adreno 830",
+      "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
     },
     "body": {
       "weight": 199,
@@ -23024,7 +23026,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 520,
@@ -23152,7 +23155,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 365,
@@ -23219,7 +23223,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 365,
@@ -23295,7 +23300,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 496,
@@ -23367,7 +23373,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 685 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 475,
@@ -23599,7 +23606,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 196,
@@ -36213,7 +36221,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8s Gen 4",
       "process": "4 nm",
-      "gpu": "Adreno 825"
+      "gpu": "Adreno 825",
+      "cpu": "Octa-core (1x3.21 GHz Cortex-X4 & 3x3.0 GHz Cortex-A720 & 2x2.8 GHz Cortex-A720 & 2x2.0 GHz Cortex-A720)"
     },
     "variants": [
       {
@@ -36311,7 +36320,8 @@
     "chipset": {
       "name": "MediaTek Helio G85 (MT6769V/CZ)",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 950MHz"
+      "gpu": "Arm Mali-G52 MC2 950MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 188,
@@ -36332,7 +36342,8 @@
     "camera": {
       "modules": 2,
       "main": "8 MP, f/2.0",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2023-09",
     "sources": [
@@ -36380,7 +36391,8 @@
     "chipset": {
       "name": "MediaTek Helio G85 (MT6769V/CZ)",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 950MHz"
+      "gpu": "Arm Mali-G52 MC2 950MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 190,
@@ -36401,7 +36413,8 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2023-09",
     "sources": [
@@ -36448,7 +36461,8 @@
     "chipset": {
       "name": "MediaTek Helio G85 (MT6769V/CZ)",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 950MHz"
+      "gpu": "Arm Mali-G52 MC2 950MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 192,
@@ -36469,7 +36483,8 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2023-07",
     "sources": [
@@ -36517,7 +36532,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 180,
@@ -36538,7 +36554,8 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2023-07",
     "sources": [
@@ -40724,7 +40741,8 @@
     "chipset": {
       "name": "MediaTek Helio G99",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "variants": [
       {
@@ -40800,7 +40818,8 @@
     "chipset": {
       "name": "Snapdragon 6 Gen 3",
       "process": "4 nm",
-      "gpu": "Arm Mali-G615 MC2"
+      "gpu": "Arm Mali-G615 MC2",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55)"
     },
     "variants": [
       {
@@ -40973,7 +40992,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 (MT6789)",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 366,
@@ -41054,7 +41074,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 695 (SM6375)",
       "process": "6 nm",
-      "gpu": "Qualcomm Adreno 619"
+      "gpu": "Qualcomm Adreno 619",
+      "cpu": "Octa-core (2x2.2 GHz Kryo 660 Gold & 6x1.7 GHz Kryo 660 Silver)"
     },
     "body": {
       "weight": 510,
@@ -41460,7 +41481,8 @@
     "chipset": {
       "name": "Snapdragon 8 Gen 2",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 740"
+      "gpu": "Qualcomm Adreno 740",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
     },
     "camera": {
       "modules": 1,
@@ -41616,7 +41638,8 @@
     "chipset": {
       "name": "Snapdragon 8 Gen 2",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 740"
+      "gpu": "Qualcomm Adreno 740",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
     },
     "camera": {
       "modules": 2,
@@ -41709,7 +41732,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Gen2",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 740"
+      "gpu": "Qualcomm Adreno 740",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
     },
     "body": {
       "weight": 732,
@@ -51356,7 +51380,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 7025",
       "process": "6 nm",
-      "gpu": "IMG BXM-8-256"
+      "gpu": "IMG BXM-8-256",
+      "cpu": "Octa-core (2x2.5 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 190,
@@ -51447,7 +51472,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 6 Gen 3",
       "process": "4 nm",
-      "gpu": "Adreno 710"
+      "gpu": "Adreno 710",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 178,
@@ -51607,7 +51633,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 695 (SM6375)",
       "process": "6 nm",
-      "gpu": "Qualcomm Adreno 619"
+      "gpu": "Qualcomm Adreno 619",
+      "cpu": "Octa-core (2x2.2 GHz Kryo 660 Gold & 6x1.7 GHz Kryo 660 Silver)"
     },
     "body": {
       "weight": 189,
@@ -51628,7 +51655,8 @@
     "camera": {
       "modules": 3,
       "main": "48 MP, f/1.8",
-      "front": "13 MP"
+      "front": "13 MP",
+      "video": "1080p@30fps"
     },
     "released": "2023-02",
     "sources": [
@@ -51672,7 +51700,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 778G (SM7325)",
       "process": "6 nm",
-      "gpu": "Adreno 642L"
+      "gpu": "Adreno 642L",
+      "cpu": "Octa-core (1x2.4 GHz Cortex-A78 & 3x2.2 GHz Cortex-A78 & 4x1.9 GHz Cortex-A55)"
     },
     "body": {
       "weight": 181,
@@ -52342,7 +52371,8 @@
     "chipset": {
       "name": "MediaTek Helio G85 (MT6769V/CZ)",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 950MHz"
+      "gpu": "Arm Mali-G52 MC2 950MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 192,
@@ -52510,7 +52540,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 685 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 224,
@@ -52531,7 +52562,8 @@
     "camera": {
       "modules": 3,
       "main": "50 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2025-08",
     "sources": [
@@ -53169,7 +53201,8 @@
     "chipset": {
       "name": "Unisoc Tiger T615 (T7250)",
       "process": "12 nm",
-      "gpu": "Mali-G57 MP1"
+      "gpu": "Mali-G57 MP1",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
     },
     "body": {
       "weight": 193,
@@ -53190,7 +53223,8 @@
     "camera": {
       "modules": 2,
       "main": "32 MP, f/2.0",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2025-03",
     "sources": [
@@ -53895,7 +53929,8 @@
     ],
     "os": "Android, HyperOS",
     "chipset": {
-      "name": "Qualcomm Snapdragon 685"
+      "name": "Qualcomm Snapdragon 685",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 188.5
@@ -54291,7 +54326,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7s Gen3",
       "process": "4 nm",
-      "gpu": "Adreno 810 480MHz"
+      "gpu": "Adreno 810 480MHz",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)"
     },
     "body": {
       "weight": 210,
@@ -55058,7 +55094,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 (MT6789)",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 465,
@@ -55342,7 +55379,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 478,
@@ -55405,7 +55443,8 @@
     "chipset": {
       "name": "MediaTek Helio G85 (MT6769V/CZ)",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 950MHz"
+      "gpu": "Arm Mali-G52 MC2 950MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 370,
@@ -57088,7 +57127,8 @@
     "chipset": {
       "name": "Unisoc Tiger T615 (T7250)",
       "process": "12 nm",
-      "gpu": "Mali-G57 MP1"
+      "gpu": "Mali-G57 MP1",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
     },
     "body": {
       "weight": 193,
@@ -59014,7 +59054,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
       "process": "3 nm",
-      "gpu": "Adreno 830"
+      "gpu": "Adreno 830",
+      "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
     },
     "camera": {
       "modules": 3,
@@ -59284,7 +59325,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
       "process": "3 nm",
-      "gpu": "Adreno 840"
+      "gpu": "Adreno 840",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "camera": {
       "modules": 3,
@@ -59346,7 +59388,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
       "process": "3 nm",
-      "gpu": "Adreno 840"
+      "gpu": "Adreno 840",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "camera": {
       "modules": 3,
@@ -59544,7 +59587,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
       "process": "3 nm",
-      "gpu": "Adreno 840"
+      "gpu": "Adreno 840",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "camera": {
       "modules": 3,
@@ -59605,7 +59649,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
       "process": "3 nm",
-      "gpu": "Adreno 840"
+      "gpu": "Adreno 840",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "camera": {
       "modules": 3,
@@ -59727,7 +59772,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8s Gen 4",
       "process": "4 nm",
-      "gpu": "Adreno 825"
+      "gpu": "Adreno 825",
+      "cpu": "Octa-core (1x3.21 GHz Cortex-X4 & 3x3.0 GHz Cortex-A720 & 2x2.8 GHz Cortex-A720 & 2x2.0 GHz Cortex-A720)"
     },
     "camera": {
       "modules": 1,
@@ -68429,7 +68475,8 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 8 Elite Gen 5"
+      "name": "Qualcomm Snapdragon 8 Elite Gen 5",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "body": {
       "weight": 211
@@ -68524,7 +68571,8 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Unisoc T7250"
+      "name": "Unisoc T7250",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
     },
     "body": {
       "weight": 193
@@ -72956,7 +73004,8 @@
       "body.weight"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 685"
+      "name": "Qualcomm Snapdragon 685",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 475
@@ -73009,7 +73058,8 @@
       "Gray"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 8 Elite"
+      "name": "Qualcomm Snapdragon 8 Elite",
+      "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
     },
     "body": {
       "weight": 485
@@ -77385,7 +77435,8 @@
       "popularity"
     ],
     "chipset": {
-      "name": "MediaTek Dimensity 7300 Pro"
+      "name": "MediaTek Dimensity 7300 Pro",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
     },
     "camera": {
       "modules": 3,
@@ -77442,7 +77493,8 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 7s Gen 3",
-      "gpu": "Adreno 810"
+      "gpu": "Adreno 810",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)"
     },
     "camera": {
       "modules": 3,
@@ -90109,7 +90161,8 @@
       "body.weight"
     ],
     "chipset": {
-      "name": "Unisoc T610"
+      "name": "Unisoc T610",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "camera": {
       "main": "48 MP (Sony IMX586)"
@@ -103036,7 +103089,8 @@
     "chipset": {
       "name": "MediaTek Helio G91 Ultra",
       "process": "12 nm",
-      "gpu": "Mali-G52 MC2"
+      "gpu": "Mali-G52 MC2",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "battery": {
       "capacity": 7500,
