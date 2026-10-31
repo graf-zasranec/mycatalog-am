@@ -22605,7 +22605,8 @@
       "resolution": "1256x2808",
       "ppi": 458,
       "brightness": 6000,
-      "type": "OLED"
+      "type": "OLED",
+      "refresh": 120
     },
     "battery": {
       "capacity": 6270,
@@ -24175,7 +24176,8 @@
     "camera": {
       "modules": 2,
       "main": "108 MP, f/1.75",
-      "front": "16 MP"
+      "front": "16 MP",
+      "video": "1080p@30fps"
     },
     "released": "2026-01",
     "sources": [
@@ -68771,7 +68773,10 @@
     "os": "OxygenOS 16",
     "sources": [
       "https://www.oneplus.com/global/15/specs"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    }
   },
   {
     "id": "xiaomi-redmi-17c-4g",
@@ -77788,7 +77793,11 @@
     "colors": [
       "Black"
     ],
-    "specSource": "gsmarena.com/nothing_phone_(3a)_lite-14193.php, 2026-10-11"
+    "specSource": "gsmarena.com/nothing_phone_(3a)_lite-14193.php, 2026-10-11",
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "os": "Android 15"
   },
   {
     "id": "nothing-phone-pro-6974434224483",
@@ -77847,7 +77856,11 @@
     "colors": [
       "Black"
     ],
-    "specSource": "gsmarena.com/nothing_phone_(3a)_pro-13615.php, 2026-10-11"
+    "specSource": "gsmarena.com/nothing_phone_(3a)_pro-13615.php, 2026-10-11",
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "os": "Android 15"
   },
   {
     "id": "asus-vivobook-15-core-f1504va-bq338",
