@@ -22,7 +22,9 @@ const BRANDS = [...new Set(phones.map(p => p.brand))]
   .concat(['OPPO', 'Vivo', 'Motorola', 'Nokia', 'ZTE', 'Infinix', 'Tecno', 'Fitbit', 'Whoop',
            'Garmin', 'Anker', 'Logitech', 'Hisense', 'Panasonic', 'Toshiba', 'Dahua', 'Hori', 'TP-Link', 'Flyingvoice',
            // approved by the owner 2026-10-30
-           'Ariston', 'Mova', 'Gorenje', 'Gree', 'Wacom', 'Fujifilm'])
+           'Ariston', 'Mova', 'Gorenje', 'Gree', 'Wacom', 'Fujifilm',
+           // 2026-10-31: the owner asked for a professional cameras section
+           'Canon', 'Nikon'])
   // longest first, so "Bang & Olufsen" is not read as nothing at all
   .sort((a, b) => b.length - a.length);
 const reBrand = (b, flags) => new RegExp('(^|\\s)' + b.replace(/[+&()[\]{}.*?^$|\\]/g, '\\$&') + '(\\s|$)', flags);
@@ -83,6 +85,7 @@ function tvSpec(model) {
 const FAMILY = [
   [/\bMacBook\b|\bThinkPad\b|\bIdeaPad\b|\bVivobook\b|\bZenbook\b|\bExpertBook\b|\bOmniBook\b|\bProBook\b|\bEliteBook\b|\bPavilion\b|\bEnvy\b|\bVictus\b|\bOmen\b|\bInspiron\b|\bLatitude\b|\bVostro\b|\bXPS\b|\bAspire\b|\bNitro\b|\bPredator\b|\bSwift\b|\bTravelMate\b|\bMagicBook\b|\bMateBook\b|\bGalaxy Book\b|\bSurface Laptop\b|\bLegion\b|\bLOQ\b|\bYoga\b|\bROG\b|\bTUF\b|\bKatana\b|\bModern\b|\bCyborg\b|\bRedmiBook\b/i, 'laptop'],
   [/\bWacom\b|\bIntuos\b|\bCintiq\b|\bGraphics? Tablet\b|\bPen Tablet\b/i, 'graphicstablet'],
+  [/\bInstax\b|\bEOS\b|\bLumix\b|\bMirrorless\b|\bDSLR\b|\bCamera\b|\bAlpha (A|ZV)?\d|\bZV-E\d|\bCoolpix\b|\bX-T\d|\bX-S\d|\bX100/i, 'camera'],
   [/\biPad\b|\bGalaxy Tab\b|\bHonor Pad\b|\bMatePad\b|\bRedmi Pad\b|\bMi Pad\b|\bLenovo Tab\b|\bSurface Pro\b/i, 'tablet'],
   [/\biMac\b|\bMac mini\b|\bMac Studio\b|\bMac Pro\b|\bAll[- ]?in[- ]?One\b/i, 'desktop'],
   [/\bStudio Display\b|\bPro Display\b|\bOdyssey\b|\bUltraGear\b|\bUltraFine\b|\bProArt\b|\bZOWIE\b|\bNitro (XV|VG|KG|EI)\b/i, 'monitor'],

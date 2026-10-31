@@ -143843,5 +143843,931 @@
       "type": "air_conditioner",
       "btu": 24000
     }
+  },
+  {
+    "id": "wacom-one-by-wacom-small",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "One by Wacom Small",
+    "aliases": [
+      "One by Wacom Small",
+      "Wacom One by Small",
+      "Wacom CTL-472",
+      "CTL-472-N",
+      "CTL-472-S",
+      "Wacom One Small Black/Red"
+    ],
+    "tier": "budget",
+    "priceAmd": 28900,
+    "priceAmdMax": 28900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 28900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Entry pen tablet: 152 x 95 mm active area, 2,048 pressure levels, USB.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {
+      "weight": 250,
+      "height": 210,
+      "width": 146,
+      "thickness": 8.7
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2016,
+    "connectivity": {
+      "wireless": "USB"
+    }
+  },
+  {
+    "id": "wacom-one-s",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "One S",
+    "aliases": [
+      "Wacom One pen tablet small",
+      "CTC4110WL",
+      "CTC4110WLW1B",
+      "Wacom One S"
+    ],
+    "tier": "budget",
+    "priceAmd": 32900,
+    "priceAmdMax": 32900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Small pen tablet with Bluetooth and USB-C: 152 x 95 mm active area, 4,096 pressure levels.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {
+      "weight": 230
+    },
+    "colors": [
+      "White"
+    ],
+    "year": 2023,
+    "connectivity": {
+      "wireless": "USB-C, Bluetooth"
+    }
+  },
+  {
+    "id": "wacom-cintiq-16",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Cintiq 16",
+    "aliases": [
+      "Wacom Cintiq 16 (DTK1660K0B)",
+      "DTK1660K0B",
+      "DTK1660",
+      "DTK-1660"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 389900,
+    "priceAmdMax": 389900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 389900
+      }
+    ],
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "type": "IPS",
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "15.6-inch Full HD pen display with the Pro Pen 2 and 8,192 pressure levels.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {
+      "weight": 1900,
+      "height": 422,
+      "width": 285,
+      "thickness": 25
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "wacom-movinkpad-11",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "MovinkPad 11",
+    "aliases": [
+      "Wacom MovinkPad 11",
+      "MovinkPad 11,5",
+      "DTHA116CLOZ",
+      "DTHA116"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 229900,
+    "priceAmdMax": 229900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 229900
+      }
+    ],
+    "display": {
+      "size": 11.45,
+      "resolution": "2200x1440",
+      "type": "IPS",
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Wacom's Android drawing tablet: 11.45-inch screen and the Pro Pen 3 in the box.",
+    "unsure": [
+      "popularity",
+      "display.resolution"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {},
+    "colors": [
+      "Gray"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "canon-eos-r50",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R50",
+    "aliases": [
+      "Canon EOS R50",
+      "EOS R50 BK"
+    ],
+    "tier": "mid",
+    "priceAmd": 339000,
+    "priceAmdMax": 484500,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 339000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Small 24.2 MP APS-C mirrorless camera that shoots 4K 30p; the usual first Canon for video and travel.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 375,
+      "height": 116,
+      "width": 86,
+      "thickness": 69
+    },
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "24.2 MP APS-C CMOS",
+      "video": "4K 30p, Full HD 120p"
+    }
+  },
+  {
+    "id": "canon-eos-r100",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R100",
+    "aliases": [
+      "Canon EOS R100",
+      "EOS R100"
+    ],
+    "tier": "budget",
+    "priceAmd": 354000,
+    "priceAmdMax": 390000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 354000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "Canon's cheapest mirrorless: 24.1 MP APS-C, 4K 24p, fixed 3-inch screen.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 356
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "24.1 MP APS-C CMOS",
+      "video": "4K 24p (cropped), Full HD 60p"
+    }
+  },
+  {
+    "id": "canon-eos-r10",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R10",
+    "aliases": [
+      "Canon EOS R10",
+      "EOS R10"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 555000,
+    "priceAmdMax": 691000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 555000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "24.2 MP APS-C mirrorless with 15 fps mechanical burst and 4K 60p.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 429
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2022,
+    "camera": {
+      "main": "24.2 MP APS-C CMOS",
+      "video": "4K 60p (cropped), 4K 30p oversampled"
+    }
+  },
+  {
+    "id": "canon-eos-r7",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R7",
+    "aliases": [
+      "Canon EOS R7",
+      "Canon R7 RF-S",
+      "CANON R7"
+    ],
+    "tier": "flagship",
+    "priceAmd": 791000,
+    "priceAmdMax": 791000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 791000
+      }
+    ],
+    "display": {
+      "size": 2.95,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "32.5 MP APS-C mirrorless with in-body stabilisation and 4K 60p.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 612
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2022,
+    "camera": {
+      "main": "32.5 MP APS-C CMOS",
+      "video": "4K 60p"
+    }
+  },
+  {
+    "id": "canon-eos-r8",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R8",
+    "aliases": [
+      "Canon EOS R8",
+      "EOS R8 RF"
+    ],
+    "tier": "flagship",
+    "priceAmd": 628300,
+    "priceAmdMax": 628300,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 628300
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "The lightest full-frame Canon: 24.2 MP sensor, 4K 60p, 461 g.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 461
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "24.2 MP full-frame CMOS",
+      "video": "4K 60p, Full HD 180p"
+    }
+  },
+  {
+    "id": "sony-alpha-6400",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 6400",
+    "aliases": [
+      "Sony Alpha 6400",
+      "Sony Alpha a6400",
+      "Sony a6400",
+      "ILCE-6400"
+    ],
+    "tier": "mid",
+    "priceAmd": 469900,
+    "priceAmdMax": 469900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 469900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "24.2 MP APS-C mirrorless with real-time tracking autofocus and 4K 30p.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 403
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2019,
+    "camera": {
+      "main": "24.2 MP APS-C CMOS",
+      "video": "4K 30p"
+    }
+  },
+  {
+    "id": "sony-alpha-7s-iii",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 7S III",
+    "aliases": [
+      "Sony Alpha 7S III",
+      "Sony a7S III",
+      "ILCE-7SM3"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1399900,
+    "priceAmdMax": 1399900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1399900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Full-frame video camera: 12.1 MP low-light sensor, 4K 120p, 10-bit 4:2:2.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 699
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2020,
+    "camera": {
+      "main": "12.1 MP full-frame CMOS",
+      "video": "4K 120p, 10-bit 4:2:2"
+    }
+  },
+  {
+    "id": "fujifilm-instax-pal",
+    "category": "camera",
+    "brand": "Fujifilm",
+    "name": "Instax Pal",
+    "aliases": [
+      "Fujifilm Instax Pal",
+      "Instax Pal Compact"
+    ],
+    "tier": "budget",
+    "priceAmd": 29900,
+    "priceAmdMax": 29900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Tiny 2.56 MP digital camera that sends photos to the phone or an Instax Link printer.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "instant"
+    },
+    "body": {
+      "weight": 41
+    },
+    "colors": [
+      "Milky White",
+      "Powder Pink",
+      "Lavender Blue",
+      "Pistachio Green"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "2.56 MP"
+    }
+  },
+  {
+    "id": "fujifilm-instax-mini-11",
+    "category": "camera",
+    "brand": "Fujifilm",
+    "name": "Instax Mini 11",
+    "aliases": [
+      "Fujifilm Instax Mini 11"
+    ],
+    "tier": "budget",
+    "priceAmd": 46900,
+    "priceAmdMax": 46900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 46900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Instant camera that prints credit-card-size Instax Mini photos, with automatic exposure and a selfie mirror.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "instant"
+    },
+    "body": {
+      "weight": 293
+    },
+    "colors": [
+      "Blush Pink",
+      "Sky Blue",
+      "Charcoal Gray"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "wacom-intuos-pro-s",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Intuos Pro S (2025)",
+    "aliases": [
+      "Wacom Intuos Pro PTK470K0B",
+      "PTK470K0B",
+      "PTK470"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 119900,
+    "priceAmdMax": 119900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "The 2025 Intuos Pro in small: Pro Pen 3, 8,192 pressure levels, Bluetooth and USB-C.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {},
+    "colors": [
+      "Black"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "wacom-intuos-pro-m",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Intuos Pro M (2025)",
+    "aliases": [
+      "Wacom Intuos Pro PTK670K0B",
+      "PTK670K0B",
+      "PTK670"
+    ],
+    "tier": "flagship",
+    "priceAmd": 169900,
+    "priceAmdMax": 169900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 169900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "The 2025 Intuos Pro in medium: Pro Pen 3, 8,192 pressure levels, Bluetooth and USB-C.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {},
+    "colors": [
+      "Black"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "wacom-intuos-pro-l",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Intuos Pro L (2025)",
+    "aliases": [
+      "Wacom PTK870K0B",
+      "PTK870K0B",
+      "PTK870"
+    ],
+    "tier": "flagship",
+    "priceAmd": 229900,
+    "priceAmdMax": 229900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 229900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "The 2025 Intuos Pro in large: Pro Pen 3, 8,192 pressure levels, Bluetooth and USB-C.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {},
+    "colors": [
+      "Black"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "fujifilm-instax-mini-12",
+    "category": "camera",
+    "brand": "Fujifilm",
+    "name": "Instax Mini 12",
+    "aliases": [
+      "Fujifilm Instax Mini 12"
+    ],
+    "tier": "budget",
+    "priceAmd": 47900,
+    "priceAmdMax": 47900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 47900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Instant camera with automatic exposure and a close-up mode set by turning the lens; prints Instax Mini photos.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "instant"
+    },
+    "body": {
+      "weight": 306
+    },
+    "colors": [
+      "Lilac Purple",
+      "Clay White",
+      "Blossom Pink",
+      "Pastel Blue",
+      "Mint Green"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "panasonic-lumix-s9",
+    "category": "camera",
+    "brand": "Panasonic",
+    "name": "Lumix S9",
+    "aliases": [
+      "Panasonic Lumix S9",
+      "DC-S9"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 590000,
+    "priceAmdMax": 590000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 590000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Compact full-frame mirrorless: 24.2 MP, in-body stabilisation, 6K and 4K 60p video, sold with the 18-40 mm lens.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 486
+    },
+    "colors": [
+      "Jet Black",
+      "Silver"
+    ],
+    "year": 2024,
+    "camera": {
+      "main": "24.2 MP full-frame CMOS",
+      "video": "6K 30p, 4K 60p"
+    }
+  },
+  {
+    "id": "panasonic-lumix-g97",
+    "category": "camera",
+    "brand": "Panasonic",
+    "name": "Lumix G97",
+    "aliases": [
+      "Panasonic Lumix G97",
+      "DC-G97"
+    ],
+    "tier": "mid",
+    "priceAmd": 350000,
+    "priceAmdMax": 350000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 350000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Micro Four Thirds mirrorless: 20.3 MP, in-body stabilisation, 4K 30p, sold with the 12-60 mm lens.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 434
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2024,
+    "camera": {
+      "main": "20.3 MP Micro Four Thirds",
+      "video": "4K 30p"
+    }
+  },
+  {
+    "id": "panasonic-lumix-fz82d",
+    "category": "camera",
+    "brand": "Panasonic",
+    "name": "Lumix FZ82D",
+    "aliases": [
+      "Panasonic Lumix FZ82D",
+      "DC-FZ82D"
+    ],
+    "tier": "budget",
+    "priceAmd": 175000,
+    "priceAmdMax": 175000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 175000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Bridge camera with a 60x zoom (20-1200 mm), 18.1 MP and 4K 30p.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "appliance": {
+      "type": "compact"
+    },
+    "body": {
+      "weight": 616
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "18.1 MP 1/2.3-inch",
+      "video": "4K 30p"
+    }
+  },
+  {
+    "id": "panasonic-lumix-tz99",
+    "category": "camera",
+    "brand": "Panasonic",
+    "name": "Lumix TZ99",
+    "aliases": [
+      "Panasonic Lumix TZ99",
+      "DC-TZ99"
+    ],
+    "tier": "budget",
+    "priceAmd": 175000,
+    "priceAmdMax": 175000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 175000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Pocket travel zoom: 30x (24-720 mm), 20.3 MP and 4K 30p.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "appliance": {
+      "type": "compact"
+    },
+    "body": {
+      "weight": 322
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "20.3 MP 1/2.3-inch",
+      "video": "4K 30p"
+    }
   }
 ]
