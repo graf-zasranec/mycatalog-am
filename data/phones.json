@@ -5085,9 +5085,10 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Apple M3"
+      "name": "Apple M3",
+      "cpu": "8-core (4 performance + 4 efficiency)"
     },
-    "os": "macOS",
+    "os": "macOS Sonoma",
     "year": 2023,
     "body": {
       "weight": 1550
@@ -5098,7 +5099,10 @@
     "colors": [
       "Silver",
       "Space Gray"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6E"
+    }
   },
   {
     "id": "apple-macbook-pro-14-m4",
@@ -5754,9 +5758,10 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Apple M3 Pro"
+      "name": "Apple M3 Pro",
+      "cpu": "11-core (5 performance + 6 efficiency)"
     },
-    "os": "macOS",
+    "os": "macOS Sonoma",
     "year": 2023,
     "body": {
       "weight": 1610
@@ -5766,7 +5771,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6E"
+    }
   },
   {
     "id": "apple-macbook-pro-16-mrw23",
@@ -5807,9 +5815,10 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Apple M3 Pro (12-core CPU)"
+      "name": "Apple M3 Pro (12-core CPU)",
+      "cpu": "12-core (6 performance + 6 efficiency)"
     },
-    "os": "macOS",
+    "os": "macOS Sonoma",
     "year": 2023,
     "body": {
       "weight": 2140
@@ -5821,7 +5830,10 @@
     "colors": [
       "Black",
       "Silver"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6E"
+    }
   },
   {
     "id": "apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4",
@@ -5883,7 +5895,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "summaryEn": "Apple TWS Bluetooth Headsets 3rd Generation.",
     "unsure": [
       "popularity"
@@ -5954,7 +5968,8 @@
     "os": "watchOS",
     "year": 2023,
     "body": {
-      "weight": 61.4
+      "weight": 61.4,
+      "materials": "Titanium case, sapphire crystal"
     },
     "chipset": {
       "name": "Apple S9"
@@ -6081,7 +6096,8 @@
       "Apple Watch S10 42mm With Sport Band"
     ],
     "body": {
-      "weight": 29
+      "weight": 29,
+      "materials": "Aluminium or titanium case"
     },
     "specNA": {
       "battery.capacity": "Apple publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
@@ -37214,7 +37230,8 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 52
+      "weight": 52,
+      "materials": "Stainless steel case, sapphire crystal"
     },
     "sources": [
       "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch6-classic-43mm-black-bluetooth-sm-r950nzkains/"
@@ -38623,7 +38640,8 @@
       "Pinkgold"
     ],
     "body": {
-      "weight": 42
+      "weight": 42,
+      "materials": "Aluminium or stainless steel case"
     },
     "chipset": {
       "name": "Exynos 9110"
@@ -38653,7 +38671,9 @@
       "refresh": 60,
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 54
+    },
     "summaryEn": "Samsung Galaxy Book 4 NP750XGK-KS2US.",
     "unsure": [
       "popularity"
@@ -38663,11 +38683,16 @@
       "weight": 1550
     },
     "chipset": {
-      "name": "Intel Core 7-150U"
+      "name": "Intel Core 7-150U",
+      "cpu": "10-core (2 performance + 8 efficiency), up to 5.4 GHz"
     },
     "sources": [
       "e-catalog"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "Windows 11"
   },
   {
     "id": "samsung-galaxy-book-6-np760xjg",
@@ -38712,7 +38737,10 @@
     ],
     "aliases": [
       "Samsung Galaxy Book 6NP760XJG"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    }
   },
   {
     "id": "samsung-galaxy-buds-3-pro",
@@ -39052,7 +39080,8 @@
       }
     ],
     "display": {
-      "size": 1.2
+      "size": 1.2,
+      "resolution": "396x396"
     },
     "battery": {
       "capacity": 247,
@@ -39068,7 +39097,8 @@
       "bluetooth": "5.0"
     },
     "body": {
-      "weight": 26.6
+      "weight": 26.6,
+      "materials": "Aluminium case, sapphire crystal"
     },
     "sources": [
       "https://web.archive.org/web/20251211092605/https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch-fe-40mm-silver-bluetooth-sm-r861nzsaeua/"
@@ -40321,6 +40351,13 @@
     ],
     "body": {
       "weight": 524
+    },
+    "camera": {
+      "main": "8 MP",
+      "front": "5 MP"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
     }
   },
   {
@@ -40965,7 +41002,8 @@
     "os": "Wear OS, One UI Watch",
     "year": 2024,
     "body": {
-      "weight": 60.5
+      "weight": 60.5,
+      "materials": "Titanium case, sapphire crystal"
     },
     "sources": [
       "https://shop.ucom.am/en/samsung-galaxy-watch-ultra-47mm-lte.html",
@@ -41011,7 +41049,8 @@
       }
     ],
     "display": {
-      "size": 1.5
+      "size": 1.5,
+      "resolution": "480x480"
     },
     "battery": {
       "capacity": 590
@@ -41027,7 +41066,8 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 60.5
+      "weight": 60.5,
+      "materials": "Titanium case, sapphire crystal"
     },
     "sources": [
       "https://www.samsung.com/sg/watches/galaxy-watch/galaxy-watch-ultra-2025-47mm-titanium-blue-lte-sm-l705fzb1xsp/"
@@ -41040,7 +41080,10 @@
     ],
     "settled": [
       "notADuplicate"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W1000"
+    }
   },
   {
     "id": "samsung-galaxy-watch-3-41mm",
@@ -41078,7 +41121,8 @@
     "os": "Tizen",
     "year": 2020,
     "body": {
-      "weight": 48
+      "weight": 48,
+      "materials": "Stainless steel case"
     },
     "chipset": {
       "name": "Exynos 9110"
@@ -41131,7 +41175,8 @@
       "popularity"
     ],
     "body": {
-      "weight": 33.8
+      "weight": 33.8,
+      "materials": "Aluminium case, sapphire crystal"
     },
     "sources": [
       "https://web.archive.org/web/20260306063049/https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch7-44mm-green-lte-sm-l315fzgaeua/"
@@ -41359,7 +41404,8 @@
       "bluetooth": "5.0"
     },
     "body": {
-      "weight": 25.9
+      "weight": 25.9,
+      "materials": "Aluminium case"
     },
     "sources": [
       "https://www.samsung.com/global/galaxy/galaxy-watch4/specs/"
@@ -59311,7 +59357,8 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 19
+      "weight": 19,
+      "materials": "Aluminium case"
     }
   },
   {
@@ -59529,8 +59576,10 @@
       "weight": 1240
     },
     "connectivity": {
-      "bluetooth": "5.3"
-    }
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "macOS Monterey"
   },
   {
     "id": "xiaomi-4k-a27ui",
@@ -67106,11 +67155,13 @@
       "weight": 1240
     },
     "connectivity": {
-      "bluetooth": "5.3"
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6E"
     },
     "colors": [
       "Gray"
-    ]
+    ],
+    "os": "macOS Sonoma"
   },
   {
     "id": "hp-15-6-core-5-120u-a5cv9ea",
@@ -68133,14 +68184,16 @@
     ],
     "variantUnit": "mm",
     "body": {
-      "weight": 26.4
+      "weight": 26.4,
+      "materials": "Aluminium case"
     },
     "sources": [
       "https://support.apple.com/kb/SP877"
     ],
     "specNA": {
       "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
-    }
+    },
+    "os": "watchOS 9"
   },
   {
     "id": "flyingvoice-sr3000-5g",
@@ -70059,7 +70112,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 54
+    },
     "summaryEn": "Samsung Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US.",
     "unsure": [
       "popularity",
@@ -70068,14 +70123,19 @@
       "battery.capacity"
     ],
     "chipset": {
-      "name": "Intel Core 7 150U"
+      "name": "Intel Core 7 150U",
+      "cpu": "10-core (2 performance + 8 efficiency), up to 5.4 GHz"
     },
     "body": {
       "weight": 1550
     },
     "sources": [
       "https://smartprix.com/laptops/samsung-galaxy-book-4-np750xgk-ks2in-laptop-ppd15ob5rtps"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "Windows 11"
   },
   {
     "id": "samsung-galaxy-book3-15-6-fhd-i7-1355u-slv-np750xfg-kb2us",
@@ -70099,7 +70159,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 54
+    },
     "summaryEn": "Samsung Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*.",
     "unsure": [
       "popularity",
@@ -70109,14 +70171,19 @@
       "body.weight"
     ],
     "chipset": {
-      "name": "Intel Core i7-1355U"
+      "name": "Intel Core i7-1355U",
+      "cpu": "10-core (2 performance + 8 efficiency), up to 5.0 GHz"
     },
     "body": {
       "weight": 1580
     },
     "sources": [
       "https://www.samsung.com/us/computing/galaxy-books/galaxy-book3/"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "Windows 11"
   },
   {
     "id": "honor-magicbook-x16-plus-16-core-16-1-w11h-5301alvv",
@@ -70353,7 +70420,9 @@
       "size": 14,
       "resolution": "2880x1800"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 63
+    },
     "summaryEn": "Samsung Galaxy Book5 Pro 14\" Touch Ultra 7-Series 2 W11H /NP940XHA-KG1US.",
     "unsure": [
       "popularity",
@@ -70363,14 +70432,19 @@
       "body.weight"
     ],
     "chipset": {
-      "name": "Intel Core Ultra 7 (Series 2)"
+      "name": "Intel Core Ultra 7 (Series 2)",
+      "cpu": "8-core (4 performance + 4 efficiency)"
     },
     "body": {
       "weight": 1230
     },
     "sources": [
       "https://www.samsung.com/us/computing/galaxy-books/galaxy-book5-pro/"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    },
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-4-16-ultra-7-21yc003tfw",
@@ -74480,7 +74554,8 @@
       "body.weight"
     ],
     "chipset": {
-      "name": "Apple M5 Max"
+      "name": "Apple M5 Max",
+      "cpu": "18-core"
     },
     "graphics": {
       "name": "Apple M5 Max 32- or 40-core GPU",
@@ -74495,7 +74570,10 @@
     },
     "sources": [
       "https://www.apple.com/macbook-pro/specs/"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    }
   },
   {
     "id": "asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t",
@@ -76174,7 +76252,8 @@
       "body.weight"
     ],
     "chipset": {
-      "name": "Apple M5 Pro"
+      "name": "Apple M5 Pro",
+      "cpu": "18-core"
     },
     "graphics": {
       "name": "Apple M5 Pro 16- or 20-core GPU",
@@ -76189,7 +76268,10 @@
     },
     "sources": [
       "https://www.apple.com/macbook-pro/specs/"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 7"
+    }
   },
   {
     "id": "xiaomi-pad-m1",
@@ -81084,7 +81166,8 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Apple M1 Pro"
+      "name": "Apple M1 Pro",
+      "cpu": "10-core (8 performance + 2 efficiency)"
     },
     "graphics": {
       "name": "Apple M1 Pro 16-core GPU",
@@ -81098,7 +81181,11 @@
     },
     "sources": [
       "https://support.apple.com/kb/SP858"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "macOS Monterey"
   },
   {
     "id": "lenovo-yoga-27iah10-ultra-7-255h",
@@ -100625,7 +100712,9 @@
       "Yellow"
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "6 hours"
+    },
     "audio": {
       "form": "tws",
       "conn": "wireless"

@@ -46,7 +46,7 @@ const NAMES = new Set(`apple btu dba cadr aaa li-ion google oneblade gbps micro-
  lightning sequoia pixel drop playtime flow mohs turbo earc portal pssr aux imx trichroma tvos chromeos qvga panda nappa ray-ban
  amethyst ruby water aac mbps sim graphics core for wear oneui
  mil std sub always full mesh dual pd video wireless xbox
- os on cellular grade rf aps-c kryo ventura sonoma sequoia`.split(/\s+/).filter(Boolean));
+ os on cellular grade rf aps-c kryo ventura sonoma sequoia monterey`.split(/\s+/).filter(Boolean));
 
 const gaps = new Map();
 for (const p of P) for (const [, defs] of app.GROUPS) for (const [k, get] of defs) {
