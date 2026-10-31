@@ -1975,7 +1975,8 @@
       "conn": "wireless"
     },
     "battery": {
-      "playback": 20
+      "playback": 20,
+      "life": "20 hours"
     },
     "body": {
       "materials": "Aluminium ear cups, stainless steel headband",
@@ -2371,7 +2372,8 @@
       "size": 10.9,
       "resolution": "2360x1640",
       "ppi": 264,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 8686,
@@ -2452,7 +2454,8 @@
     ],
     "display": {
       "size": 11,
-      "resolution": "2388x1668"
+      "resolution": "2388x1668",
+      "refresh": 120
     },
     "battery": {
       "capacity": 7538
@@ -2522,7 +2525,8 @@
       "size": 10.2,
       "resolution": "2160x1620",
       "ppi": 265,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 8686
@@ -2579,7 +2583,8 @@
       "size": 11,
       "type": "Liquid Retina IPS LCD",
       "resolution": "2360x1640",
-      "ppi": 264
+      "ppi": 264,
+      "refresh": 60
     },
     "chipset": {
       "name": "Apple A16",
@@ -2808,7 +2813,8 @@
     "display": {
       "size": 11,
       "type": "Liquid Retina IPS LCD",
-      "resolution": "2360x1640"
+      "resolution": "2360x1640",
+      "refresh": 60
     },
     "chipset": {
       "name": "Apple M4",
@@ -2975,7 +2981,8 @@
     ],
     "display": {
       "size": 11,
-      "resolution": "2360x1640"
+      "resolution": "2360x1640",
+      "refresh": 60
     },
     "battery": {
       "capacity": 7606
@@ -3044,7 +3051,8 @@
       "size": 10.9,
       "resolution": "2360x1640",
       "ppi": 264,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 7600
@@ -3116,7 +3124,8 @@
       "size": 8.3,
       "resolution": "2266x1488",
       "ppi": 327,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 5124,
@@ -3204,7 +3213,8 @@
       "size": 8.3,
       "resolution": "2266x1488",
       "ppi": 327,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 5078,
@@ -3584,11 +3594,13 @@
       "resolution": "1179x2556",
       "ppi": 461,
       "brightness": 2000,
-      "type": "OLED"
+      "type": "OLED",
+      "refresh": 120
     },
     "battery": {
       "capacity": 3274,
-      "wired": 27
+      "wired": 27,
+      "wireless": 15
     },
     "summaryEn": "Apple iPhone 15 Pro.",
     "unsure": [
@@ -3599,7 +3611,8 @@
     "chipset": {
       "name": "Apple A17 Bionic",
       "process": "3 nm",
-      "gpu": "Apple 6-core GPU"
+      "gpu": "Apple 6-core GPU",
+      "cpu": "Hexa-core (2x3.78 GHz + 4x2.11 GHz)"
     },
     "body": {
       "weight": 187,
@@ -3621,11 +3634,14 @@
       "modules": 3,
       "main": "48 MP, f/1.78",
       "front": "12 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2, 13mm",
+      "telephoto": "12 MP, f/2.8, 77mm, OIS, 3x optical zoom"
     },
     "released": "2023-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12557.php"
     ],
     "colors": [
       "Natural Titanium",
@@ -4373,13 +4389,15 @@
       "type": "Super Retina XDR OLED (LTPO)",
       "refresh": 120,
       "resolution": "1206x2622",
-      "ppi": 458,
-      "brightness": 3000
+      "ppi": 460,
+      "brightness": 3000,
+      "protection": "Ceramic Shield 2"
     },
     "chipset": {
       "name": "Apple A20 Pro",
-      "process": "2 nm",
-      "gpu": "Apple 7-core GPU"
+      "cpu": "6-core (2 super + 4 efficiency)",
+      "gpu": "Apple 7-core GPU with Neural Accelerators",
+      "process": "2 nm"
     },
     "variants": [
       {
@@ -4405,13 +4423,15 @@
     ],
     "camera": {
       "modules": 3,
-      "front": "18MP",
-      "main": "48 MP, f/1.6",
-      "video": "4K"
+      "main": "48MP Fusion, 24mm, f/1.48-f/4.0, sensor-shift OIS",
+      "ultrawide": "48MP Fusion Ultra Wide, 13mm, f/2.2, 120°",
+      "telephoto": "48MP Fusion Telephoto, 4x optical (100mm), f/2.8, 8x optical-quality crop (200mm)",
+      "front": "18MP Center Stage, f/1.9",
+      "video": "4K Dolby Vision up to 120 fps, ProRes RAW, Log 2, Genlock"
     },
     "battery": {
       "capacity": 4288,
-      "wired": 40,
+      "wired": 60,
       "wireless": 25
     },
     "connectivity": {
@@ -4422,7 +4442,7 @@
       "wifi": "Wi-Fi 7"
     },
     "cardSlot": false,
-    "os": "iOS",
+    "os": "iOS 27",
     "summaryEn": "The new Pro: A20 Pro chip, a 6.3-inch display and a 48MP triple camera, on sale from 25 September.",
     "category": "phone",
     "aliases": [
@@ -4433,13 +4453,16 @@
       "weight": 211,
       "height": 150,
       "width": 71.9,
-      "thickness": 8.8,
-      "materials": "Aluminium alloy",
+      "thickness": 8.75,
+      "materials": "Aluminium unibody, Ceramic Shield 2 front, Ceramic Shield back",
       "ip": "IP68"
     },
     "sources": [
-      "kimovil"
-    ]
+      "kimovil",
+      "https://www.apple.com/iphone-18-pro/specs/"
+    ],
+    "updates": "Apple typically ships 5-7 years of iOS upgrades",
+    "year": 2026
   },
   {
     "id": "apple-iphone-18-pro-max",
@@ -4463,13 +4486,15 @@
       "type": "Super Retina XDR OLED (LTPO)",
       "refresh": 120,
       "resolution": "1320x2868",
-      "ppi": 458,
-      "brightness": 3000
+      "ppi": 460,
+      "brightness": 3000,
+      "protection": "Ceramic Shield 2"
     },
     "chipset": {
       "name": "Apple A20 Pro",
-      "process": "2 nm",
-      "gpu": "Apple 7-core GPU"
+      "cpu": "6-core (2 super + 4 efficiency)",
+      "gpu": "Apple 7-core GPU with Neural Accelerators",
+      "process": "2 nm"
     },
     "variants": [
       {
@@ -4495,9 +4520,11 @@
     ],
     "camera": {
       "modules": 3,
-      "front": "18MP",
-      "main": "48 MP, f/1.5",
-      "video": "4K"
+      "main": "48MP Fusion, 24mm, f/1.48-f/4.0, sensor-shift OIS",
+      "ultrawide": "48MP Fusion Ultra Wide, 13mm, f/2.2, 120°",
+      "telephoto": "48MP Fusion Telephoto, 4x optical (100mm), f/2.8, 8x optical-quality crop (200mm)",
+      "front": "18MP Center Stage, f/1.9",
+      "video": "4K Dolby Vision up to 120 fps, ProRes RAW, Log 2, Genlock"
     },
     "battery": {
       "capacity": 5567,
@@ -4512,7 +4539,7 @@
       "wifi": "Wi-Fi 7"
     },
     "cardSlot": false,
-    "os": "iOS",
+    "os": "iOS 27",
     "summaryEn": "The largest iPhone 18, with a 6.9-inch display and the biggest battery in the lineup.",
     "category": "phone",
     "aliases": [
@@ -4523,13 +4550,16 @@
       "weight": 249,
       "height": 163.4,
       "width": 78,
-      "thickness": 8.8,
-      "materials": "Aluminium alloy",
+      "thickness": 8.75,
+      "materials": "Aluminium unibody, Ceramic Shield 2 front, Ceramic Shield back",
       "ip": "IP68"
     },
     "sources": [
-      "kimovil"
-    ]
+      "kimovil",
+      "https://www.apple.com/iphone-18-pro/specs/"
+    ],
+    "updates": "Apple typically ships 5-7 years of iOS upgrades",
+    "year": 2026
   },
   {
     "id": "apple-iphone-air",
@@ -4751,7 +4781,9 @@
       "materials": "Aluminium unibody",
       "weight": 1240
     },
-    "battery": {},
+    "battery": {
+      "capacity": 53.8
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3"
@@ -4858,7 +4890,9 @@
       "materials": "Aluminium unibody",
       "weight": 1230
     },
-    "battery": {},
+    "battery": {
+      "capacity": 53.8
+    },
     "connectivity": {
       "wifi": "Wi-Fi 7",
       "bluetooth": "6.0"
@@ -4915,13 +4949,16 @@
       "refresh": 60,
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 49.9
+    },
     "summaryEn": "Apple MacBook Air 13 MGN63 M1 2020.",
     "unsure": [
       "popularity"
     ],
     "chipset": {
-      "name": "Apple M1"
+      "name": "Apple M1",
+      "cpu": "8-core (4 performance + 4 efficiency)"
     },
     "os": "macOS",
     "colors": [
@@ -4935,7 +4972,10 @@
     },
     "sources": [
       "e-catalog"
-    ]
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 6"
+    }
   },
   {
     "id": "apple-macbook-neo-13",
@@ -5084,7 +5124,9 @@
       "size": 14.2,
       "resolution": "3024x1964"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 72.4
+    },
     "summaryEn": "Apple Macbook PRO 14 M4.",
     "unsure": [
       "popularity"
@@ -5096,7 +5138,8 @@
     "os": "macOS",
     "year": 2024,
     "connectivity": {
-      "bluetooth": "5.3"
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6E"
     },
     "body": {
       "weight": 1550
@@ -5105,7 +5148,8 @@
       "https://support.apple.com/en-us/121552"
     ],
     "chipset": {
-      "name": "Apple M4"
+      "name": "Apple M4",
+      "cpu": "10-core (4 performance + 6 efficiency)"
     }
   },
   {
@@ -5472,7 +5516,9 @@
       "materials": "Aluminium unibody",
       "weight": 1550
     },
-    "battery": {},
+    "battery": {
+      "capacity": 72.4
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3"
@@ -5551,7 +5597,9 @@
       "materials": "Aluminium unibody",
       "weight": 1620
     },
-    "battery": {},
+    "battery": {
+      "capacity": 72.4
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3"
@@ -5645,7 +5693,9 @@
       "materials": "Aluminium unibody",
       "weight": 1600
     },
-    "battery": {},
+    "battery": {
+      "capacity": 72.4
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3"
@@ -5696,7 +5746,9 @@
       "size": 14.2,
       "resolution": "3024x1964"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 72.4
+    },
     "summaryEn": "Apple MacBook Pro 14 MRX33 2023.",
     "unsure": [
       "popularity"
@@ -5747,7 +5799,9 @@
       "resolution": "3456x2234",
       "type": "LCD"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 100
+    },
     "summaryEn": "Apple MacBook Pro 16 MRW23.",
     "unsure": [
       "popularity"
@@ -5901,6 +5955,9 @@
     "year": 2023,
     "body": {
       "weight": 61.4
+    },
+    "chipset": {
+      "name": "Apple S9"
     }
   },
   {
@@ -5958,7 +6015,10 @@
       "Apple Watch SE 3",
       "iWatch SE 3",
       "Apple Watch SE Gen.3"
-    ]
+    ],
+    "chipset": {
+      "name": "Apple S10"
+    }
   },
   {
     "id": "apple-watch-series-10",
@@ -6081,7 +6141,10 @@
       "iWatch Series 11",
       "Apple Watch 11",
       "Apple Watch Series 11"
-    ]
+    ],
+    "chipset": {
+      "name": "Apple S10"
+    }
   },
   {
     "id": "apple-watch-series-12-gps-42mm",
@@ -6189,7 +6252,10 @@
     "aliases": [
       "iWatch Ultra 3",
       "Apple Watch Ultra 3"
-    ]
+    ],
+    "chipset": {
+      "name": "Apple S10"
+    }
   },
   {
     "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
@@ -17254,7 +17320,8 @@
     "chipset": {
       "name": "Google Tensor G5",
       "process": "3 nm",
-      "gpu": "IMG DXT 1100 MHz"
+      "gpu": "IMG DXT 1100 MHz",
+      "cpu": "Octa-core (1x3.78 GHz Cortex-X4 & 5x3.05 GHz Cortex-A725 & 2x2.25 GHz Cortex-A520)"
     },
     "variants": [
       {
@@ -17313,7 +17380,8 @@
       "notADuplicate"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13979.php"
     ]
   },
   {
@@ -17455,7 +17523,8 @@
     "chipset": {
       "name": "Google Tensor G5",
       "process": "3 nm",
-      "gpu": "IMG DXT 1100 MHz"
+      "gpu": "IMG DXT 1100 MHz",
+      "cpu": "Octa-core (1x3.78 GHz Cortex-X4 & 5x3.05 GHz Cortex-A725 & 2x2.25 GHz Cortex-A520)"
     },
     "body": {
       "weight": 258,
@@ -17477,11 +17546,14 @@
       "modules": 3,
       "main": "48 MP, f/1.7",
       "front": "10 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "5 MP, f/2.2",
+      "telephoto": "8 MP, f/3.1, 112mm, OIS, 5x optical zoom"
     },
     "released": "2025-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14014.php"
     ],
     "colors": [
       "Moonstone",
@@ -17533,7 +17605,8 @@
     "chipset": {
       "name": "Google Tensor G5",
       "process": "3 nm",
-      "gpu": "IMG DXT 1100 MHz"
+      "gpu": "IMG DXT 1100 MHz",
+      "cpu": "Octa-core (1x3.78 GHz Cortex-X4 & 5x3.05 GHz Cortex-A725 & 2x2.25 GHz Cortex-A520)"
     },
     "body": {
       "weight": 232,
@@ -17555,11 +17628,14 @@
       "modules": 3,
       "main": "50 MP, f/1.69",
       "front": "42 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "48 MP, f/1.7",
+      "telephoto": "48 MP, f/2.8, 113mm, OIS, 5x optical zoom"
     },
     "released": "2025-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13988.php"
     ],
     "colors": [
       "Moonstone",
@@ -17619,11 +17695,13 @@
     "chipset": {
       "name": "Google Tensor G4",
       "process": "4 nm",
-      "gpu": "Mali-G715 940 MHz"
+      "gpu": "Mali-G715 940 MHz",
+      "cpu": "Octa-core (1x3.1 GHz Cortex-X4 & 3x2.6 GHz Cortex-A720 & 4x1.9 GHz Cortex-A520)"
     },
     "battery": {
       "capacity": 5100,
-      "wired": 30
+      "wired": 30,
+      "wireless": 10
     },
     "body": {
       "weight": 183,
@@ -17638,10 +17716,12 @@
       "modules": 2,
       "main": "48 MP, f/1.7",
       "front": "13 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "13 MP, f/2.2"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14474.php"
     ]
   },
   {
@@ -17665,7 +17745,8 @@
     "chipset": {
       "name": "Google Tensor G6",
       "process": "2 nm",
-      "gpu": "PowerVR C-Series CXTP-48-1536"
+      "gpu": "PowerVR C-Series CXTP-48-1536",
+      "cpu": "7-core (1x4.1 GHz ARM C1-Ultra & 4x3.4 GHz ARM C1-Pro & 2x2.65 GHz ARM C1-Pro)"
     },
     "variants": [
       {
@@ -17687,8 +17768,8 @@
     "camera": {
       "modules": 3,
       "main": "50 MP",
-      "ultrawide": null,
-      "telephoto": null,
+      "ultrawide": "48 MP, f/1.7, 12mm",
+      "telephoto": "48 MP, f/2.8, 105mm, OIS, 5x optical zoom",
       "front": "42 MP",
       "video": "4K"
     },
@@ -17729,7 +17810,8 @@
     "year": 2026,
     "released": "2026-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14800.php"
     ]
   },
   {
@@ -17765,7 +17847,8 @@
     },
     "battery": {
       "capacity": 4700,
-      "wired": 27
+      "wired": 27,
+      "wireless": 15
     },
     "summaryEn": "Google Pixel 9.",
     "unsure": [
@@ -17776,7 +17859,8 @@
     "chipset": {
       "name": "Google Tensor G4",
       "process": "4 nm",
-      "gpu": "Mali-G715 940 MHz"
+      "gpu": "Mali-G715 940 MHz",
+      "cpu": "Octa-core (1x3.1 GHz Cortex-X4 & 3x2.6 GHz Cortex-A720 & 4x1.92 GHz Cortex-A520)"
     },
     "body": {
       "weight": 198,
@@ -17798,11 +17882,13 @@
       "modules": 2,
       "main": "50 MP, f/1.69",
       "front": "10.8 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "48 MP, f/1.7"
     },
     "released": "2024-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13219.php"
     ],
     "colors": [
       "Obsidian",
@@ -17849,7 +17935,8 @@
     },
     "battery": {
       "capacity": 4700,
-      "wired": 27
+      "wired": 27,
+      "wireless": 21
     },
     "summaryEn": "Google Pixel 9 Pro.",
     "unsure": [
@@ -17860,7 +17947,8 @@
     "chipset": {
       "name": "Google Tensor G4",
       "process": "4 nm",
-      "gpu": "Mali-G715 940 MHz"
+      "gpu": "Mali-G715 940 MHz",
+      "cpu": "Octa-core (1x3.1 GHz Cortex-X4 & 3x2.6 GHz Cortex-A720 & 4x1.92 GHz Cortex-A520)"
     },
     "body": {
       "weight": 199,
@@ -17882,11 +17970,14 @@
       "modules": 3,
       "main": "50 MP, f/1.69",
       "front": "50 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "48 MP, f/1.7",
+      "telephoto": "48 MP, f/2.8, 113mm, OIS, 5x optical zoom"
     },
     "released": "2024-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13218.php"
     ],
     "colors": [
       "Obsidian",
@@ -17933,7 +18024,8 @@
     },
     "battery": {
       "capacity": 5060,
-      "wired": 37
+      "wired": 37,
+      "wireless": 23
     },
     "summaryEn": "Google Pixel 9 Pro XL.",
     "unsure": [
@@ -17944,7 +18036,8 @@
     "chipset": {
       "name": "Google Tensor G4",
       "process": "4 nm",
-      "gpu": "Mali-G715 940 MHz"
+      "gpu": "Mali-G715 940 MHz",
+      "cpu": "Octa-core (1x3.1 GHz Cortex-X4 & 3x2.6 GHz Cortex-A720 & 4x1.92 GHz Cortex-A520)"
     },
     "body": {
       "weight": 221,
@@ -17966,11 +18059,14 @@
       "modules": 3,
       "main": "50 MP, f/1.69",
       "front": "50 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "48 MP, f/1.7",
+      "telephoto": "48 MP, f/2.8, 113mm, OIS, 5x optical zoom"
     },
     "released": "2024-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13217.php"
     ],
     "colors": [
       "Obsidian",
@@ -20817,7 +20913,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7 Gen 3 (SM7550-AB)",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 720"
+      "gpu": "Qualcomm Adreno 720",
+      "cpu": "Octa-core (1x2.63 GHz Cortex-A715 & 4x2.4 GHz Cortex-A715 & 3x1.8 GHz Cortex-A510)"
     },
     "body": {
       "weight": 187,
@@ -20838,11 +20935,14 @@
       "modules": 3,
       "main": "50 MP, f/1.95",
       "front": "50 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2",
+      "telephoto": "50 MP, f/2.4, OIS"
     },
     "released": "2024-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13050.php"
     ],
     "colors": [
       "Green"
@@ -21050,7 +21150,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 7025",
       "process": "6 nm",
-      "gpu": "IMG BXM-8-256"
+      "gpu": "IMG BXM-8-256",
+      "cpu": "Octa-core (2x2.5 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 171,
@@ -21072,11 +21173,13 @@
       "modules": 2,
       "main": "108 MP, f/1.75",
       "front": "16 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "5 MP, f/2.2"
     },
     "released": "2025-04",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13742.php"
     ],
     "colors": [
       "Green"
@@ -21260,7 +21363,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7 Gen 4 (SM7750-AB)",
       "process": "4 nm",
-      "gpu": "Adreno 722"
+      "gpu": "Adreno 722",
+      "cpu": "Octa-core (1x2.8 GHz Cortex-720 & 4x2.4 GHz Cortex-720 & 3x1.8 GHz Cortex-520)"
     },
     "body": {
       "weight": 190,
@@ -21282,11 +21386,13 @@
       "modules": 2,
       "main": "200 MP, f/1.9",
       "front": "50 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2, 16mm"
     },
     "released": "2026-04",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14605.php"
     ],
     "colors": [
       "Black",
@@ -21331,7 +21437,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 7100",
       "process": "6 nm",
-      "gpu": "Mali-G610 MC2"
+      "gpu": "Mali-G610 MC2",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 180,
@@ -21352,11 +21459,14 @@
     "camera": {
       "modules": 2,
       "main": "108 MP, f/1.88",
-      "front": "16 MP"
+      "front": "16 MP",
+      "ultrawide": "5 MP, f/2.2",
+      "video": "1080p@30fps"
     },
     "released": "2026-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14522.php"
     ],
     "colors": [
       "Gray",
@@ -21403,7 +21513,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
       "process": "3 nm",
-      "gpu": "Adreno 830"
+      "gpu": "Adreno 830",
+      "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
     },
     "body": {
       "weight": 200,
@@ -21425,11 +21536,14 @@
       "modules": 3,
       "main": "200 MP, f/1.9",
       "front": "50 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2, 16mm",
+      "telephoto": "50 MP, f/2.8, 80mm, OIS"
     },
     "released": "2026-04",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14604.php"
     ],
     "colors": [
       "Black",
@@ -22849,7 +22963,8 @@
       "resolution": "720x1604",
       "ppi": 266,
       "brightness": 500,
-      "type": "TFT LCD (IPS)"
+      "type": "TFT LCD (IPS)",
+      "refresh": 120
     },
     "battery": {
       "capacity": 5300,
@@ -22863,7 +22978,8 @@
     "chipset": {
       "name": "MediaTek Helio G81 Ultra",
       "process": "12 nm",
-      "gpu": "Mali-G52 MC2"
+      "gpu": "Mali-G52 MC2",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55)"
     },
     "body": {
       "weight": 199,
@@ -22884,11 +23000,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2025-06",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13938.php"
     ]
   },
   {
@@ -22978,7 +23096,8 @@
       "size": 6.77,
       "resolution": "720x1610",
       "ppi": 261,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 120
     },
     "battery": {
       "capacity": 6000,
@@ -22993,7 +23112,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 685 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.8 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53)"
     },
     "body": {
       "weight": 196,
@@ -23014,11 +23134,13 @@
     "camera": {
       "modules": 2,
       "main": "108 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2024-10",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13416.php"
     ],
     "colors": [
       "Green"
@@ -23056,7 +23178,8 @@
       "size": 6.77,
       "resolution": "720x1610",
       "ppi": 261,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 120
     },
     "battery": {
       "capacity": 6500,
@@ -23070,7 +23193,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 685 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (2x2.3 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 208,
@@ -23091,11 +23215,13 @@
     "camera": {
       "modules": 2,
       "main": "108 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2025-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14175.php"
     ],
     "colors": [
       "Black",
@@ -23133,7 +23259,8 @@
       "resolution": "720x1604",
       "ppi": 266,
       "brightness": 500,
-      "type": "TFT LCD (IPS)"
+      "type": "TFT LCD (IPS)",
+      "refresh": 120
     },
     "battery": {
       "capacity": 7500,
@@ -23147,7 +23274,8 @@
     "chipset": {
       "name": "MediaTek Helio G81 Ultra",
       "process": "12 nm",
-      "gpu": "Mali-G52 MC2"
+      "gpu": "Mali-G52 MC2",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55)"
     },
     "body": {
       "weight": 200,
@@ -23168,11 +23296,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2026-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14677.php"
     ],
     "colors": [
       "Light Blue",
@@ -23527,7 +23657,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 189,
@@ -23547,11 +23678,14 @@
     "camera": {
       "modules": 4,
       "main": "64 MP, f/1.8",
-      "front": "16 MP"
+      "front": "16 MP",
+      "ultrawide": "8 MP, f/2.2",
+      "video": "1080p@30fps"
     },
     "released": "2022-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11456.php"
     ],
     "colors": [
       "Black"
@@ -23771,7 +23905,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 6 Gen4",
       "process": "4 nm",
-      "gpu": "Adreno GPU"
+      "gpu": "Adreno GPU",
+      "cpu": "Octa-core (1x2.3 GHz Cortex-A720s & 3x2.2 GHz Cortex-A720s & 4x1.8 GHz Cortex-A520s)"
     },
     "body": {
       "weight": 199,
@@ -23793,11 +23928,13 @@
       "modules": 2,
       "main": "108 MP, f/1.75",
       "front": "16 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "5 MP, f/2.2, 17mm"
     },
     "released": "2025-10",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14176.php"
     ],
     "colors": [
       "Gold",
@@ -35126,7 +35263,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8+ Gen1",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 730 875 MHz"
+      "gpu": "Qualcomm Adreno 730 875 MHz",
+      "cpu": "Octa-core (1x3.0 GHz Cortex-X2 & 3x2.5 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510)"
     },
     "body": {
       "weight": 201,
@@ -35148,11 +35286,13 @@
       "modules": 2,
       "main": "50 MP, f/1.88",
       "front": "32 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "50 MP, f/2.2"
     },
     "released": "2023-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12386.php"
     ],
     "colors": [
       "Dark Gray",
@@ -35766,7 +35906,8 @@
     "chipset": {
       "name": "MediaTek Helio G81 Ultra",
       "process": "12 nm",
-      "gpu": "Mali-G52 MC2"
+      "gpu": "Mali-G52 MC2",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "camera": {
       "modules": 2,
@@ -35822,7 +35963,8 @@
       "POCO C75"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13435.php"
     ]
   },
   {
@@ -35870,7 +36012,8 @@
     "chipset": {
       "name": "Unisoc Tiger T615 (T7250)",
       "process": "12 nm",
-      "gpu": "Mali-G57 MP1"
+      "gpu": "Mali-G57 MP1",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
     },
     "body": {
       "weight": 208,
@@ -35891,11 +36034,13 @@
     "camera": {
       "modules": 2,
       "main": "13 MP, f/2.2",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2026-04",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14635.php"
     ],
     "colors": [
       "Green",
@@ -36032,7 +36177,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Gen3",
       "process": "4 nm",
-      "gpu": "Adreno 750"
+      "gpu": "Adreno 750",
+      "cpu": "Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520)"
     },
     "body": {
       "weight": 206,
@@ -36054,11 +36200,13 @@
       "modules": 2,
       "main": "50 MP, f/1.6",
       "front": "20 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2025-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13724.php"
     ],
     "colors": [
       "Black",
@@ -36292,7 +36440,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 8500 Ultra",
       "process": "4 nm",
-      "gpu": "Mali-G720 MC8"
+      "gpu": "Mali-G720 MC8",
+      "cpu": "Octa-core (1x3.4 GHz Cortex-A725 & 3x3.2 GHz Cortex-A725 & 4x2.2 GHz Cortex-A725)"
     },
     "body": {
       "weight": 204,
@@ -36314,11 +36463,13 @@
       "modules": 2,
       "main": "50 MP, f/1.5",
       "front": "20 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2, 15mm"
     },
     "released": "2026-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14506.php"
     ],
     "colors": [
       "Black",
@@ -36637,7 +36788,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 (MT6789)",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 200,
@@ -36657,7 +36809,8 @@
     "camera": {
       "modules": 3,
       "main": "50 MP, f/1.8",
-      "front": "13 MP"
+      "front": "13 MP",
+      "video": "1080p@30fps"
     },
     "released": "2023-12",
     "sources": [
@@ -36708,7 +36861,8 @@
     "chipset": {
       "name": "Samsung Exynos 1280",
       "process": "5 nm",
-      "gpu": "Mali-G68 MC4"
+      "gpu": "Mali-G68 MC4",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 197,
@@ -37064,7 +37218,10 @@
     },
     "sources": [
       "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch6-classic-43mm-black-bluetooth-sm-r950nzkains/"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W930"
+    }
   },
   {
     "id": "samsung-galaxy-9-44mm",
@@ -37326,7 +37483,8 @@
       "size": 6.7,
       "resolution": "720x1600",
       "ppi": 262,
-      "type": "PLS"
+      "type": "PLS",
+      "refresh": 90
     },
     "battery": {
       "capacity": 5000,
@@ -37340,7 +37498,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 (MT6789)",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 188,
@@ -37361,11 +37520,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30/60fps"
     },
     "released": "2026-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14930.php"
     ],
     "colors": [
       "Black",
@@ -37409,10 +37570,13 @@
     "display": {
       "size": 6.7,
       "resolution": "720x1600",
-      "type": "PLS LCD"
+      "type": "PLS LCD",
+      "refresh": 90,
+      "ppi": 262
     },
     "battery": {
-      "capacity": 6000
+      "capacity": 6000,
+      "wired": 25
     },
     "summaryEn": "Samsung A08.",
     "unsure": [
@@ -37420,13 +37584,22 @@
     ],
     "os": "Android, One UI",
     "body": {
-      "weight": 197
+      "weight": 197,
+      "height": 167.4,
+      "width": 77.4,
+      "thickness": 8,
+      "materials": "Glass front, plastic back, plastic frame",
+      "ip": "IP64"
     },
     "camera": {
-      "main": "50 MP"
+      "main": "50 MP",
+      "modules": 1,
+      "front": "8 MP, f/2.0",
+      "video": "1080p@30/60fps"
     },
     "sources": [
-      "https://www.samsung.com/levant/smartphones/galaxy-a/galaxy-a08-dark-blue-128gb-sm-a085fdbgmea/"
+      "https://www.samsung.com/levant/smartphones/galaxy-a/galaxy-a08-dark-blue-128gb-sm-a085fdbgmea/",
+      "https://www.gsmarena.com/a-14938.php"
     ],
     "colors": [
       "Dark Blue",
@@ -37434,8 +37607,16 @@
       "Green"
     ],
     "chipset": {
-      "name": "MediaTek Helio G99"
-    }
+      "name": "MediaTek Helio G99",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "process": "6 nm",
+      "gpu": "Mali-G57 MC2"
+    },
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 5"
+    },
+    "year": 2026
   },
   {
     "id": "samsung-galaxy-a16",
@@ -37456,7 +37637,10 @@
       "protection": "Corning Gorilla Glass Victus"
     },
     "chipset": {
-      "name": "Samsung Exynos 1330 / MediaTek Dimensity 6300"
+      "name": "Samsung Exynos 1330 / MediaTek Dimensity 6300",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55) or Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "process": "5 nm",
+      "gpu": "Mali-G68 MP2 or Mali-G57 MC2"
     },
     "variants": [
       {
@@ -37519,7 +37703,8 @@
     "category": "phone",
     "aliases": [],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13346.php"
     ]
   },
   {
@@ -37828,7 +38013,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 1080 (MT6877V)",
       "process": "6 nm",
-      "gpu": "Mali-G68 MC4"
+      "gpu": "Mali-G68 MC4",
+      "cpu": "Octa-core (2x2.6 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 199,
@@ -37850,11 +38036,13 @@
       "modules": 3,
       "main": "48 MP, f/1.8",
       "front": "13 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2023-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12074.php"
     ],
     "colors": [
       "Yellow"
@@ -37903,7 +38091,8 @@
     "chipset": {
       "name": "Exynos 1380",
       "process": "5 nm",
-      "gpu": "ARM Mali-G68 MP5"
+      "gpu": "ARM Mali-G68 MP5",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 209,
@@ -37925,11 +38114,13 @@
       "modules": 3,
       "main": "50 MP, f/1.8",
       "front": "13 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2024-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12705.php"
     ],
     "colors": [
       "Black",
@@ -38433,6 +38624,9 @@
     ],
     "body": {
       "weight": 42
+    },
+    "chipset": {
+      "name": "Exynos 9110"
     }
   },
   {
@@ -38883,7 +39077,10 @@
       "Blue",
       "Black",
       "Pink"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W920"
+    }
   },
   {
     "id": "samsung-galaxy-s25",
@@ -39858,7 +40055,8 @@
       "size": 10.5,
       "resolution": "1920x1200",
       "ppi": 216,
-      "type": "TFT LCD (IPS)"
+      "type": "TFT LCD (IPS)",
+      "refresh": 60
     },
     "battery": {
       "capacity": 7040,
@@ -39938,7 +40136,8 @@
       "size": 8.7,
       "resolution": "1340x800",
       "ppi": 179,
-      "type": "TFT LCD (IPS)"
+      "type": "TFT LCD (IPS)",
+      "refresh": 60
     },
     "battery": {
       "capacity": 5100,
@@ -40780,7 +40979,10 @@
     ],
     "settled": [
       "notADuplicate"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W1000"
+    }
   },
   {
     "id": "samsung-galaxy-ultra-47mm-2025",
@@ -40877,6 +41079,9 @@
     "year": 2020,
     "body": {
       "weight": 48
+    },
+    "chipset": {
+      "name": "Exynos 9110"
     }
   },
   {
@@ -40982,7 +41187,10 @@
       "Graphite",
       "Silver"
     ],
-    "summaryEn": "The mainstream Galaxy Watch, in 40 mm and 44 mm."
+    "summaryEn": "The mainstream Galaxy Watch, in 40 mm and 44 mm.",
+    "chipset": {
+      "name": "Exynos W1000"
+    }
   },
   {
     "id": "samsung-galaxy-watch-8-classic",
@@ -41039,7 +41247,10 @@
     "summaryEn": "The Watch 8 with a steel case and the rotating bezel.",
     "sources": [
       "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch8-classic-46mm-black-bluetooth-sm-l500nzkaeua/"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W1000"
+    }
   },
   {
     "id": "samsung-galaxy-watch-ultra-2",
@@ -41089,7 +41300,10 @@
     "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance.",
     "sources": [
       "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch-ultra2-titanium-silver-lte-sm-l715fzsaeub/"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W1000"
+    }
   },
   {
     "id": "samsung-galaxy-watch4-40-mm",
@@ -41149,7 +41363,10 @@
     },
     "sources": [
       "https://www.samsung.com/global/galaxy/galaxy-watch4/specs/"
-    ]
+    ],
+    "chipset": {
+      "name": "Exynos W920"
+    }
   },
   {
     "id": "samsung-galaxy-z-flip-7",
@@ -41289,11 +41506,13 @@
     "chipset": {
       "name": "Samsung Exynos 2400",
       "process": "4 nm",
-      "gpu": "Xclipse 940"
+      "gpu": "Xclipse 940",
+      "cpu": "10-core (1x3.2GHz Cortex-X4 & 2x2.9GHz Cortex-A720 & 3x2.6GHz Cortex-A720 & 4x1.95GHz Cortex-A520)"
     },
     "battery": {
       "capacity": 4000,
-      "wired": 25
+      "wired": 25,
+      "wireless": 15
     },
     "body": {
       "weight": 187,
@@ -41308,10 +41527,12 @@
       "modules": 2,
       "main": "50 MP, f/1.8",
       "front": "10.8 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2, 13mm"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13844.php"
     ]
   },
   {
@@ -48434,7 +48655,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 870 (SM8250-AC)",
       "process": "7 nm",
-      "gpu": "Qualcomm Adreno 650"
+      "gpu": "Qualcomm Adreno 650",
+      "cpu": "Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.80 GHz Kryo 585)"
     },
     "body": {
       "weight": 176,
@@ -48455,11 +48677,14 @@
       "modules": 3,
       "main": "50 MP, f/1.88",
       "front": "32 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "13 MP, f/2.4, 12mm",
+      "telephoto": "5 MP, f/2.4, 50mm (telephoto macro)"
     },
     "released": "2021-12",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11292.php"
     ]
   },
   {
@@ -48501,14 +48726,16 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7 Gen1",
       "process": "4 nm",
-      "gpu": "Adreno 644"
+      "gpu": "Adreno 644",
+      "cpu": "Octa-core (1x2.4 GHz Cortex-A710 & 3x2.36 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510)"
     },
     "body": {
       "weight": 171,
       "height": 159.2,
       "width": 72.7,
       "thickness": 7.2,
-      "materials": "Polycarbonate"
+      "materials": "Polycarbonate",
+      "ip": "IP53"
     },
     "connectivity": {
       "network": "5G",
@@ -48522,11 +48749,13 @@
       "modules": 3,
       "main": "50 MP, f/1.8",
       "front": "32 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2023-02",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12072.php"
     ]
   },
   {
@@ -48573,7 +48802,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 8300 Ultra",
       "process": "4 nm",
-      "gpu": "Mali G615-MC6"
+      "gpu": "Mali G615-MC6",
+      "cpu": "Octa-core (1x3.35 GHz Cortex-A715 & 3x3.20 GHz Cortex-A715 & 4x2.20 GHz Cortex-A510)"
     },
     "body": {
       "weight": 195,
@@ -48595,11 +48825,14 @@
       "modules": 3,
       "main": "50 MP, f/1.7",
       "front": "32 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2, 15mm",
+      "telephoto": "50 MP, f/1.9, 50mm, 2x optical zoom"
     },
     "released": "2024-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13329.php"
     ],
     "colors": [
       "Gray",
@@ -48718,7 +48951,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 9400+",
       "process": "3 nm",
-      "gpu": "Immortalis-G925 MC12 1,612 GHz"
+      "gpu": "Immortalis-G925 MC12 1,612 GHz",
+      "cpu": "Octa-core (1x3.63 GHz Cortex-X925 & 3x3.3 GHz Cortex-X4 & 4x2.4 GHz Cortex-A720)"
     },
     "camera": {
       "modules": 3,
@@ -48730,7 +48964,8 @@
     },
     "battery": {
       "capacity": 5500,
-      "wired": 90
+      "wired": 90,
+      "wireless": 50
     },
     "body": {
       "weight": 210,
@@ -48770,7 +49005,8 @@
     ],
     "cardSlot": false,
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14178.php"
     ]
   },
   {
@@ -48819,12 +49055,14 @@
       "resolution": "1200x2608",
       "ppi": 416,
       "brightness": 3500,
-      "type": "AMOLED"
+      "type": "AMOLED",
+      "refresh": 2160
     },
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
       "process": "3 nm",
-      "gpu": "Adreno 840 1.2 GHz"
+      "gpu": "Adreno 840 1.2 GHz",
+      "cpu": "Octa-core (2x4.6 GHz Oryon V3 Phoenix L + 6x3.62 GHz Oryon V3 Phoenix M)"
     },
     "battery": {
       "capacity": 7500,
@@ -48844,10 +49082,13 @@
       "modules": 3,
       "main": "50 MP, f/1.69",
       "front": "50 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "50 MP, f/2.4, 17mm",
+      "telephoto": "50 MP, f/2.6, 115mm, OIS, 5x optical zoom"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14181.php"
     ]
   },
   {
@@ -48897,7 +49138,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 8500 Ultra",
       "process": "4 nm",
-      "gpu": "Mali-G720 MC8"
+      "gpu": "Mali-G720 MC8",
+      "cpu": "Octa-core (1x3.4 GHz Cortex-A725 & 3x3.2 GHz Cortex-A725 & 4x2.2 GHz Cortex-A725)"
     },
     "body": {
       "weight": 200,
@@ -48919,11 +49161,14 @@
       "modules": 3,
       "main": "50 MP, f/1.78",
       "front": "32 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "12 MP, f/2.2, 15mm",
+      "telephoto": "50 MP, f/3.0, 115mm, OIS, 5x optical zoom"
     },
     "released": "2026-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14652.php"
     ],
     "colors": [
       "Blue",
@@ -48988,11 +49233,13 @@
     "chipset": {
       "name": "MediaTek Dimensity 9500",
       "process": "3 nm",
-      "gpu": "Mali G1 Ultra"
+      "gpu": "Mali G1 Ultra",
+      "cpu": "Octa-core (1x4.21 GHz C1-Ultra & 3x3.5 GHz C1-Premium & 4x2.7 GHz C1-Pro)"
     },
     "battery": {
       "capacity": 7000,
-      "wired": 100
+      "wired": 100,
+      "wireless": 50
     },
     "body": {
       "weight": 219,
@@ -49007,10 +49254,13 @@
       "modules": 3,
       "main": "50 MP, f/1.7",
       "front": "32 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "12 MP, f/2.2, 15mm",
+      "telephoto": "50 MP, f/3.0, 115mm, OIS, 5x optical zoom"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14651.php"
     ]
   },
   {
@@ -49560,7 +49810,8 @@
     "chipset": {
       "name": "JLQ JR510",
       "process": "11 nm",
-      "gpu": "Mali-G52"
+      "gpu": "Mali-G52",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A55 & 4x1.5 GHz Cortex-A55)"
     },
     "body": {
       "weight": 204,
@@ -49580,11 +49831,13 @@
     "camera": {
       "modules": 2,
       "main": "13 MP, f/1.8",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2022-06",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11468.php"
     ]
   },
   {
@@ -49626,7 +49879,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 870 (SM8250-AC)",
       "process": "7 nm",
-      "gpu": "Qualcomm Adreno 650"
+      "gpu": "Qualcomm Adreno 650",
+      "cpu": "Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.80 GHz Kryo 585)"
     },
     "body": {
       "weight": 195,
@@ -49648,11 +49902,13 @@
       "modules": 3,
       "main": "64 MP, f/1.79",
       "front": "20 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2022-06",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11627.php"
     ],
     "colors": [
       "Black",
@@ -49698,7 +49954,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7+ Gen2",
       "process": "4 nm",
-      "gpu": "Adreno 725"
+      "gpu": "Adreno 725",
+      "cpu": "Octa-core (1x2.91 GHz Cortex-X2 & 3x2.49 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510)"
     },
     "body": {
       "weight": 181,
@@ -49720,11 +49977,13 @@
       "modules": 3,
       "main": "64 MP, f/1.79",
       "front": "16 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2023-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12258.php"
     ],
     "colors": [
       "Black",
@@ -49779,7 +50038,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8s Gen3",
       "process": "4 nm",
-      "gpu": "Adreno 735"
+      "gpu": "Adreno 735",
+      "cpu": "Octa-core (1x3.0 GHz Cortex-X4 & 4x2.8 GHz Cortex-A720 & 3x2.0 GHz Cortex-A520)"
     },
     "body": {
       "weight": 179,
@@ -49801,11 +50061,13 @@
       "modules": 2,
       "main": "50 MP, f/1.6",
       "front": "20 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP"
     },
     "released": "2024-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13000.php"
     ],
     "colors": [
       "Black",
@@ -49860,14 +50122,16 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Gen2",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 740"
+      "gpu": "Qualcomm Adreno 740",
+      "cpu": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
     },
     "body": {
       "weight": 209,
       "height": 160.9,
       "width": 74.9,
       "thickness": 8.2,
-      "materials": "Polycarbonate"
+      "materials": "Polycarbonate",
+      "ip": "IP54"
     },
     "connectivity": {
       "network": "5G",
@@ -49881,11 +50145,13 @@
       "modules": 3,
       "main": "50 MP, f/1.6",
       "front": "16 MP",
-      "video": "8K"
+      "video": "8K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2024-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12992.php"
     ],
     "colors": [
       "Black",
@@ -49920,7 +50186,8 @@
       "resolution": "1080x2408",
       "ppi": 410,
       "brightness": 500,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 90
     },
     "battery": {
       "capacity": 5000,
@@ -49935,7 +50202,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 (MT6789)",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 201,
@@ -49961,7 +50229,8 @@
     },
     "released": "2022-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11850.php"
     ],
     "colors": [
       "Black",
@@ -50001,7 +50270,8 @@
     "chipset": {
       "name": "MediaTek Helio G91",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 850MHz"
+      "gpu": "Arm Mali-G52 MC2 850MHz",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 205,
@@ -50026,7 +50296,8 @@
     },
     "released": "2024-06",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12737.php"
     ]
   },
   {
@@ -50073,7 +50344,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 Ultra",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A78 & 6x1.95 GHz Cortex-A55)"
     },
     "body": {
       "weight": 181,
@@ -50099,7 +50371,8 @@
     },
     "released": "2024-01",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12452.php"
     ],
     "colors": [
       "Purple"
@@ -50162,7 +50435,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 685 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.8 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53)"
     },
     "body": {
       "weight": 224,
@@ -50188,7 +50462,8 @@
     },
     "released": "2025-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14071.php"
     ]
   },
   {
@@ -50409,7 +50684,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7s Gen4",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno"
+      "gpu": "Qualcomm Adreno",
+      "cpu": "Octa-core (1x2.7 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)"
     },
     "body": {
       "weight": 207,
@@ -50431,11 +50707,13 @@
       "modules": 3,
       "main": "50 MP, f/1.6",
       "front": "32 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2, 15mm"
     },
     "released": "2026-01",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14390.php"
     ],
     "colors": [
       "Silver",
@@ -50627,7 +50905,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 7300 Ultra",
       "process": "4 nm",
-      "gpu": "Mali-G615 MC2"
+      "gpu": "Mali-G615 MC2",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 185,
@@ -50649,11 +50928,13 @@
       "modules": 3,
       "main": "50 MP, f/1.5",
       "front": "20 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2, 15mm"
     },
     "released": "2025-01",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13604.php"
     ],
     "colors": [
       "Green",
@@ -50850,7 +51131,8 @@
     "chipset": {
       "name": "MediaTek Helio G25",
       "process": "12 nm",
-      "gpu": "IMG PowerVR GE8320 600MHz"
+      "gpu": "IMG PowerVR GE8320 600MHz",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)"
     },
     "body": {
       "weight": 194,
@@ -50870,11 +51152,13 @@
     "camera": {
       "modules": 2,
       "main": "13 MP, f/2.2",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2022-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11449.php"
     ],
     "colors": [
       "Black",
@@ -50918,7 +51202,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 190,
@@ -50938,11 +51223,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2022-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11418.php"
     ]
   },
   {
@@ -50987,7 +51274,8 @@
     "chipset": {
       "name": "MediaTek Helio G88",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 1000MHz"
+      "gpu": "Arm Mali-G52 MC2 1000MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 198,
@@ -51009,11 +51297,13 @@
       "modules": 3,
       "main": "50 MP, f/1.8",
       "front": "8 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2023-06",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-12328.php"
     ]
   },
   {
@@ -51129,14 +51419,16 @@
     "chipset": {
       "name": "MediaTek Helio G91",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 850MHz"
+      "gpu": "Arm Mali-G52 MC2 850MHz",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 198,
       "height": 168.6,
       "width": 76.3,
       "thickness": 8.2,
-      "materials": "Plastic"
+      "materials": "Plastic",
+      "ip": "IP53"
     },
     "connectivity": {
       "network": "4G",
@@ -51149,11 +51441,13 @@
     "camera": {
       "modules": 2,
       "main": "108 MP, f/1.8",
-      "front": "13 MP"
+      "front": "13 MP",
+      "video": "1080p@30fps"
     },
     "released": "2024-05",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13102.php"
     ],
     "colors": [
       "Black"
@@ -51542,7 +51836,8 @@
     "chipset": {
       "name": "MediaTek Helio G91",
       "process": "12 nm",
-      "gpu": "Arm Mali-G52 MC2 850MHz"
+      "gpu": "Arm Mali-G52 MC2 850MHz",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 232,
@@ -51568,7 +51863,8 @@
     },
     "released": "2026-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14869.php"
     ],
     "colors": [
       "Black",
@@ -52096,7 +52392,8 @@
     "chipset": {
       "name": "Unisoc Tiger T615 (T7250)",
       "process": "12 nm",
-      "gpu": "Mali-G57 MP1"
+      "gpu": "Mali-G57 MP1",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
     },
     "body": {
       "weight": 208,
@@ -52116,11 +52413,14 @@
     "cardSlot": true,
     "camera": {
       "main": "50 MP, f/2.2",
-      "front": "8 MP"
+      "front": "8 MP",
+      "modules": 1,
+      "video": "1080p@30fps"
     },
     "released": "2026-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14463.php"
     ],
     "colors": [
       "Black",
@@ -52308,7 +52608,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 732G",
       "process": "8 nm",
-      "gpu": "Qualcomm Adreno 618"
+      "gpu": "Qualcomm Adreno 618",
+      "cpu": "Octa-core (2x2.3 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)"
     },
     "body": {
       "weight": 193,
@@ -52330,11 +52631,13 @@
       "modules": 4,
       "main": "108 MP, f/1.9",
       "front": "16 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2021-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-10662.php"
     ],
     "colors": [
       "Black",
@@ -52379,7 +52682,8 @@
     "chipset": {
       "name": "MediaTek Helio G95",
       "process": "12 nm",
-      "gpu": "Arm Mali-G76 MC4 720 MHz"
+      "gpu": "Arm Mali-G76 MC4 720 MHz",
+      "cpu": "Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 179,
@@ -52401,11 +52705,13 @@
       "modules": 4,
       "main": "64 MP, f/1.79",
       "front": "13 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2021-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-10769.php"
     ]
   },
   {
@@ -52450,7 +52756,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 680 (SM6225)",
       "process": "6 nm",
-      "gpu": "Adreno 610"
+      "gpu": "Adreno 610",
+      "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)"
     },
     "body": {
       "weight": 179,
@@ -52471,11 +52778,14 @@
     "camera": {
       "modules": 4,
       "main": "50 MP, f/1.8",
-      "front": "13 MP"
+      "front": "13 MP",
+      "ultrawide": "8 MP, f/2.2",
+      "video": "1080p@30fps"
     },
     "released": "2021-10",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11336.php"
     ]
   },
   {
@@ -52517,14 +52827,16 @@
     "chipset": {
       "name": "MediaTek Dimensity 920",
       "process": "6 nm",
-      "gpu": "Arm Mali-G68 MC4"
+      "gpu": "Arm Mali-G68 MC4",
+      "cpu": "Octa-core (2x2.2 GHz Kryo 660 Gold & 6x1.7 GHz Kryo 660 Silver)"
     },
     "body": {
       "weight": 204,
       "height": 163.6,
       "width": 76.2,
       "thickness": 8.3,
-      "materials": "Polycarbonate"
+      "materials": "Polycarbonate",
+      "ip": "IP53"
     },
     "connectivity": {
       "network": "5G",
@@ -52538,11 +52850,13 @@
       "modules": 3,
       "main": "108 MP, f/1.89",
       "front": "16 MP",
-      "video": "4K"
+      "video": "4K",
+      "ultrawide": "8 MP, f/2.2"
     },
     "released": "2021-10",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11333.php"
     ]
   },
   {
@@ -52584,7 +52898,8 @@
     "chipset": {
       "name": "MediaTek Helio G96",
       "process": "12 nm",
-      "gpu": "ARM Mali-G57 MC2 900MHz"
+      "gpu": "ARM Mali-G57 MC2 900MHz",
+      "cpu": "Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 179,
@@ -52605,11 +52920,14 @@
     "camera": {
       "modules": 4,
       "main": "108 MP, f/1.9",
-      "front": "16 MP"
+      "front": "16 MP",
+      "ultrawide": "8 MP, f/2.2",
+      "video": "1080p@30fps"
     },
     "released": "2022-01",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-11335.php"
     ]
   },
   {
@@ -52643,10 +52961,13 @@
     "display": {
       "size": 6.67,
       "resolution": "1080x2400",
-      "type": "AMOLED"
+      "type": "AMOLED",
+      "refresh": 120,
+      "ppi": 395
     },
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 33
     },
     "summaryEn": "Xiaomi Redmi Note 12.",
     "unsure": [
@@ -52655,17 +52976,34 @@
     "os": "Android",
     "year": 2023,
     "chipset": {
-      "name": "Qualcomm Snapdragon 685"
+      "name": "Qualcomm Snapdragon 685",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A78 & 6x1.8 GHz Cortex-A55)",
+      "process": "6 nm",
+      "gpu": "Adreno 619"
     },
     "body": {
-      "weight": 183.5
+      "weight": 183.5,
+      "height": 165.9,
+      "width": 76.2,
+      "thickness": 8,
+      "ip": "IP53"
     },
     "camera": {
-      "main": "50 MP, f/1.8"
+      "main": "50 MP, f/1.8",
+      "modules": 2,
+      "ultrawide": "8 MP, f/2.2",
+      "front": "13 MP, f/2.5",
+      "video": "1080p@30fps"
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-note-12/specs/"
-    ]
+      "https://www.mi.com/global/product/redmi-note-12/specs/",
+      "https://www.gsmarena.com/a-12063.php"
+    ],
+    "connectivity": {
+      "bluetooth": "5.1",
+      "wifi": "Wi-Fi 5",
+      "nfc": true
+    }
   },
   {
     "id": "xiaomi-redmi-note-13",
@@ -52913,10 +53251,13 @@
     "display": {
       "size": 6.67,
       "resolution": "1080x2400",
-      "type": "AMOLED"
+      "type": "AMOLED",
+      "refresh": 120,
+      "ppi": 395
     },
     "battery": {
-      "capacity": 5500
+      "capacity": 5500,
+      "wired": 45
     },
     "summaryEn": "Xiaomi Redmi Note 14.",
     "unsure": [
@@ -52924,23 +53265,42 @@
     ],
     "os": "Android, HyperOS",
     "chipset": {
-      "name": "MediaTek Helio G99-Ultra"
+      "name": "MediaTek Helio G99-Ultra",
+      "cpu": "Octa-core (2x2.5 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+      "process": "6 nm",
+      "gpu": "IMG BXM-8-256"
     },
     "body": {
-      "weight": 196.5
+      "weight": 196.5,
+      "height": 162.4,
+      "width": 75.7,
+      "thickness": 8,
+      "materials": "Glass front, plastic back",
+      "ip": "IP64"
     },
     "camera": {
-      "main": "108 MP"
+      "main": "108 MP",
+      "modules": 2,
+      "ultrawide": "8 MP, f/2.2, 21mm 2 MP",
+      "front": "20 MP, f/2.2",
+      "video": "1080p@30fps"
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-note-14/specs/"
+      "https://www.mi.com/global/product/redmi-note-14/specs/",
+      "https://www.gsmarena.com/a-13559.php"
     ],
     "colors": [
       "Midnight Black",
       "Blue",
       "Green",
       "Purple"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 5",
+      "nfc": true
+    },
+    "year": 2024
   },
   {
     "id": "xiaomi-redmi-note-14-pro",
@@ -53169,7 +53529,8 @@
     "chipset": {
       "name": "MediaTek Helio G99 Ultra",
       "process": "6 nm",
-      "gpu": "Mali-G57 MC2"
+      "gpu": "Mali-G57 MC2",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 179,
@@ -53190,11 +53551,14 @@
     "camera": {
       "modules": 3,
       "main": "200 MP, f/1.65",
-      "front": "16 MP"
+      "front": "16 MP",
+      "ultrawide": "8 MP, f/2.2, 15mm",
+      "video": "1080p@30/60fps"
     },
     "released": "2025-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13730.php"
     ],
     "colors": [
       "Purple",
@@ -53239,10 +53603,13 @@
     "display": {
       "size": 6.77,
       "resolution": "1080x2392",
-      "type": "AMOLED"
+      "type": "AMOLED",
+      "refresh": 120,
+      "ppi": 388
     },
     "battery": {
-      "capacity": 6000
+      "capacity": 6000,
+      "wired": 33
     },
     "summaryEn": "Xiaomi Redmi Note 15.",
     "unsure": [
@@ -53250,16 +53617,27 @@
     ],
     "os": "Android, HyperOS",
     "chipset": {
-      "name": "MediaTek Helio G100-Ultra"
+      "name": "MediaTek Helio G100-Ultra",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "process": "6 nm",
+      "gpu": "Mali-G57 MC2"
     },
     "body": {
-      "weight": 183.7
+      "weight": 183.7,
+      "height": 164,
+      "width": 75.4,
+      "thickness": 7.9,
+      "ip": "IP64"
     },
     "camera": {
-      "main": "108 MP"
+      "main": "108 MP",
+      "modules": 1,
+      "front": "20 MP, f/2.2",
+      "video": "1080p@30/60fps"
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-note-15/specs/"
+      "https://www.mi.com/global/product/redmi-note-15/specs/",
+      "https://www.gsmarena.com/a-14323.php"
     ],
     "colors": [
       "Purple",
@@ -53268,8 +53646,11 @@
       "Black"
     ],
     "connectivity": {
-      "bluetooth": "5.3"
-    }
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 5",
+      "nfc": true
+    },
+    "year": 2025
   },
   {
     "id": "xiaomi-redmi-note-15-pro",
@@ -53574,7 +53955,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 4 Gen 4 (SM4450-AF)",
       "process": "4 nm",
-      "gpu": "Adreno 613"
+      "gpu": "Adreno 613",
+      "cpu": "Octa-core (2x2.3 GHz Cortex-A78 & 6x1.95 GHz Cortex-A55)"
     },
     "body": {
       "weight": 225,
@@ -53595,11 +53977,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "8 MP"
+      "front": "8 MP",
+      "video": "1080p@30fps"
     },
     "released": "2026-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14846.php"
     ],
     "colors": [
       "Purple",
@@ -53665,7 +54049,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 6s Gen4",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 619"
+      "gpu": "Qualcomm Adreno 619",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55)"
     },
     "body": {
       "weight": 226,
@@ -53686,11 +54071,14 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "16 MP"
+      "front": "16 MP",
+      "ultrawide": "8 MP, f/2.2, 15mm",
+      "video": "1080p@30fps, gyro-EIS"
     },
     "released": "2026-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14844.php"
     ]
   },
   {
@@ -53738,7 +54126,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 6 Gen5",
       "process": "4 nm",
-      "gpu": "Adreno 812"
+      "gpu": "Adreno 812",
+      "cpu": "Octa-core (4x2.6 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
     },
     "body": {
       "weight": 226,
@@ -53759,11 +54148,14 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.5",
-      "front": "8 MP"
+      "front": "8 MP",
+      "ultrawide": "8 MP, f/2.2, 15mm",
+      "video": "4K@30fps, 1080p@30/60fps"
     },
     "released": "2026-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-14845.php"
     ],
     "colors": [
       "Black",
@@ -55592,7 +55984,8 @@
     "chipset": {
       "name": "Unisoc Tiger T615 (T7250)",
       "process": "12 nm",
-      "gpu": "Mali-G57 MP1"
+      "gpu": "Mali-G57 MP1",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)"
     },
     "body": {
       "weight": 196,
@@ -55613,11 +56006,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "5 MP"
+      "front": "5 MP",
+      "video": "1080p@30fps"
     },
     "released": "2025-06",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13931.php"
     ],
     "colors": [
       "White"
@@ -55659,7 +56054,8 @@
       "resolution": "1170x2532",
       "ppi": 457,
       "brightness": 1200,
-      "type": "OLED"
+      "type": "OLED",
+      "refresh": 60
     },
     "battery": {
       "capacity": 3961,
@@ -55675,7 +56071,8 @@
     "chipset": {
       "name": "Apple A18 e",
       "process": "3 nm",
-      "gpu": "Apple 4-core GPU"
+      "gpu": "Apple 4-core GPU",
+      "cpu": "Hexa-core (2x4.04 GHz + 4x2.20 GHz)"
     },
     "body": {
       "weight": 167,
@@ -55696,11 +56093,13 @@
     "camera": {
       "main": "48 MP, f/1.6",
       "front": "12 MP",
-      "video": "4K"
+      "video": "4K",
+      "modules": 1
     },
     "released": "2025-02",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.gsmarena.com/a-13395.php"
     ],
     "colors": [
       "Black",
@@ -55968,20 +56367,23 @@
     "chipset": {
       "name": "Apple A15 Bionic",
       "cpu": "Hexa-core (2 performance + 4 efficiency)",
-      "gpu": "Apple 5-core GPU"
+      "gpu": "Apple 5-core GPU",
+      "process": "5 nm"
     },
     "camera": {
       "modules": 2,
       "main": "12 MP, f/1.5, 26mm, sensor-shift OIS",
       "ultrawide": "12 MP, f/2.4, 13mm, 120-degree",
-      "front": "12 MP, f/1.9"
+      "front": "12 MP, f/1.9",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps"
     },
     "body": {
       "height": 146.7,
       "width": 71.5,
       "thickness": 7.8,
       "weight": 172,
-      "ip": "IP68"
+      "ip": "IP68",
+      "materials": "Glass front, glass back, aluminum frame"
     },
     "connectivity": {
       "network": "5G",
@@ -55993,7 +56395,8 @@
     "cardSlot": false,
     "os": "iOS 16",
     "sources": [
-      "https://support.apple.com/en-gb/111850"
+      "https://support.apple.com/en-gb/111850",
+      "https://www.gsmarena.com/a-11861.php"
     ]
   },
   {
@@ -56041,21 +56444,24 @@
     "chipset": {
       "name": "Apple A16 Bionic",
       "cpu": "Hexa-core (2 performance + 4 efficiency)",
-      "gpu": "Apple 5-core GPU"
+      "gpu": "Apple 5-core GPU",
+      "process": "4 nm"
     },
     "camera": {
       "modules": 3,
       "main": "48 MP, f/1.78, 24mm, second-generation sensor-shift OIS",
       "ultrawide": "12 MP, f/2.2, 13mm, 120-degree",
       "telephoto": "12 MP, f/2.8, 77mm, 3x optical zoom, OIS",
-      "front": "12 MP, f/1.9"
+      "front": "12 MP, f/1.9",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps"
     },
     "body": {
       "height": 160.7,
       "width": 77.6,
       "thickness": 7.85,
       "weight": 240,
-      "ip": "IP68"
+      "ip": "IP68",
+      "materials": "Glass front, glass back, stainless steel frame"
     },
     "connectivity": {
       "network": "5G",
@@ -56067,7 +56473,8 @@
     "cardSlot": false,
     "os": "iOS 16",
     "sources": [
-      "https://support.apple.com/en-gb/111846"
+      "https://support.apple.com/en-gb/111846",
+      "https://www.gsmarena.com/a-11773.php"
     ]
   },
   {
@@ -56122,20 +56529,23 @@
     "chipset": {
       "name": "Apple A15 Bionic",
       "cpu": "Hexa-core (2 performance + 4 efficiency)",
-      "gpu": "Apple 5-core GPU"
+      "gpu": "Apple 5-core GPU",
+      "process": "5 nm"
     },
     "camera": {
       "modules": 2,
       "main": "12 MP, f/1.5, 26mm, sensor-shift OIS",
       "ultrawide": "12 MP, f/2.4, 13mm, 120-degree",
-      "front": "12 MP, f/1.9"
+      "front": "12 MP, f/1.9",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps"
     },
     "body": {
       "height": 160.8,
       "width": 78.1,
       "thickness": 7.8,
       "weight": 203,
-      "ip": "IP68"
+      "ip": "IP68",
+      "materials": "Glass front, glass back, aluminum frame"
     },
     "connectivity": {
       "network": "5G",
@@ -56147,7 +56557,8 @@
     "cardSlot": false,
     "os": "iOS 16",
     "sources": [
-      "https://support.apple.com/en-gb/111854"
+      "https://support.apple.com/en-gb/111854",
+      "https://www.gsmarena.com/a-11862.php"
     ]
   },
   {
@@ -56170,10 +56581,14 @@
     "display": {
       "size": 6.6,
       "type": "Dynamic AMOLED 2X",
-      "resolution": "2340x1080"
+      "resolution": "2340x1080",
+      "refresh": 120,
+      "ppi": 425
     },
     "battery": {
-      "capacity": 4500
+      "capacity": 4500,
+      "wired": 25,
+      "wireless": 15
     },
     "summaryEn": "Samsung Galaxy S22+.",
     "unsure": [
@@ -56189,26 +56604,36 @@
     "chipset": {
       "name": "Samsung Exynos 2200",
       "process": "4 nm",
-      "cpu": "Octa-core (1x2.8 GHz Cortex-X2 + 3x2.5 GHz Cortex-A710 + 4x1.8 GHz Cortex-A510)"
+      "cpu": "Octa-core (1x2.8 GHz Cortex-X2 + 3x2.5 GHz Cortex-A710 + 4x1.8 GHz Cortex-A510)",
+      "gpu": "Xclipse 920"
     },
     "camera": {
       "modules": 3,
       "main": "50 MP",
-      "front": "10 MP"
+      "front": "10 MP",
+      "ultrawide": "12 MP, f/2.2, 13mm",
+      "telephoto": "10 MP, f/2.4, 70mm, OIS, 3x optical zoom",
+      "video": "8K@24fps, 4K@30/60fps"
     },
     "body": {
       "height": 157.4,
       "width": 75.8,
       "thickness": 7.6,
-      "weight": 195
+      "weight": 195,
+      "materials": "Glass front (Gorilla Glass Victus+), glass back (Gorilla Glass Victus+), aluminum frame",
+      "ip": "IP68"
     },
     "connectivity": {
-      "network": "5G"
+      "network": "5G",
+      "bluetooth": "5.2",
+      "wifi": "Wi-Fi 6",
+      "nfc": true
     },
     "cardSlot": false,
     "os": "Android 12",
     "sources": [
-      "https://mobilecentre.am/product/samsung-galaxy-s22+/26818/"
+      "https://mobilecentre.am/product/samsung-galaxy-s22+/26818/",
+      "https://www.gsmarena.com/a-11253.php"
     ]
   },
   {
@@ -56235,7 +56660,9 @@
       "refresh": 120
     },
     "battery": {
-      "capacity": 4400
+      "capacity": 4400,
+      "wired": 25,
+      "wireless": 15
     },
     "summaryEn": "Samsung Galaxy Z Fold 5.",
     "unsure": [
@@ -56255,16 +56682,20 @@
     "camera": {
       "modules": 3,
       "main": "50 MP",
-      "front": "4 MP under the screen + 10 MP on the cover"
+      "front": "4 MP under the screen + 10 MP on the cover",
+      "video": "8K@24fps, 4K@30/60fps"
     },
     "body": {
       "height": 154.9,
       "width": 129.9,
       "thickness": 6.1,
-      "weight": 253
+      "weight": 253,
+      "materials": "Gorilla Glass Victus 2 front and back, Armor Aluminum frame"
     },
     "connectivity": {
-      "network": "5G"
+      "network": "5G",
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6E"
     },
     "cardSlot": false,
     "os": "Android 13",
@@ -56307,7 +56738,9 @@
       "brightness": 2600
     },
     "battery": {
-      "capacity": 4400
+      "capacity": 4400,
+      "wired": 25,
+      "wireless": 15
     },
     "summaryEn": "Samsung Galaxy Z Fold 6.",
     "unsure": [
@@ -56327,16 +56760,20 @@
     "camera": {
       "modules": 3,
       "main": "50 MP",
-      "front": "4 MP"
+      "front": "4 MP",
+      "video": "8K@30fps, 4K@30/60fps"
     },
     "body": {
       "height": 153.5,
       "width": 132.6,
       "thickness": 5.6,
-      "weight": 239
+      "weight": 239,
+      "materials": "Gorilla Glass Victus 2 front and back, Armor Aluminum frame"
     },
     "connectivity": {
-      "network": "5G"
+      "network": "5G",
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 7"
     },
     "cardSlot": false,
     "os": "Android 14",
@@ -56375,10 +56812,12 @@
       "size": 6.7,
       "type": "Super AMOLED",
       "resolution": "2340x1080",
-      "refresh": 90
+      "refresh": 90,
+      "ppi": 385
     },
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 25
     },
     "summaryEn": "Samsung Galaxy A18.",
     "unsure": [
@@ -56390,28 +56829,38 @@
     ],
     "chipset": {
       "name": "Samsung Exynos 1610",
-      "cpu": "Octa-core (2x2.4 GHz + 6x2.0 GHz Cortex-A55)"
+      "cpu": "Octa-core (2x2.4 GHz + 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G68"
     },
     "camera": {
       "modules": 3,
       "main": "50 MP",
-      "front": "13 MP"
+      "front": "13 MP",
+      "ultrawide": "5 MP, f/2.2, 17mm",
+      "video": "1080p@30fps"
     },
     "body": {
       "height": 164.4,
       "width": 77.9,
       "thickness": 7.7,
-      "weight": 196
+      "weight": 196,
+      "materials": "Glass front (Gorilla Glass 3), plastic back, plastic frame",
+      "ip": "IP64"
     },
     "connectivity": {
       "network": "4G",
-      "sim": "Dual nano-SIM"
+      "sim": "Dual nano-SIM",
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 5",
+      "nfc": true
     },
     "cardSlot": false,
     "os": "Android 17",
     "sources": [
-      "https://mobilecentre.am/product/samsung-galaxy-a18/34466/"
-    ]
+      "https://mobilecentre.am/product/samsung-galaxy-a18/34466/",
+      "https://www.gsmarena.com/a-14941.php"
+    ],
+    "year": 2026
   },
   {
     "id": "google-pixel-11",
@@ -56436,7 +56885,10 @@
       "brightness": 3000
     },
     "chipset": {
-      "name": "Google Tensor G6"
+      "name": "Google Tensor G6",
+      "cpu": "7-core (1x4.1 GHz ARM C1-Ultra & 4x3.4 GHz ARM C1-Pro & 2x2.65 GHz ARM C1-Pro)",
+      "process": "3 nm",
+      "gpu": "IMG CXTP-48-1536"
     },
     "variants": [
       {
@@ -56453,17 +56905,29 @@
     "camera": {
       "modules": 3,
       "main": "48 MP",
-      "front": "10.5 MP"
+      "front": "10.5 MP",
+      "ultrawide": "13 MP, f/2.2, 14mm",
+      "telephoto": "8 MP, f/3.1, 105mm, OIS, 5x optical zoom",
+      "video": "4K@24/30/60fps, 1080p@24/30/60/120/240fps; gyro-EIS"
     },
     "battery": {
-      "capacity": 4985
+      "capacity": 4985,
+      "wired": 30,
+      "wireless": 25
     },
     "body": {
-      "weight": 196
+      "weight": 196,
+      "height": 152.8,
+      "width": 72,
+      "thickness": 8.6,
+      "materials": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "ip": "IP68"
     },
     "connectivity": {
       "network": "5G",
-      "nfc": true
+      "nfc": true,
+      "bluetooth": "6.0",
+      "wifi": "Wi-Fi 6e"
     },
     "cardSlot": false,
     "os": "Android 17",
@@ -56480,7 +56944,8 @@
     "year": 2026,
     "released": "2026-08",
     "sources": [
-      "https://store.google.com/us/product/pixel_11_specs"
+      "https://store.google.com/us/product/pixel_11_specs",
+      "https://www.gsmarena.com/a-14799.php"
     ]
   },
   {
@@ -56505,7 +56970,10 @@
       "brightness": 3600
     },
     "chipset": {
-      "name": "Google Tensor G6"
+      "name": "Google Tensor G6",
+      "cpu": "7-core (1x4.1 GHz ARM C1-Ultra & 4x3.4 GHz ARM C1-Pro & 2x2.65 GHz ARM C1-Pro)",
+      "process": "3 nm",
+      "gpu": "IMG CXTP-48-1536"
     },
     "variants": [
       {
@@ -56527,17 +56995,29 @@
     "camera": {
       "modules": 3,
       "main": "50 MP",
-      "front": "42 MP"
+      "front": "42 MP",
+      "ultrawide": "48 MP, f/1.7, 12mm",
+      "telephoto": "48 MP, f/2.8, 105mm, OIS, 5x optical zoom",
+      "video": "8K@24/30fps, 4K@24/30/60fps"
     },
     "battery": {
-      "capacity": 4850
+      "capacity": 4850,
+      "wired": 30,
+      "wireless": 25
     },
     "body": {
-      "weight": 204
+      "weight": 204,
+      "height": 152.7,
+      "width": 71.9,
+      "thickness": 8.4,
+      "materials": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "ip": "IP68"
     },
     "connectivity": {
       "network": "5G",
-      "nfc": true
+      "nfc": true,
+      "bluetooth": "6.0",
+      "wifi": "Wi-Fi 7"
     },
     "cardSlot": false,
     "os": "Android 17",
@@ -56554,7 +57034,8 @@
     "year": 2026,
     "released": "2026-08",
     "sources": [
-      "https://store.google.com/us/product/pixel_11_pro_specs"
+      "https://store.google.com/us/product/pixel_11_pro_specs",
+      "https://www.gsmarena.com/a-14801.php"
     ]
   },
   {
@@ -56642,10 +57123,13 @@
       "size": 6.73,
       "type": "LTPO AMOLED",
       "resolution": "3200x1440",
-      "refresh": 120
+      "refresh": 120,
+      "ppi": 522
     },
     "battery": {
-      "capacity": 5410
+      "capacity": 5410,
+      "wired": 90,
+      "wireless": 80
     },
     "summaryEn": "Xiaomi 15 Ultra.",
     "unsure": [
@@ -56654,20 +57138,24 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
       "cpu": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
-      "gpu": "Adreno 830"
+      "gpu": "Adreno 830",
+      "process": "3 nm"
     },
     "camera": {
       "modules": 4,
       "main": "50 MP, f/1.6, 23mm",
       "front": "32 MP, f/2.0, 21mm",
-      "video": "8K@30fps"
+      "video": "8K@30fps",
+      "ultrawide": "50 MP, f/2.2, 14mm",
+      "telephoto": "50 MP, f/1.8, 70mm, OIS, 3x optical zoom"
     },
     "body": {
       "height": 161.3,
       "width": 75.3,
       "thickness": 9.4,
       "weight": 226,
-      "materials": "Glass front, glass-fiber back or silicone polymer back (eco leather), aluminum frame"
+      "materials": "Glass front, glass-fiber back or silicone polymer back (eco leather), aluminum frame",
+      "ip": "IP68"
     },
     "released": "2025-03",
     "colors": [
@@ -56677,8 +57165,14 @@
     ],
     "specSource": "pixel.am product page, 2026-10-03",
     "connectivity": {
-      "bluetooth": "6.0"
-    }
+      "bluetooth": "6.0",
+      "wifi": "Wi-Fi 7",
+      "nfc": true
+    },
+    "os": "Android 15",
+    "sources": [
+      "https://www.gsmarena.com/a-13657.php"
+    ]
   },
   {
     "id": "nothing-cmf-phone-1",
@@ -56712,10 +57206,12 @@
       "size": 6.67,
       "type": "AMOLED",
       "resolution": "2400x1080",
-      "refresh": 120
+      "refresh": 120,
+      "ppi": 395
     },
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 33
     },
     "summaryEn": "Nothing CMF Phone 1.",
     "unsure": [
@@ -56724,7 +57220,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 7300",
       "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
-      "gpu": "Mali-G615 MC2"
+      "gpu": "Mali-G615 MC2",
+      "process": "4 nm"
     },
     "camera": {
       "modules": 2,
@@ -56747,8 +57244,13 @@
     ],
     "specSource": "pixel.am product page, 2026-10-03",
     "connectivity": {
-      "bluetooth": "5.3"
-    }
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "Android 14",
+    "sources": [
+      "https://www.gsmarena.com/a-13122.php"
+    ]
   },
   {
     "id": "nothing-phone-2a",
@@ -56774,10 +57276,12 @@
       "size": 6.7,
       "type": "AMOLED",
       "resolution": "2412x1080",
-      "refresh": 120
+      "refresh": 120,
+      "ppi": 394
     },
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 45
     },
     "summaryEn": "Nothing Phone 2a.",
     "unsure": [
@@ -56786,20 +57290,23 @@
     "chipset": {
       "name": "MediaTek Dimensity 7200 Pro",
       "cpu": "Octa-core (2x2.8 GHz Cortex-A715 & 6x 2.0 Cortex-A510)",
-      "gpu": "Mali-G610 MC4"
+      "gpu": "Mali-G610 MC4",
+      "process": "4 nm"
     },
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.9, 24mm",
       "front": "32 MP, f/2.2",
-      "video": "4K@30fps"
+      "video": "4K@30fps",
+      "ultrawide": "50 MP, f/2.2"
     },
     "body": {
       "height": 161.7,
       "width": 76.3,
       "thickness": 8.6,
       "weight": 190,
-      "materials": "Glass front (Gorilla Glass 5), plastic frame, plastic back"
+      "materials": "Glass front (Gorilla Glass 5), plastic frame, plastic back",
+      "ip": "IP54"
     },
     "released": "2024-03",
     "colors": [
@@ -56808,8 +57315,14 @@
     ],
     "specSource": "pixel.am product page, 2026-10-03",
     "connectivity": {
-      "bluetooth": "5.3"
-    }
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6",
+      "nfc": true
+    },
+    "os": "Android 14",
+    "sources": [
+      "https://www.gsmarena.com/a-12760.php"
+    ]
   },
   {
     "id": "nothing-phone-3a",
@@ -56841,10 +57354,12 @@
       "size": 6.77,
       "type": "AMOLED",
       "resolution": "2392x1080",
-      "refresh": 120
+      "refresh": 120,
+      "ppi": 387
     },
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 50
     },
     "summaryEn": "Nothing Phone 3a.",
     "unsure": [
@@ -56853,20 +57368,24 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7s Gen 3",
       "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)",
-      "gpu": "Adreno 810"
+      "gpu": "Adreno 810",
+      "process": "4 nm"
     },
     "camera": {
       "modules": 3,
       "main": "50 MP, f/1.9, 24mm",
       "front": "32 MP, f/2.2, 22mm",
-      "video": "4K@30fps"
+      "video": "4K@30fps",
+      "ultrawide": "8 MP, f/2.2, 15mm",
+      "telephoto": "50 MP, f/2.0, 50mm, 2x optical zoom"
     },
     "body": {
       "height": 163.5,
       "width": 77.5,
       "thickness": 8.4,
       "weight": 201,
-      "materials": "Glass front (Panda Glass), plastic frame, glass back"
+      "materials": "Glass front (Panda Glass), plastic frame, glass back",
+      "ip": "IP64"
     },
     "released": "2025-03",
     "colors": [
@@ -56876,8 +57395,14 @@
     ],
     "specSource": "pixel.am product page, 2026-10-03",
     "connectivity": {
-      "bluetooth": "5.4"
-    }
+      "bluetooth": "5.4",
+      "wifi": "Wi-Fi 6",
+      "nfc": true
+    },
+    "os": "Android 15",
+    "sources": [
+      "https://www.gsmarena.com/a-13672.php"
+    ]
   },
   {
     "id": "nothing-phone-1",
@@ -56908,10 +57433,13 @@
       "size": 6.55,
       "type": "OLED",
       "resolution": "2400x1080",
-      "refresh": 120
+      "refresh": 120,
+      "ppi": 402
     },
     "battery": {
-      "capacity": 4500
+      "capacity": 4500,
+      "wired": 33,
+      "wireless": 15
     },
     "summaryEn": "Nothing Phone 1.",
     "unsure": [
@@ -56935,7 +57463,8 @@
       "width": 75.8,
       "thickness": 8.3,
       "weight": 193.5,
-      "materials": "Glass front (Gorilla Glass 5), glass back, aluminum frame"
+      "materials": "Glass front (Gorilla Glass 5), glass back, aluminum frame",
+      "ip": "IP53"
     },
     "released": "2022-07",
     "colors": [
@@ -56943,8 +57472,14 @@
     ],
     "specSource": "gsmarena.com, 2026-10-03",
     "connectivity": {
-      "bluetooth": "5.2"
-    }
+      "bluetooth": "5.2",
+      "wifi": "Wi-Fi 6",
+      "nfc": true
+    },
+    "os": "Android 12",
+    "sources": [
+      "https://www.gsmarena.com/a-11636.php"
+    ]
   },
   {
     "id": "google-pixel-6a",
@@ -56970,10 +57505,12 @@
       "size": 6.1,
       "type": "OLED",
       "resolution": "2400x1080",
-      "protection": "Gorilla Glass 3"
+      "protection": "Gorilla Glass 3",
+      "ppi": 429
     },
     "battery": {
-      "capacity": 4410
+      "capacity": 4410,
+      "wired": 18
     },
     "summaryEn": "Google Pixel 6a.",
     "unsure": [
@@ -56982,7 +57519,8 @@
     "chipset": {
       "name": "Google Tensor",
       "process": "5 nm",
-      "gpu": "Mali-G78 MP20"
+      "gpu": "Mali-G78 MP20",
+      "cpu": "Octa-core (2x2.80 GHz Cortex-X1 & 2x2.25 GHz Cortex-A76 & 4x1.80 GHz Cortex-A55)"
     },
     "camera": {
       "modules": 2,
@@ -57006,6 +57544,15 @@
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2",
+      "wifi": "Wi-Fi 6e",
+      "nfc": true
+    },
+    "os": "Android 12",
+    "sources": [
+      "https://www.gsmarena.com/a-11229.php"
     ]
   },
   {
@@ -57033,10 +57580,12 @@
       "type": "AMOLED",
       "resolution": "2412x1080",
       "refresh": 120,
-      "protection": "Gorilla Glass 5"
+      "protection": "Gorilla Glass 5",
+      "ppi": 395
     },
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 50
     },
     "summaryEn": "Nothing Phone 2a Plus.",
     "unsure": [
@@ -57045,7 +57594,8 @@
     "chipset": {
       "name": "MediaTek Dimensity 7350 Pro",
       "process": "4 nm",
-      "gpu": "Mali-G610 MC4"
+      "gpu": "Mali-G610 MC4",
+      "cpu": "Octa-core (2x3.0 GHz Cortex-A715 & 6x 2.0 GHz Cortex-A510)"
     },
     "camera": {
       "modules": 2,
@@ -57066,6 +57616,15 @@
     "specSource": "gsmarena.com/nothing_phone_(2a)_plus-13243.php, 2026-10-03",
     "colors": [
       "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6",
+      "nfc": true
+    },
+    "os": "Android 14",
+    "sources": [
+      "https://www.gsmarena.com/a-13243.php"
     ]
   },
   {
@@ -57092,10 +57651,12 @@
       "size": 6.7,
       "type": "Fluid AMOLED",
       "resolution": "2412x1080",
-      "refresh": 120
+      "refresh": 120,
+      "ppi": 394
     },
     "battery": {
-      "capacity": 5500
+      "capacity": 5500,
+      "wired": 100
     },
     "summaryEn": "OnePlus Nord CE4.",
     "unsure": [
@@ -57104,7 +57665,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7 Gen 3",
       "process": "4 nm",
-      "gpu": "Adreno 720"
+      "gpu": "Adreno 720",
+      "cpu": "Octa-core (1x2.63 GHz Cortex-A715 & 4x2.4 GHz Cortex-A715 & 3x1.8 GHz Cortex-A510)"
     },
     "camera": {
       "modules": 2,
@@ -57121,7 +57683,15 @@
       "ip": "IP54"
     },
     "released": "2024-04",
-    "specSource": "gsmarena.com/oneplus_nord_ce4-12892.php, 2026-10-03"
+    "specSource": "gsmarena.com/oneplus_nord_ce4-12892.php, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "5.4",
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "Android 14",
+    "sources": [
+      "https://www.gsmarena.com/a-12892.php"
+    ]
   },
   {
     "id": "google-pixel-6",
@@ -57265,10 +57835,13 @@
       "size": 6.1,
       "type": "Super Retina XDR OLED",
       "resolution": "2532x1170",
-      "protection": "Ceramic Shield glass"
+      "protection": "Ceramic Shield glass",
+      "refresh": 60
     },
     "battery": {
-      "capacity": 3240
+      "capacity": 3240,
+      "wired": 20,
+      "wireless": 15
     },
     "summaryEn": "Apple iPhone 13.",
     "unsure": [
@@ -57277,7 +57850,8 @@
     "chipset": {
       "name": "Apple A15 Bionic",
       "process": "5 nm",
-      "gpu": "Apple GPU (4-core graphics)"
+      "gpu": "Apple GPU (4-core graphics)",
+      "cpu": "6-core (2 performance + 4 efficiency)"
     },
     "camera": {
       "modules": 2,
@@ -57302,7 +57876,12 @@
       "Midnight",
       "Pink",
       "Starlight"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0",
+      "wifi": "Wi-Fi 6"
+    },
+    "os": "iOS 15"
   },
   {
     "id": "samsung-galaxy-s24",
@@ -57338,7 +57917,9 @@
       "protection": "Gorilla Glass Victus 2"
     },
     "battery": {
-      "capacity": 4000
+      "capacity": 4000,
+      "wired": 25,
+      "wireless": 15
     },
     "summaryEn": "Samsung Galaxy S24.",
     "unsure": [
@@ -57347,7 +57928,8 @@
     "chipset": {
       "name": "Samsung Exynos 2400",
       "process": "4 nm",
-      "gpu": "Xclipse 940"
+      "gpu": "Xclipse 940",
+      "cpu": "Deca-core (1x3.2 GHz Cortex-X4 & 2x2.9 GHz & 3x2.6 GHz Cortex-A720 & 4x1.95 GHz Cortex-A520)"
     },
     "camera": {
       "modules": 3,
@@ -57372,7 +57954,12 @@
       "Cobalt Violet",
       "Black",
       "Gray"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6E"
+    },
+    "os": "Android 14"
   },
   {
     "id": "google-pixel-7-pro",
@@ -57721,7 +58308,9 @@
       "protection": "Gorilla Glass Victus 2"
     },
     "battery": {
-      "capacity": 4900
+      "capacity": 4900,
+      "wired": 45,
+      "wireless": 15
     },
     "summaryEn": "Samsung Galaxy S24 Plus.",
     "unsure": [
@@ -57730,7 +58319,8 @@
     "chipset": {
       "name": "Samsung Exynos 2400",
       "process": "4 nm",
-      "gpu": "Xclipse 940"
+      "gpu": "Xclipse 940",
+      "cpu": "Deca-core (1x3.2 GHz Cortex-X4 & 2x2.9 GHz & 3x2.6 GHz Cortex-A720 & 4x1.95 GHz Cortex-A520)"
     },
     "camera": {
       "modules": 3,
@@ -57749,7 +58339,12 @@
       "ip": "IP68"
     },
     "released": "2024-01",
-    "specSource": "gsmarena.com/samsung_galaxy_s24+-12772.php, 2026-10-03"
+    "specSource": "gsmarena.com/samsung_galaxy_s24+-12772.php, 2026-10-03",
+    "connectivity": {
+      "bluetooth": "5.3",
+      "wifi": "Wi-Fi 6E"
+    },
+    "os": "Android 14"
   },
   {
     "id": "xiaomi-poco-f8-ultra",
@@ -58927,7 +59522,8 @@
       "Midnight"
     ],
     "chipset": {
-      "name": "Apple M2"
+      "name": "Apple M2",
+      "cpu": "8-core (4 performance + 4 efficiency)"
     },
     "body": {
       "weight": 1240
@@ -65357,7 +65953,8 @@
     },
     "colors": [
       "Silver"
-    ]
+    ],
+    "os": "macOS Ventura"
   },
   {
     "id": "hp-omen-16-core-i7-14650hx-rtx5050-c42dnea",
@@ -66502,7 +67099,8 @@
       "battery.capacity"
     ],
     "chipset": {
-      "name": "Apple M3"
+      "name": "Apple M3",
+      "cpu": "8-core (4 performance + 4 efficiency)"
     },
     "body": {
       "weight": 1240
@@ -73873,7 +74471,9 @@
       "size": 16.2,
       "resolution": "3456x2234"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 100
+    },
     "summaryEn": "A 16.2-inch laptop with Apple M5 Max, 48 GB RAM and 2048 GB storage.",
     "unsure": [
       "popularity",
@@ -75565,7 +76165,9 @@
       "size": 16.2,
       "resolution": "3456x2234"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 100
+    },
     "summaryEn": "A 16.2-inch laptop with Apple M5 Pro, 48 GB RAM and 1024 GB storage.",
     "unsure": [
       "popularity",
@@ -76796,7 +77398,8 @@
       }
     ],
     "battery": {
-      "playback": 20
+      "playback": 20,
+      "life": "20 hours"
     },
     "summaryEn": "Apple AirPods Max (USB-C, 2024).",
     "sources": [
@@ -80473,7 +81076,9 @@
       "size": 16.2,
       "resolution": "3456x2234"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 100
+    },
     "summaryEn": "Apple Macbook Pro 16\" M1 Pro I MK183.",
     "unsure": [
       "popularity"
@@ -86018,7 +86623,8 @@
     "chipset": {
       "name": "Samsung Exynos 2400e",
       "process": "4 nm",
-      "gpu": "Xclipse 940"
+      "gpu": "Xclipse 940",
+      "cpu": "Deca-core (1x3.1 GHz Cortex-X4 & 2x2.9 GHz & 3x2.6 GHz Cortex-A720 & 4x1.95 GHz Cortex-A520)"
     },
     "variants": [
       {
@@ -86742,7 +87348,8 @@
     },
     "chipset": {
       "name": "Apple A20 Pro",
-      "gpu": "Apple GPU (7-core)"
+      "gpu": "Apple GPU (7-core)",
+      "cpu": "6-core (2 super + 4 efficiency)"
     },
     "variants": [
       {
@@ -86767,6 +87374,8 @@
       }
     ],
     "camera": {
+      "front": "12MP Center Stage, f/2.2",
+      "video": "4K Dolby Vision up to 120 fps",
       "modules": 2,
       "main": "48 MP"
     },
@@ -86780,7 +87389,9 @@
     },
     "connectivity": {
       "network": "5G",
-      "sim": "eSIM + eSIM"
+      "sim": "eSIM + eSIM",
+      "bluetooth": "6.0",
+      "wifi": "Wi-Fi 7"
     },
     "os": "iOS 27",
     "colors": [
@@ -86791,11 +87402,14 @@
     "sources": [
       "https://www.pixel.am/am/product/iphone-duo",
       "https://www.phonearena.com/news/the-new-iphone-duo-is-here_id183191",
-      "https://www.apple.com/shop/buy-iphone/iphone-duo"
+      "https://www.apple.com/shop/buy-iphone/iphone-duo",
+      "https://www.apple.com/iphone-duo/specs/"
     ],
     "unsure": [],
     "battery": {
-      "capacity": 4883
+      "capacity": 4883,
+      "wired": 60,
+      "wireless": 25
     }
   },
   {
@@ -139717,7 +140331,8 @@
       "refresh": 90
     },
     "chipset": {
-      "name": "MediaTek Helio G99"
+      "name": "MediaTek Helio G99",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
     },
     "variants": [
       {
@@ -139730,7 +140345,8 @@
       "main": "50 MP, f/1.8",
       "ultrawide": "5 MP, f/2.2",
       "front": "13 MP, f/2.0",
-      "modules": 3
+      "modules": 3,
+      "video": "1080p@30fps"
     },
     "battery": {
       "capacity": 5000,
@@ -139742,12 +140358,14 @@
       "width": 77.9,
       "thickness": 7.9,
       "weight": 200,
-      "ip": "IP54"
+      "ip": "IP54",
+      "materials": "Glass front, plastic back, plastic frame"
     },
     "connectivity": {
       "network": "4G",
       "bluetooth": "5.3",
-      "sim": "Dual Nano-SIM"
+      "sim": "Dual Nano-SIM",
+      "wifi": "Wi-Fi 5"
     },
     "cardSlot": true,
     "os": "Android 14, One UI 6.1",
