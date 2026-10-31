@@ -51566,11 +51566,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.5",
-      "front": "20 MP"
+      "front": "20 MP",
+      "video": "1080p at 30fps"
     },
     "released": "2024-12",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/poco-m7-pro-5g"
     ],
     "colors": [
       "Lavender",
@@ -51663,7 +51665,8 @@
     },
     "released": "2026-01",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/poco-m8-5g"
     ]
   },
   {
@@ -52055,7 +52058,8 @@
     },
     "released": "2026-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/poco-x8-pro-max"
     ]
   },
   {
@@ -52731,7 +52735,8 @@
     },
     "released": "2025-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-15"
     ],
     "colors": [
       "Purple",
@@ -54517,7 +54522,8 @@
     },
     "released": "2024-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-note-14-pro-plus-5g"
     ],
     "colors": [
       "Black",
@@ -54844,7 +54850,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 7s Gen4",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno"
+      "gpu": "Qualcomm Adreno",
+      "cpu": "Octa-core, up to 2.7 GHz"
     },
     "body": {
       "weight": 207,
@@ -54870,7 +54877,8 @@
     },
     "released": "2025-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-note-15-pro-plus-5g"
     ],
     "colors": [
       "Brown",
@@ -54924,7 +54932,8 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 6s Gen4",
       "process": "4 nm",
-      "gpu": "Qualcomm Adreno 619"
+      "gpu": "Qualcomm Adreno 619",
+      "cpu": "Octa-core, up to 2.9 GHz"
     },
     "body": {
       "weight": 224,
@@ -54945,11 +54954,13 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "16 MP"
+      "front": "16 MP",
+      "video": "1080p at 30 fps"
     },
     "released": "2026-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-note-17"
     ],
     "colors": [
       "Blue",
@@ -59902,7 +59913,9 @@
       "refresh": 120
     },
     "battery": {
-      "capacity": 4806
+      "capacity": 4806,
+      "wired": 30,
+      "wireless": 25
     },
     "summaryEn": "Google Pixel 11 Pro Fold.",
     "unsure": [
@@ -59933,6 +59946,13 @@
     "specSource": "gsmarena.com/google_pixel_11_pro_fold-14874.php, 2026-10-03",
     "colors": [
       "Obsidian"
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "os": "Android 17",
+    "sources": [
+      "https://store.google.com/us/product/pixel_11_pro_fold_specs"
     ]
   },
   {
@@ -68681,7 +68701,9 @@
       "refresh": 165
     },
     "battery": {
-      "capacity": 7300
+      "capacity": 7300,
+      "wired": 120,
+      "wireless": 50
     },
     "summaryEn": "OnePlus 15.",
     "unsure": [
@@ -68699,12 +68721,17 @@
       "main": "50 MP f/1.8 wide, OIS",
       "telephoto": "50 MP periscope, 3.5x optical",
       "ultrawide": "50 MP",
-      "front": "32 MP"
+      "front": "32 MP",
+      "video": "4K at 120 fps"
     },
     "colors": [
       "Infinite Black",
       "Ultra Violet",
       "Sand Storm"
+    ],
+    "os": "OxygenOS 16",
+    "sources": [
+      "https://www.oneplus.com/global/15/specs"
     ]
   },
   {
@@ -103103,12 +103130,14 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 4 Gen 5",
       "process": "4 nm",
-      "gpu": "Adreno"
+      "gpu": "Adreno",
+      "cpu": "Octa-core (Cortex-A78 + Cortex-A55), up to 2.4 GHz"
     },
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "front": "8 MP, f/2.05"
+      "front": "8 MP, f/2.05",
+      "video": "1080p at 30 fps"
     },
     "battery": {
       "capacity": 7500,
@@ -103135,7 +103164,8 @@
     "summaryEn": "The 5G Redmi 17: a Snapdragon 4 Gen 5 and a 7500 mAh battery behind a 6.9-inch 120 Hz screen.",
     "sources": [
       "https://www.fonearena.com/blog/?p=489084",
-      "https://www.mi.com/np/product/redmi-17-5g/"
+      "https://www.mi.com/np/product/redmi-17-5g/",
+      "https://www.mi.com/global/product/redmi-17-5g"
     ],
     "unsure": [
       "popularity"
@@ -103502,7 +103532,8 @@
     "sources": [
       "https://www.fonearena.com/blog/?p=493996",
       "https://www.mi.com/sa-en/product/poco-c95-pro/",
-      "https://www.mi.com/global/product/poco-c95-pro/specs/"
+      "https://www.mi.com/global/product/poco-c95-pro/specs/",
+      "https://www.mi.com/global/product/poco-c95-pro"
     ],
     "unsure": [
       "popularity"
