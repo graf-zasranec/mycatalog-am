@@ -8,6 +8,86 @@
  "tooSmall": 24,
  "products": [
   {
+   "id": "kenwood-fdm301ss",
+   "brand": "Kenwood",
+   "name": "Food Processor FDM301SS",
+   "category": "kitchen",
+   "shops": 2,
+   "query": "Kenwood Food Processor FDM301SS",
+   "what": "too small",
+   "width": 401
+  },
+  {
+   "id": "samsung-rb31fernds9-wt",
+   "brand": "Samsung",
+   "name": "Fridge RB31FERNDS9/WT 310 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Samsung Fridge RB31FERNDS9/WT 310 L",
+   "what": "too small",
+   "width": 339
+  },
+  {
+   "id": "samsung-rt62k7110sl-wt",
+   "brand": "Samsung",
+   "name": "Fridge RT62K7110SL/WT 618 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Samsung Fridge RT62K7110SL/WT 618 L",
+   "what": "too small",
+   "width": 553
+  },
+  {
+   "id": "toshiba-gr-rf610we-pms-06",
+   "brand": "Toshiba",
+   "name": "Fridge GR-RF610WE-PMS(06) 457 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Toshiba Fridge GR-RF610WE-PMS(06) 457 L",
+   "what": "too small",
+   "width": 470
+  },
+  {
+   "id": "toshiba-gr-rt468we-pmj-06",
+   "brand": "Toshiba",
+   "name": "Fridge GR-RT468WE-PMJ(06) 338 L",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Toshiba Fridge GR-RT468WE-PMJ(06) 338 L",
+   "what": "too small",
+   "width": 451
+  },
+  {
+   "id": "babyliss-e976e",
+   "brand": "BaByliss",
+   "name": "Hair Clipper E976E",
+   "category": "grooming",
+   "shops": 1,
+   "query": "BaByliss Hair Clipper E976E",
+   "what": "too small",
+   "width": 354
+  },
+  {
+   "id": "bosch-kgn39ijea",
+   "brand": "Bosch",
+   "name": "Refrigerator KGN39IJEA",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Bosch Refrigerator KGN39IJEA",
+   "what": "too small",
+   "width": 553
+  },
+  {
+   "id": "electrolux-esf2400os",
+   "brand": "Electrolux",
+   "name": "Dishwasher ESF2400OS",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Electrolux Dishwasher ESF2400OS",
+   "what": "too small",
+   "width": 619
+  },
+  {
    "id": "hisense-ap-12hw4gqcs00",
    "brand": "Hisense",
    "name": "Air Conditioner AP-12HW4GQCS00 12000 BTU",
@@ -68,14 +148,14 @@
    "width": 352
   },
   {
-   "id": "kenwood-fdm301ss",
+   "id": "kenwood-fdm304ss",
    "brand": "Kenwood",
-   "name": "Food Processor FDM301SS",
+   "name": "Food Processor FDM304SS",
    "category": "kitchen",
    "shops": 1,
-   "query": "Kenwood Food Processor FDM301SS",
+   "query": "Kenwood Food Processor FDM304SS",
    "what": "too small",
-   "width": 401
+   "width": 411
   },
   {
    "id": "kenwood-zjm810rd",
@@ -88,6 +168,16 @@
    "width": 684
   },
   {
+   "id": "ninja-af400eu",
+   "brand": "Ninja",
+   "name": "Foodi MAX Dual Zone AF400EU",
+   "category": "kitchen",
+   "shops": 1,
+   "query": "Ninja Foodi MAX Dual Zone AF400EU",
+   "what": "too small",
+   "width": 662
+  },
+  {
    "id": "realme-buds-air-3",
    "brand": "Realme",
    "name": "Buds Air 3",
@@ -98,14 +188,24 @@
    "width": 569
   },
   {
-   "id": "samsung-rb31fernds9-wt",
+   "id": "samsung-rb37a5000sa-wt",
    "brand": "Samsung",
-   "name": "Fridge RB31FERNDS9/WT 310 L",
+   "name": "Refrigerator RB37A5000SA/WT",
    "category": "largeappliance",
    "shops": 1,
-   "query": "Samsung Fridge RB31FERNDS9/WT 310 L",
+   "query": "Samsung Refrigerator RB37A5000SA/WT",
    "what": "too small",
-   "width": 339
+   "width": 366
+  },
+  {
+   "id": "samsung-rb38t630esa-ef",
+   "brand": "Samsung",
+   "name": "Refrigerator RB38T630ESA/EF",
+   "category": "largeappliance",
+   "shops": 1,
+   "query": "Samsung Refrigerator RB38T630ESA/EF",
+   "what": "too small",
+   "width": 367
   },
   {
    "id": "samsung-rs80f65m1w-wt",
@@ -118,34 +218,24 @@
    "width": 612
   },
   {
-   "id": "samsung-rt62k7110sl-wt",
+   "id": "samsung-rt47cg6442s9wt",
    "brand": "Samsung",
-   "name": "Fridge RT62K7110SL/WT 618 L",
+   "name": "Refrigerator RT47CG6442S9WT",
    "category": "largeappliance",
    "shops": 1,
-   "query": "Samsung Fridge RT62K7110SL/WT 618 L",
+   "query": "Samsung Refrigerator RT47CG6442S9WT",
    "what": "too small",
-   "width": 553
+   "width": 471
   },
   {
-   "id": "toshiba-gr-rf610we-pms-06",
-   "brand": "Toshiba",
-   "name": "Fridge GR-RF610WE-PMS(06) 457 L",
+   "id": "samsung-ww90t554cax-ld",
+   "brand": "Samsung",
+   "name": "Washing Machine WW90T554CAX/LD",
    "category": "largeappliance",
    "shops": 1,
-   "query": "Toshiba Fridge GR-RF610WE-PMS(06) 457 L",
+   "query": "Samsung Washing Machine WW90T554CAX/LD",
    "what": "too small",
-   "width": 470
-  },
-  {
-   "id": "toshiba-gr-rt468we-pmj-06",
-   "brand": "Toshiba",
-   "name": "Fridge GR-RT468WE-PMJ(06) 338 L",
-   "category": "largeappliance",
-   "shops": 1,
-   "query": "Toshiba Fridge GR-RT468WE-PMJ(06) 338 L",
-   "what": "too small",
-   "width": 451
+   "width": 536
   },
   {
    "id": "xiaomi-poco-c95-pro",
@@ -156,96 +246,6 @@
    "query": "Xiaomi POCO C95 Pro",
    "what": "too small",
    "width": 310
-  },
-  {
-   "id": "babyliss-e976e",
-   "brand": "BaByliss",
-   "name": "Hair Clipper E976E",
-   "category": "grooming",
-   "shops": 0,
-   "query": "BaByliss Hair Clipper E976E",
-   "what": "too small",
-   "width": 354
-  },
-  {
-   "id": "bosch-kgn39ijea",
-   "brand": "Bosch",
-   "name": "Refrigerator KGN39IJEA",
-   "category": "largeappliance",
-   "shops": 0,
-   "query": "Bosch Refrigerator KGN39IJEA",
-   "what": "too small",
-   "width": 553
-  },
-  {
-   "id": "electrolux-esf2400os",
-   "brand": "Electrolux",
-   "name": "Dishwasher ESF2400OS",
-   "category": "largeappliance",
-   "shops": 0,
-   "query": "Electrolux Dishwasher ESF2400OS",
-   "what": "too small",
-   "width": 619
-  },
-  {
-   "id": "kenwood-fdm304ss",
-   "brand": "Kenwood",
-   "name": "Food Processor FDM304SS",
-   "category": "kitchen",
-   "shops": 0,
-   "query": "Kenwood Food Processor FDM304SS",
-   "what": "too small",
-   "width": 411
-  },
-  {
-   "id": "ninja-af400eu",
-   "brand": "Ninja",
-   "name": "Foodi MAX Dual Zone AF400EU",
-   "category": "kitchen",
-   "shops": 0,
-   "query": "Ninja Foodi MAX Dual Zone AF400EU",
-   "what": "too small",
-   "width": 662
-  },
-  {
-   "id": "samsung-rb37a5000sa-wt",
-   "brand": "Samsung",
-   "name": "Refrigerator RB37A5000SA/WT",
-   "category": "largeappliance",
-   "shops": 0,
-   "query": "Samsung Refrigerator RB37A5000SA/WT",
-   "what": "too small",
-   "width": 366
-  },
-  {
-   "id": "samsung-rb38t630esa-ef",
-   "brand": "Samsung",
-   "name": "Refrigerator RB38T630ESA/EF",
-   "category": "largeappliance",
-   "shops": 0,
-   "query": "Samsung Refrigerator RB38T630ESA/EF",
-   "what": "too small",
-   "width": 367
-  },
-  {
-   "id": "samsung-rt47cg6442s9wt",
-   "brand": "Samsung",
-   "name": "Refrigerator RT47CG6442S9WT",
-   "category": "largeappliance",
-   "shops": 0,
-   "query": "Samsung Refrigerator RT47CG6442S9WT",
-   "what": "too small",
-   "width": 471
-  },
-  {
-   "id": "samsung-ww90t554cax-ld",
-   "brand": "Samsung",
-   "name": "Washing Machine WW90T554CAX/LD",
-   "category": "largeappliance",
-   "shops": 0,
-   "query": "Samsung Washing Machine WW90T554CAX/LD",
-   "what": "too small",
-   "width": 536
   }
  ]
 }
