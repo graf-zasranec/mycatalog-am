@@ -7786,9 +7786,14 @@
         "priceAmd": 859000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 90
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/"
     ]
   },
   {
@@ -7828,9 +7833,14 @@
         "priceAmd": 899000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 90
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/"
     ]
   },
   {
@@ -7917,9 +7927,14 @@
         "priceAmd": 739000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 90
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/"
     ]
   },
   {
@@ -8046,12 +8061,17 @@
         "priceAmd": 1099000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 90
+    },
     "unsure": [
       "popularity"
     ],
     "aliases": [
       "Asus Rog Strix G815LM-IS96RTX5060"
+    ],
+    "sources": [
+      "https://www.asus.com/"
     ]
   },
   {
@@ -8878,7 +8898,9 @@
       "resolution": "1920x1200",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 90
+    },
     "summaryEn": "ASUS TUF Gaming A16 FA608P.",
     "unsure": [
       "popularity"
@@ -8888,7 +8910,10 @@
     },
     "body": {
       "weight": 2200
-    }
+    },
+    "sources": [
+      "https://www.asus.com/"
+    ]
   },
   {
     "id": "asus-tuf-gaming-fx707zc4-hx076",
@@ -9407,7 +9432,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "ASUS Vivobook 15 M1502N.",
     "unsure": [
       "popularity"
@@ -9417,7 +9444,10 @@
     },
     "body": {
       "weight": 1700
-    }
+    },
+    "sources": [
+      "https://www.asus.com/"
+    ]
   },
   {
     "id": "asus-vivobook-15-x1504va",
@@ -9497,7 +9527,9 @@
         "priceAmd": 399600
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 50
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6"
     },
@@ -9510,7 +9542,8 @@
       "weight": 1700
     },
     "sources": [
-      "e-catalog"
+      "e-catalog",
+      "https://www.asus.com/"
     ]
   },
   {
@@ -9646,9 +9679,14 @@
         "priceAmd": 499000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.asus.com/"
     ]
   },
   {
@@ -9725,7 +9763,9 @@
       "refresh": 60,
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "ASUS Vivobook 16, i7-1355U, F1605VA-WS74, W11.",
     "unsure": [
       "popularity"
@@ -9737,7 +9777,8 @@
       "name": "Intel Core i7-1355U"
     },
     "sources": [
-      "e-catalog"
+      "e-catalog",
+      "https://www.asus.com/"
     ],
     "colors": [
       "Black"
@@ -9950,14 +9991,19 @@
         "priceAmd": 186000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "A 14-inch laptop with Intel N305.",
     "unsure": [
       "popularity"
     ],
     "body": {
       "weight": 1380
-    }
+    },
+    "sources": [
+      "https://www.asus.com/"
+    ]
   },
   {
     "id": "asus-vivobook-e410ka-cl4128",
@@ -14577,11 +14623,16 @@
         "priceAmd": 419000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://www.notebookcheck.net/"
+    ]
   },
   {
     "id": "dell-plus-2in1-db04250-9168",
@@ -14619,11 +14670,16 @@
         "priceAmd": 659000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://www.notebookcheck.net/"
+    ]
   },
   {
     "id": "dell-pro-14-plus-2in1-pb14250",
@@ -76160,7 +76216,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "A 16-inch laptop with AMD Ryzen 5 220, 16 GB RAM and 512 GB storage.",
     "unsure": [
       "popularity"
@@ -76175,7 +76233,10 @@
     "os": "DOS",
     "body": {
       "weight": 1700
-    }
+    },
+    "sources": [
+      "https://www.asus.com/"
+    ]
   },
   {
     "id": "asus-vivobook-s16-m3607ha-sh097-ryzen-7-260",
@@ -76201,7 +76262,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "A 16-inch laptop with AMD Ryzen 7 260, 16 GB RAM and 1024 GB storage.",
     "unsure": [
       "popularity"
@@ -76216,7 +76279,10 @@
     "os": "DOS",
     "body": {
       "weight": 1700
-    }
+    },
+    "sources": [
+      "https://www.asus.com/"
+    ]
   },
   {
     "id": "asus-vivobook-x1504va-bq4172-i5-120u",
@@ -77888,7 +77954,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "A 15.6-inch laptop with Intel Core 7-150U, 16 GB RAM and 512 GB storage.",
     "unsure": [
       "popularity"
@@ -77903,7 +77971,10 @@
     "os": "DOS",
     "body": {
       "weight": 1700
-    }
+    },
+    "sources": [
+      "https://www.asus.com/"
+    ]
   },
   {
     "id": "asus-vivobook-core-i7-x1404va-i712512",
@@ -78562,10 +78633,13 @@
         "priceAmd": 389000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "ASUS Vivobook M1807HA-DB79.",
     "sources": [
-      "https://appzone.am/en/Assortment/asus-vivobook-m1807ha-db79/"
+      "https://appzone.am/en/Assortment/asus-vivobook-m1807ha-db79/",
+      "https://www.asus.com/"
     ],
     "unsure": [
       "popularity",
