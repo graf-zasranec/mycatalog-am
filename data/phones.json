@@ -29596,7 +29596,9 @@
       "refresh": 60,
       "type": "TN"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "Lenovo 82VG00WXUS.",
     "unsure": [
       "popularity"
@@ -29608,8 +29610,10 @@
       "name": "AMD Ryzen 5 7520U"
     },
     "sources": [
-      "e-catalog"
-    ]
+      "e-catalog",
+      "https://psref.lenovo.com/Detail/IdeaPad_1_15AMN7?M=82VG00WXUS"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-82xb00hvus",
@@ -29636,7 +29640,9 @@
       "resolution": "1920x1080",
       "type": "TN"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 47
+    },
     "summaryEn": "Lenovo 82XB00HVUS.",
     "unsure": [
       "popularity"
@@ -29648,8 +29654,10 @@
       "weight": 1550
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=82XB00HVUS"
-    ]
+      "https://psref.lenovo.com/detail/?M=82XB00HVUS",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IAN8?M=82XB00HVUS"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-82yu016tpb",
@@ -29676,7 +29684,9 @@
       "resolution": "1920x1080",
       "refresh": 60
     },
-    "battery": {},
+    "battery": {
+      "capacity": 38
+    },
     "summaryEn": "Lenovo 82YU016TPB.",
     "unsure": [
       "popularity"
@@ -29688,8 +29698,10 @@
       "weight": 1630
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=82YU016TPB"
-    ]
+      "https://psref.lenovo.com/detail/?M=82YU016TPB",
+      "https://psref.lenovo.com/Detail/Lenovo_V15_G4_AMN?M=82YU016TPB"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-83b40008us",
@@ -29715,7 +29727,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "Lenovo 83B40008US.",
     "unsure": [
       "popularity"
@@ -29727,8 +29741,10 @@
       "weight": 1620
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83B40008US"
-    ]
+      "https://psref.lenovo.com/detail/?M=83B40008US",
+      "https://psref.lenovo.com/Detail/IdeaPad_1_15IRU7?M=83B40008US"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-83f00005us",
@@ -29754,7 +29770,9 @@
       "size": 15.1,
       "resolution": "2560x1600"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "Lenovo 83F00005US.",
     "unsure": [
       "popularity"
@@ -29766,8 +29784,10 @@
       "weight": 1900
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83F00005US"
-    ]
+      "https://psref.lenovo.com/detail/?M=83F00005US",
+      "https://psref.lenovo.com/Detail/Legion_5_15IAX10?M=83F00005US"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-83l7002nus",
@@ -29794,7 +29814,9 @@
       "resolution": "1920x1080",
       "refresh": 60
     },
-    "battery": {},
+    "battery": {
+      "capacity": 47
+    },
     "summaryEn": "Lenovo 83L7002NUS.",
     "unsure": [
       "popularity"
@@ -29806,8 +29828,10 @@
       "weight": 1550
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83L7002NUS"
-    ]
+      "https://psref.lenovo.com/detail/?M=83L7002NUS",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15ITN9?M=83L7002NUS"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-83lk0001us",
@@ -29834,7 +29858,9 @@
       "resolution": "1920x1080",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo 83LK0001US.",
     "unsure": [
       "popularity"
@@ -29846,8 +29872,10 @@
       "weight": 1770
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83LK0001US"
-    ]
+      "https://psref.lenovo.com/detail/?M=83LK0001US",
+      "https://psref.lenovo.com/Detail/LOQ_15IAX9E?M=83LK0001US"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-83lk00cvus",
@@ -29874,7 +29902,9 @@
       "resolution": "1920x1080",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo 83LK00CVUS.",
     "unsure": [
       "popularity"
@@ -29886,8 +29916,10 @@
       "weight": 1770
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83LK00CVUS"
-    ]
+      "https://psref.lenovo.com/detail/?M=83LK00CVUS",
+      "https://psref.lenovo.com/Detail/LOQ_15IAX9E?M=83LK00CVUS"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-ideapad-1-14igl7",
@@ -30156,11 +30188,16 @@
         "priceAmd": 399000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "sources": [
+      "https://psref.lenovo.com/Detail/IdeaPad_5_2-in-1_14IRU9?M=83DT0077RK"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-16iru9",
@@ -30234,7 +30271,9 @@
       "resolution": "1920x1200",
       "size": 14
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo IdeaPad 5 2-in-1 14IRU9.",
     "unsure": [
       "popularity"
@@ -30244,11 +30283,13 @@
       "weight": 1500
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83DT006NRK"
+      "https://psref.lenovo.com/detail/?M=83DT006NRK",
+      "https://psref.lenovo.com/Detail/IdeaPad_5_2-in-1_14IRU9?M=83DT006NRK"
     ],
     "chipset": {
       "name": "Intel Core 5 120U"
-    }
+    },
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-touch-w11-83ds0056us",
@@ -30276,7 +30317,9 @@
       "refresh": 60,
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo IdeaPad 5 2-in 1, Touch, W11, 83DS0056US.",
     "unsure": [
       "popularity"
@@ -30288,7 +30331,8 @@
       "name": "AMD Ryzen 7 8845HS"
     },
     "sources": [
-      "e-catalog"
+      "e-catalog",
+      "https://psref.lenovo.com/Detail/IdeaPad_5_2-in-1_16AHP9?M=83DS0056US"
     ],
     "colors": [
       "Grey"
@@ -30527,7 +30571,9 @@
       "resolution": "2560x1600",
       "size": 16
     },
-    "battery": {},
+    "battery": {
+      "capacity": 75
+    },
     "summaryEn": "Lenovo IdeaPad Pro 5 16IRH8.",
     "unsure": [
       "popularity"
@@ -30538,11 +30584,13 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83AQ0024RK",
-      "https://eldorado.am/en/lenovo-ideapad-pro-5-16irh8-16-512gb-83aq0024rk"
+      "https://eldorado.am/en/lenovo-ideapad-pro-5-16irh8-16-512gb-83aq0024rk",
+      "https://psref.lenovo.com/Detail/IdeaPad_Pro_5_16IRH8?M=83AQ0024RK"
     ],
     "chipset": {
       "name": "Intel Core i5-13500H"
-    }
+    },
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-15",
@@ -30584,7 +30632,9 @@
         "priceAmd": 369900
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 47
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6"
     },
@@ -30598,7 +30648,8 @@
       "weight": 1620
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83EM008WIN"
+      "https://psref.lenovo.com/detail/?M=83EM008WIN",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IRH8?M=83EM008WIN"
     ]
   },
   {
@@ -30627,7 +30678,9 @@
       "refresh": 60,
       "type": "TN"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 47
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3, 15.6”, W11, Abyss Bl 82XQ012HUS.",
     "unsure": [
       "popularity"
@@ -30637,7 +30690,8 @@
       "weight": 1600
     },
     "sources": [
-      "e-catalog"
+      "e-catalog",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15AMN8?M=82XQ012HUS"
     ],
     "chipset": {
       "name": "AMD Ryzen 5 40"
@@ -30686,11 +30740,16 @@
         "priceAmd": 445400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15AHP10?M=83KA000YRK"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-15ian8",
@@ -31079,11 +31138,16 @@
         "priceAmd": 449000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15Q8X10?M=83N30000US"
+    ]
   },
   {
     "id": "lenovo-ideapad-slim-3-16irh10",
@@ -31110,7 +31174,9 @@
       "resolution": "1920x1200",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 16IRH10.",
     "unsure": [
       "popularity"
@@ -31123,8 +31189,10 @@
       "weight": 1730
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83K2000WRK"
-    ]
+      "https://psref.lenovo.com/detail/?M=83K2000WRK",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_16IRH10?M=83K2000WRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-ryzen-7-8840hs-83ka000qus-touch-bklit-w11",
@@ -31236,7 +31304,9 @@
       "resolution": "1920x1200",
       "type": "OLED"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 5 14IRH10R.",
     "unsure": [
       "popularity"
@@ -31249,8 +31319,10 @@
       "weight": 1390
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83J0001ARK"
-    ]
+      "https://psref.lenovo.com/detail/?M=83J0001ARK",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_14IRH10R?M=83J0001ARK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-516irh10",
@@ -31281,7 +31353,9 @@
       "resolution": "2880x1800",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "Lenovo IdeaPad Slim 516IRH10.",
     "unsure": [
       "popularity"
@@ -31294,8 +31368,10 @@
       "weight": 1760
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83HS002SRK"
-    ]
+      "https://psref.lenovo.com/detail/?M=83HS002SRK",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IRH10?M=83HS002SRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus",
@@ -31322,7 +31398,9 @@
       "resolution": "1920x1200",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 5i, Core 7 240H, 83J1002SUS.",
     "unsure": [
       "popularity"
@@ -31334,11 +31412,13 @@
       "weight": 1850
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83J1002SUS"
+      "https://psref.lenovo.com/detail/?M=83J1002SUS",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IRH10R?M=83J1002SUS"
     ],
     "colors": [
       "Grey"
-    ]
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-legion-5-15iax10",
@@ -31533,7 +31613,9 @@
       "size": 14,
       "resolution": "2880x1800"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 73.6
+    },
     "summaryEn": "Lenovo Legion Slim 5 14 APH8 OLED 82Y5000AUS.",
     "unsure": [
       "popularity"
@@ -31546,8 +31628,10 @@
       "weight": 1750
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=82Y5000AUS"
-    ]
+      "https://psref.lenovo.com/detail/?M=82Y5000AUS",
+      "https://psref.lenovo.com/Detail/Legion_Slim_5_14APH8?M=82Y5000AUS"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-loq-15",
@@ -31587,7 +31671,9 @@
         "priceAmd": 459900
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "connectivity": {
       "wifi": "Wi-Fi 6"
     },
@@ -31605,7 +31691,8 @@
       "weight": 2380
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83DV00FMRK"
+      "https://psref.lenovo.com/detail/?M=83DV00FMRK",
+      "https://psref.lenovo.com/Detail/LOQ_15IRX9?M=83DV01CHRK"
     ]
   },
   {
@@ -31630,7 +31717,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo LOQ 15 ARP9 83JC0000US.",
     "unsure": [
       "popularity"
@@ -31643,8 +31732,10 @@
       "weight": 2380
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83JC0000US"
-    ]
+      "https://psref.lenovo.com/detail/?M=83JC0000US",
+      "https://psref.lenovo.com/Detail/LOQ_15ARP9?M=83JC0000US"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-loq-15arp9",
@@ -31688,11 +31779,16 @@
         "priceAmd": 489000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "unsure": [
       "popularity"
     ],
-    "year": 2024
+    "year": 2024,
+    "sources": [
+      "https://psref.lenovo.com/Detail/LOQ_15ARP9?M=83JC009CUS"
+    ]
   },
   {
     "id": "lenovo-loq-15iax9",
@@ -31737,8 +31833,10 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83GS00E6RK",
-      "https://www.notebookcheck.net/"
-    ]
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/LOQ_15IAX9?M=83GS00E6RK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-loq-15irx10",
@@ -31780,11 +31878,13 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83JE00RNRK",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/LOQ_15IRX10?M=83JE00RNRK"
     ],
     "colors": [
       "Grey"
-    ]
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-tab-m9-tb310xu-acc-zac50096ru",
@@ -31878,7 +31978,9 @@
       "resolution": "1920x1200",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "Lenovo Think Book 14 G8 IRL.",
     "unsure": [
       "popularity"
@@ -31891,8 +31993,10 @@
       "weight": 1360
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=21SG008KRT"
-    ]
+      "https://psref.lenovo.com/detail/?M=21SG008KRT",
+      "https://psref.lenovo.com/Detail/ThinkBook_14_G8_IRL?M=21SG008KRT"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-16-g8-irl",
@@ -31925,7 +32029,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "Lenovo ThinkBOOK 16 G8 IRL.",
     "unsure": [
       "popularity"
@@ -31936,11 +32042,13 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=21SH008ART",
-      "https://eldorado.am/en/lenovo-thinkbook-16-g8-irl-16-512gb-21sh008art"
+      "https://eldorado.am/en/lenovo-thinkbook-16-g8-irl-16-512gb-21sh008art",
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IRL?M=21SH008ART"
     ],
     "chipset": {
       "name": "Intel Core 5 210H"
-    }
+    },
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-1-21jn001qgp",
@@ -31966,7 +32074,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 1 21JN001QGP.",
     "unsure": [
       "popularity"
@@ -31979,8 +32089,10 @@
       "weight": 1810
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=21JN001QGP"
-    ]
+      "https://psref.lenovo.com/detail/?M=21JN001QGP",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_1_(Intel)?M=21JN001QGP"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-2-21ma002xrt",
@@ -32004,7 +32116,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 2 21MA002XRT.",
     "unsure": [
       "popularity"
@@ -32017,8 +32131,10 @@
       "weight": 1810
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=21MA002XRT"
-    ]
+      "https://psref.lenovo.com/detail/?M=21MA002XRT",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_2_(Intel)?M=21MA002XRT"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-2-21ma004vrt",
@@ -32042,7 +32158,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 2 21MA004VRT.",
     "unsure": [
       "popularity"
@@ -32055,8 +32173,10 @@
       "weight": 1810
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=21MA004VRT"
-    ]
+      "https://psref.lenovo.com/detail/?M=21MA004VRT",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_2_(Intel)?M=21MA004VRT"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-t16-g4-16-ultra-7-255u-21qe0066fw",
@@ -32082,7 +32202,9 @@
       "resolution": "1920x1200",
       "size": 16
     },
-    "battery": {},
+    "battery": {
+      "capacity": 52.5
+    },
     "summaryEn": "Lenovo ThinkPad T16 G4 16\" Ultra 7-255U /21QE0066FW.",
     "unsure": [
       "popularity"
@@ -32093,11 +32215,13 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=21QE0066FW",
-      "https://www.zigzag.am/am/lenovo-thinkpad-t16-g4-16-ultra-7-255u-16gb-512gb-21qe0066fw.html"
+      "https://www.zigzag.am/am/lenovo-thinkpad-t16-g4-16-ultra-7-255u-16gb-512gb-21qe0066fw.html",
+      "https://psref.lenovo.com/Detail/ThinkPad_T16_Gen_4_(Intel)?M=21QE0066FW"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 255U"
-    }
+    },
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-t16-gen-2-21hh005agq",
@@ -32121,7 +32245,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 52.5
+    },
     "summaryEn": "Lenovo ThinkPad T16 Gen 2 21HH005AGQ.",
     "unsure": [
       "popularity"
@@ -32134,8 +32260,10 @@
       "weight": 1680
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=21HH005AGQ"
-    ]
+      "https://psref.lenovo.com/detail/?M=21HH005AGQ",
+      "https://psref.lenovo.com/Detail/ThinkPad_T16_Gen_2_(Intel)?M=21HH005AGQ"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-v14-g4-iru",
@@ -32440,7 +32568,9 @@
       "size": 14.5,
       "resolution": "3072x1920"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 73
+    },
     "summaryEn": "Lenovo Yoga Pro 7 14 AHP9 83E3002ARK.",
     "unsure": [
       "popularity"
@@ -32453,8 +32583,10 @@
       "weight": 1490
     },
     "sources": [
-      "https://psref.lenovo.com/detail/?M=83E3002ARK"
-    ]
+      "https://psref.lenovo.com/detail/?M=83E3002ARK",
+      "https://psref.lenovo.com/Detail/Yoga_Pro_7_14AHP9?M=83E3002ARK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-yoga-pro-9-16imh9",
@@ -32535,8 +32667,10 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83DN002RRK",
-      "https://www.notebookcheck.net/"
-    ]
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/Yoga_Pro_9_16IMH9?M=83DN002RRK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-yoga-slim-7-14q8x9",
@@ -59044,7 +59178,8 @@
       "protection": "Gorilla Glass 7i"
     },
     "battery": {
-      "capacity": 6210
+      "capacity": 6210,
+      "wired": 100
     },
     "summaryEn": "Xiaomi F8 Pro.",
     "unsure": [
@@ -59079,7 +59214,11 @@
       "Black",
       "Blue",
       "Titanium Silver"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "os": "HyperOS 3"
   },
   {
     "id": "xiaomi-12-pro",
@@ -59315,7 +59454,9 @@
       "protection": "Poco Shield Glass"
     },
     "battery": {
-      "capacity": 6500
+      "capacity": 6500,
+      "wired": 100,
+      "wireless": 50
     },
     "summaryEn": "Xiaomi F8 Ultra.",
     "unsure": [
@@ -59349,7 +59490,11 @@
     "colors": [
       "Denim Blue",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "os": "HyperOS 3"
   },
   {
     "id": "xiaomi-17",
@@ -59379,7 +59524,9 @@
       "protection": "Xiaomi Shield Glass (Global), Dragon Crystal Glass (China)"
     },
     "battery": {
-      "capacity": 6330
+      "capacity": 6330,
+      "wired": 100,
+      "wireless": 50
     },
     "summaryEn": "Xiaomi 17.",
     "unsure": [
@@ -59412,7 +59559,11 @@
     "colors": [
       "Black",
       "Blue"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "os": "HyperOS 3"
   },
   {
     "id": "xiaomi-poco-f9-pro",
@@ -59447,7 +59598,9 @@
       "protection": "Gorilla Glass 7i"
     },
     "battery": {
-      "capacity": 6330
+      "capacity": 6330,
+      "wired": 100,
+      "wireless": 50
     },
     "summaryEn": "Xiaomi F9 Pro.",
     "unsure": [
@@ -59480,7 +59633,11 @@
       "Black",
       "White",
       "Green"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "os": "HyperOS 3"
   },
   {
     "id": "xiaomi-12s-ultra",
@@ -59578,7 +59735,9 @@
       "protection": "Gorilla Glass 7i"
     },
     "battery": {
-      "capacity": 8050
+      "capacity": 8050,
+      "wired": 100,
+      "wireless": 50
     },
     "summaryEn": "Xiaomi F9 Ultra.",
     "unsure": [
@@ -59610,7 +59769,11 @@
     "specSource": "gsmarena.com/xiaomi_poco_f9_ultra_5g-14876.php, 2026-10-03",
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "os": "HyperOS 3"
   },
   {
     "id": "xiaomi-17-ultra",
@@ -59640,7 +59803,9 @@
       "protection": "Xiaomi Shield Glass 3.0"
     },
     "battery": {
-      "capacity": 6000
+      "capacity": 6000,
+      "wired": 90,
+      "wireless": 50
     },
     "summaryEn": "Xiaomi 17 Ultra.",
     "unsure": [
@@ -59674,7 +59839,11 @@
       "White",
       "Starry Green",
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "os": "HyperOS 3"
   },
   {
     "id": "google-pixel-11-pro-fold",
@@ -67794,7 +67963,9 @@
       "type": "OLED",
       "refresh": 120
     },
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "Lenovo Yoga 7 2in1 16\" Ultra 7-256V /83JT0028RK.",
     "unsure": [
       "popularity",
@@ -67805,7 +67976,11 @@
     },
     "body": {
       "weight": 1700
-    }
+    },
+    "os": "No OS",
+    "sources": [
+      "https://psref.lenovo.com/Detail/Yoga_7_2-in-1_16ILL10?M=83JT0028RK"
+    ]
   },
   {
     "id": "hp-omnibook-x-flip-x360-16-ultra-5-226v-w11h-c1up3ea",
@@ -68564,7 +68739,8 @@
       "type": "IPS LCD"
     },
     "battery": {
-      "capacity": 5200
+      "capacity": 5200,
+      "wired": 15
     },
     "summaryEn": "Xiaomi Redmi A7.",
     "unsure": [
@@ -68584,7 +68760,11 @@
     },
     "sources": [
       "https://www.mi.com/global/product/redmi-a7/specs/"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "os": "Android 15"
   },
   {
     "id": "huawei-matebook-fold-ultimate-18",
@@ -70846,7 +71026,9 @@
       "size": 15.3,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 15.3\" i5-13420H /83K1002ERK.",
     "unsure": [
       "popularity",
@@ -70861,8 +71043,10 @@
       "weight": 1590
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IRH10?M=83K1002ERK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-16-i5-13420h-83k2000wrk",
@@ -70888,7 +71072,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 16\" i5-13420H /83K2000WRK.",
     "unsure": [
       "popularity",
@@ -70903,8 +71089,10 @@
       "weight": 1680
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IRH10/IdeaPad_Slim_3_16IRH10_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IRH10/IdeaPad_Slim_3_16IRH10_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_16IRH10?M=83K2000WRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "hp-omnibook-3-17-3-core-3-100u-dr9v7ea",
@@ -71375,7 +71563,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 4 16\" Ultra 5- /21YC003UFW.",
     "unsure": [
       "popularity",
@@ -71390,8 +71580,10 @@
       "weight": 1650
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_4_(Intel)?M=21YC003UFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "samsung-galaxy-book5-pro-14-touch-ultra-7-series-2-w11h-np940xha-kg1us",
@@ -71465,7 +71657,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 4 16\" Ultra 7- /21YC003TFW.",
     "unsure": [
       "popularity",
@@ -71480,8 +71674,10 @@
       "weight": 1650
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_4_(Intel)?M=21YC003TFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "dell-i7-13650hx-16-1-4060-j1v94-g5530-7957gry-pus",
@@ -71547,7 +71743,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo ThinkPad T16 Gen 5 16\" Ultra 5- /21WT0059FW.",
     "unsure": [
       "popularity",
@@ -71562,8 +71760,10 @@
       "weight": 1630
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T16_Gen_5_Intel/ThinkPad_T16_Gen_5_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T16_Gen_5_Intel/ThinkPad_T16_Gen_5_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_T16_Gen_5_(Intel)?M=21WT0059FW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "asus-zep-16-i7-13620h-4060-w11-gu603vv",
@@ -71630,7 +71830,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo ThinkPad T16 Gen 5 16\" Ultra 7- /21WT005CFW.",
     "unsure": [
       "popularity",
@@ -71645,8 +71847,10 @@
       "weight": 1630
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T16_Gen_5_Intel/ThinkPad_T16_Gen_5_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T16_Gen_5_Intel/ThinkPad_T16_Gen_5_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_T16_Gen_5_(Intel)?M=21WT005CFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "hp-spectre-x360-16-ultra-7-155h-16-1-4050-w11h-a23wkea",
@@ -71718,7 +71922,9 @@
       "size": 15.3,
       "resolution": "2880x1800"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "Lenovo ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V W11P /21Q6006AFW.",
     "unsure": [
       "popularity",
@@ -71733,7 +71939,8 @@
       "weight": 1400
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X9_15_Gen_1/ThinkPad_X9_15_Gen_1_Spec.pdf"
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X9_15_Gen_1/ThinkPad_X9_15_Gen_1_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_X9-15_Gen_1_Aura_Edition?M=21Q6006AFW"
     ],
     "os": "Windows 11"
   },
@@ -78358,11 +78565,14 @@
         "priceAmd": 559000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo LOQ 15AHP11 (83TN000ERK).",
     "sources": [
       "https://appzone.am/en/Assortment/lenovo-loq-15ahp11-83tn000erk/",
-      "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15AHP11/LOQ_15AHP11_Spec.pdf"
+      "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15AHP11/LOQ_15AHP11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/LOQ_15AHP11?M=83TN000ERK"
     ],
     "unsure": [
       "popularity",
@@ -79888,7 +80098,9 @@
       "size": 14,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo IdeaPad 5 2-in-1 14IAL10 Ultra 7 255U.",
     "unsure": [
       "popularity",
@@ -79907,8 +80119,10 @@
       "weight": 1600
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_14IAL10/IdeaPad_5_2_in_1_14IAL10_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_14IAL10/IdeaPad_5_2_in_1_14IAL10_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_5_2-in-1_14IAL10?M=83KR004LRK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-14irh9-i5-13420h",
@@ -79934,7 +80148,9 @@
       "size": 14,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 57
+    },
     "summaryEn": "Lenovo IdeaPad 5 2-in-1 14IRH9 i5-13420H.",
     "unsure": [
       "popularity",
@@ -79953,8 +80169,10 @@
       "weight": 1600
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_14IRH9/IdeaPad_5_2_in_1_14IRH9_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_14IRH9/IdeaPad_5_2_in_1_14IRH9_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_5_2-in-1_14IRH9?M=83KX007VRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-5-pro-14iap7-i5-1240p",
@@ -79980,7 +80198,9 @@
       "size": 14,
       "resolution": "2240x1400"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 56.5
+    },
     "summaryEn": "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P.",
     "unsure": [
       "popularity",
@@ -79999,8 +80219,10 @@
       "weight": 1420
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_Pro_14IAP7/IdeaPad_5_Pro_14IAP7_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_Pro_14IAP7/IdeaPad_5_Pro_14IAP7_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_5_Pro_14IAP7?M=82SH005PRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-gaming-3-16arh7-amd-ryzen-r5-6600h",
@@ -80026,7 +80248,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 71
+    },
     "summaryEn": "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H.",
     "unsure": [
       "popularity",
@@ -80045,8 +80269,10 @@
       "weight": 2500
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16ARH7/IdeaPad_Gaming_3_16ARH7_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16ARH7/IdeaPad_Gaming_3_16ARH7_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Gaming_3_16ARH7?M=82SC007ARK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-gaming-3-16iah7-i5-12450h",
@@ -80094,8 +80320,10 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16IAH7/IdeaPad_Gaming_3_16IAH7_Spec.pdf",
-      "https://www.notebookcheck.net/"
-    ]
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/IdeaPad_Gaming_3_16IAH7?M=82SA00CWRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-15iph11-ultra-7",
@@ -80121,7 +80349,9 @@
       "size": 15.3,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 50
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 15IPH11 Ultra 7.",
     "unsure": [
       "popularity",
@@ -80140,8 +80370,10 @@
       "weight": 1590
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IPH11/IdeaPad_Slim_3_15IPH11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IPH11/IdeaPad_Slim_3_15IPH11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IPH11?M=83UR001QRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-15irh10-i7-13620h",
@@ -80196,8 +80428,10 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15IRH10/IdeaPad_Slim_3_15IRH10_Spec.pdf",
-      "https://www.notebookcheck.net/"
-    ]
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IRH10?M=83K100CSRM"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-5-8640hs",
@@ -80224,7 +80458,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 5 8640HS.",
     "unsure": [
       "popularity",
@@ -80243,8 +80479,10 @@
       "weight": 1680
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16AHP10/IdeaPad_Slim_3_16AHP10_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16AHP10/IdeaPad_Slim_3_16AHP10_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_16AHP10?M=83KB0001RK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-7-8840hs",
@@ -80270,7 +80508,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 16AHP10 Ryzen 7 8840HS.",
     "unsure": [
       "popularity",
@@ -80289,8 +80529,10 @@
       "weight": 1680
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16AHP10/IdeaPad_Slim_3_16AHP10_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16AHP10/IdeaPad_Slim_3_16AHP10_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_16AHP10?M=83KB0007RK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-16iph11-ultra-5-322",
@@ -80321,7 +80563,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 16IPH11 Ultra 5 322.",
     "unsure": [
       "popularity",
@@ -80340,8 +80584,10 @@
       "weight": 1680
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IPH11/IdeaPad_Slim_3_16IPH11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IPH11/IdeaPad_Slim_3_16IPH11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_16IPH11?M=83US000ERK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-ideapad-slim-3-17iwc11-i5-320",
@@ -80372,7 +80618,9 @@
       "size": 17.3,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 50
+    },
     "summaryEn": "Lenovo IdeaPad Slim 3 17IWC11 i5-320.",
     "unsure": [
       "popularity",
@@ -80391,8 +80639,10 @@
       "weight": 2030
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_17IWC11/IdeaPad_Slim_3_17IWC11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_17IWC11/IdeaPad_Slim_3_17IWC11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_17IWC11?M=83VS003YRK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-ideapad-slim-5-16agp11-ryzen-ai-5",
@@ -80418,7 +80668,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 5 16AGP11 Ryzen AI 5.",
     "unsure": [
       "popularity",
@@ -80437,8 +80689,10 @@
       "weight": 1850
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16AGP11/IdeaPad_Slim_5_16AGP11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16AGP11/IdeaPad_Slim_5_16AGP11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16AGP11?M=83S2000PRK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-ideapad-slim-5-16ahp11-ryzen-5",
@@ -80464,7 +80718,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 5 16AHP11 Ryzen 5.",
     "unsure": [
       "popularity",
@@ -80483,8 +80739,10 @@
       "weight": 1810
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16AHP11/IdeaPad_Slim_5_16AHP11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16AHP11/IdeaPad_Slim_5_16AHP11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16AHP11?M=83S40027RK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-ideapad-slim-5-16iph11-ultra-5",
@@ -80510,7 +80768,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Lenovo IdeaPad Slim 5 16IPH11 Ultra 5.",
     "unsure": [
       "popularity",
@@ -80529,8 +80789,10 @@
       "weight": 1850
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16IPH11/IdeaPad_Slim_5_16IPH11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_16IPH11/IdeaPad_Slim_5_16IPH11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IPH11?M=83S6006HRK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-legion-5-15ahp10-ryzen-7-260",
@@ -80556,7 +80818,9 @@
       "size": 15,
       "resolution": "2560x1600"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "Lenovo Legion 5 15AHP10 Ryzen 7 260.",
     "unsure": [
       "popularity",
@@ -80571,8 +80835,10 @@
       "weight": 2100
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP10/Legion_5_15AHP10_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP10/Legion_5_15AHP10_Spec.pdf",
+      "https://psref.lenovo.com/Detail/Legion_5_15AHP10?M=83M0003YRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-legion-5-15ahp11-ryzen-7",
@@ -80598,7 +80864,9 @@
       "size": 15.3,
       "resolution": "2560x1600"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "Lenovo Legion 5 15AHP11 Ryzen 7.",
     "unsure": [
       "popularity",
@@ -80617,8 +80885,10 @@
       "weight": 1870
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP11/Legion_5_15AHP11_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP11/Legion_5_15AHP11_Spec.pdf",
+      "https://psref.lenovo.com/Detail/Legion_5_15AHP11?M=83Q7000MRK"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-legion-5-15akp10-ryzen-ai-7",
@@ -80865,7 +81135,9 @@
       "size": 14,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "Lenovo ThinkBook 14 G8 IRL Core.",
     "unsure": [
       "popularity",
@@ -80884,8 +81156,10 @@
       "weight": 1360
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G8_IRL/ThinkBook_14_G8_IRL_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G8_IRL/ThinkBook_14_G8_IRL_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkBook_14_G8_IRL?M=21SG008KRT"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-14-g9-irl-i5-210h",
@@ -80930,8 +81204,10 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G9_IRL/ThinkBook_14_G9_IRL_Spec.pdf",
-      "https://www.notebookcheck.net/"
-    ]
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/ThinkBook_14_G9_IRL?M=21UY005PGX"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-5-135h",
@@ -80957,7 +81233,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 5 135H.",
     "unsure": [
       "popularity",
@@ -80976,8 +81254,10 @@
       "weight": 1700
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IAL?M=21SK00FCFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-7-255h",
@@ -81003,7 +81283,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 7 255H.",
     "unsure": [
       "popularity",
@@ -81022,8 +81304,10 @@
       "weight": 1700
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IAL?M=21SK007UFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-9-185h",
@@ -81056,7 +81340,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 9 185H.",
     "unsure": [
       "popularity",
@@ -81075,8 +81361,10 @@
       "weight": 1700
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IAL?M=21SK00JVGX"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-16-g9-ipl-ultra-7",
@@ -81102,7 +81390,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "Lenovo ThinkBook 16 G9 IPL Ultra 7.",
     "unsure": [
       "popularity",
@@ -81121,8 +81411,10 @@
       "weight": 1700
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G9_IPL/ThinkBook_16_G9_IPL_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G9_IPL/ThinkBook_16_G9_IPL_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G9_IPL?M=21UR0065FW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkbook-16-g9-irl-i7-240h",
@@ -81148,7 +81440,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "Lenovo ThinkBook 16 G9 IRL i7-240H.",
     "unsure": [
       "popularity",
@@ -81167,8 +81461,10 @@
       "weight": 1700
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G9_IRL/ThinkBook_16_G9_IRL_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G9_IRL/ThinkBook_16_G9_IRL_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G9_IRL?M=21US004SFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e14-gen-7-ultra-5-225u",
@@ -81194,7 +81490,9 @@
       "size": 14,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "summaryEn": "Lenovo ThinkPad E14 Gen 7 Ultra 5 225U.",
     "unsure": [
       "popularity",
@@ -81213,8 +81511,10 @@
       "weight": 1320
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E14_Gen_7_Intel/ThinkPad_E14_Gen_7_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E14_Gen_7_Intel/ThinkPad_E14_Gen_7_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E14_Gen_7_(Intel)?M=21SX004UFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-g4-ultra-7",
@@ -81240,7 +81540,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "Lenovo ThinkPad E16 G4 Ultra 7.",
     "unsure": [
       "popularity",
@@ -81259,8 +81561,10 @@
       "weight": 1650
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_4_(Intel)?M=21YC003TFW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-i5-210h",
@@ -81330,7 +81634,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 5 225U.",
     "unsure": [
       "popularity",
@@ -81349,8 +81655,10 @@
       "weight": 1620
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_3_(Intel)?M=21SR0048FW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-ultra-7-255h",
@@ -81376,7 +81684,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 7 255H.",
     "unsure": [
       "popularity",
@@ -81395,8 +81705,10 @@
       "weight": 1620
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_3_(Intel)?M=21SR0049FW"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-gen-3-ultra-7-258v",
@@ -81422,7 +81734,9 @@
       "size": 16,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 7 258V.",
     "unsure": [
       "popularity",
@@ -81441,8 +81755,10 @@
       "weight": 1620
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf",
+      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_3_(Intel)?M=22AY005GGX"
+    ],
+    "os": "No OS"
   },
   {
     "id": "lenovo-thinkpad-e16-i5-1335u",
@@ -81593,7 +81909,9 @@
       "size": 14.5,
       "resolution": "3072x1920"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 73
+    },
     "summaryEn": "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 8845HS.",
     "unsure": [
       "popularity",
@@ -81612,8 +81930,10 @@
       "weight": 1490
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_Spec.pdf"
-    ]
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_Spec.pdf",
+      "https://psref.lenovo.com/Detail/Yoga_Pro_7_14AHP9?M=83E3001LRK"
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-yoga-pro-7-14ahp9-ryzen-7",
