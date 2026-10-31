@@ -16199,7 +16199,8 @@
       "Dyson Gen5 Detect"
     ],
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "suction": "262 AW"
     }
   },
   {
@@ -16657,7 +16658,8 @@
       "popularity"
     ],
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "suction": "150 AW"
     }
   },
   {
@@ -72940,7 +72942,8 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "suction": "11,000 Pa"
     }
   },
   {
@@ -72980,7 +72983,8 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "suction": "19,500 Pa"
     }
   },
   {
@@ -73301,7 +73305,8 @@
       "White"
     ],
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "suction": "30,000 Pa"
     }
   },
   {
@@ -90863,7 +90868,8 @@
       "life": "220 min"
     },
     "appliance": {
-      "type": "robot_vacuum"
+      "type": "robot_vacuum",
+      "suction": "20,000 Pa"
     },
     "summaryEn": "Dreame X50 Ultra Complete (RLX85CE-4).",
     "sources": [
@@ -106214,7 +106220,9 @@
       "type": "hair_clipper",
       "power": 15
     },
-    "battery": {},
+    "battery": {
+      "life": "75 min"
+    },
     "colors": [
       "White"
     ],
@@ -106296,7 +106304,9 @@
       "type": "hair_clipper",
       "power": 15
     },
-    "battery": {},
+    "battery": {
+      "life": "75 min"
+    },
     "colors": [
       "Silver"
     ],
@@ -112915,7 +112925,9 @@
       "type": "multigroom",
       "power": 220
     },
-    "battery": {},
+    "battery": {
+      "life": "70 min"
+    },
     "summaryEn": "BaByliss Multi-Trimmer MT860E.",
     "sources": [
       "https://eldorado.am/en/babyliss-mt860e"
