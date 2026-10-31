@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T15:21:30.523Z",
+ "generated": "2026-10-31T15:28:14.582Z",
  "shops": {
   "ispace": {
    "name": "iSpace",
@@ -14952,19 +14952,6 @@
    },
    {
     "id": "samsung-galaxy-s26-ultra",
-    "shop": "mobilecentre",
-    "title": "Samsung Galaxy S26 Ultra",
-    "price": 895900,
-    "storage": 1024,
-    "ram": 16,
-    "color": "Sky Blue",
-    "url": "https://www.mobilecentre.am/product/samsung-galaxy-s26-ultra-1tb-_sky-blue_/33502/",
-    "seeded": true,
-    "inStock": true,
-    "seen": "2026-10-30"
-   },
-   {
-    "id": "samsung-galaxy-s26-ultra",
     "shop": "viva",
     "title": "Samsung Galaxy S26 Ultra 16GB+1TB Black",
     "price": 895900,
@@ -23134,7 +23121,7 @@
     "price": 962900,
     "storage": 2048,
     "ram": 12,
-    "color": null,
+    "color": "Deep Blue",
     "band": null,
     "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/07/e5/07e53c29fc0dd99d4c5cc631795fb09d/250915140038589800.webp",
     "inStock": true,
@@ -35489,7 +35476,7 @@
     "price": 194900,
     "storage": 42,
     "ram": null,
-    "color": null,
+    "color": "Space Gray",
     "band": "Sport Band",
     "image": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/d4/f4/d4f460bc4fcb08fc35c267176e093456/260914140011647773.webp",
     "inStock": true,
@@ -58611,17 +58598,17 @@
   ],
   "xiaomi-soundbar-pro-2-1": [
    {
-    "title": "Xiaomi Soundbar Pro 2.1 ch",
-    "url": "https://miarmenia.am/en/product/553/xiaomi-soundbar-pro-2.1-ch",
-    "price": 89900,
-    "inStock": true,
     "id": "xiaomi-soundbar-pro-2-1",
+    "price": 89900,
+    "title": "Xiaomi Soundbar Pro 2.1ch (MDZ-41-DB) QBH4336EU",
+    "url": "https://eldorado.am/en/xiaomi-soundbar-pro-2-1ch-mdz-41-db-qbh4336eu",
     "storage": null,
     "ram": null,
     "color": null,
-    "shop": "miarmenia",
     "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:33:39.035Z"
+    "checkedAt": "2026-10-31T10:11:53.584803+00:00",
+    "inStock": true,
+    "shop": "eldorado"
    },
    {
     "id": "xiaomi-soundbar-pro-2-1",
@@ -58631,7 +58618,7 @@
     "storage": null,
     "ram": null,
     "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:01:04.814870+00:00",
+    "checkedAt": "2026-10-31T00:57:26.285386+00:00",
     "inStock": true,
     "color": null,
     "shop": "zigzag"
@@ -100134,90 +100121,6 @@
     "checkedAt": "2026-10-31T12:10:53.921Z"
    }
   ],
-  "gorenje-k15orab-kettle": [
-   {
-    "id": "gorenje-k15orab-kettle",
-    "shop": "likemobile",
-    "title": "GORENJE K15ORAB Electric Kettle",
-    "price": 22000,
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "url": "https://likemobile.am/en/gorenje-k15orab",
-    "seeded": true
-   },
-   {
-    "id": "gorenje-k15orab-kettle",
-    "price": 24500,
-    "title": "Gorenje K15ORAB",
-    "url": "https://redstore.am/en/product/theynik-gorenje-k15orab",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/uploads/2025/11/01/cghsa-montaznaia-oblast-1.jpg",
-    "sku": "R52268907",
-    "ram": null,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:35:14.944Z"
-   }
-  ],
-  "gorenje-r401w-food-slicer": [
-   {
-    "id": "gorenje-r401w-food-slicer",
-    "price": 26900,
-    "title": "Gorenje R401W",
-    "url": "https://redstore.am/en/product/shertahatich-gorenje-r401w",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59337/image/kk-montaznaia-oblast-1.webp",
-    "sku": "R7246006441",
-    "ram": null,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:35:15.990Z"
-   },
-   {
-    "id": "gorenje-r401w-food-slicer",
-    "shop": "likemobile",
-    "title": "GORENJE R401W Food Slicer",
-    "price": 29000,
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "url": "https://likemobile.am/en/gorenje-r401w",
-    "seeded": true
-   }
-  ],
-  "gorenje-jc400be-juicer": [
-   {
-    "id": "gorenje-jc400be-juicer",
-    "price": 26900,
-    "title": "GORENJE JC400BE",
-    "url": "https://redstore.am/en/product/hyvouthahan-gorenje-jc400be",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/60005/image/ssssaa-montaznaia-oblast-1.jpg",
-    "sku": "R7246006797",
-    "ram": null,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:35:17.050Z"
-   },
-   {
-    "id": "gorenje-jc400be-juicer",
-    "shop": "likemobile",
-    "title": "Gorenje JC400BE Juicer",
-    "price": 29000,
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "url": "https://likemobile.am/en/gorenje-jc400be",
-    "seeded": true
-   }
-  ],
   "midea-am720c2mv": [
    {
     "id": "midea-am720c2mv",
@@ -100250,34 +100153,6 @@
     "shop": "redstore",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:36:06.689Z"
-   }
-  ],
-  "gorenje-r607a-food-slicer": [
-   {
-    "id": "gorenje-r607a-food-slicer",
-    "shop": "likemobile",
-    "title": "GORENJE R607A Food Slicer",
-    "price": 49000,
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "url": "https://likemobile.am/en/gorenje-r607a",
-    "seeded": true
-   },
-   {
-    "id": "gorenje-r607a-food-slicer",
-    "price": 52000,
-    "title": "Gorenje R607A",
-    "url": "https://redstore.am/en/product/shertahatich-gorenje-r607a",
-    "storage": null,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/59350/image/asw-montaznaia-oblast-1.webp",
-    "sku": "R7246006465",
-    "ram": null,
-    "color": null,
-    "shop": "redstore",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:35:18.218Z"
    }
   ],
   "midea-mfd45s110s": [
@@ -105995,70 +105870,6 @@
     "checkedAt": "2026-10-31T11:54:18.264Z"
    }
   ],
-  "ariston-pro1-r80v-1-8k-pl-water-heater": [
-   {
-    "id": "ariston-pro1-r80v-1-8k-pl-water-heater",
-    "price": 89900,
-    "title": "ARISTON PRO1 R80V 1.8K PL",
-    "url": "https://vlv.am/en/Product/12139",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68caaef07fb40.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:54:20.859Z"
-   }
-  ],
-  "ariston-pro1-r-abs120v-1-8k-water-heater": [
-   {
-    "id": "ariston-pro1-r-abs120v-1-8k-water-heater",
-    "price": 123000,
-    "title": "ARISTON PRO1 R ABS120V 1.8K",
-    "url": "https://vlv.am/en/Product/12221",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab2511bcc8.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:54:23.070Z"
-   }
-  ],
-  "ariston-pro1-r-abs150v-1-8k-water-heater": [
-   {
-    "id": "ariston-pro1-r-abs150v-1-8k-water-heater",
-    "price": 145000,
-    "title": "ARISTON PRO1 R ABS150V 1.8K",
-    "url": "https://vlv.am/en/Product/12222",
-    "image": "https://vlv.am/public/uploads/images/24-01-2026/697481181717a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:54:25.328Z"
-   }
-  ],
-  "ariston-pro1-r50v-1-5k-pl-water-heater": [
-   {
-    "id": "ariston-pro1-r50v-1-5k-pl-water-heater",
-    "price": 72900,
-    "title": "ARISTON PRO1 R50V 1.5K PL",
-    "url": "https://vlv.am/en/Product/12224",
-    "image": "https://vlv.am/public/uploads/images/07-10-2025/68e4ec22aca0e.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:54:27.485Z"
-   }
-  ],
   "sony-ht-s350": [
    {
     "id": "sony-ht-s350",
@@ -106382,54 +106193,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T11:55:03.627Z"
-   }
-  ],
-  "ariston-pro1-r80h-1-8k-pl-water-heater": [
-   {
-    "id": "ariston-pro1-r80h-1-8k-pl-water-heater",
-    "price": 105000,
-    "title": "ARISTON PRO1 R80H 1.8K PL",
-    "url": "https://vlv.am/en/Product/13760",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab1c1a4827.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:55:06.079Z"
-   }
-  ],
-  "ariston-sg1-80v-1-5k-water-heater": [
-   {
-    "id": "ariston-sg1-80v-1-5k-water-heater",
-    "price": 81000,
-    "title": "ARISTON SG1 80V 1.5K",
-    "url": "https://vlv.am/en/Product/13762",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68caad2f2de55.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:55:08.215Z"
-   }
-  ],
-  "ariston-sg1-100v-1-5k-water-heater": [
-   {
-    "id": "ariston-sg1-100v-1-5k-water-heater",
-    "price": 94900,
-    "title": "ARISTON SG1 100V 1.5K",
-    "url": "https://vlv.am/en/Product/13763",
-    "image": "https://vlv.am/public/uploads/images/02-10-2024/66fd5a42a3782.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T11:55:10.355Z"
    }
   ],
   "hisense-rd33wcr": [
@@ -108549,22 +108312,6 @@
     "checkedAt": "2026-10-31T12:02:01.524Z"
    }
   ],
-  "ariston-pro1-r100v-1-8k-pl-water-heater": [
-   {
-    "id": "ariston-pro1-r100v-1-8k-pl-water-heater",
-    "price": 99900,
-    "title": "ARISTON PRO1 R100V 1.8K PL",
-    "url": "https://vlv.am/en/Product/19241",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68caafe52bcf0.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:02:03.995Z"
-   }
-  ],
   "kenwood-chp61-100wh": [
    {
     "id": "kenwood-chp61-100wh",
@@ -110132,38 +109879,6 @@
     "checkedAt": "2026-10-31T12:08:29.019Z"
    }
   ],
-  "ariston-clas-xc-28-ff-ng-gas-boiler": [
-   {
-    "id": "ariston-clas-xc-28-ff-ng-gas-boiler",
-    "price": 466500,
-    "title": "ARISTON CLAS XC 28 FF NG + FLUE PIPE",
-    "url": "https://vlv.am/en/Product/25733",
-    "image": "https://vlv.am/public/uploads/images/19-03-2026/69bbfaf823488.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:08:31.369Z"
-   }
-  ],
-  "ariston-cares-xc-24-ff-ng-gas-boiler": [
-   {
-    "id": "ariston-cares-xc-24-ff-ng-gas-boiler",
-    "price": 312900,
-    "title": "ARISTON CARES XC 24 FF NG + FLUE PIPE",
-    "url": "https://vlv.am/en/Product/25734",
-    "image": "https://vlv.am/public/uploads/images/08-08-2026/6a7737d85b29d.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:08:33.887Z"
-   }
-  ],
   "samsung-qe85qn800auxru": [
    {
     "id": "samsung-qe85qn800auxru",
@@ -110358,22 +110073,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:09:42.648Z"
-   }
-  ],
-  "ariston-clas-one-24-rdc-condens-gas-boiler": [
-   {
-    "id": "ariston-clas-one-24-rdc-condens-gas-boiler",
-    "price": 553500,
-    "title": "ARISTON CLAS ONE 24 RDC CONDENS + FLUE PIPE",
-    "url": "https://vlv.am/en/Product/26284",
-    "image": "https://vlv.am/public/uploads/images/08-08-2026/6a773270cab18.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:09:46.563Z"
    }
   ],
   "hisense-as18hr4sxatd00a": [
@@ -112231,54 +111930,6 @@
     "checkedAt": "2026-10-31T12:16:15.426Z"
    }
   ],
-  "electrolux-ewh50-trend-water-heater": [
-   {
-    "id": "electrolux-ewh50-trend-water-heater",
-    "price": 65900,
-    "title": "ELECTROLUX EWH50 Trend",
-    "url": "https://vlv.am/en/Product/30171",
-    "image": "https://vlv.am/public/uploads/images/24-01-2026/6974800414229.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:16:17.624Z"
-   }
-  ],
-  "electrolux-briliant-next-ech-bne2000-heater": [
-   {
-    "id": "electrolux-briliant-next-ech-bne2000-heater",
-    "price": 75900,
-    "title": "ELECTROLUX Briliant Next ECH/BNE2000",
-    "url": "https://vlv.am/en/Product/30179",
-    "image": "https://vlv.am/public/uploads/images/07-10-2024/67039fc73ad29.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:16:35.034Z"
-   }
-  ],
-  "electrolux-ewh80-citadel-water-heater": [
-   {
-    "id": "electrolux-ewh80-citadel-water-heater",
-    "price": 140900,
-    "title": "ELECTROLUX EWH80 Citadel",
-    "url": "https://vlv.am/en/Product/30360",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab4ea9d59f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:16:37.724Z"
-   }
-  ],
   "hisense-wfqp6012evmt": [
    {
     "id": "hisense-wfqp6012evmt",
@@ -113111,22 +112762,6 @@
     "checkedAt": "2026-10-31T12:19:28.013Z"
    }
   ],
-  "karcher-af30": [
-   {
-    "id": "karcher-af30",
-    "price": 149000,
-    "title": "KARCHER AF30 1.024-821.0",
-    "url": "https://vlv.am/en/Product/31380",
-    "image": "https://vlv.am/public/uploads/images/27-11-2025/6927fcf080577.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:19:34.836Z"
-   }
-  ],
   "hisense-wf5s7041bw": [
    {
     "id": "hisense-wf5s7041bw",
@@ -113302,22 +112937,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:19:52.750Z"
-   }
-  ],
-  "electrolux-ewh100-citadel-water-heater": [
-   {
-    "id": "electrolux-ewh100-citadel-water-heater",
-    "price": 159900,
-    "title": "ELECTROLUX EWH100 Citadel",
-    "url": "https://vlv.am/en/Product/31665",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab5c1cccac.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:19:54.891Z"
    }
   ],
   "hisense-wd3s8042bw1": [
@@ -113560,22 +113179,6 @@
     "checkedAt": "2026-10-31T12:21:08.253Z"
    }
   ],
-  "karcher-af20": [
-   {
-    "id": "karcher-af20",
-    "price": 85000,
-    "title": "KARCHER AF20 1.024-820.0",
-    "url": "https://vlv.am/en/Product/32069",
-    "image": "https://vlv.am/public/uploads/images/29-11-2025/692a95f0707c1.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:21:10.414Z"
-   }
-  ],
   "panasonic-cs-z25zkew-cu-z25zke": [
    {
     "id": "panasonic-cs-z25zkew-cu-z25zke",
@@ -113638,22 +113241,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:21:22.089Z"
-   }
-  ],
-  "electrolux-ewh80-royal-water-heater": [
-   {
-    "id": "electrolux-ewh80-royal-water-heater",
-    "price": 171900,
-    "title": "ELECTROLUX EWH80 Royal Silver",
-    "url": "https://vlv.am/en/Product/32238",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab67d3194a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Silver",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:22:25.492Z"
    }
   ],
   "kenwood-chp80-000si": [
@@ -114246,22 +113833,6 @@
     "checkedAt": "2026-10-31T12:25:30.746Z"
    }
   ],
-  "electrolux-taptronic-s-3-3kw-water-heater": [
-   {
-    "id": "electrolux-taptronic-s-3-3kw-water-heater",
-    "price": 25900,
-    "title": "ELECTROLUX TAPTRONIC S 3.3kw (Fauset)",
-    "url": "https://vlv.am/en/Product/33813",
-    "image": "https://vlv.am/public/uploads/images/08-11-2024/672df02512f45.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:25:33.239Z"
-   }
-  ],
   "karcher-vc6-cordless-our-family": [
    {
     "id": "karcher-vc6-cordless-our-family",
@@ -114292,22 +113863,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:25:39.676Z"
-   }
-  ],
-  "ariston-clas-xc-35-ff-ng-gas-boiler": [
-   {
-    "id": "ariston-clas-xc-35-ff-ng-gas-boiler",
-    "price": 516500,
-    "title": "ARISTON CLAS XC 35 FF NG + FLUE PIPE",
-    "url": "https://vlv.am/en/Product/34086",
-    "image": "https://vlv.am/public/uploads/images/08-08-2026/6a773730b9101.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:25:45.212Z"
    }
   ],
   "toshiba-85c350ne": [
@@ -114385,22 +113940,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:26:15.616Z"
-   }
-  ],
-  "electrolux-ewh80-major-lzr3-water-heater": [
-   {
-    "id": "electrolux-ewh80-major-lzr3-water-heater",
-    "price": 168900,
-    "title": "ELECTROLUX EWH80 Major LZR3",
-    "url": "https://vlv.am/en/Product/34720",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab619c67d3.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:26:19.740Z"
    }
   ],
   "toshiba-gr-rs780wi-pmj-06": [
@@ -114590,51 +114129,6 @@
     "checkedAt": "2026-10-31T12:27:19.852Z"
    }
   ],
-  "electrolux-ewh50-royal-flash-water-heater": [
-   {
-    "id": "electrolux-ewh50-royal-flash-water-heater",
-    "price": 125900,
-    "title": "ELECTROLUX EWH50 Royal Flash White",
-    "url": "https://vlv.am/en/Product/35163",
-    "image": "https://vlv.am/public/uploads/images/17-09-2025/68cab2d1cc9c6.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:27:22.075Z"
-   },
-   {
-    "id": "electrolux-ewh50-royal-flash-water-heater",
-    "shop": "vlv",
-    "title": "ELECTROLUX EWH50 Royal Flash Silver Water Heater",
-    "price": 138900,
-    "storage": null,
-    "ram": null,
-    "color": "White",
-    "url": "https://vlv.am/en/Product/38843",
-    "seeded": true,
-    "inStock": true,
-    "seen": "2026-10-31"
-   }
-  ],
-  "electrolux-ewh100-major-lzr3-water-heater": [
-   {
-    "id": "electrolux-ewh100-major-lzr3-water-heater",
-    "price": 192900,
-    "title": "ELECTROLUX EWH100 Major LZR3",
-    "url": "https://vlv.am/en/Product/35164",
-    "image": "https://vlv.am/public/uploads/images/24-01-2026/69748037b6ea9.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:27:24.281Z"
-   }
-  ],
   "dreame-ahd51-pocket": [
    {
     "id": "dreame-ahd51-pocket",
@@ -114663,22 +114157,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:33:20.799Z"
-   }
-  ],
-  "electrolux-ech-bmi2000-heater": [
-   {
-    "id": "electrolux-ech-bmi2000-heater",
-    "price": 87900,
-    "title": "ELECTROLUX Marble ECH/BMI2000",
-    "url": "https://vlv.am/en/Product/35470",
-    "image": "https://vlv.am/public/uploads/images/07-10-2025/68e4ed8ded54a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:27:39.402Z"
    }
   ],
   "honor-choice-speaker-pro": [
@@ -115081,22 +114559,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:28:47.365Z"
-   }
-  ],
-  "electrolux-ewh50-citadel-water-heater": [
-   {
-    "id": "electrolux-ewh50-citadel-water-heater",
-    "price": 112900,
-    "title": "ELECTROLUX EWH50 Citadel",
-    "url": "https://vlv.am/en/Product/35895",
-    "image": "https://vlv.am/public/uploads/images/21-11-2024/673f4b6ec847f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:28:49.829Z"
    }
   ],
   "hisense-hfc433170a": [
@@ -115687,22 +115149,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:34:20.566Z"
-   }
-  ],
-  "karcher-af50-signature-line": [
-   {
-    "id": "karcher-af50-signature-line",
-    "price": 240000,
-    "title": "KARCHER AF50 Signature Line 1.024-826.0",
-    "url": "https://vlv.am/en/Product/37637",
-    "image": "https://vlv.am/public/uploads/images/29-11-2025/692a968162053.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:34:23.088Z"
    }
   ],
   "samsung-rb53dg703es9-wr": [
@@ -116527,22 +115973,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:38:27.554Z"
-   }
-  ],
-  "ariston-velis-tech-pw-abse-80-1-5-2-5kw-water-heater": [
-   {
-    "id": "ariston-velis-tech-pw-abse-80-1-5-2-5kw-water-heater",
-    "price": 216000,
-    "title": "ARISTON Velis tech PW ABSE 80 1.5/2.5KW",
-    "url": "https://vlv.am/en/Product/38499",
-    "image": "https://vlv.am/public/uploads/images/07-10-2025/68e4fb6238421.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:38:29.877Z"
    }
   ],
   "hisense-rb3k330saf1": [
@@ -118314,22 +117744,6 @@
     "checkedAt": "2026-10-31T12:45:13.508Z"
    }
   ],
-  "mova-fd20-pro-air-fryer": [
-   {
-    "id": "mova-fd20-pro-air-fryer",
-    "price": 94900,
-    "title": "MOVA FD20 Pro Black (AF-5518ATB)",
-    "url": "https://vlv.am/en/Product/39458",
-    "image": "https://vlv.am/public/uploads/images/19-06-2025/6853d76582b53.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:45:15.876Z"
-   }
-  ],
   "smeg-bcc02": [
    {
     "id": "smeg-bcc02",
@@ -118535,38 +117949,6 @@
     "checkedAt": "2026-10-31T12:45:47.565Z"
    }
   ],
-  "electrolux-ewh-80-azr-eec-water-heater": [
-   {
-    "id": "electrolux-ewh-80-azr-eec-water-heater",
-    "price": 126900,
-    "title": "ELECTROLUX EWH 80 AZR EEC",
-    "url": "https://vlv.am/en/Product/39817",
-    "image": "https://vlv.am/public/uploads/images/08-09-2025/68beaabb713ad.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:46:11.834Z"
-   }
-  ],
-  "electrolux-ewh-50-azr-eec-water-heater": [
-   {
-    "id": "electrolux-ewh-50-azr-eec-water-heater",
-    "price": 99500,
-    "title": "ELECTROLUX EWH 50 AZR EEC",
-    "url": "https://vlv.am/en/Product/39820",
-    "image": "https://vlv.am/public/uploads/images/08-09-2025/68bea9f2105a3.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:46:31.264Z"
-   }
-  ],
   "braun-gs5011pu": [
    {
     "id": "braun-gs5011pu",
@@ -118703,22 +118085,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:47:06.083Z"
-   }
-  ],
-  "ariston-clas-one-30-rdc-condens-gas-boiler": [
-   {
-    "id": "ariston-clas-one-30-rdc-condens-gas-boiler",
-    "price": 638500,
-    "title": "ARISTON CLAS ONE 30 RDC CONDENS+ FLUE PIPE",
-    "url": "https://vlv.am/en/Product/40031",
-    "image": "https://vlv.am/public/uploads/images/08-08-2026/6a7731d6ef0fd.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:47:08.434Z"
    }
   ],
   "hisense-hv673d64": [
@@ -119192,22 +118558,6 @@
     "checkedAt": "2026-10-31T12:50:58.876Z"
    }
   ],
-  "electrolux-efh-s-1115-heater": [
-   {
-    "id": "electrolux-efh-s-1115-heater",
-    "price": 13900,
-    "title": "ELECTROLUX EFH/S-1115",
-    "url": "https://vlv.am/en/Product/41294",
-    "image": "https://vlv.am/public/uploads/images/19-09-2025/68cd665e4b11f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:51:01.366Z"
-   }
-  ],
   "samsung-rb50dg602eb1-wr": [
    {
     "id": "samsung-rb50dg602eb1-wr",
@@ -119360,36 +118710,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:51:48.329Z"
-   }
-  ],
-  "electrolux-taptronic-water-heater": [
-   {
-    "id": "electrolux-taptronic-water-heater",
-    "price": 16900,
-    "title": "ELECTROLUX TAPTRONIC WHITE / НС-1246478",
-    "url": "https://vlv.am/en/Product/41347",
-    "image": "https://vlv.am/public/uploads/images/20-06-2026/6a363315e98fd.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:51:52.248Z"
-   },
-   {
-    "id": "electrolux-taptronic-water-heater",
-    "price": 16900,
-    "title": "ELECTROLUX TAPTRONIC BLACK / НС-1246479",
-    "url": "https://vlv.am/en/Product/41348",
-    "image": "https://vlv.am/public/uploads/images/20-06-2026/6a3632229df24.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:51:54.691Z"
    }
   ],
   "toshiba-dw-14f7-b-cis": [
@@ -120338,22 +119658,6 @@
     "checkedAt": "2026-10-31T12:55:53.835Z"
    }
   ],
-  "ariston-clas-one-35-rdc-condens-gas-boiler": [
-   {
-    "id": "ariston-clas-one-35-rdc-condens-gas-boiler",
-    "price": 703500,
-    "title": "ARISTON CLAS ONE 35 RDC CONDENS+ FLUE PIPE",
-    "url": "https://vlv.am/en/Product/41874",
-    "image": "https://vlv.am/public/uploads/images/19-03-2026/69bbfbcb37823.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:55:56.337Z"
-   }
-  ],
   "samsung-qe65qn990fuxru": [
    {
     "id": "samsung-qe65qn990fuxru",
@@ -120950,22 +120254,6 @@
     "checkedAt": "2026-10-31T12:58:26.879Z"
    }
   ],
-  "electrolux-eifh-c-2-eec-heater": [
-   {
-    "id": "electrolux-eifh-c-2-eec-heater",
-    "price": 13300,
-    "title": "ELECTROLUX EIFH/C-2 EEC",
-    "url": "https://vlv.am/en/Product/42580",
-    "image": "https://vlv.am/public/uploads/images/05-12-2025/6932a7326b8c1.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Blue",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:58:29.044Z"
-   }
-  ],
   "braun-gs3012bg": [
    {
     "id": "braun-gs3012bg",
@@ -121112,38 +120400,6 @@
     "checkedAt": "2026-10-31T12:58:58.861Z"
    }
   ],
-  "mova-e30-ultra-vacuum": [
-   {
-    "id": "mova-e30-ultra-vacuum",
-    "price": 259900,
-    "title": "MOVA E30 Ultra (RLE51SE)",
-    "url": "https://vlv.am/en/Product/42896",
-    "image": "https://vlv.am/public/uploads/images/21-05-2026/6a0ebcaf9edc6.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:59:03.838Z"
-   }
-  ],
-  "mova-metalish-af10-pro-air-fryer": [
-   {
-    "id": "mova-metalish-af10-pro-air-fryer",
-    "price": 57900,
-    "title": "MOVA Metalish AF10 Pro Black (948850)",
-    "url": "https://vlv.am/en/Product/42898",
-    "image": "https://vlv.am/public/uploads/images/05-12-2025/6932b3f86f9b9.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:59:06.378Z"
-   }
-  ],
   "lg-l9c1107pbgc": [
    {
     "id": "lg-l9c1107pbgc",
@@ -121187,22 +120443,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T12:59:29.458Z"
-   }
-  ],
-  "electrolux-ech-ecn2000m-heater": [
-   {
-    "id": "electrolux-ech-ecn2000m-heater",
-    "price": 27900,
-    "title": "ELECTROLUX ECH/ECN2000M",
-    "url": "https://vlv.am/en/Product/42908",
-    "image": "https://vlv.am/public/uploads/images/02-12-2025/692e872c7b46f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T12:59:54.840Z"
    }
   ],
   "sony-wi-c100": [
@@ -121332,22 +120572,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T13:02:28.572Z"
-   }
-  ],
-  "electrolux-eap2075d-air-purifier": [
-   {
-    "id": "electrolux-eap2075d-air-purifier",
-    "price": 112900,
-    "title": "ELECTROLUX EAP2075D",
-    "url": "https://vlv.am/en/Product/43321",
-    "image": "https://vlv.am/public/uploads/images/22-12-2025/694902ca9087b.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:02:30.744Z"
    }
   ],
   "lg-f2y1typq5p": [
@@ -121788,38 +121012,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T13:05:32.494Z"
-   }
-  ],
-  "mova-flip10": [
-   {
-    "id": "mova-flip10",
-    "price": 59900,
-    "title": "MOVA Flip10 Pearl White (AMFL10)(944401)",
-    "url": "https://vlv.am/en/Product/44185",
-    "image": "https://vlv.am/public/uploads/images/12-10-2026/6accdd9004e9a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:06:10.142Z"
-   }
-  ],
-  "mova-master-10": [
-   {
-    "id": "mova-master-10",
-    "price": 144900,
-    "title": "MOVA Master 10 MyltiStyler Lunar Silver (AMMA10)(944265)",
-    "url": "https://vlv.am/en/Product/44186",
-    "image": "https://vlv.am/public/uploads/images/28-07-2026/6a6886a643279.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Lunar Silver",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:06:13.769Z"
    }
   ],
   "sony-ht-b600": [
@@ -122543,22 +121735,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T13:11:13.093Z"
-   }
-  ],
-  "electrolux-ewh50-formax-dl-water-heater": [
-   {
-    "id": "electrolux-ewh50-formax-dl-water-heater",
-    "price": 112900,
-    "title": "ELECTROLUX EWH50 Formax DL",
-    "url": "https://vlv.am/en/Product/45087",
-    "image": "https://vlv.am/public/uploads/images/01-05-2026/69f4b43756626.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:11:15.475Z"
    }
   ],
   "tcl-55c6k": [
@@ -123409,52 +122585,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T13:15:11.048Z"
-   }
-  ],
-  "mova-fd10s-pro-air-fryer": [
-   {
-    "id": "mova-fd10s-pro-air-fryer",
-    "price": 65900,
-    "title": "MOVA FD10s Pro Black (730011)",
-    "url": "https://vlv.am/en/Product/46207",
-    "image": "https://vlv.am/public/uploads/images/14-05-2026/6a05bc6f9dad5.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:15:21.125Z"
-   },
-   {
-    "id": "mova-fd10s-pro-air-fryer",
-    "price": 65900,
-    "title": "MOVA FD10s Pro White (730356)",
-    "url": "https://vlv.am/en/Product/46208",
-    "image": "https://vlv.am/public/uploads/images/14-05-2026/6a05794629062.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:15:23.641Z"
-   }
-  ],
-  "mova-s70-pro-roller-vacuum": [
-   {
-    "id": "mova-s70-pro-roller-vacuum",
-    "price": 499900,
-    "title": "MOVA S70 Pro Roller White (RLZ11HE)",
-    "url": "https://vlv.am/en/Product/46209",
-    "image": "https://vlv.am/public/uploads/images/14-05-2026/6a05ba2e99ddb.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:15:26.311Z"
    }
   ],
   "asus-fx607v": [
@@ -124982,38 +124112,6 @@
     "checkedAt": "2026-10-31T13:20:29.575Z"
    }
   ],
-  "ariston-clas-xc-24-ff-ng-gas-boiler": [
-   {
-    "id": "ariston-clas-xc-24-ff-ng-gas-boiler",
-    "price": 416500,
-    "title": "ARISTON CLAS XC 24 FF NG + FLUE PIPE",
-    "url": "https://vlv.am/en/Product/47712",
-    "image": "https://vlv.am/public/uploads/images/11-07-2026/6a523e7e1bf4f.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:20:50.494Z"
-   }
-  ],
-  "electrolux-ewh80-centurio-iq-3-0-water-heater": [
-   {
-    "id": "electrolux-ewh80-centurio-iq-3-0-water-heater",
-    "price": 175900,
-    "title": "ELECTROLUX EWH80 CENTURIO IQ 3.0 SILVER",
-    "url": "https://vlv.am/en/Product/47835",
-    "image": "https://vlv.am/public/uploads/images/17-07-2026/6a59c8a6ed02c.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:21:07.805Z"
-   }
-  ],
   "tcl-43v6d": [
    {
     "id": "tcl-43v6d",
@@ -125346,70 +124444,6 @@
     "shop": "vlv",
     "seen": "2026-10-31",
     "checkedAt": "2026-10-31T13:22:26.224Z"
-   }
-  ],
-  "mova-z60-ultra-roller-complete-vacuum": [
-   {
-    "id": "mova-z60-ultra-roller-complete-vacuum",
-    "price": 699900,
-    "title": "MOVA Z60 Ultra Roller Complete (RLZ83CE-1)",
-    "url": "https://vlv.am/en/Product/48114",
-    "image": "https://vlv.am/public/uploads/images/08-08-2026/6a76fdb798dd6.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:22:29.270Z"
-   }
-  ],
-  "mova-m50-ultra-vacuum": [
-   {
-    "id": "mova-m50-ultra-vacuum",
-    "price": 279900,
-    "title": "MOVA M50 Ultra (HMH28A)",
-    "url": "https://vlv.am/en/Product/48115",
-    "image": "https://vlv.am/public/uploads/images/05-08-2026/6a731deabc962.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:22:33.365Z"
-   }
-  ],
-  "mova-e40-ultra-vacuum": [
-   {
-    "id": "mova-e40-ultra-vacuum",
-    "price": 289900,
-    "title": "MOVA E40 Ultra (RLE21SE)",
-    "url": "https://vlv.am/en/Product/48116",
-    "image": "https://vlv.am/public/uploads/images/04-08-2026/6a71f0cd31033.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "White",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:22:36.521Z"
-   }
-  ],
-  "mova-s7-vacuum": [
-   {
-    "id": "mova-s7-vacuum",
-    "price": 115900,
-    "title": "MOVA S7 (V2595E)",
-    "url": "https://vlv.am/en/Product/48117",
-    "image": "https://vlv.am/public/uploads/images/05-08-2026/6a73075ce4e55.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": "Black",
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:22:39.217Z"
    }
   ],
   "hp-omnibook-5-ai-16-cn0004ci": [
@@ -125874,70 +124908,6 @@
     "checkedAt": "2026-10-31T13:26:40.131Z"
    }
   ],
-  "electrolux-ewh50-centurio-iq-invertor-water-heater": [
-   {
-    "id": "electrolux-ewh50-centurio-iq-invertor-water-heater",
-    "price": 145000,
-    "title": "ELECTROLUX EWH50 CENTURIO IQ INVERTOR",
-    "url": "https://vlv.am/en/Product/48792",
-    "image": "https://vlv.am/public/uploads/images/07-09-2026/6a9e6075b2ccd.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:26:57.828Z"
-   }
-  ],
-  "electrolux-ewh50-centurio-iq-3-0-water-heater": [
-   {
-    "id": "electrolux-ewh50-centurio-iq-3-0-water-heater",
-    "price": 149900,
-    "title": "ELECTROLUX EWH50 CENTURIO IQ 3.0 SILVER",
-    "url": "https://vlv.am/en/Product/48793",
-    "image": "https://vlv.am/public/uploads/images/07-09-2026/6a9e5f5a32e5a.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:27:00.622Z"
-   }
-  ],
-  "electrolux-ewh80-smart-inverter-water-heater": [
-   {
-    "id": "electrolux-ewh80-smart-inverter-water-heater",
-    "price": 196900,
-    "title": "ELECTROLUX EWH80 SMART INVERTER",
-    "url": "https://vlv.am/en/Product/48794",
-    "image": "https://vlv.am/public/uploads/images/07-09-2026/6a9e5e6f30748.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:27:02.830Z"
-   }
-  ],
-  "electrolux-ewh100-smart-inverter-water-heater": [
-   {
-    "id": "electrolux-ewh100-smart-inverter-water-heater",
-    "price": 209900,
-    "title": "ELECTROLUX EWH100 SMART INVERTER",
-    "url": "https://vlv.am/en/Product/48795",
-    "image": "https://vlv.am/public/uploads/images/07-09-2026/6a9e5db839739.webp",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "vlv",
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T13:27:05.362Z"
-   }
-  ],
   "hisense-32a5s": [
    {
     "id": "hisense-32a5s",
@@ -126375,34 +125345,6 @@
     "color": "Gray",
     "shop": "zigzag",
     "cell": true
-   }
-  ],
-  "honor-choice-infowear-2i-kch-wb01": [
-   {
-    "id": "honor-choice-infowear-2i-kch-wb01",
-    "price": 19900,
-    "title": "Honor Choice Watch 2i Black KCH-WB01 /5504ACGM",
-    "url": "https://www.zigzag.am/am/honor-choice-watch-2i-black-kch-wb01-5504acgm.html",
-    "storage": null,
-    "ram": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T10:09:36.287675+00:00",
-    "inStock": true,
-    "color": "Black",
-    "shop": "zigzag"
-   },
-   {
-    "id": "honor-choice-infowear-2i-kch-wb01",
-    "price": 19900,
-    "title": "Honor Choice Watch 2i White KCH-WB01 /5504ACGN",
-    "url": "https://www.zigzag.am/am/honor-choice-watch-2i-white-kch-wb01-5504acgn.html",
-    "storage": null,
-    "ram": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T10:09:39.214864+00:00",
-    "inStock": true,
-    "color": "White",
-    "shop": "zigzag"
    }
   ],
   "garmin-vivoactive-5": [
@@ -127981,34 +126923,6 @@
     "checkedAt": "2026-10-31T10:11:53.584803+00:00",
     "inStock": true,
     "shop": "eldorado"
-   }
-  ],
-  "xiaomi-soundbar-pro-2-1": [
-   {
-    "id": "xiaomi-soundbar-pro-2-1",
-    "price": 89900,
-    "title": "Xiaomi Soundbar Pro 2.1ch (MDZ-41-DB) QBH4336EU",
-    "url": "https://eldorado.am/en/xiaomi-soundbar-pro-2-1ch-mdz-41-db-qbh4336eu",
-    "storage": null,
-    "ram": null,
-    "color": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T10:11:53.584803+00:00",
-    "inStock": true,
-    "shop": "eldorado"
-   },
-   {
-    "id": "xiaomi-soundbar-pro-2-1",
-    "price": 99900,
-    "title": "Xiaomi Soundbar Pro 2.1ch /QBH4336EU",
-    "url": "https://www.zigzag.am/am/xiaomi-soundbar-pro-2-1ch-qbh4336eu.html",
-    "storage": null,
-    "ram": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T00:57:26.285386+00:00",
-    "inStock": true,
-    "color": null,
-    "shop": "zigzag"
    }
   ],
   "logitech-f710": [
@@ -131581,20 +130495,6 @@
     "seen": "2026-10-31"
    }
   ],
-  "xiaomi-semi-automatic-espresso-machine-bhr9798eu": [
-   {
-    "id": "xiaomi-semi-automatic-espresso-machine-bhr9798eu",
-    "price": 47900,
-    "title": "Xiaomi Semi-automatic Espresso Machine BHR9798EU",
-    "url": "https://shop.viva.am/en/product/xiaomi-semi-automatic-espresso-machine/",
-    "storage": null,
-    "ram": null,
-    "inStock": true,
-    "color": null,
-    "shop": "viva",
-    "seen": "2026-10-31"
-   }
-  ],
   "apple-macbook-air-13-m3": [
    {
     "id": "apple-macbook-air-13-m3",
@@ -132950,22 +131850,6 @@
     "shop": "zigzag"
    }
   ],
-  "lenovo-yoga-slim-7-r5-7640s-83aa000brk": [
-   {
-    "id": "lenovo-yoga-slim-7-r5-7640s-83aa000brk",
-    "price": 450200,
-    "title": "Lenovo Yoga Slim 7 R5-7640S 16/512 /83AA000BRK",
-    "url": "https://www.zigzag.am/am/lenovo-yoga-slim-7-r5-7640s-16-512-83aa000brk.html",
-    "storage": 512,
-    "ram": 16,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T00:19:29.614521+00:00",
-    "inStock": true,
-    "color": null,
-    "shop": "zigzag",
-    "size": 16
-   }
-  ],
   "lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1": [
    {
     "id": "lg-gram-book-15-6-core-i5-1334u-2-w11h-15u50t-g-ars2u1",
@@ -133334,19 +132218,6 @@
   "samsung-qe50q7faauxru": [
    {
     "id": "samsung-qe50q7faauxru",
-    "price": 299000,
-    "title": "Samsung QE50Q7FAAUXRU",
-    "url": "https://www.zigzag.am/am/samsung-qe50q7faauxru.html",
-    "storage": null,
-    "ram": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T10:37:11.450835+00:00",
-    "inStock": true,
-    "color": null,
-    "shop": "zigzag"
-   },
-   {
-    "id": "samsung-qe50q7faauxru",
     "price": 209000,
     "title": "Smart TV Samsung QE50Q7FAAUXRU",
     "url": "https://eldorado.am/en/smart-tv-samsung-qe50q7faauxru",
@@ -133357,6 +132228,19 @@
     "checkedAt": "2026-10-31T10:11:53.584803+00:00",
     "inStock": true,
     "shop": "eldorado"
+   },
+   {
+    "id": "samsung-qe50q7faauxru",
+    "price": 299000,
+    "title": "Samsung QE50Q7FAAUXRU",
+    "url": "https://www.zigzag.am/am/samsung-qe50q7faauxru.html",
+    "storage": null,
+    "ram": null,
+    "seen": "2026-10-31",
+    "checkedAt": "2026-10-31T10:37:11.450835+00:00",
+    "inStock": true,
+    "color": null,
+    "shop": "zigzag"
    }
   ],
   "samsung-qe50qn80fauxru": [
@@ -133407,19 +132291,6 @@
   "samsung-qe55q7faauxru": [
    {
     "id": "samsung-qe55q7faauxru",
-    "price": 353000,
-    "title": "Samsung QE55Q7FAAUXRU",
-    "url": "https://www.zigzag.am/am/samsung-qe55q7faauxru.html",
-    "storage": null,
-    "ram": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T10:37:29.215959+00:00",
-    "inStock": true,
-    "color": null,
-    "shop": "zigzag"
-   },
-   {
-    "id": "samsung-qe55q7faauxru",
     "price": 247000,
     "title": "Smart TV Samsung QE55Q7FAAUXRU",
     "url": "https://eldorado.am/en/samsung-qe55q7faauxru",
@@ -133430,6 +132301,19 @@
     "checkedAt": "2026-10-31T10:11:53.584803+00:00",
     "inStock": true,
     "shop": "eldorado"
+   },
+   {
+    "id": "samsung-qe55q7faauxru",
+    "price": 353000,
+    "title": "Samsung QE55Q7FAAUXRU",
+    "url": "https://www.zigzag.am/am/samsung-qe55q7faauxru.html",
+    "storage": null,
+    "ram": null,
+    "seen": "2026-10-31",
+    "checkedAt": "2026-10-31T10:37:29.215959+00:00",
+    "inStock": true,
+    "color": null,
+    "shop": "zigzag"
    }
   ],
   "samsung-qe55q8faauxru": [
@@ -133675,19 +132559,6 @@
   "samsung-ue75m80hauxpy": [
    {
     "id": "samsung-ue75m80hauxpy",
-    "price": 629850,
-    "title": "Samsung UE75M80HAUXPY",
-    "url": "https://www.zigzag.am/am/samsung-ue75m80hauxpy.html",
-    "storage": null,
-    "ram": null,
-    "seen": "2026-10-31",
-    "checkedAt": "2026-10-31T10:41:18.650583+00:00",
-    "inStock": true,
-    "color": null,
-    "shop": "zigzag"
-   },
-   {
-    "id": "samsung-ue75m80hauxpy",
     "price": 629000,
     "title": "Smart TV Samsung UE75M80HAUXPY",
     "url": "https://eldorado.am/en/samsung-ue75m80hauxpy",
@@ -133698,6 +132569,19 @@
     "checkedAt": "2026-10-31T10:11:53.584803+00:00",
     "inStock": true,
     "shop": "eldorado"
+   },
+   {
+    "id": "samsung-ue75m80hauxpy",
+    "price": 629850,
+    "title": "Samsung UE75M80HAUXPY",
+    "url": "https://www.zigzag.am/am/samsung-ue75m80hauxpy.html",
+    "storage": null,
+    "ram": null,
+    "seen": "2026-10-31",
+    "checkedAt": "2026-10-31T10:41:18.650583+00:00",
+    "inStock": true,
+    "color": null,
+    "shop": "zigzag"
    }
   ],
   "sennheiser-accentum": [
@@ -137046,6 +135930,51 @@
     "shop": "eldorado"
    }
   ],
+  "wacom-intuos-s-bluetooth": [
+   {
+    "id": "wacom-intuos-s-bluetooth",
+    "price": 28900,
+    "title": "Graphics tablet Wacom Intuos S Bluetooth Black (CTL-4100WLK-N)",
+    "url": "https://eldorado.am/en/wacom-intuos-s-bluetooth-black-ctl-4100wlk-n",
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "seen": "2026-10-31",
+    "checkedAt": "2026-10-31T10:11:53.584803+00:00",
+    "inStock": true,
+    "shop": "eldorado"
+   }
+  ],
+  "wacom-intuos-s": [
+   {
+    "id": "wacom-intuos-s",
+    "price": 29900,
+    "title": "Graphics tablet Wacom Intuos S (СTL-4100K-N) Black",
+    "url": "https://eldorado.am/en/wacom-intuos-s-stl-4100k-n-black",
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "seen": "2026-10-31",
+    "checkedAt": "2026-10-31T10:11:53.584803+00:00",
+    "inStock": true,
+    "shop": "eldorado"
+   }
+  ],
+  "wacom-intuos-m": [
+   {
+    "id": "wacom-intuos-m",
+    "price": 31900,
+    "title": "Graphics tablet Wacom Intuos M Black CTL-6100K-B",
+    "url": "https://eldorado.am/en/graphics-tablet-wacom-intuos-m-black-ctl-6100k-b",
+    "storage": null,
+    "ram": null,
+    "color": "Black",
+    "seen": "2026-10-31",
+    "checkedAt": "2026-10-31T10:11:53.584803+00:00",
+    "inStock": true,
+    "shop": "eldorado"
+   }
+  ],
   "wacom-one-s": [
    {
     "id": "wacom-one-s",
@@ -139959,7 +138888,9 @@
     "ram": null,
     "color": "Black",
     "url": "https://vlv.am/en/Product/48114",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    },
    {
     "id": "mova-z60-ultra-roller-complete-vacuum",
@@ -142627,7 +141558,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/41294",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "bose-soundtouch-10": [
@@ -143175,6 +142108,21 @@
     "seen": "2026-10-30"
    }
   ],
+  "hisense-65a7nq": [
+   {
+    "id": "hisense-65a7nq",
+    "shop": "vlv",
+    "title": "Hisense 65A7NQ",
+    "price": 289900,
+    "storage": null,
+    "ram": null,
+    "color": null,
+    "url": "https://vlv.am/en/Product/32140",
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-30"
+   }
+  ],
   "samsung-galaxy-s25-edge": [
    {
     "id": "samsung-galaxy-s25-edge",
@@ -143186,7 +142134,7 @@
     "color": "Titanium Jetblack",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s25-edge",
     "seeded": true,
-    "seen": "2026-10-30"
+    "seen": "2026-10-31"
    },
    {
     "id": "samsung-galaxy-s25-edge",
@@ -143198,6 +142146,21 @@
     "color": "Titanium Jetblack",
     "url": "https://notebookcentre.am/en/product/samsung-galaxy-s25-edge-titanium-jetblack-512-gb",
     "seeded": true,
+    "seen": "2026-10-31"
+   }
+  ],
+  "apple-iphone-14-plus": [
+   {
+    "id": "apple-iphone-14-plus",
+    "shop": "mobilecentre",
+    "title": "iPhone 14 Plus 128GB (Red)",
+    "price": 269900,
+    "storage": 128,
+    "ram": 6,
+    "color": "Red",
+    "url": "https://mobilecentre.am/product/apple-iphone-14-plus/27918/",
+    "seeded": true,
+    "inStock": true,
     "seen": "2026-10-30"
    }
   ],
@@ -144913,7 +143876,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/12139",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-pro1-r-abs120v-1-8k-water-heater": [
@@ -144926,7 +143891,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/12221",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-pro1-r-abs150v-1-8k-water-heater": [
@@ -144939,7 +143906,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/12222",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-pro1-r50v-1-5k-pl-water-heater": [
@@ -144952,7 +143921,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/12224",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-pro1-r80h-1-8k-pl-water-heater": [
@@ -144965,7 +143936,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/13760",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-sg1-80v-1-5k-water-heater": [
@@ -144978,7 +143951,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/13762",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-sg1-100v-1-5k-water-heater": [
@@ -144991,7 +143966,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/13763",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-pro1-r100v-1-8k-pl-water-heater": [
@@ -145004,7 +143981,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/19241",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-clas-xc-28-ff-ng-gas-boiler": [
@@ -145056,7 +144035,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/29368",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh50-trend-water-heater": [
@@ -145069,7 +144050,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/30171",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh80-trend-water-heater": [
@@ -145095,7 +144078,9 @@
     "ram": null,
     "color": "Black",
     "url": "https://vlv.am/en/Product/30179",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh80-citadel-water-heater": [
@@ -145108,7 +144093,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/30360",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh100-trend-water-heater": [
@@ -145147,7 +144134,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/31665",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "karcher-af20": [
@@ -145173,7 +144162,9 @@
     "ram": null,
     "color": "Silver",
     "url": "https://vlv.am/en/Product/32238",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-taptronic-s-3-3kw-water-heater": [
@@ -145186,7 +144177,9 @@
     "ram": null,
     "color": null,
     "url": "https://vlv.am/en/Product/33813",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-clas-xc-35-ff-ng-gas-boiler": [
@@ -145212,7 +144205,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/34720",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh50-royal-flash-water-heater": [
@@ -145225,7 +144220,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/35163",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    },
    {
     "id": "electrolux-ewh50-royal-flash-water-heater",
@@ -145236,7 +144233,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/38843",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh100-major-lzr3-water-heater": [
@@ -145249,7 +144248,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/35164",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ech-bmi2000-heater": [
@@ -145262,7 +144263,9 @@
     "ram": null,
     "color": "Black",
     "url": "https://vlv.am/en/Product/35470",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh50-citadel-water-heater": [
@@ -145275,7 +144278,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/35895",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-sg1-50v-1-5k-water-heater": [
@@ -145288,7 +144293,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/36847",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "mova-j20-vacuum": [
@@ -145327,7 +144334,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/38499",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "mova-fd20-pro-air-fryer": [
@@ -145353,7 +144362,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/39817",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh-100-azr-eec-water-heater": [
@@ -145379,7 +144390,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/39820",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-clas-one-30-rdc-condens-gas-boiler": [
@@ -145455,7 +144468,9 @@
     "ram": null,
     "color": "Blue",
     "url": "https://vlv.am/en/Product/42580",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "mova-metalish-af10-pro-air-fryer": [
@@ -145494,7 +144509,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/42908",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-eap2075d-air-purifier": [
@@ -145557,7 +144574,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/45087",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh80-centurio-iq-invertor-water-heater": [
@@ -145607,7 +144626,9 @@
     "ram": null,
     "color": "White",
     "url": "https://vlv.am/en/Product/46209",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "ariston-clas-xc-24-ff-ng-gas-boiler": [
@@ -145633,7 +144654,9 @@
     "ram": null,
     "color": null,
     "url": "https://vlv.am/en/Product/47835",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh100-centurio-iq-3-0-water-heater": [
@@ -145698,7 +144721,9 @@
     "ram": null,
     "color": null,
     "url": "https://vlv.am/en/Product/48792",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh50-centurio-iq-3-0-water-heater": [
@@ -145711,7 +144736,9 @@
     "ram": null,
     "color": null,
     "url": "https://vlv.am/en/Product/48793",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh80-smart-inverter-water-heater": [
@@ -145724,7 +144751,9 @@
     "ram": null,
     "color": null,
     "url": "https://vlv.am/en/Product/48794",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "electrolux-ewh100-smart-inverter-water-heater": [
@@ -145737,7 +144766,9 @@
     "ram": null,
     "color": null,
     "url": "https://vlv.am/en/Product/48795",
-    "seeded": true
+    "seeded": true,
+    "inStock": true,
+    "seen": "2026-10-31"
    }
   ],
   "gorenje-atcm730t-coffee-machine": [

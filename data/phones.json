@@ -144769,5 +144769,141 @@
       "main": "20.3 MP 1/2.3-inch",
       "video": "4K 30p"
     }
+  },
+  {
+    "id": "wacom-intuos-s",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Intuos S",
+    "aliases": [
+      "Wacom Intuos S",
+      "CTL-4100K",
+      "STL-4100K"
+    ],
+    "tier": "budget",
+    "priceAmd": 29900,
+    "priceAmdMax": 29900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 29900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Small Intuos with four shortcut keys: 152 x 95 mm active area, 4,096 pressure levels, USB.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {
+      "weight": 230,
+      "height": 200,
+      "width": 160,
+      "thickness": 8.8
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2018,
+    "connectivity": {
+      "wireless": "USB"
+    }
+  },
+  {
+    "id": "wacom-intuos-s-bluetooth",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Intuos S Bluetooth",
+    "aliases": [
+      "Wacom Intuos S Bluetooth",
+      "CTL-4100WLK",
+      "CTL-4100WLE",
+      "CTL-4100WL"
+    ],
+    "tier": "budget",
+    "priceAmd": 28900,
+    "priceAmdMax": 32900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 28900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Intuos S with Bluetooth: 152 x 95 mm active area, 4,096 pressure levels, up to 15 hours on a charge.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {
+      "weight": 230,
+      "height": 200,
+      "width": 160,
+      "thickness": 8.8
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2018,
+    "connectivity": {
+      "wireless": "USB, Bluetooth"
+    }
+  },
+  {
+    "id": "wacom-intuos-m",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Intuos M",
+    "aliases": [
+      "Wacom Intuos M",
+      "CTL-6100K",
+      "CTL-6100"
+    ],
+    "tier": "budget",
+    "priceAmd": 31900,
+    "priceAmdMax": 31900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 31900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Medium Intuos with four shortcut keys: 216 x 135 mm active area, 4,096 pressure levels, USB.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_tablet"
+    },
+    "body": {
+      "weight": 410,
+      "height": 264,
+      "width": 200,
+      "thickness": 8.8
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2018,
+    "connectivity": {
+      "wireless": "USB"
+    }
   }
 ]
