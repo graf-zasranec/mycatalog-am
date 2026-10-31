@@ -2586,7 +2586,8 @@
     "display": {
       "size": 11,
       "resolution": "2388x1668",
-      "refresh": 120
+      "refresh": 120,
+      "type": "Liquid Retina IPS LCD"
     },
     "battery": {
       "capacity": 7538
@@ -3113,7 +3114,8 @@
     "display": {
       "size": 11,
       "resolution": "2360x1640",
-      "refresh": 60
+      "refresh": 60,
+      "type": "Liquid Retina IPS LCD"
     },
     "battery": {
       "capacity": 7606
@@ -23158,7 +23160,8 @@
       "size": 12,
       "resolution": "2000x1200",
       "ppi": 225,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 7250,
@@ -23288,7 +23291,8 @@
       "resolution": "1340x800",
       "ppi": 179,
       "brightness": 650,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 90
     },
     "battery": {
       "capacity": 7020,
@@ -23356,7 +23360,8 @@
       "resolution": "1340x800",
       "ppi": 179,
       "brightness": 650,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 90
     },
     "battery": {
       "capacity": 7020,
@@ -27711,7 +27716,8 @@
       "size": 9.7,
       "resolution": "1200x800",
       "ppi": 149,
-      "type": "TFT LCD (IPS)"
+      "type": "TFT LCD (IPS)",
+      "refresh": 60
     },
     "battery": {
       "capacity": 5100,
@@ -32137,7 +32143,8 @@
       "size": 9,
       "resolution": "1340x800",
       "ppi": 173,
-      "type": "LCD IPS"
+      "type": "LCD IPS",
+      "refresh": 60
     },
     "battery": {
       "capacity": 5100,
@@ -41522,7 +41529,8 @@
     },
     "chipset": {
       "name": "Exynos 1380",
-      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "process": "5 nm"
     },
     "battery": {
       "capacity": 8000
@@ -61143,7 +61151,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "lg-oled77c46la",
@@ -61174,7 +61183,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "lg-oled65g46la",
@@ -61205,7 +61215,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "xiaomi-tv-max",
@@ -61276,7 +61287,8 @@
     ],
     "settled": [
       "notADuplicate"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "samsung-qa55q80aauxzn",
@@ -61308,7 +61320,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qa55s90dauxzn",
@@ -61340,7 +61353,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qa65q60abuxzn",
@@ -61372,7 +61386,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "lg-oled55a26la",
@@ -61403,7 +61418,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "xiaomi-tv-s-mini",
@@ -61470,7 +61486,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "samsung-qe55q70tauxce",
@@ -61501,7 +61518,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "sony-k65s20m2",
@@ -61532,7 +61550,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "samsung-qe65q60dauxce",
@@ -61563,7 +61582,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "lg-55nano80vpa",
@@ -61594,7 +61614,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "samsung-ua65bu8000uxtw",
@@ -61626,7 +61647,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue65du8000uxce",
@@ -61657,7 +61679,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "sony-k50s20m2",
@@ -61688,7 +61711,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "samsung-ua55bu8000uxzn",
@@ -61720,7 +61744,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "lg-50nano75vpa",
@@ -61751,7 +61776,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "samsung-ua50bu8500uxzn",
@@ -61783,7 +61809,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "xiaomi-tv-a-pro",
@@ -61819,7 +61846,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "xiaomi-tv-a",
@@ -61856,7 +61884,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "samsung-ua50bu8000uxzn",
@@ -61888,7 +61917,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ua43cu8000uxzn",
@@ -61920,7 +61950,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ua43bu8500uxzn",
@@ -61952,7 +61983,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ua43bu8000uxzn",
@@ -61984,7 +62016,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue43du7100uxru",
@@ -62015,7 +62048,8 @@
     "unsure": [
       "popularity",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "lg-32lm637bpva",
@@ -62047,7 +62081,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "samsung-ua32t5300auxtw",
@@ -62079,7 +62114,8 @@
       "popularity",
       "chipset",
       "battery.capacity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "xiaomi-tv-4a",
@@ -69243,14 +69279,20 @@
       "battery.capacity"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon X Plus"
+      "name": "Qualcomm Snapdragon X Plus",
+      "process": "4 nm"
     },
     "body": {
       "weight": 686
     },
     "specNA": {
       "battery.capacity": "Microsoft gives the battery in watt-hours, not mAh (checked 2026-10-24)"
-    }
+    },
+    "camera": {
+      "main": "10 MP",
+      "front": "12 MP"
+    },
+    "released": "2025-05"
   },
   {
     "id": "acer-nitro-lite",
@@ -73619,7 +73661,9 @@
     ],
     "display": {
       "size": 11.2,
-      "resolution": "3200x2136"
+      "resolution": "3200x2136",
+      "type": "IPS LCD",
+      "refresh": 144
     },
     "battery": {
       "capacity": 9200
@@ -73636,14 +73680,20 @@
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
-      "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+      "cpu": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+      "process": "3 nm"
     },
     "body": {
       "weight": 485
     },
     "sources": [
       "https://www.mi.com/global/product/xiaomi-pad-8-pro/"
-    ]
+    ],
+    "camera": {
+      "main": "50 MP",
+      "front": "32 MP"
+    },
+    "released": "2025-09"
   },
   {
     "id": "garmin-epix-pro-sapphire-edition-47-mm",
@@ -73846,7 +73896,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "lg-oled65c6rla",
@@ -73878,7 +73929,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "panasonic-tx-42mz800e",
@@ -74038,7 +74090,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-mre65r95hauxpy",
@@ -74070,7 +74123,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-mre75r85hauxpy",
@@ -74102,7 +74156,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-mre85r95hauxpy",
@@ -74134,7 +74189,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe100qn80fuxru",
@@ -74166,7 +74222,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe115qn90fuxru",
@@ -74198,7 +74255,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe43q8faauxru",
@@ -74230,7 +74288,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe50qn80fauxru",
@@ -74262,7 +74321,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe55ls03fauxru",
@@ -74294,7 +74354,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe55ls03hauxpy",
@@ -74326,7 +74387,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe55q8faauxru",
@@ -74358,7 +74420,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe55qn70hauxpy",
@@ -74390,7 +74453,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe55qn90fauxru",
@@ -74422,7 +74486,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65ls03hauxpy",
@@ -74454,7 +74519,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65qn70fauxru",
@@ -74486,7 +74552,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65qn70hauxpy",
@@ -74518,7 +74585,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65qn80fauxru",
@@ -74550,7 +74618,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65qn90dauxru",
@@ -74582,7 +74651,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65s90haexpy",
@@ -74614,7 +74684,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe65s95cauxru",
@@ -74646,7 +74717,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe75q7faauxru",
@@ -74678,7 +74750,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe75q8faauxru",
@@ -74710,7 +74783,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe75qn80hauxpy",
@@ -74742,7 +74816,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe75qn90fauxru",
@@ -74774,7 +74849,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe77s85haexpy",
@@ -74806,7 +74882,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe83s85faexru",
@@ -74838,7 +74915,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe85qn70hauxpy",
@@ -74870,7 +74948,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe85qn80fauxru",
@@ -74902,7 +74981,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe85qn90dauxru",
@@ -74934,7 +75014,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe85qn90fauxru",
@@ -74966,7 +75047,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue100m90huxpy",
@@ -74998,7 +75080,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue55u8000huxpy",
@@ -75030,7 +75113,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue65du8500uxru",
@@ -75062,7 +75146,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "sony-k-55xr80m2",
@@ -75094,7 +75179,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-k-85s30",
@@ -75126,7 +75212,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-k-85xr50",
@@ -75158,7 +75245,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-k-85xr70",
@@ -75190,7 +75278,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-k-98xr50",
@@ -75222,7 +75311,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-43x75wl",
@@ -75254,7 +75344,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-65x75wl",
@@ -75286,7 +75377,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-65x80l",
@@ -75318,7 +75410,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-75x75wl",
@@ -75350,7 +75443,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-75x80l",
@@ -75382,7 +75476,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-75x85l",
@@ -75414,7 +75509,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-kd-85x80l",
@@ -75446,7 +75542,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "tcl-43p7l-qled",
@@ -75478,7 +75575,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "tcl-50v6d-led",
@@ -75510,7 +75608,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "tcl-75c7l-sqd-miniled",
@@ -75542,7 +75641,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "tcl-75p8l-qled",
@@ -75574,7 +75674,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "tcl-85c7l-sqd-miniled",
@@ -75606,7 +75707,8 @@
       "popularity",
       "display.resolution",
       "chipset"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "acer-aspire-15-a15-61m-r6s1-ryzen",
@@ -78006,7 +78108,8 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 7s Gen 4"
+      "name": "Qualcomm Snapdragon 7s Gen 4",
+      "process": "4 nm"
     },
     "body": {
       "weight": 610
@@ -78015,7 +78118,11 @@
     "specSource": "gsmarena.com/xiaomi_poco_pad_m1-14297.php, 2026-10-11",
     "colors": [
       "Gray"
-    ]
+    ],
+    "camera": {
+      "main": "8 MP",
+      "front": "8 MP"
+    }
   },
   {
     "id": "nothing-phone-lite-6974434227026",
@@ -84855,7 +84962,8 @@
       "Graphite Gray"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 6s 4G Gen 2"
+      "name": "Qualcomm Snapdragon 6s 4G Gen 2",
+      "process": "6 nm"
     },
     "body": {
       "weight": 406
@@ -84911,7 +85019,8 @@
       "Silver"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 6s 4G Gen 2"
+      "name": "Qualcomm Snapdragon 6s 4G Gen 2",
+      "process": "6 nm"
     },
     "body": {
       "weight": 401
@@ -87445,11 +87554,17 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 7s Gen 2"
+      "name": "Qualcomm Snapdragon 7s Gen 2",
+      "process": "4 nm"
     },
     "body": {
       "weight": 571
-    }
+    },
+    "camera": {
+      "main": "8 MP",
+      "front": "8 MP"
+    },
+    "released": "2024-04"
   },
   {
     "id": "lg-32lq630b6la",
@@ -87484,7 +87599,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "jvc-lt32m590",
@@ -87554,7 +87670,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "lg-55ur78006lk",
@@ -87589,7 +87706,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "haier-le43k6500tf",
@@ -87659,7 +87777,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue55bu8000uxce",
@@ -87694,7 +87813,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue50u8000fuxru",
@@ -87729,7 +87849,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue50au7140uxru",
@@ -87764,7 +87885,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue43u8000fuxru",
@@ -87799,7 +87921,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue43au7540uxru",
@@ -87834,7 +87957,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue85cu7100uxru",
@@ -87869,7 +87993,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "lg-55nano80t6a",
@@ -87904,7 +88029,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "lg-43ut81006la",
@@ -87939,7 +88065,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "xiaomi-a-l43ma-afru",
@@ -87974,7 +88101,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "xiaomi-a-l43ma-auru",
@@ -88009,7 +88137,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "xiaomi-a2-l32m8-a2ru",
@@ -88044,7 +88173,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "samsung-ue55du7100uxru",
@@ -88079,7 +88209,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue43du8000uxru",
@@ -88114,7 +88245,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "jvc-lt32m395s",
@@ -88184,7 +88316,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "webOS"
   },
   {
     "id": "haier-le32k5500t",
@@ -88254,7 +88387,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-50a6n",
@@ -88289,7 +88423,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "toshiba-65c350me",
@@ -88429,7 +88564,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "tier": "mid",
@@ -89514,7 +89650,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-100u7q",
@@ -89549,7 +89686,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-32a5q",
@@ -89584,7 +89722,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-55a85n",
@@ -89619,7 +89758,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-55u6kq",
@@ -89654,7 +89794,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-ax3120q",
@@ -90129,7 +90270,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-qe83s95haexpy",
@@ -90164,7 +90306,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue50m70hauxpy",
@@ -90199,7 +90342,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "samsung-ue85u8000huxpy",
@@ -90234,7 +90378,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Tizen"
   },
   {
     "id": "sony-ht-b600",
@@ -90380,7 +90525,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "Google TV"
   },
   {
     "id": "sony-mhc-v13",
@@ -90891,7 +91037,8 @@
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "os": "VIDAA"
   },
   {
     "id": "hisense-h50-lite",
@@ -92075,7 +92222,8 @@
     "display": {
       "size": 11,
       "resolution": "2000x1200",
-      "refresh": 60
+      "refresh": 60,
+      "type": "IPS LCD"
     },
     "battery": {
       "capacity": 7700
@@ -92088,14 +92236,17 @@
       "popularity"
     ],
     "chipset": {
-      "name": "Qualcomm Snapdragon 662"
+      "name": "Qualcomm Snapdragon 662",
+      "process": "11 nm"
     },
     "body": {
       "weight": 490
     },
     "camera": {
-      "main": "13 MP"
-    }
+      "main": "13 MP",
+      "front": "8 MP"
+    },
+    "released": "2020-11"
   },
   {
     "id": "lenovo-v15-g5-irl-83gw00grfw",
