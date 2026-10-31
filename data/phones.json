@@ -7132,7 +7132,9 @@
       "refresh": 144,
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 90
+    },
     "summaryEn": "ASUS FA507.",
     "unsure": [
       "popularity"
@@ -14602,7 +14604,9 @@
         "priceAmd": 649000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "unsure": [
       "popularity"
     ],
@@ -26799,7 +26803,9 @@
       "name": "Intel Arc Graphics 130V",
       "type": "integrated"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 64
+    },
     "connectivity": {
       "wifi": "Wi-Fi 7"
     },
@@ -68192,7 +68198,9 @@
       "resolution": "1920x1200",
       "type": "IPS"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 60
+    },
     "summaryEn": "Honor MagicBook X14 i5-13420H W11H /5301ALWG.",
     "unsure": [
       "popularity",
@@ -71820,7 +71828,9 @@
       "size": 15.6,
       "resolution": "1920x1080"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 51
+    },
     "summaryEn": "LG Gram Book 15.6\" Core i5-1334U /2. W11H /15U50T-G.ARS2U1.",
     "unsure": [
       "popularity",
@@ -77003,7 +77013,9 @@
       "size": 16.2,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 99.5
+    },
     "summaryEn": "A 16.2-inch laptop with Intel Core Ultra 7-255H, 32 GB RAM and 1024 GB storage.",
     "unsure": [
       "popularity"
@@ -77047,7 +77059,9 @@
       "size": 13.4,
       "resolution": "1920x1200"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 55
+    },
     "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 7-155H, 8 GB RAM and 512 GB storage.",
     "unsure": [
       "popularity",
@@ -104206,7 +104220,8 @@
       "type": "integrated"
     },
     "battery": {
-      "life": "19 h"
+      "life": "19 h",
+      "capacity": 66
     },
     "os": "Windows 11",
     "colors": [
