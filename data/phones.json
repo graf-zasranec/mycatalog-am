@@ -148367,5 +148367,178 @@
       "Black"
     ],
     "year": 2023
+  },
+  {
+    "id": "canon-eos-2000d",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS 2000D",
+    "aliases": [
+      "Canon EOS 2000D",
+      "EOS2000D",
+      "EOS 2000D BK"
+    ],
+    "tier": "budget",
+    "priceAmd": 217000,
+    "priceAmdMax": 217000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 217000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "Entry DSLR: 24.1 MP APS-C sensor, optical viewfinder, Full HD video.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "dslr"
+    },
+    "body": {
+      "weight": 475
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2018,
+    "camera": {
+      "main": "24.1 MP APS-C CMOS",
+      "video": "Full HD 30p"
+    }
+  },
+  {
+    "id": "wacom-one-12",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "One 12",
+    "aliases": [
+      "Wacom One 12",
+      "DTC121W0B",
+      "DTC121"
+    ],
+    "tier": "mid",
+    "priceAmd": 189900,
+    "priceAmdMax": 189900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 189900
+      }
+    ],
+    "display": {
+      "size": 11.6,
+      "resolution": "1920x1080",
+      "type": "IPS",
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "11.6-inch Full HD pen display with 4,096 pressure levels; plugs into a computer by USB-C.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {
+      "weight": 1000
+    },
+    "colors": [
+      "White"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "wacom-cintiq-24",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Cintiq 24",
+    "aliases": [
+      "Wacom Cintiq 24 pen DTK246",
+      "DTK246K0B",
+      "DTK246"
+    ],
+    "tier": "flagship",
+    "priceAmd": 589900,
+    "priceAmdMax": 589900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 589900
+      }
+    ],
+    "display": {
+      "size": 23.8,
+      "resolution": null,
+      "type": "IPS",
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "The 24-inch Cintiq pen display with the Pro Pen 3.",
+    "unsure": [
+      "popularity",
+      "display.resolution"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {},
+    "colors": [
+      "Black"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "fujifilm-instax-mini-13",
+    "category": "camera",
+    "brand": "Fujifilm",
+    "name": "Instax Mini 13",
+    "aliases": [
+      "Fujifilm Instax Mini 13"
+    ],
+    "tier": "budget",
+    "priceAmd": 49900,
+    "priceAmdMax": 49900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Fujifilm's current entry instant camera; prints Instax Mini photos.",
+    "unsure": [
+      "popularity",
+      "year",
+      "priceAmd"
+    ],
+    "appliance": {
+      "type": "instant"
+    },
+    "body": {},
+    "colors": [
+      "Candy Pink",
+      "Dreamy Purple",
+      "Frost Blue",
+      "Lagoon Green"
+    ],
+    "year": null
   }
 ]
