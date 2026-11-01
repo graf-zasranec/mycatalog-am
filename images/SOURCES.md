@@ -6,3 +6,4 @@
 - Instax Mini 11 Sky Blue / Charcoal Gray, Mini 12 Clay White / Blossom Pink / Pastel Blue / Mint Green (Amazon variant hiRes, print cropped), Lumix S9 Silver (Amazon 71uTvsfmCuL), Kenwood FDP23 Storm Blue / Eucalyptus (Kenwood DAM assets 337171, 337177, height marker cropped, flood cut), Dyson OnTrac CNC Aluminium (REDstore product photo): retrieved 2026-11-01.
 - wacom-cintiq-16-dtk168, wacom-cintiq-pro-24(-touch): Wacom estore official product images, flood-cut
 - jbl-quantum-400/810/100p, jbl-vibe-buds-2 (black, white), jbl-vibe-beam-2, lenovo-legion-h600: Amazon hiRes listing images (amazon.de / amazon.co.uk), Vision cut
+- nothing-cmf-watch-3-pro (dark-gray, orange, light-gray): Amazon hiRes listing images (amazon.com), Vision cut
