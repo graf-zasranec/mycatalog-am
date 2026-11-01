@@ -148114,5 +148114,258 @@
     "connectivity": {
       "wireless": "USB"
     }
+  },
+  {
+    "id": "sony-zv-1-ii",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "ZV-1 II",
+    "aliases": [
+      "Sony ZV-1 II",
+      "Sony ZV-1M2",
+      "ZV-1M2"
+    ],
+    "tier": "mid",
+    "priceAmd": 419900,
+    "priceAmdMax": 419900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 419900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Vlogging compact: 1-inch 20.1 MP sensor, 18-50 mm wide zoom, 4K 30p.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "compact"
+    },
+    "body": {
+      "weight": 292
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2023,
+    "camera": {
+      "main": "20.1 MP 1-inch CMOS",
+      "video": "4K 30p"
+    }
+  },
+  {
+    "id": "fujifilm-instax-mini-41",
+    "category": "camera",
+    "brand": "Fujifilm",
+    "name": "Instax Mini 41",
+    "aliases": [
+      "Fujifilm Instax Mini 41"
+    ],
+    "tier": "mid",
+    "priceAmd": 69900,
+    "priceAmdMax": 69900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 69900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Retro-styled instant camera with automatic exposure and a close-up mode; prints Instax Mini photos.",
+    "unsure": [
+      "popularity",
+      "year"
+    ],
+    "appliance": {
+      "type": "instant"
+    },
+    "body": {},
+    "colors": [
+      "Black"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "fujifilm-instax-mini-evo",
+    "category": "camera",
+    "brand": "Fujifilm",
+    "name": "Instax Mini Evo",
+    "aliases": [
+      "Fujifilm Instax Mini Evo"
+    ],
+    "tier": "mid",
+    "priceAmd": 119900,
+    "priceAmdMax": 119900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119900
+      }
+    ],
+    "display": {
+      "size": 3
+    },
+    "battery": {},
+    "summaryEn": "Hybrid camera: shoots digitally with 100 lens and film effects, then prints the frames you choose on Instax Mini film.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "instant"
+    },
+    "body": {
+      "weight": 285
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "wacom-one-14",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "One 14",
+    "aliases": [
+      "Wacom One 14",
+      "DTC141W0",
+      "DTC141"
+    ],
+    "tier": "mid",
+    "priceAmd": 119900,
+    "priceAmdMax": 119900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119900
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080",
+      "type": "IPS",
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "14-inch Full HD pen display for drawing and note-taking, connected by USB-C.",
+    "unsure": [
+      "popularity",
+      "display.resolution"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {},
+    "colors": [
+      "White"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "wacom-movink-13",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Movink 13",
+    "aliases": [
+      "Wacom Movink 13",
+      "DTH135K0B",
+      "DTH135"
+    ],
+    "tier": "flagship",
+    "priceAmd": 439900,
+    "priceAmdMax": 439900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 439900
+      }
+    ],
+    "display": {
+      "size": 13.3,
+      "resolution": "1920x1080",
+      "type": "OLED",
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Wacom's thinnest pen display: 13.3-inch OLED, 420 g, Pro Pen 3.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {
+      "weight": 420,
+      "thickness": 6.6
+    },
+    "colors": [
+      "Gray"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "wacom-cintiq-pro-17",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Cintiq Pro 17",
+    "aliases": [
+      "Wacom Cintiq Pro 17",
+      "DTH172K0B",
+      "DTH172"
+    ],
+    "tier": "flagship",
+    "priceAmd": 989900,
+    "priceAmdMax": 989900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 989900
+      }
+    ],
+    "display": {
+      "size": 17.3,
+      "resolution": "3840x2160",
+      "type": "IPS",
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "17.3-inch 4K 120 Hz pen display with touch and the Pro Pen 3.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {
+      "weight": 2200
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2023
   }
 ]
