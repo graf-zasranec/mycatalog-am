@@ -5,3 +5,4 @@
 - Canon EOS 2000D (Amazon.de 81RLTx5tIUL), Wacom Cintiq 24 (Amazon.de 71s6dj7VNkL, shadow rim removed), Wacom One 12 (Amazon.de 51a7YQ4ccRL), Instax Mini 13 Candy Pink / Dreamy Purple / Lagoon Green / Frost Blue (Amazon 61SpPKXo7rL, 61tL14lyndL, 61zFnGowfpL, 71xEP6jFzVL): listing hiRes images, Apple Vision / flood cutout, retrieved 2026-11-01.
 - Instax Mini 11 Sky Blue / Charcoal Gray, Mini 12 Clay White / Blossom Pink / Pastel Blue / Mint Green (Amazon variant hiRes, print cropped), Lumix S9 Silver (Amazon 71uTvsfmCuL), Kenwood FDP23 Storm Blue / Eucalyptus (Kenwood DAM assets 337171, 337177, height marker cropped, flood cut), Dyson OnTrac CNC Aluminium (REDstore product photo): retrieved 2026-11-01.
 - wacom-cintiq-16-dtk168, wacom-cintiq-pro-24(-touch): Wacom estore official product images, flood-cut
+- jbl-quantum-400/810/100p, jbl-vibe-buds-2 (black, white), jbl-vibe-beam-2, lenovo-legion-h600: Amazon hiRes listing images (amazon.de / amazon.co.uk), Vision cut

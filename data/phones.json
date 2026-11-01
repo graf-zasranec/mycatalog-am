@@ -142599,6 +142599,285 @@
     }
   },
   {
+    "id": "jbl-quantum-400",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Quantum 400",
+    "aliases": [
+      "JBL QUANTUM 400",
+      "JBL Quantum400"
+    ],
+    "tier": "mid",
+    "priceAmd": 47900,
+    "priceAmdMax": 47900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 47900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "display": {},
+    "battery": {},
+    "audio": {
+      "form": "full",
+      "conn": "wired",
+      "gaming": true,
+      "anc": false,
+      "plug": "usb"
+    },
+    "summaryEn": "USB gaming headset with JBL QuantumSURROUND and a game/chat dial.",
+    "body": {
+      "weight": 274
+    },
+    "sources": [
+      "https://www.jbl.com/QUANTUM400.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired USB / 3.5 mm"
+    }
+  },
+  {
+    "id": "jbl-quantum-810",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Quantum 810 Wireless",
+    "aliases": [
+      "JBL Quantum 810 Wireless",
+      "JBL Quantum 810"
+    ],
+    "tier": "mid",
+    "priceAmd": 89900,
+    "priceAmdMax": 89900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 89900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "display": {},
+    "battery": {
+      "life": "43 hours"
+    },
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "gaming": true,
+      "anc": true
+    },
+    "summaryEn": "2.4 GHz and Bluetooth gaming headset with ANC and head tracking.",
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "body": {
+      "weight": 410
+    },
+    "sources": [
+      "https://www.jbl.com/QUANTUM810.html"
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "jbl-quantum-100p",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Quantum 100P",
+    "aliases": [
+      "JBL Q100P",
+      "JBL Q100PWHTBLU",
+      "JBL Quantum 100P Console"
+    ],
+    "tier": "budget",
+    "priceAmd": 16900,
+    "priceAmdMax": 16900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 16900
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "display": {},
+    "battery": {},
+    "audio": {
+      "form": "full",
+      "conn": "wired",
+      "gaming": true,
+      "anc": false,
+      "plug": "3.5"
+    },
+    "summaryEn": "Light wired 3.5 mm gaming headset in PlayStation white and blue.",
+    "body": {
+      "weight": 220
+    },
+    "sources": [
+      "https://www.jbl.com/QUANTUM100P.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
+  },
+  {
+    "id": "jbl-vibe-beam-2",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Vibe Beam 2",
+    "aliases": [
+      "JBL Vibe Beam 2"
+    ],
+    "tier": "budget",
+    "priceAmd": 25900,
+    "priceAmdMax": 25900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "display": {},
+    "battery": {
+      "life": "10 hours (40 with the case)"
+    },
+    "audio": {
+      "form": "tws",
+      "conn": "wireless",
+      "anc": true
+    },
+    "summaryEn": "Stem earbuds with ANC and 40 hours with the case.",
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "ip": "IP54"
+    },
+    "sources": [
+      "https://www.jbl.com/VIBE-BEAM-2.html"
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "jbl-vibe-buds-2",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Vibe Buds 2",
+    "aliases": [
+      "JBL Vibe Buds 2"
+    ],
+    "tier": "budget",
+    "priceAmd": 21900,
+    "priceAmdMax": 21900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 21900
+      }
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "display": {},
+    "battery": {},
+    "audio": {
+      "form": "tws",
+      "conn": "wireless",
+      "anc": true
+    },
+    "summaryEn": "Small round JBL earbuds with ANC.",
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "ip": "IP54"
+    },
+    "sources": [
+      "https://www.jbl.com/VIBE-BUDS-2.html"
+    ],
+    "unsure": [
+      "popularity",
+      "battery.life"
+    ]
+  },
+  {
+    "id": "lenovo-legion-h600",
+    "category": "headphones",
+    "brand": "Lenovo",
+    "name": "Legion H600 Wireless",
+    "aliases": [
+      "Lenovo Legion H600",
+      "GXD1A03963"
+    ],
+    "tier": "budget",
+    "priceAmd": 26900,
+    "priceAmdMax": 26900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 26900
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "display": {},
+    "battery": {},
+    "audio": {
+      "form": "full",
+      "conn": "wireless",
+      "gaming": true,
+      "anc": false
+    },
+    "summaryEn": "2.4 GHz wireless gaming headset with 50 mm drivers.",
+    "sources": [
+      "https://www.lenovo.com/us/en/p/accessories-and-software/headsets/gaming-headsets/gxd1a03963"
+    ],
+    "unsure": [
+      "popularity",
+      "battery.life"
+    ],
+    "connectivity": {
+      "bluetooth": "none, 2.4 GHz USB dongle"
+    }
+  },
+  {
     "id": "logitech-z150",
     "category": "speaker",
     "brand": "Logitech",
