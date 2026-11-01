@@ -336,6 +336,17 @@ function matchPhone(text, meta) {
   if (pin !== undefined) return pin === '-' ? null : pin;
   if (looksLikeAccessory(text)) return null;
   if (looksLikeBundle(text)) return null;
+  // "iPad 10.2" is the 7th/8th/9th-generation iPad, never the 10th-generation "iPad 10" (10.9"),
+  // but tokenized it reads "ipad 10 2" and the iPad 10 key matched it - Mobile Centre's 2020 and
+  // 2021 models sat on the iPad 10 page as its cheapest offers. Only the 2021 / 9th-gen Wi-Fi model
+  // is carried (apple-ipad-9); older generations and cellular builds are not.
+  {
+    let raw = String(text || ''); try { raw = decodeURIComponent(raw); } catch {}
+    if (/\bipad[\s_-]*10[.,_-]2\b/i.test(raw)) {
+      const gen9 = /\b2021\b|\b9(th)?[\s-]*gen/i.test(raw), cell = /cellular|\blte\b|\b4g\b|\b5g\b/i.test(raw);
+      return gen9 && !cell && phoneById['apple-ipad-9'] ? 'apple-ipad-9' : null;
+    }
+  }
   const h = tokenized(text).replace(/  +/g, ' ');
   if (SECONDHAND.some(w => h.includes(' ' + w + ' '))) return null;
   // Shops compress the model in a slug ("samsung-s26ultra", "google-pixel10"). Splitting the
@@ -912,6 +923,10 @@ if (process.argv[2] === '--selftest') {
     [null, 'JBL Tune 570BT'],
     [null, 'Dyson Supersonic HD16 hair dryer Red Velvet/Gold - outlet'],
     ['apple-airpods-4-anc', 'AirPods 4 NC'],
+    ['apple-ipad-9', 'iPad 10.2 Wi-Fi 64GB (2021) (Space Grey)'],
+    [null, 'iPad 10.2 Wi-Fi 128GB (2020) (Gold)'],
+    [null, 'iPad 10.2 Wi-Fi+Cellular 32GB (2021) Gold'],
+    ['apple-ipad-10-9-wi-fi-a14-mpqa3rk-a', 'iPad 10.9 Wi-Fi A14 (2022) MPQA3RK/A'],
     ['apple-airpods-max-2','Apple AirPods Max 2 Type-C Midnight'],
     ['apple-airpods-max-usb-c-2024','Apple AirPods Max (2024) Midnight'],
     ['apple-airpods-max-usb-c-2024','https://shop.test/airpods-max-type-c-midnight'],
@@ -1613,7 +1628,11 @@ function caseColorOf(text, colors) {
 const enrich = (o, {allowSoleColor = true} = {}) => ({
   ...o,
   band: o.band ?? bandOf(o.title + ' ' + urlWords(o.url), o.id),
-  storage: o.storage ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
+  // A watch's "storage" is its case size in mm (40/44, 42/46, 49). A shop title's "64GB" was read
+  // as a size and put a "64" chip beside the real ones; keep only sizes the product has.
+  storage: (((phoneById[o.id] || {}).category === 'watch' && o.storage != null
+      && !((phoneById[o.id] || {}).variants || []).some(v => v.storage === o.storage)) ? null : o.storage)
+    ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
   ram: o.ram ?? ramOf(o.title),
   // enrich never filled this, so every offer carried size:null and the 14"/16" chips filtered
   // nothing - both buttons showed the whole offer list, at one price. The title is often silent

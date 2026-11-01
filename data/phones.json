@@ -6400,7 +6400,26 @@
       {
         "ram": null,
         "storage": 49,
-        "priceAmd": 496900
+        "priceAmd": 442900,
+        "band": "Ocean Band"
+      },
+      {
+        "ram": null,
+        "storage": 49,
+        "priceAmd": 442900,
+        "band": "Alpine Loop"
+      },
+      {
+        "ram": null,
+        "storage": 49,
+        "priceAmd": 442900,
+        "band": "Trail Loop"
+      },
+      {
+        "ram": null,
+        "storage": 49,
+        "priceAmd": 496900,
+        "band": "Milanese Loop"
       }
     ],
     "os": "watchOS 26",
@@ -148506,6 +148525,136 @@
       "Black"
     ],
     "year": 2025
+  },
+  {
+    "id": "wacom-cintiq-16-dtk168",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Cintiq 16 DTK168",
+    "aliases": [
+      "Wacom Cintiq 16 DTK168K0B",
+      "DTK168K0B",
+      "DTK168"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 329900,
+    "priceAmdMax": 329900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 329900
+      }
+    ],
+    "display": {
+      "size": 15.6,
+      "resolution": null,
+      "type": "IPS",
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "The newer 16-inch Cintiq pen display with the Pro Pen 3.",
+    "unsure": [
+      "popularity",
+      "display.resolution"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {},
+    "colors": [
+      "Black"
+    ],
+    "year": 2025
+  },
+  {
+    "id": "wacom-cintiq-pro-24",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Cintiq Pro 24",
+    "aliases": [
+      "Wacom Cintiq Pro 24 (DTK-2420",
+      "DTK-2420"
+    ],
+    "tier": "flagship",
+    "priceAmd": 889900,
+    "priceAmdMax": 889900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 889900
+      }
+    ],
+    "display": {
+      "size": 23.6,
+      "resolution": "3840x2160",
+      "type": "IPS",
+      "touch": false
+    },
+    "battery": {},
+    "summaryEn": "23.6-inch 4K pen display with 99% Adobe RGB and the Pro Pen 2.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {
+      "weight": 7200
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "wacom-cintiq-pro-24-touch",
+    "category": "graphicstablet",
+    "brand": "Wacom",
+    "name": "Cintiq Pro 24 Touch",
+    "aliases": [
+      "Wacom Cintiq Pro 24 multi-touch",
+      "Cintiq Pro 24 multi touch",
+      "DTH-2420"
+    ],
+    "tier": "flagship",
+    "priceAmd": 989900,
+    "priceAmdMax": 989900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 989900
+      }
+    ],
+    "display": {
+      "size": 23.6,
+      "resolution": "3840x2160",
+      "type": "IPS",
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "The touch version of the 23.6-inch 4K Cintiq Pro 24.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "pen_display"
+    },
+    "body": {
+      "weight": 7200
+    },
+    "colors": [
+      "Black"
+    ],
+    "year": 2017
   },
   {
     "id": "fujifilm-instax-mini-13",

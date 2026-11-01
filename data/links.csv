@@ -27,7 +27,7 @@ id,product,shop,shopTitle,storage,color,esim,price,seen,url
 -,-,eldorado,Wireless headphone JBL Wave Buds 2 Black,,Black,,,2026-10-10,https://eldorado.am/en/jbl-wbuds2blk
 -,-,eldorado,Wireless headphone JBL Wave Flex 2 Pink,,Pink,,,2026-10-10,https://eldorado.am/en/jbl-wave-flex-2-pink
 -,-,eldorado,Samsung Galaxy Watch4 44mm Black (R870),,Black,,,2026-10-10,https://eldorado.am/en/samsung-galaxy-watch4-44mm-black-r870
--,-,eldorado,Graphics tablet Wacom Cintiq 16 DTK168K0B,,,,,2026-10-31,https://eldorado.am/en/wacom-cintiq-16-dtk168k0b
+wacom-cintiq-16-dtk168,Wacom Cintiq 16 DTK168,eldorado,Graphics tablet Wacom Cintiq 16 DTK168K0B,,,,,2026-10-31,https://eldorado.am/en/wacom-cintiq-16-dtk168k0b
 -,-,ibolit,iPhone 14 Pro Max Magic Glass Box,,,,,2026-09-23,https://ibolit.mobi/product/iphone-14-pro-max-magic-glass-box/
 -,-,ibolit,MacBook Air 13 M1 2024 Starlight,,Starlight,,,2026-09-23,https://ibolit.mobi/product/macbook-air-13-m1-2024-starlight/
 -,-,ibolit,Dell AX510 2.0 Speaker,,,,,2026-09-23,https://ibolit.mobi/product/dell-ax510-2-0-speaker/
@@ -428,18 +428,18 @@ apple-imac-24-m4,Apple iMac M4,zigzag,Apple iMac 24 M4 10/10 16/512 SILVER /MWUV
 apple-imac-24-m4,Apple iMac M4,zigzag,Apple iMac 24 M4 10/10 24/1 Blue /Z1EQ000BU*,,Blue,,,2026-10-12,https://www.zigzag.am/am/apple-imac-24-m4-10-10-24-1-blue-z1eq000bu.html
 apple-imac-24-m4,Apple iMac M4,zigzag,Apple iMac 24 M4 10/10 24/1 Silver*,,Silver,,,2026-10-12,https://www.zigzag.am/am/apple-imac-24-m4-10-10-24-1-silver.html
 apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,allsell,iPad 10th Generation Wifi In Armenia - Buy - Price - AllSell,256,Blue,,,2026-10-23,https://allsell.am/en/ipad-10th-generation-wifi
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi 128GB (2020) (Gold),128,,,303900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi-128gb-_2020_-_gold_/15560/
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi 128GB (2020) (Space Grey),128,,,303900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi-128gb-_2020_-_space-grey_/15562/
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi 128GB (2020) (Silver),128,Silver,,303900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi-128gb-_2020_-_silver_/15561/
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi+Cellular 32GB (2021) Gold,32,,,324900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi+cellular-32gb-_2021_-gold/16161/
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi+Cellular 32GB (2021) (Space Grey),32,,,324900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi+cellular-32gb-_2021_-_space-grey_/15567/
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 64GB 5G Silver,64,Silver,,235000,2026-11-01,https://redstore.am/en/product/ipad-109-64gb-5g-silver
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 64GB 5G Blue,64,Blue,,235000,2026-11-01,https://redstore.am/en/product/ipad-109-64gb-5g-blue
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 64GB 5G Yellow,64,Yellow,,235000,2026-11-01,https://redstore.am/en/product/ipad-109-64gb-5g-yellow
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 256GB 5G Pink,256,Pink,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-pink
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 256GB 5G Blue,256,Blue,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-blue
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 256GB 5G Silver,256,Silver,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-silver
-apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,redstore,10.9 256GB 5G Yellow,256,Yellow,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-yellow
+-,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi 128GB (2020) (Gold),128,,,303900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi-128gb-_2020_-_gold_/15560/
+-,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi 128GB (2020) (Space Grey),128,,,303900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi-128gb-_2020_-_space-grey_/15562/
+-,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi 128GB (2020) (Silver),128,Silver,,303900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi-128gb-_2020_-_silver_/15561/
+-,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi+Cellular 32GB (2021) Gold,32,,,324900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi+cellular-32gb-_2021_-gold/16161/
+-,Apple iPad 10,mobilecentre,iPad 10.2 Wi-Fi+Cellular 32GB (2021) (Space Grey),32,,,324900,2026-11-01,https://mobilecentre.am/product/ipad-10.2-wi-fi+cellular-32gb-_2021_-_space-grey_/15567/
+-,Apple iPad 10,redstore,10.9 64GB 5G Silver,64,Silver,,235000,2026-11-01,https://redstore.am/en/product/ipad-109-64gb-5g-silver
+-,Apple iPad 10,redstore,10.9 64GB 5G Blue,64,Blue,,235000,2026-11-01,https://redstore.am/en/product/ipad-109-64gb-5g-blue
+-,Apple iPad 10,redstore,10.9 64GB 5G Yellow,64,Yellow,,235000,2026-11-01,https://redstore.am/en/product/ipad-109-64gb-5g-yellow
+-,Apple iPad 10,redstore,10.9 256GB 5G Pink,256,Pink,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-pink
+-,Apple iPad 10,redstore,10.9 256GB 5G Blue,256,Blue,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-blue
+-,Apple iPad 10,redstore,10.9 256GB 5G Silver,256,Silver,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-silver
+-,Apple iPad 10,redstore,10.9 256GB 5G Yellow,256,Yellow,,319000,2026-11-01,https://redstore.am/en/product/ipad-109-256gb-5g-yellow
 apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,ucom,iPad 10.9 Wi-Fi A14 (2022) MPQA3RK/A,256,Yellow,,199900,2026-11-01,https://shop.ucom.am/en/ipad-wi-fi.html
 apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,zigzag,Apple iPad 10.9 Wi-Fi 64GB Blue 10 Gen/MPQ13RK/A,64,Blue,,,2026-10-12,https://www.zigzag.am/am/apple-ipad-10-9-wi-fi-64gb-blue-10-gen-mpq13rk-a.html
 apple-ipad-10-9-wi-fi-a14-mpqa3rk-a,Apple iPad 10,zigzag,"Apple iPad 10.9"" Wi-Fi 64GB Silver 10Gen /MPQ03*",64,Silver,,,2026-10-12,https://www.zigzag.am/am/apple-ipad-10-9-wi-fi-64gb-silver-10gen-mpq03.html
