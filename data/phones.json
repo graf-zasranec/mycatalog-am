@@ -31725,7 +31725,7 @@
     "name": "Legion 5 15IAX10",
     "tier": "upper-mid",
     "priceAmd": 729000,
-    "priceAmdMax": 729000,
+    "priceAmdMax": 1218000,
     "popularity": 40,
     "accent": "#5C6470",
     "display": {
@@ -31753,6 +31753,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 729000
+      },
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 1218000
       }
     ],
     "battery": {
@@ -31764,6 +31769,61 @@
     "year": 2025,
     "sources": [
       "https://www.notebookcheck.net/"
+    ]
+  },
+  {
+    "id": "lenovo-legion-5-15iax10-ultra-9-rtx5070",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Legion 5 15IAX10 Ultra 9 RTX 5070",
+    "aliases": [
+      "Lenovo Legion 5 15.1 OLED Ultra 9 275HX RTX5070",
+      "83F00096RK"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1370000,
+    "priceAmdMax": 1370000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15,
+      "type": "OLED",
+      "resolution": "2560x1600",
+      "refresh": 165,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9-275HX"
+    },
+    "graphics": {
+      "name": "Nvidia Geforce RTX 5070 8GB",
+      "type": "discrete"
+    },
+    "body": {
+      "weight": 1900
+    },
+    "os": "Windows 11",
+    "released": "2025",
+    "year": 2025,
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 1370000
+      }
+    ],
+    "battery": {
+      "capacity": 80
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "The top Legion 5 15: Core Ultra 9 275HX, RTX 5070 and a 165 Hz OLED.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://psref.lenovo.com/Product/Legion/Legion_5_15IAX10"
     ]
   },
   {
@@ -31815,7 +31875,7 @@
     "tier": "flagship",
     "released": "2025-03",
     "priceAmd": 799000,
-    "priceAmdMax": 799000,
+    "priceAmdMax": 1150000,
     "popularity": 40,
     "accent": "#1B1D22",
     "display": {
@@ -31847,6 +31907,11 @@
         "ram": 16,
         "storage": 1024,
         "priceAmd": 799000
+      },
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 1150000
       }
     ],
     "colors": [
