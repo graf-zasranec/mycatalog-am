@@ -1590,8 +1590,29 @@ const urlWords = u => {
   try { s = decodeURIComponent(s); } catch { /* a stray % is not a reason to lose the whole url */ }
   return s.replace(/[^a-zA-Z0-9]+/g, ' ');
 };
+// An Apple Watch is sold by case finish AND band, and only the title says which band. Without this
+// every offer carried band:null, so the band chips on the product page filtered nothing (owner,
+// 2026-11-01: "only one variant"). Read against the product's own band list, so a band the
+// catalogue does not list stays null rather than inventing a variant.
+const BAND_WORDS = [['Milanese Loop', /\bmilanese\b/i], ['Trail Loop', /\btrail loop\b/i], ['Alpine Loop', /\balpine loop\b/i],
+  ['Ocean Band', /\bocean band\b/i], ['Sport Loop', /\bsport loop\b/i], ['Sport Band', /\bsport band\b/i], ['Link Bracelet', /\blink bracelet\b/i]];
+function bandOf(text, id) {
+  const bands = new Set(((phoneById[id] || {}).variants || []).map(v => v.band).filter(Boolean));
+  if (!bands.size) return null;
+  for (const [name, re] of BAND_WORDS) if (re.test(text) && bands.has(name)) return name;
+  return null;
+}
+// "Black Titanium Case with ... Loop": the case finish is the word before "Titanium Case". A shop
+// page's own colour field disagreed with its title for one Viva Ultra 4 (Black filed as Natural).
+function caseColorOf(text, colors) {
+  const m = String(text).match(/\b([a-z]+)\s+titanium\s+case\b/i);
+  if (!m) return null;
+  const w = m[1].toLowerCase();
+  return (colors || []).find(c => c.toLowerCase() === w || c.toLowerCase() === w + ' titanium') || null;
+}
 const enrich = (o, {allowSoleColor = true} = {}) => ({
   ...o,
+  band: o.band ?? bandOf(o.title + ' ' + urlWords(o.url), o.id),
   storage: o.storage ?? soleValue(((phoneById[o.id] || {}).variants || []).map(v => v.storage)),
   ram: o.ram ?? ramOf(o.title),
   // enrich never filled this, so every offer carried size:null and the 14"/16" chips filtered
@@ -1604,7 +1625,7 @@ const enrich = (o, {allowSoleColor = true} = {}) => ({
   // Last resort, and it works surprisingly often: the shop names the colour in its own photo
   // filename ("...17-pro-orng-1.png"). pixel.am was the only adapter using this; every shop
   // that publishes an image gets it now, which is 32 more offers that can say what they are.
-  color: o.color ?? colorOf(o.title + ' ' + urlWords(o.url), (phoneById[o.id] || {}).colors)
+  color: caseColorOf(o.title, (phoneById[o.id] || {}).colors) ?? o.color ?? colorOf(o.title + ' ' + urlWords(o.url), (phoneById[o.id] || {}).colors)
     ?? (o.image ? colorFromImage(o.image, (phoneById[o.id] || {}).colors) : null)
     ?? (allowSoleColor ? soleValue((phoneById[o.id] || {}).colors) : null)
     ?? colorWords(urlWords(o.url))
