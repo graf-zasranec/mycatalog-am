@@ -35,3 +35,10 @@ for(const patch of [{status:403},{status:429},{status:404},{checkedAt:'invalid'}
 assert.equal(oldQuote.inStock,true,'transport failure does not change recorded stock');
 console.log('REPEATED_SERVER_LINK_PASS: exact target, multiple failures, recovery and stock preserved');
 const renderedURL='https://allsell.am/en/hp-victus-15-fa2120nia-i7-240h-16gb-i-512gb-d15fcea-bh5';const renderedOffer={shop:'allsell',url:renderedURL,seen:'2026-10-28',price:658400};const rendered={shop:'allsell',url:renderedURL,reason:'browser_page_not_found',checked:'2026-10-30',checkedAt:'2026-10-30T10:00:27Z',documentTitle:'404 Not Found',primaryText:'404\nSomething went wrong\nThe page you are looking for may be removed',productFound:false,primaryBuyBoxFound:false};assert.equal(verifiedUnavailable(renderedOffer,rendered),true);for(const patch of [{shop:'other'},{url:'https://allsell.am/en/'},{documentTitle:'Just a moment...'},{primaryText:''},{productFound:true},{primaryBuyBoxFound:true},{checkedAt:'invalid'}])assert.equal(verifiedUnavailable(renderedOffer,{...rendered,...patch}),false);assert.equal(verifiedUnavailable({...renderedOffer,checkedAt:'2026-10-30T11:00:00Z'},rendered),false);console.log('RENDERED_MISSING_DESTINATION_PASS');
+const miURL='https://miarmenia.am/en/product/423/poco-c85-6-128-gb';
+const miOffer={shop:'miarmenia',url:miURL,seen:'2026-11-02',checkedAt:'2026-11-02T02:00:00Z'};
+const miRedirect={shop:'miarmenia',url:miURL,finalUrl:'https://miarmenia.am/en',status:200,reason:'homepage_redirect',checked:'2026-11-02',checkedAt:'2026-11-02T10:00:00Z'};
+assert.equal(verifiedUnavailable(miOffer,miRedirect),true,'an exact Mi Armenia product redirected to its home cannot be a purchase link');
+for(const patch of[{shop:'other'},{finalUrl:'https://another.example/en'},{finalUrl:'https://miarmenia.am/en/product/424/real-phone'},{status:403},{checkedAt:'invalid'}])assert.equal(verifiedUnavailable(miOffer,{...miRedirect,...patch}),false);
+assert.equal(verifiedUnavailable({...miOffer,checkedAt:'2026-11-02T11:00:00Z'},miRedirect),false,'a newer successful source check restores the page');
+console.log('MIARMENIA_REDIRECT_PASS');

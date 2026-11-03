@@ -30,6 +30,12 @@ export function reviewAllsellSpecs(html) {
 // evidence can establish this entry; catalogue specifications cannot do so.
 function modelIdentityAllowed(id, offer) {
   const identity = `${offer.title || ''} ${offer.url || ''}`;
+  // These older entries describe fixed 1TB SKUs; the 512GB SKUs have their own
+  // catalogue entries. Reject duplicate carried quotes in the wrong bucket.
+  if (id === 'hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea' && /\bbg7h7ea\b/i.test(identity)) return false;
+  if (id === 'hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea' && /\bbg7h9ea\b/i.test(identity)) return false;
+  // Retailers sometimes spell the final c with Cyrillic с.
+  if (id === 'honor-x9' && /\bx9[bcdс](?![a-z0-9])/i.test(identity)) return false;
   // "Wave" alone is also a coffeeware pattern. Flex, 300TWS and Buds 2 are
   // different hardware; cached rows must pass this gate as well as new matches.
   if (id === 'honor-pad-x8b-ndl2-w09' && /ndl2[\s_-]*l09\b/i.test(identity)) return false;
@@ -62,6 +68,7 @@ function modelIdentityAllowed(id, offer) {
     return !/(?:lite|light|лайт)[\s_-]*2\b|yndx[\s_-]*00026/i.test(identity);
   if (id === 'samsung-galaxy-a16')
     return !/\b(?:sm[\s_-]*)?a165[a-z0-9]*\b|\ba16\b[^\n]{0,20}\b(?:lte|4g)\b/i.test(identity);
+  if (id === 'jbl-tune-530bt' && /\bt530(?:wht|blk|blu|\b)/i.test(identity)) return false;
   const hp = id === 'hp-15-intel-core-5-120u';
   const honor = id === 'honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg';
   if (!hp && !honor) return true;
@@ -79,6 +86,6 @@ export function specOfferAllowed(offer, holds, id = offer.id) {
   if (!modelIdentityAllowed(id, offer)) return false;
   if (offer.specConflict?.length) return false;
   const key=u=>String(u||'').replace(/\/+$/,'').replace(/^(https?:\/\/[^/]+)\/(?:en|am|ru)\//,'$1/');
-  const hold=holds.find(row=>key(row.url)===key(offer.url));
+  const hold=holds.find(row=>(!row.id || row.id===id) && key(row.url)===key(offer.url));
   return !hold || (/^\d{4}-\d{2}-\d{2}$/.test(offer.specReviewed||'') && offer.specReviewed>=hold.checked);
 }

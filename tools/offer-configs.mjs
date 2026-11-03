@@ -4,11 +4,15 @@ import {specOfferAllowed} from './allsell-specs.mjs';
 import { cpu, storageGB } from './spec-values.mjs';
 // The same source cache used by shop-specs.mjs. Configuration facts belong to
 // the offer whose page stated them, rather than every build of a model family.
-// Exact browser-verified axes fill omitted source metadata; they never change a
-// price/check date or overwrite an axis explicitly stated by the merchant.
+// Verified axes fill omitted source metadata. Explicit corrections require matching
+// configuration guards; prices, stock and source check dates are never changed.
 export function attachVerifiedOfferAxes(offers, verified) {
   if (!verified) verified = fs.existsSync('data/config-specs.json') ? JSON.parse(fs.readFileSync('data/config-specs.json','utf8')) : {};
   const key = value => { try { const url=new URL(value); url.hash=''; url.searchParams.sort(); return url.href; } catch { return null; } };
+  const validAxis = (axis,value) => ['storage','ram','size','price'].includes(axis)
+    ? Number.isFinite(value) && value>0
+    : ['cell','esim'].includes(axis) ? typeof value==='boolean'
+    : axis==='color' && typeof value==='string' && value.trim().length>0 && value.length<=100;
   let count=0;
   for (const [id, rows] of Object.entries(verified)) for (const fact of rows) {
     if (!fact.offerAxes || !fact.url || !fact.shop || !/^\d{4}-\d{2}-\d{2}$/.test(fact.checked||'')) continue;
@@ -16,13 +20,13 @@ export function attachVerifiedOfferAxes(offers, verified) {
     for(const offer of offers[id]||[]) if(offer.shop===fact.shop && key(offer.url)===target) {
       // Shared product pages can sell different RAM at each storage capacity.
       if (fact.matchAxes && !Object.entries(fact.matchAxes).every(([axis,value]) =>
-        ['storage','ram','size'].includes(axis) && Number.isFinite(value) && value>0 && offer[axis]===value)) continue;
+        validAxis(axis,value) && offer[axis]===value)) continue;
       // An explicit source-verified correction must match the erroneous configuration first.
-      if (fact.matchAxes && Object.keys(fact.matchAxes).length) for (const axis of ['storage','ram']) {
+      if (fact.matchAxes && Object.keys(fact.matchAxes).length) for (const axis of ['storage','ram','size','cell','esim','color']) {
         const value=fact.correctAxes?.[axis];
-        if (Number.isFinite(value) && value>0) offer[axis]=value;
+        if (validAxis(axis,value)) offer[axis]=value;
       }
-      for(const axis of ['storage','ram']) if(offer[axis]==null && Number.isFinite(fact.offerAxes[axis]) && fact.offerAxes[axis]>0) { offer[axis]=fact.offerAxes[axis]; count++; }
+      for(const axis of ['storage','ram','size','cell','esim','color']) if(offer[axis]==null && validAxis(axis,fact.offerAxes[axis])) { offer[axis]=fact.offerAxes[axis]; count++; }
     }
   }
   return count;

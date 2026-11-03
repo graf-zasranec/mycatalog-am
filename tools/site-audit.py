@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 from PIL import Image
 from functools import lru_cache
+from html_references import local_asset_references
 
 root = Path(__file__).resolve().parent.parent
 products = {p['id']: p for p in json.loads((root/'data/phones.json').read_text(encoding='utf8'))}
@@ -32,14 +33,10 @@ for file in pages:
     markup = re.sub(r'(<script\b[^>]*>).*?(</script>)',r'\1\2',text,flags=re.S)
     redirect = 'http-equiv="refresh"' in text.lower()
     if not redirect and '<h1' not in markup.lower(): fail(file,'Missing static heading')
-    for attr,url in re.findall(r'\b(href|src)="([^"]+)"',markup):
-        parsed=urlsplit(url.replace('&amp;','&'))
-        if parsed.scheme and not (parsed.scheme=='https' and parsed.netloc=='better.am'): continue
-        if parsed.netloc and parsed.netloc!='better.am': continue
-        if not parsed.path: continue
-        target=(root/unquote(parsed.path).lstrip('/')) if parsed.netloc or parsed.path.startswith('/') else file.parent/unquote(parsed.path)
-        if parsed.path.endswith('/'): target/='index.html'
-        if not exists(normalized(target)): fail(file,'Missing local '+attr+': '+url)
+    for attr,relative in local_asset_references(markup, file.relative_to(root).as_posix()):
+        target=root/relative
+        if relative.endswith('/'): target/='index.html'
+        if not exists(normalized(target)): fail(file,'Missing local '+attr+': '+relative)
     for script in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
         try: schema=json.loads(script)
         except json.JSONDecodeError as e: fail(file,'Invalid JSON-LD '+str(e)); continue

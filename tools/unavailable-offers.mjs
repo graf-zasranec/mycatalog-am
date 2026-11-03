@@ -1,5 +1,19 @@
 // Dated evidence for unusable destinations or explicit primary-product sold-out stock.
 export function verifiedUnavailable(offer, evidence) {
+  if (evidence?.reason === 'homepage_redirect' && offer.shop === 'miarmenia') {
+    const at = Date.parse(evidence.checkedAt);
+    if (evidence.shop !== offer.shop || evidence.url !== offer.url || evidence.status !== 200
+        || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.checked || '') || !Number.isFinite(at)
+        || (offer.seen && offer.seen > evidence.checked)
+        || (offer.checkedAt && Date.parse(offer.checkedAt) > at)) return false;
+    try {
+      const from = new URL(offer.url), to = new URL(evidence.finalUrl);
+      return from.protocol === 'https:' && to.protocol === 'https:'
+        && ['miarmenia.am', 'www.miarmenia.am'].includes(from.hostname) && to.hostname === from.hostname
+        && /^\/(?:en|am|hy|ru)\/product\/\d+\/[^/]+\/?$/.test(from.pathname)
+        && /^\/(?:en|am|hy|ru)\/?$/.test(to.pathname);
+    } catch { return false; }
+  }
   if (evidence?.reason === 'browser_page_not_found') {
     // Record the rendered result without inventing an HTTP status hidden by a challenge.
     if (offer.shop !== 'allsell' || evidence.shop !== offer.shop || evidence.url !== offer.url

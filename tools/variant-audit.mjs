@@ -9,7 +9,7 @@ const { ramOf, capacitiesOf } = await import('data:text/javascript;base64,' + Bu
   src.slice(0, marker).replace('process.argv.slice(2)', '[]') + '\nexport { ramOf, capacitiesOf };').toString('base64'));
 const phones = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const prices = JSON.parse(fs.readFileSync('data/prices.json', 'utf8'));
-const report = { checkedOffers: 0, titledOffers: 0, explicitRAMOffers: 0, repairs: [], unsupportedPairs: [], addedConfigurations: [] };
+const report = { checkedOffers: 0, titledOffers: 0, explicitRAMOffers: 0, repairs: [], titleConflicts: [], unsupportedPairs: [], addedConfigurations: [] };
 const write = process.argv.includes('--write');
 for (const p of phones) {
   if (!['phone', 'tablet', 'laptop', 'desktop'].includes(p.category)) continue;
@@ -24,8 +24,14 @@ for (const p of phones) {
     if (unambiguous) {
       report.explicitRAMOffers++;
       if (o.ram !== parsed) {
-        report.repairs.push({ id: p.id, shop: o.shop, url: o.url, title: o.title, before: o.ram ?? null, after: parsed });
-        if (write) o.ram = parsed;
+        const finding = { id: p.id, shop: o.shop, url: o.url, title: o.title, before: o.ram ?? null, after: parsed };
+        // A shared page heading can describe its default child while the selected
+        // colour/storage SKU has different RAM. Never overwrite that child from
+        // its parent heading alone; require source-variant evidence to resolve it.
+        if (o.ram == null) {
+          report.repairs.push(finding);
+          if (write) o.ram = parsed;
+        } else report.titleConflicts.push(finding);
       }
     }
     if (o.ram != null && o.storage >= 32 && !(p.variants || []).some(v => v.ram === o.ram && v.storage === o.storage && (o.size == null || v.size == null || v.size === o.size))) {
@@ -45,5 +51,5 @@ if (write) {
 const output = process.argv.find(a => a.startsWith('--report='))?.slice(9);
 if (output) fs.writeFileSync(output, JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ checkedOffers: report.checkedOffers, titledOffers: report.titledOffers,
-  explicitRAMOffers: report.explicitRAMOffers, repairs: report.repairs.length,
+  explicitRAMOffers: report.explicitRAMOffers, repairs: report.repairs.length, titleConflicts: report.titleConflicts.length,
   unsupportedPairs: report.unsupportedPairs.length, addedConfigurations: report.addedConfigurations.length, written: write }));

@@ -21,7 +21,24 @@ if (process.argv.includes('--all')) {
   for (const c of ['phone', 'tablet', 'laptop', 'watch', 'headphones', 'speaker']) KEY[c] = [...KEY[c], 'body.weight'];
   for (const c of ['phone', 'tablet', 'watch']) KEY[c] = [...KEY[c], 'battery.capacity'];
 }
-export function requiredSpecFields(p) {
+export function requiredSpecFields(p, {extended = false} = {}) {
+  if (extended) {
+    const type = p.appliance?.type;
+    const extra = {
+      ereader: ['display.size', 'display.type'],
+      camera: ['appliance.type', ...(type === 'instant' ? [] : ['camera.main', 'camera.video', 'display.size'])],
+      graphicstablet: ['appliance.type', 'connectivity.wireless', ...(type === 'pen_display' ? ['display.size', 'display.resolution'] : [])],
+      vacuum: ['appliance.type'],
+      purifier: ['appliance.type', 'appliance.power'],
+      climate: ['appliance.type', ...({air_conditioner:['appliance.btu'], water_heater:['appliance.volume','appliance.power'], humidifier:['appliance.volume','appliance.power'], boiler:['appliance.power'], heater:['appliance.power']}[type] || [])],
+      smartglasses: ['glasses.style', 'glasses.lens', 'glasses.lensWidth', 'camera.main'],
+      projector: ['display.type', 'display.resolution'],
+      network: ['connectivity.wifi'],
+      streamer: ['chipset.name', 'connectivity.wifi'],
+      component: ['graphics.name']
+    }[p.category];
+    if (extra) return extra;
+  }
   if (p.category === 'largeappliance') {
     const core = {fridge:'volume',freezer:'volume',washing_machine:'load',dryer:'load',dishwasher:'settings',air_conditioner:'btu'}[p.appliance?.type];
     const variantVolumes=p.appliance?.volumeByVariant;
@@ -35,7 +52,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
 const P = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
 const get = (o, f) => f.split('.').reduce((a, k) => a == null ? a : a[k], o);
 const left = [];
-for (const p of P) for (const f of requiredSpecFields(p)) {
+for (const p of P) for (const f of requiredSpecFields(p, {extended: process.argv.includes('--all-categories')})) {
   const v = get(p, f);
   if ((v == null || v === '') && !(p.specNA || {})[f]) left.push(`${p.id} ${f}`);
 }

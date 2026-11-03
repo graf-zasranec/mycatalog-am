@@ -9,6 +9,9 @@ out = root / 'images' / 'thumb'
 out.mkdir(exist_ok=True)
 manifest = {}
 previews = {}
+native_metrics = {}
+old_metrics_path = root / 'data' / 'photo-native-metrics.json'
+old_metrics = json.loads(old_metrics_path.read_text()) if old_metrics_path.exists() else {}
 old_manifest = json.loads((root / 'data' / 'thumbnails.json').read_text()) if (root / 'data' / 'thumbnails.json').exists() else {}
 old_previews = json.loads((root / 'data' / 'photo-previews.json').read_text()) if (root / 'data' / 'photo-previews.json').exists() else {}
 before = after = 0
@@ -17,10 +20,20 @@ product_ids = {p['id'] for p in json.loads((root / 'data' / 'phones.json').read_
 for source in sorted((root / 'images' / 'cut').glob('*.webp')):
     if source.stem.split('__')[0] not in product_ids:
         continue
-    digest = hashlib.sha256(source.read_bytes()).hexdigest()[:12]
+    source_hash = hashlib.sha256(source.read_bytes()).hexdigest()
+    digest = source_hash[:12]
     dest = out / f'{source.stem}-{digest}.webp'
     key = source.relative_to(root).as_posix()
     cached_preview = old_previews.get(key)
+    cached_metric = old_metrics.get(key)
+    if cached_metric and cached_metric.get('sha256') == source_hash:
+        native_metrics[key] = cached_metric
+    else:
+        with Image.open(source) as native:
+            bounds = native.convert('RGBA').getchannel('A').point(lambda a: 255 if a > 128 else 0).getbbox()
+            native_metrics[key] = {'sha256': source_hash, 'width': native.width, 'height': native.height,
+                                   'visibleBounds': list(bounds) if bounds else None, 'alphaThreshold': 128}
+
     derivatives = [dest, dest.with_name(dest.stem + '-240.webp'), dest.with_name(dest.stem + '-320.webp')]
     if old_manifest.get(key) == dest.relative_to(root).as_posix() and all(p.exists() for p in derivatives) and (not cached_preview or (root / cached_preview['src']).exists()):
         manifest[key] = old_manifest[key]
@@ -63,3 +76,5 @@ for source in sorted((root / 'images' / 'cut').glob('*.webp')):
 (root / 'data' / 'thumbnails.json').write_text(json.dumps(manifest, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
 (root / 'data' / 'photo-previews.json').write_text(json.dumps(previews, separators=(',', ':')) + '\n', encoding='utf-8')
 print(f'{len(manifest)} exact-photo thumbnails: {before:,} -> {after:,} bytes')
+
+(root / 'data' / 'photo-native-metrics.json').write_text(json.dumps(native_metrics, separators=(',', ':')) + '\n', encoding='utf-8')

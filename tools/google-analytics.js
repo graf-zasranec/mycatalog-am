@@ -4,6 +4,10 @@
   function gtag() { window.dataLayer.push(arguments); }
   window.gtag = gtag;
   const consentKey = 'better.analytics-consent.v1';
+  const marketingEnabled = document.currentScript?.dataset.metaPixel === 'true';
+  const marketingKey = 'better.marketing-consent.v1';
+  let marketingChoice;
+  try { marketingChoice = localStorage.getItem(marketingKey); } catch {}
   let choice;
   try { choice = localStorage.getItem(consentKey); } catch {}
   let accepted = choice === 'granted';
@@ -59,9 +63,27 @@
     box.id = 'analytics-choice'; box.setAttribute('aria-label', copy[0]);
     box.style.cssText = 'position:fixed;z-index:1000;bottom:12px;left:12px;right:12px;margin:auto;max-width:680px;padding:16px;border:1px solid var(--line,#ddd);border-radius:14px;background:var(--surface,#fff);color:var(--text,#161c28);box-shadow:0 4px 24px #0002;font:inherit';
     const title = document.createElement('strong'); title.textContent = copy[0];
-    const text = document.createElement('p'); text.textContent = copy[1];
+    const text = document.createElement('p'); text.textContent = marketingEnabled ? ({
+      hy:'Թույլատրե՞լ Google Analytics-ի վիճակագրական cookie-ները՝ կայքը բարելավելու համար։ Գովազդային cookie-ները կամընտիր են։',
+      ru:'Разрешить статистические cookie Google Analytics для улучшения сайта? Рекламные cookie необязательны.',
+      en:'Allow Google Analytics cookies to help improve the website? Advertising cookies are optional.'
+    })[document.documentElement.lang] || 'Allow optional analytics cookies?' : copy[1];
     text.style.cssText = 'margin:8px 0 12px;font-size:14px;line-height:1.45';
     const actions = document.createElement('div'); actions.style.cssText = 'display:flex;flex-wrap:wrap;gap:10px';
+    let marketing;
+    if (marketingEnabled) {
+      const label = document.createElement('label');
+      label.style.cssText = 'display:flex;align-items:center;gap:10px;min-height:44px;margin:8px 0;font-size:14px;line-height:1.45;cursor:pointer';
+      marketing = document.createElement('input'); marketing.type = 'checkbox';
+      marketing.checked = marketingChoice === 'granted';
+      const description = document.createElement('span');
+      description.textContent = ({
+        hy:'Թույլատրել նաև Meta Pixel-ը՝ գովազդի արդյունավետությունը չափելու համար (էջի դիտումներ և գովազդային cookie-ներ)։',
+        ru:'Также разрешить Meta Pixel для измерения эффективности рекламы (просмотры страниц и рекламные cookie).',
+        en:'Also allow Meta Pixel to measure advertising performance (page views and advertising cookies).'
+      })[document.documentElement.lang] || 'Also allow Meta advertising cookies.';
+      label.append(marketing, description); box.append(title, text, label);
+    }
     for (const [value, label] of [['granted',copy[2]],['denied',copy[3]]]) {
       const button = document.createElement('button'); button.type = 'button'; button.textContent = label;
       button.style.cssText = 'min-height:44px;padding:8px 18px;border:1px solid var(--line2,#bbb);border-radius:24px;background:var(--surface2,#f1ebe1);color:inherit;cursor:pointer;font:inherit';
@@ -69,6 +91,11 @@
         accepted = value === 'granted';
         window['ga-disable-G-VN0T8DTQWX'] = !accepted;
         try { localStorage.setItem(consentKey, value); } catch {}
+        if (marketingEnabled) {
+          marketingChoice = accepted && marketing.checked ? 'granted' : 'denied';
+          try { localStorage.setItem(marketingKey, marketingChoice); } catch {}
+          window.dispatchEvent(new CustomEvent('better:marketing-consent', {detail:marketingChoice}));
+        }
         gtag('consent','update',{analytics_storage:value});
         box.remove();
         if (accepted) { view(); schedule(); }
@@ -85,12 +112,13 @@
       });
       actions.append(button);
     }
-    box.append(title,text,actions); document.body.append(box);
+    if (!marketingEnabled) box.append(title,text);
+    box.append(actions); document.body.append(box);
   };
   document.addEventListener('click', e => { if (e.target.closest('[data-analytics-settings]')) showChoice(); });
   new MutationObserver(() => { if (document.getElementById('analytics-choice')) showChoice(); })
     .observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-  if (choice !== 'granted' && choice !== 'denied') showChoice();
+  if ((choice !== 'granted' && choice !== 'denied') || (marketingEnabled && marketingChoice !== 'granted' && marketingChoice !== 'denied')) showChoice();
   view();
   window.addEventListener('hashchange', view);
 })();

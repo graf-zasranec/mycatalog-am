@@ -1,0 +1,3 @@
+import assert from'node:assert/strict';import fs from'node:fs';import os from'node:os';import path from'node:path';import{execFileSync}from'node:child_process';
+const file=path.join(os.tmpdir(),'better-variant-audit-'+process.pid+'.json');
+try{execFileSync(process.execPath,['tools/variant-audit.mjs','--report='+file],{stdio:'pipe'});const report=JSON.parse(fs.readFileSync(file));assert.ok(report.repairs.every(r=>r.before==null),'a parent/default product heading must not overwrite a populated child RAM choice');assert.ok(Array.isArray(report.titleConflicts),'contradictory headings remain review findings, not automatic repairs');console.log('VARIANT_AUDIT_MATRIX_GUARD_PASS');}finally{fs.rmSync(file,{force:true})}

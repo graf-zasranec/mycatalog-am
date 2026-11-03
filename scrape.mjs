@@ -1378,6 +1378,9 @@ if (process.argv[2] === '--selftest') {
     ['MacBook Pro 15.3 M4', 15], ['MacBook Pro 14 M5 Pro', 14],
     ['MacBook Pro M5 Max 16GB RAM', undefined],   // a capacity is not a screen
     ['MacBook Pro M5 512GB', undefined],
+    ['Lenovo LOQ 15irx10 i7-13 16/1TB RTX5050', undefined],
+    ['Lenovo laptop i7 13th Gen 16GB 1TB', undefined],
+    ['Lenovo 15.6 laptop i7-13 16GB 1TB', 15],
     ['Macbook Air M5 16/512 MDHE4LLA Midnight', undefined],   // 16 GB of memory, not a 16" Air
     ['Macbook Air M5 13 16/512 Midnight', 13],
     ['Macbook Pro 16 /M5 Pro/24GB RAM', 16]];                  // istyle: "16 /M5" is the screen, only "/digit" is memory               // ...and the screen still reads
@@ -1589,7 +1592,10 @@ function screenOf(title, id) {
   // A bare digit afterwards is NOT a reason to refuse any more: it was there to stop "14 2" being
   // read as a plain 14, and the decimal forms above now match that case themselves, first. Keeping
   // it also threw away "Macbook Air M5 13 16/512", where the 13 is exactly what we are after.
-  const m = String(title || '').match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\s*\d))/i);
+  // CPU generation labels such as i7-13 are not display diagonals. Remove the
+  // CPU token before scanning, retaining a separately stated screen in the title.
+  const screenTitle = String(title || '').replace(/\b(?:core\s*)?i[3579]\s*[- ]\s*\d{2,5}(?:th|[a-z]{0,3})?\b/gi, ' ');
+  const m = screenTitle.match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\s*\d))/i);
   if (!m) return undefined;
   return Math.trunc(parseFloat(m[1].replace(/[\s-]/, '.')));
 }

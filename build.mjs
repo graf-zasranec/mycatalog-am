@@ -10,6 +10,7 @@ import path from 'node:path';
 import { transformSync } from 'esbuild';
 import { pairs } from './tools/pairs.mjs';
 import { attachOfferConfigs } from './tools/offer-configs.mjs';
+import { photoQuality } from './tools/photo-quality.mjs';
 import { megabytePhoneMemory } from './tools/spec-values.mjs';
 import { goatScript } from './tools/analytics.mjs';
 import { prerender, productRenderer } from './tools/prerender.mjs';
@@ -162,63 +163,6 @@ const CUT = 'images/cut';
 const photoProductIds = new Set(phones.map(p => p.id));
 const cutFiles = fs.existsSync(CUT) ? fs.readdirSync(CUT).filter(f => f.endsWith('.webp') && photoProductIds.has(f.split('__')[0])) : [];
 
-// WebP width, read straight out of the header - the product page prefers the colour shot over
-// the main one, and 30 colour photos were a third of the main's resolution, so the card looked
-// sharp and the product page looked soft for the same phone. A colour shot that much worse is
-// not worth showing: dropping it falls back to the main, which is what the eye wants.
-function webpWidth(file) {
-  const b = fs.readFileSync(file, { encoding: null }).subarray(0, 40);
-  if (b.toString('ascii', 0, 4) !== 'RIFF') return 0;
-  const tag = b.toString('ascii', 12, 16);
-  if (tag === 'VP8X') return ((b[24] | (b[25] << 8) | (b[26] << 16)) + 1);
-  if (tag === 'VP8L') return ((b[21] | ((b[22] & 0x3f) << 8)) + 1);
-  if (tag === 'VP8 ') return b.readUInt16LE(26) & 0x3fff;
-  return 0;
-}
-const cutW = {};
-for (const f of cutFiles) { try { cutW[f] = webpWidth(`${CUT}/${f}`); } catch { cutW[f] = 0; } }
-
-// The photo backlog, published. Every build writes what still needs a picture to a file that
-// goes live with the site, so whoever is finding images can read the current list over HTTP
-// instead of being handed a stale copy:
-//     https://better.am/data/photos-needed.json
-//
-// Two different jobs, and they are not interchangeable. MISSING is a grey box on the page.
-// TOO SMALL needs a LARGER ORIGINAL and never an enlargement - a 545px picture stretched to 600
-// is the same picture with softer edges, which is the trade this floor exists to refuse.
-{
-  const FLOOR = 700;
-  const need = [];
-  const cuts = fs.readdirSync(CUT);
-  for (const p of phones) {
-    // a product shown by its colour photos alone (no __main) is not missing: the card uses them
-    const f = `${CUT}/${fs.existsSync(`${CUT}/${p.id}__main.webp`) ? `${p.id}__main.webp` : cuts.find(c => c.startsWith(p.id + '__')) || `${p.id}__main.webp`}`;
-    const shops = new Set(((PRICES.offers || {})[p.id] || []).map(o => o.shop)).size;
-    const row = { id: p.id, brand: p.brand, name: p.name, category: p.category, shops,
-                  // what to type into an image search to find the right thing
-                  query: `${p.brand} ${p.name}`.replace(/\s+/g, ' ').trim() };
-    if (!fs.existsSync(f)) { need.push({ ...row, what: 'missing', width: 0 }); continue; }
-    const w = webpWidth(f);
-    if (w && w < FLOOR) need.push({ ...row, what: 'too small', width: w });
-  }
-  // the ones people actually land on first: a missing photo costs most where the shops agree
-  need.sort((a, b) => (a.what === b.what ? 0 : a.what === 'missing' ? -1 : 1)
-    || b.shops - a.shops || (b.width ? 1 : 0) - (a.width ? 1 : 0) || a.id.localeCompare(b.id));
-  fs.writeFileSync('data/photos-needed.json', JSON.stringify({
-    generated: new Date().toISOString().slice(0, 10),
-    floorPx: FLOOR,
-    measurement: 'canvas width only',
-    note: 'too small needs a larger original, not an enlargement; canvas width does not establish visible-product resolution, model, finish or cutout quality. Run tools/photo-audit.py for visual-product quality review.',
-    total: phones.length,
-    missing: need.filter(n => n.what === 'missing').length,
-    tooSmall: need.filter(n => n.what === 'too small').length,
-    products: need,
-  }, null, 1));
-  console.log(`  photos-needed.json: ${need.filter(n => n.what === 'missing').length} missing, ` +
-              `${need.filter(n => n.what === 'too small').length} under ${FLOOR}px`);
-}
-
-
 // small: the 600 px copy where one exists. The product page wants the full-size colour shot;
 // the card cycling through the same colours in a 123 px box does not.
 // The same 600px floor tools/cutout.py mattes to; a floor of its own here would build cutouts the
@@ -254,6 +198,49 @@ function cutMap(inline, small) {
 const productImages = cutMap(false);
 const productImage = p => (p.colors || []).map(c => productImages[p.id]?.[colourSlug(c)]).find(Boolean)
   || productImages[p.id]?.main || Object.values(productImages[p.id] || {})[0] || null;
+
+// The photo backlog, published. Every build writes what still needs a picture to a file that
+// goes live with the site, so whoever is finding images can read the current list over HTTP
+// instead of being handed a stale copy:
+//     https://better.am/data/photos-needed.json
+//
+// Two different jobs, and they are not interchangeable. MISSING is a grey box on the page.
+// TOO SMALL needs a LARGER ORIGINAL and never an enlargement - a 545px picture stretched to 600
+// is the same picture with softer edges, which is the trade this floor exists to refuse.
+{
+  const FLOOR = 600;
+  const metrics = fs.existsSync('data/photo-native-metrics.json') ? JSON.parse(rd('data/photo-native-metrics.json')) : {};
+  const need = [];
+  for (const p of phones) {
+    // a product shown by its colour photos alone (no __main) is not missing: the card uses them
+    const f = productImage(p) || `${CUT}/${p.id}__main.webp`;
+    const shops = new Set(((PRICES.offers || {})[p.id] || []).map(o => o.shop)).size;
+    const row = { id: p.id, brand: p.brand, name: p.name, category: p.category, shops,
+                  // what to type into an image search to find the right thing
+                  query: `${p.brand} ${p.name}`.replace(/\s+/g, ' ').trim() };
+    if (!fs.existsSync(f)) { need.push({ ...row, what: 'missing', width: 0 }); continue; }
+    const quality = photoQuality(f, metrics);
+    if (quality.state !== 'adequate') need.push({ ...row, what: quality.state, file: f, ...quality });
+  }
+  // the ones people actually land on first: a missing photo costs most where the shops agree
+  need.sort((a, b) => (a.what === b.what ? 0 : a.what === 'missing' ? -1 : 1)
+    || b.shops - a.shops || (b.width ? 1 : 0) - (a.width ? 1 : 0) || a.id.localeCompare(b.id));
+  fs.writeFileSync('data/photos-needed.json', JSON.stringify({
+    generated: new Date().toISOString().slice(0, 10),
+    floorPx: FLOOR,
+    measurement: 'native visible product long edge, alpha > 128; SHA256-bound to cutout',
+    note: 'Images below600px visible native long edge need a larger exact original, never enlargement. Unmeasured/stale cutouts need tools/thumbnails.py. Identity, finish and cutout quality still require visual review.',
+    unmeasured: need.filter(n => n.what === 'unmeasured').length,
+    total: phones.length,
+    missing: need.filter(n => n.what === 'missing').length,
+    tooSmall: need.filter(n => n.what === 'too small').length,
+    products: need,
+  }, null, 1));
+  console.log(`  photos-needed.json: ${need.filter(n => n.what === 'missing').length} missing, ` +
+              `${need.filter(n => n.what === 'too small').length} under ${FLOOR}px visible body, ${need.filter(n => n.what === 'unmeasured').length} unmeasured`);
+}
+
+
 
 // The stylesheet must balance. One brace left open by a merge put every rule after it inside
 // "@media (max-width:760px)", and the whole desktop site shipped unstyled; one stray "}" makes a
@@ -376,11 +363,19 @@ if (AN) console.log(`visitor counter: ${AN.provider}`);
 if (AN?.provider === 'goatcounter') fs.writeFileSync('data/site-analytics.js', goatScript(AN.id));
 if (AN?.googleMeasurementId) {
   if (!/^G-[A-Z0-9]+$/.test(AN.googleMeasurementId)) throw new Error('Invalid Google Analytics measurement ID');
-  COUNTER.tag += `\n<script defer src="/data/site-google-analytics.js"><\/script>`;
+  COUNTER.tag += `\n<script defer src="/data/site-google-analytics.js" data-meta-pixel="${!!AN.metaPixelId}"><\/script>`;
   COUNTER.script.push('https://www.googletagmanager.com');
   COUNTER.img.push('https://www.googletagmanager.com', 'https://*.google-analytics.com');
   COUNTER.connect.push('https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.googletagmanager.com');
   fs.writeFileSync('data/site-google-analytics.js', rd('tools/google-analytics.js').replaceAll('G-VN0T8DTQWX', AN.googleMeasurementId));
+}
+if (AN?.metaPixelId) {
+  if (!/^\d+$/.test(AN.metaPixelId)) throw new Error('Invalid Meta Pixel ID');
+  COUNTER.tag += `\n<script defer src="/data/site-meta-pixel.js"><\/script>`;
+  COUNTER.script.push('https://connect.facebook.net');
+  COUNTER.connect.push('https://www.facebook.com');
+  COUNTER.img.push('https://www.facebook.com');
+  fs.writeFileSync('data/site-meta-pixel.js', rd('tools/meta-pixel.js').replaceAll('1658738078984776', AN.metaPixelId));
 }
 
 // DataFast (owner, 2026-10-09): their tag as given, on every page that carries COUNTER.tag

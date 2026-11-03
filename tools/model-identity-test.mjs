@@ -3,6 +3,20 @@ import fs from 'node:fs';
 import {specOfferAllowed} from './allsell-specs.mjs';
 import {attachOfferConfigs} from './offer-configs.mjs';
 
+// A matching processor does not make two fixed HP SKU/storage builds identical.
+for (const [id, wrong, right] of [
+  ['hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea', 'BG7H7EA', 'BM0Q2EA'],
+  ['hp-omnibook-5-16-ultra-7-255u-16-1-bk9y8ea', 'BG7H9EA', 'BK9Y8EA']
+]) {
+  assert.equal(specOfferAllowed({title:`HP OmniBook 5 16 /${wrong}`}, [], id), false);
+  assert.equal(specOfferAllowed({url:`https://www.zigzag.am/am/hp-omnibook-${wrong.toLowerCase()}.html`}, [], id), false);
+  assert.equal(specOfferAllowed({title:`HP OmniBook 5 16 /${right}`}, [], id), true);
+}
+for (const title of ['Honor X9c 8GB/256GB', 'Honor X9с 8GB/256GB', 'Honor X9b', 'Honor X9d'])
+  assert.equal(specOfferAllowed({title}, [], 'honor-x9'), false, 'newer X9 generations cannot price the original X9');
+assert.equal(specOfferAllowed({title:'Honor X9'}, [], 'honor-x9'), true);
+assert.equal(specOfferAllowed({title:'Honor X9с 8GB/256GB'}, [], 'honor-x9c'), true);
+
 // The production final offer gate must reject a generic HP 15 sold with a
 // different processor, including adapter IDs and offers carried from old caches.
 const target='hp-15-intel-core-5-120u';
@@ -109,3 +123,14 @@ const telecomRedmi='https://www.telecomarmenia.am/eshop/hy/smartphones/xiaomi-re
 assert.equal(matchPhone('Xiaomi Redmi Note 17 '+telecomRedmi),'xiaomi-redmi-note-17-4g','primary Snapdragon 6s 4G/LTE source must remain under the 4G model');
 assert.equal(matchPhone('Xiaomi Redmi Note 17 5G'),'xiaomi-redmi-note-17-5g','unrelated explicit 5G model stays separate');
 console.log('TELECOM_REDMI_LINK_PASS');
+// A review hold belongs to the incompatible catalogue model, not every legitimate model at that URL.
+const lteURL='https://shop.ucom.am/am/samsung-galaxy-a16.html';
+const ltePrimary={title:'Samsung Galaxy A16 LTE Helio G99',url:lteURL};
+assert.equal(specOfferAllowed(ltePrimary,actualHolds,'samsung-galaxy-a16'),false,'LTE source stays excluded from 5G');
+assert.equal(specOfferAllowed(ltePrimary,actualHolds,'samsung-galaxy-a16-4g'),true,'confirmed LTE source can belong to its correct 4G model');
+console.log('MODEL_SCOPED_HOLD_PASS');
+const wired530={shop:'zigzag',url:'https://www.zigzag.am/en/jbl-t530wht.html',title:'JBL T530WHT'};
+assert.equal(specOfferAllowed(wired530,actualHolds,'jbl-tune-530bt'),false,'wired T530 must not become the wireless 530BT minimum price');
+assert.equal(specOfferAllowed({...wired530,specReviewed:'2026-11-04'},actualHolds,'jbl-tune-530bt'),false,'a new price refresh cannot release the wrong hardware model');
+assert.equal(specOfferAllowed({title:'JBL Tune 530BT White'},[],'jbl-tune-530bt'),true,'actual wireless 530BT offers remain available');
+console.log('JBL_T530_IDENTITY_PASS');
