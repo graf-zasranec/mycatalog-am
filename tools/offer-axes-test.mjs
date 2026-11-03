@@ -1,5 +1,9 @@
 import assert from 'node:assert/strict';
 import {attachVerifiedOfferAxes} from './offer-configs.mjs';
+const vlvBeige={'jbl-tune-530bt':[{shop:'vlv',url:'https://vlv.am/en/Product/44159',color:null,price:29900}]};
+attachVerifiedOfferAxes(vlvBeige);
+assert.equal(vlvBeige['jbl-tune-530bt'][0].color,'Beige','exact VLV title T530BT BEG supplies Beige');
+assert.equal(vlvBeige['jbl-tune-530bt'][0].price,29900,'verified colour leaves price unchanged');
 const url='https://istyle.am/en/product/iPhone%2018%20Pro?color=138&variant=742_color_138&SIM=11';
 const facts={'apple-iphone-18-pro':[{url,shop:'istyle',checked:'2026-10-29',offerAxes:{storage:256}}]};
 const offer={shop:'istyle',url,storage:null,price:549000,esim:true,color:'Burgundy',seen:'2026-10-29'};

@@ -1671,6 +1671,16 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 .ft-categories a{color:var(--body);padding-block:4px}
 .ft-categories a:hover{color:var(--brand-2)}
 @media(max-width:800px){.ft-categories{gap:4px 16px}.ft-categories a{min-height:40px;display:inline-flex;align-items:center}}
+
+/* Compact filter disclosures: Category stays visible; all other groups are independent. */
+.bx-filter-fields{gap:0;padding:10px 14px}.bx-filter-section{min-width:0;border-top:1px solid var(--line)}
+.bx-filter-section>summary{display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 0;list-style:none;cursor:pointer;font-size:12px;font-weight:750}
+.bx-filter-section>summary::-webkit-details-marker{display:none}.bx-filter-section>summary::after{content:'+';margin-left:auto;font-size:18px;font-weight:500;color:var(--muted)}
+.bx-filter-section[open]>summary::after{content:'−'}.bx-filter-section>summary:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:5px}
+.bx-filter-content{padding:0 0 12px}.bx-filter-content legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.bx-filter-active{color:var(--brand);font-size:8px}.bx-spec-fields,.bx-flag-fields{gap:0}
+@media(max-width:800px){.bx-filter-fields{gap:0;padding:10px 18px}.bx-filter-section>summary{min-height:48px;font-size:14px}.bx-filter-content{padding-bottom:14px}}
+@media(max-width:800px){.bx-category-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.bx-category-choice{font-size:12px;gap:5px;padding:7px 5px}.bx-category-choice:has(input[value=""]){grid-column:1/-1}.bx-category-count{font-size:10px}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>

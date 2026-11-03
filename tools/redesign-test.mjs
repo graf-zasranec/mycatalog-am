@@ -5,7 +5,7 @@ const harness="import assert from 'node:assert/strict';\n"+fs.readFileSync('tool
  .replace('PMIN, PMAX };','PMIN, PMAX, bxFilterForm, bxFilterOptions, bxFilterSignature, bxHeroOffers, mastHero, bxPriceRange, routeLinkClick, priceBounds, bxFilterDraftHTML };');
 const checks=`
 const {prerender,productRenderer}=await import(${JSON.stringify(new URL('./prerender.mjs',import.meta.url).href)});
-const renderData={DATA:phones,STR,PRICES:prices,TERMS,HISTORY:stub.HISTORY,COMING:stub.COMING,PAGEONLY:{},MERGED:{},BLOG:[],IMGDATA:{},THUMBDATA:{},COLORIMG:{},COLORTHUMB:{},COMPARE_WITH:{}};
+const renderData={DATA:phones,STR,PRICES:prices,TERMS,HISTORY:stub.HISTORY,COMING:stub.COMING,PAGEONLY:{},MERGED:{},BLOG:[],IMGDATA:{},THUMBDATA:{},COLORIMG:{},COLORTHUMB:{},PBOX:{},COMPARE_WITH:{}};
 assert.ok(!prerender(renderData).main.includes('data-card-photo'),'standalone consumers retain native photos without the served boot loader');
 assert.ok(prerender(renderData,{deferPhotos:true}).main.includes('data-card-photo'),'served catalogue opts into controlled loading');
 assert.ok(!productRenderer(renderData)(null,'en').main.includes('data-card-photo'),'renderer defaults preserve single-file exports');
@@ -21,6 +21,13 @@ app.routeLinkClick({target:{closest:()=>link},button:0,ctrlKey:true,preventDefau
 assert.equal(prevented,false,'modified clicks retain normal browser behavior');
 app.filterBodies.clear();
 const form=app.bxFilterForm();
+assert.ok(form.includes('data-bx-section="brand"'),'brand filter has an independent disclosure');
+assert.ok(form.includes('data-bx-section="price"'),'price filter has an independent disclosure');
+assert.ok(!form.includes('data-bx-section="category"'),'first category section always stays visible');
+assert.ok(!/<details[^>]*data-bx-section="brand"[^>]*\\sopen/.test(form),'unused filters initially collapse');
+const productMarkup=productRenderer(renderData)(phones.find(p=>p.id==='jbl-tune-530bt'),'en').main;
+assert.ok(productMarkup.includes('id="offList"'),'product shop offers stay available');
+assert.ok(!productMarkup.includes('class="rail2"'),'redundant product price-range graphic removed');
 assert.ok(form.includes('data-bx-set="brand"'),'cold prerender hydration retains brand choices');
 assert.ok(app.filterBodies.has('price'),'native option bodies initialized without opening hidden panels');
 assert.ok(app.bxFilterOptions('stor').some(v=>v.value==='256'),'actual256GB option remains');
