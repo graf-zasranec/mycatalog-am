@@ -28,6 +28,7 @@ try {
   // Price changes write new hashes and fallback JSON, so stale staged versions fail.
   const staging=fs.readFileSync('.github/workflows/deploy.yml','utf8').split('\n').map(s=>s.trim()).filter(s=>s.startsWith('git add '));
   assert.equal(staging.length,2);
+  fs.writeFileSync(path.join(root,'data/photo-native-metrics.json'),'{"native":"sha-bound measurements"}');
   execFileSync('git',['init','--quiet'],{cwd:root});
   for(const command of staging){
     const args=command.slice(8).match(/'[^']+'|\S+/g).map(token=>token.replace(/^'|'$/g,''));
@@ -41,6 +42,7 @@ try {
     execFileSync('git',['read-tree','--empty'],{cwd:root});
     execFileSync('git',['add',...args],{cwd:root});
     assert.equal(releaseAssets(root,{staged:true}).length,7,'each nightly/rebase command stages every current payload');
+    assert.equal(execFileSync('git',['show',':data/photo-native-metrics.json'],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']}),'{"native":"sha-bound measurements"}','both publication paths preserve native measurements instead of resetting all photos to unmeasured');
   }
   console.log('RELEASE_ASSETS_TEST_PASS: omitted index/detail assets and unstaged files rejected');
 } finally { fs.rmSync(root,{recursive:true,force:true}); }

@@ -15287,7 +15287,7 @@
     ],
     "display": {
       "size": 16.3,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200 / 3840x2400"
     },
     "battery": {
       "capacity": 99.5
@@ -22896,8 +22896,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": 12,
-        "storage": 256,
+        "ram": null,
+        "storage": null,
         "priceAmd": 299000
       }
     ],
@@ -23686,7 +23686,7 @@
     "variants": [
       {
         "ram": 4,
-        "storage": 64,
+        "storage": null,
         "priceAmd": 39900
       }
     ],
@@ -53702,7 +53702,7 @@
     "variants": [
       {
         "ram": 3,
-        "storage": 64,
+        "storage": null,
         "priceAmd": 41900
       }
     ],
@@ -69405,7 +69405,7 @@
     "variants": [
       {
         "ram": 4,
-        "storage": 128,
+        "storage": null,
         "priceAmd": 94000
       }
     ],
@@ -87011,8 +87011,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": 0.00390625,
-        "storage": 0.00390625,
+        "ram": null,
+        "storage": null,
         "priceAmd": 20000
       }
     ],
