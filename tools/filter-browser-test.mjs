@@ -18,13 +18,17 @@ for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
   await page.goto(base+(lang==='hy'?'/':`/${lang}/`));
   await page.waitForFunction(()=>document.documentElement.dataset.appReady==='true');
   const form=page.locator('.bx-filter-form');
+  const openSection=async key=>{const section=form.locator(`[data-bx-section="${key}"]`);if(await section.getAttribute('open')===null)await section.locator('summary').click();};
   if(width<800)await page.locator('[data-bx-mobile-category]').click();
   const cards=await page.locator('.pcard').evaluateAll(els=>els.map(e=>e.dataset.id));
   await form.locator('.bx-category-choice:has(input[value="headphones"])').click();
   assert.equal(await form.locator('[data-bx-set="brand"] input[value="Dell"]').count(),0,'category draft removes unrelated brands');checks++;
   assert.ok(await form.locator('[data-bx-set="hform"]').count(),'headphone type appears before Apply');checks++;
   assert.deepEqual(await page.locator('.pcard').evaluateAll(els=>els.map(e=>e.dataset.id)),cards,'draft leaves results unchanged');checks++;
+  await openSection('brand');
+  assert.ok(await form.locator('[data-bx-set="brand"] input[value="Apple"]').isVisible(),'expanded brand controls are accessible');checks++;
   await form.locator('[data-bx-set="brand"] input[value="Apple"]').check();
+  await openSection('price');
   await form.locator('[data-bx-budget="100000"]').click();
   await form.locator(width<800?'.bx-apply':'.bx-filter-quick').click();
   await page.waitForURL(/#\/c\/headphones$/);
@@ -38,6 +42,7 @@ for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
   await form.locator('[data-rm="all"]').click();
   await form.locator('.bx-category-choice:has(input[value="laptop"])').click();
   assert.ok(await form.locator('[data-bx-set="cpu"]').count(),'laptop CPU appears in draft');checks++;
+  await openSection('price');
   await form.locator('[data-bx-max]').fill('1000000');
   await form.locator('[data-bx-min]').fill('1200000');
   await form.locator(width<800?'.bx-apply':'.bx-filter-quick').click();
