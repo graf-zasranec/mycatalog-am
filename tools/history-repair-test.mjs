@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+assert.ok(fs.existsSync('tools/history-repair.mjs'),'history repair must require dated source evidence');
+const {repairProductHistory}=await import('./history-repair.mjs');
+const wired={shop:'zigzag',title:'JBL T530WHT',url:'https://www.zigzag.am/en/jbl-t530wht.html',price:13900};
+const snapshots=[{date:'2026-10-11',revision:'a'.repeat(40),generated:'2026-10-11T12:00:00Z',offers:[wired,{shop:'vlv',title:'JBL T530BT BEG',url:'https://vlv.am/en/Product/44159',price:23900},{shop:'mobilecentre',title:'JBL Tune 530 BT White',url:'https://mobilecentre.am/530-bt',price:24900}]}];
+const history={updated:'2026-11-03',points:{'jbl-tune-530bt':[{d:'2026-10-11',lo:13900,hi:24900,shops:3,t:{base:13900}}],other:[{d:'2026-10-11',lo:13900,hi:13900,shops:1}]}};
+const result=repairProductHistory(history,'jbl-tune-530bt',snapshots);
+assert.deepEqual(result.points['jbl-tune-530bt'],[{d:'2026-10-11',lo:23900,hi:24900,shops:2,t:{base:23900}}]);
+assert.deepEqual(result.points.other,history.points.other,'same price on another model is not evidence of an error');
+assert.equal(history.points['jbl-tune-530bt'][0].lo,13900,'original input remains intact');
+assert.throws(()=>repairProductHistory(history,'jbl-tune-530bt',[{...snapshots[0],generated:'2026-10-12T00:00:00Z'}]),/date/i);
+assert.throws(()=>repairProductHistory(history,'jbl-tune-530bt',[{...snapshots[0],date:'2026-10-12',generated:'2026-10-12T00:00:00Z'}]),/recorded/i,'do not invent missing days');
+assert.throws(()=>repairProductHistory(history,'jbl-tune-530bt',[{...snapshots[0],offers:[wired]}]),/valid/i);
+assert.throws(()=>repairProductHistory(history,'jbl-tune-530bt',[{...snapshots[0],offers:[{...wired,title:'JBL 530',url:'https://example.test/unknown'}]}]),/identity/i);
+console.log('HISTORY_REPAIR_PASS: dated source quotes, correct minima/tiers, no invented days and unrelated history preserved');

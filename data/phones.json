@@ -2579,7 +2579,7 @@
     "variants": [
       {
         "ram": 8,
-        "storage": null,
+        "storage": 512,
         "priceAmd": 524900,
         "size": 11
       },
@@ -5277,7 +5277,7 @@
     "variants": [
       {
         "ram": 16,
-        "storage": null,
+        "storage": 512,
         "priceAmd": 669000
       }
     ],
@@ -15287,7 +15287,7 @@
     ],
     "display": {
       "size": 16.3,
-      "resolution": "1920x1200 / 3840x2400"
+      "resolution": "1920x1200"
     },
     "battery": {
       "capacity": 99.5
@@ -22896,8 +22896,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 12,
+        "storage": 256,
         "priceAmd": 299000
       }
     ],
@@ -23237,7 +23237,7 @@
     "variants": [
       {
         "ram": 6,
-        "storage": null,
+        "storage": 128,
         "priceAmd": 119900
       }
     ],
@@ -23686,7 +23686,7 @@
     "variants": [
       {
         "ram": 4,
-        "storage": null,
+        "storage": 64,
         "priceAmd": 39900
       }
     ],
@@ -23751,7 +23751,7 @@
     "variants": [
       {
         "ram": 6,
-        "storage": null,
+        "storage": 256,
         "priceAmd": 49900
       }
     ],
@@ -27760,11 +27760,6 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
-      {
-        "ram": 2,
-        "storage": null,
-        "priceAmd": 99900
-      },
       {
         "ram": 2,
         "storage": 32,
@@ -36656,7 +36651,7 @@
     "variants": [
       {
         "ram": 12,
-        "storage": null,
+        "storage": 256,
         "priceAmd": 289900
       }
     ],
@@ -50128,7 +50123,7 @@
     "variants": [
       {
         "ram": 8,
-        "storage": null,
+        "storage": 256,
         "priceAmd": 239900
       }
     ],
@@ -50199,7 +50194,7 @@
     "variants": [
       {
         "ram": 8,
-        "storage": null,
+        "storage": 128,
         "priceAmd": 189900
       }
     ],
@@ -51286,7 +51281,7 @@
     "variants": [
       {
         "ram": 4,
-        "storage": null,
+        "storage": 64,
         "priceAmd": 55900
       }
     ],
@@ -51429,7 +51424,7 @@
     "variants": [
       {
         "ram": 8,
-        "storage": null,
+        "storage": 256,
         "priceAmd": 174900
       }
     ],
@@ -53707,7 +53702,7 @@
     "variants": [
       {
         "ram": 3,
-        "storage": null,
+        "storage": 64,
         "priceAmd": 41900
       }
     ],
@@ -54113,7 +54108,7 @@
     "variants": [
       {
         "ram": 8,
-        "storage": null,
+        "storage": 256,
         "priceAmd": 139900
       }
     ],
@@ -54188,7 +54183,7 @@
     "variants": [
       {
         "ram": 6,
-        "storage": null,
+        "storage": 64,
         "priceAmd": 69900
       }
     ],
@@ -54259,7 +54254,7 @@
     "variants": [
       {
         "ram": 4,
-        "storage": null,
+        "storage": 64,
         "priceAmd": 76900
       }
     ],
@@ -54333,7 +54328,7 @@
     "variants": [
       {
         "ram": 8,
-        "storage": null,
+        "storage": 128,
         "priceAmd": 175900
       }
     ],
@@ -54404,7 +54399,7 @@
     "variants": [
       {
         "ram": 6,
-        "storage": null,
+        "storage": 64,
         "priceAmd": 99900
       }
     ],
@@ -69410,7 +69405,7 @@
     "variants": [
       {
         "ram": 4,
-        "storage": null,
+        "storage": 128,
         "priceAmd": 94000
       }
     ],
@@ -69505,11 +69500,6 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
-      {
-        "ram": 32,
-        "storage": null,
-        "priceAmd": 1899000
-      },
       {
         "ram": 32,
         "storage": 2048,
@@ -87021,8 +87011,8 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
-        "storage": null,
+        "ram": 0.00390625,
+        "storage": 0.00390625,
         "priceAmd": 20000
       }
     ],
