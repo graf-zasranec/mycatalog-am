@@ -17,6 +17,7 @@
 // a phone with no offers keeps its estimated price in phones.json and is labelled as such.
 
 import fs from 'node:fs';
+import {vlvTitleColor, applyVlvTitleColors} from './tools/vlv-colors.mjs';
 import {parseCsv} from './tools/hand-csv.mjs';
 import {istyleVariants} from './tools/istyle-variants.mjs';
 import { spawn } from 'node:child_process';
@@ -2320,7 +2321,7 @@ const SHOPS = {
         // the gallery first; the page's own advertised picture only if the gallery is empty
         const img = (live.image && safeUrl(live.image))
           || safeUrl(String((Array.isArray(p.image) ? p.image[0] : p.image) || '')) || null;
-        out.push({ id, price, title, url: u, image: img,
+        out.push({ id, price, title, url: u, image: img, ...vlvTitleColor(title, (phoneById[id] || {}).colors),
           storage: storageOf(title), ram: ramOf(title),
           inStock: !/OutOfStock|SoldOut/i.test(String((o && o.availability) || '')) });
       }
@@ -3298,6 +3299,9 @@ try {
     if (c?.length) for (const o of list) if (o.color && !c.includes(o.color)) { o.color = null; q++; } }
   if (q) console.log(`${q} offer colour(s) the product does not come in - left unstated`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
+// Re-read authoritative VLV titles after generic palette quarantine, including carried rows.
+const vlvColorChanges = applyVlvTitleColors(phones, offers, JSON.parse(fs.readFileSync('data/color-aliases.json','utf8')));
+if(vlvColorChanges.length) console.log(`${vlvColorChanges.length} VLV finish label(s) preserved from merchant titles`);
 // Which colours a page really sells, per capacity, read off the page by a person (owner,
 // 2026-09-27): allsell's Flip 7 page is black only, ucom's S25+ has no Icyblue at 512. An offer in
 // another colour is dropped; one naming no colour becomes one row per listed colour.

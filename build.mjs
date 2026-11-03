@@ -5,6 +5,7 @@
 // Run: node build.mjs
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
+import {applyVlvTitleColors} from './tools/vlv-colors.mjs';
 import crypto from 'node:crypto';
 import path from 'node:path';
 import { transformSync } from 'esbuild';
@@ -43,6 +44,7 @@ const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json'))
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
 assertCatalogueData(phones, PRICES.offers || {});
 attachOfferConfigs(phones, PRICES.offers || {});
+applyVlvTitleColors(phones, PRICES.offers || {}, fs.existsSync('data/color-aliases.json') ? JSON.parse(rd('data/color-aliases.json')) : {});
 // Popularity nobody set (unsure) was a flat default of 40 on 1,100 products, so "popular" sorted
 // them in file order. How many shops stock a product is a real, nightly-updated signal: 1 shop -> 20,
 // 8+ -> 60. A number somebody set by hand is never touched.
