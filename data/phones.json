@@ -14672,7 +14672,13 @@
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-165U"
-    }
+    },
+    "body": {
+      "weight": 1400
+    },
+    "sources": [
+      "https://www.bhphotovideo.com/c/product/1835958-REG/dell_n2y94_14_latitude_5450_ultra.html"
+    ]
   },
   {
     "id": "dell-plus-16-db16250",
@@ -23090,6 +23096,11 @@
     "variants": [
       {
         "ram": 16,
+        "storage": 512,
+        "priceAmd": 364900
+      },
+      {
+        "ram": 16,
         "storage": 1024,
         "priceAmd": 369900
       }
@@ -23115,7 +23126,8 @@
     },
     "sources": [
       "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://shop.ucom.am/am/honor-magicbook-x16-2026.html"
     ]
   },
   {
@@ -31680,6 +31692,11 @@
         "ram": 16,
         "storage": 1024,
         "priceAmd": 499900
+      },
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 459900
       }
     ],
     "display": {
@@ -31703,7 +31720,8 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83HS002SRK",
-      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IRH10?M=83HS002SRK"
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IRH10?M=83HS002SRK",
+      "https://www.regard.ru/api/site/files/goodspdf/download/13400"
     ],
     "os": "No OS"
   },
@@ -54197,6 +54215,10 @@
     "accent": "#5C6470",
     "variants": [
       {
+        "ram": 6,
+        "storage": 128
+      },
+      {
         "ram": 8,
         "storage": 256,
         "priceAmd": 139900
@@ -54252,7 +54274,8 @@
     "released": "2021-03",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-10662.php"
+      "https://www.gsmarena.com/a-10662.php",
+      "https://mobilecentre.am/product/xiaomi-redmi-note-10-pro/16618/"
     ],
     "colors": [
       "Black",
@@ -63242,7 +63265,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.4"
-    }
+    },
+    "body": {
+      "weight": 5300
+    },
+    "sources": [
+      "https://www.harmankardon.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw780088b3/pdfs/LS_HK_SoundSticks_5_Black_Spec_Sheet_EN.pdf"
+    ]
   },
   {
     "id": "jbl-partybox-encore-2",
@@ -63870,7 +63899,13 @@
     ],
     "connectivity": {
       "bluetooth": "4.2"
-    }
+    },
+    "body": {
+      "weight": 890
+    },
+    "sources": [
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw8a8a7448/pdfs/Specification%20Sheet%20-%20Horizon%20%28English%29.pdf"
+    ]
   },
   {
     "id": "jbl-flip-essential-2",
@@ -68385,11 +68420,16 @@
     "chipset": {
       "name": "AMD Ryzen AI 7 445"
     },
-    "body": {},
+    "body": {
+      "weight": 1500
+    },
     "colors": [
       "White"
     ],
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "sources": [
+      "https://www.asus.com/laptops/for-home/zenbook/asus-zenbook-s-16-um5606/techspec/"
+    ]
   },
   {
     "id": "honor-magicbook-x16-ultra-5-125h-w11h-5301argm",
@@ -78066,7 +78106,13 @@
       "name": "Nvidia Geforce RTX 3060 6GB",
       "type": "discrete"
     },
-    "os": "Windows 11 Home"
+    "os": "Windows 11 Home",
+    "body": {
+      "weight": 2418
+    },
+    "sources": [
+      "https://files.bbystatic.com/B7GiWyTaUN0ckFH1IQIIog%3D%3D/Datasheet"
+    ]
   },
   {
     "id": "hp-omen-17-db1000-gaming-ryzen-ai-9",
@@ -81172,7 +81218,13 @@
     },
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "body": {
+      "weight": 6.8
+    },
+    "sources": [
+      "https://jp.jbl.com/JBLLIVE300TWSWHT.html"
+    ]
   },
   {
     "id": "lenovo-ideapad-5-2-in-1-14ial10-ultra-7-255u",
@@ -83463,7 +83515,13 @@
     },
     "specNA": {
       "chipset.name": "HP model 17-dp0105dx not found in any spec sheet (checked 2026-10-23)"
-    }
+    },
+    "body": {
+      "weight": 2009
+    },
+    "sources": [
+      "https://files.bbystatic.com/ykmeHGuBhj7PwCjZ%2F1xxMQ%3D%3D/e14e0b00-29e0-4276-8f8b-2c0cbad01183.pdf"
+    ]
   },
   {
     "id": "hp-omnibook-5-flip-14-fp0023dx",
@@ -84052,11 +84110,15 @@
     "os": "Windows 11",
     "summaryEn": "HP Pavilion 15-eg3040ci with Intel Core i3-1315U.",
     "sources": [
-      "https://appzone.am/en/Assortment/pavilion-15-eg3040ci/"
+      "https://appzone.am/en/Assortment/pavilion-15-eg3040ci/",
+      "https://www.knsneva.ru/product/noutbuk-hp-pavilion-15-eg3040ci-wpro/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1740
+    }
   },
   {
     "id": "hp-348-g7",
@@ -84093,11 +84155,15 @@
     "os": "Windows 11",
     "summaryEn": "HP 348 G7 Core i3-10110U with Intel Core i3-10110U.",
     "sources": [
-      "https://appzone.am/en/Assortment/laptop-348-g7/"
+      "https://appzone.am/en/Assortment/laptop-348-g7/",
+      "https://kaas.hpcloud.hp.com/pdf-public/pdf_12668078_en-US-1.pdf"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 1500
+    }
   },
   {
     "id": "xiaomi-bluetooth-speaker-essential",
@@ -86644,13 +86710,17 @@
     "battery": {},
     "summaryEn": "JBL SoundBar SB270.",
     "sources": [
-      "https://likemobile.am/en/jbl-soundbar-sb270"
+      "https://likemobile.am/en/jbl-soundbar-sb270",
+      "https://in.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf8696e0c/pdfs/HA_JBL_Bar%20Cinema_SB270_QSG_Global_CR_V5_BT51.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "4.2"
+    },
+    "body": {
+      "weight": 1700
     }
   },
   {
@@ -86895,13 +86965,17 @@
     "battery": {},
     "summaryEn": "Harman Kardon Omni 10+.",
     "sources": [
-      "https://likemobile.am/en/harman-kardon-omni-10"
+      "https://likemobile.am/en/harman-kardon-omni-10",
+      "https://support.harmankardon.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwc52bba48/pdfs/HK_Omni10%2B_Spec_Sheet_English.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 1333
     }
   },
   {
@@ -90588,7 +90662,8 @@
     "summaryEn": "Hisense HS3100.",
     "sources": [
       "https://vlv.am/en/Product/33176",
-      "https://qrcode.hisense.com/appliance/20014434?lang=en"
+      "https://qrcode.hisense.com/appliance/20014434?lang=en",
+      "https://partners.gorenje.com/fts/GetDigitDoc.aspx?docName=hisense+hs3100_user+manual_un.pdf&jezik=en&sifra=20014434&tipVsebine=1"
     ],
     "unsure": [
       "popularity"
@@ -90597,7 +90672,7 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 5730
+      "weight": 1600
     }
   },
   {
@@ -103326,7 +103401,8 @@
     "sources": [
       "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_white_/23497/",
       "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_blue_/23496/",
-      "https://www.nokia.com/sites/default/files/2023-11/nokia-cat-e3500-v4-20200704.pdf"
+      "https://www.nokia.com/sites/default/files/2023-11/nokia-cat-e3500-v4-20200704.pdf",
+      "https://prod.nokia.com/sites/default/files/2023-11/nokia-essential-truewireless-earphones-e3500-user-guide.pdf"
     ],
     "unsure": [
       "popularity"
@@ -103335,7 +103411,8 @@
       "bluetooth": "5.0"
     },
     "body": {
-      "ip": "IPX5"
+      "ip": "IPX5",
+      "weight": 5
     }
   },
   {
