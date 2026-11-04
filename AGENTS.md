@@ -19,6 +19,9 @@ If the graph is missing or stale, update a focused project area; do not scan the
 # Brand approval
 
 - Always ask the user for approval before adding any new brand to Better.am, including during shop imports. Existing brands may receive new models within the approved scope.
-- Belkin and Gorenje are explicitly excluded by the user. Do not import or republish their products without new explicit approval.
+- Belkin power banks are explicitly approved by the user on 2026-11-04. Prepare exact models sold by Armenian retailers; other Belkin product categories still require approval.
+- Gorenje is explicitly approved by the user on 2026-11-04. The user requested keeping and refreshing all 41 existing Gorenje offers. This supersedes the earlier Gorenje exclusion; other new brands still require approval.
 
 - The user explicitly approved these six additional brands on 2026-10-19: Amazfit, SMEG, Bang & Olufsen, Bowers & Wilkins, Motorola and ViewSonic. Follow the scoped product list in `.codex/reports/2026-10-18-check/NEW-BRANDS-FOR-CODEX.md`; other new brands still require approval.
+
+- 2026-11-04 catalogue scope: the user requested professional cameras and Xiaomi/Redmi power banks, alongside Belkin power banks. Verify exact model/variant, live offer, specifications and product photo before publishing.
