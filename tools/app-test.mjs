@@ -448,6 +448,11 @@ is(app.keepsQuery('/c/phone'), false, 'nor does a category');
   for (const key of ['f.wireless','f.ram','f.storage','f.front_cam']) is(app.specAllowed(key, {category:'appliance'}), false, 'vacuum omits inapplicable '+key);
   for (const key of ['f.main_cam', 'f.video', 'f.storage']) is(app.specAllowed(key, {category:'smartglasses'}), true, 'smart glasses support '+key);
   for (const key of ['f.front_cam', 'f.ram', 'f.screen_size', 'f.sim']) is(app.specAllowed(key, {category:'smartglasses'}), false, 'smart glasses omit '+key);
+  for (const key of ['f.capacity', 'f.charging', 'f.wireless'])
+    is(app.specAllowed(key, {category:'powerbank'}), true, 'power bank shows '+key);
+  for (const key of ['f.main_cam', 'f.video', 'f.screen_size', 'f.touch', 'f.chipset'])
+    is(app.specAllowed(key, {category:'camera'}), true, 'camera shows '+key);
+  is(app.specAllowed('f.front_cam', {category:'camera'}), false, 'camera omits phone selfie spec');
   for (const lang of ['hy', 'ru', 'en']) {
     const before = app.st.lang; app.st.lang = lang;
     is(app.addLabel(p), STR[lang]['compare.add_phone'], `comparison uses product wording (${lang})`);

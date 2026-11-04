@@ -15,6 +15,7 @@ const KEY = {
   watch: ['display.size'],
   headphones: ['audio.form', 'connectivity.bluetooth'],
   speaker: ['connectivity.bluetooth'],
+  powerbank: ['battery.capacity'],
 };
 // --all adds weight and battery mAh (the second pass, owner 2026-10-02: "finish specs")
 if (process.argv.includes('--all')) {

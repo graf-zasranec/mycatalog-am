@@ -7,6 +7,7 @@ for(const [type,field] of [['fridge','appliance.volume'],['freezer','appliance.v
 }
 assert.deepEqual(requiredSpecFields({category:'grooming'}),['appliance.type']);
 assert.ok(requiredSpecFields({category:'phone'}).includes('camera.main'));
+assert.deepEqual(requiredSpecFields({category:'powerbank'}), ['battery.capacity']);
 assert.ok(requiredSpecFields({category:'largeappliance',appliance:{type:'fridge',volumeByVariant:{A:341,B:344}}}).includes('appliance.volumeByVariant'));
 assert.ok(requiredSpecFields({category:'largeappliance',appliance:{type:'fridge',volumeByVariant:{A:'unknown'}}}).includes('appliance.volume'));
 console.log('SPEC_GAPS_TEST_PASS: large appliance core fields and dishwasher/load separation');
