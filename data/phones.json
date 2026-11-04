@@ -66758,8 +66758,14 @@
       "form": "tws",
       "conn": "wireless"
     },
-    "specNA": {
-      "connectivity.bluetooth": "two generations sold under this name (Flash 4.2, Flash X 5.0); the shop does not say which (2026-10-03)"
+    "body": {
+      "weight": 6.8
+    },
+    "sources": [
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw8c82da75/pdfs/JBL_UA_True_Wireless_Streak_SpecSheet_English.pdf"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
     }
   },
   {
@@ -87222,7 +87228,7 @@
     ],
     "display": {},
     "battery": {
-      "life": "8 hours"
+      "life": "7+ hours"
     },
     "audio": {
       "form": "over-ear",
@@ -87232,13 +87238,17 @@
     "summaryEn": "Sony PS4 Gold Wireless Headset.",
     "sources": [
       "https://likemobile.am/en/ps4-wireless-headset-gold",
-      "https://likemobile.am/en/ps4-wireless-headset-black"
+      "https://likemobile.am/en/ps4-wireless-headset-black",
+      "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/accessories/ps4-accessories/wireless-headset-cuhya-0081/CUHYA-0080-2%24en.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 230
     }
   },
   {
@@ -103615,13 +103625,17 @@
     },
     "summaryEn": "Samsung Gear Circle.",
     "sources": [
-      "https://mobilecentre.am/product/samsung-headphone-bluetooth-gear-circle-_white_/19098/"
+      "https://mobilecentre.am/product/samsung-headphone-bluetooth-gear-circle-_white_/19098/",
+      "https://www.samsung.com/sec/support/model/SM-R130NZKAKOO/"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
-      "bluetooth": "4.1"
+      "bluetooth": "3.0"
+    },
+    "body": {
+      "weight": 28
     }
   },
   {
