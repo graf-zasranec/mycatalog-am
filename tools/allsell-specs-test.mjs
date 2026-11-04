@@ -21,3 +21,10 @@ assert.equal(specOfferAllowed({url,specReviewed:'2026-10-23'},holds),true,'a lat
 assert.equal(specOfferAllowed({url,specReviewed:'2026-10-23',specConflict:['ram']},holds),false);
 assert.equal(specOfferAllowed({url:url.replace('/en/','/am/')},holds),false,'locale aliases cannot bypass a hold');
 assert.equal(specOfferAllowed({url:url+'-another'},holds),true,'another SKU is not suppressed');
+
+const sharedUrl='https://www.pixel.am/am/product/example';
+const variantHold=[{id:'example',url:sharedUrl,checked:'2026-11-04',configuration:{ram:12,storage:512}}];
+assert.equal(specOfferAllowed({id:'example',url:sharedUrl,ram:12,storage:512},variantHold),false);
+assert.equal(specOfferAllowed({id:'example',url:sharedUrl,ram:16,storage:512},variantHold),true);
+assert.equal(specOfferAllowed({id:'example',url:sharedUrl,ram:12,storage:256},variantHold),true);
+assert.equal(specOfferAllowed({id:'example',url:sharedUrl,ram:12,storage:512,specReviewed:'2026-11-04'},variantHold),true);

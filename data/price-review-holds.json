@@ -60,5 +60,73 @@
     "sources": [
       "https://www.pixel.am/am/product/dji-osmo-pocket-4"
     ]
+  },
+  {
+    "id": "xiaomi-redmi-12",
+    "url": "https://shop.ucom.am/en/xiaomi-redmi-12.html",
+    "checked": "2026-11-04",
+    "configuration": {
+      "ram": 4,
+      "storage": 256
+    },
+    "reason": "The retailer displays 4 GB RAM alongside separate 128 GB and 256 GB choices, without a SKU tying 4 GB to 256 GB. Xiaomi lists 4/128, 8/128 and 8/256.",
+    "sources": [
+      "https://www.mi.com/global/product/redmi-12/specs/",
+      "https://shop.ucom.am/en/xiaomi-redmi-12.html"
+    ],
+    "sourceRows": [
+      {
+        "title": "Xiaomi Redmi 12",
+        "color": null,
+        "price": 82900
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-poco-f8-ultra",
+    "url": "https://www.pixel.am/am/product/xiaomi-poco-f8-ultra",
+    "checked": "2026-11-04",
+    "configuration": {
+      "ram": 12,
+      "storage": 512
+    },
+    "reason": "Pixel explicitly lists 12/512 GB. Xiaomi lists 12/256 and 16/512. Await an exact retailer hardware SKU before publishing this pair.",
+    "sources": [
+      "https://www.mi.com/global/product/poco-f8-ultra/specs/",
+      "https://www.pixel.am/am/product/xiaomi-poco-f8-ultra"
+    ],
+    "sourceRows": [
+      {
+        "title": "Xiaomi Poco F8 Ultra",
+        "color": "Denim Blue",
+        "price": 369000
+      },
+      {
+        "title": "Xiaomi Poco F8 Ultra",
+        "color": "Black",
+        "price": 369000
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-pad-2-9-7",
+    "url": "https://www.pixel.am/am/product/xiaomi-redmi-pad-2-9-7",
+    "checked": "2026-11-04",
+    "configuration": {
+      "ram": 8,
+      "storage": 256
+    },
+    "reason": "Pixel lists 8/256 GB for its 4G variant. Xiaomi lists only 64 GB and 128 GB storage for the 9.7-inch 4G model. Await an exact retailer hardware SKU.",
+    "sources": [
+      "https://www.mi.com/global/support/faq/details/KA-692184/",
+      "https://www.pixel.am/am/product/xiaomi-redmi-pad-2-9-7"
+    ],
+    "sourceRows": [
+      {
+        "title": "Xiaomi Redmi Pad 2 9.7",
+        "color": null,
+        "price": 119000
+      }
+    ]
   }
 ]

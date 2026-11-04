@@ -86,6 +86,8 @@ export function specOfferAllowed(offer, holds, id = offer.id) {
   if (!modelIdentityAllowed(id, offer)) return false;
   if (offer.specConflict?.length) return false;
   const key=u=>String(u||'').replace(/\/+$/,'').replace(/^(https?:\/\/[^/]+)\/(?:en|am|ru)\//,'$1/');
-  const hold=holds.find(row=>(!row.id || row.id===id) && key(row.url)===key(offer.url));
-  return !hold || (/^\d{4}-\d{2}-\d{2}$/.test(offer.specReviewed||'') && offer.specReviewed>=hold.checked);
+  const reviewed = /^\d{4}-\d{2}-\d{2}$/.test(offer.specReviewed || '');
+  return !holds.some(row => (!row.id || row.id === id) && key(row.url) === key(offer.url)
+    && (!row.configuration || (row.configuration.ram === offer.ram && row.configuration.storage === offer.storage))
+    && (!reviewed || offer.specReviewed < row.checked));
 }
