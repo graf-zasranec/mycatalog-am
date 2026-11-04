@@ -50,7 +50,7 @@ jobs:
 
       - name: Re-read every hand row (price, date, sold out)
         timeout-minutes: 200
-        run: node tools/confirm-hand.mjs --recheck 1 --drop-gone
+        run: node tools/confirm-hand.mjs --recheck 1 --hide-gone
 
       - name: Sold-out sweep of every offer
         id: sweep

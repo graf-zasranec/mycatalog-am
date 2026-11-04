@@ -70,7 +70,7 @@ await Promise.all([
     .then(() => process.env.CI ? null : runAsync(python, ['tools/check-links.py', '--all'])),
 ]);
 const limit = process.env.BETTER_ROW_LIMIT;
-run(process.execPath, ['tools/confirm-hand.mjs', '--recheck', '1', ...(limit ? ['--limit', limit] : []), '--drop-gone']);
+run(process.execPath, ['tools/confirm-hand.mjs', '--recheck', '1', ...(limit ? ['--limit', limit] : []), '--hide-gone']);
 // Rebuilds data/soldout.json from every offer's own page (owner, 2026-10-16): it had not run since
 // 2026-10-05, so pages that sold out later kept their price on the site. Resumable, non-fatal.
 // GitHub runs it in its own job (stock-check.yml): the refresh there is already close to 6 hours.

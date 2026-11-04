@@ -2296,15 +2296,14 @@ const SHOPS = {
       // the shop still reports prices instead of nothing.
       const SEEDS = ['44014', '41419', '39879'];
       const out = [];
-      // A product VLV has withdrawn stays in the index for ever and is asked for again every
-      // night: ten of them 404'd in one run, which is ten requests and ten warnings for pages
-      // that will never come back. A 404 takes the id out of the index; anything else - a
-      // timeout, a 500 - leaves it alone, because that is the shop having a bad moment.
-      const withdrawn = [];
       for (const vid of (ids.length ? ids : SEEDS)) {
         const u = `https://vlv.am/en/Product/${vid}`;
         const html = await get(u); await sleep(DELAY_MS);
-        if (!html && lastStatus() === 404) withdrawn.push(vid);
+        // Suppress a missing destination in the offer output, retaining its
+        // index entry so the same URL can recover on a later check.
+        if (!html && [404, 410].includes(lastStatus()) && index[vid]) {
+          out.push({id: matchPhone(index[vid]), title: index[vid], url: u, price: 0, inStock: false});
+        }
         if (!html || !safeUrl(u)) continue;
         const p = ldProduct(html), o = ldOffer(p);
         const title = clean((p && p.name) || (html.match(/<title>([^<]*)<\/title>/) || [])[1] || '')
@@ -2324,11 +2323,6 @@ const SHOPS = {
         out.push({ id, price, title, url: u, image: img, ...vlvTitleColor(title, (phoneById[id] || {}).colors),
           storage: storageOf(title), ram: ramOf(title),
           inStock: !/OutOfStock|SoldOut/i.test(String((o && o.availability) || '')) });
-      }
-      if (withdrawn.length) {
-        for (const vid of withdrawn) delete index[vid];
-        try { fs.writeFileSync(IDX, JSON.stringify(index)); } catch { }
-        console.log(`  ${withdrawn.length} product(s) withdrawn by the shop, dropped from ${IDX}`);
       }
       return out;
     }
@@ -2754,6 +2748,7 @@ if (process.argv.includes('--probe')) {
   process.exit(0);
 }
 const sourceUnavailable = new Set();
+const hiddenHandUrls = new Set();
 // Fetch first, several shops at once (owner, 2026-10-16: the nightly run hit GitHub's 6-hour cap).
 // Each shop is still asked one page at a time at its own pace - only different shops overlap.
 // The results are then processed below in the usual order, so the output does not change.
@@ -2878,10 +2873,13 @@ try {
     .map(fields => { const [shop, title, cap, color, url, price, ram, check, seen, inStock] = fields; return { shop, title, cap, color, url, price, ram, check, seen, inStock }; });
   // hand rows are not a crawl: their misses go to data/hand-unmatched.txt, not under whichever
   // shop the crawl read last (that filed Zigzag's titles under Vega, iSpace, Telecom...)
+  for (const row of raw) {
+    if (row.inStock === 'link-hidden' && row.url) hiddenHandUrls.add(row.shop + '|' + row.url);
+  }
   CURSHOP_SEQ = null;
   const shared = new Map(), dropped = [];
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
-  const rows = raw
+  const rows = raw.filter(r => r.inStock !== 'link-hidden')
     // A hand row's url is read ONLY when somebody pinned it AND no other row names that same
     // url. Pixel's DJI mic kits say "Charging case" in their titles, the accessory filter threw
     // all four out, and the pin written to overrule that was keyed by url and so was never
@@ -3354,7 +3352,8 @@ for (const shop of ['eldorado', 'zigzag']) {
 let noPriceCount = 0;
 for (const id of Object.keys(offers)) {
   const before = offers[id].length;
-  offers[id] = offers[id].filter(o => !noPriceUrls.has(priceUrlKey(o.shop, o.url)));
+  offers[id] = offers[id].filter(o => !noPriceUrls.has(priceUrlKey(o.shop, o.url))
+    && !hiddenHandUrls.has(o.shop + '|' + o.url));
   noPriceCount += before - offers[id].length;
 }
 if (noPriceCount) console.log(`${noPriceCount} older offer(s) removed: shop reports unavailable or 0 AMD`);

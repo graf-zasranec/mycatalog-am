@@ -28,10 +28,10 @@ const VIVA_DELAY = 4000;
 // pages are asked under this name instead - still saying who we are, just not the word it filters.
 const VIVA_UA = 'Better.am price check (+https://better.am/)';
 const dry = process.argv.includes('--dry');
-// --drop-gone (refresh.cmd): a row whose page is DELETED - 404/410, or a shop's own not-found page -
-// is removed instead of reported. A sold-out page is not deleted and is still left for a person.
-const dropGone = process.argv.includes('--drop-gone');
-const dropped = new Set();
+// Keep the URL and last verified price when a destination reports not found.
+// The old flag is a compatibility alias for the reversible action.
+const hideGone = process.argv.includes('--hide-gone') || process.argv.includes('--drop-gone');
+const missingLinks = new Set();
 // Without these this tool only ever looked at rows carrying NO date, which made it a one-shot
 // way to clear a backlog rather than something a nightly job can use: once every row had been
 // checked once, it found nothing to do and prices never moved again.
@@ -110,9 +110,6 @@ const MATRIX = ['pixel.am','istyle.am','appzone.am'];
 // passes is marked check=config so the site can stop calling a hand-read price "not checked".
 const CONFIG = ['shop.ucom.am'];
 const isConfig = u => CONFIG.some(h => u.includes(h));
-// Ucom labels its options in whichever language it is asked for, and its English page is the one
-// whose title this can read.
-const readUrl = u => u.includes('shop.ucom.am') ? u.replace('/am/', '/en/').replace('/ru/', '/en/') : u;
 
 // Does the page name the product the row names? The page names the FAMILY and the row names the
 // build, so the containment runs that way round: "iPhone 18 Pro" belongs inside "Apple iPhone 18
@@ -461,7 +458,7 @@ if (sharedKeys.size) console.log(`${shared.length} row(s) share ${sharedKeys.siz
 // A page that prices each BUILD separately is not the trap this guard exists for - it can answer
 // each row on its own terms. But only the page can say whether it does that, so those rows stay
 // in the run and are judged after it has been read, further down.
-todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + tidy(f[4])) || MATRIX.some(h => f[4].includes(h)));
+todo = todo.filter(f => !sharedKeys.has(f[0] + '|' + tidy(f[4])) || isConfig(f[4]) || MATRIX.some(h => f[4].includes(h)));
 // ...and a CONFIG shop's rows are never skipped for that reason either: a url shared by every
 // capacity is exactly what a configurator looks like, and the question asked of it is the link,
 // not the price.
@@ -504,13 +501,22 @@ for (let i = 0; i < todo.length; i++) {
   }
   if (!p) {
     if (noFetch(f[4])) continue;          // belt and braces: these two are never asked directly
-    const page = await readHandPage(readUrl(f[4]), {headers:{'user-agent':f[4].includes('shop.viva.am')?VIVA_UA:UA},signal:AbortSignal.timeout(25000)});
+    // Check the stored destination. Another language's page can have a different status.
+    const page = await readHandPage(f[4], {headers:{'user-agent':f[4].includes('shop.viva.am')?VIVA_UA:UA},signal:AbortSignal.timeout(25000)});
     const html = page.html;
     if (!html) {
       gone.push([f[0],f[1],f[4],String(page.status)]);
-      if (page.status === 404 || page.status === 410) dropped.add(handRowKey(f));
+      if (page.status === 404 || page.status === 410) missingLinks.add(handRowKey(f));
     }
     if (!html) continue;
+    const viva = vivaPrice(html, f);
+    const redstoreMissing = /^https:\/\/redstore\.am\/en\/product\//.test(f[4])
+      && html.includes('NEXT_HTTP_ERROR_FALLBACK;404') && !/<h1\b/i.test(html);
+    if (viva?.gone || redstoreMissing) {
+      gone.push([f[0], f[1], f[4], 'not-found page']);
+      missingLinks.add(handRowKey(f));
+      continue;
+    }
     // A configurator states no price to read. Check the link instead and mark the row.
     if (isConfig(f[4])) {
       if (namesTheProduct(html, f[1])) { f.marked = true; linked++; }
@@ -542,12 +548,11 @@ for (let i = 0; i < todo.length; i++) {
     p = BUILDS.some(h => f[4].includes(h)) ? buildPrice(html, f)
       : /https:\/\/(?:www\.)?(?:likemobile|appzone)\.am\//.test(f[4]) ? readShopHandPrice(html,f)
       : f[4].includes('istyle.am') ? istylePrice(html, f)
-      : vivaPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
+      : viva || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds
     // separately. If the page turned out to carry one figure for everything, it cannot settle a
     // url that five different Dyson colours point at - five rows, five prices, one page.
     if (p && p.only && sharedKeys.has(f[0] + '|' + tidy(f[4]))) { disputed.push([f[0], f[1], f[4]]); continue; }
-    if (p && p.gone) { gone.push([f[0], f[1], f[4], 'not-found page']); dropped.add(handRowKey(f)); continue; }
     if (!p) { nop.push([f[0], f[1], f[4]]); continue; }
   }
   how[p.how] = (how[p.how] || 0) + 1;
@@ -570,6 +575,7 @@ for (let i = 0; i < todo.length; i++) {
   if (was !== p.price) { moved++; console.log(`  ${f[0].padEnd(13)} ${f[1].slice(0, 40).padEnd(42)} ${f[5]} -> ${p.price}`); }
   while (f.length < 9) f.push('');
   f[5] = String(p.price); f[8] = p.day || TODAY;
+  if (f[9] === 'link-hidden') f[9] = '';
   // The page's own stock claim decides whether the row is shown; an unknown keeps what the row had.
   // og-meta / itemprop / magento-main judge stock from the whole page (related cards included): not trusted.
   if ((p.stock === false || p.stock === true) && !['og-meta', 'itemprop', 'magento-main'].includes(p.how)) { while (f.length < 10) f.push(''); if (p.stock === false) soldOut++; f[9] = String(p.stock); }
@@ -590,12 +596,13 @@ if (!dry) {
   const changed = new Map();
   for (const f of todo) {
     if (confirmed.has(idOf(f))) changed.set(idOf(f), [f[5], f[8], null, f[9]]);
-    else if (f.marked) changed.set(idOf(f), [null, null, 'config']);
+    else if (hideGone && missingLinks.has(idOf(f)) && f[9] !== 'false') changed.set(idOf(f), [null, null, null, 'link-hidden']);
+    else if (f.marked) changed.set(idOf(f), [null, null, 'config', f[9] === 'link-hidden' ? '' : undefined]);
   }
   const now = parseCsv(fs.readFileSync('data/listings.csv', 'utf8'));
-  const merged = [now[0],...mergeConfirmedHandRows(now.slice(1),originalBody,changed,dropGone?dropped:new Set())];
+  const merged = [now[0],...mergeConfirmedHandRows(now.slice(1),originalBody,changed)];
   fs.writeFileSync('data/listings.csv', merged.map(formatCsvRow).join('\n') + '\n');
-  console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now` + (dropGone && dropped.size ? `, removed ${dropped.size} whose page is deleted` : ''));
+  console.log(`merged ${changed.size} row(s) into data/listings.csv as it stands now` + (hideGone && missingLinks.size ? `, hid ${missingLinks.size} missing destinations while retaining their rows` : ''));
 }
 console.log(`\nconfirmed ${ok}, of which ${moved} had moved on the shop's own page; ${soldOut} sold out there (hidden until back in stock)`);
 if (linked) console.log(`${linked} row(s) at a shop that prices by configuration: the link opens the product they name, so the price a person read stands and the site can stop calling it unchecked`);
@@ -615,7 +622,9 @@ if (wrongLink.length) {
 // A shop turning the checker away is not a missing page, and calling it one throws away a real
 // price on a live product. 403, 401 and 429 are the shop saying no to US.
 const refused = gone.filter(g => /40[13]|429/.test(String(g[3])));
-const missing = gone.filter(g => !/40[13]|429/.test(String(g[3])));
+const missing = gone.filter(g => ['404', '410', 'not-found page'].includes(String(g[3])));
+const inconclusive = gone.length - refused.length - missing.length;
+if (inconclusive) console.log(`${inconclusive} destination check(s) inconclusive`);
 if (refused.length) console.log(`
 ${refused.length} page(s) refused this checker - the page is there, it will not answer us`);
 if (missing.length) { console.log(`
