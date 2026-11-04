@@ -31702,7 +31702,9 @@
     "display": {
       "size": 16,
       "resolution": "2880x1800",
-      "type": "IPS"
+      "type": "OLED (Glossy)",
+      "refresh": 120,
+      "brightness": 500
     },
     "battery": {
       "capacity": 80
@@ -31721,7 +31723,9 @@
     "sources": [
       "https://psref.lenovo.com/detail/?M=83HS002SRK",
       "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IRH10?M=83HS002SRK",
-      "https://www.regard.ru/api/site/files/goodspdf/download/13400"
+      "https://www.regard.ru/api/site/files/goodspdf/download/13400",
+      "https://seventrade.uz/upload/iblock/60e/7ae5xjbllg6s2pl120kvtreny64bqhdh.pdf",
+      "https://www.regard.ru/api/site/files/goodspdf/download/12831"
     ],
     "os": "No OS"
   },
@@ -64019,7 +64023,13 @@
     ],
     "connectivity": {
       "bluetooth": "5.0"
-    }
+    },
+    "body": {
+      "weight": 790
+    },
+    "sources": [
+      "https://uae.sharafdg.com/product/xiaomi-mi-portable-bluetooth-speaker-black/"
+    ]
   },
   {
     "id": "google-nest-mini",
@@ -70181,7 +70191,12 @@
     "chipset": {
       "name": "Intel Celeron N4500"
     },
-    "body": {}
+    "body": {
+      "weight": 1570
+    },
+    "sources": [
+      "https://www.asus.com/us/laptops/for-home/vivobook/vivobook-go-15-e510/techspec/"
+    ]
   },
   {
     "id": "apple-watch-se-2",
@@ -93728,13 +93743,17 @@
     "battery": {},
     "summaryEn": "Samsung HW-A45C.",
     "sources": [
-      "https://vlv.am/en/Product/19353"
+      "https://vlv.am/en/Product/19353",
+      "https://www.samsung.com/ru/audio-devices/soundbar/a45c-black-hw-a45c-ru/"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 2100
     }
   },
   {
@@ -105162,7 +105181,8 @@
     "summaryEn": "Microsoft's 15-inch Arm laptop on the Snapdragon X2 Elite, with a 120 Hz touchscreen.",
     "sources": [
       "https://www.jbhifi.com.au/products/microsoft-surface-laptop-15-inch-snapdragon-x2-elite-512gb-16gb-black-8th-edition",
-      "https://redstore.am/en/product/microsoft-surface-laptop-15black"
+      "https://redstore.am/en/product/microsoft-surface-laptop-15black",
+      "https://www.microsoft.com/en-us/surface/devices/surface-laptop"
     ],
     "unsure": [
       "popularity",
@@ -105177,7 +105197,10 @@
         "storage": 512,
         "priceAmd": 999000
       }
-    ]
+    ],
+    "body": {
+      "weight": 1664
+    }
   },
   {
     "id": "philips-s1142-00",
@@ -142886,7 +142909,8 @@
       "Black"
     ],
     "sources": [
-      "https://eldorado.am/en/logitech-g332"
+      "https://eldorado.am/en/logitech-g332",
+      "https://www.games2egypt.com/Product/24767/logitech-g332-wired-gaming-headphone"
     ],
     "unsure": [
       "popularity"
@@ -142901,6 +142925,9 @@
     "connectivity": {},
     "specNA": {
       "connectivity.bluetooth": "No Bluetooth; wired 3.5 mm. Exact-model manufacturer/retailer specification."
+    },
+    "body": {
+      "weight": 280
     }
   },
   {
