@@ -21,7 +21,7 @@ for (const p of phones) {
     const parsed = ramOf(o.title);
     // Multiple RAM choices in a heading are not the selected child configuration.
     const unambiguous = parsed != null && new Set(candidates).size <= 1;
-    if (unambiguous) {
+    if (unambiguous && o.ramFromPage !== true) {
       report.explicitRAMOffers++;
       if (o.ram !== parsed) {
         const finding = { id: p.id, shop: o.shop, url: o.url, title: o.title, before: o.ram ?? null, after: parsed };
@@ -37,7 +37,7 @@ for (const p of phones) {
     if (o.ram != null && o.storage >= 32 && !(p.variants || []).some(v => v.ram === o.ram && v.storage === o.storage && (o.size == null || v.size == null || v.size === o.size))) {
       const evidence = { id: p.id, ram: o.ram, storage: o.storage, ...(o.size != null ? { size: o.size } : {}), url: o.url, title: o.title };
       report.unsupportedPairs.push(evidence);
-      if (unambiguous && o.ram === parsed) {
+      if (o.inStock !== false && unambiguous && o.ram === parsed) {
         report.addedConfigurations.push(evidence);
         if (write) (p.variants ||= []).push({ ram: o.ram, storage: o.storage, ...(o.size != null ? { size: o.size } : {}), priceAmd: o.price });
       }

@@ -2035,7 +2035,8 @@ const SHOPS = {
         for (const k of kids)
           out.push({ id: f.id, title: f.title, url: f.url, image: f.image,
                      price: k.price, storage: k.storage ?? storageOf(f.title) ?? storageOf(f.url),
-                     ram: k.ram, color: k.color, colorRaw: k.colorRaw, inStock: k.inStock !== false });
+                     ram: k.ram, ramFromPage: k.ram != null || undefined,
+                     color: k.color, colorRaw: k.colorRaw, inStock: k.inStock !== false });
       }
       return out;
     }

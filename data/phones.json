@@ -2912,6 +2912,12 @@
         "storage": 512,
         "priceAmd": 359000,
         "size": 11
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 663900,
+        "size": 13
       }
     ],
     "colors": [
@@ -2935,7 +2941,8 @@
       "iPad Air 13 2025"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/en-za/122242"
     ]
   },
   {
@@ -3185,6 +3192,11 @@
         "ram": 8,
         "storage": 64,
         "priceAmd": 365000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 329000
       }
     ],
     "display": {
@@ -3197,7 +3209,7 @@
     "battery": {
       "capacity": 7600
     },
-    "summaryEn": "Apple iPad Air 5 Wi-Fi + Cellular 2022.",
+    "summaryEn": "Apple iPad Air 5 (2022), with Wi-Fi and Wi-Fi + Cellular options.",
     "unsure": [
       "popularity"
     ],
@@ -3227,7 +3239,8 @@
     },
     "released": "2022-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/es-es/111887"
     ],
     "colors": [
       "Purple",
@@ -4829,6 +4842,11 @@
         "ram": 24,
         "storage": 512,
         "priceAmd": 612900
+      },
+      {
+        "ram": 24,
+        "storage": 1024,
+        "priceAmd": 659000
       }
     ],
     "body": {
@@ -4847,7 +4865,10 @@
     "colors": [
       "Silver"
     ],
-    "summaryEn": "Apple's smallest desktop — a full M4 machine in a 12.7 cm box, screen and keyboard not included."
+    "summaryEn": "Apple's smallest desktop — a full M4 machine in a 12.7 cm box, screen and keyboard not included.",
+    "sources": [
+      "https://www.yerevanmobile.am/en/apple-mac-mini-m4.html"
+    ]
   },
   {
     "id": "apple-macbook-air-13-m4",
@@ -25151,6 +25172,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 219000
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 209000
       }
     ],
     "battery": {
@@ -25158,6 +25184,9 @@
     },
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/hp-15-fd0153dx512gb"
     ]
   },
   {
@@ -31057,6 +31086,11 @@
     "accent": "#5C6470",
     "variants": [
       {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 152900
+      },
+      {
         "ram": 8,
         "storage": 128,
         "priceAmd": 179000
@@ -31088,7 +31122,8 @@
     "sources": [
       "https://psref.lenovo.com/detail/IdeaPad_Slim_3_15IAN8?M=82XB00HVUS",
       "https://www.telecomarmenia.am/eshop/en/devices/notebook-lenovo-ideapad-slim3-15ian8-arctic-grey/2702/",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.telecomarmenia.am/eshop/hy/devices/notebook-lenovo-ideapad-slim3-15ian8-arctic-grey/2702/"
     ],
     "chipset": {
       "name": "Intel N100"
@@ -36653,6 +36688,11 @@
         "ram": 12,
         "storage": 256,
         "priceAmd": 289900
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "priceAmd": 337900
       }
     ],
     "display": {
@@ -36706,7 +36746,9 @@
     "released": "2023-07",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-12386.php"
+      "https://www.gsmarena.com/a-12386.php",
+      "https://shop.ucom.am/en/nothing-phone-2.html",
+      "https://checkout-eu.nothing.tech/pages/phone-2"
     ],
     "colors": [
       "Dark Gray",
@@ -36833,6 +36875,11 @@
       },
       {
         "ram": 12,
+        "storage": 256,
+        "priceAmd": 239000
+      },
+      {
+        "ram": 12,
         "storage": 512,
         "priceAmd": 249000
       }
@@ -36880,7 +36927,8 @@
     "year": 2026,
     "released": "2026-04",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.yerevanmobile.am/en/oneplus-nord-6.html"
     ]
   },
   {
@@ -37408,6 +37456,11 @@
     "variants": [
       {
         "ram": 4,
+        "storage": 64,
+        "priceAmd": 48000
+      },
+      {
+        "ram": 4,
         "storage": 128,
         "priceAmd": 52900
       },
@@ -37465,7 +37518,8 @@
     "released": "2026-04",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-14635.php"
+      "https://www.gsmarena.com/a-14635.php",
+      "https://www.yerevanmobile.am/en/xiaomi-poco-c81-pro.html"
     ],
     "colors": [
       "Green",
@@ -50196,6 +50250,11 @@
         "ram": 8,
         "storage": 128,
         "priceAmd": 189900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 199900
       }
     ],
     "display": {
@@ -50248,7 +50307,9 @@
     "released": "2023-02",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-12072.php"
+      "https://www.gsmarena.com/a-12072.php",
+      "https://shop.ucom.am/en/xiaomi-13-lite-8gb-128gb.html",
+      "https://www.mi.com/global/product/xiaomi-13-lite/specs/"
     ]
   },
   {
@@ -50694,6 +50755,11 @@
         "ram": 12,
         "storage": 512,
         "priceAmd": 429000
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "priceAmd": 379000
       }
     ],
     "connectivity": {
@@ -50753,7 +50819,8 @@
     },
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-14651.php"
+      "https://www.gsmarena.com/a-14651.php",
+      "https://www.yerevanmobile.am/en/xiaomi-17t-pro.html"
     ]
   },
   {
@@ -51743,7 +51810,13 @@
     "priceAmdMax": 75900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 75900
+      }
+    ],
     "display": {
       "size": 6.79,
       "resolution": "1080x2460",
@@ -51792,7 +51865,9 @@
     "released": "2024-06",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-12737.php"
+      "https://www.gsmarena.com/a-12737.php",
+      "https://shop.ucom.am/en/xiaomi-poco-m6-8gb.html",
+      "https://www.mi.com/global/product/poco-m6/specs/"
     ]
   },
   {
@@ -52308,7 +52383,13 @@
     "priceAmdMax": 173900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 173900
+      }
+    ],
     "display": {
       "size": 6.67,
       "resolution": "1080x2400",
@@ -52357,7 +52438,9 @@
     },
     "released": "2023-02",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://shop.ucom.am/en/xiaomi-poco-x5-pro-5g-8gb.html",
+      "https://www.mi.com/global/product/poco-x5-pro-5g/specs/"
     ]
   },
   {
@@ -52688,6 +52771,11 @@
         "ram": 4,
         "storage": 64,
         "priceAmd": 52900
+      },
+      {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 57900
       }
     ],
     "display": {
@@ -52737,7 +52825,9 @@
     "released": "2022-03",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-11418.php"
+      "https://www.gsmarena.com/a-11418.php",
+      "https://shop.ucom.am/en/xiaomi-redmi-10c-64gb.html",
+      "https://www.mi.com/co/product/redmi-10c/specs/"
     ]
   },
   {
@@ -54256,6 +54346,11 @@
         "ram": 4,
         "storage": 64,
         "priceAmd": 76900
+      },
+      {
+        "ram": 4,
+        "storage": 128,
+        "priceAmd": 82900
       }
     ],
     "display": {
@@ -54311,7 +54406,9 @@
     "released": "2021-10",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-11336.php"
+      "https://www.gsmarena.com/a-11336.php",
+      "https://shop.ucom.am/en/xiaomi-redmi-note-11-4gb.html",
+      "https://www.mi.com/global/product/redmi-note-11/specs/"
     ]
   },
   {
@@ -54330,6 +54427,11 @@
         "ram": 8,
         "storage": 128,
         "priceAmd": 175900
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 186900
       }
     ],
     "display": {
@@ -54382,7 +54484,9 @@
     "released": "2021-10",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-11333.php"
+      "https://www.gsmarena.com/a-11333.php",
+      "https://shop.ucom.am/en/xiaomi-redmi-note-11-pro-plus-5g.html",
+      "https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/specs/"
     ]
   },
   {
@@ -56019,7 +56123,13 @@
     "priceAmdMax": 99900,
     "popularity": 40,
     "accent": "#5C6470",
-    "variants": [],
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 99900
+      }
+    ],
     "display": {
       "size": 11,
       "resolution": "1920x1200",
@@ -56062,7 +56172,9 @@
     },
     "released": "2023-08",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://shop.ucom.am/am/xiaomi-redmi-pad-se-8gb.html",
+      "https://www.mi.com/au/product/redmi-pad-se/specs/"
     ]
   },
   {
@@ -57903,6 +58015,11 @@
     "variants": [
       {
         "ram": 6,
+        "storage": 128,
+        "priceAmd": 249000
+      },
+      {
+        "ram": 6,
         "storage": 512,
         "priceAmd": 309900
       }
@@ -57966,7 +58083,8 @@
     "os": "iOS 16",
     "sources": [
       "https://support.apple.com/en-gb/111850",
-      "https://www.gsmarena.com/a-11861.php"
+      "https://www.gsmarena.com/a-11861.php",
+      "https://support.apple.com/en-sg/111850"
     ]
   },
   {
@@ -66732,8 +66850,12 @@
       "bluetooth": "5.4"
     },
     "sources": [
-      "https://versus.com/"
-    ]
+      "https://versus.com/",
+      "https://www.jbl.com/SENSELITE.html"
+    ],
+    "body": {
+      "weight": 9.5
+    }
   },
   {
     "id": "jbl-jr470nc",
@@ -67723,16 +67845,6 @@
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
-      {
-        "ram": null,
-        "storage": 256,
-        "priceAmd": 289000
-      },
-      {
-        "ram": null,
-        "storage": 512,
-        "priceAmd": 379000
-      },
       {
         "ram": 8,
         "storage": 256,
@@ -69504,6 +69616,11 @@
     "variants": [
       {
         "ram": 32,
+        "storage": 1024,
+        "priceAmd": 1899000
+      },
+      {
+        "ram": 32,
         "storage": 2048,
         "priceAmd": 1899000
       }
@@ -69528,7 +69645,8 @@
       "weight": 1160
     },
     "sources": [
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.yerevanmobile.am/en/huawei-matebook-fold-ultimate-18.html"
     ]
   },
   {
@@ -71409,7 +71527,13 @@
     },
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
-    }
+    },
+    "body": {
+      "weight": 299
+    },
+    "sources": [
+      "https://www.sony.com/en-ao/electronics/gaming-headsets/inzone-h3/specifications"
+    ]
   },
   {
     "id": "jbl-tune-730bt",
@@ -77132,7 +77256,13 @@
       "name": "Intel Graphics",
       "type": "integrated"
     },
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "body": {
+      "weight": 1650
+    },
+    "sources": [
+      "https://www.asus.com/jp/laptops/for-home/zenbook/asus-zenbook-duo-2024-ux8406/techspec/"
+    ]
   },
   {
     "id": "dell-inspiron-16-plus-7640-u9-185h",
@@ -82847,7 +82977,7 @@
     "accent": "#5C6470",
     "variants": [
       {
-        "ram": null,
+        "ram": 32,
         "storage": 1024,
         "priceAmd": 865400
       }
@@ -82868,7 +82998,10 @@
     "graphics": {
       "name": "Intel Graphics",
       "type": "integrated"
-    }
+    },
+    "sources": [
+      "https://seventrade.uz/upload/iblock/422/4g8bt39uajyyr0cihx4s38c11f4tksu3.pdf"
+    ]
   },
   {
     "id": "lenovo-yoga-32ill10-ultra-7-258v",
@@ -84469,11 +84602,15 @@
     },
     "summaryEn": "Xiaomi Soundbar Pro 2.1ch.",
     "sources": [
-      "https://miarmenia.am/en/product/553/xiaomi-soundbar-pro-2.1-ch"
+      "https://miarmenia.am/en/product/553/xiaomi-soundbar-pro-2.1-ch",
+      "https://www.mi.com/tw/product/xiaomi-soundbar-pro-21ch/specs/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "body": {
+      "weight": 2200
+    }
   },
   {
     "id": "xiaomi-mijia-smart-air-purifier-max",
@@ -86322,13 +86459,17 @@
     "battery": {},
     "summaryEn": "JBL Soundgear BTA.",
     "sources": [
-      "https://likemobile.am/en/jbl-soundgear-bta"
+      "https://likemobile.am/en/jbl-soundgear-bta",
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5a811957/pdfs/JBL_Soundgear%20BTA_SpecSheet_English.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "specNA": {
       "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
+    },
+    "body": {
+      "weight": 350
     }
   },
   {
@@ -90446,13 +90587,17 @@
     "battery": {},
     "summaryEn": "Hisense HS3100.",
     "sources": [
-      "https://vlv.am/en/Product/33176"
+      "https://vlv.am/en/Product/33176",
+      "https://qrcode.hisense.com/appliance/20014434?lang=en"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 5730
     }
   },
   {
@@ -92001,13 +92146,17 @@
     "summaryEn": "JBL Endurance Race 2.",
     "sources": [
       "https://vlv.am/en/Product/37958",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa3d266c4/pdfs/LS_JBL_Endurance%20Race%202_QSG_M.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 6.4
     }
   },
   {
@@ -92043,13 +92192,17 @@
     },
     "summaryEn": "JBL Endurance Run 2 BT.",
     "sources": [
-      "https://vlv.am/en/Product/28481"
+      "https://vlv.am/en/Product/28481",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe050d224/pdfs/HP_JBL_Endurance%20Run%202%20Wireless_QSG_Global_SOP_V9_Online.pdf"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
+    },
+    "body": {
+      "weight": 19.8
     }
   },
   {
@@ -143058,10 +143211,12 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "ip": "IP54"
+      "ip": "IP54",
+      "weight": 4.3
     },
     "sources": [
-      "https://www.jbl.com/VIBE-BEAM-2.html"
+      "https://www.jbl.com/VIBE-BEAM-2.html",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/en_GB/v1728043683456/pdfs/JBL_Vibe_Beam_2_Specsheet_EN.pdf"
     ],
     "unsure": [
       "popularity"
@@ -143103,10 +143258,12 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "ip": "IP54"
+      "ip": "IP54",
+      "weight": 4.5
     },
     "sources": [
-      "https://www.jbl.com/VIBE-BUDS-2.html"
+      "https://www.jbl.com/VIBE-BUDS-2.html",
+      "https://be.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5ec2093d/pdfs/JBL_Vibe_Buds_2_Specsheet_EN.pdf"
     ],
     "unsure": [
       "popularity",
@@ -143147,7 +143304,8 @@
     },
     "summaryEn": "2.4 GHz wireless gaming headset with 50 mm drivers.",
     "sources": [
-      "https://www.lenovo.com/us/en/p/accessories-and-software/headsets/gaming-headsets/gxd1a03963"
+      "https://www.lenovo.com/us/en/p/accessories-and-software/headsets/gaming-headsets/gxd1a03963",
+      "https://www.lenovo.com/es/es/p/accessories-and-software/audio/headsets/gxd1a03963"
     ],
     "unsure": [
       "popularity",
@@ -143155,6 +143313,9 @@
     ],
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    },
+    "body": {
+      "weight": 320
     }
   },
   {
@@ -145271,9 +145432,13 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "boiler"
+      "type": "boiler",
+      "power": 78
     },
-    "year": null
+    "year": null,
+    "sources": [
+      "https://tavago.ru/kotly-otopleniya/gazovye-kotly-otopleniya/nastennye-gazovye-dvukhkonturnye-kotly/ariston/seriya-cares-x/gazovyy-nastennyy-dvukhkonturnyy-kotel-ariston-cares-x-24-cf-ng.html"
+    ]
   },
   {
     "id": "electrolux-eifh-c-2-eec-heater",
