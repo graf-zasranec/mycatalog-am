@@ -93,28 +93,32 @@ jobs:
         run: |
           git config user.name  "mycatalog-bot"
           git config user.email "actions@users.noreply.github.com"
-          # photos-needed.json goes with them: it is published for whoever is finding
-          # images, and a stale copy is worse than none.
-          git add 'data/site-*.js' 'data/site-ui*.css' data/prices.json data/history.json data/photos-needed.json data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/startup data/startup-manifest.json data/product-extras.json data/site-ui.css data/thumbnails.json data/photo-native-metrics.json images/thumb images/social data/page-manifest.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json index.html p c b ru en 'sitemap*.xml'
-          node tools/release-assets.mjs --staged
-          git diff --staged --quiet && echo "no price changes" && exit 0
-          git commit -m "prices: $(date -u +%Y-%m-%d)"
-          # A push made during the 3-hour crawl leaves this copy behind and the push is refused
-          # (2026-10-03/04, 10-10). Replay tonight's commit onto the new main; keep newer main corrections on conflicts,
-          # rebuild with the new code, and try again - three times, as pushes can land meanwhile.
-          # The refresh also leaves files it does not commit (spec caches and the like); git will
-          # not rebase over them, which is what lost the whole run on 10-10, so set them aside.
+          # Only source data is replayed after a concurrent publish. Generated
+          # pages and hashed bundles must come from a build of the merged inputs.
+          git add data/prices.json data/history.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json
+          if ! git diff --cached --quiet; then
+            git commit -m "prices: $(date -u +%Y-%m-%d)"
+          fi
+          source_commit=$(git rev-parse HEAD)
           for attempt in 1 2 3; do
-            git push && exit 0
-            git stash push --include-untracked -m leftovers || true
-            git fetch origin main
-            git rebase -X ours origin/main || { git rebase --abort; exit 1; }
-            node build.mjs
-            git add 'data/site-*.js' 'data/site-ui*.css' data/site-prices.js data/site-products.js data/site-app.js data/site-boot.js data/details data/startup data/startup-manifest.json data/product-extras.json data/site-ui.css data/thumbnails.json data/photo-native-metrics.json data/photos-needed.json images/thumb data/page-manifest.json index.html p c b ru en 'sitemap*.xml'
+            git add 'data/site-*.js' 'data/site-ui*.css' data/details data/startup data/startup-manifest.json data/product-extras.json data/thumbnails.json data/photo-native-metrics.json data/photos-needed.json images/thumb images/social data/page-manifest.json index.html p c b ru en 'sitemap*.xml'
             node tools/release-assets.mjs --staged
-            git commit --amend --no-edit
+            if ! git diff --cached --quiet; then
+              git commit -m "Build refreshed catalogue"
+            fi
+            git push && exit 0
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            git stash push --include-untracked -m leftovers
+            git fetch origin main
+            git reset --keep "$source_commit"
+            git rebase -X ours origin/main || { git rebase --abort; exit 1; }
+            source_commit=$(git rev-parse HEAD)
+            # Match refresh.mjs: regenerate photo derivatives before the site.
+            for producer in photo-box thumbnails social; do
+              python3 "tools/$producer.py" || echo "::warning::Could not regenerate $producer"
+            done
+            node build.mjs
           done
-          exit 1
 
       - name: Save interrupted refresh checkpoint
         if: always() && (steps.prices.outcome != 'success' || failure())
