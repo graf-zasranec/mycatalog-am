@@ -616,14 +616,17 @@ function pixelMatrix(html, colors, productId) {
     // Armenian page as a single option with no capacity at all.
     // A tablet's "Internet" option (WiFi / WiFi + Cellular) was read as the colour, and the key
     // below kept one row per capacity - so the cellular price, and every colour but one, vanished.
-    let mem = '', simVal = '', col = '', net = '';
+    let mem = '', variantRam = null, simVal = '', col = '', net = '';
     for (const x of v.properties || []) {
       const val = String(x.valueTitle || '').trim();
       if (!val) continue;
-      if (!net && /^wi-?fi\b/i.test(val)) net = val;
-      else if (!simVal && /sim/i.test(val)) simVal = val;
-      else if (!mem && capOf(val) != null) mem = val;
-      else if (!col) col = val;
+      const cap = capOf(val);
+      if (/^(?:wi-?fi|4g|5g|lte|cellular)\b/i.test(val)) net ||= val;
+      else if (/sim/i.test(val)) simVal ||= val;
+      else if (cap != null) {
+        if (cap < 64 || /^(?:ram|օպերատիվ հիշողություն|оперативная память)$/i.test(String(x.title || '').trim())) variantRam ??= cap;
+        else mem ||= val;
+      } else col ||= val;
     }
     const p = { memory: mem, color: col, 'sim card': simVal };
     // wholesalePrice is the CASH price - see pixelCash() - while "price" is the instalment
@@ -640,12 +643,12 @@ function pixelMatrix(html, colors, productId) {
     if (!(price > 1000)) continue;
     const cap = capOf(p.memory);
     // the same label often carries the memory too - "8/128 GB" is both
-    const mram = ramOf(p.memory || '');
+    const mram = ramOf(p.memory || '') ?? variantRam;
     const sim = simBuild(p['sim card'] || '');
     // an unreadable label is kept as written, so data/color-aliases.json can name it (Pixel 9's "Սև")
     const color = colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || p.color || null;
-    const cell = net ? /cellular|lte|5g/i.test(net) : undefined;
-    const k = [cap ?? '', sim === true ? 'e' : sim === false ? 'n' : '?', color ?? '', cell ?? ''].join('|');
+    const cell = net ? /cellular|lte|[45]g/i.test(net) : undefined;
+    const k = [cap ?? '', mram ?? '', sim === true ? 'e' : sim === false ? 'n' : '?', color ?? '', cell ?? ''].join('|');
     const row = {
       price,
       storage: cap != null && cap >= 64 ? cap : null,
@@ -1298,6 +1301,21 @@ if (process.argv[2] === '--selftest') {
     if (held.length || !held.reviewedHold) { bad++; console.log('FAIL Pixel exact reviewed typo must not fall back to the page price'); }
     const recovered = pixelMatrix(sale.replace('364000','464000'), null, 'apple-iphone-17');
     if (recovered.length !== 1 || recovered[0].price !== 464000) { bad++; console.log('FAIL Pixel corrected cash price must recover'); }
+  }
+  {
+    const sku = (ram, storage, wholesalePrice) => ({
+      quantity: 3, wholesalePrice,
+      properties: [{title:'RAM',valueTitle:`${ram}ԳԲ`},
+        {title:'Հիշողություն',valueTitle:`${storage}ԳԲ`}, {title:'Գույն',valueTitle:'Silver'}]
+    });
+    const html = 'var PRODUCT_VARIANTS = ' + JSON.stringify([
+      sku(16, 256, 469000), sku(16, 512, 519000), sku(24, 512, 559000)
+    ]) + ';';
+    const got = pixelMatrix(html, ['Silver'], 'apple-macbook-air-13-m4')
+      .map(o => [o.ram, o.storage, o.price]);
+    if (JSON.stringify(got) !== JSON.stringify([[16,256,469000],[16,512,519000],[24,512,559000]])) {
+      bad++; console.log('FAIL Pixel separate RAM and storage options collapsed: ' + JSON.stringify(got));
+    }
   }
   // istyle's variant payload, HTML-escaped exactly as the page carries it. Every variant object
   // holds a nested attribute_values array, which is what the old /\{[^{}]*\}/ reader could not
@@ -2097,14 +2115,12 @@ const SHOPS = {
       if (!xml) {
         let saved = null;
         try { saved = JSON.parse(fs.readFileSync('data/istore.json', 'utf8')); } catch { }
-        const age = saved?.fetched ? (Date.parse(TODAY) - Date.parse(saved.fetched)) / 864e5 : Infinity;
-        if (!(age <= 3)) { console.warn(`  [iStore] refused, and data/istore.json is ${saved ? age + ' days old' : 'missing'}`); return []; }
         const back = [];
-        for (const r of saved.rows || []) {
+        for (const r of istoreCachedRows(saved, TODAY)) {
           const id = matchPhone(r.url);
-          if (id && r.price && safeUrl(r.url)) back.push({ ...r, id, inStock: true, seen: saved.fetched });
+          if (id && r.price && safeUrl(r.url)) back.push({ ...r, id });
         }
-        console.log(`  [iStore] refused live; ${back.length} offers from data/istore.json (${saved.fetched})`);
+        console.log(`  [iStore] refused live; ${back.length} dated rows from data/istore.json`);
         return back;
       }
       const urls = [...xml.matchAll(/<loc>(https:\/\/istore\.am\/product\/[^<]+)<\/loc>/g)].map(m => m[1]);
@@ -2123,7 +2139,8 @@ const SHOPS = {
         const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
         if (!price || !title) continue;
         if (!safeUrl(u)) continue;
-        out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u, inStock: true,
+        out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u,
+          inStock: istoreCartState(html, u) ?? undefined, checkedAt: FETCH_CHECKED.get(u),
           image: (html.match(/https:\/\/istore\.am\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null });
       }
       // what a refused run will price from (see above); the id is left out on purpose
@@ -2713,7 +2730,7 @@ if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched a
 const report = [];
 import {modelEsimOnly} from './tools/sim-hardware.mjs';
 // Parser-only audit tools stop at this marker; runtime helpers belong after it.
-import { purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows } from './tools/cache-availability.mjs';
+import { purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows, istoreCartState, istoreCachedRows } from './tools/cache-availability.mjs';
 import {resumablePartial} from './tools/refresh-recovery.mjs';
 import { caseSize } from './tools/spec-values.mjs';
 

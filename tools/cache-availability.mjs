@@ -19,6 +19,31 @@ export function magentoCartState(html) {
   return /\sdisabled(?:\s|=|>)/i.test(button) ? null : true;
 }
 
+// iStore repeats its primary controls for desktop and mobile, and renders
+// other products on the same page. Only an exact product ID can set stock.
+export function istoreCartState(html, url) {
+  const id = String(url || '').match(/-(\d+)\/?$/)?.[1];
+  if (!id) return null;
+  const states = new Set();
+  for (const [, attrs] of String(html || '').matchAll(/<(?:a|button)\b([^>]*)>/gi)) {
+    const classes = attrs.match(/\sclass=["']([^"']*)["']/i)?.[1].split(/\s+/) || [];
+    if (!classes.includes('add-to-cart-button') ||
+        attrs.match(/\sdata-product_id=["'](\d+)["']/i)?.[1] !== id) continue;
+    if (classes.includes('make-preorder')) states.add(false);
+    if (classes.includes('add-to-cart-pv') && !/\sdisabled(?:\s|=|$)/i.test(attrs)) states.add(true);
+  }
+  return states.size === 1 ? [...states][0] : null;
+}
+
+export function istoreCachedRows(snapshot, today) {
+  const now = Date.parse(today);
+  return (snapshot?.rows || []).flatMap(row => {
+    const seen = row.checkedAt?.slice(0, 10) || row.seen || snapshot.fetched;
+    const age = (now - Date.parse(seen)) / 864e5;
+    return age >= 0 && age <= 3 ? [{...row, seen}] : [];
+  });
+}
+
 export function unavailableSourceKeys(shop, rows) {
   const groups = new Map();
   for (const row of rows) {

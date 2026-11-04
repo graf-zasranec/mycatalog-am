@@ -1001,6 +1001,376 @@
       "nextNotFound": true,
       "previousCheck": "2026-11-04T00:41:34.337Z",
       "previousSourceSHA256": "405e1550c45715af7b4865d307c73af1d9080477dd0e81cd5f9fbddec98ba737"
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-a56",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a56",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:46.693Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-a56",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a56",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:05:41.468Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-a56",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a56",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:46.693Z",
+          "sourceSHA256": "ae599fa3df0ddc928a64ade6c49ba7fe02b3e914cd74700ec5bfb986700e0b88",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-a56",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-a56",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:47.615Z",
+          "sourceSHA256": "d6ecb4424c586a950294c210b4e32e713b69575ac4bcf859429460c8e7790d60",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-s25",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:48.685Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-s25",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:05:42.838Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-s25",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:48.685Z",
+          "sourceSHA256": "fd55fd47ac5e05c16f009a5e3b8749374606f890efca65b38c185da3e5c2d59d",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-s25",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-s25",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:49.645Z",
+          "sourceSHA256": "2da6c5fce8e233dbd5e7956e7e79f7a147f86e67df6d92837849a7b6fc0ceca3",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-plus",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25-plus",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:50.861Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-plus",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25-plus",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:07:06.167Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-plus",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25-plus",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:50.861Z",
+          "sourceSHA256": "e73a8ac4ea236231b46395c7c4c3fbc0bf77dc5ec6886f4b2f021ffb08389352",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-s25-plus",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-s25-plus",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:51.912Z",
+          "sourceSHA256": "e9d8053ad9db32765f71979fcb38898898f51ffb49fc6296e46b815f5277963d",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-a16",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a16",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:52.987Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-a16",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a16",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:10:37.157Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-a16",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a16",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:52.987Z",
+          "sourceSHA256": "d59d54cb44197a7b89fde12d0c97b76f9428d74fae02efe18ff7d3b00fb4b2eb",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-a16",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-a16",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:53.876Z",
+          "sourceSHA256": "1b615aa4d4573ec3a4adeae194be3940e85997c97235f41e9034b6b89d3c08c7",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-fe",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25-fe",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:55.059Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-fe",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25-fe",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:05:43.964Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-s25-fe",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-s25-fe",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:55.059Z",
+          "sourceSHA256": "2c913a5e7be20485039e59be1c00767e52a7c20ffb7c2f128c1466e3dbca1ff5",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-s25-fe",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-s25-fe",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:56.113Z",
+          "sourceSHA256": "de29bcc14e5b99d51f94a2a1d76823a26bb4d95db01a842a83c20bd888463e5a",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x216",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-plus-x216",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:57.162Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x216",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-plus-x216",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:07:36.747Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x216",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-plus-x216",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:57.162Z",
+          "sourceSHA256": "fbe85ef896b72989bbf0562a1615d38799a557cc4434f25f0b5944fe63057b57",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-plus-x216",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-plus-x216",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:58.045Z",
+          "sourceSHA256": "dfedc01df779b2e2dbeaaea9ed3f1822743723a4fc852151b479355b364a1c8b",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-x115",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-x115",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:15:59.119Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-x115",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-x115",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:08:57.113Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-x115",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-x115",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:59.119Z",
+          "sourceSHA256": "88c236e1643691a7b3833179f5ebde0d0385f89e65c3e20691a1500b8f0ac09e",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-x115",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-x115",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:15:59.998Z",
+          "sourceSHA256": "93dcda0162cccf6049cf431470a8eb7bdf66dd90a89ea18198f17813aac76f99",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-a36",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a36",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:16:01.063Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-a36",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a36",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:05:38.565Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-a36",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-a36",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:16:01.063Z",
+          "sourceSHA256": "4ba9833cddcc5b8f053766eb4ee6955f94f663b8b551c337672f4922bb4be28f",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-a36",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-a36",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:16:01.933Z",
+          "sourceSHA256": "8a96e04bb9272f2dfbb32c2b05de2bd0515b1de7b7d0abae2201c11c059fc584",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x210",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-plus-x210",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:16:03.009Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x210",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-plus-x210",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:07:35.728Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-plus-x210",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-plus-x210",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:16:03.009Z",
+          "sourceSHA256": "fd983a735fa8eab7e112fb58736b8b868abc5078ac2a642919b03d704bc8a730",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-plus-x210",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-plus-x210",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:16:03.877Z",
+          "sourceSHA256": "9f11db4d500116d85efae6b080414a87304fd25db17f7cc1e503af76b7859140",
+          "title": null,
+          "challenge": false
+        }
+      ]
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-x110",
+      "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-x110",
+      "status": 404,
+      "reason": "http_not_found",
+      "checked": "2026-11-04",
+      "checkedAt": "2026-11-04T17:16:04.985Z",
+      "attempts": [
+        {
+          "shop": "pixel",
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-x110",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-x110",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:08:56.035Z",
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/am/product/samsung-galaxy-tab-a9-x110",
+          "finalUrl": "https://www.pixel.am/product/samsung-galaxy-tab-a9-x110",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:16:04.985Z",
+          "sourceSHA256": "9c7deaaecbd45d6148cb6ec73d6ee4c0fdfd4d99174b8812227a580b454a1ed8",
+          "title": null,
+          "challenge": false
+        },
+        {
+          "url": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-x110",
+          "finalUrl": "https://www.pixel.am/en/product/samsung-galaxy-tab-a9-x110",
+          "status": 404,
+          "checkedAt": "2026-11-04T17:16:05.873Z",
+          "sourceSHA256": "b30421e05e8cc90ce04de4ff2e9cc3b67fff181fc512f1e1439bfc7067c2bb87",
+          "title": null,
+          "challenge": false
+        }
+      ]
     }
   ]
 }

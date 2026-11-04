@@ -35,3 +35,21 @@ assert.deepEqual(unavailableSourceKeys('allsell',[conflict]),[cacheOfferKey('all
 const held=checkpointShopRows('allsell',[],[{...oldHand,shop:'allsell'}],[conflict]);
 assert.equal(held.filter(purchasableOffer).length,0,'resume cannot resurrect an older offer for a conflicting fixed SKU');
 assert.deepEqual(unavailableSourceKeys('allsell',held),[cacheOfferKey('allsell',url)],'conflict evidence survives checkpoint');
+
+const {istoreCartState, istoreCachedRows} = await import('./cache-availability.mjs');
+const istoreURL = 'https://istore.am/product/example-2827';
+const buy = '<a class="product-button-2827 add-to-cart-button add-to-cart-pv" data-product_id="2827">Buy</a>';
+const preorder = '<button class="product-button-2827 add-to-cart-button make-preorder" data-product_id="2827">Preorder</button>';
+assert.equal(istoreCartState(buy, istoreURL), true);
+assert.equal(istoreCartState(preorder + buy.replaceAll('2827', '2828'), istoreURL), false);
+assert.equal(istoreCartState(preorder + buy, istoreURL), null, 'conflicting exact controls are inconclusive');
+assert.equal(istoreCartState(buy.replaceAll('2827', '2828'), istoreURL), null);
+assert.equal(istoreCartState('<html>Just a moment</html>', istoreURL), null);
+const snapshot = {fetched:'2026-11-04',rows:[
+  {url:istoreURL, price:1000, inStock:false, seen:'2026-11-03'},
+  {url:'https://istore.am/product/other-2828',price:1000,seen:'2026-10-28'},
+  {url:'https://istore.am/product/legacy-2829',price:1000,inStock:true}
+]};
+assert.deepEqual(istoreCachedRows(snapshot,'2026-11-04').map(o=>[o.seen,o.inStock]),[
+  ['2026-11-03',false],['2026-11-04',true]
+], 'fallback keeps the exact row date and preorder status');
