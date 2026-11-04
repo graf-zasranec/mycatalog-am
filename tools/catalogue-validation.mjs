@@ -19,3 +19,22 @@ export function assertCatalogueData(products, offers){
   const problems=catalogueProblems(products,offers);
   if(problems.length)throw new Error('Catalogue data failed validation:\n'+problems.join('\n'));
 }
+
+export function assertPriceSnapshot({shops, offers} = {}) {
+  const isRecord = value => value != null && typeof value === 'object' && !Array.isArray(value);
+  if (!isRecord(shops) || !isRecord(offers)) throw new Error('Invalid price snapshot: expected shop and offer registries');
+  for (const [shop, metadata] of Object.entries(shops)) {
+    if (!isRecord(metadata) || typeof metadata.name !== 'string' || !metadata.name.trim()) {
+      throw new Error('Invalid shop metadata: ' + shop);
+    }
+  }
+  for (const [id, rows] of Object.entries(offers)) {
+    if (!Array.isArray(rows)) throw new Error('Invalid offer list: ' + id);
+    for (const row of rows) {
+      if (!isRecord(row)) throw new Error('Invalid offer row: ' + id);
+      if (typeof row.shop !== 'string' || !Object.hasOwn(shops, row.shop)) {
+        throw new Error('Unknown offer shop: ' + row.shop);
+      }
+    }
+  }
+}

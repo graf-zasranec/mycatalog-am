@@ -19,7 +19,7 @@ import { pack, unpackSource, groupCatalogue, catalogueSource } from './tools/com
 import { catalogueIndex } from './tools/catalogue-index.mjs';
 import { canonicalColors, canonicalColorPhotos } from './tools/canonical-colors.mjs';
 import { assertCaseStableBrands } from './tools/brand-integrity.mjs';
-import { assertCatalogueData } from './tools/catalogue-validation.mjs';
+import { assertCatalogueData, assertPriceSnapshot } from './tools/catalogue-validation.mjs';
 import {categorySeed,productSeedSource,fullCatalogueSource}from'./tools/product-startup.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
@@ -42,7 +42,8 @@ const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.js
 // articles, newest first; data/blog.json holds each in hy, ru and en
 const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json')) : []).sort((a, b) => b.date.localeCompare(a.date));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
-assertCatalogueData(phones, PRICES.offers || {});
+assertPriceSnapshot(PRICES);
+assertCatalogueData(phones, PRICES.offers);
 attachOfferConfigs(phones, PRICES.offers || {});
 applyVlvTitleColors(phones, PRICES.offers || {}, fs.existsSync('data/color-aliases.json') ? JSON.parse(rd('data/color-aliases.json')) : {});
 // Popularity nobody set (unsure) was a flat default of 40 on 1,100 products, so "popular" sorted

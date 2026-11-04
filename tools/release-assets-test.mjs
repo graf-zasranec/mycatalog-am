@@ -108,6 +108,17 @@ try {
   }
   assert.equal(git(crawl,'rev-parse','HEAD'),git(crawl,'ls-remote','origin','refs/heads/main').split(/\s/)[0]);
   console.log('PUBLISH_RACE_PASS: fresh data and concurrent owner edits preserved, generated pages rebuilt');
+  git(owner,'pull','--ff-only');
+  put(owner,'data/prices.json','owner verified prices\n');
+  commit(owner,'concurrent verified price update');
+  git(owner,'push');
+  put(crawl,'data/prices.json','second crawl prices\n');
+  assert.throws(() => execFileSync('bash',['-e','-c',publish],{cwd:crawl,stdio:['ignore','pipe','pipe']}),
+    error => String(error.stderr).includes('Concurrent catalogue source update: data/prices.json'));
+  assert.equal(git(owner,'show','HEAD:data/prices.json'),'owner verified prices');
+  assert.equal(git(crawl,'ls-remote','origin','refs/heads/main').split(/\s/)[0],git(owner,'rev-parse','HEAD'));
+  console.log('PRICE_REPLAY_GUARD_PASS: preserve the verified upstream snapshot on an overlapping refresh');
+
 } finally {
   fs.rmSync(raceRoot,{recursive:true,force:true});
 }

@@ -95,6 +95,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           # Only source data is replayed after a concurrent publish. Generated
           # pages and hashed bundles must come from a build of the merged inputs.
+          crawl_base=$(git rev-parse HEAD)
           git add data/prices.json data/history.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json
           if ! git diff --cached --quiet; then
             git commit -m "prices: $(date -u +%Y-%m-%d)"
@@ -108,10 +109,19 @@ jobs:
             fi
             git push && exit 0
             if [ "$attempt" -eq 3 ]; then exit 1; fi
-            git stash push --include-untracked -m leftovers
             git fetch origin main
+            # Git can splice two snapshots into valid JSON with different meaning.
+            # Keep the crawl checkpoint and the published data if both writers touched a source file.
+            while IFS= read -r source_file; do
+              if ! git diff --quiet "$crawl_base" origin/main -- "$source_file"; then
+                echo "::error::Concurrent catalogue source update: $source_file" >&2
+                exit 1
+              fi
+            done < <(git diff --name-only "$crawl_base" "$source_commit")
+            git stash push --include-untracked -m leftovers
             git reset --keep "$source_commit"
             git rebase -X ours origin/main || { git rebase --abort; exit 1; }
+            crawl_base=$(git rev-parse origin/main)
             source_commit=$(git rev-parse HEAD)
             # Match refresh.mjs: regenerate photo derivatives before the site.
             for producer in photo-box thumbnails social; do

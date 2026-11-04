@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {catalogueProblems,assertCatalogueData} from './catalogue-validation.mjs';
+import {catalogueProblems,assertCatalogueData,assertPriceSnapshot} from './catalogue-validation.mjs';
 const p={id:'wired',category:'headphones',audio:{form:'on-ear'},specNA:{'connectivity.bluetooth':'Manufacturer: wired only'}};
 assert.deepEqual(catalogueProblems([p],{wired:[{price:6500}]}),[],'verified not-applicable fields and legacy bucket identities are valid');
 assert.match(catalogueProblems([{...p,specNA:{}}]).join('\n'),/missing connectivity.bluetooth/);
@@ -9,5 +9,13 @@ assert.deepEqual(catalogueProblems([{...p,battery:{life:'60 hours'}}]),[],'unkno
 assert.match(catalogueProblems([p],{undefined:[{price:1000}]}).join('\n'),/unknown offer bucket/);
 assert.match(catalogueProblems([p],{wired:[{id:'other'}]}).join('\n'),/conflicting offer id/);
 const products=JSON.parse(fs.readFileSync('data/phones.json')),prices=JSON.parse(fs.readFileSync('data/prices.json'));
+assertPriceSnapshot(prices);
 assertCatalogueData(products,prices.offers);
 console.log('CATALOGUE_DATA_PASS: core fields or explicit evidence, positive published capacities and valid offer identities');
+
+const shops={sample:{name:'Sample'}};
+const offers={wired:[{shop:'sample',price:6500}]};
+assert.doesNotThrow(()=>assertPriceSnapshot({shops,offers}));
+assert.throws(()=>assertPriceSnapshot({shops:{...shops,offers},offers}),/Invalid shop metadata: offers/);
+assert.throws(()=>assertPriceSnapshot({shops,offers:{wired:{shop:'sample'}}}),/Invalid offer list: wired/);
+assert.throws(()=>assertPriceSnapshot({shops,offers:{wired:[{shop:'missing'}]}}),/Unknown offer shop: missing/);
