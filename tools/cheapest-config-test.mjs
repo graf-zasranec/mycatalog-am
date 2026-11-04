@@ -15,5 +15,7 @@ assert.equal(app.initialConfig(watch).storage,null);assert.equal(app.initialConf
 app.st={...app.D,ram:32,stor:2048,shops:['nonexistent']};
 let count=0;for(const model of phones){const all=app.offersFor(model);if(!all.length)continue;const selected=app.initialConfig(model);assert.equal(app.selectionOffers(model,selected)[0]?.price,all[0].price,'globally cheapest default '+model.id);count++}
 const hero=phones.find(p=>p.id==='apple-iphone-18-pro');assert.equal(app.bxHeroOffers()[0].price,app.offersFor(hero)[0].price,'feature tile follows same cheapest selection');
+const charge=phones.find(p=>p.id==='jbl-charge-6');assert.ok(charge.colors.includes('Blue'),'Charge 6 Blue is a real selectable finish');
+const blueRows=app.selectionOffers(charge,{...app.initialConfig(charge),color:'Blue'});assert.ok(blueRows.some(o=>o.shop==='vlv'),'Blue retains the explicit BLU VLV offer');assert.ok(blueRows.some(o=>o.shop==='eldorado'&&/6blu/i.test(o.url)),'Blue retains the explicit Eldorado BLU SKU');assert.ok(!blueRows.some(o=>/charge-6-red/i.test(o.url)),'Red may not become the cheapest Blue offer through an unknown-color fallback');
 console.log('CHEAPEST_CONFIG_PASS:'+count+'real models,filter independence,tied minima,stock,unknown facts,feature alignment');`;
 try{await import('data:text/javascript;base64,'+Buffer.from(harness+checks).toString('base64'))}catch(e){console.error(e.name+': '+e.message);process.exitCode=1}

@@ -13,6 +13,7 @@
 // It never invents a link. A row with no url, or one whose page is gone, is reported and left
 // alone for a person - the answer to "this page 404s" is a decision, not a default.
 import fs from 'node:fs';
+import {readShopHandPrice} from './hand-shop-price.mjs';
 import {parseCsv,formatCsvRow,handRowKey,mergeConfirmedHandRows} from './hand-csv.mjs';
 import {createHandReader} from './hand-fetch.mjs';
 import {istyleVariants} from './istyle-variants.mjs';
@@ -95,7 +96,7 @@ const SUSPECT = 10000;
 // Because the page prices each build separately, a pixel url shared by rows of different
 // capacities is NOT the trap the guard further down exists for: this can answer each of them.
 const BUILDS = ['pixel.am'];
-const MATRIX = ['pixel.am','istyle.am'];
+const MATRIX = ['pixel.am','istyle.am','appzone.am'];
 // ucom is NOT on that list and must not be added. Its pages are Magento and do carry the whole
 // configurable matrix, so reading them looks easy - but the page does not show a capacity's price
 // until that capacity is chosen, and what it serves until then is the base build. Confirming from
@@ -140,9 +141,9 @@ const nwords = z => [...new Set(String(z).toLowerCase().replace(/\b\d+\s*(?:gb)?
 function namesTheProduct(html, title) {
   const h1 = (html.match(/<h1[^>]*>([\s\S]{0,200}?)<\/h1>/i) || [])[1] || '';
   const tt = (html.match(/<title[^>]*>([\s\S]{0,200}?)<\/title>/i) || [])[1] || '';
-  const page = nwords((h1 || tt).replace(/<[^>]+>/g, ' '));
+  const page = nwords((h1 || tt).replace(/<[^>]+>/g, ' ').replace(/\bair conditioners?\b/gi,' '));
   if (!page.length) return false;
-  const mine = nwords(title);
+  const mine = nwords(title.replace(/\bair conditioners?\b/gi,' '));
   if (!mine.length) return false;
   // Either side may be the fuller one. Ucom writes "Yandex Smart Speaker Station Mini" where the
   // row says "Yandex Station Mini", and "iPhone 18 Pro" where the row says "Apple iPhone 18 Pro
@@ -539,6 +540,7 @@ for (let i = 0; i < todo.length; i++) {
     }
     if (!MATRIX.some(h=>f[4].includes(h)) && genericConfigurationPage(html)) { disputed.push([f[0],f[1],f[4]]); continue; }
     p = BUILDS.some(h => f[4].includes(h)) ? buildPrice(html, f)
+      : /https:\/\/(?:www\.)?(?:likemobile|appzone)\.am\//.test(f[4]) ? readShopHandPrice(html,f)
       : f[4].includes('istyle.am') ? istylePrice(html, f)
       : vivaPrice(html, f) || mobilecentrePrice(html, f) || telecomPrice(html, f) || priceOf(html);
     // This row was kept past the disputed-url guard only because its shop prices builds

@@ -42,3 +42,6 @@ assert.equal(p.priceOf('<meta property="product:price:amount" content="120000"><
 
 assert.equal(p.genericConfigurationPage('<script>{"jsonConfig":{"attributes":{"storage":{}}}}</script>'),true,'generic Magento base price is not a selected capacity price');
 assert.equal(p.genericConfigurationPage('<script>{"price":120000}</script>'),false,'simple source price remains readable');
+
+assert.equal(p.namesTheProduct('<h1>GREE GWH18AGD-K6DNA1D/O</h1>','GREE GWH18AGD-K6DNA1D/O Air Conditioner'),true,'Air Conditioner is a category descriptor, not a missing Air model qualifier');
+assert.equal(p.namesTheProduct('<h1>MacBook Pro 13 M2</h1>','MacBook Air 13 M2'),false,'real Air/Pro model separation remains strict');
