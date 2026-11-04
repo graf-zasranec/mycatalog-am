@@ -608,6 +608,8 @@ function pixelMatrix(html, colors, productId) {
   try { vs = JSON.parse(m[1]); } catch { return []; }
   const best = new Map();
   let reviewedHold = false;
+  const watchSizes = phoneById[productId]?.variantUnit === 'mm'
+    ? phoneById[productId].variants.map(variant => variant.storage) : [];
   for (const v of vs) {
     // The property NAMES are whatever language the page is in - the crawl reads /am/, where they
     // are Գույն, Հիշողություն and Սիմ Քարտ - so each one is recognised by what its value looks
@@ -616,12 +618,15 @@ function pixelMatrix(html, colors, productId) {
     // Armenian page as a single option with no capacity at all.
     // A tablet's "Internet" option (WiFi / WiFi + Cellular) was read as the colour, and the key
     // below kept one row per capacity - so the cellular price, and every colour but one, vanished.
-    let mem = '', variantRam = null, simVal = '', col = '', net = '';
+    let mem = '', variantRam = null, watchSize = null, simVal = '', col = '', net = '';
     for (const x of v.properties || []) {
       const val = String(x.valueTitle || '').trim();
       if (!val) continue;
       const cap = capOf(val);
-      if (/^(?:wi-?fi|4g|5g|lte|cellular)\b/i.test(val)) net ||= val;
+      if (watchSizes.length && /^(?:Էկրանի Չափս|case size|screen size|размер экрана)$/iu.test(String(x.title || '').trim())) {
+        const size = Number(val.match(/^(\d{2})(?:\s*mm)?$/i)?.[1]);
+        if (watchSizes.includes(size)) watchSize = size;
+      } else if (/^(?:wi-?fi|4g|5g|lte|cellular|gps)\b/i.test(val)) net ||= val;
       else if (/sim/i.test(val)) simVal ||= val;
       else if (cap != null) {
         if (cap < 64 || /^(?:ram|օպերատիվ հիշողություն|оперативная память)$/i.test(String(x.title || '').trim())) variantRam ??= cap;
@@ -648,10 +653,10 @@ function pixelMatrix(html, colors, productId) {
     // an unreadable label is kept as written, so data/color-aliases.json can name it (Pixel 9's "Սև")
     const color = colorOf(p.color || '', colors) || colorTranslated(p.color || '', colors) || p.color || null;
     const cell = net ? /cellular|lte|[45]g/i.test(net) : undefined;
-    const k = [cap ?? '', mram ?? '', sim === true ? 'e' : sim === false ? 'n' : '?', color ?? '', cell ?? ''].join('|');
+    const k = [watchSize ?? cap ?? '', mram ?? '', sim === true ? 'e' : sim === false ? 'n' : '?', color ?? '', cell ?? ''].join('|');
     const row = {
       price,
-      storage: cap != null && cap >= 64 ? cap : null,
+      storage: watchSize ?? (cap != null && cap >= 64 ? cap : null),
       ram: mram ?? (cap != null && cap < 64 ? cap : null),
       esim: sim,
       color, cell,
@@ -660,6 +665,8 @@ function pixelMatrix(html, colors, productId) {
       // post-pass could infer from a title, which is the same title on all eight rows.
       simFromPage: sim !== undefined || undefined,
     };
+    const image = v.photos?.[0]?.['800'];
+    if (image && safeUrl(image)) row.image = image;
     const had = best.get(k);
     if (!had || row.price < had.price) best.set(k, row);
   }
@@ -1317,6 +1324,23 @@ if (process.argv[2] === '--selftest') {
       bad++; console.log('FAIL Pixel separate RAM and storage options collapsed: ' + JSON.stringify(got));
     }
   }
+  {
+    const watch = (size, price, image) => ({
+      quantity: 3, wholesalePrice: price, photos: [{800: image}],
+      properties: [{title:'Գույն',valueTitle:'Silver'},
+        {title:'Էկրանի Չափս',valueTitle:String(size)}]
+    });
+    const image40 = 'https://cdn.storech.com/uploads/products/800_watch-40.png';
+    const image44 = 'https://cdn.storech.com/uploads/products/800_watch-44.png';
+    const html = 'var PRODUCT_VARIANTS = ' + JSON.stringify([
+      watch(44, 101000, image44), watch(40, 93000, image40)
+    ]) + ';';
+    const got = pixelMatrix(html, ['Silver'], 'samsung-galaxy-watch-8')
+      .map(o => [o.storage, o.price, o.image]);
+    if (JSON.stringify(got) !== JSON.stringify([[44,101000,image44],[40,93000,image40]])) {
+      bad++; console.log('FAIL Pixel watch case sizes and SKU photos: ' + JSON.stringify(got));
+    }
+  }
   // istyle's variant payload, HTML-escaped exactly as the page carries it. Every variant object
   // holds a nested attribute_values array, which is what the old /\{[^{}]*\}/ reader could not
   // match - it took no variant at all and the shop contributed four offers from 241 products.
@@ -1966,7 +1990,7 @@ const SHOPS = {
             out.push({ id, price: mv.price,
               storage: mv.storage ?? storageOf(title) ?? storageOf(u) ?? v.storage,
               ram: mv.ram ?? undefined, esim: mv.esim, simFromPage: mv.simFromPage,
-              title, url: safe, image: img, color: mv.color || color, cell: mv.cell, inStock: mv.inStock });
+              title, url: safe, image: mv.image || img, color: mv.color || color, cell: mv.cell, inStock: mv.inStock });
           continue;
         }
         out.push({ id, price: cash || Math.min(...prices),

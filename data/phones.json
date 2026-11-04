@@ -5300,6 +5300,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 669000
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 719000
       }
     ],
     "display": {
@@ -5327,7 +5332,8 @@
       "weight": 1550
     },
     "sources": [
-      "https://support.apple.com/en-us/121552"
+      "https://support.apple.com/en-us/121552",
+      "https://support.apple.com/en-gb/121552"
     ],
     "chipset": {
       "name": "Apple M4",
@@ -10454,7 +10460,8 @@
       "weight": 1630
     },
     "sources": [
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://tochkapc.ru/noutbuki/noutbuki/asus-vivobook-go-15-oled-90nb0zr1-m01cc0-amd-ryzen-5-7520u-16gb-512gb-dos-silver/"
     ]
   },
   {
@@ -10863,7 +10870,7 @@
     },
     "os": "Windows 11",
     "colors": [
-      "Black"
+      "Quiet Blue"
     ],
     "summaryEn": "A 16-inch 3.2K OLED creator laptop with a discrete RTX 4060.",
     "body": {
@@ -10871,7 +10878,8 @@
     },
     "sources": [
       "https://nanoreview.net/en/laptop/asus-vivobook-pro-16-k6602",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://device.report/m/35ce6222fec7373e7ceed6e31912a4767a8cd8864f2045ab3b8ca9214da27d0d"
     ]
   },
   {
@@ -16150,7 +16158,11 @@
     ],
     "colors": [
       "Amber Silk",
-      "Nickel/Copper"
+      "Nickel/Copper",
+      "Ceramic Apricot",
+      "Red Velvet",
+      "Jasper Plum",
+      "Ceramic Pink"
     ],
     "summaryEn": "Multi-styler that curls and dries with air rather than heat damage.",
     "unsure": [
@@ -16166,7 +16178,10 @@
     "appliance": {
       "type": "hair_styler",
       "power": 1700
-    }
+    },
+    "sources": [
+      "https://www.dyson.com/hair-care/hair-stylers/airwrap-co-anda2x/straight-wavy-ceramic-apricot"
+    ]
   },
   {
     "id": "dyson-er-hd07",
