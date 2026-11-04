@@ -27,9 +27,9 @@
         n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
       }
       window.fbq.disablePushState = true;
-      window.fbq('set', 'autoConfig', false, '2884780868571493');
+      window.fbq('set', 'autoConfig', false, '1658738078984776');
       window.fbq('consent', 'grant');
-      window.fbq('init', '2884780868571493');
+      window.fbq('init', '1658738078984776');
       const script = document.createElement('script');
       script.async = true;
       script.src = 'https://connect.facebook.net/en_US/fbevents.js';
