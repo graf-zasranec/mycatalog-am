@@ -150771,5 +150771,170 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "canon-eos-r1-body",
+    "brand": "Canon",
+    "category": "camera",
+    "name": "EOS R1 Body",
+    "aliases": [
+      "Canon EOS R1",
+      "Canon EOS R1 V5 body"
+    ],
+    "year": 2024,
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "chipset": {
+      "name": "DIGIC X + DIGIC Accelerator"
+    },
+    "camera": {
+      "main": "24.2 MP full-frame back-illuminated stacked CMOS",
+      "video": "6K RAW 60p; 4K 120p"
+    },
+    "body": {
+      "weight": 1115,
+      "width": 157.6,
+      "height": 149.5,
+      "thickness": 87.3
+    },
+    "summaryEn": "Professional full-frame mirrorless camera with a 24.2 MP stacked sensor, up to 40 fps electronic shooting and 6K RAW video. Body only; lens sold separately.",
+    "sources": [
+      "https://cam.start.canon/en/C018/manual/html/UG-10_Reference_0090.html",
+      "https://www.canon.com.au/cameras/eos-r1",
+      "https://www.zigzag.am/en/canon-eos-r1-v5-body.html"
+    ],
+    "released": "2024",
+    "colors": [
+      "Black"
+    ],
+    "tier": "flagship",
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "priceAmd": 2990000,
+    "priceAmdMax": 2990000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 2990000
+      }
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "canon-eos-r5-mark-ii-24-105-l",
+    "brand": "Canon",
+    "category": "camera",
+    "name": "EOS R5 Mark II + RF 24–105mm F4 L IS USM",
+    "aliases": [
+      "Canon EOS R5 Mark II RF24-105 L",
+      "Canon EOS R5 MARK II V6 RF24-105 L"
+    ],
+    "year": 2024,
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "chipset": {
+      "name": "DIGIC X + DIGIC Accelerator"
+    },
+    "camera": {
+      "main": "45 MP full-frame back-illuminated stacked CMOS",
+      "video": "8K RAW 60p; 4K 120p"
+    },
+    "body": {
+      "weight": 746
+    },
+    "summaryEn": "45 MP full-frame mirrorless camera with 8K RAW recording and in-body stabilization. Includes the RF 24–105mm F4 L IS USM lens. Camera weight excludes the lens.",
+    "sources": [
+      "https://www.canon.com.au/cameras/eos-r5-mark-ii",
+      "https://www.usa.canon.com/shop/p/eos-r5-mark-ii",
+      "https://www.zigzag.am/en/canon-eos-r5-mark-ii-v6-rf24-105-l.html"
+    ],
+    "released": "2024",
+    "colors": [
+      "Black"
+    ],
+    "tier": "flagship",
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "priceAmd": 2599000,
+    "priceAmdMax": 2599000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 2599000
+      }
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "canon-eos-r50-v-14-30",
+    "brand": "Canon",
+    "category": "camera",
+    "name": "EOS R50 V + RF-S 14–30mm F4–6.3 IS STM PZ",
+    "aliases": [
+      "Canon EOS R50 V 14-30",
+      "Canon EOS R50 V BK- F-S 14-30 SEE /6895C025AA"
+    ],
+    "year": 2025,
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "chipset": {
+      "name": "DIGIC X"
+    },
+    "camera": {
+      "main": "24.2 MP APS-C CMOS",
+      "video": "4K 30p oversampled; 4K 60p cropped; Full HD 120p"
+    },
+    "body": {
+      "weight": 370,
+      "width": 119.3,
+      "height": 73.7,
+      "thickness": 45.2
+    },
+    "summaryEn": "Video-focused APS-C mirrorless camera with a rotating touchscreen and 4K recording. Includes the RF-S 14–30mm F4–6.3 IS STM PZ power-zoom lens. Camera weight excludes the lens.",
+    "sources": [
+      "https://cam.start.canon/en/C021/manual/html/UG-11_Reference_0080.html",
+      "https://www.usa.canon.com/shop/p/eos-r50-v-body",
+      "https://www.zigzag.am/en/canon-eos-r50-v-bk-f-s-14-30-see.html"
+    ],
+    "released": "2025",
+    "colors": [
+      "Black"
+    ],
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "priceAmd": 456900,
+    "priceAmdMax": 456900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 456900
+      }
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "unsure": [
+      "popularity"
+    ]
   }
 ]
